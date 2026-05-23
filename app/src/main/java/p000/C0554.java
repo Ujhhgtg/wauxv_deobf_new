@@ -2,27 +2,20 @@ package p000;
 
 import android.graphics.Color;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤞᤝᲁᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0554 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final float f2273;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final float f2274;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final float f2275;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final float f2276;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final float f2277;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final float f2278;
 
     public C0554(float f, float f2, float f3, float f4, float f5, float f6) {
@@ -34,7 +27,6 @@ public final class C0554 {
         this.f2278 = f6;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C0554 m1933(int i) {
         C3602 c3602 = C3602.f11237;
         float fM3164 = AbstractC1458.m3164(Color.red(i));
@@ -93,7 +85,6 @@ public final class C0554 {
         return new C0554(fAtan2, fSqrt, fPow4, f21, fLog * ((float) Math.cos(d2)), fLog * ((float) Math.sin(d2)));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static C0554 m1934(float f, float f2, float f3) {
         C3602 c3602 = C3602.f11237;
         float f4 = c3602.f11241;
@@ -109,7 +100,6 @@ public final class C0554 {
     }
 
     /* JADX WARN: Code duplicated, block: B:8:0x001f  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int m1935(C3602 c3602) {
         float fSqrt;
         float f = this.f2274;

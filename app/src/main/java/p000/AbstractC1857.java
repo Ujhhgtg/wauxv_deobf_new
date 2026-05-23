@@ -14,24 +14,18 @@ import java.util.ServiceConfigurationError;
 import java.util.ServiceLoader;
 import java.util.concurrent.LinkedBlockingQueue;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᛸᲀᲈᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1857 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static volatile int f6172;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C2115 f6173 = new C2115(1);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final C2115 f6174 = new C2115(0);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static volatile C2115 f6175;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final String[] f6176;
 
     static {
@@ -47,7 +41,6 @@ public abstract class AbstractC1857 {
         f6176 = new String[]{"2.0"};
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static ArrayList m3623() {
         ArrayList arrayList = new ArrayList();
         final ClassLoader classLoader = AbstractC1857.class.getClassLoader();
@@ -101,7 +94,6 @@ public abstract class AbstractC1857 {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static InterfaceC1855 m3624() {
         C2115 c2115;
         InterfaceC1589 interfaceC1589;
@@ -144,7 +136,6 @@ public abstract class AbstractC1857 {
         return interfaceC1589.mo3338();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final void m3625() {
         try {
             ArrayList arrayListM3623 = m3623();
@@ -203,7 +194,6 @@ public abstract class AbstractC1857 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static void m3626() {
         C2115 c2115 = f6173;
         synchronized (c2115) {
@@ -265,7 +255,6 @@ public abstract class AbstractC1857 {
         c2858.f9125.clear();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static void m3627(ArrayList arrayList) {
         if (arrayList.isEmpty()) {
             throw new IllegalStateException("No providers were found which is impossible after successful initialization.");
@@ -286,7 +275,6 @@ public abstract class AbstractC1857 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static void m3628(LinkedHashSet linkedHashSet) {
         if (linkedHashSet.isEmpty()) {
             return;
@@ -299,7 +287,6 @@ public abstract class AbstractC1857 {
         AbstractC2553.m4567("See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static void m3629(ArrayList arrayList) {
         if (arrayList.size() > 1) {
             AbstractC2553.m4567("Class path contains multiple SLF4J providers.");

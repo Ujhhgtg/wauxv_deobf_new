@@ -6,12 +6,10 @@ import android.content.Intent;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᛸᲀᲁᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C1608 implements InterfaceC1425 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f5479;
 
     public /* synthetic */ C1608(int i) {

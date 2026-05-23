@@ -5,27 +5,20 @@ import bsh.AbstractC0010;
 import bsh.Primitive;
 import java.io.Serializable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᛸᤝᲀᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3532 implements Serializable, InterfaceC0480, Cloneable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final String f11060;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Class f11061;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public String f11062;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public Object f11063;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public C2000 f11064;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final C1751 f11065;
 
     public C3532(String str, Class cls, C1751 c1751) {
@@ -38,7 +31,6 @@ public final class C3532 implements Serializable, InterfaceC0480, Cloneable {
         return "Variable: " + AbstractC2202.m4021(this) + ", value:" + this.f11063 + ", lhs = " + this.f11065;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters and merged with bridge method [inline-methods] */
     public final C3532 clone() {
         try {
             C3532 c3532 = (C3532) super.clone();
@@ -51,7 +43,6 @@ public final class C3532 implements Serializable, InterfaceC0480, Cloneable {
     }
 
     @Override // p000.InterfaceC0480
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo343() {
         if (AbstractC0009.m401(this.f11061)) {
             try {
@@ -61,7 +52,6 @@ public final class C3532 implements Serializable, InterfaceC0480, Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C2000 m5123() {
         if (this.f11064 == null) {
             this.f11064 = new C2000(3);
@@ -69,7 +59,6 @@ public final class C3532 implements Serializable, InterfaceC0480, Cloneable {
         return this.f11064;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Object m5124() {
         C1751 c1751 = this.f11065;
         if (c1751 != null) {
@@ -78,12 +67,10 @@ public final class C3532 implements Serializable, InterfaceC0480, Cloneable {
         return this.f11063;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final boolean m5125(String str) {
         return m5123().m3864(str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m5126(int i, Object obj) {
         if (m5125("final")) {
             if (this.f11063 != null) {
@@ -108,7 +95,6 @@ public final class C3532 implements Serializable, InterfaceC0480, Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m5127(boolean z) {
         if (m5125("final") && this.f11063 == null && z == m5125("static")) {
             StringBuilder sb = new StringBuilder();

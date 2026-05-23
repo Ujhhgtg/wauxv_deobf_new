@@ -4,27 +4,20 @@ import android.graphics.drawable.Drawable;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲇᲈᲁᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1101 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final boolean f4128;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final Method f4129;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final Field f4130;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final Field f4131;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final Field f4132;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final Field f4133;
 
     /* JADX WARN: Code duplicated, block: B:25:0x004a  */

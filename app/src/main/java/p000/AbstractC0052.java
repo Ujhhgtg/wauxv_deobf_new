@@ -3,15 +3,12 @@ package p000;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0052 implements Parcelable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Parcelable f986;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C0050 f985 = new C0050();
     public static final Parcelable.Creator<AbstractC0052> CREATOR = new C0051(0);
 

@@ -25,12 +25,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.MsgInfoBean;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲁᤞᤝᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0605 implements InterfaceC1425 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2429;
 
     public /* synthetic */ C0605(int i) {
@@ -38,7 +36,6 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     private final Object m2026(Object obj) {
         Object c2585;
         Object c2586;
@@ -95,7 +92,6 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     private final Object m2027(Object obj) {
         ((C1333) obj).m3052(new C0645(0));
         return Unit.INSTANCE;

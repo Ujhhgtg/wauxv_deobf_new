@@ -2,21 +2,16 @@ package p000;
 
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᛸᲇᲈᤝᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1863 implements Cloneable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public /* synthetic */ boolean f6187;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public /* synthetic */ long[] f6188;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public /* synthetic */ Object[] f6189;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public /* synthetic */ int f6190;
 
     public C1863() {
@@ -70,7 +65,6 @@ public final class C1863 implements Cloneable {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m3630() {
         int i = this.f6190;
         Object[] objArr = this.f6189;
@@ -81,7 +75,6 @@ public final class C1863 implements Cloneable {
         this.f6187 = false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Object m3631(long j) {
         Object obj;
         int iM3206 = AbstractC1460.m3206(this.f6188, this.f6190, j);
@@ -91,7 +84,6 @@ public final class C1863 implements Cloneable {
         return obj;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final long m3632(int i) {
         int i2;
         if (i < 0 || i >= (i2 = this.f6190)) {
@@ -118,7 +110,6 @@ public final class C1863 implements Cloneable {
         return this.f6188[i];
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m3633(Object obj, long j) {
         Object obj2 = AbstractC1460.f5198;
         int iM3206 = AbstractC1460.m3206(this.f6188, this.f6190, j);
@@ -184,7 +175,6 @@ public final class C1863 implements Cloneable {
         this.f6190++;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m3634() {
         if (this.f6187) {
             int i = this.f6190;
@@ -208,7 +198,6 @@ public final class C1863 implements Cloneable {
         return this.f6190;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Object m3635(int i) {
         int i2;
         if (i < 0 || i >= (i2 = this.f6190)) {

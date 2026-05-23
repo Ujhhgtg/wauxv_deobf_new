@@ -12,13 +12,10 @@ import p000.AbstractC3471;
 /* JADX INFO: loaded from: classes.dex */
 public final class ModuleTabItem extends View {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final CharSequence f972;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Drawable f973;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int f974;
 
     public ModuleTabItem(Context context, AttributeSet attributeSet) {

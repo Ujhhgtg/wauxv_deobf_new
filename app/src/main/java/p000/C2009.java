@@ -3,12 +3,10 @@ package p000;
 import android.content.res.Resources;
 import android.view.ContextThemeWrapper;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᤝᲈᛸᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2009 extends ContextThemeWrapper {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final /* synthetic */ int f6692 = 0;
 
     @Override // android.content.ContextWrapper, android.content.Context

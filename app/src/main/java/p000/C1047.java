@@ -10,12 +10,10 @@ import java.util.Iterator;
 import java.util.List;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᤞᲇᲈᛸᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C1047 implements InterfaceC1425 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f3816;
 
     public /* synthetic */ C1047(int i) {

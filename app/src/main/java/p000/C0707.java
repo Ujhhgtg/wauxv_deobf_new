@@ -5,12 +5,10 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲀᲁᤝᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0707 implements InterfaceC1736, InterfaceC0696 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Class f2689;
 
     static {
@@ -46,12 +44,10 @@ public final class C0707 implements InterfaceC1736, InterfaceC0696 {
     }
 
     @Override // p000.InterfaceC0696
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final Class mo2114() {
         return this.f2689;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final String m2128() {
         String strM2488;
         Class cls = this.f2689;

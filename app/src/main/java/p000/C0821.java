@@ -2,19 +2,15 @@ package p000;
 
 import java.util.LinkedHashSet;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲁᲀᤞᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0821 extends AbstractC1823 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C0821 f3212 = new C0821();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final LinkedHashSet f3213 = new LinkedHashSet();
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
         int i = 0;
         String[] strArr = AbstractC1574.f5469;

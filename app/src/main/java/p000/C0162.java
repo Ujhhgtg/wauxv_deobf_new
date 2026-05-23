@@ -3,15 +3,12 @@ package p000;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᤞᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0162 extends Drawable.ConstantState {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f1178;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Object f1179;
 
     public /* synthetic */ C0162(int i, Object obj) {

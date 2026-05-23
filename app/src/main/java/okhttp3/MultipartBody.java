@@ -185,12 +185,10 @@ public final class MultipartBody extends RequestBody {
             return Companion.createFormData(str, str2);
         }
 
-        /* JADX INFO: renamed from: -deprecated_body, reason: not valid java name */
         public final RequestBody m848deprecated_body() {
             return this.body;
         }
 
-        /* JADX INFO: renamed from: -deprecated_headers, reason: not valid java name */
         public final Headers m849deprecated_headers() {
             return this.headers;
         }
@@ -293,22 +291,18 @@ public final class MultipartBody extends RequestBody {
         return j2;
     }
 
-    /* JADX INFO: renamed from: -deprecated_boundary, reason: not valid java name */
     public final String m844deprecated_boundary() {
         return boundary();
     }
 
-    /* JADX INFO: renamed from: -deprecated_parts, reason: not valid java name */
     public final List<Part> m845deprecated_parts() {
         return this.parts;
     }
 
-    /* JADX INFO: renamed from: -deprecated_size, reason: not valid java name */
     public final int m846deprecated_size() {
         return size();
     }
 
-    /* JADX INFO: renamed from: -deprecated_type, reason: not valid java name */
     public final MediaType m847deprecated_type() {
         return this.type;
     }

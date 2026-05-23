@@ -2,16 +2,13 @@ package p000;
 
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᛸᲀᲈᤝᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2995 {
     public static final C2994 Companion = new C2994();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final String f9636;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final String f9637;
 
     public /* synthetic */ C2995(int i, String str, String str2) {

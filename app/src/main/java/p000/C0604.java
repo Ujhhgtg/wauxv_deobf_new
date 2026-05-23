@@ -1,20 +1,15 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲁᤝᲈᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0604 extends AbstractC2867 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final C0604 f2425;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final String f2426;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final String f2427;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final String f2428;
 
     static {
@@ -26,7 +21,6 @@ public final class C0604 extends AbstractC2867 {
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
         int i = 0;
         String[] strArr = AbstractC1574.f5469;
@@ -40,19 +34,16 @@ public final class C0604 extends AbstractC2867 {
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
     public final String mo1127() {
         return f2428;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public final String mo1128() {
         return f2427;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public final String mo1129() {
         return f2426;
     }

@@ -49,88 +49,60 @@ import p000.RunnableC0124;
 @SuppressLint({"UnknownNullness"})
 public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137, InterfaceC2138 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public static final int[] f51 = {R.attr.actionBarSize, 16842841};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static final C3669 f52;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public static final Rect f53;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f54;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public ContentFrameLayout f55;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public ActionBarContainer f56;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public InterfaceC0975 f57;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public Drawable f58;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public boolean f59;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public boolean f60;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f61;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public boolean f62;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public int f63;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final Rect f64;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final Rect f65;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final Rect f66;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final Rect f67;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public C3669 f68;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public C3669 f69;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public C3669 f70;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public C3669 f71;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public OverScroller f72;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public ViewPropertyAnimator f73;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final C0123 f74;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public final RunnableC0124 f75;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public final RunnableC0124 f76;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public final C2139 f77;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final C0127 f78;
 
     static {
@@ -180,7 +152,6 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
         addView(c0127);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static boolean m10(View view, Rect rect, boolean z) {
         boolean z2;
         C0126 c0126 = (C0126) view.getLayoutParams();
@@ -575,13 +546,11 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
     }
 
     @Override // p000.InterfaceC2138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo11(View view, int i, int i2, int i3, int i4, int i5, int[] iArr) {
         mo12(view, i, i2, i3, i4, i5);
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo12(View view, int i, int i2, int i3, int i4, int i5) {
         if (i5 == 0) {
             onNestedScroll(view, i, i2, i3, i4);
@@ -589,13 +558,11 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final boolean mo13(View view, View view2, int i, int i2) {
         return i2 == 0 && onStartNestedScroll(view, view2, i);
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void mo14(View view, View view2, int i, int i2) {
         if (i2 == 0) {
             onNestedScrollAccepted(view, view2, i);
@@ -603,14 +570,12 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void mo15(View view, int i) {
         if (i == 0) {
             onStopNestedScroll(view);
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m17() {
         removeCallbacks(this.f75);
         removeCallbacks(this.f76);
@@ -620,7 +585,6 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m18(Context context) {
         TypedArray typedArrayObtainStyledAttributes = getContext().getTheme().obtainStyledAttributes(f51);
         this.f54 = typedArrayObtainStyledAttributes.getDimensionPixelSize(0, 0);
@@ -631,7 +595,6 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
         this.f72 = new OverScroller(context);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m19() {
         InterfaceC0975 wrapper;
         if (this.f55 == null) {
@@ -673,7 +636,6 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void mo16(View view, int i, int i2, int[] iArr, int i3) {
     }
 }

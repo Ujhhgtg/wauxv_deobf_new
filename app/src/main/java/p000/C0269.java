@@ -7,18 +7,14 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲈᲀᤝᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0269 implements Collection, Set, InterfaceC1737 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int[] f1470;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object[] f1471;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f1472;
 
     public C0269(int i) {
@@ -250,7 +246,6 @@ public final class C0269 implements Collection, Set, InterfaceC1737 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Object m1376(int i) {
         int i2 = this.f1472;
         Object[] objArr = this.f1471;

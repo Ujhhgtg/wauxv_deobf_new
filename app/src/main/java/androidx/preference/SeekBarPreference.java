@@ -10,10 +10,8 @@ import p000.AbstractC2465;
 /* JADX INFO: loaded from: classes.dex */
 public class SeekBarPreference extends Preference {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final int f316;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final int f317;
 
     public SeekBarPreference(Context context, AttributeSet attributeSet) {
@@ -36,7 +34,6 @@ public class SeekBarPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final Object mo105(TypedArray typedArray, int i) {
         return Integer.valueOf(typedArray.getInt(i, 0));
     }

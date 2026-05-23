@@ -3,24 +3,20 @@ package p000;
 import com.umeng.ccg.a;
 import java.util.TreeMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲀᲁᲈᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1521 extends AbstractC1628 {
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final EnumC1683 mo1222() {
         return EnumC1683.f5713;
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo1921() {
         return 112;
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo1922(C1023 c1023, C0519 c0519) {
         int iM4635 = c1023.f3739.m4635();
         C1986 c1986 = c1023.f3737;
@@ -133,7 +129,6 @@ public final class C1521 extends AbstractC1628 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1221(C1023 c1023) {
     }
 }

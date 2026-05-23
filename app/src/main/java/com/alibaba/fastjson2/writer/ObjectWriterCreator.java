@@ -791,7 +791,6 @@ public class ObjectWriterCreator {
             objectWriterCreator = this;
             BeanUtils.declaredFields(cls2, new Consumer(objectWriterCreator) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᤞᤝᲈᲇ
 
-                /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
                 public final /* synthetic */ ObjectWriterCreator f7334;
 
                 {
@@ -828,7 +827,6 @@ public class ObjectWriterCreator {
                         final int i2 = 1;
                         Consumer consumer = new Consumer(objectWriterCreator) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᤞᤝᲈᲇ
 
-                            /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
                             public final /* synthetic */ ObjectWriterCreator f7334;
 
                             {

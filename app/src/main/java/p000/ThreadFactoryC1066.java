@@ -2,7 +2,6 @@ package p000;
 
 import java.util.concurrent.ThreadFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲁᤞᲈᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ThreadFactoryC1066 implements ThreadFactory {

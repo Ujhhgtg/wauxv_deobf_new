@@ -2,16 +2,13 @@ package p000;
 
 import org.luckypray.dexkit.DexKitBridge;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲇᲀᛸᤝᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2195 extends AbstractC1823 implements InterfaceC1582 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C2195 f7156 = new C2195();
 
     @Override // p000.InterfaceC1582
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
         if (AbstractC3471.m5079(WeChatVersions.f11545) || AbstractC3471.m5080(WeChatVersionsPlay.f11511)) {
             return;
@@ -20,7 +17,6 @@ public final class C2195 extends AbstractC1823 implements InterfaceC1582 {
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

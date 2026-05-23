@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲇᲈᲁᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1702 extends C0558 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final C1004 f5787;
 
     public C1702(InterfaceC0842 interfaceC0842, C1004 c1004) {
@@ -14,7 +12,6 @@ public final class C1702 extends C0558 {
     }
 
     @Override // p000.C0558
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final Throwable mo1948(C1705 c1705) {
         Throwable thM3443;
         C1004 c1004 = this.f5787;
@@ -27,7 +24,6 @@ public final class C1702 extends C0558 {
     }
 
     @Override // p000.C0558
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final String mo1952() {
         return "AwaitContinuation";
     }

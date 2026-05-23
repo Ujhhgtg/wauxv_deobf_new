@@ -7,24 +7,18 @@ import android.view.ViewGroup;
 import me.hd.wauxv.data.bean.MsgInfoBean;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲁᲀᛸᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2051 extends AbstractC2867 implements InterfaceC1578 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final C2051 f6834;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final String f6835;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final String f6836;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final String f6837;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static final C1884 f6838;
 
     static {
@@ -41,7 +35,6 @@ public final class C2051 extends AbstractC2867 implements InterfaceC1578 {
         f6838 = new C1884(24);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static void m3881(View view, boolean z) {
         int color;
         int color2;
@@ -71,7 +64,6 @@ public final class C2051 extends AbstractC2867 implements InterfaceC1578 {
     }
 
     @Override // p000.InterfaceC1578
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo1408(View view, Object obj, Object obj2, MsgInfoBean msgInfoBean) {
         if (mo3264()) {
             int type = msgInfoBean.getType();
@@ -118,31 +110,26 @@ public final class C2051 extends AbstractC2867 implements InterfaceC1578 {
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
     public final String mo1127() {
         return f6837;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public final String mo1128() {
         return f6836;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public final String mo1129() {
         return f6835;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ */
     public final InterfaceC1425 mo1130() {
         return f6838;
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

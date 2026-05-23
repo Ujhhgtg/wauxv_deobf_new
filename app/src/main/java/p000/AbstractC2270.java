@@ -1,20 +1,15 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᲇᤞᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2270 extends AbstractC1675 implements Comparable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int f7367;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f7368;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public C1986 f7369;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public int f7370;
 
     public AbstractC2270(int i, int i2) {
@@ -50,7 +45,6 @@ public abstract class AbstractC2270 extends AbstractC1675 implements Comparable 
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo1921() {
         int i = this.f7368;
         if (i >= 0) {
@@ -60,7 +54,6 @@ public abstract class AbstractC2270 extends AbstractC1675 implements Comparable 
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo1922(C1023 c1023, C0519 c0519) {
         c0519.m1830(this.f7367);
         try {
@@ -78,12 +71,10 @@ public abstract class AbstractC2270 extends AbstractC1675 implements Comparable 
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public int mo1223(AbstractC2270 abstractC2270) {
         throw new UnsupportedOperationException("unsupported");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int m4150() {
         int i = this.f7370;
         if (i < 0) {
@@ -101,12 +92,10 @@ public abstract class AbstractC2270 extends AbstractC1675 implements Comparable 
         throw new RuntimeException("fileOffset not yet set");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final String m4151() {
         return "[" + Integer.toHexString(m4150()) + ']';
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final int m4152(C1986 c1986, int i) {
         if (i < 0) {
             throw new IllegalArgumentException("offset < 0");
@@ -122,7 +111,6 @@ public abstract class AbstractC2270 extends AbstractC1675 implements Comparable 
         return i3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m4153(int i) {
         if (i < 0) {
             throw new IllegalArgumentException("writeSize < 0");
@@ -133,10 +121,8 @@ public abstract class AbstractC2270 extends AbstractC1675 implements Comparable 
         this.f7368 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public abstract void mo1225(C1023 c1023, C0519 c0519);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public void mo1224(C1986 c1986, int i) {
     }
 }

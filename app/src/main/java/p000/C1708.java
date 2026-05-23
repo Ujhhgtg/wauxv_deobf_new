@@ -7,13 +7,11 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.function.UnaryOperator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲈᛸᲇᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1708 extends AbstractC1715 implements List<AbstractC1715>, InterfaceC1737 {
     public static final C1707 Companion = new C1707();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final List f5802;
 
     public C1708(List list) {

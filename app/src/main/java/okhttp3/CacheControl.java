@@ -287,52 +287,42 @@ public final class CacheControl {
         return Companion.parse(headers);
     }
 
-    /* JADX INFO: renamed from: -deprecated_immutable, reason: not valid java name */
     public final boolean m778deprecated_immutable() {
         return this.immutable;
     }
 
-    /* JADX INFO: renamed from: -deprecated_maxAgeSeconds, reason: not valid java name */
     public final int m779deprecated_maxAgeSeconds() {
         return this.maxAgeSeconds;
     }
 
-    /* JADX INFO: renamed from: -deprecated_maxStaleSeconds, reason: not valid java name */
     public final int m780deprecated_maxStaleSeconds() {
         return this.maxStaleSeconds;
     }
 
-    /* JADX INFO: renamed from: -deprecated_minFreshSeconds, reason: not valid java name */
     public final int m781deprecated_minFreshSeconds() {
         return this.minFreshSeconds;
     }
 
-    /* JADX INFO: renamed from: -deprecated_mustRevalidate, reason: not valid java name */
     public final boolean m782deprecated_mustRevalidate() {
         return this.mustRevalidate;
     }
 
-    /* JADX INFO: renamed from: -deprecated_noCache, reason: not valid java name */
     public final boolean m783deprecated_noCache() {
         return this.noCache;
     }
 
-    /* JADX INFO: renamed from: -deprecated_noStore, reason: not valid java name */
     public final boolean m784deprecated_noStore() {
         return this.noStore;
     }
 
-    /* JADX INFO: renamed from: -deprecated_noTransform, reason: not valid java name */
     public final boolean m785deprecated_noTransform() {
         return this.noTransform;
     }
 
-    /* JADX INFO: renamed from: -deprecated_onlyIfCached, reason: not valid java name */
     public final boolean m786deprecated_onlyIfCached() {
         return this.onlyIfCached;
     }
 
-    /* JADX INFO: renamed from: -deprecated_sMaxAgeSeconds, reason: not valid java name */
     public final int m787deprecated_sMaxAgeSeconds() {
         return this.sMaxAgeSeconds;
     }

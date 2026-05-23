@@ -1,20 +1,15 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲇᤞᲁᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0367 extends AbstractC1532 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᤞᲀ, reason: contains not printable characters */
     public int f1743;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᲀᤞ, reason: contains not printable characters */
     public boolean f1744;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲀᲇ, reason: contains not printable characters */
     public int f1745;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲇᲀ, reason: contains not printable characters */
     public boolean f1746;
 
     @Override // p000.C0793
@@ -33,7 +28,6 @@ public final class C0367 extends AbstractC1532 {
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo1485(C1791 c1791, boolean z) {
         boolean z2;
         int i;
@@ -147,24 +141,20 @@ public final class C0367 extends AbstractC1532 {
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final boolean mo1486() {
         return true;
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final boolean mo1487() {
         return this.f1746;
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final boolean mo1488() {
         return this.f1746;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public final boolean m1489() {
         int i;
         int i2;
@@ -226,7 +216,6 @@ public final class C0367 extends AbstractC1532 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public final int m1490() {
         int i = this.f1743;
         if (i == 0 || i == 1) {

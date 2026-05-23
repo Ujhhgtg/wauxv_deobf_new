@@ -23,25 +23,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲁᲀᤝᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0221 implements InterfaceC3454 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f1351;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object f1352;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Object f1353;
 
     public C0221(int i) {
         this(0, new byte[i]);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static C0221 m1256(Resources resources, int i, Resources.Theme theme) {
         int next;
         float f;
@@ -153,7 +148,6 @@ public final class C0221 implements InterfaceC3454 {
         return new C0221(radialGradient, (ColorStateList) null, 0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static int m1257(String str) {
         int length = str.length();
         int i = 0;
@@ -186,7 +180,6 @@ public final class C0221 implements InterfaceC3454 {
         return this.f1351;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void m1258() {
         C3402 c3402;
         ImageView imageView = (ImageView) this.f1352;
@@ -200,7 +193,6 @@ public final class C0221 implements InterfaceC3454 {
         C0216.m1251(drawable, c3402, imageView.getDrawableState());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public synchronized String m1259(int i, int i2, byte[] bArr) {
         char[] cArr;
         int i3;
@@ -273,12 +265,10 @@ public final class C0221 implements InterfaceC3454 {
     }
 
     @Override // p000.InterfaceC3454
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean mo1260() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public long m1261(int i, int i2) {
         long jM1265 = 0;
         if (i2 <= 0) {
@@ -303,12 +293,10 @@ public final class C0221 implements InterfaceC3454 {
     }
 
     @Override // p000.InterfaceC3454
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public InterfaceC3454 mo1262(C3448 c3448) {
         throw new UnsupportedOperationException("unsupported");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public int m1263() {
         byte[] bArr = (byte[]) this.f1353;
         int i = this.f1351;
@@ -325,21 +313,18 @@ public final class C0221 implements InterfaceC3454 {
         return (bArr[i6] << 24) | i7;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public int m1264(int i) {
         byte[] bArr = (byte[]) this.f1353;
         int i2 = ((bArr[i + 1] & 255) << 8) | (bArr[i] & 255);
         return (bArr[i + 3] << 24) | i2 | ((bArr[i + 2] & 255) << 16);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public long m1265(int i) {
         byte[] bArr = (byte[]) this.f1353;
         int i2 = i + 6;
         return (((long) bArr[i]) & 255) | ((((long) bArr[i + 1]) & 255) << 8) | ((((long) bArr[i + 2]) & 255) << 16) | ((((long) bArr[i + 3]) & 255) << 24) | ((((long) bArr[i + 4]) & 255) << 32) | ((((long) bArr[i + 5]) & 255) << 40) | ((((long) bArr[i2]) & 255) << 48) | (((long) bArr[i + 7]) << 56);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public short m1266() {
         byte[] bArr = (byte[]) this.f1353;
         int i = this.f1351;
@@ -350,7 +335,6 @@ public final class C0221 implements InterfaceC3454 {
         return (short) ((bArr[i2] << 8) | i3);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public String m1267(int i) {
         String strM1259;
         if (i < 0) {
@@ -368,7 +352,6 @@ public final class C0221 implements InterfaceC3454 {
         return strM1259;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public String m1268(C0403 c0403, int i) {
         if (c0403 == null || i <= 0) {
             return m1267(i);
@@ -381,13 +364,11 @@ public final class C0221 implements InterfaceC3454 {
         return str;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public boolean m1269() {
         ColorStateList colorStateList;
         return ((Shader) this.f1352) == null && (colorStateList = (ColorStateList) this.f1353) != null && colorStateList.isStateful();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public void m1270(AttributeSet attributeSet, int i) {
         int resourceId;
         ImageView imageView = (ImageView) this.f1352;
@@ -415,7 +396,6 @@ public final class C0221 implements InterfaceC3454 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public void m1271(byte b) {
         byte[] bArr = (byte[]) this.f1353;
         int i = this.f1351;
@@ -423,7 +403,6 @@ public final class C0221 implements InterfaceC3454 {
         bArr[i] = b;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public void m1272(byte[] bArr) {
         int length = bArr.length;
         if (length > 0) {
@@ -432,7 +411,6 @@ public final class C0221 implements InterfaceC3454 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public void m1273(int i) {
         byte[] bArr = (byte[]) this.f1353;
         int i2 = this.f1351;
@@ -449,7 +427,6 @@ public final class C0221 implements InterfaceC3454 {
         bArr[i5] = (byte) (i >> 24);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public void m1274(int i, int i2) {
         byte[] bArr = (byte[]) this.f1353;
         bArr[i] = (byte) i2;
@@ -458,7 +435,6 @@ public final class C0221 implements InterfaceC3454 {
         bArr[i + 3] = (byte) (i2 >> 24);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public void m1275(int i, long j) {
         byte[] bArr = (byte[]) this.f1353;
         bArr[i] = (byte) j;
@@ -471,7 +447,6 @@ public final class C0221 implements InterfaceC3454 {
         bArr[i + 7] = (byte) (j >> 56);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public void m1276(String str) {
         if (str == null || str.isEmpty()) {
             return;

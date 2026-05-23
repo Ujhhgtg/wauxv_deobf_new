@@ -8,15 +8,12 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᤞᲇᛸᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1044 implements InterfaceC1997, InterfaceC1141, InterfaceC1467 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f3807;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Context f3808;
 
     public /* synthetic */ C1044(Context context, int i) {
@@ -30,7 +27,6 @@ public final class C1044 implements InterfaceC1997, InterfaceC1141, InterfaceC14
     }
 
     @Override // p000.InterfaceC1141
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void mo2614(AbstractC1458 abstractC1458) {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(0, 1, 15L, TimeUnit.SECONDS, new LinkedBlockingDeque(), new ThreadFactoryC0769("EmojiCompatInitializer"));
         threadPoolExecutor.allowCoreThreadTimeOut(true);
@@ -38,7 +34,6 @@ public final class C1044 implements InterfaceC1997, InterfaceC1141, InterfaceC14
     }
 
     @Override // p000.InterfaceC1997
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ */
     public InterfaceC1996 mo1115(C2103 c2103) {
         switch (this.f3807) {
             case 0:

@@ -16,30 +16,22 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᤝᲁᲀᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0662 implements InterfaceC0541 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final InterpolatorC1680 f2526 = new InterpolatorC1680(0);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final InterpolatorC1680 f2527 = new InterpolatorC1680(1);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f2528;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int f2529;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final Object f2530;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public Object f2531;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object f2532;
 
     public C0662(C1227 c1227) {
@@ -54,7 +46,6 @@ public final class C0662 implements InterfaceC0541 {
         this.f2529 = -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static void m2043(AbstractC2508 abstractC2508) {
         View view = abstractC2508.f8006;
         Object tag = view.getTag(R.id.item_touch_helper_previous_elevation);
@@ -68,7 +59,6 @@ public final class C0662 implements InterfaceC0541 {
         view.setTranslationY(0.0f);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static int m2044(int i, int i2) {
         int i3;
         int i4 = i & 3158064;
@@ -86,7 +76,6 @@ public final class C0662 implements InterfaceC0541 {
         return i5 | i3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static int m2045(int i, int i2) {
         int i3;
         int i4 = i & 789516;
@@ -104,12 +93,10 @@ public final class C0662 implements InterfaceC0541 {
         return i5 | i3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static C2525 m2046(C2525 c2525) {
         return (c2525 == null || c2525.f8056.getType() != C3448.f10875) ? c2525 : c2525.m4545(C3448.f10882);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static void m2047(RecyclerView recyclerView, AbstractC2508 abstractC2508, float f, float f2, boolean z) {
         View view = abstractC2508.f8006;
         if (z && view.getTag(R.id.item_touch_helper_previous_elevation) == null) {
@@ -144,7 +131,6 @@ public final class C0662 implements InterfaceC0541 {
     }
 
     @Override // p000.InterfaceC0541
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public void mo1577(int i, int i2, C0918 c0918, ArrayList arrayList) {
         C2597 c2597 = (C2597) this.f2530;
         c2597.m5119((C0243) this.f2531, C3448.f10871);
@@ -158,7 +144,6 @@ public final class C0662 implements InterfaceC0541 {
 
     /* JADX WARN: Code duplicated, block: B:41:0x00b9  */
     @Override // p000.InterfaceC0541
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public void mo1578(int i, int i2, int i3, int i4, C3448 c3448, int i5) {
         C3448 c3448M4961;
         C2597 c2597 = (C2597) this.f2530;
@@ -225,7 +210,6 @@ public final class C0662 implements InterfaceC0541 {
         c2597.m4619((C0243) this.f2531, i2, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void m2048(int i, int i2) {
         int[] iArr = (int[]) this.f2532;
         boolean z = iArr == null;
@@ -258,7 +242,6 @@ public final class C0662 implements InterfaceC0541 {
 
     /* JADX WARN: Code duplicated, block: B:57:0x0130  */
     @Override // p000.InterfaceC0541
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public void mo1580(int i, int i2, int i3, AbstractC0777 abstractC0777, int i4) {
         AbstractC0777 abstractC0778;
         C0913 c0913M2422;
@@ -371,7 +354,6 @@ public final class C0662 implements InterfaceC0541 {
         c2597.m4619((C0243) this.f2531, i2, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public void m2049(int i, int i2, C2525 c2525) {
         int i3 = c2525.f8055;
         ArrayList arrayList = (ArrayList) this.f2530;
@@ -385,7 +367,6 @@ public final class C0662 implements InterfaceC0541 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public void m2050(int i, int i2, C2525 c2525) {
         ArrayList arrayList = (ArrayList) this.f2530;
         if (i2 == 1) {
@@ -454,7 +435,6 @@ public final class C0662 implements InterfaceC0541 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public void m2051(C3448 c3448) {
         C3448 c3449 = ((C2597) this.f2530).f11043.f7755;
         if (AbstractC1270.m2984(c3449, c3448)) {
@@ -465,13 +445,11 @@ public final class C0662 implements InterfaceC0541 {
     }
 
     @Override // p000.InterfaceC0541
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public void mo1585(int i, int i2) {
         throw new C2704("invalid opcode ".concat(AbstractC1460.m3222(i)), null);
     }
 
     @Override // p000.InterfaceC0541
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public void mo1586(int i, int i2, C1242 c1242, int i3) {
         C2597 c2597 = (C2597) this.f2530;
         c2597.m5119((C0243) this.f2531, C3448.f10871);
@@ -481,13 +459,11 @@ public final class C0662 implements InterfaceC0541 {
     }
 
     @Override // p000.InterfaceC0541
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public int mo1587() {
         return this.f2529;
     }
 
     @Override // p000.InterfaceC0541
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public void mo1590(int i, int i2, int i3, int i4) {
         C2597 c2597 = (C2597) this.f2530;
         switch (i) {
@@ -550,7 +526,6 @@ public final class C0662 implements InterfaceC0541 {
     /* JADX WARN: Code duplicated, block: B:117:0x02a9  */
     /* JADX WARN: Code duplicated, block: B:159:0x03fc  */
     @Override // p000.InterfaceC0541
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public void mo1591(int i, int i2, C3448 c3448) {
         C2597 c2597 = (C2597) this.f2530;
         if (i == 0) {
@@ -798,7 +773,6 @@ public final class C0662 implements InterfaceC0541 {
         c2597.m4619((C0243) this.f2531, i2, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public void m2052(View view) {
         MaxRelativeLayout maxRelativeLayout;
         C0943 c0943 = (C0943) this.f2532;
@@ -812,7 +786,6 @@ public final class C0662 implements InterfaceC0541 {
         maxRelativeLayout.post(new RunnableC0939(this, 1));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public long m2053(Animation animation) {
         MaxRelativeLayout maxRelativeLayout = (MaxRelativeLayout) this.f2531;
         if (animation == null && maxRelativeLayout.getAnimation() != null) {
@@ -823,7 +796,6 @@ public final class C0662 implements InterfaceC0541 {
         return j != -1 ? j : duration;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public String m2054() {
         StringBuilder sb = new StringBuilder("$");
         int i = this.f2529 + 1;
@@ -853,7 +825,6 @@ public final class C0662 implements InterfaceC0541 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public int m2055(RecyclerView recyclerView, int i, int i2, long j) {
         if (this.f2529 == -1) {
             this.f2529 = recyclerView.getResources().getDimensionPixelSize(R.dimen.item_touch_helper_max_drag_scroll_per_frame);
@@ -873,7 +844,6 @@ public final class C0662 implements InterfaceC0541 {
     /* JADX WARN: Code duplicated, block: B:67:0x01e2  */
     /* JADX WARN: Code duplicated, block: B:70:0x01ec  */
     /* JADX WARN: Code duplicated, block: B:79:0x0201  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public AbstractC0777 m2056(BitSet bitSet, int i) {
         AbstractC0777 c0910;
         AbstractC0777 abstractC0777M2420;
@@ -1286,7 +1256,6 @@ public final class C0662 implements InterfaceC0541 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public void m2057() {
         int i;
         if (this.f2529 < 0) {
@@ -1358,7 +1327,6 @@ public final class C0662 implements InterfaceC0541 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public C0917 m2058(int i) {
         C0516 c0516 = (C0516) this.f2530;
         int iM1817 = c0516.m1817(i + 1);
@@ -1380,7 +1348,6 @@ public final class C0662 implements InterfaceC0541 {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public void m2059() {
         int i;
         MaxRelativeLayout maxRelativeLayout = (MaxRelativeLayout) this.f2531;
@@ -1501,7 +1468,6 @@ public final class C0662 implements InterfaceC0541 {
         dialogXBaseRelativeLayout.setBackgroundColor(c0943.f3452);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public void m2060() {
         int i = this.f2529 * 2;
         this.f2531 = Arrays.copyOf((Object[]) this.f2531, i);

@@ -5,15 +5,12 @@ import java.util.ArrayList;
 import me.hd.wauxv.hook.factory.MagicFactory;
 import me.hd.wauxv.ui.setting.view.ModuleRecyclerView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᲈᤝᛸᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewOnLayoutChangeListenerC2671 implements View.OnLayoutChangeListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ C2675 f8598;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ int f8599;
 
     public ViewOnLayoutChangeListenerC2671(C2675 c2675, int i) {

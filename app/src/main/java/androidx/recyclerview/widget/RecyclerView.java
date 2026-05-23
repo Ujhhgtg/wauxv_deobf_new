@@ -96,259 +96,174 @@ import p000.RunnableC2507;
 /* JADX INFO: loaded from: classes.dex */
 public class RecyclerView extends ViewGroup {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᤞᲈᲁ, reason: contains not printable characters */
     public static boolean f347 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲁᤞᲈ, reason: contains not printable characters */
     public static boolean f348 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲁᲈᤞ, reason: contains not printable characters */
     public static final int[] f349 = {16843830};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᤞᲁ, reason: contains not printable characters */
     public static final float f350 = (float) (Math.log(0.78d) / Math.log(0.9d));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᲁᤞ, reason: contains not printable characters */
     public static final boolean f351 = true;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᤞᲀᲈ, reason: contains not printable characters */
     public static final boolean f352 = true;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᤞᲈᲀ, reason: contains not printable characters */
     public static final Class[] f353;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᤞᲈ, reason: contains not printable characters */
     public static final InterpolatorC1680 f354;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᲈᤞ, reason: contains not printable characters */
     public static final C2505 f355;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final float f356;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C2500 f357;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C2498 f358;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public C2501 f359;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final C0146 f360;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final C0575 f361;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final C2825 f362;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f363;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final RunnableC2480 f364;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final Rect f365;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final Rect f366;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final RectF f367;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public AbstractC2482 f368;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public AbstractC2491 f369;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final ArrayList f370;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final ArrayList f371;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final ArrayList f372;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public InterfaceC2494 f373;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public boolean f374;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public boolean f375;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public boolean f376;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public int f377;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public boolean f378;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public boolean f379;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public boolean f380;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public int f381;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public boolean f382;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public final AccessibilityManager f383;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public ArrayList f384;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public boolean f385;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public boolean f386;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public int f387;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public int f388;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public AbstractC2486 f389;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public EdgeEffect f390;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public EdgeEffect f391;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public EdgeEffect f392;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ, reason: contains not printable characters */
     public EdgeEffect f393;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
     public AbstractC2487 f394;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ, reason: contains not printable characters */
     public int f395;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲇᲁ, reason: contains not printable characters */
     public int f396;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᤞᲇ, reason: contains not printable characters */
     public VelocityTracker f397;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
     public int f398;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ, reason: contains not printable characters */
     public int f399;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ, reason: contains not printable characters */
     public int f400;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ, reason: contains not printable characters */
     public int f401;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ, reason: contains not printable characters */
     public int f402;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ, reason: contains not printable characters */
     public final int f403;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ, reason: contains not printable characters */
     public final int f404;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ, reason: contains not printable characters */
     public final float f405;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲇᲀ, reason: contains not printable characters */
     public final float f406;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ, reason: contains not printable characters */
     public boolean f407;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲈᲇ, reason: contains not printable characters */
     public final RunnableC2507 f408;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᤞᲈ, reason: contains not printable characters */
     public RunnableC1441 f409;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ, reason: contains not printable characters */
     public final C1439 f410;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᤞᲇ, reason: contains not printable characters */
     public final C2504 f411;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ, reason: contains not printable characters */
     public AbstractC2495 f412;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ, reason: contains not printable characters */
     public ArrayList f413;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ, reason: contains not printable characters */
     public boolean f414;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᤞᲈ, reason: contains not printable characters */
     public boolean f415;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᲈᤞ, reason: contains not printable characters */
     public final C2481 f416;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᤞᲀ, reason: contains not printable characters */
     public boolean f417;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᲀᤞ, reason: contains not printable characters */
     public C2510 f418;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲀᲇ, reason: contains not printable characters */
     public final int[] f419;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲇᲀ, reason: contains not printable characters */
     public C2136 f420;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲀᤞᲇ, reason: contains not printable characters */
     public final int[] f421;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲀᲇᤞ, reason: contains not printable characters */
     public final int[] f422;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲇᤞᲀ, reason: contains not printable characters */
     public final int[] f423;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲇᲀᤞ, reason: contains not printable characters */
     public final ArrayList f424;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲁᲈ, reason: contains not printable characters */
     public final RunnableC2480 f425;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲈᲁ, reason: contains not printable characters */
     public boolean f426;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲀᲈ, reason: contains not printable characters */
     public int f427;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲈᲀ, reason: contains not printable characters */
     public int f428;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲈᲀᲁ, reason: contains not printable characters */
     public final boolean f429;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲈᲁᲀ, reason: contains not printable characters */
     public final C2481 f430;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᤞᲁᲈ, reason: contains not printable characters */
     public final C1040 f431;
 
     static {
@@ -377,7 +292,6 @@ public class RecyclerView extends ViewGroup {
         f348 = z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static void m201(AbstractC2508 abstractC2508) {
         WeakReference weakReference = abstractC2508.f8007;
         if (weakReference != null) {
@@ -393,7 +307,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static int m202(int i, EdgeEffect edgeEffect, EdgeEffect edgeEffect2, int i2) {
         if (i > 0 && edgeEffect != null && AbstractC0968.m2472(edgeEffect) != 0.0f) {
             int iRound = Math.round(AbstractC0968.m2478(edgeEffect, ((-i) * 4.0f) / i2, 0.5f) * ((-i2) / 4.0f));
@@ -413,7 +326,6 @@ public class RecyclerView extends ViewGroup {
         return i - iRound2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static RecyclerView m203(View view) {
         if (!(view instanceof ViewGroup)) {
             return null;
@@ -432,7 +344,6 @@ public class RecyclerView extends ViewGroup {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public static AbstractC2508 m204(View view) {
         if (view == null) {
             return null;
@@ -1921,7 +1832,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m205(AbstractC2508 abstractC2508) {
         View view = abstractC2508.f8006;
         boolean z = view.getParent() == this;
@@ -1944,7 +1854,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m206(AbstractC2488 abstractC2488) {
         AbstractC2491 abstractC2491 = this.f369;
         if (abstractC2491 != null) {
@@ -1959,7 +1868,6 @@ public class RecyclerView extends ViewGroup {
         requestLayout();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m207(String str) {
         if (m235()) {
             if (str != null) {
@@ -1972,7 +1880,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m208() {
         int iM1997 = this.f361.m1997();
         for (int i = 0; i < iM1997; i++) {
@@ -2008,7 +1915,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m209(int i, int i2) {
         boolean zIsFinished;
         EdgeEffect edgeEffect = this.f390;
@@ -2038,7 +1944,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void m210() {
         if (!this.f376 || this.f385) {
             Trace.beginSection("RV FullInvalidate");
@@ -2078,14 +1983,12 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final void m211(int i, int i2) {
         int paddingRight = getPaddingRight() + getPaddingLeft();
         Field field = AbstractC3578.f11184;
         setMeasuredDimension(AbstractC2491.m4452(i, paddingRight, getMinimumWidth()), AbstractC2491.m4452(i2, getPaddingBottom() + getPaddingTop(), getMinimumHeight()));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final void m212(View view) {
         m204(view);
         ArrayList arrayList = this.f384;
@@ -2146,7 +2049,6 @@ public class RecyclerView extends ViewGroup {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final void m213() {
         boolean z;
         long j;
@@ -2599,7 +2501,6 @@ public class RecyclerView extends ViewGroup {
         c2504.f7997 = -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final void m214() {
         C3584 c3584;
         View viewM225;
@@ -2713,7 +2614,6 @@ public class RecyclerView extends ViewGroup {
         c2504.f7987 = 2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final void m215() {
         m257();
         m239();
@@ -2742,17 +2642,14 @@ public class RecyclerView extends ViewGroup {
         m259(false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final boolean m216(int[] iArr, int i, int i2, int i3, int[] iArr2) {
         return getScrollingChildHelper().m3946(iArr, i, i2, i3, iArr2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final void m217(int i, int i2, int i3, int i4, int[] iArr, int i5, int[] iArr2) {
         getScrollingChildHelper().m3947(i, i2, i3, i4, iArr, i5, iArr2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final void m218(int i, int i2) {
         this.f388++;
         int scrollX = getScrollX();
@@ -2771,7 +2668,6 @@ public class RecyclerView extends ViewGroup {
         this.f388--;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final void m219() {
         if (this.f393 != null) {
             return;
@@ -2786,7 +2682,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final void m220() {
         if (this.f390 != null) {
             return;
@@ -2801,7 +2696,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public final void m221() {
         if (this.f392 != null) {
             return;
@@ -2816,7 +2710,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public final void m222() {
         if (this.f391 != null) {
             return;
@@ -2831,12 +2724,10 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public final String m223() {
         return " " + super.toString() + ", adapter:" + this.f368 + ", layout:" + this.f369 + ", context:" + getContext();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final void m224(C2504 c2504) {
         if (getScrollState() != 2) {
             return;
@@ -2848,7 +2739,6 @@ public class RecyclerView extends ViewGroup {
         overScroller.getCurrY();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public final View m225(View view) {
         ViewParent parent = view.getParent();
         while (parent != null && parent != this && (parent instanceof View)) {
@@ -2861,7 +2751,6 @@ public class RecyclerView extends ViewGroup {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public final boolean m226(MotionEvent motionEvent) {
         int action = motionEvent.getAction();
         ArrayList arrayList = this.f372;
@@ -2876,7 +2765,6 @@ public class RecyclerView extends ViewGroup {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public final void m227(int[] iArr) {
         int iM1994 = this.f361.m1994();
         if (iM1994 == 0) {
@@ -2902,7 +2790,6 @@ public class RecyclerView extends ViewGroup {
         iArr[1] = i2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public final AbstractC2508 m228(int i) {
         AbstractC2508 abstractC2508 = null;
         if (this.f385) {
@@ -2923,7 +2810,6 @@ public class RecyclerView extends ViewGroup {
 
     /* JADX WARN: Code duplicated, block: B:39:0x0078  */
     /* JADX WARN: Code duplicated, block: B:57:0x00ba  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public final boolean m229(int i, int i2, int i3, int i4) {
         int iMax;
         int i5;
@@ -3016,7 +2902,6 @@ public class RecyclerView extends ViewGroup {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public final int m230(AbstractC2508 abstractC2508) {
         if ((abstractC2508.f8015 & 524) == 0 && abstractC2508.m4515()) {
             int i = abstractC2508.f8008;
@@ -3058,12 +2943,10 @@ public class RecyclerView extends ViewGroup {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public final long m231(AbstractC2508 abstractC2508) {
         return this.f368.f7927 ? abstractC2508.f8010 : abstractC2508.f8008;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public final AbstractC2508 m232(View view) {
         ViewParent parent = view.getParent();
         if (parent == null || parent == this) {
@@ -3072,7 +2955,6 @@ public class RecyclerView extends ViewGroup {
         throw new IllegalArgumentException("View " + view + " is not a direct child of " + this);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public final Rect m233(View view) {
         C2492 c2492 = (C2492) view.getLayoutParams();
         boolean z = c2492.f7958;
@@ -3096,17 +2978,14 @@ public class RecyclerView extends ViewGroup {
         return rect;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public final boolean m234() {
         return !this.f376 || this.f385 || this.f360.m1174();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ, reason: contains not printable characters */
     public final boolean m235() {
         return this.f387 > 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
     public final void m236(int i) {
         if (this.f369 == null) {
             return;
@@ -3116,7 +2995,6 @@ public class RecyclerView extends ViewGroup {
         awakenScrollBars();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ, reason: contains not printable characters */
     public final void m237() {
         int iM1997 = this.f361.m1997();
         for (int i = 0; i < iM1997; i++) {
@@ -3132,7 +3010,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲇᲁ, reason: contains not printable characters */
     public final void m238(int i, int i2, boolean z) {
         int i3 = i + i2;
         int iM1997 = this.f361.m1997();
@@ -3178,12 +3055,10 @@ public class RecyclerView extends ViewGroup {
         requestLayout();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᤞᲇ, reason: contains not printable characters */
     public final void m239() {
         this.f387++;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
     public final void m240(boolean z) {
         int i;
         AccessibilityManager accessibilityManager;
@@ -3216,7 +3091,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ, reason: contains not printable characters */
     public final void m241(MotionEvent motionEvent) {
         int actionIndex = motionEvent.getActionIndex();
         if (motionEvent.getPointerId(actionIndex) == this.f396) {
@@ -3231,7 +3105,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ, reason: contains not printable characters */
     public final void m242() {
         if (this.f417 || !this.f374) {
             return;
@@ -3241,7 +3114,6 @@ public class RecyclerView extends ViewGroup {
         this.f417 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ, reason: contains not printable characters */
     public final void m243() {
         boolean z;
         boolean z2 = false;
@@ -3269,7 +3141,6 @@ public class RecyclerView extends ViewGroup {
         c2504.f7994 = z2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ, reason: contains not printable characters */
     public final void m244(boolean z) {
         this.f386 = z | this.f386;
         this.f385 = true;
@@ -3297,7 +3168,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ, reason: contains not printable characters */
     public final void m245(AbstractC2508 abstractC2508, C2139 c2139) {
         abstractC2508.f8015 &= -8193;
         boolean z = this.f411.f7991;
@@ -3315,7 +3185,6 @@ public class RecyclerView extends ViewGroup {
         c3584M5202.f11216 |= 4;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ, reason: contains not printable characters */
     public final void m246() {
         boolean zIsFinished;
         EdgeEffect edgeEffect = this.f390;
@@ -3345,7 +3214,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ, reason: contains not printable characters */
     public final int m247(int i, float f) {
         float height = f / getHeight();
         float width = i / getWidth();
@@ -3380,7 +3248,6 @@ public class RecyclerView extends ViewGroup {
         return Math.round(f2 * getWidth());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲇᲀ, reason: contains not printable characters */
     public final int m248(int i, float f) {
         float width = f / getWidth();
         float height = i / getHeight();
@@ -3415,7 +3282,6 @@ public class RecyclerView extends ViewGroup {
         return Math.round(f2 * getHeight());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ, reason: contains not printable characters */
     public final void m249(AbstractC2488 abstractC2488) {
         AbstractC2491 abstractC2491 = this.f369;
         if (abstractC2491 != null) {
@@ -3430,7 +3296,6 @@ public class RecyclerView extends ViewGroup {
         requestLayout();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲈᲇ, reason: contains not printable characters */
     public final void m250(View view, View view2) {
         View view3 = view2 != null ? view2 : view;
         int width = view3.getWidth();
@@ -3463,7 +3328,6 @@ public class RecyclerView extends ViewGroup {
     /* JADX WARN: Code duplicated, block: B:36:0x0100  */
     /* JADX WARN: Code duplicated, block: B:40:0x0108  */
     /* JADX WARN: Code duplicated, block: B:43:0x0111  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᤞᲈ, reason: contains not printable characters */
     public final boolean m251(int i, int i2, MotionEvent motionEvent, int i3) {
         int i4;
         int i5;
@@ -3598,7 +3462,6 @@ public class RecyclerView extends ViewGroup {
         return (!z4 && i4 == 0 && i5 == 0) ? false : true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ, reason: contains not printable characters */
     public final void m252(int i, int i2, int[] iArr) {
         AbstractC2508 abstractC2508;
         m257();
@@ -3631,7 +3494,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᤞᲇ, reason: contains not printable characters */
     public final void m253(int i) {
         if (this.f379) {
             return;
@@ -3646,7 +3508,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ, reason: contains not printable characters */
     public final boolean m254(EdgeEffect edgeEffect, int i, int i2) {
         if (i > 0) {
             return true;
@@ -3659,7 +3520,6 @@ public class RecyclerView extends ViewGroup {
         return ((float) (Math.exp((d / (d - 1.0d)) * dLog) * ((double) f))) < fM2472;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ, reason: contains not printable characters */
     public final void m255(int i, int i2, boolean z) {
         AbstractC2491 abstractC2491 = this.f369;
         if (abstractC2491 == null) {
@@ -3688,7 +3548,6 @@ public class RecyclerView extends ViewGroup {
         this.f408.m4508(i, i2, -2147483648, null);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ, reason: contains not printable characters */
     public final void m256(int i) {
         if (this.f379) {
             return;
@@ -3701,7 +3560,6 @@ public class RecyclerView extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᤞᲈ, reason: contains not printable characters */
     public final void m257() {
         int i = this.f377 + 1;
         this.f377 = i;
@@ -3712,7 +3570,6 @@ public class RecyclerView extends ViewGroup {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᲈᤞ, reason: contains not printable characters */
     public final void m258(int i) {
         boolean zMo152 = this.f369.mo152();
         int i2 = zMo152;
@@ -3722,7 +3579,6 @@ public class RecyclerView extends ViewGroup {
         getScrollingChildHelper().m3950(i2, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᤞᲀ, reason: contains not printable characters */
     public final void m259(boolean z) {
         if (this.f377 < 1) {
             if (f347) {
@@ -3744,12 +3600,10 @@ public class RecyclerView extends ViewGroup {
         this.f377--;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᲀᤞ, reason: contains not printable characters */
     public final void m260(int i) {
         getScrollingChildHelper().m3951(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲀᲇ, reason: contains not printable characters */
     public final void m261() {
         C1790 c1790;
         setScrollState(0);

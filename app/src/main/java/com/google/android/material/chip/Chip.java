@@ -57,67 +57,46 @@ import p000.InterfaceC2688;
 /* JADX INFO: loaded from: classes.dex */
 public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC2688, Checkable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static final Rect f682 = new Rect();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static final int[] f683 = {16842913};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static final int[] f684 = {16842911};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public C0695 f685;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public InsetDrawable f686;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public RippleDrawable f687;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public View.OnClickListener f688;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public CompoundButton.OnCheckedChangeListener f689;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public boolean f690;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public boolean f691;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public boolean f692;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public boolean f693;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public boolean f694;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public int f695;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public int f696;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public CharSequence f697;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final C0693 f698;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public boolean f699;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final Rect f700;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final RectF f701;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public final C0691 f702;
 
     public Chip(Context context, AttributeSet attributeSet) {
@@ -1596,7 +1575,6 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m674(int i) {
         this.f696 = i;
         if (!this.f694) {
@@ -1659,7 +1637,6 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         m677();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean m675() {
         C0695 c0695 = this.f685;
         if (c0695 == null) {
@@ -1672,7 +1649,6 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         return drawable != null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m676() {
         C0695 c0695;
         if (!m675() || (c0695 = this.f685) == null || !c0695.f2597 || this.f688 == null) {
@@ -1684,7 +1660,6 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m677() {
         this.f687 = new RippleDrawable(AbstractC2589.m4597(this.f685.f2590), getBackgroundDrawable(), null);
         this.f685.getClass();
@@ -1694,7 +1669,6 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         m678();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m678() {
         C0695 c0695;
         if (TextUtils.isEmpty(getText()) || (c0695 = this.f685) == null) {
@@ -1715,7 +1689,6 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         setPaddingRelative(iM2086, paddingTop, iM2087, paddingBottom);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m679() {
         TextPaint paint = getPaint();
         C0695 c0695 = this.f685;

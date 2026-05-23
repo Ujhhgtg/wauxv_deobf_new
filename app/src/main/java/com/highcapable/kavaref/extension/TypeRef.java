@@ -22,7 +22,6 @@ public abstract class TypeRef<T> {
         final int i = 0;
         this.type$delegate = new C2873(new InterfaceC1414(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤝᲈᲀᤞᛸ
 
-            /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
             public final /* synthetic */ TypeRef f10930;
 
             {
@@ -42,7 +41,6 @@ public abstract class TypeRef<T> {
         final int i2 = 1;
         this.rawType$delegate = new C2873(new InterfaceC1414(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤝᲈᲀᤞᛸ
 
-            /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
             public final /* synthetic */ TypeRef f10930;
 
             {

@@ -13,7 +13,6 @@ public class SearchBar$ScrollingViewBehavior extends AppBarLayout$ScrollingViewB
     }
 
     @Override // com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior, p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final boolean mo631(CoordinatorLayout coordinatorLayout, View view, View view2) {
         super.mo631(coordinatorLayout, view, view2);
         return false;

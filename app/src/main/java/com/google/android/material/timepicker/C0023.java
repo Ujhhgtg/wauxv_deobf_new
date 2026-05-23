@@ -11,12 +11,10 @@ import p000.C0085;
 import p000.C0091;
 import p000.C0092;
 
-/* JADX INFO: renamed from: com.google.android.material.timepicker.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0023 extends C0078 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ ClockFaceView f897;
 
     public C0023(ClockFaceView clockFaceView) {
@@ -24,7 +22,6 @@ public final class C0023 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void mo722(View view, C0092 c0092) {
         AccessibilityNodeInfo accessibilityNodeInfo = c0092.f1045;
         this.f1024.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfo);
@@ -38,7 +35,6 @@ public final class C0023 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean mo723(View view, int i, Bundle bundle) {
         if (i != 16) {
             return super.mo723(view, i, bundle);

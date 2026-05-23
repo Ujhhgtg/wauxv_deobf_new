@@ -6,16 +6,13 @@ import java.io.IOException;
 import java.util.Set;
 import me.hd.wauxv.data.bean.info.FriendInfo;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲇᤝᲈᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2283 extends AbstractC1823 implements InterfaceC1601 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C2283 f7377 = new C2283();
 
     @Override // p000.InterfaceC1601
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final void mo1233(C1563 c1563, String str, ContentValues contentValues, String str2, String[] strArr, int i) throws IOException {
         String nickname;
         String nickname2;
@@ -99,7 +96,6 @@ public final class C2283 extends AbstractC1823 implements InterfaceC1601 {
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

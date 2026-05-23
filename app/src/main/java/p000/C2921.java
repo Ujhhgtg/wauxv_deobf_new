@@ -3,19 +3,15 @@ package p000;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᲇᤞᲁᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C2921 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final /* synthetic */ AtomicIntegerFieldUpdater f9376 = AtomicIntegerFieldUpdater.newUpdater(C2921.class, "_size$volatile");
     private volatile /* synthetic */ int _size$volatile;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public AbstractRunnableC1232[] f9377;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4922(AbstractRunnableC1232 abstractRunnableC1232) {
         abstractRunnableC1232.m2867((C1233) this);
         AbstractRunnableC1232[] abstractRunnableC1232Arr = this.f9377;
@@ -42,7 +38,6 @@ public class C2921 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final AbstractRunnableC1232 m4923(int i) {
         Object[] objArr = this.f9377;
         AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f9376;
@@ -88,7 +83,6 @@ public class C2921 {
         return abstractRunnableC1232;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m4924(int i, int i2) {
         AbstractRunnableC1232[] abstractRunnableC1232Arr = this.f9377;
         AbstractRunnableC1232 abstractRunnableC1232 = abstractRunnableC1232Arr[i2];

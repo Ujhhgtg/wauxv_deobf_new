@@ -20,18 +20,14 @@ import p000.C3523;
 import p000.C3524;
 import p000.InterfaceC2335;
 
-/* JADX INFO: renamed from: bsh.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0008 implements InterfaceC2335 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final List f514 = Arrays.asList(106, 107, Integer.valueOf(108), Integer.valueOf(118));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final List f515 = Arrays.asList(90, 91, 88, 89, 94, 95, 96, 97, 98, 99);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static Object m370(Object obj, int i, Object obj2) throws C3523 {
         if (i == 94) {
             return obj == obj2 ? Primitive.TRUE : Primitive.FALSE;
@@ -125,7 +121,6 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
         throw new C3523(AbstractC2784.m4752(new StringBuilder("Operator: "), strArr[i], " inappropriate for objects"));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static BigDecimal m371(BigDecimal bigDecimal, BigDecimal bigDecimal2, int i) throws C3523 {
         switch (i) {
             case 106:
@@ -157,7 +152,6 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static BigInteger m372(BigInteger bigInteger, BigInteger bigInteger2, int i) {
         switch (i) {
             case 106:
@@ -203,7 +197,6 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static Object m373(Object obj, int i, Object obj2) throws C3523 {
         Object objUnwrap = Primitive.unwrap(obj);
         Object objUnwrap2 = Primitive.unwrap(obj2);
@@ -261,7 +254,6 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static Object m374(Object obj, int i, Object obj2) throws C3523 {
         if (i == 147) {
             return Integer.valueOf(((Comparable) obj).compareTo(obj2));
@@ -484,7 +476,6 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
         throw new C1669("Unimplemented binary double operator");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static Number m375(Object obj) {
         if (obj instanceof Character) {
             return Integer.valueOf(((Character) obj).charValue());

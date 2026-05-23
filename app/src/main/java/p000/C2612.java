@@ -2,7 +2,6 @@ package p000;
 
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤝᲈᛸᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2612 implements InterfaceC2430 {

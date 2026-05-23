@@ -6,18 +6,14 @@ import android.text.method.TransformationMethod;
 import android.util.SparseArray;
 import android.widget.TextView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲀᛸᲇᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1178 extends AbstractC1460 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final TextView f4315;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final C1167 f4316;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f4317;
 
     public C1178(TextView textView) {
@@ -28,7 +24,6 @@ public final class C1178 extends AbstractC1460 {
     }
 
     @Override // p000.AbstractC1460
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final InputFilter[] mo2765(InputFilter[] inputFilterArr) {
         if (!this.f4317) {
             SparseArray sparseArray = new SparseArray(1);
@@ -70,13 +65,11 @@ public final class C1178 extends AbstractC1460 {
     }
 
     @Override // p000.AbstractC1460
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final boolean mo2766() {
         return this.f4317;
     }
 
     @Override // p000.AbstractC1460
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final void mo2767(boolean z) {
         if (z) {
             TextView textView = this.f4315;
@@ -85,7 +78,6 @@ public final class C1178 extends AbstractC1460 {
     }
 
     @Override // p000.AbstractC1460
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final void mo2768(boolean z) {
         this.f4317 = z;
         TextView textView = this.f4315;
@@ -94,7 +86,6 @@ public final class C1178 extends AbstractC1460 {
     }
 
     @Override // p000.AbstractC1460
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public final TransformationMethod mo2769(TransformationMethod transformationMethod) {
         if (this.f4317) {
             return ((transformationMethod instanceof C1182) || (transformationMethod instanceof PasswordTransformationMethod)) ? transformationMethod : new C1182(transformationMethod);

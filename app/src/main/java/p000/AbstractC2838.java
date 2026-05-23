@@ -1,14 +1,11 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᛸᲇᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2838 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final String[] f9106;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final byte[] f9107;
 
     static {
@@ -38,7 +35,6 @@ public abstract class AbstractC2838 {
         f9107 = bArr;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final void m4824(StringBuilder sb, String str) {
         sb.append('\"');
         int length = str.length();
@@ -60,7 +56,6 @@ public abstract class AbstractC2838 {
         sb.append('\"');
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final char m4825(int i) {
         int i2 = i & 15;
         return (char) (i2 < 10 ? i2 + 48 : i2 + 87);

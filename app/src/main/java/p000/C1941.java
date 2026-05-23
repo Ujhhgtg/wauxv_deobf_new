@@ -7,27 +7,20 @@ import android.widget.BaseAdapter;
 import androidx.appcompat.view.menu.ListMenuItemView;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲇᲈᲀᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1941 extends BaseAdapter {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final MenuC1944 f6400;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int f6401 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public boolean f6402;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean f6403;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final LayoutInflater f6404;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int f6405;
 
     public C1941(MenuC1944 menuC1944, LayoutInflater layoutInflater, boolean z, int i) {
@@ -85,7 +78,6 @@ public final class C1941 extends BaseAdapter {
         super.notifyDataSetChanged();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m3752() {
         MenuC1944 menuC1944 = this.f6400;
         MenuItemC1946 menuItemC1946 = menuC1944.f6425;
@@ -104,7 +96,6 @@ public final class C1941 extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters and merged with bridge method [inline-methods] */
     public final MenuItemC1946 getItem(int i) {
         ArrayList arrayListM3764;
         boolean z = this.f6403;

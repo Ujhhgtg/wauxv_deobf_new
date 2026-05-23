@@ -18,13 +18,11 @@ import p000.InterfaceC1636;
 /* JADX INFO: loaded from: classes.dex */
 public final class ProcessLifecycleInitializer implements InterfaceC1636 {
     @Override // p000.InterfaceC1636
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final List mo92() {
         return C1189.f4329;
     }
 
     @Override // p000.InterfaceC1636
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final Object mo93(Context context) {
         if (!((HashSet) C0243.m1306(context).f1405).contains(ProcessLifecycleInitializer.class)) {
             throw new IllegalStateException("ProcessLifecycleInitializer cannot be initialized lazily.\n               Please ensure that you have:\n               <meta-data\n                   android:name='androidx.lifecycle.ProcessLifecycleInitializer'\n                   android:value='androidx.startup' />\n               under InitializationProvider in your AndroidManifest.xml");

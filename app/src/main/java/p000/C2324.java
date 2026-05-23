@@ -2,15 +2,12 @@ package p000;
 
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲈᲇᤞᲁᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2324 implements InterfaceC3407, Comparable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C0913 f7462;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C3496 f7463;
 
     public C2324(C0913 c0913, C0179 c0179, C1023 c1023) {
@@ -43,7 +40,6 @@ public final class C2324 implements InterfaceC3407, Comparable {
     }
 
     @Override // p000.InterfaceC3407
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo1214() {
         StringBuilder sb = new StringBuilder();
         sb.append(this.f7462.mo1214());

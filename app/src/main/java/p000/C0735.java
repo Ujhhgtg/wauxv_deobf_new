@@ -9,18 +9,14 @@ import android.text.TextPaint;
 import android.text.style.LeadingMarginSpan;
 import android.text.style.MetricAffectingSpan;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲁᲀᲇᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0735 extends MetricAffectingSpan implements LeadingMarginSpan {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C1901 f2763;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Rect f2764 = AbstractC2267.f7362;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Paint f2765 = AbstractC2267.f7364;
 
     public C0735(C1901 c1901) {

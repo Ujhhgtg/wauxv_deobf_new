@@ -11,36 +11,26 @@ import java.lang.ref.WeakReference;
 import java.util.WeakHashMap;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᛸᤞᲇᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2577 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static C2577 f8172;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public WeakHashMap f8174;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final WeakHashMap f8175 = new WeakHashMap(0);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public TypedValue f8176;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean f8177;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public C0215 f8178;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final PorterDuff.Mode f8171 = PorterDuff.Mode.SRC_IN;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final C2576 f8173 = new C2576(6);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static synchronized C2577 m4585() {
         try {
             if (f8172 == null) {
@@ -52,7 +42,6 @@ public final class C2577 {
         return f8172;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static synchronized PorterDuffColorFilter m4586(int i, PorterDuff.Mode mode) {
         PorterDuffColorFilter porterDuffColorFilter;
         C2576 c2576 = f8173;
@@ -65,7 +54,6 @@ public final class C2577 {
         return porterDuffColorFilter;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Drawable m4587(Context context, int i) {
         Drawable drawableNewDrawable;
         WeakReference weakReference;
@@ -133,12 +121,10 @@ public final class C2577 {
         return layerDrawableM1245;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final synchronized Drawable m4588(Context context, int i) {
         return m4589(context, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final synchronized Drawable m4589(Context context, int i) {
         Drawable drawableM4587;
         try {
@@ -166,7 +152,6 @@ public final class C2577 {
         return drawableM4587;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final synchronized ColorStateList m4590(Context context, int i) {
         ColorStateList colorStateList;
         C2794 c2794;
@@ -196,7 +181,6 @@ public final class C2577 {
 
     /* JADX WARN: Code duplicated, block: B:48:0x00e8  */
     /* JADX WARN: Code duplicated, block: B:50:0x00f9  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final Drawable m4591(int i, Context context, Drawable drawable) {
         int i2;
         int iRound;

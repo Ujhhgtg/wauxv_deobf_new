@@ -8,33 +8,24 @@ import java.util.Map;
 import java.util.NavigableMap;
 import java.util.TreeMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᛸᲁᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2716 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final Bitmap.Config[] f8766;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final Bitmap.Config[] f8767;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final Bitmap.Config[] f8768;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final Bitmap.Config[] f8769;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final Bitmap.Config[] f8770;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C1866 f8771 = new C1866(1);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final C0542 f8772 = new C0542(14);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final HashMap f8773 = new HashMap();
 
     static {
@@ -47,7 +38,6 @@ public final class C2716 {
         f8770 = new Bitmap.Config[]{Bitmap.Config.ALPHA_8};
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static String m4722(int i, Bitmap.Config config) {
         return "[" + i + "](" + config + ")";
     }
@@ -70,7 +60,6 @@ public final class C2716 {
         return sbM4753.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4723(Integer num, Bitmap bitmap) {
         NavigableMap navigableMapM4725 = m4725(bitmap.getConfig());
         Integer num2 = (Integer) navigableMapM4725.get(num);
@@ -86,7 +75,6 @@ public final class C2716 {
         throw new NullPointerException("Tried to decrement empty size, size: " + num + ", removed: " + m4722(AbstractC3522.m5106(bitmap), bitmap.getConfig()) + ", this: " + this);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Bitmap m4724(int i, int i2, Bitmap.Config config) {
         Bitmap.Config[] configArr;
         int iM5107 = AbstractC3522.m5107(config) * i * i2;
@@ -139,7 +127,6 @@ public final class C2716 {
         return bitmap;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final NavigableMap m4725(Bitmap.Config config) {
         HashMap map = this.f8773;
         NavigableMap navigableMap = (NavigableMap) map.get(config);
@@ -151,7 +138,6 @@ public final class C2716 {
         return treeMap;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m4726(Bitmap bitmap) {
         int iM5106 = AbstractC3522.m5106(bitmap);
         Bitmap.Config config = bitmap.getConfig();

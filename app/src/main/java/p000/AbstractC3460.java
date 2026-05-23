@@ -22,18 +22,14 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤞᛸᲀᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3460 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final AbstractC1459 f10933;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C1316 f10934;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static Paint f10935;
 
     static {
@@ -54,7 +50,6 @@ public abstract class AbstractC3460 {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static Typeface m5045(Context context, InterfaceC1379 interfaceC1379, Resources resources, int i, String str, int i2, int i3, AbstractC3681 abstractC3681, boolean z) {
         Typeface typefaceMo3200;
         Typeface typefaceBuild;
@@ -232,12 +227,10 @@ public abstract class AbstractC3460 {
         return typefaceMo3200;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static String m5046(Resources resources, int i, String str, int i2, int i3) {
         return resources.getResourcePackageName(i) + '-' + str + '-' + i2 + '-' + i + '-' + i3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static Typeface m5047(String str) {
         if (str != null && !str.isEmpty()) {
             Typeface typefaceCreate = Typeface.create(str, 0);
@@ -249,7 +242,6 @@ public abstract class AbstractC3460 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static Font m5048(Typeface typeface) {
         if (f10935 == null) {
             f10935 = new Paint();

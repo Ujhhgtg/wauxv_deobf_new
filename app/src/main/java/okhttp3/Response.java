@@ -53,67 +53,54 @@ public final class Response implements Closeable {
         return response.header(str, str2);
     }
 
-    /* JADX INFO: renamed from: -deprecated_body, reason: not valid java name */
     public final ResponseBody m883deprecated_body() {
         return this.body;
     }
 
-    /* JADX INFO: renamed from: -deprecated_cacheControl, reason: not valid java name */
     public final CacheControl m884deprecated_cacheControl() {
         return cacheControl();
     }
 
-    /* JADX INFO: renamed from: -deprecated_cacheResponse, reason: not valid java name */
     public final Response m885deprecated_cacheResponse() {
         return this.cacheResponse;
     }
 
-    /* JADX INFO: renamed from: -deprecated_code, reason: not valid java name */
     public final int m886deprecated_code() {
         return this.code;
     }
 
-    /* JADX INFO: renamed from: -deprecated_handshake, reason: not valid java name */
     public final Handshake m887deprecated_handshake() {
         return this.handshake;
     }
 
-    /* JADX INFO: renamed from: -deprecated_headers, reason: not valid java name */
     public final Headers m888deprecated_headers() {
         return this.headers;
     }
 
-    /* JADX INFO: renamed from: -deprecated_message, reason: not valid java name */
     public final String m889deprecated_message() {
         return this.message;
     }
 
-    /* JADX INFO: renamed from: -deprecated_networkResponse, reason: not valid java name */
     public final Response m890deprecated_networkResponse() {
         return this.networkResponse;
     }
 
-    /* JADX INFO: renamed from: -deprecated_priorResponse, reason: not valid java name */
     public final Response m891deprecated_priorResponse() {
         return this.priorResponse;
     }
 
-    /* JADX INFO: renamed from: -deprecated_protocol, reason: not valid java name */
     public final Protocol m892deprecated_protocol() {
         return this.protocol;
     }
 
-    /* JADX INFO: renamed from: -deprecated_receivedResponseAtMillis, reason: not valid java name */
     public final long m893deprecated_receivedResponseAtMillis() {
         return this.receivedResponseAtMillis;
     }
 
-    /* JADX INFO: renamed from: -deprecated_request, reason: not valid java name */
     public final Request m894deprecated_request() {
         return this.request;
     }
 
-    /* JADX INFO: renamed from: -deprecated_sentRequestAtMillis, reason: not valid java name */
     public final long m895deprecated_sentRequestAtMillis() {
         return this.sentRequestAtMillis;
     }

@@ -5,12 +5,10 @@ import android.text.method.TransformationMethod;
 import android.view.View;
 import java.util.Locale;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᤞᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0149 implements TransformationMethod {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public Locale f1158;
 
     @Override // android.text.method.TransformationMethod

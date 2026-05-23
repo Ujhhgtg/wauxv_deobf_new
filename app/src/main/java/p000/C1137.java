@@ -3,12 +3,10 @@ package p000;
 import android.os.Build;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᛸᲀᲈᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1137 extends AbstractC1458 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final /* synthetic */ C2107 f4231;
 
     public C1137(C2107 c2107) {
@@ -16,13 +14,11 @@ public final class C1137 extends AbstractC1458 {
     }
 
     @Override // p000.AbstractC1458
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void mo2734(Throwable th) {
         ((C1142) this.f4231.f6946).m2756(th);
     }
 
     @Override // p000.AbstractC1458
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void mo2735(C2103 c2103) {
         C2107 c2107 = this.f4231;
         c2107.f6948 = c2103;

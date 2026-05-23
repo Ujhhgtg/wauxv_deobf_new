@@ -3,12 +3,10 @@ package p000;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲁᲇᛸᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0948 extends C1916 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final RectF f3464;
 
     public C0948(C2677 c2677, RectF rectF) {

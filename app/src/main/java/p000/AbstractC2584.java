@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᛸᲇᤞᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2584 extends AbstractC0370 implements InterfaceC1437 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int f8190;
 
     public AbstractC2584(int i, InterfaceC0842 interfaceC0842) {
@@ -31,7 +29,6 @@ public abstract class AbstractC2584 extends AbstractC0370 implements InterfaceC1
     }
 
     @Override // p000.InterfaceC0842
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final InterfaceC0877 mo934() {
         return C1187.f4327;
     }

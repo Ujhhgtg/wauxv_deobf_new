@@ -13,10 +13,8 @@ import p000.AbstractC2465;
 @SuppressLint({"AppCompatCustomView"})
 public class PreferenceImageView extends ImageView {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f318;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f319;
 
     public PreferenceImageView(Context context, AttributeSet attributeSet) {

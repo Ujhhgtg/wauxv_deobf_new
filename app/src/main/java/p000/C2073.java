@@ -15,27 +15,20 @@ import java.util.Locale;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.MsgInfoBean;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲈᤝᲁᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final C2073 f6869;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final List f6870;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final String f6871;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final String f6872;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static final String f6873;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static final C2058 f6874;
 
     static {
@@ -55,7 +48,6 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
     }
 
     @Override // p000.InterfaceC1577
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo3334(ViewGroup viewGroup) {
         if (mo3264()) {
             RelativeLayout relativeLayout = new RelativeLayout(viewGroup.getContext());
@@ -69,7 +61,6 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
     }
 
     @Override // p000.InterfaceC1577
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public final void mo3335(Object obj, ViewGroup viewGroup, Object obj2, MsgInfoBean msgInfoBean) {
         String str;
         String str2;
@@ -174,31 +165,26 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
     public final String mo1127() {
         return f6873;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public final String mo1128() {
         return f6872;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public final String mo1129() {
         return f6871;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ */
     public final InterfaceC1425 mo1130() {
         return f6874;
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

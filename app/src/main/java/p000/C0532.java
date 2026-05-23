@@ -4,12 +4,10 @@ import android.os.ParcelFileDescriptor;
 import com.bumptech.glide.load.data.C0019;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤝᤞᲈᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0532 implements InterfaceC0961 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f2231;
 
     public /* synthetic */ C0532(int i) {
@@ -17,7 +15,6 @@ public final class C0532 implements InterfaceC0961 {
     }
 
     @Override // p000.InterfaceC0961
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Class mo1861() {
         switch (this.f2231) {
             case 0:
@@ -30,7 +27,6 @@ public final class C0532 implements InterfaceC0961 {
     }
 
     @Override // p000.InterfaceC0961
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final InterfaceC0962 mo1862(Object obj) {
         switch (this.f2231) {
             case 0:

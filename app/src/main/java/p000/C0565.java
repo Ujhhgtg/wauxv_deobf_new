@@ -10,15 +10,12 @@ import java.util.Iterator;
 import java.util.List;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤞᲁᲀᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0565 extends AbstractC2488 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Paint f2296;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final List f2297;
 
     public C0565() {
@@ -30,7 +27,6 @@ public final class C0565 extends AbstractC2488 {
     }
 
     @Override // p000.AbstractC2488
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void mo1959(Canvas canvas, RecyclerView recyclerView) {
         Canvas canvas2;
         float dimension = recyclerView.getResources().getDimension(R.dimen.m3_carousel_debug_keyline_width);

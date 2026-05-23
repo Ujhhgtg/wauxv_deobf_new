@@ -2,15 +2,12 @@ package p000;
 
 import android.view.Choreographer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲈᲇᤝᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class ChoreographerFrameCallbackC1964 implements Choreographer.FrameCallback {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f6512;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ Object f6513;
 
     public /* synthetic */ ChoreographerFrameCallbackC1964(int i, Object obj) {

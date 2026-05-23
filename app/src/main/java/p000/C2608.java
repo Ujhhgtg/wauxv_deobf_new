@@ -2,18 +2,14 @@ package p000;
 
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤝᲇᤞᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2608 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public AbstractC3640 f8486;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public ArrayList f8487;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static long m4629(C1014 c1014, long j) {
         AbstractC3640 abstractC3640 = c1014.f3704;
         ArrayList arrayList = c1014.f3711;
@@ -40,7 +36,6 @@ public final class C2608 {
         return Math.min(Math.min(jMin, m4629(c1017, jMo2007)), jMo2007 - ((long) c1017.f3706));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static long m4630(C1014 c1014, long j) {
         AbstractC3640 abstractC3640 = c1014.f3704;
         ArrayList arrayList = c1014.f3711;

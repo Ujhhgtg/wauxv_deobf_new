@@ -8,11 +8,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲀᛸᲇᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1898 extends AbstractC2205 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ, reason: contains not printable characters */
     public static Object m3692(Map map, Object obj) {
         Object obj2 = map.get(obj);
         if (obj2 != null || map.containsKey(obj)) {
@@ -21,7 +19,6 @@ public abstract class AbstractC1898 extends AbstractC2205 {
         throw new NoSuchElementException("Key " + obj + " is missing in the map.");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ, reason: contains not printable characters */
     public static int m3693(int i) {
         if (i < 0) {
             return i;
@@ -35,7 +32,6 @@ public abstract class AbstractC1898 extends AbstractC2205 {
         return 2147483647;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ, reason: contains not printable characters */
     public static Map m3694(C2315... c2315Arr) {
         if (c2315Arr.length <= 0) {
             return C1190.f4330;
@@ -45,14 +41,12 @@ public abstract class AbstractC1898 extends AbstractC2205 {
         return linkedHashMap;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ, reason: contains not printable characters */
     public static final void m3695(HashMap map, C2315[] c2315Arr) {
         for (C2315 c2315 : c2315Arr) {
             map.put(c2315.f7445, c2315.f7446);
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲇᲀ, reason: contains not printable characters */
     public static Map m3696(ArrayList arrayList) {
         int size = arrayList.size();
         if (size == 0) {

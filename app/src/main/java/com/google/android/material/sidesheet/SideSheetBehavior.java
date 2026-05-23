@@ -47,70 +47,48 @@ import p000.InterfaceC0102;
 /* JADX INFO: loaded from: classes.dex */
 public class SideSheetBehavior<V extends View> extends AbstractC0861 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public AbstractC1574 f757;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final C1917 f758;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final ColorStateList f759;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C2677 f760;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C0362 f761;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final float f762;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean f763;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public int f764;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public C3579 f765;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public boolean f766;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final float f767;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int f768;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public int f769;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public int f770;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public int f771;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public WeakReference f772;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public WeakReference f773;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final int f774;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public VelocityTracker f775;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public int f776;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final LinkedHashSet f777;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final C0453 f778;
 
     public SideSheetBehavior() {
@@ -124,21 +102,18 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo638(C0864 c0864) {
         this.f772 = null;
         this.f765 = null;
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo639() {
         this.f772 = null;
         this.f765 = null;
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final boolean mo619(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
         C3579 c3579;
         VelocityTracker velocityTracker;
@@ -165,7 +140,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo620(CoordinatorLayout coordinatorLayout, View view, int i) {
         View view2;
         View view3;
@@ -292,7 +266,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final boolean mo621(CoordinatorLayout coordinatorLayout, View view, int i, int i2, int i3) {
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
         view.measure(ViewGroup.getChildMeasureSpec(i, coordinatorLayout.getPaddingRight() + coordinatorLayout.getPaddingLeft() + marginLayoutParams.leftMargin + marginLayoutParams.rightMargin + i2, marginLayoutParams.width), ViewGroup.getChildMeasureSpec(i3, coordinatorLayout.getPaddingBottom() + coordinatorLayout.getPaddingTop() + marginLayoutParams.topMargin + marginLayoutParams.bottomMargin, marginLayoutParams.height));
@@ -300,7 +273,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final void mo624(View view, Parcelable parcelable) {
         int i = ((C2703) parcelable).f8713;
         if (i == 1 || i == 2) {
@@ -310,14 +282,12 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final Parcelable mo625(View view) {
         AbsSavedState absSavedState = View.BaseSavedState.EMPTY_STATE;
         return new C2703(this);
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final boolean mo628(View view, MotionEvent motionEvent) {
         VelocityTracker velocityTracker;
         if (!view.isShown()) {
@@ -348,7 +318,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
         return !this.f766;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final void m687(int i) {
         View view;
         if (this.f764 == i) {
@@ -370,7 +339,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
         m690();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final boolean m688() {
         if (this.f765 != null) {
             return this.f763 || this.f764 == 1;
@@ -395,7 +363,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
     
         return;
      */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
@@ -424,7 +391,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
         m687(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final void m690() {
         View view;
         WeakReference weakReference = this.f772;
@@ -439,7 +405,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
         if (this.f764 != 5) {
             AbstractC3578.m5175(view, C0085.f1032, new InterfaceC0102() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᛸᲁᤝᲈᤞ
                 @Override // p000.InterfaceC0102
-                /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
                 public final boolean mo1124(View view2) {
                     int i2 = 5;
                     int i3 = 1;
@@ -471,7 +436,6 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
         if (this.f764 != 3) {
             AbstractC3578.m5175(view, C0085.f1030, new InterfaceC0102() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᛸᲁᤝᲈᤞ
                 @Override // p000.InterfaceC0102
-                /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
                 public final boolean mo1124(View view2) {
                     int i3 = 3;
                     int i4 = 1;

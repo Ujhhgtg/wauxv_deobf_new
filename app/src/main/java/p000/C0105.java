@@ -32,12 +32,10 @@ import me.hd.wauxv.data.bean.info.GroupInfo;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0105 implements InterfaceC1425 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f1053;
 
     public /* synthetic */ C0105(int i) {

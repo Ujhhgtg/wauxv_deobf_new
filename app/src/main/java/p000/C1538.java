@@ -16,12 +16,10 @@ import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲁᤝᲇᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C1538 implements InterfaceC1425 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f5384;
 
     public /* synthetic */ C1538(int i) {

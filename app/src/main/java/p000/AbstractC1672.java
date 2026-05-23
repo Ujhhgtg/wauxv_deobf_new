@@ -14,36 +14,26 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲁᲇᲈᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1672 implements Member {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final boolean f5641;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean f5642;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final String f5643;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final String f5644;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final int f5645;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final Class f5646;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public MethodHandle f5640 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final ArrayList f5647 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int f5648 = 0;
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -66,7 +56,6 @@ public abstract class AbstractC1672 implements Member {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static Object m3397(Class cls, Object obj) {
         Class<?> clsM419 = AbstractC0010.m419(obj, false);
         if (clsM419 == null || !cls.isAssignableFrom(clsM419)) {
@@ -122,7 +111,6 @@ public abstract class AbstractC1672 implements Member {
         return this.f5643;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public C0452 mo2345(Object obj, Object[] objArr) throws InvocationTargetException {
         if (this.f5648 > objArr.length) {
             throw new InvocationTargetException(null, "Insufficient parameters passed for method: " + this.f5644 + Arrays.asList(mo2890()));
@@ -135,7 +123,6 @@ public abstract class AbstractC1672 implements Member {
         return new C0452((Object) arrayList, false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final MethodHandle m3398() {
         if (this.f5640 == null) {
             this.f5640 = mo2349(null);
@@ -143,26 +130,20 @@ public abstract class AbstractC1672 implements Member {
         return this.f5640;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final String[] m3399() {
         return (String[]) MethodType.methodType((Class<?>) mo2346(), (Class<?>[]) mo2890()).parameterList().stream().map(new C0268(14)).toArray(new C0484(3));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public abstract int mo2889();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public abstract Class[] mo2890();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public abstract Class mo2346();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public Class mo2891() {
         return Void.TYPE;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public synchronized Object mo3012(Object obj, Object... objArr) {
         if (objArr == null) {
             objArr = AbstractC0009.f516;
@@ -175,7 +156,6 @@ public abstract class AbstractC1672 implements Member {
         return Primitive.wrap(m3400(obj, objArr), (Class<?>) mo2346());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final synchronized Object m3400(Object obj, Object[] objArr) {
         try {
             AbstractC0009.m402("Invoking method (entry): ", this, objArr);
@@ -200,31 +180,25 @@ public abstract class AbstractC1672 implements Member {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean mo3401() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public boolean mo2347() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public boolean mo3402() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public boolean mo2348() {
         return this.f5641;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public boolean mo2892() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public abstract MethodHandle mo2349(MethodHandle methodHandle);
 }

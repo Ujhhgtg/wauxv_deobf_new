@@ -1,24 +1,19 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲈᲇᛸᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1121 implements InterfaceC1743 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C1121 f4185 = new C1121();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C2399 f4186 = new C2399("kotlin.time.Duration", C2397.f7668);
 
     @Override // p000.InterfaceC1743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final InterfaceC2654 mo1363() {
         return f4186;
     }
 
     @Override // p000.InterfaceC1743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         C0373 c0373 = C1119.f4179;
         String strMo2518 = interfaceC0974.mo2518();
@@ -34,7 +29,6 @@ public final class C1121 implements InterfaceC1743 {
     }
 
     @Override // p000.InterfaceC1743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo1542(InterfaceC1206 interfaceC1206, Object obj) {
         long j;
         long j2 = ((C1119) obj).f4183;

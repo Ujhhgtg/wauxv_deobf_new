@@ -4,15 +4,12 @@ import android.graphics.Path;
 import android.util.Log;
 import com.alibaba.fastjson2.internal.asm.Opcodes;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᛸᲇᲁᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2341 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public char f7527;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final float[] f7528;
 
     public C2341(char c, float[] fArr) {
@@ -20,7 +17,6 @@ public final class C2341 {
         this.f7528 = fArr;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m4328(Path path, float f, float f2, float f3, float f4, float f5, float f6, float f7, boolean z, boolean z2) {
         double d;
         double d2;
@@ -116,7 +112,6 @@ public final class C2341 {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m4329(C2341[] c2341Arr, Path path) {
         int i;
         float f;

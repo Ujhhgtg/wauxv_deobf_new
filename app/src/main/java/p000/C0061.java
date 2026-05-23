@@ -3,12 +3,10 @@ package p000;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0061 extends C0060 implements ListIterator {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ AbstractC0063 f995;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

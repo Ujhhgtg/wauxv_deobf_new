@@ -6,15 +6,12 @@ import android.text.Spannable;
 import android.widget.TextView;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᲇᲀᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1166 extends AbstractC1140 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final WeakReference f4294;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final WeakReference f4295;
 
     public C1166(TextView textView, C1167 c1167) {
@@ -23,7 +20,6 @@ public final class C1166 extends AbstractC1140 {
     }
 
     @Override // p000.AbstractC1140
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo2752() throws Throwable {
         InputFilter[] filters;
         int length;

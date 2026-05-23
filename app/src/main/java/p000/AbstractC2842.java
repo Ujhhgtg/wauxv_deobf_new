@@ -3,11 +3,9 @@ package p000;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᤞᲁᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2842 extends AbstractC2203 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static String m4849(String str) {
         if (AbstractC2841.m4836("|")) {
             throw new IllegalArgumentException("marginPrefix must be non-blank string.");

@@ -5,18 +5,14 @@ import android.view.ViewParent;
 import com.google.android.material.behavior.SwipeDismissBehavior;
 import java.lang.reflect.Field;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤞᤝᛸᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2863 extends AbstractC0743 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public int f9170;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public int f9171 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final /* synthetic */ SwipeDismissBehavior f9172;
 
     public C2863(SwipeDismissBehavior swipeDismissBehavior) {
@@ -24,7 +20,6 @@ public final class C2863 extends AbstractC0743 {
     }
 
     @Override // p000.AbstractC0743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo1683(View view, int i) {
         int width;
         int width2;
@@ -56,19 +51,16 @@ public final class C2863 extends AbstractC0743 {
     }
 
     @Override // p000.AbstractC0743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final int mo1684(View view, int i) {
         return view.getTop();
     }
 
     @Override // p000.AbstractC0743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final int mo1685(View view) {
         return view.getWidth();
     }
 
     @Override // p000.AbstractC0743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ */
     public final void mo2189(View view, int i) {
         this.f9171 = i;
         this.f9170 = view.getLeft();
@@ -82,7 +74,6 @@ public final class C2863 extends AbstractC0743 {
     }
 
     @Override // p000.AbstractC0743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public final void mo1688(View view, int i, int i2) {
         float width = view.getWidth();
         SwipeDismissBehavior swipeDismissBehavior = this.f9172;
@@ -104,7 +95,6 @@ public final class C2863 extends AbstractC0743 {
     /* JADX WARN: Code duplicated, block: B:33:0x0061  */
     /* JADX WARN: Code duplicated, block: B:35:0x0067  */
     @Override // p000.AbstractC0743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public final void mo1689(View view, float f, float f2) {
         int i;
         int left;
@@ -159,14 +149,12 @@ public final class C2863 extends AbstractC0743 {
     }
 
     @Override // p000.AbstractC0743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ */
     public final boolean mo1690(View view, int i) {
         int i2 = this.f9171;
         return (i2 == -1 || i2 == i) && this.f9172.mo635(view);
     }
 
     @Override // p000.AbstractC0743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ */
     public final void mo1687(int i) {
     }
 }

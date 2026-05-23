@@ -2,12 +2,10 @@ package p000;
 
 import java.io.IOException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᛸᲁᲇᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1384 extends AbstractC1404 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ C1385 f4984;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

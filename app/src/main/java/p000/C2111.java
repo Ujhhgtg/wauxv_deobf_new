@@ -7,18 +7,14 @@ import java.util.Iterator;
 import java.util.List;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᤝᛸᲀᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2111 implements InterfaceC1429 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f6955;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ Serializable f6956;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ Object f6957;
 
     public /* synthetic */ C2111(int i, Serializable serializable, Object obj) {
@@ -28,7 +24,6 @@ public final /* synthetic */ class C2111 implements InterfaceC1429 {
     }
 
     @Override // p000.InterfaceC1429
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) throws IllegalAccessException, InvocationTargetException {
         switch (this.f6955) {
             case 0:

@@ -4,12 +4,10 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤞᲈᤝᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3478 implements Collection, InterfaceC1737 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int[] f10973;
 
     @Override // java.util.Collection

@@ -1,14 +1,11 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᛸᲁᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2547 extends C2436 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int f8104;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final long f8105;
 
     public C2547(C2427 c2427, C2439 c2439, long j, InterfaceC2654 interfaceC2654) {
@@ -25,7 +22,6 @@ public final class C2547 extends C2436 {
     }
 
     @Override // p000.C2436, p000.InterfaceC0766
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final int mo2230(InterfaceC2654 interfaceC2654) {
         long j = this.f8105;
         C2439 c2439 = this.f7737;
@@ -57,7 +53,6 @@ public final class C2547 extends C2436 {
     }
 
     @Override // p000.C2436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲀᲇᤞ */
     public final long mo3689(InterfaceC2654 interfaceC2654, int i) {
         long j = this.f8105;
         if (j > 0) {

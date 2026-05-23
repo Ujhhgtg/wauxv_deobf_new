@@ -9,11 +9,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᲇᤝᤞᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2914 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C0837 m4916(View view, C0837 c0837) {
         CharSequence charSequenceCoerceToStyledText;
         if (Log.isLoggable("ReceiveContent", 3)) {

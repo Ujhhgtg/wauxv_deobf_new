@@ -5,12 +5,10 @@ import android.view.VelocityTracker;
 import android.view.View;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲁᲈᲇᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1678 implements InterfaceC2494 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ C1682 f5665;
 
     public C1678(C1682 c1682) {
@@ -18,7 +16,6 @@ public final class C1678 implements InterfaceC2494 {
     }
 
     @Override // p000.InterfaceC2494
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo3005(MotionEvent motionEvent) {
         C1682 c1682 = this.f5665;
         RunnableC0141 runnableC0141 = c1682.f5703;
@@ -73,7 +70,6 @@ public final class C1678 implements InterfaceC2494 {
     }
 
     @Override // p000.InterfaceC2494
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final boolean mo3006(MotionEvent motionEvent) {
         int iFindPointerIndex;
         C1682 c1682 = this.f5665;
@@ -131,7 +127,6 @@ public final class C1678 implements InterfaceC2494 {
     }
 
     @Override // p000.InterfaceC2494
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo3007(boolean z) {
         if (z) {
             this.f5665.m3420(null, 0);

@@ -9,12 +9,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᤞᲁᛸᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2357 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C2357 f7564;
 
     static {
@@ -22,12 +20,10 @@ public final class C2357 {
         f7564 = new C2357();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static File m4336(C2355 c2355) {
         return new File(c2355.f7549, "config.prop");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static Properties m4337(File file) throws IOException {
         Properties properties = new Properties();
         if (!file.exists()) {

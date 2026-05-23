@@ -3,12 +3,10 @@ package p000;
 import android.graphics.RectF;
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0053 implements InterfaceC0874 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final float f987;
 
     public C0053(float f) {
@@ -27,7 +25,6 @@ public final class C0053 implements InterfaceC0874 {
     }
 
     @Override // p000.InterfaceC0874
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final float mo916(RectF rectF) {
         return this.f987;
     }

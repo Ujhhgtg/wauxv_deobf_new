@@ -7,15 +7,12 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 import java.util.stream.Stream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲀᲁᤞᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0797 extends AbstractC1241 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public Constructor f3155;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final boolean f3156;
 
     public C0797(Constructor constructor) {
@@ -27,7 +24,6 @@ public final class C0797 extends AbstractC1241 {
     }
 
     @Override // p000.AbstractC1241, p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final C0452 mo2345(Object obj, Object[] objArr) {
         if (this.f5646.isMemberClass() && !this.f3156) {
             objArr = Stream.concat(Stream.of(obj), Stream.of(objArr)).toArray();
@@ -36,25 +32,21 @@ public final class C0797 extends AbstractC1241 {
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final Class mo2346() {
         return this.f5646;
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final boolean mo2347() {
         return this.f5646.isMemberClass();
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final boolean mo2348() {
         return this.f3156;
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final MethodHandle mo2349(MethodHandle methodHandle) {
         try {
             try {

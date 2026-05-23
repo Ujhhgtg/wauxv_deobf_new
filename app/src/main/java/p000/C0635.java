@@ -9,15 +9,12 @@ import java.util.List;
 import me.hd.wauxv.hook.factory.MagicFactory;
 import me.hd.wauxv.ui.setting.view.ModuleTabLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲈᲀᤝᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0635 implements TextWatcher {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2472;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ Object f2473;
 
     public /* synthetic */ C0635(int i, Object obj) {
@@ -131,27 +128,21 @@ public final class C0635 implements TextWatcher {
         int i4 = this.f2472;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     private final void m2032(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     private final void m2033(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     private final void m2034(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     private final void m2035(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     private final void m2036(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     private final void m2037(int i, int i2, int i3, CharSequence charSequence) {
     }
 }

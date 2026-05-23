@@ -2,12 +2,10 @@ package p000;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤞᛸᤝᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2857 extends C1705 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean f9128;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -46,13 +44,11 @@ public final class C2857 extends C1705 {
     }
 
     @Override // p000.C1705
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final boolean mo3450(Throwable th) {
         return false;
     }
 
     @Override // p000.C1705
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final boolean mo3454() {
         return this.f9128;
     }

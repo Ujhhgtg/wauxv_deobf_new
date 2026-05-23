@@ -42,40 +42,28 @@ import p000.C2504;
 /* JADX INFO: loaded from: classes.dex */
 public class GridLayoutManager extends LinearLayoutManager {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
     public static final Set f320 = Collections.unmodifiableSet(new HashSet(Arrays.asList(17, 66, 33, Integer.valueOf(130))));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public boolean f321;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public int f322;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public int[] f323;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public View[] f324;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public final SparseIntArray f325;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public final SparseIntArray f326;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public AbstractC1481 f327;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public final Rect f328;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public int f329;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public int f330;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ, reason: contains not printable characters */
     public int f331;
 
     public GridLayoutManager(Context context, AttributeSet attributeSet, int i, int i2) {
@@ -93,43 +81,36 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean mo107(C2492 c2492) {
         return c2492 instanceof C1480;
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final int mo108(C2504 c2504) {
         return m170(c2504);
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final int mo109(C2504 c2504) {
         return m171(c2504);
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final int mo110(C2504 c2504) {
         return m170(c2504);
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final int mo111(C2504 c2504) {
         return m171(c2504);
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final C2492 mo112() {
         return this.f332 == 0 ? new C1480(-2, -1) : new C1480(-1, -2);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final C2492 mo113(Context context, AttributeSet attributeSet) {
         C1480 c1480 = new C1480(context, attributeSet);
         c1480.f5253 = -1;
@@ -138,7 +119,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final C2492 mo114(ViewGroup.LayoutParams layoutParams) {
         if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
             C1480 c1480 = new C1480((ViewGroup.MarginLayoutParams) layoutParams);
@@ -153,7 +133,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final int mo115(C2498 c2498, C2504 c2504) {
         if (this.f332 == 1) {
             return Math.min(this.f322, m4468());
@@ -165,7 +144,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public final int mo116(C2498 c2498, C2504 c2504) {
         if (this.f332 == 0) {
             return Math.min(this.f322, m4468());
@@ -181,7 +159,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         if (r13 == (r2 > r15)) goto L57;
      */
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ, reason: contains not printable characters */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
@@ -314,7 +291,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ, reason: contains not printable characters */
     public final void mo118(C2498 c2498, C2504 c2504, C0092 c0092) {
         super.mo118(c2498, c2504, c0092);
         c0092.m1095(GridView.class.getName());
@@ -326,7 +302,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ, reason: contains not printable characters */
     public final void mo119(C2498 c2498, C2504 c2504, View view, C0092 c0092) {
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         if (!(layoutParams instanceof C1480)) {
@@ -343,42 +318,36 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ, reason: contains not printable characters */
     public final void mo120(int i, int i2) {
         this.f327.m3241();
         ((SparseIntArray) this.f327.f5256).clear();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲈᲇ, reason: contains not printable characters */
     public final void mo121() {
         this.f327.m3241();
         ((SparseIntArray) this.f327.f5256).clear();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᤞᲈ, reason: contains not printable characters */
     public final void mo122(int i, int i2) {
         this.f327.m3241();
         ((SparseIntArray) this.f327.f5256).clear();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ, reason: contains not printable characters */
     public final void mo123(int i, int i2) {
         this.f327.m3241();
         ((SparseIntArray) this.f327.f5256).clear();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᤞᲇ, reason: contains not printable characters */
     public final void mo124(int i, int i2) {
         this.f327.m3241();
         ((SparseIntArray) this.f327.f5256).clear();
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ, reason: contains not printable characters */
     public final void mo125(C2498 c2498, C2504 c2504) {
         boolean z = c2504.f7990;
         SparseIntArray sparseIntArray = this.f326;
@@ -398,7 +367,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ, reason: contains not printable characters */
     public final void mo126(C2504 c2504) {
         View viewMo158;
         super.mo126(c2504);
@@ -442,7 +410,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     /* JADX WARN: Code duplicated, block: B:220:0x026b A[SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:221:? A[LOOP:7: B:161:0x0259->B:221:?, LOOP_END, SYNTHETIC] */
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᤞᲀ, reason: contains not printable characters */
     public final boolean mo127(int i, Bundle bundle) {
         View viewM4466;
         AbstractC2508 abstractC2508M232;
@@ -992,7 +959,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲁᲈ, reason: contains not printable characters */
     public final int mo128(int i, C2498 c2498, C2504 c2504) {
         m149();
         m138();
@@ -1000,7 +966,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲀᲈ, reason: contains not printable characters */
     public final int mo129(int i, C2498 c2498, C2504 c2504) {
         m149();
         m138();
@@ -1008,7 +973,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲈᲁᲀ, reason: contains not printable characters */
     public final void mo130(Rect rect, int i, int i2) {
         int iM4452;
         int iM4453;
@@ -1036,13 +1000,11 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᤞᲈᲀ, reason: contains not printable characters */
     public final boolean mo131() {
         return this.f342 == null && !this.f321;
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᲈᤞ, reason: contains not printable characters */
     public final void mo132(C2504 c2504, C1788 c1788, C1439 c1439) {
         int i;
         int iMo3239 = this.f322;
@@ -1055,7 +1017,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲇᲀᲁ, reason: contains not printable characters */
     public final View mo133(C2498 c2498, C2504 c2504, boolean z, boolean z2) {
         int i;
         int iM4467;
@@ -1104,7 +1065,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     /* JADX WARN: Type inference failed for: r12v27 */
     /* JADX WARN: Type inference failed for: r12v34 */
     @Override // androidx.recyclerview.widget.LinearLayoutManager
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲇᤞᲁ, reason: contains not printable characters */
     public final void mo134(C2498 c2498, C2504 c2504, C1788 c1788, C1787 c1787) {
         int i;
         int i2;
@@ -1288,7 +1248,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲇᲁᤞ, reason: contains not printable characters */
     public final void mo135(C2498 c2498, C2504 c2504, C1786 c1786, int i) {
         m149();
         if (c2504.m4505() > 0 && !c2504.f7990) {
@@ -1323,7 +1282,6 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᤞᲀᲁ, reason: contains not printable characters */
     public final void mo136(boolean z) {
         if (z) {
             throw new UnsupportedOperationException("GridLayoutManager does not support stack from end. Consider using reverse layout");
@@ -1331,7 +1289,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         super.mo136(false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᲁᤞᲀ, reason: contains not printable characters */
     public final void m137(int i) {
         int i2;
         int[] iArr = this.f323;
@@ -1358,7 +1315,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         this.f323 = iArr;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᲁᲀᤞ, reason: contains not printable characters */
     public final void m138() {
         View[] viewArr = this.f324;
         if (viewArr == null || viewArr.length != this.f322) {
@@ -1366,7 +1322,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int m139(int i) {
         if (this.f332 == 0) {
             RecyclerView recyclerView = this.f7942;
@@ -1376,7 +1331,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         return m145(i, recyclerView2.f358, recyclerView2.f411);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲀᲁᲈᲇ, reason: contains not printable characters */
     public final int m140(int i) {
         if (this.f332 == 1) {
             RecyclerView recyclerView = this.f7942;
@@ -1386,12 +1340,10 @@ public class GridLayoutManager extends LinearLayoutManager {
         return m145(i, recyclerView2.f358, recyclerView2.f411);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲀᲇᲁᲈ, reason: contains not printable characters */
     public final HashSet m141(int i) {
         return m142(m140(i), i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲀᲇᲈᲁ, reason: contains not printable characters */
     public final HashSet m142(int i, int i2) {
         HashSet hashSet = new HashSet();
         RecyclerView recyclerView = this.f7942;
@@ -1402,7 +1354,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         return hashSet;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m143(int i, int i2) {
         if (this.f332 != 1 || !m185()) {
             int[] iArr = this.f323;
@@ -1413,7 +1364,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         return iArr2[i3 - i] - iArr2[(i3 - i) - i2];
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int m144(int i, C2498 c2498, C2504 c2504) {
         if (!c2504.f7990) {
             return this.f327.m3240(i, this.f322);
@@ -1426,7 +1376,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲁᲀᲇᲈ, reason: contains not printable characters */
     public final int m145(int i, C2498 c2498, C2504 c2504) {
         if (!c2504.f7990) {
             return this.f327.mo3238(i, this.f322);
@@ -1443,7 +1392,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲁᲀᲈᲇ, reason: contains not printable characters */
     public final int m146(int i, C2498 c2498, C2504 c2504) {
         if (!c2504.f7990) {
             return this.f327.mo3239(i);
@@ -1460,7 +1408,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         return 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m147(View view, int i, boolean z) {
         int iM4453;
         int iM4454;
@@ -1484,7 +1431,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m148(int i) {
         if (i == this.f322) {
             return;
@@ -1498,7 +1444,6 @@ public class GridLayoutManager extends LinearLayoutManager {
         m4480();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m149() {
         int iM4469;
         int iM4472;

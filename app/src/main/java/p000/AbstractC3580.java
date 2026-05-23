@@ -5,12 +5,10 @@ import android.view.ViewGroup;
 import java.util.LinkedHashMap;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤞᛸᲀᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3580 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final LinkedHashMap f11211 = new LinkedHashMap();
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -24,7 +22,6 @@ public abstract class AbstractC3580 {
     /* JADX WARN: Type inference failed for: r4v4 */
     /* JADX WARN: Type inference failed for: r4v7 */
     /* JADX WARN: Type inference failed for: r6v1 */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final View m5197(View view, String str, int... iArr) {
         ?? c2585;
         Integer num;
@@ -57,7 +54,6 @@ public abstract class AbstractC3580 {
         return (View) (c2585 instanceof C2585 ? 0 : c2585);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static View m5198(ViewGroup viewGroup, int[] iArr) {
         return m5197(viewGroup, "", iArr);
     }

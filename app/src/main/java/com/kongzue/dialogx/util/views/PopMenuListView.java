@@ -10,7 +10,6 @@ import android.widget.ListView;
 /* JADX INFO: loaded from: classes.dex */
 public class PopMenuListView extends ListView {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final float f966;
 
     public PopMenuListView(Context context, AttributeSet attributeSet) {

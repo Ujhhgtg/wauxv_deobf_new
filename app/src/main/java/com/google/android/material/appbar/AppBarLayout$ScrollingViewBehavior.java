@@ -18,7 +18,6 @@ import p000.C0864;
 /* JADX INFO: loaded from: classes.dex */
 public class AppBarLayout$ScrollingViewBehavior extends AbstractC3588 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final int f550;
 
     public AppBarLayout$ScrollingViewBehavior() {
@@ -26,7 +25,6 @@ public class AppBarLayout$ScrollingViewBehavior extends AbstractC3588 {
         new Rect();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static void m629(ArrayList arrayList) {
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
@@ -34,7 +32,6 @@ public class AppBarLayout$ScrollingViewBehavior extends AbstractC3588 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean mo631(CoordinatorLayout coordinatorLayout, View view, View view2) {
         if (((C0864) view2.getLayoutParams()).f3277 instanceof AppBarLayout$BaseBehavior) {
             int bottom = view2.getBottom() - view.getTop();
@@ -47,7 +44,6 @@ public class AppBarLayout$ScrollingViewBehavior extends AbstractC3588 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final boolean mo621(CoordinatorLayout coordinatorLayout, View view, int i, int i2, int i3) {
         int i4 = view.getLayoutParams().height;
         if (i4 != -1 && i4 != -2) {
@@ -58,13 +54,11 @@ public class AppBarLayout$ScrollingViewBehavior extends AbstractC3588 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void mo632(CoordinatorLayout coordinatorLayout, View view) {
         m629(coordinatorLayout.m66(view));
     }
 
     @Override // p000.AbstractC3588
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final void mo633(CoordinatorLayout coordinatorLayout, View view, int i) {
         m629(coordinatorLayout.m66(view));
         coordinatorLayout.m71(view, i);
@@ -79,7 +73,6 @@ public class AppBarLayout$ScrollingViewBehavior extends AbstractC3588 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo630(View view) {
     }
 }

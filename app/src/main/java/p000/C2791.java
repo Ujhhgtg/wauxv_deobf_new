@@ -7,15 +7,12 @@ import android.text.Spannable;
 import android.text.TextWatcher;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᲈᤝᛸᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2791 implements TextWatcher, SpanWatcher {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Object f8912;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final AtomicInteger f8913 = new AtomicInteger(0);
 
     public C2791(Object obj) {

@@ -15,36 +15,26 @@ import java.util.ArrayList;
 import me.hd.wauxv.data.bean.MsgInfoBean;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲁᛸᲀᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2041 extends AbstractC2867 implements InterfaceC1578 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final C2041 f6815;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final String f6816;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final C2873 f6817;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final C2873 f6818;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static final C2873 f6819;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static final String f6820;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static final String f6821;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static final String f6822;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public static final C1884 f6823;
 
     static {
@@ -62,7 +52,6 @@ public final class C2041 extends AbstractC2867 implements InterfaceC1578 {
         f6823 = new C1884(23);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static void m3880(View view, boolean z) {
         int iHSVToColor;
         int color = AbstractC3681.m5331(view.getContext()) ? Color.parseColor((!z ? C2037.f6811 : C2039.f6813).m2542()) : Color.parseColor((!z ? C2038.f6812 : C2040.f6814).m2542());
@@ -128,7 +117,6 @@ public final class C2041 extends AbstractC2867 implements InterfaceC1578 {
     }
 
     @Override // p000.InterfaceC1578
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo1408(View view, Object obj, Object obj2, MsgInfoBean msgInfoBean) {
         if (mo3264()) {
             int type = msgInfoBean.getType();
@@ -175,31 +163,26 @@ public final class C2041 extends AbstractC2867 implements InterfaceC1578 {
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
     public final String mo1127() {
         return f6822;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public final String mo1128() {
         return f6821;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public final String mo1129() {
         return f6820;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ */
     public final InterfaceC1425 mo1130() {
         return f6823;
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

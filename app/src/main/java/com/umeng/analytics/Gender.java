@@ -22,7 +22,6 @@ public class Gender {
     private static final /* synthetic */ Gender[] a;
     public int value;
 
-    /* JADX INFO: renamed from: com.umeng.analytics.Gender$4, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static /* synthetic */ class AnonymousClass4 {
         static final /* synthetic */ int[] a;

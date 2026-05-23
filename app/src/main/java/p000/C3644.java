@@ -8,21 +8,16 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲇᲀᛸᤞᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3644 extends WindowInsetsAnimation$Callback {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final AbstractC0592 f11407;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public List f11408;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public ArrayList f11409;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final HashMap f11410;
 
     public C3644(AbstractC0592 abstractC0592) {
@@ -68,7 +63,6 @@ public final class C3644 extends WindowInsetsAnimation$Callback {
         return AbstractC0084.m1041(((C1646) c2825Mo2022.f9072).m3377(), ((C1646) c2825Mo2022.f9073).m3377());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C3647 m5239(WindowInsetsAnimation windowInsetsAnimation) {
         C3647 c3647 = (C3647) this.f11410.get(windowInsetsAnimation);
         if (c3647 != null) {

@@ -3,24 +3,18 @@ package p000;
 import android.text.SpannableStringBuilder;
 import com.alibaba.fastjson2.internal.asm.Opcodes;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᲀᲈᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0418 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final String f1958;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final String f1959;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final C0418 f1960;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C0418 f1961;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final boolean f1962;
 
     static {
@@ -36,7 +30,6 @@ public final class C0418 {
         this.f1962 = z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static int m1611(CharSequence charSequence) {
         byte directionality;
         C0417 c0417 = new C0417(charSequence);
@@ -120,7 +113,6 @@ public final class C0418 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static int m1612(CharSequence charSequence) {
         C0417 c0417 = new C0417(charSequence);
         c0417.f1956 = c0417.f1955;
@@ -173,7 +165,6 @@ public final class C0418 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final SpannableStringBuilder m1613(CharSequence charSequence) {
         String str;
         C0452 c0452 = AbstractC2905.f9347;

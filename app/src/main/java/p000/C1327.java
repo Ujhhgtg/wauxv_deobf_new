@@ -3,7 +3,6 @@ package p000;
 import java.io.File;
 import java.io.IOException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲁᤞᲀᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C1327 extends IOException {

@@ -3,7 +3,6 @@ package p000;
 import java.util.AbstractList;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0064 extends AbstractList implements List, InterfaceC1738 {
@@ -17,9 +16,7 @@ public abstract class AbstractC0064 extends AbstractList implements List, Interf
         return mo944();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public abstract int mo944();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public abstract Object mo945(int i);
 }

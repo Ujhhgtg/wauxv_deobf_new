@@ -7,21 +7,16 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲇᲁᲈᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0256 extends AbstractC0064 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final Object[] f1430 = new Object[0];
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f1431;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object[] f1432 = f1430;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f1433;
 
     @Override // java.util.AbstractList, java.util.List
@@ -517,13 +512,11 @@ public final class C0256 extends AbstractC0064 {
     }
 
     @Override // p000.AbstractC0064
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo944() {
         return this.f1433;
     }
 
     @Override // p000.AbstractC0064
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final Object mo945(int i) {
         int i2 = this.f1433;
         if (i < 0 || i >= i2) {
@@ -572,7 +565,6 @@ public final class C0256 extends AbstractC0064 {
         return obj;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m1348(int i, Collection collection) {
         Iterator it = collection.iterator();
         int length = this.f1432.length;
@@ -587,7 +579,6 @@ public final class C0256 extends AbstractC0064 {
         this.f1433 = collection.size() + this.f1433;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m1349(int i) {
         if (i < 0) {
             throw new IllegalStateException("Deque is too big.");
@@ -621,7 +612,6 @@ public final class C0256 extends AbstractC0064 {
         this.f1432 = objArr2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m1350(int i) {
         if (i == this.f1432.length - 1) {
             return 0;
@@ -629,12 +619,10 @@ public final class C0256 extends AbstractC0064 {
         return i + 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int m1351(int i) {
         return i < 0 ? i + this.f1432.length : i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m1352(int i, int i2) {
         if (i < i2) {
             Arrays.fill(this.f1432, i, i2, (Object) null);
@@ -645,13 +633,11 @@ public final class C0256 extends AbstractC0064 {
         Arrays.fill(this.f1432, 0, i2, (Object) null);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final int m1353(int i) {
         Object[] objArr = this.f1432;
         return i >= objArr.length ? i - objArr.length : i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m1354() {
         ((AbstractList) this).modCount++;
     }

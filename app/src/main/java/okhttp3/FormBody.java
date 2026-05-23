@@ -94,7 +94,6 @@ public final class FormBody extends RequestBody {
         return j;
     }
 
-    /* JADX INFO: renamed from: -deprecated_size, reason: not valid java name */
     public final int m806deprecated_size() {
         return size();
     }

@@ -6,15 +6,12 @@ import android.content.res.Resources;
 import android.content.res.XModuleResources;
 import android.util.DisplayMetrics;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤞᲁᲈᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3690 extends Resources {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final /* synthetic */ int f11597 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final XModuleResources f11598;
 
     /* JADX WARN: Illegal instructions before constructor call */

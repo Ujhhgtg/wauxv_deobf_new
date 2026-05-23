@@ -13,7 +13,6 @@ import p000.RunnableC1668;
 /* JADX INFO: loaded from: classes.dex */
 public class dir {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final String[] f465 = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
     public static void invoke(RunnableC1668 runnableC1668, C0550 c0550) {

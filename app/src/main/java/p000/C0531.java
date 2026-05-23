@@ -9,30 +9,22 @@ import com.bumptech.glide.load.ImageHeaderParser$ImageType;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤝᤞᲈᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0531 implements InterfaceC2571 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final C0373 f2224 = new C0373(12);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C0530 f2225 = new C0530(0);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Context f2226;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final ArrayList f2227;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C0542 f2230;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C0373 f2229 = f2224;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C0530 f2228 = f2225;
 
     public C0531(Context context, ArrayList arrayList, InterfaceC0424 interfaceC0424, C1867 c1867) {
@@ -41,7 +33,6 @@ public final class C0531 implements InterfaceC2571 {
         this.f2230 = new C0542(interfaceC0424, 12, c1867);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static int m1859(C1454 c1454, int i, int i2) {
         int iMin = Math.min(c1454.f5169 / i2, c1454.f5168 / i);
         int iMax = Math.max(1, iMin == 0 ? 0 : Integer.highestOneBit(iMin));
@@ -52,7 +43,6 @@ public final class C0531 implements InterfaceC2571 {
     }
 
     @Override // p000.InterfaceC2571
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final boolean mo1209(Object obj, C2303 c2303) {
         return !((Boolean) c2303.m4165(AbstractC1456.f5179)).booleanValue() && AbstractC2201.m3973(this.f2227, (ByteBuffer) obj) == ImageHeaderParser$ImageType.GIF;
     }
@@ -65,7 +55,6 @@ public final class C0531 implements InterfaceC2571 {
         	at jadx.core.dex.visitors.regions.RegionMakerVisitor.visit(RegionMakerVisitor.java:27)
         */
     @Override // p000.InterfaceC2571
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final p000.InterfaceC2568 mo1210(java.lang.Object r8, int r9, int r10, p000.C2303 r11) {
         /*
             r7 = this;
@@ -150,7 +139,6 @@ public final class C0531 implements InterfaceC2571 {
     	at jadx.core.dex.visitors.finaly.MarkFinallyVisitor.processTryBlock(MarkFinallyVisitor.java:205)
     	at jadx.core.dex.visitors.finaly.MarkFinallyVisitor.visit(MarkFinallyVisitor.java:138)
      */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final C1447 m1860(ByteBuffer byteBuffer, int i, int i2, C1455 c1455, C2303 c2303) {
         StringBuilder sb;
         int i3 = 0;

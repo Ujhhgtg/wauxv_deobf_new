@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0063 implements List, Collection, InterfaceC1737 {
@@ -162,7 +161,6 @@ public abstract class AbstractC0063 implements List, Collection, InterfaceC1737 
         return AbstractC0744.m2196(this, ", ", "[", "]", new C0055(0, this), 24);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public abstract int mo943();
 
     @Override // java.util.List, java.util.Collection

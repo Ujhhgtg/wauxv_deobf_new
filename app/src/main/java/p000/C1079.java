@@ -2,12 +2,10 @@ package p000;
 
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲇᛸᤞᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1079 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C1078 f3898;
 
     static {
@@ -18,7 +16,6 @@ public final class C1079 {
         this.f3898 = new C1078(str, i, i2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C1079 m2647(int i, int i2, boolean z, int i3, int i4, int i5, int i6) {
         String string;
         if (z) {

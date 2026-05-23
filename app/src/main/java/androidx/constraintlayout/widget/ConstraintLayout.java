@@ -50,55 +50,38 @@ import p000.C3549;
 /* JADX INFO: loaded from: classes.dex */
 public class ConstraintLayout extends ViewGroup {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final SparseArray f197;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final ArrayList f198;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C0794 f199;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public int f200;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public int f201;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public int f202;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public int f203;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f204;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int f205;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public C0792 f206;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public C0542 f207;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public int f208;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public HashMap f209;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final SparseArray f210;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final C0784 f211;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public int f212;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public int f213;
 
     public ConstraintLayout(Context context, AttributeSet attributeSet) {
@@ -129,7 +112,6 @@ public class ConstraintLayout extends ViewGroup {
         return iMax2 > 0 ? iMax2 : iMax;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C0783 m53() {
         C0783 c0783 = new C0783(-2, -2);
         c0783.f2899 = -1;
@@ -1436,7 +1418,6 @@ public class ConstraintLayout extends ViewGroup {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final C0793 m54(View view) {
         if (view == this) {
             return this.f199;
@@ -1447,7 +1428,6 @@ public class ConstraintLayout extends ViewGroup {
         return ((C0783) view.getLayoutParams()).f2961;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m55(AttributeSet attributeSet, int i) {
         C0794 c0794 = this.f199;
         c0794.f3124 = this;
@@ -1501,7 +1481,6 @@ public class ConstraintLayout extends ViewGroup {
     /* JADX WARN: Code duplicated, block: B:34:0x008c A[Catch: IOException -> 0x0053, XmlPullParserException -> 0x0055, TryCatch #2 {IOException -> 0x0053, XmlPullParserException -> 0x0055, blocks: (B:3:0x0021, B:36:0x00a6, B:10:0x0030, B:11:0x0038, B:34:0x008c, B:13:0x003c, B:15:0x0044, B:17:0x004b, B:22:0x0057, B:25:0x0060, B:28:0x0069, B:30:0x0071, B:31:0x0080, B:33:0x0088, B:35:0x00a3), top: B:42:0x0021 }] */
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
     /* JADX WARN: Instruction removed from duplicated block: B:34:0x008c, please report this as an issue */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m56(int i) {
         Context context = getContext();
         C0542 c0542 = new C0542(7, false);
@@ -1565,7 +1544,6 @@ public class ConstraintLayout extends ViewGroup {
         this.f207 = c0542;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m57(int i, int i2, int i3, int i4, boolean z, boolean z2) {
         C0784 c0784 = this.f211;
         int i5 = c0784.f2966;
@@ -1588,7 +1566,6 @@ public class ConstraintLayout extends ViewGroup {
     /* JADX WARN: Code duplicated, block: B:171:0x034b  */
     /* JADX WARN: Code duplicated, block: B:180:0x0368  */
     /* JADX WARN: Code duplicated, block: B:417:0x0397 A[SYNTHETIC] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m58(C0794 c0794, int i, int i2, int i3) {
         int iMin;
         int iMax;

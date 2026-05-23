@@ -10,24 +10,18 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.RandomAccess;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᲇᤝᲁᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1808 extends AbstractC0064 implements RandomAccess, Serializable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public Object[] f6038;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int f6039;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f6040;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final C1808 f6041;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final C1809 f6042;
 
     public C1808(Object[] objArr, int i, int i2, C1808 c1808, C1809 c1809) {
@@ -215,14 +209,12 @@ public final class C1808 extends AbstractC0064 implements RandomAccess, Serializ
     }
 
     @Override // p000.AbstractC0064
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo944() {
         m3560();
         return this.f6040;
     }
 
     @Override // p000.AbstractC0064
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final Object mo945(int i) {
         m3561();
         m3560();
@@ -233,7 +225,6 @@ public final class C1808 extends AbstractC0064 implements RandomAccess, Serializ
         return m3562(this.f6039 + i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m3558(int i, Collection collection, int i2) {
         ((AbstractList) this).modCount++;
         C1809 c1809 = this.f6042;
@@ -248,7 +239,6 @@ public final class C1808 extends AbstractC0064 implements RandomAccess, Serializ
         this.f6040 += i2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m3559(int i, Object obj) {
         ((AbstractList) this).modCount++;
         C1809 c1809 = this.f6042;
@@ -263,21 +253,18 @@ public final class C1808 extends AbstractC0064 implements RandomAccess, Serializ
         this.f6040++;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m3560() {
         if (((AbstractList) this.f6042).modCount != ((AbstractList) this).modCount) {
             throw new ConcurrentModificationException();
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m3561() {
         if (this.f6042.f6046) {
             throw new UnsupportedOperationException();
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Object m3562(int i) {
         Object objM3570;
         ((AbstractList) this).modCount++;
@@ -292,7 +279,6 @@ public final class C1808 extends AbstractC0064 implements RandomAccess, Serializ
         return objM3570;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m3563(int i, int i2) {
         if (i2 > 0) {
             ((AbstractList) this).modCount++;
@@ -307,7 +293,6 @@ public final class C1808 extends AbstractC0064 implements RandomAccess, Serializ
         this.f6040 -= i2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final int m3564(int i, int i2, Collection collection, boolean z) {
         int iM3572;
         C1808 c1808 = this.f6041;

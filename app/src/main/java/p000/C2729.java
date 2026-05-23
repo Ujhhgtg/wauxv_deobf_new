@@ -13,12 +13,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᲁᲈᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2729 implements InterfaceC1430 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f8796;
 
     public /* synthetic */ C2729(int i) {
@@ -26,7 +24,6 @@ public final /* synthetic */ class C2729 implements InterfaceC1430 {
     }
 
     @Override // p000.InterfaceC1430
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final Object mo3133(Object obj, Object obj2, Object obj3) throws IllegalAccessException, InstantiationException, InvocationTargetException {
         int i = this.f8796;
         Unit unit = Unit.INSTANCE;

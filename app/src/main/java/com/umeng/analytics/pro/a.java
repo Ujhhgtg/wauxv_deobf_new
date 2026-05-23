@@ -9,7 +9,6 @@ import android.os.Parcel;
 /* JADX INFO: loaded from: classes.dex */
 public interface a extends IInterface {
 
-    /* JADX INFO: renamed from: com.umeng.analytics.pro.a$a, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public static class C0028a implements a {
         @Override // com.umeng.analytics.pro.a
@@ -100,7 +99,6 @@ public interface a extends IInterface {
             return true;
         }
 
-        /* JADX INFO: renamed from: com.umeng.analytics.pro.a$b$a, reason: collision with other inner class name */
         /* JADX INFO: compiled from: obf */
         public static class C0029a implements a {
             public static a a;

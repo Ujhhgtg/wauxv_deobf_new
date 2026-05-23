@@ -2,18 +2,14 @@ package p000;
 
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤞᛸᤝᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2618 extends AbstractC2619 implements Iterator {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C2617 f8500;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public boolean f8501 = true;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ C2620 f8502;
 
     public C2618(C2620 c2620) {
@@ -42,7 +38,6 @@ public final class C2618 extends AbstractC2619 implements Iterator {
     }
 
     @Override // p000.AbstractC2619
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo4631(C2617 c2617) {
         C2617 c2618 = this.f8500;
         if (c2617 == c2618) {

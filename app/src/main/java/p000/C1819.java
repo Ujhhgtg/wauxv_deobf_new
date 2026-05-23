@@ -2,12 +2,10 @@ package p000;
 
 import android.widget.AbsListView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᲇᲈᤝᛸᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1819 implements AbsListView.OnScrollListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ AbstractC1821 f6056;
 
     public C1819(AbstractC1821 abstractC1821) {

@@ -5,7 +5,6 @@ import java.lang.Thread;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲁᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0151 extends AbstractC0058 implements InterfaceC0879 {
@@ -17,7 +16,6 @@ public final class C0151 extends AbstractC0058 implements InterfaceC0879 {
     }
 
     @Override // p000.InterfaceC0879
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final void mo1193(Throwable th) {
         Method declaredMethod;
         if (Build.VERSION.SDK_INT < 28) {

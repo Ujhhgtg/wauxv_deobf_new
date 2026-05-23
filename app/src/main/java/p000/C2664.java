@@ -4,15 +4,12 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᲇᲈᤞᤝᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2664 extends AbstractC0065 implements Serializable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C2664 f8578;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C1890 f8579;
 
     static {
@@ -82,7 +79,6 @@ public final class C2664 extends AbstractC0065 implements Serializable {
     }
 
     @Override // p000.AbstractC0065
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo946() {
         return this.f8579.f6251;
     }

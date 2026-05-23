@@ -3,18 +3,14 @@ package p000;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᲈᤞᲁᤝᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2802 implements InterfaceC1011 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final char f8933;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int f8934 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final LinkedList f8935 = new LinkedList();
 
     public C2802(char c) {
@@ -22,7 +18,6 @@ public final class C2802 implements InterfaceC1011 {
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1396(C2901 c2901, C2901 c2902, int i) {
         LinkedList<InterfaceC1011> linkedList = this.f8935;
         for (InterfaceC1011 interfaceC1011 : linkedList) {
@@ -35,19 +30,16 @@ public final class C2802 implements InterfaceC1011 {
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final char mo1397() {
         return this.f8933;
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo1398() {
         return this.f8934;
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final int mo1399(C1010 c1010, C1010 c1011) {
         int i = c1010.f3691;
         LinkedList<InterfaceC1011> linkedList = this.f8935;
@@ -61,12 +53,10 @@ public final class C2802 implements InterfaceC1011 {
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final char mo1400() {
         return this.f8933;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m4780(InterfaceC1011 interfaceC1011) {
         int iMo1398 = interfaceC1011.mo1398();
         LinkedList linkedList = this.f8935;

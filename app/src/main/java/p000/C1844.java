@@ -4,15 +4,12 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᲈᲇᤝᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1844 implements TextWatcher {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f6137;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ EditText f6138;
 
     public /* synthetic */ C1844(EditText editText, int i) {
@@ -42,19 +39,15 @@ public final class C1844 implements TextWatcher {
         int i4 = this.f6137;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     private final void m3598(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     private final void m3599(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     private final void m3600(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     private final void m3601(int i, int i2, int i3, CharSequence charSequence) {
     }
 }

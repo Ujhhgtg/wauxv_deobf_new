@@ -4,12 +4,10 @@ import android.graphics.Rect;
 import android.text.method.TransformationMethod;
 import android.view.View;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲀᤞᛸᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1182 implements TransformationMethod {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final TransformationMethod f4324;
 
     public C1182(TransformationMethod transformationMethod) {

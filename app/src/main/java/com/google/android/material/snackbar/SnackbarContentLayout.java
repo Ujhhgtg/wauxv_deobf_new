@@ -16,13 +16,10 @@ import p000.AbstractC3578;
 /* JADX INFO: loaded from: classes.dex */
 public class SnackbarContentLayout extends LinearLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public TextView f780;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Button f781;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f782;
 
     public SnackbarContentLayout(Context context, AttributeSet attributeSet) {
@@ -72,7 +69,6 @@ public class SnackbarContentLayout extends LinearLayout {
         this.f782 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final boolean m691(int i, int i2, int i3) {
         boolean z;
         if (i != getOrientation()) {

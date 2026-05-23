@@ -15,7 +15,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 /* JADX INFO: loaded from: classes.dex */
 public class a {
 
-    /* JADX INFO: renamed from: com.umeng.commonsdk.statistics.common.a$a, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public static final class C0037a {
         private final String a;

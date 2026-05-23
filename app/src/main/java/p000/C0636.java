@@ -6,27 +6,20 @@ import java.util.List;
 import me.hd.wauxv.data.bean.MsgInfoBean;
 import org.luckypray.dexkit.DexKitBridge;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲈᲀᤝᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0636 extends AbstractC2867 implements InterfaceC1582, InterfaceC1593 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final C0636 f2474;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final List f2475;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final String f2476;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final String f2477;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static final String f2478;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static final C0605 f2479;
 
     static {
@@ -40,20 +33,17 @@ public final class C0636 extends AbstractC2867 implements InterfaceC1582, Interf
         f2479 = new C0605(6);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static String m2038(String str) {
         String[] strArr = AbstractC1574.f5469;
         return AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(str, "${totalMsg}", String.valueOf(C0632.f2467.m2538())), "${textMsg}", String.valueOf(C0630.f2465.m2538())), "${textWord}", String.valueOf(C0631.f2466.m2538())), "${emojiMsg}", String.valueOf(C0625.f2460.m2538())), "${transferMsg}", String.valueOf(C0633.f2468.m2538())), "${redBagMsg}", String.valueOf(C0629.f2464.m2538())), "${fileMsg}", String.valueOf(C0626.f2461.m2538()));
     }
 
     @Override // p000.InterfaceC1582
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
         AbstractC1574.findMethod(C0623.f2458, dexKitBridge, new C0605(7));
     }
 
     @Override // p000.InterfaceC1593
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final void mo2039(MsgInfoBean msgInfoBean) {
         if (mo3264() && C0627.f2462.m2536() && msgInfoBean.isSend()) {
             int i = 0;
@@ -97,7 +87,6 @@ public final class C0636 extends AbstractC2867 implements InterfaceC1582, Interf
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
         List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C0623.f2458));
         C0636 c0636 = f2474;
@@ -107,25 +96,21 @@ public final class C0636 extends AbstractC2867 implements InterfaceC1582, Interf
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
     public final String mo1127() {
         return f2478;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public final String mo1128() {
         return f2477;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public final String mo1129() {
         return f2476;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ */
     public final InterfaceC1425 mo1130() {
         return f2479;
     }

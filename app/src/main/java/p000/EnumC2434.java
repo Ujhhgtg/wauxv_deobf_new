@@ -15,7 +15,6 @@ jadx.core.utils.exceptions.JadxRuntimeException: Can't remove SSA var: r0v1 ᛱ�
 	at jadx.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:102)
  */
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᲈᤞᲇᛸᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class EnumC2434 {
@@ -26,13 +25,10 @@ public final class EnumC2434 {
     i32(5);
 
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final EnumC2434[] f7727;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final /* synthetic */ C1225 f7734;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int f7735;
 
     static {
@@ -79,7 +75,6 @@ public final class EnumC2434 {
         return AbstractC2784.m4750(sb, this.f7735, ')');
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int m4388(int i) {
         return (i << 3) | this.f7735;
     }

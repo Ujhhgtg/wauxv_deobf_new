@@ -56,7 +56,6 @@ public class Response implements de<Response, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.el
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public void b(ed edVar, Response response) throws ee {
             edVar.j();
             while (true) {
@@ -101,7 +100,6 @@ public class Response implements de<Response, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.el
-        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
         public void a(ed edVar, Response response) throws ee {
             response.validate();
             edVar.a(Response.STRUCT_DESC);
@@ -129,7 +127,6 @@ public class Response implements de<Response, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.em
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public a b() {
             return new a();
         }
@@ -185,7 +182,6 @@ public class Response implements de<Response, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.em
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public c b() {
             return new c();
         }

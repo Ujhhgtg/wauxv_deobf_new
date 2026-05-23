@@ -6,12 +6,10 @@ import android.util.Property;
 import android.view.View;
 import androidx.appcompat.widget.SwitchCompat;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲀᤞᲁᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0583 extends Property {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f2373;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

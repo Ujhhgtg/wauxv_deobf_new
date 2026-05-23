@@ -49,14 +49,12 @@ public class a implements de<a, e>, Serializable, Cloneable {
     private byte n;
     private e[] o;
 
-    /* JADX INFO: renamed from: com.umeng.commonsdk.statistics.proto.a$a, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public static class C0039a extends en<a> {
         private C0039a() {
         }
 
         @Override // com.umeng.analytics.pro.el
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public void b(ed edVar, a aVar) throws ee {
             edVar.j();
             while (true) {
@@ -106,7 +104,6 @@ public class a implements de<a, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.el
-        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
         public void a(ed edVar, a aVar) throws ee {
             aVar.n();
             edVar.a(a.g);
@@ -139,7 +136,6 @@ public class a implements de<a, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.em
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public C0039a b() {
             return new C0039a();
         }
@@ -188,7 +184,6 @@ public class a implements de<a, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.em
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public c b() {
             return new c();
         }
@@ -215,7 +210,6 @@ public class a implements de<a, e>, Serializable, Cloneable {
     }
 
     @Override // com.umeng.analytics.pro.de
-    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public a deepCopy() {
         return new a(this);
     }
@@ -446,7 +440,6 @@ public class a implements de<a, e>, Serializable, Cloneable {
     }
 
     @Override // com.umeng.analytics.pro.de
-    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public e fieldForId(int i2) {
         return e.a(i2);
     }

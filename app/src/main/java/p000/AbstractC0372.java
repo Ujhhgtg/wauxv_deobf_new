@@ -2,7 +2,6 @@ package p000;
 
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲇᲁᤝᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0372 extends ArrayList {
@@ -13,7 +12,6 @@ public abstract class AbstractC0372 extends ArrayList {
         return get(0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Object m1493() {
         if (super.size() == 0) {
             throw new C0761("No result found for query");
@@ -28,7 +26,6 @@ public abstract class AbstractC0372 extends ArrayList {
         return e;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Object m1494(InterfaceC1425 interfaceC1425) {
         if (super.size() == 0) {
             throw new C0761("No result found for query");

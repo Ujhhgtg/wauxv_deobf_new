@@ -10,18 +10,14 @@ import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.info.FriendInfo;
 import me.hd.wauxv.data.bean.info.GroupInfo;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᤞᛸᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C3614 implements InterfaceC1425 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f11304;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ String f11305;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f11306;
 
     public /* synthetic */ C3614(String str, int i, int i2) {
@@ -123,7 +119,6 @@ public final /* synthetic */ class C3614 implements InterfaceC1425 {
                 final int i = this.f11306;
                 InterfaceC1429 interfaceC1429 = new InterfaceC1429() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᤞᤝᛸᲇ
                     @Override // p000.InterfaceC1429
-                    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
                     public final Object mo1196(Object obj2, Object obj3) throws IllegalAccessException, InvocationTargetException {
                         List list = (List) obj2;
                         Iterator it = list.iterator();

@@ -44,27 +44,20 @@ import p000.C3532;
 import p000.InterfaceC2225;
 import p000.RunnableC1668;
 
-/* JADX INFO: renamed from: bsh.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0009 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final Object[] f516 = new Object[0];
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final Class[] f517 = new Class[0];
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final WeakHashMap f518 = new WeakHashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final Pattern f519 = Pattern.compile("[^\\.]+|bsh\\..*");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final Pattern f520;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final WeakHashMap f521;
 
     static {
@@ -76,7 +69,6 @@ public abstract class AbstractC0009 {
         f521 = new WeakHashMap();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m376(String str, String str2) {
         WeakHashMap weakHashMap = f518;
         if (!weakHashMap.containsKey(str2)) {
@@ -89,7 +81,6 @@ public abstract class AbstractC0009 {
         return sbM4753.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static Object m377(Class cls, Object obj, Object[] objArr) throws InvocationTargetException {
         if (cls == null) {
             return Primitive.NULL;
@@ -119,7 +110,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static int m378(Class[] clsArr, List list) {
         for (int i = 0; i < list.size(); i++) {
             StringBuilder sbM2787 = AbstractC1194.m2787(i, "  ", ":");
@@ -174,7 +164,6 @@ public abstract class AbstractC0009 {
         return iIntValue2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static int m379(Class[] clsArr, List list) {
         for (int i = 0; i < list.size(); i++) {
             StringBuilder sbM2787 = AbstractC1194.m2787(i, "  ", "=");
@@ -225,7 +214,6 @@ public abstract class AbstractC0009 {
         return iM381;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static int m380(Class[] clsArr, Class[][] clsArr2) {
         int i = 1;
         while (true) {
@@ -248,7 +236,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static This m381(Object obj, String str) {
         try {
             return (This) Primitive.unwrap(m391(obj, This.Keys.BSHTHIS + str));
@@ -257,7 +244,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static C2000 m382(Class cls) {
         try {
             String string = This.Keys.BSHCLASSMODIFIERS.toString();
@@ -275,7 +261,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static This m383(Class cls, String str) {
         try {
             return (This) m386(cls, null, This.Keys.BSHSTATIC + str, true);
@@ -284,7 +269,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static C0501[] m384(Class cls) {
         if (!m401(cls)) {
             return new C0501[0];
@@ -297,7 +281,6 @@ public abstract class AbstractC0009 {
         return c0007M395 == null ? new C0501[0] : c0007M395.m351();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static Map.Entry m385(Object obj, Map.Entry[] entryArr) {
         for (Map.Entry entry : entryArr) {
             if (obj.equals(entry.getKey())) {
@@ -307,7 +290,6 @@ public abstract class AbstractC0009 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static Object m386(Class cls, Object obj, String str, boolean z) throws C3524 {
         try {
             return m404(cls, str, z).mo3012(obj, new Object[0]);
@@ -346,7 +328,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static C1751 m387(Object obj, String str) {
         C3532 c3532M357;
         if (obj instanceof This) {
@@ -366,7 +347,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static C1751 m388(Class cls, String str) {
         C3532 c3532M357;
         try {
@@ -383,7 +363,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static C0501 m389(C0007 c0007, String str, Class[] clsArr, boolean z) {
         if (c0007 == null) {
             return null;
@@ -395,7 +374,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static Object m390(Class cls) {
         WeakHashMap weakHashMap = f521;
         if (weakHashMap.containsKey(cls)) {
@@ -409,7 +387,6 @@ public abstract class AbstractC0009 {
         return weakHashMap.get(cls);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static Object m391(Object obj, String str) throws C3524 {
         if (obj instanceof This) {
             return ((This) obj).namespace.m356(str, true);
@@ -433,7 +410,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static Object m392(Object obj, Object obj2) {
         Map map = AbstractC0010.f522;
         if (obj instanceof Map) {
@@ -465,7 +441,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public static Object m393(Object obj, String str) {
         Map map = AbstractC0010.f522;
         if (obj instanceof Map.Entry) {
@@ -481,7 +456,6 @@ public abstract class AbstractC0009 {
         return m392(obj, str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static C0007 m394(Class cls) {
         if (!m401(cls)) {
             return null;
@@ -496,7 +470,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public static C0007 m395(Object obj) {
         if (obj == null) {
             return null;
@@ -512,13 +485,11 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static C3532[] m396(C0007 c0007) {
         String[] strArr = c0007 == null ? new String[0] : (String[]) Stream.of(c0007.f495.keySet().stream().toArray(new C0484(5))).filter(new C0335(7)).toArray(new C0484(11));
         return (c0007 == null || strArr == null) ? new C3532[0] : (C3532[]) Stream.of((Object[]) strArr).map(new C2255(4, c0007)).filter(new C0335(5)).toArray(new C0484(10));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static boolean m397(Class cls, String str) {
         Map map = AbstractC0010.f522;
         if (Map.class.isAssignableFrom(cls) || Map.Entry.class.isAssignableFrom(cls) || AbstractC0010.m432(cls)) {
@@ -528,7 +499,6 @@ public abstract class AbstractC0009 {
         return ((C0481) c1867.m3641(cls)).f2090.containsKey(str) && ((C0481) c1867.m3641(cls)).m1718(str) != null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public static Object m398(Class cls, Object[] objArr, RunnableC1668 runnableC1668, C0550 c0550, InterfaceC2225 interfaceC2225) throws C3523 {
         Object[] objArr2 = new Object[objArr.length + 2];
         objArr2[0] = runnableC1668;
@@ -545,7 +515,6 @@ public abstract class AbstractC0009 {
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r7v2 */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public static Object m399(Object obj, String str, Object[] objArr, RunnableC1668 runnableC1668, C0550 c0550, AbstractC2707 abstractC2707) throws C1229 {
         Object[] objArr2;
         InterfaceC2225 interfaceC2225;
@@ -674,7 +643,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static Object m400(C0482 c0482, Class cls, String str, Object[] objArr, InterfaceC2225 interfaceC2225) {
         RunnableC1668.m3389("invoke static Method");
         C0007 c0007M394 = m394(cls);
@@ -684,12 +652,10 @@ public abstract class AbstractC0009 {
         return m405(c0482, cls, null, str, objArr, true).mo3012(null, objArr);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static boolean m401(Class cls) {
         return (cls == null || cls == GeneratedClass.class || !GeneratedClass.class.isAssignableFrom(cls)) ? false : true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static void m402(String str, AbstractC1672 abstractC1672, Object[] objArr) {
         if (((Boolean) RunnableC1668.f5629.get()).booleanValue()) {
             RunnableC1668.m3389(str, abstractC1672, " with args:");
@@ -700,7 +666,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static Object m403(Object obj, Class cls, String str, Object[] objArr, RunnableC1668 runnableC1668, C0550 c0550, AbstractC2707 abstractC2707) throws C1229 {
         Class<BigInteger> cls2 = AbstractC0010.m426(obj) ? BigDecimal.class : BigInteger.class;
         try {
@@ -716,7 +681,6 @@ public abstract class AbstractC0009 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public static AbstractC1672 m404(Class cls, String str, boolean z) {
         ConcurrentHashMap concurrentHashMap = ((C0481) C0482.f2092.m3641(cls)).f2091;
         AbstractC1672 abstractC1672 = !concurrentHashMap.containsKey(str) ? null : (AbstractC1672) concurrentHashMap.get(str);
@@ -733,7 +697,6 @@ public abstract class AbstractC0009 {
         throw new C3523(sbM46710.toString());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static AbstractC1672 m405(C0482 c0482, Class cls, Object obj, String str, Object[] objArr, boolean z) throws C3524 {
         if (obj == Primitive.NULL) {
             NullPointerException nullPointerException = new NullPointerException(AbstractC1194.m2785("Attempt to invoke method ", str, " on null value"));
@@ -753,7 +716,6 @@ public abstract class AbstractC0009 {
         throw new C2518(sb.toString());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public static AbstractC1672 m406(Class cls, String str, Class[] clsArr, boolean z) {
         if (cls == null) {
             throw new C1669("null class");
@@ -766,7 +728,6 @@ public abstract class AbstractC0009 {
         throw new C3523("Cannot reach instance method: " + AbstractC2202.m4011(abstractC1672M1717.f5644, abstractC1672M1717.mo2890()) + " from static context: " + cls.getName());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static Object m407(Object obj, Object obj2, Object obj3) {
         Map map = AbstractC0010.f522;
         if (obj instanceof Map) {
@@ -797,7 +758,6 @@ public abstract class AbstractC0009 {
         throw new C2518("No such property setter: " + obj2 + " for type: " + AbstractC2202.m4018(cls));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static C0501 m408(Class cls, String str) {
         C0481 c0481 = (C0481) C0482.f2092.m3641(cls);
         AbstractC1672 abstractC1672 = !c0481.f2090.containsKey(str) ? null : (AbstractC1672) c0481.m1719(str).stream().filter(new C0335(1)).findFirst().get();
@@ -807,7 +767,6 @@ public abstract class AbstractC0009 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public static C2895 m409(InvocationTargetException invocationTargetException, String str, C0550 c0550, AbstractC2707 abstractC2707) {
         String strM4757 = AbstractC2784.m4757("Method Invocation ", str);
         Throwable cause = invocationTargetException.getCause();

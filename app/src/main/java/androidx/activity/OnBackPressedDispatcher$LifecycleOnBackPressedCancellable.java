@@ -10,7 +10,6 @@ import p000.InterfaceC1777;
 /* JADX INFO: loaded from: classes.dex */
 final class OnBackPressedDispatcher$LifecycleOnBackPressedCancellable implements InterfaceC1774, InterfaceC0557 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C2275 f0;
 
     @Override // p000.InterfaceC0557
@@ -19,7 +18,6 @@ final class OnBackPressedDispatcher$LifecycleOnBackPressedCancellable implements
     }
 
     @Override // p000.InterfaceC1774
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo0(InterfaceC1777 interfaceC1777, EnumC1769 enumC1769) {
         if (enumC1769 == EnumC1769.ON_START) {
             throw null;

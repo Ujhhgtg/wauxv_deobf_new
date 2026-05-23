@@ -10,18 +10,14 @@ import android.view.View;
 import android.widget.LinearLayout;
 import java.lang.reflect.Field;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᲁᤝᛸᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2887 extends LinearLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final /* synthetic */ int f9241 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public ValueAnimator f9242;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ C2891 f9243;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -116,7 +112,6 @@ public final class C2887 extends LinearLayout {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4877(int i) {
         C2891 c2891 = this.f9243;
         
@@ -129,7 +124,6 @@ public final class C2887 extends LinearLayout {
         c2891.f9266 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4878(int i) {
         C2891 c2891 = this.f9243;
         Rect bounds = c2891.f9280.getBounds();
@@ -137,7 +131,6 @@ public final class C2887 extends LinearLayout {
         requestLayout();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m4879(View view, View view2, float f) {
         C2891 c2891 = this.f9243;
         if (view == null || view.getWidth() <= 0) {
@@ -150,7 +143,6 @@ public final class C2887 extends LinearLayout {
         postInvalidateOnAnimation();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m4880(int i, int i2, boolean z) {
         C2891 c2891 = this.f9243;
         if (c2891.f9266 == i) {

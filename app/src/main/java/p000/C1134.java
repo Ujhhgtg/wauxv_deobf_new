@@ -4,12 +4,10 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᛸᲀᤞᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1134 extends C2102 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f4219;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -19,7 +17,6 @@ public final class C1134 extends C2102 {
     }
 
     @Override // p000.C2102
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final void mo2732(C2891 c2891, View view, View view2, float f, Drawable drawable) {
         float fSin;
         float fCos;

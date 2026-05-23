@@ -5,16 +5,13 @@ import com.alibaba.fastjson2.JSONObject;
 import java.io.IOException;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲇᤝᲈᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2284 extends AbstractC1823 implements InterfaceC1601 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C2284 f7378 = new C2284();
 
     @Override // p000.InterfaceC1601
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final void mo3341(String str, ContentValues contentValues) throws IOException {
         String[] strArr = AbstractC1574.f5469;
         if (str.equals("fmessage_msginfo")) {
@@ -37,7 +34,6 @@ public final class C2284 extends AbstractC1823 implements InterfaceC1601 {
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

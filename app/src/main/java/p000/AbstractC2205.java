@@ -26,36 +26,28 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.locks.Lock;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲇᲁᲀᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2205 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C1099 f7170 = new C1099(3);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final byte[] f7171 = {112, 114, 111, 0};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final byte[] f7172 = {112, 114, 109, 0};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static boolean f7173 = true;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m4047(AbstractC1351 abstractC1351) {
         int iM4903 = ((C2896) abstractC1351).m4903();
         return iM4903 == ((short) iM4903) ? AbstractC1460.m3219(iM4903) : AbstractC1460.m3220(iM4903);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static String m4048(AbstractC1351 abstractC1351) {
         int iM2442 = ((C2896) abstractC1351).f9313.m2442();
         return iM2442 == ((char) iM2442) ? AbstractC1460.m3223(iM2442) : AbstractC1460.m3224(iM2442);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static short m4049(int i, int i2) {
         if ((i & 255) != i) {
             throw new IllegalArgumentException("low out of range 0..255");
@@ -66,7 +58,6 @@ public abstract class AbstractC2205 {
         throw new IllegalArgumentException("high out of range 0..255");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static short m4050(int i, int i2, int i3, int i4) {
         if ((i & 15) != i) {
             throw new IllegalArgumentException("n0 out of range 0..15");
@@ -83,7 +74,6 @@ public abstract class AbstractC2205 {
         throw new IllegalArgumentException("n3 out of range 0..15");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static C0425 m4051(InterfaceC0424 interfaceC0424, Drawable drawable, int i, int i2) {
         Bitmap bitmap;
         Drawable current = drawable.getCurrent();
@@ -131,7 +121,6 @@ public abstract class AbstractC2205 {
         return C0425.m1628(interfaceC0424, bitmap);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static byte[] m4052(C1027[] c1027Arr, byte[] bArr) throws IOException {
         int length = 0;
         for (C1027 c1027 : c1027Arr) {
@@ -179,7 +168,6 @@ public abstract class AbstractC2205 {
         throw new IllegalStateException("The bytes saved do not match expectation. actual=" + byteArrayOutputStream.size() + " expected=" + length);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static String m4053(String str, String str2, byte[] bArr) {
         byte[] bArr2 = AbstractC2207.f7179;
         byte[] bArr3 = AbstractC2207.f7180;
@@ -209,12 +197,10 @@ public abstract class AbstractC2205 {
         return str2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static C0152 m4054() {
         return (C0152) C0152.f1159.getValue();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final String m4055(File file) throws NoSuchAlgorithmException, IOException {
         String[] strArr = AbstractC1574.f5469;
         MessageDigest messageDigest = MessageDigest.getInstance("MD5");
@@ -241,12 +227,10 @@ public abstract class AbstractC2205 {
         return stringBuffer.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final InterfaceC1743 m4056(InterfaceC1743 interfaceC1743) {
         return interfaceC1743.mo1363().mo3470() ? interfaceC1743 : new C2241(interfaceC1743);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static void m4057(byte b, byte b2, byte b3, byte b4, char[] cArr, int i) {
         if (!m4060(b2)) {
             if ((((b2 + 112) + (b << 28)) >> 30) == 0 && !m4060(b3) && !m4060(b4)) {
@@ -259,7 +243,6 @@ public abstract class AbstractC2205 {
         throw new IllegalArgumentException("Invalid UTF-8");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static void m4058(byte b, byte b2, byte b3, char[] cArr, int i) {
         if (m4060(b2) || ((b == -32 && b2 < -96) || ((b == -19 && b2 >= -96) || m4060(b3)))) {
             throw new IllegalArgumentException("Invalid UTF-8");
@@ -267,7 +250,6 @@ public abstract class AbstractC2205 {
         cArr[i] = (char) (((b & 15) << 12) | ((b2 & 63) << 6) | (b3 & 63));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static void m4059(byte b, byte b2, char[] cArr, int i) {
         if (b < -62) {
             throw new IllegalArgumentException("Invalid UTF-8: Illegal leading byte in 2 bytes utf");
@@ -278,12 +260,10 @@ public abstract class AbstractC2205 {
         cArr[i] = (char) (((b & 31) << 6) | (b2 & 63));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static boolean m4060(byte b) {
         return b > -65;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static boolean m4061(C2526 c2526) {
         int length = c2526.f4836.length;
         if (length < 2) {
@@ -300,12 +280,10 @@ public abstract class AbstractC2205 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public static CharSequence m4062(CharSequence charSequence) {
         return charSequence.length() > 5120 ? charSequence.subSequence(0, 5120) : charSequence;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static String m4063(AbstractC0909 abstractC0909, int i) {
         StringBuilder sb = new StringBuilder(20);
         sb.append("#");
@@ -327,7 +305,6 @@ public abstract class AbstractC2205 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static String m4064(AbstractC0909 abstractC0909) {
         StringBuilder sb = new StringBuilder(100);
         sb.append('#');
@@ -341,7 +318,6 @@ public abstract class AbstractC2205 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static int m4065(int i, int i2) {
         if ((i & 15) != i) {
             throw new IllegalArgumentException("low out of range 0..15");
@@ -352,7 +328,6 @@ public abstract class AbstractC2205 {
         throw new IllegalArgumentException("high out of range 0..15");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static short m4066(AbstractC0950 abstractC0950, int i) {
         if ((i & 255) != i) {
             throw new IllegalArgumentException("arg out of range 0..255");
@@ -364,7 +339,6 @@ public abstract class AbstractC2205 {
         throw new IllegalArgumentException("opcode out of range 0..255");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static int[] m4067(ByteArrayInputStream byteArrayInputStream, int i) {
         int[] iArr = new int[i];
         int iM3305 = 0;
@@ -375,7 +349,6 @@ public abstract class AbstractC2205 {
         return iArr;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public static C1027[] m4068(FileInputStream fileInputStream, byte[] bArr, byte[] bArr2, C1027[] c1027Arr) throws IOException {
         byte[] bArr3 = AbstractC2207.f7181;
         if (!Arrays.equals(bArr, bArr3)) {
@@ -427,7 +400,6 @@ public abstract class AbstractC2205 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static C1027[] m4069(ByteArrayInputStream byteArrayInputStream, int i, C1027[] c1027Arr) {
         if (byteArrayInputStream.available() == 0) {
             return new C1027[0];
@@ -454,7 +426,6 @@ public abstract class AbstractC2205 {
         return c1027Arr;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static C1027[] m4070(ByteArrayInputStream byteArrayInputStream, byte[] bArr, int i, C1027[] c1027Arr) {
         if (byteArrayInputStream.available() == 0) {
             return new C1027[0];
@@ -494,7 +465,6 @@ public abstract class AbstractC2205 {
         return c1027Arr;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public static C1027[] m4071(FileInputStream fileInputStream, byte[] bArr, String str) throws IOException {
         if (!Arrays.equals(bArr, AbstractC2207.f7177)) {
             throw new IllegalStateException("Unsupported version");
@@ -519,7 +489,6 @@ public abstract class AbstractC2205 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public static C1027[] m4072(ByteArrayInputStream byteArrayInputStream, String str, int i) throws IOException {
         int i2 = 0;
         if (byteArrayInputStream.available() == 0) {
@@ -591,7 +560,6 @@ public abstract class AbstractC2205 {
         return c1027Arr;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public static String m4073(C2526 c2526) {
         int length = c2526.f4836.length;
         StringBuilder sb = new StringBuilder((length * 5) + 2);
@@ -606,7 +574,6 @@ public abstract class AbstractC2205 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public static String m4074(C2526 c2526) {
         int length = c2526.f4836.length;
         StringBuilder sb = new StringBuilder(30);
@@ -628,7 +595,6 @@ public abstract class AbstractC2205 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public static final long m4075(String str, long j, long j2, long j3) {
         String property;
         int i = AbstractC2883.f9237;
@@ -651,12 +617,10 @@ public abstract class AbstractC2205 {
         throw new IllegalStateException(("System property '" + str + "' should be in range " + j2 + ".." + j3 + ", but is '" + jLongValue + '\'').toString());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static int m4076(int i, int i2, String str) {
         return (int) m4075(str, i, 1, (i2 & 8) != 0 ? 2147483647 : 2097150);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public static Class m4077(String str) {
         Object c2585;
         String str2 = "[" + str + "][" + ((Object) null) + "]";
@@ -697,7 +661,6 @@ public abstract class AbstractC2205 {
         throw new NoClassDefFoundError("Can't find this Class in [" + classLoaderM1336 + "]:\n" + ((Object) str3) + "Generated by YukiHookAPI#ReflectionTool");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ, reason: contains not printable characters */
     public static final Class m4078(Class cls) {
         boolean zM4087 = AbstractC2207.m4087(cls, Unit.class);
         Class cls2 = Void.TYPE;
@@ -765,7 +728,6 @@ public abstract class AbstractC2205 {
         return false ? m4077("void") : cls2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
     public static boolean m4079(ByteArrayOutputStream byteArrayOutputStream, byte[] bArr, C1027[] c1027Arr) throws IOException {
         long j;
         int length;
@@ -1024,22 +986,18 @@ public abstract class AbstractC2205 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ, reason: contains not printable characters */
     public static boolean m4080(int i) {
         return i == (i & 255);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲇᲁ, reason: contains not printable characters */
     public static boolean m4081(int i) {
         return i == (i & 15);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᤞᲇ, reason: contains not printable characters */
     public static boolean m4082(int i) {
         return i == (65535 & i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
     public static void m4083(ByteArrayOutputStream byteArrayOutputStream, C1027 c1027, String str) throws IOException {
         Charset charset = StandardCharsets.UTF_8;
         AbstractC1574.m3319(byteArrayOutputStream, str.getBytes(charset).length);
@@ -1050,7 +1008,6 @@ public abstract class AbstractC2205 {
         byteArrayOutputStream.write(str.getBytes(charset));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ, reason: contains not printable characters */
     public static void m4084(ByteArrayOutputStream byteArrayOutputStream, C1027 c1027) throws IOException {
         byte[] bArr = new byte[(((c1027.f3768 * 2) + 7) & (-8)) / 8];
         for (Map.Entry entry : c1027.f3770.entrySet()) {
@@ -1069,7 +1026,6 @@ public abstract class AbstractC2205 {
         byteArrayOutputStream.write(bArr);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ, reason: contains not printable characters */
     public static void m4085(ByteArrayOutputStream byteArrayOutputStream, C1027 c1027) {
         int i = 0;
         for (Map.Entry entry : c1027.f3770.entrySet()) {
@@ -1082,37 +1038,27 @@ public abstract class AbstractC2205 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public boolean mo3108(C2896 c2896) {
         return this instanceof C1397;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public abstract int mo3109();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public BitSet mo3110(AbstractC0950 abstractC0950) {
         return new BitSet();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public abstract int[] mo3725();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public abstract String mo3111(AbstractC1351 abstractC1351);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public abstract String mo3112(AbstractC1351 abstractC1351);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ */
     public abstract boolean mo3113(AbstractC0950 abstractC0950);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public abstract int mo3726(boolean z);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ */
     public abstract AbstractC2203 mo3727();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ */
     public abstract void mo3114(C0519 c0519, AbstractC1351 abstractC1351);
 }

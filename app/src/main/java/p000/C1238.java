@@ -3,12 +3,10 @@ package p000;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲈᲀᤞᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C1238 extends RuntimeException {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final StringBuffer f4471;
 
     public C1238(String str, Exception exc) {
@@ -23,7 +21,6 @@ public class C1238 extends RuntimeException {
         stringBuffer.append(string);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static C1238 m2884(String str, Exception exc) {
         C1238 c1238 = exc instanceof C1238 ? (C1238) exc : new C1238(null, exc);
         c1238.m2885(str);
@@ -36,7 +33,6 @@ public class C1238 extends RuntimeException {
         printStream.println(this.f4471);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m2885(String str) {
         if (str == null) {
             throw new NullPointerException("str == null");

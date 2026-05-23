@@ -3,27 +3,20 @@ package p000;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲇᲀᲁᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1687 implements Serializable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public ArrayList f5742;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public ArrayList f5743;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f5744;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public int f5745;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public boolean f5746;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m3422() {
         while (this.f5744 > this.f5745) {
             m3426();
@@ -32,7 +25,6 @@ public final class C1687 implements Serializable {
         this.f5745 = ((Integer) arrayList.remove(arrayList.size() - 1)).intValue();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m3423(AbstractC2707 abstractC2707) {
         ArrayList arrayList = this.f5743;
         int i = this.f5744 - this.f5745;
@@ -53,7 +45,6 @@ public final class C1687 implements Serializable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m3424(AbstractC2707 abstractC2707, int i) {
         ArrayList arrayList = this.f5743;
         this.f5745 = ((Integer) arrayList.remove(arrayList.size() - 1)).intValue();
@@ -73,13 +64,11 @@ public final class C1687 implements Serializable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m3425(AbstractC2707 abstractC2707) {
         this.f5743.add(Integer.valueOf(this.f5745));
         this.f5745 = this.f5744;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final InterfaceC2225 m3426() {
         int i = this.f5744 - 1;
         this.f5744 = i;
@@ -91,7 +80,6 @@ public final class C1687 implements Serializable {
         return (InterfaceC2225) arrayList2.remove(arrayList2.size() - 1);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m3427() {
         this.f5742.clear();
         this.f5743.clear();

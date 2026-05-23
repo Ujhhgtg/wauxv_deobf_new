@@ -12,7 +12,6 @@ public abstract class TwoStatePreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final Object mo105(TypedArray typedArray, int i) {
         return Boolean.valueOf(typedArray.getBoolean(i, false));
     }

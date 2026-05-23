@@ -2,7 +2,6 @@ package p000;
 
 import java.io.IOException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᤞᲁᛸᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1404 implements InterfaceC2786 {
@@ -12,7 +11,6 @@ public abstract class AbstractC1404 implements InterfaceC2786 {
         this.delegate = interfaceC2786;
     }
 
-    /* JADX INFO: renamed from: -deprecated_delegate, reason: not valid java name */
     public final InterfaceC2786 m3116deprecated_delegate() {
         return this.delegate;
     }

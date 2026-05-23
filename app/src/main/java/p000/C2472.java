@@ -4,27 +4,20 @@ import com.umeng.analytics.pro.bc;
 import java.math.BigInteger;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᤝᛸᲁᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2472 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final BigInteger f7902 = new BigInteger("ffffffffffffffff", 16);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final BigInteger[] f7903;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final BigInteger[] f7904;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final BigInteger[] f7905;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final BigInteger[] f7906;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f7907;
 
     public C2472(BigInteger bigInteger) {
@@ -105,7 +98,6 @@ public final class C2472 {
         m4427();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m4426(BigInteger[] bigIntegerArr) {
         BigInteger bigIntegerSubtract = bigIntegerArr[0].subtract(bigIntegerArr[4]);
         String[] strArr = AbstractC1574.f5469;
@@ -191,7 +183,6 @@ public final class C2472 {
         bigIntegerArr[6] = bigIntegerAdd8.and(bigInteger);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4427() {
         BigInteger[] bigIntegerArr = this.f7906;
         int i = 2;

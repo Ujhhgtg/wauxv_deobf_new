@@ -4,18 +4,14 @@ import java.util.WeakHashMap;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤞᲀᲈᤝᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0561 implements Supplier, Consumer {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final ThreadLocal f2290;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final WeakHashMap f2291;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public volatile boolean f2292;
 
     static {
@@ -25,7 +21,6 @@ public final class C0561 implements Supplier, Consumer {
         f2291 = new WeakHashMap();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static boolean m1955() {
         return ((Boolean) f2290.get()).booleanValue();
     }

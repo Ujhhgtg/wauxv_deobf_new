@@ -54,7 +54,6 @@ public class b implements de<b, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.el
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public void b(ed edVar, b bVar) throws ee {
             edVar.j();
             while (true) {
@@ -100,7 +99,6 @@ public class b implements de<b, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.el
-        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
         public void a(ed edVar, b bVar) throws ee {
             bVar.k();
             edVar.a(b.f);
@@ -120,14 +118,12 @@ public class b implements de<b, e>, Serializable, Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: com.umeng.commonsdk.statistics.proto.b$b, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public static class C0040b implements em {
         private C0040b() {
         }
 
         @Override // com.umeng.analytics.pro.em
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public a b() {
             return new a();
         }
@@ -164,7 +160,6 @@ public class b implements de<b, e>, Serializable, Cloneable {
         }
 
         @Override // com.umeng.analytics.pro.em
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public c b() {
             return new c();
         }
@@ -189,7 +184,6 @@ public class b implements de<b, e>, Serializable, Cloneable {
     }
 
     @Override // com.umeng.analytics.pro.de
-    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public b deepCopy() {
         return new b(this);
     }
@@ -359,7 +353,6 @@ public class b implements de<b, e>, Serializable, Cloneable {
     }
 
     @Override // com.umeng.analytics.pro.de
-    /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
     public e fieldForId(int i2) {
         return (-6496538196005191531L).a(i2);
     }

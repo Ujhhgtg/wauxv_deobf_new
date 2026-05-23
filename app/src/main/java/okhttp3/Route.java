@@ -17,17 +17,14 @@ public final class Route {
         this.socketAddress = inetSocketAddress;
     }
 
-    /* JADX INFO: renamed from: -deprecated_address, reason: not valid java name */
     public final Address m896deprecated_address() {
         return this.address;
     }
 
-    /* JADX INFO: renamed from: -deprecated_proxy, reason: not valid java name */
     public final Proxy m897deprecated_proxy() {
         return this.proxy;
     }
 
-    /* JADX INFO: renamed from: -deprecated_socketAddress, reason: not valid java name */
     public final InetSocketAddress m898deprecated_socketAddress() {
         return this.socketAddress;
     }

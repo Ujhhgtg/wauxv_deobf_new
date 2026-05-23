@@ -4,13 +4,11 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.view.View;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲀᛸᤝᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2135 extends View.BaseSavedState {
     public static final Parcelable.Creator<C2135> CREATOR = new C0134(6);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f7070;
 
     public final String toString() {

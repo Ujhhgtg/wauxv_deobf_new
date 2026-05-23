@@ -12,22 +12,18 @@ import java.util.List;
 import me.hd.wauxv.R;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤝᤞᲇᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3563 extends AbstractC2482 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public List f11173;
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo2040() {
         return this.f11173.size();
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo2353(int i) {
         AbstractC0399 abstractC0399 = (AbstractC0399) this.f11173.get(i);
         if (abstractC0399 instanceof C0395) {
@@ -49,7 +45,6 @@ public final class C3563 extends AbstractC2482 {
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo2041(AbstractC2508 abstractC2508, int i) {
         final C3559 c3559 = abstractC2508 instanceof C3559 ? (C3559) abstractC2508 : null;
         if (c3559 != null) {
@@ -189,7 +184,6 @@ public final class C3563 extends AbstractC2482 {
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final AbstractC2508 mo2042(ViewGroup viewGroup, int i) {
         String[] strArr = AbstractC1574.f5469;
         if (i == 0) {
@@ -284,7 +278,6 @@ public final class C3563 extends AbstractC2482 {
         throw new NullPointerException("Missing required view with ID: ".concat(viewInflate5.getResources().getResourceName(i5)));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m5146(List list) {
         this.f11173 = list;
         m4441();

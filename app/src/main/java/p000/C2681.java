@@ -9,12 +9,10 @@ import android.graphics.RectF;
 import android.graphics.Region;
 import android.graphics.Shader;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᲈᤞᲇᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2681 extends AbstractC2686 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C2683 f8655;
 
     public C2681(C2683 c2683) {
@@ -22,7 +20,6 @@ public final class C2681 extends AbstractC2686 {
     }
 
     @Override // p000.AbstractC2686
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo4694(Matrix matrix, C2676 c2676, int i, Canvas canvas) {
         C2683 c2683 = this.f8655;
         float f = c2683.f8664;

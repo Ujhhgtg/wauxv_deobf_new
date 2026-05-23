@@ -9,7 +9,6 @@ import me.hd.wauxv.R;
 /* JADX INFO: loaded from: classes.dex */
 public class DropDownPreference extends ListPreference {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final ArrayAdapter f306;
 
     public DropDownPreference(Context context, AttributeSet attributeSet) {
@@ -26,7 +25,6 @@ public class DropDownPreference extends ListPreference {
     }
 
     @Override // androidx.preference.Preference
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo104() {
         ArrayAdapter arrayAdapter = this.f306;
         if (arrayAdapter != null) {

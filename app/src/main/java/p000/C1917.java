@@ -24,78 +24,54 @@ import android.util.Log;
 import java.util.BitSet;
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲀᲈᲇᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C1917 extends Drawable implements InterfaceC2688 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static final Paint f6331;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C1916 f6332;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final AbstractC2686[] f6333;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final AbstractC2686[] f6334;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final BitSet f6335;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public boolean f6336;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final Matrix f6337;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final Path f6338;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final Path f6339;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final RectF f6340;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final RectF f6341;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final Region f6342;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final Region f6343;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public C2677 f6344;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final Paint f6345;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final Paint f6346;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final C2676 f6347;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final C1744 f6348;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final C2679 f6349;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public PorterDuffColorFilter f6350;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public PorterDuffColorFilter f6351;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final RectF f6352;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public final boolean f6353;
 
     static {
@@ -379,12 +355,10 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public void mo1475() {
         invalidateSelf();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m3708(RectF rectF, Path path) {
         C1916 c1916 = this.f6332;
         this.f6349.m4692(c1916.f6314, c1916.f6322, rectF, this.f6348, path);
@@ -398,7 +372,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         path.computeBounds(this.f6352, true);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int m3709(int i) {
         int i2;
         C1916 c1916 = this.f6332;
@@ -417,7 +390,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         return AbstractC0752.m2226(iM4137, iAlpha);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m3710(Canvas canvas) {
         if (this.f6335.cardinality() > 0) {
             Log.w("ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲀᲈᲇᛸᤝ", "Compatibility shadow requested but can't be drawn for all operations in this shape.");
@@ -445,7 +417,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m3711(Canvas canvas, Paint paint, Path path, C2677 c2677, RectF rectF) {
         if (!c2677.m4690(rectF)) {
             canvas.drawPath(path, paint);
@@ -455,7 +426,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public void mo2439(Canvas canvas) {
         C2677 c2677 = this.f6344;
         RectF rectFM3712 = m3712();
@@ -468,7 +438,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         m3711(canvas, paint, this.f6339, c2677, rectF);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final RectF m3712() {
         Rect bounds = getBounds();
         RectF rectF = this.f6340;
@@ -476,19 +445,16 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         return rectF;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final boolean m3713() {
         Paint.Style style = this.f6332.f6330;
         return (style == Paint.Style.FILL_AND_STROKE || style == Paint.Style.STROKE) && this.f6346.getStrokeWidth() > 0.0f;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m3714(Context context) {
         this.f6332.f6315 = new C1136(context);
         m3721();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m3715(float f) {
         C1916 c1916 = this.f6332;
         if (c1916.f6326 != f) {
@@ -497,7 +463,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m3716(ColorStateList colorStateList) {
         C1916 c1916 = this.f6332;
         if (c1916.f6316 != colorStateList) {
@@ -506,7 +471,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m3717() {
         C1916 c1916 = this.f6332;
         if (c1916.f6327 != 2) {
@@ -515,7 +479,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void m3718(ColorStateList colorStateList) {
         C1916 c1916 = this.f6332;
         if (c1916.f6317 != colorStateList) {
@@ -524,7 +487,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final boolean m3719(int[] iArr) {
         boolean z;
         Paint paint;
@@ -546,7 +508,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final boolean m3720() {
         PorterDuffColorFilter porterDuffColorFilter;
         PorterDuffColorFilter porterDuffColorFilter2 = this.f6350;
@@ -568,7 +529,6 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         return (Objects.equals(porterDuffColorFilter2, this.f6350) && Objects.equals(porterDuffColorFilter3, this.f6351)) ? false : true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final void m3721() {
         C1916 c1916 = this.f6332;
         float f = c1916.f6326 + 0.0f;

@@ -14,30 +14,24 @@ import java.util.Collections;
 import java.util.List;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C0078 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final View.AccessibilityDelegate f1023 = new View.AccessibilityDelegate();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final View.AccessibilityDelegate f1024;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final C0077 f1025;
 
     public C0078() {
         this(f1023);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public boolean mo962(View view, AccessibilityEvent accessibilityEvent) {
         return this.f1024.dispatchPopulateAccessibilityEvent(view, accessibilityEvent);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public C0094 mo963(View view) {
         AccessibilityNodeProvider accessibilityNodeProvider = this.f1024.getAccessibilityNodeProvider(view);
         if (accessibilityNodeProvider != null) {
@@ -46,27 +40,22 @@ public class C0078 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void mo964(View view, AccessibilityEvent accessibilityEvent) {
         this.f1024.onInitializeAccessibilityEvent(view, accessibilityEvent);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public void mo722(View view, C0092 c0092) {
         this.f1024.onInitializeAccessibilityNodeInfo(view, c0092.f1045);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public void mo965(View view, AccessibilityEvent accessibilityEvent) {
         this.f1024.onPopulateAccessibilityEvent(view, accessibilityEvent);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public boolean mo966(ViewGroup viewGroup, View view, AccessibilityEvent accessibilityEvent) {
         return this.f1024.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public boolean mo723(View view, int i, Bundle bundle) {
         boolean zPerformAccessibilityAction;
         WeakReference weakReference;
@@ -126,12 +115,10 @@ public class C0078 {
         return z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public void mo967(View view, int i) {
         this.f1024.sendAccessibilityEvent(view, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public void mo968(View view, AccessibilityEvent accessibilityEvent) {
         this.f1024.sendAccessibilityEventUnchecked(view, accessibilityEvent);
     }

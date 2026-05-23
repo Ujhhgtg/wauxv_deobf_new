@@ -7,24 +7,18 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᛸᲁᤝᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1980 extends AbstractC1241 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static final Pattern f6552 = Pattern.compile("(?:[gs]et|is)\\p{javaUpperCase}.*");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final Class f6553;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public Method f6554;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final boolean f6555;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final boolean f6556;
 
     public C1980(Method method) {
@@ -48,7 +42,6 @@ public final class C1980 extends AbstractC1241 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static MethodHandle m3816(Method method) {
         String name = method.getName();
         Class<?>[] parameterTypes = method.getParameterTypes();
@@ -83,7 +76,6 @@ public final class C1980 extends AbstractC1241 {
     }
 
     @Override // p000.AbstractC1241, p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final C0452 mo2345(Object obj, Object[] objArr) throws InvocationTargetException {
         C0452 c0452Mo2345 = super.mo2345(obj, objArr);
         boolean z = this.f5641;
@@ -95,25 +87,21 @@ public final class C1980 extends AbstractC1241 {
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final Class mo2346() {
         return this.f6553;
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final boolean mo3401() {
         return this.f6555;
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final boolean mo3402() {
         return this.f6556;
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public final MethodHandle mo2349(MethodHandle methodHandle) {
         try {
             try {

@@ -118,7 +118,6 @@ public final class RealConnection extends Http2Connection.Listener implements Co
         }
     }
 
-    /* JADX INFO: renamed from: okhttp3.internal.connection.RealConnection$connectTls$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static final class AnonymousClass1 extends AbstractC1756 implements InterfaceC1414 {
         final /* synthetic */ Address $address;
@@ -139,7 +138,6 @@ public final class RealConnection extends Http2Connection.Listener implements Co
         }
     }
 
-    /* JADX INFO: renamed from: okhttp3.internal.connection.RealConnection$connectTls$2, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static final class AnonymousClass2 extends AbstractC1756 implements InterfaceC1414 {
         public AnonymousClass2() {

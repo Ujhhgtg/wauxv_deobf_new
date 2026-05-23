@@ -2,15 +2,12 @@ package p000;
 
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᲁᲈᲇᤝᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1798 implements InterfaceC2654 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final InterfaceC2654 f6007;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final InterfaceC2654 f6008;
 
     public C1798(InterfaceC2654 interfaceC2654, InterfaceC2654 interfaceC2655) {
@@ -38,13 +35,11 @@ public final class C1798 implements InterfaceC2654 {
     }
 
     @Override // p000.InterfaceC2654
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo1342() {
         return "kotlin.collections.LinkedHashMap";
     }
 
     @Override // p000.InterfaceC2654
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final int mo3471(String str) {
         Integer numM4853 = AbstractC2848.m4853(str);
         if (numM4853 != null) {
@@ -54,25 +49,21 @@ public final class C1798 implements InterfaceC2654 {
     }
 
     @Override // p000.InterfaceC2654
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final AbstractC1460 mo3472() {
         return C2851.f9113;
     }
 
     @Override // p000.InterfaceC2654
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final int mo3473() {
         return 2;
     }
 
     @Override // p000.InterfaceC2654
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final String mo3474(int i) {
         return String.valueOf(i);
     }
 
     @Override // p000.InterfaceC2654
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final List mo3475(int i) {
         if (i >= 0) {
             return C1189.f4329;
@@ -81,7 +72,6 @@ public final class C1798 implements InterfaceC2654 {
     }
 
     @Override // p000.InterfaceC2654
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final InterfaceC2654 mo3476(int i) {
         if (i < 0) {
             throw new IllegalArgumentException(AbstractC1194.m2780(i, "Illegal index ", ", kotlin.collections.LinkedHashMap expects only non-negative indices").toString());
@@ -97,7 +87,6 @@ public final class C1798 implements InterfaceC2654 {
     }
 
     @Override // p000.InterfaceC2654
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final boolean mo3477(int i) {
         if (i >= 0) {
             return false;

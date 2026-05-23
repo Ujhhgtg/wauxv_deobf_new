@@ -17,54 +17,38 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᤝᲈᛸᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2491 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public C0575 f7941;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public RecyclerView f7942;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C2825 f7943;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C2825 f7944;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public C1790 f7945;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public boolean f7946;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public boolean f7947;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final boolean f7948;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final boolean f7949;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public int f7950;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f7951;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int f7952;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public int f7953;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public int f7954;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public int f7955;
 
     public AbstractC2491() {
@@ -78,7 +62,6 @@ public abstract class AbstractC2491 {
         this.f7949 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static int m4452(int i, int i2, int i3) {
         int mode = View.MeasureSpec.getMode(i);
         int size = View.MeasureSpec.getSize(i);
@@ -91,7 +74,6 @@ public abstract class AbstractC2491 {
     /* JADX WARN: Code duplicated, block: B:10:0x001a  */
     /* JADX WARN: Code duplicated, block: B:14:0x0022  */
     /* JADX WARN: Code duplicated, block: B:5:0x0010  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public static int m4453(int i, int i2, int i3, int i4, boolean z) {
         int iMax = Math.max(0, i - i3);
         if (z) {
@@ -120,44 +102,36 @@ public abstract class AbstractC2491 {
         return View.MeasureSpec.makeMeasureSpec(i4, i2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static int m4454(View view) {
         return view.getBottom() + ((C2492) view.getLayoutParams()).f7957.bottom;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static int m4455(View view) {
         return view.getLeft() - ((C2492) view.getLayoutParams()).f7957.left;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static int m4456(View view) {
         Rect rect = ((C2492) view.getLayoutParams()).f7957;
         return view.getMeasuredHeight() + rect.top + rect.bottom;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public static int m4457(View view) {
         Rect rect = ((C2492) view.getLayoutParams()).f7957;
         return view.getMeasuredWidth() + rect.left + rect.right;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static int m4458(View view) {
         return view.getRight() + ((C2492) view.getLayoutParams()).f7957.right;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public static int m4459(View view) {
         return view.getTop() - ((C2492) view.getLayoutParams()).f7957.top;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public static int m4460(View view) {
         return ((C2492) view.getLayoutParams()).f7956.m4512();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public static C2490 m4461(Context context, AttributeSet attributeSet, int i, int i2) {
         C2490 c2490 = new C2490();
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC2466.f7838, i, i2);
@@ -169,7 +143,6 @@ public abstract class AbstractC2491 {
         return c2490;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ, reason: contains not printable characters */
     public static boolean m4462(int i, int i2, int i3) {
         int mode = View.MeasureSpec.getMode(i2);
         int size = View.MeasureSpec.getSize(i2);
@@ -185,14 +158,12 @@ public abstract class AbstractC2491 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲇᲁ, reason: contains not printable characters */
     public static void m4463(View view, int i, int i2, int i3, int i4) {
         C2492 c2492 = (C2492) view.getLayoutParams();
         Rect rect = c2492.f7957;
         view.layout(i + rect.left + ((ViewGroup.MarginLayoutParams) c2492).leftMargin, i2 + rect.top + ((ViewGroup.MarginLayoutParams) c2492).topMargin, (i3 - rect.right) - ((ViewGroup.MarginLayoutParams) c2492).rightMargin, (i4 - rect.bottom) - ((ViewGroup.MarginLayoutParams) c2492).bottomMargin);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4464(View view, int i, boolean z) {
         AbstractC2508 abstractC2508M204 = RecyclerView.m204(view);
         if (z || abstractC2508M204.m4518()) {
@@ -276,7 +247,6 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public void mo151(String str) {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView != null) {
@@ -284,52 +254,42 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public boolean mo152() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public boolean mo153() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public boolean mo107(C2492 c2492) {
         return c2492 != null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public int mo156(C2504 c2504) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public int mo108(C2504 c2504) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public int mo109(C2504 c2504) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public int mo157(C2504 c2504) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public int mo110(C2504 c2504) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public int mo111(C2504 c2504) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final void m4465(C2498 c2498) {
         for (int iM4467 = m4467() - 1; iM4467 >= 0; iM4467--) {
             View viewM4466 = m4466(iM4467);
@@ -350,7 +310,6 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public View mo158(int i) {
         int iM4467 = m4467();
         for (int i2 = 0; i2 < iM4467; i2++) {
@@ -363,15 +322,12 @@ public abstract class AbstractC2491 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public abstract C2492 mo112();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public C2492 mo113(Context context, AttributeSet attributeSet) {
         return new C2492(context, attributeSet);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ */
     public C2492 mo114(ViewGroup.LayoutParams layoutParams) {
         if (layoutParams instanceof C2492) {
             return new C2492((C2492) layoutParams);
@@ -379,7 +335,6 @@ public abstract class AbstractC2491 {
         return layoutParams instanceof ViewGroup.MarginLayoutParams ? new C2492((ViewGroup.MarginLayoutParams) layoutParams) : new C2492(layoutParams);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final View m4466(int i) {
         C0575 c0575 = this.f7941;
         if (c0575 != null) {
@@ -388,7 +343,6 @@ public abstract class AbstractC2491 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final int m4467() {
         C0575 c0575 = this.f7941;
         if (c0575 != null) {
@@ -397,7 +351,6 @@ public abstract class AbstractC2491 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public int mo115(C2498 c2498, C2504 c2504) {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView == null || recyclerView.f368 == null || !mo152()) {
@@ -406,7 +359,6 @@ public abstract class AbstractC2491 {
         return this.f7942.f368.mo2040();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ */
     public void mo666(Rect rect, View view) {
         boolean z = RecyclerView.f347;
         C2492 c2492 = (C2492) view.getLayoutParams();
@@ -414,7 +366,6 @@ public abstract class AbstractC2491 {
         rect.set((view.getLeft() - rect2.left) - ((ViewGroup.MarginLayoutParams) c2492).leftMargin, (view.getTop() - rect2.top) - ((ViewGroup.MarginLayoutParams) c2492).topMargin, view.getRight() + rect2.right + ((ViewGroup.MarginLayoutParams) c2492).rightMargin, view.getBottom() + rect2.bottom + ((ViewGroup.MarginLayoutParams) c2492).bottomMargin);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public final int m4468() {
         RecyclerView recyclerView = this.f7942;
         AbstractC2482 adapter = recyclerView != null ? recyclerView.getAdapter() : null;
@@ -424,7 +375,6 @@ public abstract class AbstractC2491 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public final int m4469() {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView != null) {
@@ -433,7 +383,6 @@ public abstract class AbstractC2491 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public final int m4470() {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView != null) {
@@ -442,7 +391,6 @@ public abstract class AbstractC2491 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public final int m4471() {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView != null) {
@@ -451,7 +399,6 @@ public abstract class AbstractC2491 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public final int m4472() {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView != null) {
@@ -460,7 +407,6 @@ public abstract class AbstractC2491 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ */
     public int mo116(C2498 c2498, C2504 c2504) {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView == null || recyclerView.f368 == null || !mo153()) {
@@ -469,7 +415,6 @@ public abstract class AbstractC2491 {
         return this.f7942.f368.mo2040();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public final void m4473(Rect rect, View view) {
         Matrix matrix;
         Rect rect2 = ((C2492) view.getLayoutParams()).f7957;
@@ -483,17 +428,14 @@ public abstract class AbstractC2491 {
         rect.offset(view.getLeft(), view.getTop());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ */
     public boolean mo159() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ */
     public boolean mo160() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᤞᲇ */
     public void mo263(int i) {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView != null) {
@@ -504,7 +446,6 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ */
     public void mo264(int i) {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView != null) {
@@ -515,15 +456,12 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ */
     public abstract void mo161(RecyclerView recyclerView);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ */
     public View mo117(View view, int i, C2498 c2498, C2504 c2504) {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ */
     public void mo162(AccessibilityEvent accessibilityEvent) {
         RecyclerView recyclerView = this.f7942;
         C2498 c2498 = recyclerView.f358;
@@ -541,7 +479,6 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ */
     public void mo118(C2498 c2498, C2504 c2504, C0092 c0092) {
         AccessibilityNodeInfo accessibilityNodeInfo = c0092.f1045;
         if (this.f7942.canScrollVertically(-1) || this.f7942.canScrollHorizontally(-1)) {
@@ -557,12 +494,10 @@ public abstract class AbstractC2491 {
         accessibilityNodeInfo.setCollectionInfo(AccessibilityNodeInfo.CollectionInfo.obtain(mo116(c2498, c2504), mo115(c2498, c2504), false, 0));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ */
     public void mo119(C2498 c2498, C2504 c2504, View view, C0092 c0092) {
         c0092.m1096(C0091.m1085(mo153() ? m4460(view) : 0, 1, mo152() ? m4460(view) : 0, 1, false));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲇᲀ, reason: contains not printable characters */
     public final void m4474(View view, C0092 c0092) {
         AbstractC2508 abstractC2508M204 = RecyclerView.m204(view);
         if (abstractC2508M204 == null || abstractC2508M204.m4518()) {
@@ -576,19 +511,16 @@ public abstract class AbstractC2491 {
         mo119(recyclerView.f358, recyclerView.f411, view, c0092);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ */
     public void mo125(C2498 c2498, C2504 c2504) {
         Log.e("RecyclerView", "You must override onLayoutChildren(Recycler recycler, State state) ");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᤞᲈ */
     public Parcelable mo164() {
         return null;
     }
 
     /* JADX WARN: Code duplicated, block: B:18:0x0060 A[PHI: r0
       0x0060: PHI (r0v8 int) = (r0v5 int), (r0v15 int) binds: [B:24:0x007c, B:16:0x0052] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᤞᲀ */
     public boolean mo127(int i, Bundle bundle) {
         int iM4472;
         int iM4470;
@@ -655,7 +587,6 @@ public abstract class AbstractC2491 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᲀᤞ, reason: contains not printable characters */
     public final void m4475(C2498 c2498) {
         for (int iM4467 = m4467() - 1; iM4467 >= 0; iM4467--) {
             if (!RecyclerView.m204(m4466(iM4467)).m4525()) {
@@ -664,7 +595,6 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲀᲇ, reason: contains not printable characters */
     public final void m4476(C2498 c2498) {
         ArrayList arrayList = c2498.f7967;
         int size = arrayList.size();
@@ -698,7 +628,6 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲇᲀ, reason: contains not printable characters */
     public final void m4477(View view, C2498 c2498) {
         C0575 c0575 = this.f7941;
         C2481 c2481 = (C2481) c0575.f2343;
@@ -729,14 +658,12 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲀᤞᲇ, reason: contains not printable characters */
     public final void m4478(int i, C2498 c2498) {
         View viewM4466 = m4466(i);
         m4479(i);
         c2498.m4497(viewM4466);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲀᲇᤞ, reason: contains not printable characters */
     public final void m4479(int i) {
         if (m4466(i) != null) {
             C0575 c0575 = this.f7941;
@@ -769,7 +696,6 @@ public abstract class AbstractC2491 {
     /* JADX WARN: Code duplicated, block: B:28:0x00b0  */
     /* JADX WARN: Code duplicated, block: B:33:0x00b8  */
     /* JADX WARN: Code duplicated, block: B:35:0x00bc  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲇᤞᲀ */
     public boolean mo667(RecyclerView recyclerView, View view, Rect rect, boolean z, boolean z2) {
         int iM4470 = m4470();
         int iM4472 = m4472();
@@ -831,7 +757,6 @@ public abstract class AbstractC2491 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲇᲀᤞ, reason: contains not printable characters */
     public final void m4480() {
         RecyclerView recyclerView = this.f7942;
         if (recyclerView != null) {
@@ -839,29 +764,24 @@ public abstract class AbstractC2491 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲁᲈ */
     public int mo128(int i, C2498 c2498, C2504 c2504) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲈᲁ */
     public void mo165(int i) {
         if (RecyclerView.f348) {
             Log.e("RecyclerView", "You MUST implement scrollToPosition. It will soon become abstract");
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲀᲈ */
     public int mo129(int i, C2498 c2498, C2504 c2504) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲈᲀ, reason: contains not printable characters */
     public final void m4481(RecyclerView recyclerView) {
         m4482(View.MeasureSpec.makeMeasureSpec(recyclerView.getWidth(), 1073741824), View.MeasureSpec.makeMeasureSpec(recyclerView.getHeight(), 1073741824));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲈᲀᲁ, reason: contains not printable characters */
     public final void m4482(int i, int i2) {
         this.f7954 = View.MeasureSpec.getSize(i);
         int mode = View.MeasureSpec.getMode(i);
@@ -878,7 +798,6 @@ public abstract class AbstractC2491 {
         this.f7955 = 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲈᲁᲀ */
     public void mo130(Rect rect, int i, int i2) {
         int iM4471 = m4471() + m4470() + rect.width();
         int iM4469 = m4469() + m4472() + rect.height();
@@ -887,7 +806,6 @@ public abstract class AbstractC2491 {
         this.f7942.setMeasuredDimension(m4452(i, iM4471, recyclerView.getMinimumWidth()), m4452(i2, iM4469, this.f7942.getMinimumHeight()));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᤞᲁᲈ, reason: contains not printable characters */
     public final void m4483(int i, int i2) {
         int iM4467 = m4467();
         if (iM4467 == 0) {
@@ -923,7 +841,6 @@ public abstract class AbstractC2491 {
         mo130(this.f7942.f365, i, i2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᤞᲈᲁ, reason: contains not printable characters */
     public final void m4484(RecyclerView recyclerView) {
         if (recyclerView == null) {
             this.f7942 = null;
@@ -940,27 +857,22 @@ public abstract class AbstractC2491 {
         this.f7953 = 1073741824;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲁᤞᲈ, reason: contains not printable characters */
     public final boolean m4485(View view, int i, int i2, C2492 c2492) {
         return (!view.isLayoutRequested() && this.f7948 && m4462(view.getWidth(), i, ((ViewGroup.MarginLayoutParams) c2492).width) && m4462(view.getHeight(), i2, ((ViewGroup.MarginLayoutParams) c2492).height)) ? false : true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲁᲈᤞ */
     public boolean mo166() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᤞᲁ, reason: contains not printable characters */
     public final boolean m4486(View view, int i, int i2, C2492 c2492) {
         return (this.f7948 && m4462(view.getMeasuredWidth(), i, ((ViewGroup.MarginLayoutParams) c2492).width) && m4462(view.getMeasuredHeight(), i2, ((ViewGroup.MarginLayoutParams) c2492).height)) ? false : true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᲁᤞ */
     public void mo167(RecyclerView recyclerView, C2504 c2504, int i) {
         Log.e("RecyclerView", "You must override smoothScrollToPosition to support smooth scrolling");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᤞᲀᲈ, reason: contains not printable characters */
     public final void m4487(C1790 c1790) {
         C1790 c1791 = this.f7945;
         if (c1791 != null && c1790 != c1791 && c1791.f5956) {
@@ -988,56 +900,43 @@ public abstract class AbstractC2491 {
         c1790.f5959 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᤞᲈᲀ */
     public boolean mo131() {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲈᲇ */
     public void mo121() {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ */
     public void mo265(AbstractC2482 abstractC2482) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ */
     public void mo616(RecyclerView recyclerView) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ */
     public void mo126(C2504 c2504) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ */
     public void mo163(Parcelable parcelable) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᲈᤞ */
     public void mo266(int i) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public void mo155(int i, C1439 c1439) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ */
     public void mo120(int i, int i2) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᤞᲈ */
     public void mo122(int i, int i2) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ */
     public void mo123(int i, int i2) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᤞᲇ */
     public void mo124(int i, int i2) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public void mo154(int i, int i2, C2504 c2504, C1439 c1439) {
     }
 }

@@ -5,15 +5,12 @@ import android.view.ViewTreeObserver;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤞᲁᲈᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewTreeObserverOnGlobalLayoutListenerC0568 implements ViewTreeObserver.OnGlobalLayoutListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2301;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ AbstractC1947 f2302;
 
     public /* synthetic */ ViewTreeObserverOnGlobalLayoutListenerC0568(AbstractC1947 abstractC1947, int i) {

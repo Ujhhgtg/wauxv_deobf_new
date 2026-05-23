@@ -13,24 +13,18 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.xmlpull.v1.XmlSerializer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᛸᤝᲈᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class JsonToXmlConverter {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final DecimalFormat f5828 = new DecimalFormat("0", DecimalFormatSymbols.getInstance(Locale.ENGLISH));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public JSONObject f5829;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public HashSet f5830;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public HashSet f5831;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m3480(XmlSerializer xmlSerializer, C2223 c2223) throws IOException {
         String str = c2223.f7213;
         if (str != null) {
@@ -68,7 +62,6 @@ public final class JsonToXmlConverter {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m3481(C2223 c2223, String str, JSONArray jSONArray) {
         int length = jSONArray.length();
         String str2 = c2223.f7214 + "/" + str;
@@ -90,7 +83,6 @@ public final class JsonToXmlConverter {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m3482(C2223 c2223, JSONObject jSONObject) {
         String string;
         ArrayList arrayList = c2223.f7217;

@@ -6,15 +6,12 @@ import java.lang.reflect.Method;
 
 import org.luckypray.dexkit.DexKitBridge;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲇᲈᲀᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0860 extends AbstractC1823 implements InterfaceC1582 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C0860 f3275 = new C0860();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static void m2381() {
         Cursor cursorM2715 = C1133.m2715("SELECT username FROM rconversation WHERE unReadCount>0 OR unReadMuteCount>0");
         if (cursorM2715 != null) {
@@ -38,7 +35,6 @@ public final class C0860 extends AbstractC1823 implements InterfaceC1582 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static void m2382(C0860 c0860, Object obj, String str) {
         
         int i = 0;
@@ -52,7 +48,6 @@ public final class C0860 extends AbstractC1823 implements InterfaceC1582 {
         ((Number) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{declaringClass, c0707M4527, AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls)}, 4, c1973M3492)).invoke(obj, str, false, true)).intValue();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public static void m2383(String str, String[] strArr) throws IllegalAccessException, InvocationTargetException {
         Method methodM3315 = AbstractC1574.dexToMethod(C0858.f3273);
         if (methodM3315.getParameterCount() == 4) {
@@ -65,7 +60,6 @@ public final class C0860 extends AbstractC1823 implements InterfaceC1582 {
     }
 
     @Override // p000.InterfaceC1582
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
         AbstractC1574.findMethod(C0856.f3271, dexKitBridge, new C0853(2));
         AbstractC1574.findMethod(C0859.f3274, dexKitBridge, new C0853(3));
@@ -74,7 +68,6 @@ public final class C0860 extends AbstractC1823 implements InterfaceC1582 {
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

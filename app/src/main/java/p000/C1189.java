@@ -8,12 +8,10 @@ import java.util.ListIterator;
 import java.util.RandomAccess;
 import okhttp3.HttpUrl;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲀᲇᤞᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1189 implements List, Serializable, RandomAccess, InterfaceC1737 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final C1189 f4329 = new C1189();
 
     @Override // java.util.List

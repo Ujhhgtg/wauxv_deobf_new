@@ -6,12 +6,10 @@ import androidx.versionedparcelable.ParcelImpl;
 import java.util.ArrayList;
 import java.util.Locale;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0134 implements Parcelable.Creator {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f1103;
 
     @Override // android.os.Parcelable.Creator

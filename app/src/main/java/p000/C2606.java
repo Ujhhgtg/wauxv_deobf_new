@@ -11,15 +11,12 @@ import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import java.util.concurrent.locks.Lock;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤝᲇᛸᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2606 extends AbstractC0426 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final byte[] f8476 = "com.bumptech.glide.load.resource.bitmap.RoundedCorners".getBytes(InterfaceC1749.f5849);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final int f8477;
 
     public C2606(int i) {
@@ -38,14 +35,12 @@ public final class C2606 extends AbstractC0426 {
     }
 
     @Override // p000.InterfaceC1749
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo2001(MessageDigest messageDigest) {
         messageDigest.update(f8476);
         messageDigest.update(ByteBuffer.allocate(4).putInt(this.f8477).array());
     }
 
     @Override // p000.AbstractC0426
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final Bitmap mo1631(InterfaceC0424 interfaceC0424, Bitmap bitmap, int i, int i2) {
         Bitmap bitmapMo1513;
         Paint paint = AbstractC3429.f10801;

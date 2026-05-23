@@ -4,16 +4,13 @@ import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import java.lang.reflect.Field;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤞᤝᲇᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3588 extends AbstractC0861 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public C0785 f11223;
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public boolean mo620(CoordinatorLayout coordinatorLayout, View view, int i) {
         mo633(coordinatorLayout, view, i);
         if (this.f11223 == null) {
@@ -32,7 +29,6 @@ public abstract class AbstractC3588 extends AbstractC0861 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public void mo633(CoordinatorLayout coordinatorLayout, View view, int i) {
         coordinatorLayout.m71(view, i);
     }

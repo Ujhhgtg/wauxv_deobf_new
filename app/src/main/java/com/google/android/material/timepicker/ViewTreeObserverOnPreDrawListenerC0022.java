@@ -2,12 +2,10 @@ package com.google.android.material.timepicker;
 
 import android.view.ViewTreeObserver;
 
-/* JADX INFO: renamed from: com.google.android.material.timepicker.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewTreeObserverOnPreDrawListenerC0022 implements ViewTreeObserver.OnPreDrawListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ ClockFaceView f896;
 
     public ViewTreeObserverOnPreDrawListenerC0022(ClockFaceView clockFaceView) {

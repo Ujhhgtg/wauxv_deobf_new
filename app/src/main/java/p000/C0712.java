@@ -7,15 +7,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲀᲁᲇᤞᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0712 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final HashMap f2712 = new HashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final HashMap f2713;
 
     public C0712(HashMap map) {
@@ -31,7 +28,6 @@ public final class C0712 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m2140(List list, InterfaceC1777 interfaceC1777, EnumC1769 enumC1769, InterfaceC1776 interfaceC1776) {
         if (list != null) {
             for (int size = list.size() - 1; size >= 0; size--) {

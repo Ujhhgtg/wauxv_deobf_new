@@ -11,21 +11,16 @@ import java.io.IOException;
 import java.util.WeakHashMap;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᛸᲇᤝᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2582 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final ThreadLocal f8187 = new ThreadLocal();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final WeakHashMap f8188 = new WeakHashMap(0);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final Object f8189 = new Object();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static Typeface m4592(Context context, int i) {
         if (context.isRestricted()) {
             return null;
@@ -34,7 +29,6 @@ public abstract class AbstractC2582 {
     }
 
     /* JADX WARN: Code duplicated, block: B:39:0x00c9  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static Typeface m4593(Context context, int i, TypedValue typedValue, int i2, AbstractC3681 abstractC3681, boolean z, boolean z2) throws Exception {
         Resources resources = context.getResources();
         resources.getValue(i, typedValue, true);

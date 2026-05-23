@@ -6,24 +6,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᛸᲇᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3605 extends AnimatorListenerAdapter implements InterfaceC3435 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final ViewGroup f11256;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final View f11257;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final View f11258;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean f11259 = true;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ C1264 f11260;
 
     public C3605(C1264 c1264, ViewGroup viewGroup, View view, View view2) {
@@ -65,20 +59,17 @@ public final class C3605 extends AnimatorListenerAdapter implements InterfaceC34
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo2012(AbstractC3436 abstractC3436) {
         abstractC3436.mo1417(this);
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo2014(AbstractC3436 abstractC3436) {
         if (this.f11259) {
             m5217();
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m5217() {
         this.f11258.setTag(R.id.save_overlay_view, null);
         this.f11256.getOverlay().remove(this.f11257);
@@ -94,17 +85,14 @@ public final class C3605 extends AnimatorListenerAdapter implements InterfaceC34
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo2011() {
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo2013() {
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo2949(AbstractC3436 abstractC3436) {
     }
 }

@@ -3,15 +3,12 @@ package p000;
 import android.graphics.RectF;
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲇᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0148 implements InterfaceC0874 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final InterfaceC0874 f1156;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final float f1157;
 
     public C0148(float f, InterfaceC0874 interfaceC0874) {
@@ -39,7 +36,6 @@ public final class C0148 implements InterfaceC0874 {
     }
 
     @Override // p000.InterfaceC0874
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final float mo916(RectF rectF) {
         return Math.max(0.0f, this.f1156.mo916(rectF) + this.f1157);
     }

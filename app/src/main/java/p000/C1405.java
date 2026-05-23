@@ -3,12 +3,10 @@ package p000;
 import java.io.InterruptedIOException;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᤞᲁᲀᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1405 extends C3400 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public C3400 f5064;
 
     public C1405(C3400 c3400) {

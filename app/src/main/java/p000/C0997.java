@@ -5,51 +5,36 @@ import android.animation.ValueAnimator;
 import android.view.View;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲈᲁᲀᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0997 extends AbstractC2487 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static TimeInterpolator f3641;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public boolean f3642;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public ArrayList f3643;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public ArrayList f3644;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public ArrayList f3645;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public ArrayList f3646;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public ArrayList f3647;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public ArrayList f3648;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public ArrayList f3649;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public ArrayList f3650;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public ArrayList f3651;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public ArrayList f3652;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public ArrayList f3653;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static void m2564(ArrayList arrayList) {
         for (int size = arrayList.size() - 1; size >= 0; size--) {
             ((AbstractC2508) arrayList.get(size)).f8006.animate().cancel();
@@ -57,7 +42,6 @@ public final class C0997 extends AbstractC2487 {
     }
 
     @Override // p000.AbstractC2487
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final boolean mo2565(AbstractC2508 abstractC2508, AbstractC2508 abstractC2509, C2139 c2139, C2139 c21310) {
         int i;
         int i2;
@@ -100,7 +84,6 @@ public final class C0997 extends AbstractC2487 {
     }
 
     @Override // p000.AbstractC2487
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void mo2566(AbstractC2508 abstractC2508) {
         ArrayList arrayList = this.f3647;
         ArrayList arrayList2 = this.f3648;
@@ -171,7 +154,6 @@ public final class C0997 extends AbstractC2487 {
     }
 
     @Override // p000.AbstractC2487
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void mo2567() {
         ArrayList arrayList = this.f3649;
         ArrayList arrayList2 = this.f3647;
@@ -278,12 +260,10 @@ public final class C0997 extends AbstractC2487 {
     }
 
     @Override // p000.AbstractC2487
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean mo2568() {
         return (this.f3644.isEmpty() && this.f3646.isEmpty() && this.f3645.isEmpty() && this.f3643.isEmpty() && this.f3651.isEmpty() && this.f3652.isEmpty() && this.f3650.isEmpty() && this.f3653.isEmpty() && this.f3648.isEmpty() && this.f3647.isEmpty() && this.f3649.isEmpty()) ? false : true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean m2569(AbstractC2508 abstractC2508, int i, int i2, int i3, int i4) {
         View view = abstractC2508.f8006;
         int translationX = i + ((int) view.getTranslationX());
@@ -312,7 +292,6 @@ public final class C0997 extends AbstractC2487 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m2570() {
         if (mo2568()) {
             return;
@@ -326,7 +305,6 @@ public final class C0997 extends AbstractC2487 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m2571(ArrayList arrayList, AbstractC2508 abstractC2508) {
         for (int size = arrayList.size() - 1; size >= 0; size--) {
             C0995 c0995 = (C0995) arrayList.get(size);
@@ -336,7 +314,6 @@ public final class C0997 extends AbstractC2487 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final boolean m2572(C0995 c0995, AbstractC2508 abstractC2508) {
         if (c0995.f3631 == abstractC2508) {
             c0995.f3631 = null;
@@ -355,7 +332,6 @@ public final class C0997 extends AbstractC2487 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m2573(AbstractC2508 abstractC2508) {
         if (f3641 == null) {
             f3641 = new ValueAnimator().getInterpolator();

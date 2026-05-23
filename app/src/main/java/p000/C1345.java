@@ -4,15 +4,12 @@ import com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲈᛸᲀᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1345 extends AbstractC0592 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final /* synthetic */ C1348 f4815;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ C1349 f4816;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -23,20 +20,17 @@ public final class C1345 extends AbstractC0592 {
     }
 
     @Override // p000.AbstractC0592
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ */
     public final void mo2019() {
         int i = 0;
         this.f4816.f4826 = false;
     }
 
     @Override // p000.AbstractC0592
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲈᲇ */
     public final void mo2020() {
         this.f4816.f4826 = true;
     }
 
     @Override // p000.AbstractC0592
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᤞᲈ */
     public final C3669 mo2021(C3669 c3669, List list) {
         Objects.toString(c3669);
         C1349 c1349 = this.f4816;

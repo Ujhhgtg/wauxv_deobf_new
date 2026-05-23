@@ -15,10 +15,8 @@ import p000.ViewOnTouchListenerC1820;
 /* JADX INFO: loaded from: classes.dex */
 class TimePickerView extends ConstraintLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static final /* synthetic */ int f893 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final Chip f894;
 
     public TimePickerView(Context context, AttributeSet attributeSet) {

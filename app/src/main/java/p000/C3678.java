@@ -4,26 +4,20 @@ import android.util.Log;
 import de.robv.android.xposed.XposedBridge;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤞᤝᲈᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3678 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final ArrayList f11549 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C3552 f11550 = new C3552();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static boolean f11551;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m5305(int i, String str) {
         m5310(4, new C3679(AbstractC1270.f4644, "D", String.valueOf(str), null, 51), false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m5306(String str, Exception exc, int i) {
         if ((i & 2) != 0) {
             exc = null;
@@ -31,7 +25,6 @@ public final class C3678 {
         m5310(4, new C3679(AbstractC1270.f4644, "E", String.valueOf(str), exc, 51), false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static void m5307() {
         int i = 0;
         C2873 c2873 = C1747.f5845;
@@ -46,7 +39,6 @@ public final class C3678 {
         f11551 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static void m5308(int i, String str, Throwable th) {
         if ((i & 2) != 0) {
             th = null;
@@ -54,12 +46,10 @@ public final class C3678 {
         m5310(4, new C3679(null, "E", String.valueOf(str), th, 55), (i & 4) == 0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static void m5309(String str) {
         m5310(4, new C3679(null, "W", String.valueOf(str), null, 55), false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static void m5310(int i, C3679 c3679, boolean z) {
         m5307();
         String str = c3679.f11558;
@@ -94,7 +84,6 @@ public final class C3678 {
     }
 
     /* JADX WARN: Code duplicated, block: B:15:0x0037  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final void m5311(boolean z, C3679 c3679, boolean z2) {
         Object c2585;
         boolean zBooleanValue;
@@ -157,7 +146,6 @@ public final class C3678 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final void m5312(C3679 c3679) {
         String str = c3679.f11555;
         Throwable th = c3679.f11559;

@@ -8,12 +8,10 @@ import android.util.Log;
 import java.io.IOException;
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤞᤝᛸᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3464 extends C3463 {
     @Override // p000.C3463
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ */
     public final Font mo5059(C1383 c1383) {
         Font fontM5048;
         Uri uri = c1383.f4978;

@@ -4,19 +4,16 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲈᤞᲀᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3521 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final Charset f11031 = Charset.forName("US-ASCII");
 
     static {
         Charset.forName("UTF-8");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m5103(File file) throws IOException {
         File[] fileArrListFiles = file.listFiles();
         if (fileArrListFiles == null) {

@@ -19,13 +19,10 @@ import p000.RunnableC0141;
 /* JADX INFO: loaded from: classes.dex */
 public class SearchView$SearchAutoComplete extends AbstractC0211 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public int f100;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public boolean f101;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final RunnableC0141 f102;
 
     public SearchView$SearchAutoComplete(Context context, AttributeSet attributeSet) {

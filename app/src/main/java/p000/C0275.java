@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲈᲁᤝᲀᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0275 implements InterfaceC1011 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final char f1481;
 
     public C0275(char c) {
@@ -13,7 +11,6 @@ public final class C0275 implements InterfaceC1011 {
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo1396(C2901 c2901, C2901 c2902, int i) {
         String.valueOf(this.f1481);
         AbstractC2224 c1183 = i == 1 ? new C1183() : new C2850();
@@ -39,19 +36,16 @@ public final class C0275 implements InterfaceC1011 {
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final char mo1397() {
         return this.f1481;
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int mo1398() {
         return 1;
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int mo1399(C1010 c1010, C1010 c1011) {
         if (c1010.f3688 || c1011.f3687) {
             int i = c1011.f3692;
@@ -63,7 +57,6 @@ public final class C0275 implements InterfaceC1011 {
     }
 
     @Override // p000.InterfaceC1011
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final char mo1400() {
         return this.f1481;
     }

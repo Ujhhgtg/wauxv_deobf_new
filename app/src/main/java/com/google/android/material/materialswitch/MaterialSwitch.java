@@ -21,46 +21,32 @@ import p000.C0243;
 /* JADX INFO: loaded from: classes.dex */
 public class MaterialSwitch extends SwitchCompat {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ, reason: contains not printable characters */
     public static final int[] f740 = {R.attr.state_with_icon};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ, reason: contains not printable characters */
     public Drawable f741;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ, reason: contains not printable characters */
     public Drawable f742;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ, reason: contains not printable characters */
     public int f743;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ, reason: contains not printable characters */
     public Drawable f744;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ, reason: contains not printable characters */
     public Drawable f745;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲇᲀ, reason: contains not printable characters */
     public ColorStateList f746;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ, reason: contains not printable characters */
     public ColorStateList f747;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲈᲇ, reason: contains not printable characters */
     public PorterDuff.Mode f748;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᤞᲈ, reason: contains not printable characters */
     public ColorStateList f749;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ, reason: contains not printable characters */
     public ColorStateList f750;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᤞᲇ, reason: contains not printable characters */
     public PorterDuff.Mode f751;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ, reason: contains not printable characters */
     public int[] f752;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ, reason: contains not printable characters */
     public int[] f753;
 
     public MaterialSwitch(Context context, AttributeSet attributeSet) {
@@ -90,7 +76,6 @@ public class MaterialSwitch extends SwitchCompat {
         m685();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static void m683(Drawable drawable, ColorStateList colorStateList, int[] iArr, int[] iArr2, float f) {
         if (drawable == null || colorStateList == null) {
             return;
@@ -252,7 +237,6 @@ public class MaterialSwitch extends SwitchCompat {
         m685();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m684() {
         this.f741 = AbstractC3471.m5073(this.f741, this.f746, getThumbTintMode());
         this.f742 = AbstractC3471.m5073(this.f742, this.f747, this.f748);
@@ -264,7 +248,6 @@ public class MaterialSwitch extends SwitchCompat {
         refreshDrawableState();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m685() {
         this.f744 = AbstractC3471.m5073(this.f744, this.f749, getTrackTintMode());
         this.f745 = AbstractC3471.m5073(this.f745, this.f750, this.f751);
@@ -281,7 +264,6 @@ public class MaterialSwitch extends SwitchCompat {
         super.setTrackDrawable(layerDrawable);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m686() {
         if (this.f746 == null && this.f747 == null && this.f749 == null && this.f750 == null) {
             return;

@@ -19,45 +19,32 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤞᛸᲈᤝᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C3461 extends AbstractC1459 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static Class f10936 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static Constructor f10937 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static Method f10938 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static Method f10939 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static boolean f10940 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Class f10941;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Constructor f10942;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Method f10943;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final Method f10944;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Method f10945;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final Method f10946;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final Method f10947;
 
     public C3461() throws NoSuchMethodException {
@@ -96,7 +83,6 @@ public class C3461 extends AbstractC1459 {
         this.f10947 = methodMo5055;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ, reason: contains not printable characters */
     public static boolean m5049(Object obj, String str, int i, boolean z) throws NoSuchMethodException {
         m5050();
         try {
@@ -106,7 +92,6 @@ public class C3461 extends AbstractC1459 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᲈᤞ, reason: contains not printable characters */
     public static void m5050() throws NoSuchMethodException {
         Method method;
         Class<?> cls;
@@ -134,7 +119,6 @@ public class C3461 extends AbstractC1459 {
         f10939 = method;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᤞᲀ, reason: contains not printable characters */
     public static Method m5051(Class cls) {
         Class cls2 = Boolean.TYPE;
         Class cls3 = Integer.TYPE;
@@ -142,7 +126,6 @@ public class C3461 extends AbstractC1459 {
     }
 
     @Override // p000.AbstractC1459
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final Typeface mo3200(Context context, C1380 c1380, Resources resources, int i) throws IllegalAccessException, NoSuchMethodException, InstantiationException, InvocationTargetException {
         Object objNewInstance;
         Method method = this.f10943;
@@ -210,7 +193,6 @@ public class C3461 extends AbstractC1459 {
     }
 
     @Override // p000.AbstractC1459
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final Typeface mo3201(Context context, C1383[] c1383Arr, int i) throws IOException {
         Object objNewInstance;
         Typeface typefaceMo5053;
@@ -311,7 +293,6 @@ public class C3461 extends AbstractC1459 {
     }
 
     @Override // p000.AbstractC1459
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public final Typeface mo3203(Context context, Resources resources, int i, String str, int i2) throws IllegalAccessException, InstantiationException, InvocationTargetException {
         Object objNewInstance;
         Method method = this.f10943;
@@ -339,7 +320,6 @@ public class C3461 extends AbstractC1459 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ, reason: contains not printable characters */
     public final boolean m5052(Context context, Object obj, String str, int i, int i2, int i3, FontVariationAxis[] fontVariationAxisArr) {
         try {
             return ((Boolean) this.f10943.invoke(obj, context.getAssets(), str, 0, Boolean.FALSE, Integer.valueOf(i), Integer.valueOf(i2), Integer.valueOf(i3), fontVariationAxisArr)).booleanValue();
@@ -348,7 +328,6 @@ public class C3461 extends AbstractC1459 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ, reason: contains not printable characters */
     public Typeface mo5053(Object obj) {
         try {
             Object objNewInstance = Array.newInstance((Class<?>) this.f10941, 1);
@@ -359,7 +338,6 @@ public class C3461 extends AbstractC1459 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᤞᲈ, reason: contains not printable characters */
     public final boolean m5054(Object obj) {
         try {
             return ((Boolean) this.f10945.invoke(obj, null)).booleanValue();
@@ -368,7 +346,6 @@ public class C3461 extends AbstractC1459 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᲀᤞ, reason: contains not printable characters */
     public Method mo5055(Class cls) throws NoSuchMethodException {
         Class<?> cls2 = Array.newInstance((Class<?>) cls, 1).getClass();
         Class cls3 = Integer.TYPE;

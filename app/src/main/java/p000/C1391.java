@@ -12,12 +12,10 @@ import okhttp3.internal.Util;
 import okhttp3.internal.cache.DiskLruCache;
 import okhttp3.internal.http.RealResponseBody;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᤞᛸᲀᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1391 implements Closeable, Flushable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final DiskLruCache f5012;
 
     public C1391(DiskLruCache diskLruCache) {
@@ -34,7 +32,6 @@ public final class C1391 implements Closeable, Flushable {
         this.f5012.flush();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Response m3102(Request request) {
         try {
             DiskLruCache.Snapshot snapshot = this.f5012.get(AbstractC1386.m3097(request));
@@ -60,7 +57,6 @@ public final class C1391 implements Closeable, Flushable {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Response m3103(Response response) {
         DiskLruCache.Editor editorEdit$default;
         C1389 c1389;

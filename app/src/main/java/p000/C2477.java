@@ -6,18 +6,14 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᤝᛸᲈᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2477 implements InterfaceC0508 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final InterfaceC2786 f7913;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C0504 f7914 = new C0504();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public boolean f7915;
 
     public C2477(InterfaceC2786 interfaceC2786) {
@@ -133,12 +129,10 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508, p000.InterfaceC0507
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final C0504 mo1760() {
         return this.f7914;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final long m4428(long j, long j2, byte b) {
         if (this.f7915) {
             throw new IllegalStateException("closed");
@@ -167,14 +161,12 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final C0539 mo1762(long j) throws EOFException {
         mo1790(j);
         return this.f7914.mo1762(j);
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final byte[] mo1764() {
         InterfaceC2786 interfaceC2786 = this.f7913;
         C0504 c0504 = this.f7914;
@@ -182,7 +174,6 @@ public final class C2477 implements InterfaceC0508 {
         return c0504.m1784(c0504.f2172);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int m4429() throws EOFException {
         mo1790(4L);
         int i = this.f7914.readInt();
@@ -190,7 +181,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo1766() {
         if (this.f7915) {
             throw new IllegalStateException("closed");
@@ -200,7 +190,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final int mo1767(C2302 c2302) throws EOFException {
         C0504 c0504;
         if (this.f7915) {
@@ -221,7 +210,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final long mo1771() throws EOFException {
         C0504 c0504;
         mo1790(1L);
@@ -248,7 +236,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final String mo1773(long j) throws EOFException {
         if (j < 0) {
             throw new IllegalArgumentException(AbstractC2784.m4746(j, "limit < 0: ").toString());
@@ -268,7 +255,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final void mo1776(C0504 c0504, long j) throws EOFException {
         C0504 c0505 = this.f7914;
         try {
@@ -281,7 +267,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ */
     public final C0539 mo1780() {
         InterfaceC2786 interfaceC2786 = this.f7913;
         C0504 c0504 = this.f7914;
@@ -290,7 +275,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ */
     public final boolean mo1781(long j) {
         C0504 c0504;
         if (j < 0) {
@@ -309,13 +293,11 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public final String mo1783() {
         return mo1773(9223372036854775807L);
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ */
     public final boolean mo1787(long j, C0539 c0539) {
         int iMo1870 = c0539.mo1870();
         if (this.f7915) {
@@ -333,7 +315,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ */
     public final void mo1790(long j) throws EOFException {
         if (!mo1781(j)) {
             throw new EOFException();
@@ -341,7 +322,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public final long mo1792() throws EOFException {
         C0504 c0504;
         mo1790(1L);
@@ -368,7 +348,6 @@ public final class C2477 implements InterfaceC0508 {
     }
 
     @Override // p000.InterfaceC0508
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public final InputStream mo1793() {
         return new C0503(this, 1);
     }

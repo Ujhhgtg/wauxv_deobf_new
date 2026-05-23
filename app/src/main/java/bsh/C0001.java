@@ -21,16 +21,13 @@ import p000.EnumC0703;
 import p000.InterfaceC2225;
 import p000.RunnableC1668;
 
-/* JADX INFO: renamed from: bsh.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0001 extends AbstractC2707 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static int f466;
 
     @Override // p000.AbstractC2707, p000.InterfaceC2225
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Object mo306(C0550 c0550, RunnableC1668 runnableC1668) throws C1229 {
         if (m4710().length == 1) {
             InterfaceC2225 interfaceC2225 = this.f8721[0];
@@ -143,7 +140,6 @@ public final class C0001 extends AbstractC2707 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Object m307(C0328 c0328, Class cls, C0550 c0550, RunnableC1668 runnableC1668) throws C1230, C2895 {
         
         RunnableC1668.m3389("array base type = ", cls);

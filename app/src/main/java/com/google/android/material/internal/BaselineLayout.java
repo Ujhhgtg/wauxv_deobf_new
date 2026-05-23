@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 /* JADX INFO: loaded from: classes.dex */
 public class BaselineLayout extends ViewGroup {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f722;
 
     public BaselineLayout(Context context, AttributeSet attributeSet) {

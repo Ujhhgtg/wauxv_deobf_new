@@ -9,11 +9,9 @@ import android.view.DragEvent;
 import android.view.View;
 import android.widget.TextView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲁᲀᲈᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0225 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static boolean m1277(DragEvent dragEvent, TextView textView, Activity activity) {
         InterfaceC0834 c0094;
         activity.requestDragAndDropPermissions(dragEvent);
@@ -37,7 +35,6 @@ public abstract class AbstractC0225 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static boolean m1278(DragEvent dragEvent, View view, Activity activity) {
         InterfaceC0834 c0094;
         activity.requestDragAndDropPermissions(dragEvent);

@@ -3,15 +3,12 @@ package p000;
 import android.content.Context;
 import android.net.Uri;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲇᤝᛸᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1925 implements InterfaceC1996 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f6362;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Context f6363;
 
     public C1925(Context context, int i) {
@@ -30,7 +27,6 @@ public final class C1925 implements InterfaceC1996 {
     }
 
     @Override // p000.InterfaceC1996
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final boolean mo1394(Object obj) {
         switch (this.f6362) {
             case 0:
@@ -45,7 +41,6 @@ public final class C1925 implements InterfaceC1996 {
     }
 
     @Override // p000.InterfaceC1996
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final C1995 mo1395(Object obj, int i, int i2, C2303 c2303) {
         Long l;
         switch (this.f6362) {

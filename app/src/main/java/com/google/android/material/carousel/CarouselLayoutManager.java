@@ -28,13 +28,10 @@ import p000.InterfaceC2503;
 /* JADX INFO: loaded from: classes.dex */
 public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC2503 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final C2097 f655;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public AbstractC0567 f656;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final View.OnLayoutChangeListener f657;
 
     public CarouselLayoutManager() {
@@ -55,69 +52,58 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.InterfaceC2503
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final PointF mo150(int i) {
         return null;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final boolean mo152() {
         return m668();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final boolean mo153() {
         return !m668();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final int mo156(C2504 c2504) {
         m4467();
         return 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final int mo108(C2504 c2504) {
         return 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final int mo109(C2504 c2504) {
         return 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final int mo157(C2504 c2504) {
         m4467();
         return 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final int mo110(C2504 c2504) {
         return 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final int mo111(C2504 c2504) {
         return 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final C2492 mo112() {
         return new C2492(-2, -2);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public final void mo666(Rect rect, View view) {
         super.mo666(rect, view);
         rect.centerY();
@@ -128,13 +114,11 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ */
     public final boolean mo159() {
         return true;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ */
     public final void mo616(RecyclerView recyclerView) {
         Context context = recyclerView.getContext();
         C2097 c2097 = this.f655;
@@ -153,7 +137,6 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ */
     public final void mo161(RecyclerView recyclerView) {
         recyclerView.removeOnLayoutChangeListener(this.f657);
     }
@@ -162,7 +145,6 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     /* JADX WARN: Code duplicated, block: B:20:0x003c  */
     /* JADX WARN: Code duplicated, block: B:24:0x0046  */
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ */
     public final View mo117(View view, int i, C2498 c2498, C2504 c2504) {
         byte b;
         if (m4467() == 0) {
@@ -227,7 +209,6 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ */
     public final void mo162(AccessibilityEvent accessibilityEvent) {
         super.mo162(accessibilityEvent);
         if (m4467() > 0) {
@@ -237,19 +218,16 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ */
     public final void mo120(int i, int i2) {
         m4468();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ */
     public final void mo123(int i, int i2) {
         m4468();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ */
     public final void mo125(C2498 c2498, C2504 c2504) {
         if (c2504.m4505() > 0) {
             if ((m668() ? this.f7954 : this.f7955) > 0.0f) {
@@ -262,7 +240,6 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ */
     public final void mo126(C2504 c2504) {
         if (m4467() == 0) {
             return;
@@ -271,13 +248,11 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲇᤞᲀ, reason: contains not printable characters */
     public final boolean mo667(RecyclerView recyclerView, View view, Rect rect, boolean z, boolean z2) {
         return false;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲁᲈ */
     public final int mo128(int i, C2498 c2498, C2504 c2504) {
         if (!m668() || m4467() == 0 || i == 0) {
             return 0;
@@ -287,7 +262,6 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲀᲈ */
     public final int mo129(int i, C2498 c2498, C2504 c2504) {
         if (!mo153() || m4467() == 0 || i == 0) {
             return 0;
@@ -297,24 +271,20 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᲁᤞ */
     public final void mo167(RecyclerView recyclerView, C2504 c2504, int i) {
         C0564 c0564 = new C0564(recyclerView.getContext());
         c0564.f5952 = i;
         m4487(c0564);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᤞᲈ, reason: contains not printable characters */
     public final boolean m668() {
         return this.f656.f2300 == 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᲈᤞ, reason: contains not printable characters */
     public final boolean m669() {
         return m668() && this.f7942.getLayoutDirection() == 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲈᤞᲀ, reason: contains not printable characters */
     public final void m670(int i) {
         C0566 c0566;
         if (i != 0 && i != 1) {
@@ -360,7 +330,6 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲈᲁ */
     public final void mo165(int i) {
     }
 }

@@ -2,15 +2,12 @@ package p000;
 
 import java.io.PrintStream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᤝᲁᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2553 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final int f8109;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final int f8110;
 
     static {
@@ -50,19 +47,16 @@ public abstract class AbstractC2553 {
         f8110 = i2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final void m4565(String str, Throwable th) {
         m4566().println("SLF4J(E): " + str);
         m4566().println("SLF4J(E): Reported exception:");
         th.printStackTrace(m4566());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static PrintStream m4566() {
         return AbstractC2784.m4759(f8109) != 1 ? System.err : System.out;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final void m4567(String str) {
         if (AbstractC2784.m4759(3) >= AbstractC2784.m4759(f8110)) {
             m4566().println("SLF4J(W): " + str);

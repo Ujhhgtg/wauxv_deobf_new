@@ -3,15 +3,12 @@ package p000;
 import android.animation.ValueAnimator;
 import com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲁᲀᛸᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0941 implements ValueAnimator.AnimatorUpdateListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f3442;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ C0942 f3443;
 
     public /* synthetic */ C0941(C0942 c0942, int i) {

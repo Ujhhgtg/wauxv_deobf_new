@@ -16,7 +16,6 @@ public class h {
     public static class a {
         public static final String a = "__er";
 
-        /* JADX INFO: renamed from: com.umeng.analytics.pro.h$a$a, reason: collision with other inner class name */
         /* JADX INFO: compiled from: obf */
         public static class C0031a {
             public static final String a = "__i";
@@ -50,7 +49,6 @@ public class h {
             public static final String f = "__vc";
         }
 
-        /* JADX INFO: renamed from: com.umeng.analytics.pro.h$b$b, reason: collision with other inner class name */
         /* JADX INFO: compiled from: obf */
         public static class C0032b {
             public static final String a = "TEXT";

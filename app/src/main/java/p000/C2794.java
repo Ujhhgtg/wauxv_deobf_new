@@ -2,18 +2,14 @@ package p000;
 
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᲈᤝᤞᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2794 implements Cloneable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public /* synthetic */ int[] f8918;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public /* synthetic */ Object[] f8919;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public /* synthetic */ int f8920;
 
     public C2794() {
@@ -68,7 +64,6 @@ public final class C2794 implements Cloneable {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4776(int i, Object obj) {
         int i2 = this.f8920;
         if (i2 != 0 && i <= this.f8918[i2 - 1]) {
@@ -93,7 +88,6 @@ public final class C2794 implements Cloneable {
         this.f8920 = i2 + 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Object m4777(int i) {
         Object obj;
         int iM3205 = AbstractC1460.m3205(this.f8920, i, this.f8918);
@@ -103,7 +97,6 @@ public final class C2794 implements Cloneable {
         return obj;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m4778(int i, Object obj) {
         int iM3205 = AbstractC1460.m3205(this.f8920, i, this.f8918);
         if (iM3205 >= 0) {

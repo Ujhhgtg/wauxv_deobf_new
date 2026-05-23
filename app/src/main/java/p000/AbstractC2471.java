@@ -12,18 +12,14 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import java.lang.reflect.Field;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᛸᲈᲇᲁᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2471 extends ConstraintLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final RunnableC0563 f7899;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public int f7900;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final C1917 f7901;
 
     public AbstractC2471(Context context, AttributeSet attributeSet) {
@@ -85,6 +81,5 @@ public abstract class AbstractC2471 extends ConstraintLayout {
         this.f7901.m3716(ColorStateList.valueOf(i));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public abstract void mo718();
 }

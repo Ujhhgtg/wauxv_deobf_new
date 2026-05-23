@@ -35,15 +35,12 @@ import p000.EnumC0703;
 import p000.InterfaceC2225;
 import p000.RunnableC1668;
 
-/* JADX INFO: renamed from: bsh.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0004 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C0004 f472;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static Class m317(String str, C2000 c2000, Class[] clsArr, Class cls, C0333 c0333, EnumC0703 enumC0703, C0550 c0550, RunnableC1668 runnableC1668) {
         int i;
         String str2;

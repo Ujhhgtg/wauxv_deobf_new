@@ -2,15 +2,12 @@ package p000;
 
 import com.umeng.analytics.pro.bc;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᲁᛸᲈᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C2379 implements InterfaceC2378 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Object[] f7633;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f7634;
 
     public C2379(int i) {
@@ -21,7 +18,6 @@ public class C2379 implements InterfaceC2378 {
     }
 
     @Override // p000.InterfaceC2378
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public boolean mo1311(Object obj) {
         Object[] objArr;
         boolean z;
@@ -52,7 +48,6 @@ public class C2379 implements InterfaceC2378 {
     }
 
     @Override // p000.InterfaceC2378
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public Object mo1312() {
         int i = this.f7634;
         if (i <= 0) {
@@ -66,7 +61,6 @@ public class C2379 implements InterfaceC2378 {
         return obj;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void m4343(C0266 c0266) {
         int i = this.f7634;
         Object[] objArr = this.f7633;

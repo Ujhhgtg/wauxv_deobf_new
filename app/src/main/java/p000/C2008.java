@@ -6,12 +6,10 @@ import android.content.res.Resources;
 import android.view.LayoutInflater;
 import java.lang.reflect.Method;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᤝᲁᲈᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2008 extends ContextWrapper {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public LayoutInflater f6691;
 
     @Override // android.content.ContextWrapper, android.content.Context

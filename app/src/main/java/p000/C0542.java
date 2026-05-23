@@ -36,18 +36,14 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import me.hd.wauxv.R;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤝᲁᲀᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC1963, InterfaceC0401, InterfaceC0954 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2251;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object f2252;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Object f2253;
 
     static {
@@ -58,7 +54,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         this.f2251 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static C0158 m1879(ImageDecoder.Source source, int i, int i2, C2303 c2303) throws IOException {
         Drawable drawableDecodeDrawable = ImageDecoder.decodeDrawable(source, new C1001(i, i2, c2303));
         if (AbstractC0080.m992(drawableDecodeDrawable)) {
@@ -100,7 +95,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     @Override // p000.InterfaceC1171
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public boolean mo1880(CharSequence charSequence, int i, int i2, C3465 c3465) {
         if ((c3465.f10951 & 4) > 0) {
             return true;
@@ -114,7 +108,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     @Override // p000.InterfaceC1963
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public Drawable mo1502(int i) {
         ViewGroup viewGroup = (ViewGroup) this.f2253;
         File file = new File(C1362.f4863, ((C1357) ((List) this.f2252).get(i)).f4854);
@@ -124,7 +117,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return new BitmapDrawable(viewGroup.getContext().getResources(), BitmapFactory.decodeFile(file.getAbsolutePath()));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void m1881(C2805 c2805) {
         if (((ArrayList) this.f2253) == null) {
             this.f2253 = new ArrayList();
@@ -144,7 +136,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     @Override // p000.InterfaceC0954
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public void mo1882(Exception exc) {
         C2787 c2787 = (C2787) this.f2253;
         C1995 c1995 = (C1995) this.f2252;
@@ -161,19 +152,16 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     @Override // p000.InterfaceC1963
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public int mo1505() {
         return AbstractC3681.m5331(((ViewGroup) this.f2253).getContext()) ? Color.parseColor(C1358.f4858.m2542()) : Color.parseColor(C1359.f4859.m2542());
     }
 
     @Override // p000.InterfaceC1963
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public int mo1506() {
         return ((List) this.f2252).size();
     }
 
     @Override // p000.InterfaceC0401
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public void mo1575(C0402 c0402) {
         if (((C2596) this.f2253).m4612(c0402)) {
             ((C1660) this.f2252).m3382(c0402.f1897);
@@ -181,7 +169,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     @Override // p000.InterfaceC0954
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public void mo1883(Object obj) {
         C2787 c2787 = (C2787) this.f2253;
         C1995 c1995 = (C1995) this.f2252;
@@ -204,18 +191,15 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     @Override // p000.InterfaceC1963
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public int mo1509() {
         return AbstractC3681.m5331(((ViewGroup) this.f2253).getContext()) ? Color.parseColor(C1360.f4860.m2542()) : Color.parseColor(C1361.f4861.m2542());
     }
 
     @Override // p000.InterfaceC1207
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public boolean mo1510(Object obj, File file, C2303 c2303) {
         return ((C0421) this.f2253).mo1510(new C0425((InterfaceC0424) this.f2252, ((BitmapDrawable) ((InterfaceC2568) obj).get()).getBitmap()), file, c2303);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public void m1884() {
         int[] iArr = (int[]) this.f2252;
         if (iArr != null) {
@@ -225,12 +209,10 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     @Override // p000.InterfaceC2574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public int mo1614(C2303 c2303) {
         return 2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public void m1885(int i) {
         int[] iArr = (int[]) this.f2252;
         if (iArr == null) {
@@ -250,7 +232,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public void m1886(int i) {
         ArrayList arrayList = (ArrayList) this.f2253;
         if (arrayList != null) {
@@ -263,7 +244,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         m1895(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public Object m1887(InterfaceC2376 interfaceC2376) {
         HashMap map = (HashMap) this.f2253;
         C1504 c1504 = (C1504) map.get(interfaceC2376);
@@ -290,7 +270,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public C2805 m1888(int i, int i2, int i3) {
         ArrayList arrayList = (ArrayList) this.f2253;
         if (arrayList == null) {
@@ -310,7 +289,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public C2805 m1889(int i) {
         ArrayList arrayList = (ArrayList) this.f2253;
         if (arrayList == null) {
@@ -325,7 +303,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public KeyListener m1890(KeyListener keyListener) {
         if (keyListener instanceof NumberKeyListener) {
             return keyListener;
@@ -340,12 +317,10 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return false ? keyListener : new C1168(keyListener);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public SharedPreferencesC1269 m1891() {
         return (SharedPreferencesC1269) ((C2873) this.f2253).getValue();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public synchronized List m1892(String str) {
         List arrayList;
         try {
@@ -363,7 +338,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public synchronized ArrayList m1893(Class cls, Class cls2) {
         ArrayList arrayList;
         arrayList = new ArrayList();
@@ -381,7 +355,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public String m1894(InterfaceC1749 interfaceC1749) {
         String str;
         synchronized (((C1870) this.f2252)) {
@@ -416,7 +389,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     /* JADX WARN: Code duplicated, block: B:10:0x0012  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public int m1895(int i) {
         int i2;
         int[] iArr = (int[]) this.f2252;
@@ -460,7 +432,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return iMin;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public void m1896(AttributeSet attributeSet, int i) {
         TypedArray typedArrayObtainStyledAttributes = ((EditText) this.f2252).getContext().obtainStyledAttributes(attributeSet, AbstractC2470.f7883, i, 0);
         try {
@@ -473,7 +444,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public void m1897(int i, int i2) {
         int[] iArr = (int[]) this.f2252;
         if (iArr == null || i >= iArr.length) {
@@ -497,7 +467,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public void m1898(int i, int i2) {
         int[] iArr = (int[]) this.f2252;
         if (iArr == null || i >= iArr.length) {
@@ -526,7 +495,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public C1165 m1899(InputConnection inputConnection, EditorInfo editorInfo) {
         C0094 c0094 = (C0094) this.f2253;
         if (inputConnection == null) {
@@ -542,7 +510,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return (C1165) inputConnection;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public void m1900(C1377 c1377) {
         ExecutorC2560 executorC2560 = (ExecutorC2560) this.f2253;
         C1744 c1744 = (C1744) this.f2252;
@@ -554,7 +521,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public C0165 m1901(int i) throws IOException {
         m1915(4);
         C0514 c0514 = (C0514) this.f2252;
@@ -570,7 +536,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return c0165;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public C0177 m1902(int i) {
         C0514 c0514 = (C0514) this.f2252;
         try {
@@ -589,13 +554,11 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public AbstractC0777 m1903() throws IOException {
         return ((C2815) this.f2253).m4793(((C0514) this.f2252).readUnsignedShort());
     }
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public void m1904(Context context, XmlResourceParser xmlResourceParser) {
         C0792 c0792 = new C0792();
         int attributeCount = xmlResourceParser.getAttributeCount();
@@ -712,7 +675,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public int m1905(int i, InterfaceC0541 interfaceC0541) {
         int i2 = i;
         C2815 c2815 = (C2815) this.f2253;
@@ -1121,7 +1083,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public int m1906(int i, InterfaceC0541 interfaceC0541) {
         C0516 c0516 = (C0516) this.f2252;
         int i2 = (i + 4) & (-4);
@@ -1153,7 +1114,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     }
 
     /* JADX WARN: Code duplicated, block: B:21:0x0052  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public int m1907(int i, InterfaceC0541 interfaceC0541) {
         C0918 c0918;
         int i2;
@@ -1279,7 +1239,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return i11;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public C0179 m1908(int i) {
         C0514 c0514 = (C0514) this.f2252;
         try {
@@ -1305,7 +1264,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public int m1909(int i, InterfaceC0541 interfaceC0541) {
         C0516 c0516 = (C0516) this.f2252;
         int i2 = (i + 4) & (-4);
@@ -1341,7 +1299,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         return i8;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public AbstractC0777 m1910() {
         C2815 c2815 = (C2815) this.f2253;
         C0514 c0514 = (C0514) this.f2252;
@@ -1420,7 +1377,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public int m1911(int i, InterfaceC0541 interfaceC0541) {
         C0516 c0516 = (C0516) this.f2252;
         int iM1815 = c0516.m1815(i + 1);
@@ -1473,7 +1429,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ, reason: contains not printable characters */
     public void m1912(InterfaceC2376 interfaceC2376, Object obj) {
         HashMap map = (HashMap) this.f2253;
         C1504 c1504 = (C1504) map.get(interfaceC2376);
@@ -1495,7 +1450,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         c1504.f5314.add(obj);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
     public void m1913(String str) {
         C1064 c1064;
         synchronized (this) {
@@ -1531,7 +1485,6 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         c1064.f3852.unlock();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ, reason: contains not printable characters */
     public Object m1914() {
         C1504 c1504 = (C1504) this.f2252;
         C1504 c1505 = c1504.f5316;
@@ -1556,14 +1509,12 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲇᲁ, reason: contains not printable characters */
     public void m1915(int i) {
         if (((C0514) this.f2252).available() < i) {
             throw new C2331("truncated annotation attribute", null);
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᤞᲇ, reason: contains not printable characters */
     public void m1916(boolean z) {
         C1181 c1181 = (C1181) ((C0542) ((C0094) this.f2253).f1049).f2253;
         if (c1181.f4323 != z) {

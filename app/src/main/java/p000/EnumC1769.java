@@ -2,7 +2,6 @@ package p000;
 
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᤝᲈᛸᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class EnumC1769 {
@@ -43,7 +42,6 @@ public final class EnumC1769 {
         return (EnumC1769[]) $VALUES.clone();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final EnumC1770 m3510() {
         switch (AbstractC1768.f5890[ordinal()]) {
             case 1:

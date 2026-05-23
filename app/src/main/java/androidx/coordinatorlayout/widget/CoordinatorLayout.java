@@ -48,76 +48,52 @@ import p000.ViewTreeObserverOnPreDrawListenerC0865;
 /* JADX INFO: loaded from: classes.dex */
 public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, InterfaceC2138 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public static final String f214;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public static final Class[] f215;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static final ThreadLocal f216;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static final C0171 f217;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static final C2380 f218;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final ArrayList f219;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C2103 f220;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final ArrayList f221;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final ArrayList f222;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final int[] f223;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final int[] f224;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public boolean f225;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f226;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final int[] f227;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public View f228;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public View f229;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public ViewTreeObserverOnPreDrawListenerC0865 f230;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public boolean f231;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public C3669 f232;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public boolean f233;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public Drawable f234;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public ViewGroup.OnHierarchyChangeListener f235;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public C0094 f236;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final C2139 f237;
 
     static {
@@ -165,13 +141,11 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static Rect m59() {
         Rect rect = (Rect) f218.mo1312();
         return rect == null ? new Rect() : rect;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static void m60(int i, Rect rect, Rect rect2, C0864 c0864, int i2, int i3) {
         int iWidth;
         int iHeight;
@@ -215,7 +189,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         rect2.set(iWidth, iHeight, i2 + iWidth, i3 + iHeight);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static C0864 m61(View view) {
         C0864 c0864 = (C0864) view.getLayoutParams();
         if (!c0864.f3278) {
@@ -249,7 +222,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         return c0864;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static void m62(View view, int i) {
         C0864 c0864 = (C0864) view.getLayoutParams();
         int i2 = c0864.f3285;
@@ -260,7 +232,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static void m63(View view, int i) {
         C0864 c0864 = (C0864) view.getLayoutParams();
         int i2 = c0864.f3286;
@@ -918,7 +889,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
     }
 
     @Override // p000.InterfaceC2138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo11(View view, int i, int i2, int i3, int i4, int i5, int[] iArr) {
         AbstractC0861 abstractC0861;
         int childCount = getChildCount();
@@ -948,13 +918,11 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo12(View view, int i, int i2, int i3, int i4, int i5) {
         mo11(view, i, i2, i3, i4, 0, this.f224);
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final boolean mo13(View view, View view2, int i, int i2) {
         int childCount = getChildCount();
         boolean z = false;
@@ -982,7 +950,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo14(View view, View view2, int i, int i2) {
         C2139 c2139 = this.f237;
         if (i2 == 1) {
@@ -998,7 +965,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo15(View view, int i) {
         C2139 c2139 = this.f237;
         if (i == 1) {
@@ -1026,7 +992,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo16(View view, int i, int i2, int[] iArr, int i3) {
         AbstractC0861 abstractC0861;
         int childCount = getChildCount();
@@ -1055,7 +1020,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m64(C0864 c0864, Rect rect, int i, int i2) {
         int width = getWidth();
         int height = getHeight();
@@ -1064,7 +1028,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         rect.set(iMax, iMax2, i + iMax, i2 + iMax2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m65(View view, Rect rect, boolean z) {
         if (view.isLayoutRequested() || view.getVisibility() == 8) {
             rect.setEmpty();
@@ -1075,7 +1038,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final ArrayList m66(View view) {
         C2705 c2705 = (C2705) this.f220.f6938;
         int i = c2705.f8716;
@@ -1097,7 +1059,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         return arrayList3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m67(Rect rect, View view) {
         ThreadLocal threadLocal = AbstractC3583.f11213;
         rect.set(0, 0, view.getWidth(), view.getHeight());
@@ -1121,7 +1082,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         rect.set((int) (rectF.left + 0.5f), (int) (rectF.top + 0.5f), (int) (rectF.right + 0.5f), (int) (rectF.bottom + 0.5f));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final int m68(int i) {
         int[] iArr = this.f227;
         if (iArr == null) {
@@ -1135,7 +1095,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final boolean m69(View view, int i, int i2) {
         C2380 c2380 = f218;
         Rect rectM59 = m59();
@@ -1150,7 +1109,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
 
     /* JADX WARN: Code duplicated, block: B:104:0x026c  */
     /* JADX WARN: Code duplicated, block: B:33:0x00de  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final void m70(int i) {
         int i2;
         Rect rect;
@@ -1363,7 +1321,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final void m71(View view, int i) {
         int i2;
         C0864 c0864 = (C0864) view.getLayoutParams();
@@ -1452,7 +1409,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         view.layout(iMax, iMax2, measuredWidth2 + iMax, measuredHeight2 + iMax2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final boolean m72(MotionEvent motionEvent, int i) {
         int actionMasked = motionEvent.getActionMasked();
         ArrayList arrayList = this.f221;
@@ -1539,7 +1495,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeMthRegion(RegionMaker.java:49)
         	at jadx.core.dex.visitors.regions.RegionMakerVisitor.visit(RegionMakerVisitor.java:25)
         */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final void m73() {
         /*
             Method dump skipped, instruction units count: 400
@@ -1548,7 +1503,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         throw new UnsupportedOperationException("Method not decompiled: androidx.coordinatorlayout.widget.CoordinatorLayout.m73():void");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final void m74(boolean z) {
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
@@ -1572,7 +1526,6 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         this.f225 = false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final void m75() {
         Field field = AbstractC3578.f11184;
         if (!getFitsSystemWindows()) {

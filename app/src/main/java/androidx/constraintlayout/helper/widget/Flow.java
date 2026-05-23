@@ -22,7 +22,6 @@ import p000.C1506;
 /* JADX INFO: loaded from: classes.dex */
 public class Flow extends AbstractC3603 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final C1367 f196;
 
     public Flow(Context context, AttributeSet attributeSet) {
@@ -252,7 +251,6 @@ public class Flow extends AbstractC3603 {
     }
 
     @Override // p000.AbstractC0781
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void mo51(C0793 c0793, boolean z) {
         C1367 c1367 = this.f196;
         int i = c1367.f4895;
@@ -389,7 +387,6 @@ public class Flow extends AbstractC3603 {
     /* JADX WARN: Code duplicated, block: B:99:0x0184  */
     /* JADX WARN: Multi-variable type inference failed */
     @Override // p000.AbstractC3603
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void mo52(C1367 c1367, int i, int i2) {
         C0779 c0779;
         C0779 c07710;

@@ -3,28 +3,22 @@ package p000;
 import android.graphics.Rect;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤝᲀᤞᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3655 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C3669 f11424;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public C1646[] f11425;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final Rect[][] f11426;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Rect[][] f11427;
 
     public AbstractC3655() {
         this(new C3669());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m5253() {
         C1646[] c1646Arr = this.f11425;
         if (c1646Arr != null) {
@@ -53,10 +47,8 @@ public abstract class AbstractC3655 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public abstract C3669 mo5245();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public void mo5252(C3669 c3669) {
         for (int i = 1; i <= 512; i <<= 1) {
             List<Rect> listMo5263 = c3669.f11452.mo5263(i);
@@ -69,7 +61,6 @@ public abstract class AbstractC3655 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public void mo5251(int i, C1646 c1646) {
         if (this.f11425 == null) {
             this.f11425 = new C1646[10];
@@ -81,10 +72,8 @@ public abstract class AbstractC3655 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public abstract void mo5246(C1646 c1646);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public abstract void mo5247(C1646 c1646);
 
     public AbstractC3655(C3669 c3669) {
@@ -94,15 +83,12 @@ public abstract class AbstractC3655 {
         mo5252(c3669);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public void mo5248(C1646 c1646) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public void mo5249(C1646 c1646) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public void mo5250(C1646 c1646) {
     }
 }

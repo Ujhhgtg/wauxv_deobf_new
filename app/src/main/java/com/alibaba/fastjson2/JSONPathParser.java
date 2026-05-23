@@ -31,7 +31,6 @@ class JSONPathParser {
     List<JSONPathSegment> segments;
     boolean strict;
 
-    /* JADX INFO: renamed from: com.alibaba.fastjson2.JSONPathParser$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$alibaba$fastjson2$JSONPathFilter$Operator;

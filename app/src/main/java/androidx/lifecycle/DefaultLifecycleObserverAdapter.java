@@ -10,10 +10,8 @@ import p000.InterfaceC1777;
 /* JADX INFO: loaded from: classes.dex */
 public final class DefaultLifecycleObserverAdapter implements InterfaceC1774 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final InterfaceC0998 f292;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final InterfaceC1774 f293;
 
     public DefaultLifecycleObserverAdapter(InterfaceC0998 interfaceC0998, InterfaceC1774 interfaceC1774) {
@@ -22,7 +20,6 @@ public final class DefaultLifecycleObserverAdapter implements InterfaceC1774 {
     }
 
     @Override // p000.InterfaceC1774
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo0(InterfaceC1777 interfaceC1777, EnumC1769 enumC1769) {
         int i = AbstractC0999.f3654[enumC1769.ordinal()];
         if (i == 3) {

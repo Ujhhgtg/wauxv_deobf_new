@@ -7,21 +7,16 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲈᲀᛸᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0989 implements InterfaceC1607 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final byte[] f3606 = "Exif\u0000\u0000".getBytes(Charset.forName("UTF-8"));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final byte[] f3607 = "MPF".getBytes(Charset.forName("UTF-8"));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final int[] f3608 = {0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static int m2552(InterfaceC0988 interfaceC0988, C1867 c1867) {
         try {
             int iMo1102 = interfaceC0988.mo1102();
@@ -48,7 +43,6 @@ public final class C0989 implements InterfaceC1607 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static ImageHeaderParser$ImageType m2553(InterfaceC0988 interfaceC0988) {
         try {
             int iMo1102 = interfaceC0988.mo1102();
@@ -122,7 +116,6 @@ public final class C0989 implements InterfaceC1607 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static boolean m2554(InterfaceC0988 interfaceC0988, C1867 c1867) {
         boolean zM2555;
         if (m2553(interfaceC0988) == ImageHeaderParser$ImageType.JPEG) {
@@ -157,7 +150,6 @@ public final class C0989 implements InterfaceC1607 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static boolean m2555(byte[] bArr, int i, byte[] bArr2) {
         boolean z = (bArr == null || bArr2 == null || i <= bArr2.length) ? false : true;
         if (z) {
@@ -170,7 +162,6 @@ public final class C0989 implements InterfaceC1607 {
         return z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static int m2556(InterfaceC0988 interfaceC0988, int i) {
         short sMo1106;
         int iMo1102;
@@ -205,7 +196,6 @@ public final class C0989 implements InterfaceC1607 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static int m2557(InterfaceC0988 interfaceC0988, byte[] bArr, int i) {
         ByteOrder byteOrder;
         int iMo1111 = interfaceC0988.mo1111(i, bArr);
@@ -276,14 +266,12 @@ public final class C0989 implements InterfaceC1607 {
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final ImageHeaderParser$ImageType mo2558(ByteBuffer byteBuffer) {
         AbstractC1460.m3210(byteBuffer, "Argument must not be null");
         return m2553(new C0505(2, byteBuffer));
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final boolean mo2559(ByteBuffer byteBuffer, C1867 c1867) {
         C0505 c0505 = new C0505(2, byteBuffer);
         AbstractC1460.m3210(c1867, "Argument must not be null");
@@ -291,7 +279,6 @@ public final class C0989 implements InterfaceC1607 {
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int mo2560(ByteBuffer byteBuffer, C1867 c1867) {
         C0505 c0505 = new C0505(2, byteBuffer);
         AbstractC1460.m3210(c1867, "Argument must not be null");
@@ -299,13 +286,11 @@ public final class C0989 implements InterfaceC1607 {
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final ImageHeaderParser$ImageType mo2561(InputStream inputStream) {
         return m2553(new C0094(13, inputStream));
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int mo2562(InputStream inputStream, C1867 c1867) {
         C0094 c0094 = new C0094(13, inputStream);
         AbstractC1460.m3210(c1867, "Argument must not be null");
@@ -313,7 +298,6 @@ public final class C0989 implements InterfaceC1607 {
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean mo2563(InputStream inputStream, C1867 c1867) {
         AbstractC1460.m3210(inputStream, "Argument must not be null");
         C0094 c0094 = new C0094(13, inputStream);

@@ -5,12 +5,10 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import java.security.MessageDigest;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲀᤝᲁᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0578 extends AbstractC0426 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final byte[] f2351 = "com.bumptech.glide.load.resource.bitmap.CenterCrop".getBytes(InterfaceC1749.f5849);
 
     @Override // p000.InterfaceC1749
@@ -24,13 +22,11 @@ public final class C0578 extends AbstractC0426 {
     }
 
     @Override // p000.InterfaceC1749
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo2001(MessageDigest messageDigest) {
         messageDigest.update(f2351);
     }
 
     @Override // p000.AbstractC0426
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final Bitmap mo1631(InterfaceC0424 interfaceC0424, Bitmap bitmap, int i, int i2) {
         float width;
         float height;

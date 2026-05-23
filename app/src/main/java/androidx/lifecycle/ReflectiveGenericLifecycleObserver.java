@@ -14,10 +14,8 @@ import p000.InterfaceC1777;
 @Deprecated
 class ReflectiveGenericLifecycleObserver implements InterfaceC1774 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final InterfaceC1776 f294;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C0712 f295;
 
     public ReflectiveGenericLifecycleObserver(InterfaceC1776 interfaceC1776) {
@@ -29,7 +27,6 @@ class ReflectiveGenericLifecycleObserver implements InterfaceC1774 {
     }
 
     @Override // p000.InterfaceC1774
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo0(InterfaceC1777 interfaceC1777, EnumC1769 enumC1769) {
         HashMap map = this.f295.f2712;
         List list = (List) map.get(enumC1769);

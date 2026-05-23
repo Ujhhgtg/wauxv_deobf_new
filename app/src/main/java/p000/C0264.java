@@ -5,18 +5,14 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲈᤝᲀᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C0264 extends C2705 implements Map {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public C0259 f1458;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public C0261 f1459;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public C0263 f1460;
 
     public C0264(C0264 c0264) {
@@ -65,7 +61,6 @@ public class C0264 extends C2705 implements Map {
         return c0264;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final boolean m1365(Collection collection) {
         Iterator it = collection.iterator();
         while (it.hasNext()) {
@@ -76,7 +71,6 @@ public class C0264 extends C2705 implements Map {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final boolean m1366(Collection collection) {
         int i = this.f8716;
         Iterator it = collection.iterator();

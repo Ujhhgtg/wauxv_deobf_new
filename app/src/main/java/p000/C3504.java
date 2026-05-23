@@ -5,15 +5,12 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import java.util.stream.IntStream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲀᲈᤞᤝᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3504 implements Spannable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean f11004 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Spannable f11005;
 
     public C3504(Spannable spannable) {
@@ -87,7 +84,6 @@ public final class C3504 implements Spannable {
         return this.f11005.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m5096() {
         Spannable spannable = this.f11005;
         if (!this.f11004) {

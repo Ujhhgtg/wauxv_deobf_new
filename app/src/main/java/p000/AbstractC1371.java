@@ -21,18 +21,14 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᛸᤞᲇᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1371 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C1316 f4936 = new C1316(2);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C1369 f4937 = new C1369();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C0408 m3090(Context context, List list) {
         String str;
         Typeface typefaceM5047;
@@ -57,7 +53,6 @@ public abstract class AbstractC1371 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static ProviderInfo m3091(PackageManager packageManager, C1372 c1372, Resources resources) {
         C1369 c1369 = f4937;
         C1316 c1316 = f4936;
@@ -117,7 +112,6 @@ public abstract class AbstractC1371 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static C1383[] m3092(Context context, C1372 c1372, String str) {
         AbstractC0743.m2172("FontProvider.query");
         try {

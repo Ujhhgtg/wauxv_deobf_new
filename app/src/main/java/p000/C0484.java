@@ -4,12 +4,10 @@ import com.alibaba.fastjson2.internal.asm.Opcodes;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntFunction;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲇᤝᲈᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0484 implements IntFunction {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f2099;
 
     public /* synthetic */ C0484(int i) {

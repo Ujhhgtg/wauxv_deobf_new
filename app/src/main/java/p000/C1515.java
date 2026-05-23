@@ -4,18 +4,14 @@ import android.os.Handler;
 import android.os.Looper;
 import java.util.concurrent.CancellationException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲀᤝᲈᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1515 extends AbstractC0878 implements InterfaceC1006 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Handler f5342;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean f5343;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final C1515 f5344;
 
     public C1515(Handler handler, boolean z) {
@@ -60,7 +56,6 @@ public final class C1515 extends AbstractC0878 implements InterfaceC1006 {
     }
 
     @Override // p000.InterfaceC1006
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public final void mo2577(long j, C0558 c0558) {
         RunnableC1324 runnableC1324 = new RunnableC1324(c0558, 1, this);
         if (j > 4611686018427387903L) {
@@ -74,7 +69,6 @@ public final class C1515 extends AbstractC0878 implements InterfaceC1006 {
     }
 
     @Override // p000.AbstractC0878
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ */
     public final void mo2392(InterfaceC0877 interfaceC0877, Runnable runnable) {
         if (this.f5342.post(runnable)) {
             return;
@@ -83,12 +77,10 @@ public final class C1515 extends AbstractC0878 implements InterfaceC1006 {
     }
 
     @Override // p000.AbstractC0878
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ */
     public final boolean mo2393(InterfaceC0877 interfaceC0877) {
         return (this.f5343 && AbstractC2207.m4087(Looper.myLooper(), this.f5342.getLooper())) ? false : true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public final void m3250(InterfaceC0877 interfaceC0877, Runnable runnable) {
         CancellationException cancellationException = new CancellationException("The task was rejected, the handler underlying the dispatcher '" + this + "' was closed");
         InterfaceC1698 interfaceC1698 = (InterfaceC1698) interfaceC0877.mo942(C1133.f4207);

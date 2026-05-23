@@ -203,7 +203,6 @@ public final class Headers implements Iterable<C2315>, InterfaceC1737 {
             return strArr[length + 1];
         }
 
-        /* JADX INFO: renamed from: -deprecated_of, reason: not valid java name */
         public final Headers m816deprecated_of(String... strArr) {
             return of((String[]) Arrays.copyOf(strArr, strArr.length));
         }
@@ -241,7 +240,6 @@ public final class Headers implements Iterable<C2315>, InterfaceC1737 {
         private Companion() {
         }
 
-        /* JADX INFO: renamed from: -deprecated_of, reason: not valid java name */
         public final Headers m815deprecated_of(Map<String, String> map) {
             return of(map);
         }
@@ -272,7 +270,6 @@ public final class Headers implements Iterable<C2315>, InterfaceC1737 {
         return Companion.of(map);
     }
 
-    /* JADX INFO: renamed from: -deprecated_size, reason: not valid java name */
     public final int m814deprecated_size() {
         return size();
     }

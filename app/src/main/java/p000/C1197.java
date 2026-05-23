@@ -2,12 +2,10 @@ package p000;
 
 import java.nio.ByteBuffer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲀᲈᲇᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1197 extends AbstractC1195 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final double f4335;
 
     public C1197(double d) {
@@ -16,7 +14,6 @@ public final class C1197 extends AbstractC1195 {
     }
 
     @Override // p000.AbstractC1460
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public final int mo961(C1353 c1353) {
         c1353.m3078(1);
         double d = this.f4335;

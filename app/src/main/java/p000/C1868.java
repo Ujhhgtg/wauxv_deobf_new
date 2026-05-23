@@ -7,39 +7,28 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᛸᲈᲀᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1868 implements InterfaceC0424 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final Bitmap.Config f6203 = Bitmap.Config.ARGB_8888;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C2716 f6204;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Set f6205;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C1227 f6206;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final long f6207;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public long f6208;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public int f6209;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public int f6210;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int f6211;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int f6212;
 
     public C1868(long j) {
@@ -54,12 +43,10 @@ public final class C1868 implements InterfaceC0424 {
         this.f6206 = new C1227(26);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m3646() {
         Log.v("LruBitmapPool", "Hits=" + this.f6209 + ", misses=" + this.f6210 + ", puts=" + this.f6211 + ", evictions=" + this.f6212 + ", currentSize=" + this.f6208 + ", maxSize=" + this.f6207 + "\nStrategy=" + this.f6204);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final synchronized Bitmap m3647(int i, int i2, Bitmap.Config config) {
         Bitmap bitmapM4724;
         try {
@@ -100,7 +87,6 @@ public final class C1868 implements InterfaceC0424 {
     }
 
     @Override // p000.InterfaceC0424
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final Bitmap mo1503(int i, int i2, Bitmap.Config config) {
         Bitmap bitmapM3647 = m3647(i, i2, config);
         if (bitmapM3647 != null) {
@@ -113,7 +99,6 @@ public final class C1868 implements InterfaceC0424 {
     }
 
     @Override // p000.InterfaceC0424
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final synchronized void mo1504(Bitmap bitmap) {
         try {
             if (bitmap == null) {
@@ -160,7 +145,6 @@ public final class C1868 implements InterfaceC0424 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final synchronized void m3648(long j) {
         while (this.f6208 > j) {
             try {
@@ -200,7 +184,6 @@ public final class C1868 implements InterfaceC0424 {
     }
 
     @Override // p000.InterfaceC0424
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final Bitmap mo1513(int i, int i2, Bitmap.Config config) {
         Bitmap bitmapM3647 = m3647(i, i2, config);
         if (bitmapM3647 != null) {
@@ -214,7 +197,6 @@ public final class C1868 implements InterfaceC0424 {
     }
 
     @Override // p000.InterfaceC0424
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public final void mo1515(int i) {
         if (Log.isLoggable("LruBitmapPool", 3)) {
             Log.d("LruBitmapPool", "trimMemory, level=" + i);
@@ -227,7 +209,6 @@ public final class C1868 implements InterfaceC0424 {
     }
 
     @Override // p000.InterfaceC0424
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final void mo1516() {
         if (Log.isLoggable("LruBitmapPool", 3)) {
             Log.d("LruBitmapPool", "clearMemory");

@@ -5,15 +5,12 @@ import android.view.View;
 import android.widget.ImageView;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᤞᲇᲁᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1046 extends AbstractC1966 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public EnumC1256 f3814;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public int f3815;
 
     private final float getStartAngle() {
@@ -76,7 +73,6 @@ public final class C1046 extends AbstractC1966 {
     }
 
     @Override // p000.AbstractC1966
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void mo2615() {
         C1046 c1046 = this;
         ArrayList<ValueAnimator> arrayList = c1046.f6532;

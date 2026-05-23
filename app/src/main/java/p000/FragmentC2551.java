@@ -6,15 +6,12 @@ import android.app.Fragment;
 import android.os.Build;
 import android.os.Bundle;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᤝᛸᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class FragmentC2551 extends Fragment {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final /* synthetic */ int f8107 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C1744 f8108;
 
     @Override // android.app.Fragment
@@ -68,14 +65,12 @@ public class FragmentC2551 extends Fragment {
         m4564(EnumC1769.ON_STOP);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4564(EnumC1769 enumC1769) {
         if (Build.VERSION.SDK_INT < 29) {
             AbstractC2549.m4563(getActivity(), enumC1769);
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᤝᛸᲇᲁ$ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     /* JADX INFO: compiled from: obf */
     public static final class C2552 implements Application.ActivityLifecycleCallbacks {
         public static final C2550 Companion = new C2550();

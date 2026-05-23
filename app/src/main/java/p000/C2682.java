@@ -7,18 +7,14 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Shader;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᲈᤞᲇᤝᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2682 extends AbstractC2686 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C2684 f8656;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final float f8657;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final float f8658;
 
     public C2682(C2684 c2684, float f, float f2) {
@@ -28,7 +24,6 @@ public final class C2682 extends AbstractC2686 {
     }
 
     @Override // p000.AbstractC2686
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo4694(Matrix matrix, C2676 c2676, int i, Canvas canvas) {
         C2684 c2684 = this.f8656;
         float f = c2684.f8667;
@@ -57,7 +52,6 @@ public final class C2682 extends AbstractC2686 {
         canvas.restore();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final float m4695() {
         C2684 c2684 = this.f8656;
         return (float) Math.toDegrees(Math.atan((c2684.f8667 - this.f8658) / (c2684.f8666 - this.f8657)));

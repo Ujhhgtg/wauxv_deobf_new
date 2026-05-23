@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲇᤞᲁᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2287 extends AbstractC1834 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final InterfaceC3450[] f7379;
 
     public C2287(int i) {
@@ -14,7 +12,6 @@ public final class C2287 extends AbstractC1834 {
     }
 
     @Override // p000.InterfaceC3407
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo1214() {
         StringBuilder sb = new StringBuilder();
         int i = 0;
@@ -30,7 +27,6 @@ public final class C2287 extends AbstractC1834 {
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final void mo3587(C2704 c2704) {
         int i = 0;
         while (true) {
@@ -45,7 +41,6 @@ public final class C2287 extends AbstractC1834 {
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final AbstractC1834 mo3588() {
         InterfaceC3450[] interfaceC3450Arr = this.f7379;
         C2287 c2287 = new C2287(interfaceC3450Arr.length);
@@ -54,7 +49,6 @@ public final class C2287 extends AbstractC1834 {
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final InterfaceC3450 mo3589(int i) {
         InterfaceC3450 interfaceC3450 = this.f7379[i];
         if (interfaceC3450 != null) {
@@ -64,7 +58,6 @@ public final class C2287 extends AbstractC1834 {
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final void mo3591(C3448 c3448) {
         InterfaceC3450[] interfaceC3450Arr = this.f7379;
         int length = interfaceC3450Arr.length;
@@ -81,19 +74,16 @@ public final class C2287 extends AbstractC1834 {
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public final AbstractC1834 mo3592(AbstractC1834 abstractC1834) {
         return abstractC1834 instanceof C2287 ? m4157((C2287) abstractC1834) : abstractC1834.mo3592(this);
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final C1835 mo3593(AbstractC1834 abstractC1834, int i) {
         return new C1835(this.f7379.length).mo3593(abstractC1834, i);
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final void mo3594(int i, InterfaceC3450 interfaceC3450) {
         int i2;
         InterfaceC3450 interfaceC3451;
@@ -119,12 +109,10 @@ public final class C2287 extends AbstractC1834 {
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public final void mo3595(C2525 c2525) {
         mo3594(c2525.f8055, c2525);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final C2287 m4157(C2287 c2287) {
         try {
             return AbstractC1270.m2986(this, c2287);
@@ -138,7 +126,6 @@ public final class C2287 extends AbstractC1834 {
     }
 
     @Override // p000.AbstractC1834
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final C2287 mo3590() {
         return this;
     }

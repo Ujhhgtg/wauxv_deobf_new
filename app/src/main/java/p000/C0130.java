@@ -4,15 +4,12 @@ import android.content.Context;
 import android.view.View;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0130 extends C1949 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final /* synthetic */ int f1096 = 1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final /* synthetic */ C0136 f1097;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -29,7 +26,6 @@ public final class C0130 extends C1949 {
     }
 
     @Override // p000.C1949
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void mo1135() {
         switch (1) {
             case 0:

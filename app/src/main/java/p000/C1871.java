@@ -1,15 +1,12 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᤝᛸᲀᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1871 extends C1870 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C1216 f6218;
 
     @Override // p000.C1870
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final int mo3650(Object obj) {
         InterfaceC2568 interfaceC2568 = (InterfaceC2568) obj;
         if (interfaceC2568 == null) {
@@ -19,7 +16,6 @@ public final class C1871 extends C1870 {
     }
 
     @Override // p000.C1870
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo3651(Object obj, Object obj2) {
         InterfaceC2568 interfaceC2568 = (InterfaceC2568) obj2;
         C1216 c1216 = this.f6218;

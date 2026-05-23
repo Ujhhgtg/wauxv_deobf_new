@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᲈᛸᲁᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2426 extends AbstractC0552 implements InterfaceC1742 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final boolean f7717;
 
     public AbstractC2426(Object obj, Class cls, String str, String str2, int i) {
@@ -37,12 +35,10 @@ public abstract class AbstractC2426 extends AbstractC0552 implements InterfaceC1
     }
 
     @Override // p000.AbstractC0552
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final InterfaceC1735 mo1930() {
         return this.f7717 ? this : super.mo1930();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final InterfaceC1742 m4386() {
         if (this.f7717) {
             throw new UnsupportedOperationException("Kotlin reflection is not yet supported for synthetic Java properties. Please follow/upvote https://youtrack.jetbrains.com/issue/KT-55980");

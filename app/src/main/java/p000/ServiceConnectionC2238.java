@@ -22,21 +22,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᤞᲁᤝᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ServiceConnectionC2238 implements Handler.Callback, ServiceConnection {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Context f7248;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Handler f7249;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final HashMap f7250 = new HashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public HashSet f7251 = new HashSet();
 
     public ServiceConnectionC2238(Context context) {
@@ -180,7 +175,6 @@ public final class ServiceConnectionC2238 implements Handler.Callback, ServiceCo
         this.f7249.obtainMessage(2, componentName).sendToTarget();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4146(C2237 c2237) {
         boolean z;
         ArrayDeque arrayDeque = c2237.f7246;
@@ -235,7 +229,6 @@ public final class ServiceConnectionC2238 implements Handler.Callback, ServiceCo
         m4147(c2237);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4147(C2237 c2237) {
         ComponentName componentName = c2237.f7243;
         ArrayDeque arrayDeque = c2237.f7246;

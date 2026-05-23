@@ -4,15 +4,12 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᤝᲈᲀᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1891 extends AbstractC0065 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f6256;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C1890 f6257;
 
     public /* synthetic */ C1891(C1890 c1890, int i) {
@@ -176,7 +173,6 @@ public final class C1891 extends AbstractC0065 {
     }
 
     @Override // p000.AbstractC0065
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo946() {
         switch (this.f6256) {
             case 0:

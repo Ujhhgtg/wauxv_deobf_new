@@ -12,10 +12,8 @@ import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
 import java.nio.charset.CodingErrorAction;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲁᤞᲀᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1328 extends AbstractC2209 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static void m3042(File file, File file2) {
         if (!file.exists()) {
             throw new C1318(file, null, "The source file doesn't exist.");
@@ -61,7 +59,6 @@ public abstract class AbstractC1328 extends AbstractC2209 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public static String m3043(File file) {
         InputStreamReader inputStreamReader = new InputStreamReader(new FileInputStream(file), AbstractC0599.f2413);
         try {
@@ -83,7 +80,6 @@ public abstract class AbstractC1328 extends AbstractC2209 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public static void m3044(File file, String str) {
         Charset charset = AbstractC0599.f2413;
         FileOutputStream fileOutputStream = new FileOutputStream(file);
@@ -100,7 +96,6 @@ public abstract class AbstractC1328 extends AbstractC2209 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static final void m3045(FileOutputStream fileOutputStream, String str, Charset charset) throws IOException {
         if (str.length() < 16384) {
             fileOutputStream.write(str.getBytes(charset));

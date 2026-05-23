@@ -4,12 +4,10 @@ import android.os.Handler;
 import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᲁᤝᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ExecutorC2560 implements Executor {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Handler f8126;
 
     public ExecutorC2560(Handler handler) {

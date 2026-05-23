@@ -5,11 +5,9 @@ import android.content.Intent;
 import com.kongzue.dialogx.interfaces.AbstractC0027;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲇᲈᤝᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2297 implements InterfaceC0377 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m4163(AbstractC0027 abstractC0027, String str) {
         Activity activityM4033 = AbstractC2203.m4033();
         String[] strArr = AbstractC1574.f5469;

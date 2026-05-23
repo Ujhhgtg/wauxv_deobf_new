@@ -16,7 +16,6 @@ import p000.MenuItemC1946;
 /* JADX INFO: loaded from: classes.dex */
 public final class ExpandedMenuView extends ListView implements InterfaceC1943, InterfaceC1957, AdapterView.OnItemClickListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final int[] f12 = {16842964, 16843049};
 
     public ExpandedMenuView(Context context, AttributeSet attributeSet) {
@@ -49,7 +48,6 @@ public final class ExpandedMenuView extends ListView implements InterfaceC1943, 
     }
 
     @Override // p000.InterfaceC1943
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final boolean mo6(MenuItemC1946 menuItemC1946) {
         throw null;
     }

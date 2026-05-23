@@ -492,7 +492,6 @@ public final class Http2Connection implements Closeable {
         	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
         	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
-        /* JADX INFO: renamed from: invoke, reason: collision with other method in class */
         public void m902invoke() throws Throwable {
             ErrorCode errorCode;
             ErrorCode errorCode2 = ErrorCode.INTERNAL_ERROR;

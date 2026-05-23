@@ -3,15 +3,12 @@ package p000;
 import android.graphics.Typeface;
 import com.google.android.material.chip.Chip;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᤞᲇᲀᤝᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0691 extends AbstractC2209 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2577;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ Object f2578;
 
     public /* synthetic */ C0691(int i, Object obj) {
@@ -20,7 +17,6 @@ public final class C0691 extends AbstractC2209 {
     }
 
     @Override // p000.AbstractC2209
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final void mo1936(int i) {
         switch (this.f2577) {
             case 0:
@@ -37,7 +33,6 @@ public final class C0691 extends AbstractC2209 {
     }
 
     @Override // p000.AbstractC2209
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public final void mo1937(Typeface typeface, boolean z) {
         switch (this.f2577) {
             case 0:
@@ -61,7 +56,6 @@ public final class C0691 extends AbstractC2209 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     private final void m2078(int i) {
     }
 }

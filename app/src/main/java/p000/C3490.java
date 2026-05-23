@@ -1,21 +1,17 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲀᤝᤞᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3490 extends AbstractC2396 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final C3490 f10990 = new C3490(C3491.f10991);
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final int mo928(Object obj) {
         return ((C3488) obj).f10987.length;
     }
 
     @Override // p000.AbstractC0739, p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final void mo930(InterfaceC0766 interfaceC0766, int i, Object obj) {
         C3489 c3489 = (C3489) obj;
         short sMo2522 = interfaceC0766.mo2229(this.f7659, i).mo2522();
@@ -27,7 +23,6 @@ public final class C3490 extends AbstractC2396 {
     }
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final Object mo931(Object obj) {
         short[] sArr = ((C3488) obj).f10987;
         C3489 c3489 = new C3489();
@@ -38,13 +33,11 @@ public final class C3490 extends AbstractC2396 {
     }
 
     @Override // p000.AbstractC2396
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final Object mo1642() {
         return new C3488(new short[0]);
     }
 
     @Override // p000.AbstractC2396
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final void mo1643(InterfaceC0767 interfaceC0767, Object obj, int i) {
         short[] sArr = ((C3488) obj).f10987;
         for (int i2 = 0; i2 < i; i2++) {

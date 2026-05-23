@@ -19,18 +19,14 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 import me.hd.wauxv.ui.setting.view.ModuleRecyclerView;
 import me.hd.wauxv.ui.setting.view.ModuleTabLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲀᲈᲁᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnClickListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f3174;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ Object f3175;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ Object f3176;
 
     public /* synthetic */ ViewOnClickListenerC0812(Object obj, int i, Object obj2) {

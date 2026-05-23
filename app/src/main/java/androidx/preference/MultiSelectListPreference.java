@@ -27,7 +27,6 @@ public class MultiSelectListPreference extends DialogPreference {
     }
 
     @Override // androidx.preference.Preference
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final Object mo105(TypedArray typedArray, int i) {
         CharSequence[] textArray = typedArray.getTextArray(i);
         HashSet hashSet = new HashSet();

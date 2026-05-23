@@ -2,7 +2,6 @@ package p000;
 
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲈᲇᛸᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public enum EnumC1122 {
@@ -16,7 +15,6 @@ public enum EnumC1122 {
     DAYS(TimeUnit.DAYS);
 
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final TimeUnit f4194;
 
     EnumC1122(TimeUnit timeUnit) {

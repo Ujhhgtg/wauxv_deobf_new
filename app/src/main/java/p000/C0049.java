@@ -2,24 +2,18 @@ package p000;
 
 import java.nio.ByteBuffer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0049 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public int f979;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public ByteBuffer f980;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public int f981;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f982;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C2102 f983;
 
     public C0049() {
@@ -29,12 +23,10 @@ public final class C0049 {
         this.f983 = C2102.f6930;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int m909(int i) {
         return this.f980.getInt(i) + i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final int m910(int i) {
         if (i < this.f982) {
             return this.f980.getShort(this.f981 + i);
@@ -42,7 +34,6 @@ public final class C0049 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m911(int i, ByteBuffer byteBuffer) {
         this.f980 = byteBuffer;
         if (byteBuffer == null) {
@@ -57,7 +48,6 @@ public final class C0049 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final String m912(int i) {
         ByteBuffer byteBuffer = this.f980;
         int i2 = byteBuffer.getInt(i) + i;
@@ -192,19 +182,16 @@ public final class C0049 {
         return new String(cArr2, 0, i14);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m913(int i) {
         int i2 = i + this.f979;
         return this.f980.getInt(i2) + i2 + 4;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int m914(int i) {
         int i2 = i + this.f979;
         return this.f980.getInt(this.f980.getInt(i2) + i2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public C0049 m915(int i) {
         C0049 c0049 = new C0049();
         int iM910 = m910(4);

@@ -127,7 +127,6 @@ public class d {
         _LAST_FIELD
     }
 
-    /* JADX INFO: renamed from: com.umeng.commonsdk.config.d$d, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public enum EnumC0035d {
         share_device_id,

@@ -11,39 +11,28 @@ import com.kongzue.dialogx.interfaces.AbstractC0027;
 import com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout;
 import java.lang.reflect.Field;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲈᤞᛸᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1349 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public boolean f4826;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public DialogXBaseRelativeLayout f4827;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public C0094 f4828;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public AbstractC0027 f4829;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public ViewOnLayoutChangeListenerC0445 f4830;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public C1348 f4831;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public int f4832;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public boolean f4833;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public ViewTreeObserverOnGlobalLayoutListenerC1347 f4834;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m3056(C1348 c1348) {
         C0094 c0094 = this.f4828;
         if (c0094 == null) {
@@ -105,7 +94,6 @@ public final class C1349 {
         dialogXBaseRelativeLayout2.m765(rect2.left, rect2.top, rect2.right, rect2.bottom);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m3057(C3669 c3669, C1348 c1348) {
         int iM2642;
         int iM2643;
@@ -187,7 +175,6 @@ public final class C1349 {
         m3056(c1348);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final View m3058() {
         AbstractC0027 abstractC0027 = this.f4829;
         Activity activityM740 = abstractC0027 == null ? AbstractC0027.m740() : abstractC0027.m754();
@@ -197,7 +184,6 @@ public final class C1349 {
         return activityM740.getWindow().getDecorView();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int m3059() {
         if (!m3061() && m3058() != null) {
             int i = Build.VERSION.SDK_INT;
@@ -216,7 +202,6 @@ public final class C1349 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m3060() {
         if (m3061() || m3058() == null) {
             return 0;
@@ -235,7 +220,6 @@ public final class C1349 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean m3061() {
         AbstractC0027 abstractC0027 = this.f4829;
         Activity activityM740 = abstractC0027 == null ? AbstractC0027.m740() : abstractC0027.m754();

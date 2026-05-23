@@ -16,54 +16,38 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤝᲀᤞᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3656 extends C3665 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static boolean f11428 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static Method f11429;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static Class f11430;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static Field f11431;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static Field f11432;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final WindowInsets f11433;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C1646[] f11434;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public C1646 f11435;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public C3669 f11436;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public C1646 f11437;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public int f11438;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public int f11439;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public int f11440;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public Rect[][] f11441;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public Rect[][] f11442;
 
     public AbstractC3656(C3669 c3669, WindowInsets windowInsets) {
@@ -74,7 +58,6 @@ public abstract class AbstractC3656 extends C3665 {
         this.f11433 = windowInsets;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     private C1079 m5254(View view) {
         Display display;
         if (view == null || (display = view.getDisplay()) == null) {
@@ -92,7 +75,6 @@ public abstract class AbstractC3656 extends C3665 {
         return C1079.m2647(point.x, point.y, false, c2604M4132 != null ? c2604M4132.f8474 : 0, c2604M4133 != null ? c2604M4133.f8474 : 0, c2604M4134 != null ? c2604M4134.f8474 : 0, c2604M4135 != null ? c2604M4135.f8474 : 0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     private static List<Rect> m5255(Rect[][] rectArr, int i) {
         Rect[] rectArr2;
         Rect[] rectArr3 = null;
@@ -111,7 +93,6 @@ public abstract class AbstractC3656 extends C3665 {
         return rectArr3 == null ? Collections.EMPTY_LIST : Arrays.asList(rectArr3);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     private Rect[] m5256(C1646 c1646) {
         ArrayList arrayList = new ArrayList();
         int i = c1646.f5580;
@@ -136,7 +117,6 @@ public abstract class AbstractC3656 extends C3665 {
     }
 
     @SuppressLint({"WrongConstant"})
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     private C1646 m5257(int i, boolean z) {
         C1646 c1646M3374 = C1646.f5579;
         for (int i2 = 1; i2 <= 512; i2 <<= 1) {
@@ -147,13 +127,11 @@ public abstract class AbstractC3656 extends C3665 {
         return c1646M3374;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     private C1646 m5258() {
         C3669 c3669 = this.f11436;
         return c3669 != null ? c3669.f11452.mo5284() : C1646.f5579;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     private C1646 m5259(View view) {
         if (Build.VERSION.SDK_INT >= 30) {
             throw new UnsupportedOperationException("getVisibleInsets() should not be called on API >= 30. Use WindowInsets.isVisible() instead.");
@@ -182,7 +160,6 @@ public abstract class AbstractC3656 extends C3665 {
     }
 
     @SuppressLint({"PrivateApi"})
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     private static void m5260() {
         try {
             f11429 = View.class.getDeclaredMethod("getViewRootImpl", null);
@@ -198,7 +175,6 @@ public abstract class AbstractC3656 extends C3665 {
         f11428 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public static boolean m5261(int i, int i2) {
         return (i & 6) == (i2 & 6);
     }
@@ -213,7 +189,6 @@ public abstract class AbstractC3656 extends C3665 {
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public void mo5262(View view) {
         this.f11440 = view.getWidth();
         this.f11439 = view.getHeight();
@@ -225,25 +200,21 @@ public abstract class AbstractC3656 extends C3665 {
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public List<Rect> mo5263(int i) {
         return m5255(this.f11441, i);
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public List<Rect> mo5264(int i) {
         return m5255(this.f11442, i);
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public C1646 mo5265(int i) {
         return m5257(i, false);
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final C1646 mo5266() {
         if (this.f11435 == null) {
             WindowInsets windowInsets = this.f11433;
@@ -253,14 +224,12 @@ public abstract class AbstractC3656 extends C3665 {
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public void mo5267(View view) {
         m5254(view);
     }
 
     @Override // p000.C3665
     @SuppressLint({"WrongConstant"})
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public void mo5268() {
         for (int i = 1; i <= 512; i <<= 1) {
             int iM4666 = AbstractC2665.m4666(i);
@@ -272,7 +241,6 @@ public abstract class AbstractC3656 extends C3665 {
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public C3669 mo5269(int i, int i2, int i3, int i4) {
         AbstractC3655 c3649;
         C3669 c3669M5299 = C3669.m5299(null, this.f11433);
@@ -296,14 +264,12 @@ public abstract class AbstractC3656 extends C3665 {
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public boolean mo5270() {
         return this.f11433.isRound();
     }
 
     @Override // p000.C3665
     @SuppressLint({"WrongConstant"})
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public boolean mo5271(int i) {
         for (int i2 = 1; i2 <= 512; i2 <<= 1) {
             if ((i & i2) != 0 && !m5280(i2)) {
@@ -314,36 +280,30 @@ public abstract class AbstractC3656 extends C3665 {
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public void mo5273(C1646[] c1646Arr) {
         this.f11434 = c1646Arr;
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public void mo5274(C3669 c3669) {
         this.f11436 = c3669;
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public void mo5275(int i) {
         this.f11438 = i;
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public void mo5276(Rect[][] rectArr) {
         this.f11441 = (Rect[][]) rectArr.clone();
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public void mo5277(Rect[][] rectArr) {
         this.f11442 = (Rect[][]) rectArr.clone();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public C1646 m5278(int i, boolean z) {
         C1646 c1646Mo5284;
         int i2;
@@ -413,12 +373,10 @@ public abstract class AbstractC3656 extends C3665 {
         return c1646;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public C1646 mo5279(int i) {
         return m5257(i, true);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public boolean m5280(int i) {
         if (i != 1 && i != 2) {
             if (i == 4) {
@@ -431,13 +389,11 @@ public abstract class AbstractC3656 extends C3665 {
         return !m5278(i, false).equals(C1646.f5579);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public void m5281(C1646 c1646) {
         this.f11437 = c1646;
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public void mo5272(C1079 c1079) {
     }
 }

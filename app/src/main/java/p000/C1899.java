@@ -3,12 +3,10 @@ package p000;
 import java.io.FilterInputStream;
 import java.io.IOException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲀᛸᲈᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1899 extends FilterInputStream {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f6268;
 
     public C1899(C1237 c1237) {
@@ -55,7 +53,6 @@ public final class C1899 extends FilterInputStream {
         return jSkip;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final long m3697(long j) {
         int i = this.f6268;
         if (i == 0) {
@@ -64,7 +61,6 @@ public final class C1899 extends FilterInputStream {
         return (i == -2147483648 || j <= ((long) i)) ? j : i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m3698(long j) {
         int i = this.f6268;
         if (i == -2147483648 || j == -1) {

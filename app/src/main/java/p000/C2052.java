@@ -4,16 +4,13 @@ import java.util.List;
 import java.util.regex.Pattern;
 import me.hd.wauxv.data.bean.MsgInfoBean;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲁᲀᛸᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2052 extends AbstractC1823 implements InterfaceC1592 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C2052 f6839 = new C2052();
 
     @Override // p000.InterfaceC1592
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final void mo2062(Object obj) throws IllegalAccessException {
         List listM3699;
         int i = 0;
@@ -52,7 +49,6 @@ public final class C2052 extends AbstractC1823 implements InterfaceC1592 {
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

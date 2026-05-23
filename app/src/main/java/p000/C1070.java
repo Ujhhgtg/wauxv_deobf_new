@@ -5,31 +5,24 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲁᲇᤞᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1070 implements InterfaceC1062 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final File f3881;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public C1069 f3884;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final C0542 f3883 = new C0542(8);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final long f3882 = 262144000;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C0542 f3880 = new C0542(27);
 
     public C1070(File file) {
         this.f3881 = file;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final synchronized C1069 m2634() {
         try {
             if (this.f3884 == null) {
@@ -42,7 +35,6 @@ public final class C1070 implements InterfaceC1062 {
     }
 
     @Override // p000.InterfaceC1062
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final File mo1511(InterfaceC1749 interfaceC1749) {
         String strM1894 = this.f3880.m1894(interfaceC1749);
         if (Log.isLoggable("DiskLruCacheWrapper", 2)) {
@@ -64,7 +56,6 @@ public final class C1070 implements InterfaceC1062 {
     }
 
     @Override // p000.InterfaceC1062
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final void mo1514(InterfaceC1749 interfaceC1749, C0243 c0243) {
         C1064 c1064;
         String strM1894 = this.f3880.m1894(interfaceC1749);

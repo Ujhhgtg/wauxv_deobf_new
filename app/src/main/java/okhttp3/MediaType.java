@@ -30,12 +30,10 @@ public final class MediaType {
             this();
         }
 
-        /* JADX INFO: renamed from: -deprecated_get, reason: not valid java name */
         public final MediaType m842deprecated_get(String str) {
             return get(str);
         }
 
-        /* JADX INFO: renamed from: -deprecated_parse, reason: not valid java name */
         public final MediaType m843deprecated_parse(String str) {
             return parse(str);
         }
@@ -106,12 +104,10 @@ public final class MediaType {
         return Companion.parse(str);
     }
 
-    /* JADX INFO: renamed from: -deprecated_subtype, reason: not valid java name */
     public final String m840deprecated_subtype() {
         return this.subtype;
     }
 
-    /* JADX INFO: renamed from: -deprecated_type, reason: not valid java name */
     public final String m841deprecated_type() {
         return this.type;
     }

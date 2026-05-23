@@ -7,15 +7,12 @@ import android.view.ViewTreeObserver;
 import android.view.WindowInsetsController;
 import com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲈᛸᲁᤞᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewTreeObserverOnGlobalLayoutListenerC1347 implements ViewTreeObserver.OnGlobalLayoutListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ View f4820;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ C1349 f4821;
 
     public ViewTreeObserverOnGlobalLayoutListenerC1347(C1349 c1349, View view) {

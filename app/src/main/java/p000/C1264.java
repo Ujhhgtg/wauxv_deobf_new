@@ -13,15 +13,12 @@ import android.widget.ImageView;
 import java.util.HashMap;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᛸᲁᲈᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1264 extends AbstractC3436 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static final String[] f4595 = {"android:visibility:visibility", "android:visibility:parent"};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public final int f4596;
 
     public C1264(int i) {
@@ -29,7 +26,6 @@ public final class C1264 extends AbstractC3436 {
         this.f4596 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public static void m2951(C3444 c3444) {
         View view = c3444.f10855;
         int visibility = view.getVisibility();
@@ -41,7 +37,6 @@ public final class C1264 extends AbstractC3436 {
         map.put("android:visibility:screenLocation", iArr);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static float m2952(C3444 c3444, float f) {
         Float f2;
         return (c3444 == null || (f2 = (Float) c3444.f10854.get("android:fade:transitionAlpha")) == null) ? f : f2.floatValue();
@@ -49,7 +44,6 @@ public final class C1264 extends AbstractC3436 {
 
     /* JADX WARN: Code duplicated, block: B:12:0x0052  */
     /* JADX WARN: Code duplicated, block: B:7:0x002f  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public static C3606 m2953(C3444 c3444, C3444 c3445) {
         C3606 c3606 = new C3606();
         c3606.f11261 = false;
@@ -123,13 +117,11 @@ public final class C1264 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1409(C3444 c3444) {
         m2951(c3444);
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo1411(C3444 c3444) {
         m2951(c3444);
         View view = c3444.f10855;
@@ -163,7 +155,6 @@ public final class C1264 extends AbstractC3436 {
         if (m2953(m4952(r3, false), m4954(r3, false)).f11261 != false) goto L9;
      */
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
@@ -617,13 +608,11 @@ public final class C1264 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public final String[] mo2017() {
         return f4595;
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final boolean mo2954(C3444 c3444, C3444 c3445) {
         if (c3444 == null && c3445 == null) {
             return false;
@@ -638,7 +627,6 @@ public final class C1264 extends AbstractC3436 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public final ObjectAnimator m2955(View view, float f, float f2) {
         if (f == f2) {
             return null;

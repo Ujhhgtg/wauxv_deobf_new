@@ -5,7 +5,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.Choreographer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲀᲁᤝᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1517 {
@@ -23,7 +22,6 @@ public abstract class AbstractC1517 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final Handler m3251(Looper looper) {
         if (Build.VERSION.SDK_INT >= 28) {
             return (Handler) Handler.class.getDeclaredMethod("createAsync", Looper.class).invoke(null, looper);

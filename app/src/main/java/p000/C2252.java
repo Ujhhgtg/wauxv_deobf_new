@@ -3,12 +3,10 @@ package p000;
 import com.alibaba.fastjson2.reader.ObjectReaderCreator;
 import java.util.function.BiConsumer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᤞᲈᲁᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2252 implements BiConsumer {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f7295;
 
     public /* synthetic */ C2252(int i) {

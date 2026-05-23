@@ -2,12 +2,10 @@ package p000;
 
 import java.util.LinkedHashSet;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᤝᲁᛸᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2478 implements InterfaceC2628 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final LinkedHashSet f7916 = new LinkedHashSet();
 
     public C2478(C0214 c0214) {

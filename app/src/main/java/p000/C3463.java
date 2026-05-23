@@ -15,11 +15,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤞᤝᛸᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C3463 extends AbstractC1459 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ, reason: contains not printable characters */
     public static Font m5056(FontFamily fontFamily, int i) {
         FontStyle fontStyle = new FontStyle((i & 1) != 0 ? 700 : 400, (i & 2) != 0 ? 1 : 0);
         Font font = fontFamily.getFont(0);
@@ -35,13 +33,11 @@ public class C3463 extends AbstractC1459 {
         return font;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᤞᲈ, reason: contains not printable characters */
     public static int m5057(FontStyle fontStyle, FontStyle fontStyle2) {
         return (Math.abs(fontStyle.getWeight() - fontStyle2.getWeight()) / 100) + (fontStyle.getSlant() == fontStyle2.getSlant() ? 0 : 2);
     }
 
     @Override // p000.AbstractC1459
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final Typeface mo3200(Context context, C1380 c1380, Resources resources, int i) {
         try {
             FontFamily.Builder builder = null;
@@ -68,7 +64,6 @@ public class C3463 extends AbstractC1459 {
     }
 
     @Override // p000.AbstractC1459
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final Typeface mo3201(Context context, C1383[] c1383Arr, int i) {
         try {
             FontFamily fontFamilyM5058 = m5058(c1383Arr, context.getContentResolver());
@@ -83,7 +78,6 @@ public class C3463 extends AbstractC1459 {
     }
 
     @Override // p000.AbstractC1459
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final Typeface mo3202(Context context, List list, int i) {
         ContentResolver contentResolver = context.getContentResolver();
         try {
@@ -106,7 +100,6 @@ public class C3463 extends AbstractC1459 {
     }
 
     @Override // p000.AbstractC1459
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public final Typeface mo3203(Context context, Resources resources, int i, String str, int i2) {
         try {
             Font fontBuild = new Font.Builder(resources, i).build();
@@ -117,7 +110,6 @@ public class C3463 extends AbstractC1459 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ, reason: contains not printable characters */
     public final FontFamily m5058(C1383[] c1383Arr, ContentResolver contentResolver) {
         Font fontBuild;
         FontFamily.Builder builder = null;
@@ -170,7 +162,6 @@ public class C3463 extends AbstractC1459 {
         return builder.build();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ, reason: contains not printable characters */
     public Font mo5059(C1383 c1383) {
         throw new UnsupportedOperationException("Getting font from Typeface is not supported before API31");
     }

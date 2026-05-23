@@ -5,15 +5,12 @@ import java.nio.ByteOrder;
 import java.security.MessageDigest;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲈᤝᲀᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0505 implements InterfaceC0962, InterfaceC0988, InterfaceC2300 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2173;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public ByteBuffer f2174;
 
     public C0505(int i, ByteBuffer byteBuffer) {
@@ -38,7 +35,6 @@ public final class C0505 implements InterfaceC0962, InterfaceC0988, InterfaceC23
     }
 
     @Override // p000.InterfaceC2300
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void mo1806(byte[] bArr, Object obj, MessageDigest messageDigest) {
         switch (this.f2173) {
             case 3:
@@ -65,7 +61,6 @@ public final class C0505 implements InterfaceC0962, InterfaceC0988, InterfaceC23
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public boolean m1807() {
         String[] strArr = AbstractC1574.f5469;
         ByteBuffer byteBuffer = this.f2174;
@@ -85,13 +80,11 @@ public final class C0505 implements InterfaceC0962, InterfaceC0988, InterfaceC23
     }
 
     @Override // p000.InterfaceC0988
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public int mo1102() {
         return (mo1106() << 8) | mo1106();
     }
 
     @Override // p000.InterfaceC0962
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public Object mo611() {
         ByteBuffer byteBuffer = this.f2174;
         byteBuffer.position(0);
@@ -99,7 +92,6 @@ public final class C0505 implements InterfaceC0962, InterfaceC0988, InterfaceC23
     }
 
     @Override // p000.InterfaceC0988
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public short mo1106() throws C0987 {
         ByteBuffer byteBuffer = this.f2174;
         if (byteBuffer.remaining() >= 1) {
@@ -109,7 +101,6 @@ public final class C0505 implements InterfaceC0962, InterfaceC0988, InterfaceC23
     }
 
     @Override // p000.InterfaceC0988
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public int mo1111(int i, byte[] bArr) {
         ByteBuffer byteBuffer = this.f2174;
         int iMin = Math.min(i, byteBuffer.remaining());
@@ -133,7 +124,6 @@ public final class C0505 implements InterfaceC0962, InterfaceC0988, InterfaceC23
     }
 
     @Override // p000.InterfaceC0962
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public void mo610() {
     }
 }

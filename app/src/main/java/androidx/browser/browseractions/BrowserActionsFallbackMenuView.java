@@ -11,10 +11,8 @@ import me.hd.wauxv.R;
 @Deprecated
 public class BrowserActionsFallbackMenuView extends LinearLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int f194;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int f195;
 
     public BrowserActionsFallbackMenuView(Context context, AttributeSet attributeSet) {

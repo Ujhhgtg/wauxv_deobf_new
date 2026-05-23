@@ -7,21 +7,16 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤝᲁᤞᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C0539 implements Serializable, Comparable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C0539 f2244 = new C0539(new byte[0]);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final byte[] f2245;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public transient int f2246;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public transient String f2247;
 
     public C0539(byte[] bArr) {
@@ -305,7 +300,6 @@ public class C0539 implements Serializable, Comparable {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public String mo1868() {
         byte[] bArr = AbstractC0047.f977;
         byte[] bArr2 = this.f2245;
@@ -345,19 +339,16 @@ public class C0539 implements Serializable, Comparable {
         return new String(bArr3, AbstractC0599.f2413);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public C0539 mo1869(String str) throws NoSuchAlgorithmException {
         MessageDigest messageDigest = MessageDigest.getInstance(str);
         messageDigest.update(this.f2245, 0, mo1870());
         return new C0539(messageDigest.digest());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public int mo1870() {
         return this.f2245.length;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public String mo1871() {
         byte[] bArr = this.f2245;
         char[] cArr = new char[bArr.length * 2];
@@ -372,22 +363,18 @@ public class C0539 implements Serializable, Comparable {
         return new String(cArr);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public byte[] mo1872() {
         return this.f2245;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public byte mo1873(int i) {
         return this.f2245[i];
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public boolean mo1874(C0539 c0539, int i) {
         return c0539.mo1875(this.f2245, 0, 0, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public boolean mo1875(byte[] bArr, int i, int i2, int i3) {
         if (i >= 0) {
             byte[] bArr2 = this.f2245;
@@ -402,7 +389,6 @@ public class C0539 implements Serializable, Comparable {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public C0539 mo1876() {
         int i = 0;
         while (true) {
@@ -426,7 +412,6 @@ public class C0539 implements Serializable, Comparable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final String m1877() {
         String str = this.f2247;
         if (str != null) {
@@ -437,7 +422,6 @@ public class C0539 implements Serializable, Comparable {
         return str2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public void mo1878(int i, C0504 c0504) {
         c0504.write(this.f2245, 0, i);
     }

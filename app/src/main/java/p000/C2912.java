@@ -7,12 +7,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import java.util.HashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᲇᤝᛸᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2912 extends AbstractC3436 {
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1409(C3444 c3444) {
         View view = c3444.f10855;
         if (view instanceof TextView) {
@@ -21,7 +19,6 @@ public final class C2912 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo1411(C3444 c3444) {
         View view = c3444.f10855;
         if (view instanceof TextView) {
@@ -30,7 +27,6 @@ public final class C2912 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final Animator mo2016(ViewGroup viewGroup, C3444 c3444, C3444 c3445) {
         if (c3444 == null || c3445 == null || !(c3444.f10855 instanceof TextView)) {
             return null;

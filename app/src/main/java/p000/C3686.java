@@ -13,39 +13,28 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤞᲁᤝᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3686 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final boolean f11576;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final String f11577;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final C0588 f11578;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final int f11579;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final int f11580;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static C3686 f11581;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public Application f11583;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final ConcurrentHashMap f11582 = new ConcurrentHashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C3683 f11584 = new InterfaceC1430() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤞᲀᲈᤝᲁ
         @Override // p000.InterfaceC1430
-        /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
         public final Object mo3133(Object obj, Object obj2, Object obj3) {
             Object c2585;
             C3686 c3686 = this.f11568;
@@ -112,12 +101,10 @@ public final class C3686 {
         f11580 = 3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m5343(String str) {
         return AbstractC1194.m2779(AbstractC2841.m4848(str).toString().hashCode(), "yuki_hook_host_data_channel_");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static String m5344(Context context) {
         String packageName;
         String str = C3692.f11608;
@@ -130,7 +117,6 @@ public final class C3686 {
         return AbstractC1194.m2779(AbstractC2841.m4848(str).toString().hashCode(), "yuki_hook_module_data_channel_");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final boolean m5345(Context context) {
         Object c2585;
         boolean z;
@@ -168,7 +154,6 @@ public final class C3686 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C2103 m5346(Application application, String str) {
         if (f11576 && AbstractC2841.m4836(C3692.f11608)) {
             throw new IllegalStateException("Xposed modulePackageName load failed, please reset and rebuild it");
@@ -176,7 +161,6 @@ public final class C3686 {
         return new C2103(this, application, str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m5347(final Application application, String str) {
         if (AbstractC2205.f7173) {
             this.f11583 = application;
@@ -194,7 +178,6 @@ public final class C3686 {
                 final int i = 0;
                 C2103.m3907(c2103M5346, "module_generated_version_get", new InterfaceC1425(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤞᲀᲈᲁᤝ
 
-                    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
                     public final /* synthetic */ C3686 f11570;
 
                     {
@@ -217,7 +200,6 @@ public final class C3686 {
                 final int i2 = 1;
                 C2103.m3907(c2103M5346, "yuki_logger_inmemory_data_get", new InterfaceC1425(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤞᲀᲈᲁᤝ
 
-                    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
                     public final /* synthetic */ C3686 f11570;
 
                     {

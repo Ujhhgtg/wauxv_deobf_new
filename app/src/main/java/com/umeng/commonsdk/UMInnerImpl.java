@@ -16,7 +16,6 @@ import com.umeng.commonsdk.utils.d;
 public class UMInnerImpl {
     private static boolean isInternal = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final /* synthetic */ int f967 = 0;
 
     public static synchronized void initAndSendInternal(final Context context) {

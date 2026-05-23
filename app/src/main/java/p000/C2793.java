@@ -5,15 +5,12 @@ import android.text.SpannableStringBuilder;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᲈᤝᤞᛸᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2793 extends SpannableStringBuilder {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Class f8916;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final ArrayList f8917;
 
     public C2793(Class cls, CharSequence charSequence) {
@@ -127,7 +124,6 @@ public final class C2793 extends SpannableStringBuilder {
         return new C2793(this.f8916, this, i, i2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4771() {
         int i = 0;
         while (true) {
@@ -140,7 +136,6 @@ public final class C2793 extends SpannableStringBuilder {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4772() {
         m4775();
         int i = 0;
@@ -154,7 +149,6 @@ public final class C2793 extends SpannableStringBuilder {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C2791 m4773(Object obj) {
         int i = 0;
         while (true) {
@@ -170,7 +164,6 @@ public final class C2793 extends SpannableStringBuilder {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean m4774(Object obj) {
         if (obj != null) {
             return this.f8916 == obj.getClass();
@@ -178,7 +171,6 @@ public final class C2793 extends SpannableStringBuilder {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m4775() {
         int i = 0;
         while (true) {

@@ -3,12 +3,10 @@ package p000;
 import android.text.Editable;
 import android.text.TextWatcher;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᲈᲇᲁᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1845 implements TextWatcher {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f6139;
 
     @Override // android.text.TextWatcher
@@ -39,19 +37,15 @@ public final class C1845 implements TextWatcher {
         int i4 = this.f6139;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     private final void m3602(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     private final void m3603(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     private final void m3604(int i, int i2, int i3, CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     private final void m3605(int i, int i2, int i3, CharSequence charSequence) {
     }
 }

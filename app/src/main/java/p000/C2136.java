@@ -5,31 +5,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲀᛸᤝᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2136 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public ViewParent f7071;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public ViewParent f7072;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final ViewGroup f7073;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean f7074;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int[] f7075;
 
     public C2136(ViewGroup viewGroup) {
         this.f7073 = viewGroup;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final boolean m3944(float f, float f2, boolean z) {
         ViewParent viewParentM3948;
         if (this.f7074 && (viewParentM3948 = m3948(0)) != null) {
@@ -42,7 +35,6 @@ public final class C2136 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final boolean m3945(float f, float f2) {
         ViewParent viewParentM3948;
         if (this.f7074 && (viewParentM3948 = m3948(0)) != null) {
@@ -55,7 +47,6 @@ public final class C2136 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final boolean m3946(int[] iArr, int i, int i2, int i3, int[] iArr2) {
         ViewParent viewParentM3948;
         int i4;
@@ -111,7 +102,6 @@ public final class C2136 {
         return (iArr3[0] == 0 && iArr3[1] == 0) ? false : true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean m3947(int i, int i2, int i3, int i4, int[] iArr, int i5, int[] iArr2) {
         ViewParent viewParentM3948;
         int i6;
@@ -170,7 +160,6 @@ public final class C2136 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final ViewParent m3948(int i) {
         if (i == 0) {
             return this.f7071;
@@ -181,12 +170,10 @@ public final class C2136 {
         return this.f7072;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean m3949(int i) {
         return m3948(i) != null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean m3950(int i, int i2) {
         boolean zOnStartNestedScroll;
         if (!m3949(i2)) {
@@ -234,7 +221,6 @@ public final class C2136 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m3951(int i) {
         ViewParent viewParentM3948 = m3948(i);
         if (viewParentM3948 != null) {

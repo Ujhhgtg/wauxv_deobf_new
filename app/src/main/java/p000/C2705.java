@@ -4,18 +4,14 @@ import java.util.Arrays;
 import java.util.ConcurrentModificationException;
 import java.util.Map;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᛸᲁᲈᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C2705 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int[] f8714;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object[] f8715;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f8716;
 
     public C2705(int i) {
@@ -225,7 +221,6 @@ public class C2705 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int m4701(Object obj) {
         int i = this.f8716 * 2;
         Object[] objArr = this.f8715;
@@ -245,7 +240,6 @@ public class C2705 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4702(int i) {
         int i2 = this.f8716;
         int[] iArr = this.f8714;
@@ -258,7 +252,6 @@ public class C2705 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int m4703(int i, Object obj) {
         int i2 = this.f8716;
         if (i2 == 0) {
@@ -283,12 +276,10 @@ public class C2705 {
         return ~i3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int m4704(Object obj) {
         return obj == null ? m4705() : m4703(obj.hashCode(), obj);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m4705() {
         int i = this.f8716;
         if (i == 0) {
@@ -313,7 +304,6 @@ public class C2705 {
         return ~i2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Object m4706(int i) {
         if (i < 0 || i >= this.f8716) {
             throw new IllegalArgumentException(AbstractC1194.m2779(i, "Expected index to be within 0..size()-1, but was ").toString());
@@ -321,7 +311,6 @@ public class C2705 {
         return this.f8715[i << 1];
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public void mo1917(C0264 c0264) {
         int i = c0264.f8716;
         m4702(this.f8716 + i);
@@ -336,7 +325,6 @@ public class C2705 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public Object mo1918(int i) {
         int i2;
         if (i < 0 || i >= (i2 = this.f8716)) {
@@ -386,7 +374,6 @@ public class C2705 {
         return obj;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public Object mo1919(int i, Object obj) {
         if (i < 0 || i >= this.f8716) {
             throw new IllegalArgumentException(AbstractC1194.m2779(i, "Expected index to be within 0..size()-1, but was ").toString());
@@ -398,7 +385,6 @@ public class C2705 {
         return obj2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final Object m4707(int i) {
         if (i < 0 || i >= this.f8716) {
             throw new IllegalArgumentException(AbstractC1194.m2779(i, "Expected index to be within 0..size()-1, but was ").toString());

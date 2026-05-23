@@ -2,12 +2,10 @@ package p000;
 
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲈᤞᲀᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1352 extends AbstractC2106 implements InterfaceC3407 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Object[] f4836;
 
     public AbstractC1352(int i) {
@@ -46,13 +44,11 @@ public abstract class AbstractC1352 extends AbstractC2106 implements InterfaceC3
         return m3064(name.substring(name.lastIndexOf(46) + 1) + '{', "}", false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public String mo1214() {
         String name = getClass().getName();
         return m3064(name.substring(name.lastIndexOf(46) + 1) + '{', "}", true);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final Object m3062(int i) {
         try {
             Object obj = this.f4836[i];
@@ -68,7 +64,6 @@ public abstract class AbstractC1352 extends AbstractC2106 implements InterfaceC3
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m3063(int i, Object obj) {
         m3925();
         try {
@@ -81,7 +76,6 @@ public abstract class AbstractC1352 extends AbstractC2106 implements InterfaceC3
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final String m3064(String str, String str2, boolean z) {
         int length = this.f4836.length;
         StringBuilder sb = new StringBuilder((length * 10) + 10);

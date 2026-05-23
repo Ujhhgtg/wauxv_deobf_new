@@ -2,12 +2,10 @@ package p000;
 
 import com.alibaba.fastjson2.internal.asm.Opcodes;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᤝᲇᛸᲈᤞᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C3125 implements InterfaceC1414 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f9966;
 
     public /* synthetic */ C3125(int i) {

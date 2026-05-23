@@ -41,57 +41,46 @@ public final class Address {
         this.connectionSpecs = Util.toImmutableList(list2);
     }
 
-    /* JADX INFO: renamed from: -deprecated_certificatePinner, reason: not valid java name */
     public final CertificatePinner m766deprecated_certificatePinner() {
         return this.certificatePinner;
     }
 
-    /* JADX INFO: renamed from: -deprecated_connectionSpecs, reason: not valid java name */
     public final List<ConnectionSpec> m767deprecated_connectionSpecs() {
         return this.connectionSpecs;
     }
 
-    /* JADX INFO: renamed from: -deprecated_dns, reason: not valid java name */
     public final Dns m768deprecated_dns() {
         return this.dns;
     }
 
-    /* JADX INFO: renamed from: -deprecated_hostnameVerifier, reason: not valid java name */
     public final HostnameVerifier m769deprecated_hostnameVerifier() {
         return this.hostnameVerifier;
     }
 
-    /* JADX INFO: renamed from: -deprecated_protocols, reason: not valid java name */
     public final List<Protocol> m770deprecated_protocols() {
         return this.protocols;
     }
 
-    /* JADX INFO: renamed from: -deprecated_proxy, reason: not valid java name */
     public final Proxy m771deprecated_proxy() {
         return this.proxy;
     }
 
-    /* JADX INFO: renamed from: -deprecated_proxyAuthenticator, reason: not valid java name */
     public final Authenticator m772deprecated_proxyAuthenticator() {
         return this.proxyAuthenticator;
     }
 
-    /* JADX INFO: renamed from: -deprecated_proxySelector, reason: not valid java name */
     public final ProxySelector m773deprecated_proxySelector() {
         return this.proxySelector;
     }
 
-    /* JADX INFO: renamed from: -deprecated_socketFactory, reason: not valid java name */
     public final SocketFactory m774deprecated_socketFactory() {
         return this.socketFactory;
     }
 
-    /* JADX INFO: renamed from: -deprecated_sslSocketFactory, reason: not valid java name */
     public final SSLSocketFactory m775deprecated_sslSocketFactory() {
         return this.sslSocketFactory;
     }
 
-    /* JADX INFO: renamed from: -deprecated_url, reason: not valid java name */
     public final HttpUrl m776deprecated_url() {
         return this.url;
     }

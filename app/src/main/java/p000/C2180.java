@@ -6,23 +6,18 @@ import java.lang.reflect.Proxy;
 
 import org.luckypray.dexkit.DexKitBridge;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲁᲇᤝᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2180 extends AbstractC1823 implements InterfaceC1582 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C2180 f7141 = new C2180();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static void addNetSceneToQueue(Object obj) {
         Method methodM3315 = AbstractC1574.dexToMethod(C2178.f7139);
         methodM3315.invoke(C1878.m3656(), obj, 0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static void m3961(Object obj, final C2165 c2165) {
-        int i = 0;
         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(obj).m3492();
         c1973M3492.name = "doScene";
         c1973M3492.f4485 = 2;
@@ -39,7 +34,6 @@ public final class C2180 extends AbstractC1823 implements InterfaceC1582 {
             public final Object invoke(Object obj2, Method method, Object[] objArr) {
                 Object c2585;
                 C2165 c2166 = c2165;
-                String[] strArr = AbstractC1574.f5469;
                 String name = method.getName();
                 if (true) {
                     switch (name.hashCode()) {
@@ -69,8 +63,6 @@ public final class C2180 extends AbstractC1823 implements InterfaceC1582 {
                                     
                                     Object obj5 = objArr[2];
                                     String str = obj5 instanceof String ? (String) obj5 : null;
-                                    Object obj6 = objArr[3];
-                                    int i2 = 0;
                                     MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(objArr[3]).m3492();
                                     c1973M3493.name = "getReqResp";
                                     c1973M3493.superclass();
@@ -115,14 +107,12 @@ public final class C2180 extends AbstractC1823 implements InterfaceC1582 {
     }
 
     @Override // p000.InterfaceC1582
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
         AbstractC1574.findMethod(C2178.f7139, dexKitBridge, new C2174(1));
         AbstractC1574.findMethod(C2179.f7140, dexKitBridge, new C2174(2));
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

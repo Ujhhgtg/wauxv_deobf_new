@@ -20,7 +20,6 @@ public class AlertDialogLayout extends AbstractC1785 {
         super(context, attributeSet, 0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static int m26(View view) {
         Field field = AbstractC3578.f11184;
         int minimumHeight = view.getMinimumHeight();

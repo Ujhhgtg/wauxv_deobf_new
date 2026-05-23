@@ -2,30 +2,22 @@ package p000;
 
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲈᤝᲇᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2308 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int f7430;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public ArrayList f7431;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f7435;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final int f7436;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f7434 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public boolean f7432 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean f7433 = false;
 
     public C2308(C0580 c0580, int i, int i2, int i3) {
@@ -34,7 +26,6 @@ public final class C2308 {
         this.f7436 = i3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4166(AbstractC0950 abstractC0950) {
         this.f7431.add(abstractC0950);
         if (!this.f7432 && abstractC0950.f3469.f8907 >= 0) {
@@ -45,7 +36,6 @@ public final class C2308 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4167() {
         int iM3384;
         C2525 c2525M4544;
@@ -94,7 +84,6 @@ public final class C2308 {
         this.f7435++;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m4168() {
         int size = this.f7431.size();
         for (int i = 0; i < size; i++) {
@@ -106,7 +95,6 @@ public final class C2308 {
         this.f7434++;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C1089 m4169(AbstractC0950 abstractC0950) {
         C2526 c2526 = abstractC0950.f3470;
         C1089 c1089 = abstractC0950.f3468;
@@ -117,7 +105,6 @@ public final class C2308 {
         throw new C1022("No expanded opcode for " + abstractC0950, null);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C1089 m4170(AbstractC0950 abstractC0950, C1089 c1089) {
         while (c1089 != null) {
             if (c1089.f3929.mo3113(abstractC0950)) {
@@ -156,7 +143,6 @@ public final class C2308 {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean m4171(C1089[] c1089Arr) {
         int i = this.f7434;
         if (i < 0) {

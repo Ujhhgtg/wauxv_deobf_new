@@ -4,15 +4,12 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᲁᤞᲀᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1447 implements InterfaceC2568, InterfaceC1635 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Drawable f5124;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ int f5125;
 
     public C1447(Drawable drawable, int i) {
@@ -29,7 +26,6 @@ public final class C1447 implements InterfaceC2568, InterfaceC1635 {
     }
 
     @Override // p000.InterfaceC1635
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public void mo1629() {
         switch (this.f5125) {
             case 0:
@@ -47,7 +43,6 @@ public final class C1447 implements InterfaceC2568, InterfaceC1635 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1206() {
         C1867 c1867;
         C1867 c1868;
@@ -109,7 +104,6 @@ public final class C1447 implements InterfaceC2568, InterfaceC1635 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo1207() {
         switch (this.f5125) {
             case 0:
@@ -123,7 +117,6 @@ public final class C1447 implements InterfaceC2568, InterfaceC1635 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final Class mo1208() {
         switch (this.f5125) {
             case 0:
@@ -133,7 +126,6 @@ public final class C1447 implements InterfaceC2568, InterfaceC1635 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     private final void m3144() {
     }
 }

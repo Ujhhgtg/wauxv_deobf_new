@@ -3,12 +3,10 @@ package p000;
 import java.util.Collection;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲀᤞᤝᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3495 extends AbstractC2643 {
     @Override // p000.AbstractC2643
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo3850(AbstractC1675 abstractC1675) {
         AbstractC1628 abstractC1628 = (AbstractC1628) abstractC1675;
         int iMo1921 = abstractC1628.mo1921() * abstractC1628.m3345();
@@ -23,7 +21,6 @@ public abstract class AbstractC3495 extends AbstractC2643 {
     }
 
     @Override // p000.AbstractC2643
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo3851() {
         mo1924();
         Iterator it = mo1923().iterator();
@@ -33,7 +30,6 @@ public abstract class AbstractC3495 extends AbstractC2643 {
     }
 
     @Override // p000.AbstractC2643
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final int mo3852() {
         Collection collectionMo1923 = mo1923();
         int size = collectionMo1923.size();
@@ -44,7 +40,6 @@ public abstract class AbstractC3495 extends AbstractC2643 {
     }
 
     @Override // p000.AbstractC2643
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final void mo3853(C0519 c0519) {
         Iterator it = mo1923().iterator();
         while (it.hasNext()) {
@@ -53,6 +48,5 @@ public abstract class AbstractC3495 extends AbstractC2643 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public abstract void mo1924();
 }

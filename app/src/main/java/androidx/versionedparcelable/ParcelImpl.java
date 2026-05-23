@@ -13,7 +13,6 @@ import p000.InterfaceC3548;
 public class ParcelImpl implements Parcelable {
     public static final Parcelable.Creator<ParcelImpl> CREATOR = new C0134(7);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final InterfaceC3548 f457;
 
     public ParcelImpl(Parcel parcel) {

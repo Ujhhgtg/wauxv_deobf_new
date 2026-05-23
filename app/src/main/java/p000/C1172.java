@@ -2,15 +2,12 @@ package p000;
 
 import android.text.TextUtils;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᲈᲀᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1172 implements InterfaceC1171 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f4302;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final String f4303;
 
     public /* synthetic */ C1172(String str, int i) {
@@ -28,7 +25,6 @@ public final class C1172 implements InterfaceC1171 {
     }
 
     @Override // p000.InterfaceC1171
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public boolean mo1880(CharSequence charSequence, int i, int i2, C3465 c3465) {
         if (!TextUtils.equals(charSequence.subSequence(i, i2), this.f4303)) {
             return true;

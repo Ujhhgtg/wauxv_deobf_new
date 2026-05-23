@@ -3,15 +3,12 @@ package p000;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲀᤞᤝᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3496 extends AbstractC2270 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final EnumC1683 f10995;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final ArrayList f10996;
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -26,7 +23,6 @@ public final class C3496 extends AbstractC2270 {
         this.f10995 = enumC1683;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static int m5095(ArrayList arrayList) {
         try {
             return Math.max(4, ((AbstractC2270) arrayList.get(0)).f7367);
@@ -45,7 +41,6 @@ public final class C3496 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1221(C1023 c1023) {
         Iterator it = this.f10996.iterator();
         while (it.hasNext()) {
@@ -54,13 +49,11 @@ public final class C3496 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final EnumC1683 mo1222() {
         return this.f10995;
     }
 
     @Override // p000.AbstractC2270
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo1224(C1986 c1986, int i) {
         int iM4152 = i + this.f7367;
         boolean z = true;
@@ -86,7 +79,6 @@ public final class C3496 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC2270
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final void mo1225(C1023 c1023, C0519 c0519) {
         ArrayList arrayList = this.f10996;
         int size = arrayList.size();

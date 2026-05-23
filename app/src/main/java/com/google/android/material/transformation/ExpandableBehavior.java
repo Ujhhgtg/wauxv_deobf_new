@@ -17,18 +17,15 @@ public abstract class ExpandableBehavior extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public abstract void mo630(View view);
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final boolean mo631(CoordinatorLayout coordinatorLayout, View view, View view2) {
         
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo620(CoordinatorLayout coordinatorLayout, View view, int i) {
         Field field = AbstractC3578.f11184;
         if (!view.isLaidOut()) {

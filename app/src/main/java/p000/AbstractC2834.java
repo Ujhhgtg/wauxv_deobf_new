@@ -16,17 +16,14 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᛸᤞᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2834 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final String m4817(String str) {
         String[] strArr = AbstractC1574.f5469;
         return AbstractC2841.m4848(AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(str, "\r", ""), "\n", ""), "\t", ""), "<?xml version=\"1.0\"?>", "")).toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final void m4818(Context context, String str) {
         String[] strArr = AbstractC1574.f5469;
         Object systemService = context.getSystemService("clipboard");
@@ -37,13 +34,11 @@ public abstract class AbstractC2834 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static /* synthetic */ void m4819(String str) {
         
         m4818(C1565.m3276(), str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final boolean m4820(String str) {
         if (AbstractC2841.m4836(str)) {
             return false;
@@ -60,7 +55,6 @@ public abstract class AbstractC2834 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final JSONObject m4821(String str) {
         org.json.JSONObject jSONObjectM3873;
         HashSet hashSet = new HashSet();
@@ -114,7 +108,6 @@ public abstract class AbstractC2834 {
         return object;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final JSONObject m4822(JSONObject jSONObject) {
         for (Map.Entry<String, Object> entry : jSONObject.entrySet()) {
             String key = entry.getKey();
@@ -133,7 +126,6 @@ public abstract class AbstractC2834 {
         return jSONObject;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static void m4823(Context context, int i, String str) {
         if ((i & 1) != 0) {
             

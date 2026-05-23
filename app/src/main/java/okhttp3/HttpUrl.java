@@ -751,12 +751,10 @@ public final class HttpUrl {
             }
         }
 
-        /* JADX INFO: renamed from: -deprecated_get, reason: not valid java name */
         public final HttpUrl m836deprecated_get(String str) {
             return get(str);
         }
 
-        /* JADX INFO: renamed from: -deprecated_parse, reason: not valid java name */
         public final HttpUrl m839deprecated_parse(String str) {
             return parse(str);
         }
@@ -867,7 +865,6 @@ public final class HttpUrl {
         private Companion() {
         }
 
-        /* JADX INFO: renamed from: -deprecated_get, reason: not valid java name */
         public final HttpUrl m838deprecated_get(URL url) {
             return get(url);
         }
@@ -876,7 +873,6 @@ public final class HttpUrl {
             return parse(url.toString());
         }
 
-        /* JADX INFO: renamed from: -deprecated_get, reason: not valid java name */
         public final HttpUrl m837deprecated_get(URI uri) {
             return get(uri);
         }
@@ -911,97 +907,78 @@ public final class HttpUrl {
         return Companion.parse(str);
     }
 
-    /* JADX INFO: renamed from: -deprecated_encodedFragment, reason: not valid java name */
     public final String m817deprecated_encodedFragment() {
         return encodedFragment();
     }
 
-    /* JADX INFO: renamed from: -deprecated_encodedPassword, reason: not valid java name */
     public final String m818deprecated_encodedPassword() {
         return encodedPassword();
     }
 
-    /* JADX INFO: renamed from: -deprecated_encodedPath, reason: not valid java name */
     public final String m819deprecated_encodedPath() {
         return encodedPath();
     }
 
-    /* JADX INFO: renamed from: -deprecated_encodedPathSegments, reason: not valid java name */
     public final List<String> m820deprecated_encodedPathSegments() {
         return encodedPathSegments();
     }
 
-    /* JADX INFO: renamed from: -deprecated_encodedQuery, reason: not valid java name */
     public final String m821deprecated_encodedQuery() {
         return encodedQuery();
     }
 
-    /* JADX INFO: renamed from: -deprecated_encodedUsername, reason: not valid java name */
     public final String m822deprecated_encodedUsername() {
         return encodedUsername();
     }
 
-    /* JADX INFO: renamed from: -deprecated_fragment, reason: not valid java name */
     public final String m823deprecated_fragment() {
         return this.fragment;
     }
 
-    /* JADX INFO: renamed from: -deprecated_host, reason: not valid java name */
     public final String m824deprecated_host() {
         return this.host;
     }
 
-    /* JADX INFO: renamed from: -deprecated_password, reason: not valid java name */
     public final String m825deprecated_password() {
         return this.password;
     }
 
-    /* JADX INFO: renamed from: -deprecated_pathSegments, reason: not valid java name */
     public final List<String> m826deprecated_pathSegments() {
         return this.pathSegments;
     }
 
-    /* JADX INFO: renamed from: -deprecated_pathSize, reason: not valid java name */
     public final int m827deprecated_pathSize() {
         return pathSize();
     }
 
-    /* JADX INFO: renamed from: -deprecated_port, reason: not valid java name */
     public final int m828deprecated_port() {
         return this.port;
     }
 
-    /* JADX INFO: renamed from: -deprecated_query, reason: not valid java name */
     public final String m829deprecated_query() {
         return query();
     }
 
-    /* JADX INFO: renamed from: -deprecated_queryParameterNames, reason: not valid java name */
     public final Set<String> m830deprecated_queryParameterNames() {
         return queryParameterNames();
     }
 
-    /* JADX INFO: renamed from: -deprecated_querySize, reason: not valid java name */
     public final int m831deprecated_querySize() {
         return querySize();
     }
 
-    /* JADX INFO: renamed from: -deprecated_scheme, reason: not valid java name */
     public final String m832deprecated_scheme() {
         return this.scheme;
     }
 
-    /* JADX INFO: renamed from: -deprecated_uri, reason: not valid java name */
     public final URI m833deprecated_uri() {
         return uri();
     }
 
-    /* JADX INFO: renamed from: -deprecated_url, reason: not valid java name */
     public final URL m834deprecated_url() {
         return url();
     }
 
-    /* JADX INFO: renamed from: -deprecated_username, reason: not valid java name */
     public final String m835deprecated_username() {
         return this.username;
     }

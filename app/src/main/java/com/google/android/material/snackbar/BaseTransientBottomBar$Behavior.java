@@ -12,7 +12,6 @@ import p000.C0373;
 /* JADX INFO: loaded from: classes.dex */
 public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior<View> {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final C0373 f779;
 
     public BaseTransientBottomBar$Behavior() {
@@ -24,7 +23,6 @@ public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior<View> 
     }
 
     @Override // com.google.android.material.behavior.SwipeDismissBehavior, p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final boolean mo619(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
         
         int actionMasked = motionEvent.getActionMasked();
@@ -47,7 +45,6 @@ public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior<View> 
     }
 
     @Override // com.google.android.material.behavior.SwipeDismissBehavior
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final boolean mo635(View view) {
         
         return view instanceof AbstractC0392;

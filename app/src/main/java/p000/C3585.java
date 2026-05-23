@@ -3,18 +3,14 @@ package p000;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤞᤝᲀᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3585 extends AbstractC2584 implements InterfaceC1429 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f11219;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public /* synthetic */ Object f11220;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ View f11221;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -24,13 +20,11 @@ public final class C3585 extends AbstractC2584 implements InterfaceC1429 {
     }
 
     @Override // p000.InterfaceC1429
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) {
         return ((C3585) mo1197((InterfaceC0842) obj2, (C2651) obj)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final InterfaceC0842 mo1197(InterfaceC0842 interfaceC0842, Object obj) {
         C3585 c3585 = new C3585(this.f11221, interfaceC0842);
         c3585.f11220 = obj;
@@ -38,7 +32,6 @@ public final class C3585 extends AbstractC2584 implements InterfaceC1429 {
     }
 
     @Override // p000.AbstractC0370
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final Object mo1198(Object obj) throws Throwable {
         Object obj2;
         int i = this.f11219;

@@ -2,12 +2,10 @@ package p000;
 
 import java.security.MessageDigest;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᤞᲇᤝᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2244 implements InterfaceC1749 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Object f7263;
 
     public C2244(Object obj) {
@@ -33,7 +31,6 @@ public final class C2244 implements InterfaceC1749 {
     }
 
     @Override // p000.InterfaceC1749
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo2001(MessageDigest messageDigest) {
         messageDigest.update(this.f7263.toString().getBytes(InterfaceC1749.f5849));
     }

@@ -11,27 +11,20 @@ import java.util.NavigableMap;
 import java.util.TreeMap;
 import java.util.function.Function;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᛸᲈᲀᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1867 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int f6197;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final HashMap f6198;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final HashMap f6199;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f6200;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Object f6201;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Object f6202;
 
     public C1867(int i) {
@@ -42,7 +35,6 @@ public final class C1867 {
         this.f6197 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void m3638(int i, Class cls) {
         NavigableMap navigableMapM3644 = m3644(cls);
         Integer num = (Integer) navigableMapM3644.get(Integer.valueOf(i));
@@ -58,7 +50,6 @@ public final class C1867 {
         throw new NullPointerException("Tried to decrement empty size, size: " + i + ", this: " + this);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public void m3639(int i) {
         while (this.f6200 > i) {
             Object objM1914 = ((C0542) this.f6201).m1914();
@@ -72,7 +63,6 @@ public final class C1867 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public synchronized Object m3640(int i, Class cls) {
         C1865 c1865;
         int i2;
@@ -104,7 +94,6 @@ public final class C1867 {
         return m3643(c1865, cls);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public synchronized Object m3641(Object obj) {
         Object obj2;
         try {
@@ -139,7 +128,6 @@ public final class C1867 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public C0517 m3642(Class cls) {
         C0517 c0517;
         HashMap map = this.f6199;
@@ -159,7 +147,6 @@ public final class C1867 {
         return c0517;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Object m3643(C1865 c1865, Class cls) {
         C0517 c0517M3642 = m3642(cls);
         Object objM1887 = ((C0542) this.f6201).m1887(c1865);
@@ -182,7 +169,6 @@ public final class C1867 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public NavigableMap m3644(Class cls) {
         HashMap map = this.f6198;
         NavigableMap navigableMap = (NavigableMap) map.get(cls);
@@ -194,7 +180,6 @@ public final class C1867 {
         return treeMap;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public synchronized void m3645(Object obj) {
         Class<?> cls = obj.getClass();
         C0517 c0517M3642 = m3642(cls);

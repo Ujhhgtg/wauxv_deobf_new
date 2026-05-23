@@ -10,12 +10,10 @@ import android.provider.MediaStore;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲈᲀᲁᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0272 extends AbstractC1831 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ int f1475;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -25,7 +23,6 @@ public final class C0272 extends AbstractC1831 {
     }
 
     @Override // p000.InterfaceC0955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Class mo1391() {
         switch (this.f1475) {
             case 0:
@@ -36,7 +33,6 @@ public final class C0272 extends AbstractC1831 {
     }
 
     @Override // p000.AbstractC1831
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void mo1392(Object obj) throws IOException {
         switch (this.f1475) {
             case 0:
@@ -49,7 +45,6 @@ public final class C0272 extends AbstractC1831 {
     }
 
     @Override // p000.AbstractC1831
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Object mo1393(ContentResolver contentResolver, Uri uri) throws FileNotFoundException {
         switch (this.f1475) {
             case 0:

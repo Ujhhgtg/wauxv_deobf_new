@@ -2,15 +2,12 @@ package com.alibaba.fastjson2.support.csv;
 
 import com.alibaba.fastjson2.reader.CharArrayValueConsumer;
 
-/* JADX INFO: renamed from: com.alibaba.fastjson2.support.csv.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0012 implements CharArrayValueConsumer {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f525;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ CSVReaderUTF16 f526;
 
     public /* synthetic */ C0012(CSVReaderUTF16 cSVReaderUTF16, int i) {

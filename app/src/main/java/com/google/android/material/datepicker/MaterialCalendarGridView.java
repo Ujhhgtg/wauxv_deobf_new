@@ -20,7 +20,6 @@ import p000.C1915;
 /* JADX INFO: loaded from: classes.dex */
 final class MaterialCalendarGridView extends GridView {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean f703;
 
     public MaterialCalendarGridView(Context context, AttributeSet attributeSet) {

@@ -5,21 +5,16 @@ import android.os.Build;
 import android.widget.TextView;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲁᲇᤝᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0227 extends AbstractC3681 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f1361;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f1362;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ WeakReference f1363;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final /* synthetic */ C0232 f1364;
 
     public C0227(C0232 c0232, int i, int i2, WeakReference weakReference) {
@@ -30,7 +25,6 @@ public final class C0227 extends AbstractC3681 {
     }
 
     @Override // p000.AbstractC3681
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final void mo1281(Typeface typeface) {
         int i;
         if (Build.VERSION.SDK_INT >= 28 && (i = this.f1361) != -1) {
@@ -51,7 +45,6 @@ public final class C0227 extends AbstractC3681 {
     }
 
     @Override // p000.AbstractC3681
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final void mo1280(int i) {
     }
 }

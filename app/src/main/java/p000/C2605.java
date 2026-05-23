@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤝᲇᛸᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2605 extends AbstractC2207 {
     @Override // p000.AbstractC2207
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final void mo2438(C2687 c2687, float f, float f2) {
         c2687.m4700(0.0f, f2 * f, 180.0f, 90.0f);
         float f3 = f2 * 2.0f * f;

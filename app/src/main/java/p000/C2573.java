@@ -8,15 +8,12 @@ import android.net.Uri;
 import android.text.TextUtils;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᛸᤝᲈᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2573 implements InterfaceC2571 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C2301 f8167 = new C2301("com.bumptech.glide.load.resource.bitmap.Downsampler.Theme", null, C2301.f7412);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Context f8168;
 
     public C2573(Context context) {
@@ -24,19 +21,16 @@ public final class C2573 implements InterfaceC2571 {
     }
 
     @Override // p000.InterfaceC2571
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final boolean mo1209(Object obj, C2303 c2303) {
         String scheme = ((Uri) obj).getScheme();
         return scheme != null && scheme.equals("android.resource");
     }
 
     @Override // p000.InterfaceC2571
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final /* bridge */ /* synthetic */ InterfaceC2568 mo1210(Object obj, int i, int i2, C2303 c2303) {
         return m4584((Uri) obj, c2303);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final InterfaceC2568 m4584(Uri uri, C2303 c2303) {
         Context contextCreatePackageContext;
         int identifier;

@@ -5,12 +5,10 @@ import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤞᛸᲈᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3462 extends C3461 {
     @Override // p000.C3461
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ */
     public final Typeface mo5053(Object obj) {
         try {
             Object objNewInstance = Array.newInstance((Class<?>) this.f10941, 1);
@@ -22,7 +20,6 @@ public final class C3462 extends C3461 {
     }
 
     @Override // p000.C3461
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᲀᤞ */
     public final Method mo5055(Class cls) throws NoSuchMethodException {
         Class<?> cls2 = Array.newInstance((Class<?>) cls, 1).getClass();
         Class cls3 = Integer.TYPE;

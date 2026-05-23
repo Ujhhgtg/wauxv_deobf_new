@@ -257,7 +257,6 @@ public final class Cache implements Closeable, Flushable {
         }
     }
 
-    /* JADX INFO: renamed from: okhttp3.Cache$urls$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static final class AnonymousClass1 implements Iterator<String>, InterfaceC1737 {
         private boolean canRemove;
@@ -334,7 +333,6 @@ public final class Cache implements Closeable, Flushable {
         return Companion.key(httpUrl);
     }
 
-    /* JADX INFO: renamed from: -deprecated_directory, reason: not valid java name */
     public final File m777deprecated_directory() {
         return this.cache.getDirectory();
     }

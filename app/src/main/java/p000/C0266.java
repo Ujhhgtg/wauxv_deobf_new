@@ -2,24 +2,18 @@ package p000;
 
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲈᤝᲁᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C0266 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C0257 f1465;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public C2785 f1462 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public float f1463 = 0.0f;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final ArrayList f1464 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public boolean f1466 = false;
 
     public C0266(C0243 c0243) {
@@ -63,13 +57,11 @@ public class C0266 {
         return !z ? AbstractC2784.m4748(strM4748, "0.0") : strM4748;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m1367(C1791 c1791, int i) {
         this.f1465.m1361(c1791.m3539(i), 1.0f);
         this.f1465.m1361(c1791.m3539(i), -1.0f);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m1368(C2785 c2785, C2785 c2786, C2785 c2787, int i) {
         boolean z = false;
         if (i != 0) {
@@ -90,7 +82,6 @@ public class C0266 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m1369(C2785 c2785, C2785 c2786, C2785 c2787, int i) {
         boolean z = false;
         if (i != 0) {
@@ -111,17 +102,14 @@ public class C0266 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C2785 mo1370(boolean[] zArr) {
         return m1372(zArr, null);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public boolean mo1371() {
         return this.f1462 == null && this.f1463 == 0.0f && this.f1465.m1358() == 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C2785 m1372(boolean[] zArr, C2785 c2785) {
         int i;
         int iM1358 = this.f1465.m1358();
@@ -140,7 +128,6 @@ public class C0266 {
         return c2786;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m1373(C2785 c2785) {
         C2785 c2786 = this.f1462;
         if (c2786 != null) {
@@ -163,7 +150,6 @@ public class C0266 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m1374(C1791 c1791, C2785 c2785, boolean z) {
         if (c2785.f8890) {
             float fM1357 = this.f1465.m1357(c2785);
@@ -179,7 +165,6 @@ public class C0266 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public void mo1375(C1791 c1791, C0266 c0266, boolean z) {
         C0257 c0257 = this.f1465;
         

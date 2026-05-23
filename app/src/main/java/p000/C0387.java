@@ -10,15 +10,12 @@ import java.util.List;
 import java.util.Locale;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲈᤝᲇᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0387 extends AbstractC1258 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final Slider f1792;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final Rect f1793;
 
     public C0387(Slider slider) {
@@ -28,7 +25,6 @@ public final class C0387 extends AbstractC1258 {
     }
 
     @Override // p000.AbstractC1258
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final int mo1543(float f, float f2) {
         int i = 0;
         while (true) {
@@ -46,7 +42,6 @@ public final class C0387 extends AbstractC1258 {
     }
 
     @Override // p000.AbstractC1258
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final void mo1544(ArrayList arrayList) {
         for (int i = 0; i < this.f1792.getValues().size(); i++) {
             arrayList.add(Integer.valueOf(i));
@@ -54,7 +49,6 @@ public final class C0387 extends AbstractC1258 {
     }
 
     @Override // p000.AbstractC1258
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final boolean mo1545(int i, int i2, Bundle bundle) {
         Slider slider = this.f1792;
         if (!slider.isEnabled()) {
@@ -102,7 +96,6 @@ public final class C0387 extends AbstractC1258 {
     }
 
     @Override // p000.AbstractC1258
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final void mo1546(int i, C0092 c0092) {
         String string;
         AccessibilityNodeInfo accessibilityNodeInfo = c0092.f1045;

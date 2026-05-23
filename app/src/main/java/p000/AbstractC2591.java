@@ -3,12 +3,10 @@ package p000;
 import com.alibaba.fastjson2.internal.asm.Opcodes;
 import java.util.HashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᛸᲈᲇᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2591 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final HashMap f8211;
 
     static {
@@ -204,7 +202,6 @@ public abstract class AbstractC2591 {
         map.put(AbstractC2598.f8457, AbstractC1090.f4022);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C1089 m4600(AbstractC1649 abstractC1649) {
         C2590 c2590 = abstractC1649.f5588;
         C1089 c1089 = (C1089) f8211.get(c2590);

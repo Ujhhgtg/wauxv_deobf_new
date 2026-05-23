@@ -3,15 +3,12 @@ package p000;
 import java.util.HashSet;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᲁᲇᤝᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2562 implements InterfaceC0775 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C2712 f8130;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ ComponentCallbacks2C2563 f8131;
 
     public C2562(ComponentCallbacks2C2563 componentCallbacks2C2563, C2712 c2712) {
@@ -20,7 +17,6 @@ public final class C2562 implements InterfaceC0775 {
     }
 
     @Override // p000.InterfaceC0775
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo2265(boolean z) {
         if (z) {
             synchronized (this.f8131) {

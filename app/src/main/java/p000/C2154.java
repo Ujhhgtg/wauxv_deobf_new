@@ -4,12 +4,10 @@ import android.os.SystemClock;
 import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲀᲇᛸᲁᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2154 extends AbstractC1404 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ C2155 f7110;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

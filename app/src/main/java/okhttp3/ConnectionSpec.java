@@ -76,17 +76,14 @@ public final class ConnectionSpec {
         return new Builder(this).cipherSuites((String[]) Arrays.copyOf(strArrIntersect, strArrIntersect.length)).tlsVersions((String[]) Arrays.copyOf(strArrIntersect2, strArrIntersect2.length)).build();
     }
 
-    /* JADX INFO: renamed from: -deprecated_cipherSuites, reason: not valid java name */
     public final List<CipherSuite> m793deprecated_cipherSuites() {
         return cipherSuites();
     }
 
-    /* JADX INFO: renamed from: -deprecated_supportsTlsExtensions, reason: not valid java name */
     public final boolean m794deprecated_supportsTlsExtensions() {
         return this.supportsTlsExtensions;
     }
 
-    /* JADX INFO: renamed from: -deprecated_tlsVersions, reason: not valid java name */
     public final List<TlsVersion> m795deprecated_tlsVersions() {
         return tlsVersions();
     }

@@ -19,12 +19,10 @@ import me.hd.wauxv.data.bean.MsgInfoBean;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲇᲀᤝᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C1933 implements InterfaceC1429 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f6384;
 
     public /* synthetic */ C1933(int i) {
@@ -32,7 +30,6 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
     }
 
     @Override // p000.InterfaceC1429
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) throws JSONException, IllegalAccessException, InstantiationException, InvocationTargetException {
         String genericString;
         String strM3344;

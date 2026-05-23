@@ -10,15 +10,12 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲈᤞᤝᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C2309 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C2310 f7437 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static final C3689 createHook(C2309 c2309, List list) {
         
         Iterator it = list.iterator();
@@ -44,7 +41,6 @@ public class C2309 {
         return "PackageParam(" + super.toString() + ") by " + this.f7437;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final String m4173() {
         Object c2585;
         String str;
@@ -82,7 +78,6 @@ public class C2309 {
         return str2 == null ? "android" : str2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final C3689 m4174(AbstractC1938 abstractC1938, int i) {
         if (!(abstractC1938 instanceof C0798) && !(abstractC1938 instanceof C1982)) {
             throw new IllegalStateException(("This type [" + abstractC1938 + "] not support to hook, supported are Constructors and Methods").toString());
@@ -100,7 +95,6 @@ public class C2309 {
         return c3689;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final void m4175(AbstractC3680 abstractC3680) {
         C2310 c2310 = abstractC3680.f7437;
         if (c2310 == null) {

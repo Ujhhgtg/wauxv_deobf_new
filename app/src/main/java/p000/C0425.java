@@ -4,18 +4,14 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᲈᤞᲀᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0425 implements InterfaceC2568, InterfaceC1635 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f1980 = 1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Object f1981;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Object f1982;
 
     public C0425(InterfaceC0424 interfaceC0424, Bitmap bitmap) {
@@ -25,7 +21,6 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
         this.f1982 = interfaceC0424;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static C0425 m1628(InterfaceC0424 interfaceC0424, Bitmap bitmap) {
         if (bitmap == null) {
             return null;
@@ -44,7 +39,6 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
     }
 
     @Override // p000.InterfaceC1635
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo1629() {
         switch (1) {
             case 0:
@@ -60,7 +54,6 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1206() {
         switch (1) {
             case 0:
@@ -73,7 +66,6 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo1207() {
         switch (1) {
             case 0:
@@ -84,7 +76,6 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final Class mo1208() {
         switch (1) {
             case 0:

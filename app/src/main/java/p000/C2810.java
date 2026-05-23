@@ -17,39 +17,28 @@ import com.google.android.material.textfield.TextInputLayout;
 import java.lang.reflect.Field;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᛸᤝᤞᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2810 extends LinearLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final TextInputLayout f9000;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C0236 f9001;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public CharSequence f9002;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final CheckableImageButton f9003;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public ColorStateList f9004;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public PorterDuff.Mode f9005;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public int f9006;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public ImageView.ScaleType f9007;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public View.OnLongClickListener f9008;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public boolean f9009;
 
     public C2810(TextInputLayout textInputLayout, C0243 c0243) {
@@ -123,7 +112,6 @@ public final class C2810 extends LinearLayout {
         m4789();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int m4786() {
         int marginEnd;
         CheckableImageButton checkableImageButton = this.f9003;
@@ -136,7 +124,6 @@ public final class C2810 extends LinearLayout {
         return this.f9001.getPaddingStart() + getPaddingStart() + marginEnd;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4787(Drawable drawable) {
         CheckableImageButton checkableImageButton = this.f9003;
         checkableImageButton.setImageDrawable(drawable);
@@ -161,7 +148,6 @@ public final class C2810 extends LinearLayout {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m4788(boolean z) {
         CheckableImageButton checkableImageButton = this.f9003;
         if ((checkableImageButton.getVisibility() == 0) != z) {
@@ -171,7 +157,6 @@ public final class C2810 extends LinearLayout {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m4789() {
         int paddingStart;
         EditText editText = this.f9000.f789;
@@ -191,7 +176,6 @@ public final class C2810 extends LinearLayout {
         this.f9001.setPaddingRelative(paddingStart, compoundPaddingTop, dimensionPixelSize, compoundPaddingBottom);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m4790() {
         int i = (this.f9002 == null || this.f9009) ? 8 : 0;
         setVisibility((this.f9003.getVisibility() == 0 || i == 0) ? 0 : 8);

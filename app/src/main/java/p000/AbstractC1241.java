@@ -6,21 +6,16 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲈᲇᛸᤞᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1241 extends AbstractC1672 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final Class f4502;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final Class[] f4503;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final int f4504;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final boolean f4505;
 
     public AbstractC1241(Executable executable) {
@@ -37,7 +32,6 @@ public abstract class AbstractC1241 extends AbstractC1672 {
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public C0452 mo2345(Object obj, Object[] objArr) throws InvocationTargetException {
         super.mo2345(obj, objArr);
         boolean z = this.f4505;
@@ -69,25 +63,21 @@ public abstract class AbstractC1241 extends AbstractC1672 {
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int mo2889() {
         return this.f4504;
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Class[] mo2890() {
         return this.f4503;
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Class mo2891() {
         return AbstractC0010.m412(this.f4502);
     }
 
     @Override // p000.AbstractC1672
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final boolean mo2892() {
         return this.f4505;
     }

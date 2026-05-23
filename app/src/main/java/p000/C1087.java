@@ -1,14 +1,11 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲇᤞᲁᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1087 extends AbstractC0054 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f3907;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final AbstractC0428 f3908;
 
     public C1087(int i) {
@@ -24,13 +21,11 @@ public final class C1087 extends AbstractC0054 {
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public void mo917(CharSequence charSequence) {
         int i = this.f3907;
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public boolean mo918(AbstractC0428 abstractC0428) {
         switch (this.f3907) {
             case 0:
@@ -41,7 +36,6 @@ public final class C1087 extends AbstractC0054 {
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final AbstractC0428 mo920() {
         switch (this.f3907) {
             case 0:
@@ -52,7 +46,6 @@ public final class C1087 extends AbstractC0054 {
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public boolean mo921() {
         switch (this.f3907) {
             case 0:
@@ -63,7 +56,6 @@ public final class C1087 extends AbstractC0054 {
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final C0429 mo923(C1088 c1088) {
         switch (this.f3907) {
             case 0:
@@ -73,7 +65,6 @@ public final class C1087 extends AbstractC0054 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     private final void m2649(CharSequence charSequence) {
     }
 }

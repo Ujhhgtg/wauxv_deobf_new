@@ -5,12 +5,10 @@ import android.widget.AutoCompleteTextView;
 import com.google.android.material.internal.CheckableImageButton;
 import java.lang.reflect.Field;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class AccessibilityManagerTouchExplorationStateChangeListenerC0079 implements AccessibilityManager.TouchExplorationStateChangeListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C0466 f1026;
 
     public AccessibilityManagerTouchExplorationStateChangeListenerC0079(C0466 c0466) {

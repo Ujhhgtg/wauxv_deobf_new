@@ -2,12 +2,10 @@ package com.alibaba.fastjson2;
 
 import java.util.function.Function;
 
-/* JADX INFO: renamed from: com.alibaba.fastjson2.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0015 implements Function {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f529;
 
     @Override // java.util.function.Function

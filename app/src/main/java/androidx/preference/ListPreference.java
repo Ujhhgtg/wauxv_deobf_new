@@ -15,10 +15,8 @@ import p000.InterfaceC2390;
 /* JADX INFO: loaded from: classes.dex */
 public class ListPreference extends DialogPreference {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final CharSequence[] f307;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final String f308;
 
     public ListPreference(Context context, AttributeSet attributeSet, int i) {
@@ -44,7 +42,6 @@ public class ListPreference extends DialogPreference {
     }
 
     @Override // androidx.preference.Preference
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final CharSequence mo106() {
         InterfaceC2390 interfaceC2390 = this.f315;
         if (interfaceC2390 != null) {
@@ -63,7 +60,6 @@ public class ListPreference extends DialogPreference {
     }
 
     @Override // androidx.preference.Preference
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final Object mo105(TypedArray typedArray, int i) {
         return typedArray.getString(i);
     }

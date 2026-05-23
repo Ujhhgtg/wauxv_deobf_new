@@ -4,7 +4,6 @@ import java.util.Calendar;
 import java.util.TimeZone;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲈᤞᛸᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3518 {
@@ -12,7 +11,6 @@ public abstract class AbstractC3518 {
         new AtomicReference();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static Calendar m5102(Calendar calendar) {
         Calendar calendar2 = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
         if (calendar == null) {

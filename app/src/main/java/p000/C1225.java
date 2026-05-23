@@ -3,12 +3,10 @@ package p000;
 import java.io.Serializable;
 import java.util.RandomAccess;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲈᛸᲀᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1225 extends AbstractC0063 implements RandomAccess, Serializable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Enum[] f4439;
 
     public C1225(Enum[] enumArr) {
@@ -98,7 +96,6 @@ public final class C1225 extends AbstractC0063 implements RandomAccess, Serializ
     }
 
     @Override // p000.AbstractC0063
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo943() {
         return this.f4439.length;
     }

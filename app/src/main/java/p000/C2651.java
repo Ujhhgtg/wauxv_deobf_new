@@ -3,21 +3,16 @@ package p000;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᲇᤝᲈᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2651 implements Iterator, InterfaceC0842, InterfaceC1737 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f8553;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object f8554;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Iterator f8555;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public InterfaceC0842 f8556;
 
     @Override // java.util.Iterator
@@ -74,7 +69,6 @@ public final class C2651 implements Iterator, InterfaceC0842, InterfaceC1737 {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final RuntimeException m4652() {
         int i = this.f8553;
         if (i == 4) {
@@ -87,14 +81,12 @@ public final class C2651 implements Iterator, InterfaceC0842, InterfaceC1737 {
     }
 
     @Override // p000.InterfaceC0842
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo933(Object obj) throws Throwable {
         AbstractC0743.m2188(obj);
         this.f8553 = 4;
     }
 
     @Override // p000.InterfaceC0842
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final InterfaceC0877 mo934() {
         return C1187.f4327;
     }

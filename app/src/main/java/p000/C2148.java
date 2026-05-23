@@ -5,12 +5,10 @@ import java.util.Iterator;
 import okhttp3.Call;
 import okhttp3.Interceptor;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲀᲁᛸᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2148 extends AbstractC1756 implements InterfaceC1414 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ Interceptor.Chain f7099;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

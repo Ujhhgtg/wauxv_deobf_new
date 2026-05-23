@@ -4,15 +4,12 @@ import com.alibaba.fastjson2.JSONWriter;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲈᤝᤞᲀᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0503 extends InputStream {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2169;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ InterfaceC0508 f2170;
 
     public /* synthetic */ C0503(InterfaceC0508 interfaceC0508, int i) {
@@ -99,7 +96,6 @@ public final class C0503 extends InputStream {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     private final void m1759() {
     }
 }

@@ -1,21 +1,17 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲁᛸᲈᲀᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1659 extends AbstractC2396 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final C1659 f5607 = new C1659(C1665.f5622);
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final int mo928(Object obj) {
         return ((int[]) obj).length;
     }
 
     @Override // p000.AbstractC0739, p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final void mo930(InterfaceC0766 interfaceC0766, int i, Object obj) {
         C1658 c1658 = (C1658) obj;
         int iMo2238 = interfaceC0766.mo2238(this.f7659, i);
@@ -27,7 +23,6 @@ public final class C1659 extends AbstractC2396 {
     }
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final Object mo931(Object obj) {
         int[] iArr = (int[]) obj;
         C1658 c1658 = new C1658();
@@ -38,13 +33,11 @@ public final class C1659 extends AbstractC2396 {
     }
 
     @Override // p000.AbstractC2396
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final Object mo1642() {
         return new int[0];
     }
 
     @Override // p000.AbstractC2396
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final void mo1643(InterfaceC0767 interfaceC0767, Object obj, int i) {
         int[] iArr = (int[]) obj;
         for (int i2 = 0; i2 < i; i2++) {

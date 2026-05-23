@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᲈᤞᲇᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2435 extends AbstractC1438 implements InterfaceC1429 {
     @Override // p000.InterfaceC1429
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) {
         InterfaceC2654 interfaceC2654 = (InterfaceC2654) obj;
         int iIntValue = ((Number) obj2).intValue();

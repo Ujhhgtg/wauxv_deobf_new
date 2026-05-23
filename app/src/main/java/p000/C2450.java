@@ -7,15 +7,12 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import me.hd.wauxv.data.bean.ConversationBean;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᛸᤝᲇᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2450 implements InterfaceC1429 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f7787;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ Object f7788;
 
     public /* synthetic */ C2450(int i, Object obj) {
@@ -33,7 +30,6 @@ public final /* synthetic */ class C2450 implements InterfaceC1429 {
     /* JADX WARN: Code duplicated, block: B:75:0x00c8 A[SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:76:0x0030 A[SYNTHETIC] */
     @Override // p000.InterfaceC1429
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) throws IllegalAccessException, InstantiationException, InvocationTargetException {
         Object next;
         String str;

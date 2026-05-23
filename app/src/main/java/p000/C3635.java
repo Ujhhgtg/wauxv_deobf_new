@@ -5,15 +5,12 @@ import android.app.Instrumentation;
 import java.util.Arrays;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲇᤝᲀᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3635 extends AbstractC3680 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C3635 f11372;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final C2873 f11373;
 
     static {
@@ -22,7 +19,6 @@ public final class C3635 extends AbstractC3680 {
         f11373 = new C2873(new C3369(7));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static boolean m5221() {
         String[] strArr = AbstractC1574.f5469;
         String str = "initDexObfKey";
@@ -45,7 +41,6 @@ public final class C3635 extends AbstractC3680 {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static void m5222() {
         for (AbstractC1557 abstractC1557 : (List) AbstractC0960.f3486.getValue()) {
             if (abstractC1557 instanceof InterfaceC1575) {
@@ -161,7 +156,6 @@ public final class C3635 extends AbstractC3680 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public static C3447 m5223(String str) {
         List listM4842 = AbstractC2841.m4842(str, new char[]{'|'});
         if (listM4842.size() >= 3) {
@@ -172,7 +166,6 @@ public final class C3635 extends AbstractC3680 {
     }
 
     @Override // p000.AbstractC3680
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ */
     public final void mo3261() {
         int i = 0;
         MethodResolver c1973M3492 = AbstractC0968.m2482(AbstractC2519.classToKClass(Instrumentation.class)).m3492();

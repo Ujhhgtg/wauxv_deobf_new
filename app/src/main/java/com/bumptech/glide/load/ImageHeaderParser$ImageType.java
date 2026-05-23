@@ -18,7 +18,6 @@ public enum ImageHeaderParser$ImageType {
     UNKNOWN(false);
 
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean f532;
 
     ImageHeaderParser$ImageType(boolean z) {

@@ -1,6 +1,5 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᛸᲈᲇᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2350 extends AbstractC0901 {
@@ -13,19 +12,16 @@ public final class C2350 extends AbstractC0901 {
     }
 
     @Override // p000.AbstractC1649
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo3046(InterfaceC1648 interfaceC1648) {
         interfaceC1648.mo1583(this);
     }
 
     @Override // p000.AbstractC1649
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final InterfaceC3454 mo3047() {
         return C2819.f9030;
     }
 
     @Override // p000.AbstractC1649
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final AbstractC1649 mo3048(C3448 c3448) {
         throw new UnsupportedOperationException("unsupported");
     }

@@ -4,7 +4,6 @@ import android.view.DisplayCutout;
 import android.view.WindowInsets;
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤝᲀᲁᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C3658 extends C3657 {
@@ -30,13 +29,11 @@ public class C3658 extends C3657 {
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public C3669 mo5287() {
         return C3669.m5299(null, this.f11433.consumeDisplayCutout());
     }
 
     @Override // p000.C3665
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public C1077 mo5288() {
         DisplayCutout displayCutout = this.f11433.getDisplayCutout();
         if (displayCutout == null) {

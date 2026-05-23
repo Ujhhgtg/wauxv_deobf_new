@@ -15,29 +15,21 @@ import p000.C3579;
 /* JADX INFO: loaded from: classes.dex */
 public class SwipeDismissBehavior<V extends View> extends AbstractC0861 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public C3579 f565;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public boolean f566;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public boolean f567;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f568 = 2;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public float f569 = 0.0f;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public float f570 = 0.5f;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final C2863 f571 = new C2863(this);
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public boolean mo619(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
         boolean zM69 = this.f566;
         int actionMasked = motionEvent.getActionMasked();
@@ -59,7 +51,6 @@ public class SwipeDismissBehavior<V extends View> extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo620(CoordinatorLayout coordinatorLayout, View view, int i) {
         Field field = AbstractC3578.f11184;
         if (view.getImportantForAccessibility() == 0) {
@@ -74,7 +65,6 @@ public class SwipeDismissBehavior<V extends View> extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final boolean mo628(View view, MotionEvent motionEvent) {
         if (this.f565 == null) {
             return false;
@@ -86,7 +76,6 @@ public class SwipeDismissBehavior<V extends View> extends AbstractC0861 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public boolean mo635(View view) {
         return true;
     }

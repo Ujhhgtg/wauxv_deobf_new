@@ -11,7 +11,6 @@ import p000.C2447;
 /* JADX INFO: loaded from: classes.dex */
 public class QuickGridLayoutManager extends GridLayoutManager {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ, reason: contains not printable characters */
     public AbstractC2482 f544;
 
     public QuickGridLayoutManager(Context context, AttributeSet attributeSet, int i, int i2) {
@@ -22,19 +21,16 @@ public class QuickGridLayoutManager extends GridLayoutManager {
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ */
     public final void mo265(AbstractC2482 abstractC2482) {
         this.f544 = abstractC2482;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ, reason: contains not printable characters */
     public final void mo616(RecyclerView recyclerView) {
         this.f544 = recyclerView.getAdapter();
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ */
     public final void mo161(RecyclerView recyclerView) {
         this.f544 = null;
     }

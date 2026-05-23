@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲇᤝᲈᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1929 extends AbstractC1604 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final AbstractC0911 f6376;
 
     public AbstractC1929(AbstractC0911 abstractC0911) {
@@ -14,13 +12,11 @@ public abstract class AbstractC1929 extends AbstractC1604 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo1921() {
         return 8;
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo1922(C1023 c1023, C0519 c0519) {
         C1977 c1977 = c1023.f3742;
         C1977 c1978 = c1023.f3741;
@@ -40,9 +36,7 @@ public abstract class AbstractC1929 extends AbstractC1604 {
         c0519.m1839(iM3805);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public abstract int mo3015(C1023 c1023);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public abstract String mo3016();
 }

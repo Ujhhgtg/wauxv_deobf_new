@@ -4,12 +4,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲈᤞᲀᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewGroupOnHierarchyChangeListenerC0863 implements ViewGroup.OnHierarchyChangeListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ CoordinatorLayout f3276;
 
     public ViewGroupOnHierarchyChangeListenerC0863(CoordinatorLayout coordinatorLayout) {

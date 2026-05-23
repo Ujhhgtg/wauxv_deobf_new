@@ -13,12 +13,10 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okhttp3.internal.Util;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲀᤝᛸᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2141 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final /* synthetic */ C2141 f7086 = new C2141();
 
     /* JADX WARN: Code duplicated, block: B:85:0x0116  */
@@ -26,7 +24,6 @@ public final class C2141 {
     /* JADX WARN: Code duplicated, block: B:88:0x0147  */
     /* JADX WARN: Code duplicated, block: B:91:0x015a  */
     /* JADX WARN: Instruction removed from duplicated block: B:87:0x0134, please report this as an issue */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Object m3953(Type type, Response response) throws DownloadFileException, ConvertException {
         InterfaceC0508 interfaceC0508Source;
         if (type == String.class && response.isSuccessful()) {

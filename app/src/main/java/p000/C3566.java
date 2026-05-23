@@ -3,12 +3,10 @@ package p000;
 import android.text.TextUtils;
 import android.view.View;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤝᲀᛸᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3566 extends AbstractC1889 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ int f11179;
 
     public C3566(int i, Class cls, int i2, int i3, int i4) {
@@ -20,7 +18,6 @@ public final class C3566 extends AbstractC1889 {
     }
 
     @Override // p000.AbstractC1889
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final Object mo3674(View view) {
         switch (this.f11179) {
             case 0:
@@ -31,7 +28,6 @@ public final class C3566 extends AbstractC1889 {
     }
 
     @Override // p000.AbstractC1889
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final void mo3675(View view, Object obj) {
         switch (this.f11179) {
             case 0:
@@ -44,7 +40,6 @@ public final class C3566 extends AbstractC1889 {
     }
 
     @Override // p000.AbstractC1889
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final boolean mo3680(Object obj, Object obj2) {
         boolean zEquals;
         switch (this.f11179) {

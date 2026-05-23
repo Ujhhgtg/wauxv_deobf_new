@@ -9,24 +9,18 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲇᲁᤝᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0251 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C0251 f1415;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final /* synthetic */ InterfaceC1742[] f1416;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static boolean f1417;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final LinkedHashMap f1418;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C0243 f1419;
 
     static {
@@ -39,7 +33,6 @@ public final class C0251 {
         f1419 = AbstractC0710.m2135("android.app.ActivityThread", null, 6);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static ClassLoader m1336() {
         Class<AbstractC3681> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(AbstractC3681.class));
         ClassLoader classLoader = (clsM2183 != null ? clsM2183 : AbstractC3681.class).getClassLoader();
@@ -49,7 +42,6 @@ public final class C0251 {
         throw new IllegalStateException("Operating system not supported");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static Application m1337() {
         Object c2585;
         try {
@@ -80,7 +72,6 @@ public final class C0251 {
     }
 
     /* JADX WARN: Code duplicated, block: B:22:0x0082  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static String m1338() {
         Object c2585;
         String str;
@@ -147,7 +138,6 @@ public final class C0251 {
         return (applicationInfo2 == null || (str = applicationInfo2.packageName) == null) ? "android" : str;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static void m1339(ClassLoader classLoader, int i) {
         Method method;
         String str = "com.highcapable.yukihookapi.hook.xposed.bridge.status.YukiXposedModuleStatus_Impl_Impl_me_hd_wauxv" instanceof C2585 ? null : "com.highcapable.yukihookapi.hook.xposed.bridge.status.YukiXposedModuleStatus_Impl_Impl_me_hd_wauxv";
@@ -188,7 +178,6 @@ public final class C0251 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m1340(String str) {
         Method method;
         try {

@@ -8,12 +8,10 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.EditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᲇᛸᲁᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2909 extends C0078 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final TextInputLayout f9359;
 
     public C2909(TextInputLayout textInputLayout) {
@@ -21,7 +19,6 @@ public final class C2909 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo722(View view, C0092 c0092) {
         AccessibilityNodeInfo accessibilityNodeInfo = c0092.f1045;
         this.f1024.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfo);
@@ -79,7 +76,6 @@ public final class C2909 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo965(View view, AccessibilityEvent accessibilityEvent) {
         super.mo965(view, accessibilityEvent);
         this.f9359.f788.m2815().mo2691(accessibilityEvent);

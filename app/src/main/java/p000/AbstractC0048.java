@@ -2,15 +2,12 @@ package p000;
 
 import java.io.EOFException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0048 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final byte[] f978 = "0123456789abcdef".getBytes(AbstractC0599.f2413);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final boolean m906(C2646 c2646, int i, byte[] bArr, int i2) {
         int i3 = c2646.f8541;
         byte[] bArr2 = c2646.f8539;
@@ -29,7 +26,6 @@ public abstract class AbstractC0048 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final String m907(C0504 c0504, long j) throws EOFException {
         if (j > 0) {
             long j2 = j - 1;
@@ -46,7 +42,6 @@ public abstract class AbstractC0048 {
 
     /* JADX WARN: Code duplicated, block: B:49:0x0095 A[LOOP:0: B:8:0x0019->B:49:0x0095, LOOP_END] */
     /* JADX WARN: Code duplicated, block: B:55:0x0094 A[SYNTHETIC] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final int m908(C0504 c0504, C2302 c2302, boolean z) {
         int i;
         int i2;

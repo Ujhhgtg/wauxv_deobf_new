@@ -2,13 +2,11 @@ package p000;
 
 import okhttp3.internal.http2.Settings;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᲁᤞᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2847 extends AbstractC2846 {
     /* JADX WARN: Code duplicated, block: B:106:0x0121  */
     /* JADX WARN: Code duplicated, block: B:69:0x00c5  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public static final boolean m4850(String str) {
         char c;
         boolean z;
@@ -173,7 +171,6 @@ public abstract class AbstractC2847 extends AbstractC2846 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static Float m4851(String str) {
         try {
             if (m4850(str)) {

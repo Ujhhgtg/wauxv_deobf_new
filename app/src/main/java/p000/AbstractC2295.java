@@ -4,12 +4,10 @@ import com.alibaba.fastjson2.internal.asm.Opcodes;
 import com.umeng.analytics.pro.bc;
 import com.umeng.commonsdk.statistics.UMErrorCode;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲇᲁᲈᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2295 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C0408[] f7391;
 
     static {
@@ -292,7 +290,6 @@ public abstract class AbstractC2295 {
         m4160(c040235);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m4160(C0408 c0408) {
         f7391[c0408.f1921 + 1] = c0408;
     }

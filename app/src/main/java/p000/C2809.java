@@ -7,19 +7,15 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᛸᤝᤞᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2809 extends AbstractC1823 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C2809 f8998 = new C2809();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final LinkedHashSet f8999 = new LinkedHashSet();
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
         for (InterfaceC1736 interfaceC1736 : AbstractC0745.listOf(AbstractC2519.classToKClass(ContextWrapper.class), AbstractC2519.classToKClass(Activity.class))) {
             int i = 0;

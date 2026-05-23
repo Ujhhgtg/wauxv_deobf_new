@@ -2,21 +2,16 @@ package p000;
 
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲁᛸᲈᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1660 extends AbstractC2106 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final C1660 f5608;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int[] f5609;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f5610;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public boolean f5611;
 
     static {
@@ -36,7 +31,6 @@ public final class C1660 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static C1660 m3381(int i) {
         C1660 c1660 = new C1660(1);
         c1660.m3382(i);
@@ -84,7 +78,6 @@ public final class C1660 extends AbstractC2106 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m3382(int i) {
         m3925();
         int i2 = this.f5610;
@@ -105,7 +98,6 @@ public final class C1660 extends AbstractC2106 {
         this.f5611 = i >= iArr3[i3 + (-1)];
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final int m3383(int i) {
         int i2;
         int i3 = this.f5610;
@@ -138,7 +130,6 @@ public final class C1660 extends AbstractC2106 {
         return i2 - 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final int m3384(int i) {
         if (i >= this.f5610) {
             throw new IndexOutOfBoundsException("n >= size()");
@@ -150,7 +141,6 @@ public final class C1660 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final C1660 m3385() {
         int i = this.f5610;
         C1660 c1660 = new C1660(i);
@@ -160,7 +150,6 @@ public final class C1660 extends AbstractC2106 {
         return c1660;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final void m3386(int i, int i2) {
         m3925();
         if (i >= this.f5610) {
@@ -176,7 +165,6 @@ public final class C1660 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final void m3387(int i) {
         if (i < 0) {
             throw new IllegalArgumentException("newSize < 0");
@@ -188,7 +176,6 @@ public final class C1660 extends AbstractC2106 {
         this.f5610 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final void m3388() {
         m3925();
         if (this.f5611) {

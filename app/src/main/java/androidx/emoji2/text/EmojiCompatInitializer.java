@@ -24,13 +24,11 @@ import p000.RunnableC1145;
 /* JADX INFO: loaded from: classes.dex */
 public class EmojiCompatInitializer implements InterfaceC1636 {
     @Override // p000.InterfaceC1636
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final List mo92() {
         return Collections.singletonList(ProcessLifecycleInitializer.class);
     }
 
     @Override // p000.InterfaceC1636
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Object mo93(Context context) {
         Object objM1318;
         C1374 c1374 = new C1374(new C1044(context));
@@ -61,7 +59,6 @@ public class EmojiCompatInitializer implements InterfaceC1636 {
         final C0000 c0000Mo750 = ((InterfaceC1777) objM1318).mo750();
         c0000Mo750.m97(new InterfaceC0998(this) { // from class: androidx.emoji2.text.EmojiCompatInitializer.1
             @Override // p000.InterfaceC0998
-            /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
             public final void mo94() {
                 (Build.VERSION.SDK_INT >= 28 ? AbstractC0770.m2262(Looper.getMainLooper()) : new Handler(Looper.getMainLooper())).postDelayed(new RunnableC1145(), 500L);
                 c0000Mo750.m102(this);

@@ -23,16 +23,12 @@ import p000.C3669;
 /* JADX INFO: loaded from: classes.dex */
 public final class FragmentContainerView extends FrameLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final ArrayList f287;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final ArrayList f288;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public View.OnApplyWindowInsetsListener f289;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public boolean f290;
 
     public FragmentContainerView(Context context, AttributeSet attributeSet) {
@@ -219,7 +215,6 @@ public final class FragmentContainerView extends FrameLayout {
         super.startViewTransition(view);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m95(View view) {
         if (this.f288.contains(view)) {
             this.f287.add(view);

@@ -14,19 +14,14 @@ import p000.AbstractC3588;
 /* JADX INFO: loaded from: classes.dex */
 public class AppBarLayout$BaseBehavior<T> extends AbstractC3588 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public boolean f545;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f547;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public VelocityTracker f549;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public int f546 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f548 = -1;
 
     public AppBarLayout$BaseBehavior() {
@@ -36,7 +31,6 @@ public class AppBarLayout$BaseBehavior<T> extends AbstractC3588 {
     /* JADX WARN: Code duplicated, block: B:23:0x004a  */
     /* JADX WARN: Code duplicated, block: B:25:0x004e  */
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean mo619(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
         VelocityTracker velocityTracker;
         int iFindPointerIndex;
@@ -78,49 +72,41 @@ public class AppBarLayout$BaseBehavior<T> extends AbstractC3588 {
     }
 
     @Override // p000.AbstractC3588, p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean mo620(CoordinatorLayout coordinatorLayout, View view, int i) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final boolean mo621(CoordinatorLayout coordinatorLayout, View view, int i, int i2, int i3) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final /* synthetic */ void mo622(CoordinatorLayout coordinatorLayout, View view, View view2, int i, int i2, int[] iArr, int i3) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void mo623(CoordinatorLayout coordinatorLayout, View view, int i, int i2, int i3, int[] iArr) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void mo624(View view, Parcelable parcelable) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final Parcelable mo625(View view) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final boolean mo626(View view, int i, int i2) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final void mo627(View view, View view2, int i) {
         throw new ClassCastException();
     }
@@ -128,7 +114,6 @@ public class AppBarLayout$BaseBehavior<T> extends AbstractC3588 {
     /* JADX WARN: Code duplicated, block: B:28:0x005c  */
     /* JADX WARN: Code duplicated, block: B:32:0x0064 A[RETURN] */
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final boolean mo628(View view, MotionEvent motionEvent) {
         VelocityTracker velocityTracker;
         int actionMasked = motionEvent.getActionMasked();

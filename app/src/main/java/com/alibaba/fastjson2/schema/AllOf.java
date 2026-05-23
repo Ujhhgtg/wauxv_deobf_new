@@ -11,7 +11,6 @@ import com.umeng.analytics.pro.g;
 final class AllOf extends JSONSchema {
     final JSONSchema[] items;
 
-    /* JADX INFO: renamed from: com.alibaba.fastjson2.schema.AllOf$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$alibaba$fastjson2$schema$JSONSchema$Type;

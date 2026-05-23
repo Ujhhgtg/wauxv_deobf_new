@@ -3,24 +3,18 @@ package p000;
 import bsh.C0006;
 import java.lang.reflect.Array;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲁᲈᤞᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0356 extends AbstractC2707 implements InterfaceC0480 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public Class f1666;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public int f1667;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public Class f1668;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public boolean f1669;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public String f1670;
 
     public C0356() {
@@ -28,7 +22,6 @@ public final class C0356 extends AbstractC2707 implements InterfaceC0480 {
         this.f1669 = false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static String m1466(Class cls) {
         if (cls == Boolean.TYPE) {
             return "Z";
@@ -65,13 +58,11 @@ public final class C0356 extends AbstractC2707 implements InterfaceC0480 {
     }
 
     @Override // p000.InterfaceC0480
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo343() {
         this.f1668 = null;
         this.f1666 = null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Class m1467(C0550 c0550, RunnableC1668 runnableC1668) throws C1229 {
         Class cls = this.f1668;
         if (cls != null) {
@@ -113,7 +104,6 @@ public final class C0356 extends AbstractC2707 implements InterfaceC0480 {
         return this.f1668;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final String m1468(RunnableC1668 runnableC1668, C0550 c0550, String str) {
         String strM4752;
         String str2 = this.f1670;

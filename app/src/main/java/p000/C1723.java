@@ -1,6 +1,5 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲈᲇᲀᛸᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1723 extends AbstractC1730 {
@@ -11,7 +10,6 @@ public final class C1723 extends AbstractC1730 {
     }
 
     @Override // p000.AbstractC1730
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo3479() {
         return "null";
     }

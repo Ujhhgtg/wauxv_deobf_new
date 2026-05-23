@@ -19,54 +19,38 @@ import java.util.concurrent.Executors;
 import okhttp3.internal.http2.Http2Connection;
 import okhttp3.internal.ws.WebSocketProtocol;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᛸᲈᲁᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1270 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static volatile ExecutorService f4633 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static String f4644 = "YukiHookAPI";
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static boolean f4646 = true;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final int[] f4634 = {16842755, 16843041, 16843093, 16843097, 16843551, 16843754, 16843771, 16843778, 16843779};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final int[] f4635 = {16842755, 16843189, 16843190, 16843556, 16843557, 16843558, 16843866, 16843867};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final int[] f4636 = {16842755, 16843780, 16843781, 16843782, 16843783, 16843784, 16843785, 16843786, 16843787, 16843788, 16843789, 16843979, 16843980, 16844062};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final int[] f4637 = {16842755, 16843781, 16844062};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final int[] f4638 = {16843161};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final int[] f4639 = {16842755, 16843213};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final int[] f4640 = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static final int[] f4641 = {1, 2, 4, 5, 7, 8, 10, 11, 13, 14};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final int[] f4642 = {3, 6};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final int[] f4643 = {1, 2, 4, 5, 7, 8};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final Integer[] f4645 = {1000, Integer.valueOf(1001), 1002, 1003};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m2973(byte[] bArr) {
         StringBuilder sb = new StringBuilder();
         for (byte b : bArr) {
@@ -79,7 +63,6 @@ public abstract class AbstractC1270 {
         return sb.toString().toUpperCase();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static int m2974(C2504 c2504, AbstractC1138 abstractC1138, View view, View view2, AbstractC2491 abstractC2491, boolean z) {
         if (abstractC2491.m4467() == 0 || c2504.m4505() == 0 || view == null || view2 == null) {
             return 0;
@@ -90,7 +73,6 @@ public abstract class AbstractC1270 {
         return Math.min(abstractC1138.mo2747(), abstractC1138.mo2737(view2) - abstractC1138.mo2740(view));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static int m2975(C2504 c2504, AbstractC1138 abstractC1138, View view, View view2, AbstractC2491 abstractC2491, boolean z, boolean z2) {
         if (abstractC2491.m4467() == 0 || c2504.m4505() == 0 || view == null || view2 == null) {
             return 0;
@@ -102,7 +84,6 @@ public abstract class AbstractC1270 {
         return iMax;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static int m2976(C2504 c2504, AbstractC1138 abstractC1138, View view, View view2, AbstractC2491 abstractC2491, boolean z) {
         if (abstractC2491.m4467() == 0 || c2504.m4505() == 0 || view == null || view2 == null) {
             return 0;
@@ -114,7 +95,6 @@ public abstract class AbstractC1270 {
     }
 
     /* JADX WARN: Code duplicated, block: B:19:0x002f A[ORIG_RETURN, RETURN] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static boolean m2977(File file) {
         if (!file.exists()) {
             return true;
@@ -137,7 +117,6 @@ public abstract class AbstractC1270 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static int m2978(int i, String str) {
         while (i < str.length()) {
             char cCharAt = str.charAt(i);
@@ -156,7 +135,6 @@ public abstract class AbstractC1270 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static C3639 m2979(C0793 c0793, int i, ArrayList arrayList, C3639 c3639) {
         int i2;
         int i3 = i == 0 ? c0793.f3132 : c0793.f3133;
@@ -236,7 +214,6 @@ public abstract class AbstractC1270 {
         return c3639;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final void m2980(StringBuilder sb, StringBuilder sb2, int i) {
         if (i < 10) {
             sb.append('0');
@@ -244,7 +221,6 @@ public abstract class AbstractC1270 {
         sb2.append(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static long m2981(File file) {
         long jM2981 = 0;
         if (file.exists()) {
@@ -261,7 +237,6 @@ public abstract class AbstractC1270 {
         return jM2981;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static Executor m2982() {
         if (f4633 == null) {
             synchronized (AbstractC1270.class) {
@@ -277,7 +252,6 @@ public abstract class AbstractC1270 {
         return f4633;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static String m2983(String str) {
         try {
             FileInputStream fileInputStream = new FileInputStream(str);
@@ -309,7 +283,6 @@ public abstract class AbstractC1270 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static boolean m2984(InterfaceC3450 interfaceC3450, InterfaceC3450 interfaceC3451) {
         C3448 type = interfaceC3450.getType();
         C3448 type2 = interfaceC3451.getType();
@@ -352,13 +325,11 @@ public abstract class AbstractC1270 {
         return m2984(type, type2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static boolean m2985(int i, String str) {
         int i2 = i + 2;
         return i2 < str.length() && str.charAt(i) == '\"' && str.charAt(i + 1) == '\"' && str.charAt(i2) == '\"';
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static C2287 m2986(C2287 c2287, C2287 c2288) {
         InterfaceC3450[] interfaceC3450Arr = c2287.f7379;
         if (c2287 != c2288) {
@@ -391,7 +362,6 @@ public abstract class AbstractC1270 {
         return c2287;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static C1242 m2987(C1242 c1242, C1242 c1243) {
         if (c1242 == c1243) {
             return c1242;
@@ -429,7 +399,6 @@ public abstract class AbstractC1270 {
         return c1242M2897;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static InterfaceC3450 m2988(InterfaceC3450 interfaceC3450, InterfaceC3450 interfaceC3451) {
         if (interfaceC3450 == null || interfaceC3450.equals(interfaceC3451)) {
             return interfaceC3450;
@@ -462,7 +431,6 @@ public abstract class AbstractC1270 {
         return interfaceC3450M2988 == null ? C3448.f10882 : ((C3448) interfaceC3450M2988).m4965();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static final C1654 m2989(String str, String str2, int i, InterfaceC1425 interfaceC1425) {
         char cCharAt = str.charAt(i);
         if (((Boolean) interfaceC1425.invoke(Character.valueOf(cCharAt))).booleanValue()) {
@@ -471,7 +439,6 @@ public abstract class AbstractC1270 {
         return m2990(str, "Expected " + str2 + ", but got '" + cCharAt + "' at position " + i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public static final C1654 m2990(String str, String str2) {
         StringBuilder sbM2788 = AbstractC1194.m2788(str2, " when parsing an Instant from \"");
         sbM2788.append(m2999(64, str));
@@ -479,12 +446,10 @@ public abstract class AbstractC1270 {
         return new C1654(sbM2788.toString(), str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static final int m2991(int i, String str) {
         return (str.charAt(i + 1) - '0') + ((str.charAt(i) - '0') * 10);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public static String m2992(String str, boolean z) {
         if (!z) {
             return AbstractC1194.m2785("\"", str, "\"");
@@ -523,7 +488,6 @@ public abstract class AbstractC1270 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static String m2993(String str, boolean z) {
         int i;
         char c = '$';
@@ -684,7 +648,6 @@ public abstract class AbstractC1270 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static void m2994(EditorInfo editorInfo, CharSequence charSequence, int i, int i2) {
         if (editorInfo.extras == null) {
             editorInfo.extras = new Bundle();
@@ -694,7 +657,6 @@ public abstract class AbstractC1270 {
         editorInfo.extras.putInt("androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_END", i2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public static void m2995(ViewGroup viewGroup, boolean z) {
         if (Build.VERSION.SDK_INT >= 29) {
             AbstractC3582.m5200(viewGroup, z);
@@ -707,7 +669,6 @@ public abstract class AbstractC1270 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public static final void m2996(int[] iArr, int[] iArr2, InterfaceC2654 interfaceC2654) {
         ArrayList arrayList = new ArrayList();
         int length = iArr2.length;
@@ -725,7 +686,6 @@ public abstract class AbstractC1270 {
         throw new C1985(interfaceC2654.mo1342(), arrayList);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static final void m2997(int i, int i2, InterfaceC2654 interfaceC2654) {
         ArrayList arrayList = new ArrayList();
         int i3 = (~i) & i2;
@@ -738,7 +698,6 @@ public abstract class AbstractC1270 {
         throw new C1985(interfaceC2654.mo1342(), arrayList);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static final Class m2998(Type type) {
         if (type instanceof Class) {
             return (Class) type;
@@ -749,7 +708,6 @@ public abstract class AbstractC1270 {
         throw new C3451("Cannot cast type " + type + " to java.lang.Class object.");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static final String m2999(int i, String str) {
         if (str.length() <= i) {
             return str.toString();
@@ -757,7 +715,6 @@ public abstract class AbstractC1270 {
         return str.subSequence(0, i).toString() + "...";
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static boolean m3000(int i, int i2, int i3, int i4) {
         return (i3 == 1 || i3 == 2 || (i3 == 4 && i != 2)) || (i4 == 1 || i4 == 2 || (i4 == 4 && i2 != 2));
     }

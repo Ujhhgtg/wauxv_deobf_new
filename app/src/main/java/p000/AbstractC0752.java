@@ -2,7 +2,6 @@ package p000;
 
 import android.graphics.Color;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲇᤞᲀᲁᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0752 {
@@ -10,7 +9,6 @@ public abstract class AbstractC0752 {
         new ThreadLocal();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static int m2222(double d, double d2, double d3) {
         double d4 = (((-0.4986) * d3) + (((-1.5372) * d2) + (3.2406d * d))) / 100.0d;
         double d5 = ((0.0415d * d3) + ((1.8758d * d2) + ((-0.9689) * d))) / 100.0d;
@@ -26,13 +24,11 @@ public abstract class AbstractC0752 {
         return Color.rgb(iMin, iMin2, iRound3 >= 0 ? Math.min(iRound3, 255) : 0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static int m2223(int i, int i2, float f) {
         float f2 = 1.0f - f;
         return Color.argb((int) ((Color.alpha(i2) * f) + (Color.alpha(i) * f2)), (int) ((Color.red(i2) * f) + (Color.red(i) * f2)), (int) ((Color.green(i2) * f) + (Color.green(i) * f2)), (int) ((Color.blue(i2) * f) + (Color.blue(i) * f2)));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static int m2224(int i, int i2) {
         int iAlpha = Color.alpha(i2);
         int iAlpha2 = Color.alpha(i);
@@ -40,7 +36,6 @@ public abstract class AbstractC0752 {
         return Color.argb(i3, m2225(Color.red(i), iAlpha2, Color.red(i2), iAlpha, i3), m2225(Color.green(i), iAlpha2, Color.green(i2), iAlpha, i3), m2225(Color.blue(i), iAlpha2, Color.blue(i2), iAlpha, i3));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static int m2225(int i, int i2, int i3, int i4, int i5) {
         if (i5 == 0) {
             return 0;
@@ -48,7 +43,6 @@ public abstract class AbstractC0752 {
         return AbstractC2784.m4756(255, i2, i3 * i4, (i * 255) * i2) / (i5 * 255);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static int m2226(int i, int i2) {
         if (i2 < 0 || i2 > 255) {
             throw new IllegalArgumentException("alpha must be between 0 and 255.");

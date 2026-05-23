@@ -5,12 +5,10 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲇᤞᲈᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1209 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final ArrayList f4348;
 
     public C1209(int i) {
@@ -35,7 +33,6 @@ public final class C1209 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public synchronized InterfaceC2574 m2810(Class cls) {
         int size = this.f4348.size();
         for (int i = 0; i < size; i++) {
@@ -47,7 +44,6 @@ public final class C1209 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public List m2811() {
         ArrayList arrayList;
         if (this.f4348.isEmpty()) {
@@ -59,7 +55,6 @@ public final class C1209 {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public synchronized ArrayList m2812(Class cls, Class cls2) {
         ArrayList arrayList = new ArrayList();
         if (cls2.isAssignableFrom(cls)) {

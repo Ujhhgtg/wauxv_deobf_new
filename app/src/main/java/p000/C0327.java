@@ -2,11 +2,9 @@ package p000;
 
 import bsh.Primitive;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤞᲇᲈᤝᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0327 extends AbstractC2707 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Object[] m1434(C0550 c0550, RunnableC1668 runnableC1668) {
         int length = m4710().length;
         Object[] objArr = new Object[length];

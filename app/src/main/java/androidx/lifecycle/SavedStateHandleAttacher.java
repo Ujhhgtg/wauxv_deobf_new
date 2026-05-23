@@ -10,7 +10,6 @@ import p000.InterfaceC1777;
 /* JADX INFO: loaded from: classes.dex */
 public final class SavedStateHandleAttacher implements InterfaceC1774 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C2624 f296;
 
     public SavedStateHandleAttacher(C2624 c2624) {
@@ -18,7 +17,6 @@ public final class SavedStateHandleAttacher implements InterfaceC1774 {
     }
 
     @Override // p000.InterfaceC1774
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo0(InterfaceC1777 interfaceC1777, EnumC1769 enumC1769) {
         if (enumC1769 != EnumC1769.ON_CREATE) {
             throw new IllegalStateException(("Next event must be ON_CREATE, it was " + enumC1769).toString());

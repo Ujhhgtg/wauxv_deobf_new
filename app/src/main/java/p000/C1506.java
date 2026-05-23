@@ -2,27 +2,20 @@ package p000;
 
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᤝᲈᲀᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1506 extends C0793 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᤞᲈ, reason: contains not printable characters */
     public float f5317 = -1.0f;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᲈᤞ, reason: contains not printable characters */
     public int f5318 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᤞᲀ, reason: contains not printable characters */
     public int f5319 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᲀᤞ, reason: contains not printable characters */
     public C0779 f5320 = this.f3102;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲀᲇ, reason: contains not printable characters */
     public int f5321 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲇᲀ, reason: contains not printable characters */
     public boolean f5322;
 
     public C1506() {
@@ -35,7 +28,6 @@ public final class C1506 extends C0793 {
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1485(C1791 c1791, boolean z) {
         C0794 c0794 = (C0794) this.f3112;
         if (c0794 == null) {
@@ -101,13 +93,11 @@ public final class C1506 extends C0793 {
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final boolean mo1486() {
         return true;
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final C0779 mo2311(int i) {
         switch (AbstractC2784.m4759(i)) {
             case 0:
@@ -133,19 +123,16 @@ public final class C1506 extends C0793 {
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public final boolean mo1487() {
         return this.f5322;
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public final boolean mo1488() {
         return this.f5322;
     }
 
     @Override // p000.C0793
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ */
     public final void mo2336(C1791 c1791, boolean z) {
         if (this.f3112 == null) {
             return;
@@ -166,13 +153,11 @@ public final class C1506 extends C0793 {
         m2331(0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public final void m3244(int i) {
         this.f5320.m2281(i);
         this.f5322 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public final void m3245(int i) {
         if (this.f5321 == i) {
             return;

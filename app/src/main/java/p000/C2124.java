@@ -3,15 +3,12 @@ package p000;
 import android.content.Context;
 import android.view.SubMenu;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᤝᲁᛸᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2124 extends MenuC1944 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final Class f7020;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final int f7021;
 
     public C2124(Context context, Class cls, int i) {
@@ -26,7 +23,6 @@ public final class C2124 extends MenuC1944 {
     }
 
     @Override // p000.MenuC1944
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final MenuItemC1946 mo3754(int i, int i2, int i3, CharSequence charSequence) {
         int size = this.f6412.size() + 1;
         int i4 = this.f7021;

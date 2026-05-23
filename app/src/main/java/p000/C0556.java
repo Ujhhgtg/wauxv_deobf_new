@@ -2,18 +2,14 @@ package p000;
 
 import android.graphics.Typeface;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤞᤝᲈᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0556 extends AbstractC2209 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Typeface f2281;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C0094 f2282;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public boolean f2283;
 
     public C0556(C0094 c0094, Typeface typeface) {
@@ -22,7 +18,6 @@ public final class C0556 extends AbstractC2209 {
     }
 
     @Override // p000.AbstractC2209
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final void mo1936(int i) {
         if (this.f2283) {
             return;
@@ -34,7 +29,6 @@ public final class C0556 extends AbstractC2209 {
     }
 
     @Override // p000.AbstractC2209
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final void mo1937(Typeface typeface, boolean z) {
         if (this.f2283) {
             return;

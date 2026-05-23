@@ -12,12 +12,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᛸᲇᤝᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2827 extends AbstractC1831 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final UriMatcher f9077;
 
     static {
@@ -32,13 +30,11 @@ public final class C2827 extends AbstractC1831 {
     }
 
     @Override // p000.InterfaceC0955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final Class mo1391() {
         return InputStream.class;
     }
 
     @Override // p000.AbstractC1831
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo1392(Object obj) throws IOException {
         ((InputStream) obj).close();
     }
@@ -47,7 +43,6 @@ public final class C2827 extends AbstractC1831 {
     /* JADX WARN: Code duplicated, block: B:30:0x0068  */
     /* JADX WARN: Code duplicated, block: B:35:0x0083  */
     @Override // p000.AbstractC1831
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1393(ContentResolver contentResolver, Uri uri) throws FileNotFoundException {
         Uri uriLookupContact;
         InputStream inputStreamOpenContactPhotoInputStream;

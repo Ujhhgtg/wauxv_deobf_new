@@ -5,15 +5,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲁᲈᤝᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2517 extends AbstractC0739 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final C0707 f8044;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C0254 f8045;
 
     public C2517(C0707 c0707) {
@@ -23,50 +20,42 @@ public final class C2517 extends AbstractC0739 {
     }
 
     @Override // p000.InterfaceC1743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final InterfaceC2654 mo1363() {
         return this.f8045;
     }
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final Object mo925() {
         return new ArrayList();
     }
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final int mo926(Object obj) {
         return ((ArrayList) obj).size();
     }
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final Iterator mo927(Object obj) {
         return new C0060(1, (Object[]) obj);
     }
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final int mo928(Object obj) {
         return ((Object[]) obj).length;
     }
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final Object mo931(Object obj) {
         return new ArrayList(Arrays.asList((Object[]) obj));
     }
 
     @Override // p000.AbstractC0056
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final Object mo932(Object obj) {
         ArrayList arrayList = (ArrayList) obj;
         return arrayList.toArray((Object[]) Array.newInstance((Class<?>) this.f8044.mo2114(), arrayList.size()));
     }
 
     @Override // p000.AbstractC0739
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final void mo1364(Object obj, int i, Object obj2) {
         ((ArrayList) obj).add(i, obj2);
     }

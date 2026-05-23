@@ -15,15 +15,12 @@ import me.hd.wauxv.R;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲇᤞᲀᤝᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0751 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final ThreadLocal f2842 = new ThreadLocal();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static ColorStateList m2220(Resources resources, XmlResourceParser xmlResourceParser, Resources.Theme theme) throws XmlPullParserException, IOException {
         int next;
         AttributeSet attributeSetAsAttributeSet = Xml.asAttributeSet(xmlResourceParser);
@@ -54,7 +51,6 @@ public abstract class AbstractC0751 {
     /* JADX WARN: Type inference failed for: r9v19 */
     /* JADX WARN: Type inference failed for: r9v20 */
     /* JADX WARN: Type inference failed for: r9v5, types: [android.content.res.TypedArray] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static ColorStateList m2221(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) throws XmlPullParserException, IOException {
         int depth;
         int color;

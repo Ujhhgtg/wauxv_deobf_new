@@ -19,51 +19,36 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲁᲇᤞᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1069 implements Closeable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final File f3866;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final File f3867;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final File f3868;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final File f3869;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final long f3871;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public BufferedWriter f3874;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public int f3876;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public long f3873 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final LinkedHashMap f3875 = new LinkedHashMap(0, 0.75f, true);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public long f3877 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final ThreadPoolExecutor f3878 = new ThreadPoolExecutor(0, 1, 60, TimeUnit.SECONDS, new LinkedBlockingQueue(), new ThreadFactoryC1066());
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final CallableC1065 f3879 = new CallableC1065(this);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final int f3870 = 1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final int f3872 = 1;
 
     public C1069(File file, long j) {
@@ -74,7 +59,6 @@ public final class C1069 implements Closeable {
         this.f3871 = j;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m2620(C1069 c1069, C1067 c1067, boolean z) {
         synchronized (c1069) {
             C1068 c1068 = (C1068) c1067.f3856;
@@ -132,7 +116,6 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static void m2621(BufferedWriter bufferedWriter) {
         StrictMode.ThreadPolicy threadPolicy = StrictMode.getThreadPolicy();
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder(threadPolicy).permitUnbufferedIo().build());
@@ -143,14 +126,12 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static void m2622(File file) throws IOException {
         if (file.exists() && !file.delete()) {
             throw new IOException();
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static void m2623(BufferedWriter bufferedWriter) {
         StrictMode.ThreadPolicy threadPolicy = StrictMode.getThreadPolicy();
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder(threadPolicy).permitUnbufferedIo().build());
@@ -161,7 +142,6 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static C1069 m2624(File file, long j) throws IOException {
         if (j <= 0) {
             throw new IllegalArgumentException("maxSize <= 0");
@@ -193,7 +173,6 @@ public final class C1069 implements Closeable {
         return c10610;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public static void m2625(File file, File file2, boolean z) throws IOException {
         if (z) {
             m2622(file2);
@@ -224,7 +203,6 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final C1067 m2626(String str) {
         synchronized (this) {
             try {
@@ -252,7 +230,6 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final synchronized C0094 m2627(String str) {
         if (this.f3874 == null) {
             throw new IllegalStateException("cache is closed");
@@ -280,13 +257,11 @@ public final class C1069 implements Closeable {
         return new C0094(16, c1068.f3861);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final boolean m2628() {
         int i = this.f3876;
         return i >= 2000 && i >= this.f3875.size();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public final void m2629() throws IOException {
         m2622(this.f3868);
         Iterator it = this.f3875.values().iterator();
@@ -312,7 +287,6 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public final void m2630() {
         File file = this.f3867;
         C2832 c2832 = new C2832(new FileInputStream(file), AbstractC3521.f11031);
@@ -358,7 +332,6 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public final void m2631(String str) throws IOException {
         String strSubstring;
         int iIndexOf = str.indexOf(32);
@@ -408,7 +381,6 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public final synchronized void m2632() {
         try {
             BufferedWriter bufferedWriter = this.f3874;
@@ -449,7 +421,6 @@ public final class C1069 implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public final void m2633() {
         while (this.f3873 > this.f3871) {
             String str = (String) ((Map.Entry) this.f3875.entrySet().iterator().next()).getKey();

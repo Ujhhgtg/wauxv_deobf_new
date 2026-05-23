@@ -9,26 +9,20 @@ import android.graphics.drawable.LayerDrawable;
 import android.util.Log;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲁᤝᲀᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0216 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final PorterDuff.Mode f1336 = PorterDuff.Mode.SRC_IN;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static C0216 f1337;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public C2577 f1338;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static synchronized PorterDuffColorFilter m1249(int i, PorterDuff.Mode mode) {
         return C2577.m4586(i, mode);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static synchronized void m1250() {
         if (f1337 == null) {
             C0216 c0216 = new C0216();
@@ -48,7 +42,6 @@ public final class C0216 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static void m1251(Drawable drawable, C3402 c3402, int[] iArr) {
         PorterDuff.Mode mode = C2577.f8171;
         int[] state = drawable.getState();
@@ -74,7 +67,6 @@ public final class C0216 {
         drawable.setColorFilter(porterDuffColorFilterM4586);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final synchronized Drawable m1252(Context context, int i) {
         return this.f1338.m4588(context, i);
     }

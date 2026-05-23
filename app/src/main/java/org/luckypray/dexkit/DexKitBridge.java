@@ -19,10 +19,8 @@ import p000.InterfaceC1425;
 /* JADX INFO: loaded from: classes.dex */
 public final class DexKitBridge implements Closeable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public volatile long f975;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final ReentrantReadWriteLock f976 = new ReentrantReadWriteLock();
 
     public DexKitBridge(ClassLoader classLoader) {
@@ -81,7 +79,6 @@ public final class DexKitBridge implements Closeable {
         close();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final C0700 m903(InterfaceC1425 interfaceC1425) {
         C1332 c1332 = new C1332(4);
         interfaceC1425.invoke(c1332);
@@ -115,7 +112,6 @@ public final class DexKitBridge implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C1975 m904(C1333 c1333) {
         byte[] bArrM1518 = c1333.m1518();
         ReentrantReadWriteLock.ReadLock lock = this.f976.readLock();
@@ -154,7 +150,6 @@ public final class DexKitBridge implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final C0700 m905(long[] jArr) {
         ReentrantReadWriteLock.ReadLock lock = this.f976.readLock();
         lock.lock();

@@ -4,12 +4,10 @@ import bsh.classpath.ClassManagerImpl;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲇᤝᤞᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C0479 extends URLClassLoader {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final ClassManagerImpl f2089;
 
     public C0479(ClassManagerImpl classManagerImpl, URL[] urlArr) {

@@ -6,12 +6,10 @@ import android.content.res.Configuration;
 import java.util.Iterator;
 import java.util.Map;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲇᲀᲈᤝᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0249 extends AbstractC0567 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ int f1413;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -21,7 +19,6 @@ public final class C0249 extends AbstractC0567 {
     }
 
     @Override // p000.AbstractC0567
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1332(C1676 c1676) {
         Object c2585;
         Object c2586;
@@ -158,7 +155,6 @@ public final class C0249 extends AbstractC0567 {
     }
 
     @Override // p000.AbstractC0567
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public void mo1333(C1676 c1676) {
         Object c2585;
         switch (this.f1413) {

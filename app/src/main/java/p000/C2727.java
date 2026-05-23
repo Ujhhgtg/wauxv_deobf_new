@@ -2,21 +2,16 @@ package p000;
 
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᲁᤞᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2727 extends AbstractC2867 implements InterfaceC1601 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final C2727 f8791;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final String f8792;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final String f8793;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final String f8794;
 
     static {
@@ -27,7 +22,6 @@ public final class C2727 extends AbstractC2867 implements InterfaceC1601 {
         f8794 = "查看历史撤回以及缓存过的朋友圈内容";
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static String m4727(String str) {
         String[] strArr = AbstractC1574.f5469;
         if (!AbstractC2841.m4828(str, "select *,rowid from SnsInfo", false)) {
@@ -40,7 +34,6 @@ public final class C2727 extends AbstractC2867 implements InterfaceC1601 {
     }
 
     @Override // p000.InterfaceC1601
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final void mo2031(C1563 c1563, String str) {
         if (mo3264()) {
             String strM4727 = m4727(str);
@@ -53,7 +46,6 @@ public final class C2727 extends AbstractC2867 implements InterfaceC1601 {
     }
 
     @Override // p000.InterfaceC1601
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final void mo3342(C1563 c1563, String str) {
         if (mo3264()) {
             String strM4727 = m4727(str);
@@ -66,25 +58,21 @@ public final class C2727 extends AbstractC2867 implements InterfaceC1601 {
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
     public final String mo1127() {
         return f8794;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public final String mo1128() {
         return f8793;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public final String mo1129() {
         return f8792;
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

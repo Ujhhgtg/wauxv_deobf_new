@@ -12,75 +12,52 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤞᛸᲀᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3579 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static final InterpolatorC1680 f11189 = new InterpolatorC1680(3);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public int f11190;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final int f11191;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public float[] f11193;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public float[] f11194;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public float[] f11195;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public float[] f11196;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public int[] f11197;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public int[] f11198;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public int[] f11199;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int f11200;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public VelocityTracker f11201;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final float f11202;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final float f11203;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final int f11204;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final OverScroller f11205;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final AbstractC0743 f11206;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public View f11207;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public boolean f11208;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final CoordinatorLayout f11209;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public int f11192 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final RunnableC0141 f11210 = new RunnableC0141(18, this);
 
     public C3579(Context context, CoordinatorLayout coordinatorLayout, AbstractC0743 abstractC0743) {
@@ -97,7 +74,6 @@ public final class C3579 {
         this.f11205 = new OverScroller(context, f11189);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m5180() {
         this.f11192 = -1;
         float[] fArr = this.f11193;
@@ -118,7 +94,6 @@ public final class C3579 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m5181(View view, int i) {
         ViewParent parent = view.getParent();
         CoordinatorLayout coordinatorLayout = this.f11209;
@@ -132,7 +107,6 @@ public final class C3579 {
     }
 
     /* JADX WARN: Code duplicated, block: B:25:0x0044 A[RETURN] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final boolean m5182(View view, float f, float f2) {
         if (view != null) {
             AbstractC0743 abstractC0743 = this.f11206;
@@ -151,7 +125,6 @@ public final class C3579 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m5183(int i) {
         float[] fArr = this.f11193;
         if (fArr != null) {
@@ -170,7 +143,6 @@ public final class C3579 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m5184(int i, int i2, int i3) {
         if (i == 0) {
             return 0;
@@ -182,7 +154,6 @@ public final class C3579 {
         return Math.min(iAbs > 0 ? Math.round(Math.abs(fSin / iAbs) * 1000.0f) * 4 : (int) (((Math.abs(i) / i3) + 1.0f) * 256.0f), 600);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean m5185() {
         if (this.f11190 == 2) {
             OverScroller overScroller = this.f11205;
@@ -215,7 +186,6 @@ public final class C3579 {
         return this.f11190 == 2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final View m5186(int i, int i2) {
         CoordinatorLayout coordinatorLayout = this.f11209;
         for (int childCount = coordinatorLayout.getChildCount() - 1; childCount >= 0; childCount--) {
@@ -228,7 +198,6 @@ public final class C3579 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final boolean m5187(int i, int i2, int i3, int i4) {
         float f;
         float f2;
@@ -287,7 +256,6 @@ public final class C3579 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final boolean m5188(int i) {
         if ((this.f11200 & (1 << i)) != 0) {
             return true;
@@ -296,7 +264,6 @@ public final class C3579 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m5189(MotionEvent motionEvent) {
         int i;
         int actionMasked = motionEvent.getActionMasked();
@@ -456,7 +423,6 @@ public final class C3579 {
         m5192(motionEvent);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m5190() {
         VelocityTracker velocityTracker = this.f11201;
         float f = this.f11202;
@@ -486,7 +452,6 @@ public final class C3579 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m5191(float f, float f2, int i) {
         float[] fArr = this.f11193;
         if (fArr == null || fArr.length <= i) {
@@ -547,7 +512,6 @@ public final class C3579 {
         this.f11200 |= 1 << i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void m5192(MotionEvent motionEvent) {
         int pointerCount = motionEvent.getPointerCount();
         for (int i = 0; i < pointerCount; i++) {
@@ -561,7 +525,6 @@ public final class C3579 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void m5193(int i) {
         this.f11209.removeCallbacks(this.f11210);
         if (this.f11190 != i) {
@@ -573,7 +536,6 @@ public final class C3579 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final boolean m5194(int i, int i2) {
         if (this.f11208) {
             return m5187(i, i2, (int) this.f11201.getXVelocity(this.f11192), (int) this.f11201.getYVelocity(this.f11192));
@@ -583,7 +545,6 @@ public final class C3579 {
 
     /* JADX WARN: Code duplicated, block: B:52:0x00d6  */
     /* JADX WARN: Code duplicated, block: B:61:0x0114  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final boolean m5195(MotionEvent motionEvent) {
         View viewM5186;
         int actionMasked = motionEvent.getActionMasked();
@@ -685,7 +646,6 @@ public final class C3579 {
         return this.f11190 == 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final boolean m5196(View view, int i) {
         if (view == this.f11207 && this.f11192 == i) {
             return true;

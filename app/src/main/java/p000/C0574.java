@@ -1,21 +1,17 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤞᲈᲁᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0574 extends AbstractC1352 implements Comparable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final C0574 f2340 = new C0574(0);
 
     @Override // p000.AbstractC1352, p000.InterfaceC3407
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo1214() {
         return m1981("", "");
     }
 
     @Override // java.lang.Comparable
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters and merged with bridge method [inline-methods] */
     public final int compareTo(C0574 c0574) {
         if (this == c0574) {
             return 0;
@@ -36,7 +32,6 @@ public final class C0574 extends AbstractC1352 implements Comparable {
     }
 
     /* JADX WARN: Code duplicated, block: B:15:0x0051  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final String m1981(String str, String str2) {
         StringBuilder sb = new StringBuilder(100);
         int length = this.f4836.length;

@@ -9,15 +9,12 @@ import android.view.WindowId;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤝᤞᛸᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewTreeObserverOnPreDrawListenerC3439 implements ViewTreeObserver.OnPreDrawListener, View.OnAttachStateChangeListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public AbstractC3436 f10846;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public ViewGroup f10847;
 
     /* JADX WARN: Code duplicated, block: B:101:0x021e  */

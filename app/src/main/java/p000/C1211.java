@@ -3,19 +3,16 @@ package p000;
 import android.widget.EditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲇᲀᛸᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1211 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ C1212 f4350;
 
     public C1211(C1212 c1212) {
         this.f4350 = c1212;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m2813(TextInputLayout textInputLayout) {
         C1212 c1212 = this.f4350;
         C1210 c1210 = c1212.f4372;

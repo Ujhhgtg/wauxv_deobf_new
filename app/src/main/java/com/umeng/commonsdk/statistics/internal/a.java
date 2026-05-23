@@ -14,7 +14,6 @@ public class a {
     private String b;
     private String c;
 
-    /* JADX INFO: renamed from: com.umeng.commonsdk.statistics.internal.a$a, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public static class C0038a {
         private static final a a = new a();

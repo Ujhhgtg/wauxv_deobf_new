@@ -2,15 +2,12 @@ package p000;
 
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲁᤝᛸᲀᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2165 implements InterfaceC1436 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f7125;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ InterfaceC1425 f7126;
 
     public /* synthetic */ C2165(InterfaceC1425 interfaceC1425, int i) {
@@ -18,7 +15,6 @@ public final /* synthetic */ class C2165 implements InterfaceC1436 {
         this.f7126 = interfaceC1425;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m3957(Integer num, Integer num2, String str, Object obj) {
         switch (this.f7125) {
             case 0:

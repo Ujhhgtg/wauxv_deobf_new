@@ -221,27 +221,22 @@ public final class Request {
         this.tags = map;
     }
 
-    /* JADX INFO: renamed from: -deprecated_body, reason: not valid java name */
     public final RequestBody m878deprecated_body() {
         return this.body;
     }
 
-    /* JADX INFO: renamed from: -deprecated_cacheControl, reason: not valid java name */
     public final CacheControl m879deprecated_cacheControl() {
         return cacheControl();
     }
 
-    /* JADX INFO: renamed from: -deprecated_headers, reason: not valid java name */
     public final Headers m880deprecated_headers() {
         return this.headers;
     }
 
-    /* JADX INFO: renamed from: -deprecated_method, reason: not valid java name */
     public final String m881deprecated_method() {
         return this.method;
     }
 
-    /* JADX INFO: renamed from: -deprecated_url, reason: not valid java name */
     public final HttpUrl m882deprecated_url() {
         return this.url;
     }

@@ -10,57 +10,40 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᲁᲇᤝᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C1790 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public int f5952 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public RecyclerView f5953;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public AbstractC2491 f5954;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean f5955;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public boolean f5956;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public View f5957;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final C2502 f5958;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public boolean f5959;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final LinearInterpolator f5960;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final DecelerateInterpolator f5961;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public PointF f5962;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final DisplayMetrics f5963;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public boolean f5964;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public float f5965;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public int f5966;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public int f5967;
 
     public C1790(Context context) {
@@ -81,7 +64,6 @@ public class C1790 {
         this.f5963 = context.getResources().getDisplayMetrics();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static int m3525(int i, int i2, int i3, int i4, int i5) {
         if (i5 == -1) {
             return i3 - i;
@@ -103,7 +85,6 @@ public class C1790 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public int mo1956(View view, int i) {
         AbstractC2491 abstractC2491 = this.f5954;
         if (abstractC2491 == null || !abstractC2491.mo152()) {
@@ -113,7 +94,6 @@ public class C1790 {
         return m3525(AbstractC2491.m4455(view) - ((ViewGroup.MarginLayoutParams) c2492).leftMargin, AbstractC2491.m4458(view) + ((ViewGroup.MarginLayoutParams) c2492).rightMargin, abstractC2491.m4470(), abstractC2491.f7954 - abstractC2491.m4471(), i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public int mo1957(View view, int i) {
         AbstractC2491 abstractC2491 = this.f5954;
         if (abstractC2491 == null || !abstractC2491.mo153()) {
@@ -123,7 +103,6 @@ public class C1790 {
         return m3525(AbstractC2491.m4459(view) - ((ViewGroup.MarginLayoutParams) c2492).topMargin, AbstractC2491.m4454(view) + ((ViewGroup.MarginLayoutParams) c2492).bottomMargin, abstractC2491.m4472(), abstractC2491.f7955 - abstractC2491.m4469(), i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int m3526(int i) {
         float fAbs = Math.abs(i);
         if (!this.f5964) {
@@ -133,7 +112,6 @@ public class C1790 {
         return (int) Math.ceil(fAbs * this.f5965);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public PointF mo1958(int i) {
         Object obj = this.f5954;
         if (obj instanceof InterfaceC2503) {
@@ -145,7 +123,6 @@ public class C1790 {
 
     /* JADX WARN: Code duplicated, block: B:34:0x0072  */
     /* JADX WARN: Code duplicated, block: B:70:0x014e  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m3527(int i, int i2) {
         int i3;
         PointF pointFMo1958;
@@ -262,7 +239,6 @@ public class C1790 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m3528() {
         if (this.f5956) {
             this.f5956 = false;

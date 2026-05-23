@@ -5534,7 +5534,6 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 final int i = 1;
                 BeanUtils.declaredFields(cls3, new Consumer(objectWriterCreatorASM) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᤞᲇᲈᤝ
 
-                    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
                     public final /* synthetic */ ObjectWriterCreatorASM f7351;
 
                     {
@@ -5575,7 +5574,6 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                             final int i2 = 0;
                             BeanUtils.declaredFields(cls3, new Consumer(objectWriterCreatorASM) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᤞᲇᲈᤝ
 
-                                /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
                                 public final /* synthetic */ ObjectWriterCreatorASM f7351;
 
                                 {

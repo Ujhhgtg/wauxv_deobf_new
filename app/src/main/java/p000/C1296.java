@@ -1,17 +1,13 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᛸᤞᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1296 extends AbstractC0054 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C1295 f4716;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public String f4717;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final StringBuilder f4718;
 
     public C1296(char c, int i, int i2) {
@@ -24,7 +20,6 @@ public final class C1296 extends AbstractC0054 {
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo917(CharSequence charSequence) {
         if (this.f4717 == null) {
             this.f4717 = charSequence.toString();
@@ -36,7 +31,6 @@ public final class C1296 extends AbstractC0054 {
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo919() {
         String strM2863 = AbstractC1228.m2863(this.f4717.trim());
         C1295 c1295 = this.f4716;
@@ -45,13 +39,11 @@ public final class C1296 extends AbstractC0054 {
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final AbstractC0428 mo920() {
         return this.f4716;
     }
 
     @Override // p000.AbstractC0054
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final C0429 mo923(C1088 c1088) {
         int i = c1088.f3915;
         int i2 = c1088.f3912;

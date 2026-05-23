@@ -10,18 +10,14 @@ import android.view.ViewGroup;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᤞᲈᲀᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0785 implements InterfaceC1648 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public int f2970;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int f2971;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final Object f2972;
 
     public C0785(View view) {
@@ -29,7 +25,6 @@ public final class C0785 implements InterfaceC1648 {
     }
 
     @Override // p000.InterfaceC1648
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public void mo1583(C2350 c2350) {
         if (c2350.f5588.f8204 == 3) {
             int i = ((C0903) c2350.f3344).f3364;
@@ -73,32 +68,26 @@ public final class C0785 implements InterfaceC1648 {
     }
 
     @Override // p000.InterfaceC1648
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public void mo1579(C2923 c2923) {
     }
 
     @Override // p000.InterfaceC1648
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public void mo1581(C2351 c2351) {
     }
 
     @Override // p000.InterfaceC1648
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public void mo1582(C1329 c1329) {
     }
 
     @Override // p000.InterfaceC1648
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public void mo1584(C1674 c1674) {
     }
 
     @Override // p000.InterfaceC1648
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public void mo1588(C2868 c2868) {
     }
 
     @Override // p000.InterfaceC1648
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public void mo1589(C2868 c2868) {
     }
 }

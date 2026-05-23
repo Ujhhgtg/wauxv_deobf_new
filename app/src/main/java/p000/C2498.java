@@ -16,33 +16,24 @@ import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲁᛸᲇᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2498 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final ArrayList f7967;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public ArrayList f7968;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final ArrayList f7969;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final List f7970;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f7971;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f7972;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public C2497 f7973;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ RecyclerView f7974;
 
     public C2498(RecyclerView recyclerView) {
@@ -56,7 +47,6 @@ public final class C2498 {
         this.f7972 = 2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4490(AbstractC2508 abstractC2508, boolean z) {
         RecyclerView.m201(abstractC2508);
         View view = abstractC2508.f8006;
@@ -96,7 +86,6 @@ public final class C2498 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final int m4491(int i) {
         RecyclerView recyclerView = this.f7974;
         if (i >= 0 && i < recyclerView.f411.m4505()) {
@@ -108,7 +97,6 @@ public final class C2498 {
         throw new IndexOutOfBoundsException(sbM2787.toString());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C2497 m4492() {
         if (this.f7973 == null) {
             C2497 c2497 = new C2497();
@@ -121,7 +109,6 @@ public final class C2498 {
         return this.f7973;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m4493() {
         RecyclerView recyclerView;
         AbstractC2482 abstractC2482;
@@ -132,7 +119,6 @@ public final class C2498 {
         c2497.f7966.add(abstractC2482);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m4494(AbstractC2482 abstractC2482, boolean z) {
         C2497 c2497 = this.f7973;
         if (c2497 != null) {
@@ -151,7 +137,6 @@ public final class C2498 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m4495() {
         ArrayList arrayList = this.f7969;
         for (int size = arrayList.size() - 1; size >= 0; size--) {
@@ -168,7 +153,6 @@ public final class C2498 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m4496(int i) {
         if (RecyclerView.f348) {
             Log.d("RecyclerView", "Recycling cached view at index " + i);
@@ -182,7 +166,6 @@ public final class C2498 {
         arrayList.remove(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m4497(View view) {
         AbstractC2508 abstractC2508M204 = RecyclerView.m204(view);
         boolean zM4520 = abstractC2508M204.m4520();
@@ -209,7 +192,6 @@ public final class C2498 {
     /* JADX WARN: Code duplicated, block: B:55:0x00b1 A[LOOP:2: B:51:0x00a6->B:55:0x00b1, LOOP_END] */
     /* JADX WARN: Code duplicated, block: B:84:0x00b4 A[EDGE_INSN: B:84:0x00b4->B:56:0x00b4 BREAK  A[LOOP:1: B:47:0x0093->B:54:0x00ae], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:85:0x00b4 A[EDGE_INSN: B:85:0x00b4->B:56:0x00b4 BREAK  A[LOOP:1: B:47:0x0093->B:54:0x00ae, LOOP_LABEL: LOOP:1: B:47:0x0093->B:54:0x00ae], SYNTHETIC] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m4498(AbstractC2508 abstractC2508) {
         boolean z;
         boolean z2;
@@ -345,7 +327,6 @@ public final class C2498 {
         abstractC2508.f8023 = null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m4499(View view) {
         AbstractC2487 abstractC2487;
         AbstractC2508 abstractC2508M204 = RecyclerView.m204(view);
@@ -405,7 +386,6 @@ public final class C2498 {
     /* JADX WARN: Code duplicated, block: B:362:0x065a  */
     /* JADX WARN: Code duplicated, block: B:365:0x0660 A[ADDED_TO_REGION] */
     /* JADX WARN: Code duplicated, block: B:367:0x0664  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final AbstractC2508 m4500(int i, long j) {
         boolean z;
         AbstractC2508 abstractC2508Mo2042;
@@ -1029,7 +1009,6 @@ public final class C2498 {
         return abstractC2508Mo2042;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m4501(AbstractC2508 abstractC2508) {
         if (abstractC2508.f8020) {
             this.f7968.remove(abstractC2508);
@@ -1041,7 +1020,6 @@ public final class C2498 {
         abstractC2508.f8015 &= -33;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void m4502() {
         AbstractC2491 abstractC2491 = this.f7974.f369;
         this.f7972 = this.f7971 + (abstractC2491 != null ? abstractC2491.f7950 : 0);

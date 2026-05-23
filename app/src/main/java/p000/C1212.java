@@ -21,75 +21,52 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲇᲀᛸᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1212 extends LinearLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final TextInputLayout f4351;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final FrameLayout f4352;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final CheckableImageButton f4353;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public ColorStateList f4354;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public PorterDuff.Mode f4355;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public View.OnLongClickListener f4356;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final CheckableImageButton f4357;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final C0978 f4358;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int f4359;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final LinkedHashSet f4360;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public ColorStateList f4361;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public PorterDuff.Mode f4362;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public int f4363;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public ImageView.ScaleType f4364;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public View.OnLongClickListener f4365;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public CharSequence f4366;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final C0236 f4367;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public boolean f4368;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public EditText f4369;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final AccessibilityManager f4370;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public C0466 f4371;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public final C1210 f4372;
 
     public C1212(TextInputLayout textInputLayout, C0243 c0243) {
@@ -206,7 +183,6 @@ public final class C1212 extends LinearLayout {
         addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC0569(1, this));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final CheckableImageButton m2814(ViewGroup viewGroup, LayoutInflater layoutInflater, int i) {
         CheckableImageButton checkableImageButton = (CheckableImageButton) layoutInflater.inflate(R.layout.design_text_input_end_icon, viewGroup, false);
         checkableImageButton.setId(i);
@@ -216,7 +192,6 @@ public final class C1212 extends LinearLayout {
         return checkableImageButton;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final AbstractC1213 m2815() {
         AbstractC1213 c0944;
         int i = this.f4359;
@@ -245,7 +220,6 @@ public final class C1212 extends LinearLayout {
         return c0944;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int m2816() {
         int marginStart;
         if (m2817() || m2818()) {
@@ -258,17 +232,14 @@ public final class C1212 extends LinearLayout {
         return this.f4367.getPaddingEnd() + getPaddingEnd() + marginStart;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean m2817() {
         return this.f4352.getVisibility() == 0 && this.f4357.getVisibility() == 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final boolean m2818() {
         return this.f4353.getVisibility() == 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m2819(boolean z) {
         boolean z2;
         boolean zIsActivated;
@@ -293,7 +264,6 @@ public final class C1212 extends LinearLayout {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m2820(int i) {
         if (this.f4359 == i) {
             return;
@@ -356,7 +326,6 @@ public final class C1212 extends LinearLayout {
         m2819(true);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m2821(boolean z) {
         if (m2817() != z) {
             this.f4357.setVisibility(z ? 0 : 8);
@@ -366,7 +335,6 @@ public final class C1212 extends LinearLayout {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m2822(Drawable drawable) {
         CheckableImageButton checkableImageButton = this.f4353;
         checkableImageButton.setImageDrawable(drawable);
@@ -374,7 +342,6 @@ public final class C1212 extends LinearLayout {
         AbstractC1574.m3289(this.f4351, checkableImageButton, this.f4354, this.f4355);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m2823(AbstractC1213 abstractC1213) {
         if (this.f4369 == null) {
             return;
@@ -387,13 +354,11 @@ public final class C1212 extends LinearLayout {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m2824() {
         this.f4352.setVisibility((this.f4357.getVisibility() != 0 || m2818()) ? 8 : 0);
         setVisibility((m2817() || m2818() || ((this.f4366 == null || this.f4368) ? '\b' : (char) 0) == 0) ? 0 : 8);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m2825() {
         CheckableImageButton checkableImageButton = this.f4353;
         Drawable drawable = checkableImageButton.getDrawable();
@@ -407,7 +372,6 @@ public final class C1212 extends LinearLayout {
         textInputLayout.m708();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void m2826() {
         int paddingEnd;
         TextInputLayout textInputLayout = this.f4351;
@@ -428,7 +392,6 @@ public final class C1212 extends LinearLayout {
         this.f4367.setPaddingRelative(dimensionPixelSize, paddingTop, paddingEnd, paddingBottom);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void m2827() {
         C0236 c0236 = this.f4367;
         int visibility = c0236.getVisibility();

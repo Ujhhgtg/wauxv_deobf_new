@@ -4,12 +4,10 @@ import android.view.View;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.EditText;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲀᛸᲁᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1632 extends View.AccessibilityDelegate {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ C1633 f5515;
 
     public C1632(C1633 c1633) {

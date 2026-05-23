@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲇᛸᲈᤞᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1203 extends AbstractC1204 implements Comparable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C0899 f4342;
 
     public C1203(C0899 c0899, int i) {
@@ -38,13 +36,11 @@ public final class C1203 extends AbstractC1204 implements Comparable {
     }
 
     @Override // p000.InterfaceC3407
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo1214() {
         return this.f4342.mo1214();
     }
 
     @Override // p000.AbstractC1204
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int mo2795(C1023 c1023, C0519 c0519, int i, int i2) {
         C1301 c1301 = c1023.f3744;
         C0899 c0899 = this.f4342;

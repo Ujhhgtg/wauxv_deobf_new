@@ -21,24 +21,18 @@ import java.util.HashMap;
 import java.util.HashSet;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲀᤞᲁᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0792 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final int[] f3068 = {0, 4, 8};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final SparseIntArray f3069;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final HashMap f3070 = new HashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final boolean f3071 = true;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final HashMap f3072 = new HashMap();
 
     static {
@@ -132,7 +126,6 @@ public final class C0792 {
         sparseIntArray.append(53, 81);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static int[] m2299(C0366 c0366, String str) {
         int iIntValue;
         String[] strArrSplit = str.split(",");
@@ -172,7 +165,6 @@ public final class C0792 {
         return i2 != strArrSplit.length ? Arrays.copyOf(iArr, i2) : iArr;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static C0787 m2300(Context context, AttributeSet attributeSet) {
         C0787 c0787 = new C0787();
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC2461.f7809);
@@ -456,14 +448,12 @@ public final class C0792 {
         return c0787;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static int m2301(TypedArray typedArray, int i, int i2) {
         int resourceId = typedArray.getResourceId(i, i2);
         return resourceId == -1 ? typedArray.getInt(i, -1) : resourceId;
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m2302(ConstraintLayout constraintLayout) {
         int i;
         HashSet hashSet;
@@ -696,7 +686,6 @@ public final class C0792 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m2303(ConstraintLayout constraintLayout) {
         C0792 c0792 = this;
         int childCount = constraintLayout.getChildCount();
@@ -823,7 +812,6 @@ public final class C0792 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m2304(Context context, int i) {
         XmlResourceParser xml = context.getResources().getXml(i);
         try {

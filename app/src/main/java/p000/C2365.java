@@ -14,18 +14,14 @@ import okhttp3.OkHttpClient;
 import okhttp3.OkHttpUtils;
 import okhttp3.Request;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᤞᲇᲁᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C2365 implements InterfaceC1425 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f7600;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ long f7601;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ Object f7602;
 
     public /* synthetic */ C2365(Object obj, long j, int i) {
@@ -78,7 +74,6 @@ public final /* synthetic */ class C2365 implements InterfaceC1425 {
                         String str2 = "点赞";
                         InterfaceC1429 interfaceC1429 = new InterfaceC1429() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᲁᤞᲈᛸ
                             @Override // p000.InterfaceC1429
-                            /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
                             public final Object mo1196(Object obj2, Object obj3) {
                                 long j3;
                                 List list = (List) obj2;

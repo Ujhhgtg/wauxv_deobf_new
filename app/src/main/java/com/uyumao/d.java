@@ -71,7 +71,6 @@ public class d implements g.a {
         }
     }
 
-    /* JADX INFO: renamed from: com.uyumao.d$d, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public class RunnableC0044d implements Runnable {
         public final /* synthetic */ String a;

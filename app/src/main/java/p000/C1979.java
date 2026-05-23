@@ -3,12 +3,10 @@ package p000;
 import java.util.Collection;
 import java.util.TreeMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᛸᲁᤝᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1979 extends AbstractC1930 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final TreeMap f6551;
 
     public C1979(C1023 c1023) {
@@ -17,12 +15,10 @@ public final class C1979 extends AbstractC1930 {
     }
 
     @Override // p000.AbstractC2643
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final Collection mo1923() {
         return this.f6551.values();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final int m3814(AbstractC0891 abstractC0891) {
         if (abstractC0891 == null) {
             throw new NullPointerException("ref == null");
@@ -35,7 +31,6 @@ public final class C1979 extends AbstractC1930 {
         throw new IllegalArgumentException("not found");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final synchronized void m3815(AbstractC0891 abstractC0891) {
         try {
             if (abstractC0891 == null) {

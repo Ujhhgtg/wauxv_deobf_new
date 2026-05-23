@@ -38,25 +38,18 @@ import p000.RunnableC1668;
 /* JADX INFO: loaded from: classes.dex */
 public class ClassManagerImpl extends C0482 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final C0492 f458;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public boolean f459;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public C0492 f460;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final ConcurrentHashMap.KeySetView f461 = ConcurrentHashMap.newKeySet();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final ReferenceQueue f462 = new ReferenceQueue();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public C0479 f463;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final ConcurrentHashMap f464;
 
     public ClassManagerImpl() {
@@ -69,7 +62,6 @@ public class ClassManagerImpl extends C0482 {
     }
 
     @Override // p000.C0482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo296(InterfaceC0480 interfaceC0480) {
         ReferenceQueue referenceQueue = this.f462;
         WeakReference weakReference = new WeakReference(interfaceC0480, referenceQueue);
@@ -87,7 +79,6 @@ public class ClassManagerImpl extends C0482 {
     }
 
     @Override // p000.C0482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final Class mo297(String str) {
         ClassLoader classLoader;
         C0479 c0479;
@@ -193,7 +184,6 @@ public class ClassManagerImpl extends C0482 {
     }
 
     @Override // p000.C0482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void mo298() {
         ArrayList arrayList = new ArrayList();
         ConcurrentHashMap.KeySetView<WeakReference> keySetView = this.f461;
@@ -213,7 +203,6 @@ public class ClassManagerImpl extends C0482 {
 
     /* JADX WARN: Multi-variable type inference failed */
     @Override // p000.C0482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Class mo299(String str, byte[] bArr) {
         C0489 c0489 = new C0489(1);
         c0489.f2105 = bArr;
@@ -227,7 +216,6 @@ public class ClassManagerImpl extends C0482 {
     }
 
     @Override // p000.C0482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void mo300() throws C3523 {
         try {
             m304().m1735(true);
@@ -240,7 +228,6 @@ public class ClassManagerImpl extends C0482 {
 
     /* JADX WARN: Multi-variable type inference failed */
     @Override // p000.C0482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final String mo301(String str) throws C0706 {
         C0492 c0492M304 = m304();
         c0492M304.m1735(true);
@@ -262,7 +249,6 @@ public class ClassManagerImpl extends C0482 {
     }
 
     @Override // p000.C0482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final URL mo302(String str) {
         C0479 c0479 = this.f463;
         URL resource = c0479 != null ? c0479.getResource(str.substring(1)) : null;
@@ -270,12 +256,10 @@ public class ClassManagerImpl extends C0482 {
     }
 
     @Override // p000.C0482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final boolean mo303() {
         return this.f459;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final C0492 m304() {
         C0492 c0492 = this.f460;
         if (c0492 != null) {
@@ -293,7 +277,6 @@ public class ClassManagerImpl extends C0482 {
         return this.f460;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m305(String[] strArr) throws C0706 {
         this.f2097.clear();
         this.f2096.clear();

@@ -6,15 +6,12 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲈᤝᤞᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3514 implements InterfaceC1996 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final Set f11018 = Collections.unmodifiableSet(new HashSet(Arrays.asList("file", "content", "android.resource")));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Object f11019;
 
     public C3514(C3513 c3513) {
@@ -22,13 +19,11 @@ public final class C3514 implements InterfaceC1996 {
     }
 
     @Override // p000.InterfaceC1996
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final boolean mo1394(Object obj) {
         return f11018.contains(((Uri) obj).getScheme());
     }
 
     @Override // p000.InterfaceC1996
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final C1995 mo1395(Object obj, int i, int i2, C2303 c2303) {
         InterfaceC0955 c0272;
         Uri uri = (Uri) obj;

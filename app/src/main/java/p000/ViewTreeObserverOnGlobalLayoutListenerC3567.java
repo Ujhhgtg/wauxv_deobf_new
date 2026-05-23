@@ -6,12 +6,10 @@ import android.view.ViewTreeObserver;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤝᲀᤞᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewTreeObserverOnGlobalLayoutListenerC3567 implements ViewTreeObserver.OnGlobalLayoutListener, View.OnAttachStateChangeListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final WeakHashMap f11180 = new WeakHashMap();
 
     @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener

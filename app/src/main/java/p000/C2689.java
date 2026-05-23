@@ -7,15 +7,12 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 import com.google.android.material.imageview.ShapeableImageView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᛸᤝᤞᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2689 extends ViewOutlineProvider {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Rect f8679 = new Rect();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ ShapeableImageView f8680;
 
     public C2689(ShapeableImageView shapeableImageView) {

@@ -20,12 +20,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.MsgInfoBean;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᤝᲇᛸᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C1884 implements InterfaceC1425 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f6230;
 
     public /* synthetic */ C1884(int i) {

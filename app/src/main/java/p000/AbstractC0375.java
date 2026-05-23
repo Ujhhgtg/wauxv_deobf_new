@@ -2,7 +2,6 @@ package p000;
 
 import java.util.Arrays;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲇᲁᲈᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0375 extends AbstractC1460 {
@@ -25,7 +24,6 @@ public abstract class AbstractC0375 extends AbstractC1460 {
         return i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public final byte[] m1518() {
         C1353 c1353 = new C1353();
         mo961(c1353);

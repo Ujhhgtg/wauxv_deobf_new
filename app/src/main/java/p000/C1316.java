@@ -9,30 +9,22 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᲈᤞᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C1316 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f4756;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int f4757;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public int f4758;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f4759;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f4760;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Object f4761;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final Object f4762;
 
     public C1316(int i) {
@@ -64,7 +56,6 @@ public class C1316 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void m3026(View view) {
         C2804 c2804 = (C2804) view.getLayoutParams();
         c2804.f8943 = this;
@@ -79,7 +70,6 @@ public class C1316 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public void m3027() {
         C2805 c2805M1889;
         ArrayList arrayList = (ArrayList) this.f4761;
@@ -95,7 +85,6 @@ public class C1316 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void m3028() {
         C2805 c2805M1889;
         View view = (View) ((ArrayList) this.f4761).get(0);
@@ -110,7 +99,6 @@ public class C1316 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public void m3029() {
         ((ArrayList) this.f4761).clear();
         this.f4757 = -2147483648;
@@ -118,19 +106,16 @@ public class C1316 {
         this.f4759 = 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int m3030() {
         ArrayList arrayList = (ArrayList) this.f4761;
         return ((StaggeredGridLayoutManager) this.f4762).f439 ? m3032(arrayList.size() - 1, -1) : m3032(0, arrayList.size());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int m3031() {
         ArrayList arrayList = (ArrayList) this.f4761;
         return ((StaggeredGridLayoutManager) this.f4762).f439 ? m3032(0, arrayList.size()) : m3032(arrayList.size() - 1, -1);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public int m3032(int i, int i2) {
         StaggeredGridLayoutManager staggeredGridLayoutManager = (StaggeredGridLayoutManager) this.f4762;
         int iMo2746 = staggeredGridLayoutManager.f434.mo2746();
@@ -150,7 +135,6 @@ public class C1316 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public Object m3033(Object obj) {
         synchronized (((C1227) this.f4762)) {
             Object obj2 = ((LinkedHashMap) ((C1744) this.f4761).f5843).get(obj);
@@ -163,7 +147,6 @@ public class C1316 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public int m3034(int i) {
         int i2 = this.f4758;
         if (i2 != -2147483648) {
@@ -176,7 +159,6 @@ public class C1316 {
         return this.f4758;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public View m3035(int i, int i2) {
         StaggeredGridLayoutManager staggeredGridLayoutManager = (StaggeredGridLayoutManager) this.f4762;
         ArrayList arrayList = (ArrayList) this.f4761;
@@ -206,7 +188,6 @@ public class C1316 {
         return view;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int m3036(int i) {
         int i2 = this.f4757;
         if (i2 != -2147483648) {
@@ -219,7 +200,6 @@ public class C1316 {
         return this.f4757;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public void m3037() {
         ArrayList arrayList = (ArrayList) this.f4761;
         int size = arrayList.size();
@@ -235,7 +215,6 @@ public class C1316 {
         this.f4758 = -2147483648;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public void m3038() {
         ArrayList arrayList = (ArrayList) this.f4761;
         View view = (View) arrayList.remove(0);
@@ -250,7 +229,6 @@ public class C1316 {
         this.f4757 = -2147483648;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public void m3039(View view) {
         C2804 c2804 = (C2804) view.getLayoutParams();
         c2804.f8943 = this;
@@ -265,7 +243,6 @@ public class C1316 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public Object m3040(Object obj, Object obj2) {
         Object objPut;
         synchronized (((C1227) this.f4762)) {

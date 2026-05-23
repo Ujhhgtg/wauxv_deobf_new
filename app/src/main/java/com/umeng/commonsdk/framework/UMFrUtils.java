@@ -123,7 +123,6 @@ public class UMFrUtils {
                 if (fileArrListFiles != null && fileArrListFiles.length != 0) {
                     Arrays.sort(fileArrListFiles, new Comparator<File>() { // from class: com.umeng.commonsdk.framework.UMFrUtils.2
                         @Override // java.util.Comparator
-                        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                         public int compare(File file2, File file3) {
                             long jLastModified = file2.lastModified() - file3.lastModified();
                             if (jLastModified > 0) {
@@ -297,7 +296,6 @@ public class UMFrUtils {
                 if (fileArrListFiles != null && fileArrListFiles.length > i) {
                     Arrays.sort(fileArrListFiles, new Comparator<File>() { // from class: com.umeng.commonsdk.framework.UMFrUtils.1
                         @Override // java.util.Comparator
-                        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                         public int compare(File file2, File file3) {
                             long jLastModified = file2.lastModified() - file3.lastModified();
                             if (jLastModified > 0) {

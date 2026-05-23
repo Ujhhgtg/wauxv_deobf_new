@@ -6,15 +6,12 @@ import android.view.View;
 import android.view.ViewParent;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᛸᤞᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3603 extends AbstractC0781 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f11248;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public boolean f11249;
 
     @Override // p000.AbstractC0781, android.view.View
@@ -52,7 +49,6 @@ public abstract class AbstractC3603 extends AbstractC0781 {
     }
 
     @Override // p000.AbstractC0781
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public void mo2289(AttributeSet attributeSet) {
         super.mo2289(attributeSet);
         if (attributeSet != null) {
@@ -70,6 +66,5 @@ public abstract class AbstractC3603 extends AbstractC0781 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public abstract void mo52(C1367 c1367, int i, int i2);
 }

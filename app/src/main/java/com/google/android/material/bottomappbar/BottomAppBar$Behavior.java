@@ -17,13 +17,11 @@ public class BottomAppBar$Behavior extends HideBottomViewOnScrollBehavior<Object
     }
 
     @Override // com.google.android.material.behavior.HideBottomViewOnScrollBehavior, p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo620(CoordinatorLayout coordinatorLayout, View view, int i) {
         throw new ClassCastException();
     }
 
     @Override // com.google.android.material.behavior.HideBottomViewOnScrollBehavior, p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final boolean mo626(View view, int i, int i2) {
         throw new ClassCastException();
     }

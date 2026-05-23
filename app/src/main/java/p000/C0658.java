@@ -10,12 +10,10 @@ import android.widget.TextView;
 import java.util.List;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᤝᲀᲇᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0658 extends AbstractC2482 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final List f2522;
 
     public C0658(List list) {
@@ -23,13 +21,11 @@ public final class C0658 extends AbstractC2482 {
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int mo2040() {
         return this.f2522.size();
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void mo2041(AbstractC2508 abstractC2508, int i) {
         C0657 c0657 = (C0657) abstractC2508;
         C0655 c0655 = (C0655) this.f2522.get(i);
@@ -58,7 +54,6 @@ public final class C0658 extends AbstractC2482 {
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final AbstractC2508 mo2042(ViewGroup viewGroup, int i) {
         Context context = viewGroup.getContext();
         LinearLayout linearLayout = new LinearLayout(context);

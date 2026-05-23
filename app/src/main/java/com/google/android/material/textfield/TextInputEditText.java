@@ -22,10 +22,8 @@ import p000.AbstractC3471;
 /* JADX INFO: loaded from: classes.dex */
 public class TextInputEditText extends AbstractC0218 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final Rect f783;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f784;
 
     public TextInputEditText(Context context, AttributeSet attributeSet) {

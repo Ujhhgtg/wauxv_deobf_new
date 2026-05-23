@@ -22,72 +22,50 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲈᛸᤝᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class MenuC1944 implements Menu {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static final int[] f6406 = {1, 4, 5, 3, 2, 0};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Context f6407;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Resources f6408;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public boolean f6409;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean f6410;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public InterfaceC1942 f6411;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final ArrayList f6412;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final ArrayList f6413;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public boolean f6414;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final ArrayList f6415;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final ArrayList f6416;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f6417;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public CharSequence f6418;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public MenuItemC1946 f6425;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public boolean f6419 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public boolean f6420 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public boolean f6421 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public boolean f6422 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final ArrayList f6423 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final CopyOnWriteArrayList f6424 = new CopyOnWriteArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public boolean f6426 = false;
 
     public MenuC1944(Context context) {
@@ -343,7 +321,6 @@ public class MenuC1944 implements Menu {
         return this.f6412.size();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public MenuItemC1946 mo3754(int i, int i2, int i3, CharSequence charSequence) {
         int i4;
         int i5 = ((-65536) & i3) >> 16;
@@ -367,14 +344,12 @@ public class MenuC1944 implements Menu {
         return menuItemC1946;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m3755(InterfaceC1955 interfaceC1955, Context context) {
         this.f6424.add(new WeakReference(interfaceC1955));
         interfaceC1955.mo1147(context, this);
         this.f6417 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m3756(boolean z) {
         if (this.f6422) {
             return;
@@ -392,7 +367,6 @@ public class MenuC1944 implements Menu {
         this.f6422 = false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean mo3757(MenuItemC1946 menuItemC1946) {
         CopyOnWriteArrayList<WeakReference> copyOnWriteArrayList = this.f6424;
         boolean zMo1142 = false;
@@ -417,13 +391,11 @@ public class MenuC1944 implements Menu {
         return zMo1142;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public boolean mo3758(MenuC1944 menuC1944, MenuItem menuItem) {
         InterfaceC1942 interfaceC1942 = this.f6411;
         return interfaceC1942 != null && interfaceC1942.mo1101(menuItem);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public boolean mo3759(MenuItemC1946 menuItemC1946) {
         CopyOnWriteArrayList<WeakReference> copyOnWriteArrayList = this.f6424;
         boolean zMo1145 = false;
@@ -449,7 +421,6 @@ public class MenuC1944 implements Menu {
         return zMo1145;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final MenuItemC1946 m3760(int i, KeyEvent keyEvent) {
         ArrayList arrayList = this.f6423;
         arrayList.clear();
@@ -476,7 +447,6 @@ public class MenuC1944 implements Menu {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m3761(List list, int i, KeyEvent keyEvent) {
         boolean zMo3766 = mo3766();
         int modifiers = keyEvent.getModifiers();
@@ -500,7 +470,6 @@ public class MenuC1944 implements Menu {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m3762() {
         ArrayList arrayListM3764 = m3764();
         if (this.f6417) {
@@ -537,7 +506,6 @@ public class MenuC1944 implements Menu {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final ArrayList m3764() {
         boolean z = this.f6414;
         ArrayList arrayList = this.f6413;
@@ -558,22 +526,18 @@ public class MenuC1944 implements Menu {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public boolean mo3765() {
         return this.f6426;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public boolean mo3766() {
         return this.f6409;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public boolean mo3767() {
         return this.f6410;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final void m3768(boolean z) {
         if (this.f6419) {
             this.f6420 = true;
@@ -603,7 +567,6 @@ public class MenuC1944 implements Menu {
         m3771();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final boolean m3769(MenuItem menuItem, InterfaceC1955 interfaceC1955, int i) {
         boolean zExpandActionView;
         MenuItemC1946 menuItemC1946 = (MenuItemC1946) menuItem;
@@ -665,7 +628,6 @@ public class MenuC1944 implements Menu {
         return zExpandActionView;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final void m3770(int i, CharSequence charSequence, int i2, View view) {
         if (view != null) {
             this.f6418 = null;
@@ -682,7 +644,6 @@ public class MenuC1944 implements Menu {
         m3768(false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final void m3771() {
         this.f6419 = false;
         if (this.f6420) {
@@ -691,7 +652,6 @@ public class MenuC1944 implements Menu {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final void m3772() {
         if (this.f6419) {
             return;
@@ -735,7 +695,6 @@ public class MenuC1944 implements Menu {
         return addSubMenu(i, i2, i3, this.f6408.getString(i4));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public MenuC1944 mo3763() {
         return this;
     }

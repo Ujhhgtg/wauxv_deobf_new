@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲇᤞᲈᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0490 extends AbstractC0488 {
@@ -18,7 +17,6 @@ public final class C0490 extends AbstractC0488 {
     }
 
     @Override // p000.AbstractC0488
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final byte[] mo1723(String str) {
         String str2 = "/" + str.replace('.', '/') + ".class";
         try {

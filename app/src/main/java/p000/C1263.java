@@ -5,15 +5,12 @@ import android.animation.AnimatorListenerAdapter;
 import android.view.View;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᛸᲁᲈᤞᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1263 extends AnimatorListenerAdapter implements InterfaceC3435 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final View f4593;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public boolean f4594 = false;
 
     public C1263(View view) {
@@ -40,14 +37,12 @@ public final class C1263 extends AnimatorListenerAdapter implements InterfaceC34
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo2011() {
         View view = this.f4593;
         view.setTag(R.id.transition_pause_alpha, Float.valueOf(view.getVisibility() == 0 ? AbstractC3595.f11231.mo3226(view) : 0.0f));
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo2013() {
         this.f4593.setTag(R.id.transition_pause_alpha, null);
     }
@@ -68,22 +63,18 @@ public final class C1263 extends AnimatorListenerAdapter implements InterfaceC34
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo2949(AbstractC3436 abstractC3436) {
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo2012(AbstractC3436 abstractC3436) {
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void mo2950(AbstractC3436 abstractC3436) {
     }
 
     @Override // p000.InterfaceC3435
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo2014(AbstractC3436 abstractC3436) {
     }
 }

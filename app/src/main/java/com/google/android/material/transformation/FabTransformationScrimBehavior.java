@@ -13,7 +13,6 @@ public class FabTransformationScrimBehavior extends ExpandableTransformationBeha
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final boolean mo628(View view, MotionEvent motionEvent) {
         return false;
     }
@@ -23,7 +22,6 @@ public class FabTransformationScrimBehavior extends ExpandableTransformationBeha
     }
 
     @Override // com.google.android.material.transformation.ExpandableBehavior, p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo630(View view) {
     }
 }

@@ -3,21 +3,17 @@ package p000;
 import java.util.Arrays;
 import java.util.HashSet;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲀᲇᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0170 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final HashSet f1201 = new HashSet(Arrays.asList("gt", "lt", "lteq", "gteq", "or", "and", "bitwise_and", "bitwise_or", "bitwise_xor", "mod", "pow", "left_shift", "right_shift", "right_unsigned_shift", "and_assign", "or_assign", "xor_assign", "mod_assign", "pow_assign", "left_shift_assign", "right_shift_assign", "right_unsigned_shift_assign"));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static boolean m1219(int i, String str) {
         int i2 = i + 2;
         return i2 < str.length() && str.charAt(i) == '\"' && str.charAt(i + 1) == '\"' && str.charAt(i2) == '\"';
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static int m1220(int i, String str) {
         int i2;
         int length = str.length();

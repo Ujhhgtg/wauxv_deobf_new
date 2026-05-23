@@ -9,21 +9,16 @@ import android.os.Build;
 import com.alibaba.fastjson2.internal.asm.Opcodes;
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲈᛸᲁᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1105 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final int[] f4134 = {16842912};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final int[] f4135 = new int[0];
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final Rect f4136 = new Rect();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m2674(Drawable drawable) {
         String name = drawable.getClass().getName();
         int i = Build.VERSION.SDK_INT;
@@ -39,7 +34,6 @@ public abstract class AbstractC1105 {
         drawable.setState(state);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static Rect m2675(Drawable drawable) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 29) {
@@ -60,7 +54,6 @@ public abstract class AbstractC1105 {
         return f4136;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static PorterDuff.Mode m2676(int i, PorterDuff.Mode mode) {
         if (i == 3) {
             return PorterDuff.Mode.SRC_OVER;

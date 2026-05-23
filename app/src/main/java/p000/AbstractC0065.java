@@ -3,7 +3,6 @@ package p000;
 import java.util.AbstractSet;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0065 extends AbstractSet implements Set, InterfaceC1737 {
@@ -12,6 +11,5 @@ public abstract class AbstractC0065 extends AbstractSet implements Set, Interfac
         return mo946();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public abstract int mo946();
 }

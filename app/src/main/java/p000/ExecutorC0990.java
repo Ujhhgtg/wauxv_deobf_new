@@ -2,15 +2,12 @@ package p000;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲈᲀᛸᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ExecutorC0990 extends AbstractC1243 implements Executor {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final ExecutorC0990 f3609 = new ExecutorC0990();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final AbstractC0878 f3610;
 
     static {
@@ -38,7 +35,6 @@ public final class ExecutorC0990 extends AbstractC1243 implements Executor {
     }
 
     @Override // p000.AbstractC0878
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ */
     public final void mo2392(InterfaceC0877 interfaceC0877, Runnable runnable) {
         f3610.mo2392(interfaceC0877, runnable);
     }

@@ -2,15 +2,12 @@ package p000;
 
 import android.graphics.Typeface;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᲁᲇᤝᤞᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2902 extends AbstractC3681 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ AbstractC2209 f9325;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ C2904 f9326;
 
     public C2902(C2904 c2904, AbstractC2209 abstractC2209) {
@@ -19,14 +16,12 @@ public final class C2902 extends AbstractC3681 {
     }
 
     @Override // p000.AbstractC3681
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public final void mo1280(int i) {
         this.f9326.f9343 = true;
         this.f9325.mo1936(i);
     }
 
     @Override // p000.AbstractC3681
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public final void mo1281(Typeface typeface) {
         C2904 c2904 = this.f9326;
         c2904.f9344 = Typeface.create(typeface, c2904.f9333);

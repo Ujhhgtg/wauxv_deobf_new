@@ -13,7 +13,6 @@ public class SearchView$Behavior extends AbstractC0861 {
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final boolean mo631(CoordinatorLayout coordinatorLayout, View view, View view2) {
         throw new ClassCastException();
     }

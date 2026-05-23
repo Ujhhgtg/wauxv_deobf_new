@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲀᛸᲈᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0915 extends AbstractC3458 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C2440 f3376;
 
     public C0915(C2440 c2440) {
@@ -33,25 +31,21 @@ public final class C0915 extends AbstractC3458 {
     }
 
     @Override // p000.InterfaceC3407
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo1214() {
         return this.f3376.f7754;
     }
 
     @Override // p000.AbstractC0777
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final int mo2267(AbstractC0777 abstractC0777) {
         return this.f3376.compareTo(((C0915) abstractC0777).f3376);
     }
 
     @Override // p000.AbstractC0777
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final boolean mo2268() {
         return false;
     }
 
     @Override // p000.AbstractC0777
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final String mo2269() {
         return "proto";
     }

@@ -10,18 +10,14 @@ import java.util.Locale;
 import java.util.Map;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᛸᤞᲀᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1128 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final int[] f4196 = {R.attr.dynamicColorThemeOverlay};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final Map f4197;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final Map f4198;
 
     static {
@@ -66,7 +62,6 @@ public abstract class AbstractC1128 {
     /* JADX WARN: Code duplicated, block: B:36:0x0089  */
     /* JADX WARN: Code duplicated, block: B:38:0x008f  */
     /* JADX WARN: Code duplicated, block: B:41:0x009f  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static Context m2700(C2009 c2009) {
         int resourceId;
         Locale locale;

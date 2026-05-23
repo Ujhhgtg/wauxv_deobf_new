@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤝᲈᲀᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3455 extends AbstractC2270 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final InterfaceC3454 f10928;
 
     public C3455(InterfaceC3454 interfaceC3454) {
@@ -25,7 +23,6 @@ public final class C3455 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1221(C1023 c1023) {
         C1977 c1977 = c1023.f3742;
         InterfaceC3454 interfaceC3454 = this.f10928;
@@ -36,13 +33,11 @@ public final class C3455 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final EnumC1683 mo1222() {
         return EnumC1683.f5723;
     }
 
     @Override // p000.AbstractC2270
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final int mo1223(AbstractC2270 abstractC2270) {
         InterfaceC3454 interfaceC3454 = ((C3455) abstractC2270).f10928;
         C2819 c2819 = C2819.f9030;
@@ -63,7 +58,6 @@ public final class C3455 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC2270
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final void mo1225(C1023 c1023, C0519 c0519) {
         C1977 c1977 = c1023.f3742;
         InterfaceC3454 interfaceC3454 = this.f10928;

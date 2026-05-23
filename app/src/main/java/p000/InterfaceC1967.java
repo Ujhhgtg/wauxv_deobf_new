@@ -11,7 +11,6 @@ import java.lang.annotation.RetentionPolicy;
 /* JADX WARN: Method from annotation default annotation not found: pn */
 /* JADX WARN: Method from annotation default annotation not found: xi */
 /* JADX WARN: Method from annotation default annotation not found: xs */
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᛸᤝᲀᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 @Retention(RetentionPolicy.RUNTIME)

@@ -4,7 +4,6 @@ package me.hd.wauxv.hook.core.p001native;
 /* JADX INFO: loaded from: classes.dex */
 public final class AudioNative {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final AudioNative f969 = new AudioNative();
 
     public final native void mp3ToPcmClose();

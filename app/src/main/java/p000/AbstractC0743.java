@@ -35,30 +35,22 @@ import me.hd.wauxv.data.bean.info.GroupInfo;
 import me.hd.wauxv.hook.core.p001native.AudioNative;
 import org.luckypray.dexkit.DexKitBridge;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲇᤝᤞᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0743 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final int[] f2836 = {48, 58, 65, 91, 97, 123, 129, 256, 384, 592, 688, 768, 880, 1024, 1329, 1425, 1536, 1792, 1872, 1920, 1984, 2048, 2112, 2144, 2208, 2304, 2432, 2561, 2689, 2817, 2946, 3072, 3200, 3328, 3458, 3584, 3712, 3840, 4096, 2256, 4352, 4608, 5024, 5120, 5760, 5792, 5888, 5920, 5952, 5984, 6016, 6144, 6320, 6400, 6480, 6528, 6624, 6656, 6688, 6832, 6912, 7040, 7104, 7168, 7248, 7296, 7360, 7376, 7424, 7616, 7680, 7936, 8192, 8304, 8352, 8400, 8448, 8528, 8592, 8704, 8960, 9216, 9280, 9312, 9472, 9600, 9632, 9728, 9984, 10176, 10224, 10240, 10496, 10624, 10752, 11008, 11264, 11360, 11392, 11520, 11568, 11648, 11744, 11776, 11904, 12032, 12272, 12288, 12352, 12448, 12544, 12592, 12688, 12704, 12736, 12784, 12800, 13056, 13312, 19904, 19968, 40960, 42128, 42192, 42240, 42560, 42656, 42752, 42784, 43008, 43056, 43072, 43136, 43232, 43264, 43312, 43360, 43392, 43488, 43520, 43616, 43648, 43744, 43776, 43824, 43888, 43968, 44032, 55216, 55296, 56320, 57344, 63744, 64256, 64336, 65024, 65040, 65056, 65072, 65104, 65136, 65280, 65520, 65536, 65664, 65792, 65856, 65936, 66000, 66176, 66208, 66272, 66304, 66352, 66384, 66432, 66464, 66560, 66640, 66688, 66736, 66816, 66864, 67072, 67584, 67648, 67680, 67712, 67808, 67840, 67872, 67968, 68000, 68096, 68192, 68224, 68288, 68352, 68416, 68448, 68480, 68608, 68736, 69216, 69632, 69760, 69840, 69888, 69968, 70016, 70112, 70144, 70272, 70320, 70400, 70656, 70784, 71040, 71168, 71264, 71296, 71424, 71840, 72192, 72272, 72384, 72704, 72816, 72960, 73728, 74752, 74880, 77824, 82944, 92160, 92736, 92880, 92928, 93952, 94176, 94208, 100352, 110592, 110848, 110960, 113664, 113824, 118784, 119040, 119296, 119552, 119648, 119808, 120832, 122880, 124928, 125184, 126464, 126976, 127024, 127136, 127232, 127488, 127744, 128512, 128592, 128640, 128768, 128896, 129024, 129280, 131072, 173824, 177984, 178208, 183984, 194560, 917504, 917760, 983040, 1048576};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final char[] f2837 = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final int[] f2838 = {1};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final C0171 f2839 = new C0171(13);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static long f2840;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static Method f2841;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final int m2171(char c) {
         if ('0' <= c && c < ':') {
             return c - '0';
@@ -72,7 +64,6 @@ public abstract class AbstractC0743 {
         throw new IllegalArgumentException("Unexpected hex digit: " + c);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m2172(String str) {
         if (str.length() > 127) {
             str = str.substring(0, 127);
@@ -80,7 +71,6 @@ public abstract class AbstractC0743 {
         Trace.beginSection(str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final long m2173(long j, EnumC1122 enumC1122) {
         long j2;
         int iOrdinal = enumC1122.ordinal();
@@ -122,7 +112,6 @@ public abstract class AbstractC0743 {
         return 4611686018427387903L;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static ChatRoomInfo m2174(Cursor cursor) {
         String[] strArr = AbstractC1574.f5469;
         String string = cursor.getString(cursor.getColumnIndex("chatroomname"));
@@ -157,7 +146,6 @@ public abstract class AbstractC0743 {
         return new ChatRoomInfo(string, Long.valueOf(j), Long.valueOf(j2), j3, cursor.getLong(cursor.getColumnIndex("chatroomfamilystatusmodifytime")), string2, string3, string4, string5, string6, string7, string8, string9, string10, string11, string12, blob, blob2, blob3, i, i2, i3, i4, i7, i9, i11, i5, i6, cursor.getLong(cursor.getColumnIndex("chatroomLocalVersion")), i8, i10, cursor.getLong(cursor.getColumnIndex("compactFlag")));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static RContactInfo m2175(Cursor cursor) {
         String[] strArr = AbstractC1574.f5469;
         String string = cursor.getString(cursor.getColumnIndex("username"));
@@ -190,13 +178,11 @@ public abstract class AbstractC0743 {
         return new RContactInfo(string, string2, string3, string4, string5, string6, string7, i, i2, j, i3, string8, string9, string10, blob, i4, string11, i5, i6, string12, string13, string14, string15, string16, j2, blob2, columnIndex != -1 ? cursor.getLong(columnIndex) : 0L);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static FriendInfo m2176(Cursor cursor) {
         RContactInfo rContactInfoM2175 = m2175(cursor);
         return new FriendInfo(rContactInfoM2175.getUsername(), rContactInfoM2175.getAlias(), rContactInfoM2175.getConRemark(), rContactInfoM2175.getNickname(), rContactInfoM2175.getType(), rContactInfoM2175.getSourceExtInfo(), rContactInfoM2175.getCreateTime());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static GroupInfo m2177(Cursor cursor) throws IOException {
         GroupData groupData;
         RContactInfo rContactInfoM2175 = m2175(cursor);
@@ -270,7 +256,6 @@ public abstract class AbstractC0743 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static C0698 m2178(DexKitBridge dexKitBridge, C0049 c0049) {
         int iM910 = c0049.m910(4);
         int i = iM910 != 0 ? c0049.f980.getInt(iM910 + c0049.f979) : 0;
@@ -316,7 +301,6 @@ public abstract class AbstractC0743 {
     }
 
     /* JADX WARN: Code duplicated, block: B:49:0x0167  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static void m2179(SharedPreferencesC1269 sharedPreferencesC1269, int i) {
         int i2;
         MappedByteBuffer mappedByteBufferM4106;
@@ -481,12 +465,10 @@ public abstract class AbstractC0743 {
         AbstractC2202.m4009(sharedPreferencesC1269, "gc finish");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final C0707 m2180(Annotation annotation) {
         return AbstractC2519.classToKClass(annotation.annotationType());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static Iterator m2181(Object obj) {
         Stream streamConcat;
         C3532[] c3532ArrM396;
@@ -565,7 +547,6 @@ public abstract class AbstractC0743 {
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static final Class m2182(InterfaceC1736 interfaceC1736) {
         Class clsMo2114 = ((InterfaceC0696) interfaceC1736).mo2114();
         if (clsMo2114.isPrimitive()) {
@@ -622,7 +603,6 @@ public abstract class AbstractC0743 {
     }
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static final Class m2183(C0707 c0707) {
         Class clsMo2114 = c0707.mo2114();
         if (clsMo2114.isPrimitive()) {
@@ -680,7 +660,6 @@ public abstract class AbstractC0743 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static ArrayList m2184(MaterialToolbar materialToolbar, CharSequence charSequence) {
         ArrayList arrayList = new ArrayList();
         for (int i = 0; i < materialToolbar.getChildCount(); i++) {
@@ -695,7 +674,6 @@ public abstract class AbstractC0743 {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static final int m2185(C0269 c0269, Object obj, int i) {
         int i2 = c0269.f1472;
         if (i2 == 0) {
@@ -724,7 +702,6 @@ public abstract class AbstractC0743 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public static File m2186(String str) throws IOException {
         File file = new File(str);
         String[] strArr = AbstractC1574.f5469;
@@ -742,7 +719,6 @@ public abstract class AbstractC0743 {
         return fileM31810;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static void m2187(String str, String str2, Object obj) {
         
         int i = 0;
@@ -754,42 +730,32 @@ public abstract class AbstractC0743 {
         ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{"com.tencent.mm.opensdk.modelmsg.WXMediaMessage", AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(String.class)}, 6, c1973M3492)).m3831(obj, str2, "", str, 2, null);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static final void m2188(Object obj) throws Throwable {
         if (obj instanceof C2585) {
             throw ((C2585) obj).f8191;
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public abstract int mo1683(View view, int i);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public abstract int mo1684(View view, int i);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public int mo1685(View view) {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public int mo1686() {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ */
     public abstract void mo1687(int i);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public abstract void mo1688(View view, int i, int i2);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public abstract void mo1689(View view, float f, float f2);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ */
     public abstract boolean mo1690(View view, int i);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public void mo2189(View view, int i) {
     }
 }

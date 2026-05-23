@@ -2,15 +2,12 @@ package p000;
 
 import bsh.Primitive;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲁᲇᲈᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0351 extends AbstractC2707 implements InterfaceC2335 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int f1660;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public String f1661;
 
     @Override // p000.AbstractC2707
@@ -24,7 +21,6 @@ public final class C0351 extends AbstractC2707 implements InterfaceC2335 {
     }
 
     @Override // p000.AbstractC2707, p000.InterfaceC2225
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo306(C0550 c0550, RunnableC1668 runnableC1668) {
         String str = this.f1661;
         if (str != null) {

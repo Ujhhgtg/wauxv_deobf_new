@@ -27,7 +27,6 @@ public class bc {
     private Map<String, Object> m = null;
     JSONObject g = null;
 
-    /* JADX INFO: renamed from: com.umeng.analytics.pro.bc$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] a;

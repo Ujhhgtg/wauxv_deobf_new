@@ -3,12 +3,10 @@ package p000;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲇᲀᤝᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0491 extends HashMap {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2107;
 
     @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
@@ -31,7 +29,6 @@ public final class C0491 extends HashMap {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void m1724(String str) {
         String strM1727 = C0492.m1727(str);
         String str2 = (strM1727.indexOf(46) == -1 ? new String[]{"<unpackaged>", strM1727} : C0492.f2111.split(strM1727))[1];
@@ -46,12 +43,10 @@ public final class C0491 extends HashMap {
         put(str2, c0487);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public AbstractC0488 m1725(String str) {
         return (AbstractC0488) super.get(str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void m1726(String str, AbstractC0488 abstractC0488) {
     }
 }

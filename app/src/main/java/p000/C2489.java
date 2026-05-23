@@ -3,15 +3,12 @@ package p000;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᤝᲇᲈᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2489 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f7935;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ AbstractC2491 f7936;
 
     public /* synthetic */ C2489(AbstractC2491 abstractC2491, int i) {
@@ -19,7 +16,6 @@ public final class C2489 {
         this.f7936 = abstractC2491;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int m4448(View view) {
         int iM4458;
         int i;
@@ -38,7 +34,6 @@ public final class C2489 {
         return iM4458 + i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final int m4449(View view) {
         int iM4455;
         int i;
@@ -57,7 +52,6 @@ public final class C2489 {
         return iM4455 - i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int m4450() {
         int i;
         int iM4471;
@@ -76,7 +70,6 @@ public final class C2489 {
         return i - iM4471;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int m4451() {
         switch (this.f7935) {
             case 0:

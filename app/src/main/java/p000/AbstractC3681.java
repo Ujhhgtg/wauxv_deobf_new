@@ -19,34 +19,26 @@ import java.util.concurrent.TimeUnit;
 import me.hd.wauxv.hook.factory.MagicFactory;
 import okhttp3.internal.http2.Http2Connection;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤞᲀᲁᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3681 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C1215 f11561 = new C1215(new C1039(2));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C1172 f11562 = new C1172("NO_THREAD_ELEMENTS", 1);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final C1933 f11563 = new C1933(21);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final C1933 f11564 = new C1933(22);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C1933 f11565 = new C1933(23);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C1713 m5314(InterfaceC2654 interfaceC2654) {
         String str = "Value of type '" + interfaceC2654.mo1342() + "' can't be used in JSON as a key in the map. It should have either primitive or enum kind, but its kind is '" + interfaceC2654.mo3472() + '\'';
         interfaceC2654.mo1342();
         return new C1713(str, "Use 'allowStructuredMapKeys = true' in 'Json {}' builder to convert such maps to [key1, value1, key2, value2,...] arrays.");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final long m5315(long j, long j2) {
         if (j != 4611686018427387903L && j != -4611686018427387903L) {
             return (j2 == 4611686018427387903L || j2 == -4611686018427387903L) ? j2 : AbstractC2203.m4028(j + j2);
@@ -57,7 +49,6 @@ public abstract class AbstractC3681 {
         return j;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static boolean m5316(C2341[] c2341Arr, C2341[] c2341Arr2) {
         if (c2341Arr == null || c2341Arr2 == null || c2341Arr.length != c2341Arr2.length) {
             return false;
@@ -73,7 +64,6 @@ public abstract class AbstractC3681 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static void m5317(int i) {
         if (2 > i || i >= 37) {
             StringBuilder sbM2787 = AbstractC1194.m2787(i, "radix ", " was not in valid range ");
@@ -82,7 +72,6 @@ public abstract class AbstractC3681 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static int m5318(int i, int i2, int i3) {
         if (i < i2) {
             return i2;
@@ -90,7 +79,6 @@ public abstract class AbstractC3681 {
         return i > i3 ? i3 : i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static float[] m5319(float[] fArr, int i) {
         if (i < 0) {
             throw new IllegalArgumentException();
@@ -113,7 +101,6 @@ public abstract class AbstractC3681 {
     /* JADX WARN: Code duplicated, block: B:52:0x00b1 A[Catch: NumberFormatException -> 0x00aa, TryCatch #0 {NumberFormatException -> 0x00aa, blocks: (B:22:0x0054, B:25:0x0068, B:27:0x006e, B:31:0x007a, B:44:0x0096, B:46:0x009c, B:52:0x00b1, B:53:0x00b4), top: B:68:0x0054 }] */
     /* JADX WARN: Code duplicated, block: B:57:0x00c9  */
     /* JADX WARN: Code duplicated, block: B:72:0x00d7 A[SYNTHETIC] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static C2341[] m5320(String str) {
         int i;
         String strTrim;
@@ -244,7 +231,6 @@ public abstract class AbstractC3681 {
         return (C2341[]) arrayList.toArray(new C2341[0]);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static C2341[] m5321(C2341[] c2341Arr) {
         C2341[] c2341Arr2 = new C2341[c2341Arr.length];
         for (int i = 0; i < c2341Arr.length; i++) {
@@ -253,12 +239,10 @@ public abstract class AbstractC3681 {
         return c2341Arr2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final float m5322(Number number, Context context) {
         return number.floatValue() * context.getResources().getDisplayMetrics().density;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final long m5323(long j) {
         long j2 = (j << 1) + 1;
         
@@ -266,7 +250,6 @@ public abstract class AbstractC3681 {
         return j2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final boolean m5324(char c, char c2, boolean z) {
         if (c == c2) {
             return true;
@@ -279,7 +262,6 @@ public abstract class AbstractC3681 {
         return upperCase == upperCase2 || Character.toLowerCase(upperCase) == Character.toLowerCase(upperCase2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static View m5325(View view, int i) {
         if (!(view instanceof ViewGroup)) {
             return null;
@@ -295,12 +277,10 @@ public abstract class AbstractC3681 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static String m5326(Float f) {
         return new DecimalFormat("0.00").format(f);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static final String m5327(int i, String str, String str2, String str3, String str4) {
         StringBuilder sb = new StringBuilder();
         if (i >= 0) {
@@ -321,7 +301,6 @@ public abstract class AbstractC3681 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static final void m5328(InterfaceC0877 interfaceC0877, Throwable th) {
         if (th instanceof C1071) {
             th = ((C1071) th).f3885;
@@ -343,29 +322,24 @@ public abstract class AbstractC3681 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static final void m5329(C0146 c0146, String str) {
         c0146.m1169(c0146.f1149 - 1, "Trailing comma before the end of JSON ".concat(str), "Trailing commas are non-complaint JSON and not allowed by default. Use 'allowTrailingComma = true' in 'Json {}' builder to support them.");
         throw null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public static /* synthetic */ void m5330(C0146 c0146) {
         m5329(c0146, "object");
         throw null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static final boolean m5331(Context context) {
         return (context.getResources().getConfiguration().uiMode & 48) == 32;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public static final boolean m5332(char c) {
         return Character.isWhitespace(c) || Character.isSpaceChar(c);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static final CharSequence m5333(int i, CharSequence charSequence) {
         if (charSequence.length() >= 200) {
             if (i != -1) {
@@ -393,14 +367,12 @@ public abstract class AbstractC3681 {
         return charSequence;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static final String m5334(Number number, String str) {
         StringBuilder sb = new StringBuilder("Unexpected special floating-point value ");
         sb.append(number);
         return AbstractC2784.m4752(sb, str != null ? AbstractC1194.m2785(" with key ", str, ". ") : ". ", "By default, non-finite floating point values are prohibited because they do not conform JSON specification.");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static final void m5335(Context context, String str) {
         Intent intent = new Intent();
         intent.setAction("android.intent.action.VIEW");
@@ -440,7 +412,6 @@ public abstract class AbstractC3681 {
     /* JADX WARN: Code duplicated, block: B:89:0x0128  */
     /* JADX WARN: Code duplicated, block: B:91:0x0138  */
     /* JADX WARN: Code duplicated, block: B:98:0x0157 A[LOOP:5: B:97:0x0155->B:98:0x0157, LOOP_END] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static long m5336(String str) {
         int i;
         int i2;
@@ -821,7 +792,6 @@ public abstract class AbstractC3681 {
         return j6;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static final void m5337(InterfaceC0877 interfaceC0877, Object obj) {
         if (obj == f11562) {
             return;
@@ -841,7 +811,6 @@ public abstract class AbstractC3681 {
         throw null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static void m5338(Context context, int i, String str) {
         if (!AbstractC2207.m4087(Looper.myLooper(), Looper.getMainLooper())) {
             throw new IllegalStateException("Not allowed to show a toast from non-main thread, if you must do this, please set allowBackground to true.");
@@ -849,7 +818,6 @@ public abstract class AbstractC3681 {
         Toast.makeText(context, str, 0).show();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public static String m5339(long j, String str, ZoneId zoneId, int i) {
         if ((i & 1) != 0) {
             str = "yyyy-MM-dd HH:mm:ss";
@@ -860,7 +828,6 @@ public abstract class AbstractC3681 {
         return DateTimeFormatter.ofPattern(str).withZone(zoneId).format(Instant.ofEpochMilli(j));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static final long m5340(long j, EnumC1122 enumC1122) {
         EnumC1122 enumC1123 = EnumC1122.NANOSECONDS;
         TimeUnit timeUnit = enumC1122.f4194;
@@ -884,7 +851,6 @@ public abstract class AbstractC3681 {
         return m5323(AbstractC0743.m2173(Math.abs(j), enumC1122) * jSignum);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public static final Object m5341(InterfaceC0877 interfaceC0877, Object obj) {
         if (obj == null) {
             obj = interfaceC0877.mo940(0, f11563);
@@ -899,14 +865,11 @@ public abstract class AbstractC3681 {
         throw null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void m5342(int i) {
         new Handler(Looper.getMainLooper()).post(new RunnableC2581(i, 0, this));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public abstract void mo1280(int i);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public abstract void mo1281(Typeface typeface);
 }

@@ -7,24 +7,18 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤞᤝᲈᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0315 extends AbstractC3436 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public int f1561;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public ArrayList f1559 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public boolean f1560 = true;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public boolean f1562 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public int f1563 = 0;
 
     public C0315() {
@@ -44,7 +38,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void mo1409(C3444 c3444) {
         View view = c3444.f10855;
         if (m4955(view)) {
@@ -58,7 +51,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void mo1410(C3444 c3444) {
         int size = this.f1559.size();
         for (int i = 0; i < size; i++) {
@@ -67,7 +59,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void mo1411(C3444 c3444) {
         View view = c3444.f10855;
         if (m4955(view)) {
@@ -81,7 +72,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final AbstractC3436 clone() {
         C0315 c0315 = (C0315) super.clone();
         c0315.f1559 = new ArrayList();
@@ -95,7 +85,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void mo1413(ViewGroup viewGroup, C2103 c2103, C2103 c2104, ArrayList arrayList, ArrayList arrayList2) {
         long j = this.f10821;
         int size = this.f1559.size();
@@ -114,7 +103,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final boolean mo1414() {
         for (int i = 0; i < this.f1559.size(); i++) {
             if (((AbstractC3436) this.f1559.get(i)).mo1414()) {
@@ -125,7 +113,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final void mo1415(View view) {
         super.mo1415(view);
         int size = this.f1559.size();
@@ -135,7 +122,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final void mo1416() {
         this.f10842 = 0L;
         int i = 0;
@@ -157,14 +143,12 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public final AbstractC3436 mo1417(InterfaceC3435 interfaceC3435) {
         super.mo1417(interfaceC3435);
         return this;
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public final void mo1418(View view) {
         super.mo1418(view);
         int size = this.f1559.size();
@@ -174,7 +158,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public final void mo1419() {
         if (this.f1559.isEmpty()) {
             m4957();
@@ -208,7 +191,6 @@ public final class C0315 extends AbstractC3436 {
     /* JADX WARN: Code duplicated, block: B:63:0x00d9  */
     /* JADX WARN: Code duplicated, block: B:74:? A[RETURN, SYNTHETIC] */
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final void mo1420(long j, long j2) {
         long j3;
         long j4 = this.f10842;
@@ -296,7 +278,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public final void mo1422(AbstractC0968 abstractC0968) {
         this.f1563 |= 8;
         int size = this.f1559.size();
@@ -306,7 +287,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public final void mo1424(C2102 c2102) {
         super.mo1424(c2102);
         this.f1563 |= 4;
@@ -318,7 +298,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public final void mo1425() {
         this.f1563 |= 2;
         int size = this.f1559.size();
@@ -328,13 +307,11 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public final void mo1426(long j) {
         this.f10821 = j;
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public final String mo1427(String str) {
         String strMo1427 = super.mo1427(str);
         for (int i = 0; i < this.f1559.size(); i++) {
@@ -345,7 +322,6 @@ public final class C0315 extends AbstractC3436 {
         return strMo1427;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public final void m1428(AbstractC3436 abstractC3436) {
         this.f1559.add(abstractC3436);
         abstractC3436.f10828 = this;
@@ -368,7 +344,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters and merged with bridge method [inline-methods] */
     public final void mo1421(long j) {
         ArrayList arrayList;
         this.f10822 = j;
@@ -382,7 +357,6 @@ public final class C0315 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters and merged with bridge method [inline-methods] */
     public final void mo1423(TimeInterpolator timeInterpolator) {
         this.f1563 |= 1;
         ArrayList arrayList = this.f1559;
@@ -395,7 +369,6 @@ public final class C0315 extends AbstractC3436 {
         this.f10823 = timeInterpolator;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public final void m1431(int i) {
         if (i == 0) {
             this.f1560 = true;

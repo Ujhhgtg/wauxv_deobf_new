@@ -4,18 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲇᲈᲀᛸᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0979 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final HashSet f3590 = new HashSet(Arrays.asList("if", "for", "while", "switch", "catch", "synchronized", "new", "return", "throw", "assert", "case", "do", "try"));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final HashSet f3591 = new HashSet(Arrays.asList("public", "protected", "private", "static", "final", "synchronized", "native", "abstract", "strictfp", "default"));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m2525(String str) {
         int iM2533 = m2533(str.length() - 1, str);
         if (iM2533 < 0) {
@@ -42,7 +38,6 @@ public abstract class AbstractC0979 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static int m2526(String str, int i, char c, char c2) {
         int length = str.length();
         int i2 = 0;
@@ -63,7 +58,6 @@ public abstract class AbstractC0979 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static int m2527(int i, String str) {
         int iM2532 = m2532(i, str);
         if (iM2532 < str.length()) {
@@ -123,7 +117,6 @@ public abstract class AbstractC0979 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static String m2528(ArrayList arrayList, int i) {
         if (i <= 0) {
             return "";
@@ -138,7 +131,6 @@ public abstract class AbstractC0979 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static String m2529(String str, ArrayList arrayList, int i) {
         String strM2530;
         StringBuilder sb = new StringBuilder(str.length() + 32);
@@ -176,7 +168,6 @@ public abstract class AbstractC0979 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static String m2530(String str) {
         StringBuilder sb = new StringBuilder(str.length());
         int length = str.length();
@@ -215,7 +206,6 @@ public abstract class AbstractC0979 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static int m2531(int i, String str) {
         int i2;
         char cCharAt;
@@ -281,7 +271,6 @@ public abstract class AbstractC0979 {
         return length;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static int m2532(int i, String str) {
         int length = str.length();
         while (i < length) {
@@ -297,7 +286,6 @@ public abstract class AbstractC0979 {
         return i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static int m2533(int i, String str) {
         while (i >= 0 && Character.isWhitespace(str.charAt(i))) {
             i--;
@@ -305,7 +293,6 @@ public abstract class AbstractC0979 {
         return i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static boolean m2534(int i, String str, String str2) {
         int i2;
         int length;
@@ -329,7 +316,6 @@ public abstract class AbstractC0979 {
     /* JADX WARN: Type inference failed for: r7v10, types: [java.lang.String] */
     /* JADX WARN: Type inference failed for: r7v28 */
     /* JADX WARN: Type inference failed for: r7v9 */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static C0978 m2535(int i, String str) {
         int iM2533;
         int i2;

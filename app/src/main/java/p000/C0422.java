@@ -5,15 +5,12 @@ import android.graphics.ImageDecoder;
 import android.util.Log;
 import java.io.IOException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᲇᲀᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0422 implements InterfaceC2571 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f1971;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final InterfaceC0424 f1972;
 
     public C0422() {
@@ -22,7 +19,6 @@ public final class C0422 implements InterfaceC2571 {
     }
 
     @Override // p000.InterfaceC2571
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final /* bridge */ /* synthetic */ boolean mo1209(Object obj, C2303 c2303) {
         switch (this.f1971) {
             case 0:
@@ -35,7 +31,6 @@ public final class C0422 implements InterfaceC2571 {
     }
 
     @Override // p000.InterfaceC2571
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final InterfaceC2568 mo1210(Object obj, int i, int i2, C2303 c2303) {
         switch (this.f1971) {
             case 0:
@@ -45,7 +40,6 @@ public final class C0422 implements InterfaceC2571 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public C0425 m1615(ImageDecoder.Source source, int i, int i2, C2303 c2303) throws IOException {
         Bitmap bitmapDecodeBitmap = ImageDecoder.decodeBitmap(source, new C1001(i, i2, c2303));
         if (Log.isLoggable("BitmapImageDecoder", 2)) {

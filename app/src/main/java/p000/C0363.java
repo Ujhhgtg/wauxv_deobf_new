@@ -16,48 +16,34 @@ import java.lang.reflect.Field;
 import java.text.NumberFormat;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲇᤝᲈᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0363 extends Drawable implements InterfaceC2906 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final WeakReference f1686;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C1917 f1687;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C2907 f1688;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final Rect f1689;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final C0365 f1690;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public float f1691;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public float f1692;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final int f1693;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public float f1694;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public float f1695;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public float f1696;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public WeakReference f1697;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public WeakReference f1698;
 
     public C0363(Context context, C0364 c0364) {
@@ -175,12 +161,10 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
     }
 
     @Override // p000.InterfaceC2906
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo1475() {
         invalidateSelf();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final String m1476() {
         C0365 c0365 = this.f1690;
         C0364 c0364 = c0365.f1730;
@@ -208,7 +192,6 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
         return String.format(context2.getString(R.string.m3_exceed_max_badge_text_suffix), str.substring(0, i - 1), "…");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final CharSequence m1477() {
         Context context;
         if (!isVisible()) {
@@ -237,7 +220,6 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
         return context.getResources().getQuantityString(c0366.f1715, m1479(), Integer.valueOf(m1479()));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final FrameLayout m1478() {
         WeakReference weakReference = this.f1698;
         if (weakReference != null) {
@@ -246,7 +228,6 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m1479() {
         int i = this.f1690.f1730.f1709;
         if (i != -1) {
@@ -255,18 +236,15 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final boolean m1480() {
         return this.f1690.f1730.f1708 != null || m1481();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean m1481() {
         C0364 c0364 = this.f1690.f1730;
         return c0364.f1708 == null && c0364.f1709 != -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m1482() {
         Context context = (Context) this.f1686.get();
         if (context == null) {
@@ -278,7 +256,6 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
         invalidateSelf();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m1483(View view, FrameLayout frameLayout) {
         this.f1697 = new WeakReference(view);
         this.f1698 = new WeakReference(frameLayout);
@@ -297,7 +274,6 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
     /* JADX WARN: Code duplicated, block: B:113:0x027d  */
     /* JADX WARN: Code duplicated, block: B:96:0x0218  */
     /* JADX WARN: Code duplicated, block: B:97:0x0230  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m1484() {
         float y;
         float x;

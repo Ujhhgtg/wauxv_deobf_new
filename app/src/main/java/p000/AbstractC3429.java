@@ -13,15 +13,12 @@ import java.util.HashSet;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᛸᲈᤞᤝᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3429 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final Paint f10801 = new Paint(6);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final Lock f10802;
 
     static {
@@ -30,7 +27,6 @@ public abstract class AbstractC3429 {
         new Paint(7).setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m4940(Bitmap bitmap, Bitmap bitmap2, Matrix matrix) {
         Lock lock = f10802;
         lock.lock();
@@ -43,7 +39,6 @@ public abstract class AbstractC3429 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static Bitmap m4941(InterfaceC0424 interfaceC0424, Bitmap bitmap, int i, int i2) {
         if (bitmap.getWidth() != i || bitmap.getHeight() != i2) {
             float fMin = Math.min(i / bitmap.getWidth(), i2 / bitmap.getHeight());

@@ -131,7 +131,6 @@ public class OkHttpClient implements Cloneable, Call.Factory, WebSocket.Factory 
             this.minWebSocketMessageToCompress = 1024L;
         }
 
-        /* JADX INFO: renamed from: -addInterceptor, reason: not valid java name */
         public final Builder m876addInterceptor(final InterfaceC1425 interfaceC1425) {
             return addInterceptor(new Interceptor() { // from class: okhttp3.OkHttpClient$Builder$addInterceptor$2
                 @Override // okhttp3.Interceptor
@@ -141,7 +140,6 @@ public class OkHttpClient implements Cloneable, Call.Factory, WebSocket.Factory 
             });
         }
 
-        /* JADX INFO: renamed from: -addNetworkInterceptor, reason: not valid java name */
         public final Builder m877addNetworkInterceptor(final InterfaceC1425 interfaceC1425) {
             return addNetworkInterceptor(new Interceptor() { // from class: okhttp3.OkHttpClient$Builder$addNetworkInterceptor$2
                 @Override // okhttp3.Interceptor
@@ -798,132 +796,106 @@ public class OkHttpClient implements Cloneable, Call.Factory, WebSocket.Factory 
         }
     }
 
-    /* JADX INFO: renamed from: -deprecated_authenticator, reason: not valid java name */
     public final Authenticator m850deprecated_authenticator() {
         return this.authenticator;
     }
 
-    /* JADX INFO: renamed from: -deprecated_cache, reason: not valid java name */
     public final Cache m851deprecated_cache() {
         return this.cache;
     }
 
-    /* JADX INFO: renamed from: -deprecated_callTimeoutMillis, reason: not valid java name */
     public final int m852deprecated_callTimeoutMillis() {
         return this.callTimeoutMillis;
     }
 
-    /* JADX INFO: renamed from: -deprecated_certificatePinner, reason: not valid java name */
     public final CertificatePinner m853deprecated_certificatePinner() {
         return this.certificatePinner;
     }
 
-    /* JADX INFO: renamed from: -deprecated_connectTimeoutMillis, reason: not valid java name */
     public final int m854deprecated_connectTimeoutMillis() {
         return this.connectTimeoutMillis;
     }
 
-    /* JADX INFO: renamed from: -deprecated_connectionPool, reason: not valid java name */
     public final ConnectionPool m855deprecated_connectionPool() {
         return this.connectionPool;
     }
 
-    /* JADX INFO: renamed from: -deprecated_connectionSpecs, reason: not valid java name */
     public final List<ConnectionSpec> m856deprecated_connectionSpecs() {
         return this.connectionSpecs;
     }
 
-    /* JADX INFO: renamed from: -deprecated_cookieJar, reason: not valid java name */
     public final CookieJar m857deprecated_cookieJar() {
         return this.cookieJar;
     }
 
-    /* JADX INFO: renamed from: -deprecated_dispatcher, reason: not valid java name */
     public final Dispatcher m858deprecated_dispatcher() {
         return this.dispatcher;
     }
 
-    /* JADX INFO: renamed from: -deprecated_dns, reason: not valid java name */
     public final Dns m859deprecated_dns() {
         return this.dns;
     }
 
-    /* JADX INFO: renamed from: -deprecated_eventListenerFactory, reason: not valid java name */
     public final EventListener.Factory m860deprecated_eventListenerFactory() {
         return this.eventListenerFactory;
     }
 
-    /* JADX INFO: renamed from: -deprecated_followRedirects, reason: not valid java name */
     public final boolean m861deprecated_followRedirects() {
         return this.followRedirects;
     }
 
-    /* JADX INFO: renamed from: -deprecated_followSslRedirects, reason: not valid java name */
     public final boolean m862deprecated_followSslRedirects() {
         return this.followSslRedirects;
     }
 
-    /* JADX INFO: renamed from: -deprecated_hostnameVerifier, reason: not valid java name */
     public final HostnameVerifier m863deprecated_hostnameVerifier() {
         return this.hostnameVerifier;
     }
 
-    /* JADX INFO: renamed from: -deprecated_interceptors, reason: not valid java name */
     public final List<Interceptor> m864deprecated_interceptors() {
         return this.interceptors;
     }
 
-    /* JADX INFO: renamed from: -deprecated_networkInterceptors, reason: not valid java name */
     public final List<Interceptor> m865deprecated_networkInterceptors() {
         return this.networkInterceptors;
     }
 
-    /* JADX INFO: renamed from: -deprecated_pingIntervalMillis, reason: not valid java name */
     public final int m866deprecated_pingIntervalMillis() {
         return this.pingIntervalMillis;
     }
 
-    /* JADX INFO: renamed from: -deprecated_protocols, reason: not valid java name */
     public final List<Protocol> m867deprecated_protocols() {
         return this.protocols;
     }
 
-    /* JADX INFO: renamed from: -deprecated_proxy, reason: not valid java name */
     public final Proxy m868deprecated_proxy() {
         return this.proxy;
     }
 
-    /* JADX INFO: renamed from: -deprecated_proxyAuthenticator, reason: not valid java name */
     public final Authenticator m869deprecated_proxyAuthenticator() {
         return this.proxyAuthenticator;
     }
 
-    /* JADX INFO: renamed from: -deprecated_proxySelector, reason: not valid java name */
     public final ProxySelector m870deprecated_proxySelector() {
         return this.proxySelector;
     }
 
-    /* JADX INFO: renamed from: -deprecated_readTimeoutMillis, reason: not valid java name */
     public final int m871deprecated_readTimeoutMillis() {
         return this.readTimeoutMillis;
     }
 
-    /* JADX INFO: renamed from: -deprecated_retryOnConnectionFailure, reason: not valid java name */
     public final boolean m872deprecated_retryOnConnectionFailure() {
         return this.retryOnConnectionFailure;
     }
 
-    /* JADX INFO: renamed from: -deprecated_socketFactory, reason: not valid java name */
     public final SocketFactory m873deprecated_socketFactory() {
         return this.socketFactory;
     }
 
-    /* JADX INFO: renamed from: -deprecated_sslSocketFactory, reason: not valid java name */
     public final SSLSocketFactory m874deprecated_sslSocketFactory() {
         return sslSocketFactory();
     }
 
-    /* JADX INFO: renamed from: -deprecated_writeTimeoutMillis, reason: not valid java name */
     public final int m875deprecated_writeTimeoutMillis() {
         return this.writeTimeoutMillis;
     }

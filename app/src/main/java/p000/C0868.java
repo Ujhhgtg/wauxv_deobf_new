@@ -2,12 +2,10 @@ package p000;
 
 import com.alibaba.fastjson2.internal.asm.Opcodes;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲈᤞᲇᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0868 implements InterfaceC1902 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f3295;
 
     public /* synthetic */ C0868(int i) {
@@ -16,7 +14,6 @@ public final class C0868 implements InterfaceC1902 {
 
     /* JADX WARN: Code duplicated, block: B:51:0x0169  */
     @Override // p000.InterfaceC1902
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo2385(C2103 c2103, AbstractC2224 abstractC2224) {
         boolean z;
         switch (this.f3295) {

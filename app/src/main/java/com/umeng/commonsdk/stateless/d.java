@@ -116,7 +116,6 @@ public class d {
                         if (fileArrListFiles != null && fileArrListFiles.length != 0) {
                             Arrays.sort(fileArrListFiles, new Comparator<File>() { // from class: com.umeng.commonsdk.stateless.d.3
                                 @Override // java.util.Comparator
-                                /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                                 public int compare(File file2, File file3) {
                                     long jLastModified = file2.lastModified() - file3.lastModified();
                                     if (jLastModified > 0) {
@@ -298,7 +297,6 @@ public class d {
                         if (fileArrListFiles != null && fileArrListFiles.length != 0) {
                             Arrays.sort(fileArrListFiles, new Comparator<File>() { // from class: com.umeng.commonsdk.stateless.d.2
                                 @Override // java.util.Comparator
-                                /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                                 public int compare(File file2, File file3) {
                                     long jLastModified = file2.lastModified() - file3.lastModified();
                                     if (jLastModified > 0) {
@@ -338,7 +336,6 @@ public class d {
                                     if (file3 != null && file3.isDirectory() && (fileArrListFiles2 = file3.listFiles()) != null && fileArrListFiles2.length > 0) {
                                         Arrays.sort(fileArrListFiles2, new Comparator<File>() { // from class: com.umeng.commonsdk.stateless.d.1
                                             @Override // java.util.Comparator
-                                            /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                                             public int compare(File file4, File file5) {
                                                 long jLastModified = file4.lastModified() - file5.lastModified();
                                                 if (jLastModified > 0) {
@@ -427,7 +424,6 @@ public class d {
                         if (arrayList.size() >= i) {
                             Collections.sort(arrayList, new Comparator<File>() { // from class: com.umeng.commonsdk.stateless.d.4
                                 @Override // java.util.Comparator
-                                /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                                 public int compare(File file3, File file4) {
                                     if (file3 == null || file4 == null || file3.lastModified() >= file4.lastModified()) {
                                         return (file3 == null || file4 == null || file3.lastModified() != file4.lastModified()) ? 1 : 0;
@@ -490,7 +486,6 @@ public class d {
                             if (arrayList.size() >= i) {
                                 Collections.sort(arrayList, new Comparator<File>() { // from class: com.umeng.commonsdk.stateless.d.6
                                     @Override // java.util.Comparator
-                                    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                                     public int compare(File file3, File file4) {
                                         if (file3 == null || file4 == null || file3.lastModified() >= file4.lastModified()) {
                                             return (file3 == null || file4 == null || file3.lastModified() != file4.lastModified()) ? 1 : 0;

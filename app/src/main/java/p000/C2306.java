@@ -4,12 +4,10 @@ import android.graphics.Rect;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲈᤝᲁᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2306 extends AbstractC1138 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f7426;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -19,7 +17,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final int mo2737(View view) {
         int iM4458;
         int i;
@@ -41,7 +38,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo2738(View view) {
         int iM4457;
         int i;
@@ -63,7 +59,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final int mo2739(View view) {
         int iM4456;
         int i;
@@ -85,7 +80,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final int mo2740(View view) {
         int iM4455;
         int i;
@@ -107,7 +101,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final int mo2741() {
         switch (this.f7426) {
             case 0:
@@ -118,7 +111,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final int mo2742() {
         int i;
         int iM4471;
@@ -138,7 +130,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final int mo2743() {
         switch (this.f7426) {
             case 0:
@@ -149,7 +140,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final int mo2744() {
         switch (this.f7426) {
             case 0:
@@ -160,7 +150,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final int mo2745() {
         switch (this.f7426) {
             case 0:
@@ -171,7 +160,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final int mo2746() {
         switch (this.f7426) {
             case 0:
@@ -182,7 +170,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final int mo2747() {
         int iM4470;
         int iM4471;
@@ -202,7 +189,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final int mo2748(View view) {
         switch (this.f7426) {
             case 0:
@@ -219,7 +205,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final int mo2749(View view) {
         switch (this.f7426) {
             case 0:
@@ -236,7 +221,6 @@ public final class C2306 extends AbstractC1138 {
     }
 
     @Override // p000.AbstractC1138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final void mo2750(int i) {
         switch (this.f7426) {
             case 0:

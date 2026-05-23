@@ -4,7 +4,6 @@ import dalvik.system.PathClassLoader;
 import java.lang.invoke.MethodHandle;
 import java.lang.reflect.Executable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲈᤞᲇᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0867 extends PathClassLoader {

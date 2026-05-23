@@ -1,17 +1,13 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲀᛸᲁᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0912 extends AbstractC3458 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final String[] f3370 = {"static-put", "static-get", "instance-put", "instance-get", "invoke-static", "invoke-instance", "invoke-constructor", "invoke-direct", "invoke-interface"};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int f3371;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final AbstractC0777 f3372;
 
     public C0912(int i, AbstractC0777 abstractC0777) {
@@ -19,12 +15,10 @@ public final class C0912 extends AbstractC3458 {
         this.f3372 = abstractC0777;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static boolean m2426(int i) {
         return i == 0 || i == 1 || i == 2 || i == 3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static C0912 m2427(int i, AbstractC0777 abstractC0777) {
         if (!m2426(i)) {
             switch (i) {
@@ -56,13 +50,11 @@ public final class C0912 extends AbstractC3458 {
     }
 
     @Override // p000.InterfaceC3407
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo1214() {
         return f3370[this.f3371] + "," + this.f3372.toString();
     }
 
     @Override // p000.AbstractC0777
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final int mo2267(AbstractC0777 abstractC0777) {
         C0912 c0912 = (C0912) abstractC0777;
         int i = c0912.f3371;
@@ -71,13 +63,11 @@ public final class C0912 extends AbstractC3458 {
     }
 
     @Override // p000.AbstractC0777
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final boolean mo2268() {
         return false;
     }
 
     @Override // p000.AbstractC0777
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final String mo2269() {
         return "method handle";
     }

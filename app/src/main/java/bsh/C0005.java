@@ -24,39 +24,28 @@ import p000.C3532;
 import p000.EnumC0703;
 import p000.RunnableC1668;
 
-/* JADX INFO: renamed from: bsh.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0005 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final String f473;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final String f474;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final String f475;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final String f476;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Class f477;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final String f478;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final Class[] f479;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final C3532[] f480;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final C1007[] f481;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final C1007[] f482;
 
     public C0005(C2000 c2000, String str, String str2, Class cls, Class[] clsArr, C3532[] c3532Arr, C1007[] c1007Arr, C0007 c0007, EnumC0703 enumC0703) {
@@ -119,12 +108,10 @@ public final class C0005 {
         c2000.m3860("static");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m318(String str) {
         return (str.startsWith("[") || !str.startsWith("L")) ? str : AbstractC2784.m4744(1, 1, str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m319(int i, String str, String[] strArr, C1752 c1752, C1752[] c1752Arr, int i2, C1983 c1983) {
         String str2;
         c1983.m3842(c1752Arr[i]);
@@ -157,7 +144,6 @@ public final class C0005 {
         c1983.m3841(167, c1752);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static void m320(String[] strArr, boolean z, C1983 c1983) {
         int i;
         c1983.m3840(17, strArr.length);
@@ -197,7 +183,6 @@ public final class C0005 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static void m321(String str, C1983 c1983) {
         int i;
         if (str.equals("V")) {
@@ -235,7 +220,6 @@ public final class C0005 {
     /* JADX WARN: Type inference failed for: r1v3 */
     /* JADX WARN: Type inference failed for: r1v4 */
     /* JADX WARN: Type inference failed for: r1v5, types: [int] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static int m322(C2000 c2000) {
         boolean zM3863 = c2000.m3863(1);
         ?? r1 = zM3863;
@@ -266,7 +250,6 @@ public final class C0005 {
         return i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static String m323(String str, String[] strArr) {
         StringBuilder sb = new StringBuilder("(");
         for (String str2 : strArr) {
@@ -277,7 +260,6 @@ public final class C0005 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static String m324(String[] strArr) {
         StringBuilder sb = new StringBuilder("<");
         for (String str : strArr) {
@@ -287,12 +269,10 @@ public final class C0005 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static void m325(String str, String str2, C1983 c1983) {
         c1983.m3836(178, str, This.Keys.BSHSTATIC + str2, "Lbsh/This;");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m326(int i, String[] strArr, int i2, C0711 c0711) {
         int length = strArr.length + 1;
         int length2 = strArr.length + 2;

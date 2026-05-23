@@ -6,15 +6,12 @@ import android.view.WindowInsets;
 import java.lang.reflect.Field;
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤝᲈᲀᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3669 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C3669 f11451;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C3665 f11452;
 
     static {
@@ -55,7 +52,6 @@ public final class C3669 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static C1646 m5298(C1646 c1646, int i, int i2, int i3, int i4) {
         int iMax = Math.max(0, c1646.f5580 - i);
         int iMax2 = Math.max(0, c1646.f5581 - i2);
@@ -64,7 +60,6 @@ public final class C3669 {
         return (iMax == i && iMax2 == i2 && iMax3 == i3 && iMax4 == i4) ? c1646 : C1646.m3375(iMax, iMax2, iMax3, iMax4);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static C3669 m5299(View view, WindowInsets windowInsets) {
         
         C3669 c3669 = new C3669(windowInsets);
@@ -100,17 +95,14 @@ public final class C3669 {
         return c3665.hashCode();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int m5300() {
         return this.f11452.mo5266().f5583;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final int m5301() {
         return this.f11452.mo5266().f5581;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final WindowInsets m5302() {
         C3665 c3665 = this.f11452;
         if (c3665 instanceof AbstractC3656) {

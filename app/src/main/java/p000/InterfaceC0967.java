@@ -7,7 +7,6 @@ import java.lang.annotation.RetentionPolicy;
 /* JADX WARN: Method from annotation default annotation not found: n */
 /* JADX WARN: Method from annotation default annotation not found: nl */
 /* JADX WARN: Method from annotation default annotation not found: s */
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲇᲀᲁᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 @Retention(RetentionPolicy.RUNTIME)

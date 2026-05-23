@@ -21,12 +21,10 @@ import me.hd.wauxv.R;
 import me.hd.wauxv.ui.setting.view.ModuleRecyclerView;
 import me.hd.wauxv.ui.setting.view.ModuleTabLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᲈᤝᤞᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2674 extends AbstractC1889 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ C2675 f8604;
 
     public C2674(C2675 c2675) {
@@ -41,7 +39,6 @@ public final class C2674 extends AbstractC1889 {
     }
 
     @Override // p000.AbstractC1889
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final void mo3678(AbstractC0027 abstractC0027, View view) throws IllegalAccessException, InvocationTargetException {
         View viewM753 = ((C0943) abstractC0027).m753();
         String[] strArr = AbstractC1574.f5469;

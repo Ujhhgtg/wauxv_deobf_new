@@ -13,96 +13,66 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᤝᛸᲀᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC3436 implements Cloneable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static final Animator[] f10816 = new Animator[0];
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public static final int[] f10817 = {2, 1, 3, 4};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static final C2102 f10818 = new C2102(21);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public static final ThreadLocal f10819 = new ThreadLocal();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public ArrayList f10830;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public ArrayList f10831;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public InterfaceC3435[] f10832;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public long f10842;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public long f10843;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final String f10820 = getClass().getName();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public long f10821 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public long f10822 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public TimeInterpolator f10823 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final ArrayList f10824 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final ArrayList f10825 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public C2103 f10826 = new C2103(15);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public C2103 f10827 = new C2103(15);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public C0315 f10828 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final int[] f10829 = f10817;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final ArrayList f10833 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public Animator[] f10834 = f10816;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public int f10835 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public boolean f10836 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public boolean f10837 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public AbstractC3436 f10838 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public ArrayList f10839 = null;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public ArrayList f10840 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public C2102 f10841 = f10818;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m4944(C2103 c2103, View view, C3444 c3444) {
         C0264 c0264 = (C0264) c2103.f6935;
         C0264 c0265 = (C0264) c2103.f6938;
@@ -163,7 +133,6 @@ public abstract class AbstractC3436 implements Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static C0264 m4945() {
         ThreadLocal threadLocal = f10819;
         C0264 c0264 = (C0264) threadLocal.get();
@@ -175,7 +144,6 @@ public abstract class AbstractC3436 implements Cloneable {
         return c0265;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static boolean m4946(C3444 c3444, C3444 c3445, String str) {
         Object obj = c3444.f10854.get(str);
         Object obj2 = c3445.f10854.get(str);
@@ -206,7 +174,6 @@ public abstract class AbstractC3436 implements Cloneable {
         return mo1427("");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void m4947(InterfaceC3435 interfaceC3435) {
         if (this.f10839 == null) {
             this.f10839 = new ArrayList();
@@ -214,10 +181,8 @@ public abstract class AbstractC3436 implements Cloneable {
         this.f10839.add(interfaceC3435);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public abstract void mo1409(C3444 c3444);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m4948(View view, boolean z) {
         if (view == null) {
             return;
@@ -246,10 +211,8 @@ public abstract class AbstractC3436 implements Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public abstract void mo1411(C3444 c3444);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m4949(ViewGroup viewGroup, boolean z) {
         m4950(z);
         ArrayList arrayList = this.f10824;
@@ -295,7 +258,6 @@ public abstract class AbstractC3436 implements Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m4950(boolean z) {
         if (z) {
             ((C0264) this.f10826.f6935).clear();
@@ -309,7 +271,6 @@ public abstract class AbstractC3436 implements Cloneable {
     }
 
     @Override // 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: merged with bridge method [inline-methods] */
     public AbstractC3436 clone() {
         try {
             AbstractC3436 abstractC3436 = (AbstractC3436) super.clone();
@@ -326,12 +287,10 @@ public abstract class AbstractC3436 implements Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public Animator mo2016(ViewGroup viewGroup, C3444 c3444, C3444 c3445) {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public void mo1413(ViewGroup viewGroup, C2103 c2103, C2103 c2104, ArrayList arrayList, ArrayList arrayList2) {
         int i;
         int i2;
@@ -433,7 +392,6 @@ public abstract class AbstractC3436 implements Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m4951() {
         int i = this.f10835 - 1;
         this.f10835 = i;
@@ -455,7 +413,6 @@ public abstract class AbstractC3436 implements Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final C3444 m4952(View view, boolean z) {
         C0315 c0315 = this.f10828;
         if (c0315 != null) {
@@ -487,18 +444,15 @@ public abstract class AbstractC3436 implements Cloneable {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final AbstractC3436 m4953() {
         C0315 c0315 = this.f10828;
         return c0315 != null ? c0315.m4953() : this;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public String[] mo2017() {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final C3444 m4954(View view, boolean z) {
         C0315 c0315 = this.f10828;
         if (c0315 != null) {
@@ -507,12 +461,10 @@ public abstract class AbstractC3436 implements Cloneable {
         return (C3444) ((C0264) (z ? this.f10826 : this.f10827).f6935).get(view);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public boolean mo1414() {
         return !this.f10833.isEmpty();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public boolean mo2954(C3444 c3444, C3444 c3445) {
         if (c3444 != null && c3445 != null) {
             String[] strArrMo2017 = mo2017();
@@ -534,7 +486,6 @@ public abstract class AbstractC3436 implements Cloneable {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final boolean m4955(View view) {
         int id = view.getId();
         ArrayList arrayList = this.f10824;
@@ -543,7 +494,6 @@ public abstract class AbstractC3436 implements Cloneable {
         return (size == 0 && arrayList2.size() == 0) || arrayList.contains(Integer.valueOf(id)) || arrayList2.contains(view);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final void m4956(AbstractC3436 abstractC3436, C2373 c2373, boolean z) {
         AbstractC3436 abstractC3437 = this.f10838;
         if (abstractC3437 != null) {
@@ -584,7 +534,6 @@ public abstract class AbstractC3436 implements Cloneable {
         this.f10832 = interfaceC3435Arr2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public void mo1415(View view) {
         if (this.f10837) {
             return;
@@ -603,7 +552,6 @@ public abstract class AbstractC3436 implements Cloneable {
         this.f10836 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public void mo1416() {
         C0264 c0264M4945 = m4945();
         this.f10842 = 0L;
@@ -631,7 +579,6 @@ public abstract class AbstractC3436 implements Cloneable {
         this.f10840.clear();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ */
     public AbstractC3436 mo1417(InterfaceC3435 interfaceC3435) {
         AbstractC3436 abstractC3436;
         ArrayList arrayList = this.f10839;
@@ -646,7 +593,6 @@ public abstract class AbstractC3436 implements Cloneable {
         return this;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ */
     public void mo1418(View view) {
         if (this.f10836) {
             if (!this.f10837) {
@@ -666,7 +612,6 @@ public abstract class AbstractC3436 implements Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ */
     public void mo1419() {
         m4957();
         C0264 c0264M4945 = m4945();
@@ -696,7 +641,6 @@ public abstract class AbstractC3436 implements Cloneable {
         m4951();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ */
     public void mo1420(long j, long j2) {
         long j3 = this.f10842;
         int i = 0;
@@ -727,17 +671,14 @@ public abstract class AbstractC3436 implements Cloneable {
         m4956(this, C2373.f7625, z);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ */
     public void mo1421(long j) {
         this.f10822 = j;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ */
     public void mo1423(TimeInterpolator timeInterpolator) {
         this.f10823 = timeInterpolator;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
     public void mo1424(C2102 c2102) {
         if (c2102 == null) {
             this.f10841 = f10818;
@@ -746,12 +687,10 @@ public abstract class AbstractC3436 implements Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public void mo1426(long j) {
         this.f10821 = j;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public final void m4957() {
         if (this.f10835 == 0) {
             m4956(this, C2373.f7624, false);
@@ -760,7 +699,6 @@ public abstract class AbstractC3436 implements Cloneable {
         this.f10835++;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ */
     public String mo1427(String str) {
         StringBuilder sb = new StringBuilder(str);
         sb.append(getClass().getSimpleName());
@@ -808,15 +746,12 @@ public abstract class AbstractC3436 implements Cloneable {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public void mo1425() {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public void mo1410(C3444 c3444) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public void mo1422(AbstractC0968 abstractC0968) {
     }
 }

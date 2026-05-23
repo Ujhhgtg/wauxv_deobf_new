@@ -3,13 +3,11 @@ package p000;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲀᤝᲈᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1906 extends AbstractC0052 {
     public static final Parcelable.Creator<C1906> CREATOR = new C0051(4);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public boolean f6281;
 
     public C1906(Parcel parcel, ClassLoader classLoader) {

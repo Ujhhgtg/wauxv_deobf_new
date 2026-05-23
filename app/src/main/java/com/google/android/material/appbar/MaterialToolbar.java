@@ -28,22 +28,16 @@ import p000.MenuC1944;
 /* JADX INFO: loaded from: classes.dex */
 public class MaterialToolbar extends Toolbar {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ, reason: contains not printable characters */
     public static final ImageView.ScaleType[] f551 = {ImageView.ScaleType.MATRIX, ImageView.ScaleType.FIT_XY, ImageView.ScaleType.FIT_START, ImageView.ScaleType.FIT_CENTER, ImageView.ScaleType.FIT_END, ImageView.ScaleType.CENTER, ImageView.ScaleType.CENTER_CROP, ImageView.ScaleType.CENTER_INSIDE};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
     public Integer f552;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ, reason: contains not printable characters */
     public boolean f553;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ, reason: contains not printable characters */
     public boolean f554;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ, reason: contains not printable characters */
     public ImageView.ScaleType f555;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ, reason: contains not printable characters */
     public Boolean f556;
 
     public MaterialToolbar(Context context, AttributeSet attributeSet) {
@@ -210,7 +204,6 @@ public class MaterialToolbar extends Toolbar {
     }
 
     @Override // androidx.appcompat.widget.Toolbar
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final void mo42(int i) {
         Menu menu = getMenu();
         boolean z = menu instanceof MenuC1944;
@@ -223,7 +216,6 @@ public class MaterialToolbar extends Toolbar {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final void m634(TextView textView, Pair pair) {
         int measuredWidth = getMeasuredWidth();
         int measuredWidth2 = textView.getMeasuredWidth();

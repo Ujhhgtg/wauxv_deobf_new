@@ -2,15 +2,12 @@ package p000;
 
 import java.io.File;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲇᲀᲈᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1215 implements InterfaceC1467 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public volatile Object f4384;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Object f4385;
 
     public /* synthetic */ C1215(Object obj) {
@@ -35,7 +32,6 @@ public final class C1215 implements InterfaceC1467 {
         return this.f4384;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public InterfaceC1062 m2831() {
         if (((InterfaceC1062) this.f4384) == null) {
             synchronized (this) {

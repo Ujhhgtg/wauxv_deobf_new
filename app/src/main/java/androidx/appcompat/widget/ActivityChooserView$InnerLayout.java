@@ -11,7 +11,6 @@ import p000.AbstractC3471;
 /* JADX INFO: loaded from: classes.dex */
 public class ActivityChooserView$InnerLayout extends LinearLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final int[] f89 = {16842964};
 
     public ActivityChooserView$InnerLayout(Context context, AttributeSet attributeSet) {

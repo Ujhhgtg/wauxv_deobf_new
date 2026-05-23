@@ -7,12 +7,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲇᤞᲈᤝᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0489 extends AbstractC0488 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ int f2106;
 
     public String toString() {
@@ -28,7 +26,6 @@ public final class C0489 extends AbstractC0488 {
     }
 
     @Override // p000.AbstractC0488
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final byte[] mo1723(String str) {
         switch (this.f2106) {
             case 0:

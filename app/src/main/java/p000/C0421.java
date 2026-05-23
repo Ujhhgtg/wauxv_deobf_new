@@ -8,18 +8,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᲇᲀᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0421 implements InterfaceC2574 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C2301 f1968 = C2301.m4164(90, "com.bumptech.glide.load.resource.bitmap.BitmapEncoder.CompressionQuality");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final C2301 f1969 = new C2301("com.bumptech.glide.load.resource.bitmap.BitmapEncoder.CompressionFormat", null, C2301.f7412);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C1867 f1970;
 
     public C0421(C1867 c1867) {
@@ -27,7 +23,6 @@ public final class C0421 implements InterfaceC2574 {
     }
 
     @Override // p000.InterfaceC1207
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final boolean mo1510(Object obj, File file, C2303 c2303) throws Throwable {
         boolean z;
         Bitmap bitmap = (Bitmap) ((InterfaceC2568) obj).get();
@@ -100,7 +95,6 @@ public final class C0421 implements InterfaceC2574 {
     }
 
     @Override // p000.InterfaceC2574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final int mo1614(C2303 c2303) {
         return 2;
     }

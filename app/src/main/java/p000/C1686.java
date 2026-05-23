@@ -4,12 +4,10 @@ import com.alibaba.fastjson2.util.JDKUtils;
 import java.util.List;
 import java.util.function.ToIntFunction;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲇᲀᛸᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C1686 implements ToIntFunction {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f5741;
 
     public /* synthetic */ C1686(int i) {

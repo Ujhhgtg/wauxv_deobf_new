@@ -3,7 +3,6 @@ package p000;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᛸᤞᲁᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1250 extends C1246 {
@@ -12,7 +11,6 @@ public final class C1250 extends C1246 {
         this.f4515.mark(2147483647);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m2911(long j) throws IOException {
         int i = this.f4517;
         if (i > j) {

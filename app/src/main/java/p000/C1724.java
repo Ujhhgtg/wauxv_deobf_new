@@ -1,14 +1,11 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲈᲇᲀᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1724 implements InterfaceC1743 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C1724 f5818 = new C1724();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C2656 f5819;
 
     static {
@@ -25,13 +22,11 @@ public final class C1724 implements InterfaceC1743 {
     }
 
     @Override // p000.InterfaceC1743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final InterfaceC2654 mo1363() {
         return f5819;
     }
 
     @Override // p000.InterfaceC1743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         AbstractC3471.m5065(interfaceC0974);
         if (interfaceC0974.mo2520()) {
@@ -41,7 +36,6 @@ public final class C1724 implements InterfaceC1743 {
     }
 
     @Override // p000.InterfaceC1743
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo1542(InterfaceC1206 interfaceC1206, Object obj) {
         AbstractC3471.m5063(interfaceC1206);
         interfaceC1206.mo2797();

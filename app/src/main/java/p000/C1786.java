@@ -2,24 +2,18 @@ package p000;
 
 import android.view.View;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᲁᤝᲈᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1786 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public AbstractC1138 f5928;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int f5929;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public int f5930;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public boolean f5931;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public boolean f5932;
 
     public C1786() {
@@ -30,12 +24,10 @@ public final class C1786 {
         return "AnchorInfo{mPosition=" + this.f5929 + ", mCoordinate=" + this.f5930 + ", mLayoutFromEnd=" + this.f5931 + ", mValid=" + this.f5932 + '}';
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m3519() {
         this.f5930 = this.f5931 ? this.f5928.mo2742() : this.f5928.mo2746();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m3520(View view, int i) {
         if (this.f5931) {
             int iMo2737 = this.f5928.mo2737(view);
@@ -47,7 +39,6 @@ public final class C1786 {
         this.f5929 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m3521(View view, int i) {
         AbstractC1138 abstractC1138 = this.f5928;
         int iMo2747 = -2147483648 == abstractC1138.f4232 ? 0 : abstractC1138.mo2747() - abstractC1138.f4232;
@@ -82,7 +73,6 @@ public final class C1786 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m3522() {
         this.f5929 = -1;
         this.f5930 = -2147483648;

@@ -6,12 +6,10 @@ import java.util.Iterator;
 import java.util.Set;
 import okhttp3.HttpUrl;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲀᲇᲈᤞᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1192 implements Set, Serializable, InterfaceC1737 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final C1192 f4332 = new C1192();
 
     @Override // java.util.Set, java.util.Collection

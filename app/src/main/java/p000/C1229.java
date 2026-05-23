@@ -4,18 +4,14 @@ import bsh.C0007;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲈᤞᛸᲀᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C1229 extends Exception {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public InterfaceC2225 f4452;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public String f4453;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C0550 f4454;
 
     public C1229(String str, InterfaceC2225 interfaceC2225, C0550 c0550, Throwable th) {
@@ -65,7 +61,6 @@ public class C1229 extends Exception {
         return AbstractC2784.m4752(new StringBuilder(), this.f4453, string);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m2864(String str) {
         if (str == null) {
             return;
@@ -79,7 +74,6 @@ public class C1229 extends Exception {
         this.f4453 = sbM2788.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public C1229 mo2865(String str) {
         m2864(str);
         return this;

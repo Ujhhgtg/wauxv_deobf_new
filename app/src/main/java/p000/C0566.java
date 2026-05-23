@@ -2,15 +2,12 @@ package p000;
 
 import com.google.android.material.carousel.CarouselLayoutManager;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤞᲁᲀᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0566 extends AbstractC0567 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ int f2298;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final /* synthetic */ CarouselLayoutManager f2299;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -29,7 +26,6 @@ public final class C0566 extends AbstractC0567 {
     }
 
     @Override // p000.AbstractC0567
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int mo1960() {
         switch (this.f2298) {
             case 0:
@@ -41,7 +37,6 @@ public final class C0566 extends AbstractC0567 {
     }
 
     @Override // p000.AbstractC0567
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final int mo1961() {
         switch (this.f2298) {
             case 0:
@@ -52,7 +47,6 @@ public final class C0566 extends AbstractC0567 {
     }
 
     @Override // p000.AbstractC0567
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int mo1962() {
         switch (this.f2298) {
             case 0:
@@ -64,7 +58,6 @@ public final class C0566 extends AbstractC0567 {
     }
 
     @Override // p000.AbstractC0567
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int mo1963() {
         switch (this.f2298) {
             case 0:
@@ -79,7 +72,6 @@ public final class C0566 extends AbstractC0567 {
     }
 
     @Override // p000.AbstractC0567
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final int mo1964() {
         switch (this.f2298) {
             case 0:

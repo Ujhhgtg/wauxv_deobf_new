@@ -9,12 +9,10 @@ import com.alibaba.fastjson2.writer.FieldWriter;
 import java.util.Objects;
 import java.util.function.Predicate;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲁᤝᤞᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0335 implements Predicate {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f1596;
 
     public /* synthetic */ C0335(int i) {

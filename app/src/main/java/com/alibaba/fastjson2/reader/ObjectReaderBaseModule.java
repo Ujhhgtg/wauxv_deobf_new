@@ -2260,7 +2260,6 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 getBeanInfo(beanInfo, BeanUtils.getAnnotations(cls2));
                 BeanUtils.staticMethod(cls2, new Consumer(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᤞᲈᤝᲇᲁ
 
-                    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
                     public final /* synthetic */ ObjectReaderBaseModule.ReaderAnnotationProcessor f7281;
 
                     {
@@ -2287,7 +2286,6 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 });
                 BeanUtils.constructor(cls2, new Consumer(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᤞᲈᤝᲇᲁ
 
-                    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
                     public final /* synthetic */ ObjectReaderBaseModule.ReaderAnnotationProcessor f7281;
 
                     {
@@ -2395,7 +2393,6 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
             final int i4 = 2;
             BeanUtils.staticMethod(cls, new Consumer(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᤞᲈᤝᲇᲁ
 
-                /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
                 public final /* synthetic */ ObjectReaderBaseModule.ReaderAnnotationProcessor f7281;
 
                 {
@@ -2423,7 +2420,6 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
             final int i5 = 3;
             BeanUtils.constructor(cls, new Consumer(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᤞᲈᤝᲇᲁ
 
-                /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
                 public final /* synthetic */ ObjectReaderBaseModule.ReaderAnnotationProcessor f7281;
 
                 {

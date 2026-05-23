@@ -3,12 +3,10 @@ package p000;
 import java.util.ArrayDeque;
 import java.util.LinkedHashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲇᲁᲈᤞᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0376 implements InterfaceC1997 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Object f1760;
 
     public AbstractC0376(int i) {
@@ -23,7 +21,6 @@ public abstract class AbstractC0376 implements InterfaceC1997 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void m1519(InterfaceC2376 interfaceC2376) {
         ArrayDeque arrayDeque = (ArrayDeque) this.f1760;
         if (arrayDeque.size() < 20) {
@@ -32,7 +29,6 @@ public abstract class AbstractC0376 implements InterfaceC1997 {
     }
 
     @Override // p000.InterfaceC1997
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ */
     public InterfaceC1996 mo1115(C2103 c2103) {
         return new C0522(2, (C1227) this.f1760);
     }

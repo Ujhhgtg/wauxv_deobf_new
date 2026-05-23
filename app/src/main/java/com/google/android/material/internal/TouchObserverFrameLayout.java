@@ -10,7 +10,6 @@ import android.widget.FrameLayout;
 /* JADX INFO: loaded from: classes.dex */
 public class TouchObserverFrameLayout extends FrameLayout {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public View.OnTouchListener f739;
 
     public TouchObserverFrameLayout(Context context, AttributeSet attributeSet) {

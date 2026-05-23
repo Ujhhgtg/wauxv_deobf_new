@@ -2,7 +2,6 @@ package p000;
 
 import java.util.concurrent.atomic.AtomicReferenceArray;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᲇᤝᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2566 {
@@ -12,12 +11,10 @@ public final class C2566 {
         this.array = new AtomicReferenceArray<>(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final int m4581() {
         return this.array.length();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Object m4582(int i) {
         AtomicReferenceArray<Object> atomicReferenceArray = this.array;
         if (i < atomicReferenceArray.length()) {
@@ -26,7 +23,6 @@ public final class C2566 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m4583(int i, C0881 c0881) {
         AtomicReferenceArray<Object> atomicReferenceArray = this.array;
         int length = atomicReferenceArray.length();

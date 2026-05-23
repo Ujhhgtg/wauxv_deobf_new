@@ -3,12 +3,10 @@ package p000;
 import java.io.IOException;
 import java.io.StringWriter;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲁᲇᲈᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0951 extends AbstractC1352 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final int f3471;
 
     public C0951(int i, int i2) {
@@ -16,7 +14,6 @@ public final class C0951 extends AbstractC1352 {
         this.f3471 = i2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final int m2445() {
         int length = this.f4836.length;
         if (length == 0) {
@@ -26,7 +23,6 @@ public final class C0951 extends AbstractC1352 {
         return abstractC0950.mo1344() + abstractC0950.m2442();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final void m2446(C0519 c0519) {
         int i = c0519.f2196;
         int length = this.f4836.length;

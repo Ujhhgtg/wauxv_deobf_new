@@ -6,12 +6,10 @@ import android.graphics.Outline;
 import android.graphics.drawable.Drawable;
 import androidx.appcompat.widget.ActionBarContainer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0122 extends Drawable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final ActionBarContainer f1080;
 
     public C0122(ActionBarContainer actionBarContainer) {

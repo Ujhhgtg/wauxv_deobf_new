@@ -371,47 +371,38 @@ public final class Cookie {
         return Companion.parseAll(httpUrl, headers);
     }
 
-    /* JADX INFO: renamed from: -deprecated_domain, reason: not valid java name */
     public final String m796deprecated_domain() {
         return this.domain;
     }
 
-    /* JADX INFO: renamed from: -deprecated_expiresAt, reason: not valid java name */
     public final long m797deprecated_expiresAt() {
         return this.expiresAt;
     }
 
-    /* JADX INFO: renamed from: -deprecated_hostOnly, reason: not valid java name */
     public final boolean m798deprecated_hostOnly() {
         return this.hostOnly;
     }
 
-    /* JADX INFO: renamed from: -deprecated_httpOnly, reason: not valid java name */
     public final boolean m799deprecated_httpOnly() {
         return this.httpOnly;
     }
 
-    /* JADX INFO: renamed from: -deprecated_name, reason: not valid java name */
     public final String m800deprecated_name() {
         return this.name;
     }
 
-    /* JADX INFO: renamed from: -deprecated_path, reason: not valid java name */
     public final String m801deprecated_path() {
         return this.path;
     }
 
-    /* JADX INFO: renamed from: -deprecated_persistent, reason: not valid java name */
     public final boolean m802deprecated_persistent() {
         return this.persistent;
     }
 
-    /* JADX INFO: renamed from: -deprecated_secure, reason: not valid java name */
     public final boolean m803deprecated_secure() {
         return this.secure;
     }
 
-    /* JADX INFO: renamed from: -deprecated_value, reason: not valid java name */
     public final String m804deprecated_value() {
         return this.value;
     }

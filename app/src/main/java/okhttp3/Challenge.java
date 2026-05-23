@@ -25,22 +25,18 @@ public final class Challenge {
         this.authParams = Collections.unmodifiableMap(linkedHashMap);
     }
 
-    /* JADX INFO: renamed from: -deprecated_authParams, reason: not valid java name */
     public final Map<String, String> m788deprecated_authParams() {
         return this.authParams;
     }
 
-    /* JADX INFO: renamed from: -deprecated_charset, reason: not valid java name */
     public final Charset m789deprecated_charset() {
         return charset();
     }
 
-    /* JADX INFO: renamed from: -deprecated_realm, reason: not valid java name */
     public final String m790deprecated_realm() {
         return realm();
     }
 
-    /* JADX INFO: renamed from: -deprecated_scheme, reason: not valid java name */
     public final String m791deprecated_scheme() {
         return this.scheme;
     }

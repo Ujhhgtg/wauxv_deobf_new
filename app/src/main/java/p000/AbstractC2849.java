@@ -1,10 +1,8 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᲁᲇᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2849 extends AbstractC2848 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public static boolean m4855(String str, String str2) {
         if (str == null) {
             return str2 == null;
@@ -12,7 +10,6 @@ public abstract class AbstractC2849 extends AbstractC2848 {
         return str.equalsIgnoreCase(str2);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public static String m4856(int i, String str) {
         if (i < 0) {
             throw new IllegalArgumentException(("Count 'n' must be non-negative, but was " + i + '.').toString());
@@ -49,7 +46,6 @@ public abstract class AbstractC2849 extends AbstractC2848 {
         return new String(cArr);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public static String m4857(String str, String str2, String str3) {
         int iM4831 = AbstractC2841.m4831(str, str2, 0, false);
         if (iM4831 < 0) {

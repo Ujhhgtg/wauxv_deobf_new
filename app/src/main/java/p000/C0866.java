@@ -4,13 +4,11 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.SparseArray;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲈᤞᲁᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0866 extends AbstractC0052 {
     public static final Parcelable.Creator<C0866> CREATOR = new C0051(3);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public SparseArray f3294;
 
     public C0866(Parcel parcel, ClassLoader classLoader) {

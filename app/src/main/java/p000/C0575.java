@@ -12,27 +12,20 @@ import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲀᤝᤞᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0575 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f2341;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int f2342;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final Object f2343;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public Object f2344;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object f2345;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Object f2346;
 
     public C0575(C2481 c2481) {
@@ -43,12 +36,10 @@ public final class C0575 {
         this.f2345 = new ArrayList();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static boolean m1982(int i) {
         return Log.isLoggable("FragmentManager", i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static boolean m1983(AbstractComponentCallbacksC1406 abstractComponentCallbacksC1406) {
         return abstractComponentCallbacksC1406 == null || abstractComponentCallbacksC1406.f5069;
     }
@@ -70,7 +61,6 @@ public final class C0575 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void m1984(View view, int i, boolean z) {
         RecyclerView recyclerView = ((C2481) this.f2343).f7925;
         int childCount = i < 0 ? recyclerView.getChildCount() : m1995(i);
@@ -92,7 +82,6 @@ public final class C0575 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public void m1985(View view, int i, ViewGroup.LayoutParams layoutParams, boolean z) {
         RecyclerView recyclerView = ((C2481) this.f2343).f7925;
         int childCount = i < 0 ? recyclerView.getChildCount() : m1995(i);
@@ -121,7 +110,6 @@ public final class C0575 {
         recyclerView.attachViewToParent(view, childCount, layoutParams);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void m1986(int i) {
         int iM1995 = m1995(i);
         ((C0689) this.f2344).m2075(iM1995);
@@ -148,7 +136,6 @@ public final class C0575 {
         recyclerView.detachViewFromParent(iM1995);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public void m1987(boolean z) {
         for (AbstractComponentCallbacksC1406 abstractComponentCallbacksC1406 : ((C1209) this.f2344).m2811()) {
             if (abstractComponentCallbacksC1406 != null && z) {
@@ -157,7 +144,6 @@ public final class C0575 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public boolean m1988() {
         if (this.f2342 < 1) {
             return false;
@@ -185,7 +171,6 @@ public final class C0575 {
         return z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public void m1989(boolean z) {
         for (AbstractComponentCallbacksC1406 abstractComponentCallbacksC1406 : ((C1209) this.f2344).m2811()) {
             if (abstractComponentCallbacksC1406 != null && z) {
@@ -194,7 +179,6 @@ public final class C0575 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public boolean m1990() {
         if (this.f2342 < 1) {
             return false;
@@ -207,7 +191,6 @@ public final class C0575 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public boolean m1991() {
         boolean z = false;
         if (this.f2342 < 1) {
@@ -221,7 +204,6 @@ public final class C0575 {
         return z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public void m1992() {
         if (((C0577) this.f2344) == null) {
             C0215 c0215 = (C0215) this.f2343;
@@ -230,17 +212,14 @@ public final class C0575 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public View m1993(int i) {
         return ((C2481) this.f2343).f7925.getChildAt(m1995(i));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int m1994() {
         return ((C2481) this.f2343).f7925.getChildCount() - ((ArrayList) this.f2345).size();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int m1995(int i) {
         C0689 c0689 = (C0689) this.f2344;
         if (i < 0) {
@@ -261,17 +240,14 @@ public final class C0575 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public View m1996(int i) {
         return ((C2481) this.f2343).f7925.getChildAt(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public int m1997() {
         return ((C2481) this.f2343).f7925.getChildCount();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public void m1998(View view) {
         ((ArrayList) this.f2345).add(view);
         C2481 c2481 = (C2481) this.f2343;
@@ -294,7 +270,6 @@ public final class C0575 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public void m1999(View view) {
         if (((ArrayList) this.f2345).remove(view)) {
             C2481 c2481 = (C2481) this.f2343;
@@ -338,7 +313,6 @@ public final class C0575 {
         new CopyOnWriteArrayList();
         new InterfaceC0799(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᤞᲁᲇᛸᲀ
 
-            /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
             public final /* synthetic */ C0575 f5077;
 
             {
@@ -362,7 +336,6 @@ public final class C0575 {
         final int i2 = 1;
         new InterfaceC0799(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᤞᲁᲇᛸᲀ
 
-            /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
             public final /* synthetic */ C0575 f5077;
 
             {

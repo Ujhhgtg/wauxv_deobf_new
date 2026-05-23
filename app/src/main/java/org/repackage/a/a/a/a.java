@@ -9,11 +9,9 @@ import android.os.Parcel;
 /* JADX INFO: loaded from: classes.dex */
 public interface a extends IInterface {
 
-    /* JADX INFO: renamed from: org.repackage.a.a.a.a$a, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public static abstract class AbstractBinderC0045a extends Binder implements a {
 
-        /* JADX INFO: renamed from: org.repackage.a.a.a.a$a$a, reason: collision with other inner class name */
         /* JADX INFO: compiled from: obf */
         public static class C0046a implements a {
             public IBinder a;

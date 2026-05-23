@@ -5,15 +5,12 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲀᤝᲁᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class LayoutInflaterFactoryC2024 implements LayoutInflater.Factory {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final LayoutInflater.Factory f6778;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final ClassLoader f6779;
 
     public LayoutInflaterFactoryC2024(LayoutInflater.Factory factory, C2003 c2003) {

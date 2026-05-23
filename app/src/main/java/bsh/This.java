@@ -104,7 +104,6 @@ public final class This implements Serializable, Runnable {
         public static final Keys BSHCLASSMODIFIERS = new AnonymousClass6();
         private static final /* synthetic */ Keys[] $VALUES = $values();
 
-        /* JADX INFO: renamed from: bsh.This$Keys$1, reason: invalid class name */
         /* JADX INFO: compiled from: obf */
         public final enum AnonymousClass1 extends Keys {
             public /* synthetic */ AnonymousClass1() {
@@ -121,7 +120,6 @@ public final class This implements Serializable, Runnable {
             }
         }
 
-        /* JADX INFO: renamed from: bsh.This$Keys$2, reason: invalid class name */
         /* JADX INFO: compiled from: obf */
         public final enum AnonymousClass2 extends Keys {
             public /* synthetic */ AnonymousClass2() {
@@ -138,7 +136,6 @@ public final class This implements Serializable, Runnable {
             }
         }
 
-        /* JADX INFO: renamed from: bsh.This$Keys$3, reason: invalid class name */
         /* JADX INFO: compiled from: obf */
         public final enum AnonymousClass3 extends Keys {
             public /* synthetic */ AnonymousClass3() {
@@ -155,7 +152,6 @@ public final class This implements Serializable, Runnable {
             }
         }
 
-        /* JADX INFO: renamed from: bsh.This$Keys$4, reason: invalid class name */
         /* JADX INFO: compiled from: obf */
         public final enum AnonymousClass4 extends Keys {
             public /* synthetic */ AnonymousClass4() {
@@ -172,7 +168,6 @@ public final class This implements Serializable, Runnable {
             }
         }
 
-        /* JADX INFO: renamed from: bsh.This$Keys$5, reason: invalid class name */
         /* JADX INFO: compiled from: obf */
         public final enum AnonymousClass5 extends Keys {
             public /* synthetic */ AnonymousClass5() {
@@ -189,7 +184,6 @@ public final class This implements Serializable, Runnable {
             }
         }
 
-        /* JADX INFO: renamed from: bsh.This$Keys$6, reason: invalid class name */
         /* JADX INFO: compiled from: obf */
         public final enum AnonymousClass6 extends Keys {
             public /* synthetic */ AnonymousClass6() {

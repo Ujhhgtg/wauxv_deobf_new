@@ -4,23 +4,18 @@ import java.security.MessageDigest;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲇᲈᤞᤝᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC0499 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final ConcurrentHashMap f2145 = new ConcurrentHashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final ConcurrentHashMap f2146 = new ConcurrentHashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m1743(String str, String str2, ClassLoader classLoader) {
         return str + "#" + str2 + "#" + System.identityHashCode(classLoader);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static Class m1744(final String str, final byte[] bArr) {
         String strM2973;
         final ClassLoader classLoader = AbstractC0499.class.getClassLoader();

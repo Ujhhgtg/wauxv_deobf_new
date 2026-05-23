@@ -10,15 +10,12 @@ import android.widget.HeaderViewListAdapter;
 import android.widget.ListAdapter;
 import android.widget.PopupWindow;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲈᛸᲇᤝᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1947 implements InterfaceC2701, InterfaceC1955, AdapterView.OnItemClickListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public Rect f6455;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static int m3779(ListAdapter listAdapter, Context context, int i) {
         int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, 0);
         int iMakeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(0, 0);
@@ -61,43 +58,32 @@ public abstract class AbstractC1947 implements InterfaceC2701, InterfaceC1955, A
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo1142(MenuItemC1946 menuItemC1946) {
         return false;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final boolean mo1145(MenuItemC1946 menuItemC1946) {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public abstract void mo1970(MenuC1944 menuC1944);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public abstract void mo1971(View view);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public abstract void mo1972(boolean z);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public abstract void mo1973(int i);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public abstract void mo1974(int i);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ */
     public abstract void mo1975(PopupWindow.OnDismissListener onDismissListener);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ */
     public abstract void mo1976(boolean z);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ */
     public abstract void mo1977(int i);
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final void mo1147(Context context, MenuC1944 menuC1944) {
     }
 }

@@ -26,7 +26,6 @@ public class EditTextPreference extends DialogPreference {
     }
 
     @Override // androidx.preference.Preference
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final Object mo105(TypedArray typedArray, int i) {
         return typedArray.getString(i);
     }

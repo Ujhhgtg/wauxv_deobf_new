@@ -1,20 +1,15 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲈᲇᛸᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1242 extends AbstractC2106 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ int f4506;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f4507;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final Object f4508;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Object f4509;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -36,13 +31,11 @@ public final class C1242 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static void m2893(String str) {
         throw new C2704(AbstractC2784.m4757("stack: ", str), null);
     }
 
     @Override // p000.AbstractC2106
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public void mo2894() {
         switch (this.f4506) {
             case 1:
@@ -56,7 +49,6 @@ public final class C1242 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public void m2895(C2704 c2704) {
         int i = this.f4507 - 1;
         int i2 = 0;
@@ -69,7 +61,6 @@ public final class C1242 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public void m2896(int i, InterfaceC3450 interfaceC3450) {
         InterfaceC3450[] interfaceC3450Arr = (InterfaceC3450[]) this.f4508;
         m3925();
@@ -92,7 +83,6 @@ public final class C1242 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public C1242 m2897() {
         InterfaceC3450[] interfaceC3450Arr = (InterfaceC3450[]) this.f4508;
         C1242 c1242 = new C1242(interfaceC3450Arr.length, 0);
@@ -103,7 +93,6 @@ public final class C1242 extends AbstractC2106 {
         return c1242;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public InterfaceC3450 m2898(int i) {
         if (i < 0) {
             throw new IllegalArgumentException("n < 0");
@@ -116,12 +105,10 @@ public final class C1242 extends AbstractC2106 {
         throw null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public C3448 m2899(int i) {
         return m2898(i).getType();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public void m2900(InterfaceC3450 interfaceC3450) {
         m3925();
         try {
@@ -146,7 +133,6 @@ public final class C1242 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public void m2901() {
         C1660 c1660 = (C1660) this.f4508;
         m3925();
@@ -175,7 +161,6 @@ public final class C1242 extends AbstractC2106 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public void m2902(int i) {
         m3925();
         if (i < 0) {

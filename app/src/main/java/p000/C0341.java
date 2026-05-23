@@ -2,15 +2,12 @@ package p000;
 
 import bsh.Primitive;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲁᤞᤝᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0341 extends AbstractC2707 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public boolean f1624;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static boolean m1454(InterfaceC2225 interfaceC2225, C0550 c0550, RunnableC1668 runnableC1668) throws C1230 {
         Object objMo306 = interfaceC2225.mo306(c0550, runnableC1668);
         if (objMo306 != Primitive.VOID) {
@@ -21,7 +18,6 @@ public final class C0341 extends AbstractC2707 {
 
     /* JADX WARN: Code duplicated, block: B:13:0x0037  */
     @Override // p000.AbstractC2707, p000.InterfaceC2225
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo306(C0550 c0550, RunnableC1668 runnableC1668) {
         Object objMo306;
         if (m1454(this.f8721[0], c0550, runnableC1668)) {

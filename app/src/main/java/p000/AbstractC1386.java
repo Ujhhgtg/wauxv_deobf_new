@@ -5,11 +5,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import okhttp3.Request;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᛸᲇᤞᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1386 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m3097(Request request) throws NoSuchAlgorithmException {
         AbstractC1194.m2791(request.tag(AbstractC2201.class));
         byte[] bytes = (request.method() + request.url()).getBytes(AbstractC0599.f2413);
@@ -18,7 +16,6 @@ public abstract class AbstractC1386 {
         return new C0539(messageDigest.digest()).mo1871();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static int m3098(C2477 c2477) throws IOException {
         try {
             long jMo1771 = c2477.mo1771();

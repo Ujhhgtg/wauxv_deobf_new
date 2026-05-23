@@ -6,12 +6,10 @@ import com.alibaba.fastjson2.introspect.PropertyAccessorFactory;
 import com.alibaba.fastjson2.reader.FieldReader;
 import java.util.function.BiFunction;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᲁᤞᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C1310 implements BiFunction {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f4745;
 
     public /* synthetic */ C1310(int i) {

@@ -4,37 +4,30 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᛸᲈᲇᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C1870 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final LinkedHashMap f6215 = new LinkedHashMap(100, 0.75f, true);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final long f6216;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public long f6217;
 
     public C1870(long j) {
         this.f6216 = j;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final synchronized Object m3649(Object obj) {
         C1869 c1869;
         c1869 = (C1869) this.f6215.get(obj);
         return c1869 != null ? c1869.f6213 : null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int mo3650(Object obj) {
         return 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final synchronized Object m3652(Object obj, Object obj2) {
         int iMo3650 = mo3650(obj2);
         long j = iMo3650;
@@ -56,7 +49,6 @@ public class C1870 {
         return c1869 != null ? c1869.f6213 : null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final synchronized void m3653(long j) {
         while (this.f6217 > j) {
             Iterator it = this.f6215.entrySet().iterator();
@@ -69,7 +61,6 @@ public class C1870 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public void mo3651(Object obj, Object obj2) {
     }
 }

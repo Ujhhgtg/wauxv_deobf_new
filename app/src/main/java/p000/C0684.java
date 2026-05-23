@@ -8,15 +8,12 @@ import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.internal.CheckableImageButton;
 import com.google.android.material.internal.NavigationMenuItemView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᤞᲁᤝᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0684 extends C0078 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2567;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ View f2568;
 
     public /* synthetic */ C0684(View view, int i) {
@@ -25,7 +22,6 @@ public final class C0684 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public void mo964(View view, AccessibilityEvent accessibilityEvent) {
         switch (this.f2567) {
             case 0:
@@ -39,7 +35,6 @@ public final class C0684 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo722(View view, C0092 c0092) {
         int i = this.f2567;
         View view2 = this.f2568;

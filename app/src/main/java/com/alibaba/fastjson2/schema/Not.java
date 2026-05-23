@@ -15,7 +15,6 @@ final class Not extends JSONSchema {
     final JSONSchema schema;
     final JSONSchema.Type[] types;
 
-    /* JADX INFO: renamed from: com.alibaba.fastjson2.schema.Not$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$alibaba$fastjson2$schema$JSONSchema$Type;

@@ -1,6 +1,5 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲈᲀᛸᤞᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3524 extends C3523 {
@@ -10,7 +9,6 @@ public final class C3524 extends C3523 {
     }
 
     @Override // p000.C3523
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final C1229 mo4644(String str, InterfaceC2225 interfaceC2225, C0550 c0550) {
         String string;
         if (str == null) {

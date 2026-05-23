@@ -7,10 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᤞᲁᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2841 extends AbstractC2849 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public static boolean m4828(CharSequence charSequence, CharSequence charSequence2, boolean z) {
         if (charSequence2 instanceof String) {
             if (m4834(charSequence, (String) charSequence2, 0, z, 2) >= 0) {
@@ -22,22 +20,18 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public static boolean m4829(CharSequence charSequence, char c) {
         return m4833(c, 0, 2, charSequence) >= 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static int m4830(CharSequence charSequence) {
         return charSequence.length() - 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public static final int m4831(CharSequence charSequence, String str, int i, boolean z) {
         return (z || !(charSequence instanceof String)) ? m4832(charSequence, str, i, charSequence.length(), z, false) : ((String) charSequence).indexOf(str, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ, reason: contains not printable characters */
     public static final int m4832(CharSequence charSequence, CharSequence charSequence2, int i, int i2, boolean z, boolean z2) {
         C1661 c1661;
         CharSequence charSequence3 = charSequence2;
@@ -96,7 +90,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
     public static int m4833(char c, int i, int i2, CharSequence charSequence) {
         if ((i2 & 2) != 0) {
             i = 0;
@@ -104,7 +97,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return !(charSequence instanceof String) ? m4835(charSequence, new char[]{c}, i, false) : ((String) charSequence).indexOf(c, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ, reason: contains not printable characters */
     public static /* synthetic */ int m4834(CharSequence charSequence, String str, int i, boolean z, int i2) {
         if ((i2 & 2) != 0) {
             i = 0;
@@ -115,7 +107,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return m4831(charSequence, str, i, z);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲇᲁ, reason: contains not printable characters */
     public static final int m4835(CharSequence charSequence, char[] cArr, int i, boolean z) {
         if (!z && cArr.length == 1 && (charSequence instanceof String)) {
             int length = 1;
@@ -148,7 +139,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᤞᲇ, reason: contains not printable characters */
     public static boolean m4836(CharSequence charSequence) {
         for (int i = 0; i < charSequence.length(); i++) {
             if (!AbstractC3681.m5332(charSequence.charAt(i))) {
@@ -158,13 +148,11 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
     public static int m4837(int i, String str, String str2) {
         int iM4830 = (i & 2) != 0 ? m4830(str) : 0;
         return str == null ? m4832(str, str2, 0, 0, false, true) : str.lastIndexOf(str2, iM4830);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ, reason: contains not printable characters */
     public static int m4838(String str, char c, int i, int i2) {
         if ((i2 & 2) != 0) {
             i = m4830(str);
@@ -189,7 +177,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ, reason: contains not printable characters */
     public static final List m4839(String str) {
         C1792 c1792 = new C1792(str);
         if (!c1792.hasNext()) {
@@ -207,7 +194,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ, reason: contains not printable characters */
     public static final boolean m4840(CharSequence charSequence, int i, CharSequence charSequence2, int i2, int i3, boolean z) {
         if (i2 < 0 || i < 0 || i > charSequence.length() - i3 || i2 > charSequence2.length() - i3) {
             return false;
@@ -220,7 +206,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ, reason: contains not printable characters */
     public static final List m4841(CharSequence charSequence, String str) {
         int iM4831 = m4831(charSequence, str, 0, false);
         if (iM4831 == -1) {
@@ -237,7 +222,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ, reason: contains not printable characters */
     public static List m4842(CharSequence charSequence, char[] cArr) {
         if (cArr.length == 1) {
             return m4841(charSequence, String.valueOf(cArr[0]));
@@ -255,7 +239,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ, reason: contains not printable characters */
     public static List m4843(String str, String[] strArr) {
         if (strArr.length == 1) {
             String str2 = strArr[0];
@@ -276,25 +259,21 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ, reason: contains not printable characters */
     public static String m4844(String str, String str2, String str3) {
         int iM4834 = m4834(str, str2, 0, false, 6);
         return iM4834 == -1 ? str3 : str.substring(str2.length() + iM4834, str.length());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲇᲀ, reason: contains not printable characters */
     public static String m4845(String str, String str2) {
         int iM4834 = m4834(str, str2, 0, false, 6);
         return iM4834 == -1 ? str : str.substring(0, iM4834);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ, reason: contains not printable characters */
     public static String m4846(String str, String str2) {
         int iM4837 = m4837(6, str, str2);
         return iM4837 == -1 ? str : str.substring(0, iM4837);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲈᲇ, reason: contains not printable characters */
     public static String m4847(int i, String str) {
         if (i < 0) {
             throw new IllegalArgumentException(AbstractC1194.m2780(i, "Requested character count ", " is less than zero.").toString());
@@ -306,7 +285,6 @@ public abstract class AbstractC2841 extends AbstractC2849 {
         return str.substring(0, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᤞᲈ, reason: contains not printable characters */
     public static CharSequence m4848(String str) {
         int length = str.length() - 1;
         int i = 0;

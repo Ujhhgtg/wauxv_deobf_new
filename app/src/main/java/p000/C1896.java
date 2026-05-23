@@ -2,21 +2,16 @@ package p000;
 
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲀᛸᤝᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1896 extends AbstractC2270 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final EnumC1683 f6264;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final AbstractC2643 f6265;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final AbstractC1675 f6266;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final int f6267;
 
     public C1896(EnumC1683 enumC1683, AbstractC2643 abstractC2643, AbstractC1675 abstractC1675, AbstractC1675 abstractC1676, int i) {
@@ -39,7 +34,6 @@ public final class C1896 extends AbstractC2270 {
         this.f6267 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static void m3690(AbstractC2643[] abstractC2643Arr, C1986 c1986) {
         if (abstractC2643Arr == null) {
             throw new NullPointerException("sections == null");
@@ -85,13 +79,11 @@ public final class C1896 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final EnumC1683 mo1222() {
         return EnumC1683.f5733;
     }
 
     @Override // p000.AbstractC2270
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final void mo1225(C1023 c1023, C0519 c0519) {
         EnumC1683 enumC1683 = this.f6264;
         int i = enumC1683.f5736;
@@ -130,7 +122,6 @@ public final class C1896 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1221(C1023 c1023) {
     }
 }

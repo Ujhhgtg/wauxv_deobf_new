@@ -2,7 +2,6 @@ package com.alibaba.fastjson2;
 
 import com.alibaba.fastjson2.function.FieldConsumer;
 
-/* JADX INFO: renamed from: com.alibaba.fastjson2.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0018 implements FieldConsumer {

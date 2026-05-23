@@ -40,7 +40,6 @@ public final class Handshake {
             return certificateArr != null ? Util.immutableListOf(Arrays.copyOf(certificateArr, certificateArr.length)) : C1189.f4329;
         }
 
-        /* JADX INFO: renamed from: -deprecated_get, reason: not valid java name */
         public final Handshake m813deprecated_get(SSLSession sSLSession) {
             return get(sSLSession);
         }
@@ -79,7 +78,6 @@ public final class Handshake {
         }
     }
 
-    /* JADX INFO: renamed from: okhttp3.Handshake$peerCertificates$2, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static final class AnonymousClass2 extends AbstractC1756 implements InterfaceC1414 {
         final /* synthetic */ InterfaceC1414 $peerCertificatesFn;
@@ -116,32 +114,26 @@ public final class Handshake {
         return certificate instanceof X509Certificate ? ((X509Certificate) certificate).getSubjectDN().toString() : certificate.getType();
     }
 
-    /* JADX INFO: renamed from: -deprecated_cipherSuite, reason: not valid java name */
     public final CipherSuite m807deprecated_cipherSuite() {
         return this.cipherSuite;
     }
 
-    /* JADX INFO: renamed from: -deprecated_localCertificates, reason: not valid java name */
     public final List<Certificate> m808deprecated_localCertificates() {
         return this.localCertificates;
     }
 
-    /* JADX INFO: renamed from: -deprecated_localPrincipal, reason: not valid java name */
     public final Principal m809deprecated_localPrincipal() {
         return localPrincipal();
     }
 
-    /* JADX INFO: renamed from: -deprecated_peerCertificates, reason: not valid java name */
     public final List<Certificate> m810deprecated_peerCertificates() {
         return peerCertificates();
     }
 
-    /* JADX INFO: renamed from: -deprecated_peerPrincipal, reason: not valid java name */
     public final Principal m811deprecated_peerPrincipal() {
         return peerPrincipal();
     }
 
-    /* JADX INFO: renamed from: -deprecated_tlsVersion, reason: not valid java name */
     public final TlsVersion m812deprecated_tlsVersion() {
         return this.tlsVersion;
     }

@@ -66,7 +66,6 @@ public interface b extends IInterface {
 
     String e(String str);
 
-    /* JADX INFO: renamed from: com.umeng.analytics.pro.b$b, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public static abstract class AbstractBinderC0030b extends Binder implements b {
         static final int a = 1;
@@ -78,7 +77,6 @@ public interface b extends IInterface {
         static final int g = 7;
         private static final String h = "com.coolpad.deviceidsupport.IDeviceIdManager";
 
-        /* JADX INFO: renamed from: com.umeng.analytics.pro.b$b$a */
         /* JADX INFO: compiled from: obf */
         public static class a implements b {
             public static b a;

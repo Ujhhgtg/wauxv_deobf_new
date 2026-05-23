@@ -6,13 +6,11 @@ import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲈᲇᲁᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1726 extends AbstractC1715 implements Map<String, AbstractC1715>, InterfaceC1737 {
     public static final C1725 Companion = new C1725();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Map f5820;
 
     public C1726(Map map) {

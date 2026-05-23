@@ -2,18 +2,14 @@ package p000;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᛸᤝᲀᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C1848 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final /* synthetic */ AtomicReferenceFieldUpdater f6150 = AtomicReferenceFieldUpdater.newUpdater(C1848.class, Object.class, "_next$volatile");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final /* synthetic */ AtomicReferenceFieldUpdater f6151 = AtomicReferenceFieldUpdater.newUpdater(C1848.class, Object.class, "_prev$volatile");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final /* synthetic */ AtomicReferenceFieldUpdater f6152 = AtomicReferenceFieldUpdater.newUpdater(C1848.class, Object.class, "_removedRef$volatile");
     private volatile /* synthetic */ Object _next$volatile = this;
     private volatile /* synthetic */ Object _prev$volatile = this;
@@ -23,7 +19,6 @@ public class C1848 {
         return new C1847(this, AbstractC0968.class, "classSimpleName", "getClassSimpleName(Ljava/lang/Object;)Ljava/lang/String;", 1) + '@' + AbstractC0968.m2473(this);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final boolean m3606(C1848 c1848, int i) {
         while (true) {
             C1848 c1848M3607 = m3607();
@@ -53,7 +48,6 @@ public class C1848 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C1848 m3607() {
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
         Object obj;
@@ -101,7 +95,6 @@ public class C1848 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m3608(C1848 c1848) {
         while (true) {
             AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f6151;
@@ -121,7 +114,6 @@ public class C1848 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final C1848 m3609() {
         C1848 c1848;
         Object obj = f6150.get(this);
@@ -129,7 +121,6 @@ public class C1848 {
         return (c2543 == null || (c1848 = c2543.f8099) == null) ? (C1848) obj : c1848;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public boolean mo3610() {
         return f6150.get(this) instanceof C2543;
     }

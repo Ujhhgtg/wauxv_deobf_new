@@ -26,37 +26,26 @@ import p000.ViewOnTouchListenerC0128;
 /* JADX INFO: loaded from: classes.dex */
 public class ActionMenuItemView extends C0236 implements InterfaceC1956, View.OnClickListener, InterfaceC0137 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public MenuItemC1946 f1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public CharSequence f2;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public Drawable f3;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public InterfaceC1943 f4;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public ViewOnTouchListenerC0128 f5;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public AbstractC0129 f6;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public boolean f7;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public boolean f8;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final int f9;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public int f10;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final int f11;
 
     public ActionMenuItemView(Context context, AttributeSet attributeSet) {
@@ -186,13 +175,11 @@ public class ActionMenuItemView extends C0236 implements InterfaceC1956, View.On
     }
 
     @Override // p000.InterfaceC0137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final boolean mo1() {
         return !TextUtils.isEmpty(getText());
     }
 
     @Override // p000.InterfaceC1956
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo2(MenuItemC1946 menuItemC1946) {
         this.f1 = menuItemC1946;
         setIcon(menuItemC1946.getIcon());
@@ -206,12 +193,10 @@ public class ActionMenuItemView extends C0236 implements InterfaceC1956, View.On
     }
 
     @Override // p000.InterfaceC0137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final boolean mo3() {
         return !TextUtils.isEmpty(getText()) && this.f1.getIcon() == null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean m4() {
         Configuration configuration = getContext().getResources().getConfiguration();
         int i = configuration.screenWidthDp;
@@ -222,7 +207,6 @@ public class ActionMenuItemView extends C0236 implements InterfaceC1956, View.On
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m5() {
         boolean z = true;
         boolean z2 = !TextUtils.isEmpty(this.f2);

@@ -3,15 +3,12 @@ package p000;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲀᤞᤝᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0582 extends AbstractC3640 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final ArrayList f2371;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public int f2372;
 
     public C0582(C0793 c0793, int i) {
@@ -71,7 +68,6 @@ public final class C0582 extends AbstractC3640 {
     /* JADX WARN: Code duplicated, block: B:67:0x00df  */
     /* JADX WARN: Code duplicated, block: B:69:0x00e2 A[ADDED_TO_REGION] */
     @Override // p000.InterfaceC1012
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo2003(InterfaceC1012 interfaceC1012) {
         int i;
         int i2;
@@ -455,7 +451,6 @@ public final class C0582 extends AbstractC3640 {
     }
 
     @Override // p000.AbstractC3640
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void mo2004() {
         ArrayList arrayList = this.f2371;
         Iterator it = arrayList.iterator();
@@ -519,7 +514,6 @@ public final class C0582 extends AbstractC3640 {
     }
 
     @Override // p000.AbstractC3640
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void mo2005() {
         int i = 0;
         while (true) {
@@ -533,7 +527,6 @@ public final class C0582 extends AbstractC3640 {
     }
 
     @Override // p000.AbstractC3640
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void mo2006() {
         this.f11388 = null;
         Iterator it = this.f2371.iterator();
@@ -543,7 +536,6 @@ public final class C0582 extends AbstractC3640 {
     }
 
     @Override // p000.AbstractC3640
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final long mo2007() {
         ArrayList arrayList = this.f2371;
         int size = arrayList.size();
@@ -556,7 +548,6 @@ public final class C0582 extends AbstractC3640 {
     }
 
     @Override // p000.AbstractC3640
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final boolean mo2008() {
         ArrayList arrayList = this.f2371;
         int size = arrayList.size();
@@ -568,7 +559,6 @@ public final class C0582 extends AbstractC3640 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final C0793 m2009() {
         int i = 0;
         while (true) {
@@ -584,7 +574,6 @@ public final class C0582 extends AbstractC3640 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final C0793 m2010() {
         ArrayList arrayList = this.f2371;
         for (int size = arrayList.size() - 1; size >= 0; size--) {

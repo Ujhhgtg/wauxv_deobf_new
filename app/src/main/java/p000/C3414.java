@@ -8,18 +8,14 @@ import android.view.ViewParent;
 import androidx.appcompat.widget.Toolbar;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᛸᤝᲈᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3414 implements InterfaceC1955 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public MenuC1944 f10756;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public MenuItemC1946 f10757;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ Toolbar f10758;
 
     public C3414(Toolbar toolbar) {
@@ -32,7 +28,6 @@ public final class C3414 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1137(boolean z) {
         if (this.f10757 != null) {
             MenuC1944 menuC1944 = this.f10756;
@@ -49,19 +44,16 @@ public final class C3414 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final boolean mo1138(SubMenuC2853 subMenuC2853) {
         return false;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final boolean mo1139() {
         return false;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo1142(MenuItemC1946 menuItemC1946) {
         Toolbar toolbar = this.f10758;
         toolbar.removeView(toolbar.f156);
@@ -81,7 +73,6 @@ public final class C3414 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final boolean mo1145(MenuItemC1946 menuItemC1946) {
         Toolbar toolbar = this.f10758;
         toolbar.m37();
@@ -124,7 +115,6 @@ public final class C3414 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final void mo1147(Context context, MenuC1944 menuC1944) {
         MenuItemC1946 menuItemC1946;
         MenuC1944 menuC1945 = this.f10756;
@@ -135,18 +125,15 @@ public final class C3414 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final Parcelable mo1148() {
         return null;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final void mo1143(Parcelable parcelable) {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1136(MenuC1944 menuC1944, boolean z) {
     }
 }

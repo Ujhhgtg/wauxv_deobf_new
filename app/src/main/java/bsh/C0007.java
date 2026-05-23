@@ -32,75 +32,52 @@ import p000.InterfaceC0480;
 import p000.InterfaceC2225;
 import p000.RunnableC1668;
 
-/* JADX INFO: renamed from: bsh.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C0007 implements Serializable, InterfaceC0480, Cloneable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static final C0007 f492;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final String f493;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public C0007 f494;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public HashMap f495 = new HashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public HashMap f496 = new HashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public HashMap f497 = new HashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public ArrayList f498 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public ArrayList f499 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public ArrayList f500 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public ArrayList f501 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public String f502;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public transient C0482 f503;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public This f504;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public HashMap f505;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public InterfaceC2225 f506;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public boolean f507;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public boolean f508;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public boolean f509;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public boolean f510;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public Class f511;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public Object f512;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final transient HashMap f513;
 
     static {
@@ -122,12 +99,10 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         m346().mo296(this);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static C3532 m340(Object obj, String str) {
         return new C3532(str, null, obj, null);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public static Object m341(C3532 c3532) {
         return c3532 == null ? Primitive.VOID : c3532.m5124();
     }
@@ -167,7 +142,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C0007 m342() {
         try {
             C0007 c0007 = (C0007) clone();
@@ -199,7 +173,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
     }
 
     @Override // p000.InterfaceC0480
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo343() {
         m365();
     }
@@ -209,7 +182,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
     /* JADX WARN: Code duplicated, block: B:38:0x00b6  */
     /* JADX WARN: Code duplicated, block: B:53:0x0106 A[RETURN] */
     /* JADX WARN: Code duplicated, block: B:54:0x0107 A[RETURN] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Class m344(String str) {
         Class clsMo297;
         String strMo301;
@@ -295,7 +267,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Object m345() throws C3523 {
         Object obj = this.f512;
         if (obj != null) {
@@ -307,7 +278,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         throw new C1669("Can't resolve class instance 'this' in: " + this);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C0482 m346() {
         C0482 c0482 = this.f503;
         if (c0482 != null) {
@@ -322,7 +292,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return c0482M1721;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final Object m347(String str, Class[] clsArr, RunnableC1668 runnableC1668) {
         String str2;
         Class[] clsArr2;
@@ -379,13 +348,11 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final This m348(RunnableC1668 runnableC1668) {
         C0007 c0007 = this.f494;
         return c0007 != null ? c0007.m348(runnableC1668) : mo310(runnableC1668);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final C0501 m349(String str, Class[] clsArr) {
         for (Object obj : this.f500) {
             AbstractC1672 abstractC1672M406 = AbstractC0009.m406(obj.getClass(), str, clsArr, false);
@@ -403,7 +370,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final C0501 m350(String str, Class[] clsArr, boolean z) {
         C0007 c0007;
         RunnableC1668.m3389("Get method: ", str, " ", this);
@@ -421,12 +387,10 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return (c0501M349 != null || z || (c0007 = this.f494) == null) ? c0501M349 : c0007.m350(str, clsArr, false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final C0501[] m351() {
         return (C0501[]) this.f496.values().stream().flatMap(new C0268(16)).toArray(new C0484(6));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final C0006 m352(String str) {
         if (!this.f505.containsKey(str)) {
             HashMap map = this.f505;
@@ -438,7 +402,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return (C0006) this.f505.get(str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final InterfaceC2225 m353() {
         InterfaceC2225 interfaceC2225 = this.f506;
         if (interfaceC2225 != null) {
@@ -451,7 +414,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final String m354() {
         String str = this.f502;
         if (str != null) {
@@ -464,7 +426,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final Object m355(String str, RunnableC1668 runnableC1668) throws C3523 {
         String strM376 = AbstractC0009.m376("get", str);
         Class[] clsArr = AbstractC0009.f517;
@@ -480,7 +441,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ */
     public This mo309(RunnableC1668 runnableC1668) {
         Class cls;
         if (this.f508 && (cls = this.f511) != null) {
@@ -496,7 +456,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return mo310(runnableC1668);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public This mo310(RunnableC1668 runnableC1668) {
         if (this.f504 == null) {
             this.f504 = This.getThis(this, runnableC1668);
@@ -504,14 +463,12 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return this.f504;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final Object m356(String str, boolean z) {
         C3532 c3532M357 = m357(str, z);
         RunnableC1668.m3389("Get variable: ", str, " = ", c3532M357);
         return m341(c3532M357);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final C3532 m357(String str, boolean z) {
         AbstractC1672 abstractC1672M404;
         C0007 c0007;
@@ -565,32 +522,27 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return (z && c3532 == null && (c0007 = this.f494) != null) ? c0007.m357(str, true) : c3532;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final C3532[] m358() {
         return (C3532[]) this.f495.values().stream().toArray(new C0484(4));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ */
     public void mo311(String str) {
         this.f497.put(C0006.m331(1, str), str);
         m365();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ */
     public void mo312(String str) {
         this.f498.remove(str);
         this.f498.add(0, str);
         m365();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final void m359(Class cls) {
         this.f501.remove(cls);
         this.f501.add(0, cls);
         m365();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final Object m360(String str, Object[] objArr, RunnableC1668 runnableC1668, C0550 c0550, InterfaceC2225 interfaceC2225, boolean z) throws C1229 {
         String str2;
         C0550 c0551;
@@ -628,7 +580,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public final Object m361(String str, Object[] objArr, RunnableC1668 runnableC1668, C0550 c0550, InterfaceC2225 interfaceC2225, boolean[] zArr) {
         try {
             C0501 c0501M350 = m350("invoke", new Class[]{null, null}, false);
@@ -643,7 +594,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public final boolean m362(C0007 c0007) {
         C0007 c0008 = this.f494;
         if (c0008 != null) {
@@ -652,7 +602,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public final void m363() {
         mo312("org.json");
         mo312("java.util.stream");
@@ -682,7 +631,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         m365();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final C0501 m364(InputStream inputStream, String str, Class[] clsArr, String str2, RunnableC1668 runnableC1668) throws C3523 {
         try {
             C1326 c1326 = new C1326(inputStream);
@@ -704,13 +652,11 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public final void m365() {
         this.f513.clear();
         this.f505.clear();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public final void m366(Object obj) {
         this.f512 = obj;
         this.f500.remove(obj);
@@ -718,7 +664,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         m365();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ */
     public void mo313(C0501 c0501) {
         String strM1748 = c0501.m1748();
         if (!this.f496.containsKey(strM1748)) {
@@ -728,7 +673,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         ((List) this.f496.get(strM1748)).add(0, c0501);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public final void m367(String str, Class cls, Object obj, C2000 c2000) {
         Class cls2;
         C3532 c3532M357 = m357(str, false);
@@ -747,7 +691,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         c3532M357.m5126(0, obj);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public C3532 mo314(String str, Object obj, boolean z) {
         if (obj == null) {
             obj = Primitive.NULL;
@@ -763,7 +706,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         return c3532M340;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public final void m368(C3532 c3532) {
         if (this.f495.containsKey(c3532.f11060)) {
             return;
@@ -771,7 +713,6 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         this.f495.put(c3532.f11060, c3532);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public final void m369(String str, Object obj, boolean z, boolean z2) throws C3523 {
         if (obj == null) {
             throw new C1669("null variable value");

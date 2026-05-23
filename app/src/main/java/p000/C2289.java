@@ -1,15 +1,12 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲇᤞᲈᤝᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2289 extends C2436 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public boolean f7380;
 
     @Override // p000.C2436, p000.InterfaceC0974
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final InterfaceC0766 mo2512(InterfaceC2654 interfaceC2654) {
         AbstractC1460 abstractC1460Mo3472 = interfaceC2654.mo3472();
         if (!AbstractC2207.m4087(abstractC1460Mo3472, C2851.f9111) && !AbstractC2207.m4087(abstractC1460Mo3472, C2851.f9114) && !(abstractC1460Mo3472 instanceof AbstractC2375)) {
@@ -26,7 +23,6 @@ public final class C2289 extends C2436 {
     }
 
     @Override // p000.C2436, p000.InterfaceC0766
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final int mo2230(InterfaceC2654 interfaceC2654) {
         if (this.f7380) {
             return -1;

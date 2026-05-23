@@ -5,12 +5,10 @@ import android.text.TextUtils;
 import com.google.android.material.chip.Chip;
 import p000.AbstractC2916;
 
-/* JADX INFO: renamed from: com.google.android.material.timepicker.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0021 extends AbstractC2916 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ ChipTextInputComboView f895;
 
     public C0021(ChipTextInputComboView chipTextInputComboView) {

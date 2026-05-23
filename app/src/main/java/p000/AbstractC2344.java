@@ -2,7 +2,6 @@ package p000;
 
 import java.util.LinkedHashSet;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᛸᲇᲈᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2344 extends AbstractComponentCallbacksC1406 {

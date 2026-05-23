@@ -6,21 +6,16 @@ import android.util.Log;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲁᛸᤞᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1320 implements InterfaceC0955 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final String f4766;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final AssetManager f4767;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Object f4768;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f4769;
 
     public C1320(AssetManager assetManager, String str, int i) {
@@ -30,7 +25,6 @@ public final class C1320 implements InterfaceC0955 {
     }
 
     @Override // p000.InterfaceC0955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final Class mo1391() {
         switch (this.f4769) {
             case 0:
@@ -41,7 +35,6 @@ public final class C1320 implements InterfaceC0955 {
     }
 
     @Override // p000.InterfaceC0955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1855() {
         Object obj = this.f4768;
         if (obj == null) {
@@ -61,7 +54,6 @@ public final class C1320 implements InterfaceC0955 {
     }
 
     @Override // p000.InterfaceC0955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1856(EnumC2401 enumC2401, InterfaceC0954 interfaceC0954) {
         Object objOpenFd;
         try {
@@ -86,7 +78,6 @@ public final class C1320 implements InterfaceC0955 {
     }
 
     @Override // p000.InterfaceC0955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final int mo1857() {
         return 1;
     }

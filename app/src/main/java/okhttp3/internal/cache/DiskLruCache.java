@@ -400,7 +400,6 @@ public final class DiskLruCache implements Closeable, Flushable {
         }
     }
 
-    /* JADX INFO: renamed from: okhttp3.internal.cache.DiskLruCache$snapshots$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static final class AnonymousClass1 implements Iterator<Snapshot>, InterfaceC1737 {
         private final Iterator<Entry> delegate;

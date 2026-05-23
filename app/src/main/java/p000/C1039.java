@@ -13,12 +13,10 @@ import java.util.List;
 import java.util.Map;
 import me.hd.wauxv.data.bean.ContactBean;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᤞᲁᲇᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC0500 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f3785;
 
     public /* synthetic */ C1039(int i) {
@@ -44,7 +42,6 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
     }
 
     @Override // p000.InterfaceC0500
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public Object mo1745(Object[] objArr) throws IllegalAccessException, NoSuchMethodException, InstantiationException, IOException, InvocationTargetException {
         int i = this.f3785;
         Unit unit = Unit.INSTANCE;

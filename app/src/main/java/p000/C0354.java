@@ -7,15 +7,12 @@ import bsh.Primitive;
 import java.util.ArrayList;
 import java.util.Stack;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲁᲈᤝᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0354 extends AbstractC2707 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final int f1664;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public C0355 f1665;
 
     public C0354() {
@@ -62,7 +59,6 @@ public final class C0354 extends AbstractC2707 {
     /* JADX WARN: Type inference failed for: r14v4 */
     /* JADX WARN: Type inference failed for: r23v0, types: [ᛱᛲᛳᛴᛵᛶᛷᛸᲇᤝᲈᲁᲀᤞ] */
     @Override // p000.AbstractC2707, p000.InterfaceC2225
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo306(C0550 c0550, RunnableC1668 runnableC1668) throws Throwable {
         int i;
         InterfaceC2225 interfaceC2225;

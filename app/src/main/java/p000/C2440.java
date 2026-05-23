@@ -2,24 +2,18 @@ package p000;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᲈᲁᲇᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2440 implements Comparable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final ConcurrentHashMap f7753 = new ConcurrentHashMap(10000, 0.75f);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final String f7754;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C3448 f7755;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C2819 f7756;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public C2819 f7757;
 
     public C2440(String str, C3448 c3448, C2819 c2819) {
@@ -35,7 +29,6 @@ public final class C2440 implements Comparable {
         this.f7757 = null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static C2440 m4419(String str) {
         int i;
         C2440 c2440 = (C2440) f7753.get(str);
@@ -107,7 +100,6 @@ public final class C2440 implements Comparable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static C2440 m4420(String str) {
         if (str == null) {
             throw new NullPointerException("descriptor == null");
@@ -141,7 +133,6 @@ public final class C2440 implements Comparable {
     }
 
     @Override // java.lang.Comparable
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters and merged with bridge method [inline-methods] */
     public final int compareTo(C2440 c2440) {
         if (this != c2440) {
             C3448 c3448 = c2440.f7755;
@@ -180,7 +171,6 @@ public final class C2440 implements Comparable {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C2819 m4422() {
         if (this.f7757 == null) {
             C2819 c2819 = this.f7756;
@@ -203,7 +193,6 @@ public final class C2440 implements Comparable {
         return this.f7757;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C2440 m4423(C3448 c3448) {
         String str = "(" + c3448.f10904 + this.f7754.substring(1);
         C2819 c2819 = this.f7756;

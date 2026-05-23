@@ -331,7 +331,6 @@ public final class CipherSuite {
         return Companion.forJavaName(str);
     }
 
-    /* JADX INFO: renamed from: -deprecated_javaName, reason: not valid java name */
     public final String m792deprecated_javaName() {
         return this.javaName;
     }

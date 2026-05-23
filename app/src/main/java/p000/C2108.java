@@ -1,6 +1,5 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᛸᲇᲀᲁᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2108 extends AbstractC2426 implements InterfaceC1741, InterfaceC1742 {
@@ -15,14 +14,12 @@ public final class C2108 extends AbstractC2426 implements InterfaceC1741, Interf
     }
 
     @Override // p000.AbstractC0552
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final InterfaceC1735 mo1931() {
         
         return this;
     }
 
     @Override // p000.InterfaceC1741
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo3483() {
         ((C2108) m4386()).mo3483();
     }

@@ -23,42 +23,30 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲇᲈᛸᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1098 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final C2301 f4115 = C2301.m4164(EnumC0969.f3519, "com.bumptech.glide.load.resource.bitmap.Downsampler.DecodeFormat");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C2301 f4116 = new C2301("com.bumptech.glide.load.resource.bitmap.Downsampler.PreferredColorSpace", null, C2301.f7412);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final C2301 f4117;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static final C2301 f4118;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final C0373 f4119;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final ArrayDeque f4120;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final InterfaceC0424 f4121;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final DisplayMetrics f4122;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C1867 f4123;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final ArrayList f4124;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C1519 f4125 = C1519.m3252();
 
     static {
@@ -87,7 +75,6 @@ public final class C1098 {
     
         throw r1;
      */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
@@ -139,7 +126,6 @@ public final class C1098 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static String m2666(Bitmap bitmap) {
         if (bitmap == null) {
             return null;
@@ -147,12 +133,10 @@ public final class C1098 {
         return "[" + bitmap.getWidth() + "x" + bitmap.getHeight() + "] " + bitmap.getConfig() + (" (" + bitmap.getAllocationByteCount() + ")");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static IOException m2667(IllegalArgumentException illegalArgumentException, int i, int i2, String str, BitmapFactory.Options options) {
         return new IOException("Exception decoding bitmap, outWidth: " + i + ", outHeight: " + i2 + ", outMimeType: " + str + ", inBitmap: " + m2666(options.inBitmap), illegalArgumentException);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static void m2668(BitmapFactory.Options options) {
         options.inTempStorage = null;
         options.inDither = false;
@@ -172,7 +156,6 @@ public final class C1098 {
         options.inMutable = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C0425 m2669(C0243 c0243, int i, int i2, C2303 c2303, InterfaceC1097 interfaceC1097) {
         ArrayDeque arrayDeque;
         BitmapFactory.Options options;
@@ -269,7 +252,6 @@ public final class C1098 {
     /* JADX WARN: Instruction removed from duplicated block: B:143:0x0369, please report this as an issue */
     /* JADX WARN: Instruction removed from duplicated block: B:183:0x042c, please report this as an issue */
     /* JADX WARN: Instruction removed from duplicated block: B:215:0x04d1, please report this as an issue */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Bitmap m2670(C0243 c0243, BitmapFactory.Options options, C1096 c1096, EnumC0969 enumC0969, EnumC2392 enumC2392, boolean z, int i, int i2, boolean z2, InterfaceC1097 interfaceC1097) throws Throwable {
         long j;
         String str;

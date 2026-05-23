@@ -18,7 +18,6 @@ import p000.InterfaceC3587;
 /* JADX INFO: loaded from: classes.dex */
 public final class Recreator implements InterfaceC1774 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Object f456;
 
     public Recreator(InterfaceC2629 interfaceC2629) {
@@ -28,7 +27,6 @@ public final class Recreator implements InterfaceC1774 {
     /* JADX WARN: Type inference failed for: r4v14, types: [java.lang.Object, ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤞᲇᛸᤝᲈ] */
     /* JADX WARN: Type inference failed for: r4v3, types: [java.lang.Object, ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤞᲇᛸᤝᲈ] */
     @Override // p000.InterfaceC1774
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo0(InterfaceC1777 interfaceC1777, EnumC1769 enumC1769) {
         if (enumC1769 != EnumC1769.ON_CREATE) {
             throw new AssertionError("Next event must be ON_CREATE");

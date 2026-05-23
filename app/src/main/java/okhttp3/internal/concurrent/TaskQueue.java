@@ -41,7 +41,6 @@ public final class TaskQueue {
         }
     }
 
-    /* JADX INFO: renamed from: okhttp3.internal.concurrent.TaskQueue$execute$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static final class AnonymousClass1 extends Task {
         final /* synthetic */ InterfaceC1414 $block;
@@ -59,7 +58,6 @@ public final class TaskQueue {
         }
     }
 
-    /* JADX INFO: renamed from: okhttp3.internal.concurrent.TaskQueue$schedule$2, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static final class AnonymousClass2 extends Task {
         final /* synthetic */ InterfaceC1414 $block;

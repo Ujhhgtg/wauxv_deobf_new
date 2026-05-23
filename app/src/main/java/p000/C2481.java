@@ -6,19 +6,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᤝᲁᲇᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2481 implements InterfaceC1041 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ RecyclerView f7925;
 
     public /* synthetic */ C2481(RecyclerView recyclerView) {
         this.f7925 = recyclerView;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public void m4433(C0145 c0145) {
         int i = c0145.f1144;
         RecyclerView recyclerView = this.f7925;
@@ -39,7 +36,6 @@ public final class C2481 implements InterfaceC1041 {
     }
 
     @Override // p000.InterfaceC1041
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public boolean mo2607(float f) {
         int i;
         int i2;
@@ -61,7 +57,6 @@ public final class C2481 implements InterfaceC1041 {
         return recyclerView.m229(i, i2, 0, 2147483647);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public AbstractC2508 m4434(int i) {
         RecyclerView recyclerView = this.f7925;
         int iM1997 = recyclerView.f361.m1997();
@@ -87,7 +82,6 @@ public final class C2481 implements InterfaceC1041 {
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public void m4435(int i, int i2, Object obj) {
         int i3;
         int i4;
@@ -125,7 +119,6 @@ public final class C2481 implements InterfaceC1041 {
     }
 
     @Override // p000.InterfaceC1041
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public float mo2608() {
         float f;
         RecyclerView recyclerView = this.f7925;
@@ -140,7 +133,6 @@ public final class C2481 implements InterfaceC1041 {
         return -f;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public void m4436(int i, int i2) {
         RecyclerView recyclerView = this.f7925;
         int iM1997 = recyclerView.f361.m1997();
@@ -169,7 +161,6 @@ public final class C2481 implements InterfaceC1041 {
         recyclerView.f414 = true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public void m4437(int i, int i2) {
         int i3;
         int i4;
@@ -237,13 +228,11 @@ public final class C2481 implements InterfaceC1041 {
     }
 
     @Override // p000.InterfaceC1041
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public void mo2609() {
         this.f7925.m261();
     }
 
     /* JADX WARN: Code duplicated, block: B:9:0x0020  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public void m4438(AbstractC2508 abstractC2508, C2139 c2139, C2139 c21310) {
         boolean zM2569;
         RecyclerView recyclerView = this.f7925;
@@ -273,7 +262,6 @@ public final class C2481 implements InterfaceC1041 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public void m4439(AbstractC2508 abstractC2508, C2139 c2139, C2139 c21310) {
         boolean zM2569;
         RecyclerView recyclerView = this.f7925;
@@ -300,7 +288,6 @@ public final class C2481 implements InterfaceC1041 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public void m4440(int i) {
         RecyclerView recyclerView = this.f7925;
         View childAt = recyclerView.getChildAt(i);

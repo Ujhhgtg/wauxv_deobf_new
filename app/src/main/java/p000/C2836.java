@@ -5,15 +5,12 @@ import android.text.TextUtils;
 import java.io.File;
 import java.net.URL;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᛸᲁᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2836 implements InterfaceC1996 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f9101;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final InterfaceC1996 f9102;
 
     public /* synthetic */ C2836(InterfaceC1996 interfaceC1996, int i) {
@@ -22,7 +19,6 @@ public final class C2836 implements InterfaceC1996 {
     }
 
     @Override // p000.InterfaceC1996
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final /* bridge */ /* synthetic */ boolean mo1394(Object obj) {
         switch (this.f9101) {
             case 0:
@@ -34,7 +30,6 @@ public final class C2836 implements InterfaceC1996 {
     }
 
     @Override // p000.InterfaceC1996
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final C1995 mo1395(Object obj, int i, int i2, C2303 c2303) {
         Uri uriFromFile;
         switch (this.f9101) {

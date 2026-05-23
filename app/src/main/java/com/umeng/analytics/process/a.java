@@ -15,7 +15,6 @@ interface a {
     public static final int g = 1;
     public static final String h = "_main_";
 
-    /* JADX INFO: renamed from: com.umeng.analytics.process.a$a, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public interface InterfaceC0033a {
         public static final String a = "__et_p";

@@ -9,21 +9,16 @@ import java.util.List;
 import java.util.Set;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᲈᛸᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2732 extends AbstractC2867 implements InterfaceC1600, InterfaceC1601 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static final C2732 f8799;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final String f8800;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final String f8801;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static final String f8802;
 
     static {
@@ -34,7 +29,6 @@ public final class C2732 extends AbstractC2867 implements InterfaceC1600, Interf
         f8802 = "支持朋友圈自定义消息的好友点赞数量";
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static Set m4728(long j) {
         Object next;
         StringBuilder sb;
@@ -58,42 +52,35 @@ public final class C2732 extends AbstractC2867 implements InterfaceC1600, Interf
     }
 
     @Override // p000.InterfaceC1600
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final List mo3340() {
         return !mo3264() ? C1189.f4329 : Collections.singletonList(new C2744(R.id.MenuItem_Sns_Like, "伪点赞[WA]", new C2729(0)));
     }
 
     @Override // p000.InterfaceC1601
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final void mo1236(C1563 c1563, String str, ContentValues contentValues, String str2, String[] strArr, int i) throws IllegalAccessException {
         m4729(str, contentValues);
     }
 
     @Override // p000.InterfaceC1601
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final void mo1233(C1563 c1563, String str, ContentValues contentValues, String str2, String[] strArr, int i) throws IllegalAccessException {
         m4729(str, contentValues);
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
     public final String mo1127() {
         return f8802;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
     public final String mo1128() {
         return f8801;
     }
 
     @Override // p000.AbstractC2867
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
     public final String mo1129() {
         return f8800;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public final void m4729(String str, ContentValues contentValues) throws IllegalAccessException {
         String[] strArr = AbstractC1574.f5469;
         if (mo3264() && str.equals("SnsInfo")) {
@@ -145,7 +132,6 @@ public final class C2732 extends AbstractC2867 implements InterfaceC1600, Interf
     }
 
     @Override // p000.AbstractC1557
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
     }
 }

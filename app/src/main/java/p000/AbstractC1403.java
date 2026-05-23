@@ -1,6 +1,5 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᤞᲁᛸᲀᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1403 implements InterfaceC2713 {
@@ -10,7 +9,6 @@ public abstract class AbstractC1403 implements InterfaceC2713 {
         this.delegate = interfaceC2713;
     }
 
-    /* JADX INFO: renamed from: -deprecated_delegate, reason: not valid java name */
     public final InterfaceC2713 m3115deprecated_delegate() {
         return this.delegate;
     }

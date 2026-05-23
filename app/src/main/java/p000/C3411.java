@@ -5,12 +5,10 @@ import androidx.appcompat.widget.Toolbar;
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᛸᤝᲀᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3411 implements InterfaceC0139, InterfaceC1942 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ Toolbar f10754;
 
     public /* synthetic */ C3411(Toolbar toolbar) {
@@ -18,13 +16,11 @@ public final class C3411 implements InterfaceC0139, InterfaceC1942 {
     }
 
     @Override // p000.InterfaceC1942
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public boolean mo1101(MenuItem menuItem) {
         return false;
     }
 
     @Override // p000.InterfaceC1942
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public void mo1113(MenuC1944 menuC1944) {
         C0130 c0130;
         Toolbar toolbar = this.f10754;

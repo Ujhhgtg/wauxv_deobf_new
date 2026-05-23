@@ -6,15 +6,12 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲇᤝᲈᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1563 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final /* synthetic */ int f5437 = 0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public C1676 f5438;
 
     static {
@@ -25,7 +22,6 @@ public final class C1563 {
         return "HookParam(" + super.toString() + ") by " + this.f5438;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final Object m3266() {
         Object c2585;
         Object[] objArrM3267 = m3267();
@@ -59,7 +55,6 @@ public final class C1563 {
         return c2585;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final Object[] m3267() {
         Object[] objArrM3406 = this.f5438.m3406();
         if (objArrM3406 != null) {
@@ -68,7 +63,6 @@ public final class C1563 {
         throw new IllegalStateException("Current hooked Member args is null");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final Object m3268() {
         Object obj = ((C1559) this.f5438.f5661).f5430.thisObject;
         if (obj != null) {
@@ -77,22 +71,18 @@ public final class C1563 {
         throw new IllegalStateException("HookParam instance got null! Is this a static member?");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Object m3269() {
         return ((C1560) this.f5438.f5659).mo1196(null, Boolean.FALSE);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m3270() {
         setReturn(Boolean.FALSE);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void setReturnTrue() {
         setReturn(Boolean.TRUE);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void setReturn(Object obj) {
         ((C1560) this.f5438.f5659).mo1196(obj, Boolean.TRUE);
     }

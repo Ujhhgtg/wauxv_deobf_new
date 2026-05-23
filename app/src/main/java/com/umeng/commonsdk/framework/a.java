@@ -57,7 +57,6 @@ public class a implements UMImprintChangeCallback {
     private static int v = 15;
     private static Object w = new Object();
 
-    /* JADX INFO: renamed from: com.umeng.commonsdk.framework.a$a, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public static class FileObserverC0036a extends FileObserver {
         public FileObserverC0036a(String str) {

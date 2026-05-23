@@ -5,15 +5,12 @@ import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲁᲇᤝᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2510 extends C0078 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final RecyclerView f8027;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C2509 f8028;
 
     public C2510(RecyclerView recyclerView) {
@@ -27,7 +24,6 @@ public final class C2510 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo964(View view, AccessibilityEvent accessibilityEvent) {
         super.mo964(view, accessibilityEvent);
         if (!(view instanceof RecyclerView) || this.f8027.m234()) {
@@ -40,7 +36,6 @@ public final class C2510 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo722(View view, C0092 c0092) {
         this.f1024.onInitializeAccessibilityNodeInfo(view, c0092.f1045);
         RecyclerView recyclerView = this.f8027;
@@ -53,7 +48,6 @@ public final class C2510 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo723(View view, int i, Bundle bundle) {
         if (super.mo723(view, i, bundle)) {
             return true;

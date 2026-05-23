@@ -7,18 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᛸᲁᲇᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1015 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final ThreadLocal f3713 = new ThreadLocal();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final ThreadLocal f3714 = new ThreadLocal();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m2589(ViewParent viewParent, View view, Matrix matrix) {
         Object parent = view.getParent();
         if ((parent instanceof View) && parent != viewParent) {
@@ -33,7 +29,6 @@ public abstract class AbstractC1015 {
         matrix.preConcat(view.getMatrix());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m2590(ViewGroup viewGroup, View view, Rect rect) {
         ThreadLocal threadLocal = f3713;
         Matrix matrix = (Matrix) threadLocal.get();

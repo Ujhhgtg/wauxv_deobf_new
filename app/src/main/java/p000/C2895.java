@@ -3,12 +3,10 @@ package p000;
 import java.io.PrintStream;
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᲁᤞᤝᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2895 extends C1229 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean f9312;
 
     public C2895(String str, Throwable th, InterfaceC2225 interfaceC2225, C0550 c0550, boolean z) {
@@ -21,7 +19,6 @@ public final class C2895 extends C1229 {
         return super.getMessage() + "Caused by: " + m4902(getCause());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final synchronized Throwable m4900() {
         Throwable cause = getCause();
         if (!(cause instanceof InvocationTargetException)) {
@@ -30,7 +27,6 @@ public final class C2895 extends C1229 {
         return cause.getCause();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m4901(boolean z, PrintStream printStream) {
         if (z) {
             printStackTrace(printStream);
@@ -44,7 +40,6 @@ public final class C2895 extends C1229 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final synchronized String m4902(Throwable th) {
         if (th == null) {
             return "Cause is null";

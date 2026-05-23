@@ -45,97 +45,66 @@ import p000.InterfaceC2138;
 /* JADX INFO: loaded from: classes.dex */
 public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static final float f255 = (float) (Math.log(0.78d) / Math.log(0.9d));
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static final C1911 f256 = new C1911(1);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public static final int[] f257 = {16843130};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final float f258;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public long f259;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final Rect f260;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final OverScroller f261;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final EdgeEffect f262;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final EdgeEffect f263;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public C2640 f264;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int f265;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public boolean f266;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public boolean f267;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public View f268;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public boolean f269;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public VelocityTracker f270;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public boolean f271;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public boolean f272;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final int f273;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final int f274;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final int f275;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public int f276;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final int[] f277;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final int[] f278;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public int f279;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public int f280;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public C2135 f281;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final C2139 f282;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public final C2136 f283;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public float f284;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public final C1040 f285;
 
     public NestedScrollView(Context context, AttributeSet attributeSet) {
@@ -178,7 +147,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         return this.f264;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static boolean m76(View view, NestedScrollView nestedScrollView) {
         if (view == nestedScrollView) {
             return true;
@@ -1181,25 +1149,21 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
     }
 
     @Override // p000.InterfaceC2138
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo11(View view, int i, int i2, int i3, int i4, int i5, int[] iArr) {
         m82(i4, i5, iArr);
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo12(View view, int i, int i2, int i3, int i4, int i5) {
         m82(i4, i5, null);
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final boolean mo13(View view, View view2, int i, int i2) {
         return (i & 2) != 0;
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo14(View view, View view2, int i, int i2) {
         C2139 c2139 = this.f282;
         if (i2 == 1) {
@@ -1211,7 +1175,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo15(View view, int i) {
         C2139 c2139 = this.f282;
         if (i == 1) {
@@ -1223,12 +1186,10 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
     }
 
     @Override // p000.InterfaceC2137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo16(View view, int i, int i2, int[] iArr, int i3) {
         this.f283.m3946(iArr, i, i2, i3, null);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final boolean m77(int i) {
         View viewFindFocus = findFocus();
         if (viewFindFocus == this) {
@@ -1267,7 +1228,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final int m78(Rect rect) {
         if (getChildCount() == 0) {
             return 0;
@@ -1292,7 +1252,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         return Math.max(rect.height() > height ? 0 - (i2 - rect.bottom) : 0 - (scrollY - rect.top), -getScrollY());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m79(int i) {
         if (getChildCount() > 0) {
             this.f261.fling(getScrollX(), getScrollY(), 0, i, 0, 0, -2147483648, 2147483647, 0, 0);
@@ -1305,7 +1264,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final boolean m80(int i) {
         int childCount;
         boolean z = i == 130;
@@ -1322,7 +1280,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         return m86(i, rect.top, rect.bottom);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final boolean m81(View view, int i, int i2) {
         Rect rect = this.f260;
         view.getDrawingRect(rect);
@@ -1330,7 +1287,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         return rect.bottom + i >= getScrollY() && rect.top - i <= getScrollY() + i2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void m82(int i, int i2, int[] iArr) {
         int scrollY = getScrollY();
         scrollBy(0, i);
@@ -1341,7 +1297,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         this.f283.m3947(0, scrollY2, 0, i - scrollY2, null, i2, iArr);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void m83(MotionEvent motionEvent) {
         int actionIndex = motionEvent.getActionIndex();
         if (motionEvent.getPointerId(actionIndex) == this.f276) {
@@ -1355,7 +1310,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final boolean m84(int i, int i2, int i3, int i4) {
         int i5;
         boolean z;
@@ -1397,7 +1351,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final void m85(int i) {
         boolean z = i == 130;
         int height = getHeight();
@@ -1426,7 +1379,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
     }
 
     /* JADX WARN: Code duplicated, block: B:32:0x0068  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final boolean m86(int i, int i2, int i3) {
         boolean z;
         int height = getHeight();
@@ -1476,7 +1428,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
 
     /* JADX WARN: Code duplicated, block: B:52:0x0118  */
     /* JADX WARN: Code duplicated, block: B:59:0x0129  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final int m87(int i, int i2, MotionEvent motionEvent, int i3, int i4, boolean z) {
         int i5;
         int i6;
@@ -1570,7 +1521,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         return i7;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final boolean m88(EdgeEffect edgeEffect, int i) {
         if (i > 0) {
             return true;
@@ -1583,7 +1533,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         return ((float) (Math.exp((d / (d - 1.0d)) * dLog) * ((double) f))) < fM2472;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final void m89(int i, int i2, boolean z) {
         if (getChildCount() == 0) {
             return;
@@ -1613,7 +1562,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         this.f259 = AnimationUtils.currentAnimationTimeMillis();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final boolean m90(MotionEvent motionEvent) {
         boolean z;
         EdgeEffect edgeEffect = this.f262;
@@ -1631,7 +1579,6 @@ public class NestedScrollView extends FrameLayout implements InterfaceC2138 {
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final void m91(int i) {
         this.f283.m3951(i);
     }

@@ -5,37 +5,31 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᛸᤞᲈᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1252 implements InterfaceC1607 {
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final ImageHeaderParser$ImageType mo2558(ByteBuffer byteBuffer) {
         return ImageHeaderParser$ImageType.UNKNOWN;
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final boolean mo2559(ByteBuffer byteBuffer, C1867 c1867) {
         return false;
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo2560(ByteBuffer byteBuffer, C1867 c1867) {
         AtomicReference atomicReference = AbstractC0534.f2234;
         return mo2562(new C0533(byteBuffer), c1867);
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final ImageHeaderParser$ImageType mo2561(InputStream inputStream) {
         return ImageHeaderParser$ImageType.UNKNOWN;
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final int mo2562(InputStream inputStream, C1867 c1867) {
         int iM2908;
         C1251 c1251 = new C1251(inputStream);
@@ -56,7 +50,6 @@ public final class C1252 implements InterfaceC1607 {
     }
 
     @Override // p000.InterfaceC1607
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final boolean mo2563(InputStream inputStream, C1867 c1867) {
         return false;
     }

@@ -12,25 +12,20 @@ import java.util.Set;
 import me.hd.wauxv.R;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲀᲇᲁᤞᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0718 extends AbstractC2482 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f2725 = 1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public List f2726;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Object f2727;
 
     public /* synthetic */ C0718() {
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo2040() {
         switch (1) {
             case 0:
@@ -41,7 +36,6 @@ public final class C0718 extends AbstractC2482 {
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo2041(AbstractC2508 abstractC2508, final int i) {
         switch (1) {
             case 0:
@@ -76,7 +70,6 @@ public final class C0718 extends AbstractC2482 {
     }
 
     @Override // p000.AbstractC2482
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final AbstractC2508 mo2042(ViewGroup viewGroup, int i) {
         switch (1) {
             case 0:

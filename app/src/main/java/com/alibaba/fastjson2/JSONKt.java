@@ -154,12 +154,10 @@ public final class JSONKt {
         }.getType(), (JSONReader.Feature[]) Arrays.copyOf(featureArr, featureArr.length));
     }
 
-    /* JADX INFO: renamed from: parseObject, reason: collision with other method in class */
     public static final /* synthetic */ <T> T m437parseObject(String str) {
         return (T) JSON.parseObject(str, Object.class);
     }
 
-    /* JADX INFO: renamed from: parseObject, reason: collision with other method in class */
     public static final /* synthetic */ <T> T m438parseObject(String str, JSONReader.Feature... featureArr) {
         return (T) JSON.parseObject(str, Object.class, (JSONReader.Feature[]) Arrays.copyOf(featureArr, featureArr.length));
     }
@@ -168,12 +166,10 @@ public final class JSONKt {
         return (T) JSON.parseObject(str, Object.class, filter, (JSONReader.Feature[]) Arrays.copyOf(featureArr, featureArr.length));
     }
 
-    /* JADX INFO: renamed from: parseObject, reason: collision with other method in class */
     public static final /* synthetic */ <T> T m439parseObject(byte[] bArr) {
         return (T) JSON.parseObject(bArr, Object.class);
     }
 
-    /* JADX INFO: renamed from: parseObject, reason: collision with other method in class */
     public static final /* synthetic */ <T> T m440parseObject(byte[] bArr, JSONReader.Feature... featureArr) {
         return (T) JSON.parseObject(bArr, Object.class, (JSONReader.Feature[]) Arrays.copyOf(featureArr, featureArr.length));
     }

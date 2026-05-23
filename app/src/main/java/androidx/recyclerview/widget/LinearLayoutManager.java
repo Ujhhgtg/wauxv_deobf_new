@@ -37,49 +37,34 @@ import p000.InterfaceC2503;
 /* JADX INFO: loaded from: classes.dex */
 public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public int f332;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public C1788 f333;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public AbstractC1138 f334;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public boolean f335;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final boolean f336;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public boolean f337;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public boolean f338;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final boolean f339;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public int f340;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public int f341;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public C1789 f342;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public final C1786 f343;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final C1787 f344;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public final int f345;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public final int[] f346;
 
     public LinearLayoutManager(int i) {
@@ -104,7 +89,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.InterfaceC2503
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final PointF mo150(int i) {
         if (m4467() == 0) {
             return null;
@@ -114,7 +98,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void mo151(String str) {
         if (this.f342 == null) {
             super.mo151(str);
@@ -122,19 +105,16 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean mo152() {
         return this.f332 == 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final boolean mo153() {
         return this.f332 == 1;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void mo154(int i, int i2, C2504 c2504, C1439 c1439) {
         if (this.f332 != 0) {
             i = i2;
@@ -148,7 +128,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void mo155(int i, C1439 c1439) {
         boolean z;
         int i2;
@@ -171,43 +150,36 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final int mo156(C2504 c2504) {
         return m169(c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public int mo108(C2504 c2504) {
         return m170(c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public int mo109(C2504 c2504) {
         return m171(c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final int mo157(C2504 c2504) {
         return m169(c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public int mo110(C2504 c2504) {
         return m170(c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public int mo111(C2504 c2504) {
         return m171(c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final View mo158(int i) {
         int iM4467 = m4467();
         if (iM4467 == 0) {
@@ -224,25 +196,21 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public C2492 mo112() {
         return new C2492(-2, -2);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ, reason: contains not printable characters */
     public final boolean mo159() {
         return true;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
     public final boolean mo160() {
         return this.f336;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ */
     public View mo117(View view, int i, C2498 c2498, C2504 c2504) {
         int iM172;
         View viewM179;
@@ -271,7 +239,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ, reason: contains not printable characters */
     public final void mo162(AccessibilityEvent accessibilityEvent) {
         super.mo162(accessibilityEvent);
         if (m4467() > 0) {
@@ -281,7 +248,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ */
     public void mo118(C2498 c2498, C2504 c2504, C0092 c0092) {
         super.mo118(c2498, c2504, c0092);
         AbstractC2482 abstractC2482 = this.f7942.f368;
@@ -308,7 +274,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     /* JADX WARN: Code duplicated, block: B:138:0x0238  */
     /* JADX WARN: Code duplicated, block: B:95:0x0194  */
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ */
     public void mo125(C2498 c2498, C2504 c2504) {
         View focusedChild;
         int iM4505;
@@ -804,7 +769,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ */
     public void mo126(C2504 c2504) {
         this.f342 = null;
         this.f340 = -1;
@@ -813,7 +777,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ, reason: contains not printable characters */
     public final void mo163(Parcelable parcelable) {
         if (parcelable instanceof C1789) {
             C1789 c1789 = (C1789) parcelable;
@@ -826,7 +789,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᤞᲈ, reason: contains not printable characters */
     public final Parcelable mo164() {
         C1789 c1789 = this.f342;
         if (c1789 != null) {
@@ -857,7 +819,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᤞᲀ */
     public boolean mo127(int i, Bundle bundle) {
         int iMin;
         if (super.mo127(i, bundle)) {
@@ -888,7 +849,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲁᲈ */
     public int mo128(int i, C2498 c2498, C2504 c2504) {
         if (this.f332 == 1) {
             return 0;
@@ -897,7 +857,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲈᲁ, reason: contains not printable characters */
     public void mo165(int i) {
         this.f340 = i;
         this.f341 = -2147483648;
@@ -909,7 +868,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲀᲈ */
     public int mo129(int i, C2498 c2498, C2504 c2504) {
         if (this.f332 == 0) {
             return 0;
@@ -918,7 +876,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲁᲈᤞ, reason: contains not printable characters */
     public final boolean mo166() {
         if (this.f7953 != 1073741824 && this.f7952 != 1073741824) {
             int iM4467 = m4467();
@@ -933,7 +890,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᲁᤞ, reason: contains not printable characters */
     public void mo167(RecyclerView recyclerView, C2504 c2504, int i) {
         C1790 c1790 = new C1790(recyclerView.getContext());
         c1790.f5952 = i;
@@ -941,12 +897,10 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᤞᲈᲀ */
     public boolean mo131() {
         return this.f342 == null && this.f335 == this.f338;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᤞᲈ, reason: contains not printable characters */
     public void m168(C2504 c2504, int[] iArr) {
         int i;
         int iMo2747 = c2504.f7984 != -1 ? this.f334.mo2747() : 0;
@@ -960,7 +914,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         iArr[1] = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᲈᤞ */
     public void mo132(C2504 c2504, C1788 c1788, C1439 c1439) {
         int i = c1788.f5940;
         if (i < 0 || i >= c2504.m4505()) {
@@ -969,7 +922,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         c1439.m3134(i, Math.max(0, c1788.f5943));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲈᤞᲀ, reason: contains not printable characters */
     public final int m169(C2504 c2504) {
         if (m4467() == 0) {
             return 0;
@@ -980,7 +932,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return AbstractC1270.m2974(c2504, abstractC1138, m176(z), m175(z), this, this.f339);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲈᲀᤞ, reason: contains not printable characters */
     public final int m170(C2504 c2504) {
         if (m4467() == 0) {
             return 0;
@@ -991,7 +942,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return AbstractC1270.m2975(c2504, abstractC1138, m176(z), m175(z), this, this.f339, this.f337);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᤞᲀᲁ, reason: contains not printable characters */
     public final int m171(C2504 c2504) {
         if (m4467() == 0) {
             return 0;
@@ -1002,7 +952,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return AbstractC1270.m2976(c2504, abstractC1138, m176(z), m175(z), this, this.f339);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᤞᲁᲀ, reason: contains not printable characters */
     public final int m172(int i) {
         if (i == 1) {
             return (this.f332 != 1 && m185()) ? 1 : -1;
@@ -1022,7 +971,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return this.f332 == 0 ? 1 : -2147483648;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲀᤞᲁ, reason: contains not printable characters */
     public final void m173() {
         if (this.f333 == null) {
             C1788 c1788 = new C1788();
@@ -1034,7 +982,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲀᲁᤞ, reason: contains not printable characters */
     public final int m174(C2498 c2498, C1788 c1788, C2504 c2504, boolean z) {
         int i;
         int i2 = c1788.f5939;
@@ -1084,17 +1031,14 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return i2 - c1788.f5939;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲁᤞᲀ, reason: contains not printable characters */
     public final View m175(boolean z) {
         return this.f337 ? m180(0, m4467(), z) : m180(m4467() - 1, -1, z);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲁᲀᤞ, reason: contains not printable characters */
     public final View m176(boolean z) {
         return this.f337 ? m180(m4467() - 1, -1, z) : m180(0, m4467(), z);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲀᲁᲇ, reason: contains not printable characters */
     public int mo177() {
         View viewM180 = m180(0, m4467(), false);
         if (viewM180 == null) {
@@ -1103,7 +1047,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return AbstractC2491.m4460(viewM180);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲀᲇᲁ, reason: contains not printable characters */
     public int mo178() {
         View viewM180 = m180(m4467() - 1, -1, false);
         if (viewM180 == null) {
@@ -1112,7 +1055,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return AbstractC2491.m4460(viewM180);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲁᲀᲇ, reason: contains not printable characters */
     public final View m179(int i, int i2) {
         int i3;
         int i4;
@@ -1130,7 +1072,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return this.f332 == 0 ? this.f7943.m4804(i, i2, i3, i4) : this.f7944.m4804(i, i2, i3, i4);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲁᲇᲀ, reason: contains not printable characters */
     public final View m180(int i, int i2, boolean z) {
         m173();
         int i3 = z ? 24579 : 320;
@@ -1139,7 +1080,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
 
     /* JADX WARN: Code duplicated, block: B:33:0x0075  */
     /* JADX WARN: Code duplicated, block: B:35:0x0079  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲇᲀᲁ */
     public View mo133(C2498 c2498, C2504 c2504, boolean z, boolean z2) {
         int i;
         int iM4467;
@@ -1196,7 +1136,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return view2 != null ? view2 : view3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲇᲁᲀ, reason: contains not printable characters */
     public final int m181(int i, C2498 c2498, C2504 c2504, boolean z) {
         int iMo2742;
         int iMo2743 = this.f334.mo2742() - i;
@@ -1212,7 +1151,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return iMo2742 + i2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᤞᲁᲇ, reason: contains not printable characters */
     public final int m182(int i, C2498 c2498, C2504 c2504, boolean z) {
         int iMo2746;
         int iMo2747 = i - this.f334.mo2746();
@@ -1228,22 +1166,18 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return i2 - iMo2746;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᤞᲇᲁ, reason: contains not printable characters */
     public final View m183() {
         return m4466(this.f337 ? 0 : m4467() - 1);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲁᤞᲇ, reason: contains not printable characters */
     public final View m184() {
         return m4466(this.f337 ? m4467() - 1 : 0);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲁᲇᤞ, reason: contains not printable characters */
     public final boolean m185() {
         return this.f7942.getLayoutDirection() == 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲇᤞᲁ */
     public void mo134(C2498 c2498, C2504 c2504, C1788 c1788, C1787 c1787) {
         int iM4470;
         int i;
@@ -1319,7 +1253,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         c1787.f5936 = viewM3524.hasFocusable();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᤞᲀᲇ, reason: contains not printable characters */
     public final void m186(C2498 c2498, C1788 c1788) {
         if (!c1788.f5937 || c1788.f5948) {
             return;
@@ -1377,7 +1310,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᤞᲇᲀ, reason: contains not printable characters */
     public final void m187(C2498 c2498, int i, int i2) {
         if (i == i2) {
             return;
@@ -1394,7 +1326,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲀᤞᲇ, reason: contains not printable characters */
     public final void m188() {
         if (this.f332 == 1 || !m185()) {
             this.f337 = this.f336;
@@ -1403,7 +1334,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲀᲇᤞ, reason: contains not printable characters */
     public final int m189(int i, C2498 c2498, C2504 c2504) {
         if (m4467() != 0 && i != 0) {
             m173();
@@ -1425,7 +1355,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲇᤞᲀ, reason: contains not printable characters */
     public void mo190(int i, int i2) {
         this.f340 = i;
         this.f341 = i2;
@@ -1436,7 +1365,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         m4480();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲇᲀᤞ, reason: contains not printable characters */
     public final void m191(int i) {
         if (i != 0 && i != 1) {
             throw new IllegalArgumentException(AbstractC1194.m2779(i, "invalid orientation:"));
@@ -1451,7 +1379,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᤞᲀᲁ */
     public void mo136(boolean z) {
         mo151(null);
         if (this.f338 == z) {
@@ -1461,7 +1388,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         m4480();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᤞᲁᲀ, reason: contains not printable characters */
     public final void m192(int i, int i2, boolean z, C2504 c2504) {
         int iMo2746;
         this.f333.f5948 = this.f334.mo2744() == 0 && this.f334.mo2741() == 0;
@@ -1510,7 +1436,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         c17814.f5943 = iMo2746;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᲀᤞᲁ, reason: contains not printable characters */
     public final void m193(int i, int i2) {
         this.f333.f5939 = this.f334.mo2742() - i2;
         C1788 c1788 = this.f333;
@@ -1521,7 +1446,6 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         c1788.f5943 = -2147483648;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᲀᲁᤞ, reason: contains not printable characters */
     public final void m194(int i, int i2) {
         this.f333.f5939 = i2 - this.f334.mo2746();
         C1788 c1788 = this.f333;
@@ -1558,11 +1482,9 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ, reason: contains not printable characters */
     public void mo161(RecyclerView recyclerView) {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲇᲁᤞ */
     public void mo135(C2498 c2498, C2504 c2504, C1786 c1786, int i) {
     }
 }

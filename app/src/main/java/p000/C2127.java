@@ -5,18 +5,14 @@ import android.os.Parcelable;
 import android.util.SparseArray;
 import android.view.MenuItem;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᤝᲁᲇᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2127 implements InterfaceC1955 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C0447 f7057;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public boolean f7058;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public int f7059;
 
     @Override // p000.InterfaceC1955
@@ -25,7 +21,6 @@ public final class C2127 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1137(boolean z) {
         C0315 c0315;
         if (this.f7058) {
@@ -68,25 +63,21 @@ public final class C2127 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final boolean mo1138(SubMenuC2853 subMenuC2853) {
         return false;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final boolean mo1139() {
         return false;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo1142(MenuItemC1946 menuItemC1946) {
         return false;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final void mo1143(Parcelable parcelable) {
         if (parcelable instanceof C2126) {
             C0447 c0447 = this.f7057;
@@ -131,19 +122,16 @@ public final class C2127 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final boolean mo1145(MenuItemC1946 menuItemC1946) {
         return false;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final void mo1147(Context context, MenuC1944 menuC1944) {
         this.f7057.f7054 = menuC1944;
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final Parcelable mo1148() {
         C2126 c2126 = new C2126();
         c2126.f7055 = this.f7057.getSelectedItemId();
@@ -159,7 +147,6 @@ public final class C2127 implements InterfaceC1955 {
     }
 
     @Override // p000.InterfaceC1955
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1136(MenuC1944 menuC1944, boolean z) {
     }
 }

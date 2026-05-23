@@ -16,25 +16,21 @@ import java.net.UnknownHostException;
 import java.util.concurrent.CancellationException;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲀᤝᲁᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class C2144 extends C0155 {
     @Override // p000.C0155
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1199(CancellationException cancellationException) {
         AbstractC2202.m3997(this.f1165);
         super.mo1199(null);
     }
 
     @Override // p000.C0155
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final void mo1200(Throwable th) {
         mo1201(th);
     }
 
     @Override // p000.C0155
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public final void mo1201(Throwable th) {
         String string;
         
@@ -87,7 +83,6 @@ public class C2144 extends C0155 {
         AbstractC2861.m4864(new C2150(2, string));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ */
     public void mo618() {
     }
 }

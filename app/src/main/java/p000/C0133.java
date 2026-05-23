@@ -4,12 +4,10 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import me.hd.wauxv.R;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0133 extends C0222 implements InterfaceC0137 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ C0136 f1102;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -51,13 +49,11 @@ public final class C0133 extends C0222 implements InterfaceC0137 {
     }
 
     @Override // p000.InterfaceC0137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final boolean mo1() {
         return false;
     }
 
     @Override // p000.InterfaceC0137
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final boolean mo3() {
         return false;
     }

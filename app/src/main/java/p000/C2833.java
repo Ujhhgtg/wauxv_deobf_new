@@ -1,11 +1,9 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᛸᤞᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2833 extends AbstractC2270 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final C0917 f9098;
 
     public C2833(C0917 c0917) {
@@ -14,19 +12,16 @@ public final class C2833 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final EnumC1683 mo1222() {
         return EnumC1683.f5728;
     }
 
     @Override // p000.AbstractC2270
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final int mo1223(AbstractC2270 abstractC2270) {
         return this.f9098.compareTo(((C2833) abstractC2270).f9098);
     }
 
     @Override // p000.AbstractC2270
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final void mo1225(C1023 c1023, C0519 c0519) {
         C0917 c0917 = this.f9098;
         C0516 c0516 = c0917.f3379;
@@ -57,7 +52,6 @@ public final class C2833 extends AbstractC2270 {
     }
 
     @Override // p000.AbstractC1675
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1221(C1023 c1023) {
     }
 }

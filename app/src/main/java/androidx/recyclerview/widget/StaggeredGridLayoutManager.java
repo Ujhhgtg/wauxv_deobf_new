@@ -39,76 +39,52 @@ import p000.RunnableC0141;
 /* JADX INFO: loaded from: classes.dex */
 public class StaggeredGridLayoutManager extends AbstractC2491 implements InterfaceC2503 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final int f432;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final C1316[] f433;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final AbstractC1138 f434;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public final AbstractC1138 f435;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final int f436;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public int f437;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final C1757 f438;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public boolean f439;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public final BitSet f441;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final C0542 f444;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
     public final int f445;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public boolean f446;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public boolean f447;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public C2806 f448;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public int f449;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public final Rect f450;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public final C2803 f451;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public boolean f452;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public final boolean f453;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public int[] f454;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public final RunnableC0141 f455;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public boolean f440 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public int f442 = -1;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public int f443 = -2147483648;
 
     public StaggeredGridLayoutManager(Context context, AttributeSet attributeSet, int i, int i2) {
@@ -165,7 +141,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         this.f435 = AbstractC1138.m2736(this, 1 - this.f436);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲇᲀᤞ, reason: contains not printable characters */
     public static int m262(int i, int i2, int i3) {
         int mode;
         return (!(i2 == 0 && i3 == 0) && ((mode = View.MeasureSpec.getMode(i)) == -2147483648 || mode == 1073741824)) ? View.MeasureSpec.makeMeasureSpec(Math.max(0, (View.MeasureSpec.getSize(i) - i2) - i3), mode) : i;
@@ -173,7 +148,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
 
     /* JADX WARN: Code duplicated, block: B:6:0x000c  */
     @Override // p000.InterfaceC2503
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final PointF mo150(int i) {
         int i2 = -1;
         if (m4467() != 0) {
@@ -198,7 +172,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo151(String str) {
         if (this.f448 == null) {
             super.mo151(str);
@@ -206,25 +179,21 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final boolean mo152() {
         return this.f436 == 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final boolean mo153() {
         return this.f436 == 1;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final boolean mo107(C2492 c2492) {
         return c2492 instanceof C2804;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final void mo154(int i, int i2, C2504 c2504, C1439 c1439) {
         C1757 c1757;
         int iM3034;
@@ -274,7 +243,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final int mo156(C2504 c2504) {
         if (m4467() == 0) {
             return 0;
@@ -284,13 +252,11 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final int mo108(C2504 c2504) {
         return m268(c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final int mo109(C2504 c2504) {
         if (m4467() == 0) {
             return 0;
@@ -300,7 +266,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final int mo157(C2504 c2504) {
         if (m4467() == 0) {
             return 0;
@@ -310,13 +275,11 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ */
     public final int mo110(C2504 c2504) {
         return m268(c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ */
     public final int mo111(C2504 c2504) {
         if (m4467() == 0) {
             return 0;
@@ -326,25 +289,21 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final C2492 mo112() {
         return this.f436 == 0 ? new C2804(-2, -1) : new C2804(-1, -2);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public final C2492 mo113(Context context, AttributeSet attributeSet) {
         return new C2804(context, attributeSet);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ */
     public final C2492 mo114(ViewGroup.LayoutParams layoutParams) {
         return layoutParams instanceof ViewGroup.MarginLayoutParams ? new C2804((ViewGroup.MarginLayoutParams) layoutParams) : new C2804(layoutParams);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public final int mo115(C2498 c2498, C2504 c2504) {
         if (this.f436 == 1) {
             return Math.min(this.f432, c2504.m4505());
@@ -353,7 +312,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ */
     public final int mo116(C2498 c2498, C2504 c2504) {
         if (this.f436 == 0) {
             return Math.min(this.f432, c2504.m4505());
@@ -362,19 +320,16 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ */
     public final boolean mo159() {
         return this.f445 != 0;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ */
     public final boolean mo160() {
         return this.f439;
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᤞᲇ, reason: contains not printable characters */
     public final void mo263(int i) {
         super.mo263(i);
         for (int i2 = 0; i2 < this.f432; i2++) {
@@ -391,7 +346,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
     public final void mo264(int i) {
         super.mo264(i);
         for (int i2 = 0; i2 < this.f432; i2++) {
@@ -408,7 +362,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ, reason: contains not printable characters */
     public final void mo265(AbstractC2482 abstractC2482) {
         this.f444.m1884();
         for (int i = 0; i < this.f432; i++) {
@@ -417,7 +370,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲇᲈ */
     public final void mo161(RecyclerView recyclerView) {
         RecyclerView recyclerView2 = this.f7942;
         if (recyclerView2 != null) {
@@ -432,7 +384,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX WARN: Code duplicated, block: B:31:0x0048  */
     /* JADX WARN: Code duplicated, block: B:37:0x0053  */
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ */
     public final View mo117(View view, int i, C2498 c2498, C2504 c2504) {
         View viewM225;
         int i2;
@@ -533,7 +484,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ */
     public final void mo162(AccessibilityEvent accessibilityEvent) {
         super.mo162(accessibilityEvent);
         if (m4467() > 0) {
@@ -555,14 +505,12 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ */
     public final void mo118(C2498 c2498, C2504 c2504, C0092 c0092) {
         super.mo118(c2498, c2504, c0092);
         c0092.m1095("androidx.recyclerview.widget.StaggeredGridLayoutManager");
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ */
     public final void mo119(C2498 c2498, C2504 c2504, View view, C0092 c0092) {
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         if (!(layoutParams instanceof C2804)) {
@@ -580,44 +528,37 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ */
     public final void mo120(int i, int i2) {
         m278(i, i2, 1);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲈᲇ */
     public final void mo121() {
         this.f444.m1884();
         m4480();
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᤞᲈ */
     public final void mo122(int i, int i2) {
         m278(i, i2, 8);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ */
     public final void mo123(int i, int i2) {
         m278(i, i2, 2);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᤞᲇ */
     public final void mo124(int i, int i2) {
         m278(i, i2, 4);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲈᲇᤞ */
     public final void mo125(C2498 c2498, C2504 c2504) {
         m282(c2498, c2504, true);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ */
     public final void mo126(C2504 c2504) {
         this.f442 = -1;
         this.f443 = -2147483648;
@@ -626,7 +567,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ */
     public final void mo163(Parcelable parcelable) {
         if (parcelable instanceof C2806) {
             C2806 c2806 = (C2806) parcelable;
@@ -645,7 +585,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᤞᲈ */
     public final Parcelable mo164() {
         int iM3036;
         int iMo2746;
@@ -709,7 +648,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲀᲈᤞ, reason: contains not printable characters */
     public final void mo266(int i) {
         if (i == 0) {
             m267();
@@ -717,13 +655,11 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲁᲈ */
     public final int mo128(int i, C2498 c2498, C2504 c2504) {
         return m289(i, c2498, c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲈᲁ */
     public final void mo165(int i) {
         C2806 c2806 = this.f448;
         if (c2806 != null && c2806.f8949 != i) {
@@ -738,13 +674,11 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲁᲀᲈ */
     public final int mo129(int i, C2498 c2498, C2504 c2504) {
         return m289(i, c2498, c2504);
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲈᲁᲀ */
     public final void mo130(Rect rect, int i, int i2) {
         int iM4452;
         int iM4453;
@@ -769,7 +703,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᲁᤞ */
     public final void mo167(RecyclerView recyclerView, C2504 c2504, int i) {
         C1790 c1790 = new C1790(recyclerView.getContext());
         c1790.f5952 = i;
@@ -777,12 +710,10 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     }
 
     @Override // p000.AbstractC2491
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᤞᲈᲀ */
     public final boolean mo131() {
         return this.f448 == null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᤞᲈ, reason: contains not printable characters */
     public final boolean m267() {
         int iM274;
         int iM275;
@@ -824,7 +755,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᲈᤞ, reason: contains not printable characters */
     public final int m268(C2504 c2504) {
         if (m4467() == 0) {
             return 0;
@@ -848,7 +778,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX WARN: Code duplicated, block: B:167:0x032b  */
     /* JADX WARN: Code duplicated, block: B:170:0x0332  */
     /* JADX WARN: Code duplicated, block: B:172:0x033a  */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲈᤞᲀ, reason: contains not printable characters */
     public final int m269(C2498 c2498, C1757 c1757, C2504 c2504) {
         C1316 c1316;
         int i;
@@ -1132,7 +1061,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲈᲀᤞ, reason: contains not printable characters */
     public final View m270(boolean z) {
         int iMo2746 = this.f434.mo2746();
         int iMo2742 = this.f434.mo2742();
@@ -1153,7 +1081,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return view;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᤞᲀᲁ, reason: contains not printable characters */
     public final View m271(boolean z) {
         int iMo2746 = this.f434.mo2746();
         int iMo2742 = this.f434.mo2742();
@@ -1174,7 +1101,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return view;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᤞᲁᲀ, reason: contains not printable characters */
     public final void m272(C2498 c2498, C2504 c2504, boolean z) {
         int iMo2742;
         int iM276 = m276(-2147483648);
@@ -1187,7 +1113,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲀᤞᲁ, reason: contains not printable characters */
     public final void m273(C2498 c2498, C2504 c2504, boolean z) {
         int iMo2746;
         int iM277 = m277(2147483647);
@@ -1200,7 +1125,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲀᲁᤞ, reason: contains not printable characters */
     public final int m274() {
         if (m4467() == 0) {
             return 0;
@@ -1208,7 +1132,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return AbstractC2491.m4460(m4466(0));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲁᤞᲀ, reason: contains not printable characters */
     public final int m275() {
         int iM4467 = m4467();
         if (iM4467 == 0) {
@@ -1217,7 +1140,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return AbstractC2491.m4460(m4466(iM4467 - 1));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲁᲀᤞ, reason: contains not printable characters */
     public final int m276(int i) {
         int iM3034 = this.f433[0].m3034(i);
         for (int i2 = 1; i2 < this.f432; i2++) {
@@ -1229,7 +1151,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return iM3034;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲀᲁᲇ, reason: contains not printable characters */
     public final int m277(int i) {
         int iM3036 = this.f433[0].m3036(i);
         for (int i2 = 1; i2 < this.f432; i2++) {
@@ -1252,7 +1173,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX WARN: Code duplicated, block: B:29:0x004c  */
     /* JADX WARN: Code duplicated, block: B:31:? A[RETURN, SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:32:? A[RETURN, SYNTHETIC] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲀᲇᲁ, reason: contains not printable characters */
     public final void m278(int i, int i2, int i3) {
         int i4;
         int i5;
@@ -1330,7 +1250,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX WARN: Code duplicated, block: B:73:0x00fa A[SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:75:0x00fb A[SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:76:0x00fb A[SYNTHETIC] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲁᲀᲇ, reason: contains not printable characters */
     public final View m279() {
         int i;
         View viewM4466;
@@ -1509,12 +1428,10 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲁᲇᲀ, reason: contains not printable characters */
     public final boolean m280() {
         return this.f7942.getLayoutDirection() == 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲇᲀᲁ, reason: contains not printable characters */
     public final void m281(View view, int i, int i2) {
         RecyclerView recyclerView = this.f7942;
         Rect rect = this.f450;
@@ -1540,7 +1457,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX WARN: Code duplicated, block: B:262:0x042f  */
     /* JADX WARN: Code duplicated, block: B:273:0x01fc A[SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:277:0x01fc A[SYNTHETIC] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲇᲁᲀ, reason: contains not printable characters */
     public final void m282(C2498 c2498, C2504 c2504, boolean z) {
         boolean z2;
         C2806 c2806;
@@ -1885,7 +1801,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᤞᲁᲇ, reason: contains not printable characters */
     public final boolean m283(int i) {
         if (this.f436 == 0) {
             return (i == -1) != this.f440;
@@ -1893,7 +1808,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return ((i == -1) == this.f440) == m280();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᤞᲇᲁ, reason: contains not printable characters */
     public final void m284(int i, C2504 c2504) {
         int iM274;
         int i2;
@@ -1912,7 +1826,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         c1757.f5873 = Math.abs(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲁᤞᲇ, reason: contains not printable characters */
     public final void m285(C2498 c2498, C1757 c1757) {
         int iMin;
         if (!c1757.f5872 || c1757.f5880) {
@@ -1960,7 +1873,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         m287(iMin, c2498);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲁᲇᤞ, reason: contains not printable characters */
     public final void m286(int i, C2498 c2498) {
         for (int iM4467 = m4467() - 1; iM4467 >= 0; iM4467--) {
             View viewM4466 = m4466(iM4467);
@@ -1986,7 +1898,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲇᤞᲁ, reason: contains not printable characters */
     public final void m287(int i, C2498 c2498) {
         while (m4467() > 0) {
             View viewM4466 = m4466(0);
@@ -2012,7 +1923,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲇᲁᤞ, reason: contains not printable characters */
     public final void m288() {
         if (this.f436 == 1 || !m280()) {
             this.f440 = this.f439;
@@ -2021,7 +1931,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᤞᲀᲇ, reason: contains not printable characters */
     public final int m289(int i, C2498 c2498, C2504 c2504) {
         if (m4467() == 0 || i == 0) {
             return 0;
@@ -2039,14 +1948,12 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         return i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᤞᲇᲀ, reason: contains not printable characters */
     public final void m290(int i) {
         C1757 c1757 = this.f438;
         c1757.f5876 = i;
         c1757.f5875 = this.f440 != (i == -1) ? -1 : 1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲀᤞᲇ, reason: contains not printable characters */
     public final void m291(int i, int i2) {
         for (int i3 = 0; i3 < this.f432; i3++) {
             if (!((ArrayList) this.f433[i3].f4761).isEmpty()) {
@@ -2055,7 +1962,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲀᲇᤞ, reason: contains not printable characters */
     public final void m292(int i, C2504 c2504) {
         int iMo2747;
         int iMo2748;
@@ -2093,7 +1999,6 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         c1757.f5880 = z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲇᤞᲀ, reason: contains not printable characters */
     public final void m293(C1316 c1316, int i, int i2) {
         int i3 = c1316.f4759;
         int i4 = c1316.f4760;

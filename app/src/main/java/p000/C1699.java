@@ -2,12 +2,10 @@ package p000;
 
 import java.util.concurrent.CancellationException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᤝᲇᲈᲀᛸᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1699 extends CancellationException {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final transient InterfaceC1698 f5785;
 
     public C1699(String str, Throwable th, C1705 c1705) {

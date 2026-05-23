@@ -16,13 +16,11 @@ public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior<T
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ boolean mo680(View view) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo638(C0864 c0864) {
         if (c0864.f3284 == 0) {
             c0864.f3284 = 80;
@@ -30,13 +28,11 @@ public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior<T
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final boolean mo631(CoordinatorLayout coordinatorLayout, View view, View view2) {
         throw new ClassCastException();
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo620(CoordinatorLayout coordinatorLayout, View view, int i) {
         throw new ClassCastException();
     }

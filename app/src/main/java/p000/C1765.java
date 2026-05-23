@@ -5,15 +5,12 @@ import android.view.ViewGroup;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.google.android.material.sidesheet.SideSheetBehavior;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᤝᲇᲁᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1765 extends AbstractC1574 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f5888;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final SideSheetBehavior f5889;
 
     public /* synthetic */ C1765(SideSheetBehavior sideSheetBehavior, int i) {
@@ -22,7 +19,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final int mo3320(ViewGroup.MarginLayoutParams marginLayoutParams) {
         switch (this.f5888) {
             case 0:
@@ -33,7 +29,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final float mo3321(int i) {
         switch (this.f5888) {
             case 0:
@@ -46,7 +41,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ */
     public final int mo3322() {
         switch (this.f5888) {
             case 0:
@@ -59,7 +53,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final int mo3323() {
         switch (this.f5888) {
             case 0:
@@ -71,7 +64,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ */
     public final int mo3324() {
         switch (this.f5888) {
             case 0:
@@ -82,7 +74,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ */
     public final int mo3325() {
         switch (this.f5888) {
             case 0:
@@ -93,7 +84,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ */
     public final int mo3326(View view) {
         switch (this.f5888) {
             case 0:
@@ -104,7 +94,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ */
     public final int mo3327(CoordinatorLayout coordinatorLayout) {
         switch (this.f5888) {
             case 0:
@@ -115,7 +104,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ */
     public final int mo3328() {
         switch (this.f5888) {
             case 0:
@@ -126,7 +114,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ */
     public final boolean mo3329(float f) {
         switch (this.f5888) {
             case 0:
@@ -137,7 +124,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ */
     public final boolean mo3330(View view) {
         switch (this.f5888) {
             case 0:
@@ -148,7 +134,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final boolean mo3331(float f, float f2) {
         switch (this.f5888) {
             case 0:
@@ -159,7 +144,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ */
     public final boolean mo3332(View view, float f) {
         switch (this.f5888) {
             case 0:
@@ -178,7 +162,6 @@ public final class C1765 extends AbstractC1574 {
     }
 
     @Override // p000.AbstractC1574
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲀᲈᲇ */
     public final void mo3333(ViewGroup.MarginLayoutParams marginLayoutParams, int i, int i2) {
         switch (this.f5888) {
             case 0:

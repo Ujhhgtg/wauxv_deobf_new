@@ -3,15 +3,12 @@ package p000;
 import androidx.lifecycle.C0000;
 import com.kongzue.dialogx.util.views.MaxRelativeLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲁᛸᲇᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0938 extends AbstractC2202 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f3436;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ Object f3437;
 
     public /* synthetic */ C0938(int i, Object obj) {
@@ -20,7 +17,6 @@ public final class C0938 extends AbstractC2202 {
     }
 
     @Override // p000.AbstractC2202
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final void mo2434() {
         int i = this.f3436;
         Object obj = this.f3437;
@@ -65,7 +61,6 @@ public final class C0938 extends AbstractC2202 {
     }
 
     @Override // p000.AbstractC2202
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final void mo2435() {
         int i = this.f3436;
         EnumC1770 enumC1770 = EnumC1770.f5893;

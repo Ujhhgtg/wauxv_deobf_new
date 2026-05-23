@@ -6,7 +6,6 @@ import android.os.Build;
 import android.os.Bundle;
 import p000.FragmentC2551;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᤝᲈᲁᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1772 extends AbstractC1186 {

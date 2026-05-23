@@ -8,15 +8,12 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.WeakHashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲁᲇᛸᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2509 extends C0078 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C2510 f8025;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final WeakHashMap f8026 = new WeakHashMap();
 
     public C2509(C2510 c2510) {
@@ -24,21 +21,18 @@ public final class C2509 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final boolean mo962(View view, AccessibilityEvent accessibilityEvent) {
         C0078 c0078 = (C0078) this.f8026.get(view);
         return c0078 != null ? c0078.mo962(view, accessibilityEvent) : this.f1024.dispatchPopulateAccessibilityEvent(view, accessibilityEvent);
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final C0094 mo963(View view) {
         C0078 c0078 = (C0078) this.f8026.get(view);
         return c0078 != null ? c0078.mo963(view) : super.mo963(view);
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo964(View view, AccessibilityEvent accessibilityEvent) {
         C0078 c0078 = (C0078) this.f8026.get(view);
         if (c0078 != null) {
@@ -49,7 +43,6 @@ public final class C2509 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo722(View view, C0092 c0092) {
         AccessibilityNodeInfo accessibilityNodeInfo = c0092.f1045;
         C2510 c2510 = this.f8025;
@@ -71,7 +64,6 @@ public final class C2509 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo965(View view, AccessibilityEvent accessibilityEvent) {
         C0078 c0078 = (C0078) this.f8026.get(view);
         if (c0078 != null) {
@@ -82,14 +74,12 @@ public final class C2509 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final boolean mo966(ViewGroup viewGroup, View view, AccessibilityEvent accessibilityEvent) {
         C0078 c0078 = (C0078) this.f8026.get(viewGroup);
         return c0078 != null ? c0078.mo966(viewGroup, view, accessibilityEvent) : this.f1024.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final boolean mo723(View view, int i, Bundle bundle) {
         C2510 c2510 = this.f8025;
         RecyclerView recyclerView = c2510.f8027;
@@ -110,7 +100,6 @@ public final class C2509 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final void mo967(View view, int i) {
         C0078 c0078 = (C0078) this.f8026.get(view);
         if (c0078 != null) {
@@ -121,7 +110,6 @@ public final class C2509 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo968(View view, AccessibilityEvent accessibilityEvent) {
         C0078 c0078 = (C0078) this.f8026.get(view);
         if (c0078 != null) {

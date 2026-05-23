@@ -3,12 +3,10 @@ package p000;
 import java.util.Iterator;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᤞᲁᲈᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0778 implements InterfaceC2650 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final AtomicReference f2875;
 
     public C0778(C0271 c0271) {

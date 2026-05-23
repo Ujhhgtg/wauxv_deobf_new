@@ -5,16 +5,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᤝᲁᲈᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2483 extends Observable {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final boolean m4442() {
         return !((Observable) this).mObservers.isEmpty();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4443() {
         for (int size = ((Observable) this).mObservers.size() - 1; size >= 0; size--) {
             RecyclerView recyclerView = ((C2500) ((Observable) this).mObservers.get(size)).f7975;
@@ -27,7 +24,6 @@ public final class C2483 extends Observable {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m4444(int i, int i2) {
         for (int size = ((Observable) this).mObservers.size() - 1; size >= 0; size--) {
             C2500 c2500 = (C2500) ((Observable) this).mObservers.get(size);

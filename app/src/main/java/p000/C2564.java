@@ -8,15 +8,12 @@ import android.os.Looper;
 import android.os.Message;
 import com.bumptech.glide.ComponentCallbacks2C0020;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᲇᛸᲁᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2564 implements Handler.Callback {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C2102 f8143 = new C2102(11);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public volatile ComponentCallbacks2C2563 f8144;
 
     @Override // android.os.Handler.Callback
@@ -24,7 +21,6 @@ public final class C2564 implements Handler.Callback {
         return false;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final ComponentCallbacks2C2563 m4580(Context context) {
         if (context == null) {
             throw new IllegalArgumentException("You cannot start a load on a null Context");

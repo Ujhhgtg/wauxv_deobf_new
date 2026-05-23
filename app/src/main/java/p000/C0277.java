@@ -3,12 +3,10 @@ package p000;
 import android.os.Process;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲈᲁᲀᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0277 extends Thread {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f1482 = 1;
 
     public /* synthetic */ C0277(Runnable runnable) {

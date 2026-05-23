@@ -7,18 +7,14 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 import java.util.LinkedHashMap;
 import me.hd.wauxv.hook.HookEntry;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲇᤝᲁᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1562 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C1562 f5434;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static boolean f5435;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final HookEntry f5436;
 
     static {
@@ -27,7 +23,6 @@ public final class C1562 {
         f5436 = HookEntry.f968;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static void m3265(C1562 c1562, XC_LoadPackage.LoadPackageParam loadPackageParam, int i) {
         Object c2585;
         Object c2586;

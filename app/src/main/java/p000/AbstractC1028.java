@@ -4,15 +4,12 @@ import java.lang.reflect.Method;
 import java.util.LinkedHashMap;
 import okhttp3.HttpUrl;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᛸᲈᲁᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC1028 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final LinkedHashMap f3771;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final LinkedHashMap f3772;
 
     static {
@@ -27,12 +24,10 @@ public abstract class AbstractC1028 {
         f3772 = linkedHashMap2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final String m2600(Method method) {
         return "(" + AbstractC0270.m1387(method.getParameterTypes(), "", null, null, new C0853(28), 30) + ")" + m2603(method.getReturnType());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final String m2601(Class cls) {
         if (cls.isArray()) {
             return AbstractC2784.m4748(m2601(cls.getComponentType()), "[]");
@@ -70,7 +65,6 @@ public abstract class AbstractC1028 {
         throw new IllegalStateException(AbstractC1194.m2782(cls, "Unknown primitive type: "));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final String m2602(String str) {
         if (str.charAt(0) == '[') {
             return AbstractC2784.m4748(m2602(str.substring(1)), "[]");
@@ -88,7 +82,6 @@ public abstract class AbstractC1028 {
         throw new IllegalStateException("Unknown class sign: ".concat(str));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final String m2603(Class cls) {
         if (!cls.isPrimitive()) {
             return cls.isArray() ? AbstractC2784.m4757("[", m2603(cls.getComponentType())) : AbstractC1194.m2785("L", cls.getName().replace('.', '/'), ";");
@@ -123,7 +116,6 @@ public abstract class AbstractC1028 {
         throw new IllegalStateException(AbstractC1194.m2782(cls, "Unknown primitive type: "));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final String m2604(String str) {
         if (str.endsWith("[]")) {
             return AbstractC2784.m4757("[", m2604(str.substring(0, str.length() - 2)));

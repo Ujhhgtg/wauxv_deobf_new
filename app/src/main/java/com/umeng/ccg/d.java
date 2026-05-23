@@ -154,7 +154,6 @@ public class d implements c.a {
         }
     }
 
-    /* JADX INFO: renamed from: com.umeng.ccg.d$d, reason: collision with other inner class name */
     /* JADX INFO: compiled from: obf */
     public class C0034d {
         public String a;

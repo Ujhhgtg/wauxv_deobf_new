@@ -17,93 +17,64 @@ import java.util.Map;
 import java.util.Set;
 import okhttp3.internal.http2.Http2;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᛸᲈᲁᤞᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class SharedPreferencesC1269 implements SharedPreferences, SharedPreferences.Editor {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static final byte[] f4605 = new byte[0];
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
     public static final int[] f4606 = {0, 1, 4, 4, 8, 8};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static final int f4607;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final String f4608;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final String f4609;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final HashMap f4610;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C0403 f4611;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f4612;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public long f4613;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public C0221 f4616;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public int f4617;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int f4618;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public int f4622;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public FileChannel f4626;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public FileChannel f4627;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public MappedByteBuffer f4628;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public MappedByteBuffer f4629;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public int f4630;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public int f4631;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final HashMap f4614 = new HashMap();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public volatile boolean f4615 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final ArrayList f4619 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public boolean f4620 = false;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final ExecutorC1780 f4621 = new ExecutorC1780();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final ArrayList f4623 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final ArrayList f4624 = new ArrayList();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public final Handler f4625 = new Handler(Looper.getMainLooper());
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public boolean f4632 = true;
 
     static {
@@ -150,7 +121,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m2956(String str) {
         if (str == null || str.isEmpty()) {
             throw new IllegalArgumentException("key is empty");
@@ -599,7 +569,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         this.f4624.remove(onSharedPreferenceChangeListener);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m2957(String str, Object obj, byte[] bArr, AbstractC0832 abstractC0832, byte b) {
         AbstractC0824 c0823;
         if (abstractC0832 == null) {
@@ -672,7 +641,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         abstractC0832.f3226 = obj;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final boolean m2958() {
         int i = this.f4631;
         if (i == 1) {
@@ -685,7 +653,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         return true;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final synchronized Object m2959(String str) {
         AbstractC0824 abstractC0824 = (AbstractC0824) this.f4614.get(str);
         if (abstractC0824 != null && abstractC0824.mo2372() == 8) {
@@ -705,7 +672,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         return null;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m2960(String str) {
         if (this.f4631 != 0 && this.f4632) {
             m2958();
@@ -713,7 +679,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         m2961(str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final synchronized void m2961(String str) {
         if (this.f4624.isEmpty()) {
             return;
@@ -724,7 +689,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m2962(byte b, int i, int i2) {
         if (i > 255) {
             throw new IllegalArgumentException("key's length must less than 256");
@@ -769,7 +733,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         c0221.m1271(b);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final synchronized void m2963(String str, byte[] bArr) {
         Throwable th;
         try {
@@ -803,7 +766,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final synchronized void m2964(String str, Object obj, C2840 c2840) {
         Throwable th;
         byte[] bArrM4827;
@@ -870,7 +832,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         throw th;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m2965(byte b, int i, int i2) {
         this.f4622 = (i2 - i) + this.f4622;
         C2647 c2647 = new C2647();
@@ -884,7 +845,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         this.f4630 = i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public final void m2966(MappedByteBuffer mappedByteBuffer) {
         mappedByteBuffer.putLong(4, this.f4613);
         int i = this.f4630;
@@ -897,7 +857,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final void m2967(byte b, int i) {
         long jM4115 = this.f4613 ^ AbstractC2207.m4115(i, 1L);
         this.f4613 = jM4115;
@@ -912,7 +871,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         ((byte[]) this.f4616.f1353)[i] = b;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void m2968() {
         this.f4613 ^= this.f4616.m1261(this.f4617, this.f4618);
         int i = this.f4612 - 12;
@@ -933,7 +891,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         this.f4618 = 0;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void m2969(int i, long j, int i2) {
         long jM4115 = AbstractC2207.m4115(i2, j) ^ this.f4613;
         this.f4613 = jM4115;
@@ -948,7 +905,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         this.f4616.m1274(i2, i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final void m2970(long j, long j2, int i) {
         long jM4115 = AbstractC2207.m4115(i, j2) ^ this.f4613;
         this.f4613 = jM4115;
@@ -963,7 +919,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         this.f4616.m1275(i, j);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final int m2971(String str, byte[] bArr, byte b) {
         boolean z = bArr.length >= 65535;
         if (z) {
@@ -995,7 +950,6 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         return i3;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public final void m2972(String str, byte b, int i) {
         C0403 c0403 = this.f4611;
         if (c0403 != null) {

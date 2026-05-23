@@ -8,12 +8,10 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.ScrollView;
 import androidx.core.widget.NestedScrollView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲀᲇᲈᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1911 extends C0078 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f6308;
 
     public /* synthetic */ C1911(int i) {
@@ -21,7 +19,6 @@ public final class C1911 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public void mo964(View view, AccessibilityEvent accessibilityEvent) {
         switch (this.f6308) {
             case 1:
@@ -41,7 +38,6 @@ public final class C1911 extends C0078 {
     }
 
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo722(View view, C0092 c0092) {
         int scrollRange;
         switch (this.f6308) {
@@ -74,7 +70,6 @@ public final class C1911 extends C0078 {
     /* JADX WARN: Code duplicated, block: B:29:0x0075  */
     /* JADX WARN: Code duplicated, block: B:31:0x0092  */
     @Override // p000.C0078
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public boolean mo723(View view, int i, Bundle bundle) {
         int iMin;
         switch (this.f6308) {

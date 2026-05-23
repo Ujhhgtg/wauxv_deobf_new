@@ -2,12 +2,10 @@ package p000;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᤞᛸᲁᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1273 extends AbstractC2495 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ C1275 f4651;
 
     public C1273(C1275 c1275) {
@@ -15,7 +13,6 @@ public final class C1273 extends AbstractC2495 {
     }
 
     @Override // p000.AbstractC2495
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo3003(RecyclerView recyclerView, int i, int i2) {
         int iComputeHorizontalScrollOffset = recyclerView.computeHorizontalScrollOffset();
         int iComputeVerticalScrollOffset = recyclerView.computeVerticalScrollOffset();

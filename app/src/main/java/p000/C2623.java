@@ -3,18 +3,14 @@ package p000;
 import java.io.Serializable;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤞᤝᛸᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2623 implements InterfaceC1758, Serializable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final AtomicReferenceFieldUpdater f8510 = AtomicReferenceFieldUpdater.newUpdater(C2623.class, Object.class, "ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public volatile InterfaceC1414 f8511;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public volatile Object f8512;
 
     @Override // p000.InterfaceC1758

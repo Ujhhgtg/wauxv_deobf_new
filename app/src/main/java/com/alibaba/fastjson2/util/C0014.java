@@ -2,7 +2,6 @@ package com.alibaba.fastjson2.util;
 
 import com.alibaba.fastjson2.util.NumberUtils;
 
-/* JADX INFO: renamed from: com.alibaba.fastjson2.util.ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0014 implements NumberUtils.LongBiFunction {

@@ -4,21 +4,16 @@ import android.content.DialogInterface;
 import android.util.Log;
 import java.util.ArrayList;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᤞᛸᲁᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class DialogInterfaceOnCancelListenerC1032 extends AbstractComponentCallbacksC1406 implements DialogInterface.OnCancelListener, DialogInterface.OnDismissListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public final DialogInterfaceOnDismissListenerC1031 f3774;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public int f3775;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public boolean f3776;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public boolean f3777;
 
     public DialogInterfaceOnCancelListenerC1032() {
@@ -39,7 +34,6 @@ public class DialogInterfaceOnCancelListenerC1032 extends AbstractComponentCallb
         m2605(true, true);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m2605(boolean z, boolean z2) {
         if (this.f3777) {
             return;

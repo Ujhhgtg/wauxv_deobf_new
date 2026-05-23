@@ -3,7 +3,6 @@ package p000;
 import java.io.Closeable;
 import java.io.Flushable;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᛸᤞᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public interface InterfaceC2713 extends Closeable, Flushable {

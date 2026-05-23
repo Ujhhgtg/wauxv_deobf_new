@@ -6,12 +6,10 @@ import com.alibaba.fastjson2.internal.asm.Opcodes;
 import java.lang.reflect.Field;
 import java.util.Comparator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲀᲈᲁᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0171 implements Comparator {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f1202;
 
     public /* synthetic */ C0171(int i) {

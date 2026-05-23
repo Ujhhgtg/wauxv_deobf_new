@@ -21,10 +21,8 @@ import p000.RunnableC0563;
 /* JADX INFO: loaded from: classes.dex */
 class ChipTextInputComboView extends FrameLayout implements Checkable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Chip f863;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final EditText f864;
 
     public ChipTextInputComboView(Context context, AttributeSet attributeSet) {
@@ -49,7 +47,6 @@ class ChipTextInputComboView extends FrameLayout implements Checkable {
         editText.setLongClickable(false);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m717(ChipTextInputComboView chipTextInputComboView, CharSequence charSequence) {
         try {
             return String.format(chipTextInputComboView.getResources().getConfiguration().locale, "%02d", Integer.valueOf(Integer.parseInt(String.valueOf(charSequence))));

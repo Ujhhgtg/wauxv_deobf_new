@@ -4,15 +4,12 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import java.util.HashSet;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲇᲈᲀᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0980 implements InterfaceC0776 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Context f3592;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final C2562 f3593;
 
     public C0980(Context context, C2562 c2562) {
@@ -21,7 +18,6 @@ public final class C0980 implements InterfaceC0776 {
     }
 
     @Override // p000.InterfaceC1775
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final void mo1622() {
         C2712 c2712M4718 = C2712.m4718(this.f3592);
         C2562 c2562 = this.f3593;
@@ -36,7 +32,6 @@ public final class C0980 implements InterfaceC0776 {
     }
 
     @Override // p000.InterfaceC1775
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final void mo1626() {
         C2712 c2712M4718 = C2712.m4718(this.f3592);
         C2562 c2562 = this.f3593;
@@ -47,7 +42,6 @@ public final class C0980 implements InterfaceC0776 {
     }
 
     @Override // p000.InterfaceC1775
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final void mo1620() {
     }
 }

@@ -9,30 +9,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import java.util.HashMap;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲀᲁᤝᤞᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0587 extends AbstractC3436 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static final String[] f2383 = {"android:changeBounds:bounds", "android:changeBounds:clip", "android:changeBounds:parent", "android:changeBounds:windowX", "android:changeBounds:windowY"};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static final C0583 f2384 = new C0583(PointF.class, "topLeft", 0);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public static final C0583 f2385 = new C0583(PointF.class, "bottomRight", 1);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
     public static final C0583 f2386 = new C0583(PointF.class, "bottomRight", 2);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public static final C0583 f2387 = new C0583(PointF.class, "topLeft", 3);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public static final C0583 f2388 = new C0583(PointF.class, "position", 4);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public static void m2015(C3444 c3444) {
         View view = c3444.f10855;
         HashMap map = c3444.f10854;
@@ -44,19 +36,16 @@ public final class C0587 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1409(C3444 c3444) {
         m2015(c3444);
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo1411(C3444 c3444) {
         m2015(c3444);
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final Animator mo2016(ViewGroup viewGroup, C3444 c3444, C3444 c3445) {
         int i;
         C0587 c0587;
@@ -138,7 +127,6 @@ public final class C0587 extends AbstractC3436 {
     }
 
     @Override // p000.AbstractC3436
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public final String[] mo2017() {
         return f2383;
     }

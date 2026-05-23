@@ -12,18 +12,14 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤝᲇᤞᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final /* synthetic */ class C0299 implements InterfaceC1414 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f1515;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final /* synthetic */ Object f1516;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ Object f1517;
 
     public /* synthetic */ C0299(Object obj, int i, Object obj2) {
@@ -82,7 +78,6 @@ public final /* synthetic */ class C0299 implements InterfaceC1414 {
                 return linkedHashMap.isEmpty() ? C1190.f4330 : linkedHashMap;
             case 3:
                 C1268 c1268 = new C1268((String) ((C2873) ((C0542) this.f1516).f2252).getValue(), (String) this.f1517);
-                String str3 = "WAuxiliary";
                 if ("WAuxiliary".length() == 0) {
                     throw new NoSuchElementException("Char sequence is empty.");
                 }
@@ -109,14 +104,9 @@ public final /* synthetic */ class C0299 implements InterfaceC1414 {
             case 4:
                 String str5 = (String) this.f1516;
                 C2372 c2372 = new C2372((Consumer) this.f1517, 1);
-                C2169 c2169 = C2169.f7130;
-                String[] strArr = AbstractC1574.f5469;
                 LinkedList linkedList = new LinkedList();
-                String str6 = "";
-                String str7 = "";
-                
+
                 Object objNewInstance = AbstractC1574.dexToCtor(C2168.f7129).newInstance(str5, linkedList, 1, "", "", 0, 1089, null);
-                C2180 c2180 = C2180.f7141;
                 C2165 c2165 = new C2165(c2372, 1);
                 
                 C2180.m3961(objNewInstance, c2165);

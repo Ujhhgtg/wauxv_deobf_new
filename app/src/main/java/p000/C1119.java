@@ -3,27 +3,20 @@ package p000;
 import com.umeng.analytics.pro.bv;
 import okhttp3.internal.http2.Http2Connection;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᲈᲁᲇᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C1119 implements Comparable {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C0373 f4179 = new C0373(21);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final long f4180 = AbstractC3681.m5323(4611686018427387903L);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final long f4181 = AbstractC3681.m5323(-4611686018427387903L);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final long f4182 = 9223372036854759646L;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final long f4183;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final long m2694(long j, long j2) {
         long j3 = 1000000;
         long j4 = j2 / 1000000L;
@@ -36,7 +29,6 @@ public final class C1119 implements Comparable {
         return j5;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final void m2695(StringBuilder sb, int i, int i2, int i3, String str, boolean z) {
         CharSequence charSequenceSubSequence;
         sb.append(i);
@@ -91,7 +83,6 @@ public final class C1119 implements Comparable {
         sb.append(str);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final int m2696(long j) {
         if (m2697(j)) {
             return 0;
@@ -99,12 +90,10 @@ public final class C1119 implements Comparable {
         return (int) ((((int) j) & 1) == 1 ? ((j >> 1) % ((long) 1000)) * ((long) 1000000) : (j >> 1) % ((long) Http2Connection.DEGRADED_PONG_TIMEOUT_NS));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final boolean m2697(long j) {
         return j == f4180 || j == f4181;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final long m2698(long j, long j2) {
         int i = ((int) j) & 1;
         if (i != (((int) j2) & 1)) {
@@ -134,7 +123,6 @@ public final class C1119 implements Comparable {
         return j5;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final long m2699(long j, EnumC1122 enumC1122) {
         if (j == f4180) {
             return 9223372036854775807L;

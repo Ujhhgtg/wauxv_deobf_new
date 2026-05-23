@@ -6,12 +6,10 @@ import bsh.C0007;
 import bsh.Primitive;
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᲁᤞᲈᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0346 extends AbstractC2707 {
     @Override // p000.AbstractC2707, p000.InterfaceC2225
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo306(C0550 c0550, RunnableC1668 runnableC1668) throws C1229 {
         C0007 c0007M1929 = c0550.m1929();
         C0326 c0326 = (C0326) this.f8721[0];

@@ -2,18 +2,14 @@ package p000;
 
 import java.util.Iterator;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤝᲈᲇᤞᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2616 extends AbstractC2619 implements Iterator {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public C2617 f8493;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public C2617 f8494;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f8495;
 
     public C2616(C2617 c2617, C2617 c2618, int i) {
@@ -36,7 +32,6 @@ public final class C2616 extends AbstractC2619 implements Iterator {
     }
 
     @Override // p000.AbstractC2619
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo4631(C2617 c2617) {
         C2617 c2618;
         C2617 c2617M4632 = null;
@@ -66,7 +61,6 @@ public final class C2616 extends AbstractC2619 implements Iterator {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final C2617 m4632(C2617 c2617) {
         switch (this.f8495) {
             case 0:

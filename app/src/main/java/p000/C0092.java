@@ -12,22 +12,18 @@ import java.util.ArrayList;
 import java.util.List;
 import okhttp3.internal.http2.Http2;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0092 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final AccessibilityNodeInfo f1045;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public int f1046 = -1;
 
     public C0092(AccessibilityNodeInfo accessibilityNodeInfo) {
         this.f1045 = accessibilityNodeInfo;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static String m1087(int i) {
         if (i == 1) {
             return "ACTION_FOCUS";
@@ -275,17 +271,14 @@ public final class C0092 {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m1088(int i) {
         this.f1045.addAction(i);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m1089(C0085 c0085) {
         this.f1045.addAction((AccessibilityNodeInfo.AccessibilityAction) c0085.f1038);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final ArrayList m1090(String str) {
         AccessibilityNodeInfo accessibilityNodeInfo = this.f1045;
         ArrayList<Integer> integerArrayList = accessibilityNodeInfo.getExtras().getIntegerArrayList(str);
@@ -297,18 +290,15 @@ public final class C0092 {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final boolean m1091(int i) {
         Bundle extras = this.f1045.getExtras();
         return extras != null && (extras.getInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.BOOLEAN_PROPERTY_KEY", 0) & i) == i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m1092(Rect rect) {
         this.f1045.getBoundsInParent(rect);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final CharSequence m1093() {
         boolean zIsEmpty = m1090("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_START_KEY").isEmpty();
         AccessibilityNodeInfo accessibilityNodeInfo = this.f1045;
@@ -326,7 +316,6 @@ public final class C0092 {
         return spannableString;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final void m1094(int i, boolean z) {
         Bundle extras = this.f1045.getExtras();
         if (extras != null) {
@@ -338,12 +327,10 @@ public final class C0092 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public final void m1095(CharSequence charSequence) {
         this.f1045.setClassName(charSequence);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public final void m1096(C0091 c0091) {
         this.f1045.setCollectionItemInfo((AccessibilityNodeInfo.CollectionItemInfo) c0091.f1044);
     }

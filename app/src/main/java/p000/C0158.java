@@ -5,15 +5,12 @@ import android.graphics.drawable.AnimatedImageDrawable;
 import android.graphics.drawable.Drawable;
 import java.io.File;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲀᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0158 implements InterfaceC2568 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final /* synthetic */ int f1169;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final Object f1170;
 
     public /* synthetic */ C0158(int i, Object obj) {
@@ -36,7 +33,6 @@ public final class C0158 implements InterfaceC2568 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo1206() {
         switch (this.f1169) {
             case 0:
@@ -47,7 +43,6 @@ public final class C0158 implements InterfaceC2568 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int mo1207() {
         switch (this.f1169) {
             case 0:
@@ -62,7 +57,6 @@ public final class C0158 implements InterfaceC2568 {
     }
 
     @Override // p000.InterfaceC2568
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Class mo1208() {
         switch (this.f1169) {
             case 0:
@@ -88,15 +82,12 @@ public final class C0158 implements InterfaceC2568 {
         this.f1170 = file;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     private final void m1203() {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     private final void m1204() {
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     private final void m1205() {
     }
 }

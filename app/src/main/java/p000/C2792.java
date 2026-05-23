@@ -8,22 +8,18 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᲈᤝᛸᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2792 implements Appendable, CharSequence {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final ArrayDeque f8915 = new ArrayDeque(8);
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final StringBuilder f8914 = new StringBuilder((CharSequence) "");
 
     public C2792() {
         m4770(0, "");
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static void m4768(C2792 c2792, Object obj, int i, int i2) {
         if (obj != null) {
             if (!obj.getClass().isArray()) {
@@ -96,12 +92,10 @@ public final class C2792 implements Appendable, CharSequence {
         return this.f8914.toString();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4769(char c) {
         this.f8914.append(c);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m4770(int i, CharSequence charSequence) {
         if (charSequence instanceof Spanned) {
             Spanned spanned = (Spanned) charSequence;

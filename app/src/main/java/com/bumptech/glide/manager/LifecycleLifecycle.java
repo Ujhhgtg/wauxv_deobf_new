@@ -38,13 +38,11 @@ final class LifecycleLifecycle implements InterfaceC1771, InterfaceC1776 {
     }
 
     @Override // p000.InterfaceC1771
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo612(InterfaceC1775 interfaceC1775) {
         throw null;
     }
 
     @Override // p000.InterfaceC1771
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void mo613(InterfaceC1775 interfaceC1775) {
         throw null;
     }

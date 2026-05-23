@@ -8,15 +8,12 @@ import android.view.animation.Interpolator;
 import java.lang.reflect.Field;
 import java.util.Objects;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲇᤞᲀᤝᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewOnApplyWindowInsetsListenerC3642 implements View.OnApplyWindowInsetsListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final AbstractC0592 f11401;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public C3669 f11402;
 
     public ViewOnApplyWindowInsetsListenerC3642(View view, AbstractC0592 abstractC0592) {

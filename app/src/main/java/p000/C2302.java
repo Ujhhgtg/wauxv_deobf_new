@@ -2,15 +2,12 @@ package p000;
 
 import java.util.RandomAccess;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲇᲈᲁᤞᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2302 extends AbstractC0063 implements RandomAccess {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C0539[] f7417;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int[] f7418;
 
     public C2302(C0539[] c0539Arr, int[] iArr) {
@@ -48,7 +45,6 @@ public final class C2302 extends AbstractC0063 implements RandomAccess {
     }
 
     @Override // p000.AbstractC0063
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo943() {
         return this.f7417.length;
     }

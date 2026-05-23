@@ -1,12 +1,10 @@
 package p000;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᲀᤞᛸᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C3493 extends C2636 {
     private volatile boolean threadLocalIsSet;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final ThreadLocal f10993;
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -23,7 +21,6 @@ public final class C3493 extends C2636 {
     }
 
     @Override // p000.C2636, p000.C1705
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final void mo2636(Object obj) {
         m5093();
         Object objM3983 = AbstractC2201.m3983(obj);
@@ -41,19 +38,16 @@ public final class C3493 extends C2636 {
     }
 
     @Override // p000.C2636
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲇᲁ */
     public final void mo4634() {
         m5093();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᤞᲇ, reason: contains not printable characters */
     public final boolean m5092() {
         boolean z = this.threadLocalIsSet && this.f10993.get() == null;
         this.f10993.remove();
         return !z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
     public final void m5093() {
         if (this.threadLocalIsSet) {
             C2315 c2315 = (C2315) this.f10993.get();
@@ -64,7 +58,6 @@ public final class C3493 extends C2636 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ, reason: contains not printable characters */
     public final void m5094(InterfaceC0877 interfaceC0877, Object obj) {
         this.threadLocalIsSet = true;
         this.f10993.set(new C2315(interfaceC0877, obj));

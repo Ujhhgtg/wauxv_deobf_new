@@ -5,10 +5,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᲇᤝᲈᤞᛸ, reason: contains not printable characters */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2652 extends AbstractC2653 {
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public static int m4653(InterfaceC2650 interfaceC2650) {
         Iterator it = interfaceC2650.iterator();
         int i = 0;
@@ -22,12 +20,10 @@ public abstract class AbstractC2652 extends AbstractC2653 {
         return i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public static C1331 m4654(InterfaceC2650 interfaceC2650, InterfaceC1425 interfaceC1425) {
         return new C1331(interfaceC2650, true, interfaceC1425);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public static List m4655(InterfaceC2650 interfaceC2650) {
         Iterator it = interfaceC2650.iterator();
         if (!it.hasNext()) {

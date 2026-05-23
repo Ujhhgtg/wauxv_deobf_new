@@ -14,60 +14,45 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᲈᛸᤝᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: loaded from: classes.dex */
 public abstract class AbstractC2665 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C2416 f8580 = new C2416("list-item-type");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final C2416 f8581 = new C2416("bullet-list-item-level");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final C2416 f8582 = new C2416("ordered-list-item-number");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final C2416 f8583 = new C2416("heading-level");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final C2416 f8584 = new C2416("link-destination");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final C2416 f8585 = new C2416("paragraph-is-in-tight-list");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final C2416 f8586 = new C2416("code-block-info");
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final int[] f8587 = {16842752, me.hd.wauxv.R.attr.theme};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static final int[] f8588 = {me.hd.wauxv.R.attr.materialThemeOverlay};
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static C0542 f8589;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static int m4657(int i, int i2) {
         return (i & 16777215) | (i2 << 24);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static void m4658(String str, boolean z) {
         if (!z) {
             throw new IllegalArgumentException(str);
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static void m4659(int i) {
         if (i < 0) {
             throw new IllegalArgumentException();
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static void m4660(int i, int i2, int i3) {
         if (i >= 0 && i2 <= i3) {
             if (i > i2) {
@@ -78,14 +63,12 @@ public abstract class AbstractC2665 {
         throw new IndexOutOfBoundsException("startIndex: " + i + ", endIndex: " + i2 + ", size: " + i3);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static void m4661(Object obj, String str) {
         if (obj == null) {
             throw new NullPointerException(str);
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static void m4662(int i, int i2, int i3) {
         if (i >= 0 && i2 <= i3) {
             if (i > i2) {
@@ -96,7 +79,6 @@ public abstract class AbstractC2665 {
         throw new IndexOutOfBoundsException("fromIndex: " + i + ", toIndex: " + i2 + ", size: " + i3);
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static boolean m4663(File file) {
         if (!file.isDirectory()) {
             file.delete();
@@ -113,7 +95,6 @@ public abstract class AbstractC2665 {
         return z;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static int m4664() {
         Object c2585;
         Object c2586;
@@ -156,7 +137,6 @@ public abstract class AbstractC2665 {
         return -1;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static String m4665() {
         Object c2585;
         String str;
@@ -223,7 +203,6 @@ public abstract class AbstractC2665 {
         return str2 == null ? "invalid" : str2;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static int m4666(int i) {
         if (i == 1) {
             return 0;
@@ -258,12 +237,10 @@ public abstract class AbstractC2665 {
         throw new IllegalArgumentException(AbstractC1194.m2779(i, "type needs to be >= FIRST and <= LAST, type="));
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static boolean m4667(MotionEvent motionEvent, int i) {
         return (motionEvent.getSource() & i) == i;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static Typeface m4668(Configuration configuration, Typeface typeface) {
         if (Build.VERSION.SDK_INT < 31 || configuration.fontWeightAdjustment == 2147483647 || configuration.fontWeightAdjustment == 0 || typeface == null) {
             return null;
@@ -271,7 +248,6 @@ public abstract class AbstractC2665 {
         return Typeface.create(typeface, AbstractC3681.m5318(configuration.fontWeightAdjustment + typeface.getWeight(), 1, 1000), typeface.isItalic());
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public static Set m4669(Set set, Set set2) {
         if (set2.isEmpty()) {
             return AbstractC0744.m2209(set);
@@ -292,7 +268,6 @@ public abstract class AbstractC2665 {
 
     /* JADX WARN: Code duplicated, block: B:49:0x0077 A[RETURN] */
     /* JADX WARN: Code duplicated, block: B:50:0x0078 A[RETURN] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static int m4670(int i, CharSequence charSequence) {
         char cCharAt;
         if (i >= charSequence.length()) {
@@ -354,7 +329,6 @@ public abstract class AbstractC2665 {
         return charSequence.length();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static int m4671(int i, CharSequence charSequence) {
         while (i < charSequence.length()) {
             switch (charSequence.charAt(i)) {
@@ -377,7 +351,6 @@ public abstract class AbstractC2665 {
     /* JADX WARN: Code duplicated, block: B:11:0x001b  */
     /* JADX WARN: Code duplicated, block: B:21:0x001a A[SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:9:0x0018 A[DONT_INVERT] */
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
     public static int m4672(CharSequence charSequence, int i, char c) {
         while (i < charSequence.length()) {
             char cCharAt = charSequence.charAt(i);
@@ -406,7 +379,6 @@ public abstract class AbstractC2665 {
         return charSequence.length();
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public static Context m4673(Context context, AttributeSet attributeSet, int i, int i2) {
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f8588, i, i2);
         int resourceId = typedArrayObtainStyledAttributes.getResourceId(0, 0);
@@ -430,7 +402,6 @@ public abstract class AbstractC2665 {
         return c0841;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public static void m4674(C0519 c0519, int i, long j) {
         int iNumberOfTrailingZeros = 64 - Long.numberOfTrailingZeros(j);
         if (iNumberOfTrailingZeros == 0) {
@@ -446,7 +417,6 @@ public abstract class AbstractC2665 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static void m4675(C0519 c0519, int i, long j) {
         int iNumberOfLeadingZeros = 64 - Long.numberOfLeadingZeros(j);
         if (iNumberOfLeadingZeros == 0) {

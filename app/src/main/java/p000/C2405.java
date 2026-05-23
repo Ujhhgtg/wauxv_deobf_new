@@ -4,13 +4,11 @@ import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᲇᤞᛸᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2405 extends AbstractC1186 {
     final /* synthetic */ C2407 this$0;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᲇᤞᛸᲁᲈ$ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     /* JADX INFO: compiled from: obf */
     public static final class C2406 extends AbstractC1186 {
         final /* synthetic */ C2407 this$0;

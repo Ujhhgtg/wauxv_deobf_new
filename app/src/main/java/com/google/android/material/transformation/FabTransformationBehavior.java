@@ -18,7 +18,6 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
     }
 
     @Override // com.google.android.material.transformation.ExpandableBehavior, p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo630(View view) {
         if (view.getVisibility() == 8) {
             throw new IllegalStateException("This behavior cannot be attached to a GONE view. Set the view to INVISIBLE instead.");
@@ -26,7 +25,6 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
     }
 
     @Override // p000.AbstractC0861
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo638(C0864 c0864) {
         if (c0864.f3284 == 0) {
             c0864.f3284 = 80;

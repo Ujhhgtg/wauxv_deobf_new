@@ -3,15 +3,12 @@ package p000;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤝᤞᛸᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C2840 {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C2840 f9110 = new C2840();
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final LinkedHashSet m4826(int i, int i2, byte[] bArr) {
         int i3;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
@@ -58,7 +55,6 @@ public final class C2840 {
         return linkedHashSet;
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final byte[] m4827(Object obj) {
         int i;
         Set<String> set = (Set) obj;

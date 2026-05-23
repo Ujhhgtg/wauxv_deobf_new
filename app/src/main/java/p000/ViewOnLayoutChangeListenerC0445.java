@@ -6,15 +6,12 @@ import android.view.WindowInsets;
 import android.widget.ImageView;
 import com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤞᲇᲀᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class ViewOnLayoutChangeListenerC0445 implements View.OnLayoutChangeListener {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ int f2013;
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final /* synthetic */ Object f2014;
 
     public /* synthetic */ ViewOnLayoutChangeListenerC0445(int i, Object obj) {

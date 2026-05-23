@@ -40,7 +40,6 @@ public class MaterialTextView extends C0236 {
         }
     }
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static int m716(Context context, TypedArray typedArray, int... iArr) {
         int dimensionPixelSize = -1;
         for (int i = 0; i < iArr.length && dimensionPixelSize < 0; i++) {

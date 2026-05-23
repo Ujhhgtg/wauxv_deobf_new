@@ -5,12 +5,10 @@ import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.Drawable;
 import com.google.android.material.checkbox.MaterialCheckBox;
 
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲀᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public final class C0157 extends Animatable2.AnimationCallback {
 
-    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final /* synthetic */ C1912 f1168;
 
     public C0157(C1912 c1912) {

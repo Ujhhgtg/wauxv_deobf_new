@@ -178,7 +178,6 @@ public final class CertificatePinner {
         }
     }
 
-    /* JADX INFO: renamed from: okhttp3.CertificatePinner$check$1, reason: invalid class name */
     /* JADX INFO: compiled from: obf */
     public static final class AnonymousClass1 extends AbstractC1756 implements InterfaceC1414 {
         final /* synthetic */ String $hostname;
