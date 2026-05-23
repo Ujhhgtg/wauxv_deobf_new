@@ -118,7 +118,7 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                     }
                     if (view instanceof TextView) {
                         String[] strArr2 = AbstractC1574.f5469;
-                        List listM2212 = AbstractC0745.m2212(MagicFactory.get(-531364763925172L, strArr2), MagicFactory.get(-531381943794356L, strArr2), MagicFactory.get(-531407713598132L, strArr2), MagicFactory.get(-531450663271092L, strArr2));
+                        List listM2212 = AbstractC0745.m2212("微信号", "微信 ID", "Weixin ID", "WeChat ID");
                         if (!listM2212.isEmpty()) {
                             Iterator it = listM2212.iterator();
                             while (it.hasNext()) {
@@ -149,12 +149,12 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                         C1545.f5398.getClass();
                         c2007.f6678 = C1545.f5400;
                         c2007.f6680 = linearLayout;
-                        c2007.m3870(MagicFactory.get(-532013303986868L, strArr3), new C0106(26, c2016));
+                        c2007.m3870("保存", new C0106(26, c2016));
                         AbstractC2784.m4755(c2007, null, 3);
                         return c3497;
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-665943269178036L, strArr3).concat(viewM4676.getResources().getResourceName(i7)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i7)));
             case 9:
                 ((C1020) obj).f3733 = new C1538(11);
                 return c3497;
@@ -166,9 +166,9 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
             case 11:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1333.m3053(MagicFactory.get(-532713383656116L, strArr4));
+                c1333.m3053("com.tencent.mm.ui.conversation.banner");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827(MagicFactory.get(-532412735945396L, strArr4), MagicFactory.get(-532653254113972L, strArr4));
+                c1982.m3827("com/tencent/mm/ui/conversation/banner/OtherOnlineBanner", "setVisibility");
                 c1333.f4794 = c1982;
                 return c3497;
             case Opcodes.FCONST_1 /* 12 */:
@@ -189,11 +189,11 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
             case Opcodes.DCONST_0 /* 14 */:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr5 = AbstractC1574.f5469;
-                c1334.m3053(MagicFactory.get(-533731290905268L, strArr5));
+                c1334.m3053("com.tencent.mm.plugin.setting.ui.setting");
                 C1981 c1983 = new C1981(4);
-                c1983.m3826(MagicFactory.get(-533245959600820L, strArr5));
+                c1983.m3826("onCreateAfter");
                 if (AbstractC3471.m5079(EnumC3677.f11538) || AbstractC3471.m5080(EnumC3674.f11500)) {
-                    c1983.m3827(MagicFactory.get(-533306089142964L, strArr5), MagicFactory.get(-533533722409652L, strArr5));
+                    c1983.m3827("MicroMsg.Setting.ColorSelfQRCodeGradientFgWhiteBgUIC", "onCreateAfter bitmap == null, try fetchQRCode");
                 }
                 c1334.f4794 = c1983;
                 return c3497;
@@ -234,7 +234,7 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                             C0707 c0707M4527 = AbstractC2519.m4527(objM3023.getClass());
                             i = iIntValue;
                             try {
-                                Object[] objArr = {Integer.valueOf(c1551.f5414), c1551.f5415, MagicFactory.get(-57342108367540L, strArr6), Integer.valueOf(c1551.f5416), Integer.valueOf(i)};
+                                Object[] objArr = {Integer.valueOf(c1551.f5414), c1551.f5415, "", Integer.valueOf(c1551.f5416), Integer.valueOf(i)};
                                 ConcurrentHashMap concurrentHashMap = AbstractC0710.f2698;
                                 sparseArray.put(sparseArray.size(), AbstractC0710.m2131(AbstractC2519.m4527(obj2.getClass()).mo2114(), Arrays.copyOf(new Object[]{AbstractC0710.m2131(c0707M4527.mo2114(), Arrays.copyOf(objArr, 5))}, 1)));
                                 baseAdapter.notifyDataSetChanged();
@@ -244,10 +244,10 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                                 e = e;
                                 ArrayList arrayList2 = C3678.f11549;
                                 StringBuilder sb = new StringBuilder();
-                                sb.append(MagicFactory.get(-57346403334836L, strArr6));
-                                sb.append(interfaceC1588 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1588).mo1128() : MagicFactory.get(-57428007713460L, strArr6));
+                                sb.append("onCreateMenuItems ");
+                                sb.append(interfaceC1588 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1588).mo1128() : "LoadHook");
                                 c = '\f';
-                                AbstractC1194.m2792(sb, MagicFactory.get(-57466662419124L, strArr6), e, 12);
+                                AbstractC1194.m2792(sb, " Failed", e, 12);
                                 c2 = c;
                                 iIntValue = i;
                             }
@@ -265,17 +265,17 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
             case Opcodes.LDC /* 18 */:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1335.m3053(MagicFactory.get(-57698590653108L, strArr7));
+                c1335.m3053("com.tencent.mm.ui");
                 C1981 c1984 = new C1981(4);
-                c1984.m3827(MagicFactory.get(-57501022157492L, strArr7), MagicFactory.get(-57616986274484L, strArr7));
+                c1984.m3827("MicroMsg.PlusSubMenuHelper", "processOnItemClick");
                 c1335.f4794 = c1984;
                 return c3497;
             case 19:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr8 = AbstractC1574.f5469;
-                c1336.m3053(MagicFactory.get(-58085137709748L, strArr8));
+                c1336.m3053("com.tencent.mm.ui");
                 C1981 c1985 = new C1981(4);
-                c1985.m3827(MagicFactory.get(-57775900064436L, strArr8), MagicFactory.get(-57891864181428L, strArr8));
+                c1985.m3827("MicroMsg.PlusSubMenuHelper", "dyna plus config is null, we use default one");
                 c1336.f4794 = c1985;
                 return c3497;
             case 20:
@@ -313,9 +313,9 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                             ArrayList arrayList3 = C3678.f11549;
                             StringBuilder sb2 = new StringBuilder();
                             String[] strArr9 = AbstractC1574.f5469;
-                            sb2.append(MagicFactory.get(-57187489544884L, strArr9));
-                            sb2.append(interfaceC1589 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1589).mo1128() : MagicFactory.get(-57269093923508L, strArr9));
-                            AbstractC1194.m2792(sb2, MagicFactory.get(-57307748629172L, strArr9), e3, 12);
+                            sb2.append("onCreateMenuItems ");
+                            sb2.append(interfaceC1589 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1589).mo1128() : "LoadHook");
+                            AbstractC1194.m2792(sb2, " Failed", e3, 12);
                         }
                     }
                 }
@@ -334,12 +334,12 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                 C2309 c2309 = (C2309) obj;
                 HookEntry.f968.getClass();
                 String[] strArr10 = AbstractC1574.f5469;
-                byte[] bytes = MagicFactory.get(-83549998807732L, strArr10).getBytes(AbstractC0599.f2413);
-                MagicFactory.get(-83597243447988L, strArr10);
+                byte[] bytes = "WAuxiliary".getBytes(AbstractC0599.f2413);
+                "getBytes(...)";
                 boolean zEquals = Arrays.equals(bytes, new byte[]{87, 65, 117, JSONB.Constants.BC_STR_ASCII_FIX_MAX, JSONB.Constants.BC_STR_ASCII_FIX_32, 108, JSONB.Constants.BC_STR_ASCII_FIX_32, 97, 114, JSONB.Constants.BC_STR_ASCII});
                 boolean z = System.currentTimeMillis() - AbstractC3691.f11599 > 31104000000L;
                 if ((zEquals && !z) || new Random().nextFloat() >= 0.25f) {
-                    String str = MagicFactory.get(-83657372990132L, strArr10);
+                    String str = "com.tencent.mm";
                     C3635 c3635 = C3635.f11372;
                     C2310 c2310 = c2309.f7437;
                     if ((c2310 != null ? c2310.f7438 : 0) != 1) {

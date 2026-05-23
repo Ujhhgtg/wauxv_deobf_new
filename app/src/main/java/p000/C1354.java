@@ -78,40 +78,40 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
             case 8:
                 C1497 c1497 = C1497.f5292;
                 String[] strArr2 = AbstractC1574.f5469;
-                c1497.m2548(MagicFactory.get(-546972675078836L, strArr2));
-                C1498.f5293.m2548(MagicFactory.get(-547015624751796L, strArr2));
-                C1499.f5294.m2548(MagicFactory.get(-547058574424756L, strArr2));
-                C1488.f5283.m2548(MagicFactory.get(-547101524097716L, strArr2));
-                C1489.f5284.m2548(MagicFactory.get(-547144473770676L, strArr2));
-                C1490.f5285.m2548(MagicFactory.get(-547187423443636L, strArr2));
-                C1491.f5286.m2548(MagicFactory.get(-547230373116596L, strArr2));
-                C1492.f5287.m2548(MagicFactory.get(-547273322789556L, strArr2));
-                C1493.f5288.m2548(MagicFactory.get(-547316272462516L, strArr2));
-                C1494.f5289.m2548(MagicFactory.get(-547359222135476L, strArr2));
-                C1495.f5290.m2548(MagicFactory.get(-547402171808436L, strArr2));
-                C1496.f5291.m2548(MagicFactory.get(-547445121481396L, strArr2));
+                c1497.m2548("#FFF9E8C8");
+                C1498.f5293.m2548("#FFFEF3D6");
+                C1499.f5294.m2548("#FFE87A20");
+                C1488.f5283.m2548("#FFA3F0E6");
+                C1489.f5284.m2548("#FFE0F7F4");
+                C1490.f5285.m2548("#FF3AAE9D");
+                C1491.f5286.m2548("#FFF2D5F8");
+                C1492.f5287.m2548("#FFF9EBFC");
+                C1493.f5288.m2548("#FFA64BDB");
+                C1494.f5289.m2548("#FFD8D8D8");
+                C1495.f5290.m2548("#FFE0E0E0");
+                C1496.f5291.m2548("#FF666666");
                 return c3497;
             case 9:
                 C1497 c1498 = C1497.f5292;
                 String[] strArr3 = AbstractC1574.f5469;
-                c1498.m2548(MagicFactory.get(-547488071154356L, strArr3));
-                C1498.f5293.m2548(MagicFactory.get(-547531020827316L, strArr3));
-                C1499.f5294.m2548(MagicFactory.get(-547573970500276L, strArr3));
-                C1488.f5283.m2548(MagicFactory.get(-547616920173236L, strArr3));
-                C1489.f5284.m2548(MagicFactory.get(-547659869846196L, strArr3));
-                C1490.f5285.m2548(MagicFactory.get(-547702819519156L, strArr3));
-                C1491.f5286.m2548(MagicFactory.get(-547745769192116L, strArr3));
-                C1492.f5287.m2548(MagicFactory.get(-547788718865076L, strArr3));
-                C1493.f5288.m2548(MagicFactory.get(-547831668538036L, strArr3));
-                C1494.f5289.m2548(MagicFactory.get(-547874618210996L, strArr3));
-                C1495.f5290.m2548(MagicFactory.get(-547917567883956L, strArr3));
-                C1496.f5291.m2548(MagicFactory.get(-547960517556916L, strArr3));
+                c1498.m2548("#FFFFD56A");
+                C1498.f5293.m2548("#FFFFE87A");
+                C1499.f5294.m2548("#FFFFFFFF");
+                C1488.f5283.m2548("#FF4DD5CC");
+                C1489.f5284.m2548("#FF68E8DF");
+                C1490.f5285.m2548("#FFFFFFFF");
+                C1491.f5286.m2548("#FFD0A3FF");
+                C1492.f5287.m2548("#FFEFBFFF");
+                C1493.f5288.m2548("#FFFFFFFF");
+                C1494.f5289.m2548("#FF95A0B8");
+                C1495.f5290.m2548("#FFA8B2C9");
+                C1496.f5291.m2548("#FFFFFFFF");
                 return c3497;
             case 10:
                 C1511 c1511 = C1511.f5332;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1511.m2548(MagicFactory.get(-550829555710644L, strArr4));
-                C1512.f5333.m2548(MagicFactory.get(-550863915449012L, strArr4));
+                c1511.m2548("#28C445");
+                C1512.f5333.m2548("退出了此群");
                 return c3497;
             case 11:
                 int i2 = AbstractC1745.f5844;
@@ -143,14 +143,14 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 C2022 c2022 = C1846.f6142;
                 C2022 c2023 = null;
                 if (c2022 == null) {
-                    MagicFactory.get(-555871847316148L, strArr5);
+                    "binding";
                     c2022 = null;
                 }
                 c1842.m2544(Float.parseFloat(String.valueOf(c2022.f6775.getText())));
                 C1843 c1843 = C1843.f6136;
                 C2022 c2024 = C1846.f6142;
                 if (c2024 == null) {
-                    MagicFactory.get(-555906207054516L, strArr5);
+                    "binding";
                 } else {
                     c2023 = c2024;
                 }
@@ -183,38 +183,38 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
             case 26:
                 C2038 c2038 = C2038.f6812;
                 String[] strArr6 = AbstractC1574.f5469;
-                c2038.m2548(MagicFactory.get(-492572619307700L, strArr6));
-                C2040.f6814.m2548(MagicFactory.get(-492615568980660L, strArr6));
-                C2037.f6811.m2548(MagicFactory.get(-492658518653620L, strArr6));
-                C2039.f6813.m2548(MagicFactory.get(-492701468326580L, strArr6));
+                c2038.m2548("#00000000");
+                C2040.f6814.m2548("#00000000");
+                C2037.f6811.m2548("#00000000");
+                C2039.f6813.m2548("#00000000");
                 return c3497;
             case 27:
                 C2045 c2045 = C2045.f6828;
                 String[] strArr7 = AbstractC1574.f5469;
-                c2045.m2548(MagicFactory.get(-494956326156980L, strArr7));
-                C2046.f6829.m2548(MagicFactory.get(-494999275829940L, strArr7));
-                C2049.f6832.m2548(MagicFactory.get(-495042225502900L, strArr7));
-                C2050.f6833.m2548(MagicFactory.get(-495085175175860L, strArr7));
-                C2043.f6826.m2548(MagicFactory.get(-495128124848820L, strArr7));
-                C2044.f6827.m2548(MagicFactory.get(-495171074521780L, strArr7));
-                C2047.f6830.m2548(MagicFactory.get(-495214024194740L, strArr7));
-                C2048.f6831.m2548(MagicFactory.get(-495256973867700L, strArr7));
+                c2045.m2548("#FFE4E9FC");
+                C2046.f6829.m2548("#11000000");
+                C2049.f6832.m2548("#FFD7FAE4");
+                C2050.f6833.m2548("#11000000");
+                C2043.f6826.m2548("#FF3D3D3D");
+                C2044.f6827.m2548("#11000000");
+                C2047.f6830.m2548("#FFD7FAE4");
+                C2048.f6831.m2548("#11000000");
                 return c3497;
             case 28:
                 C2054 c2054 = C2054.f6841;
                 String[] strArr8 = AbstractC1574.f5469;
-                c2054.m2548(MagicFactory.get(-512668771285684L, strArr8));
-                C2055.f6842.m2548(MagicFactory.get(-512728900827828L, strArr8));
+                c2054.m2548("${sendText}喵~");
+                C2055.f6842.m2548("HH:mm:ss");
                 return c3497;
             default:
                 C2066 c2066 = C2066.f6862;
                 String[] strArr9 = AbstractC1574.f5469;
-                c2066.m2548(MagicFactory.get(-515885701790388L, strArr9));
-                C2067.f6863.m2548(MagicFactory.get(-515928651463348L, strArr9));
-                C2062.f6858.m2548(MagicFactory.get(-515971601136308L, strArr9));
-                C2063.f6859.m2548(MagicFactory.get(-516014550809268L, strArr9));
-                C2071.f6867.m2548(MagicFactory.get(-516057500482228L, strArr9));
-                C2072.f6868.m2548(MagicFactory.get(-516134809893556L, strArr9));
+                c2066.m2548("#11000000");
+                C2067.f6863.m2548("#FFFFFFFF");
+                C2062.f6858.m2548("#11FFFFFF");
+                C2063.f6859.m2548("#FFFFFFFF");
+                C2071.f6867.m2548("${time} | ${type}");
+                C2072.f6868.m2548("HH:mm:ss");
                 C2065.f6861.m2545(64);
                 C2068.f6864.m2545(64);
                 C2064.f6860.m2545(10);

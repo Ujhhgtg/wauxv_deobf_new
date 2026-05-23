@@ -336,7 +336,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                         C2007 c2007 = new C2007();
                         c2007.f6680 = linearLayout3;
                         C2007.m3867(c2007, null, 3);
-                        c2007.m3869(MagicFactory.get(-464389043911348L, strArr3), new C2354(c2356, 6));
+                        c2007.m3869("设置", new C2354(c2356, 6));
                         c2007.m3868().m3791();
                         return;
                     }
@@ -358,7 +358,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                 String[] strArr4 = AbstractC1574.f5469;
                 ModuleTabLayout moduleTabLayout = c2676.f8610;
                 if (moduleTabLayout == null) {
-                    MagicFactory.get(-461348207065780L, strArr4);
+                    "tabLayout";
                     moduleTabLayout = null;
                 }
                 if (i7 >= 0) {
@@ -374,7 +374,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                     }
                     moduleRecyclerView = c2676.f8615;
                     if (moduleRecyclerView == null) {
-                        MagicFactory.get(-461391156738740L, strArr4);
+                        "recyclerView";
                         moduleRecyclerView = null;
                     }
                     if (moduleRecyclerView.isLaidOut() || moduleRecyclerView.isLayoutRequested()) {
@@ -383,7 +383,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                     }
                     ModuleRecyclerView moduleRecyclerView3 = c2676.f8615;
                     if (moduleRecyclerView3 == null) {
-                        MagicFactory.get(-461446991313588L, strArr4);
+                        "recyclerView";
                     } else {
                         moduleRecyclerView2 = moduleRecyclerView3;
                     }
@@ -410,7 +410,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                 }
                 moduleRecyclerView = c2676.f8615;
                 if (moduleRecyclerView == null) {
-                    MagicFactory.get(-461391156738740L, strArr4);
+                    "recyclerView";
                     moduleRecyclerView = null;
                 }
                 if (moduleRecyclerView.isLaidOut()) {

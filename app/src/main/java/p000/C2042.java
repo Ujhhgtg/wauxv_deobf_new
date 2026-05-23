@@ -335,7 +335,7 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                 String[] strArr2 = AbstractC1574.f5469;
                 ModuleTabLayout moduleTabLayout = c2675.f8610;
                 if (moduleTabLayout == null) {
-                    MagicFactory.get(-463401201433268L, strArr2);
+                    "tabLayout";
                     moduleTabLayout = null;
                 }
                 C1664 c1664M4044 = AbstractC2203.m4044(0, moduleTabLayout.getTabCount());
@@ -349,7 +349,7 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                     int iNextInt = c1662.nextInt();
                     ModuleTabLayout moduleTabLayout2 = c2675.f8610;
                     if (moduleTabLayout2 == null) {
-                        MagicFactory.get(-463444151106228L, strArr2);
+                        "tabLayout";
                         moduleTabLayout2 = null;
                     }
                     if (iNextInt >= 0) {
@@ -363,7 +363,7 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                             string = null;
                         }
                         if (string == null) {
-                            string = MagicFactory.get(-463487100779188L, strArr2);
+                            string = "";
                         }
                         List listM4684 = c2675.m4684(iNextInt);
                         arrayList = new ArrayList(AbstractC0746.m2214(listM4684, 10));
@@ -395,7 +395,7 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                         string = null;
                     }
                     if (string == null) {
-                        string = MagicFactory.get(-463487100779188L, strArr2);
+                        string = "";
                     }
                     List listM4685 = c2675.m4684(iNextInt);
                     arrayList = new ArrayList(AbstractC0746.m2214(listM4685, 10));

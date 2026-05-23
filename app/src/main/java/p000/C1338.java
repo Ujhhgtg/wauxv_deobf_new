@@ -112,21 +112,21 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                 MenuItem menuItem = (MenuItem) (c2586 instanceof C2585 ? null : c2586);
                 int i11 = AbstractC1745.f5844;
                 C1299 c1299M4738 = AbstractC2784.m4738(c1564);
-                c1299M4738.f4725 = MagicFactory.get(-55533927135924L, strArr2);
+                c1299M4738.f4725 = "com.tencent.mm.plugin.finder.model.BaseFinderFeed";
                 C1299 c1299M3491 = AbstractC0968.m2484(((C1315) AbstractC0744.m2191(c1299M4738.m3014())).m3023()).m3490();
-                c1299M3491.f4725 = MagicFactory.get(-55748675500724L, strArr2);
+                c1299M3491.f4725 = "com.tencent.mm.plugin.finder.storage.FinderItem";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3491)).m3023();
                 C1973 c1973M3492 = AbstractC0968.m2484(objM3023).m3492();
-                c1973M3492.f6370 = MagicFactory.get(-55954833930932L, strArr2);
+                c1973M3492.f6370 = "getMediaType";
                 int iIntValue = ((Number) ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3832(new Object[0])).intValue();
                 C1973 c1973M3493 = AbstractC0968.m2484(objM3023).m3492();
-                c1973M3493.f6370 = MagicFactory.get(-56010668505780L, strArr2);
+                c1973M3493.f6370 = "getMediaList";
                 List list = (List) ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3832(new Object[0]);
                 ArrayList arrayList2 = new ArrayList(AbstractC0746.m2214(list, 10));
                 for (Object obj4 : list) {
                     int i12 = AbstractC1745.f5844;
                     C1973 c1973M3494 = AbstractC0968.m2484(obj4).m3492();
-                    c1973M3494.f6370 = MagicFactory.get(-56066503080628L, strArr2);
+                    c1973M3494.f6370 = "toJSON";
                     arrayList2.add((JSONObject) ((C1982) AbstractC2784.m4742(c1973M3494)).m3832(new Object[0]));
                 }
                 for (Object obj5 : C1342.f4811) {
@@ -139,23 +139,23 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                     } catch (Exception e2) {
                         ArrayList arrayList3 = C3678.f11549;
                         StringBuilder sb2 = new StringBuilder();
-                        sb2.append(MagicFactory.get(-56096567851700L, strArr2));
-                        sb2.append(obj5 instanceof AbstractC2867 ? ((AbstractC2867) obj5).mo1128() : MagicFactory.get(-56178172230324L, strArr2));
-                        AbstractC1194.m2792(sb2, MagicFactory.get(-56216826935988L, strArr2), e2, 12);
+                        sb2.append("onCreateMenuItems ");
+                        sb2.append(obj5 instanceof AbstractC2867 ? ((AbstractC2867) obj5).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb2, " Failed", e2, 12);
                     }
                 }
                 return c3497;
             case 4:
                 C1981 c1981 = (C1981) obj;
                 String[] strArr3 = AbstractC1574.f5469;
-                c1981.m3826(MagicFactory.get(-56251186674356L, strArr3));
-                c1981.m3827(MagicFactory.get(-56315611183796L, strArr3));
+                c1981.m3826("onCreateMMMenu");
+                c1981.m3827("pos is error ");
                 return c3497;
             case 5:
                 C1981 c1982 = (C1981) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1982.m3826(MagicFactory.get(-56521769614004L, strArr4));
-                c1982.m3827(MagicFactory.get(-56611963927220L, strArr4));
+                c1982.m3826("onMMMenuItemSelected");
+                c1982.m3827("[getMoreMenuItemSelectedListener] feed ");
                 return c3497;
             case 6:
                 String[] strArr5 = AbstractC1574.f5469;
@@ -190,8 +190,8 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                                                 C1362.f4862.getClass();
                                                 c2007.f6678 = C1362.f4867;
                                                 c2007.f6680 = linearLayout;
-                                                c2007.m3870(MagicFactory.get(-615971324689076L, strArr5), new C0106(i3, c2020));
-                                                c2007.m3869(MagicFactory.get(-615984209590964L, strArr5), new C1354(i9));
+                                                c2007.m3870("保存", new C0106(i3, c2020));
+                                                c2007.m3869("重置", new C1354(i9));
                                                 C2007.m3866(c2007, null, 3);
                                                 c2007.m3868().m3791();
                                                 return c3497;
@@ -203,7 +203,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-665256074410676L, strArr5).concat(viewM4676.getResources().getResourceName(i13)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i13)));
             case 7:
                 ((C1020) obj).f3733 = new C1338(9);
                 return c3497;
@@ -219,12 +219,12 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                 C1394.f5015.getClass();
                 c1981M4739.m3820(AbstractC1574.m3315(C1392.f5013).getDeclaringClass());
                 String[] strArr6 = AbstractC1574.f5469;
-                c1981M4739.m3827(MagicFactory.get(-361812339980980L, strArr6), MagicFactory.get(-361932599065268L, strArr6));
+                c1981M4739.m3827("MicroMsg.ForceNotifyStorage", "[setting] ");
                 c1335.f4794 = c1981M4739;
                 return c3497;
             case 11:
                 String[] strArr7 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-361550346975924L, strArr7), MagicFactory.get(-361670606060212L, strArr7));
+                ((C1981) obj).m3827("MicroMsg.ForceNotifyStorage", "[isNeedNotify] forcePushId:%s %s");
                 return c3497;
             case Opcodes.FCONST_1 /* 12 */:
                 String[] strArr8 = AbstractC1574.f5469;
@@ -260,8 +260,8 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                                         C1401.f5057.getClass();
                                         c2008.f6678 = C1401.f5059;
                                         c2008.f6680 = linearLayout2;
-                                        c2008.m3870(MagicFactory.get(-528263797537460L, strArr8), new C0106(22, c2103));
-                                        c2008.m3869(MagicFactory.get(-528276682439348L, strArr8), new C1354(1));
+                                        c2008.m3870("保存", new C0106(22, c2103));
+                                        c2008.m3869("重置", new C1354(1));
                                         C2007.m3866(c2008, null, 3);
                                         c2008.m3868().m3791();
                                         return c3497;
@@ -271,7 +271,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-665393513364148L, strArr8).concat(viewM4677.getResources().getResourceName(i14)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i14)));
             case 13:
                 return AbstractC2784.m4749("'", (String) obj, '\'');
             case Opcodes.DCONST_0 /* 14 */:
@@ -365,9 +365,9 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                                                                                                                 C1500.f5295.getClass();
                                                                                                                 c2009.f6678 = C1500.f5297;
                                                                                                                 c2009.f6680 = (LinearLayout) viewM4678;
-                                                                                                                c2009.m3870(MagicFactory.get(-548003467229876L, strArr9), new C0106(23, c2021));
-                                                                                                                c2009.m3869(MagicFactory.get(-548016352131764L, strArr9), new C1354(8));
-                                                                                                                String str = MagicFactory.get(-548037826968244L, strArr9);
+                                                                                                                c2009.m3870("保存", new C0106(23, c2021));
+                                                                                                                c2009.m3869("重置新款", new C1354(8));
+                                                                                                                String str = "重置经典";
                                                                                                                 C1354 c1354 = new C1354(9);
                                                                                                                 c2009.f6684 = str;
                                                                                                                 c2009.f6685 = c1354;
@@ -405,7 +405,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-665530952317620L, strArr9).concat(viewM4678.getResources().getResourceName(i15)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4678.getResources().getResourceName(i15)));
             case 16:
                 String[] strArr10 = AbstractC1574.f5469;
                 View viewM4679 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_handle_group_member, null, false);
@@ -427,8 +427,8 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                                 C1513.f5334.getClass();
                                 c20010.f6678 = C1513.f5336;
                                 c20010.f6680 = linearLayout3;
-                                c20010.m3870(MagicFactory.get(-550889685252788L, strArr10), new C0106(i2, c2018));
-                                c20010.m3869(MagicFactory.get(-550902570154676L, strArr10), new C1354(i6));
+                                c20010.m3870("保存", new C0106(i2, c2018));
+                                c20010.m3869("重置", new C1354(i6));
                                 C2007.m3866(c20010, null, 3);
                                 c20010.m3868().m3791();
                                 return c3497;
@@ -436,7 +436,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-665668391271092L, strArr10).concat(viewM4679.getResources().getResourceName(i17)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4679.getResources().getResourceName(i17)));
             case Opcodes.SIPUSH /* 17 */:
                 ((C1020) obj).f3733 = new C1338(19);
                 return c3497;
@@ -473,24 +473,24 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                 boolean z = false;
                 for (Object obj6 : c1299M3492.m3014()) {
                     String str2 = (String) ((C1315) obj6).m3024();
-                    if (str2 != null && str2.startsWith(MagicFactory.get(-550915455056564L, strArr11))) {
+                    if (str2 != null && str2.startsWith("weixin://")) {
                         if (z) {
-                            throw new IllegalArgumentException(MagicFactory.get(-550958404729524L, strArr11));
+                            throw new IllegalArgumentException("Collection contains more than one matching element.");
                         }
                         obj2 = obj6;
                         z = true;
                     }
                 }
                 if (!z) {
-                    throw new NoSuchElementException(MagicFactory.get(-551181743028916L, strArr11));
+                    throw new NoSuchElementException("Collection contains no element matching the predicate.");
                 }
                 String str3 = (String) ((C1315) obj2).m3024();
-                if (str3.startsWith(MagicFactory.get(-551417966230196L, strArr11)) && (c1904M4123 = AbstractC2209.m4123(Pattern.compile(MagicFactory.get(-551624124660404L, strArr11)).matcher(str3), 0, str3)) != null) {
+                if (str3.startsWith("weixin://weixinhongbao/wauxv/chatroom_userinfo/") && (c1904M4123 = AbstractC2209.m4123(Pattern.compile("(\\d+)__([^/]+)$").matcher(str3), 0, str3)) != null) {
                     String str4 = (String) ((C1903) c1904M4123.m3699()).get(2);
                     Context context = view.getContext();
                     Intent intent = new Intent();
-                    intent.setClassName(context, MagicFactory.get(-100867306945204L, strArr11));
-                    intent.putExtra(MagicFactory.get(-101069170408116L, strArr11), str4);
+                    intent.setClassName(context, "com.tencent.mm.plugin.profile.ui.ContactInfoUI");
+                    intent.putExtra("Contact_User", str4);
                     context.startActivity(intent);
                     c1565.m3271();
                 }
@@ -499,8 +499,8 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                 C1333 c1336 = (C1333) obj;
                 C1981 c1981M47310 = AbstractC2784.m4739(c1336);
                 String[] strArr12 = AbstractC1574.f5469;
-                c1981M47310.m3825(MagicFactory.get(-551692844137140L, strArr12));
-                c1981M47310.m3827(MagicFactory.get(-551989196880564L, strArr12), MagicFactory.get(-552105160997556L, strArr12));
+                c1981M47310.m3825("com.tencent.mm.app.plugin.URISpanHandlerSet$LuckyMoneyUriSpanHandler");
+                c1981M47310.m3827("MicroMsg.URISpanHandlerSet", "LuckyMoneyUriSpanHandler handleSpanClick() clickCallback == null");
                 c1336.f4794 = c1981M47310;
                 return c3497;
             case 20:
@@ -509,7 +509,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                 return Boolean.valueOf(c0707M4527.mo2114().isAssignableFrom((Class) obj));
             case Opcodes.ILOAD /* 21 */:
                 String[] strArr13 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-528908042631860L, strArr13), MagicFactory.get(-528998236945076L, strArr13));
+                ((C1981) obj).m3827("MicroMsg.MMPopupMenu", "is swiping, PASS tryShow");
                 return c3497;
             case Opcodes.LLOAD /* 22 */:
                 String[] strArr14 = AbstractC1574.f5469;
@@ -521,18 +521,18 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                     if (((TextInputLayout) AbstractC3681.m5325(viewM46710, R.id.moduleDialogInputHideChatItemMenuSet)) != null) {
                         LinearLayout linearLayout4 = (LinearLayout) viewM46710;
                         C2012 c2012 = new C2012(linearLayout4, textInputEditText20);
-                        textInputEditText20.setText(AbstractC0744.m2196(C1536.f5377.m2541(), MagicFactory.get(-528873682893492L, strArr14), null, null, null, 62));
+                        textInputEditText20.setText(AbstractC0744.m2196(C1536.f5377.m2541(), ",", null, null, null, 62));
                         C2007 c20011 = new C2007();
                         C1537.f5378.getClass();
                         c20011.f6678 = C1537.f5381;
                         c20011.f6680 = linearLayout4;
-                        c20011.m3870(MagicFactory.get(-528882272828084L, strArr14), new C0106(25, c2012));
-                        c20011.m3869(MagicFactory.get(-528895157729972L, strArr14), new C1354(i7));
+                        c20011.m3870("保存", new C0106(25, c2012));
+                        c20011.m3869("重置", new C1354(i7));
                         c20011.m3868().m3791();
                         return c3497;
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-665805830224564L, strArr14).concat(viewM46710.getResources().getResourceName(i19)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM46710.getResources().getResourceName(i19)));
             case Opcodes.FLOAD /* 23 */:
                 ((C1020) obj).f3733 = new C1338(i2);
                 return c3497;
@@ -581,9 +581,9 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
             default:
                 C1332 c1332 = (C1332) obj;
                 String[] strArr15 = AbstractC1574.f5469;
-                c1332.m3051(MagicFactory.get(-530213712689844L, strArr15));
+                c1332.m3051("com.tencent.mm.ui.conversation");
                 C0705 c0705 = new C0705(4);
-                c0705.m2127(MagicFactory.get(-529732676352692L, strArr15), MagicFactory.get(-529895885109940L, strArr15));
+                c0705.m2127("MicroMsg.ConversationWithCacheAdapter", "Get Item duplicated: positionMaps: %s username [%s, %d] Map: %s datas: %d");
                 c1332.f4791 = c0705;
                 return c3497;
         }

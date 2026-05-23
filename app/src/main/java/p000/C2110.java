@@ -133,7 +133,7 @@ public final /* synthetic */ class C2110 implements InterfaceC1425 {
             default:
                 C0816 c08110 = (C0816) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                c08110.f3198 = MagicFactory.get(-541745699879604L, strArr2);
+                c08110.f3198 = "搜索好友/群聊";
                 ArrayList arrayList4 = new ArrayList();
                 ArrayList arrayList5 = new ArrayList();
                 ArrayList arrayList6 = new ArrayList();
@@ -141,7 +141,7 @@ public final /* synthetic */ class C2110 implements InterfaceC1425 {
                 if (cursorM4042 != null) {
                     while (cursorM4042.moveToNext()) {
                         try {
-                            if (cursorM4042.getString(cursorM4042.getColumnIndex(MagicFactory.get(-541780059617972L, strArr2))).endsWith(MagicFactory.get(-541818714323636L, strArr2))) {
+                            if (cursorM4042.getString(cursorM4042.getColumnIndex("username")).endsWith("@chatroom")) {
                                 GroupInfo groupInfoM2178 = AbstractC0743.m2177(cursorM4042);
                                 String roomId2 = groupInfoM2178.getRoomId();
                                 StringBuilder sb6 = new StringBuilder();
@@ -164,15 +164,15 @@ public final /* synthetic */ class C2110 implements InterfaceC1425 {
                                 String wxid2 = friendInfoM2177.getWxid();
                                 StringBuilder sb8 = new StringBuilder();
                                 String nickname2 = friendInfoM2177.getNickname();
-                                if ((AbstractC2652.m4653(C2523.m4530(new C2523(MagicFactory.get(-541861663996596L, strArr2)), nickname2)) > 3 ? nickname2 : null) != null) {
-                                    sb8.append(MagicFactory.get(-541891728767668L, strArr2));
+                                if ((AbstractC2652.m4653(C2523.m4530(new C2523("\r\n|\r|\n"), nickname2)) > 3 ? nickname2 : null) != null) {
+                                    sb8.append("已过滤此昵称...");
                                 } else {
                                     String str6 = nickname2.length() > 8 ? nickname2 : null;
                                     if (str6 != null) {
                                         String strSubstring2 = str6.substring(0, 8);
-                                        MagicFactory.get(-541934678440628L, strArr2);
+                                        "substring(...)";
                                         sb8.append(strSubstring2);
-                                        sb8.append(MagicFactory.get(-541999102950068L, strArr2));
+                                        sb8.append("...");
                                         sb2 = sb8;
                                     } else {
                                         sb2 = null;
@@ -203,10 +203,10 @@ public final /* synthetic */ class C2110 implements InterfaceC1425 {
                     cursorM4042.close();
                 }
                 c08110.m2370(arrayList6);
-                c08110.m2367(MagicFactory.get(-542016282819252L, strArr2), arrayList4);
-                c08110.m2367(MagicFactory.get(-542029167721140L, strArr2), arrayList5);
+                c08110.m2367("好友", arrayList4);
+                c08110.m2367("群聊", arrayList5);
                 c08110.f3199 = R.drawable.ic_contact_send_24dp;
-                String str8 = MagicFactory.get(-542042052623028L, strArr2);
+                String str8 = "转发";
                 C2111 c2113 = new C2111(1, this.f6953, this.f6954);
                 c08110.f3202 = str8;
                 c08110.f3204 = c2113;

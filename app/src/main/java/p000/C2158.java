@@ -65,9 +65,9 @@ public final /* synthetic */ class C2158 implements InterfaceC1425 {
             case 6:
                 C1332 c1332 = (C1332) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                c1332.m3051(MagicFactory.get(-121569049311924L, strArr2));
+                c1332.m3051("com.tencent.mm.plugin.luckymoney.model");
                 C0705 c0705 = new C0705(4);
-                c0705.m2127(MagicFactory.get(-121281286503092L, strArr2), MagicFactory.get(-121427315391156L, strArr2));
+                c0705.m2127("MicroMsg.NetSceneLuckyMoneyDetail", "/cgi-bin/mmpay-bin/qrydetailwxhb");
                 c1332.f4791 = c0705;
                 return C3497.f10997;
             case 7:
@@ -99,10 +99,10 @@ public final /* synthetic */ class C2158 implements InterfaceC1425 {
             case 10:
                 String str = (String) ((C1903) ((C1904) obj).m3699()).get(1);
                 String[] strArr3 = AbstractC1574.f5469;
-                if (AbstractC2207.m4087(str, MagicFactory.get(-109723529509556L, strArr3))) {
-                    return MagicFactory.get(-109770774149812L, strArr3);
+                if (AbstractC2207.m4087(str, "notify@all")) {
+                    return "@所有人";
                 }
-                Cursor cursorM2715 = C1133.m2715(MagicFactory.get(-79615808764596L, strArr3) + str + '\'');
+                Cursor cursorM2715 = C1133.m2715("select * from rcontact where username = '" + str + '\'');
                 if (cursorM2715 != null) {
                     cursorM2715.moveToFirst();
                 } else {
@@ -121,10 +121,10 @@ public final /* synthetic */ class C2158 implements InterfaceC1425 {
             case Opcodes.FCONST_1 /* 12 */:
                 String str2 = (String) ((C1903) ((C1904) obj).m3699()).get(1);
                 String[] strArr4 = AbstractC1574.f5469;
-                if (AbstractC2207.m4087(str2, MagicFactory.get(-109792248986292L, strArr4))) {
-                    return MagicFactory.get(-109839493626548L, strArr4);
+                if (AbstractC2207.m4087(str2, "notify@all")) {
+                    return "@所有人";
                 }
-                Cursor cursorM2716 = C1133.m2715(MagicFactory.get(-79615808764596L, strArr4) + str2 + '\'');
+                Cursor cursorM2716 = C1133.m2715("select * from rcontact where username = '" + str2 + '\'');
                 if (cursorM2716 != null) {
                     cursorM2716.moveToFirst();
                 } else {
@@ -161,7 +161,7 @@ public final /* synthetic */ class C2158 implements InterfaceC1425 {
                 return C3497.f10997;
             case 16:
                 String[] strArr5 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-121947006433972L, strArr5), MagicFactory.get(-122110215191220L, strArr5));
+                ((C0705) obj).m2127("MicroMsg.NetSceneInviteChatRoomMember", "/cgi-bin/micromsg-bin/invitechatroommember");
                 return C3497.f10997;
             case Opcodes.SIPUSH /* 17 */:
                 ((C1020) obj).f3733 = new C2158(18);
@@ -172,7 +172,7 @@ public final /* synthetic */ class C2158 implements InterfaceC1425 {
             case 19:
                 C1981 c1982 = (C1981) obj;
                 String[] strArr6 = AbstractC1574.f5469;
-                c1982.m3827(MagicFactory.get(-122458107542196L, strArr6), MagicFactory.get(-122599841462964L, strArr6));
+                c1982.m3827("MicroMsg.webview.NetSceneJSLogin", "/cgi-bin/mmbiz-bin/js-login");
                 Class clsM21817 = AbstractC0743.m2183(AbstractC2519.m4527(String.class));
                 Class cls9 = clsM21817 == null ? String.class : clsM21817;
                 Class clsM21818 = AbstractC0743.m2183(AbstractC2519.m4527(LinkedList.class));
@@ -220,7 +220,7 @@ public final /* synthetic */ class C2158 implements InterfaceC1425 {
                 return C3497.f10997;
             case Opcodes.ALOAD /* 25 */:
                 String[] strArr7 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-123415885249204L, strArr7), MagicFactory.get(-123523259431604L, strArr7), MagicFactory.get(-123664993352372L, strArr7));
+                ((C0705) obj).m2127("MicroMsg.NetSceneSendMsg", "/cgi-bin/micromsg-bin/newsendmsg", "NetSceneSendMsg:MsgSource:%s");
                 return C3497.f10997;
             case 26:
                 C1981 c1983 = (C1981) obj;
@@ -249,9 +249,9 @@ public final /* synthetic */ class C2158 implements InterfaceC1425 {
             case 28:
                 C1332 c1337 = (C1332) obj;
                 String[] strArr8 = AbstractC1574.f5469;
-                c1337.m3051(MagicFactory.get(-124266288773812L, strArr8));
+                c1337.m3051("com.tencent.mm.plugin.luckymoney.model");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-124008590736052L, strArr8), MagicFactory.get(-124146029689524L, strArr8));
+                c0706.m2127("MicroMsg.NetSceneOpenLuckyMoney", "/cgi-bin/mmpay-bin/openwxhb");
                 c1337.f4791 = c0706;
                 return C3497.f10997;
             default:

@@ -38,13 +38,13 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
             case 2:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                c1333.m3053(MagicFactory.get(-537137199970996L, strArr2));
+                c1333.m3053("com.tencent.mm.sdk.platformtools");
                 C1981 c1981 = new C1981(4);
                 if (AbstractC3471.m5079(EnumC3677.f11531) || AbstractC3471.m5080(EnumC3674.f11496)) {
-                    c1981.m3827(MagicFactory.get(-536660458601140L, strArr2), MagicFactory.get(-536746357947060L, strArr2));
+                    c1981.m3827("MicroMsg.BitmapUtil", "saveBitmapToImage failed: %s");
                 } else {
-                    c1981.m3825(MagicFactory.get(-536870911998644L, strArr2));
-                    c1981.m3826(MagicFactory.get(-537059890559668L, strArr2));
+                    c1981.m3825("com.tencent.mm.sdk.platformtools.BitmapUtil");
+                    c1981.m3826("saveBitmapToImage");
                 }
                 c1333.f4794 = c1981;
                 break;
@@ -77,7 +77,7 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                         str = "";
                     }
                     String[] strArr3 = AbstractC1574.f5469;
-                    if (AbstractC2841.m4828(str, MagicFactory.get(-536591739124404L, strArr3), false) || AbstractC2841.m4828(str, MagicFactory.get(-536621803895476L, strArr3), false)) {
+                    if (AbstractC2841.m4828(str, "avatar", false) || AbstractC2841.m4828(str, "user_hd_", false)) {
                         new C0408(i, 6, c1563).m1608(Bitmap.CompressFormat.PNG);
                     }
                 }
@@ -91,17 +91,17 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
             case 6:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1334.m3053(MagicFactory.get(-378051611327156L, strArr4));
+                c1334.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827(MagicFactory.get(-377802503223988L, strArr4), MagicFactory.get(-377841157929652L, strArr4));
+                c1982.m3827("setSdkId", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1334.f4794 = c1982;
                 break;
             case 7:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr5 = AbstractC1574.f5469;
-                c1335.m3053(MagicFactory.get(-377257042377396L, strArr5));
+                c1335.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1983 = new C1981(4);
-                c1983.m3827(MagicFactory.get(-376986459437748L, strArr5), MagicFactory.get(-377046588979892L, strArr5));
+                c1983.m3827("setContentDes", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1335.f4794 = c1983;
                 break;
             case 8:
@@ -122,37 +122,37 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
             case 13:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr6 = AbstractC1574.f5469;
-                c1336.m3053(MagicFactory.get(-378914899753652L, strArr6));
+                c1336.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1984 = new C1981(4);
-                c1984.m3827(MagicFactory.get(-378597072173748L, strArr6), MagicFactory.get(-378708741323444L, strArr6));
+                c1984.m3827("MicroMsg.UploadPackHelper", "commit sns info ret %d, typeFlag %d sightMd5 %s");
                 c1336.f4794 = c1984;
                 break;
             case Opcodes.DCONST_0 /* 14 */:
                 C1333 c1337 = (C1333) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1337.m3053(MagicFactory.get(-376849020484276L, strArr7));
+                c1337.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1985 = new C1981(4);
                 Class<Integer> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(Integer.class));
                 Class cls = clsM2183 != null ? clsM2183 : Integer.class;
                 Class<Context> clsM2184 = AbstractC0743.m2183(AbstractC2519.m4527(Context.class));
                 c1985.m3823(cls, clsM2184 != null ? clsM2184 : Context.class);
-                c1985.m3827(MagicFactory.get(-376591322446516L, strArr7), MagicFactory.get(-376638567086772L, strArr7));
+                c1985.m3827("initSnsObj", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1337.f4794 = c1985;
                 break;
             case 15:
                 C1333 c1338 = (C1333) obj;
                 String[] strArr8 = AbstractC1574.f5469;
-                c1338.m3053(MagicFactory.get(-378459633220276L, strArr8));
+                c1338.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1986 = new C1981(4);
-                c1986.m3827(MagicFactory.get(-378189050280628L, strArr8), MagicFactory.get(-378249179822772L, strArr8));
+                c1986.m3827("setSdkAppName", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1338.f4794 = c1986;
                 break;
             case 16:
                 C1333 c1339 = (C1333) obj;
                 String[] strArr9 = AbstractC1574.f5469;
-                c1339.m3053(MagicFactory.get(-377665064270516L, strArr9));
+                c1339.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1987 = new C1981(4);
-                c1987.m3827(MagicFactory.get(-377394481330868L, strArr9), MagicFactory.get(-377454610873012L, strArr9));
+                c1987.m3827("setUploadList", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1339.f4794 = c1987;
                 break;
             case Opcodes.SIPUSH /* 17 */:
@@ -163,9 +163,9 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
             case Opcodes.LDC /* 18 */:
                 C1332 c13310 = (C1332) obj;
                 String[] strArr10 = AbstractC1574.f5469;
-                c13310.m3051(MagicFactory.get(-119052198476468L, strArr10));
+                c13310.m3051("com.tencent.mm.vfs");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-118893284686516L, strArr10), MagicFactory.get(-118974889065140L, strArr10));
+                c0706.m2127("MicroMsg.VFSFileOp", "Cannot move dir: ");
                 c13310.f4791 = c0706;
                 break;
             case 19:
@@ -190,7 +190,7 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 break;
             case Opcodes.LLOAD /* 22 */:
                 String[] strArr11 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-366790207077044L, strArr11), MagicFactory.get(-366884696357556L, strArr11), MagicFactory.get(-366979185638068L, strArr11));
+                ((C0705) obj).m2127("MicroMsg.VideoService", "MicroMsg.SubCoreVideo", "quitVideoSendThread");
                 break;
             case Opcodes.FLOAD /* 23 */:
                 ((C1020) obj).f3733 = new C3424(25);
@@ -202,14 +202,14 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 C1333 c13312 = (C1333) obj;
                 C1981 c1981M47310 = AbstractC2784.m4739(c13312);
                 String[] strArr12 = AbstractC1574.f5469;
-                c1981M47310.m3827((AbstractC3471.m5079(EnumC3677.f11541) || AbstractC3471.m5080(EnumC3674.f11505)) ? MagicFactory.get(-391335945173684L, strArr12) : MagicFactory.get(-391490563996340L, strArr12), MagicFactory.get(-391602233146036L, strArr12), MagicFactory.get(-391623707982516L, strArr12));
+                c1981M47310.m3827((AbstractC3471.m5079(EnumC3677.f11541) || AbstractC3471.m5080(EnumC3674.f11505)) ? "MicroMsg.C2CVideoPathFeatureService" : "MicroMsg.VideoInfoStorage", ".mp4", "success restore file, from ");
                 c13312.f4794 = c1981M47310;
                 break;
             case 26:
                 C1333 c13313 = (C1333) obj;
                 C1981 c1981M47311 = AbstractC2784.m4739(c13313);
                 String[] strArr13 = AbstractC1574.f5469;
-                c1981M47311.m3827((AbstractC3471.m5079(EnumC3677.f11541) || AbstractC3471.m5080(EnumC3674.f11505)) ? MagicFactory.get(-391743967066804L, strArr13) : MagicFactory.get(-391898585889460L, strArr13), MagicFactory.get(-392010255039156L, strArr13), MagicFactory.get(-392031729875636L, strArr13));
+                c1981M47311.m3827((AbstractC3471.m5079(EnumC3677.f11541) || AbstractC3471.m5080(EnumC3674.f11505)) ? "MicroMsg.C2CVideoPathFeatureService" : "MicroMsg.VideoInfoStorage", ".jpg", "success restore file, from ");
                 c13313.f4794 = c1981M47311;
                 break;
             case 27:
@@ -220,8 +220,8 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 c2007.f6678 = C3611.f11294;
                 c2007.f6680 = c2011M3872.f6707;
                 String[] strArr14 = AbstractC1574.f5469;
-                c2007.m3870(MagicFactory.get(-649953105935028L, strArr14), new C1173(c2011M3872, 3));
-                c2007.m3869(MagicFactory.get(-649965990836916L, strArr14), new C3369(4));
+                c2007.m3870("保存", new C1173(c2011M3872, 3));
+                c2007.m3869("重置", new C3369(4));
                 C2007.m3866(c2007, null, 3);
                 c2007.m3868().m3791();
                 break;
@@ -233,14 +233,14 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 c2008.f6678 = C3613.f11301;
                 c2008.f6680 = c2011M3873.f6707;
                 String[] strArr15 = AbstractC1574.f5469;
-                c2008.m3870(MagicFactory.get(-654544425974452L, strArr15), new C1173(c2011M3873, 4));
-                c2008.m3869(MagicFactory.get(-654557310876340L, strArr15), new C3369(5));
+                c2008.m3870("保存", new C1173(c2011M3873, 4));
+                c2008.m3869("重置", new C3369(5));
                 C2007.m3866(c2008, null, 3);
                 c2008.m3868().m3791();
                 break;
             default:
                 String[] strArr16 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-558891209325236L, strArr16), MagicFactory.get(-558985698605748L, strArr16));
+                ((C1981) obj).m3827("MicroMsg.VoiceStorage", "update failed, no values set");
                 break;
         }
         return C3497.f10997;

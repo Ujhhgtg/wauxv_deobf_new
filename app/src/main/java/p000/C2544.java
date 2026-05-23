@@ -93,11 +93,11 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                 Class<Object> clsM2184 = AbstractC0743.m2183(AbstractC2519.m4527(cls2));
                 c1981.m3823(cls, clsM2184 != null ? clsM2184 : Object.class);
                 String[] strArr2 = AbstractC1574.f5469;
-                c1981.m3827(MagicFactory.get(-62998580296372L, strArr2), MagicFactory.get(-63028645067444L, strArr2), MagicFactory.get(-63045824936628L, strArr2), MagicFactory.get(-63067299773108L, strArr2));
+                c1981.m3827("String", "Int", "Long", "Float");
                 return c3497;
             case 4:
                 String[] strArr3 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-62843961473716L, strArr3), MagicFactory.get(-62934155786932L, strArr3));
+                ((C0705) obj).m2127("RepairerConfigThread", "ValueStrategy_");
                 return c3497;
             case 5:
                 C1981 c1982 = (C1981) obj;
@@ -132,18 +132,18 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                 return c3497;
             case Opcodes.FCONST_1 /* 12 */:
                 String[] strArr4 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-497756644833972L, strArr4), MagicFactory.get(-497808184441524L, strArr4));
+                ((C1981) obj).m3827("workerScope", "username");
                 return c3497;
             case 13:
                 String[] strArr5 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-497846839147188L, strArr5), MagicFactory.get(-497898378754740L, strArr5));
+                ((C1981) obj).m3827("workerScope", "username");
                 return c3497;
             case Opcodes.DCONST_0 /* 14 */:
                 String[] strArr6 = AbstractC1574.f5469;
                 View viewM4676 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_round_avatar, null, false);
                 Slider slider = (Slider) AbstractC3681.m5325(viewM4676, R.id.moduleDialogSliderRoundAvatar);
                 if (slider == null) {
-                    throw new NullPointerException(MagicFactory.get(-668004853480116L, strArr6).concat(viewM4676.getResources().getResourceName(R.id.moduleDialogSliderRoundAvatar)));
+                    throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(R.id.moduleDialogSliderRoundAvatar)));
                 }
                 LinearLayout linearLayout = (LinearLayout) viewM4676;
                 C2023 c2023 = new C2023(linearLayout, slider);
@@ -152,7 +152,7 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                 C2603.f8467.getClass();
                 c2007.f6678 = C2603.f8469;
                 c2007.f6680 = linearLayout;
-                c2007.m3870(MagicFactory.get(-497640680716980L, strArr6), new C2042(i5, c2023));
+                c2007.m3870("保存", new C2042(i5, c2023));
                 AbstractC2784.m4755(c2007, null, 3);
                 return c3497;
             case 15:
@@ -196,7 +196,7 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                 C1984 c1984 = new C1984(4);
                 C1981 c1985 = new C1981(4);
                 String[] strArr7 = AbstractC1574.f5469;
-                c1985.m3827(MagicFactory.get(-95631741811380L, strArr7), MagicFactory.get(-95782065666740L, strArr7), MagicFactory.get(-95962454293172L, strArr7));
+                c1985.m3827("MicroMsg.ChattingUI.VideoComponent", "send video path: %s, toUser:%s, origin:%b", "ChattingUI_importMultiVideo");
                 c1984.m3848(c1985);
                 c1983.f6565 = c1984;
                 Class<Runnable> clsM2189 = AbstractC0743.m2183(AbstractC2519.m4527(Runnable.class));
@@ -224,7 +224,7 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                                     textInputEditText.setText(C2630.f8519.m2542());
                                     textInputEditText2.setText(C2631.f8520.m2542());
                                     materialTextView.setMovementMethod(LinkMovementMethod.getInstance());
-                                    SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(MagicFactory.get(-578489145096884L, strArr8));
+                                    SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder("点击占位符自动添加以下字段:\n");
                                     for (String str3 : C2632.f8522) {
                                         int length = spannableStringBuilder.length();
                                         spannableStringBuilder.append((CharSequence) (str3 + ' '));
@@ -235,8 +235,8 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                                     C2632.f8521.getClass();
                                     c2008.f6678 = C2632.f8524;
                                     c2008.f6680 = c2022.f6774;
-                                    c2008.m3870(MagicFactory.get(-578557864573620L, strArr8), new C2042(i3, c2022));
-                                    c2008.m3869(MagicFactory.get(-578570749475508L, strArr8), new C2083(i5));
+                                    c2008.m3870("保存", new C2042(i3, c2022));
+                                    c2008.m3869("重置", new C2083(i5));
                                     C2007.m3866(c2008, null, 3);
                                     c2008.m3868().m3791();
                                     return c3497;
@@ -245,7 +245,7 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-668142292433588L, strArr8).concat(viewM4677.getResources().getResourceName(i9)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i9)));
             case Opcodes.ALOAD /* 25 */:
                 Object objM3268 = ((C1563) obj).m3268();
                 if (!(objM3268 instanceof Activity)) {
@@ -258,11 +258,11 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                 }
                 Intent intent = activity.getIntent();
                 String[] strArr9 = AbstractC1574.f5469;
-                String stringExtra = intent.getStringExtra(MagicFactory.get(-578583634377396L, strArr9));
+                String stringExtra = intent.getStringExtra("Contact_Nick");
                 Intent intent2 = activity.getIntent();
-                String str4 = MagicFactory.get(-578639468952244L, strArr9);
+                String str4 = "Contact_RemarkName";
                 C2632.f8521.getClass();
-                intent2.putExtra(str4, AbstractC2849.m4857(AbstractC2849.m4857(C2630.f8519.m2542(), MagicFactory.get(-578016698694324L, strArr9), stringExtra), MagicFactory.get(-578051058432692L, strArr9), AbstractC3681.m5339(System.currentTimeMillis(), C2631.f8520.m2542(), null, 2)));
+                intent2.putExtra(str4, AbstractC2849.m4857(AbstractC2849.m4857(C2630.f8519.m2542(), "${nick}", stringExtra), "${time}", AbstractC3681.m5339(System.currentTimeMillis(), C2631.f8520.m2542(), null, 2)));
                 return c3497;
             case 26:
                 ((C1020) obj).f3732 = new C2544(27);
@@ -272,7 +272,7 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                 return c3497;
             case 28:
                 String[] strArr10 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-364002773301940L, strArr10), MagicFactory.get(-364118737418932L, strArr10), MagicFactory.get(-364183161928372L, strArr10));
+                ((C0705) obj).m2127("MicroMsg.SceneVoiceService", "//voicetrymore", "getVoiceService %s");
                 return c3497;
             default:
                 return Boolean.valueOf(obj == null);

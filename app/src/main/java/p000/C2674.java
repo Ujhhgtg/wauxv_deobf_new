@@ -123,8 +123,8 @@ public final class C2674 extends AbstractC1889 {
                 EditText editText2 = editText;
                 Context context = editText2.getContext();
                 String[] strArr2 = AbstractC1574.f5469;
-                Object systemService = context.getSystemService(MagicFactory.get(-463491395746484L, strArr2));
-                MagicFactory.get(-463547230321332L, strArr2);
+                Object systemService = context.getSystemService("input_method");
+                "null cannot be cast to non-null type android.view.inputmethod.InputMethodManager";
                 ((InputMethodManager) systemService).hideSoftInputFromWindow(editText2.getWindowToken(), 0);
                 return true;
             }

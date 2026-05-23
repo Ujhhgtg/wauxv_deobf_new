@@ -53,7 +53,7 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 return c3497;
             case 1:
                 String[] strArr2 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-599697693604532L, strArr2), MagicFactory.get(-599753528179380L, strArr2));
+                ((C1981) obj).m3827("updateStruct", "com.tencent.mm.plugin.sns.ui.item.improve.TimelineItemMeasure");
                 return c3497;
             case 2:
                 String[] strArr3 = AbstractC1574.f5469;
@@ -79,7 +79,7 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                                         textInputEditText2.setText(C2740.f8813.m2542());
                                         materialCheckBox.setChecked(C2738.f8811.m2536());
                                         materialTextView.setMovementMethod(LinkMovementMethod.getInstance());
-                                        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(MagicFactory.get(-598297534266036L, strArr3));
+                                        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder("点击占位符自动添加以下字段:\n");
                                         String[] strArr4 = C2741.f8815;
                                         int length = strArr4.length;
                                         while (i4 < length) {
@@ -95,8 +95,8 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                                         c2007.f6678 = C2741.f8817;
                                         c2007.f6680 = (LinearLayout) c2103.f6935;
                                         int i6 = 14;
-                                        c2007.m3870(MagicFactory.get(-598366253742772L, strArr3), new C2042(i6, c2103));
-                                        c2007.m3869(MagicFactory.get(-598379138644660L, strArr3), new C2083(i6));
+                                        c2007.m3870("保存", new C2042(i6, c2103));
+                                        c2007.m3869("重置", new C2083(i6));
                                         C2007.m3866(c2007, null, 3);
                                         c2007.m3868().m3791();
                                         return c3497;
@@ -106,7 +106,7 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-668279731387060L, strArr3).concat(viewM4676.getResources().getResourceName(i5)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i5)));
             case 3:
                 ((C1020) obj).f3733 = new C2659(29);
                 return c3497;
@@ -125,12 +125,12 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 Object objInvoke = AbstractC1574.m3315(c2735).invoke(((C1315) AbstractC2784.m4741(c1299M3490)).m3023(), null);
                 C1973 c1973M3492 = c1744M2484.m3492();
                 String[] strArr5 = AbstractC1574.f5469;
-                c1973M3492.f6370 = MagicFactory.get(-598392023546548L, strArr5);
+                c1973M3492.f6370 = "getPublishTimeText";
                 TextView textView = (TextView) ((C1982) AbstractC2784.m4742(c1973M3492)).m3832(new Object[0]);
                 C2741.f8814.getClass();
-                textView.setText(AbstractC2849.m4857(C2741.m4730(objInvoke), MagicFactory.get(-598473627925172L, strArr5), textView.getText().toString()));
+                textView.setText(AbstractC2849.m4857(C2741.m4730(objInvoke), "${originalText}", textView.getText().toString()));
                 C1973 c1973M3493 = c1744M2484.m3492();
-                c1973M3493.f6370 = MagicFactory.get(-598542347401908L, strArr5);
+                c1973M3493.f6370 = "getGroupImageStub";
                 View view = (View) ((C1982) AbstractC2784.m4742(c1973M3493)).m3832(new Object[0]);
                 if (view != null && (view instanceof ImageView)) {
                     ((ImageView) view).setVisibility(C2738.f8811.m2536() ? 8 : 0);
@@ -145,7 +145,7 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 Class<String> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(cls2));
                 c1981M4739.m3823(clsM2183 != null ? clsM2183 : String.class);
                 String[] strArr6 = AbstractC1574.f5469;
-                c1981M4739.m3827(MagicFactory.get(-389463339432628L, strArr6), MagicFactory.get(-389519174007476L, strArr6));
+                c1981M4739.m3827("getByLocalId", "com.tencent.mm.plugin.sns.storage.SnsInfoStorage");
                 c1333.f4794 = c1981M4739;
                 return c3497;
             case 9:
@@ -157,9 +157,9 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
             case 11:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1334.m3053(MagicFactory.get(-64806761527988L, strArr7));
+                c1334.m3053("com.tencent.mm.plugin.sns.ui.listener");
                 C1981 c1981 = new C1981(4);
-                c1981.m3827(MagicFactory.get(-64360084929204L, strArr7), MagicFactory.get(-64527588653748L, strArr7), MagicFactory.get(-64673617541812L, strArr7));
+                c1981.m3827("delete comment fail!!! snsInfo is null", "send photo fail, mediaObj is null", "mediaObj is null, send failed!");
                 c1334.f4794 = c1981;
                 return c3497;
             case Opcodes.FCONST_1 /* 12 */:
@@ -183,18 +183,18 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                         ArrayList arrayList = C3678.f11549;
                         StringBuilder sb = new StringBuilder();
                         String[] strArr8 = AbstractC1574.f5469;
-                        sb.append(MagicFactory.get(-63367947483828L, strArr8));
-                        sb.append(interfaceC1600 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1600).mo1128() : MagicFactory.get(-63449551862452L, strArr8));
-                        AbstractC1194.m2792(sb, MagicFactory.get(-63488206568116L, strArr8), e, 12);
+                        sb.append("onCreateMenuItems ");
+                        sb.append(interfaceC1600 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1600).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb, " Failed", e, 12);
                     }
                 }
                 return c3497;
             case 13:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr9 = AbstractC1574.f5469;
-                c1335.m3053(MagicFactory.get(-64196876171956L, strArr9));
+                c1335.m3053("com.tencent.mm.plugin.sns.ui.listener");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827(MagicFactory.get(-63883343559348L, strArr9), MagicFactory.get(-64076617087668L, strArr9));
+                c1982.m3827("MicroMsg.TimelineOnCreateContextMenuListener", "onMMCreateContextMenu error");
                 c1335.f4794 = c1982;
                 return c3497;
             case Opcodes.DCONST_0 /* 14 */:
@@ -224,7 +224,7 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                         C2743.f8821.getClass();
                         Object objM4731 = C2743.m4731(str2);
                         C1299 c1299M3493 = AbstractC0968.m2484(c1564.m3268()).m3490();
-                        c1299M3493.f4725 = MagicFactory.get(-63522566306484L, strArr10);
+                        c1299M3493.f4725 = "com.tencent.mm.protocal.protobuf.TimeLineObject";
                         Object objM3023 = ((C1315) AbstractC0744.m2191(c1299M3493.m3014())).m3023();
                         for (C2744 c2745 : interfaceC1601.mo3340()) {
                             if (menuItem.getItemId() == c2745.f8822) {
@@ -234,9 +234,9 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                     } catch (Exception e2) {
                         ArrayList arrayList2 = C3678.f11549;
                         StringBuilder sb2 = new StringBuilder();
-                        sb2.append(MagicFactory.get(-63728724736692L, strArr10));
-                        sb2.append(interfaceC1601 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1601).mo1128() : MagicFactory.get(-63810329115316L, strArr10));
-                        AbstractC1194.m2792(sb2, MagicFactory.get(-63848983820980L, strArr10), e2, 12);
+                        sb2.append("onCreateMenuItems ");
+                        sb2.append(interfaceC1601 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1601).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb2, " Failed", e2, 12);
                     }
                     i8 = 1;
                 }
@@ -255,12 +255,12 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 }
                 C2755 c2755 = C2755.f8841;
                 String[] strArr11 = AbstractC1574.f5469;
-                String str3 = MagicFactory.get(-603043473128116L, strArr11);
+                String str3 = "过滤";
                 C2750 c2750 = new C2750(activity2, 0);
                 c2755.getClass();
                 int i10 = AbstractC1745.f5844;
                 C1973 c1973M3494 = AbstractC0968.m2484(activity2).m3492();
-                c1973M3494.f6370 = MagicFactory.get(-601157982485172L, strArr11);
+                c1973M3494.f6370 = "addTextOptionMenu";
                 c1973M3494.m2888(Arrays.copyOf(new Object[]{AbstractC2519.m4527(Integer.TYPE), AbstractC2519.m4527(cls2), AbstractC2519.m4527(MenuItem.OnMenuItemClickListener.class)}, 3));
                 c1973M3494.m3732();
                 ((C1982) AbstractC0744.m2191(c1973M3494.m3799())).m3831(Integer.valueOf(R.id.MenuItem_Sns_LabelFilter), str3, new MenuItemOnMenuItemClickListenerC2751(0, c2750));
@@ -269,10 +269,10 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 C1333 c1336 = (C1333) obj;
                 C1981 c1981M47310 = AbstractC2784.m4739(c1336);
                 String[] strArr12 = AbstractC1574.f5469;
-                C1981.m3818(c1981M47310, MagicFactory.get(-603056358030004L, strArr12));
+                C1981.m3818(c1981M47310, "com.tencent.mm.plugin.mvvmlist.MvvmList");
                 Class<Void> clsM2185 = AbstractC0743.m2183(AbstractC2519.m4527(Void.class));
                 c1981M47310.m3824(clsM2185 != null ? clsM2185 : Void.class);
-                c1981M47310.m3827(MagicFactory.get(-603228156721844L, strArr12));
+                c1981M47310.m3827("submitRefreshAll");
                 c1336.f4794 = c1981M47310;
                 return c3497;
             case 19:
@@ -290,10 +290,10 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 c1983.m3823(cls2, clsM2187 != null ? clsM2187 : Integer.class);
                 C1984 c1984 = new C1984(4);
                 C1981 c1985 = new C1981(4);
-                c1985.m3827(MagicFactory.get(-370105921829556L, strArr13), MagicFactory.get(-370200411110068L, strArr13));
+                c1985.m3827("produceMediaObjByPath", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1984.m3848(c1985);
                 C1981 c1986 = new C1981(4);
-                c1986.m3827(MagicFactory.get(-370410864507572L, strArr13), MagicFactory.get(-370492468886196L, strArr13));
+                c1986.m3827("produceSightByPath", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1984.m3848(c1986);
                 c1983.f6565 = c1984;
                 return c3497;
@@ -310,7 +310,7 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 Class<String> clsM2189 = AbstractC0743.m2183(AbstractC2519.m4527(cls2));
                 c1981M47311.m3823(clsM2188, clsM2189 != null ? clsM2189 : String.class);
                 String[] strArr14 = AbstractC1574.f5469;
-                c1981M47311.m3827(MagicFactory.get(-390159124134580L, strArr14), MagicFactory.get(-390266498316980L, strArr14));
+                c1981M47311.m3827("MicroMsg.snsMediaStorage", "convertImg2WxamWithoutZip origPath:%s OutOfMemoryError! rollback");
                 c1337.f4794 = c1981M47311;
                 return c3497;
             case Opcodes.DLOAD /* 24 */:
@@ -323,11 +323,11 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 return c3497;
             case 26:
                 String[] strArr15 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-370840361237172L, strArr15), MagicFactory.get(-370879015942836L, strArr15), MagicFactory.get(-370934850517684L, strArr15), MagicFactory.get(-370982095157940L, strArr15), MagicFactory.get(-371046519667380L, strArr15), MagicFactory.get(-371110944176820L, strArr15), MagicFactory.get(-371183958620852L, strArr15), MagicFactory.get(-371218318359220L, strArr15), MagicFactory.get(-371282742868660L, strArr15), MagicFactory.get(-371308512672436L, strArr15), MagicFactory.get(-371347167378100L, strArr15), MagicFactory.get(-371364347247284L, strArr15), MagicFactory.get(-371411591887540L, strArr15));
+                ((C0705) obj).m2127("timeline", "album_friend", "album_self", "album_stranger", "profile_friend", "profile_stranger", "comment", "comment_detail", "other", "snssight", "fts", "storysight", "storyalbum");
                 return c3497;
             case 27:
                 String[] strArr16 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-604306193513140L, strArr16), MagicFactory.get(-604417862662836L, strArr16));
+                ((C1981) obj).m3827("MicroMsg.UploadPackHelper", "commit sns info ret %d, typeFlag %d sightMd5 %s");
                 return c3497;
             case 28:
                 String[] strArr17 = AbstractC1574.f5469;
@@ -349,12 +349,12 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                                     textInputEditText3.setText(C2766.f8855.m2542());
                                     textInputEditText4.setText(C2767.f8856.m2542());
                                     materialTextView2.setMovementMethod(LinkMovementMethod.getInstance());
-                                    SpannableStringBuilder spannableStringBuilder2 = new SpannableStringBuilder(MagicFactory.get(-604198819330740L, strArr17));
+                                    SpannableStringBuilder spannableStringBuilder2 = new SpannableStringBuilder("点击占位符自动填充以下字段:\n");
                                     for (Map.Entry entry : C2768.f8858.entrySet()) {
                                         String str4 = (String) entry.getKey();
                                         C2315 c2315 = (C2315) entry.getValue();
                                         int length3 = spannableStringBuilder2.length();
-                                        spannableStringBuilder2.append((CharSequence) ("[" + str4 + MagicFactory.get(-604267538807476L, strArr17)));
+                                        spannableStringBuilder2.append((CharSequence) ("[" + str4 + "] "));
                                         spannableStringBuilder2.setSpan(new C0634(5, c2315, c2022), length3, spannableStringBuilder2.length() + (-1), 33);
                                     }
                                     materialTextView2.setText(spannableStringBuilder2);
@@ -363,8 +363,8 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                                     c2008.f6678 = C2768.f8860;
                                     c2008.f6680 = c2022.f6774;
                                     int i12 = 15;
-                                    c2008.m3870(MagicFactory.get(-604280423709364L, strArr17), new C2042(i12, c2022));
-                                    c2008.m3869(MagicFactory.get(-604293308611252L, strArr17), new C2083(i12));
+                                    c2008.m3870("保存", new C2042(i12, c2022));
+                                    c2008.m3869("重置", new C2083(i12));
                                     C2007.m3866(c2008, null, 3);
                                     c2008.m3868().m3791();
                                     return c3497;
@@ -373,7 +373,7 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-668417170340532L, strArr17).concat(viewM4677.getResources().getResourceName(i11)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i11)));
             default:
                 ((C1020) obj).f3733 = new C2764(i4);
                 return c3497;

@@ -94,11 +94,11 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
                 int i4 = AbstractC1745.f5844;
                 C1973 c1973M3492 = AbstractC0968.m2484(((C1563) obj).m3268()).m3492();
                 String[] strArr2 = AbstractC1574.f5469;
-                c1973M3492.f6370 = MagicFactory.get(-72919954750132L, strArr2);
+                c1973M3492.f6370 = "getContext";
                 Context context2 = (Context) ((C1982) AbstractC2784.m4742(c1973M3492)).m3832(new Object[0]);
                 TextView textView = new TextView(context2);
                 textView.setTextSize(16.0f);
-                textView.setText(MagicFactory.get(-72967199390388L, strArr2));
+                textView.setText("正在载入...");
                 boolean z = true;
                 char c = 1;
                 textView.setGravity(1);
@@ -107,7 +107,7 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
                 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -2);
                 layoutParams.setMargins(32, 32, 32, 32);
                 progressBar.setLayoutParams(layoutParams);
-                AlertDialog.Builder title = new AlertDialog.Builder(context2).setTitle(MagicFactory.get(-73001559128756L, strArr2));
+                AlertDialog.Builder title = new AlertDialog.Builder(context2).setTitle("WAuxiliary");
                 LinearLayout linearLayout = new LinearLayout(context2);
                 linearLayout.setOrientation(1);
                 linearLayout.setGravity(17);

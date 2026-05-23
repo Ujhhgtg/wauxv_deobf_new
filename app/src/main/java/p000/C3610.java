@@ -148,7 +148,7 @@ public final class C3610 extends AbstractC2862 implements InterfaceC1429 {
                 int i3 = this.f11284;
                 if (i3 == 0) {
                     AbstractC0743.m2188(obj);
-                    AbstractC2834.m4823(null, 3, MagicFactory.get(-653805691599540L, strArr2));
+                    AbstractC2834.m4823(null, 3, "开始下载视频");
                     StringBuilder sb2 = new StringBuilder();
                     C3612 c3612 = C3612.f11297;
                     sb2.append(c3612.m2542());
@@ -158,9 +158,9 @@ public final class C3610 extends AbstractC2862 implements InterfaceC1429 {
                     sb2.append(str8);
                     sb2.append('-');
                     sb2.append(str9);
-                    sb2.append(MagicFactory.get(-653835756370612L, strArr2));
+                    sb2.append(".tmp.mp4");
                     String string2 = sb2.toString();
-                    str3 = c3612.m2542() + '/' + str7 + '-' + str8 + MagicFactory.get(-653874411076276L, strArr2);
+                    str3 = c3612.m2542() + '/' + str7 + '-' + str8 + ".decrypt.mp4";
                     String str12 = str6 + str5;
                     C2536 c2537 = new C2536(string2, 8);
                     C1002 c1003 = AbstractC1075.f3893;
@@ -176,7 +176,7 @@ public final class C3610 extends AbstractC2862 implements InterfaceC1429 {
                     str4 = string2;
                 } else {
                     if (i3 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(-653960310422196L, strArr2));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     String str13 = this.f11283;
                     str4 = this.f11282;
@@ -186,7 +186,7 @@ public final class C3610 extends AbstractC2862 implements InterfaceC1429 {
                 }
                 C1133.m2707(str4, str3, new BigInteger(str9));
                 ((File) objM3955).delete();
-                AbstractC2834.m4823(null, 3, MagicFactory.get(-653930245651124L, strArr2));
+                AbstractC2834.m4823(null, 3, "下载视频完成");
                 return c3497;
         }
     }

@@ -51,22 +51,22 @@ public final class C0194 extends AbstractC2867 implements InterfaceC1601, Interf
     public final void mo1233(C1563 c1563, String str, ContentValues contentValues, String str2, String[] strArr, int i) throws IOException {
         List listM3699;
         String[] strArr2 = AbstractC1574.f5469;
-        if (mo3264() && str.equals(MagicFactory.get(-500196186258100L, strArr2)) && AbstractC0270.m1390(new Integer[]{Integer.valueOf(EnumC3673.f11480.f11492), Integer.valueOf(EnumC3673.f11481.f11492)}).contains(contentValues.get(MagicFactory.get(-500230545996468L, strArr2)))) {
-            String asString = contentValues.getAsString(MagicFactory.get(-500252020832948L, strArr2));
-            if (asString.startsWith(MagicFactory.get(-500286380571316L, strArr2)) || asString.startsWith(MagicFactory.get(-500294970505908L, strArr2))) {
-                Long asLong = contentValues.getAsLong(MagicFactory.get(-500303560440500L, strArr2));
+        if (mo3264() && str.equals("message") && AbstractC0270.m1390(new Integer[]{Integer.valueOf(EnumC3673.f11480.f11492), Integer.valueOf(EnumC3673.f11481.f11492)}).contains(contentValues.get("type"))) {
+            String asString = contentValues.getAsString("content");
+            if (asString.startsWith("\"") || asString.startsWith("「")) {
+                Long asLong = contentValues.getAsLong("msgId");
                 int i2 = AbstractC1745.f5844;
                 C2800.f8930.getClass();
                 C1973 c1973M3492 = AbstractC0968.m2484(C2800.m4779()).m3492();
-                c1973M3492.f6370 = MagicFactory.get(-96112778148532L, strArr2);
-                Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832(MagicFactory.get(-500329330244276L, strArr2), new Object[]{asLong});
+                c1973M3492.f6370 = "rawQuery";
+                Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832("SELECT createTime, talker FROM message WHERE msgId = ?", new Object[]{asLong});
                 if (cursor != null) {
                     try {
                         if (cursor.moveToFirst()) {
-                            long j = cursor.getLong(cursor.getColumnIndex(MagicFactory.get(-500565553445556L, strArr2)));
-                            String string = cursor.getString(cursor.getColumnIndex(MagicFactory.get(-500612798085812L, strArr2)));
-                            C1904 c1904M4123 = AbstractC2209.m4123(Pattern.compile(MagicFactory.get(-500642862856884L, strArr2)).matcher(asString), 0, asString);
-                            AbstractC2201.m3976(EnumC3673.f11478.f11492, string, "\"" + ((c1904M4123 == null || (listM3699 = c1904M4123.m3699()) == null) ? null : (String) ((C1903) listM3699).get(2)) + MagicFactory.get(-500720172268212L, strArr2) + C0193.f1258.m2542(), j + 1);
+                            long j = cursor.getLong(cursor.getColumnIndex("createTime"));
+                            String string = cursor.getString(cursor.getColumnIndex("talker"));
+                            C1904 c1904M4123 = AbstractC2209.m4123(Pattern.compile("([\"「])(.*?)([」\"])").matcher(asString), 0, asString);
+                            AbstractC2201.m3976(EnumC3673.f11478.f11492, string, "\"" + ((c1904M4123 == null || (listM3699 = c1904M4123.m3699()) == null) ? null : (String) ((C1903) listM3699).get(2)) + "\" " + C0193.f1258.m2542(), j + 1);
                             c1563.m3272(1);
                         }
                         cursor.close();

@@ -68,7 +68,7 @@ public final /* synthetic */ class C2174 implements InterfaceC1425 {
                 break;
             case 6:
                 String[] strArr2 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-125709397785268L, strArr2), MagicFactory.get(-125808182033076L, strArr2), MagicFactory.get(-125915556215476L, strArr2));
+                ((C1981) obj).m3827("MicroMsg.NetSceneQueue", "forbid in waiting: type=", "forbid in running: type=");
                 break;
             case 7:
                 C1020 c1020 = (C1020) obj;
@@ -78,9 +78,9 @@ public final /* synthetic */ class C2174 implements InterfaceC1425 {
             case 8:
                 C1332 c1332 = (C1332) obj;
                 String[] strArr3 = AbstractC1574.f5469;
-                c1332.m3051(MagicFactory.get(-127285650782900L, strArr3));
+                c1332.m3051("com.tencent.mm.plugin.luckymoney.model");
                 C0705 c0705 = new C0705(4);
-                c0705.m2127(MagicFactory.get(-127002182941364L, strArr3), MagicFactory.get(-127152506796724L, strArr3));
+                c0705.m2127("MicroMsg.NetSceneReceiveLuckyMoney", "/cgi-bin/mmpay-bin/receivewxhb");
                 c1332.f4791 = c0705;
                 break;
             case 9:
@@ -117,9 +117,9 @@ public final /* synthetic */ class C2174 implements InterfaceC1425 {
             case Opcodes.FCONST_1 /* 12 */:
                 C1332 c1333 = (C1332) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1333.m3051(MagicFactory.get(-128269198293684L, strArr4));
+                c1333.m3051("com.tencent.mm.plugin.remittance.model");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-127805341825716L, strArr4), MagicFactory.get(-127964255615668L, strArr4), MagicFactory.get(-128105989536436L, strArr4));
+                c0706.m2127("Micromsg.NetSceneTenpayRemittanceGen", "/cgi-bin/mmpay-bin/f2fplaceorder", "/cgi-bin/mmpay-bin/transferplaceorder");
                 c1333.f4791 = c0706;
                 break;
             case 13:
@@ -136,9 +136,9 @@ public final /* synthetic */ class C2174 implements InterfaceC1425 {
             case 15:
                 C1332 c1335 = (C1332) obj;
                 String[] strArr5 = AbstractC1574.f5469;
-                c1335.m3051(MagicFactory.get(-128896263518900L, strArr5));
+                c1335.m3051("com.tencent.mm.modelsimple");
                 C0705 c0707 = new C0705(4);
-                c0707.m2127(MagicFactory.get(-128642860448436L, strArr5), MagicFactory.get(-128758824565428L, strArr5));
+                c0707.m2127("MicroMsg.NetSceneRevokeMsg", "/cgi-bin/micromsg-bin/revokemsg");
                 c1335.f4791 = c0707;
                 break;
             case 16:
@@ -179,7 +179,7 @@ public final /* synthetic */ class C2174 implements InterfaceC1425 {
                 break;
             case 20:
                 String[] strArr6 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-129166846458548L, strArr6), MagicFactory.get(-129274220640948L, strArr6));
+                ((C0705) obj).m2127("MicroMsg.NetSceneSendPat", "/cgi-bin/micromsg-bin/sendpat");
                 break;
             case Opcodes.ILOAD /* 21 */:
                 C1020 c1024 = (C1020) obj;
@@ -189,9 +189,9 @@ public final /* synthetic */ class C2174 implements InterfaceC1425 {
             case Opcodes.LLOAD /* 22 */:
                 C1332 c1338 = (C1332) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1338.m3051(MagicFactory.get(-130279242988212L, strArr7));
+                c1338.m3051("com.tencent.mm.plugin.remittance.model");
                 C0705 c0708 = new C0705(4);
-                c0708.m2127(MagicFactory.get(-129755256978100L, strArr7), MagicFactory.get(-129931350637236L, strArr7));
+                c0708.m2127("Micromsg.NetSceneTenpayRemittanceConfirm", "/cgi-bin/mmpay-bin/transferoperation");
                 c1338.f4791 = c0708;
                 break;
             case Opcodes.FLOAD /* 23 */:
@@ -208,9 +208,9 @@ public final /* synthetic */ class C2174 implements InterfaceC1425 {
             case 26:
                 C1332 c1339 = (C1332) obj;
                 String[] strArr8 = AbstractC1574.f5469;
-                c1339.m3051(MagicFactory.get(-131073811937972L, strArr8));
+                c1339.m3051("com.tencent.mm.plugin.sport.model");
                 C0705 c0709 = new C0705(4);
-                c0709.m2127(MagicFactory.get(-130713034685108L, strArr8), MagicFactory.get(-130884833376948L, strArr8));
+                c0709.m2127("MicroMsg.Sport.NetSceneUploadDeviceStep", "/cgi-bin/mmoc-bin/hardware/uploaddevicestep");
                 c1339.f4791 = c0709;
                 break;
             case 27:

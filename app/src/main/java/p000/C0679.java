@@ -69,9 +69,9 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
             case 2:
                 C1332 c1333 = (C1332) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                c1333.m3051(MagicFactory.get(-92157113268916L, strArr2));
+                c1333.m3051("com.tencent.mm.ui.chatting.component");
                 C0705 c0706 = new C0705(i5);
-                c0706.m2127(MagicFactory.get(-91804925950644L, strArr2), MagicFactory.get(-91963839740596L, strArr2));
+                c0706.m2127("MicroMsg.ChattingUI.MessBoxComponent", "onActivityResult: not found this requestCode");
                 c1333.f4791 = c0706;
                 return c3497;
             case 3:
@@ -95,12 +95,12 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
                         C0723.f2734.getClass();
                         c2007.f6678 = C0723.f2736;
                         c2007.f6680 = linearLayout;
-                        c2007.m3870(MagicFactory.get(-570341592136372L, strArr3), new C0106(i2, c2016));
+                        c2007.m3870("保存", new C0106(i2, c2016));
                         AbstractC2784.m4755(c2007, null, 3);
                         return c3497;
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-664431440689844L, strArr3).concat(viewM4676.getResources().getResourceName(i6)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i6)));
             case 6:
                 C1563 c1563 = (C1563) obj;
                 String[] strArr4 = AbstractC1574.f5469;
@@ -120,7 +120,7 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
                 if ((num != null ? num.intValue() : 0) == 0 && C0722.f2733.m2536()) {
                     int i7 = AbstractC1745.f5844;
                     C1973 c1973M3492 = AbstractC0968.m2484(c1563.m3268()).m3492();
-                    c1973M3492.f6370 = MagicFactory.get(-570354477038260L, strArr4);
+                    c1973M3492.f6370 = "getContext";
                     ?? r0 = (Activity) ((C1982) AbstractC2784.m4742(c1973M3492)).m3832(new Object[0]);
                     Object objM3269 = c1563.m3269();
                     if (objM3269 == null) {
@@ -132,17 +132,17 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
                     for (Object obj3 : c1299M3490.m3014()) {
                         TextView textView = (TextView) ((C1315) obj3).m3024();
                         int id = textView.getId();
-                        Integer numM2474 = AbstractC0968.m2474(textView, MagicFactory.get(-570401721678516L, strArr4));
+                        Integer numM2474 = AbstractC0968.m2474(textView, "icon_tv");
                         if (numM2474 == null || id != numM2474.intValue()) {
                             if (z) {
-                                throw new IllegalArgumentException(MagicFactory.get(-570436081416884L, strArr4));
+                                throw new IllegalArgumentException("Collection contains more than one matching element.");
                             }
                             z = true;
                             obj2 = obj3;
                         }
                     }
                     if (!z) {
-                        throw new NoSuchElementException(MagicFactory.get(-570659419716276L, strArr4));
+                        throw new NoSuchElementException("Collection contains no element matching the predicate.");
                     }
                     final TextView textView2 = (TextView) ((C1315) obj2).m3024();
                     WeakReference weakReference = C3406.f10733;
@@ -248,9 +248,9 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
             case 8:
                 C1332 c1334 = (C1332) obj;
                 String[] strArr5 = AbstractC1574.f5469;
-                c1334.m3051(MagicFactory.get(-660261027445428L, strArr5));
+                c1334.m3051("com.tencent.mm.console");
                 C0705 c0707 = new C0705(i5);
-                c0707.m2127(MagicFactory.get(-659900250192564L, strArr5), MagicFactory.get(-660011919342260L, strArr5));
+                c0707.m2127("MicroMsg.CommandProcessor", "summer processed log level[%s], need open debug ret false");
                 c1334.f4791 = c0707;
                 return c3497;
             case 9:
@@ -272,9 +272,9 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
             case Opcodes.FCONST_1 /* 12 */:
                 C1332 c1336 = (C1332) obj;
                 String[] strArr6 = AbstractC1574.f5469;
-                c1336.m3051(MagicFactory.get(-380598526933684L, strArr6));
+                c1336.m3051("com.tencent.mm.storage");
                 C0705 c0708 = new C0705(i5);
-                c0708.m2127(MagicFactory.get(-380349418830516L, strArr6), MagicFactory.get(-380448203078324L, strArr6));
+                c0708.m2127("MicroMsg.ConfigStorage", "shouldProcessEvent db is close :%s");
                 c1336.f4791 = c0708;
                 return c3497;
             case 13:
@@ -285,17 +285,17 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
                 return c3497;
             case 15:
                 String[] strArr7 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-116724326202036L, strArr7), MagicFactory.get(-116818815482548L, strArr7), MagicFactory.get(-116887534959284L, strArr7), MagicFactory.get(-116977729272500L, strArr7), MagicFactory.get(-117076513520308L, strArr7), MagicFactory.get(-117171002800820L, strArr7));
+                ((C1981) obj).m3827("login_weixin_username", "login_user_name", "last_login_nick_name", "last_login_bind_mobile", "last_login_bind_email", "last_login_bind_qq");
                 return c3497;
             case 16:
                 C1984 c1984 = (C1984) obj;
                 c1984.getClass();
                 C1981 c1982 = new C1981(i5);
                 String[] strArr8 = AbstractC1574.f5469;
-                c1982.m3826(MagicFactory.get(-93570157509300L, strArr8));
+                c1982.m3826("compareContent");
                 c1984.m3848(c1982);
                 C1981 c1983 = new C1981(i5);
-                c1983.m3826(MagicFactory.get(-93634582018740L, strArr8));
+                c1983.m3826("op");
                 c1984.m3848(c1983);
                 c1984.m3849(new C0679(17));
                 return c3497;
@@ -314,11 +314,11 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
                 return c3497;
             case 19:
                 String[] strArr9 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-93089121172148L, strArr9), MagicFactory.get(-93217970191028L, strArr9));
+                ((C1981) obj).m3827("MicroMsg.Label.ContactLabelUI", "cpan[saveContact]");
                 return c3497;
             case 20:
                 String[] strArr10 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-93295279602356L, strArr10), MagicFactory.get(-93462783326900L, strArr10));
+                ((C1981) obj).m3827("MicroMsg.Label.ContactLabelManagerImpl", "add contact label faild.");
                 return c3497;
             case Opcodes.ILOAD /* 21 */:
                 ((C1020) obj).f3732 = new C0679(22);
@@ -361,9 +361,9 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
             case 27:
                 C1333 c1337 = (C1333) obj;
                 String[] strArr11 = AbstractC1574.f5469;
-                c1337.m3053(MagicFactory.get(-360523849792180L, strArr11));
+                c1337.m3053("com.tencent.mm.storage");
                 C1981 c19810 = new C1981(i5);
-                c19810.m3827(MagicFactory.get(-360214612146868L, strArr11), MagicFactory.get(-360364936002228L, strArr11));
+                c19810.m3827("MicroMsg.Label.ContactLabelStorage", "cpan[getLabelIdByStr] label id is %s");
                 c1337.f4794 = c19810;
                 return c3497;
             case 28:

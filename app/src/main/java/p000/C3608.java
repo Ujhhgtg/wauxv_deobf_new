@@ -103,15 +103,15 @@ public final class C3608 extends AbstractC2862 implements InterfaceC1429 {
                 int i3 = this.f11269;
                 if (i3 != 0) {
                     if (i3 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(-652036165073588L, strArr2));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC0743.m2188(obj);
                     return c3497;
                 }
                 AbstractC0743.m2188(obj);
-                AbstractC2834.m4823(null, 3, MagicFactory.get(-651980330498740L, strArr2) + str4 + MagicFactory.get(-652001805335220L, strArr2));
+                AbstractC2834.m4823(null, 3, "开始下载" + str4 + "图片");
                 String str6 = str2 + str;
-                C2536 c2537 = new C2536(C3612.f11297.m2542() + '/' + str4 + '-' + str3 + MagicFactory.get(-652014690237108L, strArr2), 6);
+                C2536 c2537 = new C2536(C3612.f11297.m2542() + '/' + str4 + '-' + str3 + ".png", 6);
                 C1002 c1003 = AbstractC1075.f3893;
                 C2146 c2147 = new C2146(AbstractC2203.m4025(interfaceC0884, AbstractC2209.m4140(ExecutorC0990.f3609, new C2857()), new C2363(str6, c2537, interfaceC0842, 7)));
                 this.f11270 = null;

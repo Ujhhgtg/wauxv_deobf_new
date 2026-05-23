@@ -126,12 +126,12 @@ public final /* synthetic */ class C0055 implements InterfaceC1425 {
                     C1846 c1846 = C1846.f6140;
                     C1973 c1973M3492 = c1744M2484.m3492();
                     String[] strArr2 = AbstractC1574.f5469;
-                    c1973M3492.f6370 = MagicFactory.get(-556692186069684L, strArr2);
+                    c1973M3492.f6370 = "getLatitude";
                     C3689 c3689M4174 = c1846.m4174((C1982) AbstractC0744.m2191(c1973M3492.m3799()), 1);
                     c1846.m3263(c3689M4174, new C1608(29));
                     c3689M4174.m5352();
                     C1973 c1973M3493 = c1744M2484.m3492();
-                    c1973M3493.f6370 = MagicFactory.get(-556743725677236L, strArr2);
+                    c1973M3493.f6370 = "getLongitude";
                     C3689 c3689M4175 = c1846.m4174((C1982) AbstractC0744.m2191(c1973M3493.m3799()), 1);
                     c1846.m3263(c3689M4175, new C1837(i2));
                     c3689M4175.m5352();
@@ -165,7 +165,7 @@ public final /* synthetic */ class C0055 implements InterfaceC1425 {
                 C2056.f6843.getClass();
                 String strM2542 = C2054.f6841.m2542();
                 String[] strArr3 = AbstractC1574.f5469;
-                c0408.m1608(AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(strM2542, MagicFactory.get(-512522742397620L, strArr3), str), MagicFactory.get(-512574282005172L, strArr3), MagicFactory.get(-512608641743540L, strArr3)), MagicFactory.get(-512617231678132L, strArr3), AbstractC3681.m5339(System.currentTimeMillis(), C2055.f6842.m2542(), null, 2)));
+                c0408.m1608(AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(strM2542, "${sendText}", str), "${line}", "\n"), "${sendTime}", AbstractC3681.m5339(System.currentTimeMillis(), C2055.f6842.m2542(), null, 2)));
                 return c3497;
             case 7:
                 List list = (List) obj2;

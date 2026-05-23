@@ -56,9 +56,9 @@ public final /* synthetic */ class C2111 implements InterfaceC1429 {
                 }
                 StringBuilder sb2 = new StringBuilder();
                 String[] strArr2 = AbstractC1574.f5469;
-                sb2.append(MagicFactory.get(-541707045173940L, strArr2));
+                sb2.append("已转发至");
                 sb2.append(list2.size());
-                sb2.append(MagicFactory.get(-541728520010420L, strArr2));
+                sb2.append("个会话");
                 AbstractC2834.m4823(null, 3, sb2.toString());
                 break;
             default:
@@ -72,11 +72,11 @@ public final /* synthetic */ class C2111 implements InterfaceC1429 {
                 }
                 StringBuilder sb3 = new StringBuilder();
                 String[] strArr3 = AbstractC1574.f5469;
-                sb3.append(MagicFactory.get(-572875622841012L, strArr3));
+                sb3.append("已转发");
                 sb3.append(arrayList.size());
-                sb3.append(MagicFactory.get(-572892802710196L, strArr3));
+                sb3.append("条语音至");
                 sb3.append(list3.size());
-                sb3.append(MagicFactory.get(-572914277546676L, strArr3));
+                sb3.append("个会话");
                 AbstractC2834.m4823(null, 3, sb3.toString());
                 break;
         }

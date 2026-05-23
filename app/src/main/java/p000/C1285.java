@@ -132,7 +132,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 c1299M4738.f4725 = AbstractC2519.m4527(cls);
                 int iIntValue = ((Number) ((C1315) AbstractC0744.m2191(c1299M4738.m3014())).m3024()).intValue();
                 C1299 c1299M4739 = AbstractC2784.m4738(c1564);
-                c1299M4739.f4725 = MagicFactory.get(-50199577754292L, strArr2);
+                c1299M4739.f4725 = "com.tencent.mm.plugin.fav.ui.FavoriteIndexUI";
                 C1299 c1299M3491 = AbstractC0968.m2484((Activity) ((C1315) AbstractC0744.m2191(c1299M4739.m3014())).m3024()).m3490();
                 c1299M3491.f4726 = new C1285(6);
                 Object item = ((BaseAdapter) ((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3024()).getItem(iIntValue);
@@ -148,26 +148,26 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     } catch (Exception e4) {
                         ArrayList arrayList3 = C3678.f11549;
                         StringBuilder sb3 = new StringBuilder();
-                        sb3.append(MagicFactory.get(-50392851282612L, strArr2));
-                        sb3.append(obj4 instanceof AbstractC2867 ? ((AbstractC2867) obj4).mo1128() : MagicFactory.get(-50474455661236L, strArr2));
-                        AbstractC1194.m2792(sb3, MagicFactory.get(-50513110366900L, strArr2), e4, 12);
+                        sb3.append("onCreateMenuItems ");
+                        sb3.append(obj4 instanceof AbstractC2867 ? ((AbstractC2867) obj4).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb3, " Failed", e4, 12);
                     }
                 }
                 return c3497;
             case 4:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr3 = AbstractC1574.f5469;
-                c1333.m3053(MagicFactory.get(-51303384349364L, strArr3));
+                c1333.m3053("com.tencent.mm.plugin.fav.ui");
                 C1981 c1981 = new C1981(4);
-                c1981.m3827(MagicFactory.get(-51105815853748L, strArr3), MagicFactory.get(-51213190036148L, strArr3));
+                c1981.m3827("MicroMsg.FavoriteIndexUI", "onMMMenuItemSelected");
                 c1333.f4794 = c1981;
                 return c3497;
             case 5:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1334.m3053(MagicFactory.get(-50981261802164L, strArr4));
+                c1334.m3053("com.tencent.mm.plugin.fav.ui");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827(MagicFactory.get(-50547470105268L, strArr4), (AbstractC3471.m5079(EnumC3677.f11528) || AbstractC3471.m5080(EnumC3674.f11495)) ? MagicFactory.get(-50654844287668L, strArr4) : MagicFactory.get(-50787988273844L, strArr4));
+                c1982.m3827("MicroMsg.FavoriteIndexUI", (AbstractC3471.m5079(EnumC3677.f11528) || AbstractC3471.m5080(EnumC3674.f11495)) ? "[OnCreateContextMMMenu] pos = " : "onCreateContextMenu() pos:%s id:%s fav_id:%s");
                 c1334.f4794 = c1982;
                 return c3497;
             case 6:
@@ -182,9 +182,9 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
             case 9:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr5 = AbstractC1574.f5469;
-                c1335.m3053(MagicFactory.get(-52896817216180L, strArr5));
+                c1335.m3053("com.tencent.mm.plugin.fav.ui");
                 C1981 c1983 = new C1981(4);
-                c1983.m3827(MagicFactory.get(-52694953753268L, strArr5), MagicFactory.get(-52806622902964L, strArr5));
+                c1983.m3827("MicroMsg.FavSearchManager", "onMMMenuItemSelected");
                 c1335.f4794 = c1983;
                 return c3497;
             case 10:
@@ -219,9 +219,9 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                                 ArrayList arrayList4 = C3678.f11549;
                                 StringBuilder sb4 = new StringBuilder();
                                 String[] strArr6 = AbstractC1574.f5469;
-                                sb4.append(MagicFactory.get(-51754355915444L, strArr6));
-                                sb4.append(obj5 instanceof AbstractC2867 ? ((AbstractC2867) obj5).mo1128() : MagicFactory.get(-51835960294068L, strArr6));
-                                AbstractC1194.m2792(sb4, MagicFactory.get(-51874614999732L, strArr6), e, 12);
+                                sb4.append("onCreateMenuItems ");
+                                sb4.append(obj5 instanceof AbstractC2867 ? ((AbstractC2867) obj5).mo1128() : "LoadHook");
+                                AbstractC1194.m2792(sb4, " Failed", e, 12);
                                 i2 = R.id.MenuItem_Group;
                             }
                         }
@@ -249,7 +249,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 c1299M47310.f4725 = AbstractC2519.m4527(cls);
                 int iIntValue2 = ((Number) ((C1315) AbstractC0744.m2191(c1299M47310.m3014())).m3024()).intValue();
                 C1299 c1299M47311 = AbstractC2784.m4738(c1566);
-                c1299M47311.f6370 = MagicFactory.get(-52072183495348L, strArr7);
+                c1299M47311.f6370 = "d";
                 C1299 c1299M3493 = AbstractC0968.m2484(((C1315) AbstractC0744.m2191(c1299M47311.m3014())).m3023()).m3490();
                 c1299M3493.f4726 = new C1285(13);
                 Object item2 = ((BaseAdapter) ((C1315) AbstractC0744.m2191(c1299M3493.m3014())).m3024()).getItem(iIntValue2);
@@ -265,18 +265,18 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     } catch (Exception e7) {
                         ArrayList arrayList5 = C3678.f11549;
                         StringBuilder sb5 = new StringBuilder();
-                        sb5.append(MagicFactory.get(-52080773429940L, strArr7));
-                        sb5.append(obj6 instanceof AbstractC2867 ? ((AbstractC2867) obj6).mo1128() : MagicFactory.get(-52162377808564L, strArr7));
-                        AbstractC1194.m2792(sb5, MagicFactory.get(-52201032514228L, strArr7), e7, 12);
+                        sb5.append("onCreateMenuItems ");
+                        sb5.append(obj6 instanceof AbstractC2867 ? ((AbstractC2867) obj6).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb5, " Failed", e7, 12);
                     }
                 }
                 return c3497;
             case Opcodes.FCONST_1 /* 12 */:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr8 = AbstractC1574.f5469;
-                c1336.m3053(MagicFactory.get(-52570399701684L, strArr8));
+                c1336.m3053("com.tencent.mm.plugin.fav.ui");
                 C1981 c1984 = new C1981(4);
-                c1984.m3827(MagicFactory.get(-52235392252596L, strArr8), MagicFactory.get(-52347061402292L, strArr8));
+                c1984.m3827("MicroMsg.FavSearchManager", "itemInfo exist detail but no note or record, error!");
                 c1336.f4794 = c1984;
                 return c3497;
             case 13:
@@ -284,7 +284,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 break;
             case Opcodes.DCONST_0 /* 14 */:
                 String[] strArr9 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-535994738670260L, strArr9), MagicFactory.get(-536063458146996L, strArr9));
+                ((C0705) obj).m2127("VFS.VFSStrategy", "Found wrong moving file: ");
                 return c3497;
             case 15:
                 C2011 c2011M3872 = C2011.m3872(LayoutInflater.from(((View) obj).getContext()));
@@ -294,8 +294,8 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 c2007.f6678 = C1323.f4775;
                 c2007.f6680 = c2011M3872.f6707;
                 String[] strArr10 = AbstractC1574.f5469;
-                c2007.m3870(MagicFactory.get(-535921724226228L, strArr10), new C1173(c2011M3872, 1));
-                c2007.m3869(MagicFactory.get(-535934609128116L, strArr10), new C0104(28));
+                c2007.m3870("保存", new C1173(c2011M3872, 1));
+                c2007.m3869("重置", new C0104(28));
                 C2007.m3866(c2007, null, 3);
                 c2007.m3868().m3791();
                 return c3497;
@@ -351,9 +351,9 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
             case Opcodes.LLOAD /* 22 */:
                 C1333 c1338 = (C1333) obj;
                 String[] strArr11 = AbstractC1574.f5469;
-                c1338.m3053(MagicFactory.get(-54262616816308L, strArr11));
+                c1338.m3053("com.tencent.mm.plugin.finder.feed");
                 C1981 c1986 = new C1981(4);
-                c1986.m3827(MagicFactory.get(-54073638255284L, strArr11), MagicFactory.get(-54095113091764L, strArr11), MagicFactory.get(-54116587928244L, strArr11), MagicFactory.get(-54142357732020L, strArr11), MagicFactory.get(-54172422503092L, strArr11));
+                c1986.m3827("feed", "menu", "sheet", "holder", "KEY_FINDER_SELF_FLAG");
                 c1338.f4794 = c1986;
                 return c3497;
             case Opcodes.FLOAD /* 23 */:
@@ -380,19 +380,19 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 MenuItem menuItem3 = (MenuItem) (c25811 instanceof C2585 ? null : c25811);
                 int i10 = AbstractC1745.f5844;
                 C1299 c1299M3494 = AbstractC0968.m2484(obj7).m3490();
-                c1299M3494.f4725 = MagicFactory.get(-53571127081652L, strArr12);
+                c1299M3494.f4725 = "com.tencent.mm.plugin.finder.storage.FinderItem";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3494)).m3023();
                 C1973 c1973M3492 = AbstractC0968.m2484(objM3023).m3492();
-                c1973M3492.f6370 = MagicFactory.get(-53777285511860L, strArr12);
+                c1973M3492.f6370 = "getMediaType";
                 int iIntValue3 = ((Number) ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3832(new Object[0])).intValue();
                 C1973 c1973M3493 = AbstractC0968.m2484(objM3023).m3492();
-                c1973M3493.f6370 = MagicFactory.get(-53833120086708L, strArr12);
+                c1973M3493.f6370 = "getMediaList";
                 List list = (List) ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3832(new Object[0]);
                 ArrayList arrayList6 = new ArrayList(AbstractC0746.m2214(list, 10));
                 for (Object obj8 : list) {
                     int i11 = AbstractC1745.f5844;
                     C1973 c1973M3494 = AbstractC0968.m2484(obj8).m3492();
-                    c1973M3494.f6370 = MagicFactory.get(-53888954661556L, strArr12);
+                    c1973M3494.f6370 = "toJSON";
                     arrayList6.add((JSONObject) ((C1982) AbstractC2784.m4742(c1973M3494)).m3832(new Object[0]));
                 }
                 for (Object obj9 : C1337.f4802) {
@@ -405,18 +405,18 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     } catch (Exception e8) {
                         ArrayList arrayList7 = C3678.f11549;
                         StringBuilder sb6 = new StringBuilder();
-                        sb6.append(MagicFactory.get(-53919019432628L, strArr12));
-                        sb6.append(obj9 instanceof AbstractC2867 ? ((AbstractC2867) obj9).mo1128() : MagicFactory.get(-54000623811252L, strArr12));
-                        AbstractC1194.m2792(sb6, MagicFactory.get(-54039278516916L, strArr12), e8, 12);
+                        sb6.append("onCreateMenuItems ");
+                        sb6.append(obj9 instanceof AbstractC2867 ? ((AbstractC2867) obj9).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb6, " Failed", e8, 12);
                     }
                 }
                 return c3497;
             case Opcodes.DLOAD /* 24 */:
                 C1332 c1332 = (C1332) obj;
                 String[] strArr13 = AbstractC1574.f5469;
-                c1332.m3051(MagicFactory.get(-54924041779892L, strArr13));
+                c1332.m3051("com.tencent.mm.plugin.finder.feed");
                 C0705 c0705 = new C0705(4);
-                c0705.m2127(MagicFactory.get(-54408645704372L, strArr13), MagicFactory.get(-54597624265396L, strArr13));
+                c0705.m2127("Finder.FinderLoaderFeedUIContract.Presenter", "getMoreMenuItemSelectedListener feed ");
                 c1332.f4791 = c0705;
                 return c3497;
             case Opcodes.ALOAD /* 25 */:
@@ -450,9 +450,9 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                         ArrayList arrayList8 = C3678.f11549;
                         StringBuilder sb7 = new StringBuilder();
                         String[] strArr14 = AbstractC1574.f5469;
-                        sb7.append(MagicFactory.get(-53416508258996L, strArr14));
-                        sb7.append(obj10 instanceof AbstractC2867 ? ((AbstractC2867) obj10).mo1128() : MagicFactory.get(-53498112637620L, strArr14));
-                        AbstractC1194.m2792(sb7, MagicFactory.get(-53536767343284L, strArr14), e9, 12);
+                        sb7.append("onCreateMenuItems ");
+                        sb7.append(obj10 instanceof AbstractC2867 ? ((AbstractC2867) obj10).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb7, " Failed", e9, 12);
                     }
                 }
                 return c3497;

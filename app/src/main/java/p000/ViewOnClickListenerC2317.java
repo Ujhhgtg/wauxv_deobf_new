@@ -37,13 +37,13 @@ public final /* synthetic */ class ViewOnClickListenerC2317 implements View.OnCl
             case 2:
                 C2873 c2873 = AbstractC2342.f7529;
                 String[] strArr3 = AbstractC1574.f5469;
-                AbstractC2834.m4819(AbstractC2342.m4330(MagicFactory.get(-36490042145460L, strArr3)));
-                AbstractC2834.m4823(null, 3, MagicFactory.get(-534074888288948L, strArr3));
+                AbstractC2834.m4819(AbstractC2342.m4330("Plugin"));
+                AbstractC2834.m4823(null, 3, "复制成功");
                 break;
             case 3:
                 String[] strArr4 = AbstractC1574.f5469;
-                AbstractC2834.m4819(MagicFactory.get(-464401928813236L, strArr4));
-                AbstractC2834.m4823(null, 3, MagicFactory.get(-464513597962932L, strArr4));
+                AbstractC2834.m4819("1.2.7.r1356.3e63484(1356)");
+                AbstractC2834.m4823(null, 3, "复制成功");
                 break;
             case 4:
                 AbstractC2834.m4819(AbstractC3691.f11600);

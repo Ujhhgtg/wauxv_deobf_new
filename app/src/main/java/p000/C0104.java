@@ -117,10 +117,10 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
             case 11:
                 C0455 c0455 = C0455.f2030;
                 String[] strArr2 = AbstractC1574.f5469;
-                c0455.m2548(MagicFactory.get(-476243153648308L, strArr2));
-                C0456.f2031.m2548(MagicFactory.get(-476256038550196L, strArr2));
-                C0457.f2032.m2548(MagicFactory.get(-476268923452084L, strArr2));
-                C0460.f2035.m2548(MagicFactory.get(-476281808353972L, strArr2));
+                c0455.m2548("微信");
+                C0456.f2031.m2548("通讯");
+                C0457.f2032.m2548("发现");
+                C0460.f2035.m2548("我的");
                 C0461.f2036.m2543(true);
                 C0462.f2037.m2543(true);
                 C0459.f2034.m2543(false);
@@ -161,24 +161,24 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
             case Opcodes.SIPUSH /* 17 */:
                 C0468 c0468 = C0468.f2059;
                 String[] strArr3 = AbstractC1574.f5469;
-                c0468.m2548(MagicFactory.get(-479911055719092L, strArr3));
-                C0472.f2063.m2548(MagicFactory.get(-479954005392052L, strArr3));
-                C0470.f2061.m2548(MagicFactory.get(-479996955065012L, strArr3));
-                C0467.f2058.m2548(MagicFactory.get(-480039904737972L, strArr3));
-                C0471.f2062.m2548(MagicFactory.get(-480082854410932L, strArr3));
-                C0469.f2060.m2548(MagicFactory.get(-480125804083892L, strArr3));
+                c0468.m2548("#FFF7F7F7");
+                C0472.f2063.m2548("#FFCCE8E3");
+                C0470.f2061.m2548("#FF1E1E1E");
+                C0467.f2058.m2548("#FF1E1E1E");
+                C0471.f2062.m2548("#FF324B48");
+                C0469.f2060.m2548("#FFF7F7F7");
                 return c3497;
             case Opcodes.LDC /* 18 */:
                 C0620 c0620 = C0620.f2449;
                 String[] strArr4 = AbstractC1574.f5469;
-                c0620.m2548(MagicFactory.get(-624793187515060L, strArr4));
-                C0613.f2442.m2548(MagicFactory.get(-624836137188020L, strArr4));
-                C0615.f2444.m2548(MagicFactory.get(-624879086860980L, strArr4));
-                C0617.f2446.m2548(MagicFactory.get(-624922036533940L, strArr4));
-                C0619.f2448.m2548(MagicFactory.get(-624964986206900L, strArr4));
-                C0612.f2441.m2548(MagicFactory.get(-625007935879860L, strArr4));
-                C0614.f2443.m2548(MagicFactory.get(-625050885552820L, strArr4));
-                C0616.f2445.m2548(MagicFactory.get(-625093835225780L, strArr4));
+                c0620.m2548("#FFEDEDED");
+                C0613.f2442.m2548("#FF006A62");
+                C0615.f2444.m2548("#FF161D1C");
+                C0617.f2446.m2548("#FF006A62");
+                C0619.f2448.m2548("#FF242424");
+                C0612.f2441.m2548("#FF81D5CB");
+                C0614.f2443.m2548("#FFDDE4E2");
+                C0616.f2445.m2548("#FF81D5CB");
                 return c3497;
             case 19:
                 C0628.f2463.m2548("今日已发${totalMsg}条");

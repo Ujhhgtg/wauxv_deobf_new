@@ -76,30 +76,30 @@ public final class C1513 extends AbstractC2867 implements InterfaceC1582, Interf
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final void mo1233(C1563 c1563, String str, ContentValues contentValues, String str2, String[] strArr, int i) throws IOException {
         String[] strArr2 = AbstractC1574.f5469;
-        if (mo3264() && str.equals(MagicFactory.get(-550228260289204L, strArr2))) {
-            String asString = contentValues.getAsString(MagicFactory.get(-550266914994868L, strArr2));
-            Integer asInteger = contentValues.getAsInteger(MagicFactory.get(-550322749569716L, strArr2));
-            String asString2 = contentValues.getAsString(MagicFactory.get(-550374289177268L, strArr2));
+        if (mo3264() && str.equals("chatroom")) {
+            String asString = contentValues.getAsString("chatroomname");
+            Integer asInteger = contentValues.getAsInteger("memberCount");
+            String asString2 = contentValues.getAsString("memberlist");
             if (asString2 == null || AbstractC2841.m4836(asString2)) {
                 return;
             }
-            Set setM2209 = AbstractC0744.m2209(AbstractC2841.m4843(asString2, new String[]{MagicFactory.get(-550421533817524L, strArr2)}));
+            Set setM2209 = AbstractC0744.m2209(AbstractC2841.m4843(asString2, new String[]{";"}));
             int i2 = AbstractC1745.f5844;
             C2800.f8930.getClass();
             C1973 c1973M3492 = AbstractC0968.m2484(C2800.m4779()).m3492();
-            c1973M3492.f6370 = MagicFactory.get(-96112778148532L, strArr2);
-            Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832(MagicFactory.get(-550430123752116L, strArr2), new Object[]{asString});
+            c1973M3492.f6370 = "rawQuery";
+            Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832("SELECT memberlist, memberCount FROM chatroom WHERE chatroomname = ?", new Object[]{asString});
             if (cursor != null) {
                 try {
                     if (cursor.moveToFirst()) {
-                        int i3 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(-550722181528244L, strArr2)));
+                        int i3 = cursor.getInt(cursor.getColumnIndex("memberCount"));
                         if (i3 == 0) {
                             cursor.close();
                             return;
                         }
-                        String string = cursor.getString(cursor.getColumnIndex(MagicFactory.get(-550773721135796L, strArr2)));
+                        String string = cursor.getString(cursor.getColumnIndex("memberlist"));
                         if (string != null && !AbstractC2841.m4836(string)) {
-                            Set setM22010 = AbstractC0744.m2209(AbstractC2841.m4843(string, new String[]{MagicFactory.get(-550820965776052L, strArr2)}));
+                            Set setM22010 = AbstractC0744.m2209(AbstractC2841.m4843(string, new String[]{";"}));
                             if (asInteger.intValue() < i3) {
                                 for (String str3 : AbstractC2665.m4669(setM22010, setM2209)) {
                                     C1513 c1513 = f5334;

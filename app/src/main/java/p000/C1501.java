@@ -146,10 +146,10 @@ public final /* synthetic */ class C1501 implements InterfaceC1425 {
                 String str3 = (String) this.f5307;
                 Intent intent = new Intent();
                 String[] strArr2 = AbstractC1574.f5469;
-                intent.setClassName(activity, MagicFactory.get(-101356933216948L, strArr2));
-                intent.putExtra(MagicFactory.get(-101606041320116L, strArr2), MagicFactory.get(-101631811123892L, strArr2));
-                intent.putExtra(MagicFactory.get(-101661875894964L, strArr2), str2);
-                intent.putExtra(MagicFactory.get(-101713415502516L, strArr2), str3);
+                intent.setClassName(activity, "com.tencent.mm.chatroom.ui.SelectedMemberChattingRecordUI");
+                intent.putExtra("title", "历史发言记录");
+                intent.putExtra("RoomInfo_Id", str2);
+                intent.putExtra("room_member", str3);
                 activity.startActivity(intent);
                 break;
             default:
@@ -158,9 +158,9 @@ public final /* synthetic */ class C1501 implements InterfaceC1425 {
                 String str4 = (String) this.f5307;
                 Intent intent2 = new Intent();
                 String[] strArr3 = AbstractC1574.f5469;
-                intent2.setClassName(activity2, MagicFactory.get(-102340480727732L, strArr3));
-                intent2.putStringArrayListExtra(MagicFactory.get(-102516574386868L, strArr3), arrayList5);
-                intent2.putExtra(MagicFactory.get(-102606768700084L, strArr3), str4);
+                intent2.setClassName(activity2, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                intent2.putStringArrayListExtra("sns_kemdia_path_list", arrayList5);
+                intent2.putExtra("Kdescription", str4);
                 activity2.startActivity(intent2);
                 break;
         }

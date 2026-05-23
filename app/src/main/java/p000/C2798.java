@@ -129,9 +129,9 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                     } catch (Exception e) {
                         ArrayList arrayList = C3678.f11549;
                         StringBuilder sb = new StringBuilder();
-                        sb.append(MagicFactory.get(-66133906422452L, strArr2));
-                        sb.append(interfaceC1601 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1601).mo1128() : MagicFactory.get(-66236985637556L, strArr2));
-                        AbstractC1194.m2792(sb, MagicFactory.get(-66275640343220L, strArr2), e, 12);
+                        sb.append("onDatabaseInsertBefore ");
+                        sb.append(interfaceC1601 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1601).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb, " Failed", e, 12);
                     }
                 }
                 return c3497;
@@ -206,9 +206,9 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                     } catch (Exception e2) {
                         ArrayList arrayList2 = C3678.f11549;
                         StringBuilder sb2 = new StringBuilder();
-                        sb2.append(MagicFactory.get(-66310000081588L, strArr3));
-                        sb2.append(interfaceC1602 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1602).mo1128() : MagicFactory.get(-66413079296692L, strArr3));
-                        AbstractC1194.m2792(sb2, MagicFactory.get(-66451734002356L, strArr3), e2, 12);
+                        sb2.append("onDatabaseUpdateBefore ");
+                        sb2.append(interfaceC1602 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1602).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb2, " Failed", e2, 12);
                     }
                     str = str6;
                 }
@@ -265,9 +265,9 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                     } catch (Exception e3) {
                         ArrayList arrayList3 = C3678.f11549;
                         StringBuilder sb3 = new StringBuilder();
-                        sb3.append(MagicFactory.get(-66486093740724L, strArr5));
-                        sb3.append(interfaceC1603 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1603).mo1128() : MagicFactory.get(-66584877988532L, strArr5));
-                        AbstractC1194.m2792(sb3, MagicFactory.get(-66623532694196L, strArr5), e3, 12);
+                        sb3.append("onDatabaseQueryBefore ");
+                        sb3.append(interfaceC1603 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1603).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb3, " Failed", e3, 12);
                     }
                 }
                 return c3497;
@@ -341,9 +341,9 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                     } catch (Exception e4) {
                         ArrayList arrayList4 = C3678.f11549;
                         StringBuilder sb4 = new StringBuilder();
-                        sb4.append(MagicFactory.get(-66657892432564L, strArr6));
-                        sb4.append(interfaceC1604 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1604).mo1128() : MagicFactory.get(-66752381713076L, strArr6));
-                        AbstractC1194.m2792(sb4, MagicFactory.get(-66791036418740L, strArr6), e4, 12);
+                        sb4.append("onCompatUpdateBefore ");
+                        sb4.append(interfaceC1604 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1604).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb4, " Failed", e4, 12);
                     }
                 }
                 return c3497;
@@ -383,16 +383,16 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                     } catch (Exception e5) {
                         ArrayList arrayList5 = C3678.f11549;
                         StringBuilder sb5 = new StringBuilder();
-                        sb5.append(MagicFactory.get(-66825396157108L, strArr8));
-                        sb5.append(interfaceC1605 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1605).mo1128() : MagicFactory.get(-66915590470324L, strArr8));
-                        AbstractC1194.m2792(sb5, MagicFactory.get(-66954245175988L, strArr8), e5, 12);
+                        sb5.append("onCompatQueryBefore ");
+                        sb5.append(interfaceC1605 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1605).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb5, " Failed", e5, 12);
                     }
                 }
                 return c3497;
             case 8:
                 String str13 = (String) obj;
                 String[] strArr9 = AbstractC1574.f5469;
-                if (!AbstractC2207.m4087(str13, MagicFactory.get(-66988604914356L, strArr9)) && !AbstractC2207.m4087(str13, MagicFactory.get(-67048734456500L, strArr9))) {
+                if (!AbstractC2207.m4087(str13, "startActivity") && !AbstractC2207.m4087(str13, "startActivityForResult")) {
                     z = false;
                 }
                 return Boolean.valueOf(z);
@@ -426,9 +426,9 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                     } catch (Exception e6) {
                         ArrayList arrayList6 = C3678.f11549;
                         StringBuilder sb6 = new StringBuilder();
-                        sb6.append(MagicFactory.get(-67147518704308L, strArr10));
-                        sb6.append(interfaceC1606 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1606).mo1128() : MagicFactory.get(-67246302952116L, strArr10));
-                        AbstractC1194.m2792(sb6, MagicFactory.get(-67284957657780L, strArr10), e6, 12);
+                        sb6.append("onStartActivityIntent ");
+                        sb6.append(interfaceC1606 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1606).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb6, " Failed", e6, 12);
                     }
                 }
                 return c3497;
@@ -447,25 +447,25 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
             case Opcodes.DCONST_0 /* 14 */:
                 C1332 c1332 = (C1332) obj;
                 String[] strArr11 = AbstractC1574.f5469;
-                c1332.m3051(MagicFactory.get(-365733645122228L, strArr11));
+                c1332.m3051("com.tencent.mm.storage");
                 C0705 c0705 = new C0705(i3);
-                c0705.m2127(MagicFactory.get(-365591911201460L, strArr11));
+                c0705.m2127("PRAGMA table_info( contact_ext )");
                 c1332.f4791 = c0705;
                 return c3497;
             case 15:
                 C1332 c1333 = (C1332) obj;
                 String[] strArr12 = AbstractC1574.f5469;
-                c1333.m3051(MagicFactory.get(-366313465707188L, strArr12));
+                c1333.m3051("com.tencent.mm.storage");
                 C0705 c0706 = new C0705(i3);
-                c0706.m2127(MagicFactory.get(-366167436819124L, strArr12));
+                c0706.m2127("PRAGMA table_info( rconversation)");
                 c1333.f4791 = c0706;
                 return c3497;
             case 16:
                 C1332 c1334 = (C1332) obj;
                 String[] strArr13 = AbstractC1574.f5469;
-                c1334.m3051(MagicFactory.get(-366068652571316L, strArr13));
+                c1334.m3051("com.tencent.mm.storage");
                 C0705 c0707 = new C0705(i3);
-                c0707.m2127(MagicFactory.get(-365832429370036L, strArr13), MagicFactory.get(-365935508585140L, strArr13));
+                c0707.m2127("MicroMsg.MsgInfoStorage", "deleted dirty msg ,count is %d");
                 c1334.f4791 = c0707;
                 return c3497;
             case Opcodes.SIPUSH /* 17 */:
@@ -531,15 +531,15 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                     } catch (Exception e7) {
                         ArrayList arrayList7 = C3678.f11549;
                         StringBuilder sb7 = new StringBuilder();
-                        sb7.append(MagicFactory.get(-67422396611252L, strArr14));
-                        sb7.append(interfaceC1607 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1607).mo1128() : MagicFactory.get(-67495411055284L, strArr14));
-                        AbstractC1194.m2792(sb7, MagicFactory.get(-67534065760948L, strArr14), e7, 12);
+                        sb7.append("onGetSyncConfig ");
+                        sb7.append(interfaceC1607 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1607).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb7, " Failed", e7, 12);
                     }
                 }
                 return c3497;
             case Opcodes.ALOAD /* 25 */:
                 String[] strArr15 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-67568425499316L, strArr15), MagicFactory.get(-67667209747124L, strArr15));
+                ((C0705) obj).m2127("MicroMsg.ConfigStorage", "checkType failed, input type and value[%s, %s] are not match");
                 return c3497;
             case 26:
                 View view = (View) obj;
@@ -619,7 +619,7 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                                             C2882.f9230.getClass();
                                             c2007.f6678 = C2882.f9234;
                                             c2007.f6680 = linearLayout;
-                                            c2007.m3870(MagicFactory.get(-580408995478196L, strArr16), new C0299(c0243, 6, arrayList8));
+                                            c2007.m3870("保存", new C0299(c0243, 6, arrayList8));
                                             AbstractC2784.m4755(c2007, null, 3);
                                             return c3497;
                                         }
@@ -629,7 +629,7 @@ public final /* synthetic */ class C2798 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-668829487200948L, strArr16).concat(viewM4676.getResources().getResourceName(i5)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i5)));
             case 27:
                 C1563 c15610 = (C1563) obj;
                 c15610.getClass();

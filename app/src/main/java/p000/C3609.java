@@ -113,9 +113,9 @@ public final class C3609 extends AbstractC2862 implements InterfaceC1429 {
                 int i3 = this.f11276;
                 if (i3 == 0) {
                     AbstractC0743.m2188(obj);
-                    AbstractC2834.m4823(null, 3, MagicFactory.get(-652860798794420L, strArr2));
-                    String str2 = C3612.f11297.m2542() + '/' + ((String) obj4) + '-' + ((String) obj3) + MagicFactory.get(-652890863565492L, strArr2);
-                    String string2 = ((JSONObject) obj2).getString(MagicFactory.get(-652912338401972L, strArr2));
+                    AbstractC2834.m4823(null, 3, "开始下载视频");
+                    String str2 = C3612.f11297.m2542() + '/' + ((String) obj4) + '-' + ((String) obj3) + ".mp4";
+                    String string2 = ((JSONObject) obj2).getString("pcdn_url");
                     C2536 c2537 = new C2536(str2, 7);
                     C1002 c1003 = AbstractC1075.f3893;
                     C2146 c2147 = new C2146(AbstractC2203.m4025(interfaceC0884, AbstractC2209.m4140(ExecutorC0990.f3609, new C2857()), new C2363(string2, c2537, interfaceC0842, 8)));
@@ -127,11 +127,11 @@ public final class C3609 extends AbstractC2862 implements InterfaceC1429 {
                     }
                 } else {
                     if (i3 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(-652981057878708L, strArr2));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC0743.m2188(obj);
                 }
-                AbstractC2834.m4823(null, 3, MagicFactory.get(-652950993107636L, strArr2));
+                AbstractC2834.m4823(null, 3, "下载视频完成");
                 return c3497;
             default:
                 int i4 = this.f11276;

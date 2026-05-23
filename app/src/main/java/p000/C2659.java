@@ -67,12 +67,12 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
             case 3:
                 C1981 c1981 = (C1981) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                C1981.m3817(c1981, MagicFactory.get(-388900698716852L, strArr2));
-                C1981.m3817(c1981, MagicFactory.get(-388947943357108L, strArr2));
-                C1981.m3817(c1981, MagicFactory.get(-389003777931956L, strArr2));
-                C1981.m3817(c1981, MagicFactory.get(-389029547735732L, strArr2));
-                C1981.m3817(c1981, MagicFactory.get(-389098267212468L, strArr2));
-                C1981.m3817(c1981, MagicFactory.get(-389184166558388L, strArr2));
+                C1981.m3817(c1981, "deviceinfo");
+                C1981.m3817(c1981, "MANUFACTURER");
+                C1981.m3817(c1981, "MODEL");
+                C1981.m3817(c1981, "VERSION_RELEASE");
+                C1981.m3817(c1981, "VERSION_INCREMENTAL");
+                C1981.m3817(c1981, "DISPLAY");
                 return c3497;
             case 4:
                 ((C1020) obj).f3733 = new C2659(5);
@@ -89,9 +89,9 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
             case 8:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr3 = AbstractC1574.f5469;
-                c1333.m3053(MagicFactory.get(-579451217771188L, strArr3));
+                c1333.m3053("com.tencent.mm.pluginsdk.model.app");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827(MagicFactory.get(-579257944242868L, strArr3));
+                c1982.m3827("checkAppSignature get local signature failed");
                 c1333.f4794 = c1982;
                 return c3497;
             case 9:
@@ -107,13 +107,13 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 int i9 = AbstractC1745.f5844;
                 C1973 c1973M3492 = AbstractC0968.m2484(activity).m3492();
                 String[] strArr4 = AbstractC1574.f5469;
-                c1973M3492.f6370 = MagicFactory.get(-642050366110388L, strArr4);
+                c1973M3492.f6370 = "getPreferenceScreen";
                 BaseAdapter baseAdapter = (BaseAdapter) ((C1982) AbstractC2784.m4742(c1973M3492)).m3832(new Object[0]);
-                String stringExtra = activity.getIntent().getStringExtra(MagicFactory.get(-642136265456308L, strArr4));
+                String stringExtra = activity.getIntent().getStringExtra("Chat_User");
                 if (stringExtra == null) {
-                    stringExtra = MagicFactory.get(-642179215129268L, strArr4);
+                    stringExtra = "异常";
                 }
-                AbstractC1574.m3288(baseAdapter, AbstractC1574.m3299(activity, MagicFactory.get(-642192100031156L, strArr4), MagicFactory.get(-642320949050036L, strArr4) + stringExtra), 1);
+                AbstractC1574.m3288(baseAdapter, AbstractC1574.m3299(activity, "WAuxiliary_chatroom_info_pref", "ID: " + stringExtra), 1);
                 return c3497;
             case 11:
                 C1563 c1563 = (C1563) obj;
@@ -144,13 +144,13 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                     String str = (String) ((C1315) it.next()).m3024();
                     if (str != null) {
                         String[] strArr5 = AbstractC1574.f5469;
-                        if (str.equals(MagicFactory.get(-642342423886516L, strArr5))) {
-                            String stringExtra2 = activity2.getIntent().getStringExtra(MagicFactory.get(-642471272905396L, strArr5));
+                        if (str.equals("WAuxiliary_chatroom_info_pref")) {
+                            String stringExtra2 = activity2.getIntent().getStringExtra("Chat_User");
                             if (stringExtra2 == null) {
-                                stringExtra2 = MagicFactory.get(-642514222578356L, strArr5);
+                                stringExtra2 = "异常";
                             }
                             AbstractC2834.m4818(activity2, stringExtra2);
-                            AbstractC2834.m4823(activity2, 2, MagicFactory.get(-642527107480244L, strArr5));
+                            AbstractC2834.m4823(activity2, 2, "复制成功");
                             c1563.m3271();
                         }
                     }
@@ -190,7 +190,7 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 return c3497;
             case 15:
                 String[] strArr6 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-524729039452852L, strArr6), MagicFactory.get(-524832118667956L, strArr6));
+                ((C1981) obj).m3827("MicroMsg.EmojiResHelper", "parseSmileyPanelConfig parseXML exception:%s");
                 return c3497;
             case 16:
                 ((C1020) obj).f3733 = new C2659(18);
@@ -246,9 +246,9 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 int i12 = AbstractC1745.f5844;
                 C1299 c1299M3491 = AbstractC0968.m2484(obj2).m3490();
                 String[] strArr7 = AbstractC1574.f5469;
-                c1299M3491.f6370 = MagicFactory.get(-526893702970036L, strArr7);
+                c1299M3491.f6370 = "d";
                 C1315 c1315 = (C1315) AbstractC0744.m2191(c1299M3491.m3014());
-                if (iIntValue == 4 && iIntValue2 == -2005 && ((String) c1315.m3024()).startsWith(MagicFactory.get(-526902292904628L, strArr7))) {
+                if (iIntValue == 4 && iIntValue2 == -2005 && ((String) c1315.m3024()).startsWith("https://weixin110.qq.com/")) {
                     new C0408(3, 6, c1564).m1608(0);
                     new C0408(4, 6, c1564).m1608(0);
                     c1315.m3025(str2);
@@ -257,9 +257,9 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
             case Opcodes.LDC /* 18 */:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr8 = AbstractC1574.f5469;
-                c1334.m3053(MagicFactory.get(-527452048718516L, strArr8));
+                c1334.m3053("com.tencent.mm.plugin.webview.permission");
                 C1981 c1983 = new C1981(4);
-                c1983.m3827(MagicFactory.get(-527013962054324L, strArr8), MagicFactory.get(-527121336236724L, strArr8));
+                c1983.m3827("MicroMsg.LuggageGetA8Key", "WebView-Trace onSceneEnd resp or cb not found(%b/%b), reqUrl: %s, reason: %d");
                 c1334.f4794 = c1983;
                 return c3497;
             case 19:
@@ -270,8 +270,8 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 c2007.f6678 = C2722.f8784;
                 c2007.f6680 = c2011M3872.f6707;
                 String[] strArr9 = AbstractC1574.f5469;
-                c2007.m3870(MagicFactory.get(-590167161174708L, strArr9), new C1173(c2011M3872, 2));
-                c2007.m3869(MagicFactory.get(-590180046076596L, strArr9), new C2083(i2));
+                c2007.m3870("保存", new C1173(c2011M3872, 2));
+                c2007.m3869("重置", new C2083(i2));
                 C2007.m3866(c2007, null, 3);
                 c2007.m3868().m3791();
                 return c3497;
@@ -304,24 +304,24 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                         int i13 = AbstractC1745.f5844;
                         C1299 c1299M3492 = AbstractC0968.m2484(c25811).m3490();
                         String[] strArr10 = AbstractC1574.f5469;
-                        c1299M3492.f6370 = MagicFactory.get(-590192930978484L, strArr10);
+                        c1299M3492.f6370 = "field_userName";
                         String str3 = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                         C1299 c1299M3493 = AbstractC0968.m2484(c25811).m3490();
-                        c1299M3493.f6370 = MagicFactory.get(-590257355487924L, strArr10);
+                        c1299M3493.f6370 = "field_type";
                         int iIntValue3 = ((Number) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024()).intValue();
                         C1299 c1299M3494 = AbstractC0968.m2484(c25811).m3490();
-                        c1299M3494.f6370 = MagicFactory.get(-590304600128180L, strArr10);
+                        c1299M3494.f6370 = "field_thumbUrl";
                         String str4 = (String) ((C1315) AbstractC2784.m4741(c1299M3494)).m3024();
                         C1299 c1299M3495 = AbstractC0968.m2484(c25811).m3490();
-                        c1299M3495.f6370 = MagicFactory.get(-590369024637620L, strArr10);
+                        c1299M3495.f6370 = "field_imageBgUrl";
                         String str5 = (String) ((C1315) AbstractC2784.m4741(c1299M3495)).m3024();
                         C1299 c1299M3496 = AbstractC0968.m2484(c25811).m3490();
-                        c1299M3496.f6370 = MagicFactory.get(-590442039081652L, strArr10);
+                        c1299M3496.f6370 = "field_videoBgUrl";
                         String str6 = (String) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024();
                         if (iIntValue3 == 1 || iIntValue3 == 2 || iIntValue3 == 3) {
                             if (str4 != null) {
                                 StringBuilder sbM4753 = AbstractC2784.m4753(str3);
-                                sbM4753.append(MagicFactory.get(-590515053525684L, strArr10));
+                                sbM4753.append(".thumbUrl.png");
                                 String string = sbM4753.toString();
                                 c2722.getClass();
                                 C1002 c1002 = AbstractC1075.f3893;
@@ -329,7 +329,7 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                             }
                             if (str5 != null) {
                                 StringBuilder sbM4754 = AbstractC2784.m4753(str3);
-                                sbM4754.append(MagicFactory.get(-590575183067828L, strArr10));
+                                sbM4754.append(".imageBgUrl.png");
                                 String string2 = sbM4754.toString();
                                 c2722.getClass();
                                 C1002 c1003 = AbstractC1075.f3893;
@@ -337,15 +337,15 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                             }
                             if (str6 != null) {
                                 StringBuilder sbM4755 = AbstractC2784.m4753(str3);
-                                sbM4755.append(MagicFactory.get(-590643902544564L, strArr10));
+                                sbM4755.append(".videoBgUrl.png");
                                 String string3 = sbM4755.toString();
                                 c2722.getClass();
                                 C1002 c1004 = AbstractC1075.f3893;
                                 AbstractC0968.m2486(ExecutorC0990.f3609, new C2142(str6, string3, (InterfaceC0842) null));
                             }
-                            AbstractC2834.m4823(null, 3, MagicFactory.get(-590712622021300L, strArr10));
+                            AbstractC2834.m4823(null, 3, "下载完成");
                         } else {
-                            AbstractC2834.m4823(null, 3, MagicFactory.get(-590734096857780L, strArr10) + iIntValue3);
+                            AbstractC2834.m4823(null, 3, "暂不支持的封面类型 " + iIntValue3);
                         }
                         return true;
                     }
@@ -357,9 +357,9 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
             case Opcodes.LLOAD /* 22 */:
                 C1332 c1335 = (C1332) obj;
                 String[] strArr10 = AbstractC1574.f5469;
-                c1335.m3051(MagicFactory.get(-364750097611444L, strArr10));
+                c1335.m3051("com.tencent.mm.plugin.sns.model");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-364595478788788L, strArr10), MagicFactory.get(-364668493232820L, strArr10));
+                c0706.m2127("MicroMsg.SnsCore", "do SnsCore preload");
                 c1335.f4791 = c0706;
                 return c3497;
             case Opcodes.FLOAD /* 23 */:
@@ -368,15 +368,15 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
             case Opcodes.DLOAD /* 24 */:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr11 = AbstractC1574.f5469;
-                c1336.m3053(MagicFactory.get(-369831043922612L, strArr11));
+                c1336.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1984 = new C1981(4);
                 c1984.m3821(4);
-                c1984.m3827(MagicFactory.get(-369560460982964L, strArr11), MagicFactory.get(-369624885492404L, strArr11));
+                c1984.m3827("addDownLoadSns", "com.tencent.mm.plugin.sns.model.DownloadManager");
                 c1336.f4794 = c1984;
                 return c3497;
             case Opcodes.ALOAD /* 25 */:
                 String[] strArr12 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-599027678706356L, strArr12), MagicFactory.get(-599092103215796L, strArr12));
+                ((C1981) obj).m3827("realTimeUpdate", "com.tencent.mm.plugin.sns.ui.improve.item.ImproveTimelineItemMeasure");
                 return c3497;
             case 26:
                 ((C1333) obj).m3052(new C2734(i8));
@@ -398,15 +398,15 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 }
                 C1299 c1299M3492 = AbstractC0968.m2484(c25810 instanceof C2585 ? null : c25810).m3490();
                 String[] strArr13 = AbstractC1574.f5469;
-                c1299M3492.f4725 = MagicFactory.get(-598619656813236L, strArr13);
+                c1299M3492.f4725 = "com.tencent.mm.plugin.sns.storage.SnsInfo";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3492)).m3023();
                 C1973 c1973M3493 = c1744M2484.m3492();
-                c1973M3493.f6370 = MagicFactory.get(-598800045439668L, strArr13);
+                c1973M3493.f6370 = "getPublishTimeText";
                 TextView textView = (TextView) ((C1982) AbstractC2784.m4742(c1973M3493)).m3832(new Object[0]);
                 C2741.f8814.getClass();
-                textView.setText(AbstractC2849.m4857(C2741.m4730(objM3023), MagicFactory.get(-598881649818292L, strArr13), textView.getText().toString()));
+                textView.setText(AbstractC2849.m4857(C2741.m4730(objM3023), "${originalText}", textView.getText().toString()));
                 C1973 c1973M3494 = c1744M2484.m3492();
-                c1973M3494.f6370 = MagicFactory.get(-598950369295028L, strArr13);
+                c1973M3494.f6370 = "getGroupImageStub";
                 View view = (View) ((C1982) AbstractC2784.m4742(c1973M3494)).m3832(new Object[0]);
                 if (view != null && (view instanceof ImageView)) {
                     ((ImageView) view).setVisibility(C2738.f8811.m2536() ? 8 : 0);

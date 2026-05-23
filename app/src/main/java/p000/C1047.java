@@ -102,10 +102,10 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
             case 6:
                 C1332 c1334 = (C1332) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                c1334.m3051(MagicFactory.get(-507901357587124L, strArr2));
+                c1334.m3051("com.tencent.mm.ui.chatting.viewitems");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-507523400465076L, strArr2));
-                C2837 c2837 = new C2837(MagicFactory.get(-507665134385844L, strArr2), 1, false);
+                c0706.m2127(".msgsource.sec_msg_node.clip-len");
+                C2837 c2837 = new C2837("MicroMsg.ChattingItem", 1, false);
                 List arrayList = c0706.f2688;
                 if (arrayList == null) {
                     arrayList = new ArrayList();
@@ -134,11 +134,11 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
                 return c3497;
             case 13:
                 String[] strArr3 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-508399573793460L, strArr3), MagicFactory.get(-508494063073972L, strArr3));
+                ((C1981) obj).m3827("MicroMsg.PluginPatMsg", "DisableSendPat");
                 return c3497;
             case Opcodes.DCONST_0 /* 14 */:
                 String[] strArr4 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-509383121304244L, strArr4), MagicFactory.get(-509494790453940L, strArr4));
+                ((C1981) obj).m3827("MicroMsg.BaseSceneSetting", "playSound Failed Throwable t = ");
                 return c3497;
             case 15:
                 String[] strArr5 = AbstractC1574.f5469;
@@ -157,12 +157,12 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
                         C1058.f3836.getClass();
                         c2007.f6678 = C1058.f3838;
                         c2007.f6680 = linearLayout;
-                        c2007.m3870(MagicFactory.get(-509275747121844L, strArr5), new C0106(19, c2016));
+                        c2007.m3870("保存", new C0106(19, c2016));
                         AbstractC2784.m4755(c2007, null, 3);
                         return c3497;
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-664981196503732L, strArr5).concat(viewM4676.getResources().getResourceName(i4)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i4)));
             case 16:
                 ((C1020) obj).f3733 = new C1047(18);
                 return c3497;
@@ -179,8 +179,8 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
                 }
                 Bundle bundle = (Bundle) (c2587 instanceof C2585 ? null : c2587);
                 String[] strArr6 = AbstractC1574.f5469;
-                if (AbstractC2207.m4087(bundle.getString(MagicFactory.get(-509288632023732L, strArr6)), MagicFactory.get(-509314401827508L, strArr6))) {
-                    boolean z = bundle.getBoolean(MagicFactory.get(-509340171631284L, strArr6));
+                if (AbstractC2207.m4087(bundle.getString("scene"), "start")) {
+                    boolean z = bundle.getBoolean("isOutCall");
                     boolean z2 = z && C1057.f3835.m2536();
                     boolean z3 = !z && C1056.f3834.m2536();
                     if (z2 || z3) {
@@ -200,9 +200,9 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
             case Opcodes.ILOAD /* 21 */:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1335.m3053(MagicFactory.get(-510323719142068L, strArr7));
+                c1335.m3053("com.tencent.mm.ui.chatting.component");
                 C1981 c1981 = new C1981(4);
-                c1981.m3827(MagicFactory.get(-510023071431348L, strArr7), MagicFactory.get(-510147625482932L, strArr7));
+                c1981.m3827("MicroMsg.SignallingComponent", "[doDirectSend] mChattingContext is null!");
                 c1335.f4794 = c1981;
                 return c3497;
             case Opcodes.LLOAD /* 22 */:
@@ -213,7 +213,7 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
                 return c3497;
             case Opcodes.DLOAD /* 24 */:
                 String[] strArr8 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-113829518244532L, strArr8), MagicFactory.get(-113958367263412L, strArr8));
+                ((C0705) obj).m2127("ModelImage.DownloadImgService", "cancelNetScene reset curTaskInfo (%s %s %s)");
                 return c3497;
             case Opcodes.ALOAD /* 25 */:
                 C1020 c1022 = (C1020) obj;
@@ -233,7 +233,7 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
                 Class<String> clsM4741 = AbstractC2784.m4740(c1981M47310, clsM2185, cls);
                 c1981M47310.m3823(clsM4741 != null ? clsM4741 : String.class);
                 String[] strArr9 = AbstractC1574.f5469;
-                c1981M47310.m3827(MagicFactory.get(-48661979462324L, strArr9), MagicFactory.get(-48760763710132L, strArr9));
+                c1981M47310.m3827("MicroMsg.DynamicConfig", "DynamicConfig hadnot load");
                 c1336.f4794 = c1981M47310;
                 return c3497;
             case 28:
@@ -261,15 +261,15 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
                         ArrayList arrayList2 = C3678.f11549;
                         StringBuilder sb = new StringBuilder();
                         String[] strArr10 = AbstractC1574.f5469;
-                        sb.append(MagicFactory.get(-48245367634612L, strArr10));
-                        sb.append(MagicFactory.get(-48331266980532L, strArr10));
-                        AbstractC1194.m2792(sb, MagicFactory.get(-48369921686196L, strArr10), e, 12);
+                        sb.append("onGetDynamicConfig ");
+                        sb.append("LoadHook");
+                        AbstractC1194.m2792(sb, " Failed", e, 12);
                     }
                 }
                 return c3497;
             default:
                 String[] strArr11 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-48404281424564L, strArr11), MagicFactory.get(-48503065672372L, strArr11));
+                ((C0705) obj).m2127("MicroMsg.DynamicConfig", "update dynacfg. increment:%b, md5:%s");
                 return c3497;
         }
     }

@@ -302,26 +302,26 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
             case 2:
                 int i9 = EnumC3673.f11482.f11492;
                 String[] strArr2 = AbstractC1574.f5469;
-                String str2 = MagicFactory.get(-99153614994100L, strArr2);
-                Object obj2 = MagicFactory.get(-99183679765172L, strArr2);
-                String str3 = MagicFactory.get(-99213744536244L, strArr2);
-                String str4 = MagicFactory.get(-99690485906100L, strArr2);
+                String str2 = "weixin";
+                Object obj2 = "微信安全提醒";
+                String str3 = "该微信号因使用外挂、模拟器等非官方客户端程序或其他违规技术（请卸载停用违规内容，若继续使用将升级至永久限制），当前无法使用所有社交场景。该限制为临时限制。\n\n你可以点击“详情”查看更多信息，进行安全验证以继续使用该功能。";
+                String str4 = "https://www.bilibili.com/video/BV1UT42167xb/";
                 JSONObject jSONObject = new JSONObject();
-                String str5 = MagicFactory.get(-107631880436404L, strArr2);
+                String str5 = "msg";
                 JSONObject jSONObject2 = new JSONObject();
-                String str6 = MagicFactory.get(-107649060305588L, strArr2);
+                String str6 = "appmsg";
                 JSONObject jSONObject3 = new JSONObject();
-                jSONObject3.put(MagicFactory.get(-107679125076660L, strArr2), 5);
-                jSONObject3.put(MagicFactory.get(-107700599913140L, strArr2), obj2);
-                String str7 = MagicFactory.get(-107726369716916L, strArr2);
+                jSONObject3.put("type", 5);
+                jSONObject3.put("title", obj2);
+                String str7 = "mmreader";
                 JSONObject jSONObject4 = new JSONObject();
-                String str8 = MagicFactory.get(-107765024422580L, strArr2);
+                String str8 = "category";
                 JSONObject jSONObject5 = new JSONObject();
-                String str9 = MagicFactory.get(-107803679128244L, strArr2);
+                String str9 = "item";
                 JSONObject jSONObject6 = new JSONObject();
-                jSONObject6.put(MagicFactory.get(-107825153964724L, strArr2), obj2);
-                jSONObject6.put(MagicFactory.get(-107850923768500L, strArr2), str3);
-                jSONObject6.put(MagicFactory.get(-107880988539572L, strArr2), str4);
+                jSONObject6.put("title", obj2);
+                jSONObject6.put("digest", str3);
+                jSONObject6.put("url", str4);
                 jSONObject5.put(str9, jSONObject6);
                 jSONObject4.put(str8, jSONObject5);
                 jSONObject3.put(str7, jSONObject4);
@@ -336,12 +336,12 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 AbstractC2201.m3976(i9, str2, c1732.toString(), System.currentTimeMillis());
                 Activity activityM4033 = AbstractC2203.m4033();
                 C1875 c1875 = C1875.f6222;
-                String str10 = MagicFactory.get(-99883759434420L, strArr2);
-                List listM2212 = AbstractC0745.m2212(MagicFactory.get(-99888054401716L, strArr2), MagicFactory.get(-100244536687284L, strArr2), MagicFactory.get(-100424925313716L, strArr2), MagicFactory.get(-100695508253364L, strArr2));
+                String str10 = "";
+                List listM2212 = AbstractC0745.m2212("该微信号因使用了微信外挂、非官方客户端或模拟器，被限制登录，请尽快卸载对应的非法软件。若后续仍继续使用将永久限制登录。如需继续使用，请轻触 “确定” 申请解除限制。", "该账号违反了《微信个人账号使用规范》，请轻触 “确定” 了解详情后，继续登录微信。", "你的账号可能有安全风险，为了你的账号安全，暂时无法在新设备登录，你可以在常用手机登录微信，或者轻触「了解详情」查看更多信息。", "账号状态异常，本次登录已失效。请尝试重新登录，并根据弹窗提示操作。");
                 AbstractC0066 abstractC0066 = AbstractC2474.f7908;
                 String str11 = (String) AbstractC0744.m2199(listM2212);
-                String str12 = MagicFactory.get(-100841537141428L, strArr2);
-                String str13 = MagicFactory.get(-100854422043316L, strArr2);
+                String str12 = "确定";
+                String str13 = "取消";
                 DialogInterfaceOnClickListenerC1131 dialogInterfaceOnClickListenerC1131 = new DialogInterfaceOnClickListenerC1131();
                 DialogInterfaceOnClickListenerC1131 dialogInterfaceOnClickListenerC1132 = new DialogInterfaceOnClickListenerC1131();
                 c1875.getClass();
@@ -369,15 +369,15 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 int i11 = AbstractC1745.f5844;
                 C1299 c1299M3490 = AbstractC0968.m2484(obj3).m3490();
                 String[] strArr3 = AbstractC1574.f5469;
-                c1299M3490.f6370 = MagicFactory.get(-542750722226868L, strArr3);
+                c1299M3490.f6370 = "f";
                 Object objM3023 = ((C1315) AbstractC0744.m2191(c1299M3490.m3014())).m3023();
                 C1299 c1299M3491 = AbstractC0968.m2484(objM3023).m3490();
-                c1299M3491.f6370 = MagicFactory.get(-542759312161460L, strArr3);
+                c1299M3491.f6370 = "f";
                 try {
-                    if (new JSONObject((String) ((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3024()).optJSONArray(MagicFactory.get(-542767902096052L, strArr3)) != null) {
+                    if (new JSONObject((String) ((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3024()).optJSONArray("ad_slot_data") != null) {
                         C1299 c1299M3492 = AbstractC0968.m2484(objM3023).m3490();
-                        c1299M3492.f6370 = MagicFactory.get(-542823736670900L, strArr3);
-                        ((C1315) AbstractC0744.m2191(c1299M3492.m3014())).m3025(MagicFactory.get(-542832326605492L, strArr3));
+                        c1299M3492.f6370 = "f";
+                        ((C1315) AbstractC0744.m2191(c1299M3492.m3014())).m3025("{}");
                     }
                     break;
                 } catch (Throwable unused) {
@@ -386,7 +386,7 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
             case 6:
                 C1981 c1981 = (C1981) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                String[] strArr5 = {MagicFactory.get(-542845211507380L, strArr4)};
+                String[] strArr5 = {"com.tencent.mm.plugin.brandservice.api.TransferResultInfo"};
                 c1981.getClass();
                 C2328 c2328 = new C2328(4);
                 ArrayList arrayList2 = new ArrayList(C1189.f4329);
@@ -401,7 +401,7 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 c2328.f7469 = arrayList2;
                 arrayList2.add(c2325);
                 c1981.f6561 = c2328;
-                c1981.m3827(MagicFactory.get(-543094319610548L, strArr4));
+                c1981.m3827("MicroMsg.BaseTransferRequest");
                 return c3497;
             case 7:
                 AbstractC1458.m3166(C0186.f1243, new C0105(i2));
@@ -417,8 +417,8 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
             case 9:
                 C0816 c0817 = (C0816) obj;
                 String[] strArr6 = AbstractC1574.f5469;
-                c0817.f3198 = MagicFactory.get(-534787852860084L, strArr6);
-                String str15 = MagicFactory.get(-534809327696564L, strArr6);
+                c0817.f3198 = "搜索群聊";
+                String str15 = "群聊";
                 ArrayList<GroupInfo> arrayListM4032 = AbstractC2203.m4032();
                 ArrayList arrayList3 = new ArrayList(AbstractC0746.m2214(arrayListM4032, 10));
                 for (GroupInfo groupInfo : arrayListM4032) {
@@ -437,7 +437,7 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 }
                 c0817.m2367(str15, arrayList3);
                 c0817.f3199 = R.drawable.ic_contact_confirm_24dp;
-                String str16 = MagicFactory.get(-534822212598452L, strArr6);
+                String str16 = "屏蔽";
                 C0184 c0184 = new C0184(i7);
                 c0817.f3202 = str16;
                 c0817.f3204 = c0184;
@@ -536,9 +536,9 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
             case 27:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1333.m3053(MagicFactory.get(-502618547813044L, strArr7));
+                c1333.m3053("com.tencent.mm.sdk.platformtools");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827(MagicFactory.get(-502489698794164L, strArr7), MagicFactory.get(-502588483041972L, strArr7));
+                c1982.m3827("MicroMsg.SDK.XmlParser", "[ %s ]");
                 c1333.f4794 = c1982;
                 return c3497;
             case 28:
@@ -570,35 +570,35 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                     c2588 = null;
                 }
                 String str19 = (String) c2588;
-                if ((str19 != null ? str19 : "").equals(MagicFactory.get(-501592050629300L, strArr8)) && AbstractC2841.m4828(str18, MagicFactory.get(-501622115400372L, strArr8), false)) {
+                if ((str19 != null ? str19 : "").equals("sysmsg") && AbstractC2841.m4828(str18, "revokemsg", false)) {
                     Object objM3269 = c1565.m3269();
                     if (!(objM3269 instanceof Map) || ((objM3269 instanceof InterfaceC1737) && !(objM3269 instanceof InterfaceC1739))) {
                         objM3269 = null;
                     }
                     Map map = (Map) objM3269;
                     if (map != null) {
-                        String str20 = MagicFactory.get(-501665065073332L, strArr8);
-                        if (map.containsKey(str20) && AbstractC2207.m4087(map.get(str20), MagicFactory.get(-501725194615476L, strArr8))) {
-                            String str21 = (String) map.get(MagicFactory.get(-501768144288436L, strArr8));
-                            String str22 = (String) map.get(MagicFactory.get(-501879813438132L, strArr8));
-                            String str23 = (String) map.get(MagicFactory.get(-502004367489716L, strArr8));
-                            if (str22.startsWith(MagicFactory.get(-502120331606708L, strArr8)) || str22.startsWith(MagicFactory.get(-502128921541300L, strArr8))) {
+                        String str20 = ".sysmsg.$type";
+                        if (map.containsKey(str20) && AbstractC2207.m4087(map.get(str20), "revokemsg")) {
+                            String str21 = (String) map.get(".sysmsg.revokemsg.session");
+                            String str22 = (String) map.get(".sysmsg.revokemsg.replacemsg");
+                            String str23 = (String) map.get(".sysmsg.revokemsg.newmsgid");
+                            if (str22.startsWith("\"") || str22.startsWith("「")) {
                                 map.put(str20, null);
                                 c1565.m3272(map);
                                 int i12 = AbstractC1745.f5844;
                                 C2800.f8930.getClass();
                                 C1973 c1973M3492 = AbstractC0968.m2484(C2800.m4779()).m3492();
-                                c1973M3492.f6370 = MagicFactory.get(-96112778148532L, strArr8);
-                                Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832(MagicFactory.get(-502137511475892L, strArr8), new Object[]{str23});
+                                c1973M3492.f6370 = "rawQuery";
+                                Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832("SELECT createTime FROM message WHERE msgSvrId = ?", new Object[]{str23});
                                 if (cursor != null) {
                                     try {
                                         if (cursor.moveToFirst()) {
-                                            long j = cursor.getLong(cursor.getColumnIndex(MagicFactory.get(-502352259840692L, strArr8)));
-                                            C1904 c1904M4123 = AbstractC2209.m4123(Pattern.compile(MagicFactory.get(-502399504480948L, strArr8)).matcher(str22), 0, str22);
+                                            long j = cursor.getLong(cursor.getColumnIndex("createTime"));
+                                            C1904 c1904M4123 = AbstractC2209.m4123(Pattern.compile("([\"「])(.*?)([」\"])").matcher(str22), 0, str22);
                                             if (c1904M4123 != null && (listM3699 = c1904M4123.m3699()) != null) {
                                                 str = (String) ((C1903) listM3699).get(2);
                                             }
-                                            AbstractC2201.m3976(EnumC3673.f11478.f11492, str21, "\"" + str + MagicFactory.get(-502476813892276L, strArr8) + C0196.f1265.m2542(), j + 1);
+                                            AbstractC2201.m3976(EnumC3673.f11478.f11492, str21, "\"" + str + "\" " + C0196.f1265.m2542(), j + 1);
                                         }
                                         cursor.close();
                                         break;

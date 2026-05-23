@@ -110,10 +110,10 @@ public final /* synthetic */ class C2365 implements InterfaceC1425 {
                                 }
                                 Set setM2208 = AbstractC0744.m2208(arrayList3);
                                 if (!setM2209.isEmpty()) {
-                                    setM2208.add(j3 + '|' + AbstractC0744.m2196(setM2209, MagicFactory.get(-595106373565108L, strArr2), null, null, null, 62));
+                                    setM2208.add(j3 + '|' + AbstractC0744.m2196(setM2209, ";", null, null, null, 62));
                                 }
                                 c2731.m2547(setM2208);
-                                AbstractC2834.m4823(null, 3, MagicFactory.get(-595114963499700L, strArr2));
+                                AbstractC2834.m4823(null, 3, "已点赞");
                                 return Boolean.FALSE;
                             }
                         };

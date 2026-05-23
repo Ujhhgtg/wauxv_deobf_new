@@ -165,7 +165,7 @@ def find_crypt_calls(java_content, call_name):
     # Updated pattern: matches optional minus, then either 0x... or standard digits.
     # It also handles the 'L' or 'l' suffix flexibly.
     # Supports optional second argument: (long, ClassName.fieldName) or (long, strArr)
-    pattern = call_name + r"\((-?(?:0x[0-9a-fA-F]+|\d+))[Ll]?(?:\s*,\s*(?:strArr|[A-Za-z_$][\w$]*\.[A-Za-z_$][\w$]*))?\)"
+    pattern = call_name + r"\((-?(?:0x[0-9a-fA-F]+|\d+))[Ll]?(?:\s*,\s*(?:strArr\d*|[A-Za-z_$][\w$]*\.[A-Za-z_$][\w$]*))?\)"
 
     matches = []
     for match in re.finditer(pattern, java_content):

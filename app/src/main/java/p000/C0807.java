@@ -63,9 +63,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
             case 4:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                c1334.m3053(MagicFactory.get(-382110355421876L, strArr2));
+                c1334.m3053("com.tencent.mm.storage");
                 C1981 c1981 = new C1981(4);
-                c1981.m3827(MagicFactory.get(-381801117776564L, strArr2), MagicFactory.get(-381951441631924L, strArr2));
+                c1981.m3827("MicroMsg.Label.ContactLabelStorage", "cpan[getLabelIdByStr] label id is %s");
                 c1334.f4794 = c1981;
                 return c3497;
             case 5:
@@ -73,7 +73,7 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                 C1981 c1981M47310 = AbstractC2784.m4739(c1335);
                 c1981M47310.m3820(C0811.f3173.m2361());
                 String[] strArr3 = AbstractC1574.f5469;
-                c1981M47310.m3827(MagicFactory.get(-382874859600564L, strArr3), MagicFactory.get(-383025183455924L, strArr3));
+                c1981M47310.m3827("MicroMsg.Label.ContactLabelStorage", "getUserNameListById time:%s id:%s count:%s stack:%s");
                 c1335.f4794 = c1981M47310;
                 return c3497;
             case 6:
@@ -90,9 +90,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
             case 10:
                 C1332 c1332 = (C1332) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1332.m3051(MagicFactory.get(-383725263125172L, strArr4));
+                c1332.m3051("com.tencent.mm.storage");
                 C0705 c0705 = new C0705(4);
-                c0705.m2127(MagicFactory.get(-383583529204404L, strArr4));
+                c0705.m2127("PRAGMA table_info( contact_ext )");
                 c1332.f4791 = c0705;
                 return c3497;
             case 11:
@@ -115,7 +115,7 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                 }
                 int i4 = AbstractC1745.f5844;
                 C1973 c1973M3492 = AbstractC0968.m2484(activity).m3492();
-                c1973M3492.f6370 = MagicFactory.get(-45294725102260L, strArr5);
+                c1973M3492.f6370 = "getPreferenceScreen";
                 BaseAdapter baseAdapter = (BaseAdapter) ((C1982) AbstractC2784.m4742(c1973M3492)).m3832(new Object[0]);
                 for (InterfaceC1579 interfaceC1579 : C0821.f3213) {
                     try {
@@ -125,9 +125,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                     } catch (Exception e) {
                         ArrayList arrayList = C3678.f11549;
                         StringBuilder sb = new StringBuilder();
-                        sb.append(MagicFactory.get(-45380624448180L, strArr5));
-                        sb.append(interfaceC1579 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1579).mo1128() : MagicFactory.get(-45432164055732L, strArr5));
-                        AbstractC1194.m2792(sb, MagicFactory.get(-45470818761396L, strArr5), e, 12);
+                        sb.append("onAddItems ");
+                        sb.append(interfaceC1579 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1579).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb, " Failed", e, 12);
                     }
                 }
                 return c3497;
@@ -171,9 +171,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                                 ArrayList arrayList2 = C3678.f11549;
                                 StringBuilder sb2 = new StringBuilder();
                                 String[] strArr6 = AbstractC1574.f5469;
-                                sb2.append(MagicFactory.get(-45505178499764L, strArr6));
-                                sb2.append(interfaceC15710 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC15710).mo1128() : MagicFactory.get(-45556718107316L, strArr6));
-                                AbstractC1194.m2792(sb2, MagicFactory.get(-45595372812980L, strArr6), e2, 12);
+                                sb2.append("onAddItems ");
+                                sb2.append(interfaceC15710 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC15710).mo1128() : "LoadHook");
+                                AbstractC1194.m2792(sb2, " Failed", e2, 12);
                             }
                         }
                     }
@@ -250,9 +250,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                         ArrayList arrayList3 = C3678.f11549;
                         StringBuilder sb3 = new StringBuilder();
                         String[] strArr7 = AbstractC1574.f5469;
-                        sb3.append(MagicFactory.get(-45840185948852L, strArr7));
-                        sb3.append(obj3 instanceof AbstractC2867 ? ((AbstractC2867) obj3).mo1128() : MagicFactory.get(-45973329935028L, strArr7));
-                        AbstractC1194.m2792(sb3, MagicFactory.get(-46011984640692L, strArr7), e3, 12);
+                        sb3.append("onCreateBottomSheetDialogMenu ");
+                        sb3.append(obj3 instanceof AbstractC2867 ? ((AbstractC2867) obj3).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb3, " Failed", e3, 12);
                     }
                 }
                 return c3497;
@@ -282,9 +282,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
             case 19:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr8 = AbstractC1574.f5469;
-                c1336.m3053(MagicFactory.get(-117587614628532L, strArr8));
+                c1336.m3053("com.tencent.mm.ui.conversation");
                 C1981 c1984 = new C1981(4);
-                c1984.m3827(MagicFactory.get(-117394341100212L, strArr8), MagicFactory.get(-117488830380724L, strArr8));
+                c1984.m3827("MicroMsg.ConvDelLogic", "del all notify message");
                 c1336.f4794 = c1984;
                 return c3497;
             case 20:
@@ -293,9 +293,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
             case Opcodes.ILOAD /* 21 */:
                 C1333 c1337 = (C1333) obj;
                 String[] strArr9 = AbstractC1574.f5469;
-                c1337.m3053(MagicFactory.get(-85426899516084L, strArr9));
+                c1337.m3053("com.tencent.mm.storage");
                 C1981 c1985 = new C1981(4);
-                c1985.m3827(MagicFactory.get(-85173496445620L, strArr9), MagicFactory.get(-85255100824244L, strArr9), MagicFactory.get(-85310935399092L, strArr9));
+                c1985.m3827("hidden_conv_parent", "message_fold", "appbrandcustomerservicemsg");
                 c1337.f4794 = c1985;
                 return c3497;
             case Opcodes.LLOAD /* 22 */:
@@ -339,9 +339,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                         ArrayList arrayList4 = C3678.f11549;
                         StringBuilder sb4 = new StringBuilder();
                         String[] strArr10 = AbstractC1574.f5469;
-                        sb4.append(MagicFactory.get(-46553150519988L, strArr10));
-                        sb4.append(interfaceC1581 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1581).mo1128() : MagicFactory.get(-46634754898612L, strArr10));
-                        AbstractC1194.m2792(sb4, MagicFactory.get(-46673409604276L, strArr10), e4, 12);
+                        sb4.append("onCreateMenuItems ");
+                        sb4.append(interfaceC1581 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1581).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb4, " Failed", e4, 12);
                     }
                 }
                 return c3497;
@@ -383,9 +383,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                         ArrayList arrayList5 = C3678.f11549;
                         StringBuilder sb5 = new StringBuilder();
                         String[] strArr11 = AbstractC1574.f5469;
-                        sb5.append(MagicFactory.get(-46398531697332L, strArr11));
-                        sb5.append(interfaceC1582 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1582).mo1128() : MagicFactory.get(-46480136075956L, strArr11));
-                        AbstractC1194.m2792(sb5, MagicFactory.get(-46518790781620L, strArr11), e5, 12);
+                        sb5.append("onCreateMenuItems ");
+                        sb5.append(interfaceC1582 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1582).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb5, " Failed", e5, 12);
                     }
                 }
                 return c3497;
@@ -397,17 +397,17 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
             case 28:
                 C1981 c1986 = (C1981) obj;
                 String[] strArr12 = AbstractC1574.f5469;
-                c1986.m3826(MagicFactory.get(-47656957115060L, strArr12));
-                c1986.m3827(MagicFactory.get(-47747151428276L, strArr12));
+                c1986.m3826("onMMMenuItemSelected");
+                c1986.m3827("com.tencent.mm.plugin.repairer.ui.RepairerChatroomDebugUI");
                 return c3497;
             default:
                 C1981 c1987 = (C1981) obj;
                 String[] strArr13 = AbstractC1574.f5469;
-                c1987.m3826(MagicFactory.get(-46707769342644L, strArr13));
+                c1987.m3826("onCreateContextMenu");
                 if (AbstractC3471.m5079(EnumC3677.f11541) || AbstractC3471.m5080(EnumC3674.f11505)) {
-                    c1987.m3827(MagicFactory.get(-46793668688564L, strArr13), MagicFactory.get(-46961172413108L, strArr13));
+                    c1987.m3827("MicroMsg.ConversationLongClickListener", "onCreateContextMenu, contact is null, talker = ");
                 } else {
-                    c1987.m3827(MagicFactory.get(-47167330843316L, strArr13), MagicFactory.get(-47317654698676L, strArr13));
+                    c1987.m3827("MicroMsg.ConversationClickListener", "onCreateContextMenu, contact is null, talker = ");
                 }
                 return c3497;
         }

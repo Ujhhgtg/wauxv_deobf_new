@@ -36,7 +36,7 @@ public final /* synthetic */ class C1608 implements InterfaceC1425 {
                 return C3497.f10997;
             case 2:
                 String[] strArr2 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-362490944813748L, strArr2), MagicFactory.get(-362594024028852L, strArr2));
+                ((C0705) obj).m2127("MicroMsg.ImgInfoStorage", "generateMd5: %s, %s");
                 return C3497.f10997;
             case 3:
                 ((C1020) obj).f3732 = new C1608(4);
@@ -44,9 +44,9 @@ public final /* synthetic */ class C1608 implements InterfaceC1425 {
             case 4:
                 C1332 c1332 = (C1332) obj;
                 String[] strArr3 = AbstractC1574.f5469;
-                c1332.m3051(MagicFactory.get(-386486927096500L, strArr3));
+                c1332.m3051("com.tencent.mm.modelavatar");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-386203459254964L, strArr3), MagicFactory.get(-386306538470068L, strArr3));
+                c0706.m2127("MicroMsg.ImgFlagStorage", "old, smallImageUrl = %s, bigImageUrl = %s");
                 c1332.f4791 = c0706;
                 return C3497.f10997;
             case 5:
@@ -57,7 +57,7 @@ public final /* synthetic */ class C1608 implements InterfaceC1425 {
                 return C3497.f10997;
             case 7:
                 String[] strArr4 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-386753215068852L, strArr4), MagicFactory.get(-386856294283956L, strArr4));
+                ((C0705) obj).m2127("MicroMsg.ImgInfoStorage", "generateMd5: %s, %s");
                 return C3497.f10997;
             case 8:
                 C1020 c1020 = (C1020) obj;
@@ -72,7 +72,7 @@ public final /* synthetic */ class C1608 implements InterfaceC1425 {
                 return C3497.f10997;
             case 11:
                 String[] strArr5 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-363169549646516L, strArr5), MagicFactory.get(-363341348338356L, strArr5), MagicFactory.get(-363397182913204L, strArr5));
+                ((C0705) obj).m2127("MicroMsg.ImgUpload.MsgImgFeatureService", "taskListener", "params");
                 return C3497.f10997;
             case Opcodes.FCONST_1 /* 12 */:
                 C1981 c1981 = (C1981) obj;
@@ -87,9 +87,9 @@ public final /* synthetic */ class C1608 implements InterfaceC1425 {
             case Opcodes.DCONST_0 /* 14 */:
                 C1332 c1333 = (C1332) obj;
                 String[] strArr6 = AbstractC1574.f5469;
-                c1333.m3051(MagicFactory.get(-393294450260660L, strArr6));
+                c1333.m3051("com.tencent.mm.pluginsdk.model");
                 C0705 c0707 = new C0705(4);
-                c0707.m2127(MagicFactory.get(-393041047190196L, strArr6), MagicFactory.get(-393152716339892L, strArr6));
+                c0707.m2127("MicroMsg.GetVideoMetadata", "get video file name, dataString ");
                 c1333.f4791 = c0707;
                 return C3497.f10997;
             case 15:
@@ -150,17 +150,17 @@ public final /* synthetic */ class C1608 implements InterfaceC1425 {
             case 27:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1334.m3053(MagicFactory.get(-369036474972852L, strArr7));
+                c1334.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1983 = new C1981(4);
-                c1983.m3827(MagicFactory.get(-368722942360244L, strArr7), MagicFactory.get(-368817431640756L, strArr7));
+                c1983.m3827("getSnsDirectThumbPath", "com.tencent.mm.plugin.sns.model.LazyerImageLoader2");
                 c1334.f4794 = c1983;
                 return C3497.f10997;
             case 28:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr8 = AbstractC1574.f5469;
-                c1335.m3053(MagicFactory.get(-368585503406772L, strArr8));
+                c1335.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1984 = new C1981(4);
-                c1984.m3827(MagicFactory.get(-368293445630644L, strArr8), MagicFactory.get(-368366460074676L, strArr8));
+                c1984.m3827("getSnsDirectPath", "com.tencent.mm.plugin.sns.model.LazyerImageLoader2");
                 c1335.f4794 = c1984;
                 return C3497.f10997;
             default:

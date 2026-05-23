@@ -133,9 +133,9 @@ public final /* synthetic */ class C3614 implements InterfaceC1425 {
                         }
                         StringBuilder sb5 = new StringBuilder();
                         String[] strArr2 = AbstractC1574.f5469;
-                        sb5.append(MagicFactory.get(-566480416537268L, strArr2));
+                        sb5.append("已转发至");
                         sb5.append(list.size());
-                        sb5.append(MagicFactory.get(-566501891373748L, strArr2));
+                        sb5.append("个会话");
                         AbstractC2834.m4823(null, 3, sb5.toString());
                         return Boolean.FALSE;
                     }

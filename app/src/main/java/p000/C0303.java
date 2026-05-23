@@ -140,18 +140,18 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
                 AbstractC0743.m2188(obj);
                 C2321 c2321 = C2321.f7452;
                 String[] strArr2 = AbstractC1574.f5469;
-                String str = MagicFactory.get(-517517789362868L, strArr2);
+                String str = "emoji";
                 ArrayList arrayList2 = C2321.f7459;
                 c2321.getClass();
                 File[] fileArrListFiles2 = new File(C2321.f7453, str).listFiles();
                 if (fileArrListFiles2 != null) {
                     for (File file2 : fileArrListFiles2) {
                         if (file2.isFile()) {
-                            List listM2212 = AbstractC0745.m2212(MagicFactory.get(-518144854588084L, strArr2), MagicFactory.get(-518162034457268L, strArr2), MagicFactory.get(-518179214326452L, strArr2));
+                            List listM2212 = AbstractC0745.m2212("png", "jpg", "gif");
                             String name = file2.getName();
                             int iM4838 = AbstractC2841.m4838(name, '.', 0, 6);
                             String lowerCase = (iM4838 == -1 ? "" : name.substring(iM4838 + 1, name.length())).toLowerCase(Locale.ROOT);
-                            MagicFactory.get(-518196394195636L, strArr2);
+                            "toLowerCase(...)";
                             if (listM2212.contains(lowerCase)) {
                                 C1170 c1170 = C1170.f4301;
                                 String absolutePath = file2.getAbsolutePath();
@@ -161,7 +161,7 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
                                 Object objM2761 = C1164.m2761(strM2762);
                                 C1162.f4289.getClass();
                                 AbstractC1574.m3315(C1161.f4288).invoke(objM2761, null, Boolean.TRUE);
-                                arrayList2.add(AbstractC1574.m3314(C2318.f7449).newInstance(objM2761, 2, MagicFactory.get(-518269408639668L, strArr2), 0));
+                                arrayList2.add(AbstractC1574.m3314(C2318.f7449).newInstance(objM2761, 2, "", 0));
                             }
                         }
                     }

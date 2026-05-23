@@ -77,31 +77,31 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
             case 1:
                 Object obj7 = objArr[0];
                 String[] strArr2 = AbstractC1574.f5469;
-                MagicFactory.get(-440156838427316L, strArr2);
+                "null cannot be cast to non-null type kotlin.String";
                 String str6 = (String) obj7;
                 Object obj8 = objArr[1];
-                MagicFactory.get(-440375881759412L, strArr2);
+                "null cannot be cast to non-null type org.json.JSONObject";
                 JSONObject jSONObject = (JSONObject) obj8;
-                C1133.m2719(str6, jSONObject.optString(MagicFactory.get(-432705070168756L, strArr2)), jSONObject.optString(MagicFactory.get(-432739429907124L, strArr2)), jSONObject.optString(MagicFactory.get(-432765199710900L, strArr2)), jSONObject.optString(MagicFactory.get(-432773789645492L, strArr2)), jSONObject.optString(MagicFactory.get(-432782379580084L, strArr2)));
+                C1133.m2719(str6, jSONObject.optString("poiName"), jSONObject.optString("label"), jSONObject.optString("x"), jSONObject.optString("y"), jSONObject.optString("scale"));
                 return c3497;
             case 2:
                 Object obj9 = objArr[0];
                 String[] strArr3 = AbstractC1574.f5469;
-                MagicFactory.get(-440620694895284L, strArr3);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj10 = objArr[1];
-                MagicFactory.get(-440839738227380L, strArr3);
+                "null cannot be cast to non-null type kotlin.String";
                 String str7 = (String) obj10;
                 Object obj11 = objArr[2];
-                MagicFactory.get(-441058781559476L, strArr3);
+                "null cannot be cast to non-null type kotlin.String";
                 JSONObject jSONObject2 = new JSONObject();
-                String str8 = MagicFactory.get(-107464376711860L, strArr3);
+                String str8 = "msg";
                 JSONObject jSONObject3 = new JSONObject();
-                String str9 = MagicFactory.get(-107481556581044L, strArr3);
+                String str9 = "appmsg";
                 JSONObject jSONObject4 = new JSONObject();
-                jSONObject4.put(MagicFactory.get(-107511621352116L, strArr3), 1);
-                jSONObject4.put(MagicFactory.get(-107533096188596L, strArr3), str7);
-                jSONObject4.put(MagicFactory.get(-107558865992372L, strArr3), str7);
-                jSONObject4.put(MagicFactory.get(-107576045861556L, strArr3), MagicFactory.get(-107610405599924L, strArr3) + TextUtils.htmlEncode((String) obj11));
+                jSONObject4.put("type", 1);
+                jSONObject4.put("title", str7);
+                jSONObject4.put("des", str7);
+                jSONObject4.put("content", "|WA|" + TextUtils.htmlEncode((String) obj11));
                 jSONObject3.put(str9, jSONObject4);
                 jSONObject2.put(str8, jSONObject3);
                 HashSet hashSet = new HashSet();
@@ -115,26 +115,26 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
             case 3:
                 Object obj12 = objArr[0];
                 String[] strArr4 = AbstractC1574.f5469;
-                MagicFactory.get(-441277824891572L, strArr4);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj13 = objArr[1];
-                MagicFactory.get(-441496868223668L, strArr4);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj14 = objArr[2];
-                MagicFactory.get(-441715911555764L, strArr4);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj15 = objArr[3];
-                MagicFactory.get(-441934954887860L, strArr4);
+                "null cannot be cast to non-null type kotlin.String";
                 JSONObject jSONObject5 = new JSONObject();
-                String str10 = MagicFactory.get(-107898168408756L, strArr4);
+                String str10 = "msg";
                 JSONObject jSONObject6 = new JSONObject();
-                String str11 = MagicFactory.get(-107915348277940L, strArr4);
+                String str11 = "appmsg";
                 JSONObject jSONObject7 = new JSONObject();
-                jSONObject7.put(MagicFactory.get(-107945413049012L, strArr4), 33);
-                jSONObject7.put(MagicFactory.get(-107966887885492L, strArr4), (String) obj13);
-                String str12 = MagicFactory.get(-107992657689268L, strArr4);
+                jSONObject7.put("type", 33);
+                jSONObject7.put("title", (String) obj13);
+                String str12 = "weappinfo";
                 JSONObject jSONObject8 = new JSONObject();
-                String str13 = MagicFactory.get(-108035607362228L, strArr4);
+                String str13 = "item";
                 JSONObject jSONObject9 = new JSONObject();
-                jSONObject9.put(MagicFactory.get(-108057082198708L, strArr4), MagicFactory.get(-108095736904372L, strArr4) + ((String) obj14) + MagicFactory.get(-108138686577332L, strArr4));
-                jSONObject9.put(MagicFactory.get(-108155866446516L, strArr4), (String) obj15);
+                jSONObject9.put("pagepath", "<![CDATA[" + ((String) obj14) + "]]>");
+                jSONObject9.put("username", (String) obj15);
                 jSONObject8.put(str13, jSONObject9);
                 jSONObject7.put(str12, jSONObject8);
                 jSONObject6.put(str11, jSONObject7);
@@ -150,25 +150,25 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
             case 4:
                 Object obj16 = objArr[0];
                 String[] strArr5 = AbstractC1574.f5469;
-                MagicFactory.get(-442153998219956L, strArr5);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj17 = objArr[1];
-                MagicFactory.get(-442373041552052L, strArr5);
+                "null cannot be cast to non-null type kotlin.String";
                 JSONObject jSONObject10 = new JSONObject();
-                String str14 = MagicFactory.get(-108194521152180L, strArr5);
+                String str14 = "msg";
                 JSONObject jSONObject11 = new JSONObject();
-                String str15 = MagicFactory.get(-108211701021364L, strArr5);
+                String str15 = "appmsg";
                 JSONObject jSONObject12 = new JSONObject();
-                jSONObject12.put(MagicFactory.get(-108241765792436L, strArr5), 53);
-                jSONObject12.put(MagicFactory.get(-108263240628916L, strArr5), (String) obj17);
-                String str16 = MagicFactory.get(-108289010432692L, strArr5);
+                jSONObject12.put("type", 53);
+                jSONObject12.put("title", (String) obj17);
+                String str16 = "extinfo";
                 JSONObject jSONObject13 = new JSONObject();
-                jSONObject13.put(MagicFactory.get(-108323370171060L, strArr5), MagicFactory.get(-108387794680500L, strArr5));
+                jSONObject13.put("solitaire_info", "");
                 jSONObject12.put(str16, jSONObject13);
                 jSONObject11.put(str15, jSONObject12);
                 jSONObject10.put(str14, jSONObject11);
                 HashSet hashSet5 = new HashSet();
                 HashSet hashSet6 = new HashSet();
-                hashSet5.add(MagicFactory.get(-108392089647796L, strArr5));
+                hashSet5.add("/msg/appmsg/appid");
                 C1732 c1734 = new C1732();
                 c1734.f5829 = jSONObject10;
                 c1734.f5830 = hashSet5;
@@ -178,25 +178,25 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
             case 5:
                 Object obj18 = objArr[0];
                 String[] strArr6 = AbstractC1574.f5469;
-                MagicFactory.get(-442592084884148L, strArr6);
+                "null cannot be cast to non-null type kotlin.String";
                 String str17 = (String) obj18;
                 Object obj19 = objArr[1];
-                MagicFactory.get(-442811128216244L, strArr6);
+                "null cannot be cast to non-null type kotlin.Long";
                 long jLongValue = ((Long) obj19).longValue();
                 Object obj20 = objArr[2];
-                MagicFactory.get(-443021581613748L, strArr6);
+                "null cannot be cast to non-null type kotlin.String";
                 C2079.f6881.getClass();
                 MsgInfoBean msgInfoBean = new MsgInfoBean(C2079.m3883(jLongValue));
                 JSONObject jSONObject14 = new JSONObject();
-                String str18 = MagicFactory.get(-108469399059124L, strArr6);
+                String str18 = "msg";
                 JSONObject jSONObject15 = new JSONObject();
-                String str19 = MagicFactory.get(-108486578928308L, strArr6);
+                String str19 = "appmsg";
                 JSONObject jSONObject16 = new JSONObject();
-                jSONObject16.put(MagicFactory.get(-108516643699380L, strArr6), 57);
-                jSONObject16.put(MagicFactory.get(-108538118535860L, strArr6), (String) obj20);
-                String str20 = MagicFactory.get(-108563888339636L, strArr6);
+                jSONObject16.put("type", 57);
+                jSONObject16.put("title", (String) obj20);
+                String str20 = "refermsg";
                 JSONObject jSONObject17 = new JSONObject();
-                String str21 = MagicFactory.get(-108602543045300L, strArr6);
+                String str21 = "type";
                 C0247 c0247 = C0247.f1410;
                 int type = msgInfoBean.getType();
                 c0247.getClass();
@@ -206,11 +206,11 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
                 Class cls = Integer.TYPE;
                 c1973M3492.f6543 = AbstractC2519.m4527(cls);
                 jSONObject17.put(str21, ((Number) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls)}, 1, c1973M3492)).m3832(Integer.valueOf(type))).intValue());
-                jSONObject17.put(MagicFactory.get(-108624017881780L, strArr6), msgInfoBean.getMsgSvrId());
-                jSONObject17.put(MagicFactory.get(-108649787685556L, strArr6), msgInfoBean.getTalker());
-                jSONObject17.put(MagicFactory.get(-108684147423924L, strArr6), msgInfoBean.getSendTalker());
-                String str22 = MagicFactory.get(-108718507162292L, strArr6);
-                Cursor cursorM2715 = C1133.m2715(MagicFactory.get(-79615808764596L, strArr6) + msgInfoBean.getSendTalker() + '\'');
+                jSONObject17.put("svrid", msgInfoBean.getMsgSvrId());
+                jSONObject17.put("fromusr", msgInfoBean.getTalker());
+                jSONObject17.put("chatusr", msgInfoBean.getSendTalker());
+                String str22 = "displayname";
+                Cursor cursorM2715 = C1133.m2715("select * from rcontact where username = '" + msgInfoBean.getSendTalker() + '\'');
                 if (cursorM2715 != null) {
                     cursorM2715.moveToFirst();
                 } else {
@@ -218,10 +218,10 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
                 }
                 FriendInfo friendInfoM2176 = cursorM2715 != null ? AbstractC0743.m2176(cursorM2715) : null;
                 jSONObject17.put(str22, friendInfoM2176 != null ? friendInfoM2176.getNickname() : null);
-                jSONObject17.put(MagicFactory.get(-108770046769844L, strArr6), MagicFactory.get(-108812996442804L, strArr6));
-                jSONObject17.put(MagicFactory.get(-108817291410100L, strArr6), msgInfoBean.getContent());
-                jSONObject17.put(MagicFactory.get(-108851651148468L, strArr6), MagicFactory.get(-108877420952244L, strArr6));
-                jSONObject17.put(MagicFactory.get(-108881715919540L, strArr6), msgInfoBean.getCreateTime());
+                jSONObject17.put("msgsource", "");
+                jSONObject17.put("content", msgInfoBean.getContent());
+                jSONObject17.put("strid", "");
+                jSONObject17.put("createtime", msgInfoBean.getCreateTime());
                 jSONObject16.put(str20, jSONObject17);
                 jSONObject15.put(str19, jSONObject16);
                 jSONObject14.put(str18, jSONObject15);
@@ -236,34 +236,34 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
             case 6:
                 Object obj21 = objArr[0];
                 String[] strArr7 = AbstractC1574.f5469;
-                MagicFactory.get(-443240624945844L, strArr7);
+                "null cannot be cast to non-null type kotlin.Long";
                 long jLongValue2 = ((Long) obj21).longValue();
                 C2186 c2186 = C2186.f7147;
-                String str23 = MagicFactory.get(-128604205742772L, strArr7);
+                String str23 = "你撤回了一条消息";
                 c2186.getClass();
                 C2079.f6881.getClass();
-                C2180.m3960(C2180.f7141, AbstractC1574.m3314(C2185.f7146).newInstance(C2079.m3883(jLongValue2), str23, MagicFactory.get(-128599910775476L, strArr7)));
+                C2180.m3960(C2180.f7141, AbstractC1574.m3314(C2185.f7146).newInstance(C2079.m3883(jLongValue2), str23, ""));
                 return c3497;
             case 7:
                 Object obj22 = objArr[0];
                 String[] strArr8 = AbstractC1574.f5469;
-                MagicFactory.get(-443451078343348L, strArr8);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj23 = objArr[1];
-                MagicFactory.get(-443670121675444L, strArr8);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj24 = objArr[2];
-                MagicFactory.get(-443889165007540L, strArr8);
+                "null cannot be cast to non-null type kotlin.Long";
                 return Long.valueOf(AbstractC2201.m3976(EnumC3673.f11478.f11492, (String) obj22, (String) obj23, ((Long) obj24).longValue()));
             case 8:
                 return AbstractC2203.m4033();
             case 9:
                 Object obj25 = objArr[0];
                 String[] strArr9 = AbstractC1574.f5469;
-                MagicFactory.get(-446144022837940L, strArr9);
+                "null cannot be cast to non-null type kotlin.Long";
                 long jLongValue3 = ((Long) obj25).longValue();
                 C2192.f7153.getClass();
                 Constructor constructorM3314 = AbstractC1574.m3314(C2191.f7152);
-                String str24 = MagicFactory.get(-130640020241076L, strArr9);
-                String str25 = MagicFactory.get(-130644315208372L, strArr9);
+                String str24 = "";
+                String str25 = "gh_43f2581f6fd6";
                 Calendar calendar = Calendar.getInstance();
                 calendar.set(11, 0);
                 calendar.set(12, 0);
@@ -286,12 +286,12 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
             case 11:
                 Object obj27 = objArr[0];
                 String[] strArr10 = AbstractC1574.f5469;
-                MagicFactory.get(-447432513026740L, strArr10);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj28 = objArr[1];
-                MagicFactory.get(-447651556358836L, strArr10);
+                "null cannot be cast to non-null type kotlin.String";
                 String str26 = (String) obj28;
                 Object obj29 = objArr[2];
-                MagicFactory.get(-447870599690932L, strArr10);
+                "null cannot be cast to non-null type kotlin.String";
                 String str27 = (String) obj29;
                 Object objM5099 = C3512.m5098(C3512.f11014, EnumC3676.f11520.f11526);
                 C3512.m5099(objM5099, (String) obj27);
@@ -314,11 +314,11 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
             case Opcodes.FCONST_1 /* 12 */:
                 Object obj30 = objArr[0];
                 String[] strArr11 = AbstractC1574.f5469;
-                MagicFactory.get(-448089643023028L, strArr11);
+                "null cannot be cast to non-null type org.json.JSONObject";
                 JSONObject jSONObject18 = (JSONObject) obj30;
-                String strOptString = jSONObject18.optString(MagicFactory.get(-446354476235444L, strArr11));
-                String strOptString2 = jSONObject18.optString(MagicFactory.get(-446388835973812L, strArr11));
-                String strOptString3 = jSONObject18.optString(MagicFactory.get(-446414605777588L, strArr11));
+                String strOptString = jSONObject18.optString("content");
+                String strOptString2 = jSONObject18.optString("sdkId");
+                String strOptString3 = jSONObject18.optString("sdkAppName");
                 Object objM50910 = C3512.m5098(C3512.f11014, EnumC3676.f11520.f11526);
                 C3512.m5099(objM50910, strOptString);
                 if (strOptString2 != null) {
@@ -340,50 +340,50 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
             case 13:
                 Object obj31 = objArr[0];
                 String[] strArr12 = AbstractC1574.f5469;
-                MagicFactory.get(-448334456158900L, strArr12);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj32 = objArr[1];
-                MagicFactory.get(-448553499490996L, strArr12);
+                "null cannot be cast to non-null type kotlin.String";
                 C1133.m2726((String) obj31, Collections.singletonList((String) obj32), null, null);
                 return c3497;
             case Opcodes.DCONST_0 /* 14 */:
                 Object obj33 = objArr[0];
                 String[] strArr13 = AbstractC1574.f5469;
-                MagicFactory.get(-448772542823092L, strArr13);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj34 = objArr[1];
-                MagicFactory.get(-448991586155188L, strArr13);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj35 = objArr[2];
-                MagicFactory.get(-449210629487284L, strArr13);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj36 = objArr[3];
-                MagicFactory.get(-449429672819380L, strArr13);
+                "null cannot be cast to non-null type kotlin.String";
                 C1133.m2726((String) obj33, Collections.singletonList((String) obj34), (String) obj35, (String) obj36);
                 return c3497;
             case 15:
                 Object obj37 = objArr[0];
                 String[] strArr14 = AbstractC1574.f5469;
-                MagicFactory.get(-449648716151476L, strArr14);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj38 = objArr[1];
-                MagicFactory.get(-449867759483572L, strArr14);
+                "null cannot be cast to non-null type kotlin.collections.List<kotlin.String>";
                 C1133.m2726((String) obj37, (List) obj38, null, null);
                 return c3497;
             case 16:
                 Object obj39 = objArr[0];
                 String[] strArr15 = AbstractC1574.f5469;
-                MagicFactory.get(-450194176998068L, strArr15);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj40 = objArr[1];
-                MagicFactory.get(-450413220330164L, strArr15);
+                "null cannot be cast to non-null type kotlin.collections.List<kotlin.String>";
                 Object obj41 = objArr[2];
-                MagicFactory.get(-450739637844660L, strArr15);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj42 = objArr[3];
-                MagicFactory.get(-450958681176756L, strArr15);
+                "null cannot be cast to non-null type kotlin.String";
                 C1133.m2726((String) obj39, (List) obj40, (String) obj41, (String) obj42);
                 return c3497;
             case Opcodes.SIPUSH /* 17 */:
                 Object obj43 = objArr[0];
                 String[] strArr16 = AbstractC1574.f5469;
-                MagicFactory.get(-451177724508852L, strArr16);
+                "null cannot be cast to non-null type org.json.JSONObject";
                 JSONObject jSONObject19 = (JSONObject) obj43;
-                String strOptString4 = jSONObject19.optString(MagicFactory.get(-446461850417844L, strArr16));
-                JSONArray jSONArrayOptJSONArray = jSONObject19.optJSONArray(MagicFactory.get(-446496210156212L, strArr16));
+                String strOptString4 = jSONObject19.optString("content");
+                JSONArray jSONArrayOptJSONArray = jSONObject19.optJSONArray("picPathList");
                 if (jSONArrayOptJSONArray != null) {
                     int length = jSONArrayOptJSONArray.length();
                     ArrayList arrayList = new ArrayList(length);
@@ -395,49 +395,49 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
                 if (list == null) {
                     list = C1189.f4329;
                 }
-                C1133.m2726(strOptString4, list, jSONObject19.optString(MagicFactory.get(-446547749763764L, strArr16)), jSONObject19.optString(MagicFactory.get(-446573519567540L, strArr16)));
+                C1133.m2726(strOptString4, list, jSONObject19.optString("sdkId"), jSONObject19.optString("sdkAppName"));
                 return c3497;
             case Opcodes.LDC /* 18 */:
                 Object obj44 = objArr[0];
                 String[] strArr17 = AbstractC1574.f5469;
-                MagicFactory.get(-451684530649780L, strArr17);
+                "null cannot be cast to non-null type kotlin.String";
                 String str30 = (String) obj44;
                 Object obj45 = objArr[1];
-                MagicFactory.get(-451903573981876L, strArr17);
+                "null cannot be cast to non-null type kotlin.String";
                 String str31 = (String) obj45;
                 Object obj46 = objArr[2];
-                MagicFactory.get(-452122617313972L, strArr17);
+                "null cannot be cast to non-null type kotlin.String";
                 String str32 = (String) obj46;
                 Object obj47 = objArr[3];
-                MagicFactory.get(-452341660646068L, strArr17);
-                C2180.m3960(C2180.f7141, C2190.m3962(C2190.f7151, str30, str31, MagicFactory.get(-109620450294452L, strArr17), str32, ((Integer) obj47).intValue()));
+                "null cannot be cast to non-null type kotlin.Int";
+                C2180.m3960(C2180.f7141, C2190.m3962(C2190.f7151, str30, str31, "confirm", str32, ((Integer) obj47).intValue()));
                 return c3497;
             case 19:
                 Object obj48 = objArr[0];
                 String[] strArr18 = AbstractC1574.f5469;
-                MagicFactory.get(-452547819076276L, strArr18);
+                "null cannot be cast to non-null type kotlin.String";
                 String str33 = (String) obj48;
                 Object obj49 = objArr[1];
-                MagicFactory.get(-452766862408372L, strArr18);
+                "null cannot be cast to non-null type kotlin.String";
                 String str34 = (String) obj49;
                 Object obj50 = objArr[2];
-                MagicFactory.get(-452985905740468L, strArr18);
-                C2180.m3960(C2180.f7141, C2190.m3962(C2190.f7151, str33, str34, MagicFactory.get(-109654810032820L, strArr18), (String) obj50, 0));
+                "null cannot be cast to non-null type kotlin.String";
+                C2180.m3960(C2180.f7141, C2190.m3962(C2190.f7151, str33, str34, "refuse", (String) obj50, 0));
                 return c3497;
             case 20:
                 Object obj51 = objArr[0];
                 String[] strArr19 = AbstractC1574.f5469;
-                MagicFactory.get(-453204949072564L, strArr19);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj52 = objArr[1];
-                MagicFactory.get(-453423992404660L, strArr19);
+                "null cannot be cast to non-null type java.util.function.Consumer<kotlin.String?>";
                 new C0299((String) obj51, i2, (Consumer) obj52).invoke();
                 return c3497;
             case Opcodes.ILOAD /* 21 */:
                 Object obj53 = objArr[0];
                 String[] strArr20 = AbstractC1574.f5469;
-                MagicFactory.get(-453771884755636L, strArr20);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj54 = objArr[1];
-                MagicFactory.get(-453990928087732L, strArr20);
+                "null cannot be cast to non-null type kotlin.String";
                 C1133.m2722((String) obj53, (String) obj54);
                 return c3497;
             default:

@@ -54,9 +54,9 @@ public final /* synthetic */ class C2083 implements InterfaceC1414 {
                 return new C2656("kotlin.Unit", c2851, c0708.f2691.size(), AbstractC0270.m1389(interfaceC2654Arr), c0708);
             case 5:
                 String[] strArr2 = AbstractC1574.f5469;
-                String str = MagicFactory.get(-571862010559156L, strArr2);
-                String str2 = MagicFactory.get(-571883485395636L, strArr2);
-                String str3 = MagicFactory.get(-571887780362932L, strArr2);
+                String str = "打开详情";
+                String str2 = "";
+                String str3 = "确定";
                 C1643 c1643 = new C1643();
                 AbstractC2205 abstractC2205 = AbstractC1034.f3778;
                 c1643.f915 = true;
@@ -81,14 +81,14 @@ public final /* synthetic */ class C2083 implements InterfaceC1414 {
             case 9:
                 C2458 c2458 = C2458.f7803;
                 String[] strArr3 = AbstractC1574.f5469;
-                c2458.m2548(MagicFactory.get(-523281635474100L, strArr3));
-                C2457.f7802.m2548(MagicFactory.get(-523311700245172L, strArr3));
+                c2458.m2548("[有人回我]");
+                C2457.f7802.m2548("#FFE14949");
                 return c3497;
             case 10:
                 C2630 c2630 = C2630.f8519;
                 String[] strArr4 = AbstractC1574.f5469;
-                c2630.m2548(MagicFactory.get(-578373180979892L, strArr4));
-                C2631.f8520.m2548(MagicFactory.get(-578441900456628L, strArr4));
+                c2630.m2548("${time} ${nick}");
+                C2631.f8520.m2548("yyyy-MM-dd");
                 return c3497;
             case 11:
                 C3563 c3563 = new C3563();
@@ -105,15 +105,15 @@ public final /* synthetic */ class C2083 implements InterfaceC1414 {
             case Opcodes.DCONST_0 /* 14 */:
                 C2739 c2739 = C2739.f8812;
                 String[] strArr5 = AbstractC1574.f5469;
-                c2739.m2548(MagicFactory.get(-598104260737716L, strArr5));
-                C2740.f8813.m2548(MagicFactory.get(-598258879560372L, strArr5));
+                c2739.m2548("${originalText} | ${time} | ${type}");
+                C2740.f8813.m2548("HH:mm:ss");
                 C2738.f8811.m2543(false);
                 return c3497;
             case 15:
                 C2766 c2766 = C2766.f8855;
                 String[] strArr6 = AbstractC1574.f5469;
-                c2766.m2548(MagicFactory.get(-604091445148340L, strArr6));
-                C2767.f8856.m2548(MagicFactory.get(-604173049526964L, strArr6));
+                c2766.m2548("wx8dd6ecd81906fd84");
+                C2767.f8856.m2548("网抑云音乐");
                 return c3497;
             case 16:
                 return new C0258(C2975.f9519);

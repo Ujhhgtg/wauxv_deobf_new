@@ -99,7 +99,7 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 return c3497;
             case 6:
                 String[] strArr2 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-131962870168244L, strArr2), MagicFactory.get(-132087424219828L, strArr2));
+                ((C0705) obj).m2127("MicroMsg.NetSceneUploadVoice", "/cgi-bin/micromsg-bin/uploadvoice");
                 return c3497;
             case 7:
                 C1020 c1021 = (C1020) obj;
@@ -120,9 +120,9 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
             case 10:
                 C1332 c1335 = (C1332) obj;
                 String[] strArr3 = AbstractC1574.f5469;
-                c1335.m3051(MagicFactory.get(-133496173492916L, strArr3));
+                c1335.m3051("com.tencent.mm.pluginsdk.model");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-132890583104180L, strArr3), MagicFactory.get(-133049496894132L, strArr3));
+                c0706.m2127("MicroMsg.NetSceneVerifyUser.dkverify", "/cgi-bin/micromsg-bin/verifyuser");
                 c1335.f4791 = c0706;
                 return c3497;
             case 11:
@@ -137,9 +137,9 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
             case Opcodes.DCONST_0 /* 14 */:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1336.m3053(MagicFactory.get(-61649960565428L, strArr4));
+                c1336.m3053("com.tencent.mm.booter.notification");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827(MagicFactory.get(-61280593377972L, strArr4), MagicFactory.get(-61383672593076L, strArr4));
+                c1982.m3827("MicroMsg.MMNotification", "notifyFirst talker:%s msgid:%d type:%d tipsFlag:%d content:%s");
                 c1336.f4794 = c1982;
                 return c3497;
             case 15:
@@ -166,9 +166,9 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                         ArrayList arrayList = C3678.f11549;
                         StringBuilder sb = new StringBuilder();
                         String[] strArr5 = AbstractC1574.f5469;
-                        sb.append(MagicFactory.get(-61151744359092L, strArr5));
-                        sb.append(obj3 instanceof AbstractC2867 ? ((AbstractC2867) obj3).mo1128() : MagicFactory.get(-61207578933940L, strArr5));
-                        AbstractC1194.m2792(sb, MagicFactory.get(-61246233639604L, strArr5), e, 12);
+                        sb.append("onHandleMsg ");
+                        sb.append(obj3 instanceof AbstractC2867 ? ((AbstractC2867) obj3).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb, " Failed", e, 12);
                     }
                 }
                 return c3497;
@@ -178,9 +178,9 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
             case Opcodes.SIPUSH /* 17 */:
                 C1333 c1337 = (C1333) obj;
                 String[] strArr6 = AbstractC1574.f5469;
-                c1337.m3053(MagicFactory.get(-395124106328756L, strArr6));
+                c1337.m3053("com.tencent.mm.pluginsdk.ui.chat");
                 C1981 c1983 = new C1981(4);
-                c1983.m3827(MagicFactory.get(-394965192538804L, strArr6), MagicFactory.get(-395051091884724L, strArr6));
+                c1983.m3827("MicroMsg.ChatFooter", "send msg onClick");
                 c1337.f4794 = c1983;
                 return c3497;
             case Opcodes.LDC /* 18 */:
@@ -195,28 +195,28 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 boolean z = false;
                 for (Object obj5 : c1299M3490.m3014()) {
                     Object objM3023 = ((C1315) obj5).m3023();
-                    if (AbstractC2207.m4087(objM3023 != null ? objM3023.getClass().getSimpleName() : null, MagicFactory.get(-394368192084660L, strArr7))) {
+                    if (AbstractC2207.m4087(objM3023 != null ? objM3023.getClass().getSimpleName() : null, "MMFlexEditText")) {
                         if (z) {
-                            throw new IllegalArgumentException(MagicFactory.get(-394432616594100L, strArr7));
+                            throw new IllegalArgumentException("Collection contains more than one matching element.");
                         }
                         obj4 = obj5;
                         z = true;
                     }
                 }
                 if (!z) {
-                    throw new NoSuchElementException(MagicFactory.get(-394655954893492L, strArr7));
+                    throw new NoSuchElementException("Collection contains no element matching the predicate.");
                 }
                 FrameLayout frameLayout = (FrameLayout) ((C1315) obj4).m3024();
                 int i9 = AbstractC1745.f5844;
                 C1973 c1973M3492 = AbstractC0968.m2484(frameLayout).m3492();
-                c1973M3492.f6370 = MagicFactory.get(-394892178094772L, strArr7);
+                c1973M3492.f6370 = "getText";
                 String string = ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3832(new Object[0]).toString();
                 if (string.length() > 0) {
                     ArrayList<C2355> arrayList2 = AbstractC2371.f7619;
                     ArrayList arrayList3 = new ArrayList(AbstractC0746.m2214(arrayList2, 10));
                     for (C2355 c2355 : arrayList2) {
                         c2355.getClass();
-                        arrayList3.add(Boolean.valueOf(AbstractC2207.m4087(c2355.m4332(MagicFactory.get(-455111914551988L, strArr7), string), Boolean.TRUE)));
+                        arrayList3.add(Boolean.valueOf(AbstractC2207.m4087(c2355.m4332("onClickSendBtn", string), Boolean.TRUE)));
                     }
                     if (!arrayList3.isEmpty()) {
                         Iterator it = arrayList3.iterator();
@@ -224,8 +224,8 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                             if (((Boolean) it.next()).booleanValue()) {
                                 int i10 = AbstractC1745.f5844;
                                 C1973 c1973M3493 = AbstractC0968.m2484(frameLayout).m3492();
-                                c1973M3493.f6370 = MagicFactory.get(-394926537833140L, strArr7);
-                                ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3831(MagicFactory.get(-394960897571508L, strArr7));
+                                c1973M3493.f6370 = "setText";
+                                ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3831("");
                                 c1564.m3272(null);
                             }
                         }
@@ -246,7 +246,7 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 int iIntValue = ((Number) ((C1982) AbstractC2784.m4742(c1973M3494)).m3832(new Object[0])).intValue();
                 Object objM3269 = c1565.m3269();
                 String[] strArr8 = AbstractC1574.f5469;
-                MagicFactory.get(-61920543505076L, strArr8);
+                "null cannot be cast to non-null type kotlin.ByteArray";
                 byte[] bArr = (byte[]) objM3269;
                 for (Object obj6 : C2294.f7390) {
                     try {
@@ -254,9 +254,9 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                     } catch (Exception e2) {
                         ArrayList arrayList4 = C3678.f11549;
                         StringBuilder sb2 = new StringBuilder();
-                        sb2.append(MagicFactory.get(-62152471739060L, strArr8));
-                        sb2.append(obj6 instanceof AbstractC2867 ? ((AbstractC2867) obj6).mo1128() : MagicFactory.get(-62208306313908L, strArr8));
-                        AbstractC1194.m2792(sb2, MagicFactory.get(-62246961019572L, strArr8), e2, 12);
+                        sb2.append("onGetBuffer ");
+                        sb2.append(obj6 instanceof AbstractC2867 ? ((AbstractC2867) obj6).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb2, " Failed", e2, 12);
                     }
                 }
                 return c3497;
@@ -266,7 +266,7 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 Class<byte[]> clsM21815 = AbstractC0743.m2183(AbstractC2519.m4527(byte[].class));
                 c1981M47311.m3824(clsM21815 != null ? clsM21815 : byte[].class);
                 String[] strArr9 = AbstractC1574.f5469;
-                c1981M47311.m3827(MagicFactory.get(-62281320757940L, strArr9), MagicFactory.get(-62388694940340L, strArr9));
+                c1981M47311.m3827("MicroMsg.OpLog.Operation", "summeroplog Operation toByteArray err: ");
                 c1338.f4794 = c1981M47311;
                 return c3497;
             case Opcodes.FLOAD /* 23 */:
@@ -283,12 +283,12 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                         C2298.f7405.getClass();
                         c2007.f6678 = C2298.f7407;
                         c2007.f6680 = linearLayout;
-                        c2007.m3870(MagicFactory.get(-571806175984308L, strArr10), new C2042(i3, c2012));
+                        c2007.m3870("确定", new C2042(i3, c2012));
                         AbstractC2784.m4755(c2007, null, 3);
                         return c3497;
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-667180219759284L, strArr10).concat(viewM4676.getResources().getResourceName(i12)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i12)));
             case Opcodes.DLOAD /* 24 */:
                 Class cls13 = (Class) obj;
                 Class<Boolean> clsM21816 = AbstractC0743.m2183(AbstractC2519.m4527(cls2));
@@ -304,17 +304,17 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                     obj2 = objM32610;
                 }
                 ContentValues contentValues = new ContentValues();
-                contentValues.put(MagicFactory.get(-518531401644724L, strArr11), MagicFactory.get(-518600121121460L, strArr11));
-                contentValues.put(MagicFactory.get(-518810574518964L, strArr11), MagicFactory.get(-518862114126516L, strArr11));
-                contentValues.put(MagicFactory.get(-519072567524020L, strArr11), MagicFactory.get(-519111222229684L, strArr11));
-                contentValues.put(MagicFactory.get(-519132697066164L, strArr11), (Integer) 1);
-                contentValues.put(MagicFactory.get(-519179941706420L, strArr11), MagicFactory.get(-519222891379380L, strArr11));
-                contentValues.put(MagicFactory.get(-519300200790708L, strArr11), (Integer) 7);
-                contentValues.put(MagicFactory.get(-519330265561780L, strArr11), (Integer) 2);
-                Object objM2131 = AbstractC0710.m2131(AbstractC2201.m3988(MagicFactory.get(-85525683763892L, strArr11)), new Object[0]);
+                contentValues.put("packGrayIconUrl", "https://avatars.githubusercontent.com/u/49312623");
+                contentValues.put("packIconUrl", "https://avatars.githubusercontent.com/u/49312623");
+                contentValues.put("packName", "面板表情");
+                contentValues.put("packStatus", (Integer) 1);
+                contentValues.put("productID", "wauxv.panel.emoji");
+                contentValues.put("status", (Integer) 7);
+                contentValues.put("sync", (Integer) 2);
+                Object objM2131 = AbstractC0710.m2131(AbstractC2201.m3988("com.tencent.mm.storage.emotion.EmojiGroupInfo"), new Object[0]);
                 int i13 = AbstractC1745.f5844;
                 C1973 c1973M3495 = AbstractC0968.m2484(objM2131).m3492();
-                c1973M3495.f6370 = MagicFactory.get(-85723252259508L, strArr11);
+                c1973M3495.f6370 = "convertFrom";
                 c1973M3495.m2888(Arrays.copyOf(new Object[]{AbstractC2519.m4527(ContentValues.class), AbstractC2519.m4527(Boolean.TYPE)}, 2));
                 c1973M3495.m3732();
                 ((C1982) AbstractC0744.m2191(c1973M3495.m3799())).m3831(contentValues, Boolean.TRUE);
@@ -339,14 +339,14 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 c1973M3496.m3800(EnumC1999.FINAL);
                 c1973M3496.f6544 = new C2193(24);
                 C1299 c1299M3491 = AbstractC0968.m2484(((C1982) AbstractC2784.m4742(c1973M3496)).m3831(new Object[0])).m3490();
-                c1299M3491.f4725 = AbstractC2201.m3988(MagicFactory.get(-85525683763892L, strArr12));
+                c1299M3491.f4725 = AbstractC2201.m3988("com.tencent.mm.storage.emotion.EmojiGroupInfo");
                 C1299 c1299M3492 = AbstractC0968.m2484(((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3023()).m3490();
-                c1299M3492.f6370 = MagicFactory.get(-519351740398260L, strArr12);
+                c1299M3492.f6370 = "field_packName";
                 String str = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                 C1973 c1973M3497 = c1744M2484.m3492();
                 c1973M3497.f6543 = AbstractC2519.m4527(List.class);
                 List list = (List) ((C1982) AbstractC2784.m4742(c1973M3497)).m3832(new Object[0]);
-                if (AbstractC2207.m4087(str, MagicFactory.get(-519416164907700L, strArr12))) {
+                if (AbstractC2207.m4087(str, "面板表情")) {
                     list.addAll(C2321.f7459);
                 }
                 return c3497;
@@ -360,7 +360,7 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 Class<Integer> clsM4740 = AbstractC2784.m4740(c1981M47312, clsM21817 != null ? clsM21817 : ArrayList.class, cls3);
                 c1981M47312.m3823(clsM4740 != null ? clsM4740 : Integer.class);
                 String[] strArr13 = AbstractC1574.f5469;
-                c1981M47312.m3827(MagicFactory.get(-519648093141684L, strArr13), MagicFactory.get(-519807006931636L, strArr13));
+                c1981M47312.m3827("MicroMsg.emoji.EmojiGroupInfoStorage", "get Panel EmojiGroupInfo.");
                 c1339.f4794 = c1981M47312;
                 return c3497;
         }

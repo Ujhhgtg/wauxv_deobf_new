@@ -107,7 +107,7 @@ public final /* synthetic */ class C2316 implements InterfaceC1425 {
                 return c3497;
             case 10:
                 String[] strArr2 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-363616226245300L, strArr2), MagicFactory.get(-363723600427700L, strArr2));
+                ((C0705) obj).m2127("MicroMsg.PatMsgExtension", "insert pat msg %d %s %s");
                 return c3497;
             case 11:
                 String[] strArr3 = AbstractC1574.f5469;
@@ -130,13 +130,13 @@ public final /* synthetic */ class C2316 implements InterfaceC1425 {
                             C2349.f7541.getClass();
                             c2008.f6678 = C2349.f7543;
                             c2008.f6680 = linearLayout;
-                            c2008.m3870(MagicFactory.get(-568129683978932L, strArr3), new C2042(8, c2013));
+                            c2008.m3870("保存", new C2042(8, c2013));
                             AbstractC2784.m4755(c2008, null, 3);
                             return c3497;
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-667455097666228L, strArr3).concat(viewM4677.getResources().getResourceName(i8)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i8)));
             case Opcodes.FCONST_1 /* 12 */:
                 ConversationBean conversationBean = (ConversationBean) obj;
                 C0847 c0847 = C0847.f3254;
@@ -194,7 +194,7 @@ public final /* synthetic */ class C2316 implements InterfaceC1425 {
                 int i9 = AbstractC1745.f5844;
                 C1973 c1973M3492 = AbstractC0968.m2484(c1563.m3268()).m3492();
                 String[] strArr4 = AbstractC1574.f5469;
-                c1973M3492.f6370 = MagicFactory.get(-568249943063220L, strArr4);
+                c1973M3492.f6370 = "getItem";
                 ConversationBean conversationBean6 = new ConversationBean(((C1982) AbstractC2784.m4742(c1973M3492)).m3831(Integer.valueOf(iIntValue)));
                 Object objM3269 = c1563.m3269();
                 View childAt = ((ViewGroup) (objM3269 instanceof ViewGroup ? objM3269 : null)).getChildAt(0);
@@ -210,9 +210,9 @@ public final /* synthetic */ class C2316 implements InterfaceC1425 {
             case 19:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr5 = AbstractC1574.f5469;
-                c1333.m3053(MagicFactory.get(-568799698877108L, strArr5));
+                c1333.m3053("com.tencent.mm.ui.conversation");
                 C1981 c1983 = new C1981(4);
-                c1983.m3827(MagicFactory.get(-568456101493428L, strArr5), MagicFactory.get(-568619310250676L, strArr5));
+                c1983.m3827("MicroMsg.ConversationWithCacheAdapter", "handle show tip count, but talker is null");
                 c1333.f4794 = c1983;
                 return c3497;
             case 20:
@@ -299,10 +299,10 @@ public final /* synthetic */ class C2316 implements InterfaceC1425 {
                     FrameLayout frameLayout = (FrameLayout) ((C1315) AbstractC0744.m2191(c1299M3490.m3014())).m3024();
                     C1973 c1973M3493 = AbstractC0968.m2484(frameLayout).m3492();
                     String[] strArr6 = AbstractC1574.f5469;
-                    c1973M3493.f6370 = MagicFactory.get(-86990267611828L, strArr6);
+                    c1973M3493.f6370 = "getLastText";
                     String str = (String) ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3832(new Object[0]);
                     C1973 c1973M3494 = AbstractC0968.m2484(frameLayout).m3492();
-                    c1973M3494.f6370 = MagicFactory.get(-87041807219380L, strArr6);
+                    c1973M3494.f6370 = "getLastQuoteMsgId";
                     long jLongValue = ((Number) ((C1982) AbstractC0744.m2191(c1973M3494.m3799())).m3832(new Object[0])).longValue();
                     if (str.length() == 0 && jLongValue != 0) {
                         AbstractC1574.m3315(C0606.f2430).invoke(frameLayout, Boolean.FALSE, Boolean.TRUE);

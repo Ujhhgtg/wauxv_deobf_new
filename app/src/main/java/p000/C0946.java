@@ -37,8 +37,8 @@ public final class C0946 extends AbstractC2867 implements InterfaceC1601 {
     public final void mo1233(C1563 c1563, String str, ContentValues contentValues, String str2, String[] strArr, int i) {
         if (mo3264()) {
             String[] strArr2 = AbstractC1574.f5469;
-            if (str.equals(MagicFactory.get(-535200169720500L, strArr2)) && AbstractC2207.m4087(contentValues.get(MagicFactory.get(-535260299262644L, strArr2)), 1) && AbstractC2207.m4087(contentValues.get(MagicFactory.get(-535311838870196L, strArr2)), 0)) {
-                contentValues.put(MagicFactory.get(-535346198608564L, strArr2), Integer.valueOf(C0945.f3458.m2538()));
+            if (str.equals("rconversation") && AbstractC2207.m4087(contentValues.get("unReadCount"), 1) && AbstractC2207.m4087(contentValues.get("atCount"), 0)) {
+                contentValues.put("unReadCount", Integer.valueOf(C0945.f3458.m2538()));
             }
         }
     }

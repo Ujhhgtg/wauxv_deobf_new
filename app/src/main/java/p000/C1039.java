@@ -79,9 +79,9 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
             case 8:
                 Object obj7 = objArr[0];
                 String[] strArr2 = AbstractC1574.f5469;
-                MagicFactory.get(-399023936633524L, strArr2);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj8 = objArr[1];
-                MagicFactory.get(-399242979965620L, strArr2);
+                "null cannot be cast to non-null type kotlin.String";
                 File fileM3196 = AbstractC1459.m3196(new File((String) obj7));
                 AbstractC1328.m3042(fileM3196, new File((String) obj8));
                 fileM3196.delete();
@@ -96,9 +96,9 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
             case 11:
                 Object obj10 = objArr[0];
                 String[] strArr3 = AbstractC1574.f5469;
-                MagicFactory.get(-412475774204596L, strArr3);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj11 = objArr[1];
-                MagicFactory.get(-412694817536692L, strArr3);
+                "null cannot be cast to non-null type kotlin.collections.List<kotlin.String>";
                 C2162.f7122.getClass();
                 C2180.m3960(C2180.f7141, AbstractC1574.m3314(C2161.f7121).newInstance((String) obj10, (List) obj11, 0));
                 return c3497;
@@ -106,47 +106,47 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
                 C0774.f2874.getClass();
                 Object objInvoke = AbstractC1574.m3315(C0773.f2873).invoke(null, null);
                 String[] strArr4 = AbstractC1574.f5469;
-                MagicFactory.get(-115689239083700L, strArr4);
-                Object obj12 = ((Map) objInvoke).get(MagicFactory.get(-116286239537844L, strArr4));
+                "null cannot be cast to non-null type kotlin.collections.Map<*, *>";
+                Object obj12 = ((Map) objInvoke).get("last_login_alias");
                 String str = obj12 instanceof String ? (String) obj12 : null;
                 return str == null ? C0774.m2264() : str;
             case 13:
                 Object obj13 = objArr[0];
                 String[] strArr5 = AbstractC1574.f5469;
-                MagicFactory.get(-413021235051188L, strArr5);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj14 = objArr[1];
-                MagicFactory.get(-413240278383284L, strArr5);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj15 = objArr[2];
-                MagicFactory.get(-413459321715380L, strArr5);
+                "null cannot be cast to non-null type kotlin.Int";
                 C1133.m2727(((Integer) obj15).intValue(), (String) obj13, (String) obj14, 0);
                 return c3497;
             case Opcodes.DCONST_0 /* 14 */:
                 Object obj16 = objArr[0];
                 String[] strArr6 = AbstractC1574.f5469;
-                MagicFactory.get(-413665480145588L, strArr6);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj17 = objArr[1];
-                MagicFactory.get(-413884523477684L, strArr6);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj18 = objArr[2];
-                MagicFactory.get(-414103566809780L, strArr6);
+                "null cannot be cast to non-null type kotlin.Int";
                 int iIntValue = ((Integer) obj18).intValue();
                 Object obj19 = objArr[3];
-                MagicFactory.get(-414309725239988L, strArr6);
+                "null cannot be cast to non-null type kotlin.Int";
                 C1133.m2727(iIntValue, (String) obj16, (String) obj17, ((Integer) obj19).intValue());
                 return c3497;
             case 15:
                 Object obj20 = objArr[0];
                 String[] strArr7 = AbstractC1574.f5469;
-                MagicFactory.get(-414515883670196L, strArr7);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj21 = objArr[1];
-                MagicFactory.get(-414734927002292L, strArr7);
+                "null cannot be cast to non-null type kotlin.String";
                 C1133.m2713((String) obj20, Collections.singletonList((String) obj21));
                 return c3497;
             case 16:
                 Object obj22 = objArr[0];
                 String[] strArr8 = AbstractC1574.f5469;
-                MagicFactory.get(-414953970334388L, strArr8);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj23 = objArr[1];
-                MagicFactory.get(-415173013666484L, strArr8);
+                "null cannot be cast to non-null type kotlin.collections.List<kotlin.String>";
                 C1133.m2713((String) obj22, (List) obj23);
                 return c3497;
             case Opcodes.SIPUSH /* 17 */:
@@ -174,19 +174,19 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
             case Opcodes.ILOAD /* 21 */:
                 Object obj26 = objArr[0];
                 String[] strArr9 = AbstractC1574.f5469;
-                MagicFactory.get(-409190124223156L, strArr9);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj27 = objArr[1];
-                MagicFactory.get(-409409167555252L, strArr9);
+                "null cannot be cast to non-null type kotlin.Boolean";
                 boolean zBooleanValue = ((Boolean) obj27).booleanValue();
                 C1873.f6220.getClass();
                 return C1873.m3654((String) obj26, zBooleanValue);
             case Opcodes.LLOAD /* 22 */:
                 Object obj28 = objArr[0];
                 String[] strArr10 = AbstractC1574.f5469;
-                MagicFactory.get(-407875864230580L, strArr10);
+                "null cannot be cast to non-null type kotlin.String";
                 String str3 = (String) obj28;
                 Object obj29 = objArr[1];
-                MagicFactory.get(-408094907562676L, strArr10);
+                "null cannot be cast to non-null type kotlin.String";
                 C0674.f2557.getClass();
                 Object objM2066 = C0674.m2066((String) obj29);
                 if (objM2066 != null) {
@@ -195,9 +195,9 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
                     if (objInvoke2 != null) {
                         int i2 = AbstractC1745.f5844;
                         C1299 c1299M3490 = AbstractC0968.m2484(objInvoke2).m3490();
-                        c1299M3490.f6370 = MagicFactory.get(-88119844010676L, strArr10);
+                        c1299M3490.f6370 = "e";
                         String str4 = (String) ((C1315) AbstractC0744.m2191(c1299M3490.m3014())).m3024();
-                        return str4 == null ? MagicFactory.get(-88128433945268L, strArr10) : str4;
+                        return str4 == null ? "" : str4;
                     }
                 }
                 C0819.f3207.getClass();
@@ -205,17 +205,17 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
             case Opcodes.FLOAD /* 23 */:
                 Object obj30 = objArr[0];
                 String[] strArr11 = AbstractC1574.f5469;
-                MagicFactory.get(-408313950894772L, strArr11);
+                "null cannot be cast to non-null type kotlin.String";
                 C0669 c0669 = C0669.f2550;
-                String str5 = MagicFactory.get(-89094801586868L, strArr11);
+                String str5 = "";
                 c0669.getClass();
                 return C0669.m2063((String) obj30, str5);
             case Opcodes.DLOAD /* 24 */:
                 Object obj31 = objArr[0];
                 String[] strArr12 = AbstractC1574.f5469;
-                MagicFactory.get(-408532994226868L, strArr12);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj32 = objArr[1];
-                MagicFactory.get(-408752037558964L, strArr12);
+                "null cannot be cast to non-null type kotlin.String";
                 C0669.f2550.getClass();
                 return C0669.m2063((String) obj31, (String) obj32);
             case Opcodes.ALOAD /* 25 */:
@@ -238,21 +238,21 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
             case 28:
                 Object obj35 = objArr[0];
                 String[] strArr13 = AbstractC1574.f5469;
-                MagicFactory.get(-409851549186740L, strArr13);
+                "null cannot be cast to non-null type kotlin.String";
                 C0674.f2557.getClass();
                 Method methodM3315 = AbstractC1574.m3315(C0673.f2556);
                 C0672.f2555.getClass();
                 Object objInvoke3 = methodM3315.invoke(C0672.m2065(), (String) obj35);
-                MagicFactory.get(-379679403932340L, strArr13);
+                "null cannot be cast to non-null type kotlin.Int";
                 Integer num = (Integer) objInvoke3;
                 num.getClass();
                 return num;
             default:
                 Object obj36 = objArr[0];
                 String[] strArr14 = AbstractC1574.f5469;
-                MagicFactory.get(-410070592518836L, strArr14);
+                "null cannot be cast to non-null type kotlin.String";
                 Object obj37 = objArr[1];
-                MagicFactory.get(-410289635850932L, strArr14);
+                "null cannot be cast to non-null type kotlin.String";
                 List listSingletonList = Collections.singletonList((String) obj37);
                 C2157.f7117.getClass();
                 C2180.m3960(C2180.f7141, AbstractC1574.m3314(C2156.f7116).newInstance((String) obj36, listSingletonList, null, null));

@@ -96,9 +96,9 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
             case 3:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                c1333.m3053(MagicFactory.get(-90314572298932L, strArr2));
+                c1333.m3053("com.tencent.mm.ui.chatting.manager");
                 C1981 c1981 = new C1981(4);
-                c1981.m3827(MagicFactory.get(-90194313214644L, strArr2), MagicFactory.get(-90224377985716L, strArr2));
+                c1981.m3827("[get] ", " is not a interface!");
                 c1333.f4794 = c1981;
                 return c3497;
             case 4:
@@ -129,10 +129,10 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 String str = (String) (c2587 instanceof C2585 ? null : c2587);
                 JSONObject jSONObject = new JSONObject(str != null ? str : "");
                 String[] strArr3 = AbstractC1574.f5469;
-                if (AbstractC2207.m4087(jSONObject.get(MagicFactory.get(-468331823889076L, strArr3)), MagicFactory.get(-468370478594740L, strArr3))) {
-                    JSONObject jSONObject2 = jSONObject.getJSONObject(MagicFactory.get(-468443493038772L, strArr3));
-                    jSONObject2.put(MagicFactory.get(-468464967875252L, strArr3), MagicFactory.get(-468512212515508L, strArr3));
-                    jSONObject.put(MagicFactory.get(-468516507482804L, strArr3), jSONObject2);
+                if (AbstractC2207.m4087(jSONObject.get("api_name"), "webapi_getadvert")) {
+                    JSONObject jSONObject2 = jSONObject.getJSONObject("data");
+                    jSONObject2.put("ad_unit_id", "");
+                    jSONObject.put("data", jSONObject2);
                     new C0408(1, 6, c1564).m1608(jSONObject.toString());
                 }
                 return c3497;
@@ -141,7 +141,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 return c3497;
             case 7:
                 String[] strArr4 = AbstractC1574.f5469;
-                ((C1981) obj).m3829(MagicFactory.get(-468537982319284L, strArr4), MagicFactory.get(-468641061534388L, strArr4));
+                ((C1981) obj).m3829("NetSceneJSOperateWxData", "appId [%s], data [%s], grantScope [%s], versionType [%d], opt [%d], extScene [%d]  sessionId [%s]  avatarOpt [%d]");
                 return c3497;
             case 8:
                 ((C1020) obj).f3733 = new C0199(10);
@@ -152,9 +152,9 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
             case 10:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr5 = AbstractC1574.f5469;
-                c1334.m3053(MagicFactory.get(-470071285643956L, strArr5));
+                c1334.m3053("com.tencent.mm.plugin.appbrand.jsapi.auth");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827(MagicFactory.get(-469560184535732L, strArr5), MagicFactory.get(-469804997671604L, strArr5));
+                c1982.m3827("MicroMsg.AppBrand.JsApiAdOperateWXData[AppBrandSplashAd]", "cgi callback, callbackId:%s, service not running or preloaded");
                 c1334.f4794 = c1982;
                 return c3497;
             case 11:
@@ -184,11 +184,11 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 String str4 = (String) (c2589 instanceof C2585 ? null : c2589);
                 String str5 = str4 != null ? str4 : "";
                 String[] strArr6 = AbstractC1574.f5469;
-                if (str3.equals(MagicFactory.get(-471265286552244L, strArr6))) {
+                if (str3.equals("onVideoTimeUpdate")) {
                     C0408 c0408 = new C0408(1, 6, c1565);
                     JSONObject jSONObject3 = new JSONObject(str5);
-                    jSONObject3.put(MagicFactory.get(-471342595963572L, strArr6), 60);
-                    jSONObject3.put(MagicFactory.get(-471381250669236L, strArr6), 1);
+                    jSONObject3.put("position", 60);
+                    jSONObject3.put("duration", 1);
                     c0408.m1608(jSONObject3.toString());
                 }
                 return c3497;
@@ -210,7 +210,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 return c3497;
             case 15:
                 String[] strArr7 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-113052129163956L, strArr7), MagicFactory.get(-113086488902324L, strArr7), MagicFactory.get(-113112258706100L, strArr7), MagicFactory.get(-113146618444468L, strArr7), MagicFactory.get(-113180978182836L, strArr7), MagicFactory.get(-113241107724980L, strArr7), MagicFactory.get(-113301237267124L, strArr7), MagicFactory.get(-113348481907380L, strArr7));
+                ((C0705) obj).m2127("appinfo", "appid", "version", "appname", "isforceupdate", "messageaction", "messageext", "mediatagname");
                 return c3497;
             case 16:
                 ((C1020) obj).f3732 = new C0199(17);
@@ -220,7 +220,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 return c3497;
             case Opcodes.LDC /* 18 */:
                 String[] strArr8 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-119249766972084L, strArr8), MagicFactory.get(-119335666318004L, strArr8));
+                ((C0705) obj).m2127("MicroMsg.AppMessage", "parse msg failed");
                 return c3497;
             case 19:
                 ((C1020) obj).f3733 = new C0199(20);
@@ -228,9 +228,9 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
             case 20:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr9 = AbstractC1574.f5469;
-                c1336.m3053(MagicFactory.get(-115354231634612L, strArr9));
+                c1336.m3053("com.tencent.mm.pluginsdk.model.app");
                 C1981 c1983 = new C1981(4);
-                c1983.m3827(MagicFactory.get(-115036404054708L, strArr9), MagicFactory.get(-115126598367924L, strArr9));
+                c1983.m3827("MicroMsg.AppMsgLogic", "summerbig sendAppMsg attachFilePath[%s], content[%s]");
                 c1336.f4794 = c1983;
                 return c3497;
             case Opcodes.ILOAD /* 21 */:
@@ -256,13 +256,13 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                             RunnableC0304.f1522.getClass();
                             c2008.f6678 = RunnableC0304.f1524;
                             c2008.f6680 = linearLayout2;
-                            c2008.m3870(MagicFactory.get(-574155523095220L, strArr10), new C0299(c2013, iIntValue, c0718));
+                            c2008.m3870("保存", new C0299(c2013, iIntValue, c0718));
                             AbstractC2784.m4755(c2008, null, 3);
                             return c3497;
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-663331929062068L, strArr10).concat(viewM4677.getResources().getResourceName(i5)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i5)));
             case Opcodes.LLOAD /* 22 */:
                 return Boolean.valueOf(C0300.f1518.m2541().contains(((C0719) obj).f2728));
             case Opcodes.FLOAD /* 23 */:
@@ -308,7 +308,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 return c3497;
             case 26:
                 String[] strArr11 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-503271382842036L, strArr11), MagicFactory.get(-503391641926324L, strArr11));
+                ((C1981) obj).m3827("MicroMsg.ForceNotifyStorage", "[onNewXmlReceived] ret:%s isAdd:%s info:%s");
                 return c3497;
             case 27:
                 String[] strArr12 = AbstractC1574.f5469;
@@ -331,13 +331,13 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                             C0310.f1535.getClass();
                             c2009.f6678 = C0310.f1537;
                             c2009.f6680 = linearLayout3;
-                            c2009.m3870(MagicFactory.get(-575147660540596L, strArr12), new C0106(4, c2014));
+                            c2009.m3870("保存", new C0106(4, c2014));
                             AbstractC2784.m4755(c2009, null, 3);
                             return c3497;
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-663469368015540L, strArr12).concat(viewM4678.getResources().getResourceName(i7)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4678.getResources().getResourceName(i7)));
             case 28:
                 Object objM3268 = ((C1563) obj).m3268();
                 Activity activity = (Activity) (objM3268 instanceof Activity ? objM3268 : null);

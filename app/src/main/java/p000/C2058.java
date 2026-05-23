@@ -63,9 +63,9 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                         ArrayList arrayList = C3678.f11549;
                         StringBuilder sb = new StringBuilder();
                         String[] strArr2 = AbstractC1574.f5469;
-                        sb.append(MagicFactory.get(-60279865998004L, strArr2));
-                        sb.append(interfaceC1592 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1592).mo1128() : MagicFactory.get(-60327110638260L, strArr2));
-                        AbstractC1194.m2792(sb, MagicFactory.get(-60365765343924L, strArr2), e, 12);
+                        sb.append("onConvert ");
+                        sb.append(interfaceC1592 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1592).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb, " Failed", e, 12);
                     }
                 }
                 return c3497;
@@ -146,7 +146,7 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                                                                                                     materialCheckBox.setChecked(C2069.f6865.m2536());
                                                                                                     materialCheckBox2.setChecked(C2070.f6866.m2536());
                                                                                                     materialTextView.setMovementMethod(LinkMovementMethod.getInstance());
-                                                                                                    SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(MagicFactory.get(-516173464599220L, strArr3));
+                                                                                                    SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder("点击占位符自动添加以下字段:\n");
                                                                                                     for (String str : C2073.f6870) {
                                                                                                         int length = spannableStringBuilder.length();
                                                                                                         spannableStringBuilder.append((CharSequence) (str + ' '));
@@ -157,8 +157,8 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                                                                                                     C2073.f6869.getClass();
                                                                                                     c2007.f6678 = C2073.f6872;
                                                                                                     c2007.f6680 = (LinearLayout) c2021.f6771;
-                                                                                                    c2007.m3870(MagicFactory.get(-516242184075956L, strArr3), new C2042(2, c2021));
-                                                                                                    c2007.m3869(MagicFactory.get(-516255068977844L, strArr3), new C1354(29));
+                                                                                                    c2007.m3870("保存", new C2042(2, c2021));
+                                                                                                    c2007.m3869("重置", new C1354(29));
                                                                                                     C2007.m3866(c2007, null, 3);
                                                                                                     c2007.m3868().m3791();
                                                                                                     return c3497;
@@ -194,16 +194,16 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-666905341852340L, strArr3).concat(viewM4676.getResources().getResourceName(i7)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i7)));
             case 3:
                 ((C1020) obj).f3733 = new C2058(i5);
                 return c3497;
             case 4:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr4 = AbstractC1574.f5469;
-                c1333.m3053(MagicFactory.get(-60915521157812L, strArr4));
+                c1333.m3053("com.tencent.mm.storage");
                 C1981 c1981 = new C1981(4);
-                c1981.m3827(MagicFactory.get(-60675002989236L, strArr4), MagicFactory.get(-60778082204340L, strArr4));
+                c1981.m3827("MicroMsg.MsgInfoStorage", "protect:c2c msg should not here");
                 c1333.f4794 = c1981;
                 return c3497;
             case 5:
@@ -225,9 +225,9 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                     } catch (Exception e2) {
                         ArrayList arrayList2 = C3678.f11549;
                         StringBuilder sb2 = new StringBuilder();
-                        sb2.append(MagicFactory.get(-60559038872244L, strArr5));
-                        sb2.append(interfaceC1593 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1593).mo1128() : MagicFactory.get(-60601988545204L, strArr5));
-                        AbstractC1194.m2792(sb2, MagicFactory.get(-60640643250868L, strArr5), e2, 12);
+                        sb2.append("onInsert ");
+                        sb2.append(interfaceC1593 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1593).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb2, " Failed", e2, 12);
                     }
                 }
                 return c3497;
@@ -251,9 +251,9 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
             case 10:
                 C1332 c1335 = (C1332) obj;
                 String[] strArr6 = AbstractC1574.f5469;
-                c1335.m3051(MagicFactory.get(-388003050551988L, strArr6));
+                c1335.m3051("com.tencent.mm.storage");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-387766827350708L, strArr6), MagicFactory.get(-387869906565812L, strArr6));
+                c0706.m2127("MicroMsg.MsgInfoStorage", "deleted dirty msg ,count is %d");
                 c1335.f4791 = c0706;
                 return c3497;
             case 11:
@@ -263,13 +263,13 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                 c1981M47310.m3820(AbstractC1574.m3313(C2076.f6878));
                 c1981M47310.m3822(new C1664(2, 3, 1));
                 String[] strArr7 = AbstractC1574.f5469;
-                c1981M47310.m3827(MagicFactory.get(-388101834799796L, strArr7), MagicFactory.get(-388161964341940L, strArr7), MagicFactory.get(-388196324080308L, strArr7));
+                c1981M47310.m3827("notifymessage", "msgId=?", "update");
                 c1336.f4794 = c1981M47310;
                 return c3497;
             case Opcodes.FCONST_1 /* 12 */:
                 ArrayList arrayList3 = new ArrayList();
                 String[] strArr8 = AbstractC1574.f5469;
-                Cursor cursorM2715 = C1133.m2715(MagicFactory.get(-571376679254708L, strArr8));
+                Cursor cursorM2715 = C1133.m2715("SELECT username FROM rconversation");
                 if (cursorM2715 != null) {
                     while (cursorM2715.moveToNext()) {
                         try {
@@ -287,14 +287,14 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                 }
                 C0860 c0860 = C0860.f3275;
                 String[] strArr9 = (String[]) arrayList3.toArray(new String[0]);
-                String str2 = MagicFactory.get(-571527003110068L, strArr8);
+                String str2 = "";
                 c0860.getClass();
                 C0860.m2383(str2, strArr9);
                 return c3497;
             case 13:
                 ArrayList arrayList4 = new ArrayList();
                 String[] strArr10 = AbstractC1574.f5469;
-                Cursor cursorM2716 = C1133.m2715(MagicFactory.get(-571144751020724L, strArr10));
+                Cursor cursorM2716 = C1133.m2715("SELECT username FROM rconversation");
                 if (cursorM2716 != null) {
                     while (cursorM2716.moveToNext()) {
                         try {
@@ -312,32 +312,32 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                 }
                 C0860 c0861 = C0860.f3275;
                 String[] strArr11 = (String[]) arrayList4.toArray(new String[0]);
-                String str3 = MagicFactory.get(-571295074876084L, strArr10);
+                String str3 = "hidden_conv_parent";
                 c0861.getClass();
                 C0860.m2383(str3, strArr11);
                 return c3497;
             case Opcodes.DCONST_0 /* 14 */:
                 C1332 c1337 = (C1332) obj;
                 String[] strArr12 = AbstractC1574.f5469;
-                c1337.m3051(MagicFactory.get(-490317761477300L, strArr12));
+                c1337.m3051("com.tencent.mm.ui.chatting.viewitems");
                 C0705 c0707 = new C0705(4);
-                c0707.m2127(MagicFactory.get(-490236157098676L, strArr12));
+                c0707.m2127("wx91d27dbf599dff74");
                 c1337.f4791 = c0707;
                 return c3497;
             case 15:
                 C1332 c1338 = (C1332) obj;
                 String[] strArr13 = AbstractC1574.f5469;
-                c1338.m3051(MagicFactory.get(-490785912912564L, strArr13));
+                c1338.m3051("com.tencent.mm.ui.chatting.viewitems");
                 C0705 c0708 = new C0705(4);
-                c0708.m2127(MagicFactory.get(-490476675267252L, strArr13), MagicFactory.get(-490592639384244L, strArr13));
+                c0708.m2127("MicroMsg.ChattingItemVoice", "[voice interrupt] set continue play visible ");
                 c1338.f4791 = c0708;
                 return c3497;
             case 16:
                 C1332 c1339 = (C1332) obj;
                 String[] strArr14 = AbstractC1574.f5469;
-                c1339.m3051(MagicFactory.get(-491108035459764L, strArr14));
+                c1339.m3051("com.tencent.mm.ui.chatting.viewitems");
                 C0705 c0709 = new C0705(4);
-                c0709.m2127(MagicFactory.get(-490944826702516L, strArr14), MagicFactory.get(-491026431081140L, strArr14));
+                c0709.m2127("voip_content_voice", "voip_content_video");
                 c1339.f4791 = c0709;
                 return c3497;
             case Opcodes.SIPUSH /* 17 */:
@@ -373,8 +373,8 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                                                 C2096.f6907.getClass();
                                                 c2008.f6678 = C2096.f6909;
                                                 c2008.f6680 = linearLayout;
-                                                c2008.m3870(MagicFactory.get(-496764507388596L, strArr15), new C2042(i4, c2020));
-                                                c2008.m3869(MagicFactory.get(-496777392290484L, strArr15), new C2083(i3));
+                                                c2008.m3870("保存", new C2042(i4, c2020));
+                                                c2008.m3869("重置", new C2083(i3));
                                                 C2007.m3866(c2008, null, 3);
                                                 c2008.m3868().m3791();
                                                 return c3497;
@@ -386,7 +386,7 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-667042780805812L, strArr15).concat(viewM4677.getResources().getResourceName(i9)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i9)));
             case Opcodes.LDC /* 18 */:
                 ((C1020) obj).f3733 = new C2058(19);
                 return c3497;
@@ -427,18 +427,18 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                 return c3497;
             case Opcodes.ILOAD /* 21 */:
                 String[] strArr16 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-577131935431348L, strArr16), MagicFactory.get(-577226424711860L, strArr16));
+                ((C1981) obj).m3827("MicroMsg.PluginHelper", "start multi webview!!!!!!!!!");
                 return c3497;
             case Opcodes.LLOAD /* 22 */:
                 int i10 = AbstractC1745.f5844;
                 C1299 c1299M3490 = AbstractC0968.m2484(obj).m3490();
                 String[] strArr17 = AbstractC1574.f5469;
-                c1299M3490.f6370 = MagicFactory.get(-541131519556276L, strArr17);
+                c1299M3490.f6370 = "field_type";
                 if (((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).intValue() == 3) {
                     C1299 c1299M3491 = AbstractC0968.m2484(obj).m3490();
-                    c1299M3491.f6370 = MagicFactory.get(-541178764196532L, strArr17);
+                    c1299M3491.f6370 = "field_favProto";
                     C1973 c1973M3492 = AbstractC0968.m2484(((C1315) AbstractC2784.m4741(c1299M3491)).m3023()).m3492();
-                    c1973M3492.f6370 = MagicFactory.get(-541243188705972L, strArr17);
+                    c1973M3492.f6370 = "getData";
                     byte[] bArr = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3492)).m3832(new Object[0]);
                     C2427 c2427 = C2427.f7718;
                     c2427.getClass();
@@ -449,7 +449,7 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                         String strM4005 = AbstractC2202.m4005();
                         String strValueOf = String.valueOf(str5.hashCode() & 255);
                         StringBuilder sbM4753 = AbstractC2784.m4753(strM4005);
-                        sbM4753.append(MagicFactory.get(-541277548444340L, strArr17));
+                        sbM4753.append("/favorite/");
                         sbM4753.append(strValueOf);
                         sbM4753.append('/');
                         sbM4753.append(str5);
@@ -460,23 +460,23 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                     if (new File(string).exists()) {
                         AbstractC1458.m3166(C2112.f6958, new C2110(string, c1283, i6));
                     } else {
-                        AbstractC2834.m4823(null, 3, MagicFactory.get(-541324793084596L, strArr17));
+                        AbstractC2834.m4823(null, 3, "获取语音路径失败, 请尝试播放后重发");
                     }
                 } else {
-                    AbstractC2834.m4823(null, 3, MagicFactory.get(-541406397463220L, strArr17));
+                    AbstractC2834.m4823(null, 3, "暂不支持的转发类型");
                 }
                 return c3497;
             case Opcodes.FLOAD /* 23 */:
                 int i11 = AbstractC1745.f5844;
                 C1299 c1299M3492 = AbstractC0968.m2484(obj).m3490();
                 String[] strArr18 = AbstractC1574.f5469;
-                c1299M3492.f6370 = MagicFactory.get(-542054937524916L, strArr18);
+                c1299M3492.f6370 = "field_type";
                 Integer num = (Integer) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                 if (num != null && num.intValue() == 3) {
                     C1299 c1299M3493 = AbstractC0968.m2484(obj).m3490();
-                    c1299M3493.f6370 = MagicFactory.get(-542102182165172L, strArr18);
+                    c1299M3493.f6370 = "field_favProto";
                     C1973 c1973M3493 = AbstractC0968.m2484(((C1315) AbstractC2784.m4741(c1299M3493)).m3023()).m3492();
-                    c1973M3493.f6370 = MagicFactory.get(-542166606674612L, strArr18);
+                    c1973M3493.f6370 = "getData";
                     byte[] bArr2 = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3493)).m3832(new Object[0]);
                     C2427 c2428 = C2427.f7718;
                     c2428.getClass();
@@ -487,7 +487,7 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                         String strM4006 = AbstractC2202.m4005();
                         String strValueOf2 = String.valueOf(str6.hashCode() & 255);
                         StringBuilder sbM4754 = AbstractC2784.m4753(strM4006);
-                        sbM4754.append(MagicFactory.get(-542200966412980L, strArr18));
+                        sbM4754.append("/favorite/");
                         sbM4754.append(strValueOf2);
                         sbM4754.append('/');
                         sbM4754.append(str6);
@@ -498,10 +498,10 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                     if (new File(string2).exists()) {
                         AbstractC1458.m3166(C2113.f6962, new C2110(string2, c1284, i3));
                     } else {
-                        AbstractC2834.m4823(null, 3, MagicFactory.get(-542248211053236L, strArr18));
+                        AbstractC2834.m4823(null, 3, "获取语音路径失败, 请尝试播放后重发");
                     }
                 } else {
-                    AbstractC2834.m4823(null, 3, MagicFactory.get(-542329815431860L, strArr18));
+                    AbstractC2834.m4823(null, 3, "暂不支持的转发类型");
                 }
                 return c3497;
             case Opcodes.DLOAD /* 24 */:
@@ -530,7 +530,7 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                 return c3497;
             case 27:
                 String[] strArr19 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-119606249257652L, strArr19), MagicFactory.get(-119756573113012L, strArr19));
+                ((C0705) obj).m2127("MicroMsg.NetSceneAddChatRoomMember", "/cgi-bin/micromsg-bin/addchatroommember");
                 return c3497;
             case 28:
                 C1020 c1021 = (C1020) obj;
@@ -540,9 +540,9 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
             default:
                 C1332 c13311 = (C1332) obj;
                 String[] strArr20 = AbstractC1574.f5469;
-                c13311.m3051(MagicFactory.get(-120396523240116L, strArr20));
+                c13311.m3051("com.tencent.mm.plugin.remittance.model");
                 C0705 c07010 = new C0705(4);
-                c07010.m2127(MagicFactory.get(-120113055398580L, strArr20), MagicFactory.get(-120250494352052L, strArr20));
+                c07010.m2127("MicroMsg.NetSceneBeforeTransfer", "/cgi-bin/mmpay-bin/beforetransfer");
                 c13311.f4791 = c07010;
                 return c3497;
         }

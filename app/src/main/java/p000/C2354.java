@@ -41,15 +41,15 @@ public final /* synthetic */ class C2354 implements InterfaceC1414 {
             case 2:
                 Properties properties3 = (Properties) this.f7548.f7553.getValue();
                 String[] strArr2 = AbstractC1574.f5469;
-                return properties3.getProperty(MagicFactory.get(-455975202978484L, strArr2), MagicFactory.get(-456005267749556L, strArr2));
+                return properties3.getProperty("author", "未知");
             case 3:
                 Properties properties4 = (Properties) this.f7548.f7553.getValue();
                 String[] strArr3 = AbstractC1574.f5469;
-                return properties4.getProperty(MagicFactory.get(-456018152651444L, strArr3), MagicFactory.get(-456052512389812L, strArr3));
+                return properties4.getProperty("version", "未知");
             case 4:
                 Properties properties5 = (Properties) this.f7548.f7553.getValue();
                 String[] strArr4 = AbstractC1574.f5469;
-                return properties5.getProperty(MagicFactory.get(-456065397291700L, strArr4), MagicFactory.get(-456112641931956L, strArr4));
+                return properties5.getProperty("updateTime", "未知");
             case 5:
                 C2355 c2356 = this.f7548;
                 File file = c2356.f7552;
@@ -59,15 +59,15 @@ public final /* synthetic */ class C2354 implements InterfaceC1414 {
                 StringBuilder sb = new StringBuilder();
                 StringBuilder sb2 = new StringBuilder();
                 String[] strArr5 = AbstractC1574.f5469;
-                sb2.append(MagicFactory.get(-456125526833844L, strArr5));
+                sb2.append("# ");
                 sb2.append((String) c2356.f7555.getValue());
                 sb.append(sb2.toString());
                 sb.append("\n\n");
-                sb.append(MagicFactory.get(-456138411735732L, strArr5) + ((String) c2356.f7556.getValue()));
+                sb.append("**作者**: " + ((String) c2356.f7556.getValue()));
                 sb.append("\n\n");
-                sb.append(MagicFactory.get(-456177066441396L, strArr5));
+                sb.append("---");
                 sb.append("\n\n");
-                return AbstractC1194.m2786(sb, MagicFactory.get(-456194246310580L, strArr5), '\n');
+                return AbstractC1194.m2786(sb, "暂无相关描述", '\n');
             default:
                 C2355 c2357 = this.f7548;
                 c2357.getClass();

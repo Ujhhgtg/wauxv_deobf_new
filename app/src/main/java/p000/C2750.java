@@ -157,9 +157,9 @@ public final /* synthetic */ class C2750 implements InterfaceC1425 {
                 ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(cls), AbstractC2519.m4527(cls)}, 3, c1973M3492)).m3831(0, 0, 0);
                 C1973 c1973M3493 = AbstractC0968.m2484(viewGroup).m3492();
                 String[] strArr3 = AbstractC1574.f5469;
-                c1973M3493.f6370 = MagicFactory.get(-602777185155764L, strArr3);
+                c1973M3493.f6370 = "getAdapter";
                 C1299 c1299M3492 = AbstractC0968.m2484(((C1982) AbstractC2784.m4742(c1973M3493)).m3831(new Object[0])).m3490();
-                c1299M3492.f4725 = MagicFactory.get(-602824429796020L, strArr3);
+                c1299M3492.f4725 = "com.tencent.mm.plugin.mvvmlist.MvvmList";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3492)).m3023();
                 Method methodM3316 = AbstractC1574.m3315(C2753.f8839);
                 if (methodM3316.getParameterCount() == 4) {

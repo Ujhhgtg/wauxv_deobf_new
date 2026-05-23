@@ -132,7 +132,7 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                 return c3497;
             case 8:
                 String[] strArr2 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-118214679853748L, strArr2), MagicFactory.get(-118300579199668L, strArr2));
+                ((C0705) obj).m2127("MicroMsg.VoiceLogic", "startRecord insert voicestg success");
                 return c3497;
             case 9:
                 ((C1981) obj).m3827("getAmrFullPath cost: ");
@@ -165,8 +165,8 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                 c2008.f6678 = C3626.f11331;
                 c2008.f6680 = c2011M3872.f6707;
                 String[] strArr3 = AbstractC1574.f5469;
-                c2008.m3870(MagicFactory.get(-567124661631668L, strArr3), new C1173(c2011M3872, 5));
-                c2008.m3869(MagicFactory.get(-567137546533556L, strArr3), new C3369(6));
+                c2008.m3870("保存", new C1173(c2011M3872, 5));
+                c2008.m3869("重置", new C3369(6));
                 C2007.m3866(c2008, null, 3);
                 c2008.m3868().m3791();
                 return c3497;
@@ -180,7 +180,7 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                 C1981 c1981 = (C1981) obj;
                 c1981.m3821(1);
                 String[] strArr4 = AbstractC1574.f5469;
-                c1981.m3827(MagicFactory.get(-367219703806644L, strArr4), MagicFactory.get(-367335667923636L, strArr4), MagicFactory.get(-367417272302260L, strArr4));
+                c1981.m3827("MicroMsg.SceneVoiceService", "Start Recv[%s] :%s", "Start Send :");
                 return c3497;
             case 15:
                 C1563 c1564 = (C1563) obj;
@@ -228,28 +228,28 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                 c0096.f1044 = string2;
                 int i6 = AbstractC1745.f5844;
                 String[] strArr5 = AbstractC1574.f5469;
-                C1744 c1744M2483 = AbstractC0968.m2483(AbstractC2201.m3988(MagicFactory.get(-19237158517428L, strArr5)));
+                C1744 c1744M2483 = AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.boot.BuildConfig"));
                 C1299 c1299M3492 = c1744M2483.m3490();
-                c1299M3492.f6370 = MagicFactory.get(-19374597470900L, strArr5);
+                c1299M3492.f6370 = "VERSION_NAME";
                 String str3 = (String) ((C1315) AbstractC0744.m2191(c1299M3492.m3014())).m3024();
                 C0091 c0097 = C1565.f5448;
                 InterfaceC1742 interfaceC1748 = interfaceC1742Arr[6];
                 c0097.f1044 = str3;
                 C1299 c1299M3493 = c1744M2483.m3490();
-                c1299M3493.f6370 = MagicFactory.get(-19430432045748L, strArr5);
+                c1299M3493.f6370 = "VERSION_CODE";
                 int iIntValue = ((Number) ((C1315) AbstractC0744.m2191(c1299M3493.m3014())).m3024()).intValue();
                 C0091 c0098 = C1565.f5449;
                 InterfaceC1742 interfaceC1749 = interfaceC1742Arr[7];
                 c0098.f1044 = Integer.valueOf(iIntValue);
                 C1299 c1299M3494 = c1744M2483.m3490();
-                c1299M3494.f6370 = MagicFactory.get(-19486266620596L, strArr5);
+                c1299M3494.f6370 = "CLIENT_VERSION_ARM64";
                 String str4 = (String) ((C1315) AbstractC0744.m2191(c1299M3494.m3014())).m3024();
                 C0091 c0099 = C1565.f5450;
                 InterfaceC1742 interfaceC17410 = interfaceC1742Arr[8];
                 c0099.f1044 = str4;
                 C1299 c1299M3495 = c1744M2483.m3490();
-                c1299M3495.f6370 = MagicFactory.get(-19576460933812L, strArr5);
-                boolean zM4828 = AbstractC2841.m4828((CharSequence) ((C1315) AbstractC0744.m2191(c1299M3495.m3014())).m3024(), MagicFactory.get(-19619410606772L, strArr5), false);
+                c1299M3495.f6370 = "BUILD_TAG";
+                boolean zM4828 = AbstractC2841.m4828((CharSequence) ((C1315) AbstractC0744.m2191(c1299M3495.m3014())).m3024(), "_GP_", false);
                 C0091 c00910 = C1565.f5451;
                 InterfaceC1742 interfaceC17411 = interfaceC1742Arr[9];
                 c00910.f1044 = Boolean.valueOf(zM4828);
@@ -270,9 +270,9 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                 AbstractC2140.f7079 = okHttpClientM4155;
                 Cache cache = okHttpClientM4155.cache();
                 AbstractC2140.f7080 = cache != null ? new C1391(OkHttpUtils.diskLruCache(cache)) : null;
-                AbstractC1458.f5192 = new C0542(baseContext, MagicFactory.get(-17575006173876L, strArr5));
-                AbstractC2665.f8589 = new C0542(baseContext, MagicFactory.get(-17832704211636L, strArr5));
-                AbstractC0968.f3516 = new C0542(baseContext, MagicFactory.get(-18154826758836L, strArr5));
+                AbstractC1458.f5192 = new C0542(baseContext, "WAuxiliary_config_default");
+                AbstractC2665.f8589 = new C0542(baseContext, "WAuxiliary_config_dex_desc");
+                AbstractC0968.f3516 = new C0542(baseContext, "WAuxiliary_config_plugin");
                 C2310 c2310 = c3635.f7437;
                 if (c2310 != null) {
                     strM1338 = c2310.f7439;
@@ -281,39 +281,39 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                     strM1338 = C0251.m1338();
                 }
                 if (c3635.m4173().equals(AbstractC2841.m4848(strM1338).toString())) {
-                    UMConfigure.preInit(baseContext, MagicFactory.get(-83167746718388L, strArr5), (String) c0096.m1086(interfaceC1742Arr[5]));
+                    UMConfigure.preInit(baseContext, "68393b1dbc47b67d83776862", (String) c0096.m1086(interfaceC1742Arr[5]));
                     ArrayList arrayList = C3678.f11549;
-                    C3678.m5305(14, MagicFactory.get(-71936407239348L, strArr5) + Build.VERSION.RELEASE + '-' + C1565.m3281());
-                    C3678.m5305(14, MagicFactory.get(-72022306585268L, strArr5));
+                    C3678.m5305(14, "running on: Android" + Build.VERSION.RELEASE + '-' + C1565.m3281());
+                    C3678.m5305(14, "loading module: WAuxiliary1.2.7.r1356.3e63484");
                     StringBuilder sb = new StringBuilder();
-                    sb.append(MagicFactory.get(-72219875080884L, strArr5));
+                    sb.append("compile timestamp: ");
                     sb.append(AbstractC3691.f11600);
                     C3678.m5305(14, sb.toString());
-                    System.loadLibrary(MagicFactory.get(-72305774426804L, strArr5));
+                    System.loadLibrary("wauxv-core");
                     LoaderNative.f970.loaderInit((String) c0091.m1086(interfaceC1742Arr[0]), baseContext.getDataDir().getAbsolutePath(), C1565.m3280(), C1565.m3279(), C1565.m3278(), (String) c0099.m1086(interfaceC1742Arr[8]));
                     C2873 c2873 = AbstractC2342.f7529;
-                    AbstractC1459.f5195 = AbstractC2342.m4330(MagicFactory.get(-36464272341684L, strArr5));
+                    AbstractC1459.f5195 = AbstractC2342.m4330("Cache");
                     String str5 = AbstractC1459.f5195;
                     if (str5 == null) {
-                        throw new IllegalArgumentException(MagicFactory.get(-393427594246836L, strArr5).toString());
+                        throw new IllegalArgumentException("AudioUtil must be init".toString());
                     }
                     File file = new File(str5);
                     if (!file.exists() && !file.mkdirs()) {
-                        throw new IOException(MagicFactory.get(-393526378494644L, strArr5));
+                        throw new IOException("init: 缓存目录创建失败");
                     }
                     if (!file.canWrite()) {
-                        throw new IOException(MagicFactory.get(-393590803004084L, strArr5));
+                        throw new IOException("init: 缓存目录无写入权限");
                     }
                     if (!C3635.m5221()) {
-                        String str6 = MagicFactory.get(-71721658874548L, strArr5);
-                        String str7 = MagicFactory.get(-17948668328628L, strArr5);
+                        String str6 = "initDexObfKey";
+                        String str7 = "";
                         C0542 c0542 = AbstractC2665.f8589;
                         if (c0542 == null) {
-                            throw new IllegalArgumentException(MagicFactory.get(-17716740094644L, strArr5).toString());
+                            throw new IllegalArgumentException("DexDescConfig must be init".toString());
                         }
                         String string3 = c0542.m1891().getString(str6, str7);
                         if (AbstractC2841.m4836(string3)) {
-                            string = AbstractC1194.m2786(new StringBuilder(), MagicFactory.get(-71781788416692L, strArr5), '\n');
+                            string = AbstractC1194.m2786(new StringBuilder(), "核心丢失, 正在重载...", '\n');
                         } else {
                             StringBuilder sb2 = new StringBuilder();
                             C3447 c3447M5223 = C3635.m5223(string3);
@@ -322,23 +322,23 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                             C3447 c3447M5224 = C3635.m5223((String) C3635.f11373.getValue());
                             Object obj8 = c3447M5224.f10863;
                             Object obj9 = c3447M5224.f10862;
-                            sb2.append(MagicFactory.get(-71841917958836L, strArr5) + ((String) obj7));
+                            sb2.append("宿主：" + ((String) obj7));
                             sb2.append('\n');
                             if (!AbstractC2207.m4087(obj9, obj7)) {
-                                sb2.append(MagicFactory.get(-71859097828020L, strArr5) + ((String) obj9));
+                                sb2.append("变更 -> " + ((String) obj9));
                                 sb2.append('\n');
                             }
-                            sb2.append(MagicFactory.get(-71889162599092L, strArr5) + ((String) obj6));
+                            sb2.append("模块：" + ((String) obj6));
                             sb2.append('\n');
                             if (!AbstractC2207.m4087(obj8, obj6)) {
-                                sb2.append(MagicFactory.get(-71906342468276L, strArr5) + ((String) obj8));
+                                sb2.append("变更 -> " + ((String) obj8));
                                 sb2.append('\n');
                             }
                             string = sb2.toString();
                         }
                         C3634 c3634 = new C3634(string, null);
-                        C1973 c1973M3492 = AbstractC0968.m2483(AbstractC2201.m3988(MagicFactory.get(-72353019067060L, strArr5))).m3492();
-                        c1973M3492.f6370 = MagicFactory.get(-72516227824308L, strArr5);
+                        C1973 c1973M3492 = AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.ui.conversation.MainUI")).m3492();
+                        c1973M3492.f6370 = "onCreate";
                         C3689 c3689M4174 = c3635.m4174((C1982) AbstractC0744.m2191(c1973M3492.m3799()), 1);
                         c3689M4174.m5350(new C1514(c3689M4174, 4, c3634));
                         c3689M4174.m5352();
@@ -353,7 +353,7 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                 Object obj10 = ((C1559) c1566.f5438.f5661).f5430.thisObject;
                 Class<?> cls5 = obj10 != null ? obj10.getClass() : null;
                 String[] strArr6 = AbstractC1574.f5469;
-                if (AbstractC2207.m4087(cls5, AbstractC2201.m3988(MagicFactory.get(-69166153333428L, strArr6)))) {
+                if (AbstractC2207.m4087(cls5, AbstractC2201.m3988("com.tencent.mm.plugin.setting.ui.setting_new.MainSettingsUI"))) {
                     Object objM3268 = c1566.m3268();
                     Activity activity = (Activity) (objM3268 instanceof Activity ? objM3268 : null);
                     if (activity == null) {
@@ -361,12 +361,12 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                         throw new IllegalStateException("HookParam instance cannot cast to ".concat((clsM2186 != null ? clsM2186 : Activity.class).getName()).toString());
                     }
                     C3636 c3636 = C3636.f11374;
-                    String str8 = MagicFactory.get(-69423851371188L, strArr6);
+                    String str8 = "WA";
                     MenuItemOnMenuItemClickListenerC2751 menuItemOnMenuItemClickListenerC2751 = new MenuItemOnMenuItemClickListenerC2751(1, activity);
                     c3636.getClass();
                     int i7 = AbstractC1745.f5844;
                     C1973 c1973M3493 = AbstractC0968.m2484(activity).m3492();
-                    c1973M3493.f6370 = MagicFactory.get(-68758131440308L, strArr6);
+                    c1973M3493.f6370 = "addTextOptionMenu";
                     c1973M3493.m2888(Arrays.copyOf(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(cls3), AbstractC2519.m4527(MenuItem.OnMenuItemClickListener.class)}, 3));
                     c1973M3493.m3732();
                     ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3831(Integer.valueOf(R.id.Wauxv_Entry_Item), str8, menuItemOnMenuItemClickListenerC2751);

@@ -65,7 +65,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 return c3497;
             case 4:
                 String[] strArr2 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-97512937487028L, strArr2), MagicFactory.get(-97663261342388L, strArr2));
+                ((C0705) obj).m2127("MicroMsg.emoji.EmojiFileEncryptMgr", "decode emoji file failed. path is no exist :%s ");
                 return c3497;
             case 5:
                 String[] strArr3 = AbstractC1574.f5469;
@@ -83,10 +83,10 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 c1981.m3823(clsM4740, clsM2184 != null ? clsM2184 : Integer.class);
                 C1984 c1984 = new C1984(4);
                 C1981 c1982 = new C1981(4);
-                c1982.m3826(MagicFactory.get(-553934817065652L, strArr3));
+                c1982.m3826("currentTimeMillis");
                 c1984.m3848(c1982);
                 C1981 c1983 = new C1981(4);
-                c1983.m3826(MagicFactory.get(-554012126476980L, strArr3));
+                c1983.m3826("nextInt");
                 c1984.m3848(c1983);
                 c1981.f6564 = c1984;
                 return c3497;
@@ -121,15 +121,15 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 if (((Number) c1315.m3024()).intValue() == 0) {
                     C1299 c1299M3491 = AbstractC0968.m2484(c2585).m3490();
                     String[] strArr4 = AbstractC1574.f5469;
-                    c1299M3491.f4725 = MagicFactory.get(-553492435434164L, strArr4);
+                    c1299M3491.f4725 = "com.tencent.mm.api.IEmojiInfo";
                     C1973 c1973M3492 = AbstractC0968.m2484(((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3023()).m3492();
-                    c1973M3492.f6370 = MagicFactory.get(-553621284453044L, strArr4);
+                    c1973M3492.f6370 = "getMd5";
                     String str = (String) ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3832(new Object[0]);
-                    if (AbstractC2207.m4087(str, MagicFactory.get(-553651349224116L, strArr4))) {
+                    if (AbstractC2207.m4087(str, "9bd1281af3a31710a45b84d736363691")) {
                         c1160.getClass();
                         c1563.m3272(null);
                         AlertDialog.Builder builder = new AlertDialog.Builder(AbstractC2203.m4033());
-                        builder.setTitle(MagicFactory.get(-553359291447988L, strArr4));
+                        builder.setTitle("选择猜拳");
                         RadioGroup radioGroup = new RadioGroup(builder.getContext());
                         radioGroup.setGravity(17);
                         radioGroup.setOrientation(0);
@@ -145,7 +145,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                             radioGroup.addView(radioButton);
                         }
                         builder.setView(radioGroup);
-                        builder.setPositiveButton(MagicFactory.get(-553380766284468L, strArr4), new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᛸᲇᲀᲈ
+                        builder.setPositiveButton("发送", new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᛸᲇᲀᲈ
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i8) {
                                 switch (i5) {
@@ -167,7 +167,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                             }
                         });
                         final int i8 = 3;
-                        builder.setNeutralButton(MagicFactory.get(-553393651186356L, strArr4), new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᛸᲇᲀᲈ
+                        builder.setNeutralButton("随机", new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᛸᲇᲀᲈ
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i9) {
                                 switch (i8) {
@@ -188,13 +188,13 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                                 }
                             }
                         });
-                        builder.setNegativeButton(MagicFactory.get(-553406536088244L, strArr4), (DialogInterface.OnClickListener) null);
+                        builder.setNegativeButton("取消", (DialogInterface.OnClickListener) null);
                         builder.show();
-                    } else if (AbstractC2207.m4087(str, MagicFactory.get(-553793083144884L, strArr4))) {
+                    } else if (AbstractC2207.m4087(str, "08f223fa83f1ca34e143d1e580252c7c")) {
                         c1160.getClass();
                         c1563.m3272(null);
                         AlertDialog.Builder builder2 = new AlertDialog.Builder(AbstractC2203.m4033());
-                        builder2.setTitle(MagicFactory.get(-553419420990132L, strArr4));
+                        builder2.setTitle("选择骰子");
                         RadioGroup radioGroup2 = new RadioGroup(builder2.getContext());
                         radioGroup2.setGravity(17);
                         radioGroup2.setOrientation(0);
@@ -210,7 +210,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                             radioGroup2.addView(radioButton2);
                         }
                         builder2.setView(radioGroup2);
-                        builder2.setPositiveButton(MagicFactory.get(-553440895826612L, strArr4), new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᛸᲇᲀᲈ
+                        builder2.setPositiveButton("发送", new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᛸᲇᲀᲈ
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i9) {
                                 switch (iIntValue) {
@@ -232,7 +232,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                             }
                         });
                         final int i9 = 1;
-                        builder2.setNeutralButton(MagicFactory.get(-553453780728500L, strArr4), new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᛸᲇᲀᲈ
+                        builder2.setNeutralButton("随机", new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᤞᛸᲇᲀᲈ
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i10) {
                                 switch (i9) {
@@ -253,7 +253,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                                 }
                             }
                         });
-                        builder2.setNegativeButton(MagicFactory.get(-553466665630388L, strArr4), (DialogInterface.OnClickListener) null);
+                        builder2.setNegativeButton("取消", (DialogInterface.OnClickListener) null);
                         builder2.show();
                     }
                 }
@@ -293,7 +293,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 return c3497;
             case Opcodes.FCONST_1 /* 12 */:
                 String[] strArr5 = AbstractC1574.f5469;
-                ((C1981) obj).m3827(MagicFactory.get(-554188220136116L, strArr5), MagicFactory.get(-554329954056884L, strArr5));
+                ((C1981) obj).m3827("MicroMsg.EmojiPanelClickListener", "penn send capture emoji click emoji: %s status: %d.");
                 return c3497;
             case 13:
                 String[] strArr6 = AbstractC1574.f5469;
@@ -363,7 +363,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                                                             C1160.f4283.getClass();
                                                             c2007.f6678 = C1160.f4285;
                                                             c2007.f6680 = linearLayout;
-                                                            c2007.m3870(MagicFactory.get(-553479550532276L, strArr6), new C0106(20, c2019));
+                                                            c2007.m3870("保存", new C0106(20, c2019));
                                                             AbstractC2784.m4755(c2007, null, 3);
                                                             return c3497;
                                                         }
@@ -377,7 +377,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(-665118635457204L, strArr6).concat(viewM4676.getResources().getResourceName(i10)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i10)));
             case Opcodes.DCONST_0 /* 14 */:
                 ((C1020) obj).f3733 = new C1148(15);
                 return c3497;
@@ -385,8 +385,8 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 C1333 c1334 = (C1333) obj;
                 C1981 c1981M4739 = AbstractC2784.m4739(c1334);
                 String[] strArr7 = AbstractC1574.f5469;
-                C1981.m3818(c1981M4739, MagicFactory.get(-85907935853236L, strArr7));
-                c1981M4739.m3827(MagicFactory.get(-86084029512372L, strArr7));
+                C1981.m3818(c1981M4739, "com.tencent.mm.storage.emotion.EmojiInfo");
+                c1981M4739.m3827("save emoji thumb error");
                 c1334.f4794 = c1981M4739;
                 return c3497;
             case 16:
@@ -397,7 +397,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 return c3497;
             case Opcodes.LDC /* 18 */:
                 String[] strArr8 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-98036923497140L, strArr8), MagicFactory.get(-98174362450612L, strArr8));
+                ((C0705) obj).m2127("MicroMsg.emoji.EmojiInfoStorage", "md5 is null or invalue. md5:%s");
                 return c3497;
             case 19:
                 List list = (List) obj;
@@ -421,7 +421,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 return c3497;
             case Opcodes.LLOAD /* 22 */:
                 String[] strArr9 = AbstractC1574.f5469;
-                ((C0705) obj).m2127(MagicFactory.get(-98440650422964L, strArr9), MagicFactory.get(-98560909507252L, strArr9));
+                ((C0705) obj).m2127("MicroMsg.emoji.EmojiMgrImpl", "sendEmoji: context is null");
                 return c3497;
             case Opcodes.FLOAD /* 23 */:
                 C2011 c2011M3872 = C2011.m3872(LayoutInflater.from(((View) obj).getContext()));
@@ -431,8 +431,8 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 c2008.f6678 = C1175.f4310;
                 c2008.f6680 = c2011M3872.f6707;
                 String[] strArr10 = AbstractC1574.f5469;
-                c2008.m3870(MagicFactory.get(-565664372751028L, strArr10), new C1173(c2011M3872, 0));
-                c2008.m3869(MagicFactory.get(-565677257652916L, strArr10), new C0104(26));
+                c2008.m3870("保存", new C1173(c2011M3872, 0));
+                c2008.m3869("重置", new C0104(26));
                 C2007.m3866(c2008, null, 3);
                 c2008.m3868().m3791();
                 return c3497;
@@ -442,9 +442,9 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
             case Opcodes.ALOAD /* 25 */:
                 C1332 c1335 = (C1332) obj;
                 String[] strArr11 = AbstractC1574.f5469;
-                c1335.m3051(MagicFactory.get(-99054830746292L, strArr11));
+                c1335.m3051("com.tencent.mm.storage");
                 C0705 c0706 = new C0705(4);
-                c0706.m2127(MagicFactory.get(-98835787414196L, strArr11), MagicFactory.get(-98968931400372L, strArr11));
+                c0706.m2127("MicroMsg.emoji.EmojiStorageMgr", "EmojiStorageMgr: %s");
                 c1335.f4791 = c0706;
                 return c3497;
             case 26:
@@ -476,15 +476,15 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 }
                 for (Object obj5 : C1260.f4592) {
                     try {
-                        if (((C0622) obj5).mo3264() && AbstractC2207.m4087(str2, MagicFactory.get(-624690108299956L, strArr12))) {
-                            c1565.m3272(MagicFactory.get(-624784597580468L, strArr12));
+                        if (((C0622) obj5).mo3264() && AbstractC2207.m4087(str2, "clicfg_conv_mvvm_list")) {
+                            c1565.m3272("0");
                         }
                     } catch (Exception e) {
                         ArrayList arrayList = C3678.f11549;
                         StringBuilder sb = new StringBuilder();
-                        sb.append(MagicFactory.get(-48975512074932L, strArr12));
-                        sb.append(obj5 instanceof AbstractC2867 ? ((AbstractC2867) obj5).mo1128() : MagicFactory.get(-49048526518964L, strArr12));
-                        AbstractC1194.m2792(sb, MagicFactory.get(-49087181224628L, strArr12), e, 12);
+                        sb.append("onGetExptConfig ");
+                        sb.append(obj5 instanceof AbstractC2867 ? ((AbstractC2867) obj5).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb, " Failed", e, 12);
                     }
                 }
                 return c3497;
@@ -506,7 +506,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 Class<Boolean> clsM2188 = AbstractC0743.m2183(AbstractC2519.m4527(Boolean.class));
                 c1985.m3823(clsM4741, cls, clsM2188 != null ? clsM2188 : Boolean.class);
                 String[] strArr13 = AbstractC1574.f5469;
-                c1985.m3827(MagicFactory.get(-49121540962996L, strArr13), MagicFactory.get(-49211735276212L, strArr13));
+                c1985.m3827("MicroMsg.ExptService", "Fail to query value, return default value '%s' instead.");
                 return c3497;
         }
     }
