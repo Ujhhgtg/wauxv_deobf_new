@@ -1,0 +1,38 @@
+package p000;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.EdgeEffect;
+
+/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᛸᤞᲈᲇᲀ, reason: contains not printable characters */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbstractC1132 {
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
+    public static EdgeEffect m2701(Context context, AttributeSet attributeSet) {
+        try {
+            return new EdgeEffect(context, attributeSet);
+        } catch (Throwable unused) {
+            return new EdgeEffect(context);
+        }
+    }
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
+    public static float m2702(EdgeEffect edgeEffect) {
+        try {
+            return edgeEffect.getDistance();
+        } catch (Throwable unused) {
+            return 0.0f;
+        }
+    }
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
+    public static float m2703(EdgeEffect edgeEffect, float f, float f2) {
+        try {
+            return edgeEffect.onPullDistance(f, f2);
+        } catch (Throwable unused) {
+            edgeEffect.onPull(f, f2);
+            return 0.0f;
+        }
+    }
+}

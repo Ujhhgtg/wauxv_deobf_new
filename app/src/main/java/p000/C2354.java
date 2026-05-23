@@ -1,0 +1,78 @@
+package p000;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Properties;
+import me.hd.wauxv.hook.factory.MagicFactory;
+
+/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᤞᛸᲇᲈᲁ, reason: contains not printable characters */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class C2354 implements InterfaceC1414 {
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
+    public final /* synthetic */ int f7547;
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
+    public final /* synthetic */ C2355 f7548;
+
+    public /* synthetic */ C2354(C2355 c2355, int i) {
+        this.f7547 = i;
+        this.f7548 = c2355;
+    }
+
+    @Override // p000.InterfaceC1414
+    public final Object invoke() throws IOException {
+        switch (this.f7547) {
+            case 0:
+                Properties properties = new Properties();
+                C2355 c2355 = this.f7548;
+                if (c2355.f7551.exists()) {
+                    properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(c2355.f7551), AbstractC0599.f2413), 8192));
+                }
+                return properties;
+            case 1:
+                Properties properties2 = (Properties) this.f7548.f7553.getValue();
+                String[] strArr = AbstractC1574.f5469;
+                return properties2.getProperty("name", "未知");
+            case 2:
+                Properties properties3 = (Properties) this.f7548.f7553.getValue();
+                String[] strArr2 = AbstractC1574.f5469;
+                return properties3.getProperty(MagicFactory.get(-455975202978484L, strArr2), MagicFactory.get(-456005267749556L, strArr2));
+            case 3:
+                Properties properties4 = (Properties) this.f7548.f7553.getValue();
+                String[] strArr3 = AbstractC1574.f5469;
+                return properties4.getProperty(MagicFactory.get(-456018152651444L, strArr3), MagicFactory.get(-456052512389812L, strArr3));
+            case 4:
+                Properties properties5 = (Properties) this.f7548.f7553.getValue();
+                String[] strArr4 = AbstractC1574.f5469;
+                return properties5.getProperty(MagicFactory.get(-456065397291700L, strArr4), MagicFactory.get(-456112641931956L, strArr4));
+            case 5:
+                C2355 c2356 = this.f7548;
+                File file = c2356.f7552;
+                if (file.exists()) {
+                    return AbstractC1328.m3043(file);
+                }
+                StringBuilder sb = new StringBuilder();
+                StringBuilder sb2 = new StringBuilder();
+                String[] strArr5 = AbstractC1574.f5469;
+                sb2.append(MagicFactory.get(-456125526833844L, strArr5));
+                sb2.append((String) c2356.f7555.getValue());
+                sb.append(sb2.toString());
+                sb.append("\n\n");
+                sb.append(MagicFactory.get(-456138411735732L, strArr5) + ((String) c2356.f7556.getValue()));
+                sb.append("\n\n");
+                sb.append(MagicFactory.get(-456177066441396L, strArr5));
+                sb.append("\n\n");
+                return AbstractC1194.m2786(sb, MagicFactory.get(-456194246310580L, strArr5), '\n');
+            default:
+                C2355 c2357 = this.f7548;
+                c2357.getClass();
+                c2357.m4332("openSettings", new Object[0]);
+                return C3497.f10997;
+        }
+    }
+}

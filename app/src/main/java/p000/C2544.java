@@ -1,0 +1,281 @@
+package p000;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.text.SpannableStringBuilder;
+import android.text.method.LinkMovementMethod;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import com.alibaba.fastjson2.internal.asm.Opcodes;
+import com.google.android.material.slider.Slider;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+import com.google.android.material.textview.MaterialTextView;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Collections;
+import me.hd.wauxv.R;
+import me.hd.wauxv.hook.factory.MagicFactory;
+
+/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲈᛸᤝᲁᲇ, reason: contains not printable characters */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class C2544 implements InterfaceC1425 {
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
+    public final /* synthetic */ int f8100;
+
+    public /* synthetic */ C2544(int i) {
+        this.f8100 = i;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // p000.InterfaceC1425
+    public final Object invoke(Object obj) {
+        Object c2585;
+        int i = this.f8100;
+        int i2 = 12;
+        int i3 = 11;
+        int i4 = 4;
+        Class<String> cls = String.class;
+        int i5 = 10;
+        int i6 = 2;
+        int i7 = 6;
+        int i8 = 3;
+        C3497 c3497 = C3497.f10997;
+        switch (i) {
+            case 0:
+                ((C1332) obj).m3050(new C2544(i4));
+                return c3497;
+            case 1:
+                ((C1333) obj).m3052(new C2544(i8));
+                return c3497;
+            case 2:
+                C1563 c1563 = (C1563) obj;
+                String[] strArr = AbstractC1574.f5469;
+                c1563.getClass();
+                try {
+                    c2585 = c1563.m3267()[0];
+                    if (c2585 == null) {
+                        c2585 = null;
+                    }
+                } catch (Throwable th) {
+                    c2585 = new C2585(th);
+                }
+                String str = (String) (c2585 instanceof C2585 ? null : c2585);
+                try {
+                    Object obj2 = c1563.m3267()[1];
+                    break;
+                } catch (Throwable unused) {
+                }
+                for (InterfaceC1599 interfaceC1599 : C2546.f8103) {
+                    try {
+                        interfaceC1599.mo3237(c1563, str);
+                    } catch (Exception e) {
+                        ArrayList arrayList = C3678.f11549;
+                        StringBuilder sb = new StringBuilder();
+                        sb.append("onGetRepairerConfig ");
+                        sb.append(interfaceC1599 instanceof AbstractC2867 ? ((AbstractC2867) interfaceC1599).mo1128() : "LoadHook");
+                        AbstractC1194.m2792(sb, " Failed", e, 12);
+                    }
+                }
+                return c3497;
+            case 3:
+                C1981 c1981 = (C1981) obj;
+                Class<Object> cls2 = Object.class;
+                Class<Object> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(cls2));
+                if (clsM2183 == null) {
+                    clsM2183 = cls2;
+                }
+                Class<String> clsM4740 = AbstractC2784.m4740(c1981, clsM2183, cls);
+                cls = clsM4740 != null ? clsM4740 : String.class;
+                Class<Object> clsM2184 = AbstractC0743.m2183(AbstractC2519.m4527(cls2));
+                c1981.m3823(cls, clsM2184 != null ? clsM2184 : Object.class);
+                String[] strArr2 = AbstractC1574.f5469;
+                c1981.m3827(MagicFactory.get(-62998580296372L, strArr2), MagicFactory.get(-63028645067444L, strArr2), MagicFactory.get(-63045824936628L, strArr2), MagicFactory.get(-63067299773108L, strArr2));
+                return c3497;
+            case 4:
+                String[] strArr3 = AbstractC1574.f5469;
+                ((C0705) obj).m2127(MagicFactory.get(-62843961473716L, strArr3), MagicFactory.get(-62934155786932L, strArr3));
+                return c3497;
+            case 5:
+                C1981 c1982 = (C1981) obj;
+                Class<ImageView> clsM2185 = AbstractC0743.m2183(AbstractC2519.m4527(ImageView.class));
+                Class cls3 = clsM2185 != null ? clsM2185 : ImageView.class;
+                Class<String> clsM2186 = AbstractC0743.m2183(AbstractC2519.m4527(cls));
+                cls = clsM2186 != null ? clsM2186 : String.class;
+                Class<Float> clsM2187 = AbstractC0743.m2183(AbstractC2519.m4527(Float.class));
+                Class cls4 = clsM2187 != null ? clsM2187 : Float.class;
+                Class<Boolean> clsM2188 = AbstractC0743.m2183(AbstractC2519.m4527(Boolean.class));
+                c1982.m3823(cls3, cls, cls4, clsM2188 != null ? clsM2188 : Boolean.class);
+                c1982.m3827("MicroMsg.AvatarDrawable");
+                return c3497;
+            case 6:
+                C1563 c1564 = (C1563) obj;
+                c1564.getClass();
+                new C0408(i6, i7, c1564).m1608(Float.valueOf(C2602.f8466.m2537()));
+                return c3497;
+            case 7:
+                ((C1333) obj).m3052(new C2544(13));
+                return c3497;
+            case 8:
+                String str2 = ((C1974) obj).m3801().f3755;
+                return Boolean.valueOf((AbstractC2207.m4087(str2, "<clinit>") || AbstractC2207.m4087(str2, "<init>")) ? false : true);
+            case 9:
+                ((C1333) obj).m3052(new C2544(i2));
+                return c3497;
+            case 10:
+                return Boolean.valueOf(AbstractC2207.m4087(((C1974) obj).m3801().f3755, "<init>"));
+            case 11:
+                ((C1333) obj).m3052(new C2544(5));
+                return c3497;
+            case Opcodes.FCONST_1 /* 12 */:
+                String[] strArr4 = AbstractC1574.f5469;
+                ((C1981) obj).m3827(MagicFactory.get(-497756644833972L, strArr4), MagicFactory.get(-497808184441524L, strArr4));
+                return c3497;
+            case 13:
+                String[] strArr5 = AbstractC1574.f5469;
+                ((C1981) obj).m3827(MagicFactory.get(-497846839147188L, strArr5), MagicFactory.get(-497898378754740L, strArr5));
+                return c3497;
+            case Opcodes.DCONST_0 /* 14 */:
+                String[] strArr6 = AbstractC1574.f5469;
+                View viewM4676 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_round_avatar, null, false);
+                Slider slider = (Slider) AbstractC3681.m5325(viewM4676, R.id.moduleDialogSliderRoundAvatar);
+                if (slider == null) {
+                    throw new NullPointerException(MagicFactory.get(-668004853480116L, strArr6).concat(viewM4676.getResources().getResourceName(R.id.moduleDialogSliderRoundAvatar)));
+                }
+                LinearLayout linearLayout = (LinearLayout) viewM4676;
+                C2023 c2023 = new C2023(linearLayout, slider);
+                slider.setValue(C2602.f8466.m2537());
+                C2007 c2007 = new C2007();
+                C2603.f8467.getClass();
+                c2007.f6678 = C2603.f8469;
+                c2007.f6680 = linearLayout;
+                c2007.m3870(MagicFactory.get(-497640680716980L, strArr6), new C2042(i5, c2023));
+                AbstractC2784.m4755(c2007, null, 3);
+                return c3497;
+            case 15:
+                ((C1020) obj).f3733 = new C2544(i3);
+                return c3497;
+            case 16:
+                C1020 c1020 = (C1020) obj;
+                c1020.f3733 = new C2544(9);
+                c1020.f3734 = new C2544(i5);
+                return c3497;
+            case Opcodes.SIPUSH /* 17 */:
+                C1020 c1021 = (C1020) obj;
+                c1021.f3733 = new C2544(7);
+                c1021.f3734 = new C2544(8);
+                return c3497;
+            case Opcodes.LDC /* 18 */:
+                C2603 c2603 = C2603.f8467;
+                C3689 c3689M4172 = C2309.m4172(c2603, Collections.singletonList((Method) obj));
+                c2603.m3263(c3689M4172, new C2544(i7));
+                c3689M4172.m5352();
+                return c3497;
+            case 19:
+                C1563 c1565 = (C1563) obj;
+                c1565.getClass();
+                new C0408(i6, i7, c1565).m1608(Float.valueOf(C2602.f8466.m2537()));
+                return c3497;
+            case 20:
+                C1563 c1566 = (C1563) obj;
+                c1566.getClass();
+                new C0408(i8, i7, c1566).m1608(Float.valueOf(C2602.f8466.m2537()));
+                return c3497;
+            case Opcodes.ILOAD /* 21 */:
+                ((C1020) obj).f3733 = new C2544(22);
+                return c3497;
+            case Opcodes.LLOAD /* 22 */:
+                ((C1333) obj).m3052(new C2544(23));
+                return c3497;
+            case Opcodes.FLOAD /* 23 */:
+                C1981 c1983 = (C1981) obj;
+                c1983.getClass();
+                C1984 c1984 = new C1984(4);
+                C1981 c1985 = new C1981(4);
+                String[] strArr7 = AbstractC1574.f5469;
+                c1985.m3827(MagicFactory.get(-95631741811380L, strArr7), MagicFactory.get(-95782065666740L, strArr7), MagicFactory.get(-95962454293172L, strArr7));
+                c1984.m3848(c1985);
+                c1983.f6565 = c1984;
+                Class<Runnable> clsM2189 = AbstractC0743.m2183(AbstractC2519.m4527(Runnable.class));
+                Class cls5 = clsM2189 != null ? clsM2189 : Runnable.class;
+                Class<String> clsM21810 = AbstractC0743.m2183(AbstractC2519.m4527(cls));
+                c1983.m3823(cls5, clsM21810 != null ? clsM21810 : String.class);
+                return c3497;
+            case Opcodes.DLOAD /* 24 */:
+                String[] strArr8 = AbstractC1574.f5469;
+                View viewM4677 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_say_hi_remark_name, null, false);
+                int i9 = R.id.moduleDialogEdtSayHiRemarkNameTextFormat;
+                TextInputEditText textInputEditText = (TextInputEditText) AbstractC3681.m5325(viewM4677, R.id.moduleDialogEdtSayHiRemarkNameTextFormat);
+                if (textInputEditText != null) {
+                    i9 = R.id.moduleDialogEdtSayHiRemarkNameTextPlaceholders;
+                    MaterialTextView materialTextView = (MaterialTextView) AbstractC3681.m5325(viewM4677, R.id.moduleDialogEdtSayHiRemarkNameTextPlaceholders);
+                    if (materialTextView != null) {
+                        i9 = R.id.moduleDialogEdtSayHiRemarkNameTimeFormat;
+                        TextInputEditText textInputEditText2 = (TextInputEditText) AbstractC3681.m5325(viewM4677, R.id.moduleDialogEdtSayHiRemarkNameTimeFormat);
+                        if (textInputEditText2 != null) {
+                            i9 = R.id.moduleDialogInputSayHiRemarkNameTextFormat;
+                            if (((TextInputLayout) AbstractC3681.m5325(viewM4677, R.id.moduleDialogInputSayHiRemarkNameTextFormat)) != null) {
+                                i9 = R.id.moduleDialogInputSayHiRemarkNameTimeFormat;
+                                if (((TextInputLayout) AbstractC3681.m5325(viewM4677, R.id.moduleDialogInputSayHiRemarkNameTimeFormat)) != null) {
+                                    C2022 c2022 = new C2022((LinearLayout) viewM4677, textInputEditText, materialTextView, textInputEditText2);
+                                    textInputEditText.setText(C2630.f8519.m2542());
+                                    textInputEditText2.setText(C2631.f8520.m2542());
+                                    materialTextView.setMovementMethod(LinkMovementMethod.getInstance());
+                                    SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(MagicFactory.get(-578489145096884L, strArr8));
+                                    for (String str3 : C2632.f8522) {
+                                        int length = spannableStringBuilder.length();
+                                        spannableStringBuilder.append((CharSequence) (str3 + ' '));
+                                        spannableStringBuilder.setSpan(new C0634(i8, str3, c2022), length, spannableStringBuilder.length() - 1, 33);
+                                    }
+                                    materialTextView.setText(spannableStringBuilder);
+                                    C2007 c2008 = new C2007();
+                                    C2632.f8521.getClass();
+                                    c2008.f6678 = C2632.f8524;
+                                    c2008.f6680 = c2022.f6774;
+                                    c2008.m3870(MagicFactory.get(-578557864573620L, strArr8), new C2042(i3, c2022));
+                                    c2008.m3869(MagicFactory.get(-578570749475508L, strArr8), new C2083(i5));
+                                    C2007.m3866(c2008, null, 3);
+                                    c2008.m3868().m3791();
+                                    return c3497;
+                                }
+                            }
+                        }
+                    }
+                }
+                throw new NullPointerException(MagicFactory.get(-668142292433588L, strArr8).concat(viewM4677.getResources().getResourceName(i9)));
+            case Opcodes.ALOAD /* 25 */:
+                Object objM3268 = ((C1563) obj).m3268();
+                if (!(objM3268 instanceof Activity)) {
+                    objM3268 = null;
+                }
+                Activity activity = (Activity) objM3268;
+                if (activity == null) {
+                    Class<Activity> clsM21811 = AbstractC0743.m2183(AbstractC2519.m4527(Activity.class));
+                    throw new IllegalStateException("HookParam instance cannot cast to ".concat((clsM21811 != null ? clsM21811 : Activity.class).getName()).toString());
+                }
+                Intent intent = activity.getIntent();
+                String[] strArr9 = AbstractC1574.f5469;
+                String stringExtra = intent.getStringExtra(MagicFactory.get(-578583634377396L, strArr9));
+                Intent intent2 = activity.getIntent();
+                String str4 = MagicFactory.get(-578639468952244L, strArr9);
+                C2632.f8521.getClass();
+                intent2.putExtra(str4, AbstractC2849.m4857(AbstractC2849.m4857(C2630.f8519.m2542(), MagicFactory.get(-578016698694324L, strArr9), stringExtra), MagicFactory.get(-578051058432692L, strArr9), AbstractC3681.m5339(System.currentTimeMillis(), C2631.f8520.m2542(), null, 2)));
+                return c3497;
+            case 26:
+                ((C1020) obj).f3732 = new C2544(27);
+                return c3497;
+            case 27:
+                ((C1332) obj).m3050(new C2544(28));
+                return c3497;
+            case 28:
+                String[] strArr10 = AbstractC1574.f5469;
+                ((C0705) obj).m2127(MagicFactory.get(-364002773301940L, strArr10), MagicFactory.get(-364118737418932L, strArr10), MagicFactory.get(-364183161928372L, strArr10));
+                return c3497;
+            default:
+                return Boolean.valueOf(obj == null);
+        }
+    }
+}

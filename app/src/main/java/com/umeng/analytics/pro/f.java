@@ -1,0 +1,38 @@
+package com.umeng.analytics.pro;
+
+import android.content.Context;
+import android.content.ContextWrapper;
+import android.database.DatabaseErrorHandler;
+import android.database.sqlite.SQLiteDatabase;
+import java.io.File;
+import p000.AbstractC2784;
+
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+class f extends ContextWrapper {
+    private String a;
+
+    public f(Context context, String str) {
+        super(context);
+        this.a = str;
+    }
+
+    @Override // android.content.ContextWrapper, android.content.Context
+    public File getDatabasePath(String str) {
+        File file = new File(AbstractC2784.m4752(new StringBuilder(), this.a, str));
+        if (!file.getParentFile().exists() && !file.getParentFile().isDirectory()) {
+            file.getParentFile().mkdirs();
+        }
+        return file;
+    }
+
+    @Override // android.content.ContextWrapper, android.content.Context
+    public SQLiteDatabase openOrCreateDatabase(String str, int i, SQLiteDatabase.CursorFactory cursorFactory, DatabaseErrorHandler databaseErrorHandler) {
+        return SQLiteDatabase.openDatabase(getDatabasePath(str).getAbsolutePath(), cursorFactory, 268435472);
+    }
+
+    @Override // android.content.ContextWrapper, android.content.Context
+    public SQLiteDatabase openOrCreateDatabase(String str, int i, SQLiteDatabase.CursorFactory cursorFactory) {
+        return SQLiteDatabase.openDatabase(getDatabasePath(str).getAbsolutePath(), cursorFactory, 268435472);
+    }
+}

@@ -1,0 +1,66 @@
+package p000;
+
+import java.util.Collections;
+import java.util.List;
+import me.hd.wauxv.hook.factory.MagicFactory;
+import org.luckypray.dexkit.DexKitBridge;
+
+/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲇᲀᤝᤞᲁ, reason: contains not printable characters */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final class C0755 extends AbstractC2867 implements InterfaceC1582 {
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
+    public static final C0755 f2846;
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
+    public static final String f2847;
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
+    public static final String f2848;
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
+    public static final String f2849;
+
+    static {
+        String[] strArr = AbstractC1574.f5469;
+        f2846 = new C0755("CommandProcessorHook");
+        f2847 = "测试-杂项";
+        f2848 = "强开更多命令处理";
+        f2849 = "输入框点击发送时处理隐藏的其他命令";
+    }
+
+    @Override // p000.InterfaceC1582
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
+    public final void mo1232(DexKitBridge dexKitBridge) {
+        AbstractC1574.m3295(C0754.f2845, dexKitBridge, new C0679(7));
+    }
+
+    @Override // p000.AbstractC1557
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
+    public final void mo1126() {
+        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C0754.f2845));
+        C0755 c0755 = f2846;
+        C3689 c3689M4172 = C2309.m4172(c0755, listSingletonList);
+        c0755.m3263(c3689M4172, new C0679(10));
+        c3689M4172.m5352();
+    }
+
+    @Override // p000.AbstractC2867
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ */
+    public final String mo1127() {
+        return f2849;
+    }
+
+    @Override // p000.AbstractC2867
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ */
+    public final String mo1128() {
+        return f2848;
+    }
+
+    @Override // p000.AbstractC2867
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ */
+    public final String mo1129() {
+        return f2847;
+    }
+}
