@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲀᲈᤝᤞᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -108,22 +107,20 @@ public final class C0473 extends AbstractC2867 implements InterfaceC1590 {
             String[] strArr = AbstractC1574.f5469;
             MenuItem menuItemAdd = menu.add(0, 0, 0, "");
             C0473 c0473 = f2064;
-            c0473.getClass();
+            
             menuItemAdd.setIcon(new BitmapDrawable(c0450.getResources(), (Bitmap) f2067.getValue()));
             menu.add(0, 1, 1, "").setIcon(new BitmapDrawable(c0450.getResources(), (Bitmap) f2068.getValue()));
             menu.add(0, 2, 2, "").setIcon(new BitmapDrawable(c0450.getResources(), (Bitmap) f2069.getValue()));
             menu.add(0, 3, 3, "").setIcon(new BitmapDrawable(c0450.getResources(), (Bitmap) f2070.getValue()));
             c0450.setOnItemSelectedListener(new C0466(obj));
             ViewParent parent = viewGroup.getParent();
-            "null cannot be cast to non-null type android.view.ViewGroup";
             View childAt = ((ViewGroup) parent).getChildAt(1);
-            "null cannot be cast to non-null type android.view.ViewGroup";
             ((ViewGroup) childAt).addView(c0450);
-            int i2 = AbstractC1745.f5844;
-            C1973 c1973M3492 = AbstractC0968.m2484(obj).m3492();
+            int i2 = 0;
+            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
             c1973M3492.f6370 = "onPageSelected";
-            C3689 c3689M4174 = m4174((C1982) AbstractC0744.m2191(c1973M3492.m3799()), 1);
-            c0473.m3262(c3689M4174, new C0055(i, c0450));
+            C3689 c3689M4174 = m4174((C1982) AbstractC0744.firstInList(c1973M3492.m3799()), 1);
+            c0473.m3262(c3689M4174, new C0055(2, c0450));
             c3689M4174.m5352();
         }
     }

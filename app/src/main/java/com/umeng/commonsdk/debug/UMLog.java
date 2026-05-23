@@ -32,11 +32,11 @@ public class UMLog {
         try {
             if (UMConfigure.isDebugLog()) {
                 UInterface logger = getLogger(i);
-                logger.log(TAG, TOP_BORDER_AQ);
-                logger.log(TAG, "│     " + str);
-                logger.log(TAG, AQ);
-                logger.log(TAG, "│     " + str2);
-                logger.log(TAG, BOTTOM_BORDER);
+                logger.log("UMLog", "┌───────────────────问题─────────────────────────────────────────────────────────────────────────────");
+                logger.log("UMLog", "│     " + str);
+                logger.log("UMLog", "├───────────────────解决方案─────────────────────────────────────────────────────────────────────────────");
+                logger.log("UMLog", "│     " + str2);
+                logger.log("UMLog", "└────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
             }
         } catch (Exception unused) {
         }
@@ -62,7 +62,7 @@ public class UMLog {
     public static void jsonArry(JSONArray jSONArray) {
         try {
             if (UMConfigure.isDebugLog()) {
-                Log.e(TAG, jSONArray.toString(2));
+                Log.e("UMLog", jSONArray.toString(2));
             }
         } catch (Exception unused) {
         }
@@ -71,7 +71,7 @@ public class UMLog {
     public static void jsonObject(JSONObject jSONObject) {
         try {
             if (UMConfigure.isDebugLog()) {
-                Log.e(TAG, jSONObject.toString(2));
+                Log.e("UMLog", jSONObject.toString(2));
             }
         } catch (Exception unused) {
         }
@@ -83,18 +83,18 @@ public class UMLog {
                 int length = strArr.length;
                 UInterface logger = getLogger(i);
                 if (length == 1) {
-                    logger.log(TAG, strArr[0]);
+                    logger.log("UMLog", strArr[0]);
                     return;
                 }
                 if (length >= 2) {
-                    logger.log(TAG, TOP_BORDER);
+                    logger.log("UMLog", "┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
                     for (int i2 = 0; i2 < length; i2++) {
-                        logger.log(TAG, "│     " + strArr[i2]);
+                        logger.log("UMLog", "│     " + strArr[i2]);
                         if (i2 != length - 1) {
-                            logger.log(TAG, MIDDLE_BORDER);
+                            logger.log("UMLog", "├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄");
                         }
                     }
-                    logger.log(TAG, BOTTOM_BORDER);
+                    logger.log("UMLog", "└────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
                 }
             }
         } catch (Exception unused) {
@@ -104,19 +104,19 @@ public class UMLog {
     public static void bundle(String str, int i, Bundle bundle) {
         try {
             if (UMConfigure.isDebugLog()) {
-                String str2 = TextUtils.isEmpty(str) ? TAG : "UMLog_" + str;
+                String str2 = TextUtils.isEmpty(str) ? "UMLog" : "UMLog_" + str;
                 if (bundle != null) {
                     UInterface logger = getLogger(i);
-                    logger.log(str2, TOP_BORDER);
+                    logger.log(str2, "┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
                     logger.log(str2, "│key│value");
-                    logger.log(str2, MIDDLE_BORDER);
+                    logger.log(str2, "├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄");
                     for (String str3 : bundle.keySet()) {
                         if (!TextUtils.isEmpty(str3) && bundle.get(str3) != null) {
-                            logger.log(str2, HORIZONTAL_LINE + str3 + HORIZONTAL_LINE + bundle.get(str3).toString());
-                            logger.log(str2, MIDDLE_BORDER);
+                            logger.log(str2, '│' + str3 + '│' + bundle.get(str3).toString());
+                            logger.log(str2, "├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄");
                         }
                     }
-                    logger.log(str2, BOTTOM_BORDER);
+                    logger.log(str2, "└────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
                 }
             }
         } catch (Exception unused) {
@@ -146,11 +146,11 @@ public class UMLog {
             if (UMConfigure.isDebugLog()) {
                 UInterface logger = getLogger(i);
                 String str4 = "UMLog_" + str;
-                logger.log(str4, TOP_BORDER_AQ);
+                logger.log(str4, "┌───────────────────问题─────────────────────────────────────────────────────────────────────────────");
                 logger.log(str4, "│     " + str2);
-                logger.log(str4, AQ);
+                logger.log(str4, "├───────────────────解决方案─────────────────────────────────────────────────────────────────────────────");
                 logger.log(str4, "│     " + str3);
-                logger.log(str4, BOTTOM_BORDER);
+                logger.log(str4, "└────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
             }
         } catch (Exception unused) {
         }
@@ -167,14 +167,14 @@ public class UMLog {
                     return;
                 }
                 if (length >= 2) {
-                    logger.log(str2, TOP_BORDER);
+                    logger.log(str2, "┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
                     for (int i2 = 0; i2 < length; i2++) {
                         logger.log(str2, "│     " + strArr[i2]);
                         if (i2 != length - 1) {
-                            logger.log(str2, MIDDLE_BORDER);
+                            logger.log(str2, "├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄");
                         }
                     }
-                    logger.log(str2, BOTTOM_BORDER);
+                    logger.log(str2, "└────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
                 }
             }
         } catch (Exception unused) {
@@ -197,7 +197,7 @@ public class UMLog {
         String[] strArrSplit;
         try {
             if (UMConfigure.isDebugLog()) {
-                String str4 = TextUtils.isEmpty(str) ? TAG : "UMLog_" + str;
+                String str4 = TextUtils.isEmpty(str) ? "UMLog" : "UMLog_" + str;
                 if (TextUtils.isEmpty(str2) || TextUtils.isEmpty(str3) || (strArrSplit = str2.split(str3)) == null || strArrSplit.length < 2) {
                     return;
                 }
@@ -212,11 +212,11 @@ public class UMLog {
                     }
                 }
                 UInterface logger = getLogger(i);
-                logger.log(str4, TOP_BORDER_AQ);
+                logger.log(str4, "┌───────────────────问题─────────────────────────────────────────────────────────────────────────────");
                 logger.log(str4, "│     " + strArrSplit[0]);
-                logger.log(str4, AQ);
+                logger.log(str4, "├───────────────────解决方案─────────────────────────────────────────────────────────────────────────────");
                 logger.log(str4, "│     " + strArrSplit[1]);
-                logger.log(str4, BOTTOM_BORDER);
+                logger.log(str4, "└────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
             }
         } catch (Exception unused) {
         }
@@ -237,7 +237,7 @@ public class UMLog {
     public static void mutlInfo(String str, String str2, int i, String str3, String[] strArr, String[] strArr2) {
         try {
             if (UMConfigure.isDebugLog()) {
-                String str4 = TextUtils.isEmpty(str) ? TAG : "UMLog_" + str;
+                String str4 = TextUtils.isEmpty(str) ? "UMLog" : "UMLog_" + str;
                 if (TextUtils.isEmpty(str2)) {
                     return;
                 }
@@ -252,15 +252,15 @@ public class UMLog {
                     return;
                 }
                 String[] strArrSplit = str2.split(str3);
-                if (strArrSplit != null) {
-                    logger.log(str4, TOP_BORDER);
+                if (true) {
+                    logger.log(str4, "┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
                     for (int i3 = 0; i3 < strArrSplit.length; i3++) {
                         logger.log(str4, "│     " + strArrSplit[i3]);
                         if (i3 != strArrSplit.length - 1) {
-                            logger.log(str4, MIDDLE_BORDER);
+                            logger.log(str4, "├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄");
                         }
                     }
-                    logger.log(str4, BOTTOM_BORDER);
+                    logger.log(str4, "└────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
                 }
             }
         } catch (Exception unused) {

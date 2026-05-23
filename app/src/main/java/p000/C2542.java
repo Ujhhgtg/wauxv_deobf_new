@@ -3,7 +3,7 @@ package p000;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲇᲈᲁᛸᤝ, reason: contains not printable characters */
@@ -36,10 +36,10 @@ public final class C2542 extends AbstractC2867 implements InterfaceC1582 {
     public final void mo1232(DexKitBridge dexKitBridge) {
         C2540 c2540 = C2540.f8093;
         String[] strArr = AbstractC1574.f5469;
-        AbstractC1574.m3295(c2540, dexKitBridge, new C2537(0, "com.tencent.mm.plugin.multitalk.model", "Lcom/tencent/mm/autogen/events/MultiTalkActionEvent;"));
-        AbstractC1574.m3295(C2541.f8094, dexKitBridge, new C2537(0, "com.tencent.mm.plugin.voip.model", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
-        AbstractC1574.m3295(C2539.f8092, dexKitBridge, new C2537(0, "com.tencent.mm.plugin.ipcall", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
-        AbstractC1574.m3295(C2538.f8091, dexKitBridge, new C2537(0, (AbstractC3471.m5079(EnumC3677.f11534) || AbstractC3471.m5080(EnumC3674.f11498)) ? "com.tencent.mm.voipmp.helper" : "com.tencent.mm.plugin_flutter_ilinkvoip.helper", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
+        AbstractC1574.findMethod(c2540, dexKitBridge, new C2537(0, "com.tencent.mm.plugin.multitalk.model", "Lcom/tencent/mm/autogen/events/MultiTalkActionEvent;"));
+        AbstractC1574.findMethod(C2541.f8094, dexKitBridge, new C2537(0, "com.tencent.mm.plugin.voip.model", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
+        AbstractC1574.findMethod(C2539.f8092, dexKitBridge, new C2537(0, "com.tencent.mm.plugin.ipcall", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
+        AbstractC1574.findMethod(C2538.f8091, dexKitBridge, new C2537(0, (AbstractC3471.m5079(WeChatVersions.f11534) || AbstractC3471.m5080(WeChatVersionsPlay.f11498)) ? "com.tencent.mm.voipmp.helper" : "com.tencent.mm.plugin_flutter_ilinkvoip.helper", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
     }
 
     @Override // p000.AbstractC1557
@@ -47,7 +47,7 @@ public final class C2542 extends AbstractC2867 implements InterfaceC1582 {
     public final void mo1126() {
         Iterator it = AbstractC0745.m2212(C2540.f8093, C2541.f8094, C2539.f8092, C2538.f8091).iterator();
         while (it.hasNext()) {
-            List listSingletonList = Collections.singletonList(AbstractC1574.m3315((AbstractC1021) it.next()));
+            List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod((AbstractC1021) it.next()));
             C2542 c2542 = f8095;
             C3689 c3689M4172 = C2309.m4172(c2542, listSingletonList);
             c2542.m3263(c3689M4172, new C2444(28));

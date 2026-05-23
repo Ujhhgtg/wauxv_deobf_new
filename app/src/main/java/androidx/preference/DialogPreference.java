@@ -33,6 +33,6 @@ public abstract class DialogPreference extends Preference {
     }
 
     public DialogPreference(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, AbstractC1458.m3156(context, R.attr.dialogPreferenceStyle, android.R.attr.dialogPreferenceStyle));
+        this(context, attributeSet, AbstractC1458.m3156(context, R.attr.dialogPreferenceStyle, 16842897));
     }
 }

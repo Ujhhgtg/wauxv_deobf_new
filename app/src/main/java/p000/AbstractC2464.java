@@ -7,5 +7,5 @@ import android.R;
 public abstract class AbstractC2464 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
-    public static final int[] f7826 = {R.attr.name, R.attr.tag};
+    public static final int[] f7826 = {16842755, 16842961};
 }

@@ -100,7 +100,7 @@ public abstract class AbstractC0379 implements Cloneable {
         if (m1525(abstractC0379.f1766, 128)) {
             this.f1766 &= -65;
         }
-        if (m1525(abstractC0379.f1766, bc.e)) {
+        if (m1525(abstractC0379.f1766, 256)) {
             this.f1769 = abstractC0379.f1769;
         }
         if (m1525(abstractC0379.f1766, 512)) {
@@ -116,7 +116,7 @@ public abstract class AbstractC0379 implements Cloneable {
         if (m1525(abstractC0379.f1766, 8192)) {
             this.f1766 &= -16385;
         }
-        if (m1525(abstractC0379.f1766, Http2.INITIAL_MAX_FRAME_SIZE)) {
+        if (m1525(abstractC0379.f1766, 16384)) {
             this.f1766 &= -8193;
         }
         if (m1525(abstractC0379.f1766, 131072)) {
@@ -175,7 +175,7 @@ public abstract class AbstractC0379 implements Cloneable {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final boolean m1530(AbstractC0379 abstractC0379) {
-        abstractC0379.getClass();
+        
         if (Float.compare(1.0f, 1.0f) != 0) {
             return false;
         }
@@ -250,7 +250,7 @@ public abstract class AbstractC0379 implements Cloneable {
             return clone().m1537();
         }
         this.f1769 = false;
-        this.f1766 |= bc.e;
+        this.f1766 |= 256;
         m1534();
         return this;
     }

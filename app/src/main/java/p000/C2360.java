@@ -70,7 +70,7 @@ public class C2360 implements InterfaceC2654, InterfaceC0546 {
             /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Object, ᛱᛲᛳᛴᛵᛶᛷᤞᲀᤝᲁᛸᲈᲇ] */
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i4) {
+                switch (0) {
                     case 0:
                         return this.f7567.f7569.mo1541();
                     case 1:
@@ -94,7 +94,7 @@ public class C2360 implements InterfaceC2654, InterfaceC0546 {
             /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Object, ᛱᛲᛳᛴᛵᛶᛷᤞᲀᤝᲁᛸᲈᲇ] */
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i5) {
+                switch (1) {
                     case 0:
                         return this.f7567.f7569.mo1541();
                     case 1:
@@ -118,7 +118,7 @@ public class C2360 implements InterfaceC2654, InterfaceC0546 {
             /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Object, ᛱᛲᛳᛴᛵᛶᛷᤞᲀᤝᲁᛸᲈᲇ] */
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i6) {
+                switch (2) {
                     case 0:
                         return this.f7567.f7569.mo1541();
                     case 1:

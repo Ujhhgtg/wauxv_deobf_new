@@ -117,8 +117,8 @@ public final class C1633 {
         this.f5523 = textInputLayout;
         this.f5528 = context.getResources().getDimensionPixelSize(R.dimen.design_textinput_caption_translate_y);
         this.f5516 = AbstractC1574.m3308(context, R.attr.motionDurationShort4, 217);
-        this.f5517 = AbstractC1574.m3308(context, R.attr.motionDurationMedium4, Opcodes.GOTO);
-        this.f5518 = AbstractC1574.m3308(context, R.attr.motionDurationShort4, Opcodes.GOTO);
+        this.f5517 = AbstractC1574.m3308(context, R.attr.motionDurationMedium4, 167);
+        this.f5518 = AbstractC1574.m3308(context, R.attr.motionDurationShort4, 167);
         this.f5519 = AbstractC1574.m3309(context, R.attr.motionEasingEmphasizedDecelerateInterpolator, AbstractC0164.f1188);
         LinearInterpolator linearInterpolator = AbstractC0164.f1185;
         this.f5520 = AbstractC1574.m3309(context, R.attr.motionEasingEmphasizedDecelerateInterpolator, linearInterpolator);
@@ -295,7 +295,7 @@ public final class C1633 {
             c1633 = this;
             animatorSet.addListener(c1631);
             animatorSet.start();
-        } else if (i != i2) {
+        } else if (true) {
             if (i2 != 0 && (textViewM3353 = c1633.m3352(i2)) != null) {
                 textViewM3353.setVisibility(0);
                 textViewM3353.setAlpha(1.0f);

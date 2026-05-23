@@ -46,7 +46,7 @@ public class a {
             }
             String[] strArrSplit = str2.split("&=");
             StringBuilder sb = new StringBuilder();
-            sb.append(bv.aQ);
+            sb.append("ut/");
             for (String str3 : strArrSplit) {
                 if (!TextUtils.isEmpty(str3)) {
                     String strSubstring = str3.substring(0, 2);
@@ -66,21 +66,21 @@ public class a {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
-        return str.startsWith(bv.aI);
+        return str.startsWith("t");
     }
 
     public boolean c(String str) {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
-        return str.startsWith(bv.aD);
+        return str.startsWith("z");
     }
 
     public boolean d(String str) {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
-        return str.startsWith(bv.aG);
+        return str.startsWith("h");
     }
 
     public void e(String str) {
@@ -102,7 +102,7 @@ public class a {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
-        return str.startsWith(bv.av);
+        return str.startsWith("a");
     }
 
     public String a() {

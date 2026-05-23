@@ -33,7 +33,7 @@ public class UMWorkDispatch {
         Handler handler = mTaskHandler;
         if (handler != null) {
             Message messageObtainMessage = handler.obtainMessage();
-            messageObtainMessage.what = MSG_QUIT;
+            messageObtainMessage.what = 784;
             mTaskHandler.sendMessage(messageObtainMessage);
         }
     }
@@ -43,7 +43,7 @@ public class UMWorkDispatch {
         JSONObject jSONObject;
         JSONObject jSONObjectBuildEnvelopeWithExtHeader;
         ULog.d("--->>> delayProcess Enter...");
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> delayProcess Enter...");
+        UMRTLog.i("MobclickRT", "--->>> delayProcess Enter...");
         Context appContext = UMModuleRegister.getAppContext();
         if (appContext == null || !UMFrUtils.isOnline(appContext)) {
             return;
@@ -54,7 +54,7 @@ public class UMWorkDispatch {
             try {
                 jSONObject = callbackFromModuleName.setupReportData(jMaxDataSpace);
                 if (jSONObject == null) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> analyticsCB.setupReportData() return null");
+                    UMRTLog.i("MobclickRT", "--->>> analyticsCB.setupReportData() return null");
                     return;
                 }
             } catch (Throwable th) {
@@ -74,11 +74,11 @@ public class UMWorkDispatch {
         }
         try {
             if (jSONObjectBuildEnvelopeWithExtHeader.has("exception")) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> autoProcess: Build envelope error code: " + jSONObjectBuildEnvelopeWithExtHeader.getInt("exception"));
+                UMRTLog.i("MobclickRT", "--->>> autoProcess: Build envelope error code: " + jSONObjectBuildEnvelopeWithExtHeader.getInt("exception"));
             }
         } catch (Throwable unused) {
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> autoProcess: removeCacheData ... ");
+        UMRTLog.i("MobclickRT", "--->>> autoProcess: removeCacheData ... ");
         callbackFromModuleName.removeCacheData(jSONObjectBuildEnvelopeWithExtHeader);
     }
 
@@ -124,16 +124,16 @@ public class UMWorkDispatch {
                         @Override // android.os.Handler
                         public void handleMessage(Message message) {
                             int i = message.what;
-                            if (i == UMWorkDispatch.MSG_SEND_EVENT) {
+                            if (i == 768) {
                                 UMWorkDispatch.handleEvent(message);
                                 return;
                             }
-                            if (i == UMWorkDispatch.MSG_QUIT) {
+                            if (i == 784) {
                                 UMWorkDispatch.handleQuit();
-                            } else if (i == UMWorkDispatch.MSG_DELAY_PROCESS) {
+                            } else if (i == 770) {
                                 UMWorkDispatch.delayProcess();
                             } else {
-                                if (i != UMWorkDispatch.MSG_CHECKER_TIMER) {
+                                if (i != 771) {
                                     return;
                                 }
                                 UMWorkDispatch.handleEvent(message);
@@ -159,29 +159,29 @@ public class UMWorkDispatch {
         if (handler == null) {
             return;
         }
-        handler.removeMessages(MSG_CHECKER_TIMER);
+        handler.removeMessages(771);
     }
 
     public static void sendDelayProcessMsg(long j) {
         Handler handler = mTaskHandler;
         if (handler != null) {
-            if (handler.hasMessages(MSG_DELAY_PROCESS)) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> MSG_DELAY_PROCESS has exist. do nothing.");
+            if (handler.hasMessages(770)) {
+                UMRTLog.i("MobclickRT", "--->>> MSG_DELAY_PROCESS has exist. do nothing.");
                 return;
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> MSG_DELAY_PROCESS not exist. send it.");
+            UMRTLog.i("MobclickRT", "--->>> MSG_DELAY_PROCESS not exist. send it.");
             Message messageObtainMessage = mTaskHandler.obtainMessage();
-            messageObtainMessage.what = MSG_DELAY_PROCESS;
+            messageObtainMessage.what = 770;
             mTaskHandler.sendMessageDelayed(messageObtainMessage, j);
         }
     }
 
     public static void sendEvent(Context context, int i, UMLogDataProtocol uMLogDataProtocol, Object obj) {
-        sendEventInternal(context, MSG_SEND_EVENT, i, uMLogDataProtocol, obj, 0L);
+        sendEventInternal(context, 768, i, uMLogDataProtocol, obj, 0L);
     }
 
     public static void sendEventEx(Context context, int i, UMLogDataProtocol uMLogDataProtocol, Object obj, long j) {
-        sendEventInternal(context, MSG_CHECKER_TIMER, i, uMLogDataProtocol, obj, j);
+        sendEventInternal(context, 771, i, uMLogDataProtocol, obj, j);
     }
 
     public static void sendEventInternal(Context context, int i, int i2, UMLogDataProtocol uMLogDataProtocol, Object obj, long j) {
@@ -233,7 +233,7 @@ public class UMWorkDispatch {
     }
 
     public static void sendEvent(Context context, int i, UMLogDataProtocol uMLogDataProtocol, Object obj, long j) {
-        sendEventInternal(context, MSG_SEND_EVENT, i, uMLogDataProtocol, obj, j);
+        sendEventInternal(context, 768, i, uMLogDataProtocol, obj, j);
     }
 
     public static synchronized boolean eventHasExist() {
@@ -241,7 +241,7 @@ public class UMWorkDispatch {
         if (handler == null) {
             return false;
         }
-        return handler.hasMessages(MSG_CHECKER_TIMER);
+        return handler.hasMessages(771);
     }
 
     public static synchronized void removeEvent(int i) {

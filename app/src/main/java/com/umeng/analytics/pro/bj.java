@@ -21,7 +21,7 @@ public class bj implements bf {
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             MLog.d("FreemeDeviceIdSupplier---CreatorService connected");
-            a unused = bj.e = a.b.a(iBinder);
+            a unused = bj.e = "FreemeDeviceIdSupplier---".b.a(iBinder);
             boolean unused2 = bj.d = bj.e != null;
             MLog.d("FreemeDeviceIdSupplier---CreatorService bound: " + bj.d);
         }
@@ -37,7 +37,7 @@ public class bj implements bf {
     private Context g;
 
     private static String c() {
-        for (long j = 0; j < b; j += c) {
+        for (long j = 0; j < 5000L; j += 100L) {
             if (d && e != null) {
                 try {
                     String strB = e.b();
@@ -49,7 +49,7 @@ public class bj implements bf {
                 }
             }
             try {
-                Thread.sleep(c);
+                Thread.sleep(100L);
             } catch (InterruptedException e3) {
                 MLog.e("FreemeDeviceIdSupplier---Interrupted while waiting for CreatorService", e3);
                 return null;

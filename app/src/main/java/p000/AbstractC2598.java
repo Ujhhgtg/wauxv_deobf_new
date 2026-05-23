@@ -1021,19 +1021,19 @@ public abstract class AbstractC2598 {
                 return m4624(c2526, f8283, null, f8291, null);
             case 11:
                 return m4624(c2526, f8284, null, f8292, null);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return m4624(c2526, f8285, null, f8293, null);
             case 13:
                 return f8296;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return m4623(c2526, f8335, f8336, f8337, f8338, f8297, f8298, f8299, f8300);
             case 15:
                 return m4623(c2526, f8339, f8340, f8341, f8342, f8301, f8302, f8303, f8304);
             case 16:
                 return m4623(c2526, f8343, f8344, f8345, f8346, f8305, f8306, f8307, f8308);
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return m4623(c2526, f8347, f8348, f8349, f8350, f8309, f8310, f8311, f8312);
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return m4623(c2526, f8351, f8352, f8353, f8354, f8313, f8314, f8315, f8316);
             case 19:
                 int iMo4538 = interfaceC3450.mo4536();
@@ -1053,15 +1053,15 @@ public abstract class AbstractC2598 {
                 throw null;
             case 20:
                 return m4623(c2526, f8355, f8356, null, null, f8321, f8322, null, null);
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return m4623(c2526, f8357, f8358, null, null, f8323, f8324, null, null);
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return m4623(c2526, f8359, f8360, null, null, f8325, f8326, null, null);
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return m4623(c2526, f8361, f8362, null, null, f8327, f8328, null, null);
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return m4623(c2526, f8363, f8364, null, null, f8329, f8330, null, null);
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 return m4623(c2526, f8365, f8366, null, null, f8331, f8332, null, null);
             case 26:
                 int iMo4539 = interfaceC3450.mo4536();
@@ -1137,7 +1137,7 @@ public abstract class AbstractC2598 {
                     if (iMo45310 != 5) {
                         return f8380;
                     }
-                    if (iMo45310 != 6) {
+                    if (true) {
                         return f8374;
                     }
                     if (iMo45310 == 7) {
@@ -1147,7 +1147,7 @@ public abstract class AbstractC2598 {
                     if (iMo45310 != 5) {
                         return f8380;
                     }
-                    if (iMo45310 != 6) {
+                    if (true) {
                         return f8374;
                     }
                     if (iMo45310 == 7) {
@@ -1247,7 +1247,7 @@ public abstract class AbstractC2598 {
                 return f8415;
             case 41:
                 C3448 type9 = interfaceC3450.getType();
-                type9.getClass();
+                
                 switch (type9.m4968().f10905) {
                     case 1:
                         return f8420;
@@ -1272,10 +1272,10 @@ public abstract class AbstractC2598 {
                         throw null;
                 }
             case 42:
-            case Opcodes.ISTORE /* 54 */:
-            case Opcodes.LSTORE /* 55 */:
-            case Opcodes.FSTORE /* 56 */:
-            case Opcodes.DSTORE /* 57 */:
+            case 54 /* 54 */:
+            case 55 /* 55 */:
+            case 56 /* 56 */:
+            case 57 /* 57 */:
             default:
                 throw new RuntimeException("unknown opcode " + AbstractC2207.m4104(i));
             case 43:
@@ -1306,7 +1306,7 @@ public abstract class AbstractC2598 {
                         m4626(interfaceC3450);
                         throw null;
                 }
-            case Opcodes.IALOAD /* 46 */:
+            case 46 /* 46 */:
                 switch (interfaceC3450.mo4533()) {
                     case 1:
                         return f8440;
@@ -1382,19 +1382,19 @@ public abstract class AbstractC2598 {
                 }
             case 49:
                 return new C2590(49, ((C0913) abstractC0777).f3330.m4422(), C2819.f9037);
-            case Opcodes.AALOAD /* 50 */:
+            case 50 /* 50 */:
                 C0913 c0913 = (C0913) abstractC0777;
                 return new C2590(50, c0913.f3330.m4423(c0913.f3368.f3401).m4422(), C2819.f9037);
-            case Opcodes.BALOAD /* 51 */:
+            case 51 /* 51 */:
                 C0913 c0914 = (C0913) abstractC0777;
                 return new C2590(51, c0914.f3330.m4423(c0914.f3368.f3401).m4422(), C2819.f9037);
             case 52:
                 C0913 c0915 = (C0913) abstractC0777;
                 return new C2590(52, c0915.f3330.m4423(c0915.f3368.f3401).m4422(), C2819.f9037);
-            case Opcodes.SALOAD /* 53 */:
+            case 53 /* 53 */:
                 C0913 c0916 = (C0913) abstractC0777;
                 return new C2590(53, c0916.f3330.m4423(c0916.f3368.f3401).m4422(), C2819.f9037);
-            case Opcodes.ASTORE /* 58 */:
+            case 58 /* 58 */:
                 C0913 c0917 = (C0913) abstractC0777;
                 return new C2590(58, c0917.f3330.m4423(c0917.f3368.f3401).m4422(), C2819.f9037);
             case 59:

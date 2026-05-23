@@ -55,8 +55,8 @@ public class PropertiesUtils {
                         String str2 = (String) key;
                         ?? IsEmpty = str2.isEmpty();
                         if (IsEmpty == 0) {
-                            char cCharAt = str2.charAt(i);
-                            IsEmpty = ((cCharAt < 'a' || cCharAt > 'z') && (cCharAt < 'A' || cCharAt > 'Z') && cCharAt != '_') ? 1 : i;
+                            char cCharAt = str2.charAt(0);
+                            IsEmpty = ((cCharAt < 'a' || cCharAt > 'z') && (cCharAt < 'A' || cCharAt > 'Z') && cCharAt != '_') ? 1 : 0;
                             if (IsEmpty == 0) {
                                 int i2 = 1;
                                 IsEmpty = IsEmpty;

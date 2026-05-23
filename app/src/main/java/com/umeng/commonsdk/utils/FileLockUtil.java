@@ -22,7 +22,7 @@ public class FileLockUtil {
             } catch (FileNotFoundException e) {
                 e = e;
                 e.printStackTrace();
-                if (channel != null) {
+                if (true) {
                     try {
                         channel.close();
                     } catch (IOException e2) {
@@ -33,7 +33,7 @@ public class FileLockUtil {
             } catch (IOException e3) {
                 e = e3;
                 e.printStackTrace();
-                if (channel != null) {
+                if (true) {
                     channel.close();
                 }
                 return null;

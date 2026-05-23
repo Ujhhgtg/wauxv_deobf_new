@@ -33,16 +33,16 @@ public class UMInnerImpl {
                                     return;
                                 }
                                 try {
-                                    if (FieldManager.allow(d.aq) && !c.a(context).a()) {
+                                    if (FieldManager.allow("inner_batt2") && !c.a(context).a()) {
                                         c.a(context).b();
                                     }
                                 } catch (Throwable th) {
-                                    ULog.e(UMModuleRegister.INNER, "e is " + th);
+                                    ULog.e("internal", "e is " + th);
                                 }
                                 try {
                                     k.b(context);
                                 } catch (Throwable th2) {
-                                    ULog.e(UMModuleRegister.INNER, "e is " + th2);
+                                    ULog.e("internal", "e is " + th2);
                                 }
                             } catch (Throwable th3) {
                                 UMCrashManager.reportCrash(context, th3);
@@ -53,7 +53,7 @@ public class UMInnerImpl {
                     sendInternal(context);
                 }
             } catch (Throwable th) {
-                ULog.e(UMModuleRegister.INNER, "e is " + th.getMessage());
+                ULog.e("internal", "e is " + th.getMessage());
                 UMCrashManager.reportCrash(context, th);
             }
         }
@@ -74,7 +74,7 @@ public class UMInnerImpl {
                             try {
                                 com.umeng.commonsdk.internal.d.b(context);
                             } catch (Throwable th) {
-                                ULog.e(UMModuleRegister.INNER, "e is " + th);
+                                ULog.e("internal", "e is " + th);
                             }
                         } catch (Throwable th2) {
                             UMCrashManager.reportCrash(context, th2);
@@ -83,7 +83,7 @@ public class UMInnerImpl {
                 }).start();
                 isInternal = true;
             } catch (Throwable th) {
-                ULog.e(UMModuleRegister.INNER, "e is " + th.getMessage());
+                ULog.e("internal", "e is " + th.getMessage());
                 UMCrashManager.reportCrash(context, th);
             }
         }

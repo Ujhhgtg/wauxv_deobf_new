@@ -125,7 +125,7 @@ public final class C1353 {
         int i3;
         char cCharAt;
         C2102 c2102 = this.f4849;
-        c2102.getClass();
+        
         int length = charSequence.length();
         int i4 = 0;
         int i5 = 0;
@@ -167,7 +167,7 @@ public final class C1353 {
             }
         }
         if (i6 < length) {
-            throw new IllegalArgumentException("UTF-8 length does not fit in int: " + (((long) i6) + JSONWriter.MASK_IGNORE_NON_FIELD_GETTER));
+            throw new IllegalArgumentException("UTF-8 length does not fit in int: " + (((long) i6) + 4294967296L));
         }
         m3065((byte) 0);
         m3079(1, i6, 1);
@@ -176,7 +176,7 @@ public final class C1353 {
         this.f4838 = i8;
         byteBuffer.position(i8);
         ByteBuffer byteBuffer2 = this.f4837;
-        c2102.getClass();
+        
         if (byteBuffer2.hasArray()) {
             int iArrayOffset = byteBuffer2.arrayOffset();
             byte[] bArrArray = byteBuffer2.array();
@@ -185,13 +185,13 @@ public final class C1353 {
             int length3 = charSequence.length();
             int i9 = iRemaining + iPosition;
             while (true) {
-                boolean z2 = z;
+                boolean z2 = true;
                 if (i4 >= length3 || (i3 = i4 + iPosition) >= i9 || (cCharAt = charSequence.charAt(i4)) >= 128) {
                     break;
                 }
                 bArrArray[i3] = (byte) cCharAt;
                 i4++;
-                z = z2;
+                z = true;
             }
             if (i4 == length3) {
                 i = iPosition + length3;
@@ -202,13 +202,13 @@ public final class C1353 {
                     if (cCharAt4 < 128 && i < i9) {
                         bArrArray[i] = (byte) cCharAt4;
                         i++;
-                    } else if (cCharAt4 < c2 && i <= i9 - 2) {
+                    } else if (cCharAt4 < 2048 && i <= i9 - 2) {
                         int i10 = i + 1;
                         bArrArray[i] = (byte) ((cCharAt4 >>> 6) | 960);
                         i += 2;
                         bArrArray[i10] = (byte) ((cCharAt4 & '?') | 128);
                     } else {
-                        if ((cCharAt4 >= c && 57343 >= cCharAt4) || i > i9 - 3) {
+                        if ((cCharAt4 >= 55296 && 57343 >= cCharAt4) || i > i9 - 3) {
                             if (i > i9 - 4) {
                                 if (55296 <= cCharAt4 && cCharAt4 <= 57343 && ((i2 = i4 + 1) == charSequence.length() || !Character.isSurrogatePair(cCharAt4, charSequence.charAt(i2)))) {
                                     throw new C1653(i4, length3);
@@ -269,7 +269,7 @@ public final class C1353 {
                         if (cCharAt7 < 2048) {
                             int i14 = iPosition2 + 1;
                             try {
-                                byteBuffer2.put(iPosition2, (byte) ((cCharAt7 >>> 6) | Opcodes.CHECKCAST));
+                                byteBuffer2.put(iPosition2, (byte) ((cCharAt7 >>> 6) | 192));
                                 byteBuffer2.put(i14, (byte) ((cCharAt7 & '?') | 128));
                                 iPosition2 = i14;
                             } catch (IndexOutOfBoundsException unused2) {
@@ -465,7 +465,7 @@ public final class C1353 {
                 }
             }
             byteBuffer.position(0);
-            this.f4848.getClass();
+            
             ByteBuffer byteBufferOrder = ByteBuffer.allocate(i3).order(ByteOrder.LITTLE_ENDIAN);
             byteBufferOrder.position(byteBufferOrder.clear().capacity() - iCapacity2);
             byteBufferOrder.put(byteBuffer);

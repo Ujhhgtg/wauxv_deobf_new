@@ -2,7 +2,6 @@ package p000;
 
 import java.io.File;
 import java.math.BigInteger;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᤝᤞᲇᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -59,7 +58,7 @@ public final class C3610 extends AbstractC2862 implements InterfaceC1429 {
             case 0:
                 break;
         }
-        return ((C3610) mo1197(interfaceC0842, interfaceC0883)).mo1198(C3497.f10997);
+        return ((C3610) mo1197(interfaceC0842, interfaceC0883)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
@@ -87,7 +86,7 @@ public final class C3610 extends AbstractC2862 implements InterfaceC1429 {
         Object objM3955;
         String str4;
         int i = this.f11281;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         String str5 = this.f11290;
         String str6 = this.f11289;
         EnumC0884 enumC0884 = EnumC0884.f3325;
@@ -141,7 +140,7 @@ public final class C3610 extends AbstractC2862 implements InterfaceC1429 {
                 C1133.m2707(str2, str, new BigInteger(str9));
                 ((File) objM3954).delete();
                 AbstractC2834.m4823(null, 3, "下载视频完成");
-                return c3497;
+                return unit;
             default:
                 String[] strArr2 = AbstractC1574.f5469;
                 InterfaceC0883 interfaceC0884 = (InterfaceC0883) this.f11285;
@@ -187,7 +186,7 @@ public final class C3610 extends AbstractC2862 implements InterfaceC1429 {
                 C1133.m2707(str4, str3, new BigInteger(str9));
                 ((File) objM3955).delete();
                 AbstractC2834.m4823(null, 3, "下载视频完成");
-                return c3497;
+                return unit;
         }
     }
 }

@@ -87,7 +87,7 @@ public final class C0686 extends AbstractC1701 {
                 if (c1706 == null) {
                     c1706 = null;
                 }
-                c1706.getClass();
+                
                 Object obj2 = C1705.f5796.get(c1706);
                 if (!(obj2 instanceof C0760)) {
                     c1702.mo933(AbstractC1458.m3171(obj2));

@@ -20,7 +20,7 @@ import android.widget.AutoCompleteTextView;
 public abstract class AbstractC0211 extends AutoCompleteTextView {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
-    public static final int[] f1313 = {R.attr.popupBackground};
+    public static final int[] f1313 = {16843126};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C0146 f1314;

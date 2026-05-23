@@ -30,7 +30,7 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
         this.f9080 = c0146;
         C1227 c1227 = c1706.f5799;
         this.f9082 = c1227;
-        c1227.getClass();
+        
     }
 
     @Override // p000.AbstractC1459, p000.InterfaceC0766
@@ -44,7 +44,7 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
         }
         C0146 c0146 = this.f9080;
         if (c0146.m1189()) {
-            c1706.f5799.getClass();
+            
             AbstractC3681.m5329(c0146, "");
             throw null;
         }
@@ -87,7 +87,7 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
         if (this.f9079 != enumC3672M3987) {
             return new C2828(c1706, enumC3672M3987, c0146, interfaceC2654);
         }
-        c1706.f5799.getClass();
+        
         return this;
     }
 
@@ -161,7 +161,7 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
             if (!(interfaceC1743 instanceof AbstractC0067)) {
                 return interfaceC1743.mo924(this);
             }
-            this.f9078.f5799.getClass();
+            
             AbstractC1194.m2791(interfaceC1743);
             throw null;
         } catch (C1985 e) {
@@ -195,20 +195,20 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
                     if (!zM11810) {
                         break;
                     }
-                    c1227.getClass();
+                    
                     AbstractC3681.m5330(c0146);
                     throw th3;
                 }
-                this.f9082.getClass();
+                
                 String strM1158 = c0146.m1158();
-                c0146.m1161(c);
-                c1706.f5799.getClass();
+                c0146.m1161(58);
+                
                 AbstractC1459.m3194(c1706, interfaceC2654);
                 int iMo3471 = interfaceC2654.mo3471(strM1158);
                 if (iMo3471 != -3) {
                     th = th2;
                 } else {
-                    c1706.f5799.getClass();
+                    
                     C0094 c0094 = c1706.f5801;
                     th = th2;
                     C0299 c0299 = new C0299(interfaceC2654, 2, c1706);
@@ -299,7 +299,7 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
                 i = i4 + 1;
                 this.f9081 = i;
             } else if (zM11811) {
-                c1227.getClass();
+                
                 AbstractC3681.m5329(c0146, "array");
                 throw null;
             }
@@ -330,7 +330,7 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
                 i = this.f9081 + 1;
                 this.f9081 = i;
             } else if (zM1189) {
-                c1227.getClass();
+                
                 AbstractC3681.m5330(c0146);
                 throw null;
             }
@@ -385,7 +385,7 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
             }
             Object[] objArr = (Object[]) c0662.f2531;
             int i5 = c0662.f2529;
-            ((C1227) c0662.f2530).getClass();
+            
             objArr[i5] = objMo2515;
             ((int[]) c0662.f2532)[i5] = -2;
         }
@@ -395,7 +395,7 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
     @Override // p000.AbstractC1459, p000.InterfaceC0974
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ */
     public final String mo2518() {
-        this.f9082.getClass();
+        
         return this.f9080.m1164();
     }
 
@@ -459,8 +459,8 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
         String strM1165 = c0146.m1165();
         try {
             float f = Float.parseFloat(strM1165);
-            this.f9078.f5799.getClass();
-            if (Math.abs(f) <= Float.MAX_VALUE) {
+            
+            if (Math.abs(f) <= 3.4028235E38f) {
                 return f;
             }
             C0146.m1152(c0146, AbstractC3681.m5334(Float.valueOf(f), null), 0, 2);
@@ -478,8 +478,8 @@ public final class C2828 extends AbstractC1459 implements InterfaceC0974, Interf
         String strM1165 = c0146.m1165();
         try {
             double d = Double.parseDouble(strM1165);
-            this.f9078.f5799.getClass();
-            if (Math.abs(d) <= Double.MAX_VALUE) {
+            
+            if (Math.abs(d) <= 1.7976931348623157E308) {
                 return d;
             }
             C0146.m1152(c0146, AbstractC3681.m5334(Double.valueOf(d), null), 0, 2);

@@ -25,7 +25,7 @@ public final /* synthetic */ class C1558 implements InterfaceC1414 {
                 return this.f5428.getHookedMethod();
             default:
                 this.f5428.unhook();
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 }

@@ -196,7 +196,7 @@ public final class C1396 extends AbstractC2205 {
             case 13:
                 int iM4906 = c2896.m4903();
                 return iM4906 != 0 && ((short) iM4906) == iM4906;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return true;
             default:
                 return super.mo3108(c2896);
@@ -231,31 +231,31 @@ public final class C1396 extends AbstractC2205 {
                 return 2;
             case 11:
                 return 2;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return 2;
             case 13:
                 return 2;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return 2;
             case 15:
                 return 2;
             case 16:
                 return 3;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return 3;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return 3;
             case 19:
                 return 3;
             case 20:
                 return 3;
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return 3;
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return 4;
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return 4;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return 5;
             default:
                 throw new RuntimeException("unsupported");
@@ -301,8 +301,8 @@ public final class C1396 extends AbstractC2205 {
                 }
                 return bitSet3;
             case 5:
-            case Opcodes.ILOAD /* 21 */:
-            case Opcodes.FLOAD /* 23 */:
+            case 21 /* 21 */:
+            case 23 /* 23 */:
             default:
                 return super.mo3110(abstractC0950);
             case 6:
@@ -344,7 +344,7 @@ public final class C1396 extends AbstractC2205 {
                 bitSet9.set(0, AbstractC2205.m4081(((C2525) c25214.m3062(0)).f8055));
                 bitSet9.set(1, AbstractC2205.m4081(((C2525) c25214.m3062(1)).f8055));
                 return bitSet9;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 C2526 c25215 = abstractC0950.f3470;
                 BitSet bitSet10 = new BitSet(2);
                 bitSet10.set(0, AbstractC2205.m4081(((C2525) c25215.m3062(0)).f8055));
@@ -356,7 +356,7 @@ public final class C1396 extends AbstractC2205 {
                 bitSet11.set(0, AbstractC2205.m4081(((C2525) c25216.m3062(0)).f8055));
                 bitSet11.set(1, AbstractC2205.m4081(((C2525) c25216.m3062(1)).f8055));
                 return bitSet11;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 C2526 c25217 = abstractC0950.f3470;
                 BitSet bitSet12 = new BitSet(2);
                 bitSet12.set(0, AbstractC2205.m4080(((C2525) c25217.m3062(0)).f8055));
@@ -381,12 +381,12 @@ public final class C1396 extends AbstractC2205 {
                     bitSet14.set(1, zM4082);
                 }
                 return bitSet14;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 C2526 c25220 = abstractC0950.f3470;
                 BitSet bitSet15 = new BitSet(1);
                 bitSet15.set(0, AbstractC2205.m4080(((C2525) c25220.m3062(0)).f8055));
                 return bitSet15;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 C2526 c25221 = abstractC0950.f3470;
                 BitSet bitSet16 = new BitSet(1);
                 bitSet16.set(0, AbstractC2205.m4080(((C2525) c25221.m3062(0)).f8055));
@@ -406,7 +406,7 @@ public final class C1396 extends AbstractC2205 {
                     bitSet18.set(i3, AbstractC2205.m4081((c2525.m4540() + c2525.f8055) - 1));
                 }
                 return bitSet18;
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 C2526 c25224 = abstractC0950.f3470;
                 int length5 = c25224.f4836.length;
                 BitSet bitSet19 = new BitSet(length5);
@@ -415,7 +415,7 @@ public final class C1396 extends AbstractC2205 {
                     bitSet19.set(i4, AbstractC2205.m4081((c25225.m4540() + c25225.f8055) - 1));
                 }
                 return bitSet19;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 C2526 c25226 = abstractC0950.f3470;
                 BitSet bitSet20 = new BitSet(1);
                 bitSet20.set(0, AbstractC2205.m4080(((C2525) c25226.m3062(0)).f8055));
@@ -455,13 +455,13 @@ public final class C1396 extends AbstractC2205 {
             case 11:
                 C2526 c2528 = abstractC1351.f3470;
                 return ((C2525) c2528.m3062(0)).m4542() + ", " + ((C2525) c2528.m3062(1)).m4542() + ", " + abstractC1351.mo2415();
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 C2526 c2529 = abstractC1351.f3470;
                 return ((C2525) c2529.m3062(0)).m4542() + ", " + ((C2525) c2529.m3062(1)).m4542() + ", " + AbstractC2205.m4064((AbstractC0909) ((C0902) abstractC1351).f3345);
             case 13:
                 C2526 c25210 = abstractC1351.f3470;
                 return ((C2525) c25210.m3062(0)).m4542() + ", " + ((C2525) c25210.m3062(1)).m4542() + ", " + AbstractC2205.m4048(abstractC1351);
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 C2526 c25211 = abstractC1351.f3470;
                 return ((C2525) c25211.m3062(0)).m4542() + ", " + ((C2525) c25211.m3062(1)).m4542();
             case 15:
@@ -469,22 +469,22 @@ public final class C1396 extends AbstractC2205 {
                 return ((C2525) c25212.m3062(0)).m4542() + ", " + ((C2525) c25212.m3062(1)).m4542() + ", " + ((C2525) c25212.m3062(2)).m4542();
             case 16:
                 return ((C2525) abstractC1351.f3470.m3062(0)).m4542() + ", " + abstractC1351.mo2415();
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return ((C2525) abstractC1351.f3470.m3062(0)).m4542() + ", " + AbstractC2205.m4064((AbstractC0909) ((C0902) abstractC1351).f3345);
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return ((C2525) abstractC1351.f3470.m3062(0)).m4542() + ", " + AbstractC2205.m4048(abstractC1351);
             case 19:
                 C2526 c25213 = abstractC1351.f3470;
                 return ((C2525) c25213.m3062(0)).m4542() + ", " + ((C2525) c25213.m3062(1)).m4542();
             case 20:
                 return AbstractC2205.m4073(m3104(abstractC1351.f3470)) + ", " + abstractC1351.mo2415();
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return AbstractC2205.m4074(abstractC1351.f3470) + ", " + abstractC1351.mo2415();
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return AbstractC2205.m4073(m3105(abstractC1351.f3470)) + ", " + abstractC1351.mo2415();
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return AbstractC2205.m4074(abstractC1351.f3470) + ", " + abstractC1351.mo2415();
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return ((C2525) abstractC1351.f3470.m3062(0)).m4542() + ", " + AbstractC2205.m4064((AbstractC0909) ((C0902) abstractC1351).f3345);
             default:
                 throw new RuntimeException("unsupported");
@@ -519,31 +519,31 @@ public final class C1396 extends AbstractC2205 {
                 return AbstractC2205.m4063((AbstractC0909) ((C0902) abstractC1351).f3345, 8);
             case 11:
                 return abstractC1351.mo2414();
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return AbstractC2205.m4063((AbstractC0909) ((C0902) abstractC1351).f3345, 16);
             case 13:
                 return AbstractC2205.m4047(abstractC1351);
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return "";
             case 15:
                 return "";
             case 16:
                 return abstractC1351.mo2414();
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return AbstractC2205.m4063((AbstractC0909) ((C0902) abstractC1351).f3345, 32);
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return AbstractC2205.m4047(abstractC1351);
             case 19:
                 return "";
             case 20:
                 return abstractC1351.mo2414();
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return abstractC1351.mo2414();
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return abstractC1351.mo2414();
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return abstractC1351.mo2414();
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return AbstractC2205.m4063((AbstractC0909) ((C0902) abstractC1351).f3345, 64);
             default:
                 throw new RuntimeException("unsupported");
@@ -651,7 +651,7 @@ public final class C1396 extends AbstractC2205 {
                 }
                 AbstractC0909 abstractC09010 = (AbstractC0909) abstractC0779;
                 if (((C2525) c25213.m3062(0)).m4540() == 1) {
-                    if ((abstractC09010.mo2424() & Settings.DEFAULT_INITIAL_WINDOW_SIZE) != 0) {
+                    if ((abstractC09010.mo2424() & 65535) != 0) {
                         return false;
                     }
                 } else if ((abstractC09010.mo2425() & 281474976710655L) != 0) {
@@ -709,7 +709,7 @@ public final class C1396 extends AbstractC2205 {
                 }
                 AbstractC0777 abstractC07712 = c0903.f3345;
                 return (abstractC07712 instanceof C0918) || (abstractC07712 instanceof C0899);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 C2526 c25218 = abstractC0950.f3470;
                 if (!(abstractC0950 instanceof C0902) || c25218.f4836.length != 2 || !AbstractC2205.m4081(((C2525) c25218.m3062(0)).f8055) || !AbstractC2205.m4081(((C2525) c25218.m3062(1)).f8055)) {
                     return false;
@@ -734,7 +734,7 @@ public final class C1396 extends AbstractC2205 {
                     return mo3108(c2899);
                 }
                 return true;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 C2526 c25220 = abstractC0950.f3470;
                 return (abstractC0950 instanceof C2706) && c25220.f4836.length == 2 && AbstractC2205.m4080(((C2525) c25220.m3062(0)).f8055) && AbstractC2205.m4082(((C2525) c25220.m3062(1)).f8055);
             case 15:
@@ -762,7 +762,7 @@ public final class C1396 extends AbstractC2205 {
                 }
                 AbstractC0777 abstractC07714 = ((C0902) abstractC0950).f3345;
                 return (abstractC07714 instanceof C0918) || (abstractC07714 instanceof C0899) || (abstractC07714 instanceof C0917);
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 C2526 c25223 = abstractC0950.f3470;
                 if (!(abstractC0950 instanceof C0902) || c25223.f4836.length != 1 || !AbstractC2205.m4080(((C2525) c25223.m3062(0)).f8055)) {
                     return false;
@@ -772,7 +772,7 @@ public final class C1396 extends AbstractC2205 {
                     return ((AbstractC0909) abstractC07715).mo2423();
                 }
                 return false;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 C2526 c25224 = abstractC0950.f3470;
                 return (abstractC0950 instanceof C2896) && c25224.f4836.length == 1 && AbstractC2205.m4080(((C2525) c25224.m3062(0)).f8055);
             case 19:
@@ -788,7 +788,7 @@ public final class C1396 extends AbstractC2205 {
                 }
                 AbstractC0777 abstractC07716 = c0904.f3345;
                 return ((abstractC07716 instanceof C0913) || (abstractC07716 instanceof C0918) || (abstractC07716 instanceof C0895)) && m3106(c0904.f3470) >= 0;
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 if (!(abstractC0950 instanceof C0902)) {
                     return false;
                 }
@@ -805,7 +805,7 @@ public final class C1396 extends AbstractC2205 {
                 Object[] objArr = c25226.f4836;
                 int length4 = objArr.length;
                 return objArr.length == 0 || (AbstractC2205.m4061(c25226) && AbstractC2205.m4082(((C2525) c25226.m3062(0)).f8055) && AbstractC2205.m4080(c25226.m4548()));
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 if (!(abstractC0950 instanceof C2099)) {
                     return false;
                 }
@@ -815,7 +815,7 @@ public final class C1396 extends AbstractC2205 {
                     return false;
                 }
                 return AbstractC2205.m4082(c2099.m3891(0)) && AbstractC2205.m4082(c2099.m3891(1)) && (abstractC0777Arr[0] instanceof C0913) && (abstractC0777Arr[1] instanceof C0915) && m3107(c2099.f3470) >= 0;
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 if (!(abstractC0950 instanceof C2099)) {
                     return false;
                 }
@@ -832,7 +832,7 @@ public final class C1396 extends AbstractC2205 {
                 C2526 c25227 = c20910.f3470;
                 int length5 = c25227.f4836.length;
                 return length5 == 0 || (AbstractC2205.m4080(c25227.m4548()) && AbstractC2205.m4082(length5) && AbstractC2205.m4082(((C2525) c25227.m3062(0)).f8055) && AbstractC2205.m4061(c25227));
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 C2526 c25228 = abstractC0950.f3470;
                 if ((abstractC0950 instanceof C0902) && c25228.f4836.length == 1 && AbstractC2205.m4080(((C2525) c25228.m3062(0)).f8055)) {
                     return ((C0902) abstractC0950).f3345 instanceof AbstractC0908;
@@ -908,7 +908,7 @@ public final class C1396 extends AbstractC2205 {
                 c0519.m1840(AbstractC2205.m4066(abstractC1351, AbstractC2205.m4065(((C2525) c25212.m3062(0)).f8055, ((C2525) c25212.m3062(1)).f8055)));
                 c0519.m1840((short) iM2418);
                 return;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 C2526 c25213 = abstractC1351.f3470;
                 int iMo2426 = ((AbstractC0909) ((C0902) abstractC1351).f3345).mo2424();
                 c0519.m1840(AbstractC2205.m4066(abstractC1351, AbstractC2205.m4065(((C2525) c25213.m3062(0)).f8055, ((C2525) c25213.m3062(1)).f8055)));
@@ -920,7 +920,7 @@ public final class C1396 extends AbstractC2205 {
                 c0519.m1840(AbstractC2205.m4066(abstractC1351, AbstractC2205.m4065(((C2525) c25214.m3062(0)).f8055, ((C2525) c25214.m3062(1)).f8055)));
                 c0519.m1840((short) iM4905);
                 return;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 C2526 c25215 = abstractC1351.f3470;
                 short sM4067 = AbstractC2205.m4066(abstractC1351, ((C2525) c25215.m3062(0)).f8055);
                 short s = (short) ((C2525) c25215.m3062(1)).f8055;
@@ -941,14 +941,14 @@ public final class C1396 extends AbstractC2205 {
                 c0519.m1840((short) iM2419);
                 c0519.m1840((short) (iM2419 >> 16));
                 return;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 C2526 c25218 = abstractC1351.f3470;
                 int iMo2427 = ((AbstractC0909) ((C0902) abstractC1351).f3345).mo2424();
                 c0519.m1840(AbstractC2205.m4066(abstractC1351, ((C2525) c25218.m3062(0)).f8055));
                 c0519.m1840((short) iMo2427);
                 c0519.m1840((short) (iMo2427 >> 16));
                 return;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 C2526 c25219 = abstractC1351.f3470;
                 int iM4906 = ((C2896) abstractC1351).m4903();
                 c0519.m1840(AbstractC2205.m4066(abstractC1351, ((C2525) c25219.m3062(0)).f8055));
@@ -978,7 +978,7 @@ public final class C1396 extends AbstractC2205 {
                 c0519.m1840((short) iM24110);
                 c0519.m1840(sM4050);
                 return;
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 C2526 c25221 = abstractC1351.f3470;
                 int iM24111 = ((C0902) abstractC1351).m2417();
                 int i5 = c25221.f4836.length != 0 ? ((C2525) c25221.m3062(0)).f8055 : 0;
@@ -986,7 +986,7 @@ public final class C1396 extends AbstractC2205 {
                 c0519.m1840((short) iM24111);
                 c0519.m1840((short) i5);
                 return;
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 C2099 c2099 = (C2099) abstractC1351;
                 short sM3891 = (short) c2099.m3891(0);
                 short sM3892 = (short) c2099.m3891(1);
@@ -1003,7 +1003,7 @@ public final class C1396 extends AbstractC2205 {
                 c0519.m1840(sM4051);
                 c0519.m1840(sM3892);
                 return;
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 C2099 c20910 = (C2099) abstractC1351;
                 short sM3893 = (short) c20910.m3891(0);
                 short sM3894 = (short) c20910.m3891(1);
@@ -1014,7 +1014,7 @@ public final class C1396 extends AbstractC2205 {
                 c0519.m1840(s4);
                 c0519.m1840(sM3894);
                 return;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 C2526 c25223 = abstractC1351.f3470;
                 long j = ((AbstractC0908) ((C0902) abstractC1351).f3345).f3365;
                 c0519.m1840(AbstractC2205.m4066(abstractC1351, ((C2525) c25223.m3062(0)).f8055));

@@ -75,7 +75,7 @@ public final class C3634 extends AbstractC2862 implements InterfaceC1430 {
         C3634 c3634 = new C3634(this.f11371, (InterfaceC0842) obj3);
         c3634.f11369 = (TextView) obj;
         c3634.f11370 = (ProgressBar) obj2;
-        return c3634.mo1198(C3497.f10997);
+        return c3634.mo1198(Unit.INSTANCE);
     }
 
     /* JADX WARN: Code duplicated, block: B:35:0x00e1 A[Catch: all -> 0x0187, TRY_ENTER, TryCatch #7 {all -> 0x0187, blocks: (B:32:0x00d5, B:35:0x00e1, B:37:0x00eb, B:38:0x00f1, B:40:0x00f5, B:42:0x00f9, B:44:0x0111, B:46:0x0120, B:48:0x0124, B:50:0x0130, B:52:0x0136, B:54:0x013e, B:56:0x0144, B:58:0x0149, B:94:0x01f8, B:96:0x0217, B:98:0x0227, B:97:0x021e, B:100:0x025a, B:101:0x025d), top: B:179:0x00d5 }] */

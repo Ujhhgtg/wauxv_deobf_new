@@ -26,7 +26,7 @@ public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior<View> 
     @Override // com.google.android.material.behavior.SwipeDismissBehavior, p000.AbstractC0861
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final boolean mo619(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
-        this.f779.getClass();
+        
         int actionMasked = motionEvent.getActionMasked();
         if (actionMasked != 0) {
             if (actionMasked == 1 || actionMasked == 3) {
@@ -49,7 +49,7 @@ public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior<View> 
     @Override // com.google.android.material.behavior.SwipeDismissBehavior
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ */
     public final boolean mo635(View view) {
-        this.f779.getClass();
+        
         return view instanceof AbstractC0392;
     }
 }

@@ -88,7 +88,7 @@ public class ObjectWriterAdapter<T> implements ObjectWriter<T> {
         if (ordinalByHashCode == -1) {
             return false;
         }
-        jSONWriter.writeRaw(JSONB.Constants.BC_TYPED_ANY);
+        jSONWriter.writeRaw(-110);
         jSONWriter.writeInt32(-ordinalByHashCode);
         return true;
     }
@@ -398,7 +398,7 @@ public class ObjectWriterAdapter<T> implements ObjectWriter<T> {
                 i = i2;
             } else {
                 i = i2;
-                if ((fieldWriter.features & FieldInfo.FIELD_MASK) == 0) {
+                if ((fieldWriter.features & 4503599627370496L) == 0) {
                     propertyPreFilter = propertyPreFilter3;
                     nameFilter3 = nameFilter3;
                     contextNameFilter = contextNameFilter;
@@ -425,7 +425,7 @@ public class ObjectWriterAdapter<T> implements ObjectWriter<T> {
                             if (z || (!"this$0".equals(str2) && !"this$1".equals(str2) && !"this$2".equals(str2))) {
                                 String strProcess = nameFilter3 != null ? nameFilter3.process(obj, str2, fieldValue) : str2;
                                 if (contextNameFilter != null) {
-                                    declaredField = (field != 0 || fieldWriter.method == null) ? field : BeanUtils.getDeclaredField(objectWriterAdapter.objectClass, fieldWriter.fieldName);
+                                    declaredField = (false || fieldWriter.method == null) ? field : BeanUtils.getDeclaredField(objectWriterAdapter.objectClass, fieldWriter.fieldName);
                                     beanContext = new BeanContext(objectWriterAdapter.objectClass, fieldWriter.method, declaredField, fieldWriter.fieldName, fieldWriter.label, fieldWriter.fieldClass, fieldWriter.fieldType, fieldWriter.features, fieldWriter.format);
                                     strProcess = contextNameFilter.process(beanContext, obj, strProcess, fieldValue);
                                 } else {
@@ -539,7 +539,7 @@ public class ObjectWriterAdapter<T> implements ObjectWriter<T> {
             str2 = (!Enum.class.isAssignableFrom(cls) || cls.isEnum()) ? TypeUtils.getTypeName(cls) : cls.getSuperclass().getName();
         }
         this.objectClass = cls;
-        this.typeKey = (str == null || str.isEmpty()) ? TYPE : str;
+        this.typeKey = (str == null || str.isEmpty()) ? "@type" : str;
         this.typeName = str2;
         this.typeNameHash = str2 != null ? Fnv.hashCode64(str2) : 0L;
         this.typeNameJSONB = JSONB.toBytes(str2);
@@ -550,7 +550,7 @@ public class ObjectWriterAdapter<T> implements ObjectWriter<T> {
         FieldWriter[] fieldWriterArr = new FieldWriter[list.size()];
         this.fieldWriterArray = fieldWriterArr;
         list.toArray(fieldWriterArr);
-        this.hasValueField = fieldWriterArr.length == 1 && (fieldWriterArr[0].features & FieldInfo.VALUE_MASK) != 0;
+        this.hasValueField = fieldWriterArr.length == 1 && (fieldWriterArr[0].features & 281474976710656L) != 0;
         int length = fieldWriterArr.length;
         long[] jArr = new long[length];
         int i = 0;
@@ -562,7 +562,7 @@ public class ObjectWriterAdapter<T> implements ObjectWriter<T> {
             }
             FieldWriter fieldWriter = fieldWriterArr2[i];
             jArr[i] = Fnv.hashCode64(fieldWriter.fieldName);
-            if (fieldWriter.method != null && (fieldWriter.features & FieldInfo.FIELD_MASK) == 0) {
+            if (fieldWriter.method != null && (fieldWriter.features & 4503599627370496L) == 0) {
                 z = true;
             }
             i++;
@@ -595,7 +595,7 @@ public class ObjectWriterAdapter<T> implements ObjectWriter<T> {
                     fieldValue = DateUtils.format((LocalDateTime) fieldValue, str);
                 }
             }
-            if ((fieldWriter.features & FieldInfo.UNWRAPPED_MASK) == 0) {
+            if ((fieldWriter.features & 562949953421312L) == 0) {
                 if (fieldValue != null) {
                     String name = fieldValue.getClass().getName();
                     if (Collection.class.isAssignableFrom(cls) && fieldValue.getClass() != JSONObject.class && !name.equals("com.alibaba.fastjson.JSONObject")) {

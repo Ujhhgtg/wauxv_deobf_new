@@ -21,12 +21,12 @@ public final class C3499 implements InterfaceC1743 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         this.f11001.mo924(interfaceC0974);
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 
     @Override // p000.InterfaceC1743
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo1542(InterfaceC1206 interfaceC1206, Object obj) {
-        this.f11001.mo1542(interfaceC1206, (C3497) obj);
+        this.f11001.mo1542(interfaceC1206, (Unit) obj);
     }
 }

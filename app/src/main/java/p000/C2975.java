@@ -80,7 +80,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C2977.f9520;
-        interfaceC0766Mo2512.getClass();
+        
         String str = null;
         C2983 c2983 = null;
         List list = null;
@@ -694,7 +694,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     int i20 = i3;
                     List list12 = list;
                     String str31 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2839.f9108, str11);
-                    int i21 = i20 | bc.e;
+                    int i21 = i20 | 256;
                     str7 = str7;
                     num7 = num7;
                     str3 = str23;
@@ -926,7 +926,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     int i28 = i3;
                     List list16 = list;
                     Integer num19 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C1665.f5622, num9);
@@ -1044,9 +1044,9 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     String str33 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C2839.f9108, str13);
-                    i = i3 | Http2.INITIAL_MAX_FRAME_SIZE;
+                    i = i3 | 16384;
                     str3 = str23;
                     str7 = str7;
                     num10 = num10;
@@ -1223,7 +1223,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     C2983 c2985 = c2983;
                     String str35 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 17, C2839.f9108, str15);
                     i = i3 | 131072;
@@ -1290,7 +1290,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     C2983 c2988 = c2983;
                     String str36 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 18, C2839.f9108, str16);
                     i = i3 | 262144;
@@ -1479,7 +1479,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.ILOAD /* 21 */:
+                case 21 /* 21 */:
                     C2983 c29811 = c2983;
                     String str38 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 21, C2839.f9108, str18);
                     i = i3 | 2097152;
@@ -1538,7 +1538,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.LLOAD /* 22 */:
+                case 22 /* 22 */:
                     C2983 c29812 = c2983;
                     String str39 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 22, C2839.f9108, str19);
                     i = i3 | 4194304;
@@ -1595,7 +1595,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.FLOAD /* 23 */:
+                case 23 /* 23 */:
                     C2983 c29813 = c2983;
                     Integer num23 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 23, C1665.f5622, num13);
                     i = i3 | 8388608;
@@ -1650,10 +1650,10 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.DLOAD /* 24 */:
+                case 24 /* 24 */:
                     C2983 c29814 = c2983;
                     Long l2 = (Long) interfaceC0766Mo2512.mo2239(interfaceC2654, 24, C1862.f6185, l);
-                    i = i3 | Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                    i = i3 | 16777216;
                     str3 = str23;
                     str7 = str7;
                     num13 = num13;
@@ -1703,7 +1703,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     i3 = i;
                     str7 = str7;
                     break;
-                case Opcodes.ALOAD /* 25 */:
+                case 25 /* 25 */:
                     C2983 c29815 = c2983;
                     String str40 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 25, C2839.f9108, str20);
                     i = i3 | 33554432;
@@ -1973,7 +1973,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                 case 31:
                     str4 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 31, C2839.f9108, str4);
                     str3 = str23;
-                    i = i3 | Integer.MIN_VALUE;
+                    i = i3 | -2147483648;
                     num3 = num3;
                     num = num4;
                     str2 = str2;
@@ -2363,7 +2363,7 @@ public final /* synthetic */ class C2975 implements InterfaceC1443 {
                     break;
                 case 40:
                     list = (List) interfaceC0766Mo2512.mo2239(interfaceC2654, 40, (InterfaceC1743) interfaceC1758Arr[40].getValue(), list);
-                    i2 |= bc.e;
+                    i2 |= 256;
                     str7 = str7;
                     str3 = str23;
                     num3 = num3;

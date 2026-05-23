@@ -5,13 +5,12 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.view.View;
 import android.widget.LinearLayout;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -37,11 +36,10 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
         int i2 = 2;
         ?? r3 = 0;
         int i3 = 1;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         switch (i) {
             case 0:
                 Object objM2263 = C0772.m2263(C0772.f2872, EnumC3517.f11023.f11027);
-                "null cannot be cast to non-null type kotlin.String";
                 return (String) objM2263;
             case 1:
                 Object objM2264 = C0772.m2263(C0772.f2872, EnumC3517.f11024.f11027);
@@ -77,7 +75,7 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
                 String[] strArr = AbstractC1574.f5469;
                 c0114.m2548("#FFFFFFFF");
                 C0113.f1062.m2548("#FF191919");
-                return c3497;
+                return unit;
             case 4:
                 return new C0152(29);
             case 5:
@@ -125,8 +123,8 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
                 C0462.f2037.m2543(true);
                 C0459.f2034.m2543(false);
                 C0458.f2033.m2543(false);
-                return c3497;
-            case Opcodes.FCONST_1 /* 12 */:
+                return unit;
+            case 12 /* 12 */:
                 Bitmap bitmapCreateBitmap2 = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
                 bitmapCreateBitmap2.eraseColor(0);
                 return bitmapCreateBitmap2;
@@ -137,7 +135,7 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
                 }
                 C0473.f2064.getClass();
                 return (Bitmap) C0473.f2066.getValue();
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 File file6 = new File(C0473.f2065, "icon_contacts.png");
                 if (file6.exists()) {
                     return BitmapFactory.decodeFile(file6.getAbsolutePath());
@@ -158,7 +156,7 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
                 }
                 C0473.f2064.getClass();
                 return (Bitmap) C0473.f2066.getValue();
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 C0468 c0468 = C0468.f2059;
                 String[] strArr3 = AbstractC1574.f5469;
                 c0468.m2548("#FFF7F7F7");
@@ -167,8 +165,8 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
                 C0467.f2058.m2548("#FF1E1E1E");
                 C0471.f2062.m2548("#FF324B48");
                 C0469.f2060.m2548("#FFF7F7F7");
-                return c3497;
-            case Opcodes.LDC /* 18 */:
+                return unit;
+            case 18 /* 18 */:
                 C0620 c0620 = C0620.f2449;
                 String[] strArr4 = AbstractC1574.f5469;
                 c0620.m2548("#FFEDEDED");
@@ -179,39 +177,38 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
                 C0612.f2441.m2548("#FF81D5CB");
                 C0614.f2443.m2548("#FFDDE4E2");
                 C0616.f2445.m2548("#FF81D5CB");
-                return c3497;
+                return unit;
             case 19:
                 C0628.f2463.m2548("今日已发${totalMsg}条");
                 C0627.f2462.m2543(true);
-                return c3497;
+                return unit;
             case 20:
                 C1002 c1002 = AbstractC1075.f3893;
-                AbstractC0968.m2486(ExecutorC0990.f3609, new C0303(i2, r3, i3));
-                return c3497;
-            case Opcodes.ILOAD /* 21 */:
+                AbstractC0968.m2486(ExecutorC0990.f3609, new C0303(2, r3, 1));
+                return unit;
+            case 21 /* 21 */:
                 C1002 c1003 = AbstractC1075.f3893;
-                AbstractC0968.m2486(ExecutorC0990.f3609, new C0303(i2, r3, i2));
-                return c3497;
-            case Opcodes.LLOAD /* 22 */:
+                AbstractC0968.m2486(ExecutorC0990.f3609, new C0303(2, r3, 2));
+                return unit;
+            case 22 /* 22 */:
                 C1962 c1962 = new C1962();
                 C1565.f5440.getClass();
                 c1962.f921 = (int) (C1565.m3276().getResources().getDisplayMetrics().heightPixels * 0.9f);
                 c1962.m3790();
                 return c1962;
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 C1565.f5440.getClass();
                 View viewInflate = View.inflate(AbstractC1128.m2700(AbstractC2207.m4086(C1565.m3276())), R.layout.module_dialog_choose_contacts, null);
-                "null cannot be cast to non-null type android.widget.LinearLayout";
                 return (LinearLayout) viewInflate;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 C1565.f5440.getClass();
                 return (LinearLayout) View.inflate(AbstractC1128.m2700(AbstractC2207.m4086(C1565.m3276())), R.layout.item_rv_contact_tab, null).findViewById(R.id.itemContactLinearLayout);
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 try {
                     AbstractC1557[] abstractC1557ArrM4093 = AbstractC2207.m4093();
-                    C0171 c0171 = new C0171(i2);
+                    C0171 c0171 = new C0171(2);
                     Object[] objArrCopyOf = Arrays.copyOf(abstractC1557ArrM4093, 248);
-                    if (objArrCopyOf.length > 1) {
+                    if (true) {
                         Arrays.sort(objArrCopyOf, c0171);
                     }
                     return Arrays.asList(objArrCopyOf);
@@ -222,13 +219,13 @@ public final /* synthetic */ class C0104 implements InterfaceC1414 {
                 }
             case 26:
                 C1174.f4306.m2548(C1175.f4308);
-                return c3497;
+                return unit;
             case 27:
                 C1565.f5440.getClass();
                 return C1565.m3275();
             case 28:
                 C1322.f4771.m2548(C1323.f4773);
-                return c3497;
+                return unit;
             default:
                 File file9 = new File(C1362.f4863, "menuItemsV2.json");
                 if (file9.exists()) {

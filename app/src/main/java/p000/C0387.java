@@ -75,8 +75,8 @@ public final class C0387 extends AbstractC1258 {
         }
         float f = (slider.f1842 - slider.f1841) / fRound;
         float f2 = 20;
-        if (f > f2) {
-            fRound *= Math.round(f / f2);
+        if (f > 20.0f) {
+            fRound *= Math.round(f / 20.0f);
         }
         if (i2 == 8192) {
             fRound = -fRound;

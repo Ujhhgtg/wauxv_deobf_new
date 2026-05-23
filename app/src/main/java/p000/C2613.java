@@ -32,7 +32,7 @@ public final /* synthetic */ class C2613 implements InterfaceC1443 {
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         boolean z = true;
         int i = 0;
         String str = null;
@@ -50,7 +50,7 @@ public final /* synthetic */ class C2613 implements InterfaceC1443 {
         }
         interfaceC0766Mo2512.mo2228(interfaceC2654);
         if (1 != i) {
-            AbstractC1270.m2997(i, 1, descriptor);
+            AbstractC1270.m2997(0, 1, descriptor);
             throw null;
         }
         C2615 c2615 = new C2615();

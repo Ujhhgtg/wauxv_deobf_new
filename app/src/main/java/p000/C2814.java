@@ -30,7 +30,7 @@ public final class C2814 {
     public Layout.Alignment f9017 = Layout.Alignment.ALIGN_NORMAL;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
-    public int f9018 = Integer.MAX_VALUE;
+    public int f9018 = 2147483647;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public float f9019 = 1.0f;

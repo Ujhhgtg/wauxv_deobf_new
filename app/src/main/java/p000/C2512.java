@@ -1,7 +1,7 @@
 package p000;
 
 import java.util.Collections;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.json.JSONObject;
 import org.luckypray.dexkit.DexKitBridge;
 
@@ -33,25 +33,25 @@ public final class C2512 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2511.f8029, dexKitBridge, new C2444(17));
+        AbstractC1574.findMethod(C2511.f8029, dexKitBridge, new C2444(17));
     }
 
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.m3315(C2511.f8029)));
+        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.dexToMethod(C2511.f8029)));
         C2444 c2444 = new C2444(15);
         C2512 c2512 = f8030;
         c2512.m3262(c3689M4172, c2444);
         c3689M4172.m5352();
-        C2176.f7137.getClass();
-        Class declaringClass = AbstractC1574.m3314(C2175.f7136).getDeclaringClass();
-        C2164.f7124.getClass();
-        for (Class cls : AbstractC0745.m2212(declaringClass, AbstractC1574.m3314(C2163.f7123).getDeclaringClass())) {
-            int i = AbstractC1745.f5844;
-            C1973 c1973M3492 = AbstractC0968.m2484(cls).m3492();
+        
+        Class declaringClass = AbstractC1574.dexToCtor(C2175.f7136).getDeclaringClass();
+        
+        for (Class cls : AbstractC0745.m2212(declaringClass, AbstractC1574.dexToCtor(C2163.f7123).getDeclaringClass())) {
+            int i = 0;
+            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(cls).m3492();
             c1973M3492.f6370 = "onGYNetEnd";
-            C3689 c3689M4174 = c2512.m4174((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(Integer.TYPE), AbstractC2519.m4527(String.class), AbstractC2519.m4527(JSONObject.class)}, 3, c1973M3492), 1);
+            C3689 c3689M4174 = c2512.m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Integer.TYPE), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(JSONObject.class)}, 3, c1973M3492), 1);
             c2512.m3263(c3689M4174, new C2444(16));
             c3689M4174.m5352();
         }

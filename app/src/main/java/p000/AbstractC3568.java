@@ -9,7 +9,7 @@ import android.view.WindowInsets;
 public abstract class AbstractC3568 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static WindowInsets m5148(View view, WindowInsets windowInsets) {
-        int i = AbstractC3581.f11212;
+        int i = 0;
         return view.dispatchApplyWindowInsets(windowInsets);
     }
 }

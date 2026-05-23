@@ -54,7 +54,7 @@ public final class C3563 extends AbstractC2482 {
         final C3559 c3559 = abstractC2508 instanceof C3559 ? (C3559) abstractC2508 : null;
         if (c3559 != null) {
             final AbstractC0399 abstractC0399 = (AbstractC0399) this.f11173.get(i);
-            switch (c3559.f11163) {
+            switch (3) {
                 case 0:
                     C2103 c2103 = (C2103) c3559.f11164;
                     C0394 c0394 = abstractC0399 instanceof C0394 ? (C0394) abstractC0399 : null;
@@ -158,7 +158,7 @@ public final class C3563 extends AbstractC2482 {
                                     sb.append("此功能 (");
                                     sb.append(((C0398) abstractC0399).f1893);
                                     sb.append(") 暂不支持在 ");
-                                    C1565.f5440.getClass();
+                                    
                                     sb.append(C1565.m3279());
                                     sb.append(" 上使用, 仍要开启?");
                                     c2007.f6679 = sb.toString();
@@ -193,7 +193,7 @@ public final class C3563 extends AbstractC2482 {
     public final AbstractC2508 mo2042(ViewGroup viewGroup, int i) {
         String[] strArr = AbstractC1574.f5469;
         if (i == 0) {
-            C1565.f5440.getClass();
+            
             View viewInflate = AbstractC1460.m3216(C1565.m3276()).inflate(R.layout.item_rv_view_header, viewGroup, false);
             MaterialTextView materialTextView = (MaterialTextView) AbstractC3681.m5325(viewInflate, R.id.itemHeaderViewTextViewTitle);
             if (materialTextView != null) {
@@ -202,7 +202,7 @@ public final class C3563 extends AbstractC2482 {
             throw new NullPointerException("Missing required view with ID: ".concat(viewInflate.getResources().getResourceName(R.id.itemHeaderViewTextViewTitle)));
         }
         if (i == 1) {
-            C1565.f5440.getClass();
+            
             View viewInflate2 = AbstractC1460.m3216(C1565.m3276()).inflate(R.layout.item_rv_view_content, viewGroup, false);
             int i2 = R.id.itemContentViewImageViewNav;
             ShapeableImageView shapeableImageView = (ShapeableImageView) AbstractC3681.m5325(viewInflate2, R.id.itemContentViewImageViewNav);
@@ -220,7 +220,7 @@ public final class C3563 extends AbstractC2482 {
             throw new NullPointerException("Missing required view with ID: ".concat(viewInflate2.getResources().getResourceName(i2)));
         }
         if (i == 2) {
-            C1565.f5440.getClass();
+            
             View viewInflate3 = AbstractC1460.m3216(C1565.m3276()).inflate(R.layout.item_rv_view_switch, viewGroup, false);
             int i3 = R.id.itemSwitchViewSwitchFunc;
             MaterialSwitch materialSwitch = (MaterialSwitch) AbstractC3681.m5325(viewInflate3, R.id.itemSwitchViewSwitchFunc);
@@ -238,7 +238,7 @@ public final class C3563 extends AbstractC2482 {
             throw new NullPointerException("Missing required view with ID: ".concat(viewInflate3.getResources().getResourceName(i3)));
         }
         if (i == 3) {
-            C1565.f5440.getClass();
+            
             View viewInflate4 = AbstractC1460.m3216(C1565.m3276()).inflate(R.layout.item_rv_view_plugin, viewGroup, false);
             int i4 = R.id.itemPluginViewSwitchFunc;
             MaterialSwitch materialSwitch2 = (MaterialSwitch) AbstractC3681.m5325(viewInflate4, R.id.itemPluginViewSwitchFunc);
@@ -262,7 +262,7 @@ public final class C3563 extends AbstractC2482 {
         if (i != 4) {
             throw new IllegalArgumentException("onCreateViewHolder Failed");
         }
-        C1565.f5440.getClass();
+        
         View viewInflate5 = AbstractC1460.m3216(C1565.m3276()).inflate(R.layout.item_rv_search_result, viewGroup, false);
         int i5 = R.id.itemSearchResultImageViewNav;
         ShapeableImageView shapeableImageView2 = (ShapeableImageView) AbstractC3681.m5325(viewInflate5, R.id.itemSearchResultImageViewNav);

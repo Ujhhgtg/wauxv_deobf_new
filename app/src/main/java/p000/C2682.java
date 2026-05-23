@@ -40,7 +40,7 @@ public final class C2682 extends AbstractC2686 {
         matrix2.set(matrix);
         matrix2.preTranslate(f4, f2);
         matrix2.preRotate(m4695());
-        c2676.getClass();
+        
         rectF.bottom += i;
         rectF.offset(0.0f, -i);
         int i2 = c2676.f8625;

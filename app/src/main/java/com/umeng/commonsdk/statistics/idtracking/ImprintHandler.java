@@ -41,7 +41,7 @@ public class ImprintHandler implements FileLockCallback {
     private a h = new a();
     private com.umeng.commonsdk.statistics.proto.d i = null;
     private static Object b = new Object();
-    private static final String c = be.b().b(be.c);
+    private static final String c = be.b().b("imp");
     private static final byte[] d = "pbl0".getBytes();
     private static Map<String, ArrayList<UMImprintChangeCallback>> f = new HashMap();
     private static Object g = new Object();
@@ -143,9 +143,9 @@ public class ImprintHandler implements FileLockCallback {
 
     private com.umeng.commonsdk.statistics.proto.d d(com.umeng.commonsdk.statistics.proto.d dVar) {
         Map<String, com.umeng.commonsdk.statistics.proto.e> mapC = dVar.c();
-        if (mapC.containsKey(bv.f)) {
-            mapC.remove(bv.f);
-            this.h.a(bv.f);
+        if (mapC.containsKey("umtt")) {
+            mapC.remove("umtt");
+            this.h.a("umtt");
             dVar.a(dVar.f());
             dVar.a(a(dVar));
         }
@@ -242,10 +242,10 @@ public class ImprintHandler implements FileLockCallback {
         synchronized (p) {
             try {
                 if (o.containsKey(str)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> key : " + str + " PreProcesser has registed!");
+                    UMRTLog.i("MobclickRT", "--->>> key : " + str + " PreProcesser has registed!");
                 } else {
                     o.put(str, uMImprintPreProcessCallback);
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> registPreProcessCallback: key : " + str + " regist success.");
+                    UMRTLog.i("MobclickRT", "--->>> registPreProcessCallback: key : " + str + " regist success.");
                 }
             } catch (Throwable th) {
                 UMCrashManager.reportCrash(k, th);
@@ -281,7 +281,7 @@ public class ImprintHandler implements FileLockCallback {
                                 } else {
                                     this.a.put(str, strB);
                                     if (AnalyticsConstants.UM_DEBUG) {
-                                        Log.i(ImprintHandler.a, "imKey is " + str + ", imValue is " + strB);
+                                        Log.i("ImprintHandler", "imKey is " + str + ", imValue is " + strB);
                                     } else {
                                         continue;
                                     }
@@ -364,19 +364,19 @@ public class ImprintHandler implements FileLockCallback {
         boolean zA;
         if (dVar == null) {
             if (AnalyticsConstants.UM_DEBUG) {
-                UMRTLog.d(UMRTLog.RTLOG_TAG, "Imprint is null");
+                UMRTLog.d("MobclickRT", "Imprint is null");
                 return;
             }
             return;
         }
         if (!c(dVar)) {
             if (AnalyticsConstants.UM_DEBUG) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "Imprint is not valid");
+                UMRTLog.e("MobclickRT", "Imprint is not valid");
                 return;
             }
             return;
         }
-        String str = AnalyticsConstants.OS;
+        String str = "Android";
         HashMap map = new HashMap();
         synchronized (this) {
             try {
@@ -436,9 +436,9 @@ public class ImprintHandler implements FileLockCallback {
         synchronized (p) {
             try {
                 if (!o.containsKey(str)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> unregistPreProcessCallback: can't find [" + str + "], pls regist first.");
+                    UMRTLog.i("MobclickRT", "--->>> unregistPreProcessCallback: can't find [" + str + "], pls regist first.");
                 } else {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> unregistPreProcessCallback: unregist [" + str + "] success.");
+                    UMRTLog.i("MobclickRT", "--->>> unregistPreProcessCallback: unregist [" + str + "] success.");
                     f.remove(str);
                 }
             } catch (Throwable th) {
@@ -590,7 +590,7 @@ public class ImprintHandler implements FileLockCallback {
                         }
                     }
                 } else {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> merge: [" + key + "] should be ignored.");
+                    UMRTLog.i("MobclickRT", "--->>> merge: [" + key + "] should be ignored.");
                 }
             } else {
                 String key2 = entry.getKey();

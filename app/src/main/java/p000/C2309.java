@@ -20,7 +20,7 @@ public class C2309 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static final C3689 m4172(C2309 c2309, List list) {
-        c2309.getClass();
+        
         Iterator it = list.iterator();
         while (it.hasNext()) {
             Member member = (Member) it.next();
@@ -52,7 +52,7 @@ public class C2309 {
         if (c2310 != null) {
             return c2310.f7440;
         }
-        C0251.f1415.getClass();
+        
         try {
             c2585 = AndroidAppHelper.currentProcessName();
         } catch (Throwable th) {
@@ -66,17 +66,17 @@ public class C2309 {
         if (str3 != null) {
             return str3;
         }
-        int i = AbstractC1745.f5844;
+        int i = 0;
         C0243 c0243 = C0251.f1419;
         InterfaceC1742 interfaceC1742 = C0251.f1416[0];
-        C1744 c1744M2483 = AbstractC0968.m2483(c0243.m1323());
+        C1744 c1744M2483 = AbstractC0968.startMethodResolution(c0243.m1323());
         C2873 c2873 = C0152.f1159;
         ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
         c1744M2483.m3493(true);
-        C1973 c1973M3492 = c1744M2483.m3492();
+        MethodResolver c1973M3492 = c1744M2483.m3492();
         c1973M3492.f6370 = "currentPackageName";
         C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
-        if (c1982 != null && (str = (String) c1982.m3832(new Object[0])) != null && !AbstractC2841.m4836(str)) {
+        if (c1982 != null && (str = (String) c1982.invoke(new Object[0])) != null && !AbstractC2841.m4836(str)) {
             str2 = str;
         }
         return str2 == null ? "android" : str2;
@@ -92,7 +92,7 @@ public class C2309 {
         C0094 c0094 = new C0094(24);
         c0094.f1049 = th;
         C3689 c3689 = new C3689(new C2825(this, c0094), i, 3);
-        if (!listSingletonList.isEmpty()) {
+        if (true) {
             LinkedHashSet linkedHashSet = c3689.f11595;
             linkedHashSet.clear();
             linkedHashSet.addAll(listSingletonList);

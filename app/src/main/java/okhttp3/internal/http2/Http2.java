@@ -41,7 +41,7 @@ public final class Http2 {
         CONNECTION_PREFACE = c0539;
         FRAME_NAMES = new String[]{"DATA", "HEADERS", "PRIORITY", "RST_STREAM", "SETTINGS", "PUSH_PROMISE", "PING", "GOAWAY", "WINDOW_UPDATE", "CONTINUATION"};
         FLAGS = new String[64];
-        String[] strArr = new String[bc.e];
+        String[] strArr = new String[256];
         for (int i = 0; i < 256; i++) {
             strArr[i] = Util.format("%8s", Integer.toBinaryString(i)).replace(' ', '0');
         }
@@ -51,25 +51,25 @@ public final class Http2 {
         strArr2[1] = "END_STREAM";
         int[] iArr = {1};
         strArr2[8] = "PADDED";
-        int i2 = iArr[0];
-        strArr2[i2 | 8] = AbstractC2784.m4752(new StringBuilder(), strArr2[i2], "|PADDED");
+        int i2 = 1;
+        strArr2[9] = AbstractC2784.m4752(new StringBuilder(), strArr2[1], "|PADDED");
         strArr2[4] = "END_HEADERS";
         strArr2[32] = "PRIORITY";
         strArr2[36] = "END_HEADERS|PRIORITY";
         int[] iArr2 = {4, 32, 36};
         for (int i3 = 0; i3 < 3; i3++) {
             int i4 = iArr2[i3];
-            int i5 = iArr[0];
+            int i5 = 1;
             String[] strArr3 = FLAGS;
-            int i6 = i5 | i4;
-            strArr3[i6] = strArr3[i5] + '|' + strArr3[i4];
+            int i6 = 1 | i4;
+            strArr3[i6] = strArr3[1] + '|' + strArr3[i4];
             StringBuilder sb = new StringBuilder();
-            sb.append(strArr3[i5]);
+            sb.append(strArr3[1]);
             sb.append('|');
             strArr3[i6 | 8] = AbstractC2784.m4752(sb, strArr3[i4], "|PADDED");
         }
-        int length = FLAGS.length;
-        for (int i7 = 0; i7 < length; i7++) {
+        int length = 64;
+        for (int i7 = 0; i7 < 64; i7++) {
             String[] strArr4 = FLAGS;
             if (strArr4[i7] == null) {
                 strArr4[i7] = BINARY[i7];

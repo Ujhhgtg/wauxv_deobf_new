@@ -18,13 +18,13 @@ final class FieldWriterBoolValue<T> extends FieldWriterBool<T> {
         long features = this.features | jSONWriter.getFeatures();
         try {
             boolean booleanValue = this.propertyAccessor.getBooleanValue(t);
-            if (!booleanValue && this.defaultValue == null && (features & JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE) != 0) {
+            if (!booleanValue && this.defaultValue == null && (features & 4096L) != 0) {
                 return false;
             }
             writeBool(jSONWriter, booleanValue);
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

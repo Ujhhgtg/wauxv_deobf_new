@@ -44,7 +44,7 @@ class FieldWriterBool<T> extends FieldWriter<T> {
         bArrCopyOf3[bArr4.length] = 49;
         this.utf8Value1 = bArrCopyOf3;
         byte[] bArrCopyOf4 = Arrays.copyOf(bArr4, bArr4.length + 1);
-        bArrCopyOf4[this.nameWithColonUTF8.length] = JSONB.Constants.BC_INT32_BYTE_MIN;
+        bArrCopyOf4[this.nameWithColonUTF8.length] = 48;
         this.utf8Value0 = bArrCopyOf4;
         char[] cArr = this.nameWithColonUTF16;
         char[] cArrCopyOf = Arrays.copyOf(cArr, cArr.length + 4);
@@ -101,14 +101,14 @@ class FieldWriterBool<T> extends FieldWriter<T> {
                 return false;
             }
             writeFieldName(jSONWriter);
-            if ((features & JSONWriter.MASK_WRITE_NULL_BOOLEAN_AS_FALSE) != 0) {
+            if ((features & 33554432L) != 0) {
                 jSONWriter.writeBool(false);
             } else {
                 jSONWriter.writeBooleanNull();
             }
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw errorOnGet(e);

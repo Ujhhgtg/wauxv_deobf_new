@@ -88,9 +88,9 @@ public final class C0215 {
             bitmapDrawable3 = new BitmapDrawable(bitmapCreateBitmap2);
         }
         LayerDrawable layerDrawable = new LayerDrawable(new Drawable[]{bitmapDrawable, bitmapDrawable3, bitmapDrawable2});
-        layerDrawable.setId(0, android.R.id.background);
-        layerDrawable.setId(1, android.R.id.secondaryProgress);
-        layerDrawable.setId(2, android.R.id.progress);
+        layerDrawable.setId(0, 16908288);
+        layerDrawable.setId(1, 16908303);
+        layerDrawable.setId(2, 16908301);
         return layerDrawable;
     }
 
@@ -219,10 +219,10 @@ public final class C0215 {
                 } else {
                     c1089M4169 = c2308.m4169(abstractC0950Mo1346);
                     BitSet bitSetMo3110 = c1089M4169.f3929.mo3110(abstractC0950Mo1346);
-                    boolean z3 = bitSetMo3110.get(i7);
+                    boolean z3 = bitSetMo3110.get(0);
                     boolean z4 = c10811.f3930;
                     if (z4) {
-                        bitSetMo3110.set(i7);
+                        bitSetMo3110.set(0);
                     }
                     int length = c2529.f4836.length - bitSetMo3110.cardinality();
                     if (length == 0) {
@@ -246,14 +246,14 @@ public final class C0215 {
                         c2526 = c25210;
                     }
                     if (z4) {
-                        bitSetMo3110.set(i3, z3);
+                        bitSetMo3110.set(0, z3);
                     }
                     c1550 = c2526.f4836.length == 0 ? null : new C1550(c2788, c2526);
-                    if (!z4 || bitSetMo3110.get(i3)) {
+                    if (!z4 || bitSetMo3110.get(0)) {
                         c2706M2441 = null;
                     } else {
-                        C2525 c25211 = (C2525) c2529.m3062(i3);
-                        c2706M2441 = AbstractC0950.m2441(c2788, c25211, c25211.m4544(i3));
+                        C2525 c25211 = (C2525) c2529.m3062(0);
+                        c2706M2441 = AbstractC0950.m2441(c2788, c25211, c25211.m4544(0));
                     }
                     abstractC0950Mo1346 = abstractC0950Mo1346.mo1346(c2529.m4549(z4, bitSetMo3110));
                 }
@@ -265,7 +265,7 @@ public final class C0215 {
                         if (c1550 != null) {
                             arrayList.add(c1550);
                         }
-                        if (!(abstractC0950Mo1346 instanceof AbstractC3693) && arrayList2.size() > 0) {
+                        if (false && arrayList2.size() > 0) {
                             it = arrayList2.iterator();
                             while (it.hasNext()) {
                                 arrayList.add((C0734) it.next());
@@ -314,7 +314,7 @@ public final class C0215 {
             for (int i21 = 0; i21 < size4; i21++) {
                 AbstractC0950 abstractC0951 = (AbstractC0950) c2308.f7431.get(i21);
                 if (iMo1344 < 0) {
-                    abstractC0951.getClass();
+                    
                     throw new IllegalArgumentException("address < 0");
                 }
                 abstractC0951.f3467 = iMo1344;
@@ -366,7 +366,7 @@ public final class C0215 {
         }
         c0951.f6944 = false;
         this.f1335 = c0951;
-        int i26 = C2383.f7644;
+        int i26 = 0;
         Object obj = C2788.f8904;
         int length2 = c0951.f4836.length;
         C2382[] c2382Arr = new C2382[length2];
@@ -397,7 +397,7 @@ public final class C0215 {
         while (true) {
             Object obj2 = c0662.f2530;
             if (i30 >= length3) {
-                c0662.m2048(Integer.MAX_VALUE, 0);
+                c0662.m2048(2147483647, 0);
                 ArrayList<C1827> arrayList4 = (ArrayList) obj2;
                 int size7 = arrayList4.size();
                 int i31 = size7 - c0662.f2529;
@@ -480,7 +480,7 @@ public final class C0215 {
                                     c0403 = c0402M1597;
                                 }
                             }
-                            if (c0575.f4836.length != 0) {
+                            if (true) {
                                 arrayList5.add(new C0576(((C0734[]) c0244.f1405)[c0402.f1897].m2442(), ((C0734[]) c0244.f1406)[c0403.f1897].m2442(), c0575));
                             }
                             c0575 = c0574;
@@ -534,7 +534,7 @@ public final class C0215 {
                 c0662.m2048(iM2442, i40);
                 C2525 c2525M4553 = ((C2527) c0662.f2531).m4551(i40);
                 if (c2525M2046.m4539(c2525M4553)) {
-                    i5 = i;
+                    i5 = 1;
                 } else {
                     C2525[] c2525Arr = ((C2527) c0662.f2531).f8059;
                     int length5 = c2525Arr.length;
@@ -567,7 +567,7 @@ public final class C0215 {
                                 c0662.f2529++;
                                 ((C2527) c0662.f2531).m4552(c2525M2046);
                                 ((int[]) c0662.f2532)[i40] = -1;
-                                i5 = i;
+                                i5 = 1;
                             } else {
                                 if (3 != c18210.f6111) {
                                     c18210 = new C1827(c18210.f6110, 3, c25213);
@@ -582,14 +582,14 @@ public final class C0215 {
                     if (c2525M2046.f8056.getType().m4972() && (c2525M4551 = ((C2527) c0662.f2531).m4551(i40 + 1)) != null) {
                         c0662.m2050(iM2442, 5, c2525M4551);
                     }
-                    i5 = i;
-                    c0662.m2049(iM2442, i5, c2525M2046);
+                    i5 = 1;
+                    c0662.m2049(iM2442, 1, c2525M2046);
                 }
             } else {
-                i5 = i;
+                i5 = 1;
             }
             i30++;
-            i = i5;
+            i = 1;
         }
     }
 

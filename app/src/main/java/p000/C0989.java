@@ -253,7 +253,7 @@ public final class C0989 implements InterfaceC1607 {
                                         return -1;
                                     }
                                     if (Log.isLoggable("DfltImageHeaderParser", 3)) {
-                                        Log.d("DfltImageHeaderParser", "Illegal number of bytes for TI tag data tagType=" + ((int) s3));
+                                        Log.d("DfltImageHeaderParser", "Illegal number of bytes for TI tag data tagType=274");
                                     }
                                 } else if (Log.isLoggable("DfltImageHeaderParser", 3)) {
                                     Log.d("DfltImageHeaderParser", "Illegal tagValueOffset=" + i10 + " tagType=" + ((int) s3));

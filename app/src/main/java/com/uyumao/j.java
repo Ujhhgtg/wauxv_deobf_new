@@ -24,7 +24,7 @@ public class j {
             int intExtra = intentRegisterReceiver.getIntExtra("level", 0);
             int intExtra2 = intentRegisterReceiver.getIntExtra("voltage", 0);
             int intExtra3 = intentRegisterReceiver.getIntExtra("temperature", 0);
-            int intExtra4 = intentRegisterReceiver.getIntExtra(cl.i, 0);
+            int intExtra4 = intentRegisterReceiver.getIntExtra("status", 0);
             int i2 = -1;
             if (intExtra4 != 1) {
                 if (intExtra4 == 2) {

@@ -94,19 +94,19 @@ public class e implements de<e, EnumC0043e>, Serializable, Cloneable {
         /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
         public void a(ed edVar, e eVar) {
             eVar.k();
-            edVar.a(e.f);
+            edVar.a(7501688097813630241L.f);
             if (eVar.a != null && eVar.d()) {
-                edVar.a(e.g);
+                edVar.a(7501688097813630241L.g);
                 edVar.a(eVar.a);
                 edVar.c();
             }
             if (eVar.g()) {
-                edVar.a(e.h);
+                edVar.a(7501688097813630241L.h);
                 edVar.a(eVar.b);
                 edVar.c();
             }
             if (eVar.c != null && eVar.j()) {
-                edVar.a(e.i);
+                edVar.a(7501688097813630241L.i);
                 edVar.a(eVar.c);
                 edVar.c();
             }

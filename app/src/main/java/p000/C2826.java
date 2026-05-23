@@ -40,9 +40,9 @@ public final class C2826 implements InterfaceC2571 {
     public final InterfaceC2568 mo1210(Object obj, int i, int i2, C2303 c2303) {
         byte[] byteArray;
         InputStream inputStream = (InputStream) obj;
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(Http2.INITIAL_MAX_FRAME_SIZE);
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(16384);
         try {
-            byte[] bArr = new byte[Http2.INITIAL_MAX_FRAME_SIZE];
+            byte[] bArr = new byte[16384];
             while (true) {
                 int i3 = inputStream.read(bArr);
                 if (i3 == -1) {

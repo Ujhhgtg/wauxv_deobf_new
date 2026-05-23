@@ -2,7 +2,6 @@ package p000;
 
 import java.util.Iterator;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᛸᲁᲇᲈᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -29,10 +28,10 @@ public final class C1016 extends AbstractC2867 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
         Object next;
-        int i = AbstractC1745.f5844;
+        int i = 0;
         String[] strArr = AbstractC1574.f5469;
         List listM1389 = AbstractC0270.m1389(new String[]{"com.tencent.mars.xlog.MMXlog", "com.tencent.mars.xlog.Xlog"});
-        C1565.f5440.getClass();
+        
         ClassLoader classLoaderM3275 = C1565.m3275();
         Iterator it = listM1389.iterator();
         do {
@@ -47,12 +46,12 @@ public final class C1016 extends AbstractC2867 {
         if (clsM2130 == null) {
             throw new NoClassDefFoundError("VariousClass matches failed of " + listM1389 + ".");
         }
-        C1973 c1973M3492 = AbstractC0968.m2483(clsM2130).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(clsM2130).m3492();
         c1973M3492.f6370 = "logMonitor";
         Class cls = Long.TYPE;
-        C0707 c0707M4527 = AbstractC2519.m4527(cls);
+        C0707 c0707M4527 = AbstractC2519.classToKClass(cls);
         Class cls2 = Integer.TYPE;
-        C3689 c3689M4174 = m4174((C1982) AbstractC2784.m4743(new Object[]{c0707M4527, AbstractC2519.m4527(cls2), AbstractC2519.m4527(String.class), AbstractC2519.m4527(String.class), AbstractC2519.m4527(String.class), AbstractC2519.m4527(cls2), AbstractC2519.m4527(cls2), AbstractC2519.m4527(cls), AbstractC2519.m4527(cls), AbstractC2519.m4527(String.class)}, 10, c1973M3492), 1);
+        C3689 c3689M4174 = m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{c0707M4527, AbstractC2519.classToKClass(cls2), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(cls2), AbstractC2519.classToKClass(cls2), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(String.class)}, 10, c1973M3492), 1);
         f3715.m3263(c3689M4174, new C0853(26));
         c3689M4174.m5352();
     }

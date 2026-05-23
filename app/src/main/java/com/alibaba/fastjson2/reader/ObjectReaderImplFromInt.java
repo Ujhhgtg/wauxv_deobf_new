@@ -32,7 +32,7 @@ public final class ObjectReaderImplFromInt<T> extends ObjectReaderPrimitive<T> {
         if (jSONReader.nextIfNull()) {
             return null;
         }
-        if (this.objectClass == AtomicInteger.class && jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY) && jSONReader.readTypeHashCode() != 7576651708426282938L) {
+        if (this.objectClass == AtomicInteger.class && jSONReader.nextIfMatch(-110) && jSONReader.readTypeHashCode() != 7576651708426282938L) {
             throw new JSONException(jSONReader.info(jSONReader.getString()));
         }
         return this.creator.apply(jSONReader.readInt32Value());

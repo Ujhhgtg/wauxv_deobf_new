@@ -67,7 +67,7 @@ public final /* synthetic */ class C2253 implements Consumer {
 
     @Override // java.util.function.Consumer
     public final void accept(Object obj) {
-        switch (this.f7296) {
+        switch (1) {
             case 0:
                 this.f7297.lambda$createFieldReaders$1(this.f7298, this.f7299, this.f7300, this.f7301, this.f7302, this.f7303, this.f7304, this.f7306, this.f7307, this.f7305, (Field) obj);
                 break;

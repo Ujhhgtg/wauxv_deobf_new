@@ -59,10 +59,10 @@ import p000.AbstractC2784;
 /* JADX INFO: loaded from: classes.dex */
 public class d implements c.a {
     private static final String a = "iucc";
-    private static final String b = be.b().b(be.C);
+    private static final String b = be.b().b("ccfg");
     private static JSONObject c = null;
-    private static final String[] d = {com.umeng.ccg.a.f, com.umeng.ccg.a.g, com.umeng.ccg.a.h};
-    private static final String[] e = {com.umeng.ccg.a.f, com.umeng.ccg.a.g, com.umeng.ccg.a.h, com.umeng.ccg.a.i, com.umeng.ccg.a.n};
+    private static final String[] d = {"screen_on", "screen_off", "screen_unlock"};
+    private static final String[] e = {"screen_on", "screen_off", "screen_unlock", "umc_cfg", "ap_mode"};
     private static ArrayList<ad> f = null;
     private static ArrayList<ad> g = null;
     private static ArrayList<ad> h = null;
@@ -125,9 +125,9 @@ public class d implements c.a {
                 String action = intent.getAction();
                 if (!TextUtils.isEmpty(action) && action.equals("android.intent.action.SCREEN_ON") && d.j != null && (d.j instanceof af)) {
                     if (!b(d.i)) {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "don't send INVOKE_APPACT_WHEN_SCREEN_ON msg.");
+                        UMRTLog.i("MobclickRT", "don't send INVOKE_APPACT_WHEN_SCREEN_ON msg.");
                     } else {
-                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.s, d.a(), null, a(d.i) * 1000);
+                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 304, d.a(), null, a(d.i) * 1000);
                     }
                 }
             } catch (Throwable unused) {
@@ -211,31 +211,31 @@ public class d implements c.a {
                     return;
                 }
                 if (action.equals("android.intent.action.SCREEN_ON")) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "recv intent : ACTION_SCREEN_ON");
+                    UMRTLog.i("MobclickRT", "recv intent : ACTION_SCREEN_ON");
                     if (b(d.f)) {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "report screen_on event.");
-                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.p, d.a(), null, a(d.f) * 1000);
+                        UMRTLog.i("MobclickRT", "report screen_on event.");
+                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 301, d.a(), null, a(d.f) * 1000);
                     } else {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "don't report screen_on event.");
+                        UMRTLog.i("MobclickRT", "don't report screen_on event.");
                     }
                 }
                 if (action.equals("android.intent.action.SCREEN_OFF")) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "recv intent : ACTION_SCREEN_OFF");
+                    UMRTLog.i("MobclickRT", "recv intent : ACTION_SCREEN_OFF");
                     if (b(d.g)) {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "report screen_off event.");
-                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.q, d.a(), null, a(d.g) * 1000);
+                        UMRTLog.i("MobclickRT", "report screen_off event.");
+                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 302, d.a(), null, a(d.g) * 1000);
                     } else {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "don't report screen_off event.");
+                        UMRTLog.i("MobclickRT", "don't report screen_off event.");
                     }
                 }
                 if (action.equals("android.intent.action.USER_PRESENT")) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "recv intent : ACTION_USER_PRESENT");
+                    UMRTLog.i("MobclickRT", "recv intent : ACTION_USER_PRESENT");
                     if (!b(d.h)) {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "don't report screen_unlock event.");
+                        UMRTLog.i("MobclickRT", "don't report screen_unlock event.");
                         return;
                     }
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "report screen_unlock event.");
-                    com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.r, d.a(), null, a(d.h) * 1000);
+                    UMRTLog.i("MobclickRT", "report screen_unlock event.");
+                    com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 303, d.a(), null, a(d.h) * 1000);
                 }
             } catch (Throwable unused) {
             }
@@ -249,7 +249,7 @@ public class d implements c.a {
     private boolean g() {
         SharedPreferences sharedPreferencesA = av.a(UMGlobalContext.getAppContext());
         if (sharedPreferencesA != null) {
-            String string = sharedPreferencesA.getString(av.f, "");
+            String string = sharedPreferencesA.getString("sdk_type_ver", "");
             if (TextUtils.isEmpty(string)) {
                 h();
                 return false;
@@ -268,7 +268,7 @@ public class d implements c.a {
         try {
             SharedPreferences sharedPreferencesA = av.a(UMGlobalContext.getAppContext());
             if (sharedPreferencesA != null) {
-                sharedPreferencesA.edit().putString(av.f, new JSONObject(at.a()).toString()).commit();
+                sharedPreferencesA.edit().putString("sdk_type_ver", new JSONObject(at.a()).toString()).commit();
             }
         } catch (Throwable unused) {
         }
@@ -277,7 +277,7 @@ public class d implements c.a {
     private boolean i() {
         try {
             SharedPreferences sharedPreferencesA = av.a(UMGlobalContext.getAppContext());
-            return (sharedPreferencesA == null || TextUtils.isEmpty(sharedPreferencesA.getString(av.g, ""))) ? false : true;
+            return (sharedPreferencesA == null || TextUtils.isEmpty(sharedPreferencesA.getString("should_fetch", ""))) ? false : true;
         } catch (Throwable unused) {
             return false;
         }
@@ -315,7 +315,7 @@ public class d implements c.a {
     }
 
     private void c(Context context) {
-        ImprintHandler.getImprintService(context).registImprintCallback(a, new UMImprintChangeCallback() { // from class: com.umeng.ccg.d.1
+        ImprintHandler.getImprintService(context).registImprintCallback("iucc", new UMImprintChangeCallback() { // from class: com.umeng.ccg.d.1
             @Override // com.umeng.commonsdk.statistics.internal.UMImprintChangeCallback
             public void onImprintValueChanged(String str, String str2) {
                 com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 107, d.a(), str2);
@@ -327,7 +327,7 @@ public class d implements c.a {
         try {
             SharedPreferences sharedPreferencesA = av.a(context);
             if (sharedPreferencesA != null) {
-                return Long.valueOf(sharedPreferencesA.getLong(av.d, 0L));
+                return Long.valueOf(sharedPreferencesA.getLong("iucc_s1", 0L));
             }
         } catch (Throwable unused) {
         }
@@ -338,7 +338,7 @@ public class d implements c.a {
         try {
             SharedPreferences sharedPreferencesA = av.a(context);
             if (sharedPreferencesA != null) {
-                return sharedPreferencesA.getString(av.e, "");
+                return sharedPreferencesA.getString("iucc_s2", "");
             }
         } catch (Throwable unused) {
         }
@@ -346,19 +346,19 @@ public class d implements c.a {
     }
 
     private void c(JSONObject jSONObject) {
-        if (jSONObject == null || !jSONObject.has(com.umeng.ccg.a.a)) {
+        if (jSONObject == null || !jSONObject.has("cc")) {
             return;
         }
         try {
-            JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject(com.umeng.ccg.a.a);
-            ac acVarA = jSONObjectOptJSONObject.has(com.umeng.ccg.a.b) ? a(com.umeng.ccg.a.b, jSONObjectOptJSONObject.optJSONObject(com.umeng.ccg.a.b)) : null;
-            ac acVarA2 = jSONObjectOptJSONObject.has(com.umeng.ccg.a.c) ? a(com.umeng.ccg.a.c, jSONObjectOptJSONObject.optJSONObject(com.umeng.ccg.a.c)) : null;
-            ac acVarA3 = jSONObjectOptJSONObject.has(com.umeng.ccg.a.d) ? a(com.umeng.ccg.a.d, jSONObjectOptJSONObject.optJSONObject(com.umeng.ccg.a.d)) : null;
-            ac acVarA4 = jSONObjectOptJSONObject.has(com.umeng.ccg.a.e) ? a(com.umeng.ccg.a.e, jSONObjectOptJSONObject.optJSONObject(com.umeng.ccg.a.e)) : null;
-            ac acVarA5 = jSONObjectOptJSONObject.has(com.umeng.ccg.a.f) ? a(com.umeng.ccg.a.f, jSONObjectOptJSONObject.optJSONObject(com.umeng.ccg.a.f)) : null;
-            ac acVarA6 = jSONObjectOptJSONObject.has(com.umeng.ccg.a.g) ? a(com.umeng.ccg.a.g, jSONObjectOptJSONObject.optJSONObject(com.umeng.ccg.a.g)) : null;
-            ac acVarA7 = jSONObjectOptJSONObject.has(com.umeng.ccg.a.h) ? a(com.umeng.ccg.a.h, jSONObjectOptJSONObject.optJSONObject(com.umeng.ccg.a.h)) : null;
-            ac acVarA8 = jSONObjectOptJSONObject.has(com.umeng.ccg.a.n) ? a(com.umeng.ccg.a.n, jSONObjectOptJSONObject.optJSONObject(com.umeng.ccg.a.n)) : null;
+            JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject("cc");
+            ac acVarA = jSONObjectOptJSONObject.has("col_wifi") ? a("col_wifi", jSONObjectOptJSONObject.optJSONObject("col_wifi")) : null;
+            ac acVarA2 = jSONObjectOptJSONObject.has("col_bs") ? a("col_bs", jSONObjectOptJSONObject.optJSONObject("col_bs")) : null;
+            ac acVarA3 = jSONObjectOptJSONObject.has("col_lbs") ? a("col_lbs", jSONObjectOptJSONObject.optJSONObject("col_lbs")) : null;
+            ac acVarA4 = jSONObjectOptJSONObject.has("col_apl") ? a("col_apl", jSONObjectOptJSONObject.optJSONObject("col_apl")) : null;
+            ac acVarA5 = jSONObjectOptJSONObject.has("screen_on") ? a("screen_on", jSONObjectOptJSONObject.optJSONObject("screen_on")) : null;
+            ac acVarA6 = jSONObjectOptJSONObject.has("screen_off") ? a("screen_off", jSONObjectOptJSONObject.optJSONObject("screen_off")) : null;
+            ac acVarA7 = jSONObjectOptJSONObject.has("screen_unlock") ? a("screen_unlock", jSONObjectOptJSONObject.optJSONObject("screen_unlock")) : null;
+            ac acVarA8 = jSONObjectOptJSONObject.has("ap_mode") ? a("ap_mode", jSONObjectOptJSONObject.optJSONObject("ap_mode")) : null;
             ArrayList arrayList = new ArrayList();
             if (acVarA != null) {
                 arrayList.add(acVarA);
@@ -427,11 +427,11 @@ public class d implements c.a {
     }
 
     private boolean a(JSONObject jSONObject) {
-        if (jSONObject == null || !jSONObject.has(cl.g)) {
+        if (jSONObject == null || !jSONObject.has("code")) {
             return false;
         }
         try {
-            return 200 == jSONObject.optInt(cl.g) && jSONObject.has(com.umeng.ccg.a.a) && jSONObject.has("ts");
+            return 200 == jSONObject.optInt("code") && jSONObject.has("cc") && jSONObject.has("ts");
         } catch (Throwable unused) {
             return false;
         }
@@ -448,17 +448,17 @@ public class d implements c.a {
                     fileOutputStream.flush();
                     at.a(fileOutputStream);
                     a(context, str, jB);
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "saveConfigFile success.");
-                    JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject(com.umeng.ccg.a.a);
+                    UMRTLog.i("MobclickRT", "saveConfigFile success.");
+                    JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject("cc");
                     if (jSONObjectOptJSONObject != null) {
                         File file = new File(context.getFilesDir().getAbsolutePath() + File.separator + bz.n);
-                        if (jSONObjectOptJSONObject.has(com.umeng.ccg.a.l)) {
+                        if (jSONObjectOptJSONObject.has("col_pi")) {
                             if (!file.exists()) {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "PI: cfg is on, flag not exist, create it.");
+                                UMRTLog.i("MobclickRT", "PI: cfg is on, flag not exist, create it.");
                                 file.createNewFile();
                             }
                         } else if (file.exists()) {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "PI: cfg is off, flag exist, delete it.");
+                            UMRTLog.i("MobclickRT", "PI: cfg is off, flag exist, delete it.");
                             file.delete();
                         }
                     }
@@ -480,25 +480,25 @@ public class d implements c.a {
     }
 
     private void a(String str, ad adVar) {
-        if (com.umeng.ccg.a.f.equalsIgnoreCase(str)) {
+        if ("screen_on".equalsIgnoreCase(str)) {
             if (f == null) {
                 f = new ArrayList<>();
             }
             f.add(adVar);
         }
-        if (com.umeng.ccg.a.g.equalsIgnoreCase(str)) {
+        if ("screen_off".equalsIgnoreCase(str)) {
             if (g == null) {
                 g = new ArrayList<>();
             }
             g.add(adVar);
         }
-        if (com.umeng.ccg.a.h.equalsIgnoreCase(str)) {
+        if ("screen_unlock".equalsIgnoreCase(str)) {
             if (h == null) {
                 h = new ArrayList<>();
             }
             h.add(adVar);
         }
-        if (com.umeng.ccg.a.i.equalsIgnoreCase(str)) {
+        if ("umc_cfg".equalsIgnoreCase(str)) {
             if (i == null) {
                 i = new ArrayList<>();
             }
@@ -511,32 +511,32 @@ public class d implements c.a {
         JSONArray jSONArrayOptJSONArray;
         ac acVar2;
         JSONArray jSONArrayOptJSONArray2;
-        String str2 = com.umeng.ccg.a.x;
+        String str2 = "sdk";
         if (jSONObject == null) {
             return null;
         }
         try {
-            if (!jSONObject.has(com.umeng.ccg.a.o) || (jSONArrayOptJSONArray = jSONObject.optJSONArray(com.umeng.ccg.a.o)) == null || jSONArrayOptJSONArray.length() <= 0) {
+            if (!jSONObject.has("cfg") || (jSONArrayOptJSONArray = jSONObject.optJSONArray("cfg")) == null || jSONArrayOptJSONArray.length() <= 0) {
                 return null;
             }
             JSONObject jSONObject2 = (JSONObject) jSONArrayOptJSONArray.get(0);
-            boolean zHas = jSONObject2.has(com.umeng.ccg.a.p);
-            boolean zHas2 = jSONObject2.has(com.umeng.ccg.a.s);
-            boolean zHas3 = jSONObject2.has(com.umeng.ccg.a.t);
+            boolean zHas = jSONObject2.has("col_delay_times");
+            boolean zHas2 = jSONObject2.has("col_interval");
+            boolean zHas3 = jSONObject2.has("col_delay_ts");
             if (!zHas || !zHas2 || !zHas3) {
                 return null;
             }
-            int iOptInt = jSONObject2.optInt(com.umeng.ccg.a.p);
-            long jOptLong = jSONObject2.optLong(com.umeng.ccg.a.s);
-            long jOptLong2 = jSONObject2.optLong(com.umeng.ccg.a.t);
-            String strOptString = jSONObject2.optString(com.umeng.ccg.a.u);
+            int iOptInt = jSONObject2.optInt("col_delay_times");
+            long jOptLong = jSONObject2.optLong("col_interval");
+            long jOptLong2 = jSONObject2.optLong("col_delay_ts");
+            String strOptString = jSONObject2.optString("hit_sdk");
             ArrayList arrayList = new ArrayList();
             acVar = null;
-            if (!jSONObject2.has(com.umeng.ccg.a.q)) {
-                str2 = com.umeng.ccg.a.x;
+            if (!jSONObject2.has("week_on")) {
+                str2 = "sdk";
             } else {
                 try {
-                    JSONArray jSONArrayOptJSONArray3 = jSONObject2.optJSONArray(com.umeng.ccg.a.q);
+                    JSONArray jSONArrayOptJSONArray3 = jSONObject2.optJSONArray("week_on");
                     HashSet hashSet = new HashSet();
                     if (jSONArrayOptJSONArray3 != null) {
                         int i2 = 0;
@@ -551,7 +551,7 @@ public class d implements c.a {
                             a(str, anVar);
                         } else {
                             arrayList.add(anVar);
-                            if (com.umeng.ccg.a.i.equalsIgnoreCase(str)) {
+                            if ("umc_cfg".equalsIgnoreCase(str)) {
                                 a(str, anVar);
                             }
                         }
@@ -559,8 +559,8 @@ public class d implements c.a {
                 } catch (Throwable unused) {
                 }
             }
-            if (jSONObject2.has(com.umeng.ccg.a.r)) {
-                String strOptString2 = jSONObject2.optString(com.umeng.ccg.a.r);
+            if (jSONObject2.has("hour_on")) {
+                String strOptString2 = jSONObject2.optString("hour_on");
                 if (!TextUtils.isEmpty(strOptString2)) {
                     al alVar = new al(strOptString2);
                     HashSet hashSet2 = new HashSet();
@@ -576,7 +576,7 @@ public class d implements c.a {
                         } else {
                             arrayList.add(ahVar);
                         }
-                        if (com.umeng.ccg.a.i.equalsIgnoreCase(str)) {
+                        if ("umc_cfg".equalsIgnoreCase(str)) {
                             a(str, ahVar);
                         }
                     }
@@ -590,7 +590,7 @@ public class d implements c.a {
             } else {
                 arrayList.add(aiVar);
             }
-            if (com.umeng.ccg.a.i.equalsIgnoreCase(str)) {
+            if ("umc_cfg".equalsIgnoreCase(str)) {
                 a(str, aiVar);
             }
             ag agVar = new ag(jOptLong2);
@@ -600,13 +600,13 @@ public class d implements c.a {
             } else {
                 arrayList.add(agVar);
             }
-            if (com.umeng.ccg.a.i.equalsIgnoreCase(str)) {
+            if ("umc_cfg".equalsIgnoreCase(str)) {
                 a(str, agVar);
             }
-            if (com.umeng.ccg.a.e.equals(str)) {
-                acVar2 = new ae(str, arrayList);
-            } else if (com.umeng.ccg.a.i.equals(str)) {
-                acVar2 = new af(str, arrayList);
+            if ("col_apl".equals(str)) {
+                acVar2 = new ae("col_apl", arrayList);
+            } else if ("umc_cfg".equals(str)) {
+                acVar2 = new af("umc_cfg", arrayList);
             } else {
                 acVar2 = new ac(str, arrayList);
             }
@@ -615,8 +615,8 @@ public class d implements c.a {
                 acVar3.b(str, jSONObject2);
                 acVar3.a(strOptString);
                 String str3 = "";
-                String str4 = str2;
-                if (jSONObject.has(str4) && (jSONArrayOptJSONArray2 = jSONObject.optJSONArray(str4)) != null) {
+                String str4 = "sdk";
+                if (jSONObject.has("sdk") && (jSONArrayOptJSONArray2 = jSONObject.optJSONArray("sdk")) != null) {
                     Map<String, c> map = this.m;
                     if (map != null && !map.containsKey(str)) {
                         this.m.put(str, new c(new JSONArray(jSONArrayOptJSONArray2.toString()), strOptString));
@@ -654,9 +654,9 @@ public class d implements c.a {
             String str2 = strArrSplit[1];
             SharedPreferences.Editor editorEdit = sharedPreferencesA.edit();
             editorEdit.putLong("config_ts", j2);
-            editorEdit.putLong(av.d, j3);
-            editorEdit.putString(av.e, str2).commit();
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "updateTsS1S2 : ts = " + j2 + "; s1 = " + j3 + "; s2 = " + str2);
+            editorEdit.putLong("iucc_s1", j3);
+            editorEdit.putString("iucc_s2", str2).commit();
+            UMRTLog.i("MobclickRT", "updateTsS1S2 : ts = " + j2 + "; s1 = " + j3 + "; s2 = " + str2);
         } catch (Throwable unused) {
         }
     }
@@ -675,7 +675,7 @@ public class d implements c.a {
                     long j3 = Long.parseLong(strArrSplit2[0]);
                     String str3 = strArrSplit2[1];
                     if (j3 == j2 && str3.equalsIgnoreCase(str2)) {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "重复的iucc S1 and S2, 忽略本次更新，不发起fetch。");
+                        UMRTLog.i("MobclickRT", "重复的iucc S1 and S2, 忽略本次更新，不发起fetch。");
                         return;
                     }
                 }
@@ -683,7 +683,7 @@ public class d implements c.a {
             SharedPreferences sharedPreferencesA = av.a(UMGlobalContext.getAppContext());
             if (sharedPreferencesA != null) {
                 if (sharedPreferencesA.getLong("config_ts", 0L) != j2) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "local config ts != iuccS1, send FETCH_NEW_CONFIG msg.");
+                    UMRTLog.i("MobclickRT", "local config ts != iuccS1, send FETCH_NEW_CONFIG msg.");
                     this.k = String.valueOf(j2) + "@" + str2;
                     com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 101, a(), str);
                     return;
@@ -692,7 +692,7 @@ public class d implements c.a {
                 if (e(UMGlobalContext.getAppContext()).equalsIgnoreCase(str2)) {
                     return;
                 }
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "local S2 != iuccS2, send FETCH_NEW_CONFIG msg.");
+                UMRTLog.i("MobclickRT", "local S2 != iuccS2, send FETCH_NEW_CONFIG msg.");
                 this.k = String.valueOf(j2) + "@" + str2;
                 com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 101, a(), str);
             }
@@ -706,9 +706,9 @@ public class d implements c.a {
             if (sharedPreferencesA != null) {
                 SharedPreferences.Editor editorEdit = sharedPreferencesA.edit();
                 if (z) {
-                    editorEdit.putString(av.g, SdkVersion.MINI_VERSION).commit();
+                    editorEdit.putString("should_fetch", "1").commit();
                 } else {
-                    editorEdit.putString(av.g, "").commit();
+                    editorEdit.putString("should_fetch", "").commit();
                 }
             }
         } catch (Throwable unused) {
@@ -723,9 +723,9 @@ public class d implements c.a {
             jSONObject.put("id", "$$_umc_ev1");
             jSONObject.put("ts", jCurrentTimeMillis);
             jSONObject.put("tt", str);
-            jSONObject.put(com.umeng.ccg.a.G, i2);
+            jSONObject.put("mock", i2);
             jSONObject.put("result", i3);
-            if (!this.m.containsKey(com.umeng.ccg.a.i) || (cVar = this.m.get(com.umeng.ccg.a.i)) == null) {
+            if (!this.m.containsKey("umc_cfg") || (cVar = this.m.get("umc_cfg")) == null) {
                 return null;
             }
             JSONObject jSONObjectA = ap.a(UMGlobalContext.getAppContext(), cVar.a(), cVar.b());
@@ -793,18 +793,18 @@ public class d implements c.a {
                     long jCurrentTimeMillis = System.currentTimeMillis();
                     SharedPreferences sharedPreferencesA = av.a(appContext);
                     if (sharedPreferencesA != null) {
-                        int i4 = sharedPreferencesA.getInt(av.i, 0);
-                        long j2 = sharedPreferencesA.getLong(av.j, 0L);
+                        int i4 = sharedPreferencesA.getInt("last_ap_mode", 0);
+                        long j2 = sharedPreferencesA.getLong("last_ap_time", 0L);
                         if (i4 != iIsAirplaneModeOn) {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> APMode value changed, current value: " + j2 + "; new value: " + iIsAirplaneModeOn);
+                            UMRTLog.i("MobclickRT", "--->>> APMode value changed, current value: " + j2 + "; new value: " + iIsAirplaneModeOn);
                             SharedPreferences.Editor editorEdit = sharedPreferencesA.edit();
                             if (editorEdit != null) {
-                                editorEdit.putInt(av.i, iIsAirplaneModeOn);
-                                editorEdit.putLong(av.j, jCurrentTimeMillis);
+                                editorEdit.putInt("last_ap_mode", iIsAirplaneModeOn);
+                                editorEdit.putLong("last_ap_time", jCurrentTimeMillis);
                                 editorEdit.commit();
                             }
                             if (i4 == 1 && iIsAirplaneModeOn == 0) {
-                                com.umeng.ccg.c.a(appContext, com.umeng.ccg.c.z, a(), new a(j2, jCurrentTimeMillis), 0L);
+                                com.umeng.ccg.c.a(appContext, 402, a(), new a(j2, jCurrentTimeMillis), 0L);
                                 return;
                             }
                             return;
@@ -821,23 +821,23 @@ public class d implements c.a {
                     case 101:
                         if (obj != null && (obj instanceof String)) {
                             String str = (String) obj;
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[workEvent]: recv FETCH_NEW_CONFIG msg. source iucc is: ".concat(str));
+                            UMRTLog.i("MobclickRT", "[workEvent]: recv FETCH_NEW_CONFIG msg. source iucc is: ".concat(str));
                             JSONObject jSONObjectA3 = ap.a(UMGlobalContext.getAppContext(), str);
                             if (jSONObjectA3 != null) {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "[imprint] send request. body: " + jSONObjectA3.toString());
-                                aw.a(new as(as.a, jSONObjectA3, str), 0L, TimeUnit.SECONDS);
+                                UMRTLog.i("MobclickRT", "[imprint] send request. body: " + jSONObjectA3.toString());
+                                aw.a(new as("https://ucc.umeng.com/v2/inn/fetch", jSONObjectA3, str), 0L, TimeUnit.SECONDS);
                             }
                             if (i()) {
                                 c(UMGlobalContext.getAppContext());
-                                String strImprintProperty = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), a, "");
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "manual check iucc value: " + strImprintProperty);
+                                String strImprintProperty = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), "iucc", "");
+                                UMRTLog.i("MobclickRT", "manual check iucc value: " + strImprintProperty);
                                 a(strImprintProperty);
                             }
                             break;
                         }
                         break;
                     case 102:
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[workEvent]: recv FETCH_RESPONSE msg.");
+                        UMRTLog.i("MobclickRT", "[workEvent]: recv FETCH_RESPONSE msg.");
                         this.k = "";
                         if (obj != null && (obj instanceof JSONObject)) {
                             JSONObject jSONObject4 = (JSONObject) obj;
@@ -851,7 +851,7 @@ public class d implements c.a {
                         }
                         break;
                     case 103:
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[workEvent]: recv FETCH_SUCCESS msg.");
+                        UMRTLog.i("MobclickRT", "[workEvent]: recv FETCH_SUCCESS msg.");
                         Context appContext2 = UMGlobalContext.getAppContext();
                         if (obj != null && (obj instanceof JSONObject)) {
                             JSONObject jSONObject5 = (JSONObject) obj;
@@ -859,7 +859,7 @@ public class d implements c.a {
                             String strOptString = jSONObject5.optString("sourceIucc");
                             if (jSONObjectOptJSONObject != null) {
                                 if (i()) {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> 成功拉取云配参数后，检测到should fetch标志，清除此标志。更新SDK类型集缓存值");
+                                    UMRTLog.i("MobclickRT", "--->>> 成功拉取云配参数后，检测到should fetch标志，清除此标志。更新SDK类型集缓存值");
                                     h();
                                     a(false);
                                 }
@@ -870,16 +870,16 @@ public class d implements c.a {
                         }
                         break;
                     case 104:
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[workEvent]: recv FETCH_FAILED msg.");
+                        UMRTLog.i("MobclickRT", "[workEvent]: recv FETCH_FAILED msg.");
                         break;
                     case 105:
                         for (String str2 : CcgAgent.getCollectItemList()) {
                             ArrayList<String> forbidSdkArray = CcgAgent.getForbidSdkArray(str2);
                             StringBuilder sbM4679 = AbstractC2668.m4679("[forbid_sdk] 采集项: ", str2, "; 值: ");
                             sbM4679.append(forbidSdkArray.toString());
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, sbM4679.toString());
+                            UMRTLog.i("MobclickRT", sbM4679.toString());
                         }
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[workEvent]: recv LOAD_CONFIG msg.");
+                        UMRTLog.i("MobclickRT", "[workEvent]: recv LOAD_CONFIG msg.");
                         try {
                             try {
                                 jSONObjectB = b(UMGlobalContext.getAppContext());
@@ -896,7 +896,7 @@ public class d implements c.a {
                                         jSONObject = new JSONObject();
                                         jSONObject.put("result", (Object) 0);
                                         jSONObject = jSONObject;
-                                        if (jSONObjectB != null) {
+                                        if (true) {
                                         }
                                         com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 106, a(), jSONObject);
                                         return;
@@ -927,8 +927,8 @@ public class d implements c.a {
                                         if (jSONObjectOptJSONObject2 != null) {
                                             CcgAgent.notifyConfigReady(jSONObjectOptJSONObject2);
                                             try {
-                                                JSONObject jSONObjectOptJSONObject3 = c.optJSONObject(com.umeng.ccg.a.a);
-                                                if (jSONObjectOptJSONObject3 != null && jSONObjectOptJSONObject3.has(com.umeng.ccg.a.m)) {
+                                                JSONObject jSONObjectOptJSONObject3 = c.optJSONObject("cc");
+                                                if (jSONObjectOptJSONObject3 != null && jSONObjectOptJSONObject3.has("col_po")) {
                                                     o.a(UMGlobalContext.getAppContext()).b();
                                                 }
                                                 break;
@@ -942,21 +942,21 @@ public class d implements c.a {
                                     }
                                 }
                                 if (g()) {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> 检测到集成的SDK类型集合发生变化，发起云配参数拉取请求(设置本地should fetch标志).");
-                                    String strImprintProperty2 = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), a, "");
+                                    UMRTLog.i("MobclickRT", "--->>> 检测到集成的SDK类型集合发生变化，发起云配参数拉取请求(设置本地should fetch标志).");
+                                    String strImprintProperty2 = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), "iucc", "");
                                     a(true);
                                     com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 101, a(), strImprintProperty2);
                                 } else {
                                     c(UMGlobalContext.getAppContext());
-                                    String strImprintProperty3 = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), a, "");
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "manual check iucc value: " + strImprintProperty3);
+                                    String strImprintProperty3 = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), "iucc", "");
+                                    UMRTLog.i("MobclickRT", "manual check iucc value: " + strImprintProperty3);
                                     a(strImprintProperty3);
                                 }
                             } catch (Throwable unused5) {
                             }
                             if (new File(UMGlobalContext.getAppContext().getFilesDir().getAbsolutePath() + File.separator + bz.n).exists()) {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "PI: flag file exist, start process.");
-                                com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.u, a(), null, 0L);
+                                UMRTLog.i("MobclickRT", "PI: flag file exist, start process.");
+                                com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 310, a(), null, 0L);
                             }
                             break;
                         }
@@ -966,11 +966,11 @@ public class d implements c.a {
                             try {
                                 if (obj instanceof String) {
                                     String str3 = (String) obj;
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[IMPRINT_IUCC_CHANGED] iucc : ".concat(str3));
+                                    UMRTLog.i("MobclickRT", "[IMPRINT_IUCC_CHANGED] iucc : ".concat(str3));
                                     a(str3);
                                 }
                             } catch (Throwable th) {
-                                UMRTLog.e(UMRTLog.RTLOG_TAG, "[imprint] process error " + th.getMessage());
+                                UMRTLog.e("MobclickRT", "[imprint] process error " + th.getMessage());
                                 return;
                             }
                         }
@@ -978,35 +978,35 @@ public class d implements c.a {
                     default:
                         switch (i2) {
                             case 201:
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "recv PARSE_CONFIG msg.");
+                                UMRTLog.i("MobclickRT", "recv PARSE_CONFIG msg.");
                                 if (obj != null && (obj instanceof JSONObject)) {
                                     c((JSONObject) obj);
                                     break;
                                 }
                                 break;
                             case 202:
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "recv COLLECTION_JUDGMENT msg.");
+                                UMRTLog.i("MobclickRT", "recv COLLECTION_JUDGMENT msg.");
                                 if (obj != null && (obj instanceof ArrayList) && (size = (arrayList = (ArrayList) obj).size()) > 0) {
                                     int i5 = 0;
                                     while (i5 < size) {
                                         ac acVar = (ac) arrayList.get(i5);
                                         String strA = acVar.a();
-                                        if (com.umeng.ccg.a.i.equalsIgnoreCase(strA)) {
+                                        if ("umc_cfg".equalsIgnoreCase(strA)) {
                                             jSONObject2 = new JSONObject();
-                                            jSONObject2.put(com.umeng.ccg.a.j, 202);
+                                            jSONObject2.put("scene", 202);
                                         } else {
                                             jSONObject2 = jSONObject3;
                                         }
                                         JSONObject jSONObjectA4 = acVar.a(strA, jSONObject2);
                                         if (jSONObjectA4 != null) {
                                             long jOptLong = !Arrays.asList(d).contains(acVar.a()) ? jSONObjectA4.optLong("delay") * 1000 : 0L;
-                                            if (com.umeng.ccg.a.i.equalsIgnoreCase(acVar.a()) && jSONObjectA4.optInt(com.umeng.ccg.a.C) == 0) {
+                                            if ("umc_cfg".equalsIgnoreCase(acVar.a()) && jSONObjectA4.optInt("act_when") == 0) {
                                                 jOptLong = jSONObjectA4.optLong("delay") * 1000;
                                             }
-                                            int iOptInt = jSONObjectA4.optInt(com.umeng.ccg.a.B);
+                                            int iOptInt = jSONObjectA4.optInt("sel_policy");
                                             jSONObjectA4.remove("delay");
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "send START_COLLECT msg, delayTs = " + jOptLong);
-                                            com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), (com.umeng.ccg.a.i.equalsIgnoreCase(acVar.a()) && iOptInt == 2) ? 204 : 203, a(), jSONObjectA4, jOptLong);
+                                            UMRTLog.i("MobclickRT", "send START_COLLECT msg, delayTs = " + jOptLong);
+                                            com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), ("umc_cfg".equalsIgnoreCase(acVar.a()) && iOptInt == 2) ? 204 : 203, a(), jSONObjectA4, jOptLong);
                                         }
                                         i5++;
                                         jSONObject3 = jSONObject2;
@@ -1018,31 +1018,31 @@ public class d implements c.a {
                                 if (obj != null && (obj instanceof JSONObject)) {
                                     JSONObject jSONObject7 = (JSONObject) obj;
                                     String strOptString2 = jSONObject7.optString("actionName");
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "recv START_COLLECT msg. name is : " + strOptString2);
+                                    UMRTLog.i("MobclickRT", "recv START_COLLECT msg. name is : " + strOptString2);
                                     if (!com.umeng.ccg.b.a(strOptString2)) {
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "Local switch of [" + strOptString2 + "] is off, ignore this command.");
+                                        UMRTLog.i("MobclickRT", "Local switch of [" + strOptString2 + "] is off, ignore this command.");
                                     } else {
                                         String string = jSONObject7.toString();
                                         if (Arrays.asList(e).contains(strOptString2)) {
-                                            if (com.umeng.ccg.a.f.equalsIgnoreCase(strOptString2)) {
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "register Intent.ACTION_SCREEN_ON");
+                                            if ("screen_on".equalsIgnoreCase(strOptString2)) {
+                                                UMRTLog.i("MobclickRT", "register Intent.ACTION_SCREEN_ON");
                                                 a(UMGlobalContext.getAppContext(), "android.intent.action.SCREEN_ON", n);
                                             }
-                                            if (com.umeng.ccg.a.g.equalsIgnoreCase(strOptString2)) {
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "register Intent.ACTION_SCREEN_OFF");
+                                            if ("screen_off".equalsIgnoreCase(strOptString2)) {
+                                                UMRTLog.i("MobclickRT", "register Intent.ACTION_SCREEN_OFF");
                                                 a(UMGlobalContext.getAppContext(), "android.intent.action.SCREEN_OFF", n);
                                             }
-                                            if (com.umeng.ccg.a.h.equalsIgnoreCase(strOptString2)) {
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "register Intent.ACTION_USER_PRESENT");
+                                            if ("screen_unlock".equalsIgnoreCase(strOptString2)) {
+                                                UMRTLog.i("MobclickRT", "register Intent.ACTION_USER_PRESENT");
                                                 a(UMGlobalContext.getAppContext(), "android.intent.action.USER_PRESENT", n);
                                             }
-                                            if (com.umeng.ccg.a.i.equalsIgnoreCase(strOptString2)) {
+                                            if ("umc_cfg".equalsIgnoreCase(strOptString2)) {
                                                 int actUpFlag = CcgAgent.getActUpFlag();
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "act up flag: " + actUpFlag);
+                                                UMRTLog.i("MobclickRT", "act up flag: " + actUpFlag);
                                                 if (actUpFlag > 0) {
                                                     break;
-                                                } else if (jSONObject7.has(com.umeng.ccg.a.C)) {
-                                                    int iOptInt2 = jSONObject7.optInt(com.umeng.ccg.a.C);
+                                                } else if (jSONObject7.has("act_when")) {
+                                                    int iOptInt2 = jSONObject7.optInt("act_when");
                                                     if (iOptInt2 == 0) {
                                                         a(UMGlobalContext.getAppContext(), strOptString2, jSONObject7);
                                                     } else if (iOptInt2 == 1) {
@@ -1050,22 +1050,22 @@ public class d implements c.a {
                                                     }
                                                 }
                                             }
-                                            if (com.umeng.ccg.a.n.equalsIgnoreCase(strOptString2)) {
+                                            if ("ap_mode".equalsIgnoreCase(strOptString2)) {
                                                 b(strOptString2);
                                                 this.l = true;
-                                                com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.y, a(), null, 0L);
+                                                com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 401, a(), null, 0L);
                                             }
                                         } else {
                                             b(strOptString2);
                                             if (CcgAgent.hasRegistedActionInfo()) {
                                                 boolean z = CcgAgent.getActionInfo("anti") != null;
-                                                String strOptString3 = jSONObject7.optString(com.umeng.ccg.a.v);
+                                                String strOptString3 = jSONObject7.optString("local_hit_sdk");
                                                 if (TextUtils.isEmpty(strOptString3)) {
-                                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "忽略 本次采集项[" + strOptString2 + "]采集请求.");
+                                                    UMRTLog.i("MobclickRT", "忽略 本次采集项[" + strOptString2 + "]采集请求.");
                                                 } else {
                                                     ActionInfo actionInfo = CcgAgent.getActionInfo(strOptString3);
                                                     if (actionInfo != null) {
-                                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "调用[" + strOptString3 + "] onCommand接口方法, 参数: " + jSONObject7.toString());
+                                                        UMRTLog.i("MobclickRT", "调用[" + strOptString3 + "] onCommand接口方法, 参数: " + jSONObject7.toString());
                                                         actionInfo.onCommand(UMGlobalContext.getAppContext(), strOptString2, jSONObject7);
                                                     }
                                                 }
@@ -1084,21 +1084,21 @@ public class d implements c.a {
                                 if (obj != null && (obj instanceof JSONObject)) {
                                     JSONObject jSONObject8 = (JSONObject) obj;
                                     String strOptString4 = jSONObject8.optString("actionName");
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "recv ACTUP_EVENT msg. name is : " + strOptString4);
+                                    UMRTLog.i("MobclickRT", "recv ACTUP_EVENT msg. name is : " + strOptString4);
                                     if (!com.umeng.ccg.b.a(strOptString4)) {
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "Local switch of [" + strOptString4 + "] is off, ignore this command.");
+                                        UMRTLog.i("MobclickRT", "Local switch of [" + strOptString4 + "] is off, ignore this command.");
                                         break;
-                                    } else if (com.umeng.ccg.a.i.equalsIgnoreCase(strOptString4)) {
+                                    } else if ("umc_cfg".equalsIgnoreCase(strOptString4)) {
                                         int actUpFlag2 = CcgAgent.getActUpFlag();
-                                        int iOptInt3 = jSONObject8.has(com.umeng.ccg.a.H) ? jSONObject8.optInt(com.umeng.ccg.a.H) : 0;
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "act up flag: " + actUpFlag2);
-                                        if ((actUpFlag2 <= 0 || iOptInt3 != 0) && jSONObject8.has(com.umeng.ccg.a.C)) {
-                                            int iOptInt4 = jSONObject8.optInt(com.umeng.ccg.a.C);
-                                            int iOptInt5 = jSONObject8.optInt(com.umeng.ccg.a.B);
+                                        int iOptInt3 = jSONObject8.has("index") ? jSONObject8.optInt("index") : 0;
+                                        UMRTLog.i("MobclickRT", "act up flag: " + actUpFlag2);
+                                        if ((actUpFlag2 <= 0 || iOptInt3 != 0) && jSONObject8.has("act_when")) {
+                                            int iOptInt4 = jSONObject8.optInt("act_when");
+                                            int iOptInt5 = jSONObject8.optInt("sel_policy");
                                             if (iOptInt4 == 0 && iOptInt5 == 2) {
                                                 a(UMGlobalContext.getAppContext(), strOptString4, jSONObject8);
                                                 ac acVar2 = j;
-                                                if (acVar2 != null && (acVar2 instanceof af) && (jSONObjectD = ((af) acVar2).d(com.umeng.ccg.a.i)) != null) {
+                                                if (acVar2 != null && (acVar2 instanceof af) && (jSONObjectD = ((af) acVar2).d("umc_cfg")) != null) {
                                                     com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 204, a(), jSONObjectD, jSONObjectD.has("delay") ? jSONObjectD.optInt("delay") * 1000 : 0L);
                                                     break;
                                                 }
@@ -1109,49 +1109,49 @@ public class d implements c.a {
                                 break;
                             default:
                                 switch (i2) {
-                                    case com.umeng.ccg.c.p /* 301 */:
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "recv REPORT_SCREEN_ON msg.");
-                                        b(com.umeng.ccg.a.f);
-                                        if (this.m.containsKey(com.umeng.ccg.a.f) && (cVar = this.m.get(com.umeng.ccg.a.f)) != null) {
+                                    case 301 /* 301 */:
+                                        UMRTLog.i("MobclickRT", "recv REPORT_SCREEN_ON msg.");
+                                        b("screen_on");
+                                        if (this.m.containsKey("screen_on") && (cVar = this.m.get("screen_on")) != null) {
                                             JSONObject jSONObjectA5 = ap.a(UMGlobalContext.getAppContext(), 1, cVar.a(), cVar.b(), this.l);
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "screen_on event param: " + jSONObjectA5.toString());
-                                            aw.a(new ar(ar.a, jSONObjectA5), 0L, TimeUnit.SECONDS);
+                                            UMRTLog.i("MobclickRT", "screen_on event param: " + jSONObjectA5.toString());
+                                            aw.a(new ar("https://aspect-upush.umeng.com/occa/v1/event/report", jSONObjectA5), 0L, TimeUnit.SECONDS);
                                             break;
                                         }
                                         break;
-                                    case com.umeng.ccg.c.q /* 302 */:
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "recv REPORT_SCREEN_OFF msg.");
-                                        b(com.umeng.ccg.a.g);
-                                        if (this.m.containsKey(com.umeng.ccg.a.g) && (cVar2 = this.m.get(com.umeng.ccg.a.g)) != null) {
+                                    case 302 /* 302 */:
+                                        UMRTLog.i("MobclickRT", "recv REPORT_SCREEN_OFF msg.");
+                                        b("screen_off");
+                                        if (this.m.containsKey("screen_off") && (cVar2 = this.m.get("screen_off")) != null) {
                                             JSONObject jSONObjectA6 = ap.a(UMGlobalContext.getAppContext(), 3, cVar2.a(), cVar2.b(), this.l);
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "screen_off event param: " + jSONObjectA6.toString());
-                                            aw.a(new ar(ar.a, jSONObjectA6), 0L, TimeUnit.SECONDS);
+                                            UMRTLog.i("MobclickRT", "screen_off event param: " + jSONObjectA6.toString());
+                                            aw.a(new ar("https://aspect-upush.umeng.com/occa/v1/event/report", jSONObjectA6), 0L, TimeUnit.SECONDS);
                                             break;
                                         }
                                         break;
-                                    case com.umeng.ccg.c.r /* 303 */:
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "recv REPORT_SCREEN_UNLOCK msg.");
-                                        b(com.umeng.ccg.a.h);
-                                        if (this.m.containsKey(com.umeng.ccg.a.h) && (cVar3 = this.m.get(com.umeng.ccg.a.h)) != null) {
+                                    case 303 /* 303 */:
+                                        UMRTLog.i("MobclickRT", "recv REPORT_SCREEN_UNLOCK msg.");
+                                        b("screen_unlock");
+                                        if (this.m.containsKey("screen_unlock") && (cVar3 = this.m.get("screen_unlock")) != null) {
                                             JSONObject jSONObjectA7 = ap.a(UMGlobalContext.getAppContext(), 2, cVar3.a(), cVar3.b(), this.l);
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "screen_unlock event param: " + jSONObjectA7.toString());
-                                            aw.a(new ar(ar.a, jSONObjectA7), 0L, TimeUnit.SECONDS);
+                                            UMRTLog.i("MobclickRT", "screen_unlock event param: " + jSONObjectA7.toString());
+                                            aw.a(new ar("https://aspect-upush.umeng.com/occa/v1/event/report", jSONObjectA7), 0L, TimeUnit.SECONDS);
                                             break;
                                         }
                                         break;
-                                    case com.umeng.ccg.c.s /* 304 */:
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "recv INVOKE_APPACT_WHEN_SC_ON msg.");
-                                        if (!com.umeng.ccg.b.a(com.umeng.ccg.a.i)) {
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "Local switch of [umc_cfg] is off, ignore this command.");
+                                    case 304 /* 304 */:
+                                        UMRTLog.i("MobclickRT", "recv INVOKE_APPACT_WHEN_SC_ON msg.");
+                                        if (!com.umeng.ccg.b.a("umc_cfg")) {
+                                            UMRTLog.i("MobclickRT", "Local switch of [umc_cfg] is off, ignore this command.");
                                         } else {
                                             JSONObject jSONObject9 = new JSONObject();
-                                            jSONObject9.put(com.umeng.ccg.a.j, com.umeng.ccg.c.s);
+                                            jSONObject9.put("scene", 304);
                                             ac acVar3 = j;
                                             JSONObject jSONObjectA8 = acVar3.a(acVar3.a(), jSONObject9);
                                             if (jSONObjectA8 != null) {
-                                                a(UMGlobalContext.getAppContext(), com.umeng.ccg.a.i, jSONObjectA8);
+                                                a(UMGlobalContext.getAppContext(), "umc_cfg", jSONObjectA8);
                                             } else {
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "appActAction.process return null !");
+                                                UMRTLog.i("MobclickRT", "appActAction.process return null !");
                                             }
                                         }
                                         break;
@@ -1159,33 +1159,33 @@ public class d implements c.a {
                                         C0034d c0034d = (C0034d) obj;
                                         JSONObject jSONObjectA9 = a(c0034d.a, c0034d.b, c0034d.c);
                                         if (jSONObjectA9 != null) {
-                                            aw.a(new ar(ar.b, jSONObjectA9), 0L, TimeUnit.SECONDS);
+                                            aw.a(new ar("https://cnlogs.umeng.com/ext_event", jSONObjectA9), 0L, TimeUnit.SECONDS);
                                         }
                                         break;
                                     default:
                                         switch (i2) {
-                                            case com.umeng.ccg.c.u /* 310 */:
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "PI: recv GET_PI_INFO msg.");
+                                            case 310 /* 310 */:
+                                                UMRTLog.i("MobclickRT", "PI: recv GET_PI_INFO msg.");
                                                 o oVarA = o.a(UMGlobalContext.getAppContext());
                                                 if (oVarA != null) {
                                                     ArrayList<o.b> arrayListF = oVarA.f();
                                                     for (int i6 = 0; i6 < arrayListF.size(); i6++) {
-                                                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.w, a(), arrayListF.get(i6), 0L);
+                                                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 312, a(), arrayListF.get(i6), 0L);
                                                     }
                                                 }
                                                 break;
-                                            case com.umeng.ccg.c.v /* 311 */:
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "PO: recv GET_PO_INFO msg.");
+                                            case 311 /* 311 */:
+                                                UMRTLog.i("MobclickRT", "PO: recv GET_PO_INFO msg.");
                                                 o oVarA2 = o.a(UMGlobalContext.getAppContext());
                                                 if (oVarA2 != null) {
                                                     ArrayList<o.c> arrayListG = oVarA2.g();
                                                     for (int i7 = 0; i7 < arrayListG.size(); i7++) {
-                                                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.x, a(), arrayListG.get(i7), 3000L);
+                                                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 313, a(), arrayListG.get(i7), 3000L);
                                                     }
                                                 }
                                                 break;
-                                            case com.umeng.ccg.c.w /* 312 */:
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "PI: recv REPORT_PI_INFO msg.");
+                                            case 312 /* 312 */:
+                                                UMRTLog.i("MobclickRT", "PI: recv REPORT_PI_INFO msg.");
                                                 if (obj != null && (obj instanceof o.b)) {
                                                     o.b bVar = (o.b) obj;
                                                     String strA2 = bVar.a();
@@ -1200,18 +1200,18 @@ public class d implements c.a {
                                                         jSONObject10.put("ekv", jSONArray);
                                                         JSONObject jSONObjectA10 = ap.a(UMGlobalContext.getAppContext(), new JSONArray(), "");
                                                         if (jSONObjectA10 != null && (jSONObjectA = ap.a(jSONObjectA10, jSONObject10)) != null) {
-                                                            aw.a(new ar(ar.d, jSONObjectA), 0L, TimeUnit.SECONDS);
+                                                            aw.a(new ar("https://cnlogs.umeng.com/common_inout_logs", jSONObjectA), 0L, TimeUnit.SECONDS);
                                                             Thread.sleep(1000L);
                                                             break;
                                                         }
                                                     }
                                                 }
                                                 break;
-                                            case com.umeng.ccg.c.x /* 313 */:
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "PO: recv REPORT_PO_INFO msg.");
+                                            case 313 /* 313 */:
+                                                UMRTLog.i("MobclickRT", "PO: recv REPORT_PO_INFO msg.");
                                                 if (obj != null && (obj instanceof o.c)) {
                                                     o.c cVar4 = (o.c) obj;
-                                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>PO: po: " + cVar4.a() + "; ts: " + cVar4.d());
+                                                    UMRTLog.i("MobclickRT", "--->>>PO: po: " + cVar4.a() + "; ts: " + cVar4.d());
                                                     String strA3 = cVar4.a();
                                                     String strB = cVar4.b();
                                                     if (!TextUtils.isEmpty(strA3)) {
@@ -1222,7 +1222,7 @@ public class d implements c.a {
                                                         jSONObject13.put("pkg", strA3);
                                                         jSONObject13.put("cls", strB);
                                                         jSONObject13.put("ts", cVar4.d());
-                                                        jSONObject13.put(bv.aH, cVar4.e());
+                                                        jSONObject13.put("u", cVar4.e());
                                                         if (o.c()) {
                                                             jSONObject13.put("stat", "fg");
                                                         } else {
@@ -1232,7 +1232,7 @@ public class d implements c.a {
                                                         jSONObject12.put("ekv", jSONArray2);
                                                         JSONObject jSONObjectA11 = ap.a(UMGlobalContext.getAppContext(), new JSONArray(), "");
                                                         if (jSONObjectA11 != null && (jSONObjectA2 = ap.a(jSONObjectA11, jSONObject12)) != null) {
-                                                            aw.a(new ar(ar.d, jSONObjectA2), 0L, TimeUnit.SECONDS);
+                                                            aw.a(new ar("https://cnlogs.umeng.com/common_inout_logs", jSONObjectA2), 0L, TimeUnit.SECONDS);
                                                             Thread.sleep(1000L);
                                                             break;
                                                         }
@@ -1257,15 +1257,15 @@ public class d implements c.a {
                 }
                 long j3 = jB - jA;
                 if (j3 >= 1000) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> APMode: 上报退出飞行模式事件：ts1 = " + jA + "; ts2 = " + jB + "; 停留: " + (j3 / 1000) + "秒");
+                    UMRTLog.i("MobclickRT", "--->>> APMode: 上报退出飞行模式事件：ts1 = " + jA + "; ts2 = " + jB + "; 停留: " + (j3 / 1000) + "秒");
                 } else {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> APMode: 上报退出飞行模式事件：ts1 = " + jA + "; ts2 = " + jB + "; 停留: " + j3 + "毫秒");
+                    UMRTLog.i("MobclickRT", "--->>> APMode: 上报退出飞行模式事件：ts1 = " + jA + "; ts2 = " + jB + "; 停留: " + j3 + "毫秒");
                 }
                 JSONObject jSONObjectA12 = ap.a(UMGlobalContext.getAppContext(), 4, new JSONArray("[\"uapp\"]"), "uapp", this.l);
                 jSONObjectA12.put("ts1", jA);
                 jSONObjectA12.put("ts2", jB);
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "APMode event param: " + jSONObjectA12);
-                aw.a(new ar(ar.a, jSONObjectA12), 0L, TimeUnit.SECONDS);
+                UMRTLog.i("MobclickRT", "APMode event param: " + jSONObjectA12);
+                aw.a(new ar("https://aspect-upush.umeng.com/occa/v1/event/report", jSONObjectA12), 0L, TimeUnit.SECONDS);
             }
         } catch (Throwable unused6) {
         }

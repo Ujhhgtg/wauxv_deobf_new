@@ -58,7 +58,7 @@ public final class C1072 extends AbstractC1074 implements InterfaceC0885, Interf
                 return;
             }
             AbstractC1235 abstractC1235M4921 = AbstractC2920.m4921();
-            if (abstractC1235M4921.f4463 >= JSONWriter.MASK_IGNORE_NON_FIELD_GETTER) {
+            if (abstractC1235M4921.f4463 >= 4294967296L) {
                 this.f3889 = c0760;
                 this.f3892 = 0;
                 C0256 c0256 = abstractC1235M4921.f4465;

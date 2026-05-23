@@ -13,6 +13,6 @@ public final class C2766 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f8855 = new C2766("SnsUploadAppInfoHook.ValPhoneAppId", "wx8dd6ecd81906fd84", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f8855 = new C2766("SnsUploadAppInfoHook.ValPhoneAppId", "wx8dd6ecd81906fd84", null, false, 0, 0.0f, 0L, 124);
     }
 }

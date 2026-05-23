@@ -63,7 +63,7 @@ public final class C0145 {
         } else if (i != 4) {
             str = i != 8 ? "??" : "mv";
         } else {
-            str = g.R;
+            str = "up";
         }
         sb.append(str);
         sb.append(",s:");

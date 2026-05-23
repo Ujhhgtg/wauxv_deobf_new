@@ -23,20 +23,20 @@ public final class C1727 implements InterfaceC2654 {
 
     @Override // p000.InterfaceC2654
     public final List getAnnotations() {
-        this.f5823.getClass();
+        
         return C1189.f4329;
     }
 
     @Override // p000.InterfaceC2654
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final String mo1342() {
-        return f5822;
+        return "kotlinx.serialization.json.JsonObject";
     }
 
     @Override // p000.InterfaceC2654
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final boolean mo3470() {
-        this.f5823.getClass();
+        
         return false;
     }
 
@@ -49,28 +49,28 @@ public final class C1727 implements InterfaceC2654 {
     @Override // p000.InterfaceC2654
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final AbstractC1460 mo3472() {
-        this.f5823.getClass();
+        
         return C2851.f9113;
     }
 
     @Override // p000.InterfaceC2654
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final int mo3473() {
-        this.f5823.getClass();
+        
         return 2;
     }
 
     @Override // p000.InterfaceC2654
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final String mo3474(int i) {
-        this.f5823.getClass();
+        
         return String.valueOf(i);
     }
 
     @Override // p000.InterfaceC2654
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final boolean mo3358() {
-        this.f5823.getClass();
+        
         return false;
     }
 

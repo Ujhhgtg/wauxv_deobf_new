@@ -47,8 +47,8 @@ public class Response implements de<Response, e>, Serializable, Cloneable {
     public int resp_code;
     private static final ei STRUCT_DESC = new ei("Response");
     private static final dy RESP_CODE_FIELD_DESC = new dy("resp_code", (byte) 8, 1);
-    private static final dy MSG_FIELD_DESC = new dy(cl.h, (byte) 11, 2);
-    private static final dy IMPRINT_FIELD_DESC = new dy(bv.X, (byte) 12, 3);
+    private static final dy MSG_FIELD_DESC = new dy("msg", (byte) 11, 2);
+    private static final dy IMPRINT_FIELD_DESC = new dy("imprint", (byte) 12, 3);
 
     /* JADX INFO: compiled from: obf */
     public static class a extends en<Response> {
@@ -198,8 +198,8 @@ public class Response implements de<Response, e>, Serializable, Cloneable {
         map.put(eo.class, new d());
         EnumMap enumMap = new EnumMap(e.class);
         enumMap.put(e.RESP_CODE, new dq("resp_code", (byte) 1, new dr((byte) 8)));
-        enumMap.put(e.MSG, new dq(cl.h, (byte) 2, new dr((byte) 11)));
-        enumMap.put(e.IMPRINT, new dq(bv.X, (byte) 2, new dv((byte) 12, com.umeng.commonsdk.statistics.proto.d.class)));
+        enumMap.put(e.MSG, new dq("msg", (byte) 2, new dr((byte) 11)));
+        enumMap.put(e.IMPRINT, new dq("imprint", (byte) 2, new dv((byte) 12, com.umeng.commonsdk.statistics.proto.d.class)));
         Map<e, dq> mapUnmodifiableMap = Collections.unmodifiableMap(enumMap);
         metaDataMap = mapUnmodifiableMap;
         dq.a(Response.class, mapUnmodifiableMap);
@@ -362,8 +362,8 @@ public class Response implements de<Response, e>, Serializable, Cloneable {
     /* JADX INFO: compiled from: obf */
     public enum e implements dl {
         RESP_CODE(1, "resp_code"),
-        MSG(2, cl.h),
-        IMPRINT(3, bv.X);
+        MSG(2, "msg"),
+        IMPRINT(3, "imprint");
 
         private static final Map<String, e> d = new HashMap();
         private final short e;

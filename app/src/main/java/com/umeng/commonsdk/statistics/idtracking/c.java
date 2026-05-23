@@ -10,27 +10,27 @@ import com.umeng.commonsdk.debug.UMRTLog;
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class c extends a {
-    public static final String a = be.b().b(be.l);
+    public static final String a = be.b().b("uso");
     public static final String b = "key_umeng_sp_honor_oaid";
     private static final String c = "honor_oaid";
     private Context d;
 
     public c(Context context) {
-        super(c);
+        super("honor_oaid");
         this.d = context;
     }
 
     @Override // com.umeng.commonsdk.statistics.idtracking.a
     public String f() {
         if (!UMConfigure.shouldCollectOaid()) {
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>*** HonorOaidTracker.getId(): oaid开关已关闭。");
+            UMRTLog.i("MobclickRT", "--->>>*** HonorOaidTracker.getId(): oaid开关已关闭。");
             return null;
         }
-        if (FieldManager.allow(com.umeng.commonsdk.utils.d.G)) {
+        if (FieldManager.allow("header_device_oaid")) {
             try {
                 SharedPreferences sharedPreferences = this.d.getSharedPreferences(a, 0);
                 if (sharedPreferences != null) {
-                    return sharedPreferences.getString(b, "");
+                    return sharedPreferences.getString("key_umeng_sp_honor_oaid", "");
                 }
             } catch (Throwable unused) {
             }

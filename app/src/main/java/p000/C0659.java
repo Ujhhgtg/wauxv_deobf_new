@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C0659 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C0659 f2523 = new C0659("ChatToolbarHook.ValHide", null, null, false, EnumC0654.f2511.f2514, 0.0f, 0, UMErrorCode.E_UM_BE_JSON_FAILED);
+    public static final C0659 f2523 = new C0659("ChatToolbarHook.ValHide", null, null, false, EnumC0654.f2511.f2514, 0.0f, 0, 110);
 }

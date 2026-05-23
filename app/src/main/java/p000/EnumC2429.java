@@ -8,7 +8,7 @@ import com.alibaba.fastjson2.JSONWriter;
 public enum EnumC2429 {
     DEFAULT(0),
     SIGNED(8589934592L),
-    FIXED(JSONWriter.MASK_WRITE_LONG_AS_STRING);
+    FIXED(17179869184L);
 
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */

@@ -61,7 +61,7 @@ public final class GroupData {
         if ((i2 & 128) != 0) {
             str4 = groupData.notice;
         }
-        if ((i2 & bc.e) != 0) {
+        if ((i2 & 256) != 0) {
             str5 = groupData.noticeEditor;
         }
         if ((i2 & 512) != 0) {

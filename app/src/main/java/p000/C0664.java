@@ -2,7 +2,6 @@ package p000;
 
 import java.util.List;
 import java.util.regex.Pattern;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᤝᲁᲇᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -35,8 +34,8 @@ public final class C0664 extends AbstractC2867 implements InterfaceC1592 {
         String str;
         List listM3699;
         if (mo3264()) {
-            int i = AbstractC1745.f5844;
-            C1744 c1744M2484 = AbstractC0968.m2484(obj);
+            int i = 0;
+            C1744 c1744M2484 = AbstractC0968.startFieldResolution(obj);
             C1299 c1299M3490 = c1744M2484.m3490();
             String[] strArr = AbstractC1574.f5469;
             c1299M3490.f6370 = "field_isSend";
@@ -51,7 +50,7 @@ public final class C0664 extends AbstractC2867 implements InterfaceC1592 {
                 c1299M3492.f6370 = "field_content";
                 String str2 = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                 String strM4845 = AbstractC2841.m4845(str2, ":");
-                f2541.getClass();
+                
                 if (AbstractC2841.m4828(str2, "点击链接直接打开 或者 淘宝搜索直接打开", false)) {
                     String str3 = "【淘宝】";
                     C1904 c1904M4123 = AbstractC2209.m4123(Pattern.compile("https?://[\\w./?=&%-]+").matcher(str2), 0, str2);
@@ -61,7 +60,7 @@ public final class C0664 extends AbstractC2867 implements InterfaceC1592 {
                         str = "解析异常";
                     }
                     StringBuilder sb = new StringBuilder();
-                    sb.append(str3);
+                    sb.append("【淘宝】");
                     sb.append('\n');
                     sb.append("<a href=\"" + strGroup + "\">" + str + "</a>");
                     String string = sb.toString();
@@ -71,7 +70,7 @@ public final class C0664 extends AbstractC2867 implements InterfaceC1592 {
                     StringBuilder sbM4753 = AbstractC2784.m4753(strM4845);
                     sbM4753.append(":\n");
                     sbM4753.append(string);
-                    c1315.m3025(sbM4753.toString());
+                    c1315.set(sbM4753.toString());
                 }
             }
         }

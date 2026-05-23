@@ -9,7 +9,6 @@ import java.util.List;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.info.FriendInfo;
 import me.hd.wauxv.data.bean.info.GroupInfo;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᤞᛸᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -140,10 +139,10 @@ public final /* synthetic */ class C3614 implements InterfaceC1425 {
                         return Boolean.FALSE;
                     }
                 };
-                c0817.f3202 = str4;
+                c0817.f3202 = "转发";
                 c0817.f3204 = interfaceC1429;
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

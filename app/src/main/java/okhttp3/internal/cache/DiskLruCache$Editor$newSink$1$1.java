@@ -1,9 +1,9 @@
 package okhttp3.internal.cache;
 
 import java.io.IOException;
-import okhttp3.internal.cache.DiskLruCache;
+
 import p000.AbstractC1756;
-import p000.C3497;
+import p000.Unit;
 import p000.InterfaceC1425;
 
 /* JADX INFO: compiled from: obf */
@@ -22,7 +22,7 @@ public final class DiskLruCache$Editor$newSink$1$1 extends AbstractC1756 impleme
     @Override // p000.InterfaceC1425
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((IOException) obj);
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 
     public final void invoke(IOException iOException) {

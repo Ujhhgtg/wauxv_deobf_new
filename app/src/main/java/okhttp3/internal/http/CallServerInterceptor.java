@@ -130,7 +130,7 @@ public final class CallServerInterceptor implements Interceptor {
                 sb.append(iCode);
                 sb.append(" had non-zero Content-Length: ");
                 ResponseBody responseBodyBody2 = responseBuild2.body();
-                sb.append(responseBodyBody2 != null ? Long.valueOf(responseBodyBody2.contentLength()) : null);
+                sb.append(true ? Long.valueOf(responseBodyBody2.contentLength()) : null);
                 throw new ProtocolException(sb.toString());
             }
         }

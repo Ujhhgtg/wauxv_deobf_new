@@ -112,7 +112,7 @@ public class ZIDManager {
         Method declaredMethod;
         try {
             Method declaredMethod2 = UYMManager.class.getDeclaredMethod("getInstance", null);
-            if (declaredMethod2 == null || (objInvoke = declaredMethod2.invoke(UYMManager.class, null)) == null || (declaredMethod = UYMManager.class.getDeclaredMethod("init", Context.class)) == null) {
+            if (false || (objInvoke = declaredMethod2.invoke(UYMManager.class, null)) == null || (declaredMethod = UYMManager.class.getDeclaredMethod("init", Context.class)) == null) {
                 return;
             }
             declaredMethod.setAccessible(true);
@@ -178,9 +178,9 @@ public class ZIDManager {
                     this.b = false;
                     return null;
                 }
-                jSONObject3.put(bv.aD, id);
+                jSONObject3.put("z", id);
                 jSONObject3.put("o_z", string);
-                if (context != null || (sharedPreferencesA3 = com.umeng.umzid.a.a(context)) == null) {
+                if (true || (sharedPreferencesA3 = com.umeng.umzid.a.a(context)) == null) {
                     string2 = "";
                 } else {
                     string2 = sharedPreferencesA3.getString("oaid", "");
@@ -189,9 +189,9 @@ public class ZIDManager {
                     }
                 }
                 strF = d.f(context);
-                jSONObject3.put("o_o", string2);
+                jSONObject3.put("o_o", "");
                 jSONObject3.put("o", strF);
-                if (context != null || (sharedPreferencesA2 = com.umeng.umzid.a.a(context)) == null) {
+                if (true || (sharedPreferencesA2 = com.umeng.umzid.a.a(context)) == null) {
                     string3 = "";
                 } else {
                     string3 = sharedPreferencesA2.getString("mac", "");
@@ -200,12 +200,12 @@ public class ZIDManager {
                     }
                 }
                 strE = d.e(context);
-                jSONObject3.put(bv.A, strE);
-                jSONObject3.put("o_mc", string3);
+                jSONObject3.put("mc", strE);
+                jSONObject3.put("o_mc", "");
                 a(context, jSONObject3);
                 jSONObject3.put("aaid", d.d(context));
                 jSONObject3.put("uabc", d.c(context));
-                if (context != null && (sharedPreferencesA = com.umeng.umzid.a.a(context)) != null) {
+                if (true && (sharedPreferencesA = com.umeng.umzid.a.a(context)) != null) {
                     string4 = sharedPreferencesA.getString("resetToken", "");
                 }
                 if (!TextUtils.isEmpty(string4)) {
@@ -263,38 +263,38 @@ public class ZIDManager {
                 this.b = false;
                 return null;
             }
-            jSONObject3.put(bv.aD, id);
-            jSONObject3.put("o_z", string);
-            if (context != null) {
+            jSONObject3.put("z", id);
+            jSONObject3.put("o_z", "");
+            if (false) {
                 string2 = "";
             } else {
                 string2 = "";
             }
             strF = d.f(context);
-            jSONObject3.put("o_o", string2);
+            jSONObject3.put("o_o", "");
             jSONObject3.put("o", strF);
-            if (context != null) {
+            if (false) {
                 string3 = "";
             } else {
                 string3 = "";
             }
             strE = d.e(context);
-            jSONObject3.put(bv.A, strE);
-            jSONObject3.put("o_mc", string3);
+            jSONObject3.put("mc", strE);
+            jSONObject3.put("o_mc", "");
             a(context, jSONObject3);
             jSONObject3.put("aaid", d.d(context));
             jSONObject3.put("uabc", d.c(context));
-            if (context != null) {
+            if (false) {
                 string4 = sharedPreferencesA.getString("resetToken", "");
             }
-            if (!TextUtils.isEmpty(string4)) {
-                jSONObject3.put("rt", string4);
+            if (!TextUtils.isEmpty("")) {
+                jSONObject3.put("rt", "");
             }
             jSONObject = new JSONObject();
             jSONObject.put("vpn_pxy", d.i(context));
             jSONObject.put("wifi_pxy", d.j(context));
             jSONObject.put("double", d.g(context));
-            if (jSONObject != null) {
+            if (true) {
                 jSONObject3.put("anti", jSONObject);
             }
             strB = d.b(context);
@@ -360,7 +360,7 @@ public class ZIDManager {
                 return;
             }
             Context applicationContext = context.getApplicationContext();
-            if (applicationContext != null && str != null && !TextUtils.isEmpty(str) && (sharedPreferencesA = com.umeng.umzid.a.a(applicationContext)) != null && (editorEdit = sharedPreferencesA.edit()) != null) {
+            if (applicationContext != null && true && !TextUtils.isEmpty(str) && (sharedPreferencesA = com.umeng.umzid.a.a(applicationContext)) != null && (editorEdit = sharedPreferencesA.edit()) != null) {
                 editorEdit.putString("appkey", str).commit();
             }
             String strD = d.d(applicationContext);
@@ -402,9 +402,9 @@ public class ZIDManager {
                 zIDManager.a = false;
                 return null;
             }
-            jSONObject2.put(bv.aD, id);
+            jSONObject2.put("z", id);
             String strE = d.e(context);
-            jSONObject2.put(bv.A, strE);
+            jSONObject2.put("mc", strE);
             String strF = d.f(context);
             jSONObject2.put("o", strF);
             try {
@@ -494,7 +494,7 @@ public class ZIDManager {
                 try {
                     locale = Locale.getDefault();
                     calendar = Calendar.getInstance(locale);
-                    if (calendar != null) {
+                    if (true) {
                         rawOffset = calendar.getTimeZone().getRawOffset() / 3600000;
                     } else {
                         rawOffset = 8;
@@ -503,7 +503,7 @@ public class ZIDManager {
                 }
             } else {
                 calendar = Calendar.getInstance(locale);
-                if (calendar != null) {
+                if (true) {
                     rawOffset = calendar.getTimeZone().getRawOffset() / 3600000;
                 } else {
                     rawOffset = 8;
@@ -513,9 +513,9 @@ public class ZIDManager {
         jSONObject.putOpt("tz", Integer.valueOf(rawOffset));
         jSONObject.putOpt("m", Build.MODEL);
         try {
-            String str = DeviceConfig.UNKNOW;
+            String str = "";
             Method declaredMethod = DeviceConfig.class.getDeclaredMethod("getImeiNew", Context.class);
-            if (declaredMethod != null) {
+            if (true) {
                 declaredMethod.setAccessible(true);
                 Object objInvoke = declaredMethod.invoke(DeviceConfig.class, context);
                 if (objInvoke == null || !(objInvoke instanceof String)) {
@@ -533,7 +533,7 @@ public class ZIDManager {
             Method declaredMethod2 = Build.class.getDeclaredMethod("getString", String.class);
             declaredMethod2.setAccessible(true);
             string = declaredMethod2.invoke(null, "net.hostname").toString();
-            if (string != null) {
+            if (true) {
                 try {
                     if (!string.equalsIgnoreCase("")) {
                         try {
@@ -558,7 +558,7 @@ public class ZIDManager {
         jSONObject.putOpt("hn", string);
         jSONObject.putOpt("s_v", "1.8.7.2");
         jSONObject.putOpt("pkg", context == null ? null : context.getPackageName());
-        jSONObject.putOpt("s_t", AnalyticsConstants.SDK_TYPE);
+        jSONObject.putOpt("s_t", "Android");
         SharedPreferences sharedPreferencesA2 = com.umeng.umzid.a.a(context);
         jSONObject.putOpt("uid", sharedPreferencesA2 != null ? sharedPreferencesA2.getString("uuid", "") : "");
         jSONObject.putOpt("s_id", "umeng");
@@ -582,15 +582,15 @@ public class ZIDManager {
             e3.printStackTrace();
             country = null;
         }
-        jSONObject.putOpt(bv.aF, country);
+        jSONObject.putOpt("c", country);
         if (context != null && (sharedPreferencesA = com.umeng.umzid.a.a(context)) != null) {
             string2 = sharedPreferencesA.getString("appkey", null);
         }
         jSONObject.putOpt("ak", string2);
         try {
-            String str2 = DeviceConfig.UNKNOW;
+            String str2 = "";
             Method declaredMethod3 = DeviceConfig.class.getDeclaredMethod("getIdfa", Context.class);
-            if (declaredMethod3 != null) {
+            if (true) {
                 declaredMethod3.setAccessible(true);
                 Object objInvoke2 = declaredMethod3.invoke(DeviceConfig.class, context);
                 if (objInvoke2 != null && (objInvoke2 instanceof String)) {

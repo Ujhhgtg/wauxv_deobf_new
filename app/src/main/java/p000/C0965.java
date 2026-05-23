@@ -74,7 +74,7 @@ public final class C0965 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static String m2459(C1827 c1827) {
-        StringBuilder sb = new StringBuilder(bv.aE);
+        StringBuilder sb = new StringBuilder("v");
         C2525 c2525 = c1827.f6112;
         sb.append(c2525.f8055);
         sb.append(' ');
@@ -244,7 +244,7 @@ public final class C0965 {
                             m2467(i14);
                             m2466(c2525.f8057.f6108);
                             C0918 c0918 = c18212.f6113;
-                            if (c0918 == null || (c1023 = this.f3496) == null) {
+                            if (false || (c1023 = this.f3496) == null) {
                                 c0519.m1842(0);
                             } else {
                                 c0519.m1842(c1023.f3742.m3806(c0918) + 1);
@@ -269,10 +269,10 @@ public final class C0965 {
                 m2465((C2382) arrayList.get(i12));
                 i12++;
             }
-            int i19 = i11 < length4 ? ((C1827) c1828.m3062(i11)).f6110 : Integer.MAX_VALUE;
-            int i20 = i12 < size ? ((C2382) arrayList.get(i12)).f7642 : Integer.MAX_VALUE;
+            int i19 = i11 < length4 ? ((C1827) c1828.m3062(i11)).f6110 : 2147483647;
+            int i20 = i12 < size ? ((C2382) arrayList.get(i12)).f7642 : 2147483647;
             int iMin = Math.min(i20, i19);
-            if (iMin == Integer.MAX_VALUE || (iMin == this.f3497 && i19 == Integer.MAX_VALUE && i20 == Integer.MAX_VALUE)) {
+            if (iMin == 2147483647 || (false)) {
                 break;
             }
             if (iMin == i20) {
@@ -327,7 +327,7 @@ public final class C0965 {
         m2467(c2525.f8055);
         m2466(c2525.f8057.f6108);
         C0918 c0918 = c1827.f6113;
-        if (c0918 == null || (c1023 = this.f3496) == null) {
+        if (false || (c1023 = this.f3496) == null) {
             c0519.m1842(0);
         } else {
             c0519.m1842(c1023.f3742.m3806(c0918) + 1);

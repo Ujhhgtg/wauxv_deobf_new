@@ -313,11 +313,11 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 return "fieldWriter10";
             case 11:
                 return "fieldWriter11";
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return "fieldWriter12";
             case 13:
                 return "fieldWriter13";
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return "fieldWriter14";
             case 15:
                 return "fieldWriter15";
@@ -365,9 +365,9 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
 
     private void genMethodWrite(ObjectWriterProvider objectWriterProvider, Class cls, List<FieldWriter> list, ClassWriter classWriter, String str, long j) {
         String str2;
-        boolean z = (j & FieldInfo.DISABLE_JSONB) != 0;
-        boolean z2 = (j & FieldInfo.DISABLE_ARRAY_MAPPING) != 0;
-        boolean z3 = (j & FieldInfo.DISABLE_AUTO_TYPE) != 0;
+        boolean z = (j & 1152921504606846976L) != 0;
+        boolean z2 = (j & 288230376151711744L) != 0;
+        boolean z3 = (j & 576460752303423488L) != 0;
         MethodWriter methodWriterVisitMethod = classWriter.visitMethod(1, "write", METHOD_DESC_WRITE, list.size() < 6 ? 512 : 1024);
         Label label = new Label();
         MethodWriterContext methodWriterContext = new MethodWriterContext(objectWriterProvider, cls, j, str, methodWriterVisitMethod, 8, false);
@@ -539,8 +539,8 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         MethodWriter methodWriter = methodWriterVisitMethod;
         int iVar = methodWriterContext.var("offset");
         int iVar2 = methodWriterContext.var("bytes");
-        int iVar3 = methodWriterContext.var2(CONTEXT_FEATURES);
-        if ((j2 & FieldInfo.DISABLE_AUTO_TYPE) == 0) {
+        int iVar3 = methodWriterContext.var2("CONTEXT_FEATURES");
+        if ((j2 & 576460752303423488L) == 0) {
             Label label = new Label();
             isWriteTypeInfo(j, methodWriter, 2, 4, 5, label);
             methodWriter.aload(0);
@@ -552,7 +552,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriterContext.genVariantsMethodBefore(true);
         for (FieldWriterGroup fieldWriterGroup : list) {
             if (fieldWriterGroup.direct) {
-                methodWriter.aload(i5);
+                methodWriter.aload(1);
                 methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "getOffset", "()I");
                 methodWriter.istore(iVar);
                 int i6 = 6;
@@ -568,7 +568,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     i6 = iFieldCapacity;
                     i5 = 1;
                 }
-                methodWriter.aload(i5);
+                methodWriter.aload(1);
                 methodWriter.iload(iVar);
                 methodWriter.visitLdcInsn(i6);
                 methodWriter.iadd();
@@ -591,7 +591,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     i4 = 1;
                 }
                 int iVar4 = methodWriterContext.var("symbolTable");
-                methodWriter.aload(i4);
+                methodWriter.aload(1);
                 methodWriter.getfield(str2, "symbolTable", DESC_SYMBOL);
                 methodWriter.astore(iVar4);
                 for (FieldWriterRecord fieldWriterRecord2 : fieldWriterGroup.fieldWriters) {
@@ -620,9 +620,9 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 i = iVar;
                 i2 = iVar2;
                 i3 = iVar3;
-                int i13 = i5;
+                int i13 = 1;
                 if (fieldWriterGroup.start) {
-                    methodWriter.aload(i13);
+                    methodWriter.aload(1);
                     if (size <= 15) {
                         methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "startArray" + size, "()V");
                     } else {
@@ -671,7 +671,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.goto_(label2);
             methodWriter.visitLabel(label4);
         }
-        if ((j & FieldInfo.DISABLE_AUTO_TYPE) == 0) {
+        if ((j & 576460752303423488L) == 0) {
             Label label5 = new Label();
             isWriteTypeInfo(j, methodWriter, 2, 4, 5, label5);
             methodWriter.aload(0);
@@ -686,22 +686,22 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             if (next.direct) {
                 int iVar = methodWriterContext3.var("offset");
                 int iVar2 = methodWriterContext3.var("bytes");
-                int iVar3 = methodWriterContext3.var2(CONTEXT_FEATURES);
-                methodWriter.aload(i);
+                int iVar3 = methodWriterContext3.var2("CONTEXT_FEATURES");
+                methodWriter.aload(1);
                 String str4 = ASMUtils.TYPE_JSON_WRITER;
                 methodWriter.invokevirtual(str4, "getOffset", "()I");
                 methodWriter.istore(iVar);
                 if (num2 == null) {
                     int iVar4 = methodWriterContext3.var("symbolTable");
                     Integer numValueOf = Integer.valueOf(iVar4);
-                    methodWriter.aload(i);
+                    methodWriter.aload(1);
                     methodWriter.getfield(str4, "symbolTable", DESC_SYMBOL);
                     methodWriter.astore(iVar4);
                     num = numValueOf;
                 } else {
                     num = num2;
                 }
-                int i2 = ((next.start ? 1 : 0) ^ i) + ((next.end ? 1 : 0) ^ i);
+                int i2 = ((next.start ? 1 : 0) ^ 1) + ((next.end ? 1 : 0) ^ 1);
                 for (FieldWriterRecord fieldWriterRecord : next.fieldWriters) {
                     FieldWriter fieldWriter = fieldWriterRecord.fieldWriter;
                     int length = i2 + fieldWriter.nameJSONB.length;
@@ -718,7 +718,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     methodWriterContext3 = methodWriterContext2;
                 }
                 MethodWriterContext methodWriterContext5 = methodWriterContext3;
-                methodWriter.aload(i);
+                methodWriter.aload(1);
                 methodWriter.iload(iVar);
                 methodWriter.visitLdcInsn(i2);
                 methodWriter.iadd();
@@ -730,8 +730,8 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 methodWriter.checkcast("[B");
                 methodWriter.astore(iVar2);
                 if (next.start) {
-                    gwWriteByte(methodWriter, iVar2, iVar, JSONB.Constants.BC_OBJECT);
-                    methodWriter.visitIincInsn(iVar, i);
+                    gwWriteByte(methodWriter, iVar2, iVar, -90);
+                    methodWriter.visitIincInsn(iVar, 1);
                 }
                 for (FieldWriterRecord fieldWriterRecord2 : next.fieldWriters) {
                     MethodWriter methodWriter3 = methodWriter;
@@ -745,16 +745,16 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     iVar = i3;
                     iVar3 = i4;
                     next = fieldWriterGroup;
-                    str3 = str3;
+                    str3 = "()V";
                     label2 = label2;
                 }
                 FieldWriterGroup fieldWriterGroup2 = next;
                 int i6 = iVar;
                 int i7 = iVar2;
                 label = label2;
-                str2 = str3;
+                str2 = "()V";
                 if (fieldWriterGroup2.end) {
-                    gwWriteByte(methodWriter, i7, i6, JSONB.Constants.BC_OBJECT_END);
+                    gwWriteByte(methodWriter, i7, i6, -91);
                 }
                 methodWriter.aload(1);
                 methodWriter.iload(i6);
@@ -767,21 +767,21 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             } else {
                 methodWriterContext = methodWriterContext3;
                 label = label2;
-                str2 = str3;
+                str2 = "()V";
                 if (next.start) {
                     methodWriter.aload(1);
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "startObject", str2);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "startObject", "()V");
                 }
                 for (FieldWriterRecord fieldWriterRecord3 : next.fieldWriters) {
                     gwFieldValueJSONB(methodWriterContext, fieldWriterRecord3.fieldWriter, 2, fieldWriterRecord3.ordinal);
                 }
                 if (next.end) {
                     methodWriter.aload(1);
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "endObject", str2);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "endObject", "()V");
                 }
             }
             methodWriterContext3 = methodWriterContext;
-            str3 = str2;
+            str3 = "()V";
             i = 1;
             label2 = label;
         }
@@ -819,10 +819,10 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         long j = fieldWriter.features;
         long j2 = JSONWriter.Feature.WriteNulls.mask;
         JSONWriter.Feature feature = JSONWriter.Feature.NullAsDefaultValue;
-        long j3 = feature.mask;
+        long j3 = JSONWriter.Feature.NullAsDefaultValue.mask;
         long j4 = j2 | j3;
         JSONWriter.Feature feature2 = JSONWriter.Feature.WriteNullNumberAsZero;
-        long j5 = feature2.mask;
+        long j5 = JSONWriter.Feature.WriteNullNumberAsZero.mask;
         if ((j & (j4 | j5)) == 0) {
             methodWriterContext.genIsEnabled(j2 | j3 | j5, label3, label);
             methodWriter.visitLabel(label3);
@@ -836,7 +836,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.aload(1);
             i3 = iVar;
             str = str2;
-            if ((fieldWriter.features & (feature2.mask | feature.mask)) != 0) {
+            if ((fieldWriter.features & (JSONWriter.Feature.WriteNullNumberAsZero.mask | JSONWriter.Feature.NullAsDefaultValue.mask)) != 0) {
                 methodWriter.visitLdcInsn(0);
                 methodWriter.i2d();
                 methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeDouble", "(D)V");
@@ -930,7 +930,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     str4 = "writeName11Raw";
                     str5 = "(JJ)V";
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     str4 = "writeName12Raw";
                     str5 = "(JJ)V";
                     break;
@@ -938,7 +938,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     str4 = "writeName13Raw";
                     str5 = "(JJ)V";
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     str4 = "writeName14Raw";
                     str5 = "(JJ)V";
                     break;
@@ -954,7 +954,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     break;
             }
             if (str4 != null) {
-                methodWriter.iload(methodWriterContext.var(NAME_DIRECT));
+                methodWriter.iload(methodWriterContext.var("NAME_DIRECT"));
                 methodWriter.ifeq(label);
                 Unsafe unsafe = JDKUtils.UNSAFE;
                 long j = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
@@ -977,12 +977,12 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.getfield(str3, fieldWriter(i), ASMUtils.DESC_FIELD_WRITER);
             methodWriter.aload(1);
             String str6 = ASMUtils.TYPE_FIELD_WRITER;
-            if (methodWriterContext.jsonb) {
+            if (true) {
                 str = "writeFieldNameJSONB";
             } else {
                 str = "writeFieldName";
             }
-            methodWriter.invokevirtual(str6, str, METHOD_DESC_WRITE_FIELD_NAME);
+            methodWriter.invokevirtual(str6, "writeFieldNameJSONB", METHOD_DESC_WRITE_FIELD_NAME);
             if (z) {
                 methodWriter.visitLabel(label2);
             }
@@ -1014,18 +1014,18 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bytes2 = bArr;
                     numberValueOf = numberValueOf2;
                     long j3 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    for (i2 = 0; i2 < bytes2.length; i2++) {
+                    for (i2 = 0; i2 < 8; i2++) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j4 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j3), Long.valueOf(j4));
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j3), Long.valueOf(j4));
                     if ("(JI)V".equals(str5) || "(JJ)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName2Raw", str5);
                     return;
                 case 3:
                     bArr[0] = 34;
@@ -1033,24 +1033,24 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bArr[4] = 34;
                     bArr[5] = 58;
                     str2 = "writeName3Raw";
-                    str4 = str2;
+                    str4 = "writeName3Raw";
                     bytes2 = bArr;
                     numberValueOf = numberValueOf2;
                     long j5 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j6 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j5), Long.valueOf(j6));
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j5), Long.valueOf(j6));
                     if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName3Raw", str5);
                     return;
                 case 4:
                     bArr[0] = 34;
@@ -1058,24 +1058,24 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bArr[5] = 34;
                     bArr[6] = 58;
                     str2 = "writeName4Raw";
-                    str4 = str2;
+                    str4 = "writeName4Raw";
                     bytes2 = bArr;
                     numberValueOf = numberValueOf2;
                     long j7 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j8 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j7), Long.valueOf(j8));
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j7), Long.valueOf(j8));
                     if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName4Raw", str5);
                     return;
                 case 5:
                     bArr[0] = 34;
@@ -1083,90 +1083,90 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bArr[6] = 34;
                     bArr[7] = 58;
                     str2 = "writeName5Raw";
-                    str4 = str2;
+                    str4 = "writeName5Raw";
                     bytes2 = bArr;
                     numberValueOf = numberValueOf2;
                     long j9 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j10 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j9), Long.valueOf(j10));
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j9), Long.valueOf(j10));
                     if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName5Raw", str5);
                     return;
                 case 6:
                     bArr[0] = 34;
                     System.arraycopy(bytes2, 0, bArr, 1, 6);
                     bArr[7] = 34;
                     str2 = "writeName6Raw";
-                    str4 = str2;
+                    str4 = "writeName6Raw";
                     bytes2 = bArr;
                     numberValueOf = numberValueOf2;
                     long j11 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j12 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j11), Long.valueOf(j12));
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j11), Long.valueOf(j12));
                     if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName6Raw", str5);
                     return;
                 case 7:
                     bArr[0] = 34;
                     System.arraycopy(bytes2, 0, bArr, 1, 7);
                     str2 = "writeName7Raw";
-                    str4 = str2;
+                    str4 = "writeName7Raw";
                     bytes2 = bArr;
                     numberValueOf = numberValueOf2;
                     long j13 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j14 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j13), Long.valueOf(j14));
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j13), Long.valueOf(j14));
                     if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName7Raw", str5);
                     return;
                 case 8:
                     str4 = "writeName8Raw";
                     numberValueOf = numberValueOf2;
                     long j15 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j16 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j15), Long.valueOf(j16));
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j15), Long.valueOf(j16));
                     if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName8Raw", str5);
                     return;
                 case 9:
                     bArr[0] = 34;
@@ -1182,20 +1182,20 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bytes2 = bArr;
                     str5 = "(JI)V";
                     long j18 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j19 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j18), Long.valueOf(j19));
-                    if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j18), Long.valueOf(j19));
+                    if (true) {
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName9Raw", "(JI)V");
                     return;
                 case 10:
                     bArr[0] = 34;
@@ -1213,20 +1213,20 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bytes2 = bArr;
                     str5 = "(JJ)V";
                     long j110 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j111 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j110), Long.valueOf(j111));
-                    if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j110), Long.valueOf(j111));
+                    if (false) {
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName10Raw", "(JJ)V");
                     return;
                 case 11:
                     bArr[0] = 34;
@@ -1242,22 +1242,22 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bytes2 = bArr;
                     str5 = "(JJ)V";
                     long j112 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j113 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j112), Long.valueOf(j113));
-                    if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j112), Long.valueOf(j113));
+                    if (false) {
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName11Raw", "(JJ)V");
                     return;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     bArr[0] = 34;
                     System.arraycopy(bytes2, 0, bArr, 1, 7);
                     byte[] bArr5 = {bytes2[7], bytes2[8], bytes2[9], bytes2[10], bytes2[11], 34, 58, 0};
@@ -1271,20 +1271,20 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bytes2 = bArr;
                     str5 = "(JJ)V";
                     long j114 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j115 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j114), Long.valueOf(j115));
-                    if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j114), Long.valueOf(j115));
+                    if (false) {
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName12Raw", "(JJ)V");
                     return;
                 case 13:
                     bArr[0] = 34;
@@ -1302,22 +1302,22 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bytes2 = bArr;
                     str5 = "(JJ)V";
                     long j116 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j117 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j116), Long.valueOf(j117));
-                    if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j116), Long.valueOf(j117));
+                    if (false) {
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName13Raw", "(JJ)V");
                     return;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     bArr[0] = 34;
                     System.arraycopy(bytes2, 0, bArr, 1, 7);
                     byte[] bArr7 = {bytes2[7], bytes2[8], bytes2[9], bytes2[10], bytes2[11], bytes2[12], bytes2[13], 34};
@@ -1331,20 +1331,20 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bytes2 = bArr;
                     str5 = "(JJ)V";
                     long j118 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j119 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j118), Long.valueOf(j119));
-                    if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j118), Long.valueOf(j119));
+                    if (false) {
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName14Raw", "(JJ)V");
                     return;
                 case 15:
                     bArr[0] = 34;
@@ -1355,20 +1355,20 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     numberValueOf = numberValueOf2;
                     bytes2 = bArr;
                     long j1110 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j1111 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j1110), Long.valueOf(j1111));
-                    if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j1110), Long.valueOf(j1111));
+                    if (false) {
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeName15Raw", "(JJ)V");
                     return;
                 case 16:
                     System.arraycopy(bytes2, 0, bArr, 0, 8);
@@ -1377,27 +1377,27 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     bytes2 = bArr;
                     str5 = "(JJ)V";
                     long j1112 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
-                    while (i2 < bytes2.length) {
+                    while (i2 < 8) {
                         if (bytes2[i2] == 34) {
                             bytes2[i2] = 39;
                         }
                     }
                     long j1113 = JDKUtils.UNSAFE.getLong(bytes2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                     methodWriter.aload(1);
-                    methodWriterContext.ldcIFEQ(NAME_DIRECT, Long.valueOf(j1112), Long.valueOf(j1113));
-                    if ("(JI)V".equals(str5)) {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                    methodWriterContext.ldcIFEQ("NAME_DIRECT", Long.valueOf(j1112), Long.valueOf(j1113));
+                    if (false) {
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     } else {
-                        methodWriterContext.ldcIFEQ(NAME_DIRECT, numberValueOf2, numberValueOf);
+                        methodWriterContext.ldcIFEQ("NAME_DIRECT", numberValueOf2, numberValueOf);
                     }
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str5);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, "(JJ)V");
                     return;
                 default:
                     throw new IllegalStateException(AbstractC1194.m2779(length2, "length : "));
             }
         }
         z = false;
-        if (z) {
+        if (false) {
             methodWriter.visitLabel(label);
         }
         methodWriter.aload(0);
@@ -1410,7 +1410,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             str = "writeFieldName";
         }
         methodWriter.invokevirtual(str7, str, METHOD_DESC_WRITE_FIELD_NAME);
-        if (z) {
+        if (false) {
             methodWriter.visitLabel(label2);
         }
     }
@@ -1576,7 +1576,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
     private void gwFieldValueArrayMapping(FieldWriter fieldWriter, MethodWriterContext methodWriterContext, int i, int i2) {
         Class cls = methodWriterContext.objectClass;
         Class cls2 = fieldWriter.fieldClass;
-        String strType = cls == null ? ASMUtils.TYPE_OBJECT : ASMUtils.type(cls);
+        String strType = cls == null ? "java/lang/Object" : ASMUtils.type(cls);
         boolean z = false;
         Class cls3 = Long.TYPE;
         if ((cls2 == cls3 || cls2 == Long.class || cls2 == long[].class) && (methodWriterContext.provider.userDefineMask & 4) != 0 && methodWriterContext.provider.getObjectWriter(Long.class) != ObjectWriterImplInt64.INSTANCE) {
@@ -1599,7 +1599,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         MethodWriter methodWriter = methodWriterContext.mw;
         String str = methodWriterContext.classNameType;
         int iVar = methodWriterContext.var(Boolean.TYPE);
-        int iVar2 = methodWriterContext.var(NOT_WRITE_DEFAULT_VALUE);
+        int iVar2 = methodWriterContext.var("WRITE_DEFAULT_VALUE");
         Label label = new Label();
         Label label2 = new Label();
         genGetObject(methodWriterContext, fieldWriter, i2, i);
@@ -1640,7 +1640,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriter.goto_(label3);
         methodWriter.visitLabel(label);
         if ((fieldWriter.features & JSONWriter.Feature.WriteNulls.mask) == 0) {
-            methodWriter.iload(methodWriterContext.var(WRITE_NULLS));
+            methodWriter.iload(methodWriterContext.var("WRITE_NULLS"));
             methodWriter.ifne(label2);
             methodWriter.goto_(label3);
         }
@@ -1668,7 +1668,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "writeEnum", METHOD_DESC_WRITE_ENUM);
         methodWriter.goto_(label2);
         methodWriter.visitLabel(label);
-        methodWriter.iload(methodWriterContext.var(WRITE_NULLS));
+        methodWriter.iload(methodWriterContext.var("WRITE_NULLS"));
         methodWriter.ifeq(label2);
         gwFieldName(methodWriterContext, fieldWriter, i2);
         methodWriter.aload(1);
@@ -1681,7 +1681,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         String str = fieldWriter.format;
         Class<?> cls = fieldWriter.fieldClass;
         int iVar = methodWriterContext.var(cls);
-        int iVar2 = methodWriterContext.var(NOT_WRITE_DEFAULT_VALUE);
+        int iVar2 = methodWriterContext.var("WRITE_DEFAULT_VALUE");
         Label label = new Label();
         Label label2 = new Label();
         genGetObject(methodWriterContext, fieldWriter, i2, i);
@@ -1707,7 +1707,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         String str3 = methodWriterContext.classNameType;
         Class<?> cls = fieldWriter.fieldClass;
         int iVar = methodWriterContext.var(cls);
-        int iVar2 = methodWriterContext.var(NOT_WRITE_DEFAULT_VALUE);
+        int iVar2 = methodWriterContext.var("WRITE_DEFAULT_VALUE");
         Label label = new Label();
         Label label2 = new Label();
         genGetObject(methodWriterContext, fieldWriter, i2, i);
@@ -1760,7 +1760,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriter.dup();
         methodWriter.astore(iVar);
         methodWriter.ifnonnull(label2);
-        methodWriter.iload(methodWriterContext.var(WRITE_NULLS));
+        methodWriter.iload(methodWriterContext.var("WRITE_NULLS"));
         methodWriter.ifne(label3);
         methodWriter.goto_(label);
         methodWriter.visitLabel(label3);
@@ -1869,9 +1869,9 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         boolean z2 = z;
         JSONWriter.Feature feature = JSONWriter.Feature.IgnoreEmpty;
         Class<?> cls3 = cls;
-        if ((j2 & feature.mask) == j) {
+        if ((j2 & JSONWriter.Feature.IgnoreEmpty.mask) == 0L) {
             label = new Label();
-            methodWriterContext.genIsEnabled(feature.mask, label);
+            methodWriterContext.genIsEnabled(JSONWriter.Feature.IgnoreEmpty.mask, label);
         } else {
             label = null;
         }
@@ -1892,7 +1892,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 methodWriter2.if_acmpne(label5);
                 methodWriter2.aload(1);
                 methodWriter2.visitLdcInsn("..");
-                methodWriter2.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+                methodWriter2.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeReference", "(Ljava/lang/String;)V");
                 methodWriter2.goto_(label3);
                 methodWriter2.visitLabel(label5);
             }
@@ -1902,7 +1902,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             String str3 = ASMUtils.DESC_FIELD_WRITER;
             methodWriter2.getfield(str2, strFieldWriter, str3);
             methodWriter2.aload(iVar);
-            methodWriter2.lload(methodWriterContext.var(CONTEXT_FEATURES));
+            methodWriter2.lload(methodWriterContext.var("CONTEXT_FEATURES"));
             methodWriter2.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "isRefDetect", "(Ljava/lang/Object;J)Z");
             methodWriter2.ifeq(label4);
             methodWriter2.aload(1);
@@ -1918,11 +1918,11 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             gwFieldName(methodWriterContext, fieldWriter2, i2);
             methodWriter2.aload(1);
             methodWriter2.aload(iVar2);
-            methodWriter2.invokevirtual(str4, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+            methodWriter2.invokevirtual(str4, "writeReference", "(Ljava/lang/String;)V");
             methodWriter2.aload(1);
             methodWriter2.aload(iVar);
             str = "popPath0";
-            methodWriter2.invokevirtual(str4, str, "(Ljava/lang/Object;)V");
+            methodWriter2.invokevirtual(str4, "popPath0", "(Ljava/lang/Object;)V");
             methodWriter2.goto_(label3);
             methodWriter2.visitLabel(label4);
         }
@@ -1951,14 +1951,14 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         if (!zDisableReferenceDetect) {
             methodWriter.aload(1);
             methodWriter.aload(iVar);
-            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str, "(Ljava/lang/Object;)V");
+            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "popPath0", "(Ljava/lang/Object;)V");
         }
         methodWriter.goto_(label3);
         methodWriter.visitLabel(label2);
         methodWriterContext.genIsEnabled(fieldWriter2.features, JSONWriter.Feature.WriteNulls.mask | JSONWriter.Feature.NullAsDefaultValue.mask | JSONWriter.Feature.WriteNullListAsEmpty.mask, label3);
         gwFieldName(methodWriterContext, fieldWriter2, i3);
         methodWriter.aload(1);
-        methodWriter.lload(methodWriterContext.var2(CONTEXT_FEATURES));
+        methodWriter.lload(methodWriterContext.var2("CONTEXT_FEATURES"));
         methodWriter.visitLdcInsn(fieldWriter2.features);
         methodWriter.lor();
         methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeArrayNull", "(J)V");
@@ -2139,7 +2139,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     gwFieldName(methodWriterContext, fieldWriter2, i4);
                     methodWriter.aload(1);
                     methodWriter.visitLdcInsn("..");
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeReference", "(Ljava/lang/String;)V");
                     methodWriter.goto_(label6);
                     methodWriter.visitLabel(label8);
                 } else {
@@ -2158,7 +2158,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 gwFieldName(methodWriterContext, fieldWriter2, i4);
                 methodWriter.aload(1);
                 methodWriter.aload(numValueOf.intValue());
-                methodWriter.invokevirtual(str12, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+                methodWriter.invokevirtual(str12, "writeReference", "(Ljava/lang/String;)V");
                 methodWriter.aload(1);
                 methodWriter.aload(iVar2);
                 methodWriter.invokevirtual(str12, "popPath0", "(Ljava/lang/Object;)V");
@@ -2276,7 +2276,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                             methodWriter.getfield(methodWriterContext.classNameType, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
                             methodWriter.aload(1);
                             methodWriter.aload(iVar2);
-                            methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                            methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                             methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "getObjectWriter", METHOD_DESC_GET_OBJECT_WRITER);
                             methodWriter.aload(1);
                             methodWriter.aload(iVar2);
@@ -2345,13 +2345,13 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                         if (cls4 != AtomicLongArray.class || cls4 == AtomicIntegerArray.class || Collection.class.isAssignableFrom(cls4) || cls4.isArray()) {
                             str10 = "writeArrayNull";
                         } else if (cls4 == Float.class || cls4 == Double.class || cls4 == cls3) {
-                            methodWriter.lload(methodWriterContext.var2(CONTEXT_FEATURES));
+                            methodWriter.lload(methodWriterContext.var2("CONTEXT_FEATURES"));
                             methodWriter.visitLdcInsn(fieldWriter3.features);
                             methodWriter.lor();
                             str10 = "writeDecimalNull";
                             str13 = "(J)V";
                         } else if (Number.class.isAssignableFrom(cls4)) {
-                            methodWriter.lload(methodWriterContext.var2(CONTEXT_FEATURES));
+                            methodWriter.lload(methodWriterContext.var2("CONTEXT_FEATURES"));
                             methodWriter.visitLdcInsn(fieldWriter3.features);
                             methodWriter.lor();
                             str10 = "writeNumberNull";
@@ -2521,7 +2521,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             gwFieldName(methodWriterContext, fieldWriter2, i4);
             methodWriter.aload(1);
             methodWriter.aload(numValueOf.intValue());
-            methodWriter.invokevirtual(str15, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+            methodWriter.invokevirtual(str15, "writeReference", "(Ljava/lang/String;)V");
             methodWriter.aload(1);
             methodWriter.aload(iVar2);
             methodWriter.invokevirtual(str15, "popPath0", "(Ljava/lang/Object;)V");
@@ -2635,7 +2635,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                                 methodWriter.getfield(methodWriterContext.classNameType, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
                                 methodWriter.aload(1);
                                 methodWriter.aload(iVar2);
-                                methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                                methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                                 methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "getObjectWriter", METHOD_DESC_GET_OBJECT_WRITER);
                                 methodWriter.aload(1);
                                 methodWriter.aload(iVar2);
@@ -2682,7 +2682,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                             methodWriter.getfield(methodWriterContext.classNameType, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
                             methodWriter.aload(1);
                             methodWriter.aload(iVar2);
-                            methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                            methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                             methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "getObjectWriter", METHOD_DESC_GET_OBJECT_WRITER);
                             methodWriter.aload(1);
                             methodWriter.aload(iVar2);
@@ -2730,7 +2730,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                             methodWriter.getfield(methodWriterContext.classNameType, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
                             methodWriter.aload(1);
                             methodWriter.aload(iVar2);
-                            methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                            methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                             methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "getObjectWriter", METHOD_DESC_GET_OBJECT_WRITER);
                             methodWriter.aload(1);
                             methodWriter.aload(iVar2);
@@ -2777,7 +2777,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                         methodWriter.getfield(methodWriterContext.classNameType, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
                         methodWriter.aload(1);
                         methodWriter.aload(iVar2);
-                        methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                        methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                         methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "getObjectWriter", METHOD_DESC_GET_OBJECT_WRITER);
                         methodWriter.aload(1);
                         methodWriter.aload(iVar2);
@@ -2922,9 +2922,9 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.astore(iVar);
         }
         JSONWriter.Feature feature = JSONWriter.Feature.IgnoreEmpty;
-        if ((j2 & feature.mask) == 0) {
+        if ((j2 & JSONWriter.Feature.IgnoreEmpty.mask) == 0) {
             label = new Label();
-            methodWriterContext.genIsEnabled(feature.mask, label);
+            methodWriterContext.genIsEnabled(JSONWriter.Feature.IgnoreEmpty.mask, label);
         } else {
             label = null;
         }
@@ -2941,15 +2941,15 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         Label label4 = new Label();
         Label label5 = new Label();
         JSONWriter.Feature feature2 = JSONWriter.Feature.NullAsDefaultValue;
-        long j3 = feature2.mask;
+        long j3 = JSONWriter.Feature.NullAsDefaultValue.mask;
         JSONWriter.Feature feature3 = JSONWriter.Feature.WriteNullNumberAsZero;
-        long j4 = feature3.mask | j3;
+        long j4 = JSONWriter.Feature.WriteNullNumberAsZero.mask | j3;
         JSONWriter.Feature feature4 = JSONWriter.Feature.WriteNullBooleanAsFalse;
-        long j5 = feature4.mask | j4;
+        long j5 = JSONWriter.Feature.WriteNullBooleanAsFalse.mask | j4;
         JSONWriter.Feature feature5 = JSONWriter.Feature.WriteNullListAsEmpty;
-        long j6 = j5 | feature5.mask;
+        long j6 = j5 | JSONWriter.Feature.WriteNullListAsEmpty.mask;
         JSONWriter.Feature feature6 = JSONWriter.Feature.WriteNullStringAsEmpty;
-        long j7 = feature6.mask;
+        long j7 = JSONWriter.Feature.WriteNullStringAsEmpty.mask;
         long j8 = j6 | j7;
         long j9 = JSONWriter.Feature.WriteNulls.mask;
         if ((j2 & (j9 | j8)) == 0) {
@@ -2961,16 +2961,16 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
         gwFieldName(methodWriterContext, fieldWriter, i2);
         if ((j2 & j8) == 0) {
-            long j10 = feature2.mask;
+            long j10 = JSONWriter.Feature.NullAsDefaultValue.mask;
             if (cls == String.class) {
-                j = feature6.mask;
+                j = JSONWriter.Feature.WriteNullStringAsEmpty.mask;
             } else if (cls == Boolean.class) {
-                j = feature4.mask;
+                j = JSONWriter.Feature.WriteNullBooleanAsFalse.mask;
             } else if (Number.class.isAssignableFrom(cls)) {
-                j = feature3.mask;
+                j = JSONWriter.Feature.WriteNullNumberAsZero.mask;
             } else {
                 if (Collection.class.isAssignableFrom(cls)) {
-                    j = feature5.mask;
+                    j = JSONWriter.Feature.WriteNullListAsEmpty.mask;
                 }
                 i3 = 1;
                 methodWriter.aload(1);
@@ -2987,13 +2987,13 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         } else {
             i3 = 1;
         }
-        methodWriter.aload(i3);
+        methodWriter.aload(1);
         methodWriter.visitLdcInsn("");
         String str2 = ASMUtils.TYPE_JSON_WRITER;
-        methodWriter.invokevirtual(str2, "writeString", METHOD_DESC_WRITE_REFERENCE);
+        methodWriter.invokevirtual(str2, "writeString", "(Ljava/lang/String;)V");
         methodWriter.goto_(label3);
         methodWriter.visitLabel(label4);
-        methodWriter.aload(i3);
+        methodWriter.aload(1);
         methodWriter.invokevirtual(str2, "writeStringNull", "()V");
         methodWriter.visitLabel(label3);
     }
@@ -3014,10 +3014,10 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         long j = fieldWriter.features;
         long j2 = JSONWriter.Feature.WriteNulls.mask;
         JSONWriter.Feature feature = JSONWriter.Feature.NullAsDefaultValue;
-        long j3 = feature.mask;
+        long j3 = JSONWriter.Feature.NullAsDefaultValue.mask;
         long j4 = j2 | j3;
         JSONWriter.Feature feature2 = JSONWriter.Feature.WriteNullNumberAsZero;
-        long j5 = feature2.mask;
+        long j5 = JSONWriter.Feature.WriteNullNumberAsZero.mask;
         long j6 = j & (j4 | j5);
         String str2 = "writeFloat";
         if (j6 == 0) {
@@ -3029,11 +3029,11 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         } else {
             gwFieldName(methodWriterContext, fieldWriter, i2);
             methodWriter.aload(1);
-            if (((feature2.mask | feature.mask) & fieldWriter.features) != 0) {
+            if (((JSONWriter.Feature.WriteNullNumberAsZero.mask | JSONWriter.Feature.NullAsDefaultValue.mask) & fieldWriter.features) != 0) {
                 methodWriter.visitLdcInsn(0);
                 methodWriter.i2f();
                 str2 = "writeFloat";
-                methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str2, "(F)V");
+                methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeFloat", "(F)V");
             } else {
                 str2 = "writeFloat";
                 methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeNull", "()V");
@@ -3046,14 +3046,14 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.aload(1);
             methodWriter.aload(iVar);
             methodWriter.invokevirtual("java/lang/Float", "floatValue", "()F");
-            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str2, "(D)V");
+            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeFloat", "(D)V");
         } else {
             methodWriter.aload(0);
             methodWriter.getfield(str, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
             methodWriter.aload(1);
             methodWriter.aload(iVar);
             methodWriter.invokevirtual("java/lang/Float", "floatValue", "()F");
-            methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, str2, METHOD_DESC_WRITE_F);
+            methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "writeFloat", METHOD_DESC_WRITE_F);
         }
         methodWriter.visitLabel(label);
     }
@@ -3073,11 +3073,11 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         boolean z = (JSONWriter.Feature.WriteNonStringValueAsString.mask & j) != 0;
         long j2 = JSONWriter.Feature.WriteNulls.mask;
         JSONWriter.Feature feature = JSONWriter.Feature.NullAsDefaultValue;
-        long j3 = feature.mask;
+        long j3 = JSONWriter.Feature.NullAsDefaultValue.mask;
         long j4 = j2 | j3;
         JSONWriter.Feature feature2 = JSONWriter.Feature.WriteNullNumberAsZero;
         boolean z2 = z;
-        long j5 = feature2.mask;
+        long j5 = JSONWriter.Feature.WriteNullNumberAsZero.mask;
         if ((j & (j4 | j5)) == 0) {
             methodWriterContext.genIsEnabled(j2 | j3 | j5, label3, label);
             methodWriter.visitLabel(label3);
@@ -3087,7 +3087,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         } else {
             gwFieldName(methodWriterContext, fieldWriter, i2);
             methodWriter.aload(1);
-            if ((fieldWriter.features & (feature2.mask | feature.mask)) != 0) {
+            if ((fieldWriter.features & (JSONWriter.Feature.WriteNullNumberAsZero.mask | JSONWriter.Feature.NullAsDefaultValue.mask)) != 0) {
                 methodWriter.visitLdcInsn(0);
                 methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeInt32", "(I)V");
             } else {
@@ -3130,10 +3130,10 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         long j = fieldWriter.features;
         long j2 = JSONWriter.Feature.WriteNulls.mask;
         JSONWriter.Feature feature = JSONWriter.Feature.NullAsDefaultValue;
-        long j3 = feature.mask;
+        long j3 = JSONWriter.Feature.NullAsDefaultValue.mask;
         long j4 = j2 | j3;
         JSONWriter.Feature feature2 = JSONWriter.Feature.WriteNullNumberAsZero;
-        long j5 = feature2.mask;
+        long j5 = JSONWriter.Feature.WriteNullNumberAsZero.mask;
         if ((j & (j4 | j5)) == 0) {
             methodWriterContext.genIsEnabled(j2 | j3 | j5, label3, label);
             methodWriter.visitLabel(label3);
@@ -3147,7 +3147,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.aload(1);
             i3 = iVar;
             str = str2;
-            if ((fieldWriter.features & (feature2.mask | feature.mask)) != 0) {
+            if ((fieldWriter.features & (JSONWriter.Feature.WriteNullNumberAsZero.mask | JSONWriter.Feature.NullAsDefaultValue.mask)) != 0) {
                 methodWriter.lconst_0();
                 methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeInt64", "(J)V");
             } else {
@@ -3210,7 +3210,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriter2.invokevirtual(str, "writeNull", "()V");
         methodWriter2.goto_(label2);
         methodWriter2.visitLabel(label3);
-        if (z) {
+        if (false) {
             genGetObject(methodWriterContext, fieldWriter, i2, i);
             methodWriter2.astore(iVar);
             methodWriter = methodWriter2;
@@ -3261,7 +3261,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.goto_(label6);
             methodWriter.visitLabel(label8);
             methodWriter.aload(iVar7);
-            methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+            methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
             methodWriter.dup();
             methodWriter.astore(iVar4);
             methodWriter.aload(iVar5);
@@ -3333,7 +3333,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriter2.ifnonnull(label2);
         methodWriter2.aload(1);
         String str3 = ASMUtils.TYPE_JSON_WRITER;
-        boolean z2 = z;
+        boolean z2 = false;
         methodWriter2.invokevirtual(str3, "writeNull", "()V");
         methodWriter2.goto_(label);
         methodWriter2.visitLabel(label2);
@@ -3349,7 +3349,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 methodWriter2.if_acmpne(label4);
                 methodWriter2.aload(1);
                 methodWriter2.visitLdcInsn("..");
-                methodWriter2.invokevirtual(str3, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+                methodWriter2.invokevirtual(str3, "writeReference", "(Ljava/lang/String;)V");
                 methodWriter2.goto_(label);
                 methodWriter2.visitLabel(label4);
             }
@@ -3358,7 +3358,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             String str4 = ASMUtils.DESC_FIELD_WRITER;
             methodWriter2.getfield(str2, strFieldWriter, str4);
             methodWriter2.aload(iVar);
-            methodWriter2.lload(methodWriterContext.var(CONTEXT_FEATURES));
+            methodWriter2.lload(methodWriterContext.var("CONTEXT_FEATURES"));
             methodWriter2.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "isRefDetect", "(Ljava/lang/Object;J)Z");
             methodWriter2.ifeq(label3);
             methodWriter2.aload(1);
@@ -3371,15 +3371,15 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter2.ifnull(label3);
             methodWriter2.aload(1);
             methodWriter2.aload(iVar2);
-            methodWriter2.invokevirtual(str3, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+            methodWriter2.invokevirtual(str3, "writeReference", "(Ljava/lang/String;)V");
             methodWriter2.aload(1);
             methodWriter2.aload(iVar);
             str = "(Ljava/lang/Object;)V";
-            methodWriter2.invokevirtual(str3, "popPath0", str);
+            methodWriter2.invokevirtual(str3, "popPath0", "(Ljava/lang/Object;)V");
             methodWriter2.goto_(label);
             methodWriter2.visitLabel(label3);
         }
-        if (z2) {
+        if (false) {
             methodWriter = methodWriter2;
             i3 = iVar;
             gwListSimpleType(methodWriterContext, i2, methodWriter, cls2, cls, i3);
@@ -3401,9 +3401,9 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "writeListValueJSONB", METHOD_DESC_WRITE_LIST);
         }
         if (!zDisableReferenceDetect) {
-            methodWriter.aload(i4);
+            methodWriter.aload(1);
             methodWriter.aload(i3);
-            methodWriter.invokevirtual(str3, "popPath0", str);
+            methodWriter.invokevirtual(str3, "popPath0", "(Ljava/lang/Object;)V");
         }
         methodWriter.visitLabel(label);
     }
@@ -3510,11 +3510,11 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     i4 = 1;
                     methodWriter.aload(1);
                     methodWriter.visitLdcInsn("..");
-                    methodWriter.invokevirtual(str2, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+                    methodWriter.invokevirtual(str2, "writeReference", "(Ljava/lang/String;)V");
                     methodWriter.goto_(label2);
                     methodWriter.visitLabel(label5);
                 }
-                methodWriter.aload(i4);
+                methodWriter.aload(1);
                 methodWriter.aload(0);
                 methodWriter.getfield(methodWriterContext.classNameType, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
                 methodWriter.aload(iVar);
@@ -3525,7 +3525,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 i3 = 1;
                 methodWriter.aload(1);
                 methodWriter.aload(iVar2);
-                methodWriter.invokevirtual(str2, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+                methodWriter.invokevirtual(str2, "writeReference", "(Ljava/lang/String;)V");
                 methodWriter.aload(1);
                 methodWriter.aload(iVar);
                 methodWriter.invokevirtual(str2, "popPath0", "(Ljava/lang/Object;)V");
@@ -3533,17 +3533,17 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 methodWriter.visitLabel(label4);
             }
             if (cls == String[].class) {
-                methodWriter.aload(i3);
+                methodWriter.aload(1);
                 methodWriter.aload(iVar);
                 methodWriter.invokevirtual(str2, "writeString", "([Ljava/lang/String;)V");
             } else {
                 methodWriter.aload(0);
                 methodWriter.getfield(methodWriterContext.classNameType, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
-                methodWriter.aload(i3);
+                methodWriter.aload(1);
                 methodWriter.aload(iVar);
-                methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                 methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "getObjectWriter", METHOD_DESC_GET_OBJECT_WRITER);
-                methodWriter.aload(i3);
+                methodWriter.aload(1);
                 methodWriter.aload(iVar);
                 methodWriter.visitLdcInsn(fieldWriter.fieldName);
                 methodWriterContext.loadFieldType(i2, fieldWriter.fieldType);
@@ -3612,11 +3612,11 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 i4 = 1;
                 methodWriter.aload(1);
                 methodWriter.visitLdcInsn("..");
-                methodWriter.invokevirtual(str5, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+                methodWriter.invokevirtual(str5, "writeReference", "(Ljava/lang/String;)V");
                 methodWriter.goto_(label);
                 methodWriter.visitLabel(label4);
             }
-            methodWriter.aload(i4);
+            methodWriter.aload(1);
             methodWriter.aload(0);
             methodWriter.getfield(str4, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
             methodWriter.aload(iVar);
@@ -3627,12 +3627,12 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             i3 = 1;
             methodWriter.aload(1);
             methodWriter.aload(iVar2);
-            methodWriter.invokevirtual(str5, "writeReference", METHOD_DESC_WRITE_REFERENCE);
+            methodWriter.invokevirtual(str5, "writeReference", "(Ljava/lang/String;)V");
             methodWriter.aload(1);
             methodWriter.aload(iVar);
             str2 = "(Ljava/lang/Object;)V";
             str = "popPath0";
-            methodWriter.invokevirtual(str5, str, str2);
+            methodWriter.invokevirtual(str5, "popPath0", "(Ljava/lang/Object;)V");
             methodWriter.goto_(label);
             methodWriter.visitLabel(label3);
         } else {
@@ -3642,11 +3642,11 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
         methodWriter.aload(0);
         methodWriter.getfield(str4, fieldWriter(i2), ASMUtils.DESC_FIELD_WRITER);
-        methodWriter.aload(i3);
+        methodWriter.aload(1);
         methodWriter.aload(iVar);
-        methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+        methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
         methodWriter.invokevirtual(ASMUtils.TYPE_FIELD_WRITER, "getObjectWriter", METHOD_DESC_GET_OBJECT_WRITER);
-        methodWriter.aload(i3);
+        methodWriter.aload(1);
         methodWriter.aload(iVar);
         methodWriter.visitLdcInsn(str3);
         methodWriterContext.loadFieldType(i2, fieldWriter.fieldType);
@@ -3655,7 +3655,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         if (z2) {
             methodWriter.aload(1);
             methodWriter.aload(iVar);
-            methodWriter.invokevirtual(str5, str, str2);
+            methodWriter.invokevirtual(str5, "popPath0", "(Ljava/lang/Object;)V");
         }
         methodWriter.visitLabel(label);
     }
@@ -3686,7 +3686,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         } else if (i2 <= 8 || JDKUtils.OPENJ9) {
             methodWriter.aload(1);
             methodWriter.aload(i);
-            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, z ? "writeSymbol" : "writeString", METHOD_DESC_WRITE_REFERENCE);
+            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, z ? "writeSymbol" : "writeString", "(Ljava/lang/String;)V");
         } else {
             long j = JDKUtils.FIELD_STRING_CODER_OFFSET;
             if (j != -1) {
@@ -3694,7 +3694,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 if (j2 == -1 || z) {
                     methodWriter.aload(1);
                     methodWriter.aload(i);
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, z ? "writeSymbol" : "writeString", METHOD_DESC_WRITE_REFERENCE);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, z ? "writeSymbol" : "writeString", "(Ljava/lang/String;)V");
                 } else {
                     Label label3 = new Label();
                     Label label4 = new Label();
@@ -3720,7 +3720,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             } else {
                 methodWriter.aload(1);
                 methodWriter.aload(i);
-                methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, z ? "writeSymbol" : "writeString", METHOD_DESC_WRITE_REFERENCE);
+                methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, z ? "writeSymbol" : "writeString", "(Ljava/lang/String;)V");
             }
         }
         if (z2) {
@@ -3735,7 +3735,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         if (cls == String.class) {
             genGetObject(methodWriterContext, fieldWriter, i2, i);
             methodWriter.checkcast("java/lang/String");
-            int iVar = methodWriterContext.var("FIELD_VALUE_".concat(fieldWriter.fieldClass.getName()));
+            int iVar = methodWriterContext.var("FIELD_VALUE_".concat(String.class.getName()));
             methodWriter.astore(iVar);
             gwString(methodWriterContext, false, true, iVar);
             return;
@@ -3781,7 +3781,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             String str3 = fieldWriter.format;
             if ("string".equals(str3)) {
                 methodWriter.invokestatic("java/lang/Integer", "toString", "(I)Ljava/lang/String;");
-                methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeString", METHOD_DESC_WRITE_REFERENCE);
+                methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeString", "(Ljava/lang/String;)V");
                 return;
             } else if (str3 == null) {
                 methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeInt32", "(I)V");
@@ -3803,7 +3803,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 str = z ? "writeString" : "writeInt16";
                 str2 = "(S)V";
             } else if (cls == cls4) {
-                str = z ? "writeString" : "writeInt32";
+                str = "writeString";
                 str2 = "(I)V";
             } else {
                 if (cls == Integer.class) {
@@ -3860,7 +3860,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
         str2 = "(Z)V";
         str = "writeBool";
-        methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str, str2);
+        methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "writeBool", "(Z)V");
     }
 
     private void gwValueJSONB(MethodWriterContext methodWriterContext, FieldWriter fieldWriter, int i, int i2) {
@@ -3941,7 +3941,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 break;
             }
             FieldWriter next = it.next();
-            if (next.method != null && (next.features & FieldInfo.FIELD_MASK) == 0) {
+            if (next.method != null && (next.features & 4503599627370496L) == 0) {
                 z = true;
                 break;
             }
@@ -3965,7 +3965,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             methodWriter.aload(i);
             methodWriter.ifnull(label);
             methodWriter.aload(i);
-            methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+            methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
             methodWriter.aload(i2);
             methodWriter.if_acmpeq(label);
             methodWriter.aload(1);
@@ -4062,12 +4062,12 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     cArr[length] = '/';
                     i4 = 0;
                     while (i4 < length) {
-                        c3 = c2;
+                        c3 = 47;
                         if (cArr[i4] == '.') {
-                            cArr[i4] = c3;
+                            cArr[i4] = 47;
                         }
                         i4++;
-                        c2 = c3;
+                        c2 = 47;
                     }
                     str6 = new String(cArr);
                     str5 = str7;
@@ -4106,7 +4106,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 methodWriterContext = new MethodWriterContext(objectWriterProvider, cls4, j, str6, methodWriterVisitMethod, 8, false);
                 iVar = methodWriterContext.var("offset");
                 iVar2 = methodWriterContext.var("bytes");
-                iVar3 = methodWriterContext.var2(CONTEXT_FEATURES);
+                iVar3 = methodWriterContext.var2("CONTEXT_FEATURES");
                 iVar4 = methodWriterContext.var("symbolTable");
                 methodWriterVisitMethod.aload(1);
                 String str9 = ASMUtils.TYPE_JSON_WRITER;
@@ -4180,7 +4180,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 methodWriterVisitMethod.goto_(label3);
                 methodWriterVisitMethod.visitLabel(label4);
                 methodWriterVisitMethod.aload(iVar6);
-                methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                methodWriterVisitMethod.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                 methodWriterVisitMethod.aload(0);
                 methodWriterVisitMethod.getfield(ASMUtils.TYPE_FIELD_WRITER, "fieldClass", "Ljava/lang/Class;");
                 methodWriterVisitMethod.if_acmpeq(label);
@@ -4226,7 +4226,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
         list = null;
         z = false;
-        if (z) {
+        if (false) {
             return null;
         }
         it = list.iterator();
@@ -4250,12 +4250,12 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             cArr[length] = '/';
             i4 = 0;
             while (i4 < length) {
-                c3 = c2;
+                c3 = 47;
                 if (cArr[i4] == '.') {
-                    cArr[i4] = c3;
+                    cArr[i4] = 47;
                 }
                 i4++;
-                c2 = c3;
+                c2 = 47;
             }
             str6 = new String(cArr);
             str5 = str12;
@@ -4294,7 +4294,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriterContext = new MethodWriterContext(objectWriterProvider, cls4, j, str6, methodWriterVisitMethod, 8, false);
         iVar = methodWriterContext.var("offset");
         iVar2 = methodWriterContext.var("bytes");
-        iVar3 = methodWriterContext.var2(CONTEXT_FEATURES);
+        iVar3 = methodWriterContext.var2("CONTEXT_FEATURES");
         iVar4 = methodWriterContext.var("symbolTable");
         methodWriterVisitMethod.aload(1);
         String str14 = ASMUtils.TYPE_JSON_WRITER;
@@ -4368,7 +4368,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriterVisitMethod.goto_(label6);
         methodWriterVisitMethod.visitLabel(label7);
         methodWriterVisitMethod.aload(iVar6);
-        methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+        methodWriterVisitMethod.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
         methodWriterVisitMethod.aload(0);
         methodWriterVisitMethod.getfield(ASMUtils.TYPE_FIELD_WRITER, "fieldClass", "Ljava/lang/Class;");
         methodWriterVisitMethod.if_acmpeq(label);
@@ -4481,7 +4481,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             case 11:
                 str3 = ASMUtils.TYPE_OBJECT_WRITER_11;
                 break;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 str3 = ASMUtils.TYPE_OBJECT_WRITER_12;
                 break;
             default:
@@ -4492,8 +4492,8 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         classWriter.visit(52, 49, str, str6, INTERFACES);
         genFields(list, classWriter, str6);
         genMethodInit(list, classWriter, str, str6);
-        boolean z = (j & FieldInfo.DISABLE_JSONB) != 0;
-        boolean z2 = (j & FieldInfo.DISABLE_ARRAY_MAPPING) != 0;
+        boolean z = (j & 1152921504606846976L) != 0;
+        boolean z2 = (j & 288230376151711744L) != 0;
         if (!z) {
             String str7 = str;
             genMethodWriteJSONB(objectWriterProvider, cls, listBuildGroups, list, classWriter, str7, j);
@@ -4529,7 +4529,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
         byte[] byteArray = classWriter.toByteArray();
         try {
-            ObjectWriterAdapter objectWriterAdapter = (ObjectWriterAdapter) objectWriterCreatorASM.classLoader.defineClassPublic(str4, byteArray, i, byteArray.length).getConstructor(Class.class, String.class, String.class, Long.TYPE, List.class).newInstance(cls2, beanInfo.typeKey, beanInfo.typeName, Long.valueOf(j), list2);
+            ObjectWriterAdapter objectWriterAdapter = (ObjectWriterAdapter) objectWriterCreatorASM.classLoader.defineClassPublic(str4, byteArray, 0, byteArray.length).getConstructor(Class.class, String.class, String.class, Long.TYPE, List.class).newInstance(cls2, beanInfo.typeKey, beanInfo.typeName, Long.valueOf(j), list2);
             if (beanInfo.serializeFilters == null) {
                 return objectWriterAdapter;
             }
@@ -4656,7 +4656,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             }
             ObjectWriter objectWriter2 = objectWriter;
             long j2 = fieldInfo.features;
-            if ((j2 & FieldInfo.JIT) != 0) {
+            if ((j2 & 18014398509481984L) != 0) {
                 try {
                     z2 = true;
                     fieldWriter = null;
@@ -4664,16 +4664,16 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     try {
                         fieldWriterCreateFieldWriterLambda = r1.createFieldWriterLambda(objectWriterProvider, cls, fieldName, fieldInfo.ordinal, j2, fieldInfo.format, fieldInfo.label, method, objectWriter2, fieldInfo.contentAs);
                         r2 = r1;
-                        r14 = z2;
+                        r14 = true;
                     } catch (Throwable th) {
                         th = th;
                         r1.jitErrorCount.incrementAndGet();
                         r1.jitErrorLast = th;
                         r3 = r1;
-                        z3 = z2;
+                        z3 = true;
                         fieldWriterCreateFieldWriterLambda = fieldWriter;
                         r2 = r3;
-                        r14 = z3;
+                        r14 = true;
                     }
                 } catch (Throwable th2) {
                     th = th2;
@@ -4696,9 +4696,9 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 }
                 if (fieldWriter2 == null) {
                     cCharAt = fieldName.charAt(0);
-                    if (cCharAt < 'A' && cCharAt <= 'Z') {
+                    if (cCharAt < 'A' && true) {
                         obj = ((char) (cCharAt + ' ')) + fieldName.substring(r14);
-                    } else if (cCharAt >= 'a' || cCharAt > 'z') {
+                    } else if (cCharAt >= 'a' || false) {
                         obj = fieldWriter;
                     } else {
                         obj = ((char) (cCharAt - ' ')) + fieldName.substring(r14);
@@ -4718,8 +4718,8 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             r3 = this;
             fieldWriterCreateFieldWriterLambda = fieldWriter;
             r2 = r3;
-            r14 = z3;
-            if (fieldWriterCreateFieldWriterLambda == null) {
+            r14 = true;
+            if (true) {
                 fieldWriterCreateFieldWriterLambda = r2.createFieldWriter(objectWriterProvider, cls, fieldName, fieldInfo.ordinal, fieldInfo.features, fieldInfo.format, fieldInfo.locale, fieldInfo.label, method, objectWriter2, fieldInfo.contentAs);
                 method2 = method;
             } else {
@@ -4735,7 +4735,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             if (fieldWriter2 == null) {
                 cCharAt = fieldName.charAt(0);
                 if (cCharAt < 'A') {
-                    if (cCharAt >= 'a') {
+                    if (false) {
                         obj = fieldWriter;
                     } else {
                         obj = fieldWriter;
@@ -4745,7 +4745,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 } else {
                     obj = fieldWriter;
                 }
-                if (obj != null) {
+                if (false) {
                 }
             }
         }
@@ -4870,7 +4870,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         if (z) {
             if (fieldWriter.defaultValue == null) {
                 if (cls2.isPrimitive()) {
-                    int iVar3 = methodWriterContext.var(NOT_WRITE_DEFAULT_VALUE);
+                    int iVar3 = methodWriterContext.var("WRITE_DEFAULT_VALUE");
                     Label label4 = new Label();
                     if (cls2 == cls7 || cls2 == cls6 || cls2 == cls5 || cls2 == cls4) {
                         methodWriter.iload(num.intValue());
@@ -4889,7 +4889,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                     }
                 } else {
                     Label label5 = new Label();
-                    methodWriter.iload(methodWriterContext.var(WRITE_NULLS));
+                    methodWriter.iload(methodWriterContext.var("WRITE_NULLS"));
                     methodWriter.ifne(label5);
                     methodWriter.aload(num.intValue());
                     methodWriter.ifnull(label);
@@ -5047,7 +5047,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 str6 = "writeInt16";
                 cls = Collection.class;
             }
-            if (cls2 != Float.class || cls2 == Double.class || cls2 == Byte.class || cls2 == Short.class || cls2 == Integer.class || cls2 == Long.class || cls2 == String[].class || cls.isAssignableFrom(cls2) || z3) {
+            if (cls2 != Float.class || false || false || false || false || false || false || Collection.class.isAssignableFrom(Float.class) || z3) {
                 methodWriter.lload(i8);
                 j2 = j | fieldWriter.features;
                 if (j2 != 0) {
@@ -5061,7 +5061,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 if (z4) {
                     methodWriter.aload(1);
                     methodWriter.aload(num.intValue());
-                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str3);
+                    methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "popPath0", "(Ljava/lang/Object;)V");
                 }
                 methodWriter.visitLabel(label);
             }
@@ -5084,13 +5084,13 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 methodWriter.lor();
             }
         }
-        methodWriter.invokestatic(ASMUtils.TYPE_JSONB_IO, str6, str2, true);
+        methodWriter.invokestatic(ASMUtils.TYPE_JSONB_IO, str6, "([BIZ)I", true);
         methodWriter.istore(i7);
         if (label != null) {
             if (z4) {
                 methodWriter.aload(1);
                 methodWriter.aload(num.intValue());
-                methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, str4, str3);
+                methodWriter.invokevirtual(ASMUtils.TYPE_JSON_WRITER, "popPath0", "(Ljava/lang/Object;)V");
             }
             methodWriter.visitLabel(label);
         }
@@ -5128,7 +5128,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         String str2;
         MethodWriter methodWriter = methodWriterContext.mw;
         Class<?> cls = methodWriterContext.objectClass;
-        String strType = cls == null ? ASMUtils.TYPE_OBJECT : ASMUtils.type(cls);
+        String strType = cls == null ? "java/lang/Object" : ASMUtils.type(cls);
         Class cls2 = fieldWriter.fieldClass;
         Member member = fieldWriter.method;
         if (member == null) {
@@ -5222,7 +5222,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         methodWriter.dup();
         methodWriter.astore(iVar);
         methodWriter.ifnonnull(label2);
-        methodWriter.iload(methodWriterContext.var(WRITE_NULLS));
+        methodWriter.iload(methodWriterContext.var("WRITE_NULLS"));
         methodWriter.ifne(label3);
         methodWriter.goto_(label);
         methodWriter.visitLabel(label3);
@@ -5325,27 +5325,27 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
 
         public boolean disableAutoType() {
-            return (this.objectFeatures & FieldInfo.DISABLE_AUTO_TYPE) != 0;
+            return (this.objectFeatures & 576460752303423488L) != 0;
         }
 
         public boolean disableJSONB() {
-            return (this.objectFeatures & FieldInfo.DISABLE_JSONB) != 0;
+            return (this.objectFeatures & 1152921504606846976L) != 0;
         }
 
         public boolean disableReferenceDetect() {
-            return (this.objectFeatures & FieldInfo.DISABLE_REFERENCE_DETECT) != 0;
+            return (this.objectFeatures & 144115188075855872L) != 0;
         }
 
         public boolean disableSmartMatch() {
-            return (this.objectFeatures & FieldInfo.DISABLE_SMART_MATCH) != 0;
+            return (this.objectFeatures & 9007199254740992L) != 0;
         }
 
         public boolean disableSupportArrayMapping() {
-            return (this.objectFeatures & FieldInfo.DISABLE_ARRAY_MAPPING) != 0;
+            return (this.objectFeatures & 288230376151711744L) != 0;
         }
 
         public void genIsDisabled(long j, Label label) {
-            this.mw.lload(var2(ObjectWriterCreatorASM.CONTEXT_FEATURES));
+            this.mw.lload(var2("CONTEXT_FEATURES"));
             this.mw.visitLdcInsn(j);
             this.mw.land();
             this.mw.lconst_0();
@@ -5354,7 +5354,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
 
         public void genIsEnabled(long j, Label label) {
-            this.mw.lload(var2(ObjectWriterCreatorASM.CONTEXT_FEATURES));
+            this.mw.lload(var2("CONTEXT_FEATURES"));
             this.mw.visitLdcInsn(j);
             this.mw.land();
             this.mw.lconst_0();
@@ -5365,7 +5365,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
 
         public void genIsEnabledAndAssign(long j, int i) {
-            this.mw.lload(var2(ObjectWriterCreatorASM.CONTEXT_FEATURES));
+            this.mw.lload(var2("CONTEXT_FEATURES"));
             this.mw.visitLdcInsn(j);
             this.mw.land();
             this.mw.lconst_0();
@@ -5380,14 +5380,14 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             MethodWriter methodWriter = this.mw;
             String str = ASMUtils.TYPE_JSON_WRITER;
             methodWriter.invokevirtual(str, "getFeatures", "()J");
-            this.mw.lstore(var2(ObjectWriterCreatorASM.CONTEXT_FEATURES));
+            this.mw.lstore(var2("CONTEXT_FEATURES"));
             if (z) {
                 Label label3 = new Label();
                 Label label4 = new Label();
                 this.mw.aload(1);
                 this.mw.getfield(str, "symbolTable", ObjectWriterCreatorASM.DESC_SYMBOL);
                 this.mw.ifnonnull(label3);
-                this.mw.lload(var2(ObjectWriterCreatorASM.CONTEXT_FEATURES));
+                this.mw.lload(var2("CONTEXT_FEATURES"));
                 this.mw.visitLdcInsn(JSONWriter.Feature.WriteNameAsSymbol.mask);
                 this.mw.land();
                 this.mw.lconst_0();
@@ -5398,14 +5398,14 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 this.mw.visitLabel(label3);
                 this.mw.iconst_0();
                 this.mw.visitLabel(label4);
-                this.mw.istore(var2(ObjectWriterCreatorASM.NAME_DIRECT));
+                this.mw.istore(var2("NAME_DIRECT"));
             } else {
                 Label label5 = new Label();
                 Label label6 = new Label();
                 this.mw.aload(1);
                 this.mw.getfield(str, "useSingleQuote", "Z");
                 this.mw.ifne(label5);
-                this.mw.lload(var2(ObjectWriterCreatorASM.CONTEXT_FEATURES));
+                this.mw.lload(var2("CONTEXT_FEATURES"));
                 this.mw.visitLdcInsn(JSONWriter.Feature.UnquoteFieldName.mask | JSONWriter.Feature.UseSingleQuotes.mask);
                 this.mw.land();
                 this.mw.lconst_0();
@@ -5416,16 +5416,16 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 this.mw.visitLabel(label5);
                 this.mw.iconst_0();
                 this.mw.visitLabel(label6);
-                this.mw.istore(var2(ObjectWriterCreatorASM.NAME_DIRECT));
+                this.mw.istore(var2("NAME_DIRECT"));
             }
-            genIsEnabledAndAssign(JSONWriter.Feature.NotWriteDefaultValue.mask, var(ObjectWriterCreatorASM.NOT_WRITE_DEFAULT_VALUE));
-            this.mw.iload(var(ObjectWriterCreatorASM.NOT_WRITE_DEFAULT_VALUE));
+            genIsEnabledAndAssign(JSONWriter.Feature.NotWriteDefaultValue.mask, var("WRITE_DEFAULT_VALUE"));
+            this.mw.iload(var("WRITE_DEFAULT_VALUE"));
             this.mw.ifeq(label);
             this.mw.iconst_0();
-            this.mw.istore(var(ObjectWriterCreatorASM.WRITE_NULLS));
+            this.mw.istore(var("WRITE_NULLS"));
             this.mw.goto_(label2);
             this.mw.visitLabel(label);
-            genIsEnabledAndAssign(JSONWriter.Feature.WriteNulls.mask | JSONWriter.Feature.NullAsDefaultValue.mask, var(ObjectWriterCreatorASM.WRITE_NULLS));
+            genIsEnabledAndAssign(JSONWriter.Feature.WriteNulls.mask | JSONWriter.Feature.NullAsDefaultValue.mask, var("WRITE_NULLS"));
             this.mw.visitLabel(label2);
         }
 
@@ -5454,7 +5454,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
 
         public void genIsEnabled(long j, long j2, Label label) {
-            this.mw.lload(var2(ObjectWriterCreatorASM.CONTEXT_FEATURES));
+            this.mw.lload(var2("CONTEXT_FEATURES"));
             this.mw.visitLdcInsn(j);
             this.mw.lor();
             this.mw.visitLdcInsn(j2);
@@ -5467,7 +5467,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
         }
 
         public void genIsEnabled(long j, Label label, Label label2) {
-            this.mw.lload(var2(ObjectWriterCreatorASM.CONTEXT_FEATURES));
+            this.mw.lload(var2("CONTEXT_FEATURES"));
             this.mw.visitLdcInsn(j);
             this.mw.land();
             this.mw.lconst_0();
@@ -5525,7 +5525,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             j4 &= ~JSONWriter.Feature.WriteClassName.mask;
         }
         boolean zIsRecord = BeanUtils.isRecord(cls3);
-        final long j5 = j | j4 | (zIsRecord ? FieldInfo.RECORD : 0L);
+        final long j5 = j | j4 | (zIsRecord ? 4611686018427387904L : 0L);
         boolean z3 = (((JSONWriter.Feature.FieldBased.mask & j5) == 0 || cls3.isInterface()) && beanInfoCreateBeanInfo.alphabetic) ? false : true;
         if (!Throwable.class.isAssignableFrom(cls3) && !BeanUtils.isExtendedMap(cls3) && beanInfoCreateBeanInfo.rootName == null) {
             final LinkedHashMap linkedHashMap = new LinkedHashMap();
@@ -5543,7 +5543,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
 
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj3) {
-                        switch (i) {
+                        switch (1) {
                             case 0:
                                 this.f7351.lambda$createObjectWriter$0(fieldInfo, cls3, j5, objectWriterProvider, beanInfoCreateBeanInfo, linkedHashMap, (Field) obj3);
                                 break;
@@ -5584,7 +5584,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
 
                                 @Override // java.util.function.Consumer
                                 public final void accept(Object obj3) {
-                                    switch (i2) {
+                                    switch (0) {
                                         case 0:
                                             this.f7351.lambda$createObjectWriter$0(fieldInfo2, cls3, j5, objectWriterProvider, beanInfoCreateBeanInfo, linkedHashMap, (Field) obj3);
                                             break;
@@ -5605,7 +5605,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                         linkedHashMap = linkedHashMap;
                         beanInfoCreateBeanInfo = beanInfoCreateBeanInfo;
                         BeanUtils.getters(cls3, mixIn, z4, c2263);
-                        cls2 = obj;
+                        cls2 = Throwable.class;
                         break;
                     }
                 }
@@ -5620,13 +5620,13 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                         sb.append(", fields ");
                         JSONArray jSONArray = new JSONArray();
                         for (FieldWriter fieldWriter2 : arrayList) {
-                            jSONArray.add(JSONObject.of("name", (Object) fieldWriter2.fieldName, g.y, (Object) fieldWriter2.fieldClass, "ordinal", (Object) Integer.valueOf(fieldWriter2.ordinal), "field", (Object) fieldWriter2.field, "method", (Object) fieldWriter2.method));
+                            jSONArray.add(JSONObject.of("name", (Object) fieldWriter2.fieldName, "type", (Object) fieldWriter2.fieldClass, "ordinal", (Object) Integer.valueOf(fieldWriter2.ordinal), "field", (Object) fieldWriter2.field, "method", (Object) fieldWriter2.method));
                         }
                         sb.append(jSONArray);
                         throw new JSONException(sb.toString(), e2);
                     }
                 }
-                if (arrayList.size() < 100 || cls2.isAssignableFrom(cls3)) {
+                if (arrayList.size() < 100 || Throwable.class.isAssignableFrom(cls3)) {
                     z = false;
                 } else {
                     z = true;
@@ -5643,7 +5643,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 for (FieldWriter fieldWriter3 : arrayList) {
                     if (fieldWriter3.getInitWriter() == null) {
                         j3 = fieldWriter3.features;
-                        if ((FieldInfo.VALUE_MASK & j3) == r14 || (j3 & FieldInfo.RAW_VALUE_MASK) != 0) {
+                        if ((281474976710656L & j3) == r14 || (j3 & 1125899906842624L) != 0) {
                         }
                     }
                     z = false;
@@ -5662,7 +5662,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
                 objectWriterCreatorASM.setDefaultValue(arrayList, cls3);
                 return objectWriterCreatorASM.jitWriter(cls3, objectWriterProvider, beanInfoCreateBeanInfo, arrayList, j2);
             }
-            cls2 = obj2;
+            cls2 = Throwable.class;
             arrayList = new ArrayList(linkedHashMap.values());
             objectWriterCreatorASM.handleIgnores(beanInfoCreateBeanInfo, arrayList);
             if (beanInfoCreateBeanInfo.alphabetic) {
@@ -5693,7 +5693,7 @@ public class ObjectWriterCreatorASM extends ObjectWriterCreator {
             while (r0.hasNext()) {
                 if (fieldWriter3.getInitWriter() == null) {
                     j3 = fieldWriter3.features;
-                    if ((FieldInfo.VALUE_MASK & j3) == r14) {
+                    if ((281474976710656L & j3) == r14) {
                     }
                 }
                 z = false;

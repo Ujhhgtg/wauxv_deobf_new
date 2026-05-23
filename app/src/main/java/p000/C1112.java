@@ -23,7 +23,7 @@ public final class C1112 implements Iterator, InterfaceC1737 {
     @Override // java.util.Iterator
     public final boolean hasNext() {
         Iterator it;
-        switch (this.f4156) {
+        switch (1) {
             case 0:
                 break;
             default:
@@ -43,7 +43,7 @@ public final class C1112 implements Iterator, InterfaceC1737 {
     @Override // java.util.Iterator
     public final Object next() {
         Iterator it;
-        switch (this.f4156) {
+        switch (1) {
             case 0:
                 break;
             default:
@@ -68,7 +68,7 @@ public final class C1112 implements Iterator, InterfaceC1737 {
 
     @Override // java.util.Iterator
     public final void remove() {
-        switch (this.f4156) {
+        switch (1) {
             case 0:
                 throw new UnsupportedOperationException("Operation is not supported for read-only collection");
             default:

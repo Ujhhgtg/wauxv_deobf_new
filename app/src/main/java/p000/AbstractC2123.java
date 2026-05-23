@@ -28,7 +28,7 @@ import java.lang.reflect.Field;
 public abstract class AbstractC2123 extends FrameLayout implements InterfaceC1956 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
-    public static final int[] f6985 = {R.attr.state_checked};
+    public static final int[] f6985 = {16842912};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
     public static final C2102 f6986 = new C2102(3);
@@ -166,7 +166,7 @@ public abstract class AbstractC2123 extends FrameLayout implements InterfaceC195
         setFocusable(true);
         m3934(textView.getTextSize(), textView2.getTextSize());
         if (imageView != null) {
-            imageView.addOnLayoutChangeListener(new ViewOnLayoutChangeListenerC0445(i, (C0446) this));
+            imageView.addOnLayoutChangeListener(new ViewOnLayoutChangeListenerC0445(2, (C0446) this));
         }
     }
 
@@ -717,7 +717,7 @@ public abstract class AbstractC2123 extends FrameLayout implements InterfaceC195
         View view = this.f7000;
         if (view != null) {
             C2102 c2102 = this.f7012;
-            c2102.getClass();
+            
             view.setScaleX(AbstractC0164.m1211(0.4f, 1.0f, f));
             view.setScaleY(c2102.mo3900(f, f2));
             view.setAlpha(AbstractC0164.m1212(0.0f, 1.0f, f2 == 0.0f ? 0.8f : 0.0f, f2 == 0.0f ? 1.0f : 0.2f, f));

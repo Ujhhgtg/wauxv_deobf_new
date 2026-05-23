@@ -278,7 +278,7 @@ public abstract class AbstractC2591 {
                     return AbstractC1090.f4005;
                 }
                 break;
-            case Opcodes.IALOAD /* 46 */:
+            case 46 /* 46 */:
                 int i3 = ((C0899) ((C2923) abstractC1649).f3344).f3369.m2428().f10905;
                 if (i3 == 1) {
                     return AbstractC1090.f4016;
@@ -334,19 +334,19 @@ public abstract class AbstractC2591 {
                 break;
             case 49:
                 return AbstractC1090.f4030;
-            case Opcodes.AALOAD /* 50 */:
+            case 50 /* 50 */:
                 return AbstractC1090.f4027;
-            case Opcodes.BALOAD /* 51 */:
+            case 51 /* 51 */:
                 return AbstractC1090.f4028;
             case 52:
                 return AbstractC1090.f4029;
-            case Opcodes.SALOAD /* 53 */:
+            case 53 /* 53 */:
                 return AbstractC1090.f4031;
             default:
                 switch (i) {
-                    case Opcodes.DSTORE /* 57 */:
+                    case 57 /* 57 */:
                         return AbstractC1090.f3963;
-                    case Opcodes.ASTORE /* 58 */:
+                    case 58 /* 58 */:
                         return AbstractC1090.f4096;
                     case 59:
                         return AbstractC1090.f4097;

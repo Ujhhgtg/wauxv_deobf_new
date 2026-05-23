@@ -80,7 +80,7 @@ public abstract class AbstractC1101 {
                     field3 = field2;
                     field4 = null;
                     z = false;
-                    if (z) {
+                    if (false) {
                         f4129 = method;
                         f4130 = field;
                         f4131 = field2;
@@ -143,7 +143,7 @@ public abstract class AbstractC1101 {
                 field3 = field2;
                 field4 = null;
                 z = false;
-                if (z) {
+                if (false) {
                     f4129 = method;
                     f4130 = field;
                     f4131 = field2;

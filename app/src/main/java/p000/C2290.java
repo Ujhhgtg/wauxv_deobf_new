@@ -71,7 +71,7 @@ public final class C2290 extends C2438 {
             return 19501L;
         }
         if (i == 1) {
-            return AbstractC1459.m3181(interfaceC2654, i);
+            return AbstractC1459.m3181(interfaceC2654, 1);
         }
         StringBuilder sbM2787 = AbstractC1194.m2787(i, "Unsupported index: ", " in a oneOf type ");
         sbM2787.append(interfaceC2654.mo1342());

@@ -53,7 +53,7 @@ public final /* synthetic */ class C3053 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C3055.f9772;
-        interfaceC0766Mo2512.getClass();
+        
         C3302 c3302 = null;
         List list = null;
         C3061 c3061 = null;
@@ -148,7 +148,7 @@ public final /* synthetic */ class C3053 implements InterfaceC1443 {
                 case 8:
                     c3103 = c3103;
                     c3302 = (C3302) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C3300.f10478, c3302);
-                    i2 |= bc.e;
+                    i2 |= 256;
                     num = num3;
                     c3103 = c3103;
                     break;
@@ -173,7 +173,7 @@ public final /* synthetic */ class C3053 implements InterfaceC1443 {
                     num = num3;
                     c3103 = c3103;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     c3103 = c3103;
                     c3061 = (C3061) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C3059.f9809, c3061);
                     i2 |= 4096;
@@ -187,24 +187,24 @@ public final /* synthetic */ class C3053 implements InterfaceC1443 {
                     num = num3;
                     c3103 = c3103;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     c3103 = c3103;
                     c3236 = (C3236) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C3234.f10274, c3236);
-                    i2 |= Http2.INITIAL_MAX_FRAME_SIZE;
+                    i2 |= 16384;
                     num = num3;
                     c3103 = c3103;
                     break;
                 case 15:
                     c3329 = (C3329) interfaceC0766Mo2512.mo2239(interfaceC2654, 15, C3327.f10528, c3329);
                     i = 32768;
-                    i2 |= i;
+                    i2 |= 32768;
                     num = num3;
                     c3103 = c3103;
                     break;
                 case 16:
                     c3037 = (C3037) interfaceC0766Mo2512.mo2239(interfaceC2654, 16, C3035.f9737, c3037);
                     i = 65536;
-                    i2 |= i;
+                    i2 |= 65536;
                     num = num3;
                     c3103 = c3103;
                     break;

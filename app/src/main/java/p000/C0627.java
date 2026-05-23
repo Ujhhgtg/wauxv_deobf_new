@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C0627 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C0627 f2462 = new C0627("ChatInputHintHook.ValHandleSendCount", null, null, true, 0, 0.0f, 0, Opcodes.FNEG);
+    public static final C0627 f2462 = new C0627("ChatInputHintHook.ValHandleSendCount", null, null, true, 0, 0.0f, 0, 118);
 }

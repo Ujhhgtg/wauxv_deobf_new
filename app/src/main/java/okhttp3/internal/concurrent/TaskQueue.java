@@ -99,7 +99,7 @@ public final class TaskQueue {
     }
 
     public final void cancelAll() {
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this.taskRunner) {
@@ -261,7 +261,7 @@ public final class TaskQueue {
     }
 
     public final void shutdown() {
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this.taskRunner) {

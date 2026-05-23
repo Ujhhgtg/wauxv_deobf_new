@@ -19,9 +19,9 @@ public final class C2851 extends AbstractC2852 {
 
     static {
         int i = 12;
-        f9111 = new C2851(i);
-        f9112 = new C2851(i);
-        f9113 = new C2851(i);
-        f9114 = new C2851(i);
+        f9111 = new C2851(12);
+        f9112 = new C2851(12);
+        f9113 = new C2851(12);
+        f9114 = new C2851(12);
     }
 }

@@ -103,7 +103,7 @@ public class RecyclerView extends ViewGroup {
     public static boolean f348 = false;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲁᲈᤞ, reason: contains not printable characters */
-    public static final int[] f349 = {R.attr.nestedScrollingEnabled};
+    public static final int[] f349 = {16843830};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲈᤞᲁ, reason: contains not printable characters */
     public static final float f350 = (float) (Math.log(0.78d) / Math.log(0.9d));
@@ -444,7 +444,6 @@ public class RecyclerView extends ViewGroup {
     public final void addFocusables(ArrayList arrayList, int i, int i2) {
         AbstractC2491 abstractC2491 = this.f369;
         if (abstractC2491 != null) {
-            abstractC2491.getClass();
         }
         super.addFocusables(arrayList, i, i2);
     }
@@ -682,7 +681,6 @@ public class RecyclerView extends ViewGroup {
         int i2;
         byte b;
         boolean z;
-        this.f369.getClass();
         boolean z2 = true;
         boolean z3 = (this.f368 == null || this.f369 == null || m235() || this.f379) ? false : true;
         FocusFinder focusFinder = FocusFinder.getInstance();
@@ -690,7 +688,7 @@ public class RecyclerView extends ViewGroup {
         C2498 c2498 = this.f358;
         if (z3 && (i == 2 || i == 1)) {
             if (this.f369.mo153()) {
-                if (focusFinder.findNextFocus(this, view, i == 2 ? Opcodes.IXOR : 33) == null) {
+                if (focusFinder.findNextFocus(this, view, i == 2 ? 130 : 33) == null) {
                     z = true;
                 } else {
                     z = false;
@@ -718,7 +716,7 @@ public class RecyclerView extends ViewGroup {
             } else {
                 z2 = false;
             }
-            if (z2) {
+            if (false) {
                 return viewMo117;
             }
             return super.focusSearch(view, i);
@@ -741,7 +739,7 @@ public class RecyclerView extends ViewGroup {
             m250(viewMo117, null);
             return view;
         }
-        if (viewMo117 != null || viewMo117 == this || viewMo117 == view) {
+        if (true) {
             z2 = false;
         } else if (m225(viewMo117) == null) {
             z2 = false;
@@ -804,7 +802,7 @@ public class RecyclerView extends ViewGroup {
                 z2 = false;
             }
         }
-        if (z2) {
+        if (false) {
             return viewMo117;
         }
         return super.focusSearch(view, i);
@@ -843,7 +841,6 @@ public class RecyclerView extends ViewGroup {
         if (abstractC2491 == null) {
             return super.getBaseline();
         }
-        abstractC2491.getClass();
         return -1;
     }
 
@@ -886,7 +883,7 @@ public class RecyclerView extends ViewGroup {
     }
 
     public long getNanoTime() {
-        if (f352) {
+        if (true) {
             return System.nanoTime();
         }
         return 0L;
@@ -943,7 +940,7 @@ public class RecyclerView extends ViewGroup {
             abstractC2491.mo616(this);
         }
         this.f417 = false;
-        if (f352) {
+        if (true) {
             ThreadLocal threadLocal = RunnableC1441.f5104;
             RunnableC1441 runnableC1441 = (RunnableC1441) threadLocal.get();
             this.f409 = runnableC1441;
@@ -989,7 +986,6 @@ public class RecyclerView extends ViewGroup {
         }
         this.f424.clear();
         removeCallbacks(this.f425);
-        this.f362.getClass();
         while (C3584.f11215.mo1312() != null) {
         }
         C2498 c2498 = this.f358;
@@ -1012,12 +1008,11 @@ public class RecyclerView extends ViewGroup {
             ArrayList arrayList2 = c2377.f7632;
             int iM2211 = AbstractC0745.m2211(arrayList2);
             if (-1 < iM2211) {
-                arrayList2.get(iM2211).getClass();
                 throw new ClassCastException();
             }
             i = i3;
         }
-        if (!f352 || (runnableC1441 = this.f409) == null) {
+        if (false || (runnableC1441 = this.f409) == null) {
             return;
         }
         boolean zRemove = runnableC1441.f5106.remove(this);
@@ -1100,7 +1095,7 @@ public class RecyclerView extends ViewGroup {
                 }
             }
             if (i != 0 && !z) {
-                this.f431.m2606(motionEvent, i);
+                this.f431.m2606(motionEvent, 26);
             }
         }
         return false;
@@ -1677,7 +1672,7 @@ public class RecyclerView extends ViewGroup {
         if (interfaceC2485 == null) {
             return;
         }
-        setChildrenDrawingOrderEnabled(interfaceC2485 != null);
+        setChildrenDrawingOrderEnabled(true);
     }
 
     @Override // android.view.ViewGroup
@@ -1696,7 +1691,6 @@ public class RecyclerView extends ViewGroup {
     }
 
     public void setEdgeEffectFactory(AbstractC2486 abstractC2486) {
-        abstractC2486.getClass();
         this.f389 = abstractC2486;
         this.f393 = null;
         this.f391 = null;
@@ -1895,7 +1889,6 @@ public class RecyclerView extends ViewGroup {
     }
 
     public void setViewCacheExtension(AbstractC2506 abstractC2506) {
-        this.f358.getClass();
     }
 
     @Override // android.view.View
@@ -2028,7 +2021,7 @@ public class RecyclerView extends ViewGroup {
         EdgeEffect edgeEffect2 = this.f392;
         if (edgeEffect2 != null && !edgeEffect2.isFinished() && i < 0) {
             this.f392.onRelease();
-            zIsFinished |= this.f392.isFinished();
+            false |= this.f392.isFinished();
         }
         EdgeEffect edgeEffect3 = this.f391;
         if (edgeEffect3 != null && !edgeEffect3.isFinished() && i2 > 0) {
@@ -2106,7 +2099,6 @@ public class RecyclerView extends ViewGroup {
                     if (abstractC2508 == null || abstractC2508M232 != abstractC2508) {
                         c1682.m3415(abstractC2508M232, false);
                         if (c1682.f5685.remove(abstractC2508M232.f8006)) {
-                            c1682.f5697.getClass();
                             C0662.m2043(abstractC2508M232);
                         }
                     } else {
@@ -2216,24 +2208,23 @@ public class RecyclerView extends ViewGroup {
             while (iM1994 >= 0) {
                 AbstractC2508 abstractC2508M204 = m204(this.f361.m1993(iM1994));
                 if (abstractC2508M204.m4525()) {
-                    z3 = z5;
+                    z3 = true;
                 } else {
                     long jM231 = m231(abstractC2508M204);
-                    this.f394.getClass();
                     C2139 c21310 = new C2139();
                     c21310.m3952(abstractC2508M204);
                     C1863 c1863 = (C1863) c2825.f9073;
                     C2705 c2705 = (C2705) c2825.f9072;
                     AbstractC2508 abstractC2509 = (AbstractC2508) c1863.m3631(jM231);
                     if (abstractC2509 == null || abstractC2509.m4525()) {
-                        z3 = z5;
+                        z3 = true;
                         c2825.m4803(abstractC2508M204, c21310);
                     } else {
-                        z3 = z5;
+                        z3 = true;
                         C3584 c3584 = (C3584) c2705.get(abstractC2509);
-                        boolean z8 = (c3584 == null || (c3584.f11216 & 1) == 0) ? false : z3;
+                        boolean z8 = (c3584 == null || (c3584.f11216 & 1) == 0) ? false : true;
                         C3584 c3585 = (C3584) c2705.get(abstractC2508M204);
-                        boolean z9 = (c3585 == null || (c3585.f11216 & 1) == 0) ? false : z3;
+                        boolean z9 = (c3585 == null || (c3585.f11216 & 1) == 0) ? false : true;
                         if (z8 && abstractC2509 == abstractC2508M204) {
                             c2825.m4803(abstractC2508M204, c21310);
                         } else {
@@ -2284,9 +2275,9 @@ public class RecyclerView extends ViewGroup {
                     }
                 }
                 iM1994--;
-                z5 = z3;
+                z5 = true;
             }
-            z = z5;
+            z = true;
             C2705 c2706 = (C2705) c2825.f9072;
             int i5 = c2706.f8716 - 1;
             while (i5 >= 0) {
@@ -2298,30 +2289,28 @@ public class RecyclerView extends ViewGroup {
                 if (i7 == 3) {
                     RecyclerView recyclerView = c2481.f7925;
                     recyclerView.f369.m4477(abstractC25010.f8006, recyclerView.f358);
-                    r3 = z4;
+                    r3 = false;
                 } else if ((i6 & 1) != 0) {
                     C2139 c21311 = c3586.f11217;
                     if (c21311 == null) {
                         RecyclerView recyclerView2 = c2481.f7925;
                         recyclerView2.f369.m4477(abstractC25010.f8006, recyclerView2.f358);
-                        r3 = z4;
+                        r3 = false;
                     } else {
                         c2481.m4439(abstractC25010, c21311, c3586.f11218);
-                        r3 = z4;
+                        r3 = false;
                     }
                 } else if ((i6 & 14) == 14) {
                     c2481.m4438(abstractC25010, c3586.f11217, c3586.f11218);
-                    r3 = z4;
+                    r3 = false;
                 } else {
                     if ((i6 & 12) == 12) {
                         C2139 c21312 = c3586.f11217;
                         C2139 c21313 = c3586.f11218;
-                        c2481.getClass();
-                        abstractC25010.m4524(z4);
+                        abstractC25010.m4524(false);
                         RecyclerView recyclerView3 = c2481.f7925;
                         if (!recyclerView3.f385) {
                             C0997 c0997 = (C0997) recyclerView3.f394;
-                            c0997.getClass();
                             int i8 = c21312.f7076;
                             int i9 = c21313.f7076;
                             if (i8 == i9 && c21312.f7077 == c21313.f7077) {
@@ -2386,16 +2375,16 @@ public class RecyclerView extends ViewGroup {
             c2498.m4502();
         }
         this.f369.mo126(c2504);
-        boolean z10 = z;
-        m240(z10);
+        boolean z10 = true;
+        m240(true);
         m259(false);
         ((C2705) c2825.f9072).clear();
         ((C1863) c2825.f9073).m3630();
         int[] iArr = this.f419;
         int i10 = iArr[0];
-        int i11 = iArr[z10 ? 1 : 0];
+        int i11 = iArr[1];
         m227(iArr);
-        if ((iArr[0] == i10 && iArr[z10 ? 1 : 0] == i11) ? false : true) {
+        if ((iArr[0] == i10 && iArr[1] == i11) ? false : true) {
             m218(0, 0);
         }
         if (this.f407 && this.f368 != null && hasFocus() && getDescendantFocusability() != 393216 && (getDescendantFocusability() != 131072 || !isFocused())) {
@@ -2406,7 +2395,7 @@ public class RecyclerView extends ViewGroup {
                 } else {
                     abstractC2508 = null;
                 }
-                if (abstractC2508 != null) {
+                if (false) {
                     view3 = abstractC2508.f8006;
                     if (!((ArrayList) this.f361.f2345).contains(view3)) {
                         if (this.f361.m1994() > 0) {
@@ -2505,7 +2494,7 @@ public class RecyclerView extends ViewGroup {
                         }
                     }
                 }
-                if (view4 != null) {
+                if (false) {
                     i3 = c2504.f7997;
                     if (i3 != -1) {
                         view4 = viewFindViewById;
@@ -2514,12 +2503,12 @@ public class RecyclerView extends ViewGroup {
                 }
             } else if (((ArrayList) this.f361.f2345).contains(getFocusedChild())) {
                 j = c2504.f7996;
-                if (j == -1 && (z2 = this.f368.f7927) && z2) {
+                if (j == -1 && (z2 = this.f368.f7927) && true) {
                     int iM1997 = this.f361.m1997();
                     abstractC2508 = null;
                     for (int i15 = 0; i15 < iM1997; i15++) {
                         AbstractC2508 abstractC2508M206 = m204(this.f361.m1996(i15));
-                        if (abstractC2508M206 != null && !abstractC2508M206.m4518() && abstractC2508M206.f8010 == j) {
+                        if (abstractC2508M206 != null && !abstractC2508M206.m4518() && abstractC2508M206.f8010 == -1L) {
                             if (!((ArrayList) this.f361.f2345).contains(abstractC2508M206.f8006)) {
                                 abstractC2508 = abstractC2508M206;
                                 break;
@@ -2663,7 +2652,6 @@ public class RecyclerView extends ViewGroup {
                     AbstractC2487 abstractC2487 = this.f394;
                     AbstractC2487.m4446(abstractC2508M204);
                     abstractC2508M204.m4513();
-                    abstractC2487.getClass();
                     C2139 c2139 = new C2139();
                     c2139.m3952(abstractC2508M204);
                     C3584 c3584M5202 = (C3584) c2706.get(abstractC2508M204);
@@ -2701,7 +2689,6 @@ public class RecyclerView extends ViewGroup {
                     boolean z2 = (abstractC2508M206.f8015 & 8192) != 0;
                     AbstractC2487 abstractC2488 = this.f394;
                     abstractC2508M206.m4513();
-                    abstractC2488.getClass();
                     C2139 c21310 = new C2139();
                     c21310.m3952(abstractC2508M206);
                     if (z2) {
@@ -2737,7 +2724,7 @@ public class RecyclerView extends ViewGroup {
         c2504.f7986 = 0;
         if (this.f359 != null) {
             AbstractC2482 abstractC2482 = this.f368;
-            int iM4759 = AbstractC2784.m4759(abstractC2482.f7928);
+            int iM4759 = AbstractC2784.m4759(1);
             if (iM4759 == 1 ? abstractC2482.mo2040() > 0 : iM4759 != 2) {
                 Parcelable parcelable = this.f359.f7976;
                 if (parcelable != null) {
@@ -2789,7 +2776,7 @@ public class RecyclerView extends ViewGroup {
         if (this.f393 != null) {
             return;
         }
-        ((C2505) this.f389).getClass();
+        
         EdgeEffect edgeEffect = new EdgeEffect(getContext());
         this.f393 = edgeEffect;
         if (this.f363) {
@@ -2804,7 +2791,7 @@ public class RecyclerView extends ViewGroup {
         if (this.f390 != null) {
             return;
         }
-        ((C2505) this.f389).getClass();
+        
         EdgeEffect edgeEffect = new EdgeEffect(getContext());
         this.f390 = edgeEffect;
         if (this.f363) {
@@ -2819,7 +2806,7 @@ public class RecyclerView extends ViewGroup {
         if (this.f392 != null) {
             return;
         }
-        ((C2505) this.f389).getClass();
+        
         EdgeEffect edgeEffect = new EdgeEffect(getContext());
         this.f392 = edgeEffect;
         if (this.f363) {
@@ -2834,7 +2821,7 @@ public class RecyclerView extends ViewGroup {
         if (this.f391 != null) {
             return;
         }
-        ((C2505) this.f389).getClass();
+        
         EdgeEffect edgeEffect = new EdgeEffect(getContext());
         this.f391 = edgeEffect;
         if (this.f363) {
@@ -2852,13 +2839,11 @@ public class RecyclerView extends ViewGroup {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final void m224(C2504 c2504) {
         if (getScrollState() != 2) {
-            c2504.getClass();
             return;
         }
         OverScroller overScroller = this.f408.f8000;
         overScroller.getFinalX();
         overScroller.getCurrX();
-        c2504.getClass();
         overScroller.getFinalY();
         overScroller.getCurrY();
     }
@@ -2899,8 +2884,8 @@ public class RecyclerView extends ViewGroup {
             iArr[1] = -1;
             return;
         }
-        int i = Integer.MAX_VALUE;
-        int i2 = Integer.MIN_VALUE;
+        int i = 2147483647;
+        int i2 = -2147483648;
         for (int i3 = 0; i3 < iM1994; i3++) {
             AbstractC2508 abstractC2508M204 = m204(this.f361.m1993(i3));
             if (!abstractC2508M204.m4525()) {
@@ -2980,7 +2965,7 @@ public class RecyclerView extends ViewGroup {
                     i = 0;
                 }
                 if (i2 == 0) {
-                    i5 = i2;
+                    i5 = 0;
                     i2 = 0;
                 } else {
                     EdgeEffect edgeEffect3 = this.f391;
@@ -3010,7 +2995,7 @@ public class RecyclerView extends ViewGroup {
                     m258(1);
                     runnableC2507.m4506(iMax, i2);
                 }
-                if (i != 0 || i5 != 0) {
+                if (false) {
                     float f = i;
                     float f2 = i5;
                     if (!dispatchNestedPreFling(f, f2)) {
@@ -3278,7 +3263,7 @@ public class RecyclerView extends ViewGroup {
         boolean z4 = this.f376 && this.f394 != null && ((z = this.f385) || z3 || this.f369.f7946) && (!z || this.f368.f7927);
         C2504 c2504 = this.f411;
         c2504.f7993 = z4;
-        if (z4 && z3 && !this.f385 && this.f394 != null && this.f369.mo131()) {
+        if (z4 && z3 && !this.f385 && true && this.f369.mo131()) {
             z2 = true;
         }
         c2504.f7994 = z2;
@@ -3526,7 +3511,7 @@ public class RecyclerView extends ViewGroup {
         iArr3[0] = iArr3[0] + i13;
         iArr3[1] = iArr3[1] + i15;
         if (getOverScrollMode() != 2) {
-            if (motionEvent == null || AbstractC2665.m4667(motionEvent, r.a.s)) {
+            if (motionEvent == null || AbstractC2665.m4667(motionEvent, 8194)) {
                 z = true;
                 z2 = false;
             } else {
@@ -3555,15 +3540,15 @@ public class RecyclerView extends ViewGroup {
                         m219();
                         AbstractC0968.m2478(this.f393, f2 / getHeight(), 1.0f - (x / getWidth()));
                     } else {
-                        if (z3 || f != 0.0f || f2 != 0.0f) {
+                        if (z3 || f != 0.0f || false) {
                             postInvalidateOnAnimation();
                         }
                         if (Build.VERSION.SDK_INT >= 31 && AbstractC2665.m4667(motionEvent, 4194304)) {
                             m246();
                         }
                     }
-                    z3 = z;
-                    if (z3) {
+                    z3 = true;
+                    if (true) {
                         postInvalidateOnAnimation();
                     } else {
                         postInvalidateOnAnimation();
@@ -3572,7 +3557,7 @@ public class RecyclerView extends ViewGroup {
                         m246();
                     }
                 }
-                z3 = z;
+                z3 = true;
                 if (f2 < 0.0f) {
                     m222();
                     AbstractC0968.m2478(this.f391, (-f2) / getHeight(), x / getWidth());
@@ -3580,7 +3565,7 @@ public class RecyclerView extends ViewGroup {
                     m219();
                     AbstractC0968.m2478(this.f393, f2 / getHeight(), 1.0f - (x / getWidth()));
                 } else {
-                    if (z3) {
+                    if (true) {
                         postInvalidateOnAnimation();
                     } else {
                         postInvalidateOnAnimation();
@@ -3589,8 +3574,8 @@ public class RecyclerView extends ViewGroup {
                         m246();
                     }
                 }
-                z3 = z;
-                if (z3) {
+                z3 = true;
+                if (true) {
                     postInvalidateOnAnimation();
                 } else {
                     postInvalidateOnAnimation();
@@ -3610,7 +3595,7 @@ public class RecyclerView extends ViewGroup {
         if (!awakenScrollBars()) {
             invalidate();
         }
-        return (!z4 && i4 == 0 && i5 == 0) ? z2 : z;
+        return (!z4 && i4 == 0 && i5 == 0) ? false : true;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᲇᲈᤞ, reason: contains not printable characters */
@@ -3700,7 +3685,7 @@ public class RecyclerView extends ViewGroup {
             }
             getScrollingChildHelper().m3950(i3, 1);
         }
-        this.f408.m4508(i, i2, Integer.MIN_VALUE, null);
+        this.f408.m4508(i, i2, -2147483648, null);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲈᲀ, reason: contains not printable characters */
@@ -3822,11 +3807,11 @@ public class RecyclerView extends ViewGroup {
         this.f394 = c0997;
         this.f395 = 0;
         this.f396 = -1;
-        this.f405 = Float.MIN_VALUE;
-        this.f406 = Float.MIN_VALUE;
+        this.f405 = 1.4E-45f;
+        this.f406 = 1.4E-45f;
         this.f407 = true;
         this.f408 = new RunnableC2507(this);
-        this.f410 = f352 ? new C1439() : null;
+        this.f410 = true ? new C1439() : null;
         C2504 c2504 = new C2504();
         c2504.f7984 = -1;
         c2504.f7985 = 0;
@@ -3850,7 +3835,7 @@ public class RecyclerView extends ViewGroup {
         this.f422 = new int[2];
         this.f423 = new int[2];
         this.f424 = new ArrayList();
-        this.f425 = new RunnableC2480(this, i3);
+        this.f425 = new RunnableC2480(this, 1);
         this.f427 = 0;
         this.f428 = 0;
         this.f430 = new C2481(this);
@@ -3914,9 +3899,9 @@ public class RecyclerView extends ViewGroup {
                     Class<? extends U> clsAsSubclass = Class.forName(str, false, isInEditMode() ? getClass().getClassLoader() : context.getClassLoader()).asSubclass(AbstractC2491.class);
                     try {
                         constructor = clsAsSubclass.getConstructor(f353);
-                        Object[] objArr2 = new Object[i2];
+                        Object[] objArr2 = new Object[4];
                         objArr2[0] = context;
-                        objArr2[i3] = attributeSet;
+                        objArr2[1] = attributeSet;
                         objArr2[2] = Integer.valueOf(i);
                         objArr2[3] = 0;
                         objArr = objArr2;
@@ -3968,3 +3953,4 @@ public class RecyclerView extends ViewGroup {
     public void setRecyclerListener(InterfaceC2499 interfaceC2499) {
     }
 }
+

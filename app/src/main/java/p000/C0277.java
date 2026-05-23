@@ -17,7 +17,7 @@ public final class C0277 extends Thread {
 
     @Override // java.lang.Thread, java.lang.Runnable
     public final void run() {
-        switch (this.f1482) {
+        switch (1) {
             case 0:
                 break;
             default:
@@ -27,7 +27,7 @@ public final class C0277 extends Thread {
         }
         while (true) {
             try {
-                C0280.Companion.getClass();
+                
                 ReentrantLock reentrantLock = C0280.lock;
                 reentrantLock.lock();
                 try {

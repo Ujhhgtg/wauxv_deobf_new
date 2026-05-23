@@ -31,7 +31,7 @@ public final class C1627 extends FilterWriter {
         if (i < 0) {
             throw new IllegalArgumentException("width < 0");
         }
-        this.f5500 = i != 0 ? i : Integer.MAX_VALUE;
+        this.f5500 = i != 0 ? i : 2147483647;
         int i2 = i >> 1;
         this.f5501 = i2;
         this.f5499 = str.length() == 0 ? null : str;

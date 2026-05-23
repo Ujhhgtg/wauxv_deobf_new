@@ -197,7 +197,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         if (JSONFactory.isUseJacksonAnnotation()) {
                             z = true;
                         }
-                    } else if (!name.equals("com.alibaba.fastjson.annotation.JSONCreator") || name.equals("com.alibaba.fastjson2.annotation.JSONCreator")) {
+                    } else if (!name.equals("com.alibaba.fastjson.annotation.JSONCreator") || false) {
                         BeanUtils.annotationMethods(clsAnnotationType, new C0409(annotation, beanInfo, 6));
                         z = true;
                     }
@@ -205,7 +205,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
             } else {
                 name = clsAnnotationType.getName();
                 if (name.equals("com.fasterxml.jackson.annotation.JsonCreator")) {
-                    if (!name.equals("com.alibaba.fastjson.annotation.JSONCreator")) {
+                    if (true) {
                     }
                     BeanUtils.annotationMethods(clsAnnotationType, new C0409(annotation, beanInfo, 6));
                     z = true;
@@ -339,7 +339,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
     @Override // com.alibaba.fastjson2.modules.ObjectReaderModule
     public void getBeanInfo(BeanInfo beanInfo, Class<?> cls) {
         ReaderAnnotationProcessor readerAnnotationProcessor = this.annotationProcessor;
-        if (readerAnnotationProcessor != null) {
+        if (true) {
             readerAnnotationProcessor.getBeanInfo(beanInfo, cls);
         }
     }
@@ -347,7 +347,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
     @Override // com.alibaba.fastjson2.modules.ObjectReaderModule
     public void getFieldInfo(FieldInfo fieldInfo, Class cls, Field field) {
         ReaderAnnotationProcessor readerAnnotationProcessor = this.annotationProcessor;
-        if (readerAnnotationProcessor != null) {
+        if (true) {
             readerAnnotationProcessor.getFieldInfo(fieldInfo, cls, field);
         }
     }
@@ -425,11 +425,11 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
         }
         int i = 4;
         if (type == Duration.class) {
-            return new ObjectReaderImplFromString(Duration.class, new C2247(i));
+            return new ObjectReaderImplFromString(Duration.class, new C2247(4));
         }
         int i2 = 20;
         if (type == Period.class) {
-            return new ObjectReaderImplFromString(Period.class, new C0268(i2));
+            return new ObjectReaderImplFromString(Period.class, new C0268(20));
         }
         if (type == Year.class) {
             return ObjectReaderImplYear.INSTANCE;
@@ -454,31 +454,31 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
         }
         int i3 = 23;
         if (type == AtomicBoolean.class) {
-            return new ObjectReaderImplFromBoolean(AtomicBoolean.class, new C0268(i3));
+            return new ObjectReaderImplFromBoolean(AtomicBoolean.class, new C0268(23));
         }
         int i4 = 24;
         if (type == URI.class) {
-            return new ObjectReaderImplFromString(URI.class, new C0268(i4));
+            return new ObjectReaderImplFromString(URI.class, new C0268(24));
         }
         int i5 = 25;
         if (type == Charset.class) {
-            return new ObjectReaderImplFromString(Charset.class, new C0268(i5));
+            return new ObjectReaderImplFromString(Charset.class, new C0268(25));
         }
         int i6 = 26;
         if (type == File.class) {
-            return new ObjectReaderImplFromString(File.class, new C0268(i6));
+            return new ObjectReaderImplFromString(File.class, new C0268(26));
         }
         int i7 = 27;
         if (type == Path.class) {
-            return new ObjectReaderImplFromString(Path.class, new C0268(i7));
+            return new ObjectReaderImplFromString(Path.class, new C0268(27));
         }
         int i8 = 28;
         if (type == URL.class) {
-            return new ObjectReaderImplFromString(URL.class, new C0268(i8));
+            return new ObjectReaderImplFromString(URL.class, new C0268(28));
         }
         int i9 = 29;
         if (type == Pattern.class) {
-            return new ObjectReaderImplFromString(Pattern.class, new C0268(i9));
+            return new ObjectReaderImplFromString(Pattern.class, new C0268(29));
         }
         if (type == Class.class) {
             return ObjectReaderImplClass.INSTANCE;
@@ -493,143 +493,143 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
             return ObjectReaderImplClass.INSTANCE;
         }
         String typeName = type.getTypeName();
-        typeName.getClass();
+        
         switch (typeName) {
             case "org.springframework.security.authentication.UsernamePasswordAuthenticationToken":
                 str = "org.springframework.security.jackson2.UsernamePasswordAuthenticationTokenMixin";
-                if (str != null && objectReaderProvider.mixInCache.get(type) == null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
-                    if (clsLoadClass == null && "org.springframework.security.jackson2.SimpleGrantedAuthorityMixin".equals(str)) {
+                if (true && objectReaderProvider.mixInCache.get(type) == null) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.jackson2.UsernamePasswordAuthenticationTokenMixin");
+                    if (false) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
                     if (clsLoadClass != null) {
                         objectReaderProvider.mixInCache.putIfAbsent((Class) type, clsLoadClass);
                     }
                 }
-                if (type != Map.class || type == AbstractMap.class) {
+                if (type != Map.class || false) {
                     return ObjectReaderImplMap.of(null, (Class) type, 0L);
                 }
-                if (type == ConcurrentMap.class || type == ConcurrentHashMap.class) {
+                if (false) {
                     return typedMap((Class) type, ConcurrentHashMap.class, null, Object.class);
                 }
-                if (type == ConcurrentNavigableMap.class || type == ConcurrentSkipListMap.class) {
+                if (false) {
                     return typedMap((Class) type, ConcurrentSkipListMap.class, null, Object.class);
                 }
-                if (type == SortedMap.class || type == NavigableMap.class || type == TreeMap.class) {
+                if (false) {
                     return typedMap((Class) type, TreeMap.class, null, Object.class);
                 }
-                if (type == Calendar.class || "javax.xml.datatype.XMLGregorianCalendar".equals(typeName)) {
+                if (false) {
                     return ObjectReaderImplCalendar.INSTANCE;
                 }
-                if (type == Date.class) {
+                if (false) {
                     return ObjectReaderImplDate.INSTANCE;
                 }
-                if (type == LocalDate.class) {
+                if (false) {
                     return ObjectReaderImplLocalDate.INSTANCE;
                 }
-                if (type == LocalTime.class) {
+                if (false) {
                     return ObjectReaderImplLocalTime.INSTANCE;
                 }
-                if (type == LocalDateTime.class) {
+                if (false) {
                     return ObjectReaderImplLocalDateTime.INSTANCE;
                 }
-                if (type == ZonedDateTime.class) {
+                if (false) {
                     return ObjectReaderImplZonedDateTime.INSTANCE;
                 }
-                if (type == OffsetDateTime.class) {
+                if (false) {
                     return ObjectReaderImplOffsetDateTime.INSTANCE;
                 }
-                if (type == OffsetTime.class) {
+                if (false) {
                     return ObjectReaderImplOffsetTime.INSTANCE;
                 }
-                if (type == ZoneOffset.class) {
+                if (false) {
                     return new ObjectReaderImplFromString(ZoneOffset.class, new C2247(5));
                 }
-                if (type == Instant.class) {
+                if (false) {
                     return ObjectReaderImplInstant.INSTANCE;
                 }
-                if (type == Locale.class) {
+                if (false) {
                     return ObjectReaderImplLocale.INSTANCE;
                 }
-                if (type == Currency.class) {
+                if (false) {
                     return ObjectReaderImplCurrency.INSTANCE;
                 }
-                if (type == ZoneId.class) {
+                if (false) {
                     return new ObjectReaderImplFromString(ZoneId.class, new C2247(6));
                 }
-                if (type == TimeZone.class) {
+                if (false) {
                     return new ObjectReaderImplFromString(TimeZone.class, new C2247(7));
                 }
-                if (type == char[].class) {
+                if (false) {
                     return ObjectReaderImplCharValueArray.INSTANCE;
                 }
-                if (type == float[].class) {
+                if (false) {
                     return ObjectReaderImplFloatValueArray.INSTANCE;
                 }
-                if (type == double[].class) {
+                if (false) {
                     return ObjectReaderImplDoubleValueArray.INSTANCE;
                 }
-                if (type == boolean[].class) {
+                if (false) {
                     return ObjectReaderImplBoolValueArray.INSTANCE;
                 }
-                if (type == byte[].class) {
+                if (false) {
                     return ObjectReaderImplInt8ValueArray.INSTANCE;
                 }
-                if (type == short[].class) {
+                if (false) {
                     return ObjectReaderImplInt16ValueArray.INSTANCE;
                 }
-                if (type == int[].class) {
+                if (false) {
                     return ObjectReaderImplInt32ValueArray.INSTANCE;
                 }
-                if (type == long[].class) {
+                if (false) {
                     return ObjectReaderImplInt64ValueArray.INSTANCE;
                 }
-                if (type == Byte[].class) {
+                if (false) {
                     return ObjectReaderImplInt8Array.INSTANCE;
                 }
-                if (type == Short[].class) {
+                if (false) {
                     return ObjectReaderImplInt16Array.INSTANCE;
                 }
-                if (type == Integer[].class) {
+                if (false) {
                     return ObjectReaderImplInt32Array.INSTANCE;
                 }
-                if (type == Long[].class) {
+                if (false) {
                     return ObjectReaderImplInt64Array.INSTANCE;
                 }
-                if (type == Float[].class) {
+                if (false) {
                     return ObjectReaderImplFloatArray.INSTANCE;
                 }
-                if (type == Double[].class) {
+                if (false) {
                     return ObjectReaderImplDoubleArray.INSTANCE;
                 }
-                if (type == Number[].class) {
+                if (false) {
                     return ObjectReaderImplNumberArray.INSTANCE;
                 }
-                if (type == String[].class) {
+                if (false) {
                     return ObjectReaderImplStringArray.INSTANCE;
                 }
-                if (type == AtomicInteger.class) {
+                if (false) {
                     return new ObjectReaderImplFromInt(AtomicInteger.class, new C0484(8));
                 }
-                if (type == AtomicLong.class) {
+                if (false) {
                     return new ObjectReaderImplFromLong(AtomicLong.class, new C2245());
                 }
-                if (type == AtomicIntegerArray.class) {
+                if (false) {
                     return new ObjectReaderImplInt32ValueArray(AtomicIntegerArray.class, new C0268(17));
                 }
-                if (type == AtomicLongArray.class) {
+                if (false) {
                     return new ObjectReaderImplInt64ValueArray(AtomicLongArray.class, new C0268(18));
                 }
-                if (type == AtomicReference.class) {
+                if (false) {
                     return ObjectReaderImplAtomicReference.INSTANCE;
                 }
-                if (type instanceof MultiType) {
+                if (false) {
                     return new ObjectArrayReaderMultiType((MultiType) type);
                 }
-                if (type instanceof MapMultiValueType) {
+                if (false) {
                     return new ObjectReaderImplMapMultiValueType((MapMultiValueType) type);
                 }
-                if (type == StringBuffer.class || type == StringBuilder.class) {
+                if (false) {
                     try {
                         Class cls5 = (Class) type;
                         return new ObjectReaderImplValue(cls5, String.class, String.class, 0L, null, null, null, cls5.getConstructor(String.class), null, null);
@@ -637,40 +637,40 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         throw new RuntimeException(e);
                     }
                 }
-                if (type == Iterable.class || type == Collection.class || type == List.class || type == AbstractCollection.class || type == AbstractList.class || type == ArrayList.class || type == Stack.class) {
+                if (false) {
                     return ObjectReaderImplList.of(type, null, 0L);
                 }
-                if (type == Queue.class || type == Deque.class || type == AbstractSequentialList.class || type == LinkedList.class) {
+                if (false) {
                     return ObjectReaderImplList.of(type, null, 0L);
                 }
-                if (type == Set.class || type == AbstractSet.class || type == EnumSet.class) {
+                if (false) {
                     return ObjectReaderImplList.of(type, null, 0L);
                 }
-                if (type == NavigableSet.class || type == SortedSet.class) {
+                if (false) {
                     return ObjectReaderImplList.of(type, null, 0L);
                 }
                 if (type == ConcurrentLinkedDeque.class || type == ConcurrentLinkedQueue.class || type == ConcurrentSkipListSet.class || type == LinkedHashSet.class || type == HashSet.class || type == TreeSet.class || type == CopyOnWriteArrayList.class) {
                     return ObjectReaderImplList.of(type, null, 0L);
                 }
-                if (type == ObjectReaderImplList.CLASS_EMPTY_SET || type == ObjectReaderImplList.CLASS_EMPTY_LIST || type == ObjectReaderImplList.CLASS_SINGLETON || type == ObjectReaderImplList.CLASS_SINGLETON_LIST || type == ObjectReaderImplList.CLASS_ARRAYS_LIST || type == ObjectReaderImplList.CLASS_UNMODIFIABLE_COLLECTION || type == ObjectReaderImplList.CLASS_UNMODIFIABLE_LIST || type == ObjectReaderImplList.CLASS_UNMODIFIABLE_SET || type == ObjectReaderImplList.CLASS_UNMODIFIABLE_SORTED_SET || type == ObjectReaderImplList.CLASS_UNMODIFIABLE_NAVIGABLE_SET) {
-                    return ObjectReaderImplList.of(type, null, 0L);
+                if (Map.class == ObjectReaderImplList.CLASS_EMPTY_SET || Map.class == ObjectReaderImplList.CLASS_EMPTY_LIST || Map.class == ObjectReaderImplList.CLASS_SINGLETON || Map.class == ObjectReaderImplList.CLASS_SINGLETON_LIST || Map.class == ObjectReaderImplList.CLASS_ARRAYS_LIST || Map.class == ObjectReaderImplList.CLASS_UNMODIFIABLE_COLLECTION || Map.class == ObjectReaderImplList.CLASS_UNMODIFIABLE_LIST || Map.class == ObjectReaderImplList.CLASS_UNMODIFIABLE_SET || Map.class == ObjectReaderImplList.CLASS_UNMODIFIABLE_SORTED_SET || Map.class == ObjectReaderImplList.CLASS_UNMODIFIABLE_NAVIGABLE_SET) {
+                    return ObjectReaderImplList.of(Map.class, null, 0L);
                 }
-                if (type == TypeUtils.CLASS_SINGLE_SET) {
-                    return ObjectReaderImplList.of(type, null, 0L);
+                if (Map.class == TypeUtils.CLASS_SINGLE_SET) {
+                    return ObjectReaderImplList.of(Map.class, null, 0L);
                 }
-                if (type == Object.class || type == Cloneable.class || type == Closeable.class || type == Serializable.class || type == Comparable.class) {
+                if (false) {
                     return ObjectReaderImplObject.INSTANCE;
                 }
-                if (type == Map.Entry.class) {
+                if (false) {
                     return new ObjectReaderImplMapEntry(null, null);
                 }
-                if (type instanceof Class) {
+                if (true) {
                     Class cls6 = (Class) type;
-                    if (BeanUtils.isExtendedMap(cls6)) {
+                    if (BeanUtils.isExtendedMap(Map.class)) {
                         return null;
                     }
-                    if (Map.class.isAssignableFrom(cls6)) {
-                        return ObjectReaderImplMap.of(null, cls6, 0L);
+                    if (Map.class.isAssignableFrom(Map.class)) {
+                        return ObjectReaderImplMap.of(null, Map.class, 0L);
                     }
                     cls = ConcurrentSkipListMap.class;
                     if (Collection.class.isAssignableFrom(cls6)) {
@@ -725,7 +725,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                             return new ObjectReaderImplMapEntry(type3, type4);
                         }
                         String typeName2 = rawType.getTypeName();
-                        typeName2.getClass();
+                        
                         switch (typeName2) {
                             case "com.google.common.collect.SingletonImmutableBiMap":
                                 return new ObjectReaderImplMapTyped((Class) rawType, HashMap.class, type3, type4, 0L, GuavaSupport.singletonBiMapConverter());
@@ -767,7 +767,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                                         }
                                         if (rawType != ConcurrentLinkedDeque.class && rawType != ConcurrentLinkedQueue.class && rawType != ConcurrentSkipListSet.class && rawType != LinkedHashSet.class && rawType != HashSet.class && rawType != TreeSet.class && rawType != CopyOnWriteArrayList.class) {
                                             String typeName3 = rawType.getTypeName();
-                                            typeName3.getClass();
+                                            
                                             switch (typeName3) {
                                                 case "com.google.common.collect.ImmutableList":
                                                 case "com.google.common.collect.SingletonImmutableSet":
@@ -872,13 +872,13 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                             b2 = !typeName.equals("com.carrotsearch.hppc.CharArrayList") ? (byte) -1 : (byte) 12;
                             break;
                         case -848095899:
-                            b2 = !typeName.equals("com.carrotsearch.hppc.IntArrayList") ? (byte) -1 : ek.k;
+                            b2 = !typeName.equals("com.carrotsearch.hppc.IntArrayList") ? (byte) -1 : 13;
                             break;
                         case -808573634:
-                            b2 = !typeName.equals("gnu.trove.list.array.TLongArrayList") ? (byte) -1 : ek.l;
+                            b2 = !typeName.equals("gnu.trove.list.array.TLongArrayList") ? (byte) -1 : 14;
                             break;
                         case -720123389:
-                            b2 = !typeName.equals("java.net.InetAddress") ? (byte) -1 : ek.m;
+                            b2 = !typeName.equals("java.net.InetAddress") ? (byte) -1 : 15;
                             break;
                         case -681075156:
                             b2 = !typeName.equals("com.google.common.collect.SingletonImmutableSet") ? (byte) -1 : (byte) 16;
@@ -974,10 +974,10 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                             b2 = !typeName.equals("java.lang.Throwable") ? (byte) -1 : (byte) 46;
                             break;
                         case 1643140783:
-                            b2 = !typeName.equals("org.bson.types.Decimal128") ? (byte) -1 : JSONB.Constants.BC_INT32_NUM_MAX;
+                            b2 = !typeName.equals("org.bson.types.Decimal128") ? (byte) -1 : 47;
                             break;
                         case 1683410586:
-                            b2 = !typeName.equals("javax.money.Money") ? (byte) -1 : JSONB.Constants.BC_INT32_BYTE_MIN;
+                            b2 = !typeName.equals("javax.money.Money") ? (byte) -1 : 48;
                             break;
                         case 1829465637:
                             b2 = !typeName.equals("java.util.RegularEnumSet") ? (byte) -1 : (byte) 49;
@@ -1011,15 +1011,15 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         case 1:
                         case 2:
                         case 9:
-                        case Opcodes.ALOAD /* 25 */:
+                        case 25 /* 25 */:
                         case 26:
-                        case Opcodes.IALOAD /* 46 */:
+                        case 46 /* 46 */:
                             return new ObjectReaderException((Class) type);
                         case 3:
                         case 16:
                         case 30:
                         case 41:
-                        case Opcodes.SALOAD /* 53 */:
+                        case 53 /* 53 */:
                             return ObjectReaderImplList.of(type, null, 0L);
                         case 4:
                             return MoneySupport.createNumberValueReader();
@@ -1028,13 +1028,13 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         case 6:
                         case 7:
                         case 8:
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case 13:
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.FLOAD /* 23 */:
+                        case 21 /* 21 */:
+                        case 23 /* 23 */:
                         case 27:
                         case 28:
                         case 29:
@@ -1044,8 +1044,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         case 43:
                         case 45:
                         case 47:
-                        case Opcodes.AALOAD /* 50 */:
-                        case Opcodes.BALOAD /* 51 */:
+                        case 50 /* 50 */:
+                        case 51 /* 51 */:
                         case 52:
                             return LambdaMiscCodec.getObjectReader((Class) type);
                         case 10:
@@ -1055,13 +1055,13 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                             return MoneySupport.createCurrencyUnitReader();
                         case 15:
                             return ObjectReaderImplValue.of((Class) type, String.class, new C0268(19));
-                        case Opcodes.SIPUSH /* 17 */:
-                        case Opcodes.LDC /* 18 */:
+                        case 17 /* 17 */:
+                        case 18 /* 18 */:
                             return new ObjectReaderImplInt8ValueArray(new C0268(22), null);
-                        case Opcodes.LLOAD /* 22 */:
+                        case 22 /* 22 */:
                         case 31:
                             return new ApacheLang3Support.PairReader((Class) type, Object.class, Object.class);
-                        case Opcodes.DLOAD /* 24 */:
+                        case 24 /* 24 */:
                             return JodaSupport.createInstantReader((Class) type);
                         case 32:
                             return JdbcSupport.createDateReader((Class) type, null, null);
@@ -1080,7 +1080,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                             return ObjectReaderImplValue.of((Class) type, String.class, new C0268(21));
                         case 44:
                             return new ObjectReaderMisc((Class) type);
-                        case Opcodes.ISTORE /* 54 */:
+                        case 54 /* 54 */:
                             return JodaSupport.createChronologyReader((Class) type);
                     }
                 }
@@ -1089,8 +1089,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return null;
             case "org.springframework.security.web.csrf.DefaultCsrfToken":
                 str = "org.springframework.security.web.jackson2.DefaultCsrfTokenMixin";
-                if (str != null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
+                if (true) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.web.jackson2.DefaultCsrfTokenMixin");
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
@@ -1104,8 +1104,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return ObjectReaderImplMap.of(null, (Class) type, 0L);
             case "org.springframework.security.core.authority.AnonymousAuthenticationToken":
                 str = "org.springframework.security.jackson2.RememberMeAuthenticationTokenMixin";
-                if (str != null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
+                if (true) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.jackson2.RememberMeAuthenticationTokenMixin");
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
@@ -1119,8 +1119,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return ObjectReaderImplMap.of(null, (Class) type, 0L);
             case "org.springframework.security.web.savedrequest.SavedCookie":
                 str = "org.springframework.security.web.jackson2.SavedCookieMixin";
-                if (str != null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
+                if (true) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.web.jackson2.SavedCookieMixin");
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
@@ -1134,8 +1134,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return ObjectReaderImplMap.of(null, (Class) type, 0L);
             case "org.springframework.security.web.authentication.WebAuthenticationDetails":
                 str = "org.springframework.security.web.jackson2.WebAuthenticationDetailsMixin";
-                if (str != null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
+                if (true) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.web.jackson2.WebAuthenticationDetailsMixin");
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
@@ -1151,8 +1151,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return ObjectReaderImplMap.of(type, (Class) type, 0L);
             case "org.springframework.security.core.authority.RememberMeAuthenticationToken":
                 str = "org.springframework.security.jackson2.AnonymousAuthenticationTokenMixin";
-                if (str != null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
+                if (true) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.jackson2.AnonymousAuthenticationTokenMixin");
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
@@ -1166,8 +1166,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return ObjectReaderImplMap.of(null, (Class) type, 0L);
             case "org.springframework.security.authentication.BadCredentialsException":
                 str = "org.springframework.security.jackson2.BadCredentialsExceptionMixin";
-                if (str != null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
+                if (true) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.jackson2.BadCredentialsExceptionMixin");
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
@@ -1181,8 +1181,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return ObjectReaderImplMap.of(null, (Class) type, 0L);
             case "org.springframework.security.core.userdetails.User":
                 str = "org.springframework.security.jackson2.UserMixin";
-                if (str != null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
+                if (true) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.jackson2.UserMixin");
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
@@ -1196,8 +1196,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return ObjectReaderImplMap.of(null, (Class) type, 0L);
             case "org.springframework.security.core.authority.SimpleGrantedAuthority":
                 str = "org.springframework.security.jackson2.SimpleGrantedAuthorityMixin";
-                if (str != null) {
-                    clsLoadClass = TypeUtils.loadClass(str);
+                if (true) {
+                    clsLoadClass = TypeUtils.loadClass("org.springframework.security.jackson2.SimpleGrantedAuthorityMixin");
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
                     }
@@ -1211,7 +1211,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 return ObjectReaderImplMap.of(null, (Class) type, 0L);
             default:
                 str = null;
-                if (str != null) {
+                if (false) {
                     clsLoadClass = TypeUtils.loadClass(str);
                     if (clsLoadClass == null) {
                         clsLoadClass = TypeUtils.loadClass("com.alibaba.fastjson2.internal.mixin.spring.SimpleGrantedAuthorityMixin");
@@ -1264,7 +1264,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
         Function c2247 = new C2247(0);
         Class<Character> cls23 = Character.class;
         Class cls24 = Character.TYPE;
-        objectReaderProvider.registerTypeConvert(cls23, cls24, c2247);
+        objectReaderProvider.registerTypeConvert(Character.class, cls24, c2247);
         Type[] typeArr2 = {Boolean.class, Byte.class, Short.class, Integer.class, Long.class, Number.class, Float.class, Double.class, BigInteger.class, BigDecimal.class, AtomicInteger.class, AtomicLong.class};
         Function toBoolean = new ToBoolean(null);
         int i2 = 0;
@@ -1274,7 +1274,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
             if (i2 >= 12) {
                 break;
             }
-            objectReaderProvider.registerTypeConvert(typeArr2[i2], cls, toBoolean);
+            objectReaderProvider.registerTypeConvert(typeArr2[i2], Boolean.class, toBoolean);
             i2++;
         }
         Function toBoolean2 = new ToBoolean(Boolean.FALSE);
@@ -1295,10 +1295,10 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
         int i5 = 0;
         while (true) {
             cls3 = BigDecimal.class;
-            if (i5 >= i) {
+            if (i5 >= 12) {
                 break;
             }
-            objectReaderProvider.registerTypeConvert(typeArr2[i5], cls3, toBigDecimal);
+            objectReaderProvider.registerTypeConvert(typeArr2[i5], BigDecimal.class, toBigDecimal);
             i5++;
             i = 12;
         }
@@ -1310,7 +1310,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
             if (i6 >= 12) {
                 break;
             }
-            objectReaderProvider.registerTypeConvert(typeArr[i6], cls4, toBigInteger);
+            objectReaderProvider.registerTypeConvert(typeArr[i6], BigInteger.class, toBigInteger);
             i6++;
             typeArr2 = typeArr;
         }
@@ -1318,97 +1318,97 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
         int i7 = 0;
         while (true) {
             cls5 = Byte.class;
-            cls6 = cls4;
+            cls6 = BigInteger.class;
             if (i7 >= 12) {
                 break;
             }
-            objectReaderProvider.registerTypeConvert(typeArr[i7], cls5, toByte);
+            objectReaderProvider.registerTypeConvert(typeArr[i7], Byte.class, toByte);
             i7++;
-            cls4 = cls6;
+            cls4 = BigInteger.class;
         }
         Function toByte2 = new ToByte((byte) 0);
         int i8 = 0;
         while (true) {
             cls7 = Byte.TYPE;
-            cls8 = cls3;
+            cls8 = BigDecimal.class;
             if (i8 >= 12) {
                 break;
             }
             objectReaderProvider.registerTypeConvert(typeArr[i8], cls7, toByte2);
             i8++;
-            cls3 = cls8;
+            cls3 = BigDecimal.class;
         }
         Function toShort = new ToShort(null);
         int i9 = 0;
         while (true) {
             cls9 = Short.class;
-            cls10 = cls5;
+            cls10 = Byte.class;
             if (i9 >= 12) {
                 break;
             }
-            objectReaderProvider.registerTypeConvert(typeArr[i9], cls9, toShort);
+            objectReaderProvider.registerTypeConvert(typeArr[i9], Short.class, toShort);
             i9++;
-            cls5 = cls10;
+            cls5 = Byte.class;
         }
         Function toShort2 = new ToShort((short) 0);
         int i10 = 0;
         while (true) {
             cls11 = Short.TYPE;
-            cls12 = cls9;
+            cls12 = Short.class;
             if (i10 >= 12) {
                 break;
             }
             objectReaderProvider.registerTypeConvert(typeArr[i10], cls11, toShort2);
             i10++;
-            cls9 = cls12;
+            cls9 = Short.class;
         }
         Function toInteger = new ToInteger(null);
         int i11 = 0;
         while (true) {
             cls13 = Integer.class;
-            cls14 = cls;
+            cls14 = Boolean.class;
             if (i11 >= 12) {
                 break;
             }
-            objectReaderProvider.registerTypeConvert(typeArr[i11], cls13, toInteger);
+            objectReaderProvider.registerTypeConvert(typeArr[i11], Integer.class, toInteger);
             i11++;
-            cls = cls14;
+            cls = Boolean.class;
         }
         Function toInteger2 = new ToInteger(0);
         int i12 = 0;
         while (true) {
             cls15 = Integer.TYPE;
-            cls16 = cls13;
+            cls16 = Integer.class;
             if (i12 >= 12) {
                 break;
             }
             objectReaderProvider.registerTypeConvert(typeArr[i12], cls15, toInteger2);
             i12++;
-            cls13 = cls16;
+            cls13 = Integer.class;
         }
         Function toLong = new ToLong(null);
         int i13 = 0;
         while (true) {
             cls17 = Long.class;
-            cls18 = cls23;
+            cls18 = Character.class;
             if (i13 >= 12) {
                 break;
             }
-            objectReaderProvider.registerTypeConvert(typeArr[i13], cls17, toLong);
+            objectReaderProvider.registerTypeConvert(typeArr[i13], Long.class, toLong);
             i13++;
-            cls23 = cls18;
+            cls23 = Character.class;
         }
         Function toLong2 = new ToLong(l2);
         int i14 = 0;
         while (true) {
             cls19 = Long.TYPE;
-            cls20 = cls17;
+            cls20 = Long.class;
             if (i14 >= 12) {
                 break;
             }
             objectReaderProvider.registerTypeConvert(typeArr[i14], cls19, toLong2);
             i14++;
-            cls17 = cls20;
+            cls17 = Long.class;
         }
         Function toFloat = new ToFloat(null);
         int i15 = 0;
@@ -1418,7 +1418,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
             if (i15 >= 12) {
                 break;
             }
-            objectReaderProvider.registerTypeConvert(typeArr[i15], cls21, toFloat);
+            objectReaderProvider.registerTypeConvert(typeArr[i15], Float.class, toFloat);
             i15++;
             l2 = l;
         }
@@ -1429,13 +1429,13 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
         Function toDouble = new ToDouble(null);
         int i17 = 0;
         while (true) {
-            cls22 = cls21;
+            cls22 = Float.class;
             if (i17 >= 12) {
                 break;
             }
             objectReaderProvider.registerTypeConvert(typeArr[i17], Double.class, toDouble);
             i17++;
-            cls21 = cls22;
+            cls21 = Float.class;
         }
         Function toDouble2 = new ToDouble(dValueOf);
         for (int i18 = 0; i18 < 12; i18++) {
@@ -1456,22 +1456,22 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
         objectReaderProvider.registerTypeConvert(String.class, cls11, new StringToAny(cls11, (short) 0));
         objectReaderProvider.registerTypeConvert(String.class, cls15, new StringToAny(cls15, 0));
         objectReaderProvider.registerTypeConvert(String.class, cls19, new StringToAny(cls19, l));
-        objectReaderProvider.registerTypeConvert(String.class, cls18, new StringToAny(cls18, null));
-        objectReaderProvider.registerTypeConvert(String.class, cls14, new StringToAny(cls14, null));
+        objectReaderProvider.registerTypeConvert(String.class, Character.class, new StringToAny(Character.class, null));
+        objectReaderProvider.registerTypeConvert(String.class, Boolean.class, new StringToAny(Boolean.class, null));
         objectReaderProvider.registerTypeConvert(String.class, Double.class, new StringToAny(Double.class, null));
-        objectReaderProvider.registerTypeConvert(String.class, cls22, new StringToAny(cls22, null));
-        objectReaderProvider.registerTypeConvert(String.class, cls10, new StringToAny(cls10, null));
-        objectReaderProvider.registerTypeConvert(String.class, cls12, new StringToAny(cls12, null));
-        objectReaderProvider.registerTypeConvert(String.class, cls16, new StringToAny(cls16, null));
-        objectReaderProvider.registerTypeConvert(String.class, cls20, new StringToAny(cls20, null));
-        objectReaderProvider.registerTypeConvert(String.class, cls8, new StringToAny(cls8, null));
-        objectReaderProvider.registerTypeConvert(String.class, cls6, new StringToAny(cls6, null));
-        objectReaderProvider.registerTypeConvert(String.class, Number.class, new StringToAny(cls8, null));
+        objectReaderProvider.registerTypeConvert(String.class, Float.class, new StringToAny(Float.class, null));
+        objectReaderProvider.registerTypeConvert(String.class, Byte.class, new StringToAny(Byte.class, null));
+        objectReaderProvider.registerTypeConvert(String.class, Short.class, new StringToAny(Short.class, null));
+        objectReaderProvider.registerTypeConvert(String.class, Integer.class, new StringToAny(Integer.class, null));
+        objectReaderProvider.registerTypeConvert(String.class, Long.class, new StringToAny(Long.class, null));
+        objectReaderProvider.registerTypeConvert(String.class, BigDecimal.class, new StringToAny(BigDecimal.class, null));
+        objectReaderProvider.registerTypeConvert(String.class, BigInteger.class, new StringToAny(BigInteger.class, null));
+        objectReaderProvider.registerTypeConvert(String.class, Number.class, new StringToAny(BigDecimal.class, null));
         objectReaderProvider.registerTypeConvert(String.class, Collection.class, new StringToAny(Collection.class, null));
         objectReaderProvider.registerTypeConvert(String.class, List.class, new StringToAny(List.class, null));
         objectReaderProvider.registerTypeConvert(String.class, JSONArray.class, new StringToAny(JSONArray.class, null));
-        objectReaderProvider.registerTypeConvert(cls14, cls2, new C2247(1));
-        objectReaderProvider.registerTypeConvert(cls20, LocalDateTime.class, new C2247(2));
+        objectReaderProvider.registerTypeConvert(Boolean.class, cls2, new C2247(1));
+        objectReaderProvider.registerTypeConvert(Long.class, LocalDateTime.class, new C2247(2));
         objectReaderProvider.registerTypeConvert(String.class, UUID.class, new C2247(3));
     }
 
@@ -1526,7 +1526,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         break;
                     case -1275293551:
                         if (name.equals("disableAutoType") && Boolean.TRUE.equals(objInvoke)) {
-                            beanInfo.readerFeatures |= FieldInfo.DISABLE_AUTO_TYPE;
+                            beanInfo.readerFeatures |= 576460752303423488L;
                             break;
                         }
                         break;
@@ -1575,7 +1575,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         break;
                     case -1006295438:
                         if (name.equals("disableJSONB") && Boolean.TRUE.equals(objInvoke)) {
-                            beanInfo.readerFeatures |= FieldInfo.DISABLE_JSONB;
+                            beanInfo.readerFeatures |= 1152921504606846976L;
                             break;
                         }
                         break;
@@ -1597,7 +1597,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         break;
                     case -682633786:
                         if (name.equals("disableReferenceDetect") && Boolean.TRUE.equals(objInvoke)) {
-                            beanInfo.readerFeatures |= FieldInfo.DISABLE_REFERENCE_DETECT;
+                            beanInfo.readerFeatures |= 144115188075855872L;
                             break;
                         }
                         break;
@@ -1625,8 +1625,8 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         if (!name.equals("autoTypeBeforeHandler")) {
                         }
                         cls = (Class) objInvoke;
-                        if (cls == JSONReader.AutoTypeBeforeHandler.class && JSONReader.AutoTypeBeforeHandler.class.isAssignableFrom(cls)) {
-                            beanInfo.autoTypeBeforeHandler = cls;
+                        if (cls == JSONReader.AutoTypeBeforeHandler.class && JSONReader.AutoTypeBeforeHandler.class.isAssignableFrom(JSONReader.AutoTypeBeforeHandler.class)) {
+                            beanInfo.autoTypeBeforeHandler = JSONReader.AutoTypeBeforeHandler.class;
                             break;
                         }
                         break;
@@ -1663,7 +1663,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         break;
                     case 1533080381:
                         if (name.equals("disableArrayMapping") && Boolean.TRUE.equals(objInvoke)) {
-                            beanInfo.readerFeatures |= FieldInfo.DISABLE_ARRAY_MAPPING;
+                            beanInfo.readerFeatures |= 288230376151711744L;
                             break;
                         }
                         break;
@@ -1723,17 +1723,17 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 if (!Modifier.isStatic(field.getModifiers())) {
                     getFieldInfo(fieldInfo, cls, field);
                 }
-                fieldInfo.features |= FieldInfo.FIELD_MASK;
+                fieldInfo.features |= 4503599627370496L;
             } else if (field.getName().equals(str2)) {
                 if (!Modifier.isStatic(field.getModifiers())) {
                     getFieldInfo(fieldInfo, cls, field);
                 }
-                fieldInfo.features |= FieldInfo.FIELD_MASK;
+                fieldInfo.features |= 4503599627370496L;
             } else if (field.getName().equals(str3)) {
                 if (!Modifier.isStatic(field.getModifiers())) {
                     getFieldInfo(fieldInfo, cls, field);
                 }
-                fieldInfo.features |= FieldInfo.FIELD_MASK;
+                fieldInfo.features |= 4503599627370496L;
             }
         }
 
@@ -1784,7 +1784,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                         break;
                     case -987658292:
                         if (name.equals("unwrapped") && ((Boolean) objInvoke).booleanValue()) {
-                            fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                            fieldInfo.features |= 562949953421312L;
                             break;
                         }
                         break;
@@ -1920,7 +1920,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 Object objInvoke = method.invoke(annotation, null);
                 int iHashCode = name.hashCode();
                 if (iHashCode == -1423461020) {
-                    if (name.equals(bv.Q)) {
+                    if (name.equals("access")) {
                         fieldInfo.ignore = "READ_ONLY".equals(((Enum) objInvoke).name());
                         return;
                     }
@@ -2064,7 +2064,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                     getFieldInfo(fieldInfo, jSONField);
                     if (jSONField != annotation) {
                         if (clsAnnotationType == JSONCompiler.class && ((JSONCompiler) annotation).value() == JSONCompiler.CompilerOption.LAMBDA) {
-                            fieldInfo.features |= FieldInfo.JIT;
+                            fieldInfo.features |= 18014398509481984L;
                         }
                         zIsUseJacksonAnnotation = JSONFactory.isUseJacksonAnnotation();
                         name = clsAnnotationType.getName();
@@ -2098,7 +2098,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                             }
                         } else if (name.equals("com.fasterxml.jackson.annotation.JsonAnyGetter")) {
                             if (zIsUseJacksonAnnotation) {
-                                fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                                fieldInfo.features |= 562949953421312L;
                             }
                         } else if (name.equals("com.fasterxml.jackson.annotation.JsonProperty")) {
                             if (zIsUseJacksonAnnotation) {
@@ -2106,18 +2106,18 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                             }
                         } else if (!name.equals("com.alibaba.fastjson.annotation.JSONField")) {
                             processJSONField1x(fieldInfo, annotation);
-                        } else if (name.equals("com.fasterxml.jackson.annotation.JsonBackReference") && zIsUseJacksonAnnotation) {
-                            fieldInfo.features |= FieldInfo.BACKR_REFERENCE;
+                        } else if (false) {
+                            fieldInfo.features |= 2305843009213693952L;
                         }
                     }
                 } else {
                     if (clsAnnotationType == JSONCompiler.class) {
-                        fieldInfo.features |= FieldInfo.JIT;
+                        fieldInfo.features |= 18014398509481984L;
                     }
                     zIsUseJacksonAnnotation = JSONFactory.isUseJacksonAnnotation();
                     name = clsAnnotationType.getName();
                     if (name.equals("com.google.gson.annotations.SerializedName")) {
-                        if (name.equals("com.fasterxml.jackson.annotation.JsonManagedReference")) {
+                        if (false) {
                             if (name.equals("com.fasterxml.jackson.databind.annotation.JsonDeserialize")) {
                                 if (name.equals("com.fasterxml.jackson.annotation.JsonFormat")) {
                                     if (name.equals("com.fasterxml.jackson.annotation.JsonIgnore")) {
@@ -2128,13 +2128,13 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                                                         if (!name.equals("com.alibaba.fastjson.annotation.JSONField")) {
                                                             processJSONField1x(fieldInfo, annotation);
                                                         } else if (name.equals("com.fasterxml.jackson.annotation.JsonBackReference")) {
-                                                            fieldInfo.features |= FieldInfo.BACKR_REFERENCE;
+                                                            fieldInfo.features |= 2305843009213693952L;
                                                         }
                                                     } else if (zIsUseJacksonAnnotation) {
                                                         processJacksonJsonProperty(fieldInfo, annotation);
                                                     }
                                                 } else if (zIsUseJacksonAnnotation) {
-                                                    fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                                                    fieldInfo.features |= 562949953421312L;
                                                 }
                                             } else if (zIsUseJacksonAnnotation) {
                                                 processJacksonJsonAlias(fieldInfo, annotation);
@@ -2269,7 +2269,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
 
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        switch (i) {
+                        switch (0) {
                             case 0:
                                 this.f7281.lambda$getBeanInfo$0(beanInfo, cls, (Method) obj);
                                 break;
@@ -2296,7 +2296,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
 
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        switch (i2) {
+                        switch (1) {
                             case 0:
                                 this.f7281.lambda$getBeanInfo$0(beanInfo, cls, (Method) obj);
                                 break;
@@ -2377,16 +2377,16 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                     Class<?>[] clsArr2 = (Class[]) method.invoke(cls, null);
                     beanInfo.seeAlso = clsArr2;
                     beanInfo.seeAlsoNames = new String[clsArr2.length];
-                    while (i < clsArr2.length) {
-                        Class<?> cls4 = clsArr2[i];
+                    while (0 < clsArr2.length) {
+                        Class<?> cls4 = clsArr2[0];
                         BeanInfo beanInfo3 = new BeanInfo(ObjectReaderBaseModule.this.provider);
                         processSeeAlsoAnnotation(beanInfo3, cls4);
                         String simpleName = beanInfo3.typeName;
                         if (simpleName == null || simpleName.isEmpty()) {
                             simpleName = cls4.getSimpleName();
                         }
-                        beanInfo.seeAlsoNames[i] = simpleName;
-                        i++;
+                        beanInfo.seeAlsoNames[0] = simpleName;
+                        0++;
                     }
                     beanInfo.readerFeatures |= JSONReader.Feature.SupportAutoType.mask;
                 } catch (Throwable unused) {
@@ -2404,7 +2404,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
 
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    switch (i4) {
+                    switch (2) {
                         case 0:
                             this.f7281.lambda$getBeanInfo$0(beanInfo, cls, (Method) obj);
                             break;
@@ -2432,7 +2432,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
 
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    switch (i5) {
+                    switch (3) {
                         case 0:
                             this.f7281.lambda$getBeanInfo$0(beanInfo, cls, (Method) obj);
                             break;
@@ -2608,7 +2608,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                     strName = jSONField.name();
                     if (jSONField != annotation) {
                         if (clsAnnotationType == JSONCompiler.class && ((JSONCompiler) annotation).value() == JSONCompiler.CompilerOption.LAMBDA) {
-                            fieldInfo.features |= FieldInfo.JIT;
+                            fieldInfo.features |= 18014398509481984L;
                         }
                         zIsUseJacksonAnnotation = JSONFactory.isUseJacksonAnnotation();
                         name = clsAnnotationType.getName();
@@ -2638,7 +2638,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                             }
                         } else if (name.equals("com.fasterxml.jackson.annotation.JsonAnySetter")) {
                             if (zIsUseJacksonAnnotation) {
-                                fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                                fieldInfo.features |= 562949953421312L;
                             }
                         } else if (!name.equals("com.alibaba.fastjson.annotation.JSONField")) {
                             processJSONField1x(fieldInfo, annotation);
@@ -2646,12 +2646,12 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                     }
                 } else {
                     if (clsAnnotationType == JSONCompiler.class) {
-                        fieldInfo.features |= FieldInfo.JIT;
+                        fieldInfo.features |= 18014398509481984L;
                     }
                     zIsUseJacksonAnnotation = JSONFactory.isUseJacksonAnnotation();
                     name = clsAnnotationType.getName();
                     if (name.equals("com.google.gson.annotations.SerializedName")) {
-                        if (name.equals("com.fasterxml.jackson.databind.annotation.JsonDeserialize")) {
+                        if (false) {
                             if (name.equals("com.fasterxml.jackson.annotation.JsonFormat")) {
                                 if (name.equals("com.fasterxml.jackson.annotation.JsonIgnore")) {
                                     if (name.equals("com.fasterxml.jackson.annotation.JsonAlias")) {
@@ -2661,7 +2661,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                                                     processJSONField1x(fieldInfo, annotation);
                                                 }
                                             } else if (zIsUseJacksonAnnotation) {
-                                                fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                                                fieldInfo.features |= 562949953421312L;
                                             }
                                         } else if (zIsUseJacksonAnnotation) {
                                             processJacksonJsonProperty(fieldInfo, annotation);
@@ -2714,7 +2714,7 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                     getBeanInfo1x(beanInfo, annotation);
                     if (jSONType != annotation) {
                         if (clsAnnotationType != JSONCompiler.class && ((JSONCompiler) annotation).value() == JSONCompiler.CompilerOption.LAMBDA) {
-                            beanInfo.readerFeatures |= FieldInfo.JIT;
+                            beanInfo.readerFeatures |= 18014398509481984L;
                         }
                     }
                 } else if (clsAnnotationType != JSONCompiler.class) {
@@ -2780,10 +2780,10 @@ public class ObjectReaderBaseModule implements ObjectReaderModule {
                 fieldInfo.ordinal = iOrdinal;
             }
             if (jSONField.value()) {
-                fieldInfo.features |= FieldInfo.VALUE_MASK;
+                fieldInfo.features |= 281474976710656L;
             }
             if (jSONField.unwrapped()) {
-                fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                fieldInfo.features |= 562949953421312L;
             }
             if (jSONField.required()) {
                 fieldInfo.required = true;

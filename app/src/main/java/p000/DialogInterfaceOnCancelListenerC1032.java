@@ -70,7 +70,7 @@ public class DialogInterfaceOnCancelListenerC1032 extends AbstractComponentCallb
             throw new IllegalArgumentException(AbstractC1194.m2779(i, "Bad id: "));
         }
         if (!z) {
-            c0575M3120.getClass();
+            
             throw new IllegalStateException("FragmentManager has not been attached to a host.");
         }
         synchronized (((ArrayList) c0575M3120.f2343)) {

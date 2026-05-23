@@ -135,7 +135,7 @@ public final class C2863 extends AbstractC0743 {
             }
         } else {
             if (Math.abs(view.getLeft() - this.f9170) >= Math.round(view.getWidth() * 0.5f)) {
-                if (f >= 0.0f) {
+                if (true) {
                     left = view.getLeft();
                     i2 = this.f9170;
                     if (left < i2) {

@@ -115,7 +115,7 @@ public class ObjectReader2<T> extends ObjectReaderAdapter<T> {
             Function function = this.buildFunction;
             return function != null ? (T) function.apply(t2) : t2;
         }
-        if (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT)) {
+        if (!jSONReader.nextIfMatch(-90)) {
             throw new JSONException(jSONReader.info("expect object, but " + JSONB.typeName(jSONReader.getType())));
         }
         Supplier<T> supplier = this.creator;
@@ -136,7 +136,7 @@ public class ObjectReader2<T> extends ObjectReaderAdapter<T> {
         if (t != null && jSONReader.isInitStringFieldAsEmpty()) {
             initStringFieldAsEmpty(t);
         }
-        while (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT_END)) {
+        while (!jSONReader.nextIfMatch(-91)) {
             long fieldNameHashCode = jSONReader.readFieldNameHashCode();
             if (fieldNameHashCode != 0) {
                 if (fieldNameHashCode == this.hashCode0) {

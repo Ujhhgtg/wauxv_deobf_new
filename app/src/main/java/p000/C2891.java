@@ -163,7 +163,7 @@ public class C2891 extends HorizontalScrollView {
         this.f9267 = new ArrayList();
         this.f9276 = -1;
         this.f9281 = 0;
-        this.f9286 = Integer.MAX_VALUE;
+        this.f9286 = 2147483647;
         this.f9297 = -1;
         this.f9303 = new ArrayList();
         this.f9305 = new C2379(12);
@@ -221,7 +221,7 @@ public class C2891 extends HorizontalScrollView {
                     typedArrayObtainStyledAttributes2.getDimensionPixelSize(0, (int) dimensionPixelSize2);
                     ColorStateList colorStateListM4995 = AbstractC3453.m4995(context2, typedArrayObtainStyledAttributes2, 3);
                     if (colorStateListM4995 != null) {
-                        this.f9277 = m4888(this.f9277.getDefaultColor(), colorStateListM4995.getColorForState(new int[]{android.R.attr.state_selected}, colorStateListM4995.getDefaultColor()));
+                        this.f9277 = m4888(this.f9277.getDefaultColor(), colorStateListM4995.getColorForState(new int[]{16842913}, colorStateListM4995.getDefaultColor()));
                     }
                     typedArrayObtainStyledAttributes2.recycle();
                 } catch (Throwable th) {
@@ -423,7 +423,7 @@ public class C2891 extends HorizontalScrollView {
     public final void onMeasure(int i, int i2) {
         int iRound = Math.round(AbstractC1459.m3180(getContext(), getDefaultHeight()));
         int mode = View.MeasureSpec.getMode(i2);
-        if (mode != Integer.MIN_VALUE) {
+        if (mode != -2147483648) {
             if (mode == 0) {
                 i2 = View.MeasureSpec.makeMeasureSpec(getPaddingBottom() + getPaddingTop() + iRound, 1073741824);
             }
@@ -606,7 +606,7 @@ public class C2891 extends HorizontalScrollView {
 
     public void setTabIndicatorFullWidth(boolean z) {
         this.f9296 = z;
-        int i = C2887.f9241;
+        int i = 0;
         C2887 c2887 = this.f9269;
         c2887.m4877(c2887.f9243.getSelectedTabPosition());
         Field field = AbstractC3578.f11184;
@@ -634,7 +634,7 @@ public class C2891 extends HorizontalScrollView {
             View childAt = c2887.getChildAt(i);
             if (childAt instanceof C2890) {
                 Context context = getContext();
-                int i2 = C2890.f9253;
+                int i2 = 0;
                 ((C2890) childAt).m4885(context);
             }
             i++;
@@ -678,7 +678,7 @@ public class C2891 extends HorizontalScrollView {
             View childAt = c2887.getChildAt(i);
             if (childAt instanceof C2890) {
                 Context context = getContext();
-                int i2 = C2890.f9253;
+                int i2 = 0;
                 ((C2890) childAt).m4885(context);
             }
             i++;
@@ -954,7 +954,7 @@ public class C2891 extends HorizontalScrollView {
         this.f9268 = c2888;
         if (c2889 != null && c2889.f9249 != null) {
             for (int size2 = arrayList.size() - 1; size2 >= 0; size2--) {
-                ((InterfaceC2884) arrayList.get(size2)).getClass();
+                
             }
         }
         for (int size3 = arrayList.size() - 1; size3 >= 0; size3--) {

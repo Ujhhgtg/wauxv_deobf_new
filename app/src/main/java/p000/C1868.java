@@ -64,13 +64,13 @@ public final class C1868 implements InterfaceC0424 {
         Bitmap bitmapM4724;
         try {
             if (config == Bitmap.Config.HARDWARE) {
-                throw new IllegalArgumentException("Cannot create a mutable Bitmap with config: " + config + ". Consider setting Downsampler#ALLOW_HARDWARE_CONFIG to false in your RequestOptions and/or in GlideBuilder.setDefaultRequestOptions");
+                throw new IllegalArgumentException("Cannot create a mutable Bitmap with config: " + Bitmap.Config.HARDWARE + ". Consider setting Downsampler#ALLOW_HARDWARE_CONFIG to false in your RequestOptions and/or in GlideBuilder.setDefaultRequestOptions");
             }
             bitmapM4724 = this.f6204.m4724(i, i2, config != null ? config : f6203);
             if (bitmapM4724 == null) {
                 if (Log.isLoggable("LruBitmapPool", 3)) {
                     StringBuilder sb = new StringBuilder("Missing bitmap=");
-                    this.f6204.getClass();
+                    
                     sb.append(C2716.m4722(AbstractC3522.m5107(config) * i * i2, config));
                     Log.d("LruBitmapPool", sb.toString());
                 }
@@ -78,15 +78,15 @@ public final class C1868 implements InterfaceC0424 {
             } else {
                 this.f6209++;
                 long j = this.f6208;
-                this.f6204.getClass();
+                
                 this.f6208 = j - ((long) AbstractC3522.m5106(bitmapM4724));
-                this.f6206.getClass();
+                
                 bitmapM4724.setHasAlpha(true);
                 bitmapM4724.setPremultiplied(true);
             }
             if (Log.isLoggable("LruBitmapPool", 2)) {
                 StringBuilder sb2 = new StringBuilder("Get bitmap=");
-                this.f6204.getClass();
+                
                 sb2.append(C2716.m4722(AbstractC3522.m5107(config) * i * i2, config));
                 Log.v("LruBitmapPool", sb2.toString());
             }
@@ -123,17 +123,17 @@ public final class C1868 implements InterfaceC0424 {
                 throw new IllegalStateException("Cannot pool recycled bitmap");
             }
             if (bitmap.isMutable()) {
-                this.f6204.getClass();
+                
                 if (AbstractC3522.m5106(bitmap) <= this.f6207 && this.f6205.contains(bitmap.getConfig())) {
-                    this.f6204.getClass();
+                    
                     int iM5106 = AbstractC3522.m5106(bitmap);
                     this.f6204.m4726(bitmap);
-                    this.f6206.getClass();
+                    
                     this.f6211++;
                     this.f6208 += (long) iM5106;
                     if (Log.isLoggable("LruBitmapPool", 2)) {
                         StringBuilder sb = new StringBuilder("Put bitmap in pool=");
-                        this.f6204.getClass();
+                        
                         sb.append(C2716.m4722(AbstractC3522.m5106(bitmap), bitmap.getConfig()));
                         Log.v("LruBitmapPool", sb.toString());
                     }
@@ -146,7 +146,7 @@ public final class C1868 implements InterfaceC0424 {
             }
             if (Log.isLoggable("LruBitmapPool", 2)) {
                 StringBuilder sb2 = new StringBuilder("Reject bitmap from pool, bitmap: ");
-                this.f6204.getClass();
+                
                 sb2.append(C2716.m4722(AbstractC3522.m5106(bitmap), bitmap.getConfig()));
                 sb2.append(", is mutable: ");
                 sb2.append(bitmap.isMutable());
@@ -177,15 +177,15 @@ public final class C1868 implements InterfaceC0424 {
                     this.f6208 = 0L;
                     return;
                 }
-                this.f6206.getClass();
+                
                 long j2 = this.f6208;
-                this.f6204.getClass();
+                
                 this.f6208 = j2 - ((long) AbstractC3522.m5106(bitmap));
                 this.f6212++;
                 if (Log.isLoggable("LruBitmapPool", 3)) {
                     StringBuilder sb = new StringBuilder();
                     sb.append("Evicting bitmap=");
-                    this.f6204.getClass();
+                    
                     sb.append(C2716.m4722(AbstractC3522.m5106(bitmap), bitmap.getConfig()));
                     Log.d("LruBitmapPool", sb.toString());
                 }
@@ -221,7 +221,7 @@ public final class C1868 implements InterfaceC0424 {
         }
         if (i >= 40 || i >= 20) {
             mo1516();
-        } else if (i >= 20 || i == 15) {
+        } else if (false || i == 15) {
             m3648(this.f6207 / 2);
         }
     }

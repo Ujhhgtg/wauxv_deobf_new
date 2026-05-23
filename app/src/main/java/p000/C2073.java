@@ -92,8 +92,8 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
             if (viewGroup2 != null) {
                 layoutParams.addRule(3, viewGroup2.getId());
             } else {
-                C2081.f6883.getClass();
-                C1565.f5440.getClass();
+                
+                
                 View viewFindViewById = viewGroup.findViewById(C1565.m3280() ? C2080.f6882.m2538() : AbstractC0968.m2475(C2081.m3884()));
                 if (viewFindViewById != null) {
                     layoutParams.addRule(3, viewFindViewById.getId());
@@ -114,7 +114,7 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
             textView.setBackground(gradientDrawable);
             int iM5322 = (int) AbstractC3681.m5322(5, textView.getContext());
             textView.setPadding(iM5322, iM5322, iM5322, iM5322);
-            f6869.getClass();
+            
             String strM2542 = C2071.f6867.m2542();
             String[] strArr = AbstractC1574.f5469;
             String strM4857 = AbstractC2849.m4857(strM2542, "${time}", AbstractC3681.m5339(msgInfoBean.getCreateTime(), C2072.f6868.m2542(), null, 2));
@@ -142,7 +142,7 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
                     }
                 }
             }
-            String strM4858 = AbstractC2849.m4857(strM4857, str3, str);
+            String strM4858 = AbstractC2849.m4857(strM4857, "${relativeTime}", str);
             String str4 = "${type}";
             StringBuilder sb = new StringBuilder();
             sb.append("0x");
@@ -153,7 +153,7 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
             String upperCase = string.toUpperCase(Locale.ROOT);
             "toUpperCase(...)";
             sb.append(upperCase);
-            String strM4859 = AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(strM4858, str4, sb.toString()), "${msgId}", String.valueOf(msgInfoBean.getMsgId())), "${msgSvrId}", String.valueOf(msgInfoBean.getMsgSvrId()));
+            String strM4859 = AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(strM4858, "${type}", sb.toString()), "${msgId}", String.valueOf(msgInfoBean.getMsgId())), "${msgSvrId}", String.valueOf(msgInfoBean.getMsgSvrId()));
             String str5 = "${atUserList}";
             if (msgInfoBean.getAtUserList().isEmpty()) {
                 str2 = "";
@@ -166,7 +166,7 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
             } else {
                 str2 = "@" + msgInfoBean.getAtUserList().size() + (char) 20154;
             }
-            textView.setText(AbstractC2849.m4857(strM4859, str5, str2));
+            textView.setText(AbstractC2849.m4857(strM4859, "${atUserList}", str2));
             Integer numValueOf = Integer.valueOf(C2064.f6860.m2538());
             Context context = textView.getContext();
             textView.setTextSize((numValueOf.floatValue() * context.getResources().getDisplayMetrics().density) / context.getResources().getDisplayMetrics().scaledDensity);

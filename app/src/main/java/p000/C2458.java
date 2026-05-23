@@ -13,6 +13,6 @@ public final class C2458 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f7803 = new C2458("QuoteRemindMsgHook.ValText", "[有人回我]", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f7803 = new C2458("QuoteRemindMsgHook.ValText", "[有人回我]", null, false, 0, 0.0f, 0L, 124);
     }
 }

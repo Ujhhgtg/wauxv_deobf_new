@@ -78,7 +78,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                 if (bChar1 == 92) {
                     int i6 = i + 1;
                     byte b2 = bArr[i6];
-                    if (b2 == b || b2 == 58 || b2 == 64 || b2 == 92) {
+                    if (b2 == 34 || b2 == 58 || b2 == 64 || b2 == 92) {
                         i = i6;
                         bChar1 = b2;
                     } else if (b2 == 117) {
@@ -86,7 +86,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                         i += 5;
                         if (iHexDigit4 > 255) {
                             bArr2 = null;
-                            if (bArr2 != null) {
+                            if (false) {
                                 return JDKUtils.STRING_CREATOR_JDK11.apply(bArr2, JDKUtils.LATIN1);
                             }
                         }
@@ -97,7 +97,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                         iHexDigit4 = JSONReader.char2(b3, bArr[i]);
                         if (iHexDigit4 > 255) {
                             bArr2 = null;
-                            if (bArr2 != null) {
+                            if (false) {
                                 return JDKUtils.STRING_CREATOR_JDK11.apply(bArr2, JDKUtils.LATIN1);
                             }
                         }
@@ -116,7 +116,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                                         continue;
                                 }
                             case 45:
-                            case Opcodes.IALOAD /* 46 */:
+                            case 46 /* 46 */:
                             case 47:
                                 i = i6;
                                 bChar1 = b2;
@@ -130,16 +130,16 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     i++;
                     i5++;
                     b = 34;
-                } else if (bChar1 != b) {
+                } else if (bChar1 != 34) {
                     bArr2[i5] = bChar1;
                     i++;
                     i5++;
                     b = 34;
-                } else if (bArr2 != null) {
+                } else if (true) {
                     return JDKUtils.STRING_CREATOR_JDK11.apply(bArr2, JDKUtils.LATIN1);
                 }
             }
-            if (bArr2 != null) {
+            if (true) {
                 return JDKUtils.STRING_CREATOR_JDK11.apply(bArr2, JDKUtils.LATIN1);
             }
         }
@@ -171,7 +171,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                                     break;
                             }
                         case '-':
-                        case Opcodes.IALOAD /* 46 */:
+                        case 46 /* 46 */:
                         case '/':
                             i7 = i9;
                             cHexDigit4 = c;
@@ -241,7 +241,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
         if (j != 0) {
             return j;
         }
-        long j2 = Fnv.MAGIC_HASH_CODE;
+        long j2 = -3750763034362895579L;
         while (i3 < i4) {
             int iHexDigit5 = bArr[i3];
             if (iHexDigit5 != 92) {
@@ -264,7 +264,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                 }
             }
             i3++;
-            if ((iHexDigit5 == 95 || iHexDigit5 == 45 || iHexDigit5 == 32) && (i = bArr[i3]) != c) {
+            if ((iHexDigit5 == 95 || iHexDigit5 == 45 || iHexDigit5 == 32) && (i = bArr[i3]) != 34) {
                 if (i == 39 || i == iHexDigit5) {
                 }
                 c = '\"';
@@ -273,9 +273,9 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                 iHexDigit5 = (char) (iHexDigit5 + 32);
             }
             if (iHexDigit5 < 0) {
-                iHexDigit5 = (iHexDigit5 == true ? 1 : 0) & 255;
+                iHexDigit5 = 0;
             }
-            j2 = Fnv.MAGIC_PRIME * (j2 ^ ((long) iHexDigit5));
+            j2 = 1099511628211L * (j2 ^ ((long) iHexDigit5));
             i5 = i5;
             c = '\"';
         }
@@ -810,9 +810,9 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b = bArr[i4];
                     j2 = i + (b & 255);
                     j4 = j2;
-                    j5 = j;
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    j5 = -1L;
+                    if (j4 != -1L) {
+                        if (false) {
                             long j8 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
                             length2 = ((int) (j8 ^ (j8 >>> c))) & (nameCacheEntry2Arr.length - 1);
@@ -837,11 +837,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr.length - 1);
                             nameCacheEntry = nameCacheEntryArr[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                for (i2 = 0; i2 < i10; i2++) {
+                                cArr = new char[3];
+                                for (i2 = 0; i2 < 3; i2++) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -865,9 +865,9 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b = bArr[i4];
                     j2 = i + (b & 255);
                     j4 = j2;
-                    j5 = j;
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    j5 = -1L;
+                    if (j4 != -1L) {
+                        if (false) {
                             long j9 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr2 = JSONFactory.NAME_CACHE2;
                             length2 = ((int) (j9 ^ (j9 >>> c))) & (nameCacheEntry2Arr2.length - 1);
@@ -892,11 +892,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr2 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr2.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr2.length - 1);
                             nameCacheEntry = nameCacheEntryArr2[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[4];
+                                while (i2 < 4) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -921,9 +921,9 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b2 = bArr[i4];
                     j2 = j3 + (((long) b2) & 255);
                     j4 = j2;
-                    j5 = j;
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    j5 = -1L;
+                    if (j4 != -1L) {
+                        if (false) {
                             long j10 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr3 = JSONFactory.NAME_CACHE2;
                             length2 = ((int) (j10 ^ (j10 >>> c))) & (nameCacheEntry2Arr3.length - 1);
@@ -948,11 +948,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr3 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr3.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr3.length - 1);
                             nameCacheEntry = nameCacheEntryArr3[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[5];
+                                while (i2 < 5) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -977,9 +977,9 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b2 = bArr[i4];
                     j2 = j3 + (((long) b2) & 255);
                     j4 = j2;
-                    j5 = j;
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    j5 = -1L;
+                    if (j4 != -1L) {
+                        if (false) {
                             long j11 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr4 = JSONFactory.NAME_CACHE2;
                             length2 = ((int) (j11 ^ (j11 >>> c))) & (nameCacheEntry2Arr4.length - 1);
@@ -1004,11 +1004,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr4 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr4.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr4.length - 1);
                             nameCacheEntry = nameCacheEntryArr4[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[6];
+                                while (i2 < 6) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1033,9 +1033,9 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b2 = bArr[i4];
                     j2 = j3 + (((long) b2) & 255);
                     j4 = j2;
-                    j5 = j;
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    j5 = -1L;
+                    if (j4 != -1L) {
+                        if (false) {
                             long j12 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr5 = JSONFactory.NAME_CACHE2;
                             length2 = ((int) (j12 ^ (j12 >>> c))) & (nameCacheEntry2Arr5.length - 1);
@@ -1060,11 +1060,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr5 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr5.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr5.length - 1);
                             nameCacheEntry = nameCacheEntryArr5[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[7];
+                                while (i2 < 7) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1089,9 +1089,9 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b2 = bArr[i4];
                     j2 = j3 + (((long) b2) & 255);
                     j4 = j2;
-                    j5 = j;
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    j5 = -1L;
+                    if (j4 != -1L) {
+                        if (false) {
                             long j13 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr6 = JSONFactory.NAME_CACHE2;
                             length2 = ((int) (j13 ^ (j13 >>> c))) & (nameCacheEntry2Arr6.length - 1);
@@ -1116,11 +1116,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr6 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr6.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr6.length - 1);
                             nameCacheEntry = nameCacheEntryArr6[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[8];
+                                while (i2 < 8) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1146,15 +1146,15 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b3 = bArr[i4 + 1];
                     j4 = j6;
                     j5 = j7 + (((long) b3) & 255);
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    if (j4 != -1L) {
+                        if (j5 != -1L) {
                             long j14 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr7 = JSONFactory.NAME_CACHE2;
-                            length2 = ((int) (j14 ^ (j14 >>> c))) & (nameCacheEntry2Arr7.length - 1);
+                            length2 = ((int) (j14 ^ (j14 >>> 32))) & (nameCacheEntry2Arr7.length - 1);
                             nameCacheEntry2 = nameCacheEntry2Arr7[length2];
                             if (nameCacheEntry2 == null) {
-                                cArr2 = new char[i10];
-                                while (i3 < i10) {
+                                cArr2 = new char[9];
+                                while (i3 < 9) {
                                     cArr2[i3] = (char) (bArr[i4 + i3] & 255);
                                 }
                                 biFunction2 = JDKUtils.STRING_CREATOR_JDK8;
@@ -1172,11 +1172,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr7 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr7.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr7.length - 1);
                             nameCacheEntry = nameCacheEntryArr7[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[9];
+                                while (i2 < 9) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1202,15 +1202,15 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b3 = bArr[i4 + 2];
                     j4 = j6;
                     j5 = j7 + (((long) b3) & 255);
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    if (j4 != -1L) {
+                        if (j5 != -1L) {
                             long j15 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr8 = JSONFactory.NAME_CACHE2;
-                            length2 = ((int) (j15 ^ (j15 >>> c))) & (nameCacheEntry2Arr8.length - 1);
+                            length2 = ((int) (j15 ^ (j15 >>> 32))) & (nameCacheEntry2Arr8.length - 1);
                             nameCacheEntry2 = nameCacheEntry2Arr8[length2];
                             if (nameCacheEntry2 == null) {
-                                cArr2 = new char[i10];
-                                while (i3 < i10) {
+                                cArr2 = new char[10];
+                                while (i3 < 10) {
                                     cArr2[i3] = (char) (bArr[i4 + i3] & 255);
                                 }
                                 biFunction2 = JDKUtils.STRING_CREATOR_JDK8;
@@ -1228,11 +1228,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr8 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr8.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr8.length - 1);
                             nameCacheEntry = nameCacheEntryArr8[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[10];
+                                while (i2 < 10) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1258,15 +1258,15 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b3 = bArr[i4 + 3];
                     j4 = j6;
                     j5 = j7 + (((long) b3) & 255);
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    if (j4 != -1L) {
+                        if (j5 != -1L) {
                             long j16 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr9 = JSONFactory.NAME_CACHE2;
-                            length2 = ((int) (j16 ^ (j16 >>> c))) & (nameCacheEntry2Arr9.length - 1);
+                            length2 = ((int) (j16 ^ (j16 >>> 32))) & (nameCacheEntry2Arr9.length - 1);
                             nameCacheEntry2 = nameCacheEntry2Arr9[length2];
                             if (nameCacheEntry2 == null) {
-                                cArr2 = new char[i10];
-                                while (i3 < i10) {
+                                cArr2 = new char[11];
+                                while (i3 < 11) {
                                     cArr2[i3] = (char) (bArr[i4 + i3] & 255);
                                 }
                                 biFunction2 = JDKUtils.STRING_CREATOR_JDK8;
@@ -1284,11 +1284,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr9 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr9.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr9.length - 1);
                             nameCacheEntry = nameCacheEntryArr9[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[11];
+                                while (i2 < 11) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1306,7 +1306,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                         }
                     }
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     c = ' ';
                     j = -1;
                     j6 = (bArr[i4 + 3] << 24) + (bArr[i4 + 2] << 16) + (bArr[i4 + 1] << 8) + bArr[i4];
@@ -1314,15 +1314,15 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b3 = bArr[i4 + 4];
                     j4 = j6;
                     j5 = j7 + (((long) b3) & 255);
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    if (j4 != -1L) {
+                        if (j5 != -1L) {
                             long j17 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr10 = JSONFactory.NAME_CACHE2;
-                            length2 = ((int) (j17 ^ (j17 >>> c))) & (nameCacheEntry2Arr10.length - 1);
+                            length2 = ((int) (j17 ^ (j17 >>> 32))) & (nameCacheEntry2Arr10.length - 1);
                             nameCacheEntry2 = nameCacheEntry2Arr10[length2];
                             if (nameCacheEntry2 == null) {
-                                cArr2 = new char[i10];
-                                while (i3 < i10) {
+                                cArr2 = new char[12];
+                                while (i3 < 12) {
                                     cArr2[i3] = (char) (bArr[i4 + i3] & 255);
                                 }
                                 biFunction2 = JDKUtils.STRING_CREATOR_JDK8;
@@ -1340,11 +1340,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr10 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr10.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr10.length - 1);
                             nameCacheEntry = nameCacheEntryArr10[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[12];
+                                while (i2 < 12) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1370,15 +1370,15 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b3 = bArr[i4 + 5];
                     j4 = j6;
                     j5 = j7 + (((long) b3) & 255);
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    if (j4 != -1L) {
+                        if (j5 != -1L) {
                             long j18 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr11 = JSONFactory.NAME_CACHE2;
-                            length2 = ((int) (j18 ^ (j18 >>> c))) & (nameCacheEntry2Arr11.length - 1);
+                            length2 = ((int) (j18 ^ (j18 >>> 32))) & (nameCacheEntry2Arr11.length - 1);
                             nameCacheEntry2 = nameCacheEntry2Arr11[length2];
                             if (nameCacheEntry2 == null) {
-                                cArr2 = new char[i10];
-                                while (i3 < i10) {
+                                cArr2 = new char[13];
+                                while (i3 < 13) {
                                     cArr2[i3] = (char) (bArr[i4 + i3] & 255);
                                 }
                                 biFunction2 = JDKUtils.STRING_CREATOR_JDK8;
@@ -1396,11 +1396,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr11 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr11.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr11.length - 1);
                             nameCacheEntry = nameCacheEntryArr11[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[13];
+                                while (i2 < 13) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1418,7 +1418,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                         }
                     }
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     c = ' ';
                     j = -1;
                     j6 = (((long) bArr[i4 + 5]) << 40) + ((((long) bArr[i4 + 4]) & 255) << 32) + ((((long) bArr[i4 + 3]) & 255) << 24) + ((((long) bArr[i4 + 2]) & 255) << 16) + ((((long) bArr[i4 + 1]) & 255) << 8) + (((long) bArr[i4]) & 255);
@@ -1426,15 +1426,15 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b3 = bArr[i4 + 6];
                     j4 = j6;
                     j5 = j7 + (((long) b3) & 255);
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    if (j4 != -1L) {
+                        if (j5 != -1L) {
                             long j19 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr12 = JSONFactory.NAME_CACHE2;
-                            length2 = ((int) (j19 ^ (j19 >>> c))) & (nameCacheEntry2Arr12.length - 1);
+                            length2 = ((int) (j19 ^ (j19 >>> 32))) & (nameCacheEntry2Arr12.length - 1);
                             nameCacheEntry2 = nameCacheEntry2Arr12[length2];
                             if (nameCacheEntry2 == null) {
-                                cArr2 = new char[i10];
-                                while (i3 < i10) {
+                                cArr2 = new char[14];
+                                while (i3 < 14) {
                                     cArr2[i3] = (char) (bArr[i4 + i3] & 255);
                                 }
                                 biFunction2 = JDKUtils.STRING_CREATOR_JDK8;
@@ -1452,11 +1452,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr12 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr12.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr12.length - 1);
                             nameCacheEntry = nameCacheEntryArr12[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[14];
+                                while (i2 < 14) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1482,15 +1482,15 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b3 = bArr[i4 + 7];
                     j4 = j6;
                     j5 = j7 + (((long) b3) & 255);
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    if (j4 != -1L) {
+                        if (j5 != -1L) {
                             long j110 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr13 = JSONFactory.NAME_CACHE2;
-                            length2 = ((int) (j110 ^ (j110 >>> c))) & (nameCacheEntry2Arr13.length - 1);
+                            length2 = ((int) (j110 ^ (j110 >>> 32))) & (nameCacheEntry2Arr13.length - 1);
                             nameCacheEntry2 = nameCacheEntry2Arr13[length2];
                             if (nameCacheEntry2 == null) {
-                                cArr2 = new char[i10];
-                                while (i3 < i10) {
+                                cArr2 = new char[15];
+                                while (i3 < 15) {
                                     cArr2[i3] = (char) (bArr[i4 + i3] & 255);
                                 }
                                 biFunction2 = JDKUtils.STRING_CREATOR_JDK8;
@@ -1508,11 +1508,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr13 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr13.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr13.length - 1);
                             nameCacheEntry = nameCacheEntryArr13[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[15];
+                                while (i2 < 15) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1538,15 +1538,15 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     b3 = bArr[i4 + 8];
                     j4 = j6;
                     j5 = j7 + (((long) b3) & 255);
-                    if (j4 != j) {
-                        if (j5 != j) {
+                    if (j4 != -1L) {
+                        if (j5 != -1L) {
                             long j111 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr14 = JSONFactory.NAME_CACHE2;
-                            length2 = ((int) (j111 ^ (j111 >>> c))) & (nameCacheEntry2Arr14.length - 1);
+                            length2 = ((int) (j111 ^ (j111 >>> 32))) & (nameCacheEntry2Arr14.length - 1);
                             nameCacheEntry2 = nameCacheEntry2Arr14[length2];
                             if (nameCacheEntry2 == null) {
-                                cArr2 = new char[i10];
-                                while (i3 < i10) {
+                                cArr2 = new char[16];
+                                while (i3 < 16) {
                                     cArr2[i3] = (char) (bArr[i4 + i3] & 255);
                                 }
                                 biFunction2 = JDKUtils.STRING_CREATOR_JDK8;
@@ -1564,11 +1564,11 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                             }
                         } else {
                             JSONFactory.NameCacheEntry[] nameCacheEntryArr14 = JSONFactory.NAME_CACHE;
-                            length = ((int) ((j4 >>> c) ^ j4)) & (nameCacheEntryArr14.length - 1);
+                            length = ((int) ((j4 >>> 32) ^ j4)) & (nameCacheEntryArr14.length - 1);
                             nameCacheEntry = nameCacheEntryArr14[length];
                             if (nameCacheEntry == null) {
-                                cArr = new char[i10];
-                                while (i2 < i10) {
+                                cArr = new char[16];
+                                while (i2 < 16) {
                                     cArr[i2] = (char) (bArr[i4 + i2] & 255);
                                 }
                                 biFunction = JDKUtils.STRING_CREATOR_JDK8;
@@ -1591,7 +1591,7 @@ final class JSONReaderASCII extends JSONReaderUTF8 {
                     j4 = -1;
                     j5 = -1;
                     j = -1;
-                    if (j4 != j) {
+                    if (false) {
                         if (j5 != j) {
                             long j112 = j4 ^ j5;
                             JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr15 = JSONFactory.NAME_CACHE2;

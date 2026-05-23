@@ -17,7 +17,7 @@ public class a {
     private static final String c = "ek__id";
     private static final String d = "ek_key";
     private static String e = "";
-    private static final String f = be.b().b(be.n);
+    private static final String f = be.b().b("uspi");
     private static String g = "";
     private static a h;
 
@@ -65,28 +65,28 @@ public class a {
         try {
             return TextUtils.isEmpty(a) ? str : new String(DataHelper.decrypt(Base64.decode(str.getBytes(), 0), a.getBytes()));
         } catch (Exception unused) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 子进程事件数据解密失败!");
+            UMRTLog.e("MobclickRT", "--->>> 子进程事件数据解密失败!");
             String str2 = null;
             if (TextUtils.isEmpty(e)) {
                 return null;
             }
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 子进程事件数据解密失败，换老秘钥重试");
+            UMRTLog.e("MobclickRT", "--->>> 子进程事件数据解密失败，换老秘钥重试");
             try {
                 String str3 = new String(DataHelper.decrypt(Base64.decode(str.getBytes(), 0), e.getBytes()));
                 try {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 子进程事件数据解密失败，换老秘钥重试成功。");
+                    UMRTLog.e("MobclickRT", "--->>> 子进程事件数据解密失败，换老秘钥重试成功。");
                     return str3;
                 } catch (Exception unused2) {
                     str2 = str3;
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 子进程事件数据解密失败，换老秘钥重试失败。换子进程备份key重试。");
+                    UMRTLog.e("MobclickRT", "--->>> 子进程事件数据解密失败，换老秘钥重试失败。换子进程备份key重试。");
                     try {
                         String str4 = new String(DataHelper.decrypt(Base64.decode(str.getBytes(), 0), g.getBytes()));
                         try {
-                            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 子进程事件数据解密失败，子进程备份key重试成功。");
+                            UMRTLog.e("MobclickRT", "--->>> 子进程事件数据解密失败，子进程备份key重试成功。");
                             return str4;
                         } catch (Throwable unused3) {
                             str2 = str4;
-                            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 子进程事件数据解密失败，子进程备份key重试失败。");
+                            UMRTLog.e("MobclickRT", "--->>> 子进程事件数据解密失败，子进程备份key重试失败。");
                             return str2;
                         }
                     } catch (Throwable unused4) {
@@ -100,18 +100,18 @@ public class a {
     public void a(Context context) {
         try {
             if (TextUtils.isEmpty(a)) {
-                String multiProcessSP = UMUtils.getMultiProcessSP(context, c);
+                String multiProcessSP = UMUtils.getMultiProcessSP(context, "ek__id");
                 if (!TextUtils.isEmpty(multiProcessSP)) {
                     e = c(multiProcessSP);
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>> primaryKey: " + e);
+                    UMRTLog.e("MobclickRT", "--->>>> primaryKey: " + e);
                 }
                 SharedPreferences sharedPreferences = context.getApplicationContext().getSharedPreferences(f, 0);
                 if (sharedPreferences != null) {
-                    g = sharedPreferences.getString(c, null);
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 子进程备份秘钥：主进程key: " + g);
+                    g = sharedPreferences.getString("ek__id", null);
+                    UMRTLog.e("MobclickRT", "--->>> 子进程备份秘钥：主进程key: " + g);
                 }
                 a = c(UMUtils.genId());
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>> 正式秘钥：key: " + a);
+                UMRTLog.e("MobclickRT", "--->>>> 正式秘钥：key: " + a);
             }
         } catch (Throwable unused) {
         }

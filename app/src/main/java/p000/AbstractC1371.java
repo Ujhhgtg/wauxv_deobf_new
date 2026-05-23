@@ -127,7 +127,7 @@ public abstract class AbstractC1371 {
             ContentProviderClient contentProviderClientAcquireUnstableContentProviderClient = context.getContentResolver().acquireUnstableContentProviderClient(uriBuild);
             Cursor cursorQuery = null;
             try {
-                String[] strArr = {bz.d, "file_id", "font_ttc_index", "font_variation_settings", "font_weight", "font_italic", "result_code"};
+                String[] strArr = {"_id", "file_id", "font_ttc_index", "font_variation_settings", "font_weight", "font_italic", "result_code"};
                 AbstractC0743.m2172("ContentQueryWrapper.query");
                 try {
                     String[] strArr2 = {c1372.f4940};
@@ -142,7 +142,7 @@ public abstract class AbstractC1371 {
                     if (cursorQuery != null && cursorQuery.getCount() > 0) {
                         int columnIndex = cursorQuery.getColumnIndex("result_code");
                         ArrayList arrayList2 = new ArrayList();
-                        int columnIndex2 = cursorQuery.getColumnIndex(bz.d);
+                        int columnIndex2 = cursorQuery.getColumnIndex("_id");
                         int columnIndex3 = cursorQuery.getColumnIndex("file_id");
                         int columnIndex4 = cursorQuery.getColumnIndex("font_ttc_index");
                         int columnIndex5 = cursorQuery.getColumnIndex("font_weight");

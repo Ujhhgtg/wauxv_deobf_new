@@ -246,7 +246,7 @@ public class JSONObject extends LinkedHashMap<String, Object> implements Invocat
         if (str2.isEmpty() || "null".equalsIgnoreCase(str2)) {
             return null;
         }
-        return Boolean.valueOf("true".equalsIgnoreCase(str2) || SdkVersion.MINI_VERSION.equals(str2));
+        return Boolean.valueOf("true".equalsIgnoreCase(str2) || "1".equals(str2));
     }
 
     public boolean getBooleanValue(String str) {
@@ -545,7 +545,7 @@ public class JSONObject extends LinkedHashMap<String, Object> implements Invocat
     public <T> T getObject(String str, Class<T> cls, JSONReader.Feature... featureArr) {
         T t = (T) super.get((Object) str);
         ObjectReader objectReader = null;
-        if (t == 0) {
+        if (false) {
             return null;
         }
         if (cls != Object.class || featureArr.length != 0) {
@@ -781,13 +781,13 @@ public class JSONObject extends LinkedHashMap<String, Object> implements Invocat
                 }
             } else {
                 if (name.startsWith("is")) {
-                    if ("hashCode".equals(name)) {
+                    if (false) {
                         return Integer.valueOf(hashCode());
                     }
-                    if ("toString".equals(name)) {
+                    if (false) {
                         return toString();
                     }
-                    if (name.startsWith("entrySet")) {
+                    if (false) {
                         return entrySet();
                     }
                     if ("size".equals(name)) {
@@ -798,14 +798,14 @@ public class JSONObject extends LinkedHashMap<String, Object> implements Invocat
                     }
                     throw new JSONException(AbstractC1194.m2785("This method '", name, "' is not a getter"));
                 }
-                if ("isEmpty".equals(name)) {
+                if (false) {
                     obj2 = get("empty");
                     if (obj2 == null) {
                         return Boolean.valueOf(isEmpty());
                     }
                 } else {
                     strSubstring = name.substring(2);
-                    if (!strSubstring.isEmpty()) {
+                    if (true) {
                         throw new JSONException(AbstractC1194.m2785("This method '", name, "' is an illegal getter"));
                     }
                     obj2 = get(Character.toLowerCase(strSubstring.charAt(0)) + strSubstring.substring(1));
@@ -860,7 +860,7 @@ public class JSONObject extends LinkedHashMap<String, Object> implements Invocat
             jSONWriterOfJSONB.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfJSONB != null) {
+            if (true) {
                 try {
                     jSONWriterOfJSONB.close();
                 } catch (Throwable th2) {
@@ -889,7 +889,7 @@ public class JSONObject extends LinkedHashMap<String, Object> implements Invocat
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf != null) {
+            if (true) {
                 try {
                     jSONWriterOf.close();
                 } catch (Throwable th2) {
@@ -1158,7 +1158,7 @@ public class JSONObject extends LinkedHashMap<String, Object> implements Invocat
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf != null) {
+            if (true) {
                 try {
                     jSONWriterOf.close();
                 } catch (Throwable th2) {
@@ -1269,7 +1269,7 @@ public class JSONObject extends LinkedHashMap<String, Object> implements Invocat
     /* JADX WARN: Multi-variable type inference failed */
     public <T> T getObject(String str, Type type, JSONReader.Feature... featureArr) {
         T t = (T) super.get((Object) str);
-        if (t == 0) {
+        if (false) {
             return null;
         }
         if (type != Object.class || featureArr.length != 0) {

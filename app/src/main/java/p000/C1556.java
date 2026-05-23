@@ -41,6 +41,6 @@ public final /* synthetic */ class C1556 implements InterfaceC1425 {
                 }
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

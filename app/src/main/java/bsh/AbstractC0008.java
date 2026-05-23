@@ -26,7 +26,7 @@ import p000.InterfaceC2335;
 public abstract class AbstractC0008 implements InterfaceC2335 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public static final List f514 = Arrays.asList(106, 107, Integer.valueOf(Opcodes.IDIV), Integer.valueOf(Opcodes.FNEG));
+    public static final List f514 = Arrays.asList(106, 107, Integer.valueOf(108), Integer.valueOf(118));
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final List f515 = Arrays.asList(90, 91, 88, 89, 94, 95, 96, 97, 98, 99);
@@ -132,24 +132,24 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
                 return bigDecimal.add(bigDecimal2);
             case 107:
                 return bigDecimal.subtract(bigDecimal2);
-            case Opcodes.IDIV /* 108 */:
+            case 108 /* 108 */:
                 return bigDecimal.multiply(bigDecimal2);
-            case Opcodes.LDIV /* 109 */:
+            case 109 /* 109 */:
                 return bigDecimal.divide(bigDecimal2);
             default:
                 switch (i) {
-                    case Opcodes.INEG /* 116 */:
-                    case Opcodes.LNEG /* 117 */:
+                    case 116 /* 116 */:
+                    case 117 /* 117 */:
                         return bigDecimal.remainder(bigDecimal2);
-                    case Opcodes.FNEG /* 118 */:
-                    case Opcodes.DNEG /* 119 */:
+                    case 118 /* 118 */:
+                    case 119 /* 119 */:
                         return bigDecimal.pow(bigDecimal2.intValue());
                     case 120:
                     case 121:
                     case 122:
-                    case Opcodes.LSHR /* 123 */:
-                    case Opcodes.IUSHR /* 124 */:
-                    case Opcodes.LUSHR /* 125 */:
+                    case 123 /* 123 */:
+                    case 124 /* 124 */:
+                    case 125 /* 125 */:
                         throw new C3523("Can't shift floatingpoint values");
                     default:
                         throw new C1669("Unimplemented binary float operator");
@@ -164,33 +164,33 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
                 return bigInteger.add(bigInteger2);
             case 107:
                 return bigInteger.subtract(bigInteger2);
-            case Opcodes.IDIV /* 108 */:
+            case 108 /* 108 */:
                 return bigInteger.multiply(bigInteger2);
-            case Opcodes.LDIV /* 109 */:
+            case 109 /* 109 */:
                 return bigInteger.divide(bigInteger2);
-            case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-            case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
+            case 110 /* 110 */:
+            case 111 /* 111 */:
                 return bigInteger.and(bigInteger2);
             case 112:
             case 113:
                 return bigInteger.or(bigInteger2);
-            case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+            case 114 /* 114 */:
             case 115:
                 return bigInteger.xor(bigInteger2);
-            case Opcodes.INEG /* 116 */:
-            case Opcodes.LNEG /* 117 */:
+            case 116 /* 116 */:
+            case 117 /* 117 */:
                 return bigInteger.mod(bigInteger2);
-            case Opcodes.FNEG /* 118 */:
-            case Opcodes.DNEG /* 119 */:
+            case 118 /* 118 */:
+            case 119 /* 119 */:
                 return bigInteger.pow(bigInteger2.intValue());
             case 120:
             case 121:
                 return bigInteger.shiftLeft(bigInteger2.intValue());
             case 122:
-            case Opcodes.LSHR /* 123 */:
+            case 123 /* 123 */:
                 return bigInteger.shiftRight(bigInteger2.intValue());
-            case Opcodes.IUSHR /* 124 */:
-            case Opcodes.LUSHR /* 125 */:
+            case 124 /* 124 */:
+            case 125 /* 125 */:
                 if (bigInteger.signum() >= 0) {
                     return bigInteger.shiftRight(bigInteger2.intValue());
                 }
@@ -283,13 +283,13 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
                     return bool;
                 default:
                     switch (i) {
-                        case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-                        case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
+                        case 110 /* 110 */:
+                        case 111 /* 111 */:
                             return Boolean.valueOf(zBooleanValue & zBooleanValue2);
                         case 112:
                         case 113:
                             return Boolean.valueOf(zBooleanValue | zBooleanValue2);
-                        case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+                        case 114 /* 114 */:
                         case 115:
                             return Boolean.valueOf(zBooleanValue ^ zBooleanValue2);
                         default:
@@ -300,21 +300,21 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
         if (f515.contains(Integer.valueOf(i))) {
             Comparable comparable = (Comparable) obj;
             switch (i) {
-                case Opcodes.POP2 /* 88 */:
-                case Opcodes.DUP /* 89 */:
+                case 88 /* 88 */:
+                case 89 /* 89 */:
                     return Boolean.valueOf(comparable.compareTo(obj2) > 0);
                 case 90:
                 case 91:
                     return Boolean.valueOf(comparable.compareTo(obj2) < 0);
-                case Opcodes.DUP2 /* 92 */:
+                case 92 /* 92 */:
                 case 93:
                 case 94:
                 default:
                     return Boolean.valueOf(comparable.compareTo(obj2) == 0);
-                case Opcodes.SWAP /* 95 */:
-                case Opcodes.IADD /* 96 */:
+                case 95 /* 95 */:
+                case 96 /* 96 */:
                     return Boolean.valueOf(comparable.compareTo(obj2) <= 0);
-                case Opcodes.LADD /* 97 */:
+                case 97 /* 97 */:
                 case 98:
                     return Boolean.valueOf(comparable.compareTo(obj2) >= 0);
                 case 99:
@@ -337,36 +337,36 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
             long jLongValue2 = ((Long) obj2).longValue();
             switch (i) {
                 case 106:
-                    if (jLongValue <= 0 || Long.MAX_VALUE - jLongValue >= jLongValue2) {
+                    if (jLongValue <= 0 || 9223372036854775807L - jLongValue >= jLongValue2) {
                         return Long.valueOf(jLongValue + jLongValue2);
                     }
                     break;
                 case 107:
-                    if (jLongValue >= 0 || Long.MIN_VALUE - jLongValue <= (-jLongValue2)) {
+                    if (jLongValue >= 0 || -9223372036854775808L - jLongValue <= (-jLongValue2)) {
                         return Long.valueOf(jLongValue - jLongValue2);
                     }
                     break;
-                case Opcodes.IDIV /* 108 */:
-                    if (jLongValue == 0 || Long.MAX_VALUE / jLongValue >= jLongValue2) {
+                case 108 /* 108 */:
+                    if (jLongValue == 0 || 9223372036854775807L / jLongValue >= jLongValue2) {
                         return Long.valueOf(jLongValue * jLongValue2);
                     }
                     break;
-                case Opcodes.LDIV /* 109 */:
+                case 109 /* 109 */:
                     return Long.valueOf(jLongValue / jLongValue2);
-                case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-                case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
+                case 110 /* 110 */:
+                case 111 /* 111 */:
                     return Long.valueOf(jLongValue & jLongValue2);
                 case 112:
                 case 113:
                     return Long.valueOf(jLongValue | jLongValue2);
-                case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+                case 114 /* 114 */:
                 case 115:
                     return Long.valueOf(jLongValue ^ jLongValue2);
-                case Opcodes.INEG /* 116 */:
-                case Opcodes.LNEG /* 117 */:
+                case 116 /* 116 */:
+                case 117 /* 117 */:
                     return Long.valueOf(jLongValue % jLongValue2);
-                case Opcodes.FNEG /* 118 */:
-                case Opcodes.DNEG /* 119 */:
+                case 118 /* 118 */:
+                case 119 /* 119 */:
                     double dPow = Math.pow(jLongValue, jLongValue2);
                     BigInteger bigInteger = BigDecimal.valueOf(dPow).toBigInteger();
                     if (bigInteger.compareTo(Primitive.LONG_MIN) >= 0 && bigInteger.compareTo(Primitive.LONG_MAX) <= 0) {
@@ -377,10 +377,10 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
                 case 121:
                     return Long.valueOf(jLongValue << ((int) jLongValue2));
                 case 122:
-                case Opcodes.LSHR /* 123 */:
+                case 123 /* 123 */:
                     return Long.valueOf(jLongValue >> ((int) jLongValue2));
-                case Opcodes.IUSHR /* 124 */:
-                case Opcodes.LUSHR /* 125 */:
+                case 124 /* 124 */:
+                case 125 /* 125 */:
                     return Long.valueOf(jLongValue >>> ((int) jLongValue2));
             }
             if (list.contains(Integer.valueOf(i))) {
@@ -393,7 +393,7 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
             float fFloatValue2 = ((Float) obj2).floatValue();
             switch (i) {
                 case 106:
-                    if (fFloatValue <= 0.0d || Float.MAX_VALUE - fFloatValue >= fFloatValue2) {
+                    if (fFloatValue <= 0.0d || 3.4028235E38f - fFloatValue >= fFloatValue2) {
                         return Float.valueOf(fFloatValue + fFloatValue2);
                     }
                     break;
@@ -402,20 +402,20 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
                         return Float.valueOf(fFloatValue - fFloatValue2);
                     }
                     break;
-                case Opcodes.IDIV /* 108 */:
-                    if (fFloatValue == 0.0f || Float.MAX_VALUE / fFloatValue >= fFloatValue2) {
+                case 108 /* 108 */:
+                    if (fFloatValue == 0.0f || 3.4028235E38f / fFloatValue >= fFloatValue2) {
                         return Float.valueOf(fFloatValue * fFloatValue2);
                     }
                     break;
-                case Opcodes.LDIV /* 109 */:
+                case 109 /* 109 */:
                     return Float.valueOf(fFloatValue / fFloatValue2);
                 default:
                     switch (i) {
-                        case Opcodes.INEG /* 116 */:
-                        case Opcodes.LNEG /* 117 */:
+                        case 116 /* 116 */:
+                        case 117 /* 117 */:
                             return Float.valueOf(fFloatValue % fFloatValue2);
-                        case Opcodes.FNEG /* 118 */:
-                        case Opcodes.DNEG /* 119 */:
+                        case 118 /* 118 */:
+                        case 119 /* 119 */:
                             double dPow2 = Math.pow(fFloatValue, fFloatValue2);
                             if (!Double.isInfinite(dPow2)) {
                                 return Double.valueOf(dPow2);
@@ -424,9 +424,9 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
                         case 120:
                         case 121:
                         case 122:
-                        case Opcodes.LSHR /* 123 */:
-                        case Opcodes.IUSHR /* 124 */:
-                        case Opcodes.LUSHR /* 125 */:
+                        case 123 /* 123 */:
+                        case 124 /* 124 */:
+                        case 125 /* 125 */:
                             throw new C3523("Can't shift floatingpoint values");
                     }
                     break;
@@ -440,29 +440,29 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
         double dDoubleValue2 = ((Double) obj2).doubleValue();
         switch (i) {
             case 106:
-                if (dDoubleValue <= 0.0d || Double.MAX_VALUE - dDoubleValue >= dDoubleValue2) {
+                if (dDoubleValue <= 0.0d || 1.7976931348623157E308 - dDoubleValue >= dDoubleValue2) {
                     return Double.valueOf(dDoubleValue + dDoubleValue2);
                 }
                 break;
             case 107:
-                if (dDoubleValue >= 0.0d || (-1.7976931348623157E308d) - dDoubleValue <= (-dDoubleValue2)) {
+                if (dDoubleValue >= 0.0d || (-1.7976931348623157E308) - dDoubleValue <= (-dDoubleValue2)) {
                     return Double.valueOf(dDoubleValue - dDoubleValue2);
                 }
                 break;
-            case Opcodes.IDIV /* 108 */:
-                if (dDoubleValue == 0.0d || Double.MAX_VALUE / dDoubleValue >= dDoubleValue2) {
+            case 108 /* 108 */:
+                if (dDoubleValue == 0.0d || 1.7976931348623157E308 / dDoubleValue >= dDoubleValue2) {
                     return Double.valueOf(dDoubleValue * dDoubleValue2);
                 }
                 break;
-            case Opcodes.LDIV /* 109 */:
+            case 109 /* 109 */:
                 return Double.valueOf(dDoubleValue / dDoubleValue2);
             default:
                 switch (i) {
-                    case Opcodes.INEG /* 116 */:
-                    case Opcodes.LNEG /* 117 */:
+                    case 116 /* 116 */:
+                    case 117 /* 117 */:
                         return Double.valueOf(dDoubleValue % dDoubleValue2);
-                    case Opcodes.FNEG /* 118 */:
-                    case Opcodes.DNEG /* 119 */:
+                    case 118 /* 118 */:
+                    case 119 /* 119 */:
                         double dPow3 = Math.pow(dDoubleValue, dDoubleValue2);
                         if (!Double.isInfinite(dPow3)) {
                             return Double.valueOf(dPow3);
@@ -471,9 +471,9 @@ public abstract class AbstractC0008 implements InterfaceC2335 {
                     case 120:
                     case 121:
                     case 122:
-                    case Opcodes.LSHR /* 123 */:
-                    case Opcodes.IUSHR /* 124 */:
-                    case Opcodes.LUSHR /* 125 */:
+                    case 123 /* 123 */:
+                    case 124 /* 124 */:
+                    case 125 /* 125 */:
                         throw new C3523("Can't shift floatingpoint values");
                 }
                 break;

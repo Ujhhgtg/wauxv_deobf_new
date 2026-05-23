@@ -38,7 +38,7 @@ public final class C0565 extends AbstractC2488 {
         paint.setStrokeWidth(dimension);
         Iterator it = this.f2297.iterator();
         while (it.hasNext()) {
-            ((AbstractC1750) it.next()).getClass();
+            
             paint.setColor(AbstractC0752.m2223(-65281, -16776961, 0.0f));
             if (((CarouselLayoutManager) recyclerView.getLayoutManager()).m668()) {
                 canvas2 = canvas;

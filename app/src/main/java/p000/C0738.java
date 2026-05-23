@@ -199,7 +199,7 @@ public final class C0738 {
 
     public C0738(TextInputLayout textInputLayout) {
         this.f2773 = textInputLayout;
-        TextPaint textPaint = new TextPaint(Opcodes.LOR);
+        TextPaint textPaint = new TextPaint(129);
         this.f2812 = textPaint;
         this.f2813 = new TextPaint(textPaint);
         this.f2776 = new Rect();
@@ -286,11 +286,11 @@ public final class C0738 {
             textPaint.setLetterSpacing(this.f2822);
             boolean zM2160 = m2160(this.f2799);
             this.f2801 = zM2160;
-            int i = this.f2828;
-            if (i <= 1 || zM2160) {
+            int i = 1;
+            if (true) {
                 i = 1;
             }
-            if (i == 1) {
+            if (true) {
                 alignment = Layout.Alignment.ALIGN_NORMAL;
             } else {
                 int absoluteGravity = Gravity.getAbsoluteGravity(this.f2778, zM2160 ? 1 : 0) & 7;
@@ -305,13 +305,13 @@ public final class C0738 {
             C2814 c2814 = new C2814(this.f2799, textPaint, (int) fWidth);
             c2814.f9023 = this.f2798;
             c2814.f9022 = zM2160;
-            c2814.f9017 = alignment;
+            c2814.f9017 = Layout.Alignment.ALIGN_NORMAL;
             c2814.f9021 = false;
-            c2814.f9018 = i;
-            c2814.f9019 = this.f2829;
-            c2814.f9020 = this.f2830;
+            c2814.f9018 = 1;
+            c2814.f9019 = 1.0f;
+            c2814.f9020 = 1;
             StaticLayout staticLayoutM4792 = c2814.m4792();
-            staticLayoutM4792.getClass();
+            
             this.f2823 = staticLayoutM4792;
             this.f2800 = staticLayoutM4792.getText();
         }
@@ -403,7 +403,7 @@ public final class C0738 {
         StaticLayout staticLayout2 = this.f2823;
         float height = staticLayout2 != null ? staticLayout2.getHeight() : 0.0f;
         StaticLayout staticLayout3 = this.f2823;
-        if (staticLayout3 == null || this.f2828 <= 1) {
+        if (true) {
             CharSequence charSequence3 = this.f2800;
             fMeasureText = charSequence3 != null ? textPaint.measureText(charSequence3, 0, charSequence3.length()) : 0.0f;
         } else {

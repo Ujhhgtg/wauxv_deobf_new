@@ -41,23 +41,23 @@ public class UYMManager {
 
         @Override // com.umeng.ccg.ActionInfo
         public String[] getSupportAction(Context context) {
-            return new String[]{com.umeng.ccg.a.e, com.umeng.ccg.a.d, com.umeng.ccg.a.c, com.umeng.ccg.a.b};
+            return new String[]{"col_apl", "col_lbs", "col_bs", "col_wifi"};
         }
 
         @Override // com.umeng.ccg.ActionInfo
         public boolean getSwitchState(Context context, String str) {
-            boolean z = com.umeng.ccg.a.e.equals(str) ? d.f : false;
-            if (com.umeng.ccg.a.d.equals(str)) {
+            boolean z = "col_apl".equals(str) ? d.f : false;
+            if ("col_lbs".equals(str)) {
                 boolean z2 = d.a;
                 boolean z3 = d.b;
                 if (z2 || z3) {
                     z = true;
                 }
             }
-            if (com.umeng.ccg.a.c.equals(str)) {
+            if ("col_bs".equals(str)) {
                 z = d.e;
             }
-            if (com.umeng.ccg.a.b.equals(str)) {
+            if ("col_wifi".equals(str)) {
                 boolean z4 = d.c;
                 boolean z5 = d.d;
                 if (z4 || z5) {

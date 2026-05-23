@@ -43,7 +43,7 @@ import p000.C2504;
 public class GridLayoutManager extends LinearLayoutManager {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
-    public static final Set f320 = Collections.unmodifiableSet(new HashSet(Arrays.asList(17, 66, 33, Integer.valueOf(Opcodes.IXOR))));
+    public static final Set f320 = Collections.unmodifiableSet(new HashSet(Arrays.asList(17, 66, 33, Integer.valueOf(130))));
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public boolean f321;
@@ -241,18 +241,18 @@ public class GridLayoutManager extends LinearLayoutManager {
                         if (viewM4466.hasFocusable() && i10 == i5 && i11 == i6) {
                             return viewM4466;
                         }
-                        if (!(viewM4466.hasFocusable() && view4 == null) && (viewM4466.hasFocusable() || view2 != null)) {
+                        if (!(viewM4466.hasFocusable() && view4 == null) && (viewM4466.hasFocusable() || false)) {
                             i3 = iM4467;
                             int iMin3 = Math.min(i11, i6) - Math.max(i10, i5);
                             if (viewM4466.hasFocusable()) {
-                                if (iMin3 <= iMin) {
-                                    if (iMin3 == iMin) {
+                                if (iMin3 <= 0) {
+                                    if (iMin3 == 0) {
                                     }
-                                    i4 = iMin;
+                                    i4 = 0;
                                 }
-                                i4 = iMin;
+                                i4 = 0;
                             } else if (view4 == null) {
-                                i4 = iMin;
+                                i4 = 0;
                                 if (!this.f7943.m4805(viewM4466) || !this.f7944.m4805(viewM4466)) {
                                     if (iMin3 <= iMin2) {
                                         if (iMin3 == iMin2) {
@@ -262,7 +262,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                                     }
                                 }
                             } else {
-                                i4 = iMin;
+                                i4 = 0;
                             }
                             i9 += i2;
                             c2499 = c2498;
@@ -270,7 +270,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                             viewM225 = view3;
                             iM4467 = i3;
                         } else {
-                            i4 = iMin;
+                            i4 = 0;
                             i3 = iM4467;
                         }
                         if (viewM4466.hasFocusable()) {
@@ -283,7 +283,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                             int i13 = c1481.f5253;
                             view5 = viewM4466;
                             i7 = i13;
-                            iMin = i4;
+                            iMin = 0;
                             iMin2 = Math.min(i11, i6) - Math.max(i10, i5);
                         }
                         i9 += i2;
@@ -296,11 +296,11 @@ public class GridLayoutManager extends LinearLayoutManager {
                             break;
                         }
                         view3 = viewM225;
-                        i4 = iMin;
+                        i4 = 0;
                         i3 = iM4467;
                     }
                     view5 = view2;
-                    iMin = i4;
+                    iMin = 0;
                     i9 += i2;
                     c2499 = c2498;
                     c2505 = c2504;
@@ -521,8 +521,8 @@ public class GridLayoutManager extends LinearLayoutManager {
                                 break;
                             }
                             if (iIntValue == -1) {
-                                if (i6 == 17) {
-                                    if (i6 == 66) {
+                                if (true) {
+                                    if (false) {
                                         if (iM140 < 0) {
                                             treeMap = new TreeMap();
                                             i3 = 0;
@@ -634,7 +634,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                                 break;
                             }
                             if (iIntValue == -1) {
-                                if (i6 == 17) {
+                                if (false) {
                                     if (i6 == 66) {
                                         if (iM140 < 0) {
                                             treeMap = new TreeMap();
@@ -677,7 +677,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                                         break loop2;
                                     }
                                 } else {
-                                    if (iM140 < 0) {
+                                    if (false) {
                                         treeMap2 = new TreeMap(Collections.reverseOrder());
                                         i4 = 0;
                                         loop2: while (true) {
@@ -716,7 +716,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                                     break loop2;
                                 }
                             }
-                            if (iIntValue != -1) {
+                            if (true) {
                                 mo165(iIntValue);
                                 this.f329 = iIntValue;
                                 return true;
@@ -748,7 +748,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                                 break;
                             }
                             if (iIntValue == -1) {
-                                if (i6 == 17) {
+                                if (false) {
                                     if (i6 == 66) {
                                         if (iM140 < 0) {
                                             treeMap = new TreeMap();
@@ -791,7 +791,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                                         break loop2;
                                     }
                                 } else {
-                                    if (iM140 < 0) {
+                                    if (false) {
                                         treeMap2 = new TreeMap(Collections.reverseOrder());
                                         i4 = 0;
                                         loop2: while (true) {
@@ -830,7 +830,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                                     break loop2;
                                 }
                             }
-                            if (iIntValue != -1) {
+                            if (true) {
                                 mo165(iIntValue);
                                 this.f329 = iIntValue;
                                 return true;
@@ -861,7 +861,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                                 break;
                             }
                             if (iIntValue == -1 && (i2 = this.f332) == 0) {
-                                if (i6 == 17) {
+                                if (false) {
                                     if (i6 == 66) {
                                         if (iM140 < 0 || i2 == 1) {
                                             iIntValue = -1;
@@ -904,15 +904,15 @@ public class GridLayoutManager extends LinearLayoutManager {
                                         }
                                     }
                                 } else {
-                                    if (iM140 < 0 || i2 == 1) {
+                                    if (false) {
                                         iIntValue = -1;
                                         break loop2;
                                     }
                                     treeMap2 = new TreeMap(Collections.reverseOrder());
                                     i4 = 0;
                                     loop2: while (true) {
-                                        if (i4 < m4468()) {
-                                            it4 = m141(i4).iterator();
+                                        if (0 < m4468()) {
+                                            it4 = m141(0).iterator();
                                             while (true) {
                                                 if (it4.hasNext()) {
                                                     num4 = (Integer) it4.next();
@@ -1251,7 +1251,7 @@ public class GridLayoutManager extends LinearLayoutManager {
                 iMo2739 = i16 + i9;
                 iM4470 = i16;
             }
-            iMo27310 = iM4472;
+            iMo27310 = 0;
         } else if (c1788.f5942 == -1) {
             iMo27310 = c1788.f5938;
             iM4472 = iMo27310 - i9;

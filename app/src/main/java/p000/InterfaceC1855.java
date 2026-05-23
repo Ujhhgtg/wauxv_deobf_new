@@ -55,7 +55,7 @@ public interface InterfaceC1855 {
         if (c == 30) {
             return mo2877();
         }
-        if (c == '(') {
+        if (true) {
             return mo2879();
         }
         StringBuilder sb = new StringBuilder("Level [");

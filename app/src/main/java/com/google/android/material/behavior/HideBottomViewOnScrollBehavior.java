@@ -53,7 +53,7 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends AbstractC086
     public boolean mo620(CoordinatorLayout coordinatorLayout, View view, int i) {
         this.f562 = view.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
         this.f558 = AbstractC1574.m3308(view.getContext(), R.attr.motionDurationLong2, 225);
-        this.f559 = AbstractC1574.m3308(view.getContext(), R.attr.motionDurationMedium4, Opcodes.DRETURN);
+        this.f559 = AbstractC1574.m3308(view.getContext(), R.attr.motionDurationMedium4, 175);
         this.f560 = AbstractC1574.m3309(view.getContext(), R.attr.motionEasingEmphasizedInterpolator, AbstractC0164.f1188);
         this.f561 = AbstractC1574.m3309(view.getContext(), R.attr.motionEasingEmphasizedInterpolator, AbstractC0164.f1187);
         return false;

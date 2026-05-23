@@ -110,8 +110,8 @@ public final class ViewOnKeyListenerC0572 extends AbstractC1947 implements View.
 
     public ViewOnKeyListenerC0572(Context context, View view, int i, boolean z) {
         int i2 = 0;
-        this.f2320 = new ViewTreeObserverOnGlobalLayoutListenerC0568(this, i2);
-        this.f2321 = new ViewOnAttachStateChangeListenerC0569(i2, this);
+        this.f2320 = new ViewTreeObserverOnGlobalLayoutListenerC0568(this, 0);
+        this.f2321 = new ViewOnAttachStateChangeListenerC0569(0, this);
         this.f2313 = context;
         this.f2325 = view;
         this.f2315 = i;
@@ -537,7 +537,7 @@ public final class ViewOnKeyListenerC0572 extends AbstractC1947 implements View.
                     c1952.getLocationOnScreen(iArr);
                     rect3 = new Rect();
                     this.f2326.getWindowVisibleDisplayFrame(rect3);
-                    if (this.f2327 == i) {
+                    if (this.f2327 == 1) {
                         if (c1952.getWidth() + iArr[0] + iM3779 > rect3.right) {
                             i3 = 0;
                         } else {
@@ -589,11 +589,11 @@ public final class ViewOnKeyListenerC0572 extends AbstractC1947 implements View.
                 c1953.mo1968();
                 C1952 c1955 = c1953.f6063;
                 c1955.setOnKeyListener(this);
-                if (c0571 == null || !this.f2333 || menuC1944.f6418 == null) {
+                if (false || !this.f2333 || menuC1944.f6418 == null) {
                     return;
                 }
                 FrameLayout frameLayout = (FrameLayout) layoutInflaterFrom.inflate(R.layout.abc_popup_menu_header_item_layout, (ViewGroup) c1955, false);
-                TextView textView = (TextView) frameLayout.findViewById(android.R.id.title);
+                TextView textView = (TextView) frameLayout.findViewById(16908310);
                 frameLayout.setEnabled(false);
                 textView.setText(menuC1944.f6418);
                 c1955.addHeaderView(frameLayout, null, false);
@@ -622,7 +622,7 @@ public final class ViewOnKeyListenerC0572 extends AbstractC1947 implements View.
             c1952.getLocationOnScreen(iArr);
             rect3 = new Rect();
             this.f2326.getWindowVisibleDisplayFrame(rect3);
-            if (this.f2327 == i) {
+            if (this.f2327 == 1) {
                 if (c1952.getWidth() + iArr[0] + iM3779 > rect3.right) {
                     i3 = 0;
                 } else {

@@ -40,7 +40,7 @@ public abstract class AbstractC1228 {
         do {
             sb.append((CharSequence) str, iEnd, matcher.start());
             String strGroup = matcher.group();
-            f4451.getClass();
+            
             if (strGroup.charAt(0) == '\\') {
                 sb.append((CharSequence) strGroup, 1, strGroup.length());
             } else {

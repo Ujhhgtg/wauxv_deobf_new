@@ -16,7 +16,7 @@ public final class C2281 extends AbstractC1823 implements InterfaceC1593 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ */
     public final void mo2039(MsgInfoBean msgInfoBean) throws IOException {
         for (C2355 c2355 : AbstractC2371.f7619) {
-            c2355.getClass();
+            
             c2355.m4332("onHandleMsg", msgInfoBean);
         }
     }

@@ -53,7 +53,7 @@ public final class C1315 extends AbstractC1650 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
-    public final void m3025(Object obj) throws IllegalAccessException {
+    public final void set(Object obj) throws IllegalAccessException {
         Field field = this.f4755;
         Field field2 = field != null ? field : null;
         if (field2 != null && !field2.isAccessible()) {

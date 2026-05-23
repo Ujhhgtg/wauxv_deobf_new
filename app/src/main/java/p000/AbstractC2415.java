@@ -31,7 +31,7 @@ public abstract class AbstractC2415 {
         C2102 c2102 = new C2102(10);
         f7700 = c2102;
         C2567 c2567 = f7698;
-        c2567.getClass();
+        
         if (AbstractFutureC0074.f1014.mo952(c2567, null, c2102)) {
             AbstractFutureC0074.m956(c2567);
         }

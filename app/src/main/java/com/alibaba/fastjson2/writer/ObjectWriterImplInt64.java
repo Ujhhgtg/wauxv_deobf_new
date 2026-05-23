@@ -21,7 +21,7 @@ final class ObjectWriterImplInt64 extends ObjectWriterPrimitiveImpl {
         }
         long jLongValue = ((Number) obj).longValue();
         JSONWriter.Feature feature = JSONWriter.Feature.WriteNonStringValueAsString;
-        if ((feature.mask & j) != 0) {
+        if ((JSONWriter.Feature.WriteNonStringValueAsString.mask & j) != 0) {
             jSONWriter.writeString(jLongValue);
             return;
         }
@@ -30,9 +30,9 @@ final class ObjectWriterImplInt64 extends ObjectWriterPrimitiveImpl {
             return;
         }
         JSONWriter.Feature feature2 = JSONWriter.Feature.WriteClassName;
-        if ((j & feature2.mask) != 0) {
+        if ((j & JSONWriter.Feature.WriteClassName.mask) != 0) {
             long features = jSONWriter.getFeatures();
-            if ((feature2.mask & features) == 0 && ((feature.mask | JSONWriter.Feature.WriteLongAsString.mask) & features) == 0) {
+            if ((JSONWriter.Feature.WriteClassName.mask & features) == 0 && ((JSONWriter.Feature.WriteNonStringValueAsString.mask | JSONWriter.Feature.WriteLongAsString.mask) & features) == 0) {
                 jSONWriter.writeRaw('L');
             }
         }

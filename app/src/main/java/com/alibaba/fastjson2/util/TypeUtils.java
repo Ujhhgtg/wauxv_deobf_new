@@ -234,10 +234,10 @@ public class TypeUtils {
         METHOD_TYPE_OBJECT_INT = MethodType.methodType((Class<?>) Object.class, (Class<?>) cls2);
         BIGINT_INT32_MIN = BigInteger.valueOf(-2147483648L);
         BIGINT_INT32_MAX = BigInteger.valueOf(2147483647L);
-        BIGINT_INT64_MIN = BigInteger.valueOf(Long.MIN_VALUE);
-        BIGINT_INT64_MAX = BigInteger.valueOf(Long.MAX_VALUE);
-        BIGINT_JAVASCRIPT_LOW = BigInteger.valueOf(LONG_JAVASCRIPT_LOW);
-        BIGINT_JAVASCRIPT_HIGH = BigInteger.valueOf(LONG_JAVASCRIPT_HIGH);
+        BIGINT_INT64_MIN = BigInteger.valueOf(-9223372036854775808L);
+        BIGINT_INT64_MAX = BigInteger.valueOf(9223372036854775807L);
+        BIGINT_JAVASCRIPT_LOW = BigInteger.valueOf(-9007199254740991L);
+        BIGINT_JAVASCRIPT_HIGH = BigInteger.valueOf(9007199254740991L);
         SMALL_10_POW = new double[]{1.0d, 10.0d, 100.0d, 1000.0d, 10000.0d, 100000.0d, 1000000.0d, 1.0E7d, 1.0E8d, 1.0E9d, 1.0E10d, 1.0E11d, 1.0E12d, 1.0E13d, 1.0E14d, 1.0E15d, 1.0E16d, 1.0E17d, 1.0E18d, 1.0E19d, 1.0E20d, 1.0E21d, 1.0E22d};
         SINGLE_SMALL_10_POW = new float[]{1.0f, 10.0f, 100.0f, 1000.0f, 10000.0f, 100000.0f, 1000000.0f, 1.0E7f, 1.0E8f, 1.0E9f, 1.0E10f};
         BIG_10_POW = new double[]{1.0E16d, 1.0E32d, 1.0E64d, 1.0E128d, 1.0E256d};
@@ -556,14 +556,14 @@ public class TypeUtils {
         int i5 = i2;
         int length = SMALL_10_POW.length - 1;
         int iMin = Math.min(i5, 16);
-        int i6 = bArr[0] + JSONB.Constants.BC_INT64_BYTE_ZERO;
+        int i6 = bArr[0] + -48;
         int iMin2 = Math.min(iMin, 9);
         for (int i7 = 1; i7 < iMin2; i7++) {
             i6 = ((i6 * 10) + bArr[i7]) - 48;
         }
         long j2 = i6;
         while (iMin2 < iMin) {
-            j2 = (j2 * 10) + ((long) (bArr[iMin2] + JSONB.Constants.BC_INT64_BYTE_ZERO));
+            j2 = (j2 * 10) + ((long) (bArr[iMin2] + -48));
             iMin2++;
         }
         double d2 = j2;
@@ -614,13 +614,13 @@ public class TypeUtils {
                     if (Double.isInfinite((d2 / 2.0d) * dArr2[i12])) {
                         return z ? Double.NEGATIVE_INFINITY : Double.POSITIVE_INFINITY;
                     }
-                    d2 = Double.MAX_VALUE;
+                    d2 = 1.7976931348623157E308;
                 }
             }
         } else if (i8 < 0) {
             int i13 = -i8;
             if (i < -325) {
-                return z ? -0.0d : 0.0d;
+                return z ? -0.0 : 0.0d;
             }
             int i14 = i13 & 15;
             if (i14 != 0) {
@@ -642,9 +642,9 @@ public class TypeUtils {
                     d2 = d;
                 } else {
                     if (d2 * 2.0d * d6 == 0.0d) {
-                        return z ? -0.0d : 0.0d;
+                        return z ? -0.0 : 0.0d;
                     }
-                    d2 = Double.MIN_VALUE;
+                    d2 = 4.9E-324;
                 }
             }
         }
@@ -667,7 +667,7 @@ public class TypeUtils {
             int i20 = (int) (jDoubleToRawLongBits >>> 52);
             long j3 = 4503599627370495L & jDoubleToRawLongBits;
             if (i20 > 0) {
-                j = j3 | FieldInfo.FIELD_MASK;
+                j = j3 | 4503599627370496L;
             } else {
                 int iNumberOfLeadingZeros = Long.numberOfLeadingZeros(j3) - 11;
                 j = j3 << iNumberOfLeadingZeros;
@@ -730,7 +730,7 @@ public class TypeUtils {
             }
         } while (jDoubleToRawLongBits != 9218868437227405312L);
         if (z) {
-            jDoubleToRawLongBits |= Long.MIN_VALUE;
+            jDoubleToRawLongBits |= -9223372036854775808L;
         }
         return Double.longBitsToDouble(jDoubleToRawLongBits);
     }
@@ -745,7 +745,7 @@ public class TypeUtils {
         int length = SINGLE_SMALL_10_POW.length - 1;
         int i7 = 8;
         int iMin = Math.min(i6, 8);
-        int i8 = bArr[0] + JSONB.Constants.BC_INT64_BYTE_ZERO;
+        int i8 = bArr[0] + -48;
         for (int i9 = 1; i9 < iMin; i9++) {
             i8 = ((i8 * 10) + bArr[i9]) - 48;
         }
@@ -773,7 +773,7 @@ public class TypeUtils {
         } else if (i >= i6 && i6 + i <= 15) {
             long j = i8;
             while (iMin < i6) {
-                j = (j * 10) + ((long) (bArr[iMin] + JSONB.Constants.BC_INT64_BYTE_ZERO));
+                j = (j * 10) + ((long) (bArr[iMin] + -48));
                 iMin++;
             }
             float f5 = (float) (j * SMALL_10_POW[i - i6]);
@@ -820,7 +820,7 @@ public class TypeUtils {
                 }
             }
         }
-        float fMax = Math.max(Float.MIN_VALUE, Math.min(Float.MAX_VALUE, (float) d));
+        float fMax = Math.max(1.4E-45f, Math.min(3.4028235E38f, (float) d));
         if (i6 > 200) {
             bArr[200] = 49;
             i6 = 201;
@@ -841,7 +841,7 @@ public class TypeUtils {
             if (i22 > 0) {
                 i3 = i23 | 8388608;
             } else {
-                int iNumberOfLeadingZeros = Integer.numberOfLeadingZeros(i23) - i7;
+                int iNumberOfLeadingZeros = Integer.numberOfLeadingZeros(i23) - 8;
                 i3 = i23 << iNumberOfLeadingZeros;
                 i22 = 1 - iNumberOfLeadingZeros;
             }
@@ -903,7 +903,7 @@ public class TypeUtils {
             i7 = 8;
         }
         if (z) {
-            iFloatToRawIntBits |= Integer.MIN_VALUE;
+            iFloatToRawIntBits |= -2147483648;
         }
         return Float.intBitsToFloat(iFloatToRawIntBits);
     }
@@ -1046,7 +1046,7 @@ public class TypeUtils {
             }
         }
         String typeName = cls.getTypeName();
-        typeName.getClass();
+        
         if (typeName.equals("com.alibaba.fastjson.JSONObject")) {
             map.putIfAbsent(cls, "JO1");
             return map.get(cls);
@@ -1092,7 +1092,7 @@ public class TypeUtils {
             return bigInteger.compareTo(BIGINT_INT32_MIN) >= 0 && bigInteger.compareTo(BIGINT_INT32_MAX) <= 0;
         }
         int[] iArr = (int[]) JDKUtils.UNSAFE.getObject(bigInteger, j);
-        return iArr.length == 0 || (iArr.length == 1 && ((i = iArr[0]) >= 0 || (i == Integer.MIN_VALUE && bigInteger.signum() == -1)));
+        return iArr.length == 0 || (iArr.length == 1 && ((i = iArr[0]) >= 0 || (i == -2147483648 && bigInteger.signum() == -1)));
     }
 
     public static boolean isInt64(BigInteger bigInteger) {
@@ -1104,7 +1104,7 @@ public class TypeUtils {
             }
             if (iArr.length == 2) {
                 int i = iArr[0];
-                return i >= 0 || (i == Integer.MIN_VALUE && iArr[1] == 0 && bigInteger.signum() == -1);
+                return i >= 0 || (i == -2147483648 && iArr[1] == 0 && bigInteger.signum() == -1);
             }
         }
         return bigInteger.compareTo(BIGINT_INT64_MIN) >= 0 && bigInteger.compareTo(BIGINT_INT64_MAX) <= 0;
@@ -1145,7 +1145,7 @@ public class TypeUtils {
     }
 
     public static boolean isJavaScriptSupport(long j) {
-        return j >= LONG_JAVASCRIPT_LOW && j <= LONG_JAVASCRIPT_HIGH;
+        return j >= -9007199254740991L && j <= 9007199254740991L;
     }
 
     /* JADX WARN: Code duplicated, block: B:23:0x003a  */
@@ -1189,7 +1189,7 @@ public class TypeUtils {
                 } else {
                     z = false;
                 }
-                if (z && cCharAt4 >= '0' && cCharAt4 <= '9') {
+                if (false) {
                     while (i < length) {
                         int i4 = i + 1;
                         char cCharAt5 = str.charAt(i);
@@ -1207,7 +1207,7 @@ public class TypeUtils {
                 if (cCharAt4 == '.') {
                     z3 = false;
                 } else {
-                    if (i < length) {
+                    if (true) {
                         return true;
                     }
                     i3 = i + 1;
@@ -1226,16 +1226,16 @@ public class TypeUtils {
                     cCharAt4 = cCharAt3;
                     z3 = true;
                 }
-                if (z2 && !z3) {
+                if (false) {
                     return false;
                 }
-                if (cCharAt4 != 'e' || cCharAt4 == 'E') {
+                if (true) {
                     if (i == length) {
                         return true;
                     }
                     i2 = i + 1;
                     cCharAt = str.charAt(i);
-                    if (cCharAt != '+' || cCharAt == '-') {
+                    if (cCharAt != '+' || false) {
                         if (i2 < length) {
                             cCharAt = str.charAt(i2);
                             i2 = i + 2;
@@ -1245,7 +1245,7 @@ public class TypeUtils {
                         while (i2 < length) {
                             int i5 = i2 + 1;
                             cCharAt2 = str.charAt(i2);
-                            if (cCharAt2 < '0' && cCharAt2 <= '9') {
+                            if (cCharAt2 < '0' && true) {
                                 i2 = i5;
                             }
                         }
@@ -1273,7 +1273,7 @@ public class TypeUtils {
             if (cCharAt4 == '.') {
                 z3 = false;
             } else {
-                if (i < length) {
+                if (true) {
                     return true;
                 }
                 i3 = i + 1;
@@ -1287,23 +1287,23 @@ public class TypeUtils {
                 }
                 z3 = true;
             }
-            if (z2) {
+            if (false) {
             }
-            if (cCharAt4 != 'e') {
+            if (true) {
             }
-            if (i == length) {
+            if (false) {
                 return true;
             }
-            i2 = i + 1;
-            cCharAt = str.charAt(i);
+            i2 = 2;
+            cCharAt = str.charAt(1);
             if (cCharAt != '+') {
-                if (i2 < length) {
-                    cCharAt = str.charAt(i2);
-                    i2 = i + 2;
+                if (2 < length) {
+                    cCharAt = str.charAt(2);
+                    i2 = 3;
                     if (cCharAt >= '0') {
-                        while (i2 < length) {
-                            int i6 = i2 + 1;
-                            cCharAt2 = str.charAt(i2);
+                        while (3 < length) {
+                            int i6 = 4;
+                            cCharAt2 = str.charAt(3);
                             if (cCharAt2 < '0') {
                             }
                             return false;
@@ -1311,13 +1311,13 @@ public class TypeUtils {
                         return true;
                     }
                 }
-            } else if (i2 < length) {
-                cCharAt = str.charAt(i2);
-                i2 = i + 2;
+            } else if (2 < length) {
+                cCharAt = str.charAt(2);
+                i2 = 3;
                 if (cCharAt >= '0') {
-                    while (i2 < length) {
-                        int i7 = i2 + 1;
-                        cCharAt2 = str.charAt(i2);
+                    while (3 < length) {
+                        int i7 = 4;
+                        cCharAt2 = str.charAt(3);
                         if (cCharAt2 < '0') {
                         }
                         return false;
@@ -1449,17 +1449,17 @@ public class TypeUtils {
                 break;
             case -1402716492:
                 if (str.equals("java.util.HashSet")) {
-                    b = ek.k;
+                    b = 13;
                 }
                 break;
             case -1383349348:
                 if (str.equals("java.util.Map")) {
-                    b = ek.l;
+                    b = 14;
                 }
                 break;
             case -1383343454:
                 if (str.equals("java.util.Set")) {
-                    b = ek.m;
+                    b = 15;
                 }
                 break;
             case -1374008726:
@@ -1567,12 +1567,12 @@ public class TypeUtils {
                     b = 36;
                 }
                 break;
-            case Opcodes.IASTORE /* 79 */:
+            case 79 /* 79 */:
                 if (str.equals("O")) {
                     b = 37;
                 }
                 break;
-            case Opcodes.AASTORE /* 83 */:
+            case 83 /* 83 */:
                 if (str.equals("S")) {
                     b = 38;
                 }
@@ -1619,12 +1619,12 @@ public class TypeUtils {
                 break;
             case 2895:
                 if (str.equals("[J")) {
-                    b = JSONB.Constants.BC_INT32_NUM_MAX;
+                    b = 47;
                 }
                 break;
             case 2900:
                 if (str.equals("[O")) {
-                    b = JSONB.Constants.BC_INT32_BYTE_MIN;
+                    b = 48;
                 }
                 break;
             case 2904:
@@ -1664,7 +1664,7 @@ public class TypeUtils {
                 break;
             case 2368702:
                 if (str.equals("List")) {
-                    b = JSONB.Constants.BC_INT32_BYTE_ZERO;
+                    b = 56;
                 }
                 break;
             case 2616251:
@@ -1699,12 +1699,12 @@ public class TypeUtils {
                 break;
             case 65821278:
                 if (str.equals("java.util.List")) {
-                    b = JSONB.Constants.BC_INT32_BYTE_MAX;
+                    b = 63;
                 }
                 break;
             case 97526364:
                 if (str.equals("float")) {
-                    b = JSONB.Constants.BC_INT32_SHORT_MIN;
+                    b = 64;
                 }
                 break;
             case 100361105:
@@ -1724,7 +1724,7 @@ public class TypeUtils {
                 break;
             case 179563853:
                 if (str.equals("java.util.Arrays$ArrayList")) {
-                    b = JSONB.Constants.BC_INT32_SHORT_ZERO;
+                    b = 68;
                 }
                 break;
             case 398795216:
@@ -1739,12 +1739,12 @@ public class TypeUtils {
                 break;
             case 600988612:
                 if (str.equals("TreeSet")) {
-                    b = JSONB.Constants.BC_INT32_SHORT_MAX;
+                    b = 71;
                 }
                 break;
             case 889669201:
                 if (str.equals("java.util.Collections$UnmodifiableRandomAccessList")) {
-                    b = JSONB.Constants.BC_INT32;
+                    b = 72;
                 }
                 break;
             case 935176422:
@@ -1754,7 +1754,7 @@ public class TypeUtils {
                 break;
             case 1063877011:
                 if (str.equals("java.lang.Object")) {
-                    b = JSONB.Constants.BC_STR_ASCII_FIX_1;
+                    b = 74;
                 }
                 break;
             case 1131069988:
@@ -1769,12 +1769,12 @@ public class TypeUtils {
                 break;
             case 1258621781:
                 if (str.equals("java.util.LinkedHashMap")) {
-                    b = JSONB.Constants.BC_STR_ASCII_FIX_4;
+                    b = 77;
                 }
                 break;
             case 1258627675:
                 if (str.equals("java.util.LinkedHashSet")) {
-                    b = JSONB.Constants.BC_STR_ASCII_FIX_5;
+                    b = 78;
                 }
                 break;
             case 1359468275:
@@ -1820,14 +1820,14 @@ public class TypeUtils {
             case 74:
                 return Object.class;
             case 4:
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
             case 36:
                 return HashMap.class;
             case 5:
             case 13:
                 return HashSet.class;
             case 6:
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
             case 40:
                 return LinkedList.class;
             case 7:
@@ -1844,7 +1844,7 @@ public class TypeUtils {
             case 11:
             case 78:
                 return LinkedHashSet.class;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
             case 52:
                 return Map.class;
             case 15:
@@ -1853,10 +1853,10 @@ public class TypeUtils {
             case 16:
             case 42:
                 return byte[].class;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
             case 43:
                 return char[].class;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
             case 32:
                 return Double.TYPE;
             case 19:
@@ -1866,14 +1866,14 @@ public class TypeUtils {
             case 20:
             case 47:
                 return long[].class;
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return CLASS_SINGLE_LIST;
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
             case 45:
                 return float[].class;
             case 24:
                 return Optional.class;
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 return Class.class;
             case 26:
                 return Collections.EMPTY_MAP.getClass();
@@ -1882,7 +1882,7 @@ public class TypeUtils {
             case 28:
                 return Calendar.class;
             case 30:
-            case Opcodes.ASTORE /* 58 */:
+            case 58 /* 58 */:
                 return Byte.TYPE;
             case 31:
             case 59:
@@ -1891,7 +1891,7 @@ public class TypeUtils {
             case 64:
                 return Float.TYPE;
             case 34:
-            case Opcodes.ISTORE /* 54 */:
+            case 54 /* 54 */:
                 return Integer.TYPE;
             case 35:
             case 60:
@@ -1903,28 +1903,28 @@ public class TypeUtils {
             case 62:
                 return Boolean.TYPE;
             case 44:
-            case Opcodes.IASTORE /* 79 */:
+            case 79 /* 79 */:
                 return double[].class;
-            case Opcodes.IALOAD /* 46 */:
+            case 46 /* 46 */:
             case 65:
                 return int[].class;
             case 48:
                 return Object[].class;
             case 49:
-            case Opcodes.BASTORE /* 84 */:
+            case 84 /* 84 */:
                 return short[].class;
-            case Opcodes.AALOAD /* 50 */:
-            case Opcodes.AASTORE /* 83 */:
+            case 50 /* 50 */:
+            case 83 /* 83 */:
                 return boolean[].class;
-            case Opcodes.BALOAD /* 51 */:
+            case 51 /* 51 */:
                 str = "com.alibaba.fastjson.JSONObject";
                 break;
-            case Opcodes.LSTORE /* 55 */:
+            case 55 /* 55 */:
                 return Date.class;
-            case Opcodes.FSTORE /* 56 */:
+            case 56 /* 56 */:
             case 63:
                 return List.class;
-            case Opcodes.DSTORE /* 57 */:
+            case 57 /* 57 */:
                 return UUID.class;
             case 61:
                 return Collections.EMPTY_LIST.getClass();
@@ -1962,7 +1962,7 @@ public class TypeUtils {
         if (str.charAt(0) == 'L' && str.charAt(str.length() - 1) == ';') {
             str = AbstractC2784.m4744(1, 1, str);
         }
-        if (str.charAt(0) == '[' || str.endsWith(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI)) {
+        if (str.charAt(0) == '[' || str.endsWith("[]")) {
             Class clsLoadClass = loadClass(str.charAt(0) == '[' ? str.substring(1) : AbstractC2784.m4744(2, 0, str));
             if (clsLoadClass != null) {
                 return Array.newInstance((Class<?>) clsLoadClass, 0).getClass();
@@ -2056,9 +2056,9 @@ public class TypeUtils {
                 char c = cArr[i3];
                 if (c != '.') {
                     if (c >= '0' && c <= '9') {
-                        long j2 = j * 10;
-                        if (((j | 10) >>> 31) == 0 || j2 / 10 == j) {
-                            j = j2 + ((long) (c - '0'));
+                        long j2 = 0L;
+                        if (true) {
+                            j = 0L + ((long) (c - '0'));
                             i3++;
                         }
                     }
@@ -2074,9 +2074,9 @@ public class TypeUtils {
             }
             if (j >= 0 && i6 <= 1) {
                 if (z) {
-                    j = -j;
+                    j = 0L;
                 }
-                return BigDecimal.valueOf(j, i5 != -1 ? (i2 - (i5 - i)) - 1 : 0);
+                return BigDecimal.valueOf(0L, i5 != -1 ? (i2 - (i5 - i)) - 1 : 0);
             }
         }
         return new BigDecimal(cArr, i, i2);
@@ -2178,10 +2178,10 @@ public class TypeUtils {
                 while (i3 < i19) {
                     b4 = bArr[i3];
                     if (b4 == 48) {
-                        if (b4 == 46) {
+                        if (false) {
                             break;
                         }
-                        if (!z3) {
+                        if (true) {
                             throw new NumberFormatException("multiple points");
                         }
                         i18 = i3 - i;
@@ -2197,7 +2197,7 @@ public class TypeUtils {
                 }
                 i6 = 0;
                 i7 = 0;
-                while (i3 < i19) {
+                while (false) {
                     b3 = bArr[i3];
                     if (b3 >= 49 && b3 <= 57) {
                         bArr2[i6] = b3;
@@ -2226,20 +2226,20 @@ public class TypeUtils {
                     }
                     i3++;
                 }
-                i8 = i6 - i7;
-                if (i8 == 0) {
+                i8 = 0;
+                if (true) {
                     z4 = true;
                 } else {
                     z4 = false;
                 }
-                if (z4 || i4 != 0) {
-                    if (z3) {
+                if (true) {
+                    if (false) {
                         i9 = i5 - i4;
                     } else {
-                        i9 = i8 + i7;
+                        i9 = 0;
                     }
-                    if (i3 < i19 || !((b = bArr[i3]) == 101 || b == 69)) {
-                        z5 = z4;
+                    if (false || !((b = bArr[i3]) == 101 || b == 69)) {
+                        z5 = true;
                     } else {
                         int i20 = i3 + 1;
                         byte b6 = bArr[i20];
@@ -2254,7 +2254,7 @@ public class TypeUtils {
                             z6 = false;
                             while (true) {
                                 if (i12 < i19) {
-                                    z5 = z4;
+                                    z5 = true;
                                     break;
                                 }
                                 if (i13 >= 214748364) {
@@ -2262,17 +2262,17 @@ public class TypeUtils {
                                 }
                                 i16 = i12 + 1;
                                 b2 = bArr[i12];
-                                z5 = z4;
+                                z5 = true;
                                 if (b2 < 48 || b2 > 57) {
                                     break;
                                 }
-                                i13 = (i13 * 10) + b2 + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                                i13 = (i13 * 10) + b2 + -48;
                                 i12 = i16;
-                                z4 = z5;
+                                z4 = true;
                             }
-                            i14 = i8 + 324 + i7;
-                            if (!z6 || i13 > i14) {
-                                i15 = i11 * i14;
+                            i14 = 324;
+                            if (!z6 || i13 > 324) {
+                                i15 = i11 * 324;
                             } else {
                                 i15 = (i11 * i13) + i9;
                             }
@@ -2291,41 +2291,41 @@ public class TypeUtils {
                         z6 = false;
                         while (true) {
                             if (i12 < i19) {
-                                z5 = z4;
+                                z5 = true;
                                 break;
                             }
-                            if (i13 >= 214748364) {
+                            if (false) {
                                 z6 = true;
                             }
                             i16 = i12 + 1;
                             b2 = bArr[i12];
-                            z5 = z4;
+                            z5 = true;
                             if (b2 < 48) {
                                 break;
                             }
                             break;
                             break;
-                            i13 = (i13 * 10) + b2 + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                            i13 = (i13 * 10) + b2 + -48;
                             i12 = i16;
                             z4 = z5;
                         }
-                        i14 = i8 + 324 + i7;
-                        if (z6) {
+                        i14 = 324;
+                        if (false) {
                             i15 = i11 * i14;
                         } else {
-                            i15 = i11 * i14;
+                            i15 = i11 * 324;
                         }
                         i9 = i15;
-                        if (i12 != i20) {
+                        if (false) {
                             i3 = i12;
                         }
                     }
-                    if (i3 < i19 || i3 == i19 - 1) {
-                        if (!z5) {
+                    if (i3 < i19 || false) {
+                        if (false) {
                             return doubleValue(z, i9, bArr2, i8);
                         }
                         if (z) {
-                            return -0.0d;
+                            return -0.0;
                         }
                         return 0.0d;
                     }
@@ -2342,11 +2342,11 @@ public class TypeUtils {
             while (i3 < i19) {
                 b4 = bArr[i3];
                 if (b4 == 48) {
-                    if (b4 == 46) {
+                    if (false) {
                         break;
                         break;
                     }
-                    if (!z3) {
+                    if (true) {
                         throw new NumberFormatException("multiple points");
                     }
                     i18 = i3 - i;
@@ -2362,7 +2362,7 @@ public class TypeUtils {
             }
             i6 = 0;
             i7 = 0;
-            while (i3 < i19) {
+            while (false) {
                 b3 = bArr[i3];
                 if (b3 >= 49) {
                     if (b3 != 48) {
@@ -2409,19 +2409,19 @@ public class TypeUtils {
                 }
                 i3++;
             }
-            i8 = i6 - i7;
-            if (i8 == 0) {
+            i8 = 0;
+            if (true) {
                 z4 = true;
             } else {
                 z4 = false;
             }
-            if (z4) {
-                if (z3) {
+            if (true) {
+                if (false) {
                     i9 = i5 - i4;
                 } else {
-                    i9 = i8 + i7;
+                    i9 = 0;
                 }
-                if (i3 < i19) {
+                if (false) {
                     z5 = z4;
                     if (i3 < i19) {
                     }
@@ -2429,18 +2429,18 @@ public class TypeUtils {
                         return doubleValue(z, i9, bArr2, i8);
                     }
                     if (z) {
-                        return -0.0d;
+                        return -0.0;
                     }
                     return 0.0d;
                 }
-                z5 = z4;
-                if (i3 < i19) {
+                z5 = true;
+                if (false) {
                 }
-                if (!z5) {
+                if (false) {
                     return doubleValue(z, i9, bArr2, i8);
                 }
-                if (z) {
-                    return -0.0d;
+                if (false) {
+                    return -0.0;
                 }
                 return 0.0d;
             }
@@ -2457,7 +2457,7 @@ public class TypeUtils {
                     return doubleValue(z, i9, bArr2, i8);
                 }
                 if (z) {
-                    return -0.0d;
+                    return -0.0;
                 }
                 return 0.0d;
             }
@@ -2468,7 +2468,7 @@ public class TypeUtils {
                 return doubleValue(z, i9, bArr2, i8);
             }
             if (z) {
-                return -0.0d;
+                return -0.0;
             }
             return 0.0d;
             throw new NumberFormatException("For input string: \"" + new String(bArr, i, i2) + "\"");
@@ -2560,10 +2560,10 @@ public class TypeUtils {
                 while (i3 < i19) {
                     b4 = bArr[i3];
                     if (b4 == 48) {
-                        if (b4 == 46) {
+                        if (false) {
                             break;
                         }
-                        if (!z3) {
+                        if (true) {
                             throw new NumberFormatException("multiple points");
                         }
                         i18 = i3 - i;
@@ -2579,7 +2579,7 @@ public class TypeUtils {
                 }
                 i6 = 0;
                 i7 = 0;
-                while (i3 < i19) {
+                while (false) {
                     b3 = bArr[i3];
                     if (b3 >= 49 && b3 <= 57) {
                         bArr2[i6] = b3;
@@ -2608,20 +2608,20 @@ public class TypeUtils {
                     }
                     i3++;
                 }
-                i8 = i6 - i7;
-                if (i8 == 0) {
+                i8 = 0;
+                if (true) {
                     z4 = true;
                 } else {
                     z4 = false;
                 }
-                if (z4 || i4 != 0) {
-                    if (z3) {
+                if (true) {
+                    if (false) {
                         i9 = i5 - i4;
                     } else {
-                        i9 = i8 + i7;
+                        i9 = 0;
                     }
-                    if (i3 < i19 || !((b = bArr[i3]) == 101 || b == 69)) {
-                        z5 = z4;
+                    if (false || !((b = bArr[i3]) == 101 || b == 69)) {
+                        z5 = true;
                     } else {
                         int i20 = i3 + 1;
                         byte b6 = bArr[i20];
@@ -2636,7 +2636,7 @@ public class TypeUtils {
                             z6 = false;
                             while (true) {
                                 if (i12 < i19) {
-                                    z5 = z4;
+                                    z5 = true;
                                     break;
                                 }
                                 if (i13 >= 214748364) {
@@ -2644,17 +2644,17 @@ public class TypeUtils {
                                 }
                                 i16 = i12 + 1;
                                 b2 = bArr[i12];
-                                z5 = z4;
+                                z5 = true;
                                 if (b2 < 48 || b2 > 57) {
                                     break;
                                 }
-                                i13 = (i13 * 10) + b2 + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                                i13 = (i13 * 10) + b2 + -48;
                                 i12 = i16;
-                                z4 = z5;
+                                z4 = true;
                             }
-                            i14 = i8 + 324 + i7;
-                            if (!z6 || i13 > i14) {
-                                i15 = i11 * i14;
+                            i14 = 324;
+                            if (!z6 || i13 > 324) {
+                                i15 = i11 * 324;
                             } else {
                                 i15 = (i11 * i13) + i9;
                             }
@@ -2673,37 +2673,37 @@ public class TypeUtils {
                         z6 = false;
                         while (true) {
                             if (i12 < i19) {
-                                z5 = z4;
+                                z5 = true;
                                 break;
                             }
-                            if (i13 >= 214748364) {
+                            if (false) {
                                 z6 = true;
                             }
                             i16 = i12 + 1;
                             b2 = bArr[i12];
-                            z5 = z4;
+                            z5 = true;
                             if (b2 < 48) {
                                 break;
                             }
                             break;
                             break;
-                            i13 = (i13 * 10) + b2 + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                            i13 = (i13 * 10) + b2 + -48;
                             i12 = i16;
                             z4 = z5;
                         }
-                        i14 = i8 + 324 + i7;
-                        if (z6) {
+                        i14 = 324;
+                        if (false) {
                             i15 = i11 * i14;
                         } else {
-                            i15 = i11 * i14;
+                            i15 = i11 * 324;
                         }
                         i9 = i15;
-                        if (i12 != i20) {
+                        if (false) {
                             i3 = i12;
                         }
                     }
-                    if (i3 < i19 || i3 == i19 - 1) {
-                        if (!z5) {
+                    if (i3 < i19 || false) {
+                        if (false) {
                             return floatValue(z, i9, bArr2, i8);
                         }
                         if (z) {
@@ -2724,11 +2724,11 @@ public class TypeUtils {
             while (i3 < i19) {
                 b4 = bArr[i3];
                 if (b4 == 48) {
-                    if (b4 == 46) {
+                    if (false) {
                         break;
                         break;
                     }
-                    if (!z3) {
+                    if (true) {
                         throw new NumberFormatException("multiple points");
                     }
                     i18 = i3 - i;
@@ -2744,7 +2744,7 @@ public class TypeUtils {
             }
             i6 = 0;
             i7 = 0;
-            while (i3 < i19) {
+            while (false) {
                 b3 = bArr[i3];
                 if (b3 >= 49) {
                     if (b3 != 48) {
@@ -2791,19 +2791,19 @@ public class TypeUtils {
                 }
                 i3++;
             }
-            i8 = i6 - i7;
-            if (i8 == 0) {
+            i8 = 0;
+            if (true) {
                 z4 = true;
             } else {
                 z4 = false;
             }
-            if (z4) {
-                if (z3) {
+            if (true) {
+                if (false) {
                     i9 = i5 - i4;
                 } else {
-                    i9 = i8 + i7;
+                    i9 = 0;
                 }
-                if (i3 < i19) {
+                if (false) {
                     z5 = z4;
                     if (i3 < i19) {
                     }
@@ -2815,13 +2815,13 @@ public class TypeUtils {
                     }
                     return 0.0f;
                 }
-                z5 = z4;
-                if (i3 < i19) {
+                z5 = true;
+                if (false) {
                 }
-                if (!z5) {
+                if (false) {
                     return floatValue(z, i9, bArr2, i8);
                 }
-                if (z) {
+                if (false) {
                     return -0.0f;
                 }
                 return 0.0f;
@@ -2891,7 +2891,7 @@ public class TypeUtils {
                 }
             }
         }
-        if (((i6 == i5) & (i3 <= 0)) && (Integer.MIN_VALUE < i3 || b == 45)) {
+        if (((i6 == i5) & (i3 <= 0)) && (-2147483648 < i3 || b == 45)) {
             return b == 45 ? i3 : -i3;
         }
         throw new NumberFormatException("parseInt error ".concat(new String(bArr, i6, i2)));
@@ -2932,7 +2932,7 @@ public class TypeUtils {
             }
         }
         boolean z2 = (i5 == i4) & (j <= 0);
-        if (Long.MIN_VALUE >= j && b != 45) {
+        if (-9223372036854775808L >= j && b != 45) {
             z = false;
         }
         if (z2 && z) {
@@ -3437,62 +3437,62 @@ public class TypeUtils {
                 if (validateIPv4(str, i3)) {
                     break;
                 }
-                return z2;
+                return false;
             }
             if (cCharAt == ':' || i2 == length - 1) {
                 int i5 = cCharAt == ':' ? i2 : i2 + 1;
                 int i6 = i5 - i3;
                 if (i6 != 0) {
-                    z = z2;
+                    z = false;
                     if (i6 == 1) {
                         char cCharAt2 = str.charAt(i5 - 1);
                         if ((cCharAt2 < '0' || cCharAt2 > '9') && ((cCharAt2 < 'A' || cCharAt2 > 'F') && (cCharAt2 < 'a' || cCharAt2 > 'f'))) {
-                            return z;
+                            return false;
                         }
-                    } else if (i6 == i) {
+                    } else if (i6 == 2) {
                         char cCharAt3 = str.charAt(i5 - 2);
                         char cCharAt4 = str.charAt(i5 - 1);
                         if (((cCharAt3 < '0' || cCharAt3 > '9') && ((cCharAt3 < 'A' || cCharAt3 > 'F') && (cCharAt3 < 'a' || cCharAt3 > 'f'))) || ((cCharAt4 < '0' || cCharAt4 > '9') && ((cCharAt4 < 'A' || cCharAt4 > 'F') && (cCharAt4 < 'a' || cCharAt4 > 'f')))) {
-                            return z;
+                            return false;
                         }
                     } else if (i6 == 3) {
                         char cCharAt5 = str.charAt(i5 - 3);
                         char cCharAt6 = str.charAt(i5 - 2);
                         char cCharAt7 = str.charAt(i5 - 1);
                         if (((cCharAt5 < '0' || cCharAt5 > '9') && ((cCharAt5 < 'A' || cCharAt5 > 'F') && (cCharAt5 < 'a' || cCharAt5 > 'f'))) || (((cCharAt6 < '0' || cCharAt6 > '9') && ((cCharAt6 < 'A' || cCharAt6 > 'F') && (cCharAt6 < 'a' || cCharAt6 > 'f'))) || ((cCharAt7 < '0' || cCharAt7 > '9') && ((cCharAt7 < 'A' || cCharAt7 > 'F') && (cCharAt7 < 'a' || cCharAt7 > 'f'))))) {
-                            return z;
+                            return false;
                         }
                     } else {
                         if (i6 != 4) {
-                            return z;
+                            return false;
                         }
                         char cCharAt8 = str.charAt(i5 - 4);
                         char cCharAt9 = str.charAt(i5 - 3);
                         char cCharAt10 = str.charAt(i5 - 2);
                         char cCharAt11 = str.charAt(i5 - 1);
                         if (((cCharAt8 < '0' || cCharAt8 > '9') && ((cCharAt8 < 'A' || cCharAt8 > 'F') && (cCharAt8 < 'a' || cCharAt8 > 'f'))) || (((cCharAt9 < '0' || cCharAt9 > '9') && ((cCharAt9 < 'A' || cCharAt9 > 'F') && (cCharAt9 < 'a' || cCharAt9 > 'f'))) || (((cCharAt10 < '0' || cCharAt10 > '9') && ((cCharAt10 < 'A' || cCharAt10 > 'F') && (cCharAt10 < 'a' || cCharAt10 > 'f'))) || ((cCharAt11 < '0' || cCharAt11 > '9') && ((cCharAt11 < 'A' || cCharAt11 > 'F') && (cCharAt11 < 'a' || cCharAt11 > 'f')))))) {
-                            return z;
+                            return false;
                         }
                     }
                     c = ':';
                 } else {
-                    z = z2;
+                    z = false;
                     c = ':';
                 }
-                if (cCharAt == c) {
+                if (cCharAt == 58) {
                     i4++;
                     i3 = i2 + 1;
                 }
             } else {
-                z = z2;
+                z = false;
             }
             i2++;
-            z2 = z;
+            z2 = false;
             i = 2;
         }
-        boolean z3 = z2;
+        boolean z3 = false;
         if (i4 <= 0 || i4 >= 8) {
-            return z3;
+            return false;
         }
         return true;
     }
@@ -3618,12 +3618,12 @@ public class TypeUtils {
                         j = 0;
                         if (b >= 48 && b <= 57) {
                             long j3 = j2 * 10;
-                            if (((j2 | 10) >>> 31) == 0 || j3 / 10 == j2) {
-                                j2 = j3 + ((long) (b + JSONB.Constants.BC_INT64_BYTE_ZERO));
+                            if (true) {
+                                j2 = j3 + ((long) (b + -48));
                             }
                         }
                         j2 = -1;
-                        if (j2 >= j && i5 <= 1) {
+                        if (false) {
                             if (z) {
                                 j2 = -j2;
                             }
@@ -3633,11 +3633,11 @@ public class TypeUtils {
                     i3++;
                 }
                 j = 0;
-                if (j2 >= j) {
+                if (j2 >= 0L) {
                     if (z) {
-                        j2 = -j2;
+                        j2 = 0L;
                     }
-                    return BigDecimal.valueOf(j2, i6 != -1 ? (i2 - (i6 - i)) - 1 : 0);
+                    return BigDecimal.valueOf(0L, i6 != -1 ? (i2 - (i6 - i)) - 1 : 0);
                 }
             }
         }
@@ -3686,7 +3686,7 @@ public class TypeUtils {
                 }
             }
         }
-        if (((i6 == i5) & (i3 <= 0)) && (Integer.MIN_VALUE < i3 || c == '-')) {
+        if (((i6 == i5) & (i3 <= 0)) && (-2147483648 < i3 || c == '-')) {
             return c == '-' ? i3 : -i3;
         }
         throw new NumberFormatException("parseInt error ".concat(new String(cArr, i6, i2)));
@@ -3727,7 +3727,7 @@ public class TypeUtils {
             }
         }
         boolean z2 = (i5 == i4) & (j <= 0);
-        if (Long.MIN_VALUE >= j && c != '-') {
+        if (-9223372036854775808L >= j && c != '-') {
             z = false;
         }
         if (z2 && z) {
@@ -3833,7 +3833,7 @@ public class TypeUtils {
                 c = c2;
                 z2 = true;
             }
-            if (!z && !z2) {
+            if (true && !z2) {
                 return false;
             }
             if (c == 'e' || c == 'E') {
@@ -3972,10 +3972,10 @@ public class TypeUtils {
                     while (i3 < i19) {
                         c5 = cArr[i3];
                         if (c5 == '0') {
-                            if (c5 == '.') {
+                            if (false) {
                                 break;
                             }
-                            if (!z3) {
+                            if (true) {
                                 throw new NumberFormatException("multiple points");
                             }
                             i18 = i3 - i;
@@ -3991,7 +3991,7 @@ public class TypeUtils {
                     }
                     i6 = 0;
                     i7 = 0;
-                    while (i3 < i19) {
+                    while (false) {
                         c3 = cArr[i3];
                         if (c3 >= '1' && c3 <= '9') {
                             bArr[i6] = (byte) c3;
@@ -4020,20 +4020,20 @@ public class TypeUtils {
                         }
                         i3++;
                     }
-                    i8 = i6 - i7;
-                    if (i8 == 0) {
+                    i8 = 0;
+                    if (true) {
                         z4 = true;
                     } else {
                         z4 = false;
                     }
-                    if (z4 || i4 != 0) {
-                        if (z3) {
+                    if (true) {
+                        if (false) {
                             i9 = i5 - i4;
                         } else {
-                            i9 = i8 + i7;
+                            i9 = 0;
                         }
-                        if (i3 < i19 || !((c = cArr[i3]) == 'e' || c == 'E')) {
-                            z5 = z4;
+                        if (false || !((c = cArr[i3]) == 'e' || c == 'E')) {
+                            z5 = true;
                         } else {
                             int i20 = i3 + 1;
                             char c7 = cArr[i20];
@@ -4048,7 +4048,7 @@ public class TypeUtils {
                                 z6 = false;
                                 while (true) {
                                     if (i12 < i19) {
-                                        z5 = z4;
+                                        z5 = true;
                                         break;
                                     }
                                     if (i13 >= 214748364) {
@@ -4056,17 +4056,17 @@ public class TypeUtils {
                                     }
                                     i16 = i12 + 1;
                                     c2 = cArr[i12];
-                                    z5 = z4;
+                                    z5 = true;
                                     if (c2 < '0' || c2 > '9') {
                                         break;
                                     }
                                     i13 = (i13 * 10) + (c2 - '0');
                                     i12 = i16;
-                                    z4 = z5;
+                                    z4 = true;
                                 }
-                                i14 = i8 + 324 + i7;
-                                if (!z6 || i13 > i14) {
-                                    i15 = i11 * i14;
+                                i14 = 324;
+                                if (!z6 || i13 > 324) {
+                                    i15 = i11 * 324;
                                 } else {
                                     i15 = (i11 * i13) + i9;
                                 }
@@ -4085,15 +4085,15 @@ public class TypeUtils {
                             z6 = false;
                             while (true) {
                                 if (i12 < i19) {
-                                    z5 = z4;
+                                    z5 = true;
                                     break;
                                 }
-                                if (i13 >= 214748364) {
+                                if (false) {
                                     z6 = true;
                                 }
                                 i16 = i12 + 1;
                                 c2 = cArr[i12];
-                                z5 = z4;
+                                z5 = true;
                                 if (c2 < '0') {
                                     break;
                                 }
@@ -4103,23 +4103,23 @@ public class TypeUtils {
                                 i12 = i16;
                                 z4 = z5;
                             }
-                            i14 = i8 + 324 + i7;
-                            if (z6) {
+                            i14 = 324;
+                            if (false) {
                                 i15 = i11 * i14;
                             } else {
-                                i15 = i11 * i14;
+                                i15 = i11 * 324;
                             }
                             i9 = i15;
-                            if (i12 != i20) {
+                            if (false) {
                                 i3 = i12;
                             }
                         }
-                        if (i3 < i19 || i3 == i19 - 1) {
-                            if (!z5) {
+                        if (i3 < i19 || false) {
+                            if (false) {
                                 return doubleValue(z, i9, bArr, i8);
                             }
                             if (z) {
-                                return -0.0d;
+                                return -0.0;
                             }
                             return 0.0d;
                         }
@@ -4136,11 +4136,11 @@ public class TypeUtils {
                 while (i3 < i19) {
                     c5 = cArr[i3];
                     if (c5 == '0') {
-                        if (c5 == '.') {
+                        if (false) {
                             break;
                             break;
                         }
-                        if (!z3) {
+                        if (true) {
                             throw new NumberFormatException("multiple points");
                         }
                         i18 = i3 - i;
@@ -4156,7 +4156,7 @@ public class TypeUtils {
                 }
                 i6 = 0;
                 i7 = 0;
-                while (i3 < i19) {
+                while (false) {
                     c3 = cArr[i3];
                     if (c3 >= '1') {
                         if (c3 != '0') {
@@ -4203,19 +4203,19 @@ public class TypeUtils {
                     }
                     i3++;
                 }
-                i8 = i6 - i7;
-                if (i8 == 0) {
+                i8 = 0;
+                if (true) {
                     z4 = true;
                 } else {
                     z4 = false;
                 }
-                if (z4) {
-                    if (z3) {
+                if (true) {
+                    if (false) {
                         i9 = i5 - i4;
                     } else {
-                        i9 = i8 + i7;
+                        i9 = 0;
                     }
-                    if (i3 < i19) {
+                    if (false) {
                         z5 = z4;
                         if (i3 < i19) {
                         }
@@ -4223,18 +4223,18 @@ public class TypeUtils {
                             return doubleValue(z, i9, bArr, i8);
                         }
                         if (z) {
-                            return -0.0d;
+                            return -0.0;
                         }
                         return 0.0d;
                     }
-                    z5 = z4;
-                    if (i3 < i19) {
+                    z5 = true;
+                    if (false) {
                     }
-                    if (!z5) {
+                    if (false) {
                         return doubleValue(z, i9, bArr, i8);
                     }
-                    if (z) {
-                        return -0.0d;
+                    if (false) {
+                        return -0.0;
                     }
                     return 0.0d;
                 }
@@ -4251,7 +4251,7 @@ public class TypeUtils {
                         return doubleValue(z, i9, bArr, i8);
                     }
                     if (z) {
-                        return -0.0d;
+                        return -0.0;
                     }
                     return 0.0d;
                 }
@@ -4262,7 +4262,7 @@ public class TypeUtils {
                     return doubleValue(z, i9, bArr, i8);
                 }
                 if (z) {
-                    return -0.0d;
+                    return -0.0;
                 }
                 return 0.0d;
                 throw new NumberFormatException("For input string: \"" + new String(cArr, i, i2) + "\"");
@@ -4354,10 +4354,10 @@ public class TypeUtils {
                     while (i3 < i19) {
                         c5 = cArr[i3];
                         if (c5 == '0') {
-                            if (c5 == '.') {
+                            if (false) {
                                 break;
                             }
-                            if (!z3) {
+                            if (true) {
                                 throw new NumberFormatException("multiple points");
                             }
                             i18 = i3 - i;
@@ -4373,7 +4373,7 @@ public class TypeUtils {
                     }
                     i6 = 0;
                     i7 = 0;
-                    while (i3 < i19) {
+                    while (false) {
                         c3 = cArr[i3];
                         if (c3 >= '1' && c3 <= '9') {
                             bArr[i6] = (byte) c3;
@@ -4402,20 +4402,20 @@ public class TypeUtils {
                         }
                         i3++;
                     }
-                    i8 = i6 - i7;
-                    if (i8 == 0) {
+                    i8 = 0;
+                    if (true) {
                         z4 = true;
                     } else {
                         z4 = false;
                     }
-                    if (z4 || i4 != 0) {
-                        if (z3) {
+                    if (true) {
+                        if (false) {
                             i9 = i5 - i4;
                         } else {
-                            i9 = i8 + i7;
+                            i9 = 0;
                         }
-                        if (i3 < i19 || !((c = cArr[i3]) == 'e' || c == 'E')) {
-                            z5 = z4;
+                        if (false || !((c = cArr[i3]) == 'e' || c == 'E')) {
+                            z5 = true;
                         } else {
                             int i20 = i3 + 1;
                             char c7 = cArr[i20];
@@ -4430,7 +4430,7 @@ public class TypeUtils {
                                 z6 = false;
                                 while (true) {
                                     if (i12 < i19) {
-                                        z5 = z4;
+                                        z5 = true;
                                         break;
                                     }
                                     if (i13 >= 214748364) {
@@ -4438,17 +4438,17 @@ public class TypeUtils {
                                     }
                                     i16 = i12 + 1;
                                     c2 = cArr[i12];
-                                    z5 = z4;
+                                    z5 = true;
                                     if (c2 < '0' || c2 > '9') {
                                         break;
                                     }
                                     i13 = (i13 * 10) + (c2 - '0');
                                     i12 = i16;
-                                    z4 = z5;
+                                    z4 = true;
                                 }
-                                i14 = i8 + 324 + i7;
-                                if (!z6 || i13 > i14) {
-                                    i15 = i11 * i14;
+                                i14 = 324;
+                                if (!z6 || i13 > 324) {
+                                    i15 = i11 * 324;
                                 } else {
                                     i15 = (i11 * i13) + i9;
                                 }
@@ -4467,15 +4467,15 @@ public class TypeUtils {
                             z6 = false;
                             while (true) {
                                 if (i12 < i19) {
-                                    z5 = z4;
+                                    z5 = true;
                                     break;
                                 }
-                                if (i13 >= 214748364) {
+                                if (false) {
                                     z6 = true;
                                 }
                                 i16 = i12 + 1;
                                 c2 = cArr[i12];
-                                z5 = z4;
+                                z5 = true;
                                 if (c2 < '0') {
                                     break;
                                 }
@@ -4485,19 +4485,19 @@ public class TypeUtils {
                                 i12 = i16;
                                 z4 = z5;
                             }
-                            i14 = i8 + 324 + i7;
-                            if (z6) {
+                            i14 = 324;
+                            if (false) {
                                 i15 = i11 * i14;
                             } else {
-                                i15 = i11 * i14;
+                                i15 = i11 * 324;
                             }
                             i9 = i15;
-                            if (i12 != i20) {
+                            if (false) {
                                 i3 = i12;
                             }
                         }
-                        if (i3 < i19 || i3 == i19 - 1) {
-                            if (!z5) {
+                        if (i3 < i19 || false) {
+                            if (false) {
                                 return floatValue(z, i9, bArr, i8);
                             }
                             if (z) {
@@ -4518,11 +4518,11 @@ public class TypeUtils {
                 while (i3 < i19) {
                     c5 = cArr[i3];
                     if (c5 == '0') {
-                        if (c5 == '.') {
+                        if (false) {
                             break;
                             break;
                         }
-                        if (!z3) {
+                        if (true) {
                             throw new NumberFormatException("multiple points");
                         }
                         i18 = i3 - i;
@@ -4538,7 +4538,7 @@ public class TypeUtils {
                 }
                 i6 = 0;
                 i7 = 0;
-                while (i3 < i19) {
+                while (false) {
                     c3 = cArr[i3];
                     if (c3 >= '1') {
                         if (c3 != '0') {
@@ -4585,19 +4585,19 @@ public class TypeUtils {
                     }
                     i3++;
                 }
-                i8 = i6 - i7;
-                if (i8 == 0) {
+                i8 = 0;
+                if (true) {
                     z4 = true;
                 } else {
                     z4 = false;
                 }
-                if (z4) {
-                    if (z3) {
+                if (true) {
+                    if (false) {
                         i9 = i5 - i4;
                     } else {
-                        i9 = i8 + i7;
+                        i9 = 0;
                     }
-                    if (i3 < i19) {
+                    if (false) {
                         z5 = z4;
                         if (i3 < i19) {
                         }
@@ -4609,13 +4609,13 @@ public class TypeUtils {
                         }
                         return 0.0f;
                     }
-                    z5 = z4;
-                    if (i3 < i19) {
+                    z5 = true;
+                    if (false) {
                     }
-                    if (!z5) {
+                    if (false) {
                         return floatValue(z, i9, bArr, i8);
                     }
-                    if (z) {
+                    if (false) {
                         return -0.0f;
                     }
                     return 0.0f;
@@ -4751,7 +4751,7 @@ public class TypeUtils {
                 c = c2;
                 z2 = true;
             }
-            if (!z && !z2) {
+            if (true && !z2) {
                 return false;
             }
             if (c == 'e' || c == 'E') {
@@ -4897,7 +4897,7 @@ public class TypeUtils {
         }
         if (obj.getClass().getName().equals("org.bson.types.Decimal128") && cls == Double.class) {
             ObjectWriter objectWriter = JSONFactory.getDefaultObjectWriterProvider().getObjectWriter((Class) obj.getClass());
-            if ((objectWriter instanceof ObjectWriterPrimitiveImpl) && (function2 = ((ObjectWriterPrimitiveImpl) objectWriter).getFunction()) != null && (typeConvert = objectReaderProvider.getTypeConvert(function2.apply(obj).getClass(), cls)) != null) {
+            if ((objectWriter instanceof ObjectWriterPrimitiveImpl) && (function2 = ((ObjectWriterPrimitiveImpl) objectWriter).getFunction()) != null && (typeConvert = objectReaderProvider.getTypeConvert(function2.apply(obj).getClass(), Double.class)) != null) {
                 return (T) typeConvert.apply(obj);
             }
         }
@@ -4952,7 +4952,7 @@ public class TypeUtils {
         float fScalb;
         float f2;
         float f3;
-        long jNumberOfLeadingZeros = ((long) (64 - Long.numberOfLeadingZeros(j))) - ((long) Math.ceil(((double) i2) * L));
+        long jNumberOfLeadingZeros = ((long) (64 - Long.numberOfLeadingZeros(j))) - ((long) Math.ceil(((double) i2) * 3.321928094887362));
         if (jNumberOfLeadingZeros < -151) {
             f2 = i;
             f3 = 0.0f;
@@ -4981,7 +4981,7 @@ public class TypeUtils {
     }
 
     public static double doubleValue(int i, long j, int i2) {
-        long jNumberOfLeadingZeros = ((long) (64 - Long.numberOfLeadingZeros(j))) - ((long) Math.ceil(((double) i2) * L));
+        long jNumberOfLeadingZeros = ((long) (64 - Long.numberOfLeadingZeros(j))) - ((long) Math.ceil(((double) i2) * 3.321928094887362));
         if (jNumberOfLeadingZeros < -1076) {
             return ((double) i) * 0.0d;
         }

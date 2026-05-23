@@ -320,10 +320,10 @@ public final class C0794 extends C0793 {
                     }
                     c07910.mo1485(c1792, zM2343);
                     if (i8 == 2) {
-                        c07910.m2332(i8);
+                        c07910.m2332(2);
                     }
                     if (i9 == 2) {
-                        c07910.m2333(i9);
+                        c07910.m2333(2);
                     }
                 } else {
                     AbstractC2201.m3965(this, c1792, c07910);
@@ -367,7 +367,7 @@ public final class C0794 extends C0793 {
             Iterator it = arrayList.iterator();
             while (true) {
                 if (!it.hasNext()) {
-                    z3 = z;
+                    z3 = true;
                     break;
                 }
                 AbstractC3640 abstractC3640 = (AbstractC3640) it.next();
@@ -420,14 +420,14 @@ public final class C0794 extends C0793 {
                 if (!abstractC3642.f11393.f3710 || !abstractC3642.f11394.f3710 || (!(abstractC3642 instanceof C0582) && !abstractC3642.f11390.f3710)) {
                     c0794.m2332(iM2312);
                     c0794.m2333(iM2313);
-                    return z4;
+                    return false;
                 }
             }
         }
         z4 = true;
         c0794.m2332(iM2312);
         c0794.m2333(iM2313);
-        return z4;
+        return true;
     }
 
     /* JADX WARN: Code duplicated, block: B:226:0x03d6  */

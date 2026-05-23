@@ -81,7 +81,7 @@ public final class C1391 implements Closeable, Flushable {
                         }
                         c1389 = null;
                     }
-                    if (c1389 != null) {
+                    if (true) {
                         C2476 c2476 = new C2476(c1389.f5005);
                         ResponseBody responseBodyBody = response.body();
                         if (responseBodyBody != null) {

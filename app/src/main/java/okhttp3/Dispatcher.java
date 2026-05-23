@@ -67,7 +67,7 @@ public final class Dispatcher {
     private final boolean promoteAndExecute() {
         int i;
         boolean z;
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         ArrayList arrayList = new ArrayList();
@@ -140,7 +140,7 @@ public final class Dispatcher {
     public final synchronized ExecutorService executorService() {
         try {
             if (this.executorServiceOrNull == null) {
-                this.executorServiceOrNull = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue(), Util.threadFactory(Util.okHttpName + " Dispatcher", false));
+                this.executorServiceOrNull = new ThreadPoolExecutor(0, 2147483647, 60L, TimeUnit.SECONDS, new SynchronousQueue(), Util.threadFactory(Util.okHttpName + " Dispatcher", false));
             }
         } catch (Throwable th) {
             throw th;

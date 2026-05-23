@@ -81,7 +81,7 @@ public final class BridgeInterceptor implements Interceptor {
             builderNewBuilder.header("Cookie", cookieHeader(listLoadForRequest));
         }
         if (request.header("User-Agent") == null) {
-            builderNewBuilder.header("User-Agent", Util.userAgent);
+            builderNewBuilder.header("User-Agent", "okhttp/4.12.0");
         }
         Response responseProceed = chain.proceed(builderNewBuilder.build());
         HttpHeaders.receiveHeaders(this.cookieJar, request.url(), responseProceed.headers());

@@ -13,22 +13,22 @@ public final class C1170 extends AbstractC1823 implements InterfaceC1582 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static String m2762(String str) {
-        int i = AbstractC1745.f5844;
-        C1150.f4257.getClass();
-        C1973 c1973M3492 = AbstractC0968.m2484(C1150.m2760()).m3492();
-        c1973M3492.f6543 = AbstractC2519.m4527(String.class);
-        return (String) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(Context.class), AbstractC2519.m4527(String.class)}, 2, c1973M3492)).m3832(null, str);
+        int i = 0;
+        
+        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C1150.m2760()).m3492();
+        c1973M3492.returnType = AbstractC2519.classToKClass(String.class);
+        return (String) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Context.class), AbstractC2519.classToKClass(String.class)}, 2, c1973M3492)).invoke(null, str);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static void m2763(C1170 c1170, String str, Object obj) {
-        c1170.getClass();
-        int i = AbstractC1745.f5844;
-        C1150.f4257.getClass();
-        C1973 c1973M3492 = AbstractC0968.m2484(C1150.m2760()).m3492();
-        c1973M3492.f6543 = Void.TYPE;
+        
+        int i = 0;
+        
+        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C1150.m2760()).m3492();
+        c1973M3492.returnType = Void.TYPE;
         c1973M3492.f4482 = new C1148(19);
-        C1982 c1982 = (C1982) AbstractC0744.m2191(c1973M3492.m3799());
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
         int parameterCount = c1982.f6566.getParameterCount();
         if (parameterCount == 4) {
             c1982.m3831(str, obj, null, null);
@@ -42,7 +42,7 @@ public final class C1170 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C1169.f4300, dexKitBridge, new C1148(20));
+        AbstractC1574.findMethod(C1169.f4300, dexKitBridge, new C1148(20));
     }
 
     @Override // p000.AbstractC1557

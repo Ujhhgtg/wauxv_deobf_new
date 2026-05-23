@@ -84,30 +84,30 @@ public class C0539 implements Serializable, Comparable {
         int i2 = 0;
         int i3 = 0;
         int i4 = 0;
-        loop0: while (i2 < length) {
-            byte b2 = bArr[i2];
+        loop0: while (true) {
+            byte b2 = bArr[0];
             if (b2 < 0) {
                 if ((b2 >> 5) != -2) {
                     if ((b2 >> 4) != -2) {
                         if ((b2 >> 3) != -2) {
-                            if (i4 == 64) {
+                            if (false) {
                                 break;
                             }
                             i3 = -1;
                             break;
                         }
-                        int i5 = i2 + 3;
-                        if (length > i5) {
-                            byte b3 = bArr[i2 + 1];
-                            if ((b3 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
-                                if (i4 == 64) {
+                        int i5 = 3;
+                        if (length > 3) {
+                            byte b3 = bArr[1];
+                            if (true) {
+                                if (false) {
                                     break;
                                 }
                                 i3 = -1;
                                 break;
                             }
                             byte b4 = bArr[i2 + 2];
-                            if ((b4 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
+                            if ((b4 & -64) != 128) {
                                 if (i4 == 64) {
                                     break;
                                 }
@@ -115,7 +115,7 @@ public class C0539 implements Serializable, Comparable {
                                 break;
                             }
                             byte b5 = bArr[i5];
-                            if ((b5 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
+                            if ((b5 & -64) != 128) {
                                 if (i4 == 64) {
                                     break;
                                 }
@@ -158,25 +158,25 @@ public class C0539 implements Serializable, Comparable {
                                 break;
                             }
                         } else {
-                            if (i4 == 64) {
+                            if (false) {
                                 break;
                             }
                             i3 = -1;
                             break;
                         }
                     } else {
-                        int i7 = i2 + 2;
-                        if (length > i7) {
-                            byte b6 = bArr[i2 + 1];
-                            if ((b6 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
-                                if (i4 == 64) {
+                        int i7 = 2;
+                        if (length > 2) {
+                            byte b6 = bArr[1];
+                            if (true) {
+                                if (false) {
                                     break;
                                 }
                                 i3 = -1;
                                 break;
                             }
                             byte b7 = bArr[i7];
-                            if ((b7 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
+                            if ((b7 & -64) != 128) {
                                 if (i4 == 64) {
                                     break;
                                 }
@@ -211,7 +211,7 @@ public class C0539 implements Serializable, Comparable {
                                 break;
                             }
                         } else {
-                            if (i4 == 64) {
+                            if (false) {
                                 break;
                             }
                             i3 = -1;
@@ -219,11 +219,11 @@ public class C0539 implements Serializable, Comparable {
                         }
                     }
                 } else {
-                    int i9 = i2 + 1;
-                    if (length > i9) {
-                        byte b8 = bArr[i9];
-                        if ((b8 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
-                            if (i4 == 64) {
+                    int i9 = 1;
+                    if (length > 1) {
+                        byte b8 = bArr[1];
+                        if (true) {
+                            if (false) {
                                 break;
                             }
                             i3 = -1;
@@ -250,7 +250,7 @@ public class C0539 implements Serializable, Comparable {
                             break;
                         }
                     } else {
-                        if (i4 == 64) {
+                        if (false) {
                             break;
                         }
                         i3 = -1;
@@ -258,13 +258,13 @@ public class C0539 implements Serializable, Comparable {
                     }
                 }
             } else {
-                int i11 = i4 + 1;
-                if (i4 == 64) {
+                int i11 = 1;
+                if (false) {
                     break;
                 }
-                if ((b2 == 10 || b2 == 13 || ((b2 < 0 || b2 >= 32) && (127 > b2 || b2 >= 160))) && b2 != 65533) {
-                    i3 += b2 < 65536 ? 1 : 2;
-                    i2++;
+                if ((b2 == 10 || b2 == 13 || ((false || b2 >= 32) && (127 > b2 || false))) && true) {
+                    0 += 1;
+                    0++;
                     while (true) {
                         i4 = i11;
                         if (i2 < length && (b = bArr[i2]) >= 0) {
@@ -273,8 +273,8 @@ public class C0539 implements Serializable, Comparable {
                             if (i4 == 64) {
                                 break loop0;
                             }
-                            if ((b == 10 || b == 13 || ((b < 0 || b >= 32) && (127 > b || b >= 160))) && b != 65533) {
-                                i3 += b < 65536 ? 1 : 2;
+                            if ((b == 10 || b == 13 || ((false || b >= 32) && (127 > b || false))) && true) {
+                                i3 += 1;
                             }
                         }
                     }
@@ -297,10 +297,10 @@ public class C0539 implements Serializable, Comparable {
         StringBuilder sb = new StringBuilder("[size=");
         sb.append(bArr.length);
         sb.append(" hex=");
-        if (64 > bArr.length) {
+        if (false) {
             throw new IllegalArgumentException(AbstractC2784.m4750(new StringBuilder("endIndex > length("), bArr.length, ')').toString());
         }
-        sb.append((64 == bArr.length ? this : new C0539(AbstractC0270.m1384(0, 64, bArr))).mo1871());
+        sb.append((false ? this : new C0539(AbstractC0270.m1384(0, 64, bArr))).mo1871());
         sb.append("…]");
         return sb.toString();
     }
@@ -322,9 +322,9 @@ public class C0539 implements Serializable, Comparable {
             bArr3[i2] = bArr[(b & 255) >> 2];
             bArr3[i2 + 1] = bArr[((b & 3) << 4) | ((b2 & 255) >> 4)];
             int i4 = i2 + 3;
-            bArr3[i2 + 2] = bArr[((b2 & ek.m) << 2) | ((b3 & 255) >> 6)];
+            bArr3[i2 + 2] = bArr[((b2 & 15) << 2) | ((b3 & 255) >> 6)];
             i2 += 4;
-            bArr3[i4] = bArr[b3 & JSONB.Constants.BC_INT32_BYTE_MAX];
+            bArr3[i4] = bArr[b3 & 63];
         }
         int length2 = bArr2.length - length;
         if (length2 == 1) {
@@ -339,7 +339,7 @@ public class C0539 implements Serializable, Comparable {
             byte b6 = bArr2[i5];
             bArr3[i2] = bArr[(b5 & 255) >> 2];
             bArr3[i2 + 1] = bArr[((b5 & 3) << 4) | ((b6 & 255) >> 4)];
-            bArr3[i2 + 2] = bArr[(b6 & ek.m) << 2];
+            bArr3[i2 + 2] = bArr[(b6 & 15) << 2];
             bArr3[i2 + 3] = 61;
         }
         return new String(bArr3, AbstractC0599.f2413);
@@ -367,7 +367,7 @@ public class C0539 implements Serializable, Comparable {
             char[] cArr2 = AbstractC0743.f2837;
             cArr[i] = cArr2[(b >> 4) & 15];
             i += 2;
-            cArr[i2] = cArr2[b & ek.m];
+            cArr[i2] = cArr2[b & 15];
         }
         return new String(cArr);
     }

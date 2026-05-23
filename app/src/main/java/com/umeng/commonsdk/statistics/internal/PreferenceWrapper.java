@@ -7,7 +7,7 @@ import com.umeng.analytics.pro.be;
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class PreferenceWrapper {
-    private static final String DEFAULT_PREFERENCE = be.b().b(be.j);
+    private static final String DEFAULT_PREFERENCE = be.b().b("ugc");
 
     private PreferenceWrapper() {
     }

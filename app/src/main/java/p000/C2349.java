@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.ConversationBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᛸᲈᲇᤞᲁ, reason: contains not printable characters */
@@ -40,7 +39,7 @@ public final class C2349 extends AbstractC2867 implements InterfaceC1581, Interf
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2345.f7537, dexKitBridge, new C2316(17));
+        AbstractC1574.findMethod(C2345.f7537, dexKitBridge, new C2316(17));
     }
 
     @Override // p000.InterfaceC1581
@@ -87,7 +86,7 @@ public final class C2349 extends AbstractC2867 implements InterfaceC1581, Interf
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C2345.f7537));
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C2345.f7537));
         C2349 c2349 = f7541;
         C3689 c3689M4172 = C2309.m4172(c2349, listSingletonList);
         c2349.m3262(c3689M4172, new C2316(18));

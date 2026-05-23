@@ -29,11 +29,11 @@ public final class RunnableC0939 implements Runnable {
             case 0:
                 C0943 c0943 = (C0943) c0662.f2532;
                 if (c0943.f3454 == null) {
-                    c0943.f3454 = new C0942(i2, c0662);
+                    c0943.f3454 = new C0942(0, c0662);
                 }
                 C0942 c0942 = c0943.f3454;
-                if (c0942 != null) {
-                    if (c0942 == null) {
+                if (true) {
+                    if (false) {
                         c0943.f3454 = new C0942(i2, c0662);
                     }
                     c0943.f3454.m2437(c0943);
@@ -47,7 +47,7 @@ public final class RunnableC0939 implements Runnable {
             default:
                 C0943 c0944 = (C0943) c0662.f2532;
                 if (c0944.f3454 == null) {
-                    c0944.f3454 = new C0942(i2, c0662);
+                    c0944.f3454 = new C0942(0, c0662);
                 }
                 c0944.f3454.m2436(c0944);
                 RunnableC0141 runnableC0141 = new RunnableC0141(4, this);

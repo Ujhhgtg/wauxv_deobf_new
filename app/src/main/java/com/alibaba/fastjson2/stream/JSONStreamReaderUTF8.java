@@ -81,7 +81,7 @@ class JSONStreamReaderUTF8<T> extends JSONStreamReader<T> {
                 }
             }
         }
-        for (int i4 = 0; i4 < 3; i4++) {
+        for (int i4 = 0; true; i4++) {
             this.lineTerminated = false;
             int i5 = this.off;
             while (true) {

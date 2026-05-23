@@ -25,18 +25,18 @@ public class bh implements bf {
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             try {
-                b unused = bh.d = b.AbstractBinderC0030b.a(iBinder);
+                b unused = bh.d = "com.coolpad.deviceidsupport".AbstractBinderC0030b.a(iBinder);
                 bh.this.e = bh.d.b(bh.this.g.getPackageName());
-                Log.d(bh.a, "onServiceConnected: oaid = " + bh.this.e);
+                Log.d("Coolpad", "onServiceConnected: oaid = " + bh.this.e);
             } catch (RemoteException | NullPointerException e) {
-                Log.e(bh.a, "onServiceConnected failed e=" + e.getMessage());
+                Log.e("Coolpad", "onServiceConnected failed e=" + e.getMessage());
             }
             bh.this.f.countDown();
         }
 
         @Override // android.content.ServiceConnection
         public void onServiceDisconnected(ComponentName componentName) {
-            Log.d(bh.a, "onServiceDisconnected");
+            Log.d("Coolpad", "onServiceDisconnected");
             b unused = bh.d = null;
         }
     };
@@ -44,23 +44,23 @@ public class bh implements bf {
     private void b(Context context) {
         try {
             Intent intent = new Intent();
-            intent.setComponent(new ComponentName(b, c));
+            intent.setComponent(new ComponentName("com.coolpad.deviceidsupport", "com.coolpad.deviceidsupport.DeviceIdService"));
             if (context.bindService(intent, this.h, 1)) {
                 return;
             }
-            Log.e(a, "bindService return false");
+            Log.e("Coolpad", "bindService return false");
         } catch (Throwable th) {
-            Log.e(a, "bindService failed. e=" + th.getMessage());
+            Log.e("Coolpad", "bindService failed. e=" + th.getMessage());
             this.f.countDown();
         }
     }
 
     private void c(Context context) {
         try {
-            Log.d(a, "call unbindService.");
+            Log.d("Coolpad", "call unbindService.");
             context.unbindService(this.h);
         } catch (Throwable th) {
-            Log.e(a, "unbindService failed. e=" + th.getMessage());
+            Log.e("Coolpad", "unbindService failed. e=" + th.getMessage());
         }
     }
 
@@ -74,11 +74,11 @@ public class bh implements bf {
         try {
             b(context);
             if (!this.f.await(500L, TimeUnit.MILLISECONDS)) {
-                Log.e(a, "getOAID time-out");
+                Log.e("Coolpad", "getOAID time-out");
             }
             return this.e;
         } catch (InterruptedException e) {
-            Log.e(a, "getOAID interrupted. e=" + e.getMessage());
+            Log.e("Coolpad", "getOAID interrupted. e=" + e.getMessage());
             return null;
         } finally {
             c(context);

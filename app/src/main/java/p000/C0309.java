@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C0309 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C0309 f1534 = new C0309("AutoLoginWinHook.ValShowLoginDevice", null, null, true, 0, 0.0f, 0, Opcodes.FNEG);
+    public static final C0309 f1534 = new C0309("AutoLoginWinHook.ValShowLoginDevice", null, null, true, 0, 0.0f, 0, 118);
 }

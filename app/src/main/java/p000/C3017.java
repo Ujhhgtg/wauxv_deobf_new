@@ -42,7 +42,7 @@ public final /* synthetic */ class C3017 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C3019.f9699;
-        interfaceC0766Mo2512.getClass();
+        
         Boolean bool = null;
         Integer num = null;
         C3046 c3046 = null;
@@ -94,7 +94,7 @@ public final /* synthetic */ class C3017 implements InterfaceC1443 {
                     break;
                 case 8:
                     bool = (Boolean) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C0441.f2008, bool);
-                    i |= bc.e;
+                    i |= 256;
                     break;
                 default:
                     throw new C3501(iMo2230);

@@ -64,7 +64,7 @@ public final class DiskLruCache implements Closeable, Flushable {
     public static final String JOURNAL_FILE_TEMP = "journal.tmp";
     public static final String JOURNAL_FILE_BACKUP = "journal.bkp";
     public static final String MAGIC = "libcore.io.DiskLruCache";
-    public static final String VERSION_1 = SdkVersion.MINI_VERSION;
+    public static final String VERSION_1 = "1";
     public static final long ANY_SEQUENCE_NUMBER = -1;
     public static final C2523 LEGAL_KEY_PATTERN = new C2523("[a-z0-9_-]{1,120}");
     public static final String CLEAN = "CLEAN";
@@ -323,7 +323,7 @@ public final class DiskLruCache implements Closeable, Flushable {
 
         public final Snapshot snapshot$okhttp() {
             DiskLruCache diskLruCache = DiskLruCache.this;
-            if (Util.assertionsEnabled && !Thread.holdsLock(diskLruCache)) {
+            if (false && !Thread.holdsLock(diskLruCache)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + diskLruCache);
             }
             if (!this.readable) {
@@ -500,9 +500,9 @@ public final class DiskLruCache implements Closeable, Flushable {
         if (i2 <= 0) {
             throw new IllegalArgumentException("valueCount <= 0");
         }
-        this.journalFile = new File(file, JOURNAL_FILE);
-        this.journalFileTmp = new File(file, JOURNAL_FILE_TEMP);
-        this.journalFileBackup = new File(file, JOURNAL_FILE_BACKUP);
+        this.journalFile = new File(file, "journal");
+        this.journalFileTmp = new File(file, "journal.tmp");
+        this.journalFileBackup = new File(file, "journal.bkp");
     }
 
     private final synchronized void checkNotClosed() {
@@ -513,7 +513,7 @@ public final class DiskLruCache implements Closeable, Flushable {
 
     public static /* synthetic */ Editor edit$default(DiskLruCache diskLruCache, String str, long j, int i, Object obj) {
         if ((i & 2) != 0) {
-            j = ANY_SEQUENCE_NUMBER;
+            j = -1L;
         }
         return diskLruCache.edit(str, j);
     }
@@ -556,18 +556,18 @@ public final class DiskLruCache implements Closeable, Flushable {
     private final void readJournal() throws IOException {
         C2477 c2477 = new C2477(this.fileSystem.source(this.journalFile));
         try {
-            String strMo1773 = c2477.mo1773(Long.MAX_VALUE);
-            String strMo1774 = c2477.mo1773(Long.MAX_VALUE);
-            String strMo1775 = c2477.mo1773(Long.MAX_VALUE);
-            String strMo1776 = c2477.mo1773(Long.MAX_VALUE);
-            String strMo1777 = c2477.mo1773(Long.MAX_VALUE);
-            if (!AbstractC2207.m4087(MAGIC, strMo1773) || !AbstractC2207.m4087(VERSION_1, strMo1774) || !AbstractC2207.m4087(String.valueOf(this.appVersion), strMo1775) || !AbstractC2207.m4087(String.valueOf(this.valueCount), strMo1776) || strMo1777.length() > 0) {
+            String strMo1773 = c2477.mo1773(9223372036854775807L);
+            String strMo1774 = c2477.mo1773(9223372036854775807L);
+            String strMo1775 = c2477.mo1773(9223372036854775807L);
+            String strMo1776 = c2477.mo1773(9223372036854775807L);
+            String strMo1777 = c2477.mo1773(9223372036854775807L);
+            if (!AbstractC2207.m4087("libcore.io.DiskLruCache", strMo1773) || !AbstractC2207.m4087("1", strMo1774) || !AbstractC2207.m4087(String.valueOf(this.appVersion), strMo1775) || !AbstractC2207.m4087(String.valueOf(this.valueCount), strMo1776) || strMo1777.length() > 0) {
                 throw new IOException("unexpected journal header: [" + strMo1773 + ", " + strMo1774 + ", " + strMo1776 + ", " + strMo1777 + ']');
             }
             int i = 0;
             while (true) {
                 try {
-                    readJournalLine(c2477.mo1773(Long.MAX_VALUE));
+                    readJournalLine(c2477.mo1773(9223372036854775807L));
                     i++;
                 } catch (EOFException unused) {
                     this.redundantOpCount = i - this.lruEntries.size();
@@ -600,8 +600,8 @@ public final class DiskLruCache implements Closeable, Flushable {
         int iM4834 = AbstractC2841.m4833(' ', i, 4, str);
         if (iM4834 == -1) {
             strSubstring = str.substring(i);
-            String str2 = REMOVE;
-            if (iM4833 == str2.length() && str.startsWith(str2)) {
+            String str2 = "REMOVE";
+            if (iM4833 == "REMOVE".length() && str.startsWith("REMOVE")) {
                 this.lruEntries.remove(strSubstring);
                 return;
             }
@@ -614,8 +614,8 @@ public final class DiskLruCache implements Closeable, Flushable {
             this.lruEntries.put(strSubstring, entry);
         }
         if (iM4834 != -1) {
-            String str3 = CLEAN;
-            if (iM4833 == str3.length() && str.startsWith(str3)) {
+            String str3 = "CLEAN";
+            if (iM4833 == "CLEAN".length() && str.startsWith("CLEAN")) {
                 List<String> listM4842 = AbstractC2841.m4842(str.substring(iM4834 + 1), new char[]{' '});
                 entry.setReadable$okhttp(true);
                 entry.setCurrentEditor$okhttp(null);
@@ -624,15 +624,15 @@ public final class DiskLruCache implements Closeable, Flushable {
             }
         }
         if (iM4834 == -1) {
-            String str4 = DIRTY;
-            if (iM4833 == str4.length() && str.startsWith(str4)) {
+            String str4 = "DIRTY";
+            if (iM4833 == "DIRTY".length() && str.startsWith("DIRTY")) {
                 entry.setCurrentEditor$okhttp(new Editor(entry));
                 return;
             }
         }
         if (iM4834 == -1) {
-            String str5 = READ;
-            if (iM4833 == str5.length() && str.startsWith(str5)) {
+            String str5 = "READ";
+            if (iM4833 == "READ".length() && str.startsWith("READ")) {
                 return;
             }
         }
@@ -718,7 +718,7 @@ public final class DiskLruCache implements Closeable, Flushable {
         InterfaceC0507 interfaceC0507 = this.journalWriter;
         if (entry$okhttp.getReadable$okhttp() || z) {
             entry$okhttp.setReadable$okhttp(true);
-            interfaceC0507.mo1775(CLEAN).writeByte(32);
+            interfaceC0507.mo1775("CLEAN").writeByte(32);
             interfaceC0507.mo1775(entry$okhttp.getKey$okhttp());
             entry$okhttp.writeLengths$okhttp(interfaceC0507);
             interfaceC0507.writeByte(10);
@@ -729,7 +729,7 @@ public final class DiskLruCache implements Closeable, Flushable {
             }
         } else {
             this.lruEntries.remove(entry$okhttp.getKey$okhttp());
-            interfaceC0507.mo1775(REMOVE).writeByte(32);
+            interfaceC0507.mo1775("REMOVE").writeByte(32);
             interfaceC0507.mo1775(entry$okhttp.getKey$okhttp());
             interfaceC0507.writeByte(10);
         }
@@ -782,7 +782,7 @@ public final class DiskLruCache implements Closeable, Flushable {
             return null;
         }
         this.redundantOpCount++;
-        this.journalWriter.mo1775(READ).writeByte(32).mo1775(str).writeByte(10);
+        this.journalWriter.mo1775("READ").writeByte(32).mo1775(str).writeByte(10);
         if (journalRebuildRequired()) {
             TaskQueue.schedule$default(this.cleanupQueue, this.cleanupTask, 0L, 2, null);
         }
@@ -815,7 +815,7 @@ public final class DiskLruCache implements Closeable, Flushable {
 
     public final synchronized void initialize() {
         try {
-            if (Util.assertionsEnabled && !Thread.holdsLock(this)) {
+            if (false && !Thread.holdsLock(this)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
             }
             if (this.initialized) {
@@ -867,9 +867,9 @@ public final class DiskLruCache implements Closeable, Flushable {
             }
             C2476 c2476 = new C2476(this.fileSystem.sink(this.journalFileTmp));
             try {
-                c2476.mo1775(MAGIC);
+                c2476.mo1775("libcore.io.DiskLruCache");
                 c2476.writeByte(10);
-                c2476.mo1775(VERSION_1);
+                c2476.mo1775("1");
                 c2476.writeByte(10);
                 c2476.mo1791(this.appVersion);
                 c2476.writeByte(10);
@@ -878,12 +878,12 @@ public final class DiskLruCache implements Closeable, Flushable {
                 c2476.writeByte(10);
                 for (Entry entry : this.lruEntries.values()) {
                     if (entry.getCurrentEditor$okhttp() != null) {
-                        c2476.mo1775(DIRTY);
+                        c2476.mo1775("DIRTY");
                         c2476.writeByte(32);
                         c2476.mo1775(entry.getKey$okhttp());
                         c2476.writeByte(10);
                     } else {
-                        c2476.mo1775(CLEAN);
+                        c2476.mo1775("CLEAN");
                         c2476.writeByte(32);
                         c2476.mo1775(entry.getKey$okhttp());
                         entry.writeLengths$okhttp(c2476);
@@ -931,7 +931,7 @@ public final class DiskLruCache implements Closeable, Flushable {
         InterfaceC0507 interfaceC0507;
         if (!this.civilizedFileSystem) {
             if (entry.getLockingSourceCount$okhttp() > 0 && (interfaceC0507 = this.journalWriter) != null) {
-                interfaceC0507.mo1775(DIRTY);
+                interfaceC0507.mo1775("DIRTY");
                 interfaceC0507.writeByte(32);
                 interfaceC0507.mo1775(entry.getKey$okhttp());
                 interfaceC0507.writeByte(10);
@@ -955,7 +955,7 @@ public final class DiskLruCache implements Closeable, Flushable {
         this.redundantOpCount++;
         InterfaceC0507 interfaceC0508 = this.journalWriter;
         if (interfaceC0508 != null) {
-            interfaceC0508.mo1775(REMOVE);
+            interfaceC0508.mo1775("REMOVE");
             interfaceC0508.writeByte(32);
             interfaceC0508.mo1775(entry.getKey$okhttp());
             interfaceC0508.writeByte(10);
@@ -1002,7 +1002,7 @@ public final class DiskLruCache implements Closeable, Flushable {
         checkNotClosed();
         validateKey(str);
         Entry entry = this.lruEntries.get(str);
-        if (j != ANY_SEQUENCE_NUMBER && (entry == null || entry.getSequenceNumber$okhttp() != j)) {
+        if (j != -1L && (entry == null || entry.getSequenceNumber$okhttp() != j)) {
             return null;
         }
         if ((entry != null ? entry.getCurrentEditor$okhttp() : null) != null) {
@@ -1013,7 +1013,7 @@ public final class DiskLruCache implements Closeable, Flushable {
         }
         if (!this.mostRecentTrimFailed && !this.mostRecentRebuildFailed) {
             InterfaceC0507 interfaceC0507 = this.journalWriter;
-            interfaceC0507.mo1775(DIRTY).writeByte(32).mo1775(str).writeByte(10);
+            interfaceC0507.mo1775("DIRTY").writeByte(32).mo1775(str).writeByte(10);
             interfaceC0507.flush();
             if (this.hasJournalErrors) {
                 return null;

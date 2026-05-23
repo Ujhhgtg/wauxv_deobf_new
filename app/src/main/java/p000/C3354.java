@@ -47,7 +47,7 @@ public final /* synthetic */ class C3354 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C3356.f10577;
-        interfaceC0766Mo2512.getClass();
+        
         Boolean bool = null;
         List list = null;
         List list2 = null;
@@ -121,7 +121,7 @@ public final /* synthetic */ class C3354 implements InterfaceC1443 {
                     break;
                 case 8:
                     bool = (Boolean) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C0441.f2008, bool);
-                    i |= bc.e;
+                    i |= 256;
                     num = num4;
                     num2 = num2;
                     break;
@@ -143,7 +143,7 @@ public final /* synthetic */ class C3354 implements InterfaceC1443 {
                     num = num4;
                     num2 = num2;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     list = (List) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, (InterfaceC1743) interfaceC1758Arr[12].getValue(), list);
                     i |= 4096;
                     num = num4;

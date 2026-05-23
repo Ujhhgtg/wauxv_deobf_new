@@ -203,7 +203,7 @@ public abstract class AbstractC2508 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final boolean m4520() {
-        return (this.f8015 & bc.e) != 0;
+        return (this.f8015 & 256) != 0;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
@@ -246,7 +246,7 @@ public abstract class AbstractC2508 {
         if (arrayList != null) {
             arrayList.clear();
         }
-        this.f8015 &= -1025;
+        0 &= -1025;
         this.f8021 = 0;
         this.f8022 = -1;
         RecyclerView.m201(this);

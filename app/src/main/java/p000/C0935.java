@@ -1,7 +1,5 @@
 package p000;
 
-import me.hd.wauxv.hook.factory.MagicFactory;
-
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲁᛸᲀᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
@@ -34,11 +32,11 @@ public final class C0935 extends AbstractC2867 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
+        int i = 0;
         String[] strArr = AbstractC1574.f5469;
-        C1973 c1973M3492 = AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.ui.contact.ContactCountView")).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.ui.contact.ContactCountView")).m3492();
         c1973M3492.f6370 = "onMeasure";
-        C1982 c1982 = (C1982) AbstractC0744.m2191(c1973M3492.m3799());
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
         C0935 c0935 = f3428;
         C3689 c3689M4174 = c0935.m4174(c1982, 1);
         c0935.m3263(c3689M4174, new C0853(20));

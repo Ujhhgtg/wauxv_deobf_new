@@ -108,8 +108,8 @@ public class ConstraintLayout extends ViewGroup {
         this.f199 = new C0794();
         this.f200 = 0;
         this.f201 = 0;
-        this.f202 = Integer.MAX_VALUE;
-        this.f203 = Integer.MAX_VALUE;
+        this.f202 = 2147483647;
+        this.f203 = 2147483647;
         this.f204 = true;
         this.f205 = 257;
         this.f206 = null;
@@ -207,7 +207,7 @@ public class ConstraintLayout extends ViewGroup {
         ArrayList arrayList = this.f198;
         if (arrayList != null && (size = arrayList.size()) > 0) {
             for (int i = 0; i < size; i++) {
-                ((AbstractC0781) arrayList.get(i)).getClass();
+                
             }
         }
         super.dispatchDraw(canvas);
@@ -384,7 +384,7 @@ public class ConstraintLayout extends ViewGroup {
                         c0783.f2905 = typedArrayObtainStyledAttributes.getInt(index, -1);
                     }
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     int resourceId6 = typedArrayObtainStyledAttributes.getResourceId(index, c0783.f2906);
                     c0783.f2906 = resourceId6;
                     if (resourceId6 == -1) {
@@ -398,7 +398,7 @@ public class ConstraintLayout extends ViewGroup {
                         c0783.f2907 = typedArrayObtainStyledAttributes.getInt(index, -1);
                     }
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     int resourceId8 = typedArrayObtainStyledAttributes.getResourceId(index, c0783.f2908);
                     c0783.f2908 = resourceId8;
                     if (resourceId8 == -1) {
@@ -419,14 +419,14 @@ public class ConstraintLayout extends ViewGroup {
                         c0783.f2910 = typedArrayObtainStyledAttributes.getInt(index, -1);
                     }
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     int resourceId11 = typedArrayObtainStyledAttributes.getResourceId(index, c0783.f2914);
                     c0783.f2914 = resourceId11;
                     if (resourceId11 == -1) {
                         c0783.f2914 = typedArrayObtainStyledAttributes.getInt(index, -1);
                     }
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     int resourceId12 = typedArrayObtainStyledAttributes.getResourceId(index, c0783.f2915);
                     c0783.f2915 = resourceId12;
                     if (resourceId12 == -1) {
@@ -447,19 +447,19 @@ public class ConstraintLayout extends ViewGroup {
                         c0783.f2917 = typedArrayObtainStyledAttributes.getInt(index, -1);
                     }
                     break;
-                case Opcodes.ILOAD /* 21 */:
+                case 21 /* 21 */:
                     c0783.f2918 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0783.f2918);
                     break;
-                case Opcodes.LLOAD /* 22 */:
+                case 22 /* 22 */:
                     c0783.f2919 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0783.f2919);
                     break;
-                case Opcodes.FLOAD /* 23 */:
+                case 23 /* 23 */:
                     c0783.f2920 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0783.f2920);
                     break;
-                case Opcodes.DLOAD /* 24 */:
+                case 24 /* 24 */:
                     c0783.f2921 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0783.f2921);
                     break;
-                case Opcodes.ALOAD /* 25 */:
+                case 25 /* 25 */:
                     c0783.f2922 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0783.f2922);
                     break;
                 case 26:
@@ -584,7 +584,7 @@ public class ConstraintLayout extends ViewGroup {
                         case 45:
                             c0783.f2928 = typedArrayObtainStyledAttributes.getFloat(index, c0783.f2928);
                             break;
-                        case Opcodes.IALOAD /* 46 */:
+                        case 46 /* 46 */:
                             c0783.f2929 = typedArrayObtainStyledAttributes.getFloat(index, c0783.f2929);
                             break;
                         case 47:
@@ -596,10 +596,10 @@ public class ConstraintLayout extends ViewGroup {
                         case 49:
                             c0783.f2940 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, c0783.f2940);
                             break;
-                        case Opcodes.AALOAD /* 50 */:
+                        case 50 /* 50 */:
                             c0783.f2941 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, c0783.f2941);
                             break;
-                        case Opcodes.BALOAD /* 51 */:
+                        case 51 /* 51 */:
                             c0783.f2945 = typedArrayObtainStyledAttributes.getString(index);
                             break;
                     }
@@ -649,7 +649,7 @@ public class ConstraintLayout extends ViewGroup {
         int size = arrayList.size();
         if (size > 0) {
             for (int i6 = 0; i6 < size; i6++) {
-                ((AbstractC0781) arrayList.get(i6)).getClass();
+                
             }
         }
     }
@@ -736,7 +736,7 @@ public class ConstraintLayout extends ViewGroup {
                 m57(i, i2, c07912.m2316(), c07912.m2313(), c07912.f3148, c07912.f3149);
                 return;
             }
-            if (i24 == i && View.MeasureSpec.getMode(i) == 1073741824 && View.MeasureSpec.getMode(i2) == Integer.MIN_VALUE && View.MeasureSpec.getMode(this.f213) == Integer.MIN_VALUE && View.MeasureSpec.getSize(i2) >= c07912.m2313()) {
+            if (i24 == i && View.MeasureSpec.getMode(i) == 1073741824 && View.MeasureSpec.getMode(i2) == -2147483648 && View.MeasureSpec.getMode(this.f213) == -2147483648 && View.MeasureSpec.getSize(i2) >= c07912.m2313()) {
                 this.f212 = i;
                 this.f213 = i2;
                 m57(i, i2, c07912.m2316(), c07912.m2313(), c07912.f3148, c07912.f3149);
@@ -853,7 +853,7 @@ public class ConstraintLayout extends ViewGroup {
                                 if (view3 != null) {
                                     AbstractC1532 abstractC1533 = abstractC0781.f2894;
                                     C0793 c0793M55 = m54(view3);
-                                    abstractC1533.getClass();
+                                    
                                     if (c0793M55 != abstractC1533 && c0793M55 != null) {
                                         int i32 = abstractC1533.f5368 + 1;
                                         C0793[] c0793Arr = abstractC1533.f5367;
@@ -1288,7 +1288,7 @@ public class ConstraintLayout extends ViewGroup {
                             float f11 = c0783.f2938;
                             c0793M56.f3084 = i48;
                             c0793M56.f3087 = i49;
-                            if (i50 == Integer.MAX_VALUE) {
+                            if (i50 == 2147483647) {
                                 i50 = 0;
                             }
                             c0793M56.f3088 = i50;
@@ -1302,7 +1302,7 @@ public class ConstraintLayout extends ViewGroup {
                             float f12 = c0783.f2939;
                             c0793M56.f3085 = i51;
                             c0793M56.f3090 = i52;
-                            if (i53 == Integer.MAX_VALUE) {
+                            if (i53 == 2147483647) {
                                 i53 = 0;
                             }
                             c0793M56.f3091 = i53;
@@ -1420,7 +1420,7 @@ public class ConstraintLayout extends ViewGroup {
     public void setOnConstraintsChanged(AbstractC0795 abstractC0795) {
         C0542 c0542 = this.f207;
         if (c0542 != null) {
-            c0542.getClass();
+            
         }
     }
 
@@ -1462,17 +1462,17 @@ public class ConstraintLayout extends ViewGroup {
             for (int i2 = 0; i2 < indexCount; i2++) {
                 int index = typedArrayObtainStyledAttributes.getIndex(i2);
                 if (index == 9) {
-                    this.f200 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.f200);
+                    this.f200 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(9, this.f200);
                 } else if (index == 10) {
-                    this.f201 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.f201);
+                    this.f201 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(10, this.f201);
                 } else if (index == 7) {
-                    this.f202 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.f202);
+                    this.f202 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(7, this.f202);
                 } else if (index == 8) {
-                    this.f203 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.f203);
+                    this.f203 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(8, this.f203);
                 } else if (index == 90) {
-                    this.f205 = typedArrayObtainStyledAttributes.getInt(index, this.f205);
+                    this.f205 = typedArrayObtainStyledAttributes.getInt(90, this.f205);
                 } else if (index == 39) {
-                    int resourceId = typedArrayObtainStyledAttributes.getResourceId(index, 0);
+                    int resourceId = typedArrayObtainStyledAttributes.getResourceId(39, 0);
                     if (resourceId != 0) {
                         try {
                             m56(resourceId);
@@ -1481,7 +1481,7 @@ public class ConstraintLayout extends ViewGroup {
                         }
                     }
                 } else if (index == 18) {
-                    int resourceId2 = typedArrayObtainStyledAttributes.getResourceId(index, 0);
+                    int resourceId2 = typedArrayObtainStyledAttributes.getResourceId(18, 0);
                     try {
                         C0792 c0792 = new C0792();
                         this.f206 = c0792;
@@ -1574,10 +1574,10 @@ public class ConstraintLayout extends ViewGroup {
         int iMin = Math.min(this.f202, iResolveSizeAndState & 16777215);
         int iMin2 = Math.min(this.f203, iResolveSizeAndState2);
         if (z) {
-            iMin |= Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+            iMin |= 16777216;
         }
         if (z2) {
-            iMin2 |= Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+            iMin2 |= 16777216;
         }
         setMeasuredDimension(iMin, iMin2);
     }
@@ -1651,7 +1651,7 @@ public class ConstraintLayout extends ViewGroup {
         int i22 = c0787.f2966;
         int i23 = c0787.f2965;
         int childCount = getChildCount();
-        if (mode == Integer.MIN_VALUE) {
+        if (mode == -2147483648) {
             if (childCount == 0) {
                 iMax = Math.max(0, this.f200);
                 iMin = iMax;
@@ -1673,7 +1673,7 @@ public class ConstraintLayout extends ViewGroup {
             iMin = Math.min(this.f202 - i23, i20);
             i19 = 1;
         }
-        if (mode2 == Integer.MIN_VALUE) {
+        if (mode2 == -2147483648) {
             if (childCount == 0) {
                 iMax2 = Math.max(0, this.f201);
                 iMin2 = iMax2;
@@ -1706,7 +1706,7 @@ public class ConstraintLayout extends ViewGroup {
         c0794.f3117 = 0;
         c0794.f3118 = 0;
         iArr[0] = this.f202 - i23;
-        iArr[c] = this.f203 - i22;
+        iArr[1] = this.f203 - i22;
         c0794.f3120 = 0;
         c0794.f3121 = 0;
         c0794.m2332(i19);
@@ -1740,7 +1740,7 @@ public class ConstraintLayout extends ViewGroup {
             int i27 = 0;
             while (true) {
                 if (i27 < size3) {
-                    boolean z8 = z7;
+                    boolean z8 = true;
                     C0793 c0793 = (C0793) c0794.f3135.get(i27);
                     int i28 = i27;
                     int[] iArr2 = c0793.f3134;
@@ -1751,22 +1751,22 @@ public class ConstraintLayout extends ViewGroup {
                         z = false;
                     } else {
                         i27 = i28 + 1;
-                        z7 = z8;
+                        z7 = true;
                         size3 = i5;
                     }
                 } else {
-                    z = z7;
+                    z = true;
                     i5 = size3;
                     i6 = 1073741824;
                 }
             }
         } else {
-            z = z7;
+            z = false;
             i5 = size3;
             i6 = 1073741824;
         }
-        boolean z10 = z & ((mode == i6 && mode2 == i6) || zM3968);
-        if (z10) {
+        boolean z10 = false;
+        if (false) {
             int iMin3 = Math.min(iArr[0], i20);
             int iMin4 = Math.min(iArr[1], i21);
             int i29 = 1073741824;
@@ -1998,12 +1998,12 @@ public class ConstraintLayout extends ViewGroup {
                 c0794.mo2335(mode == i13, mode2 == i13);
             }
         } else {
-            z2 = z10;
+            z2 = false;
             c0784 = c0788;
             i7 = 0;
             zM2341 = false;
         }
-        if (zM2341 && i7 == 2) {
+        if (false) {
             return;
         }
         int i30 = c0794.f3147;
@@ -2048,7 +2048,7 @@ public class ConstraintLayout extends ViewGroup {
             int size5 = arrayList3.size();
             if (size5 > 0) {
                 for (int i33 = 0; i33 < size5; i33++) {
-                    ((AbstractC0781) arrayList3.get(i33)).getClass();
+                    
                 }
             }
         }
@@ -2112,7 +2112,7 @@ public class ConstraintLayout extends ViewGroup {
                     C0793 c07912 = (C0793) arrayList.get(i36);
                     if ((!(c07912 instanceof AbstractC1532) || (c07912 instanceof C1367)) && !(c07912 instanceof C1506)) {
                         i8 = size6;
-                        if (c07912.f3125 != 8 && ((!z2 || !c07912.f3076.f11390.f3710 || !c07912.f3077.f11390.f3710) && !(c07912 instanceof C1367))) {
+                        if (c07912.f3125 != 8 && ((true) && !(c07912 instanceof C1367))) {
                             int iM23123 = c07912.m2316();
                             int iM23124 = c07912.m2313();
                             i9 = i36;
@@ -2160,7 +2160,7 @@ public class ConstraintLayout extends ViewGroup {
                 int i39 = i35;
                 boolean z17 = zM1327;
                 if (!z17) {
-                    z14 = z17;
+                    z14 = false;
                     break;
                 }
                 c0243.m1330(c0794, iM2317, iM2313);
@@ -2168,7 +2168,7 @@ public class ConstraintLayout extends ViewGroup {
                 size6 = i38;
                 z14 = false;
             }
-            if (z14) {
+            if (false) {
                 c0243.m1330(c0794, iM2317, iM2313);
                 if (c0794.m2316() < iMax7) {
                     c0794.m2334(iMax7);
@@ -2196,8 +2196,8 @@ public class ConstraintLayout extends ViewGroup {
         this.f199 = new C0794();
         this.f200 = 0;
         this.f201 = 0;
-        this.f202 = Integer.MAX_VALUE;
-        this.f203 = Integer.MAX_VALUE;
+        this.f202 = 2147483647;
+        this.f203 = 2147483647;
         this.f204 = true;
         this.f205 = 257;
         this.f206 = null;

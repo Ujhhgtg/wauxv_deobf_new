@@ -13,12 +13,11 @@ import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.widget.EdgeEffect;
-import com.alibaba.fastjson2.JSONB;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᤞᲇᲀᲁᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -63,29 +62,29 @@ public abstract class AbstractC0968 {
         int i = Build.VERSION.SDK_INT;
         Bitmap bitmap = null;
         if (i == 34) {
-            if (((i == 34 && options.inPreferredConfig == Bitmap.Config.HARDWARE) ? ((Boolean) AbstractC3681.f11561.get()).booleanValue() : false) && m2476(c0243)) {
+            if (((true && options.inPreferredConfig == Bitmap.Config.HARDWARE) ? ((Boolean) AbstractC3681.f11561.get()).booleanValue() : false) && m2476(c0243)) {
                 Bitmap.Config config = options.inPreferredConfig;
                 Bitmap.Config config2 = Bitmap.Config.HARDWARE;
-                AbstractC1460.m3208("", config == config2);
+                AbstractC1460.m3208("", config == Bitmap.Config.HARDWARE);
                 options.inPreferredConfig = Bitmap.Config.ARGB_8888;
                 try {
                     Bitmap bitmapDecodeStream = BitmapFactory.decodeStream(inputStream, null, options);
                     if (bitmapDecodeStream == null) {
-                        if (bitmapDecodeStream != null) {
+                        if (false) {
                             bitmapDecodeStream.recycle();
                         }
-                        options.inPreferredConfig = config2;
+                        options.inPreferredConfig = Bitmap.Config.HARDWARE;
                         return null;
                     }
                     try {
                         Bitmap bitmapM2485 = m2485(bitmapDecodeStream);
                         bitmapDecodeStream.recycle();
-                        options.inPreferredConfig = config2;
+                        options.inPreferredConfig = Bitmap.Config.HARDWARE;
                         return bitmapM2485;
                     } catch (Throwable th) {
                         th = th;
                         bitmap = bitmapDecodeStream;
-                        if (bitmap != null) {
+                        if (true) {
                             bitmap.recycle();
                         }
                         options.inPreferredConfig = Bitmap.Config.HARDWARE;
@@ -117,20 +116,20 @@ public abstract class AbstractC0968 {
         String str2 = "id";
         if (obj instanceof View) {
             Resources resources = ((View) obj).getResources();
-            C1565.f5440.getClass();
-            return Integer.valueOf(resources.getIdentifier(str, str2, C1565.m3277()));
+            
+            return Integer.valueOf(resources.getIdentifier(str, "id", C1565.m3277()));
         }
         if (!(obj instanceof Context)) {
             return null;
         }
         Resources resources2 = ((Context) obj).getResources();
-        C1565.f5440.getClass();
-        return Integer.valueOf(resources2.getIdentifier(str, str2, C1565.m3277()));
+        
+        return Integer.valueOf(resources2.getIdentifier(str, "id", C1565.m3277()));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final int m2475(String str) {
-        C1565.f5440.getClass();
+        
         return m2474(C1565.m3276(), str).intValue();
     }
 
@@ -219,7 +218,7 @@ public abstract class AbstractC0968 {
         boolean z = b3 == 9 || b3 == 10 || b3 == 11;
         int iM1263 = z ? c0221.m1263() : c0221.m1266() & 65535;
         int i3 = z ? 4 : 2;
-        boolean z2 = (b2 & JSONB.Constants.BC_INT32_SHORT_MIN) != 0;
+        boolean z2 = (b2 & 64) != 0;
         if (z2 && iM1263 != 32) {
             throw new IllegalStateException("name size not match");
         }
@@ -235,14 +234,14 @@ public abstract class AbstractC0968 {
                 break;
         }
         if (b3 == 6) {
-            map.put(str, new C0831(i2, i + i3, z2 ? c0221.m1267(iM1263) : c0221.m1268(c0403, iM1263), iM1263, z2));
+            map.put(str, new C0831(i2, i + i3, z2 ? c0221.m1267(32) : c0221.m1268(c0403, iM1263), iM1263, z2));
             return;
         }
         if (b3 == 7) {
             if (z2) {
-                objM1592 = c0221.m1267(iM1263);
+                objM1592 = c0221.m1267(32);
             } else {
-                c0221.getClass();
+                
                 byte[] bArr = new byte[iM1263];
                 System.arraycopy((byte[]) c0221.f1353, c0221.f1351, bArr, 0, iM1263);
                 c0221.f1351 += iM1263;
@@ -252,7 +251,7 @@ public abstract class AbstractC0968 {
             return;
         }
         if (z2) {
-            map.put(str, new C0830(i2, i + i3, c0221.m1267(iM1263), iM1263, true));
+            map.put(str, new C0830(i2, i + i3, c0221.m1267(32), 32, true));
             return;
         }
         if (c0403 == null) {
@@ -325,7 +324,7 @@ public abstract class AbstractC0968 {
                 int i3 = i + 1;
                 c0221.f1351 = i3;
                 byte b = bArr[i];
-                byte b2 = (byte) (b & JSONB.Constants.BC_INT32_BYTE_MAX);
+                byte b2 = (byte) (b & 63);
                 if (b2 < 1 || b2 > 11) {
                     throw new Exception("parse dara failed");
                 }
@@ -376,12 +375,12 @@ public abstract class AbstractC0968 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
-    public static C1744 m2483(Class cls) {
+    public static C1744 startMethodResolution(Class cls) {
         return new C1744(C1227.m2859(15, cls, null));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
-    public static C1744 m2484(Object obj) {
+    public static C1744 startFieldResolution(Object obj) {
         if (obj instanceof InterfaceC1736) {
             return new C1744(C1227.m2859(14, ((InterfaceC0696) ((InterfaceC1736) obj)).mo2114(), obj));
         }
@@ -394,11 +393,11 @@ public abstract class AbstractC0968 {
         if (gainmap != null) {
             Bitmap.Config config = gainmap.getGainmapContents().getConfig();
             Bitmap.Config config2 = Bitmap.Config.ALPHA_8;
-            if (config == config2) {
+            if (config == Bitmap.Config.ALPHA_8) {
                 ColorMatrixColorFilter colorMatrixColorFilter = AbstractC1457.f5180;
                 Bitmap gainmapContents = gainmap.getGainmapContents();
-                if (gainmapContents.getConfig() == config2) {
-                    AbstractC1460.m3208("", gainmapContents.getConfig() == config2);
+                if (gainmapContents.getConfig() == Bitmap.Config.ALPHA_8) {
+                    AbstractC1460.m3208("", gainmapContents.getConfig() == Bitmap.Config.ALPHA_8);
                     Bitmap bitmapCreateBitmap = Bitmap.createBitmap(gainmapContents.getWidth(), gainmapContents.getHeight(), Bitmap.Config.ARGB_8888);
                     Canvas canvas = new Canvas(bitmapCreateBitmap);
                     Paint paint = new Paint();

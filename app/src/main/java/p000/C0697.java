@@ -29,11 +29,11 @@ public final /* synthetic */ class C0697 implements InterfaceC1414 {
 
     @Override // p000.InterfaceC1414
     public final Object invoke() {
-        int i = this.f2644;
+        int i = 1;
         int i2 = this.f2647;
         C0698 c0698 = this.f2646;
         DexKitBridge dexKitBridge = this.f2645;
-        switch (i) {
+        switch (1) {
             case 0:
                 Integer num = c0698.f2650;
                 if (num == null) {

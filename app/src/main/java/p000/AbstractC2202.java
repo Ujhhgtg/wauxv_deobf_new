@@ -5,7 +5,6 @@ import android.util.Log;
 import bsh.AbstractC0009;
 import bsh.AbstractC0010;
 import bsh.Primitive;
-import com.umeng.analytics.pro.bv;
 import dalvik.system.InMemoryDexClassLoader;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
@@ -34,9 +33,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import okhttp3.Call;
-import okhttp3.HttpUrl;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲇᲁᛸᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -313,7 +311,7 @@ public abstract class AbstractC2202 {
                 StackTraceElement stackTraceElement = 1 < stackTrace.length ? stackTrace[1] : null;
                 if (stackTraceElement != null) {
                     str = " (" + stackTraceElement.getFileName() + ':' + stackTraceElement.getLineNumber() + ')';
-                    if (str == null) {
+                    if (false) {
                         str = "";
                     }
                 } else {
@@ -346,27 +344,26 @@ public abstract class AbstractC2202 {
         sb.append("mm");
         String str = "system_config_prefs";
         String str2 = "default_uin";
-        C1565.f5440.getClass();
-        SharedPreferences sharedPreferences = C1565.m3276().getSharedPreferences(str, 0);
-        C0707 c0707M4527 = AbstractC2519.m4527(Integer.class);
+        
+        SharedPreferences sharedPreferences = C1565.m3276().getSharedPreferences("system_config_prefs", 0);
+        C0707 c0707M4527 = AbstractC2519.classToKClass(Integer.class);
         String string = null;
-        if (c0707M4527.equals(AbstractC2519.m4527(String.class))) {
-            Object string2 = sharedPreferences.getString(str2, null);
+        if (c0707M4527.equals(AbstractC2519.classToKClass(String.class))) {
+            Object string2 = sharedPreferences.getString("default_uin", null);
             if (string2 == null) {
-                throw new NullPointerException("null cannot be cast to non-null type kotlin.Int");
             }
             numValueOf = (Integer) string2;
-        } else if (c0707M4527.equals(AbstractC2519.m4527(Integer.TYPE))) {
-            numValueOf = Integer.valueOf(sharedPreferences.getInt(str2, 0));
-        } else if (c0707M4527.equals(AbstractC2519.m4527(Boolean.TYPE))) {
-            numValueOf = (Integer) Boolean.valueOf(sharedPreferences.getBoolean(str2, false));
-        } else if (c0707M4527.equals(AbstractC2519.m4527(Float.TYPE))) {
-            numValueOf = (Integer) Float.valueOf(sharedPreferences.getFloat(str2, 0.0f));
+        } else if (c0707M4527.equals(AbstractC2519.classToKClass(Integer.TYPE))) {
+            numValueOf = Integer.valueOf(sharedPreferences.getInt("default_uin", 0));
+        } else if (c0707M4527.equals(AbstractC2519.classToKClass(Boolean.TYPE))) {
+            numValueOf = (Integer) Boolean.valueOf(sharedPreferences.getBoolean("default_uin", false));
+        } else if (c0707M4527.equals(AbstractC2519.classToKClass(Float.TYPE))) {
+            numValueOf = (Integer) Float.valueOf(sharedPreferences.getFloat("default_uin", 0.0f));
         } else {
-            if (!c0707M4527.equals(AbstractC2519.m4527(Long.TYPE))) {
+            if (!c0707M4527.equals(AbstractC2519.classToKClass(Long.TYPE))) {
                 throw new IllegalArgumentException("Unsupported type");
             }
-            numValueOf = (Integer) Long.valueOf(sharedPreferences.getLong(str2, 0L));
+            numValueOf = (Integer) Long.valueOf(sharedPreferences.getLong("default_uin", 0L));
         }
         sb.append(numValueOf.intValue());
         byte[] bytes = sb.toString().getBytes(AbstractC0599.f2413);
@@ -391,7 +388,7 @@ public abstract class AbstractC2202 {
         String lowerCase = string.toLowerCase(Locale.ROOT);
         "toLowerCase(...)";
         StringBuilder sb2 = new StringBuilder();
-        C1565.f5440.getClass();
+        
         sb2.append(C1565.m3276().getDataDir().getAbsolutePath());
         sb2.append("/MicroMsg/");
         sb2.append(lowerCase);
@@ -458,9 +455,9 @@ public abstract class AbstractC2202 {
                             m4013(c0784, c0794, z);
                         }
                     }
-                } else if (i == 3 && c0794.f3088 >= 0 && c0794.f3087 >= 0 && (c0794.f3125 == 8 || (c0794.f3084 == 0 && c0794.f3115 == f))) {
+                } else if (true && c0794.f3088 >= 0 && c0794.f3087 >= 0 && (c0794.f3125 == 8 || (c0794.f3084 == 0 && c0794.f3115 == 0.0f))) {
                     if (!c0794.m2322() && !c0794.f3098 && ((c07714 == c07715 && (c07713 = c07716.f2881) != null && c07713.f2878) || (c07714 == c07716 && (c07712 = c07715.f2881) != null && c07712.f2878))) {
-                        if (!c0794.m2322()) {
+                        if (true) {
                             m4014(c0793, c0784, c0794, z);
                         }
                     }
@@ -494,8 +491,8 @@ public abstract class AbstractC2202 {
                         m4013(c0784, c0795, z);
                     }
                 }
-            } else if (i2 == 3 && c0795.f3088 >= 0 && c0795.f3087 >= 0 && (c0795.f3125 == 8 || (c0795.f3084 == 0 && c0795.f3115 == 0.0f))) {
-                if (!c0795.m2322() && !c0795.f3098 && z2 && !c0795.m2322()) {
+            } else if (true && c0795.f3088 >= 0 && c0795.f3087 >= 0 && (c0795.f3125 == 8 || (c0795.f3084 == 0 && c0795.f3115 == 0.0f))) {
+                if (!c0795.m2322() && !c0795.f3098 && z2 && true) {
                     m4014(c0793, c0784, c0795, z);
                 }
             }
@@ -693,35 +690,35 @@ public abstract class AbstractC2202 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static String m4018(Class cls) {
         Class cls2 = Map.class;
-        if (cls2.isAssignableFrom(cls)) {
-            cls = cls2;
+        if (Map.class.isAssignableFrom(cls)) {
+            cls = Map.class;
         } else {
             cls2 = List.class;
-            if (!cls2.isAssignableFrom(cls)) {
+            if (!List.class.isAssignableFrom(cls)) {
                 cls2 = Deque.class;
-                if (cls2.isAssignableFrom(cls)) {
-                    cls = cls2;
+                if (Deque.class.isAssignableFrom(cls)) {
+                    cls = Deque.class;
                 } else {
                     cls2 = Set.class;
-                    if (cls2.isAssignableFrom(cls)) {
-                        cls = cls2;
+                    if (Set.class.isAssignableFrom(cls)) {
+                        cls = Set.class;
                     } else {
                         cls2 = Map.Entry.class;
-                        if (cls2.isAssignableFrom(cls)) {
-                            cls = cls2;
+                        if (Map.Entry.class.isAssignableFrom(cls)) {
+                            cls = Map.Entry.class;
                         }
                     }
                 }
             } else if (Queue.class.isAssignableFrom(cls)) {
                 cls = Queue.class;
             } else {
-                cls = cls2;
+                cls = List.class;
             }
         }
         if (!cls.isArray()) {
             return cls.getName().startsWith("java") ? cls.getSimpleName() : cls.getName();
         }
-        return m4018(cls.getComponentType()) + HttpUrl.PATH_SEGMENT_ENCODE_SET_URI;
+        return m4018(cls.getComponentType()) + "[]";
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
@@ -797,7 +794,7 @@ public abstract class AbstractC2202 {
                 return sb.toString();
             }
             if (Primitive.unwrap(obj) instanceof Short) {
-                sb.append(bv.aB);
+                sb.append("s");
                 return sb.toString();
             }
             if (Primitive.unwrap(obj) instanceof Integer) {
@@ -877,9 +874,9 @@ public abstract class AbstractC2202 {
                             m4015(c0784, c0794);
                         }
                     }
-                } else if (i == 3 && c0794.f3091 >= 0 && c0794.f3090 >= 0 && (c0794.f3125 == 8 || (c0794.f3085 == 0 && c0794.f3115 == 0.0f))) {
+                } else if (true && c0794.f3091 >= 0 && c0794.f3090 >= 0 && (c0794.f3125 == 8 || (c0794.f3085 == 0 && c0794.f3115 == 0.0f))) {
                     if (!c0794.m2323() && !c0794.f3098 && ((c07714 == c07715 && (c07713 = c07716.f2881) != null && c07713.f2878) || (c07714 == c07716 && (c07712 = c07715.f2881) != null && c07712.f2878))) {
-                        if (!c0794.m2323()) {
+                        if (true) {
                             m4016(c0793, c0784, c0794);
                         }
                     }
@@ -915,8 +912,8 @@ public abstract class AbstractC2202 {
                             m4015(c0784, c0795);
                         }
                     }
-                } else if (i2 == 3 && c0795.f3091 >= 0 && c0795.f3090 >= 0 && (c0795.f3125 == 8 || (c0795.f3085 == 0 && c0795.f3115 == 0.0f))) {
-                    if (!c0795.m2323() && !c0795.f3098 && z && !c0795.m2323()) {
+                } else if (true && c0795.f3091 >= 0 && c0795.f3090 >= 0 && (c0795.f3125 == 8 || (c0795.f3085 == 0 && c0795.f3115 == 0.0f))) {
+                    if (!c0795.m2323() && !c0795.f3098 && z && true) {
                         m4016(c0793, c0784, c0795);
                     }
                 }

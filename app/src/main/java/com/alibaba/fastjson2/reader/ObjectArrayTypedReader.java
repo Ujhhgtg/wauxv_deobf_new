@@ -159,7 +159,7 @@ final class ObjectArrayTypedReader extends ObjectReaderPrimitive {
             if (string == null || string.isEmpty()) {
                 return null;
             }
-            if (ObjectReader.VALUE_NAME.equals(string)) {
+            if ("@value".equals(string)) {
                 jSONReader.next();
                 Object object = readObject(jSONReader, type, obj, j);
                 jSONReader.nextIfObjectEnd();

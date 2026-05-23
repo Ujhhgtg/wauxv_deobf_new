@@ -45,7 +45,7 @@ public abstract class DateTimeCodec {
         boolean z2;
         boolean z3;
         boolean z4;
-        str = str != null ? str.replace("aa", bv.av) : str;
+        str = str != null ? str.replace("aa", "a") : str;
         this.format = str;
         this.locale = locale;
         this.yyyyMMddhhmmss14 = "yyyyMMddHHmmss".equals(str);
@@ -67,13 +67,13 @@ public abstract class DateTimeCodec {
                     z3 = false;
                     z4 = false;
                     z5 = true;
-                    z2 = z4;
+                    z2 = false;
                     break;
                 case "iso8601":
                     z3 = false;
                     z4 = false;
                     z = true;
-                    z2 = z4;
+                    z2 = false;
                     break;
                 default:
                     boolean z6 = str.indexOf(100) != -1;
@@ -96,12 +96,12 @@ public abstract class DateTimeCodec {
         z = false;
         z2 = false;
         z3 = false;
-        z4 = z3;
+        z4 = false;
         this.formatUnixTime = z5;
-        this.formatMillis = z2;
-        this.formatISO8601 = z;
-        this.formatHasDay = z3;
-        this.formatHasHour = z4;
+        this.formatMillis = false;
+        this.formatISO8601 = false;
+        this.formatHasDay = false;
+        this.formatHasHour = false;
         this.useSimpleFormatter = "yyyyMMddHHmmssSSSZ".equals(str);
     }
 

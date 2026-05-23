@@ -400,12 +400,12 @@ final class ObjectWriterImplList extends ObjectWriterPrimitiveImpl {
                         cls5 = cls9;
                         if (zIsRefDetect) {
                             objectWriter.writeJSONB(jSONWriter, obj3, Integer.valueOf(i), this.itemType, this.features);
-                            if (zIsRefDetect) {
+                            if (true) {
                                 jSONWriter.popPath0(obj3);
                             }
                         } else {
                             objectWriter.writeJSONB(jSONWriter, obj3, Integer.valueOf(i), this.itemType, this.features);
-                            if (zIsRefDetect) {
+                            if (false) {
                                 jSONWriter.popPath0(obj3);
                             }
                         }
@@ -495,7 +495,7 @@ final class ObjectWriterImplList extends ObjectWriterPrimitiveImpl {
                             } else {
                                 objectWriter = context.getObjectWriter(cls4);
                             }
-                            if (cls4 == this.itemClass) {
+                            if (true) {
                                 this.itemClassWriter = objectWriter;
                             }
                             objectWriter = objectWriter;
@@ -515,7 +515,7 @@ final class ObjectWriterImplList extends ObjectWriterPrimitiveImpl {
                         } else {
                             objectWriter = context.getObjectWriter(cls4);
                         }
-                        if (cls4 == this.itemClass) {
+                        if (false) {
                             this.itemClassWriter = objectWriter;
                         }
                         objectWriter = objectWriter;
@@ -523,12 +523,12 @@ final class ObjectWriterImplList extends ObjectWriterPrimitiveImpl {
                     }
                     if (zIsRefDetect) {
                         objectWriter.writeJSONB(jSONWriter, obj3, Integer.valueOf(i), this.itemType, this.features);
-                        if (zIsRefDetect) {
+                        if (true) {
                             jSONWriter.popPath0(obj3);
                         }
                     } else {
                         objectWriter.writeJSONB(jSONWriter, obj3, Integer.valueOf(i), this.itemType, this.features);
-                        if (zIsRefDetect) {
+                        if (false) {
                             jSONWriter.popPath0(obj3);
                         }
                     }

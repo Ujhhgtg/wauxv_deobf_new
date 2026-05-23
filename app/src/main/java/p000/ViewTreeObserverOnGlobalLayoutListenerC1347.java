@@ -38,7 +38,7 @@ public final class ViewTreeObserverOnGlobalLayoutListenerC1347 implements ViewTr
         int i2 = height - rect.bottom;
         if (i2 != c1349.f4832) {
             c1349.f4832 = i2;
-            int i3 = DialogXBaseRelativeLayout.f932;
+            int i3 = 0;
             C1348 c1348 = c1349.f4831;
             if (c1348 != null) {
                 c1349.m3056(c1348);

@@ -59,7 +59,7 @@ public final class C0938 extends AbstractC2202 {
                 AbstractC2205 abstractC2206 = AbstractC1034.f3778;
                 C1962 c1964 = c1962.f6498;
                 c1962.m761(enumC1770);
-                c1962.getClass();
+                
                 break;
         }
     }
@@ -102,7 +102,7 @@ public final class C0938 extends AbstractC2202 {
                 if (c0467 != null) {
                     c0467.m1692(c1962);
                 }
-                c1962.getClass();
+                
                 C0937 c0937 = new C0937();
                 C1962 c1963 = c1962.f6498;
                 try {
@@ -117,10 +117,10 @@ public final class C0938 extends AbstractC2202 {
                 AbstractC2205 abstractC2206 = AbstractC1034.f3778;
                 C1962 c1964 = c1962.f6498;
                 if (c1962.f6499 == null) {
-                    c1962.f6499 = new C0942(i2, c1961);
+                    c1962.f6499 = new C0942(1, c1961);
                 }
                 c1962.f6499.m2437(c1964);
-                c1962.f917.getClass();
+                
                 if (c1962.f918) {
                     c1961.f6488.postDelayed(new RunnableC0141(11, this), 300L);
                 }

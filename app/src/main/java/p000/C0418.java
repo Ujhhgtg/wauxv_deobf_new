@@ -66,17 +66,17 @@ public final class C0418 {
                         }
                     } else if (directionality != 9) {
                         switch (directionality) {
-                            case Opcodes.DCONST_0 /* 14 */:
+                            case 14 /* 14 */:
                             case 15:
                                 i3++;
                                 i2 = -1;
                                 continue;
                             case 16:
-                            case Opcodes.SIPUSH /* 17 */:
+                            case 17 /* 17 */:
                                 i3++;
                                 i2 = 1;
                                 continue;
-                            case Opcodes.LDC /* 18 */:
+                            case 18 /* 18 */:
                                 i3--;
                                 i2 = 0;
                                 continue;
@@ -92,7 +92,7 @@ public final class C0418 {
             if (i2 == 0) {
                 while (c0417.f1956 > 0) {
                     switch (c0417.m1610()) {
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
                             if (i == i3) {
                                 return -1;
@@ -100,13 +100,13 @@ public final class C0418 {
                             i3--;
                             break;
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
+                        case 17 /* 17 */:
                             if (i == i3) {
                                 return 1;
                             }
                             i3--;
                             break;
-                        case Opcodes.LDC /* 18 */:
+                        case 18 /* 18 */:
                             i3++;
                             break;
                         default:
@@ -126,42 +126,42 @@ public final class C0418 {
         c0417.f1956 = c0417.f1955;
         int i = 0;
         while (true) {
-            int i2 = i;
+            int i2 = 0;
             while (c0417.f1956 > 0) {
                 byte bM1610 = c0417.m1610();
                 if (bM1610 == 0) {
                     if (i == 0) {
                         return -1;
                     }
-                    if (i2 == 0) {
+                    if (true) {
                     }
                 } else if (bM1610 == 1 || bM1610 == 2) {
                     if (i == 0) {
                         return 1;
                     }
-                    if (i2 == 0) {
+                    if (true) {
                     }
                 } else if (bM1610 != 9) {
                     switch (bM1610) {
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
-                            if (i2 == i) {
+                            if (0 == i) {
                                 return -1;
                             }
                             i--;
                             break;
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
-                            if (i2 == i) {
+                        case 17 /* 17 */:
+                            if (0 == i) {
                                 return 1;
                             }
                             i--;
                             break;
-                        case Opcodes.LDC /* 18 */:
+                        case 18 /* 18 */:
                             i++;
                             break;
                         default:
-                            if (i2 != 0) {
+                            if (false) {
                             }
                             break;
                     }

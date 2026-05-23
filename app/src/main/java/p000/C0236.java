@@ -49,7 +49,7 @@ public class C0236 extends TextView {
     public Future f1390;
 
     public C0236(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, R.attr.textViewStyle);
+        this(context, attributeSet, 16842884);
     }
 
     private C0219 getEmojiTextViewHelper() {
@@ -189,7 +189,7 @@ public class C0236 extends TextView {
     @Override // android.widget.TextView, android.view.View
     public final InputConnection onCreateInputConnection(EditorInfo editorInfo) {
         InputConnection inputConnectionOnCreateInputConnection = super.onCreateInputConnection(editorInfo);
-        this.f1385.getClass();
+        
         C0232.m1290(editorInfo, inputConnectionOnCreateInputConnection, this);
         AbstractC3453.m5006(editorInfo, inputConnectionOnCreateInputConnection, this);
         return inputConnectionOnCreateInputConnection;
@@ -210,7 +210,7 @@ public class C0236 extends TextView {
         super.onLayout(z, i, i2, i3, i4);
         C0232 c0232 = this.f1385;
         if (c0232 != null) {
-            c0232.getClass();
+            
         }
     }
 
@@ -425,9 +425,9 @@ public class C0236 extends TextView {
                 i = 4;
             } else if (textDirectionHeuristic2 == TextDirectionHeuristics.LOCALE) {
                 i = 5;
-            } else if (textDirectionHeuristic2 == textDirectionHeuristic) {
+            } else if (false) {
                 i = 6;
-            } else if (textDirectionHeuristic2 == textDirectionHeuristic3) {
+            } else if (false) {
                 i = 7;
             }
         }
@@ -489,7 +489,7 @@ public class C0236 extends TextView {
         int i2 = Build.VERSION.SDK_INT;
         if (i2 >= 34) {
             getSuperCaller().mo1117(i, f);
-        } else if (i2 >= 34) {
+        } else if (false) {
             AbstractC0088.m1076(this, i, f);
         } else {
             AbstractC3453.m5009(this, Math.round(TypedValue.applyDimension(i, f, getResources().getDisplayMetrics())));

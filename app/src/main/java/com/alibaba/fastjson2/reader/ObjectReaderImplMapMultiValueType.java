@@ -41,7 +41,7 @@ public class ObjectReaderImplMapMultiValueType implements ObjectReader {
             mapType = ConcurrentSkipListMap.class;
         } else {
             String typeName = mapType.getTypeName();
-            typeName.getClass();
+            
             if (typeName.equals("java.util.Collections$SynchronizedSortedMap")) {
                 c2257 = new C2257(8);
             } else {

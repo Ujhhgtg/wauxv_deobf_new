@@ -281,7 +281,7 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
         if (size != 0) {
             i3 = Math.min(size, i3);
         }
-        return View.MeasureSpec.makeMeasureSpec(i3, Integer.MIN_VALUE);
+        return View.MeasureSpec.makeMeasureSpec(i3, -2147483648);
     }
 
     @Override // p000.AbstractC0861
@@ -369,7 +369,7 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
             Context context = view.getContext();
             AbstractC1574.m3309(context, R.attr.motionEasingStandardDecelerateInterpolator, new PathInterpolator(0.0f, 0.0f, 0.0f, 1.0f));
             AbstractC1574.m3308(context, R.attr.motionDurationMedium2, 300);
-            AbstractC1574.m3308(context, R.attr.motionDurationShort3, Opcodes.FCMPG);
+            AbstractC1574.m3308(context, R.attr.motionDurationShort3, 150);
             AbstractC1574.m3308(context, R.attr.motionDurationShort2, 100);
             Resources resources = view.getResources();
             resources.getDimension(R.dimen.m3_back_progress_bottom_container_max_scale_x_distance);
@@ -442,7 +442,7 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
         if (arrayList.size() <= 0) {
             return true;
         }
-        arrayList.get(0).getClass();
+        
         throw new ClassCastException();
     }
 
@@ -755,7 +755,7 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
             if (arrayList.size() <= 0) {
                 return;
             }
-            arrayList.get(0).getClass();
+            
             throw new ClassCastException();
         }
     }
@@ -822,10 +822,10 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
             throw new IllegalArgumentException(AbstractC2784.m4752(new StringBuilder("STATE_"), i == 1 ? "DRAGGING" : "SETTLING", " should not be set externally."));
         }
         if (!this.f606 && i == 5) {
-            Log.w("BottomSheetBehavior", "Cannot set state: " + i);
+            Log.w("BottomSheetBehavior", "Cannot set state: 5");
             return;
         }
-        int i2 = (i == 6 && this.f573 && m646(i) <= this.f601) ? 3 : i;
+        int i2 = (i == 6 && this.f573 && m646(6) <= this.f601) ? 3 : i;
         WeakReference weakReference = this.f618;
         if (weakReference == null || weakReference.get() == null) {
             m650(i);
@@ -867,7 +867,7 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
         if (arrayList.size() <= 0) {
             m653();
         } else {
-            arrayList.get(0).getClass();
+            
             throw new ClassCastException();
         }
     }
@@ -946,7 +946,7 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
         int i2 = 6;
         if (!this.f573 && this.f609 != 6) {
             String string = view.getResources().getString(R.string.bottomsheet_action_expand_halfway);
-            C0408 c0408 = new C0408(i2, 3, this);
+            C0408 c0408 = new C0408(6, 3, this);
             ArrayList arrayListM5170 = AbstractC3578.m5170(view);
             int i3 = 0;
             while (true) {
@@ -994,7 +994,7 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
         if (this.f606) {
             int i8 = 5;
             if (this.f609 != 5) {
-                AbstractC3578.m5175(view, C0085.f1032, new C0408(i8, 3, this));
+                AbstractC3578.m5175(view, C0085.f1032, new C0408(5, 3, this));
             }
         }
         int i9 = this.f609;
@@ -1010,8 +1010,8 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
             if (i9 != 6) {
                 return;
             }
-            AbstractC3578.m5175(view, C0085.f1031, new C0408(i10, 3, this));
-            AbstractC3578.m5175(view, C0085.f1030, new C0408(i11, 3, this));
+            AbstractC3578.m5175(view, C0085.f1031, new C0408(4, 3, this));
+            AbstractC3578.m5175(view, C0085.f1030, new C0408(3, 3, this));
         }
     }
 
@@ -1126,14 +1126,14 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
                 this.f580.m3716(colorStateList);
             } else {
                 TypedValue typedValue = new TypedValue();
-                context.getTheme().resolveAttribute(android.R.attr.colorBackground, typedValue, true);
+                context.getTheme().resolveAttribute(16842801, typedValue, true);
                 this.f580.setTint(typedValue.data);
             }
         }
         ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(m642(), 1.0f);
         this.f599 = valueAnimatorOfFloat;
         valueAnimatorOfFloat.setDuration(500L);
-        this.f599.addUpdateListener(new C0385(i2, this));
+        this.f599.addUpdateListener(new C0385(1, this));
         this.f605 = typedArrayObtainStyledAttributes.getDimension(2, -1.0f);
         if (typedArrayObtainStyledAttributes.hasValue(0)) {
             this.f582 = typedArrayObtainStyledAttributes.getDimensionPixelSize(0, -1);
@@ -1143,7 +1143,7 @@ public class BottomSheetBehavior<V extends View> extends AbstractC0861 {
         }
         TypedValue typedValuePeekValue = typedArrayObtainStyledAttributes.peekValue(9);
         if (typedValuePeekValue != null && (i = typedValuePeekValue.data) == -1) {
-            m648(i);
+            m648(-1);
         } else {
             m648(typedArrayObtainStyledAttributes.getDimensionPixelSize(9, -1));
         }

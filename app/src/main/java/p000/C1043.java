@@ -98,7 +98,7 @@ public final class C1043 {
         int iM18110 = c0516.m1817(i + 4);
         C2815 c2816 = this.f3798;
         if (iM18110 == 0) {
-            c2816.getClass();
+            
             abstractC0777M4793 = null;
         } else {
             abstractC0777M4793 = c2816.m4793(iM18110);

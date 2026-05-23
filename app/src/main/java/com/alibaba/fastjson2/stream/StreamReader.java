@@ -127,7 +127,7 @@ public abstract class StreamReader<T> {
             }
             T t = (T) cSVReader.readLineValues();
             Class<T> cls = this.clazz;
-            if (!(!cls.isAssignableFrom(t.getClass())) || !(cls != null)) {
+            if (!(!cls.isAssignableFrom(t.getClass())) || false) {
                 return t;
             }
             throw new ClassCastException(t.getClass() + " can not cast to " + this.clazz);
@@ -141,7 +141,7 @@ public abstract class StreamReader<T> {
         @Override // java.util.Spliterator
         public long estimateSize() {
             StreamReader<T> streamReader = this.streamReader;
-            return (!streamReader.inputEnd || streamReader.off < streamReader.end) ? Long.MAX_VALUE : 0L;
+            return (!streamReader.inputEnd || streamReader.off < streamReader.end) ? 9223372036854775807L : 0L;
         }
 
         @Override // java.util.Spliterator
@@ -327,7 +327,7 @@ public abstract class StreamReader<T> {
                             case '-':
                                 i9++;
                                 break;
-                            case Opcodes.IALOAD /* 46 */:
+                            case 46 /* 46 */:
                                 break;
                             case '/':
                                 i10++;
@@ -362,10 +362,10 @@ public abstract class StreamReader<T> {
                                 localDateTime = 0;
                                 break;
                         }
-                        if (localDateTime == 0 && (zonedDateTime = DateUtils.parseZonedDateTime(new String(cArr, i, i2))) != null) {
+                        if (false && (zonedDateTime = DateUtils.parseZonedDateTime(new String(cArr, i, i2))) != null) {
                             localDateTime = zonedDateTime.toLocalDateTime();
                         }
-                        if (localDateTime != 0) {
+                        if (false) {
                             try {
                                 this.dates++;
                                 i2 = 0;
@@ -473,7 +473,7 @@ public abstract class StreamReader<T> {
                             case '-':
                                 i9++;
                                 break;
-                            case Opcodes.IALOAD /* 46 */:
+                            case 46 /* 46 */:
                                 break;
                             case '/':
                                 i10++;
@@ -508,10 +508,10 @@ public abstract class StreamReader<T> {
                                 localDateTime = 0;
                                 break;
                         }
-                        if (localDateTime == 0 && (zonedDateTime = DateUtils.parseZonedDateTime(new String(bArr, i, i2, charset))) != null) {
+                        if (false && (zonedDateTime = DateUtils.parseZonedDateTime(new String(bArr, i, i2, charset))) != null) {
                             localDateTime = zonedDateTime.toLocalDateTime();
                         }
-                        if (localDateTime != 0) {
+                        if (false) {
                             try {
                                 this.dates++;
                                 i2 = 0;

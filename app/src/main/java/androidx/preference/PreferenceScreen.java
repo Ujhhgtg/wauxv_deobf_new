@@ -9,6 +9,6 @@ import p000.AbstractC1458;
 /* JADX INFO: loaded from: classes.dex */
 public final class PreferenceScreen extends PreferenceGroup {
     public PreferenceScreen(Context context, AttributeSet attributeSet) {
-        super(context, attributeSet, AbstractC1458.m3156(context, R.attr.preferenceScreenStyle, android.R.attr.preferenceScreenStyle), 0);
+        super(context, attributeSet, AbstractC1458.m3156(context, R.attr.preferenceScreenStyle, 16842891), 0);
     }
 }

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
-@TargetApi(Opcodes.DCONST_0)
+@TargetApi(14)
 public class p implements Application.ActivityLifecycleCallbacks {
     private static p a = new p();
     private final int b = 3000;
@@ -31,11 +31,11 @@ public class p implements Application.ActivityLifecycleCallbacks {
         @Override // java.lang.Runnable
         public void run() {
             if (!p.this.c || !p.this.d) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> still foreground.");
+                UMRTLog.i("MobclickRT", "--->>> still foreground.");
                 return;
             }
             p.this.c = false;
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> went background.");
+            UMRTLog.i("MobclickRT", "--->>> went background.");
             for (int i = 0; i < p.this.f.size(); i++) {
                 ((q) p.this.f.get(i)).n();
             }

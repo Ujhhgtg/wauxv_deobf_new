@@ -31,7 +31,7 @@ public final class C0780 {
     public int f2890;
 
     public C0780(C0780 c0780, Object obj) {
-        c0780.getClass();
+        
         this.f2885 = c0780.f2885;
         m2283(obj);
     }
@@ -46,36 +46,36 @@ public final class C0780 {
         for (int i2 = 0; i2 < indexCount; i2++) {
             int index = typedArrayObtainStyledAttributes.getIndex(i2);
             if (index == 0) {
-                string = typedArrayObtainStyledAttributes.getString(index);
+                string = typedArrayObtainStyledAttributes.getString(0);
                 if (string != null && string.length() > 0) {
                     string = Character.toUpperCase(string.charAt(0)) + string.substring(1);
                 }
             } else if (index == 1) {
-                string2 = Boolean.valueOf(typedArrayObtainStyledAttributes.getBoolean(index, false));
+                string2 = Boolean.valueOf(typedArrayObtainStyledAttributes.getBoolean(1, false));
                 i = 6;
             } else {
                 int i3 = 3;
                 if (index == 3) {
-                    string2 = Integer.valueOf(typedArrayObtainStyledAttributes.getColor(index, 0));
+                    string2 = Integer.valueOf(typedArrayObtainStyledAttributes.getColor(3, 0));
                 } else {
                     i3 = 4;
                     if (index == 2) {
-                        string2 = Integer.valueOf(typedArrayObtainStyledAttributes.getColor(index, 0));
+                        string2 = Integer.valueOf(typedArrayObtainStyledAttributes.getColor(2, 0));
                     } else {
                         if (index == 7) {
-                            string2 = Float.valueOf(TypedValue.applyDimension(1, typedArrayObtainStyledAttributes.getDimension(index, 0.0f), context.getResources().getDisplayMetrics()));
+                            string2 = Float.valueOf(TypedValue.applyDimension(1, typedArrayObtainStyledAttributes.getDimension(7, 0.0f), context.getResources().getDisplayMetrics()));
                         } else if (index == 4) {
-                            string2 = Float.valueOf(typedArrayObtainStyledAttributes.getDimension(index, 0.0f));
+                            string2 = Float.valueOf(typedArrayObtainStyledAttributes.getDimension(4, 0.0f));
                         } else {
                             i3 = 5;
                             if (index == 5) {
-                                string2 = Float.valueOf(typedArrayObtainStyledAttributes.getFloat(index, Float.NaN));
+                                string2 = Float.valueOf(typedArrayObtainStyledAttributes.getFloat(5, Float.NaN));
                                 i = 2;
                             } else if (index == 6) {
-                                string2 = Integer.valueOf(typedArrayObtainStyledAttributes.getInteger(index, -1));
+                                string2 = Integer.valueOf(typedArrayObtainStyledAttributes.getInteger(6, -1));
                                 i = 1;
                             } else if (index == 8) {
-                                string2 = typedArrayObtainStyledAttributes.getString(index);
+                                string2 = typedArrayObtainStyledAttributes.getString(8);
                             }
                         }
                         i = 7;

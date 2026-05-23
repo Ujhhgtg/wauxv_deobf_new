@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C0459 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C0459 f2034 = new C0459("BottomTabCustomHook.ValHideTitle", null, null, false, 0, 0.0f, 0, Opcodes.FNEG);
+    public static final C0459 f2034 = new C0459("BottomTabCustomHook.ValHideTitle", null, null, false, 0, 0.0f, 0, 118);
 }

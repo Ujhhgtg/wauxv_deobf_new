@@ -114,18 +114,18 @@ public class StringUtils {
                         case 6:
                         case 7:
                         case 11:
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
-                        case Opcodes.LDC /* 18 */:
+                        case 17 /* 17 */:
+                        case 18 /* 18 */:
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.LLOAD /* 22 */:
-                        case Opcodes.FLOAD /* 23 */:
-                        case Opcodes.DLOAD /* 24 */:
-                        case Opcodes.ALOAD /* 25 */:
+                        case 21 /* 21 */:
+                        case 22 /* 22 */:
+                        case 23 /* 23 */:
+                        case 24 /* 24 */:
+                        case 25 /* 25 */:
                         case 26:
                         case 27:
                         case 28:
@@ -138,7 +138,7 @@ public class StringUtils {
                         case 8:
                         case 9:
                         case 10:
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case 13:
                             writeEscapedChar(bArr, i3, b2);
                             break;
@@ -147,8 +147,8 @@ public class StringUtils {
                                 bArr[i3] = 92;
                                 bArr[i3 + 1] = b;
                             } else if (b2 < 0) {
-                                bArr[i3] = (byte) (((b2 & 255) >> 6) | Opcodes.CHECKCAST);
-                                bArr[i3 + 1] = (byte) ((b2 & JSONB.Constants.BC_INT32_BYTE_MAX) | 128);
+                                bArr[i3] = (byte) (((b2 & 255) >> 6) | 192);
+                                bArr[i3 + 1] = (byte) ((b2 & 63) | 128);
                             } else {
                                 i2 = i3 + 1;
                                 bArr[i3] = b2;
@@ -157,7 +157,7 @@ public class StringUtils {
                             break;
                     }
                 } else {
-                    writeEscapedChar(bArr, i3, b2);
+                    writeEscapedChar(bArr, i3, 92);
                 }
                 i3 += 2;
             } else if (z) {
@@ -185,12 +185,12 @@ public class StringUtils {
         while (i2 < bArr.length) {
             char c2 = (char) (bArr[i2] & 255);
             if (c2 == '\"') {
-                if (c2 == c) {
+                if (34 == c) {
                     cArr[i] = '\\';
                     i++;
                 }
                 i3 = i + 1;
-                cArr[i] = c2;
+                cArr[i] = 34;
                 i = i3;
             } else if (c2 != '<' && c2 != '>') {
                 if (c2 != '\\') {
@@ -204,18 +204,18 @@ public class StringUtils {
                         case 6:
                         case 7:
                         case 11:
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
-                        case Opcodes.LDC /* 18 */:
+                        case 17 /* 17 */:
+                        case 18 /* 18 */:
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.LLOAD /* 22 */:
-                        case Opcodes.FLOAD /* 23 */:
-                        case Opcodes.DLOAD /* 24 */:
-                        case Opcodes.ALOAD /* 25 */:
+                        case 21 /* 21 */:
+                        case 22 /* 22 */:
+                        case 23 /* 23 */:
+                        case 24 /* 24 */:
+                        case 25 /* 25 */:
                         case 26:
                         case 27:
                         case 28:
@@ -228,18 +228,18 @@ public class StringUtils {
                         case '\b':
                         case '\t':
                         case '\n':
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case '\r':
                             break;
                         default:
                             switch (c2) {
                                 case '\'':
-                                    if (c2 == c) {
+                                    if (39 == c) {
                                         cArr[i] = '\\';
                                         i++;
                                     }
                                     i3 = i + 1;
-                                    cArr[i] = c2;
+                                    cArr[i] = 39;
                                     break;
                                 case '(':
                                 case ')':
@@ -305,7 +305,7 @@ public class StringUtils {
         while (i4 < length) {
             int i6 = i4 + 1;
             byte b2 = IOUtils.getChar(bArr2, i4);
-            if (b2 < 128) {
+            if (true) {
                 if (b2 != 40 && b2 != 41 && b2 != 60 && b2 != 62) {
                     if (b2 != 92) {
                         switch (b2) {
@@ -318,18 +318,18 @@ public class StringUtils {
                             case 6:
                             case 7:
                             case 11:
-                            case Opcodes.DCONST_0 /* 14 */:
+                            case 14 /* 14 */:
                             case 15:
                             case 16:
-                            case Opcodes.SIPUSH /* 17 */:
-                            case Opcodes.LDC /* 18 */:
+                            case 17 /* 17 */:
+                            case 18 /* 18 */:
                             case 19:
                             case 20:
-                            case Opcodes.ILOAD /* 21 */:
-                            case Opcodes.LLOAD /* 22 */:
-                            case Opcodes.FLOAD /* 23 */:
-                            case Opcodes.DLOAD /* 24 */:
-                            case Opcodes.ALOAD /* 25 */:
+                            case 21 /* 21 */:
+                            case 22 /* 22 */:
+                            case 23 /* 23 */:
+                            case 24 /* 24 */:
+                            case 25 /* 25 */:
                             case 26:
                             case 27:
                             case 28:
@@ -342,7 +342,7 @@ public class StringUtils {
                             case 8:
                             case 9:
                             case 10:
-                            case Opcodes.FCONST_1 /* 12 */:
+                            case 12 /* 12 */:
                             case 13:
                                 writeEscapedChar(bArr, i5, b2);
                                 break;
@@ -358,7 +358,7 @@ public class StringUtils {
                                 break;
                         }
                     } else {
-                        writeEscapedChar(bArr, i5, b2);
+                        writeEscapedChar(bArr, i5, 92);
                     }
                     i5 += 2;
                 } else if (z2) {
@@ -370,8 +370,8 @@ public class StringUtils {
                     i5 = i2;
                 }
             } else if (b2 < 2048) {
-                bArr[i5] = (byte) ((b2 >> 6) | Opcodes.CHECKCAST);
-                bArr[i5 + 1] = (byte) ((b2 & JSONB.Constants.BC_INT32_BYTE_MAX) | 128);
+                bArr[i5] = (byte) ((b2 >> 6) | 192);
+                bArr[i5 + 1] = (byte) ((b2 & 63) | 128);
                 i5 += 2;
             } else if (z) {
                 writeU4HexU(bArr, i5, b2);
@@ -379,7 +379,7 @@ public class StringUtils {
             } else if (b2 < 55296 || b2 >= 57344) {
                 bArr[i5] = (byte) ((b2 >> 12) | 224);
                 bArr[i5 + 1] = (byte) (((b2 >> 6) & 63) | 128);
-                bArr[i5 + 2] = (byte) ((b2 & JSONB.Constants.BC_INT32_BYTE_MAX) | 128);
+                bArr[i5 + 2] = (byte) ((b2 & 63) | 128);
                 i5 += 3;
             } else {
                 if (b2 < 56320) {
@@ -390,7 +390,7 @@ public class StringUtils {
                         char c = IOUtils.getChar(bArr2, i6);
                         if (c < 56320 || c >= 57344) {
                             i2 = i5 + 1;
-                            bArr[i5] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                            bArr[i5] = 63;
                         } else {
                             i6 = i7;
                             i3 = ((b2 << 10) + c) - 56613888;
@@ -398,7 +398,7 @@ public class StringUtils {
                     }
                     if (i3 < 0) {
                         i2 = i5 + 1;
-                        bArr[i5] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                        bArr[i5] = 63;
                     } else {
                         bArr[i5] = (byte) ((i3 >> 18) | 240);
                         bArr[i5 + 1] = (byte) (((i3 >> 12) & 63) | 128);
@@ -408,7 +408,7 @@ public class StringUtils {
                     }
                 } else {
                     i2 = i5 + 1;
-                    bArr[i5] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                    bArr[i5] = 63;
                 }
                 i5 = i2;
             }

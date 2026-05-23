@@ -1,7 +1,5 @@
 package p000;
 
-import me.hd.wauxv.hook.factory.MagicFactory;
-
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᤝᛸᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
@@ -47,7 +45,7 @@ public final class C3608 extends AbstractC2862 implements InterfaceC1429 {
             case 0:
                 break;
         }
-        return ((C3608) mo1197(interfaceC0842, interfaceC0883)).mo1198(C3497.f10997);
+        return ((C3608) mo1197(interfaceC0842, interfaceC0883)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
@@ -69,7 +67,7 @@ public final class C3608 extends AbstractC2862 implements InterfaceC1429 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final Object mo1198(Object obj) throws Throwable {
         int i = this.f11268;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         String str = this.f11274;
         String str2 = this.f11273;
         String str3 = this.f11272;
@@ -86,7 +84,7 @@ public final class C3608 extends AbstractC2862 implements InterfaceC1429 {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC0743.m2188(obj);
-                    return c3497;
+                    return unit;
                 }
                 AbstractC0743.m2188(obj);
                 AbstractC2834.m4823(null, 3, "开始下载" + str4 + "图片");
@@ -96,7 +94,7 @@ public final class C3608 extends AbstractC2862 implements InterfaceC1429 {
                 C2146 c2146 = new C2146(AbstractC2203.m4025(interfaceC0883, AbstractC2209.m4140(ExecutorC0990.f3609, new C2857()), new C2363(str5, c2536, interfaceC0842, 4)));
                 this.f11270 = null;
                 this.f11269 = 1;
-                return c2146.m3954(this) == enumC0884 ? enumC0884 : c3497;
+                return c2146.m3954(this) == enumC0884 ? enumC0884 : unit;
             default:
                 String[] strArr2 = AbstractC1574.f5469;
                 InterfaceC0883 interfaceC0884 = (InterfaceC0883) this.f11270;
@@ -106,7 +104,7 @@ public final class C3608 extends AbstractC2862 implements InterfaceC1429 {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC0743.m2188(obj);
-                    return c3497;
+                    return unit;
                 }
                 AbstractC0743.m2188(obj);
                 AbstractC2834.m4823(null, 3, "开始下载" + str4 + "图片");
@@ -116,7 +114,7 @@ public final class C3608 extends AbstractC2862 implements InterfaceC1429 {
                 C2146 c2147 = new C2146(AbstractC2203.m4025(interfaceC0884, AbstractC2209.m4140(ExecutorC0990.f3609, new C2857()), new C2363(str6, c2537, interfaceC0842, 7)));
                 this.f11270 = null;
                 this.f11269 = 1;
-                return c2147.m3954(this) == enumC0884 ? enumC0884 : c3497;
+                return c2147.m3954(this) == enumC0884 ? enumC0884 : unit;
         }
     }
 }

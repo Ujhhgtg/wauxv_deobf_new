@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C0922 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C0922 f3411 = new C0922("CustomBalanceHook.ValMath", null, null, false, EnumC0921.f3406.f3410, 0.0f, 0, UMErrorCode.E_UM_BE_JSON_FAILED);
+    public static final C0922 f3411 = new C0922("CustomBalanceHook.ValMath", null, null, false, EnumC0921.f3406.f3410, 0.0f, 0, 110);
 }

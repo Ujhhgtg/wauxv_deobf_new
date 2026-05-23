@@ -31,11 +31,11 @@ public final class C1450 implements InterfaceC2894 {
     public Bitmap f5144;
 
     public C1450(Handler handler, int i, long j) {
-        if (!AbstractC3522.m5112(Integer.MIN_VALUE, Integer.MIN_VALUE)) {
+        if (!AbstractC3522.m5112(-2147483648, -2147483648)) {
             throw new IllegalArgumentException("Width and height must both be > 0 or Target#SIZE_ORIGINAL, but given width: -2147483648 and height: -2147483648");
         }
-        this.f5138 = Integer.MIN_VALUE;
-        this.f5139 = Integer.MIN_VALUE;
+        this.f5138 = -2147483648;
+        this.f5139 = -2147483648;
         this.f5141 = handler;
         this.f5142 = i;
         this.f5143 = j;

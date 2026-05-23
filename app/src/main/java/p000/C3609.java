@@ -3,7 +3,6 @@ package p000;
 import android.app.AlertDialog;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.json.JSONObject;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᤝᤞᛸᲇ, reason: contains not printable characters */
@@ -50,7 +49,7 @@ public final class C3609 extends AbstractC2862 implements InterfaceC1429 {
             case 1:
                 break;
         }
-        return ((C3609) mo1197(interfaceC0842, interfaceC0883)).mo1198(C3497.f10997);
+        return ((C3609) mo1197(interfaceC0842, interfaceC0883)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
@@ -74,7 +73,7 @@ public final class C3609 extends AbstractC2862 implements InterfaceC1429 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final Object mo1198(Object obj) throws Exception {
         int i = this.f11275;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         InterfaceC0842 interfaceC0842 = null;
         Object obj2 = this.f11280;
         Object obj3 = this.f11279;
@@ -106,7 +105,7 @@ public final class C3609 extends AbstractC2862 implements InterfaceC1429 {
                     AbstractC0743.m2188(obj);
                 }
                 AbstractC2834.m4823(null, 3, "下载视频完成");
-                return c3497;
+                return unit;
             case 1:
                 String[] strArr2 = AbstractC1574.f5469;
                 InterfaceC0883 interfaceC0884 = (InterfaceC0883) this.f11277;
@@ -132,7 +131,7 @@ public final class C3609 extends AbstractC2862 implements InterfaceC1429 {
                     AbstractC0743.m2188(obj);
                 }
                 AbstractC2834.m4823(null, 3, "下载视频完成");
-                return c3497;
+                return unit;
             default:
                 int i4 = this.f11276;
                 if (i4 == 0) {
@@ -147,7 +146,7 @@ public final class C3609 extends AbstractC2862 implements InterfaceC1429 {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC0743.m2188(obj);
-                    return c3497;
+                    return unit;
                 }
                 AbstractC0743.m2188(obj);
                 C1002 c1004 = AbstractC1075.f3893;
@@ -155,7 +154,7 @@ public final class C3609 extends AbstractC2862 implements InterfaceC1429 {
                 C0717 c0717 = new C0717((AlertDialog) obj2, null, 1);
                 this.f11276 = 2;
                 if (AbstractC2203.m4045(c1515, c0717, this) != enumC0884) {
-                    return c3497;
+                    return unit;
                 }
                 return enumC0884;
         }

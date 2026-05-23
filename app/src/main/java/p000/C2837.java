@@ -46,10 +46,10 @@ public final class C2837 extends AbstractC1460 {
                         if (i != 5) {
                             throw null;
                         }
-                        b = b2;
+                        b = 4;
                     }
                 } else {
-                    b = b2;
+                    b = 2;
                 }
             }
         } else {
@@ -63,10 +63,10 @@ public final class C2837 extends AbstractC1460 {
             ByteBuffer byteBuffer = c1353.f4837;
             int i2 = c1353.f4838 - 1;
             c1353.f4838 = i2;
-            byteBuffer.put(i2, z ? (byte) 1 : (byte) 0);
+            byteBuffer.put(i2, 1);
             c1353.m3077(2);
         } else {
-            c1353.getClass();
+            
         }
         c1353.m3066(b, 1);
         int iM3072 = c1353.m3072();

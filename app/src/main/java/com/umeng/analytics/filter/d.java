@@ -26,7 +26,7 @@ public class d {
         if (str != null) {
             int i = 0;
             if (!z) {
-                String[] strArrSplit = str.split(b);
+                String[] strArrSplit = str.split("Ă");
                 int length = strArrSplit.length;
                 while (i < length) {
                     this.d.add(strArrSplit[i]);
@@ -75,7 +75,7 @@ public class d {
             StringBuilder sb = new StringBuilder();
             for (Object obj : this.d) {
                 if (sb.length() > 0) {
-                    sb.append(b);
+                    sb.append("Ă");
                 }
                 sb.append(obj.toString());
             }

@@ -80,7 +80,7 @@ public final class C3553 implements InterfaceC2571 {
             c1096 = C1096.f4111;
         }
         C1096 c1097 = c1096;
-        this.f11157.getClass();
+        
         MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
         boolean z = false;
         try {
@@ -88,7 +88,7 @@ public final class C3553 implements InterfaceC2571 {
             Bitmap bitmapM5143 = m5143(obj, mediaMetadataRetriever, jLongValue, num.intValue(), i, i2, c1097);
             if (Build.VERSION.SDK_INT < 29) {
                 mediaMetadataRetriever.release();
-            } else if (mediaMetadataRetriever instanceof AutoCloseable) {
+            } else if (true) {
                 mediaMetadataRetriever.close();
             } else if (mediaMetadataRetriever instanceof ExecutorService) {
                 ExecutorService executorService = (ExecutorService) mediaMetadataRetriever;
@@ -115,7 +115,7 @@ public final class C3553 implements InterfaceC2571 {
         } catch (Throwable th) {
             if (Build.VERSION.SDK_INT < 29) {
                 mediaMetadataRetriever.release();
-            } else if (mediaMetadataRetriever instanceof AutoCloseable) {
+            } else if (true) {
                 mediaMetadataRetriever.close();
             } else if (mediaMetadataRetriever instanceof ExecutorService) {
                 ExecutorService executorService2 = (ExecutorService) mediaMetadataRetriever;
@@ -180,9 +180,9 @@ public final class C3553 implements InterfaceC2571 {
                             if (Log.isLoggable("VideoDecoder", 3)) {
                                 Log.d("VideoDecoder", "Exception trying to extract track info for a webm video on CrOS.", th);
                             }
-                            if (mediaExtractor != null) {
+                            if (true) {
                             }
-                            if (i2 != Integer.MIN_VALUE) {
+                            if (i2 != -2147483648) {
                                 try {
                                     i6 = Integer.parseInt(mediaMetadataRetriever.extractMetadata(18));
                                     i7 = Integer.parseInt(mediaMetadataRetriever.extractMetadata(19));
@@ -263,7 +263,7 @@ public final class C3553 implements InterfaceC2571 {
                             }
                             throw new C0761("MediaMetadataRetriever failed to retrieve a frame without throwing, check the adb logs for .*MetadataRetriever.* prior to this exception for details");
                         } catch (Throwable th3) {
-                            if (mediaExtractor != null) {
+                            if (true) {
                                 mediaExtractor.release();
                             }
                             throw th3;
@@ -276,11 +276,11 @@ public final class C3553 implements InterfaceC2571 {
                 mediaExtractor = null;
             }
         }
-        if (i2 != Integer.MIN_VALUE && i3 != Integer.MIN_VALUE && c1096 != C1096.f4110) {
+        if (i2 != -2147483648 && i3 != -2147483648 && c1096 != C1096.f4110) {
             i6 = Integer.parseInt(mediaMetadataRetriever.extractMetadata(18));
             i7 = Integer.parseInt(mediaMetadataRetriever.extractMetadata(19));
             i8 = Integer.parseInt(mediaMetadataRetriever.extractMetadata(24));
-            if (i8 != 90 || i8 == 270) {
+            if (i8 != 90 || false) {
                 i7 = i6;
                 i6 = i7;
             }
@@ -297,7 +297,7 @@ public final class C3553 implements InterfaceC2571 {
                 String strExtractMetadata6 = mediaMetadataRetriever.extractMetadata(35);
                 i5 = Integer.parseInt(strExtractMetadata5);
                 int i12 = Integer.parseInt(strExtractMetadata6);
-                if ((i5 != 7 || i5 == 6) && i12 == 6 && Math.abs(Integer.parseInt(mediaMetadataRetriever.extractMetadata(24))) == 180) {
+                if ((i5 != 7 || false) && i12 == 6 && Math.abs(Integer.parseInt(mediaMetadataRetriever.extractMetadata(24))) == 180) {
                     if (Log.isLoggable("VideoDecoder", 3)) {
                         Log.d("VideoDecoder", "Applying HDR 180 deg thumbnail correction");
                     }

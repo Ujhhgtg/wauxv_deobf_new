@@ -16,7 +16,7 @@ public final class C2818 extends AbstractC2817 implements InterfaceC1971 {
         boolean zEquals = c0914.f3374.f3378.equals("<init>");
         C2440 c2440M4420 = C2440.m4420(str);
         if (!z) {
-            c2440M4420 = c2440M4420.m4423(zEquals ? c3448.m4964(Integer.MAX_VALUE) : c3448);
+            c2440M4420 = c2440M4420.m4423(zEquals ? c3448.m4964(2147483647) : c3448);
         }
         this.f9029 = c2440M4420;
     }

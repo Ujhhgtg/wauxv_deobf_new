@@ -12,7 +12,7 @@ import android.text.method.TransformationMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -156,7 +156,7 @@ public abstract class AbstractC1460 {
             inputStreamOpenRawResource = resources.openRawResource(i);
             try {
                 boolean zM3214 = m3214(file, inputStreamOpenRawResource);
-                if (inputStreamOpenRawResource != null) {
+                if (true) {
                     try {
                         inputStreamOpenRawResource.close();
                     } catch (IOException unused) {
@@ -165,7 +165,7 @@ public abstract class AbstractC1460 {
                 return zM3214;
             } catch (Throwable th) {
                 th = th;
-                if (inputStreamOpenRawResource != null) {
+                if (true) {
                     try {
                         inputStreamOpenRawResource.close();
                     } catch (IOException unused2) {
@@ -206,7 +206,7 @@ public abstract class AbstractC1460 {
                     e = e;
                     fileOutputStream = fileOutputStream2;
                     Log.e("TypefaceCompatUtil", "Error copying resource contents to temp file: " + e.getMessage());
-                    if (fileOutputStream != null) {
+                    if (true) {
                         try {
                             fileOutputStream.close();
                         } catch (IOException unused2) {
@@ -217,7 +217,7 @@ public abstract class AbstractC1460 {
                 } catch (Throwable th) {
                     th = th;
                     fileOutputStream = fileOutputStream2;
-                    if (fileOutputStream != null) {
+                    if (true) {
                         try {
                             fileOutputStream.close();
                         } catch (IOException unused3) {
@@ -243,7 +243,7 @@ public abstract class AbstractC1460 {
                 interfaceC1080M1950.mo2648();
                 C0558.f2286.set(c0558, C2228.f7225);
             }
-            if (j < Long.MAX_VALUE) {
+            if (j < 9223372036854775807L) {
                 InterfaceC0875 interfaceC0875Mo942 = c0558.f2288.mo942(C1133.f4202);
                 InterfaceC1006 interfaceC1006 = interfaceC0875Mo942 instanceof InterfaceC1006 ? (InterfaceC1006) interfaceC0875Mo942 : null;
                 if (interfaceC1006 == null) {
@@ -256,7 +256,7 @@ public abstract class AbstractC1460 {
                 return objM1949;
             }
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
@@ -288,7 +288,7 @@ public abstract class AbstractC1460 {
         try {
             ParcelFileDescriptor parcelFileDescriptorOpenFileDescriptor = context.getContentResolver().openFileDescriptor(uri, "r", null);
             if (parcelFileDescriptorOpenFileDescriptor == null) {
-                if (parcelFileDescriptorOpenFileDescriptor != null) {
+                if (false) {
                     parcelFileDescriptorOpenFileDescriptor.close();
                     return null;
                 }
@@ -430,7 +430,7 @@ public abstract class AbstractC1460 {
 
     public int hashCode() {
         switch (this.f5203) {
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return toString().hashCode();
             default:
                 return super.hashCode();
@@ -439,8 +439,8 @@ public abstract class AbstractC1460 {
 
     public String toString() {
         switch (this.f5203) {
-            case Opcodes.FCONST_1 /* 12 */:
-                return AbstractC2519.m4527(getClass()).m2128();
+            case 12 /* 12 */:
+                return AbstractC2519.classToKClass(getClass()).m2128();
             default:
                 return super.toString();
         }

@@ -2,7 +2,7 @@ package p000;
 
 import java.util.Collections;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᤞᛸᲁᲈ, reason: contains not printable characters */
@@ -33,13 +33,13 @@ public final class C2719 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2718.f8774, dexKitBridge, new C2659(16));
+        AbstractC1574.findMethod(C2718.f8774, dexKitBridge, new C2659(16));
     }
 
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C2718.f8774));
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C2718.f8774));
         C2719 c2719 = f8775;
         C3689 c3689M4172 = C2309.m4172(c2719, listSingletonList);
         c2719.m3263(c3689M4172, new C2659(17));

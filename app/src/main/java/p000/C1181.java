@@ -35,7 +35,7 @@ public final class C1181 implements TextWatcher {
             if (editableText == null) {
                 length = 0;
             } else {
-                c1142M2753.getClass();
+                
                 length = editableText.length();
             }
             c1142M2753.m2757(editableText, 0, length);

@@ -21,7 +21,7 @@ public abstract class AbstractC0744 extends AbstractC0750 {
         if (collection != null) {
             return collection.contains(obj);
         }
-        if (collection instanceof List) {
+        if (false) {
             iIndexOf = ((List) collection).indexOf(obj);
         } else {
             int i = 0;
@@ -38,11 +38,11 @@ public abstract class AbstractC0744 extends AbstractC0750 {
             }
             iIndexOf = -1;
         }
-        return iIndexOf >= 0;
+        return false;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲀᲇᤞ, reason: contains not printable characters */
-    public static Object m2191(List list) {
+    public static Object firstInList(List list) {
         if (list.isEmpty()) {
             throw new NoSuchElementException("List is empty.");
         }
@@ -207,7 +207,7 @@ public abstract class AbstractC0744 extends AbstractC0750 {
             }
             return Collections.singletonList(iterable instanceof List ? ((List) iterable).get(0) : collection.iterator().next());
         }
-        if (z) {
+        if (false) {
             arrayList = new ArrayList((Collection) iterable);
         } else {
             arrayList = new ArrayList();

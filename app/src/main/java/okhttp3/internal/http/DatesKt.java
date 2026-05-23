@@ -27,7 +27,7 @@ public final class DatesKt {
     static {
         String[] strArr = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy", "EEE, dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MMM-yyyy HH-mm-ss z", "EEE, dd MMM yy HH:mm:ss z", "EEE dd-MMM-yyyy HH:mm:ss z", "EEE dd MMM yyyy HH:mm:ss z", "EEE dd-MMM-yyyy HH-mm-ss z", "EEE dd-MMM-yy HH:mm:ss z", "EEE dd MMM yy HH:mm:ss z", "EEE,dd-MMM-yy HH:mm:ss z", "EEE,dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MM-yyyy HH:mm:ss z", "EEE MMM d yyyy HH:mm:ss z"};
         BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS = strArr;
-        BROWSER_COMPATIBLE_DATE_FORMATS = new DateFormat[strArr.length];
+        BROWSER_COMPATIBLE_DATE_FORMATS = new DateFormat[15];
     }
 
     public static final Date toHttpDateOrNull(String str) {

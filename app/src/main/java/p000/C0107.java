@@ -13,7 +13,7 @@ public final class C0107 extends AbstractC0982 {
 
     static {
         String str = "AccountInfoCenterHook.ValAlias";
-        C0121.f1070.getClass();
-        f1056 = new C0107(str, (String) C0121.f1072.getValue(), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        
+        f1056 = new C0107("AccountInfoCenterHook.ValAlias", (String) C0121.f1072.getValue(), null, false, 0, 0.0f, 0L, 124);
     }
 }

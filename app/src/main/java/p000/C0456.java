@@ -13,6 +13,6 @@ public final class C0456 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f2031 = new C0456("BottomTabCustomHook.ValContacts", "通讯", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f2031 = new C0456("BottomTabCustomHook.ValContacts", "通讯", null, false, 0, 0.0f, 0L, 124);
     }
 }

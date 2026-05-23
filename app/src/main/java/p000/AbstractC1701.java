@@ -45,7 +45,7 @@ public abstract class AbstractC1701 extends C1848 implements InterfaceC1080, Int
         if (c1705 == null) {
             c1705 = null;
         }
-        c1705.getClass();
+        
         while (true) {
             AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = C1705.f5796;
             Object obj = atomicReferenceFieldUpdater.get(c1705);
@@ -73,7 +73,7 @@ public abstract class AbstractC1701 extends C1848 implements InterfaceC1080, Int
                     return;
                 }
                 C1848 c1848 = (C1848) obj2;
-                c1848.getClass();
+                
                 AtomicReferenceFieldUpdater atomicReferenceFieldUpdater3 = C1848.f6152;
                 C2543 c2543 = (C2543) atomicReferenceFieldUpdater3.get(c1848);
                 if (c2543 == null) {

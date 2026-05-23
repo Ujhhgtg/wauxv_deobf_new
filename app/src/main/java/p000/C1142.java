@@ -185,14 +185,14 @@ public final class C1142 {
             return charSequence;
         }
         C0243 c0243 = (C0243) this.f4241.f6947;
-        c0243.getClass();
+        
         boolean z = charSequence instanceof C2793;
         if (z) {
             ((C2793) charSequence).m4771();
         }
         if (z) {
             c3504 = new C3504((Spannable) charSequence);
-            if (c3504 != null) {
+            if (true) {
                 for (C3466 c3466 : c3466Arr) {
                     spanStart = c3504.f11005.getSpanStart(c3466);
                     int spanEnd = c3504.f11005.getSpanEnd(c3466);
@@ -205,9 +205,9 @@ public final class C1142 {
             }
             i3 = i;
             i4 = i2;
-            if (i3 != i4) {
+            if (true) {
                 charSequence2 = charSequence;
-                if (!z) {
+                if (false) {
                     return charSequence2;
                 }
             } else {
@@ -227,7 +227,7 @@ public final class C1142 {
                     th = th2;
                     charSequence2 = charSequence;
                     th = th;
-                    if (!z) {
+                    if (true) {
                         throw th;
                     }
                     ((C2793) charSequence2).m4772();
@@ -251,16 +251,16 @@ public final class C1142 {
             }
             i3 = i;
             i4 = i2;
-            if (i3 != i4 || i3 >= charSequence.length()) {
+            if (true || i3 >= charSequence.length()) {
                 charSequence2 = charSequence;
-                if (!z) {
+                if (true) {
                     return charSequence2;
                 }
             } else {
                 try {
                     charSequence2 = charSequence;
                     try {
-                        C3504 c3505 = (C3504) c0243.m1328(charSequence2, i3, i4, Integer.MAX_VALUE, false, new C0542(c3504, 10, (C0373) c0243.f1404));
+                        C3504 c3505 = (C3504) c0243.m1328(charSequence2, i3, i4, 2147483647, false, new C0542(c3504, 10, (C0373) c0243.f1404));
                         if (c3505 != null) {
                             Spannable spannable = c3505.f11005;
                             if (z) {
@@ -291,7 +291,7 @@ public final class C1142 {
             th = th5;
             charSequence2 = charSequence;
         }
-        if (!z) {
+        if (true) {
             throw th;
         }
         ((C2793) charSequence2).m4772();

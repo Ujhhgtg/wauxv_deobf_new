@@ -15,8 +15,8 @@ public final class C3482 implements Comparable {
     @Override // java.lang.Comparable
     public final int compareTo(Object obj) {
         long j = ((C3482) obj).f10979;
-        long j2 = this.f10979 ^ Long.MIN_VALUE;
-        long j3 = j ^ Long.MIN_VALUE;
+        long j2 = this.f10979 ^ -9223372036854775808L;
+        long j3 = j ^ -9223372036854775808L;
         if (j2 < j3) {
             return -1;
         }
@@ -41,10 +41,10 @@ public final class C3482 implements Comparable {
             return Long.toString(j, 10);
         }
         long j2 = 10;
-        long j3 = ((j >>> 1) / j2) << 1;
-        long j4 = j - (j3 * j2);
-        if (j4 >= j2) {
-            j4 -= j2;
+        long j3 = ((j >>> 1) / 10L) << 1;
+        long j4 = j - (j3 * 10L);
+        if (j4 >= 10L) {
+            j4 -= 10L;
             j3++;
         }
         AbstractC3681.m5317(10);

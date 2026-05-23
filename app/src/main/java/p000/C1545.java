@@ -5,7 +5,6 @@ import android.view.ViewParent;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲁᲀᲈᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -40,8 +39,8 @@ public final class C1545 extends AbstractC2867 implements InterfaceC1578 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo1408(View view, Object obj, Object obj2, MsgInfoBean msgInfoBean) {
         if (mo3264()) {
-            int i = AbstractC1745.f5844;
-            C1299 c1299M3490 = AbstractC0968.m2484(obj).m3490();
+            int i = 0;
+            C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
             c1299M3490.f6370 = "avatarIV";
             ImageView imageView = (ImageView) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
             if (imageView != null) {

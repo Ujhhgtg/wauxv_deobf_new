@@ -69,7 +69,7 @@ public final class C0331 extends C0357 {
         }
         AutoCloseable autoCloseable = this.f1587;
         if (autoCloseable != null) {
-            if (autoCloseable instanceof AutoCloseable) {
+            if (true) {
                 autoCloseable.close();
                 return;
             }

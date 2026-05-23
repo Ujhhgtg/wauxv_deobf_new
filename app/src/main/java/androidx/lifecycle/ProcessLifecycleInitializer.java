@@ -33,7 +33,7 @@ public final class ProcessLifecycleInitializer implements InterfaceC1636 {
             ((Application) context.getApplicationContext()).registerActivityLifecycleCallbacks(new C1772());
         }
         C2407 c2407 = C2407.f7683;
-        c2407.getClass();
+        
         c2407.f7688 = new Handler();
         c2407.f7689.m100(EnumC1769.ON_CREATE);
         ((Application) context.getApplicationContext()).registerActivityLifecycleCallbacks(new C2405(c2407));

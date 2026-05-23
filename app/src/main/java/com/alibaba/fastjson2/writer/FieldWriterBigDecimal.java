@@ -31,7 +31,7 @@ final class FieldWriterBigDecimal<T> extends FieldWriter<T> {
             jSONWriter.writeDecimal(bigDecimal, features, this.decimalFormat);
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

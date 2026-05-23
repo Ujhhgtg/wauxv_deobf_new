@@ -31,19 +31,19 @@ public final class C1068 {
     public C1068(C1069 c1069, String str) {
         this.f3865 = c1069;
         this.f3859 = str;
-        int i = c1069.f3872;
+        int i = 1;
         File file = c1069.f3866;
-        this.f3860 = new long[i];
-        this.f3861 = new File[i];
-        this.f3862 = new File[i];
+        this.f3860 = new long[1];
+        this.f3861 = new File[1];
+        this.f3862 = new File[1];
         StringBuilder sb = new StringBuilder(str);
         sb.append('.');
         int length = sb.length();
-        for (int i2 = 0; i2 < i; i2++) {
-            sb.append(i2);
-            this.f3861[i2] = new File(file, sb.toString());
+        for (int i2 = 0; i2 < 1; i2++) {
+            sb.append(0);
+            this.f3861[0] = new File(file, sb.toString());
             sb.append(".tmp");
-            this.f3862[i2] = new File(file, sb.toString());
+            this.f3862[0] = new File(file, sb.toString());
             sb.setLength(length);
         }
     }

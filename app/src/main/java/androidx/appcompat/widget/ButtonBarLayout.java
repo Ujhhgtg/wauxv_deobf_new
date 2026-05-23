@@ -70,7 +70,7 @@ public class ButtonBarLayout extends LinearLayout {
             iMakeMeasureSpec = i;
             z = false;
         } else {
-            iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(size, Integer.MIN_VALUE);
+            iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(size, -2147483648);
             z = true;
         }
         super.onMeasure(iMakeMeasureSpec, i2);
@@ -115,7 +115,7 @@ public class ButtonBarLayout extends LinearLayout {
         if (getMinimumHeight() != paddingBottom) {
             setMinimumHeight(paddingBottom);
             if (i2 == 0) {
-                super.onMeasure(i, i2);
+                super.onMeasure(i, 0);
             }
         }
     }

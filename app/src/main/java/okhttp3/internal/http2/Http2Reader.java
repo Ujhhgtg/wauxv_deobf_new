@@ -165,7 +165,7 @@ public final class Http2Reader implements Closeable {
             throw new IOException("PROTOCOL_ERROR: TYPE_PUSH_PROMISE streamId == 0");
         }
         int iAnd = (i2 & 8) != 0 ? Util.and(this.source.readByte(), 255) : 0;
-        handler.pushPromise(i3, this.source.readInt() & Integer.MAX_VALUE, readHeaderBlock(Companion.lengthWithoutPadding(i - 4, i2, iAnd), iAnd, i2, i3));
+        handler.pushPromise(i3, this.source.readInt() & 2147483647, readHeaderBlock(Companion.lengthWithoutPadding(i - 4, i2, iAnd), iAnd, i2, i3));
     }
 
     private final void readRstStream(Handler handler, int i, int i2, int i3) throws IOException {
@@ -204,7 +204,7 @@ public final class Http2Reader implements Closeable {
         int i6 = c1661M4042.f5614;
         if ((i6 > 0 && i4 <= i5) || (i6 < 0 && i5 <= i4)) {
             while (true) {
-                int iAnd = Util.and(this.source.readShort(), Settings.DEFAULT_INITIAL_WINDOW_SIZE);
+                int iAnd = Util.and(this.source.readShort(), 65535);
                 int i7 = this.source.readInt();
                 if (iAnd != 2) {
                     if (iAnd == 3) {
@@ -256,7 +256,7 @@ public final class Http2Reader implements Closeable {
             }
             int iAnd = Util.and(this.source.readByte(), 255);
             int iAnd2 = Util.and(this.source.readByte(), 255);
-            int i = this.source.readInt() & Integer.MAX_VALUE;
+            int i = this.source.readInt() & 2147483647;
             Logger logger2 = logger;
             if (logger2.isLoggable(Level.FINE)) {
                 logger2.fine(Http2.INSTANCE.frameLog(true, i, medium, iAnd, iAnd2));
@@ -322,7 +322,7 @@ public final class Http2Reader implements Closeable {
 
     private final void readPriority(Handler handler, int i) {
         int i2 = this.source.readInt();
-        handler.priority(i, i2 & Integer.MAX_VALUE, Util.and(this.source.readByte(), 255) + 1, (Integer.MIN_VALUE & i2) != 0);
+        handler.priority(i, i2 & 2147483647, Util.and(this.source.readByte(), 255) + 1, (-2147483648 & i2) != 0);
     }
 
     /* JADX INFO: compiled from: obf */
@@ -349,7 +349,7 @@ public final class Http2Reader implements Closeable {
             if (companion.getLogger().isLoggable(Level.FINE)) {
                 companion.getLogger().fine(Http2.INSTANCE.frameLog(true, this.streamId, this.length, iAnd, this.flags));
             }
-            int i2 = this.source.readInt() & Integer.MAX_VALUE;
+            int i2 = this.source.readInt() & 2147483647;
             this.streamId = i2;
             if (iAnd == 9) {
                 if (i2 != i) {

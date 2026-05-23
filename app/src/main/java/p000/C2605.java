@@ -20,7 +20,7 @@ public final class C2605 extends AbstractC2207 {
         float f4 = (0.0f + f3) * 0.5f;
         float f5 = (f3 - 0.0f) / 2.0f;
         double d = 270.0f;
-        c2687.f8673 = (((float) Math.cos(Math.toRadians(d))) * f5) + f4;
-        c2687.f8674 = (f5 * ((float) Math.sin(Math.toRadians(d)))) + f4;
+        c2687.f8673 = (((float) Math.cos(Math.toRadians(270.0))) * f5) + f4;
+        c2687.f8674 = (f5 * ((float) Math.sin(Math.toRadians(270.0)))) + f4;
     }
 }

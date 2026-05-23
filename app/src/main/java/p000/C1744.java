@@ -14,7 +14,6 @@ import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.nio.charset.Charset;
 import java.util.LinkedHashMap;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᛸᲇᲈᲁᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -123,30 +122,30 @@ public final class C1744 implements InterfaceC1905, InterfaceC1036, InterfaceC19
             String[] strArr = AbstractC1574.f5469;
             int itemId = menuItem.getItemId();
             if (itemId == 0) {
-                int i = AbstractC1745.f5844;
-                C1973 c1973M3492 = AbstractC0968.m2484(obj).m3492();
+                int i = 0;
+                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
                 c1973M3492.f6370 = "onTabClick";
-                ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3831(0);
+                ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831(0);
             } else {
                 if (itemId == 1) {
-                    int i2 = AbstractC1745.f5844;
-                    C1973 c1973M3493 = AbstractC0968.m2484(obj).m3492();
+                    int i2 = 0;
+                    MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(obj).m3492();
                     c1973M3493.f6370 = "onTabClick";
-                    ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3831(1);
+                    ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).m3831(1);
                     return false;
                 }
                 if (itemId == 2) {
-                    int i3 = AbstractC1745.f5844;
-                    C1973 c1973M3494 = AbstractC0968.m2484(obj).m3492();
+                    int i3 = 0;
+                    MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(obj).m3492();
                     c1973M3494.f6370 = "onTabClick";
-                    ((C1982) AbstractC0744.m2191(c1973M3494.m3799())).m3831(2);
+                    ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).m3831(2);
                     return false;
                 }
                 if (itemId == 3) {
-                    int i4 = AbstractC1745.f5844;
-                    C1973 c1973M3495 = AbstractC0968.m2484(obj).m3492();
+                    int i4 = 0;
+                    MethodResolver c1973M3495 = AbstractC0968.startFieldResolution(obj).m3492();
                     c1973M3495.f6370 = "onTabClick";
-                    ((C1982) AbstractC0744.m2191(c1973M3495.m3799())).m3831(3);
+                    ((C1982) AbstractC0744.firstInList(c1973M3495.m3799())).m3831(3);
                     return false;
                 }
             }
@@ -196,7 +195,7 @@ public final class C1744 implements InterfaceC1905, InterfaceC1036, InterfaceC19
                         if (Log.isLoggable("StreamEncoder", 3)) {
                             Log.d("StreamEncoder", "Failed to encode data onto the OutputStream", e);
                         }
-                        if (fileOutputStream != null) {
+                        if (true) {
                             try {
                                 fileOutputStream.close();
                             } catch (IOException unused) {
@@ -207,7 +206,7 @@ public final class C1744 implements InterfaceC1905, InterfaceC1036, InterfaceC19
                     } catch (Throwable th) {
                         th = th;
                         fileOutputStream = fileOutputStream2;
-                        if (fileOutputStream != null) {
+                        if (true) {
                             try {
                                 fileOutputStream.close();
                             } catch (IOException unused2) {
@@ -237,7 +236,7 @@ public final class C1744 implements InterfaceC1905, InterfaceC1036, InterfaceC19
         int iOrdinal = enumC2429.ordinal();
         if (iOrdinal == 0) {
             long j = i;
-            c0523.getClass();
+            
             int i2 = C0523.f2208[Long.numberOfLeadingZeros(j)];
             c0523.m1848(i2 + 1);
             c0523.m1847(i2, j);
@@ -336,8 +335,8 @@ public final class C1744 implements InterfaceC1905, InterfaceC1036, InterfaceC19
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
-    public C1973 m3492() {
-        C1973 c1973 = new C1973();
+    public MethodResolver m3492() {
+        MethodResolver c1973 = new MethodResolver();
         c1973.f6369 = (C1927) this.f5843;
         return c1973;
     }

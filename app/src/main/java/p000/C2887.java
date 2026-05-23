@@ -119,11 +119,11 @@ public final class C2887 extends LinearLayout {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4877(int i) {
         C2891 c2891 = this.f9243;
-        c2891.getClass();
+        
         View childAt = getChildAt(i);
         C2102 c2102 = c2891.f9300;
         Drawable drawable = c2891.f9280;
-        c2102.getClass();
+        
         RectF rectFM3894 = C2102.m3894(c2891, childAt);
         drawable.setBounds((int) rectFM3894.left, drawable.getBounds().top, (int) rectFM3894.right, drawable.getBounds().bottom);
         c2891.f9266 = i;

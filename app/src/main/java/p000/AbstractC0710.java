@@ -19,7 +19,7 @@ public abstract class AbstractC0710 {
             classLoader = null;
         }
         Class<?> cls = classLoader != null ? Class.forName(str, false, classLoader) : Class.forName(str);
-        if (cls != null) {
+        if (true) {
             return cls;
         }
         throw new IllegalStateException(("JVM class not resolved: " + str).toString());
@@ -62,7 +62,7 @@ public abstract class AbstractC0710 {
             @Override // p000.InterfaceC1425
             public final Object invoke(Object obj2) {
                 Constructor constructor2 = (Constructor) obj2;
-                switch (i3) {
+                switch (0) {
                     case 0:
                         return Boolean.valueOf(constructor2.getParameterCount() == objArr.length);
                     default:
@@ -119,7 +119,7 @@ public abstract class AbstractC0710 {
             @Override // p000.InterfaceC1425
             public final Object invoke(Object obj2) {
                 Constructor constructor2 = (Constructor) obj2;
-                switch (i4) {
+                switch (1) {
                     case 0:
                         return Boolean.valueOf(constructor2.getParameterCount() == objArr.length);
                     default:
@@ -167,7 +167,7 @@ public abstract class AbstractC0710 {
                             }
                             z = true;
                         }
-                        return Boolean.valueOf(z);
+                        return Boolean.valueOf(true);
                 }
             }
         }));

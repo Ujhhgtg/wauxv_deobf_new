@@ -1,6 +1,5 @@
 package p000;
 
-import android.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -10,7 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲀᤝᲇᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -38,7 +36,7 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
         int i2 = 2;
         int i3 = 0;
         InterfaceC0842 interfaceC0842 = null;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         Object obj2 = this.f5341;
         Object obj3 = this.f5340;
         switch (i) {
@@ -60,7 +58,7 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
                 } else if (AbstractC2207.m4087(str, "wauxv")) {
                     C1362 c1362 = C1362.f4862;
                     Context context = c1046.getContext();
-                    c1362.getClass();
+                    
                     int iHashCode = str2.hashCode();
                     if (iHashCode == 509187377) {
                         if (str2.equals("killProcess")) {
@@ -69,7 +67,7 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
                     } else if (iHashCode == 818860563) {
                         if (str2.equals("clearUnreadCount")) {
                             C1002 c1002 = AbstractC1075.f3893;
-                            AbstractC0968.m2486(ExecutorC0990.f3609, new C0303(i2, interfaceC0842, 3));
+                            AbstractC0968.m2486(ExecutorC0990.f3609, new C0303(2, interfaceC0842, 3));
                         }
                     } else if (iHashCode == 1789114534 && str2.equals("openSetting")) {
                         new C2675(context).m4686();
@@ -77,7 +75,7 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
                 }
                 break;
             case 2:
-                C1501 c1501 = new C1501((C1503) obj, (C1484) obj3, (C0106) obj2, i3);
+                C1501 c1501 = new C1501((C1503) obj, (C1484) obj3, (C0106) obj2, 0);
                 C0815 c0815 = new C0815();
                 C0816 c0816 = new C0816(c0815);
                 c1501.invoke(c0816);
@@ -91,11 +89,11 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
                 break;
             default:
                 C3689.m5349((C3689) obj3);
-                int i4 = AbstractC1745.f5844;
-                C1973 c1973M3492 = AbstractC0968.m2484(((C1563) obj).m3268()).m3492();
+                int i4 = 0;
+                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(((C1563) obj).m3268()).m3492();
                 String[] strArr2 = AbstractC1574.f5469;
                 c1973M3492.f6370 = "getContext";
-                Context context2 = (Context) ((C1982) AbstractC2784.m4742(c1973M3492)).m3832(new Object[0]);
+                Context context2 = (Context) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                 TextView textView = new TextView(context2);
                 textView.setTextSize(16.0f);
                 textView.setText("正在载入...");
@@ -103,7 +101,7 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
                 char c = 1;
                 textView.setGravity(1);
                 textView.setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
-                ProgressBar progressBar = new ProgressBar(context2, null, R.attr.progressBarStyleHorizontal);
+                ProgressBar progressBar = new ProgressBar(context2, null, 16842872);
                 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -2);
                 layoutParams.setMargins(32, 32, 32, 32);
                 progressBar.setLayoutParams(layoutParams);
@@ -123,10 +121,10 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
                 if (interfaceC0877M4992 != c1004 && interfaceC0877M4992.mo942(C1133.f4202) == null) {
                     interfaceC0877M4992 = interfaceC0877M4992.mo941(c1004);
                 }
-                AbstractC0057 c1005 = new C1004(interfaceC0877M4992, z, c == true ? 1 : 0);
+                AbstractC0057 c1005 = new C1004(interfaceC0877M4992, true, 0);
                 c1005.m938(1, c1005, c3609);
                 break;
         }
-        return c3497;
+        return unit;
     }
 }

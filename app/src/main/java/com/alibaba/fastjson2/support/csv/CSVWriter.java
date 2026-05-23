@@ -140,7 +140,7 @@ public abstract class CSVWriter implements Closeable, Flushable {
             return;
         }
         List<FieldWriter> fieldWriters = ((ObjectWriterAdapter) objectWriter).getFieldWriters();
-        if (fieldWriters.size() == 1 && (fieldWriters.get(0).features & FieldInfo.VALUE_MASK) != 0) {
+        if (fieldWriters.size() == 1 && (fieldWriters.get(0).features & 281474976710656L) != 0) {
             writeLineObject(fieldWriters.get(0).getFieldValue(obj));
             return;
         }
@@ -276,7 +276,7 @@ public abstract class CSVWriter implements Closeable, Flushable {
         }
         long j8 = j7 + j3;
         int i = (int) jM4737;
-        int i2 = ((i * 5) + 2) / Opcodes.IFEQ;
+        int i2 = ((i * 5) + 2) / 153;
         int i3 = ((i2 + 2) % 12) + 1;
         int i4 = (i - (((i2 * 306) + 5) / 10)) + 1;
         long j9 = j8 + ((long) (i2 / 10));

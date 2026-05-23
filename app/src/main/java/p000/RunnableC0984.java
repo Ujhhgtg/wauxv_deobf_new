@@ -28,7 +28,7 @@ public final class RunnableC0984 extends AbstractC1234 implements Runnable {
         } catch (SecurityException unused) {
             l = 1000L;
         }
-        f3602 = timeUnit.toNanos(l.longValue());
+        f3602 = TimeUnit.MILLISECONDS.toNanos(l.longValue());
     }
 
     @Override // java.lang.Runnable
@@ -48,13 +48,13 @@ public final class RunnableC0984 extends AbstractC1234 implements Runnable {
                 }
                 debugStatus = 1;
                 notifyAll();
-                long j = Long.MAX_VALUE;
+                long j = 9223372036854775807L;
                 while (true) {
                     Thread.interrupted();
                     long jM2871 = m2871();
-                    if (jM2871 == Long.MAX_VALUE) {
+                    if (jM2871 == 9223372036854775807L) {
                         long jNanoTime = System.nanoTime();
-                        if (j == Long.MAX_VALUE) {
+                        if (j == 9223372036854775807L) {
                             j = f3602 + jNanoTime;
                         }
                         long j2 = j - jNanoTime;
@@ -67,11 +67,11 @@ public final class RunnableC0984 extends AbstractC1234 implements Runnable {
                             mo1638();
                             return;
                         }
-                        if (jM2871 > j2) {
+                        if (9223372036854775807L > j2) {
                             jM2871 = j2;
                         }
                     } else {
-                        j = Long.MAX_VALUE;
+                        j = 9223372036854775807L;
                     }
                     if (jM2871 > 0) {
                         int i2 = debugStatus;

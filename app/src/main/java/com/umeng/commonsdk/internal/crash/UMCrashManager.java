@@ -21,7 +21,7 @@ public class UMCrashManager {
     private static Object mObject = new Object();
 
     public static void buildEnvelope(Context context, Object obj) {
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> UMCrashManager.buildEnvelope enter.");
+        UMRTLog.e("MobclickRT", "--->>> UMCrashManager.buildEnvelope enter.");
         try {
             synchronized (mObject) {
                 try {
@@ -35,10 +35,10 @@ public class UMCrashManager {
                         if (!file.isDirectory()) {
                             file.mkdir();
                         }
-                        d.a(context, str2, bv.aF, 10);
+                        d.a(context, str2, "c", 10);
                         try {
                             JSONObject jSONObject = new JSONObject();
-                            jSONObject.put(bv.aO, CM_VERSION);
+                            jSONObject.put("c_sdk_v", "2.0");
                             JSONObject jSONObject2 = new JSONObject();
                             jSONObject2.put("content", str);
                             jSONObject2.put("ts", System.currentTimeMillis());
@@ -46,7 +46,7 @@ public class UMCrashManager {
                             jSONObject3.put("crash", jSONObject2);
                             JSONObject jSONObject4 = new JSONObject();
                             jSONObject4.put("tp", jSONObject3);
-                            UMEnvelopeBuild.buildEnvelopeWithExtHeader(context, jSONObject, jSONObject4, UMServerURL.PATH_INNER_CRASH, bv.aF, CM_VERSION);
+                            UMEnvelopeBuild.buildEnvelopeWithExtHeader(context, jSONObject, jSONObject4, UMServerURL.PATH_INNER_CRASH, "c", "2.0");
                         } catch (JSONException unused) {
                         }
                     }
@@ -63,7 +63,7 @@ public class UMCrashManager {
             try {
                 if (!isReportCrash) {
                     isReportCrash = true;
-                    UMWorkDispatch.sendEvent(context, com.umeng.commonsdk.internal.a.u, b.a(context).a(), a.a(th));
+                    UMWorkDispatch.sendEvent(context, 32786, b.a(context).a(), a.a(th));
                 }
             } catch (Throwable th2) {
                 throw th2;

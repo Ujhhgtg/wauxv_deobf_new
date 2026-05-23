@@ -81,7 +81,7 @@ public class ObjectWriters {
     public static <T> ObjectWriter ofToInt(ToIntFunction toIntFunction) {
         ObjectWriterCreator objectWriterCreator = INSTANCE;
         Class cls = Integer.TYPE;
-        return objectWriterCreator.createObjectWriter(new FieldWriterInt32Value("toInt", 0, FieldInfo.VALUE_MASK, null, null, null, cls, cls, null, null, toIntFunction));
+        return objectWriterCreator.createObjectWriter(new FieldWriterInt32Value("toInt", 0, 281474976710656L, null, null, null, cls, cls, null, null, toIntFunction));
     }
 
     public static <T> ObjectWriter ofToIntArray(Function<Object, int[]> function) {
@@ -91,7 +91,7 @@ public class ObjectWriters {
     public static <T> ObjectWriter ofToLong(ToLongFunction toLongFunction) {
         ObjectWriterCreator objectWriterCreator = INSTANCE;
         Class cls = Long.TYPE;
-        return objectWriterCreator.createObjectWriter(new FieldWriterInt64Value("toLong", 0, FieldInfo.VALUE_MASK, null, null, null, cls, cls, null, null, toLongFunction));
+        return objectWriterCreator.createObjectWriter(new FieldWriterInt64Value("toLong", 0, 281474976710656L, null, null, null, cls, cls, null, null, toLongFunction));
     }
 
     public static <T> ObjectWriter ofToLongArray(Function<Object, long[]> function) {
@@ -104,7 +104,7 @@ public class ObjectWriters {
 
     public static <T> ObjectWriter ofToString(Function<T, String> function) {
         ObjectWriterCreator objectWriterCreator = INSTANCE;
-        return objectWriterCreator.createObjectWriter(objectWriterCreator.createFieldWriter((ObjectWriterProvider) null, (Class) null, "toString", 0, FieldInfo.VALUE_MASK, (String) null, (String) null, String.class, String.class, (Method) null, function));
+        return objectWriterCreator.createObjectWriter(objectWriterCreator.createFieldWriter((ObjectWriterProvider) null, (Class) null, "toString", 0, 281474976710656L, (String) null, (String) null, String.class, String.class, (Method) null, function));
     }
 
     public static <T> FieldWriter fieldWriter(String str, ToIntFunction<T> toIntFunction) {

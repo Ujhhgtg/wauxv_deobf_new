@@ -18,7 +18,7 @@ public final class C1702 extends C0558 {
     public final Throwable mo1948(C1705 c1705) {
         Throwable thM3443;
         C1004 c1004 = this.f5787;
-        c1004.getClass();
+        
         Object obj = C1705.f5796.get(c1004);
         if (!(obj instanceof C1704) || (thM3443 = ((C1704) obj).m3443()) == null) {
             return obj instanceof C0760 ? ((C0760) obj).f2861 : c1705.mo3440();

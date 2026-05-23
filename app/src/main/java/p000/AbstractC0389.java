@@ -290,25 +290,25 @@ public abstract class AbstractC0389 extends View {
         Paint paint = new Paint(1);
         this.f1801 = paint;
         Paint.Style style = Paint.Style.FILL;
-        paint.setStyle(style);
+        paint.setStyle(Paint.Style.FILL);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
         Paint paint2 = new Paint(1);
         this.f1802 = paint2;
-        paint2.setStyle(style);
+        paint2.setStyle(Paint.Style.FILL);
         Paint paint3 = new Paint();
         this.f1803 = paint3;
         Paint.Style style2 = Paint.Style.STROKE;
-        paint3.setStyle(style2);
+        paint3.setStyle(Paint.Style.STROKE);
         Paint.Cap cap = Paint.Cap.ROUND;
-        paint3.setStrokeCap(cap);
+        paint3.setStrokeCap(Paint.Cap.ROUND);
         Paint paint4 = new Paint();
         this.f1804 = paint4;
-        paint4.setStyle(style2);
-        paint4.setStrokeCap(cap);
+        paint4.setStyle(Paint.Style.STROKE);
+        paint4.setStrokeCap(Paint.Cap.ROUND);
         Paint paint5 = new Paint();
         this.f1805 = paint5;
-        paint5.setStyle(style);
-        paint5.setStrokeCap(cap);
+        paint5.setStyle(Paint.Style.FILL);
+        paint5.setStrokeCap(Paint.Cap.ROUND);
         Resources resources = context2.getResources();
         this.f1824 = resources.getDimensionPixelSize(R.dimen.mtrl_slider_widget_height);
         int dimensionPixelOffset = resources.getDimensionPixelOffset(R.dimen.mtrl_slider_track_side_padding);
@@ -429,9 +429,9 @@ public abstract class AbstractC0389 extends View {
         for (C3420 c3420 : this.f1810) {
             ViewGroup viewGroupM3185 = AbstractC1459.m3185(this);
             if (viewGroupM3185 == null) {
-                c3420.getClass();
+                
             } else {
-                c3420.getClass();
+                
                 int[] iArr = new int[2];
                 viewGroupM3185.getLocationOnScreen(iArr);
                 c3420.f10788 = iArr[0];
@@ -455,7 +455,7 @@ public abstract class AbstractC0389 extends View {
                 ((ViewOverlay) c1744.f5843).remove(c3420);
                 ViewGroup viewGroupM3186 = AbstractC1459.m3185(this);
                 if (viewGroupM3186 == null) {
-                    c3420.getClass();
+                    
                 } else {
                     viewGroupM3186.removeOnLayoutChangeListener(c3420.f10780);
                 }
@@ -517,11 +517,11 @@ public abstract class AbstractC0389 extends View {
             }
             int i7 = abstractC0389.f1828;
             float f11 = i7;
-            float f12 = (fArrM1553[i3] * f4) + f11;
+            float f12 = (fArrM1553[0] * f4) + f11;
             if (f12 > f11) {
                 int i8 = abstractC0389.f1832;
                 if (i8 > 0) {
-                    float f13 = abstractC0389.f1827 / f;
+                    float f13 = abstractC0389.f1827 / 2.0f;
                     float f14 = iM1548;
                     rectF.set(i7 - f13, f14 - f13, f12 - i8, f13 + f14);
                     abstractC0389.m1570(canvas2, paint, rectF, 2);
@@ -542,12 +542,12 @@ public abstract class AbstractC0389 extends View {
             float f16 = abstractC0389.f1828;
             float f17 = i9;
             float fM1574 = (fArrM1554[1] * f17) + f16;
-            float fM1575 = (fArrM1554[i3] * f17) + f16;
+            float fM1575 = (fArrM1554[0] * f17) + f16;
             int i10 = abstractC0389.f1832;
             Paint paint2 = abstractC0389.f1800;
             if (i10 > 0) {
                 int i11 = abstractC0389.f1843.size() == 1 ? abstractC0389.m1557() ? 3 : 2 : 4;
-                for (int i12 = i3; i12 < abstractC0389.f1843.size(); i12++) {
+                for (int i12 = 0; i12 < abstractC0389.f1843.size(); i12++) {
                     if (abstractC0389.f1843.size() > 1) {
                         if (i12 > 0) {
                             fM1575 = abstractC0389.m1574(((Float) abstractC0389.f1843.get(i12 - 1)).floatValue());
@@ -562,25 +562,25 @@ public abstract class AbstractC0389 extends View {
                     if (iM4759 != 1) {
                         if (iM4759 == 2) {
                             fM1575 += abstractC0389.f1832;
-                            fM1574 = (abstractC0389.f1827 / f) + fM1574;
+                            fM1574 = (abstractC0389.f1827 / 2.0f) + fM1574;
                         } else if (iM4759 == 3) {
                             f2 = abstractC0389.f1832;
                             fM1575 += f2;
                         }
                         if (fM1575 >= fM1574) {
                             float f18 = iM1548;
-                            float f19 = abstractC0389.f1827 / f;
+                            float f19 = abstractC0389.f1827 / 2.0f;
                             rectF.set(fM1575, f18 - f19, fM1574, f19 + f18);
                             abstractC0389.m1570(canvas2, paint2, rectF, i11);
                         }
                     } else {
-                        fM1575 -= abstractC0389.f1827 / f;
+                        fM1575 -= abstractC0389.f1827 / 2.0f;
                         f2 = abstractC0389.f1832;
                     }
                     fM1574 -= f2;
                     if (fM1575 >= fM1574) {
                         float f110 = iM1548;
-                        float f111 = abstractC0389.f1827 / f;
+                        float f111 = abstractC0389.f1827 / 2.0f;
                         rectF.set(fM1575, f110 - f111, fM1574, f111 + f110);
                         abstractC0389.m1570(canvas2, paint2, rectF, i11);
                     }
@@ -594,11 +594,11 @@ public abstract class AbstractC0389 extends View {
         }
         if (abstractC0389.f1848 && abstractC0389.f1846 > 0.0f) {
             float[] fArrM1555 = abstractC0389.m1553();
-            int iCeil = (int) Math.ceil(((abstractC0389.f1847.length / f) - 1.0f) * fArrM1555[i3]);
-            int iFloor = (int) Math.floor(((abstractC0389.f1847.length / f) - 1.0f) * fArrM1555[1]);
+            int iCeil = (int) Math.ceil(((abstractC0389.f1847.length / 2.0f) - 1.0f) * fArrM1555[0]);
+            int iFloor = (int) Math.floor(((abstractC0389.f1847.length / 2.0f) - 1.0f) * fArrM1555[1]);
             Paint paint3 = abstractC0389.f1803;
             if (iCeil > 0) {
-                canvas2.drawPoints(abstractC0389.f1847, i3, iCeil * 2, paint3);
+                canvas2.drawPoints(abstractC0389.f1847, 0, iCeil * 2, paint3);
             }
             if (iCeil <= iFloor) {
                 canvas2.drawPoints(abstractC0389.f1847, iCeil * 2, ((iFloor - iCeil) + 1) * 2, abstractC0389.f1804);
@@ -680,13 +680,13 @@ public abstract class AbstractC0389 extends View {
             return;
         }
         if (i == 1) {
-            m1559(Integer.MAX_VALUE);
+            m1559(2147483647);
         } else if (i == 2) {
-            m1559(Integer.MIN_VALUE);
+            m1559(-2147483648);
         } else if (i == 17) {
-            m1560(Integer.MAX_VALUE);
+            m1560(2147483647);
         } else if (i == 66) {
-            m1560(Integer.MIN_VALUE);
+            m1560(-2147483648);
         }
         c0387.m2947(this.f1845);
     }
@@ -717,15 +717,15 @@ public abstract class AbstractC0389 extends View {
                     boolValueOf = Boolean.TRUE;
                 } else if (i != 70) {
                     switch (i) {
-                        case Opcodes.ILOAD /* 21 */:
+                        case 21 /* 21 */:
                             m1560(-1);
                             boolValueOf = Boolean.TRUE;
                             break;
-                        case Opcodes.LLOAD /* 22 */:
+                        case 22 /* 22 */:
                             m1560(1);
                             boolValueOf = Boolean.TRUE;
                             break;
-                        case Opcodes.FLOAD /* 23 */:
+                        case 23 /* 23 */:
                             this.f1844 = this.f1845;
                             postInvalidate();
                             boolValueOf = Boolean.TRUE;
@@ -750,8 +750,8 @@ public abstract class AbstractC0389 extends View {
             fRound = f != 0.0f ? f : 1.0f;
             float f2 = (this.f1842 - this.f1841) / fRound;
             float f3 = 20;
-            if (f2 > f3) {
-                fRound *= Math.round(f2 / f3);
+            if (f2 > 20.0f) {
+                fRound *= Math.round(f2 / 20.0f);
             }
         } else {
             float f4 = this.f1846;
@@ -1085,12 +1085,12 @@ public abstract class AbstractC0389 extends View {
             iM3308 = AbstractC1574.m3308(getContext(), R.attr.motionDurationMedium4, 83);
             timeInterpolatorM3309 = AbstractC1574.m3309(getContext(), R.attr.motionEasingEmphasizedInterpolator, AbstractC0164.f1189);
         } else {
-            iM3308 = AbstractC1574.m3308(getContext(), R.attr.motionDurationShort3, Opcodes.LNEG);
+            iM3308 = AbstractC1574.m3308(getContext(), R.attr.motionDurationShort3, 117);
             timeInterpolatorM3309 = AbstractC1574.m3309(getContext(), R.attr.motionEasingEmphasizedAccelerateInterpolator, AbstractC0164.f1187);
         }
         valueAnimatorOfFloat.setDuration(iM3308);
         valueAnimatorOfFloat.setInterpolator(timeInterpolatorM3309);
-        valueAnimatorOfFloat.addUpdateListener(new C0385(i, this));
+        valueAnimatorOfFloat.addUpdateListener(new C0385(0, this));
         return valueAnimatorOfFloat;
     }
 
@@ -1224,7 +1224,7 @@ public abstract class AbstractC0389 extends View {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void m1560(int i) {
         if (m1557()) {
-            i = i == Integer.MIN_VALUE ? Integer.MAX_VALUE : -i;
+            i = i == -2147483648 ? 2147483647 : -i;
         }
         m1559(i);
     }
@@ -1289,7 +1289,7 @@ public abstract class AbstractC0389 extends View {
                         ((ViewOverlay) c1744.f5843).remove(c3420);
                         ViewGroup viewGroupM3187 = AbstractC1459.m3185(this);
                         if (viewGroupM3187 == null) {
-                            c3420.getClass();
+                            
                         } else {
                             viewGroupM3187.removeOnLayoutChangeListener(c3420.f10780);
                         }
@@ -1330,9 +1330,9 @@ public abstract class AbstractC0389 extends View {
             TypedValue typedValueM4111 = AbstractC2207.m4111(context2, R.attr.colorOnBackground, C3420.class.getCanonicalName());
             int i2 = typedValueM4111.resourceId;
             int color = i2 != 0 ? context2.getColor(i2) : typedValueM4111.data;
-            TypedValue typedValueM4112 = AbstractC2207.m4111(context2, android.R.attr.colorBackground, C3420.class.getCanonicalName());
+            TypedValue typedValueM4112 = AbstractC2207.m4111(context2, 16842801, C3420.class.getCanonicalName());
             int i3 = typedValueM4112.resourceId;
-            c3421.m3716(ColorStateList.valueOf(typedArrayM5082.getColor(7, AbstractC0752.m2224(AbstractC0752.m2226(color, Opcodes.IFEQ), AbstractC0752.m2226(i3 != 0 ? context2.getColor(i3) : typedValueM4112.data, 229)))));
+            c3421.m3716(ColorStateList.valueOf(typedArrayM5082.getColor(7, AbstractC0752.m2224(AbstractC0752.m2226(color, 153), AbstractC0752.m2226(i3 != 0 ? context2.getColor(i3) : typedValueM4112.data, 229)))));
             TypedValue typedValueM4113 = AbstractC2207.m4111(context2, R.attr.colorSurface, C3420.class.getCanonicalName());
             int i4 = typedValueM4113.resourceId;
             c3421.m3718(ColorStateList.valueOf(i4 != 0 ? context2.getColor(i4) : typedValueM4113.data));
@@ -1363,7 +1363,7 @@ public abstract class AbstractC0389 extends View {
             }
             Iterator it2 = this.f1843.iterator();
             if (it2.hasNext()) {
-                ((Float) it2.next()).getClass();
+                
                 throw null;
             }
         }
@@ -1404,7 +1404,7 @@ public abstract class AbstractC0389 extends View {
             if (it.next() != null) {
                 throw new ClassCastException();
             }
-            ((Float) this.f1843.get(i)).getClass();
+            
             throw null;
         }
         AccessibilityManager accessibilityManager = this.f1807;

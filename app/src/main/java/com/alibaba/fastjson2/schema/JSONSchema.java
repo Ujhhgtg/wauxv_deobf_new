@@ -154,7 +154,7 @@ public abstract class JSONSchema {
                     break;
                 case 1958052158:
                     if (str.equals("integer")) {
-                        b = ek.k;
+                        b = 13;
                     }
                     break;
             }
@@ -178,7 +178,7 @@ public abstract class JSONSchema {
                 case 11:
                     return Array;
                 case 10:
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     return Boolean;
                 default:
                     return null;
@@ -189,7 +189,7 @@ public abstract class JSONSchema {
     public JSONSchema(JSONObject jSONObject) {
         this.title = jSONObject.getString("title");
         this.description = jSONObject.getString("description");
-        this.customErrorMessage = jSONObject.getString(g.U);
+        this.customErrorMessage = jSONObject.getString("error");
     }
 
     public static AllOf allOf(JSONObject jSONObject, Class cls) {
@@ -295,7 +295,7 @@ public abstract class JSONSchema {
             return new Not(null, new Type[]{Type.Any}, null);
         }
         if (jSONObject2.size() == 1) {
-            Object obj2 = jSONObject2.get(g.y);
+            Object obj2 = jSONObject2.get("type");
             if (obj2 instanceof JSONArray) {
                 JSONArray jSONArray = (JSONArray) obj2;
                 Type[] typeArr = new Type[jSONArray.size()];
@@ -409,7 +409,7 @@ public abstract class JSONSchema {
         if (obj instanceof Collection) {
             Collection collection = (Collection) obj;
             if (collection.isEmpty()) {
-                return new ArraySchema(JSONObject.of(g.y, (Object) "array"), jSONSchema);
+                return new ArraySchema(JSONObject.of("type", (Object) "array"), jSONSchema);
             }
             boolean z = true;
             Object obj2 = null;
@@ -427,7 +427,7 @@ public abstract class JSONSchema {
             }
             if (z) {
                 JSONSchema jSONSchemaOfValue = Map.class.isAssignableFrom(cls) ? ofValue(obj2, jSONSchema) : of(cls, jSONSchema);
-                ArraySchema arraySchema = new ArraySchema(JSONObject.of(g.y, (Object) "array"), jSONSchema);
+                ArraySchema arraySchema = new ArraySchema(JSONObject.of("type", (Object) "array"), jSONSchema);
                 arraySchema.itemSchema = jSONSchemaOfValue;
                 return arraySchema;
             }
@@ -435,7 +435,7 @@ public abstract class JSONSchema {
         if (!(obj instanceof Map)) {
             return of(obj.getClass(), jSONSchema);
         }
-        ObjectSchema objectSchema = new ObjectSchema(JSONObject.of(g.y, (Object) "object"), jSONSchema);
+        ObjectSchema objectSchema = new ObjectSchema(JSONObject.of("type", (Object) "object"), jSONSchema);
         for (Map.Entry entry : ((Map) obj).entrySet()) {
             Object key = entry.getKey();
             Object value = entry.getValue();
@@ -610,7 +610,7 @@ public abstract class JSONSchema {
             java.lang.reflect.Type[] actualTypeArguments = parameterizedType.getActualTypeArguments();
             boolean z = rawType instanceof Class;
             if (z && Collection.class.isAssignableFrom((Class) rawType)) {
-                ArraySchema arraySchema = new ArraySchema(JSONObject.of(g.y, (Object) "array"), jSONSchema);
+                ArraySchema arraySchema = new ArraySchema(JSONObject.of("type", (Object) "array"), jSONSchema);
                 if (actualTypeArguments.length == 1) {
                     java.lang.reflect.Type type2 = actualTypeArguments[0];
                     if (jSONSchema == null) {
@@ -621,12 +621,12 @@ public abstract class JSONSchema {
                 return arraySchema;
             }
             if (z && Map.class.isAssignableFrom((Class) rawType)) {
-                return new ObjectSchema(JSONObject.of(g.y, (Object) "object"), jSONSchema);
+                return new ObjectSchema(JSONObject.of("type", (Object) "object"), jSONSchema);
             }
         }
         if (type instanceof GenericArrayType) {
             java.lang.reflect.Type genericComponentType = ((GenericArrayType) type).getGenericComponentType();
-            ArraySchema arraySchema2 = new ArraySchema(JSONObject.of(g.y, (Object) "array"), jSONSchema);
+            ArraySchema arraySchema2 = new ArraySchema(JSONObject.of("type", (Object) "array"), jSONSchema);
             if (jSONSchema == null) {
                 jSONSchema = arraySchema2;
             }
@@ -637,7 +637,7 @@ public abstract class JSONSchema {
             if (type != Float.TYPE && type != Double.TYPE && type != Float.class && type != Double.class && type != BigDecimal.class) {
                 if (type != Boolean.TYPE && type != Boolean.class && type != AtomicBoolean.class) {
                     if (type == String.class) {
-                        return new StringSchema(JSONObject.of(g.y, (Object) "string"));
+                        return new StringSchema(JSONObject.of("type", (Object) "string"));
                     }
                     if (type instanceof Class) {
                         Class cls = (Class) type;
@@ -647,11 +647,11 @@ public abstract class JSONSchema {
                             for (int i = 0; i < enumConstants.length; i++) {
                                 strArr[i] = ((Enum) enumConstants[i]).name();
                             }
-                            return new StringSchema(JSONObject.of(g.y, (Object) "string", "enum", (Object) strArr));
+                            return new StringSchema(JSONObject.of("type", (Object) "string", "enum", (Object) strArr));
                         }
                         if (cls.isArray()) {
                             Class<?> componentType = cls.getComponentType();
-                            ArraySchema arraySchema3 = new ArraySchema(JSONObject.of(g.y, (Object) "array"), jSONSchema);
+                            ArraySchema arraySchema3 = new ArraySchema(JSONObject.of("type", (Object) "array"), jSONSchema);
                             if (jSONSchema == null) {
                                 jSONSchema = arraySchema3;
                             }
@@ -659,10 +659,10 @@ public abstract class JSONSchema {
                             return arraySchema3;
                         }
                         if (Map.class.isAssignableFrom(cls)) {
-                            return new ObjectSchema(JSONObject.of(g.y, (Object) "object"), jSONSchema);
+                            return new ObjectSchema(JSONObject.of("type", (Object) "object"), jSONSchema);
                         }
                         if (Collection.class.isAssignableFrom(cls)) {
-                            return new ArraySchema(JSONObject.of(g.y, (Object) "array"), jSONSchema);
+                            return new ArraySchema(JSONObject.of("type", (Object) "array"), jSONSchema);
                         }
                     }
                     ObjectReader objectReader = JSONFactory.getDefaultObjectReaderProvider().getObjectReader(type);
@@ -670,17 +670,17 @@ public abstract class JSONSchema {
                         ObjectReaderAdapter objectReaderAdapter = (ObjectReaderAdapter) objectReader;
                         JSONArray jSONArray = new JSONArray();
                         objectReaderAdapter.apply(new C0413(1, jSONArray));
-                        ObjectSchema objectSchema = new ObjectSchema(JSONObject.of(g.y, (Object) "object", "required", (Object) jSONArray));
+                        ObjectSchema objectSchema = new ObjectSchema(JSONObject.of("type", (Object) "object", "required", (Object) jSONArray));
                         objectReaderAdapter.apply(new C0411(objectSchema, 6, jSONSchema));
                         return objectSchema;
                     }
                     throw new JSONException("TODO : " + type);
                 }
-                return new BooleanSchema(JSONObject.of(g.y, (Object) "boolean"));
+                return new BooleanSchema(JSONObject.of("type", (Object) "boolean"));
             }
-            return new NumberSchema(JSONObject.of(g.y, (Object) "number"));
+            return new NumberSchema(JSONObject.of("type", (Object) "number"));
         }
-        return new IntegerSchema(JSONObject.of(g.y, (Object) "integer"));
+        return new IntegerSchema(JSONObject.of("type", (Object) "integer"));
     }
 
     public void addResolveTask(UnresolvedReference.ResolveTask resolveTask) {
@@ -693,16 +693,16 @@ public abstract class JSONSchema {
         Map<String, JSONSchema> map3;
         JSONSchema jSONSchemaPutIfAbsent;
         int i = 0;
-        if (jSONObject.size() == 1 && jSONObject.isArray(g.y)) {
-            JSONArray jSONArray = jSONObject.getJSONArray(g.y);
+        if (jSONObject.size() == 1 && jSONObject.isArray("type")) {
+            JSONArray jSONArray = jSONObject.getJSONArray("type");
             JSONSchema[] jSONSchemaArr = new JSONSchema[jSONArray.size()];
             while (i < jSONArray.size()) {
-                jSONSchemaArr[i] = of(JSONObject.of(g.y, jSONArray.get(i)));
+                jSONSchemaArr[i] = of(JSONObject.of("type", jSONArray.get(i)));
                 i++;
             }
             return new AnyOf(jSONSchemaArr);
         }
-        Type typeOf = Type.of(jSONObject.getString(g.y));
+        Type typeOf = Type.of(jSONObject.getString("type"));
         if (typeOf == null) {
             Object[] objArr = (Object[]) jSONObject.getObject("enum", Object[].class, new JSONReader.Feature[0]);
             if (objArr != null) {
@@ -725,8 +725,8 @@ public abstract class JSONSchema {
                     if (string != null && !string.isEmpty()) {
                         if ("http://json-schema.org/draft-04/schema#".equals(string)) {
                             Map<String, JSONSchema> map4 = CACHE;
-                            JSONSchema jSONSchemaOf = map4.get(string);
-                            return (jSONSchemaOf != null || (jSONSchemaPutIfAbsent = map4.putIfAbsent(string, (jSONSchemaOf = of(JSON.parseObject(JSONSchema.class.getClassLoader().getResource("schema/draft-04.json")), (JSONSchema) null)))) == null) ? jSONSchemaOf : jSONSchemaPutIfAbsent;
+                            JSONSchema jSONSchemaOf = map4.get("http://json-schema.org/draft-04/schema#");
+                            return (jSONSchemaOf != null || (jSONSchemaPutIfAbsent = map4.putIfAbsent("http://json-schema.org/draft-04/schema#", (jSONSchemaOf = of(JSON.parseObject(JSONSchema.class.getClassLoader().getResource("schema/draft-04.json")), (JSONSchema) null)))) == null) ? jSONSchemaOf : jSONSchemaPutIfAbsent;
                         }
                         if ("#".equals(string)) {
                             return jSONSchema;
@@ -810,7 +810,7 @@ public abstract class JSONSchema {
                                     return Any.INSTANCE;
                                 }
                                 if (jSONObject.size() == 1) {
-                                    Object obj4 = jSONObject.get(g.y);
+                                    Object obj4 = jSONObject.get("type");
                                     if (obj4 instanceof JSONArray) {
                                         JSONArray jSONArray2 = (JSONArray) obj4;
                                         JSONSchema[] jSONSchemaArr3 = new JSONSchema[jSONArray2.size()];
@@ -818,25 +818,25 @@ public abstract class JSONSchema {
                                             Type typeOf2 = Type.of(jSONArray2.getString(i));
                                             switch (typeOf2) {
                                                 case Null:
-                                                    jSONSchemaArr3[i] = new NullSchema(JSONObject.of(g.y, (Object) "null"));
+                                                    jSONSchemaArr3[i] = new NullSchema(JSONObject.of("type", (Object) "null"));
                                                     break;
                                                 case Boolean:
-                                                    jSONSchemaArr3[i] = new BooleanSchema(JSONObject.of(g.y, (Object) "boolean"));
+                                                    jSONSchemaArr3[i] = new BooleanSchema(JSONObject.of("type", (Object) "boolean"));
                                                     break;
                                                 case Object:
-                                                    jSONSchemaArr3[i] = new ObjectSchema(JSONObject.of(g.y, (Object) "object"));
+                                                    jSONSchemaArr3[i] = new ObjectSchema(JSONObject.of("type", (Object) "object"));
                                                     break;
                                                 case Array:
-                                                    jSONSchemaArr3[i] = new ArraySchema(JSONObject.of(g.y, (Object) "array"), null);
+                                                    jSONSchemaArr3[i] = new ArraySchema(JSONObject.of("type", (Object) "array"), null);
                                                     break;
                                                 case Number:
-                                                    jSONSchemaArr3[i] = new NumberSchema(JSONObject.of(g.y, (Object) "number"));
+                                                    jSONSchemaArr3[i] = new NumberSchema(JSONObject.of("type", (Object) "number"));
                                                     break;
                                                 case String:
-                                                    jSONSchemaArr3[i] = new StringSchema(JSONObject.of(g.y, (Object) "string"));
+                                                    jSONSchemaArr3[i] = new StringSchema(JSONObject.of("type", (Object) "string"));
                                                     break;
                                                 case Integer:
-                                                    jSONSchemaArr3[i] = new IntegerSchema(JSONObject.of(g.y, (Object) "integer"));
+                                                    jSONSchemaArr3[i] = new IntegerSchema(JSONObject.of("type", (Object) "integer"));
                                                     break;
                                                 default:
                                                     throw new JSONSchemaValidException("not support type : " + typeOf2);
@@ -846,8 +846,8 @@ public abstract class JSONSchema {
                                         return new AnyOf(jSONSchemaArr3);
                                     }
                                 }
-                                if (jSONObject.getString(g.y) != null) {
-                                    throw new JSONSchemaValidException("not support type : " + jSONObject.getString(g.y));
+                                if (jSONObject.getString("type") != null) {
+                                    throw new JSONSchemaValidException("not support type : " + jSONObject.getString("type"));
                                 }
                                 throw new JSONSchemaValidException("type required");
                             }

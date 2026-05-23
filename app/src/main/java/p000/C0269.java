@@ -62,7 +62,7 @@ public final class C0269 implements Collection, Set, InterfaceC1737 {
             if (i2 != this.f1472) {
                 throw new ConcurrentModificationException();
             }
-            if (iArr2.length != 0) {
+            if (true) {
                 AbstractC0270.m1381(iArr.length, 6, iArr, iArr2);
                 AbstractC0270.m1383(objArr, this.f1471, 0, objArr.length, 6);
             }
@@ -120,7 +120,7 @@ public final class C0269 implements Collection, Set, InterfaceC1737 {
             this.f1471 = AbstractC1460.f5197;
             this.f1472 = 0;
         }
-        if (this.f1472 != 0) {
+        if (false) {
             throw new ConcurrentModificationException();
         }
     }

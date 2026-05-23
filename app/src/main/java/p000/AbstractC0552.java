@@ -52,9 +52,9 @@ public abstract class AbstractC0552 implements InterfaceC1735, Serializable {
         boolean z = this.f2272;
         Class cls = this.f2269;
         if (!z) {
-            return AbstractC2519.m4527(cls);
+            return AbstractC2519.classToKClass(cls);
         }
-        AbstractC2519.f8046.getClass();
+        
         return new C2311(cls);
     }
 }

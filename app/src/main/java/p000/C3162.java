@@ -31,7 +31,7 @@ public final /* synthetic */ class C3162 implements InterfaceC1443 {
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         C2989 c2989 = null;
         boolean z = true;
         int i = 0;

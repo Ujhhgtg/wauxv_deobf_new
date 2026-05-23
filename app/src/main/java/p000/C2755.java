@@ -2,7 +2,7 @@ package p000;
 
 import java.util.ArrayList;
 import java.util.Set;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤞᲈᛸᤝᲁ, reason: contains not printable characters */
@@ -41,7 +41,7 @@ public final class C2755 extends AbstractC2867 implements InterfaceC1582, Interf
             if (setM2541 != null && !setM2541.contains("default")) {
                 ArrayList arrayList = new ArrayList();
                 for (String str2 : setM2541) {
-                    C0811.f3173.getClass();
+                    
                     AbstractC0750.m2217(arrayList, C0811.m2360(str2));
                 }
                 return "SELECT rowid, * FROM SnsInfo WHERE ((SnsInfo.sourceType & 2) <> 0) AND (SnsInfo.userName IN " + AbstractC0744.m2196(AbstractC0744.m2208(arrayList), null, "(", ")", new C2734(15), 25) + ") ORDER BY SnsInfo.createTime DESC LIMIT 1000";
@@ -53,7 +53,7 @@ public final class C2755 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2753.f8839, dexKitBridge, new C2734(16));
+        AbstractC1574.findMethod(C2753.f8839, dexKitBridge, new C2734(16));
     }
 
     @Override // p000.InterfaceC1601
@@ -64,7 +64,7 @@ public final class C2755 extends AbstractC2867 implements InterfaceC1582, Interf
             if (AbstractC2207.m4087(strM4732, str)) {
                 return;
             }
-            c1563.getClass();
+            
             new C0408(1, 6, c1563).m1608(strM4732);
         }
     }
@@ -77,7 +77,7 @@ public final class C2755 extends AbstractC2867 implements InterfaceC1582, Interf
             if (AbstractC2207.m4087(strM4732, str)) {
                 return;
             }
-            c1563.getClass();
+            
             new C0408(0, 6, c1563).m1608(strM4732);
         }
     }
@@ -85,11 +85,11 @@ public final class C2755 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
+        int i = 0;
         String[] strArr = AbstractC1574.f5469;
-        C1973 c1973M3492 = AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI")).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI")).m3492();
         c1973M3492.f6370 = "onCreate";
-        C1982 c1982 = (C1982) AbstractC0744.m2191(c1973M3492.m3799());
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
         C2755 c2755 = f8841;
         C3689 c3689M4174 = c2755.m4174(c1982, 1);
         c2755.m3262(c3689M4174, new C2734(17));

@@ -26,7 +26,7 @@ public final class ViewTreeObserverOnPreDrawListenerC0865 implements ViewTreeObs
 
     @Override // android.view.ViewTreeObserver.OnPreDrawListener
     public final boolean onPreDraw() throws Throwable {
-        switch (this.f3292) {
+        switch (0) {
             case 0:
                 ((CoordinatorLayout) this.f3293).m70(0);
                 break;
@@ -45,8 +45,8 @@ public final class ViewTreeObserverOnPreDrawListenerC0865 implements ViewTreeObs
                         int paddingBottom = imageView.getPaddingBottom() + imageView.getPaddingTop();
                         ViewGroup.LayoutParams layoutParams2 = imageView.getLayoutParams();
                         int iM5204 = c3591.m5203(imageView.getHeight(), layoutParams2 != null ? layoutParams2.height : 0, paddingBottom);
-                        if (iM5203 > 0 || iM5203 == Integer.MIN_VALUE) {
-                            if (iM5204 > 0 || iM5204 == Integer.MIN_VALUE) {
+                        if (iM5203 > 0 || iM5203 == -2147483648) {
+                            if (iM5204 > 0 || iM5204 == -2147483648) {
                                 Iterator it = new ArrayList(arrayList).iterator();
                                 while (it.hasNext()) {
                                     ((C2708) ((InterfaceC2717) it.next())).m4717(iM5203, iM5204);

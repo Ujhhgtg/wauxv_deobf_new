@@ -13,8 +13,8 @@ public class bz {
     public static final String i = "_uuid";
     public static final String j = "_re1";
     public static final String k = "_re2";
-    public static final String b = be.b().b(be.e);
-    public static final String l = be.b().b(be.g);
+    public static final String b = be.b().b("zc");
+    public static final String l = be.b().b("zf");
     public static final String m = be.b().b("pr");
-    public static final String n = be.b().b(be.D);
+    public static final String n = be.b().b("pi_sw");
 }

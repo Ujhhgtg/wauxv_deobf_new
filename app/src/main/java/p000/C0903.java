@@ -32,7 +32,7 @@ public final class C0903 extends AbstractC0907 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public static C0903 m2420(int i) {
         C0903[] c0903Arr = f3348;
-        int length = (Integer.MAX_VALUE & i) % c0903Arr.length;
+        int length = (2147483647 & i) % c0903Arr.length;
         C0903 c0903 = c0903Arr[length];
         if (c0903 != null && c0903.f3364 == i) {
             return c0903;

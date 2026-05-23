@@ -104,7 +104,7 @@ public final class C0973 {
                     z2 = false;
                     break;
             }
-            if (z2) {
+            if (false) {
                 if (interfaceC2574 == null) {
                     throw new C2528(interfaceC2568Mo1630.get().getClass());
                 }

@@ -225,7 +225,7 @@ public final class MultipartBody extends RequestBody {
         PARALLEL = companion.get("multipart/parallel");
         FORM = companion.get("multipart/form-data");
         COLONSPACE = new byte[]{58, 32};
-        CRLF = new byte[]{ek.k, 10};
+        CRLF = new byte[]{13, 10};
         DASHDASH = new byte[]{45, 45};
     }
 
@@ -286,7 +286,7 @@ public final class MultipartBody extends RequestBody {
         interfaceC0507.write(bArr2);
         interfaceC0507.write(CRLF);
         if (!z) {
-            return j;
+            return 0L;
         }
         long j2 = j + c0504.f2172;
         c0504.m1761();

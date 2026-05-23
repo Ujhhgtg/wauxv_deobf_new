@@ -40,7 +40,7 @@ public final /* synthetic */ class RunnableC1324 implements Runnable {
             case 2:
                 ExecutorC1780 executorC1780 = (ExecutorC1780) this.f4779;
                 Runnable runnable = (Runnable) this.f4780;
-                executorC1780.getClass();
+                
                 try {
                     runnable.run();
                     return;
@@ -56,7 +56,6 @@ public final /* synthetic */ class RunnableC1324 implements Runnable {
                 Context context = editText.getContext();
                 String[] strArr = AbstractC1574.f5469;
                 Object systemService = context.getSystemService("input_method");
-                "null cannot be cast to non-null type android.view.inputmethod.InputMethodManager";
                 InputMethodManager inputMethodManager = (InputMethodManager) systemService;
                 EditText editText2 = c2675.f8613;
                 if (editText2 == null) {

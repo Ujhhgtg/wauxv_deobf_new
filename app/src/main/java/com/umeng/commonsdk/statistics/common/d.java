@@ -34,7 +34,7 @@ public class d {
             String str;
             JSONObject jSONObjectD;
             JSONArray jSONArray = new JSONArray();
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "[iReferrer] start");
+            UMRTLog.i("MobclickRT", "[iReferrer] start");
             long jCurrentTimeMillis = System.currentTimeMillis();
             try {
                 if (f() || bt.c()) {
@@ -67,14 +67,14 @@ public class d {
                     MLog.i("[iReferrer] get:" + jSONObject);
                 }
             } catch (Throwable th) {
-                UMRTLog.se(UMRTLog.RTLOG_TAG, "[iReferrer] failed: " + th.getMessage());
+                UMRTLog.se("MobclickRT", "[iReferrer] failed: " + th.getMessage());
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "[iReferrer] result: " + jSONArray + " cost: " + (System.currentTimeMillis() - jCurrentTimeMillis) + "ms");
+            UMRTLog.i("MobclickRT", "[iReferrer] result: " + jSONArray + " cost: " + (System.currentTimeMillis() - jCurrentTimeMillis) + "ms");
             return jSONArray;
         }
 
         private JSONObject c(Context context) {
-            Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, JSONB.Constants.BC_INT32_NUM_MAX, JSONB.Constants.BC_INT32_NUM_MAX, 99, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, 46, 104, JSONB.Constants.BC_STR_ASCII_FIX_32, 104, 111, 110, 111, 114, 46, 97, 112, 112, JSONB.Constants.BC_STR_ASCII_FIX_36, 97, 114, 107, 101, 116, 46, 99, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, JSONB.Constants.BC_STR_ASCII_FIX_36, 111, 110, 100, 97, 116, 97, JSONB.Constants.BC_INT32_NUM_MAX, JSONB.Constants.BC_STR_ASCII_FIX_32, 116, 101, JSONB.Constants.BC_STR_ASCII_FIX_36, JSONB.Constants.BC_INT32_NUM_MAX, 119, JSONB.Constants.BC_STR_ASCII_FIX_32, 115, 101, 112, 97, 99, 107, 97, 103, 101}));
+            Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, 47, 47, 99, 111, 109, 46, 104, 105, 104, 111, 110, 111, 114, 46, 97, 112, 112, 109, 97, 114, 107, 101, 116, 46, 99, 111, 109, 109, 111, 110, 100, 97, 116, 97, 47, 105, 116, 101, 109, 47, 119, 105, 115, 101, 112, 97, 99, 107, 97, 103, 101}));
             String[] strArr = {context.getPackageName()};
             if (a(context, uri.getAuthority())) {
                 return a(context, uri, strArr);
@@ -83,7 +83,7 @@ public class d {
         }
 
         private JSONObject d(Context context) {
-            Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, JSONB.Constants.BC_INT32_NUM_MAX, JSONB.Constants.BC_INT32_NUM_MAX, 99, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, 46, 104, 117, 97, 119, 101, JSONB.Constants.BC_STR_ASCII_FIX_32, 46, 97, 112, 112, JSONB.Constants.BC_STR_ASCII_FIX_36, 97, 114, 107, 101, 116, 46, 99, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, JSONB.Constants.BC_STR_ASCII_FIX_36, 111, 110, 100, 97, 116, 97, JSONB.Constants.BC_INT32_NUM_MAX, JSONB.Constants.BC_STR_ASCII_FIX_32, 116, 101, JSONB.Constants.BC_STR_ASCII_FIX_36, JSONB.Constants.BC_INT32_NUM_MAX, 53}));
+            Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, 47, 47, 99, 111, 109, 46, 104, 117, 97, 119, 101, 105, 46, 97, 112, 112, 109, 97, 114, 107, 101, 116, 46, 99, 111, 109, 109, 111, 110, 100, 97, 116, 97, 47, 105, 116, 101, 109, 47, 53}));
             String[] strArr = {context.getPackageName()};
             if (a(context, uri.getAuthority())) {
                 return a(context, uri, strArr);
@@ -92,7 +92,7 @@ public class d {
         }
 
         private JSONObject e(Context context) {
-            Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, JSONB.Constants.BC_INT32_NUM_MAX, JSONB.Constants.BC_INT32_NUM_MAX, 99, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, 46, JSONB.Constants.BC_STR_ASCII_FIX_MAX, JSONB.Constants.BC_STR_ASCII_FIX_32, 97, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, JSONB.Constants.BC_STR_ASCII_FIX_32, 46, JSONB.Constants.BC_STR_ASCII_FIX_36, 97, 114, 107, 101, 116, 46, 112, 114, 111, 118, JSONB.Constants.BC_STR_ASCII_FIX_32, 100, 101, 114, 46, JSONB.Constants.BC_INT32_SHORT_ZERO, JSONB.Constants.BC_STR_ASCII_FIX_32, 114, 101, 99, 116, JSONB.Constants.BC_STR_ASCII_FIX_4, 97, JSONB.Constants.BC_STR_ASCII_FIX_32, 108, 80, 114, 111, 118, JSONB.Constants.BC_STR_ASCII_FIX_32, 100, 101, 114, JSONB.Constants.BC_INT32_NUM_MAX, 114, 101, 102, 101, 114, 114, 101, 114, JSONB.Constants.BC_INT32_NUM_MAX, 118, 51}));
+            Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, 47, 47, 99, 111, 109, 46, 120, 105, 97, 111, 109, 105, 46, 109, 97, 114, 107, 101, 116, 46, 112, 114, 111, 118, 105, 100, 101, 114, 46, 68, 105, 114, 101, 99, 116, 77, 97, 105, 108, 80, 114, 111, 118, 105, 100, 101, 114, 47, 114, 101, 102, 101, 114, 114, 101, 114, 47, 118, 51}));
             if (a(context, uri.getAuthority())) {
                 return a(context, uri, null);
             }
@@ -101,12 +101,12 @@ public class d {
 
         private JSONObject f(Context context) {
             try {
-                Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, JSONB.Constants.BC_INT32_NUM_MAX, JSONB.Constants.BC_INT32_NUM_MAX, 99, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, 46, 98, 98, 107, 46, 97, 112, 112, 115, 116, 111, 114, 101, 46, 112, 114, 111, 118, JSONB.Constants.BC_STR_ASCII_FIX_32, 100, 101, 114, 46, 97, 112, 112, 115, 116, 97, 116, 117, 115}));
+                Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, 47, 47, 99, 111, 109, 46, 98, 98, 107, 46, 97, 112, 112, 115, 116, 111, 114, 101, 46, 112, 114, 111, 118, 105, 100, 101, 114, 46, 97, 112, 112, 115, 116, 97, 116, 117, 115}));
                 if (!a(context, uri.getAuthority())) {
                     return null;
                 }
                 Bundle bundle = new Bundle();
-                bundle.putString(bv.o, context.getPackageName());
+                bundle.putString("package_name", context.getPackageName());
                 Bundle bundleCall = context.getContentResolver().call(uri, "read_channel", (String) null, bundle);
                 if (bundleCall != null && !bundleCall.isEmpty()) {
                     JSONObject jSONObject = new JSONObject();
@@ -120,7 +120,7 @@ public class d {
                 }
                 return null;
             } catch (Throwable th) {
-                UMRTLog.se(UMRTLog.RTLOG_TAG, "[iReferrer] failed: " + th.getMessage());
+                UMRTLog.se("MobclickRT", "[iReferrer] failed: " + th.getMessage());
                 return null;
             }
         }
@@ -128,7 +128,7 @@ public class d {
         private JSONObject g(Context context) {
             Bundle bundleCall;
             try {
-                Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, JSONB.Constants.BC_INT32_NUM_MAX, JSONB.Constants.BC_INT32_NUM_MAX, 99, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, 46, 104, 101, JSONB.Constants.BC_STR_ASCII, 116, 97, 112, 46, JSONB.Constants.BC_STR_ASCII_FIX_36, 97, 114, 107, 101, 116, 46, 84, 114, 97, 99, 107, 80, 114, 111, 118, JSONB.Constants.BC_STR_ASCII_FIX_32, 100, 101, 114}));
+                Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, 47, 47, 99, 111, 109, 46, 104, 101, 121, 116, 97, 112, 46, 109, 97, 114, 107, 101, 116, 46, 84, 114, 97, 99, 107, 80, 114, 111, 118, 105, 100, 101, 114}));
                 if (a(context, uri.getAuthority()) && (bundleCall = context.getContentResolver().call(uri, "getTrackInfo", (String) null, (Bundle) null)) != null && !bundleCall.isEmpty()) {
                     JSONObject jSONObject = new JSONObject();
                     for (String str : bundleCall.keySet()) {
@@ -141,13 +141,13 @@ public class d {
                 }
                 return null;
             } catch (Throwable th) {
-                UMRTLog.se(UMRTLog.RTLOG_TAG, "[iReferrer] failed: " + th.getMessage());
+                UMRTLog.se("MobclickRT", "[iReferrer] failed: " + th.getMessage());
                 return null;
             }
         }
 
         private JSONObject h(Context context) {
-            Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, JSONB.Constants.BC_INT32_NUM_MAX, JSONB.Constants.BC_INT32_NUM_MAX, 99, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, 46, 115, 101, 99, 46, 97, 110, 100, 114, 111, JSONB.Constants.BC_STR_ASCII_FIX_32, 100, 46, 97, 112, 112, 46, 115, 97, JSONB.Constants.BC_STR_ASCII_FIX_36, 115, 117, 110, 103, 97, 112, 112, 115, 46, 114, 101, 102, 101, 114, 114, 101, 114}));
+            Uri uri = Uri.parse(new String(new byte[]{99, 111, 110, 116, 101, 110, 116, 58, 47, 47, 99, 111, 109, 46, 115, 101, 99, 46, 97, 110, 100, 114, 111, 105, 100, 46, 97, 112, 112, 46, 115, 97, 109, 115, 117, 110, 103, 97, 112, 112, 115, 46, 114, 101, 102, 101, 114, 114, 101, 114}));
             if (a(context, uri.getAuthority())) {
                 return a(context, uri, null);
             }
@@ -167,10 +167,10 @@ public class d {
                 return null;
             }
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(context);
-            String string = sharedPreferences.getString(a, null);
+            String string = sharedPreferences.getString("ins_referrer", null);
             if (string != null) {
                 String str = new String(Base64.decode(string, 2));
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "[iReferrer] cache: ".concat(str));
+                UMRTLog.i("MobclickRT", "[iReferrer] cache: ".concat(str));
                 try {
                     JSONObject jSONObject = new JSONObject(str);
                     if (jSONObject.optInt("ver", 0) == 1) {
@@ -192,9 +192,9 @@ public class d {
                 JSONObject jSONObject2 = new JSONObject();
                 jSONObject2.put("ver", 1);
                 jSONObject2.put("ref", this.b);
-                sharedPreferences.edit().putString(a, Base64.encodeToString(jSONObject2.toString().getBytes(), 2)).apply();
+                sharedPreferences.edit().putString("ins_referrer", Base64.encodeToString(jSONObject2.toString().getBytes(), 2)).apply();
             } catch (Throwable th) {
-                UMRTLog.se(UMRTLog.RTLOG_TAG, "[iReferrer] failed: " + th.getMessage());
+                UMRTLog.se("MobclickRT", "[iReferrer] failed: " + th.getMessage());
             }
             if (this.b.length() > 0) {
                 return this.b;
@@ -249,9 +249,9 @@ public class d {
                     } catch (Throwable th2) {
                         th = th2;
                         try {
-                            UMRTLog.se(UMRTLog.RTLOG_TAG, "[iReferrer] failed: " + th.getMessage());
+                            UMRTLog.se("MobclickRT", "[iReferrer] failed: " + th.getMessage());
                         } finally {
-                            if (cursorQuery != null) {
+                            if (true) {
                                 try {
                                     cursorQuery.close();
                                 } catch (Throwable unused2) {
@@ -277,12 +277,12 @@ public class d {
             try {
                 ProviderInfo providerInfoResolveContentProvider = context.getPackageManager().resolveContentProvider(str, 0);
                 if (providerInfoResolveContentProvider != null) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[iReferrer] pi: " + providerInfoResolveContentProvider.packageName + "/" + providerInfoResolveContentProvider.name);
+                    UMRTLog.i("MobclickRT", "[iReferrer] pi: " + providerInfoResolveContentProvider.packageName + "/" + providerInfoResolveContentProvider.name);
                     return true;
                 }
             } catch (Throwable unused) {
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "[iReferrer] pi: null");
+            UMRTLog.i("MobclickRT", "[iReferrer] pi: null");
             return false;
         }
 
@@ -293,7 +293,7 @@ public class d {
                 try {
                     jSONObject.put(cursor.getColumnName(i), cursor.getString(i));
                 } catch (Throwable th) {
-                    UMRTLog.se(UMRTLog.RTLOG_TAG, "[iReferrer] failed: " + th.getMessage());
+                    UMRTLog.se("MobclickRT", "[iReferrer] failed: " + th.getMessage());
                 }
             }
             return jSONObject;

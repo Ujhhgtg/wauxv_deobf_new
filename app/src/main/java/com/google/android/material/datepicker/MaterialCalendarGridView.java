@@ -26,7 +26,7 @@ final class MaterialCalendarGridView extends GridView {
     public MaterialCalendarGridView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
         AbstractC3518.m5102(null);
-        if (C1915.m3707(getContext(), R.attr.windowFullscreen)) {
+        if (C1915.m3707(getContext(), 16843277)) {
             setNextFocusLeftId(me.hd.wauxv.R.id.cancel_button);
             setNextFocusRightId(me.hd.wauxv.R.id.confirm_button);
         }
@@ -48,7 +48,7 @@ final class MaterialCalendarGridView extends GridView {
     @Override // android.view.View
     public final void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        ((AbstractC2026) super.getAdapter()).getClass();
+        
         throw null;
     }
 
@@ -59,13 +59,13 @@ final class MaterialCalendarGridView extends GridView {
             return;
         }
         if (i == 33) {
-            ((AbstractC2026) super.getAdapter()).getClass();
+            
             throw null;
         }
         if (i != 130) {
             super.onFocusChanged(true, i, rect);
         } else {
-            ((AbstractC2026) super.getAdapter()).getClass();
+            
             throw null;
         }
     }
@@ -79,7 +79,7 @@ final class MaterialCalendarGridView extends GridView {
             return true;
         }
         getSelectedItemPosition();
-        ((AbstractC2026) super.getAdapter()).getClass();
+        
         throw null;
     }
 
@@ -89,13 +89,13 @@ final class MaterialCalendarGridView extends GridView {
             super.onMeasure(i, i2);
             return;
         }
-        super.onMeasure(i, View.MeasureSpec.makeMeasureSpec(16777215, Integer.MIN_VALUE));
+        super.onMeasure(i, View.MeasureSpec.makeMeasureSpec(16777215, -2147483648));
         getLayoutParams().height = getMeasuredHeight();
     }
 
     @Override // android.widget.GridView, android.widget.AdapterView
     public final void setSelection(int i) {
-        ((AbstractC2026) super.getAdapter()).getClass();
+        
         throw null;
     }
 

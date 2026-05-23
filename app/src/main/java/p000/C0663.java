@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Collections;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᤝᲁᲇᤞᲀ, reason: contains not printable characters */
@@ -59,13 +58,13 @@ public final class C0663 extends AbstractC2867 implements InterfaceC1575, Interf
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C0656.f2518, dexKitBridge, new C0645(10));
+        AbstractC1574.findMethod(C0656.f2518, dexKitBridge, new C0645(10));
     }
 
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.m3315(C0656.f2518)));
+        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.dexToMethod(C0656.f2518)));
         C0645 c0645 = new C0645(11);
         C0663 c0663 = f2533;
         c0663.m3263(c3689M4172, c0645);
@@ -107,17 +106,16 @@ public final class C0663 extends AbstractC2867 implements InterfaceC1575, Interf
     public final void m2061(FrameLayout frameLayout) {
         String[] strArr = AbstractC1574.f5469;
         if (mo3264()) {
-            C0666.f2546.getClass();
-            C1565.f5440.getClass();
-            LinearLayout linearLayout = (LinearLayout) frameLayout.findViewById(C1565.m3280() ? C0665.f2545.m2538() : AbstractC0968.m2475(AbstractC3471.m5079(EnumC3677.f11529) ? "bl9" : "b4u"));
+            
+            
+            LinearLayout linearLayout = (LinearLayout) frameLayout.findViewById(C1565.m3280() ? C0665.f2545.m2538() : AbstractC0968.m2475(AbstractC3471.m5079(WeChatVersions.f11529) ? "bl9" : "b4u"));
             if (linearLayout != null) {
                 ViewParent parent = linearLayout.getParent();
-                "null cannot be cast to non-null type android.widget.LinearLayout";
                 LinearLayout linearLayout2 = (LinearLayout) parent;
                 if (linearLayout2.findViewWithTag("ChatToolbar") == null) {
                     AbstractC2207.m4098(linearLayout2.getContext());
                     Context context = linearLayout2.getContext();
-                    f2533.getClass();
+                    
                     C0658 c0658 = f2540;
                     ArrayList arrayList = f2539;
                     if (c0658 == null) {
@@ -154,7 +152,7 @@ public final class C0663 extends AbstractC2867 implements InterfaceC1575, Interf
                                 C1679 c1679 = (C1679) arrayList3.get(0);
                                 c1679.f5672.cancel();
                                 AbstractC2508 abstractC2508 = c1679.f5670;
-                                c1682.f5697.getClass();
+                                
                                 C0662.m2043(abstractC2508);
                             }
                             arrayList3.clear();

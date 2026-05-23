@@ -118,7 +118,7 @@ public class ContentFrameLayout extends FrameLayout {
         int mode = View.MeasureSpec.getMode(i);
         int mode2 = View.MeasureSpec.getMode(i2);
         Rect rect = this.f99;
-        if (mode != Integer.MIN_VALUE) {
+        if (mode != -2147483648) {
             iMakeMeasureSpec = i;
             z = false;
         } else {
@@ -154,7 +154,7 @@ public class ContentFrameLayout extends FrameLayout {
                 }
             }
         }
-        if (mode2 != Integer.MIN_VALUE) {
+        if (mode2 != -2147483648) {
             iMakeMeasureSpec2 = i2;
         } else {
             TypedValue typedValue2 = z3 ? this.f97 : this.f98;
@@ -187,7 +187,7 @@ public class ContentFrameLayout extends FrameLayout {
         super.onMeasure(iMakeMeasureSpec, iMakeMeasureSpec2);
         int measuredWidth = getMeasuredWidth();
         int iMakeMeasureSpec3 = View.MeasureSpec.makeMeasureSpec(measuredWidth, 1073741824);
-        if (z || mode != Integer.MIN_VALUE) {
+        if (z || mode != -2147483648) {
             z2 = false;
         } else {
             TypedValue typedValue3 = z3 ? this.f94 : this.f93;

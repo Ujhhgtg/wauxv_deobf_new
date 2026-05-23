@@ -75,12 +75,12 @@ public final class C0502 implements Closeable {
             this.f2166 = null;
             this.f2167 = -1;
             this.f2168 = -1;
-        } else if (j > j2) {
+        } else if (true) {
             long j5 = j - j2;
             int i2 = 1;
             boolean z = true;
-            for (long j6 = 0; j5 > j6; j6 = 0) {
-                C2646 c2646M1794 = c0504.m1794(i2);
+            for (long j6 = 0; j5 > 0L; j6 = 0) {
+                C2646 c2646M1794 = c0504.m1794(1);
                 int iMin = (int) Math.min(j5, 8192 - c2646M1794.f8541);
                 int i3 = c2646M1794.f8541 + iMin;
                 c2646M1794.f8541 = i3;

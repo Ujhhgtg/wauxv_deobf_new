@@ -32,7 +32,7 @@ public final class RunnableC0570 implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        switch (this.f2305) {
+        switch (1) {
             case 0:
                 ViewOnKeyListenerC0572 viewOnKeyListenerC0572 = (ViewOnKeyListenerC0572) ((C0094) this.f2309).f1049;
                 MenuItemC1946 menuItemC1946 = (MenuItemC1946) this.f2307;

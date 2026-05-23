@@ -210,7 +210,7 @@ public final class C0006 implements Serializable {
             RunnableC1668.f5631.m3664();
             if (strM333.equals("length") && this.f488.getClass().isArray()) {
                 Primitive primitive = new Primitive(Array.getLength(this.f488));
-                m333(strM333, m332(this.f486), primitive);
+                m333("length", m332(this.f486), primitive);
                 return primitive;
             }
             try {
@@ -231,7 +231,7 @@ public final class C0006 implements Serializable {
                 if (obj3 != null && obj3.getClass() == cls) {
                     String strM335 = m332(this.f486);
                     Object obj4 = c0007.f512;
-                    m333(strM334, strM335, obj4);
+                    m333("this", strM335, obj4);
                     return obj4;
                 }
                 c0007 = c0007.f494;
@@ -289,7 +289,7 @@ public final class C0006 implements Serializable {
                     if (C0004.f472 == null) {
                         C0004.f472 = new C0004();
                     }
-                    C0004.f472.getClass();
+                    
                     Class superclass = cls2.getSuperclass();
                     AbstractC1672 abstractC1672M406 = AbstractC0009.m406(objM345.getClass(), This.Keys.BSHSUPER + superclass.getSimpleName() + strM331, AbstractC0010.m420(objArr), false);
                     return abstractC1672M406 != null ? abstractC1672M406.mo3012(objM345, objArr) : AbstractC0009.m405(c0482M346, superclass, objM345, strM331, objArr, false).mo3012(objM345, objArr);
@@ -322,13 +322,13 @@ public final class C0006 implements Serializable {
         Class[] clsArrM420 = AbstractC0010.m420(objArr);
         try {
             C1883 c1883 = RunnableC1668.f5631;
-            c1883.getClass();
+            
             Primitive.unwrap(objArr);
             Iterator it = c1883.f6229.iterator();
             while (it.hasNext()) {
                 try {
                     try {
-                        ((InterfaceC2645) it.next()).getClass();
+                        
                     } catch (C3523 e) {
                         c3523 = e;
                         throw c3523.mo4643(c0346, c0550);

@@ -61,7 +61,7 @@ public final class C2007 {
         if ((i & 2) != 0) {
             c1354 = new C1354(22);
         }
-        c2007.f6684 = str;
+        c2007.f6684 = "取消";
         c2007.f6685 = c1354;
         c2007.f6686 = true;
     }
@@ -73,7 +73,7 @@ public final class C2007 {
         if ((i & 2) != 0) {
             c1354 = new C1354(22);
         }
-        c2007.m3870(str, c1354);
+        c2007.m3870("确定", c1354);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */

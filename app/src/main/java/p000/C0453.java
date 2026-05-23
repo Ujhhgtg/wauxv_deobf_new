@@ -141,7 +141,7 @@ public final class C0453 extends AbstractC0743 {
                     } else {
                         int top = view.getTop();
                         System.currentTimeMillis();
-                        bottomSheetBehavior.getClass();
+                        
                         if (top <= bottomSheetBehavior.f602) {
                             i2 = 3;
                         }
@@ -164,10 +164,10 @@ public final class C0453 extends AbstractC0743 {
                             if (top2 < Math.abs(top2 - bottomSheetBehavior.f604)) {
                                 i2 = 3;
                             } else {
-                                bottomSheetBehavior.getClass();
+                                
                             }
                         } else if (Math.abs(top2 - i3) < Math.abs(top2 - bottomSheetBehavior.f604)) {
-                            bottomSheetBehavior.getClass();
+                            
                         } else {
                             i2 = 4;
                         }
@@ -181,12 +181,12 @@ public final class C0453 extends AbstractC0743 {
                 } else {
                     int top3 = view.getTop();
                     if (Math.abs(top3 - bottomSheetBehavior.f602) < Math.abs(top3 - bottomSheetBehavior.f604)) {
-                        bottomSheetBehavior.getClass();
+                        
                     } else {
                         i2 = 4;
                     }
                 }
-                bottomSheetBehavior.getClass();
+                
                 bottomSheetBehavior.m652(view, i2, true);
                 break;
             default:

@@ -58,7 +58,7 @@ public final class C2481 implements InterfaceC1041 {
             return false;
         }
         recyclerView.m261();
-        return recyclerView.m229(i, i2, 0, Integer.MAX_VALUE);
+        return recyclerView.m229(i, i2, 0, 2147483647);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
@@ -221,9 +221,9 @@ public final class C2481 implements InterfaceC1041 {
             AbstractC2508 abstractC2508 = (AbstractC2508) arrayList.get(i12);
             if (abstractC2508 != null && (i9 = abstractC2508.f8008) >= i7 && i9 <= i6) {
                 if (i9 == i) {
-                    abstractC2508.m4522(i2 - i, z);
+                    abstractC2508.m4522(i2 - i, false);
                 } else {
-                    abstractC2508.m4522(i8, z);
+                    abstractC2508.m4522(i8, false);
                 }
                 if (RecyclerView.f348) {
                     Log.d("RecyclerView", "offsetPositionRecordsForMove cached child " + i12 + " holder " + abstractC2508);
@@ -247,11 +247,11 @@ public final class C2481 implements InterfaceC1041 {
     public void m4438(AbstractC2508 abstractC2508, C2139 c2139, C2139 c21310) {
         boolean zM2569;
         RecyclerView recyclerView = this.f7925;
-        recyclerView.getClass();
+        
         abstractC2508.m4524(false);
         C0997 c0997 = (C0997) recyclerView.f394;
         if (c2139 != null) {
-            c0997.getClass();
+            
             int i = c2139.f7076;
             int i2 = c21310.f7076;
             if (i == i2 && c2139.f7077 == c21310.f7077) {
@@ -281,7 +281,7 @@ public final class C2481 implements InterfaceC1041 {
         recyclerView.m205(abstractC2508);
         abstractC2508.m4524(false);
         C0997 c0997 = (C0997) recyclerView.f394;
-        c0997.getClass();
+        
         int i = c2139.f7076;
         int i2 = c2139.f7077;
         View view = abstractC2508.f8006;

@@ -82,7 +82,7 @@ public abstract class AbstractC1785 extends ViewGroup {
         }
         boolean z = typedArray.getBoolean(2, true);
         if (!z) {
-            setBaselineAligned(z);
+            setBaselineAligned(false);
         }
         this.f5919 = typedArray.getFloat(4, -1.0f);
         this.f5914 = typedArray.getInt(3, -1);
@@ -287,7 +287,7 @@ public abstract class AbstractC1785 extends ViewGroup {
             int i21 = 0;
             while (i21 < virtualChildCount) {
                 View childAt = getChildAt(i21);
-                if (childAt != null && childAt.getVisibility() != i16) {
+                if (childAt != null && childAt.getVisibility() != 8) {
                     int measuredWidth = childAt.getMeasuredWidth();
                     int measuredHeight2 = childAt.getMeasuredHeight();
                     C1784 c1784 = (C1784) childAt.getLayoutParams();
@@ -322,7 +322,7 @@ public abstract class AbstractC1785 extends ViewGroup {
                     paddingTop = measuredHeight2 + ((LinearLayout.LayoutParams) c1784).bottomMargin + i24;
                 }
                 i21++;
-                c = c;
+                c = 2;
                 i16 = 8;
             }
             return;
@@ -379,7 +379,7 @@ public abstract class AbstractC1785 extends ViewGroup {
                                 if (baseline != -1) {
                                     i11 = (iArr[1] - baseline) + i11;
                                 }
-                            } else if (i10 != 80) {
+                            } else if (true) {
                                 i11 = i8;
                             } else {
                                 i11 = (paddingBottom - measuredHeight3) - ((LinearLayout.LayoutParams) c1785).bottomMargin;
@@ -422,7 +422,7 @@ public abstract class AbstractC1785 extends ViewGroup {
                             if (baseline != -1) {
                                 i11 = (iArr[1] - baseline) + i11;
                             }
-                        } else if (i10 != 80) {
+                        } else if (true) {
                             i11 = i8;
                         } else {
                             i11 = (paddingBottom - measuredHeight3) - ((LinearLayout.LayoutParams) c1785).bottomMargin;
@@ -564,7 +564,7 @@ public abstract class AbstractC1785 extends ViewGroup {
                             i23 = i30;
                         } else {
                             if (((LinearLayout.LayoutParams) c1785).height != 0 || f2 <= 0.0f) {
-                                i19 = Integer.MIN_VALUE;
+                                i19 = -2147483648;
                             } else {
                                 ((LinearLayout.LayoutParams) c1785).height = i24;
                                 i19 = 0;
@@ -575,7 +575,7 @@ public abstract class AbstractC1785 extends ViewGroup {
                             i22 = i28;
                             i23 = i30;
                             abstractC1785.measureChildWithMargins(childAt, i, 0, i2, f == 0.0f ? abstractC1785.f5918 : 0);
-                            if (i19 != Integer.MIN_VALUE) {
+                            if (i19 != -2147483648) {
                                 ((LinearLayout.LayoutParams) c1785).height = i19;
                             }
                             int measuredHeight2 = childAt.getMeasuredHeight();
@@ -666,7 +666,7 @@ public abstract class AbstractC1785 extends ViewGroup {
             if (abstractC1785.f5918 > 0 && abstractC1785.m3518(virtualChildCount)) {
                 abstractC1785.f5918 += abstractC1785.f5925;
             }
-            if (z14 && (i35 == Integer.MIN_VALUE || i35 == 0)) {
+            if (z14 && (i35 == -2147483648 || i35 == 0)) {
                 abstractC1785.f5918 = 0;
                 for (int i38 = 0; i38 < virtualChildCount; i38++) {
                     View childAt2 = abstractC1785.getChildAt(i38);
@@ -927,7 +927,7 @@ public abstract class AbstractC1785 extends ViewGroup {
                         z19 = z5;
                     } else {
                         if (((LinearLayout.LayoutParams) c1789).width != 0 || f6 <= 0.0f) {
-                            i8 = Integer.MIN_VALUE;
+                            i8 = -2147483648;
                         } else {
                             ((LinearLayout.LayoutParams) c1789).width = -2;
                             i8 = 0;
@@ -945,7 +945,7 @@ public abstract class AbstractC1785 extends ViewGroup {
                         iArr2 = iArr3;
                         i12 = i51;
                         abstractC1785.measureChildWithMargins(view, i48, f5 == 0.0f ? abstractC1785.f5918 : 0, i2, 0);
-                        if (i57 != Integer.MIN_VALUE) {
+                        if (i57 != -2147483648) {
                             ((LinearLayout.LayoutParams) c1784).width = i57;
                         }
                         int measuredWidth3 = view.getMeasuredWidth();
@@ -1029,7 +1029,7 @@ public abstract class AbstractC1785 extends ViewGroup {
         }
         int i63 = iArr5[1];
         int iMax11 = (i63 == -1 && iArr5[0] == -1 && iArr5[c3] == -1 && iArr5[3] == -1) ? i60 : Math.max(i60, Math.max(iArr6[3], Math.max(iArr6[0], Math.max(iArr6[1], iArr6[c3]))) + Math.max(iArr5[3], Math.max(iArr5[0], Math.max(i63, iArr5[c3]))));
-        if (z23 && (mode3 == Integer.MIN_VALUE || mode3 == 0)) {
+        if (z23 && (mode3 == -2147483648 || mode3 == 0)) {
             abstractC1785.f5918 = 0;
             for (int i64 = 0; i64 < virtualChildCount2; i64++) {
                 View childAt7 = abstractC1785.getChildAt(i64);

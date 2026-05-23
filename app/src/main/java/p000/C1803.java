@@ -170,7 +170,6 @@ public final class C1803 extends FrameLayout {
             int iM3551 = m3551(4.0f);
             View view = this.f6025;
             ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-            "null cannot be cast to non-null type android.widget.FrameLayout.LayoutParams";
             FrameLayout.LayoutParams layoutParams2 = (FrameLayout.LayoutParams) layoutParams;
             int i = width - (iM3551 * 2);
             if (i < 0) {

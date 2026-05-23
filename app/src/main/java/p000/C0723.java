@@ -4,7 +4,6 @@ import android.view.ViewGroup;
 import java.util.Collections;
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲁᤝᲇᤞᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -48,8 +47,8 @@ public final class C0723 extends AbstractC2867 implements InterfaceC1588 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
-        C3689 c3689M4174 = m4174((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(Integer.TYPE), AbstractC2519.m4527(ViewGroup.class)}, 2, AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.ui.LauncherUIBottomTabView")).m3492()), 1);
+        int i = 0;
+        C3689 c3689M4174 = m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Integer.TYPE), AbstractC2519.classToKClass(ViewGroup.class)}, 2, AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.ui.LauncherUIBottomTabView")).m3492()), 1);
         f2734.m3262(c3689M4174, new C0679(6));
         c3689M4174.m5352();
     }

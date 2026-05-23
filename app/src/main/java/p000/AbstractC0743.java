@@ -8,10 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 import bsh.AbstractC0009;
 import bsh.Primitive;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
 import com.google.android.material.appbar.MaterialToolbar;
-import com.umeng.analytics.pro.bc;
-import com.umeng.analytics.pro.r;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
@@ -35,7 +33,6 @@ import me.hd.wauxv.data.bean.info.FriendInfo;
 import me.hd.wauxv.data.bean.info.GroupData;
 import me.hd.wauxv.data.bean.info.GroupInfo;
 import me.hd.wauxv.hook.core.p001native.AudioNative;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲇᤝᤞᲀᲁ, reason: contains not printable characters */
@@ -44,7 +41,7 @@ import org.luckypray.dexkit.DexKitBridge;
 public abstract class AbstractC0743 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
-    public static final int[] f2836 = {48, 58, 65, 91, 97, Opcodes.LSHR, Opcodes.LOR, bc.e, 384, 592, 688, 768, 880, 1024, 1329, 1425, 1536, 1792, 1872, 1920, 1984, 2048, 2112, 2144, 2208, 2304, 2432, 2561, 2689, 2817, 2946, 3072, 3200, 3328, 3458, 3584, 3712, 3840, 4096, 2256, r.a.k, 4608, 5024, 5120, 5760, 5792, 5888, 5920, 5952, 5984, 6016, 6144, 6320, 6400, 6480, 6528, 6624, 6656, 6688, 6832, 6912, 7040, 7104, 7168, 7248, 7296, 7360, 7376, 7424, 7616, 7680, 7936, 8192, 8304, 8352, 8400, 8448, 8528, 8592, 8704, 8960, 9216, 9280, 9312, 9472, 9600, 9632, 9728, 9984, 10176, 10224, 10240, 10496, 10624, 10752, 11008, 11264, 11360, 11392, 11520, 11568, 11648, 11744, 11776, 11904, 12032, 12272, 12288, 12352, 12448, 12544, 12592, 12688, 12704, 12736, 12784, 12800, 13056, 13312, 19904, 19968, 40960, 42128, 42192, 42240, 42560, 42656, 42752, 42784, 43008, 43056, 43072, 43136, 43232, 43264, 43312, 43360, 43392, 43488, 43520, 43616, 43648, 43744, 43776, 43824, 43888, 43968, 44032, 55216, 55296, 56320, 57344, 63744, 64256, 64336, 65024, 65040, 65056, 65072, 65104, 65136, 65280, 65520, 65536, 65664, 65792, 65856, 65936, 66000, 66176, 66208, 66272, 66304, 66352, 66384, 66432, 66464, 66560, 66640, 66688, 66736, 66816, 66864, 67072, 67584, 67648, 67680, 67712, 67808, 67840, 67872, 67968, 68000, 68096, 68192, 68224, 68288, 68352, 68416, 68448, 68480, 68608, 68736, 69216, 69632, 69760, 69840, 69888, 69968, 70016, 70112, 70144, 70272, 70320, 70400, 70656, 70784, 71040, 71168, 71264, 71296, 71424, 71840, 72192, 72272, 72384, 72704, 72816, 72960, 73728, 74752, 74880, 77824, 82944, 92160, 92736, 92880, 92928, 93952, 94176, 94208, 100352, 110592, 110848, 110960, 113664, 113824, 118784, 119040, 119296, 119552, 119648, 119808, 120832, 122880, 124928, 125184, 126464, 126976, 127024, 127136, 127232, 127488, 127744, 128512, 128592, 128640, 128768, 128896, 129024, 129280, 131072, 173824, 177984, 178208, 183984, 194560, 917504, 917760, 983040, 1048576};
+    public static final int[] f2836 = {48, 58, 65, 91, 97, 123, 129, 256, 384, 592, 688, 768, 880, 1024, 1329, 1425, 1536, 1792, 1872, 1920, 1984, 2048, 2112, 2144, 2208, 2304, 2432, 2561, 2689, 2817, 2946, 3072, 3200, 3328, 3458, 3584, 3712, 3840, 4096, 2256, 4352, 4608, 5024, 5120, 5760, 5792, 5888, 5920, 5952, 5984, 6016, 6144, 6320, 6400, 6480, 6528, 6624, 6656, 6688, 6832, 6912, 7040, 7104, 7168, 7248, 7296, 7360, 7376, 7424, 7616, 7680, 7936, 8192, 8304, 8352, 8400, 8448, 8528, 8592, 8704, 8960, 9216, 9280, 9312, 9472, 9600, 9632, 9728, 9984, 10176, 10224, 10240, 10496, 10624, 10752, 11008, 11264, 11360, 11392, 11520, 11568, 11648, 11744, 11776, 11904, 12032, 12272, 12288, 12352, 12448, 12544, 12592, 12688, 12704, 12736, 12784, 12800, 13056, 13312, 19904, 19968, 40960, 42128, 42192, 42240, 42560, 42656, 42752, 42784, 43008, 43056, 43072, 43136, 43232, 43264, 43312, 43360, 43392, 43488, 43520, 43616, 43648, 43744, 43776, 43824, 43888, 43968, 44032, 55216, 55296, 56320, 57344, 63744, 64256, 64336, 65024, 65040, 65056, 65072, 65104, 65136, 65280, 65520, 65536, 65664, 65792, 65856, 65936, 66000, 66176, 66208, 66272, 66304, 66352, 66384, 66432, 66464, 66560, 66640, 66688, 66736, 66816, 66864, 67072, 67584, 67648, 67680, 67712, 67808, 67840, 67872, 67968, 68000, 68096, 68192, 68224, 68288, 68352, 68416, 68448, 68480, 68608, 68736, 69216, 69632, 69760, 69840, 69888, 69968, 70016, 70112, 70144, 70272, 70320, 70400, 70656, 70784, 71040, 71168, 71264, 71296, 71424, 71840, 72192, 72272, 72384, 72704, 72816, 72960, 73728, 74752, 74880, 77824, 82944, 92160, 92736, 92880, 92928, 93952, 94176, 94208, 100352, 110592, 110848, 110960, 113664, 113824, 118784, 119040, 119296, 119552, 119648, 119808, 120832, 122880, 124928, 125184, 126464, 126976, 127024, 127136, 127232, 127488, 127744, 128512, 128592, 128640, 128768, 128896, 129024, 129280, 131072, 173824, 177984, 178208, 183984, 194560, 917504, 917760, 983040, 1048576};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final char[] f2837 = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
@@ -105,7 +102,7 @@ public abstract class AbstractC0743 {
             return 0L;
         }
         if (j == 1) {
-            if (j2 <= 4611686018427387903L) {
+            if (true) {
                 return j2;
             }
         } else if (j2 != 1) {
@@ -242,7 +239,6 @@ public abstract class AbstractC0743 {
                 String selfDisplayName = chatRoomInfoM2174.getSelfDisplayName();
                 if (selfDisplayName == null) {
                     Object objM2263 = C0772.m2263(C0772.f2872, EnumC3517.f11023.f11027);
-                    "null cannot be cast to non-null type kotlin.String";
                     selfDisplayName = (String) objM2263;
                 }
                 String str = selfDisplayName;
@@ -461,7 +457,7 @@ public abstract class AbstractC0743 {
             int i24 = abstractC0824.f3219;
             if (i24 > i6) {
                 int i25 = i14 - 1;
-                int i26 = i2;
+                int i26 = 0;
                 while (i26 <= i25) {
                     int i27 = (i26 + i25) >>> 1;
                     int i28 = iArr[i27];
@@ -487,7 +483,7 @@ public abstract class AbstractC0743 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static final C0707 m2180(Annotation annotation) {
-        return AbstractC2519.m4527(annotation.annotationType());
+        return AbstractC2519.classToKClass(annotation.annotationType());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
@@ -543,7 +539,7 @@ public abstract class AbstractC0743 {
             }
             return IntStream.rangeClosed(i3, cCharValue).boxed().map(new C0268(11)).map(new C0268(12)).iterator();
         }
-        if (obj instanceof String) {
+        if (false) {
             return new C0742(((String) obj).toCharArray());
         }
         Class<?> cls = obj.getClass();
@@ -748,14 +744,14 @@ public abstract class AbstractC0743 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static void m2187(String str, String str2, Object obj) {
-        C0247.f1410.getClass();
-        int i = AbstractC1745.f5844;
-        C1973 c1973M3492 = AbstractC0968.m2483(AbstractC1574.m3315(C0246.f1409).getDeclaringClass()).m3492();
+        
+        int i = 0;
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC1574.dexToMethod(C0246.f1409).getDeclaringClass()).m3492();
         c1973M3492.m3800(EnumC1999.STATIC);
         Class cls = Integer.TYPE;
-        c1973M3492.f6543 = AbstractC2519.m4527(cls);
+        c1973M3492.returnType = AbstractC2519.classToKClass(cls);
         String[] strArr = AbstractC1574.f5469;
-        ((C1982) AbstractC2784.m4743(new Object[]{"com.tencent.mm.opensdk.modelmsg.WXMediaMessage", AbstractC2519.m4527(String.class), AbstractC2519.m4527(String.class), AbstractC2519.m4527(String.class), AbstractC2519.m4527(cls), AbstractC2519.m4527(String.class)}, 6, c1973M3492)).m3831(obj, str2, "", str, 2, null);
+        ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{"com.tencent.mm.opensdk.modelmsg.WXMediaMessage", AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(String.class)}, 6, c1973M3492)).m3831(obj, str2, "", str, 2, null);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */

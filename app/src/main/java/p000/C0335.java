@@ -49,11 +49,11 @@ public final /* synthetic */ class C0335 implements Predicate {
                 return TypeUtils.validateIPv4((String) obj);
             case 11:
                 return TypeUtils.validateIPv6((String) obj);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return StringSchema.lambda$new$0((String) obj);
             case 13:
                 return DateUtils.isDate((String) obj);
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return DateUtils.isLocalDate((String) obj);
             case 15:
                 return DateUtils.isLocalTime((String) obj);

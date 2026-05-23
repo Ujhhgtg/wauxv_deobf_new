@@ -63,7 +63,7 @@ public final class C0423 implements InterfaceC2894 {
         int paddingBottom = imageView.getPaddingBottom() + imageView.getPaddingTop();
         ViewGroup.LayoutParams layoutParams2 = imageView.getLayoutParams();
         int iM5204 = c3591.m5203(imageView.getHeight(), layoutParams2 != null ? layoutParams2.height : 0, paddingBottom);
-        if ((iM5203 > 0 || iM5203 == Integer.MIN_VALUE) && (iM5204 > 0 || iM5204 == Integer.MIN_VALUE)) {
+        if ((iM5203 > 0 || iM5203 == -2147483648) && (iM5204 > 0 || iM5204 == -2147483648)) {
             c2708.m4717(iM5203, iM5204);
             return;
         }

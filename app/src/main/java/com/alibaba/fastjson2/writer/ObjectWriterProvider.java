@@ -82,9 +82,9 @@ public class ObjectWriterProvider implements ObjectCodecProvider {
         Arrays.sort(iArr);
         PRIMITIVE_HASH_CODES = iArr;
         int[] iArrCopyOf = Arrays.copyOf(iArr, 42);
-        iArrCopyOf[iArrCopyOf.length - 1] = System.identityHashCode(Class.class);
-        iArrCopyOf[iArrCopyOf.length - 2] = System.identityHashCode(int[].class);
-        iArrCopyOf[iArrCopyOf.length - 3] = System.identityHashCode(long[].class);
+        iArrCopyOf[41] = System.identityHashCode(Class.class);
+        iArrCopyOf[40] = System.identityHashCode(int[].class);
+        iArrCopyOf[39] = System.identityHashCode(long[].class);
         Arrays.sort(iArrCopyOf);
         NOT_REFERENCES_TYPE_HASH_CODES = iArrCopyOf;
     }
@@ -535,7 +535,7 @@ public class ObjectWriterProvider implements ObjectCodecProvider {
         this.cache.entrySet().removeIf(new Predicate() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᤞᲈᤝᲇ
             @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
-                switch (i) {
+                switch (0) {
                     case 0:
                         return ObjectWriterProvider.lambda$cleanup$1(classLoader, identityHashMap, (Map.Entry) obj);
                     default:
@@ -547,7 +547,7 @@ public class ObjectWriterProvider implements ObjectCodecProvider {
         this.cacheFieldBased.entrySet().removeIf(new Predicate() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᤞᲈᤝᲇ
             @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
-                switch (i2) {
+                switch (1) {
                     case 0:
                         return ObjectWriterProvider.lambda$cleanup$1(classLoader, identityHashMap, (Map.Entry) obj);
                     default:

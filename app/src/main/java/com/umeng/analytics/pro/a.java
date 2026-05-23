@@ -47,14 +47,14 @@ public interface a extends IInterface {
         private static final String d = "com.android.creator.IdsSupplier";
 
         public b() {
-            attachInterface(this, d);
+            attachInterface(this, "com.android.creator.IdsSupplier");
         }
 
         public static a a(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }
-            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(d);
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.android.creator.IdsSupplier");
             return (iInterfaceQueryLocalInterface == null || !(iInterfaceQueryLocalInterface instanceof a)) ? new C0029a(iBinder) : (a) iInterfaceQueryLocalInterface;
         }
 
@@ -65,14 +65,14 @@ public interface a extends IInterface {
         @Override // android.os.Binder
         public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) {
             if (i == 1) {
-                parcel.enforceInterface(d);
+                parcel.enforceInterface("com.android.creator.IdsSupplier");
                 boolean zA = a();
                 parcel2.writeNoException();
                 parcel2.writeInt(zA ? 1 : 0);
                 return true;
             }
             if (i == 2) {
-                parcel.enforceInterface(d);
+                parcel.enforceInterface("com.android.creator.IdsSupplier");
                 String strA = a(parcel.readString());
                 parcel2.writeNoException();
                 parcel2.writeString(strA);
@@ -82,10 +82,10 @@ public interface a extends IInterface {
                 if (i != 1598968902) {
                     return super.onTransact(i, parcel, parcel2, i2);
                 }
-                parcel2.writeString(d);
+                parcel2.writeString("com.android.creator.IdsSupplier");
                 return true;
             }
-            parcel.enforceInterface(d);
+            parcel.enforceInterface("com.android.creator.IdsSupplier");
             String strB = b();
             parcel2.writeNoException();
             parcel2.writeString(strB);

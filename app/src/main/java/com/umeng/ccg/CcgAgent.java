@@ -29,10 +29,10 @@ public class CcgAgent {
     private static volatile long actUpTs = 0;
 
     static {
-        forbidSdkTable.put(a.e, new ArrayList<>());
-        forbidSdkTable.put(a.d, new ArrayList<>());
-        forbidSdkTable.put(a.b, new ArrayList<>());
-        forbidSdkTable.put(a.c, new ArrayList<>());
+        forbidSdkTable.put("col_apl", new ArrayList<>());
+        forbidSdkTable.put("col_lbs", new ArrayList<>());
+        forbidSdkTable.put("col_wifi", new ArrayList<>());
+        forbidSdkTable.put("col_bs", new ArrayList<>());
     }
 
     public static int getActUpFlag() {
@@ -62,7 +62,7 @@ public class CcgAgent {
     }
 
     public static String[] getCollectItemList() {
-        return new String[]{a.e, a.d, a.b, a.c};
+        return new String[]{"col_apl", "col_lbs", "col_wifi", "col_bs"};
     }
 
     public static void getConfigInfo(ConfigResult configResult) {
@@ -129,9 +129,9 @@ public class CcgAgent {
     }
 
     public static void onActUpEvent(String str, String str2, Bundle bundle) {
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "umc_cfg: call b a.");
+        UMRTLog.e("MobclickRT", "umc_cfg: call b a.");
         if (TextUtils.isEmpty(str) || TextUtils.isEmpty(str2)) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "onActUpEvent: type or token agument is empty string, pls check!");
+            UMRTLog.e("MobclickRT", "onActUpEvent: type or token agument is empty string, pls check!");
             MLog.e("onActUpEvent: type、token参数不能为null或者空字符串！");
             return;
         }
@@ -154,8 +154,8 @@ public class CcgAgent {
         boolean z2 = z;
         JSONObject jSONObjectA = d.a().a(str, str2, str3, actUpTs, z2);
         if (jSONObjectA != null) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "umc_cfg: upload b a. cd_flag is " + z2);
-            aw.a(new ar(ar.b, jSONObjectA), 0L, TimeUnit.SECONDS);
+            UMRTLog.e("MobclickRT", "umc_cfg: upload b a. cd_flag is " + z2);
+            aw.a(new ar("https://cnlogs.umeng.com/ext_event", jSONObjectA), 0L, TimeUnit.SECONDS);
             Thread.sleep(2000L);
         }
     }

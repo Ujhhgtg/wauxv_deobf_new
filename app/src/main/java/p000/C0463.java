@@ -2,7 +2,6 @@ package p000;
 
 import android.content.Context;
 import java.util.Arrays;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲀᤞᲇᤝᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -69,10 +68,10 @@ public final class C0463 extends AbstractC2867 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
-        C0796 c0796M3486 = AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.ui.LauncherUIBottomTabView")).m3486();
-        c0796M3486.m2888(Arrays.copyOf(new Object[]{AbstractC2519.m4527(Context.class)}, 1));
-        C0798 c0798 = (C0798) AbstractC0744.m2191(c0796M3486.m2344());
+        int i = 0;
+        C0796 c0796M3486 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.ui.LauncherUIBottomTabView")).m3486();
+        c0796M3486.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Context.class)}, 1));
+        C0798 c0798 = (C0798) AbstractC0744.firstInList(c0796M3486.m2344());
         C0463 c0463 = f2038;
         C3689 c3689M4174 = c0463.m4174(c0798, 1);
         c0463.m3262(c3689M4174, new C0316(14));

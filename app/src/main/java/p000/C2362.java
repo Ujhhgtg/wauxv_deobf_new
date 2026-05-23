@@ -2,7 +2,7 @@ package p000;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import okhttp3.Cache;
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
@@ -46,9 +46,9 @@ public final /* synthetic */ class C2362 implements InterfaceC1425 {
                 OkHttpClient.Builder builderNewBuilder = okHttpClient.newBuilder();
                 TimeUnit timeUnit = TimeUnit.SECONDS;
                 long j = this.f7587;
-                builderNewBuilder.connectTimeout(j, timeUnit);
-                builderNewBuilder.readTimeout(j, timeUnit);
-                builderNewBuilder.writeTimeout(j, timeUnit);
+                builderNewBuilder.connectTimeout(j, TimeUnit.SECONDS);
+                builderNewBuilder.readTimeout(j, TimeUnit.SECONDS);
+                builderNewBuilder.writeTimeout(j, TimeUnit.SECONDS);
                 AbstractC2271.m4154(builderNewBuilder);
                 OkHttpClient okHttpClientM4155 = AbstractC2272.m4155(builderNewBuilder.build());
                 c3515.f1765 = okHttpClientM4155;
@@ -70,9 +70,9 @@ public final /* synthetic */ class C2362 implements InterfaceC1425 {
                 OkHttpClient.Builder builderNewBuilder2 = okHttpClient2.newBuilder();
                 TimeUnit timeUnit2 = TimeUnit.SECONDS;
                 long j2 = this.f7587;
-                builderNewBuilder2.connectTimeout(j2, timeUnit2);
-                builderNewBuilder2.readTimeout(j2, timeUnit2);
-                builderNewBuilder2.writeTimeout(j2, timeUnit2);
+                builderNewBuilder2.connectTimeout(j2, TimeUnit.SECONDS);
+                builderNewBuilder2.readTimeout(j2, TimeUnit.SECONDS);
+                builderNewBuilder2.writeTimeout(j2, TimeUnit.SECONDS);
                 AbstractC2271.m4154(builderNewBuilder2);
                 OkHttpClient okHttpClientM4156 = AbstractC2272.m4155(builderNewBuilder2.build());
                 c0438.f1765 = okHttpClientM4156;
@@ -100,7 +100,7 @@ public final /* synthetic */ class C2362 implements InterfaceC1425 {
                             String str3 = (String) entry3.getKey();
                             String string = ((String) entry3.getValue()).toString();
                             FormBody.Builder builder3 = c0438.f2002;
-                            if (string != null) {
+                            if (true) {
                                 builder3.add(str3, string);
                             }
                         }
@@ -108,6 +108,6 @@ public final /* synthetic */ class C2362 implements InterfaceC1425 {
                 }
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

@@ -116,7 +116,7 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
             declaredMethod.setAccessible(true);
             iIntValue = ((Integer) declaredMethod.invoke(declaredField.get(null), null)).intValue();
         } catch (Throwable unused) {
-            iIntValue = Http2.INITIAL_MAX_FRAME_SIZE;
+            iIntValue = 16384;
         }
         f4607 = iIntValue;
     }
@@ -129,7 +129,7 @@ public final class SharedPreferencesC1269 implements SharedPreferences, SharedPr
         HashMap map = new HashMap();
         if (c2840Arr != null) {
             for (C2840 c2840 : c2840Arr) {
-                c2840.getClass();
+                
                 if (map.containsKey("StringSet")) {
                     AbstractC2202.m4003(this, "duplicate encoder tag:StringSet");
                 } else {

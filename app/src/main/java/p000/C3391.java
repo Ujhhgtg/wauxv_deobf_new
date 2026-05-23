@@ -43,7 +43,7 @@ public final /* synthetic */ class C3391 implements InterfaceC1443 {
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -99,7 +99,7 @@ public final /* synthetic */ class C3391 implements InterfaceC1443 {
                     break;
                 case 8:
                     str10 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2839.f9108, str10);
-                    i |= bc.e;
+                    i |= 256;
                     break;
                 case 9:
                     str = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 9, C2839.f9108, str);

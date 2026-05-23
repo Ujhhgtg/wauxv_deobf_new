@@ -2,7 +2,6 @@ package p000;
 
 import android.content.Context;
 import android.widget.LinearLayout;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤝᤞᛸᲇᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -43,11 +42,11 @@ public final /* synthetic */ class C3560 implements InterfaceC1414 {
             Context context = ((LinearLayout) ((C2103) this.f11167.f11164).f6935).getContext();
             StringBuilder sb = new StringBuilder();
             sb.append("重启 ");
-            C1565.f5440.getClass();
+            
             sb.append((String) C1565.f5447.m1086(C1565.f5441[5]));
             sb.append(" 生效");
             AbstractC3681.m5338(context, 6, sb.toString());
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

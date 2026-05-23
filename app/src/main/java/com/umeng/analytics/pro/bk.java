@@ -63,7 +63,7 @@ class bk implements bf {
             if (i != 0 || bundle == null) {
                 return;
             }
-            String string = bundle.getString(c.b);
+            String string = bundle.getString("oa_id_flag");
             if (bk.c(string)) {
                 String unused = bk.a = string;
             }

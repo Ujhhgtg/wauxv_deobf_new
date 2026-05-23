@@ -40,12 +40,12 @@ public class Defcon implements d {
     public long getReqInterval() {
         int i = this.mLevel;
         if (i == 1) {
-            return MILLIS_4_HOURS;
+            return 14400000L;
         }
         if (i != 2) {
             return i != 3 ? 0L : 86400000L;
         }
-        return MILLIS_8_HOURS;
+        return 28800000L;
     }
 
     public long getRetryInterval() {

@@ -57,9 +57,9 @@ public class c {
         this.i = ImprintHandler.getImprintService(context).c();
         this.k = Defcon.getService(this.r);
         SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(this.r);
-        this.l = sharedPreferences.getLong(o, 0L);
-        this.m = sharedPreferences.getInt(p, 0);
-        this.n = sharedPreferences.getInt(q, 0);
+        this.l = sharedPreferences.getLong("thtstart", 0L);
+        this.m = sharedPreferences.getInt("gkvc", 0);
+        this.n = sharedPreferences.getInt("ekvc", 0);
         this.a = UMEnvelopeBuild.imprintProperty(this.r, "track_list", null);
         ImprintHandler imprintService = ImprintHandler.getImprintService(this.r);
         this.g = imprintService;
@@ -111,17 +111,17 @@ public class c {
             int iA = bArrA == null ? 1 : a(bArrA);
             if (UMConfigure.isDebugLog()) {
                 if (zD && iA == 2) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "heart beat req: succeed.");
+                    UMRTLog.i("MobclickRT", "heart beat req: succeed.");
                 } else if (zC && iA == 2) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "Zero req: succeed.");
+                    UMRTLog.i("MobclickRT", "Zero req: succeed.");
                 } else if (zB && iA == 2) {
                     MLog.d("本次启动数据: 发送成功!");
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "Send instant data: succeed.");
+                    UMRTLog.i("MobclickRT", "Send instant data: succeed.");
                 } else if (zA && iA == 2) {
                     MLog.d("普通统计数据: 发送成功!");
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "Send analytics data: succeed.");
+                    UMRTLog.i("MobclickRT", "Send analytics data: succeed.");
                 } else if (iA == 2) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "Inner req: succeed.");
+                    UMRTLog.i("MobclickRT", "Inner req: succeed.");
                 }
             }
             if (iA == 2) {
@@ -133,11 +133,11 @@ public class c {
                 if (zD) {
                     String strImprintProperty = UMEnvelopeBuild.imprintProperty(this.r, "iss", "");
                     if (!TextUtils.isEmpty(strImprintProperty)) {
-                        if (SdkVersion.MINI_VERSION.equalsIgnoreCase(strImprintProperty)) {
-                            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 更新静默心跳最后一次成功请求时间.");
+                        if ("1".equalsIgnoreCase(strImprintProperty)) {
+                            UMRTLog.e("MobclickRT", "--->>> 更新静默心跳最后一次成功请求时间.");
                             com.umeng.commonsdk.utils.c.a(this.r, System.currentTimeMillis());
                         } else if ("0".equalsIgnoreCase(strImprintProperty)) {
-                            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 静默模式 -> 正常模式。重置 last req time");
+                            UMRTLog.e("MobclickRT", "--->>> 静默模式 -> 正常模式。重置 last req time");
                             com.umeng.commonsdk.utils.c.a(this.r, 0L);
                             com.umeng.commonsdk.utils.c.d(this.r);
                         }
@@ -147,9 +147,9 @@ public class c {
                 StatTracer.getInstance(this.r).saveSate();
                 if (zC) {
                     FieldManager.a().a(this.r);
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 零号报文应答内容报错!!! ，特殊处理!，继续正常流程。");
+                    UMRTLog.e("MobclickRT", "--->>> 零号报文应答内容报错!!! ，特殊处理!，继续正常流程。");
                     Context context = this.r;
-                    UMWorkDispatch.sendEvent(context, com.umeng.commonsdk.internal.a.s, com.umeng.commonsdk.internal.b.a(context).a(), null);
+                    UMWorkDispatch.sendEvent(context, 32784, com.umeng.commonsdk.internal.b.a(context).a(), null);
                     return true;
                 }
             }

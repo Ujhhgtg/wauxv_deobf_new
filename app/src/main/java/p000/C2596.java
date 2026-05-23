@@ -252,7 +252,7 @@ public final class C2596 {
                 break;
             }
             C3448 c3448 = (C3448) c2819.m3062(i5);
-            C1832 c1832M3586 = c1833.m3586(i4, iM4966);
+            C1832 c1832M3586 = c1833.m3586(0, iM4966);
             if (c1832M3586 == null) {
                 c2525M4532 = C2525.m4532(iM4966, c3448, null);
             } else {
@@ -306,9 +306,9 @@ public final class C2596 {
                 c0442 = c0444;
             }
             int iM4611 = m4610(-5);
-            c0442.f6944 = z2;
+            c0442.f6944 = false;
             m4606(new C0402(iM4610, c0442, C1660.m3381(iM4611), iM4611), c1660);
-            C0442 c0445 = new C0442(m4611() ? 2 : i2);
+            C0442 c0445 = new C0442(m4611() ? 2 : 1);
             if (m4611()) {
                 z4 = false;
                 c0445.m3063(0, new C2351(AbstractC2598.m4622(c2525), c2788M2261, c2525, c2526));
@@ -316,10 +316,10 @@ public final class C2596 {
                 z4 = false;
             }
             c0445.m3063(m4611() ? 1 : 0, new C2868(AbstractC2598.f8395, c2788M2261, C2526.m4546(c2525), C2819.f9030));
-            c0445.f6944 = z4;
-            m4606(new C0402(iM4611, c0445, C1660.m3381(z4 ? 1 : 0), z4 ? 1 : 0), c1660);
-            r10 = z3;
-            r12 = z4;
+            c0445.f6944 = false;
+            m4606(new C0402(iM4611, c0445, C1660.m3381(0), 0), c1660);
+            r10 = false;
+            r12 = false;
         } else {
             i3 = i3;
             i = i8;
@@ -345,7 +345,7 @@ public final class C2596 {
         ((AbstractC1834) c0244.f1404).mo2894();
         ((C1242) c0244.f1405).f6944 = false;
         while (true) {
-            int iM3296 = AbstractC1574.m3296(iArrM3302, i11);
+            int iM3296 = AbstractC1574.m3296(iArrM3302, 0);
             if (iM3296 < 0) {
                 C2597 c2597 = this.f8234;
                 C2590 c2591 = c2597.f8259;
@@ -355,11 +355,11 @@ public final class C2596 {
                     C2788 c2788 = c2597.f8260;
                     int iM4612 = m4610(-2);
                     if (m4613()) {
-                        C0442 c0446 = new C0442(i2);
+                        C0442 c0446 = new C0442(1);
                         C2590 c2592 = AbstractC2598.f8396;
                         int i12 = r4.f2867.f1493 + i;
-                        if (i12 < i2) {
-                            i12 = i2;
+                        if (i12 < 1) {
+                            i12 = 1;
                         }
                         c0446.m3063(0, new C2868(c2592, c2788, C2526.m4546(C2525.m4532(i12, C3448.f10882, r10)), C2819.f9030));
                         c0446.f6944 = false;
@@ -367,7 +367,7 @@ public final class C2596 {
                         m4606(new C0402(iM4612, c0446, C1660.m3381(iM4613), iM4613), C1660.f5608);
                         iM4612 = iM4613;
                     }
-                    C0442 c0447 = new C0442(i2);
+                    C0442 c0447 = new C0442(1);
                     InterfaceC3454 interfaceC3454 = c2591.f8206;
                     if (interfaceC3454.size() == 0) {
                         c2526M4546 = C2526.f8058;
@@ -376,11 +376,11 @@ public final class C2596 {
                         z = false;
                         c2526M4546 = C2526.m4546(C2525.m4532(0, interfaceC3454.getType(0), r10));
                     }
-                    c0447.m3063(z ? 1 : 0, new C2351(c2591, c2788, (C2525) r10, c2526M4546));
-                    c0447.f6944 = z;
+                    c0447.m3063(0, new C2351(c2591, c2788, (C2525) r10, c2526M4546));
+                    c0447.f6944 = false;
                     C1660 c1661 = C1660.f5608;
                     m4606(new C0402(iM4612, c0447, c1661, -1), c1661);
-                    r13 = z;
+                    r13 = false;
                 }
                 if (this.f8240) {
                     C2788 c2788M2262 = r4.m2261(r13);
@@ -392,16 +392,16 @@ public final class C2596 {
                     c0448.m3063(r13, new C2351(new C2590(4, c34410, c28111, r10), c2788M2262, c2525M4534, C2526.f8058));
                     C2590 c2593 = AbstractC2598.f8396;
                     int i13 = i + r4.f2867.f1493;
-                    if (i13 < i2) {
-                        i13 = i2;
+                    if (i13 < 1) {
+                        i13 = 1;
                     }
-                    c0448.m3063(i2, new C2868(c2593, c2788M2262, C2526.m4546(C2525.m4532(i13, C3448.f10882, r10)), c28111));
+                    c0448.m3063(1, new C2868(c2593, c2788M2262, C2526.m4546(C2525.m4532(i13, C3448.f10882, r10)), c28111));
                     c0448.f6944 = false;
                     int iM4614 = m4610(-7);
                     C0402 c0403 = new C0402(m4610(-6), c0448, C1660.m3381(iM4614), iM4614);
                     C1660 c1662 = C1660.f5608;
                     m4606(c0403, c1662);
-                    C0442 c0449 = new C0442(i2);
+                    C0442 c0449 = new C0442(1);
                     c0449.m3063(0, new C2868(AbstractC2598.f8394, c2788M2262, C2526.m4546(c2525M4534), c28111));
                     c0449.f6944 = false;
                     m4606(new C0402(iM4614, c0449, c1662, -1), c1662);
@@ -472,7 +472,7 @@ public final class C2596 {
             }
             int i20 = i3;
             i11 = 0;
-            int i21 = i2;
+            int i21 = 1;
             AbstractC1574.m3290(iArrM3302, iM3296);
             C0526 c0526 = this.f8231;
             int iM3507 = c0526.m3507(iM3296);
@@ -481,7 +481,7 @@ public final class C2596 {
             }
             try {
                 m4617((C0525) c0526.m3062(iM3507), c0243Arr[iM3296], iArrM3302);
-                i2 = i21;
+                i2 = 1;
                 i3 = i20;
             } catch (C2704 e) {
                 e.m2885("...while working on block ".concat(AbstractC1460.m3223(iM3296)));
@@ -755,7 +755,7 @@ public final class C2596 {
                 c0662 = c0667;
                 i3 = i11;
                 i4 = i15;
-                i5 = i16;
+                i5 = 1;
             } else {
                 i16 = 1;
                 C2587 c2587 = c2597.f8258;
@@ -790,7 +790,7 @@ public final class C2596 {
                     ?? r4 = c2596;
                     while (iNextSetBit2 >= 0) {
                         C0243 c0247 = c0246;
-                        int iM3387 = r4.m4614(iNextSetBit2).f1899.m3384(i18);
+                        int iM3387 = r4.m4614(iNextSetBit2).f1899.m3384(0);
                         int i19 = c06611.f2529;
                         C0662 c06612 = c06611;
                         try {
@@ -927,7 +927,7 @@ public final class C2596 {
             int i27 = i2;
             if (i25 == 0 && c2597.f8253) {
                 c1660M3381 = C1660.m3381(c2598.m4610(-2));
-                i8 = i16;
+                i8 = 1;
             } else {
                 c1660M3381 = c1664;
                 i8 = i25;
@@ -940,7 +940,7 @@ public final class C2596 {
                     iM3385 = c1660M3381.m3384(iM3385);
                 }
             }
-            int i28 = (c2598.m4613() && c2597.f8257) ? i16 : 0;
+            int i28 = (c2598.m4613() && c2597.f8257) ? 1 : 0;
             if (i28 == 0 && i27 == 0) {
                 i9 = iM3385;
             } else {
@@ -954,7 +954,7 @@ public final class C2596 {
                         c0919 = C0918.f3381;
                     }
                     int i31 = c0535.f2237;
-                    int i32 = i30 | (c0919 == C0918.f3381 ? i16 : 0);
+                    int i32 = i30 | (c0919 == C0918.f3381 ? 1 : 0);
                     C1242 c1242M2897 = c1242.m2897();
                     c1242M2897.m3925();
                     C1660 c1666 = c1665;
@@ -1010,7 +1010,7 @@ public final class C2596 {
                 i9 = iM3385;
                 if (i28 != 0 && i30 == 0) {
                     c1667.m3382(c2598.m4610(-6));
-                    ?? r2 = i16;
+                    ?? r2 = 1;
                     c2598.f8240 = r2;
                     for (int i36 = (i26 - i4) - (r2 == true ? 1 : 0); i36 < i26; i36++) {
                         AbstractC1649 abstractC1649 = (AbstractC1649) arrayList.get(i36);

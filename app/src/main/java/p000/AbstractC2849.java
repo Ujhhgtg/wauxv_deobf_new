@@ -30,7 +30,7 @@ public abstract class AbstractC2849 extends AbstractC2848 {
         }
         if (length != 1) {
             StringBuilder sb = new StringBuilder(str.length() * i);
-            if (1 <= i) {
+            if (true) {
                 while (true) {
                     sb.append((CharSequence) str);
                     if (i2 == i) {

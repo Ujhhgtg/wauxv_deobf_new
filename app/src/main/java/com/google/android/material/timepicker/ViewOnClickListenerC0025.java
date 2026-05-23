@@ -16,7 +16,7 @@ public final class ViewOnClickListenerC0025 implements View.OnClickListener {
 
     @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
-        int i = TimePickerView.f893;
-        this.f898.getClass();
+        int i = 0;
+        
     }
 }

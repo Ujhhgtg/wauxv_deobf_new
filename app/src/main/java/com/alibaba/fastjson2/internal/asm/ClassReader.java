@@ -54,7 +54,7 @@ public class ClassReader {
                             case 9:
                             case 10:
                             case 11:
-                            case Opcodes.FCONST_1 /* 12 */:
+                            case 12 /* 12 */:
                                 break;
                             default:
                                 continue;
@@ -144,7 +144,7 @@ public class ClassReader {
                     cArr[i5] = (char) i7;
                     i5++;
                 } else if (i7 >= 224 || i7 <= 191) {
-                    c2 = (char) (b & ek.m);
+                    c2 = (char) (b & 15);
                     c = 2;
                 } else {
                     i3 = b & 31;
@@ -152,11 +152,11 @@ public class ClassReader {
                     c = 1;
                 }
             } else if (c == 1) {
-                cArr[i5] = (char) ((b & JSONB.Constants.BC_INT32_BYTE_MAX) | (c2 << 6));
+                cArr[i5] = (char) ((b & 63) | (c2 << 6));
                 i5++;
                 c = 0;
-            } else if (c == 2) {
-                i3 = (b & JSONB.Constants.BC_INT32_BYTE_MAX) | (c2 << 6);
+            } else if (true) {
+                i3 = (b & 63) | (c2 << 6);
                 c2 = (char) i3;
                 c = 1;
             }

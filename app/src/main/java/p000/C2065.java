@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C2065 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C2065 f6861 = new C2065("MsgInfoHook.ValLeftMargin", null, null, false, 64, 0.0f, 0, UMErrorCode.E_UM_BE_JSON_FAILED);
+    public static final C2065 f6861 = new C2065("MsgInfoHook.ValLeftMargin", null, null, false, 64, 0.0f, 0, 110);
 }

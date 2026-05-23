@@ -43,7 +43,7 @@ public abstract class AbstractC2371 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static boolean m4341(C2355 c2355) throws IOException {
         Object c2585;
-        c2355.getClass();
+        
         String[] strArr = AbstractC1574.f5469;
         try {
             c2355.m4333();

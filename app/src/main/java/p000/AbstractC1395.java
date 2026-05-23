@@ -36,7 +36,7 @@ public abstract class AbstractC1395 extends AbstractC1785 {
         super(context, attributeSet, 0);
         this.f5017 = new Rect();
         this.f5018 = new Rect();
-        this.f5019 = Opcodes.DNEG;
+        this.f5019 = 119;
         this.f5020 = true;
         this.f5021 = false;
         AbstractC3471.m5066(context, attributeSet, 0, 0);

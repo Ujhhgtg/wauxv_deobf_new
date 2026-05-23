@@ -69,20 +69,20 @@ public final class ViewOnTouchListenerC1822 implements View.OnTouchListener {
 
     public ViewOnTouchListenerC1822(AbstractC1111 abstractC1111) {
         C0311 c0311 = new C0311();
-        c0311.f1544 = Long.MIN_VALUE;
+        c0311.f1544 = -9223372036854775808L;
         c0311.f1546 = -1L;
         c0311.f1545 = 0L;
         this.f6084 = c0311;
         this.f6085 = new AccelerateInterpolator();
         float[] fArr = {0.0f, 0.0f};
         this.f6088 = fArr;
-        float[] fArr2 = {Float.MAX_VALUE, Float.MAX_VALUE};
+        float[] fArr2 = {3.4028235E38f, 3.4028235E38f};
         this.f6089 = fArr2;
         float[] fArr3 = {0.0f, 0.0f};
         this.f6092 = fArr3;
         float[] fArr4 = {0.0f, 0.0f};
         this.f6093 = fArr4;
-        float[] fArr5 = {Float.MAX_VALUE, Float.MAX_VALUE};
+        float[] fArr5 = {3.4028235E38f, 3.4028235E38f};
         this.f6094 = fArr5;
         this.f6086 = abstractC1111;
         float f = Resources.getSystem().getDisplayMetrics().density;
@@ -93,8 +93,8 @@ public final class ViewOnTouchListenerC1822 implements View.OnTouchListener {
         fArr4[0] = f3;
         fArr4[1] = f3;
         this.f6090 = 1;
-        fArr2[0] = Float.MAX_VALUE;
-        fArr2[1] = Float.MAX_VALUE;
+        fArr2[0] = 3.4028235E38f;
+        fArr2[1] = 3.4028235E38f;
         fArr[0] = 0.2f;
         fArr[1] = 0.2f;
         fArr3[0] = 0.001f;
@@ -146,7 +146,7 @@ public final class ViewOnTouchListenerC1822 implements View.OnTouchListener {
             c0311.f1543 = fM3579;
             if (!this.f6098 && m3581()) {
                 if (this.f6087 == null) {
-                    this.f6087 = new RunnableC0141(i2, this);
+                    this.f6087 = new RunnableC0141(2, this);
                 }
                 this.f6098 = true;
                 this.f6096 = true;
@@ -256,7 +256,7 @@ public final class ViewOnTouchListenerC1822 implements View.OnTouchListener {
             int childCount = abstractC1111.getChildCount();
             int firstVisiblePosition = abstractC1111.getFirstVisiblePosition();
             int i = firstVisiblePosition + childCount;
-            if (iAbs <= 0 ? !(iAbs >= 0 || (firstVisiblePosition <= 0 && abstractC1111.getChildAt(0).getTop() >= 0)) : !(i >= count && abstractC1111.getChildAt(childCount - 1).getBottom() <= abstractC1111.getHeight())) {
+            if (iAbs <= 0 ? !(false || (firstVisiblePosition <= 0 && abstractC1111.getChildAt(0).getTop() >= 0)) : !(i >= count && abstractC1111.getChildAt(childCount - 1).getBottom() <= abstractC1111.getHeight())) {
                 return true;
             }
         }

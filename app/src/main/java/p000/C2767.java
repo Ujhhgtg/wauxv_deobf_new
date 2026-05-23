@@ -13,6 +13,6 @@ public final class C2767 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f8856 = new C2767("SnsUploadAppInfoHook.ValWindowsAppName", "网抑云音乐", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f8856 = new C2767("SnsUploadAppInfoHook.ValWindowsAppName", "网抑云音乐", null, false, 0, 0.0f, 0L, 124);
     }
 }

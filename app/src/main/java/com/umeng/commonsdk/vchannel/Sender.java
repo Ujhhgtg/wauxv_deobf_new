@@ -22,13 +22,13 @@ public class Sender {
     public static void handleEvent(Context context, b bVar) {
         Context context2;
         if (context == null) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> Sender:handleEvent: context is null.");
+            UMRTLog.e("MobclickRT", "--->>> Sender:handleEvent: context is null.");
             return;
         }
         try {
             JSONObject jSONObject = new JSONObject();
             try {
-                jSONObject.put(bv.aP, "1.0.0");
+                jSONObject.put("v_sdk_v", "1.0.0");
                 Map<String, String> map = customHeader;
                 if (map != null && map.size() > 0) {
                     for (String str : customHeader.keySet()) {
@@ -41,7 +41,7 @@ public class Sender {
             jSONObject2.put("analytics", bVar.d());
             context2 = context;
             try {
-                UMEnvelopeBuild.buildEnvelopeWithExtHeader(context2, jSONObject, jSONObject2, a.c, bv.aE, "1.0.0");
+                UMEnvelopeBuild.buildEnvelopeWithExtHeader(context2, jSONObject, jSONObject2, a.c, "v", "1.0.0");
             } catch (Throwable th) {
                 th = th;
                 UMCrashManager.reportCrash(context2, th);
@@ -54,23 +54,23 @@ public class Sender {
 
     public static void onEvent(Context context, String str, Map<String, Object> map) {
         if (context == null) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> Sender: onEvent: context is null.");
+            UMRTLog.e("MobclickRT", "--->>> Sender: onEvent: context is null.");
             return;
         }
         if (TextUtils.isEmpty(str)) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> Sender: onEvent: eventID is null or an empty string.");
+            UMRTLog.e("MobclickRT", "--->>> Sender: onEvent: eventID is null or an empty string.");
             return;
         }
         if (map == null) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> Sender: onEvent: map is null.");
+            UMRTLog.e("MobclickRT", "--->>> Sender: onEvent: map is null.");
             return;
         }
         if (!UMFrUtils.isOnline(context)) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> Sender: onEvent: Network unavailable.");
+            UMRTLog.e("MobclickRT", "--->>> Sender: onEvent: Network unavailable.");
             return;
         }
         if (System.currentTimeMillis() - lastTriggerTime < INTERVAL_THRESHOLD) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> Sender: onEvent: The interval between events is less than 500 milliseconds.");
+            UMRTLog.e("MobclickRT", "--->>> Sender: onEvent: The interval between events is less than 500 milliseconds.");
             return;
         }
         b bVar = new b(context);
@@ -78,7 +78,7 @@ public class Sender {
         bVar.a(System.currentTimeMillis());
         bVar.a(map);
         try {
-            UMWorkDispatch.sendEvent(context, com.umeng.commonsdk.internal.a.o, com.umeng.commonsdk.internal.b.a(context).a(), bVar);
+            UMWorkDispatch.sendEvent(context, 32779, com.umeng.commonsdk.internal.b.a(context).a(), bVar);
         } catch (Throwable unused) {
         }
         lastTriggerTime = System.currentTimeMillis();

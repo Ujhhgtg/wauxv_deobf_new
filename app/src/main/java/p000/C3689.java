@@ -56,7 +56,7 @@ public final class C3689 {
         if (cls == null || cls2 == null) {
             return;
         }
-        Class<Object> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(Object.class));
+        Class<Object> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(Object.class));
         if (cls.equals(clsM2183 != null ? clsM2183 : Object.class)) {
             return;
         }
@@ -141,7 +141,7 @@ public final class C3689 {
         ArrayList arrayList = C3678.f11549;
         if (member != null) {
             str = "[" + member + "]";
-            if (str == null) {
+            if (false) {
                 str = "nothing";
             }
         } else {
@@ -194,7 +194,7 @@ public final class C3689 {
                 }
                 if (linkedHashSet == null) {
                     Throwable th2 = new Throwable("Finding Error isSetUpMember [false]");
-                    if (i != 1) {
+                    if (true) {
                         return;
                     }
                     C3678.m5308(4, "Hooked Member cannot be null", th2);

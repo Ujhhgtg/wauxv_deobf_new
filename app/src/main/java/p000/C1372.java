@@ -30,12 +30,12 @@ public final class C1372 {
     public final String f4944;
 
     public C1372(String str, String str2, String str3, List list, String str4, String str5) {
-        str.getClass();
+        
         this.f4938 = str;
-        str2.getClass();
+        
         this.f4939 = str2;
         this.f4940 = str3;
-        list.getClass();
+        
         this.f4941 = list;
         this.f4942 = str4;
         this.f4943 = str5;

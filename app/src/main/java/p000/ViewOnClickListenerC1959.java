@@ -26,12 +26,12 @@ public final class ViewOnClickListenerC1959 implements View.OnClickListener {
         switch (i) {
             case 0:
                 C1962 c1962 = c1961.f6495;
-                c1962.getClass();
+                
                 EditText editText = c1961.f6488;
                 if (editText != null) {
                     c1962.m757(editText, false);
                 }
-                c1962.getClass();
+                
                 if (view != null) {
                     AbstractC2205 abstractC2205 = AbstractC1034.f3778;
                     view.performHapticFeedback(3);
@@ -43,7 +43,7 @@ public final class ViewOnClickListenerC1959 implements View.OnClickListener {
                     String string = editText != null ? editText.getText().toString() : "";
                     C2297 c2297 = (C2297) c1962.f6508;
                     C1962 c1963 = c1962.f6498;
-                    c2297.getClass();
+                    
                     C2297.m4163(c1963, string);
                     c1961.m3786(view);
                 } else if (interfaceC0377 instanceof C2005) {
@@ -53,12 +53,12 @@ public final class ViewOnClickListenerC1959 implements View.OnClickListener {
                 break;
             case 1:
                 C1962 c1964 = c1961.f6495;
-                c1964.getClass();
+                
                 EditText editText2 = c1961.f6488;
                 if (editText2 != null) {
                     c1964.m757(editText2, false);
                 }
-                c1964.getClass();
+                
                 if (view != null) {
                     AbstractC2205 abstractC2206 = AbstractC1034.f3778;
                     view.performHapticFeedback(3);
@@ -73,12 +73,12 @@ public final class ViewOnClickListenerC1959 implements View.OnClickListener {
                 break;
             case 2:
                 C1962 c1965 = c1961.f6495;
-                c1965.getClass();
+                
                 EditText editText3 = c1961.f6488;
                 if (editText3 != null) {
                     c1965.m757(editText3, false);
                 }
-                c1965.getClass();
+                
                 if (view != null) {
                     AbstractC2205 abstractC2207 = AbstractC1034.f3778;
                     view.performHapticFeedback(3);
@@ -92,7 +92,7 @@ public final class ViewOnClickListenerC1959 implements View.OnClickListener {
                 }
                 break;
             default:
-                c1961.f6495.getClass();
+                
                 c1961.m3786(view);
                 break;
         }

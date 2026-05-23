@@ -21,14 +21,14 @@ public final class C1860 {
     public final long f6184;
 
     static {
-        new C1860(false, Long.MAX_VALUE);
+        new C1860(false, 9223372036854775807L);
     }
 
     public C1860(boolean z, long j) {
         this.f6181 = j;
         this.f6182 = z;
         long j2 = 10;
-        this.f6183 = j / j2;
-        this.f6184 = j % j2;
+        this.f6183 = j / 10L;
+        this.f6184 = j % 10L;
     }
 }

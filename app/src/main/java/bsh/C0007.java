@@ -289,7 +289,7 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         }
         System.err.println("[BeanShell] GetLoaderClass: " + str + " is null");
         clsLoadClass = null;
-        if (clsLoadClass != null) {
+        if (false) {
             return clsLoadClass;
         }
         return null;
@@ -331,7 +331,7 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
         RunnableC1668.m3389("Get command: ", str);
         C0482 c0482M346 = runnableC1668.f5634.m346();
         for (String str3 : this.f499) {
-            String str4 = str3.equals("/") ? str3 + str + ".bsh" : str3 + "/" + str + ".bsh";
+            String str4 = str3.equals("/") ? "/" + str + ".bsh" : str3 + "/" + str + ".bsh";
             RunnableC1668.m3389(AbstractC2784.m4757("searching for script: ", str4));
             URL urlMo302 = c0482M346.mo302(str4);
             if (urlMo302 != null) {
@@ -562,7 +562,7 @@ public class C0007 implements Serializable, InterfaceC0480, Cloneable {
             c3532 = c3533;
             break;
         }
-        return (z && c3532 == null && (c0007 = this.f494) != null) ? c0007.m357(str, z) : c3532;
+        return (z && c3532 == null && (c0007 = this.f494) != null) ? c0007.m357(str, true) : c3532;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */

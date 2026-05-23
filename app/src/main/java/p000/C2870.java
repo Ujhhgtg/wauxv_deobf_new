@@ -18,7 +18,7 @@ public final class C2870 {
     public int f9202;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public C2869[] f9203 = new C2869[bc.e];
+    public C2869[] f9203 = new C2869[256];
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public int f9204 = 1;
@@ -80,7 +80,7 @@ public final class C2870 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final C2869 m4868(int i, int i2) {
-        int i3 = (i + i2) & Integer.MAX_VALUE;
+        int i3 = (i + i2) & 2147483647;
         for (C2869 c2869M4875 = m4875(i3); c2869M4875 != null; c2869M4875 = c2869M4875.f9199) {
             if (c2869M4875.f9192 == i && c2869M4875.f9198 == i3 && c2869M4875.f9196 == i2) {
                 return c2869M4875;
@@ -100,7 +100,7 @@ public final class C2870 {
     public final C2869 m4869(int i, long j) {
         int i2 = (int) j;
         int i3 = (int) (j >>> 32);
-        int i4 = (i + i2 + i3) & Integer.MAX_VALUE;
+        int i4 = (i + i2 + i3) & 2147483647;
         for (C2869 c2869M4875 = m4875(i4); c2869M4875 != null; c2869M4875 = c2869M4875.f9199) {
             if (c2869M4875.f9192 == i && c2869M4875.f9198 == i4 && c2869M4875.f9196 == j) {
                 return c2869M4875;
@@ -134,14 +134,14 @@ public final class C2870 {
     public final C2869 m4870(int i, String str, String str2, String str3) {
         C0516 c0516;
         int i2;
-        int iHashCode = ((str3.hashCode() * str2.hashCode() * str.hashCode()) + i) & Integer.MAX_VALUE;
+        int iHashCode = ((str3.hashCode() * str2.hashCode() * str.hashCode()) + i) & 2147483647;
         for (C2869 c2869M4875 = m4875(iHashCode); c2869M4875 != null; c2869M4875 = c2869M4875.f9199) {
             if (c2869M4875.f9192 == i && c2869M4875.f9198 == iHashCode && c2869M4875.f9193.equals(str) && c2869M4875.f9194.equals(str2) && c2869M4875.f9195.equals(str3)) {
                 return c2869M4875;
             }
         }
         int i3 = m4872(7, str).f9191;
-        int iHashCode2 = Integer.MAX_VALUE & ((str3.hashCode() * str2.hashCode()) + 12);
+        int iHashCode2 = 2147483647 & ((str3.hashCode() * str2.hashCode()) + 12);
         C2869 c2869M4876 = m4875(iHashCode2);
         while (true) {
             c0516 = this.f9205;
@@ -169,7 +169,7 @@ public final class C2870 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final int m4871(String str) {
-        int iHashCode = (str.hashCode() + 1) & Integer.MAX_VALUE;
+        int iHashCode = (str.hashCode() + 1) & 2147483647;
         for (C2869 c2869M4875 = m4875(iHashCode); c2869M4875 != null; c2869M4875 = c2869M4875.f9199) {
             if (c2869M4875.f9192 == 1 && c2869M4875.f9198 == iHashCode && c2869M4875.f9195.equals(str)) {
                 return c2869M4875.f9191;
@@ -225,7 +225,7 @@ public final class C2870 {
                     } else if (cCharAt3 <= 2047) {
                         byte[] bArr3 = c0516.f2190;
                         int i10 = i9 + 1;
-                        bArr3[i9] = (byte) (((cCharAt3 >> 6) & 31) | Opcodes.CHECKCAST);
+                        bArr3[i9] = (byte) (((cCharAt3 >> 6) & 31) | 192);
                         i9 += 2;
                         bArr3[i10] = (byte) ((cCharAt3 & '?') | 128);
                     } else {
@@ -257,7 +257,7 @@ public final class C2870 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final C2869 m4872(int i, String str) {
-        int iHashCode = (str.hashCode() + i) & Integer.MAX_VALUE;
+        int iHashCode = (str.hashCode() + i) & 2147483647;
         for (C2869 c2869M4875 = m4875(iHashCode); c2869M4875 != null; c2869M4875 = c2869M4875.f9199) {
             if (c2869M4875.f9192 == i && c2869M4875.f9198 == iHashCode && c2869M4875.f9195.equals(str)) {
                 return c2869M4875;
@@ -293,7 +293,7 @@ public final class C2870 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final int m4874(String str) {
-        int iHashCode = (str.hashCode() + 128) & Integer.MAX_VALUE;
+        int iHashCode = (str.hashCode() + 128) & 2147483647;
         for (C2869 c2869M4875 = m4875(iHashCode); c2869M4875 != null; c2869M4875 = c2869M4875.f9199) {
             if (c2869M4875.f9192 == 128 && c2869M4875.f9198 == iHashCode && c2869M4875.f9195.equals(str)) {
                 return c2869M4875.f9191;

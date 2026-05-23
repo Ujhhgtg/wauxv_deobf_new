@@ -31,7 +31,7 @@ public abstract class AbstractC0843 extends AbstractC0370 {
     public final void mo1492() {
         InterfaceC0842 interfaceC0842 = this.f3250;
         if (interfaceC0842 != null && interfaceC0842 != this) {
-            ((AbstractC0878) this.f3249.mo942(C1133.f4202)).getClass();
+            
             C1072 c1072 = (C1072) interfaceC0842;
             AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = C1072.f3886;
             while (atomicReferenceFieldUpdater.get(c1072) == AbstractC2203.f7167) {

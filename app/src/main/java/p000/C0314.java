@@ -3,7 +3,6 @@ package p000;
 import android.view.View;
 import java.lang.reflect.InvocationTargetException;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤞᤝᲇᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -45,27 +44,27 @@ public final class C0314 extends AbstractC2867 implements InterfaceC1578 {
             if (AbstractC2207.m4087(obj3, bool)) {
                 return;
             }
-            int i = AbstractC1745.f5844;
-            C1299 c1299M3490 = AbstractC0968.m2484(obj2).m3490();
-            C0204.f1288.getClass();
+            int i = 0;
+            C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
+            
             C0203 c0203 = C0203.f1287;
-            c1299M3490.f4725 = AbstractC1574.m3315(c0203).getDeclaringClass();
-            Object objM3023 = ((C1315) AbstractC0744.m2191(c1299M3490.m3014())).m3023();
-            C3426.f10800.getClass();
-            Object objInvoke = AbstractC1574.m3315(c0203).invoke(objM3023, (Class) AbstractC0270.m1385(AbstractC1574.m3313(C3425.f10799).getInterfaces()));
+            c1299M3490.fieldType = AbstractC1574.dexToMethod(c0203).getDeclaringClass();
+            Object objM3023 = ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3023();
+            
+            Object objInvoke = AbstractC1574.dexToMethod(c0203).invoke(objM3023, (Class) AbstractC0270.m1385(AbstractC1574.dexToClass(C3425.f10799).getInterfaces()));
             long msgId = msgInfoBean.getMsgId();
-            C1973 c1973M3492 = AbstractC0968.m2484(objInvoke).m3492();
+            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objInvoke).m3492();
             c1973M3492.f6544 = new C2798(29);
-            if (AbstractC2207.m4087(((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(Long.TYPE)}, 1, c1973M3492)).m3832(Long.valueOf(msgId)).toString(), "NoTransform")) {
+            if (AbstractC2207.m4087(((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Long.TYPE)}, 1, c1973M3492)).invoke(Long.valueOf(msgId)).toString(), "NoTransform")) {
                 c0313.put(Long.valueOf(msgInfoBean.getMsgId()), bool);
                 Object origin = msgInfoBean.getOrigin();
-                C1973 c1973M3493 = AbstractC0968.m2484(objInvoke).m3492();
-                c1973M3493.f6543 = Void.TYPE;
-                C2060.f6855.getClass();
-                Class clsM3313 = AbstractC1574.m3313(C2059.f6854);
-                C0707 c0707M4527 = AbstractC2519.m4527(Boolean.TYPE);
+                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(objInvoke).m3492();
+                c1973M3493.returnType = Void.TYPE;
+                
+                Class clsM3313 = AbstractC1574.dexToClass(C2059.f6854);
+                C0707 c0707M4527 = AbstractC2519.classToKClass(Boolean.TYPE);
                 Class cls = Integer.TYPE;
-                ((C1982) AbstractC2784.m4743(new Object[]{clsM3313, c0707M4527, AbstractC2519.m4527(cls), AbstractC2519.m4527(cls)}, 4, c1973M3493)).m3831(origin, Boolean.FALSE, -1, 0);
+                ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{clsM3313, c0707M4527, AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls)}, 4, c1973M3493)).m3831(origin, Boolean.FALSE, -1, 0);
             }
         }
     }

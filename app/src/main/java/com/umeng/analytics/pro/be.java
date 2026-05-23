@@ -53,36 +53,36 @@ public class be {
         HashMap map = new HashMap();
         E = map;
         F = "";
-        map.put(a, "envelope");
-        E.put(b, ".umeng");
-        E.put(c, ".imprint");
-        E.put(d, "ua.db");
-        E.put(e, "umeng_zero_cache.db");
+        map.put("env", "envelope");
+        E.put("exp", ".umeng");
+        E.put("imp", ".imprint");
+        E.put("ua", "ua.db");
+        E.put("zc", "umeng_zero_cache.db");
         E.put("id", "umeng_it.cache");
-        E.put(g, "umeng_zcfg_flag");
-        E.put(h, "exid.dat");
-        E.put(i, "umeng_common_config");
-        E.put(j, "umeng_general_config");
-        E.put(k, "um_session_id");
-        E.put(l, "umeng_sp_oaid");
-        E.put(m, "mobclick_agent_user_");
-        E.put(n, "umeng_subprocess_info");
-        E.put(o, "delayed_transmission_flag_new");
+        E.put("zf", "umeng_zcfg_flag");
+        E.put("exid", "exid.dat");
+        E.put("ucc", "umeng_common_config");
+        E.put("ugc", "umeng_general_config");
+        E.put("usi", "um_session_id");
+        E.put("uso", "umeng_sp_oaid");
+        E.put("user", "mobclick_agent_user_");
+        E.put("uspi", "umeng_subprocess_info");
+        E.put("dtfn", "delayed_transmission_flag_new");
         E.put("pr", "umeng_policy_result_flag");
-        E.put(q, "um_policy_grant");
-        E.put(r, "um_pri");
-        E.put(s, "UM_PROBE_DATA");
-        E.put(t, "ekv_bl");
-        E.put(u, "ekv_wl");
-        E.put(v, h.a);
-        E.put(w, "ua_");
-        E.put(x, "stateless");
-        E.put(y, ".emitter");
-        E.put(z, "um_slmode_sp");
-        E.put(A, "um_rtd_conf");
-        E.put(B, "");
-        E.put(C, ".dmpvedpogjhejs.cfg");
-        E.put(D, ".pisw02fl");
+        E.put("upg", "um_policy_grant");
+        E.put("pri", "um_pri");
+        E.put("probe", "UM_PROBE_DATA");
+        E.put("bl", "ekv_bl");
+        E.put("wl", "ekv_wl");
+        E.put("subp", "exid".a);
+        E.put("subua", "ua_");
+        E.put("sta", "stateless");
+        E.put("emi", ".emitter");
+        E.put("sli", "um_slmode_sp");
+        E.put("rtd", "um_rtd_conf");
+        E.put("lepd", "");
+        E.put("ccfg", ".dmpvedpogjhejs.cfg");
+        E.put("pi_sw", ".pisw02fl");
     }
 
     private be() {
@@ -103,7 +103,7 @@ public class be {
             return "";
         }
         String str2 = E.get(str);
-        if (!b.equalsIgnoreCase(str) && !c.equalsIgnoreCase(str) && !y.equalsIgnoreCase(str)) {
+        if (!"exp".equalsIgnoreCase(str) && !"imp".equalsIgnoreCase(str) && !"emi".equalsIgnoreCase(str)) {
             return AbstractC2784.m4752(new StringBuilder(), F, str2);
         }
         return "." + F + str2.substring(1);
@@ -114,6 +114,6 @@ public class be {
     }
 
     public static be b() {
-        return a.a;
+        return "env".a;
     }
 }

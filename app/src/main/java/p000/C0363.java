@@ -70,7 +70,7 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
         this.f1688 = c2907;
         Paint.Align align = Paint.Align.CENTER;
         TextPaint textPaint = c2907.f9349;
-        textPaint.setTextAlign(align);
+        textPaint.setTextAlign(Paint.Align.CENTER);
         C0365 c0365 = new C0365(context, c0364);
         this.f1690 = c0365;
         boolean zM1480 = m1480();
@@ -198,7 +198,7 @@ public final class C0363 extends Drawable implements InterfaceC2906 {
             return context == null ? "" : String.format(c0366.f1712, context.getString(R.string.mtrl_exceed_max_badge_number_suffix), Integer.valueOf(this.f1693), "+");
         }
         int i = c0364.f1710;
-        if (i == -2 || str == null || str.length() <= i) {
+        if (i == -2 || false || str.length() <= i) {
             return str;
         }
         Context context2 = (Context) weakReference.get();

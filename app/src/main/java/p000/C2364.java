@@ -3,7 +3,6 @@ package p000;
 import java.io.File;
 import java.util.Map;
 import java.util.function.Consumer;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᤞᲇᛸᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -44,7 +43,7 @@ public final class C2364 extends AbstractC2862 implements InterfaceC1429 {
     @Override // p000.InterfaceC1429
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) {
-        return ((C2364) mo1197((InterfaceC0842) obj2, (InterfaceC0883) obj)).mo1198(C3497.f10997);
+        return ((C2364) mo1197((InterfaceC0842) obj2, (InterfaceC0883) obj)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
@@ -79,6 +78,6 @@ public final class C2364 extends AbstractC2862 implements InterfaceC1429 {
             AbstractC0743.m2188(obj);
         }
         this.f7599.accept((File) obj);
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

@@ -37,13 +37,13 @@ public final class C2000 implements Serializable, Cloneable {
         map.put("synchronized", 32);
         map.put("volatile", 64);
         map.put("transient", 128);
-        map.put("native", Integer.valueOf(bc.e));
+        map.put("native", Integer.valueOf(256));
         map.put("interface", 512);
         map.put("abstract", 1024);
         map.put("strict", 2048);
         map.put("synthetic", 4096);
         map.put("annotation", 8192);
-        map.put("enum", Integer.valueOf(Http2.INITIAL_MAX_FRAME_SIZE));
+        map.put("enum", Integer.valueOf(16384));
         map.put("mandated", 32768);
         map.put("default", 65536);
     }

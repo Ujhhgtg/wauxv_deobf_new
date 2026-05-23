@@ -42,8 +42,8 @@ public final class Http2ExchangeCodec implements ExchangeCodec {
     private static final String TRANSFER_ENCODING = "transfer-encoding";
     private static final String ENCODING = "encoding";
     private static final String UPGRADE = "upgrade";
-    private static final List<String> HTTP_2_SKIPPED_REQUEST_HEADERS = Util.immutableListOf(CONNECTION, HOST, KEEP_ALIVE, PROXY_CONNECTION, TE, TRANSFER_ENCODING, ENCODING, UPGRADE, Header.TARGET_METHOD_UTF8, Header.TARGET_PATH_UTF8, Header.TARGET_SCHEME_UTF8, Header.TARGET_AUTHORITY_UTF8);
-    private static final List<String> HTTP_2_SKIPPED_RESPONSE_HEADERS = Util.immutableListOf(CONNECTION, HOST, KEEP_ALIVE, PROXY_CONNECTION, TE, TRANSFER_ENCODING, ENCODING, UPGRADE);
+    private static final List<String> HTTP_2_SKIPPED_REQUEST_HEADERS = Util.immutableListOf("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade", ":method", ":path", ":scheme", ":authority");
+    private static final List<String> HTTP_2_SKIPPED_RESPONSE_HEADERS = Util.immutableListOf("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade");
 
     /* JADX INFO: compiled from: obf */
     public static final class Companion {
@@ -64,7 +64,7 @@ public final class Http2ExchangeCodec implements ExchangeCodec {
             int size = headers.size();
             for (int i = 0; i < size; i++) {
                 String lowerCase = headers.name(i).toLowerCase(Locale.US);
-                if (!Http2ExchangeCodec.HTTP_2_SKIPPED_REQUEST_HEADERS.contains(lowerCase) || (lowerCase.equals(Http2ExchangeCodec.TE) && AbstractC2207.m4087(headers.value(i), "trailers"))) {
+                if (!Http2ExchangeCodec.HTTP_2_SKIPPED_REQUEST_HEADERS.contains(lowerCase) || (lowerCase.equals("te") && AbstractC2207.m4087(headers.value(i), "trailers"))) {
                     arrayList.add(new Header(lowerCase, headers.value(i)));
                 }
             }
@@ -78,7 +78,7 @@ public final class Http2ExchangeCodec implements ExchangeCodec {
             for (int i = 0; i < size; i++) {
                 String strName = headers.name(i);
                 String strValue = headers.value(i);
-                if (AbstractC2207.m4087(strName, Header.RESPONSE_STATUS_UTF8)) {
+                if (AbstractC2207.m4087(strName, ":status")) {
                     statusLine = StatusLine.Companion.parse("HTTP/1.1 " + strValue);
                 } else if (!Http2ExchangeCodec.HTTP_2_SKIPPED_RESPONSE_HEADERS.contains(strName)) {
                     builder.addLenient$okhttp(strName, strValue);
@@ -100,7 +100,7 @@ public final class Http2ExchangeCodec implements ExchangeCodec {
         this.http2Connection = http2Connection;
         List<Protocol> listProtocols = okHttpClient.protocols();
         Protocol protocol = Protocol.H2_PRIOR_KNOWLEDGE;
-        this.protocol = listProtocols.contains(protocol) ? protocol : Protocol.HTTP_2;
+        this.protocol = listProtocols.contains(Protocol.H2_PRIOR_KNOWLEDGE) ? Protocol.H2_PRIOR_KNOWLEDGE : Protocol.HTTP_2;
     }
 
     @Override // okhttp3.internal.http.ExchangeCodec
@@ -176,7 +176,7 @@ public final class Http2ExchangeCodec implements ExchangeCodec {
         C3400 timeout = this.stream.readTimeout();
         long readTimeoutMillis$okhttp = this.chain.getReadTimeoutMillis$okhttp();
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-        timeout.timeout(readTimeoutMillis$okhttp, timeUnit);
-        this.stream.writeTimeout().timeout(this.chain.getWriteTimeoutMillis$okhttp(), timeUnit);
+        timeout.timeout(readTimeoutMillis$okhttp, TimeUnit.MILLISECONDS);
+        this.stream.writeTimeout().timeout(this.chain.getWriteTimeoutMillis$okhttp(), TimeUnit.MILLISECONDS);
     }
 }

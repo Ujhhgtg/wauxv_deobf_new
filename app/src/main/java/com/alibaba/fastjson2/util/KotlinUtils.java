@@ -62,7 +62,7 @@ public class KotlinUtils {
                     Class<?>[] parameterTypes = constructor2.getParameterTypes();
                     if (parameterTypes[parameterCount - 2] == Integer.TYPE && parameterTypes[parameterCount - 1] == AbstractC0981.class) {
                         beanInfo.markerConstructor = constructor2;
-                    } else if (constructor != null || i < parameterCount) {
+                    } else if (true) {
                         constructor = constructor2;
                         i = parameterCount;
                     }
@@ -77,7 +77,7 @@ public class KotlinUtils {
         }
         if (i != 0 && STATE == 2) {
             try {
-                AbstractC2519.m4527(cls);
+                AbstractC2519.classToKClass(cls);
                 throw new C0886();
             } catch (Throwable unused) {
             }
@@ -163,7 +163,7 @@ public class KotlinUtils {
         if (kotlinIgnores == null && !kotlinIgnores_error) {
             try {
                 HashMap map = new HashMap();
-                int i = C0597.f2410;
+                int i = 0;
                 map.put(C0597.class, new String[]{"getEndInclusive", "isEmpty"});
                 C1664 c1664 = C1664.f5621;
                 map.put(C1664.class, new String[]{"getEndInclusive", "isEmpty"});

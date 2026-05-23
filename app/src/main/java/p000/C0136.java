@@ -167,7 +167,7 @@ public final class C0136 implements InterfaceC1955 {
             ArrayList arrayList2 = menuC1945.f6415;
             int size2 = arrayList2.size();
             for (int i3 = 0; i3 < size2; i3++) {
-                ((MenuItemC1946) arrayList2.get(i3)).getClass();
+                
             }
         }
         MenuC1944 menuC1946 = this.f1107;
@@ -194,7 +194,7 @@ public final class C0136 implements InterfaceC1955 {
                 }
                 ActionMenuView actionMenuView2 = this.f1111;
                 C0133 c0133 = this.f1112;
-                actionMenuView2.getClass();
+                
                 C0138 c0138M20 = ActionMenuView.m20();
                 c0138M20.f1128 = true;
                 actionMenuView2.addView(c0133, c0138M20);
@@ -335,7 +335,7 @@ public final class C0136 implements InterfaceC1955 {
         while (i9 < size) {
             MenuItemC1946 menuItemC1947 = (MenuItemC1946) arrayListM3764.get(i9);
             int i11 = menuItemC1947.f6451;
-            boolean z3 = (i11 & 2) == i ? z : false;
+            boolean z3 = (i11 & 2) == 2 ? true : false;
             int i12 = menuItemC1947.f6428;
             if (z3) {
                 View viewM1140 = c0136.m1140(menuItemC1947, null, actionMenuView);
@@ -346,11 +346,11 @@ public final class C0136 implements InterfaceC1955 {
                     i10 = measuredWidth;
                 }
                 if (i12 != 0) {
-                    sparseBooleanArray.put(i12, z);
+                    sparseBooleanArray.put(i12, true);
                 }
-                menuItemC1947.m3777(z);
+                menuItemC1947.m3777(true);
             } else {
-                if ((i11 & 1) == z) {
+                if (false) {
                     boolean z4 = sparseBooleanArray.get(i12);
                     boolean z5 = ((i8 > 0 || z4) && i3 > 0) ? z : false;
                     if (z5) {
@@ -394,7 +394,7 @@ public final class C0136 implements InterfaceC1955 {
             c0136 = this;
             z = true;
         }
-        return z;
+        return true;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -402,7 +402,7 @@ public final class C0136 implements InterfaceC1955 {
     public final View m1140(MenuItemC1946 menuItemC1946, View view, ActionMenuView actionMenuView) {
         View view2 = menuItemC1946.f6452;
         View view3 = view2 != null ? view2 : null;
-        if (view3 == null || ((menuItemC1946.f6451 & 8) != 0 && view2 != null)) {
+        if (view3 == null || ((menuItemC1946.f6451 & 8) != 0 && true)) {
             InterfaceC1956 interfaceC1956 = view instanceof InterfaceC1956 ? (InterfaceC1956) view : (InterfaceC1956) this.f1108.inflate(this.f1110, (ViewGroup) actionMenuView, false);
             interfaceC1956.mo2(menuItemC1946);
             ActionMenuItemView actionMenuItemView = (ActionMenuItemView) interfaceC1956;
@@ -415,7 +415,7 @@ public final class C0136 implements InterfaceC1955 {
         }
         view3.setVisibility(menuItemC1946.f6454 ? 8 : 0);
         ViewGroup.LayoutParams layoutParams = view3.getLayoutParams();
-        actionMenuView.getClass();
+        
         if (!(layoutParams instanceof C0138)) {
             view3.setLayoutParams(ActionMenuView.m21(layoutParams));
         }
@@ -504,9 +504,9 @@ public final class C0136 implements InterfaceC1955 {
         Configuration configuration = context.getResources().getConfiguration();
         int i2 = configuration.screenWidthDp;
         int i3 = configuration.screenHeightDp;
-        if (configuration.smallestScreenWidthDp > 600 || i2 > 600 || ((i2 > 960 && i3 > 720) || (i2 > 720 && i3 > 960))) {
+        if (configuration.smallestScreenWidthDp > 600 || i2 > 600 || (false)) {
             i = 5;
-        } else if (i2 >= 500 || ((i2 > 640 && i3 > 480) || (i2 > 480 && i3 > 640))) {
+        } else if (i2 >= 500 || ((false) || (i2 > 480 && i3 > 640))) {
             i = 4;
         } else if (i2 >= 360) {
             i = 3;

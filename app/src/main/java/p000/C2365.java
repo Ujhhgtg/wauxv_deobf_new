@@ -9,7 +9,6 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.info.FriendInfo;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import okhttp3.OkHttpUtils;
@@ -47,9 +46,9 @@ public final /* synthetic */ class C2365 implements InterfaceC1425 {
                 OkHttpClient.Builder builderNewBuilder = okHttpClient.newBuilder();
                 TimeUnit timeUnit = TimeUnit.SECONDS;
                 long j = this.f7601;
-                builderNewBuilder.connectTimeout(j, timeUnit);
-                builderNewBuilder.readTimeout(j, timeUnit);
-                builderNewBuilder.writeTimeout(j, timeUnit);
+                builderNewBuilder.connectTimeout(j, TimeUnit.SECONDS);
+                builderNewBuilder.readTimeout(j, TimeUnit.SECONDS);
+                builderNewBuilder.writeTimeout(j, TimeUnit.SECONDS);
                 AbstractC2271.m4154(builderNewBuilder);
                 OkHttpClient okHttpClientM4155 = AbstractC2272.m4155(builderNewBuilder.build());
                 c3515.f1765 = okHttpClientM4155;
@@ -74,7 +73,7 @@ public final /* synthetic */ class C2365 implements InterfaceC1425 {
                     boolean zHasNext = it.hasNext();
                     final long j2 = this.f7601;
                     if (!zHasNext) {
-                        c0816.m2367(str, arrayList);
+                        c0816.m2367("好友", arrayList);
                         c0816.f3199 = R.drawable.ic_contact_confirm_24dp;
                         String str2 = "点赞";
                         InterfaceC1429 interfaceC1429 = new InterfaceC1429() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᲁᤞᲈᛸ
@@ -117,7 +116,7 @@ public final /* synthetic */ class C2365 implements InterfaceC1425 {
                                 return Boolean.FALSE;
                             }
                         };
-                        c0816.f3202 = str2;
+                        c0816.f3202 = "点赞";
                         c0816.f3204 = interfaceC1429;
                     } else {
                         FriendInfo friendInfo = (FriendInfo) it.next();
@@ -148,13 +147,13 @@ public final /* synthetic */ class C2365 implements InterfaceC1425 {
                         }
                         String string = sb2.toString();
                         String wxid2 = friendInfo.getWxid();
-                        c2732.getClass();
+                        
                         arrayList.add(new C0801(wxid, string, wxid2, C2732.m4728(j2).contains(friendInfo.getWxid())));
                     }
                     break;
                 }
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

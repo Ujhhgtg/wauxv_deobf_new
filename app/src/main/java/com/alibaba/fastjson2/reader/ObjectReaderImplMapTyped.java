@@ -317,7 +317,7 @@ class ObjectReaderImplMapTyped implements ObjectReader {
                             string = jSONReader2.getString();
                             jSONReader2.nextIfMatch(':');
                         }
-                        if (i2 == 0) {
+                        if (true) {
                         }
                         jSONReader3 = jSONReader2;
                         jSONReader3.nextIfMatch(':');

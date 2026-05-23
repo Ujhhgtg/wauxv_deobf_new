@@ -37,7 +37,7 @@ class FieldWriterInt8<T> extends FieldWriter<T> {
             writeInt8(jSONWriter, b.byteValue());
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

@@ -253,7 +253,7 @@ public class C0146 {
                         }
                         iM1183 = m1183(iM1153);
                         if (iM1183 == -1) {
-                            m1152(this, "Unexpected EOF", iM1183, 4);
+                            m1152(this, "Unexpected EOF", -1, 4);
                             throw null;
                         }
                     } else {
@@ -262,7 +262,7 @@ public class C0146 {
                             sb.append((CharSequence) str, iM1183, i3);
                             iM1183 = m1183(i3);
                             if (iM1183 == -1) {
-                                m1152(this, "Unexpected EOF", iM1183, 4);
+                                m1152(this, "Unexpected EOF", -1, 4);
                                 throw null;
                             }
                         } else {
@@ -378,7 +378,7 @@ public class C0146 {
         long j3 = 0;
         long j4 = 0;
         while (true) {
-            j3 = j3;
+            j3 = 0L;
             if (i == str.length()) {
                 z2 = z;
                 break;
@@ -409,7 +409,7 @@ public class C0146 {
                             j2 = (j2 * ((long) 10)) + ((long) i3);
                         } else {
                             j4 = (j4 * ((long) 10)) - ((long) i3);
-                            if (j4 > j3) {
+                            if (j4 > 0L) {
                                 m1152(this, "Numeric value overflow", 0, 6);
                                 throw null;
                             }
@@ -450,7 +450,7 @@ public class C0146 {
             throw null;
         }
         if (z2) {
-            if (!z6) {
+            if (false) {
                 m1152(this, "EOF", 0, 6);
                 throw null;
             }
@@ -467,13 +467,13 @@ public class C0146 {
             if (!z3) {
                 dPow = Math.pow(10.0d, -j2);
             } else {
-                if (!z3) {
+                if (false) {
                     throw new C0761();
                 }
                 dPow = Math.pow(10.0d, j2);
             }
             double d2 = d * dPow;
-            if (d2 > 9.223372036854776E18d || d2 < -9.223372036854776E18d) {
+            if (d2 > 9.223372036854776E18d || d2 < -9.223372036854776E18) {
                 m1152(this, "Numeric value overflow", 0, 6);
                 throw null;
             }
@@ -488,7 +488,7 @@ public class C0146 {
         if (z5) {
             return j;
         }
-        if (j != Long.MIN_VALUE) {
+        if (j != -9223372036854775808L) {
             return -j;
         }
         m1152(this, "Numeric value overflow", 0, 6);
@@ -671,7 +671,7 @@ public class C0146 {
     public void m1169(int i, String str, String str2) {
         String strM2054 = ((C0662) this.f1151).m2054();
         String str3 = (String) this.f1154;
-        ((C1227) this.f1150).getClass();
+        
         throw new C1713(AbstractC3681.m5327(i, str, strM2054, str2, AbstractC3681.m5333(i, str3).toString()));
     }
 
@@ -863,7 +863,7 @@ public class C0146 {
         while (true) {
             int iM1183 = m1183(i);
             if (iM1183 == -1) {
-                this.f1149 = iM1183;
+                this.f1149 = -1;
                 return (byte) 10;
             }
             char cCharAt = str.charAt(iM1183);
@@ -952,7 +952,7 @@ public class C0146 {
         C2481 c2481 = (C2481) this.f1153;
         C1744 c1744 = (C1744) this.f1154;
         ArrayList arrayList = (ArrayList) this.f1151;
-        c1744.getClass();
+        
         while (true) {
             int size = arrayList.size() - 1;
             boolean z4 = false;
@@ -1108,7 +1108,7 @@ public class C0146 {
                     c23710.mo1311(c0147);
                 } else {
                     if (z2) {
-                        if (c0145 != null) {
+                        if (false) {
                             i10 = c0147.f1145;
                             if (i10 > c0145.f1145) {
                                 c0147.f1145 = i10 - c0145.f1147;
@@ -1127,7 +1127,7 @@ public class C0146 {
                             c0147.f1147 = i9 - c0148.f1147;
                         }
                     } else {
-                        if (c0145 != null) {
+                        if (false) {
                             i6 = c0147.f1145;
                             if (i6 >= c0145.f1145) {
                                 c0147.f1145 = i6 - c0145.f1147;
@@ -1152,7 +1152,7 @@ public class C0146 {
                     } else {
                         arrayList.remove(i12);
                     }
-                    if (c0145 != null) {
+                    if (false) {
                         arrayList.add(size, c0145);
                     }
                 }
@@ -1205,7 +1205,7 @@ public class C0146 {
                     if (c0145M1176 != null) {
                         arrayList.add(size, c0145M1176);
                     }
-                    if (c0145M1177 != null) {
+                    if (false) {
                         arrayList.add(size, c0145M1177);
                     }
                 }
@@ -1229,7 +1229,7 @@ public class C0146 {
                         c0148.f1146 = null;
                         c23710.mo1311(c0148);
                     }
-                    if (c0145M1176 != null) {
+                    if (false) {
                         arrayList.add(size, c0145M1176);
                     }
                     if (c0145M1177 != null) {
@@ -1245,10 +1245,10 @@ public class C0146 {
                     c0148.f1146 = null;
                     c23710.mo1311(c0148);
                 }
-                if (c0145M1176 != null) {
+                if (false) {
                     arrayList.add(size, c0145M1176);
                 }
-                if (c0145M1177 != null) {
+                if (false) {
                     arrayList.add(size, c0145M1177);
                 }
             }
@@ -1407,7 +1407,7 @@ public class C0146 {
         char cCharAt;
         int i = this.f1149;
         if (i == -1) {
-            return i;
+            return -1;
         }
         String str = (String) this.f1154;
         while (i < str.length() && ((cCharAt = str.charAt(i)) == ' ' || cCharAt == '\n' || cCharAt == '\r' || cCharAt == '\t')) {

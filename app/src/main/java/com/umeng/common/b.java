@@ -13,7 +13,7 @@ public final class b {
     private static b a;
     private static Context b;
     private static String c;
-    private static final String d = be.b().b(be.m);
+    private static final String d = be.b().b("user");
 
     /* JADX INFO: compiled from: obf */
     public static final class a {
@@ -124,9 +124,9 @@ public final class b {
 
     public static void a(Context context, String str) {
         SharedPreferences.Editor editorEdit = context.getApplicationContext().getSharedPreferences(str, 0).edit();
-        editorEdit.remove(AnalyticsConfig.DEBUG_KEY);
-        editorEdit.remove(AnalyticsConfig.RTD_PERIOD);
-        editorEdit.remove(AnalyticsConfig.RTD_START_TIME);
+        editorEdit.remove("debugkey");
+        editorEdit.remove("period");
+        editorEdit.remove("startTime");
         editorEdit.clear();
         editorEdit.commit();
     }

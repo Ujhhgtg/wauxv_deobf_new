@@ -29,7 +29,7 @@ public abstract class AbstractC0056 implements InterfaceC1743 {
         Object objMo931 = obj != null ? mo931(obj) : mo925();
         int iMo926 = mo926(objMo931);
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(mo1363());
-        interfaceC0766Mo2512.getClass();
+        
         while (true) {
             int iMo2230 = interfaceC0766Mo2512.mo2230(mo1363());
             if (iMo2230 == -1) {

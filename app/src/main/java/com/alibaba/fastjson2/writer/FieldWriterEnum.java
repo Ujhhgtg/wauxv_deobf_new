@@ -179,7 +179,7 @@ class FieldWriterEnum extends FieldWriter {
         } else {
             jSONWriter.writeNameRaw(this.nameJSONB, this.hashCode);
         }
-        jSONWriter.writeRaw(JSONB.Constants.BC_STR_ASCII);
+        jSONWriter.writeRaw(121);
         jSONWriter.writeInt32(-ordinalByHashCode);
         return true;
     }
@@ -292,7 +292,7 @@ class FieldWriterEnum extends FieldWriter {
     @Override // com.alibaba.fastjson2.writer.FieldWriter
     public final int writeEnumValueJSONB(byte[] bArr, int i, Enum r10, SymbolTable symbolTable, long j) {
         if (r10 == null) {
-            bArr[i] = JSONB.Constants.BC_NULL;
+            bArr[i] = -81;
             return i + 1;
         }
         long j2 = j | this.features;

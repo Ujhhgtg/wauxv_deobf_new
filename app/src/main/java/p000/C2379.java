@@ -77,6 +77,6 @@ public class C2379 implements InterfaceC2378 {
     }
 
     public C2379() {
-        this.f7633 = new Object[bc.e];
+        this.f7633 = new Object[256];
     }
 }

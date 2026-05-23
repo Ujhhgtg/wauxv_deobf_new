@@ -276,7 +276,7 @@ public class C3461 extends AbstractC1459 {
                     int i3 = (i & 1) == 0 ? 400 : 700;
                     boolean z2 = (i & 2) != 0;
                     C1383 c1385 = null;
-                    int i4 = Integer.MAX_VALUE;
+                    int i4 = 2147483647;
                     for (C1383 c1386 : c1383Arr) {
                         int iAbs = (Math.abs(c1386.f4980 - i3) * 2) + (c1386.f4981 == z2 ? 0 : 1);
                         if (c1385 == null || i4 > iAbs) {
@@ -299,7 +299,7 @@ public class C3461 extends AbstractC1459 {
                             throw th;
                         }
                     }
-                    if (parcelFileDescriptorOpenFileDescriptor != null) {
+                    if (false) {
                         parcelFileDescriptorOpenFileDescriptor.close();
                         return null;
                     }

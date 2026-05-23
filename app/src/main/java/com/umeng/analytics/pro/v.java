@@ -45,12 +45,12 @@ public class v {
         if (g == null && context != null) {
             g = context.getApplicationContext();
         }
-        return a.a;
+        return "fs_lc_tl_uapp".a;
     }
 
     private void b(Context context) {
         try {
-            String string = PreferenceWrapper.getDefault(context).getString(a, null);
+            String string = PreferenceWrapper.getDefault(context).getString("fs_lc_tl_uapp", null);
             if (!TextUtils.isEmpty(string)) {
                 this.h = new JSONObject(string);
             }
@@ -62,7 +62,7 @@ public class v {
     private void c(Context context) {
         try {
             if (this.h != null) {
-                PreferenceWrapper.getDefault(g).edit().putString(a, this.h.toString()).commit();
+                PreferenceWrapper.getDefault(g).edit().putString("fs_lc_tl_uapp", this.h.toString()).commit();
             }
         } catch (Throwable unused) {
         }
@@ -70,7 +70,7 @@ public class v {
 
     private v() {
         this.b = 128;
-        this.c = bc.e;
+        this.c = 256;
         this.d = 1024;
         this.e = 10;
         this.h = null;
@@ -107,7 +107,7 @@ public class v {
                 if (j > 0) {
                     jSONObject.put(g.ac, j);
                 }
-                jSONObject.put("__t", l.a);
+                jSONObject.put("__t", 2049);
                 if (!TextUtils.isEmpty(str2)) {
                     jSONObject.put(str, str2);
                 }
@@ -117,7 +117,7 @@ public class v {
                     strA = ab.a().a(UMGlobalContext.getAppContext(g), jCurrentTimeMillis);
                 }
                 if (TextUtils.isEmpty(strA)) {
-                    strA = f;
+                    strA = "-1";
                 }
                 jSONObject.put("__i", strA);
                 if (!TextUtils.isEmpty(str3)) {
@@ -139,7 +139,7 @@ public class v {
                     c(g);
                 }
                 Context context = g;
-                UMWorkDispatch.sendEvent(context, r.a.a, CoreProtocol.getInstance(context), jSONObject);
+                UMWorkDispatch.sendEvent(context, 4097, CoreProtocol.getInstance(context), jSONObject);
                 return;
             }
             UMLog.aq(m.l, 0, "\\|");
@@ -177,7 +177,7 @@ public class v {
                         if (entry.getValue() instanceof String) {
                             if (g.aK.equals(entry.getKey())) {
                                 if (!c(entry.getValue().toString())) {
-                                    UMLog.aq(m.P, 0, "\\|");
+                                    UMLog.aq("MobclickAgent.onDeepLinkReceived方法link参数长度超过限制。|参数link长度不能超过1024字符。", 0, "\\|");
                                     return false;
                                 }
                             } else if ("_$!url".equals(entry.getKey())) {
@@ -224,7 +224,7 @@ public class v {
                 if (j > 0) {
                     jSONObject.put(g.ac, j);
                 }
-                jSONObject.put("__t", l.a);
+                jSONObject.put("__t", 2049);
                 ULog.i("befort ekv map, event is " + jSONObject.toString());
                 for (Map.Entry<String, Object> entry : map.entrySet()) {
                     if (!Arrays.asList(g.aM).contains(entry.getKey())) {
@@ -328,7 +328,7 @@ public class v {
                     strA = ab.a().d(UMGlobalContext.getAppContext(g));
                 }
                 if (TextUtils.isEmpty(strA)) {
-                    strA = f;
+                    strA = "-1";
                 }
                 jSONObject.put("__i", strA);
                 if (!TextUtils.isEmpty(str2)) {
@@ -352,10 +352,10 @@ public class v {
                 ULog.i("----->>>>>ekv event json is " + jSONObject.toString());
                 if (!z) {
                     Context context = g;
-                    UMWorkDispatch.sendEvent(context, r.a.a, CoreProtocol.getInstance(context), jSONObject);
+                    UMWorkDispatch.sendEvent(context, 4097, CoreProtocol.getInstance(context), jSONObject);
                 } else {
                     Context context2 = g;
-                    UMWorkDispatch.sendEvent(context2, r.a.n, CoreProtocol.getInstance(context2), jSONObject);
+                    UMWorkDispatch.sendEvent(context2, 4355, CoreProtocol.getInstance(context2), jSONObject);
                 }
             }
         } catch (Throwable unused2) {
@@ -369,7 +369,7 @@ public class v {
                 jSONObject.put("id", str);
                 jSONObject.put("ts", System.currentTimeMillis());
                 jSONObject.put(g.ac, 0);
-                jSONObject.put("__t", l.b);
+                jSONObject.put("__t", 2050);
                 ULog.i("befort gkv map, event is " + jSONObject.toString());
                 Iterator<Map.Entry<String, Object>> it = map.entrySet().iterator();
                 for (int i = 0; i < 10 && it.hasNext(); i++) {
@@ -383,7 +383,7 @@ public class v {
                 }
                 String strD = ab.a().d(UMGlobalContext.getAppContext(g));
                 if (TextUtils.isEmpty(strD)) {
-                    strD = f;
+                    strD = "-1";
                 }
                 jSONObject.put("__i", strD);
                 if (!TextUtils.isEmpty(str2)) {
@@ -399,7 +399,7 @@ public class v {
                 jSONObject.put("pn", UMGlobalContext.getInstance(g).getProcessName(g));
                 ULog.i("----->>>>>gkv event json is " + jSONObject.toString());
                 Context context = g;
-                UMWorkDispatch.sendEvent(context, r.a.b, CoreProtocol.getInstance(context), jSONObject);
+                UMWorkDispatch.sendEvent(context, 4098, CoreProtocol.getInstance(context), jSONObject);
             }
         } catch (Throwable unused2) {
         }
@@ -570,7 +570,7 @@ public class v {
                                     jSONObject.put(strSubStr, jSONArray6);
                                 }
                             } else if (value instanceof String) {
-                                jSONObject.put(strSubStr, HelperUtils.subStr(value.toString(), bc.e));
+                                jSONObject.put(strSubStr, HelperUtils.subStr(value.toString(), 256));
                             } else if (!(value instanceof Long) && !(value instanceof Integer) && !(value instanceof Float) && !(value instanceof Double) && !(value instanceof Short)) {
                                 MLog.e("The param has not support type. please check !");
                             } else {

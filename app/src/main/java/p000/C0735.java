@@ -32,8 +32,8 @@ public final class C0735 extends MetricAffectingSpan implements LeadingMarginSpa
         int width;
         Paint.Style style = Paint.Style.FILL;
         Paint paint2 = this.f2765;
-        paint2.setStyle(style);
-        this.f2763.getClass();
+        paint2.setStyle(Paint.Style.FILL);
+        
         paint2.setColor(AbstractC2665.m4657(paint.getColor(), 25));
         if (i2 > 0) {
             width = canvas.getWidth();
@@ -53,14 +53,14 @@ public final class C0735 extends MetricAffectingSpan implements LeadingMarginSpa
 
     @Override // android.text.style.CharacterStyle
     public final void updateDrawState(TextPaint textPaint) {
-        this.f2763.getClass();
+        
         textPaint.setTypeface(Typeface.MONOSPACE);
         textPaint.setTextSize(textPaint.getTextSize() * 0.87f);
     }
 
     @Override // android.text.style.MetricAffectingSpan
     public final void updateMeasureState(TextPaint textPaint) {
-        this.f2763.getClass();
+        
         textPaint.setTypeface(Typeface.MONOSPACE);
         textPaint.setTextSize(textPaint.getTextSize() * 0.87f);
     }

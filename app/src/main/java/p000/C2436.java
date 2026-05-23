@@ -463,7 +463,7 @@ public class C2436 extends AbstractC0592 implements InterfaceC0974, InterfaceC07
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲀᤞᲇ, reason: contains not printable characters */
     public final LinkedHashMap m4396(InterfaceC1743 interfaceC1743, Object obj) {
-        ((C1799) interfaceC1743).getClass();
+        
         C2839 c2839 = C2839.f9108;
         C1717 c1717 = C1717.f5811;
         C1895 c1895 = new C1895(0);

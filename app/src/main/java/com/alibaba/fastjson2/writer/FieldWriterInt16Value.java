@@ -18,13 +18,13 @@ final class FieldWriterInt16Value<T> extends FieldWriterInt16<T> {
         long features = this.features | jSONWriter.getFeatures();
         try {
             short shortValue = this.propertyAccessor.getShortValue(t);
-            if (shortValue == 0 && this.defaultValue == null && (features & JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE) != 0) {
+            if (shortValue == 0 && this.defaultValue == null && (features & 4096L) != 0) {
                 return false;
             }
             writeInt16(jSONWriter, shortValue);
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

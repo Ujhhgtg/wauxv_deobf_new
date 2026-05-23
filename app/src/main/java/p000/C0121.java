@@ -6,7 +6,7 @@ import android.graphics.Typeface;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.umeng.analytics.pro.bc;
+
 import java.io.File;
 import me.hd.wauxv.hook.factory.MagicFactory;
 
@@ -65,12 +65,12 @@ public final class C0121 extends AbstractC2867 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static TextView m1125(C0121 c0121, Context context, int i, int i2, int i3, float f, String str, boolean z, File file, int i4) {
         boolean z2 = (i4 & 128) != 0;
-        int i5 = (i4 & bc.e) != 0 ? Integer.MAX_VALUE : 1;
+        int i5 = (i4 & 256) != 0 ? 2147483647 : 1;
         int i6 = (i4 & 512) != 0 ? 0 : 1;
         if ((i4 & 1024) != 0) {
             file = null;
         }
-        c0121.getClass();
+        
         String[] strArr = AbstractC1574.f5469;
         TextView textView = new TextView(context);
         textView.setId(i);
@@ -97,8 +97,8 @@ public final class C0121 extends AbstractC2867 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
-        C1982 c1982 = (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(View.class)}, 1, AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.pluginsdk.ui.preference.AccountInfoPreference")).m3492());
+        int i = 0;
+        C1982 c1982 = (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(View.class)}, 1, AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.pluginsdk.ui.preference.AccountInfoPreference")).m3492());
         C0121 c0121 = f1070;
         C3689 c3689M4174 = c0121.m4174(c1982, 1);
         c0121.m3262(c3689M4174, new C0105(1));

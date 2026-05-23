@@ -81,8 +81,8 @@ public abstract class AbstractC0751 {
             }
             if (next == 2 && depth <= depth2 && xmlPullParser.getName().equals("item")) {
                 int[] iArr2 = AbstractC2463.f7820;
-                ?? ObtainAttributes = theme == null ? resources.obtainAttributes(attributeSet, iArr2) : theme.obtainStyledAttributes(attributeSet, iArr2, i, i);
-                int resourceId = ObtainAttributes.getResourceId(i, -1);
+                ?? ObtainAttributes = theme == null ? resources.obtainAttributes(attributeSet, iArr2) : theme.obtainStyledAttributes(attributeSet, iArr2, 0, 0);
+                int resourceId = ObtainAttributes.getResourceId(0, -1);
                 if (resourceId != -1) {
                     ThreadLocal threadLocal = f2842;
                     TypedValue typedValue2 = (TypedValue) threadLocal.get();
@@ -98,13 +98,13 @@ public abstract class AbstractC0751 {
                         try {
                             color = m2220(resources, resources.getXml(resourceId), theme).getDefaultColor();
                         } catch (Exception unused) {
-                            color = ObtainAttributes.getColor(i, -65281);
+                            color = ObtainAttributes.getColor(0, -65281);
                         }
                     } else {
-                        color = ObtainAttributes.getColor(i, -65281);
+                        color = ObtainAttributes.getColor(0, -65281);
                     }
                 } else {
-                    color = ObtainAttributes.getColor(i, -65281);
+                    color = ObtainAttributes.getColor(0, -65281);
                 }
                 if (ObtainAttributes.hasValue(r4)) {
                     f = ObtainAttributes.getFloat(r4, 1.0f);
@@ -116,8 +116,8 @@ public abstract class AbstractC0751 {
                 ObtainAttributes.recycle();
                 int attributeCount = attributeSet.getAttributeCount();
                 int[] iArr3 = new int[attributeCount];
-                int i4 = i;
-                int i5 = i4;
+                int i4 = 0;
+                int i5 = 0;
                 while (i4 < attributeCount) {
                     int attributeNameResource = attributeSet.getAttributeNameResource(i4);
                     if (attributeNameResource != 16843173 && attributeNameResource != 16843551 && attributeNameResource != R.attr.alpha && attributeNameResource != R.attr.lStar) {
@@ -158,7 +158,7 @@ public abstract class AbstractC0751 {
                                     break;
                                 }
                                 float f8 = 1000.0f;
-                                float f9 = f3;
+                                float f9 = 100.0f;
                                 float f10 = 0.0f;
                                 float f11 = 1000.0f;
                                 C0554 c0555 = null;
@@ -166,10 +166,10 @@ public abstract class AbstractC0751 {
                                     if (Math.abs(f10 - f9) <= 0.01f) {
                                         iArrTrimStateSet = iArrTrimStateSet;
                                         depth2 = depth2;
-                                        f3 = f3;
+                                        f3 = 100.0f;
                                         break;
                                     }
-                                    f3 = f3;
+                                    f3 = 100.0f;
                                     float f12 = ((f9 - f10) / 2.0f) + f10;
                                     iArrTrimStateSet = iArrTrimStateSet;
                                     int iM1935 = C0554.m1934(f12, f7, fMin).m1935(C3602.f11237);
@@ -177,7 +177,7 @@ public abstract class AbstractC0751 {
                                     float fM3165 = AbstractC1458.m3164(Color.green(iM1935));
                                     float fM3166 = AbstractC1458.m3164(Color.blue(iM1935));
                                     float[] fArr = AbstractC1458.f5184[r16 == true ? 1 : 0];
-                                    float f13 = ((fM3166 * fArr[2]) + ((fM3165 * fArr[r16 == true ? 1 : 0]) + (fM3164 * fArr[0]))) / f3;
+                                    float f13 = ((fM3166 * fArr[2]) + ((fM3165 * fArr[r16 == true ? 1 : 0]) + (fM3164 * fArr[0]))) / 100.0f;
                                     float fCbrt = f13 <= 0.008856452f ? f13 * 903.2963f : (((float) Math.cbrt(f13)) * 116.0f) - 16.0f;
                                     float fAbs = Math.abs(f2 - fCbrt);
                                     if (fAbs < 0.2f) {
@@ -204,7 +204,7 @@ public abstract class AbstractC0751 {
                                     } else {
                                         f9 = f12;
                                     }
-                                    f3 = f3;
+                                    f3 = 100.0f;
                                     iArrTrimStateSet = iArrTrimStateSet;
                                     depth2 = depth2;
                                 }

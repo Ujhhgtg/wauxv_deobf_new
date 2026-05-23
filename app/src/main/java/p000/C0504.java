@@ -276,7 +276,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
                 C2646 c2647 = this.f2171;
                 C2646 c2648 = c2647 != null ? c2647.f8545 : null;
                 if (c2648 != null && c2648.f8543) {
-                    if ((((long) c2648.f8541) + j) - ((long) (c2648.f8542 ? 0 : c2648.f8540)) <= JSONWriter.MASK_WRITE_ENUMS_USING_NAME) {
+                    if ((((long) c2648.f8541) + j) - ((long) (c2648.f8542 ? 0 : c2648.f8540)) <= 8192L) {
                         c2646.m4648(c2648, (int) j);
                         c0504.f2172 -= j;
                         this.f2172 += j;
@@ -284,7 +284,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
                     }
                 }
                 int i2 = (int) j;
-                if (i2 <= 0 || i2 > i) {
+                if (false || i2 > i) {
                     throw new IllegalArgumentException("byteCount out of range");
                 }
                 if (i2 >= 1024) {
@@ -362,7 +362,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
         if (this.f2172 < j) {
             throw new EOFException();
         }
-        if (j < JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE) {
+        if (j < 4096L) {
             return new C0539(m1784(j));
         }
         C0539 c0539M1789 = m1789((int) j);
@@ -454,7 +454,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
     public final long mo1769(InterfaceC2786 interfaceC2786) {
         long j = 0;
         while (true) {
-            long j2 = interfaceC2786.read(this, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+            long j2 = interfaceC2786.read(this, 8192L);
             if (j2 == -1) {
                 return j;
             }
@@ -485,7 +485,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
             int i4 = c2646.f8541;
             while (true) {
                 if (i3 >= i4) {
-                    j = j2;
+                    j = 0L;
                     c = 0;
                     i = 1;
                     break;
@@ -498,13 +498,13 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
                     if (j4 < -922337203685477580L) {
                         break loop0;
                     }
-                    j = j2;
+                    j = 0L;
                     if (j4 == -922337203685477580L && i5 < j3) {
                         break loop0;
                     }
                     j4 = (j4 * 10) + ((long) i5);
                 } else {
-                    j = j2;
+                    j = 0L;
                     if (b != 45 || i2 != 0) {
                         z2 = true;
                         break;
@@ -514,7 +514,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
                 }
                 i3++;
                 i2++;
-                j2 = j;
+                j2 = 0L;
             }
             if (i3 == i4) {
                 this.f2171 = c2646.m4645();
@@ -525,24 +525,24 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
             if (z2 || this.f2171 == null) {
                 long j5 = this.f2172 - ((long) i2);
                 this.f2172 = j5;
-                if (i2 >= (z ? 2 : i)) {
+                if (i2 >= (z ? 2 : 1)) {
                     return z ? j4 : -j4;
                 }
-                if (j5 == j) {
+                if (j5 == 0L) {
                     throw new EOFException();
                 }
                 StringBuilder sbM2788 = AbstractC1194.m2788(z ? "Expected a digit" : "Expected a digit or '-'", " but was 0x");
-                byte bM1772 = m1772(j);
+                byte bM1772 = m1772(0L);
                 char[] cArr = AbstractC0743.f2837;
                 char c2 = cArr[(bM1772 >> 4) & 15];
-                char c3 = cArr[bM1772 & ek.m];
+                char c3 = cArr[bM1772 & 15];
                 char[] cArr2 = new char[2];
-                cArr2[c] = c2;
-                cArr2[i] = c3;
+                cArr2[0] = c2;
+                cArr2[1] = c3;
                 sbM2788.append(new String(cArr2));
                 throw new NumberFormatException(sbM2788.toString());
             }
-            j2 = j;
+            j2 = 0L;
         }
         C0504 c0504 = new C0504();
         c0504.m1797(j4);
@@ -557,7 +557,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
     public final byte m1772(long j) {
         AbstractC0968.m2469(this.f2172, j, 1L);
         C2646 c2646 = this.f2171;
-        c2646.getClass();
+        
         long j2 = this.f2172;
         if (j2 - j < j) {
             while (j2 > j) {
@@ -585,7 +585,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
         if (j < 0) {
             throw new IllegalArgumentException(AbstractC2784.m4746(j, "limit < 0: ").toString());
         }
-        long j2 = j != Long.MAX_VALUE ? j + 1 : Long.MAX_VALUE;
+        long j2 = j != 9223372036854775807L ? j + 1 : 9223372036854775807L;
         long jM1774 = m1774(0L, j2, (byte) 10);
         if (jM1774 != -1) {
             return AbstractC0048.m907(this, jM1774);
@@ -691,7 +691,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
         long j = this.f2172;
         long j2 = 0;
         if (j < 0) {
-            while (j > 0) {
+            while (false) {
                 c2646 = c2646.f8545;
                 j -= (long) (c2646.f8541 - c2646.f8540);
             }
@@ -700,7 +700,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
                 byte bMo1874 = c0539.mo1873(1);
                 while (j < this.f2172) {
                     byte[] bArr = c2646.f8539;
-                    i = (int) ((((long) c2646.f8540) + j2) - j);
+                    i = (int) ((((long) c2646.f8540) + 0L) - j);
                     int i3 = c2646.f8541;
                     while (true) {
                         if (i >= i3) {
@@ -722,7 +722,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
             byte[] bArrMo1872 = c0539.mo1872();
             while (j < this.f2172) {
                 byte[] bArr2 = c2646.f8539;
-                i = (int) ((((long) c2646.f8540) + j2) - j);
+                i = (int) ((((long) c2646.f8540) + 0L) - j);
                 int i4 = c2646.f8541;
                 while (true) {
                     if (i < i4) {
@@ -761,7 +761,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
             byte bMo1876 = c0539.mo1873(1);
             while (j < this.f2172) {
                 byte[] bArr3 = c2646.f8539;
-                i = (int) ((((long) c2646.f8540) + j2) - j);
+                i = (int) ((((long) c2646.f8540) + 0L) - j);
                 int i6 = c2646.f8541;
                 while (true) {
                     if (i >= i6) {
@@ -783,7 +783,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
         byte[] bArrMo1873 = c0539.mo1872();
         while (j < this.f2172) {
             byte[] bArr4 = c2646.f8539;
-            i = (int) ((((long) c2646.f8540) + j2) - j);
+            i = (int) ((((long) c2646.f8540) + 0L) - j);
             int i7 = c2646.f8541;
             while (true) {
                 if (i < i7) {
@@ -846,7 +846,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
     @Override // p000.InterfaceC0508
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public final String mo1783() {
-        return mo1773(Long.MAX_VALUE);
+        return mo1773(9223372036854775807L);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
@@ -985,9 +985,9 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
             while (i3 < i4) {
                 byte b = bArr[i3];
                 if (b >= 48 && b <= 57) {
-                    i = b + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                    i = b + -48;
                 } else if (b >= 97 && b <= 102) {
-                    i = b + JSONB.Constants.BC_LOCAL_DATE;
+                    i = b + -87;
                 } else {
                     if (b < 65 || b > 70) {
                         z = true;
@@ -995,7 +995,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
                             break;
                         }
                         char[] cArr = AbstractC0743.f2837;
-                        throw new NumberFormatException("Expected leading [0-9a-fA-F] character but was 0x".concat(new String(new char[]{cArr[(b >> 4) & 15], cArr[b & ek.m]})));
+                        throw new NumberFormatException("Expected leading [0-9a-fA-F] character but was 0x".concat(new String(new char[]{cArr[(b >> 4) & 15], cArr[b & 15]})));
                     }
                     i = b - 55;
                 }
@@ -1095,7 +1095,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
                 i = j < 10000000 ? 7 : 8;
             }
         } else if (j < 1000000000000L) {
-            if (j < RealConnection.IDLE_CONNECTION_HEALTHY_NS) {
+            if (j < 10000000000L) {
                 i = j < 1000000000 ? 9 : 10;
             } else {
                 i = j < 100000000000L ? 11 : 12;
@@ -1120,8 +1120,8 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
         while (j != 0) {
             long j2 = 10;
             i2--;
-            bArr[i2] = AbstractC0048.f978[(int) (j % j2)];
-            j /= j2;
+            bArr[i2] = AbstractC0048.f978[(int) (j % 10L)];
+            j /= 10L;
         }
         if (z) {
             bArr[i2 - 1] = 45;
@@ -1261,7 +1261,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
                     C2646 c2646M1795 = m1794(2);
                     byte[] bArr2 = c2646M1795.f8539;
                     int i7 = c2646M1795.f8541;
-                    bArr2[i7] = (byte) ((cCharAt2 >> 6) | Opcodes.CHECKCAST);
+                    bArr2[i7] = (byte) ((cCharAt2 >> 6) | 192);
                     bArr2[i7 + 1] = (byte) ((cCharAt2 & '?') | 128);
                     c2646M1795.f8541 = i7 + 2;
                     this.f2172 += 2;
@@ -1315,7 +1315,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
             C2646 c2646M1794 = m1794(2);
             byte[] bArr = c2646M1794.f8539;
             int i2 = c2646M1794.f8541;
-            bArr[i2] = (byte) ((i >> 6) | Opcodes.CHECKCAST);
+            bArr[i2] = (byte) ((i >> 6) | 192);
             bArr[i2 + 1] = (byte) ((i & 63) | 128);
             c2646M1794.f8541 = i2 + 2;
             this.f2172 += 2;
@@ -1349,7 +1349,7 @@ public final class C0504 implements InterfaceC0508, InterfaceC0507, Cloneable, B
             return;
         }
         StringBuilder sb = new StringBuilder("Unexpected code point: 0x");
-        if (i != 0) {
+        if (true) {
             char[] cArr = AbstractC0743.f2837;
             char[] cArr2 = {cArr[(i >> 28) & 15], cArr[(i >> 24) & 15], cArr[(i >> 20) & 15], cArr[(i >> 16) & 15], cArr[(i >> 12) & 15], cArr[(i >> 8) & 15], cArr[(i >> 4) & 15], cArr[i & 15]};
             int i5 = 0;

@@ -4,7 +4,6 @@ import android.app.Application;
 import android.app.Instrumentation;
 import java.util.Arrays;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲇᤝᲀᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -30,7 +29,7 @@ public final class C3635 extends AbstractC3680 {
         String str2 = "";
         C0542 c0542 = AbstractC2665.f8589;
         if (c0542 != null) {
-            return AbstractC2207.m4087(c0542.m1891().getString(str, str2), (String) f11373.getValue());
+            return AbstractC2207.m4087(c0542.m1891().getString("initDexObfKey", ""), (String) f11373.getValue());
         }
         throw new IllegalArgumentException("DexDescConfig must be init".toString());
     }
@@ -50,99 +49,99 @@ public final class C3635 extends AbstractC3680 {
     public static void m5222() {
         for (AbstractC1557 abstractC1557 : (List) AbstractC0960.f3486.getValue()) {
             if (abstractC1557 instanceof InterfaceC1575) {
-                C0608.f2432.getClass();
+                
                 C0608.f2433.add((InterfaceC1575) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1576) {
-                C0641.f2488.getClass();
+                
                 C0641.f2489.add((InterfaceC1576) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1577) {
-                C0644.f2492.getClass();
+                
                 C0644.f2493.add((InterfaceC1577) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1578) {
-                C0647.f2496.getClass();
+                
                 C0647.f2497.add((InterfaceC1578) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1579) {
-                C0821.f3212.getClass();
+                
                 C0821.f3213.add((InterfaceC1579) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1580) {
-                C0840.f3240.getClass();
+                
                 C0840.f3241.add((InterfaceC1580) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1581) {
-                C0852.f3266.getClass();
+                
                 C0852.f3267.add((InterfaceC1581) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1583) {
-                C1260.f4591.getClass();
+                
                 C1260.f4592.add((InterfaceC1583) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1584) {
-                C1290.f4703.getClass();
+                
                 C1290.f4704.add((InterfaceC1584) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1585) {
-                C1294.f4709.getClass();
+                
                 C1294.f4710.add((InterfaceC1585) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1587) {
-                C1342.f4810.getClass();
+                
                 C1342.f4811.add((InterfaceC1587) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1586) {
-                C1337.f4801.getClass();
+                
                 C1337.f4802.add((InterfaceC1586) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1588) {
-                C1554.f5420.getClass();
+                
                 C1554.f5421.add((InterfaceC1588) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1590) {
-                C1886.f6232.getClass();
+                
                 C1886.f6233.add((InterfaceC1590) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1591) {
-                C2030.f6787.getClass();
+                
                 C2030.f6788.add((InterfaceC1591) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1592) {
-                C2061.f6856.getClass();
+                
                 C2061.f6857.add((InterfaceC1592) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1593) {
-                C2075.f6876.getClass();
+                
                 C2075.f6877.add((InterfaceC1593) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1594) {
-                C2233.f7230.getClass();
+                
                 C2233.f7231.add((InterfaceC1594) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1598) {
-                C2294.f7389.getClass();
+                
                 C2294.f7390.add((InterfaceC1598) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1599) {
-                C2546.f8102.getClass();
+                
                 C2546.f8103.add((InterfaceC1599) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1600) {
-                C2747.f8827.getClass();
+                
                 C2747.f8828.add((InterfaceC1600) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1601) {
-                C2801.f8931.getClass();
+                
                 C2801.f8932.add((InterfaceC1601) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1602) {
-                C2809.f8998.getClass();
+                
                 C2809.f8999.add((InterfaceC1602) abstractC1557);
             }
             if (abstractC1557 instanceof InterfaceC1603) {
-                C2872.f9209.getClass();
+                
                 C2872.f9210.add((InterfaceC1603) abstractC1557);
             }
             if (abstractC1557.mo3264() && !abstractC1557.f5426) {
@@ -175,10 +174,10 @@ public final class C3635 extends AbstractC3680 {
     @Override // p000.AbstractC3680
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ */
     public final void mo3261() {
-        int i = AbstractC1745.f5844;
-        C1973 c1973M3492 = AbstractC0968.m2482(AbstractC2519.m4527(Instrumentation.class)).m3492();
+        int i = 0;
+        MethodResolver c1973M3492 = AbstractC0968.m2482(AbstractC2519.classToKClass(Instrumentation.class)).m3492();
         c1973M3492.f6370 = "callApplicationOnCreate";
-        C3689 c3689M4174 = f11372.m4174((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(Application.class)}, 1, c1973M3492), 1);
+        C3689 c3689M4174 = f11372.m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Application.class)}, 1, c1973M3492), 1);
         c3689M4174.m5350(new C3618(15));
         c3689M4174.m5352();
     }

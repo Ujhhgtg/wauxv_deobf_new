@@ -7,7 +7,7 @@ import android.annotation.SuppressLint;
 @SuppressLint({"SdCardPath"})
 public class h {
     public static final String a = "subprocess/";
-    public static final String b = be.b().b(be.d);
+    public static final String b = be.b().b("ua");
     public static final int c = 2;
     public static final String d = "id";
     public static final String e = "INTEGER";

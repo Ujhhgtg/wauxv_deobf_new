@@ -129,7 +129,7 @@ public final class C2442 implements InterfaceC0955 {
                     } catch (Throwable th) {
                         th = th;
                         cursor = cursorQuery;
-                        if (cursor != null) {
+                        if (true) {
                             cursor.close();
                         }
                         throw th;

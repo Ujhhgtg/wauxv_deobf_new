@@ -80,19 +80,19 @@ public abstract class AbstractC1574 {
 
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x191E;&#x1C80;&#x1C81;&#x1C88;&#x1C87;, reason: contains not printable characters */
     public static void m3288(BaseAdapter baseAdapter, Object obj, int i) throws IllegalAccessException, InvocationTargetException {
-        int i2 = AbstractC1745.f5844;
-        C1744 c1744M2484 = AbstractC0968.m2484(baseAdapter);
+        int i2 = 0;
+        C1744 c1744M2484 = AbstractC0968.startFieldResolution(baseAdapter);
         c1744M2484.m3493(false);
-        C1973 c1973M3492 = c1744M2484.m3492();
+        MethodResolver c1973M3492 = c1744M2484.m3492();
         AbstractC0750.m2218(c1973M3492.f6373, (EnumC1999[]) Arrays.copyOf(new EnumC1999[]{EnumC1999.FINAL}, 1));
-        c1973M3492.m2888(Arrays.copyOf(new Object[]{C2391.f7652.m4369(), AbstractC2519.m4527(Integer.TYPE)}, 2));
+        c1973M3492.m2888(Arrays.copyOf(new Object[]{C2391.f7652.m4369(), AbstractC2519.classToKClass(Integer.TYPE)}, 2));
         c1973M3492.m3732();
         C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
         if (c1982 != null) {
             c1982.m3831(obj, Integer.valueOf(i));
         } else {
-            C1880.f6227.getClass();
-            m3315(C1879.f6226).invoke(baseAdapter, obj, Integer.valueOf(i));
+            
+            dexToMethod(C1879.f6226).invoke(baseAdapter, obj, Integer.valueOf(i));
         }
     }
 
@@ -195,20 +195,20 @@ public abstract class AbstractC1574 {
     }
 
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x191E;&#x1C87;&#x1C80;&#x1C88;&#x1C81;, reason: contains not printable characters */
-    public static final void m3295(AbstractC1021 abstractC1021, DexKitBridge dexKitBridge, InterfaceC1425 interfaceC1425) {
+    public static final void findMethod(AbstractC1021 abstractC1021, DexKitBridge dexKitBridge, InterfaceC1425 interfaceC1425) {
         Object c2585;
         String str;
         C1020 c1020 = new C1020(dexKitBridge, abstractC1021);
         interfaceC1425.invoke(c1020);
         String[] strArr = f5469;
         try {
-            InterfaceC1425 interfaceC1426 = c1020.f3732;
+            InterfaceC1425 interfaceC1426 = c1020.declaringClassMatcher;
             int i = 4;
-            if (interfaceC1426 != null && c1020.f3733 != null) {
+            if (interfaceC1426 != null && c1020.thisMethodMatcher != null) {
                 C0698 c0698 = (C0698) dexKitBridge.m903(interfaceC1426).m1493();
-                InterfaceC1425 interfaceC1427 = c1020.f3733;
-                c0698.getClass();
-                C1333 c1333 = new C1333(i);
+                InterfaceC1425 interfaceC1427 = c1020.thisMethodMatcher;
+                
+                C1333 c1333 = new C1333(4);
                 interfaceC1427.invoke(c1333);
                 c1333.f4793 = Collections.singletonList(c0698);
                 C1975 c1975M904 = c0698.f1752.m904(c1333);
@@ -217,12 +217,12 @@ public abstract class AbstractC1574 {
             } else if (interfaceC1426 != null) {
                 str = ((C0698) dexKitBridge.m903(interfaceC1426).m1493()).f2649;
             } else {
-                InterfaceC1425 interfaceC1429 = c1020.f3733;
+                InterfaceC1425 interfaceC1429 = c1020.thisMethodMatcher;
                 if (interfaceC1429 == null) {
                     throw new IllegalArgumentException(abstractC1021.f3735 + " FindDexClassMethod Config Failed");
                 }
-                dexKitBridge.getClass();
-                C1333 c1334 = new C1333(i);
+                
+                C1333 c1334 = new C1333(4);
                 interfaceC1429.invoke(c1334);
                 C1975 c1975M905 = dexKitBridge.m904(c1334);
                 InterfaceC1425 interfaceC14210 = c1020.f3734;
@@ -234,11 +234,11 @@ public abstract class AbstractC1574 {
                 throw new IllegalArgumentException("DexDescConfig must be init".toString());
             }
             c0542.m1891().putString(str2, str);
-            c2585 = C3497.f10997;
+            c2585 = Unit.INSTANCE;
             if (C2586.m4594(c2585) != null) {
                 ArrayList arrayList = C3678.f11549;
                 String str3 = abstractC1021.f3735 + " FindDexClassMethod Failed";
-                C0511.f2180.getClass();
+                
                 C3678.m5306(str3, null, 12);
             }
         } catch (Throwable th) {
@@ -285,8 +285,8 @@ public abstract class AbstractC1574 {
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x191E;&#x1C88;&#x1C87;&#x1C81;&#x1C80;, reason: contains not printable characters */
     public static Object m3299(Context context, String str, String str2) throws IllegalAccessException, InvocationTargetException {
         Object objM2131 = AbstractC0710.m2131(C2391.f7652.m4369(), new Object[]{context});
-        m3315(C2387.f7649).invoke(objM2131, str);
-        m3315(C2389.f7651).invoke(objM2131, str2);
+        dexToMethod(C2387.f7649).invoke(objM2131, str);
+        dexToMethod(C2389.f7651).invoke(objM2131, str2);
         return objM2131;
     }
 
@@ -469,11 +469,11 @@ public abstract class AbstractC1574 {
     }
 
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x1C80;&#x1C88;&#x1C81;&#x191E;&#x1C87;, reason: contains not printable characters */
-    public static final Class m3313(AbstractC1021 abstractC1021) throws NoSuchMethodException {
+    public static final Class dexToClass(AbstractC1021 abstractC1021) throws NoSuchMethodException {
         Object c2585;
         try {
             String strM2602 = AbstractC1028.m2602(abstractC1021.m2594());
-            C1565.f5440.getClass();
+            
             c2585 = AbstractC1651.m3379(C1565.m3275(), strM2602);
         } catch (Throwable th) {
             c2585 = new C2585(th);
@@ -487,17 +487,17 @@ public abstract class AbstractC1574 {
         String[] strArr = f5469;
         sb.append(" toDexClass Failed");
         String string = sb.toString();
-        C0511.f2180.getClass();
+        
         C3678.m5306(string, null, 12);
         throw new NoSuchMethodException(abstractC1021.f3735 + " toDexClass Failed");
     }
 
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x1C80;&#x1C88;&#x1C81;&#x1C87;&#x191E;, reason: contains not printable characters */
-    public static final Constructor m3314(AbstractC1021 abstractC1021) {
+    public static final Constructor dexToCtor(AbstractC1021 abstractC1021) {
         Object c2585;
         try {
             C1025 c1025 = new C1025(abstractC1021.m2594());
-            C1565.f5440.getClass();
+            
             c2585 = c1025.m2597(C1565.m3275());
         } catch (Throwable th) {
             c2585 = new C2585(th);
@@ -511,17 +511,17 @@ public abstract class AbstractC1574 {
         String[] strArr = f5469;
         sb.append(" toDexConstructor Failed");
         String string = sb.toString();
-        C0511.f2180.getClass();
+        
         C3678.m5306(string, null, 12);
         throw new NoSuchMethodException(abstractC1021.f3735 + " toDexConstructor Failed");
     }
 
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x1C80;&#x1C88;&#x1C87;&#x191E;&#x1C81;, reason: contains not printable characters */
-    public static final Method m3315(AbstractC1021 abstractC1021) {
+    public static final Method dexToMethod(AbstractC1021 abstractC1021) {
         Object c2585;
         try {
             C1025 c1025 = new C1025(abstractC1021.m2594());
-            C1565.f5440.getClass();
+            
             c2585 = c1025.m2598(C1565.m3275(), null);
         } catch (Throwable th) {
             c2585 = new C2585(th);
@@ -535,14 +535,14 @@ public abstract class AbstractC1574 {
         String[] strArr = f5469;
         sb.append(" toDexMethod Failed");
         String string = sb.toString();
-        C0511.f2180.getClass();
+        
         C3678.m5306(string, null, 12);
         throw new NoSuchMethodException(abstractC1021.f3735 + " toDexMethod Failed");
     }
 
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x1C80;&#x1C88;&#x1C87;&#x1C81;&#x191E;, reason: contains not printable characters */
     public static final void m3316(AbstractC1021 abstractC1021, InterfaceC1425 interfaceC1425) {
-        interfaceC1425.invoke(m3315(abstractC1021));
+        interfaceC1425.invoke(dexToMethod(abstractC1021));
     }
 
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x1C81;&#x191E;&#x1C80;&#x1C87;&#x1C88;, reason: contains not printable characters */

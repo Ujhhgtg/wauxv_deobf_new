@@ -22,9 +22,9 @@ public final class IntegerSchema extends JSONSchema {
 
     public IntegerSchema(JSONObject jSONObject) {
         super(jSONObject);
-        this.typed = "integer".equalsIgnoreCase(jSONObject.getString(g.y)) || jSONObject.getBooleanValue("required");
+        this.typed = "integer".equalsIgnoreCase(jSONObject.getString("type")) || jSONObject.getBooleanValue("required");
         Object obj = jSONObject.get("exclusiveMinimum");
-        long longValue = jSONObject.getLongValue("minimum", Long.MIN_VALUE);
+        long longValue = jSONObject.getLongValue("minimum", -9223372036854775808L);
         Boolean bool = Boolean.TRUE;
         if (obj == bool) {
             this.exclusiveMinimum = true;
@@ -36,7 +36,7 @@ public final class IntegerSchema extends JSONSchema {
             this.minimum = longValue;
             this.exclusiveMinimum = false;
         }
-        long longValue2 = jSONObject.getLongValue("maximum", Long.MIN_VALUE);
+        long longValue2 = jSONObject.getLongValue("maximum", -9223372036854775808L);
         Object obj2 = jSONObject.get("exclusiveMaximum");
         if (obj2 == bool) {
             this.exclusiveMaximum = true;
@@ -60,13 +60,13 @@ public final class IntegerSchema extends JSONSchema {
     @Override // com.alibaba.fastjson2.schema.JSONSchema
     public JSONObject toJSONObject() {
         JSONObject jSONObject = new JSONObject();
-        jSONObject.put(g.y, "integer");
+        jSONObject.put("type", "integer");
         long j = this.minimum;
-        if (j != Long.MIN_VALUE) {
+        if (j != -9223372036854775808L) {
             jSONObject.put(this.exclusiveMinimum ? "exclusiveMinimum" : "minimum", Long.valueOf(j));
         }
         long j2 = this.maximum;
-        if (j2 != Long.MIN_VALUE) {
+        if (j2 != -9223372036854775808L) {
             jSONObject.put(this.exclusiveMaximum ? "exclusiveMaximum" : "maximum", Long.valueOf(j2));
         }
         long j3 = this.multipleOf;
@@ -99,11 +99,11 @@ public final class IntegerSchema extends JSONSchema {
             boolean zIsInt64 = cls == BigInteger.class ? TypeUtils.isInt64((BigInteger) obj) : true;
             long jLongValue = ((Number) obj).longValue();
             long j = this.minimum;
-            if (j != Long.MIN_VALUE && (!(z2 = this.exclusiveMinimum) ? jLongValue >= j : jLongValue > j)) {
+            if (j != -9223372036854775808L && (!(z2 = this.exclusiveMinimum) ? jLongValue >= j : jLongValue > j)) {
                 return new ValidateResult(false, z2 ? "exclusiveMinimum not match, expect > %s, but %s" : "minimum not match, expect >= %s, but %s", Long.valueOf(j), obj);
             }
             long j2 = this.maximum;
-            if (j2 != Long.MIN_VALUE && (!(z = this.exclusiveMaximum) ? jLongValue <= j2 : jLongValue < j2)) {
+            if (j2 != -9223372036854775808L && (!(z = this.exclusiveMaximum) ? jLongValue <= j2 : jLongValue < j2)) {
                 return new ValidateResult(false, z ? "exclusiveMaximum not match, expect < %s, but %s" : "maximum not match, expect <= %s, but %s", Long.valueOf(j2), obj);
             }
             long j3 = this.multipleOf;
@@ -148,11 +148,11 @@ public final class IntegerSchema extends JSONSchema {
         boolean z;
         boolean z2;
         long j2 = this.minimum;
-        if (j2 != Long.MIN_VALUE && (!(z2 = this.exclusiveMinimum) ? j < j2 : j <= j2)) {
+        if (j2 != -9223372036854775808L && (!(z2 = this.exclusiveMinimum) ? j < j2 : j <= j2)) {
             return new ValidateResult(false, z2 ? "exclusiveMinimum not match, expect > %s, but %s" : "minimum not match, expect >= %s, but %s", Long.valueOf(j2), Long.valueOf(j));
         }
         long j3 = this.maximum;
-        if (j3 != Long.MIN_VALUE && (!(z = this.exclusiveMaximum) ? j > j3 : j >= j3)) {
+        if (j3 != -9223372036854775808L && (!(z = this.exclusiveMaximum) ? j > j3 : j >= j3)) {
             return new ValidateResult(false, z ? "exclusiveMaximum not match, expect < %s, but %s" : "maximum not match, expect <= %s, but %s", Long.valueOf(j3), Long.valueOf(j));
         }
         long j4 = this.multipleOf;
@@ -175,11 +175,11 @@ public final class IntegerSchema extends JSONSchema {
         }
         long jLongValue = l.longValue();
         long j = this.minimum;
-        if (j != Long.MIN_VALUE && (!(z2 = this.exclusiveMinimum) ? jLongValue < j : jLongValue <= j)) {
+        if (j != -9223372036854775808L && (!(z2 = this.exclusiveMinimum) ? jLongValue < j : jLongValue <= j)) {
             return new ValidateResult(false, z2 ? "exclusiveMinimum not match, expect > %s, but %s" : "minimum not match, expect >= %s, but %s", Long.valueOf(j), l);
         }
         long j2 = this.maximum;
-        if (j2 != Long.MIN_VALUE && (!(z = this.exclusiveMaximum) ? jLongValue > j2 : jLongValue >= j2)) {
+        if (j2 != -9223372036854775808L && (!(z = this.exclusiveMaximum) ? jLongValue > j2 : jLongValue >= j2)) {
             return new ValidateResult(false, z ? "exclusiveMaximum not match, expect < %s, but %s" : "maximum not match, expect <= %s, but %s", Long.valueOf(j2), l);
         }
         long j3 = this.multipleOf;
@@ -202,11 +202,11 @@ public final class IntegerSchema extends JSONSchema {
         }
         long jLongValue = num.longValue();
         long j = this.minimum;
-        if (j != Long.MIN_VALUE && (!(z2 = this.exclusiveMinimum) ? jLongValue < j : jLongValue <= j)) {
+        if (j != -9223372036854775808L && (!(z2 = this.exclusiveMinimum) ? jLongValue < j : jLongValue <= j)) {
             return new ValidateResult(false, z2 ? "exclusiveMinimum not match, expect > %s, but %s" : "minimum not match, expect >= %s, but %s", Long.valueOf(j), num);
         }
         long j2 = this.maximum;
-        if (j2 != Long.MIN_VALUE && (!(z = this.exclusiveMaximum) ? jLongValue > j2 : jLongValue >= j2)) {
+        if (j2 != -9223372036854775808L && (!(z = this.exclusiveMaximum) ? jLongValue > j2 : jLongValue >= j2)) {
             return new ValidateResult(false, z ? "exclusiveMaximum not match, expect < %s, but %s" : "maximum not match, expect <= %s, but %s", Long.valueOf(j2), num);
         }
         long j3 = this.multipleOf;

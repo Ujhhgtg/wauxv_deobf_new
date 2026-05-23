@@ -54,7 +54,7 @@ public final class C0736 extends AbstractC2270 {
         C1986 c1986 = c1023.f3750;
         C1977 c1977 = c1023.f3742;
         C0215 c0215 = this.f2767;
-        c0215.getClass();
+        
         C2308 c2308 = (C2308) c0215.f1330;
         if (c2308.f7432 || c2308.f7433) {
             C0966 c0966 = new C0966(c0215, this.f2769, this.f2766);
@@ -66,7 +66,7 @@ public final class C0736 extends AbstractC2270 {
         for (int i = 0; i < length; i++) {
             if (((C0402) c0404.m3062(i)).f1898.m1645().mo3047().size() != 0) {
                 C0243 c0243 = (C0243) c0215.f1331;
-                c0243.getClass();
+                
                 HashSet hashSet = new HashSet(20);
                 C0404 c0405 = (C0404) ((C0662) c0243.f1404).f2530;
                 int length2 = c0405.f4836.length;
@@ -86,7 +86,7 @@ public final class C0736 extends AbstractC2270 {
             }
         }
         C2308 c2309 = (C2308) c0215.f1330;
-        c2309.getClass();
+        
         HashSet hashSet2 = new HashSet(20);
         for (AbstractC0950 abstractC0950 : c2309.f7431) {
             if (abstractC0950 instanceof C0902) {
@@ -300,11 +300,11 @@ public final class C0736 extends AbstractC2270 {
                         sb.append(string);
                         c0519.m1831(0, sb.toString());
                     } else {
-                        zM1833 = zM1833;
+                        zM1833 = true;
                         c0913 = c0914;
                     }
                 } else {
-                    zM1833 = zM1833;
+                    zM1833 = false;
                     c0913 = c0914;
                 }
                 c0519.m1840(i);

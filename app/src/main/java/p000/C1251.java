@@ -159,16 +159,16 @@ public final class C1251 {
         Arrays.asList(2, 7, 4, 5);
         f4530 = new int[]{8, 8, 8};
         f4531 = new int[]{8};
-        f4532 = new byte[]{-1, JSONB.Constants.BC_INT64_NUM_MIN, -1};
-        f4533 = new byte[]{102, 116, JSONB.Constants.BC_STR_ASCII, 112};
-        f4534 = new byte[]{JSONB.Constants.BC_STR_ASCII_FIX_36, JSONB.Constants.BC_STR_ASCII_FIX_32, 102, 49};
-        f4535 = new byte[]{104, 101, JSONB.Constants.BC_STR_ASCII_FIX_32, 99};
-        f4536 = new byte[]{79, 76, 89, JSONB.Constants.BC_STR_ASCII_FIX_4, 80, 0};
-        f4537 = new byte[]{79, 76, 89, JSONB.Constants.BC_STR_ASCII_FIX_4, 80, 85, 83, 0, 73, 73};
-        f4538 = new byte[]{-119, 80, JSONB.Constants.BC_STR_ASCII_FIX_5, JSONB.Constants.BC_INT32_SHORT_MAX, ek.k, 10, 26, 10};
+        f4532 = new byte[]{-1, -40, -1};
+        f4533 = new byte[]{102, 116, 121, 112};
+        f4534 = new byte[]{109, 105, 102, 49};
+        f4535 = new byte[]{104, 101, 105, 99};
+        f4536 = new byte[]{79, 76, 89, 77, 80, 0};
+        f4537 = new byte[]{79, 76, 89, 77, 80, 85, 83, 0, 73, 73};
+        f4538 = new byte[]{-119, 80, 78, 71, 13, 10, 26, 10};
         f4539 = new byte[]{101, 88, 73, 102};
-        f4540 = new byte[]{73, JSONB.Constants.BC_INT32, JSONB.Constants.BC_INT32_SHORT_ZERO, 82};
-        f4541 = new byte[]{73, 69, JSONB.Constants.BC_STR_ASCII_FIX_5, JSONB.Constants.BC_INT32_SHORT_ZERO};
+        f4540 = new byte[]{73, 72, 68, 82};
+        f4541 = new byte[]{73, 69, 78, 68};
         f4542 = new byte[]{82, 73, 70, 70};
         f4543 = new byte[]{87, 69, 66, 80};
         f4544 = new byte[]{69, 88, 73, 70};
@@ -180,13 +180,13 @@ public final class C1251 {
         f4545 = new String[]{"", "BYTE", "STRING", "USHORT", "ULONG", "URATIONAL", "SBYTE", "UNDEFINED", "SSHORT", "SLONG", "SRATIONAL", "SINGLE", "DOUBLE", "IFD"};
         f4546 = new int[]{0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8, 1};
         f4547 = new byte[]{65, 83, 67, 73, 73, 0, 0, 0};
-        C1248[] c1248Arr = {new C1248("NewSubfileType", 254, 4), new C1248("SubfileType", 255, 4), new C1248(bc.e, "ImageWidth", 3, 4), new C1248(257, "ImageLength", 3, 4), new C1248("BitsPerSample", 258, 3), new C1248("Compression", 259, 3), new C1248("PhotometricInterpretation", 262, 3), new C1248("ImageDescription", 270, 2), new C1248("Make", 271, 2), new C1248("Model", 272, 2), new C1248(b.a, "StripOffsets", 3, 4), new C1248("Orientation", 274, 3), new C1248("SamplesPerPixel", 277, 3), new C1248(278, "RowsPerStrip", 3, 4), new C1248(279, "StripByteCounts", 3, 4), new C1248("XResolution", 282, 5), new C1248("YResolution", 283, 5), new C1248("PlanarConfiguration", 284, 3), new C1248("ResolutionUnit", 296, 3), new C1248("TransferFunction", c.p, 3), new C1248("Software", 305, 2), new C1248("DateTime", 306, 2), new C1248("Artist", 315, 2), new C1248("WhitePoint", 318, 5), new C1248("PrimaryChromaticities", 319, 5), new C1248("SubIFDPointer", 330, 4), new C1248("JPEGInterchangeFormat", 513, 4), new C1248("JPEGInterchangeFormatLength", 514, 4), new C1248("YCbCrCoefficients", 529, 5), new C1248("YCbCrSubSampling", 530, 3), new C1248("YCbCrPositioning", 531, 3), new C1248("ReferenceBlackWhite", 532, 5), new C1248("Copyright", 33432, 2), new C1248("ExifIFDPointer", 34665, 4), new C1248("GPSInfoIFDPointer", 34853, 4), new C1248("SensorTopBorder", 4, 4), new C1248("SensorLeftBorder", 5, 4), new C1248("SensorBottomBorder", 6, 4), new C1248("SensorRightBorder", 7, 4), new C1248("ISO", 23, 3), new C1248("JpgFromRaw", 46, 7), new C1248("Xmp", 700, 1)};
+        C1248[] c1248Arr = {new C1248("NewSubfileType", 254, 4), new C1248("SubfileType", 255, 4), new C1248(256, "ImageWidth", 3, 4), new C1248(257, "ImageLength", 3, 4), new C1248("BitsPerSample", 258, 3), new C1248("Compression", 259, 3), new C1248("PhotometricInterpretation", 262, 3), new C1248("ImageDescription", 270, 2), new C1248("Make", 271, 2), new C1248("Model", 272, 2), new C1248(273, "StripOffsets", 3, 4), new C1248("Orientation", 274, 3), new C1248("SamplesPerPixel", 277, 3), new C1248(278, "RowsPerStrip", 3, 4), new C1248(279, "StripByteCounts", 3, 4), new C1248("XResolution", 282, 5), new C1248("YResolution", 283, 5), new C1248("PlanarConfiguration", 284, 3), new C1248("ResolutionUnit", 296, 3), new C1248("TransferFunction", 301, 3), new C1248("Software", 305, 2), new C1248("DateTime", 306, 2), new C1248("Artist", 315, 2), new C1248("WhitePoint", 318, 5), new C1248("PrimaryChromaticities", 319, 5), new C1248("SubIFDPointer", 330, 4), new C1248("JPEGInterchangeFormat", 513, 4), new C1248("JPEGInterchangeFormatLength", 514, 4), new C1248("YCbCrCoefficients", 529, 5), new C1248("YCbCrSubSampling", 530, 3), new C1248("YCbCrPositioning", 531, 3), new C1248("ReferenceBlackWhite", 532, 5), new C1248("Copyright", 33432, 2), new C1248("ExifIFDPointer", 34665, 4), new C1248("GPSInfoIFDPointer", 34853, 4), new C1248("SensorTopBorder", 4, 4), new C1248("SensorLeftBorder", 5, 4), new C1248("SensorBottomBorder", 6, 4), new C1248("SensorRightBorder", 7, 4), new C1248("ISO", 23, 3), new C1248("JpgFromRaw", 46, 7), new C1248("Xmp", 700, 1)};
         C1248[] c1248Arr2 = {new C1248("ExposureTime", 33434, 5), new C1248("FNumber", 33437, 5), new C1248("ExposureProgram", 34850, 3), new C1248("SpectralSensitivity", 34852, 2), new C1248("PhotographicSensitivity", 34855, 3), new C1248("OECF", 34856, 7), new C1248("SensitivityType", 34864, 3), new C1248("StandardOutputSensitivity", 34865, 4), new C1248("RecommendedExposureIndex", 34866, 4), new C1248("ISOSpeed", 34867, 4), new C1248("ISOSpeedLatitudeyyy", 34868, 4), new C1248("ISOSpeedLatitudezzz", 34869, 4), new C1248("ExifVersion", 36864, 2), new C1248("DateTimeOriginal", 36867, 2), new C1248("DateTimeDigitized", 36868, 2), new C1248("OffsetTime", 36880, 2), new C1248("OffsetTimeOriginal", 36881, 2), new C1248("OffsetTimeDigitized", 36882, 2), new C1248("ComponentsConfiguration", 37121, 7), new C1248("CompressedBitsPerPixel", 37122, 5), new C1248("ShutterSpeedValue", 37377, 10), new C1248("ApertureValue", 37378, 5), new C1248("BrightnessValue", 37379, 10), new C1248("ExposureBiasValue", 37380, 10), new C1248("MaxApertureValue", 37381, 5), new C1248("SubjectDistance", 37382, 5), new C1248("MeteringMode", 37383, 3), new C1248("LightSource", 37384, 3), new C1248("Flash", 37385, 3), new C1248("FocalLength", 37386, 5), new C1248("SubjectArea", 37396, 3), new C1248("MakerNote", 37500, 7), new C1248("UserComment", 37510, 7), new C1248("SubSecTime", 37520, 2), new C1248("SubSecTimeOriginal", 37521, 2), new C1248("SubSecTimeDigitized", 37522, 2), new C1248("FlashpixVersion", 40960, 7), new C1248("ColorSpace", 40961, 3), new C1248(40962, "PixelXDimension", 3, 4), new C1248(40963, "PixelYDimension", 3, 4), new C1248("RelatedSoundFile", 40964, 2), new C1248("InteroperabilityIFDPointer", 40965, 4), new C1248("FlashEnergy", 41483, 5), new C1248("SpatialFrequencyResponse", 41484, 7), new C1248("FocalPlaneXResolution", 41486, 5), new C1248("FocalPlaneYResolution", 41487, 5), new C1248("FocalPlaneResolutionUnit", 41488, 3), new C1248("SubjectLocation", 41492, 3), new C1248("ExposureIndex", 41493, 5), new C1248("SensingMethod", 41495, 3), new C1248("FileSource", 41728, 7), new C1248("SceneType", 41729, 7), new C1248("CFAPattern", 41730, 7), new C1248("CustomRendered", 41985, 3), new C1248("ExposureMode", 41986, 3), new C1248("WhiteBalance", 41987, 3), new C1248("DigitalZoomRatio", 41988, 5), new C1248("FocalLengthIn35mmFilm", 41989, 3), new C1248("SceneCaptureType", 41990, 3), new C1248("GainControl", 41991, 3), new C1248("Contrast", 41992, 3), new C1248("Saturation", 41993, 3), new C1248("Sharpness", 41994, 3), new C1248("DeviceSettingDescription", 41995, 7), new C1248("SubjectDistanceRange", 41996, 3), new C1248("ImageUniqueID", 42016, 2), new C1248("CameraOwnerName", 42032, 2), new C1248("BodySerialNumber", 42033, 2), new C1248("LensSpecification", 42034, 5), new C1248("LensMake", 42035, 2), new C1248("LensModel", 42036, 2), new C1248("Gamma", 42240, 5), new C1248("DNGVersion", 50706, 1), new C1248(50720, "DefaultCropSize", 3, 4)};
         C1248[] c1248Arr3 = {new C1248("GPSVersionID", 0, 1), new C1248("GPSLatitudeRef", 1, 2), new C1248(2, "GPSLatitude", 5, 10), new C1248("GPSLongitudeRef", 3, 2), new C1248(4, "GPSLongitude", 5, 10), new C1248("GPSAltitudeRef", 5, 1), new C1248("GPSAltitude", 6, 5), new C1248("GPSTimeStamp", 7, 5), new C1248("GPSSatellites", 8, 2), new C1248("GPSStatus", 9, 2), new C1248("GPSMeasureMode", 10, 2), new C1248("GPSDOP", 11, 5), new C1248("GPSSpeedRef", 12, 2), new C1248("GPSSpeed", 13, 5), new C1248("GPSTrackRef", 14, 2), new C1248("GPSTrack", 15, 5), new C1248("GPSImgDirectionRef", 16, 2), new C1248("GPSImgDirection", 17, 5), new C1248("GPSMapDatum", 18, 2), new C1248("GPSDestLatitudeRef", 19, 2), new C1248("GPSDestLatitude", 20, 5), new C1248("GPSDestLongitudeRef", 21, 2), new C1248("GPSDestLongitude", 22, 5), new C1248("GPSDestBearingRef", 23, 2), new C1248("GPSDestBearing", 24, 5), new C1248("GPSDestDistanceRef", 25, 2), new C1248("GPSDestDistance", 26, 5), new C1248("GPSProcessingMethod", 27, 7), new C1248("GPSAreaInformation", 28, 7), new C1248("GPSDateStamp", 29, 2), new C1248("GPSDifferential", 30, 3), new C1248("GPSHPositioningError", 31, 5)};
         C1248[] c1248Arr4 = {new C1248("InteroperabilityIndex", 1, 2)};
-        C1248[] c1248Arr5 = {new C1248("NewSubfileType", 254, 4), new C1248("SubfileType", 255, 4), new C1248(bc.e, "ThumbnailImageWidth", 3, 4), new C1248(257, "ThumbnailImageLength", 3, 4), new C1248("BitsPerSample", 258, 3), new C1248("Compression", 259, 3), new C1248("PhotometricInterpretation", 262, 3), new C1248("ImageDescription", 270, 2), new C1248("Make", 271, 2), new C1248("Model", 272, 2), new C1248(b.a, "StripOffsets", 3, 4), new C1248("ThumbnailOrientation", 274, 3), new C1248("SamplesPerPixel", 277, 3), new C1248(278, "RowsPerStrip", 3, 4), new C1248(279, "StripByteCounts", 3, 4), new C1248("XResolution", 282, 5), new C1248("YResolution", 283, 5), new C1248("PlanarConfiguration", 284, 3), new C1248("ResolutionUnit", 296, 3), new C1248("TransferFunction", c.p, 3), new C1248("Software", 305, 2), new C1248("DateTime", 306, 2), new C1248("Artist", 315, 2), new C1248("WhitePoint", 318, 5), new C1248("PrimaryChromaticities", 319, 5), new C1248("SubIFDPointer", 330, 4), new C1248("JPEGInterchangeFormat", 513, 4), new C1248("JPEGInterchangeFormatLength", 514, 4), new C1248("YCbCrCoefficients", 529, 5), new C1248("YCbCrSubSampling", 530, 3), new C1248("YCbCrPositioning", 531, 3), new C1248("ReferenceBlackWhite", 532, 5), new C1248("Copyright", 33432, 2), new C1248("ExifIFDPointer", 34665, 4), new C1248("GPSInfoIFDPointer", 34853, 4), new C1248("DNGVersion", 50706, 1), new C1248(50720, "DefaultCropSize", 3, 4)};
-        f4548 = new C1248("StripOffsets", b.a, 3);
-        f4549 = new C1248[][]{c1248Arr, c1248Arr2, c1248Arr3, c1248Arr4, c1248Arr5, c1248Arr, new C1248[]{new C1248("ThumbnailImage", bc.e, 7), new C1248("CameraSettingsIFDPointer", 8224, 4), new C1248("ImageProcessingIFDPointer", 8256, 4)}, new C1248[]{new C1248("PreviewImageStart", 257, 4), new C1248("PreviewImageLength", 258, 4)}, new C1248[]{new C1248("AspectFrame", 4371, 3)}, new C1248[]{new C1248("ColorSpace", 55, 3)}};
+        C1248[] c1248Arr5 = {new C1248("NewSubfileType", 254, 4), new C1248("SubfileType", 255, 4), new C1248(256, "ThumbnailImageWidth", 3, 4), new C1248(257, "ThumbnailImageLength", 3, 4), new C1248("BitsPerSample", 258, 3), new C1248("Compression", 259, 3), new C1248("PhotometricInterpretation", 262, 3), new C1248("ImageDescription", 270, 2), new C1248("Make", 271, 2), new C1248("Model", 272, 2), new C1248(273, "StripOffsets", 3, 4), new C1248("ThumbnailOrientation", 274, 3), new C1248("SamplesPerPixel", 277, 3), new C1248(278, "RowsPerStrip", 3, 4), new C1248(279, "StripByteCounts", 3, 4), new C1248("XResolution", 282, 5), new C1248("YResolution", 283, 5), new C1248("PlanarConfiguration", 284, 3), new C1248("ResolutionUnit", 296, 3), new C1248("TransferFunction", 301, 3), new C1248("Software", 305, 2), new C1248("DateTime", 306, 2), new C1248("Artist", 315, 2), new C1248("WhitePoint", 318, 5), new C1248("PrimaryChromaticities", 319, 5), new C1248("SubIFDPointer", 330, 4), new C1248("JPEGInterchangeFormat", 513, 4), new C1248("JPEGInterchangeFormatLength", 514, 4), new C1248("YCbCrCoefficients", 529, 5), new C1248("YCbCrSubSampling", 530, 3), new C1248("YCbCrPositioning", 531, 3), new C1248("ReferenceBlackWhite", 532, 5), new C1248("Copyright", 33432, 2), new C1248("ExifIFDPointer", 34665, 4), new C1248("GPSInfoIFDPointer", 34853, 4), new C1248("DNGVersion", 50706, 1), new C1248(50720, "DefaultCropSize", 3, 4)};
+        f4548 = new C1248("StripOffsets", 273, 3);
+        f4549 = new C1248[][]{c1248Arr, c1248Arr2, c1248Arr3, c1248Arr4, c1248Arr5, c1248Arr, new C1248[]{new C1248("ThumbnailImage", 256, 7), new C1248("CameraSettingsIFDPointer", 8224, 4), new C1248("ImageProcessingIFDPointer", 8256, 4)}, new C1248[]{new C1248("PreviewImageStart", 257, 4), new C1248("PreviewImageLength", 258, 4)}, new C1248[]{new C1248("AspectFrame", 4371, 3)}, new C1248[]{new C1248("ColorSpace", 55, 3)}};
         f4550 = new C1248[]{new C1248("SubIFDPointer", 330, 4), new C1248("ExifIFDPointer", 34665, 4), new C1248("GPSInfoIFDPointer", 34853, 4), new C1248("InteroperabilityIFDPointer", 40965, 4), new C1248("CameraSettingsIFDPointer", 8224, 1), new C1248("ImageProcessingIFDPointer", 8256, 1)};
         f4551 = new HashMap[10];
         f4552 = new HashMap[10];
@@ -202,7 +202,7 @@ public final class C1251 {
         int i = 0;
         while (true) {
             C1248[][] c1248Arr6 = f4549;
-            if (i >= c1248Arr6.length) {
+            if (i >= 10) {
                 HashMap map = f4554;
                 C1248[] c1248Arr7 = f4550;
                 map.put(Integer.valueOf(c1248Arr7[0].f4523), 5);
@@ -613,7 +613,7 @@ public final class C1251 {
                                                     this.f4563 = byteOrderM2912;
                                                     c1249.f4516 = byteOrderM2912;
                                                     s = c1249.readShort();
-                                                    if (s != 20306 || s == 21330) {
+                                                    if (s != 20306 || false) {
                                                         i2 = 1;
                                                     } else {
                                                         i2 = i;
@@ -631,19 +631,19 @@ public final class C1251 {
                                                             if (c12412.readShort() == 85) {
                                                                 i3 = 1;
                                                             } else {
-                                                                i3 = i;
+                                                                i3 = 0;
                                                             }
                                                             c12412.close();
                                                         } catch (Exception unused) {
                                                             c12411 = c12412;
-                                                            if (c12411 != null) {
+                                                            if (true) {
                                                                 c12411.close();
                                                             }
-                                                            i3 = i;
+                                                            i3 = 0;
                                                         } catch (Throwable th) {
                                                             th = th;
                                                             c12410 = c12412;
-                                                            if (c12410 != null) {
+                                                            if (true) {
                                                                 c12410.close();
                                                             }
                                                             throw th;
@@ -657,20 +657,20 @@ public final class C1251 {
                                                     if (i3 != 0) {
                                                         return 10;
                                                     }
-                                                    i4 = i;
+                                                    i4 = 0;
                                                     while (true) {
                                                         bArr = f4538;
-                                                        if (i4 < bArr.length) {
+                                                        if (0 < bArr.length) {
                                                             i5 = 1;
                                                             break;
                                                         }
-                                                        if (bArr4[i4] != bArr[i4]) {
+                                                        if (bArr4[0] != bArr[0]) {
                                                             i5 = i;
                                                             break;
                                                         }
                                                         i4++;
                                                     }
-                                                    if (i5 != 0) {
+                                                    if (true) {
                                                         return 13;
                                                     }
                                                     i6 = i;
@@ -707,10 +707,10 @@ public final class C1251 {
                                                 j = 8;
                                                 i = 0;
                                                 long j3 = 5000;
-                                                if (j2 > j3) {
-                                                    j2 = j3;
+                                                if (j2 > 5000L) {
+                                                    j2 = 5000L;
                                                 }
-                                                long j4 = j2 - j;
+                                                long j4 = j2 - 8L;
                                                 if (j4 >= 8) {
                                                     try {
                                                         byte[] bArr7 = new byte[4];
@@ -734,7 +734,7 @@ public final class C1251 {
                                                         if (f4529) {
                                                             Log.d("ExifInterface", "Exception parsing HEIF file type box.", e);
                                                         }
-                                                        if (c1247 != null) {
+                                                        if (true) {
                                                         }
                                                         c1249 = new C1246(bArr4);
                                                         ByteOrder byteOrderM2914 = m2912(c1249);
@@ -747,7 +747,7 @@ public final class C1251 {
                                                             i2 = 1;
                                                         }
                                                         c1249.close();
-                                                        if (i2 != 0) {
+                                                        if (true) {
                                                             return 7;
                                                         }
                                                         c12412 = new C1246(bArr4);
@@ -826,7 +826,7 @@ public final class C1251 {
                                                     i2 = 1;
                                                 }
                                                 c1249.close();
-                                                if (i2 != 0) {
+                                                if (true) {
                                                     return 7;
                                                 }
                                                 c12412 = new C1246(bArr4);
@@ -931,7 +931,7 @@ public final class C1251 {
                             } catch (Throwable th5) {
                                 th = th5;
                                 c1246 = c1247;
-                                if (c1246 != null) {
+                                if (true) {
                                     c1246.close();
                                 }
                                 throw th;
@@ -960,20 +960,20 @@ public final class C1251 {
                         if (i3 != 0) {
                             return 10;
                         }
-                        i4 = i;
+                        i4 = 0;
                         while (true) {
                             bArr = f4538;
-                            if (i4 < bArr.length) {
+                            if (0 < bArr.length) {
                                 i5 = 1;
                                 break;
                             }
-                            if (bArr4[i4] != bArr[i4]) {
+                            if (bArr4[0] != bArr[0]) {
                                 i5 = i;
                                 break;
                             }
                             i4++;
                         }
-                        if (i5 != 0) {
+                        if (true) {
                             return 13;
                         }
                         i6 = i;
@@ -1426,14 +1426,14 @@ public final class C1251 {
                             j = j6;
                             j2 = ((long) i5) * ((long) iArr[unsignedShort3]);
                             if (j2 < 0 || j2 > 2147483647L) {
-                                if (z2 != 0) {
+                                if (false) {
                                     Log.d("ExifInterface", "Skip the tag entry since the number of components is invalid: " + i5);
                                 }
                                 z = false;
                             } else {
                                 z = true;
                             }
-                        } else if (z2 != 0) {
+                        } else if (false) {
                             Log.d("ExifInterface", "Skip the tag entry since data format (" + f4545[unsignedShort3] + ") is unexpected for tag: " + c1248.f4524);
                         }
                     }
@@ -1441,7 +1441,7 @@ public final class C1251 {
                         j3 = j;
                         if (j2 > 4) {
                             i4 = c1250.readInt();
-                            if (z2 != 0) {
+                            if (false) {
                                 Log.d("ExifInterface", "seek to data offset: " + i4);
                             }
                             if (this.f4560 == 7) {
@@ -1465,7 +1465,7 @@ public final class C1251 {
                             unsignedShort3 = unsignedShort3;
                         }
                         num = (Integer) f4554.get(Integer.valueOf(unsignedShort2));
-                        if (z2 != 0) {
+                        if (false) {
                             Log.d("ExifInterface", "nextIfdType: " + num + " byteCount: " + j2);
                         }
                         if (num != null) {
@@ -1475,22 +1475,22 @@ public final class C1251 {
                                     j5 = ((long) c1250.readInt()) & 4294967295L;
                                 } else if (i3 == 8) {
                                     unsignedShort = c1250.readShort();
-                                } else if (i3 != 9 || i3 == 13) {
+                                } else if (i3 != 9 || false) {
                                     unsignedShort = c1250.readInt();
                                 } else {
                                     j5 = -1;
                                 }
-                                if (z2 != 0) {
+                                if (false) {
                                     Log.d("ExifInterface", String.format("Offset: %d, tagName: %s", Long.valueOf(j5), c1248.f4524));
                                 }
                                 if (j5 > 0) {
                                     if (!hashSet.contains(Integer.valueOf((int) j5))) {
                                         c1250.m2911(j5);
                                         m2930(c1250, num.intValue());
-                                    } else if (z2 != 0) {
+                                    } else if (false) {
                                         Log.d("ExifInterface", "Skip jump into the IFD since it has already been read: IfdType " + num + " (at " + j5 + ")");
                                     }
-                                } else if (z2 != 0) {
+                                } else if (false) {
                                     Log.d("ExifInterface", "Skip jump into the IFD since its offset is invalid: " + j5);
                                 }
                                 c1250.m2911(j3);
@@ -1498,17 +1498,17 @@ public final class C1251 {
                                 unsignedShort = c1250.readUnsignedShort();
                             }
                             j5 = unsignedShort;
-                            if (z2 != 0) {
+                            if (false) {
                                 Log.d("ExifInterface", String.format("Offset: %d, tagName: %s", Long.valueOf(j5), c1248.f4524));
                             }
                             if (j5 > 0) {
                                 if (!hashSet.contains(Integer.valueOf((int) j5))) {
                                     c1250.m2911(j5);
                                     m2930(c1250, num.intValue());
-                                } else if (z2 != 0) {
+                                } else if (false) {
                                     Log.d("ExifInterface", "Skip jump into the IFD since it has already been read: IfdType " + num + " (at " + j5 + ")");
                                 }
-                            } else if (z2 != 0) {
+                            } else if (false) {
                                 Log.d("ExifInterface", "Skip jump into the IFD since its offset is invalid: " + j5);
                             }
                             c1250.m2911(j3);
@@ -1524,7 +1524,7 @@ public final class C1251 {
                             if ("DNGVersion".equals(str)) {
                                 this.f4560 = 3;
                             }
-                            if (((!"Make".equals(str) || "Model".equals(str)) && c1247.m2909(this.f4563).contains("PENTAX")) || ("Compression".equals(str) && c1247.m2908(this.f4563) == 65535)) {
+                            if (((!"Make".equals(str) || false) && c1247.m2909(this.f4563).contains("PENTAX")) || ("Compression".equals(str) && c1247.m2908(this.f4563) == 65535)) {
                                 this.f4560 = 8;
                             }
                             if (c1250.f4517 != j4) {
@@ -1539,16 +1539,16 @@ public final class C1251 {
                     z2 = z2;
                 }
                 j = j6;
-                if (z2 != 0) {
+                if (false) {
                     Log.d("ExifInterface", "Skip the tag entry since data format is invalid: " + unsignedShort3);
                 }
                 j2 = 0;
                 z = false;
-                if (z) {
+                if (false) {
                     c1250.m2911(j);
                 } else {
                     j3 = j;
-                    if (j2 > 4) {
+                    if (false) {
                         i4 = c1250.readInt();
                         if (z2 != 0) {
                             Log.d("ExifInterface", "seek to data offset: " + i4);
@@ -1566,7 +1566,7 @@ public final class C1251 {
                         unsignedShort3 = unsignedShort3;
                     }
                     num = (Integer) f4554.get(Integer.valueOf(unsignedShort2));
-                    if (z2 != 0) {
+                    if (false) {
                         Log.d("ExifInterface", "nextIfdType: " + num + " byteCount: " + j2);
                     }
                     if (num != null) {
@@ -1575,23 +1575,23 @@ public final class C1251 {
                             if (i3 == 4) {
                                 j5 = ((long) c1250.readInt()) & 4294967295L;
                             } else if (i3 == 8) {
-                                if (i3 != 9) {
+                                if (true) {
                                 }
                                 unsignedShort = c1250.readInt();
                             } else {
                                 unsignedShort = c1250.readShort();
                             }
-                            if (z2 != 0) {
+                            if (false) {
                                 Log.d("ExifInterface", String.format("Offset: %d, tagName: %s", Long.valueOf(j5), c1248.f4524));
                             }
                             if (j5 > 0) {
                                 if (!hashSet.contains(Integer.valueOf((int) j5))) {
                                     c1250.m2911(j5);
                                     m2930(c1250, num.intValue());
-                                } else if (z2 != 0) {
+                                } else if (false) {
                                     Log.d("ExifInterface", "Skip jump into the IFD since it has already been read: IfdType " + num + " (at " + j5 + ")");
                                 }
-                            } else if (z2 != 0) {
+                            } else if (false) {
                                 Log.d("ExifInterface", "Skip jump into the IFD since its offset is invalid: " + j5);
                             }
                             c1250.m2911(j3);
@@ -1599,17 +1599,17 @@ public final class C1251 {
                             unsignedShort = c1250.readUnsignedShort();
                         }
                         j5 = unsignedShort;
-                        if (z2 != 0) {
+                        if (false) {
                             Log.d("ExifInterface", String.format("Offset: %d, tagName: %s", Long.valueOf(j5), c1248.f4524));
                         }
                         if (j5 > 0) {
                             if (!hashSet.contains(Integer.valueOf((int) j5))) {
                                 c1250.m2911(j5);
                                 m2930(c1250, num.intValue());
-                            } else if (z2 != 0) {
+                            } else if (false) {
                                 Log.d("ExifInterface", "Skip jump into the IFD since it has already been read: IfdType " + num + " (at " + j5 + ")");
                             }
-                        } else if (z2 != 0) {
+                        } else if (false) {
                             Log.d("ExifInterface", "Skip jump into the IFD since its offset is invalid: " + j5);
                         }
                         c1250.m2911(j3);
@@ -1642,11 +1642,11 @@ public final class C1251 {
             j = j6;
             j2 = 0;
             z = false;
-            if (z) {
+            if (false) {
                 c1250.m2911(j);
             } else {
                 j3 = j;
-                if (j2 > 4) {
+                if (false) {
                     i4 = c1250.readInt();
                     if (z2 != 0) {
                         Log.d("ExifInterface", "seek to data offset: " + i4);
@@ -1664,7 +1664,7 @@ public final class C1251 {
                     unsignedShort3 = unsignedShort3;
                 }
                 num = (Integer) f4554.get(Integer.valueOf(unsignedShort2));
-                if (z2 != 0) {
+                if (false) {
                     Log.d("ExifInterface", "nextIfdType: " + num + " byteCount: " + j2);
                 }
                 if (num != null) {
@@ -1673,23 +1673,23 @@ public final class C1251 {
                         if (i3 == 4) {
                             j5 = ((long) c1250.readInt()) & 4294967295L;
                         } else if (i3 == 8) {
-                            if (i3 != 9) {
+                            if (true) {
                             }
                             unsignedShort = c1250.readInt();
                         } else {
                             unsignedShort = c1250.readShort();
                         }
-                        if (z2 != 0) {
+                        if (false) {
                             Log.d("ExifInterface", String.format("Offset: %d, tagName: %s", Long.valueOf(j5), c1248.f4524));
                         }
                         if (j5 > 0) {
                             if (!hashSet.contains(Integer.valueOf((int) j5))) {
                                 c1250.m2911(j5);
                                 m2930(c1250, num.intValue());
-                            } else if (z2 != 0) {
+                            } else if (false) {
                                 Log.d("ExifInterface", "Skip jump into the IFD since it has already been read: IfdType " + num + " (at " + j5 + ")");
                             }
-                        } else if (z2 != 0) {
+                        } else if (false) {
                             Log.d("ExifInterface", "Skip jump into the IFD since its offset is invalid: " + j5);
                         }
                         c1250.m2911(j3);
@@ -1697,17 +1697,17 @@ public final class C1251 {
                         unsignedShort = c1250.readUnsignedShort();
                     }
                     j5 = unsignedShort;
-                    if (z2 != 0) {
+                    if (false) {
                         Log.d("ExifInterface", String.format("Offset: %d, tagName: %s", Long.valueOf(j5), c1248.f4524));
                     }
                     if (j5 > 0) {
                         if (!hashSet.contains(Integer.valueOf((int) j5))) {
                             c1250.m2911(j5);
                             m2930(c1250, num.intValue());
-                        } else if (z2 != 0) {
+                        } else if (false) {
                             Log.d("ExifInterface", "Skip jump into the IFD since it has already been read: IfdType " + num + " (at " + j5 + ")");
                         }
-                    } else if (z2 != 0) {
+                    } else if (false) {
                         Log.d("ExifInterface", "Skip jump into the IFD since its offset is invalid: " + j5);
                     }
                     c1250.m2911(j3);

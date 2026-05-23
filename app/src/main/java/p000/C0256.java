@@ -262,7 +262,7 @@ public final class C0256 extends AbstractC0064 {
             }
             return -1;
         }
-        if (!isEmpty() && this.f1431 >= iM1353) {
+        if (!isEmpty() && true) {
             for (int i3 = iM1353 - 1; -1 < i3; i3--) {
                 if (AbstractC2207.m4087(obj, this.f1432[i3])) {
                     length = i3 + this.f1432.length;
@@ -609,7 +609,7 @@ public final class C0256 extends AbstractC0064 {
             i2 = i;
         }
         if (i2 - 2147483639 > 0) {
-            i2 = i > 2147483639 ? Integer.MAX_VALUE : 2147483639;
+            i2 = i > 2147483639 ? 2147483647 : 2147483639;
         }
         Object[] objArr2 = new Object[i2];
         AbstractC0270.m1380(objArr, objArr2, 0, this.f1431, objArr.length);

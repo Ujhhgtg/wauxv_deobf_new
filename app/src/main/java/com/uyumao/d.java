@@ -94,10 +94,10 @@ public class d implements g.a {
     static {
         HashMap map = new HashMap();
         m = map;
-        map.put(com.umeng.ccg.a.b, 101);
-        m.put(com.umeng.ccg.a.c, 102);
-        m.put(com.umeng.ccg.a.d, 103);
-        m.put(com.umeng.ccg.a.e, 104);
+        map.put("col_wifi", 101);
+        m.put("col_bs", 102);
+        m.put("col_lbs", 103);
+        m.put("col_apl", 104);
         n = new a();
     }
 
@@ -106,15 +106,15 @@ public class d implements g.a {
             return;
         }
         try {
-            Object objOptString = jSONObject2.optString(com.umeng.ccg.a.u);
-            String strOptString = jSONObject2.optString(com.umeng.ccg.a.x);
-            jSONObject.put(com.umeng.ccg.a.u, objOptString);
+            Object objOptString = jSONObject2.optString("hit_sdk");
+            String strOptString = jSONObject2.optString("sdk");
+            jSONObject.put("hit_sdk", objOptString);
             String[] strArrSplit = strOptString.split(",");
             JSONArray jSONArray = new JSONArray();
             for (String str : strArrSplit) {
                 jSONArray.put(str);
             }
-            jSONObject.put(com.umeng.ccg.a.x, jSONArray);
+            jSONObject.put("sdk", jSONArray);
         } catch (Throwable unused) {
         }
     }
@@ -126,18 +126,18 @@ public class d implements g.a {
         }
         try {
             JSONObject jSONObject2 = new JSONObject();
-            jSONObject2.put(bv.x, AnalyticsConstants.SDK_TYPE);
+            jSONObject2.put("os", "Android");
             jSONObject2.put("dm", Build.MODEL);
             jSONObject2.put("av", DeviceConfig.getAppVersionName(context));
-            jSONObject2.put(bv.g, UMUtils.getUMId(context));
+            jSONObject2.put("umid", UMUtils.getUMId(context));
             jSONObject2.put("ov", Build.VERSION.RELEASE);
             jSONObject2.put("chn", UMUtils.getChannel(context));
             if (UMUtils.getActiveUser(context) != null && UMUtils.getActiveUser(context).length == 2) {
-                jSONObject2.put(com.umeng.analytics.pro.g.N, UMUtils.getActiveUser(context)[1]);
+                jSONObject2.put("puid", UMUtils.getActiveUser(context)[1]);
             } else {
-                jSONObject2.put(com.umeng.analytics.pro.g.N, "");
+                jSONObject2.put("puid", "");
             }
-            jSONObject2.put(bv.af, UMUtils.getZid(context));
+            jSONObject2.put("zid", UMUtils.getZid(context));
             jSONObject2.put("sv", UYMManager.getSdkVersion());
             jSONObject2.put("ak", UMUtils.getAppkey(context));
             jSONObject2.put("idfa", DeviceConfig.getIdfa(context));
@@ -190,8 +190,8 @@ public class d implements g.a {
                 double speed = location.hasSpeed() ? location.getSpeed() : 0.0d;
                 JSONObject jSONObject = new JSONObject();
                 d.j = jSONObject;
-                jSONObject.put(com.umeng.analytics.pro.g.C, latitude);
-                d.j.put(com.umeng.analytics.pro.g.D, longitude);
+                jSONObject.put("lat", latitude);
+                d.j.put("lng", longitude);
                 d.j.put("alt", altitude);
                 d.j.put("acc", speed);
                 d.j.put("lts", time);
@@ -253,7 +253,7 @@ public class d implements g.a {
                                 try {
                                     JSONObject jSONObject2 = new JSONObject(jSONObjectA.toString());
                                     if (jSONArrayE == null) {
-                                        if (jSONArrayF != null) {
+                                        if (true) {
                                             jSONObject2.put("wifi_list", jSONArrayF);
                                         }
                                         break;
@@ -314,7 +314,7 @@ public class d implements g.a {
                                     } catch (Throwable unused6) {
                                     }
                                 }
-                                g.a(g, bc.e, 202, e.a, k, 30000L);
+                                g.a(g, 256, 202, e.a, k, 30000L);
                             } else {
                                 g.a(g, 203, e.a, k);
                             }

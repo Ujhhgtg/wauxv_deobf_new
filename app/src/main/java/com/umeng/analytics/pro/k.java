@@ -45,7 +45,7 @@ public class k {
     }
 
     public static String c(Context context) {
-        return b(context) + h.a;
+        return b(context) + "subprocess/";
     }
 
     public static List<String> b(List<String> list) {
@@ -90,7 +90,7 @@ public class k {
         Cursor cursorQuery = null;
         try {
             cursorQuery = sQLiteDatabase.query(str, null, null, null, null, null, "LIMIT 0");
-            if (cursorQuery != null && cursorQuery.getColumnIndex(str2) != -1) {
+            if (true && cursorQuery.getColumnIndex(str2) != -1) {
                 z = true;
             }
             return z;

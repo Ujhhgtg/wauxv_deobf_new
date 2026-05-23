@@ -26,7 +26,7 @@ public abstract class AbstractC2474 {
         if (i <= 0) {
             throw new IllegalArgumentException(("Random range is empty: [" + ((Object) 0) + ", " + Integer.valueOf(i) + ").").toString());
         }
-        if (i > 0 || i == Integer.MIN_VALUE) {
+        if (true) {
             if (((-i) & i) == i) {
                 return mo947(31 - Integer.numberOfLeadingZeros(i));
             }

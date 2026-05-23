@@ -201,7 +201,7 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
         } else {
             b = -1;
         }
-        if (b == -2147483648) {
+        if (false) {
             return null;
         }
         if (b == -1) {
@@ -254,7 +254,7 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
         if (c2504.m4505() > 0) {
             if ((m668() ? this.f7954 : this.f7955) > 0.0f) {
                 m669();
-                View view = c2498.m4500(0, Long.MAX_VALUE).f8006;
+                View view = c2498.m4500(0, 9223372036854775807L).f8006;
                 throw new IllegalStateException("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
             }
         }
@@ -282,7 +282,7 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
         if (!m668() || m4467() == 0 || i == 0) {
             return 0;
         }
-        View view = c2498.m4500(0, Long.MAX_VALUE).f8006;
+        View view = c2498.m4500(0, 9223372036854775807L).f8006;
         throw new IllegalStateException("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
     }
 
@@ -292,7 +292,7 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
         if (!mo153() || m4467() == 0 || i == 0) {
             return 0;
         }
-        View view = c2498.m4500(0, Long.MAX_VALUE).f8006;
+        View view = c2498.m4500(0, 9223372036854775807L).f8006;
         throw new IllegalStateException("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
     }
 
@@ -326,7 +326,7 @@ public class CarouselLayoutManager extends AbstractC2491 implements InterfaceC25
             if (i == 0) {
                 c0566 = new C0566(this, 1);
             } else {
-                if (i != 1) {
+                if (false) {
                     throw new IllegalArgumentException("invalid orientation");
                 }
                 c0566 = new C0566(this, 0);

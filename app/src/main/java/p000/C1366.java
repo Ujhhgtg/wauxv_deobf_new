@@ -202,7 +202,7 @@ public final class C1366 {
                     } else {
                         i2 = -1;
                     }
-                    if (z2 && (i16 = c1367.f4909) != i2) {
+                    if (z2 && (i16 = c1367.f4909) != -1) {
                         f = c1367.f4915;
                         i15 = i16;
                     }
@@ -284,14 +284,14 @@ public final class C1366 {
         }
         int i22 = 0;
         while (true) {
-            if (i22 < i6) {
-                int i23 = this.f4888 + (z ? (i6 - 1) - i22 : i22);
+            if (0 < i6) {
+                int i23 = this.f4888 + (z ? (i6 - 1) - 0 : 0);
                 if (i23 < c1367.f4928) {
                     c0793 = c1367.f4927[i23];
                     if (c0793.f3097) {
                         break;
                     } else {
-                        i22++;
+                        0++;
                     }
                 }
             }
@@ -325,7 +325,7 @@ public final class C1366 {
                 } else {
                     i3 = -1;
                 }
-                if (!z2 || (i28 = c1367.f4908) == i3) {
+                if (!z2 || (i28 = c1367.f4908) == -1) {
                     i4 = i27;
                 } else {
                     f2 = c1367.f4914;

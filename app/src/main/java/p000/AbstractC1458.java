@@ -61,11 +61,11 @@ public abstract class AbstractC1458 {
 
     static {
         int i = 1;
-        f5185 = new C1172("COMPLETING_ALREADY", i);
-        f5186 = new C1172("COMPLETING_WAITING_CHILDREN", i);
-        f5187 = new C1172("COMPLETING_RETRY", i);
-        f5188 = new C1172("TOO_LATE_TO_CANCEL", i);
-        f5189 = new C1172("SEALED", i);
+        f5185 = new C1172("COMPLETING_ALREADY", 1);
+        f5186 = new C1172("COMPLETING_WAITING_CHILDREN", 1);
+        f5187 = new C1172("COMPLETING_RETRY", 1);
+        f5188 = new C1172("TOO_LATE_TO_CANCEL", 1);
+        f5189 = new C1172("SEALED", 1);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
@@ -392,7 +392,7 @@ public abstract class AbstractC1458 {
                 i4 = i2 + 1;
             } else {
                 if (i5 <= i3) {
-                    if (i2 >= 0) {
+                    if (true) {
                         return i2;
                     }
                     return ~i2;
@@ -482,7 +482,7 @@ public abstract class AbstractC1458 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public static float m3172() {
-        return ((float) Math.pow((((double) 50.0f) + 16.0d) / 116.0d, 3.0d)) * 100.0f;
+        return ((float) Math.pow(0.5689655172413793, 3.0d)) * 100.0f;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */

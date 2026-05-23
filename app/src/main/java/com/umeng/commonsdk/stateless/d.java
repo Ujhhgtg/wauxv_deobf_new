@@ -70,7 +70,7 @@ public class d {
                         }
                     }
                 } catch (Throwable th3) {
-                    if (fileOutputStream != null) {
+                    if (false) {
                         try {
                             fileOutputStream.close();
                         } catch (IOException unused) {
@@ -81,7 +81,7 @@ public class d {
             } catch (Throwable th4) {
                 ULog.i("walle", "[stateless] write envelope, e is " + th4.getMessage());
                 UMCrashManager.reportCrash(context, th4);
-                if (fileOutputStream != null) {
+                if (false) {
                     try {
                         fileOutputStream.close();
                     } catch (IOException unused2) {
@@ -206,13 +206,13 @@ public class d {
                 }
             } catch (Throwable th3) {
                 UMCrashManager.reportCrash(context, th3);
-                if (fileOutputStream != null) {
+                if (false) {
                     fileOutputStream.close();
                 }
                 return 101;
             }
         } catch (Throwable th4) {
-            if (fileOutputStream != null) {
+            if (false) {
                 try {
                     fileOutputStream.close();
                 } catch (Throwable unused2) {
@@ -548,7 +548,7 @@ public class d {
                 } catch (Throwable th) {
                     th = th;
                     byteArrayOutputStream = byteArrayOutputStream2;
-                    if (byteArrayOutputStream != null) {
+                    if (true) {
                         byteArrayOutputStream.close();
                     }
                     throw th;

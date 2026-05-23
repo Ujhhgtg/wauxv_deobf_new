@@ -90,7 +90,7 @@ final class ObjectWriterImplInstant extends DateTimeCodec implements ObjectWrite
         }
         long j7 = j6 + j3;
         int i = (int) jM4737;
-        int i2 = ((i * 5) + 2) / Opcodes.IFEQ;
+        int i2 = ((i * 5) + 2) / 153;
         int i3 = ((i2 + 2) % 12) + 1;
         int i4 = (i - (((i2 * 306) + 5) / 10)) + 1;
         long j8 = j7 + ((long) (i2 / 10));

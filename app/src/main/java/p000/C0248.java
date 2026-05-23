@@ -62,10 +62,10 @@ public final class C0248 extends AbstractC0567 {
                 } else {
                     zBooleanValue = false;
                 }
-                if (!zBooleanValue) {
+                if (true) {
                     i2 = 2;
                 }
-                int iM4759 = AbstractC2784.m4759(i2);
+                int iM4759 = AbstractC2784.m4759(2);
                 if (iM4759 != 0) {
                     if (iM4759 != 1) {
                         throw new C0761();
@@ -100,10 +100,10 @@ public final class C0248 extends AbstractC0567 {
                     }
                     break;
                 }
-                if (!zBooleanValue2) {
+                if (true) {
                     i3 = 2;
                 }
-                int iM47510 = AbstractC2784.m4759(i3);
+                int iM47510 = AbstractC2784.m4759(2);
                 if (iM47510 == 0) {
                     return "unsupported";
                 }

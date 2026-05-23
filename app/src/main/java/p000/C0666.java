@@ -2,7 +2,7 @@ package p000;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᤝᲇᤞᲁᲀ, reason: contains not printable characters */
@@ -20,9 +20,9 @@ public final class C0666 extends AbstractC1823 implements InterfaceC1582 {
         int iM2475;
         String[] strArr = AbstractC1574.f5469;
         try {
-            C1565.f5440.getClass();
+            
             if (C1565.m3280()) {
-                dexKitBridge.getClass();
+                
                 C1333 c1333 = new C1333(4);
                 C1981 c1981 = new C1981(4);
                 C1981.m3818(c1981, "com.tencent.mm.pluginsdk.ui.chat.ChatFooter");
@@ -36,11 +36,11 @@ public final class C0666 extends AbstractC1823 implements InterfaceC1582 {
                 } else {
                     ArrayList arrayList = C3678.f11549;
                     C3678.m5306("chatView hostId use Default", null, 14);
-                    iM2475 = AbstractC0968.m2475(AbstractC3471.m5079(EnumC3677.f11529) ? "bl9" : "b4u");
+                    iM2475 = AbstractC0968.m2475(AbstractC3471.m5079(WeChatVersions.f11529) ? "bl9" : "b4u");
                 }
                 c0665.m2545(iM2475);
             }
-            c2585 = C3497.f10997;
+            c2585 = Unit.INSTANCE;
         } catch (Throwable th) {
             c2585 = new C2585(th);
         }

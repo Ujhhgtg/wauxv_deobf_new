@@ -35,7 +35,7 @@ public final class C0658 extends AbstractC2482 {
         C0655 c0655 = (C0655) this.f2522.get(i);
         C0663 c0663 = C0663.f2533;
         Context context = c0657.f8006.getContext();
-        c0663.getClass();
+        
         String[] strArr = AbstractC1574.f5469;
         int color = Color.parseColor(MagicFactory.get(AbstractC3681.m5331(context) ? -611023522364084L : -611066472037044L, strArr));
         LinearLayout linearLayout = c0657.f2519;

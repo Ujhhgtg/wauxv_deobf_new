@@ -26,7 +26,7 @@ public class da {
     public static long a(String str) {
         if (str != null && !str.isEmpty()) {
             try {
-                Date date = new SimpleDateFormat(a, Locale.getDefault()).parse(str);
+                Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).parse(str);
                 if (date != null) {
                     return date.getTime();
                 }
@@ -38,6 +38,6 @@ public class da {
     }
 
     public static String a(long j) {
-        return new SimpleDateFormat(a, Locale.getDefault()).format(new Date(j));
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).format(new Date(j));
     }
 }

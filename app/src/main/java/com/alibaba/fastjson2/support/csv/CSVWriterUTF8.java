@@ -207,7 +207,7 @@ final class CSVWriterUTF8 extends CSVWriter {
             writeInt64(j);
             return;
         }
-        if (j != Long.MIN_VALUE && i < 20 && i >= 0) {
+        if (j != -9223372036854775808L && i < 20 && i >= 0) {
             int i2 = this.off;
             byte[] bArr = this.bytes;
             if (i2 + 24 > bArr.length) {
@@ -262,7 +262,7 @@ final class CSVWriterUTF8 extends CSVWriter {
         bArr2[i2] = 34;
         for (byte b3 : bArr) {
             if (b3 == 34) {
-                IOUtils.putShortUnaligned(bArr2, i3, DOUBLE_QUOTE_2_LATIN1);
+                IOUtils.putShortUnaligned(bArr2, i3, 8738);
                 i3 += 2;
             } else {
                 bArr2[i3] = b3;

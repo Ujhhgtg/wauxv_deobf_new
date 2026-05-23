@@ -13,6 +13,6 @@ public final class C0201 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f1281 = new C0201("AntiRevokePlusHook.ValDeleteTip", "[已拦截]", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f1281 = new C0201("AntiRevokePlusHook.ValDeleteTip", "[已拦截]", null, false, 0, 0.0f, 0L, 124);
     }
 }

@@ -13,7 +13,7 @@ public final class C2192 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2191.f7152, dexKitBridge, new C2174(25));
+        AbstractC1574.findMethod(C2191.f7152, dexKitBridge, new C2174(25));
     }
 
     @Override // p000.AbstractC1557

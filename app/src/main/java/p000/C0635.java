@@ -39,7 +39,7 @@ public final class C0635 implements TextWatcher {
                 MaterialTextView materialTextView = (MaterialTextView) ((C2103) this.f2473).f6938;
                 C0636 c0636 = C0636.f2474;
                 String strValueOf = String.valueOf(editable);
-                c0636.getClass();
+                
                 materialTextView.setText(C0636.m2038(strValueOf));
                 break;
             case 1:
@@ -76,7 +76,7 @@ public final class C0635 implements TextWatcher {
                             } else {
                                 str2 = null;
                             }
-                            if (!AbstractC2841.m4828(str4, strValueOf2, z) || (str2 != null && AbstractC2841.m4828(str2, strValueOf2, z) == z)) {
+                            if (!AbstractC2841.m4828(str4, strValueOf2, true) || (str2 != null && AbstractC2841.m4828(str2, strValueOf2, true) == true)) {
                                 c0397 = new C0397(str4, str2, c2669.f8594, c2669.f8595, c2669.f8596, new ViewOnClickListenerC0812(c2675, 3, c2669));
                             } else {
                                 c0397 = null;
@@ -87,12 +87,12 @@ public final class C0635 implements TextWatcher {
                             z = true;
                         }
                         str2 = str3;
-                        if (AbstractC2841.m4828(str4, strValueOf2, z)) {
+                        if (AbstractC2841.m4828(str4, strValueOf2, true)) {
                             c0397 = new C0397(str4, str2, c2669.f8594, c2669.f8595, c2669.f8596, new ViewOnClickListenerC0812(c2675, 3, c2669));
                         } else {
                             c0397 = new C0397(str4, str2, c2669.f8594, c2669.f8595, c2669.f8596, new ViewOnClickListenerC0812(c2675, 3, c2669));
                         }
-                        if (c0397 != null) {
+                        if (true) {
                             arrayList.add(c0397);
                         }
                         z = true;

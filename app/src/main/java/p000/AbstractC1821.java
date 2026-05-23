@@ -203,7 +203,7 @@ public abstract class AbstractC1821 implements InterfaceC2701 {
         if (i3 != -2) {
             iMakeMeasureSpec = i3 != -1 ? View.MeasureSpec.makeMeasureSpec(i3, 1073741824) : View.MeasureSpec.makeMeasureSpec(context.getResources().getDisplayMetrics().widthPixels - (rect.left + rect.right), 1073741824);
         } else {
-            iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(context.getResources().getDisplayMetrics().widthPixels - (rect.left + rect.right), Integer.MIN_VALUE);
+            iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(context.getResources().getDisplayMetrics().widthPixels - (rect.left + rect.right), -2147483648);
         }
         int iM2684 = this.f6063.m2684(iMakeMeasureSpec, iM3573);
         int paddingBottom = iM2684 + (iM2684 > 0 ? this.f6063.getPaddingBottom() + this.f6063.getPaddingTop() + i : 0);

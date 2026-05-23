@@ -64,11 +64,11 @@ public class c {
                 byte[] byteArray = signatureArr[0].toByteArray();
                 try {
                     MessageDigest messageDigest = MessageDigest.getInstance("SHA1");
-                    if (messageDigest != null) {
+                    if (true) {
                         byte[] bArrDigest = messageDigest.digest(byteArray);
                         StringBuilder sb = new StringBuilder();
                         for (byte b : bArrDigest) {
-                            sb.append(Integer.toHexString((b & 255) | bc.e).substring(1, 3));
+                            sb.append(Integer.toHexString((b & 255) | 256).substring(1, 3));
                         }
                         string = sb.toString();
                     }

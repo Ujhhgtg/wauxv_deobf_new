@@ -41,7 +41,7 @@ public final class C1525 extends MetricAffectingSpan implements LeadingMarginSpa
             Paint paint2 = this.f5365;
             paint2.set(paint);
             C1901 c1901 = this.f5363;
-            c1901.getClass();
+            
             paint2.setColor(AbstractC2665.m4657(paint2.getColor(), 75));
             paint2.setStyle(Paint.Style.FILL);
             int i9 = c1901.f6275;
@@ -81,7 +81,7 @@ public final class C1525 extends MetricAffectingSpan implements LeadingMarginSpa
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m3256(TextPaint textPaint) {
-        this.f5363.getClass();
+        
         textPaint.setFakeBoldText(true);
         int i = this.f5366;
         float[] fArr = C1901.f6270;

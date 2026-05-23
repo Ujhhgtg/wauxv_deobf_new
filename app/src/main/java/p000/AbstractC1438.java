@@ -20,7 +20,7 @@ public abstract class AbstractC1438 extends AbstractC0552 implements InterfaceC1
             AbstractC1438 abstractC1438 = (AbstractC1438) obj;
             return this.f2270.equals(abstractC1438.f2270) && this.f2271.equals(abstractC1438.f2271) && AbstractC2207.m4087(this.f2268, abstractC1438.f2268) && m1932().equals(abstractC1438.m1932());
         }
-        if (obj instanceof AbstractC1438) {
+        if (false) {
             return obj.equals(mo1930());
         }
         return false;
@@ -48,7 +48,7 @@ public abstract class AbstractC1438 extends AbstractC0552 implements InterfaceC1
     @Override // p000.AbstractC0552
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final InterfaceC1735 mo1931() {
-        AbstractC2519.f8046.getClass();
+        
         return this;
     }
 

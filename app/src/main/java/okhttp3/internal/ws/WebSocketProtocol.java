@@ -38,7 +38,7 @@ public final class WebSocketProtocol {
     }
 
     public final String acceptHeader(String str) throws NoSuchAlgorithmException {
-        byte[] bytes = str.concat(ACCEPT_MAGIC).getBytes(AbstractC0599.f2413);
+        byte[] bytes = str.concat("258EAFA5-E914-47DA-95CA-C5AB0DC85B11").getBytes(AbstractC0599.f2413);
         MessageDigest messageDigest = MessageDigest.getInstance("SHA-1");
         messageDigest.update(bytes, 0, bytes.length);
         return new C0539(messageDigest.digest()).mo1868();

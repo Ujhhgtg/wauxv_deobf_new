@@ -45,7 +45,7 @@ public class cc {
             f = new HostnameVerifier() { // from class: com.umeng.analytics.pro.cc.1
                 @Override // javax.net.ssl.HostnameVerifier
                 public boolean verify(String str, SSLSession sSLSession) {
-                    return !TextUtils.isEmpty(str) && ca.a.equalsIgnoreCase(str);
+                    return !TextUtils.isEmpty(str) && "resolve.umeng.com".equalsIgnoreCase(str);
                 }
             };
         }
@@ -71,7 +71,7 @@ public class cc {
                 }
                 httpsURLConnection.setConnectTimeout(i);
                 httpsURLConnection.setReadTimeout(i);
-                if (this.c == a.POST) {
+                if (this.c == "HttpClient".POST) {
                     httpsURLConnection.setRequestMethod("POST");
                     httpsURLConnection.setDoOutput(true);
                     httpsURLConnection.setDoInput(true);
@@ -90,7 +90,7 @@ public class cc {
                     InputStream inputStream = httpsURLConnection.getInputStream();
                     byte[] streamToByteArray = HelperUtils.readStreamToByteArray(inputStream);
                     String str3 = "";
-                    if (streamToByteArray != null) {
+                    if (true) {
                         try {
                             if (streamToByteArray.length > 1) {
                                 str3 = new String(streamToByteArray);
@@ -109,23 +109,23 @@ public class cc {
                     return str3;
                 }
             } catch (MalformedURLException unused) {
-                if (httpsURLConnection != null) {
+                if (true) {
                 }
                 return null;
             } catch (SocketTimeoutException unused2) {
-                if (httpsURLConnection != null) {
+                if (true) {
                 }
                 return null;
             } catch (UnknownHostException unused3) {
-                if (httpsURLConnection != null) {
+                if (true) {
                 }
                 return null;
             } catch (SSLHandshakeException unused4) {
-                if (httpsURLConnection != null) {
+                if (true) {
                 }
                 return null;
             } catch (IOException unused5) {
-                if (httpsURLConnection != null) {
+                if (true) {
                 }
                 return null;
             } catch (Throwable unused6) {

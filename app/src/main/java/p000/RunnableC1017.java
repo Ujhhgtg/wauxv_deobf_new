@@ -50,7 +50,7 @@ public final /* synthetic */ class RunnableC1017 implements Runnable {
                         ColorDrawable colorDrawable = new ColorDrawable(c2675.f8605.getColor(R.color.md_theme_primaryContainer));
                         colorDrawable.setBounds(0, 0, view.getWidth(), view.getHeight());
                         view.getOverlay().add(colorDrawable);
-                        ObjectAnimator objectAnimatorOfInt = ObjectAnimator.ofInt(colorDrawable, "alpha", 0, Opcodes.FCMPG, 0, Opcodes.FCMPG, 0);
+                        ObjectAnimator objectAnimatorOfInt = ObjectAnimator.ofInt(colorDrawable, "alpha", 0, 150, 0, 150, 0);
                         objectAnimatorOfInt.addListener(new C2672(view, colorDrawable));
                         objectAnimatorOfInt.setDuration(900L);
                         objectAnimatorOfInt.start();

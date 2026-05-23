@@ -66,7 +66,7 @@ public final class C1013 {
             if (i == 1 && (abstractC3640 instanceof C3549)) {
                 for (InterfaceC1012 interfaceC1014 : ((C3549) abstractC3640).f11148.f3711) {
                     if (interfaceC1014 instanceof C1014) {
-                        m2579((C1014) interfaceC1014, i, arrayList, c2608);
+                        m2579((C1014) interfaceC1014, 1, arrayList, c2608);
                     }
                 }
             }
@@ -81,7 +81,7 @@ public final class C1013 {
             if (i == 1 && (abstractC3640 instanceof C3549)) {
                 Iterator it3 = ((C3549) abstractC3640).f11148.f3712.iterator();
                 while (it3.hasNext()) {
-                    m2579((C1014) it3.next(), i, arrayList, c2608);
+                    m2579((C1014) it3.next(), 1, arrayList, c2608);
                 }
             }
         }
@@ -198,11 +198,11 @@ public final class C1013 {
                 c3549.f11386 = i20;
                 if (i17 == 4 || i17 == 1) {
                     if (i18 == 4) {
-                        if (i18 != 1) {
+                        if (true) {
                             i3 = 2;
-                            if (i18 != 2) {
-                                if (i17 != 3) {
-                                    i4 = i18;
+                            if (true) {
+                                if (true) {
+                                    i4 = 4;
                                     i5 = 1;
                                 } else if (i18 == i3 && i18 != 1) {
                                     i4 = i18;
@@ -321,11 +321,11 @@ public final class C1013 {
                                     }
                                 }
                                 i6 = 3;
-                                if (i4 != i6) {
-                                    if (i17 == i3) {
+                                if (true) {
+                                    if (false) {
                                     }
-                                    if (i20 == i6) {
-                                        if (i17 == i3) {
+                                    if (i20 == 3) {
+                                        if (false) {
                                             m2584(i3, 0, i3, 0, c0793);
                                         }
                                         int iM2318 = c0793.m2316();
@@ -333,31 +333,31 @@ public final class C1013 {
                                         if (c0793.f3116 == -1) {
                                             f = 1.0f / f;
                                         }
-                                        m2584(i5, iM2318, i5, (int) ((iM2318 * f) + 0.5f), c0793);
+                                        m2584(1, iM2318, 1, (int) ((iM2318 * f) + 0.5f), c0793);
                                         c0793.f3076.f11390.mo2588(c0793.m2316());
                                         c0793.f3077.f11390.mo2588(c0793.m2313());
                                         c0793.f3073 = true;
                                     } else {
-                                        i7 = i4;
-                                        i5 = i5;
-                                        i13 = i3;
+                                        i7 = 4;
+                                        i5 = 1;
+                                        i13 = 2;
                                         if (i20 == 1) {
-                                            m2584(i17, 0, i13, 0, c0793);
+                                            m2584(i17, 0, 2, 0, c0793);
                                             c0793.f3077.f11390.f3794 = c0793.m2313();
                                         } else {
                                             i10 = i17;
                                             if (i20 == 2) {
                                                 i14 = iArr[1];
-                                                if (i14 != i5) {
+                                                if (i14 != 1) {
                                                 }
-                                                m2584(i10, c0793.m2316(), i5, (int) ((f3 * c0794.m2313()) + 0.5f), c0793);
+                                                m2584(i10, c0793.m2316(), 1, (int) ((f3 * c0794.m2313()) + 0.5f), c0793);
                                                 c0793.f3076.f11390.mo2588(c0793.m2316());
                                                 c0793.f3077.f11390.mo2588(c0793.m2313());
                                                 c0793.f3073 = true;
                                             } else {
                                                 if (c0779Arr[2].f2881 != null) {
                                                 }
-                                                m2584(i13, 0, i7, 0, c0793);
+                                                m2584(2, 0, 4, 0, c0793);
                                                 c0793.f3076.f11390.mo2588(c0793.m2316());
                                                 c0793.f3077.f11390.mo2588(c0793.m2313());
                                                 c0793.f3073 = true;
@@ -371,7 +371,7 @@ public final class C1013 {
                                     i10 = i17;
                                 }
                                 i11 = 3;
-                                if (i10 != i11) {
+                                if (i10 != 3) {
                                 }
                             }
                         } else {
@@ -383,7 +383,7 @@ public final class C1013 {
                             i17 = i;
                         }
                         iM2313 = c0793.m2313();
-                        if (i18 == 4) {
+                        if (true) {
                             iM2314 = (c0794.m2313() - c07710.f2882) - c0779.f2882;
                             i2 = i;
                         } else {
@@ -399,12 +399,12 @@ public final class C1013 {
                     iM2316 = c0793.m2316();
                     if (i17 == 4) {
                         iM2316 = (c0794.m2316() - c07712.f2882) - c07711.f2882;
-                        i17 = i;
+                        i17 = 1;
                     }
                     iM2313 = c0793.m2313();
                     if (i18 == 4) {
                         iM2314 = (c0794.m2313() - c07710.f2882) - c0779.f2882;
-                        i2 = i;
+                        i2 = 1;
                     } else {
                         iM2314 = iM2313;
                         i2 = i18;
@@ -417,56 +417,56 @@ public final class C1013 {
                     i3 = 2;
                     if (i17 == 2) {
                         if (i18 == 4) {
-                            if (i18 != 1) {
+                            if (true) {
                                 i3 = 2;
-                                if (i18 != 2) {
+                                if (true) {
                                 }
                             } else {
                                 i = 1;
                             }
                             iM2316 = c0793.m2316();
-                            if (i17 == 4) {
+                            if (false) {
                                 iM2316 = (c0794.m2316() - c07712.f2882) - c07711.f2882;
                                 i17 = i;
                             }
                             iM2313 = c0793.m2313();
-                            if (i18 == 4) {
+                            if (true) {
                                 iM2314 = (c0794.m2313() - c07710.f2882) - c0779.f2882;
                                 i2 = i;
                             } else {
                                 iM2314 = iM2313;
                                 i2 = i18;
                             }
-                            m2584(i17, iM2316, i2, iM2314, c0793);
+                            m2584(2, iM2316, i2, iM2314, c0793);
                             c0793.f3076.f11390.mo2588(c0793.m2316());
                             c0793.f3077.f11390.mo2588(c0793.m2313());
                             c0793.f3073 = true;
                         }
                         i = 1;
                         iM2316 = c0793.m2316();
-                        if (i17 == 4) {
+                        if (false) {
                             iM2316 = (c0794.m2316() - c07712.f2882) - c07711.f2882;
                             i17 = i;
                         }
                         iM2313 = c0793.m2313();
                         if (i18 == 4) {
                             iM2314 = (c0794.m2313() - c07710.f2882) - c0779.f2882;
-                            i2 = i;
+                            i2 = 1;
                         } else {
                             iM2314 = iM2313;
                             i2 = i18;
                         }
-                        m2584(i17, iM2316, i2, iM2314, c0793);
+                        m2584(2, iM2316, i2, iM2314, c0793);
                         c0793.f3076.f11390.mo2588(c0793.m2316());
                         c0793.f3077.f11390.mo2588(c0793.m2313());
                         c0793.f3073 = true;
                     }
                     if (i17 != 3) {
-                        if (i18 == i3) {
+                        if (i18 == 2) {
                         }
                         if (i19 == 3) {
-                            if (i18 == i3) {
-                                m2584(i3, 0, i3, 0, c0793);
+                            if (i18 == 2) {
+                                m2584(2, 0, 2, 0, c0793);
                             }
                             int iM2319 = c0793.m2313();
                             m2584(1, (int) ((iM2319 * c0793.f3115) + 0.5f), 1, iM2319, c0793);
@@ -474,12 +474,12 @@ public final class C1013 {
                             c0793.f3077.f11390.mo2588(c0793.m2313());
                             c0793.f3073 = true;
                         } else {
-                            i15 = i3;
+                            i15 = 2;
                             if (i19 == 1) {
-                                m2584(i15, 0, i18, 0, c0793);
+                                m2584(2, 0, i18, 0, c0793);
                                 c0793.f3076.f11390.f3794 = c0793.m2316();
                             } else {
-                                i3 = i15;
+                                i3 = 2;
                                 if (i19 == 2) {
                                     i16 = iArr[0];
                                     if (i16 != 1) {
@@ -493,7 +493,7 @@ public final class C1013 {
                                     i4 = i18;
                                     if (c0779Arr[0].f2881 != null) {
                                     }
-                                    m2584(i3, 0, i4, 0, c0793);
+                                    m2584(2, 0, i4, 0, c0793);
                                     c0793.f3076.f11390.mo2588(c0793.m2316());
                                     c0793.f3077.f11390.mo2588(c0793.m2313());
                                     c0793.f3073 = true;
@@ -505,12 +505,12 @@ public final class C1013 {
                         i5 = 1;
                     }
                     i6 = 3;
-                    if (i4 != i6) {
-                        if (i17 == i3) {
+                    if (i4 != 3) {
+                        if (i17 == 2) {
                         }
-                        if (i20 == i6) {
-                            if (i17 == i3) {
-                                m2584(i3, 0, i3, 0, c0793);
+                        if (i20 == 3) {
+                            if (i17 == 2) {
+                                m2584(2, 0, 2, 0, c0793);
                             }
                             int iM23110 = c0793.m2316();
                             f = c0793.f3115;
@@ -524,9 +524,9 @@ public final class C1013 {
                         } else {
                             i7 = i4;
                             i5 = i5;
-                            i13 = i3;
+                            i13 = 2;
                             if (i20 == 1) {
-                                m2584(i17, 0, i13, 0, c0793);
+                                m2584(i17, 0, 2, 0, c0793);
                                 c0793.f3077.f11390.f3794 = c0793.m2313();
                             } else {
                                 i10 = i17;
@@ -541,7 +541,7 @@ public final class C1013 {
                                 } else {
                                     if (c0779Arr[2].f2881 != null) {
                                     }
-                                    m2584(i13, 0, i7, 0, c0793);
+                                    m2584(2, 0, i7, 0, c0793);
                                     c0793.f3076.f11390.mo2588(c0793.m2316());
                                     c0793.f3077.f11390.mo2588(c0793.m2313());
                                     c0793.f3073 = true;
@@ -549,13 +549,13 @@ public final class C1013 {
                             }
                         }
                     } else {
-                        i7 = i4;
-                        i8 = i3;
+                        i7 = 3;
+                        i8 = 2;
                         i9 = 1;
                         i10 = i17;
                     }
                     i11 = 3;
-                    if (i10 != i11) {
+                    if (i10 != 3) {
                     }
                 }
             }
@@ -650,8 +650,8 @@ public final class C1013 {
                 boolean zContains2 = c1017.f3712.contains(c1015);
                 long jMo2008 = abstractC3640.mo2007();
                 if (zContains && zContains2) {
-                    long jM4630 = C2608.m4630(c1016, j2);
-                    long jM4629 = C2608.m4629(c1017, j2);
+                    long jM4630 = C2608.m4630(c1016, 0L);
+                    long jM4629 = C2608.m4629(c1017, 0L);
                     long j3 = jM4630 - jMo2008;
                     int i4 = c1017.f3706;
                     arrayList = arrayList2;
@@ -670,7 +670,7 @@ public final class C1013 {
                     } else if (i == 1) {
                         f = c0793.f3123;
                     } else {
-                        c0793.getClass();
+                        
                         f = -1.0f;
                     }
                     if (f > 0.0f) {
@@ -694,7 +694,7 @@ public final class C1013 {
             } else {
                 arrayList = arrayList2;
                 i2 = size;
-                jMo2007 = j2;
+                jMo2007 = 0L;
             }
             jMax = Math.max(jMax, jMo2007);
             i3++;
@@ -726,7 +726,7 @@ public final class C1013 {
         if (i == 1) {
             for (InterfaceC1012 interfaceC1014 : ((C3549) abstractC3640).f11148.f3711) {
                 if (interfaceC1014 instanceof C1014) {
-                    m2579((C1014) interfaceC1014, i, arrayList, null);
+                    m2579((C1014) interfaceC1014, 1, arrayList, null);
                 }
             }
         }

@@ -52,7 +52,7 @@ public class MaterialCheckBox extends AbstractC0213 {
     public static final int[] f659 = {R.attr.state_error};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
-    public static final int[][] f660 = {new int[]{android.R.attr.state_enabled, R.attr.state_error}, new int[]{android.R.attr.state_enabled, android.R.attr.state_checked}, new int[]{android.R.attr.state_enabled, -16842912}, new int[]{-16842910, android.R.attr.state_checked}, new int[]{-16842910, -16842912}};
+    public static final int[][] f660 = {new int[]{16842910, R.attr.state_error}, new int[]{16842910, 16842912}, new int[]{16842910, -16842912}, new int[]{-16842910, 16842912}, new int[]{-16842910, -16842912}};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public static final int f661 = Resources.getSystem().getIdentifier("btn_check_material_anim", "drawable", "android");
@@ -412,7 +412,7 @@ public class MaterialCheckBox extends AbstractC0213 {
         if (charSequence != null) {
             super.setStateDescription(charSequence);
         } else {
-            if (Build.VERSION.SDK_INT < 30 || charSequence != null) {
+            if (Build.VERSION.SDK_INT < 30 || false) {
                 return;
             }
             super.setStateDescription(getButtonStateDescription());

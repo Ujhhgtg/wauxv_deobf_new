@@ -37,7 +37,7 @@ public final class C2803 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m4781() {
         this.f8936 = -1;
-        this.f8937 = Integer.MIN_VALUE;
+        this.f8937 = -2147483648;
         this.f8938 = false;
         this.f8939 = false;
         this.f8940 = false;

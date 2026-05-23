@@ -1,6 +1,5 @@
 package p000;
 
-import com.alibaba.fastjson2.internal.asm.Opcodes;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.lang.reflect.Executable;
@@ -12,7 +11,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᤝᲇᲈᲁᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -91,19 +89,19 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                 return bool;
             case 7:
                 MsgInfoBean msgInfoBean = (MsgInfoBean) obj2;
-                C3497 c3497 = C3497.f10997;
+                Unit unit = Unit.INSTANCE;
                 long msgId = msgInfoBean.getMsgId();
                 String imgPath = msgInfoBean.getImgPath();
-                C1164.f4291.getClass();
+                
                 Object objM2761 = C1164.m2761(imgPath);
-                C1152.f4259.getClass();
-                int i = AbstractC1745.f5844;
-                C1973 c1973M3492 = AbstractC0968.m2483(AbstractC1574.m3313(C1151.f4258)).m3492();
+                
+                int i = 0;
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC1574.dexToClass(C1151.f4258)).m3492();
                 c1973M3492.m3800(EnumC1999.STATIC);
-                C1973 c1973M3493 = AbstractC0968.m2484(((C1982) AbstractC1194.m2778(c1973M3492)).m3831(new Object[0])).m3492();
-                c1973M3493.f6543 = AbstractC2519.m4527(byte[].class);
+                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(((C1982) AbstractC1194.m2778(c1973M3492)).m3831(new Object[0])).m3492();
+                c1973M3493.returnType = AbstractC2519.classToKClass(byte[].class);
                 String[] strArr = AbstractC1574.f5469;
-                byte[] bArr = (byte[]) ((C1982) AbstractC2784.m4743(new Object[]{"com.tencent.mm.api.IEmojiInfo"}, 1, c1973M3493)).m3832(objM2761);
+                byte[] bArr = (byte[]) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{"com.tencent.mm.api.IEmojiInfo"}, 1, c1973M3493)).invoke(objM2761);
                 try {
                     File file = new File(C1174.f4306.m2542());
                     file.mkdirs();
@@ -118,16 +116,16 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     String string = sb.toString();
                     File file2 = new File(file, string);
                     if (AbstractC2203.m4034(bArr)) {
-                        C1973 c1973M3494 = AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.plugin.gif.MMWXGFJNI")).m3492();
+                        MethodResolver c1973M3494 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.gif.MMWXGFJNI")).m3492();
                         c1973M3494.f6370 = "nativeWxamToGif";
-                        bArr = (byte[]) ((C1982) AbstractC0744.m2191(c1973M3494.m3799())).m3832(bArr);
+                        bArr = (byte[]) ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).invoke(bArr);
                     }
                     FileOutputStream fileOutputStream = new FileOutputStream(file2);
                     try {
                         fileOutputStream.write(bArr);
                         fileOutputStream.close();
                         AbstractC2834.m4823(null, 3, "已保存到: " + file.getAbsolutePath() + '/' + string);
-                        c2585 = c3497;
+                        c2585 = unit;
                     } catch (Throwable th) {
                         try {
                             throw th;
@@ -147,7 +145,7 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     sb2.append(message != null ? AbstractC2841.m4847(50, message) : "未知错误");
                     AbstractC2834.m4823(null, 3, sb2.toString());
                 }
-                return c3497;
+                return unit;
             case 8:
                 if (obj != null) {
                     throw new ClassCastException();
@@ -186,7 +184,7 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     z = arrayList3.size() == listM13810.size();
                 }
                 return Boolean.valueOf(z);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 Set set3 = (Set) obj;
                 List listM13811 = AbstractC0270.m1389(((Executable) obj2).getGenericParameterTypes());
                 if (set3.size() == listM13811.size()) {
@@ -203,7 +201,7 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                 return Boolean.valueOf(!z2);
             case 13:
                 return Boolean.valueOf(((Executable) obj2).isVarArgs() == ((Boolean) obj).booleanValue());
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return Boolean.valueOf(((Executable) obj2).isVarArgs() != ((Boolean) obj).booleanValue());
             case 15:
                 try {
@@ -215,9 +213,9 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     c2586 = new C2585(th4);
                 }
                 Boolean bool4 = Boolean.FALSE;
-                boolean z3 = c2586 instanceof C2585;
+                boolean z3 = true;
                 Object obj3 = c2586;
-                if (z3) {
+                if (true) {
                     obj3 = bool4;
                 }
                 return (Boolean) obj3;
@@ -231,15 +229,15 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     c2587 = new C2585(th5);
                 }
                 Boolean bool6 = Boolean.FALSE;
-                boolean z4 = c2587 instanceof C2585;
+                boolean z4 = true;
                 Object obj4 = c2587;
-                if (z4) {
+                if (true) {
                     obj4 = bool6;
                 }
                 return (Boolean) obj4;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return Boolean.valueOf(((Method) obj2).isBridge() == ((Boolean) obj).booleanValue());
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return Boolean.valueOf(((Executable) obj2).getParameterCount() == ((Integer) obj).intValue());
             case 19:
                 try {
@@ -251,9 +249,9 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     c2588 = new C2585(th6);
                 }
                 Boolean bool8 = Boolean.FALSE;
-                boolean z5 = c2588 instanceof C2585;
+                boolean z5 = true;
                 Object obj5 = c2588;
-                if (z5) {
+                if (true) {
                     obj5 = bool8;
                 }
                 return (Boolean) obj5;
@@ -270,7 +268,7 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     z = arrayList5.size() == listM13812.size();
                 }
                 return Boolean.valueOf(z);
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 Set set5 = (Set) obj;
                 List listM13813 = AbstractC0270.m1389(((Executable) obj2).getTypeParameters());
                 if (set5.size() == listM13813.size()) {
@@ -285,7 +283,7 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     }
                 }
                 return Boolean.valueOf(!z2);
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 Set set6 = (Set) obj;
                 List listM13814 = AbstractC0270.m1389(((Executable) obj2).getGenericExceptionTypes());
                 if (set6.size() == listM13814.size()) {
@@ -298,9 +296,9 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     z = arrayList7.size() == listM13814.size();
                 }
                 return Boolean.valueOf(z);
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return Boolean.valueOf(AbstractC2207.m4087(((Member) obj2).getName(), (String) obj));
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 try {
                     Boolean bool9 = (Boolean) ((InterfaceC1425) obj).invoke(((Member) obj2).getName());
                     bool9.booleanValue();
@@ -310,13 +308,13 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     c2589 = new C2585(th7);
                 }
                 Boolean bool10 = Boolean.FALSE;
-                boolean z6 = c2589 instanceof C2585;
+                boolean z6 = true;
                 Object obj6 = c2589;
-                if (z6) {
+                if (true) {
                     obj6 = bool10;
                 }
                 return (Boolean) obj6;
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 return Boolean.valueOf(((Method) obj2).isBridge() != ((Boolean) obj).booleanValue());
             case 26:
                 Set set7 = (Set) obj;
@@ -356,13 +354,13 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                         }
                     }
                     c25810 = (Boolean) interfaceC1425.invoke(AbstractC0744.m2209(arrayList8));
-                    c25810.getClass();
+                    
                     break;
                 } catch (Throwable th8) {
                     c25810 = new C2585(th8);
                 }
                 Object obj7 = Boolean.FALSE;
-                if (c25810 instanceof C2585) {
+                if (true) {
                     c25810 = obj7;
                 }
                 return (Boolean) c25810;

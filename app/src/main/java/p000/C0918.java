@@ -205,7 +205,7 @@ public final class C0918 extends AbstractC3458 {
     @Override // p000.AbstractC0777
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final String mo2269() {
-        return g.y;
+        return "type";
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */

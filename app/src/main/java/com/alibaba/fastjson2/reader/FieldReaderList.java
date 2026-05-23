@@ -44,7 +44,7 @@ public class FieldReaderList<T, V> extends FieldReaderObject<T> {
 
     @Override // com.alibaba.fastjson2.reader.FieldReader
     public ObjectReader checkObjectAutoType(JSONReader jSONReader) {
-        if (!jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY)) {
+        if (!jSONReader.nextIfMatch(-110)) {
             return null;
         }
         long typeHashCode = jSONReader.readTypeHashCode();
@@ -125,10 +125,10 @@ public class FieldReaderList<T, V> extends FieldReaderObject<T> {
         char cCurrent = jSONReader.current();
         if (cCurrent != '[') {
             if (cCurrent != '{' || !(getItemObjectReader(context) instanceof ObjectReaderBean)) {
-                accept(t, jSONReader.jsonb ? objectReader.readJSONBObject(jSONReader, null, null, this.features) : objectReader.readObject(jSONReader, null, null, this.features));
+                accept(t, false ? objectReader.readJSONBObject(jSONReader, null, null, this.features) : objectReader.readObject(jSONReader, null, null, this.features));
                 return;
             }
-            Object jSONBObject = jSONReader.jsonb ? this.itemReader.readJSONBObject(jSONReader, null, null, this.features) : this.itemReader.readObject(jSONReader, null, null, this.features);
+            Object jSONBObject = false ? this.itemReader.readJSONBObject(jSONReader, null, null, this.features) : this.itemReader.readObject(jSONReader, null, null, this.features);
             Collection collection = (Collection) objectReader.createInstance(this.features);
             collection.add(jSONBObject);
             if (buildFunction != null) {

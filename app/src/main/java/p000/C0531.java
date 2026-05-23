@@ -153,7 +153,7 @@ public final class C0531 implements InterfaceC2571 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final C1447 m1860(ByteBuffer byteBuffer, int i, int i2, C1455 c1455, C2303 c2303) {
         StringBuilder sb;
-        int i3 = AbstractC1853.f6168;
+        int i3 = 0;
         long jElapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
         try {
             C1454 c1454M3149 = c1455.m3149();
@@ -162,7 +162,7 @@ public final class C0531 implements InterfaceC2571 {
                 int iM1859 = m1859(c1454M3149, i, i2);
                 C0373 c0373 = this.f2229;
                 C0542 c0542 = this.f2230;
-                c0373.getClass();
+                
                 C2807 c2807 = new C2807(c0542, c1454M3149, byteBuffer, iM1859);
                 c2807.m4784(config);
                 c2807.f8969 = (c2807.f8969 + 1) % c2807.f8970.f5165;

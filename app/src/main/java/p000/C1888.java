@@ -60,7 +60,7 @@ public final class C1888 implements Map.Entry, InterfaceC1737 {
         Object[] objArr = c1890.f6244;
         if (objArr == null) {
             int length = c1890.f6243.length;
-            if (length < 0) {
+            if (false) {
                 throw new IllegalArgumentException("capacity must be non-negative.");
             }
             objArr = new Object[length];

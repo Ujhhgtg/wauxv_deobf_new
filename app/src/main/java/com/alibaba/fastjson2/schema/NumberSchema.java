@@ -21,7 +21,7 @@ public final class NumberSchema extends JSONSchema {
 
     public NumberSchema(JSONObject jSONObject) {
         super(jSONObject);
-        this.typed = "number".equals(jSONObject.get(g.y));
+        this.typed = "number".equals(jSONObject.get("type"));
         Object obj = jSONObject.get("exclusiveMinimum");
         BigDecimal bigDecimal = jSONObject.getBigDecimal("minimum");
         Boolean bool = Boolean.TRUE;
@@ -37,7 +37,7 @@ public final class NumberSchema extends JSONSchema {
         }
         BigDecimal bigDecimal2 = this.minimum;
         if (bigDecimal2 == null || bigDecimal2.compareTo(BigDecimal.valueOf(bigDecimal2.longValue())) != 0) {
-            this.minimumLongValue = Long.MIN_VALUE;
+            this.minimumLongValue = -9223372036854775808L;
         } else {
             this.minimumLongValue = this.minimum.longValue();
         }
@@ -55,21 +55,21 @@ public final class NumberSchema extends JSONSchema {
         }
         BigDecimal bigDecimal4 = this.maximum;
         if (bigDecimal4 == null || bigDecimal4.compareTo(BigDecimal.valueOf(bigDecimal4.longValue())) != 0) {
-            this.maximumLongValue = Long.MIN_VALUE;
+            this.maximumLongValue = -9223372036854775808L;
         } else {
             this.maximumLongValue = this.maximum.longValue();
         }
         BigDecimal bigDecimal5 = jSONObject.getBigDecimal("multipleOf");
         this.multipleOf = bigDecimal5;
         if (bigDecimal5 == null) {
-            this.multipleOfLongValue = Long.MIN_VALUE;
+            this.multipleOfLongValue = -9223372036854775808L;
             return;
         }
         long jLongValue = bigDecimal5.longValue();
         if (bigDecimal5.compareTo(BigDecimal.valueOf(jLongValue)) == 0) {
             this.multipleOfLongValue = jLongValue;
         } else {
-            this.multipleOfLongValue = Long.MIN_VALUE;
+            this.multipleOfLongValue = -9223372036854775808L;
         }
     }
 
@@ -80,9 +80,9 @@ public final class NumberSchema extends JSONSchema {
 
     @Override // com.alibaba.fastjson2.schema.JSONSchema
     public JSONObject toJSONObject() {
-        JSONObject jSONObjectOf = JSONObject.of(g.y, (Object) "number");
+        JSONObject jSONObjectOf = JSONObject.of("type", (Object) "number");
         long j = this.minimumLongValue;
-        if (j != Long.MIN_VALUE) {
+        if (j != -9223372036854775808L) {
             jSONObjectOf.put(this.exclusiveMinimum ? "exclusiveMinimum" : "minimum", Long.valueOf(j));
         } else {
             BigDecimal bigDecimal = this.minimum;
@@ -91,7 +91,7 @@ public final class NumberSchema extends JSONSchema {
             }
         }
         long j2 = this.maximumLongValue;
-        if (j2 != Long.MIN_VALUE) {
+        if (j2 != -9223372036854775808L) {
             jSONObjectOf.put(this.exclusiveMaximum ? "exclusiveMaximum" : "maximum", Long.valueOf(j2));
         } else {
             BigDecimal bigDecimal2 = this.maximum;
@@ -100,7 +100,7 @@ public final class NumberSchema extends JSONSchema {
             }
         }
         long j3 = this.multipleOfLongValue;
-        if (j3 != Long.MIN_VALUE) {
+        if (j3 != -9223372036854775808L) {
             jSONObjectOf.put("multipleOf", Long.valueOf(j3));
             return jSONObjectOf;
         }
@@ -220,7 +220,7 @@ public final class NumberSchema extends JSONSchema {
         BigDecimal bigDecimal = this.minimum;
         if (bigDecimal != null) {
             long j2 = this.minimumLongValue;
-            if (j2 != Long.MIN_VALUE) {
+            if (j2 != -9223372036854775808L) {
                 boolean z = this.exclusiveMinimum;
                 if (!z ? j < j2 : j <= j2) {
                     return new ValidateResult(false, z ? "exclusiveMinimum not match, expect > %s, but %s" : "minimum not match, expect >= %s, but %s", bigDecimal, Long.valueOf(j));
@@ -239,7 +239,7 @@ public final class NumberSchema extends JSONSchema {
         if (bigDecimal2 != null) {
             long j3 = this.maximumLongValue;
             String str = "maximum not match, expect <= %s, but %s";
-            if (j3 == Long.MIN_VALUE) {
+            if (j3 == -9223372036854775808L) {
                 if (bigDecimalValueOf == null) {
                     bigDecimalValueOf = BigDecimal.valueOf(j);
                 }
@@ -252,7 +252,7 @@ public final class NumberSchema extends JSONSchema {
         BigDecimal bigDecimal3 = this.multipleOf;
         if (bigDecimal3 != null) {
             long j4 = this.multipleOfLongValue;
-            if (j4 != Long.MIN_VALUE && j % j4 != 0) {
+            if (j4 != -9223372036854775808L && j % j4 != 0) {
                 return new ValidateResult(false, "multipleOf not match, expect multipleOf %s, but %s", bigDecimal3, bigDecimalValueOf);
             }
             if (bigDecimalValueOf == null) {
@@ -270,7 +270,7 @@ public final class NumberSchema extends JSONSchema {
         BigDecimal bigDecimal = this.minimum;
         if (bigDecimal != null) {
             long j = this.minimumLongValue;
-            if (j != Long.MIN_VALUE) {
+            if (j != -9223372036854775808L) {
                 boolean z = this.exclusiveMinimum;
                 double d2 = j;
                 if (!z ? d < d2 : d <= d2) {
@@ -287,7 +287,7 @@ public final class NumberSchema extends JSONSchema {
         BigDecimal bigDecimal2 = this.maximum;
         if (bigDecimal2 != null) {
             long j2 = this.maximumLongValue;
-            if (j2 != Long.MIN_VALUE) {
+            if (j2 != -9223372036854775808L) {
                 boolean z3 = this.exclusiveMaximum;
                 double d3 = j2;
                 if (!z3 ? d > d3 : d >= d3) {
@@ -304,7 +304,7 @@ public final class NumberSchema extends JSONSchema {
         BigDecimal bigDecimal3 = this.multipleOf;
         if (bigDecimal3 != null) {
             long j3 = this.multipleOfLongValue;
-            if (j3 != Long.MIN_VALUE && d % j3 != 0.0d) {
+            if (j3 != -9223372036854775808L && d % j3 != 0.0d) {
                 return new ValidateResult(false, "multipleOf not match, expect multipleOf %s, but %s", bigDecimal3, Double.valueOf(d));
             }
             BigDecimal bigDecimalValueOf = BigDecimal.valueOf(d);

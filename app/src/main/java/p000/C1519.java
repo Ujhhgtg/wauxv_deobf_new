@@ -69,7 +69,7 @@ public final class C1519 {
                 }
             }
         }
-        return this.f5354;
+        return 20000;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */

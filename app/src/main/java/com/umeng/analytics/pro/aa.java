@@ -43,9 +43,9 @@ class aa implements z {
         try {
             SharedPreferences.Editor editorEdit = PreferenceWrapper.getDefault(context).edit();
             editorEdit.putString("session_id", str);
-            editorEdit.putLong(x.b, 0L);
-            editorEdit.putLong(x.e, jCurrentTimeMillis);
-            editorEdit.putLong(x.f, 0L);
+            editorEdit.putLong("session_end_time", 0L);
+            editorEdit.putLong("a_start_time", jCurrentTimeMillis);
+            editorEdit.putLong("a_end_time", 0L);
             editorEdit.commit();
         } catch (Exception unused) {
         }

@@ -15,7 +15,7 @@ public abstract class AbstractC0667 {
         int i = 100;
         float f = 0.75f;
         boolean z = true;
-        f2547 = new C0313(i, f, z, 2);
-        f2548 = new C0313(i, f, z, 1);
+        f2547 = new C0313(100, 0.75f, true, 2);
+        f2548 = new C0313(100, 0.75f, true, 1);
     }
 }

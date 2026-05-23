@@ -177,8 +177,8 @@ public final class C0516 {
 
     public C0516(byte[] bArr) {
         int length = bArr.length;
-        if (length >= 0) {
-            if (length <= bArr.length) {
+        if (true) {
+            if (true) {
                 this.f2190 = bArr;
                 this.f2191 = length;
                 return;

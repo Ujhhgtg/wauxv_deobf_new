@@ -125,14 +125,14 @@ final class JSONPathSingleName extends JSONPathSingle {
                         switch (c) {
                             case '0':
                             case '1':
-                            case Opcodes.AALOAD /* 50 */:
-                            case Opcodes.BALOAD /* 51 */:
+                            case 50 /* 50 */:
+                            case 51 /* 51 */:
                             case '4':
-                            case Opcodes.SALOAD /* 53 */:
-                            case Opcodes.ISTORE /* 54 */:
-                            case Opcodes.LSTORE /* 55 */:
-                            case Opcodes.FSTORE /* 56 */:
-                            case Opcodes.DSTORE /* 57 */:
+                            case 53 /* 53 */:
+                            case 54 /* 54 */:
+                            case 55 /* 55 */:
+                            case 56 /* 56 */:
+                            case 57 /* 57 */:
                                 string = jSONReader.readNumber();
                                 break;
                             default:
@@ -176,14 +176,14 @@ final class JSONPathSingleName extends JSONPathSingle {
                                     switch (c) {
                                         case '0':
                                         case '1':
-                                        case Opcodes.AALOAD /* 50 */:
-                                        case Opcodes.BALOAD /* 51 */:
+                                        case 50 /* 50 */:
+                                        case 51 /* 51 */:
                                         case '4':
-                                        case Opcodes.SALOAD /* 53 */:
-                                        case Opcodes.ISTORE /* 54 */:
-                                        case Opcodes.LSTORE /* 55 */:
-                                        case Opcodes.FSTORE /* 56 */:
-                                        case Opcodes.DSTORE /* 57 */:
+                                        case 53 /* 53 */:
+                                        case 54 /* 54 */:
+                                        case 55 /* 55 */:
+                                        case 56 /* 56 */:
+                                        case 57 /* 57 */:
                                             break;
                                         default:
                                             throw new JSONException("TODO : " + jSONReader.ch);
@@ -228,14 +228,14 @@ final class JSONPathSingleName extends JSONPathSingle {
                                             switch (c) {
                                                 case '0':
                                                 case '1':
-                                                case Opcodes.AALOAD /* 50 */:
-                                                case Opcodes.BALOAD /* 51 */:
+                                                case 50 /* 50 */:
+                                                case 51 /* 51 */:
                                                 case '4':
-                                                case Opcodes.SALOAD /* 53 */:
-                                                case Opcodes.ISTORE /* 54 */:
-                                                case Opcodes.LSTORE /* 55 */:
-                                                case Opcodes.FSTORE /* 56 */:
-                                                case Opcodes.DSTORE /* 57 */:
+                                                case 53 /* 53 */:
+                                                case 54 /* 54 */:
+                                                case 55 /* 55 */:
+                                                case 56 /* 56 */:
+                                                case 57 /* 57 */:
                                                     break;
                                                 default:
                                                     throw new JSONException("TODO : " + jSONReader.ch);
@@ -286,14 +286,14 @@ final class JSONPathSingleName extends JSONPathSingle {
                         switch (c) {
                             case '0':
                             case '1':
-                            case Opcodes.AALOAD /* 50 */:
-                            case Opcodes.BALOAD /* 51 */:
+                            case 50 /* 50 */:
+                            case 51 /* 51 */:
                             case '4':
-                            case Opcodes.SALOAD /* 53 */:
-                            case Opcodes.ISTORE /* 54 */:
-                            case Opcodes.LSTORE /* 55 */:
-                            case Opcodes.FSTORE /* 56 */:
-                            case Opcodes.DSTORE /* 57 */:
+                            case 53 /* 53 */:
+                            case 54 /* 54 */:
+                            case 55 /* 55 */:
+                            case 56 /* 56 */:
+                            case 57 /* 57 */:
                                 string = jSONReader.readNumber();
                                 break;
                             default:
@@ -464,14 +464,14 @@ final class JSONPathSingleName extends JSONPathSingle {
                                             switch (c) {
                                                 case '0':
                                                 case '1':
-                                                case Opcodes.AALOAD /* 50 */:
-                                                case Opcodes.BALOAD /* 51 */:
+                                                case 50 /* 50 */:
+                                                case 51 /* 51 */:
                                                 case '4':
-                                                case Opcodes.SALOAD /* 53 */:
-                                                case Opcodes.ISTORE /* 54 */:
-                                                case Opcodes.LSTORE /* 55 */:
-                                                case Opcodes.FSTORE /* 56 */:
-                                                case Opcodes.DSTORE /* 57 */:
+                                                case 53 /* 53 */:
+                                                case 54 /* 54 */:
+                                                case 55 /* 55 */:
+                                                case 56 /* 56 */:
+                                                case 57 /* 57 */:
                                                     break;
                                                 default:
                                                     throw new JSONException("TODO : " + jSONReader.ch);
@@ -520,14 +520,14 @@ final class JSONPathSingleName extends JSONPathSingle {
                                             switch (c) {
                                                 case '0':
                                                 case '1':
-                                                case Opcodes.AALOAD /* 50 */:
-                                                case Opcodes.BALOAD /* 51 */:
+                                                case 50 /* 50 */:
+                                                case 51 /* 51 */:
                                                 case '4':
-                                                case Opcodes.SALOAD /* 53 */:
-                                                case Opcodes.ISTORE /* 54 */:
-                                                case Opcodes.LSTORE /* 55 */:
-                                                case Opcodes.FSTORE /* 56 */:
-                                                case Opcodes.DSTORE /* 57 */:
+                                                case 53 /* 53 */:
+                                                case 54 /* 54 */:
+                                                case 55 /* 55 */:
+                                                case 56 /* 56 */:
+                                                case 57 /* 57 */:
                                                     break;
                                                 default:
                                                     throw new JSONException("TODO : " + jSONReader.ch);

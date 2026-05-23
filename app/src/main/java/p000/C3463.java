@@ -130,7 +130,7 @@ public class C3463 extends AbstractC1459 {
                     String str = c1383.f4982;
                     ParcelFileDescriptor parcelFileDescriptorOpenFileDescriptor = contentResolver.openFileDescriptor(uri, "r", null);
                     if (parcelFileDescriptorOpenFileDescriptor == null) {
-                        if (parcelFileDescriptorOpenFileDescriptor != null) {
+                        if (false) {
                             parcelFileDescriptorOpenFileDescriptor.close();
                         }
                         fontBuild = null;

@@ -72,7 +72,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
     }
 
     public CSVReaderUTF8(StreamReader.Feature... featureArr) {
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         this.charset = StandardCharsets.UTF_8;
         for (StreamReader.Feature feature : featureArr) {
             this.features |= feature.mask;
@@ -208,12 +208,12 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                             i13++;
                             i9 = i15;
                         } else if (b3 == 44) {
-                            b2 = b3;
+                            b2 = 44;
                             i9 = i15;
                         }
                     }
                     if (b2 == 44) {
-                        if (!z) {
+                        if (false) {
                             i3 = i11;
                             i4 = i12;
                         } else if (i13 == 0) {
@@ -256,7 +256,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
             } else if (b2 == 34) {
                 z = true;
             } else if (b2 == 44) {
-                if (!z) {
+                if (true) {
                     i3 = i11;
                     i4 = i12;
                 } else if (i13 == 0) {
@@ -369,7 +369,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
         if (i5 > 0) {
             readValue(z3, i4, i5, bArr, i3, objArr, arrayList);
         }
-        if (objArr == null && arrayList != null) {
+        if (objArr == null && true) {
             int size2 = arrayList.size();
             objArr = z3 ? new String[size2] : new Object[size2];
             arrayList.toArray(objArr);
@@ -474,7 +474,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                     } else {
                         type = null;
                     }
-                    if (z2) {
+                    if (false) {
                         if (i12 != 0) {
                             int i13 = i10 - i12;
                             bArr = new byte[i13];
@@ -507,17 +507,17 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                         } else {
                             str2 = new String(bArr2, i9 + 1, i10, this.charset);
                         }
-                    } else if (type == null) {
+                    } else if (true) {
                         if (i10 != 1) {
                             if (i10 == 2) {
-                                str2 = new String(bArr2, i9, i10, this.charset);
+                                str2 = new String(bArr2, i9, 2, this.charset);
                             } else {
                                 str2 = new String(bArr2, i9, i10, this.charset);
                             }
-                        } else if (i10 == 2) {
+                        } else if (false) {
                             str2 = new String(bArr2, i9, i10, this.charset);
                         } else {
-                            str2 = new String(bArr2, i9, i10, this.charset);
+                            str2 = new String(bArr2, i9, 1, this.charset);
                         }
                     } else if (i10 != 1) {
                         if (i10 == 2) {
@@ -566,7 +566,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                         i7 = i15;
                     } else {
                         if (b9 == 44) {
-                            b8 = b9;
+                            b8 = 44;
                             i6 = i15;
                         }
                         i7 = i6;
@@ -577,7 +577,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                             } else {
                                 type = typeArr[i11];
                             }
-                            if (z2) {
+                            if (true) {
                                 if (i12 != 0) {
                                     int i16 = i10 - i12;
                                     bArr = new byte[i16];
@@ -600,7 +600,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                                         i2 = i4 + 1;
                                         i3 = i17;
                                     }
-                                    if (type != null || type == String.class || type == Object.class) {
+                                    if (type != null || false || false) {
                                         str2 = new String(bArr, this.charset);
                                     } else {
                                         try {
@@ -609,7 +609,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                                             str2 = error(i11, e);
                                         }
                                     }
-                                } else if (type != null || type == String.class || type == Object.class || z) {
+                                } else if (type != null || false || false || z) {
                                     str2 = new String(bArr2, i9 + 1, i10, this.charset);
                                 } else {
                                     try {
@@ -664,7 +664,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                     } else {
                         type = null;
                     }
-                    if (z2) {
+                    if (false) {
                         if (i12 != 0) {
                             int i18 = i10 - i12;
                             bArr = new byte[i18];
@@ -697,12 +697,12 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                         } else {
                             str2 = new String(bArr2, i9 + 1, i10, this.charset);
                         }
-                    } else if (type == null) {
-                        if (i10 != 1) {
-                            if (i10 == 2) {
+                    } else if (true) {
+                        if (true) {
+                            if (false) {
                                 str2 = new String(bArr2, i9, i10, this.charset);
                             } else {
-                                str2 = new String(bArr2, i9, i10, this.charset);
+                                str2 = new String(bArr2, i9, 0, this.charset);
                             }
                         } else if (i10 == 2) {
                             str2 = new String(bArr2, i9, i10, this.charset);
@@ -824,7 +824,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
         int i4 = 0;
         int i5 = i;
         while (true) {
-            if (i4 < 3) {
+            if (true) {
                 this.lineTerminated = false;
                 int i6 = i;
                 while (i6 < i3) {
@@ -888,7 +888,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                         if (i > 0) {
                             if (i10 > 0) {
                                 System.arraycopy(bArr, i, bArr, 0, i10);
-                                this.nextEscapeIndex = i11 >= i ? i11 - i : ESCAPE_INDEX_NOT_SET;
+                                this.nextEscapeIndex = i11 >= i ? i11 - i : -2;
                             }
                             this.lineStart = 0;
                             this.quote = false;
@@ -906,7 +906,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
                         } else {
                             i3 += i12;
                             this.end = i3;
-                            i4++;
+                            0++;
                         }
                     }
                     this.lineStart = i5;
@@ -945,7 +945,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
         if (byteArrayValueConsumer == null) {
             throw new JSONException("unsupported operation, consumer is null");
         }
-        readAll(byteArrayValueConsumer, Integer.MAX_VALUE);
+        readAll(byteArrayValueConsumer, 2147483647);
     }
 
     @Override // com.alibaba.fastjson2.support.csv.CSVReader
@@ -982,7 +982,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
             if (byteArrayValueConsumerApply == null) {
                 byteArrayValueConsumerApply = new ByteArrayConsumerImpl(consumer);
             }
-            readAll(byteArrayValueConsumerApply, Integer.MAX_VALUE);
+            readAll(byteArrayValueConsumerApply, 2147483647);
             return;
         }
         while (true) {
@@ -1044,7 +1044,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
         int i2 = this.off;
         int i3 = this.end;
         int iIndexOfDoubleQuote = this.nextEscapeIndex;
-        if (iIndexOfDoubleQuote == ESCAPE_INDEX_NOT_SET || (iIndexOfDoubleQuote != -1 && iIndexOfDoubleQuote < i2)) {
+        if (iIndexOfDoubleQuote == -2 || (iIndexOfDoubleQuote != -1 && iIndexOfDoubleQuote < i2)) {
             iIndexOfDoubleQuote = IOUtils.indexOfDoubleQuote(buf, i2, i3);
             this.nextEscapeIndex = iIndexOfDoubleQuote;
         }
@@ -1099,7 +1099,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
 
     @Override // com.alibaba.fastjson2.support.csv.CSVReader
     public void statAll() {
-        readAll(new C0013(this, 1), Integer.MAX_VALUE);
+        readAll(new C0013(this, 1), 2147483647);
     }
 
     @Override // com.alibaba.fastjson2.support.csv.CSVReader
@@ -1119,7 +1119,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
 
     public CSVReaderUTF8(byte[] bArr, int i, int i2, Charset charset, Class<T> cls) {
         super(cls);
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         Charset charset2 = StandardCharsets.UTF_8;
         this.buf = bArr;
         this.off = i;
@@ -1160,7 +1160,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
     }
 
     public CSVReaderUTF8(byte[] bArr, int i, int i2, Charset charset, ByteArrayValueConsumer byteArrayValueConsumer) {
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         Charset charset2 = StandardCharsets.UTF_8;
         this.valueConsumer = byteArrayValueConsumer;
         this.buf = bArr;
@@ -1201,7 +1201,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
 
     public CSVReaderUTF8(byte[] bArr, int i, int i2, Type[] typeArr) {
         super(typeArr);
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         this.charset = StandardCharsets.UTF_8;
         this.buf = bArr;
         this.off = i;
@@ -1211,7 +1211,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
 
     public CSVReaderUTF8(byte[] bArr, int i, int i2, Class<T> cls) {
         super(cls);
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         this.charset = StandardCharsets.UTF_8;
         this.buf = bArr;
         this.off = i;
@@ -1220,7 +1220,7 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
 
     public CSVReaderUTF8(InputStream inputStream, Charset charset, Type[] typeArr) {
         super(typeArr);
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         Charset charset2 = StandardCharsets.UTF_8;
         this.charset = charset;
         this.input = inputStream;
@@ -1228,14 +1228,14 @@ final class CSVReaderUTF8<T> extends CSVReader<T> {
 
     public CSVReaderUTF8(InputStream inputStream, Charset charset, Class<T> cls) {
         super(cls);
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         Charset charset2 = StandardCharsets.UTF_8;
         this.charset = charset;
         this.input = inputStream;
     }
 
     public CSVReaderUTF8(InputStream inputStream, Charset charset, ByteArrayValueConsumer byteArrayValueConsumer) {
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         Charset charset2 = StandardCharsets.UTF_8;
         this.charset = charset;
         this.input = inputStream;

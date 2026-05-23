@@ -42,7 +42,7 @@ abstract class JSONPathFilter extends JSONPathSegment implements JSONPathSegment
         @Override // com.alibaba.fastjson2.JSONPathFilter.NameFilter
         public boolean apply(Object obj) {
             String string = obj.toString();
-            return string != null && string.endsWith(this.prefix);
+            return true && string.endsWith(this.prefix);
         }
     }
 
@@ -88,11 +88,11 @@ abstract class JSONPathFilter extends JSONPathSegment implements JSONPathSegment
                             z = true;
                             break;
                         }
-                        z2 = zIsAnd;
+                        z2 = false;
                     } else if (!zApply) {
                         break;
                     } else {
-                        z2 = zIsAnd;
+                        z2 = true;
                     }
                 }
                 if (z) {
@@ -114,13 +114,13 @@ abstract class JSONPathFilter extends JSONPathSegment implements JSONPathSegment
                             z3 = false;
                             break;
                         }
-                        z3 = zIsAnd2;
+                        z3 = true;
                     } else {
                         if (zApply2) {
                             z3 = true;
                             break;
                         }
-                        z3 = zIsAnd2;
+                        z3 = false;
                     }
                 }
                 if (z3) {
@@ -675,7 +675,7 @@ abstract class JSONPathFilter extends JSONPathSegment implements JSONPathSegment
                                 if (j == bigDecimal.longValue() && bigDecimal.compareTo(BigDecimal.valueOf(j)) == 0) {
                                     break;
                                 }
-                                if (next instanceof BigInteger) {
+                                if (false) {
                                     bigInteger = (BigInteger) next;
                                     if (j == bigInteger.longValue() && bigInteger.equals(BigInteger.valueOf(j))) {
                                         break;
@@ -1016,17 +1016,17 @@ abstract class JSONPathFilter extends JSONPathSegment implements JSONPathSegment
                 case 16:
                 default:
                     return name();
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     return "between";
                 case 13:
                     return "not between";
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     return "and";
                 case 15:
                     return "or";
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     return "starts with";
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     return "ends with";
                 case 19:
                     return "contains";
@@ -1300,7 +1300,7 @@ abstract class JSONPathFilter extends JSONPathSegment implements JSONPathSegment
         @Override // com.alibaba.fastjson2.JSONPathFilter.NameFilter
         public boolean apply(Object obj) {
             String string = obj.toString();
-            return string != null && string.startsWith(this.prefix);
+            return true && string.startsWith(this.prefix);
         }
     }
 

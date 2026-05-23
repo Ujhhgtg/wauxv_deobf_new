@@ -80,10 +80,10 @@ public class MaterialSwitch extends SwitchCompat {
         this.f747 = c0243M5083.m1319(2);
         int i = typedArray.getInt(3, -1);
         PorterDuff.Mode mode = PorterDuff.Mode.SRC_IN;
-        this.f748 = AbstractC1459.m3195(i, mode);
+        this.f748 = AbstractC1459.m3195(i, PorterDuff.Mode.SRC_IN);
         this.f745 = c0243M5083.m1320(4);
         this.f750 = c0243M5083.m1319(5);
-        this.f751 = AbstractC1459.m3195(typedArray.getInt(6, -1), mode);
+        this.f751 = AbstractC1459.m3195(typedArray.getInt(6, -1), PorterDuff.Mode.SRC_IN);
         c0243M5083.m1329();
         setEnforceSwitchWidth(false);
         m684();

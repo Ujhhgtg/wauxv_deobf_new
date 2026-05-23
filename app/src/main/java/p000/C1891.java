@@ -61,7 +61,7 @@ public final class C1891 extends AbstractC0065 {
                 }
                 Map.Entry entry = (Map.Entry) obj;
                 C1890 c1890 = this.f6257;
-                c1890.getClass();
+                
                 int iM3685 = c1890.m3685(entry.getKey());
                 if (iM3685 < 0) {
                     return false;
@@ -77,7 +77,7 @@ public final class C1891 extends AbstractC0065 {
         switch (this.f6256) {
             case 0:
                 C1890 c1890 = this.f6257;
-                c1890.getClass();
+                
                 for (Object obj : collection) {
                     if (obj == null) {
                         return false;
@@ -112,11 +112,11 @@ public final class C1891 extends AbstractC0065 {
         switch (this.f6256) {
             case 0:
                 C1890 c1890 = this.f6257;
-                c1890.getClass();
+                
                 return new C1887(c1890, 0);
             default:
                 C1890 c1891 = this.f6257;
-                c1891.getClass();
+                
                 return new C1887(c1891, 1);
         }
     }

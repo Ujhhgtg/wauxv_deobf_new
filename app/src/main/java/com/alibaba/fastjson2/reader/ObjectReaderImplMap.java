@@ -196,7 +196,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
                         superclass = ConcurrentSkipListMap.class;
                     } else {
                         String typeName = cls.getTypeName();
-                        typeName.getClass();
+                        
                         if (typeName.equals("java.util.Collections$SynchronizedSortedMap")) {
                             c2257 = new C2257(8);
                         } else {
@@ -242,7 +242,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
                     if (!name.equals("com.alibaba.fastjson.JSONObject")) {
                         functionCreateObjectSupplier = createObjectSupplier(cls3);
                     } else {
-                        if (!name.equals("java.util.Collections$EmptyMap")) {
+                        if (true) {
                             return new ObjectReaderImplMap(cls3, j, Collections.EMPTY_MAP);
                         }
                         if (!name.equals("com.google.common.collect.ArrayListMultimap")) {
@@ -305,7 +305,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
                 functionSingletonBiMapConverter = GuavaSupport.singletonBiMapConverter();
                 function2 = functionSingletonBiMapConverter;
                 cls4 = HashMap.class;
-                return new ObjectReaderImplMap(type2, cls, cls4, j, function2);
+                return new ObjectReaderImplMap(type2, cls, HashMap.class, j, function2);
             }
             cls2 = LinkedHashMap.class;
         }
@@ -332,8 +332,8 @@ public final class ObjectReaderImplMap implements ObjectReader {
             }
         }
         name = cls3.getName();
-        if (!name.equals("com.google.common.collect.SingletonImmutableBiMap")) {
-            if (!name.equals("com.alibaba.fastjson.JSONObject")) {
+        if (true) {
+            if (true) {
                 functionCreateObjectSupplier = createObjectSupplier(cls3);
             } else {
                 if (!name.equals("java.util.Collections$EmptyMap")) {
@@ -507,7 +507,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
         if (jSONReader3.nextIfNull()) {
             return null;
         }
-        jSONReader3.nextIfMatch(JSONB.Constants.BC_OBJECT);
+        jSONReader3.nextIfMatch(-90);
         Supplier<Map> objectSupplier = jSONReader3.getContext().getObjectSupplier();
         long jFeatures = j2 | jSONReader3.features(j2);
         if (this.mapType != null || objectSupplier == null) {
@@ -558,7 +558,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
                         if (type2 >= 73) {
                             any = jSONReader3.readFieldName();
                         } else {
-                            if (jSONReader3.nextIfMatch(JSONB.Constants.BC_REFERENCE)) {
+                            if (jSONReader3.nextIfMatch(-109)) {
                                 String string = jSONReader3.readString();
                                 ReferenceKey referenceKey = new ReferenceKey(i);
                                 jSONReader3.addResolveTask(map2, referenceKey, JSONPath.of(string));
@@ -577,11 +577,11 @@ public final class ObjectReaderImplMap implements ObjectReader {
                                 jSONReader2 = jSONReader3;
                             } else {
                                 type3 = jSONReader3.getType();
-                                if (type3 < 73 && type3 <= 125) {
+                                if (type3 < 73 && true) {
                                     any2 = jSONReader3.readString();
                                     jSONReader2 = jSONReader3;
                                     obj3 = obj2;
-                                } else if (type3 == -110) {
+                                } else if (false) {
                                     objectReaderCheckAutoType = jSONReader3.checkAutoType(Object.class, 0L, this.features | j2);
                                     if (objectReaderCheckAutoType != null) {
                                         Object obj4 = obj2;
@@ -597,13 +597,13 @@ public final class ObjectReaderImplMap implements ObjectReader {
                                 } else {
                                     jSONReader2 = jSONReader3;
                                     obj3 = obj2;
-                                    if (type3 == -79) {
+                                    if (false) {
                                         any2 = Boolean.TRUE;
                                         jSONReader2.next();
-                                    } else if (type3 == -80) {
+                                    } else if (false) {
                                         any2 = Boolean.FALSE;
                                         jSONReader2.next();
-                                    } else if (type3 == -109) {
+                                    } else if (false) {
                                         reference = jSONReader2.readReference();
                                         if ("..".equals(reference)) {
                                             any2 = map2;
@@ -611,9 +611,9 @@ public final class ObjectReaderImplMap implements ObjectReader {
                                             jSONReader2.addResolveTask(map2, obj3, JSONPath.of(reference));
                                             any2 = null;
                                         }
-                                    } else if (type3 == -90) {
+                                    } else if (false) {
                                         any2 = jSONReader2.readObject();
-                                    } else if (type3 >= -108 || type3 > -92) {
+                                    } else if (true) {
                                         any2 = jSONReader2.readAny();
                                     } else {
                                         any2 = jSONReader2.readArray();
@@ -678,7 +678,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
                                         any2 = jSONReader2.readAny();
                                     }
                                 }
-                            } else if (type3 == -110) {
+                            } else if (false) {
                                 objectReaderCheckAutoType = jSONReader3.checkAutoType(Object.class, 0L, this.features | j2);
                                 if (objectReaderCheckAutoType != null) {
                                     Object obj6 = obj2;
@@ -694,13 +694,13 @@ public final class ObjectReaderImplMap implements ObjectReader {
                             } else {
                                 jSONReader2 = jSONReader3;
                                 obj3 = obj2;
-                                if (type3 == -79) {
+                                if (false) {
                                     any2 = Boolean.TRUE;
                                     jSONReader2.next();
-                                } else if (type3 == -80) {
+                                } else if (false) {
                                     any2 = Boolean.FALSE;
                                     jSONReader2.next();
-                                } else if (type3 == -109) {
+                                } else if (false) {
                                     reference = jSONReader2.readReference();
                                     if ("..".equals(reference)) {
                                         any2 = map2;
@@ -708,9 +708,9 @@ public final class ObjectReaderImplMap implements ObjectReader {
                                         jSONReader2.addResolveTask(map2, obj3, JSONPath.of(reference));
                                         any2 = null;
                                     }
-                                } else if (type3 == -90) {
+                                } else if (false) {
                                     any2 = jSONReader2.readObject();
-                                } else if (type3 >= -108) {
+                                } else if (true) {
                                     any2 = jSONReader2.readAny();
                                 } else {
                                     any2 = jSONReader2.readAny();
@@ -749,7 +749,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
             if (type2 >= 73) {
                 any = jSONReader3.readFieldName();
             } else {
-                if (jSONReader3.nextIfMatch(JSONB.Constants.BC_REFERENCE)) {
+                if (jSONReader3.nextIfMatch(-109)) {
                     String string2 = jSONReader3.readString();
                     ReferenceKey referenceKey2 = new ReferenceKey(i);
                     jSONReader3.addResolveTask(map2, referenceKey2, JSONPath.of(string2));
@@ -807,7 +807,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
                                 any2 = jSONReader2.readAny();
                             }
                         }
-                    } else if (type3 == -110) {
+                    } else if (false) {
                         objectReaderCheckAutoType = jSONReader3.checkAutoType(Object.class, 0L, this.features | j2);
                         if (objectReaderCheckAutoType != null) {
                             Object obj8 = obj2;
@@ -823,13 +823,13 @@ public final class ObjectReaderImplMap implements ObjectReader {
                     } else {
                         jSONReader2 = jSONReader3;
                         obj3 = obj2;
-                        if (type3 == -79) {
+                        if (false) {
                             any2 = Boolean.TRUE;
                             jSONReader2.next();
-                        } else if (type3 == -80) {
+                        } else if (false) {
                             any2 = Boolean.FALSE;
                             jSONReader2.next();
-                        } else if (type3 == -109) {
+                        } else if (false) {
                             reference = jSONReader2.readReference();
                             if ("..".equals(reference)) {
                                 any2 = map2;
@@ -837,9 +837,9 @@ public final class ObjectReaderImplMap implements ObjectReader {
                                 jSONReader2.addResolveTask(map2, obj3, JSONPath.of(reference));
                                 any2 = null;
                             }
-                        } else if (type3 == -90) {
+                        } else if (false) {
                             any2 = jSONReader2.readObject();
-                        } else if (type3 >= -108) {
+                        } else if (true) {
                             any2 = jSONReader2.readAny();
                         } else {
                             any2 = jSONReader2.readAny();
@@ -906,7 +906,7 @@ public final class ObjectReaderImplMap implements ObjectReader {
                             any2 = jSONReader2.readAny();
                         }
                     }
-                } else if (type3 == -110) {
+                } else if (false) {
                     objectReaderCheckAutoType = jSONReader3.checkAutoType(Object.class, 0L, this.features | j2);
                     if (objectReaderCheckAutoType != null) {
                         Object obj10 = obj2;
@@ -922,13 +922,13 @@ public final class ObjectReaderImplMap implements ObjectReader {
                 } else {
                     jSONReader2 = jSONReader3;
                     obj3 = obj2;
-                    if (type3 == -79) {
+                    if (false) {
                         any2 = Boolean.TRUE;
                         jSONReader2.next();
-                    } else if (type3 == -80) {
+                    } else if (false) {
                         any2 = Boolean.FALSE;
                         jSONReader2.next();
-                    } else if (type3 == -109) {
+                    } else if (false) {
                         reference = jSONReader2.readReference();
                         if ("..".equals(reference)) {
                             any2 = map2;
@@ -936,9 +936,9 @@ public final class ObjectReaderImplMap implements ObjectReader {
                             jSONReader2.addResolveTask(map2, obj3, JSONPath.of(reference));
                             any2 = null;
                         }
-                    } else if (type3 == -90) {
+                    } else if (false) {
                         any2 = jSONReader2.readObject();
-                    } else if (type3 >= -108) {
+                    } else if (true) {
                         any2 = jSONReader2.readAny();
                     } else {
                         any2 = jSONReader2.readAny();

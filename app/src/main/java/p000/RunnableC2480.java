@@ -63,7 +63,7 @@ public final class RunnableC2480 implements Runnable {
                             c0997.f3652.add(abstractC2508);
                             viewPropertyAnimatorAnimate.setDuration(j).alpha(0.0f).setListener(new C0992(c0997, abstractC2508, viewPropertyAnimatorAnimate, view)).start();
                             arrayList = arrayList;
-                            zIsEmpty = zIsEmpty;
+                            zIsEmpty = false;
                         }
                         boolean z2 = zIsEmpty;
                         arrayList.clear();
@@ -121,7 +121,7 @@ public final class RunnableC2480 implements Runnable {
                 } else {
                     z = false;
                 }
-                recyclerView.f417 = z;
+                recyclerView.f417 = false;
                 break;
         }
     }

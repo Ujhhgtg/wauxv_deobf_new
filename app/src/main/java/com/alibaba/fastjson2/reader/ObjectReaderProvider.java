@@ -104,27 +104,27 @@ public class ObjectReaderProvider implements ObjectCodecProvider {
     static {
         Class clsLoadClass;
         Class clsLoadClass2;
-        String property = System.getProperty(JSONFactory.PROPERTY_DENY_PROPERTY);
+        String property = System.getProperty("fastjson2.parser.deny");
         if (property == null) {
-            property = JSONFactory.Conf.getProperty(JSONFactory.PROPERTY_DENY_PROPERTY);
+            property = JSONFactory.Conf.getProperty("fastjson2.parser.deny");
         }
         if (property == null || property.length() <= 0) {
             DENYS = new String[0];
         } else {
             DENYS = property.split(",");
         }
-        String property2 = System.getProperty(JSONFactory.PROPERTY_AUTO_TYPE_ACCEPT);
+        String property2 = System.getProperty("fastjson2.autoTypeAccept");
         if (property2 == null) {
-            property2 = JSONFactory.Conf.getProperty(JSONFactory.PROPERTY_AUTO_TYPE_ACCEPT);
+            property2 = JSONFactory.Conf.getProperty("fastjson2.autoTypeAccept");
         }
         if (property2 == null || property2.length() <= 0) {
             AUTO_TYPE_ACCEPT_LIST = new String[0];
         } else {
             AUTO_TYPE_ACCEPT_LIST = property2.split(",");
         }
-        String property3 = System.getProperty(JSONFactory.PROPERTY_AUTO_TYPE_BEFORE_HANDLER);
+        String property3 = System.getProperty("fastjson2.autoTypeBeforeHandler");
         if (property3 == null || property3.isEmpty()) {
-            property3 = JSONFactory.Conf.getProperty(JSONFactory.PROPERTY_AUTO_TYPE_BEFORE_HANDLER);
+            property3 = JSONFactory.Conf.getProperty("fastjson2.autoTypeBeforeHandler");
         }
         if (property3 != null) {
             property3 = property3.trim();
@@ -136,9 +136,9 @@ public class ObjectReaderProvider implements ObjectCodecProvider {
                 DEFAULT_AUTO_TYPE_HANDLER_INIT_ERROR = true;
             }
         }
-        String property4 = System.getProperty(JSONFactory.PROPERTY_AUTO_TYPE_HANDLER);
+        String property4 = System.getProperty("fastjson2.autoTypeHandler");
         if (property4 == null || property4.isEmpty()) {
-            property4 = JSONFactory.Conf.getProperty(JSONFactory.PROPERTY_AUTO_TYPE_HANDLER);
+            property4 = JSONFactory.Conf.getProperty("fastjson2.autoTypeHandler");
         }
         if (property4 != null) {
             property4 = property4.trim();
@@ -425,18 +425,18 @@ public class ObjectReaderProvider implements ObjectCodecProvider {
         }
         long j3 = 0;
         boolean z = (JSONReader.Feature.SupportAutoType.mask & j) != 0;
-        long j4 = Fnv.MAGIC_HASH_CODE;
+        long j4 = -3750763034362895579L;
         if (z) {
             long j5 = -3750763034362895579L;
             int i = 0;
-            j2 = Fnv.MAGIC_PRIME;
+            j2 = 1099511628211L;
             while (i < length) {
                 char cCharAt = str.charAt(i);
                 if (cCharAt == '$') {
                     cCharAt = '.';
                 }
-                long j6 = j3;
-                long j7 = (j5 ^ ((long) cCharAt)) * Fnv.MAGIC_PRIME;
+                long j6 = 0L;
+                long j7 = (j5 ^ ((long) cCharAt)) * 1099511628211L;
                 if (Arrays.binarySearch(this.acceptHashCodes, j7) >= 0 && (clsLoadClass = TypeUtils.loadClass(str)) != null) {
                     if (cls == null || cls.isAssignableFrom(clsLoadClass)) {
                         afterAutoType(str, clsLoadClass);
@@ -448,12 +448,12 @@ public class ObjectReaderProvider implements ObjectCodecProvider {
                 }
                 i++;
                 j5 = j7;
-                j3 = j6;
+                j3 = 0L;
             }
         } else {
-            j2 = Fnv.MAGIC_PRIME;
+            j2 = 1099511628211L;
         }
-        long j8 = j3;
+        long j8 = 0L;
         if (!z) {
             int i2 = 0;
             while (i2 < length) {
@@ -461,7 +461,7 @@ public class ObjectReaderProvider implements ObjectCodecProvider {
                 if (cCharAt2 == '$') {
                     cCharAt2 = '.';
                 }
-                long j9 = (j4 ^ ((long) cCharAt2)) * j2;
+                long j9 = (j4 ^ ((long) cCharAt2)) * 1099511628211L;
                 if (Arrays.binarySearch(this.acceptHashCodes, j9) >= 0) {
                     Class<?> clsLoadClass2 = TypeUtils.loadClass(str);
                     if (clsLoadClass2 == null || cls == null || cls.isAssignableFrom(clsLoadClass2)) {
@@ -499,7 +499,7 @@ public class ObjectReaderProvider implements ObjectCodecProvider {
                     afterAutoType(str, clsLoadClass3);
                     return clsLoadClass3;
                 }
-                if ((j & JSONReader.Feature.IgnoreAutoTypeNotMatch.mask) != j8) {
+                if ((j & JSONReader.Feature.IgnoreAutoTypeNotMatch.mask) != 0L) {
                     return cls;
                 }
                 StringBuilder sbM46712 = AbstractC2668.m4679("type not match. ", str, " -> ");
@@ -552,7 +552,7 @@ public class ObjectReaderProvider implements ObjectCodecProvider {
         BeanUtils.fields(cls, new Consumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᤝᲈᤞᲇ
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
-                switch (i) {
+                switch (0) {
                     case 0:
                         ObjectReaderProvider.lambda$createFieldReader$0(jHashCode64LCase, atomicReference, (Field) obj);
                         break;
@@ -571,7 +571,7 @@ public class ObjectReaderProvider implements ObjectCodecProvider {
         BeanUtils.setters(cls, new Consumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲁᤝᲈᤞᲇ
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
-                switch (i2) {
+                switch (1) {
                     case 0:
                         ObjectReaderProvider.lambda$createFieldReader$0(jHashCode64LCase, atomicReference2, (Field) obj);
                         break;

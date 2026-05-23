@@ -68,7 +68,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
         int i2;
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         String str2 = null;
         C3359 c3359 = null;
         Boolean bool = null;
@@ -458,7 +458,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     break;
                 case 8:
                     String str27 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2839.f9108, str13);
-                    i3 = i4 | bc.e;
+                    i3 = i4 | 256;
                     str6 = str6;
                     str12 = str12;
                     bool = bool;
@@ -611,7 +611,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     C3359 c33511 = c3359;
                     Integer num10 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C1665.f5622, num6);
                     i3 = i4 | 4096;
@@ -692,10 +692,10 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     C3359 c33513 = c3359;
                     String str29 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C2839.f9108, str15);
-                    i3 = i4 | Http2.INITIAL_MAX_FRAME_SIZE;
+                    i3 = i4 | 16384;
                     str6 = str6;
                     str14 = str14;
                     str16 = str16;
@@ -788,7 +788,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     i3 = i4 | 131072;
                     str3 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 17, C2839.f9108, str3);
                     c3359 = c3359;
@@ -815,7 +815,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     i = i4 | 262144;
                     num2 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 18, C1665.f5622, num2);
                     i3 = i;
@@ -899,7 +899,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.ILOAD /* 21 */:
+                case 21 /* 21 */:
                     i = i4 | 2097152;
                     l = (Long) interfaceC0766Mo2512.mo2239(interfaceC2654, 21, C1862.f6185, l);
                     i3 = i;
@@ -927,7 +927,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.LLOAD /* 22 */:
+                case 22 /* 22 */:
                     i = i4 | 4194304;
                     c3341 = (C3341) interfaceC0766Mo2512.mo2239(interfaceC2654, 22, C3339.f10544, c3341);
                     i3 = i;
@@ -955,7 +955,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.FLOAD /* 23 */:
+                case 23 /* 23 */:
                     str2 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 23, C2839.f9108, str2);
                     i2 = 8388608;
                     i3 = i4 | i2;
@@ -983,9 +983,9 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.DLOAD /* 24 */:
+                case 24 /* 24 */:
                     c2962 = (C2962) interfaceC0766Mo2512.mo2239(interfaceC2654, 24, C2960.f9488, c2962);
-                    i2 = Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                    i2 = 16777216;
                     i3 = i4 | i2;
                     str3 = str3;
                     str2 = str2;
@@ -1011,7 +1011,7 @@ public final /* synthetic */ class C3249 implements InterfaceC1443 {
                     str16 = str16;
                     str6 = str6;
                     break;
-                case Opcodes.ALOAD /* 25 */:
+                case 25 /* 25 */:
                     bool2 = (Boolean) interfaceC0766Mo2512.mo2239(interfaceC2654, 25, C0441.f2008, bool2);
                     i2 = 33554432;
                     i3 = i4 | i2;

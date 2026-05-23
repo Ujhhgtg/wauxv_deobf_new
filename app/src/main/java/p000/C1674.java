@@ -100,13 +100,13 @@ public final class C1674 extends AbstractC1649 {
                         b = !str.equals("getAcquire") ? (byte) -1 : (byte) 12;
                         break;
                     case -37641530:
-                        b = !str.equals("getAndSetRelease") ? (byte) -1 : ek.k;
+                        b = !str.equals("getAndSetRelease") ? (byte) -1 : 13;
                         break;
                     case 102230:
-                        b = !str.equals("get") ? (byte) -1 : ek.l;
+                        b = !str.equals("get") ? (byte) -1 : 14;
                         break;
                     case 113762:
-                        b = !str.equals("set") ? (byte) -1 : ek.m;
+                        b = !str.equals("set") ? (byte) -1 : 15;
                         break;
                     case 93645315:
                         b = !str.equals("getAndBitwiseOrAcquire") ? (byte) -1 : (byte) 16;
@@ -165,17 +165,17 @@ public final class C1674 extends AbstractC1649 {
                     case 6:
                     case 7:
                     case 8:
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                     case 13:
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                     case 16:
-                    case Opcodes.LDC /* 18 */:
+                    case 18 /* 18 */:
                     case 19:
                     case 20:
-                    case Opcodes.ILOAD /* 21 */:
-                    case Opcodes.FLOAD /* 23 */:
-                    case Opcodes.DLOAD /* 24 */:
-                    case Opcodes.ALOAD /* 25 */:
+                    case 21 /* 21 */:
+                    case 23 /* 23 */:
+                    case 24 /* 24 */:
+                    case 25 /* 25 */:
                     case 26:
                     case 27:
                     case 28:
@@ -191,8 +191,8 @@ public final class C1674 extends AbstractC1649 {
                         break;
                     case 11:
                     case 15:
-                    case Opcodes.SIPUSH /* 17 */:
-                    case Opcodes.LLOAD /* 22 */:
+                    case 17 /* 17 */:
+                    case 22 /* 22 */:
                         c0914 = new C0913(c0918, new C0914(c0917, f5652));
                         break;
                 }

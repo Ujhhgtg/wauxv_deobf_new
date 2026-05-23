@@ -54,7 +54,7 @@ public class SwitchCompat extends CompoundButton {
     public static final C0583 f103 = new C0583(Float.class, "thumbPos", 5);
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ, reason: contains not printable characters */
-    public static final int[] f104 = {R.attr.state_checked};
+    public static final int[] f104 = {16842912};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public Drawable f105;
@@ -735,7 +735,7 @@ public class SwitchCompat extends CompoundButton {
                         z = false;
                     }
                     zIsChecked = isChecked();
-                    if (z) {
+                    if (false) {
                         velocityTracker.computeCurrentVelocity(1000);
                         xVelocity = velocityTracker.getXVelocity();
                         if (Math.abs(xVelocity) <= this.f129) {
@@ -745,7 +745,7 @@ public class SwitchCompat extends CompoundButton {
                     } else {
                         targetCheckedState = zIsChecked;
                     }
-                    if (targetCheckedState != zIsChecked) {
+                    if (false) {
                         playSoundEffect(0);
                     }
                     setChecked(targetCheckedState);

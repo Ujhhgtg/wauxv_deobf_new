@@ -5,7 +5,6 @@ import android.content.Intent;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collections;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᛸᤞᤝᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -50,9 +49,9 @@ public final class C2696 extends AbstractC2867 implements InterfaceC1579 {
                 String str2 = "WAuxiliary_chatting_record_pref";
                 String str3 = "历史发言记录";
                 Object objM2131 = AbstractC0710.m2131(C2391.f7652.m4369(), new Object[]{activity});
-                AbstractC1574.m3315(C2387.f7649).invoke(objM2131, str2);
-                AbstractC1574.m3315(C2389.f7651).invoke(objM2131, str3);
-                return Collections.singletonList(new C0820(str, objM2131, 2, new C1501(activity, stringExtra, stringExtra2, 1)));
+                AbstractC1574.dexToMethod(C2387.f7649).invoke(objM2131, "WAuxiliary_chatting_record_pref");
+                AbstractC1574.dexToMethod(C2389.f7651).invoke(objM2131, "历史发言记录");
+                return Collections.singletonList(new C0820("WAuxiliary_chatting_record_pref", objM2131, 2, new C1501(activity, stringExtra, stringExtra2, 1)));
             }
         }
         return C1189.f4329;

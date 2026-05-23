@@ -17,8 +17,8 @@ public final class C0026 extends GestureDetector.SimpleOnGestureListener {
 
     @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnDoubleTapListener
     public final boolean onDoubleTap(MotionEvent motionEvent) {
-        int i = TimePickerView.f893;
-        this.f899.getClass();
+        int i = 0;
+        
         return false;
     }
 }

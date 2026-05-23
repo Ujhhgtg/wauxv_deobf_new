@@ -32,7 +32,7 @@ public final class C0718 extends AbstractC2482 {
     @Override // p000.AbstractC2482
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo2040() {
-        switch (this.f2725) {
+        switch (1) {
             case 0:
                 return this.f2726.size();
             default:
@@ -43,7 +43,7 @@ public final class C0718 extends AbstractC2482 {
     @Override // p000.AbstractC2482
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final void mo2041(AbstractC2508 abstractC2508, final int i) {
-        switch (this.f2725) {
+        switch (1) {
             case 0:
                 C0542 c0542 = ((C0716) abstractC2508).f2722;
                 C0719 c0719 = (C0719) this.f2726.get(i);
@@ -78,7 +78,7 @@ public final class C0718 extends AbstractC2482 {
     @Override // p000.AbstractC2482
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final AbstractC2508 mo2042(ViewGroup viewGroup, int i) {
-        switch (this.f2725) {
+        switch (1) {
             case 0:
                 View viewInflate = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_rv_auto_clean, viewGroup, false);
                 MaterialCheckBox materialCheckBox = (MaterialCheckBox) AbstractC3681.m5325(viewInflate, R.id.itemAutoCleanCheckBox);

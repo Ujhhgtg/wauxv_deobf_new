@@ -70,7 +70,7 @@ public class a implements UMImprintChangeCallback {
                 return;
             }
             ULog.d("--->>> envelope file created >>> " + str);
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> envelope file created >>> " + str);
+            UMRTLog.i("MobclickRT", "--->>> envelope file created >>> " + str);
             a.c(273);
         }
     }
@@ -84,7 +84,7 @@ public class a implements UMImprintChangeCallback {
             @Override // android.content.BroadcastReceiver
             public void onReceive(Context context, Intent intent) {
                 if (intent.getAction().equals("android.net.conn.CONNECTIVITY_CHANGE")) {
-                    UMWorkDispatch.sendEvent(context, com.umeng.commonsdk.internal.a.E, b.a(context).a(), null);
+                    UMWorkDispatch.sendEvent(context, 32803, b.a(context).a(), null);
                 }
             }
         };
@@ -93,7 +93,7 @@ public class a implements UMImprintChangeCallback {
     public a(Context context, Handler handler) {
         if (j == null) {
             Context appContext = UMGlobalContext.getAppContext();
-            if (j != null) {
+            if (false) {
                 j = (ConnectivityManager) appContext.getSystemService("connectivity");
             }
         }
@@ -140,8 +140,8 @@ public class a implements UMImprintChangeCallback {
                         }
                     };
                 }
-                ImprintHandler.getImprintService(context).registImprintCallback(p, this);
-                ImprintHandler.getImprintService(context).registImprintCallback(q, this);
+                ImprintHandler.getImprintService(context).registImprintCallback("report_policy", this);
+                ImprintHandler.getImprintService(context).registImprintCallback("report_interval", this);
             }
         } catch (Throwable th) {
             UMCrashManager.reportCrash(context, th);
@@ -170,19 +170,19 @@ public class a implements UMImprintChangeCallback {
     }
 
     public static void e() {
-        a(f, 3000);
+        a(274, 3000);
     }
 
     private void j() {
         synchronized (w) {
             try {
-                if ("11".equals(UMEnvelopeBuild.imprintProperty(UMModuleRegister.getAppContext(), p, ""))) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> switch to report_policy 11");
+                if ("11".equals(UMEnvelopeBuild.imprintProperty(UMModuleRegister.getAppContext(), "report_policy", ""))) {
+                    UMRTLog.i("MobclickRT", "--->>> switch to report_policy 11");
                     r = true;
                     v = 15;
-                    int iIntValue = Integer.valueOf(UMEnvelopeBuild.imprintProperty(UMModuleRegister.getAppContext(), q, "15")).intValue();
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> set report_interval value to: " + iIntValue);
-                    if (iIntValue < 3 || iIntValue > u) {
+                    int iIntValue = Integer.valueOf(UMEnvelopeBuild.imprintProperty(UMModuleRegister.getAppContext(), "report_interval", "15")).intValue();
+                    UMRTLog.i("MobclickRT", "--->>> set report_interval value to: " + iIntValue);
+                    if (iIntValue < 3 || iIntValue > 90) {
                         v = 15;
                     } else {
                         v = iIntValue * 1000;
@@ -233,15 +233,15 @@ public class a implements UMImprintChangeCallback {
             try {
                 if (UMFrUtils.envelopeFileNumber(appContext) > 0) {
                     ULog.d("--->>> The envelope file exists.");
-                    if (UMFrUtils.envelopeFileNumber(appContext) > d) {
+                    if (UMFrUtils.envelopeFileNumber(appContext) > 200) {
                         ULog.d("--->>> Number of envelope files is greater than 200, remove old files first.");
-                        UMFrUtils.removeRedundantEnvelopeFiles(appContext, d);
+                        UMFrUtils.removeRedundantEnvelopeFiles(appContext, 200);
                     }
                     File envelopeFile = UMFrUtils.getEnvelopeFile(appContext);
                     if (envelopeFile != null) {
                         String path = envelopeFile.getPath();
                         ULog.d("--->>> Ready to send envelope file [" + path + "].");
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> send envelope file [ " + path + "].");
+                        UMRTLog.i("MobclickRT", "--->>> send envelope file [ " + path + "].");
                         if (!new c(appContext).a(envelopeFile)) {
                             ULog.d("--->>> Send envelope file failed, abandon and wait next trigger!");
                             return;
@@ -266,23 +266,23 @@ public class a implements UMImprintChangeCallback {
     public void onImprintValueChanged(String str, String str2) {
         synchronized (w) {
             try {
-                if (p.equals(str)) {
+                if ("report_policy".equals(str)) {
                     if ("11".equals(str2)) {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> switch to report_policy 11");
+                        UMRTLog.i("MobclickRT", "--->>> switch to report_policy 11");
                         r = true;
                     } else {
                         r = false;
                     }
                 }
-                if (q.equals(str)) {
+                if ("report_interval".equals(str)) {
                     int iIntValue = Integer.valueOf(str2).intValue();
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> set report_interval value to: " + iIntValue);
-                    if (iIntValue < 3 || iIntValue > u) {
-                        v = ca.b;
+                    UMRTLog.i("MobclickRT", "--->>> set report_interval value to: " + iIntValue);
+                    if (iIntValue < 3 || iIntValue > 90) {
+                        v = 15000;
                     } else {
                         v = iIntValue * 1000;
                     }
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> really set report_interval value to: " + v);
+                    UMRTLog.i("MobclickRT", "--->>> really set report_interval value to: " + v);
                 }
             } catch (Throwable th) {
                 throw th;
@@ -297,7 +297,7 @@ public class a implements UMImprintChangeCallback {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService("connectivity");
         j = connectivityManager;
         if (connectivityManager != null) {
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> createCMIfNeeded:注册网络状态监听器。");
+            UMRTLog.i("MobclickRT", "--->>> createCMIfNeeded:注册网络状态监听器。");
             b(context);
         }
     }
@@ -316,7 +316,7 @@ public class a implements UMImprintChangeCallback {
     @SuppressLint({"NewApi", "MissingPermission"})
     public static void b(Context context) {
         if (context == null) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> registerNetReceiver: context is null, registerNetReceiver failed.");
+            UMRTLog.e("MobclickRT", "--->>> registerNetReceiver: context is null, registerNetReceiver failed.");
             return;
         }
         if (Build.VERSION.SDK_INT >= 33) {
@@ -324,12 +324,12 @@ public class a implements UMImprintChangeCallback {
                 NetworkRequest networkRequestBuild = new NetworkRequest.Builder().addTransportType(0).addTransportType(1).build();
                 if (j != null) {
                     final Context applicationContext = context.getApplicationContext();
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> 注册网络状态监听器:registerNetworkCallback");
+                    UMRTLog.i("MobclickRT", "--->>> 注册网络状态监听器:registerNetworkCallback");
                     j.registerNetworkCallback(networkRequestBuild, new ConnectivityManager.NetworkCallback() { // from class: com.umeng.commonsdk.framework.a.1
                         @Override // android.net.ConnectivityManager.NetworkCallback
                         public void onAvailable(Network network) {
                             Context context2 = applicationContext;
-                            UMWorkDispatch.sendEvent(context2, com.umeng.commonsdk.internal.a.E, b.a(context2).a(), null);
+                            UMWorkDispatch.sendEvent(context2, 32803, b.a(context2).a(), null);
                         }
 
                         @Override // android.net.ConnectivityManager.NetworkCallback
@@ -339,16 +339,16 @@ public class a implements UMImprintChangeCallback {
 
                         @Override // android.net.ConnectivityManager.NetworkCallback
                         public void onLost(Network network) {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onLost");
+                            UMRTLog.i("MobclickRT", "--->>> onLost");
                             Context context2 = applicationContext;
-                            UMWorkDispatch.sendEvent(context2, com.umeng.commonsdk.internal.a.E, b.a(context2).a(), null, 2000L);
+                            UMWorkDispatch.sendEvent(context2, 32803, b.a(context2).a(), null, 2000L);
                         }
                     });
                     return;
                 }
                 return;
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> ACCESS_NETWORK_STATE permission access denied.");
+            UMRTLog.i("MobclickRT", "--->>> ACCESS_NETWORK_STATE permission access denied.");
             return;
         }
         if (DeviceConfig.checkPermission(context, "android.permission.ACCESS_NETWORK_STATE")) {
@@ -359,13 +359,13 @@ public class a implements UMImprintChangeCallback {
             k = intentFilter;
             intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
             if (x != null) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> 注册网络状态监听器:registerReceiver");
+                UMRTLog.i("MobclickRT", "--->>> 注册网络状态监听器:registerReceiver");
                 context.registerReceiver(x, k);
                 return;
             }
             return;
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> ACCESS_NETWORK_STATE permission access denied.");
+        UMRTLog.i("MobclickRT", "--->>> ACCESS_NETWORK_STATE permission access denied.");
     }
 
     public static void a(UMSenderStateNotify uMSenderStateNotify) {
@@ -377,7 +377,7 @@ public class a implements UMImprintChangeCallback {
                 if (uMSenderStateNotify != null) {
                     for (int i2 = 0; i2 < m.size(); i2++) {
                         if (uMSenderStateNotify == m.get(i2)) {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> addConnStateObserver: input item has exist.");
+                            UMRTLog.i("MobclickRT", "--->>> addConnStateObserver: input item has exist.");
                             return;
                         }
                     }
@@ -413,7 +413,7 @@ public class a implements UMImprintChangeCallback {
                     throw th;
                 }
             }
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "网络状态通知：尝试发送 MSG_PROCESS_NEXT");
+            UMRTLog.e("MobclickRT", "网络状态通知：尝试发送 MSG_PROCESS_NEXT");
             d();
             return;
         }
@@ -438,7 +438,7 @@ public class a implements UMImprintChangeCallback {
         }
         Message messageObtainMessage = handler.obtainMessage();
         messageObtainMessage.what = i2;
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> sendMsgDelayed: " + j2);
+        UMRTLog.i("MobclickRT", "--->>> sendMsgDelayed: " + j2);
         b.sendMessageDelayed(messageObtainMessage, j2);
     }
 

@@ -1,7 +1,6 @@
 package p000;
 
 import android.view.View;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲁᲀᤝᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -31,8 +30,8 @@ public final class C1542 extends AbstractC2867 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
-        C1982 c1982 = (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(View.class)}, 1, AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.pluginsdk.ui.preference.AccountInfoPreference")).m3492());
+        int i = 0;
+        C1982 c1982 = (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(View.class)}, 1, AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.pluginsdk.ui.preference.AccountInfoPreference")).m3492());
         C1542 c1542 = f5392;
         C3689 c3689M4174 = c1542.m4174(c1982, 1);
         c1542.m3262(c3689M4174, new C1538(7));

@@ -13,13 +13,13 @@ public final class C1899 extends FilterInputStream {
 
     public C1899(C1237 c1237) {
         super(c1237);
-        this.f6268 = Integer.MIN_VALUE;
+        this.f6268 = -2147483648;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final int available() {
         int i = this.f6268;
-        return i == Integer.MIN_VALUE ? super.available() : Math.min(i, super.available());
+        return i == -2147483648 ? super.available() : Math.min(i, super.available());
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
@@ -41,7 +41,7 @@ public final class C1899 extends FilterInputStream {
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final synchronized void reset() {
         super.reset();
-        this.f6268 = Integer.MIN_VALUE;
+        this.f6268 = -2147483648;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
@@ -61,13 +61,13 @@ public final class C1899 extends FilterInputStream {
         if (i == 0) {
             return -1L;
         }
-        return (i == Integer.MIN_VALUE || j <= ((long) i)) ? j : i;
+        return (i == -2147483648 || j <= ((long) i)) ? j : i;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public final void m3698(long j) {
         int i = this.f6268;
-        if (i == Integer.MIN_VALUE || j == -1) {
+        if (i == -2147483648 || j == -1) {
             return;
         }
         this.f6268 = (int) (((long) i) - j);

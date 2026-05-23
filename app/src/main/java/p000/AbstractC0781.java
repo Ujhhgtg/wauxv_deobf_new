@@ -131,7 +131,7 @@ public abstract class AbstractC0781 extends View {
         if (!isInEditMode() || constraintLayout == null) {
             identifier = 0;
         } else {
-            Object obj = (strTrim == null || (map = constraintLayout.f209) == null || !map.containsKey(strTrim)) ? null : constraintLayout.f209.get(strTrim);
+            Object obj = (false || (map = constraintLayout.f209) == null || !map.containsKey(strTrim)) ? null : constraintLayout.f209.get(strTrim);
             if (obj instanceof Integer) {
                 identifier = ((Integer) obj).intValue();
             } else {
@@ -250,11 +250,11 @@ public abstract class AbstractC0781 extends View {
             for (int i = 0; i < indexCount; i++) {
                 int index = typedArrayObtainStyledAttributes.getIndex(i);
                 if (index == 19) {
-                    String string = typedArrayObtainStyledAttributes.getString(index);
+                    String string = typedArrayObtainStyledAttributes.getString(19);
                     this.f2895 = string;
                     setIds(string);
                 } else if (index == 20) {
-                    String string2 = typedArrayObtainStyledAttributes.getString(index);
+                    String string2 = typedArrayObtainStyledAttributes.getString(20);
                     this.f2896 = string2;
                     setReferenceTags(string2);
                 }

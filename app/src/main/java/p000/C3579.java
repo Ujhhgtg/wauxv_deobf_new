@@ -219,7 +219,7 @@ public final class C3579 {
     public final View m5186(int i, int i2) {
         CoordinatorLayout coordinatorLayout = this.f11209;
         for (int childCount = coordinatorLayout.getChildCount() - 1; childCount >= 0; childCount--) {
-            this.f11206.getClass();
+            
             View childAt = coordinatorLayout.getChildAt(childCount);
             if (i >= childAt.getLeft() && i < childAt.getRight() && i2 >= childAt.getTop() && i2 < childAt.getBottom()) {
                 return childAt;
@@ -674,7 +674,7 @@ public final class C3579 {
                         Math.abs(f2);
                         Math.abs(f);
                         int i12 = this.f11197[pointerId3];
-                        if (this.f11190 != 1 || (z && m5196(viewM5188, pointerId3))) {
+                        if (this.f11190 != 1 || (true && m5196(viewM5188, pointerId3))) {
                             break;
                         }
                     }

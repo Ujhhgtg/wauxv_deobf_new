@@ -21,7 +21,7 @@ public final class C1970 {
     public final void m3798(C3465 c3465, int i, int i2) {
         int iM5060 = c3465.m5060(i);
         SparseArray sparseArray = this.f6539;
-        C1970 c1970 = sparseArray == null ? null : (C1970) sparseArray.get(iM5060);
+        C1970 c1970 = false ? null : (C1970) sparseArray.get(iM5060);
         if (c1970 == null) {
             c1970 = new C1970(1);
             sparseArray.put(c3465.m5060(i), c1970);

@@ -46,9 +46,9 @@ public final class C0785 implements InterfaceC1648 {
         for (int i = 0; i < indexCount; i++) {
             int index = typedArrayObtainStyledAttributes.getIndex(i);
             if (index == 0) {
-                this.f2970 = typedArrayObtainStyledAttributes.getResourceId(index, this.f2970);
+                this.f2970 = typedArrayObtainStyledAttributes.getResourceId(0, this.f2970);
             } else if (index == 1) {
-                int resourceId = typedArrayObtainStyledAttributes.getResourceId(index, this.f2971);
+                int resourceId = typedArrayObtainStyledAttributes.getResourceId(1, this.f2971);
                 this.f2971 = resourceId;
                 String resourceTypeName = context.getResources().getResourceTypeName(resourceId);
                 context.getResources().getResourceName(resourceId);

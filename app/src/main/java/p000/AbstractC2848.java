@@ -33,7 +33,7 @@ public abstract class AbstractC2848 extends AbstractC2847 {
                 if (cCharAt != '-') {
                     return null;
                 }
-                i4 = Integer.MIN_VALUE;
+                i4 = -2147483648;
                 z = true;
             }
         } else {
@@ -46,7 +46,7 @@ public abstract class AbstractC2848 extends AbstractC2847 {
             if (iDigit < 0) {
                 return null;
             }
-            if ((i3 < i5 && (i5 != -59652323 || i3 < (i5 = i4 / 10))) || (i2 = i3 * 10) < i4 + iDigit) {
+            if ((i3 < i5 && (i5 != -59652323 || i3 < (i5 = -214748364))) || (i2 = i3 * 10) < i4 + iDigit) {
                 return null;
             }
             i3 = i2 - iDigit;
@@ -78,7 +78,7 @@ public abstract class AbstractC2848 extends AbstractC2847 {
                 if (cCharAt != '-') {
                     return null;
                 }
-                j = Long.MIN_VALUE;
+                j = -9223372036854775808L;
                 i = 1;
             }
         } else {
@@ -95,8 +95,8 @@ public abstract class AbstractC2848 extends AbstractC2847 {
                 if (j3 != -256204778801521550L) {
                     return null;
                 }
-                j3 = j / ((long) 10);
-                if (j2 < j3) {
+                j3 = -922337203685477580L;
+                if (j2 < -922337203685477580L) {
                     return null;
                 }
             }

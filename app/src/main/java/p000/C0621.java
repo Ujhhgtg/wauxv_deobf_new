@@ -25,13 +25,13 @@ public final class C0621 implements InterfaceC2885 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void mo2030(C2888 c2888) throws IllegalAccessException, InvocationTargetException {
         C0618.f2447.m2545(c2888.f9247);
-        C0920.f3404.getClass();
-        Method methodM3315 = AbstractC1574.m3315(C0919.f3403);
+        
+        Method methodM3315 = AbstractC1574.dexToMethod(C0919.f3403);
         Object[] objArr = {Boolean.TRUE};
         BaseAdapter baseAdapter = this.f2450;
         methodM3315.invoke(baseAdapter, objArr);
-        C0855.f3270.getClass();
-        AbstractC1574.m3315(C0854.f3269).invoke(this.f2451, null);
+        
+        AbstractC1574.dexToMethod(C0854.f3269).invoke(this.f2451, null);
         baseAdapter.notifyDataSetChanged();
     }
 

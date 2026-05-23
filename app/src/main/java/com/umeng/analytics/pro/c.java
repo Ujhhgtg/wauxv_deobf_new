@@ -103,21 +103,21 @@ public interface c extends IInterface {
         }
 
         public b() {
-            attachInterface(this, c);
+            attachInterface(this, "com.hihonor.cloudservice.oaid.IOAIDCallBack");
         }
 
         public static c a(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }
-            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(c);
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.hihonor.cloudservice.oaid.IOAIDCallBack");
             return (iInterfaceQueryLocalInterface == null || !(iInterfaceQueryLocalInterface instanceof c)) ? new a(iBinder) : (c) iInterfaceQueryLocalInterface;
         }
 
         @Override // android.os.Binder
         public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) {
             if (i == 1) {
-                parcel.enforceInterface(c);
+                parcel.enforceInterface("com.hihonor.cloudservice.oaid.IOAIDCallBack");
                 a(parcel.readInt(), parcel.readLong(), parcel.readInt() != 0, parcel.readFloat(), parcel.readDouble(), parcel.readString());
                 parcel2.writeNoException();
                 return true;
@@ -126,25 +126,25 @@ public interface c extends IInterface {
                 if (i != 1598968902) {
                     return super.onTransact(i, parcel, parcel2, i2);
                 }
-                parcel2.writeString(c);
+                parcel2.writeString("com.hihonor.cloudservice.oaid.IOAIDCallBack");
                 return true;
             }
-            parcel.enforceInterface(c);
+            parcel.enforceInterface("com.hihonor.cloudservice.oaid.IOAIDCallBack");
             a(parcel.readInt(), parcel.readInt() != 0 ? (Bundle) Bundle.CREATOR.createFromParcel(parcel) : null);
             parcel2.writeNoException();
             return true;
         }
 
         public static boolean a(c cVar) {
-            if (a.a != null || cVar == null) {
+            if (1 .a != null || cVar == null) {
                 return false;
             }
-            a.a = cVar;
+            1 .a = cVar;
             return true;
         }
 
         public static c a() {
-            return a.a;
+            return 1 .a;
         }
 
         @Override // android.os.IInterface

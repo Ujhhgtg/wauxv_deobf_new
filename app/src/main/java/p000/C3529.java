@@ -19,11 +19,11 @@ public final class C3529 {
         }
         Class<C3529> cls = C3529.class;
         if (obj instanceof Class) {
-            Class<C3529> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(cls));
+            Class<C3529> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(C3529.class));
             return !obj.equals(clsM2183 != null ? clsM2183 : C3529.class) ? ((Class) obj).toString() : "VagueType";
         }
         if (obj instanceof InterfaceC1736) {
-            return !obj.equals(AbstractC2519.m4527(cls)) ? obj.toString() : "VagueType";
+            return !obj.equals(AbstractC2519.classToKClass(C3529.class)) ? obj.toString() : "VagueType";
         }
         if (!(obj instanceof Collection)) {
             return obj.toString();

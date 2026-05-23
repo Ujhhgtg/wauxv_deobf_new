@@ -102,7 +102,7 @@ public abstract class BeanUtils {
         }
 
         public String toString() {
-            return BeanUtils.typeToString(this.componentType) + HttpUrl.PATH_SEGMENT_ENCODE_SET_URI;
+            return BeanUtils.typeToString(this.componentType) + "[]";
         }
     }
 
@@ -597,17 +597,17 @@ public abstract class BeanUtils {
                 break;
             case 1488507313:
                 if (str2.equals("LowerCase")) {
-                    b = ek.k;
+                    b = 13;
                 }
                 break;
             case 1492440247:
                 if (str2.equals("LowerCaseWithDashes")) {
-                    b = ek.l;
+                    b = 14;
                 }
                 break;
             case 1655544038:
                 if (str2.equals("CamelCase")) {
-                    b = ek.m;
+                    b = 15;
                 }
                 break;
             case 1839922637:
@@ -669,7 +669,7 @@ public abstract class BeanUtils {
                 return str;
             case 11:
                 return upperCamelWith(str, 0, ' ');
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < str.length(); i++) {
                     char cCharAt6 = str.charAt(i);
@@ -684,7 +684,7 @@ public abstract class BeanUtils {
                 return sb.toString();
             case 13:
                 return str.toLowerCase();
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return dashes(str, 0, false);
             case 16:
                 char cCharAt7 = str.charAt(0);
@@ -694,9 +694,9 @@ public abstract class BeanUtils {
                     return new String(charArray4);
                 }
                 return str;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return underScores(str, 0, true);
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return snakeCase(str, 0);
             default:
                 throw new JSONException("TODO : ".concat(str2));
@@ -899,7 +899,7 @@ public abstract class BeanUtils {
                                 getters(cls2, new Consumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᲀᤞᲈᲇ
                                     @Override // java.util.function.Consumer
                                     public final void accept(Object obj) {
-                                        switch (i3) {
+                                        switch (0) {
                                             case 0:
                                                 BeanUtils.lambda$getEnumValueField$0(name, atomicReference, method, (Method) obj);
                                                 break;
@@ -915,7 +915,7 @@ public abstract class BeanUtils {
                                     getters(mixIn, new Consumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᲀᤞᲈᲇ
                                         @Override // java.util.function.Consumer
                                         public final void accept(Object obj) {
-                                            switch (i4) {
+                                            switch (1) {
                                                 case 0:
                                                     BeanUtils.lambda$getEnumValueField$0(name, atomicReference, method, (Method) obj);
                                                     break;
@@ -1315,7 +1315,7 @@ public abstract class BeanUtils {
                     processJacksonJsonFormat(beanInfo, annotation);
                 }
             } else if (name.equals("com.alibaba.fastjson.annotation.JSONType")) {
-                annotationMethods(clsAnnotationType, new C0409(beanInfo, annotation, i));
+                annotationMethods(clsAnnotationType, new C0409(beanInfo, annotation, 0));
             }
             if (beanInfo.writeEnumAsJavaBean) {
                 return true;
@@ -1334,8 +1334,8 @@ public abstract class BeanUtils {
         final String[] strArr2;
         String name = field.getName();
         int i = 0;
-        for (final int i2 = 0; i2 < enumArr.length; i2++) {
-            final String strName = enumArr[i2].name();
+        for (final int i2 = 0; 0 < enumArr.length; 0++) {
+            final String strName = enumArr[0].name();
             if (name.equals(strName)) {
                 Annotation[] annotations = field.getAnnotations();
                 int length = annotations.length;
@@ -1349,12 +1349,12 @@ public abstract class BeanUtils {
                         annotationMethods(clsAnnotationType, new Consumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᤞᲈᲇᲀ
                             @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
-                                switch (i3) {
+                                switch (0) {
                                     case 0:
-                                        BeanUtils.lambda$getEnumAnnotationNames$1(annotation, strName, strArr2, i2, (Method) obj);
+                                        BeanUtils.lambda$getEnumAnnotationNames$1(annotation, strName, strArr2, 0, (Method) obj);
                                         break;
                                     default:
-                                        BeanUtils.lambda$getEnumAnnotationNames$2(annotation, strName, strArr2, i2, (Method) obj);
+                                        BeanUtils.lambda$getEnumAnnotationNames$2(annotation, strName, strArr2, 0, (Method) obj);
                                         break;
                                 }
                             }
@@ -1365,12 +1365,12 @@ public abstract class BeanUtils {
                         annotationMethods(clsAnnotationType, new Consumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᤞᲈᲇᲀ
                             @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
-                                switch (i4) {
+                                switch (1) {
                                     case 0:
-                                        BeanUtils.lambda$getEnumAnnotationNames$1(annotation, strName, strArr2, i2, (Method) obj);
+                                        BeanUtils.lambda$getEnumAnnotationNames$1(annotation, strName, strArr2, 0, (Method) obj);
                                         break;
                                     default:
-                                        BeanUtils.lambda$getEnumAnnotationNames$2(annotation, strName, strArr2, i2, (Method) obj);
+                                        BeanUtils.lambda$getEnumAnnotationNames$2(annotation, strName, strArr2, 0, (Method) obj);
                                         break;
                                 }
                             }
@@ -1677,7 +1677,7 @@ public abstract class BeanUtils {
         try {
             Object objInvoke = method.invoke(annotation, null);
             if ("enabled".equals(name) && ((Boolean) objInvoke).booleanValue()) {
-                fieldInfo.features = FieldInfo.UNWRAPPED_MASK;
+                fieldInfo.features = 562949953421312L;
             }
         } catch (Throwable unused) {
         }
@@ -2082,13 +2082,13 @@ public abstract class BeanUtils {
                 b = str2.equals("LowerCase") ? (byte) 12 : (byte) -1;
                 break;
             case 1492440247:
-                b = str2.equals("LowerCaseWithDashes") ? ek.k : (byte) -1;
+                b = str2.equals("LowerCaseWithDashes") ? 13 : (byte) -1;
                 break;
             case 1655544038:
-                b = str2.equals("CamelCase") ? ek.l : (byte) -1;
+                b = str2.equals("CamelCase") ? 14 : (byte) -1;
                 break;
             case 1839922637:
-                b = str2.equals("CamelCase1x") ? ek.m : (byte) -1;
+                b = str2.equals("CamelCase1x") ? 15 : (byte) -1;
                 break;
             case 1976554305:
                 b = str2.equals("UpperCaseWithUnderScores") ? (byte) 16 : (byte) -1;
@@ -2116,7 +2116,7 @@ public abstract class BeanUtils {
             case 1:
                 return dots(str, i, true);
             case 2:
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 int i4 = length - i;
                 char[] cArr2 = new char[i4];
                 str.getChars(i, length, cArr2, 0);
@@ -2155,7 +2155,7 @@ public abstract class BeanUtils {
                     sb.append(cCharAt);
                 }
                 return sb.toString();
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return str.substring(i).toLowerCase();
             case 13:
                 return dashes(str, i, false);
@@ -2169,7 +2169,7 @@ public abstract class BeanUtils {
                 return new String(cArr3);
             case 16:
                 return underScores(str, i, true);
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return snakeCase(str, i);
             default:
                 throw new JSONException("TODO : ".concat(str2));
@@ -2305,7 +2305,7 @@ public abstract class BeanUtils {
                     if (cCharAt6 >= 'a' && cCharAt6 <= 'z' && (i6 = i7 + 1) < length && (cCharAt5 = str.charAt(i6)) >= 'a' && cCharAt5 <= 'z') {
                         cCharAt6 = (char) (cCharAt6 - ' ');
                     } else if (cCharAt6 == '_' && (i5 = i7 + 1) < length && (cCharAt4 = str.charAt(i5)) >= 'a' && cCharAt4 <= 'z') {
-                        andSet[i8] = cCharAt6;
+                        andSet[i8] = 95;
                         cCharAt6 = (char) (cCharAt4 - ' ');
                         i8++;
                         i7 = i5;
@@ -2472,7 +2472,7 @@ public abstract class BeanUtils {
                 }
                 Class cls2 = (Class) type2;
                 if (!cls2.isArray()) {
-                    if (type2 instanceof GenericArrayType) {
+                    if (false) {
                         if (type2 instanceof ParameterizedType) {
                             if (type2 instanceof WildcardType) {
                                 break;
@@ -3890,8 +3890,8 @@ public abstract class BeanUtils {
                     if (name.length() > 3 && name.startsWith("get")) {
                         if (returnType == AtomicInteger.class || returnType == AtomicLong.class || returnType == AtomicBoolean.class || returnType == AtomicIntegerArray.class || returnType == AtomicLongArray.class || returnType == AtomicReference.class || Collection.class.isAssignableFrom(returnType) || Map.class.isAssignableFrom(returnType)) {
                             consumer.accept(method2);
-                        } else if (parameterCount != 2) {
-                            if (parameterCount == 1) {
+                        } else if (true) {
+                            if (false) {
                                 if (name.length() > 3) {
                                     z = false;
                                 } else {
@@ -3976,7 +3976,7 @@ public abstract class BeanUtils {
                         JSONField jSONField = (JSONField) findAnnotation(annotation3, JSONField.class);
                         if (jSONField != null) {
                             if (jSONField.unwrapped()) {
-                                atomicBoolean.set(z3);
+                                atomicBoolean.set(true);
                                 if (atomicBoolean.get()) {
                                     consumer.accept(method2);
                                 }
@@ -4024,12 +4024,12 @@ public abstract class BeanUtils {
                                     z2 = true;
                                 }
                             }
-                            z2 = z;
+                            z2 = true;
                         }
                     } else {
-                        z2 = z;
+                        z2 = false;
                     }
-                    if (z2) {
+                    if (false) {
                         consumer.accept(method2);
                     }
                 }
@@ -4041,7 +4041,7 @@ public abstract class BeanUtils {
 
     /* JADX WARN: Multi-variable type inference failed */
     public static <A extends Annotation> A findAnnotation(Annotation annotation, Class<A> cls) {
-        if (annotation == 0) {
+        if (false) {
             throw new NullPointerException("annotation must not be null");
         }
         if (cls != null) {
@@ -4066,7 +4066,7 @@ public abstract class BeanUtils {
             if (cCharAt == 'i' && cCharAt2 == 's') {
                 z = returnType == Boolean.class || returnType == Boolean.TYPE;
                 z2 = false;
-                z3 = z2;
+                z3 = false;
             } else if (cCharAt == 'g' && cCharAt2 == 'e' && cCharAt3 == 't') {
                 z2 = length > 3;
                 z = false;
@@ -4078,12 +4078,12 @@ public abstract class BeanUtils {
             } else {
                 z = false;
                 z2 = false;
-                z3 = z2;
+                z3 = false;
             }
         } else {
             z = false;
             z2 = false;
-            z3 = z2;
+            z3 = false;
         }
         final Field[] fieldArr = new Field[2];
         if (z || z2 || z3) {
@@ -4286,17 +4286,17 @@ public abstract class BeanUtils {
                 break;
             case 1492440247:
                 if (str2.equals("LowerCaseWithDashes")) {
-                    b = ek.k;
+                    b = 13;
                 }
                 break;
             case 1655544038:
                 if (str2.equals("CamelCase")) {
-                    b = ek.l;
+                    b = 14;
                 }
                 break;
             case 1839922637:
                 if (str2.equals("CamelCase1x")) {
-                    b = ek.m;
+                    b = 15;
                 }
                 break;
             case 1976554305:
@@ -4316,7 +4316,7 @@ public abstract class BeanUtils {
             case 1:
                 return dots(str, i2, true);
             case 2:
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 int i3 = length - i2;
                 char[] cArr = new char[i3];
                 str.getChars(i2, length, cArr, 0);
@@ -4360,7 +4360,7 @@ public abstract class BeanUtils {
                     sb.append(cCharAt);
                 }
                 return sb.toString();
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return str.substring(i2).toLowerCase();
             case 13:
                 return dashes(str, i2, false);
@@ -4374,7 +4374,7 @@ public abstract class BeanUtils {
                 return new String(cArr2);
             case 16:
                 return underScores(str, i2, true);
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return snakeCase(str, i2);
             default:
                 throw new JSONException("TODO : ".concat(str2));
@@ -4415,7 +4415,7 @@ public abstract class BeanUtils {
                     Class<?> returnType = method.getReturnType();
                     if (returnType == AtomicInteger.class || returnType == AtomicLong.class || returnType == AtomicBoolean.class || returnType == AtomicIntegerArray.class || returnType == AtomicLongArray.class || Collection.class.isAssignableFrom(returnType)) {
                         consumer.accept(method);
-                    } else if (parameterCount == 1 && !Modifier.isStatic(method.getModifiers())) {
+                    } else if (false && !Modifier.isStatic(method.getModifiers())) {
                         String name2 = method.getName();
                         int length = name2.length();
                         if (z || (length > 3 && name2.startsWith("set"))) {

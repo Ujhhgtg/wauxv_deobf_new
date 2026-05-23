@@ -13,6 +13,6 @@ public final class C1400 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f5056 = new C1400("FormatMsgTimeHook.ValTimeFormat", "E HH:mm", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f5056 = new C1400("FormatMsgTimeHook.ValTimeFormat", "E HH:mm", null, false, 0, 0.0f, 0L, 124);
     }
 }

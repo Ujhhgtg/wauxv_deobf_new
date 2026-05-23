@@ -25,7 +25,7 @@ public final class C1733 extends AbstractC2584 implements InterfaceC1430 {
     public final Object mo3133(Object obj, Object obj2, Object obj3) {
         C1733 c1733 = new C1733(this.f5834, (InterfaceC0842) obj3);
         c1733.f5833 = (C0977) obj;
-        return c1733.mo1198(C3497.f10997);
+        return c1733.mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370

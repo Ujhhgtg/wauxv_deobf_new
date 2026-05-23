@@ -32,7 +32,7 @@ public class UMFrUtils {
     private static final String KEY_LAST_INSTANT_SUCC_BUILD_TIME = "last_instant_build_time";
     private static final String KEY_LAST_SUCC_BUILD_TIME = "last_successful_build_time";
     private static Object mEnvelopeBuildTimeLock = new Object();
-    private static String mDefaultEnvelopeDir = be.b().b(be.a);
+    private static String mDefaultEnvelopeDir = be.b().b("env");
     private static String mDefaultEnvelopeDirPath = null;
     private static Object mEnvelopeFileLock = new Object();
     private static String sCurrentProcessName = "";
@@ -144,7 +144,7 @@ public class UMFrUtils {
     public static long getLastInstantBuildTime(Context context) {
         long j;
         synchronized (mEnvelopeBuildTimeLock) {
-            j = PreferenceWrapper.getDefault(context).getLong(KEY_LAST_INSTANT_SUCC_BUILD_TIME, 0L);
+            j = PreferenceWrapper.getDefault(context).getLong("last_instant_build_time", 0L);
         }
         return j;
     }
@@ -152,7 +152,7 @@ public class UMFrUtils {
     public static long getLastSuccessfulBuildTime(Context context) {
         long j;
         synchronized (mEnvelopeBuildTimeLock) {
-            j = PreferenceWrapper.getDefault(context).getLong(KEY_LAST_SUCC_BUILD_TIME, 0L);
+            j = PreferenceWrapper.getDefault(context).getLong("last_successful_build_time", 0L);
         }
         return j;
     }
@@ -161,7 +161,7 @@ public class UMFrUtils {
         try {
             String currentProcessName = getCurrentProcessName(context);
             if (!TextUtils.isEmpty(currentProcessName)) {
-                String strB = be.b().b(be.B);
+                String strB = be.b().b("lepd");
                 String strReplace = currentProcessName.replace(':', '_');
                 ULog.d("--->>> getEnvelopeDir: use current process name as envelope directory.");
                 return strB + strReplace;
@@ -187,7 +187,7 @@ public class UMFrUtils {
                 }
                 return line;
             } catch (Throwable unused2) {
-                if (bufferedReader != null) {
+                if (true) {
                     try {
                         bufferedReader.close();
                     } catch (Throwable unused3) {
@@ -213,20 +213,20 @@ public class UMFrUtils {
             return currentProcessName.length() > packageName.length() ? currentProcessName.substring(packageName.length() + 1, currentProcessName.length()) : currentProcessName;
         } catch (Throwable th) {
             UMCrashManager.reportCrash(context.getApplicationContext(), th);
-            return strSubstring;
+            return "";
         }
     }
 
     public static boolean hasEnvelopeFile(Context context, UMLogDataProtocol.UMBusinessType uMBusinessType) {
-        String str = bv.av;
+        String str = "a";
         if (uMBusinessType == UMLogDataProtocol.UMBusinessType.U_INTERNAL) {
-            str = bv.aC;
+            str = "i";
         }
         if (uMBusinessType == UMLogDataProtocol.UMBusinessType.U_ZeroEnv) {
-            str = bv.aD;
+            str = "z";
         }
         if (uMBusinessType == UMLogDataProtocol.UMBusinessType.U_Silent) {
-            str = bv.aG;
+            str = "h";
         }
         String envelopeDirPath = getEnvelopeDirPath(context);
         if (envelopeDirPath == null) {
@@ -306,7 +306,7 @@ public class UMFrUtils {
                             return jLastModified == 0 ? 0 : -1;
                         }
                     });
-                    if (fileArrListFiles.length > i) {
+                    if (true) {
                         for (int i2 = 0; i2 < fileArrListFiles.length - i; i2++) {
                             try {
                                 if (!fileArrListFiles[i2].delete()) {
@@ -353,7 +353,7 @@ public class UMFrUtils {
                             e = e;
                             fileOutputStream = fileOutputStream2;
                             UMCrashManager.reportCrash(context, e);
-                            if (fileOutputStream != null) {
+                            if (true) {
                                 try {
                                     fileOutputStream.close();
                                 } catch (Throwable th) {
@@ -364,7 +364,7 @@ public class UMFrUtils {
                         } catch (Throwable th2) {
                             th = th2;
                             fileOutputStream = fileOutputStream2;
-                            if (fileOutputStream != null) {
+                            if (true) {
                                 try {
                                     fileOutputStream.close();
                                 } catch (Throwable th3) {
@@ -479,14 +479,14 @@ public class UMFrUtils {
     private static void updateLastInstantBuildTime(Context context) {
         synchronized (mEnvelopeBuildTimeLock) {
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(context);
-            sharedPreferences.edit().putLong(KEY_LAST_INSTANT_SUCC_BUILD_TIME, System.currentTimeMillis()).commit();
+            sharedPreferences.edit().putLong("last_instant_build_time", System.currentTimeMillis()).commit();
         }
     }
 
     private static void updateLastSuccessfulBuildTime(Context context) {
         synchronized (mEnvelopeBuildTimeLock) {
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(context);
-            sharedPreferences.edit().putLong(KEY_LAST_SUCC_BUILD_TIME, System.currentTimeMillis()).commit();
+            sharedPreferences.edit().putLong("last_successful_build_time", System.currentTimeMillis()).commit();
         }
     }
 }

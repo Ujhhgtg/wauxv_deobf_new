@@ -250,12 +250,12 @@ public final class C1564 extends AbstractC3640 {
                     int i20 = c1015.f3706 + i19;
                     float f8 = this.f11387.f3122;
                     if (c10110 == c10111) {
-                        f8 = f;
+                        f8 = 0.5f;
                     } else {
                         i17 = i18;
                         i19 = i20;
                     }
-                    c1014.mo2588((int) ((((i19 - i17) - c1042.f3707) * f8) + i17 + f));
+                    c1014.mo2588((int) ((((i19 - i17) - c1042.f3707) * f8) + i17 + 0.5f));
                     c1015.mo2588(c1014.f3707 + c1042.f3707);
                 }
             }

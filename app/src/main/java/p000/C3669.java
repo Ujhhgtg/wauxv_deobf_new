@@ -66,7 +66,7 @@ public final class C3669 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static C3669 m5299(View view, WindowInsets windowInsets) {
-        windowInsets.getClass();
+        
         C3669 c3669 = new C3669(windowInsets);
         if (view != null && view.isAttachedToWindow()) {
             Field field = AbstractC3578.f11184;

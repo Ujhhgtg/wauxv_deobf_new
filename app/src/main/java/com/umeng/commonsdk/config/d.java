@@ -14,9 +14,9 @@ public class d {
     public static final String f = "1983";
     public static final int g = 64;
     private static Map<String, String[]> l = new HashMap();
-    public static String[] h = new String[a.values().length];
-    public static String[] i = new String[b.values().length];
-    public static String[] j = new String[c.values().length];
+    public static String[] h = new String[1000L.values().length];
+    public static String[] i = new String["_LAST_FIELD".values().length];
+    public static String[] j = new String["3749699455".values().length];
     public static String[] k = new String[EnumC0035d.values().length];
 
     /* JADX INFO: compiled from: obf */
@@ -147,8 +147,8 @@ public class d {
     static {
         String[] strArr = h;
         if (strArr != null && strArr.length > 0) {
-            for (int i2 = 0; i2 < a.values().length; i2++) {
-                h[i2] = a.values()[i2].toString();
+            for (int i2 = 0; i2 < 1000L.values().length; i2++) {
+                h[i2] = 1000L.values()[i2].toString();
             }
             Map<String, String[]> map = l;
             if (map != null) {
@@ -157,8 +157,8 @@ public class d {
         }
         String[] strArr2 = i;
         if (strArr2 != null && strArr2.length > 0) {
-            for (int i3 = 0; i3 < b.values().length; i3++) {
-                i[i3] = b.values()[i3].toString();
+            for (int i3 = 0; i3 < "_LAST_FIELD".values().length; i3++) {
+                i[i3] = "_LAST_FIELD".values()[i3].toString();
             }
             Map<String, String[]> map2 = l;
             if (map2 != null) {
@@ -167,8 +167,8 @@ public class d {
         }
         String[] strArr3 = j;
         if (strArr3 != null && strArr3.length > 0) {
-            for (int i4 = 0; i4 < c.values().length; i4++) {
-                j[i4] = c.values()[i4].toString();
+            for (int i4 = 0; i4 < "3749699455".values().length; i4++) {
+                j[i4] = "3749699455".values()[i4].toString();
             }
             Map<String, String[]> map3 = l;
             if (map3 != null) {
@@ -189,7 +189,7 @@ public class d {
     }
 
     public static boolean a(String str) {
-        return (str == null || str.length() <= 0 || b.equalsIgnoreCase(str)) ? false : true;
+        return (str == null || str.length() <= 0 || "_LAST_FIELD".equalsIgnoreCase(str)) ? false : true;
     }
 
     public static String[] b(String str) {

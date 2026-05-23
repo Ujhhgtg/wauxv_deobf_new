@@ -35,7 +35,7 @@ public abstract class AbstractC1028 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final String m2601(Class cls) {
         if (cls.isArray()) {
-            return AbstractC2784.m4748(m2601(cls.getComponentType()), HttpUrl.PATH_SEGMENT_ENCODE_SET_URI);
+            return AbstractC2784.m4748(m2601(cls.getComponentType()), "[]");
         }
         if (!cls.isPrimitive()) {
             return cls.getName();
@@ -73,7 +73,7 @@ public abstract class AbstractC1028 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static final String m2602(String str) {
         if (str.charAt(0) == '[') {
-            return AbstractC2784.m4748(m2602(str.substring(1)), HttpUrl.PATH_SEGMENT_ENCODE_SET_URI);
+            return AbstractC2784.m4748(m2602(str.substring(1)), "[]");
         }
         if (str.length() == 1) {
             String str2 = (String) f3772.get(str);
@@ -125,7 +125,7 @@ public abstract class AbstractC1028 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static final String m2604(String str) {
-        if (str.endsWith(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI)) {
+        if (str.endsWith("[]")) {
             return AbstractC2784.m4757("[", m2604(str.substring(0, str.length() - 2)));
         }
         String str2 = (String) f3771.get(str);

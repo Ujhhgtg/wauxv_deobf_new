@@ -68,7 +68,7 @@ public final class C1349 {
         int i7 = c1348.f4825;
         boolean z = this.f4833;
         int i8 = this.f4832;
-        int i9 = DialogXBaseRelativeLayout.f932;
+        int i9 = 0;
         C0094 c0095 = this.f4828;
         if (!z) {
             i8 = 0;
@@ -141,7 +141,7 @@ public final class C1349 {
         int i7 = ((i6 >= 30 || (windowSystemUiVisibility & 2) == 0) && (c3665.mo5271(8) || c3665.mo5271(2))) ? i4 : 0;
         int i8 = (z && c3665.mo5271(1)) ? i3 : 0;
         if (i3 == 0 && i4 == 0 && c1646Mo5265.f5580 == 0 && i5 == 0) {
-            int i9 = DialogXBaseRelativeLayout.f932;
+            int i9 = 0;
             AbstractC0027 abstractC0027 = this.f4829;
             Activity activityM740 = abstractC0027 == null ? AbstractC0027.m740() : abstractC0027.m754();
             if (activityM740 != null && activityM740.getResources().getConfiguration().orientation == 2 && (rotation = activityM740.getWindowManager().getDefaultDisplay().getRotation()) != 1 && rotation == 3) {
@@ -164,20 +164,20 @@ public final class C1349 {
             }
         } else {
             this.f4833 = false;
-            this.f4828.getClass();
+            
             c1348.f4823 = Math.max(i8, iM2643) + c1348.f4823;
-            this.f4828.getClass();
+            
             c1348.f4825 = Math.max(i7, iM2642) + c1348.f4825;
             DialogXBaseRelativeLayout dialogXBaseRelativeLayout = this.f4827;
             Field field = AbstractC3578.f11184;
             boolean z2 = dialogXBaseRelativeLayout.getLayoutDirection() == 1;
-            this.f4828.getClass();
+            
             if (z2) {
                 c1348.f4822 = Math.max(i5, iM2644) + c1348.f4822;
             } else {
                 c1348.f4822 = Math.max(i2, iM2641) + c1348.f4822;
             }
-            this.f4828.getClass();
+            
             if (z2) {
                 c1348.f4824 = Math.max(i2, iM2641) + c1348.f4824;
             } else {
@@ -203,7 +203,7 @@ public final class C1349 {
             int i = Build.VERSION.SDK_INT;
             WindowInsetsController windowInsetsController = i >= 30 ? m3058().getWindowInsetsController() : null;
             if (i >= 30 && windowInsetsController != null && (windowInsetsController.getSystemBarsBehavior() & 16) == 0) {
-                int i2 = DialogXBaseRelativeLayout.f932;
+                int i2 = 0;
                 return 0;
             }
             DialogXBaseRelativeLayout dialogXBaseRelativeLayout = this.f4827;

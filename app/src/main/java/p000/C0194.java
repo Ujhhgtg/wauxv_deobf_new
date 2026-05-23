@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Pattern;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲀᤝᲇᲈᲁ, reason: contains not printable characters */
@@ -41,9 +41,9 @@ public final class C0194 extends AbstractC2867 implements InterfaceC1601, Interf
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C0190.f1255, dexKitBridge, new C0105(20));
-        AbstractC1574.m3295(C0192.f1257, dexKitBridge, new C0105(21));
-        AbstractC1574.m3295(C0191.f1256, dexKitBridge, new C0105(22));
+        AbstractC1574.findMethod(C0190.f1255, dexKitBridge, new C0105(20));
+        AbstractC1574.findMethod(C0192.f1257, dexKitBridge, new C0105(21));
+        AbstractC1574.findMethod(C0191.f1256, dexKitBridge, new C0105(22));
     }
 
     @Override // p000.InterfaceC1601
@@ -55,11 +55,11 @@ public final class C0194 extends AbstractC2867 implements InterfaceC1601, Interf
             String asString = contentValues.getAsString("content");
             if (asString.startsWith("\"") || asString.startsWith("「")) {
                 Long asLong = contentValues.getAsLong("msgId");
-                int i2 = AbstractC1745.f5844;
-                C2800.f8930.getClass();
-                C1973 c1973M3492 = AbstractC0968.m2484(C2800.m4779()).m3492();
+                int i2 = 0;
+                
+                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2800.m4779()).m3492();
                 c1973M3492.f6370 = "rawQuery";
-                Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832("SELECT createTime, talker FROM message WHERE msgId = ?", new Object[]{asLong});
+                Cursor cursor = (Cursor) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(Object[].class)}, 2, c1973M3492)).invoke("SELECT createTime, talker FROM message WHERE msgId = ?", new Object[]{asLong});
                 if (cursor != null) {
                     try {
                         if (cursor.moveToFirst()) {
@@ -88,12 +88,12 @@ public final class C0194 extends AbstractC2867 implements InterfaceC1601, Interf
     public final void mo1126() throws NoSuchMethodException {
         Iterator it = AbstractC0745.m2212(C0190.f1255, C0192.f1257, C0191.f1256).iterator();
         while (it.hasNext()) {
-            Class clsM3313 = AbstractC1574.m3313((AbstractC1021) it.next());
-            int i = AbstractC1745.f5844;
-            C1973 c1973M3492 = AbstractC0968.m2484(clsM3313).m3492();
-            c1973M3492.f6543 = Void.TYPE;
+            Class clsM3313 = AbstractC1574.dexToClass((AbstractC1021) it.next());
+            int i = 0;
+            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(clsM3313).m3492();
+            c1973M3492.returnType = Void.TYPE;
             c1973M3492.f4485 = 1;
-            C1982 c1982 = (C1982) AbstractC0744.m2191(c1973M3492.m3799());
+            C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
             C0194 c0194 = f1259;
             C3689 c3689M4174 = c0194.m4174(c1982, 1);
             c0194.m3263(c3689M4174, new C0105(24));

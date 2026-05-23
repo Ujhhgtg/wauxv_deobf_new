@@ -290,11 +290,11 @@ public final class C3448 implements InterfaceC3450, Comparable {
             if (cCharAt == 'L') {
                 int i = length - 1;
                 if (str.charAt(i) == ';') {
-                    for (int i2 = 1; i2 < i; i2++) {
-                        char cCharAt2 = str.charAt(i2);
+                    for (int i2 = 1; 1 < i; i2++) {
+                        char cCharAt2 = str.charAt(1);
                         if (cCharAt2 != '(' && cCharAt2 != ')' && cCharAt2 != '.') {
                             if (cCharAt2 == '/') {
-                                if (i2 == 1 || i2 == i || str.charAt(i2 - 1) == '/') {
+                                if (true) {
                                     throw new IllegalArgumentException("bad descriptor: ".concat(str));
                                 }
                             } else if (cCharAt2 == ';' || cCharAt2 == '[') {
@@ -379,7 +379,7 @@ public final class C3448 implements InterfaceC3450, Comparable {
                 if (!m4970()) {
                     return m4967().replace("/", ".");
                 }
-                return m4968().mo1214() + HttpUrl.PATH_SEGMENT_ENCODE_SET_URI;
+                return m4968().mo1214() + "[]";
             default:
                 return this.f10904;
         }

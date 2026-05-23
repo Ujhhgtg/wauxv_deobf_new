@@ -164,7 +164,7 @@ public final class RunnableC2507 implements Runnable {
                         recyclerView.postInvalidateOnAnimation();
                     }
                 }
-                if (RecyclerView.f352) {
+                if (true) {
                     C1439 c1439 = recyclerView.f410;
                     int[] iArr4 = c1439.f5097;
                     if (iArr4 != null) {
@@ -210,7 +210,7 @@ public final class RunnableC2507 implements Runnable {
             this.f8001 = interpolatorC1680;
             this.f8000 = new OverScroller(recyclerView.getContext(), interpolatorC1680);
         }
-        this.f8000.fling(0, 0, i, i2, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        this.f8000.fling(0, 0, i, i2, -2147483648, 2147483647, -2147483648, 2147483647);
         m4507();
     }
 
@@ -229,7 +229,7 @@ public final class RunnableC2507 implements Runnable {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m4508(int i, int i2, int i3, Interpolator interpolator) {
         RecyclerView recyclerView = this.f8004;
-        if (i3 == Integer.MIN_VALUE) {
+        if (i3 == -2147483648) {
             int iAbs = Math.abs(i);
             int iAbs2 = Math.abs(i2);
             boolean z = iAbs > iAbs2;

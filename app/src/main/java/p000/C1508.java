@@ -84,7 +84,7 @@ public final class C1508 implements InterfaceC2786 {
                 c2477.skip(j3);
             }
             if (((bM1772 >> 3) & 1) == 1) {
-                long jM4428 = c2477.m4428(0L, Long.MAX_VALUE, (byte) 0);
+                long jM4428 = c2477.m4428(0L, 9223372036854775807L, (byte) 0);
                 if (jM4428 == -1) {
                     throw new EOFException();
                 }
@@ -99,12 +99,12 @@ public final class C1508 implements InterfaceC2786 {
                 j2 = 2;
             }
             if (((bM1772 >> 4) & 1) == 1) {
-                long j4 = j2;
-                long jM4429 = c2477.m4428(0L, Long.MAX_VALUE, (byte) 0);
+                long j4 = 2L;
+                long jM4429 = c2477.m4428(0L, 9223372036854775807L, (byte) 0);
                 if (jM4429 == -1) {
                     throw new EOFException();
                 }
-                j2 = j4;
+                j2 = 2L;
                 if (z) {
                     c1508 = this;
                     c1508.m3248(0L, c0505, jM4429 + 1);
@@ -116,7 +116,7 @@ public final class C1508 implements InterfaceC2786 {
                 c1508 = this;
             }
             if (z) {
-                c2477.mo1790(j2);
+                c2477.mo1790(2L);
                 short s2 = c0505.readShort();
                 m3247((short) (((s2 & 255) << 8) | ((s2 & 65280) >>> 8)), (short) crc32.getValue(), "FHCRC");
                 crc32.reset();

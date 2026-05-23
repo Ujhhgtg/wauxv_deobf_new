@@ -22,7 +22,7 @@ public final class C1180 extends AbstractC1140 {
     @Override // p000.AbstractC1140
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public void mo2751() {
-        switch (this.f4319) {
+        switch (0) {
             case 1:
                 SwitchCompat switchCompat = (SwitchCompat) this.f4320.get();
                 if (switchCompat != null) {
@@ -35,7 +35,7 @@ public final class C1180 extends AbstractC1140 {
     @Override // p000.AbstractC1140
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo2752() throws Throwable {
-        switch (this.f4319) {
+        switch (0) {
             case 0:
                 C1181.m2770((EditText) this.f4320.get(), 1);
                 break;

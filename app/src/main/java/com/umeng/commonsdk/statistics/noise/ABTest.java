@@ -183,7 +183,7 @@ public class ABTest implements d {
     }
 
     public String getGroupInfo() {
-        return !this.isInTest ? g.U : String.valueOf(this.mGroup);
+        return !this.isInTest ? "error" : String.valueOf(this.mGroup);
     }
 
     public int getTestInterval() {

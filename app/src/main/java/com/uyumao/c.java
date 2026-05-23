@@ -31,14 +31,14 @@ public class c {
             try {
                 jSONObject.put("ak", UMUtils.getAppkey(context));
                 if (UMUtils.getUMId(context) == null) {
-                    jSONObject.put(bv.g, "");
+                    jSONObject.put("umid", "");
                 } else {
-                    jSONObject.put(bv.g, UMUtils.getUMId(context));
+                    jSONObject.put("umid", UMUtils.getUMId(context));
                 }
                 if (UMUtils.getActiveUser(context) == null || UMUtils.getActiveUser(context).length != 2) {
-                    jSONObject.put(com.umeng.analytics.pro.g.N, "");
+                    jSONObject.put("puid", "");
                 } else {
-                    jSONObject.put(com.umeng.analytics.pro.g.N, UMUtils.getActiveUser(context)[1]);
+                    jSONObject.put("puid", UMUtils.getActiveUser(context)[1]);
                 }
                 if (DeviceConfig.getAndroidId(context) == null) {
                     jSONObject.put("aid", "");
@@ -54,16 +54,16 @@ public class c {
                 jSONObject.put("idfa", DeviceConfig.getIdfa(context));
                 jSONObject.put("db", Build.BRAND);
                 jSONObject.put("dm", Build.MODEL);
-                jSONObject.put(bv.x, AnalyticsConstants.SDK_TYPE);
+                jSONObject.put("os", "Android");
                 jSONObject.put("ov", Build.VERSION.RELEASE);
                 jSONObject.put("sv", "1.1.4");
                 jSONObject.put("av", DeviceConfig.getAppVersionName(context));
                 jSONObject.put("chn", UMUtils.getChannel(context));
                 jSONObject.put("cts", System.currentTimeMillis());
                 jSONObject.put("pkg", DeviceConfig.getPackageName(context));
-                String string = context.getSharedPreferences("uyumao_info", 0).getString(be.c, "");
+                String string = context.getSharedPreferences("uyumao_info", 0).getString("imp", "");
                 if (!TextUtils.isEmpty(string)) {
-                    jSONObject.put(be.c, string);
+                    jSONObject.put("imp", string);
                 }
             } catch (Throwable th) {
                 th = th;
@@ -129,8 +129,8 @@ public class c {
         }
         try {
             JSONObject jSONObject2 = new JSONObject(strA);
-            if (jSONObject2.has(be.c)) {
-                context.getSharedPreferences("uyumao_info", 0).edit().putString(be.c, jSONObject2.optString(be.c)).apply();
+            if (jSONObject2.has("imp")) {
+                context.getSharedPreferences("uyumao_info", 0).edit().putString("imp", jSONObject2.optString("imp")).apply();
             }
             if (z) {
                 if (jSONObject2.has("resp_code") && jSONObject2.optInt("resp_code") == 0) {

@@ -11,10 +11,10 @@ public final class C1020 {
     public final DexKitBridge f3731;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
-    public InterfaceC1425 f3732;
+    public InterfaceC1425 declaringClassMatcher;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
-    public InterfaceC1425 f3733;
+    public InterfaceC1425 thisMethodMatcher;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public InterfaceC1425 f3734;

@@ -57,7 +57,7 @@ public final class C1706 {
         try {
             EnumC3672 enumC3672 = EnumC3672.OBJ;
             C2829[] c2829Arr = new C2829[EnumC3672.f11466.mo943()];
-            this.f5799.getClass();
+            
             new C2829(new C0452(c0408), this, enumC3672, c2829Arr).mo2798(c0258, obj);
             return c0408.toString();
         } finally {

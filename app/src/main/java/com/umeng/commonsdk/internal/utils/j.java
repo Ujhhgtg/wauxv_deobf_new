@@ -8,7 +8,7 @@ import com.umeng.analytics.pro.be;
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class j {
-    private static final String a = be.b().b(be.r);
+    private static final String a = be.b().b("pri");
     private static final String b = "um_common_strength";
     private static final String c = "um_common_battery";
 
@@ -17,7 +17,7 @@ public class j {
         if (context == null || (sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0)) == null) {
             return null;
         }
-        return sharedPreferences.getString(c, null);
+        return sharedPreferences.getString("um_common_battery", null);
     }
 
     public static void a(Context context, String str) {
@@ -25,6 +25,6 @@ public class j {
         if (context == null || TextUtils.isEmpty(str) || (sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0)) == null) {
             return;
         }
-        sharedPreferences.edit().putString(c, str).commit();
+        sharedPreferences.edit().putString("um_common_battery", str).commit();
     }
 }

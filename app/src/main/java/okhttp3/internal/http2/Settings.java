@@ -53,14 +53,14 @@ public final class Settings {
     }
 
     public final int getInitialWindowSize() {
-        return (this.set & 128) != 0 ? this.values[7] : DEFAULT_INITIAL_WINDOW_SIZE;
+        return (this.set & 128) != 0 ? this.values[7] : 65535;
     }
 
     public final int getMaxConcurrentStreams() {
         if ((this.set & 16) != 0) {
             return this.values[4];
         }
-        return Integer.MAX_VALUE;
+        return 2147483647;
     }
 
     public final int getMaxFrameSize(int i) {

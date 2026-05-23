@@ -151,7 +151,7 @@ public final class C1506 extends C0793 {
             return;
         }
         C0779 c0779 = this.f5320;
-        c1791.getClass();
+        
         int iM3529 = C1791.m3529(c0779);
         if (this.f5321 == 1) {
             this.f3117 = iM3529;

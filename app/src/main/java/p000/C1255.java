@@ -11,7 +11,7 @@ import java.io.InputStream;
 public final class C1255 extends FilterInputStream {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
-    public static final byte[] f4569 = {-1, -31, 0, 28, 69, JSONB.Constants.BC_STR_ASCII_FIX_MAX, JSONB.Constants.BC_STR_ASCII_FIX_32, 102, 0, 0, JSONB.Constants.BC_STR_ASCII_FIX_4, JSONB.Constants.BC_STR_ASCII_FIX_4, 0, 0, 0, 0, 0, 8, 0, 1, 1, 18, 0, 2, 0, 0, 0, 1, 0};
+    public static final byte[] f4569 = {-1, -31, 0, 28, 69, 120, 105, 102, 0, 0, 77, 77, 0, 0, 0, 0, 0, 8, 0, 1, 1, 18, 0, 2, 0, 0, 0, 1, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static final int f4570 = 31;
@@ -45,10 +45,10 @@ public final class C1255 extends FilterInputStream {
         int i;
         int i2;
         int i3 = this.f4572;
-        if (i3 < 2 || i3 > (i2 = f4570)) {
+        if (i3 < 2 || i3 > (i2 = 31)) {
             i = super.read();
         } else {
-            i = i3 == i2 ? this.f4571 : f4569[i3 - 2] & 255;
+            i = i3 == 31 ? this.f4571 : f4569[i3 - 2] & 255;
         }
         if (i != -1) {
             this.f4572++;
@@ -74,16 +74,16 @@ public final class C1255 extends FilterInputStream {
     public final int read(byte[] bArr, int i, int i2) throws IOException {
         int i3;
         int i4 = this.f4572;
-        int i5 = f4570;
-        if (i4 > i5) {
+        int i5 = 31;
+        if (i4 > 31) {
             i3 = super.read(bArr, i, i2);
-        } else if (i4 == i5) {
+        } else if (i4 == 31) {
             bArr[i] = this.f4571;
             i3 = 1;
         } else if (i4 < 2) {
             i3 = super.read(bArr, i, 2 - i4);
         } else {
-            int iMin = Math.min(i5 - i4, i2);
+            int iMin = Math.min(31 - i4, i2);
             System.arraycopy(f4569, this.f4572 - 2, bArr, i, iMin);
             i3 = iMin;
         }

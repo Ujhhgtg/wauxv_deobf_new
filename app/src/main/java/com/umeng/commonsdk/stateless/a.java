@@ -9,8 +9,8 @@ public class a {
     public static String b = "";
     public static long c = 2097152;
     public static long d = 204800;
-    public static final String e = be.b().b(be.x);
-    public static final String f = be.b().b(be.y);
+    public static final String e = be.b().b("sta");
+    public static final String f = be.b().b("emi");
     public static String g = "https://ulogs.umeng.com";
     public static String h = "https://ulogs.umeng.com";
     public static String i = "https://ulogs.umeng.com";

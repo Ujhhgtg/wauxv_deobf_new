@@ -52,7 +52,7 @@ public final class C2014 {
     }
 
     public String toString() {
-        switch (this.f6713) {
+        switch (1) {
             case 1:
                 JSONObject jSONObject = (JSONObject) this.f6721;
                 if (jSONObject != null) {
@@ -220,7 +220,7 @@ public final class C2014 {
                 e.printStackTrace();
                 return;
             }
-        } while (next != 1);
+        } while (true);
     }
 
     public C2014(LinearLayout linearLayout, MaterialCheckBox materialCheckBox, MaterialCheckBox materialCheckBox2, MaterialCheckBox materialCheckBox3, MaterialCheckBox materialCheckBox4, TextInputEditText textInputEditText, TextInputEditText textInputEditText2, TextInputEditText textInputEditText3, TextInputEditText textInputEditText4) {

@@ -153,7 +153,7 @@ public final class C0662 implements InterfaceC0541 {
             throw new NullPointerException("cst == null");
         }
         c2597.f11048 = c0918;
-        c2597.m4619((C0243) this.f2531, i, Opcodes.NEWARRAY);
+        c2597.m4619((C0243) this.f2531, i, 188);
     }
 
     /* JADX WARN: Code duplicated, block: B:41:0x00b9  */
@@ -287,22 +287,22 @@ public final class C0662 implements InterfaceC0541 {
                 abstractC0778 = abstractC0777;
             } else if (i != 192 && i != 193) {
                 switch (i) {
-                    case Opcodes.PUTSTATIC /* 179 */:
+                    case 179 /* 179 */:
                         c2597.m5119((C0243) this.f2531, ((C0899) abstractC0777).f3369.m2428());
                         abstractC0778 = abstractC0777;
                         break;
-                    case Opcodes.GETFIELD /* 180 */:
+                    case 180 /* 180 */:
                         c2597.m5119((C0243) this.f2531, C3448.f10882);
                         abstractC0778 = abstractC0777;
                         break;
-                    case Opcodes.PUTFIELD /* 181 */:
+                    case 181 /* 181 */:
                         c2597.m5120((C0243) this.f2531, C3448.f10882, ((C0899) abstractC0777).f3369.m2428());
                         abstractC0778 = abstractC0777;
                         break;
-                    case Opcodes.INVOKEVIRTUAL /* 182 */:
-                    case Opcodes.INVOKESPECIAL /* 183 */:
-                    case Opcodes.INVOKESTATIC /* 184 */:
-                    case Opcodes.INVOKEINTERFACE /* 185 */:
+                    case 182 /* 182 */:
+                    case 183 /* 183 */:
+                    case 184 /* 184 */:
+                    case 185 /* 185 */:
                         boolean z = abstractC0777 instanceof C0904;
                         AbstractC0777 abstractC0779 = abstractC0777;
                         if (z) {
@@ -339,7 +339,7 @@ public final class C0662 implements InterfaceC0541 {
                         break;
                     case 186:
                         if (!zM2002) {
-                            c1676.m3405(String.format("invalid opcode %02x - invokedynamic requires --min-sdk-version >= %d (currently %d)", Integer.valueOf(i), 26, 13));
+                            c1676.m3405(String.format("invalid opcode %02x - invokedynamic requires --min-sdk-version >= %d (currently %d)", Integer.valueOf(186), 26, 13));
                             throw null;
                         }
                         C0905 c0905 = (C0905) abstractC0777;
@@ -477,7 +477,7 @@ public final class C0662 implements InterfaceC0541 {
         c2597.m5119((C0243) this.f2531, C3448.f10871);
         c2597.f11047 = i3;
         c2597.f11050 = c1242;
-        c2597.m4619((C0243) this.f2531, i, Opcodes.LOOKUPSWITCH);
+        c2597.m4619((C0243) this.f2531, i, 171);
     }
 
     @Override // p000.InterfaceC0541
@@ -491,30 +491,30 @@ public final class C0662 implements InterfaceC0541 {
     public void mo1590(int i, int i2, int i3, int i4) {
         C2597 c2597 = (C2597) this.f2530;
         switch (i) {
-            case Opcodes.IFEQ /* 153 */:
-            case Opcodes.IFNE /* 154 */:
-            case Opcodes.IFLT /* 155 */:
-            case Opcodes.IFGE /* 156 */:
-            case Opcodes.IFGT /* 157 */:
-            case Opcodes.IFLE /* 158 */:
+            case 153 /* 153 */:
+            case 154 /* 154 */:
+            case 155 /* 155 */:
+            case 156 /* 156 */:
+            case 157 /* 157 */:
+            case 158 /* 158 */:
                 c2597.m5119((C0243) this.f2531, C3448.f10871);
                 c2597.f11049 = i4;
                 c2597.m4619((C0243) this.f2531, i2, i);
                 return;
-            case Opcodes.IF_ICMPEQ /* 159 */:
-            case Opcodes.IF_ICMPNE /* 160 */:
-            case Opcodes.IF_ICMPLT /* 161 */:
-            case Opcodes.IF_ICMPGE /* 162 */:
-            case Opcodes.IF_ICMPGT /* 163 */:
-            case Opcodes.IF_ICMPLE /* 164 */:
+            case 159 /* 159 */:
+            case 160 /* 160 */:
+            case 161 /* 161 */:
+            case 162 /* 162 */:
+            case 163 /* 163 */:
+            case 164 /* 164 */:
                 C0243 c0243 = (C0243) this.f2531;
                 C3448 c3448 = C3448.f10871;
                 c2597.m5120(c0243, c3448, c3448);
                 c2597.f11049 = i4;
                 c2597.m4619((C0243) this.f2531, i2, i);
                 return;
-            case Opcodes.IF_ACMPEQ /* 165 */:
-            case Opcodes.IF_ACMPNE /* 166 */:
+            case 165 /* 165 */:
+            case 166 /* 166 */:
                 C0243 c0244 = (C0243) this.f2531;
                 C3448 c3449 = C3448.f10882;
                 c2597.m5120(c0244, c3449, c3449);
@@ -523,8 +523,8 @@ public final class C0662 implements InterfaceC0541 {
                 return;
             default:
                 switch (i) {
-                    case Opcodes.IFNULL /* 198 */:
-                    case Opcodes.IFNONNULL /* 199 */:
+                    case 198 /* 198 */:
+                    case 199 /* 199 */:
                         c2597.m5119((C0243) this.f2531, C3448.f10882);
                         break;
                     case 200:
@@ -537,8 +537,8 @@ public final class C0662 implements InterfaceC0541 {
                 c2597.f11049 = i4;
                 c2597.m4619((C0243) this.f2531, i2, i);
                 return;
-            case Opcodes.GOTO /* 167 */:
-            case Opcodes.JSR /* 168 */:
+            case 167 /* 167 */:
+            case 168 /* 168 */:
                 c2597.m5115();
                 c2597.f11049 = i4;
                 c2597.m4619((C0243) this.f2531, i2, i);
@@ -567,7 +567,7 @@ public final class C0662 implements InterfaceC0541 {
                 case 0:
                     c2597.m5115();
                     break;
-                case Opcodes.IALOAD /* 46 */:
+                case 46 /* 46 */:
                     C3448 c3448M3404 = C1676.m3404(c3448, ((C1242) ((C0243) this.f2531).f1405).m2899(1));
                     C3448 c3448M4968 = C3448.f10875;
                     if (c3448M3404 != c3448M4968) {
@@ -576,7 +576,7 @@ public final class C0662 implements InterfaceC0541 {
                     c2597.m5120((C0243) this.f2531, c3448M3404, C3448.f10871);
                     c3448 = c3448M4968;
                     break;
-                case Opcodes.IASTORE /* 79 */:
+                case 79 /* 79 */:
                     C1242 c1242 = (C1242) ((C0243) this.f2531).f1405;
                     int i3 = c3448.m4971() ? 2 : 3;
                     C3448 c3448M28910 = c1242.m2899(i3);
@@ -604,41 +604,41 @@ public final class C0662 implements InterfaceC0541 {
                     break;
                 case 100:
                 case 104:
-                case Opcodes.IDIV /* 108 */:
+                case 108 /* 108 */:
                 case 112:
                 case 126:
                 case 128:
-                case Opcodes.IXOR /* 130 */:
+                case 130 /* 130 */:
                     c2597.m5120((C0243) this.f2531, c3448, c3448);
                     break;
-                case Opcodes.INEG /* 116 */:
+                case 116 /* 116 */:
                     c2597.m5119((C0243) this.f2531, c3448);
                     break;
                 case 120:
                 case 122:
-                case Opcodes.IUSHR /* 124 */:
+                case 124 /* 124 */:
                     c2597.m5120((C0243) this.f2531, c3448, C3448.f10871);
                     break;
-                case Opcodes.IRETURN /* 172 */:
+                case 172 /* 172 */:
                     C3448 c3448M28911 = c3448 == C3448.f10882 ? ((C1242) ((C0243) this.f2531).f1405).m2899(0) : c3448;
                     c2597.m5119((C0243) this.f2531, c3448);
                     m2051(c3448M28911);
                     break;
-                case Opcodes.RETURN /* 177 */:
+                case 177 /* 177 */:
                     c2597.m5115();
                     m2051(C3448.f10874);
                     break;
                 default:
                     int i5 = 17;
                     switch (i) {
-                        case Opcodes.POP /* 87 */:
+                        case 87 /* 87 */:
                             if (((C1242) ((C0243) this.f2531).f1405).m2899(0).m4972()) {
                                 throw C1676.m3403();
                             }
                             c2597.m5117((C0243) this.f2531, 1);
                             break;
-                        case Opcodes.POP2 /* 88 */:
-                        case Opcodes.DUP2 /* 92 */:
+                        case 88 /* 88 */:
+                        case 92 /* 92 */:
                             C1242 c1243 = (C1242) ((C0243) this.f2531).f1405;
                             if (c1243.m2899(0).m4972()) {
                                 c2597.m5117((C0243) this.f2531, 1);
@@ -653,7 +653,7 @@ public final class C0662 implements InterfaceC0541 {
                                 c2597.f11047 = i5;
                             }
                             break;
-                        case Opcodes.DUP /* 89 */:
+                        case 89 /* 89 */:
                             if (((C1242) ((C0243) this.f2531).f1405).m2899(0).m4972()) {
                                 throw C1676.m3403();
                             }
@@ -729,7 +729,7 @@ public final class C0662 implements InterfaceC0541 {
                                 c2597.f11047 = 12819;
                             }
                             break;
-                        case Opcodes.SWAP /* 95 */:
+                        case 95 /* 95 */:
                             C1242 c1248 = (C1242) ((C0243) this.f2531).f1405;
                             if (!c1248.m2899(0).m4971() || !c1248.m2899(1).m4971()) {
                                 throw C1676.m3403();
@@ -738,47 +738,47 @@ public final class C0662 implements InterfaceC0541 {
                             c2597.f11047 = 18;
                             break;
                             break;
-                        case Opcodes.IADD /* 96 */:
+                        case 96 /* 96 */:
                             c2597.m5120((C0243) this.f2531, c3448, c3448);
                             break;
                         default:
                             switch (i) {
-                                case Opcodes.I2L /* 133 */:
-                                case Opcodes.I2F /* 134 */:
-                                case Opcodes.I2D /* 135 */:
-                                case Opcodes.I2B /* 145 */:
-                                case Opcodes.I2C /* 146 */:
-                                case Opcodes.I2S /* 147 */:
+                                case 133 /* 133 */:
+                                case 134 /* 134 */:
+                                case 135 /* 135 */:
+                                case 145 /* 145 */:
+                                case 146 /* 146 */:
+                                case 147 /* 147 */:
                                     c2597.m5119((C0243) this.f2531, C3448.f10871);
                                     break;
-                                case Opcodes.L2I /* 136 */:
+                                case 136 /* 136 */:
                                 case 137:
                                 case 138:
                                     c2597.m5119((C0243) this.f2531, C3448.f10872);
                                     break;
-                                case Opcodes.F2I /* 139 */:
-                                case Opcodes.F2L /* 140 */:
+                                case 139 /* 139 */:
+                                case 140 /* 140 */:
                                 case 141:
                                     c2597.m5119((C0243) this.f2531, C3448.f10870);
                                     break;
-                                case Opcodes.D2I /* 142 */:
-                                case Opcodes.D2L /* 143 */:
+                                case 142 /* 142 */:
+                                case 143 /* 143 */:
                                 case 144:
                                     c2597.m5119((C0243) this.f2531, C3448.f10869);
                                     break;
-                                case Opcodes.LCMP /* 148 */:
+                                case 148 /* 148 */:
                                     C0243 c0244 = (C0243) this.f2531;
                                     C3448 c34410 = C3448.f10872;
                                     c2597.m5120(c0244, c34410, c34410);
                                     break;
-                                case Opcodes.FCMPL /* 149 */:
-                                case Opcodes.FCMPG /* 150 */:
+                                case 149 /* 149 */:
+                                case 150 /* 150 */:
                                     C0243 c0245 = (C0243) this.f2531;
                                     C3448 c34411 = C3448.f10870;
                                     c2597.m5120(c0245, c34411, c34411);
                                     break;
-                                case Opcodes.DCMPL /* 151 */:
-                                case Opcodes.DCMPG /* 152 */:
+                                case 151 /* 151 */:
+                                case 152 /* 152 */:
                                     C0243 c0246 = (C0243) this.f2531;
                                     C3448 c34412 = C3448.f10869;
                                     c2597.m5120(c0246, c34412, c34412);
@@ -884,7 +884,7 @@ public final class C0662 implements InterfaceC0541 {
         AbstractC0777 abstractC0777;
         C0516 c0516 = (C0516) this.f2530;
         C2815 c2815 = (C2815) this.f2531;
-        c2815.getClass();
+        
         AbstractC0777[] abstractC0777Arr = c2815.f9024;
         try {
             AbstractC0777 abstractC0778 = abstractC0777Arr[i];
@@ -900,7 +900,7 @@ public final class C0662 implements InterfaceC0541 {
                         bitSet.set(i);
                         abstractC0777M2420 = c0917M2058;
                         c2815.m3925();
-                        if (abstractC0777M2420 == null && abstractC0777M2420.mo2268()) {
+                        if (false && abstractC0777M2420.mo2268()) {
                             z = true;
                         } else {
                             z = false;
@@ -908,27 +908,27 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null && abstractC0777Arr[i] == null && (abstractC0777 = abstractC0777Arr[(i3 = i - 1)]) != null && abstractC0777.mo2268()) {
+                        if (true && abstractC0777Arr[0] == null && (abstractC0777 = abstractC0777Arr[(i3 = -1)]) != null && abstractC0777.mo2268()) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 2:
                     case 13:
-                    case Opcodes.DCONST_0 /* 14 */:
-                    case Opcodes.SIPUSH /* 17 */:
+                    case 14 /* 14 */:
+                    case 17 /* 17 */:
                     default:
                         throw new C2331("unknown tag byte: ".concat(AbstractC1460.m3222(iM1815)), null);
                     case 3:
                         abstractC0777M2420 = C0903.m2420(c0516.m1812(i4 + 1));
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -936,21 +936,21 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 4:
                         abstractC0777M2420 = new C0900(c0516.m1812(i4 + 1));
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -958,22 +958,22 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 5:
                         c0910 = new C0910(c0516.m1813(i4 + 1));
                         abstractC0777M2420 = c0910;
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -981,22 +981,22 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 6:
                         c0910 = new C0897(c0516.m1813(i4 + 1));
                         abstractC0777M2420 = c0910;
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1004,21 +1004,21 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 7:
                         abstractC0777M2420 = new C0918(C3448.m4962(((C0917) m2056(bitSet, c0516.m1817(i4 + 1))).f3378));
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1026,16 +1026,16 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 8:
                         abstractC0777M2420 = m2056(bitSet, c0516.m1817(i4 + 1));
@@ -1048,7 +1048,7 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
@@ -1057,12 +1057,12 @@ public final class C0662 implements InterfaceC0541 {
                         if (abstractC0777M2420 != null) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 9:
                         abstractC0777M2420 = new C0899((C0918) m2056(bitSet, c0516.m1817(i4 + 1)), (C0914) m2056(bitSet, c0516.m1817(i4 + 3)));
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1070,21 +1070,21 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 10:
                         abstractC0777M2420 = new C0913((C0918) m2056(bitSet, c0516.m1817(i4 + 1)), (C0914) m2056(bitSet, c0516.m1817(i4 + 3)));
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1092,23 +1092,23 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 11:
                         C0904 c0904 = new C0904((C0918) m2056(bitSet, c0516.m1817(i4 + 1)), (C0914) m2056(bitSet, c0516.m1817(i4 + 3)));
                         c0904.f3356 = null;
                         abstractC0777M2420 = c0904;
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1116,21 +1116,21 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                         abstractC0777M2420 = new C0914((C0917) m2056(bitSet, c0516.m1817(i4 + 1)), (C0917) m2056(bitSet, c0516.m1817(i4 + 3)));
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1138,16 +1138,16 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 15:
                         int iM1816 = c0516.m1815(i4 + 1);
@@ -1209,7 +1209,7 @@ public final class C0662 implements InterfaceC0541 {
                         }
                         abstractC0777M2420 = C0912.m2427(i2, abstractC0777M2056);
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1217,21 +1217,21 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                     case 16:
                         abstractC0777M2420 = new C0915(C2440.m4419(((C0917) m2056(bitSet, c0516.m1817(i4 + 1))).f3378));
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1239,21 +1239,21 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
-                    case Opcodes.LDC /* 18 */:
+                    case 18 /* 18 */:
                         abstractC0777M2420 = new C0905(c0516.m1817(i4 + 1), (C0914) m2056(bitSet, c0516.m1817(i4 + 3)));
                         c2815.m3925();
-                        if (abstractC0777M2420 == null) {
+                        if (false) {
                             z = false;
                         } else {
                             z = false;
@@ -1261,16 +1261,16 @@ public final class C0662 implements InterfaceC0541 {
                         if (i >= 1) {
                             throw new IllegalArgumentException("n < 1");
                         }
-                        if (z) {
+                        if (false) {
                             if (i != abstractC0777Arr.length - 1) {
                                 throw new IllegalArgumentException("(n == size - 1) && cst.isCategory2()");
                             }
                             abstractC0777Arr[i + 1] = null;
                         }
-                        if (abstractC0777M2420 != null) {
+                        if (true) {
                             abstractC0777Arr[i3] = null;
                         }
-                        abstractC0777Arr[i] = abstractC0777M2420;
+                        abstractC0777Arr[0] = abstractC0777M2420;
                         return abstractC0777M2420;
                 }
             } catch (C2331 e) {
@@ -1303,8 +1303,8 @@ public final class C0662 implements InterfaceC0541 {
                         break;
                     case 2:
                     case 13:
-                    case Opcodes.DCONST_0 /* 14 */:
-                    case Opcodes.SIPUSH /* 17 */:
+                    case 14 /* 14 */:
+                    case 17 /* 17 */:
                     default:
                         throw new C2331("unknown tag byte: " + AbstractC1460.m3222(iM1815), null);
                     case 3:
@@ -1312,8 +1312,8 @@ public final class C0662 implements InterfaceC0541 {
                     case 9:
                     case 10:
                     case 11:
-                    case Opcodes.FCONST_1 /* 12 */:
-                    case Opcodes.LDC /* 18 */:
+                    case 12 /* 12 */:
+                    case 18 /* 18 */:
                         try {
                             iM1817 += 5;
                         } catch (C2331 e) {
@@ -1338,14 +1338,14 @@ public final class C0662 implements InterfaceC0541 {
                         break;
                 }
                 i = 1;
-                i2 += i;
+                i2 += 1;
             }
             this.f2529 = iM1817;
             BitSet bitSet = new BitSet(iArr.length);
             for (int i3 = 1; i3 < iArr.length; i3++) {
                 if (iArr[i3] != 0) {
                     C2815 c2815 = (C2815) this.f2531;
-                    c2815.getClass();
+                    
                     try {
                         if (c2815.f9024[i3] == null) {
                             m2056(bitSet, i3);
@@ -1391,7 +1391,7 @@ public final class C0662 implements InterfaceC0541 {
             return;
         }
         AbstractC2205 abstractC2205 = AbstractC1034.f3778;
-        maxRelativeLayout.getClass();
+        
         int i3 = c0943.f921;
         int i4 = 0;
         if (i3 == 0) {
@@ -1448,7 +1448,7 @@ public final class C0662 implements InterfaceC0541 {
                 layoutParams.addRule(14);
                 break;
             case 7:
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 layoutParams.removeRule(13);
                 layoutParams.addRule(12);
                 break;
@@ -1465,7 +1465,7 @@ public final class C0662 implements InterfaceC0541 {
                 layoutParams.addRule(15);
                 break;
             case 13:
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 layoutParams.removeRule(13);
                 layoutParams.addRule(11);
                 layoutParams.addRule(15);
@@ -1476,7 +1476,7 @@ public final class C0662 implements InterfaceC0541 {
         if (!c0943.f3453) {
             dialogXBaseRelativeLayout.setClickable(false);
         } else if (c0943.f915) {
-            dialogXBaseRelativeLayout.setOnClickListener(new ViewOnClickListenerC0940(i4, this));
+            dialogXBaseRelativeLayout.setOnClickListener(new ViewOnClickListenerC0940(0, this));
         } else {
             dialogXBaseRelativeLayout.setOnClickListener(null);
         }

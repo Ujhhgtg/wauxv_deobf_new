@@ -10,7 +10,7 @@ public final class C1993 extends C1870 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo3651(Object obj, Object obj2) {
         C1994 c1994 = (C1994) obj;
-        c1994.getClass();
+        
         ArrayDeque arrayDeque = C1994.f6653;
         synchronized (arrayDeque) {
             arrayDeque.offer(c1994);

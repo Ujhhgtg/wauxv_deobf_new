@@ -32,7 +32,7 @@ public final class ObjectReaderImplBitSet extends ObjectReaderPrimitive<BitSet> 
         if (jSONReader.nextIfNull()) {
             return null;
         }
-        if (!jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY) || jSONReader.readTypeHashCode() == HASH_TYPE) {
+        if (!jSONReader.nextIfMatch(-110) || jSONReader.readTypeHashCode() == HASH_TYPE) {
             return BitSet.valueOf(jSONReader.readBinary());
         }
         throw new JSONException(jSONReader.info(jSONReader.getString()));

@@ -28,7 +28,7 @@ public final class C0547 extends AbstractC1628 implements Comparable {
         C0894 c0894 = this.f2258.f3335.f3361;
         C0548 c0548 = c1023.f3748;
         if (c0894 == null) {
-            c0548.getClass();
+            
             throw new NullPointerException("callSite == null");
         }
         C0549 c0549 = (C0549) ((TreeMap) c0548.f2262).get(c0894);

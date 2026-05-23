@@ -35,7 +35,7 @@ public final class ThreadFactoryC1464 implements ThreadFactory {
     @Override // java.util.concurrent.ThreadFactory
     public final Thread newThread(Runnable runnable) {
         RunnableC0132 runnableC0132 = new RunnableC0132(this, 2, runnable);
-        this.f5223.getClass();
+        
         C0277 c0277 = new C0277(runnableC0132);
         c0277.setName("glide-" + this.f5224 + "-thread-" + this.f5227.getAndIncrement());
         return c0277;

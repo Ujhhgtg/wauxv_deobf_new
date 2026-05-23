@@ -1,6 +1,5 @@
 package p000;
 
-import android.R;
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Configuration;
@@ -9,7 +8,6 @@ import android.graphics.Typeface;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
 import de.robv.android.xposed.XposedBridge;
 import java.io.File;
 import java.util.Arrays;
@@ -42,7 +40,7 @@ public abstract class AbstractC2665 {
     public static final C2416 f8586 = new C2416("code-block-info");
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final int[] f8587 = {R.attr.theme, me.hd.wauxv.R.attr.theme};
+    public static final int[] f8587 = {16842752, me.hd.wauxv.R.attr.theme};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static final int[] f8588 = {me.hd.wauxv.R.attr.materialThemeOverlay};
@@ -193,7 +191,7 @@ public abstract class AbstractC2665 {
             }
             throw new C0761();
         }
-        C0251.f1415.getClass();
+        
         Application applicationM1337 = C0251.m1337();
         if (applicationM1337 != null && (classLoader2 = applicationM1337.getClassLoader()) != null && AbstractC0710.m2134(classLoader2, "me.weishu.exposed.ExposedBridge")) {
             return "TaiChi";
@@ -203,13 +201,13 @@ public abstract class AbstractC2665 {
             return "BugXposed";
         }
         try {
-            int i2 = AbstractC1745.f5844;
-            C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.m4527(XposedBridge.class));
+            int i2 = 0;
+            C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.classToKClass(XposedBridge.class));
             c1744M2482.m3493(true);
             C1299 c1299M3490 = c1744M2482.m3490();
             c1299M3490.f6370 = "TAG";
             AbstractC0750.m2218(c1299M3490.f6372, (EnumC1999[]) Arrays.copyOf(new EnumC1999[]{EnumC1999.STATIC}, 1));
-            C1315 c1315 = (C1315) AbstractC0744.m2192(c1299M3490.m3014());
+            C1315 c1315 = (C1315) AbstractC0744.m2192(c1299M3490.resolve());
             if (c1315 != null && (str = (String) c1315.m3024()) != null) {
                 if (AbstractC2841.m4836(str)) {
                     str = null;
@@ -267,7 +265,7 @@ public abstract class AbstractC2665 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static Typeface m4668(Configuration configuration, Typeface typeface) {
-        if (Build.VERSION.SDK_INT < 31 || configuration.fontWeightAdjustment == Integer.MAX_VALUE || configuration.fontWeightAdjustment == 0 || typeface == null) {
+        if (Build.VERSION.SDK_INT < 31 || configuration.fontWeightAdjustment == 2147483647 || configuration.fontWeightAdjustment == 0 || typeface == null) {
             return null;
         }
         return Typeface.create(typeface, AbstractC3681.m5318(configuration.fontWeightAdjustment + typeface.getWeight(), 1, 1000), typeface.isItalic());
@@ -278,7 +276,7 @@ public abstract class AbstractC2665 {
         if (set2.isEmpty()) {
             return AbstractC0744.m2209(set);
         }
-        if (!(set2 instanceof Set)) {
+        if (false) {
             LinkedHashSet linkedHashSet = new LinkedHashSet(set);
             linkedHashSet.removeAll(set2);
             return linkedHashSet;
@@ -362,7 +360,7 @@ public abstract class AbstractC2665 {
             switch (charSequence.charAt(i)) {
                 case '[':
                     return -1;
-                case Opcodes.DUP2 /* 92 */:
+                case 92 /* 92 */:
                     int i2 = i + 1;
                     if (AbstractC3471.m5081(i2, charSequence)) {
                         i = i2;
@@ -388,10 +386,10 @@ public abstract class AbstractC2665 {
                 if (AbstractC3471.m5081(i2, charSequence)) {
                     i = i2;
                 } else {
-                    if (cCharAt == c) {
+                    if (92 == c) {
                         return i;
                     }
-                    if (c == ')' && cCharAt == '(') {
+                    if (false) {
                         return -1;
                     }
                 }

@@ -53,23 +53,23 @@ public class BeanInfo {
         this.alphabetic = true;
         this.skipTransient = true;
         if (JSONFactory.isDisableAutoType()) {
-            this.writerFeatures |= FieldInfo.DISABLE_AUTO_TYPE;
-            this.readerFeatures |= FieldInfo.DISABLE_AUTO_TYPE;
+            this.writerFeatures |= 576460752303423488L;
+            this.readerFeatures |= 576460752303423488L;
         }
         if (JSONFactory.isDisableReferenceDetect()) {
-            this.writerFeatures |= FieldInfo.DISABLE_REFERENCE_DETECT;
-            this.readerFeatures |= FieldInfo.DISABLE_REFERENCE_DETECT;
+            this.writerFeatures |= 144115188075855872L;
+            this.readerFeatures |= 144115188075855872L;
         }
         if (JSONFactory.isDisableJSONB()) {
-            this.writerFeatures |= FieldInfo.DISABLE_JSONB;
-            this.readerFeatures |= FieldInfo.DISABLE_JSONB;
+            this.writerFeatures |= 1152921504606846976L;
+            this.readerFeatures |= 1152921504606846976L;
         }
         if (JSONFactory.isDisableArrayMapping()) {
-            this.writerFeatures |= FieldInfo.DISABLE_ARRAY_MAPPING;
-            this.readerFeatures |= FieldInfo.DISABLE_ARRAY_MAPPING;
+            this.writerFeatures |= 288230376151711744L;
+            this.readerFeatures |= 288230376151711744L;
         }
         if (JSONFactory.isDisableSmartMatch()) {
-            this.readerFeatures |= FieldInfo.DISABLE_SMART_MATCH;
+            this.readerFeatures |= 9007199254740992L;
         }
     }
 
@@ -88,19 +88,19 @@ public class BeanInfo {
         this.alphabetic = true;
         this.skipTransient = true;
         if (objectReaderProvider.isDisableAutoType()) {
-            this.readerFeatures |= FieldInfo.DISABLE_AUTO_TYPE;
+            this.readerFeatures |= 576460752303423488L;
         }
         if (objectReaderProvider.isDisableReferenceDetect()) {
-            this.readerFeatures |= FieldInfo.DISABLE_REFERENCE_DETECT;
+            this.readerFeatures |= 144115188075855872L;
         }
         if (objectReaderProvider.isDisableJSONB()) {
-            this.readerFeatures |= FieldInfo.DISABLE_JSONB;
+            this.readerFeatures |= 1152921504606846976L;
         }
         if (objectReaderProvider.isDisableArrayMapping()) {
-            this.readerFeatures |= FieldInfo.DISABLE_ARRAY_MAPPING;
+            this.readerFeatures |= 288230376151711744L;
         }
         if (objectReaderProvider.isDisableSmartMatch()) {
-            this.readerFeatures |= FieldInfo.DISABLE_SMART_MATCH;
+            this.readerFeatures |= 9007199254740992L;
         }
         PropertyNamingStrategy namingStrategy = objectReaderProvider.getNamingStrategy();
         if (namingStrategy != null) {
@@ -112,16 +112,16 @@ public class BeanInfo {
         this.alphabetic = true;
         this.skipTransient = true;
         if (objectWriterProvider.isDisableAutoType()) {
-            this.writerFeatures |= FieldInfo.DISABLE_AUTO_TYPE;
+            this.writerFeatures |= 576460752303423488L;
         }
         if (objectWriterProvider.isDisableReferenceDetect()) {
-            this.writerFeatures |= FieldInfo.DISABLE_REFERENCE_DETECT;
+            this.writerFeatures |= 144115188075855872L;
         }
         if (objectWriterProvider.isDisableJSONB()) {
-            this.writerFeatures |= FieldInfo.DISABLE_JSONB;
+            this.writerFeatures |= 1152921504606846976L;
         }
         if (objectWriterProvider.isDisableArrayMapping()) {
-            this.writerFeatures |= FieldInfo.DISABLE_ARRAY_MAPPING;
+            this.writerFeatures |= 288230376151711744L;
         }
         this.alphabetic = objectWriterProvider.isAlphabetic();
         this.skipTransient = objectWriterProvider.isSkipTransient();

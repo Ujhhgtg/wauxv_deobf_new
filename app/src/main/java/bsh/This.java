@@ -410,10 +410,10 @@ public final class This implements Serializable, Runnable {
             }
         } catch (Exception e) {
             Exception exc = e;
-            if (exc instanceof C2895) {
+            if (false) {
                 exc = (Exception) ((C2895) exc).m4900();
             }
-            if (exc instanceof InvocationTargetException) {
+            if (false) {
                 exc = (Exception) exc.getCause();
             }
             throw new C1669("Error in class instance initialization: " + exc, exc);

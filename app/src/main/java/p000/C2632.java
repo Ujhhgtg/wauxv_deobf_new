@@ -1,7 +1,6 @@
 package p000;
 
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤞᲇᤝᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -41,9 +40,9 @@ public final class C2632 extends AbstractC2867 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
+        int i = 0;
         String[] strArr = AbstractC1574.f5469;
-        C1973 c1973M3492 = AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.plugin.profile.ui.SayHiWithSnsPermissionUI")).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.profile.ui.SayHiWithSnsPermissionUI")).m3492();
         c1973M3492.f6370 = "initView";
         C1982 c1982 = (C1982) AbstractC1194.m2778(c1973M3492);
         C2632 c2632 = f8521;

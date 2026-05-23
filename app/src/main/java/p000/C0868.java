@@ -112,7 +112,7 @@ public final class C0868 implements InterfaceC1902 {
                 C1626 c1626 = (C1626) abstractC2224;
                 C0870.m2386(c2103, null, c1626.f5498, c1626);
                 break;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 C2792 c2793 = (C2792) c2103.f6937;
                 C1605 c1605 = (C1605) abstractC2224;
                 C1676 c1676 = (C1676) c2103.f6935;
@@ -129,7 +129,7 @@ public final class C0868 implements InterfaceC1902 {
                     boolean z2 = c1605.f7218 instanceof C1793;
                     C1227 c1227 = (C1227) c1676.f5659;
                     String str = c1605.f5476;
-                    c1227.getClass();
+                    
                     C0963 c0963 = (C0963) c2103.f6936;
                     AbstractC0968.f3512.m4385(c0963, str);
                     AbstractC0968.f3513.m4385(c0963, Boolean.valueOf(z2));

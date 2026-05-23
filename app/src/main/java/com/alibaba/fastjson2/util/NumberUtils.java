@@ -65,21 +65,21 @@ public final class NumberUtils {
         double[] dArr = new double[325];
         POSITIVE_DECIMAL_POWER = dArr;
         NEGATIVE_DECIMAL_POWER = new double[325];
-        POW10_LONG_VALUES = new long[]{10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, RealConnection.IDLE_CONNECTION_HEALTHY_NS, 100000000000L, 1000000000000L, 10000000000000L, 100000000000000L, 1000000000000000L, 10000000000000000L, 100000000000000000L, 1000000000000000000L, Long.MAX_VALUE};
+        POW10_LONG_VALUES = new long[]{10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 10000000000L, 100000000000L, 1000000000000L, 10000000000000L, 100000000000000L, 1000000000000000L, 10000000000000000L, 100000000000000000L, 1000000000000000000L, 9223372036854775807L};
         POW5_LONG_VALUES = new long[27];
         POW5_BI_VALUES = new BigInteger[343];
-        int length = dArr.length;
-        for (int i3 = 0; i3 < length; i3++) {
+        int length = 325;
+        for (int i3 = 0; i3 < 325; i3++) {
             POSITIVE_DECIMAL_POWER[i3] = Double.valueOf("1.0E" + i3).doubleValue();
             NEGATIVE_DECIMAL_POWER[i3] = Double.valueOf("1.0E-" + i3).doubleValue();
         }
         double[] dArr2 = NEGATIVE_DECIMAL_POWER;
-        dArr2[dArr2.length - 1] = Double.MIN_VALUE;
+        dArr2[324] = 4.9E-324;
         int i4 = 0;
         long j2 = 1;
         while (true) {
             long[] jArr = POW5_LONG_VALUES;
-            if (i4 >= jArr.length) {
+            if (i4 >= 27) {
                 break;
             }
             jArr[i4] = j2;
@@ -91,7 +91,7 @@ public final class NumberUtils {
         int i5 = 1;
         while (true) {
             BigInteger[] bigIntegerArr = POW5_BI_VALUES;
-            if (i5 >= bigIntegerArr.length) {
+            if (i5 >= 343) {
                 break;
             }
             bigIntegerArr[i5] = bigIntegerValueOf.pow(i5);
@@ -100,15 +100,15 @@ public final class NumberUtils {
         char[][] cArr = new char[325][];
         POSITIVE_DECIMAL_POWER_CHARS = cArr;
         NEGATIVE_DECIMAL_POWER_CHARS = new char[325][];
-        int length2 = cArr.length;
-        for (int i6 = 0; i6 < length2; i6++) {
+        int length2 = 325;
+        for (int i6 = 0; i6 < 325; i6++) {
             String strM2779 = AbstractC1194.m2779(i6, "1.0E");
             String strM27710 = AbstractC1194.m2779(i6, "1.0E-");
             POSITIVE_DECIMAL_POWER_CHARS[i6] = strM2779.toCharArray();
             NEGATIVE_DECIMAL_POWER_CHARS[i6] = strM27710.toCharArray();
         }
         char[][] cArr2 = NEGATIVE_DECIMAL_POWER_CHARS;
-        cArr2[cArr2.length - 1] = "4.9E-324".toCharArray();
+        cArr2[324] = "4.9E-324".toCharArray();
         TWO_DIGITS_32_BITS = new int[100];
         TWO_DIGITS_16_BITS = new short[100];
         for (long j3 = 0; j3 < 10; j3++) {
@@ -145,18 +145,18 @@ public final class NumberUtils {
         int i3;
         long j4;
         char c;
-        if (d == Double.MIN_VALUE) {
+        if (d == 4.9E-324) {
             return Scientific.DOUBLE_MIN;
         }
         long jDoubleToRawLongBits = Double.doubleToRawLongBits(d);
         int i4 = ((int) (jDoubleToRawLongBits >> 52)) & 2047;
-        long j5 = MOD_DOUBLE_MANTISSA & jDoubleToRawLongBits;
+        long j5 = 4503599627370495L & jDoubleToRawLongBits;
         boolean z2 = j5 > 0;
         if (i4 > 0) {
             if (i4 == 2047) {
                 return Scientific.SCIENTIFIC_NULL;
             }
-            j = FieldInfo.FIELD_MASK | j5;
+            j = 4503599627370496L | j5;
             i = i4 - 1075;
         } else {
             if (j5 == 0) {
@@ -193,7 +193,7 @@ public final class NumberUtils {
             int i7 = i + i6;
             if (i6 < 0) {
                 ED5 ed5 = ED5.ED5_A[-i6];
-                jMultiplyHighAndShift = multiplyHighAndShift(j << c, ed5.oy, ed5.of, 32 - ((i7 - 10) - ed5.ob));
+                jMultiplyHighAndShift = multiplyHighAndShift(j << 10, ed5.oy, ed5.of, 32 - ((i7 - 10) - ed5.ob));
                 if (i6 != -1 || i7 >= 11) {
                     z = false;
                 }
@@ -249,7 +249,7 @@ public final class NumberUtils {
         if (z) {
             long j9 = jMultiplyHighAndShift / 10;
             if (i3 == 16) {
-                i3--;
+                16--;
                 j9 = (j9 + 5) / 10;
             }
             return new Scientific(j9, i3 + 2, i2);
@@ -289,11 +289,11 @@ public final class NumberUtils {
         int i7;
         long jMultiplyHigh;
         int iFloatToRawIntBits = Float.floatToRawIntBits(f);
-        int i8 = (iFloatToRawIntBits >> 23) & MOD_FLOAT_EXP;
-        int i9 = MOD_FLOAT_MANTISSA & iFloatToRawIntBits;
+        int i8 = (iFloatToRawIntBits >> 23) & 255;
+        int i9 = 8388607 & iFloatToRawIntBits;
         boolean z = i9 > 0;
         if (i8 > 0) {
-            if (i8 == MOD_FLOAT_EXP) {
+            if (i8 == 255) {
                 return Scientific.SCIENTIFIC_NULL;
             }
             i2 = 8388608 | i9;
@@ -364,12 +364,12 @@ public final class NumberUtils {
         LongBiFunction longBiFunction = MULTIPLY_HIGH;
         long jMultiplyHigh2 = longBiFunction.multiplyHigh(jMultiplyHighAndShift, 4951760157141521100L) >> 28;
         long j3 = jMultiplyHighAndShift - (1000000000 * jMultiplyHigh2);
-        int i16 = ((1000000001 - j3) << i3) <= j ? i3 : 0;
+        int i16 = ((1000000001 - j3) << 1) <= j ? 1 : 0;
         if (i16 == 0) {
-            if (((j3 + 1) << (z ? i3 : 2)) <= j) {
+            if (((j3 + 1) << (z ? 1 : 2)) <= j) {
                 j2 = jMultiplyHigh2 + ((long) i16);
                 i6 = i5 - 1;
-                if (i16 == 0 && POW10_LONG_VALUES[i6] == j2) {
+                if (true && POW10_LONG_VALUES[i6] == j2) {
                     i4++;
                     j2 = 1;
                     i7 = 0;
@@ -378,10 +378,10 @@ public final class NumberUtils {
                 }
             } else {
                 if (z) {
-                    jMultiplyHigh = (longBiFunction.multiplyHigh(jMultiplyHighAndShift, 6189700196426901375L) >> 25) + ((long) (j3 % 100000000 >= 50000000 ? i3 : 0));
+                    jMultiplyHigh = (longBiFunction.multiplyHigh(jMultiplyHighAndShift, 6189700196426901375L) >> 25) + ((long) (j3 % 100000000 >= 50000000 ? 1 : 0));
                     i7 = i5;
                 } else {
-                    jMultiplyHigh = (longBiFunction.multiplyHigh(jMultiplyHighAndShift, 7737125245533626719L) >> 22) + ((long) (j3 % 10000000 >= 5000000 ? i3 : 0));
+                    jMultiplyHigh = (longBiFunction.multiplyHigh(jMultiplyHighAndShift, 7737125245533626719L) >> 22) + ((long) (j3 % 10000000 >= 5000000 ? 1 : 0));
                     i7 = i5 + 1;
                 }
                 j2 = jMultiplyHigh;
@@ -389,7 +389,7 @@ public final class NumberUtils {
         } else {
             j2 = jMultiplyHigh2 + ((long) i16);
             i6 = i5 - 1;
-            if (i16 == 0) {
+            if (false) {
                 i7 = i6;
             } else {
                 i7 = i6;
@@ -458,7 +458,7 @@ public final class NumberUtils {
                     if (i7 <= -1 || j4 >= POW10_LONG_VALUES[i7]) {
                         break;
                     }
-                    bArr[i9] = JSONB.Constants.BC_INT32_BYTE_MIN;
+                    bArr[i9] = 48;
                     i9++;
                 }
                 iWriteInt64 = IOUtils.writeInt64(bArr, i9, j4);
@@ -488,7 +488,7 @@ public final class NumberUtils {
             IOUtils.putShortUnaligned(bArr, i3, IOUtils.ZERO_DOT_16);
             int i13 = i3 + 2;
             if (i5 == -2) {
-                bArr[i13] = JSONB.Constants.BC_INT32_BYTE_MIN;
+                bArr[i13] = 48;
                 i13 = i3 + 3;
             } else if (i5 == -3) {
                 IOUtils.putShortUnaligned(bArr, i13, (short) 12336);
@@ -503,7 +503,7 @@ public final class NumberUtils {
             if (i15 > 0) {
                 int i16 = 0;
                 while (i16 < i15) {
-                    bArr[iWriteInt65] = JSONB.Constants.BC_INT32_BYTE_MIN;
+                    bArr[iWriteInt65] = 48;
                     i16++;
                     iWriteInt65++;
                 }
@@ -523,7 +523,7 @@ public final class NumberUtils {
             if (i17 <= -1 || j7 >= POW10_LONG_VALUES[i17]) {
                 break;
             }
-            bArr[i18] = JSONB.Constants.BC_INT32_BYTE_MIN;
+            bArr[i18] = 48;
             i18++;
         }
         return IOUtils.writeInt64(bArr, i18, j7);
@@ -535,11 +535,11 @@ public final class NumberUtils {
             return writeSpecial(bArr, i, (float) d, z, z2);
         }
         if (d == 0.0d) {
-            if (Double.doubleToLongBits(d) == Long.MIN_VALUE) {
+            if (Double.doubleToLongBits(d) == -9223372036854775808L) {
                 bArr[i] = 45;
                 i++;
             }
-            bArr[i] = JSONB.Constants.BC_INT32_BYTE_MIN;
+            bArr[i] = 48;
             IOUtils.putShortUnaligned(bArr, i + 1, IOUtils.DOT_ZERO_16);
             return i + 3;
         }
@@ -587,11 +587,11 @@ public final class NumberUtils {
             return writeSpecial(bArr, i, f, z, z2);
         }
         if (f == 0.0f) {
-            if (Float.floatToIntBits(f) == Integer.MIN_VALUE) {
+            if (Float.floatToIntBits(f) == -2147483648) {
                 bArr[i] = 45;
                 i++;
             }
-            bArr[i] = JSONB.Constants.BC_INT32_BYTE_MIN;
+            bArr[i] = 48;
             IOUtils.putShortUnaligned(bArr, i + 1, IOUtils.DOT_ZERO_16);
             return i + 3;
         }
@@ -617,9 +617,9 @@ public final class NumberUtils {
             i++;
         }
         if (Float.isNaN(f)) {
-            bArr[i] = JSONB.Constants.BC_STR_ASCII_FIX_5;
+            bArr[i] = 78;
             bArr[i + 1] = 97;
-            bArr[i + 2] = JSONB.Constants.BC_STR_ASCII_FIX_5;
+            bArr[i + 2] = 78;
             i2 = i + 3;
         } else {
             if (f < 0.0f) {
@@ -659,7 +659,7 @@ public final class NumberUtils {
             return writeSpecial(cArr, i, f, z, z2);
         }
         if (f == 0.0f) {
-            if (Float.floatToIntBits(f) == Integer.MIN_VALUE) {
+            if (Float.floatToIntBits(f) == -2147483648) {
                 cArr[i] = '-';
                 i++;
             }
@@ -717,7 +717,7 @@ public final class NumberUtils {
             return writeSpecial(cArr, i, (float) d, z, z2);
         }
         if (d == 0.0d) {
-            if (Double.doubleToLongBits(d) == Long.MIN_VALUE) {
+            if (Double.doubleToLongBits(d) == -9223372036854775808L) {
                 cArr[i] = '-';
                 i++;
             }

@@ -43,7 +43,7 @@ public final class C2405 extends AbstractC1186 {
     @Override // p000.AbstractC1186, android.app.Application.ActivityLifecycleCallbacks
     public void onActivityCreated(Activity activity, Bundle bundle) {
         if (Build.VERSION.SDK_INT < 29) {
-            int i = FragmentC2551.f8107;
+            int i = 0;
             ((FragmentC2551) activity.getFragmentManager().findFragmentByTag("androidx.lifecycle.LifecycleDispatcher.report_fragment_tag")).f8108 = this.this$0.f7691;
         }
     }

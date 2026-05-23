@@ -3,7 +3,6 @@ package p000;
 import java.util.List;
 import java.util.regex.Pattern;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲁᲀᛸᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -17,8 +16,8 @@ public final class C2052 extends AbstractC1823 implements InterfaceC1592 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final void mo2062(Object obj) throws IllegalAccessException {
         List listM3699;
-        int i = AbstractC1745.f5844;
-        C1744 c1744M2484 = AbstractC0968.m2484(obj);
+        int i = 0;
+        C1744 c1744M2484 = AbstractC0968.startFieldResolution(obj);
         C1299 c1299M3490 = c1744M2484.m3490();
         String[] strArr = AbstractC1574.f5469;
         c1299M3490.f6370 = "field_isSend";
@@ -37,17 +36,17 @@ public final class C2052 extends AbstractC1823 implements InterfaceC1592 {
             if (str2 != null) {
                 C1299 c1299M3493 = c1744M2484.m3490();
                 c1299M3493.f6370 = "field_type";
-                ((C1315) AbstractC2784.m4741(c1299M3493)).m3025(Integer.valueOf(EnumC3673.f11469.f11492));
+                ((C1315) AbstractC2784.m4741(c1299M3493)).set(Integer.valueOf(EnumC3673.f11469.f11492));
                 MsgInfoBean msgInfoBean = new MsgInfoBean(obj);
                 if (!msgInfoBean.isGroupChat()) {
                     C1299 c1299M3494 = c1744M2484.m3490();
                     c1299M3494.f6370 = "field_content";
-                    ((C1315) AbstractC2784.m4741(c1299M3494)).m3025(str2);
+                    ((C1315) AbstractC2784.m4741(c1299M3494)).set(str2);
                     return;
                 }
                 C1299 c1299M3495 = c1744M2484.m3490();
                 c1299M3495.f6370 = "field_content";
-                ((C1315) AbstractC2784.m4741(c1299M3495)).m3025(msgInfoBean.getSendTalker() + ':' + str2);
+                ((C1315) AbstractC2784.m4741(c1299M3495)).set(msgInfoBean.getSendTalker() + ':' + str2);
             }
         }
     }

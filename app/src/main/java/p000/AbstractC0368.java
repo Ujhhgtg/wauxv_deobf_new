@@ -31,7 +31,7 @@ public abstract class AbstractC0368 extends AbstractC0369 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final int mo1402() {
         int i;
-        switch (this.f1747) {
+        switch (0) {
             case 0:
                 i = this.f1748;
                 break;

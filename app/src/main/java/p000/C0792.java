@@ -114,7 +114,7 @@ public final class C0792 {
         sparseIntArray.append(27, 64);
         sparseIntArray.append(107, 65);
         sparseIntArray.append(34, 66);
-        sparseIntArray.append(Opcodes.IDIV, 67);
+        sparseIntArray.append(108, 67);
         sparseIntArray.append(104, 79);
         sparseIntArray.append(1, 38);
         sparseIntArray.append(103, 68);
@@ -127,7 +127,7 @@ public final class C0792 {
         sparseIntArray.append(28, 75);
         sparseIntArray.append(105, 76);
         sparseIntArray.append(84, 77);
-        sparseIntArray.append(Opcodes.LDIV, 78);
+        sparseIntArray.append(109, 78);
         sparseIntArray.append(54, 80);
         sparseIntArray.append(53, 81);
     }
@@ -153,13 +153,13 @@ public final class C0792 {
             }
             if (iIntValue == 0 && c0366.isInEditMode() && (c0366.getParent() instanceof ConstraintLayout)) {
                 ConstraintLayout constraintLayout = (ConstraintLayout) c0366.getParent();
-                if (strTrim != null) {
+                if (true) {
                     HashMap map = constraintLayout.f209;
                     if (map != null && map.containsKey(strTrim)) {
                         obj = constraintLayout.f209.get(strTrim);
                     }
                 } else {
-                    constraintLayout.getClass();
+                    
                 }
                 if (obj != null && (obj instanceof Integer)) {
                     iIntValue = ((Integer) obj).intValue();
@@ -183,9 +183,9 @@ public final class C0792 {
             C0791 c0791 = c0787.f2982;
             C0788 c0788 = c0787.f2981;
             if (index != 1 && 23 != index && 24 != index) {
-                c0789.getClass();
-                c0788.getClass();
-                c0791.getClass();
+                
+                
+                
             }
             SparseIntArray sparseIntArray = f3069;
             int i2 = sparseIntArray.get(index);
@@ -224,13 +224,13 @@ public final class C0792 {
                 case 11:
                     c0788.f3022 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3022);
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     c0788.f3023 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3023);
                     break;
                 case 13:
                     c0788.f3019 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3019);
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     c0788.f3021 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3021);
                     break;
                 case 15:
@@ -239,10 +239,10 @@ public final class C0792 {
                 case 16:
                     c0788.f3020 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3020);
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     c0788.f2988 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, c0788.f2988);
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     c0788.f2989 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, c0788.f2989);
                     break;
                 case 19:
@@ -251,21 +251,21 @@ public final class C0792 {
                 case 20:
                     c0788.f3004 = typedArrayObtainStyledAttributes.getFloat(index, c0788.f3004);
                     break;
-                case Opcodes.ILOAD /* 21 */:
+                case 21 /* 21 */:
                     c0788.f2987 = typedArrayObtainStyledAttributes.getLayoutDimension(index, c0788.f2987);
                     break;
-                case Opcodes.LLOAD /* 22 */:
+                case 22 /* 22 */:
                     int i3 = typedArrayObtainStyledAttributes.getInt(index, c0790.f3051);
                     c0790.f3051 = i3;
                     c0790.f3051 = f3068[i3];
                     break;
-                case Opcodes.FLOAD /* 23 */:
+                case 23 /* 23 */:
                     c0788.f2986 = typedArrayObtainStyledAttributes.getLayoutDimension(index, c0788.f2986);
                     break;
-                case Opcodes.DLOAD /* 24 */:
+                case 24 /* 24 */:
                     c0788.f3013 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3013);
                     break;
-                case Opcodes.ALOAD /* 25 */:
+                case 25 /* 25 */:
                     c0788.f2991 = m2301(typedArrayObtainStyledAttributes, index, c0788.f2991);
                     break;
                 case 26:
@@ -329,7 +329,7 @@ public final class C0792 {
                 case 45:
                     c0791.f3057 = typedArrayObtainStyledAttributes.getFloat(index, c0791.f3057);
                     break;
-                case Opcodes.IALOAD /* 46 */:
+                case 46 /* 46 */:
                     c0791.f3058 = typedArrayObtainStyledAttributes.getFloat(index, c0791.f3058);
                     break;
                 case 47:
@@ -341,31 +341,31 @@ public final class C0792 {
                 case 49:
                     c0791.f3061 = typedArrayObtainStyledAttributes.getDimension(index, c0791.f3061);
                     break;
-                case Opcodes.AALOAD /* 50 */:
+                case 50 /* 50 */:
                     c0791.f3062 = typedArrayObtainStyledAttributes.getDimension(index, c0791.f3062);
                     break;
-                case Opcodes.BALOAD /* 51 */:
+                case 51 /* 51 */:
                     c0791.f3063 = typedArrayObtainStyledAttributes.getDimension(index, c0791.f3063);
                     break;
                 case 52:
                     c0791.f3064 = typedArrayObtainStyledAttributes.getDimension(index, c0791.f3064);
                     break;
-                case Opcodes.SALOAD /* 53 */:
+                case 53 /* 53 */:
                     c0791.f3065 = typedArrayObtainStyledAttributes.getDimension(index, c0791.f3065);
                     break;
-                case Opcodes.ISTORE /* 54 */:
+                case 54 /* 54 */:
                     c0788.f3029 = typedArrayObtainStyledAttributes.getInt(index, c0788.f3029);
                     break;
-                case Opcodes.LSTORE /* 55 */:
+                case 55 /* 55 */:
                     c0788.f3030 = typedArrayObtainStyledAttributes.getInt(index, c0788.f3030);
                     break;
-                case Opcodes.FSTORE /* 56 */:
+                case 56 /* 56 */:
                     c0788.f3031 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3031);
                     break;
-                case Opcodes.DSTORE /* 57 */:
+                case 57 /* 57 */:
                     c0788.f3032 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3032);
                     break;
-                case Opcodes.ASTORE /* 58 */:
+                case 58 /* 58 */:
                     c0788.f3033 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, c0788.f3033);
                     break;
                 case 59:
@@ -389,15 +389,15 @@ public final class C0792 {
                 case 65:
                     if (typedArrayObtainStyledAttributes.peekValue(index).type == 3) {
                         typedArrayObtainStyledAttributes.getString(index);
-                        c0789.getClass();
+                        
                     } else {
                         String str = AbstractC2207.f7175[typedArrayObtainStyledAttributes.getInteger(index, 0)];
-                        c0789.getClass();
+                        
                     }
                     break;
                 case 66:
                     typedArrayObtainStyledAttributes.getInt(index, 0);
-                    c0789.getClass();
+                    
                     break;
                 case 67:
                     c0789.f3050 = typedArrayObtainStyledAttributes.getFloat(index, c0789.f3050);
@@ -435,7 +435,7 @@ public final class C0792 {
                 case 78:
                     c0790.f3052 = typedArrayObtainStyledAttributes.getInt(index, c0790.f3052);
                     break;
-                case Opcodes.IASTORE /* 79 */:
+                case 79 /* 79 */:
                     c0789.f3049 = typedArrayObtainStyledAttributes.getFloat(index, c0789.f3049);
                     break;
                 case 80:
@@ -721,7 +721,7 @@ public final class C0792 {
                 C0780 c0780 = (C0780) map3.get(str);
                 try {
                     if (str.equals("BackgroundColor")) {
-                        map2.put(str, new C0780(c0780, Integer.valueOf(((ColorDrawable) childAt.getBackground()).getColor())));
+                        map2.put("BackgroundColor", new C0780(c0780, Integer.valueOf(((ColorDrawable) childAt.getBackground()).getColor())));
                     } else {
                         map2.put(str, new C0780(c0780, cls.getMethod("getMap" + str, null).invoke(childAt, null)));
                     }

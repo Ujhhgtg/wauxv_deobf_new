@@ -107,7 +107,7 @@ public final class C1678 implements InterfaceC2494 {
                     c1682.f5689 -= c1679.f5675;
                     c1682.m3415(abstractC2508, true);
                     if (c1682.f5685.remove(abstractC2508.f8006)) {
-                        c1682.f5697.getClass();
+                        
                         C0662.m2043(abstractC2508);
                     }
                     c1682.m3420(abstractC2508, c1679.f5671);

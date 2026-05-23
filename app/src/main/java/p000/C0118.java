@@ -13,7 +13,7 @@ public final class C0118 extends AbstractC0982 {
 
     static {
         String str = "AccountInfoCenterHook.ValSign";
-        C0121.f1070.getClass();
-        f1067 = new C0118(str, (String) C0121.f1073.getValue(), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        
+        f1067 = new C0118("AccountInfoCenterHook.ValSign", (String) C0121.f1073.getValue(), null, false, 0, 0.0f, 0L, 124);
     }
 }

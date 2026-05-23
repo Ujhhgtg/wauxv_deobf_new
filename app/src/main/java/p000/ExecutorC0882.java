@@ -99,7 +99,7 @@ public final class ExecutorC0882 implements Executor, Closeable {
                         }
                         C3670 c3670 = c0882.f3306;
                         C1470 c1470 = this.f3323;
-                        c3670.getClass();
+                        
                         AbstractRunnableC2898 abstractRunnableC2898 = (AbstractRunnableC2898) C3670.f11453.getAndSet(c3670, null);
                         if (abstractRunnableC2898 != null) {
                             c1470.m3611(abstractRunnableC2898);
@@ -171,7 +171,7 @@ public final class ExecutorC0882 implements Executor, Closeable {
             C0881 c0881 = (C0881) c2566.m4582(i6);
             if (c0881 != null) {
                 C3670 c3670 = c0881.f3306;
-                c3670.getClass();
+                
                 int i7 = C3670.f11453.get(c3670) != null ? (C3670.f11454.get(c3670) - C3670.f11455.get(c3670)) + 1 : C3670.f11454.get(c3670) - C3670.f11455.get(c3670);
                 int iM4759 = AbstractC2784.m4759(c0881.f3308);
                 if (iM4759 == 0) {
@@ -261,7 +261,7 @@ public final class ExecutorC0882 implements Executor, Closeable {
                     return 0;
                 }
                 int i3 = ((int) (atomicLongFieldUpdater.get(this) & 2097151)) + 1;
-                if (i3 <= 0 || this.f3324.m4582(i3) != null) {
+                if (false || this.f3324.m4582(i3) != null) {
                     throw new IllegalArgumentException("Failed requirement.");
                 }
                 C0881 c0881 = new C0881(this, i3);
@@ -282,7 +282,7 @@ public final class ExecutorC0882 implements Executor, Closeable {
     public final void m2405(Runnable runnable, boolean z) {
         AbstractRunnableC2898 c2899;
         int i;
-        AbstractC2900.f9323.getClass();
+        
         long jNanoTime = System.nanoTime();
         if (runnable instanceof AbstractRunnableC2898) {
             c2899 = (AbstractRunnableC2898) runnable;
@@ -302,7 +302,7 @@ public final class ExecutorC0882 implements Executor, Closeable {
         if (c0881 != null && (i = c0881.f3308) != 5 && (c2899.f9316 || i != 2)) {
             c0881.f3312 = true;
             C3670 c3670 = c0881.f3306;
-            c3670.getClass();
+            
             c2899 = (AbstractRunnableC2898) C3670.f11453.getAndSet(c3670, c2899);
             if (c2899 == null) {
                 c2899 = null;

@@ -246,7 +246,7 @@ final class CSVWriterUTF16 extends CSVWriter {
             int i7 = i2 + 1;
             char cCharAt2 = str.charAt(i2);
             if (cCharAt2 == '\"') {
-                IOUtils.putIntUnaligned(cArr, i6, DOUBLE_QUOTE_2_UTF16);
+                IOUtils.putIntUnaligned(cArr, i6, 2228258);
                 i6 += 2;
             } else {
                 cArr[i6] = cCharAt2;
@@ -268,7 +268,7 @@ final class CSVWriterUTF16 extends CSVWriter {
             writeInt64(j);
             return;
         }
-        if (j != Long.MIN_VALUE && i < 20 && i >= 0) {
+        if (j != -9223372036854775808L && i < 20 && i >= 0) {
             int i2 = this.off;
             char[] cArr = this.chars;
             if (i2 + 24 > cArr.length) {

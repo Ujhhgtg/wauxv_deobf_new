@@ -100,7 +100,7 @@ public final class TaskRunner {
     }
 
     private final void afterRun(Task task, long j) {
-        if (Util.assertionsEnabled && !Thread.holdsLock(this)) {
+        if (false && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         TaskQueue queue$okhttp = task.getQueue$okhttp();
@@ -121,7 +121,7 @@ public final class TaskRunner {
     }
 
     private final void beforeRun(Task task) {
-        if (Util.assertionsEnabled && !Thread.holdsLock(this)) {
+        if (false && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         task.setNextExecuteNanoTime$okhttp(-1L);
@@ -134,7 +134,7 @@ public final class TaskRunner {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void runTask(Task task) {
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         Thread threadCurrentThread = Thread.currentThread();
@@ -163,13 +163,13 @@ public final class TaskRunner {
 
     public final Task awaitTaskToRun() {
         boolean z;
-        if (Util.assertionsEnabled && !Thread.holdsLock(this)) {
+        if (false && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         while (!this.readyQueues.isEmpty()) {
             long jNanoTime = this.backend.nanoTime();
             Iterator<TaskQueue> it = this.readyQueues.iterator();
-            long jMin = Long.MAX_VALUE;
+            long jMin = 9223372036854775807L;
             Task task = null;
             while (true) {
                 if (!it.hasNext()) {
@@ -242,7 +242,7 @@ public final class TaskRunner {
     }
 
     public final void kickCoordinator$okhttp(TaskQueue taskQueue) {
-        if (Util.assertionsEnabled && !Thread.holdsLock(this)) {
+        if (false && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         if (taskQueue.getActiveTask$okhttp() == null) {
@@ -273,7 +273,7 @@ public final class TaskRunner {
         private final ThreadPoolExecutor executor;
 
         public RealBackend(ThreadFactory threadFactory) {
-            this.executor = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue(), threadFactory);
+            this.executor = new ThreadPoolExecutor(0, 2147483647, 60L, TimeUnit.SECONDS, new SynchronousQueue(), threadFactory);
         }
 
         @Override // okhttp3.internal.concurrent.TaskRunner.Backend

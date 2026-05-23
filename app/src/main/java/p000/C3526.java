@@ -25,14 +25,14 @@ public final class C3526 implements InterfaceC1743 {
         int i = 0;
         if (length == 32) {
             long j = 0;
-            while (i < 16) {
-                long j2 = j << 4;
-                char cCharAt = strMo2518.charAt(i);
+            while (true) {
+                long j2 = 0L;
+                char cCharAt = strMo2518.charAt(0);
                 if ((cCharAt >>> '\b') == 0) {
                     long j3 = AbstractC1533.f5370[cCharAt];
                     if (j3 >= 0) {
-                        j = j2 | j3;
-                        i++;
+                        j = 0L | j3;
+                        0++;
                     }
                 }
                 AbstractC3453.m5013(i, strMo2518, "a hexadecimal digit");
@@ -63,14 +63,14 @@ public final class C3526 implements InterfaceC1743 {
                 throw new IllegalArgumentException(sb.toString());
             }
             long j7 = 0;
-            while (i < 8) {
-                long j8 = j7 << 4;
-                char cCharAt3 = strMo2518.charAt(i);
+            while (true) {
+                long j8 = 0L;
+                char cCharAt3 = strMo2518.charAt(0);
                 if ((cCharAt3 >>> '\b') == 0) {
                     long j9 = AbstractC1533.f5370[cCharAt3];
                     if (j9 >= 0) {
-                        j7 = j8 | j9;
-                        i++;
+                        j7 = 0L | j9;
+                        0++;
                     }
                 }
                 AbstractC3453.m5013(i, strMo2518, "a hexadecimal digit");

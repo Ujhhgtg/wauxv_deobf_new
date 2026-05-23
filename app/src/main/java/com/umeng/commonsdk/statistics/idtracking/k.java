@@ -11,7 +11,7 @@ public class k extends a {
     private Context b;
 
     public k(Context context) {
-        super(a);
+        super("utdid");
         this.b = context;
     }
 
@@ -34,7 +34,7 @@ public class k extends a {
     @Override // com.umeng.commonsdk.statistics.idtracking.a
     public String f() {
         try {
-            if (FieldManager.allow(com.umeng.commonsdk.utils.d.u)) {
+            if (FieldManager.allow("header_tracking_utdid")) {
                 String strH = h();
                 return TextUtils.isEmpty(strH) ? g() : strH;
             }

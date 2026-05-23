@@ -6,7 +6,7 @@ import com.umeng.analytics.pro.dx;
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 public class eg {
-    private static int a = Integer.MAX_VALUE;
+    private static int a = 2147483647;
 
     public static void a(int i) {
         a = i;
@@ -46,7 +46,7 @@ public class eg {
                 case 11:
                     edVar.A();
                     return;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     edVar.j();
                     while (true) {
                         byte b2 = edVar.l().b;
@@ -69,7 +69,7 @@ public class eg {
                     }
                     edVar.o();
                     return;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     eh ehVarR = edVar.r();
                     while (i2 < ehVarR.b) {
                         a(edVar, ehVarR.a, i - 1);

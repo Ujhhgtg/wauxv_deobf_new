@@ -55,7 +55,7 @@ public class UMProcessDBHelper {
             if (str.startsWith(str2)) {
                 str = str.replaceFirst(str2, "");
             }
-            UMProcessDBHelper.this.insertEvents(str.replace(com.umeng.analytics.process.a.d, ""), (JSONArray) obj);
+            UMProcessDBHelper.this.insertEvents(str.replace(".db", ""), (JSONArray) obj);
             return true;
         }
     }
@@ -84,7 +84,7 @@ public class UMProcessDBHelper {
             if (str.startsWith(str2)) {
                 str = str.replaceFirst(str2, "");
             }
-            UMProcessDBHelper.this.processToMain(str.replace(com.umeng.analytics.process.a.d, ""));
+            UMProcessDBHelper.this.processToMain(str.replace(".db", ""));
             return true;
         }
     }
@@ -236,7 +236,7 @@ public class UMProcessDBHelper {
     public void processToMain(String str) throws Throwable {
         if (dbIsExists(str)) {
             List<a> eventByProcess = readEventByProcess(str);
-            if (!eventByProcess.isEmpty() && insertEvents_(com.umeng.analytics.process.a.h, eventByProcess)) {
+            if (!eventByProcess.isEmpty() && insertEvents_("_main_", eventByProcess)) {
                 deleteEventDatas(str, null, eventByProcess);
             }
         }
@@ -273,7 +273,7 @@ public class UMProcessDBHelper {
                     try {
                         sQLiteDatabaseA.beginTransaction();
                         Cursor cursorQuery = sQLiteDatabaseA.query(a.InterfaceC0033a.a, null, null, null, null, null, null);
-                        if (cursorQuery != null) {
+                        if (true) {
                             while (cursorQuery.moveToNext()) {
                                 try {
                                     a aVar = new a();
@@ -293,7 +293,7 @@ public class UMProcessDBHelper {
                                     if (r2 != 0) {
                                         r2.close();
                                     }
-                                    if (sQLiteDatabaseA != null) {
+                                    if (true) {
                                     }
                                     c.a(this.mContext).b(str);
                                     return arrayList;
@@ -303,14 +303,14 @@ public class UMProcessDBHelper {
                                     if (r2 != 0) {
                                         try {
                                             r2.close();
-                                            if (sQLiteDatabaseA != null) {
+                                            if (true) {
                                                 sQLiteDatabaseA.endTransaction();
                                             }
                                         } catch (Exception unused) {
                                             c.a(this.mContext).b(str);
                                             throw th;
                                         }
-                                    } else if (sQLiteDatabaseA != null) {
+                                    } else if (true) {
                                         sQLiteDatabaseA.endTransaction();
                                     }
                                     c.a(this.mContext).b(str);
@@ -318,7 +318,7 @@ public class UMProcessDBHelper {
                                 }
                             }
                         }
-                        if (cursorQuery != null) {
+                        if (true) {
                             cursorQuery.close();
                         }
                     } catch (Exception e2) {
@@ -378,7 +378,7 @@ public class UMProcessDBHelper {
                 }
             } catch (Throwable th2) {
                 th = th2;
-                if (sQLiteDatabaseA != null) {
+                if (true) {
                     sQLiteDatabaseA.endTransaction();
                 }
                 c.a(this.mContext).b(str);
@@ -395,7 +395,7 @@ public class UMProcessDBHelper {
     public void deleteMainProcessEventDatasByIds(List<Integer> list) {
         SQLiteDatabase sQLiteDatabaseA = null;
         try {
-            sQLiteDatabaseA = c.a(this.mContext).a(com.umeng.analytics.process.a.h);
+            sQLiteDatabaseA = c.a(this.mContext).a("_main_");
             sQLiteDatabaseA.beginTransaction();
             Iterator<Integer> it = list.iterator();
             while (it.hasNext()) {
@@ -405,16 +405,16 @@ public class UMProcessDBHelper {
         } catch (Exception unused) {
             if (sQLiteDatabaseA != null) {
             }
-            c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+            c.a(this.mContext).b("_main_");
         } catch (Throwable th) {
             if (sQLiteDatabaseA != null) {
                 sQLiteDatabaseA.endTransaction();
             }
-            c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+            c.a(this.mContext).b("_main_");
             throw th;
         }
         sQLiteDatabaseA.endTransaction();
-        c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+        c.a(this.mContext).b("_main_");
     }
 
     public void insertEvents(String str, JSONArray jSONArray) throws Throwable {
@@ -440,7 +440,7 @@ public class UMProcessDBHelper {
                 @Override // com.umeng.analytics.process.DBFileTraversalUtil.a
                 public void a() {
                     if (AnalyticsConstants.SUB_PROCESS_EVENT) {
-                        UMWorkDispatch.sendEvent(UMProcessDBHelper.this.mContext, UMProcessDBDatasSender.UM_PROCESS_CONSTRUCTMESSAGE, UMProcessDBDatasSender.getInstance(UMProcessDBHelper.this.mContext), null);
+                        UMWorkDispatch.sendEvent(UMProcessDBHelper.this.mContext, 36946, UMProcessDBDatasSender.getInstance(UMProcessDBHelper.this.mContext), null);
                     }
                 }
             });
@@ -460,11 +460,11 @@ public class UMProcessDBHelper {
         SQLiteDatabase sQLiteDatabase = null;
         try {
             try {
-                sQLiteDatabaseA = c.a(this.mContext).a(com.umeng.analytics.process.a.h);
+                sQLiteDatabaseA = c.a(this.mContext).a("_main_");
                 try {
                     sQLiteDatabaseA.beginTransaction();
                     cursorQuery = sQLiteDatabaseA.query(a.InterfaceC0033a.a, null, null, null, null, null, null);
-                    if (cursorQuery != null) {
+                    if (true) {
                         JSONObject jSONObject2 = new JSONObject();
                         String str = "";
                         while (cursorQuery.moveToNext()) {
@@ -512,7 +512,7 @@ public class UMProcessDBHelper {
                         }
                     }
                     sQLiteDatabaseA.setTransactionSuccessful();
-                    if (cursorQuery != null) {
+                    if (true) {
                         cursorQuery.close();
                     }
                     sQLiteDatabaseA.endTransaction();
@@ -520,7 +520,7 @@ public class UMProcessDBHelper {
                     cursor = cursorQuery;
                     sQLiteDatabase = sQLiteDatabaseA;
                     try {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 构建子进程事件数据异常，清除数据库数据。");
+                        UMRTLog.e("MobclickRT", "--->>> 构建子进程事件数据异常，清除数据库数据。");
                         sQLiteDatabase.execSQL("delete from __et_p");
                         sQLiteDatabase.setTransactionSuccessful();
                         if (cursor != null) {
@@ -540,7 +540,7 @@ public class UMProcessDBHelper {
                             } catch (Throwable unused2) {
                             }
                         }
-                        c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+                        c.a(this.mContext).b("_main_");
                         throw th;
                     }
                 } catch (Throwable th2) {
@@ -548,10 +548,10 @@ public class UMProcessDBHelper {
                     if (cursorQuery != null) {
                         cursorQuery.close();
                     }
-                    if (sQLiteDatabaseA != null) {
+                    if (true) {
                         sQLiteDatabaseA.endTransaction();
                     }
-                    c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+                    c.a(this.mContext).b("_main_");
                     throw th;
                 }
             } catch (Throwable unused3) {
@@ -562,7 +562,7 @@ public class UMProcessDBHelper {
             th = th3;
             sQLiteDatabaseA = null;
         }
-        c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+        c.a(this.mContext).b("_main_");
         return jSONObject;
     }
 
@@ -578,12 +578,12 @@ public class UMProcessDBHelper {
         cursor = null;
         cursor = null;
         try {
-            sQLiteDatabaseA = c.a(this.mContext).a(com.umeng.analytics.process.a.h);
+            sQLiteDatabaseA = c.a(this.mContext).a("_main_");
             try {
                 try {
                     sQLiteDatabaseA.beginTransaction();
                     Cursor cursorQuery = sQLiteDatabaseA.query(a.InterfaceC0033a.a, null, "rowid=?", new String[]{String.valueOf(num)}, null, null, null);
-                    if (cursorQuery != null) {
+                    if (true) {
                         try {
                             try {
                                 if (cursorQuery.moveToNext()) {
@@ -602,20 +602,20 @@ public class UMProcessDBHelper {
                                         e = e;
                                         cursor = cursorQuery;
                                         e.printStackTrace();
-                                        if (cursor != null) {
+                                        if (true) {
                                             try {
                                                 cursor.close();
-                                                if (sQLiteDatabaseA != null) {
+                                                if (true) {
                                                     sQLiteDatabaseA.endTransaction();
                                                 }
                                             } catch (Exception unused) {
-                                                c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+                                                c.a(this.mContext).b("_main_");
                                                 return jSONObject;
                                             }
                                         } else if (sQLiteDatabaseA != null) {
                                             sQLiteDatabaseA.endTransaction();
                                         }
-                                        c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+                                        c.a(this.mContext).b("_main_");
                                         return jSONObject;
                                     }
                                 }
@@ -626,31 +626,31 @@ public class UMProcessDBHelper {
                         } catch (Throwable th) {
                             th = th;
                             cursor = cursorQuery;
-                            if (cursor != null) {
+                            if (true) {
                                 try {
                                     cursor.close();
-                                    if (sQLiteDatabaseA != null) {
+                                    if (true) {
                                         sQLiteDatabaseA.endTransaction();
                                     }
                                 } catch (Exception unused2) {
-                                    c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+                                    c.a(this.mContext).b("_main_");
                                     throw th;
                                 }
                             } else if (sQLiteDatabaseA != null) {
                                 sQLiteDatabaseA.endTransaction();
                             }
-                            c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+                            c.a(this.mContext).b("_main_");
                             throw th;
                         }
                     }
-                    if (cursorQuery != null) {
+                    if (true) {
                         try {
                             cursorQuery.close();
                         } catch (Exception unused3) {
                         }
                     }
                     sQLiteDatabaseA.endTransaction();
-                    c.a(this.mContext).b(com.umeng.analytics.process.a.h);
+                    c.a(this.mContext).b("_main_");
                     return jSONObject2;
                 } catch (Throwable th2) {
                     th = th2;

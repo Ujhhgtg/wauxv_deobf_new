@@ -40,8 +40,8 @@ public class d implements de<d, e>, Serializable, Cloneable {
     public static final Map<e, dq> d;
     private static final long e = 2846460275012375038L;
     private static final ei f = new ei("Imprint");
-    private static final dy g = new dy("property", ek.k, 1);
-    private static final dy h = new dy(cl.n, (byte) 8, 2);
+    private static final dy g = new dy("property", 13, 1);
+    private static final dy h = new dy("version", (byte) 8, 2);
     private static final dy i = new dy("checksum", (byte) 11, 3);
     private static final Map<Class<? extends el>, em> j;
     private static final int k = 0;
@@ -200,9 +200,9 @@ public class d implements de<d, e>, Serializable, Cloneable {
         map.put(en.class, new b());
         map.put(eo.class, new C0042d());
         EnumMap enumMap = new EnumMap(e.class);
-        enumMap.put(e.PROPERTY, new dq("property", (byte) 1, new dt(ek.k, new dr((byte) 11), new dv((byte) 12, com.umeng.commonsdk.statistics.proto.e.class))));
-        enumMap.put(e.VERSION, new dq(cl.n, (byte) 1, new dr((byte) 8)));
-        enumMap.put(e.CHECKSUM, new dq("checksum", (byte) 1, new dr((byte) 11)));
+        enumMap.put(2846460275012375038L.PROPERTY, new dq("property", (byte) 1, new dt(13, new dr((byte) 11), new dv((byte) 12, com.umeng.commonsdk.statistics.proto.e.class))));
+        enumMap.put(2846460275012375038L.VERSION, new dq("version", (byte) 1, new dr((byte) 8)));
+        enumMap.put(2846460275012375038L.CHECKSUM, new dq("checksum", (byte) 1, new dr((byte) 11)));
         Map<e, dq> mapUnmodifiableMap = Collections.unmodifiableMap(enumMap);
         d = mapUnmodifiableMap;
         dq.a(d.class, mapUnmodifiableMap);
@@ -334,7 +334,7 @@ public class d implements de<d, e>, Serializable, Cloneable {
     /* JADX INFO: compiled from: obf */
     public enum e implements dl {
         PROPERTY(1, "property"),
-        VERSION(2, cl.n),
+        VERSION(2, "version"),
         CHECKSUM(3, "checksum");
 
         private static final Map<String, e> d = new HashMap();
@@ -399,7 +399,7 @@ public class d implements de<d, e>, Serializable, Cloneable {
     @Override // com.umeng.analytics.pro.de
     /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
     public e fieldForId(int i2) {
-        return e.a(i2);
+        return 2846460275012375038L.a(i2);
     }
 
     public d a(Map<String, com.umeng.commonsdk.statistics.proto.e> map) {

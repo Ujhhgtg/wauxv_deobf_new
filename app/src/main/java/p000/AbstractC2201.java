@@ -3,9 +3,8 @@ package p000;
 import android.content.ContentValues;
 import bsh.AbstractC0010;
 import bsh.Primitive;
-import com.alibaba.fastjson2.JSONB;
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
-import com.umeng.analytics.pro.bc;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Array;
@@ -20,8 +19,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Queue;
 import java.util.concurrent.atomic.AtomicReference;
-import me.hd.wauxv.hook.factory.MagicFactory;
-import okhttp3.internal.http2.Http2;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲇᲁᛸᤝᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -37,7 +34,7 @@ public abstract class AbstractC2201 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final C0146 m3963(C1706 c1706, String str) {
         C1227 c1227 = c1706.f5799;
-        c1227.getClass();
+        
         return new C0146(str, c1227);
     }
 
@@ -415,7 +412,7 @@ public abstract class AbstractC2201 {
                     String strM3982 = m3981(m3977(iM39714, bArr), bArr);
                     String strM39711 = m3979(m3977(iM39714 + 2, bArr), bArr);
                     String strM3983 = m3980(m3978(iM39714 + 4, bArr), bArr);
-                    strM39711.getClass();
+                    
                     StringBuilder sbM4753 = AbstractC2784.m4753(strM3982);
                     sbM4753.append("->");
                     sbM4753.append(strM3983);
@@ -472,7 +469,7 @@ public abstract class AbstractC2201 {
                 sb.append("|transient");
             }
         }
-        if ((i5 & bc.e) != 0) {
+        if ((i5 & 256) != 0) {
             sb.append("|native");
         }
         if ((i5 & 512) != 0) {
@@ -490,7 +487,7 @@ public abstract class AbstractC2201 {
         if ((i5 & 8192) != 0) {
             sb.append("|annotation");
         }
-        if ((i5 & Http2.INITIAL_MAX_FRAME_SIZE) != 0) {
+        if ((i5 & 16384) != 0) {
             sb.append("|enum");
         }
         if ((65536 & i5) != 0) {
@@ -518,24 +515,23 @@ public abstract class AbstractC2201 {
         contentValues.put("createTime", Long.valueOf(j));
         contentValues.put("talker", str);
         contentValues.put("content", str2);
-        c2060.getClass();
-        Object objM2131 = AbstractC0710.m2131(AbstractC1574.m3313(C2059.f6854), new Object[0]);
-        int i2 = AbstractC1745.f5844;
-        C1973 c1973M3492 = AbstractC0968.m2484(objM2131).m3492();
+        
+        Object objM2131 = AbstractC0710.m2131(AbstractC1574.dexToClass(C2059.f6854), new Object[0]);
+        int i2 = 0;
+        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objM2131).m3492();
         c1973M3492.f6370 = "convertFrom";
-        c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.m4527(ContentValues.class), AbstractC2519.m4527(Boolean.TYPE)}, 2));
+        c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(ContentValues.class), AbstractC2519.classToKClass(Boolean.TYPE)}, 2));
         c1973M3492.m3732();
-        ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3831(contentValues, Boolean.TRUE);
-        C2079.f6881.getClass();
-        Method methodM3315 = AbstractC1574.m3315(C2077.f6879);
+        ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831(contentValues, Boolean.TRUE);
+        
+        Method methodM3315 = AbstractC1574.dexToMethod(C2077.f6879);
         C2824 c2824 = C2824.f9070;
-        c2824.getClass();
-        C2663.f8577.getClass();
-        c2824.getClass();
-        C1973 c1973M3493 = AbstractC0968.m2484(C2663.m4656(AbstractC1574.m3313(C2823.f9069))).m3492();
-        c1973M3493.f6543 = AbstractC1574.m3313(C2076.f6878);
+        
+        
+        
+        MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(C2663.m4656(AbstractC1574.dexToClass(C2823.f9069))).m3492();
+        c1973M3493.returnType = AbstractC1574.dexToClass(C2076.f6878);
         Object objInvoke = methodM3315.invoke(((C1982) AbstractC1194.m2778(c1973M3493)).m3831(new Object[0]), objM2131);
-        "null cannot be cast to non-null type kotlin.Long";
         return ((Long) objInvoke).longValue();
     }
 
@@ -585,7 +581,7 @@ public abstract class AbstractC2201 {
         do {
             int i3 = iArr[0];
             byte b = bArr[i3];
-            i |= (b & JSONB.Constants.BC_SYMBOL) << (i2 * 7);
+            i |= (b & 127) << (i2 * 7);
             i2++;
             iArr[0] = i3 + 1;
             if ((b & 128) != 128) {
@@ -670,13 +666,13 @@ public abstract class AbstractC2201 {
         if ((abstractC1460Mo3473 instanceof AbstractC2398) || AbstractC2207.m4087(abstractC1460Mo3473, C2658.f8572)) {
             return EnumC3672.MAP;
         }
-        c1706.f5799.getClass();
+        
         throw AbstractC3681.m5314(interfaceC2654M3964);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public static final Class m3988(String str) {
-        C1565.f5440.getClass();
+        
         return AbstractC0710.m2130(C1565.m3275(), str);
     }
 
@@ -751,12 +747,12 @@ public abstract class AbstractC2201 {
                 if (jDivideUnsigned != 512409557603043100L) {
                     return null;
                 }
-                jDivideUnsigned = Long.divideUnsigned(-1L, j);
+                jDivideUnsigned = Long.divideUnsigned(-1L, 10L);
                 if (Long.compareUnsigned(j2, jDivideUnsigned) > 0) {
                     return null;
                 }
             }
-            long j3 = j2 * j;
+            long j3 = j2 * 10L;
             long j4 = (((long) iDigit) & 4294967295L) + j3;
             if (Long.compareUnsigned(j4, j3) < 0) {
                 return null;

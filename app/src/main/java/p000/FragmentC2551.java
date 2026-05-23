@@ -81,43 +81,43 @@ public class FragmentC2551 extends Fragment {
         public static final C2550 Companion = new C2550();
 
         public static final void registerIn(Activity activity) {
-            Companion.getClass();
+            
             activity.registerActivityLifecycleCallbacks(new C2552());
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPostCreated(Activity activity, Bundle bundle) {
-            int i = FragmentC2551.f8107;
+            int i = 0;
             AbstractC2549.m4563(activity, EnumC1769.ON_CREATE);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPostResumed(Activity activity) {
-            int i = FragmentC2551.f8107;
+            int i = 0;
             AbstractC2549.m4563(activity, EnumC1769.ON_RESUME);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPostStarted(Activity activity) {
-            int i = FragmentC2551.f8107;
+            int i = 0;
             AbstractC2549.m4563(activity, EnumC1769.ON_START);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPreDestroyed(Activity activity) {
-            int i = FragmentC2551.f8107;
+            int i = 0;
             AbstractC2549.m4563(activity, EnumC1769.ON_DESTROY);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPrePaused(Activity activity) {
-            int i = FragmentC2551.f8107;
+            int i = 0;
             AbstractC2549.m4563(activity, EnumC1769.ON_PAUSE);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPreStopped(Activity activity) {
-            int i = FragmentC2551.f8107;
+            int i = 0;
             AbstractC2549.m4563(activity, EnumC1769.ON_STOP);
         }
 

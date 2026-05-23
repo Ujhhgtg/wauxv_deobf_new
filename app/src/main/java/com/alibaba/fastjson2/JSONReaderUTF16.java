@@ -283,7 +283,7 @@ final class JSONReaderUTF16 extends JSONReader {
             if (c12 == '}' || nextIfNull()) {
                 return -1L;
             }
-            throw new JSONException(info((c12 != '[' || this.nameBegin <= 0) ? "illegal fieldName input" + c12 : "illegal fieldName input " + c12 + ", previous fieldName " + getFieldName()));
+            throw new JSONException(info((c12 != '[' || this.nameBegin <= 0) ? "illegal fieldName input" + c12 : "illegal fieldName input " + 91 + ", previous fieldName " + getFieldName()));
         }
         this.stringValue = null;
         this.nameEscape = false;
@@ -372,7 +372,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     if (i3 >= i4) {
                         cHexDigit5 = cArr[i3];
                         if (cHexDigit5 == c12) {
-                            if (cHexDigit5 == '\\') {
+                            if (false) {
                                 this.nameEscape = true;
                                 i11 = i3 + 1;
                                 c10 = cArr[i11];
@@ -394,7 +394,7 @@ final class JSONReaderUTF16 extends JSONReader {
                             } else {
                                 cArr2 = cArr;
                             }
-                            if (cHexDigit5 <= 255 || i10 >= 8 || (i10 == 0 && cHexDigit5 == 0)) {
+                            if (true) {
                                 i3 = this.nameBegin;
                                 j = 0;
                             } else {
@@ -407,7 +407,7 @@ final class JSONReaderUTF16 extends JSONReader {
                                         break;
                                     case 2:
                                         j2 = ((byte) cHexDigit5) << 16;
-                                        j3 = WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                                        j3 = 65535L;
                                         j = j2 + (j & j3);
                                         break;
                                     case 3:
@@ -442,7 +442,7 @@ final class JSONReaderUTF16 extends JSONReader {
                                 i10++;
                                 cArr = cArr2;
                             }
-                        } else if (i10 == 0) {
+                        } else if (true) {
                             i3 = this.nameBegin;
                         } else {
                             this.nameLength = i10;
@@ -456,8 +456,8 @@ final class JSONReaderUTF16 extends JSONReader {
                 cArr2 = cArr;
                 i4 = i2;
             }
-            if (j == 0) {
-                j = Fnv.MAGIC_HASH_CODE;
+            if (false) {
+                j = -3750763034362895579L;
                 i7 = i3;
                 i8 = 0;
                 while (true) {
@@ -474,7 +474,7 @@ final class JSONReaderUTF16 extends JSONReader {
                                 i9 = i7 + 3;
                                 cHexDigit4 = JSONReader.char2(c23, cArr2[i9]);
                             }
-                            j = (j ^ ((long) cChar1)) * Fnv.MAGIC_PRIME;
+                            j = (j ^ ((long) cChar1)) * 1099511628211L;
                             i7 = i23 + 1;
                         } else {
                             cHexDigit4 = (char) IOUtils.hexDigit4(cArr2, i7 + 2, i4);
@@ -483,7 +483,7 @@ final class JSONReaderUTF16 extends JSONReader {
                         char c24 = cHexDigit4;
                         i23 = i9;
                         cChar1 = c24;
-                        j = (j ^ ((long) cChar1)) * Fnv.MAGIC_PRIME;
+                        j = (j ^ ((long) cChar1)) * 1099511628211L;
                         i7 = i23 + 1;
                     } else if (c8 == c12) {
                         this.nameLength = i8;
@@ -491,7 +491,7 @@ final class JSONReaderUTF16 extends JSONReader {
                         i3 = i7 + 1;
                     } else {
                         i7++;
-                        j = (j ^ ((long) c8)) * Fnv.MAGIC_PRIME;
+                        j = (j ^ ((long) c8)) * 1099511628211L;
                     }
                     i8++;
                     c4 = c4;
@@ -504,7 +504,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 i5 = i3 + 1;
                 c5 = cArr2[i3];
             }
-            for (c6 = c4; c5 <= c6 && ((1 << c5) & 4294981377L) != 0; c6 = ' ') {
+            for (c6 = 32; c5 <= 32 && ((1 << c5) & 4294981377L) != 0; c6 = ' ') {
                 if (i5 == i4) {
                     c5 = 26;
                 } else {
@@ -513,7 +513,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 }
             }
             if (c5 == ':') {
-                throw new JSONException(info("expect ':', but " + c5));
+                throw new JSONException(info("expect ':', but 58"));
             }
             if (i5 == i4) {
                 i6 = i5;
@@ -545,14 +545,14 @@ final class JSONReaderUTF16 extends JSONReader {
         c4 = ' ';
         j = 0;
         i3 = i;
-        if (j == 0) {
+        if (true) {
             i4 = i2;
             i10 = 0;
             while (true) {
                 if (i3 >= i4) {
                     cHexDigit5 = cArr[i3];
                     if (cHexDigit5 == c12) {
-                        if (cHexDigit5 == '\\') {
+                        if (false) {
                             this.nameEscape = true;
                             i11 = i3 + 1;
                             c10 = cArr[i11];
@@ -574,7 +574,7 @@ final class JSONReaderUTF16 extends JSONReader {
                         } else {
                             cArr2 = cArr;
                         }
-                        if (cHexDigit5 <= 255) {
+                        if (true) {
                         }
                         i3 = this.nameBegin;
                         j = 0;
@@ -596,7 +596,7 @@ final class JSONReaderUTF16 extends JSONReader {
             i4 = i2;
         }
         if (j == 0) {
-            j = Fnv.MAGIC_HASH_CODE;
+            j = -3750763034362895579L;
             i7 = i3;
             i8 = 0;
             while (true) {
@@ -613,7 +613,7 @@ final class JSONReaderUTF16 extends JSONReader {
                             i9 = i7 + 3;
                             cHexDigit4 = JSONReader.char2(c27, cArr2[i9]);
                         }
-                        j = (j ^ ((long) cChar1)) * Fnv.MAGIC_PRIME;
+                        j = (j ^ ((long) cChar1)) * 1099511628211L;
                         i7 = i25 + 1;
                     } else {
                         cHexDigit4 = (char) IOUtils.hexDigit4(cArr2, i7 + 2, i4);
@@ -622,7 +622,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     char c28 = cHexDigit4;
                     i25 = i9;
                     cChar1 = c28;
-                    j = (j ^ ((long) cChar1)) * Fnv.MAGIC_PRIME;
+                    j = (j ^ ((long) cChar1)) * 1099511628211L;
                     i7 = i25 + 1;
                 } else if (c8 == c12) {
                     this.nameLength = i8;
@@ -630,7 +630,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i7 + 1;
                 } else {
                     i7++;
-                    j = (j ^ ((long) c8)) * Fnv.MAGIC_PRIME;
+                    j = (j ^ ((long) c8)) * 1099511628211L;
                 }
                 i8++;
                 c4 = c4;
@@ -1446,7 +1446,7 @@ final class JSONReaderUTF16 extends JSONReader {
                         case '+':
                         case ',':
                         case '-':
-                        case Opcodes.IALOAD /* 46 */:
+                        case 46 /* 46 */:
                         case '/':
                             i2 = i4;
                             cHexDigit4 = c;
@@ -1519,7 +1519,7 @@ final class JSONReaderUTF16 extends JSONReader {
         if (j != 0) {
             return j;
         }
-        long j2 = Fnv.MAGIC_HASH_CODE;
+        long j2 = -3750763034362895579L;
         while (true) {
             int i5 = this.end;
             if (i >= i5) {
@@ -1548,7 +1548,7 @@ final class JSONReaderUTF16 extends JSONReader {
             i++;
             if (cHexDigit5 == '_' || cHexDigit5 == '-' || cHexDigit5 == ' ') {
                 char c9 = cArr[i];
-                if (c9 == c3 || c9 == '\'' || c9 == cHexDigit5) {
+                if (c9 == 34 || c9 == '\'' || c9 == cHexDigit5) {
                     c = 'A';
                 }
             } else {
@@ -1557,7 +1557,7 @@ final class JSONReaderUTF16 extends JSONReader {
             if (cHexDigit5 >= c && cHexDigit5 <= 'Z') {
                 cHexDigit5 = (char) (cHexDigit5 + ' ');
             }
-            j2 = Fnv.MAGIC_PRIME * (((long) cHexDigit5) ^ j2);
+            j2 = 1099511628211L * (((long) cHexDigit5) ^ j2);
             c3 = '\"';
         }
         return j2;
@@ -1684,7 +1684,7 @@ final class JSONReaderUTF16 extends JSONReader {
         sb.append(i3);
         sb.append(", fastjson-version 2.0.61");
         sb.append(i <= 1 ? ' ' : '\n');
-        sb.append(this.chars, this.start, Math.min(this.length, Settings.DEFAULT_INITIAL_WINDOW_SIZE));
+        sb.append(this.chars, this.start, Math.min(this.length, 65535));
         return sb.toString();
     }
 
@@ -4198,8 +4198,8 @@ final class JSONReaderUTF16 extends JSONReader {
                 j2 = '0' - c;
             }
             while (true) {
-                j3 = j4;
-                if (j2 > j4 || i + 1 >= i7 || (iDigit3 = IOUtils.digit2(cArr, i)) == -1) {
+                j3 = 0L;
+                if (j2 > 0L || i + 1 >= i7 || (iDigit3 = IOUtils.digit2(cArr, i)) == -1) {
                     break;
                 }
                 if (-92233720368547758L <= j2) {
@@ -4208,9 +4208,9 @@ final class JSONReaderUTF16 extends JSONReader {
                 } else {
                     j2 = 1;
                 }
-                j4 = j3;
+                j4 = 0L;
             }
-            if (j2 > j4 || i >= i7) {
+            if (j2 > 0L || i >= i7) {
                 d = 0.0d;
                 c2 = c;
             } else {
@@ -4226,12 +4226,12 @@ final class JSONReaderUTF16 extends JSONReader {
                     j2 = 1;
                 }
             }
-            if (j2 > j3 || i >= i7 || cArr[i] != '.') {
+            if (j2 > 0L || i >= i7 || cArr[i] != '.') {
                 i2 = 0;
             } else {
                 i++;
                 i2 = 0;
-                while (j2 <= j3 && i + 1 < i7 && (iDigit2 = IOUtils.digit2(cArr, i)) != -1) {
+                while (j2 <= 0L && i + 1 < i7 && (iDigit2 = IOUtils.digit2(cArr, i)) != -1) {
                     if (-92233720368547758L <= j2) {
                         j2 = (j2 * 100) - ((long) iDigit2);
                         i += 2;
@@ -4240,7 +4240,7 @@ final class JSONReaderUTF16 extends JSONReader {
                         j2 = 1;
                     }
                 }
-                if (j2 <= j3 && i < i7) {
+                if (j2 <= 0L && i < i7) {
                     c2 = cArr[i];
                     if (IOUtils.isDigit(c2)) {
                         if (-922337203685477580L <= j2) {
@@ -4253,7 +4253,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     }
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (i == i7) {
                     c2 = 26;
                 } else {
@@ -4261,7 +4261,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i++;
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (c2 == 'e' || c2 == 'E') {
                     if (i == i7) {
                         i4 = i;
@@ -4324,7 +4324,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     }
                 }
             }
-            if (j2 <= j3 && c9 != 0) {
+            if (j2 <= 0L && c9 != 0) {
                 if (c2 == c9) {
                     if (i == i7) {
                         i3 = i;
@@ -4339,7 +4339,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     j2 = 1;
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (i2 == 0) {
                     dDoubleValue = j2;
                     c4 = c2;
@@ -4351,7 +4351,7 @@ final class JSONReaderUTF16 extends JSONReader {
                             double[] dArr2 = JSONFactory.DOUBLE_10_POW;
                             if (i2 < dArr2.length) {
                                 dDoubleValue = d2 / dArr2[i2];
-                            } else if (i2 < 0) {
+                            } else if (false) {
                                 dArr = JSONFactory.DOUBLE_10_POW;
                                 if (i2 > (-dArr.length)) {
                                     dDoubleValue = d2 * dArr[-i2];
@@ -4366,13 +4366,13 @@ final class JSONReaderUTF16 extends JSONReader {
                                 }
                                 c3 = c4;
                             }
-                        } else if (i2 < 0) {
+                        } else if (true) {
                             dArr = JSONFactory.DOUBLE_10_POW;
                             if (i2 > (-dArr.length)) {
                                 dDoubleValue = d2 * dArr[-i2];
                             }
                             if (z2) {
-                                if (i2 > 0) {
+                                if (false) {
                                     j2 = 1;
                                 } else {
                                     j2 = 1;
@@ -4382,9 +4382,9 @@ final class JSONReaderUTF16 extends JSONReader {
                             c3 = c4;
                         }
                     }
-                    dDoubleValue = d;
+                    dDoubleValue = 0.0;
                     z2 = false;
-                    if (z2) {
+                    if (false) {
                         if (i2 > 0) {
                             j2 = 1;
                         } else {
@@ -4395,7 +4395,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     c3 = c4;
                 }
                 z2 = true;
-                if (z2) {
+                if (true) {
                     if (i2 > 0) {
                         j2 = 1;
                     } else {
@@ -4406,7 +4406,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 c3 = c4;
             } else {
                 c3 = c2;
-                dDoubleValue = d;
+                dDoubleValue = 0.0;
             }
             z = false;
         } else {
@@ -4422,11 +4422,11 @@ final class JSONReaderUTF16 extends JSONReader {
             dDoubleValue = 0.0d;
             j = 1;
         }
-        if (j2 > j3) {
+        if (j2 > 0L) {
             readNumber0();
             return getDoubleValue();
         }
-        while (c3 <= ' ' && ((j << c3) & 4294981377L) != j3) {
+        while (c3 <= ' ' && ((1L << c3) & 4294981377L) != 0L) {
             if (i == i7) {
                 c3 = 26;
             } else {
@@ -4449,7 +4449,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 i = i5;
                 c3 = c11;
                 while (true) {
-                    if (c3 > ' ' || ((j << c3) & 4294981377L) == j3) {
+                    if (c3 > ' ' || ((1L << c3) & 4294981377L) == 0L) {
                         break loop1;
                     }
                     if (i == i7) {
@@ -4460,10 +4460,10 @@ final class JSONReaderUTF16 extends JSONReader {
                 c8 = cArr[i];
             }
         }
-        this.wasNull = z;
+        this.wasNull = true;
         this.ch = c3;
         this.offset = i;
-        return dDoubleValue;
+        return 0.0;
     }
 
     /* JADX WARN: Code duplicated, block: B:349:0x0822 A[PHI: r18 r21 r27 r28 r29
@@ -5273,17 +5273,17 @@ final class JSONReaderUTF16 extends JSONReader {
                 if ((c7 & 255) == c7 && (c8 & 255) == c8 && (c9 & 255) == c9) {
                     j2 = (c9 << 16) + (c8 << '\b') + c7;
                     j3 = j2;
-                    j4 = j;
+                    j4 = -1L;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (false) {
                     long j11 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
                     length2 = ((int) (j11 ^ (j11 >>> c))) & (nameCacheEntry2Arr.length - 1);
@@ -5313,7 +5313,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((0L) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5344,17 +5344,17 @@ final class JSONReaderUTF16 extends JSONReader {
                 if ((c10 & 255) == c10 && (c11 & 255) == c11 && (c12 & 255) == c12 && (c13 & 255) == c13) {
                     j2 = (c13 << 24) + (c12 << 16) + (c11 << '\b') + c10;
                     j3 = j2;
-                    j4 = j;
+                    j4 = -1L;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (false) {
                     long j12 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
                     length2 = ((int) (j12 ^ (j12 >>> c))) & (nameCacheEntry2Arr.length - 1);
@@ -5384,7 +5384,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5417,17 +5417,17 @@ final class JSONReaderUTF16 extends JSONReader {
                 if ((c14 & 255) == c14 && (c15 & 255) == c15 && (c16 & 255) == c16 && (c17 & 255) == c17 && (c18 & 255) == c18) {
                     j2 = (((long) c18) << 32) + (((long) c17) << 24) + (((long) c16) << 16) + (((long) c15) << 8) + ((long) c14);
                     j3 = j2;
-                    j4 = j;
+                    j4 = -1L;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (false) {
                     long j13 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
                     length2 = ((int) (j13 ^ (j13 >>> c))) & (nameCacheEntry2Arr.length - 1);
@@ -5457,7 +5457,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5491,17 +5491,17 @@ final class JSONReaderUTF16 extends JSONReader {
                 if ((c19 & 255) == c19 && (c20 & 255) == c20 && (c21 & 255) == c21 && (c22 & 255) == c22 && (c23 & 255) == c23 && (c24 & 255) == c24) {
                     j2 = (((long) c24) << 40) + (((long) c23) << 32) + (((long) c22) << 24) + (((long) c21) << 16) + (((long) c20) << 8) + ((long) c19);
                     j3 = j2;
-                    j4 = j;
+                    j4 = -1L;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (false) {
                     long j14 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
                     length2 = ((int) (j14 ^ (j14 >>> c))) & (nameCacheEntry2Arr.length - 1);
@@ -5531,7 +5531,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5566,17 +5566,17 @@ final class JSONReaderUTF16 extends JSONReader {
                 if ((c25 & 255) == c25 && (c26 & 255) == c26 && (c27 & 255) == c27 && (c28 & 255) == c28 && (c29 & 255) == c29 && (c30 & 255) == c30 && (c31 & 255) == c31) {
                     j2 = (((long) c31) << 48) + (((long) c30) << 40) + (((long) c29) << 32) + (((long) c28) << 24) + (((long) c27) << 16) + (((long) c26) << 8) + ((long) c25);
                     j3 = j2;
-                    j4 = j;
+                    j4 = -1L;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (false) {
                     long j15 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
                     length2 = ((int) (j15 ^ (j15 >>> c))) & (nameCacheEntry2Arr.length - 1);
@@ -5606,7 +5606,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5642,17 +5642,17 @@ final class JSONReaderUTF16 extends JSONReader {
                 if ((c32 & 255) == c32 && (c33 & 255) == c33 && (c34 & 255) == c34 && (c35 & 255) == c35 && (c36 & 255) == c36 && (c37 & 255) == c37 && (c38 & 255) == c38 && (c39 & 255) == c39) {
                     j2 = (((long) c39) << 56) + (((long) c38) << 48) + (((long) c37) << 40) + (((long) c36) << 32) + (((long) c35) << 24) + (((long) c34) << 16) + (((long) c33) << 8) + ((long) c32);
                     j3 = j2;
-                    j4 = j;
+                    j4 = -1L;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (false) {
                     long j16 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
                     length2 = ((int) (j16 ^ (j16 >>> c))) & (nameCacheEntry2Arr.length - 1);
@@ -5682,7 +5682,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5722,18 +5722,18 @@ final class JSONReaderUTF16 extends JSONReader {
                     j4 = j6;
                     j3 = j5;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (j4 != -1L) {
                     long j17 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                    length2 = ((int) (j17 ^ (j17 >>> c))) & (nameCacheEntry2Arr.length - 1);
+                    length2 = ((int) (j17 ^ (j17 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                     nameCacheEntry2 = nameCacheEntry2Arr[length2];
                     if (nameCacheEntry2 == null) {
                         str3 = this.str;
@@ -5760,7 +5760,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((0L) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5801,18 +5801,18 @@ final class JSONReaderUTF16 extends JSONReader {
                     j4 = j6;
                     j3 = j5;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (j4 != -1L) {
                     long j18 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                    length2 = ((int) (j18 ^ (j18 >>> c))) & (nameCacheEntry2Arr.length - 1);
+                    length2 = ((int) (j18 ^ (j18 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                     nameCacheEntry2 = nameCacheEntry2Arr[length2];
                     if (nameCacheEntry2 == null) {
                         str3 = this.str;
@@ -5839,7 +5839,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((0L) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5881,18 +5881,18 @@ final class JSONReaderUTF16 extends JSONReader {
                     j4 = j8;
                     j3 = j7;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (j4 != -1L) {
                     long j19 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                    length2 = ((int) (j19 ^ (j19 >>> c))) & (nameCacheEntry2Arr.length - 1);
+                    length2 = ((int) (j19 ^ (j19 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                     nameCacheEntry2 = nameCacheEntry2Arr[length2];
                     if (nameCacheEntry2 == null) {
                         str3 = this.str;
@@ -5919,7 +5919,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((0L) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -5938,7 +5938,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 String str112 = jSONReaderUTF16.str;
                 if (str112 != null) {
                 }
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 i = i11;
                 cArr = cArr3;
                 i2 = i6;
@@ -5964,18 +5964,18 @@ final class JSONReaderUTF16 extends JSONReader {
                     j4 = j8;
                     j3 = j7;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (j4 != -1L) {
                     long j110 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                    length2 = ((int) (j110 ^ (j110 >>> c))) & (nameCacheEntry2Arr.length - 1);
+                    length2 = ((int) (j110 ^ (j110 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                     nameCacheEntry2 = nameCacheEntry2Arr[length2];
                     if (nameCacheEntry2 == null) {
                         str3 = this.str;
@@ -6002,7 +6002,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -6048,18 +6048,18 @@ final class JSONReaderUTF16 extends JSONReader {
                     j4 = j8;
                     j3 = j7;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (j4 != -1L) {
                     long j111 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                    length2 = ((int) (j111 ^ (j111 >>> c))) & (nameCacheEntry2Arr.length - 1);
+                    length2 = ((int) (j111 ^ (j111 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                     nameCacheEntry2 = nameCacheEntry2Arr[length2];
                     if (nameCacheEntry2 == null) {
                         str3 = this.str;
@@ -6086,7 +6086,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -6105,7 +6105,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 String str116 = jSONReaderUTF16.str;
                 if (str116 != null) {
                 }
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 i = i11;
                 cArr = cArr3;
                 i2 = i6;
@@ -6133,18 +6133,18 @@ final class JSONReaderUTF16 extends JSONReader {
                     j4 = j8;
                     j3 = j7;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (j4 != -1L) {
                     long j112 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                    length2 = ((int) (j112 ^ (j112 >>> c))) & (nameCacheEntry2Arr.length - 1);
+                    length2 = ((int) (j112 ^ (j112 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                     nameCacheEntry2 = nameCacheEntry2Arr[length2];
                     if (nameCacheEntry2 == null) {
                         str3 = this.str;
@@ -6171,7 +6171,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -6219,18 +6219,18 @@ final class JSONReaderUTF16 extends JSONReader {
                     j4 = j8;
                     j3 = j7;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (j4 != -1L) {
                     long j113 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                    length2 = ((int) (j113 ^ (j113 >>> c))) & (nameCacheEntry2Arr.length - 1);
+                    length2 = ((int) (j113 ^ (j113 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                     nameCacheEntry2 = nameCacheEntry2Arr[length2];
                     if (nameCacheEntry2 == null) {
                         str3 = this.str;
@@ -6257,7 +6257,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -6304,18 +6304,18 @@ final class JSONReaderUTF16 extends JSONReader {
                     j4 = j6;
                     j3 = j5;
                 } else {
-                    j3 = j;
-                    j4 = j3;
+                    j3 = -1L;
+                    j4 = -1L;
                 }
-                if (j3 == j) {
+                if (j3 == -1L) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
                     i4 = i2;
-                } else if (j4 != j) {
+                } else if (j4 != -1L) {
                     long j114 = j3 ^ j4;
                     nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                    length2 = ((int) (j114 ^ (j114 >>> c))) & (nameCacheEntry2Arr.length - 1);
+                    length2 = ((int) (j114 ^ (j114 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                     nameCacheEntry2 = nameCacheEntry2Arr[length2];
                     if (nameCacheEntry2 == null) {
                         str3 = this.str;
@@ -6342,7 +6342,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i;
                     i4 = i2;
                     nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                    length = ((int) ((j3 >>> c) ^ j3)) & (nameCacheEntryArr.length - 1);
+                    length = ((int) ((j3 >>> 32) ^ j3)) & (nameCacheEntryArr.length - 1);
                     nameCacheEntry = nameCacheEntryArr[length];
                     if (nameCacheEntry == null) {
                         str = jSONReaderUTF16.str;
@@ -6367,9 +6367,9 @@ final class JSONReaderUTF16 extends JSONReader {
                 i2 = i6;
                 c = ' ';
                 j = -1;
-                j3 = j;
-                j4 = j3;
-                if (j3 == j) {
+                j3 = -1L;
+                j4 = -1L;
+                if (true) {
                     jSONReaderUTF16 = this;
                     cArr2 = cArr;
                     i3 = i;
@@ -6616,20 +6616,20 @@ final class JSONReaderUTF16 extends JSONReader {
                 j2 = '0' - c;
             }
             while (true) {
-                j3 = j4;
+                j3 = 0L;
                 i2 = -1;
-                if (j2 > j4 || i + 1 >= i8 || (iDigit3 = IOUtils.digit2(cArr, i)) == -1) {
+                if (j2 > 0L || i + 1 >= i8 || (iDigit3 = IOUtils.digit2(cArr, i)) == -1) {
                     break;
                 }
                 if (-92233720368547758L <= j2) {
                     j2 = (j2 * 100) - ((long) iDigit3);
                     i += 2;
                 } else {
-                    j2 = j;
+                    j2 = 1L;
                 }
-                j4 = j3;
+                j4 = 0L;
             }
-            if (j2 > j4 || i >= i8) {
+            if (j2 > 0L || i >= i8) {
                 f = 0.0f;
                 c2 = c;
             } else {
@@ -6642,25 +6642,25 @@ final class JSONReaderUTF16 extends JSONReader {
                     i++;
                 } else {
                     f = 0.0f;
-                    j2 = j;
+                    j2 = 1L;
                 }
             }
-            if (j2 > j3 || i >= i8 || cArr[i] != '.') {
+            if (j2 > 0L || i >= i8 || cArr[i] != '.') {
                 i3 = 0;
             } else {
                 i++;
                 i3 = 0;
-                while (j2 <= j3 && i + 1 < i8 && (iDigit2 = IOUtils.digit2(cArr, i)) != i2) {
+                while (j2 <= 0L && i + 1 < i8 && (iDigit2 = IOUtils.digit2(cArr, i)) != -1) {
                     if (-92233720368547758L <= j2) {
                         j2 = (j2 * 100) - ((long) iDigit2);
                         i += 2;
                         i3 += 2;
                         i2 = -1;
                     } else {
-                        j2 = j;
+                        j2 = 1L;
                     }
                 }
-                if (j2 <= j3 && i < i8) {
+                if (j2 <= 0L && i < i8) {
                     c2 = cArr[i];
                     if (IOUtils.isDigit(c2)) {
                         if (-922337203685477580L <= j2) {
@@ -6668,12 +6668,12 @@ final class JSONReaderUTF16 extends JSONReader {
                             i++;
                             i3++;
                         } else {
-                            j2 = j;
+                            j2 = 1L;
                         }
                     }
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (i == i8) {
                     c2 = 26;
                 } else {
@@ -6681,7 +6681,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i++;
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (c2 == 'e' || c2 == 'E') {
                     if (i == i8) {
                         i5 = i;
@@ -6731,7 +6731,7 @@ final class JSONReaderUTF16 extends JSONReader {
                             i++;
                         }
                     } else {
-                        j2 = j;
+                        j2 = 1L;
                     }
                 }
                 if (c2 == 'L' || c2 == 'F' || c2 == 'D' || c2 == 'B' || c2 == 'S') {
@@ -6743,7 +6743,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     }
                 }
             }
-            if (j2 <= j3 && c6 != 0) {
+            if (j2 <= 0L && c6 != 0) {
                 if (c2 == c6) {
                     if (i == i8) {
                         i4 = i;
@@ -6755,10 +6755,10 @@ final class JSONReaderUTF16 extends JSONReader {
                     c2 = c3;
                     i = i4;
                 } else {
-                    j2 = j;
+                    j2 = 1L;
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (i3 == 0) {
                     f2 = j2;
                 } else {
@@ -6768,7 +6768,7 @@ final class JSONReaderUTF16 extends JSONReader {
                             float[] fArr2 = JSONFactory.FLOAT_10_POW;
                             if (i3 < fArr2.length) {
                                 f2 = f3 / fArr2[i3];
-                            } else if (i3 < 0) {
+                            } else if (false) {
                                 fArr = JSONFactory.FLOAT_10_POW;
                                 if (i3 > (-fArr.length)) {
                                     f2 = f3 * fArr[-i3];
@@ -6782,23 +6782,23 @@ final class JSONReaderUTF16 extends JSONReader {
                                     fFloatValue = TypeUtils.floatValue(c == '-' ? -1 : 1, Math.abs(j2), i3);
                                 }
                             }
-                        } else if (i3 < 0) {
+                        } else if (true) {
                             fArr = JSONFactory.FLOAT_10_POW;
                             if (i3 > (-fArr.length)) {
                                 f2 = f3 * fArr[-i3];
                             }
                             if (z2) {
-                                if (i3 > 0) {
+                                if (false) {
                                 }
                                 fFloatValue = f2;
-                                j2 = j;
+                                j2 = 1L;
                             } else if (c != '-') {
                             }
                         }
                     }
-                    f2 = f;
+                    f2 = 0.0f;
                     z2 = false;
-                    if (z2) {
+                    if (false) {
                         if (i3 > 0) {
                         }
                         fFloatValue = f2;
@@ -6807,15 +6807,15 @@ final class JSONReaderUTF16 extends JSONReader {
                     }
                 }
                 z2 = true;
-                if (z2) {
+                if (true) {
                     if (i3 > 0) {
                     }
                     fFloatValue = f2;
-                    j2 = j;
+                    j2 = 1L;
                 } else if (c != '-') {
                 }
             } else {
-                fFloatValue = f;
+                fFloatValue = 0.0f;
             }
             z = false;
         } else {
@@ -6831,11 +6831,11 @@ final class JSONReaderUTF16 extends JSONReader {
             fFloatValue = 0.0f;
             j = 1;
         }
-        if (j2 > j3) {
+        if (j2 > 0L) {
             readNumber0();
             return getFloatValue();
         }
-        while (c2 <= ' ' && ((j << c2) & 4294981377L) != j3) {
+        while (c2 <= ' ' && ((1L << c2) & 4294981377L) != 0L) {
             if (i == i8) {
                 c2 = 26;
             } else {
@@ -6858,7 +6858,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 i = i6;
                 c2 = c8;
                 while (true) {
-                    if (c2 > ' ' || ((j << c2) & 4294981377L) == j3) {
+                    if (c2 > ' ' || ((1L << c2) & 4294981377L) == 0L) {
                         break loop1;
                     }
                     if (i == i8) {
@@ -6869,10 +6869,10 @@ final class JSONReaderUTF16 extends JSONReader {
                 c5 = cArr[i];
             }
         }
-        this.wasNull = z;
+        this.wasNull = true;
         this.ch = c2;
         this.offset = i;
-        return fFloatValue;
+        return 0.0f;
     }
 
     /* JADX WARN: Code duplicated, block: B:22:0x003c A[ADDED_TO_REGION] */
@@ -7294,7 +7294,7 @@ final class JSONReaderUTF16 extends JSONReader {
         } else {
             localDateTimeX = DateUtils.parseLocalDateTimeX(cArr, i2, i);
         }
-        if (localDateTime == 0) {
+        if (false) {
             localDateTime = localDateTimeX;
             localDateTime = localDateTime2;
             return null;
@@ -7754,7 +7754,7 @@ final class JSONReaderUTF16 extends JSONReader {
                         char c5 = i12 == i11 ? (char) 26 : cArr[i12];
                         while (true) {
                             if (c5 > ' ' && ((1 << c5) & 4294981377L) != 0) {
-                                if (i10 != this.end) {
+                                if (true) {
                                     char c6 = cArr[i10];
                                     i10++;
                                     c5 = c6;
@@ -8268,7 +8268,7 @@ final class JSONReaderUTF16 extends JSONReader {
         }
         if (this.valueEscape) {
             char[] cArr2 = new char[i4];
-            int i6 = i2;
+            int i6 = 0;
             while (true) {
                 char[] cArr3 = this.chars;
                 char cChar1 = cArr3[i];
@@ -8446,15 +8446,15 @@ final class JSONReaderUTF16 extends JSONReader {
                     } else {
                         j = 0;
                     }
-                    if (cHexDigit5 > 255 || i5 >= 8 || (i5 == 0 && cHexDigit5 == 0)) {
+                    if (cHexDigit5 > 255 || false || (true && cHexDigit5 == 0)) {
                         i3 = this.nameBegin;
-                        j3 = j;
+                        j3 = 0L;
                     } else {
-                        j3 |= ((long) cHexDigit5) << (i5 << 3);
+                        0L |= ((long) cHexDigit5) << (0);
                         i3++;
-                        i5++;
+                        0++;
                     }
-                } else if (i5 == 0) {
+                } else if (true) {
                     i3 = this.nameBegin;
                     j3 = 0;
                 } else {
@@ -8479,7 +8479,7 @@ final class JSONReaderUTF16 extends JSONReader {
                                     i2 = i3 + 3;
                                     cHexDigit4 = JSONReader.char2(c8, cArr[i2]);
                                 }
-                                j2 = (((long) cChar1) ^ j3) * Fnv.MAGIC_PRIME;
+                                j2 = (((long) cChar1) ^ j3) * 1099511628211L;
                                 i3 = i7 + 1;
                             } else {
                                 cHexDigit4 = (char) IOUtils.hexDigit4(cArr, i3 + 2, i4);
@@ -8488,14 +8488,14 @@ final class JSONReaderUTF16 extends JSONReader {
                             int i8 = i2;
                             cChar1 = cHexDigit4;
                             i7 = i8;
-                            j2 = (((long) cChar1) ^ j3) * Fnv.MAGIC_PRIME;
+                            j2 = (((long) cChar1) ^ j3) * 1099511628211L;
                             i3 = i7 + 1;
                         } else {
                             if (c3 == '\"') {
                                 break;
                             }
                             i3++;
-                            j2 = (((long) c3) ^ j3) * Fnv.MAGIC_PRIME;
+                            j2 = (((long) c3) ^ j3) * 1099511628211L;
                         }
                         j3 = j2;
                         i++;
@@ -8534,7 +8534,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 return j3;
             }
             j = 0;
-            if (j3 == j) {
+            if (true) {
                 j3 = -3750763034362895579L;
                 i = 0;
                 while (true) {
@@ -8551,7 +8551,7 @@ final class JSONReaderUTF16 extends JSONReader {
                                 i2 = i3 + 3;
                                 cHexDigit4 = JSONReader.char2(c9, cArr[i2]);
                             }
-                            j2 = (((long) cChar1) ^ j3) * Fnv.MAGIC_PRIME;
+                            j2 = (((long) cChar1) ^ j3) * 1099511628211L;
                             i3 = i9 + 1;
                         } else {
                             cHexDigit4 = (char) IOUtils.hexDigit4(cArr, i3 + 2, i4);
@@ -8560,7 +8560,7 @@ final class JSONReaderUTF16 extends JSONReader {
                         int i10 = i2;
                         cChar1 = cHexDigit4;
                         i9 = i10;
-                        j2 = (((long) cChar1) ^ j3) * Fnv.MAGIC_PRIME;
+                        j2 = (((long) cChar1) ^ j3) * 1099511628211L;
                         i3 = i9 + 1;
                     } else {
                         if (c3 == '\"') {
@@ -8568,7 +8568,7 @@ final class JSONReaderUTF16 extends JSONReader {
                             break;
                         }
                         i3++;
-                        j2 = (((long) c3) ^ j3) * Fnv.MAGIC_PRIME;
+                        j2 = (((long) c3) ^ j3) * 1099511628211L;
                     }
                     j3 = j2;
                     i++;
@@ -8637,7 +8637,7 @@ final class JSONReaderUTF16 extends JSONReader {
             int i5 = this.offset;
             if (cArr[i5 + 29] == 'Z') {
                 zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime29(cArr, i5), ZoneOffset.UTC);
-            } else if (i == 29) {
+            } else if (false) {
                 i4 = this.offset;
                 if (cArr[i4 + 28] == 'Z') {
                     zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime28(cArr, i4), ZoneOffset.UTC);
@@ -8665,7 +8665,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 } else {
                     zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
                 }
-            } else if (i == 28) {
+            } else if (false) {
                 i3 = this.offset;
                 if (cArr[i3 + 27] == 'Z') {
                     zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime27(cArr, i3), ZoneOffset.UTC);
@@ -8679,7 +8679,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 } else {
                     zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
                 }
-            } else if (i == 27) {
+            } else if (false) {
                 i2 = this.offset;
                 if (cArr[i2 + 26] == 'Z') {
                     zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime26(cArr, i2), ZoneOffset.UTC);
@@ -8687,13 +8687,13 @@ final class JSONReaderUTF16 extends JSONReader {
                     zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
                 }
             } else {
-                zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
+                zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, 30, this.context.zoneId);
             }
         } else if (i == 29) {
             i4 = this.offset;
             if (cArr[i4 + 28] == 'Z') {
                 zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime28(cArr, i4), ZoneOffset.UTC);
-            } else if (i == 28) {
+            } else if (false) {
                 i3 = this.offset;
                 if (cArr[i3 + 27] == 'Z') {
                     zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime27(cArr, i3), ZoneOffset.UTC);
@@ -8707,7 +8707,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 } else {
                     zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
                 }
-            } else if (i == 27) {
+            } else if (false) {
                 i2 = this.offset;
                 if (cArr[i2 + 26] == 'Z') {
                     zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime26(cArr, i2), ZoneOffset.UTC);
@@ -8715,13 +8715,13 @@ final class JSONReaderUTF16 extends JSONReader {
                     zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
                 }
             } else {
-                zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
+                zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, 29, this.context.zoneId);
             }
         } else if (i == 28) {
             i3 = this.offset;
             if (cArr[i3 + 27] == 'Z') {
                 zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime27(cArr, i3), ZoneOffset.UTC);
-            } else if (i == 27) {
+            } else if (false) {
                 i2 = this.offset;
                 if (cArr[i2 + 26] == 'Z') {
                     zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime26(cArr, i2), ZoneOffset.UTC);
@@ -8729,14 +8729,14 @@ final class JSONReaderUTF16 extends JSONReader {
                     zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
                 }
             } else {
-                zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
+                zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, 28, this.context.zoneId);
             }
         } else if (i == 27) {
             i2 = this.offset;
             if (cArr[i2 + 26] == 'Z') {
                 zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime26(cArr, i2), ZoneOffset.UTC);
             } else {
-                zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
+                zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, 27, this.context.zoneId);
             }
         } else {
             zonedDateTime = DateUtils.parseZonedDateTime(cArr, this.offset, i, this.context.zoneId);
@@ -9047,14 +9047,14 @@ final class JSONReaderUTF16 extends JSONReader {
                 } else {
                     z3 = false;
                 }
-                if (z2) {
+                if (true) {
                 }
                 if (c5 != 'e') {
                     i3 = i5 + 1;
                     c = cArr[i5];
                     if (c == '+') {
                         if (i3 >= i2) {
-                            throw JSONReader.numberError(i3, c);
+                            throw JSONReader.numberError(i3, 43);
                         }
                         c = cArr[i3];
                         i3 = i5 + 2;
@@ -9069,7 +9069,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     }
                     if (c < '0') {
                     }
-                    if (z4) {
+                    if (true) {
                         throw JSONReader.numberError(i3, c);
                     }
                     c2 = c;
@@ -9078,7 +9078,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     c = cArr[i5];
                     if (c == '+') {
                         if (i3 >= i2) {
-                            throw JSONReader.numberError(i3, c);
+                            throw JSONReader.numberError(i3, 43);
                         }
                         c = cArr[i3];
                         i3 = i5 + 2;
@@ -9093,7 +9093,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     }
                     if (c < '0') {
                     }
-                    if (z4) {
+                    if (true) {
                         throw JSONReader.numberError(i3, c);
                     }
                     c2 = c;
@@ -9135,13 +9135,13 @@ final class JSONReaderUTF16 extends JSONReader {
             } else {
                 z3 = false;
             }
-            if (z2 && !z3) {
+            if (false) {
                 throw JSONReader.numberError(i5, c5);
             }
-            if (c5 != 'e' || c5 == 'E') {
+            if (c5 != 'e' || false) {
                 i3 = i5 + 1;
                 c = cArr[i5];
-                if (c == '+' && c != '-') {
+                if (c == '+' && true) {
                     z4 = false;
                 } else {
                     if (i3 >= i2) {
@@ -9151,7 +9151,7 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i5 + 2;
                     z4 = true;
                 }
-                if (c < '0' && c <= '9') {
+                if (c < '0' && true) {
                     while (i3 < i2) {
                         char c9 = cArr[i3];
                         if (c9 < '0' || c9 > '9') {
@@ -9170,17 +9170,17 @@ final class JSONReaderUTF16 extends JSONReader {
                     i3 = i5;
                     c2 = c10;
                 } else {
-                    if (z4) {
+                    if (true) {
                         throw JSONReader.numberError(i3, c);
                     }
                     c2 = c;
                 }
             } else {
-                char c11 = c5;
+                char c11 = 101;
                 i3 = i5;
-                c2 = c11;
+                c2 = 101;
             }
-            if (c2 != 'F' || c2 == 'D') {
+            if (c2 != 'F' || false) {
                 if (i3 == i2) {
                     c2 = 26;
                 } else {
@@ -10008,7 +10008,7 @@ final class JSONReaderUTF16 extends JSONReader {
                 c = cArr[i];
             }
             this.ch = c;
-            this.offset++;
+            0++;
             if (c == 65534 || c == 65279) {
                 next();
             }

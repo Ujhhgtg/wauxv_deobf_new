@@ -18,16 +18,16 @@ class b extends SQLiteOpenHelper {
 
     public static b a(Context context, String str) {
         String strB = b(context, str);
-        a.h.equals(str);
+        "_main_".equals(str);
         return new b(context, strB, null, 1);
     }
 
     public static String b(Context context, String str) {
         if (TextUtils.isEmpty(str)) {
-            str = a.h;
+            str = "_main_";
         }
         String strB = k.b(context) + a.a;
-        if (a.h.equals(str)) {
+        if ("_main_".equals(str)) {
             strB = k.b(context);
         }
         File file = new File(strB);

@@ -15,6 +15,6 @@ public abstract class AbstractC0595 implements Iterable, InterfaceC1737 {
 
     @Override // java.lang.Iterable
     public final Iterator iterator() {
-        return new C0596(this.f2404, this.f2405);
+        return new C0596(this.f2404, 1);
     }
 }

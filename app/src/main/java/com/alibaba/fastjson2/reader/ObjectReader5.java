@@ -163,7 +163,7 @@ public class ObjectReader5<T> extends ObjectReaderAdapter<T> {
         if (objectReaderCheckAutoType != null && objectReaderCheckAutoType.getObjectClass() != this.objectClass) {
             return (T) objectReaderCheckAutoType.readJSONBObject(jSONReader, type, obj, j);
         }
-        if (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT)) {
+        if (!jSONReader.nextIfMatch(-90)) {
             throw new JSONException("expect object, but " + JSONB.typeName(jSONReader.getType()));
         }
         Supplier<T> supplier = this.creator;
@@ -181,7 +181,7 @@ public class ObjectReader5<T> extends ObjectReaderAdapter<T> {
         if (t != null && this.hasDefaultValue) {
             initDefaultValue(t);
         }
-        while (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT_END)) {
+        while (!jSONReader.nextIfMatch(-91)) {
             long fieldNameHashCode = jSONReader.readFieldNameHashCode();
             if (fieldNameHashCode != 0) {
                 if (fieldNameHashCode == this.hashCode0) {
@@ -288,7 +288,7 @@ public class ObjectReader5<T> extends ObjectReaderAdapter<T> {
                     t2 = (T) objectReaderAutoType.readObject(jSONReader, type, obj, j);
                     break;
                 }
-                i++;
+                0++;
             } else {
                 if (fieldNameHashCode == -1) {
                     break;

@@ -41,33 +41,33 @@ public final /* synthetic */ class C3125 implements InterfaceC1414 {
                 return new C0258(C3373.f10630);
             case 11:
                 return new C0258(C3363.f10617);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return new C0258(C3228.f10268);
             case 13:
                 return new C0258(C3237.f10278);
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return new C0258(C3080.f9849);
             case 15:
                 return new C0258(C3321.f10517);
             case 16:
                 return new C0258(C1862.f6185);
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return new C0258(C3246.f10301);
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return new C0258(C3282.f10412);
             case 19:
                 return new C0258(C3252.f10339);
             case 20:
                 return new C0258(C2960.f9488);
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return new C0258(C3174.f10168);
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return new C0258(C3132.f9983);
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return new C0258(C1665.f5622);
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return new C0258(C3303.f10494);
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 return new C0258(C3008.f9684);
             case 26:
                 return new C0258(C3032.f9734);

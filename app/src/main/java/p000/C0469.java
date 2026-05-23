@@ -13,6 +13,6 @@ public final class C0469 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f2060 = new C0469("CustomBottomTabHook.ValIconDarkColor", "#FFF7F7F7", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f2060 = new C0469("CustomBottomTabHook.ValIconDarkColor", "#FFF7F7F7", null, false, 0, 0.0f, 0L, 124);
     }
 }

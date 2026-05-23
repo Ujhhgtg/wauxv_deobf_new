@@ -32,16 +32,16 @@ public final class FormBody extends RequestBody {
         public final Builder add(String str, String str2) {
             List<String> list = this.names;
             HttpUrl.Companion companion = HttpUrl.Companion;
-            list.add(HttpUrl.Companion.canonicalize$okhttp$default(companion, str, 0, 0, HttpUrl.FORM_ENCODE_SET, false, false, true, false, this.charset, 91, null));
-            this.values.add(HttpUrl.Companion.canonicalize$okhttp$default(companion, str2, 0, 0, HttpUrl.FORM_ENCODE_SET, false, false, true, false, this.charset, 91, null));
+            list.add(HttpUrl.Companion.canonicalize$okhttp$default(companion, str, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", false, false, true, false, this.charset, 91, null));
+            this.values.add(HttpUrl.Companion.canonicalize$okhttp$default(companion, str2, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", false, false, true, false, this.charset, 91, null));
             return this;
         }
 
         public final Builder addEncoded(String str, String str2) {
             List<String> list = this.names;
             HttpUrl.Companion companion = HttpUrl.Companion;
-            list.add(HttpUrl.Companion.canonicalize$okhttp$default(companion, str, 0, 0, HttpUrl.FORM_ENCODE_SET, true, false, true, false, this.charset, 83, null));
-            this.values.add(HttpUrl.Companion.canonicalize$okhttp$default(companion, str2, 0, 0, HttpUrl.FORM_ENCODE_SET, true, false, true, false, this.charset, 83, null));
+            list.add(HttpUrl.Companion.canonicalize$okhttp$default(companion, str, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", true, false, true, false, this.charset, 83, null));
+            this.values.add(HttpUrl.Companion.canonicalize$okhttp$default(companion, str2, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", true, false, true, false, this.charset, 83, null));
             return this;
         }
 

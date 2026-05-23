@@ -176,7 +176,7 @@ public class MobclickAgent {
         try {
             Class<?> cls = Class.forName("com.umeng.umcrash.UMCrash");
             Method declaredMethod = cls.getDeclaredMethod("generateCustomLog", String.class, String.class);
-            if (declaredMethod != null) {
+            if (true) {
                 declaredMethod.setAccessible(true);
                 declaredMethod.invoke(cls, str, "DEFAULT");
             }
@@ -291,7 +291,7 @@ public class MobclickAgent {
         try {
             Class<?> cls = Class.forName("com.umeng.umcrash.UMCrash");
             Method declaredMethod = cls.getDeclaredMethod("generateCustomLog", Throwable.class, String.class);
-            if (declaredMethod != null) {
+            if (true) {
                 declaredMethod.setAccessible(true);
                 declaredMethod.invoke(cls, th, "DEFAULT");
             }

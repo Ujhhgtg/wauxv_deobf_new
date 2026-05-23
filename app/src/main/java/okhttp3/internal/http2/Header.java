@@ -15,15 +15,15 @@ public final class Header {
     public static final Companion Companion = new Companion(null);
     public static final C0539 PSEUDO_PREFIX = C0373.m1498(":");
     public static final String RESPONSE_STATUS_UTF8 = ":status";
-    public static final C0539 RESPONSE_STATUS = C0373.m1498(RESPONSE_STATUS_UTF8);
+    public static final C0539 RESPONSE_STATUS = C0373.m1498(":status");
     public static final String TARGET_METHOD_UTF8 = ":method";
-    public static final C0539 TARGET_METHOD = C0373.m1498(TARGET_METHOD_UTF8);
+    public static final C0539 TARGET_METHOD = C0373.m1498(":method");
     public static final String TARGET_PATH_UTF8 = ":path";
-    public static final C0539 TARGET_PATH = C0373.m1498(TARGET_PATH_UTF8);
+    public static final C0539 TARGET_PATH = C0373.m1498(":path");
     public static final String TARGET_SCHEME_UTF8 = ":scheme";
-    public static final C0539 TARGET_SCHEME = C0373.m1498(TARGET_SCHEME_UTF8);
+    public static final C0539 TARGET_SCHEME = C0373.m1498(":scheme");
     public static final String TARGET_AUTHORITY_UTF8 = ":authority";
-    public static final C0539 TARGET_AUTHORITY = C0373.m1498(TARGET_AUTHORITY_UTF8);
+    public static final C0539 TARGET_AUTHORITY = C0373.m1498(":authority");
 
     /* JADX INFO: compiled from: obf */
     public static final class Companion {

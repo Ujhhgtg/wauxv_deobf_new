@@ -359,32 +359,32 @@ public final class C0004 {
                         if (enumC0704 == enumC0705) {
                             C1983 c1983M2139 = c0712.m2139(9, "values", AbstractC2784.m4757("()[", str26), null, null);
                             C0005.m325(str32, str18, c1983M2139);
-                            c1983M2139.m3845(Opcodes.INVOKEVIRTUAL, "bsh/This", "enumValues", "()[Ljava/lang/Object;");
+                            c1983M2139.m3845(182, "bsh/This", "enumValues", "()[Ljava/lang/Object;");
                             C0005.m321("[" + str26, c1983M2139);
                             c1983M2139.m3844();
                             C1983 c1983M21310 = c0712.m2139(9, "valueOf", "(Ljava/lang/String;)" + str26, null, null);
                             c1983M21310.m3843(C3449.m4979(0, str26.length(), str26));
                             c1983M21310.m3847(25, 0);
-                            c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Enum", "valueOf", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;");
+                            c1983M21310.m3845(184, "java/lang/Enum", "valueOf", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;");
                             C0005.m321(str26, c1983M21310);
                             c1983M21310.m3844();
                             C1983 c1983M21311 = c0712.m2139(2, "<init>", "(Ljava/lang/String;I)V", null, null);
                             c1983M21311.m3847(25, 0);
                             c1983M21311.m3847(25, 1);
                             c1983M21311.m3847(21, 2);
-                            c1983M21311.m3845(Opcodes.INVOKESPECIAL, "java/lang/Enum", "<init>", "(Ljava/lang/String;I)V");
+                            c1983M21311.m3845(183, "java/lang/Enum", "<init>", "(Ljava/lang/String;I)V");
                             c1983M21311.m3847(25, 0);
                             c1983M21311.m3843(str18);
                             C0005.m320(new String[0], false, c1983M21311);
-                            c1983M21311.m3845(Opcodes.INVOKESTATIC, "bsh/This", "initInstance", "(Lbsh/GeneratedClass;Ljava/lang/String;[Ljava/lang/Object;)V");
-                            c1983M21311.m3839(Opcodes.RETURN);
+                            c1983M21311.m3845(184, "bsh/This", "initInstance", "(Lbsh/GeneratedClass;Ljava/lang/String;[Ljava/lang/Object;)V");
+                            c1983M21311.m3839(177);
                             c1983M21311.m3844();
                         }
                         C1983 c1983M21312 = c0712.m2139(8, "<clinit>", "()V", null, null);
                         C0711 c0713 = c0712;
-                        c1983M21312.m3836(Opcodes.GETSTATIC, str32, "UUID", "Ljava/lang/String;");
-                        c1983M21312.m3845(Opcodes.INVOKESTATIC, "bsh/This", "pullBshStatic", "(Ljava/lang/String;)Lbsh/This;");
-                        c1983M21312.m3836(Opcodes.PUTSTATIC, str32, This.Keys.BSHSTATIC + str18, str31);
+                        c1983M21312.m3836(178, str32, "UUID", "Ljava/lang/String;");
+                        c1983M21312.m3845(184, "bsh/This", "pullBshStatic", "(Ljava/lang/String;)Lbsh/This;");
+                        c1983M21312.m3836(179, str32, This.Keys.BSHSTATIC + str18, str31);
                         if (enumC0704 == enumC0705) {
                             int length4 = c3532Arr3.length;
                             int i17 = 3;
@@ -394,7 +394,7 @@ public final class C0004 {
                                 boolean zM5126 = c3533.m5125(str28);
                                 String str33 = c3533.f11060;
                                 if (zM5126) {
-                                    c1983M21312.m3846(Opcodes.NEW, str32);
+                                    c1983M21312.m3846(187, str32);
                                     c1983M21312.m3839(89);
                                     c1983M21312.m3843(str33);
                                     if (8 >= i17) {
@@ -404,8 +404,8 @@ public final class C0004 {
                                         c1983M21312.m3840(16, i17 - 3);
                                         i4 = i17 + 1;
                                     }
-                                    c1983M21312.m3845(Opcodes.INVOKESPECIAL, str32, "<init>", "(Ljava/lang/String;I)V");
-                                    c1983M21312.m3836(Opcodes.PUTSTATIC, str32, str33, str26);
+                                    c1983M21312.m3845(183, str32, "<init>", "(Ljava/lang/String;I)V");
+                                    c1983M21312.m3836(179, str32, str33, str26);
                                     i17 = i4;
                                     c = 179;
                                 } else {
@@ -416,8 +416,8 @@ public final class C0004 {
                             }
                         }
                         c1983M21312.m3843(C3449.m4979(0, str26.length(), str26));
-                        c1983M21312.m3845(Opcodes.INVOKESTATIC, "bsh/This", "initStatic", "(Ljava/lang/Class;)V");
-                        c1983M21312.m3839(Opcodes.RETURN);
+                        c1983M21312.m3845(184, "bsh/This", "initStatic", "(Ljava/lang/Class;)V");
+                        c1983M21312.m3839(177);
                         c1983M21312.m3844();
                         boolean z = false;
                         int i19 = 0;
@@ -488,19 +488,19 @@ public final class C0004 {
                                         C0005.m325(str32, str18, c1983M21313);
                                     } else {
                                         c1983M21313.m3847(25, 0);
-                                        c1983M21313.m3836(Opcodes.GETFIELD, str32, This.Keys.BSHTHIS + str18, str31);
+                                        c1983M21313.m3836(180, str32, This.Keys.BSHTHIS + str18, str31);
                                     }
                                     c1983M21313.m3843(strM1748);
                                     C0005.m320(strArr3, z3, c1983M21313);
                                     c1983M21313.m3839(4);
-                                    c1983M21313.m3845(Opcodes.INVOKEVIRTUAL, "bsh/This", "invokeMethod", "(Ljava/lang/String;[Ljava/lang/Object;Z)Ljava/lang/Object;");
+                                    c1983M21313.m3845(182, "bsh/This", "invokeMethod", "(Ljava/lang/String;[Ljava/lang/Object;Z)Ljava/lang/Object;");
                                     obj = obj;
                                     if (str37.equals(obj)) {
                                         c1983M21313.m3839(87);
-                                        c1983M21313.m3839(Opcodes.RETURN);
+                                        c1983M21313.m3839(177);
                                     } else if (str37.length() == 1) {
                                         boolean zEquals = str37.equals("Z");
-                                        int i23 = Opcodes.IRETURN;
+                                        int i23 = 172;
                                         if (zEquals) {
                                             str4 = "java/lang/Boolean";
                                             str5 = "booleanValue";
@@ -514,15 +514,15 @@ public final class C0004 {
                                             str4 = "java/lang/Short";
                                             str5 = "shortValue";
                                         } else if (str37.equals("F")) {
-                                            i23 = Opcodes.FRETURN;
+                                            i23 = 174;
                                             str4 = "java/lang/Float";
                                             str5 = "floatValue";
                                         } else if (str37.equals("J")) {
-                                            i23 = Opcodes.LRETURN;
+                                            i23 = 173;
                                             str4 = "java/lang/Long";
                                             str5 = "longValue";
                                         } else if (str37.equals("D")) {
-                                            i23 = Opcodes.DRETURN;
+                                            i23 = 175;
                                             str4 = "java/lang/Double";
                                             str5 = "doubleValue";
                                         } else {
@@ -530,12 +530,12 @@ public final class C0004 {
                                             str5 = "intValue";
                                         }
                                         String str38 = str5;
-                                        c1983M21313.m3846(Opcodes.CHECKCAST, str4);
-                                        c1983M21313.m3845(Opcodes.INVOKEVIRTUAL, str4, str38, "()".concat(str37));
+                                        c1983M21313.m3846(192, str4);
+                                        c1983M21313.m3845(182, str4, str38, "()".concat(str37));
                                         c1983M21313.m3839(i23);
                                     } else {
-                                        c1983M21313.m3846(Opcodes.CHECKCAST, C0005.m318(str37));
-                                        c1983M21313.m3839(Opcodes.ARETURN);
+                                        c1983M21313.m3846(192, C0005.m318(str37));
+                                        c1983M21313.m3839(176);
                                     }
                                     c1983M21313.m3844();
                                 }
@@ -613,7 +613,7 @@ public final class C0004 {
                                         length8 = i30;
                                     }
                                     str32 = str32;
-                                    c1983M21314.m3845(Opcodes.INVOKESPECIAL, c00015.f478, strM17410, strM323);
+                                    c1983M21314.m3845(183, c00015.f478, strM17410, strM323);
                                     C0005.m321(str39, c1983M21314);
                                     c1983M21314.m3844();
                                 }

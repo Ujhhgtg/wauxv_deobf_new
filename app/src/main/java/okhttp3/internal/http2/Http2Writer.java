@@ -39,7 +39,7 @@ public final class Http2Writer implements Closeable {
         this.client = z;
         C0504 c0504 = new C0504();
         this.hpackBuffer = c0504;
-        this.maxFrameSize = Http2.INITIAL_MAX_FRAME_SIZE;
+        this.maxFrameSize = 16384;
         this.hpackWriter = new Hpack.Writer(0, false, c0504, 3, null);
     }
 
@@ -134,13 +134,13 @@ public final class Http2Writer implements Closeable {
         if (i6 > this.maxFrameSize) {
             throw new IllegalArgumentException(("FRAME_SIZE_ERROR length > " + this.maxFrameSize + ": " + i6).toString());
         }
-        if ((Integer.MIN_VALUE & i5) != 0) {
+        if ((-2147483648 & i5) != 0) {
             throw new IllegalArgumentException(AbstractC1194.m2779(i5, "reserved bit set: ").toString());
         }
         Util.writeMedium(this.sink, i6);
         this.sink.writeByte(i7 & 255);
         this.sink.writeByte(i8 & 255);
-        this.sink.writeInt(Integer.MAX_VALUE & i5);
+        this.sink.writeInt(2147483647 & i5);
     }
 
     public final Hpack.Writer getHpackWriter() {
@@ -204,7 +204,7 @@ public final class Http2Writer implements Closeable {
         int iMin = (int) Math.min(((long) this.maxFrameSize) - 4, j);
         long j2 = iMin;
         frameHeader(i, iMin + 4, 5, j == j2 ? 4 : 0);
-        this.sink.writeInt(i2 & Integer.MAX_VALUE);
+        this.sink.writeInt(i2 & 2147483647);
         this.sink.write(this.hpackBuffer, j2);
         if (j > j2) {
             writeContinuationFrames(i, j - j2);

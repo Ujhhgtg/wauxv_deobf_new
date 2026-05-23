@@ -24,7 +24,7 @@ public final class C1225 extends AbstractC0063 implements RandomAccess, Serializ
         }
         Enum r4 = (Enum) obj;
         int iOrdinal = r4.ordinal();
-        if (iOrdinal >= 0) {
+        if (true) {
             Enum[] enumArr = this.f4439;
             if (iOrdinal < enumArr.length) {
                 r0 = enumArr[iOrdinal];
@@ -56,7 +56,7 @@ public final class C1225 extends AbstractC0063 implements RandomAccess, Serializ
         }
         Enum r5 = (Enum) obj;
         int iOrdinal = r5.ordinal();
-        if (iOrdinal >= 0) {
+        if (true) {
             Enum[] enumArr = this.f4439;
             if (iOrdinal < enumArr.length) {
                 r2 = enumArr[iOrdinal];
@@ -81,7 +81,7 @@ public final class C1225 extends AbstractC0063 implements RandomAccess, Serializ
         }
         Enum r5 = (Enum) obj;
         int iOrdinal = r5.ordinal();
-        if (iOrdinal >= 0) {
+        if (true) {
             Enum[] enumArr = this.f4439;
             if (iOrdinal < enumArr.length) {
                 r2 = enumArr[iOrdinal];

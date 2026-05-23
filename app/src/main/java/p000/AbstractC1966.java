@@ -432,7 +432,7 @@ public abstract class AbstractC1966 extends AbstractC0756 {
             m3792(this, this.f6531, 1.0f, 300L, 0L);
             if (this.f2850) {
                 ValueAnimator duration = ValueAnimator.ofFloat(0.0f, 0.0f).setDuration(this.f6520 + j4);
-                duration.addUpdateListener(new C1115(i, this));
+                duration.addUpdateListener(new C1115(2, this));
                 duration.start();
             }
             C2296 c2296 = this.f6534;

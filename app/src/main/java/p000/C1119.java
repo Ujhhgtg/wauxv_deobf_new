@@ -26,13 +26,13 @@ public final class C1119 implements Comparable {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static final long m2694(long j, long j2) {
         long j3 = 1000000;
-        long j4 = j2 / j3;
+        long j4 = j2 / 1000000L;
         long jM5315 = AbstractC3681.m5315(j, j4);
         if (-4611686018426L > jM5315 || jM5315 >= 4611686018427L) {
             return AbstractC3681.m5323(jM5315);
         }
-        long j5 = ((jM5315 * j3) + (j2 - (j4 * j3))) << 1;
-        int i = AbstractC1120.f4184;
+        long j5 = ((jM5315 * 1000000L) + (j2 - (j4 * 1000000L))) << 1;
+        int i = 0;
         return j5;
     }
 
@@ -52,7 +52,7 @@ public final class C1119 implements Comparable {
                 StringBuilder sb2 = new StringBuilder(i3);
                 int length = i3 - strValueOf.length();
                 int i4 = 1;
-                if (1 <= length) {
+                if (true) {
                     while (true) {
                         sb2.append('0');
                         if (i4 == length) {
@@ -116,7 +116,7 @@ public final class C1119 implements Comparable {
                 return AbstractC3681.m5323(j3 / ((long) 1000000));
             }
             long j4 = j3 << 1;
-            int i2 = AbstractC1120.f4184;
+            int i2 = 0;
             return j4;
         }
         long jM5315 = AbstractC3681.m5315(j >> 1, j2 >> 1);
@@ -130,17 +130,17 @@ public final class C1119 implements Comparable {
             return AbstractC3681.m5323(AbstractC2203.m4028(jM5315));
         }
         long j5 = (jM5315 * ((long) 1000000)) << 1;
-        int i3 = AbstractC1120.f4184;
+        int i3 = 0;
         return j5;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final long m2699(long j, EnumC1122 enumC1122) {
         if (j == f4180) {
-            return Long.MAX_VALUE;
+            return 9223372036854775807L;
         }
         if (j == f4181) {
-            return Long.MIN_VALUE;
+            return -9223372036854775808L;
         }
         return enumC1122.f4194.convert(j >> 1, ((((int) j) & 1) == 0 ? EnumC1122.NANOSECONDS : EnumC1122.MILLISECONDS).f4194);
     }
@@ -190,7 +190,7 @@ public final class C1119 implements Comparable {
         }
         if (j < 0) {
             j = ((long) (((int) j) & 1)) + ((-(j >> 1)) << 1);
-            int i2 = AbstractC1120.f4184;
+            int i2 = 0;
         }
         long jM2699 = m2699(j, EnumC1122.DAYS);
         int iM2699 = m2697(j) ? 0 : (int) (m2699(j, EnumC1122.HOURS) % ((long) 24));
@@ -230,7 +230,7 @@ public final class C1119 implements Comparable {
                 sb.append(' ');
             }
             if (iM26911 != 0 || z2 || z3 || z4) {
-                m2695(sb, iM26911, iM2696, 9, bv.aB, false);
+                m2695(sb, iM26911, iM2696, 9, "s", false);
             } else if (iM2696 >= 1000000) {
                 m2695(sb, iM2696 / 1000000, iM2696 % 1000000, 6, "ms", false);
             } else if (iM2696 >= 1000) {

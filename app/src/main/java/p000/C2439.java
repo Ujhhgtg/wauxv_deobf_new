@@ -86,9 +86,9 @@ public final class C2439 {
                 throw new C1653("Input stream is malformed: Varint too long (exceeded 32 bits)");
             }
             c0521.f2204 = i7;
-            i5 = (i8 == true ? 1 : 0) ^ (-128);
+            i5 = -128;
         }
-        return (((((i5 << 31) >> 31) ^ i5) == true ? 1 : 0) >> 1) ^ (Integer.MIN_VALUE & i5);
+        return (0) ^ (-2147483648 & i5);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
@@ -105,7 +105,7 @@ public final class C2439 {
             throw new C0761();
         }
         long jM1846 = c0521.m1846(false);
-        return (jM1846 & Long.MIN_VALUE) ^ ((((jM1846 << 63) >> 63) ^ jM1846) >> 1);
+        return (jM1846 & -9223372036854775808L) ^ ((((jM1846 << 63) >> 63) ^ jM1846) >> 1);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
@@ -248,17 +248,17 @@ public final class C2439 {
         int iOrdinal = this.f7750.ordinal();
         EnumC2429 enumC2429 = EnumC2429.DEFAULT;
         if (iOrdinal == 1) {
-            m4411(enumC2429);
+            m4411(EnumC2429.DEFAULT);
             return;
         }
         EnumC2429 enumC24210 = EnumC2429.FIXED;
         if (iOrdinal == 2) {
-            m4413(enumC24210);
+            m4413(EnumC2429.FIXED);
             return;
         }
         if (iOrdinal != 3) {
             if (iOrdinal == 4) {
-                m4411(enumC24210);
+                m4411(EnumC2429.FIXED);
                 return;
             } else {
                 throw new C2437("Unsupported start group or end group wire type: " + this.f7750, null);
@@ -268,7 +268,7 @@ public final class C2439 {
         if (this.f7750 != enumC2434) {
             throw new C2437("Expected wire type " + enumC2434 + ", but found " + this.f7750, null);
         }
-        int iM4403 = m4403(enumC2429);
+        int iM4403 = m4403(EnumC2429.DEFAULT);
         m4402(iM4403);
         C0521 c0521 = this.f7748;
         c0521.m1844(iM4403);

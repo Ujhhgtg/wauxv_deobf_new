@@ -27,7 +27,7 @@ public final class C0870 {
         StringBuilder sb = c2792.f8914;
         sb.append((char) 160);
         sb.append('\n');
-        ((C2102) ((C1676) c2103.f6935).f5661).getClass();
+        
         c2792.m4770(sb.length(), str2);
         sb.append((CharSequence) str2);
         c2103.m3914();

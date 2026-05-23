@@ -26,17 +26,17 @@ public class UMModuleRegister {
     private static HashMap<String, UMLogDataProtocol> mModuleMap;
 
     public static String eventType2ModuleName(int i) {
-        String str = (i < PUSH_EVENT_VALUE_LOW || i > PUSH_EVENT_VALUE_HIGH) ? "analytics" : "push";
-        if (i >= SHARE_EVENT_VALUE_LOW && i <= SHARE_EVENT_VALUE_HIGH) {
+        String str = (i < 16385 || i > 20480) ? "analytics" : "push";
+        if (i >= 24577 && i <= 28672) {
             str = "share";
         }
-        if (i >= 32769 && i <= INNER_EVENT_VALUE_HIGH) {
-            str = INNER;
+        if (i >= 32769 && i <= 36864) {
+            str = "internal";
         }
-        if (i >= 36945 && i <= PROCESS_EVENT_VALUE_HIGH) {
-            str = PROCESS;
+        if (i >= 36945 && i <= 37120) {
+            str = "process";
         }
-        return (i < APPSTATUS_SWITCH_LOW || i > APPSTATUS_SWITCH_HIGH) ? str : APPSTATUS;
+        return (i < 37121 || i > 37136) ? str : "appstatus";
     }
 
     public static Context getAppContext() {

@@ -21,7 +21,7 @@ public final /* synthetic */ class RunnableC1267 implements Runnable {
         switch (this.f4599) {
             case 0:
                 SharedPreferencesC1269 sharedPreferencesC1269 = this.f4600;
-                sharedPreferencesC1269.getClass();
+                
                 AbstractC2207.m4122(sharedPreferencesC1269);
                 return;
             default:

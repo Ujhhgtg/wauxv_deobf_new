@@ -102,7 +102,7 @@ public class ObjectReader1<T> extends ObjectReaderAdapter<T> {
             return function != null ? (T) function.apply(t2) : t2;
         }
         int i2 = 0;
-        if (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT)) {
+        if (!jSONReader.nextIfMatch(-90)) {
             if (!jSONReader.isTypeRedirect()) {
                 throw new JSONException(jSONReader.info("expect object, but " + JSONB.typeName(jSONReader.getType())));
             }
@@ -123,7 +123,7 @@ public class ObjectReader1<T> extends ObjectReaderAdapter<T> {
         if (t != null && this.hasDefaultValue) {
             initDefaultValue(t);
         }
-        while (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT_END)) {
+        while (!jSONReader.nextIfMatch(-91)) {
             long fieldNameHashCode = jSONReader.readFieldNameHashCode();
             if (fieldNameHashCode == getTypeKeyHash() && i2 == 0) {
                 long typeHashCode = jSONReader.readTypeHashCode();

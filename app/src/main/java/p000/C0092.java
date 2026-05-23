@@ -48,7 +48,7 @@ public final class C0092 {
                 return "ACTION_ACCESSIBILITY_FOCUS";
             case 128:
                 return "ACTION_CLEAR_ACCESSIBILITY_FOCUS";
-            case bc.e /* 256 */:
+            case 256 /* 256 */:
                 return "ACTION_NEXT_AT_MOVEMENT_GRANULARITY";
             case 512:
                 return "ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY";
@@ -60,7 +60,7 @@ public final class C0092 {
                 return "ACTION_SCROLL_FORWARD";
             case 8192:
                 return "ACTION_SCROLL_BACKWARD";
-            case Http2.INITIAL_MAX_FRAME_SIZE /* 16384 */:
+            case 16384 /* 16384 */:
                 return "ACTION_COPY";
             case 32768:
                 return "ACTION_PASTE";
@@ -74,55 +74,55 @@ public final class C0092 {
                 return "ACTION_COLLAPSE";
             case 2097152:
                 return "ACTION_SET_TEXT";
-            case R.id.accessibilityActionMoveWindow:
+            case 16908354:
                 return "ACTION_MOVE_WINDOW";
             default:
                 switch (i) {
-                    case R.id.accessibilityActionShowOnScreen:
+                    case 16908342:
                         return "ACTION_SHOW_ON_SCREEN";
-                    case R.id.accessibilityActionScrollToPosition:
+                    case 16908343:
                         return "ACTION_SCROLL_TO_POSITION";
-                    case R.id.accessibilityActionScrollUp:
+                    case 16908344:
                         return "ACTION_SCROLL_UP";
-                    case R.id.accessibilityActionScrollLeft:
+                    case 16908345:
                         return "ACTION_SCROLL_LEFT";
-                    case R.id.accessibilityActionScrollDown:
+                    case 16908346:
                         return "ACTION_SCROLL_DOWN";
-                    case R.id.accessibilityActionScrollRight:
+                    case 16908347:
                         return "ACTION_SCROLL_RIGHT";
-                    case R.id.accessibilityActionContextClick:
+                    case 16908348:
                         return "ACTION_CONTEXT_CLICK";
-                    case R.id.accessibilityActionSetProgress:
+                    case 16908349:
                         return "ACTION_SET_PROGRESS";
                     default:
                         switch (i) {
-                            case R.id.accessibilityActionShowTooltip:
+                            case 16908356:
                                 return "ACTION_SHOW_TOOLTIP";
-                            case R.id.accessibilityActionHideTooltip:
+                            case 16908357:
                                 return "ACTION_HIDE_TOOLTIP";
-                            case R.id.accessibilityActionPageUp:
+                            case 16908358:
                                 return "ACTION_PAGE_UP";
-                            case R.id.accessibilityActionPageDown:
+                            case 16908359:
                                 return "ACTION_PAGE_DOWN";
-                            case R.id.accessibilityActionPageLeft:
+                            case 16908360:
                                 return "ACTION_PAGE_LEFT";
-                            case R.id.accessibilityActionPageRight:
+                            case 16908361:
                                 return "ACTION_PAGE_RIGHT";
-                            case R.id.accessibilityActionPressAndHold:
+                            case 16908362:
                                 return "ACTION_PRESS_AND_HOLD";
                             default:
                                 switch (i) {
-                                    case R.id.accessibilityActionImeEnter:
+                                    case 16908372:
                                         return "ACTION_IME_ENTER";
-                                    case R.id.accessibilityActionDragStart:
+                                    case 16908373:
                                         return "ACTION_DRAG_START";
-                                    case R.id.accessibilityActionDragDrop:
+                                    case 16908374:
                                         return "ACTION_DRAG_DROP";
-                                    case R.id.accessibilityActionDragCancel:
+                                    case 16908375:
                                         return "ACTION_DRAG_CANCEL";
                                     default:
                                         switch (i) {
-                                            case R.id.accessibilityActionScrollInDirection:
+                                            case 16908382:
                                                 return "ACTION_SCROLL_IN_DIRECTION";
                                             case R.id.ALT:
                                                 return "ACTION_SET_EXTENDED_SELECTION";

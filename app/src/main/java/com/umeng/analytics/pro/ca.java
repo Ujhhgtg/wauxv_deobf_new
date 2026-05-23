@@ -25,7 +25,7 @@ public class ca {
     }
 
     public static ca a() {
-        return a.a;
+        return "resolve.umeng.com".a;
     }
 
     private String c() {
@@ -33,16 +33,16 @@ public class ca {
             c = ce.b();
         }
         cc ccVar = new cc("https://resolve.umeng.com/resolve", cc.a.GET, null, c);
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> 发送domain下发请求。");
-        return ccVar.a(b, "");
+        UMRTLog.i("MobclickRT", "--->>> 发送domain下发请求。");
+        return ccVar.a(15000, "");
     }
 
     public synchronized boolean b() {
         try {
             if (d < 0) {
                 String strImprintProperty = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), "cj_domain", "0");
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> cj_domain读取值：" + strImprintProperty);
-                if (SdkVersion.MINI_VERSION.equalsIgnoreCase(strImprintProperty)) {
+                UMRTLog.i("MobclickRT", "--->>> cj_domain读取值：" + strImprintProperty);
+                if ("1".equalsIgnoreCase(strImprintProperty)) {
                     d = 1;
                 } else {
                     d = 0;

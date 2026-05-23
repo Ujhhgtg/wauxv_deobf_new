@@ -15,18 +15,18 @@ import p000.C0236;
 /* JADX INFO: loaded from: classes.dex */
 public class MaterialTextView extends C0236 {
     public MaterialTextView(Context context, AttributeSet attributeSet) {
-        super(AbstractC2665.m4673(context, attributeSet, R.attr.textViewStyle, 0), attributeSet, R.attr.textViewStyle);
+        super(AbstractC2665.m4673(context, attributeSet, 16842884, 0), attributeSet, 16842884);
         Context context2 = getContext();
         if (AbstractC2207.m4110(context2, me.hd.wauxv.R.attr.textAppearanceLineHeightEnabled, true)) {
             Resources.Theme theme = context2.getTheme();
             int[] iArr = AbstractC2467.f7856;
-            TypedArray typedArrayObtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, iArr, R.attr.textViewStyle, 0);
+            TypedArray typedArrayObtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, iArr, 16842884, 0);
             int iM716 = m716(context2, typedArrayObtainStyledAttributes, 1, 2);
             typedArrayObtainStyledAttributes.recycle();
             if (iM716 != -1) {
                 return;
             }
-            TypedArray typedArrayObtainStyledAttributes2 = theme.obtainStyledAttributes(attributeSet, iArr, R.attr.textViewStyle, 0);
+            TypedArray typedArrayObtainStyledAttributes2 = theme.obtainStyledAttributes(attributeSet, iArr, 16842884, 0);
             int resourceId = typedArrayObtainStyledAttributes2.getResourceId(0, -1);
             typedArrayObtainStyledAttributes2.recycle();
             if (resourceId != -1) {

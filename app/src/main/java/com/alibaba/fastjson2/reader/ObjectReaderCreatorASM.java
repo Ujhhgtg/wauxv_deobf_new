@@ -145,7 +145,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             this.externalClass = z;
             this.fieldReaders = fieldReaderArr;
             this.defaultConstructor = constructor;
-            this.objectType = cls == null ? ASMUtils.TYPE_OBJECT : ASMUtils.type(cls);
+            this.objectType = cls == null ? "java/lang/Object" : ASMUtils.type(cls);
             boolean z2 = false;
             int iMin = 0;
             int iMax = 0;
@@ -188,23 +188,23 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         }
 
         public boolean disableAutoType() {
-            return (this.beanInfo.readerFeatures & FieldInfo.DISABLE_AUTO_TYPE) != 0;
+            return (this.beanInfo.readerFeatures & 576460752303423488L) != 0;
         }
 
         public boolean disableJSONB() {
-            return (this.beanInfo.readerFeatures & FieldInfo.DISABLE_JSONB) != 0;
+            return (this.beanInfo.readerFeatures & 1152921504606846976L) != 0;
         }
 
         public boolean disableReferenceDetect() {
-            return (this.beanInfo.readerFeatures & FieldInfo.DISABLE_REFERENCE_DETECT) != 0;
+            return (this.beanInfo.readerFeatures & 144115188075855872L) != 0;
         }
 
         public boolean disableSmartMatch() {
-            return (this.beanInfo.readerFeatures & FieldInfo.DISABLE_SMART_MATCH) != 0;
+            return (this.beanInfo.readerFeatures & 9007199254740992L) != 0;
         }
 
         public boolean disableSupportArrayMapping() {
-            return (this.beanInfo.readerFeatures & FieldInfo.DISABLE_ARRAY_MAPPING) != 0;
+            return (this.beanInfo.readerFeatures & 288230376151711744L) != 0;
         }
     }
 
@@ -278,7 +278,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         }
         methodWriter.aload(0);
         methodWriter.iconst_n(fieldReaderArr.length);
-        methodWriter.anewArray(ASMUtils.TYPE_OBJECT);
+        methodWriter.anewArray("java/lang/Object");
         while (i < fieldReaderArr.length) {
             FieldReader fieldReader2 = fieldReaderArr[i];
             methodWriter.dup();
@@ -337,10 +337,10 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         classWriter.visitField(17, "consumer", "Ljava/util/function/Consumer;");
         classWriter.visitField(1, "object", strDesc2);
         String str = "object";
-        classWriter.visit(52, 49, strReplace, ASMUtils.TYPE_OBJECT, new String[]{z ? ASMUtils.TYPE_BYTE_ARRAY_VALUE_CONSUMER : ASMUtils.TYPE_CHAR_ARRAY_VALUE_CONSUMER});
+        classWriter.visit(52, 49, strReplace, "java/lang/Object", new String[]{z ? ASMUtils.TYPE_BYTE_ARRAY_VALUE_CONSUMER : ASMUtils.TYPE_CHAR_ARRAY_VALUE_CONSUMER});
         MethodWriter methodWriterVisitMethod = classWriter.visitMethod(1, "<init>", "(Ljava/util/function/Consumer;)V", 32);
         methodWriterVisitMethod.aload(0);
-        methodWriterVisitMethod.invokespecial(ASMUtils.TYPE_OBJECT, "<init>", "()V");
+        methodWriterVisitMethod.invokespecial("java/lang/Object", "<init>", "()V");
         methodWriterVisitMethod.aload(0);
         methodWriterVisitMethod.aload(1);
         methodWriterVisitMethod.putfield(strReplace, "consumer", "Ljava/util/function/Consumer;");
@@ -350,18 +350,18 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         MethodWriter methodWriterVisitMethod2 = classWriter.visitMethod(1, "beforeRow", "(I)V", 32);
         methodWriterVisitMethod2.aload(0);
         newObject(methodWriterVisitMethod2, strType, defaultConstructor);
-        methodWriterVisitMethod2.putfield(strReplace, str, strDesc2);
+        methodWriterVisitMethod2.putfield(strReplace, "object", strDesc2);
         methodWriterVisitMethod2.return_();
         methodWriterVisitMethod2.visitMaxs(3, 3);
         MethodWriter methodWriterVisitMethod3 = classWriter.visitMethod(1, "afterRow", "(I)V", 32);
         methodWriterVisitMethod3.aload(0);
         methodWriterVisitMethod3.getfield(strReplace, "consumer", "Ljava/util/function/Consumer;");
         methodWriterVisitMethod3.aload(0);
-        methodWriterVisitMethod3.getfield(strReplace, str, strDesc2);
+        methodWriterVisitMethod3.getfield(strReplace, "object", strDesc2);
         methodWriterVisitMethod3.invokeinterface("java/util/function/Consumer", "accept", "(Ljava/lang/Object;)V");
         methodWriterVisitMethod3.aload(0);
         methodWriterVisitMethod3.aconst_null();
-        methodWriterVisitMethod3.putfield(strReplace, str, strDesc2);
+        methodWriterVisitMethod3.putfield(strReplace, "object", strDesc2);
         methodWriterVisitMethod3.return_();
         methodWriterVisitMethod3.visitMaxs(3, 3);
         MethodWriter methodWriterVisitMethod4 = classWriter.visitMethod(1, "accept", z ? "(II[BIILjava/nio/charset/Charset;)V" : "(II[CII)V", 32);
@@ -402,13 +402,13 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             Type type = fieldReader.fieldType;
             ClassWriter classWriter2 = classWriter;
             methodWriterVisitMethod4.aload(0);
-            methodWriterVisitMethod4.getfield(strReplace, str, strDesc2);
+            methodWriterVisitMethod4.getfield(strReplace, "object", strDesc2);
             String str3 = strDesc2;
             Class cls3 = Byte.TYPE;
-            String str4 = str;
+            String str4 = "object";
             String str5 = strReplace;
             Class cls4 = Short.TYPE;
-            String str6 = str2;
+            String str6 = "(I)V";
             int i4 = length;
             Class cls5 = Integer.TYPE;
             Label[] labelArr2 = labelArr;
@@ -433,7 +433,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     strM2785 = "(Ljava/lang/Byte;)V";
                 } else if (type == cls5) {
                     strDesc = "I";
-                    strM2785 = str6;
+                    strM2785 = "(I)V";
                 } else {
                     methodWriterVisitMethod4.invokestatic("java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;");
                     strDesc = "Ljava/lang/Integer;";
@@ -559,9 +559,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 fieldReaderArr2 = fieldReaderArr;
                 classWriter = classWriter2;
                 strDesc2 = str3;
-                str = str4;
+                str = "object";
                 strReplace = str5;
-                str2 = str6;
+                str2 = "(I)V";
                 length = i4;
                 labelArr = labelArr2;
             } else {
@@ -574,9 +574,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 fieldReaderArr2 = fieldReaderArr;
                 classWriter = classWriter2;
                 strDesc2 = str3;
-                str = str4;
+                str = "object";
                 strReplace = str5;
-                str2 = str6;
+                str2 = "(I)V";
                 length = i4;
                 labelArr = labelArr2;
             }
@@ -634,11 +634,11 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 return "objectReader10";
             case 11:
                 return "objectReader11";
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return "objectReader12";
             case 13:
                 return "objectReader13";
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return "objectReader14";
             case 15:
                 return "objectReader15";
@@ -682,7 +682,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         } else {
             if (supplier != null) {
                 methodWriter.aload(0);
-                methodWriter.getfield(str, "creator", ASMUtils.DESC_SUPPLIER);
+                methodWriter.getfield(str, "creator", "Ljava/util/function/Supplier;");
                 methodWriter.invokeinterface("java/util/function/Supplier", "get", "()Ljava/lang/Object;");
             } else {
                 methodWriter.aload(0);
@@ -815,8 +815,8 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 while (i6 < size2) {
                     int i7 = i5;
                     long jLongValue = ((Long) list.get(i6)).longValue();
-                    Label label3 = size2 > i ? new Label() : label2;
-                    methodWriterVisitMethod.lload(i);
+                    Label label3 = size2 > 1 ? new Label() : label2;
+                    methodWriterVisitMethod.lload(1);
                     methodWriterVisitMethod.visitLdcInsn(jLongValue);
                     methodWriterVisitMethod.lcmp();
                     methodWriterVisitMethod.ifne(label3);
@@ -1198,25 +1198,25 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         boolean z8 = z7;
                         List list2 = list;
                         int i17 = i10;
-                        String str9 = str7;
+                        String str9 = "()J";
                         int i18 = i14;
                         int i19 = iVar2;
                         FieldReader[] fieldReaderArr3 = fieldReaderArr2;
                         int i20 = i4;
-                        String str10 = str8;
-                        String str11 = str6;
+                        String str10 = "isSupportSmartMatch";
+                        String str11 = "(J)Z";
                         int[] iArr2 = iArr;
                         int i21 = size2;
                         MethodWriterContext methodWriterContext3 = methodWriterContext;
-                        String str12 = str5;
+                        String str12 = "getNameHashCodeLCase";
                         genReadFieldValue(objectReadContext, fieldReader, z8, methodWriterContext3, i17, s, true);
                         methodWriterVisitMethod.goto_(label9);
                         if (label16 != label13) {
                             methodWriterVisitMethod.visitLabel(label16);
                         }
                         int i22 = i18 + 1;
-                        str5 = str12;
-                        str7 = str9;
+                        str5 = "getNameHashCodeLCase";
+                        str7 = "()J";
                         size2 = i21;
                         objectReaderAdapter2 = objectReaderAdapter3;
                         label7 = label15;
@@ -1225,12 +1225,12 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         size = i15;
                         methodWriterContext = methodWriterContext3;
                         i10 = i17;
-                        str8 = str10;
+                        str8 = "isSupportSmartMatch";
                         iArr = iArr2;
                         list = list2;
                         i4 = i20;
                         z7 = z8;
-                        str6 = str11;
+                        str6 = "(J)Z";
                         label12 = label13;
                         fieldReaderArr2 = fieldReaderArr3;
                         i14 = i22;
@@ -1248,16 +1248,16 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     i10 = i10;
                     iArr = iArr;
                     i7 = i7;
-                    str6 = str6;
+                    str6 = "(J)Z";
                     fieldReaderArr2 = fieldReaderArr4;
                 }
                 objectReadContext2 = objectReadContext;
-                String str13 = str5;
+                String str13 = "getNameHashCodeLCase";
                 i2 = iVar2;
                 int i23 = i4;
-                String str14 = str8;
-                String str15 = str6;
-                String str16 = str7;
+                String str14 = "isSupportSmartMatch";
+                String str15 = "(J)Z";
+                String str16 = "()J";
                 methodWriterContext2 = methodWriterContext;
                 i = i10;
                 label = label7;
@@ -1267,12 +1267,12 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     if ((j & JSONReader.Feature.SupportSmartMatch.mask) == 0) {
                         methodWriterVisitMethod.aload(1);
                         methodWriterVisitMethod.lload(4);
-                        methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, str14, str15);
+                        methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, "isSupportSmartMatch", "(J)Z");
                         methodWriterVisitMethod.ifeq(label17);
                     }
                     methodWriterVisitMethod.aload(0);
                     methodWriterVisitMethod.aload(1);
-                    methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, str13, str16);
+                    methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, "getNameHashCodeLCase", "()J");
                     methodWriterVisitMethod.invokeinterface(ASMUtils.TYPE_OBJECT_READER, "getFieldReaderLCase", METHOD_DESC_GET_FIELD_READER);
                     methodWriterVisitMethod.dup();
                     methodWriterVisitMethod.astore(i23);
@@ -1315,11 +1315,11 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 if ((j & JSONReader.Feature.SupportSmartMatch.mask) == 0) {
                     methodWriterVisitMethod.aload(1);
                     methodWriterVisitMethod.lload(4);
-                    methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, "isSupportSmartMatch", str6);
+                    methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, "isSupportSmartMatch", "(J)Z");
                     methodWriterVisitMethod.ifeq(label19);
                 }
                 methodWriterVisitMethod.aload(1);
-                methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, "getNameHashCodeLCase", str7);
+                methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, "getNameHashCodeLCase", "()J");
                 methodWriterVisitMethod.lstore(i27);
                 for (int i28 = 0; i28 < fieldReaderArr.length; i28++) {
                     Label label20 = new Label();
@@ -1352,7 +1352,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         methodWriterVisitMethod.goto_(label9);
         methodWriterVisitMethod.visitLabel(label9);
         if (!zDisableAutoType) {
-            methodWriterVisitMethod.visitIincInsn(i2, i3);
+            methodWriterVisitMethod.visitIincInsn(i2, 1);
         }
         methodWriterVisitMethod.goto_(label);
         methodWriterVisitMethod.visitLabel(label8);
@@ -1563,11 +1563,11 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             methodWriterVisitMethod.areturn();
             methodWriterVisitMethod.visitLabel(label14);
         }
-        methodWriterVisitMethod.aload(i);
-        methodWriterVisitMethod.lload(i2);
+        methodWriterVisitMethod.aload(1);
+        methodWriterVisitMethod.lload(4);
         String str11 = ASMUtils.TYPE_JSON_READER;
         methodWriterVisitMethod.invokevirtual(str11, "features", "(J)J");
-        methodWriterVisitMethod.lstore(i2);
+        methodWriterVisitMethod.lstore(4);
         if (zDisableSmartMatch && zDisableSupportArrayMapping) {
             fieldReaderArr2 = fieldReaderArr2;
             iVar3 = iVar3;
@@ -1591,7 +1591,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 }
                 i3 = 0;
                 methodWriterVisitMethod.aload(0);
-                methodWriterVisitMethod.aload(i4);
+                methodWriterVisitMethod.aload(1);
                 methodWriterVisitMethod.aload(2);
                 methodWriterVisitMethod.aload(3);
                 methodWriterVisitMethod.lload(4);
@@ -1599,7 +1599,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 methodWriterVisitMethod.areturn();
                 methodWriterVisitMethod.visitLabel(label16);
             }
-            methodWriterVisitMethod.aload(i3);
+            methodWriterVisitMethod.aload(0);
             methodWriterVisitMethod.aload(1);
             methodWriterVisitMethod.aload(2);
             methodWriterVisitMethod.aload(3);
@@ -1777,10 +1777,10 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     while (true) {
                         jArr = objectReadContext2.objectReaderAdapter.hashCodes;
                         i15 = i9;
-                        if (i14 < jArr.length) {
+                        if (0 < jArr.length) {
                             break;
                         }
-                        long j4 = jArr[i14];
+                        long j4 = jArr[0];
                         ((List) treeMap.computeIfAbsent(Integer.valueOf((int) (j4 ^ (j4 >>> 32))), new C2247(12))).add(Long.valueOf(j4));
                         i14++;
                         i9 = i15;
@@ -1836,14 +1836,14 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             short s = objectReadContext2.objectReaderAdapter.mapping[Arrays.binarySearch(objectReadContext2.objectReaderAdapter.hashCodes, jLongValue)];
                             int i26 = size2;
                             boolean z7 = z4;
-                            String str13 = str5;
+                            String str13 = "()J";
                             Label label27 = label21;
                             int i27 = i19;
-                            String str14 = str3;
+                            String str14 = "readFieldValue";
                             Label label28 = label17;
                             label12 = label10;
                             int i28 = iVar2;
-                            String str15 = str4;
+                            String str15 = "getNameHashCodeLCase";
                             Label label29 = label22;
                             label13 = label11;
                             MethodWriterContext methodWriterContext7 = methodWriterContext5;
@@ -1855,7 +1855,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             if (label13 != label12) {
                                 methodWriterVisitMethod.visitLabel(label13);
                             }
-                            str5 = str13;
+                            str5 = "()J";
                             label21 = label27;
                             list = list2;
                             size2 = i26;
@@ -1863,7 +1863,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             treeMap = treeMap2;
                             z4 = z7;
                             i15 = i29;
-                            str4 = str15;
+                            str4 = "getNameHashCodeLCase";
                             iArr = iArr2;
                             iVar2 = i28;
                             size = i23;
@@ -1871,13 +1871,13 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             label10 = label12;
                             label17 = label28;
                             i18 = i24;
-                            str3 = str14;
+                            str3 = "readFieldValue";
                             i19 = i27 + 1;
                             i10 = i25;
                         }
-                        String str16 = str3;
+                        String str16 = "readFieldValue";
                         methodWriterVisitMethod.goto_(label2);
-                        str5 = str5;
+                        str5 = "()J";
                         label21 = label21;
                         label8 = label10;
                         iArr = iArr;
@@ -1885,29 +1885,29 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         treeMap = treeMap;
                         size = size;
                         methodWriterContext5 = methodWriterContext5;
-                        str3 = str16;
-                        str4 = str4;
+                        str3 = "readFieldValue";
+                        str4 = "getNameHashCodeLCase";
                         iVar2 = iVar2;
                         labelArr = labelArr2;
                         i18++;
                         i10 = i10;
                     }
-                    str6 = str5;
+                    str6 = "()J";
                     label4 = label21;
                     i11 = iVar2;
                     methodWriterContext4 = methodWriterContext5;
-                    str7 = str3;
+                    str7 = "readFieldValue";
                     i9 = i15;
-                    str8 = str4;
+                    str8 = "getNameHashCodeLCase";
                     label3 = label17;
                     label5 = label22;
                     methodWriterVisitMethod.visitLabel(label8);
                     if (!zDisableSmartMatch && !(objectReadContext2.objectReaderAdapter instanceof ObjectReaderNoneDefaultConstructor)) {
                         label9 = new Label();
                         feature2 = JSONReader.Feature.SupportSmartMatch;
-                        if ((j & feature2.mask) == 0) {
+                        if ((j & JSONReader.Feature.SupportSmartMatch.mask) == 0) {
                             methodWriterVisitMethod.lload(4);
-                            methodWriterVisitMethod.visitLdcInsn(feature2.mask);
+                            methodWriterVisitMethod.visitLdcInsn(JSONReader.Feature.SupportSmartMatch.mask);
                             methodWriterVisitMethod.land();
                             methodWriterVisitMethod.lconst_0();
                             methodWriterVisitMethod.lcmp();
@@ -1915,7 +1915,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         }
                         methodWriterVisitMethod.aload(0);
                         methodWriterVisitMethod.aload(1);
-                        methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, str8, str6);
+                        methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, "getNameHashCodeLCase", "()J");
                         methodWriterVisitMethod.invokeinterface(ASMUtils.TYPE_OBJECT_READER, "getFieldReaderLCase", METHOD_DESC_GET_FIELD_READER);
                         methodWriterVisitMethod.dup();
                         methodWriterVisitMethod.astore(iVar5);
@@ -1923,7 +1923,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         methodWriterVisitMethod.aload(iVar5);
                         methodWriterVisitMethod.aload(1);
                         methodWriterVisitMethod.aload(i9);
-                        methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_FIELD_READE, str7, METHOD_DESC_READ_FIELD_VALUE);
+                        methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_FIELD_READE, "readFieldValue", METHOD_DESC_READ_FIELD_VALUE);
                         methodWriterVisitMethod.goto_(label2);
                         methodWriterVisitMethod.visitLabel(label9);
                     }
@@ -1954,9 +1954,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     label6 = new Label();
                     if (!zDisableSmartMatch) {
                         feature = JSONReader.Feature.SupportSmartMatch;
-                        if ((j & feature.mask) == 0) {
+                        if ((j & JSONReader.Feature.SupportSmartMatch.mask) == 0) {
                             methodWriterVisitMethod.lload(4);
-                            methodWriterVisitMethod.visitLdcInsn(feature.mask);
+                            methodWriterVisitMethod.visitLdcInsn(JSONReader.Feature.SupportSmartMatch.mask);
                             methodWriterVisitMethod.land();
                             methodWriterVisitMethod.lconst_0();
                             methodWriterVisitMethod.lcmp();
@@ -2085,7 +2085,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         methodWriterVisitMethod.ifeq(label22);
         if (zDisableAutoType) {
         }
-        if (z2) {
+        if (true) {
             if (objectReadContext2.objectReaderAdapter instanceof ObjectReaderNoneDefaultConstructor) {
                 i9 = i8;
                 genReadHashCode64ValueForNonDefaultConstructor(objectReadContext2, methodWriterContext3, i7, z4, i9, label2);
@@ -2345,7 +2345,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 methodWriterVisitMethod.visitLabel(label6);
             }
         }
-        if (!z2) {
+        if (false) {
             if (objectReadContext2.objectReaderAdapter instanceof ObjectReaderNoneDefaultConstructor) {
                 methodWriterVisitMethod.aload(1);
                 methodWriterVisitMethod.invokevirtual(ASMUtils.TYPE_JSON_READER, "skipValue", "()V");
@@ -2564,7 +2564,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         bArr2[i7] = 58;
                         int i13 = JDKUtils.UNSAFE.getInt(bArr2, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
                         if (z5) {
-                            i13 &= Settings.DEFAULT_INITIAL_WINDOW_SIZE;
+                            i13 &= 65535;
                         }
                         methodWriter.aload(1);
                         methodWriter.iconst_n(i13);
@@ -2819,7 +2819,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                         long j4 = JDKUtils.UNSAFE.getLong(bytes3, JDKUtils.ARRAY_BYTE_BASE_OFFSET + 3);
                         methodWriter.aload(1);
                         methodWriter.visitLdcInsn(j4);
@@ -2866,7 +2866,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         bArr6[i7] = 58;
                         int i17 = unsafe.getInt(bArr6, j5);
                         if (z5) {
-                            i17 &= Settings.DEFAULT_INITIAL_WINDOW_SIZE;
+                            i17 &= 65535;
                         }
                         methodWriter.aload(1);
                         methodWriter.visitLdcInsn(j6);
@@ -2899,7 +2899,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                         Unsafe unsafe2 = JDKUtils.UNSAFE;
                         long j7 = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
                         long j8 = unsafe2.getLong(bytes3, j7 + 3);
@@ -3019,7 +3019,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.SIPUSH /* 17 */:
+                    case 17 /* 17 */:
                         Unsafe unsafe5 = JDKUtils.UNSAFE;
                         long j13 = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
                         long j14 = unsafe5.getLong(bytes3, j13 + 3);
@@ -3062,7 +3062,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.LDC /* 18 */:
+                    case 18 /* 18 */:
                         Unsafe unsafe6 = JDKUtils.UNSAFE;
                         long j16 = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
                         long j17 = unsafe6.getLong(bytes3, j16 + 3);
@@ -3177,7 +3177,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.ILOAD /* 21 */:
+                    case 21 /* 21 */:
                         Unsafe unsafe9 = JDKUtils.UNSAFE;
                         long j25 = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
                         long j26 = unsafe9.getLong(bytes3, j25 + 3);
@@ -3191,7 +3191,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         bArr10[i7] = 58;
                         int i21 = unsafe9.getInt(bArr10, j25);
                         if (z5) {
-                            i21 &= Settings.DEFAULT_INITIAL_WINDOW_SIZE;
+                            i21 &= 65535;
                         }
                         methodWriter.aload(1);
                         methodWriter.visitLdcInsn(j26);
@@ -3225,7 +3225,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.LLOAD /* 22 */:
+                    case 22 /* 22 */:
                         Unsafe unsafe10 = JDKUtils.UNSAFE;
                         long j28 = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
                         long j29 = unsafe10.getLong(bytes3, j28 + 3);
@@ -3274,7 +3274,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.FLOAD /* 23 */:
+                    case 23 /* 23 */:
                         Unsafe unsafe11 = JDKUtils.UNSAFE;
                         long j31 = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
                         long j32 = unsafe11.getLong(bytes3, j31 + 3);
@@ -3312,7 +3312,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.DLOAD /* 24 */:
+                    case 24 /* 24 */:
                         Unsafe unsafe12 = JDKUtils.UNSAFE;
                         long j34 = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
                         long j35 = unsafe12.getLong(bytes3, j34 + 3);
@@ -3351,7 +3351,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         i9 = i10;
                         list = list2;
                         break;
-                    case Opcodes.ALOAD /* 25 */:
+                    case 25 /* 25 */:
                         Unsafe unsafe13 = JDKUtils.UNSAFE;
                         long j37 = JDKUtils.ARRAY_BYTE_BASE_OFFSET;
                         long j38 = unsafe13.getLong(bytes3, j37 + 3);
@@ -3532,7 +3532,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         bArr14[i7] = 58;
                         int i25 = unsafe17.getInt(bArr14, j53);
                         if (z5) {
-                            i25 &= Settings.DEFAULT_INITIAL_WINDOW_SIZE;
+                            i25 &= 65535;
                         }
                         methodWriter.aload(1);
                         methodWriter.visitLdcInsn(j54);
@@ -3889,7 +3889,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         bArr18[i7] = 58;
                         int i29 = unsafe25.getInt(bArr18, j89);
                         if (z5) {
-                            i29 &= Settings.DEFAULT_INITIAL_WINDOW_SIZE;
+                            i29 &= 65535;
                         }
                         methodWriter.aload(1);
                         methodWriter.visitLdcInsn(j90);
@@ -4239,22 +4239,22 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             int length = bytes.length;
             byte[] bArr = new byte[8];
             if (length == 5) {
-                bArr[i2] = 34;
-                System.arraycopy(bytes, i2, bArr, 1, 5);
+                bArr[0] = 34;
+                System.arraycopy(bytes, 0, bArr, 1, 5);
                 bArr[6] = 34;
                 bArr[7] = 58;
                 str = "nextIfName8Match0";
             } else if (length == 6) {
-                bArr[i2] = 34;
-                System.arraycopy(bytes, i2, bArr, 1, 6);
+                bArr[0] = 34;
+                System.arraycopy(bytes, 0, bArr, 1, 6);
                 bArr[7] = 34;
                 str = "nextIfName8Match1";
             } else {
                 if (length != 7) {
                     throw new IllegalStateException(AbstractC1194.m2779(length, "length "));
                 }
-                bArr[i2] = 34;
-                System.arraycopy(bytes, i2, bArr, 1, 7);
+                bArr[0] = 34;
+                System.arraycopy(bytes, 0, bArr, 1, 7);
                 str = "nextIfName8Match2";
             }
             long j = JDKUtils.UNSAFE.getLong(bArr, JDKUtils.ARRAY_BYTE_BASE_OFFSET);
@@ -4305,11 +4305,11 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     iMin = Math.min(length, iMin);
                     iMax = Math.max(length, iMax);
                 }
-                byte[] bArr = new byte[i3];
+                byte[] bArr = new byte[4];
                 bArr[0] = 34;
-                int i6 = i3;
-                if (bytes.length == i2) {
-                    System.arraycopy(bytes, 0, bArr, 1, i2);
+                int i6 = 4;
+                if (bytes.length == 2) {
+                    System.arraycopy(bytes, 0, bArr, 1, 2);
                     bArr[3] = 34;
                 } else if (bytes.length >= 3) {
                     System.arraycopy(bytes, 0, bArr, 1, 3);
@@ -4322,14 +4322,14 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 }
                 arrayList.add(r15);
                 i5++;
-                i3 = i6;
+                i3 = 4;
                 i2 = 2;
             }
         } else {
             iMin = 0;
             iMax = 0;
         }
-        int i8 = i3;
+        int i8 = 4;
         Label label2 = new Label();
         Label label3 = new Label();
         Label label4 = new Label();
@@ -4347,7 +4347,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         methodWriter.aload(0);
         methodWriter.getfield(str, str2, str3);
         Class<ObjectReaderImplEnum> cls2 = ObjectReaderImplEnum.class;
-        methodWriter.instanceOf(ASMUtils.type(cls2));
+        methodWriter.instanceOf(ASMUtils.type(ObjectReaderImplEnum.class));
         methodWriter.ifeq(label2);
         if (iMin >= 2 && iMax <= 11) {
             int[] iArr = new int[treeMap.size()];
@@ -4365,7 +4365,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             while (i10 < size) {
                 methodWriter.visitLabel(labelArr[i10]);
                 List list = (List) treeMap.get(Integer.valueOf(iArr[i10]));
-                int i11 = i4;
+                int i11 = 0;
                 while (i11 < list.size()) {
                     Label label5 = i11 > 0 ? new Label() : null;
                     Enum r18 = (Enum) list.get(i11);
@@ -4373,7 +4373,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     byte[] bytes2 = r18.name().getBytes(StandardCharsets.UTF_8);
                     int length2 = bytes2.length;
                     TreeMap treeMap2 = treeMap;
-                    Class<ObjectReaderImplEnum> cls3 = cls2;
+                    Class<ObjectReaderImplEnum> cls3 = ObjectReaderImplEnum.class;
                     int[] iArr2 = iArr;
                     int i12 = size;
                     switch (length2) {
@@ -4389,9 +4389,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4399,7 +4399,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4416,9 +4416,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4426,7 +4426,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4444,9 +4444,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4454,7 +4454,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4474,9 +4474,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4484,7 +4484,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4492,9 +4492,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         case 6:
                             labelArr = labelArr;
                             byte b = bytes2[3];
-                            byte b2 = bytes2[i8];
+                            byte b2 = bytes2[4];
                             byte b3 = bytes2[5];
-                            byte[] bArr2 = new byte[i8];
+                            byte[] bArr2 = new byte[4];
                             bArr2[0] = b;
                             bArr2[1] = b2;
                             bArr2[2] = b3;
@@ -4512,9 +4512,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4522,7 +4522,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4540,9 +4540,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4550,7 +4550,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4569,9 +4569,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4579,7 +4579,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4599,9 +4599,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4609,7 +4609,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4630,9 +4630,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4640,7 +4640,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -4661,9 +4661,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             methodWriter.ifeq(label);
                             methodWriter.aload(0);
                             methodWriter.getfield(str, str2, ASMUtils.DESC_OBJECT_READER);
-                            methodWriter.checkcast(ASMUtils.type(cls3));
+                            methodWriter.checkcast(ASMUtils.type(ObjectReaderImplEnum.class));
                             methodWriter.visitLdcInsn(r18.ordinal());
-                            methodWriter.invokevirtual(ASMUtils.type(cls3), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
+                            methodWriter.invokevirtual(ASMUtils.type(ObjectReaderImplEnum.class), "getEnumByOrdinal", "(I)Ljava/lang/Enum;");
                             methodWriter.goto_(label3);
                             if (label5 != null) {
                                 methodWriter.visitLabel(label5);
@@ -4671,7 +4671,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                             i11++;
                             z = z2;
                             treeMap = treeMap2;
-                            cls2 = cls3;
+                            cls2 = ObjectReaderImplEnum.class;
                             iArr = iArr2;
                             size = i12;
                             labelArr = labelArr;
@@ -5733,9 +5733,9 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 Label label6 = new Label();
                 methodWriter.ifnull(label6);
                 methodWriter.aload(iVar);
-                methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                 methodWriter.getstatic("java/util/Collections", "EMPTY_LIST", "Ljava/util/List;");
-                methodWriter.invokevirtual(ASMUtils.TYPE_OBJECT, "getClass", "()Ljava/lang/Class;");
+                methodWriter.invokevirtual("java/lang/Object", "getClass", "()Ljava/lang/Class;");
                 label = label4;
                 methodWriter.if_acmpne(label);
                 methodWriter.visitLabel(label6);
@@ -5745,7 +5745,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             methodWriter.dup();
             if (z5) {
                 methodWriter.iload(iVar3);
-                methodWriter.invokespecial(str10, "<init>", "(I)V");
+                methodWriter.invokespecial("java/util/ArrayList", "<init>", "(I)V");
             } else {
                 methodWriter.invokespecial(str10, "<init>", "()V");
             }
@@ -5763,61 +5763,61 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             methodWriter.aload(1);
             String str12 = ASMUtils.TYPE_JSON_READER;
             str3 = "()Z";
-            methodWriter.invokevirtual(str12, "nextIfNull", str3);
+            methodWriter.invokevirtual(str12, "nextIfNull", "()Z");
             methodWriter.ifne(label9);
             methodWriter.aload(1);
-            methodWriter.invokevirtual(str12, "nextIfArrayStart", str3);
+            methodWriter.invokevirtual(str12, "nextIfArrayStart", "()Z");
             methodWriter.ifne(label7);
-            if (mapping == cls4) {
+            if (mapping == String.class) {
                 i3 = iVar3;
                 methodWriter.aload(1);
-                methodWriter.invokevirtual(str12, "isString", str3);
+                methodWriter.invokevirtual(str12, "isString", "()Z");
                 methodWriter.ifeq(label8);
                 methodWriter.new_(str11);
                 methodWriter.dup();
                 if (z5) {
                     methodWriter.visitLdcInsn(10);
-                    methodWriter.invokespecial(str11, "<init>", "(I)V");
+                    methodWriter.invokespecial("java/util/ArrayList", "<init>", "(I)V");
                 } else {
                     methodWriter.invokespecial(str11, "<init>", "()V");
                 }
                 methodWriter.astore(iVar);
                 methodWriter.aload(1);
-                methodWriter.invokevirtual(str12, "nextIfNullOrEmptyString", str3);
+                methodWriter.invokevirtual(str12, "nextIfNullOrEmptyString", "()Z");
                 methodWriter.ifne(label2);
                 methodWriter.aload(iVar);
                 methodWriter.aload(1);
-                if (mapping == cls4) {
+                if (true) {
                     str5 = "readString";
-                    methodWriter.invokevirtual(str12, str5, "()Ljava/lang/String;");
+                    methodWriter.invokevirtual(str12, "readString", "()Ljava/lang/String;");
                 } else {
                     str5 = "readString";
                 }
-                cls4 = cls4;
-                methodWriter.invokeinterface(str7, str9, str8);
+                cls4 = String.class;
+                methodWriter.invokeinterface("java/util/List", "add", "(Ljava/lang/Object;)Z");
                 methodWriter.pop();
                 methodWriter.goto_(label2);
-                str7 = str7;
-                str9 = str9;
-                str8 = str8;
+                str7 = "java/util/List";
+                str9 = "add";
+                str8 = "(Ljava/lang/Object;)Z";
                 type3 = type6;
-                str4 = str5;
+                str4 = "readString";
             } else {
                 i3 = iVar3;
                 str4 = "readString";
                 type3 = type6;
                 if (type3 instanceof Class) {
                     methodWriter.aload(1);
-                    methodWriter.invokevirtual(str12, "nextIfNullOrEmptyString", str3);
+                    methodWriter.invokevirtual(str12, "nextIfNullOrEmptyString", "()Z");
                     methodWriter.ifne(label9);
                     methodWriter.new_(str11);
                     methodWriter.dup();
                     if (z5) {
-                        cls4 = cls4;
+                        cls4 = String.class;
                         methodWriter.visitLdcInsn(10);
-                        methodWriter.invokespecial(str11, "<init>", "(I)V");
+                        methodWriter.invokespecial("java/util/ArrayList", "<init>", "(I)V");
                     } else {
-                        cls4 = cls4;
+                        cls4 = String.class;
                         methodWriter.invokespecial(str11, "<init>", "()V");
                     }
                     methodWriter.astore(iVar);
@@ -5828,7 +5828,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     methodWriter.goto_(label2);
                 }
             }
-            cls4 = cls4;
+            cls4 = String.class;
             methodWriter.visitLabel(label8);
             methodWriter.aload(1);
             methodWriter.invokevirtual(str12, "skipValue", "()V");
@@ -5841,7 +5841,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             methodWriter.dup();
             if (z5) {
                 methodWriter.visitLdcInsn(10);
-                methodWriter.invokespecial(str11, "<init>", "(I)V");
+                methodWriter.invokespecial("java/util/ArrayList", "<init>", "(I)V");
             } else {
                 methodWriter.invokespecial(str11, "<init>", "()V");
             }
@@ -5862,18 +5862,18 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         } else {
             i4 = 1;
             methodWriter.aload(1);
-            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_READER, "nextIfArrayEnd", str3);
+            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_READER, "nextIfArrayEnd", "()Z");
             methodWriter.ifne(label11);
         }
-        if (type3 == cls4) {
+        if (type3 == String.class) {
             methodWriter.aload(iVar);
-            methodWriter.aload(i4);
-            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_READER, str4, "()Ljava/lang/String;");
+            methodWriter.aload(1);
+            methodWriter.invokevirtual(ASMUtils.TYPE_JSON_READER, "readString", "()Ljava/lang/String;");
         } else {
             if (type3 != Integer.class) {
                 if (type3 == Long.class) {
                     methodWriter.aload(iVar);
-                    methodWriter.aload(i4);
+                    methodWriter.aload(1);
                     methodWriter.invokevirtual(ASMUtils.TYPE_JSON_READER, "readInt64", "()Ljava/lang/Long;");
                 } else {
                     Label label13 = new Label();
@@ -5900,7 +5900,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                     Label label15 = new Label();
                     if (z) {
                         methodWriter.aload(1);
-                        methodWriter.invokevirtual(ASMUtils.TYPE_JSON_READER, "isArray", str3);
+                        methodWriter.invokevirtual(ASMUtils.TYPE_JSON_READER, "isArray", "()Z");
                         methodWriter.ifeq(label14);
                         methodWriter.aload(0);
                         methodWriter.getfield(str, strFieldItemObjectReader, str13);
@@ -5932,7 +5932,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                         methodWriter.visitLabel(label15);
                     }
                 }
-                methodWriter.invokeinterface(str7, str9, str8);
+                methodWriter.invokeinterface("java/util/List", "add", "(Ljava/lang/Object;)Z");
                 methodWriter.pop();
                 methodWriter.visitLabel(label12);
                 methodWriter.visitIincInsn(iVar4, 1);
@@ -5942,13 +5942,13 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 methodWriter.aload(iVar);
             }
             methodWriter.aload(iVar);
-            methodWriter.aload(i4);
+            methodWriter.aload(1);
             methodWriter.invokevirtual(ASMUtils.TYPE_JSON_READER, "readInt32", "()Ljava/lang/Integer;");
         }
         label11 = label11;
         label2 = label2;
         iVar = iVar;
-        methodWriter.invokeinterface(str7, str9, str8);
+        methodWriter.invokeinterface("java/util/List", "add", "(Ljava/lang/Object;)Z");
         methodWriter.pop();
         methodWriter.visitLabel(label12);
         methodWriter.visitIincInsn(iVar4, 1);
@@ -6107,7 +6107,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             case 11:
                 str = ASMUtils.TYPE_OBJECT_READER_11;
                 break;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 str = ASMUtils.TYPE_OBJECT_READER_12;
                 break;
             default:
@@ -6149,7 +6149,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             methodWriterVisitMethod2.areturn();
             methodWriterVisitMethod2.visitMaxs(3, 3);
         } else if (constructor != null && Modifier.isPublic(constructor.getModifiers()) && Modifier.isPublic(cls.getModifiers())) {
-            MethodWriter methodWriterVisitMethod3 = classWriter.visitMethod(1, str5, "(J)Ljava/lang/Object;", 32);
+            MethodWriter methodWriterVisitMethod3 = classWriter.visitMethod(1, "createInstance", "(J)Ljava/lang/Object;", 32);
             newObject(methodWriterVisitMethod3, objectReadContext.objectType, constructor);
             methodWriterVisitMethod3.areturn();
             methodWriterVisitMethod3.visitMaxs(3, 3);
@@ -6296,15 +6296,15 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         if (!z) {
             return objectReaderNoneDefaultConstructor;
         }
-        boolean z2 = cls != null && this.classLoader.isExternalClass(cls);
+        boolean z2 = true && this.classLoader.isExternalClass(cls);
         ClassWriter classWriter = new ClassWriter(new C2256(2, cls));
-        beanInfo.readerFeatures |= FieldInfo.DISABLE_REFERENCE_DETECT;
+        beanInfo.readerFeatures |= 144115188075855872L;
         ObjectReadContext objectReadContext = new ObjectReadContext(beanInfo, cls, classWriter, z2, fieldReaderArr, null);
         objectReadContext.objectReaderAdapter = objectReaderNoneDefaultConstructor;
         String str = ASMUtils.TYPE_OBJECT_READER_NONE_DEFAULT_CONSTRUCTOR;
         genFields(fieldReaderArr, classWriter, str);
         classWriter.visit(52, 49, objectReadContext.classNameType, str, new String[0]);
-        MethodWriter methodWriterVisitMethod = classWriter.visitMethod(1, "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;JLjava/util/function/Function;Ljava/util/List;[Ljava/lang/String;[Lcom/alibaba/fastjson2/reader/FieldReader;[Lcom/alibaba/fastjson2/reader/FieldReader;[Ljava/lang/Class;[Ljava/lang/String;)V", fieldReaderArr2.length <= 12 ? 32 : 128);
+        MethodWriter methodWriterVisitMethod = classWriter.visitMethod(1, "<init>", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;JLjava/util/function/Function;Ljava/util/List;[Ljava/lang/String;[Lcom/alibaba/fastjson2/reader/FieldReader;[Lcom/alibaba/fastjson2/reader/FieldReader;[Ljava/lang/Class;[Ljava/lang/String;)V", 32);
         methodWriterVisitMethod.aload(0);
         methodWriterVisitMethod.aload(1);
         methodWriterVisitMethod.aload(2);
@@ -6330,7 +6330,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
             return (ObjectReaderNoneDefaultConstructor) this.classLoader.defineClassPublic(objectReadContext.classNameFull, byteArray, 0, byteArray.length).getConstructors()[0].newInstance(cls, beanInfo.typeKey, beanInfo.typeName, Long.valueOf(beanInfo.readerFeatures), function, list, strArr, fieldReaderArr, fieldReaderArr2, null, null);
         } catch (Throwable th) {
             StringBuilder sb = new StringBuilder("create objectReader error");
-            sb.append(cls == null ? "" : ", objectType " + cls.getTypeName());
+            sb.append(false ? "" : ", objectType " + cls.getTypeName());
             throw new JSONException(sb.toString(), th);
         }
     }
@@ -6349,7 +6349,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
         BeanInfo beanInfo = new BeanInfo(objectReaderProvider);
         objectReaderProvider.getBeanInfo(beanInfo, cls);
         if (z2 || !Modifier.isPublic(modifiers)) {
-            beanInfo.readerFeatures |= FieldInfo.JIT;
+            beanInfo.readerFeatures |= 18014398509481984L;
         }
         Class cls3 = beanInfo.deserializer;
         if (cls3 != null && ObjectReader.class.isAssignableFrom(cls3)) {
@@ -6387,7 +6387,7 @@ public class ObjectReaderCreatorASM extends ObjectReaderCreator {
                 }
             }
             for (FieldReader fieldReader : fieldReaderArrCreateFieldReaders) {
-                if (fieldReader.isReadOnly() || fieldReader.isUnwrapped() || (fieldReader.features & FieldInfo.READ_USING_MASK) != 0) {
+                if (fieldReader.isReadOnly() || fieldReader.isUnwrapped() || (fieldReader.features & 2251799813685248L) != 0) {
                     z4 = false;
                     break;
                 }

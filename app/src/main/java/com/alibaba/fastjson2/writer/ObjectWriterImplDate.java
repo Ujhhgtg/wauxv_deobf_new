@@ -120,7 +120,7 @@ final class ObjectWriterImplDate extends DateTimeCodec implements ObjectWriter {
                 jM4737 = AbstractC2784.m4737(j6, 400L, ((j6 / 4) + (365 * j6)) - (j6 / 100), j5);
             }
             int i = (int) jM4737;
-            int i2 = ((i * 5) + 2) / Opcodes.IFEQ;
+            int i2 = ((i * 5) + 2) / 153;
             int i3 = ((i2 + 2) % 12) + 1;
             int i4 = (i - (((i2 * 306) + 5) / 10)) + 1;
             long j7 = j6 + j2 + ((long) (i2 / 10));

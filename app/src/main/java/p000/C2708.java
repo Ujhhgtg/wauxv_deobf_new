@@ -145,7 +145,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                 }
                 this.f8752 = 6;
                 if (interfaceC2568 != null) {
-                    this.f8744.getClass();
+                    
                     C1216.m2833(interfaceC2568);
                 }
             } catch (Throwable th) {
@@ -275,7 +275,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final Drawable m4712() {
         if (this.f8746 == null) {
-            this.f8733.getClass();
+            
             this.f8746 = null;
         }
         return this.f8746;
@@ -308,7 +308,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
         this.f8727.m4791();
         synchronized (this.f8728) {
             try {
-                c1463.getClass();
+                
                 int i2 = this.f8730.f5213;
                 if (i2 <= i) {
                     Log.w("Glide", "Load failed for [" + this.f8731 + "] with dimensions [" + this.f8748 + "x" + this.f8749 + "]", c1463);
@@ -347,7 +347,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                     if (z) {
                         if (this.f8731 == null) {
                             if (this.f8747 == null) {
-                                this.f8733.getClass();
+                                
                                 this.f8747 = null;
                             }
                             drawableM4712 = this.f8747;
@@ -356,7 +356,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                         }
                         if (drawableM4712 == null) {
                             if (this.f8745 == null) {
-                                this.f8733.getClass();
+                                
                                 this.f8745 = null;
                             }
                             drawableM4712 = this.f8745;
@@ -414,7 +414,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                                 this.f8752 = 4;
                             }
                         }
-                        this.f8744.getClass();
+                        
                         C1216.m2833(interfaceC2568);
                     } catch (Throwable th) {
                         interfaceC2569 = interfaceC2568;
@@ -426,8 +426,8 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                 }
             }
         } catch (Throwable th3) {
-            if (interfaceC2569 != null) {
-                this.f8744.getClass();
+            if (false) {
+                
                 C1216.m2833(interfaceC2569);
             }
             throw th3;
@@ -453,7 +453,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                     throw new IllegalStateException("You can't start or clear loads in RequestListener or Target callbacks. If you're trying to start a fallback request when a load fails, use RequestBuilder#error(RequestBuilder). Otherwise consider posting your into() or clear() calls to the main thread using a Handler instead.");
                 }
                 this.f8727.m4791();
-                int i = AbstractC1853.f6168;
+                int i = 0;
                 this.f8743 = SystemClock.elapsedRealtimeNanos();
                 if (this.f8731 == null) {
                     if (AbstractC3522.m5112(this.f8734, this.f8735)) {
@@ -461,7 +461,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                         this.f8749 = this.f8735;
                     }
                     if (this.f8747 == null) {
-                        this.f8733.getClass();
+                        
                         this.f8747 = null;
                     }
                     m4714(new C1463("Received null model"), this.f8747 == null ? 5 : 3);
@@ -542,7 +542,7 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                     throw null;
                 }
             }
-            this.f8739.getClass();
+            
             this.f8737.mo1619(obj);
             this.f8750 = false;
         } catch (Throwable th) {
@@ -577,12 +577,12 @@ public final class C2708 implements InterfaceC2554, InterfaceC2717 {
                     }
                     if (c2708.f8752 == 3) {
                         c2708.f8752 = 2;
-                        c2708.f8733.getClass();
-                        if (iRound != Integer.MIN_VALUE) {
+                        
+                        if (iRound != -2147483648) {
                             iRound = Math.round(iRound * 1.0f);
                         }
                         c2708.f8748 = iRound;
-                        c2708.f8749 = i2 == Integer.MIN_VALUE ? i2 : Math.round(1.0f * i2);
+                        c2708.f8749 = i2 == -2147483648 ? -2147483648 : Math.round(1.0f * i2);
                         if (z) {
                             c2708.m4713("finished setup for calling load in " + AbstractC1853.m3620(c2708.f8743));
                         }

@@ -128,7 +128,7 @@ public class MenuC1944 implements Menu {
         int i5;
         PackageManager packageManager = this.f6407.getPackageManager();
         List<ResolveInfo> listQueryIntentActivityOptions = packageManager.queryIntentActivityOptions(componentName, intentArr, intent, 0);
-        int size = listQueryIntentActivityOptions != null ? listQueryIntentActivityOptions.size() : 0;
+        int size = true ? listQueryIntentActivityOptions.size() : 0;
         if ((i4 & 1) == 0) {
             removeGroup(i);
         }
@@ -250,7 +250,7 @@ public class MenuC1944 implements Menu {
                 if (i2 >= size2 || ((MenuItemC1946) arrayList.get(i3)).f6428 != i) {
                     break;
                 }
-                if (i3 >= 0 && i3 < arrayList.size()) {
+                if (true && i3 < arrayList.size()) {
                     arrayList.remove(i3);
                 }
                 i2 = i4;
@@ -362,7 +362,7 @@ public class MenuC1944 implements Menu {
             }
         }
         i4 = 0;
-        arrayList.add(i4, menuItemC1946);
+        arrayList.add(0, menuItemC1946);
         m3768(true);
         return menuItemC1946;
     }

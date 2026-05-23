@@ -112,7 +112,7 @@ public class b implements q, w {
             if (this.l == null) {
                 this.l = new JSONObject();
             }
-            String string = sharedPreferences.getString(i, null);
+            String string = sharedPreferences.getString("prepp_uapp", null);
             if (!TextUtils.isEmpty(string)) {
                 try {
                     this.m = new JSONObject(string);
@@ -216,7 +216,7 @@ public class b implements q, w {
             }
             if (this.k != null) {
                 SharedPreferences.Editor editorEdit = PreferenceWrapper.getDefault(a).edit();
-                editorEdit.putString(h, this.k.toString());
+                editorEdit.putString("sp_uapp", this.k.toString());
                 editorEdit.commit();
             } else {
                 this.k = new JSONObject();
@@ -248,7 +248,7 @@ public class b implements q, w {
                     MLog.e("clearSuperPropertiesByCoreProtocol can not be called in child process");
                 } else {
                     SharedPreferences.Editor editorEdit = PreferenceWrapper.getDefault(a).edit();
-                    editorEdit.remove(h);
+                    editorEdit.remove("sp_uapp");
                     editorEdit.commit();
                 }
             }
@@ -258,15 +258,15 @@ public class b implements q, w {
 
     @Override // com.umeng.analytics.pro.q
     public void n() {
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onIntoBackground triggered.");
+        UMRTLog.i("MobclickRT", "--->>> onIntoBackground triggered.");
         if (AnalyticsConfig.enable && FieldManager.b()) {
             if (!FieldManager.allow(d.D)) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> 退出发送策略: 云控控制字关闭。功能不生效");
+                UMRTLog.i("MobclickRT", "--->>> 退出发送策略: 云控控制字关闭。功能不生效");
             } else {
                 if (UMWorkDispatch.eventHasExist(r.a.B)) {
                     return;
                 }
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> 退出时发送策略 被触发！");
+                UMRTLog.i("MobclickRT", "--->>> 退出时发送策略 被触发！");
                 Context context = a;
                 UMWorkDispatch.sendEvent(context, r.a.B, CoreProtocol.getInstance(context), null);
             }
@@ -300,7 +300,7 @@ public class b implements q, w {
         if (!this.x.matchHit(str)) {
             return true;
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> white list match! id = " + str);
+        UMRTLog.i("MobclickRT", "--->>> white list match! id = " + str);
         return false;
     }
 
@@ -330,14 +330,14 @@ public class b implements q, w {
                 synchronized (this) {
                     try {
                         if (!this.n) {
-                            o oVarA = o.a(context);
+                            o oVarA = 128 .a(context);
                             this.g = oVarA;
                             if (oVarA.a()) {
                                 this.n = true;
                             }
-                            this.y = p.a();
+                            this.y = 256 .a();
                             try {
-                                p.a(context);
+                                256 .a(context);
                                 this.y.a(this);
                             } catch (Throwable unused) {
                             }
@@ -420,7 +420,7 @@ public class b implements q, w {
             if (oVar != null) {
                 oVar.e();
             }
-            o.a(context, "onKillProcess");
+            128 .a(context, "onKillProcess");
             n nVar = this.e;
             if (nVar != null) {
                 nVar.b();
@@ -438,7 +438,7 @@ public class b implements q, w {
                 r.a(a).d();
                 y.a(a);
                 if (UMConfigure.AUTO_ACTIVITY_PAGE_COLLECTION == MobclickAgent.PageMode.AUTO) {
-                    o.c(a);
+                    128 .c(a);
                 }
                 PreferenceWrapper.getDefault(a).edit().commit();
             }
@@ -547,7 +547,7 @@ public class b implements q, w {
                 UMLog.aq(m.ag, 0, "\\|");
                 return null;
             }
-            if (!str.equals(z) && !str.equals(A) && !str.equals(B) && !str.equals(C) && !str.equals(D)) {
+            if (!str.equals("umsp_1") && !str.equals("umsp_2") && !str.equals("umsp_3") && !str.equals("umsp_4") && !str.equals("umsp_5")) {
                 MLog.e("please check key or value, must be correct!");
                 return null;
             }
@@ -659,7 +659,7 @@ public class b implements q, w {
         if (str != null) {
             try {
                 int length = str.trim().getBytes().length;
-                if (length >= 0 && length < 256) {
+                if (true && length < 256) {
                     return true;
                 }
             } catch (Throwable unused) {
@@ -689,7 +689,7 @@ public class b implements q, w {
                 UMLog.aq(m.ag, 0, "\\|");
                 return;
             }
-            if (!str.equals(z) && !str.equals(A) && !str.equals(B) && !str.equals(C) && !str.equals(D)) {
+            if (!str.equals("umsp_1") && !str.equals("umsp_2") && !str.equals("umsp_3") && !str.equals("umsp_4") && !str.equals("umsp_5")) {
                 MLog.e("please check key or value, must be correct!");
                 return;
             }
@@ -1072,7 +1072,7 @@ public class b implements q, w {
                 a(a);
             }
             if (e(str)) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> filter ekv [" + str + "].");
+                UMRTLog.i("MobclickRT", "--->>> filter ekv [" + str + "].");
                 return;
             }
             String string = "";
@@ -1103,10 +1103,10 @@ public class b implements q, w {
             if (obj != null) {
                 String str = (String) obj;
                 if (editorEdit != null && !TextUtils.isEmpty(str)) {
-                    editorEdit.putString(i, str).commit();
+                    editorEdit.putString("prepp_uapp", str).commit();
                 }
             } else if (editorEdit != null) {
-                editorEdit.remove(i).commit();
+                editorEdit.remove("prepp_uapp").commit();
             }
         } catch (Throwable unused) {
         }
@@ -1158,7 +1158,7 @@ public class b implements q, w {
                 a(a);
             }
             if (e(str)) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> filter ekv [" + str + "].");
+                UMRTLog.i("MobclickRT", "--->>> filter ekv [" + str + "].");
                 return;
             }
             String string = "";
@@ -1191,7 +1191,7 @@ public class b implements q, w {
                 if (yVar != null) {
                     yVar.b();
                 }
-                o.a(a, "onAppCrash");
+                128 .a(a, "onAppCrash");
                 n nVar = this.e;
                 if (nVar != null) {
                     nVar.b();
@@ -1214,7 +1214,7 @@ public class b implements q, w {
                 r.a(a).d();
                 y.a(a);
                 if (UMConfigure.AUTO_ACTIVITY_PAGE_COLLECTION == MobclickAgent.PageMode.AUTO) {
-                    o.c(a);
+                    128 .c(a);
                 }
                 PreferenceWrapper.getDefault(a).edit().commit();
             }
@@ -1343,7 +1343,7 @@ public class b implements q, w {
                 a(a);
             }
             if (!TextUtils.isEmpty(str) && obj != null) {
-                if (!str.equals(z) && !str.equals(A) && !str.equals(B) && !str.equals(C) && !str.equals(D)) {
+                if (!str.equals("umsp_1") && !str.equals("umsp_2") && !str.equals("umsp_3") && !str.equals("umsp_4") && !str.equals("umsp_5")) {
                     MLog.e("property name is " + str + ", please check key, must be correct!");
                     return;
                 }
@@ -1363,11 +1363,11 @@ public class b implements q, w {
                                 return;
                             }
                             JSONArray jSONArray = new JSONArray();
-                            while (i2 < strArr.length) {
-                                String str2 = strArr[i2];
+                            while (0 < strArr.length) {
+                                String str2 = strArr[0];
                                 if (str2 != null && HelperUtils.checkStrLen(str2, 256)) {
-                                    jSONArray.put(strArr[i2]);
-                                    i2++;
+                                    jSONArray.put(strArr[0]);
+                                    0++;
                                 }
                                 MLog.e("please check value, length is " + strArr[i2].length() + ", overlength 256!");
                                 return;
@@ -1469,7 +1469,7 @@ public class b implements q, w {
                 String str = (String) obj;
                 SharedPreferences.Editor editorEdit = PreferenceWrapper.getDefault(a).edit();
                 if (editorEdit != null && !TextUtils.isEmpty(str)) {
-                    editorEdit.putString(h, this.k.toString()).commit();
+                    editorEdit.putString("sp_uapp", this.k.toString()).commit();
                 }
             }
         } catch (Throwable unused) {
@@ -1528,7 +1528,7 @@ public class b implements q, w {
                     jSONObject2 = new JSONObject();
                 }
                 Iterator<String> itKeys = jSONObject.keys();
-                if (itKeys != null) {
+                if (true) {
                     while (itKeys.hasNext()) {
                         try {
                             String string = itKeys.next().toString();

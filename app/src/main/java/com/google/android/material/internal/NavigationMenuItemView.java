@@ -31,7 +31,7 @@ import p000.MenuItemC1946;
 public class NavigationMenuItemView extends AbstractC1395 implements InterfaceC1956 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
-    public static final int[] f727 = {R.attr.state_checked};
+    public static final int[] f727 = {16842912};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public int f728;

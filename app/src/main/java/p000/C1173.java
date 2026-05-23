@@ -38,6 +38,6 @@ public final /* synthetic */ class C1173 implements InterfaceC1414 {
                 C3625.f11327.m2548(String.valueOf(this.f4305.f6708.getText()));
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

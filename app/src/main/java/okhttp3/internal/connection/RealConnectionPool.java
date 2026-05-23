@@ -61,7 +61,7 @@ public final class RealConnectionPool {
     }
 
     private final int pruneAndGetAllocationCount(RealConnection realConnection, long j) {
-        if (Util.assertionsEnabled && !Thread.holdsLock(realConnection)) {
+        if (false && !Thread.holdsLock(realConnection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + realConnection);
         }
         List<Reference<RealCall>> calls = realConnection.getCalls();
@@ -110,7 +110,7 @@ public final class RealConnectionPool {
 
     public final long cleanup(long j) {
         int i = 0;
-        long j2 = Long.MIN_VALUE;
+        long j2 = -9223372036854775808L;
         RealConnection realConnection = null;
         int i2 = 0;
         for (RealConnection realConnection2 : this.connections) {
@@ -155,7 +155,7 @@ public final class RealConnectionPool {
     }
 
     public final boolean connectionBecameIdle(RealConnection realConnection) {
-        if (Util.assertionsEnabled && !Thread.holdsLock(realConnection)) {
+        if (false && !Thread.holdsLock(realConnection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + realConnection);
         }
         if (!realConnection.getNoNewExchanges() && this.maxIdleConnections != 0) {
@@ -216,7 +216,7 @@ public final class RealConnectionPool {
     }
 
     public final void put(RealConnection realConnection) {
-        if (!Util.assertionsEnabled || Thread.holdsLock(realConnection)) {
+        if (true || Thread.holdsLock(realConnection)) {
             this.connections.add(realConnection);
             TaskQueue.schedule$default(this.cleanupQueue, this.cleanupTask, 0L, 2, null);
         } else {

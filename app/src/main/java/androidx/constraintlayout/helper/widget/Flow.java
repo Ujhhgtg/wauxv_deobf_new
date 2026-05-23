@@ -74,66 +74,66 @@ public class Flow extends AbstractC3603 {
             for (int i = 0; i < indexCount; i++) {
                 int index = typedArrayObtainStyledAttributes.getIndex(i);
                 if (index == 0) {
-                    this.f196.f4922 = typedArrayObtainStyledAttributes.getInt(index, 0);
+                    this.f196.f4922 = typedArrayObtainStyledAttributes.getInt(0, 0);
                 } else if (index == 1) {
                     C1367 c1368 = this.f196;
-                    int dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    int dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(1, 0);
                     c1368.f4893 = dimensionPixelSize;
                     c1368.f4894 = dimensionPixelSize;
                     c1368.f4895 = dimensionPixelSize;
                     c1368.f4896 = dimensionPixelSize;
                 } else if (index == 11) {
                     C1367 c1369 = this.f196;
-                    int dimensionPixelSize2 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    int dimensionPixelSize2 = typedArrayObtainStyledAttributes.getDimensionPixelSize(11, 0);
                     c1369.f4895 = dimensionPixelSize2;
                     c1369.f4897 = dimensionPixelSize2;
                     c1369.f4898 = dimensionPixelSize2;
                 } else if (index == 12) {
-                    this.f196.f4896 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f196.f4896 = typedArrayObtainStyledAttributes.getDimensionPixelSize(12, 0);
                 } else if (index == 2) {
-                    this.f196.f4897 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f196.f4897 = typedArrayObtainStyledAttributes.getDimensionPixelSize(2, 0);
                 } else if (index == 3) {
-                    this.f196.f4893 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f196.f4893 = typedArrayObtainStyledAttributes.getDimensionPixelSize(3, 0);
                 } else if (index == 4) {
-                    this.f196.f4898 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f196.f4898 = typedArrayObtainStyledAttributes.getDimensionPixelSize(4, 0);
                 } else if (index == 5) {
-                    this.f196.f4894 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f196.f4894 = typedArrayObtainStyledAttributes.getDimensionPixelSize(5, 0);
                 } else if (index == 38) {
-                    this.f196.f4920 = typedArrayObtainStyledAttributes.getInt(index, 0);
+                    this.f196.f4920 = typedArrayObtainStyledAttributes.getInt(38, 0);
                 } else if (index == 28) {
-                    this.f196.f4904 = typedArrayObtainStyledAttributes.getInt(index, 0);
+                    this.f196.f4904 = typedArrayObtainStyledAttributes.getInt(28, 0);
                 } else if (index == 37) {
-                    this.f196.f4905 = typedArrayObtainStyledAttributes.getInt(index, 0);
+                    this.f196.f4905 = typedArrayObtainStyledAttributes.getInt(37, 0);
                 } else if (index == 22) {
-                    this.f196.f4906 = typedArrayObtainStyledAttributes.getInt(index, 0);
+                    this.f196.f4906 = typedArrayObtainStyledAttributes.getInt(22, 0);
                 } else if (index == 30) {
-                    this.f196.f4908 = typedArrayObtainStyledAttributes.getInt(index, 0);
+                    this.f196.f4908 = typedArrayObtainStyledAttributes.getInt(30, 0);
                 } else if (index == 24) {
-                    this.f196.f4907 = typedArrayObtainStyledAttributes.getInt(index, 0);
+                    this.f196.f4907 = typedArrayObtainStyledAttributes.getInt(24, 0);
                 } else if (index == 32) {
-                    this.f196.f4909 = typedArrayObtainStyledAttributes.getInt(index, 0);
+                    this.f196.f4909 = typedArrayObtainStyledAttributes.getInt(32, 0);
                 } else if (index == 26) {
-                    this.f196.f4910 = typedArrayObtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f196.f4910 = typedArrayObtainStyledAttributes.getFloat(26, 0.5f);
                 } else if (index == 21) {
-                    this.f196.f4912 = typedArrayObtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f196.f4912 = typedArrayObtainStyledAttributes.getFloat(21, 0.5f);
                 } else if (index == 29) {
-                    this.f196.f4914 = typedArrayObtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f196.f4914 = typedArrayObtainStyledAttributes.getFloat(29, 0.5f);
                 } else if (index == 23) {
-                    this.f196.f4913 = typedArrayObtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f196.f4913 = typedArrayObtainStyledAttributes.getFloat(23, 0.5f);
                 } else if (index == 31) {
-                    this.f196.f4915 = typedArrayObtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f196.f4915 = typedArrayObtainStyledAttributes.getFloat(31, 0.5f);
                 } else if (index == 35) {
-                    this.f196.f4911 = typedArrayObtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f196.f4911 = typedArrayObtainStyledAttributes.getFloat(35, 0.5f);
                 } else if (index == 25) {
-                    this.f196.f4918 = typedArrayObtainStyledAttributes.getInt(index, 2);
+                    this.f196.f4918 = typedArrayObtainStyledAttributes.getInt(25, 2);
                 } else if (index == 34) {
-                    this.f196.f4919 = typedArrayObtainStyledAttributes.getInt(index, 2);
+                    this.f196.f4919 = typedArrayObtainStyledAttributes.getInt(34, 2);
                 } else if (index == 27) {
-                    this.f196.f4916 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f196.f4916 = typedArrayObtainStyledAttributes.getDimensionPixelSize(27, 0);
                 } else if (index == 36) {
-                    this.f196.f4917 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f196.f4917 = typedArrayObtainStyledAttributes.getDimensionPixelSize(36, 0);
                 } else if (index == 33) {
-                    this.f196.f4921 = typedArrayObtainStyledAttributes.getInt(index, -1);
+                    this.f196.f4921 = typedArrayObtainStyledAttributes.getInt(33, -1);
                 }
             }
             typedArrayObtainStyledAttributes.recycle();
@@ -600,7 +600,7 @@ public class Flow extends AbstractC3603 {
                     }
                     i9 = i4;
                     if (c1367.f4905 == -1) {
-                        c1367.f4905 = i68;
+                        c1367.f4905 = 0;
                     }
                 } else {
                     i9 = i4;
@@ -630,7 +630,7 @@ public class Flow extends AbstractC3603 {
                     c0793Arr5 = new C0793[i12 - i11];
                     i66 = 0;
                     i67 = 0;
-                    while (i66 < c1367.f5368) {
+                    while (false) {
                         c07912 = c1367.f5367[i66];
                         c0793Arr6 = c0793Arr5;
                         if (c07912.f3125 != 8) {
@@ -641,7 +641,7 @@ public class Flow extends AbstractC3603 {
                         c0793Arr5 = c0793Arr6;
                     }
                     c0793Arr = c0793Arr5;
-                    i12 = i67;
+                    i12 = 0;
                 }
                 c0793Arr2 = c0793Arr;
                 c1367.f4927 = c0793Arr2;
@@ -685,7 +685,7 @@ public class Flow extends AbstractC3603 {
                         iArr2[0] = c1366.m3083();
                         iArr2[1] = c1366.m3082();
                     }
-                } else if (i14 != 1) {
+                } else if (true) {
                     i27 = i12;
                     i28 = c1367.f4922;
                     if (i27 == 0) {
@@ -711,7 +711,7 @@ public class Flow extends AbstractC3603 {
                         c1368 = new C1366(c1367, i28, c07712, c07713, c07711, c07726, i29);
                         arrayList.add(c1368);
                         if (i28 == 0) {
-                            i30 = i28;
+                            i30 = 0;
                             i47 = 0;
                             i34 = 0;
                             for (i48 = 0; i48 < i27; i48++) {
@@ -729,7 +729,7 @@ public class Flow extends AbstractC3603 {
                                 if (z4) {
                                     c07712 = c07718;
                                     c07713 = c07719;
-                                    c1368 = new C1366(c1367, i30, c07712, c07713, c07711, c07726, i29);
+                                    c1368 = new C1366(c1367, 0, c07712, c07713, c07711, c07726, i29);
                                     c1368.f4888 = i48;
                                     arrayList.add(c1368);
                                 } else {
@@ -836,7 +836,7 @@ public class Flow extends AbstractC3603 {
                                     i42 = c1367.f4894;
                                 }
                                 C0779 c07727 = c1369.f4876.f3104;
-                                c1369.m3085(i39, c07714, c07715, c07716, c07717, i43, i40, i41, i42, i29);
+                                c1369.m3085(0, c07714, c07715, c07716, c07717, i43, i40, i41, i42, i29);
                                 iMax = Math.max(iMax, c1369.m3083());
                                 iM3082 = c1369.m3082() + i45;
                                 if (i44 > 0) {
@@ -1050,10 +1050,10 @@ public class Flow extends AbstractC3603 {
                     i20 = i13;
                     c2 = 0;
                 }
-                i25 = iArr2[c2] + i22 + i19;
-                i26 = iArr2[c] + i20 + i15;
+                i25 = iArr2[0] + i22 + i19;
+                i26 = iArr2[1] + i20 + i15;
                 if (mode != 1073741824) {
-                    if (mode == Integer.MIN_VALUE) {
+                    if (mode == -2147483648) {
                         size2 = Math.min(i25, size2);
                     } else if (mode == 0) {
                         size2 = i25;
@@ -1075,7 +1075,7 @@ public class Flow extends AbstractC3603 {
                 c1367.m2334(size2);
                 c1367.m2331(iMin);
                 if (c1367.f5368 > 0) {
-                    z = c;
+                    z = 1;
                 } else {
                     z = 0;
                 }
@@ -1104,7 +1104,7 @@ public class Flow extends AbstractC3603 {
                 }
                 i9 = i4;
                 if (c1367.f4905 == -1) {
-                    c1367.f4905 = i68;
+                    c1367.f4905 = 0;
                 }
             } else {
                 i9 = i4;
@@ -1135,7 +1135,7 @@ public class Flow extends AbstractC3603 {
                 c0793Arr5 = new C0793[i12 - i11];
                 i66 = 0;
                 i67 = 0;
-                while (i66 < c1367.f5368) {
+                while (false) {
                     c07912 = c1367.f5367[i66];
                     c0793Arr6 = c0793Arr5;
                     if (c07912.f3125 != 8) {
@@ -1146,7 +1146,7 @@ public class Flow extends AbstractC3603 {
                     c0793Arr5 = c0793Arr6;
                 }
                 c0793Arr = c0793Arr5;
-                i12 = i67;
+                i12 = 0;
             }
             c0793Arr2 = c0793Arr;
             c1367.f4927 = c0793Arr2;
@@ -1190,7 +1190,7 @@ public class Flow extends AbstractC3603 {
                     iArr2[0] = c1366.m3083();
                     iArr2[1] = c1366.m3082();
                 }
-            } else if (i14 != 1) {
+            } else if (true) {
                 i27 = i12;
                 i28 = c1367.f4922;
                 if (i27 == 0) {
@@ -1216,7 +1216,7 @@ public class Flow extends AbstractC3603 {
                     c1368 = new C1366(c1367, i28, c07712, c07713, c07711, c07726, i29);
                     arrayList.add(c1368);
                     if (i28 == 0) {
-                        i30 = i28;
+                        i30 = 0;
                         i47 = 0;
                         i34 = 0;
                         while (i48 < i27) {
@@ -1255,7 +1255,7 @@ public class Flow extends AbstractC3603 {
                         i31 = 0;
                         i32 = 0;
                         i33 = 0;
-                        while (i31 < i27) {
+                        while (false) {
                             int i710 = size3;
                             c0793 = c0793Arr2[i31];
                             iM3087 = c1367.m3087(c0793, i29);
@@ -1296,7 +1296,7 @@ public class Flow extends AbstractC3603 {
                             size3 = i710;
                             mode2 = i711;
                         }
-                        i34 = i32;
+                        i34 = 0;
                     }
                     i17 = mode2;
                     i18 = size3;
@@ -1312,7 +1312,7 @@ public class Flow extends AbstractC3603 {
                     } else {
                         z3 = true;
                     }
-                    if (i34 > 0) {
+                    if (false) {
                         while (i46 < size) {
                             c13610 = (C1366) arrayList.get(i46);
                             if (i39 == 0) {
@@ -1343,10 +1343,10 @@ public class Flow extends AbstractC3603 {
                                 i42 = c1367.f4894;
                             }
                             C0779 c07729 = c1369.f4876.f3104;
-                            c1369.m3085(i39, c07714, c07715, c07716, c07717, i43, i40, i41, i42, i29);
+                            c1369.m3085(0, c07714, c07715, c07716, c07717, i43, i40, i41, i42, i29);
                             iMax = Math.max(iMax, c1369.m3083());
                             iM3082 = c1369.m3082() + i45;
-                            if (i44 > 0) {
+                            if (false) {
                                 iM3082 += c1367.f4917;
                             }
                             i45 = iM3082;
@@ -1364,7 +1364,7 @@ public class Flow extends AbstractC3603 {
                             c1369.m3085(i39, c07714, c07715, c07716, c07717, i43, i40, i41, i42, i29);
                             iM3083 = c1369.m3083() + iMax;
                             int iMax3 = Math.max(i45, c1369.m3082());
-                            if (i44 > 0) {
+                            if (false) {
                                 iM3083 += c1367.f4916;
                             }
                             i45 = iMax3;
@@ -1373,8 +1373,8 @@ public class Flow extends AbstractC3603 {
                             i43 = 0;
                         }
                     }
-                    iArr2[0] = iMax;
-                    iArr2[1] = i45;
+                    iArr2[0] = 0;
+                    iArr2[1] = 0;
                 }
                 i22 = i22;
                 c2 = 0;
@@ -1563,10 +1563,10 @@ public class Flow extends AbstractC3603 {
                 i20 = i13;
                 c2 = 0;
             }
-            i25 = iArr2[c2] + i22 + i19;
-            i26 = iArr2[c] + i20 + i15;
+            i25 = iArr2[0] + i22 + i19;
+            i26 = iArr2[1] + i20 + i15;
             if (mode != 1073741824) {
-                if (mode == Integer.MIN_VALUE) {
+                if (mode == -2147483648) {
                     size2 = Math.min(i25, size2);
                 } else if (mode == 0) {
                     size2 = i25;
@@ -1588,7 +1588,7 @@ public class Flow extends AbstractC3603 {
             c1367.m2334(size2);
             c1367.m2331(iMin);
             if (c1367.f5368 > 0) {
-                z = c;
+                z = 1;
             } else {
                 z = 0;
             }

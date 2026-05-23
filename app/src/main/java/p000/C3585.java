@@ -26,7 +26,7 @@ public final class C3585 extends AbstractC2584 implements InterfaceC1429 {
     @Override // p000.InterfaceC1429
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) {
-        return ((C3585) mo1197((InterfaceC0842) obj2, (C2651) obj)).mo1198(C3497.f10997);
+        return ((C3585) mo1197((InterfaceC0842) obj2, (C2651) obj)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
@@ -54,20 +54,20 @@ public final class C3585 extends AbstractC2584 implements InterfaceC1429 {
             c2651.f8556 = this;
             return enumC0884;
         }
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         if (i != 1) {
             if (i != 2) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             AbstractC0743.m2188(obj);
-            return c3497;
+            return unit;
         }
         C2651 c2652 = (C2651) this.f11220;
         AbstractC0743.m2188(obj);
         if (view instanceof ViewGroup) {
             this.f11220 = null;
             this.f11219 = 2;
-            c2652.getClass();
+            
             C3430 c3430 = new C3430(new C0060(7, (ViewGroup) view));
             if (c3430.f10804.hasNext()) {
                 c2652.f8555 = c3430;
@@ -75,15 +75,15 @@ public final class C3585 extends AbstractC2584 implements InterfaceC1429 {
                 c2652.f8556 = this;
                 obj2 = enumC0884;
             } else {
-                obj2 = c3497;
+                obj2 = unit;
             }
             if (obj2 != enumC0884) {
-                obj2 = c3497;
+                obj2 = unit;
             }
             if (obj2 == enumC0884) {
                 return enumC0884;
             }
         }
-        return c3497;
+        return unit;
     }
 }

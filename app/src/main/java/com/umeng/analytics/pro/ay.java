@@ -36,7 +36,7 @@ public class ay {
                 th = th;
                 gZIPInputStream = gZIPInputStream2;
                 try {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "unGzip error: " + th.getMessage());
+                    UMRTLog.e("MobclickRT", "unGzip error: " + th.getMessage());
                 } finally {
                     at.a(gZIPInputStream);
                 }
@@ -57,7 +57,7 @@ public class ay {
                 th = th;
                 gZIPOutputStream = gZIPOutputStream2;
                 try {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "gzip error: " + th.getMessage());
+                    UMRTLog.e("MobclickRT", "gzip error: " + th.getMessage());
                 } finally {
                     at.a(gZIPOutputStream);
                 }

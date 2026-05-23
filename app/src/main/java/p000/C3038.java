@@ -43,7 +43,7 @@ public final /* synthetic */ class C3038 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C3040.f9741;
-        interfaceC0766Mo2512.getClass();
+        
         Integer num = null;
         List list = null;
         String str = null;
@@ -96,7 +96,7 @@ public final /* synthetic */ class C3038 implements InterfaceC1443 {
                     break;
                 case 8:
                     num = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C1665.f5622, num);
-                    i |= bc.e;
+                    i |= 256;
                     break;
                 case 9:
                     list = (List) interfaceC0766Mo2512.mo2239(interfaceC2654, 9, (InterfaceC1743) interfaceC1758Arr[9].getValue(), list);

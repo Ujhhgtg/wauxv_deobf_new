@@ -38,7 +38,7 @@ class FieldWriterInt64<T> extends FieldWriter<T> {
             jSONWriter.writeInt64Null(features);
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

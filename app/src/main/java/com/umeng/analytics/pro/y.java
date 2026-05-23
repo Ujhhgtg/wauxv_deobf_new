@@ -57,13 +57,13 @@ public class y {
         synchronized (e) {
             try {
                 JSONObject jSONObject = new JSONObject();
-                jSONObject.put(g.v, str);
+                jSONObject.put("page_name", str);
                 jSONObject.put("duration", jCurrentTimeMillis);
-                jSONObject.put(g.x, l);
-                jSONObject.put(g.y, a());
+                jSONObject.put("page_start", l);
+                jSONObject.put("type", a());
                 d.put(jSONObject);
                 if (d.length() >= 5 && (appContext = UMGlobalContext.getAppContext(null)) != null) {
-                    UMWorkDispatch.sendEvent(appContext, r.a.c, CoreProtocol.getInstance(appContext), null);
+                    UMWorkDispatch.sendEvent(appContext, 4099, CoreProtocol.getInstance(appContext), null);
                 }
             } catch (Throwable unused) {
             }
@@ -86,7 +86,7 @@ public class y {
                 if (string.length() > 0) {
                     jSONObject.put("__a", new JSONArray(string));
                     if (jSONObject.length() > 0) {
-                        l.a(context).a(x.a().c(), jSONObject, l.a.PAGE);
+                        l.a(context).a(x.a().c(), jSONObject, 2049 .PAGE);
                     }
                 }
             } catch (Throwable unused) {

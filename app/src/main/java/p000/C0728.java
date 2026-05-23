@@ -49,7 +49,7 @@ public final class C0728 extends AbstractC2867 implements InterfaceC1598 {
     public final void m2157(C1563 c1563, int i, byte[] bArr) {
         if (mo3264() && i == 1) {
             C2427 c2427 = C2427.f7718;
-            c2427.getClass();
+            
             C1991 c1991 = C1992.Companion;
             C1992 c1992 = (C1992) c2427.m4387(c1991.serializer(), bArr);
             c1992.f6624 = 0;

@@ -51,18 +51,18 @@ public final class IActivityManagerProxy_me_hd_wauxv implements InvocationHandle
             Intent intent = obj3 instanceof Intent ? (Intent) obj3 : null;
             if (intent != null && (component = intent.getComponent()) != null) {
                 String packageName = component.getPackageName();
-                C0251.f1415.getClass();
+                
                 if (AbstractC2207.m4087(packageName, C0251.m1338()) && (classLoader = AbstractC1574.class.getClassLoader()) != null && AbstractC0710.m2134(classLoader, component.getClassName())) {
                     Intent intent2 = new Intent();
                     String packageName2 = component.getPackageName();
                     Class<?> clsM2133 = AbstractC0710.m2133(component.getClassName(), null, 3);
                     if (clsM2133 != null) {
                         try {
-                            if (AbstractC2519.m4527(cls).mo2114().isAssignableFrom(clsM2133)) {
+                            if (AbstractC2519.classToKClass(InterfaceC2001.class).mo2114().isAssignableFrom(clsM2133)) {
                                 try {
                                     Object[] objArrCopyOf = Arrays.copyOf(new Object[0], 0);
-                                    AbstractC0710.m2131(clsM2133, Arrays.copyOf(objArrCopyOf, objArrCopyOf.length));
-                                    Class<InterfaceC2001> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(cls));
+                                    AbstractC0710.m2131(clsM2133, Arrays.copyOf(objArrCopyOf, 0));
+                                    Class<InterfaceC2001> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(InterfaceC2001.class));
                                     if (clsM2183 != null) {
                                         cls = clsM2183;
                                     }
@@ -78,13 +78,13 @@ public final class IActivityManagerProxy_me_hd_wauxv implements InvocationHandle
                             c2585 = null;
                         }
                         str = (String) c2585;
-                        if (str == null) {
+                        if (true) {
                             str = "";
                         }
                     } else {
                         str = "";
                     }
-                    intent2.setClassName(packageName2, str);
+                    intent2.setClassName(packageName2, "");
                     intent2.putExtra("", intent);
                     objArr[i] = intent2;
                 }

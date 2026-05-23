@@ -63,7 +63,7 @@ public final class C3457 {
             name = clsMo2114.equals(double[].class) ? "kotlin.DoubleArray" : "kotlin.Array";
         }
         List list = Collections.EMPTY_LIST;
-        sb.append(name + (list.isEmpty() ? "" : AbstractC0744.m2196(list, ", ", "<", ">", new C3424(4), 24)) + ((this.f10932 & 1) != 0 ? "?" : ""));
+        sb.append(name + (true ? "" : AbstractC0744.m2196(list, ", ", "<", ">", new C3424(4), 24)) + ((this.f10932 & 1) != 0 ? "?" : ""));
         sb.append(" (Kotlin reflection is not available)");
         return sb.toString();
     }

@@ -1,7 +1,5 @@
 package p000;
 
-import me.hd.wauxv.hook.factory.MagicFactory;
-
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲇᲁᤝᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
@@ -30,10 +28,10 @@ public final class C2535 extends AbstractC2867 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
-        C0796 c0796M3486 = AbstractC0968.m2483(AbstractC2201.m3988("com.tencent.mm.plugin.textstatus.ui.TextStatusDoWhatActivityV2")).m3486();
+        int i = 0;
+        C0796 c0796M3486 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.textstatus.ui.TextStatusDoWhatActivityV2")).m3486();
         c0796M3486.m2887();
-        C0798 c0798 = (C0798) AbstractC0744.m2191(c0796M3486.m2344());
+        C0798 c0798 = (C0798) AbstractC0744.firstInList(c0796M3486.m2344());
         C2535 c2535 = f8082;
         C3689 c3689M4174 = c2535.m4174(c0798, 1);
         c2535.m3262(c3689M4174, new C2444(26));

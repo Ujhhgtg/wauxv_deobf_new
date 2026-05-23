@@ -41,7 +41,7 @@ public final class C0513 implements LeadingMarginSpan {
             Paint paint2 = this.f2183;
             paint2.set(paint);
             C1901 c1901 = this.f2182;
-            c1901.getClass();
+            
             int i8 = c1901.f6271;
             paint2.setColor(paint2.getColor());
             int i9 = c1901.f6273;

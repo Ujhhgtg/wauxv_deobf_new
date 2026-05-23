@@ -68,7 +68,7 @@ public final /* synthetic */ class C0409 implements Consumer {
             case 11:
                 BeanUtils.processJSONType1x(this.f1925, this.f1924, (Method) obj);
                 break;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 ObjectWriterBaseModule.WriterAnnotationProcessor.lambda$processJacksonJsonSubTypes$0(this.f1924, this.f1925, (Method) obj);
                 break;
             default:

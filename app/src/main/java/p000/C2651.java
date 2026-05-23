@@ -43,7 +43,7 @@ public final class C2651 implements Iterator, InterfaceC0842, InterfaceC1737 {
             this.f8553 = 5;
             InterfaceC0842 interfaceC0842 = this.f8556;
             this.f8556 = null;
-            interfaceC0842.mo933(C3497.f10997);
+            interfaceC0842.mo933(Unit.INSTANCE);
         }
     }
 

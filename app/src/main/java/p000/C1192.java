@@ -85,7 +85,7 @@ public final class C1192 implements Set, Serializable, InterfaceC1737 {
     }
 
     public final String toString() {
-        return HttpUrl.PATH_SEGMENT_ENCODE_SET_URI;
+        return "[]";
     }
 
     @Override // java.util.Set, java.util.Collection

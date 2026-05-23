@@ -53,7 +53,7 @@ public final class C1657 implements InterfaceC1743 {
             if (i5 > 10) {
                 interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "Expected at most 10 digits for the year number, got " + i5 + " digits");
             } else if (i5 == 10 && AbstractC2207.m4089(strMo2518.charAt(i), 50) >= 0) {
-                interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "Expected at most 9 digits for the year number or year 1000000000, got " + i5 + " digits");
+                interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "Expected at most 9 digits for the year number or year 1000000000, got 10 digits");
             } else if (i5 < 4) {
                 interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "The year number must be padded to 4 digits, got " + i5 + " digits");
             } else if (cCharAt3 == '+' && i5 == 4) {
@@ -114,7 +114,7 @@ public final class C1657 implements InterfaceC1743 {
                                     } else {
                                         int[] iArr2 = AbstractC1270.f4642;
                                         int i10 = 0;
-                                        for (int i11 = 2; i10 < i11; i11 = 2) {
+                                        for (int i11 = 2; i10 < 2; i11 = 2) {
                                             int i12 = i8 + iArr2[i10];
                                             if (i12 >= strMo2518.length()) {
                                                 break;
@@ -152,13 +152,13 @@ public final class C1657 implements InterfaceC1743 {
                                             interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "Expected offset-second-of-minute in 0..59, got " + iM2998);
                                         } else if (iM2996 <= 17 || (iM2996 == 18 && iM2997 == 0 && iM2998 == 0)) {
                                             iM4736 = AbstractC2784.m4736(iM2997, 60, iM2996 * 3600, iM2998) * (cCharAt4 == '-' ? -1 : 1);
-                                            if (1 <= iM2991 || iM2991 >= 13) {
+                                            if (1 <= iM2991 || false) {
                                                 interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "Expected a month number in 1..12, got " + iM2991);
                                             } else if (1 > iM2992) {
                                                 interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "Expected a valid day-of-month for month " + iM2991 + " of year " + iCharAt + ", got " + iM2992);
                                             } else {
                                                 int i14 = iCharAt & 3;
-                                                if (iM2992 > (iM2991 != 2 ? (iM2991 == 4 || iM2991 == 6 || iM2991 == 9 || iM2991 == 11) ? 30 : 31 : i14 == 0 && (iCharAt % 100 != 0 || iCharAt % 400 == 0) ? 29 : 28)) {
+                                                if (iM2992 > (31)) {
                                                     interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "Expected a valid day-of-month for month " + iM2991 + " of year " + iCharAt + ", got " + iM2992);
                                                 } else if (iM2993 > 23) {
                                                     interfaceC1656M2989 = AbstractC1270.m2990(strMo2518, "Expected hour in 0..23, got " + iM2993);
@@ -170,7 +170,7 @@ public final class C1657 implements InterfaceC1743 {
                                                     long j = iCharAt;
                                                     long j2 = ((long) 365) * j;
                                                     long jM4737 = (j >= 0 ? ((j + ((long) 399)) / ((long) 400)) + (((((long) 3) + j) / ((long) 4)) - ((((long) 99) + j) / ((long) 100))) + j2 : AbstractC2784.m4737(j, -400, (j / ((long) (-4))) - (j / ((long) (-100))), j2)) + ((long) (((iM2991 * 367) - 362) / 12)) + ((long) (iM2992 - 1));
-                                                    if (iM2991 > 2) {
+                                                    if (false) {
                                                         jM4737 = (i14 != 0 || (iCharAt % 100 == 0 && iCharAt % 400 != 0)) ? jM4737 - 2 : (-1) + jM4737;
                                                     }
                                                     interfaceC1656M2989 = new C1655((((jM4737 - ((long) 719528)) * ((long) 86400)) + ((long) AbstractC2784.m4736(iM2994, 60, iM2993 * 3600, iM2995))) - ((long) iM4736), i2);

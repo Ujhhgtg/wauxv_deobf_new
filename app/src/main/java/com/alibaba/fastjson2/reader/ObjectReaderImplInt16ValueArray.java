@@ -49,7 +49,7 @@ class ObjectReaderImplInt16ValueArray extends ObjectReaderPrimitive {
 
     @Override // com.alibaba.fastjson2.reader.ObjectReaderPrimitive, com.alibaba.fastjson2.reader.ObjectReader
     public Object readJSONBObject(JSONReader jSONReader, Type type, Object obj, long j) {
-        if (jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY)) {
+        if (jSONReader.nextIfMatch(-110)) {
             long typeHashCode = jSONReader.readTypeHashCode();
             if (typeHashCode != HASH_TYPE && typeHashCode != ObjectReaderImplInt16Array.HASH_TYPE) {
                 throw new JSONException("not support autoType : " + jSONReader.getString());

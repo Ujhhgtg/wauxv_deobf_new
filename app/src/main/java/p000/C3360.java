@@ -55,7 +55,7 @@ public final /* synthetic */ class C3360 implements InterfaceC1443 {
         int i;
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -151,7 +151,7 @@ public final /* synthetic */ class C3360 implements InterfaceC1443 {
                     str2 = str2;
                     str = str;
                     l = (Long) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C1862.f6185, l);
-                    i2 |= bc.e;
+                    i2 |= 256;
                     str = str;
                     str2 = str2;
                     break;
@@ -176,7 +176,7 @@ public final /* synthetic */ class C3360 implements InterfaceC1443 {
                     l = l;
                     str = str;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     str = str;
                     str3 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C2839.f9108, str3);
                     i2 |= 4096;
@@ -190,52 +190,52 @@ public final /* synthetic */ class C3360 implements InterfaceC1443 {
                     l = l;
                     str = str;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     str = str;
                     str5 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C2839.f9108, str5);
-                    i2 |= Http2.INITIAL_MAX_FRAME_SIZE;
+                    i2 |= 16384;
                     l = l;
                     str = str;
                     break;
                 case 15:
                     str6 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 15, C2839.f9108, str6);
                     i = 32768;
-                    i2 |= i;
+                    i2 |= 32768;
                     l = l;
                     str = str;
                     break;
                 case 16:
                     str7 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 16, C2839.f9108, str7);
                     i = 65536;
-                    i2 |= i;
+                    i2 |= 65536;
                     l = l;
                     str = str;
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     str8 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 17, C2839.f9108, str8);
                     i = 131072;
-                    i2 |= i;
+                    i2 |= 131072;
                     l = l;
                     str = str;
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     num2 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 18, C1665.f5622, num2);
                     i = 262144;
-                    i2 |= i;
+                    i2 |= 262144;
                     l = l;
                     str = str;
                     break;
                 case 19:
                     str9 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 19, C2839.f9108, str9);
                     i = 524288;
-                    i2 |= i;
+                    i2 |= 524288;
                     l = l;
                     str = str;
                     break;
                 case 20:
                     str10 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 20, C2839.f9108, str10);
                     i = 1048576;
-                    i2 |= i;
+                    i2 |= 1048576;
                     l = l;
                     str = str;
                     break;

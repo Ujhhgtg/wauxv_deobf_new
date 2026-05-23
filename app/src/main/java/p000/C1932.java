@@ -3,7 +3,6 @@ package p000;
 import android.app.Activity;
 import android.content.Intent;
 import java.util.Collection;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲇᲀᛸᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -34,12 +33,12 @@ public final /* synthetic */ class C1932 implements InterfaceC1425 {
 
     @Override // p000.InterfaceC1425
     public final Object invoke(Object obj) {
-        int i = this.f6379;
+        int i = 1;
         Object obj2 = this.f6383;
         Object obj3 = this.f6382;
         String str = this.f6380;
         Object obj4 = this.f6381;
-        switch (i) {
+        switch (1) {
             case 0:
                 InterfaceC1429 interfaceC1429 = (InterfaceC1429) obj3;
                 C1927 c1927 = (C1927) obj2;
@@ -72,7 +71,7 @@ public final /* synthetic */ class C1932 implements InterfaceC1425 {
                 intent.putExtra("KSightThumbPath", (String) obj3);
                 intent.putExtra("Kdescription", (String) obj2);
                 activity.startActivity(intent);
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 

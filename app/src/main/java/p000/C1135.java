@@ -69,7 +69,7 @@ public final class C1135 {
                             return i4;
                         }
                     }
-                    jArr[i] = j2;
+                    jArr[i] = -1L;
                     i = i2;
                 }
                 return -1;

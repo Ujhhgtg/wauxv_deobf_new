@@ -26,7 +26,7 @@ public class av {
             return null;
         }
         try {
-            return context.getSharedPreferences(k, 0);
+            return context.getSharedPreferences("ccg_sp_config_file", 0);
         } catch (Throwable unused) {
             return null;
         }

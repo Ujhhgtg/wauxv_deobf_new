@@ -130,7 +130,7 @@ public final class C1220 implements InterfaceC1262 {
         C1216 c1216 = (C1216) interfaceC1221;
         synchronized (c1216) {
             C0963 c0963 = c1216.f4387;
-            c0963.getClass();
+            
             HashMap map = c0963.f3488;
             if (equals(map.get(c1222))) {
                 map.remove(c1222);

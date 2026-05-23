@@ -1,8 +1,7 @@
 package p000;
 
 import androidx.recyclerview.widget.RecyclerView;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
-import com.umeng.analytics.pro.ek;
+
 import java.util.Arrays;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᲁᲈᤞᤝᛸ, reason: contains not printable characters */
@@ -55,14 +54,14 @@ public abstract /* synthetic */ class AbstractC2784 {
                 return (byte) 10;
             case 11:
                 return (byte) 11;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return (byte) 12;
             case 13:
-                return ek.k;
-            case Opcodes.DCONST_0 /* 14 */:
-                return ek.l;
+                return 13;
+            case 14 /* 14 */:
+                return 14;
             case 15:
-                return ek.m;
+                return 15;
             default:
                 throw null;
         }
@@ -80,37 +79,37 @@ public abstract /* synthetic */ class AbstractC2784 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static C1299 m4738(C1563 c1563) {
-        return AbstractC0968.m2484(c1563.m3268()).m3490();
+        return AbstractC0968.startFieldResolution(c1563.m3268()).m3490();
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static C1981 m4739(C1333 c1333) {
-        c1333.getClass();
+        
         return new C1981(4);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static Class m4740(C1981 c1981, Class cls, Class cls2) {
         c1981.m3824(cls);
-        return AbstractC0743.m2183(AbstractC2519.m4527(cls2));
+        return AbstractC0743.m2183(AbstractC2519.classToKClass(cls2));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static Object m4741(C1299 c1299) {
         c1299.m3732();
-        return AbstractC0744.m2191(c1299.m3014());
+        return AbstractC0744.firstInList(c1299.resolve());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
-    public static Object m4742(C1973 c1973) {
+    public static Object m4742(MethodResolver c1973) {
         c1973.m3732();
-        return AbstractC0744.m2191(c1973.m3799());
+        return AbstractC0744.firstInList(c1973.m3799());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
-    public static Object m4743(Object[] objArr, int i, C1973 c1973) {
+    public static Object setParamsAndResolveFirstMethod(Object[] objArr, int i, MethodResolver c1973) {
         c1973.m2888(Arrays.copyOf(objArr, i));
-        return AbstractC0744.m2191(c1973.m3799());
+        return AbstractC0744.firstInList(c1973.m3799());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */

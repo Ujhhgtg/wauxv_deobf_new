@@ -117,7 +117,7 @@ public final class C0329 extends AbstractC2707 {
             return m1440(Array.newInstance((Class<?>) cls2, 0), cls, c0550);
         }
         if (-1 == i) {
-            runnableC1668.getClass();
+            
             if (cls3 != cls && !AbstractC0010.m425(cls)) {
                 InterfaceC2225 interfaceC2225 = this.f8721[0];
                 if (interfaceC2225 instanceof C0330) {

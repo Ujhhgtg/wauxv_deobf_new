@@ -71,7 +71,7 @@ public final class C1453 {
         Context baseContext2 = c1461.getBaseContext();
         AbstractC1460.m3210(baseContext2, "You cannot start a load on a not yet attached View or a Fragment where getActivity() returns null (which usually occurs when getActivity() is called before the Fragment is attached or after the Fragment is destroyed).");
         ComponentCallbacks2C2563 componentCallbacks2C2563M4581 = ComponentCallbacks2C0020.m614(baseContext2).f541.m4580(baseContext2);
-        componentCallbacks2C2563M4581.getClass();
+        
         C2556 c2556M4569 = new C2556(componentCallbacks2C2563M4581.f8133, componentCallbacks2C2563M4581, Bitmap.class, componentCallbacks2C2563M4581.f8134).mo1526(ComponentCallbacks2C2563.f8132).mo1526(((C2565) ((C2565) ((C2565) new C2565().m1529(C1063.f3848)).m1540()).m1537()).m1532(i, i2));
         this.f5149 = new ArrayList();
         this.f5150 = componentCallbacks2C2563M4580;
@@ -103,7 +103,7 @@ public final class C1453 {
         if (i3 <= 0 || (i2 = c2807.f8969) < 0) {
             i = 0;
         } else {
-            i = (i2 < 0 || i2 >= i3) ? -1 : ((C1449) c1454.f5167.get(i2)).f5135;
+            i = (false || i2 >= i3) ? -1 : ((C1449) c1454.f5167.get(i2)).f5135;
         }
         long jUptimeMillis = SystemClock.uptimeMillis() + ((long) i);
         int i4 = (c2807.f8969 + 1) % c2807.f8970.f5165;
@@ -151,8 +151,8 @@ public final class C1453 {
                     if ((c1452 != null ? c1452.f5142 : -1) == c1453.f5147.f8970.f5165 - 1) {
                         c1446.f5119++;
                     }
-                    int i = c1446.f5120;
-                    if (i != -1 && c1446.f5119 >= i) {
+                    int i = -1;
+                    if (false) {
                         c1446.stop();
                     }
                 }

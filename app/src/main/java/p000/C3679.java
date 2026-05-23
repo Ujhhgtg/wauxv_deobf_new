@@ -64,33 +64,33 @@ public final class C3679 implements Serializable {
         if (C3692.m5357() && C3692.f11603) {
             strM1338 = "android-zygote";
         } else {
-            C0251.f1415.getClass();
+            
             strM1338 = C0251.m1338();
         }
         this.f11556 = strM1338;
-        C0251.f1415.getClass();
+        
         String strM1339 = C0251.m1338();
-        int i2 = AbstractC1745.f5844;
+        int i2 = 0;
         C0243 c0243 = C0251.f1419;
         InterfaceC1742 interfaceC1742 = C0251.f1416[0];
-        C1744 c1744M2483 = AbstractC0968.m2483(c0243.m1323());
+        C1744 c1744M2483 = AbstractC0968.startMethodResolution(c0243.m1323());
         C2873 c2873 = C0152.f1159;
         ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
         c1744M2483.m3493(true);
-        C1973 c1973M3492 = c1744M2483.m3492();
+        MethodResolver c1973M3492 = c1744M2483.m3492();
         c1973M3492.f6370 = "currentActivityThread";
         c1973M3492.m2887();
         C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
         Context context = null;
         Object objM3831 = c1982 != null ? c1982.m3831(new Object[0]) : null;
-        C1973 c1973M3493 = c1744M2483.m3492();
+        MethodResolver c1973M3493 = c1744M2483.m3492();
         c1973M3493.f6370 = "getSystemContext";
         c1973M3493.m2887();
         C1982 c1983 = (C1982) AbstractC0744.m2192(c1973M3493.m3799());
         if (c1983 != null) {
             c1983.m3378(objM3831);
             try {
-                c2585 = c1983.m3832(Arrays.copyOf(new Object[0], 0));
+                c2585 = c1983.invoke(Arrays.copyOf(new Object[0], 0));
             } catch (Throwable th2) {
                 c2585 = new C2585(th2);
             }
@@ -98,14 +98,14 @@ public final class C3679 implements Serializable {
         }
         if (context != null && (packageManager = context.getPackageManager()) != null && (applicationInfo = packageManager.getApplicationInfo(strM1339, 1)) != null) {
             int i3 = applicationInfo.uid;
-            C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.m4527(UserHandle.class));
+            C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.classToKClass(UserHandle.class));
             ((C1927) c1744M2482.f5843).f6366 = AbstractC2205.m4054();
             c1744M2482.m3493(true);
-            C1973 c1973M3494 = c1744M2482.m3492();
+            MethodResolver c1973M3494 = c1744M2482.m3492();
             c1973M3494.f6370 = "getUserId";
-            c1973M3494.m2888(Arrays.copyOf(new Object[]{AbstractC2519.m4527(Integer.TYPE)}, 1));
+            c1973M3494.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE)}, 1));
             C1982 c1984 = (C1982) AbstractC0744.m2192(c1973M3494.m3799());
-            if (c1984 != null && (num = (Integer) c1984.m3832(Integer.valueOf(i3))) != null) {
+            if (c1984 != null && (num = (Integer) c1984.invoke(Integer.valueOf(i3))) != null) {
                 iIntValue = num.intValue();
             }
         }
@@ -154,7 +154,7 @@ public final class C3679 implements Serializable {
         String str4 = this.f11558;
         if (str3 != null) {
             String str5 = ((Object) str) + " " + str4;
-            if (str5 != null) {
+            if (true) {
                 return str5;
             }
         }

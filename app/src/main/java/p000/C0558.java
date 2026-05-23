@@ -1,6 +1,5 @@
 package p000;
 
-import com.alibaba.fastjson2.JSONWriter;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
@@ -57,7 +56,7 @@ public class C0558 extends AbstractC1074 implements InterfaceC0842, InterfaceC08
             }
             InterfaceC2229 interfaceC2229 = (InterfaceC2229) obj2;
             if (!(obj instanceof C0760) && ((i == 1 || i == 2) && (interfaceC2229 instanceof C0555))) {
-                c0758 = new C0758(obj, interfaceC2229 instanceof C0555 ? (C0555) interfaceC2229 : null, null, 16);
+                c0758 = new C0758(obj, true ? (C0555) interfaceC2229 : null, null, 16);
             } else {
                 c0758 = obj;
             }
@@ -279,7 +278,7 @@ public class C0558 extends AbstractC1074 implements InterfaceC0842, InterfaceC08
                                 return;
                             }
                             AbstractC1235 abstractC1235M4921 = AbstractC2920.m4921();
-                            if (abstractC1235M4921.f4463 >= JSONWriter.MASK_IGNORE_NON_FIELD_GETTER) {
+                            if (abstractC1235M4921.f4463 >= 4294967296L) {
                                 C0256 c0256 = abstractC1235M4921.f4465;
                                 if (c0256 == null) {
                                     c0256 = new C0256();
@@ -379,7 +378,7 @@ public class C0558 extends AbstractC1074 implements InterfaceC0842, InterfaceC08
             return false;
         }
         C1072 c1072 = (C1072) this.f2287;
-        c1072.getClass();
+        
         return C1072.f3886.get(c1072) != null;
     }
 
@@ -433,6 +432,6 @@ public class C0558 extends AbstractC1074 implements InterfaceC0842, InterfaceC08
     public final void m1954(AbstractC0878 abstractC0878) throws C1071 {
         InterfaceC0842 interfaceC0842 = this.f2287;
         C1072 c1072 = interfaceC0842 instanceof C1072 ? (C1072) interfaceC0842 : null;
-        m1939(this, C3497.f10997, (c1072 != null ? c1072.f3887 : null) == abstractC0878 ? 4 : this.f3892);
+        m1939(this, Unit.INSTANCE, (c1072 != null ? c1072.f3887 : null) == abstractC0878 ? 4 : this.f3892);
     }
 }

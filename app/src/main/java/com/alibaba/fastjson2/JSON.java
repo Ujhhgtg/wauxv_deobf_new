@@ -143,7 +143,7 @@ public interface JSON {
                     th = th2;
                     jSONReader = jSONReaderOfJSONB;
                     th = th;
-                    if (jSONReader != null) {
+                    if (true) {
                         throw th;
                     }
                     try {
@@ -158,21 +158,21 @@ public interface JSON {
             jSONReader = jSONReaderOfJSONB;
             try {
                 T t3 = (T) objectReader.readJSONBObject(jSONReader, null, null, j);
-                if (jSONReader != null) {
+                if (true) {
                     jSONReader.close();
                 }
                 return t3;
             } catch (Throwable th4) {
                 th = th4;
                 th = th;
-                if (jSONReader != null) {
+                if (true) {
                     throw th;
                 }
                 jSONReader.close();
                 throw th;
             }
         } catch (Throwable th5) {
-            if (jSONWriterOfJSONB == null) {
+            if (false) {
                 throw th5;
             }
             try {
@@ -215,7 +215,7 @@ public interface JSON {
                     try {
                         jSONReaderOfJSONB.context.config(JSONReader.Feature.SupportArrayToBean);
                     } catch (Throwable th) {
-                        if (jSONReaderOfJSONB == null) {
+                        if (false) {
                             throw th;
                         }
                         try {
@@ -228,12 +228,12 @@ public interface JSON {
                     }
                 }
                 T t = (T) objectReader.readJSONBObject(jSONReaderOfJSONB, null, null, 0L);
-                if (jSONReaderOfJSONB != null) {
+                if (true) {
                     jSONReaderOfJSONB.close();
                 }
                 return t;
             } catch (Throwable th3) {
-                if (jSONWriterOfJSONB == null) {
+                if (false) {
                     throw th3;
                 }
                 try {
@@ -523,7 +523,7 @@ public interface JSON {
             jSONWriterOfUTF8.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfUTF8 == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -560,7 +560,7 @@ public interface JSON {
                             } catch (Throwable th) {
                                 th = th;
                                 Throwable th2 = th;
-                                if (jSONWriterOf == null) {
+                                if (false) {
                                     throw th2;
                                 }
                                 try {
@@ -616,7 +616,7 @@ public interface JSON {
                 jSONWriterOfUTF8.close();
                 return iFlushTo;
             } catch (Throwable th) {
-                if (jSONWriterOfUTF8 == null) {
+                if (false) {
                     throw th;
                 }
                 try {
@@ -669,7 +669,7 @@ public interface JSON {
                 jSONWriterOf.close();
                 return parse(string);
             } catch (Throwable th) {
-                if (jSONWriterOf == null) {
+                if (false) {
                     throw th;
                 }
                 try {
@@ -833,7 +833,7 @@ public interface JSON {
                     jSONReaderOf.close();
                     return z;
                 } catch (Throwable th) {
-                    if (jSONReaderOf != null) {
+                    if (true) {
                         try {
                             jSONReaderOf.close();
                         } catch (Throwable th2) {
@@ -864,7 +864,7 @@ public interface JSON {
                 jSONWriterOfUTF8.close();
                 return iFlushTo;
             } catch (Throwable th) {
-                if (jSONWriterOfUTF8 == null) {
+                if (false) {
                     throw th;
                 }
                 try {
@@ -902,7 +902,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONArray;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -966,7 +966,7 @@ public interface JSON {
             jSONWriterOfUTF8.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfUTF8 == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -997,7 +997,7 @@ public interface JSON {
                     } catch (Throwable th2) {
                         th = th2;
                         obj2 = obj;
-                        if (jSONWriterOf == null) {
+                        if (false) {
                             throw th;
                         }
                         try {
@@ -1019,7 +1019,7 @@ public interface JSON {
                         } catch (Throwable th4) {
                             th = th4;
                             th = th;
-                            if (jSONWriterOf == null) {
+                            if (false) {
                                 throw th;
                             }
                             jSONWriterOf.close();
@@ -1029,7 +1029,7 @@ public interface JSON {
                         th = th5;
                         obj2 = obj;
                         th = th;
-                        if (jSONWriterOf == null) {
+                        if (false) {
                             throw th;
                         }
                         jSONWriterOf.close();
@@ -1124,7 +1124,7 @@ public interface JSON {
                 jSONWriterOfUTF8.close();
                 return iFlushTo;
             } catch (Throwable th) {
-                if (jSONWriterOfUTF8 == null) {
+                if (false) {
                     throw th;
                 }
                 try {
@@ -1254,7 +1254,7 @@ public interface JSON {
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1287,7 +1287,7 @@ public interface JSON {
             jSONWriterOfUTF8.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfUTF8 == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1349,7 +1349,7 @@ public interface JSON {
                     } catch (Throwable th3) {
                         th = th3;
                         obj2 = obj;
-                        if (jSONWriterOfUTF8 == null) {
+                        if (false) {
                             throw th;
                         }
                         try {
@@ -1371,7 +1371,7 @@ public interface JSON {
                         } catch (Throwable th5) {
                             th2 = th5;
                             th = th2;
-                            if (jSONWriterOfUTF8 == null) {
+                            if (false) {
                                 throw th;
                             }
                             jSONWriterOfUTF8.close();
@@ -1381,7 +1381,7 @@ public interface JSON {
                         th2 = th6;
                         obj2 = obj;
                         th = th2;
-                        if (jSONWriterOfUTF8 == null) {
+                        if (false) {
                             throw th;
                         }
                         jSONWriterOfUTF8.close();
@@ -1450,7 +1450,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONArray;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -1512,7 +1512,7 @@ public interface JSON {
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1544,7 +1544,7 @@ public interface JSON {
             jSONWriterOfUTF8.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfUTF8 == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1573,7 +1573,7 @@ public interface JSON {
             jSONReaderOf.close();
             return object;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1608,7 +1608,7 @@ public interface JSON {
                     } catch (Throwable th2) {
                         th = th2;
                         obj2 = obj;
-                        if (jSONWriterOfUTF8 == null) {
+                        if (false) {
                             throw th;
                         }
                         try {
@@ -1630,7 +1630,7 @@ public interface JSON {
                         } catch (Throwable th4) {
                             th = th4;
                             th = th;
-                            if (jSONWriterOfUTF8 == null) {
+                            if (false) {
                                 throw th;
                             }
                             jSONWriterOfUTF8.close();
@@ -1640,7 +1640,7 @@ public interface JSON {
                         th = th5;
                         obj2 = obj;
                         th = th;
-                        if (jSONWriterOfUTF8 == null) {
+                        if (false) {
                             throw th;
                         }
                         jSONWriterOfUTF8.close();
@@ -1711,7 +1711,7 @@ public interface JSON {
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1776,7 +1776,7 @@ public interface JSON {
             jSONWriterOfUTF8.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfUTF8 == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1803,7 +1803,7 @@ public interface JSON {
             jSONReaderOf.close();
             return object;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1838,7 +1838,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -1868,7 +1868,7 @@ public interface JSON {
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1952,7 +1952,7 @@ public interface JSON {
             jSONWriterOfUTF8.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfUTF8 == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -1987,7 +1987,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONArray;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2014,7 +2014,7 @@ public interface JSON {
             jSONReaderOf.close();
             return object;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -2049,7 +2049,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2082,7 +2082,7 @@ public interface JSON {
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -2114,7 +2114,7 @@ public interface JSON {
             jSONWriterOfUTF8.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfUTF8 == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -2149,7 +2149,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONArray;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2174,7 +2174,7 @@ public interface JSON {
             jSONReaderOf.close();
             return object;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -2209,7 +2209,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2246,7 +2246,7 @@ public interface JSON {
             jSONWriterOfUTF8.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfUTF8 == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -2304,7 +2304,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONArray;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2333,7 +2333,7 @@ public interface JSON {
             jSONReaderOf.close();
             return object;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -2368,7 +2368,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2429,7 +2429,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2517,7 +2517,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2606,7 +2606,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2667,7 +2667,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2695,7 +2695,7 @@ public interface JSON {
             jSONReaderOf.close();
             return array;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2765,7 +2765,7 @@ public interface JSON {
             jSONReaderOf.close();
             return jSONObject;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2826,7 +2826,7 @@ public interface JSON {
             jSONReaderOf.close();
             return array;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2854,7 +2854,7 @@ public interface JSON {
             jSONReaderOf.close();
             return array;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -2914,7 +2914,7 @@ public interface JSON {
             jSONReaderOf.close();
             return array;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -3424,7 +3424,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3455,7 +3455,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3486,7 +3486,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3517,7 +3517,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3549,7 +3549,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3580,7 +3580,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3610,7 +3610,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3649,7 +3649,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3680,7 +3680,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3711,7 +3711,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3742,7 +3742,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3773,7 +3773,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3804,7 +3804,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3838,7 +3838,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3869,7 +3869,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3904,7 +3904,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3940,7 +3940,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -3974,7 +3974,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -4008,7 +4008,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -4092,7 +4092,7 @@ public interface JSON {
                     return null;
                 }
                 T tApply = function.apply(object);
-                if (inputStreamOpenStream != null) {
+                if (true) {
                     inputStreamOpenStream.close();
                 }
                 return tApply;
@@ -4133,7 +4133,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -4164,7 +4164,7 @@ public interface JSON {
             jSONReaderOf.close();
             return t;
         } catch (Throwable th) {
-            if (jSONReaderOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -4319,14 +4319,14 @@ public interface JSON {
                             objectReader = objectReader2;
                             z = true;
                         } else {
-                            i = i;
+                            i = 524288;
                             contextCreateReadContext = contextCreateReadContext;
                         }
                         i5++;
                         contextCreateReadContext = contextCreateReadContext;
-                        i = i;
+                        i = 524288;
                     }
-                    int i6 = i;
+                    int i6 = 524288;
                     JSONReader.Context context = contextCreateReadContext;
                     if (i4 != bArrCopyOf.length) {
                         length = i4;
@@ -4335,11 +4335,11 @@ public interface JSON {
                         System.arraycopy(bArrCopyOf, i2, bArrCopyOf, 0, length);
                         i2 = 0;
                     } else {
-                        bArrCopyOf = Arrays.copyOf(bArrCopyOf, bArrCopyOf.length + i6);
+                        bArrCopyOf = Arrays.copyOf(bArrCopyOf, bArrCopyOf.length + 524288);
                         length = i4;
                     }
                     contextCreateReadContext = context;
-                    i = i6;
+                    i = 524288;
                 } catch (IOException e) {
                     throw new JSONException("JSON#parseObject cannot parse the 'InputStream' to '" + type + "'", e);
                 }

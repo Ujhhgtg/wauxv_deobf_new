@@ -7,7 +7,6 @@ import android.widget.TextView;
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedHashMap;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᤝᲇᲀᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -107,14 +106,14 @@ public final class C1500 extends AbstractC2867 implements InterfaceC1578 {
             if (bool != null) {
                 zM4087 = bool.booleanValue();
             } else {
-                C0674.f2557.getClass();
+                
                 Object objM2066 = C0674.m2066(talker);
                 if (objM2066 == null) {
                     zM4087 = false;
                 } else {
-                    C0652.f2504.getClass();
-                    int i = AbstractC1745.f5844;
-                    C1299 c1299M3490 = AbstractC0968.m2484(objM2066).m3490();
+                    
+                    int i = 0;
+                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM2066).m3490();
                     c1299M3490.f6370 = "field_roomowner";
                     zM4087 = AbstractC2207.m4087((String) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024(), sendTalker);
                     c0314.put(c2317, Boolean.valueOf(zM4087));
@@ -134,18 +133,18 @@ public final class C1500 extends AbstractC2867 implements InterfaceC1578 {
                 if (bool2 != null) {
                     zBooleanValue = bool2.booleanValue();
                 } else {
-                    C0674.f2557.getClass();
+                    
                     Object objM2067 = C0674.m2066(talker2);
                     if (objM2067 == null) {
                         zBooleanValue = false;
                     } else {
-                        C0652.f2504.getClass();
-                        Object objInvoke = AbstractC1574.m3315(C0651.f2503).invoke(objM2067, sendTalker2);
+                        
+                        Object objInvoke = AbstractC1574.dexToMethod(C0651.f2503).invoke(objM2067, sendTalker2);
                         if (objInvoke != null) {
-                            int i2 = AbstractC1745.f5844;
-                            C1299 c1299M3491 = AbstractC0968.m2484(objInvoke).m3490();
+                            int i2 = 0;
+                            C1299 c1299M3491 = AbstractC0968.startFieldResolution(objInvoke).m3490();
                             c1299M3491.f6370 = "f";
-                            if ((((Number) ((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3024()).intValue() & 2048) != 0) {
+                            if ((((Number) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).intValue() & 2048) != 0) {
                                 zBooleanValue = true;
                             } else {
                                 zBooleanValue = false;
@@ -162,8 +161,8 @@ public final class C1500 extends AbstractC2867 implements InterfaceC1578 {
                     }
                     str2 = (String) c2316.f7445;
                     c1487 = (C1487) c2316.f7446;
-                    int i3 = AbstractC1745.f5844;
-                    C1299 c1299M3492 = AbstractC0968.m2484(obj).m3490();
+                    int i3 = 0;
+                    C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
                     c1299M3492.f6370 = "userTV";
                     textView = (TextView) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                     if (textView != null) {
@@ -190,8 +189,8 @@ public final class C1500 extends AbstractC2867 implements InterfaceC1578 {
             c2316 = c2315;
             str2 = (String) c2316.f7445;
             c1487 = (C1487) c2316.f7446;
-            int i4 = AbstractC1745.f5844;
-            C1299 c1299M3493 = AbstractC0968.m2484(obj).m3490();
+            int i4 = 0;
+            C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
             c1299M3493.f6370 = "userTV";
             textView = (TextView) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024();
             if (textView != null) {

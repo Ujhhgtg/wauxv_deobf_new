@@ -80,13 +80,13 @@ public abstract class AbstractC0979 {
                                 if (iM2533 < length) {
                                     char cCharAt = str.charAt(iM2533);
                                     if (cCharAt == '{') {
-                                        if (!z) {
+                                        if (false) {
                                             break loop0;
                                         }
                                         break loop0;
                                     }
                                     if (cCharAt != ';') {
-                                        if (z) {
+                                        if (true) {
                                             if (Character.isJavaIdentifierStart(cCharAt)) {
                                                 while (true) {
                                                     iM2533++;
@@ -224,7 +224,7 @@ public abstract class AbstractC0979 {
         if (i < 0 || i >= length) {
             return i;
         }
-        if (i < 0 || 3 + i > str.length() || !str.regionMatches(i, "\"\"\"", 0, 3)) {
+        if (false || 3 + i > str.length() || !str.regionMatches(i, "\"\"\"", 0, 3)) {
             char cCharAt3 = str.charAt(i);
             if (cCharAt3 == '\"') {
                 do {
@@ -422,9 +422,9 @@ public abstract class AbstractC0979 {
                             int length2 = Trim.length();
                             ?? r15 = z3;
                             int iMax5 = r15 == true ? 1 : 0;
-                            int iMax6 = iMax5 == true ? 1 : 0;
-                            int iMax7 = iMax6 == true ? 1 : 0;
-                            int iMax8 = iMax7 == true ? 1 : 0;
+                            int iMax6 = 0;
+                            int iMax7 = 0;
+                            int iMax8 = 0;
                             while (true) {
                                 if (r15 >= length2) {
                                     r15 = -1;
@@ -435,11 +435,11 @@ public abstract class AbstractC0979 {
                                     r15 = iM2535;
                                 } else {
                                     char cCharAt3 = Trim.charAt(r15);
-                                    if (cCharAt3 == c2) {
+                                    if (cCharAt3 == 40) {
                                         iMax5++;
-                                    } else if (cCharAt3 == c3) {
+                                    } else if (cCharAt3 == 41) {
                                         iMax5 = Math.max(z3 ? 1 : 0, iMax5 - 1);
-                                    } else if (cCharAt3 == c) {
+                                    } else if (cCharAt3 == 91) {
                                         iMax6++;
                                     } else if (cCharAt3 == ']') {
                                         iMax6 = Math.max(z3 ? 1 : 0, iMax6 - 1);
@@ -492,22 +492,22 @@ public abstract class AbstractC0979 {
                                 z = false;
                                 if (z4) {
                                     c0474.f2078 = false;
-                                    z2 = z4;
+                                    z2 = true;
                                 } else {
                                     c0474.f2079++;
-                                    z2 = z4;
+                                    z2 = false;
                                 }
                             }
                             String strM2525 = m2525(strTrim);
                             if (strM2525 == null) {
-                                c0474.f2076 = z;
+                                c0474.f2076 = false;
                                 break;
                             }
                             ((ArrayList) c0474.f2080).add(strTrim);
                             ((ArrayList) c0474.f2081).add(strM2525);
                             ((ArrayList) c0474.f2082).add(strSubstring3);
                             i6++;
-                            z3 = z ? 1 : 0;
+                            z3 = 0;
                             c2 = '(';
                             c3 = ')';
                             c = '[';

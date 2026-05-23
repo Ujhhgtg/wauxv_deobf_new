@@ -72,7 +72,7 @@ public final class RunnableC0132 implements Runnable {
                     ((Runnable) this.f1100).run();
                     return;
                 } catch (Throwable th) {
-                    threadFactoryC1464.f5225.getClass();
+                    
                     if (Log.isLoggable("GlideExecutor", 6)) {
                         Log.e("GlideExecutor", "Request threw uncaught throwable", th);
                         return;
@@ -95,7 +95,7 @@ public final class RunnableC0132 implements Runnable {
                             i++;
                         }
                     }
-                    c1682.f5697.getClass();
+                    
                     return;
                 }
                 c1682.f5702.post(this);

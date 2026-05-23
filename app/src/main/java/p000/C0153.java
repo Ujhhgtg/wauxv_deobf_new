@@ -1,7 +1,6 @@
 package p000;
 
 import com.google.android.material.checkbox.MaterialCheckBox;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲇᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -32,18 +31,18 @@ public final class C0153 extends AbstractC2862 implements InterfaceC1429 {
     public final Object mo1196(Object obj, Object obj2) {
         InterfaceC0883 interfaceC0883 = (InterfaceC0883) obj;
         InterfaceC0842 interfaceC0842 = (InterfaceC0842) obj2;
-        switch (this.f1160) {
+        switch (1) {
             case 0:
                 break;
         }
-        return ((C0153) mo1197(interfaceC0842, interfaceC0883)).mo1198(C3497.f10997);
+        return ((C0153) mo1197(interfaceC0842, interfaceC0883)).mo1198(Unit.INSTANCE);
     }
 
     /* JADX WARN: Type inference failed for: r1v1, types: [ᛱᛲᛳᛴᛵᛶᛷᤝᲈᲀᲁᤞᛸᲇ, ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤞᛸᲇᲁᤝ] */
     @Override // p000.AbstractC0370
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final InterfaceC0842 mo1197(InterfaceC0842 interfaceC0842, Object obj) {
-        switch (this.f1160) {
+        switch (1) {
             case 0:
                 C0153 c0153 = new C0153((AbstractC2862) this.f1163, interfaceC0842);
                 c0153.f1162 = obj;
@@ -57,11 +56,11 @@ public final class C0153 extends AbstractC2862 implements InterfaceC1429 {
     @Override // p000.AbstractC0370
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Object mo1198(Object obj) throws Throwable {
-        int i = this.f1160;
-        C3497 c3497 = C3497.f10997;
+        int i = 1;
+        Unit unit = Unit.INSTANCE;
         EnumC0884 enumC0884 = EnumC0884.f3325;
         Object obj2 = this.f1163;
-        switch (i) {
+        switch (1) {
             case 0:
                 int i2 = this.f1161;
                 if (i2 != 0) {
@@ -69,12 +68,12 @@ public final class C0153 extends AbstractC2862 implements InterfaceC1429 {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC0743.m2188(obj);
-                    return c3497;
+                    return unit;
                 }
                 AbstractC0743.m2188(obj);
                 InterfaceC0883 interfaceC0883 = (InterfaceC0883) this.f1162;
                 this.f1161 = 1;
-                return ((AbstractC2862) obj2).mo1196(interfaceC0883, this) == enumC0884 ? enumC0884 : c3497;
+                return ((AbstractC2862) obj2).mo1196(interfaceC0883, this) == enumC0884 ? enumC0884 : unit;
             default:
                 C0719 c0719 = (C0719) obj2;
                 String[] strArr = AbstractC1574.f5469;
@@ -96,7 +95,7 @@ public final class C0153 extends AbstractC2862 implements InterfaceC1429 {
                     AbstractC0743.m2188(obj);
                 }
                 ((MaterialCheckBox) ((C0542) this.f1162).f2253).setText(c0719.f2728 + " (" + ((String) obj) + ')');
-                return c3497;
+                return unit;
         }
     }
 

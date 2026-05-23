@@ -102,22 +102,22 @@ public final class C0587 extends AbstractC3436 {
                         if (i14 != 2) {
                             c0587 = this;
                             if (i2 == i3 && i4 == i5) {
-                                c0587.f10841.getClass();
+                                
                                 animatorM4149 = AbstractC2243.m4149(view, f2386, C2102.m3895(i6, i8, i7, i9));
                             } else {
-                                c0587.f10841.getClass();
+                                
                                 animatorM4149 = AbstractC2243.m4149(view, f2387, C2102.m3895(i2, i4, i3, i5));
                             }
                         } else if (i10 == i12 && i11 == i13) {
                             c0587 = this;
-                            c0587.f10841.getClass();
+                            
                             animatorM4149 = AbstractC2243.m4149(view, f2388, C2102.m3895(i2, i4, i3, i5));
                         } else {
                             c0587 = this;
                             C0586 c0586 = new C0586(view);
-                            c0587.f10841.getClass();
+                            
                             ObjectAnimator objectAnimatorM4149 = AbstractC2243.m4149(c0586, f2384, C2102.m3895(i2, i4, i3, i5));
-                            c0587.f10841.getClass();
+                            
                             ObjectAnimator objectAnimatorM41410 = AbstractC2243.m4149(c0586, f2385, C2102.m3895(i6, i8, i7, i9));
                             AnimatorSet animatorSet = new AnimatorSet();
                             animatorSet.playTogether(objectAnimatorM4149, objectAnimatorM41410);

@@ -53,8 +53,8 @@ public final class C2606 extends AbstractC0426 {
         AbstractC1460.m3208("roundingRadius must be greater than 0.", i3 > 0);
         Lock lock = AbstractC3429.f10802;
         Bitmap.Config config = Bitmap.Config.RGBA_F16;
-        Bitmap.Config config2 = config.equals(bitmap.getConfig()) ? config : Bitmap.Config.ARGB_8888;
-        if (!config.equals(bitmap.getConfig())) {
+        Bitmap.Config config2 = Bitmap.Config.RGBA_F16.equals(bitmap.getConfig()) ? Bitmap.Config.RGBA_F16 : Bitmap.Config.ARGB_8888;
+        if (!Bitmap.Config.RGBA_F16.equals(bitmap.getConfig())) {
             config = Bitmap.Config.ARGB_8888;
         }
         if (config.equals(bitmap.getConfig())) {
@@ -66,7 +66,7 @@ public final class C2606 extends AbstractC0426 {
         Bitmap bitmapMo1514 = interfaceC0424.mo1513(bitmapMo1513.getWidth(), bitmapMo1513.getHeight(), config2);
         bitmapMo1514.setHasAlpha(true);
         Shader.TileMode tileMode = Shader.TileMode.CLAMP;
-        BitmapShader bitmapShader = new BitmapShader(bitmapMo1513, tileMode, tileMode);
+        BitmapShader bitmapShader = new BitmapShader(bitmapMo1513, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
         Paint paint2 = new Paint();
         paint2.setAntiAlias(true);
         paint2.setShader(bitmapShader);

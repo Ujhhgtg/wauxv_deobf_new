@@ -164,7 +164,7 @@ class JSONPathParser {
                     jSONReader.next();
                     jSONReader2 = this.jsonReader;
                     if (jSONReader2.ch == ']') {
-                        multiNameSegment = new JSONPathSegment.RangeIndexSegment(int32Value, int32Value >= 0 ? Integer.MAX_VALUE : 0);
+                        multiNameSegment = new JSONPathSegment.RangeIndexSegment(int32Value, int32Value >= 0 ? 2147483647 : 0);
                     } else {
                         multiNameSegment = new JSONPathSegment.RangeIndexSegment(int32Value, jSONReader2.readInt32Value());
                     }
@@ -234,21 +234,21 @@ class JSONPathParser {
                 switch (c) {
                     case '0':
                     case '1':
-                    case Opcodes.AALOAD /* 50 */:
-                    case Opcodes.BALOAD /* 51 */:
+                    case 50 /* 50 */:
+                    case 51 /* 51 */:
                     case '4':
-                    case Opcodes.SALOAD /* 53 */:
-                    case Opcodes.ISTORE /* 54 */:
-                    case Opcodes.LSTORE /* 55 */:
-                    case Opcodes.FSTORE /* 56 */:
-                    case Opcodes.DSTORE /* 57 */:
+                    case 53 /* 53 */:
+                    case 54 /* 54 */:
+                    case 55 /* 55 */:
+                    case 56 /* 56 */:
+                    case 57 /* 57 */:
                         int32Value = jSONReader3.readInt32Value();
                         jSONReader = this.jsonReader;
                         if (jSONReader.ch == ':') {
                             jSONReader.next();
                             jSONReader2 = this.jsonReader;
                             if (jSONReader2.ch == ']') {
-                                multiNameSegment = new JSONPathSegment.RangeIndexSegment(int32Value, int32Value >= 0 ? Integer.MAX_VALUE : 0);
+                                multiNameSegment = new JSONPathSegment.RangeIndexSegment(int32Value, int32Value >= 0 ? 2147483647 : 0);
                             } else {
                                 multiNameSegment = new JSONPathSegment.RangeIndexSegment(int32Value, jSONReader2.readInt32Value());
                             }
@@ -264,7 +264,7 @@ class JSONPathParser {
                             }
                             arrayList2 = new ArrayList();
                             arrayList2.add(Integer.valueOf(int32Value));
-                            if (zNextIfMatchIdent) {
+                            if (false) {
                                 arrayList2.add(-1);
                                 this.jsonReader.nextIfComma();
                             }
@@ -284,11 +284,11 @@ class JSONPathParser {
                             }
                         }
                         break;
-                    case Opcodes.ASTORE /* 58 */:
+                    case 58 /* 58 */:
                         jSONReader3.next();
                         JSONReader jSONReader4 = this.jsonReader;
                         int int32Value2 = jSONReader4.ch == ']' ? 0 : jSONReader4.readInt32Value();
-                        multiNameSegment = int32Value2 > 0 ? new JSONPathSegment.RangeIndexSegment(0, int32Value2) : new JSONPathSegment.RangeIndexSegment(Integer.MIN_VALUE, int32Value2);
+                        multiNameSegment = int32Value2 > 0 ? new JSONPathSegment.RangeIndexSegment(0, int32Value2) : new JSONPathSegment.RangeIndexSegment(-2147483648, int32Value2);
                         break;
                     default:
                         throw new JSONException("TODO : " + this.jsonReader.current());
@@ -299,7 +299,7 @@ class JSONPathParser {
                     throw new JSONException("not support : " + this.path);
                 }
                 String fieldNameUnquote3 = this.jsonReader.readFieldNameUnquote();
-                fieldNameUnquote3.getClass();
+                
                 if (!fieldNameUnquote3.equals("length") && !fieldNameUnquote3.equals("size")) {
                     throw new JSONException("not support : " + this.path);
                 }
@@ -373,7 +373,7 @@ class JSONPathParser {
             return new JSONPathSegmentName(fieldName, fieldNameHashCodeUnquote);
         }
         jSONReader3.next();
-        fieldName.getClass();
+        
         switch (fieldName.hashCode()) {
             case -2093674864:
                 b = fieldName.equals("entrySet") ? (byte) 0 : (byte) -1;
@@ -417,16 +417,16 @@ class JSONPathParser {
                 b = fieldName.equals("trim") ? (byte) 12 : (byte) -1;
                 break;
             case 3575610:
-                b = fieldName.equals(g.y) ? ek.k : (byte) -1;
+                b = fieldName.equals("type") ? 13 : (byte) -1;
                 break;
             case 97440432:
-                b = fieldName.equals("first") ? ek.l : (byte) -1;
+                b = fieldName.equals("first") ? 14 : (byte) -1;
                 break;
             case 97526796:
-                b = fieldName.equals("floor") ? ek.m : (byte) -1;
+                b = fieldName.equals("floor") ? 15 : (byte) -1;
                 break;
             case 100346066:
-                b = fieldName.equals(a.H) ? (byte) 16 : (byte) -1;
+                b = fieldName.equals("index") ? (byte) 16 : (byte) -1;
                 break;
             case 103164673:
                 b = fieldName.equals("lower") ? (byte) 17 : (byte) -1;
@@ -480,13 +480,13 @@ class JSONPathParser {
             case 10:
                 jSONPathFunction = JSONPathFunction.FUNC_LAST;
                 break;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 jSONPathFunction = JSONPathFunction.FUNC_TRIM;
                 break;
             case 13:
                 jSONPathFunction = JSONPathFunction.FUNC_TYPE;
                 break;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 jSONPathFunction = JSONPathFunction.FUNC_FIRST;
                 break;
             case 15:
@@ -533,10 +533,10 @@ class JSONPathParser {
                     break;
                 }
                 throw new JSONException("not support syntax, path : " + this.path);
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 jSONPathFunction = JSONPathFunction.FUNC_LOWER;
                 break;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 jSONPathFunction = JSONPathFunction.FUNC_UPPER;
                 break;
             case 20:
@@ -626,22 +626,22 @@ class JSONPathParser {
                 }
                 return new JSONPathSingle(this.first, this.path, featureArr);
             }
-            if (c5 == c2) {
+            if (c5 == 46) {
                 jSONReader3.next();
                 filter = parseProperty();
             } else if (c5 == '[') {
                 filter = parseArrayAccess();
-            } else if ((c5 >= c && c5 <= 'z') || ((c5 >= 'A' && c5 <= 'Z') || c5 == '_' || Character.isIdeographic(c5))) {
+            } else if ((c5 >= 97 && c5 <= 'z') || ((c5 >= 'A' && c5 <= 'Z') || c5 == '_' || Character.isIdeographic(c5))) {
                 filter = parseProperty();
             } else if (c5 == '?') {
                 if (this.dollar && (i = this.segmentIndex) == 0) {
                     this.first = JSONPathSegment.RootSegment.INSTANCE;
-                    this.segmentIndex = i + 1;
+                    this.segmentIndex = 1;
                 }
                 this.jsonReader.next();
                 filter = parseFilter();
             } else {
-                if (c5 != c3) {
+                if (c5 != 64) {
                     throw new JSONException("not support " + c5);
                 }
                 this.jsonReader.next();

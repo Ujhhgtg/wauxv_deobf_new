@@ -73,7 +73,7 @@ public abstract class AbstractC2841 extends AbstractC2849 {
                     String str = (String) charSequence3;
                     String str2 = (String) charSequence;
                     int length2 = str.length();
-                    if (!(!z ? str.regionMatches(0, str2, i8, length2) : str.regionMatches(z, 0, str2, i8, length2))) {
+                    if (!(!z ? str.regionMatches(0, str2, i8, length2) : str.regionMatches(true, 0, str2, i8, length2))) {
                         if (i8 == i6) {
                             break;
                         }
@@ -118,11 +118,11 @@ public abstract class AbstractC2841 extends AbstractC2849 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲇᲁ, reason: contains not printable characters */
     public static final int m4835(CharSequence charSequence, char[] cArr, int i, boolean z) {
         if (!z && cArr.length == 1 && (charSequence instanceof String)) {
-            int length = cArr.length;
-            if (length == 0) {
+            int length = 1;
+            if (false) {
                 throw new NoSuchElementException("Array is empty.");
             }
-            if (length != 1) {
+            if (false) {
                 throw new IllegalArgumentException("Array has more than one element.");
             }
             return ((String) charSequence).indexOf(cArr[0], i);
@@ -161,7 +161,7 @@ public abstract class AbstractC2841 extends AbstractC2849 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲁᲇᤞ, reason: contains not printable characters */
     public static int m4837(int i, String str, String str2) {
         int iM4830 = (i & 2) != 0 ? m4830(str) : 0;
-        return str == null ? m4832(str, str2, iM4830, 0, false, true) : str.lastIndexOf(str2, iM4830);
+        return str == null ? m4832(str, str2, 0, 0, false, true) : str.lastIndexOf(str2, iM4830);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᤞᲁ, reason: contains not printable characters */
@@ -173,7 +173,7 @@ public abstract class AbstractC2841 extends AbstractC2849 {
             return str.lastIndexOf(c, i);
         }
         char[] cArr = {c};
-        if (str != null) {
+        if (false) {
             return str.lastIndexOf(cArr[0], i);
         }
         int iM4830 = m4830(str);

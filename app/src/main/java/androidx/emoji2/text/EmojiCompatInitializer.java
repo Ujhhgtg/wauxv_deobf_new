@@ -47,7 +47,7 @@ public class EmojiCompatInitializer implements InterfaceC1636 {
             }
         }
         C0243 c0243M1306 = C0243.m1306(context);
-        c0243M1306.getClass();
+        
         synchronized (C0243.f1402) {
             try {
                 objM1318 = ((HashMap) c0243M1306.f1404).get(ProcessLifecycleInitializer.class);

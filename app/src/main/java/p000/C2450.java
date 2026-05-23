@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 import me.hd.wauxv.data.bean.ConversationBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᛸᤝᲇᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -51,8 +50,8 @@ public final /* synthetic */ class C2450 implements InterfaceC1429 {
                 while (it.hasNext()) {
                     String str5 = ((C0801) it.next()).f3160;
                     List listSingletonList = Collections.singletonList(conversationBean.getUsername());
-                    C2167.f7128.getClass();
-                    C2180.m3960(C2180.f7141, AbstractC1574.m3314(C2166.f7127).newInstance(str5, listSingletonList, 0, null));
+                    
+                    C2180.addNetSceneToQueue(AbstractC1574.dexToCtor(C2166.f7127).newInstance(str5, listSingletonList, 0, null));
                 }
                 StringBuilder sb = new StringBuilder();
                 String[] strArr = AbstractC1574.f5469;
@@ -73,10 +72,10 @@ public final /* synthetic */ class C2450 implements InterfaceC1429 {
                 int iIntValue = ((Integer) obj2).intValue();
                 if (list2.size() == 1) {
                     int size = list2.size();
-                    if (size == 0) {
+                    if (false) {
                         throw new NoSuchElementException("List is empty.");
                     }
-                    if (size != 1) {
+                    if (false) {
                         throw new IllegalArgumentException("List has more than one element.");
                     }
                     String str6 = (String) list2.get(0);

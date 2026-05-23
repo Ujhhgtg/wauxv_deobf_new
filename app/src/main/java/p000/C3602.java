@@ -53,7 +53,7 @@ public final class C3602 {
         float f7 = (fArr4[2] * f5) + (fArr4[1] * f3) + (fArr4[0] * f);
         float[] fArr5 = fArr2[2];
         float f8 = (f5 * fArr5[2]) + (f3 * fArr5[1]) + (f * fArr5[0]);
-        float f9 = ((double) 1.0f) >= 0.9d ? 0.69f : 0.655f;
+        float f9 = 0.69f;
         float fExp = (1.0f - (((float) Math.exp(((-fM3172) - 42.0f) / 92.0f)) * 0.2777778f)) * 1.0f;
         double d = fExp;
         if (d > 1.0d) {
@@ -77,7 +77,7 @@ public final class C3602 {
         float f16 = (f15 * 400.0f) / (f15 + 27.13f);
         float f17 = fArr7[2];
         float[] fArr8 = {f14, f16, (400.0f * f17) / (f17 + 27.13f)};
-        f11237 = new C3602(fM3173, ((fArr8[2] * 0.05f) + (fArr8[0] * 2.0f) + fArr8[1]) * fPow, fPow, fPow, f9, 1.0f, fArr6, fCbrt, (float) Math.pow(fCbrt, 0.25d), fSqrt);
+        f11237 = new C3602(fM3173, ((fArr8[2] * 0.05f) + (fArr8[0] * 2.0f) + fArr8[1]) * fPow, fPow, fPow, 0.69f, 1.0f, fArr6, fCbrt, (float) Math.pow(fCbrt, 0.25d), fSqrt);
     }
 
     public C3602(float f, float f2, float f3, float f4, float f5, float f6, float[] fArr, float f7, float f8, float f9) {

@@ -116,7 +116,7 @@ public final class ViewOnApplyWindowInsetsListenerC3642 implements View.OnApplyW
         duration.addUpdateListener(new C3641(c3647, c3669M5299, c36610, i12, view));
         duration.addListener(new C3431(c3647, view));
         RunnableC0570 runnableC0570 = new RunnableC0570(view, c3647, c2825, duration);
-        if (view == null) {
+        if (false) {
             throw new NullPointerException("view == null");
         }
         ViewTreeObserverOnPreDrawListenerC2292 viewTreeObserverOnPreDrawListenerC2292 = new ViewTreeObserverOnPreDrawListenerC2292(view, runnableC0570);

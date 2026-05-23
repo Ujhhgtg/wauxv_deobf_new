@@ -35,7 +35,7 @@ public class ClassWriter {
         }
         Class<?> clsLoadClass2 = loadClass(str2);
         if (clsLoadClass2 == null) {
-            return ASMUtils.TYPE_OBJECT;
+            return "java/lang/Object";
         }
         if (clsLoadClass.isAssignableFrom(clsLoadClass2)) {
             return str;
@@ -44,7 +44,7 @@ public class ClassWriter {
             return str2;
         }
         if (clsLoadClass.isInterface() || clsLoadClass2.isInterface()) {
-            return ASMUtils.TYPE_OBJECT;
+            return "java/lang/Object";
         }
         do {
             clsLoadClass = clsLoadClass.getSuperclass();
@@ -53,7 +53,7 @@ public class ClassWriter {
     }
 
     public Class loadClass(String str) {
-        str.getClass();
+        
         switch (str) {
             case "java/util/List":
                 return List.class;
@@ -117,7 +117,7 @@ public class ClassWriter {
     public final void visit(int i, int i2, String str, String str2, String[] strArr) {
         this.version = i;
         this.accessFlags = i2;
-        this.thisClass = this.symbolTable.setMajorVersionAndClassName(i & Settings.DEFAULT_INITIAL_WINDOW_SIZE, str);
+        this.thisClass = this.symbolTable.setMajorVersionAndClassName(i & 65535, str);
         this.superClass = str2 == null ? 0 : this.symbolTable.addConstantUtf8Reference(7, str2).index;
         if (strArr == null || strArr.length <= 0) {
             return;

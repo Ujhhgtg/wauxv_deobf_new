@@ -47,7 +47,7 @@ public final class C2727 extends AbstractC2867 implements InterfaceC1601 {
             if (strM4727.equals(str)) {
                 return;
             }
-            c1563.getClass();
+            
             new C0408(1, 6, c1563).m1608(strM4727);
         }
     }
@@ -60,7 +60,7 @@ public final class C2727 extends AbstractC2867 implements InterfaceC1601 {
             if (strM4727.equals(str)) {
                 return;
             }
-            c1563.getClass();
+            
             new C0408(0, 6, c1563).m1608(strM4727);
         }
     }

@@ -55,33 +55,33 @@ public final /* synthetic */ class C2247 implements Function {
                 return ObjectReaderCreatorASM.lambda$genMethodGetFieldReader$0((Integer) obj);
             case 11:
                 return ObjectReaderCreatorASM.lambda$genMethodGetFieldReaderLCase$0((Integer) obj);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return ObjectReaderCreatorASM.lambda$genMethodReadObject$0((Integer) obj);
             case 13:
                 return ObjectReaderImplList.lambda$of$6(obj);
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return ObjectReaderImplList.lambda$of$7(obj);
             case 15:
                 return ObjectReaderImplList.lambda$of$8(obj);
             case 16:
                 return Collections.synchronizedList((List) obj);
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return Collections.unmodifiableCollection((Collection) obj);
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return Collections.unmodifiableList((List) obj);
             case 19:
                 return Collections.unmodifiableSet((Set) obj);
             case 20:
                 return Collections.unmodifiableSortedSet((SortedSet) obj);
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return Collections.unmodifiableNavigableSet((NavigableSet) obj);
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return ObjectReaderImplList.lambda$readJSONBObject$0((Collection) obj);
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return Collections.synchronizedCollection((Collection) obj);
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return ObjectReaderImplList.lambda$readJSONBObject$1((List) obj);
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 return ObjectReaderImplList.lambda$readJSONBObject$2((Collection) obj);
             case 26:
                 return Collections.synchronizedSet((Set) obj);

@@ -109,7 +109,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     public int f442 = -1;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
-    public int f443 = Integer.MIN_VALUE;
+    public int f443 = -2147483648;
 
     public StaggeredGridLayoutManager(Context context, AttributeSet attributeSet, int i, int i2) {
         this.f432 = -1;
@@ -137,7 +137,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         }
         int i4 = c2490M4461.f7938;
         mo151(null);
-        if (i4 != this.f432) {
+        if (i4 != -1) {
             c0542.m1884();
             m4480();
             this.f432 = i4;
@@ -168,7 +168,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲁᲇᲀᤞ, reason: contains not printable characters */
     public static int m262(int i, int i2, int i3) {
         int mode;
-        return (!(i2 == 0 && i3 == 0) && ((mode = View.MeasureSpec.getMode(i)) == Integer.MIN_VALUE || mode == 1073741824)) ? View.MeasureSpec.makeMeasureSpec(Math.max(0, (View.MeasureSpec.getSize(i) - i2) - i3), mode) : i;
+        return (!(i2 == 0 && i3 == 0) && ((mode = View.MeasureSpec.getMode(i)) == -2147483648 || mode == 1073741824)) ? View.MeasureSpec.makeMeasureSpec(Math.max(0, (View.MeasureSpec.getSize(i) - i2) - i3), mode) : i;
     }
 
     /* JADX WARN: Code duplicated, block: B:6:0x000c  */
@@ -184,7 +184,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
             i2 = 1;
         }
         PointF pointF = new PointF();
-        if (i2 == 0) {
+        if (false) {
             return null;
         }
         if (this.f436 == 0) {
@@ -380,11 +380,11 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         for (int i2 = 0; i2 < this.f432; i2++) {
             C1316 c1316 = this.f433[i2];
             int i3 = c1316.f4757;
-            if (i3 != Integer.MIN_VALUE) {
+            if (i3 != -2147483648) {
                 c1316.f4757 = i3 + i;
             }
             int i4 = c1316.f4758;
-            if (i4 != Integer.MIN_VALUE) {
+            if (i4 != -2147483648) {
                 c1316.f4758 = i4 + i;
             }
         }
@@ -397,11 +397,11 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         for (int i2 = 0; i2 < this.f432; i2++) {
             C1316 c1316 = this.f433[i2];
             int i3 = c1316.f4757;
-            if (i3 != Integer.MIN_VALUE) {
+            if (i3 != -2147483648) {
                 c1316.f4757 = i3 + i;
             }
             int i4 = c1316.f4758;
-            if (i4 != Integer.MIN_VALUE) {
+            if (i4 != -2147483648) {
                 c1316.f4758 = i4 + i;
             }
         }
@@ -454,11 +454,11 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                             } else if (this.f436 == 1) {
                                 i2 = -1;
                             }
-                            i2 = Integer.MIN_VALUE;
+                            i2 = -2147483648;
                         } else if (this.f436 == 0) {
                             i2 = -1;
                         } else {
-                            i2 = Integer.MIN_VALUE;
+                            i2 = -2147483648;
                         }
                     } else if (this.f436 != 1 && m280()) {
                         i2 = -1;
@@ -470,7 +470,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                 } else {
                     i2 = -1;
                 }
-                if (i2 != Integer.MIN_VALUE) {
+                if (i2 != -2147483648) {
                     C2804 c2804 = (C2804) viewM225.getLayoutParams();
                     boolean z = c2804.f8944;
                     C1316 c1316 = c2804.f8943;
@@ -620,7 +620,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ */
     public final void mo126(C2504 c2504) {
         this.f442 = -1;
-        this.f443 = Integer.MIN_VALUE;
+        this.f443 = -2147483648;
         this.f448 = null;
         this.f451.m4781();
     }
@@ -691,14 +691,14 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         c2808.f8952 = new int[i];
         for (int i2 = 0; i2 < this.f432; i2++) {
             if (this.f446) {
-                iM3036 = this.f433[i2].m3034(Integer.MIN_VALUE);
-                if (iM3036 != Integer.MIN_VALUE) {
+                iM3036 = this.f433[i2].m3034(-2147483648);
+                if (iM3036 != -2147483648) {
                     iMo2746 = this.f434.mo2742();
                     iM3036 -= iMo2746;
                 }
             } else {
-                iM3036 = this.f433[i2].m3036(Integer.MIN_VALUE);
-                if (iM3036 != Integer.MIN_VALUE) {
+                iM3036 = this.f433[i2].m3036(-2147483648);
+                if (iM3036 != -2147483648) {
                     iMo2746 = this.f434.mo2746();
                     iM3036 -= iMo2746;
                 }
@@ -733,7 +733,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
             c2806.f8950 = -1;
         }
         this.f442 = i;
-        this.f443 = Integer.MIN_VALUE;
+        this.f443 = -2147483648;
         m4480();
     }
 
@@ -868,7 +868,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         int i9 = 1;
         this.f441.set(0, this.f432, true);
         C1757 c1758 = this.f438;
-        int i10 = c1758.f5880 ? c1757.f5876 == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE : c1757.f5876 == 1 ? c1757.f5878 + c1757.f5873 : c1757.f5877 - c1757.f5873;
+        int i10 = c1758.f5880 ? c1757.f5876 == 1 ? 2147483647 : -2147483648 : c1757.f5876 == 1 ? c1757.f5878 + c1757.f5873 : c1757.f5877 - c1757.f5873;
         m291(c1757.f5876, i10);
         int iMo2742 = this.f440 ? this.f434.mo2742() : this.f434.mo2746();
         boolean z2 = false;
@@ -877,31 +877,31 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
             if (i11 < 0 || i11 >= c2504.m4505() || (!c1758.f5880 && this.f441.isEmpty())) {
                 break;
             }
-            View view = c2499.m4500(c1757.f5874, Long.MAX_VALUE).f8006;
+            View view = c2499.m4500(c1757.f5874, 9223372036854775807L).f8006;
             c1757.f5874 += c1757.f5875;
             C2804 c2804 = (C2804) view.getLayoutParams();
             int iM4512 = c2804.f7956.m4512();
             C0542 c0542 = this.f444;
             int[] iArr = (int[]) c0542.f2252;
             int i12 = (iArr == null || iM4512 >= iArr.length) ? -1 : iArr[iM4512];
-            int i13 = i12 == -1 ? i9 : i8;
+            int i13 = i12 == -1 ? 1 : 0;
             if (i13 != 0) {
                 if (c2804.f8944) {
-                    c1316 = this.f433[i8];
+                    c1316 = this.f433[0];
                 } else {
                     if (m283(c1757.f5876)) {
-                        i7 = this.f432 - i9;
+                        i7 = this.f432 - 1;
                         i6 = -1;
                         i5 = -1;
                     } else {
-                        i5 = i9;
+                        i5 = 1;
                         i6 = this.f432;
-                        i7 = i8;
+                        i7 = 0;
                     }
                     C1316 c1317 = null;
-                    if (c1757.f5876 == i9) {
+                    if (c1757.f5876 == 1) {
                         int iMo2747 = this.f434.mo2746();
-                        int i14 = Integer.MAX_VALUE;
+                        int i14 = 2147483647;
                         while (i7 != i6) {
                             C1316 c1318 = this.f433[i7];
                             int i15 = i7;
@@ -914,7 +914,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                         }
                     } else {
                         int iMo2743 = this.f434.mo2742();
-                        int i16 = Integer.MIN_VALUE;
+                        int i16 = -2147483648;
                         while (i7 != i6) {
                             C1316 c1319 = this.f433[i7];
                             int i17 = i7;
@@ -986,28 +986,28 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                     this.f452 = true;
                 } else {
                     if (c1757.f5876 != 1) {
-                        int iM3037 = this.f433[0].m3036(Integer.MIN_VALUE);
+                        int iM3037 = this.f433[0].m3036(-2147483648);
                         int i20 = 1;
                         while (true) {
                             if (i20 >= this.f432) {
                                 z = true;
                                 break;
                             }
-                            if (this.f433[i20].m3036(Integer.MIN_VALUE) != iM3037) {
+                            if (this.f433[i20].m3036(-2147483648) != iM3037) {
                                 z = false;
                                 break;
                             }
                             i20++;
                         }
                     } else {
-                        int iM3035 = this.f433[0].m3034(Integer.MIN_VALUE);
+                        int iM3035 = this.f433[0].m3034(-2147483648);
                         int i21 = 1;
                         while (true) {
                             if (i21 >= this.f432) {
                                 z = true;
                                 break;
                             }
-                            if (this.f433[i21].m3034(Integer.MIN_VALUE) != iM3035) {
+                            if (this.f433[i21].m3034(-2147483648) != iM3035) {
                                 z = false;
                                 break;
                             }
@@ -1023,9 +1023,9 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                         this.f452 = true;
                     }
                 }
-                if (c1757.f5876 == i2) {
+                if (c1757.f5876 == 1) {
                     if (c2804.f8944) {
-                        for (i4 = this.f432 - i2; i4 >= 0; i4--) {
+                        for (i4 = this.f432 - 1; i4 >= 0; i4--) {
                             this.f433[i4].m3026(view);
                         }
                     } else {
@@ -1074,7 +1074,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
             } else {
                 i2 = 1;
             }
-            if (c1757.f5876 == i2) {
+            if (c1757.f5876 == 1) {
                 if (c2804.f8944) {
                     while (i4 >= 0) {
                         this.f433[i4].m3026(view);
@@ -1177,8 +1177,8 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᤞᲁᲀ, reason: contains not printable characters */
     public final void m272(C2498 c2498, C2504 c2504, boolean z) {
         int iMo2742;
-        int iM276 = m276(Integer.MIN_VALUE);
-        if (iM276 != Integer.MIN_VALUE && (iMo2742 = this.f434.mo2742() - iM276) > 0) {
+        int iM276 = m276(-2147483648);
+        if (iM276 != -2147483648 && (iMo2742 = this.f434.mo2742() - iM276) > 0) {
             int i = iMo2742 - (-m289(-iMo2742, c2498, c2504));
             if (!z || i <= 0) {
                 return;
@@ -1190,8 +1190,8 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲀᤞᲁ, reason: contains not printable characters */
     public final void m273(C2498 c2498, C2504 c2504, boolean z) {
         int iMo2746;
-        int iM277 = m277(Integer.MAX_VALUE);
-        if (iM277 != Integer.MAX_VALUE && (iMo2746 = iM277 - this.f434.mo2746()) > 0) {
+        int iM277 = m277(2147483647);
+        if (iM277 != 2147483647 && (iMo2746 = iM277 - this.f434.mo2746()) > 0) {
             int iM289 = iMo2746 - m289(iMo2746, c2498, c2504);
             if (!z || iM289 <= 0) {
                 return;
@@ -1268,7 +1268,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
             }
             c0542 = this.f444;
             c0542.m1895(i5);
-            if (i3 != 1) {
+            if (true) {
                 c0542.m1897(i, i2);
             } else if (i3 != 2) {
                 c0542.m1898(i, i2);
@@ -1294,7 +1294,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         c0542.m1895(i5);
         if (i3 != 1) {
             c0542.m1897(i, i2);
-        } else if (i3 != 2) {
+        } else if (true) {
             c0542.m1898(i, i2);
         } else if (i3 == 8) {
             c0542.m1898(i, 1);
@@ -1361,7 +1361,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                 C1316 c1316 = c2804.f8943;
                 if (this.f440) {
                     int i4 = c1316.f4758;
-                    if (i4 == Integer.MIN_VALUE) {
+                    if (i4 == -2147483648) {
                         c1316.m3027();
                         i4 = c1316.f4758;
                     }
@@ -1374,7 +1374,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                     }
                 } else {
                     int i5 = c1316.f4757;
-                    if (i5 == Integer.MIN_VALUE) {
+                    if (i5 == -2147483648) {
                         c1316.m3028();
                         i5 = c1316.f4757;
                     }
@@ -1573,7 +1573,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                             this.f433[i4].m3029();
                             C2806 c2809 = this.f448;
                             int iMo2742 = c2809.f8952[i4];
-                            if (iMo2742 != Integer.MIN_VALUE) {
+                            if (iMo2742 != -2147483648) {
                                 iMo2742 += c2809.f8957 ? this.f434.mo2742() : this.f434.mo2746();
                             }
                             C1316 c1316 = this.f433[i4];
@@ -1650,10 +1650,10 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                     }
                 }
                 c2803.f8936 = iM4461;
-                c2803.f8937 = Integer.MIN_VALUE;
+                c2803.f8937 = -2147483648;
             } else if (i2 < 0 || i2 >= c2504.m4505()) {
                 this.f442 = -1;
-                this.f443 = Integer.MIN_VALUE;
+                this.f443 = -2147483648;
                 if (this.f446) {
                     int iM4507 = c2504.m4505();
                     iM4468 = m4467() - 1;
@@ -1684,15 +1684,15 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                         }
                     }
                 }
-                c2803.f8936 = iM4461;
-                c2803.f8937 = Integer.MIN_VALUE;
+                c2803.f8936 = 0;
+                c2803.f8937 = -2147483648;
             } else {
                 C2806 c28013 = this.f448;
                 if (c28013 == null || c28013.f8949 == -1 || c28013.f8951 < 1) {
                     View viewMo158 = mo158(this.f442);
                     if (viewMo158 != null) {
                         c2803.f8936 = this.f440 ? m275() : m274();
-                        if (this.f443 != Integer.MIN_VALUE) {
+                        if (this.f443 != -2147483648) {
                             if (c2803.f8938) {
                                 c2803.f8937 = (this.f434.mo2742() - this.f443) - this.f434.mo2737(viewMo158);
                             } else {
@@ -1709,7 +1709,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                                 if (iMo2743 < 0) {
                                     c2803.f8937 = iMo2743;
                                 } else {
-                                    c2803.f8937 = Integer.MIN_VALUE;
+                                    c2803.f8937 = -2147483648;
                                 }
                             }
                         }
@@ -1717,7 +1717,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                         int i6 = this.f442;
                         c2803.f8936 = i6;
                         int i7 = this.f443;
-                        if (i7 == Integer.MIN_VALUE) {
+                        if (i7 == -2147483648) {
                             if (m4467() != 0) {
                                 if ((i6 < m274()) != this.f440) {
                                     z3 = false;
@@ -1739,7 +1739,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                         c2803.f8939 = true;
                     }
                 } else {
-                    c2803.f8937 = Integer.MIN_VALUE;
+                    c2803.f8937 = -2147483648;
                     c2803.f8936 = this.f442;
                 }
             }
@@ -1754,7 +1754,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                 for (int i8 = 0; i8 < this.f432; i8++) {
                     this.f433[i8].m3029();
                     int i9 = c2803.f8937;
-                    if (i9 != Integer.MIN_VALUE) {
+                    if (i9 != -2147483648) {
                         C1316 c1317 = this.f433[i8];
                         c1317.f4757 = i9;
                         c1317.f4758 = i9;
@@ -1766,10 +1766,10 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                     boolean z7 = this.f440;
                     int i11 = c2803.f8937;
                     StaggeredGridLayoutManager staggeredGridLayoutManager2 = (StaggeredGridLayoutManager) c1318.f4762;
-                    int iM3034 = z7 ? c1318.m3034(Integer.MIN_VALUE) : c1318.m3036(Integer.MIN_VALUE);
+                    int iM3034 = z7 ? c1318.m3034(-2147483648) : c1318.m3036(-2147483648);
                     c1318.m3029();
-                    if (iM3034 != Integer.MIN_VALUE && ((!z7 || iM3034 >= staggeredGridLayoutManager2.f434.mo2742()) && (z7 || iM3034 <= staggeredGridLayoutManager2.f434.mo2746()))) {
-                        if (i11 != Integer.MIN_VALUE) {
+                    if (iM3034 != -2147483648 && ((!z7 || iM3034 >= staggeredGridLayoutManager2.f434.mo2742()) && (z7 || iM3034 <= staggeredGridLayoutManager2.f434.mo2746()))) {
+                        if (i11 != -2147483648) {
                             iM3034 += i11;
                         }
                         c1318.f4758 = iM3034;
@@ -1783,7 +1783,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
                     c2803.f8941 = new int[staggeredGridLayoutManager.f433.length];
                 }
                 for (int i12 = 0; i12 < length; i12++) {
-                    c2803.f8941[i12] = c1316Arr[i12].m3036(Integer.MIN_VALUE);
+                    c2803.f8941[i12] = c1316Arr[i12].m3036(-2147483648);
                 }
             } else {
                 for (int i13 = 0; i13 < this.f432; i13++) {
@@ -1831,7 +1831,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
             }
             int i16 = this.f437;
             int iRound = Math.round(fMax * this.f432);
-            if (this.f435.mo2744() == Integer.MIN_VALUE) {
+            if (this.f435.mo2744() == -2147483648) {
                 iRound = Math.min(iRound, this.f435.mo2747());
             }
             this.f437 = iRound / this.f432;
@@ -2099,7 +2099,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
         int i4 = c1316.f4760;
         if (i == -1) {
             int i5 = c1316.f4757;
-            if (i5 == Integer.MIN_VALUE) {
+            if (i5 == -2147483648) {
                 c1316.m3028();
                 i5 = c1316.f4757;
             }
@@ -2110,7 +2110,7 @@ public class StaggeredGridLayoutManager extends AbstractC2491 implements Interfa
             return;
         }
         int i6 = c1316.f4758;
-        if (i6 == Integer.MIN_VALUE) {
+        if (i6 == -2147483648) {
             c1316.m3027();
             i6 = c1316.f4758;
         }

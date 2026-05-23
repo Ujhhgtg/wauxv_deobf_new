@@ -40,7 +40,6 @@ public final class C2514 extends AbstractC2867 implements InterfaceC1578 {
             JSONObject jSONObjectM4821 = AbstractC2834.m4821(msgInfoBean.getContent());
             String[] strArr = AbstractC1574.f5469;
             Object byPath = jSONObjectM4821.getByPath("msg.appmsg.wcpayinfo");
-            "null cannot be cast to non-null type com.alibaba.fastjson2.JSONObject";
             String queryParameter = Uri.parse(((JSONObject) byPath).getString("nativeurl")).getQueryParameter("total_num");
             if (queryParameter == null) {
                 return;

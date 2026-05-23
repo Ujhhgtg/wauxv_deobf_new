@@ -120,7 +120,7 @@ public final class C0278 implements InterfaceC2713 {
                     C2646 c2646 = c0504.f2171;
                     try {
                         try {
-                            while (j3 < JSONWriter.MASK_PRETTY_FORMAT) {
+                            while (j3 < 65536L) {
                                 j3 += (long) (c2646.f8541 - c2646.f8540);
                                 if (j3 >= j2) {
                                     j3 = j2;

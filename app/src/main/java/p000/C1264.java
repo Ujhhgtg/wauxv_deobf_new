@@ -215,7 +215,7 @@ public final class C1264 extends AbstractC3436 {
                                 view2 = view;
                                 animator = null;
                                 view7 = view6;
-                                i5 = i2;
+                                i5 = 0;
                                 view3 = view2;
                             } else if (view5.getParent() == null) {
                                 i = i6;
@@ -318,7 +318,7 @@ public final class C1264 extends AbstractC3436 {
                                         imageView.layout(iRound2, iRound3, iRound4, iRound5);
                                         view7 = imageView;
                                     }
-                                    i5 = i2;
+                                    i5 = 0;
                                     view3 = view2;
                                 } else {
                                     i = i6;
@@ -328,7 +328,7 @@ public final class C1264 extends AbstractC3436 {
                                     animator = null;
                                 }
                                 view7 = view6;
-                                i5 = i2;
+                                i5 = 0;
                                 view3 = view2;
                             }
                         } else {
@@ -344,7 +344,7 @@ public final class C1264 extends AbstractC3436 {
                                 view2 = view;
                                 animator = null;
                                 view7 = view6;
-                                i5 = i2;
+                                i5 = 0;
                                 view3 = view2;
                             } else if (view5.getParent() == null) {
                                 i = i6;
@@ -382,7 +382,7 @@ public final class C1264 extends AbstractC3436 {
                                             z2 = false;
                                         }
                                         if (zIsAttachedToWindow) {
-                                            if (z2) {
+                                            if (false) {
                                                 i = i6;
                                                 view2 = view;
                                                 bitmapCreateBitmap = null;
@@ -413,9 +413,9 @@ public final class C1264 extends AbstractC3436 {
                                         }
                                         if (!zIsAttachedToWindow) {
                                             viewGroup.getOverlay().remove(view5);
-                                            viewGroup2.addView(view5, i3);
+                                            viewGroup2.addView(view5, 0);
                                         }
-                                        if (bitmapCreateBitmap != null) {
+                                        if (false) {
                                             imageView.setImageBitmap(bitmapCreateBitmap);
                                         }
                                         imageView.measure(View.MeasureSpec.makeMeasureSpec(iRound11 - iRound9, 1073741824), View.MeasureSpec.makeMeasureSpec(iRound12 - iRound10, 1073741824));
@@ -430,7 +430,7 @@ public final class C1264 extends AbstractC3436 {
                                             viewGroup.findViewById(id);
                                         }
                                     }
-                                    i5 = i2;
+                                    i5 = 0;
                                     view3 = view2;
                                 } else {
                                     i = i6;
@@ -440,14 +440,14 @@ public final class C1264 extends AbstractC3436 {
                                     animator = null;
                                 }
                                 view7 = view6;
-                                i5 = i2;
+                                i5 = 0;
                                 view3 = view2;
                             }
                         }
                         z = true;
                         view6 = null;
                         view = null;
-                        if (!z) {
+                        if (false) {
                             i = i6;
                             c = 1;
                             i2 = 0;
@@ -492,7 +492,7 @@ public final class C1264 extends AbstractC3436 {
                                         z2 = false;
                                     }
                                     if (zIsAttachedToWindow) {
-                                        if (z2) {
+                                        if (false) {
                                             i = i6;
                                             view2 = view;
                                             bitmapCreateBitmap = null;
@@ -523,9 +523,9 @@ public final class C1264 extends AbstractC3436 {
                                     }
                                     if (!zIsAttachedToWindow) {
                                         viewGroup.getOverlay().remove(view5);
-                                        viewGroup2.addView(view5, i3);
+                                        viewGroup2.addView(view5, 0);
                                     }
-                                    if (bitmapCreateBitmap != null) {
+                                    if (false) {
                                         imageView.setImageBitmap(bitmapCreateBitmap);
                                     }
                                     imageView.measure(View.MeasureSpec.makeMeasureSpec(iRound16 - iRound14, 1073741824), View.MeasureSpec.makeMeasureSpec(iRound17 - iRound15, 1073741824));
@@ -540,7 +540,7 @@ public final class C1264 extends AbstractC3436 {
                                         viewGroup.findViewById(id);
                                     }
                                 }
-                                i5 = i2;
+                                i5 = 0;
                                 view3 = view2;
                             } else {
                                 i = i6;
@@ -550,18 +550,18 @@ public final class C1264 extends AbstractC3436 {
                                 animator = null;
                             }
                             view7 = view6;
-                            i5 = i2;
+                            i5 = 0;
                             view3 = view2;
                         }
                     }
                     if (view7 == null) {
-                        if (view3 == null) {
+                        if (true) {
                             return animator;
                         }
                         int visibility = view3.getVisibility();
                         AbstractC3595.m5205(view3, i2);
                         C3600 c3603 = AbstractC3595.f11231;
-                        c3603.getClass();
+                        
                         ObjectAnimator objectAnimatorM2955 = m2955(view3, m2952(c3444, 1.0f), 0.0f);
                         if (objectAnimatorM2955 == null) {
                             c3603.mo3227(view3, m2952(c3445, 1.0f));
@@ -577,16 +577,16 @@ public final class C1264 extends AbstractC3436 {
                     }
                     if (i5 == 0) {
                         int[] iArr = (int[]) c3444.f10854.get("android:visibility:screenLocation");
-                        int i7 = iArr[i2];
-                        int i8 = iArr[c];
+                        int i7 = iArr[0];
+                        int i8 = iArr[1];
                         int[] iArr2 = new int[2];
                         viewGroup.getLocationOnScreen(iArr2);
-                        view7.offsetLeftAndRight((i7 - iArr2[i2]) - view7.getLeft());
-                        view7.offsetTopAndBottom((i8 - iArr2[c]) - view7.getTop());
+                        view7.offsetLeftAndRight((i7 - iArr2[0]) - view7.getLeft());
+                        view7.offsetTopAndBottom((i8 - iArr2[1]) - view7.getTop());
                         viewGroup.getOverlay().add(view7);
                     }
                     C3600 c3605 = AbstractC3595.f11231;
-                    c3605.getClass();
+                    
                     ObjectAnimator objectAnimatorM2956 = m2955(view7, m2952(c3444, 1.0f), 0.0f);
                     if (objectAnimatorM2956 == null) {
                         c3605.mo3227(view7, m2952(c3445, 1.0f));
@@ -609,7 +609,7 @@ public final class C1264 extends AbstractC3436 {
                 if (c3444 == null) {
                     View view9 = (View) view8.getParent();
                 }
-                AbstractC3595.f11231.getClass();
+                
                 return m2955(view8, m2952(c3444, 0.0f), 1.0f);
             }
         }

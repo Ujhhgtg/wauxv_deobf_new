@@ -212,9 +212,9 @@ public final class Hpack {
                 } else if (iAnd == 64) {
                     readLiteralHeaderWithIncrementalIndexingNewName();
                 } else if ((iAnd & 64) == 64) {
-                    readLiteralHeaderWithIncrementalIndexingIndexedName(readInt(iAnd, Hpack.PREFIX_6_BITS) - 1);
+                    readLiteralHeaderWithIncrementalIndexingIndexedName(readInt(iAnd, 63) - 1);
                 } else if ((iAnd & 32) == 32) {
-                    int i = readInt(iAnd, Hpack.PREFIX_5_BITS);
+                    int i = readInt(iAnd, 31);
                     this.maxDynamicTableByteCount = i;
                     if (i < 0 || i > this.headerTableSizeSetting) {
                         throw new IOException("Invalid dynamic table size update " + this.maxDynamicTableByteCount);
@@ -251,7 +251,7 @@ public final class Hpack {
             this.source = new C2477(interfaceC2786);
             Header[] headerArr = new Header[8];
             this.dynamicTable = headerArr;
-            this.nextHeaderIndex = headerArr.length - 1;
+            this.nextHeaderIndex = 7;
         }
 
         public /* synthetic */ Reader(InterfaceC2786 interfaceC2786, int i, int i2, int i3, AbstractC0981 abstractC0981) {
@@ -370,14 +370,14 @@ public final class Hpack {
                     C0539 c0539Mo1762 = c0504.mo1762(c0504.f2172);
                     writeInt(c0539Mo1762.mo1870(), 127, 128);
                     C0504 c0505 = this.out;
-                    c0505.getClass();
+                    
                     c0539Mo1762.mo1878(c0539Mo1762.mo1870(), c0505);
                     return;
                 }
             }
             writeInt(c0539.mo1870(), 127, 0);
             C0504 c0506 = this.out;
-            c0506.getClass();
+            
             c0539.mo1878(c0539.mo1870(), c0506);
         }
 
@@ -388,11 +388,11 @@ public final class Hpack {
             if (this.emitDynamicTableSizeUpdate) {
                 int i = this.smallestHeaderTableSizeSetting;
                 if (i < this.maxDynamicTableByteCount) {
-                    writeInt(i, Hpack.PREFIX_5_BITS, 32);
+                    writeInt(i, 31, 32);
                 }
                 this.emitDynamicTableSizeUpdate = false;
-                this.smallestHeaderTableSizeSetting = Integer.MAX_VALUE;
-                writeInt(this.maxDynamicTableByteCount, Hpack.PREFIX_5_BITS, 32);
+                this.smallestHeaderTableSizeSetting = 2147483647;
+                writeInt(this.maxDynamicTableByteCount, 31, 32);
             }
             int size = list.size();
             for (int i2 = 0; i2 < size; i2++) {
@@ -442,9 +442,9 @@ public final class Hpack {
                     insertIntoDynamicTable(header);
                 } else {
                     C0539 c05310 = Header.PSEUDO_PREFIX;
-                    c0539Mo1876.getClass();
+                    
                     if (!c0539Mo1876.mo1874(c05310, c05310.mo1870()) || AbstractC2207.m4087(Header.TARGET_AUTHORITY, c0539Mo1876)) {
-                        writeInt(length, Hpack.PREFIX_6_BITS, 64);
+                        writeInt(length, 63, 64);
                         writeByteString(c0539);
                         insertIntoDynamicTable(header);
                     } else {
@@ -477,15 +477,15 @@ public final class Hpack {
             this.headerTableSizeSetting = i;
             this.useCompression = z;
             this.out = c0504;
-            this.smallestHeaderTableSizeSetting = Integer.MAX_VALUE;
+            this.smallestHeaderTableSizeSetting = 2147483647;
             this.maxDynamicTableByteCount = i;
             Header[] headerArr = new Header[8];
             this.dynamicTable = headerArr;
-            this.nextHeaderIndex = headerArr.length - 1;
+            this.nextHeaderIndex = 7;
         }
 
         public /* synthetic */ Writer(int i, boolean z, C0504 c0504, int i2, AbstractC0981 abstractC0981) {
-            this((i2 & 1) != 0 ? Hpack.SETTINGS_HEADER_TABLE_SIZE : i, (i2 & 2) != 0 ? true : z, c0504);
+            this((i2 & 1) != 0 ? 4096 : i, (i2 & 2) != 0 ? true : z, c0504);
         }
     }
 

@@ -47,10 +47,10 @@ public class DataBaseOperation {
         }
         try {
             int iBulkInsert = this.t.getContentResolver().bulkInsert(uri, contentValuesArr);
-            Log.d(a, "insert:" + iBulkInsert);
+            Log.d("VMS_SDK_DB", "insert:" + iBulkInsert);
             return iBulkInsert != 0;
         } catch (Exception unused) {
-            Log.e(a, "return insert is error");
+            Log.e("VMS_SDK_DB", "return insert is error");
         }
     }
 
@@ -95,7 +95,7 @@ public class DataBaseOperation {
                     uri2 = null;
                     Query = i2;
                 } else {
-                    uri = Uri.parse(c);
+                    uri = Uri.parse("content://com.vivo.abe.exidentifier/guid");
                 }
                 if (uri2 == null) {
                     return null;
@@ -104,16 +104,16 @@ public class DataBaseOperation {
                     Query = this.t.getContentResolver().query(uri2, null, null, null, null);
                     try {
                         if (Query != 0) {
-                            Log.d(a, "return cursor is null,return");
+                            Log.d("VMS_SDK_DB", "return cursor is null,return");
                         } else if (Query.moveToNext()) {
-                            string = Query.getString(Query.getColumnIndex(d));
+                            string = Query.getString(Query.getColumnIndex("value"));
                         }
                         if (Query != 0) {
                             Query.close();
                         }
                         return string;
                     } catch (Exception unused) {
-                        Log.e(a, "return cursor is error");
+                        Log.e("VMS_SDK_DB", "return cursor is error");
                         if (Query != 0) {
                             Query.close();
                         }
@@ -132,9 +132,9 @@ public class DataBaseOperation {
             }
             Query = this.t.getContentResolver().query(uri2, null, null, null, null);
             if (Query != 0) {
-                Log.d(a, "return cursor is null,return");
+                Log.d("VMS_SDK_DB", "return cursor is null,return");
             } else if (Query.moveToNext()) {
-                string = Query.getString(Query.getColumnIndex(d));
+                string = Query.getString(Query.getColumnIndex("value"));
             }
             if (Query != 0) {
                 Query.close();
@@ -165,10 +165,10 @@ public class DataBaseOperation {
         }
         try {
             int iDelete = this.t.getContentResolver().delete(uri, "packageName=? and uid=?", new String[]{str2, str3});
-            Log.d(a, "delete:" + iDelete);
+            Log.d("VMS_SDK_DB", "delete:" + iDelete);
             return iDelete != 0;
         } catch (Exception unused) {
-            Log.e(a, "return delete is error");
+            Log.e("VMS_SDK_DB", "return delete is error");
         }
     }
 }

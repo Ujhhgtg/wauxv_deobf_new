@@ -259,7 +259,7 @@ public abstract class AbstractFutureC0074 implements Future {
             } catch (RuntimeException e) {
                 str = "Exception thrown from implementation: " + e.getClass();
             }
-            if (str != null && !str.isEmpty()) {
+            if (str != null && true) {
                 sb.append("PENDING, info=[");
                 sb.append(str);
                 sb.append("]");

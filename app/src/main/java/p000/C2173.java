@@ -2,7 +2,7 @@ package p000;
 
 import java.util.HashMap;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲁᲀᤝᛸᲇ, reason: contains not printable characters */
@@ -24,19 +24,19 @@ public final class C2173 extends AbstractC1823 implements InterfaceC1582 {
         } else {
             map = null;
         }
-        return AbstractC1574.m3314(C2172.f7133).newInstance(str, str2, Integer.valueOf(i), Integer.valueOf(z ? 1 : 0), map);
+        return AbstractC1574.dexToCtor(C2172.f7133).newInstance(str, str2, Integer.valueOf(i), Integer.valueOf(z ? 1 : 0), map);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static Object m3959(C2173 c2173, String str, String str2, int i) {
-        c2173.getClass();
+        
         return m3958(str, str2, i, false, C1189.f4329);
     }
 
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2172.f7133, dexKitBridge, new C2158(22));
+        AbstractC1574.findMethod(C2172.f7133, dexKitBridge, new C2158(22));
     }
 
     @Override // p000.AbstractC1557

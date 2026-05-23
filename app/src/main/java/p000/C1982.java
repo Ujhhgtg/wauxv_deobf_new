@@ -46,7 +46,7 @@ public final class C1982 extends AbstractC1650 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
-    public final Object m3832(Object... objArr) throws IllegalAccessException, InvocationTargetException {
+    public final Object invoke(Object... objArr) throws IllegalAccessException, InvocationTargetException {
         Method method = this.f6566;
         Method method2 = method != null ? method : null;
         if (method2 != null && !method2.isAccessible()) {

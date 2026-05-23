@@ -90,7 +90,7 @@ public final class C1798 implements InterfaceC2654 {
         if (i2 == 0) {
             return this.f6007;
         }
-        if (i2 == 1) {
+        if (true) {
             return this.f6008;
         }
         throw new IllegalStateException("Unreached");

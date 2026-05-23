@@ -93,14 +93,14 @@ public final class ChatRoomInfo {
         String str14 = (i12 & 32) != 0 ? chatRoomInfo.memberlist : str2;
         String str15 = (i12 & 64) != 0 ? chatRoomInfo.displayname : str3;
         String str16 = (i12 & 128) != 0 ? chatRoomInfo.chatroomnick : str4;
-        String str17 = (i12 & bc.e) != 0 ? chatRoomInfo.roomowner : str5;
+        String str17 = (i12 & 256) != 0 ? chatRoomInfo.roomowner : str5;
         String str18 = (i12 & 512) != 0 ? chatRoomInfo.selfDisplayName : str6;
         String str19 = (i12 & 1024) != 0 ? chatRoomInfo.chatroomnotice : str7;
         String str20 = (i12 & 2048) != 0 ? chatRoomInfo.xmlChatroomnotice : str8;
         String str21 = str13;
         String str22 = (i12 & 4096) != 0 ? chatRoomInfo.chatroomnoticeEditor : str9;
         String str23 = (i12 & 8192) != 0 ? chatRoomInfo.associateOpenIMRoomName : str10;
-        String str24 = (i12 & Http2.INITIAL_MAX_FRAME_SIZE) != 0 ? chatRoomInfo.saveByteVersion : str11;
+        String str24 = (i12 & 16384) != 0 ? chatRoomInfo.saveByteVersion : str11;
         String str25 = (i12 & 32768) != 0 ? chatRoomInfo.handleByteVersion : str12;
         byte[] bArr4 = (i12 & 65536) != 0 ? chatRoomInfo.roomdata : bArr;
         byte[] bArr5 = (i12 & 131072) != 0 ? chatRoomInfo.roomInfoDetailResByte : bArr2;
@@ -110,7 +110,7 @@ public final class ChatRoomInfo {
         int i17 = (i12 & 2097152) != 0 ? chatRoomInfo.style : i3;
         int i18 = (i12 & 4194304) != 0 ? chatRoomInfo.chatroomdataflag : i4;
         int i19 = (i12 & 8388608) != 0 ? chatRoomInfo.chatroomStatus : i5;
-        int i20 = (i12 & Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE) != 0 ? chatRoomInfo.openIMRoomMigrateStatus : i6;
+        int i20 = (i12 & 16777216) != 0 ? chatRoomInfo.openIMRoomMigrateStatus : i6;
         int i21 = (i12 & 33554432) != 0 ? chatRoomInfo.spamStatus : i7;
         int i22 = (i12 & 67108864) != 0 ? chatRoomInfo.chatroomVersion : i8;
         int i23 = (i12 & 134217728) != 0 ? chatRoomInfo.chatroomNoticeNew : i9;
@@ -118,7 +118,7 @@ public final class ChatRoomInfo {
         long j8 = (i12 & 268435456) != 0 ? chatRoomInfo.chatroomLocalVersion : j3;
         int i24 = (i12 & 536870912) != 0 ? chatRoomInfo.memberCount : i10;
         int i25 = (i12 & 1073741824) != 0 ? chatRoomInfo.oldChatroomVersion : i11;
-        if ((i12 & Integer.MIN_VALUE) != 0) {
+        if ((i12 & -2147483648) != 0) {
             i13 = i24;
             i14 = i25;
             j5 = chatRoomInfo.compactFlag;
@@ -269,7 +269,6 @@ public final class ChatRoomInfo {
         if (!ChatRoomInfo.class.equals(obj != null ? obj.getClass() : null)) {
             return false;
         }
-        "null cannot be cast to non-null type me.hd.wauxv.data.bean.db.ChatRoomInfo";
         ChatRoomInfo chatRoomInfo = (ChatRoomInfo) obj;
         if (!AbstractC2207.m4087(this.addtime, chatRoomInfo.addtime) || !AbstractC2207.m4087(this.modifytime, chatRoomInfo.modifytime) || this.chatroomnoticePublishTime != chatRoomInfo.chatroomnoticePublishTime || this.chatroomfamilystatusmodifytime != chatRoomInfo.chatroomfamilystatusmodifytime || this.roomflag != chatRoomInfo.roomflag || this.isShowname != chatRoomInfo.isShowname || this.style != chatRoomInfo.style || this.chatroomdataflag != chatRoomInfo.chatroomdataflag || this.chatroomStatus != chatRoomInfo.chatroomStatus || this.openIMRoomMigrateStatus != chatRoomInfo.openIMRoomMigrateStatus || this.spamStatus != chatRoomInfo.spamStatus || this.chatroomVersion != chatRoomInfo.chatroomVersion || this.chatroomNoticeNew != chatRoomInfo.chatroomNoticeNew || this.chatroomLocalVersion != chatRoomInfo.chatroomLocalVersion || this.memberCount != chatRoomInfo.memberCount || this.oldChatroomVersion != chatRoomInfo.oldChatroomVersion || this.compactFlag != chatRoomInfo.compactFlag || !AbstractC2207.m4087(this.chatroomname, chatRoomInfo.chatroomname) || !AbstractC2207.m4087(this.memberlist, chatRoomInfo.memberlist) || !AbstractC2207.m4087(this.displayname, chatRoomInfo.displayname) || !AbstractC2207.m4087(this.chatroomnick, chatRoomInfo.chatroomnick) || !AbstractC2207.m4087(this.roomowner, chatRoomInfo.roomowner) || !AbstractC2207.m4087(this.selfDisplayName, chatRoomInfo.selfDisplayName) || !AbstractC2207.m4087(this.chatroomnotice, chatRoomInfo.chatroomnotice) || !AbstractC2207.m4087(this.xmlChatroomnotice, chatRoomInfo.xmlChatroomnotice) || !AbstractC2207.m4087(this.chatroomnoticeEditor, chatRoomInfo.chatroomnoticeEditor) || !AbstractC2207.m4087(this.associateOpenIMRoomName, chatRoomInfo.associateOpenIMRoomName) || !AbstractC2207.m4087(this.saveByteVersion, chatRoomInfo.saveByteVersion) || !AbstractC2207.m4087(this.handleByteVersion, chatRoomInfo.handleByteVersion)) {
             return false;
@@ -539,6 +538,6 @@ public final class ChatRoomInfo {
     }
 
     public /* synthetic */ ChatRoomInfo(String str, Long l, Long l2, long j, long j2, String str2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, String str11, String str12, byte[] bArr, byte[] bArr2, byte[] bArr3, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, long j3, int i10, int i11, long j4, int i12, AbstractC0981 abstractC0981) {
-        this(str, l, l2, (i12 & 8) != 0 ? 0L : j, (i12 & 16) != 0 ? 0L : j2, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12, bArr, bArr2, bArr3, (i12 & 524288) != 0 ? 0 : i, (i12 & 1048576) != 0 ? 0 : i2, (i12 & 2097152) != 0 ? 0 : i3, (i12 & 4194304) != 0 ? 0 : i4, (i12 & 8388608) != 0 ? 0 : i5, (i12 & Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE) != 0 ? 0 : i6, (i12 & 33554432) != 0 ? 0 : i7, (i12 & 67108864) != 0 ? 0 : i8, (i12 & 134217728) != 0 ? 0 : i9, (i12 & 268435456) != 0 ? 0L : j3, (i12 & 536870912) != 0 ? -1 : i10, (i12 & 1073741824) != 0 ? 0 : i11, (i12 & Integer.MIN_VALUE) != 0 ? 0L : j4);
+        this(str, l, l2, (i12 & 8) != 0 ? 0L : j, (i12 & 16) != 0 ? 0L : j2, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12, bArr, bArr2, bArr3, (i12 & 524288) != 0 ? 0 : i, (i12 & 1048576) != 0 ? 0 : i2, (i12 & 2097152) != 0 ? 0 : i3, (i12 & 4194304) != 0 ? 0 : i4, (i12 & 8388608) != 0 ? 0 : i5, (i12 & 16777216) != 0 ? 0 : i6, (i12 & 33554432) != 0 ? 0 : i7, (i12 & 67108864) != 0 ? 0 : i8, (i12 & 134217728) != 0 ? 0 : i9, (i12 & 268435456) != 0 ? 0L : j3, (i12 & 536870912) != 0 ? -1 : i10, (i12 & 1073741824) != 0 ? 0 : i11, (i12 & -2147483648) != 0 ? 0L : j4);
     }
 }

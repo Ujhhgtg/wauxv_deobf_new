@@ -135,7 +135,7 @@ public abstract class AbstractC0212 extends Button {
         super.onLayout(z, i, i2, i3, i4);
         C0232 c0232 = this.f1318;
         if (c0232 != null) {
-            c0232.getClass();
+            
         }
     }
 

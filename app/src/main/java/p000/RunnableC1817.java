@@ -29,7 +29,7 @@ public final class RunnableC1817 implements Runnable {
             default:
                 AbstractC1821 abstractC1821 = this.f6054;
                 C1952 c1953 = abstractC1821.f6063;
-                if (c1953 != null && c1953.isAttachedToWindow() && abstractC1821.f6063.getCount() > abstractC1821.f6063.getChildCount() && abstractC1821.f6063.getChildCount() <= Integer.MAX_VALUE) {
+                if (c1953 != null && c1953.isAttachedToWindow() && abstractC1821.f6063.getCount() > abstractC1821.f6063.getChildCount() && abstractC1821.f6063.getChildCount() <= 2147483647) {
                     abstractC1821.f6082.setInputMethodMode(2);
                     abstractC1821.mo1968();
                     break;

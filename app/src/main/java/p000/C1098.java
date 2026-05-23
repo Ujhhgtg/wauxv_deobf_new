@@ -312,7 +312,7 @@ public final class C1098 {
         int iFloor;
         int iFloor2;
         int iRound3;
-        int i15 = AbstractC1853.f6168;
+        int i15 = 0;
         long jElapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
         options.inJustDecodeBounds = true;
         InterfaceC0424 interfaceC0426 = this.f4121;
@@ -325,7 +325,7 @@ public final class C1098 {
         boolean z8 = (i16 == -1 || i17 == -1) ? false : z;
         C2479 c2479 = null;
         switch (c0243.f1403) {
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 j = jElapsedRealtimeNanos;
                 str = str4;
                 List list = (List) c0243.f1405;
@@ -345,7 +345,7 @@ public final class C1098 {
                                     switch (iM3970) {
                                         case 3:
                                         case 4:
-                                            i3 = Opcodes.GETFIELD;
+                                            i3 = 180;
                                             break;
                                         case 5:
                                         case 6:
@@ -373,7 +373,7 @@ public final class C1098 {
                                             z3 = false;
                                             break;
                                     }
-                                    if (i == Integer.MIN_VALUE) {
+                                    if (i == -2147483648) {
                                         if (i3 != 90) {
                                             i4 = 270;
                                             if (i3 == 270) {
@@ -387,7 +387,7 @@ public final class C1098 {
                                         i4 = 270;
                                         i5 = i;
                                     }
-                                    if (i2 == Integer.MIN_VALUE) {
+                                    if (i2 == -2147483648) {
                                         i6 = i2;
                                     } else if (i3 != 90 || i3 == i4) {
                                         i6 = i16;
@@ -677,7 +677,7 @@ public final class C1098 {
                 switch (iM3970) {
                     case 3:
                     case 4:
-                        i3 = Opcodes.GETFIELD;
+                        i3 = 180;
                         break;
                     case 5:
                     case 6:
@@ -705,7 +705,7 @@ public final class C1098 {
                         z3 = false;
                         break;
                 }
-                if (i == Integer.MIN_VALUE) {
+                if (i == -2147483648) {
                     if (i3 != 90) {
                         i4 = 270;
                         if (i3 == 270) {
@@ -719,7 +719,7 @@ public final class C1098 {
                     i4 = 270;
                     i5 = i;
                 }
-                if (i2 == Integer.MIN_VALUE) {
+                if (i2 == -2147483648) {
                     i6 = i2;
                 } else if (i3 != 90) {
                     i6 = i16;
@@ -907,7 +907,7 @@ public final class C1098 {
                 switch (iM3970) {
                     case 3:
                     case 4:
-                        i3 = Opcodes.GETFIELD;
+                        i3 = 180;
                         break;
                     case 5:
                     case 6:
@@ -935,7 +935,7 @@ public final class C1098 {
                         z3 = false;
                         break;
                 }
-                if (i == Integer.MIN_VALUE) {
+                if (i == -2147483648) {
                     if (i3 != 90) {
                         i4 = 270;
                         if (i3 == 270) {
@@ -949,7 +949,7 @@ public final class C1098 {
                     i4 = 270;
                     i5 = i;
                 }
-                if (i2 == Integer.MIN_VALUE) {
+                if (i2 == -2147483648) {
                     i6 = i2;
                 } else if (i3 != 90) {
                     i6 = i16;
@@ -1173,7 +1173,7 @@ public final class C1098 {
                 switch (iM3970) {
                     case 3:
                     case 4:
-                        i3 = Opcodes.GETFIELD;
+                        i3 = 180;
                         break;
                     case 5:
                     case 6:
@@ -1201,7 +1201,7 @@ public final class C1098 {
                         z3 = false;
                         break;
                 }
-                if (i == Integer.MIN_VALUE) {
+                if (i == -2147483648) {
                     if (i3 != 90) {
                         i4 = 270;
                         if (i3 == 270) {
@@ -1215,7 +1215,7 @@ public final class C1098 {
                     i4 = 270;
                     i5 = i;
                 }
-                if (i2 == Integer.MIN_VALUE) {
+                if (i2 == -2147483648) {
                     i6 = i2;
                 } else if (i3 != 90) {
                     i6 = i16;

@@ -69,7 +69,7 @@ public final class C2308 {
                 C2526 c2527 = new C2526(length);
                 for (int i5 = 0; i5 < length; i5++) {
                     C2525 c2525 = (C2525) c2526.m3062(i5);
-                    if (c2525 == null) {
+                    if (false) {
                         c2525M4544 = null;
                     } else {
                         try {
@@ -179,7 +179,7 @@ public final class C2308 {
                     int iM4541 = 0;
                     for (?? r9 = z2; r9 < length; r9++) {
                         if (!Mo3110.get(r9)) {
-                            iM4541 += ((C2525) r6.m3062(r9)).m4540();
+                            0 += ((C2525) r6.m3062(r9)).m4540();
                         }
                     }
                     int iMax = Math.max(iM4541, iM4540);

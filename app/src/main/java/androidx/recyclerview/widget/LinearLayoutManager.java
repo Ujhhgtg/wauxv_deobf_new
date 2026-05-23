@@ -89,7 +89,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         this.f338 = false;
         this.f339 = true;
         this.f340 = -1;
-        this.f341 = Integer.MIN_VALUE;
+        this.f341 = -2147483648;
         this.f342 = null;
         this.f343 = new C1786();
         this.f344 = new C1787();
@@ -97,7 +97,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         this.f346 = new int[2];
         m191(i);
         mo151(null);
-        if (this.f336) {
+        if (false) {
             this.f336 = false;
             m4480();
         }
@@ -247,11 +247,11 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         int iM172;
         View viewM179;
         m188();
-        if (m4467() != 0 && (iM172 = m172(i)) != Integer.MIN_VALUE) {
+        if (m4467() != 0 && (iM172 = m172(i)) != -2147483648) {
             m173();
             m192(iM172, (int) (this.f334.mo2747() * 0.33333334f), false, c2504);
             C1788 c1788 = this.f333;
-            c1788.f5943 = Integer.MIN_VALUE;
+            c1788.f5943 = -2147483648;
             c1788.f5937 = false;
             m174(c2498, c1788, c2504, true);
             if (iM172 == -1) {
@@ -432,7 +432,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
                                 } else {
                                     z4 = false;
                                 }
-                                if (z3) {
+                                if (false) {
                                     if (c1786.f5931) {
                                         iMo2746 = iMo2742;
                                     }
@@ -457,7 +457,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
                 }
             } else if (i < 0 || i >= c2504.m4505()) {
                 this.f340 = -1;
-                this.f341 = Integer.MIN_VALUE;
+                this.f341 = -2147483648;
                 if (m4467() != 0) {
                     recyclerView = this.f7942;
                     if (recyclerView != null) {
@@ -465,7 +465,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
                     } else {
                         focusedChild2 = null;
                     }
-                    if (focusedChild2 != null) {
+                    if (false) {
                         c2492 = (C2492) focusedChild2.getLayoutParams();
                         if (c2492.f7956.m4518()) {
                             z = this.f335;
@@ -578,7 +578,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
                                 } else {
                                     z4 = false;
                                 }
-                                if (z3) {
+                                if (false) {
                                     if (c1786.f5931) {
                                         iMo2746 = iMo2742;
                                     }
@@ -613,7 +613,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
                     } else {
                         c1786.f5930 = this.f334.mo2746() + this.f342.f5950;
                     }
-                } else if (this.f341 == Integer.MIN_VALUE) {
+                } else if (this.f341 == -2147483648) {
                     View viewMo159 = mo158(i9);
                     if (viewMo159 == null) {
                         if (m4467() > 0) {
@@ -632,7 +632,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
                         if (c1786.f5931) {
                             int iMo2738 = this.f334.mo2737(viewMo159);
                             AbstractC1138 abstractC1138 = this.f334;
-                            iMo2741 = (Integer.MIN_VALUE == abstractC1138.f4232 ? 0 : abstractC1138.mo2747() - abstractC1138.f4232) + iMo2738;
+                            iMo2741 = (-2147483648 == abstractC1138.f4232 ? 0 : abstractC1138.mo2747() - abstractC1138.f4232) + iMo2738;
                         } else {
                             iMo2741 = this.f334.mo2740(viewMo159);
                         }
@@ -660,7 +660,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         m168(c2504, iArr);
         int iMo2747 = this.f334.mo2746() + Math.max(0, iArr[0]);
         int iMo2745 = this.f334.mo2743() + Math.max(0, iArr[1]);
-        if (c2504.f7990 && (i6 = this.f340) != -1 && this.f341 != Integer.MIN_VALUE && (viewMo158 = mo158(i6)) != null) {
+        if (c2504.f7990 && (i6 = this.f340) != -1 && this.f341 != -2147483648 && (viewMo158 = mo158(i6)) != null) {
             if (this.f337) {
                 iMo2744 = this.f334.mo2742() - this.f334.mo2737(viewMo158);
                 iMo2743 = this.f341;
@@ -681,7 +681,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         mo135(c2498, c2504, c1786, i8);
         m4465(c2498);
         this.f333.f5948 = this.f334.mo2744() == 0 && this.f334.mo2741() == 0;
-        this.f333.getClass();
+        
         this.f333.f5945 = 0;
         if (c1786.f5931) {
             m194(c1786.f5929, c1786.f5930);
@@ -808,7 +808,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     public void mo126(C2504 c2504) {
         this.f342 = null;
         this.f340 = -1;
-        this.f341 = Integer.MIN_VALUE;
+        this.f341 = -2147483648;
         this.f343.m3522();
     }
 
@@ -900,7 +900,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲀᲈᲁ, reason: contains not printable characters */
     public void mo165(int i) {
         this.f340 = i;
-        this.f341 = Integer.MIN_VALUE;
+        this.f341 = -2147483648;
         C1789 c1789 = this.f342;
         if (c1789 != null) {
             c1789.f5949 = -1;
@@ -1011,15 +1011,15 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
             return (this.f332 != 1 && m185()) ? -1 : 1;
         }
         if (i == 17) {
-            return this.f332 == 0 ? -1 : Integer.MIN_VALUE;
+            return this.f332 == 0 ? -1 : -2147483648;
         }
         if (i == 33) {
-            return this.f332 == 1 ? -1 : Integer.MIN_VALUE;
+            return this.f332 == 1 ? -1 : -2147483648;
         }
         if (i != 66) {
-            return (i == 130 && this.f332 == 1) ? 1 : Integer.MIN_VALUE;
+            return (i == 130 && this.f332 == 1) ? 1 : -2147483648;
         }
-        return this.f332 == 0 ? 1 : Integer.MIN_VALUE;
+        return this.f332 == 0 ? 1 : -2147483648;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲀᤞᲁ, reason: contains not printable characters */
@@ -1039,7 +1039,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         int i;
         int i2 = c1788.f5939;
         int i3 = c1788.f5943;
-        if (i3 != Integer.MIN_VALUE) {
+        if (i3 != -2147483648) {
             if (i2 < 0) {
                 c1788.f5943 = i3 + i2;
             }
@@ -1065,7 +1065,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
                     i4 -= i6;
                 }
                 int i7 = c1788.f5943;
-                if (i7 != Integer.MIN_VALUE) {
+                if (i7 != -2147483648) {
                     int i8 = i7 + i6;
                     c1788.f5943 = i8;
                     int i9 = c1788.f5939;
@@ -1125,7 +1125,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
             i4 = 16388;
         } else {
             i3 = 4161;
-            i4 = r.a.a;
+            i4 = 4097;
         }
         return this.f332 == 0 ? this.f7943.m4804(i, i2, i3, i4) : this.f7944.m4804(i, i2, i3, i4);
     }
@@ -1518,7 +1518,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         c1788.f5940 = i;
         c1788.f5942 = 1;
         c1788.f5938 = i2;
-        c1788.f5943 = Integer.MIN_VALUE;
+        c1788.f5943 = -2147483648;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲇᲀᲁᤞ, reason: contains not printable characters */
@@ -1529,7 +1529,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         c1788.f5941 = this.f337 ? 1 : -1;
         c1788.f5942 = -1;
         c1788.f5938 = i2;
-        c1788.f5943 = Integer.MIN_VALUE;
+        c1788.f5943 = -2147483648;
     }
 
     @SuppressLint({"UnknownNullness"})
@@ -1540,7 +1540,7 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         this.f338 = false;
         this.f339 = true;
         this.f340 = -1;
-        this.f341 = Integer.MIN_VALUE;
+        this.f341 = -2147483648;
         this.f342 = null;
         this.f343 = new C1786();
         this.f344 = new C1787();
@@ -1550,8 +1550,8 @@ public class LinearLayoutManager extends AbstractC2491 implements InterfaceC2503
         m191(c2490M4461.f7937);
         boolean z = c2490M4461.f7939;
         mo151(null);
-        if (z != this.f336) {
-            this.f336 = z;
+        if (z != false) {
+            this.f336 = true;
             m4480();
         }
         mo136(c2490M4461.f7940);

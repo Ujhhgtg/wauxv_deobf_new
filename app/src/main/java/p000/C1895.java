@@ -46,7 +46,7 @@ public final class C1895 implements InterfaceC1743 {
             case 0:
                 C2656 c2656 = (C2656) this.f6263;
                 InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(c2656);
-                interfaceC0766Mo2512.getClass();
+                
                 Object obj = AbstractC0968.f3515;
                 Object objMo2237 = obj;
                 Object objMo2238 = objMo2237;
@@ -76,13 +76,13 @@ public final class C1895 implements InterfaceC1743 {
             default:
                 InterfaceC2654 interfaceC2654Mo1363 = mo1363();
                 InterfaceC0766 interfaceC0766Mo2513 = interfaceC0974.mo2512(interfaceC2654Mo1363);
-                interfaceC0766Mo2513.getClass();
+                
                 int iMo2231 = interfaceC0766Mo2513.mo2230(mo1363());
                 if (iMo2231 != -1) {
                     throw new C1653(AbstractC1194.m2779(iMo2231, "Unexpected index "));
                 }
                 interfaceC0766Mo2513.mo2228(interfaceC2654Mo1363);
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 

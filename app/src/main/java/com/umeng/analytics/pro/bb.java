@@ -30,12 +30,12 @@ public class bb implements ba.a {
     public void a(Object obj, int i) {
         JSONObject jSONObjectA;
         if (i != 101) {
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "[CkHandler]: unknown event type!");
+            UMRTLog.i("MobclickRT", "[CkHandler]: unknown event type!");
             return;
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "[CkHandler]:recv CkDispatch.CHECK event!");
+        UMRTLog.i("MobclickRT", "[CkHandler]:recv CkDispatch.CHECK event!");
         Context appContext = UMGlobalContext.getAppContext();
-        if (!UMConfigure.getInitStatus() || appContext == null || UMConfigure.needSendZcfgEnv(appContext) || com.umeng.commonsdk.utils.c.a() || FieldManager.allow(com.umeng.commonsdk.utils.d.aw) || SdkVersion.SDK_TYPE == 1 || !(obj instanceof bc)) {
+        if (!UMConfigure.getInitStatus() || appContext == null || UMConfigure.needSendZcfgEnv(appContext) || com.umeng.commonsdk.utils.c.a() || FieldManager.allow("ekv_smart_check") || SdkVersion.SDK_TYPE == 1 || !(obj instanceof bc)) {
             return;
         }
         try {
@@ -44,7 +44,7 @@ public class bb implements ba.a {
                 return;
             }
             bd.a(jSONObjectA, jSONObjectG);
-            aw.a(new ar(ar.c, jSONObjectA, "appkey"), 0L, TimeUnit.SECONDS);
+            aw.a(new ar("https://cnlogs.umeng.com/uapp_ekverr_logs", jSONObjectA, "appkey"), 0L, TimeUnit.SECONDS);
         } catch (Throwable unused) {
         }
     }

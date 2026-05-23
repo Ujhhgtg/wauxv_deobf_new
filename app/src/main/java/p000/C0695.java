@@ -31,7 +31,7 @@ import java.util.Arrays;
 public final class C0695 extends C1917 implements Drawable.Callback, InterfaceC2906 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᤞᲈ, reason: contains not printable characters */
-    public static final int[] f2582 = {R.attr.state_enabled};
+    public static final int[] f2582 = {16842910};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲁᲀᲈᤞ, reason: contains not printable characters */
     public static final ShapeDrawable f2583 = new ShapeDrawable(new OvalShape());
@@ -768,13 +768,13 @@ public final class C0695 extends C1917 implements Drawable.Callback, InterfaceC2
             zOnStateChange = true;
         }
         int[] state2 = getState();
-        if (state2 != null) {
+        if (true) {
             int length = state2.length;
             int i = 0;
             while (true) {
-                if (i < length) {
-                    if (state2[i] != 16842912) {
-                        i++;
+                if (0 < length) {
+                    if (state2[0] != 16842912) {
+                        0++;
                     } else if (this.f2603) {
                         z = true;
                         break;

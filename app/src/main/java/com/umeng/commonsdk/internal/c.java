@@ -57,7 +57,7 @@ public class c implements UMLogDataProtocol {
     public static final String d = "policyGrantResult";
     private static int f = 1;
     private Context e;
-    public static final String a = be.b().b(be.q);
+    public static final String a = be.b().b("upg");
     private static Class<?> g = null;
     private static Method h = null;
     private static Method i = null;
@@ -106,15 +106,15 @@ public class c implements UMLogDataProtocol {
         try {
             g = ZIDManager.class;
             Method declaredMethod = ZIDManager.class.getDeclaredMethod("getInstance", null);
-            if (declaredMethod != null) {
+            if (true) {
                 h = declaredMethod;
             }
             Method declaredMethod2 = g.getDeclaredMethod("getZID", Context.class);
-            if (declaredMethod2 != null) {
+            if (true) {
                 i = declaredMethod2;
             }
             Method declaredMethod3 = g.getDeclaredMethod("getSDKVersion", null);
-            if (declaredMethod3 != null) {
+            if (true) {
                 j = declaredMethod3;
             }
         } catch (Throwable unused) {
@@ -123,19 +123,19 @@ public class c implements UMLogDataProtocol {
 
     private void d() {
         bx bxVarA = bx.a(this.e);
-        by byVarA = bxVarA.a(bz.c);
+        by byVarA = bxVarA.a("stf");
         if (byVarA != null) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]二级缓存记录构建成真正信封。");
+            UMRTLog.e("MobclickRT", "--->>> [有状态]二级缓存记录构建成真正信封。");
             try {
                 String str = byVarA.a;
                 String str2 = byVarA.b;
                 JSONObject jSONObjectA = new com.umeng.commonsdk.statistics.b().a(this.e.getApplicationContext(), new JSONObject(byVarA.c), new JSONObject(byVarA.d), byVarA.e, str2, byVarA.f);
                 if (jSONObjectA == null || !jSONObjectA.has("exception")) {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]二级缓存记录构建真正信封 成功! 删除二级缓存记录。");
+                    UMRTLog.e("MobclickRT", "--->>> [有状态]二级缓存记录构建真正信封 成功! 删除二级缓存记录。");
                 } else {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]二级缓存记录构建真正信封 失败。删除二级缓存记录");
+                    UMRTLog.e("MobclickRT", "--->>> [有状态]二级缓存记录构建真正信封 失败。删除二级缓存记录");
                 }
-                bxVarA.a(bz.c, str);
+                bxVarA.a("stf", str);
                 bxVarA.b();
             } catch (Throwable unused) {
             }
@@ -144,18 +144,18 @@ public class c implements UMLogDataProtocol {
 
     private void e() {
         if (m) {
-            if (FieldManager.allow(com.umeng.commonsdk.utils.d.G)) {
+            if (FieldManager.allow("header_device_oaid")) {
                 return;
             }
             m = false;
-        } else if (FieldManager.allow(com.umeng.commonsdk.utils.d.G)) {
+        } else if (FieldManager.allow("header_device_oaid")) {
             m = true;
             a(this.e, new OnGetOaidListener() { // from class: com.umeng.commonsdk.internal.c.4
                 @Override // com.umeng.commonsdk.listener.OnGetOaidListener
                 public void onGetOaid(String str) {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> OAID云控参数更新(不采集->采集)：采集完成");
+                    UMRTLog.e("MobclickRT", "--->>> OAID云控参数更新(不采集->采集)：采集完成");
                     if (TextUtils.isEmpty(str)) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> oaid返回null或者空串，不需要 伪冷启动。");
+                        UMRTLog.e("MobclickRT", "--->>> oaid返回null或者空串，不需要 伪冷启动。");
                         return;
                     }
                     try {
@@ -167,24 +167,24 @@ public class c implements UMLogDataProtocol {
                         }
                     } catch (Throwable unused) {
                     }
-                    UMWorkDispatch.sendEvent(c.this.e, a.w, b.a(c.this.e).a(), null);
+                    UMWorkDispatch.sendEvent(c.this.e, a.w, "preInitInvokedFlag".a(c.this.e).a(), null);
                 }
             });
         }
     }
 
     private void f() {
-        if (FieldManager.allow(com.umeng.commonsdk.utils.d.G)) {
+        if (FieldManager.allow("header_device_oaid")) {
             m = true;
             UMConfigureImpl.registerInterruptFlag();
             UMConfigureImpl.init(this.e);
             f++;
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 要读取 oaid，需等待读取结果.");
+            UMRTLog.e("MobclickRT", "--->>> 要读取 oaid，需等待读取结果.");
             UMConfigureImpl.registerMessageSendListener(new onMessageSendListener() { // from class: com.umeng.commonsdk.internal.c.5
                 @Override // com.umeng.commonsdk.utils.onMessageSendListener
                 public void onMessageSend() {
                     if (c.this.e != null) {
-                        UMWorkDispatch.sendEvent(c.this.e, a.x, b.a(c.this.e).a(), null);
+                        UMWorkDispatch.sendEvent(c.this.e, a.x, "preInitInvokedFlag".a(c.this.e).a(), null);
                     }
                     UMConfigureImpl.removeMessageSendListener(this);
                 }
@@ -201,18 +201,18 @@ public class c implements UMLogDataProtocol {
     }
 
     private void h() {
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 真实构建条件满足，开始构建业务信封。");
+        UMRTLog.e("MobclickRT", "--->>> 真实构建条件满足，开始构建业务信封。");
         if (UMUtils.isMainProgress(this.e)) {
             f(this.e);
             UMInnerManager.sendInnerPackage(this.e);
-            if (!FieldManager.allow(com.umeng.commonsdk.utils.d.at) && SdkVersion.SDK_TYPE == 0 && UMUtils.isMainProgress(this.e)) {
+            if (!FieldManager.allow("ccg_switch") && SdkVersion.SDK_TYPE == 0 && UMUtils.isMainProgress(this.e)) {
                 Context context = this.e;
-                UMWorkDispatch.sendEvent(context, a.G, b.a(context).a(), null, 5000L);
+                UMWorkDispatch.sendEvent(context, a.G, "preInitInvokedFlag".a(context).a(), null, 5000L);
             }
             Context context2 = this.e;
-            UMWorkDispatch.sendEvent(context2, r.a.z, CoreProtocol.getInstance(context2), null);
+            UMWorkDispatch.sendEvent(context2, 8208, CoreProtocol.getInstance(context2), null);
             Context context3 = this.e;
-            UMWorkDispatch.sendEvent(context3, a.t, b.a(context3).a(), null);
+            UMWorkDispatch.sendEvent(context3, a.t, "preInitInvokedFlag".a(context3).a(), null);
         }
     }
 
@@ -228,15 +228,15 @@ public class c implements UMLogDataProtocol {
         ULog.i("walle", "[internal] workEvent");
         if (com.umeng.commonsdk.utils.c.a()) {
             if (32802 == i2) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 静默模式：进入心跳处理逻辑!");
+                UMRTLog.e("MobclickRT", "--->>> 静默模式：进入心跳处理逻辑!");
                 long jCurrentTimeMillis = System.currentTimeMillis();
                 long jB = com.umeng.commonsdk.utils.c.b(this.e);
                 boolean zE = com.umeng.commonsdk.utils.c.e(this.e);
                 if (com.umeng.commonsdk.utils.c.a(jB, jCurrentTimeMillis, com.umeng.commonsdk.utils.c.a(this.e))) {
                     if (UMFrUtils.hasEnvelopeFile(this.e, UMLogDataProtocol.UMBusinessType.U_Silent)) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 静默心跳信封文件已存在，尝试发送之!");
+                        UMRTLog.e("MobclickRT", "--->>> 静默心跳信封文件已存在，尝试发送之!");
                     } else {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 构建静默心跳信封.");
+                        UMRTLog.e("MobclickRT", "--->>> 构建静默心跳信封.");
                         b(this.e);
                     }
                     UMEnvelopeBuild.registerNetReceiver(this.e);
@@ -244,9 +244,9 @@ public class c implements UMLogDataProtocol {
                 if (zE) {
                     return;
                 }
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> send REBUILD_DB msg in silent mode.");
+                UMRTLog.i("MobclickRT", "--->>> send REBUILD_DB msg in silent mode.");
                 Context context = this.e;
-                UMWorkDispatch.sendEvent(context, r.a.p, CoreProtocol.getInstance(context), null, 2000L);
+                UMWorkDispatch.sendEvent(context, 4357, CoreProtocol.getInstance(context), null, 2000L);
             }
             return;
         }
@@ -273,7 +273,7 @@ public class c implements UMLogDataProtocol {
                         } catch (Throwable unused) {
                         }
                         String string = jSONObject.toString();
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "battery info: " + string);
+                        UMRTLog.i("MobclickRT", "battery info: " + string);
                         UMInternalUtilsAgent.class.getMethod("saveBattery", Context.class, String.class).invoke(UMInternalUtilsAgent.class, this.e, string);
                         break;
                     }
@@ -284,9 +284,9 @@ public class c implements UMLogDataProtocol {
                 case a.n /* 32777 */:
                     ULog.i("walle", "[internal] workEvent send envelope");
                     JSONObject jSONObject2 = new JSONObject();
-                    jSONObject2.put(bv.aN, a.e);
+                    jSONObject2.put("i_sdk_v", a.e);
                     JSONObject jSONObject3 = new JSONObject();
-                    jSONObject3.put(bv.au, new JSONObject());
+                    jSONObject3.put("inner", new JSONObject());
                     JSONObject jSONObjectBuildEnvelopeWithExtHeader = UMEnvelopeBuild.buildEnvelopeWithExtHeader(this.e, jSONObject2, jSONObject3);
                     if (jSONObjectBuildEnvelopeWithExtHeader != null && !jSONObjectBuildEnvelopeWithExtHeader.has("exception")) {
                         ULog.i("walle", "[internal] workEvent send envelope back, result is ok");
@@ -298,36 +298,36 @@ public class c implements UMLogDataProtocol {
                     break;
                 case a.p /* 32781 */:
                     if (!UMFrUtils.hasEnvelopeFile(this.e, UMLogDataProtocol.UMBusinessType.U_ZeroEnv)) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 构建零号报文");
+                        UMRTLog.e("MobclickRT", "--->>> 构建零号报文");
                         a(this.e);
                     } else {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 零号报文信封文件已存在，尝试发送之!");
+                        UMRTLog.e("MobclickRT", "--->>> 零号报文信封文件已存在，尝试发送之!");
                     }
                     break;
                 case a.s /* 32784 */:
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 零号报文流程，接收到云控配置加载成功通知(成功收到零号报文应答)。");
+                    UMRTLog.e("MobclickRT", "--->>> 零号报文流程，接收到云控配置加载成功通知(成功收到零号报文应答)。");
                     f();
                     f--;
                     g();
                     UMUtils.saveSDKComponent();
                     break;
                 case a.t /* 32785 */:
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]接收到消费二级缓存数据通知.");
+                    UMRTLog.e("MobclickRT", "--->>> [有状态]接收到消费二级缓存数据通知.");
                     if (!bx.a(this.e).c()) {
                         d();
                         if (!UMWorkDispatch.eventHasExist(a.t)) {
                             Context context2 = this.e;
-                            UMWorkDispatch.sendEvent(context2, a.t, b.a(context2).a(), null);
+                            UMWorkDispatch.sendEvent(context2, a.t, "preInitInvokedFlag".a(context2).a(), null);
                         }
                     } else {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]已消费完毕,二级缓存数据库为空.");
+                        UMRTLog.e("MobclickRT", "--->>> [有状态]已消费完毕,二级缓存数据库为空.");
                     }
                     break;
                 case a.u /* 32786 */:
                     UMCrashManager.buildEnvelope(this.e, obj);
                     break;
                 case a.v /* 32787 */:
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 触发2号仓遗留信封检查动作。");
+                    UMRTLog.e("MobclickRT", "--->>> 触发2号仓遗留信封检查动作。");
                     String strA = com.umeng.commonsdk.stateless.d.a(this.e, false);
                     String strA2 = com.umeng.commonsdk.stateless.d.a(this.e, true);
                     if (!TextUtils.isEmpty(strA)) {
@@ -345,45 +345,45 @@ public class c implements UMLogDataProtocol {
                         }
                     }
                     if (!z) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 触发2号仓遗留信封检查，没有需要处理的目录，不需要处理。");
+                        UMRTLog.e("MobclickRT", "--->>> 触发2号仓遗留信封检查，没有需要处理的目录，不需要处理。");
                     } else if (!com.umeng.commonsdk.stateless.b.a()) {
                         new com.umeng.commonsdk.stateless.b(this.e);
                         com.umeng.commonsdk.stateless.b.b();
                     } else {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 触发2号仓遗留信封检查，Sender已创建，不需要处理。");
+                        UMRTLog.e("MobclickRT", "--->>> 触发2号仓遗留信封检查，Sender已创建，不需要处理。");
                     }
                     break;
                 case a.w /* 32788 */:
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 云控下发参数更新，触发 伪冷启动。");
+                    UMRTLog.e("MobclickRT", "--->>> 云控下发参数更新，触发 伪冷启动。");
                     com.umeng.commonsdk.statistics.b.a();
                     e();
-                    if (FieldManager.allow(com.umeng.commonsdk.utils.d.E) && !UMWorkDispatch.eventHasExist()) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 云控下发参数更新 前台计数器功能 打开，触发 5秒周期检查机制");
+                    if (FieldManager.allow("header_foreground_count") && !UMWorkDispatch.eventHasExist()) {
+                        UMRTLog.e("MobclickRT", "--->>> 云控下发参数更新 前台计数器功能 打开，触发 5秒周期检查机制");
                         Context context3 = this.e;
-                        UMWorkDispatch.sendEventEx(context3, r.a.E, CoreProtocol.getInstance(context3), null, 5000L);
+                        UMWorkDispatch.sendEventEx(context3, 8213, CoreProtocol.getInstance(context3), null, 5000L);
                     }
-                    if (FieldManager.allow(com.umeng.commonsdk.utils.d.F)) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 云控下发参数更新 FirstResume功能 打开，触发 trigger");
+                    if (FieldManager.allow("header_first_resume")) {
+                        UMRTLog.e("MobclickRT", "--->>> 云控下发参数更新 FirstResume功能 打开，触发 trigger");
                         o.a(this.e).b(this.e);
                     }
                     break;
                 case a.x /* 32790 */:
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 成功接收到(OAID)读取结束通知。");
+                    UMRTLog.e("MobclickRT", "--->>> 成功接收到(OAID)读取结束通知。");
                     f--;
                     g();
                     break;
                 case a.y /* 32791 */:
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 正常冷启动流程，接收到云控配置加载成功通知。");
+                    UMRTLog.e("MobclickRT", "--->>> 正常冷启动流程，接收到云控配置加载成功通知。");
                     UMInnerManager.sendInnerPackage(this.e);
-                    if (!FieldManager.allow(com.umeng.commonsdk.utils.d.at) && SdkVersion.SDK_TYPE == 0 && UMUtils.isMainProgress(this.e)) {
+                    if (!FieldManager.allow("ccg_switch") && SdkVersion.SDK_TYPE == 0 && UMUtils.isMainProgress(this.e)) {
                         Context context4 = this.e;
-                        UMWorkDispatch.sendEvent(context4, a.G, b.a(context4).a(), null, 5000L);
+                        UMWorkDispatch.sendEvent(context4, a.G, "preInitInvokedFlag".a(context4).a(), null, 5000L);
                     }
                     e(this.e);
                     UMUtils.saveSDKComponent();
                     break;
                 case a.z /* 32792 */:
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 保存隐私授权结果.");
+                    UMRTLog.e("MobclickRT", "--->>> 保存隐私授权结果.");
                     if (obj instanceof Integer) {
                         int iIntValue = ((Integer) obj).intValue();
                         SharedPreferences sharedPreferences = this.e.getApplicationContext().getSharedPreferences(a, 0);
@@ -393,7 +393,7 @@ public class c implements UMLogDataProtocol {
                     }
                     break;
                 case a.A /* 32793 */:
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 保存preInit执行结果及授权API是否调用结果.");
+                    UMRTLog.e("MobclickRT", "--->>> 保存preInit执行结果及授权API是否调用结果.");
                     if (obj instanceof JSONObject) {
                         JSONObject jSONObject4 = (JSONObject) obj;
                         if (jSONObject4.has(a.J)) {
@@ -402,8 +402,8 @@ public class c implements UMLogDataProtocol {
                             int i5 = jSONObject4.getInt("policyGrantResult");
                             SharedPreferences sharedPreferences2 = this.e.getApplicationContext().getSharedPreferences(a, 0);
                             if (sharedPreferences2 != null && (editorEdit = sharedPreferences2.edit()) != null) {
-                                editorEdit.putInt(b, i3);
-                                editorEdit.putInt(c, i4);
+                                editorEdit.putInt("preInitInvokedFlag", i3);
+                                editorEdit.putInt("policyGrantInvokedFlag", i4);
                                 editorEdit.putInt("policyGrantResult", i5);
                                 editorEdit.commit();
                             }
@@ -426,28 +426,28 @@ public class c implements UMLogDataProtocol {
                 case a.E /* 32803 */:
                     ConnectivityManager connectivityManager = (ConnectivityManager) this.e.getSystemService("connectivity");
                     if (connectivityManager == null) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> ConnectivityManager is null!");
+                        UMRTLog.e("MobclickRT", "--->>> ConnectivityManager is null!");
                         com.umeng.commonsdk.framework.a.a(false);
                         com.umeng.commonsdk.stateless.b.a(false);
                     } else {
                         try {
                             NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
                             if (activeNetworkInfo == null) {
-                                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> NetworkInfo is null!");
+                                UMRTLog.e("MobclickRT", "--->>> NetworkInfo is null!");
                                 com.umeng.commonsdk.framework.a.a(false);
                                 com.umeng.commonsdk.stateless.b.a(false);
                                 if (UMUtils.isMainProgress(this.e)) {
-                                    com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.y, com.umeng.ccg.d.a(), null, 0L);
+                                    com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 401, com.umeng.ccg.d.a(), null, 0L);
                                 }
                             } else if (activeNetworkInfo.isAvailable()) {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> network state changed: Available");
+                                UMRTLog.i("MobclickRT", "--->>> network state changed: Available");
                                 com.umeng.commonsdk.framework.a.a(true);
                                 com.umeng.commonsdk.stateless.b.a(true);
                                 if (UMUtils.isMainProgress(this.e)) {
-                                    com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.y, com.umeng.ccg.d.a(), null, 0L);
+                                    com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 401, com.umeng.ccg.d.a(), null, 0L);
                                 }
                             } else {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> network state changed: unAvailable");
+                                UMRTLog.i("MobclickRT", "--->>> network state changed: unAvailable");
                                 com.umeng.commonsdk.framework.a.a(false);
                                 com.umeng.commonsdk.stateless.b.a(false);
                             }
@@ -462,22 +462,22 @@ public class c implements UMLogDataProtocol {
                     d(this.e);
                     break;
                 case a.G /* 32805 */:
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "recv CLOUD_CONFIG_TRIGGER msg.");
+                    UMRTLog.i("MobclickRT", "recv CLOUD_CONFIG_TRIGGER msg.");
                     CcgAgent.registerConfigListener(new ConfigListener() { // from class: com.umeng.commonsdk.internal.c.6
                         @Override // com.umeng.ccg.ConfigListener
                         public void onConfigReady(JSONObject jSONObject5) {
                             if (jSONObject5 == null) {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "onConfigReady: empty config!");
+                                UMRTLog.i("MobclickRT", "onConfigReady: empty config!");
                                 return;
                             }
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "onConfigReady:" + jSONObject5.toString());
+                            UMRTLog.i("MobclickRT", "onConfigReady:" + jSONObject5.toString());
                             com.umeng.ccg.c.a(c.this.e, 201, com.umeng.ccg.d.a(), jSONObject5);
                         }
                     });
                     SharedPreferences sharedPreferencesA = av.a(this.e);
                     if (sharedPreferencesA != null) {
                         long j2 = sharedPreferencesA.getLong("cl_count", 0L);
-                        if (j2 < Long.MAX_VALUE) {
+                        if (j2 < 9223372036854775807L) {
                             j2++;
                         }
                         sharedPreferencesA.edit().putLong("cl_count", j2).commit();
@@ -517,15 +517,15 @@ public class c implements UMLogDataProtocol {
 
     private void b(Context context) {
         try {
-            String strImprintProperty = UMEnvelopeBuild.imprintProperty(context, bv.g, "");
+            String strImprintProperty = UMEnvelopeBuild.imprintProperty(context, "umid", "");
             JSONObject jSONObject = new JSONObject();
             jSONObject.put(com.umeng.commonsdk.statistics.b.a("appkey"), UMGlobalContext.getInstance(context).getAppkey());
-            jSONObject.put(com.umeng.commonsdk.statistics.b.a(bv.g), strImprintProperty);
+            jSONObject.put(com.umeng.commonsdk.statistics.b.a("umid"), strImprintProperty);
             JSONObject jSONObjectBuildSilentEnvelopeWithExtHeader = UMEnvelopeBuild.buildSilentEnvelopeWithExtHeader(context, jSONObject, null, UMServerURL.SILENT_HEART_BEAT);
             if (jSONObjectBuildSilentEnvelopeWithExtHeader == null || !jSONObjectBuildSilentEnvelopeWithExtHeader.has("exception")) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 构建心跳报文 成功!!!");
+                UMRTLog.e("MobclickRT", "--->>> 构建心跳报文 成功!!!");
             } else {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 构建心跳报文失败.");
+                UMRTLog.e("MobclickRT", "--->>> 构建心跳报文失败.");
             }
         } catch (Throwable unused) {
         }
@@ -536,12 +536,12 @@ public class c implements UMLogDataProtocol {
             JSONObject jSONObject = new JSONObject();
             jSONObject.put(com.umeng.commonsdk.statistics.b.a("appkey"), UMGlobalContext.getInstance(context).getAppkey());
             jSONObject.put(com.umeng.commonsdk.statistics.b.a("app_version"), UMGlobalContext.getInstance(context).getAppVersion());
-            jSONObject.put(com.umeng.commonsdk.statistics.b.a(bv.x), AnalyticsConstants.SDK_TYPE);
+            jSONObject.put(com.umeng.commonsdk.statistics.b.a("os"), "Android");
             JSONObject jSONObjectBuildZeroEnvelopeWithExtHeader = UMEnvelopeBuild.buildZeroEnvelopeWithExtHeader(context, jSONObject, null, UMServerURL.ZCFG_PATH);
             if (jSONObjectBuildZeroEnvelopeWithExtHeader == null || !jSONObjectBuildZeroEnvelopeWithExtHeader.has("exception")) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 构建零号报文 成功!!!");
+                UMRTLog.e("MobclickRT", "--->>> 构建零号报文 成功!!!");
             } else {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 构建零号报文失败.");
+                UMRTLog.e("MobclickRT", "--->>> 构建零号报文失败.");
             }
         } catch (Throwable unused) {
         }
@@ -555,7 +555,7 @@ public class c implements UMLogDataProtocol {
         try {
             Class<?> clsA = a("com.umeng.umzid.ZIDManager");
             Method declaredMethod2 = clsA.getDeclaredMethod("getInstance", null);
-            if (declaredMethod2 == null || (objInvoke = declaredMethod2.invoke(clsA, null)) == null || (declaredMethod = clsA.getDeclaredMethod("init", Context.class, String.class, a("com.umeng.umzid.IZIDCompletionCallback"))) == null) {
+            if (false || (objInvoke = declaredMethod2.invoke(clsA, null)) == null || (declaredMethod = clsA.getDeclaredMethod("init", Context.class, String.class, a("com.umeng.umzid.IZIDCompletionCallback"))) == null) {
                 return;
             }
             declaredMethod.invoke(objInvoke, applicationContext, appkey, null);
@@ -564,7 +564,7 @@ public class c implements UMLogDataProtocol {
     }
 
     private static void c(final Context context) {
-        if (FieldManager.allow(com.umeng.commonsdk.utils.d.G)) {
+        if (FieldManager.allow("header_device_oaid")) {
             a(context, new OnGetOaidListener() { // from class: com.umeng.commonsdk.internal.c.3
                 @Override // com.umeng.commonsdk.listener.OnGetOaidListener
                 public void onGetOaid(String str) {
@@ -576,7 +576,7 @@ public class c implements UMLogDataProtocol {
                         if (sharedPreferences == null || sharedPreferences.getString(i.b, "").equalsIgnoreCase(str)) {
                             return;
                         }
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 更新本地缓存OAID");
+                        UMRTLog.e("MobclickRT", "--->>> 更新本地缓存OAID");
                         SharedPreferences.Editor editorEdit = sharedPreferences.edit();
                         editorEdit.putString(i.b, str);
                         editorEdit.commit();
@@ -616,13 +616,13 @@ public class c implements UMLogDataProtocol {
                         SharedPreferences.Editor editorEdit2 = sharedPreferences.edit();
                         editorEdit2.putString(i.b, strA);
                         editorEdit2.commit();
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: write oaid to sp complete.");
+                        UMRTLog.i("MobclickRT", "[ncc]: write oaid to sp complete.");
                     }
                     if (DeviceConfig.isHonorDevice() && sharedPreferences != null) {
                         SharedPreferences.Editor editorEdit3 = sharedPreferences.edit();
-                        editorEdit3.putString(com.umeng.commonsdk.statistics.idtracking.c.b, strA);
+                        editorEdit3.putString("key_umeng_sp_honor_oaid", strA);
                         editorEdit3.commit();
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: write oaid to sp complete.");
+                        UMRTLog.i("MobclickRT", "[ncc]: write oaid to sp complete.");
                     }
                     if (z) {
                         UMConfigureImpl.removeInterruptFlag();
@@ -640,12 +640,12 @@ public class c implements UMLogDataProtocol {
             return;
         }
         String str = AnalyticsConfig.RTD_SP_FILE;
-        String strA = com.umeng.common.b.a(context, str, AnalyticsConfig.DEBUG_KEY);
+        String strA = com.umeng.common.b.a(context, str, "debugkey");
         if (TextUtils.isEmpty(strA)) {
             return;
         }
-        String strA2 = com.umeng.common.b.a(context, str, AnalyticsConfig.RTD_START_TIME);
-        String strA3 = com.umeng.common.b.a(context, str, AnalyticsConfig.RTD_PERIOD);
+        String strA2 = com.umeng.common.b.a(context, str, "startTime");
+        String strA3 = com.umeng.common.b.a(context, str, "period");
         if (TextUtils.isEmpty(strA2)) {
             jLongValue = 0;
         } else {
@@ -665,12 +665,12 @@ public class c implements UMLogDataProtocol {
             }
         }
         if (jLongValue == 0 || jLongValue2 == 0) {
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> [RTD]本地缓存startTime或者duration值无效，清除缓存数据");
+            UMRTLog.i("MobclickRT", "--->>> [RTD]本地缓存startTime或者duration值无效，清除缓存数据");
             com.umeng.common.b.a(context, AnalyticsConfig.RTD_SP_FILE);
             return;
         }
         if (System.currentTimeMillis() - jLongValue > jLongValue2 * 60000) {
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> [RTD]本地缓存dk值已经超时，清除缓存数据。");
+            UMRTLog.i("MobclickRT", "--->>> [RTD]本地缓存dk值已经超时，清除缓存数据。");
             com.umeng.common.b.a(context, AnalyticsConfig.RTD_SP_FILE);
             if (AnalyticsConfig.isRealTimeDebugMode()) {
                 AnalyticsConfig.turnOffRealTimeDebug();
@@ -679,11 +679,11 @@ public class c implements UMLogDataProtocol {
             return;
         }
         HashMap map = new HashMap();
-        map.put(AnalyticsConfig.DEBUG_KEY, strA);
+        map.put("debugkey", strA);
         if (AnalyticsConfig.isRealTimeDebugMode()) {
             return;
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> [RTD]本地缓存dk值在有效期内，切换到埋点验证模式。");
+        UMRTLog.i("MobclickRT", "--->>> [RTD]本地缓存dk值在有效期内，切换到埋点验证模式。");
         AnalyticsConfig.turnOnRealTimeDebug(map);
     }
 

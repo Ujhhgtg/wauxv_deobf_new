@@ -68,7 +68,7 @@ public class dx extends ed {
             int i4 = 0;
             while (true) {
                 byte b2 = bArrF[iG + i2];
-                i3 |= (b2 & JSONB.Constants.BC_SYMBOL) << i4;
+                i3 |= (b2 & 127) << i4;
                 if ((b2 & 128) != 128) {
                     this.g.a(i2 + 1);
                     return i3;
@@ -80,7 +80,7 @@ public class dx extends ed {
             int i5 = 0;
             while (true) {
                 byte bU = u();
-                i2 |= (bU & JSONB.Constants.BC_SYMBOL) << i5;
+                i2 |= (bU & 127) << i5;
                 if ((bU & 128) != 128) {
                     return i2;
                 }
@@ -99,7 +99,7 @@ public class dx extends ed {
             int i3 = 0;
             while (true) {
                 byte b2 = bArrF[iG + i2];
-                j3 |= ((long) (b2 & JSONB.Constants.BC_SYMBOL)) << i3;
+                j3 |= ((long) (b2 & 127)) << i3;
                 if ((b2 & 128) != 128) {
                     this.g.a(i2 + 1);
                     return j3;
@@ -110,7 +110,7 @@ public class dx extends ed {
         } else {
             while (true) {
                 byte bU = u();
-                j2 |= ((long) (bU & JSONB.Constants.BC_SYMBOL)) << i2;
+                j2 |= ((long) (bU & 127)) << i2;
                 if ((bU & 128) != 128) {
                     return j2;
                 }
@@ -173,7 +173,7 @@ public class dx extends ed {
             throw new ee("Expected protocol id " + Integer.toHexString(-126) + " but got " + Integer.toHexString(bU));
         }
         byte bU2 = u();
-        byte b2 = (byte) (bU2 & j);
+        byte b2 = (byte) (bU2 & 31);
         if (b2 != 1) {
             throw new ee(AbstractC1194.m2779(b2, "Expected version 1 but got "));
         }
@@ -198,9 +198,9 @@ public class dx extends ed {
         if (bU == 0) {
             return e;
         }
-        short s = (short) ((bU & JSONB.Constants.BC_INT32_NUM_MIN) >> 4);
+        short s = (short) ((bU & -16) >> 4);
         short sV = s == 0 ? v() : (short) (this.n + s);
-        byte b2 = (byte) (bU & ek.m);
+        byte b2 = (byte) (bU & 15);
         dy dyVar = new dy("", d(b2), sV);
         if (c(bU)) {
             this.p = b2 == 1 ? Boolean.TRUE : Boolean.FALSE;
@@ -213,7 +213,7 @@ public class dx extends ed {
     public ea n() throws es {
         int iE = E();
         byte bU = iE == 0 ? (byte) 0 : u();
-        return new ea(d((byte) (bU >> 4)), d((byte) (bU & ek.m)), iE);
+        return new ea(d((byte) (bU >> 4)), d((byte) (bU & 15)), iE);
     }
 
     @Override // com.umeng.analytics.pro.ed
@@ -349,7 +349,7 @@ public class dx extends ed {
 
     @Override // com.umeng.analytics.pro.ed
     public void a(eb ebVar) {
-        b(h);
+        b(-126);
         d(((ebVar.b << 5) & (-32)) | 1);
         b(ebVar.c);
         a(ebVar.a);
@@ -373,12 +373,12 @@ public class dx extends ed {
     }
 
     private boolean c(byte b2) {
-        int i2 = b2 & ek.m;
+        int i2 = b2 & 15;
         return i2 == 1 || i2 == 2;
     }
 
     private byte d(byte b2) throws ee {
-        byte b3 = (byte) (b2 & ek.m);
+        byte b3 = (byte) (b2 & 15);
         switch (b3) {
             case 0:
                 return (byte) 0;
@@ -398,12 +398,12 @@ public class dx extends ed {
             case 8:
                 return (byte) 11;
             case 9:
-                return ek.m;
+                return 15;
             case 10:
-                return ek.l;
+                return 14;
             case 11:
-                return ek.k;
-            case Opcodes.FCONST_1 /* 12 */:
+                return 13;
+            case 12 /* 12 */:
                 return (byte) 12;
             default:
                 throw new ee(AbstractC1194.m2779(b3, "don't know what type: "));
@@ -570,7 +570,7 @@ public class dx extends ed {
         if (i2 <= 14) {
             d(e(b2) | (i2 << 4));
         } else {
-            d(e(b2) | JSONB.Constants.BC_INT32_NUM_MIN);
+            d(e(b2) | -16);
             b(i2);
         }
     }

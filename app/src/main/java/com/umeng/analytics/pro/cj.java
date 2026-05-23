@@ -49,14 +49,14 @@ public class cj implements Application.ActivityLifecycleCallbacks {
     public void onActivityStarted(Activity activity) {
         this.e++;
         this.f.removeCallbacks(this.g);
-        this.f.postDelayed(this.g, b);
+        this.f.postDelayed(this.g, 500L);
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityStopped(Activity activity) {
         this.e--;
         this.f.removeCallbacks(this.g);
-        this.f.postDelayed(this.g, b);
+        this.f.postDelayed(this.g, 500L);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -66,7 +66,7 @@ public class cj implements Application.ActivityLifecycleCallbacks {
             try {
                 it.next().b();
             } catch (Throwable th) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: Error in onSwitchBackground callback: " + th.getMessage());
+                UMRTLog.e("MobclickRT", "[ncc]: Error in onSwitchBackground callback: " + th.getMessage());
             }
         }
     }
@@ -84,7 +84,7 @@ public class cj implements Application.ActivityLifecycleCallbacks {
             try {
                 it.next().a();
             } catch (Throwable th) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: Error in onSwitchForeground callback: " + th.getMessage());
+                UMRTLog.e("MobclickRT", "[ncc]: Error in onSwitchForeground callback: " + th.getMessage());
             }
         }
     }

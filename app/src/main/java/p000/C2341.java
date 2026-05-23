@@ -139,16 +139,16 @@ public final class C2341 {
             C2341 c2341 = c2341Arr2[i3];
             char c2 = c2341.f7527;
             float[] fArr2 = c2341.f7528;
-            float f11 = fArr[i2];
+            float f11 = fArr[0];
             float f12 = fArr[1];
             float f13 = fArr[2];
             float f14 = fArr[3];
             float f15 = fArr[4];
-            int i4 = i2;
+            int i4 = 0;
             float f16 = fArr[5];
             switch (c2) {
                 case 'A':
-                case Opcodes.LADD /* 97 */:
+                case 97 /* 97 */:
                     i = 7;
                     break;
                 case 'C':
@@ -158,11 +158,11 @@ public final class C2341 {
                 case 'H':
                 case 'V':
                 case 'h':
-                case Opcodes.FNEG /* 118 */:
+                case 118 /* 118 */:
                     i = 1;
                     break;
                 case 'Q':
-                case Opcodes.AASTORE /* 83 */:
+                case 83 /* 83 */:
                 case 'q':
                 case 's':
                     i = 4;
@@ -183,7 +183,7 @@ public final class C2341 {
             float f18 = f16;
             float f19 = f11;
             float f20 = f12;
-            int i5 = i4;
+            int i5 = 0;
             while (i5 < fArr2.length) {
                 if (c2 == 'A') {
                     fArr2 = fArr2;
@@ -193,7 +193,7 @@ public final class C2341 {
                     i3 = i3;
                     int i6 = i5 + 5;
                     int i7 = i5 + 6;
-                    m4328(path, f19, f21, fArr2[i6], fArr2[i7], fArr2[i5], fArr2[i5 + 1], fArr2[i5 + 2], fArr2[i5 + 3] != 0.0f ? 1 : i4, fArr2[i5 + 4] != 0.0f ? 1 : i4);
+                    m4328(path, f19, f21, fArr2[i6], fArr2[i7], fArr2[i5], fArr2[i5 + 1], fArr2[i5 + 2], fArr2[i5 + 3] != 0.0f ? 1 : 0, fArr2[i5 + 4] != 0.0f ? 1 : 0);
                     f13 = fArr2[i6];
                     f = fArr2[i7];
                     f14 = f;
@@ -424,7 +424,7 @@ public final class C2341 {
                     float f39 = f19;
                     float f40 = f20;
                     i3 = i3;
-                    m4328(path, f39, f40, f37, f38, fArr2[i5], fArr2[i5 + 1], fArr2[i5 + 2], fArr2[i5 + 3] != 0.0f ? 1 : i4, fArr2[i5 + 4] != 0.0f ? 1 : i4);
+                    m4328(path, f39, f40, f37, f38, fArr2[i5], fArr2[i5 + 1], fArr2[i5 + 2], fArr2[i5 + 3] != 0.0f ? 1 : 0, fArr2[i5 + 4] != 0.0f ? 1 : 0);
                     f2 = f39 + fArr2[i33];
                     f = f40 + fArr2[i34];
                     f13 = f2;
@@ -440,7 +440,7 @@ public final class C2341 {
                 c = c2;
                 fArr2 = fArr2;
             }
-            fArr[i4] = f19;
+            fArr[0] = f19;
             fArr[1] = f20;
             fArr[2] = f13;
             fArr[3] = f14;
@@ -449,7 +449,7 @@ public final class C2341 {
             c = c2341.f7527;
             i3++;
             c2341Arr2 = c2341Arr;
-            i2 = i4;
+            i2 = 0;
         }
     }
 

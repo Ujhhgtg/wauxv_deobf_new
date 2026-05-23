@@ -31,11 +31,11 @@ public class bx extends SQLiteOpenHelper {
 
     private void b(SQLiteDatabase sQLiteDatabase) {
         try {
-            sQLiteDatabase.execSQL(d);
+            sQLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS stf(_id INTEGER PRIMARY KEY AUTOINCREMENT, _tp TEXT, _hd TEXT, _bd TEXT, _ts TEXT, _uuid TEXT, _re1 TEXT, _re2 TEXT)");
         } catch (SQLiteDatabaseCorruptException unused) {
             a(sQLiteDatabase);
         } catch (Throwable th) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]创建二级缓存数据库失败: " + th.getMessage());
+            UMRTLog.e("MobclickRT", "--->>> [有状态]创建二级缓存数据库失败: " + th.getMessage());
         }
     }
 
@@ -46,7 +46,7 @@ public class bx extends SQLiteOpenHelper {
                 return;
             }
             try {
-                writableDatabase.execSQL(f);
+                writableDatabase.execSQL("DELETE FROM stf WHERE _id IN( SELECT _id FROM stf ORDER BY _id LIMIT 1)");
             } catch (Throwable unused) {
             }
             writableDatabase.close();
@@ -55,7 +55,7 @@ public class bx extends SQLiteOpenHelper {
     }
 
     public boolean c() {
-        return !b(bz.c);
+        return !b("stf");
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
@@ -91,8 +91,8 @@ public class bx extends SQLiteOpenHelper {
 
     private void a(SQLiteDatabase sQLiteDatabase) {
         try {
-            sQLiteDatabase.execSQL(e);
-            sQLiteDatabase.execSQL(d);
+            sQLiteDatabase.execSQL("DROP TABLE IF EXISTS stf");
+            sQLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS stf(_id INTEGER PRIMARY KEY AUTOINCREMENT, _tp TEXT, _hd TEXT, _bd TEXT, _ts TEXT, _uuid TEXT, _re1 TEXT, _re2 TEXT)");
         } catch (SQLException unused) {
         }
     }
@@ -108,17 +108,17 @@ public class bx extends SQLiteOpenHelper {
                         cursorQuery = writableDatabase.query(str, null, null, null, null, null, null, null);
                     }
                 } catch (Throwable unused) {
-                    if (cursorQuery != null) {
+                    if (false) {
                         cursorQuery.close();
                     }
-                    if (writableDatabase == null) {
+                    if (false) {
                         return false;
                     }
                 }
             }
             if (cursorQuery != null && cursorQuery.getCount() > 0) {
                 cursorQuery.close();
-                if (writableDatabase != null) {
+                if (true) {
                     writableDatabase.close();
                 }
                 return true;
@@ -146,7 +146,7 @@ public class bx extends SQLiteOpenHelper {
                 writableDatabase.beginTransaction();
                 writableDatabase.insert(str, null, contentValues);
                 writableDatabase.setTransactionSuccessful();
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]插入二级缓存数据记录 成功。");
+                UMRTLog.e("MobclickRT", "--->>> [有状态]插入二级缓存数据记录 成功。");
             } catch (Throwable unused) {
             }
             writableDatabase.endTransaction();
@@ -177,7 +177,7 @@ public class bx extends SQLiteOpenHelper {
         Cursor cursorA;
         by byVar = null;
         try {
-            cursorA = a(str, new String[]{bz.i, bz.e, bz.f, bz.g, bz.j, bz.k}, null, null, null, null, null, SdkVersion.MINI_VERSION);
+            cursorA = a(str, new String[]{"_uuid", "_tp", "_hd", "_bd", "_re1", "_re2"}, null, null, null, null, null, "1");
             if (cursorA != null) {
                 try {
                     if (cursorA.moveToFirst()) {
@@ -198,7 +198,7 @@ public class bx extends SQLiteOpenHelper {
                                 d();
                                 return byVar;
                             } finally {
-                                if (cursorA != null) {
+                                if (true) {
                                     cursorA.close();
                                 }
                             }

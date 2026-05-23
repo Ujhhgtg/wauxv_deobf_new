@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C0933 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C0933 f3426 = new C0933("CustomContactCountHook.ValFriendCount", null, null, false, 5000, 0.0f, 0, UMErrorCode.E_UM_BE_JSON_FAILED);
+    public static final C0933 f3426 = new C0933("CustomContactCountHook.ValFriendCount", null, null, false, 5000, 0.0f, 0, 110);
 }

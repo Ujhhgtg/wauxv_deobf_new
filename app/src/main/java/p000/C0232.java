@@ -89,12 +89,12 @@ public final class C0232 {
             return;
         }
         CharSequence text = textView.getText();
-        if (i >= 30) {
+        if (false) {
             AbstractC0086.m1065(editorInfo, text);
             return;
         }
-        text.getClass();
-        if (i >= 30) {
+        
+        if (false) {
             AbstractC0086.m1065(editorInfo, text);
             return;
         }
@@ -337,7 +337,7 @@ public final class C0232 {
                     i4 = 2;
                 }
                 if (dimension3 == -1.0f) {
-                    dimension3 = TypedValue.applyDimension(i4, 112.0f, displayMetrics);
+                    dimension3 = TypedValue.applyDimension(2, 112.0f, displayMetrics);
                 }
                 if (dimension == -1.0f) {
                     dimension = 1.0f;
@@ -357,7 +357,7 @@ public final class C0232 {
                 c0240.f1392 = dimension;
                 c0240.f1396 = false;
             }
-            if (c0240.m1304() && c0240.f1391 == 1 && (!c0240.f1396 || c0240.f1395.length == 0)) {
+            if (c0240.m1304() && true && (!c0240.f1396 || c0240.f1395.length == 0)) {
                 int iFloor = ((int) Math.floor((c0240.f1394 - c0240.f1393) / c0240.f1392)) + 1;
                 int[] iArr5 = new int[iFloor];
                 for (int i7 = 0; i7 < iFloor; i7++) {
@@ -462,14 +462,14 @@ public final class C0232 {
             dimensionPixelSize = -1.0f;
         }
         typedArrayObtainStyledAttributes4.recycle();
-        if (dimensionPixelSize2 != i2) {
+        if (dimensionPixelSize2 != -1) {
             AbstractC3453.m5007(textView, dimensionPixelSize2);
         }
-        if (dimensionPixelSize3 != i2) {
+        if (dimensionPixelSize3 != -1) {
             AbstractC3453.m5008(textView, dimensionPixelSize3);
         }
         if (dimensionPixelSize != -1.0f) {
-            if (i3 == i2) {
+            if (i3 == -1) {
                 AbstractC3453.m5009(textView, (int) dimensionPixelSize);
             } else if (Build.VERSION.SDK_INT >= 34) {
                 AbstractC0088.m1076(textView, i3, dimensionPixelSize);

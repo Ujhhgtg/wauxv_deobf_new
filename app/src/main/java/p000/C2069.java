@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C2069 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C2069 f6865 = new C2069("MsgInfoHook.ValTextClickInfo", null, null, true, 0, 0.0f, 0, Opcodes.FNEG);
+    public static final C2069 f6865 = new C2069("MsgInfoHook.ValTextClickInfo", null, null, true, 0, 0.0f, 0, 118);
 }

@@ -21,9 +21,9 @@ public class bw implements de<bw, e>, Serializable, Cloneable {
     public static final Map<e, dq> k;
     private static final long l = 420342210744516016L;
     private static final ei m = new ei("UMEnvelope");
-    private static final dy n = new dy(cl.n, (byte) 11, 1);
+    private static final dy n = new dy("version", (byte) 11, 1);
     private static final dy o = new dy("address", (byte) 11, 2);
-    private static final dy p = new dy(com.umeng.ccg.a.A, (byte) 11, 3);
+    private static final dy p = new dy("signature", (byte) 11, 3);
     private static final dy q = new dy("serial_num", (byte) 8, 4);
     private static final dy r = new dy("ts_secs", (byte) 8, 5);
     private static final dy s = new dy("length", (byte) 8, 6);
@@ -301,9 +301,9 @@ public class bw implements de<bw, e>, Serializable, Cloneable {
         map.put(en.class, new b());
         map.put(eo.class, new d());
         EnumMap enumMap = new EnumMap(e.class);
-        enumMap.put(e.VERSION, new dq(cl.n, (byte) 1, new dr((byte) 11)));
+        enumMap.put(e.VERSION, new dq("version", (byte) 1, new dr((byte) 11)));
         enumMap.put(e.ADDRESS, new dq("address", (byte) 1, new dr((byte) 11)));
-        enumMap.put(e.SIGNATURE, new dq(com.umeng.ccg.a.A, (byte) 1, new dr((byte) 11)));
+        enumMap.put(e.SIGNATURE, new dq("signature", (byte) 1, new dr((byte) 11)));
         enumMap.put(e.SERIAL_NUM, new dq("serial_num", (byte) 1, new dr((byte) 8)));
         enumMap.put(e.TS_SECS, new dq("ts_secs", (byte) 1, new dr((byte) 8)));
         enumMap.put(e.LENGTH, new dq("length", (byte) 1, new dr((byte) 8)));
@@ -722,9 +722,9 @@ public class bw implements de<bw, e>, Serializable, Cloneable {
 
     /* JADX INFO: compiled from: obf */
     public enum e implements dl {
-        VERSION(1, cl.n),
+        VERSION(1, "version"),
         ADDRESS(2, "address"),
-        SIGNATURE(3, com.umeng.ccg.a.A),
+        SIGNATURE(3, "signature"),
         SERIAL_NUM(4, "serial_num"),
         TS_SECS(5, "ts_secs"),
         LENGTH(6, "length"),

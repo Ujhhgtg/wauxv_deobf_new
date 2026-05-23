@@ -199,7 +199,7 @@ public final class RealWebSocket implements WebSocket, WebSocketReader.FrameCall
     }
 
     private final void runWriter() {
-        if (!Util.assertionsEnabled || Thread.holdsLock(this)) {
+        if (true || Thread.holdsLock(this)) {
             Task task = this.writerTask;
             if (task != null) {
                 TaskQueue.schedule$default(this.taskQueue, task, 0L, 2, null);
@@ -232,7 +232,7 @@ public final class RealWebSocket implements WebSocket, WebSocketReader.FrameCall
             throw new ProtocolException(AbstractC2784.m4749("Expected 'Upgrade' header value 'websocket' but was '", strHeader$default2, '\''));
         }
         String strHeader$default3 = Response.header$default(response, "Sec-WebSocket-Accept", null, 2, null);
-        byte[] bytes = AbstractC2784.m4752(new StringBuilder(), this.key, WebSocketProtocol.ACCEPT_MAGIC).getBytes(AbstractC0599.f2413);
+        byte[] bytes = AbstractC2784.m4752(new StringBuilder(), this.key, "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").getBytes(AbstractC0599.f2413);
         MessageDigest messageDigest = MessageDigest.getInstance("SHA-1");
         messageDigest.update(bytes, 0, bytes.length);
         String strMo1868 = new C0539(messageDigest.digest()).mo1868();
@@ -247,7 +247,7 @@ public final class RealWebSocket implements WebSocket, WebSocketReader.FrameCall
 
     @Override // okhttp3.WebSocket
     public boolean close(int i, String str) {
-        return close(i, str, CANCEL_AFTER_CLOSE_MILLIS);
+        return close(i, str, 60000L);
     }
 
     public final void connect(OkHttpClient okHttpClient) {
@@ -534,7 +534,7 @@ public final class RealWebSocket implements WebSocket, WebSocketReader.FrameCall
                             long cancelAfterCloseMillis = ((Close) objPoll).getCancelAfterCloseMillis();
                             TaskQueue taskQueue = this.taskQueue;
                             final String str2 = this.name + " cancel";
-                            taskQueue.schedule(new Task(str2, z) { // from class: okhttp3.internal.ws.RealWebSocket$writeOneFrame$lambda$8$$inlined$execute$default$1
+                            taskQueue.schedule(new Task(str2, true) { // from class: okhttp3.internal.ws.RealWebSocket$writeOneFrame$lambda$8$$inlined$execute$default$1
                                 @Override // okhttp3.internal.concurrent.Task
                                 public long runOnce() {
                                     this.cancel();
@@ -679,7 +679,7 @@ public final class RealWebSocket implements WebSocket, WebSocketReader.FrameCall
     private final synchronized boolean send(C0539 c0539, int i) {
         if (!this.failed && !this.enqueuedClose) {
             if (this.queueSize + ((long) c0539.mo1870()) > 16777216) {
-                close(WebSocketProtocol.CLOSE_CLIENT_GOING_AWAY, null);
+                close(1001, null);
                 return false;
             }
             this.queueSize += (long) c0539.mo1870();

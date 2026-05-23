@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤝᲇᲈᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -29,27 +28,27 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
         switch (this.f1521) {
             case 0:
                 C0303 c0303 = (C0303) mo1197(interfaceC0842, interfaceC0883);
-                C3497 c3497 = C3497.f10997;
-                c0303.mo1198(c3497);
-                return c3497;
+                Unit unit = Unit.INSTANCE;
+                c0303.mo1198(unit);
+                return unit;
             case 1:
                 C0303 c0304 = (C0303) mo1197(interfaceC0842, interfaceC0883);
-                C3497 c3498 = C3497.f10997;
+                Unit c3498 = Unit.INSTANCE;
                 c0304.mo1198(c3498);
                 return c3498;
             case 2:
                 C0303 c0305 = (C0303) mo1197(interfaceC0842, interfaceC0883);
-                C3497 c3499 = C3497.f10997;
+                Unit c3499 = Unit.INSTANCE;
                 c0305.mo1198(c3499);
                 return c3499;
             case 3:
                 C0303 c0306 = (C0303) mo1197(interfaceC0842, interfaceC0883);
-                C3497 c34910 = C3497.f10997;
+                Unit c34910 = Unit.INSTANCE;
                 c0306.mo1198(c34910);
                 return c34910;
             default:
                 C0303 c0307 = (C0303) mo1197(interfaceC0842, interfaceC0883);
-                C3497 c34911 = C3497.f10997;
+                Unit c34911 = Unit.INSTANCE;
                 c0307.mo1198(c34911);
                 return c34911;
         }
@@ -76,7 +75,7 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final Object mo1198(Object obj) throws Throwable {
         int i = this.f1521;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         switch (i) {
             case 0:
                 AbstractC0743.m2188(obj);
@@ -94,10 +93,10 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
                                     int length = fileArrListFiles.length;
                                     int i2 = 0;
                                     while (true) {
-                                        if (i2 < length) {
-                                            if (!AbstractC1270.m2977(fileArrListFiles[i2])) {
+                                        if (0 < length) {
+                                            if (!AbstractC1270.m2977(fileArrListFiles[0])) {
                                             }
-                                            i2++;
+                                            0++;
                                             break;
                                         }
                                     }
@@ -123,17 +122,17 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
                 break;
             case 1:
                 AbstractC0743.m2188(obj);
-                C0860.f3275.getClass();
+                
                 C0860.m2381();
                 break;
             case 2:
                 AbstractC0743.m2188(obj);
-                C0860.f3275.getClass();
+                
                 C0860.m2381();
                 break;
             case 3:
                 AbstractC0743.m2188(obj);
-                C0860.f3275.getClass();
+                
                 C0860.m2381();
                 break;
             default:
@@ -142,8 +141,8 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
                 String[] strArr2 = AbstractC1574.f5469;
                 String str = "emoji";
                 ArrayList arrayList2 = C2321.f7459;
-                c2321.getClass();
-                File[] fileArrListFiles2 = new File(C2321.f7453, str).listFiles();
+                
+                File[] fileArrListFiles2 = new File(C2321.f7453, "emoji").listFiles();
                 if (fileArrListFiles2 != null) {
                     for (File file2 : fileArrListFiles2) {
                         if (file2.isFile()) {
@@ -155,19 +154,19 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
                             if (listM2212.contains(lowerCase)) {
                                 C1170 c1170 = C1170.f4301;
                                 String absolutePath = file2.getAbsolutePath();
-                                c1170.getClass();
+                                
                                 String strM2762 = C1170.m2762(absolutePath);
-                                C1164.f4291.getClass();
+                                
                                 Object objM2761 = C1164.m2761(strM2762);
-                                C1162.f4289.getClass();
-                                AbstractC1574.m3315(C1161.f4288).invoke(objM2761, null, Boolean.TRUE);
-                                arrayList2.add(AbstractC1574.m3314(C2318.f7449).newInstance(objM2761, 2, "", 0));
+                                
+                                AbstractC1574.dexToMethod(C1161.f4288).invoke(objM2761, null, Boolean.TRUE);
+                                arrayList2.add(AbstractC1574.dexToCtor(C2318.f7449).newInstance(objM2761, 2, "", 0));
                             }
                         }
                     }
                 }
                 break;
         }
-        return c3497;
+        return unit;
     }
 }

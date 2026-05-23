@@ -2,7 +2,7 @@ package p000;
 
 import java.util.Collections;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲁᲈᲀᤞᤝ, reason: contains not printable characters */
@@ -49,7 +49,7 @@ public final class C0622 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C0611.f2440, dexKitBridge, new C0605(3));
+        AbstractC1574.findMethod(C0611.f2440, dexKitBridge, new C0605(3));
     }
 
     @Override // p000.InterfaceC1601
@@ -58,21 +58,21 @@ public final class C0622 extends AbstractC2867 implements InterfaceC1582, Interf
         if (mo3264()) {
             String[] strArr = AbstractC1574.f5469;
             if (str.startsWith("select unReadCount, status, isSend, conversationTime, username, content, msgType, flag, digest, digestUser, attrflag, editingMsg, atCount, unReadMuteCount, UnReadInvite, hasTodo, hbMarkRed, remitMarkRed, parentRef from rconversation where ")) {
-                C1486.f5275.getClass();
+                
                 C1484 c1484 = (C1484) AbstractC0744.m2193(C0618.f2447.m2538(), C1486.m3243());
                 if ((c1484 == null && (c1484 = (C1484) AbstractC0744.m2192(C1486.m3243())) == null) || AbstractC2849.m4855(c1484.f5259, EnumC1485.f5265.f5273)) {
                     return;
                 }
-                c1563.getClass();
+                
                 new C0408(1, 6, c1563).m1608("select unReadCount, status, isSend, conversationTime, username, content, msgType, flag, digest, digestUser, attrflag, editingMsg, atCount, unReadMuteCount, UnReadInvite, hasTodo, hbMarkRed, remitMarkRed, parentRef from rconversation " + c1484.m3242());
             }
             if (str.startsWith("select unReadCount, status, isSend, conversationTime, username, content, msgType,flag, digest, digestUser, attrflag, editingMsg, atCount, unReadMuteCount, UnReadInvite, editingQuoteMsgId, hasTodo, hbMarkRed, remitMarkRed, hasSpecialFollow, parentRef from rconversation where ")) {
-                C1486.f5275.getClass();
+                
                 C1484 c1485 = (C1484) AbstractC0744.m2193(C0618.f2447.m2538(), C1486.m3243());
                 if ((c1485 == null && (c1485 = (C1484) AbstractC0744.m2192(C1486.m3243())) == null) || AbstractC2849.m4855(c1485.f5259, EnumC1485.f5265.f5273)) {
                     return;
                 }
-                c1563.getClass();
+                
                 new C0408(1, 6, c1563).m1608("select unReadCount, status, isSend, conversationTime, username, content, msgType,flag, digest, digestUser, attrflag, editingMsg, atCount, unReadMuteCount, UnReadInvite, editingQuoteMsgId, hasTodo, hbMarkRed, remitMarkRed, hasSpecialFollow, parentRef from rconversation " + c1485.m3242());
             }
         }
@@ -81,7 +81,7 @@ public final class C0622 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C0611.f2440));
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C0611.f2440));
         C0622 c0622 = f2452;
         C3689 c3689M4172 = C2309.m4172(c0622, listSingletonList);
         c0622.m3262(c3689M4172, new C0605(4));

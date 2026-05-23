@@ -1,6 +1,5 @@
 package com.highcapable.kavaref.extension;
 
-import com.highcapable.kavaref.extension.TypeRef;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import p000.AbstractC0743;
@@ -32,7 +31,7 @@ public abstract class TypeRef<T> {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i) {
+                switch (0) {
                     case 0:
                         return TypeRef.type_delegate$lambda$0(this.f10930);
                     default:
@@ -52,7 +51,7 @@ public abstract class TypeRef<T> {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i2) {
+                switch (1) {
                     case 0:
                         return TypeRef.type_delegate$lambda$0(this.f10930);
                     default:
@@ -72,7 +71,7 @@ public abstract class TypeRef<T> {
         Type genericSuperclass = typeRef.getClass().getGenericSuperclass();
         Class<TypeRef> cls = TypeRef.class;
         if (!(genericSuperclass instanceof ParameterizedType)) {
-            Class<TypeRef> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(cls));
+            Class<TypeRef> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(TypeRef.class));
             if (AbstractC2207.m4087(genericSuperclass, clsM2183 != null ? clsM2183 : TypeRef.class)) {
                 throw new IllegalStateException("TypeRef must be created with a type argument: object : TypeRef<...>() {}.");
             }
@@ -80,7 +79,7 @@ public abstract class TypeRef<T> {
         }
         ParameterizedType parameterizedType = (ParameterizedType) genericSuperclass;
         Type rawType = parameterizedType.getRawType();
-        Class<TypeRef> clsM2184 = AbstractC0743.m2183(AbstractC2519.m4527(cls));
+        Class<TypeRef> clsM2184 = AbstractC0743.m2183(AbstractC2519.classToKClass(TypeRef.class));
         if (!AbstractC2207.m4087(rawType, clsM2184 != null ? clsM2184 : TypeRef.class)) {
             throw new IllegalStateException("Must only create direct subclasses of TypeRef.");
         }

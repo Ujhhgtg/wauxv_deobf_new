@@ -60,7 +60,7 @@ final class FieldWriterMap extends FieldWriterObject {
             return objectWriter;
         }
         long j = this.features;
-        ObjectWriterImplMap objectWriterImplMap = new ObjectWriterImplMap(this.keyType, cls2, this.format, cls, this.contentAsFieldType, j | Long.MIN_VALUE);
+        ObjectWriterImplMap objectWriterImplMap = new ObjectWriterImplMap(this.keyType, cls2, this.format, cls, this.contentAsFieldType, j | -9223372036854775808L);
         this.mapWriter = objectWriterImplMap;
         return objectWriterImplMap;
     }

@@ -174,7 +174,7 @@ public class C1917 extends Drawable implements InterfaceC2688 {
                 if (!c1916.f6314.m4690(m3712()) && !path.isConvex() && i4 < 29) {
                     canvas.save();
                     double d = 0;
-                    canvas.translate((int) (Math.sin(Math.toRadians(d)) * ((double) this.f6332.f6329)), (int) (Math.cos(Math.toRadians(d)) * ((double) this.f6332.f6329)));
+                    canvas.translate((int) (Math.sin(Math.toRadians(0.0)) * ((double) this.f6332.f6329)), (int) (Math.cos(Math.toRadians(0.0)) * ((double) this.f6332.f6329)));
                     if (!this.f6353) {
                         RectF rectF2 = this.f6352;
                         iWidth = (int) (rectF2.width() - getBounds().width());
@@ -199,7 +199,7 @@ public class C1917 extends Drawable implements InterfaceC2688 {
             } else {
                 canvas.save();
                 double d2 = 0;
-                canvas.translate((int) (Math.sin(Math.toRadians(d2)) * ((double) this.f6332.f6329)), (int) (Math.cos(Math.toRadians(d2)) * ((double) this.f6332.f6329)));
+                canvas.translate((int) (Math.sin(Math.toRadians(0.0)) * ((double) this.f6332.f6329)), (int) (Math.cos(Math.toRadians(0.0)) * ((double) this.f6332.f6329)));
                 if (!this.f6353) {
                     RectF rectF3 = this.f6352;
                     iWidth = (int) (rectF3.width() - getBounds().width());
@@ -306,7 +306,7 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         if (colorStateList != null && colorStateList.isStateful()) {
             return true;
         }
-        this.f6332.getClass();
+        
         ColorStateList colorStateList2 = this.f6332.f6317;
         if (colorStateList2 != null && colorStateList2.isStateful()) {
             return true;
@@ -347,7 +347,7 @@ public class C1917 extends Drawable implements InterfaceC2688 {
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f6332.getClass();
+        
         super.invalidateSelf();
     }
 
@@ -437,8 +437,8 @@ public class C1917 extends Drawable implements InterfaceC2688 {
         }
         if (this.f6353) {
             double d = 0;
-            int iSin = (int) (Math.sin(Math.toRadians(d)) * ((double) this.f6332.f6329));
-            int iCos = (int) (Math.cos(Math.toRadians(d)) * ((double) this.f6332.f6329));
+            int iSin = (int) (Math.sin(Math.toRadians(0.0)) * ((double) this.f6332.f6329));
+            int iCos = (int) (Math.cos(Math.toRadians(0.0)) * ((double) this.f6332.f6329));
             canvas.translate(-iSin, -iCos);
             canvas.drawPath(path, f6331);
             canvas.translate(iSin, iCos);
@@ -562,9 +562,9 @@ public class C1917 extends Drawable implements InterfaceC2688 {
             porterDuffColorFilter = new PorterDuffColorFilter(m3709(colorStateList.getColorForState(getState(), 0)), mode);
         }
         this.f6350 = porterDuffColorFilter;
-        this.f6332.getClass();
+        
         this.f6351 = null;
-        this.f6332.getClass();
+        
         return (Objects.equals(porterDuffColorFilter2, this.f6350) && Objects.equals(porterDuffColorFilter3, this.f6351)) ? false : true;
     }
 

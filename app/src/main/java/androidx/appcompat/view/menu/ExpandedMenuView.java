@@ -17,12 +17,12 @@ import p000.MenuItemC1946;
 public final class ExpandedMenuView extends ListView implements InterfaceC1943, InterfaceC1957, AdapterView.OnItemClickListener {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public static final int[] f12 = {R.attr.background, R.attr.divider};
+    public static final int[] f12 = {16842964, 16843049};
 
     public ExpandedMenuView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         setOnItemClickListener(this);
-        C0243 c0243M1307 = C0243.m1307(context, attributeSet, f12, R.attr.listViewStyle);
+        C0243 c0243M1307 = C0243.m1307(context, attributeSet, f12, 16842868);
         TypedArray typedArray = (TypedArray) c0243M1307.f1404;
         if (typedArray.hasValue(0)) {
             setBackgroundDrawable(c0243M1307.m1320(0));

@@ -342,7 +342,7 @@ public abstract class AbstractC3436 implements Cloneable {
         C0264 c0264M4945 = m4945();
         SparseIntArray sparseIntArray = new SparseIntArray();
         int size = arrayList.size();
-        m4953().getClass();
+        
         int i3 = 0;
         while (i3 < size) {
             C3444 c3446 = (C3444) arrayList.get(i3);
@@ -428,7 +428,7 @@ public abstract class AbstractC3436 implements Cloneable {
         if (sparseIntArray.size() != 0) {
             for (int i8 = 0; i8 < sparseIntArray.size(); i8++) {
                 C3432 c3434 = (C3432) c0264M4945.get((Animator) this.f10840.get(sparseIntArray.keyAt(i8)));
-                c3434.f10814.setStartDelay(c3434.f10814.getStartDelay() + (((long) sparseIntArray.valueAt(i8)) - Long.MAX_VALUE));
+                c3434.f10814.setStartDelay(c3434.f10814.getStartDelay() + (((long) sparseIntArray.valueAt(i8)) - 9223372036854775807L));
             }
         }
     }
@@ -563,10 +563,10 @@ public abstract class AbstractC3436 implements Cloneable {
         for (int i = 0; i < size; i++) {
             InterfaceC3435 interfaceC3435 = interfaceC3435Arr2[i];
             switch (c2373.f7629) {
-                case Opcodes.DLOAD /* 24 */:
+                case 24 /* 24 */:
                     interfaceC3435.mo2950(abstractC3436);
                     break;
-                case Opcodes.ALOAD /* 25 */:
+                case 25 /* 25 */:
                     interfaceC3435.mo2012(abstractC3436);
                     break;
                 case 26:

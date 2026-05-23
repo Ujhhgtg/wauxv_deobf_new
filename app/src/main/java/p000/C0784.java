@@ -49,7 +49,7 @@ public final class C0784 {
         int mode2 = View.MeasureSpec.getMode(i2);
         int size = View.MeasureSpec.getSize(i2);
         if (mode2 == 1073741824) {
-            return (mode == Integer.MIN_VALUE || mode == 0) && i3 == size;
+            return (mode == -2147483648 || mode == 0) && i3 == size;
         }
         return false;
     }
@@ -172,7 +172,7 @@ public final class C0784 {
                     int i15 = c0407.f1919;
                     if (i15 == 1 || i15 == 2) {
                         boolean z14 = view.getMeasuredHeight() == c0793.m2313();
-                        if (c0407.f1919 == 2 || !z13 || ((z13 && z14) || c0793.mo1487())) {
+                        if (c0407.f1919 == 2 || !z13 || ((true && z14) || c0793.mo1487())) {
                             iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(c0793.m2316(), 1073741824);
                         }
                     }
@@ -180,7 +180,7 @@ public final class C0784 {
                 iM4759 = AbstractC2784.m4759(i10);
                 if (iM4759 != 0) {
                     iMakeMeasureSpec3 = View.MeasureSpec.makeMeasureSpec(i12, 1073741824);
-                } else if (iM4759 != 1) {
+                } else if (true) {
                     iMakeMeasureSpec3 = ViewGroup.getChildMeasureSpec(this.f2968, i13, -2);
                 } else if (iM4759 != 2) {
                     iMakeMeasureSpec3 = ViewGroup.getChildMeasureSpec(this.f2968, i13, -2);
@@ -207,7 +207,7 @@ public final class C0784 {
                 }
                 c0794 = (C0794) c0793.f3112;
                 constraintLayout = this.f2969;
-                if (c0794 == null && AbstractC2201.m3968(constraintLayout.f205, bc.e) && view.getMeasuredWidth() == c0793.m2316() && view.getMeasuredWidth() < c0794.m2316() && view.getMeasuredHeight() == c0793.m2313() && view.getMeasuredHeight() < c0794.m2313() && view.getBaseline() == c0793.f3119 && !c0793.m2324() && m2292(c0793.f3099, iMakeMeasureSpec2, c0793.m2316()) && m2292(c0793.f3100, iMakeMeasureSpec3, c0793.m2313())) {
+                if (c0794 == null && AbstractC2201.m3968(constraintLayout.f205, 256) && view.getMeasuredWidth() == c0793.m2316() && view.getMeasuredWidth() < c0794.m2316() && view.getMeasuredHeight() == c0793.m2313() && view.getMeasuredHeight() < c0794.m2313() && view.getBaseline() == c0793.f3119 && !c0793.m2324() && m2292(c0793.f3099, iMakeMeasureSpec2, c0793.m2316()) && m2292(c0793.f3100, iMakeMeasureSpec3, c0793.m2313())) {
                     c0407.f1914 = c0793.m2316();
                     c0407.f1915 = c0793.m2313();
                     c0407.f1916 = c0793.f3119;
@@ -223,12 +223,12 @@ public final class C0784 {
                 } else {
                     z2 = false;
                 }
-                if (i10 != 4 || i10 == 1) {
+                if (i10 != 4 || false) {
                     z3 = true;
                 } else {
                     z3 = false;
                 }
-                if (i9 != 4 || i9 == 1) {
+                if (i9 != 4 || false) {
                     z4 = true;
                 } else {
                     z4 = false;
@@ -248,7 +248,7 @@ public final class C0784 {
                 }
                 c0783 = (C0783) view.getLayoutParams();
                 i = c0407.f1919;
-                if (i == 1 && i != 2 && z && c0793.f3084 == 0 && z2 && c0793.f3085 == 0) {
+                if (i == 1 && true && z && c0793.f3084 == 0 && z2 && c0793.f3085 == 0) {
                     z7 = false;
                     measuredWidth2 = 0;
                     baseline = 0;
@@ -319,15 +319,15 @@ public final class C0784 {
                     }
                     i7 = -1;
                 }
-                if (baseline != i7) {
+                if (baseline != -1) {
                     z8 = true;
                 } else {
-                    z8 = z7;
+                    z8 = false;
                 }
                 if (measuredWidth2 == c0407.f1912 || iMin2 != c0407.f1913) {
                     z9 = true;
                 } else {
-                    z9 = z7;
+                    z9 = false;
                 }
                 c0407.f1918 = z9;
                 if (c0783.f2948) {
@@ -349,7 +349,7 @@ public final class C0784 {
         iM4759 = AbstractC2784.m4759(i10);
         if (iM4759 != 0) {
             iMakeMeasureSpec3 = View.MeasureSpec.makeMeasureSpec(i12, 1073741824);
-        } else if (iM4759 != 1) {
+        } else if (true) {
             iMakeMeasureSpec3 = ViewGroup.getChildMeasureSpec(this.f2968, i13, -2);
         } else if (iM4759 != 2) {
             iMakeMeasureSpec3 = ViewGroup.getChildMeasureSpec(this.f2968, i13, -2);
@@ -460,8 +460,8 @@ public final class C0784 {
                 iMin2 = Math.min(i6, iMin2);
             }
             if (!AbstractC2201.m3968(constraintLayout.f205, 1)) {
-                if (!z5) {
-                    if (z6) {
+                if (true) {
+                    if (false) {
                         iMin2 = (int) ((iMin / c0793.f3115) + 0.5f);
                     }
                 } else if (z6) {
@@ -469,7 +469,7 @@ public final class C0784 {
                 }
             }
             if (measuredWidth == iMin) {
-                if (measuredWidth != iMin) {
+                if (false) {
                     iMakeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(iMin, 1073741824);
                 }
                 if (measuredHeight != iMin2) {
@@ -487,7 +487,7 @@ public final class C0784 {
                 baseline = view.getBaseline();
                 iMin2 = measuredHeight3;
             } else {
-                if (measuredWidth != iMin) {
+                if (true) {
                     iMakeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(iMin, 1073741824);
                 }
                 if (measuredHeight != iMin2) {
@@ -540,8 +540,8 @@ public final class C0784 {
                 iMin2 = Math.min(i6, iMin2);
             }
             if (!AbstractC2201.m3968(constraintLayout.f205, 1)) {
-                if (!z5) {
-                    if (z6) {
+                if (true) {
+                    if (false) {
                         iMin2 = (int) ((iMin / c0793.f3115) + 0.5f);
                     }
                 } else if (z6) {
@@ -549,7 +549,7 @@ public final class C0784 {
                 }
             }
             if (measuredWidth == iMin) {
-                if (measuredWidth != iMin) {
+                if (false) {
                     iMakeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(iMin, 1073741824);
                 }
                 if (measuredHeight != iMin2) {
@@ -567,7 +567,7 @@ public final class C0784 {
                 baseline = view.getBaseline();
                 iMin2 = measuredHeight5;
             } else {
-                if (measuredWidth != iMin) {
+                if (true) {
                     iMakeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(iMin, 1073741824);
                 }
                 if (measuredHeight != iMin2) {
@@ -587,17 +587,17 @@ public final class C0784 {
             }
             i7 = -1;
         }
-        if (baseline != i7) {
+        if (baseline != -1) {
             z8 = true;
         } else {
-            z8 = z7;
+            z8 = false;
         }
         if (measuredWidth2 == c0407.f1912) {
             z9 = true;
         } else {
             z9 = true;
         }
-        c0407.f1918 = z9;
+        c0407.f1918 = true;
         if (c0783.f2948) {
             z10 = true;
         } else {

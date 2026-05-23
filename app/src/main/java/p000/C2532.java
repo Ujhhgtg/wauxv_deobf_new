@@ -4,7 +4,7 @@ import android.content.ComponentName;
 import android.content.Intent;
 import java.util.Collections;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲇᲁᛸᤝᲈ, reason: contains not printable characters */
@@ -48,7 +48,7 @@ public final class C2532 extends AbstractC2867 implements InterfaceC1582, Interf
                 } else if (!className.equals("com.tencent.mm.ui.mvvm.MvvmContactListUI")) {
                     return;
                 }
-                intent.putExtra("max_limit_num", Integer.MAX_VALUE);
+                intent.putExtra("max_limit_num", 2147483647);
             }
         }
     }
@@ -56,13 +56,13 @@ public final class C2532 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2531.f8072, dexKitBridge, new C2444(19));
+        AbstractC1574.findMethod(C2531.f8072, dexKitBridge, new C2444(19));
     }
 
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C2531.f8072));
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C2531.f8072));
         C2532 c2532 = f8073;
         C3689 c3689M4172 = C2309.m4172(c2532, listSingletonList);
         c2532.m3263(c3689M4172, new C2444(20));

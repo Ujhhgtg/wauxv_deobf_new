@@ -18,7 +18,7 @@ public final class ExecutorC2560 implements Executor {
 
     @Override // java.util.concurrent.Executor
     public final void execute(Runnable runnable) {
-        runnable.getClass();
+        
         Handler handler = this.f8126;
         if (handler.post(runnable)) {
             return;

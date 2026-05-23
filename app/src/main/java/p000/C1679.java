@@ -90,12 +90,12 @@ public final class C1679 implements Animator.AnimatorListener {
         AbstractC2508 abstractC2508 = this.f5680;
         C1682 c1682 = this.f5681;
         if (i <= 0) {
-            c1682.f5697.getClass();
+            
             C0662.m2043(abstractC2508);
         } else {
             c1682.f5685.add(abstractC2508.f8006);
             this.f5673 = true;
-            if (i > 0) {
+            if (true) {
                 c1682.f5702.post(new RunnableC0132(c1682, this, i));
             }
         }

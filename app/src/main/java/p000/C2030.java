@@ -19,19 +19,19 @@ public final class C2030 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2028.f6785, dexKitBridge, new C1884(16));
-        AbstractC1574.m3295(C2029.f6786, dexKitBridge, new C1884(17));
+        AbstractC1574.findMethod(C2028.f6785, dexKitBridge, new C1884(16));
+        AbstractC1574.findMethod(C2029.f6786, dexKitBridge, new C1884(17));
     }
 
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C2028.f6785));
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C2028.f6785));
         C2030 c2030 = f6787;
         C3689 c3689M4172 = C2309.m4172(c2030, listSingletonList);
         c3689M4172.m5351(new C1884(7));
         c3689M4172.m5352();
-        C3689 c3689M4173 = C2309.m4172(c2030, Collections.singletonList(AbstractC1574.m3315(C2029.f6786)));
+        C3689 c3689M4173 = C2309.m4172(c2030, Collections.singletonList(AbstractC1574.dexToMethod(C2029.f6786)));
         c3689M4173.m5350(new C1884(22));
         c3689M4173.m5352();
     }

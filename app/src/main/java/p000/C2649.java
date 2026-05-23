@@ -108,7 +108,7 @@ public final class C2649 extends C0539 {
             char[] cArr2 = AbstractC0743.f2837;
             cArr[i] = cArr2[(b >> 4) & 15];
             i += 2;
-            cArr[i2] = cArr2[b & ek.m];
+            cArr[i2] = cArr2[b & 15];
         }
         return new String(cArr);
     }

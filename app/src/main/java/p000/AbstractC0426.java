@@ -16,10 +16,10 @@ public abstract class AbstractC0426 implements InterfaceC3427 {
         }
         InterfaceC0424 interfaceC0424 = ComponentCallbacks2C0020.m614(context).f537;
         Bitmap bitmap = (Bitmap) interfaceC2568.get();
-        if (i == Integer.MIN_VALUE) {
+        if (i == -2147483648) {
             i = bitmap.getWidth();
         }
-        if (i2 == Integer.MIN_VALUE) {
+        if (i2 == -2147483648) {
             i2 = bitmap.getHeight();
         }
         Bitmap bitmapMo1631 = mo1631(interfaceC0424, bitmap, i, i2);

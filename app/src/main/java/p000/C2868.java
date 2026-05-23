@@ -37,7 +37,7 @@ public final class C2868 extends AbstractC1649 {
     @Override // p000.AbstractC1649
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final void mo3046(InterfaceC1648 interfaceC1648) {
-        switch (this.f9189) {
+        switch (0) {
             case 0:
                 interfaceC1648.mo1588(this);
                 break;
@@ -50,7 +50,7 @@ public final class C2868 extends AbstractC1649 {
     @Override // p000.AbstractC1649
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final InterfaceC3454 mo3047() {
-        switch (this.f9189) {
+        switch (0) {
             case 0:
                 return C2819.f9030;
             default:
@@ -61,7 +61,7 @@ public final class C2868 extends AbstractC1649 {
     @Override // p000.AbstractC1649
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final String mo2413() {
-        switch (this.f9189) {
+        switch (0) {
             case 0:
                 return ((C1660) this.f9190).toString();
             default:
@@ -72,7 +72,7 @@ public final class C2868 extends AbstractC1649 {
     @Override // p000.AbstractC1649
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final AbstractC1649 mo3048(C3448 c3448) {
-        switch (this.f9189) {
+        switch (0) {
             case 0:
                 throw new UnsupportedOperationException("unsupported");
             default:

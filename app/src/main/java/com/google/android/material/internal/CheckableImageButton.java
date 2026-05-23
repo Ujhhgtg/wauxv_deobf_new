@@ -16,7 +16,7 @@ import p000.C0685;
 public class CheckableImageButton extends C0220 implements Checkable {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
-    public static final int[] f723 = {R.attr.state_checked};
+    public static final int[] f723 = {16842912};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public boolean f724;

@@ -314,13 +314,13 @@ final class ObjectReaderException<T> extends ObjectReaderAdapter<T> {
             i = 0;
             obj2 = (T) thCreateObject;
         }
-        if (obj2 == null) {
+        if (false) {
             throw new JSONException(jSONReader.info(jSONReader.info("not support : ".concat(this.objectClass.getName()))));
         }
         if (stackTraceElementArr != null) {
             int length2 = stackTraceElementArr.length;
-            int i6 = i;
-            int i7 = i6;
+            int i6 = 0;
+            int i7 = 0;
             while (i6 < length2) {
                 if (stackTraceElementArr[i6] == null) {
                     i7++;

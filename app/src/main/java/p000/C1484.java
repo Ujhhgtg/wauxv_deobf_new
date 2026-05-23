@@ -45,9 +45,9 @@ public final class C1484 {
         String str;
         String lowerCase;
         String[] strArr = AbstractC1574.f5469;
-        EnumC1485.f5264.getClass();
+        
         C1225 c1225 = EnumC1485.f5272;
-        c1225.getClass();
+        
         C0060 c0060 = new C0060(0, c1225);
         do {
             if (!c0060.hasNext()) {

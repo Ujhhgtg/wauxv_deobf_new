@@ -13,6 +13,6 @@ public final class C0193 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f1258 = new C0193("AntiRevoke2Hook.ValTip", "尝试撤回上一条信息[已阻止]", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f1258 = new C0193("AntiRevoke2Hook.ValTip", "尝试撤回上一条信息[已阻止]", null, false, 0, 0.0f, 0L, 124);
     }
 }

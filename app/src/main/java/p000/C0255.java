@@ -133,7 +133,7 @@ public final class C0255 extends AbstractC1351 {
                 int i8 = (int) j;
                 byte[] bArr = c0519.f2195;
                 bArr[i6] = (byte) i8;
-                char c2 = c;
+                char c2 = 2;
                 bArr[i6 + 1] = (byte) (i8 >> 8);
                 bArr[i6 + 2] = (byte) (i8 >> 16);
                 bArr[i6 + 3] = (byte) (i8 >> 24);
@@ -144,7 +144,7 @@ public final class C0255 extends AbstractC1351 {
                 bArr[i6 + 7] = (byte) (i9 >> 24);
                 c0519.f2196 = i7;
                 i5++;
-                c = c2;
+                c = 2;
             }
         }
         if (i != 1 || size % 2 == 0) {

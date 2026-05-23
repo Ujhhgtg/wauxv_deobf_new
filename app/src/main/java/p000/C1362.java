@@ -65,9 +65,8 @@ public final class C1362 extends AbstractC2867 implements InterfaceC1590 {
     public final void mo1691(Activity activity, ViewGroup viewGroup, Object obj) {
         if (mo3264()) {
             ViewParent parent = viewGroup.getParent();
-            "null cannot be cast to non-null type android.view.ViewGroup";
             ViewGroup viewGroup2 = (ViewGroup) parent;
-            f4862.getClass();
+            
             C0542 c0542 = new C0542(viewGroup2, (List) f4865.getValue(), 11, false);
             Context context = viewGroup2.getContext();
             C1046 c1046 = new C1046(context);

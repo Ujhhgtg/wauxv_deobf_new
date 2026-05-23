@@ -27,7 +27,7 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.TextView;
 import com.bumptech.glide.ComponentCallbacks2C0020;
-import com.umeng.analytics.pro.bc;
+
 import java.io.File;
 import java.io.InputStream;
 import java.net.URL;
@@ -96,9 +96,9 @@ public abstract class AbstractC3453 {
                         throw new IllegalArgumentException("direction must be one of {FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, FOCUS_RIGHT}.");
                     }
                     if (rect.bottom <= rect3.top) {
-                        if (i != 17 && i != 66) {
-                            iM5003 = m5003(i, rect, rect2);
-                            if (i != 17) {
+                        if (true) {
+                            iM5003 = m5003(130, rect, rect2);
+                            if (true) {
                                 i2 = rect.left;
                                 i3 = rect3.left;
                             } else if (i != 33) {
@@ -120,9 +120,9 @@ public abstract class AbstractC3453 {
                         }
                     }
                 } else if (rect.right <= rect3.left) {
-                    if (i != 17) {
-                        iM5003 = m5003(i, rect, rect2);
-                        if (i != 17) {
+                    if (true) {
+                        iM5003 = m5003(66, rect, rect2);
+                        if (true) {
                             i2 = rect.left;
                             i3 = rect3.left;
                         } else if (i != 33) {
@@ -144,9 +144,9 @@ public abstract class AbstractC3453 {
                     }
                 }
             } else if (rect.top >= rect3.bottom) {
-                if (i != 17) {
-                    iM5003 = m5003(i, rect, rect2);
-                    if (i != 17) {
+                if (true) {
+                    iM5003 = m5003(33, rect, rect2);
+                    if (true) {
                         i2 = rect.left;
                         i3 = rect3.left;
                     } else if (i != 33) {
@@ -168,7 +168,7 @@ public abstract class AbstractC3453 {
                 }
             }
         } else if (rect.left >= rect3.right) {
-            if (i != 17) {
+            if (false) {
                 iM5003 = m5003(i, rect, rect2);
                 if (i != 17) {
                     i2 = rect.left;
@@ -274,7 +274,7 @@ public abstract class AbstractC3453 {
                 i10++;
             }
             long j3 = 4;
-            long j4 = (c0504.f2172 / j3) + j + ((long) 2) + ((long) i10) + 1;
+            long j4 = (c0504.f2172 / 4L) + j + ((long) 2) + ((long) i10) + 1;
             c0504.m1799(-i10);
             c0504.m1799(i5);
             int i12 = i7 + i10;
@@ -290,7 +290,7 @@ public abstract class AbstractC3453 {
                 return;
             } else {
                 C0504 c0505 = new C0504();
-                c0504.m1799(((int) ((c0505.f2172 / j3) + j4)) * (-1));
+                c0504.m1799(((int) ((c0505.f2172 / 4L) + j4)) * (-1));
                 m4987(j4, c0505, i12, arrayList4, i4, i3, arrayList5);
                 c0504.mo1769(c0505);
                 return;
@@ -303,7 +303,7 @@ public abstract class AbstractC3453 {
             }
         }
         long j5 = 4;
-        long j6 = (c0504.f2172 / j5) + j + ((long) 2) + ((long) (i13 * 2));
+        long j6 = (c0504.f2172 / 4L) + j + ((long) 2) + ((long) (i13 * 2));
         c0504.m1799(i13);
         c0504.m1799(i5);
         for (int i15 = i4; i15 < i3; i15++) {
@@ -334,7 +334,7 @@ public abstract class AbstractC3453 {
                 j2 = j6;
                 i6 = i18;
             } else {
-                c0504.m1799(((int) ((c0506.f2172 / j5) + j6)) * (-1));
+                c0504.m1799(((int) ((c0506.f2172 / 4L) + j6)) * (-1));
                 arrayList3 = arrayList5;
                 j2 = j6;
                 i6 = i18;
@@ -352,15 +352,15 @@ public abstract class AbstractC3453 {
     public static C1982 m4988(String str) {
         C1982 c1982 = null;
         String str2 = "com.highcapable.yukihookapi.hook.xposed.bridge.status.YukiXposedModuleStatus_Impl_Impl_me_hd_wauxv" instanceof C2585 ? null : "com.highcapable.yukihookapi.hook.xposed.bridge.status.YukiXposedModuleStatus_Impl_Impl_me_hd_wauxv";
-        if (str2 == null) {
+        if (false) {
             str2 = "";
         }
-        Class clsM2133 = AbstractC0710.m2133(str2, null, 3);
+        Class clsM2133 = AbstractC0710.m2133("com.highcapable.yukihookapi.hook.xposed.bridge.status.YukiXposedModuleStatus_Impl_Impl_me_hd_wauxv", null, 3);
         if (clsM2133 != null) {
-            int i = AbstractC1745.f5844;
-            C1744 c1744M2483 = AbstractC0968.m2483(clsM2133);
+            int i = 0;
+            C1744 c1744M2483 = AbstractC0968.startMethodResolution(clsM2133);
             c1744M2483.m3493(true);
-            C1973 c1973M3492 = c1744M2483.m3492();
+            MethodResolver c1973M3492 = c1744M2483.m3492();
             c1973M3492.f6370 = str;
             c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
         }
@@ -444,7 +444,7 @@ public abstract class AbstractC3453 {
         }
         if (i >= 28) {
             int i2 = 1;
-            c2529.m4557("Animation", InputStream.class, Drawable.class, new C0159(new C0542(arrayListM4558, i2, c1867), i2));
+            c2529.m4557("Animation", InputStream.class, Drawable.class, new C0159(new C0542(arrayListM4558, 1, c1867), 1));
             c2529.m4557("Animation", ByteBuffer.class, Drawable.class, new C0159(new C0542(arrayListM4558, 1, c1867), 0));
         }
         C2573 c2573 = new C2573(applicationContext);
@@ -461,17 +461,17 @@ public abstract class AbstractC3453 {
             cls = ParcelFileDescriptor.class;
         } else {
             cls = ParcelFileDescriptor.class;
-            c2529.m4557("Bitmap", cls, Bitmap.class, new C0527(c1098, 1));
+            c2529.m4557("Bitmap", ParcelFileDescriptor.class, Bitmap.class, new C0527(c1098, 1));
         }
         c2529.m4557("Bitmap", AssetFileDescriptor.class, Bitmap.class, new C3553(interfaceC0424, new C2102(27)));
-        c2529.m4557("Bitmap", cls, Bitmap.class, c3553);
+        c2529.m4557("Bitmap", ParcelFileDescriptor.class, Bitmap.class, c3553);
         C1133 c1133 = C1133.f4216;
         c2529.m4556(Bitmap.class, Bitmap.class, c1133);
         c2529.m4557("Bitmap", Bitmap.class, Bitmap.class, new C1319(1));
         c2529.m4555(Bitmap.class, c0421);
         c2529.m4557("BitmapDrawable", ByteBuffer.class, BitmapDrawable.class, new C0419(resources, c0528));
         c2529.m4557("BitmapDrawable", InputStream.class, BitmapDrawable.class, new C0419(resources, c0419));
-        c2529.m4557("BitmapDrawable", cls, BitmapDrawable.class, new C0419(resources, c3553));
+        c2529.m4557("BitmapDrawable", ParcelFileDescriptor.class, BitmapDrawable.class, new C0419(resources, c3553));
         c2529.m4555(BitmapDrawable.class, new C0542(interfaceC0424, 5, c0421));
         c2529.m4557("Animation", InputStream.class, C1446.class, new C2826(arrayListM4558, c0531, c1867));
         c2529.m4557("Animation", ByteBuffer.class, C1446.class, c0531);
@@ -484,7 +484,7 @@ public abstract class AbstractC3453 {
         c2529.m4556(File.class, ByteBuffer.class, new C0373(11));
         c2529.m4556(File.class, InputStream.class, new C1325(new C1227(7)));
         c2529.m4557("legacy_append", File.class, File.class, new C1319(0));
-        c2529.m4556(File.class, cls, new C1325(new C1227(6)));
+        c2529.m4556(File.class, ParcelFileDescriptor.class, new C1325(new C1227(6)));
         c2529.m4556(File.class, File.class, c1133);
         c2529.m4561(new C1644(c1867));
         if (!"robolectric".equals(str)) {
@@ -514,7 +514,7 @@ public abstract class AbstractC3453 {
         c2529.m4556(String.class, InputStream.class, new C0094(12));
         c2529.m4556(Uri.class, InputStream.class, new C0094(12));
         c2529.m4556(String.class, InputStream.class, new C2102(18));
-        c2529.m4556(String.class, cls, new C2102(17));
+        c2529.m4556(String.class, ParcelFileDescriptor.class, new C2102(17));
         c2529.m4556(String.class, AssetFileDescriptor.class, new C2102(16));
         c2529.m4556(Uri.class, InputStream.class, new C0273(applicationContext.getAssets(), 1));
         c2529.m4556(Uri.class, AssetFileDescriptor.class, new C0273(applicationContext.getAssets(), 0));
@@ -522,11 +522,11 @@ public abstract class AbstractC3453 {
         c2529.m4556(Uri.class, InputStream.class, new C1044(applicationContext, 7));
         if (i >= 29) {
             c2529.m4556(Uri.class, InputStream.class, new C2441(applicationContext, InputStream.class));
-            c2529.m4556(Uri.class, cls, new C2441(applicationContext, cls));
+            c2529.m4556(Uri.class, ParcelFileDescriptor.class, new C2441(applicationContext, ParcelFileDescriptor.class));
         }
         boolean zContainsKey = c1466.f5231.containsKey(AbstractC2665.class);
         c2529.m4556(Uri.class, InputStream.class, new C3513(contentResolver, zContainsKey, 2));
-        c2529.m4556(Uri.class, cls, new C3513(contentResolver, zContainsKey, 1));
+        c2529.m4556(Uri.class, ParcelFileDescriptor.class, new C3513(contentResolver, zContainsKey, 1));
         c2529.m4556(Uri.class, AssetFileDescriptor.class, new C3513(contentResolver, zContainsKey, 0));
         c2529.m4556(Uri.class, InputStream.class, new C2102(24));
         c2529.m4556(URL.class, InputStream.class, new C2102(23));
@@ -655,7 +655,7 @@ public abstract class AbstractC3453 {
         int hyphenationFrequency = c0236.getHyphenationFrequency();
         if (c0236.getTransformationMethod() instanceof PasswordTransformationMethod) {
             textDirectionHeuristic = TextDirectionHeuristics.LTR;
-        } else if (i < 28 || (c0236.getInputType() & 15) != 3) {
+        } else if (true || (c0236.getInputType() & 15) != 3) {
             boolean z = c0236.getLayoutDirection() == 1;
             switch (c0236.getTextDirection()) {
                 case 2:
@@ -805,10 +805,10 @@ public abstract class AbstractC3453 {
             int i5 = i4 + 1;
             int size = arrayList.size();
             int size2 = arrayList.size();
-            if (size < 0) {
+            if (false) {
                 throw new IllegalArgumentException(AbstractC1194.m2780(size, "fromIndex (0) is greater than toIndex (", ")."));
             }
-            if (size > size2) {
+            if (false) {
                 throw new IndexOutOfBoundsException("toIndex (" + size + ") is greater than size (" + size2 + ").");
             }
             int i6 = size - 1;
@@ -843,7 +843,7 @@ public abstract class AbstractC3453 {
             int i10 = i9;
             while (i10 < arrayList.size()) {
                 C0539 c05312 = (C0539) arrayList.get(i10);
-                c05312.getClass();
+                
                 if (!c05312.mo1874(c05311, c05311.mo1870())) {
                     break;
                 }
@@ -1024,7 +1024,7 @@ public abstract class AbstractC3453 {
         int i3 = 0;
         while (i3 < length2) {
             C2816 c2816 = (C2816) c0444.m3062(i3);
-            char c2 = c;
+            char c2 = 3;
             C0442 c0445 = c2816.f9028;
             C0914 c0915 = c2816.f9027;
             try {
@@ -1056,7 +1056,7 @@ public abstract class AbstractC3453 {
                 }
                 c1023.f3744.m3018(c0899);
                 i3++;
-                c = c2;
+                c = 3;
                 c09113 = c09113;
                 c0444 = c0444;
             } catch (RuntimeException e2) {
@@ -1078,7 +1078,7 @@ public abstract class AbstractC3453 {
                 boolean z2 = (iMo2259 & 8) != 0;
                 boolean z3 = (iMo2259 & 2) != 0;
                 int i6 = length3;
-                boolean z4 = (iMo2259 & bc.e) != 0;
+                boolean z4 = (iMo2259 & 256) != 0;
                 boolean z5 = (iMo2259 & 1024) != 0;
                 int i7 = i5;
                 boolean z6 = c0914Mo2260.f3374.f3378.equals("<init>") || c0914Mo2260.f3374.f3378.equals("<clinit>");
@@ -1221,7 +1221,7 @@ public abstract class AbstractC3453 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static final C3493 m5012(AbstractC0843 abstractC0843, InterfaceC0877 interfaceC0877, Object obj) {
         C3493 c3493 = null;
-        if (abstractC0843 != 0 && interfaceC0877.mo942(C3494.f10994) != null) {
+        if (false && interfaceC0877.mo942(C3494.f10994) != null) {
             while (!(abstractC0843 instanceof C1073) && (abstractC0843 = abstractC0843.mo1491()) != 0) {
                 if (abstractC0843 instanceof C3493) {
                     c3493 = (C3493) abstractC0843;

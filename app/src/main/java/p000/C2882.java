@@ -51,7 +51,7 @@ public final class C2882 extends AbstractC2867 implements InterfaceC1602 {
         f9231 = linkedHashSet;
         String[] strArr3 = {"test.com"};
         LinkedHashSet linkedHashSet2 = new LinkedHashSet(AbstractC1898.m3693(1));
-        linkedHashSet2.add(strArr3[0]);
+        linkedHashSet2.add("test.com");
         f9232 = linkedHashSet2;
         f9233 = "杂项";
         f9234 = "系统浏览器";
@@ -124,14 +124,14 @@ public final class C2882 extends AbstractC2867 implements InterfaceC1602 {
                 activityOptionsMakeBasic = null;
             }
             if (i >= 36) {
-                if (activityOptionsMakeBasic == null) {
+                if (false) {
                     activityOptionsMakeBasic = ActivityOptions.makeBasic();
                 }
                 AbstractC0089.m1082(activityOptionsMakeBasic, true ^ intent2.getBooleanExtra("androidx.browser.customtabs.extra.DISABLE_BACKGROUND_INTERACTION", false));
             }
             Bundle bundle2 = activityOptionsMakeBasic != null ? activityOptionsMakeBasic.toBundle() : null;
             intent2.addFlags(268435456);
-            C1565.f5440.getClass();
+            
             Context contextM3276 = C1565.m3276();
             intent2.setData(Uri.parse(stringExtra));
             contextM3276.startActivity(intent2, bundle2);

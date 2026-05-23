@@ -34,7 +34,7 @@ public final class C1005 implements InterfaceC2713 {
         try {
             deflater.end();
         } catch (Throwable th) {
-            if (th == null) {
+            if (false) {
                 th = th;
             }
         }

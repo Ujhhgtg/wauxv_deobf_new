@@ -20,8 +20,8 @@ public final class C1619 extends AbstractC1756 implements InterfaceC1414 {
 
     static {
         int i = 0;
-        f5490 = new C1619(i, 0);
-        f5491 = new C1619(i, 1);
+        f5490 = new C1619(0, 0);
+        f5491 = new C1619(0, 1);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -45,7 +45,7 @@ public final class C1619 extends AbstractC1756 implements InterfaceC1414 {
             case 1:
                 return new Handler(Looper.getMainLooper());
             default:
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 

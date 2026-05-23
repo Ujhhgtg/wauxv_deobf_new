@@ -101,9 +101,9 @@ public final class SymbolTable {
         for (int i3 = 0; i3 < length; i3++) {
             this.mapping[Arrays.binarySearch(this.hashCodes, jArr[i3])] = (short) i3;
         }
-        long j = Fnv.MAGIC_HASH_CODE;
+        long j = -3750763034362895579L;
         for (int i4 = 0; i4 < length; i4++) {
-            j = (j ^ jArr[i4]) * Fnv.MAGIC_PRIME;
+            j = (j ^ jArr[i4]) * 1099511628211L;
         }
         this.hashCode64 = j;
     }

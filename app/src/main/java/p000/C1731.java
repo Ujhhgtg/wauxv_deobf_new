@@ -38,8 +38,8 @@ public final class C1731 implements InterfaceC1743 {
         if (abstractC1715M4812 instanceof AbstractC1730) {
             return (AbstractC1730) abstractC1715M4812;
         }
-        String str = "Unexpected JSON element, expected JsonPrimitive, had " + AbstractC2519.m4527(abstractC1715M4812.getClass());
-        c2828M5065.m4813().f5799.getClass();
+        String str = "Unexpected JSON element, expected JsonPrimitive, had " + AbstractC2519.classToKClass(abstractC1715M4812.getClass());
+        
         throw new C1713(AbstractC3681.m5327(-1, str, null, null, AbstractC3681.m5333(-1, abstractC1715M4812.toString()).toString()));
     }
 

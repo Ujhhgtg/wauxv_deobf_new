@@ -142,7 +142,7 @@ public final class C0405 implements InterfaceC0541 {
         if (!z) {
             i3 = -1;
         }
-        c0536.getClass();
+        
         if (i3 < -1) {
             throw new IllegalArgumentException("noException < -1");
         }
@@ -235,24 +235,24 @@ public final class C0405 implements InterfaceC0541 {
                 return;
             } else if (i != 194 && i != 195) {
                 switch (i) {
-                    case Opcodes.IALOAD /* 46 */:
+                    case 46 /* 46 */:
                     case 47:
                     case 48:
                     case 49:
-                    case Opcodes.AALOAD /* 50 */:
-                    case Opcodes.BALOAD /* 51 */:
+                    case 50 /* 50 */:
+                    case 51 /* 51 */:
                     case 52:
-                    case Opcodes.SALOAD /* 53 */:
+                    case 53 /* 53 */:
                         break;
                     default:
                         switch (i) {
-                            case Opcodes.IASTORE /* 79 */:
+                            case 79 /* 79 */:
                             case 80:
                             case 81:
                             case 82:
-                            case Opcodes.AASTORE /* 83 */:
-                            case Opcodes.BASTORE /* 84 */:
-                            case Opcodes.CASTORE /* 85 */:
+                            case 83 /* 83 */:
+                            case 84 /* 84 */:
+                            case 85 /* 85 */:
                             case 86:
                                 break;
                             default:

@@ -94,7 +94,7 @@ public class c {
         HttpsURLConnection httpsURLConnection;
         boolean z = false;
         if (bArr != null && !TextUtils.isEmpty(str)) {
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "[无状态] 上报url：" + str);
+            UMRTLog.i("MobclickRT", "[无状态] 上报url：" + str);
             HttpsURLConnection httpsURLConnection2 = null;
             outputStream = null;
             outputStream = null;
@@ -109,8 +109,8 @@ public class c {
                         httpsURLConnection.setSSLSocketFactory(sSLContext.getSocketFactory());
                         httpsURLConnection.setRequestProperty("X-Umeng-UTC", String.valueOf(System.currentTimeMillis()));
                         httpsURLConnection.setRequestProperty("Msg-Type", "envelope/json");
-                        httpsURLConnection.setRequestProperty("Content-Type", bv.aQ + str2);
-                        httpsURLConnection.setRequestProperty("SM-IMP", SdkVersion.MINI_VERSION);
+                        httpsURLConnection.setRequestProperty("Content-Type", "ut/" + str2);
+                        httpsURLConnection.setRequestProperty("SM-IMP", "1");
                         httpsURLConnection.setRequestProperty("User-Agent", DeviceConfig.getCustomAgt());
                         httpsURLConnection.setConnectTimeout(30000);
                         httpsURLConnection.setReadTimeout(30000);
@@ -123,7 +123,7 @@ public class c {
                         outputStream2.flush();
                         httpsURLConnection.connect();
                         if (httpsURLConnection.getResponseCode() == 200) {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> send stateless message success : " + str);
+                            UMRTLog.i("MobclickRT", "--->>> send stateless message success : " + str);
                             z = true;
                         }
                         try {
@@ -133,7 +133,7 @@ public class c {
                     } catch (SSLHandshakeException e) {
                         e = e;
                         try {
-                            UMRTLog.e(UMRTLog.RTLOG_TAG, "SSLHandshakeException, Failed to send message.\n" + e);
+                            UMRTLog.e("MobclickRT", "SSLHandshakeException, Failed to send message.\n" + e);
                             if (outputStream2 != null) {
                                 try {
                                     outputStream2.close();
@@ -150,9 +150,9 @@ public class c {
                                 } catch (Exception unused3) {
                                 }
                             }
-                            if (httpsURLConnection2 != null) {
+                            if (true) {
                                 try {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> stateless: disconnect connection.");
+                                    UMRTLog.i("MobclickRT", "--->>> stateless: disconnect connection.");
                                     httpsURLConnection2.disconnect();
                                     throw th;
                                 } catch (Throwable unused4) {
@@ -166,7 +166,7 @@ public class c {
                         outputStream = outputStream2;
                         httpsURLConnection2 = httpsURLConnection;
                         try {
-                            UMRTLog.e(UMRTLog.RTLOG_TAG, "Exception,Failed to send message.\n" + th);
+                            UMRTLog.e("MobclickRT", "Exception,Failed to send message.\n" + th);
                             if (outputStream != null) {
                                 try {
                                     outputStream.close();
@@ -174,7 +174,7 @@ public class c {
                                 }
                             }
                             if (httpsURLConnection2 != null) {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> stateless: disconnect connection.");
+                                UMRTLog.i("MobclickRT", "--->>> stateless: disconnect connection.");
                                 httpsURLConnection2.disconnect();
                             }
                             return z;
@@ -184,7 +184,7 @@ public class c {
                                 outputStream.close();
                             }
                             if (httpsURLConnection2 != null) {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> stateless: disconnect connection.");
+                                UMRTLog.i("MobclickRT", "--->>> stateless: disconnect connection.");
                                 httpsURLConnection2.disconnect();
                                 throw th;
                             }
@@ -200,7 +200,7 @@ public class c {
                 th = th4;
                 outputStream = null;
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> stateless: disconnect connection.");
+            UMRTLog.i("MobclickRT", "--->>> stateless: disconnect connection.");
             httpsURLConnection.disconnect();
             return z;
         }

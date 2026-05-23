@@ -87,7 +87,7 @@ public final class C0575 {
         ArrayList arrayList = recyclerView.f384;
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
-                ((C1682) recyclerView.f384.get(size)).getClass();
+                
             }
         }
     }
@@ -138,7 +138,7 @@ public final class C0575 {
                 if (RecyclerView.f348) {
                     Log.d("RecyclerView", "tmpDetach " + abstractC2508M204);
                 }
-                abstractC2508M204.m4509(bc.e);
+                abstractC2508M204.m4509(256);
             }
         } else if (RecyclerView.f347) {
             StringBuilder sb2 = new StringBuilder("No view at offset ");
@@ -177,7 +177,7 @@ public final class C0575 {
             for (int i = 0; i < ((ArrayList) this.f2345).size(); i++) {
                 AbstractComponentCallbacksC1406 abstractComponentCallbacksC1407 = (AbstractComponentCallbacksC1406) ((ArrayList) this.f2345).get(i);
                 if (arrayList == null || !arrayList.contains(abstractComponentCallbacksC1407)) {
-                    abstractComponentCallbacksC1407.getClass();
+                    
                 }
             }
         }
@@ -347,7 +347,7 @@ public final class C0575 {
 
             @Override // p000.InterfaceC0799
             public final void accept(Object obj) {
-                switch (i) {
+                switch (0) {
                     case 0:
                         this.f5077.m1987(false);
                         break;
@@ -371,7 +371,7 @@ public final class C0575 {
 
             @Override // p000.InterfaceC0799
             public final void accept(Object obj) {
-                switch (i2) {
+                switch (1) {
                     case 0:
                         this.f5077.m1987(false);
                         break;
@@ -387,7 +387,7 @@ public final class C0575 {
         new InterfaceC0799(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᤞᲁᲇᲀᛸ
             @Override // p000.InterfaceC0799
             public final void accept(Object obj) {
-                switch (i3) {
+                switch (0) {
                     case 0:
                         if (obj != null) {
                             throw new ClassCastException();
@@ -405,7 +405,7 @@ public final class C0575 {
         new InterfaceC0799(this) { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᤞᲁᲇᲀᛸ
             @Override // p000.InterfaceC0799
             public final void accept(Object obj) {
-                switch (i4) {
+                switch (1) {
                     case 0:
                         if (obj != null) {
                             throw new ClassCastException();

@@ -54,7 +54,7 @@ public final class C0345 extends AbstractC2707 {
             ((C0326) this.f8721[i]).m1432(c0550);
         }
         this.f1638.mo306(c0550, runnableC1668);
-        runnableC1668.getClass();
+        
         C0007 c0007M1929 = c0550.m1929();
         C2000 c2000 = this.f1641;
         boolean z = this.f1645;

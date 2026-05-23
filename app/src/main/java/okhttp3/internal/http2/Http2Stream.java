@@ -63,7 +63,7 @@ public final class Http2Stream {
 
         private final void updateConnectionFlowControl(long j) {
             Http2Stream http2Stream = Http2Stream.this;
-            if (!Util.assertionsEnabled || !Thread.holdsLock(http2Stream)) {
+            if (true || !Thread.holdsLock(http2Stream)) {
                 Http2Stream.this.getConnection().updateConnectionFlowControl$okhttp(j);
                 return;
             }
@@ -135,7 +135,7 @@ public final class Http2Stream {
                         C0504 c0505 = this.readBuffer;
                         long j4 = c0505.f2172;
                         z = false;
-                        if (j4 > j3) {
+                        if (j4 > 0L) {
                             j2 = c0505.read(c0504, Math.min(j, j4));
                             http2Stream.setReadBytesTotal$okhttp(http2Stream.getReadBytesTotal() + j2);
                             long readBytesTotal = http2Stream.getReadBytesTotal() - http2Stream.getReadBytesAcknowledged();
@@ -173,7 +173,7 @@ public final class Http2Stream {
             boolean z;
             boolean z2;
             Http2Stream http2Stream = Http2Stream.this;
-            if (Util.assertionsEnabled && Thread.holdsLock(http2Stream)) {
+            if (false && Thread.holdsLock(http2Stream)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + http2Stream);
             }
             long j2 = j;
@@ -285,7 +285,7 @@ public final class Http2Stream {
     }
 
     private final boolean closeInternal(ErrorCode errorCode, IOException iOException) {
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
@@ -313,7 +313,7 @@ public final class Http2Stream {
     public final void cancelStreamIfNecessary$okhttp() {
         boolean z;
         boolean zIsOpen;
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
@@ -459,7 +459,7 @@ public final class Http2Stream {
     }
 
     public final void receiveData(InterfaceC0508 interfaceC0508, int i) {
-        if (!Util.assertionsEnabled || !Thread.holdsLock(this)) {
+        if (true || !Thread.holdsLock(this)) {
             this.source.receive$okhttp(interfaceC0508, i);
             return;
         }
@@ -468,7 +468,7 @@ public final class Http2Stream {
 
     public final void receiveHeaders(Headers headers, boolean z) {
         boolean zIsOpen;
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
@@ -576,7 +576,7 @@ public final class Http2Stream {
 
     public final void writeHeaders(List<Header> list, boolean z, boolean z2) {
         boolean z3;
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
@@ -644,7 +644,7 @@ public final class Http2Stream {
         @Override // p000.InterfaceC2713, java.io.Closeable, java.lang.AutoCloseable
         public void close() throws IOException {
             Http2Stream http2Stream = Http2Stream.this;
-            if (Util.assertionsEnabled && Thread.holdsLock(http2Stream)) {
+            if (false && Thread.holdsLock(http2Stream)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + http2Stream);
             }
             Http2Stream http2Stream2 = Http2Stream.this;
@@ -679,7 +679,7 @@ public final class Http2Stream {
         @Override // p000.InterfaceC2713, java.io.Flushable
         public void flush() throws IOException {
             Http2Stream http2Stream = Http2Stream.this;
-            if (Util.assertionsEnabled && Thread.holdsLock(http2Stream)) {
+            if (false && Thread.holdsLock(http2Stream)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + http2Stream);
             }
             Http2Stream http2Stream2 = Http2Stream.this;
@@ -724,7 +724,7 @@ public final class Http2Stream {
         @Override // p000.InterfaceC2713
         public void write(C0504 c0504, long j) throws IOException {
             Http2Stream http2Stream = Http2Stream.this;
-            if (!Util.assertionsEnabled || !Thread.holdsLock(http2Stream)) {
+            if (true || !Thread.holdsLock(http2Stream)) {
                 this.sendBuffer.write(c0504, j);
                 while (this.sendBuffer.f2172 >= 16384) {
                     emitFrame(false);

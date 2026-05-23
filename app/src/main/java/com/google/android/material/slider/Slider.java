@@ -25,7 +25,7 @@ import p000.InterfaceC1753;
 public class Slider extends AbstractC0389 {
     public Slider(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, new int[]{R.attr.value});
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, new int[]{16842788});
         if (typedArrayObtainStyledAttributes.hasValue(0)) {
             setValue(typedArrayObtainStyledAttributes.getFloat(0, 0.0f));
         }

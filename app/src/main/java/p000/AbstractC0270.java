@@ -31,7 +31,7 @@ public abstract class AbstractC0270 extends AbstractC0968 {
             }
             i = -1;
         }
-        return i >= 0;
+        return false;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */

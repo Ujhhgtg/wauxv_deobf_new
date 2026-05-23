@@ -48,7 +48,7 @@ public final class C0178 extends AbstractC2270 {
         ArrayList<C1298> arrayList = this.f1226;
         if (arrayList != null) {
             for (C1298 c1298 : arrayList) {
-                c1298.getClass();
+                
                 c1023.f3744.m3018(c1298.f4723);
                 c1298.f4724 = (C0174) c1986.m3855(c1298.f4724);
             }
@@ -56,7 +56,7 @@ public final class C0178 extends AbstractC2270 {
         ArrayList<C1972> arrayList2 = this.f1227;
         if (arrayList2 != null) {
             for (C1972 c1972 : arrayList2) {
-                c1972.getClass();
+                
                 c1979.m3815(c1972.f6541);
                 c1972.f6542 = (C0174) c1986.m3855(c1972.f6542);
             }
@@ -64,7 +64,7 @@ public final class C0178 extends AbstractC2270 {
         ArrayList<C2324> arrayList3 = this.f1228;
         if (arrayList3 != null) {
             for (C2324 c2324 : arrayList3) {
-                c2324.getClass();
+                
                 c1979.m3815(c2324.f7462);
                 c1986.m3854(c2324.f7463);
             }
@@ -86,7 +86,7 @@ public final class C0178 extends AbstractC2270 {
         }
         C0174 c0175 = ((C0178) abstractC2270).f1225;
         if (c0174 == c0175) {
-            c0174.getClass();
+            
             return 0;
         }
         EnumC1683 enumC1683Mo1222 = c0174.mo1222();
@@ -126,7 +126,7 @@ public final class C0178 extends AbstractC2270 {
                 c0519.m1831(0, "  fields:");
             }
             for (C1298 c1298 : this.f1226) {
-                c1298.getClass();
+                
                 C1301 c1301 = c1023.f3744;
                 C0899 c0899 = c1298.f4723;
                 int iM3017 = c1301.m3017(c0899);
@@ -146,7 +146,7 @@ public final class C0178 extends AbstractC2270 {
                 c0519.m1831(0, "  methods:");
             }
             for (C1972 c1972 : this.f1227) {
-                c1972.getClass();
+                
                 C1979 c1979 = c1023.f3745;
                 C0913 c0913 = c1972.f6541;
                 int iM3814 = c1979.m3814(c0913);
@@ -166,7 +166,7 @@ public final class C0178 extends AbstractC2270 {
                 c0519.m1831(0, "  parameters:");
             }
             for (C2324 c2324 : this.f1228) {
-                c2324.getClass();
+                
                 C1979 c19710 = c1023.f3745;
                 C0913 c0914 = c2324.f7462;
                 int iM3815 = c19710.m3814(c0914);

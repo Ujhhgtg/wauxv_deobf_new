@@ -30,7 +30,7 @@ public final class C2150 extends AbstractC1756 implements InterfaceC1414 {
             case 1:
                 InterfaceC3587 interfaceC3587 = (InterfaceC3587) this.f7102;
                 ArrayList arrayList = new ArrayList();
-                arrayList.add(new C3586(AbstractC2519.m4527(C2625.class).mo2114()));
+                arrayList.add(new C3586(AbstractC2519.classToKClass(C2625.class).mo2114()));
                 C3586[] c3586Arr = (C3586[]) arrayList.toArray(new C3586[0]);
                 AbstractC1458 abstractC1458Mo3118 = interfaceC3587.mo3118();
                 if (interfaceC3587 instanceof InterfaceC1520) {
@@ -38,7 +38,7 @@ public final class C2150 extends AbstractC1756 implements InterfaceC1414 {
                     throw null;
                 }
                 C0887 c0887 = C0887.f3327;
-                abstractC1458Mo3118.getClass();
+                
                 throw null;
             default:
                 Toast toast = AbstractC3471.f10964;
@@ -54,7 +54,7 @@ public final class C2150 extends AbstractC1756 implements InterfaceC1414 {
                 if (toastMakeText != null) {
                     toastMakeText.show();
                 }
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 }

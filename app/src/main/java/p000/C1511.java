@@ -13,6 +13,6 @@ public final class C1511 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f5332 = new C1511("HandleGroupMemberHook.ValTipColor", "#28C445", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f5332 = new C1511("HandleGroupMemberHook.ValTipColor", "#28C445", null, false, 0, 0.0f, 0L, 124);
     }
 }

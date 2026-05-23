@@ -36,8 +36,8 @@ public class bt {
     public static boolean e() {
         String str = Build.BRAND;
         if (!str.equalsIgnoreCase("huawei") && !str.equalsIgnoreCase("honor") && !str.equalsIgnoreCase("华为")) {
-            String strA = a(a);
-            String strA2 = a(b);
+            String strA = a("ro.build.version.emui");
+            String strA2 = a("hw_sc.build.platform.version");
             if (TextUtils.isEmpty(strA) && TextUtils.isEmpty(strA2)) {
                 return false;
             }
@@ -50,16 +50,16 @@ public class bt {
     }
 
     public static boolean g() {
-        String strA = a(c);
-        String strA2 = a(d);
-        if (strA == null || !strA.equalsIgnoreCase(e)) {
-            return strA2 != null && strA2.equalsIgnoreCase(e);
+        String strA = a("ro.build.freeme.label");
+        String strA2 = a("ro.build.freemeos_label");
+        if (strA == null || !strA.equalsIgnoreCase("FreemeOS")) {
+            return strA2 != null && strA2.equalsIgnoreCase("FreemeOS");
         }
         return true;
     }
 
     private static boolean h() {
-        return !TextUtils.isEmpty(a(a));
+        return !TextUtils.isEmpty(a("ro.build.version.emui"));
     }
 
     private static String a(String str) {

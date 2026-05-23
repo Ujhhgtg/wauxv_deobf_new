@@ -12,7 +12,7 @@ import p000.AbstractC2465;
 public class SwitchPreference extends TwoStatePreference {
     /* JADX WARN: Illegal instructions before constructor call */
     public SwitchPreference(Context context, AttributeSet attributeSet) {
-        int iM3156 = AbstractC1458.m3156(context, R.attr.switchPreferenceStyle, android.R.attr.switchPreferenceStyle);
+        int iM3156 = AbstractC1458.m3156(context, R.attr.switchPreferenceStyle, 16843629);
         super(context, attributeSet, iM3156);
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC2465.f7836, iM3156, 0);
         if (typedArrayObtainStyledAttributes.getString(7) == null) {

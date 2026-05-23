@@ -138,7 +138,7 @@ public final class C2529 {
     public final List m4559(Object obj) {
         List listUnmodifiableList;
         C0542 c0542 = this.f8061;
-        c0542.getClass();
+        
         Class<?> cls = obj.getClass();
         synchronized (c0542) {
             C1998 c1998 = (C1998) ((C0963) c0542.f2253).f3488.get(cls);

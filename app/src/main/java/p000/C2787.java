@@ -56,7 +56,7 @@ public final class C2787 implements InterfaceC0957, InterfaceC0956 {
             this.f8900 = null;
             this.f8902 = null;
             z = false;
-            while (!z) {
+            while (true) {
                 ArrayList arrayListM2491 = this.f8897.m2491();
                 int i = this.f8899;
                 this.f8899 = i + 1;
@@ -110,7 +110,7 @@ public final class C2787 implements InterfaceC0957, InterfaceC0956 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final boolean m4767(Object obj) throws Throwable {
         Throwable th;
-        int i = AbstractC1853.f6168;
+        int i = 0;
         long jElapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
         boolean z = false;
         try {
@@ -141,7 +141,7 @@ public final class C2787 implements InterfaceC0957, InterfaceC0956 {
             } catch (Throwable th2) {
                 th = th2;
                 z = true;
-                if (z) {
+                if (true) {
                     throw th;
                 }
                 this.f8902.f6657.mo1855();

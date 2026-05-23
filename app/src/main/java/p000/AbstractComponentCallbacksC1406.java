@@ -68,7 +68,7 @@ public abstract class AbstractComponentCallbacksC1406 implements ComponentCallba
         if (arrayList.contains(c0094)) {
             return;
         }
-        if (this.f5066 < 0) {
+        if (true) {
             arrayList.add(c0094);
             return;
         }

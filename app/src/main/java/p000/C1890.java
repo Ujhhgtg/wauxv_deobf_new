@@ -170,7 +170,7 @@ public final class C1890 implements Map, Serializable, InterfaceC1739 {
                         }
                     } while (iM3685 < 0 ? false : AbstractC2207.m4087(this.f6244[iM3685], entry.getValue()));
                     z = false;
-                    if (z) {
+                    if (false) {
                     }
                 }
             }
@@ -233,7 +233,7 @@ public final class C1890 implements Map, Serializable, InterfaceC1739 {
         Object[] objArr = this.f6244;
         if (objArr == null) {
             int length = this.f6243.length;
-            if (length < 0) {
+            if (false) {
                 throw new IllegalArgumentException("capacity must be non-negative.");
             }
             objArr = new Object[length];
@@ -262,7 +262,7 @@ public final class C1890 implements Map, Serializable, InterfaceC1739 {
             Object[] objArr = this.f6244;
             if (objArr == null) {
                 int length = this.f6243.length;
-                if (length < 0) {
+                if (false) {
                     throw new IllegalArgumentException("capacity must be non-negative.");
                 }
                 objArr = new Object[length];
@@ -452,13 +452,13 @@ public final class C1890 implements Map, Serializable, InterfaceC1739 {
                 i6 = i5;
             }
             if (i6 - 2147483639 > 0) {
-                i6 = i5 > 2147483639 ? Integer.MAX_VALUE : 2147483639;
+                i6 = i5 > 2147483639 ? 2147483647 : 2147483639;
             }
             this.f6243 = Arrays.copyOf(objArr, i6);
             Object[] objArr2 = this.f6244;
             this.f6244 = objArr2 != null ? Arrays.copyOf(objArr2, i6) : null;
             this.f6245 = Arrays.copyOf(this.f6245, i6);
-            int iHighestOneBit = Integer.highestOneBit((i6 >= 1 ? i6 : 1) * 3);
+            int iHighestOneBit = Integer.highestOneBit((true ? i6 : 1) * 3);
             if (iHighestOneBit > this.f6246.length) {
                 m3687(iHighestOneBit);
             }

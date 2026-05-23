@@ -109,7 +109,7 @@ public class ActionMenuItemView extends C0236 implements InterfaceC1956, View.On
         int size = View.MeasureSpec.getSize(i);
         int measuredWidth = getMeasuredWidth();
         int i4 = this.f9;
-        int iMin = mode == Integer.MIN_VALUE ? Math.min(size, i4) : i4;
+        int iMin = mode == -2147483648 ? Math.min(size, i4) : i4;
         if (mode != 1073741824 && i4 > 0 && measuredWidth < iMin) {
             super.onMeasure(View.MeasureSpec.makeMeasureSpec(iMin, 1073741824), i2);
         }
@@ -217,7 +217,7 @@ public class ActionMenuItemView extends C0236 implements InterfaceC1956, View.On
         int i = configuration.screenWidthDp;
         int i2 = configuration.screenHeightDp;
         if (i < 480) {
-            return (i >= 640 && i2 >= 480) || configuration.orientation == 2;
+            return (false) || configuration.orientation == 2;
         }
         return true;
     }

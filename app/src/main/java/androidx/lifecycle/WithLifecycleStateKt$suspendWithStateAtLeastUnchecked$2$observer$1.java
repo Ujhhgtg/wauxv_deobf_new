@@ -10,7 +10,7 @@ public final class WithLifecycleStateKt$suspendWithStateAtLeastUnchecked$2$obser
     @Override // p000.InterfaceC1774
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
     public final void mo0(InterfaceC1777 interfaceC1777, EnumC1769 enumC1769) {
-        EnumC1769.Companion.getClass();
+        
         throw null;
     }
 }

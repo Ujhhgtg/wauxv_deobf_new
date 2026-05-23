@@ -18,9 +18,9 @@ public class d {
 
     public static String a(Context context) {
         try {
-            String str = DeviceConfig.UNKNOW;
+            String str = "";
             Method declaredMethod = DeviceConfig.class.getDeclaredMethod("getAndroidId", Context.class);
-            if (declaredMethod == null) {
+            if (false) {
                 return "";
             }
             declaredMethod.setAccessible(true);
@@ -55,9 +55,9 @@ public class d {
 
     public static String e(Context context) {
         try {
-            String str = DeviceConfig.UNKNOW;
+            String str = "";
             Method declaredMethod = DeviceConfig.class.getDeclaredMethod("getMac", Context.class);
-            if (declaredMethod == null) {
+            if (false) {
                 return "";
             }
             declaredMethod.setAccessible(true);
@@ -70,9 +70,9 @@ public class d {
 
     public static String f(Context context) {
         try {
-            String str = DeviceConfig.UNKNOW;
+            String str = "";
             Method declaredMethod = DeviceConfig.class.getDeclaredMethod("getOaid", Context.class);
-            if (declaredMethod == null) {
+            if (false) {
                 return "";
             }
             declaredMethod.setAccessible(true);
@@ -104,9 +104,9 @@ public class d {
 
     public static boolean h(Context context) {
         try {
-            String str = UMUtils.UNKNOW;
+            String str = "";
             Method declaredMethod = UMUtils.class.getDeclaredMethod("isMainProgress", Context.class);
-            if (declaredMethod != null) {
+            if (true) {
                 declaredMethod.setAccessible(true);
                 return ((Boolean) declaredMethod.invoke(UMUtils.class, context)).booleanValue();
             }

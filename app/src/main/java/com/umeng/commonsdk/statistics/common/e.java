@@ -13,7 +13,7 @@ public final class e {
     private static e a;
     private static Context b;
     private static String c;
-    private static final String d = be.b().b(be.m);
+    private static final String d = be.b().b("user");
 
     public e(Context context) {
     }

@@ -69,7 +69,7 @@ public final class C0554 {
         float fSignum2 = ((Math.signum(f11) * 400.0f) * fPow2) / (fPow2 + 27.13f);
         float fSignum3 = ((Math.signum(f12) * 400.0f) * fPow3) / (fPow3 + 27.13f);
         double d = fSignum3;
-        float f14 = ((float) (((((double) fSignum2) * (-12.0d)) + (((double) fSignum) * 11.0d)) + d)) / 11.0f;
+        float f14 = ((float) (((((double) fSignum2) * (-12.0)) + (((double) fSignum) * 11.0d)) + d)) / 11.0f;
         float f15 = ((float) (((double) (fSignum + fSignum2)) - (d * 2.0d))) / 9.0f;
         float f16 = fSignum2 * 20.0f;
         float f17 = ((21.0f * fSignum3) + ((fSignum * 20.0f) + f16)) / 20.0f;

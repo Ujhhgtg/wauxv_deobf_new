@@ -45,7 +45,7 @@ public final /* synthetic */ class C3270 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr2 = C3272.f10391;
-        interfaceC0766Mo2512.getClass();
+        
         C3043 c3043 = null;
         String str = null;
         Boolean bool = null;
@@ -108,7 +108,7 @@ public final /* synthetic */ class C3270 implements InterfaceC1443 {
                 case 8:
                     interfaceC1758Arr = interfaceC1758Arr2;
                     c3043 = (C3043) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C3041.f9752, c3043);
-                    i |= bc.e;
+                    i |= 256;
                     break;
                 case 9:
                     interfaceC1758Arr = interfaceC1758Arr2;

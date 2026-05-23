@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C1322 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C1322 f4771 = new C1322("FileDownRedirectHook.ValSavePath", C1323.f4773, null, false, 0, 0.0f, 0, Opcodes.IUSHR);
+    public static final C1322 f4771 = new C1322("FileDownRedirectHook.ValSavePath", C1323.f4773, null, false, 0, 0.0f, 0, 124);
 }

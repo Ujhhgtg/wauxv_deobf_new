@@ -42,7 +42,7 @@ public final /* synthetic */ class C3267 implements InterfaceC1443 {
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         Integer num = null;
         Integer num2 = null;
         String str = null;
@@ -96,7 +96,7 @@ public final /* synthetic */ class C3267 implements InterfaceC1443 {
                     break;
                 case 8:
                     str7 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2839.f9108, str7);
-                    i |= bc.e;
+                    i |= 256;
                     break;
                 case 9:
                     num = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 9, C1665.f5622, num);
@@ -109,7 +109,7 @@ public final /* synthetic */ class C3267 implements InterfaceC1443 {
                 default:
                     throw new C3501(iMo2230);
             }
-            z = z;
+            z = true;
         }
         interfaceC0766Mo2512.mo2228(interfaceC2654);
         return new C3269(i, str, num3, str2, str3, str4, str5, num4, str6, str7, num, num2);

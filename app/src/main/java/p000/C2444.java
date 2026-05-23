@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.reflect.Field;
@@ -21,7 +20,6 @@ import java.util.NoSuchElementException;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.ConversationBean;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -70,34 +68,34 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
         int i4 = 7;
         int i5 = 0;
         int i6 = 1;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         switch (i) {
             case 0:
                 C1333 c1333 = (C1333) obj;
                 c1333.m3053("com.tencent.mm.pluginsdk.ui.chat");
-                c1333.m3052(new C2444(i6));
-                return c3497;
+                c1333.m3052(new C2444(1));
+                return unit;
             case 1:
                 C1981 c1981 = (C1981) obj;
                 String[] strArr = AbstractC1574.f5469;
                 c1981.m3826("onKey");
                 c1981.m3827("ChatFooterKtHelper", "supportAutoComplete err");
-                return c3497;
+                return unit;
             case 2:
                 return Boolean.valueOf(((Class) obj).getName().startsWith("com.tencent.mm.pluginsdk.ui.chat."));
             case 3:
-                AbstractC1458.m3166(C2451.f7789, new C2449((ConversationBean) obj, i6));
-                return c3497;
+                AbstractC1458.m3166(C2451.f7789, new C2449((ConversationBean) obj, 1));
+                return unit;
             case 4:
-                ((C1020) obj).f3733 = new C2444(i2);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C2444(8);
+                return unit;
             case 5:
-                ((C1020) obj).f3733 = new C2444(i4);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C2444(7);
+                return unit;
             case 6:
                 C1563 c1563 = (C1563) obj;
-                if (AbstractC3471.m5079(EnumC3677.f11539) || AbstractC3471.m5080(EnumC3674.f11502)) {
-                    c1563.getClass();
+                if (AbstractC3471.m5079(WeChatVersions.f11539) || AbstractC3471.m5080(WeChatVersionsPlay.f11502)) {
+                    
                     try {
                         c2585 = c1563.m3267()[0];
                         if (c2585 == null) {
@@ -161,11 +159,11 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                         c25810 = new C2585(th6);
                     }
                     Object obj4 = c25810 instanceof C2585 ? null : c25810;
-                    C2079.f6881.getClass();
-                    AbstractC1574.m3315(C2454.f7795).invoke(null, obj2, obj3, C2079.m3883(jLongValue), view, Long.valueOf(jLongValue), str, obj4);
+                    
+                    AbstractC1574.dexToMethod(C2454.f7795).invoke(null, obj2, obj3, C2079.m3883(jLongValue), view, Long.valueOf(jLongValue), str, obj4);
                     c1563.m3272(null);
-                } else if (AbstractC3471.m5079(EnumC3677.f11535) || AbstractC3471.m5080(EnumC3674.f11498)) {
-                    c1563.getClass();
+                } else if (AbstractC3471.m5079(WeChatVersions.f11535) || AbstractC3471.m5080(WeChatVersionsPlay.f11498)) {
+                    
                     try {
                         c25811 = c1563.m3267()[0];
                         if (c25811 == null) {
@@ -241,12 +239,12 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                         c25817 = null;
                     }
                     Boolean bool = (Boolean) c25817;
-                    bool.getClass();
-                    C2079.f6881.getClass();
-                    AbstractC1574.m3315(C2454.f7795).invoke(null, obj5, obj6, C2079.m3883(jLongValue2), view2, Long.valueOf(jLongValue2), str2, obj7, bool);
+                    
+                    
+                    AbstractC1574.dexToMethod(C2454.f7795).invoke(null, obj5, obj6, C2079.m3883(jLongValue2), view2, Long.valueOf(jLongValue2), str2, obj7, bool);
                     c1563.m3272(null);
                 } else {
-                    c1563.getClass();
+                    
                     try {
                         c25818 = c1563.m3267()[0];
                         if (c25818 == null) {
@@ -310,12 +308,12 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                         c25823 = null;
                     }
                     Boolean bool2 = (Boolean) c25823;
-                    bool2.getClass();
-                    C2079.f6881.getClass();
-                    AbstractC1574.m3315(C2454.f7795).invoke(null, obj8, obj9, C2079.m3883(jLongValue3), view3, Long.valueOf(jLongValue3), obj10, bool2);
+                    
+                    
+                    AbstractC1574.dexToMethod(C2454.f7795).invoke(null, obj8, obj9, C2079.m3883(jLongValue3), view3, Long.valueOf(jLongValue3), obj10, bool2);
                     c1563.m3272(null);
                 }
-                return c3497;
+                return unit;
             case 7:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr2 = AbstractC1574.f5469;
@@ -323,7 +321,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                 C1981 c1982 = new C1981(4);
                 c1982.m3827("MicroMsg.msgquote.QuoteMsgSourceClickLogic", "handleItemClickToPositionEvent,quotedMsg is null!");
                 c1334.f4794 = c1982;
-                return c3497;
+                return unit;
             case 8:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr3 = AbstractC1574.f5469;
@@ -331,11 +329,11 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                 C1981 c1983 = new C1981(4);
                 c1983.m3827("MicroMsg.msgquote.QuoteMsgSourceClickLogic", "handleItemClickEvent,quotedMsg is null!");
                 c1335.f4794 = c1983;
-                return c3497;
+                return unit;
             case 9:
                 String[] strArr4 = AbstractC1574.f5469;
                 ((C0705) obj).m2127("MicroMsg.ConversationWithCacheAdapter", "is transfer remind msg ");
-                return c3497;
+                return unit;
             case 10:
                 String[] strArr5 = AbstractC1574.f5469;
                 View viewM4676 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_quote_remind_msg, null, false);
@@ -354,13 +352,13 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                                 textInputEditText2.setText(C2458.f7803.m2542());
                                 textInputEditText.setText(C2457.f7802.m2542());
                                 C2007 c2007 = new C2007();
-                                C2459.f7804.getClass();
+                                
                                 c2007.f6678 = C2459.f7806;
                                 c2007.f6680 = linearLayout;
-                                c2007.m3870("保存", new C2042(i3, c2018));
-                                c2007.m3869("重置", new C2083(i3));
+                                c2007.m3870("保存", new C2042(9, c2018));
+                                c2007.m3869("重置", new C2083(9));
                                 c2007.m3868().m3791();
-                                return c3497;
+                                return unit;
                             }
                         }
                     }
@@ -368,26 +366,26 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                 throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i7)));
             case 11:
                 C1020 c1020 = (C1020) obj;
-                c1020.f3732 = new C2444(12);
-                c1020.f3733 = new C2444(13);
-                return c3497;
-            case Opcodes.FCONST_1 /* 12 */:
-                ((C1332) obj).m3050(new C2444(i3));
-                return c3497;
+                c1020.declaringClassMatcher = new C2444(12);
+                c1020.thisMethodMatcher = new C2444(13);
+                return unit;
+            case 12 /* 12 */:
+                ((C1332) obj).m3050(new C2444(9));
+                return unit;
             case 13:
                 C1333 c1336 = (C1333) obj;
                 C1981 c1981M4739 = AbstractC2784.m4739(c1336);
-                Class<CharSequence> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(CharSequence.class));
+                Class<CharSequence> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(CharSequence.class));
                 c1981M4739.m3824(clsM2183 != null ? clsM2183 : CharSequence.class);
                 c1981M4739.m3822(new C1664(7, 8, 1));
                 c1336.f4794 = c1981M4739;
-                return c3497;
-            case Opcodes.DCONST_0 /* 14 */:
+                return unit;
+            case 14 /* 14 */:
                 C1563 c1564 = (C1563) obj;
-                C2315 c2315 = (AbstractC3471.m5079(EnumC3677.f11543) || AbstractC3471.m5080(EnumC3674.f11509)) ? new C2315(1, 5) : new C2315(0, 4);
+                C2315 c2315 = (AbstractC3471.m5079(WeChatVersions.f11543) || AbstractC3471.m5080(WeChatVersionsPlay.f11509)) ? new C2315(1, 5) : new C2315(0, 4);
                 int iIntValue = ((Number) c2315.f7445).intValue();
                 int iIntValue2 = ((Number) c2315.f7446).intValue();
-                c1564.getClass();
+                
                 try {
                     c25824 = c1564.m3267()[iIntValue];
                     if (c25824 == null) {
@@ -399,24 +397,24 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                 if (c25824 instanceof C2585) {
                     c25824 = null;
                 }
-                int i8 = AbstractC1745.f5844;
-                C1299 c1299M3490 = AbstractC0968.m2484(c25824).m3490();
+                int i8 = 0;
+                C1299 c1299M3490 = AbstractC0968.startFieldResolution(c25824).m3490();
                 String[] strArr6 = AbstractC1574.f5469;
                 c1299M3490.f6370 = "field_unReadCount";
                 int iIntValue3 = ((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).intValue();
-                C1299 c1299M3491 = AbstractC0968.m2484(c25824).m3490();
+                C1299 c1299M3491 = AbstractC0968.startFieldResolution(c25824).m3490();
                 c1299M3491.f6370 = "field_unReadMuteCount";
                 int iIntValue4 = ((Number) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024()).intValue();
-                C1299 c1299M3492 = AbstractC0968.m2484(c25824).m3490();
+                C1299 c1299M3492 = AbstractC0968.startFieldResolution(c25824).m3490();
                 c1299M3492.f6370 = "field_msgType";
                 String str3 = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
-                C1299 c1299M3493 = AbstractC0968.m2484(c25824).m3490();
+                C1299 c1299M3493 = AbstractC0968.startFieldResolution(c25824).m3490();
                 c1299M3493.f6370 = "field_content";
                 String str4 = (String) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024();
                 if ((iIntValue3 > 0 || iIntValue4 > 0) && AbstractC2207.m4087(str3, String.valueOf(EnumC3673.f11488.f11492))) {
                     String sendTalker = new MsgInfoBean.QuoteMsg(str4).getSendTalker();
-                    C0774.f2874.getClass();
-                    if (AbstractC2207.m4087(sendTalker, C0774.m2264())) {
+                    
+                    if (AbstractC2207.m4087(sendTalker, C0774.getSelfWxId())) {
                         try {
                             c25825 = c1564.m3267()[iIntValue2];
                             if (c25825 == null) {
@@ -433,11 +431,11 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                         c1564.m3272(spannableStringBuilder);
                     }
                 }
-                return c3497;
+                return unit;
             case 15:
                 C1563 c1565 = (C1563) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1565.getClass();
+                
                 try {
                     c25826 = c1565.m3267()[0];
                     if (c25826 == null) {
@@ -458,9 +456,9 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                 if (c25827 instanceof C2585) {
                     c25827 = null;
                 }
-                int i9 = AbstractC1745.f5844;
-                C1299 c1299M3494 = AbstractC0968.m2484(obj12).m3490();
-                c1299M3494.f4725 = AbstractC2519.m4527(View.class);
+                int i9 = 0;
+                C1299 c1299M3494 = AbstractC0968.startFieldResolution(obj12).m3490();
+                c1299M3494.fieldType = AbstractC2519.classToKClass(View.class);
                 TextView textView = (TextView) AbstractC3580.m5198((ViewGroup) ((C1315) AbstractC2784.m4741(c1299M3494)).m3024(), new int[]{0, 1, 1, 1, 1});
                 Field[] declaredFields = c25827.getClass().getDeclaredFields();
                 int length = declaredFields.length;
@@ -473,25 +471,25 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     if (z) {
                         throw new IllegalArgumentException("Array contains more than one matching element.");
                     }
-                    i10++;
+                    0++;
                     z = true;
                 }
                 if (!z) {
                     throw new NoSuchElementException("Array contains no element matching the predicate.");
                 }
                 Object obj13 = field.get(c25827);
-                int i11 = AbstractC1745.f5844;
-                C1299 c1299M3495 = AbstractC0968.m2484(obj13).m3490();
-                c1299M3495.f4725 = AbstractC2519.m4527(String.class);
+                int i11 = 0;
+                C1299 c1299M3495 = AbstractC0968.startFieldResolution(obj13).m3490();
+                c1299M3495.fieldType = AbstractC2519.classToKClass(String.class);
                 Object obj14 = null;
                 boolean z2 = false;
-                for (Object obj15 : c1299M3495.m3014()) {
+                for (Object obj15 : c1299M3495.resolve()) {
                     String str5 = (String) ((C1315) obj15).m3024();
                     if (str5 != null && str5.length() == 10) {
                         int i12 = 0;
                         while (true) {
                             if (i12 >= str5.length()) {
-                                if (!z2) {
+                                if (true) {
                                     obj14 = obj15;
                                     z2 = true;
                                     break;
@@ -509,13 +507,13 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     throw new NoSuchElementException("Collection contains no element matching the predicate.");
                 }
                 long j = Long.parseLong((String) ((C1315) obj14).m3024()) * ((long) 1000);
-                C2512.f8030.getClass();
-                int i13 = AbstractC2927.f9392;
+                
+                int i13 = 0;
                 textView.setText(AbstractC3681.m5339(j, AbstractC2207.m4087(Instant.ofEpochMilli(j).atZone(ZoneId.systemDefault()).toLocalDate(), LocalDate.now()) ? "HH:mm:ss" : Instant.ofEpochMilli(j).atZone(ZoneId.systemDefault()).toLocalDate().getYear() == LocalDate.now().getYear() ? "M月d日 HH:mm:ss" : "yyyy年M月d日 HH:mm:ss", null, 2));
-                return c3497;
+                return unit;
             case 16:
                 C1563 c1566 = (C1563) obj;
-                c1566.getClass();
+                
                 try {
                     c25828 = c1566.m3267()[2];
                     if (c25828 == null) {
@@ -526,7 +524,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                 }
                 JSONObject jSONObject = (JSONObject) (c25828 instanceof C2585 ? null : c25828);
                 if (jSONObject != null) {
-                    C2512.f8030.getClass();
+                    
                     String[] strArr8 = AbstractC1574.f5469;
                     if (Math.random() > 0.65d) {
                         List listM2212 = AbstractC0745.m2212("Hd", "久雾", "豆子", "拖鞋");
@@ -543,94 +541,94 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     StringBuilder sb2 = new StringBuilder();
                     sb2.append("金额:");
                     double d3 = 100;
-                    sb2.append(d2 / d3);
+                    sb2.append(d2 / 100.0);
                     sb2.append('/');
-                    sb2.append(d / d3);
+                    sb2.append(d / 100.0);
                     sb2.append("元\n");
                     sb.append(sb2.toString());
                     sb.append("数量:" + i15 + '/' + i14 + '\n');
-                    double d4 = (d - d2) / d3;
+                    double d4 = (d - d2) / 100.0;
                     if (d4 > 0.0d) {
                         sb.append("剩余:" + d4 + "元\n");
                     }
                     jSONObject.put("headTitle", sb.toString());
                 }
-                return c3497;
-            case Opcodes.SIPUSH /* 17 */:
-                ((C1020) obj).f3733 = new C2444(18);
-                return c3497;
-            case Opcodes.LDC /* 18 */:
+                return unit;
+            case 17 /* 17 */:
+                ((C1020) obj).thisMethodMatcher = new C2444(18);
+                return unit;
+            case 18 /* 18 */:
                 C1333 c1337 = (C1333) obj;
                 String[] strArr9 = AbstractC1574.f5469;
                 c1337.m3053("com.tencent.mm.plugin.luckymoney.ui");
                 C1981 c1984 = new C1981(4);
                 c1984.m3827("MicroMsg.LuckyMoneyDetailUI", "try get user contact: %s");
                 c1337.f4794 = c1984;
-                return c3497;
+                return unit;
             case 19:
-                ((C1020) obj).f3733 = new C2444(21);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C2444(21);
+                return unit;
             case 20:
                 ((C1563) obj).m3270();
-                return c3497;
-            case Opcodes.ILOAD /* 21 */:
+                return unit;
+            case 21 /* 21 */:
                 C1333 c1338 = (C1333) obj;
                 C1981 c1981M47310 = AbstractC2784.m4739(c1338);
                 String[] strArr10 = AbstractC1574.f5469;
                 c1981M47310.m3825("com.tencent.mm.ui.transmit.SelectConversationUI");
-                Class<Boolean> clsM2184 = AbstractC0743.m2183(AbstractC2519.m4527(Boolean.class));
+                Class<Boolean> clsM2184 = AbstractC0743.m2183(AbstractC2519.classToKClass(Boolean.class));
                 c1981M47310.m3824(clsM2184 != null ? clsM2184 : Boolean.class);
                 c1981M47310.m3827("max_limit_num");
                 c1338.f4794 = c1981M47310;
-                return c3497;
-            case Opcodes.LLOAD /* 22 */:
-                ((C1020) obj).f3733 = new C2444(24);
-                return c3497;
-            case Opcodes.FLOAD /* 23 */:
-                int i16 = AbstractC1745.f5844;
+                return unit;
+            case 22 /* 22 */:
+                ((C1020) obj).thisMethodMatcher = new C2444(24);
+                return unit;
+            case 23 /* 23 */:
+                int i16 = 0;
                 C1299 c1299M4738 = AbstractC2784.m4738((C1563) obj);
-                c1299M4738.f4725 = AbstractC2519.m4527(cls);
+                c1299M4738.fieldType = AbstractC2519.classToKClass(cls);
                 c1299M4738.m3732();
-                for (C1315 c1315 : c1299M4738.m3014()) {
+                for (C1315 c1315 : c1299M4738.resolve()) {
                     Integer num = (Integer) c1315.m3024();
                     if (num != null && num.intValue() == 32) {
-                        c1315.m3025(Integer.MAX_VALUE);
+                        c1315.set(2147483647);
                     }
                 }
-                return c3497;
-            case Opcodes.DLOAD /* 24 */:
+                return unit;
+            case 24 /* 24 */:
                 ((C1333) obj).m3052(new C2444(25));
-                return c3497;
-            case Opcodes.ALOAD /* 25 */:
+                return unit;
+            case 25 /* 25 */:
                 String[] strArr11 = AbstractC1574.f5469;
                 ((C1981) obj).m3827("MicroMsg.InputTextBoundaryCheck", "edit text view is null");
-                return c3497;
+                return unit;
             case 26:
-                int i17 = AbstractC1745.f5844;
+                int i17 = 0;
                 C1299 c1299M4739 = AbstractC2784.m4738((C1563) obj);
                 AbstractC0750.m2218(c1299M4739.f6372, (EnumC1999[]) Arrays.copyOf(new EnumC1999[]{EnumC1999.PUBLIC, EnumC1999.FINAL}, 2));
-                c1299M4739.f4725 = AbstractC2519.m4527(cls);
-                for (C1315 c1316 : c1299M4739.m3014()) {
+                c1299M4739.fieldType = AbstractC2519.classToKClass(cls);
+                for (C1315 c1316 : c1299M4739.resolve()) {
                     Integer num2 = (Integer) c1316.m3024();
                     if (num2 != null && num2.intValue() == 10) {
-                        c1316.m3025(Integer.MAX_VALUE);
+                        c1316.set(2147483647);
                     }
                 }
-                return c3497;
+                return unit;
             case 27:
                 C1333 c1339 = (C1333) obj;
                 C1981 c1981M47311 = AbstractC2784.m4739(c1339);
                 c1981M47311.m3826("callback");
                 c1339.f4794 = c1981M47311;
-                return c3497;
+                return unit;
             case 28:
                 ((C1563) obj).m3270();
-                return c3497;
+                return unit;
             default:
                 C1020 c1021 = (C1020) obj;
-                c1021.f3732 = new C2544(i5);
-                c1021.f3733 = new C2544(i6);
-                return c3497;
+                c1021.declaringClassMatcher = new C2544(0);
+                c1021.thisMethodMatcher = new C2544(1);
+                return unit;
         }
     }
 }

@@ -3,14 +3,12 @@ package p000;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
 import com.google.android.material.radiobutton.MaterialRadioButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᲁᛸᤞᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -38,20 +36,20 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
         switch (this.f8853) {
             case 0:
                 ((C1333) obj).m3052(new C2734(27));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 1:
                 C1563 c1563 = (C1563) obj;
                 C3512 c3512 = C3512.f11014;
                 Object objM3268 = c1563.m3268();
                 String strM2542 = C2766.f8855.m2542();
-                c3512.getClass();
+                
                 C3512.m5101(objM3268, strM2542);
                 C3512.m5100(c1563.m3268(), C2767.f8856.m2542());
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 2:
                 String[] strArr = AbstractC1574.f5469;
                 ((C1981) obj).m3827("MicroMsg.snsMediaStorage", "SnsCompressResolutionFor2G", "SnsCompressResolutionFor3G", "SnsCompressResolutionFor4G", "SnsCompressResolutionForWifi");
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 3:
                 String[] strArr2 = AbstractC1574.f5469;
                 c3561 = null;
@@ -74,7 +72,7 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                                 materialRadioButton2.setChecked(true);
                             }
                             c2007 = new C2007();
-                            C2772.f8869.getClass();
+                            
                             c2007.f6678 = C2772.f8871;
                             c2007.f6680 = linearLayout;
                             c2007.m3870("保存", new C2042(16, c0243));
@@ -84,12 +82,12 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                 }
                 throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i)));
             case 4:
-                ((C1020) obj).f3733 = new C2764(7);
-                return C3497.f10997;
+                ((C1020) obj).thisMethodMatcher = new C2764(7);
+                return Unit.INSTANCE;
             case 5:
                 C1563 c1564 = (C1563) obj;
                 if (C2771.f8868.m2538() == EnumC2770.f8864.f8867) {
-                    c1564.getClass();
+                    
                     try {
                         c2585 = c1564.m3267()[0];
                         if (c2585 == null) {
@@ -135,18 +133,17 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                     String str4 = str3 != null ? str3 : "";
                     C2759 c2759 = C2759.f8848;
                     String strConcat = str.concat(str4);
-                    c2759.getClass();
-                    Object objInvoke = AbstractC1574.m3315(C2758.f8847).invoke(null, str2, strConcat);
-                    "null cannot be cast to non-null type kotlin.Boolean";
+                    
+                    Object objInvoke = AbstractC1574.dexToMethod(C2758.f8847).invoke(null, str2, strConcat);
                     Boolean bool = (Boolean) objInvoke;
-                    bool.getClass();
+                    
                     c1564.m3272(bool);
                 }
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 6:
                 C1563 c1565 = (C1563) obj;
                 if (C2771.f8868.m2538() == EnumC2770.f8865.f8867) {
-                    c1565.getClass();
+                    
                     try {
                         c2588 = c1565.m3267()[0];
                         if (c2588 == null) {
@@ -206,19 +203,18 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                         File file = new File(str6);
                         C3528 c3528 = C3528.f11041;
                         String strConcat2 = str5.concat(str8);
-                        c3528.getClass();
-                        Object objInvoke2 = AbstractC1574.m3315(C3527.f11040).invoke(null, strConcat2, Boolean.TRUE);
-                        "null cannot be cast to non-null type kotlin.String";
+                        
+                        Object objInvoke2 = AbstractC1574.dexToMethod(C3527.f11040).invoke(null, strConcat2, Boolean.TRUE);
                         AbstractC1328.m3042(file, new File((String) objInvoke2));
                     }
                 }
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 7:
                 ((C1333) obj).m3052(new C2764(2));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 8:
                 C1984 c1984 = (C1984) obj;
-                c1984.getClass();
+                
                 C1981 c1981 = new C1981(4);
                 String[] strArr3 = AbstractC1574.f5469;
                 c1981.m3826("compareContent");
@@ -227,49 +223,49 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                 c1982.m3826("op");
                 c1984.m3848(c1982);
                 c1984.m3849(new C2764(9));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 9:
                 C1981 c1983 = (C1981) obj;
                 C2764 c2764 = new C2764(10);
-                c1983.getClass();
+                
                 C1984 c1985 = new C1984(4);
                 c2764.invoke(c1985);
                 c1983.f6565 = c1985;
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 10:
                 C1984 c1986 = (C1984) obj;
                 c1986.m3849(new C2764(11));
                 c1986.m3849(new C2764(12));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 11:
                 String[] strArr4 = AbstractC1574.f5469;
                 ((C1981) obj).m3827("getCommentInfo", "com.tencent.mm.plugin.sns.ui.SnsCommentFooter");
-                return C3497.f10997;
-            case Opcodes.FCONST_1 /* 12 */:
+                return Unit.INSTANCE;
+            case 12 /* 12 */:
                 String[] strArr5 = AbstractC1574.f5469;
                 ((C1981) obj).m3827("initCommentInfo", "com.tencent.mm.plugin.sns.ui.SnsSingleTextViewUI");
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 13:
-                ((C1020) obj).f3732 = new C2764(14);
-                return C3497.f10997;
-            case Opcodes.DCONST_0 /* 14 */:
+                ((C1020) obj).declaringClassMatcher = new C2764(14);
+                return Unit.INSTANCE;
+            case 14 /* 14 */:
                 ((C1332) obj).m3050(new C2764(15));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 15:
                 ((C0705) obj).m2126(new C2764(8));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 16:
-                ((C1020) obj).f3733 = new C2764(22);
-                return C3497.f10997;
-            case Opcodes.SIPUSH /* 17 */:
-                ((C1020) obj).f3733 = new C2764(20);
-                return C3497.f10997;
-            case Opcodes.LDC /* 18 */:
-                ((C1020) obj).f3733 = new C2764(21);
-                return C3497.f10997;
+                ((C1020) obj).thisMethodMatcher = new C2764(22);
+                return Unit.INSTANCE;
+            case 17 /* 17 */:
+                ((C1020) obj).thisMethodMatcher = new C2764(20);
+                return Unit.INSTANCE;
+            case 18 /* 18 */:
+                ((C1020) obj).thisMethodMatcher = new C2764(21);
+                return Unit.INSTANCE;
             case 19:
-                ((C1020) obj).f3733 = new C2764(23);
-                return C3497.f10997;
+                ((C1020) obj).thisMethodMatcher = new C2764(23);
+                return Unit.INSTANCE;
             case 20:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr6 = AbstractC1574.f5469;
@@ -277,42 +273,42 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                 C1981 c1987 = new C1981(4);
                 c1987.m3827("getSnsVideoFullPath", "com.tencent.mm.plugin.sns.model.SnsVideoLogic");
                 c1333.f4794 = c1987;
-                return C3497.f10997;
-            case Opcodes.ILOAD /* 21 */:
+                return Unit.INSTANCE;
+            case 21 /* 21 */:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr7 = AbstractC1574.f5469;
                 c1334.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1988 = new C1981(4);
                 c1988.m3827("getDownloadVideoPath", "com.tencent.mm.plugin.sns.model.SnsVideoLogic");
                 c1334.f4794 = c1988;
-                return C3497.f10997;
-            case Opcodes.LLOAD /* 22 */:
+                return Unit.INSTANCE;
+            case 22 /* 22 */:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr8 = AbstractC1574.f5469;
                 c1335.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1989 = new C1981(4);
                 c1989.m3827("getSnsVideoPath", "com.tencent.mm.plugin.sns.model.SnsVideoLogic");
                 c1335.f4794 = c1989;
-                return C3497.f10997;
-            case Opcodes.FLOAD /* 23 */:
+                return Unit.INSTANCE;
+            case 23 /* 23 */:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr9 = AbstractC1574.f5469;
                 c1336.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c19810 = new C1981(4);
                 c19810.m3827("getSnsVideoThumbImagePath", "com.tencent.mm.plugin.sns.model.SnsVideoLogic");
                 c1336.f4794 = c19810;
-                return C3497.f10997;
-            case Opcodes.DLOAD /* 24 */:
-                ((C1020) obj).f3733 = new C2764(25);
-                return C3497.f10997;
-            case Opcodes.ALOAD /* 25 */:
+                return Unit.INSTANCE;
+            case 24 /* 24 */:
+                ((C1020) obj).thisMethodMatcher = new C2764(25);
+                return Unit.INSTANCE;
+            case 25 /* 25 */:
                 C1333 c1337 = (C1333) obj;
                 String[] strArr10 = AbstractC1574.f5469;
                 c1337.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c19811 = new C1981(4);
                 c19811.m3827("MicroMsg.SnsVideoService", "add video task, but url is weixin, do nothing");
                 c1337.f4794 = c19811;
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 26:
                 String[] strArr11 = AbstractC1574.f5469;
                 c3561 = null;
@@ -326,7 +322,7 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                         C2012 c2012 = new C2012(linearLayout2, textInputEditText);
                         textInputEditText.setText(String.valueOf(C2796.f8922.m2539()));
                         c2007 = new C2007();
-                        C2797.f8923.getClass();
+                        
                         c2007.f6678 = C2797.f8925;
                         c2007.f6680 = linearLayout2;
                         c2007.m3870("保存", new C2042(17, c2012));
@@ -335,8 +331,8 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                 }
                 throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i2)));
             case 27:
-                ((C1020) obj).f3733 = new C2764(28);
-                return C3497.f10997;
+                ((C1020) obj).thisMethodMatcher = new C2764(28);
+                return Unit.INSTANCE;
             case 28:
                 C1333 c1338 = (C1333) obj;
                 String[] strArr12 = AbstractC1574.f5469;
@@ -344,12 +340,12 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                 C1981 c19812 = new C1981(4);
                 c19812.m3827("MicroMsg.Sport.DeviceStepManager", "get today step from %s todayStep %d");
                 c1338.f4794 = c19812;
-                return C3497.f10997;
+                return Unit.INSTANCE;
             default:
                 ((C1563) obj).m3272(Long.valueOf(Math.min(C2796.f8922.m2539(), 98800L)));
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
         AbstractC2784.m4755(c2007, c3561, 3);
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

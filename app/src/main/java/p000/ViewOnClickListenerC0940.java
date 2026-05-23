@@ -24,7 +24,7 @@ public final class ViewOnClickListenerC0940 implements View.OnClickListener {
         switch (this.f3440) {
             case 0:
                 C0662 c0662 = (C0662) this.f3441;
-                ((C0943) c0662.f2532).getClass();
+                
                 c0662.m2052(view);
                 break;
             case 1:
@@ -44,7 +44,7 @@ public final class ViewOnClickListenerC0940 implements View.OnClickListener {
             default:
                 C3418 c3418 = (C3418) this.f3441;
                 if (c3418.f10773 != null) {
-                    c3418.getClass();
+                    
                 }
                 break;
         }

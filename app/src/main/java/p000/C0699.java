@@ -77,7 +77,7 @@ public final class C0699 extends AbstractC2270 {
         if (!arrayList.isEmpty()) {
             m2119();
             for (C1203 c1203 : arrayList) {
-                c1203.getClass();
+                
                 c1023.f3744.m3018(c1203.f4342);
             }
         }
@@ -85,7 +85,7 @@ public final class C0699 extends AbstractC2270 {
         if (!arrayList2.isEmpty()) {
             Collections.sort(arrayList2);
             for (C1203 c1204 : arrayList2) {
-                c1204.getClass();
+                
                 c1023.f3744.m3018(c1204.f4342);
             }
         }
@@ -93,7 +93,7 @@ public final class C0699 extends AbstractC2270 {
         if (!arrayList3.isEmpty()) {
             Collections.sort(arrayList3);
             for (C1205 c1205 : arrayList3) {
-                c1205.getClass();
+                
                 C1979 c1979 = c1023.f3745;
                 C1986 c1986 = c1023.f3737;
                 c1979.m3815(c1205.f4344);
@@ -109,7 +109,7 @@ public final class C0699 extends AbstractC2270 {
         }
         Collections.sort(arrayList4);
         for (C1205 c1206 : arrayList4) {
-            c1206.getClass();
+            
             C1979 c19710 = c1023.f3745;
             C1986 c1987 = c1023.f3737;
             c19710.m3815(c1206.f4344);

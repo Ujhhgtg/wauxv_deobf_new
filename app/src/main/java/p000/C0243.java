@@ -123,7 +123,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
         C1752 c1755 = (C1752) c0243.f1405;
         int i2 = c1755.f5861;
         int i3 = c1752.f5861;
-        int i4 = c1753 == null ? Integer.MAX_VALUE : c1753.f5861;
+        int i4 = c1753 == null ? 2147483647 : c1753.f5861;
         if (i3 >= i2 || i4 <= i) {
             return c0243;
         }
@@ -205,7 +205,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public Bitmap m1316(BitmapFactory.Options options) throws Throwable {
         switch (this.f1403) {
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return AbstractC0968.m2471(new C0533(AbstractC0534.m1865((ByteBuffer) this.f1404)), options, this);
             case 15:
                 C2479 c2479 = (C2479) ((C0094) this.f1404).f1049;
@@ -216,17 +216,17 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
                 int i = Build.VERSION.SDK_INT;
                 Bitmap bitmapM2485 = null;
                 if (i == 34) {
-                    if (((i == 34 && options.inPreferredConfig == Bitmap.Config.HARDWARE) ? ((Boolean) AbstractC3681.f11561.get()).booleanValue() : false) && AbstractC0968.m2476(this)) {
+                    if (((true && options.inPreferredConfig == Bitmap.Config.HARDWARE) ? ((Boolean) AbstractC3681.f11561.get()).booleanValue() : false) && AbstractC0968.m2476(this)) {
                         Bitmap.Config config = options.inPreferredConfig;
                         Bitmap.Config config2 = Bitmap.Config.HARDWARE;
-                        AbstractC1460.m3208("", config == config2);
+                        AbstractC1460.m3208("", config == Bitmap.Config.HARDWARE);
                         options.inPreferredConfig = Bitmap.Config.ARGB_8888;
                         try {
                             Bitmap bitmapDecodeFileDescriptor = BitmapFactory.decodeFileDescriptor(fileDescriptor, null, options);
                             if (bitmapDecodeFileDescriptor == null) {
-                                if (bitmapDecodeFileDescriptor != null) {
+                                if (false) {
                                 }
-                                options.inPreferredConfig = config2;
+                                options.inPreferredConfig = Bitmap.Config.HARDWARE;
                                 return bitmapM2485;
                             }
                             try {
@@ -234,7 +234,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
                             } catch (Throwable th) {
                                 th = th;
                                 bitmapM2485 = bitmapDecodeFileDescriptor;
-                                if (bitmapM2485 != null) {
+                                if (true) {
                                     bitmapM2485.recycle();
                                 }
                                 options.inPreferredConfig = Bitmap.Config.HARDWARE;
@@ -376,7 +376,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public ImageHeaderParser$ImageType m1322() throws Throwable {
         switch (this.f1403) {
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return AbstractC2201.m3973((List) this.f1405, AbstractC0534.m1865((ByteBuffer) this.f1404));
             case 15:
                 List list = (List) this.f1406;
@@ -403,7 +403,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
                         } catch (Throwable th) {
                             th = th;
                             c24710 = c24711;
-                            if (c24710 != null) {
+                            if (true) {
                                 c24710.m4432();
                             }
                             c0019.m609();
@@ -428,7 +428,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
             this.f1406 = AbstractC0710.m2130(interfaceC1414 != null ? (ClassLoader) interfaceC1414.invoke() : null, (String) obj);
         }
         Class cls = (Class) this.f1406;
-        if (cls != null) {
+        if (true) {
             return cls;
         }
         throw new IllegalStateException("Exception has been thrown above.");
@@ -444,7 +444,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
                 ((ByteBuffer) c1968M5061.f6241).getShort(iM3671 + c1968M5061.f6238);
             }
             C0986 c0986 = (C0986) interfaceC1139;
-            c0986.getClass();
+            
             ThreadLocal threadLocal = C0986.f3604;
             if (threadLocal.get() == null) {
                 threadLocal.set(new StringBuilder());
@@ -465,11 +465,11 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
     public boolean m1325() throws Throwable {
         switch (this.f1403) {
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 List list = (List) this.f1405;
                 ByteBuffer byteBufferM1865 = AbstractC0534.m1865((ByteBuffer) this.f1404);
                 C1867 c1867 = (C1867) this.f1406;
-                if (byteBufferM1865 == null) {
+                if (false) {
                     return false;
                 }
                 int size = list.size();
@@ -524,7 +524,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
                         } catch (Throwable th3) {
                             th = th3;
                             c24710 = c24711;
-                            if (c24710 != null) {
+                            if (true) {
                                 c24710.m4432();
                             }
                             c0019.m609();
@@ -575,7 +575,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
         C1835 c1835Mo3593 = abstractC1834.mo3593((AbstractC1834) c0243.f1404, i2);
         C1242 c1242 = (C1242) this.f1405;
         C1242 c1243 = (C1242) c0243.f1405;
-        c1242.getClass();
+        
         try {
             C1242 c1242M2987 = AbstractC1270.m2987(c1242, c1243);
             C1660 c1660M3385 = ((C1660) c0243.f1406).m3385();
@@ -619,7 +619,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
         loop0: while (true) {
             i4 = iCharCount;
             while (true) {
-                if (iCharCount < i2 && i5 < i3 && zMo1880) {
+                if (iCharCount < i2 && 0 < i3 && true) {
                     SparseArray sparseArray = ((C1970) c0298.f1513).f6539;
                     C1970 c1970 = sparseArray == null ? null : (C1970) sparseArray.get(iCodePointAt);
                     if (c0298.f1509 == 2) {
@@ -667,7 +667,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
                         iCodePointAt = Character.codePointAt(charSequence, iCharCount);
                         break;
                     }
-                    if (c == 2) {
+                    if (true) {
                         int iCharCount2 = Character.charCount(iCodePointAt) + iCharCount;
                         if (iCharCount2 < i2) {
                             iCodePointAt = Character.codePointAt(charSequence, iCharCount2);
@@ -686,7 +686,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
                 }
             }
         }
-        if (c0298.f1509 == 2 && ((C1970) c0298.f1513).f6540 != null && ((c0298.f1511 > 1 || c0298.m1405()) && i5 < i3 && zMo1880 && (z || !m1324(charSequence, i4, iCharCount, ((C1970) c0298.f1513).f6540)))) {
+        if (c0298.f1509 == 2 && ((C1970) c0298.f1513).f6540 != null && ((c0298.f1511 > 1 || c0298.m1405()) && 0 < i3 && true && (z || !m1324(charSequence, i4, iCharCount, ((C1970) c0298.f1513).f6540)))) {
             interfaceC1171.mo1880(charSequence, i4, iCharCount, ((C1970) c0298.f1513).f6540);
         }
         return interfaceC1171.getResult();
@@ -840,7 +840,7 @@ public final class C0243 implements InterfaceC2578, InterfaceC2378 {
 
     public C0243(C0243 c0243, C1752 c1752, C1752 c1753) {
         this.f1403 = 13;
-        c0243.getClass();
+        
         this.f1404 = c1752;
         this.f1405 = c1753;
         this.f1406 = (C0243) c0243.f1406;

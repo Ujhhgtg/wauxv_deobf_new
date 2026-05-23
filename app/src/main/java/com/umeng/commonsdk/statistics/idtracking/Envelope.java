@@ -29,7 +29,7 @@ public class Envelope {
     private final byte[] SEED = {0, 0, 0, 0, 0, 0, 0, 0};
     private final int CODEX_ENCRYPT = 1;
     private final int CODEX_NORMAL = 0;
-    private String mVersion = BuildConfig.f;
+    private String mVersion = "1.0";
     private byte[] mSignature = null;
     private byte[] mGuid = null;
     private byte[] mChecksum = null;
@@ -59,14 +59,14 @@ public class Envelope {
     public static Envelope genEncryptEnvelope(Context context, String str, byte[] bArr) {
         try {
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(context);
-            String string = sharedPreferences.getString(com.umeng.ccg.a.A, null);
+            String string = sharedPreferences.getString("signature", null);
             int i = sharedPreferences.getInt("serial", 1);
             Envelope envelope = new Envelope(bArr, str, "123456789098765432102:00:00:00:00:00".getBytes());
             envelope.setEncrypt(true);
             envelope.setSignature(string);
             envelope.setSerialNumber(i);
             envelope.seal();
-            sharedPreferences.edit().putInt("serial", i + 1).putString(com.umeng.ccg.a.A, envelope.getSignature()).commit();
+            sharedPreferences.edit().putInt("serial", i + 1).putString("signature", envelope.getSignature()).commit();
             envelope.export(context);
             return envelope;
         } catch (Exception e) {
@@ -78,13 +78,13 @@ public class Envelope {
     public static Envelope genEnvelope(Context context, String str, byte[] bArr) {
         try {
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(context);
-            String string = sharedPreferences.getString(com.umeng.ccg.a.A, null);
+            String string = sharedPreferences.getString("signature", null);
             int i = sharedPreferences.getInt("serial", 1);
             Envelope envelope = new Envelope(bArr, str, "123456789098765432102:00:00:00:00:00".getBytes());
             envelope.setSignature(string);
             envelope.setSerialNumber(i);
             envelope.seal();
-            sharedPreferences.edit().putInt("serial", i + 1).putString(com.umeng.ccg.a.A, envelope.getSignature()).commit();
+            sharedPreferences.edit().putInt("serial", i + 1).putString("signature", envelope.getSignature()).commit();
             envelope.export(context);
             return envelope;
         } catch (Exception e) {
@@ -124,12 +124,12 @@ public class Envelope {
         if (sharedPreferences == null) {
             return null;
         }
-        return sharedPreferences.getString(com.umeng.ccg.a.A, null);
+        return sharedPreferences.getString("signature", null);
     }
 
     public void export(Context context) {
         String str = this.mAddress;
-        String strImprintProperty = UMEnvelopeBuild.imprintProperty(context, bv.g, null);
+        String strImprintProperty = UMEnvelopeBuild.imprintProperty(context, "umid", null);
         String hexString = DataHelper.toHexString(this.mSignature);
         byte[] bArr = new byte[16];
         System.arraycopy(this.mSignature, 2, bArr, 0, 16);
@@ -138,11 +138,11 @@ public class Envelope {
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("appkey", str);
             if (strImprintProperty != null) {
-                jSONObject.put(bv.g, strImprintProperty);
+                jSONObject.put("umid", strImprintProperty);
             }
-            jSONObject.put(com.umeng.ccg.a.A, hexString);
+            jSONObject.put("signature", hexString);
             jSONObject.put("checksum", hexString2);
-            File file = new File(context.getFilesDir(), be.b().b(be.b));
+            File file = new File(context.getFilesDir(), be.b().b("exp"));
             if (!file.exists()) {
                 file.mkdir();
             }
@@ -155,9 +155,9 @@ public class Envelope {
             jSONObject2.put("appkey", str);
             jSONObject2.put("channel", UMUtils.getChannel(context));
             if (strImprintProperty != null) {
-                jSONObject2.put(bv.g, HelperUtils.getUmengMD5(strImprintProperty));
+                jSONObject2.put("umid", HelperUtils.getUmengMD5(strImprintProperty));
             }
-            HelperUtils.writeFile(new File(context.getFilesDir(), be.b().b(be.h)), jSONObject2.toString());
+            HelperUtils.writeFile(new File(context.getFilesDir(), be.b().b("exid")), jSONObject2.toString());
         } catch (Throwable th2) {
             th2.printStackTrace();
         }

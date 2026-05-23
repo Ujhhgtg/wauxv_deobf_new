@@ -45,7 +45,7 @@ public class b {
             if ((i & 8) != 8) {
                 return;
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> envelope file created >>> " + str);
+            UMRTLog.i("MobclickRT", "--->>> envelope file created >>> " + str);
             b.a(b.f);
         }
     }
@@ -65,13 +65,13 @@ public class b {
                                 String str = b.getFilesDir() + File.separator + com.umeng.commonsdk.stateless.a.f;
                                 File file = new File(str);
                                 if (!file.exists()) {
-                                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 2号数据仓目录不存在，创建之。");
+                                    UMRTLog.e("MobclickRT", "--->>> 2号数据仓目录不存在，创建之。");
                                     file.mkdir();
                                 }
                                 a aVar = new a(str);
                                 i = aVar;
                                 aVar.startWatching();
-                                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 2号数据仓File Monitor启动.");
+                                UMRTLog.e("MobclickRT", "--->>> 2号数据仓File Monitor启动.");
                             }
                             if (d == null) {
                                 d = new Handler(c.getLooper()) { // from class: com.umeng.commonsdk.stateless.b.1
@@ -111,10 +111,10 @@ public class b {
     public static void a(boolean z) {
         k = z;
         if (!z) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>网络断连： 2号数据仓");
+            UMRTLog.e("MobclickRT", "--->>>网络断连： 2号数据仓");
         } else {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>网络可用： 触发2号数据仓信封消费动作。");
-            b(f);
+            UMRTLog.e("MobclickRT", "--->>>网络可用： 触发2号数据仓信封消费动作。");
+            b(274);
         }
     }
 
@@ -133,11 +133,11 @@ public class b {
     }
 
     public static void c() {
-        b(g);
+        b(275);
     }
 
     public static void d() {
-        b(h);
+        b(512);
     }
 
     private static void i() {
@@ -174,7 +174,7 @@ public class b {
         String strPollFirst;
         byte[] bArrA;
         if (l.size() <= 0) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> todoList无内容，无需处理。");
+            UMRTLog.e("MobclickRT", "--->>> todoList无内容，无需处理。");
             return;
         }
         do {
@@ -189,7 +189,7 @@ public class b {
                         bArrA = null;
                     }
                     String name = file.getName();
-                    String strSubstring = !TextUtils.isEmpty(name) ? name.substring(0, 1) : bv.aH;
+                    String strSubstring = !TextUtils.isEmpty(name) ? name.substring(0, 1) : "u";
                     String strC = d.c(d.d(name));
                     if (SdkVersion.SDK_TYPE == 0) {
                         cVar.a();
@@ -201,7 +201,7 @@ public class b {
                         file.delete();
                     }
                 } else {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 信封文件不存在，处理下一个文件。");
+                    UMRTLog.e("MobclickRT", "--->>> 信封文件不存在，处理下一个文件。");
                 }
             }
         } while (strPollFirst != null);
@@ -221,7 +221,7 @@ public class b {
                 if (fileA != null && fileA.getParentFile() != null && !TextUtils.isEmpty(fileA.getParentFile().getName())) {
                     c cVar = new c(b);
                     String str = new String(Base64.decode(fileA.getParentFile().getName(), 0));
-                    if (com.umeng.commonsdk.internal.a.a.equalsIgnoreCase(str) || com.umeng.commonsdk.internal.a.b.equalsIgnoreCase(str) || com.umeng.commonsdk.internal.a.H.equalsIgnoreCase(str)) {
+                    if ("umpx_internal".equalsIgnoreCase(str) || "umpx_crash".equalsIgnoreCase(str) || "umpx_oplus_lbs".equalsIgnoreCase(str)) {
                         new File(fileA.getAbsolutePath()).delete();
                     } else {
                         ULog.i("walle", "[stateless] handleProcessNext, pathUrl is " + str);
@@ -230,12 +230,12 @@ public class b {
                         } catch (Exception unused) {
                             bArrA = null;
                         }
-                        String str2 = bv.aH;
+                        String str2 = "u";
                         if (UMServerURL.PATH_SHARE.equalsIgnoreCase(str)) {
-                            str2 = bv.aB;
+                            str2 = "s";
                         }
                         if (UMServerURL.PATH_PUSH_LAUNCH.equalsIgnoreCase(str) || UMServerURL.PATH_PUSH_REGIST.equalsIgnoreCase(str) || UMServerURL.PATH_PUSH_LOG.equalsIgnoreCase(str)) {
-                            str2 = bv.ax;
+                            str2 = "p";
                         }
                         if (SdkVersion.SDK_TYPE == 0) {
                             cVar.a();
@@ -266,7 +266,7 @@ public class b {
         try {
             File file = new File(b.getFilesDir() + File.separator + com.umeng.commonsdk.stateless.a.e);
             if (file.exists() && file.isDirectory()) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 2号数据仓：删除stateless目录。");
+                UMRTLog.e("MobclickRT", "--->>> 2号数据仓：删除stateless目录。");
                 d.a(file);
             }
         } catch (Throwable unused) {
@@ -287,8 +287,8 @@ public class b {
         try {
             File file = new File(b.getFilesDir() + File.separator + com.umeng.commonsdk.stateless.a.e);
             if (file.exists() && file.isDirectory()) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>2号数据仓：检测到stateless目录。");
-                b(a);
+                UMRTLog.e("MobclickRT", "--->>>2号数据仓：检测到stateless目录。");
+                b(273);
             }
         } catch (Throwable unused) {
         }
@@ -310,8 +310,8 @@ public class b {
     }
 
     public static void b() {
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>信封构建成功： 触发2号数据仓信封消费动作。");
-        b(f);
+        UMRTLog.e("MobclickRT", "--->>>信封构建成功： 触发2号数据仓信封消费动作。");
+        b(274);
     }
 
     public static void a(int i2) {

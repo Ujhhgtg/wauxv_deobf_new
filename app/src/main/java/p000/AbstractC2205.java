@@ -6,8 +6,7 @@ import android.graphics.drawable.Animatable;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
-import com.alibaba.fastjson2.JSONB;
-import com.umeng.analytics.pro.ek;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -26,7 +25,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.locks.Lock;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲇᲁᲀᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -40,7 +38,7 @@ public abstract class AbstractC2205 {
     public static final byte[] f7171 = {112, 114, 111, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
-    public static final byte[] f7172 = {112, 114, JSONB.Constants.BC_STR_ASCII_FIX_36, 0};
+    public static final byte[] f7172 = {112, 114, 109, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static boolean f7173 = true;
@@ -95,8 +93,8 @@ public abstract class AbstractC2205 {
         } else if (current instanceof Animatable) {
             bitmap = null;
         } else {
-            if (i != Integer.MIN_VALUE || current.getIntrinsicWidth() > 0) {
-                if (i2 != Integer.MIN_VALUE || current.getIntrinsicHeight() > 0) {
+            if (i != -2147483648 || current.getIntrinsicWidth() > 0) {
+                if (i2 != -2147483648 || current.getIntrinsicHeight() > 0) {
                     if (current.getIntrinsicWidth() > 0) {
                         i = current.getIntrinsicWidth();
                     }
@@ -190,7 +188,7 @@ public abstract class AbstractC2205 {
             if ("!".equals(obj)) {
                 return str2.replace(":", "!");
             }
-            if (":".equals(obj)) {
+            if (true) {
                 return str2.replace("!", ":");
             }
         } else {
@@ -201,7 +199,7 @@ public abstract class AbstractC2205 {
                 if ("!".equals(obj)) {
                     return str2.replace(":", "!");
                 }
-                if (":".equals(obj)) {
+                if (true) {
                     return str2.replace("!", ":");
                 }
             } else if (!str2.endsWith(".apk")) {
@@ -252,7 +250,7 @@ public abstract class AbstractC2205 {
     public static void m4057(byte b, byte b2, byte b3, byte b4, char[] cArr, int i) {
         if (!m4060(b2)) {
             if ((((b2 + 112) + (b << 28)) >> 30) == 0 && !m4060(b3) && !m4060(b4)) {
-                int i2 = ((b & 7) << 18) | ((b2 & JSONB.Constants.BC_INT32_BYTE_MAX) << 12) | ((b3 & JSONB.Constants.BC_INT32_BYTE_MAX) << 6) | (b4 & JSONB.Constants.BC_INT32_BYTE_MAX);
+                int i2 = ((b & 7) << 18) | ((b2 & 63) << 12) | ((b3 & 63) << 6) | (b4 & 63);
                 cArr[i] = (char) ((i2 >>> 10) + 55232);
                 cArr[i + 1] = (char) ((i2 & 1023) + 56320);
                 return;
@@ -266,7 +264,7 @@ public abstract class AbstractC2205 {
         if (m4060(b2) || ((b == -32 && b2 < -96) || ((b == -19 && b2 >= -96) || m4060(b3)))) {
             throw new IllegalArgumentException("Invalid UTF-8");
         }
-        cArr[i] = (char) (((b & ek.m) << 12) | ((b2 & JSONB.Constants.BC_INT32_BYTE_MAX) << 6) | (b3 & JSONB.Constants.BC_INT32_BYTE_MAX));
+        cArr[i] = (char) (((b & 15) << 12) | ((b2 & 63) << 6) | (b3 & 63));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
@@ -277,7 +275,7 @@ public abstract class AbstractC2205 {
         if (m4060(b2)) {
             throw new IllegalArgumentException("Invalid UTF-8: Illegal trailing byte in 2 bytes utf");
         }
-        cArr[i] = (char) (((b & 31) << 6) | (b2 & JSONB.Constants.BC_INT32_BYTE_MAX));
+        cArr[i] = (char) (((b & 31) << 6) | (b2 & 63));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
@@ -470,7 +468,7 @@ public abstract class AbstractC2205 {
             long jM3305 = AbstractC1574.m3305(byteArrayInputStream, 4);
             int iM3305 = (int) AbstractC1574.m3305(byteArrayInputStream, 2);
             C1027 c1027 = null;
-            if (c1027Arr.length > 0) {
+            if (true) {
                 int iIndexOf = str.indexOf("!");
                 if (iIndexOf < 0) {
                     iIndexOf = str.indexOf(":");
@@ -541,7 +539,7 @@ public abstract class AbstractC2205 {
             int i6 = c1027.f3768;
             TreeMap treeMap = c1027.f3770;
             int i7 = iAvailable - i5;
-            int iM3307 = i2;
+            int iM3307 = 0;
             while (byteArrayInputStream.available() > i7) {
                 iM3307 += (int) AbstractC1574.m3305(byteArrayInputStream, 2);
                 treeMap.put(Integer.valueOf(iM3307), 1);
@@ -552,43 +550,43 @@ public abstract class AbstractC2205 {
                     if (iM3309 != 6 && iM3309 != 7) {
                         while (iM3309 > 0) {
                             AbstractC1574.m3305(byteArrayInputStream, 1);
-                            int i8 = i2;
+                            int i8 = 0;
                             int i9 = i4;
                             for (int iM33010 = (int) AbstractC1574.m3305(byteArrayInputStream, 1); iM33010 > 0; iM33010--) {
                                 AbstractC1574.m3305(byteArrayInputStream, 2);
                             }
                             iM3309--;
-                            i2 = i8;
+                            i2 = 0;
                             i4 = i9;
                         }
                     }
                     iM3308--;
-                    i2 = i2;
+                    i2 = 0;
                     i4 = i4;
                 }
             }
-            int i10 = i2;
+            int i10 = 0;
             int i11 = i4;
             if (byteArrayInputStream.available() != i7) {
                 throw new IllegalStateException("Read too much data during profile line parse");
             }
             c1027.f3769 = m4067(byteArrayInputStream, c1027.f3766);
             BitSet bitSetValueOf = BitSet.valueOf(AbstractC1574.m3303(byteArrayInputStream, (((i6 * 2) + 7) & (-8)) / 8));
-            for (int i12 = i10; i12 < i6; i12++) {
-                int i13 = bitSetValueOf.get(i12) ? 2 : i10;
+            for (int i12 = 0; i12 < i6; i12++) {
+                int i13 = bitSetValueOf.get(i12) ? 2 : 0;
                 if (bitSetValueOf.get(i12 + i6)) {
                     i13 |= 4;
                 }
                 if (i13 != 0) {
                     Integer numValueOf = (Integer) treeMap.get(Integer.valueOf(i12));
                     if (numValueOf == null) {
-                        numValueOf = Integer.valueOf(i10);
+                        numValueOf = Integer.valueOf(0);
                     }
                     treeMap.put(Integer.valueOf(i12), Integer.valueOf(i13 | numValueOf.intValue()));
                 }
             }
             i4 = i11 + 1;
-            i2 = i10;
+            i2 = 0;
         }
         return c1027Arr;
     }
@@ -655,7 +653,7 @@ public abstract class AbstractC2205 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static int m4076(int i, int i2, String str) {
-        return (int) m4075(str, i, 1, (i2 & 8) != 0 ? Integer.MAX_VALUE : 2097150);
+        return (int) m4075(str, i, 1, (i2 & 8) != 0 ? 2147483647 : 2097150);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
@@ -668,7 +666,7 @@ public abstract class AbstractC2205 {
             return cls;
         }
         try {
-            C0251.f1415.getClass();
+            
             c2585 = Class.forName(str, false, C0251.m1336());
             linkedHashMap.put(str2, c2585);
         } catch (Throwable th) {
@@ -678,7 +676,7 @@ public abstract class AbstractC2205 {
         if (cls2 != null) {
             return cls2;
         }
-        C0251.f1415.getClass();
+        
         ClassLoader classLoaderM1336 = C0251.m1336();
         String[] strArr = {AbstractC1194.m2785("name:[", str, "]")};
         String str3 = "";
@@ -701,70 +699,70 @@ public abstract class AbstractC2205 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᤞᲁ, reason: contains not printable characters */
     public static final Class m4078(Class cls) {
-        boolean zM4087 = AbstractC2207.m4087(cls, C3497.class);
+        boolean zM4087 = AbstractC2207.m4087(cls, Unit.class);
         Class cls2 = Void.TYPE;
         if (!zM4087 && !AbstractC2207.m4087(cls, Void.class)) {
-            if (!AbstractC2207.m4087(cls, cls2 == null ? m4077("void") : cls2)) {
+            if (!AbstractC2207.m4087(cls, false ? m4077("void") : cls2)) {
                 boolean zM4088 = AbstractC2207.m4087(cls, Boolean.class);
                 Class cls3 = Boolean.TYPE;
                 if (!zM4088) {
-                    if (!AbstractC2207.m4087(cls, cls3 == null ? m4077("boolean") : cls3)) {
+                    if (!AbstractC2207.m4087(cls, false ? m4077("boolean") : cls3)) {
                         boolean zM4089 = AbstractC2207.m4087(cls, Integer.class);
                         Class cls4 = Integer.TYPE;
                         if (!zM4089) {
-                            if (!AbstractC2207.m4087(cls, cls4 == null ? m4077("int") : cls4)) {
+                            if (!AbstractC2207.m4087(cls, false ? m4077("int") : cls4)) {
                                 boolean zM40810 = AbstractC2207.m4087(cls, Float.class);
                                 Class cls5 = Float.TYPE;
                                 if (!zM40810) {
-                                    if (!AbstractC2207.m4087(cls, cls5 == null ? m4077("float") : cls5)) {
+                                    if (!AbstractC2207.m4087(cls, false ? m4077("float") : cls5)) {
                                         boolean zM40811 = AbstractC2207.m4087(cls, Double.class);
                                         Class cls6 = Double.TYPE;
                                         if (!zM40811) {
-                                            if (!AbstractC2207.m4087(cls, cls6 == null ? m4077("double") : cls6)) {
+                                            if (!AbstractC2207.m4087(cls, false ? m4077("double") : cls6)) {
                                                 boolean zM40812 = AbstractC2207.m4087(cls, Long.class);
                                                 Class cls7 = Long.TYPE;
                                                 if (!zM40812) {
-                                                    if (!AbstractC2207.m4087(cls, cls7 == null ? m4077("long") : cls7)) {
+                                                    if (!AbstractC2207.m4087(cls, false ? m4077("long") : cls7)) {
                                                         boolean zM40813 = AbstractC2207.m4087(cls, Short.class);
                                                         Class cls8 = Short.TYPE;
                                                         if (!zM40813) {
-                                                            if (!AbstractC2207.m4087(cls, cls8 == null ? m4077("short") : cls8)) {
+                                                            if (!AbstractC2207.m4087(cls, false ? m4077("short") : cls8)) {
                                                                 boolean zM40814 = AbstractC2207.m4087(cls, Character.class);
                                                                 Class cls9 = Character.TYPE;
                                                                 if (!zM40814) {
-                                                                    if (!AbstractC2207.m4087(cls, cls9 == null ? m4077("char") : cls9)) {
+                                                                    if (!AbstractC2207.m4087(cls, false ? m4077("char") : cls9)) {
                                                                         boolean zM40815 = AbstractC2207.m4087(cls, Byte.class);
                                                                         Class cls10 = Byte.TYPE;
                                                                         if (!zM40815) {
-                                                                            if (!AbstractC2207.m4087(cls, cls10 == null ? m4077("byte") : cls10)) {
+                                                                            if (!AbstractC2207.m4087(cls, false ? m4077("byte") : cls10)) {
                                                                                 return cls;
                                                                             }
                                                                         }
-                                                                        return cls10 == null ? m4077("byte") : cls10;
+                                                                        return false ? m4077("byte") : cls10;
                                                                     }
                                                                 }
-                                                                return cls9 == null ? m4077("char") : cls9;
+                                                                return false ? m4077("char") : cls9;
                                                             }
                                                         }
-                                                        return cls8 == null ? m4077("short") : cls8;
+                                                        return false ? m4077("short") : cls8;
                                                     }
                                                 }
-                                                return cls7 == null ? m4077("long") : cls7;
+                                                return false ? m4077("long") : cls7;
                                             }
                                         }
-                                        return cls6 == null ? m4077("double") : cls6;
+                                        return false ? m4077("double") : cls6;
                                     }
                                 }
-                                return cls5 == null ? m4077("float") : cls5;
+                                return false ? m4077("float") : cls5;
                             }
                         }
-                        return cls4 == null ? m4077("int") : cls4;
+                        return false ? m4077("int") : cls4;
                     }
                 }
-                return cls3 == null ? m4077("boolean") : cls3;
+                return false ? m4077("boolean") : cls3;
             }
         }
-        return cls2 == null ? m4077("void") : cls2;
+        return false ? m4077("void") : cls2;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
@@ -809,12 +807,12 @@ public abstract class AbstractC2205 {
                         C1027 c1028 = c1027Arr[i4];
                         AbstractC1574.m3319(byteArrayOutputStream3, i4);
                         AbstractC1574.m3319(byteArrayOutputStream3, c1028.f3766);
-                        i5 = i5 + 4 + (c1028.f3766 * i2);
+                        i5 = i5 + 4 + (c1028.f3766 * 2);
                         int[] iArr = c1028.f3769;
                         int length3 = iArr.length;
-                        int i6 = i;
-                        int i7 = i2;
-                        int i8 = i6;
+                        int i6 = 0;
+                        int i7 = 2;
+                        int i8 = 0;
                         while (i8 < length3) {
                             int i9 = iArr[i8];
                             AbstractC1574.m3319(byteArrayOutputStream3, i9 - i6);
@@ -822,7 +820,7 @@ public abstract class AbstractC2205 {
                             i6 = i9;
                         }
                         i4++;
-                        i2 = i7;
+                        i2 = 2;
                         i = 0;
                     } catch (Throwable th) {
                         try {
@@ -908,7 +906,7 @@ public abstract class AbstractC2205 {
                 byteArrayOutputStream4.close();
                 arrayList.add(c3673);
                 long j2 = 4;
-                long size = j2 + j2 + 4 + ((long) (arrayList.size() * 16));
+                long size = 4L + 4L + 4 + ((long) (arrayList.size() * 16));
                 AbstractC1574.m3318(byteArrayOutputStream, arrayList.size(), 4);
                 for (int i14 = 0; i14 < arrayList.size(); i14++) {
                     C3671 c3674 = (C3671) arrayList.get(i14);

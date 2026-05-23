@@ -10,7 +10,7 @@ final class SymbolTable {
     private int entryCount;
     private int typeCount;
     Symbol[] typeTable;
-    private Symbol[] entries = new Symbol[bc.e];
+    private Symbol[] entries = new Symbol[256];
     int constantPoolCount = 1;
     final ByteVector constantPool = new ByteVector(4096);
 
@@ -65,7 +65,7 @@ final class SymbolTable {
     }
 
     public Symbol addConstantIntegerOrFloat(int i) {
-        int i2 = (i + 3) & Integer.MAX_VALUE;
+        int i2 = (i + 3) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[i2 % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == 3 && symbol.hashCode == i2 && symbol.data == i) {
@@ -79,7 +79,7 @@ final class SymbolTable {
     }
 
     public Symbol addConstantLongOrDouble(long j) {
-        int i = (((int) j) + 5 + ((int) (j >>> 32))) & Integer.MAX_VALUE;
+        int i = (((int) j) + 5 + ((int) (j >>> 32))) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[i % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == 5 && symbol.hashCode == i && symbol.data == j) {
@@ -93,7 +93,7 @@ final class SymbolTable {
     }
 
     public Symbol addConstantMemberReference(int i, String str, String str2, String str3) {
-        int iHashCode = ((str3.hashCode() * str2.hashCode() * str.hashCode()) + i) & Integer.MAX_VALUE;
+        int iHashCode = ((str3.hashCode() * str2.hashCode() * str.hashCode()) + i) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[iHashCode % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == i && symbol.hashCode == iHashCode && symbol.owner.equals(str) && symbol.name.equals(str2) && symbol.value.equals(str3)) {
@@ -107,7 +107,7 @@ final class SymbolTable {
     }
 
     public int addConstantNameAndType(String str, String str2) {
-        int iHashCode = ((str2.hashCode() * str.hashCode()) + 12) & Integer.MAX_VALUE;
+        int iHashCode = ((str2.hashCode() * str.hashCode()) + 12) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[iHashCode % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == 12 && symbol.hashCode == iHashCode && symbol.name.equals(str) && symbol.value.equals(str2)) {
@@ -121,7 +121,7 @@ final class SymbolTable {
     }
 
     public int addConstantUtf8(String str) {
-        int iHashCode = (str.hashCode() + 1) & Integer.MAX_VALUE;
+        int iHashCode = (str.hashCode() + 1) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[iHashCode % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == 1 && symbol.hashCode == iHashCode && symbol.value.equals(str)) {
@@ -135,7 +135,7 @@ final class SymbolTable {
     }
 
     public Symbol addConstantUtf8Reference(int i, String str) {
-        int iHashCode = (str.hashCode() + i) & Integer.MAX_VALUE;
+        int iHashCode = (str.hashCode() + i) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[iHashCode % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == i && symbol.hashCode == iHashCode && symbol.value.equals(str)) {
@@ -159,7 +159,7 @@ final class SymbolTable {
             j2 = i;
         }
         long j3 = j | (j2 << 32);
-        int i3 = (i + Opcodes.IXOR + i2) & Integer.MAX_VALUE;
+        int i3 = (i + 130 + i2) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[i3 % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == 130 && symbol.hashCode == i3 && symbol.data == j3) {
@@ -168,12 +168,12 @@ final class SymbolTable {
         }
         Symbol[] symbolArr2 = this.typeTable;
         int iAddType = addType(this.classWriter.getCommonSuperClass(symbolArr2[i].value, symbolArr2[i2].value));
-        put(new Symbol(this.typeCount, Opcodes.IXOR, null, null, null, j3, i3)).info = iAddType;
+        put(new Symbol(this.typeCount, 130, null, null, null, j3, i3)).info = iAddType;
         return iAddType;
     }
 
     public int addType(String str) {
-        int iHashCode = (str.hashCode() + 128) & Integer.MAX_VALUE;
+        int iHashCode = (str.hashCode() + 128) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[iHashCode % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == 128 && symbol.hashCode == iHashCode && symbol.value.equals(str)) {
@@ -184,14 +184,14 @@ final class SymbolTable {
     }
 
     public int addUninitializedType(String str, int i) {
-        int iHashCode = (str.hashCode() + Opcodes.LOR + i) & Integer.MAX_VALUE;
+        int iHashCode = (str.hashCode() + 129 + i) & 2147483647;
         Symbol[] symbolArr = this.entries;
         for (Symbol symbol = symbolArr[iHashCode % symbolArr.length]; symbol != null; symbol = symbol.next) {
             if (symbol.tag == 129 && symbol.hashCode == iHashCode && symbol.data == i && symbol.value.equals(str)) {
                 return symbol.index;
             }
         }
-        return addTypeInternal(new Symbol(this.typeCount, Opcodes.LOR, null, null, str, i, iHashCode));
+        return addTypeInternal(new Symbol(this.typeCount, 129, null, null, str, i, iHashCode));
     }
 
     public int setMajorVersionAndClassName(int i, String str) {

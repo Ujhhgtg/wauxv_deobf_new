@@ -38,11 +38,11 @@ public final class C3630 {
             return false;
         }
         C3630 c3630 = (C3630) obj;
-        return AbstractC2207.m4087(this.f11336, c3630.f11336) && this.f11337 == c3630.f11337 && Float.compare(this.f11338, c3630.f11338) == 0 && Float.compare(this.f11339, c3630.f11339) == 0 && Float.compare(this.f11340, c3630.f11340) == 0 && Float.compare(this.f11341, c3630.f11341) == 0;
+        return AbstractC2207.m4087(this.f11336, c3630.f11336) && this.f11337 == c3630.f11337 && Float.compare(32.0f, 32.0f) == 0 && Float.compare(-40.0f, -40.0f) == 0 && Float.compare(120.0f, 120.0f) == 0 && Float.compare(120.0f, 120.0f) == 0;
     }
 
     public final int hashCode() {
-        return Float.hashCode(this.f11341) + ((Float.hashCode(this.f11340) + ((Float.hashCode(this.f11339) + ((Float.hashCode(this.f11338) + ((Integer.hashCode(this.f11337) + (this.f11336.hashCode() * 31)) * 31)) * 31)) * 31)) * 31);
+        return Float.hashCode(120.0f) + ((Float.hashCode(120.0f) + ((Float.hashCode(-40.0f) + ((Float.hashCode(32.0f) + ((Integer.hashCode(this.f11337) + (this.f11336.hashCode() * 31)) * 31)) * 31)) * 31)) * 31);
     }
 
     public final String toString() {
@@ -53,13 +53,13 @@ public final class C3630 {
         sb.append(", textColor=");
         sb.append(this.f11337);
         sb.append(", textSize=");
-        sb.append(this.f11338);
+        sb.append(32.0f);
         sb.append(", rotationAngle=");
-        sb.append(this.f11339);
+        sb.append(-40.0f);
         sb.append(", horizontalSpacing=");
-        sb.append(this.f11340);
+        sb.append(120.0f);
         sb.append(", verticalSpacing=");
-        sb.append(this.f11341);
+        sb.append(120.0f);
         sb.append(')');
         return sb.toString();
     }

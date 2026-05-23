@@ -37,7 +37,7 @@ public final class C0917 extends AbstractC3458 {
                 case 7:
                     i--;
                     if (iM1815 == 0) {
-                        m2429(iM1815, i3);
+                        m2429(0, i3);
                         throw null;
                     }
                     c = (char) iM1815;
@@ -51,7 +51,7 @@ public final class C0917 extends AbstractC3458 {
                 default:
                     m2429(iM1815, i3);
                     throw null;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                 case 13:
                     i -= 2;
                     if (i < 0) {
@@ -60,7 +60,7 @@ public final class C0917 extends AbstractC3458 {
                     }
                     int i4 = i3 + 1;
                     int iM1816 = c0516.m1815(i4);
-                    if ((iM1816 & Opcodes.CHECKCAST) != 128) {
+                    if ((iM1816 & 192) != 128) {
                         m2429(iM1816, i4);
                         throw null;
                     }
@@ -73,7 +73,7 @@ public final class C0917 extends AbstractC3458 {
                     i3 += 2;
                     break;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     i -= 3;
                     if (i < 0) {
                         m2429(iM1815, i3);
@@ -81,14 +81,14 @@ public final class C0917 extends AbstractC3458 {
                     }
                     int i6 = i3 + 1;
                     int iM1817 = c0516.m1815(i6);
-                    int i7 = iM1817 & Opcodes.CHECKCAST;
+                    int i7 = iM1817 & 192;
                     if (i7 != 128) {
                         m2429(iM1817, i6);
                         throw null;
                     }
                     int i8 = i3 + 2;
                     int iM1818 = c0516.m1815(i8);
-                    if (i7 != 128) {
+                    if (false) {
                         m2429(iM1818, i8);
                         throw null;
                     }
@@ -214,7 +214,7 @@ public final class C0917 extends AbstractC3458 {
                     bArr[i] = (byte) cCharAt;
                     i++;
                 } else if (cCharAt < 2048) {
-                    bArr[i] = (byte) (((cCharAt >> 6) & 31) | Opcodes.CHECKCAST);
+                    bArr[i] = (byte) (((cCharAt >> 6) & 31) | 192);
                     bArr[i + 1] = (byte) ((cCharAt & '?') | 128);
                     i += 2;
                 } else {

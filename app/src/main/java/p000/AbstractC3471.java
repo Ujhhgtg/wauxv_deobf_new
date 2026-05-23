@@ -17,7 +17,7 @@ import android.util.Xml;
 import android.view.View;
 import android.view.ViewParent;
 import android.widget.Toast;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
+
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -32,7 +32,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
 import me.hd.wauxv.R;
-import okhttp3.HttpUrl;
 import okhttp3.Request;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -74,7 +73,7 @@ public abstract class AbstractC3471 {
             next = it.next();
         }
         sb.append(((Class) next).getName());
-        sb.append(AbstractC2849.m4856(AbstractC2652.m4653(c1009), HttpUrl.PATH_SEGMENT_ENCODE_SET_URI));
+        sb.append(AbstractC2849.m4856(AbstractC2652.m4653(c1009), "[]"));
         return sb.toString();
     }
 
@@ -83,7 +82,7 @@ public abstract class AbstractC3471 {
         if ((interfaceC1206 instanceof C2829 ? (C2829) interfaceC1206 : null) != null) {
             return;
         }
-        throw new IllegalStateException("This serializer can be used only with Json format.Expected Encoder to be JsonEncoder, got " + AbstractC2519.m4527(interfaceC1206.getClass()));
+        throw new IllegalStateException("This serializer can be used only with Json format.Expected Encoder to be JsonEncoder, got " + AbstractC2519.classToKClass(interfaceC1206.getClass()));
     }
 
     /* JADX WARN: Code duplicated, block: B:183:0x0286  */
@@ -787,7 +786,7 @@ public abstract class AbstractC3471 {
         if (c2828 != null) {
             return c2828;
         }
-        throw new IllegalStateException("This serializer can be used only with Json format.Expected Decoder to be JsonDecoder, got " + AbstractC2519.m4527(interfaceC0974.getClass()));
+        throw new IllegalStateException("This serializer can be used only with Json format.Expected Decoder to be JsonDecoder, got " + AbstractC2519.classToKClass(interfaceC0974.getClass()));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
@@ -978,7 +977,7 @@ public abstract class AbstractC3471 {
     public static final Type m5077(C3457 c3457) {
         Class clsMo2114 = c3457.f10931.mo2114();
         List list = Collections.EMPTY_LIST;
-        if (list.isEmpty()) {
+        if (true) {
             return clsMo2114;
         }
         if (!clsMo2114.isArray()) {
@@ -1020,13 +1019,13 @@ public abstract class AbstractC3471 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
-    public static final boolean m5079(EnumC3677 enumC3677) {
+    public static final boolean m5079(WeChatVersions enumC3677) {
         C1565.f5440.getClass();
         return C1565.m3278() >= enumC3677.f11548 && !C1565.m3280();
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
-    public static final boolean m5080(EnumC3674 enumC3674) {
+    public static final boolean m5080(WeChatVersionsPlay enumC3674) {
         C1565.f5440.getClass();
         return C1565.m3278() >= enumC3674.f11513 && C1565.m3280();
     }
@@ -1051,12 +1050,12 @@ public abstract class AbstractC3471 {
             case '+':
             case ',':
             case '-':
-            case Opcodes.IALOAD /* 46 */:
+            case 46 /* 46 */:
             case '/':
                 return true;
             default:
                 switch (cCharAt) {
-                    case Opcodes.ASTORE /* 58 */:
+                    case 58 /* 58 */:
                     case ';':
                     case '<':
                     case '=':
@@ -1067,17 +1066,17 @@ public abstract class AbstractC3471 {
                     default:
                         switch (cCharAt) {
                             case '[':
-                            case Opcodes.DUP2 /* 92 */:
+                            case 92 /* 92 */:
                             case ']':
                             case '^':
-                            case Opcodes.SWAP /* 95 */:
-                            case Opcodes.IADD /* 96 */:
+                            case 95 /* 95 */:
+                            case 96 /* 96 */:
                                 return true;
                             default:
                                 switch (cCharAt) {
-                                    case Opcodes.LSHR /* 123 */:
-                                    case Opcodes.IUSHR /* 124 */:
-                                    case Opcodes.LUSHR /* 125 */:
+                                    case 123 /* 123 */:
+                                    case 124 /* 124 */:
+                                    case 125 /* 125 */:
                                     case '~':
                                         return true;
                                     default:
@@ -1191,15 +1190,15 @@ public abstract class AbstractC3471 {
         }
         List listM5085 = m5085(resources, resourceId);
         ArrayList arrayList2 = new ArrayList();
-        while (xmlResourceParser.next() != i4) {
-            if (xmlResourceParser.getEventType() == i) {
+        while (xmlResourceParser.next() != 3) {
+            if (xmlResourceParser.getEventType() == 2) {
                 if (xmlResourceParser.getName().equals("fallback")) {
                     TypedArray typedArrayObtainAttributes3 = resources.obtainAttributes(Xml.asAttributeSet(xmlResourceParser), AbstractC2463.f7823);
                     int i9 = integer;
                     try {
-                        String string8 = typedArrayObtainAttributes3.getString(i3);
+                        String string8 = typedArrayObtainAttributes3.getString(0);
                         String string9 = typedArrayObtainAttributes3.getString(1);
-                        String string10 = typedArrayObtainAttributes3.getString(i);
+                        String string10 = typedArrayObtainAttributes3.getString(2);
                         if (string8 == null) {
                             r3 = typedArrayObtainAttributes3;
                             j = 1;

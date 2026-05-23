@@ -54,7 +54,7 @@ public final class C1925 implements InterfaceC1996 {
                 return new C1995(new C2244(uri), new C1924(this.f6363, 0, uri));
             case 1:
                 Uri uri2 = (Uri) obj;
-                if (i == Integer.MIN_VALUE || i2 == Integer.MIN_VALUE || i > 512 || i2 > 384) {
+                if (i == -2147483648 || i2 == -2147483648 || i > 512 || i2 > 384) {
                     return null;
                 }
                 C2244 c2244 = new C2244(uri2);
@@ -62,7 +62,7 @@ public final class C1925 implements InterfaceC1996 {
                 return new C1995(c2244, C0964.m2453(context, uri2, new C2924(context.getContentResolver(), 0)));
             default:
                 Uri uri3 = (Uri) obj;
-                if (i == Integer.MIN_VALUE || i2 == Integer.MIN_VALUE || i > 512 || i2 > 384 || (l = (Long) c2303.m4165(C3553.f11151)) == null || l.longValue() != -1) {
+                if (i == -2147483648 || i2 == -2147483648 || i > 512 || i2 > 384 || (l = (Long) c2303.m4165(C3553.f11151)) == null || l.longValue() != -1) {
                     return null;
                 }
                 C2244 c2245 = new C2244(uri3);

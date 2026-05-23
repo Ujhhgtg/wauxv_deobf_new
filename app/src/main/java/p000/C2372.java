@@ -28,6 +28,6 @@ public final /* synthetic */ class C2372 implements InterfaceC1425 {
                 this.f7623.accept((String) obj);
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

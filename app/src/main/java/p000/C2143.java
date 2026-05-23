@@ -17,6 +17,6 @@ public final class C2143 extends AbstractC1756 implements InterfaceC1425 {
     @Override // p000.InterfaceC1425
     public final Object invoke(Object obj) {
         this.f7092.mo617();
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

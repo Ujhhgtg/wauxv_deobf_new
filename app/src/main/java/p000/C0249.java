@@ -47,7 +47,7 @@ public final class C0249 extends AbstractC0567 {
                         }
                         throw null;
                     }
-                    c2586 = C3497.f10997;
+                    c2586 = Unit.INSTANCE;
                     Throwable thM4594 = C2586.m4594(c2586);
                     if (thM4594 != null) {
                         c1676.m3407(thM4594);
@@ -71,7 +71,7 @@ public final class C0249 extends AbstractC0567 {
                             throw null;
                         }
                     }
-                    c2588 = C3497.f10997;
+                    c2588 = Unit.INSTANCE;
                 } catch (Throwable th2) {
                     c2588 = new C2585(th2);
                 }
@@ -93,7 +93,7 @@ public final class C0249 extends AbstractC0567 {
                             throw null;
                         }
                     }
-                    c2585 = C3497.f10997;
+                    c2585 = Unit.INSTANCE;
                 } catch (Throwable th3) {
                     c2585 = new C2585(th3);
                 }
@@ -115,7 +115,7 @@ public final class C0249 extends AbstractC0567 {
                             throw null;
                         }
                     }
-                    c2589 = C3497.f10997;
+                    c2589 = Unit.INSTANCE;
                 } catch (Throwable th4) {
                     c2589 = new C2585(th4);
                 }
@@ -141,7 +141,7 @@ public final class C0249 extends AbstractC0567 {
                             }
                             throw null;
                         }
-                        c2587 = C3497.f10997;
+                        c2587 = Unit.INSTANCE;
                         Throwable thM4598 = C2586.m4594(c2587);
                         if (thM4598 != null) {
                             c1676.m3407(thM4598);
@@ -175,7 +175,7 @@ public final class C0249 extends AbstractC0567 {
                             throw null;
                         }
                     }
-                    c2585 = C3497.f10997;
+                    c2585 = Unit.INSTANCE;
                 } catch (Throwable th) {
                     c2585 = new C2585(th);
                 }

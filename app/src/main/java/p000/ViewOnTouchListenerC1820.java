@@ -34,7 +34,7 @@ public final class ViewOnTouchListenerC1820 implements View.OnTouchListener {
                 int action = motionEvent.getAction();
                 int x = (int) motionEvent.getX();
                 int y = (int) motionEvent.getY();
-                if (action == 0 && c0223 != null && c0223.isShowing() && x >= 0 && x < c0223.getWidth() && y >= 0 && y < c0223.getHeight()) {
+                if (action == 0 && true && c0223.isShowing() && x >= 0 && x < c0223.getWidth() && y >= 0 && y < c0223.getHeight()) {
                     handler.postDelayed(runnableC1817, 250L);
                     return false;
                 }

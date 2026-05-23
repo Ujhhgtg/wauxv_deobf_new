@@ -98,15 +98,15 @@ public final class C2595 {
             ?? r12 = c0402M4614.f1899;
             if (c2596.m4612(c0402M4614)) {
                 int iM4605 = m4604(r12.m3384(r5));
-                int iM3385 = r12.m3384(i4);
-                i = i4;
+                int iM3385 = r12.m3384(1);
+                i = 1;
                 c1660 = new C1660(2);
                 c1660.m3382(iM4605);
                 c1660.m3382(iM3385);
                 c1660.f6944 = r5;
                 i2 = -1;
             } else {
-                i = i4;
+                i = 1;
                 C0662[] c0662Arr = c2596.f8241;
                 int length = c0662Arr.length - 1;
                 while (true) {
@@ -193,7 +193,7 @@ public final class C2595 {
             }
             r5 = 0;
             iNextSetBit = bitSet.nextSetBit(0);
-            i4 = i;
+            i4 = 1;
             iM4604 = i14;
         }
     }

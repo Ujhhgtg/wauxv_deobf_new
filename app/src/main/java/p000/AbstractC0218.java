@@ -149,7 +149,7 @@ public abstract class AbstractC0218 extends EditText implements InterfaceC2285 {
     public InputConnection onCreateInputConnection(EditorInfo editorInfo) {
         String[] strArrM5171;
         InputConnection inputConnectionOnCreateInputConnection = super.onCreateInputConnection(editorInfo);
-        this.f1341.getClass();
+        
         C0232.m1290(editorInfo, inputConnectionOnCreateInputConnection, this);
         AbstractC3453.m5006(editorInfo, inputConnectionOnCreateInputConnection, this);
         if (inputConnectionOnCreateInputConnection != null && Build.VERSION.SDK_INT <= 30 && (strArrM5171 = AbstractC3578.m5171(this)) != null) {
@@ -211,7 +211,7 @@ public abstract class AbstractC0218 extends EditText implements InterfaceC2285 {
         ClipboardManager clipboardManager = (ClipboardManager) getContext().getSystemService("clipboard");
         ClipData primaryClip = clipboardManager == null ? null : clipboardManager.getPrimaryClip();
         if (primaryClip != null && primaryClip.getItemCount() > 0) {
-            if (i3 >= 31) {
+            if (false) {
                 c0094 = new C0094(primaryClip, 1);
             } else {
                 c0835 = new C0835();
@@ -331,7 +331,7 @@ public abstract class AbstractC0218 extends EditText implements InterfaceC2285 {
     @Override // p000.InterfaceC2285
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final C0837 mo1253(C0837 c0837) {
-        this.f1343.getClass();
+        
         return C2914.m4916(this, c0837);
     }
 

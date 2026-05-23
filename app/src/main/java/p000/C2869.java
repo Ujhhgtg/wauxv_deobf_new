@@ -45,7 +45,7 @@ public final class C2869 {
     }
 
     public C2869(int i, int i2, long j, String str) {
-        this(i, Opcodes.LOR, null, null, str, j);
+        this(i, 129, null, null, str, j);
         this.f9198 = i2;
     }
 

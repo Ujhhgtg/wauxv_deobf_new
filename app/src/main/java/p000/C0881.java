@@ -128,12 +128,12 @@ public final class C0881 extends Thread {
                                     try {
                                         if (!(atomicIntegerFieldUpdater2.get(executorC0884) == 1)) {
                                             AtomicLongFieldUpdater atomicLongFieldUpdater = ExecutorC0882.f3315;
-                                            if (((int) (atomicLongFieldUpdater.get(executorC0884) & j)) > executorC0884.f3318) {
+                                            if (((int) (atomicLongFieldUpdater.get(executorC0884) & 2097151L)) > executorC0884.f3318) {
                                                 if (atomicIntegerFieldUpdater.compareAndSet(this, -1, 1)) {
                                                     int i = this.indexInArray;
                                                     m2400(0);
                                                     executorC0884.m2406(this, i, 0);
-                                                    int andDecrement = (int) (atomicLongFieldUpdater.getAndDecrement(executorC0884) & j);
+                                                    int andDecrement = (int) (atomicLongFieldUpdater.getAndDecrement(executorC0884) & 2097151L);
                                                     if (andDecrement != i) {
                                                         C0881 c0881 = (C0881) executorC0884.f3324.m4582(andDecrement);
                                                         executorC0884.f3324.m4583(i, c0881);
@@ -197,7 +197,7 @@ public final class C0881 extends Thread {
             do {
                 j = atomicLongFieldUpdater.get(executorC0882);
                 if (((int) ((9223367638808264704L & j) >> 42)) == 0) {
-                    c3670.getClass();
+                    
                     loop1: while (true) {
                         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = C3670.f11453;
                         AbstractRunnableC2898 abstractRunnableC2899 = (AbstractRunnableC2898) atomicReferenceFieldUpdater.get(c3670);
@@ -235,7 +235,7 @@ public final class C0881 extends Thread {
             if (z2 && (abstractRunnableC2898M23910 = m2399()) != null) {
                 return abstractRunnableC2898M23910;
             }
-            c3670.getClass();
+            
             AbstractRunnableC2898 abstractRunnableC2898M5303 = (AbstractRunnableC2898) C3670.f11453.getAndSet(c3670, null);
             if (abstractRunnableC2898M5303 == null) {
                 abstractRunnableC2898M5303 = c3670.m5303();
@@ -273,7 +273,7 @@ public final class C0881 extends Thread {
         int i5 = i4 ^ (i4 << 5);
         this.f3311 = i5;
         int i6 = i - 1;
-        return (i6 & i) == 0 ? i5 & i6 : (i5 & Integer.MAX_VALUE) % i;
+        return (i6 & i) == 0 ? i5 & i6 : (i5 & 2147483647) % i;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
@@ -332,7 +332,7 @@ public final class C0881 extends Thread {
         }
         int iM2398 = m2398(i2);
         int i3 = 0;
-        long jMin = Long.MAX_VALUE;
+        long jMin = 9223372036854775807L;
         while (i3 < i2) {
             iM2398++;
             if (iM2398 > i2) {
@@ -342,7 +342,7 @@ public final class C0881 extends Thread {
             if (c0881 != null && c0881 != this) {
                 C3670 c3670 = c0881.f3306;
                 if (i != 3) {
-                    c3670.getClass();
+                    
                     int i4 = C3670.f11455.get(c3670);
                     int i5 = C3670.f11454.get(c3670);
                     boolean z = i == 1;
@@ -377,7 +377,7 @@ public final class C0881 extends Thread {
                         } else {
                             j2 = -1;
                             if (((abstractRunnableC28910.f9316 ? 1 : 2) & i) != 0) {
-                                AbstractC2900.f9323.getClass();
+                                
                                 C3670 c3671 = c3670;
                                 long jNanoTime = System.nanoTime() - abstractRunnableC28910.f9315;
                                 long j4 = AbstractC2900.f9319;
@@ -408,19 +408,19 @@ public final class C0881 extends Thread {
                     j3 = -1;
                     j2 = -1;
                 }
-                if (j3 == j2) {
+                if (j3 == -1L) {
                     AbstractRunnableC2898 abstractRunnableC28911 = (AbstractRunnableC2898) c2516.f8043;
                     c2516.f8043 = abstractRunnableC2898;
                     return abstractRunnableC28911;
                 }
-                if (j3 > j) {
+                if (j3 > 0L) {
                     jMin = Math.min(jMin, j3);
                 }
             }
             i3++;
             abstractRunnableC2899 = null;
         }
-        if (jMin == Long.MAX_VALUE) {
+        if (jMin == 9223372036854775807L) {
             jMin = 0;
         }
         this.f3310 = jMin;

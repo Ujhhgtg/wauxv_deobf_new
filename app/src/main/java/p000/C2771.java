@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C2771 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C2771 f8868 = new C2771("SnsUploadOriginalPhoto.ValMode", null, null, false, EnumC2770.f8864.f8867, 0.0f, 0, UMErrorCode.E_UM_BE_JSON_FAILED);
+    public static final C2771 f8868 = new C2771("SnsUploadOriginalPhoto.ValMode", null, null, false, EnumC2770.f8864.f8867, 0.0f, 0, 110);
 }

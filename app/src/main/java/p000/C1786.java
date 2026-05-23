@@ -40,7 +40,7 @@ public final class C1786 {
         if (this.f5931) {
             int iMo2737 = this.f5928.mo2737(view);
             AbstractC1138 abstractC1138 = this.f5928;
-            this.f5930 = (Integer.MIN_VALUE == abstractC1138.f4232 ? 0 : abstractC1138.mo2747() - abstractC1138.f4232) + iMo2737;
+            this.f5930 = (-2147483648 == abstractC1138.f4232 ? 0 : abstractC1138.mo2747() - abstractC1138.f4232) + iMo2737;
         } else {
             this.f5930 = this.f5928.mo2740(view);
         }
@@ -50,7 +50,7 @@ public final class C1786 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m3521(View view, int i) {
         AbstractC1138 abstractC1138 = this.f5928;
-        int iMo2747 = Integer.MIN_VALUE == abstractC1138.f4232 ? 0 : abstractC1138.mo2747() - abstractC1138.f4232;
+        int iMo2747 = -2147483648 == abstractC1138.f4232 ? 0 : abstractC1138.mo2747() - abstractC1138.f4232;
         if (iMo2747 >= 0) {
             m3520(view, i);
             return;
@@ -85,7 +85,7 @@ public final class C1786 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final void m3522() {
         this.f5929 = -1;
-        this.f5930 = Integer.MIN_VALUE;
+        this.f5930 = -2147483648;
         this.f5931 = false;
         this.f5932 = false;
     }

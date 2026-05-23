@@ -612,7 +612,7 @@ public final class C1682 extends AbstractC2488 {
         if (abstractC2508 == this.f5687 && i == this.f5698) {
             return;
         }
-        this.f5712 = Long.MIN_VALUE;
+        this.f5712 = -9223372036854775808L;
         int i2 = this.f5698;
         m3415(abstractC2508, true);
         this.f5698 = i;
@@ -688,8 +688,8 @@ public final class C1682 extends AbstractC2488 {
                 m3417(fArr);
                 c0662 = c0663;
                 char c3 = c2;
-                ?? r15 = c;
-                C1679 c1679 = new C1679(this, r2, i2, fArr[c], fArr[1], fSignum2, fSignum, iM2045, r2);
+                ?? r15 = 0;
+                C1679 c1679 = new C1679(this, r2, i2, fArr[0], fArr[1], fSignum2, fSignum, iM2045, r2);
                 RecyclerView recyclerView = this.f5702;
                 c0662.getClass();
                 AbstractC2487 itemAnimator = recyclerView.getItemAnimator();
@@ -749,11 +749,9 @@ public final class C1682 extends AbstractC2488 {
             String[] strArr = AbstractC1574.f5469;
             if (Build.VERSION.SDK_INT >= 31) {
                 Object systemService = context.getSystemService("vibrator_manager");
-                "null cannot be cast to non-null type android.os.VibratorManager";
                 defaultVibrator = AbstractC0451.m1658(systemService).getDefaultVibrator();
             } else {
                 Object systemService2 = context.getSystemService("vibrator");
-                "null cannot be cast to non-null type android.os.Vibrator";
                 defaultVibrator = (Vibrator) systemService2;
             }
             defaultVibrator.vibrate(VibrationEffect.createOneShot(40L, -1));

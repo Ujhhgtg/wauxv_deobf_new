@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.info.FriendInfo;
 import me.hd.wauxv.data.bean.info.GroupInfo;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᛸᲇᲁᲀᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -119,7 +118,7 @@ public final /* synthetic */ class C2110 implements InterfaceC1425 {
                 c0817.f3199 = R.drawable.ic_contact_send_24dp;
                 String str4 = "转发";
                 C2111 c2111 = new C2111(0, this.f6953, this.f6954);
-                c0817.f3202 = str4;
+                c0817.f3202 = "转发";
                 c0817.f3204 = c2111;
                 break;
             case 2:
@@ -208,10 +207,10 @@ public final /* synthetic */ class C2110 implements InterfaceC1425 {
                 c08110.f3199 = R.drawable.ic_contact_send_24dp;
                 String str8 = "转发";
                 C2111 c2113 = new C2111(1, this.f6953, this.f6954);
-                c08110.f3202 = str8;
+                c08110.f3202 = "转发";
                 c08110.f3204 = c2113;
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

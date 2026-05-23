@@ -9,6 +9,6 @@ import p000.AbstractC1458;
 /* JADX INFO: loaded from: classes.dex */
 public class PreferenceCategory extends PreferenceGroup {
     public PreferenceCategory(Context context, AttributeSet attributeSet) {
-        super(context, attributeSet, AbstractC1458.m3156(context, R.attr.preferenceCategoryStyle, android.R.attr.preferenceCategoryStyle), 0);
+        super(context, attributeSet, AbstractC1458.m3156(context, R.attr.preferenceCategoryStyle, 16842892), 0);
     }
 }

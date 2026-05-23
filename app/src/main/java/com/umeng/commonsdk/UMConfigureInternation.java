@@ -23,7 +23,7 @@ public class UMConfigureInternation {
             if (TextUtils.isEmpty(currentProcessName) || TextUtils.isEmpty(packageName) || !currentProcessName.equals(packageName)) {
                 return;
             }
-            UMWorkDispatch.sendEvent(context, a.C, b.a(context).a(), null);
+            UMWorkDispatch.sendEvent(context, 32801, b.a(context).a(), null);
         } catch (Throwable unused) {
         }
     }
@@ -42,7 +42,7 @@ public class UMConfigureInternation {
                                     return;
                                 }
                                 Context context2 = context;
-                                UMWorkDispatch.sendEvent(context2, a.n, b.a(context2).a(), null, 5000L);
+                                UMWorkDispatch.sendEvent(context2, 32777, b.a(context2).a(), null, 5000L);
                             } catch (Throwable unused) {
                             }
                         }
@@ -50,7 +50,7 @@ public class UMConfigureInternation {
                     isInternal = true;
                 }
             } catch (Throwable th) {
-                ULog.e(UMModuleRegister.INNER, "e is " + th.getMessage());
+                ULog.e("internal", "e is " + th.getMessage());
             }
         }
     }

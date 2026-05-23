@@ -35,7 +35,7 @@ public final class C1681 extends GestureDetector.SimpleOnGestureListener {
             return;
         }
         RecyclerView recyclerView = c1682.f5702;
-        c0662.getClass();
+        
         if ((C0662.m2044(786444, recyclerView.getLayoutDirection()) & 16711680) != 0) {
             int pointerId = motionEvent.getPointerId(0);
             int i = c1682.f5696;
@@ -47,7 +47,7 @@ public final class C1681 extends GestureDetector.SimpleOnGestureListener {
                 c1682.f5689 = y;
                 c1682.f5693 = 0.0f;
                 c1682.f5692 = 0.0f;
-                c0662.getClass();
+                
                 c1682.m3420(abstractC2508M232, 2);
             }
         }

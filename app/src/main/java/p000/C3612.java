@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C3612 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C3612 f11297 = new C3612("VnPreviewShareMenuCopyOrDownHook.ValSavePath", C3613.f11299, null, false, 0, 0.0f, 0, Opcodes.IUSHR);
+    public static final C3612 f11297 = new C3612("VnPreviewShareMenuCopyOrDownHook.ValSavePath", C3613.f11299, null, false, 0, 0.0f, 0, 124);
 }

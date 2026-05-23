@@ -154,7 +154,7 @@ public abstract class TypeReference<T> {
     }
 
     private TypeReference(Type type) {
-        type.getClass();
+        
         this.type = BeanUtils.canonicalize(type);
         this.rawType = (Class<? super T>) BeanUtils.getRawType(type);
     }

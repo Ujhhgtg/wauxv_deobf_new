@@ -49,7 +49,7 @@ public class ab {
     private String f(Context context) {
         try {
             SharedPreferences.Editor editorEdit = PreferenceWrapper.getDefault(context).edit();
-            editorEdit.putString(x.d, d(context));
+            editorEdit.putString("pre_session_id", d(context));
             editorEdit.commit();
         } catch (Exception unused) {
         }
@@ -58,14 +58,14 @@ public class ab {
         String str = this.b;
         long jA = x.a(context);
         long j = jA * 5000;
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>*** 读取 foreground count 值完成，count次数：" + jA);
-        if (!FieldManager.allow(com.umeng.commonsdk.utils.d.E)) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>*** foreground count druation云控参数关闭。");
+        UMRTLog.e("MobclickRT", "--->>>*** 读取 foreground count 值完成，count次数：" + jA);
+        if (!FieldManager.allow("header_foreground_count")) {
+            UMRTLog.e("MobclickRT", "--->>>*** foreground count druation云控参数关闭。");
         } else if (UMWorkDispatch.eventHasExist()) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>*** 读取 foreground count druation值完成，终止checker timer.");
+            UMRTLog.e("MobclickRT", "--->>>*** 读取 foreground count druation值完成，终止checker timer.");
             UMWorkDispatch.removeEvent();
         } else {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>*** 读取 foreground count druation值完成，无未处理check timer事件。");
+            UMRTLog.e("MobclickRT", "--->>>*** 读取 foreground count druation值完成，无未处理check timer事件。");
         }
         a(jI, jH, j, str, false);
         this.b = this.a.a(context);
@@ -79,27 +79,27 @@ public class ab {
     }
 
     private long h(Context context) {
-        return a(context, x.f);
+        return a(context, "a_end_time");
     }
 
     private long i(Context context) {
-        return a(context, x.a);
+        return a(context, "session_start_time");
     }
 
     private boolean j(Context context) {
         Context appContext = UMGlobalContext.getAppContext(context);
         try {
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(appContext);
-            long j = sharedPreferences.getLong(x.e, 0L);
-            long j2 = sharedPreferences.getLong(x.f, 0L);
-            if (FieldManager.allow(com.umeng.commonsdk.utils.d.E) && j > 0 && j2 == 0) {
+            long j = sharedPreferences.getLong("a_start_time", 0L);
+            long j2 = sharedPreferences.getLong("a_end_time", 0L);
+            if (FieldManager.allow("header_foreground_count") && j > 0 && j2 == 0) {
                 long jA = x.a(appContext);
                 if (jA > 0) {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> last session end time stamp = 0, reconstruct it by foreground count value.");
+                    UMRTLog.e("MobclickRT", "--->>> last session end time stamp = 0, reconstruct it by foreground count value.");
                     j2 = j + (jA * 5000);
                 }
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> interval of last session is: " + (j2 - j));
+            UMRTLog.i("MobclickRT", "--->>> interval of last session is: " + (j2 - j));
             return this.a.a(j, j2);
         } catch (Exception unused) {
             return false;
@@ -166,11 +166,11 @@ public class ab {
         String string = "";
         try {
             synchronized (ab.class) {
-                string = PreferenceWrapper.getDefault(appContext).getString(x.d, "");
+                string = PreferenceWrapper.getDefault(appContext).getString("pre_session_id", "");
             }
             return string;
         } catch (Exception unused) {
-            return string;
+            return "";
         }
     }
 

@@ -297,7 +297,7 @@ public final class C0783 extends ViewGroup.MarginLayoutParams {
             if (i5 != -1) {
                 this.f2955 = i5;
             }
-            if (z) {
+            if (true) {
                 this.f2957 = 1.0f - f;
             }
             if (this.f2949) {

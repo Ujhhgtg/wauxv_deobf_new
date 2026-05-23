@@ -102,9 +102,9 @@ public class ac implements ak {
                 String strC = c(this.d);
                 this.e = strC;
                 if (TextUtils.isEmpty(strC)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "采集项：" + this.a + "; 未选中可用Module ; sdk: " + this.d);
+                    UMRTLog.i("MobclickRT", "采集项：" + this.a + "; 未选中可用Module ; sdk: " + this.d);
                 } else {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "采集项：" + this.a + "; 选中Module: " + this.e + "; sdk: " + this.d);
+                    UMRTLog.i("MobclickRT", "采集项：" + this.a + "; 选中Module: " + this.e + "; sdk: " + this.d);
                 }
             }
             ad adVar = this.b.get(size - 1);
@@ -115,11 +115,11 @@ public class ac implements ak {
             JSONObject jSONObject2 = new JSONObject();
             try {
                 jSONObject2.put("actionName", this.a);
-                jSONObject2.put(com.umeng.ccg.a.x, this.d);
-                jSONObject2.put(com.umeng.ccg.a.u, this.c);
+                jSONObject2.put("sdk", this.d);
+                jSONObject2.put("hit_sdk", this.c);
                 jSONObject2.put("delay", jC);
-                jSONObject2.put(com.umeng.ccg.a.v, this.e);
-                jSONObject2.put(com.umeng.ccg.a.w, this.f);
+                jSONObject2.put("local_hit_sdk", this.e);
+                jSONObject2.put("forbid_sdk", this.f);
                 return jSONObject2;
             } catch (Throwable unused) {
                 return jSONObject2;

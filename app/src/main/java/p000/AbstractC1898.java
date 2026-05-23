@@ -32,7 +32,7 @@ public abstract class AbstractC1898 extends AbstractC2205 {
         if (i < 1073741824) {
             return (int) ((i / 0.75f) + 1.0f);
         }
-        return Integer.MAX_VALUE;
+        return 2147483647;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲈᲀ, reason: contains not printable characters */

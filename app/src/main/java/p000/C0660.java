@@ -13,6 +13,6 @@ public final class C0660 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f2524 = new C0660("ChatToolbarHook.ValMenuGroupOrderList", "", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f2524 = new C0660("ChatToolbarHook.ValMenuGroupOrderList", "", null, false, 0, 0.0f, 0L, 124);
     }
 }

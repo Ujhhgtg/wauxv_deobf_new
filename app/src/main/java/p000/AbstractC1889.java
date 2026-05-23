@@ -123,7 +123,7 @@ public abstract class AbstractC1889 {
             mo3675(view, obj);
             return;
         }
-        if (Build.VERSION.SDK_INT >= this.f6239) {
+        if (false) {
             tag = mo3674(view);
         } else {
             tag = view.getTag(this.f6238);

@@ -8,10 +8,10 @@ import java.util.Map;
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᛸᲀᤝᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
-public final class C1973 extends AbstractC1240 {
+public final class MethodResolver extends AbstractC1240 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
-    public Object f6543;
+    public Object returnType;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public InterfaceC1425 f6544;
@@ -20,7 +20,7 @@ public final class C1973 extends AbstractC1240 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final Map mo2886() {
         Map mapMo2886 = super.mo2886();
-        Map mapM3694 = AbstractC1898.m3694(new C2315("returnType", this.f6543), new C2315("returnTypeCondition", this.f6544), new C2315("isBridge", null), new C2315("isBridgeNot", null), new C2315("isDefault", null), new C2315("isDefaultNot", null));
+        Map mapM3694 = AbstractC1898.m3694(new C2315("returnType", this.returnType), new C2315("returnTypeCondition", this.f6544), new C2315("isBridge", null), new C2315("isBridgeNot", null), new C2315("isDefault", null), new C2315("isDefaultNot", null));
         LinkedHashMap linkedHashMap = new LinkedHashMap(mapMo2886);
         linkedHashMap.putAll(mapM3694);
         return linkedHashMap;

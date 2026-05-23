@@ -38,7 +38,7 @@ public final class C0421 implements InterfaceC2574 {
         }
         bitmap.getWidth();
         bitmap.getHeight();
-        int i = AbstractC1853.f6168;
+        int i = 0;
         long jElapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
         int iIntValue = ((Integer) c2303.m4165(f1968)).intValue();
         OutputStream c0506 = null;
@@ -66,7 +66,7 @@ public final class C0421 implements InterfaceC2574 {
                         } catch (Throwable th) {
                             th = th;
                             c0506 = fileOutputStream;
-                            if (c0506 != null) {
+                            if (true) {
                                 try {
                                     c0506.close();
                                 } catch (IOException unused2) {

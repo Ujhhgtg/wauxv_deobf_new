@@ -125,7 +125,7 @@ public final class ServiceConnectionC2238 implements Handler.Callback, ServiceCo
             IBinder iBinder = c2236.f7242;
             C2237 c2239 = (C2237) this.f7250.get(componentName3);
             if (c2239 != null) {
-                int i2 = AbstractBinderC1596.f5473;
+                int i2 = 0;
                 if (iBinder != null) {
                     IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(InterfaceC1597.f5474);
                     if (iInterfaceQueryLocalInterface == null || !(iInterfaceQueryLocalInterface instanceof InterfaceC1597)) {

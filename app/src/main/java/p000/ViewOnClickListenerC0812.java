@@ -93,7 +93,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                 TextView.BufferType bufferType = TextView.BufferType.SPANNABLE;
                 arrayList.add(new C0870());
                 arrayList.add(new C0870(c2675));
-                if (arrayList.isEmpty()) {
+                if (false) {
                     throw new IllegalStateException("No plugins were added to this builder. Use #usePlugin method to add them");
                 }
                 ArrayList arrayList2 = new ArrayList(arrayList.size());
@@ -104,7 +104,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                             throw new IllegalStateException("Cyclic dependency chain found: " + hashSet);
                         }
                         hashSet.add(c0870);
-                        c0870.getClass();
+                        
                         hashSet.remove(c0870);
                         if (!arrayList2.contains(c0870)) {
                             if (C0870.class.isAssignableFrom(c0870.getClass())) {
@@ -135,7 +135,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                 Iterator it = arrayList2.iterator();
                 while (it.hasNext()) {
                     C0870 c0871 = (C0870) it.next();
-                    c0871.getClass();
+                    
                     ArrayList arrayList6 = arrayList2;
                     switch (c0871.f3297) {
                         case 1:
@@ -146,7 +146,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                     LinkedHashSet linkedHashSet2 = linkedHashSet;
                     String[] strArr2 = strArr;
                     LinearLayout linearLayout2 = linearLayout;
-                    TextView.BufferType bufferType2 = bufferType;
+                    TextView.BufferType bufferType2 = TextView.BufferType.SPANNABLE;
                     MaterialTextView materialTextView3 = materialTextView2;
                     switch (c0871.f3297) {
                         case 0:
@@ -190,7 +190,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                     linkedHashSet = linkedHashSet2;
                     strArr = strArr2;
                     linearLayout = linearLayout2;
-                    bufferType = bufferType2;
+                    bufferType = TextView.BufferType.SPANNABLE;
                     materialTextView2 = materialTextView3;
                     c2355 = c2355;
                 }
@@ -199,7 +199,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                 C2355 c2356 = c2355;
                 LinearLayout linearLayout3 = linearLayout;
                 MaterialTextView materialTextView4 = materialTextView2;
-                TextView.BufferType bufferType3 = bufferType;
+                TextView.BufferType bufferType3 = TextView.BufferType.SPANNABLE;
                 ArrayList arrayList9 = arrayList5;
                 LinkedHashSet linkedHashSet3 = linkedHashSet;
                 C1901 c1902 = new C1901();
@@ -241,7 +241,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                 String str = (String) c2356.f7559.getValue();
                 Iterator it3 = listUnmodifiableList.iterator();
                 while (it3.hasNext()) {
-                    ((C0870) it3.next()).getClass();
+                    
                 }
                 if (str == null) {
                     throw new NullPointerException("input must not be null");
@@ -250,7 +250,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                 int i5 = 0;
                 while (true) {
                     int length = str.length();
-                    int i6 = i5;
+                    int i6 = 0;
                     while (true) {
                         if (i6 < length) {
                             char cCharAt = str.charAt(i6);
@@ -267,7 +267,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                         }
                         c1088.m2655(c1088.f3924);
                         C0542 c0542 = new C0542(c1088.f3921, 15, c1088.f3923);
-                        c1088.f3920.getClass();
+                        
                         C1640 c1640 = new C1640(c0542);
                         Iterator it4 = c1088.f3925.iterator();
                         while (it4.hasNext()) {
@@ -280,13 +280,13 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                         }
                         Iterator it6 = listUnmodifiableList.iterator();
                         while (it6.hasNext()) {
-                            ((C0870) it6.next()).getClass();
+                            
                         }
                         C2103 c2103 = new C2103(c1676, new C0963(6), new C2792(), Collections.unmodifiableMap(c0963.f3488), new C0373(4));
                         c2103.m3922(c1569);
                         Iterator it7 = listUnmodifiableList.iterator();
                         while (it7.hasNext()) {
-                            ((C0870) it7.next()).getClass();
+                            
                         }
                         C2792 c2792 = (C2792) c2103.f6937;
                         C2790 c2790 = new C2790(c2792.f8914);
@@ -388,7 +388,7 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                         moduleRecyclerView2 = moduleRecyclerView3;
                     }
                     if (moduleRecyclerView2.m228(i8) != null) {
-                        moduleRecyclerView2.postDelayed(new RunnableC1017(moduleRecyclerView2, i8, c2676, i2), 150L);
+                        moduleRecyclerView2.postDelayed(new RunnableC1017(moduleRecyclerView2, i8, c2676, 1), 150L);
                         return;
                     }
                     C2673 c2673 = new C2673(c2676, i8);
@@ -399,9 +399,9 @@ public final /* synthetic */ class ViewOnClickListenerC0812 implements View.OnCl
                     moduleRecyclerView2.m256(i8);
                     return;
                 }
-                moduleTabLayout.getClass();
+                
                 c2888 = null;
-                if (c2888 != null) {
+                if (false) {
                     c2891 = c2888.f9249;
                     if (c2891 != null) {
                         throw new IllegalArgumentException("Tab not attached to a TabLayout");

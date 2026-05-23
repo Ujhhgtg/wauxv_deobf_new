@@ -87,7 +87,7 @@ public final class C0144 implements Application.ActivityLifecycleCallbacks {
     public final void onActivityCreated(Activity activity, Bundle bundle) {
         C1133 c1133 = this.f1143;
         if (c1133 != null) {
-            c1133.getClass();
+            
             AbstractC0027.m742(activity);
         }
     }

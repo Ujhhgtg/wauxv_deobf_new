@@ -13,7 +13,7 @@ import p000.AbstractC1458;
 import p000.AbstractC2784;
 import p000.C0504;
 import p000.C0539;
-import p000.C3497;
+import p000.Unit;
 import p000.InterfaceC0508;
 import p000.InterfaceC1425;
 
@@ -37,16 +37,16 @@ public abstract class ResponseBody implements Closeable {
 
         @Override // java.io.Reader, java.io.Closeable, java.lang.AutoCloseable
         public void close() throws IOException {
-            C3497 c3497;
+            Unit unit;
             this.closed = true;
             Reader reader = this.delegate;
             if (reader != null) {
                 reader.close();
-                c3497 = C3497.f10997;
+                unit = Unit.INSTANCE;
             } else {
-                c3497 = null;
+                unit = null;
             }
-            if (c3497 == null) {
+            if (unit == null) {
                 this.source.close();
             }
         }

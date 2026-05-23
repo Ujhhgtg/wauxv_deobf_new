@@ -28,7 +28,7 @@ public final class C2526 extends AbstractC1352 implements InterfaceC3454 {
     @Override // p000.AbstractC1352, p000.InterfaceC3454
     public final C3448 getType(int i) {
         C3448 type = ((C2525) m3062(i)).f8056.getType();
-        type.getClass();
+        
         return type;
     }
 

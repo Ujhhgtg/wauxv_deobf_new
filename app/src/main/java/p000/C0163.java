@@ -89,7 +89,7 @@ public final class C0163 extends AbstractC3533 implements Animatable {
             return drawable.getChangingConfigurations();
         }
         int changingConfigurations = super.getChangingConfigurations();
-        this.f1180.getClass();
+        
         return changingConfigurations;
     }
 
@@ -159,7 +159,7 @@ public final class C0163 extends AbstractC3533 implements Animatable {
                         c0161.f1174 = c3542;
                     }
                     typedArrayM3165.recycle();
-                } else if (a.F.equals(name)) {
+                } else if ("target".equals(name)) {
                     TypedArray typedArrayObtainAttributes = resources.obtainAttributes(attributeSet, AbstractC1270.f4639);
                     String string = typedArrayObtainAttributes.getString(0);
                     int resourceId2 = typedArrayObtainAttributes.getResourceId(1, 0);

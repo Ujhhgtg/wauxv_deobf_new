@@ -24,7 +24,7 @@ public final class C1121 implements InterfaceC1743 {
         String strMo2518 = interfaceC0974.mo2518();
         try {
             long jM5336 = AbstractC3681.m5336(strMo2518);
-            if (jM5336 == C1119.f4182) {
+            if (jM5336 == 9223372036854759646L) {
                 throw new IllegalStateException("invariant failed");
             }
             return new C1119(jM5336);
@@ -47,7 +47,7 @@ public final class C1121 implements InterfaceC1743 {
         boolean z = true;
         if (j2 < 0) {
             j = ((-(j2 >> 1)) << 1) + ((long) (((int) j2) & 1));
-            int i = AbstractC1120.f4184;
+            int i = 0;
         } else {
             j = j2;
         }

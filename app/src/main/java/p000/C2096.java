@@ -3,7 +3,6 @@ package p000;
 import android.graphics.Color;
 import android.view.View;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᛸᲀᲁᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -43,11 +42,11 @@ public final class C2096 extends AbstractC2867 implements InterfaceC1578 {
         if (mo3264()) {
             int type = msgInfoBean.getType();
             if (type == EnumC3673.f11469.f11492 || type == EnumC3673.f11479.f11492 || type == EnumC3673.f11487.f11492 || type == EnumC3673.f11488.f11492) {
-                C2090.f6898.getClass();
+                
                 View viewFindViewById = view.findViewById(C2090.m3885());
                 if (viewFindViewById != null) {
-                    int i = AbstractC1745.f5844;
-                    C1973 c1973M3492 = AbstractC0968.m2484(viewFindViewById).m3492();
+                    int i = 0;
+                    MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(viewFindViewById).m3492();
                     c1973M3492.f6370 = "setTextColor";
                     C1982 c1982 = (C1982) AbstractC2784.m4742(c1973M3492);
                     if (AbstractC3681.m5331(viewFindViewById.getContext())) {

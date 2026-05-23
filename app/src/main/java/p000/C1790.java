@@ -70,7 +70,7 @@ public class C1790 {
         c2502.f7983 = 0;
         c2502.f7977 = 0;
         c2502.f7978 = 0;
-        c2502.f7979 = Integer.MIN_VALUE;
+        c2502.f7979 = -2147483648;
         c2502.f7981 = null;
         this.f5958 = c2502;
         this.f5960 = new LinearInterpolator();
@@ -163,7 +163,7 @@ public class C1790 {
         View view = this.f5957;
         C2502 c2502 = this.f5958;
         if (view != null) {
-            this.f5953.getClass();
+            
             AbstractC2508 abstractC2508M204 = RecyclerView.m204(view);
             if ((abstractC2508M204 != null ? abstractC2508M204.m4512() : -1) == this.f5952) {
                 View view2 = this.f5957;

@@ -63,7 +63,7 @@ public final class C0049 {
         int i2 = byteBuffer.getInt(i) + i;
         int i3 = byteBuffer.getInt(i2);
         int i4 = i2 + 4;
-        this.f983.getClass();
+        
         if (!byteBuffer.hasArray()) {
             if ((i4 | i3 | ((byteBuffer.limit() - i4) - i3)) < 0) {
                 throw new ArrayIndexOutOfBoundsException(String.format("buffer limit=%d, index=%d, limit=%d", Integer.valueOf(byteBuffer.limit()), Integer.valueOf(i4), Integer.valueOf(i3)));

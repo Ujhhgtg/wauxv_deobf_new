@@ -24,13 +24,13 @@ final class FieldWriterString<T> extends FieldWriter<T> {
         try {
             String strTrim = (String) this.propertyAccessor.getObject(t);
             if (strTrim == null) {
-                if ((8388688 & features) == 0 || (JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE & features) != 0) {
+                if ((8388688 & features) == 0 || (4096L & features) != 0) {
                     return false;
                 }
             } else if (this.trim) {
                 strTrim = strTrim.trim();
             }
-            if (strTrim != null && strTrim.isEmpty() && (JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY & features) != 0) {
+            if (strTrim != null && strTrim.isEmpty() && (67108864L & features) != 0) {
                 return false;
             }
             writeFieldName(jSONWriter);
@@ -51,7 +51,7 @@ final class FieldWriterString<T> extends FieldWriter<T> {
             }
             return true;
         } catch (Exception e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

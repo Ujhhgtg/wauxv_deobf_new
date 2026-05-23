@@ -13,6 +13,6 @@ public final class C2071 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f6867 = new C2071("MsgInfoHook.ValTextFormat", "${time} | ${type}", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f6867 = new C2071("MsgInfoHook.ValTextFormat", "${time} | ${type}", null, false, 0, 0.0f, 0L, 124);
     }
 }

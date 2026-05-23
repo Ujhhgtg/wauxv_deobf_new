@@ -270,7 +270,7 @@ public final class C0997 extends AbstractC2487 {
             m2564(this.f3653);
             ArrayList arrayList11 = this.f7930;
             if (arrayList11.size() > 0) {
-                arrayList11.get(0).getClass();
+                
                 throw new ClassCastException();
             }
             arrayList11.clear();
@@ -321,7 +321,7 @@ public final class C0997 extends AbstractC2487 {
         if (arrayList.size() <= 0) {
             arrayList.clear();
         } else {
-            arrayList.get(0).getClass();
+            
             throw new ClassCastException();
         }
     }

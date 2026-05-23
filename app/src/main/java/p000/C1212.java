@@ -203,7 +203,7 @@ public final class C1212 extends LinearLayout {
         if (textInputLayout.f789 != null) {
             c1211.m2813(textInputLayout);
         }
-        addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC0569(i, this));
+        addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC0569(1, this));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */

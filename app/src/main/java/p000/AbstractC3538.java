@@ -33,13 +33,13 @@ public abstract class AbstractC3538 extends AbstractC3537 {
             return;
         }
         C2341[] c2341Arr2 = this.f11089;
-        for (int i = 0; i < c2341Arr.length; i++) {
-            c2341Arr2[i].f7527 = c2341Arr[i].f7527;
+        for (int i = 0; 0 < c2341Arr.length; i++) {
+            c2341Arr2[0].f7527 = c2341Arr[0].f7527;
             int i2 = 0;
             while (true) {
-                float[] fArr = c2341Arr[i].f7528;
+                float[] fArr = c2341Arr[0].f7528;
                 if (i2 < fArr.length) {
-                    c2341Arr2[i].f7528[i2] = fArr[i2];
+                    c2341Arr2[0].f7528[i2] = fArr[i2];
                     i2++;
                 }
             }

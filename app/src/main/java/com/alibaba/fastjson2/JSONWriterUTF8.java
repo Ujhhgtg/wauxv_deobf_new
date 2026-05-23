@@ -44,7 +44,7 @@ final class JSONWriterUTF8 extends JSONWriter {
     final JSONFactory.CacheItem cacheItem;
 
     static {
-        byte[] bArr = {JSONB.Constants.BC_STR_UTF16, 34, 36, 114, 101, 102, 34, 58};
+        byte[] bArr = {123, 34, 36, 114, 101, 102, 34, 58};
         Unsafe unsafe = JDKUtils.UNSAFE;
         long j = JDKUtils.ARRAY_CHAR_BASE_OFFSET;
         REF = unsafe.getLong(bArr, j);
@@ -194,7 +194,7 @@ final class JSONWriterUTF8 extends JSONWriter {
         if (this.pretty != 0) {
             iIndent = indent(bArrGrow, iIndent);
         }
-        bArrGrow[iIndent] = JSONB.Constants.BC_STR_UTF16BE;
+        bArrGrow[iIndent] = 125;
         this.off = iIndent + 1;
         this.startObject = false;
     }
@@ -266,7 +266,7 @@ final class JSONWriterUTF8 extends JSONWriter {
             bArrGrow = grow(i3);
         }
         int iIndent = i2 + 1;
-        bArrGrow[i2] = JSONB.Constants.BC_STR_UTF16;
+        bArrGrow[i2] = 123;
         if (this.pretty != 0) {
             iIndent = indent(bArrGrow, iIndent);
         }
@@ -300,7 +300,7 @@ final class JSONWriterUTF8 extends JSONWriter {
         byte[] bArr = this.bytes;
         int i2 = this.off;
         this.off = i2 + 1;
-        bArr[i2] = JSONB.Constants.BC_STR_UTF16;
+        bArr[i2] = 123;
         boolean z = true;
         for (Map.Entry<?, ?> entry : map.entrySet()) {
             Object value = entry.getValue();
@@ -361,7 +361,7 @@ final class JSONWriterUTF8 extends JSONWriter {
         byte[] bArr4 = this.bytes;
         int i8 = this.off;
         this.off = i8 + 1;
-        bArr4[i8] = JSONB.Constants.BC_STR_UTF16BE;
+        bArr4[i8] = 125;
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -486,7 +486,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                 bArrGrow[i2 + 3] = (byte) ((c & '?') | 128);
                 i = i2 + 4;
             } else {
-                bArrGrow[i4] = (byte) (((c >> 6) & 31) | Opcodes.CHECKCAST);
+                bArrGrow[i4] = (byte) (((c >> 6) & 31) | 192);
                 bArrGrow[i2 + 2] = (byte) ((c & '?') | 128);
                 i = i2 + 3;
             }
@@ -501,18 +501,18 @@ final class JSONWriterUTF8 extends JSONWriter {
                 case 6:
                 case 7:
                 case 11:
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                 case 15:
                 case 16:
-                case Opcodes.SIPUSH /* 17 */:
-                case Opcodes.LDC /* 18 */:
+                case 17 /* 17 */:
+                case 18 /* 18 */:
                 case 19:
                 case 20:
-                case Opcodes.ILOAD /* 21 */:
-                case Opcodes.LLOAD /* 22 */:
-                case Opcodes.FLOAD /* 23 */:
-                case Opcodes.DLOAD /* 24 */:
-                case Opcodes.ALOAD /* 25 */:
+                case 21 /* 21 */:
+                case 22 /* 22 */:
+                case 23 /* 23 */:
+                case 24 /* 24 */:
+                case 25 /* 25 */:
                 case 26:
                 case 27:
                 case 28:
@@ -525,7 +525,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                 case '\b':
                 case '\t':
                 case '\n':
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                 case '\r':
                     StringUtils.writeEscapedChar(bArrGrow, i4, c);
                     i = i2 + 3;
@@ -542,7 +542,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                     break;
             }
         } else {
-            StringUtils.writeEscapedChar(bArrGrow, i4, c);
+            StringUtils.writeEscapedChar(bArrGrow, i4, 92);
             i = i2 + 3;
         }
         bArrGrow[i] = (byte) this.quote;
@@ -749,7 +749,7 @@ final class JSONWriterUTF8 extends JSONWriter {
             long j3 = JDKUtils.FIELD_DECIMAL_INT_COMPACT_OFFSET;
             if (j3 != -1) {
                 long j4 = JDKUtils.UNSAFE.getLong(bigDecimal, j3);
-                if (j4 == Long.MIN_VALUE || z) {
+                if (j4 == -9223372036854775808L || z) {
                     if (z) {
                         string = bigDecimal.toPlainString();
                     } else {
@@ -1557,7 +1557,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                 bArrGrow[i + 2] = (byte) ((c & '?') | 128);
                 i += 3;
             } else {
-                bArrGrow[i] = (byte) (((c >> 6) & 31) | Opcodes.CHECKCAST);
+                bArrGrow[i] = (byte) (((c >> 6) & 31) | 192);
                 bArrGrow[i + 1] = (byte) ((c & '?') | 128);
                 i += 2;
             }
@@ -1577,7 +1577,7 @@ final class JSONWriterUTF8 extends JSONWriter {
         JDKUtils.UNSAFE.putLong(bArrGrow, JDKUtils.ARRAY_BYTE_BASE_OFFSET + ((long) i), REF);
         this.off = i2;
         writeString(str);
-        writeRaw(JSONB.Constants.BC_STR_UTF16BE);
+        writeRaw(125);
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -1638,18 +1638,18 @@ final class JSONWriterUTF8 extends JSONWriter {
                             case 6:
                             case 7:
                             case 11:
-                            case Opcodes.DCONST_0 /* 14 */:
+                            case 14 /* 14 */:
                             case 15:
                             case 16:
-                            case Opcodes.SIPUSH /* 17 */:
-                            case Opcodes.LDC /* 18 */:
+                            case 17 /* 17 */:
+                            case 18 /* 18 */:
                             case 19:
                             case 20:
-                            case Opcodes.ILOAD /* 21 */:
-                            case Opcodes.LLOAD /* 22 */:
-                            case Opcodes.FLOAD /* 23 */:
-                            case Opcodes.DLOAD /* 24 */:
-                            case Opcodes.ALOAD /* 25 */:
+                            case 21 /* 21 */:
+                            case 22 /* 22 */:
+                            case 23 /* 23 */:
+                            case 24 /* 24 */:
+                            case 25 /* 25 */:
                             case 26:
                             case 27:
                             case 28:
@@ -1662,7 +1662,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                             case '\b':
                             case '\t':
                             case '\n':
-                            case Opcodes.FCONST_1 /* 12 */:
+                            case 12 /* 12 */:
                             case '\r':
                                 StringUtils.writeEscapedChar(bArrGrow, i6, c);
                                 break;
@@ -1679,7 +1679,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                                 break;
                         }
                     } else {
-                        StringUtils.writeEscapedChar(bArrGrow, i6, c);
+                        StringUtils.writeEscapedChar(bArrGrow, i6, 92);
                     }
                     i6 += 2;
                 } else if (z) {
@@ -1701,14 +1701,14 @@ final class JSONWriterUTF8 extends JSONWriter {
                         char c3 = cArr[i2 + 1];
                         if (c3 < 56320 || c3 >= 57344) {
                             i3 = i6 + 1;
-                            bArrGrow[i6] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                            bArrGrow[i6] = 63;
                         } else {
                             i4 = ((c << '\n') + c3) - 56613888;
                         }
                     }
                     if (i4 < 0) {
                         i3 = i6 + 1;
-                        bArrGrow[i6] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                        bArrGrow[i6] = 63;
                     } else {
                         bArrGrow[i6] = (byte) ((i4 >> 18) | 240);
                         bArrGrow[i6 + 1] = (byte) (((i4 >> 12) & 63) | 128);
@@ -1719,7 +1719,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                     }
                 } else {
                     i3 = i6 + 1;
-                    bArrGrow[i6] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                    bArrGrow[i6] = 63;
                 }
                 i6 = i3;
             } else if (c > 2047) {
@@ -1728,7 +1728,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                 bArrGrow[i6 + 2] = (byte) ((c & '?') | 128);
                 i6 += 3;
             } else {
-                bArrGrow[i6] = (byte) (((c >> 6) & 31) | Opcodes.CHECKCAST);
+                bArrGrow[i6] = (byte) (((c >> 6) & 31) | 192);
                 bArrGrow[i6 + 1] = (byte) ((c & '?') | 128);
                 i6 += 2;
             }
@@ -1739,7 +1739,7 @@ final class JSONWriterUTF8 extends JSONWriter {
 
     @Override // com.alibaba.fastjson2.JSONWriter
     public final void writeStringLatin1(byte[] bArr) {
-        if ((this.context.features & JSONWriter.MASK_BROWSER_SECURE) != 0) {
+        if ((this.context.features & 34359738368L) != 0) {
             writeStringLatin1BrowserSecure(bArr);
             return;
         }
@@ -2125,7 +2125,7 @@ final class JSONWriterUTF8 extends JSONWriter {
             i = iWriteInt64 + 1;
             bArrGrow[iWriteInt64] = (byte) this.quote;
         } else {
-            if ((512 & j2) != 0 && (j2 & JSONWriter.MASK_NOT_WRITE_NUMBER_CLASS_NAME) == 0 && j >= -2147483648L && j <= 2147483647L) {
+            if ((512 & j2) != 0 && (j2 & 1099511627776L) == 0 && j >= -2147483648L && j <= 2147483647L) {
                 i = iWriteInt64 + 1;
                 bArrGrow[iWriteInt64] = 76;
             }
@@ -2541,18 +2541,18 @@ final class JSONWriterUTF8 extends JSONWriter {
                         case 6:
                         case 7:
                         case 11:
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
-                        case Opcodes.LDC /* 18 */:
+                        case 17 /* 17 */:
+                        case 18 /* 18 */:
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.LLOAD /* 22 */:
-                        case Opcodes.FLOAD /* 23 */:
-                        case Opcodes.DLOAD /* 24 */:
-                        case Opcodes.ALOAD /* 25 */:
+                        case 21 /* 21 */:
+                        case 22 /* 22 */:
+                        case 23 /* 23 */:
+                        case 24 /* 24 */:
+                        case 25 /* 25 */:
                         case 26:
                         case 27:
                         case 28:
@@ -2565,7 +2565,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                         case '\b':
                         case '\t':
                         case '\n':
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case '\r':
                             StringUtils.writeEscapedChar(bArrGrow, i7, c2);
                             i7 += 2;
@@ -2583,7 +2583,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                             break;
                     }
                 } else {
-                    StringUtils.writeEscapedChar(bArrGrow, i7, c2);
+                    StringUtils.writeEscapedChar(bArrGrow, i7, 92);
                     i7 += 2;
                 }
             } else if (z2) {
@@ -2597,14 +2597,14 @@ final class JSONWriterUTF8 extends JSONWriter {
                         char c4 = cArr[i8 + 1];
                         if (c4 < 56320 || c4 >= 57344) {
                             i3 = i7 + 1;
-                            bArrGrow[i7] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                            bArrGrow[i7] = 63;
                         } else {
                             i4 = ((c2 << '\n') + c4) - 56613888;
                         }
                     }
                     if (i4 < 0) {
                         i3 = i7 + 1;
-                        bArrGrow[i7] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                        bArrGrow[i7] = 63;
                     } else {
                         bArrGrow[i7] = (byte) ((i4 >> 18) | 240);
                         bArrGrow[i7 + 1] = (byte) (((i4 >> 12) & 63) | 128);
@@ -2615,7 +2615,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                     }
                 } else {
                     i3 = i7 + 1;
-                    bArrGrow[i7] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                    bArrGrow[i7] = 63;
                 }
                 i7 = i3;
             } else if (c2 > 2047) {
@@ -2624,7 +2624,7 @@ final class JSONWriterUTF8 extends JSONWriter {
                 bArrGrow[i7 + 2] = (byte) ((c2 & '?') | 128);
                 i7 += 3;
             } else {
-                bArrGrow[i7] = (byte) (((c2 >> 6) & 31) | Opcodes.CHECKCAST);
+                bArrGrow[i7] = (byte) (((c2 >> 6) & 31) | 192);
                 bArrGrow[i7 + 1] = (byte) ((c2 & '?') | 128);
                 i7 += 2;
             }

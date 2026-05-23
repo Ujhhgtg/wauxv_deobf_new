@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C2738 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C2738 f8811 = new C2738("SnsInfoHook.ValHideGroupIcon", null, null, false, 0, 0.0f, 0, Opcodes.FNEG);
+    public static final C2738 f8811 = new C2738("SnsInfoHook.ValHideGroupIcon", null, null, false, 0, 0.0f, 0, 118);
 }

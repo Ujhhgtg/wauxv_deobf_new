@@ -212,7 +212,7 @@ public final class RunnableC0972 implements InterfaceC0956, Runnable, Comparable
             return null;
         }
         try {
-            int i2 = AbstractC1853.f6168;
+            int i2 = 0;
             long jElapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
             InterfaceC2568 interfaceC2568M2498 = m2498(i, obj);
             if (Log.isLoggable("DecodeJob", 2)) {
@@ -323,11 +323,11 @@ public final class RunnableC0972 implements InterfaceC0956, Runnable, Comparable
                     boolean z2 = c1220.f4412;
                     C1222 c1222 = c1220.f4411;
                     InterfaceC1223 interfaceC1223 = c1220.f4403;
-                    c0373.getClass();
+                    
                     c1220.f4419 = new C1224(interfaceC2568, z2, true, c1222, interfaceC1223);
                     c1220.f4416 = true;
                     C1219 c1219 = c1220.f4401;
-                    c1219.getClass();
+                    
                     ArrayList<C1218> arrayList = new ArrayList(c1219.f4399);
                     c1220.m2842(arrayList.size() + 1);
                     ((C1216) c1220.f4406).m2836(c1220, c1220.f4411, c1220.f4419);
@@ -346,7 +346,7 @@ public final class RunnableC0972 implements InterfaceC0956, Runnable, Comparable
             if (((C1852) c0243.f1406) != null) {
                 C1215 c1215 = this.f3546;
                 C2303 c2303 = this.f3557;
-                c0243.getClass();
+                
                 try {
                     c1215.m2831().mo1514((InterfaceC1749) c0243.f1404, new C0243((InterfaceC2574) c0243.f1405, (C1852) c0243.f1406, c2303, 5));
                     ((C1852) c0243.f1406).m3619();
@@ -476,7 +476,7 @@ public final class RunnableC0972 implements InterfaceC0956, Runnable, Comparable
                     c1220.f4418 = true;
                     C1222 c1222 = c1220.f4411;
                     C1219 c1219 = c1220.f4401;
-                    c1219.getClass();
+                    
                     ArrayList<C1218> arrayList = new ArrayList(c1219.f4399);
                     c1220.m2842(arrayList.size() + 1);
                     ((C1216) c1220.f4406).m2836(c1220, c1222, null);
@@ -575,7 +575,7 @@ public final class RunnableC0972 implements InterfaceC0956, Runnable, Comparable
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void m2507() {
         this.f3564 = Thread.currentThread();
-        int i = AbstractC1853.f6168;
+        int i = 0;
         this.f3560 = SystemClock.elapsedRealtimeNanos();
         boolean zMo2447 = false;
         while (!this.f3571 && this.f3569 != null && !(zMo2447 = this.f3569.mo2447())) {

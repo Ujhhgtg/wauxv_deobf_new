@@ -13,8 +13,8 @@ public final class C1618 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        if (AbstractC3471.m5079(EnumC3677.f11536) || AbstractC3471.m5080(EnumC3674.f11499)) {
-            AbstractC1574.m3295(C1617.f5488, dexKitBridge, new C1608(8));
+        if (AbstractC3471.m5079(WeChatVersions.f11536) || AbstractC3471.m5080(WeChatVersionsPlay.f11499)) {
+            AbstractC1574.findMethod(ImgUploadFeatureService$MethodSendImage.f5488, dexKitBridge, new C1608(8));
         }
     }
 

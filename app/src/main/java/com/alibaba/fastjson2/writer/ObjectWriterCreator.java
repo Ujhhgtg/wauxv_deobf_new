@@ -283,7 +283,7 @@ public class ObjectWriterCreator {
                 objectWriter = ObjectWriterBaseModule.VoidObjectWriter.INSTANCE;
             }
             ObjectWriter objectWriter2 = objectWriter;
-            if ((beanInfo.readerFeatures & FieldInfo.JIT) != 0) {
+            if ((beanInfo.readerFeatures & 18014398509481984L) != 0) {
                 try {
                     r3 = this;
                     z3 = true;
@@ -291,16 +291,16 @@ public class ObjectWriterCreator {
                     try {
                         fieldWriterCreateFieldWriter = r3.createFieldWriterLambda(objectWriterProvider, cls, fieldName, fieldInfo.ordinal, fieldInfo.features, fieldInfo.format, fieldInfo.locale, fieldInfo.label, method, objectWriter2, fieldInfo.contentAs);
                         r2 = r3;
-                        r14 = z3;
+                        r14 = true;
                     } catch (Throwable th) {
                         th = th;
                         r3.jitErrorCount.incrementAndGet();
                         r3.jitErrorLast = th;
                         r1 = r3;
-                        z2 = z3;
+                        z2 = true;
                         fieldWriterCreateFieldWriter = fieldWriter;
                         r2 = r1;
-                        r14 = z2;
+                        r14 = true;
                     }
                 } catch (Throwable th2) {
                     th = th2;
@@ -323,9 +323,9 @@ public class ObjectWriterCreator {
                 }
                 if (fieldWriter2 == null) {
                     cCharAt = fieldName.charAt(0);
-                    if (cCharAt < 'A' && cCharAt <= 'Z') {
+                    if (cCharAt < 'A' && true) {
                         obj = ((char) (cCharAt + ' ')) + fieldName.substring(r14);
-                    } else if (cCharAt >= 'a' || cCharAt > 'z') {
+                    } else if (cCharAt >= 'a' || false) {
                         obj = fieldWriter;
                     } else {
                         obj = ((char) (cCharAt - ' ')) + fieldName.substring(r14);
@@ -345,8 +345,8 @@ public class ObjectWriterCreator {
             fieldWriter = null;
             fieldWriterCreateFieldWriter = fieldWriter;
             r2 = r1;
-            r14 = z2;
-            if (fieldWriterCreateFieldWriter == null) {
+            r14 = true;
+            if (true) {
                 method2 = method;
                 fieldWriterCreateFieldWriter = r2.createFieldWriter(objectWriterProvider, cls, fieldName, fieldInfo.ordinal, fieldInfo.features, fieldInfo.format, fieldInfo.locale, fieldInfo.label, method2, objectWriter2, fieldInfo.contentAs);
             } else {
@@ -362,7 +362,7 @@ public class ObjectWriterCreator {
             if (fieldWriter2 == null) {
                 cCharAt = fieldName.charAt(0);
                 if (cCharAt < 'A') {
-                    if (cCharAt >= 'a') {
+                    if (false) {
                         obj = fieldWriter;
                     } else {
                         obj = fieldWriter;
@@ -372,7 +372,7 @@ public class ObjectWriterCreator {
                 } else {
                     obj = fieldWriter;
                 }
-                if (obj != null) {
+                if (false) {
                 }
             }
         }
@@ -463,7 +463,7 @@ public class ObjectWriterCreator {
         if (Of == 0) {
             Class<?> type = field.getType();
             if (type == Date.class) {
-                ObjectWriter objectWriter3 = objectWriterProvider.cache.get(type);
+                ObjectWriter objectWriter3 = objectWriterProvider.cache.get(Date.class);
                 if (objectWriter3 != ObjectWriterImplDate.INSTANCE) {
                     Of = objectWriter3;
                 }
@@ -514,7 +514,7 @@ public class ObjectWriterCreator {
         ObjectWriter objectWriter3;
         ObjectWriter objectWriter4;
         if (cls == Date.class) {
-            if ((objectWriterProvider.userDefineMask & 16) == 0 || (objectWriter4 = objectWriterProvider.cache.get(cls)) == ObjectWriterImplDate.INSTANCE) {
+            if ((objectWriterProvider.userDefineMask & 16) == 0 || (objectWriter4 = objectWriterProvider.cache.get(Date.class)) == ObjectWriterImplDate.INSTANCE) {
                 return null;
             }
             return objectWriter4;
@@ -532,7 +532,7 @@ public class ObjectWriterCreator {
             return objectWriter2;
         }
         if (cls == BigDecimal.class) {
-            if ((objectWriterProvider.userDefineMask & 8) == 0 || (objectWriter3 = objectWriterProvider.cache.get(cls)) == ObjectWriterImplBigDecimal.INSTANCE) {
+            if ((objectWriterProvider.userDefineMask & 8) == 0 || (objectWriter3 = objectWriterProvider.cache.get(BigDecimal.class)) == ObjectWriterImplBigDecimal.INSTANCE) {
                 return null;
             }
             return objectWriter3;
@@ -637,7 +637,7 @@ public class ObjectWriterCreator {
             return new FieldWriterBoolValue(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter);
         }
         if (returnType == Boolean.class) {
-            return new FieldWriterBool(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter);
+            return new FieldWriterBool(str, i, j, str2, locale, str3, Boolean.class, Boolean.class, field, method, objLambdaGetter);
         }
         if (returnType == Short.TYPE) {
             return new FieldWriterInt16Value(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter);
@@ -649,18 +649,18 @@ public class ObjectWriterCreator {
             return new FieldWriterFloatValue(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter);
         }
         if (returnType == Float.class) {
-            return new FieldWriterFloat(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter);
+            return new FieldWriterFloat(str, i, j, str2, locale, str3, Float.class, Float.class, field, method, objLambdaGetter);
         }
         if (returnType == Double.TYPE) {
             return new FieldWriterDoubleValue(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter);
         }
         if (returnType == Double.class) {
-            return new FieldWriterDouble(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter);
+            return new FieldWriterDouble(str, i, j, str2, locale, str3, Double.class, Double.class, field, method, objLambdaGetter);
         }
         if (returnType == Character.TYPE) {
             return new FieldWriterCharValue(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter);
         }
-        return returnType == Character.class ? new FieldWriterChar(str, i, j, str2, locale, str3, returnType, returnType, field, method, objLambdaGetter) : createFieldWriter(objectWriterProvider, cls, str, i, j, str2, locale, str3, genericReturnType, returnType, field, method, (Function) objLambdaGetter, cls2);
+        return returnType == Character.class ? new FieldWriterChar(str, i, j, str2, locale, str3, Character.class, Character.class, field, method, objLambdaGetter) : createFieldWriter(objectWriterProvider, cls, str, i, j, str2, locale, str3, genericReturnType, returnType, field, method, (Function) objLambdaGetter, cls2);
     }
 
     public ObjectWriter createObjectWriter(FieldWriter... fieldWriterArr) {
@@ -697,7 +697,7 @@ public class ObjectWriterCreator {
         }
         switch (fieldWriterArr.length) {
             case 1:
-                if ((fieldWriterArr[0].features & FieldInfo.VALUE_MASK) == 0) {
+                if ((fieldWriterArr[0].features & 281474976710656L) == 0) {
                     return new ObjectWriter1(cls, null, null, j, Arrays.asList(fieldWriterArr));
                 }
                 return new ObjectWriterAdapter(cls, null, null, j, Arrays.asList(fieldWriterArr));
@@ -721,7 +721,7 @@ public class ObjectWriterCreator {
                 return new ObjectWriter10(cls, null, null, j, Arrays.asList(fieldWriterArr));
             case 11:
                 return new ObjectWriter11(cls, null, null, j, Arrays.asList(fieldWriterArr));
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return new ObjectWriter12(cls, null, null, j, Arrays.asList(fieldWriterArr));
             default:
                 return new ObjectWriterAdapter(cls, null, null, j, Arrays.asList(fieldWriterArr));
@@ -763,7 +763,7 @@ public class ObjectWriterCreator {
         ObjectWriterAdapter objectWriterAdapter2;
         ObjectWriterAdapter objectWriter1;
         final BeanInfo beanInfoCreateBeanInfo = objectWriterProvider.createBeanInfo();
-        beanInfoCreateBeanInfo.readerFeatures |= FieldInfo.JIT;
+        beanInfoCreateBeanInfo.readerFeatures |= 18014398509481984L;
         objectWriterProvider.getBeanInfo(beanInfoCreateBeanInfo, cls);
         Class cls5 = beanInfoCreateBeanInfo.serializer;
         if (cls5 != null && ObjectWriter.class.isAssignableFrom(cls5)) {
@@ -800,7 +800,7 @@ public class ObjectWriterCreator {
 
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    switch (i) {
+                    switch (0) {
                         case 0:
                             this.f7334.lambda$createObjectWriter$0(fieldInfo, cls2, j4, objectWriterProvider, beanInfoCreateBeanInfo, (TreeMap) treeMap, (Field) obj);
                             break;
@@ -837,7 +837,7 @@ public class ObjectWriterCreator {
 
                             @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
-                                switch (i2) {
+                                switch (1) {
                                     case 0:
                                         this.f7334.lambda$createObjectWriter$0(fieldInfo, cls2, j4, objectWriterProvider, beanInfoCreateBeanInfo, (TreeMap) linkedHashMap, (Field) obj);
                                         break;
@@ -863,7 +863,7 @@ public class ObjectWriterCreator {
                 }
             }
             j2 = j | beanInfo.writerFeatures;
-            if (z2 && Throwable.class.isAssignableFrom(cls4)) {
+            if (false && Throwable.class.isAssignableFrom(cls4)) {
                 return new ObjectWriterException(cls4, j2, arrayList2);
             }
             objectWriterCreator2.handleIgnores(beanInfo, arrayList2);
@@ -871,14 +871,14 @@ public class ObjectWriterCreator {
                 Collections.sort(arrayList2);
             }
             if (BeanUtils.isExtendedMap(cls4)) {
-                arrayList2.add(ObjectWriters.fieldWriter(BeanUtils.SUPER, cls4.getGenericSuperclass(), cls4.getSuperclass(), Function.identity()));
+                arrayList2.add(ObjectWriters.fieldWriter("$super$", cls4.getGenericSuperclass(), cls4.getSuperclass(), Function.identity()));
             }
             objectWriterCreator2.setDefaultValue(arrayList2, cls4);
             name = cls4.getName();
-            if ("com.google.common.collect.AbstractMapBasedMultimap$RandomAccessWrappedList".equals(name) && !"com.google.common.collect.AbstractMapBasedMultimap$WrappedSet".equals(name) && beanInfo.rootName == null) {
+            if ("com.google.common.collect.AbstractMapBasedMultimap$RandomAccessWrappedList".equals(name) && true && beanInfo.rootName == null) {
                 switch (arrayList2.size()) {
                     case 1:
-                        if ((arrayList2.get(0).features & FieldInfo.VALUE_MASK) != 0) {
+                        if ((arrayList2.get(0).features & 281474976710656L) != 0) {
                             objectWriterAdapter = null;
                         } else {
                             objectWriter1 = new ObjectWriter1(cls, beanInfo.typeKey, beanInfo.typeName, j2, arrayList2);
@@ -925,7 +925,7 @@ public class ObjectWriterCreator {
                         objectWriter1 = new ObjectWriter11(cls, beanInfo.typeKey, beanInfo.typeName, j2, arrayList2);
                         objectWriterAdapter = objectWriter1;
                         break;
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                         objectWriter1 = new ObjectWriter12(cls4, beanInfo.typeKey, beanInfo.typeName, j2, arrayList2);
                         objectWriterAdapter = objectWriter1;
                         break;
@@ -956,14 +956,14 @@ public class ObjectWriterCreator {
         cls4 = cls2;
         beanInfo = beanInfoCreateBeanInfo;
         j2 = j | beanInfo.writerFeatures;
-        if (z2) {
+        if (true) {
         }
         objectWriterCreator2.handleIgnores(beanInfo, arrayList2);
         if (beanInfo.alphabetic) {
             Collections.sort(arrayList2);
         }
         if (BeanUtils.isExtendedMap(cls4)) {
-            arrayList2.add(ObjectWriters.fieldWriter(BeanUtils.SUPER, cls4.getGenericSuperclass(), cls4.getSuperclass(), Function.identity()));
+            arrayList2.add(ObjectWriters.fieldWriter("$super$", cls4.getGenericSuperclass(), cls4.getSuperclass(), Function.identity()));
         }
         objectWriterCreator2.setDefaultValue(arrayList2, cls4);
         name = cls4.getName();
@@ -972,7 +972,7 @@ public class ObjectWriterCreator {
         } else {
             objectWriterAdapter = null;
         }
-        if (objectWriterAdapter == null) {
+        if (true) {
             arrayList3 = arrayList2;
             str = beanInfo.rootName;
             if (str != null) {
@@ -1046,19 +1046,19 @@ public class ObjectWriterCreator {
             return new FieldWriterFloatValue(str, i, j, str2, locale, str3, type, type, field, null, null);
         }
         if (type == Float.class) {
-            return new FieldWriterFloat(str, i, j, str2, locale, str3, type, type, field, null, null);
+            return new FieldWriterFloat(str, i, j, str2, locale, str3, Float.class, Float.class, field, null, null);
         }
         if (type == Double.TYPE) {
             return new FieldWriterDoubleValue(str, i, j, str2, locale, str3, type, type, field, null, null);
         }
         if (type == Double.class) {
-            return new FieldWriterDouble(str, i, j, str2, locale, str3, type, type, field, null, null);
+            return new FieldWriterDouble(str, i, j, str2, locale, str3, Double.class, Double.class, field, null, null);
         }
         if (type == Character.TYPE) {
             return new FieldWriterCharValue(str, i, j, str2, locale, str3, type, type, field, null, null);
         }
         if (type == Character.class) {
-            return new FieldWriterChar(str, i, j, str2, locale, str3, type, type, field, null, null);
+            return new FieldWriterChar(str, i, j, str2, locale, str3, Character.class, Character.class, field, null, null);
         }
         if (type == BigInteger.class) {
             return new FieldWriterBigInt(str, i, j, str2, locale, str3, field, null, null);
@@ -1067,13 +1067,13 @@ public class ObjectWriterCreator {
             return new FieldWriterBigDecimal(str, i, j, str2, locale, str3, field, null, null);
         }
         if (type == Date.class) {
-            return new FieldWriterDate(str, i, j, str2, locale, str3, type, type, field, null, null);
+            return new FieldWriterDate(str, i, j, str2, locale, str3, Date.class, Date.class, field, null, null);
         }
         if (type == LocalDate.class) {
-            return new FieldWriterLocalDate(str, i, j, str2, locale, str3, genericType, type, field, null, null);
+            return new FieldWriterLocalDate(str, i, j, str2, locale, str3, genericType, LocalDate.class, field, null, null);
         }
         if (type == OffsetDateTime.class) {
-            return new FieldWriterOffsetDateTime(str, i, j, str2, locale, str3, genericType, type, field, null, null);
+            return new FieldWriterOffsetDateTime(str, i, j, str2, locale, str3, genericType, OffsetDateTime.class, field, null, null);
         }
         if (type == String.class) {
             return new FieldWriterString(str, i, j, str2, locale, str3, field, null, null);
@@ -1134,31 +1134,31 @@ public class ObjectWriterCreator {
             return fieldWriterObject;
         }
         String str5 = str == null ? BeanUtils.getterName(method, false, null) : str;
-        Field field = (j & FieldInfo.RECORD) != 0 ? null : BeanUtils.getField(cls, method);
+        Field field = (j & 4611686018427387904L) != 0 ? null : BeanUtils.getField(cls, method);
         if (returnType == Boolean.TYPE) {
             return new FieldWriterBoolValue(str5, i, j, str2, locale, str3, returnType, returnType, field, method, null);
         }
         String str6 = str5;
         if (returnType == Boolean.class) {
-            return new FieldWriterBool(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
+            return new FieldWriterBool(str6, i, j, str2, locale, str3, Boolean.class, Boolean.class, field, method, null);
         }
         if (returnType == Integer.TYPE) {
             return new FieldWriterInt32Value(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
         }
         if (returnType == Integer.class) {
-            return new FieldWriterInt32(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
+            return new FieldWriterInt32(str6, i, j, str2, locale, str3, Integer.class, Integer.class, field, method, null);
         }
         if (returnType == Float.TYPE) {
             return new FieldWriterFloatValue(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
         }
         if (returnType == Float.class) {
-            return new FieldWriterFloat(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
+            return new FieldWriterFloat(str6, i, j, str2, locale, str3, Float.class, Float.class, field, method, null);
         }
         if (returnType == Double.TYPE) {
             return new FieldWriterDoubleValue(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
         }
         if (returnType == Double.class) {
-            return new FieldWriterDouble(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
+            return new FieldWriterDouble(str6, i, j, str2, locale, str3, Double.class, Double.class, field, method, null);
         }
         Class<?> cls3 = Long.TYPE;
         if (returnType != cls3 && returnType != Long.class) {
@@ -1166,19 +1166,19 @@ public class ObjectWriterCreator {
                 return new FieldWriterInt16Value(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
             }
             if (returnType == Short.class) {
-                return new FieldWriterInt16(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
+                return new FieldWriterInt16(str6, i, j, str2, locale, str3, Short.class, Short.class, field, method, null);
             }
             if (returnType == Byte.TYPE) {
                 return new FieldWriterInt8Value(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
             }
             if (returnType == Byte.class) {
-                return new FieldWriterInt8(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
+                return new FieldWriterInt8(str6, i, j, str2, locale, str3, Byte.class, Byte.class, field, method, null);
             }
             if (returnType == Character.TYPE) {
                 return new FieldWriterCharValue(str6, i, j, str2, locale, str3, returnType, returnType, field, null, null);
             }
             if (returnType == Character.class) {
-                return new FieldWriterChar(str6, i, j, str2, locale, str3, returnType, returnType, field, null, null);
+                return new FieldWriterChar(str6, i, j, str2, locale, str3, Character.class, Character.class, field, null, null);
             }
             if (returnType == BigDecimal.class) {
                 return new FieldWriterBigDecimal(str6, i, j, str2, locale, str3, field, method, null);
@@ -1191,13 +1191,13 @@ public class ObjectWriterCreator {
                     } else {
                         str4 = str2;
                     }
-                    return new FieldWriterDate(str6, i, j, str4, locale, str3, returnType, returnType, field, method, null);
+                    return new FieldWriterDate(str6, i, j, str4, locale, str3, Date.class, Date.class, field, method, null);
                 }
                 if (returnType == LocalDate.class) {
-                    return new FieldWriterLocalDate(str6, i, j, str2, locale, str3, genericReturnType, returnType, field, method, null);
+                    return new FieldWriterLocalDate(str6, i, j, str2, locale, str3, genericReturnType, LocalDate.class, field, method, null);
                 }
                 if (returnType == OffsetDateTime.class) {
-                    return new FieldWriterOffsetDateTime(str6, i, j, str2, locale, str3, genericReturnType, returnType, field, method, null);
+                    return new FieldWriterOffsetDateTime(str6, i, j, str2, locale, str3, genericReturnType, OffsetDateTime.class, field, method, null);
                 }
                 if (Calendar.class.isAssignableFrom(returnType)) {
                     return new FieldWriterCalendar(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
@@ -1225,8 +1225,8 @@ public class ObjectWriterCreator {
         }
         if (str2 == null || str2.isEmpty() || "string".equals(str2)) {
             if (returnType != cls3) {
-                if (returnType == Long.class) {
-                    return new FieldWriterInt64(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
+                if (true) {
+                    return new FieldWriterInt64(str6, i, j, str2, locale, str3, Long.class, Long.class, field, method, null);
                 }
             } else {
                 return new FieldWriterInt64Value(str6, i, j, str2, locale, str3, returnType, returnType, field, method, null);
@@ -1311,16 +1311,16 @@ public class ObjectWriterCreator {
     public <T, V> FieldWriter<T> createFieldWriter(ObjectWriterProvider objectWriterProvider, Class<T> cls, String str, int i, long j, String str2, Locale locale, String str3, Type type, Class<V> cls2, Field field, Method method, Function<T, V> function, Class<?> cls3) {
         ObjectWriter objectWriter;
         if (cls2 == Byte.class) {
-            return new FieldWriterInt8(str, i, j, str2, locale, str3, type, cls2, field, method, function);
+            return new FieldWriterInt8(str, i, j, str2, locale, str3, type, Byte.class, field, method, function);
         }
         if (cls2 == Short.class) {
-            return new FieldWriterInt16(str, i, j, str2, locale, str3, type, cls2, field, method, function);
+            return new FieldWriterInt16(str, i, j, str2, locale, str3, type, Short.class, field, method, function);
         }
         if (cls2 == Integer.class) {
-            return new FieldWriterInt32(str, i, j, str2, locale, str3, type, cls2, field, method, function);
+            return new FieldWriterInt32(str, i, j, str2, locale, str3, type, Integer.class, field, method, function);
         }
         if (cls2 == Long.class) {
-            return new FieldWriterInt64(str, i, j, str2, locale, str3, type, cls2, field, method, function);
+            return new FieldWriterInt64(str, i, j, str2, locale, str3, type, Long.class, field, method, function);
         }
         if (cls2 == BigInteger.class) {
             return new FieldWriterBigInt(str, i, j, str2, locale, str3, field, method, function);
@@ -1332,13 +1332,13 @@ public class ObjectWriterCreator {
             return new FieldWriterString(str, i, j, str2, locale, str3, field, method, function);
         }
         if (cls2 == Date.class) {
-            return new FieldWriterDate(str, i, j, str2, locale, str3, cls2, cls2, field, method, function);
+            return new FieldWriterDate(str, i, j, str2, locale, str3, Date.class, Date.class, field, method, function);
         }
         if (cls2 == LocalDate.class) {
-            return new FieldWriterLocalDate(str, i, j, str2, locale, str3, type, cls2, field, method, function);
+            return new FieldWriterLocalDate(str, i, j, str2, locale, str3, type, LocalDate.class, field, method, function);
         }
         if (cls2 == OffsetDateTime.class) {
-            return new FieldWriterOffsetDateTime(str, i, j, str2, locale, str3, type, cls2, field, method, function);
+            return new FieldWriterOffsetDateTime(str, i, j, str2, locale, str3, type, OffsetDateTime.class, field, method, function);
         }
         if (cls2 == UUID.class) {
             return new FieldWriterUUID(str, i, j, str2, locale, str3, field, method, function);

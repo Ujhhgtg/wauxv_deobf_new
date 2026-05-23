@@ -48,7 +48,7 @@ public final class Cookie {
         private boolean persistent;
         private boolean secure;
         private String value;
-        private long expiresAt = DatesKt.MAX_DATE;
+        private long expiresAt = 253402300799999L;
         private String path = "/";
 
         public final Cookie build() {
@@ -74,9 +74,9 @@ public final class Cookie {
 
         public final Builder expiresAt(long j) {
             if (j <= 0) {
-                j = Long.MIN_VALUE;
+                j = -9223372036854775808L;
             }
-            if (j > DatesKt.MAX_DATE) {
+            if (j > 253402300799999L) {
                 j = 253402300799999L;
             }
             this.expiresAt = j;
@@ -234,12 +234,12 @@ public final class Cookie {
             try {
                 long j = Long.parseLong(str);
                 if (j <= 0) {
-                    return Long.MIN_VALUE;
+                    return -9223372036854775808L;
                 }
                 return j;
             } catch (NumberFormatException e) {
                 if (Pattern.compile("-?\\d+").matcher(str).matches()) {
-                    return str.startsWith("-") ? Long.MIN_VALUE : Long.MAX_VALUE;
+                    return str.startsWith("-") ? -9223372036854775808L : 9223372036854775807L;
                 }
                 throw e;
             }
@@ -307,11 +307,11 @@ public final class Cookie {
                             }
                             i = iDelimiterOffset + 1;
                         }
-                        if (maxAge == Long.MIN_VALUE) {
-                            j2 = Long.MIN_VALUE;
+                        if (maxAge == -9223372036854775808L) {
+                            j2 = -9223372036854775808L;
                         } else if (maxAge != -1) {
-                            long j3 = j + (maxAge <= 9223372036854775L ? maxAge * ((long) 1000) : Long.MAX_VALUE);
-                            j2 = (j3 < j || j3 > DatesKt.MAX_DATE) ? 253402300799999L : j3;
+                            long j3 = j + (maxAge <= 9223372036854775L ? maxAge * ((long) 1000) : 9223372036854775807L);
+                            j2 = (j3 < j || j3 > 253402300799999L) ? 253402300799999L : j3;
                         } else {
                             j2 = expires;
                         }
@@ -478,7 +478,7 @@ public final class Cookie {
         sb.append('=');
         sb.append(this.value);
         if (this.persistent) {
-            if (this.expiresAt == Long.MIN_VALUE) {
+            if (this.expiresAt == -9223372036854775808L) {
                 sb.append("; max-age=0");
             } else {
                 sb.append("; expires=");

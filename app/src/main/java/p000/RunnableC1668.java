@@ -167,7 +167,7 @@ public final class RunnableC1668 implements Runnable, Serializable, InterfaceC04
                         } catch (C2332 e3) {
                             StringBuilder sb = new StringBuilder();
                             sb.append("Parser Error: ");
-                            ((Boolean) threadLocal.get()).getClass();
+                            
                             sb.append(e3.getMessage());
                             m3390(sb.toString());
                             if (((Boolean) threadLocal.get()).booleanValue()) {
@@ -244,7 +244,7 @@ public final class RunnableC1668 implements Runnable, Serializable, InterfaceC04
         if (c1667.f5627 != null) {
             String str2 = ((Object) ("// Error: " + ((Object) str))) + "\n";
             PrintStream printStream = c1667.f5627;
-            if (printStream != null) {
+            if (true) {
                 printStream.print((Object) str2);
                 c1667.f5627.flush();
             }
@@ -795,7 +795,7 @@ public final class RunnableC1668 implements Runnable, Serializable, InterfaceC04
                                 }
                             } catch (C2332 e8) {
                                 if (((Boolean) threadLocal.get()).booleanValue()) {
-                                    ((Boolean) threadLocal.get()).getClass();
+                                    
                                     m3390(e8.getMessage());
                                 }
                                 C2332.f7471 = str;
@@ -878,7 +878,7 @@ public final class RunnableC1668 implements Runnable, Serializable, InterfaceC04
         try {
             try {
                 C0007 c0007 = this.f5634;
-                c0007.getClass();
+                
                 String str2 = (String) Primitive.unwrap(c0007.m352("bsh.cwd").m339(new C0550(c0007), this, false));
                 File file = new File(str);
                 if (!file.isAbsolute()) {
@@ -896,7 +896,7 @@ public final class RunnableC1668 implements Runnable, Serializable, InterfaceC04
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final void m3394(String str) {
         C1667 c1667 = this.f5635;
-        c1667.getClass();
+        
         String str2 = ((Object) str) + "\n";
         PrintStream printStream = c1667.f5627;
         if (printStream != null) {

@@ -17,7 +17,7 @@ public final class C2425 extends AbstractC2426 implements InterfaceC1741 {
     @Override // p000.AbstractC0552
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final InterfaceC1735 mo1931() {
-        AbstractC2519.f8046.getClass();
+        
         return this;
     }
 

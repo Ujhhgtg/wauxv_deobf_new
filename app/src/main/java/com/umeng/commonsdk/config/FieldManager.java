@@ -23,7 +23,7 @@ public class FieldManager {
     }
 
     public static FieldManager a() {
-        return a.a;
+        return "cfgfd".a;
     }
 
     public static boolean allow(String str) {

@@ -26,7 +26,7 @@ public final class C0258 extends AbstractC0739 {
     @Override // p000.InterfaceC1743
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final InterfaceC2654 mo1363() {
-        switch (this.f1444) {
+        switch (0) {
             case 0:
                 break;
         }
@@ -36,7 +36,7 @@ public final class C0258 extends AbstractC0739 {
     @Override // p000.AbstractC0056
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ */
     public final Object mo925() {
-        switch (this.f1444) {
+        switch (0) {
             case 0:
                 return new ArrayList();
             default:
@@ -47,7 +47,7 @@ public final class C0258 extends AbstractC0739 {
     @Override // p000.AbstractC0056
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final int mo926(Object obj) {
-        switch (this.f1444) {
+        switch (0) {
             case 0:
                 return ((ArrayList) obj).size();
             default:
@@ -70,7 +70,7 @@ public final class C0258 extends AbstractC0739 {
     @Override // p000.AbstractC0056
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ */
     public final Object mo931(Object obj) {
-        switch (this.f1444) {
+        switch (0) {
             case 0:
                 List list = (List) obj;
                 ArrayList arrayList = list instanceof ArrayList ? (ArrayList) list : null;
@@ -85,7 +85,7 @@ public final class C0258 extends AbstractC0739 {
     @Override // p000.AbstractC0056
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ */
     public final Object mo932(Object obj) {
-        switch (this.f1444) {
+        switch (0) {
             case 0:
                 return (ArrayList) obj;
             default:
@@ -96,7 +96,7 @@ public final class C0258 extends AbstractC0739 {
     @Override // p000.AbstractC0739
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
     public final void mo1364(Object obj, int i, Object obj2) {
-        switch (this.f1444) {
+        switch (0) {
             case 0:
                 ((ArrayList) obj).add(i, obj2);
                 break;

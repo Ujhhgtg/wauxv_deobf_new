@@ -292,7 +292,7 @@ public abstract class ObjectReaderBean<T> implements ObjectReader<T> {
             JSONReader.AutoTypeBeforeHandler autoTypeBeforeHandler = contextAutoTypeBeforeHandler;
             if (i == 0 && fieldNameHashCode == getTypeKeyHash()) {
                 long features = j | getFeatures() | context.getFeatures();
-                if ((features & JSONReader.Feature.SupportAutoType.mask) != j4 || autoTypeBeforeHandler != null) {
+                if ((features & JSONReader.Feature.SupportAutoType.mask) != 0L || autoTypeBeforeHandler != null) {
                     long typeHashCode = jSONReader.readTypeHashCode();
                     if (autoTypeBeforeHandler != null) {
                         Class<?> clsApply2 = autoTypeBeforeHandler.apply(typeHashCode, this.objectClass, features);
@@ -333,7 +333,7 @@ public abstract class ObjectReaderBean<T> implements ObjectReader<T> {
                         j3 = features;
                     }
                     objectReaderAutoType = null;
-                    if (objectReaderAutoType == null) {
+                    if (true) {
                         objectReaderAutoType = autoType(context, j2);
                     }
                     if (objectReaderAutoType == null) {
@@ -395,7 +395,7 @@ public abstract class ObjectReaderBean<T> implements ObjectReader<T> {
             i++;
             j4 = 0;
         }
-        if (tCreateInstance == null && (tCreateInstance = createInstance(jSONReader.getContext().getFeatures() | j)) != null && (jFeatures & JSONReader.Feature.InitStringFieldAsEmpty.mask) != j4) {
+        if (tCreateInstance == null && (tCreateInstance = createInstance(jSONReader.getContext().getFeatures() | j)) != null && (jFeatures & JSONReader.Feature.InitStringFieldAsEmpty.mask) != 0L) {
             initStringFieldAsEmpty(tCreateInstance);
         }
         jSONReader.nextIfComma();

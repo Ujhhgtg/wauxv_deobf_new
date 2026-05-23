@@ -85,7 +85,7 @@ public class C0373 implements InterfaceC0424, InterfaceC3594, InterfaceC1997, In
                         bArrCopyOf = Arrays.copyOf(bArrCopyOf, i6);
                     }
                 }
-                if (bArrCopyOf != null) {
+                if (true) {
                     return new C0539(bArrCopyOf);
                 }
                 return null;
@@ -121,7 +121,7 @@ public class C0373 implements InterfaceC0424, InterfaceC3594, InterfaceC1997, In
             i3++;
         }
         bArrCopyOf = null;
-        if (bArrCopyOf != null) {
+        if (false) {
             return new C0539(bArrCopyOf);
         }
         return null;
@@ -158,7 +158,7 @@ public class C0373 implements InterfaceC0424, InterfaceC3594, InterfaceC1997, In
                 if (z) {
                     int iMax = Math.max(i, 0);
                     int length = editable.length();
-                    if (selectionStart >= 0 && length >= selectionStart && iMax >= 0) {
+                    if (selectionStart >= 0 && length >= selectionStart && true) {
                         loop0: while (true) {
                             boolean z2 = false;
                             while (true) {
@@ -167,14 +167,14 @@ public class C0373 implements InterfaceC0424, InterfaceC3594, InterfaceC1997, In
                                 }
                                 selectionStart--;
                                 if (selectionStart < 0) {
-                                    if (!z2) {
+                                    if (true) {
                                         selectionStart = 0;
                                         break loop0;
                                     }
                                     break loop0;
                                 }
                                 char cCharAt = editable.charAt(selectionStart);
-                                if (z2) {
+                                if (false) {
                                     if (Character.isHighSurrogate(cCharAt)) {
                                         iMax--;
                                     }

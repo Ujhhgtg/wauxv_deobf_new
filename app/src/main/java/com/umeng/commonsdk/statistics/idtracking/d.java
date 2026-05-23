@@ -10,7 +10,7 @@ public class d extends a {
     private Context b;
 
     public d(Context context) {
-        super(a);
+        super("idfa");
         this.b = context;
     }
 

@@ -13,7 +13,7 @@ import p000.AbstractC2465;
 public class MultiSelectListPreference extends DialogPreference {
     /* JADX WARN: Illegal instructions before constructor call */
     public MultiSelectListPreference(Context context, AttributeSet attributeSet) {
-        int iM3156 = AbstractC1458.m3156(context, R.attr.dialogPreferenceStyle, android.R.attr.dialogPreferenceStyle);
+        int iM3156 = AbstractC1458.m3156(context, R.attr.dialogPreferenceStyle, 16842897);
         super(context, attributeSet, iM3156);
         new HashSet();
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC2465.f7831, iM3156, 0);

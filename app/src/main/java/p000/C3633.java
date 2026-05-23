@@ -3,7 +3,6 @@ package p000;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲇᤝᤞᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -43,9 +42,9 @@ public final class C3633 extends AbstractC2862 implements InterfaceC1429 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) throws Throwable {
         C3633 c3633 = (C3633) mo1197((InterfaceC0842) obj2, (InterfaceC0883) obj);
-        C3497 c3497 = C3497.f10997;
-        c3633.mo1198(c3497);
-        return c3497;
+        Unit unit = Unit.INSTANCE;
+        c3633.mo1198(unit);
+        return unit;
     }
 
     @Override // p000.AbstractC0370
@@ -75,6 +74,6 @@ public final class C3633 extends AbstractC2862 implements InterfaceC1429 {
         sbM4753.append('\n');
         this.f11350.setText(sbM4753.toString());
         this.f11351.setProgress(((i + 1) * 100) / list.size());
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

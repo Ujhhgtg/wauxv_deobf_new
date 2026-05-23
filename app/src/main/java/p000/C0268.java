@@ -71,34 +71,34 @@ public final /* synthetic */ class C0268 implements Function {
                 return sbM2788.toString();
             case 11:
                 return Character.toChars(((Integer) obj).intValue());
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return String.valueOf((char[]) obj);
             case 13:
                 Class cls = (Class) obj;
                 return Integer.valueOf(cls == null ? 39 : cls.hashCode());
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return C0356.m1466((Class) obj);
             case 15:
                 return JSONPath.lambda$of$0((JSONPath) obj);
             case 16:
                 return ((List) obj).stream();
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return new AtomicIntegerArray((int[]) obj);
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return new AtomicLongArray((long[]) obj);
             case 19:
                 return ObjectReaderBaseModule.lambda$getObjectReader$2((String) obj);
             case 20:
                 return Period.parse((String) obj);
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return new SimpleDateFormat((String) obj);
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return ByteBuffer.wrap((byte[]) obj);
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return new AtomicBoolean(((Boolean) obj).booleanValue());
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return URI.create((String) obj);
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 return Charset.forName((String) obj);
             case 26:
                 return new File((String) obj);

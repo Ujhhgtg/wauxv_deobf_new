@@ -36,7 +36,7 @@ public final class C2235 {
         String str2 = this.f7239;
         Notification notification = this.f7240;
         C1595 c1595 = (C1595) interfaceC1597;
-        c1595.getClass();
+        
         Parcel parcelObtain = Parcel.obtain();
         try {
             parcelObtain.writeInterfaceToken(InterfaceC1597.f5474);

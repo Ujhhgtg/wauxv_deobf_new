@@ -37,7 +37,7 @@ public class C2144 extends C0155 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ */
     public final void mo1201(Throwable th) {
         String string;
-        AbstractC2140.f7085.getClass();
+        
         if (th instanceof UnknownHostException) {
             Context context = AbstractC2140.f7078;
             string = (context != null ? context : null).getString(R.string.net_host_error);

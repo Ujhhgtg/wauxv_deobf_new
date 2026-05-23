@@ -13,6 +13,6 @@ public final class C2630 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f8519 = new C2630("SayHiAutoRemarkNameHook.ValTextFormat", "${time} ${nick}", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f8519 = new C2630("SayHiAutoRemarkNameHook.ValTextFormat", "${time} ${nick}", null, false, 0, 0.0f, 0L, 124);
     }
 }

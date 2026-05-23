@@ -5,7 +5,6 @@ import android.database.Cursor;
 import java.io.IOException;
 import java.util.Set;
 import me.hd.wauxv.data.bean.info.FriendInfo;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᲇᤝᲈᤞᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -29,11 +28,11 @@ public final class C2283 extends AbstractC1823 implements InterfaceC1601 {
                 return;
             }
             Set setM2209 = AbstractC0744.m2209(AbstractC2841.m4843(asString2, new String[]{";"}));
-            int i2 = AbstractC1745.f5844;
-            C2800.f8930.getClass();
-            C1973 c1973M3492 = AbstractC0968.m2484(C2800.m4779()).m3492();
+            int i2 = 0;
+            
+            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2800.m4779()).m3492();
             c1973M3492.f6370 = "rawQuery";
-            Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832("SELECT memberlist, memberCount FROM chatroom WHERE chatroomname = ?", new Object[]{asString});
+            Cursor cursor = (Cursor) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(Object[].class)}, 2, c1973M3492)).invoke("SELECT memberlist, memberCount FROM chatroom WHERE chatroomname = ?", new Object[]{asString});
             if (cursor != null) {
                 try {
                     if (cursor.moveToFirst()) {
@@ -59,8 +58,8 @@ public final class C2283 extends AbstractC1823 implements InterfaceC1601 {
                                         nickname2 = "";
                                     }
                                     for (C2355 c2355 : AbstractC2371.f7619) {
-                                        c2355.getClass();
-                                        c2355.m4332("onMemberChange", str4, asString, str3, nickname2);
+                                        
+                                        c2355.m4332("onMemberChange", "join", asString, str3, nickname2);
                                     }
                                 }
                             } else if (asInteger.intValue() < i3) {
@@ -77,8 +76,8 @@ public final class C2283 extends AbstractC1823 implements InterfaceC1601 {
                                         nickname = "";
                                     }
                                     for (C2355 c2356 : AbstractC2371.f7619) {
-                                        c2356.getClass();
-                                        c2356.m4332("onMemberChange", str6, asString, str5, nickname);
+                                        
+                                        c2356.m4332("onMemberChange", "left", asString, str5, nickname);
                                     }
                                 }
                             }

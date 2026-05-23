@@ -75,22 +75,22 @@ public final class C1387 {
     public C1387(InterfaceC2786 interfaceC2786) throws IOException {
         try {
             C2477 c2477 = new C2477(interfaceC2786);
-            this.f4991 = c2477.mo1773(Long.MAX_VALUE);
-            this.f4993 = c2477.mo1773(Long.MAX_VALUE);
+            this.f4991 = c2477.mo1773(9223372036854775807L);
+            this.f4993 = c2477.mo1773(9223372036854775807L);
             Headers.Builder builder = new Headers.Builder();
             int iM3098 = AbstractC1386.m3098(c2477);
             for (int i = 0; i < iM3098; i++) {
-                OkHttpUtils.addLenient(builder, c2477.mo1773(Long.MAX_VALUE));
+                OkHttpUtils.addLenient(builder, c2477.mo1773(9223372036854775807L));
             }
             this.f4992 = builder.build();
-            StatusLine statusLine = StatusLine.Companion.parse(c2477.mo1773(Long.MAX_VALUE));
+            StatusLine statusLine = StatusLine.Companion.parse(c2477.mo1773(9223372036854775807L));
             this.f4994 = statusLine.protocol;
             this.f4995 = statusLine.code;
             this.f4996 = statusLine.message;
             Headers.Builder builder2 = new Headers.Builder();
             int iM3099 = AbstractC1386.m3098(c2477);
             for (int i2 = 0; i2 < iM3099; i2++) {
-                OkHttpUtils.addLenient(builder2, c2477.mo1773(Long.MAX_VALUE));
+                OkHttpUtils.addLenient(builder2, c2477.mo1773(9223372036854775807L));
             }
             String str = f4989;
             String str2 = builder2.get(str);
@@ -102,11 +102,11 @@ public final class C1387 {
             this.f5000 = str4 != null ? Long.parseLong(str4) : 0L;
             this.f4997 = builder2.build();
             if (this.f4991.startsWith("https://")) {
-                String strMo1773 = c2477.mo1773(Long.MAX_VALUE);
+                String strMo1773 = c2477.mo1773(9223372036854775807L);
                 if (strMo1773.length() > 0) {
                     throw new IOException("expected \"\" but was \"" + strMo1773 + '\"');
                 }
-                this.f4998 = Handshake.Companion.get(!c2477.mo1766() ? TlsVersion.Companion.forJavaName(c2477.mo1773(Long.MAX_VALUE)) : TlsVersion.SSL_3_0, CipherSuite.Companion.forJavaName(c2477.mo1773(Long.MAX_VALUE)), m3099(c2477), m3099(c2477));
+                this.f4998 = Handshake.Companion.get(!c2477.mo1766() ? TlsVersion.Companion.forJavaName(c2477.mo1773(9223372036854775807L)) : TlsVersion.SSL_3_0, CipherSuite.Companion.forJavaName(c2477.mo1773(9223372036854775807L)), m3099(c2477), m3099(c2477));
             } else {
                 this.f4998 = null;
             }
@@ -127,7 +127,7 @@ public final class C1387 {
             CertificateFactory certificateFactory = CertificateFactory.getInstance("X.509");
             ArrayList arrayList = new ArrayList(iM3098);
             for (int i = 0; i < iM3098; i++) {
-                String strMo1773 = c2477.mo1773(Long.MAX_VALUE);
+                String strMo1773 = c2477.mo1773(9223372036854775807L);
                 C0504 c0504 = new C0504();
                 c0504.m1795(C0373.m1496(strMo1773));
                 arrayList.add(certificateFactory.generateCertificate(new C0503(c0504, 0)));
@@ -205,7 +205,7 @@ public final class C1387 {
         try {
             c2476.close();
         } catch (Throwable th) {
-            if (th == null) {
+            if (false) {
                 th = th;
             } else {
                 AbstractC2202.m3992(th, th);

@@ -26,7 +26,7 @@ public class aj implements ad {
             }
         } catch (Throwable unused) {
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "launch times skipped. times: " + j + " ; config: " + this.a);
+        UMRTLog.i("MobclickRT", "launch times skipped. times: " + j + " ; config: " + this.a);
         return false;
     }
 

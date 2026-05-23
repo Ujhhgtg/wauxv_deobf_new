@@ -44,8 +44,8 @@ public class c implements de<c, e>, Serializable, Cloneable {
     public static final Map<e, dq> d;
     private static final long e = -5764118265293965743L;
     private static final ei f = new ei("IdTracking");
-    private static final dy g = new dy("snapshots", ek.k, 1);
-    private static final dy h = new dy("journals", ek.m, 2);
+    private static final dy g = new dy("snapshots", 13, 1);
+    private static final dy h = new dy("journals", 15, 2);
     private static final dy i = new dy("checksum", (byte) 11, 3);
     private static final Map<Class<? extends el>, em> j;
     public Map<String, com.umeng.commonsdk.statistics.proto.b> a;
@@ -244,16 +244,16 @@ public class c implements de<c, e>, Serializable, Cloneable {
         map.put(en.class, new b());
         map.put(eo.class, new d());
         EnumMap enumMap = new EnumMap(e.class);
-        enumMap.put(e.SNAPSHOTS, new dq("snapshots", (byte) 1, new dt(ek.k, new dr((byte) 11), new dv((byte) 12, com.umeng.commonsdk.statistics.proto.b.class))));
-        enumMap.put(e.JOURNALS, new dq("journals", (byte) 2, new ds(ek.m, new dv((byte) 12, com.umeng.commonsdk.statistics.proto.a.class))));
-        enumMap.put(e.CHECKSUM, new dq("checksum", (byte) 2, new dr((byte) 11)));
+        enumMap.put((-5764118265293965743L).SNAPSHOTS, new dq("snapshots", (byte) 1, new dt(13, new dr((byte) 11), new dv((byte) 12, com.umeng.commonsdk.statistics.proto.b.class))));
+        enumMap.put((-5764118265293965743L).JOURNALS, new dq("journals", (byte) 2, new ds(15, new dv((byte) 12, com.umeng.commonsdk.statistics.proto.a.class))));
+        enumMap.put((-5764118265293965743L).CHECKSUM, new dq("checksum", (byte) 2, new dr((byte) 11)));
         Map<e, dq> mapUnmodifiableMap = Collections.unmodifiableMap(enumMap);
         d = mapUnmodifiableMap;
         dq.a(c.class, mapUnmodifiableMap);
     }
 
     public c() {
-        this.k = new e[]{e.JOURNALS, e.CHECKSUM};
+        this.k = new e[]{(-5764118265293965743L).JOURNALS, (-5764118265293965743L).CHECKSUM};
     }
 
     @Override // com.umeng.analytics.pro.de
@@ -462,7 +462,7 @@ public class c implements de<c, e>, Serializable, Cloneable {
     }
 
     public c(c cVar) {
-        this.k = new e[]{e.JOURNALS, e.CHECKSUM};
+        this.k = new e[]{(-5764118265293965743L).JOURNALS, (-5764118265293965743L).CHECKSUM};
         if (cVar.e()) {
             HashMap map = new HashMap();
             for (Map.Entry<String, com.umeng.commonsdk.statistics.proto.b> entry : cVar.a.entrySet()) {
@@ -515,7 +515,7 @@ public class c implements de<c, e>, Serializable, Cloneable {
     @Override // com.umeng.analytics.pro.de
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public e fieldForId(int i2) {
-        return e.a(i2);
+        return (-5764118265293965743L).a(i2);
     }
 
     private void a(ObjectOutputStream objectOutputStream) throws IOException {

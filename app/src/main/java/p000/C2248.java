@@ -47,7 +47,7 @@ public final /* synthetic */ class C2248 implements Consumer {
 
     @Override // java.util.function.Consumer
     public final void accept(Object obj) {
-        switch (this.f7269) {
+        switch (0) {
             case 0:
                 ((ObjectReaderBaseModule.ReaderAnnotationProcessor) this.f7273).lambda$getFieldInfo$0(this.f7271, this.f7272, this.f7270, (String) this.f7274, (String) this.f7275, (Field) obj);
                 break;

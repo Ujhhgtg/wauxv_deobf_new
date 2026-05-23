@@ -25,8 +25,8 @@ public final /* synthetic */ class C2537 implements InterfaceC1425 {
         switch (this.f8088) {
             case 0:
                 C1020 c1020 = (C1020) obj;
-                c1020.f3732 = new C2537(1, this.f8089, this.f8090);
-                c1020.f3733 = new C2444(27);
+                c1020.declaringClassMatcher = new C2537(1, this.f8089, this.f8090);
+                c1020.thisMethodMatcher = new C2444(27);
                 break;
             default:
                 C1332 c1332 = (C1332) obj;
@@ -39,6 +39,6 @@ public final /* synthetic */ class C2537 implements InterfaceC1425 {
                 c1332.f4791 = c0705;
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

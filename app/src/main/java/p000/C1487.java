@@ -34,22 +34,22 @@ public final class C1487 extends ReplacementSpan {
         float fMeasureText = paint.measureText(charSequence, i, i2);
         float f2 = i4;
         float f3 = paint.getFontMetrics().ascent + f2;
-        float f4 = this.f5282;
-        RectF rectF = new RectF(f, f3, (2 * f4) + fMeasureText + f, paint.getFontMetrics().descent + f2);
+        float f4 = 8.0f;
+        RectF rectF = new RectF(f, f3, (16.0f) + fMeasureText + f, paint.getFontMetrics().descent + f2);
         int color = paint.getColor();
         Shader shader = paint.getShader();
         paint.setShader(new LinearGradient(rectF.left, rectF.top, rectF.right, rectF.bottom, this.f5279, (float[]) null, Shader.TileMode.CLAMP));
-        float f5 = this.f5281;
-        canvas.drawRoundRect(rectF, f5, f5, paint);
+        float f5 = 8.0f;
+        canvas.drawRoundRect(rectF, 8.0f, 8.0f, paint);
         paint.setColor(this.f5280);
         paint.setShader(null);
-        canvas.drawText(charSequence, i, i2, f + f4, f2, paint);
+        canvas.drawText(charSequence, i, i2, f + 8.0f, f2, paint);
         paint.setColor(color);
         paint.setShader(shader);
     }
 
     @Override // android.text.style.ReplacementSpan
     public final int getSize(Paint paint, CharSequence charSequence, int i, int i2, Paint.FontMetricsInt fontMetricsInt) {
-        return (int) ((2 * this.f5282) + paint.measureText(charSequence, i, i2));
+        return (int) ((16.0f) + paint.measureText(charSequence, i, i2));
     }
 }

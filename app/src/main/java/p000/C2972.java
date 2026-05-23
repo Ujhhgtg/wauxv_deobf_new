@@ -49,7 +49,7 @@ public final /* synthetic */ class C2972 implements InterfaceC1443 {
         String str;
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         Integer num = null;
         String str2 = null;
         Integer num2 = null;
@@ -130,7 +130,7 @@ public final /* synthetic */ class C2972 implements InterfaceC1443 {
                     break;
                 case 8:
                     num5 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C1665.f5622, num5);
-                    i |= bc.e;
+                    i |= 256;
                     str5 = str5;
                     break;
                 case 9:
@@ -148,7 +148,7 @@ public final /* synthetic */ class C2972 implements InterfaceC1443 {
                     i |= 2048;
                     str5 = str5;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     num2 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C1665.f5622, num2);
                     i |= 4096;
                     str5 = str5;
@@ -158,9 +158,9 @@ public final /* synthetic */ class C2972 implements InterfaceC1443 {
                     i |= 8192;
                     str5 = str5;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     str3 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C2839.f9108, str3);
-                    i |= Http2.INITIAL_MAX_FRAME_SIZE;
+                    i |= 16384;
                     str5 = str5;
                     break;
                 default:

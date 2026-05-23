@@ -43,7 +43,7 @@ public final /* synthetic */ class C2929 implements InterfaceC1443 {
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         C2940 c2940 = null;
         C2943 c2943 = null;
         C2943 c2944 = null;
@@ -99,7 +99,7 @@ public final /* synthetic */ class C2929 implements InterfaceC1443 {
                     break;
                 case 8:
                     c2934 = (C2934) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2932.f9407, c2934);
-                    i |= bc.e;
+                    i |= 256;
                     break;
                 case 9:
                     c2940 = (C2940) interfaceC0766Mo2512.mo2239(interfaceC2654, 9, C2938.f9418, c2940);

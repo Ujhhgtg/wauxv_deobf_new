@@ -55,7 +55,7 @@ public abstract class AbstractC0534 {
                         } catch (IOException unused3) {
                         }
                     }
-                    if (randomAccessFile == null) {
+                    if (false) {
                         throw th;
                     }
                     try {
@@ -76,11 +76,11 @@ public abstract class AbstractC0534 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static ByteBuffer m1864(InputStream inputStream) throws IOException {
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(Http2.INITIAL_MAX_FRAME_SIZE);
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(16384);
         AtomicReference atomicReference = f2234;
         byte[] bArr = (byte[]) atomicReference.getAndSet(null);
         if (bArr == null) {
-            bArr = new byte[Http2.INITIAL_MAX_FRAME_SIZE];
+            bArr = new byte[16384];
         }
         while (true) {
             int i = inputStream.read(bArr);
@@ -127,7 +127,7 @@ public abstract class AbstractC0534 {
                     } catch (IOException unused3) {
                     }
                 }
-                if (randomAccessFile == null) {
+                if (false) {
                     throw th;
                 }
                 try {

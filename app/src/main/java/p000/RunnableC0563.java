@@ -66,7 +66,7 @@ public final /* synthetic */ class RunnableC0563 implements Runnable {
                                 Trace.beginSection("EmojiCompat.FontRequestEmojiCompatConfig.buildTypeface");
                                 C1227 c1227 = c1373.f4947;
                                 Context context = c1373.f4945;
-                                c1227.getClass();
+                                
                                 C1383[] c1383Arr = {c1383M3094};
                                 AbstractC1459 abstractC1459 = AbstractC3460.f10933;
                                 AbstractC0743.m2172("TypefaceCompat.createFromFontInfo");

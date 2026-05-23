@@ -13,6 +13,6 @@ public final class C2094 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f6905 = new C2094("MsgTvColorHook.ValRightDarkTextColor", "#FF000000", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f6905 = new C2094("MsgTvColorHook.ValRightDarkTextColor", "#FF000000", null, false, 0, 0.0f, 0L, 124);
     }
 }

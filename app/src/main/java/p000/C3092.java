@@ -52,7 +52,7 @@ public final /* synthetic */ class C3092 implements InterfaceC1443 {
         int i;
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         Integer num = null;
         Integer num2 = null;
         String str = null;
@@ -148,7 +148,7 @@ public final /* synthetic */ class C3092 implements InterfaceC1443 {
                 case 8:
                     str7 = str7;
                     str9 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2839.f9108, str9);
-                    i2 |= bc.e;
+                    i2 |= 256;
                     str6 = str15;
                     str7 = str7;
                     break;
@@ -173,7 +173,7 @@ public final /* synthetic */ class C3092 implements InterfaceC1443 {
                     str6 = str15;
                     str7 = str7;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     str7 = str7;
                     str = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C2839.f9108, str);
                     i2 |= 4096;
@@ -187,31 +187,31 @@ public final /* synthetic */ class C3092 implements InterfaceC1443 {
                     str6 = str15;
                     str7 = str7;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     str7 = str7;
                     str3 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C2839.f9108, str3);
-                    i2 |= Http2.INITIAL_MAX_FRAME_SIZE;
+                    i2 |= 16384;
                     str6 = str15;
                     str7 = str7;
                     break;
                 case 15:
                     str4 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 15, C2839.f9108, str4);
                     i = 32768;
-                    i2 |= i;
+                    i2 |= 32768;
                     str6 = str15;
                     str7 = str7;
                     break;
                 case 16:
                     str5 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 16, C2839.f9108, str5);
                     i = 65536;
-                    i2 |= i;
+                    i2 |= 65536;
                     str6 = str15;
                     str7 = str7;
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     c3109 = (C3109) interfaceC0766Mo2512.mo2239(interfaceC2654, 17, C3107.f9926, c3109);
                     i = 131072;
-                    i2 |= i;
+                    i2 |= 131072;
                     str6 = str15;
                     str7 = str7;
                     break;

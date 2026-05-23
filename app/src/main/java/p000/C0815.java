@@ -69,7 +69,7 @@ public final class C0815 {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i) {
+                switch (0) {
                     case 0:
                         return (RecyclerView) ((LinearLayout) this.f3180.f3184.getValue()).findViewById(R.id.itemContactRecyclerView);
                     case 1:
@@ -99,7 +99,7 @@ public final class C0815 {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i2) {
+                switch (1) {
                     case 0:
                         return (RecyclerView) ((LinearLayout) this.f3180.f3184.getValue()).findViewById(R.id.itemContactRecyclerView);
                     case 1:
@@ -129,7 +129,7 @@ public final class C0815 {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i3) {
+                switch (2) {
                     case 0:
                         return (RecyclerView) ((LinearLayout) this.f3180.f3184.getValue()).findViewById(R.id.itemContactRecyclerView);
                     case 1:
@@ -159,7 +159,7 @@ public final class C0815 {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i4) {
+                switch (3) {
                     case 0:
                         return (RecyclerView) ((LinearLayout) this.f3180.f3184.getValue()).findViewById(R.id.itemContactRecyclerView);
                     case 1:
@@ -189,7 +189,7 @@ public final class C0815 {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i5) {
+                switch (4) {
                     case 0:
                         return (RecyclerView) ((LinearLayout) this.f3180.f3184.getValue()).findViewById(R.id.itemContactRecyclerView);
                     case 1:
@@ -219,7 +219,7 @@ public final class C0815 {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i6) {
+                switch (5) {
                     case 0:
                         return (RecyclerView) ((LinearLayout) this.f3180.f3184.getValue()).findViewById(R.id.itemContactRecyclerView);
                     case 1:
@@ -249,7 +249,7 @@ public final class C0815 {
 
             @Override // p000.InterfaceC1414
             public final Object invoke() {
-                switch (i7) {
+                switch (6) {
                     case 0:
                         return (RecyclerView) ((LinearLayout) this.f3180.f3184.getValue()).findViewById(R.id.itemContactRecyclerView);
                     case 1:

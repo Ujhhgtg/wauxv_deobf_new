@@ -26,30 +26,30 @@ public final /* synthetic */ class C1286 implements InterfaceC1414 {
         ContextMenu contextMenu = this.f4698;
         switch (i) {
             case 0:
-                int i2 = AbstractC1745.f5844;
-                C1973 c1973M3492 = AbstractC0968.m2484(contextMenu).m3492();
-                c1973M3492.f6543 = AbstractC2519.m4527(MenuItem.class);
-                return (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(cls), AbstractC2519.m4527(cls), AbstractC2519.m4527(CharSequence.class), AbstractC2519.m4527(cls)}, 5, c1973M3492);
+                int i2 = 0;
+                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(contextMenu).m3492();
+                c1973M3492.returnType = AbstractC2519.classToKClass(MenuItem.class);
+                return (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(CharSequence.class), AbstractC2519.classToKClass(cls)}, 5, c1973M3492);
             case 1:
-                int i3 = AbstractC1745.f5844;
-                C1973 c1973M3493 = AbstractC0968.m2484(contextMenu).m3492();
-                c1973M3493.f6543 = AbstractC2519.m4527(MenuItem.class);
-                return (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(cls), AbstractC2519.m4527(cls), AbstractC2519.m4527(CharSequence.class), AbstractC2519.m4527(cls)}, 5, c1973M3493);
+                int i3 = 0;
+                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(contextMenu).m3492();
+                c1973M3493.returnType = AbstractC2519.classToKClass(MenuItem.class);
+                return (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(CharSequence.class), AbstractC2519.classToKClass(cls)}, 5, c1973M3493);
             case 2:
-                int i4 = AbstractC1745.f5844;
-                C1973 c1973M3494 = AbstractC0968.m2484(contextMenu).m3492();
-                c1973M3494.f6543 = AbstractC2519.m4527(MenuItem.class);
-                return (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(CharSequence.class), AbstractC2519.m4527(cls)}, 3, c1973M3494);
+                int i4 = 0;
+                MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(contextMenu).m3492();
+                c1973M3494.returnType = AbstractC2519.classToKClass(MenuItem.class);
+                return (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(CharSequence.class), AbstractC2519.classToKClass(cls)}, 3, c1973M3494);
             case 3:
-                int i5 = AbstractC1745.f5844;
-                C1973 c1973M3495 = AbstractC0968.m2484(contextMenu).m3492();
-                c1973M3495.f6543 = AbstractC2519.m4527(MenuItem.class);
-                return (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(CharSequence.class), AbstractC2519.m4527(cls)}, 3, c1973M3495);
+                int i5 = 0;
+                MethodResolver c1973M3495 = AbstractC0968.startFieldResolution(contextMenu).m3492();
+                c1973M3495.returnType = AbstractC2519.classToKClass(MenuItem.class);
+                return (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(CharSequence.class), AbstractC2519.classToKClass(cls)}, 3, c1973M3495);
             default:
-                int i6 = AbstractC1745.f5844;
-                C1973 c1973M3496 = AbstractC0968.m2484(contextMenu).m3492();
-                c1973M3496.f6543 = AbstractC2519.m4527(MenuItem.class);
-                return (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(CharSequence.class)}, 2, c1973M3496);
+                int i6 = 0;
+                MethodResolver c1973M3496 = AbstractC0968.startFieldResolution(contextMenu).m3492();
+                c1973M3496.returnType = AbstractC2519.classToKClass(MenuItem.class);
+                return (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(CharSequence.class)}, 2, c1973M3496);
         }
     }
 }

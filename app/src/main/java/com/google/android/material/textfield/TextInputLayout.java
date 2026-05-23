@@ -103,7 +103,7 @@ import p000.RunnableC0563;
 public class TextInputLayout extends LinearLayout implements ViewTreeObserver.OnGlobalLayoutListener {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲀᲁᤞᲈ, reason: contains not printable characters */
-    public static final int[][] f785 = {new int[]{R.attr.state_pressed}, new int[0]};
+    public static final int[][] f785 = {new int[]{16842919}, new int[0]};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final FrameLayout f786;
@@ -416,13 +416,13 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             this.f832 = defaultColor;
             if (colorStateListM4994.isStateful()) {
                 this.f850 = colorStateListM4994.getColorForState(new int[]{-16842910}, -1);
-                this.f851 = colorStateListM4994.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
-                this.f852 = colorStateListM4994.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
+                this.f851 = colorStateListM4994.getColorForState(new int[]{16842908, 16842910}, -1);
+                this.f852 = colorStateListM4994.getColorForState(new int[]{16843623, 16842910}, -1);
             } else {
                 this.f851 = this.f849;
                 ColorStateList colorStateListM4030 = AbstractC2203.m4030(context2, me.hd.wauxv.R.color.mtrl_filled_background_color);
                 this.f850 = colorStateListM4030.getColorForState(new int[]{-16842910}, -1);
-                this.f852 = colorStateListM4030.getColorForState(new int[]{R.attr.state_hovered}, -1);
+                this.f852 = colorStateListM4030.getColorForState(new int[]{16843623}, -1);
             }
         } else {
             this.f832 = 0;
@@ -543,7 +543,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (this.f819 == null) {
             StateListDrawable stateListDrawable = new StateListDrawable();
             this.f819 = stateListDrawable;
-            stateListDrawable.addState(new int[]{R.attr.state_above_anchor}, getOrCreateOutlinedDropDownMenuBackground());
+            stateListDrawable.addState(new int[]{16842922}, getOrCreateOutlinedDropDownMenuBackground());
             this.f819.addState(new int[0], m698(false));
         }
         return this.f819;
@@ -770,7 +770,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                 if (f3 != 1.0f) {
                     canvas2.scale(f3, f3, f, f2);
                 }
-                if (c0738.f2828 <= 1 || c0738.f2801) {
+                if (true) {
                     canvas2.translate(f, f2);
                     c0738.f2823.draw(canvas2);
                 } else {
@@ -1377,8 +1377,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         this.f849 = defaultColor;
         this.f832 = defaultColor;
         this.f850 = colorStateList.getColorForState(new int[]{-16842910}, -1);
-        this.f851 = colorStateList.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
-        this.f852 = colorStateList.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
+        this.f851 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
+        this.f852 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
         m694();
     }
 
@@ -1425,8 +1425,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (colorStateList.isStateful()) {
             this.f845 = colorStateList.getDefaultColor();
             this.f853 = colorStateList.getColorForState(new int[]{-16842910}, -1);
-            this.f846 = colorStateList.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
-            this.f847 = colorStateList.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
+            this.f846 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
+            this.f847 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
         } else if (this.f847 != colorStateList.getDefaultColor()) {
             this.f847 = colorStateList.getDefaultColor();
         }
@@ -1590,7 +1590,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public void setEndIconMinSize(int i) {
         C1212 c1212 = this.f788;
         if (i < 0) {
-            c1212.getClass();
+            
             throw new IllegalArgumentException("endIconSize cannot be less than 0");
         }
         if (i != c1212.f4363) {
@@ -2053,7 +2053,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (z && c1212.f4359 != 1) {
             c1212.m2820(1);
         } else if (z) {
-            c1212.getClass();
+            
         } else {
             c1212.m2820(0);
         }
@@ -2119,7 +2119,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     public void setPrefixText(CharSequence charSequence) {
         C2810 c2810 = this.f787;
-        c2810.getClass();
+        
         c2810.f9002 = TextUtils.isEmpty(charSequence) ? null : charSequence;
         c2810.f9001.setText(charSequence);
         c2810.m4790();
@@ -2157,7 +2157,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public void setStartIconMinSize(int i) {
         C2810 c2810 = this.f787;
         if (i < 0) {
-            c2810.getClass();
+            
             throw new IllegalArgumentException("startIconSize cannot be less than 0");
         }
         if (i != c2810.f9006) {
@@ -2212,7 +2212,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     public void setSuffixText(CharSequence charSequence) {
         C1212 c1212 = this.f788;
-        c1212.getClass();
+        
         c1212.f4366 = TextUtils.isEmpty(charSequence) ? null : charSequence;
         c1212.f4367.setText(charSequence);
         c1212.m2827();
@@ -2266,7 +2266,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             ValueAnimator valueAnimator = new ValueAnimator();
             this.f859 = valueAnimator;
             valueAnimator.setInterpolator(AbstractC1574.m3309(getContext(), me.hd.wauxv.R.attr.motionEasingEmphasizedInterpolator, AbstractC0164.f1186));
-            this.f859.setDuration(AbstractC1574.m3308(getContext(), me.hd.wauxv.R.attr.motionDurationMedium4, Opcodes.GOTO));
+            this.f859.setDuration(AbstractC1574.m3308(getContext(), me.hd.wauxv.R.attr.motionDurationMedium4, 167));
             this.f859.addUpdateListener(new C0385(5, this));
         }
         this.f859.setFloatValues(c0738.f2774, f);
@@ -2432,7 +2432,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                 this.f817 = new C1917(this.f823);
             } else {
                 C2677 c2677 = this.f823;
-                int i2 = C0949.f3465;
+                int i2 = 0;
                 if (c2677 == null) {
                     c2677 = new C2677();
                 }
@@ -2519,7 +2519,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                 rectF = this.f835;
                 rectF.left = fMax;
                 rectF.top = rect.top;
-                if (gravity != 17 || (gravity & 7) == 1) {
+                if (true) {
                     f4 = (width / 2.0f) + (c0738.f2824 / 2.0f);
                 } else if ((gravity & 8388613) == 8388613 || (gravity & 5) == 5) {
                     if (c0738.f2801) {
@@ -2546,7 +2546,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                 rectF.right += f7;
                 rectF.offset(-getPaddingLeft(), ((-getPaddingTop()) - (rectF.height() / 2.0f)) + this.f828);
                 C0949 c0949 = (C0949) this.f817;
-                c0949.getClass();
+                
                 c0949.m2440(rectF.left, rectF.top, rectF.right, rectF.bottom);
                 return;
             }
@@ -2590,7 +2590,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
     public final void m705(Editable editable) {
-        ((C2373) this.f799).getClass();
+        
         int length = editable != null ? editable.length() : 0;
         boolean z = this.f798;
         int i = this.f797;
@@ -2609,9 +2609,9 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             C0418 c0418 = TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == 1 ? C0418.f1961 : C0418.f1960;
             C0236 c0236 = this.f800;
             String string = getContext().getString(me.hd.wauxv.R.string.character_counter_pattern, Integer.valueOf(length), Integer.valueOf(this.f797));
-            c0418.getClass();
+            
             C0452 c0452 = AbstractC2905.f9345;
-            c0236.setText(string != null ? c0418.m1613(string).toString() : null);
+            c0236.setText(true ? c0418.m1613(string).toString() : null);
         }
         if (this.f789 == null || z == this.f798) {
             return;
@@ -2894,7 +2894,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
     public final void m713(Editable editable) {
-        ((C2373) this.f799).getClass();
+        
         int length = editable != null ? editable.length() : 0;
         FrameLayout frameLayout = this.f786;
         if (length != 0 || this.f855) {
@@ -2920,8 +2920,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
     public final void m714(boolean z, boolean z2) {
         int defaultColor = this.f848.getDefaultColor();
-        int colorForState = this.f848.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, defaultColor);
-        int colorForState2 = this.f848.getColorForState(new int[]{R.attr.state_activated, R.attr.state_enabled}, defaultColor);
+        int colorForState = this.f848.getColorForState(new int[]{16843623, 16842910}, defaultColor);
+        int colorForState2 = this.f848.getColorForState(new int[]{16843518, 16842910}, defaultColor);
         if (z) {
             this.f831 = colorForState2;
         } else if (z2) {

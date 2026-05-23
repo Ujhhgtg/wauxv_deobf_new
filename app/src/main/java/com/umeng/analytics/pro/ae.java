@@ -20,8 +20,8 @@ public class ae extends ac {
         JSONObject jSONObjectA = super.a(str, jSONObject);
         if (jSONObjectA != null) {
             try {
-                jSONObjectA.put(com.umeng.ccg.a.y, this.a);
-                jSONObjectA.put(com.umeng.ccg.a.z, this.b);
+                jSONObjectA.put("batch", this.a);
+                jSONObjectA.put("action", this.b);
             } catch (Throwable unused) {
             }
         }
@@ -31,11 +31,11 @@ public class ae extends ac {
     @Override // com.umeng.analytics.pro.ac, com.umeng.analytics.pro.ak
     public void b(String str, JSONObject jSONObject) {
         super.b(str, jSONObject);
-        if (jSONObject.has(com.umeng.ccg.a.z)) {
-            d(jSONObject.optString(com.umeng.ccg.a.z));
+        if (jSONObject.has("action")) {
+            d(jSONObject.optString("action"));
         }
-        if (jSONObject.has(com.umeng.ccg.a.y)) {
-            c(jSONObject.optString(com.umeng.ccg.a.y));
+        if (jSONObject.has("batch")) {
+            c(jSONObject.optString("batch"));
         }
     }
 

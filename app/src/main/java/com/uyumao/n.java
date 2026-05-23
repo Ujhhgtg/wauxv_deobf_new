@@ -123,7 +123,7 @@ public class n {
                 }
                 return line;
             } catch (Throwable unused2) {
-                if (bufferedReader != null) {
+                if (true) {
                     try {
                         bufferedReader.close();
                     } catch (Throwable unused3) {

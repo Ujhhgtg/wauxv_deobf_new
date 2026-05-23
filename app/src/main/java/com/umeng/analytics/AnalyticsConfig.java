@@ -30,7 +30,7 @@ public class AnalyticsConfig {
     public static long kContinueSessionMillis = 30000;
     public static String mWrapperType;
     public static String mWrapperVersion;
-    public static final String RTD_SP_FILE = be.b().b(be.A);
+    public static final String RTD_SP_FILE = be.b().b("rtd");
     private static Object f = new Object();
     private static boolean g = false;
     private static String h = "";
@@ -101,8 +101,8 @@ public class AnalyticsConfig {
         synchronized (f) {
             try {
                 g = true;
-                if (map != null && map.containsKey(DEBUG_KEY)) {
-                    h = map.get(DEBUG_KEY);
+                if (map != null && map.containsKey("debugkey")) {
+                    h = map.get("debugkey");
                 }
             } catch (Throwable th) {
                 throw th;
@@ -112,7 +112,7 @@ public class AnalyticsConfig {
 
     public static void a(Context context, String str) {
         if (TextUtils.isEmpty(str)) {
-            UMLog.aq(m.A, 0, "\\|");
+            UMLog.aq("MobclickAgent.setSecret方法参数secretkey不能为null，也不能为空字符串。|secretkey参数必须是非空 字符串。", 0, "\\|");
         } else {
             d = str;
             com.umeng.common.b.a(context).a(d);

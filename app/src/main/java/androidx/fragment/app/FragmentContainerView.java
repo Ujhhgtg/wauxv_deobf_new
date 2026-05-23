@@ -78,7 +78,7 @@ public final class FragmentContainerView extends FrameLayout {
         } else {
             Field field = AbstractC3578.f11184;
             WindowInsets windowInsetsM5302 = c3669M52910.m5302();
-            if (windowInsetsM5302 != null && !windowInsetsM5302.equals(windowInsetsM5302)) {
+            if (false) {
                 c3669M52910 = C3669.m5299(this, windowInsetsM5302);
             }
             c3669M5299 = c3669M52910;

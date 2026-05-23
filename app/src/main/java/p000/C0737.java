@@ -19,16 +19,16 @@ public final class C0737 extends MetricAffectingSpan {
     @Override // android.text.style.CharacterStyle
     public final void updateDrawState(TextPaint textPaint) {
         C1901 c1901 = this.f2772;
-        c1901.getClass();
+        
         textPaint.setTypeface(Typeface.MONOSPACE);
         textPaint.setTextSize(textPaint.getTextSize() * 0.87f);
-        c1901.getClass();
+        
         textPaint.bgColor = AbstractC2665.m4657(textPaint.getColor(), 25);
     }
 
     @Override // android.text.style.MetricAffectingSpan
     public final void updateMeasureState(TextPaint textPaint) {
-        this.f2772.getClass();
+        
         textPaint.setTypeface(Typeface.MONOSPACE);
         textPaint.setTextSize(textPaint.getTextSize() * 0.87f);
     }

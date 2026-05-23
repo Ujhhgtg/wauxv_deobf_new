@@ -39,7 +39,7 @@ import org.json.JSONObject;
 
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
-@TargetApi(Opcodes.DCONST_0)
+@TargetApi(14)
 public class o {
     private static byte[] E;
     private static byte[] F;
@@ -170,52 +170,52 @@ public class o {
     }
 
     static {
-        byte[] bArr = {95, 101, 90, 111, JSONB.Constants.BC_STR_ASCII_FIX_36, 100, 90, 40, 90, 100, 110, 90, 60, 90, 112, 100, 110, JSONB.Constants.BC_STR_ASCII_FIX_32, 110, 110};
+        byte[] bArr = {95, 101, 90, 111, 109, 100, 90, 40, 90, 100, 110, 90, 60, 90, 112, 100, 110, 105, 110, 110};
         E = bArr;
-        byte[] bArr2 = {100, 75, 90, 70, 82, 110, JSONB.Constants.BC_STR_ASCII_FIX_32, 90, 82};
+        byte[] bArr2 = {100, 75, 90, 70, 82, 110, 105, 90, 82};
         F = bArr2;
-        byte[] bArr3 = {90, 110, 75, 99, 97, 110, 110, 99, 99, 110, 100, JSONB.Constants.BC_STR_ASCII_FIX_36, 99, JSONB.Constants.BC_STR_ASCII_FIX_36, 99};
+        byte[] bArr3 = {90, 110, 75, 99, 97, 110, 110, 99, 99, 110, 100, 109, 99, 109, 99};
         G = bArr3;
-        byte[] bArr4 = {100, JSONB.Constants.BC_INT32_SHORT_MIN, 100, 110, 112, 99, 112, 100, 98, 110, 110, 97, 112, 100, 99, 99};
+        byte[] bArr4 = {100, 64, 100, 110, 112, 99, 112, 100, 98, 110, 110, 97, 112, 100, 99, 99};
         H = bArr4;
         byte b2 = (byte) (bArr[0] + 2);
-        bArr[0] = b2;
+        bArr[0] = 97;
         bArr[1] = (byte) (b2 + ek.k);
         byte b3 = (byte) (bArr[2] + 10);
-        bArr[2] = b3;
+        bArr[2] = 100;
         bArr[3] = (byte) (bArr[3] + 3);
         byte b4 = (byte) (bArr[4] + 2);
-        bArr[4] = b4;
+        bArr[4] = 111;
         bArr[5] = (byte) (b3 + 5);
         byte b5 = (byte) (bArr[6] + 10);
-        bArr[6] = b5;
+        bArr[6] = 100;
         byte b6 = (byte) (bArr[7] + 6);
-        bArr[7] = b6;
-        bArr[8] = b2;
+        bArr[7] = 46;
+        bArr[8] = 97;
         bArr[9] = (byte) (b4 + 1);
         byte b7 = (byte) (bArr[10] + 2);
-        bArr[10] = b7;
-        bArr[11] = b6;
+        bArr[10] = 112;
+        bArr[11] = 46;
         byte b8 = (byte) (bArr[12] + 5);
-        bArr[12] = b8;
+        bArr[12] = 65;
         bArr[13] = (byte) (b2 + 2);
         byte b9 = (byte) (b7 + 4);
-        bArr[14] = b9;
+        bArr[14] = 116;
         byte b10 = (byte) (bArr[15] + 5);
-        bArr[15] = b10;
+        bArr[15] = 105;
         byte b11 = (byte) (bArr[16] + 8);
-        bArr[16] = b11;
-        bArr[17] = b10;
-        bArr[18] = b9;
+        bArr[16] = 118;
+        bArr[17] = 105;
+        bArr[18] = 116;
         byte b12 = (byte) (b11 + 3);
-        bArr[19] = b12;
+        bArr[19] = 121;
         byte b13 = (byte) (bArr2[0] + 9);
         bArr2[0] = b13;
         bArr2[1] = (byte) (bArr2[1] + 7);
         byte b14 = (byte) (b5 + 1);
-        bArr2[2] = b14;
+        bArr2[2] = 101;
         bArr2[3] = (byte) (b14 + 1);
-        bArr2[4] = b14;
+        bArr2[4] = 101;
         byte b15 = (byte) (bArr2[5] + 4);
         bArr2[5] = b15;
         byte b16 = (byte) (b13 + 5);
@@ -228,33 +228,33 @@ public class o {
         bArr3[3] = (byte) (bArr[1] + 4);
         bArr3[4] = bArr2[2];
         bArr3[6] = (byte) (bArr3[6] + 6);
-        bArr3[7] = b8;
+        bArr3[7] = 65;
         bArr3[9] = (byte) (bArr3[9] + 6);
         bArr3[10] = (byte) (bArr3[10] + 5);
-        bArr3[11] = b11;
-        bArr3[12] = b10;
-        bArr3[13] = b9;
-        bArr3[14] = b12;
+        bArr3[11] = 118;
+        bArr3[12] = 105;
+        bArr3[13] = 116;
+        bArr3[14] = 121;
         bArr4[0] = (byte) (bArr4[0] + 9);
         bArr4[1] = (byte) (bArr4[1] + 9);
         byte b17 = bArr[1];
         bArr4[2] = b17;
         bArr4[3] = (byte) (bArr[3] + 1);
-        bArr4[4] = b9;
+        bArr4[4] = 116;
         bArr4[5] = b15;
         byte b18 = bArr2[0];
         bArr4[6] = (byte) (b18 + 8);
         bArr4[7] = b18;
         bArr4[8] = (byte) (bArr4[8] + 3);
         bArr4[10] = (byte) (bArr4[10] + 6);
-        bArr4[12] = b9;
+        bArr4[12] = 116;
         bArr4[13] = bArr3[12];
         bArr4[14] = (byte) (bArr3[5] + 1);
         bArr4[15] = b17;
         I = new ComponentCallbacks2() { // from class: com.umeng.analytics.pro.o.2
             @Override // android.content.ComponentCallbacks2
             public void onTrimMemory(int i2) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "onTrimMemory: " + i2);
+                UMRTLog.i("MobclickRT", "onTrimMemory: " + i2);
                 if (i2 == 20) {
                     o.z();
                 } else if (i2 == 40) {
@@ -354,7 +354,7 @@ public class o {
                     }
                     return null;
                 } catch (Throwable unused) {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "getPi error.");
+                    UMRTLog.e("MobclickRT", "getPi error.");
                     return null;
                 }
             }
@@ -366,8 +366,8 @@ public class o {
 
             @Override // android.app.Application.ActivityLifecycleCallbacks
             public void onActivityPaused(Activity activity) {
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.F)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onActivityPaused: FirstResumeTrigger enabled.");
+                if (FieldManager.allow("header_first_resume")) {
+                    UMRTLog.i("MobclickRT", "--->>> onActivityPaused: FirstResumeTrigger enabled.");
                     synchronized (o.y) {
                         try {
                             if (o.x) {
@@ -378,7 +378,7 @@ public class o {
                         }
                     }
                 } else {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onActivityPaused: FirstResumeTrigger disabled.");
+                    UMRTLog.i("MobclickRT", "--->>> onActivityPaused: FirstResumeTrigger disabled.");
                 }
                 if (UMConfigure.AUTO_ACTIVITY_PAGE_COLLECTION != MobclickAgent.PageMode.AUTO) {
                     if (UMConfigure.AUTO_ACTIVITY_PAGE_COLLECTION == MobclickAgent.PageMode.MANUAL) {
@@ -394,8 +394,8 @@ public class o {
 
             @Override // android.app.Application.ActivityLifecycleCallbacks
             public void onActivityResumed(Activity activity) {
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.F)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onActivityResumed: FirstResumeTrigger enabled.");
+                if (FieldManager.allow("header_first_resume")) {
+                    UMRTLog.i("MobclickRT", "--->>> onActivityResumed: FirstResumeTrigger enabled.");
                     synchronized (o.y) {
                         try {
                             if (o.x) {
@@ -407,7 +407,7 @@ public class o {
                     }
                     o.this.a(activity);
                 } else {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onActivityResumed: FirstResumeTrigger disabled.");
+                    UMRTLog.i("MobclickRT", "--->>> onActivityResumed: FirstResumeTrigger disabled.");
                     o.this.a(activity);
                 }
                 o.z.c(activity);
@@ -455,11 +455,11 @@ public class o {
                     }
                 }
                 if (!o.l) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "PI: local switch is off!");
+                    UMRTLog.i("MobclickRT", "PI: local switch is off!");
                     return;
                 }
                 if (!o.m) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "PI: cloud switch is off!");
+                    UMRTLog.i("MobclickRT", "PI: cloud switch is off!");
                     return;
                 }
                 String strA = a(activity);
@@ -468,19 +468,19 @@ public class o {
                 }
                 String packageName = DeviceConfig.getPackageName(UMGlobalContext.getAppContext());
                 if (packageName.isEmpty() || packageName.equalsIgnoreCase(strA)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> PI: internal path switch, or pkg is null. ignore it.");
+                    UMRTLog.i("MobclickRT", "--->>> PI: internal path switch, or pkg is null. ignore it.");
                     return;
                 }
                 long unused = o.o = System.currentTimeMillis();
                 String unused2 = o.n = strA;
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>PI: p: " + strA + "; ts: " + o.o);
+                UMRTLog.i("MobclickRT", "--->>>PI: p: " + strA + "; ts: " + o.o);
                 synchronized (o.A) {
                     o.this.B.add(o.this.new b(o.n, o.o));
                     String unused3 = o.n = "";
                     long unused4 = o.o = 0L;
                 }
                 if (UMConfigure.getInitStatus()) {
-                    com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.u, com.umeng.ccg.d.a(), null, 0L);
+                    com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 310, com.umeng.ccg.d.a(), null, 0L);
                 }
             }
 
@@ -654,14 +654,14 @@ public class o {
                                 if (componentNameResolveActivity != null && !TextUtils.equals(componentNameResolveActivity.getPackageName(), packageName)) {
                                     long unused = o.r = System.currentTimeMillis();
                                     String unused2 = o.q = componentNameResolveActivity.getPackageName();
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>PO: p: " + o.q + "; ts: " + o.r);
+                                    UMRTLog.i("MobclickRT", "--->>>PO: p: " + o.q + "; ts: " + o.r);
                                     synchronized (o.C) {
                                         o.this.D.add(o.this.new c(componentNameResolveActivity.getPackageName(), componentNameResolveActivity.getClassName(), o.t, o.r, Base64.encodeToString(ay.a(Log.getStackTraceString(new Throwable()).getBytes(), UMConfigure.sAppkey.getBytes()), 0)));
                                         String unused3 = o.q = "";
                                         long unused4 = o.r = 0L;
                                     }
                                     if (UMConfigure.getInitStatus()) {
-                                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), com.umeng.ccg.c.v, com.umeng.ccg.d.a(), null, 0L);
+                                        com.umeng.ccg.c.a(UMGlobalContext.getAppContext(), 311, com.umeng.ccg.d.a(), null, 0L);
                                     }
                                 }
                             } catch (Throwable unused5) {
@@ -669,12 +669,12 @@ public class o {
                             return super.onStartActivity(intent);
                         }
                     });
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "PO: attach success.");
+                    UMRTLog.i("MobclickRT", "PO: attach success.");
                 } else {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "PO: attach failed.");
+                    UMRTLog.e("MobclickRT", "PO: attach failed.");
                 }
             } catch (Throwable unused) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "PO: attach failed.");
+                UMRTLog.e("MobclickRT", "PO: attach failed.");
             }
         }
     }
@@ -761,14 +761,14 @@ public class o {
                 x = false;
                 Activity globleActivity = DeviceConfig.getGlobleActivity(context);
                 if (globleActivity == null) {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> init触发onResume: 无前台Activity，直接退出。");
+                    UMRTLog.e("MobclickRT", "--->>> init触发onResume: 无前台Activity，直接退出。");
                     return;
                 }
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> init触发onResume: 补救成功，前台Activity名：" + globleActivity.getLocalClassName());
+                UMRTLog.e("MobclickRT", "--->>> init触发onResume: 补救成功，前台Activity名：" + globleActivity.getLocalClassName());
                 a(globleActivity);
                 return;
             }
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> init触发onResume: firstResumeCall = false，直接返回。");
+            UMRTLog.e("MobclickRT", "--->>> init触发onResume: firstResumeCall = false，直接返回。");
         }
     }
 

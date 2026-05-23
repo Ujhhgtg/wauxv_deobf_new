@@ -25,13 +25,13 @@ public class ap {
         }
         try {
             JSONObject jSONObject2 = new JSONObject();
-            jSONObject2.put(bv.x, AnalyticsConstants.SDK_TYPE);
+            jSONObject2.put("os", "Android");
             jSONObject2.put("dm", Build.MODEL);
             jSONObject2.put("av", DeviceConfig.getAppVersionName(context));
-            jSONObject2.put(bv.g, UMUtils.getUMId(context));
+            jSONObject2.put("umid", UMUtils.getUMId(context));
             jSONObject2.put("ov", Build.VERSION.RELEASE);
             jSONObject2.put("chn", UMUtils.getChannel(context));
-            jSONObject2.put(bv.af, UMUtils.getZid(context));
+            jSONObject2.put("zid", UMUtils.getZid(context));
             jSONObject2.put("sv", "9.9.1");
             jSONObject2.put("ak", UMUtils.getAppkey(context));
             String idfa = DeviceConfig.getIdfa(context);
@@ -70,21 +70,21 @@ public class ap {
             jSONObject2.put("nt", DeviceConfig.getNetworkType(context));
             String deviceToken = UMUtils.getDeviceToken(context);
             if (!TextUtils.isEmpty(deviceToken)) {
-                jSONObject2.put(bv.a, deviceToken);
+                jSONObject2.put("devicetoken", deviceToken);
             }
             int[] resolutionArray = DeviceConfig.getResolutionArray(context);
             if (resolutionArray != null) {
                 jSONObject2.put("rl", resolutionArray[1] + "*" + resolutionArray[0]);
             }
             jSONObject2.put("car", DeviceConfig.getNetworkOperatorName(context));
-            jSONObject2.put(bv.b, "9.9.1");
+            jSONObject2.put("com_ver", "9.9.1");
             if (DeviceConfig.isHarmony(context)) {
                 jSONObject2.put("oos", "harmony");
             } else {
-                jSONObject2.put("oos", AnalyticsConstants.SDK_TYPE);
+                jSONObject2.put("oos", "Android");
             }
-            jSONObject2.put(com.umeng.ccg.a.u, str);
-            jSONObject2.put(com.umeng.ccg.a.x, jSONArray);
+            jSONObject2.put("hit_sdk", str);
+            jSONObject2.put("sdk", jSONArray);
             a = jSONObject2;
         } catch (Throwable unused) {
         }
@@ -135,7 +135,7 @@ public class ap {
                     jSONObject2.put(ao.l, aoVar.l());
                     jSONObject2.put(ao.i, aoVar.i());
                     jSONObject2.put(ao.m, aoVar.m());
-                    jSONObject2.put(bv.af, UMUtils.getZid(context));
+                    jSONObject2.put("zid", UMUtils.getZid(context));
                     jSONObject2.put("platform", "android");
                     jSONObject2.put("optional", new JSONObject(at.a()));
                     jSONObject2.put("s1", str);
@@ -144,7 +144,7 @@ public class ap {
                         String strA = au.a(str2);
                         String strB = au.b(str2);
                         if (TextUtils.isEmpty(strA) || TextUtils.isEmpty(strB)) {
-                            jSONObject2.put(ao.n, AnalyticsConstants.SDK_TYPE);
+                            jSONObject2.put(ao.n, "Android");
                             jSONObject2.put(ao.o, Build.VERSION.RELEASE);
                             return jSONObject2;
                         }
@@ -156,12 +156,12 @@ public class ap {
                 } catch (JSONException e) {
                     e = e;
                     jSONObject = jSONObject2;
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[getCloudConfigParam] error " + e.getMessage());
+                    UMRTLog.e("MobclickRT", "[getCloudConfigParam] error " + e.getMessage());
                     return jSONObject;
                 } catch (Throwable th) {
                     th = th;
                     jSONObject = jSONObject2;
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[getCloudConfigParam] error " + th.getMessage());
+                    UMRTLog.e("MobclickRT", "[getCloudConfigParam] error " + th.getMessage());
                     return jSONObject;
                 }
             } catch (JSONException e2) {
@@ -241,7 +241,7 @@ public class ap {
                     jSONObject2.put(ao.l, aoVar.l());
                     jSONObject2.put(ao.i, aoVar.i());
                     jSONObject2.put(ao.m, aoVar.m());
-                    jSONObject2.put(bv.af, UMUtils.getZid(context));
+                    jSONObject2.put("zid", UMUtils.getZid(context));
                     jSONObject2.put("platform", "android");
                     jSONObject2.put("optional", new JSONObject(at.a()));
                     String[] strArrSplit = str.split("@");
@@ -262,7 +262,7 @@ public class ap {
                             jSONObject2.put(ao.n, strA);
                             jSONObject2.put(ao.o, strB);
                         } else {
-                            jSONObject2.put(ao.n, AnalyticsConstants.SDK_TYPE);
+                            jSONObject2.put(ao.n, "Android");
                             jSONObject2.put(ao.o, Build.VERSION.RELEASE);
                         }
                     } catch (Throwable unused2) {
@@ -271,12 +271,12 @@ public class ap {
                 } catch (JSONException e) {
                     e = e;
                     jSONObject = jSONObject2;
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[getCloudConfigParam] error " + e.getMessage());
+                    UMRTLog.e("MobclickRT", "[getCloudConfigParam] error " + e.getMessage());
                     return jSONObject;
                 } catch (Throwable th) {
                     th = th;
                     jSONObject = jSONObject2;
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[getCloudConfigParam] error " + th.getMessage());
+                    UMRTLog.e("MobclickRT", "[getCloudConfigParam] error " + th.getMessage());
                     return jSONObject;
                 }
             } catch (JSONException e2) {
@@ -295,15 +295,15 @@ public class ap {
                 if (!TextUtils.isEmpty(zid)) {
                     jSONObject.put("atoken", zid);
                     jSONObject.put("oaid", DeviceConfig.getOaid(context));
-                    jSONObject.put(bv.g, UMEnvelopeBuild.imprintProperty(context, bv.g, ""));
-                    jSONObject.put(bv.F, Build.BRAND);
+                    jSONObject.put("umid", UMEnvelopeBuild.imprintProperty(context, "umid", ""));
+                    jSONObject.put("device_brand", Build.BRAND);
                     String deviceToken = UMUtils.getDeviceToken(context);
                     if (!TextUtils.isEmpty(deviceToken)) {
                         jSONObject.put("device_token", deviceToken);
                     }
                     jSONObject.put("model", Build.MODEL);
-                    jSONObject.put(bv.x, "android");
-                    jSONObject.put(bv.y, Build.VERSION.RELEASE);
+                    jSONObject.put("os", "android");
+                    jSONObject.put("os_version", Build.VERSION.RELEASE);
                     jSONObject.put("appkey", UMConfigure.sAppkey);
                     jSONObject.put("app_version", DeviceConfig.getAppVersionName(context));
                     jSONObject.put("packagename", DeviceConfig.getPackageName(context));
@@ -311,22 +311,22 @@ public class ap {
                     String[] networkAccessMode = DeviceConfig.getNetworkAccessMode(context);
                     if (!"Wi-Fi".equals(networkAccessMode[0])) {
                         if ("2G/3G".equals(networkAccessMode[0])) {
-                            jSONObject.put(bv.Q, "2G/3G");
+                            jSONObject.put("access", "2G/3G");
                         } else {
-                            jSONObject.put(bv.Q, "unknow");
+                            jSONObject.put("access", "unknow");
                         }
                     } else {
-                        jSONObject.put(bv.Q, "wifi");
+                        jSONObject.put("access", "wifi");
                     }
                     if (!"".equals(networkAccessMode[1])) {
                         jSONObject.put("sub_access", networkAccessMode[1]);
                     }
-                    jSONObject.put("sdkType", AnalyticsConstants.SDK_TYPE);
+                    jSONObject.put("sdkType", "Android");
                     jSONObject.put("sdk_version", "9.9.1");
                     jSONObject.put("session_id", ab.a().d(context));
-                    jSONObject.put(bv.an, DeviceConfig.getRingerMode(context));
-                    jSONObject.put(com.umeng.ccg.a.u, str);
-                    jSONObject.put(com.umeng.ccg.a.x, jSONArray);
+                    jSONObject.put("ringer_mode", DeviceConfig.getRingerMode(context));
+                    jSONObject.put("hit_sdk", str);
+                    jSONObject.put("sdk", jSONArray);
                     if (z) {
                         jSONObject.put("am", DeviceConfig.isAirplaneModeOn(context));
                     }

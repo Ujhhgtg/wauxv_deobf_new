@@ -168,7 +168,7 @@ public final class C1023 {
             AbstractC2643 abstractC2643 = abstractC2643Arr[i];
             if ((abstractC2643 != c0548 && abstractC2643 != c1977) || !abstractC2643.mo1923().isEmpty()) {
                 if (iMo3852 < 0) {
-                    abstractC2643.getClass();
+                    
                     throw new IllegalArgumentException("fileOffset < 0");
                 }
                 if (abstractC2643.f8536 >= 0) {

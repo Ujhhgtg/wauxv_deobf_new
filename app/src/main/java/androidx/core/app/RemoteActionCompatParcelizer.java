@@ -46,7 +46,7 @@ public class RemoteActionCompatParcelizer {
     }
 
     public static void write(RemoteActionCompat remoteActionCompat, AbstractC3546 abstractC3546) {
-        abstractC3546.getClass();
+        
         IconCompat iconCompat = remoteActionCompat.f238;
         abstractC3546.mo5140(1);
         abstractC3546.m5141(iconCompat);

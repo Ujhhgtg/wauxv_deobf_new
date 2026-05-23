@@ -240,7 +240,7 @@ public class Platform {
 
     public X509TrustManager trustManager(SSLSocketFactory sSLSocketFactory) throws IllegalAccessException {
         try {
-            Object fieldOrNull = Util.readFieldOrNull(sSLSocketFactory, Class.forName("sun.security.ssl.SSLContextImpl"), g.X);
+            Object fieldOrNull = Util.readFieldOrNull(sSLSocketFactory, Class.forName("sun.security.ssl.SSLContextImpl"), "context");
             if (fieldOrNull == null) {
                 return null;
             }

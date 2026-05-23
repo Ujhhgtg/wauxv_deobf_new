@@ -11,7 +11,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᲀᤞᲈᤝᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -67,7 +66,7 @@ public final class C0465 extends AbstractC2867 implements InterfaceC1590 {
                 int i5 = c1803.f6020;
                 ArrayList arrayList2 = new ArrayList(i5);
                 for (int i6 = 0; i6 < i5; i6++) {
-                    arrayList2.add(Integer.valueOf(android.R.drawable.ic_menu_help));
+                    arrayList2.add(Integer.valueOf(17301568));
                 }
                 listM2212 = arrayList2;
             }
@@ -83,7 +82,7 @@ public final class C0465 extends AbstractC2867 implements InterfaceC1590 {
                 LinearLayout linearLayout2 = new LinearLayout(c1803.getContext());
                 linearLayout2.setOrientation(1);
                 linearLayout2.setGravity(17);
-                linearLayout2.setLayoutParams(new LinearLayout.LayoutParams(i4, i3, 1.0f));
+                linearLayout2.setLayoutParams(new LinearLayout.LayoutParams(0, -1, 1.0f));
                 ImageView imageView = new ImageView(c1803.getContext());
                 imageView.setLayoutParams(new LinearLayout.LayoutParams(c1803.m3551(24.0f), c1803.m3551(24.0f)));
                 imageView.setImageResource(iIntValue);
@@ -112,17 +111,15 @@ public final class C0465 extends AbstractC2867 implements InterfaceC1590 {
                 i2 = 0;
                 c1803.m3553(false);
             }
-            c1803.setOnTabSelected(new C0464(i2, obj));
+            c1803.setOnTabSelected(new C0464(0, obj));
             ViewParent parent = viewGroup.getParent();
-            "null cannot be cast to non-null type android.view.ViewGroup";
             View childAt = ((ViewGroup) parent).getChildAt(1);
-            "null cannot be cast to non-null type android.view.ViewGroup";
             ((ViewGroup) childAt).addView(c1803);
-            int i11 = AbstractC1745.f5844;
-            C1973 c1973M3492 = AbstractC0968.m2484(obj).m3492();
+            int i11 = 0;
+            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
             c1973M3492.f6370 = "onPageSelected";
-            C3689 c3689M4174 = m4174((C1982) AbstractC0744.m2191(c1973M3492.m3799()), 1);
-            f2052.m3262(c3689M4174, new C0055(i, c1803));
+            C3689 c3689M4174 = m4174((C1982) AbstractC0744.firstInList(c1973M3492.m3799()), 1);
+            f2052.m3262(c3689M4174, new C0055(1, c1803));
             c3689M4174.m5352();
         }
     }

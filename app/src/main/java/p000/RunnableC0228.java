@@ -30,7 +30,7 @@ public final class RunnableC0228 implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        switch (this.f1365) {
+        switch (0) {
             case 0:
                 ((TextView) this.f1367).setTypeface((Typeface) this.f1368, this.f1366);
                 break;

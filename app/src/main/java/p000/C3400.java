@@ -75,7 +75,7 @@ public class C3400 {
         C3399 c3399 = Companion;
         long jTimeoutNanos2 = c3400.timeoutNanos();
         long jTimeoutNanos3 = timeoutNanos();
-        c3399.getClass();
+        
         if (jTimeoutNanos2 == 0 || (jTimeoutNanos3 != 0 && jTimeoutNanos2 >= jTimeoutNanos3)) {
             jTimeoutNanos2 = jTimeoutNanos3;
         }

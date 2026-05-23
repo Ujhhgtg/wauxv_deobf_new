@@ -50,7 +50,7 @@ import p000.RunnableC0124;
 public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137, InterfaceC2138 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
-    public static final int[] f51 = {R.attr.actionBarSize, android.R.attr.windowContentOverlay};
+    public static final int[] f51 = {R.attr.actionBarSize, 16842841};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static final C3669 f52;
@@ -355,7 +355,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
         int iMax2 = Math.max(0, this.f56.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) c0126).topMargin + ((ViewGroup.MarginLayoutParams) c0126).bottomMargin);
         int iCombineMeasuredStates = View.combineMeasuredStates(0, this.f56.getMeasuredState());
         Field field = AbstractC3578.f11184;
-        boolean z = (getWindowSystemUiVisibility() & bc.e) != 0;
+        boolean z = (getWindowSystemUiVisibility() & 256) != 0;
         if (z) {
             measuredHeight = this.f54;
             if (this.f60 && this.f56.getTabContainer() != null) {
@@ -440,7 +440,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC2137,
         if (!this.f61 || !z) {
             return false;
         }
-        this.f72.fling(0, 0, 0, (int) f2, 0, 0, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        this.f72.fling(0, 0, 0, (int) f2, 0, 0, -2147483648, 2147483647);
         if (this.f72.getFinalY() > this.f56.getHeight()) {
             m17();
             this.f76.run();

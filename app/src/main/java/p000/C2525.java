@@ -180,7 +180,7 @@ public final class C2525 implements InterfaceC3450, InterfaceC3407, Comparable {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public final String m4542() {
-        return AbstractC1194.m2779(this.f8055, bv.aE);
+        return AbstractC1194.m2779(this.f8055, "v");
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */

@@ -61,10 +61,10 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
     public static final Rect f682 = new Rect();
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
-    public static final int[] f683 = {R.attr.state_selected};
+    public static final int[] f683 = {16842913};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
-    public static final int[] f684 = {R.attr.state_checkable};
+    public static final int[] f684 = {16842911};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public C0695 f685;
@@ -256,7 +256,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
             c0695.invalidateSelf();
             c0695.m2089();
         }
-        c0695.f2642 = typedArrayM5082.getDimensionPixelSize(4, Integer.MAX_VALUE);
+        c0695.f2642 = typedArrayM5082.getDimensionPixelSize(4, 2147483647);
         typedArrayM5082.recycle();
         AbstractC3471.m5066(context2, attributeSet, me.hd.wauxv.R.attr.chipStyle, me.hd.wauxv.R.style.Widget_MaterialComponents_Chip_Action);
         AbstractC3471.m5067(context2, attributeSet, iArr, me.hd.wauxv.R.attr.chipStyle, me.hd.wauxv.R.style.Widget_MaterialComponents_Chip_Action, new int[0]);
@@ -386,15 +386,15 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
                     switch (keyCode) {
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.LLOAD /* 22 */:
+                        case 21 /* 21 */:
+                        case 22 /* 22 */:
                             if (keyEvent.hasNoModifiers()) {
                                 if (keyCode == 19) {
                                     i3 = 33;
                                 } else if (keyCode == 21) {
                                     i3 = 17;
                                 } else if (keyCode != 22) {
-                                    i3 = Opcodes.IXOR;
+                                    i3 = 130;
                                 }
                                 int repeatCount = keyEvent.getRepeatCount() + 1;
                                 boolean z = false;
@@ -405,10 +405,10 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
                                 zM2945 = z;
                             }
                             break;
-                        case Opcodes.FLOAD /* 23 */:
+                        case 23 /* 23 */:
                             if (keyEvent.hasNoModifiers() && keyEvent.getRepeatCount() == 0) {
                                 i = c0693.f4588;
-                                if (i != Integer.MIN_VALUE) {
+                                if (i != -2147483648) {
                                     c0693.mo1545(i, 16, null);
                                 }
                                 zM2945 = true;
@@ -417,7 +417,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
                     }
                 } else if (keyEvent.hasNoModifiers()) {
                     i = c0693.f4588;
-                    if (i != Integer.MIN_VALUE) {
+                    if (i != -2147483648) {
                         c0693.mo1545(i, 16, null);
                     }
                     zM2945 = true;
@@ -428,7 +428,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
                 zM2945 = c0693.m2945(1, null);
             }
         }
-        if (!zM2945 || c0693.f4588 == Integer.MIN_VALUE) {
+        if (!zM2945 || c0693.f4588 == -2147483648) {
             return super.dispatchKeyEvent(keyEvent);
         }
         return true;
@@ -776,7 +776,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         if (this.f699) {
             C0693 c0693 = this.f698;
             int i2 = c0693.f4588;
-            if (i2 != Integer.MIN_VALUE) {
+            if (i2 != -2147483648) {
                 c0693.m2940(i2);
             }
             if (z) {
@@ -1313,7 +1313,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         if (i3 != 0) {
             throw new UnsupportedOperationException("Please set end drawable using R.attr#closeIcon.");
         }
-        super.setCompoundDrawablesRelativeWithIntrinsicBounds(i, i2, i3, i4);
+        super.setCompoundDrawablesRelativeWithIntrinsicBounds(0, i2, 0, i4);
     }
 
     @Override // android.widget.TextView
@@ -1324,7 +1324,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         if (i3 != 0) {
             throw new UnsupportedOperationException("Please set end drawable using R.attr#closeIcon.");
         }
-        super.setCompoundDrawablesWithIntrinsicBounds(i, i2, i3, i4);
+        super.setCompoundDrawablesWithIntrinsicBounds(0, i2, 0, i4);
     }
 
     @Override // android.view.View
@@ -1361,7 +1361,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         if (i != 8388627) {
             Log.w("Chip", "Chip text must be vertically center and start aligned");
         } else {
-            super.setGravity(i);
+            super.setGravity(8388627);
         }
     }
 
@@ -1500,7 +1500,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
         if (!z) {
             throw new UnsupportedOperationException("Chip does not support multi-line text");
         }
-        super.setSingleLine(z);
+        super.setSingleLine(true);
     }
 
     @Override // android.widget.TextView
@@ -1606,7 +1606,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
                 m677();
                 return;
             } else {
-                if (insetDrawable != null) {
+                if (true) {
                     this.f686 = null;
                     setMinWidth(0);
                     setMinHeight((int) getChipMinHeight());
@@ -1626,7 +1626,7 @@ public class Chip extends AbstractC0213 implements InterfaceC0694, InterfaceC268
                 m677();
                 return;
             } else {
-                if (insetDrawable2 != null) {
+                if (true) {
                     this.f686 = null;
                     setMinWidth(0);
                     setMinHeight((int) getChipMinHeight());

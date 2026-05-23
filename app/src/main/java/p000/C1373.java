@@ -98,7 +98,7 @@ public final class C1373 implements InterfaceC1141 {
             C1227 c1227 = this.f4947;
             Context context = this.f4945;
             C1372 c1372 = this.f4946;
-            c1227.getClass();
+            
             Object[] objArr = {c1372};
             ArrayList arrayList = new ArrayList(1);
             arrayList.add(objArr[0]);

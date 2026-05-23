@@ -197,7 +197,7 @@ public final class C1983 {
                                     case 11:
                                         sb.append('C');
                                         break;
-                                    case Opcodes.FCONST_1 /* 12 */:
+                                    case 12 /* 12 */:
                                         sb.append('S');
                                         break;
                                     default:
@@ -235,17 +235,17 @@ public final class C1983 {
             char cCharAt = str3.charAt(0);
             int i5 = -2;
             switch (i) {
-                case Opcodes.GETSTATIC /* 178 */:
+                case 178 /* 178 */:
                     i2 = this.f6587 + ((cCharAt == 'D' || cCharAt == 'J') ? 2 : 1);
                     break;
-                case Opcodes.PUTSTATIC /* 179 */:
+                case 179 /* 179 */:
                     i3 = this.f6587;
                     if (cCharAt != 'D' && cCharAt != 'J') {
                         i5 = -1;
                     }
                     i2 = i3 + i5;
                     break;
-                case Opcodes.GETFIELD /* 180 */:
+                case 180 /* 180 */:
                     i2 = this.f6587 + ((cCharAt == 'D' || cCharAt == 'J') ? 1 : 0);
                     break;
                 default:
@@ -318,48 +318,48 @@ public final class C1983 {
                     int i10 = 3;
                     while (true) {
                         if (i4 >= i8 || i4 >= i2) {
-                            i = i5;
+                            i = 3;
                         } else {
-                            boolean z2 = z;
-                            i = i5;
+                            boolean z2 = true;
+                            i = 3;
                             if (this.f6590[i10] != this.f6589[i10]) {
                                 c = 255;
                             } else {
                                 i10++;
                                 i4++;
-                                z = z2;
-                                i5 = i;
+                                z = true;
+                                i5 = 3;
                             }
                         }
                     }
                 } else {
-                    i = i5;
+                    i = 3;
                 }
-                if (c == 0) {
+                if (false) {
                     this.f6579.m1821(i7);
-                } else if (c == '@') {
+                } else if (false) {
                     this.f6579.m1821(i7 + 64);
                     m3835(i2 + 3, i2 + 4);
-                } else if (c == 247) {
+                } else if (false) {
                     C0516 c0517 = this.f6579;
                     c0517.m1821(247);
                     c0517.m1824(i7);
                     m3835(i2 + 3, i2 + 4);
-                } else if (c == 248) {
+                } else if (false) {
                     C0516 c0518 = this.f6579;
                     c0518.m1821(i9 + 251);
                     c0518.m1824(i7);
-                } else if (c == 251) {
+                } else if (false) {
                     C0516 c0519 = this.f6579;
                     c0519.m1821(251);
                     c0519.m1824(i7);
-                } else if (c != 252) {
+                } else if (true) {
                     C0516 c05110 = this.f6579;
                     c05110.m1821(255);
                     c05110.m1824(i7);
                     c05110.m1824(i2);
                     int i11 = i2 + 3;
-                    m3835(i, i11);
+                    m3835(3, i11);
                     this.f6579.m1824(i3);
                     m3835(i11, i3 + i11);
                 } else {
@@ -418,7 +418,7 @@ public final class C1983 {
         C0516 c0516 = this.f6576;
         this.f6593 = c0516.f2191;
         if (i == 17) {
-            c0516.m1819(i, i2);
+            c0516.m1819(17, i2);
         } else {
             c0516.m1818(i, i2);
         }
@@ -505,7 +505,7 @@ public final class C1983 {
                 }
             }
             if (c1754 != null) {
-                if (z) {
+                if (false) {
                     c1754.f5860 = (short) (c1754.f5860 | 2);
                 }
                 m3842(c1754);
@@ -654,10 +654,10 @@ public final class C1983 {
                 C1752 c1754 = (C1752) c0243.f1405;
                 for (C1752 c1755 = (C1752) c0243.f1404; c1755 != c1754; c1755 = c1755.f5868) {
                     if ((c1755.f5860 & 16) == 0) {
-                        c1755.f5869 = new C0221(Integer.MAX_VALUE, (C1752) null, c1755.f5869);
+                        c1755.f5869 = new C0221(2147483647, (C1752) null, c1755.f5869);
                     } else {
                         C0221 c0221 = (C0221) c1755.f5869.f1353;
-                        c0221.f1353 = new C0221(Integer.MAX_VALUE, (C1752) null, (C0221) c0221.f1353);
+                        c0221.f1353 = new C0221(2147483647, (C1752) null, (C0221) c0221.f1353);
                     }
                 }
             }
@@ -739,7 +739,7 @@ public final class C1983 {
                     C1752 c17514 = (C1752) c0222.f1352;
                     if (c17514.f5870 == null) {
                         int i11 = c0222.f1351;
-                        c17514.f5863 = (short) (i11 == Integer.MAX_VALUE ? i : i11 + s3);
+                        c17514.f5863 = (short) (i11 == 2147483647 ? 1 : i11 + s3);
                         c17514.f5870 = c1752;
                         c1752 = c17514;
                     }
@@ -757,7 +757,7 @@ public final class C1983 {
         }
         C1412 c1412 = c1752.f5867;
         int i12 = this.f6575;
-        c1412.getClass();
+        
         int[] iArr = new int[i12];
         c1412.f5086 = iArr;
         c1412.f5087 = new int[0];
@@ -777,7 +777,7 @@ public final class C1983 {
         int i16 = 1;
         while (true) {
             str = this.f6573;
-            i3 = i14;
+            i3 = 33554432;
             c = '[';
             c2 = ')';
             if (str.charAt(i16) == ')') {
@@ -801,14 +801,14 @@ public final class C1983 {
                 i16 = i17;
             }
             i15++;
-            i14 = i3;
+            i14 = 33554432;
         }
         C3449[] c3449Arr = new C3449[i15];
         int i18 = 1;
         int i19 = 0;
-        while (str.charAt(i18) != c2) {
+        while (str.charAt(i18) != 41) {
             int i20 = i18;
-            while (str.charAt(i20) == c) {
+            while (str.charAt(i20) == 91) {
                 i20++;
             }
             int i21 = i20 + 1;
@@ -887,14 +887,14 @@ public final class C1983 {
                             if ((i4 & 1048576) == 0 || !(i5 == 16777220 || i5 == 16777219)) {
                                 iM3125 = i5;
                             } else {
-                                iM3125 = Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                                iM3125 = 16777216;
                             }
                         } else if (i29 == 83886080) {
                             i5 = i28 + c1413.f5087[i27 - (i4 & 1048575)];
                             if ((i4 & 1048576) == 0 || !(i5 == 16777220 || i5 == 16777219)) {
                                 iM3125 = i5;
                             } else {
-                                iM3125 = Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                                iM3125 = 16777216;
                             }
                         } else {
                             iM3125 = i4;
@@ -938,14 +938,14 @@ public final class C1983 {
                         int i36 = length4;
                         if (i35 == 67108864) {
                             int i37 = i34 + c1413.f5086[iM3127 & 1048575];
-                            iM3127 = ((iM3127 & 1048576) == 0 || !(i37 == 16777220 || i37 == 16777219)) ? i37 : Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                            iM3127 = ((iM3127 & 1048576) == 0 || !(i37 == 16777220 || i37 == 16777219)) ? i37 : 16777216;
                         } else {
                             if (i35 == 83886080) {
                                 int i38 = i34 + c1413.f5087[i30 - (iM3127 & 1048575)];
                                 if ((iM3127 & 1048576) != 0) {
                                     c3 = 3;
                                     if (i38 == 16777220 || i38 == 16777219) {
-                                        iM3127 = Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                                        iM3127 = 16777216;
                                     }
                                 } else {
                                     c3 = 3;
@@ -991,9 +991,9 @@ public final class C1983 {
                     for (int i41 = i39; i41 < i40; i41++) {
                         c0516.f2190[i41] = 0;
                     }
-                    c0516.f2190[i40] = JSONB.Constants.BC_INT64_INT;
+                    c0516.f2190[i40] = -65;
                     m3838(i39, 0, 1);
-                    this.f6590[3] = c2870.m4874("java/lang/Throwable") | i3;
+                    this.f6590[3] = c2870.m4874("java/lang/Throwable") | 33554432;
                     m3837();
                     this.f6577 = C0243.m1308(this.f6577, c1752, c17518);
                     iMax = Math.max(iMax, 1);
@@ -1013,7 +1013,7 @@ public final class C1983 {
         String str4 = c2869M4870.f9195;
         int i2 = c2869M4870.f9191;
         if (i == 185) {
-            c0516.m1819(Opcodes.INVOKEINTERFACE, i2);
+            c0516.m1819(185, i2);
             if (c2869M4870.f9197 == 0) {
                 c2869M4870.f9197 = C3449.m4976(str4);
             }

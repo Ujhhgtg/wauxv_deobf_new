@@ -23,7 +23,7 @@ public abstract class AbstractC1351 extends AbstractC0950 {
     public String mo1345() {
         C1089 c1089 = this.f3468;
         AbstractC2205 abstractC2205 = c1089.f3929;
-        abstractC2205.getClass();
+        
         String strM2661 = c1089.m2661();
         String strMo3111 = abstractC2205.mo3111(this);
         String strMo3112 = abstractC2205.mo3112(this);
@@ -49,7 +49,7 @@ public abstract class AbstractC1351 extends AbstractC0950 {
     @Override // p000.AbstractC0950
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ */
     public final AbstractC0950 mo2444(int i) {
-        switch (this.f4835) {
+        switch (0) {
             case 0:
                 break;
         }

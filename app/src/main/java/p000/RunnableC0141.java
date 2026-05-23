@@ -55,7 +55,7 @@ public final class RunnableC0141 implements Runnable {
                 return;
             case 1:
                 C0243 c0243 = (C0243) obj;
-                c0243.getClass();
+                
                 while (true) {
                     try {
                         c0243.m1315((C0143) ((ReferenceQueue) c0243.f1405).remove());
@@ -125,7 +125,7 @@ public final class RunnableC0141 implements Runnable {
                 AbstractC0027.m733(((C0943) c0662.f2532).m753());
                 return;
             case 5:
-                ((DialogInterfaceOnCancelListenerC1032) obj).f3774.getClass();
+                
                 return;
             case 6:
                 AbstractC1111 abstractC1112 = (AbstractC1111) obj;
@@ -149,7 +149,7 @@ public final class RunnableC0141 implements Runnable {
             case 8:
                 AbstractComponentCallbacksC1406 abstractComponentCallbacksC1406 = (AbstractComponentCallbacksC1406) obj;
                 if (abstractComponentCallbacksC1406.f5070 != null) {
-                    if (abstractComponentCallbacksC1406.f5070 == null) {
+                    if (false) {
                         C0243 c0244 = new C0243(11);
                         Object obj2 = AbstractComponentCallbacksC1406.f5065;
                         c0244.f1404 = obj2;
@@ -157,19 +157,19 @@ public final class RunnableC0141 implements Runnable {
                         c0244.f1406 = obj2;
                         abstractComponentCallbacksC1406.f5070 = c0244;
                     }
-                    abstractComponentCallbacksC1406.f5070.getClass();
+                    
                     return;
                 }
                 return;
             case 9:
-                ((C0575) obj).getClass();
+                
                 throw new IllegalStateException("FragmentManager has not been attached to a host.");
             case 10:
                 C1682 c1682 = (C1682) obj;
                 if (c1682.f5687 != null) {
                     long jCurrentTimeMillis = System.currentTimeMillis();
                     long j2 = c1682.f5712;
-                    long j3 = j2 != Long.MIN_VALUE ? jCurrentTimeMillis - j2 : 0L;
+                    long j3 = j2 != -9223372036854775808L ? jCurrentTimeMillis - j2 : 0L;
                     AbstractC2491 layoutManager = c1682.f5702.getLayoutManager();
                     if (c1682.f5711 == null) {
                         c1682.f5711 = new Rect();
@@ -218,10 +218,10 @@ public final class RunnableC0141 implements Runnable {
                         iM2056 = c0664.m2055(recyclerView3, height, iM2056, j3);
                     }
                     if (i5 == 0 && iM2056 == 0) {
-                        c1682.f5712 = Long.MIN_VALUE;
+                        c1682.f5712 = -9223372036854775808L;
                         return;
                     }
-                    if (c1682.f5712 == Long.MIN_VALUE) {
+                    if (c1682.f5712 == -9223372036854775808L) {
                         c1682.f5712 = jCurrentTimeMillis;
                     }
                     c1682.f5702.scrollBy(i5, iM2056);
@@ -248,9 +248,9 @@ public final class RunnableC0141 implements Runnable {
                 c1961.f6495.m757(c1961.f6488, true);
                 EditText editText2 = ((C1961) c0938.f3437).f6488;
                 editText2.setSelection(editText2.getText().length());
-                ((C1961) c0938.f3437).f6495.getClass();
+                
                 return;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 C1961 c1962 = (C1961) obj;
                 DialogXBaseRelativeLayout dialogXBaseRelativeLayout2 = c1962.f6481;
                 if (dialogXBaseRelativeLayout2 != null) {
@@ -262,7 +262,7 @@ public final class RunnableC0141 implements Runnable {
                 ComponentCallbacks2C2563 componentCallbacks2C2563 = (ComponentCallbacks2C2563) obj;
                 componentCallbacks2C2563.f8135.mo613(componentCallbacks2C2563);
                 return;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 SearchView$SearchAutoComplete searchView$SearchAutoComplete = (SearchView$SearchAutoComplete) obj;
                 if (searchView$SearchAutoComplete.f101) {
                     ((InputMethodManager) searchView$SearchAutoComplete.getContext().getSystemService("input_method")).showSoftInput(searchView$SearchAutoComplete, 0);
@@ -278,7 +278,7 @@ public final class RunnableC0141 implements Runnable {
                 checkableImageButton.performClick();
                 checkableImageButton.jumpDrawablesToCurrentState();
                 return;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 ActionMenuView actionMenuView = ((Toolbar) obj).f148;
                 if (actionMenuView == null || (c0136 = actionMenuView.f82) == null) {
                     return;

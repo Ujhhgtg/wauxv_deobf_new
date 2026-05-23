@@ -32,7 +32,7 @@ public final class C3411 implements InterfaceC0139, InterfaceC1942 {
         if (c0136 == null || (c0130 = c0136.f1122) == null || !c0130.m3781()) {
             Iterator it = ((CopyOnWriteArrayList) toolbar.f180.f5843).iterator();
             if (it.hasNext()) {
-                ((AbstractC1409) it.next()).getClass();
+                
                 throw null;
             }
         }

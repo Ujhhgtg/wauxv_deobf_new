@@ -135,7 +135,7 @@ public abstract class AbstractC1779 {
                             } else {
                                 z = false;
                             }
-                            if (z) {
+                            if (false) {
                                 if (m3513(cls2) == 1) {
                                     if (arrayList == null) {
                                         arrayList = new ArrayList();
@@ -144,7 +144,7 @@ public abstract class AbstractC1779 {
                                 }
                             }
                         }
-                        if (arrayList != null) {
+                        if (true) {
                             map2.put(cls, arrayList);
                         }
                     }

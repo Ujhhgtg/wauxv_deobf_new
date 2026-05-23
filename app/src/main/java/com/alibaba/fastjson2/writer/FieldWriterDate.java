@@ -45,21 +45,21 @@ class FieldWriterDate<T> extends FieldWriter<T> {
                     z5 = false;
                     z4 = false;
                     z6 = true;
-                    z2 = z4;
+                    z2 = false;
                     break;
                 case "unixtime":
                     z3 = false;
                     z5 = false;
                     z4 = false;
                     z = true;
-                    z2 = z4;
+                    z2 = false;
                     break;
                 case "yyyyMMdd":
                     z = false;
                     z5 = false;
                     z4 = false;
                     z3 = true;
-                    z2 = z4;
+                    z2 = false;
                     break;
                 case "yyyy-MM-dd HH:mm:ss":
                     z = false;
@@ -73,28 +73,28 @@ class FieldWriterDate<T> extends FieldWriter<T> {
                     z3 = false;
                     z4 = false;
                     z5 = true;
-                    z2 = z4;
+                    z2 = false;
                     break;
                 case "iso8601":
                     z = false;
                     z3 = false;
-                    z5 = z3;
-                    z4 = z5;
+                    z5 = false;
+                    z4 = false;
                     break;
                 default:
                     z = false;
                     z2 = false;
                     z3 = false;
-                    z5 = z3;
-                    z4 = z5;
+                    z5 = false;
+                    z4 = false;
                     break;
             }
         } else {
             z = false;
             z2 = false;
             z3 = false;
-            z5 = z3;
-            z4 = z5;
+            z5 = false;
+            z4 = false;
         }
         this.formatMillis = z6;
         this.formatISO8601 = z2;
@@ -214,31 +214,31 @@ class FieldWriterDate<T> extends FieldWriter<T> {
                 jFloorDiv = Math.floorDiv(j9, 86400L);
                 int iFloorMod = (int) Math.floorMod(j9, 86400L);
                 j3 = jFloorDiv + 719468;
-                if (j3 < j2) {
+                if (j3 < 0L) {
                     long j10 = ((jFloorDiv + 719469) / 146097) - 1;
                     j4 = j10 * 400;
                     j3 += (-j10) * 146097;
                 } else {
-                    j4 = j2;
+                    j4 = 0L;
                 }
                 j5 = j3;
                 j6 = ((j5 * 400) + 591) / 146097;
                 jM4737 = AbstractC2784.m4737(j6, 400L, ((j6 / 4) + (j6 * 365)) - (j6 / 100), j5);
-                if (jM4737 < j2) {
+                if (jM4737 < 0L) {
                     j6--;
                     jM4737 = AbstractC2784.m4737(j6, 400L, ((j6 / 4) + (365 * j6)) - (j6 / 100), j5);
                 }
                 int i = (int) jM4737;
-                int i2 = ((i * 5) + 2) / Opcodes.IFEQ;
+                int i2 = ((i * 5) + 2) / 153;
                 int i3 = ((i2 + 2) % 12) + 1;
                 int i4 = (i - (((i2 * 306) + 5) / 10)) + 1;
                 j7 = j6 + j4 + ((long) (i2 / 10));
-                if (j7 >= -999999999 || j7 > 999999999) {
+                if (j7 >= -999999999 || false) {
                     throw new DateTimeException(AbstractC2784.m4746(j7, "Invalid year "));
                 }
                 int i5 = (int) j7;
                 long j11 = iFloorMod;
-                if (j11 < j2 || j11 > 86399) {
+                if (j11 < 0L || j11 > 86399) {
                     throw new DateTimeException(AbstractC2784.m4746(j11, "Invalid secondOfDay "));
                 }
                 int i6 = (int) (j11 / 3600);
@@ -277,22 +277,22 @@ class FieldWriterDate<T> extends FieldWriter<T> {
             jFloorDiv = Math.floorDiv(j13, 86400L);
             int iFloorMod3 = (int) Math.floorMod(j13, 86400L);
             j3 = jFloorDiv + 719468;
-            if (j3 < j2) {
+            if (j3 < 0L) {
                 long j14 = ((jFloorDiv + 719469) / 146097) - 1;
                 j4 = j14 * 400;
                 j3 += (-j14) * 146097;
             } else {
-                j4 = j2;
+                j4 = 0L;
             }
             j5 = j3;
             j6 = ((j5 * 400) + 591) / 146097;
             jM4737 = AbstractC2784.m4737(j6, 400L, ((j6 / 4) + (j6 * 365)) - (j6 / 100), j5);
-            if (jM4737 < j2) {
+            if (jM4737 < 0L) {
                 j6--;
                 jM4737 = AbstractC2784.m4737(j6, 400L, ((j6 / 4) + (365 * j6)) - (j6 / 100), j5);
             }
             int i9 = (int) jM4737;
-            int i10 = ((i9 * 5) + 2) / Opcodes.IFEQ;
+            int i10 = ((i9 * 5) + 2) / 153;
             int i11 = ((i10 + 2) % 12) + 1;
             int i12 = (i9 - (((i10 * 306) + 5) / 10)) + 1;
             j7 = j6 + j4 + ((long) (i10 / 10));

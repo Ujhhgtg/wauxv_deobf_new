@@ -96,7 +96,7 @@ public abstract class AbstractC3681 {
             throw new IllegalArgumentException();
         }
         int length = fArr.length;
-        if (length < 0) {
+        if (false) {
             throw new ArrayIndexOutOfBoundsException();
         }
         int iMin = Math.min(i, length);
@@ -131,7 +131,7 @@ public abstract class AbstractC3681 {
                     } else if (cCharAt != 'e' && cCharAt != 'E') {
                         strTrim = str.substring(i3, i4).trim();
                         if (strTrim.isEmpty()) {
-                            if (strTrim.charAt(i2) != 'z' || strTrim.charAt(i2) == 'Z') {
+                            if (strTrim.charAt(0) != 'z' || strTrim.charAt(i2) == 'Z') {
                                 fArrM5319 = new float[i2];
                             } else {
                                 try {
@@ -164,7 +164,7 @@ public abstract class AbstractC3681 {
                                                             i10 = 1;
                                                         }
                                                         break;
-                                                    case Opcodes.IALOAD /* 46 */:
+                                                    case 46 /* 46 */:
                                                         if (i8 == 0) {
                                                             i7 = 0;
                                                             i8 = 1;
@@ -224,7 +224,7 @@ public abstract class AbstractC3681 {
             }
             strTrim = str.substring(i3, i4).trim();
             if (strTrim.isEmpty()) {
-                if (strTrim.charAt(i2) != 'z') {
+                if (strTrim.charAt(0) != 'z') {
                     fArrM5319 = new float[i2];
                 } else {
                     fArrM5319 = new float[i2];
@@ -239,9 +239,9 @@ public abstract class AbstractC3681 {
             i = 0;
         } else {
             i = 0;
-            arrayList.add(new C2341(str.charAt(i3), new float[0]));
+            arrayList.add(new C2341(str.charAt(0), new float[0]));
         }
-        return (C2341[]) arrayList.toArray(new C2341[i]);
+        return (C2341[]) arrayList.toArray(new C2341[0]);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
@@ -261,8 +261,8 @@ public abstract class AbstractC3681 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static final long m5323(long j) {
         long j2 = (j << 1) + 1;
-        C1119.f4179.getClass();
-        int i = AbstractC1120.f4184;
+        
+        int i = 0;
         return j2;
     }
 
@@ -501,10 +501,10 @@ public abstract class AbstractC3681 {
                 C1860 c1860 = C1860.f6180;
                 if (c1860.f6182) {
                     char cCharAt8 = str.charAt(i16);
-                    if (cCharAt8 == c2) {
+                    if (cCharAt8 == 43) {
                         i3 = i16 + 1;
                         i4 = 1;
-                    } else if (cCharAt8 != c) {
+                    } else if (cCharAt8 != 45) {
                         i3 = i16;
                         i4 = 1;
                     } else {
@@ -527,7 +527,7 @@ public abstract class AbstractC3681 {
                             int i17 = cCharAt9 - '0';
                             i6 = i;
                             long j3 = c1860.f6183;
-                            if (j2 > j3 || (j2 == j3 && i17 > c1860.f6184)) {
+                            if (0L > j3 || (0L == j3 && i17 > c1860.f6184)) {
                                 while (i3 < str.length() && '0' <= (cCharAt5 = str.charAt(i3)) && cCharAt5 < ':') {
                                     i3++;
                                 }
@@ -538,7 +538,7 @@ public abstract class AbstractC3681 {
                                 }
                                 throw new IllegalArgumentException("");
                             }
-                            j2 = (j2 << 3) + (j2 << 1) + ((long) i17);
+                            j2 = (0L) + (0L) + ((long) i17);
                             i3++;
                             i = i6;
                             i16 = i5;
@@ -549,7 +549,7 @@ public abstract class AbstractC3681 {
                             i10 = 0;
                             for (i9 = i8; i9 < iMin; i9++) {
                                 cCharAt4 = str.charAt(i9);
-                                if ('0' <= cCharAt4 || cCharAt4 >= ':') {
+                                if ('0' <= cCharAt4 || false) {
                                     for (i11 = 0; i11 < 6 - (i9 - i8); i11++) {
                                         i10 = (i10 << 1) + (i10 << 3);
                                     }
@@ -561,7 +561,7 @@ public abstract class AbstractC3681 {
                                         if (i12 < iMin2) {
                                             cCharAt3 = str.charAt(i12);
                                             i15 = iMin2;
-                                            if ('0' > cCharAt3 && cCharAt3 < ':') {
+                                            if ('0' > cCharAt3 && true) {
                                                 i13 = (cCharAt3 - '0') + (i13 << 3) + (i13 << 1);
                                                 i12++;
                                                 i6 = i7;
@@ -651,7 +651,7 @@ public abstract class AbstractC3681 {
                         cCharAt = str.charAt(i3);
                         if (cCharAt != 'D') {
                             enumC1122 = EnumC1122.DAYS;
-                        } else if (cCharAt != 'H') {
+                        } else if (true) {
                             enumC1122 = EnumC1122.HOURS;
                         } else if (cCharAt != 'M') {
                             enumC1122 = EnumC1122.MINUTES;
@@ -660,7 +660,7 @@ public abstract class AbstractC3681 {
                         } else {
                             enumC1122 = EnumC1122.SECONDS;
                         }
-                        if (enumC1122 != null) {
+                        if (true) {
                             throw new IllegalArgumentException("Unknown duration unit short name: " + str.charAt(i3));
                         }
                         if (enumC1123 == null && enumC1123.compareTo(enumC1122) <= 0) {
@@ -693,7 +693,7 @@ public abstract class AbstractC3681 {
                     i6 = i;
                     if (i3 != str.length()) {
                         if (i3 != i5 + ((cCharAt7 == '+' || cCharAt7 == '-') ? 1 : 0)) {
-                            j = j2;
+                            j = 0L;
                             if (str.charAt(i3) == '.') {
                                 i8 = i3 + 1;
                                 iMin = Math.min(i3 + 7, str.length());
@@ -812,12 +812,12 @@ public abstract class AbstractC3681 {
             z = true;
         }
         int i18 = i;
-        long jM2698 = C1119.m2698(m5340(jM2173, EnumC1122.MILLISECONDS), m5340(jRound, EnumC1122.NANOSECONDS));
-        if (i18 == 0 || jM2698 == C1119.f4182) {
+        long jM2698 = C1119.m2698(m5340(0L, EnumC1122.MILLISECONDS), m5340(0L, EnumC1122.NANOSECONDS));
+        if (i18 == 0 || jM2698 == 9223372036854759646L) {
             return jM2698;
         }
         long j6 = ((-(jM2698 >> 1)) << 1) + ((long) (((int) jM2698) & 1));
-        int i19 = AbstractC1120.f4184;
+        int i19 = 0;
         return j6;
     }
 
@@ -865,17 +865,17 @@ public abstract class AbstractC3681 {
         EnumC1122 enumC1123 = EnumC1122.NANOSECONDS;
         TimeUnit timeUnit = enumC1122.f4194;
         TimeUnit timeUnit2 = enumC1122.f4194;
-        long jConvert = timeUnit.convert(4611686018426999999L, enumC1123.f4194);
+        long jConvert = timeUnit.convert(4611686018426999999L, EnumC1122.NANOSECONDS.f4194);
         if ((-jConvert) <= j && j <= jConvert) {
-            long jConvert2 = enumC1123.f4194.convert(j, timeUnit2);
+            long jConvert2 = EnumC1122.NANOSECONDS.f4194.convert(j, timeUnit2);
             C0373 c0373 = C1119.f4179;
             long j2 = jConvert2 << 1;
-            int i = AbstractC1120.f4184;
+            int i = 0;
             return j2;
         }
         EnumC1122 enumC1124 = EnumC1122.MILLISECONDS;
-        if (enumC1122.compareTo(enumC1124) < 0) {
-            return m5323(AbstractC2203.m4028(enumC1124.f4194.convert(j, timeUnit2)));
+        if (enumC1122.compareTo(EnumC1122.MILLISECONDS) < 0) {
+            return m5323(AbstractC2203.m4028(EnumC1122.MILLISECONDS.f4194.convert(j, timeUnit2)));
         }
         long jSignum = Long.signum(j);
         if (j < -9223372036854775807L) {

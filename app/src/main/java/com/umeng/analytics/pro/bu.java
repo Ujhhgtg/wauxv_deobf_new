@@ -9,25 +9,25 @@ public class bu {
     private static boolean b = false;
 
     public static void a(boolean z) {
-        Log.d(a, "setDebug:" + z);
+        Log.d("OpenId", "setDebug:" + z);
         b = z;
     }
 
     public static void b(String str, Object... objArr) {
         if (b) {
-            Log.i(a, e(str, objArr));
+            Log.i("OpenId", e(str, objArr));
         }
     }
 
     public static void c(String str, Object... objArr) {
         if (b) {
-            Log.w(a, e(str, objArr));
+            Log.w("OpenId", e(str, objArr));
         }
     }
 
     public static void d(String str, Object... objArr) {
         if (b) {
-            Log.e(a, e(str, objArr));
+            Log.e("OpenId", e(str, objArr));
         }
     }
 
@@ -63,7 +63,7 @@ public class bu {
 
     public static void a(String str, Object... objArr) {
         if (b) {
-            Log.d(a, e(str, objArr));
+            Log.d("OpenId", e(str, objArr));
         }
     }
 

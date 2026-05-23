@@ -129,13 +129,13 @@ public class ContextAutoTypeBeforeHandler implements JSONReader.AutoTypeBeforeHa
         long[] jArrCopyOf = new long[size];
         int i2 = 0;
         for (String str2 : hashSet) {
-            long j = Fnv.MAGIC_HASH_CODE;
+            long j = -3750763034362895579L;
             for (int i3 = 0; i3 < str2.length(); i3++) {
                 char cCharAt = str2.charAt(i3);
                 if (cCharAt == '$') {
                     cCharAt = '.';
                 }
-                j = (j ^ ((long) cCharAt)) * Fnv.MAGIC_PRIME;
+                j = (j ^ ((long) cCharAt)) * 1099511628211L;
             }
             jArrCopyOf[i2] = j;
             i2++;
@@ -153,14 +153,14 @@ public class ContextAutoTypeBeforeHandler implements JSONReader.AutoTypeBeforeHa
             str = "Object";
         }
         int length = str.length();
-        long j3 = Fnv.MAGIC_HASH_CODE;
+        long j3 = -3750763034362895579L;
         int i = 0;
         while (i < length) {
             char cCharAt = str.charAt(i);
             if (cCharAt == '$') {
                 cCharAt = '.';
             }
-            long j4 = (j3 ^ ((long) cCharAt)) * Fnv.MAGIC_PRIME;
+            long j4 = (j3 ^ ((long) cCharAt)) * 1099511628211L;
             if (Arrays.binarySearch(this.acceptHashCodes, j4) >= 0) {
                 long jHashCode64 = Fnv.hashCode64(str);
                 Class<?> clsApply = apply(jHashCode64, cls, j);

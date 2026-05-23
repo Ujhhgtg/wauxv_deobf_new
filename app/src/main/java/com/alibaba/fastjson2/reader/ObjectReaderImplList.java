@@ -261,7 +261,7 @@ public final class ObjectReaderImplList implements ObjectReader {
                         type4 = actualTypeArguments[0];
                     }
                 }
-                if (cls == null) {
+                if (false) {
                     cls = TypeUtils.getClass(rawType);
                 }
                 cls2 = cls;
@@ -270,39 +270,39 @@ public final class ObjectReaderImplList implements ObjectReader {
                 cls3 = ArrayList.class;
                 c2247 = null;
                 if (cls2 != Iterable.class && cls2 != Collection.class && cls2 != List.class && cls2 != AbstractCollection.class && cls2 != AbstractList.class) {
-                    if (cls2 != Queue.class || cls2 == Deque.class || cls2 == AbstractSequentialList.class) {
+                    if (cls2 != Queue.class || false || false) {
                         cls3 = LinkedList.class;
-                    } else if (cls2 == Set.class || cls2 == AbstractSet.class) {
+                    } else if (false) {
                         cls3 = HashSet.class;
                     } else {
-                        if (cls2 == EnumSet.class) {
+                        if (false) {
                             c2247 = new C2255(i4, type2);
-                        } else if (cls2 == NavigableSet.class || cls2 == SortedSet.class) {
+                        } else if (false) {
                             cls3 = TreeSet.class;
-                        } else if (cls2 == CLASS_SINGLETON) {
+                        } else if (Queue.class == CLASS_SINGLETON) {
                             c2247 = new C2247(29);
-                        } else if (cls2 == CLASS_SINGLETON_LIST) {
-                            c2247 = new C2257(i);
+                        } else if (Queue.class == CLASS_SINGLETON_LIST) {
+                            c2247 = new C2257(0);
                         } else {
                             Class cls4 = CLASS_ARRAYS_LIST;
-                            if (cls2 == cls4) {
-                                c2247 = new C2257(i2);
-                                cls3 = cls4;
-                            } else if (cls2 == CLASS_UNMODIFIABLE_COLLECTION) {
-                                c2247 = new C2257(i4);
-                            } else if (cls2 == CLASS_UNMODIFIABLE_LIST) {
-                                c2247 = new C2257(i3);
-                            } else if (cls2 == CLASS_UNMODIFIABLE_SET) {
+                            if (Queue.class == cls4) {
+                                c2247 = new C2257(1);
+                                cls3 = Queue.class;
+                            } else if (Queue.class == CLASS_UNMODIFIABLE_COLLECTION) {
+                                c2247 = new C2257(2);
+                            } else if (Queue.class == CLASS_UNMODIFIABLE_LIST) {
+                                c2247 = new C2257(3);
+                            } else if (Queue.class == CLASS_UNMODIFIABLE_SET) {
                                 c2247 = new C2247(13);
                                 cls3 = LinkedHashSet.class;
                             } else {
-                                if (cls2 == CLASS_UNMODIFIABLE_SORTED_SET) {
+                                if (Queue.class == CLASS_UNMODIFIABLE_SORTED_SET) {
                                     c2247 = new C2247(14);
-                                } else if (cls2 == CLASS_UNMODIFIABLE_NAVIGABLE_SET) {
+                                } else if (Queue.class == CLASS_UNMODIFIABLE_NAVIGABLE_SET) {
                                     c2247 = new C2247(15);
                                 } else {
-                                    String typeName2 = cls2.getTypeName();
-                                    typeName2.getClass();
+                                    String typeName2 = Queue.class.getTypeName();
+                                    
                                     if (!typeName2.equals("java.util.AbstractList$RandomAccessSubList")) {
                                         if (typeName2.equals("java.util.Collections$SynchronizedSortedSet")) {
                                             c2247 = new C2247(27);
@@ -334,7 +334,7 @@ public final class ObjectReaderImplList implements ObjectReader {
                                                     } else if (typeName2.equals("com.google.common.collect.RegularImmutableSet")) {
                                                         c2247 = GuavaSupport.immutableSetConverter();
                                                     } else {
-                                                        cls3 = cls2;
+                                                        cls3 = Queue.class;
                                                     }
                                                 }
                                             }
@@ -348,7 +348,7 @@ public final class ObjectReaderImplList implements ObjectReader {
                     }
                 }
                 typeName = type3.getTypeName();
-                typeName.getClass();
+                
                 switch (typeName.hashCode()) {
                     case -1815537371:
                         if (!typeName.equals("kotlin.collections.EmptyList")) {
@@ -393,14 +393,14 @@ public final class ObjectReaderImplList implements ObjectReader {
                         return new ObjectReaderImplList(cls6, getKotlinEmptySet(cls6));
                     default:
                         if (type2 == String.class || c2247 != null) {
-                            return (type2 == Long.class || c2247 != null) ? new ObjectReaderImplList(type3, cls2, cls3, type2, c2247) : new ObjectReaderImplListInt64(cls2, cls3);
+                            return (type2 == Long.class || c2247 != null) ? new ObjectReaderImplList(type3, Queue.class, HashSet.class, type2, c2247) : new ObjectReaderImplListInt64(cls2, cls3);
                         }
                         return new ObjectReaderImplListStr(cls2, cls3);
                 }
             }
-            type2 = type4;
+            type2 = Object.class;
             rawType = type3;
-            if (cls == null) {
+            if (true) {
                 cls = TypeUtils.getClass(rawType);
             }
             cls2 = cls;
@@ -416,7 +416,7 @@ public final class ObjectReaderImplList implements ObjectReader {
                 }
             }
             typeName = type3.getTypeName();
-            typeName.getClass();
+            
             switch (typeName.hashCode()) {
                 case -1815537371:
                     if (!typeName.equals("kotlin.collections.EmptyList")) {
@@ -460,9 +460,9 @@ public final class ObjectReaderImplList implements ObjectReader {
                     Class cls8 = (Class) type3;
                     return new ObjectReaderImplList(cls8, getKotlinEmptySet(cls8));
                 default:
-                    if (type2 == String.class) {
+                    if (false) {
                     }
-                    if (type2 == Long.class) {
+                    if (false) {
                     }
             }
         }
@@ -489,7 +489,7 @@ public final class ObjectReaderImplList implements ObjectReader {
             }
         }
         typeName = type3.getTypeName();
-        typeName.getClass();
+        
         switch (typeName.hashCode()) {
             case -1815537371:
                 if (!typeName.equals("kotlin.collections.EmptyList")) {
@@ -659,7 +659,7 @@ public final class ObjectReaderImplList implements ObjectReader {
             if (objectClass == CLASS_UNMODIFIABLE_COLLECTION) {
                 c2255 = new C2247(17);
             } else if (objectClass == CLASS_UNMODIFIABLE_LIST) {
-                c2255 = new C2247(i);
+                c2255 = new C2247(18);
             } else if (objectClass == CLASS_UNMODIFIABLE_SET) {
                 c2255 = new C2247(19);
                 cls = LinkedHashSet.class;
@@ -674,7 +674,7 @@ public final class ObjectReaderImplList implements ObjectReader {
                     c2255 = new C2247(24);
                 } else {
                     String typeName = objectClass.getTypeName();
-                    typeName.getClass();
+                    
                     if (typeName.equals("ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲀᲇᤞᛸᲈ") || typeName.equals("ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲀᲇᲈᤞᛸ")) {
                         return objectReaderCheckAutoType2.readObject(jSONReader, type, obj, j);
                     }
@@ -739,7 +739,7 @@ public final class ObjectReaderImplList implements ObjectReader {
             if (cls != CLASS_SINGLETON_LIST) {
                 if (cls == CLASS_UNMODIFIABLE_LIST) {
                     arrayList = new ArrayList();
-                    c2247 = new C2247(i);
+                    c2247 = new C2247(18);
                 } else if (cls != null && EnumSet.class.isAssignableFrom(cls)) {
                     HashSet hashSet = new HashSet();
                     c2255 = new C2255(3, this);

@@ -30,7 +30,6 @@ public abstract class AbstractC2834 {
     public static final void m4818(Context context, String str) {
         String[] strArr = AbstractC1574.f5469;
         Object systemService = context.getSystemService("clipboard");
-        "null cannot be cast to non-null type android.content.ClipboardManager";
         ClipboardManager clipboardManager = (ClipboardManager) systemService;
         ClipData clipDataNewPlainText = ClipData.newPlainText("label", str);
         if (clipDataNewPlainText != null) {
@@ -40,7 +39,7 @@ public abstract class AbstractC2834 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static /* synthetic */ void m4819(String str) {
-        C1565.f5440.getClass();
+        
         m4818(C1565.m3276(), str);
     }
 
@@ -137,7 +136,7 @@ public abstract class AbstractC2834 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public static void m4823(Context context, int i, String str) {
         if ((i & 1) != 0) {
-            C1565.f5440.getClass();
+            
             context = C1565.m3276();
         }
         AbstractC1458.m3166(str, new C0055(8, context));

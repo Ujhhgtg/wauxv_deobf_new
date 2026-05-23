@@ -28,6 +28,6 @@ public final /* synthetic */ class C3561 implements InterfaceC1414 {
                 this.f11169.setChecked(false);
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

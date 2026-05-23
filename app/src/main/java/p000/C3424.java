@@ -4,8 +4,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲇᛸᲀᤞᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -33,14 +31,14 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 c1332.f4791 = c0705;
                 break;
             case 1:
-                ((C1020) obj).f3733 = new C3424(2);
+                ((C1020) obj).thisMethodMatcher = new C3424(2);
                 break;
             case 2:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr2 = AbstractC1574.f5469;
                 c1333.m3053("com.tencent.mm.sdk.platformtools");
                 C1981 c1981 = new C1981(4);
-                if (AbstractC3471.m5079(EnumC3677.f11531) || AbstractC3471.m5080(EnumC3674.f11496)) {
+                if (AbstractC3471.m5079(WeChatVersions.f11531) || AbstractC3471.m5080(WeChatVersionsPlay.f11496)) {
                     c1981.m3827("MicroMsg.BitmapUtil", "saveBitmapToImage failed: %s");
                 } else {
                     c1981.m3825("com.tencent.mm.sdk.platformtools.BitmapUtil");
@@ -50,7 +48,7 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 break;
             case 3:
                 C1563 c1563 = (C1563) obj;
-                c1563.getClass();
+                
                 int i = 2;
                 try {
                     c2585 = c1563.m3267()[2];
@@ -78,15 +76,15 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                     }
                     String[] strArr3 = AbstractC1574.f5469;
                     if (AbstractC2841.m4828(str, "avatar", false) || AbstractC2841.m4828(str, "user_hd_", false)) {
-                        new C0408(i, 6, c1563).m1608(Bitmap.CompressFormat.PNG);
+                        new C0408(2, 6, c1563).m1608(Bitmap.CompressFormat.PNG);
                     }
                 }
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 4:
-                obj.getClass();
+                
                 throw new ClassCastException();
             case 5:
-                ((C1020) obj).f3733 = new C3424(14);
+                ((C1020) obj).thisMethodMatcher = new C3424(14);
                 break;
             case 6:
                 C1333 c1334 = (C1333) obj;
@@ -105,19 +103,19 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 c1335.f4794 = c1983;
                 break;
             case 8:
-                ((C1020) obj).f3733 = new C3424(7);
+                ((C1020) obj).thisMethodMatcher = new C3424(7);
                 break;
             case 9:
-                ((C1020) obj).f3733 = new C3424(16);
+                ((C1020) obj).thisMethodMatcher = new C3424(16);
                 break;
             case 10:
-                ((C1020) obj).f3733 = new C3424(6);
+                ((C1020) obj).thisMethodMatcher = new C3424(6);
                 break;
             case 11:
-                ((C1020) obj).f3733 = new C3424(15);
+                ((C1020) obj).thisMethodMatcher = new C3424(15);
                 break;
-            case Opcodes.FCONST_1 /* 12 */:
-                ((C1020) obj).f3733 = new C3424(13);
+            case 12 /* 12 */:
+                ((C1020) obj).thisMethodMatcher = new C3424(13);
                 break;
             case 13:
                 C1333 c1336 = (C1333) obj;
@@ -127,15 +125,15 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 c1984.m3827("MicroMsg.UploadPackHelper", "commit sns info ret %d, typeFlag %d sightMd5 %s");
                 c1336.f4794 = c1984;
                 break;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 C1333 c1337 = (C1333) obj;
                 String[] strArr7 = AbstractC1574.f5469;
                 c1337.m3053("com.tencent.mm.plugin.sns.model");
                 C1981 c1985 = new C1981(4);
-                Class<Integer> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(Integer.class));
+                Class<Integer> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(Integer.class));
                 Class cls = clsM2183 != null ? clsM2183 : Integer.class;
-                Class<Context> clsM2184 = AbstractC0743.m2183(AbstractC2519.m4527(Context.class));
-                c1985.m3823(cls, clsM2184 != null ? clsM2184 : Context.class);
+                Class<Context> clsM2184 = AbstractC0743.m2183(AbstractC2519.classToKClass(Context.class));
+                c1985.paramTypes(cls, clsM2184 != null ? clsM2184 : Context.class);
                 c1985.m3827("initSnsObj", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1337.f4794 = c1985;
                 break;
@@ -155,12 +153,12 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 c1987.m3827("setUploadList", "com.tencent.mm.plugin.sns.model.UploadPackHelper");
                 c1339.f4794 = c1987;
                 break;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 C1020 c1020 = (C1020) obj;
-                c1020.f3732 = new C3424(18);
-                c1020.f3733 = new C3424(19);
+                c1020.declaringClassMatcher = new C3424(18);
+                c1020.thisMethodMatcher = new C3424(19);
                 break;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 C1332 c13310 = (C1332) obj;
                 String[] strArr10 = AbstractC1574.f5469;
                 c13310.m3051("com.tencent.mm.vfs");
@@ -172,51 +170,51 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 C1333 c13311 = (C1333) obj;
                 C1981 c1981M4739 = AbstractC2784.m4739(c13311);
                 Class<String> cls2 = String.class;
-                Class<String> clsM2185 = AbstractC0743.m2183(AbstractC2519.m4527(cls2));
+                Class<String> clsM2185 = AbstractC0743.m2183(AbstractC2519.classToKClass(String.class));
                 if (clsM2185 == null) {
-                    clsM2185 = cls2;
+                    clsM2185 = String.class;
                 }
-                Class<String> clsM4740 = AbstractC2784.m4740(c1981M4739, clsM2185, cls2);
+                Class<String> clsM4740 = AbstractC2784.m4740(c1981M4739, clsM2185, String.class);
                 cls2 = clsM4740 != null ? clsM4740 : String.class;
-                Class<Boolean> clsM2186 = AbstractC0743.m2183(AbstractC2519.m4527(Boolean.class));
-                c1981M4739.m3823(cls2, clsM2186 != null ? clsM2186 : Boolean.class);
+                Class<Boolean> clsM2186 = AbstractC0743.m2183(AbstractC2519.classToKClass(Boolean.class));
+                c1981M4739.paramTypes(cls2, clsM2186 != null ? clsM2186 : Boolean.class);
                 c13311.f4794 = c1981M4739;
                 break;
             case 20:
-                ((C1020) obj).f3732 = new C3424(21);
+                ((C1020) obj).declaringClassMatcher = new C3424(21);
                 break;
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 ((C1332) obj).m3050(new C3424(22));
                 break;
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 String[] strArr11 = AbstractC1574.f5469;
                 ((C0705) obj).m2127("MicroMsg.VideoService", "MicroMsg.SubCoreVideo", "quitVideoSendThread");
                 break;
-            case Opcodes.FLOAD /* 23 */:
-                ((C1020) obj).f3733 = new C3424(25);
+            case 23 /* 23 */:
+                ((C1020) obj).thisMethodMatcher = new C3424(25);
                 break;
-            case Opcodes.DLOAD /* 24 */:
-                ((C1020) obj).f3733 = new C3424(26);
+            case 24 /* 24 */:
+                ((C1020) obj).thisMethodMatcher = new C3424(26);
                 break;
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 C1333 c13312 = (C1333) obj;
                 C1981 c1981M47310 = AbstractC2784.m4739(c13312);
                 String[] strArr12 = AbstractC1574.f5469;
-                c1981M47310.m3827((AbstractC3471.m5079(EnumC3677.f11541) || AbstractC3471.m5080(EnumC3674.f11505)) ? "MicroMsg.C2CVideoPathFeatureService" : "MicroMsg.VideoInfoStorage", ".mp4", "success restore file, from ");
+                c1981M47310.m3827((AbstractC3471.m5079(WeChatVersions.f11541) || AbstractC3471.m5080(WeChatVersionsPlay.f11505)) ? "MicroMsg.C2CVideoPathFeatureService" : "MicroMsg.VideoInfoStorage", ".mp4", "success restore file, from ");
                 c13312.f4794 = c1981M47310;
                 break;
             case 26:
                 C1333 c13313 = (C1333) obj;
                 C1981 c1981M47311 = AbstractC2784.m4739(c13313);
                 String[] strArr13 = AbstractC1574.f5469;
-                c1981M47311.m3827((AbstractC3471.m5079(EnumC3677.f11541) || AbstractC3471.m5080(EnumC3674.f11505)) ? "MicroMsg.C2CVideoPathFeatureService" : "MicroMsg.VideoInfoStorage", ".jpg", "success restore file, from ");
+                c1981M47311.m3827((AbstractC3471.m5079(WeChatVersions.f11541) || AbstractC3471.m5080(WeChatVersionsPlay.f11505)) ? "MicroMsg.C2CVideoPathFeatureService" : "MicroMsg.VideoInfoStorage", ".jpg", "success restore file, from ");
                 c13313.f4794 = c1981M47311;
                 break;
             case 27:
                 C2011 c2011M3872 = C2011.m3872(LayoutInflater.from(((View) obj).getContext()));
                 c2011M3872.f6708.setText(C3607.f11267.m2542());
                 C2007 c2007 = new C2007();
-                C3611.f11291.getClass();
+                
                 c2007.f6678 = C3611.f11294;
                 c2007.f6680 = c2011M3872.f6707;
                 String[] strArr14 = AbstractC1574.f5469;
@@ -229,7 +227,7 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 C2011 c2011M3873 = C2011.m3872(LayoutInflater.from(((View) obj).getContext()));
                 c2011M3873.f6708.setText(C3612.f11297.m2542());
                 C2007 c2008 = new C2007();
-                C3613.f11298.getClass();
+                
                 c2008.f6678 = C3613.f11301;
                 c2008.f6680 = c2011M3873.f6707;
                 String[] strArr15 = AbstractC1574.f5469;
@@ -243,6 +241,6 @@ public final /* synthetic */ class C3424 implements InterfaceC1425 {
                 ((C1981) obj).m3827("MicroMsg.VoiceStorage", "update failed, no values set");
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

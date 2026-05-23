@@ -36,9 +36,9 @@ public final class CacheStrategy {
                 } else if (iCode != 308 && iCode != 404 && iCode != 405) {
                     switch (iCode) {
                         case 300:
-                        case c.p /* 301 */:
+                        case 301 /* 301 */:
                             break;
-                        case c.q /* 302 */:
+                        case 302 /* 302 */:
                             if (Response.header$default(response, "Expires", null, 2, null) == null) {
                                 return false;
                             }

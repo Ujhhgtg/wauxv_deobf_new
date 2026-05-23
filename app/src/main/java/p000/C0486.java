@@ -26,7 +26,7 @@ public final /* synthetic */ class C0486 implements Consumer {
         switch (this.f2102) {
             case 0:
                 C0492 c0492 = (C0492) obj;
-                c0492.getClass();
+                
                 ArrayList<URL> arrayList = new ArrayList();
                 c0492.f2117.forEach(new C0486(arrayList, 0));
                 arrayList.addAll(c0492.f2116);

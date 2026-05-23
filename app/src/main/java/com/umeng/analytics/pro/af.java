@@ -27,7 +27,7 @@ public class af extends ac {
     public af(String str, ArrayList<ad> arrayList) {
         super(str, arrayList);
         this.c = 60;
-        this.d = Opcodes.GETFIELD;
+        this.d = 180;
     }
 
     public void a(int i) {
@@ -93,7 +93,7 @@ public class af extends ac {
             for (int i = 0; i < length; i++) {
                 JSONObject jSONObject = jSONArray.getJSONObject(i);
                 String strOptString = jSONObject.has(g.y) ? jSONObject.optString(g.y) : "";
-                int iValueOf = jSONObject.has(com.umeng.ccg.a.G) ? Integer.valueOf(jSONObject.optInt(com.umeng.ccg.a.G)) : 1;
+                int iValueOf = jSONObject.has("mock") ? Integer.valueOf(jSONObject.optInt("mock")) : 1;
                 if (!TextUtils.isEmpty(strOptString)) {
                     this.f.add(new Pair<>(strOptString, iValueOf));
                 }
@@ -126,19 +126,19 @@ public class af extends ac {
                 try {
                     String str2 = (String) this.f.get(this.g).first;
                     int iIntValue = ((Integer) this.f.get(this.g).second).intValue();
-                    jSONObject2.put(com.umeng.ccg.a.F, str2);
-                    jSONObject2.put(com.umeng.ccg.a.G, iIntValue);
-                    jSONObject2.put(com.umeng.ccg.a.H, this.g);
+                    jSONObject2.put("target", str2);
+                    jSONObject2.put("mock", iIntValue);
+                    jSONObject2.put("index", this.g);
                     jSONObject2.put("actionName", str);
-                    jSONObject2.put(com.umeng.ccg.a.x, c());
-                    jSONObject2.put(com.umeng.ccg.a.u, "uapp");
-                    jSONObject2.put(com.umeng.ccg.a.v, "");
-                    jSONObject2.put(com.umeng.ccg.a.w, "");
-                    jSONObject2.put(com.umeng.ccg.a.C, this.b);
-                    jSONObject2.put(com.umeng.ccg.a.B, this.a);
+                    jSONObject2.put("sdk", c());
+                    jSONObject2.put("hit_sdk", "uapp");
+                    jSONObject2.put("local_hit_sdk", "");
+                    jSONObject2.put("forbid_sdk", "");
+                    jSONObject2.put("act_when", this.b);
+                    jSONObject2.put("sel_policy", this.a);
                     int i = i();
                     jSONObject2.put("delay", i);
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "getNextTypeArg():: currIndex: " + this.g + "; delay: " + i);
+                    UMRTLog.i("MobclickRT", "getNextTypeArg():: currIndex: " + this.g + "; delay: " + i);
                     this.g = this.g + 1;
                     return jSONObject2;
                 } catch (Throwable unused) {
@@ -161,25 +161,25 @@ public class af extends ac {
                 if (i2 == 0) {
                     SharedPreferences sharedPreferencesA = av.a(UMGlobalContext.getAppContext());
                     if (sharedPreferencesA != null) {
-                        int i4 = sharedPreferencesA.getInt(av.h, 0);
+                        int i4 = sharedPreferencesA.getInt("last_type_index", 0);
                         if (i4 < this.e) {
                             String str = (String) this.f.get(i4).first;
                             int iIntValue = ((Integer) this.f.get(i4).second).intValue();
-                            jSONObject.put(com.umeng.ccg.a.F, str);
-                            jSONObject.put(com.umeng.ccg.a.G, iIntValue);
-                            jSONObject.put(com.umeng.ccg.a.H, i4);
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "selPoclicy: 0, currIndex: " + i4);
+                            jSONObject.put("target", str);
+                            jSONObject.put("mock", iIntValue);
+                            jSONObject.put("index", i4);
+                            UMRTLog.i("MobclickRT", "selPoclicy: 0, currIndex: " + i4);
                             if (i4 < this.e - 1) {
                                 i3 = i4 + 1;
                             }
                         } else {
                             String str2 = (String) this.f.get(0).first;
                             int iIntValue2 = ((Integer) this.f.get(0).second).intValue();
-                            jSONObject.put(com.umeng.ccg.a.F, str2);
-                            jSONObject.put(com.umeng.ccg.a.G, iIntValue2);
-                            jSONObject.put(com.umeng.ccg.a.H, 0);
+                            jSONObject.put("target", str2);
+                            jSONObject.put("mock", iIntValue2);
+                            jSONObject.put("index", 0);
                         }
-                        sharedPreferencesA.edit().putInt(av.h, i3).commit();
+                        sharedPreferencesA.edit().putInt("last_type_index", i3).commit();
                         return;
                     }
                     return;
@@ -188,9 +188,9 @@ public class af extends ac {
                     int randNumber = DeviceConfig.getRandNumber(0, this.e - 1);
                     String str3 = (String) this.f.get(randNumber).first;
                     int iIntValue3 = ((Integer) this.f.get(randNumber).second).intValue();
-                    jSONObject.put(com.umeng.ccg.a.F, str3);
-                    jSONObject.put(com.umeng.ccg.a.G, iIntValue3);
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "selPoclicy: 1, currIndex: " + randNumber);
+                    jSONObject.put("target", str3);
+                    jSONObject.put("mock", iIntValue3);
+                    UMRTLog.i("MobclickRT", "selPoclicy: 1, currIndex: " + randNumber);
                     return;
                 }
                 if (i2 != 2 || (i = this.g) >= this.e) {
@@ -198,10 +198,10 @@ public class af extends ac {
                 }
                 String str4 = (String) this.f.get(i).first;
                 int iIntValue4 = ((Integer) this.f.get(this.g).second).intValue();
-                jSONObject.put(com.umeng.ccg.a.F, str4);
-                jSONObject.put(com.umeng.ccg.a.G, iIntValue4);
-                jSONObject.put(com.umeng.ccg.a.H, this.g);
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "processInternal():: selPoclicy: 2, currIndex: " + this.g);
+                jSONObject.put("target", str4);
+                jSONObject.put("mock", iIntValue4);
+                jSONObject.put("index", this.g);
+                UMRTLog.i("MobclickRT", "processInternal():: selPoclicy: 2, currIndex: " + this.g);
                 this.g = this.g + 1;
             } catch (Throwable unused) {
             }
@@ -211,20 +211,20 @@ public class af extends ac {
     @Override // com.umeng.analytics.pro.ac, com.umeng.analytics.pro.ak
     public void b(String str, JSONObject jSONObject) {
         super.b(str, jSONObject);
-        if (jSONObject.has(com.umeng.ccg.a.B)) {
-            a(jSONObject.optInt(com.umeng.ccg.a.B));
+        if (jSONObject.has("sel_policy")) {
+            a(jSONObject.optInt("sel_policy"));
         }
-        if (jSONObject.has(com.umeng.ccg.a.C)) {
-            b(jSONObject.optInt(com.umeng.ccg.a.C));
+        if (jSONObject.has("act_when")) {
+            b(jSONObject.optInt("act_when"));
         }
-        if (jSONObject.has(com.umeng.ccg.a.A)) {
-            c(jSONObject.optString(com.umeng.ccg.a.A));
+        if (jSONObject.has("signature")) {
+            c(jSONObject.optString("signature"));
         }
-        if (jSONObject.has(com.umeng.ccg.a.D)) {
-            c(jSONObject.optInt(com.umeng.ccg.a.D));
+        if (jSONObject.has("min_delay")) {
+            c(jSONObject.optInt("min_delay"));
         }
-        if (jSONObject.has(com.umeng.ccg.a.E)) {
-            d(jSONObject.optInt(com.umeng.ccg.a.E));
+        if (jSONObject.has("max_delay")) {
+            d(jSONObject.optInt("max_delay"));
         }
     }
 
@@ -241,9 +241,9 @@ public class af extends ac {
         }
         if (jSONObject != null) {
             try {
-                jSONObjectA.put(com.umeng.ccg.a.C, this.b);
-                jSONObjectA.put(com.umeng.ccg.a.B, this.a);
-                int iOptInt = jSONObject.optInt(com.umeng.ccg.a.j);
+                jSONObjectA.put("act_when", this.b);
+                jSONObjectA.put("sel_policy", this.a);
+                int iOptInt = jSONObject.optInt("scene");
                 if (this.b == 0 && iOptInt == 202) {
                     a(jSONObjectA);
                 }

@@ -3,7 +3,7 @@ package p000;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤞᲁᲇᤝᲈ, reason: contains not printable characters */
@@ -34,8 +34,8 @@ public final class C0319 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C0318.f1566, dexKitBridge, new C0316(0));
-        AbstractC1574.m3295(C0317.f1565, dexKitBridge, new C0316(1));
+        AbstractC1574.findMethod(C0318.f1566, dexKitBridge, new C0316(0));
+        AbstractC1574.findMethod(C0317.f1565, dexKitBridge, new C0316(1));
     }
 
     @Override // p000.AbstractC1557
@@ -43,7 +43,7 @@ public final class C0319 extends AbstractC2867 implements InterfaceC1582 {
     public final void mo1126() {
         Iterator it = AbstractC0745.m2212(C0318.f1566, C0317.f1565).iterator();
         while (it.hasNext()) {
-            List listSingletonList = Collections.singletonList(AbstractC1574.m3315((AbstractC1021) it.next()));
+            List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod((AbstractC1021) it.next()));
             C0319 c0319 = f1567;
             C3689 c3689M4172 = C2309.m4172(c0319, listSingletonList);
             c0319.m3262(c3689M4172, new C0316(3));

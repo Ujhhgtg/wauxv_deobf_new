@@ -18,7 +18,7 @@ public final class BooleanSchema extends JSONSchema {
 
     @Override // com.alibaba.fastjson2.schema.JSONSchema
     public JSONObject toJSONObject() {
-        return JSONObject.of(g.y, (Object) "boolean");
+        return JSONObject.of("type", (Object) "boolean");
     }
 
     @Override // com.alibaba.fastjson2.schema.JSONSchema

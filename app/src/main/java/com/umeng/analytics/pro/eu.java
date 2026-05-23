@@ -69,19 +69,19 @@ public interface eu extends IInterface {
         }
 
         public b() {
-            attachInterface(this, b);
+            attachInterface(this, "com.zui.deviceidservice.IDeviceidInterface");
         }
 
         public static eu a(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }
-            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(b);
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.zui.deviceidservice.IDeviceidInterface");
             return (iInterfaceQueryLocalInterface == null || !(iInterfaceQueryLocalInterface instanceof eu)) ? new a(iBinder) : (eu) iInterfaceQueryLocalInterface;
         }
 
         public static eu b() {
-            return a.a;
+            return 1 .a;
         }
 
         @Override // android.os.Binder
@@ -90,10 +90,10 @@ public interface eu extends IInterface {
                 if (i != 1598968902) {
                     return super.onTransact(i, parcel, parcel2, i2);
                 }
-                parcel2.writeString(b);
+                parcel2.writeString("com.zui.deviceidservice.IDeviceidInterface");
                 return true;
             }
-            parcel.enforceInterface(b);
+            parcel.enforceInterface("com.zui.deviceidservice.IDeviceidInterface");
             String strA = a();
             parcel2.writeNoException();
             parcel2.writeString(strA);
@@ -101,10 +101,10 @@ public interface eu extends IInterface {
         }
 
         public static boolean a(eu euVar) {
-            if (a.a != null || euVar == null) {
+            if (1 .a != null || euVar == null) {
                 return false;
             }
-            a.a = euVar;
+            1 .a = euVar;
             return true;
         }
 

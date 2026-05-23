@@ -125,7 +125,7 @@ public final class C0202 extends AbstractC2867 implements InterfaceC1601 {
                             bArrM1388 = AbstractC0270.m1388(AbstractC0270.m1388(bArrM1389, bytes2), AbstractC0270.m1384(i4, bArr.length, bArr));
                         }
                     }
-                    contentValues.put(str2, bArrM1388);
+                    contentValues.put("content", bArrM1388);
                     return;
                 }
                 return;
@@ -162,7 +162,7 @@ public final class C0202 extends AbstractC2867 implements InterfaceC1601 {
                         bArrM1388 = AbstractC0270.m1388(AbstractC0270.m1388(bArrM13810, bytes4), AbstractC0270.m1384(i7, bArr2.length, bArr2));
                     }
                 }
-                contentValues.put(str3, bArrM1388);
+                contentValues.put("curActionBuf", bArrM1388);
             }
         }
     }

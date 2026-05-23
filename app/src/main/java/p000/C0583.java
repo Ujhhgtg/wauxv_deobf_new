@@ -48,7 +48,7 @@ public final class C0583 extends Property {
             case 0:
                 C0586 c0586 = (C0586) obj;
                 PointF pointF = (PointF) obj2;
-                c0586.getClass();
+                
                 c0586.f2376 = Math.round(pointF.x);
                 int iRound = Math.round(pointF.y);
                 c0586.f2377 = iRound;
@@ -63,7 +63,7 @@ public final class C0583 extends Property {
             case 1:
                 C0586 c0587 = (C0586) obj;
                 PointF pointF2 = (PointF) obj2;
-                c0587.getClass();
+                
                 c0587.f2378 = Math.round(pointF2.x);
                 int iRound2 = Math.round(pointF2.y);
                 c0587.f2379 = iRound2;

@@ -31,11 +31,11 @@ public interface FileSystem {
                 int i = 1;
                 try {
                     Logger logger = AbstractC2273.f7371;
-                    return new C0278(new FileOutputStream(file, true), i, new C3400());
+                    return new C0278(new FileOutputStream(file, true), 1, new C3400());
                 } catch (FileNotFoundException unused) {
                     file.getParentFile().mkdirs();
                     Logger logger2 = AbstractC2273.f7371;
-                    return new C0278(new FileOutputStream(file, true), i, new C3400());
+                    return new C0278(new FileOutputStream(file, true), 1, new C3400());
                 }
             }
 

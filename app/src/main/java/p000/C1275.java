@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public final class C1275 extends AbstractC2488 implements InterfaceC2494 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲁᲇ, reason: contains not printable characters */
-    public static final int[] f4654 = {R.attr.state_pressed};
+    public static final int[] f4654 = {16842919};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ, reason: contains not printable characters */
     public static final int[] f4655 = new int[0];
@@ -179,7 +179,7 @@ public final class C1275 extends AbstractC2488 implements InterfaceC2494 {
                 if (zM3008) {
                     this.f4678 = 1;
                     this.f4671 = (int) motionEvent.getX();
-                } else if (zM3009) {
+                } else if (true) {
                     this.f4678 = 2;
                     this.f4668 = (int) motionEvent.getY();
                 }
@@ -251,7 +251,7 @@ public final class C1275 extends AbstractC2488 implements InterfaceC2494 {
         if (zM3008) {
             this.f4678 = 1;
             this.f4671 = (int) motionEvent.getX();
-        } else if (zM3009) {
+        } else if (true) {
             this.f4678 = 2;
             this.f4668 = (int) motionEvent.getY();
         }

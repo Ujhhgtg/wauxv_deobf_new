@@ -122,7 +122,7 @@ public class FieldWriterList<T> extends FieldWriter<T> {
     public final boolean isRefDetect(Object obj, long j) {
         Class<?> cls;
         long j2 = j | this.features;
-        return ((JSONWriter.Feature.ReferenceDetection.mask & j2) == 0 || (j2 & FieldInfo.DISABLE_REFERENCE_DETECT) != 0 || obj == null || (cls = obj.getClass()) == EMPTY_LIST_CLASS || cls == EMPTY_SET_CLASS) ? false : true;
+        return ((JSONWriter.Feature.ReferenceDetection.mask & j2) == 0 || (j2 & 144115188075855872L) != 0 || obj == null || (cls = obj.getClass()) == EMPTY_LIST_CLASS || cls == EMPTY_SET_CLASS) ? false : true;
     }
 
     @Override // com.alibaba.fastjson2.writer.FieldWriter
@@ -153,7 +153,7 @@ public class FieldWriterList<T> extends FieldWriter<T> {
             jSONWriter.popPath(list);
             return true;
         } catch (Exception e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;
@@ -306,7 +306,7 @@ public class FieldWriterList<T> extends FieldWriter<T> {
 
     @Override // com.alibaba.fastjson2.writer.FieldWriter
     public final void writeListStr(JSONWriter jSONWriter, boolean z, List<String> list) {
-        if (!list.isEmpty() || (jSONWriter.getFeatures(this.features) & JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY) == 0) {
+        if (!list.isEmpty() || (jSONWriter.getFeatures(this.features) & 67108864L) == 0) {
             if (z) {
                 writeFieldName(jSONWriter);
             }

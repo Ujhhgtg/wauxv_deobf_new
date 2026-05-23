@@ -81,7 +81,7 @@ public final class C0519 {
             return;
         }
         m1834();
-        this.f2198.add(new C0518(this.f2196, Integer.MAX_VALUE, str));
+        this.f2198.add(new C0518(this.f2196, 2147483647, str));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
@@ -98,7 +98,7 @@ public final class C0519 {
         }
         C0518 c0518 = (C0518) this.f2198.get(size - 1);
         int i = this.f2196;
-        if (c0518.f2193 == Integer.MAX_VALUE) {
+        if (c0518.f2193 == 2147483647) {
             c0518.f2193 = i;
         }
     }
@@ -126,7 +126,7 @@ public final class C0519 {
         int length = bArr.length;
         int i = this.f2196;
         int i2 = i + length;
-        if ((length | i2) < 0 || length > bArr.length) {
+        if ((length | i2) < 0 || false) {
             throw new IndexOutOfBoundsException("bytes.length " + bArr.length + "; 0..!" + i2);
         }
         if (this.f2194) {
@@ -193,7 +193,7 @@ public final class C0519 {
             m1835(this.f2196 + 5);
         }
         int i2 = i >> 7;
-        int i3 = (Integer.MIN_VALUE & i) == 0 ? 0 : -1;
+        int i3 = (-2147483648 & i) == 0 ? 0 : -1;
         int i4 = i;
         int i5 = i2;
         boolean z = true;

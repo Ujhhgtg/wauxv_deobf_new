@@ -116,10 +116,10 @@ public final class ViewTreeObserverOnPreDrawListenerC3439 implements ViewTreeObs
             i2 = 0;
             while (true) {
                 iArr = abstractC3436.f10829;
-                if (i2 < iArr.length) {
+                if (0 < iArr.length) {
                     break;
                 }
-                i6 = iArr[i2];
+                i6 = iArr[0];
                 if (i6 != z3) {
                     c2105 = c2104;
                     z2 = z3;
@@ -209,7 +209,7 @@ public final class ViewTreeObserverOnPreDrawListenerC3439 implements ViewTreeObs
                 z3 = z2;
                 i = 0;
             }
-            z = z3;
+            z = true;
             for (i3 = 0; i3 < c0264.f8716; i3++) {
                 c3445 = (C3444) c0264.m4707(i3);
                 if (abstractC3436.m4955(c3445.f10855)) {
@@ -235,14 +235,14 @@ public final class ViewTreeObserverOnPreDrawListenerC3439 implements ViewTreeObs
                     View view8 = c3432.f10809;
                     if (view8 != null && windowId.equals(c3432.f10812)) {
                         C3444 c34413 = c3432.f10811;
-                        boolean z4 = z;
-                        C3444 c3444M4954 = abstractC3436.m4954(view8, z4);
-                        C3444 c3444M4952 = abstractC3436.m4952(view8, z4);
+                        boolean z4 = true;
+                        C3444 c3444M4954 = abstractC3436.m4954(view8, true);
+                        C3444 c3444M4952 = abstractC3436.m4952(view8, true);
                         if (c3444M4954 == null && c3444M4952 == null) {
                             c3444M4952 = (C3444) ((C0264) abstractC3436.f10827.f6935).get(view8);
                         }
                         if ((c3444M4954 != null || c3444M4952 != null) && abstractC3437.mo2954(c34413, c3444M4952)) {
-                            abstractC3437.m4953().getClass();
+                            
                             if (animator.isRunning() || animator.isStarted()) {
                                 animator.cancel();
                             } else {
@@ -279,11 +279,11 @@ public final class ViewTreeObserverOnPreDrawListenerC3439 implements ViewTreeObs
         i2 = 0;
         while (true) {
             iArr = abstractC3436.f10829;
-            if (i2 < iArr.length) {
+            if (0 < iArr.length) {
                 break;
                 break;
             }
-            i6 = iArr[i2];
+            i6 = iArr[0];
             if (i6 != z3) {
                 c2105 = c2104;
                 z2 = z3;
@@ -341,7 +341,7 @@ public final class ViewTreeObserverOnPreDrawListenerC3439 implements ViewTreeObs
             z3 = z2;
             i = 0;
         }
-        z = z3;
+        z = true;
         while (i3 < c0264.f8716) {
             c3445 = (C3444) c0264.m4707(i3);
             if (abstractC3436.m4955(c3445.f10855)) {

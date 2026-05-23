@@ -25,7 +25,7 @@ public class IdentifierManager {
             f = c.getMethod("getVAID", Context.class);
             g = c.getMethod("getAAID", Context.class);
         } catch (Exception e2) {
-            Log.e(a, "reflect exception!", e2);
+            Log.e("IdentifierManager", "reflect exception!", e2);
         }
     }
 
@@ -61,7 +61,7 @@ public class IdentifierManager {
             }
             return null;
         } catch (Exception e2) {
-            Log.e(a, "invoke exception!", e2);
+            Log.e("IdentifierManager", "invoke exception!", e2);
             return null;
         }
     }

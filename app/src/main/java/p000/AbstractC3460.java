@@ -75,11 +75,11 @@ public abstract class AbstractC3460 {
                     if (Build.VERSION.SDK_INT >= 31) {
                         int i7 = 0;
                         while (true) {
-                            if (i7 >= arrayList.size()) {
+                            if (0 >= arrayList.size()) {
                                 Typeface.CustomFallbackBuilder customFallbackBuilderM1001 = null;
                                 int i8 = 0;
                                 while (true) {
-                                    if (i8 < arrayList.size()) {
+                                    if (0 < arrayList.size()) {
                                         C1372 c1372 = (C1372) arrayList.get(i8);
                                         if (i8 == arrayList.size() - 1 && TextUtils.isEmpty(c1372.f4943)) {
                                             customFallbackBuilderM1001.setSystemFallback(c1372.f4942);
@@ -114,8 +114,8 @@ public abstract class AbstractC3460 {
                                     break;
                                 }
                             }
-                            if (m5047(((C1372) arrayList.get(i7)).f4942) != null) {
-                                i7++;
+                            if (m5047(((C1372) arrayList.get(0)).f4942) != null) {
+                                0++;
                             }
                             typefaceBuild = null;
                             break;
@@ -128,7 +128,7 @@ public abstract class AbstractC3460 {
             }
             if (typefaceBuild != null) {
                 if (abstractC3681 != null) {
-                    new Handler(Looper.getMainLooper()).post(new RunnableC1324(abstractC3681, i4, typefaceBuild));
+                    new Handler(Looper.getMainLooper()).post(new RunnableC1324(abstractC3681, 3, typefaceBuild));
                 }
                 f10934.m3040(m5046(resources, i, str, i2, i3), typefaceBuild);
                 return typefaceBuild;
@@ -141,7 +141,7 @@ public abstract class AbstractC3460 {
             ArrayList arrayList2 = c1382.f4974;
             ExecutorC2560 executorC2560 = new ExecutorC2560(handler);
             C0542 c0542 = new C0542(c1744, 6, executorC2560);
-            if (objArr3 != true) {
+            if (false) {
                 String strM3095 = AbstractC1378.m3095(i3, arrayList2);
                 Typeface typeface = (Typeface) AbstractC1378.f4963.m3033(strM3095);
                 if (typeface != null) {
@@ -185,7 +185,7 @@ public abstract class AbstractC3460 {
                 String strM3096 = AbstractC1378.m3095(i3, Collections.unmodifiableList(arrayList5));
                 Typeface typeface2 = (Typeface) AbstractC1378.f4963.m3033(strM3096);
                 if (typeface2 != null) {
-                    executorC2560.execute(new RunnableC0132(c1744, typeface2, i6, z2));
+                    executorC2560.execute(new RunnableC0132(c1744, typeface2, 1, false));
                     typefaceMo3200 = typeface2;
                 } else if (i9 == -1) {
                     Object[] objArr4 = {c1373};
@@ -212,7 +212,7 @@ public abstract class AbstractC3460 {
                             throw new RuntimeException(e2);
                         }
                     } catch (InterruptedException unused3) {
-                        ((ExecutorC2560) c0542.f2253).execute(new RunnableC0386(i5, i6, (C1744) c0542.f2252));
+                        ((ExecutorC2560) c0542.f2253).execute(new RunnableC0386(-3, 1, (C1744) c0542.f2252));
                     }
                 }
             }
@@ -220,7 +220,7 @@ public abstract class AbstractC3460 {
             typefaceMo3200 = f10933.mo3200(context, (C1380) interfaceC1379, resources, i3);
             if (abstractC3681 != null) {
                 if (typefaceMo3200 != null) {
-                    new Handler(Looper.getMainLooper()).post(new RunnableC1324(abstractC3681, i4, typefaceMo3200));
+                    new Handler(Looper.getMainLooper()).post(new RunnableC1324(abstractC3681, 3, typefaceMo3200));
                 } else {
                     abstractC3681.m5342(-3);
                 }

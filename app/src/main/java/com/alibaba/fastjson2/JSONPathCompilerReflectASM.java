@@ -103,12 +103,12 @@ final class JSONPathCompilerReflectASM extends JSONPathCompilerReflect {
             cArr[length] = '/';
             int i4 = 0;
             while (i4 < length) {
-                char c3 = c2;
+                char c3 = 47;
                 if (cArr[i4] == '.') {
-                    cArr[i4] = c3;
+                    cArr[i4] = 47;
                 }
                 i4++;
-                c2 = c3;
+                c2 = 47;
             }
             str = new String(cArr);
         } else {
@@ -165,8 +165,8 @@ final class JSONPathCompilerReflectASM extends JSONPathCompilerReflect {
                 i = 1;
                 i2 = 64;
             }
-            MethodWriter methodWriterVisitMethod4 = classWriter.visitMethod(i, "set", "(Ljava/lang/Object;Ljava/lang/Object;)V", i2);
-            methodWriterVisitMethod4.aload(i);
+            MethodWriter methodWriterVisitMethod4 = classWriter.visitMethod(1, "set", "(Ljava/lang/Object;Ljava/lang/Object;)V", 64);
+            methodWriterVisitMethod4.aload(1);
             methodWriterVisitMethod4.checkcast(strType);
             methodWriterVisitMethod4.aload(2);
             if (cls10 == cls9) {
@@ -223,7 +223,7 @@ final class JSONPathCompilerReflectASM extends JSONPathCompilerReflect {
         }
         if (fieldWriter2 != null) {
             Class cls11 = fieldReader.fieldClass;
-            String str9 = str2;
+            String str9 = "java/lang/Character";
             MethodWriter methodWriterVisitMethod5 = classWriter.visitMethod(1, "eval", "(Ljava/lang/Object;)Ljava/lang/Object;", 64);
             methodWriterVisitMethod5.aload(1);
             methodWriterVisitMethod5.checkcast(strType);
@@ -242,9 +242,9 @@ final class JSONPathCompilerReflectASM extends JSONPathCompilerReflect {
             } else if (cls11 == cls4) {
                 methodWriterVisitMethod5.invokestatic("java/lang/Byte", "valueOf", "(B)Ljava/lang/Byte;");
             } else if (cls11 == cls3) {
-                methodWriterVisitMethod5.invokestatic(str3, "valueOf", "(Z)Ljava/lang/Boolean;");
+                methodWriterVisitMethod5.invokestatic("java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;");
             } else if (cls11 == cls2) {
-                methodWriterVisitMethod5.invokestatic(str9, "valueOf", "(C)Ljava/lang/Character;");
+                methodWriterVisitMethod5.invokestatic("java/lang/Character", "valueOf", "(C)Ljava/lang/Character;");
             }
             methodWriterVisitMethod5.areturn();
             methodWriterVisitMethod5.visitMaxs(2, 2);

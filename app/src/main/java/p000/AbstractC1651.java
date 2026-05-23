@@ -109,7 +109,7 @@ public abstract class AbstractC1651 {
                             Object obj3 = objM1193;
                             strSubstring = str;
                             i = 0;
-                            while (strSubstring.endsWith(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI)) {
+                            while (strSubstring.endsWith("[]")) {
                                 i++;
                                 strSubstring = strSubstring.substring(0, strSubstring.length() - 2);
                             }
@@ -178,7 +178,7 @@ public abstract class AbstractC1651 {
                         Object obj4 = objM1193;
                         strSubstring = str;
                         i = 0;
-                        while (strSubstring.endsWith(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI)) {
+                        while (strSubstring.endsWith("[]")) {
                             i++;
                             strSubstring = strSubstring.substring(0, strSubstring.length() - 2);
                         }
@@ -198,7 +198,7 @@ public abstract class AbstractC1651 {
                         Object obj5 = objM1193;
                         strSubstring = str;
                         i = 0;
-                        while (strSubstring.endsWith(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI)) {
+                        while (strSubstring.endsWith("[]")) {
                             i++;
                             strSubstring = strSubstring.substring(0, strSubstring.length() - 2);
                         }

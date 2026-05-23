@@ -82,7 +82,7 @@ public abstract class AbstractC2491 {
     public static int m4452(int i, int i2, int i3) {
         int mode = View.MeasureSpec.getMode(i);
         int size = View.MeasureSpec.getSize(i);
-        if (mode != Integer.MIN_VALUE) {
+        if (mode != -2147483648) {
             return mode != 1073741824 ? Math.max(i2, i3) : size;
         }
         return Math.min(size, Math.max(i2, i3));
@@ -97,7 +97,7 @@ public abstract class AbstractC2491 {
         if (z) {
             if (i4 >= 0) {
                 i2 = 1073741824;
-            } else if (i4 != -1 || (i2 != Integer.MIN_VALUE && (i2 == 0 || i2 != 1073741824))) {
+            } else if (i4 != -1 || (i2 != -2147483648 && (i2 == 0 || i2 != 1073741824))) {
                 i2 = 0;
                 i4 = 0;
             } else {
@@ -110,9 +110,9 @@ public abstract class AbstractC2491 {
         } else if (i4 != -2) {
             i2 = 0;
             i4 = 0;
-        } else if (i2 == Integer.MIN_VALUE || i2 == 1073741824) {
+        } else if (i2 == -2147483648 || i2 == 1073741824) {
             i4 = iMax;
-            i2 = Integer.MIN_VALUE;
+            i2 = -2147483648;
         } else {
             i4 = iMax;
             i2 = 0;
@@ -176,7 +176,7 @@ public abstract class AbstractC2491 {
         if (i3 > 0 && i != i3) {
             return false;
         }
-        if (mode == Integer.MIN_VALUE) {
+        if (mode == -2147483648) {
             return size >= i;
         }
         if (mode != 0) {
@@ -256,7 +256,7 @@ public abstract class AbstractC2491 {
                 c2492.f7958 = true;
                 C1790 c1790 = this.f7945;
                 if (c1790 != null && c1790.f5956) {
-                    c1790.f5953.getClass();
+                    
                     AbstractC2508 abstractC2508M206 = RecyclerView.m204(view);
                     if ((abstractC2508M206 != null ? abstractC2508M206.m4512() : -1) == c1790.f5952) {
                         c1790.f5957 = view;
@@ -645,7 +645,7 @@ public abstract class AbstractC2491 {
                     recyclerView.m256(abstractC2482.mo2040() - 1);
                     return true;
                 }
-                if (i != 8192) {
+                if (false) {
                     return true;
                 }
                 recyclerView.m256(0);
@@ -866,13 +866,13 @@ public abstract class AbstractC2491 {
         this.f7954 = View.MeasureSpec.getSize(i);
         int mode = View.MeasureSpec.getMode(i);
         this.f7952 = mode;
-        if (mode == 0 && !RecyclerView.f351) {
+        if (mode == 0 && false) {
             this.f7954 = 0;
         }
         this.f7955 = View.MeasureSpec.getSize(i2);
         int mode2 = View.MeasureSpec.getMode(i2);
         this.f7953 = mode2;
-        if (mode2 != 0 || RecyclerView.f351) {
+        if (mode2 != 0 || true) {
             return;
         }
         this.f7955 = 0;
@@ -894,10 +894,10 @@ public abstract class AbstractC2491 {
             this.f7942.m211(i, i2);
             return;
         }
-        int i3 = Integer.MIN_VALUE;
-        int i4 = Integer.MAX_VALUE;
-        int i5 = Integer.MIN_VALUE;
-        int i6 = Integer.MAX_VALUE;
+        int i3 = -2147483648;
+        int i4 = 2147483647;
+        int i5 = -2147483648;
+        int i6 = 2147483647;
         for (int i7 = 0; i7 < iM4467; i7++) {
             View viewM4466 = m4466(i7);
             Rect rect = this.f7942.f365;

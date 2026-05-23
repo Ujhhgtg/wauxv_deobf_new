@@ -53,7 +53,7 @@ public final class C1851 {
             AtomicLongFieldUpdater atomicLongFieldUpdater = f6156;
             long j = atomicLongFieldUpdater.get(this);
             if ((3458764513820540928L & j) != 0) {
-                return (FieldInfo.BACKR_REFERENCE & j) != 0 ? 2 : 1;
+                return (2305843009213693952L & j) != 0 ? 2 : 1;
             }
             int i = (int) (1073741823 & j);
             int i2 = (int) ((1152921503533105152L & j) >> 30);
@@ -67,7 +67,7 @@ public final class C1851 {
                 if (f6156.compareAndSet(this, j, ((-1152921503533105153L) & j) | (((long) ((i2 + 1) & 1073741823)) << 30))) {
                     atomicReferenceArray.set(i2 & i3, obj);
                     C1851 c1851M3617 = this;
-                    while ((atomicLongFieldUpdater.get(c1851M3617) & FieldInfo.DISABLE_JSONB) != 0) {
+                    while ((atomicLongFieldUpdater.get(c1851M3617) & 1152921504606846976L) != 0) {
                         c1851M3617 = c1851M3617.m3617();
                         AtomicReferenceArray atomicReferenceArray2 = c1851M3617.f6161;
                         int i4 = c1851M3617.f6160 & i2;
@@ -99,13 +99,13 @@ public final class C1851 {
         do {
             atomicLongFieldUpdater = f6156;
             j = atomicLongFieldUpdater.get(this);
-            if ((j & FieldInfo.BACKR_REFERENCE) != 0) {
+            if ((j & 2305843009213693952L) != 0) {
                 return true;
             }
-            if ((FieldInfo.DISABLE_JSONB & j) != 0) {
+            if ((1152921504606846976L & j) != 0) {
                 return false;
             }
-        } while (!atomicLongFieldUpdater.compareAndSet(this, j, FieldInfo.BACKR_REFERENCE | j));
+        } while (!atomicLongFieldUpdater.compareAndSet(this, j, 2305843009213693952L | j));
         return true;
     }
 
@@ -117,11 +117,11 @@ public final class C1851 {
         while (true) {
             atomicLongFieldUpdater = f6156;
             j = atomicLongFieldUpdater.get(this);
-            if ((j & FieldInfo.DISABLE_JSONB) != 0) {
+            if ((j & 1152921504606846976L) != 0) {
                 c1851 = this;
                 break;
             }
-            long j2 = FieldInfo.DISABLE_JSONB | j;
+            long j2 = 1152921504606846976L | j;
             c1851 = this;
             if (atomicLongFieldUpdater.compareAndSet(c1851, j, j2)) {
                 j = j2;
@@ -162,7 +162,7 @@ public final class C1851 {
         while (true) {
             AtomicLongFieldUpdater atomicLongFieldUpdater = f6156;
             long j = atomicLongFieldUpdater.get(c1851M3617);
-            if ((j & FieldInfo.DISABLE_JSONB) != 0) {
+            if ((j & 1152921504606846976L) != 0) {
                 return f6157;
             }
             int i = (int) (j & 1073741823);
@@ -186,7 +186,7 @@ public final class C1851 {
                         while (true) {
                             long j3 = atomicLongFieldUpdater.get(c1851M3617);
                             int i4 = (int) (j3 & 1073741823);
-                            if ((j3 & FieldInfo.DISABLE_JSONB) != 0) {
+                            if ((j3 & 1152921504606846976L) != 0) {
                                 c1851M3617 = c1851M3617.m3617();
                             } else {
                                 C1851 c1851 = c1851M3617;

@@ -148,20 +148,20 @@ public final class C0005 {
                 str2 = str3.equals("F") ? "getFloat" : "getObject";
             }
             c1983.m3847(25, i2);
-            c1983.m3845(Opcodes.INVOKEVIRTUAL, "bsh/This$ConstructorArgs", str2, "()".concat(str2.equals("getObject") ? "Ljava/lang/Object;" : str3));
+            c1983.m3845(182, "bsh/This$ConstructorArgs", str2, "()".concat(str2.equals("getObject") ? "Ljava/lang/Object;" : str3));
             if (str2.equals("getObject")) {
-                c1983.m3846(Opcodes.CHECKCAST, m318(str3));
+                c1983.m3846(192, m318(str3));
             }
         }
-        c1983.m3845(Opcodes.INVOKESPECIAL, str, "<init>", m323("V", strArr));
-        c1983.m3841(Opcodes.GOTO, c1752);
+        c1983.m3845(183, str, "<init>", m323("V", strArr));
+        c1983.m3841(167, c1752);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static void m320(String[] strArr, boolean z, C1983 c1983) {
         int i;
         c1983.m3840(17, strArr.length);
-        c1983.m3846(Opcodes.ANEWARRAY, ASMUtils.TYPE_OBJECT);
+        c1983.m3846(189, "java/lang/Object");
         int i2 = !z ? 1 : 0;
         for (int i3 = 0; i3 < strArr.length; i3++) {
             String str = strArr[i3];
@@ -175,19 +175,19 @@ public final class C0005 {
                 } else {
                     i = str.equals("J") ? 22 : 21;
                 }
-                c1983.m3846(Opcodes.NEW, "bsh/Primitive");
+                c1983.m3846(187, "bsh/Primitive");
                 c1983.m3839(89);
                 c1983.m3847(i, i2);
-                c1983.m3845(Opcodes.INVOKESPECIAL, "bsh/Primitive", "<init>", AbstractC2784.m4752(new StringBuilder("("), str, ")V"));
+                c1983.m3845(183, "bsh/Primitive", "<init>", AbstractC2784.m4752(new StringBuilder("("), str, ")V"));
                 c1983.m3839(83);
             } else {
                 c1983.m3847(25, i2);
                 C1752 c1752 = new C1752();
-                c1983.m3841(Opcodes.IFNONNULL, c1752);
-                c1983.m3836(Opcodes.GETSTATIC, "bsh/Primitive", "NULL", "Lbsh/Primitive;");
+                c1983.m3841(199, c1752);
+                c1983.m3836(178, "bsh/Primitive", "NULL", "Lbsh/Primitive;");
                 c1983.m3839(83);
                 C1752 c1753 = new C1752();
-                c1983.m3841(Opcodes.GOTO, c1753);
+                c1983.m3841(167, c1753);
                 c1983.m3842(c1752);
                 c1983.m3847(25, i2);
                 c1983.m3839(83);
@@ -201,20 +201,20 @@ public final class C0005 {
     public static void m321(String str, C1983 c1983) {
         int i;
         if (str.equals("V")) {
-            c1983.m3839(Opcodes.RETURN);
+            c1983.m3839(177);
             return;
         }
         if (str.length() != 1) {
-            c1983.m3846(Opcodes.CHECKCAST, m318(str));
-            c1983.m3839(Opcodes.ARETURN);
+            c1983.m3846(192, m318(str));
+            c1983.m3839(176);
             return;
         }
         if (str.equals("D")) {
-            i = Opcodes.DRETURN;
+            i = 175;
         } else if (str.equals("F")) {
-            i = Opcodes.FRETURN;
+            i = 174;
         } else {
-            i = str.equals("J") ? Opcodes.LRETURN : Opcodes.IRETURN;
+            i = str.equals("J") ? 173 : 172;
         }
         c1983.m3839(i);
     }
@@ -289,7 +289,7 @@ public final class C0005 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static void m325(String str, String str2, C1983 c1983) {
-        c1983.m3836(Opcodes.GETSTATIC, str, This.Keys.BSHSTATIC + str2, "Lbsh/This;");
+        c1983.m3836(178, str, This.Keys.BSHSTATIC + str2, "Lbsh/This;");
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
@@ -319,13 +319,13 @@ public final class C0005 {
         c1983M2139.m3847(25, length);
         c1983M2139.m3840(16, i);
         String str3 = "bsh/This";
-        c1983M2139.m3845(Opcodes.INVOKESTATIC, "bsh/This", "getConstructorArgs", "(Ljava/lang/Class;Lbsh/This;[Ljava/lang/Object;I)Lbsh/This$ConstructorArgs;");
+        c1983M2139.m3845(184, "bsh/This", "getConstructorArgs", "(Ljava/lang/Class;Lbsh/This;[Ljava/lang/Object;I)Lbsh/This$ConstructorArgs;");
         c1983M2139.m3847(58, length2);
         c1983M2139.m3847(25, length2);
-        c1983M2139.m3836(Opcodes.GETFIELD, "bsh/This$ConstructorArgs", "selector", "I");
+        c1983M2139.m3836(180, "bsh/This$ConstructorArgs", "selector", "I");
         C0516 c0516 = c1983M2139.f6576;
         c1983M2139.f6593 = c0516.f2191;
-        c0516.m1821(Opcodes.TABLESWITCH);
+        c0516.m1821(170);
         c0516.m1822((4 - (c0516.f2191 % 4)) % 4, null);
         boolean z = true;
         c1752.m3504(c0516, c1983M2139.f6593, true);
@@ -333,7 +333,7 @@ public final class C0005 {
         c0516.m1823(length3 - 1);
         int i4 = 0;
         while (i4 < length3) {
-            c1752Arr[i4].m3504(c0516, c1983M2139.f6593, z);
+            c1752Arr[i4].m3504(c0516, c1983M2139.f6593, true);
             i4++;
             z = true;
         }
@@ -342,14 +342,14 @@ public final class C0005 {
             int i5 = c1983M2139.f6583;
             if (i5 == 4) {
                 int i6 = 0;
-                c1754.f5867.m3124(Opcodes.LOOKUPSWITCH, 0, null, null);
+                c1754.f5867.m3124(171, 0, null, null);
                 c1983M2139.m3833(0, c1752);
                 C1752 c1752M3502 = c1752.m3502();
                 c1752M3502.f5860 = (short) (c1752M3502.f5860 | 2);
                 int i7 = 0;
                 while (i7 < length3) {
                     C1752 c1755 = c1752Arr[i7];
-                    c1983M2139.m3833(i6, c1755);
+                    c1983M2139.m3833(0, c1755);
                     C1752 c1752M3503 = c1755.m3502();
                     c1752M3503.f5860 = (short) (c1752M3503.f5860 | 2);
                     i7++;
@@ -371,9 +371,9 @@ public final class C0005 {
             m319(i11, this.f478, ((AbstractC1672) listM1719.get(i10)).m3399(), c1753, c1752Arr, length2, c1983M2139);
             i10++;
             i11++;
-            str3 = str3;
+            str3 = "bsh/This";
         }
-        String str4 = str3;
+        String str4 = "bsh/This";
         int i12 = 0;
         while (i12 < c1007Arr.length) {
             m319(i11, this.f475, c1007Arr[i12].f3670, c1753, c1752Arr, length2, c1983M2139);
@@ -382,13 +382,13 @@ public final class C0005 {
         }
         c1983M2139.m3842(c1752);
         c1983M2139.m3847(25, 0);
-        c1983M2139.m3845(Opcodes.INVOKESPECIAL, this.f478, "<init>", "()V");
+        c1983M2139.m3845(183, this.f478, "<init>", "()V");
         c1983M2139.m3842(c1753);
         c1983M2139.m3847(25, 0);
         c1983M2139.m3843(str2);
         c1983M2139.m3847(25, length);
-        c1983M2139.m3845(Opcodes.INVOKESTATIC, str4, "initInstance", "(Lbsh/GeneratedClass;Ljava/lang/String;[Ljava/lang/Object;)V");
-        c1983M2139.m3839(Opcodes.RETURN);
+        c1983M2139.m3845(184, "bsh/This", "initInstance", "(Lbsh/GeneratedClass;Ljava/lang/String;[Ljava/lang/Object;)V");
+        c1983M2139.m3839(177);
         c1983M2139.m3844();
     }
 }

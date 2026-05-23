@@ -108,8 +108,8 @@ public class ShapeableImageView extends C0222 implements InterfaceC2688 {
         this.f716 = typedArrayObtainStyledAttributes.getDimensionPixelSize(6, dimensionPixelSize);
         this.f717 = typedArrayObtainStyledAttributes.getDimensionPixelSize(4, dimensionPixelSize);
         this.f718 = typedArrayObtainStyledAttributes.getDimensionPixelSize(1, dimensionPixelSize);
-        this.f719 = typedArrayObtainStyledAttributes.getDimensionPixelSize(5, Integer.MIN_VALUE);
-        this.f720 = typedArrayObtainStyledAttributes.getDimensionPixelSize(2, Integer.MIN_VALUE);
+        this.f719 = typedArrayObtainStyledAttributes.getDimensionPixelSize(5, -2147483648);
+        this.f720 = typedArrayObtainStyledAttributes.getDimensionPixelSize(2, -2147483648);
         typedArrayObtainStyledAttributes.recycle();
         Paint paint2 = new Paint();
         this.f707 = paint2;
@@ -125,7 +125,7 @@ public class ShapeableImageView extends C0222 implements InterfaceC2688 {
 
     public final int getContentPaddingEnd() {
         int i = this.f720;
-        if (i != Integer.MIN_VALUE) {
+        if (i != -2147483648) {
             return i;
         }
         return m681() ? this.f715 : this.f717;
@@ -134,11 +134,11 @@ public class ShapeableImageView extends C0222 implements InterfaceC2688 {
     public int getContentPaddingLeft() {
         int i = this.f720;
         int i2 = this.f719;
-        if (i2 != Integer.MIN_VALUE || i != Integer.MIN_VALUE) {
-            if (m681() && i != Integer.MIN_VALUE) {
+        if (i2 != -2147483648 || i != -2147483648) {
+            if (m681() && i != -2147483648) {
                 return i;
             }
-            if (!m681() && i2 != Integer.MIN_VALUE) {
+            if (!m681() && i2 != -2147483648) {
                 return i2;
             }
         }
@@ -148,11 +148,11 @@ public class ShapeableImageView extends C0222 implements InterfaceC2688 {
     public int getContentPaddingRight() {
         int i = this.f720;
         int i2 = this.f719;
-        if (i2 != Integer.MIN_VALUE || i != Integer.MIN_VALUE) {
-            if (m681() && i2 != Integer.MIN_VALUE) {
+        if (i2 != -2147483648 || i != -2147483648) {
+            if (m681() && i2 != -2147483648) {
                 return i2;
             }
-            if (!m681() && i != Integer.MIN_VALUE) {
+            if (!m681() && i != -2147483648) {
                 return i;
             }
         }
@@ -161,7 +161,7 @@ public class ShapeableImageView extends C0222 implements InterfaceC2688 {
 
     public final int getContentPaddingStart() {
         int i = this.f719;
-        if (i != Integer.MIN_VALUE) {
+        if (i != -2147483648) {
             return i;
         }
         return m681() ? this.f717 : this.f715;
@@ -236,7 +236,7 @@ public class ShapeableImageView extends C0222 implements InterfaceC2688 {
         super.onMeasure(i, i2);
         if (!this.f721 && isLayoutDirectionResolved()) {
             this.f721 = true;
-            if (!isPaddingRelative() && this.f719 == Integer.MIN_VALUE && this.f720 == Integer.MIN_VALUE) {
+            if (!isPaddingRelative() && this.f719 == -2147483648 && this.f720 == -2147483648) {
                 setPadding(super.getPaddingLeft(), super.getPaddingTop(), super.getPaddingRight(), super.getPaddingBottom());
             } else {
                 setPaddingRelative(super.getPaddingStart(), super.getPaddingTop(), super.getPaddingEnd(), super.getPaddingBottom());

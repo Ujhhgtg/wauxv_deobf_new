@@ -8,7 +8,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᲈᛸᲁᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -99,51 +98,49 @@ public final class C2732 extends AbstractC2867 implements InterfaceC1600, Interf
         String[] strArr = AbstractC1574.f5469;
         if (mo3264() && str.equals("SnsInfo")) {
             Object obj = contentValues.get("snsId");
-            "null cannot be cast to non-null type kotlin.Long";
             Set<String> setM4728 = m4728(((Long) obj).longValue());
             if (setM4728.isEmpty()) {
                 return;
             }
             Class clsM3988 = AbstractC2201.m3988("com.tencent.mm.protocal.protobuf.SnsObject");
             Object obj2 = contentValues.get("attrBuf");
-            "null cannot be cast to non-null type kotlin.ByteArray";
             Object objM2131 = AbstractC0710.m2131(clsM3988, new Object[0]);
-            int i = AbstractC1745.f5844;
-            C1973 c1973M3492 = AbstractC0968.m2484(objM2131).m3492();
+            int i = 0;
+            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objM2131).m3492();
             c1973M3492.f6370 = "parseFrom";
-            c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.m4527(byte[].class)}, 1));
+            c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(byte[].class)}, 1));
             c1973M3492.m3732();
-            ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3831((byte[]) obj2);
-            C1744 c1744M2484 = AbstractC0968.m2484(objM2131);
+            ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831((byte[]) obj2);
+            C1744 c1744M2484 = AbstractC0968.startFieldResolution(objM2131);
             LinkedList linkedList = new LinkedList();
             for (String str2 : setM4728) {
-                C2774.f8875.getClass();
-                Object objM2132 = AbstractC0710.m2131(AbstractC1574.m3313(C2773.f8874), new Object[0]);
-                int i2 = AbstractC1745.f5844;
-                C1299 c1299M3490 = AbstractC0968.m2484(objM2132).m3490();
+                
+                Object objM2132 = AbstractC0710.m2131(AbstractC1574.dexToClass(C2773.f8874), new Object[0]);
+                int i2 = 0;
+                C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM2132).m3490();
                 c1299M3490.f6370 = "d";
-                ((C1315) AbstractC0744.m2191(c1299M3490.m3014())).m3025(str2);
+                ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).set(str2);
                 linkedList.push(objM2132);
             }
             int size = linkedList.size();
             int i3 = !linkedList.isEmpty() ? 1 : 0;
             C1299 c1299M3491 = c1744M2484.m3490();
             c1299M3491.f6370 = "LikeUserList";
-            ((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3025(linkedList);
+            ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).set(linkedList);
             C1299 c1299M3492 = c1744M2484.m3490();
             c1299M3492.f6370 = "LikeUserListCount";
-            ((C1315) AbstractC0744.m2191(c1299M3492.m3014())).m3025(Integer.valueOf(size));
+            ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).set(Integer.valueOf(size));
             C1299 c1299M3493 = c1744M2484.m3490();
             c1299M3493.f6370 = "LikeCount";
-            ((C1315) AbstractC0744.m2191(c1299M3493.m3014())).m3025(Integer.valueOf(size));
+            ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).set(Integer.valueOf(size));
             C1299 c1299M3494 = c1744M2484.m3490();
             c1299M3494.f6370 = "LikeFlag";
-            ((C1315) AbstractC0744.m2191(c1299M3494.m3014())).m3025(Integer.valueOf(i3));
-            int i4 = AbstractC1745.f5844;
-            C1973 c1973M3493 = AbstractC0968.m2484(objM2131).m3492();
-            c1973M3493.f6543 = AbstractC2519.m4527(byte[].class);
+            ((C1315) AbstractC0744.firstInList(c1299M3494.resolve())).set(Integer.valueOf(i3));
+            int i4 = 0;
+            MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(objM2131).m3492();
+            c1973M3493.returnType = AbstractC2519.classToKClass(byte[].class);
             c1973M3493.f6370 = "toByteArray";
-            contentValues.put("attrBuf", (byte[]) ((C1982) AbstractC2784.m4742(c1973M3493)).m3832(new Object[0]));
+            contentValues.put("attrBuf", (byte[]) ((C1982) AbstractC2784.m4742(c1973M3493)).invoke(new Object[0]));
         }
     }
 

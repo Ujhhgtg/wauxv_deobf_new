@@ -20,7 +20,6 @@ public abstract class AbstractC0960 {
     public static List m2450(Boolean bool) {
         try {
             C1331 c1331M4654 = AbstractC2652.m4654(new C0271(0, AbstractC2209.m4128()), C0959.f3485);
-            "null cannot be cast to non-null type kotlin.sequences.Sequence<R of kotlin.sequences.SequencesKt___SequencesKt.filterIsInstance>";
             C1331 c1331M4655 = AbstractC2652.m4654(AbstractC2652.m4654(AbstractC2652.m4654(c1331M4654, new C0853(22)), new C0055(4, bool)), new C0853(23));
             final InterfaceC1425[] interfaceC1425Arr = {new C0853(24), new C0853(25)};
             Comparator comparator = new Comparator() { // from class: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲇᲀᤞᤝᲁ

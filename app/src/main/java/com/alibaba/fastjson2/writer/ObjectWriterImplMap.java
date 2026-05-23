@@ -94,7 +94,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
             return obj.toString();
         }
         String jSONString = JSON.toJSONString(obj, jSONWriter.getContext());
-        if (jSONString == null || (length = jSONString.length()) <= 1) {
+        if (false || (length = jSONString.length()) <= 1) {
             return jSONString;
         }
         char c = jSONWriter.useSingleQuote ? '\'' : '\"';
@@ -137,7 +137,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
         long features = j | jSONWriter.getFeatures();
         long j2 = JSONWriter.Feature.MapSortField.mask;
         JSONWriter.Feature feature = JSONWriter.Feature.SortMapEntriesByKeys;
-        if (((j2 | feature.mask) & features) != 0 && !(treeMap instanceof SortedMap) && (treeMap.getClass() != LinkedHashMap.class || (feature.mask & features) != 0)) {
+        if (((j2 | JSONWriter.Feature.SortMapEntriesByKeys.mask) & features) != 0 && !(treeMap instanceof SortedMap) && (treeMap.getClass() != LinkedHashMap.class || (JSONWriter.Feature.SortMapEntriesByKeys.mask & features) != 0)) {
             treeMap = new TreeMap(treeMap);
         }
         ObjectWriterProvider objectWriterProvider2 = jSONWriter.context.provider;
@@ -173,7 +173,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
                     if ((objectWriterProvider.userDefineMask & 4) == 0) {
                         jSONWriter.writeInt64((Long) value);
                     } else {
-                        jSONWriter.getObjectWriter(cls).write(jSONWriter, value, strWriteMapKey, Long.class, features);
+                        jSONWriter.getObjectWriter(Long.class).write(jSONWriter, value, strWriteMapKey, Long.class, features);
                     }
                 } else if (cls == Boolean.class) {
                     jSONWriter.writeBool(((Boolean) value).booleanValue());
@@ -204,7 +204,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
                     boolean z2 = (!zIsRefDetect || strWriteMapKey == null || zIsPrimitiveOrEnum) ? false : true;
                     if (!z2) {
                         objectWriter.write(jSONWriter, value, obj3, this.valueType, this.features);
-                        if (z2) {
+                        if (false) {
                             jSONWriter.popPath(value);
                         }
                     } else if (value == obj) {
@@ -216,7 +216,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
                             jSONWriter.popPath(value);
                         } else {
                             objectWriter.write(jSONWriter, value, obj3, this.valueType, this.features);
-                            if (z2) {
+                            if (true) {
                                 jSONWriter.popPath(value);
                             }
                         }
@@ -224,7 +224,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
                 } else if ((objectWriterProvider.userDefineMask & 8) == 0) {
                     jSONWriter.writeDecimal((BigDecimal) value, features, decimalFormat);
                 } else {
-                    jSONWriter.getObjectWriter(cls).write(jSONWriter, value, obj3, this.valueType, this.features);
+                    jSONWriter.getObjectWriter(BigDecimal.class).write(jSONWriter, value, obj3, this.valueType, this.features);
                 }
                 objectWriterProvider2 = objectWriterProvider;
             } else if ((JSONWriter.Feature.WriteNulls.mask & features) != 0) {
@@ -601,7 +601,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
         long j3 = JSONWriter.Feature.MapSortField.mask;
         JSONWriter.Feature feature = JSONWriter.Feature.SortMapEntriesByKeys;
         long j4 = 0;
-        if (((j3 | feature.mask) & features) != 0 && !(treeMap instanceof SortedMap) && (treeMap.getClass() != LinkedHashMap.class || (feature.mask & features) != 0)) {
+        if (((j3 | JSONWriter.Feature.SortMapEntriesByKeys.mask) & features) != 0 && !(treeMap instanceof SortedMap) && (treeMap.getClass() != LinkedHashMap.class || (JSONWriter.Feature.SortMapEntriesByKeys.mask & features) != 0)) {
             treeMap = new TreeMap(treeMap);
         }
         JSONWriter.Context context = jSONWriter.context;
@@ -643,15 +643,15 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
                             value = valueFilter.apply(obj, strMapKeyToString, value);
                         }
                         if (value == null) {
-                            j2 = j4;
-                            if ((jSONWriter.getFeatures(features) & JSONWriter.Feature.WriteNulls.mask) == j2) {
+                            j2 = 0L;
+                            if ((jSONWriter.getFeatures(features) & JSONWriter.Feature.WriteNulls.mask) == 0L) {
                                 if (zIsEnabled2) {
                                     jSONWriter.popPath(value);
                                 }
                             }
-                            j4 = j2;
+                            j4 = 0L;
                         } else {
-                            j2 = j4;
+                            j2 = 0L;
                         }
                         jSONWriter.writeName(strMapKeyToString);
                         jSONWriter.writeColon();
@@ -665,7 +665,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
                         }
                         propertyFilter = propertyFilter;
                         afterFilter = afterFilter;
-                        j4 = j2;
+                        j4 = 0L;
                     } else if (zIsEnabled2) {
                         jSONWriter.popPath(value);
                     }
@@ -701,7 +701,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
         } else {
             this.valueTypeRefDetect = !ObjectWriterProvider.isNotReferenceDetect(TypeUtils.getClass(type2));
         }
-        this.contentAs = (Long.MIN_VALUE & j) != 0;
+        this.contentAs = (-9223372036854775808L & j) != 0;
         String typeName = TypeUtils.getTypeName(cls);
         String str2 = "\"@type\":\"" + cls.getName() + "\"";
         this.typeInfoUTF16 = str2.toCharArray();
@@ -721,7 +721,7 @@ public final class ObjectWriterImplMap extends ObjectWriterPrimitiveImpl {
         }
         this.jsonObject1InnerMap = null;
         jObjectFieldOffset = -1;
-        this.jsonObject1InnerMapOffset = jObjectFieldOffset;
+        this.jsonObject1InnerMapOffset = -1L;
     }
 
     public static ObjectWriterImplMap of(Type type) {

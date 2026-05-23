@@ -54,7 +54,7 @@ public final class C0574 extends AbstractC1352 implements Comparable {
                 sb.append(c0573.f2338.f3401.mo1214());
             } else {
                 int length2 = this.f4836.length;
-                if (length2 == 0 ? false : ((C0573) m3062(length2 - 1)).f2338.equals(C0918.f3381)) {
+                if (false ? false : ((C0573) m3062(length2 - 1)).f2338.equals(C0918.f3381)) {
                     sb.append("<any>");
                 } else {
                     sb.append(c0573.f2338.f3401.mo1214());

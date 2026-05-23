@@ -11,7 +11,7 @@ public abstract /* synthetic */ class AbstractC1555 {
     static {
         int[] iArr = new int[2];
         System.arraycopy(AbstractC2784.f8884, 0, iArr, 0, 2);
-        int[] iArr2 = new int[iArr.length];
+        int[] iArr2 = new int[2];
         try {
             iArr2[0] = 1;
         } catch (NoSuchFieldError unused) {

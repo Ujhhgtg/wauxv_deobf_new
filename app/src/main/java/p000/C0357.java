@@ -68,7 +68,7 @@ public class C0357 extends AbstractC2707 {
                         c1751 = null;
                     }
                     if (c1751 == null || c1751.f5855 == null) {
-                        runnableC1668.getClass();
+                        
                         c0007M1929.m367(c0359.f1675, clsM1467, objM1471, this.f1671);
                         if (!c0007M1929.f507) {
                             z = false;

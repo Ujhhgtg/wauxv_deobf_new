@@ -45,7 +45,7 @@ public final class C0835 implements InterfaceC0834, InterfaceC0836 {
     public String toString() {
         String strValueOf;
         String str;
-        switch (this.f3230) {
+        switch (0) {
             case 1:
                 Uri uri = this.f3234;
                 StringBuilder sb = new StringBuilder("ContentInfoCompat{clip=");
@@ -119,7 +119,7 @@ public final class C0835 implements InterfaceC0834, InterfaceC0836 {
 
     public C0835(C0835 c0835) {
         ClipData clipData = c0835.f3231;
-        clipData.getClass();
+        
         this.f3231 = clipData;
         int i = c0835.f3232;
         if (i < 0) {

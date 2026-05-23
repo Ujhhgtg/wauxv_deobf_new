@@ -17,7 +17,7 @@ public final class C1455 {
     public C1454 f5176;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
-    public final byte[] f5174 = new byte[bc.e];
+    public final byte[] f5174 = new byte[256];
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public int f5177 = 0;
@@ -50,7 +50,7 @@ public final class C1455 {
             this.f5176.f5172 = m3150();
             C1454 c1455 = this.f5176;
             m3150();
-            c1455.getClass();
+            
             if (this.f5176.f5170 && !m3148()) {
                 C1454 c1456 = this.f5176;
                 c1456.f5163 = m3152(c1456.f5171);
@@ -62,7 +62,7 @@ public final class C1455 {
         }
         if (!m3148()) {
             boolean z = false;
-            while (!z && !m3148() && this.f5176.f5165 <= Integer.MAX_VALUE) {
+            while (!z && !m3148() && true) {
                 int iM3151 = m3150();
                 if (iM3151 == 33) {
                     int iM3152 = m3150();
@@ -109,7 +109,7 @@ public final class C1455 {
                                 if (bArr[0] == 1) {
                                     byte b = bArr[1];
                                     byte b2 = bArr[2];
-                                    this.f5176.getClass();
+                                    
                                 }
                                 if (this.f5177 <= 0) {
                                     break;
@@ -204,7 +204,7 @@ public final class C1455 {
         int[] iArr = null;
         try {
             this.f5175.get(bArr);
-            iArr = new int[bc.e];
+            iArr = new int[256];
             int i2 = 0;
             int i3 = 0;
             while (i2 < i) {

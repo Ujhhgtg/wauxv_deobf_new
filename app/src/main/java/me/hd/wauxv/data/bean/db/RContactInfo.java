@@ -81,14 +81,14 @@ public final class RContactInfo {
         String str22 = (i7 & 32) != 0 ? rContactInfo.pyInitial : str6;
         String str23 = (i7 & 64) != 0 ? rContactInfo.quanPin : str7;
         int i8 = (i7 & 128) != 0 ? rContactInfo.showHead : i;
-        int i9 = (i7 & bc.e) != 0 ? rContactInfo.type : i2;
+        int i9 = (i7 & 256) != 0 ? rContactInfo.type : i2;
         long j5 = (i7 & 512) != 0 ? rContactInfo.uiType : j;
         int i10 = (i7 & 1024) != 0 ? rContactInfo.weiboFlag : i3;
         String str24 = (i7 & 2048) != 0 ? rContactInfo.weiboNickname : str8;
         String str25 = (i7 & 4096) != 0 ? rContactInfo.conRemarkPYFull : str9;
         String str26 = str17;
         String str27 = (i7 & 8192) != 0 ? rContactInfo.conRemarkPYShort : str10;
-        byte[] bArr4 = (i7 & Http2.INITIAL_MAX_FRAME_SIZE) != 0 ? rContactInfo.lvbuff : bArr;
+        byte[] bArr4 = (i7 & 16384) != 0 ? rContactInfo.lvbuff : bArr;
         int i11 = (i7 & 32768) != 0 ? rContactInfo.verifyFlag : i4;
         String str28 = (i7 & 65536) != 0 ? rContactInfo.encryptUsername : str11;
         int i12 = (i7 & 131072) != 0 ? rContactInfo.chatroomFlag : i5;
@@ -99,7 +99,7 @@ public final class RContactInfo {
         String str32 = (i7 & 4194304) != 0 ? rContactInfo.sourceExtInfo : str15;
         String str33 = (i7 & 8388608) != 0 ? rContactInfo.ticket : str16;
         byte[] bArr5 = bArr4;
-        long j6 = (i7 & Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE) != 0 ? rContactInfo.usernameFlag : j2;
+        long j6 = (i7 & 16777216) != 0 ? rContactInfo.usernameFlag : j2;
         byte[] bArr6 = (i7 & 33554432) != 0 ? rContactInfo.contactExtra : bArr2;
         if ((i7 & 67108864) != 0) {
             bArr3 = bArr6;
@@ -230,7 +230,6 @@ public final class RContactInfo {
         if (!RContactInfo.class.equals(obj != null ? obj.getClass() : null)) {
             return false;
         }
-        "null cannot be cast to non-null type me.hd.wauxv.data.bean.db.RContactInfo";
         RContactInfo rContactInfo = (RContactInfo) obj;
         return this.showHead == rContactInfo.showHead && this.type == rContactInfo.type && this.uiType == rContactInfo.uiType && this.weiboFlag == rContactInfo.weiboFlag && this.verifyFlag == rContactInfo.verifyFlag && this.chatroomFlag == rContactInfo.chatroomFlag && this.deleteFlag == rContactInfo.deleteFlag && this.usernameFlag == rContactInfo.usernameFlag && this.createTime == rContactInfo.createTime && AbstractC2207.m4087(this.username, rContactInfo.username) && AbstractC2207.m4087(this.alias, rContactInfo.alias) && AbstractC2207.m4087(this.conRemark, rContactInfo.conRemark) && AbstractC2207.m4087(this.domainList, rContactInfo.domainList) && AbstractC2207.m4087(this.nickname, rContactInfo.nickname) && AbstractC2207.m4087(this.pyInitial, rContactInfo.pyInitial) && AbstractC2207.m4087(this.quanPin, rContactInfo.quanPin) && AbstractC2207.m4087(this.weiboNickname, rContactInfo.weiboNickname) && AbstractC2207.m4087(this.conRemarkPYFull, rContactInfo.conRemarkPYFull) && AbstractC2207.m4087(this.conRemarkPYShort, rContactInfo.conRemarkPYShort) && Arrays.equals(this.lvbuff, rContactInfo.lvbuff) && AbstractC2207.m4087(this.encryptUsername, rContactInfo.encryptUsername) && AbstractC2207.m4087(this.contactLabelIds, rContactInfo.contactLabelIds) && AbstractC2207.m4087(this.descWordingId, rContactInfo.descWordingId) && AbstractC2207.m4087(this.openImAppid, rContactInfo.openImAppid) && AbstractC2207.m4087(this.sourceExtInfo, rContactInfo.sourceExtInfo) && AbstractC2207.m4087(this.ticket, rContactInfo.ticket) && Arrays.equals(this.contactExtra, rContactInfo.contactExtra);
     }

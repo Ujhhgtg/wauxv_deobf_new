@@ -53,7 +53,7 @@ public final /* synthetic */ class C3258 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C3260.f10349;
-        interfaceC0766Mo2512.getClass();
+        
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -148,7 +148,7 @@ public final /* synthetic */ class C3258 implements InterfaceC1443 {
                 case 8:
                     str7 = str7;
                     str = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2839.f9108, str);
-                    i2 |= bc.e;
+                    i2 |= 256;
                     str6 = str11;
                     str7 = str7;
                     break;
@@ -173,7 +173,7 @@ public final /* synthetic */ class C3258 implements InterfaceC1443 {
                     str6 = str11;
                     str7 = str7;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     str7 = str7;
                     str3 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C2839.f9108, str3);
                     i2 |= 4096;
@@ -187,24 +187,24 @@ public final /* synthetic */ class C3258 implements InterfaceC1443 {
                     str6 = str11;
                     str7 = str7;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     str7 = str7;
                     l = (Long) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C1862.f6185, l);
-                    i2 |= Http2.INITIAL_MAX_FRAME_SIZE;
+                    i2 |= 16384;
                     str6 = str11;
                     str7 = str7;
                     break;
                 case 15:
                     list = (List) interfaceC0766Mo2512.mo2239(interfaceC2654, 15, (InterfaceC1743) interfaceC1758Arr[15].getValue(), list);
                     i = 32768;
-                    i2 |= i;
+                    i2 |= 32768;
                     str6 = str11;
                     str7 = str7;
                     break;
                 case 16:
                     num2 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 16, C1665.f5622, num2);
                     i = 65536;
-                    i2 |= i;
+                    i2 |= 65536;
                     str6 = str11;
                     str7 = str7;
                     break;

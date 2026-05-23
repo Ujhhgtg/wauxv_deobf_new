@@ -21,7 +21,7 @@ public final class C1566 implements Iterator {
     @Override // java.util.Iterator
     public final boolean hasNext() throws IOException {
         int i = this.f5452;
-        C1565.f5440.getClass();
+        
         String str = C1565.m3276().getApplicationInfo().sourceDir;
         String strM3283 = AbstractC1567.m3283(i);
         try {
@@ -54,7 +54,7 @@ public final class C1566 implements Iterator {
         if (i > 0) {
             WeakReference weakReference = (WeakReference) map.get(Integer.valueOf(i));
             if (weakReference == null || (bArr = (byte[]) weakReference.get()) == null) {
-                C1565.f5440.getClass();
+                
                 String str = C1565.m3276().getApplicationInfo().sourceDir;
                 String strM3283 = AbstractC1567.m3283(i);
                 try {

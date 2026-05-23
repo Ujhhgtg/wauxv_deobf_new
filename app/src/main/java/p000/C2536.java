@@ -2,7 +2,6 @@ package p000;
 
 import java.util.ArrayList;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲇᲁᲈᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -26,7 +25,7 @@ public final /* synthetic */ class C2536 implements InterfaceC1425 {
             case 0:
                 C0180 c0180 = (C0180) obj;
                 C2536 c2536 = new C2536(this.f8087, 1);
-                c0180.getClass();
+                
                 C0173 c0173 = new C0173(4);
                 c2536.invoke(c0173);
                 List arrayList = c0180.f1230;
@@ -40,9 +39,9 @@ public final /* synthetic */ class C2536 implements InterfaceC1425 {
                 C0173 c0174 = (C0173) obj;
                 String[] strArr = AbstractC1574.f5469;
                 String str = "dalvik.annotation.Signature";
-                c0174.getClass();
+                
                 C0705 c0705 = new C0705(4);
-                c0705.f2683 = new C2837(str, 5, false);
+                c0705.f2683 = new C2837("dalvik.annotation.Signature", 5, false);
                 c0174.f1207 = c0705;
                 C0166 c0166 = new C0166(4);
                 c0166.f1193 = new C2837("value", 5, false);
@@ -92,6 +91,6 @@ public final /* synthetic */ class C2536 implements InterfaceC1425 {
                 ((C3515) obj).m1521(this.f8087);
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

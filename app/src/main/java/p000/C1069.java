@@ -82,27 +82,27 @@ public final class C1069 implements Closeable {
                 throw new IllegalStateException();
             }
             if (z && !c1068.f3863) {
-                for (int i = 0; i < c1069.f3872; i++) {
-                    if (!((boolean[]) c1067.f3857)[i]) {
+                for (int i = 0; i < 1; i++) {
+                    if (!((boolean[]) c1067.f3857)[0]) {
                         c1067.m2617();
-                        throw new IllegalStateException("Newly created entry didn't create value for index " + i);
+                        throw new IllegalStateException("Newly created entry didn't create value for index 0");
                     }
-                    if (!c1068.f3862[i].exists()) {
+                    if (!c1068.f3862[0].exists()) {
                         c1067.m2617();
                         return;
                     }
                 }
             }
-            for (int i2 = 0; i2 < c1069.f3872; i2++) {
-                File file = c1068.f3862[i2];
+            for (int i2 = 0; i2 < 1; i2++) {
+                File file = c1068.f3862[0];
                 if (!z) {
                     m2622(file);
                 } else if (file.exists()) {
-                    File file2 = c1068.f3861[i2];
+                    File file2 = c1068.f3861[0];
                     file.renameTo(file2);
-                    long j = c1068.f3860[i2];
+                    long j = c1068.f3860[0];
                     long length = file2.length();
-                    c1068.f3860[i2] = length;
+                    c1068.f3860[0] = length;
                     c1069.f3873 = (c1069.f3873 - j) + length;
                 }
             }
@@ -293,19 +293,19 @@ public final class C1069 implements Closeable {
         while (it.hasNext()) {
             C1068 c1068 = (C1068) it.next();
             C1067 c1067 = c1068.f3864;
-            int i = this.f3872;
+            int i = 1;
             int i2 = 0;
             if (c1067 == null) {
-                while (i2 < i) {
+                while (i2 < 1) {
                     this.f3873 += c1068.f3860[i2];
-                    i2++;
+                    0++;
                 }
             } else {
                 c1068.f3864 = null;
-                while (i2 < i) {
+                while (i2 < 1) {
                     m2622(c1068.f3861[i2]);
-                    m2622(c1068.f3862[i2]);
-                    i2++;
+                    m2622(c1068.f3862[0]);
+                    0++;
                 }
                 it.remove();
             }
@@ -322,7 +322,7 @@ public final class C1069 implements Closeable {
             String strM4818 = c2832.m4816();
             String strM4819 = c2832.m4816();
             String strM48110 = c2832.m4816();
-            if (!"libcore.io.DiskLruCache".equals(strM4816) || !SdkVersion.MINI_VERSION.equals(strM4817) || !Integer.toString(this.f3870).equals(strM4818) || !Integer.toString(this.f3872).equals(strM4819) || !"".equals(strM48110)) {
+            if (!"libcore.io.DiskLruCache".equals(strM4816) || !"1".equals(strM4817) || !Integer.toString(1).equals(strM4818) || !Integer.toString(1).equals(strM4819) || !"".equals(strM48110)) {
                 throw new IOException("unexpected journal header: [" + strM4816 + ", " + strM4817 + ", " + strM4819 + ", " + strM48110 + "]");
             }
             int i = 0;
@@ -396,12 +396,12 @@ public final class C1069 implements Closeable {
         String[] strArrSplit = str.substring(iIndexOf2 + 1).split(" ");
         c1068.f3863 = true;
         c1068.f3864 = null;
-        if (strArrSplit.length != c1068.f3865.f3872) {
+        if (strArrSplit.length != 1) {
             throw new IOException("unexpected journal line: " + Arrays.toString(strArrSplit));
         }
-        for (int i2 = 0; i2 < strArrSplit.length; i2++) {
+        for (int i2 = 0; i2 < 1; i2++) {
             try {
-                c1068.f3860[i2] = Long.parseLong(strArrSplit[i2]);
+                c1068.f3860[0] = Long.parseLong(strArrSplit[0]);
             } catch (NumberFormatException unused) {
                 throw new IOException("unexpected journal line: " + Arrays.toString(strArrSplit));
             }
@@ -419,11 +419,11 @@ public final class C1069 implements Closeable {
             try {
                 bufferedWriter2.write("libcore.io.DiskLruCache");
                 bufferedWriter2.write("\n");
-                bufferedWriter2.write(SdkVersion.MINI_VERSION);
+                bufferedWriter2.write("1");
                 bufferedWriter2.write("\n");
-                bufferedWriter2.write(Integer.toString(this.f3870));
+                bufferedWriter2.write(Integer.toString(1));
                 bufferedWriter2.write("\n");
-                bufferedWriter2.write(Integer.toString(this.f3872));
+                bufferedWriter2.write(Integer.toString(1));
                 bufferedWriter2.write("\n");
                 bufferedWriter2.write("\n");
                 for (C1068 c1068 : this.f3875.values()) {
@@ -460,15 +460,15 @@ public final class C1069 implements Closeable {
                     }
                     C1068 c1068 = (C1068) this.f3875.get(str);
                     if (c1068 != null && c1068.f3864 == null) {
-                        for (int i = 0; i < this.f3872; i++) {
-                            File file = c1068.f3861[i];
+                        for (int i = 0; i < 1; i++) {
+                            File file = c1068.f3861[0];
                             if (file.exists() && !file.delete()) {
                                 throw new IOException("failed to delete " + file);
                             }
                             long j = this.f3873;
                             long[] jArr = c1068.f3860;
-                            this.f3873 = j - jArr[i];
-                            jArr[i] = 0;
+                            this.f3873 = j - jArr[0];
+                            jArr[0] = 0;
                         }
                         this.f3876++;
                         this.f3874.append((CharSequence) "REMOVE");

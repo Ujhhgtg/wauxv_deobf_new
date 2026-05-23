@@ -85,8 +85,8 @@ class JSONPathSegmentName extends JSONPathSegment {
             JSONArray jSONArray = new JSONArray();
             int iStartArray = jSONReader.startArray();
             for (int i = 0; i < iStartArray; i++) {
-                if (jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT)) {
-                    while (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT_END)) {
+                if (jSONReader.nextIfMatch(-90)) {
+                    while (!jSONReader.nextIfMatch(-91)) {
                         if (jSONReader.readFieldNameHashCode() != this.nameHashCode) {
                             jSONReader.skipValue();
                         } else if ((jSONReader.isArray() || jSONReader.isObject()) && context.next != null) {
@@ -140,14 +140,14 @@ class JSONPathSegmentName extends JSONPathSegment {
                         switch (c3) {
                             case '0':
                             case '1':
-                            case Opcodes.AALOAD /* 50 */:
-                            case Opcodes.BALOAD /* 51 */:
+                            case 50 /* 50 */:
+                            case 51 /* 51 */:
                             case '4':
-                            case Opcodes.SALOAD /* 53 */:
-                            case Opcodes.ISTORE /* 54 */:
-                            case Opcodes.LSTORE /* 55 */:
-                            case Opcodes.FSTORE /* 56 */:
-                            case Opcodes.DSTORE /* 57 */:
+                            case 53 /* 53 */:
+                            case 54 /* 54 */:
+                            case 55 /* 55 */:
+                            case 56 /* 56 */:
+                            case 57 /* 57 */:
                                 jSONReader.readNumber0();
                                 string2 = jSONReader.getNumber();
                                 break;
@@ -207,14 +207,14 @@ class JSONPathSegmentName extends JSONPathSegment {
                                                             switch (c5) {
                                                                 case '0':
                                                                 case '1':
-                                                                case Opcodes.AALOAD /* 50 */:
-                                                                case Opcodes.BALOAD /* 51 */:
+                                                                case 50 /* 50 */:
+                                                                case 51 /* 51 */:
                                                                 case '4':
-                                                                case Opcodes.SALOAD /* 53 */:
-                                                                case Opcodes.ISTORE /* 54 */:
-                                                                case Opcodes.LSTORE /* 55 */:
-                                                                case Opcodes.FSTORE /* 56 */:
-                                                                case Opcodes.DSTORE /* 57 */:
+                                                                case 53 /* 53 */:
+                                                                case 54 /* 54 */:
+                                                                case 55 /* 55 */:
+                                                                case 56 /* 56 */:
+                                                                case 57 /* 57 */:
                                                                     break;
                                                                 default:
                                                                     throw new JSONException("TODO : " + jSONReader.ch);

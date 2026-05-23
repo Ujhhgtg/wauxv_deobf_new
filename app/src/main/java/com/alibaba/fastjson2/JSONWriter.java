@@ -368,15 +368,15 @@ public abstract class JSONWriter implements Closeable {
                     case "millis":
                         z = false;
                         z2 = false;
-                        zContains = z2;
-                        z3 = zContains;
+                        zContains = false;
+                        z3 = false;
                         break;
                     case "unixtime":
                         z = true;
                         z4 = false;
                         z2 = false;
-                        zContains = z2;
-                        z3 = zContains;
+                        zContains = false;
+                        z3 = false;
                         break;
                     case "yyyy-MM-dd HH:mm:ss":
                         z2 = true;
@@ -545,42 +545,42 @@ public abstract class JSONWriter implements Closeable {
         WriteNonStringValueAsString(256),
         WriteClassName(512),
         NotWriteRootClassName(1024),
-        NotWriteHashMapArrayListClassName(JSONWriter.MASK_NOT_WRITE_HASHMAP_ARRAY_LIST_CLASS_NAME),
-        NotWriteDefaultValue(JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE),
-        WriteEnumsUsingName(JSONWriter.MASK_WRITE_ENUMS_USING_NAME),
+        NotWriteHashMapArrayListClassName(2048L),
+        NotWriteDefaultValue(4096L),
+        WriteEnumsUsingName(8192L),
         WriteEnumUsingToString(16384),
-        IgnoreErrorGetter(JSONWriter.MASK_IGNORE_ERROR_GETTER),
-        PrettyFormat(JSONWriter.MASK_PRETTY_FORMAT),
-        ReferenceDetection(JSONWriter.MASK_REFERENCE_DETECTION),
+        IgnoreErrorGetter(32768L),
+        PrettyFormat(65536L),
+        ReferenceDetection(131072L),
         WriteNameAsSymbol(262144),
-        WriteBigDecimalAsPlain(JSONWriter.MASK_WRITE_BIG_DECIMAL_AS_PLAIN),
-        UseSingleQuotes(JSONWriter.MASK_USE_SINGLE_QUOTES),
+        WriteBigDecimalAsPlain(524288L),
+        UseSingleQuotes(1048576L),
         MapSortField(2097152),
-        WriteNullListAsEmpty(JSONWriter.MASK_WRITE_NULL_LIST_AS_EMPTY),
-        WriteNullStringAsEmpty(JSONWriter.MASK_WRITE_NULL_STRING_AS_EMPTY),
-        WriteNullNumberAsZero(JSONWriter.MASK_WRITE_NULL_NUMBER_AS_ZERO),
-        WriteNullBooleanAsFalse(JSONWriter.MASK_WRITE_NULL_BOOLEAN_AS_FALSE),
-        NotWriteEmptyArray(JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY),
-        IgnoreEmpty(JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY),
-        WriteNonStringKeyAsString(JSONWriter.MASK_WRITE_NON_STRING_KEY_AS_STRING),
-        WritePairAsJavaBean(JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN),
+        WriteNullListAsEmpty(4194304L),
+        WriteNullStringAsEmpty(8388608L),
+        WriteNullNumberAsZero(16777216L),
+        WriteNullBooleanAsFalse(33554432L),
+        NotWriteEmptyArray(67108864L),
+        IgnoreEmpty(67108864L),
+        WriteNonStringKeyAsString(134217728L),
+        WritePairAsJavaBean(268435456L),
         OptimizedForAscii(536870912),
-        EscapeNoneAscii(JSONWriter.MASK_ESCAPE_NONE_ASCII),
+        EscapeNoneAscii(1073741824L),
         WriteByteArrayAsBase64(2147483648L),
-        IgnoreNonFieldGetter(JSONWriter.MASK_IGNORE_NON_FIELD_GETTER),
+        IgnoreNonFieldGetter(4294967296L),
         LargeObject(8589934592L),
-        WriteLongAsString(JSONWriter.MASK_WRITE_LONG_AS_STRING),
-        BrowserSecure(JSONWriter.MASK_BROWSER_SECURE),
-        WriteEnumUsingOrdinal(JSONWriter.MASK_WRITE_ENUM_USING_ORDINAL),
+        WriteLongAsString(17179869184L),
+        BrowserSecure(34359738368L),
+        WriteEnumUsingOrdinal(68719476736L),
         WriteThrowableClassName(137438953472L),
-        UnquoteFieldName(JSONWriter.MASK_UNQUOTE_FIELD_NAME),
+        UnquoteFieldName(274877906944L),
         NotWriteSetClassName(549755813888L),
-        NotWriteNumberClassName(JSONWriter.MASK_NOT_WRITE_NUMBER_CLASS_NAME),
+        NotWriteNumberClassName(1099511627776L),
         SortMapEntriesByKeys(2199023255552L),
         PrettyFormatWith2Space(4398046511104L),
         PrettyFormatWith4Space(8796093022208L),
         WriterUtilDateAsMillis(17592186044416L),
-        WriteFloatSpecialAsString(JSONWriter.MASK_WRITE_FLOAT_SPECIAL_AS_STRING);
+        WriteFloatSpecialAsString(35184372088832L);
 
         public final long mask;
 
@@ -791,7 +791,7 @@ public abstract class JSONWriter implements Closeable {
 
     public final boolean isRefDetect() {
         long j = this.context.features;
-        return (Feature.ReferenceDetection.mask & j) != 0 && (j & FieldInfo.DISABLE_REFERENCE_DETECT) == 0;
+        return (Feature.ReferenceDetection.mask & j) != 0 && (j & 144115188075855872L) == 0;
     }
 
     public final boolean isUTF16() {
@@ -870,7 +870,7 @@ public abstract class JSONWriter implements Closeable {
 
     public final void popPath0(Object obj) {
         Path path = this.path;
-        if (path == null || (this.context.features & MASK_REFERENCE_DETECTION) == 0 || obj == Collections.EMPTY_LIST || obj == Collections.EMPTY_SET) {
+        if (path == null || (this.context.features & 131072L) == 0 || obj == Collections.EMPTY_LIST || obj == Collections.EMPTY_SET) {
             return;
         }
         this.path = path.parent;
@@ -1425,7 +1425,7 @@ public abstract class JSONWriter implements Closeable {
         String str;
         long j = this.context.features;
         if ((8388672 & j) != 0) {
-            str = (j & MASK_USE_SINGLE_QUOTES) != 0 ? "''" : "\"\"";
+            str = (j & 1048576L) != 0 ? "''" : "\"\"";
         } else {
             str = "null";
         }
@@ -1490,7 +1490,7 @@ public abstract class JSONWriter implements Closeable {
 
     public final boolean isRefDetect(Object obj) {
         long j = this.context.features;
-        return ((Feature.ReferenceDetection.mask & j) == 0 || (j & FieldInfo.DISABLE_REFERENCE_DETECT) != 0 || obj == null || ObjectWriterProvider.isNotReferenceDetect(obj.getClass())) ? false : true;
+        return ((Feature.ReferenceDetection.mask & j) == 0 || (j & 144115188075855872L) != 0 || obj == null || ObjectWriterProvider.isNotReferenceDetect(obj.getClass())) ? false : true;
     }
 
     public void startArray(Object obj, int i) {
@@ -1555,7 +1555,7 @@ public abstract class JSONWriter implements Closeable {
     }
 
     public void writeArrayNull(long j) {
-        writeRaw((j & 4194368) != 0 ? HttpUrl.PATH_SEGMENT_ENCODE_SET_URI : "null");
+        writeRaw((j & 4194368) != 0 ? "[]" : "null");
     }
 
     public final void writeDecimal(BigDecimal bigDecimal, long j) {
@@ -1741,7 +1741,7 @@ public abstract class JSONWriter implements Closeable {
                                                     default:
                                                         switch (c6) {
                                                             case '[':
-                                                            case Opcodes.DUP2 /* 92 */:
+                                                            case 92 /* 92 */:
                                                             case ']':
                                                             case '^':
                                                                 break;
@@ -1756,7 +1756,7 @@ public abstract class JSONWriter implements Closeable {
                                                                                 char cCharAt = str2.charAt(i15 + 1);
                                                                                 if (cCharAt < 56320 || cCharAt >= 57344) {
                                                                                     i6 = i11 + 1;
-                                                                                    bArrCopyOf[i11] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                                                                                    bArrCopyOf[i11] = 63;
                                                                                 } else {
                                                                                     i7 = ((c6 << '\n') + cCharAt) - 56613888;
                                                                                 }
@@ -1766,7 +1766,7 @@ public abstract class JSONWriter implements Closeable {
                                                                                     bArrCopyOf = Arrays.copyOf(bArrCopyOf, bArrCopyOf.length + (bArrCopyOf.length >> 1));
                                                                                 }
                                                                                 i6 = i11 + 1;
-                                                                                bArrCopyOf[i11] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                                                                                bArrCopyOf[i11] = 63;
                                                                             } else {
                                                                                 int i16 = i11 + 3;
                                                                                 if (i16 >= bArrCopyOf.length) {
@@ -1781,7 +1781,7 @@ public abstract class JSONWriter implements Closeable {
                                                                             }
                                                                         } else {
                                                                             i6 = i11 + 1;
-                                                                            bArrCopyOf[i11] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                                                                            bArrCopyOf[i11] = 63;
                                                                         }
                                                                         i11 = i6;
                                                                     } else if (c6 > 2047) {
@@ -1798,7 +1798,7 @@ public abstract class JSONWriter implements Closeable {
                                                                         if (i18 >= bArrCopyOf.length) {
                                                                             bArrCopyOf = Arrays.copyOf(bArrCopyOf, bArrCopyOf.length + (bArrCopyOf.length >> 1));
                                                                         }
-                                                                        bArrCopyOf[i11] = (byte) (((c6 >> 6) & 31) | Opcodes.CHECKCAST);
+                                                                        bArrCopyOf[i11] = (byte) (((c6 >> 6) & 31) | 192);
                                                                         bArrCopyOf[i18] = (byte) ((c6 & '?') | 128);
                                                                         i11 += 2;
                                                                     }
@@ -1812,7 +1812,7 @@ public abstract class JSONWriter implements Closeable {
                                                                 }
                                                                 break;
                                                         }
-                                                    case Opcodes.ASTORE /* 58 */:
+                                                    case 58 /* 58 */:
                                                     case ';':
                                                     case '<':
                                                     case '=':
@@ -1838,7 +1838,7 @@ public abstract class JSONWriter implements Closeable {
                                             case '+':
                                             case ',':
                                             case '-':
-                                            case Opcodes.IALOAD /* 46 */:
+                                            case 46 /* 46 */:
                                             case '/':
                                                 c2 = c2;
                                                 i5 = i11 + 1;
@@ -1892,7 +1892,7 @@ public abstract class JSONWriter implements Closeable {
                                                     default:
                                                         switch (cCharAt2) {
                                                             case '[':
-                                                            case Opcodes.DUP2 /* 92 */:
+                                                            case 92 /* 92 */:
                                                             case ']':
                                                             case '^':
                                                                 break;
@@ -1907,7 +1907,7 @@ public abstract class JSONWriter implements Closeable {
                                                                                 char cCharAt3 = str2.charAt(i19 + 1);
                                                                                 if (cCharAt3 < 56320 || cCharAt3 >= 57344) {
                                                                                     i2 = i11 + 1;
-                                                                                    bArrCopyOf[i11] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                                                                                    bArrCopyOf[i11] = 63;
                                                                                 } else {
                                                                                     i3 = ((cCharAt2 << '\n') + cCharAt3) - 56613888;
                                                                                 }
@@ -1917,7 +1917,7 @@ public abstract class JSONWriter implements Closeable {
                                                                                     bArrCopyOf = Arrays.copyOf(bArrCopyOf, bArrCopyOf.length + (bArrCopyOf.length >> 1));
                                                                                 }
                                                                                 i4 = i11 + 1;
-                                                                                bArrCopyOf[i11] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                                                                                bArrCopyOf[i11] = 63;
                                                                             } else {
                                                                                 i4 = i11 + 4;
                                                                                 if (i4 >= bArrCopyOf.length) {
@@ -1932,7 +1932,7 @@ public abstract class JSONWriter implements Closeable {
                                                                             i11 = i4;
                                                                         } else {
                                                                             i2 = i11 + 1;
-                                                                            bArrCopyOf[i11] = JSONB.Constants.BC_INT32_BYTE_MAX;
+                                                                            bArrCopyOf[i11] = 63;
                                                                         }
                                                                         i11 = i2;
                                                                     } else if (cCharAt2 > 2047) {
@@ -1949,7 +1949,7 @@ public abstract class JSONWriter implements Closeable {
                                                                         if (i21 >= bArrCopyOf.length) {
                                                                             bArrCopyOf = Arrays.copyOf(bArrCopyOf, bArrCopyOf.length + (bArrCopyOf.length >> 1));
                                                                         }
-                                                                        bArrCopyOf[i11] = (byte) (((cCharAt2 >> 6) & 31) | Opcodes.CHECKCAST);
+                                                                        bArrCopyOf[i11] = (byte) (((cCharAt2 >> 6) & 31) | 192);
                                                                         bArrCopyOf[i21] = (byte) ((cCharAt2 & '?') | 128);
                                                                         i11 += 2;
                                                                     }
@@ -1964,7 +1964,7 @@ public abstract class JSONWriter implements Closeable {
                                                                 c = 1;
                                                                 break;
                                                         }
-                                                    case Opcodes.ASTORE /* 58 */:
+                                                    case 58 /* 58 */:
                                                     case ';':
                                                     case '<':
                                                     case '=':
@@ -1992,7 +1992,7 @@ public abstract class JSONWriter implements Closeable {
                                             case '+':
                                             case ',':
                                             case '-':
-                                            case Opcodes.IALOAD /* 46 */:
+                                            case 46 /* 46 */:
                                             case '/':
                                                 i = i11 + 1;
                                                 if (i >= bArrCopyOf.length) {
@@ -2263,13 +2263,13 @@ public abstract class JSONWriter implements Closeable {
         if (i == 0) {
             path = path3.child0;
             if (path == null) {
-                path = new Path(this.path, i);
+                path = new Path(this.path, 0);
                 path3.child0 = path;
             }
         } else if (i == 1) {
             path = path3.child1;
             if (path == null) {
-                path = new Path(this.path, i);
+                path = new Path(this.path, 1);
                 path3.child1 = path;
             }
         } else {

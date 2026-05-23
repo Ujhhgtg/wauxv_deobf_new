@@ -10,7 +10,7 @@ public final /* synthetic */ class C2435 extends AbstractC1438 implements Interf
         InterfaceC2654 interfaceC2654 = (InterfaceC2654) obj;
         int iIntValue = ((Number) obj2).intValue();
         C2436 c2436 = (C2436) this.f2268;
-        c2436.getClass();
+        
         boolean z = false;
         if (!interfaceC2654.mo3477(iIntValue)) {
             InterfaceC2654 interfaceC2654Mo3476 = interfaceC2654.mo3476(iIntValue);

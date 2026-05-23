@@ -2,7 +2,7 @@ package p000;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᲁᛸᤝᤞᲈ, reason: contains not printable characters */
@@ -16,55 +16,55 @@ public final class C2761 extends AbstractC1823 implements InterfaceC1582 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static String m4733() {
         String[] strArr = AbstractC1574.f5469;
-        if (AbstractC3471.m5080(EnumC3674.f11509)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11509)) {
             return "j90";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11507)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11507)) {
             return "j44";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11506)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11506)) {
             return "j17";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11505)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11505)) {
             return "j0_";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11504)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11504)) {
             return "iw_";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11503)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11503)) {
             return "ite";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11502)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11502)) {
             return "irm";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11501)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11501)) {
             return "iok";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11500)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11500)) {
             return "im3";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11499)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11499)) {
             return "iir";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11498)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11498)) {
             return "ifd";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11497)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11497)) {
             return "i0z";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11496)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11496)) {
             return "hzd";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11495)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11495)) {
             return "hk5";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11494)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11494)) {
             return "h1_";
         }
-        if (AbstractC3471.m5080(EnumC3674.f11493)) {
+        if (AbstractC3471.m5080(WeChatVersionsPlay.f11493)) {
             return "gmh";
         }
-        return AbstractC3471.m5079(EnumC3677.f11529) ? "hbs" : "oez";
+        return AbstractC3471.m5079(WeChatVersions.f11529) ? "hbs" : "oez";
     }
 
     @Override // p000.InterfaceC1582
@@ -74,9 +74,9 @@ public final class C2761 extends AbstractC1823 implements InterfaceC1582 {
         int iM2475;
         String[] strArr = AbstractC1574.f5469;
         try {
-            C1565.f5440.getClass();
+            
             if (C1565.m3280()) {
-                dexKitBridge.getClass();
+                
                 C1333 c1333 = new C1333(4);
                 C1981 c1981 = new C1981(4);
                 c1981.m3827("com.tencent.mm.plugin.sns.ui.improve.ImproveSnsJankUI$recycleView$2");
@@ -94,7 +94,7 @@ public final class C2761 extends AbstractC1823 implements InterfaceC1582 {
                 }
                 c2760.m2545(iM2475);
             }
-            c2585 = C3497.f10997;
+            c2585 = Unit.INSTANCE;
         } catch (Throwable th) {
             c2585 = new C2585(th);
         }

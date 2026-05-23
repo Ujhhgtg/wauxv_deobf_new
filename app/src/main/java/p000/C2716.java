@@ -39,7 +39,7 @@ public final class C2716 {
 
     static {
         Bitmap.Config[] configArr = (Bitmap.Config[]) Arrays.copyOf(new Bitmap.Config[]{Bitmap.Config.ARGB_8888, null}, 3);
-        configArr[configArr.length - 1] = Bitmap.Config.RGBA_F16;
+        configArr[2] = Bitmap.Config.RGBA_F16;
         f8766 = configArr;
         f8767 = configArr;
         f8768 = new Bitmap.Config[]{Bitmap.Config.RGB_565};
@@ -115,7 +115,7 @@ public final class C2716 {
         for (Bitmap.Config config2 : configArr) {
             Integer num = (Integer) m4725(config2).ceilingKey(Integer.valueOf(iM5107));
             if (num != null && num.intValue() <= iM5107 * 8) {
-                if (num.intValue() == iM5107 && (config2 != null ? config2.equals(config) : config == null)) {
+                if (num.intValue() == iM5107 && (config2 != null ? config2.equals(config) : false)) {
                     break;
                     break;
                 }

@@ -231,7 +231,7 @@ public final class C1791 {
             while (i5 < iM1359) {
                 float fM1360 = c0266.f1465.m1360(i5);
                 C2785 c2785M13510 = c0266.f1465.m1359(i5);
-                float f5 = f2;
+                float f5 = 0.0f;
                 if (c2785M13510.f8896 == 1) {
                     if (c2786 == null) {
                         if (c2785M13510.f8895 <= 1) {
@@ -254,7 +254,7 @@ public final class C1791 {
                         c2786 = c2785M13510;
                         f3 = fM1360;
                     }
-                } else if (c2786 == null && fM1360 < f5) {
+                } else if (c2786 == null && fM1360 < 0.0f) {
                     if (c2787 == null) {
                         if (c2785M13510.f8895 <= 1) {
                             z5 = true;
@@ -278,9 +278,9 @@ public final class C1791 {
                     }
                 }
                 i5++;
-                f2 = f5;
+                f2 = 0.0f;
             }
-            float f6 = f2;
+            float f6 = 0.0f;
             if (c2786 == null) {
                 c2786 = c2787;
             }
@@ -336,7 +336,7 @@ public final class C1791 {
             if (c2788 == null) {
                 return;
             }
-            if (c2788.f8896 != 1 && c0266.f1463 < f6) {
+            if (c2788.f8896 != 1 && c0266.f1463 < 0.0f) {
                 return;
             }
         }
@@ -356,7 +356,7 @@ public final class C1791 {
             }
             return;
         }
-        if (i2 == -1) {
+        if (false) {
             C0266 c0266M3541 = m3541();
             c0266M3541.f1462 = c2785;
             float f = i;
@@ -641,21 +641,21 @@ public final class C1791 {
                     boolean z = false;
                     int i3 = 0;
                     while (!z) {
-                        i3 += i2;
-                        float f2 = Float.MAX_VALUE;
+                        i3 += 1;
+                        float f2 = 3.4028235E38f;
                         int i4 = -1;
                         int i5 = -1;
                         int i6 = 0;
                         int i7 = 0;
                         while (i6 < this.f5979) {
                             C0266 c0267 = this.f5975[i6];
-                            if (c0267.f1462.f8896 != i2 && !c0267.f1466 && c0267.f1463 < f) {
+                            if (c0267.f1462.f8896 != 1 && !c0267.f1466 && c0267.f1463 < 0.0f) {
                                 int iM1358 = c0267.f1465.m1358();
                                 int i8 = 0;
                                 while (i8 < iM1358) {
                                     C2785 c2785M1359 = c0267.f1465.m1359(i8);
                                     float fM1357 = c0267.f1465.m1357(c2785M1359);
-                                    if (fM1357 > f) {
+                                    if (fM1357 > 0.0f) {
                                         for (int i9 = 0; i9 < 9; i9++) {
                                             float f3 = c2785M1359.f8891[i9] / fM1357;
                                             if ((f3 < f2 && i9 == i7) || i9 > i7) {
@@ -728,12 +728,12 @@ public final class C1791 {
                 }
             }
             if (c2785Mo1370 != null) {
-                float f = Float.MAX_VALUE;
-                int i6 = i;
+                float f = 3.4028235E38f;
+                int i6 = 0;
                 int i7 = -1;
                 while (i6 < this.f5979) {
                     C0266 c0267 = this.f5975[i6];
-                    if (c0267.f1462.f8896 != i4 && !c0267.f1466) {
+                    if (c0267.f1462.f8896 != 1 && !c0267.f1466) {
                         C0257 c0257 = c0267.f1465;
                         int i8 = c0257.f1441;
                         if (i8 == -1) {
@@ -812,7 +812,7 @@ public final class C1791 {
         C2379 c2379 = (C2379) c0243.f1405;
         C2785[] c2785Arr2 = this.f5982;
         int length = this.f5983;
-        c2379.getClass();
+        
         if (length > c2785Arr2.length) {
             length = c2785Arr2.length;
         }

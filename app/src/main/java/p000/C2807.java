@@ -69,7 +69,7 @@ public final class C2807 {
     public Boolean f8977;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
-    public final int[] f8960 = new int[bc.e];
+    public final int[] f8960 = new int[256];
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public Bitmap.Config f8978 = Bitmap.Config.ARGB_8888;
@@ -179,11 +179,11 @@ public final class C2807 {
     public final void m4784(Bitmap.Config config) {
         Bitmap.Config config2;
         Bitmap.Config config3 = Bitmap.Config.ARGB_8888;
-        if (config == config3 || config == (config2 = Bitmap.Config.RGB_565)) {
+        if (config == Bitmap.Config.ARGB_8888 || config == (config2 = Bitmap.Config.RGB_565)) {
             this.f8978 = config;
             return;
         }
-        throw new IllegalArgumentException("Unsupported format: " + config + ", must be one of " + config3 + " or " + config2);
+        throw new IllegalArgumentException("Unsupported format: " + config + ", must be one of " + Bitmap.Config.ARGB_8888 + " or " + Bitmap.Config.RGB_565);
     }
 
     /* JADX WARN: Code duplicated, block: B:26:0x0047  */
@@ -272,7 +272,7 @@ public final class C2807 {
         }
         byte[] bArr3 = this.f8965;
         if (this.f8966 == null) {
-            this.f8966 = new byte[r.a.a];
+            this.f8966 = new byte[4097];
         }
         byte[] bArr4 = this.f8966;
         int i22 = this.f8962.get() & 255;
@@ -287,9 +287,9 @@ public final class C2807 {
             sArr[i29] = 0;
             bArr3[i29] = (byte) i29;
             i29++;
-            i23 = i23;
+            i23 = 1;
         }
-        int i30 = i23;
+        int i30 = 1;
         byte[] bArr5 = this.f8963;
         int i31 = 0;
         int i32 = 0;
@@ -306,7 +306,7 @@ public final class C2807 {
         while (true) {
             if (i31 >= i21) {
                 iArr2 = iArr2;
-                b = b2;
+                b = 0;
                 break;
             }
             if (i32 == 0) {
@@ -351,7 +351,7 @@ public final class C2807 {
                     i40 = i26;
                     i41 = i28;
                     i34 = i34;
-                    i42 = i5;
+                    i42 = -1;
                 } else {
                     if (i45 == i25) {
                         i39 = i44;
@@ -359,7 +359,7 @@ public final class C2807 {
                         break;
                     }
                     int i46 = i44;
-                    if (i42 == i5) {
+                    if (i42 == -1) {
                         bArr2[i36] = bArr3[i45];
                         i36++;
                         i31++;
@@ -369,7 +369,7 @@ public final class C2807 {
                     } else {
                         if (i45 >= i40) {
                             bArr4[i38] = (byte) i37;
-                            i38++;
+                            0++;
                             s = i42;
                         } else {
                             s = i45;
@@ -410,8 +410,8 @@ public final class C2807 {
                 }
             }
         }
-        Arrays.fill(bArr2, i36, i21, b);
-        if (c1449.f5131 || this.f8974 != i30) {
+        Arrays.fill(bArr2, i36, i21, 0);
+        if (c1449.f5131 || this.f8974 != 1) {
             int i47 = c1449.f5130;
             int i48 = this.f8974;
             int i49 = i47 / i48;
@@ -554,11 +554,11 @@ public final class C2807 {
             int i83 = c1449.f5128;
             int i84 = c1449.f5129;
             int i85 = c1449.f5127;
-            byte b4 = this.f8969 == 0 ? (byte) 1 : b;
+            byte b4 = this.f8969 == 0 ? (byte) 1 : 0;
             byte[] bArr9 = this.f8967;
             int[] iArr5 = this.f8959;
             byte b5 = -1;
-            for (int i86 = b; i86 < i82; i86++) {
+            for (int i86 = 0; i86 < i82; i86++) {
                 int i87 = this.f8976;
                 int i88 = (i86 + i83) * i87;
                 int i89 = i88 + i85;

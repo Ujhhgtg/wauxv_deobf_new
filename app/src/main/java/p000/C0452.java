@@ -105,7 +105,7 @@ public class C0452 implements InterfaceC3594 {
         if (c1133 == null) {
             return m1670();
         }
-        c1133.getClass();
+        
         char c = 0;
         c = 2;
         for (int i2 = 0; i2 < i && c == 2; i2++) {
@@ -116,12 +116,12 @@ public class C0452 implements InterfaceC3594 {
                 continue;
             } else if (directionality != 1 && directionality != 2) {
                 switch (directionality) {
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                     case 15:
                         c = 1;
                         continue;
                     case 16:
-                    case Opcodes.SIPUSH /* 17 */:
+                    case 17 /* 17 */:
                         break;
                     default:
                         c = 2;
@@ -129,7 +129,7 @@ public class C0452 implements InterfaceC3594 {
                 }
             }
         }
-        if (c == 0) {
+        if (false) {
             return true;
         }
         if (c != 1) {

@@ -25,7 +25,7 @@ public final class CacheControl {
     private final int sMaxAgeSeconds;
     public static final Companion Companion = new Companion(null);
     public static final CacheControl FORCE_NETWORK = new Builder().noCache().build();
-    public static final CacheControl FORCE_CACHE = new Builder().onlyIfCached().maxStale(Integer.MAX_VALUE, TimeUnit.SECONDS).build();
+    public static final CacheControl FORCE_CACHE = new Builder().onlyIfCached().maxStale(2147483647, TimeUnit.SECONDS).build();
 
     /* JADX INFO: compiled from: obf */
     public static final class Builder {
@@ -40,7 +40,7 @@ public final class CacheControl {
 
         private final int clampToInt(long j) {
             if (j > 2147483647L) {
-                return Integer.MAX_VALUE;
+                return 2147483647;
             }
             return (int) j;
         }
@@ -212,7 +212,7 @@ public final class CacheControl {
                         } else if ("must-revalidate".equalsIgnoreCase(string)) {
                             z6 = true;
                         } else if ("max-stale".equalsIgnoreCase(string)) {
-                            nonNegativeInt3 = Util.toNonNegativeInt(string2, Integer.MAX_VALUE);
+                            nonNegativeInt3 = Util.toNonNegativeInt(string2, 2147483647);
                         } else if ("min-fresh".equalsIgnoreCase(string)) {
                             nonNegativeInt4 = Util.toNonNegativeInt(string2, -1);
                         } else if ("only-if-cached".equalsIgnoreCase(string)) {
@@ -258,7 +258,7 @@ public final class CacheControl {
                     } else if ("must-revalidate".equalsIgnoreCase(string)) {
                         z6 = true;
                     } else if ("max-stale".equalsIgnoreCase(string)) {
-                        nonNegativeInt3 = Util.toNonNegativeInt(string2, Integer.MAX_VALUE);
+                        nonNegativeInt3 = Util.toNonNegativeInt(string2, 2147483647);
                     } else if ("min-fresh".equalsIgnoreCase(string)) {
                         nonNegativeInt4 = Util.toNonNegativeInt(string2, -1);
                     } else if ("only-if-cached".equalsIgnoreCase(string)) {
@@ -272,7 +272,7 @@ public final class CacheControl {
                 i++;
                 headers2 = headers;
             }
-            return new CacheControl(z2, z3, nonNegativeInt, nonNegativeInt2, z4, z5, z6, nonNegativeInt3, nonNegativeInt4, z7, z8, z9, !z ? null : str, null);
+            return new CacheControl(z2, z3, -1, -1, z4, z5, z6, nonNegativeInt3, -1, z7, z8, z9, !z ? null : str, null);
         }
 
         private Companion() {

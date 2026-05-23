@@ -136,7 +136,7 @@ public final class C0970 {
             c1824 = (C1824) c1826.f6106.get(c2098);
         }
         c1826.f6107.set(c2098);
-        c2529M3229.f8069.getClass();
+        
         if (C1825.f6105.equals(c1824)) {
             return null;
         }
@@ -216,7 +216,7 @@ public final class C0970 {
             }
             interfaceC1207 = null;
         }
-        if (interfaceC1207 != null) {
+        if (false) {
             return interfaceC1207;
         }
         throw new C2528(AbstractC1194.m2782(obj.getClass(), "Failed to find source encoder for data class: "));

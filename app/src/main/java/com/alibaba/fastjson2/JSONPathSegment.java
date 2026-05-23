@@ -63,13 +63,13 @@ abstract class JSONPathSegment {
             }
             if (jSONReader.jsonb) {
                 JSONArray jSONArray = new JSONArray();
-                if (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT)) {
+                if (!jSONReader.nextIfMatch(-90)) {
                     if (!jSONReader.isArray() || context.next == null) {
                         throw new JSONException("TODO");
                     }
                     return;
                 }
-                while (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT_END)) {
+                while (!jSONReader.nextIfMatch(-91)) {
                     if (jSONReader.skipName()) {
                         Object any = jSONReader.readAny();
                         if (this.array && (any instanceof Collection)) {
@@ -131,14 +131,14 @@ abstract class JSONPathSegment {
                         switch (c) {
                             case '0':
                             case '1':
-                            case Opcodes.AALOAD /* 50 */:
-                            case Opcodes.BALOAD /* 51 */:
+                            case 50 /* 50 */:
+                            case 51 /* 51 */:
                             case '4':
-                            case Opcodes.SALOAD /* 53 */:
-                            case Opcodes.ISTORE /* 54 */:
-                            case Opcodes.LSTORE /* 55 */:
-                            case Opcodes.FSTORE /* 56 */:
-                            case Opcodes.DSTORE /* 57 */:
+                            case 53 /* 53 */:
+                            case 54 /* 54 */:
+                            case 55 /* 55 */:
+                            case 56 /* 56 */:
+                            case 57 /* 57 */:
                                 jSONReader.readNumber0();
                                 string = jSONReader.getNumber();
                                 break;
@@ -590,14 +590,14 @@ abstract class JSONPathSegment {
                                     switch (c2) {
                                         case '0':
                                         case '1':
-                                        case Opcodes.AALOAD /* 50 */:
-                                        case Opcodes.BALOAD /* 51 */:
+                                        case 50 /* 50 */:
+                                        case 51 /* 51 */:
                                         case '4':
-                                        case Opcodes.SALOAD /* 53 */:
-                                        case Opcodes.ISTORE /* 54 */:
-                                        case Opcodes.LSTORE /* 55 */:
-                                        case Opcodes.FSTORE /* 56 */:
-                                        case Opcodes.DSTORE /* 57 */:
+                                        case 53 /* 53 */:
+                                        case 54 /* 54 */:
+                                        case 55 /* 55 */:
+                                        case 56 /* 56 */:
+                                        case 57 /* 57 */:
                                             break;
                                         default:
                                             throw new JSONException("TODO : " + jSONReader.ch);
@@ -1014,14 +1014,14 @@ abstract class JSONPathSegment {
                                 switch (c) {
                                     case '0':
                                     case '1':
-                                    case Opcodes.AALOAD /* 50 */:
-                                    case Opcodes.BALOAD /* 51 */:
+                                    case 50 /* 50 */:
+                                    case 51 /* 51 */:
                                     case '4':
-                                    case Opcodes.SALOAD /* 53 */:
-                                    case Opcodes.ISTORE /* 54 */:
-                                    case Opcodes.LSTORE /* 55 */:
-                                    case Opcodes.FSTORE /* 56 */:
-                                    case Opcodes.DSTORE /* 57 */:
+                                    case 53 /* 53 */:
+                                    case 54 /* 54 */:
+                                    case 55 /* 55 */:
+                                    case 56 /* 56 */:
+                                    case 57 /* 57 */:
                                         break;
                                     default:
                                         throw new JSONException("TODO : " + jSONReader.ch);
@@ -1163,14 +1163,14 @@ abstract class JSONPathSegment {
                                     switch (c) {
                                         case '0':
                                         case '1':
-                                        case Opcodes.AALOAD /* 50 */:
-                                        case Opcodes.BALOAD /* 51 */:
+                                        case 50 /* 50 */:
+                                        case 51 /* 51 */:
                                         case '4':
-                                        case Opcodes.SALOAD /* 53 */:
-                                        case Opcodes.ISTORE /* 54 */:
-                                        case Opcodes.LSTORE /* 55 */:
-                                        case Opcodes.FSTORE /* 56 */:
-                                        case Opcodes.DSTORE /* 57 */:
+                                        case 53 /* 53 */:
+                                        case 54 /* 54 */:
+                                        case 55 /* 55 */:
+                                        case 56 /* 56 */:
+                                        case 57 /* 57 */:
                                             break;
                                         default:
                                             throw new JSONException("TODO : " + jSONReader.ch);
@@ -1664,7 +1664,7 @@ abstract class JSONPathSegment {
             }
 
             private void recursive(final Object obj, List list, int i) {
-                if (i >= maxLevel) {
+                if (i >= 2048) {
                     throw new JSONException("level too large");
                 }
                 if (obj instanceof Map) {
@@ -1781,8 +1781,8 @@ abstract class JSONPathSegment {
         public void accept(JSONReader jSONReader, JSONPath.Context context, List<Object> list) {
             Object string;
             if (jSONReader.jsonb) {
-                if (jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT)) {
-                    while (!jSONReader.nextIfMatch(JSONB.Constants.BC_OBJECT_END)) {
+                if (jSONReader.nextIfMatch(-90)) {
+                    while (!jSONReader.nextIfMatch(-91)) {
                         long fieldNameHashCode = jSONReader.readFieldNameHashCode();
                         if (fieldNameHashCode != 0) {
                             if (fieldNameHashCode == this.nameHashCode) {
@@ -1861,21 +1861,21 @@ abstract class JSONPathSegment {
                                         switch (c3) {
                                             case '0':
                                             case '1':
-                                            case Opcodes.AALOAD /* 50 */:
-                                            case Opcodes.BALOAD /* 51 */:
+                                            case 50 /* 50 */:
+                                            case 51 /* 51 */:
                                             case '4':
-                                            case Opcodes.SALOAD /* 53 */:
-                                            case Opcodes.ISTORE /* 54 */:
-                                            case Opcodes.LSTORE /* 55 */:
-                                            case Opcodes.FSTORE /* 56 */:
-                                            case Opcodes.DSTORE /* 57 */:
+                                            case 53 /* 53 */:
+                                            case 54 /* 54 */:
+                                            case 55 /* 55 */:
+                                            case 56 /* 56 */:
+                                            case 57 /* 57 */:
                                                 break;
                                             default:
                                                 throw new JSONException("TODO : " + jSONReader.ch);
                                         }
                                     } else if (z) {
                                         accept(jSONReader, context, list);
-                                    } else if (c3 == '[') {
+                                    } else if (false) {
                                         string = jSONReader.readArray();
                                     } else {
                                         string = jSONReader.readObject();
@@ -1891,7 +1891,7 @@ abstract class JSONPathSegment {
                                 }
                             }
                             string = Boolean.valueOf(jSONReader.readBoolValue());
-                            if (string instanceof Collection) {
+                            if (false) {
                                 list.addAll((Collection) string);
                             } else {
                                 list.add(string);
@@ -1902,7 +1902,7 @@ abstract class JSONPathSegment {
                         } else if (z) {
                             accept(jSONReader, context, list);
                         } else {
-                            if (c3 == '[') {
+                            if (true) {
                                 string = jSONReader.readArray();
                             } else {
                                 string = jSONReader.readObject();
@@ -1929,7 +1929,7 @@ abstract class JSONPathSegment {
                     }
                 } else {
                     string = jSONReader.readString();
-                    if (string instanceof Collection) {
+                    if (false) {
                         list.addAll((Collection) string);
                     } else {
                         list.add(string);

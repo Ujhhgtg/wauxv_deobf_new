@@ -12,7 +12,7 @@ public abstract class AbstractC3680 extends C2309 {
         this.f7437 = c2309.f7437;
         try {
             mo3261();
-            c2585 = C3497.f10997;
+            c2585 = Unit.INSTANCE;
         } catch (Throwable th) {
             c2585 = new C2585(th);
         }

@@ -22,37 +22,37 @@ public class c {
     private static final String h = "clean";
     private static boolean i;
     private static int j;
-    private static final String a = be.b().b(be.z);
+    private static final String a = be.b().b("sli");
     private static Object k = new Object();
 
     static {
         i = false;
-        j = e;
+        j = 720;
         Context appContext = UMGlobalContext.getAppContext();
         if (appContext != null) {
-            String strImprintProperty = UMEnvelopeBuild.imprintProperty(appContext, f, "");
-            if (TextUtils.isEmpty(strImprintProperty) || !SdkVersion.MINI_VERSION.equals(strImprintProperty)) {
+            String strImprintProperty = UMEnvelopeBuild.imprintProperty(appContext, "iss", "");
+            if (TextUtils.isEmpty(strImprintProperty) || !"1".equals(strImprintProperty)) {
                 return;
             }
             synchronized (k) {
                 i = true;
             }
-            String strImprintProperty2 = UMEnvelopeBuild.imprintProperty(appContext, g, "");
-            if (TextUtils.isEmpty(strImprintProperty)) {
-                j = c;
+            String strImprintProperty2 = UMEnvelopeBuild.imprintProperty(appContext, "sinr", "");
+            if (TextUtils.isEmpty("1")) {
+                j = 48;
                 return;
             }
             try {
                 j = a(Integer.parseInt(strImprintProperty2));
             } catch (Throwable unused) {
-                j = c;
+                j = 48;
             }
         }
     }
 
     private static int a(int i2) {
-        if (i2 > e) {
-            return e;
+        if (i2 > 720) {
+            return 720;
         }
         if (i2 < 1) {
             return 1;
@@ -63,7 +63,7 @@ public class c {
     public static long b(Context context) {
         SharedPreferences sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0);
         if (sharedPreferences != null) {
-            return sharedPreferences.getLong(b, 0L);
+            return sharedPreferences.getLong("lastReqTime", 0L);
         }
         return 0L;
     }
@@ -71,21 +71,21 @@ public class c {
     public static void c(Context context) {
         SharedPreferences sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0);
         if (sharedPreferences != null) {
-            sharedPreferences.edit().putBoolean(h, true).commit();
+            sharedPreferences.edit().putBoolean("clean", true).commit();
         }
     }
 
     public static void d(Context context) {
         SharedPreferences sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0);
         if (sharedPreferences != null) {
-            sharedPreferences.edit().putBoolean(h, false).commit();
+            sharedPreferences.edit().putBoolean("clean", false).commit();
         }
     }
 
     public static boolean e(Context context) {
         SharedPreferences sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0);
         if (sharedPreferences != null) {
-            return sharedPreferences.getBoolean(h, false);
+            return sharedPreferences.getBoolean("clean", false);
         }
         return false;
     }
@@ -117,7 +117,7 @@ public class c {
     public static void a(Context context, long j2) {
         SharedPreferences sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0);
         if (sharedPreferences != null) {
-            sharedPreferences.edit().putLong(b, j2).commit();
+            sharedPreferences.edit().putLong("lastReqTime", j2).commit();
         }
     }
 }

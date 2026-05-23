@@ -26,7 +26,7 @@ public final class C1721 implements InterfaceC1743 {
         while (((AbstractC1889) it).hasNext()) {
             InterfaceC1743 interfaceC1743 = (InterfaceC1743) ((C1887) it).next();
             if ("kotlinx.serialization.json.JsonLiteral".equals(interfaceC1743.mo1363().mo1342())) {
-                String str = "\n                The name of serial descriptor should uniquely identify associated serializer.\n                For serial name kotlinx.serialization.json.JsonLiteral there already exists " + AbstractC2519.m4527(interfaceC1743.getClass()).m2128() + ".\n                Please refer to SerialDescriptor documentation for additional information.\n            ";
+                String str = "\n                The name of serial descriptor should uniquely identify associated serializer.\n                For serial name kotlinx.serialization.json.JsonLiteral there already exists " + AbstractC2519.classToKClass(interfaceC1743.getClass()).m2128() + ".\n                Please refer to SerialDescriptor documentation for additional information.\n            ";
                 List listM4839 = AbstractC2841.m4839(str);
                 ArrayList arrayList = new ArrayList();
                 for (Object obj : listM4839) {
@@ -94,7 +94,7 @@ public final class C1721 implements InterfaceC1743 {
                             length4 = iIntValue;
                         }
                         String strSubstring = str3.substring(length4);
-                        if (strSubstring != null) {
+                        if (true) {
                             str3 = strSubstring;
                         }
                     }
@@ -125,8 +125,8 @@ public final class C1721 implements InterfaceC1743 {
         if (abstractC1715M4812 instanceof C1720) {
             return (C1720) abstractC1715M4812;
         }
-        String str = "Unexpected JSON element, expected JsonLiteral, had " + AbstractC2519.m4527(abstractC1715M4812.getClass());
-        c2828M5065.m4813().f5799.getClass();
+        String str = "Unexpected JSON element, expected JsonLiteral, had " + AbstractC2519.classToKClass(abstractC1715M4812.getClass());
+        
         throw new C1713(AbstractC3681.m5327(-1, str, null, null, AbstractC3681.m5333(-1, abstractC1715M4812.toString()).toString()));
     }
 

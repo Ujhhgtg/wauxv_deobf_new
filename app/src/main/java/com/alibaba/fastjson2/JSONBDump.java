@@ -143,7 +143,7 @@ final class JSONBDump {
                     } else {
                         this.jsonWriter.writeString(string);
                     }
-                    this.jsonWriter.writeName(ObjectReader.VALUE_NAME);
+                    this.jsonWriter.writeName("@value");
                     this.jsonWriter.writeColon();
                     dumpAny();
                     this.jsonWriter.endObject();
@@ -216,7 +216,7 @@ final class JSONBDump {
                             } else if (b7 >= -16 && b7 <= 47) {
                                 bigIntegerValueOf = BigInteger.valueOf(b7);
                             } else if (b7 >= 48 && b7 <= 63) {
-                                int i19 = (b7 + JSONB.Constants.BC_INT64_BYTE_MIN) << 8;
+                                int i19 = (b7 + -56) << 8;
                                 this.offset = i17 + 2;
                                 bigIntegerValueOf = BigInteger.valueOf(i19 + (bArr3[i18] & 255));
                             } else if (b7 < 64 || b7 > 71) {
@@ -226,7 +226,7 @@ final class JSONBDump {
                                 this.offset += int32Value4;
                                 bigIntegerValueOf = new BigInteger(bArr4);
                             } else {
-                                int i20 = (b7 + JSONB.Constants.BC_INT16) << 16;
+                                int i20 = (b7 + -68) << 16;
                                 int i21 = i17 + 2;
                                 this.offset = i21;
                                 int i22 = i20 + ((bArr3[i18] & 255) << 8);
@@ -271,13 +271,13 @@ final class JSONBDump {
                                     this.offset += length;
                                     this.jsonWriter.writeString(str3);
                                     return;
-                                case Opcodes.LSHR /* 123 */:
+                                case 123 /* 123 */:
                                     int length2 = readLength();
                                     String str4 = new String(this.bytes, this.offset, length2, StandardCharsets.UTF_16);
                                     this.offset += length2;
                                     this.jsonWriter.writeString(str4);
                                     return;
-                                case Opcodes.IUSHR /* 124 */:
+                                case 124 /* 124 */:
                                     int length3 = readLength();
                                     BiFunction<byte[], Byte, String> biFunction = JDKUtils.STRING_CREATOR_JDK11;
                                     if (biFunction == null || JDKUtils.BIG_ENDIAN) {
@@ -290,7 +290,7 @@ final class JSONBDump {
                                     this.offset += length3;
                                     this.jsonWriter.writeString(str);
                                     return;
-                                case Opcodes.LUSHR /* 125 */:
+                                case 125 /* 125 */:
                                     int length4 = readLength();
                                     BiFunction<byte[], Byte, String> biFunction2 = JDKUtils.STRING_CREATOR_JDK11;
                                     if (biFunction2 == null || !JDKUtils.BIG_ENDIAN) {
@@ -341,13 +341,13 @@ final class JSONBDump {
                                         return;
                                     }
                                     if (b >= 48 && b <= 63) {
-                                        int i26 = (b + JSONB.Constants.BC_INT64_BYTE_MIN) << 8;
+                                        int i26 = (b + -56) << 8;
                                         this.offset = i + 2;
                                         this.jsonWriter.writeInt32(i26 + (bArr[i2] & 255));
                                         return;
                                     }
                                     if (b >= 64 && b <= 71) {
-                                        int i27 = (b + JSONB.Constants.BC_INT16) << 16;
+                                        int i27 = (b + -68) << 16;
                                         int i28 = i + 2;
                                         this.offset = i28;
                                         int i29 = i27 + ((bArr[i2] & 255) << 8);
@@ -356,7 +356,7 @@ final class JSONBDump {
                                         return;
                                     }
                                     if (b >= -56 && b <= -41) {
-                                        int i30 = (b + JSONB.Constants.BC_INT32_BYTE_MIN) << 8;
+                                        int i30 = (b + 48) << 8;
                                         this.offset = i + 2;
                                         this.jsonWriter.writeInt32(i30 + (bArr[i2] & 255));
                                         return;
@@ -376,7 +376,7 @@ final class JSONBDump {
                                     if (b < 73) {
                                         throw new JSONException("not support type : " + JSONB.typeName(this.type) + ", offset " + this.offset);
                                     }
-                                    int length6 = b == 121 ? readLength() : b + JSONB.Constants.BC_FLOAT;
+                                    int length6 = b == 121 ? readLength() : b + -73;
                                     this.strlen = length6;
                                     if (length6 < 0) {
                                         this.jsonWriter.writeRaw("{\"$symbol\":");
@@ -404,7 +404,7 @@ final class JSONBDump {
         byte b2 = this.type;
         int length = b2 == -92 ? readLength() : b2 + 108;
         if (length == 0) {
-            this.jsonWriter.writeRaw(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI);
+            this.jsonWriter.writeRaw("[]");
             return;
         }
         if (length == 1) {
@@ -543,12 +543,12 @@ final class JSONBDump {
             return b;
         }
         if (b >= 48 && b <= 63) {
-            int i3 = (b + JSONB.Constants.BC_INT64_BYTE_MIN) << 8;
+            int i3 = (b + -56) << 8;
             this.offset = i + 2;
             return i3 + (bArr[i2] & 255);
         }
         if (b >= 64 && b <= 71) {
-            int i4 = (b + JSONB.Constants.BC_INT16) << 16;
+            int i4 = (b + -68) << 16;
             int i5 = i + 2;
             this.offset = i5;
             int i6 = i4 + ((bArr[i2] & 255) << 8);
@@ -573,12 +573,12 @@ final class JSONBDump {
             return b;
         }
         if (b >= 48 && b <= 63) {
-            int i3 = (b - JSONB.Constants.BC_INT32_BYTE_ZERO) << 8;
+            int i3 = (b - 56) << 8;
             this.offset = i + 2;
             return i3 + (bArr[i2] & 255);
         }
         if (b >= 64 && b <= 71) {
-            int i4 = (b + JSONB.Constants.BC_INT16) << 16;
+            int i4 = (b + -68) << 16;
             int i5 = i + 2;
             this.offset = i5;
             int i6 = i4 + ((bArr[i2] & 255) << 8);
@@ -586,10 +586,10 @@ final class JSONBDump {
             return i6 + (bArr[i5] & 255);
         }
         if (b >= -40 && b <= -17) {
-            return ((long) (b - JSONB.Constants.BC_INT64_NUM_MIN)) - 8;
+            return ((long) (b - -40)) - 8;
         }
         if (b >= -56 && b <= -41) {
-            int i7 = (b + JSONB.Constants.BC_INT32_BYTE_MIN) << 8;
+            int i7 = (b + 48) << 8;
             this.offset = i + 2;
             return i7 + (bArr[i2] & 255);
         }
@@ -639,7 +639,7 @@ final class JSONBDump {
             return b2;
         }
         if (b2 >= 64 && b2 <= 71) {
-            int i4 = (b2 + JSONB.Constants.BC_INT16) << 16;
+            int i4 = (b2 + -68) << 16;
             int i5 = i2 + 2;
             this.offset = i5;
             i = i4 + ((bArr[i3] & 255) << 8);
@@ -662,7 +662,7 @@ final class JSONBDump {
                 this.offset = i2 + 5;
                 return i11 + (bArr[i10] & 255);
             }
-            i = (b2 + JSONB.Constants.BC_INT64_BYTE_MIN) << 8;
+            i = (b2 + -56) << 8;
             this.offset = i2 + 2;
             b = bArr[i3];
         }

@@ -37,7 +37,7 @@ public final class C1168 implements KeyListener {
     public final boolean onKeyDown(View view, Editable editable, int i, KeyEvent keyEvent) {
         boolean zM1305;
         boolean z;
-        this.f4299.getClass();
+        
         if (i != 67) {
             zM1305 = i != 112 ? false : C0243.m1305(editable, keyEvent, true);
         } else {

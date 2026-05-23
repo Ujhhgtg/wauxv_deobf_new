@@ -114,10 +114,10 @@ public final class C1961 {
         textView2.setMovementMethod(LinkMovementMethod.getInstance());
         dialogXBaseRelativeLayout.m763(0.0f);
         dialogXBaseRelativeLayout.m764(c1962.f6498);
-        dialogXBaseRelativeLayout.f937 = new C0938(i, this);
+        dialogXBaseRelativeLayout.f937 = new C0938(1, this);
         dialogXBaseRelativeLayout.f938 = new C1744(this);
         textView5.setOnClickListener(new ViewOnClickListenerC1959(this, 0));
-        textView4.setOnClickListener(new ViewOnClickListenerC1959(this, i));
+        textView4.setOnClickListener(new ViewOnClickListenerC1959(this, 1));
         textView3.setOnClickListener(new ViewOnClickListenerC1959(this, 2));
         c1962.f6511 = this;
         m3788();
@@ -135,12 +135,12 @@ public final class C1961 {
         }
         int i = 1;
         if (c1962.f6499 == null) {
-            c1962.f6499 = new C0942(i, this);
+            c1962.f6499 = new C0942(1, this);
         }
         C0942 c0942 = c1962.f6499;
-        if (c0942 != null) {
+        if (true) {
             c1962.f923 = true;
-            if (c0942 == null) {
+            if (false) {
                 c1962.f6499 = new C0942(i, this);
             }
             c1962.f6499.m2436(c1962);
@@ -229,7 +229,7 @@ public final class C1961 {
                     viewFindViewWithTag.setVisibility(0);
                 }
                 editText.setVisibility(0);
-                if (editText != dialogXBaseRelativeLayout) {
+                if (true) {
                     dialogXBaseRelativeLayout.f945 = new WeakReference(editText);
                 }
             } else {
@@ -240,7 +240,7 @@ public final class C1961 {
             }
             dialogXBaseRelativeLayout.setClickable(true);
             if (c1962.f6507 > -1.0f) {
-                maxRelativeLayout.setOutlineProvider(new C0692(i3, this));
+                maxRelativeLayout.setOutlineProvider(new C0692(1, this));
                 maxRelativeLayout.setClipToOutline(true);
                 ArrayList arrayList = this.f6480;
                 if (arrayList != null) {
@@ -303,27 +303,27 @@ public final class C1961 {
                 int length = iArrMo3725.length;
                 while (i < length) {
                     int i10 = iArrMo3725[i];
-                    if (i10 == i3) {
+                    if (i10 == 1) {
                         linearLayout.addView(textView);
                         abstractC2205.mo3727();
                         textView.setBackgroundResource(abstractC2205.mo3727().mo3723(c1962.m759()));
-                    } else if (i10 == i5) {
+                    } else if (i10 == 2) {
                         linearLayout.addView(textView2);
                         abstractC2205.mo3727();
                         textView2.setBackgroundResource(abstractC2205.mo3727().mo3722(c1962.m759()));
-                    } else if (i10 == i7) {
+                    } else if (i10 == 3) {
                         linearLayout.addView(textView3);
                         abstractC2205.mo3727();
                         textView3.setBackgroundResource(abstractC2205.mo3727().mo3724(c1962.m759()));
                     } else if (i10 == 4) {
-                        int i11 = i3;
-                        if (linearLayout.getChildCount() >= i11 && linearLayout.getChildAt(linearLayout.getChildCount() - i11).getVisibility() != 8) {
+                        int i11 = 1;
+                        if (linearLayout.getChildCount() >= 1 && linearLayout.getChildAt(linearLayout.getChildCount() - 1).getVisibility() != 8) {
                             Space space = new Space(c1962.m754());
                             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -2);
                             layoutParams.weight = 1.0f;
                             linearLayout.addView(space, layoutParams);
                         }
-                    } else if (i10 == 5 && linearLayout.getChildCount() >= i3 && linearLayout.getChildAt(linearLayout.getChildCount() - i3).getVisibility() != 8) {
+                    } else if (i10 == 5 && linearLayout.getChildCount() >= 1 && linearLayout.getChildAt(linearLayout.getChildCount() - 1).getVisibility() != 8) {
                         View view3 = new View(c1962.m754());
                         Resources resourcesM755 = c1962.m755();
                         c1962.m759();

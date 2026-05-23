@@ -70,7 +70,7 @@ public final class C3406 extends FrameLayout {
     @Override // android.view.View
     public final void onDraw(Canvas canvas) {
         double d = 2;
-        float f = ((-((float) Math.sqrt(((float) Math.pow(this.f10737 - this.f10741, d)) + ((float) Math.pow(this.f10736 - this.f10740, d))))) / 15) + 16.0f;
+        float f = ((-((float) Math.sqrt(((float) Math.pow(this.f10737 - this.f10741, 2.0)) + ((float) Math.pow(this.f10736 - this.f10740, 2.0))))) / 15) + 16.0f;
         this.f10742 = f;
         this.f10743 = f < 5.0f;
         double dAtan = (float) Math.atan((this.f10737 - this.f10741) / (this.f10736 - this.f10740));

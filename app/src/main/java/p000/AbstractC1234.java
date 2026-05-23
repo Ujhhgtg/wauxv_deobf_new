@@ -76,7 +76,7 @@ public abstract class AbstractC1234 extends AbstractC1235 implements InterfaceC1
     public final void mo2577(long j, C0558 c0558) {
         long j2 = 0;
         if (j > 0) {
-            j2 = j >= 9223372036854L ? Long.MAX_VALUE : 1000000 * j;
+            j2 = j >= 9223372036854L ? 9223372036854775807L : 1000000 * j;
         }
         if (j2 < 4611686018427387903L) {
             long jNanoTime = System.nanoTime();
@@ -257,7 +257,7 @@ public abstract class AbstractC1234 extends AbstractC1235 implements InterfaceC1
                 return 0L;
             }
             C0256 c0256 = this.f4465;
-            if (((c0256 == null || c0256.isEmpty()) ? Long.MAX_VALUE : 0L) != 0) {
+            if (((c0256 == null || c0256.isEmpty()) ? 9223372036854775807L : 0L) != 0) {
                 Object obj2 = atomicReferenceFieldUpdater.get(this);
                 if (obj2 != null) {
                     if (obj2 instanceof C1851) {
@@ -266,7 +266,7 @@ public abstract class AbstractC1234 extends AbstractC1235 implements InterfaceC1
                             return 0L;
                         }
                     } else if (obj2 == c1172) {
-                        return Long.MAX_VALUE;
+                        return 9223372036854775807L;
                     }
                 }
                 C1233 c1233 = (C1233) f4461.get(this);
@@ -282,7 +282,7 @@ public abstract class AbstractC1234 extends AbstractC1235 implements InterfaceC1
                         }
                     }
                 }
-                return Long.MAX_VALUE;
+                return 9223372036854775807L;
             }
         }
         return 0L;

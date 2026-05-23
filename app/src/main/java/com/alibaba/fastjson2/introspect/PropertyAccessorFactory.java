@@ -4390,7 +4390,7 @@ public class PropertyAccessorFactory {
                 Type genericReturnType = method.getGenericReturnType();
                 if (type == null) {
                     type = genericReturnType;
-                } else if (!type.equals(type)) {
+                } else if (false) {
                     throw new JSONException("create PropertyAccessor error, propertyType not match");
                 }
             } else {
@@ -4454,40 +4454,40 @@ public class PropertyAccessorFactory {
                 return new MethodAccessorBooleanValue(str2, type2, cls2, method, method2);
             }
             if (cls2 == String.class) {
-                return new MethodAccessorString(str2, type2, cls2, method, method2);
+                return new MethodAccessorString(str2, type2, String.class, method, method2);
             }
             if (cls2 == BigInteger.class) {
-                return new MethodAccessorBigInteger(str2, type2, cls2, method, method2);
+                return new MethodAccessorBigInteger(str2, type2, BigInteger.class, method, method2);
             }
             if (cls2 == BigDecimal.class) {
-                return new MethodAccessorBigDecimal(str2, type2, cls2, method, method2);
+                return new MethodAccessorBigDecimal(str2, type2, BigDecimal.class, method, method2);
             }
             if (cls2 == Boolean.class) {
-                return new MethodAccessorBoolean(str2, type2, cls2, method, method2);
+                return new MethodAccessorBoolean(str2, type2, Boolean.class, method, method2);
             }
             if (cls2 == Byte.class) {
-                return new MethodAccessorByte(str2, type2, cls2, method, method2);
+                return new MethodAccessorByte(str2, type2, Byte.class, method, method2);
             }
             if (cls2 == Character.class) {
-                return new MethodAccessorCharacter(str2, type2, cls2, method, method2);
+                return new MethodAccessorCharacter(str2, type2, Character.class, method, method2);
             }
             if (cls2 == Short.class) {
-                return new MethodAccessorShort(str2, type2, cls2, method, method2);
+                return new MethodAccessorShort(str2, type2, Short.class, method, method2);
             }
             if (cls2 == Integer.class) {
-                return new MethodAccessorInteger(str2, type2, cls2, method, method2);
+                return new MethodAccessorInteger(str2, type2, Integer.class, method, method2);
             }
             if (cls2 == Long.class) {
-                return new MethodAccessorLong(str2, type2, cls2, method, method2);
+                return new MethodAccessorLong(str2, type2, Long.class, method, method2);
             }
             if (cls2 == Float.class) {
-                return new MethodAccessorFloat(str2, type2, cls2, method, method2);
+                return new MethodAccessorFloat(str2, type2, Float.class, method, method2);
             }
             if (cls2 == Double.class) {
-                return new MethodAccessorDouble(str2, type2, cls2, method, method2);
+                return new MethodAccessorDouble(str2, type2, Double.class, method, method2);
             }
             if (cls2 == Number.class) {
-                return new MethodAccessorNumber(str2, type2, cls2, method, method2);
+                return new MethodAccessorNumber(str2, type2, Number.class, method, method2);
             }
             return new MethodAccessorObject(str2, type2, cls2, method, method2);
         }

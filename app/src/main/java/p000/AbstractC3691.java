@@ -1,7 +1,6 @@
 package p000;
 
 import java.time.ZoneId;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲇᛸᤞᲈᤝᲀᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -21,11 +20,11 @@ public abstract class AbstractC3691 {
         if (!C3692.m5357()) {
             C1982 c1982M4988 = AbstractC3453.m4988("__--");
             boolean zBooleanValue = false;
-            if (c1982M4988 != null && (bool = (Boolean) c1982M4988.m3832(new Object[0])) != null) {
+            if (c1982M4988 != null && (bool = (Boolean) c1982M4988.invoke(new Object[0])) != null) {
                 zBooleanValue = bool.booleanValue();
             }
             if (!zBooleanValue && !C3692.m5357()) {
-                int i = AbstractApplicationC2002.f6670;
+                int i = 0;
             }
         }
         try {

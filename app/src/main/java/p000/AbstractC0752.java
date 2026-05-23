@@ -12,9 +12,9 @@ public abstract class AbstractC0752 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static int m2222(double d, double d2, double d3) {
-        double d4 = (((-0.4986d) * d3) + (((-1.5372d) * d2) + (3.2406d * d))) / 100.0d;
-        double d5 = ((0.0415d * d3) + ((1.8758d * d2) + ((-0.9689d) * d))) / 100.0d;
-        double d6 = ((1.057d * d3) + (((-0.204d) * d2) + (0.0557d * d))) / 100.0d;
+        double d4 = (((-0.4986) * d3) + (((-1.5372) * d2) + (3.2406d * d))) / 100.0d;
+        double d5 = ((0.0415d * d3) + ((1.8758d * d2) + ((-0.9689) * d))) / 100.0d;
+        double d6 = ((1.057d * d3) + (((-0.204) * d2) + (0.0557d * d))) / 100.0d;
         double dPow = d4 > 0.0031308d ? (Math.pow(d4, 0.4166666666666667d) * 1.055d) - 0.055d : d4 * 12.92d;
         double dPow2 = d5 > 0.0031308d ? (Math.pow(d5, 0.4166666666666667d) * 1.055d) - 0.055d : d5 * 12.92d;
         double dPow3 = d6 > 0.0031308d ? (Math.pow(d6, 0.4166666666666667d) * 1.055d) - 0.055d : d6 * 12.92d;

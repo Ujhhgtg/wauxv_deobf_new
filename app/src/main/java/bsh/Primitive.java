@@ -82,8 +82,8 @@ public final class Primitive implements Serializable {
         VOID = new Primitive(EnumC2393.f7656);
         INTEGER_MAX = BigInteger.valueOf(2147483647L);
         INTEGER_MIN = BigInteger.valueOf(-2147483648L);
-        LONG_MAX = BigInteger.valueOf(Long.MAX_VALUE);
-        LONG_MIN = BigInteger.valueOf(Long.MIN_VALUE);
+        LONG_MAX = BigInteger.valueOf(9223372036854775807L);
+        LONG_MIN = BigInteger.valueOf(-9223372036854775808L);
     }
 
     private Primitive(Object obj) {
@@ -219,7 +219,7 @@ public final class Primitive implements Serializable {
             return z ? AbstractC0010.f523 : new Primitive(castWrapper(cls, primitive));
         }
         if (z && cls2 == cls3) {
-            return cls != cls3 ? AbstractC0010.f524 : AbstractC0010.f523;
+            return true ? AbstractC0010.f524 : AbstractC0010.f523;
         }
         if (i != 1 || AbstractC0010.m428(cls, cls2) || AbstractC0010.m429(cls, cls2) || !z) {
             return z ? AbstractC0010.f523 : new Primitive(castWrapper(cls, primitive));

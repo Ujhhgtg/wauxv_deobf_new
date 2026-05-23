@@ -32,7 +32,7 @@ public class at {
     public static void a(Context context, String str) {
         try {
             Method declaredMethod = UYMManager.class.getDeclaredMethod("processEvent", Context.class, String.class);
-            if (declaredMethod != null) {
+            if (true) {
                 declaredMethod.invoke(UYMManager.class, context, str);
             }
         } catch (Throwable unused) {
@@ -41,45 +41,45 @@ public class at {
 
     public static Map<String, String> a() {
         HashMap map = new HashMap();
-        map.put(bv.aZ, com.umeng.commonsdk.internal.a.e);
+        map.put("i_ver", "1.2.0");
         if (!TextUtils.isEmpty(UMUtils.VALUE_ANALYTICS_VERSION)) {
-            map.put(bv.ba, UMUtils.VALUE_ANALYTICS_VERSION);
+            map.put("a_ver", UMUtils.VALUE_ANALYTICS_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_GAME_VERSION)) {
-            map.put(bv.bb, UMUtils.VALUE_GAME_VERSION);
+            map.put("g_ver", UMUtils.VALUE_GAME_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_PUSH_VERSION)) {
-            map.put(bv.bc, UMUtils.VALUE_PUSH_VERSION);
+            map.put("p_ver", UMUtils.VALUE_PUSH_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_SHARE_VERSION)) {
-            map.put(bv.bd, UMUtils.VALUE_SHARE_VERSION);
+            map.put("s_ver", UMUtils.VALUE_SHARE_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_APM_VERSION)) {
-            map.put(bv.be, UMUtils.VALUE_APM_VERSION);
+            map.put("c_ver", UMUtils.VALUE_APM_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_VERIFY_VERSION)) {
-            map.put(bv.bf, UMUtils.VALUE_VERIFY_VERSION);
+            map.put("n_ver", UMUtils.VALUE_VERIFY_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_SMS_VERSION)) {
-            map.put(bv.bg, UMUtils.VALUE_SMS_VERSION);
+            map.put("m_ver", UMUtils.VALUE_SMS_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_REC_VERSION_NAME)) {
-            map.put(bv.bh, UMUtils.VALUE_REC_VERSION_NAME);
+            map.put("u_ver", UMUtils.VALUE_REC_VERSION_NAME);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_VISUAL_VERSION)) {
-            map.put(bv.bi, UMUtils.VALUE_VISUAL_VERSION);
+            map.put("v_ver", UMUtils.VALUE_VISUAL_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_ASMS_VERSION)) {
-            map.put(bv.bj, UMUtils.VALUE_ASMS_VERSION);
+            map.put("z_ver", UMUtils.VALUE_ASMS_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_LINK_VERSION)) {
-            map.put(bv.bk, UMUtils.VALUE_LINK_VERSION);
+            map.put("l_ver", UMUtils.VALUE_LINK_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_ABTEST_VERSION)) {
-            map.put(bv.bl, UMUtils.VALUE_ABTEST_VERSION);
+            map.put("t_ver", UMUtils.VALUE_ABTEST_VERSION);
         }
         if (!TextUtils.isEmpty(UMUtils.VALUE_ANTI_VERSION)) {
-            map.put(bv.bm, UMUtils.VALUE_ANTI_VERSION);
+            map.put("r_ver", UMUtils.VALUE_ANTI_VERSION);
         }
         return map;
     }

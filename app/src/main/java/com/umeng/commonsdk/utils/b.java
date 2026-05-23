@@ -32,16 +32,16 @@ public class b {
         synchronized (b) {
             try {
                 if (a.containsKey(str)) {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> pkg： " + str + ", pkgInfo缓存命中，直接返回");
+                    UMRTLog.e("MobclickRT", "--->>> pkg： " + str + ", pkgInfo缓存命中，直接返回");
                     packageInfo = a.get(str);
                 } else {
                     try {
                         packageInfo = context.getPackageManager().getPackageInfo(str, i);
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> pkg： " + str + ", 获取pkgInfo并缓存");
+                        UMRTLog.e("MobclickRT", "--->>> pkg： " + str + ", 获取pkgInfo并缓存");
                         a.put(str, packageInfo);
                     } catch (PackageManager.NameNotFoundException unused) {
                         a.put(str, null);
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> pkg: " + str + "，目标包未安装。");
+                        UMRTLog.e("MobclickRT", "--->>> pkg: " + str + "，目标包未安装。");
                         packageInfo = null;
                     }
                 }

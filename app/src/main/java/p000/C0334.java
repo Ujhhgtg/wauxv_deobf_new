@@ -121,7 +121,7 @@ public final class C0334 extends AbstractC2707 implements InterfaceC2335 {
                             zEquals = objMo306.equals(objMo307);
                         }
                         if (!zEquals) {
-                            while (i3 < length2) {
+                            while (true) {
                                 i = i3 + 1;
                                 InterfaceC2225 interfaceC2226 = this.f8721[i3];
                                 if (interfaceC2226 instanceof C0353) {

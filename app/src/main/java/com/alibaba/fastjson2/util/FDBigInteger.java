@@ -12,14 +12,14 @@ public final class FDBigInteger {
     private boolean immutable;
     private int nWords;
     private int offset;
-    private static final int[] SMALL_5_POW = {1, 5, 25, Opcodes.LUSHR, 625, 3125, 15625, 78125, 390625, 1953125, 9765625, 48828125, 244140625, 1220703125};
+    private static final int[] SMALL_5_POW = {1, 5, 25, 125, 625, 3125, 15625, 78125, 390625, 1953125, 9765625, 48828125, 244140625, 1220703125};
     private static final FDBigInteger[] POW_5_CACHE = new FDBigInteger[340];
 
     static {
         int i = 0;
         while (true) {
             int[] iArr = SMALL_5_POW;
-            if (i >= iArr.length) {
+            if (i >= 14) {
                 break;
             }
             FDBigInteger fDBigInteger = new FDBigInteger(new int[]{iArr[i]}, 0);
@@ -352,15 +352,15 @@ public final class FDBigInteger {
             i7++;
         }
         while (i4 < i3) {
-            char c2 = c;
-            long j4 = j;
-            long j5 = ((((long) iArr[i4]) & j) - (((long) iArrCopyOf[i7]) & j4)) + j2;
+            char c2 = 32;
+            long j4 = 4294967295L;
+            long j5 = ((((long) iArr[i4]) & 4294967295L) - (((long) iArrCopyOf[i7]) & 4294967295L)) + j2;
             iArrCopyOf[i7] = (int) j5;
-            j2 = j5 >> c2;
+            j2 = j5 >> 32;
             i7++;
             i4++;
-            c = c2;
-            j = j4;
+            c = 32;
+            j = 4294967295L;
         }
         fDBigInteger2.nWords = i7;
         fDBigInteger2.trimLeadingZeros();
@@ -473,7 +473,7 @@ public final class FDBigInteger {
         int i4 = i2 - 5;
         while (i < i4) {
             int i5 = i + 5;
-            int i6 = bArr[i] + JSONB.Constants.BC_INT64_BYTE_ZERO;
+            int i6 = bArr[i] + -48;
             i++;
             while (i < i5) {
                 i6 = ((i6 * 10) + bArr[i]) - 48;

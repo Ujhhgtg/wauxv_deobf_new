@@ -1,6 +1,5 @@
 package p000;
 
-import com.umeng.analytics.pro.g;
 import java.util.Iterator;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲁᲀᲈᛸᲇᤞ, reason: contains not printable characters */
@@ -30,7 +29,7 @@ public abstract /* synthetic */ class AbstractC1194 {
             return "warn";
         }
         if (i == 4) {
-            return g.U;
+            return "error";
         }
         if (i == 5) {
             return "off";
@@ -51,14 +50,14 @@ public abstract /* synthetic */ class AbstractC1194 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static ClassCastException m2777(Iterator it) {
-        it.next().getClass();
+        
         return new ClassCastException();
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
-    public static Object m2778(C1973 c1973) {
+    public static Object m2778(MethodResolver c1973) {
         c1973.m2887();
-        return AbstractC0744.m2191(c1973.m3799());
+        return AbstractC0744.firstInList(c1973.m3799());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */

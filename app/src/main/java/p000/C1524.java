@@ -55,7 +55,7 @@ public final class C1524 extends AbstractC0054 {
                                         case '\t':
                                         case '\n':
                                         case 11:
-                                        case Opcodes.FCONST_1 /* 12 */:
+                                        case 12 /* 12 */:
                                         case '\r':
                                             break;
                                     }

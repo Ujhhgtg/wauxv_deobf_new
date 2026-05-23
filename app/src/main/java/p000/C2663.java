@@ -12,13 +12,13 @@ public final class C2663 extends AbstractC1823 implements InterfaceC1582 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲈᲇ, reason: contains not printable characters */
     public static Object m4656(Class cls) {
-        return AbstractC1574.m3315(C2662.f8576).invoke(null, cls);
+        return AbstractC1574.dexToMethod(C2662.f8576).invoke(null, cls);
     }
 
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2662.f8576, dexKitBridge, new C2659(4));
+        AbstractC1574.findMethod(C2662.f8576, dexKitBridge, new C2659(4));
     }
 
     @Override // p000.AbstractC1557

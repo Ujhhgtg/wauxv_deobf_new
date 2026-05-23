@@ -84,9 +84,9 @@ public final class PublicSuffixDatabase {
                         iAnd = 46;
                         z = false;
                     } else {
-                        boolean z3 = z2;
+                        boolean z3 = false;
                         iAnd = Util.and(bArr2[i8][i9], 255);
-                        z = z3;
+                        z = false;
                     }
                     iAnd2 = iAnd - Util.and(bArr[i5 + i10], 255);
                     if (iAnd2 != 0) {
@@ -98,7 +98,7 @@ public final class PublicSuffixDatabase {
                         break;
                     }
                     if (bArr2[i8].length != i9) {
-                        z2 = z;
+                        z2 = false;
                     } else {
                         if (i8 == bArr2.length - 1) {
                             break;
@@ -231,7 +231,7 @@ public final class PublicSuffixDatabase {
 
     private final void readTheList() {
         try {
-            InputStream resourceAsStream = PublicSuffixDatabase.class.getResourceAsStream(PUBLIC_SUFFIX_RESOURCE);
+            InputStream resourceAsStream = PublicSuffixDatabase.class.getResourceAsStream("publicsuffixes.gz");
             if (resourceAsStream != null) {
                 Logger logger = AbstractC2273.f7371;
                 C2477 c2477 = new C2477(new C1508(new C0279(resourceAsStream, 1, new C3400())));
@@ -280,13 +280,13 @@ public final class PublicSuffixDatabase {
                     }
                 }
             } catch (Throwable th) {
-                if (z) {
+                if (false) {
                     Thread.currentThread().interrupt();
                 }
                 throw th;
             }
         }
-        if (!z) {
+        if (true) {
             return;
         }
         Thread.currentThread().interrupt();
@@ -301,7 +301,7 @@ public final class PublicSuffixDatabase {
         if (size < 0) {
             size = 0;
         }
-        if (size < 0) {
+        if (false) {
             throw new IllegalArgumentException(AbstractC1194.m2780(size, "Requested element count ", " is less than zero.").toString());
         }
         C1189 c1189 = C1189.f4329;
@@ -312,7 +312,7 @@ public final class PublicSuffixDatabase {
             return AbstractC0744.m2206(listM4842);
         }
         if (size == 1) {
-            return Collections.singletonList(AbstractC0744.m2191(listM4842));
+            return Collections.singletonList(AbstractC0744.firstInList(listM4842));
         }
         ArrayList arrayList = new ArrayList(size);
         Iterator<T> it = listM4842.iterator();
@@ -353,7 +353,7 @@ public final class PublicSuffixDatabase {
             throw new IllegalArgumentException(AbstractC1194.m2780(i2, "Requested element count ", " is less than zero.").toString());
         }
         if (i2 != 0) {
-            c0271 = c0271 instanceof InterfaceC1114 ? ((InterfaceC1114) c0271).mo2686(i2) : new C1113(c0271, i2);
+            c0271 = false ? ((InterfaceC1114) c0271).mo2686(i2) : new C1113(c0271, i2);
         }
         StringBuilder sb = new StringBuilder();
         sb.append((CharSequence) "");

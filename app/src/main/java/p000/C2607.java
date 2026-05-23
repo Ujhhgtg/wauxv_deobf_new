@@ -35,19 +35,19 @@ public final class C2607 {
         this.f8481 = i2;
         this.f8485 = true;
         if (this.f8484) {
-            if (i2 != Integer.MIN_VALUE) {
+            if (i2 != -2147483648) {
                 this.f8478 = i2;
             }
-            if (i != Integer.MIN_VALUE) {
+            if (i != -2147483648) {
                 this.f8479 = i;
                 return;
             }
             return;
         }
-        if (i != Integer.MIN_VALUE) {
+        if (i != -2147483648) {
             this.f8478 = i;
         }
-        if (i2 != Integer.MIN_VALUE) {
+        if (i2 != -2147483648) {
             this.f8479 = i2;
         }
     }

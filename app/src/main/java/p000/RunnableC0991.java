@@ -44,7 +44,7 @@ public final class RunnableC0991 implements Runnable {
                         int i2 = c0996.f3638;
                         int i3 = c0996.f3639;
                         int i4 = c0996.f3640;
-                        c0997.getClass();
+                        
                         View view = abstractC2508.f8006;
                         int i5 = i3 - i;
                         int i6 = i4 - i2;
@@ -105,7 +105,7 @@ public final class RunnableC0991 implements Runnable {
                         c0999.f3647.remove(arrayList4);
                     } else {
                         AbstractC2508 abstractC25011 = (AbstractC2508) it3.next();
-                        c0999.getClass();
+                        
                         View view4 = abstractC25011.f8006;
                         ViewPropertyAnimator viewPropertyAnimatorAnimate3 = view4.animate();
                         c0999.f3650.add(abstractC25011);

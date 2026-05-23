@@ -28,7 +28,7 @@ public final class C0800 extends AbstractC2482 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
     public static void m2351(C0800 c0800, List list) {
-        c0800.getClass();
+        
         if (list == null) {
             list = C1189.f4329;
         }
@@ -99,8 +99,8 @@ public final class C0800 extends AbstractC2482 {
             C0321 c0321 = C0321.f1572;
             ImageView imageView = (ImageView) c2452.m4425(R.id.itemContactImageViewAvatar);
             String str = c0801.f3160;
-            c0321.getClass();
-            XposedBridge.invokeOriginalMethod(AbstractC1574.m3315(C0320.f1571), (Object) null, new Object[]{imageView, str, Float.valueOf(0.1f), Boolean.FALSE});
+            
+            XposedBridge.invokeOriginalMethod(AbstractC1574.dexToMethod(C0320.f1571), (Object) null, new Object[]{imageView, str, Float.valueOf(0.1f), Boolean.FALSE});
             ((TextView) c2452.m4425(R.id.itemContactTextViewName)).setText(c0801.f3161);
             ((TextView) c2452.m4425(R.id.itemContactTextViewDesc)).setText(c0801.f3162);
         }

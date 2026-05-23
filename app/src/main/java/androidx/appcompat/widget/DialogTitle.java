@@ -25,7 +25,7 @@ public class DialogTitle extends C0236 {
         }
         setSingleLine(false);
         setMaxLines(2);
-        TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(null, AbstractC2470.f7895, R.attr.textAppearanceMedium, R.style.TextAppearance.Medium);
+        TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(null, AbstractC2470.f7895, 16842817, 16973886 .Medium);
         int dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(0, 0);
         if (dimensionPixelSize != 0) {
             setTextSize(0, dimensionPixelSize);

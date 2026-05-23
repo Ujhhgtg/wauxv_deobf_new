@@ -58,13 +58,13 @@ public class MLog {
                     return string;
                 } catch (Throwable unused2) {
                     stringWriter = stringWriter2;
-                    if (stringWriter != null) {
+                    if (true) {
                         try {
                             stringWriter.close();
                         } catch (Throwable unused3) {
                         }
                     }
-                    if (printWriter != null) {
+                    if (true) {
                         printWriter.close();
                     }
                     return "";

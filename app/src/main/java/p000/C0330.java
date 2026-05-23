@@ -54,8 +54,8 @@ public final class C0330 extends AbstractC2707 implements InterfaceC2335 {
             }
         }
         C0348 c0348 = (C0348) this.f8721[0];
-        runnableC1668.getClass();
-        c0348.getClass();
+        
+        
         C1751 c1751 = (C1751) c0348.m1459(c0550, runnableC1668, !c0348.f1651);
         Class clsM419 = null;
         if (this.f1584.intValue() != 87) {
@@ -109,33 +109,33 @@ public final class C0330 extends AbstractC2707 implements InterfaceC2335 {
                 case 127:
                     return c1751.m3497(m1441(objM3498, 107, objMo306), false);
                 case 128:
-                    return c1751.m3497(m1441(objM3498, Opcodes.IDIV, objMo306), false);
-                case Opcodes.LOR /* 129 */:
-                    return c1751.m3497(m1441(objM3498, Opcodes.LDIV, objMo306), false);
-                case Opcodes.IXOR /* 130 */:
-                case Opcodes.LXOR /* 131 */:
-                    return c1751.m3497(m1441(objM3498, UMErrorCode.E_UM_BE_JSON_FAILED, objMo306), false);
-                case Opcodes.IINC /* 132 */:
-                case Opcodes.I2L /* 133 */:
+                    return c1751.m3497(m1441(objM3498, 108, objMo306), false);
+                case 129 /* 129 */:
+                    return c1751.m3497(m1441(objM3498, 109, objMo306), false);
+                case 130 /* 130 */:
+                case 131 /* 131 */:
+                    return c1751.m3497(m1441(objM3498, 110, objMo306), false);
+                case 132 /* 132 */:
+                case 133 /* 133 */:
                     return c1751.m3497(m1441(objM3498, 112, objMo306), false);
-                case Opcodes.I2F /* 134 */:
-                case Opcodes.I2D /* 135 */:
-                    return c1751.m3497(m1441(objM3498, UMErrorCode.E_UM_BE_FILE_OVERSIZE, objMo306), false);
-                case Opcodes.L2I /* 136 */:
+                case 134 /* 134 */:
+                case 135 /* 135 */:
+                    return c1751.m3497(m1441(objM3498, 114, objMo306), false);
+                case 136 /* 136 */:
                 case 137:
-                    return c1751.m3497(m1441(objM3498, Opcodes.INEG, objMo306), false);
+                    return c1751.m3497(m1441(objM3498, 116, objMo306), false);
                 case 138:
-                case Opcodes.F2I /* 139 */:
-                    return c1751.m3497(m1441(objM3498, Opcodes.FNEG, objMo306), false);
-                case Opcodes.F2L /* 140 */:
+                case 139 /* 139 */:
+                    return c1751.m3497(m1441(objM3498, 118, objMo306), false);
+                case 140 /* 140 */:
                 case 141:
                     return c1751.m3497(m1441(objM3498, 120, objMo306), false);
-                case Opcodes.D2I /* 142 */:
-                case Opcodes.D2L /* 143 */:
+                case 142 /* 142 */:
+                case 143 /* 143 */:
                     return c1751.m3497(m1441(objM3498, 122, objMo306), false);
                 case 144:
-                case Opcodes.I2B /* 145 */:
-                    return c1751.m3497(m1441(objM3498, Opcodes.IUSHR, objMo306), false);
+                case 145 /* 145 */:
+                    return c1751.m3497(m1441(objM3498, 124, objMo306), false);
                 default:
                     throw new C1669("unimplemented operator in assignment BSH");
             }

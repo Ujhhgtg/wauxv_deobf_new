@@ -89,7 +89,7 @@ public final class C1712 extends AbstractC1459 {
             C3477 c3477M3989 = AbstractC2201.m3989(strM1165);
             if (c3477M3989 != null) {
                 int i = c3477M3989.f10972;
-                c3487 = Integer.compareUnsigned(i, Settings.DEFAULT_INITIAL_WINDOW_SIZE) > 0 ? null : new C3487((short) i);
+                c3487 = Integer.compareUnsigned(i, 65535) > 0 ? null : new C3487((short) i);
             }
             if (c3487 != null) {
                 return c3487.f10986;

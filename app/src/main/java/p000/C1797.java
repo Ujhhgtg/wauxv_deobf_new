@@ -32,7 +32,7 @@ public final class C1797 extends URLSpan {
 
     @Override // android.text.style.ClickableSpan, android.text.style.CharacterStyle
     public final void updateDrawState(TextPaint textPaint) {
-        this.f6004.getClass();
+        
         textPaint.setUnderlineText(true);
         textPaint.setColor(textPaint.linkColor);
     }

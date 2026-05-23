@@ -3,7 +3,7 @@ package p000;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
+
 import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -16,7 +16,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -43,7 +42,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
         int i2 = 9;
         int i3 = 10;
         int i4 = 0;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         switch (i) {
             case 0:
                 return Boolean.valueOf(((Member) obj2).isSynthetic() != ((Boolean) obj).booleanValue());
@@ -94,7 +93,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     intent.putExtra("Kdescription", strM2196);
                     context.startActivity(intent);
                 }
-                return c3497;
+                return unit;
             case 8:
                 Context context2 = (Context) obj;
                 List<MsgInfoBean> list = (List) obj2;
@@ -117,7 +116,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     if (msgInfoBean3 != null) {
                         C1616 c1616 = C1616.f5487;
                         Object origin = msgInfoBean3.getOrigin();
-                        c1616.getClass();
+                        
                         strM3344 = C1616.m3344(origin);
                     } else {
                         strM3344 = null;
@@ -135,7 +134,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     intent2.putExtra("Kdescription", strM2197);
                     context2.startActivity(intent2);
                 }
-                return c3497;
+                return unit;
             case 9:
                 Context context3 = (Context) obj;
                 List<MsgInfoBean> list2 = (List) obj2;
@@ -164,13 +163,12 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     String strM2198 = AbstractC0744.m2196(arrayList5, "\n", null, null, null, 62);
                     C3558 c3558 = C3558.f11162;
                     String str2 = (String) AbstractC0744.m2197(arrayList6);
-                    c3558.getClass();
+                    
                     String strM5145 = C3558.m5145(str2);
                     String str3 = (String) AbstractC0744.m2197(arrayList6);
-                    Method methodM3315 = AbstractC1574.m3315(C3556.f11160);
-                    C3555.f11159.getClass();
+                    Method methodM3315 = AbstractC1574.dexToMethod(C3556.f11160);
+                    
                     Object objInvoke = methodM3315.invoke(C3555.m5144(), str3);
-                    "null cannot be cast to non-null type kotlin.String";
                     Intent intent3 = new Intent();
                     intent3.setClassName(context3, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
                     intent3.putExtra("Ksnsupload_type", 14);
@@ -179,7 +177,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     intent3.putExtra("Kdescription", strM2198);
                     context3.startActivity(intent3);
                 }
-                return c3497;
+                return unit;
             case 10:
                 ArrayList arrayList7 = new ArrayList();
                 for (Object obj3 : (List) obj2) {
@@ -196,11 +194,11 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     C2186 c2186 = C2186.f7147;
                     String[] strArr4 = AbstractC1574.f5469;
                     String str4 = "你撤回了一条消息";
-                    c2186.getClass();
-                    C2079.f6881.getClass();
-                    C2180.m3960(C2180.f7141, AbstractC1574.m3314(C2185.f7146).newInstance(C2079.m3883(msgId), str4, ""));
+                    
+                    
+                    C2180.addNetSceneToQueue(AbstractC1574.dexToCtor(C2185.f7146).newInstance(C2079.m3883(msgId), "你撤回了一条消息", ""));
                 }
-                return c3497;
+                return unit;
             case 11:
                 List<MsgInfoBean> list3 = (List) obj2;
                 ArrayList arrayList8 = new ArrayList();
@@ -224,14 +222,14 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     }
                 }
                 if (!arrayList8.isEmpty() && !arrayList9.isEmpty()) {
-                    AbstractC1458.m3166(C2034.f6800, new C2033(arrayList8, arrayList9, i4));
+                    AbstractC1458.m3166(C2034.f6800, new C2033(arrayList8, arrayList9, 0));
                 }
-                return c3497;
-            case Opcodes.FCONST_1 /* 12 */:
-                int i6 = AbstractC1745.f5844;
-                C1973 c1973M3492 = AbstractC0968.m2484(obj).m3492();
-                c1973M3492.f6543 = AbstractC2519.m4527(Activity.class);
-                Activity activity = (Activity) ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3832(new Object[0]);
+                return unit;
+            case 12 /* 12 */:
+                int i6 = 0;
+                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
+                c1973M3492.returnType = AbstractC2519.classToKClass(Activity.class);
+                Activity activity = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0]);
                 String content5 = ((MsgInfoBean) obj2).getContent();
                 Intent intent4 = new Intent();
                 String[] strArr5 = AbstractC1574.f5469;
@@ -239,98 +237,95 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                 intent4.putExtra("Ksnsupload_type", 9);
                 intent4.putExtra("Kdescription", content5);
                 activity.startActivity(intent4);
-                return c3497;
+                return unit;
             case 13:
-                int i7 = AbstractC1745.f5844;
-                C1973 c1973M3493 = AbstractC0968.m2484(obj).m3492();
-                c1973M3493.f6543 = AbstractC2519.m4527(Activity.class);
-                Activity activity2 = (Activity) ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3832(new Object[0]);
+                int i7 = 0;
+                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(obj).m3492();
+                c1973M3493.returnType = AbstractC2519.classToKClass(Activity.class);
+                Activity activity2 = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).invoke(new Object[0]);
                 C1616 c1617 = C1616.f5487;
                 Object origin2 = ((MsgInfoBean) obj2).getOrigin();
-                c1617.getClass();
+                
                 ArrayList<String> arrayList10 = new ArrayList<>(new C0253(new String[]{C1616.m3344(origin2)}, true));
                 String[] strArr6 = AbstractC1574.f5469;
                 String str5 = "";
                 Intent intent5 = new Intent();
                 intent5.setClassName(activity2, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
                 intent5.putStringArrayListExtra("sns_kemdia_path_list", arrayList10);
-                intent5.putExtra("Kdescription", str5);
+                intent5.putExtra("Kdescription", "");
                 activity2.startActivity(intent5);
-                return c3497;
-            case Opcodes.DCONST_0 /* 14 */:
-                int i8 = AbstractC1745.f5844;
-                C1973 c1973M3494 = AbstractC0968.m2484(obj).m3492();
-                c1973M3494.f6543 = AbstractC2519.m4527(Activity.class);
-                Activity activity3 = (Activity) ((C1982) AbstractC0744.m2191(c1973M3494.m3799())).m3832(new Object[0]);
+                return unit;
+            case 14 /* 14 */:
+                int i8 = 0;
+                MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(obj).m3492();
+                c1973M3494.returnType = AbstractC2519.classToKClass(Activity.class);
+                Activity activity3 = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).invoke(new Object[0]);
                 String imgPath2 = ((MsgInfoBean) obj2).getImgPath();
-                C3558.f11162.getClass();
+                
                 String strM5146 = C3558.m5145(imgPath2);
-                Method methodM3316 = AbstractC1574.m3315(C3556.f11160);
-                C3555.f11159.getClass();
+                Method methodM3316 = AbstractC1574.dexToMethod(C3556.f11160);
+                
                 Object objInvoke2 = methodM3316.invoke(C3555.m5144(), imgPath2);
                 String[] strArr7 = AbstractC1574.f5469;
-                "null cannot be cast to non-null type kotlin.String";
                 String str6 = "";
                 Intent intent6 = new Intent();
                 intent6.setClassName(activity3, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
                 intent6.putExtra("Ksnsupload_type", 14);
                 intent6.putExtra("KSightPath", strM5146);
                 intent6.putExtra("KSightThumbPath", (String) objInvoke2);
-                intent6.putExtra("Kdescription", str6);
+                intent6.putExtra("Kdescription", "");
                 activity3.startActivity(intent6);
-                return c3497;
+                return unit;
             case 15:
                 MsgInfoBean msgInfoBean9 = (MsgInfoBean) obj2;
                 String talker = msgInfoBean9.getTalker();
                 String content6 = msgInfoBean9.getContent();
                 C2523 c2523 = new C2523("\\[AtWx=([^]]+)]");
-                List listM4655 = AbstractC2652.m4655(new C1009(C2523.m4530(c2523, content6), new C2158(i2), 2));
-                String strM4531 = c2523.m4531(content6, new C2158(i3));
+                List listM4655 = AbstractC2652.m4655(new C1009(C2523.m4530(c2523, content6), new C2158(9), 2));
+                String strM4531 = c2523.m4531(content6, new C2158(10));
                 C2173 c2173 = C2173.f7134;
                 int i9 = EnumC3673.f11469.f11492;
                 boolean z = !listM4655.isEmpty();
-                c2173.getClass();
-                C2180.m3960(C2180.f7141, C2173.m3958(talker, strM4531, i9, z, listM4655));
-                return c3497;
+                
+                C2180.addNetSceneToQueue(C2173.m3958(talker, strM4531, i9, z, listM4655));
+                return unit;
             case 16:
                 MsgInfoBean msgInfoBean10 = (MsgInfoBean) obj2;
-                C1616 c1618 = C1616.f5487;
                 Object origin3 = msgInfoBean10.getOrigin();
-                c1618.getClass();
                 C1133.m2718(msgInfoBean10.getTalker(), C1616.m3344(origin3), null);
-                return c3497;
-            case Opcodes.SIPUSH /* 17 */:
+                return unit;
+            case 17 /* 17 */:
                 MsgInfoBean msgInfoBean11 = (MsgInfoBean) obj2;
                 C1133.m2721(Integer.parseInt(msgInfoBean11.getContent()), msgInfoBean11.getTalker(), C3624.m5220(C3624.f11326, msgInfoBean11.getImgPath()));
-                return c3497;
-            case Opcodes.LDC /* 18 */:
+                return unit;
+            case 18 /* 18 */:
                 MsgInfoBean msgInfoBean12 = (MsgInfoBean) obj2;
                 C3558 c3559 = C3558.f11162;
                 String imgPath3 = msgInfoBean12.getImgPath();
-                c3559.getClass();
+                
                 C1133.m2720(msgInfoBean12.getTalker(), C3558.m5145(imgPath3));
-                return c3497;
+                return unit;
             case 19:
                 MsgInfoBean msgInfoBean13 = (MsgInfoBean) obj2;
                 C1164 c1164 = C1164.f4291;
                 String imgPath4 = msgInfoBean13.getImgPath();
-                c1164.getClass();
+                
                 C1170.m2763(C1170.f4301, msgInfoBean13.getTalker(), C1164.m2761(imgPath4));
-                return c3497;
+                return unit;
             case 20:
                 MsgInfoBean msgInfoBean14 = (MsgInfoBean) obj2;
                 String talker2 = msgInfoBean14.getTalker();
                 String title = msgInfoBean14.getQuoteMsg().getTitle();
                 C2523 c2524 = new C2523("\\[AtWx=([^]]+)]");
-                List listM4656 = AbstractC2652.m4655(new C1009(C2523.m4530(c2524, title), new C2158(i2), 2));
-                String strM4532 = c2524.m4531(title, new C2158(i3));
+                List listM4656 = AbstractC2652.m4655(new C1009(C2523.m4530(c2524, title), new C2158(9), 2));
+                String strM4532 = c2524.m4531(title, new C2158(10));
                 C2173 c2174 = C2173.f7134;
                 int i10 = EnumC3673.f11469.f11492;
                 boolean z2 = !listM4656.isEmpty();
-                c2174.getClass();
-                C2180.m3960(C2180.f7141, C2173.m3958(talker2, strM4532, i10, z2, listM4656));
-                return c3497;
-            case Opcodes.ILOAD /* 21 */:
+                
+                C2180.addNetSceneToQueue(C2173.m3958(talker2, strM4532, i10, z2, listM4656));
+                return unit;
+            case 21 /* 21 */:
                 InterfaceC0875 interfaceC0875 = (InterfaceC0875) obj2;
                 if (!(interfaceC0875 instanceof InterfaceC2919)) {
                     return obj;
@@ -338,7 +333,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                 Integer num = obj instanceof Integer ? (Integer) obj : null;
                 int iIntValue = num != null ? num.intValue() : 1;
                 return iIntValue == 0 ? interfaceC0875 : Integer.valueOf(iIntValue + 1);
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 InterfaceC2919 interfaceC2919 = (InterfaceC2919) obj;
                 InterfaceC0875 interfaceC0876 = (InterfaceC0875) obj2;
                 if (interfaceC2919 != null) {
@@ -348,9 +343,9 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     return (InterfaceC2919) interfaceC0876;
                 }
                 return null;
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return (C2922) obj;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 int iIntValue2 = ((Integer) obj).intValue();
                 List list4 = (List) obj2;
                 String[] strArr8 = AbstractC1574.f5469;
@@ -400,8 +395,8 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     AbstractC2834.m4819(sb2.toString());
                     AbstractC2834.m4823(null, 3, "复制视频成功");
                 }
-                return c3497;
-            case Opcodes.ALOAD /* 25 */:
+                return unit;
+            case 25 /* 25 */:
                 int iIntValue3 = ((Integer) obj).intValue();
                 List list5 = (List) obj2;
                 String[] strArr9 = AbstractC1574.f5469;
@@ -438,7 +433,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                         AbstractC0968.m2486(ExecutorC0990.f3609, new C3609(str9, string7, jSONObjectOptJSONObject2, interfaceC0842, 0));
                     }
                 }
-                return c3497;
+                return unit;
             case 26:
                 int iIntValue4 = ((Integer) obj).intValue();
                 List list6 = (List) obj2;
@@ -489,7 +484,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     AbstractC2834.m4819(sb4.toString());
                     AbstractC2834.m4823(null, 3, "复制视频成功");
                 }
-                return c3497;
+                return unit;
             case 27:
                 int iIntValue5 = ((Integer) obj).intValue();
                 List list7 = (List) obj2;
@@ -527,11 +522,11 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                         AbstractC0968.m2486(ExecutorC0990.f3609, new C3609(str12, string17, jSONObjectOptJSONObject4, interfaceC0843, 1));
                     }
                 }
-                return c3497;
+                return unit;
             case 28:
                 MsgInfoBean msgInfoBean15 = (MsgInfoBean) obj2;
-                AbstractC1458.m3166(C3616.f11309, new C3614(C3624.m5220(C3624.f11326, msgInfoBean15.getImgPath()), Integer.parseInt(msgInfoBean15.getContent()), i4));
-                return c3497;
+                AbstractC1458.m3166(C3616.f11309, new C3614(C3624.m5220(C3624.f11326, msgInfoBean15.getImgPath()), Integer.parseInt(msgInfoBean15.getContent()), 0));
+                return unit;
             default:
                 MsgInfoBean msgInfoBean16 = (MsgInfoBean) obj2;
                 String[] strArr12 = AbstractC1574.f5469;
@@ -544,7 +539,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     String str13 = msgId2 + '-' + imgPath5 + '-' + System.currentTimeMillis() + ".mp3";
                     AbstractC1328.m3042(AbstractC1459.m3196(new File(strM5221)), new File(file, str13));
                     AbstractC2834.m4823(null, 3, "已保存到: " + file.getAbsolutePath() + '/' + str13);
-                    c2585 = c3497;
+                    c2585 = unit;
                 } catch (Throwable th) {
                     c2585 = new C2585(th);
                 }
@@ -556,7 +551,7 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                     sb5.append(message != null ? AbstractC2841.m4847(50, message) : "未知错误");
                     AbstractC2834.m4823(null, 3, sb5.toString());
                 }
-                return c3497;
+                return unit;
         }
     }
 }

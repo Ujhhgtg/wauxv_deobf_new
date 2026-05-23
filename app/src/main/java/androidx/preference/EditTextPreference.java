@@ -13,7 +13,7 @@ import p000.C0373;
 public class EditTextPreference extends DialogPreference {
     /* JADX WARN: Illegal instructions before constructor call */
     public EditTextPreference(Context context, AttributeSet attributeSet) {
-        int iM3156 = AbstractC1458.m3156(context, R.attr.editTextPreferenceStyle, android.R.attr.editTextPreferenceStyle);
+        int iM3156 = AbstractC1458.m3156(context, R.attr.editTextPreferenceStyle, 16842898);
         super(context, attributeSet, iM3156);
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC2465.f7829, iM3156, 0);
         if (typedArrayObtainStyledAttributes.getBoolean(0, typedArrayObtainStyledAttributes.getBoolean(0, false))) {

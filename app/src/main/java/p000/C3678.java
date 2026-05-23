@@ -33,7 +33,7 @@ public final class C3678 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public static void m5307() {
-        int i = AbstractC1745.f5844;
+        int i = 0;
         C2873 c2873 = C1747.f5845;
         if (!((Boolean) C1747.f5846.getValue()).booleanValue()) {
             System.setProperty("org.slf4j.simpleLogger.defaultLogLevel", AbstractC1194.m2774(2));

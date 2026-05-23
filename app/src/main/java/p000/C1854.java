@@ -40,7 +40,7 @@ public final class C1854 extends Writer {
     public final void m3621() {
         StringBuilder sb = this.f6170;
         if (sb.length() > 0) {
-            Log.d(this.f6169, sb.toString());
+            Log.d("FragmentManager", sb.toString());
             sb.delete(0, sb.length());
         }
     }

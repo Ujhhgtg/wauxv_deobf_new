@@ -21,7 +21,7 @@ public final class C0840 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C0839.f3239, dexKitBridge, new C0807(14));
+        AbstractC1574.findMethod(C0839.f3239, dexKitBridge, new C0807(14));
     }
 
     @Override // p000.AbstractC1823, p000.AbstractC1557
@@ -33,7 +33,7 @@ public final class C0840 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        C3689 c3689M4172 = C2309.m4172(f3240, Collections.singletonList(AbstractC1574.m3315(C0839.f3239)));
+        C3689 c3689M4172 = C2309.m4172(f3240, Collections.singletonList(AbstractC1574.dexToMethod(C0839.f3239)));
         c3689M4172.m5351(new C0807(16));
         c3689M4172.m5352();
     }

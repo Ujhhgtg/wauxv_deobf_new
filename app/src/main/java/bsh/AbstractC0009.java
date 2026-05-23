@@ -469,7 +469,7 @@ public abstract class AbstractC0009 {
     public static Object m393(Object obj, String str) {
         Map map = AbstractC0010.f522;
         if (obj instanceof Map.Entry) {
-            str.getClass();
+            
             switch (str) {
                 case "key":
                     return ((Map.Entry) obj).getKey();

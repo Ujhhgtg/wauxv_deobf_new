@@ -255,7 +255,7 @@ public final class C1809 extends AbstractC0064 implements RandomAccess, Serializ
                 i4 = i3;
             }
             if (i4 - 2147483639 > 0) {
-                i4 = i3 > 2147483639 ? Integer.MAX_VALUE : 2147483639;
+                i4 = i3 > 2147483639 ? 2147483647 : 2147483639;
             }
             this.f6044 = Arrays.copyOf(objArr, i4);
         }

@@ -271,7 +271,7 @@ public final class ViewOnKeyListenerC2808 extends AbstractC1947 implements Popup
             MenuC1944 menuC1944 = this.f8980;
             if (menuC1944.f6418 != null) {
                 FrameLayout frameLayout = (FrameLayout) LayoutInflater.from(context).inflate(R.layout.abc_popup_menu_header_item_layout, (ViewGroup) c1952, false);
-                TextView textView = (TextView) frameLayout.findViewById(android.R.id.title);
+                TextView textView = (TextView) frameLayout.findViewById(16908310);
                 if (textView != null) {
                     textView.setText(menuC1944.f6418);
                 }

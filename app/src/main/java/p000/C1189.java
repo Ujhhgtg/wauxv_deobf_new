@@ -120,7 +120,7 @@ public final class C1189 implements List, Serializable, RandomAccess, InterfaceC
     }
 
     public final String toString() {
-        return HttpUrl.PATH_SEGMENT_ENCODE_SET_URI;
+        return "[]";
     }
 
     @Override // java.util.List, java.util.Collection

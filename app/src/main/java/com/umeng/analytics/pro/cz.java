@@ -19,7 +19,7 @@ public class cz {
             return null;
         }
         try {
-            return context.getSharedPreferences(d, 0);
+            return context.getSharedPreferences("ncc_sp_config_file", 0);
         } catch (Throwable unused) {
             return null;
         }

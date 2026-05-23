@@ -99,14 +99,14 @@ public final class C0711 {
         int i16 = 0;
         while (true) {
             String str = "StackMap";
-            int i17 = i;
+            int i17 = 131072;
             int i18 = 8;
             if (c1983 == null) {
                 int i19 = i13;
-                int i20 = i12;
+                int i20 = 2;
                 int i21 = this.f2701 & 4096;
                 C2870 c2872 = this.f2700;
-                if (i21 == 0 || (this.f2699 & Settings.DEFAULT_INITIAL_WINDOW_SIZE) >= 49) {
+                if (i21 == 0 || (this.f2699 & 65535) >= 49) {
                     i2 = i19;
                     i3 = 0;
                 } else {
@@ -119,12 +119,12 @@ public final class C0711 {
                     i2 += 8;
                     c2872.m4871("Signature");
                 }
-                if ((this.f2701 & i17) != 0) {
+                if ((this.f2701 & 131072) != 0) {
                     i3++;
                     i2 += 6;
                     c2872.m4871("Deprecated");
                 }
-                c2872.getClass();
+                
                 C0516 c0516 = c2872.f9205;
                 int i22 = i2 + c0516.f2191;
                 if (c2872.f9204 > 65535) {
@@ -136,7 +136,7 @@ public final class C0711 {
                 c0517.m1823(this.f2699);
                 c0517.m1824(c2872.f9204);
                 c0517.m1822(c0516.f2191, c0516.f2190);
-                c0517.m1824((~((this.f2699 & Settings.DEFAULT_INITIAL_WINDOW_SIZE) < 49 ? 4096 : 0)) & this.f2701);
+                c0517.m1824((~((this.f2699 & 65535) < 49 ? 4096 : 0)) & this.f2701);
                 c0517.m1824(this.f2702);
                 c0517.m1824(this.f2703);
                 c0517.m1824(this.f2704);
@@ -149,7 +149,7 @@ public final class C0711 {
                     int i24 = c1317.f4760;
                     int i25 = c1317.f4757;
                     C2870 c2873 = (C2870) c1317.f4762;
-                    String str2 = str;
+                    String str2 = "StackMap";
                     C2870 c2874 = c2872;
                     boolean z = c2873.f9200 < 49;
                     c0517.m1824((~(z ? 4096 : 0)) & i25);
@@ -161,14 +161,14 @@ public final class C0711 {
                     if (i27 != 0 && z2) {
                         i26++;
                     }
-                    int i28 = i25 & i17;
+                    int i28 = i25 & 131072;
                     if (i28 != 0) {
                         i26++;
                     }
                     c0517.m1824(i26);
                     if (i24 != 0) {
                         c0517.m1824(c2873.m4871("ConstantValue"));
-                        c0517.m1823(i20);
+                        c0517.m1823(2);
                         c0517.m1824(i24);
                     }
                     if (i27 == 0 || !z2) {
@@ -180,15 +180,15 @@ public final class C0711 {
                     }
                     if (i28 != 0) {
                         c0517.m1824(c2873.m4871("Deprecated"));
-                        c0517.m1823(i9);
+                        c0517.m1823(0);
                     }
                     c1317 = (C1316) c1317.f4761;
-                    str = str2;
+                    str = "StackMap";
                     c2872 = c2874;
                     i20 = 2;
                 }
                 C2870 c2875 = c2872;
-                String str3 = str;
+                String str3 = "StackMap";
                 c0517.m1824(i16);
                 C1983 c1984 = this.f2708;
                 boolean z3 = false;
@@ -217,7 +217,7 @@ public final class C0711 {
                     if (i29 != 0) {
                         i32++;
                     }
-                    int i34 = i31 & i17;
+                    int i34 = i31 & 131072;
                     if (i34 != 0) {
                         i32++;
                     }
@@ -231,11 +231,11 @@ public final class C0711 {
                         for (C0243 c0243 = c1984.f6577; c0243 != null; c0243 = (C0243) c0243.f1406) {
                             i37++;
                         }
-                        i6 = i18;
-                        int iM4736 = AbstractC2784.m4736(i37, i6, 2, i36);
+                        i6 = 8;
+                        int iM4736 = AbstractC2784.m4736(i37, 8, 2, i36);
                         C0516 c0519 = c1984.f6579;
                         if (c0519 != null) {
-                            iM4736 += c0519.f2191 + i6;
+                            iM4736 += c0519.f2191 + 8;
                             i8 = 1;
                         } else {
                             i8 = 0;
@@ -259,7 +259,7 @@ public final class C0711 {
                         }
                         c0517.m1824(i8);
                         if (c1984.f6579 != null) {
-                            c0517.m1824(c2876.m4871(c2876.f9200 >= 50 ? "StackMapTable" : str3));
+                            c0517.m1824(c2876.m4871(c2876.f9200 >= 50 ? "StackMapTable" : "StackMap"));
                             c0517.m1823(c1984.f6579.f2191 + 2);
                             c0517.m1824(c1984.f6578);
                             C0516 c05110 = c1984.f6579;
@@ -287,13 +287,13 @@ public final class C0711 {
                             c0517.m1823(0);
                         }
                         c1984 = c1984.f6568;
-                        i18 = i6;
+                        i18 = 8;
                         z3 = z5;
                         z4 = z6;
                     } else {
                         i4 = i33;
                         i5 = i34;
-                        i6 = i18;
+                        i6 = 8;
                     }
                     if (i30 > 0) {
                         c0517.m1824(c2876.m4871("Exceptions"));
@@ -317,12 +317,12 @@ public final class C0711 {
                         c0517.m1823(0);
                     }
                     c1984 = c1984.f6568;
-                    i18 = i6;
+                    i18 = 8;
                     z3 = z5;
                     z4 = z6;
                 }
                 c0517.m1824(i3);
-                if ((this.f2701 & 4096) == 0 || (this.f2699 & Settings.DEFAULT_INITIAL_WINDOW_SIZE) >= 49) {
+                if ((this.f2701 & 4096) == 0 || (this.f2699 & 65535) >= 49) {
                     c2870 = c2875;
                 } else {
                     c2870 = c2875;
@@ -334,7 +334,7 @@ public final class C0711 {
                     c0517.m1823(2);
                     c0517.m1824(this.f2710);
                 }
-                if ((this.f2701 & i17) != 0) {
+                if ((this.f2701 & 131072) != 0) {
                     c0517.m1824(c2870.m4871("Deprecated"));
                     c0517.m1823(0);
                 }
@@ -355,7 +355,7 @@ public final class C0711 {
                 return m2136();
             }
             i16++;
-            int i40 = i12;
+            int i40 = 2;
             int i41 = c1983.f6570;
             int i42 = c1983.f6580;
             C2870 c2877 = c1983.f6569;
@@ -393,14 +393,14 @@ public final class C0711 {
                 c2877.m4871("Signature");
                 i10 += 8;
             }
-            if ((i41 & i17) != 0) {
+            if ((i41 & 131072) != 0) {
                 c2877.m4871("Deprecated");
                 i10 += 6;
             }
             i13 = i43 + i10;
             c1983 = c1983.f6568;
-            i = i17;
-            i12 = i40;
+            i = 131072;
+            i12 = 2;
         }
     }
 

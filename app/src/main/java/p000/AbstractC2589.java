@@ -13,19 +13,19 @@ import android.util.StateSet;
 public abstract class AbstractC2589 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
-    public static final int[] f8198 = {R.attr.state_pressed};
+    public static final int[] f8198 = {16842919};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
-    public static final int[] f8199 = {R.attr.state_focused};
+    public static final int[] f8199 = {16842908};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
-    public static final int[] f8200 = {R.attr.state_selected, R.attr.state_pressed};
+    public static final int[] f8200 = {16842913, 16842919};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public static final int[] f8201 = {R.attr.state_selected};
+    public static final int[] f8201 = {16842913};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
-    public static final int[] f8202 = {R.attr.state_enabled, R.attr.state_pressed};
+    public static final int[] f8202 = {16842910, 16842919};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final String f8203 = AbstractC2589.class.getSimpleName();

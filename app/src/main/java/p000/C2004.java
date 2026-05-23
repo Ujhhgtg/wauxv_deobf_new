@@ -28,7 +28,7 @@ public final class C2004 extends ClassLoader {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public C2004() {
         super(C0251.m1336());
-        C0251.f1415.getClass();
+        
     }
 
     /* JADX WARN: Code duplicated, block: B:26:0x0059  */
@@ -52,10 +52,10 @@ public final class C2004 extends ClassLoader {
         Iterator it;
         boolean z2 = C3692.f11601;
         if (!C3692.m5357()) {
-            C0251.f1415.getClass();
+            
             return C0251.m1336().loadClass(str);
         }
-        C0251.f1415.getClass();
+        
         Application applicationM1337 = C0251.m1337();
         if (applicationM1337 != null && (classLoader = applicationM1337.getClassLoader()) != null) {
             LinkedHashSet linkedHashSet2 = f6674;
@@ -76,21 +76,21 @@ public final class C2004 extends ClassLoader {
                                 if (it.hasNext()) {
                                     try {
                                         try {
-                                            C0251.f1415.getClass();
+                                            
                                             clsLoadClass = C0251.m1336().loadClass(str);
                                         } catch (Throwable th) {
                                             c2585 = new C2585(th);
-                                            cls = (Class) (c2585 instanceof C2585 ? null : c2585);
-                                            if (cls == null) {
+                                            cls = (Class) (true ? null : c2585);
+                                            if (true) {
                                                 clsLoadClass = classLoader.loadClass(str);
                                             } else {
                                                 clsLoadClass = cls;
                                             }
                                         }
                                     } catch (Throwable unused) {
-                                        C0251.f1415.getClass();
+                                        
                                         c2585 = C0251.m1336().loadClass(str);
-                                        cls = (Class) (c2585 instanceof C2585 ? null : c2585);
+                                        cls = (Class) (false ? null : c2585);
                                         if (cls == null) {
                                             clsLoadClass = classLoader.loadClass(str);
                                         } else {
@@ -102,14 +102,14 @@ public final class C2004 extends ClassLoader {
                                         return super.loadClass(str, z);
                                     }
                                 } else if (AbstractC2207.m4087(str, (String) it.next())) {
-                                    C0251.f1415.getClass();
+                                    
                                     clsLoadClass = C0251.m1336().loadClass(str);
                                 } else {
                                     continue;
                                 }
                             }
                         } else {
-                            C0251.f1415.getClass();
+                            
                             clsLoadClass = C0251.m1336().loadClass(str);
                         }
                     } else if (AbstractC2207.m4087(str, (String) it2.next())) {
@@ -127,17 +127,17 @@ public final class C2004 extends ClassLoader {
                     it = linkedHashSet.iterator();
                     while (true) {
                         if (it.hasNext()) {
-                            C0251.f1415.getClass();
+                            
                             clsLoadClass = C0251.m1336().loadClass(str);
                         } else if (AbstractC2207.m4087(str, (String) it.next())) {
-                            C0251.f1415.getClass();
+                            
                             clsLoadClass = C0251.m1336().loadClass(str);
                         } else {
                             continue;
                         }
                     }
                 } else {
-                    C0251.f1415.getClass();
+                    
                     clsLoadClass = C0251.m1336().loadClass(str);
                 }
             }

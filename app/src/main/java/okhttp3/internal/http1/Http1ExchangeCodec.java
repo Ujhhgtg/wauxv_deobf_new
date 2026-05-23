@@ -156,12 +156,12 @@ public final class Http1ExchangeCodec implements ExchangeCodec {
         public ChunkedSource(HttpUrl httpUrl) {
             super();
             this.url = httpUrl;
-            this.bytesRemainingInChunk = Http1ExchangeCodec.NO_CHUNK_YET;
+            this.bytesRemainingInChunk = -1L;
             this.hasMoreChunks = true;
         }
 
         private final void readChunkSize() throws ProtocolException {
-            if (this.bytesRemainingInChunk != Http1ExchangeCodec.NO_CHUNK_YET) {
+            if (this.bytesRemainingInChunk != -1L) {
                 Http1ExchangeCodec.this.source.mo1783();
             }
             try {
@@ -203,17 +203,17 @@ public final class Http1ExchangeCodec implements ExchangeCodec {
                 throw new IllegalStateException("closed");
             }
             if (!this.hasMoreChunks) {
-                return Http1ExchangeCodec.NO_CHUNK_YET;
+                return -1L;
             }
             long j2 = this.bytesRemainingInChunk;
-            if (j2 == 0 || j2 == Http1ExchangeCodec.NO_CHUNK_YET) {
+            if (j2 == 0 || j2 == -1L) {
                 readChunkSize();
                 if (!this.hasMoreChunks) {
-                    return Http1ExchangeCodec.NO_CHUNK_YET;
+                    return -1L;
                 }
             }
             long j3 = super.read(c0504, Math.min(j, this.bytesRemainingInChunk));
-            if (j3 != Http1ExchangeCodec.NO_CHUNK_YET) {
+            if (j3 != -1L) {
                 this.bytesRemainingInChunk -= j3;
                 return j3;
             }
@@ -268,10 +268,10 @@ public final class Http1ExchangeCodec implements ExchangeCodec {
             }
             long j2 = this.bytesRemaining;
             if (j2 == 0) {
-                return Http1ExchangeCodec.NO_CHUNK_YET;
+                return -1L;
             }
             long j3 = super.read(c0504, Math.min(j2, j));
-            if (j3 == Http1ExchangeCodec.NO_CHUNK_YET) {
+            if (j3 == -1L) {
                 Http1ExchangeCodec.this.getConnection().noNewExchanges$okhttp();
                 ProtocolException protocolException = new ProtocolException("unexpected end of stream");
                 responseBodyComplete();
@@ -356,15 +356,15 @@ public final class Http1ExchangeCodec implements ExchangeCodec {
                 throw new IllegalStateException("closed");
             }
             if (this.inputExhausted) {
-                return Http1ExchangeCodec.NO_CHUNK_YET;
+                return -1L;
             }
             long j2 = super.read(c0504, j);
-            if (j2 != Http1ExchangeCodec.NO_CHUNK_YET) {
+            if (j2 != -1L) {
                 return j2;
             }
             this.inputExhausted = true;
             responseBodyComplete();
-            return Http1ExchangeCodec.NO_CHUNK_YET;
+            return -1L;
         }
     }
 
@@ -442,7 +442,7 @@ public final class Http1ExchangeCodec implements ExchangeCodec {
         if (isChunked(request)) {
             return newChunkedSink();
         }
-        if (j != NO_CHUNK_YET) {
+        if (j != -1L) {
             return newKnownLengthSink();
         }
         throw new IllegalStateException("Cannot stream a request body without chunked encoding or a known content length!");
@@ -476,7 +476,7 @@ public final class Http1ExchangeCodec implements ExchangeCodec {
             return newChunkedSource(response.request().url());
         }
         long jHeadersContentLength = Util.headersContentLength(response);
-        return jHeadersContentLength != NO_CHUNK_YET ? newFixedLengthSource(jHeadersContentLength) : newUnknownLengthSource();
+        return jHeadersContentLength != -1L ? newFixedLengthSource(jHeadersContentLength) : newUnknownLengthSource();
     }
 
     @Override // okhttp3.internal.http.ExchangeCodec
@@ -510,18 +510,18 @@ public final class Http1ExchangeCodec implements ExchangeCodec {
     @Override // okhttp3.internal.http.ExchangeCodec
     public long reportedContentLength(Response response) {
         if (HttpHeaders.promisesBody(response)) {
-            return isChunked(response) ? NO_CHUNK_YET : Util.headersContentLength(response);
+            return isChunked(response) ? -1L : Util.headersContentLength(response);
         }
         return 0L;
     }
 
     public final void skipConnectBody(Response response) {
         long jHeadersContentLength = Util.headersContentLength(response);
-        if (jHeadersContentLength == NO_CHUNK_YET) {
+        if (jHeadersContentLength == -1L) {
             return;
         }
         InterfaceC2786 interfaceC2786NewFixedLengthSource = newFixedLengthSource(jHeadersContentLength);
-        Util.skipAll(interfaceC2786NewFixedLengthSource, Integer.MAX_VALUE, TimeUnit.MILLISECONDS);
+        Util.skipAll(interfaceC2786NewFixedLengthSource, 2147483647, TimeUnit.MILLISECONDS);
         interfaceC2786NewFixedLengthSource.close();
     }
 

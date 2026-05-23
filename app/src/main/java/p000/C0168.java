@@ -17,7 +17,7 @@ public final class C0168 extends AbstractC1460 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᤞᲇᲈ, reason: contains not printable characters */
     public static void m1218(C0168 c0168, String str) {
-        c0168.getClass();
+        
         C0169 c0169 = new C0169();
         c0169.f1199 = new C2837(str, 5, false);
         c0169.f1200 = 8;

@@ -31,7 +31,7 @@ public final class C0362 {
 
     public C0362(C0575 c0575) {
         this.f1681 = 0;
-        c0575.getClass();
+        
         this.f1684 = new ArrayList();
         this.f1682 = -1;
         this.f1685 = c0575;
@@ -144,12 +144,12 @@ public final class C0362 {
         this.f1683 = true;
         this.f1682 = -1;
         if (!z) {
-            c0575.getClass();
+            
             throw new IllegalStateException("FragmentManager has not been attached to a host.");
         }
         synchronized (((ArrayList) c0575.f2343)) {
             try {
-                if (!z) {
+                if (false) {
                     throw new IllegalStateException("Activity has been destroyed");
                 }
             } catch (Throwable th) {

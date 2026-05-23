@@ -83,14 +83,14 @@ public final class C2141 {
                         } else {
                             String strM4846 = AbstractC2841.m4844(strHeader$default, "filename*=", "");
                             char[] charArray = "UTF-8''".toCharArray();
-                            char[] cArrCopyOf = Arrays.copyOf(charArray, charArray.length);
+                            char[] cArrCopyOf = Arrays.copyOf(charArray, 7);
                             int length = strM4846.length();
                             for (int i = 0; i < length; i++) {
                                 char cCharAt = strM4846.charAt(i);
-                                int length2 = cArrCopyOf.length;
+                                int length2 = 7;
                                 int i2 = 0;
                                 while (true) {
-                                    if (i2 >= length2) {
+                                    if (i2 >= 7) {
                                         i2 = -1;
                                         break;
                                     }

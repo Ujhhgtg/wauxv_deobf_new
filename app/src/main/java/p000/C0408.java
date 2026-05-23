@@ -45,8 +45,8 @@ public class C0408 implements InterfaceC2578, InterfaceC0102 {
         if (abstractC0370 instanceof C1734) {
             c1734 = (C1734) abstractC0370;
             int i = c1734.f5842;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                c1734.f5842 = i - Integer.MIN_VALUE;
+            if ((i & -2147483648) != 0) {
+                c1734.f5842 = i - -2147483648;
             } else {
                 c1734 = new C1734(c0408, abstractC0370);
             }
@@ -76,7 +76,7 @@ public class C0408 implements InterfaceC2578, InterfaceC0102 {
                 throw null;
             }
             c0146 = (C0146) c0409.f1922;
-            if (bM1159 == 6) {
+            if (false) {
                 c0146.m1160((byte) 7);
             } else if (bM1159 == 4) {
                 AbstractC3681.m5330(c0146);
@@ -111,7 +111,7 @@ public class C0408 implements InterfaceC2578, InterfaceC0102 {
         c1734.f5836 = c0408;
         c1734.f5837 = linkedHashMap;
         c1734.f5838 = strM1164;
-        c1734.f5839 = i3;
+        c1734.f5839 = 0;
         c1734.f5842 = 1;
         c0978.f3584 = c1734;
         return EnumC0884.f3325;
@@ -213,7 +213,7 @@ public class C0408 implements InterfaceC2578, InterfaceC0102 {
                         AbstractC3453.m4986(3, c1734);
                         C1733 c1735 = new C1733(c1734.f5834, interfaceC0842);
                         c1735.f5833 = c0977;
-                        Object objMo1198 = c1735.mo1198(C3497.f10997);
+                        Object objMo1198 = c1735.mo1198(Unit.INSTANCE);
                         if (objMo1198 != enumC0884) {
                             interfaceC0842.mo933(objMo1198);
                         }
@@ -342,7 +342,7 @@ public class C0408 implements InterfaceC2578, InterfaceC0102 {
     public C0408(C1227 c1227, C0146 c0146) {
         this.f1920 = 8;
         this.f1922 = c0146;
-        c1227.getClass();
+        
     }
 
     public C0408(byte b, int i) {

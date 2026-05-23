@@ -180,7 +180,7 @@ public final class JSONFactory {
             z4 = false;
             z5 = false;
             for (String str : property2.split(",")) {
-                str.getClass();
+                
                 switch (str) {
                     case "disableAutoType":
                         z4 = true;
@@ -233,7 +233,7 @@ public final class JSONFactory {
         }
         PROPERTY_ACCESSOR_FACTORY = propertyAccessorFactoryUnsafe;
         CacheItem[] cacheItemArr = new CacheItem[16];
-        for (int i = b; i < 16; i++) {
+        for (int i = 0; i < 16; i++) {
             cacheItemArr[i] = new CacheItem();
         }
         CACHE_ITEMS = cacheItemArr;
@@ -242,7 +242,7 @@ public final class JSONFactory {
         defaultObjectWriterProvider = new ObjectWriterProvider();
         defaultObjectReaderProvider = new ObjectReaderProvider();
         String str2 = CREATOR;
-        str2.getClass();
+        
         if (str2.equals("lambda") || str2.equals("reflect")) {
             jSONPathCompilerReflect = JSONPathCompilerReflect.INSTANCE;
         } else {
@@ -263,9 +263,9 @@ public final class JSONFactory {
         jsonPathCompilerLocal = new ThreadLocal<>();
         ARRAY_READER = getDefaultObjectReaderProvider().getObjectReader(JSONArray.class);
         OBJECT_READER = getDefaultObjectReaderProvider().getObjectReader(JSONObject.class);
-        byte[] bArr = new byte[bc.e];
+        byte[] bArr = new byte[256];
         Arrays.fill(bArr, (byte) -1);
-        bArr[48] = b;
+        bArr[48] = 0;
         bArr[49] = 1;
         bArr[50] = 2;
         bArr[51] = 3;
@@ -278,15 +278,15 @@ public final class JSONFactory {
         bArr[65] = 10;
         bArr[66] = 11;
         bArr[67] = 12;
-        bArr[68] = ek.k;
-        bArr[69] = ek.l;
-        bArr[70] = ek.m;
+        bArr[68] = 13;
+        bArr[69] = 14;
+        bArr[70] = 15;
         bArr[97] = 10;
         bArr[98] = 11;
         bArr[99] = 12;
-        bArr[100] = ek.k;
-        bArr[101] = ek.l;
-        bArr[102] = ek.m;
+        bArr[100] = 13;
+        bArr[101] = 14;
+        bArr[102] = 15;
         NIBBLES = bArr;
     }
 

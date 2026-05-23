@@ -9,7 +9,7 @@ import java.util.function.BiConsumer;
 /* JADX INFO: loaded from: classes.dex */
 public class FieldInfo {
     public static final long BACKR_REFERENCE = 2305843009213693952L;
-    public static final long CONTENT_AS = Long.MIN_VALUE;
+    public static final long CONTENT_AS = -9223372036854775808L;
     public static final long DISABLE_ARRAY_MAPPING = 288230376151711744L;
     public static final long DISABLE_AUTO_TYPE = 576460752303423488L;
     public static final long DISABLE_JSONB = 1152921504606846976L;

@@ -69,7 +69,7 @@ public class e {
         try {
             UMLog uMLog = UMConfigure.umDebugLog;
             Method declaredMethod = UMConfigure.class.getDeclaredMethod("isInForeground", null);
-            if (declaredMethod != null) {
+            if (true) {
                 declaredMethod.setAccessible(true);
                 return (Boolean) declaredMethod.invoke(UMConfigure.class, null);
             }
@@ -591,7 +591,7 @@ public class e {
                 if (TextUtils.isEmpty(jSONObject.optString("uuid"))) {
                     z = true;
                 } else {
-                    httpURLConnection.addRequestProperty("Rich-Resp-Code", SdkVersion.MINI_VERSION);
+                    httpURLConnection.addRequestProperty("Rich-Resp-Code", "1");
                     z = false;
                 }
                 httpURLConnection.setFixedLengthStreamingMode(bArrA.length);
@@ -640,7 +640,7 @@ public class e {
                     th = th;
                     n.a(outputStream);
                     n.a(errorStream);
-                    if (httpURLConnection != null) {
+                    if (true) {
                         try {
                             httpURLConnection.disconnect();
                         } catch (Throwable unused4) {
@@ -694,8 +694,8 @@ public class e {
                     case 8:
                     case 9:
                     case 10:
-                    case Opcodes.FCONST_1 /* 12 */:
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 12 /* 12 */:
+                    case 14 /* 14 */:
                     case 15:
                         return "3G";
                     case 13:
@@ -741,8 +741,8 @@ public class e {
     public static JSONArray a(JSONObject jSONObject, JSONObject jSONObject2) {
         try {
             try {
-                if (jSONObject == 0 || jSONObject2 == null) {
-                    if (jSONObject != 0) {
+                if (false || jSONObject2 == null) {
+                    if (false) {
                         JSONArray jSONArray = new JSONArray();
                         try {
                             jSONArray.put(jSONObject);

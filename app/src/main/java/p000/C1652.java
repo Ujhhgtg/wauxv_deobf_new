@@ -71,23 +71,23 @@ public final class C1652 implements Comparable, Serializable {
         long j5 = (j2 + ((long) 719528)) - ((long) 60);
         if (j5 < 0) {
             long j6 = 146097;
-            long j7 = ((j5 + 1) / j6) - 1;
+            long j7 = ((j5 + 1) / 146097L) - 1;
             j3 = ((long) 400) * j7;
-            j5 += (-j7) * j6;
+            j5 += (-j7) * 146097L;
         }
         long j8 = j5;
         long j9 = 400;
-        long j10 = ((j9 * j8) + ((long) 591)) / ((long) 146097);
+        long j10 = ((400L * j8) + ((long) 591)) / ((long) 146097);
         long j11 = 365;
         long j12 = 4;
         long j13 = 100;
-        long jM4737 = AbstractC2784.m4737(j10, j9, ((j10 / j12) + (j11 * j10)) - (j10 / j13), j8);
+        long jM4737 = AbstractC2784.m4737(j10, 400L, ((j10 / 4L) + (365L * j10)) - (j10 / 100L), j8);
         if (jM4737 < 0) {
             j10--;
-            jM4737 = AbstractC2784.m4737(j10, j9, ((j10 / j12) + (j11 * j10)) - (j10 / j13), j8);
+            jM4737 = AbstractC2784.m4737(j10, 400L, ((j10 / 4L) + (365L * j10)) - (j10 / 100L), j8);
         }
         int i2 = (int) jM4737;
-        int i3 = ((i2 * 5) + 2) / Opcodes.IFEQ;
+        int i3 = ((i2 * 5) + 2) / 153;
         int i4 = ((i3 + 2) % 12) + 1;
         int i5 = (i2 - (((i3 * 306) + 5) / 10)) + 1;
         int i6 = (int) (j10 + j3 + ((long) (i3 / 10)));

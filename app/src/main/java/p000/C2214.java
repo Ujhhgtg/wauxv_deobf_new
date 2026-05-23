@@ -40,7 +40,7 @@ public final /* synthetic */ class C2214 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C2219.f7203;
-        interfaceC0766Mo2512.getClass();
+        
         int i = 0;
         C0383 c0383 = null;
         Integer num = null;

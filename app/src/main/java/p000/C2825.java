@@ -374,53 +374,53 @@ public final class C2825 implements InterfaceC1097, InterfaceC2274 {
         int iM4802 = m4802(abstractC0777);
         if (iM4802 != 0 && iM4802 != 6 && iM4802 != 2) {
             if (iM4802 == 3) {
-                AbstractC2665.m4675(c0519, iM4802, ((AbstractC0909) abstractC0777).mo2425());
+                AbstractC2665.m4675(c0519, 3, ((AbstractC0909) abstractC0777).mo2425());
                 return;
             }
             if (iM4802 != 4) {
                 if (iM4802 == 16) {
-                    AbstractC2665.m4674(c0519, iM4802, ((long) ((C0900) abstractC0777).f3364) << 32);
+                    AbstractC2665.m4674(c0519, 16, ((long) ((C0900) abstractC0777).f3364) << 32);
                     return;
                 }
                 if (iM4802 == 17) {
-                    AbstractC2665.m4674(c0519, iM4802, ((C0897) abstractC0777).f3365);
+                    AbstractC2665.m4674(c0519, 17, ((C0897) abstractC0777).f3365);
                     return;
                 }
                 switch (iM4802) {
-                    case Opcodes.ILOAD /* 21 */:
-                        AbstractC2665.m4675(c0519, iM4802, c1023.f3743.m3807(((C0915) abstractC0777).f3376));
+                    case 21 /* 21 */:
+                        AbstractC2665.m4675(c0519, 21, c1023.f3743.m3807(((C0915) abstractC0777).f3376));
                         return;
-                    case Opcodes.LLOAD /* 22 */:
-                        AbstractC2665.m4675(c0519, iM4802, ((C1976) ((TreeMap) c1023.f3749.f6550).get((C0912) abstractC0777)).m3345());
+                    case 22 /* 22 */:
+                        AbstractC2665.m4675(c0519, 22, ((C1976) ((TreeMap) c1023.f3749.f6550).get((C0912) abstractC0777)).m3345());
                         return;
-                    case Opcodes.FLOAD /* 23 */:
-                        AbstractC2665.m4675(c0519, iM4802, c1023.f3741.m3805((C0917) abstractC0777));
+                    case 23 /* 23 */:
+                        AbstractC2665.m4675(c0519, 23, c1023.f3741.m3805((C0917) abstractC0777));
                         return;
-                    case Opcodes.DLOAD /* 24 */:
-                        AbstractC2665.m4675(c0519, iM4802, c1023.f3742.m3806((C0918) abstractC0777));
+                    case 24 /* 24 */:
+                        AbstractC2665.m4675(c0519, 24, c1023.f3742.m3806((C0918) abstractC0777));
                         return;
-                    case Opcodes.ALOAD /* 25 */:
-                        AbstractC2665.m4675(c0519, iM4802, c1023.f3744.m3017((C0899) abstractC0777));
+                    case 25 /* 25 */:
+                        AbstractC2665.m4675(c0519, 25, c1023.f3744.m3017((C0899) abstractC0777));
                         return;
                     case 26:
-                        AbstractC2665.m4675(c0519, iM4802, c1023.f3745.m3814((C0913) abstractC0777));
+                        AbstractC2665.m4675(c0519, 26, c1023.f3745.m3814((C0913) abstractC0777));
                         return;
                     case 27:
-                        AbstractC2665.m4675(c0519, iM4802, c1023.f3744.m3017(((C0898) abstractC0777).m2412()));
+                        AbstractC2665.m4675(c0519, 27, c1023.f3744.m3017(((C0898) abstractC0777).m2412()));
                         return;
                     case 28:
-                        c0519.m1838(iM4802);
+                        c0519.m1838(28);
                         m4810((C0890) abstractC0777, false);
                         return;
                     case 29:
-                        c0519.m1838(iM4802);
+                        c0519.m1838(29);
                         m4809(((C0888) abstractC0777).f3328, false);
                         return;
                     case 30:
-                        c0519.m1838(iM4802);
+                        c0519.m1838(30);
                         return;
                     case 31:
-                        c0519.m1838((((C0892) abstractC0777).f3364 << 5) | iM4802);
+                        c0519.m1838((((C0892) abstractC0777).f3364 << 5) | 31);
                         return;
                     default:
                         throw new RuntimeException("Shouldn't happen");

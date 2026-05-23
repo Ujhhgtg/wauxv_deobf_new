@@ -47,7 +47,7 @@ public final class C2477 implements InterfaceC0508 {
     @Override // java.nio.channels.ReadableByteChannel
     public final int read(ByteBuffer byteBuffer) {
         C0504 c0504 = this.f7914;
-        if (c0504.f2172 == 0 && this.f7913.read(c0504, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) == -1) {
+        if (c0504.f2172 == 0 && this.f7913.read(c0504, 8192L) == -1) {
             return -1;
         }
         return c0504.read(byteBuffer);
@@ -114,7 +114,7 @@ public final class C2477 implements InterfaceC0508 {
         }
         while (j > 0) {
             C0504 c0504 = this.f7914;
-            if (c0504.f2172 == 0 && this.f7913.read(c0504, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) == -1) {
+            if (c0504.f2172 == 0 && this.f7913.read(c0504, 8192L) == -1) {
                 throw new EOFException();
             }
             long jMin = Math.min(j, c0504.f2172);
@@ -156,7 +156,7 @@ public final class C2477 implements InterfaceC0508 {
                 return jM1774;
             }
             long j4 = c0504.f2172;
-            if (j4 >= j3 || this.f7913.read(c0504, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) == -1) {
+            if (j4 >= j3 || this.f7913.read(c0504, 8192L) == -1) {
                 break;
             }
             jMax = Math.max(jMax, j4);
@@ -196,7 +196,7 @@ public final class C2477 implements InterfaceC0508 {
             throw new IllegalStateException("closed");
         }
         C0504 c0504 = this.f7914;
-        return c0504.mo1766() && this.f7913.read(c0504, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) == -1;
+        return c0504.mo1766() && this.f7913.read(c0504, 8192L) == -1;
     }
 
     @Override // p000.InterfaceC0508
@@ -216,7 +216,7 @@ public final class C2477 implements InterfaceC0508 {
                 c0504.skip(c2302.f7417[iM908].mo1870());
                 return iM908;
             }
-        } while (this.f7913.read(c0504, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) != -1);
+        } while (this.f7913.read(c0504, 8192L) != -1);
         return -1;
     }
 
@@ -253,13 +253,13 @@ public final class C2477 implements InterfaceC0508 {
         if (j < 0) {
             throw new IllegalArgumentException(AbstractC2784.m4746(j, "limit < 0: ").toString());
         }
-        long j2 = j == Long.MAX_VALUE ? Long.MAX_VALUE : j + 1;
+        long j2 = j == 9223372036854775807L ? 9223372036854775807L : j + 1;
         long jM4428 = m4428(0L, j2, (byte) 10);
         C0504 c0504 = this.f7914;
         if (jM4428 != -1) {
             return AbstractC0048.m907(c0504, jM4428);
         }
-        if (j2 < Long.MAX_VALUE && mo1781(j2) && c0504.m1772(j2 - 1) == 13 && mo1781(j2 + 1) && c0504.m1772(j2) == 10) {
+        if (j2 < 9223372036854775807L && mo1781(j2) && c0504.m1772(j2 - 1) == 13 && mo1781(j2 + 1) && c0504.m1772(j2) == 10) {
             return AbstractC0048.m907(c0504, j2);
         }
         C0504 c0505 = new C0504();
@@ -304,14 +304,14 @@ public final class C2477 implements InterfaceC0508 {
             if (c0504.f2172 >= j) {
                 return true;
             }
-        } while (this.f7913.read(c0504, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) != -1);
+        } while (this.f7913.read(c0504, 8192L) != -1);
         return false;
     }
 
     @Override // p000.InterfaceC0508
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ */
     public final String mo1783() {
-        return mo1773(Long.MAX_VALUE);
+        return mo1773(9223372036854775807L);
     }
 
     @Override // p000.InterfaceC0508
@@ -378,7 +378,7 @@ public final class C2477 implements InterfaceC0508 {
         if (j >= 0) {
             if (!this.f7915) {
                 C0504 c0505 = this.f7914;
-                if (c0505.f2172 == 0 && this.f7913.read(c0505, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) == -1) {
+                if (c0505.f2172 == 0 && this.f7913.read(c0505, 8192L) == -1) {
                     return -1L;
                 }
                 return c0505.read(c0504, Math.min(j, c0505.f2172));

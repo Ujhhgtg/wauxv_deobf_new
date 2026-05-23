@@ -37,14 +37,14 @@ public abstract class AbstractC2900 {
             property = "DefaultDispatcher";
         }
         f9318 = property;
-        f9319 = AbstractC2205.m4075("kotlinx.coroutines.scheduler.resolution.ns", 100000L, 1L, Long.MAX_VALUE);
+        f9319 = AbstractC2205.m4075("kotlinx.coroutines.scheduler.resolution.ns", 100000L, 1L, 9223372036854775807L);
         int i2 = AbstractC2883.f9237;
         if (i2 < 2) {
             i2 = 2;
         }
         f9320 = AbstractC2205.m4076(i2, 8, "kotlinx.coroutines.scheduler.core.pool.size");
         f9321 = AbstractC2205.m4076(2097150, 4, "kotlinx.coroutines.scheduler.max.pool.size");
-        f9322 = TimeUnit.SECONDS.toNanos(AbstractC2205.m4075("kotlinx.coroutines.scheduler.keep.alive.sec", 60L, 1L, Long.MAX_VALUE));
+        f9322 = TimeUnit.SECONDS.toNanos(AbstractC2205.m4075("kotlinx.coroutines.scheduler.keep.alive.sec", 60L, 1L, 9223372036854775807L));
         f9323 = C1133.f4210;
     }
 }

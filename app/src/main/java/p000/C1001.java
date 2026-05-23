@@ -55,11 +55,11 @@ public final class C1001 implements ImageDecoder$OnHeaderDecodedListener {
         imageDecoder.setOnPartialImageListener(new C1000());
         Size size = imageInfo.getSize();
         int width = this.f3656;
-        if (width == Integer.MIN_VALUE) {
+        if (width == -2147483648) {
             width = size.getWidth();
         }
         int height = this.f3657;
-        if (height == Integer.MIN_VALUE) {
+        if (height == -2147483648) {
             height = size.getHeight();
         }
         float fM2664 = this.f3659.m2664(size.getWidth(), size.getHeight(), width, height);

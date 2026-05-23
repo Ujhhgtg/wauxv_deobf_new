@@ -72,68 +72,68 @@ public class au {
                 case -602397472:
                     if (strC.equals("ONEPLUS")) {
                         a = "HydrogenOS";
-                        String strD = d(k);
+                        String strD = d("ro.rom.version");
                         if (TextUtils.isEmpty(strD)) {
                             a = "ColorOS";
-                            strD = d(j);
+                            strD = d("ro.build.version.oplusrom");
                         }
                         b = strD;
                     }
-                    a = AnalyticsConstants.SDK_TYPE;
+                    a = "Android";
                     b = Build.VERSION.RELEASE;
                     break;
                 case 2432928:
                     if (strC.equals("OPPO")) {
                         a = "ColorOS";
-                        b = d(g);
+                        b = d("ro.build.version.opporom");
                     }
-                    a = AnalyticsConstants.SDK_TYPE;
+                    a = "Android";
                     b = Build.VERSION.RELEASE;
                     break;
                 case 2634924:
                     if (strC.equals("VIVO")) {
                         a = "Funtouch";
-                        b = d(i);
+                        b = d("ro.vivo.os.version");
                     }
-                    a = AnalyticsConstants.SDK_TYPE;
+                    a = "Android";
                     b = Build.VERSION.RELEASE;
                     break;
                 case 68924490:
                     if (strC.equals("HONOR")) {
-                        if (!TextUtils.isEmpty(d(e))) {
+                        if (!TextUtils.isEmpty(d("ro.build.version.magic"))) {
                             a = "MagicUI";
-                            b = d(e);
+                            b = d("ro.build.version.magic");
                         } else {
                             a = "EMUI";
-                            b = d(d);
+                            b = d("ro.build.version.emui");
                         }
                     }
-                    a = AnalyticsConstants.SDK_TYPE;
+                    a = "Android";
                     b = Build.VERSION.RELEASE;
                     break;
                 case 77852109:
                     if (strC.equals("REDMI")) {
                         a = "MIUI";
-                        b = d(f);
+                        b = d("ro.miui.ui.version.name");
                     }
-                    a = AnalyticsConstants.SDK_TYPE;
+                    a = "Android";
                     b = Build.VERSION.RELEASE;
                     break;
                 case 2141820391:
                     if (strC.equals("HUAWEI")) {
                         if (!a()) {
                             a = "EMUI";
-                            b = d(d);
+                            b = d("ro.build.version.emui");
                         } else {
-                            b = d(c);
+                            b = d("hw_sc.build.platform.version");
                             a = "HarmonyOS";
                         }
                     }
-                    a = AnalyticsConstants.SDK_TYPE;
+                    a = "Android";
                     b = Build.VERSION.RELEASE;
                     break;
                 default:
-                    a = AnalyticsConstants.SDK_TYPE;
+                    a = "Android";
                     b = Build.VERSION.RELEASE;
                     break;
             }

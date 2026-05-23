@@ -27,7 +27,7 @@ public class ai implements ad {
             if (jCurrentTimeMillis > this.b * 1000) {
                 return true;
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "internal period skipped. elapse: " + jCurrentTimeMillis + "; config: " + (this.b * 1000));
+            UMRTLog.i("MobclickRT", "internal period skipped. elapse: " + jCurrentTimeMillis + "; config: " + (this.b * 1000));
             return false;
         } catch (Throwable unused) {
             return false;

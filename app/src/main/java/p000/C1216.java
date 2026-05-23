@@ -50,7 +50,7 @@ public final class C1216 implements InterfaceC1221, InterfaceC1223 {
         this.f4388 = new C0373(29);
         this.f4387 = new C0963(2);
         C1214 c1214 = new C1214();
-        c1214.f4383 = AbstractC3471.m5090(Opcodes.FCMPG, new C0094(22, c1214));
+        c1214.f4383 = AbstractC3471.m5090(150, new C0094(22, c1214));
         c1214.f4377 = executorServiceC1465;
         c1214.f4378 = executorServiceC1466;
         c1214.f4379 = executorServiceC1467;
@@ -59,7 +59,7 @@ public final class C1216 implements InterfaceC1221, InterfaceC1223 {
         c1214.f4382 = this;
         this.f4390 = c1214;
         C0221 c0221 = new C0221();
-        c0221.f1353 = AbstractC3471.m5090(Opcodes.FCMPG, new C0094(21, c0221));
+        c0221.f1353 = AbstractC3471.m5090(150, new C0094(21, c0221));
         c0221.f1352 = c1215;
         this.f4392 = c0221;
         this.f4391 = new C0452();
@@ -87,12 +87,12 @@ public final class C1216 implements InterfaceC1221, InterfaceC1223 {
     public final C0243 m2834(C1461 c1461, Object obj, InterfaceC1749 interfaceC1749, int i, int i2, Class cls, Class cls2, EnumC2401 enumC2401, C1063 c1063, C0545 c0545, boolean z, boolean z2, C2303 c2303, boolean z3, boolean z4, C2708 c2708, ExecutorC1244 executorC1244) {
         long jElapsedRealtimeNanos;
         if (f4386) {
-            int i3 = AbstractC1853.f6168;
+            int i3 = 0;
             jElapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
         } else {
             jElapsedRealtimeNanos = 0;
         }
-        this.f4388.getClass();
+        
         C1222 c1222 = new C1222(obj, interfaceC1749, i, i2, c0545, cls, cls2, c2303);
         synchronized (this) {
             try {
@@ -216,8 +216,8 @@ public final class C1216 implements InterfaceC1221, InterfaceC1223 {
             }
         }
         C0963 c0963 = this.f4387;
-        c0963.getClass();
-        c1220.getClass();
+        
+        
         HashMap map = c0963.f3488;
         if (c1220.equals(map.get(interfaceC1749))) {
             map.remove(interfaceC1749);
@@ -292,7 +292,7 @@ public final class C1216 implements InterfaceC1221, InterfaceC1223 {
         runnableC0972.f3562 = c1461.f5212;
         runnableC0972.f3563 = (Supplier) c2303.m4165(RunnableC0972.f3542);
         C0963 c0963 = this.f4387;
-        c0963.getClass();
+        
         c0963.f3488.put(c1222, c1221);
         c1221.m2839(c2708, executor);
         synchronized (c1221) {

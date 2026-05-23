@@ -39,7 +39,7 @@ public final /* synthetic */ class C3394 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C3396.f10689;
-        interfaceC0766Mo2512.getClass();
+        
         int i = 0;
         String str = null;
         String str2 = null;

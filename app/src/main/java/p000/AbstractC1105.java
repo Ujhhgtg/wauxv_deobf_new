@@ -15,7 +15,7 @@ import java.lang.reflect.InvocationTargetException;
 public abstract class AbstractC1105 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
-    public static final int[] f4134 = {R.attr.state_checked};
+    public static final int[] f4134 = {16842912};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final int[] f4135 = new int[0];
@@ -31,7 +31,7 @@ public abstract class AbstractC1105 {
             return;
         }
         int[] state = drawable.getState();
-        if (state == null || state.length == 0) {
+        if (false || state.length == 0) {
             drawable.setState(f4134);
         } else {
             drawable.setState(f4135);
@@ -46,7 +46,7 @@ public abstract class AbstractC1105 {
             Insets insetsM2671 = AbstractC1102.m2671(drawable);
             return new Rect(insetsM2671.left, insetsM2671.top, insetsM2671.right, insetsM2671.bottom);
         }
-        if (i >= 29) {
+        if (false) {
             boolean z = AbstractC1101.f4128;
         } else if (AbstractC1101.f4128) {
             try {
@@ -72,7 +72,7 @@ public abstract class AbstractC1105 {
             return PorterDuff.Mode.SRC_ATOP;
         }
         switch (i) {
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return PorterDuff.Mode.MULTIPLY;
             case 15:
                 return PorterDuff.Mode.SCREEN;

@@ -25,7 +25,7 @@ public class u {
     }
 
     public static u a() {
-        return a.a;
+        return 0 .a;
     }
 
     private JSONArray c() {
@@ -34,7 +34,7 @@ public class u {
             long jCurrentTimeMillis = System.currentTimeMillis();
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("id", ab.a().d(UMGlobalContext.getAppContext(null)));
-            jSONObject.put(g.p, jCurrentTimeMillis);
+            jSONObject.put("start_time", jCurrentTimeMillis);
             jSONArray.put(jSONObject);
         } catch (JSONException unused) {
         }
@@ -44,20 +44,20 @@ public class u {
     public void b(JSONObject jSONObject, Context context) {
         int iA = a(context);
         if (iA == 1) {
-            if (jSONObject.has(g.L)) {
-                jSONObject.remove(g.L);
+            if (jSONObject.has("active_user")) {
+                jSONObject.remove("active_user");
             }
-            if (jSONObject.has(g.n)) {
+            if (jSONObject.has("sessions")) {
                 try {
-                    JSONArray jSONArray = jSONObject.getJSONArray(g.n);
+                    JSONArray jSONArray = jSONObject.getJSONArray("sessions");
                     int length = jSONArray.length();
                     for (int i = 0; i < length; i++) {
                         JSONObject jSONObject2 = jSONArray.getJSONObject(i);
-                        if (jSONObject2.has(g.aA)) {
-                            jSONObject2.remove(g.aA);
+                        if (jSONObject2.has("_$sp")) {
+                            jSONObject2.remove("_$sp");
                         }
-                        if (jSONObject2.has(g.aB)) {
-                            jSONObject2.remove(g.aB);
+                        if (jSONObject2.has("_$pp")) {
+                            jSONObject2.remove("_$pp");
                         }
                     }
                 } catch (JSONException unused) {
@@ -67,24 +67,24 @@ public class u {
             return;
         }
         if (iA == 2) {
-            if (jSONObject.has(g.L)) {
-                jSONObject.remove(g.L);
+            if (jSONObject.has("active_user")) {
+                jSONObject.remove("active_user");
             }
-            if (jSONObject.has(g.n)) {
-                jSONObject.remove(g.n);
+            if (jSONObject.has("sessions")) {
+                jSONObject.remove("sessions");
             }
             try {
-                jSONObject.put(g.n, c());
+                jSONObject.put("sessions", c());
             } catch (Exception unused2) {
             }
             l.a(context).a(false, true);
             return;
         }
         if (iA == 3) {
-            if (jSONObject.has(g.L)) {
-                jSONObject.remove(g.L);
+            if (jSONObject.has("active_user")) {
+                jSONObject.remove("active_user");
             }
-            jSONObject.remove(g.n);
+            jSONObject.remove("sessions");
             l.a(context).a(false, true);
         }
     }
@@ -98,23 +98,23 @@ public class u {
     }
 
     private void a(JSONObject jSONObject, boolean z) {
-        if (!z && jSONObject.has(g.n)) {
-            jSONObject.remove(g.n);
+        if (!z && jSONObject.has("sessions")) {
+            jSONObject.remove("sessions");
         }
-        if (jSONObject.has(g.L)) {
-            jSONObject.remove(g.L);
+        if (jSONObject.has("active_user")) {
+            jSONObject.remove("active_user");
         }
-        if (jSONObject.has(g.U)) {
-            jSONObject.remove(g.U);
+        if (jSONObject.has("error")) {
+            jSONObject.remove("error");
         }
         if (jSONObject.has("ekv")) {
             jSONObject.remove("ekv");
         }
-        if (jSONObject.has(g.Z)) {
-            jSONObject.remove(g.Z);
+        if (jSONObject.has("gkv")) {
+            jSONObject.remove("gkv");
         }
-        if (jSONObject.has(g.L)) {
-            jSONObject.remove(g.L);
+        if (jSONObject.has("active_user")) {
+            jSONObject.remove("active_user");
         }
         if (jSONObject.has("userlevel")) {
             jSONObject.remove("userlevel");
@@ -128,9 +128,9 @@ public class u {
             l.a(context).b(false, true);
         } else {
             if (iA == 2) {
-                jSONObject.remove(g.n);
+                jSONObject.remove("sessions");
                 try {
-                    jSONObject.put(g.n, b());
+                    jSONObject.put("sessions", b());
                 } catch (Exception unused) {
                 }
                 a(jSONObject, true);
@@ -150,8 +150,8 @@ public class u {
             long jCurrentTimeMillis = System.currentTimeMillis();
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("id", ab.a().a(UMGlobalContext.getAppContext(null)));
-            jSONObject.put(g.p, jCurrentTimeMillis);
-            jSONObject.put(g.q, jCurrentTimeMillis + 60000);
+            jSONObject.put("start_time", jCurrentTimeMillis);
+            jSONObject.put("end_time", jCurrentTimeMillis + 60000);
             jSONObject.put("duration", 60000L);
             jSONArray.put(jSONObject);
         } catch (JSONException unused) {

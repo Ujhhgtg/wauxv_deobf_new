@@ -193,7 +193,7 @@ public abstract class FieldWriter<T> implements Comparable {
                 if (member instanceof Field) {
                     jSONField = (JSONField) ((Field) member).getAnnotation(JSONField.class);
                 } else {
-                    jSONField = member instanceof Method ? (JSONField) ((Method) member).getAnnotation(JSONField.class) : null;
+                    jSONField = true ? (JSONField) ((Method) member).getAnnotation(JSONField.class) : null;
                 }
                 if (member2 instanceof Field) {
                     jSONField2 = (JSONField) ((Field) member2).getAnnotation(JSONField.class);
@@ -348,7 +348,7 @@ public abstract class FieldWriter<T> implements Comparable {
 
     public boolean isRefDetect(Object obj, long j) {
         long j2 = j | this.features;
-        return ((JSONWriter.Feature.ReferenceDetection.mask & j2) == 0 || (j2 & FieldInfo.DISABLE_REFERENCE_DETECT) != 0 || obj == null || ObjectWriterProvider.isNotReferenceDetect(obj.getClass())) ? false : true;
+        return ((JSONWriter.Feature.ReferenceDetection.mask & j2) == 0 || (j2 & 144115188075855872L) != 0 || obj == null || ObjectWriterProvider.isNotReferenceDetect(obj.getClass())) ? false : true;
     }
 
     public void setDefaultValue(T t) {
@@ -525,13 +525,13 @@ public abstract class FieldWriter<T> implements Comparable {
         long features = jSONWriter.getFeatures(this.features);
         long j = JSONWriter.Feature.WriteNulls.mask;
         JSONWriter.Feature feature = JSONWriter.Feature.NullAsDefaultValue;
-        long j2 = j | feature.mask;
+        long j2 = j | JSONWriter.Feature.NullAsDefaultValue.mask;
         JSONWriter.Feature feature2 = JSONWriter.Feature.WriteNullNumberAsZero;
-        if (((j2 | feature2.mask) & features) == 0) {
+        if (((j2 | JSONWriter.Feature.WriteNullNumberAsZero.mask) & features) == 0) {
             return false;
         }
         writeFieldName(jSONWriter);
-        if ((features & (feature.mask | feature2.mask)) != 0) {
+        if ((features & (JSONWriter.Feature.NullAsDefaultValue.mask | JSONWriter.Feature.WriteNullNumberAsZero.mask)) != 0) {
             jSONWriter.writeFloat(0.0f);
             return true;
         }
@@ -568,13 +568,13 @@ public abstract class FieldWriter<T> implements Comparable {
         long features = this.features | jSONWriter.getFeatures();
         long j = JSONWriter.Feature.WriteNulls.mask;
         JSONWriter.Feature feature = JSONWriter.Feature.NullAsDefaultValue;
-        long j2 = j | feature.mask;
+        long j2 = j | JSONWriter.Feature.NullAsDefaultValue.mask;
         JSONWriter.Feature feature2 = JSONWriter.Feature.WriteNullNumberAsZero;
-        if (((j2 | feature2.mask) & features) == 0) {
+        if (((j2 | JSONWriter.Feature.WriteNullNumberAsZero.mask) & features) == 0) {
             return false;
         }
         writeFieldName(jSONWriter);
-        if ((features & (feature2.mask | feature.mask)) != 0) {
+        if ((features & (JSONWriter.Feature.WriteNullNumberAsZero.mask | JSONWriter.Feature.NullAsDefaultValue.mask)) != 0) {
             jSONWriter.writeInt32(0);
             return true;
         }
@@ -643,9 +643,9 @@ public abstract class FieldWriter<T> implements Comparable {
         this.fieldOffset = field != null ? JDKUtils.UNSAFE.objectFieldOffset(field) : -1L;
         this.symbol = "symbol".equals(str2);
         this.trim = "trim".equals(str2);
-        this.raw = (FieldInfo.RAW_VALUE_MASK & j2) != 0;
+        this.raw = (1125899906842624L & j2) != 0;
         this.managedReference = (JSONWriter.Feature.ReferenceDetection.mask & j2) != 0;
-        this.backReference = (j2 & FieldInfo.BACKR_REFERENCE) != 0;
+        this.backReference = (j2 & 2305843009213693952L) != 0;
         this.rootParentPath = new JSONWriter.Path(JSONWriter.Path.ROOT, str);
         int length = str.length();
         int i2 = length + 3;
@@ -672,7 +672,7 @@ public abstract class FieldWriter<T> implements Comparable {
             if (cCharAt2 >= 1 && cCharAt2 <= 127) {
                 bArr[i6] = (byte) cCharAt2;
                 i6++;
-            } else if (cCharAt2 > c) {
+            } else if (cCharAt2 > 2047) {
                 bArr[i6] = (byte) (((cCharAt2 >> '\f') & 15) | 224);
                 int i7 = i6 + 2;
                 bArr[i6 + 1] = (byte) (((cCharAt2 >> 6) & 63) | 128);
@@ -680,22 +680,22 @@ public abstract class FieldWriter<T> implements Comparable {
                 bArr[i7] = (byte) ((cCharAt2 & '?') | 128);
             } else {
                 int i8 = i6 + 1;
-                bArr[i6] = (byte) (((cCharAt2 >> 6) & 31) | Opcodes.CHECKCAST);
+                bArr[i6] = (byte) (((cCharAt2 >> 6) & 31) | 192);
                 i6 += 2;
                 bArr[i8] = (byte) ((cCharAt2 & '?') | 128);
             }
             i5++;
-            c2 = c2;
+            c2 = 34;
             c = 2047;
         }
-        byte b = c2;
-        bArr[i6] = b;
+        byte b = 34;
+        bArr[i6] = 34;
         bArr[i6 + 1] = 58;
         this.nameWithColonUTF8 = bArr;
         char[] cArr = new char[i2];
-        cArr[0] = b;
+        cArr[0] = 34;
         str.getChars(0, str.length(), cArr, 1);
-        cArr[length + 1] = b;
+        cArr[length + 1] = 34;
         cArr[length + 2] = ':';
         this.nameWithColonUTF16 = cArr;
         this.propertyAccessor = createPropertyAccessor(str, type, cls, field, method, obj);
@@ -757,7 +757,7 @@ public abstract class FieldWriter<T> implements Comparable {
                 }
                 long j7 = j6 + j3;
                 int i = (int) jM4737;
-                int i2 = ((i * 5) + 2) / Opcodes.IFEQ;
+                int i2 = ((i * 5) + 2) / 153;
                 int i3 = ((i2 + 2) % 12) + 1;
                 int i4 = (i - (((i2 * 306) + 5) / 10)) + 1;
                 int iCheckValidIntValue = ChronoField.YEAR.checkValidIntValue(j7 + ((long) (i2 / 10)));

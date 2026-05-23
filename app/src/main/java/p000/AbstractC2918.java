@@ -23,13 +23,13 @@ public abstract class AbstractC2918 {
     public static final int[] f9369 = {-16842910};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
-    public static final int[] f9370 = {R.attr.state_focused};
+    public static final int[] f9370 = {16842908};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public static final int[] f9371 = {R.attr.state_pressed};
+    public static final int[] f9371 = {16842919};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
-    public static final int[] f9372 = {R.attr.state_checked};
+    public static final int[] f9372 = {16842912};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static final int[] f9373 = new int[0];
@@ -41,7 +41,7 @@ public abstract class AbstractC2918 {
     public static void m4917(View view, Context context) {
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(AbstractC2470.f7884);
         try {
-            if (!typedArrayObtainStyledAttributes.hasValue(Opcodes.LNEG)) {
+            if (!typedArrayObtainStyledAttributes.hasValue(117)) {
                 Log.e("ThemeUtils", "View " + view.getClass() + " is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).");
             }
         } finally {
@@ -61,7 +61,7 @@ public abstract class AbstractC2918 {
             typedValue = new TypedValue();
             threadLocal.set(typedValue);
         }
-        context.getTheme().resolveAttribute(R.attr.disabledAlpha, typedValue, true);
+        context.getTheme().resolveAttribute(16842803, typedValue, true);
         float f = typedValue.getFloat();
         int iM4919 = m4919(context, i);
         return AbstractC0752.m2226(iM4919, Math.round(Color.alpha(iM4919) * f));

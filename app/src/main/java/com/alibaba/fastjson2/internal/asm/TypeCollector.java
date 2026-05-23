@@ -34,7 +34,7 @@ public class TypeCollector {
     private boolean correctTypeName(Type type, String str) {
         String className = type.getClassName();
         StringBuilder sb = new StringBuilder();
-        while (className.endsWith(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI)) {
+        while (className.endsWith("[]")) {
             sb.append('[');
             className = className.substring(0, className.length() - 2);
         }

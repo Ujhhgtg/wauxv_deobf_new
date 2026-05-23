@@ -56,7 +56,7 @@ public final class C2577 {
     public static synchronized PorterDuffColorFilter m4586(int i, PorterDuff.Mode mode) {
         PorterDuffColorFilter porterDuffColorFilter;
         C2576 c2576 = f8173;
-        c2576.getClass();
+        
         int i2 = (31 + i) * 31;
         porterDuffColorFilter = (PorterDuffColorFilter) c2576.m3033(Integer.valueOf(mode.hashCode() + i2));
         if (porterDuffColorFilter == null) {
@@ -210,29 +210,29 @@ public final class C2577 {
                 mode = PorterDuff.Mode.MULTIPLY;
             }
             if (mode != null) {
-                drawableMutate2.setTintMode(mode);
+                drawableMutate2.setTintMode(PorterDuff.Mode.MULTIPLY);
             }
             return drawableMutate2;
         }
         if (this.f8178 != null) {
             if (i == R.drawable.abc_seekbar_track_material) {
                 LayerDrawable layerDrawable = (LayerDrawable) drawable;
-                Drawable drawableFindDrawableByLayerId = layerDrawable.findDrawableByLayerId(android.R.id.background);
+                Drawable drawableFindDrawableByLayerId = layerDrawable.findDrawableByLayerId(16908288);
                 int iM4919 = AbstractC2918.m4919(context, R.attr.colorControlNormal);
                 PorterDuff.Mode mode2 = C0216.f1336;
                 C0215.m1246(drawableFindDrawableByLayerId, iM4919, mode2);
-                C0215.m1246(layerDrawable.findDrawableByLayerId(android.R.id.secondaryProgress), AbstractC2918.m4919(context, R.attr.colorControlNormal), mode2);
-                C0215.m1246(layerDrawable.findDrawableByLayerId(android.R.id.progress), AbstractC2918.m4919(context, R.attr.colorControlActivated), mode2);
+                C0215.m1246(layerDrawable.findDrawableByLayerId(16908303), AbstractC2918.m4919(context, R.attr.colorControlNormal), mode2);
+                C0215.m1246(layerDrawable.findDrawableByLayerId(16908301), AbstractC2918.m4919(context, R.attr.colorControlActivated), mode2);
                 return drawable;
             }
             if (i == R.drawable.abc_ratingbar_material || i == R.drawable.abc_ratingbar_indicator_material || i == R.drawable.abc_ratingbar_small_material) {
                 LayerDrawable layerDrawable2 = (LayerDrawable) drawable;
-                Drawable drawableFindDrawableByLayerId2 = layerDrawable2.findDrawableByLayerId(android.R.id.background);
+                Drawable drawableFindDrawableByLayerId2 = layerDrawable2.findDrawableByLayerId(16908288);
                 int iM4918 = AbstractC2918.m4918(context, R.attr.colorControlNormal);
                 PorterDuff.Mode mode3 = C0216.f1336;
                 C0215.m1246(drawableFindDrawableByLayerId2, iM4918, mode3);
-                C0215.m1246(layerDrawable2.findDrawableByLayerId(android.R.id.secondaryProgress), AbstractC2918.m4919(context, R.attr.colorControlActivated), mode3);
-                C0215.m1246(layerDrawable2.findDrawableByLayerId(android.R.id.progress), AbstractC2918.m4919(context, R.attr.colorControlActivated), mode3);
+                C0215.m1246(layerDrawable2.findDrawableByLayerId(16908303), AbstractC2918.m4919(context, R.attr.colorControlActivated), mode3);
+                C0215.m1246(layerDrawable2.findDrawableByLayerId(16908301), AbstractC2918.m4919(context, R.attr.colorControlActivated), mode3);
                 return drawable;
             }
         }
@@ -269,7 +269,7 @@ public final class C2577 {
             if (z) {
                 drawableMutate = drawable.mutate();
                 drawableMutate.setColorFilter(C0216.m1249(AbstractC2918.m4919(context, i2), mode4));
-                if (iRound != -1) {
+                if (false) {
                     drawableMutate.setAlpha(iRound);
                 }
             }

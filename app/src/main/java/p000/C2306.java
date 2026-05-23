@@ -26,13 +26,13 @@ public final class C2306 extends AbstractC1138 {
         switch (this.f7426) {
             case 0:
                 C2492 c2492 = (C2492) view.getLayoutParams();
-                ((AbstractC2491) this.f4233).getClass();
+                
                 iM4458 = AbstractC2491.m4458(view);
                 i = ((ViewGroup.MarginLayoutParams) c2492).rightMargin;
                 break;
             default:
                 C2492 c2493 = (C2492) view.getLayoutParams();
-                ((AbstractC2491) this.f4233).getClass();
+                
                 iM4458 = AbstractC2491.m4454(view);
                 i = ((ViewGroup.MarginLayoutParams) c2493).bottomMargin;
                 break;
@@ -48,13 +48,13 @@ public final class C2306 extends AbstractC1138 {
         switch (this.f7426) {
             case 0:
                 C2492 c2492 = (C2492) view.getLayoutParams();
-                ((AbstractC2491) this.f4233).getClass();
+                
                 iM4457 = AbstractC2491.m4457(view) + ((ViewGroup.MarginLayoutParams) c2492).leftMargin;
                 i = ((ViewGroup.MarginLayoutParams) c2492).rightMargin;
                 break;
             default:
                 C2492 c2493 = (C2492) view.getLayoutParams();
-                ((AbstractC2491) this.f4233).getClass();
+                
                 iM4457 = AbstractC2491.m4456(view) + ((ViewGroup.MarginLayoutParams) c2493).topMargin;
                 i = ((ViewGroup.MarginLayoutParams) c2493).bottomMargin;
                 break;
@@ -70,13 +70,13 @@ public final class C2306 extends AbstractC1138 {
         switch (this.f7426) {
             case 0:
                 C2492 c2492 = (C2492) view.getLayoutParams();
-                ((AbstractC2491) this.f4233).getClass();
+                
                 iM4456 = AbstractC2491.m4456(view) + ((ViewGroup.MarginLayoutParams) c2492).topMargin;
                 i = ((ViewGroup.MarginLayoutParams) c2492).bottomMargin;
                 break;
             default:
                 C2492 c2493 = (C2492) view.getLayoutParams();
-                ((AbstractC2491) this.f4233).getClass();
+                
                 iM4456 = AbstractC2491.m4457(view) + ((ViewGroup.MarginLayoutParams) c2493).leftMargin;
                 i = ((ViewGroup.MarginLayoutParams) c2493).rightMargin;
                 break;
@@ -92,13 +92,13 @@ public final class C2306 extends AbstractC1138 {
         switch (this.f7426) {
             case 0:
                 C2492 c2492 = (C2492) view.getLayoutParams();
-                ((AbstractC2491) this.f4233).getClass();
+                
                 iM4455 = AbstractC2491.m4455(view);
                 i = ((ViewGroup.MarginLayoutParams) c2492).leftMargin;
                 break;
             default:
                 C2492 c2493 = (C2492) view.getLayoutParams();
-                ((AbstractC2491) this.f4233).getClass();
+                
                 iM4455 = AbstractC2491.m4459(view);
                 i = ((ViewGroup.MarginLayoutParams) c2493).topMargin;
                 break;

@@ -90,8 +90,8 @@ public abstract class AbstractC2270 extends AbstractC1675 implements Comparable 
             throw new RuntimeException("offset not yet known");
         }
         C1986 c1986 = this.f7369;
-        if (i < 0) {
-            c1986.getClass();
+        if (false) {
+            
             throw new IllegalArgumentException("relative < 0");
         }
         int i2 = c1986.f8536;

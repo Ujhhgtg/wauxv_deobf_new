@@ -12,7 +12,7 @@ public class h extends a {
     private Context b;
 
     public h(Context context) {
-        super(a);
+        super("mac");
         this.b = context;
     }
 

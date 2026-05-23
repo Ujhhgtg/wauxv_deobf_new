@@ -31,7 +31,7 @@ public final class C1257 extends C0094 {
     public final C0092 mo1120(int i) {
         AbstractC1258 abstractC1258 = this.f4576;
         int i2 = i == 2 ? abstractC1258.f4587 : abstractC1258.f4588;
-        if (i2 == Integer.MIN_VALUE) {
+        if (i2 == -2147483648) {
             return null;
         }
         return mo1119(i2);
@@ -60,7 +60,7 @@ public final class C1257 extends C0094 {
             if (abstractC1258.f4587 != i) {
                 return false;
             }
-            abstractC1258.f4587 = Integer.MIN_VALUE;
+            abstractC1258.f4587 = -2147483648;
             view.invalidate();
             abstractC1258.m2948(i, 65536);
             return true;
@@ -69,8 +69,8 @@ public final class C1257 extends C0094 {
         if (!accessibilityManager.isEnabled() || !accessibilityManager.isTouchExplorationEnabled() || (i3 = abstractC1258.f4587) == i) {
             return false;
         }
-        if (i3 != Integer.MIN_VALUE) {
-            abstractC1258.f4587 = Integer.MIN_VALUE;
+        if (i3 != -2147483648) {
+            abstractC1258.f4587 = -2147483648;
             view.invalidate();
             abstractC1258.m2948(i3, 65536);
         }

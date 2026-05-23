@@ -186,19 +186,19 @@ public class cx {
         cx cxVar = new cx();
         if (jSONObject != null) {
             try {
-                cxVar.a(jSONObject.optInt(cl.g));
-                cxVar.a(jSONObject.optString(cl.h));
-                cxVar.b(jSONObject.optString(cl.n));
-                cxVar.b(jSONObject.optInt(cl.i));
-                JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject(cl.b);
+                cxVar.a(jSONObject.optInt("code"));
+                cxVar.a(jSONObject.optString("msg"));
+                cxVar.b(jSONObject.optString("version"));
+                cxVar.b(jSONObject.optInt("status"));
+                JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject("data");
                 if (jSONObjectOptJSONObject != null) {
                     a aVar = new a();
-                    aVar.a(jSONObjectOptJSONObject.optString(cl.c));
-                    aVar.b(jSONObjectOptJSONObject.optString(cl.k));
-                    aVar.c(jSONObjectOptJSONObject.optString(cl.l));
-                    aVar.d(jSONObjectOptJSONObject.optString(cl.j));
-                    if (jSONObjectOptJSONObject.has(cl.o)) {
-                        String strOptString = jSONObjectOptJSONObject.optString(cl.o);
+                    aVar.a(jSONObjectOptJSONObject.optString("delayTimes"));
+                    aVar.b(jSONObjectOptJSONObject.optString("batchCount"));
+                    aVar.c(jSONObjectOptJSONObject.optString("batchInterval"));
+                    aVar.d(jSONObjectOptJSONObject.optString("actWhen"));
+                    if (jSONObjectOptJSONObject.has("targets")) {
+                        String strOptString = jSONObjectOptJSONObject.optString("targets");
                         if (!TextUtils.isEmpty(strOptString)) {
                             try {
                                 JSONArray jSONArray = new JSONArray(new String(ay.a(Base64.decode(strOptString, 0), UMUtils.genSin())));
@@ -207,7 +207,7 @@ public class cx {
                                     JSONObject jSONObjectOptJSONObject2 = jSONArray.optJSONObject(i);
                                     if (jSONObjectOptJSONObject2 != null) {
                                         b bVar = new b();
-                                        JSONArray jSONArrayOptJSONArray = jSONObjectOptJSONObject2.optJSONArray(cl.d);
+                                        JSONArray jSONArrayOptJSONArray = jSONObjectOptJSONObject2.optJSONArray("excludeWeekDays");
                                         if (jSONArrayOptJSONArray != null) {
                                             ArrayList arrayList2 = new ArrayList();
                                             for (int i2 = 0; i2 < jSONArrayOptJSONArray.length(); i2++) {
@@ -215,7 +215,7 @@ public class cx {
                                             }
                                             bVar.a(arrayList2);
                                         }
-                                        JSONArray jSONArrayOptJSONArray2 = jSONObjectOptJSONObject2.optJSONArray(cl.e);
+                                        JSONArray jSONArrayOptJSONArray2 = jSONObjectOptJSONObject2.optJSONArray("excludeHours");
                                         if (jSONArrayOptJSONArray2 != null) {
                                             ArrayList arrayList3 = new ArrayList();
                                             for (int i3 = 0; i3 < jSONArrayOptJSONArray2.length(); i3++) {
@@ -223,12 +223,12 @@ public class cx {
                                             }
                                             bVar.b(arrayList3);
                                         }
-                                        bVar.a(jSONObjectOptJSONObject2.optString(cl.p));
-                                        bVar.a(jSONObjectOptJSONObject2.optInt(cl.q));
-                                        bVar.b(jSONObjectOptJSONObject2.optString(cl.r));
-                                        bVar.c(jSONObjectOptJSONObject2.optString(cl.s));
+                                        bVar.a(jSONObjectOptJSONObject2.optString("appName"));
+                                        bVar.a(jSONObjectOptJSONObject2.optInt("enable"));
+                                        bVar.b(jSONObjectOptJSONObject2.optString("start"));
+                                        bVar.c(jSONObjectOptJSONObject2.optString("end"));
                                         bVar.d(jSONObjectOptJSONObject2.optString("interval"));
-                                        bVar.e(jSONObjectOptJSONObject2.optString(cl.t));
+                                        bVar.e(jSONObjectOptJSONObject2.optString("accType"));
                                         arrayList.add(bVar);
                                     }
                                 }

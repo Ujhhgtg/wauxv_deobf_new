@@ -2,7 +2,6 @@ package p000;
 
 import android.util.Pair;
 import java.io.Serializable;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲀᤝᛸᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -37,20 +36,20 @@ public final class C2142 extends AbstractC2862 implements InterfaceC1429 {
     public final Object mo1196(Object obj, Object obj2) {
         InterfaceC0883 interfaceC0883 = (InterfaceC0883) obj;
         InterfaceC0842 interfaceC0842 = (InterfaceC0842) obj2;
-        switch (this.f7087) {
+        switch (1) {
             case 0:
                 break;
             case 1:
                 break;
         }
-        return ((C2142) mo1197(interfaceC0842, interfaceC0883)).mo1198(C3497.f10997);
+        return ((C2142) mo1197(interfaceC0842, interfaceC0883)).mo1198(Unit.INSTANCE);
     }
 
     /* JADX WARN: Type inference failed for: r2v1, types: [ᛱᛲᛳᛴᛵᛶᛷᤝᲈᲀᲁᤞᛸᲇ, ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤞᛸᲇᲁᤝ] */
     @Override // p000.AbstractC0370
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ */
     public final InterfaceC0842 mo1197(InterfaceC0842 interfaceC0842, Object obj) {
-        switch (this.f7087) {
+        switch (1) {
             case 0:
                 C2142 c2142 = new C2142((C2144) this.f7090, (InterfaceC1429) this.f7091, interfaceC0842);
                 c2142.f7089 = obj;
@@ -69,14 +68,14 @@ public final class C2142 extends AbstractC2862 implements InterfaceC1429 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final Object mo1198(Object obj) throws Throwable {
         InterfaceC0883 interfaceC0883;
-        int i = this.f7087;
+        int i = 1;
         int i2 = 2;
         InterfaceC0842 interfaceC0842 = null;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         Serializable serializable = this.f7091;
         Object obj2 = this.f7090;
         EnumC0884 enumC0884 = EnumC0884.f3325;
-        switch (i) {
+        switch (1) {
             case 0:
                 C2144 c2144 = (C2144) obj2;
                 int i3 = this.f7088;
@@ -90,14 +89,14 @@ public final class C2142 extends AbstractC2862 implements InterfaceC1429 {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
                         AbstractC0743.m2188(obj);
-                        return c3497;
+                        return unit;
                     }
                     interfaceC0883 = (InterfaceC0883) this.f7089;
                     AbstractC0743.m2188(obj);
                 }
                 this.f7089 = null;
                 this.f7088 = 2;
-                return ((AbstractC2862) serializable).mo1196(interfaceC0883, this) == enumC0884 ? enumC0884 : c3497;
+                return ((AbstractC2862) serializable).mo1196(interfaceC0883, this) == enumC0884 ? enumC0884 : unit;
             case 1:
                 String str = (String) serializable;
                 String str2 = (String) obj2;
@@ -105,8 +104,8 @@ public final class C2142 extends AbstractC2862 implements InterfaceC1429 {
                 int i4 = this.f7088;
                 if (i4 == 0) {
                     AbstractC0743.m2188(obj);
-                    C2188.f7149.getClass();
-                    C2180.m3960(C2180.f7141, AbstractC1574.m3314(C2187.f7148).newInstance(pair, str2, str, 1));
+                    
+                    C2180.addNetSceneToQueue(AbstractC1574.dexToCtor(C2187.f7148).newInstance(pair, str2, str, 1));
                     this.f7088 = 1;
                     if (AbstractC1460.m3215(5000L, this) == enumC0884) {
                         return enumC0884;
@@ -117,9 +116,9 @@ public final class C2142 extends AbstractC2862 implements InterfaceC1429 {
                     }
                     AbstractC0743.m2188(obj);
                 }
-                C2188.f7149.getClass();
-                C2180.m3960(C2180.f7141, AbstractC1574.m3314(C2187.f7148).newInstance(pair, str2, str, 0));
-                return c3497;
+                
+                C2180.addNetSceneToQueue(AbstractC1574.dexToCtor(C2187.f7148).newInstance(pair, str2, str, 0));
+                return unit;
             default:
                 InterfaceC0883 interfaceC0884 = (InterfaceC0883) this.f7089;
                 int i5 = this.f7088;
@@ -128,7 +127,7 @@ public final class C2142 extends AbstractC2862 implements InterfaceC1429 {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC0743.m2188(obj);
-                    return c3497;
+                    return unit;
                 }
                 AbstractC0743.m2188(obj);
                 C2536 c2536 = new C2536((String) serializable, i2);
@@ -136,7 +135,7 @@ public final class C2142 extends AbstractC2862 implements InterfaceC1429 {
                 C2146 c2146 = new C2146(AbstractC2203.m4025(interfaceC0884, AbstractC2209.m4140(ExecutorC0990.f3609, new C2857()), new C2363((String) obj2, c2536, interfaceC0842, 3)));
                 this.f7089 = null;
                 this.f7088 = 1;
-                return c2146.m3954(this) == enumC0884 ? enumC0884 : c3497;
+                return c2146.m3954(this) == enumC0884 ? enumC0884 : unit;
         }
     }
 

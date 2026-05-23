@@ -54,7 +54,7 @@ public abstract class AbstractC1534 {
             Unsafe unsafe3 = f5371;
             long jObjectFieldOffset2 = unsafe3.objectFieldOffset(clsLoadClass3.getDeclaredField("methods"));
             f5373 = jObjectFieldOffset2;
-            Method declaredMethod = C1530.class.getDeclaredMethod(bv.av, null);
+            Method declaredMethod = C1530.class.getDeclaredMethod("a", null);
             Method declaredMethod2 = C1530.class.getDeclaredMethod("b", null);
             declaredMethod.setAccessible(true);
             declaredMethod2.setAccessible(true);
@@ -67,7 +67,7 @@ public abstract class AbstractC1534 {
             long j5 = j3 - j2;
             f5374 = j5;
             f5375 = (j2 - j4) - j5;
-            Field declaredField = C1530.class.getDeclaredField(bv.aC);
+            Field declaredField = C1530.class.getDeclaredField("i");
             Field declaredField2 = C1530.class.getDeclaredField("j");
             declaredField.setAccessible(true);
             declaredField2.setAccessible(true);
@@ -88,7 +88,7 @@ public abstract class AbstractC1534 {
             return Collections.EMPTY_LIST;
         }
         try {
-            Method declaredMethod = C1530.class.getDeclaredMethod(bv.av, null);
+            Method declaredMethod = C1530.class.getDeclaredMethod("a", null);
             declaredMethod.setAccessible(true);
             MethodHandle methodHandleUnreflect = MethodHandles.lookup().unreflect(declaredMethod);
             Unsafe unsafe = f5371;

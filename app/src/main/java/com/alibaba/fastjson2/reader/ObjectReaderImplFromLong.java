@@ -32,7 +32,7 @@ public final class ObjectReaderImplFromLong<T> extends ObjectReaderPrimitive<T> 
         if (jSONReader.nextIfNull()) {
             return null;
         }
-        if (this.objectClass == AtomicLong.class && jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY) && jSONReader.readTypeHashCode() != -1591858996898070466L) {
+        if (this.objectClass == AtomicLong.class && jSONReader.nextIfMatch(-110) && jSONReader.readTypeHashCode() != -1591858996898070466L) {
             throw new JSONException(jSONReader.info(jSONReader.getString()));
         }
         return this.creator.apply(jSONReader.readInt64Value());

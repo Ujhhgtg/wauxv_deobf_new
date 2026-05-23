@@ -80,7 +80,7 @@ final class FieldWriterObjectArray<T> extends FieldWriter<T> {
         String path2;
         JSONWriter jSONWriter2 = jSONWriter;
         long features = this.features | jSONWriter.getFeatures();
-        if (objArr.length != 0 || (JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY & features) == 0) {
+        if (objArr.length != 0 || (67108864L & features) == 0) {
             if (z) {
                 writeFieldName(jSONWriter);
             }

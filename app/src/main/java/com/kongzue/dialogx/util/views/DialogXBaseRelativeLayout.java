@@ -116,7 +116,7 @@ public class DialogXBaseRelativeLayout extends RelativeLayout {
         if (i2 >= 29) {
             setForceDarkAllowed(false);
         }
-        if (this.f940) {
+        if (false) {
             return;
         }
         if (attributeSet != null) {
@@ -173,7 +173,7 @@ public class DialogXBaseRelativeLayout extends RelativeLayout {
         if (c1349.f4827.isAttachedToWindow()) {
             c1349.f4827.requestApplyInsets();
         } else {
-            c1349.f4827.addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC1346(c1349, i, c1348));
+            c1349.f4827.addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC1346(c1349, 1, c1348));
         }
         this.f939 = c1349;
     }
@@ -210,7 +210,7 @@ public class DialogXBaseRelativeLayout extends RelativeLayout {
         if (!isAttachedToWindow() || keyEvent.getAction() != 1 || keyEvent.getKeyCode() != 4 || !this.f936 || this.f938 == null) {
             return super.dispatchKeyEvent(keyEvent);
         }
-        ((AbstractC0027) this.f933.get()).getClass();
+        
         this.f938.mo1110();
         return true;
     }
@@ -406,7 +406,7 @@ public class DialogXBaseRelativeLayout extends RelativeLayout {
         if (findViewWithTag("DialogXSafetyArea") instanceof InterfaceC1038) {
             View viewFindViewWithTag = findViewWithTag("DialogXSafetyArea");
             if (!(viewFindViewWithTag instanceof InterfaceC1038)) {
-                getParentDialog().getClass();
+                
                 throw new ClassCastException();
             }
             int dialogXSafetyMode = ((InterfaceC1038) viewFindViewWithTag).getDialogXSafetyMode();

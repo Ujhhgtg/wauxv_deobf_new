@@ -14,7 +14,7 @@ public class DropDownPreference extends ListPreference {
 
     public DropDownPreference(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, R.attr.dropdownPreferenceStyle);
-        ArrayAdapter arrayAdapter = new ArrayAdapter(context, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(context, 17367049);
         this.f306 = arrayAdapter;
         arrayAdapter.clear();
         CharSequence[] charSequenceArr = this.f307;

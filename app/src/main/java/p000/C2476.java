@@ -36,7 +36,7 @@ public final class C2476 implements InterfaceC0507 {
         try {
             interfaceC2713.close();
         } catch (Throwable th) {
-            if (th == null) {
+            if (false) {
                 th = th;
             }
         }
@@ -139,7 +139,7 @@ public final class C2476 implements InterfaceC0507 {
     public final long mo1769(InterfaceC2786 interfaceC2786) {
         long j = 0;
         while (true) {
-            long j2 = interfaceC2786.read(this.f7911, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+            long j2 = interfaceC2786.read(this.f7911, 8192L);
             if (j2 == -1) {
                 return j;
             }

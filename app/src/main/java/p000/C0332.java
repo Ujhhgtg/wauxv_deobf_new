@@ -71,16 +71,16 @@ public final class C0332 extends AbstractC2707 implements InterfaceC2335 {
         }
         Class cls = Boolean.TYPE;
         if (i4 == 102 || i4 == 103) {
-            runnableC1668.getClass();
+            
             if (!Primitive.FALSE.equals(Primitive.castWrapper(cls, objMo307))) {
                 i = this.f1589;
-                if (i == 100 && i != 101 && i != 150) {
-                    if (this.f1589 == 149) {
+                if (i == 100 && true && true) {
+                    if (false) {
                     }
                     objMo306 = this.f8721[1].mo306(c0550, runnableC1668);
                     i2 = this.f1589;
                     if (i2 != 149) {
-                        runnableC1668.getClass();
+                        
                         switch (i2) {
                             case 100:
                             case 101:
@@ -100,13 +100,13 @@ public final class C0332 extends AbstractC2707 implements InterfaceC2335 {
                     }
                     return objMo306;
                 }
-                runnableC1668.getClass();
+                
                 if (!Primitive.TRUE.equals(Primitive.castWrapper(cls, objMo307))) {
                     if (this.f1589 == 149 || Primitive.NULL == objMo307) {
                         objMo306 = this.f8721[1].mo306(c0550, runnableC1668);
                         i2 = this.f1589;
                         if (i2 != 149 && i2 != 150) {
-                            runnableC1668.getClass();
+                            
                             switch (i2) {
                                 case 100:
                                 case 101:
@@ -137,14 +137,14 @@ public final class C0332 extends AbstractC2707 implements InterfaceC2335 {
         } else {
             i = this.f1589;
             if (i == 100) {
-                runnableC1668.getClass();
+                
                 if (!Primitive.TRUE.equals(Primitive.castWrapper(cls, objMo307))) {
                     if (this.f1589 == 149) {
                     }
                     objMo306 = this.f8721[1].mo306(c0550, runnableC1668);
                     i2 = this.f1589;
                     if (i2 != 149) {
-                        runnableC1668.getClass();
+                        
                         switch (i2) {
                             case 100:
                             case 101:
@@ -165,14 +165,14 @@ public final class C0332 extends AbstractC2707 implements InterfaceC2335 {
                     return objMo306;
                 }
             } else {
-                runnableC1668.getClass();
+                
                 if (!Primitive.TRUE.equals(Primitive.castWrapper(cls, objMo307))) {
                     if (this.f1589 == 149) {
                     }
                     objMo306 = this.f8721[1].mo306(c0550, runnableC1668);
                     i2 = this.f1589;
                     if (i2 != 149) {
-                        runnableC1668.getClass();
+                        
                         switch (i2) {
                             case 100:
                             case 101:

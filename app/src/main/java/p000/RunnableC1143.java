@@ -55,7 +55,7 @@ public final /* synthetic */ class RunnableC1143 implements Runnable {
                 SharedPreferencesC1269 sharedPreferencesC1269 = (SharedPreferencesC1269) this.f4247;
                 SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener = (SharedPreferences.OnSharedPreferenceChangeListener) this.f4248;
                 String str = (String) this.f4249;
-                sharedPreferencesC1269.getClass();
+                
                 onSharedPreferenceChangeListener.onSharedPreferenceChanged(sharedPreferencesC1269, str);
                 return;
         }

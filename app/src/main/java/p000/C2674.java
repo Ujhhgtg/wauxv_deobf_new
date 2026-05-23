@@ -18,7 +18,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Map;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import me.hd.wauxv.ui.setting.view.ModuleRecyclerView;
 import me.hd.wauxv.ui.setting.view.ModuleTabLayout;
 
@@ -46,21 +45,19 @@ public final class C2674 extends AbstractC1889 {
     public final void mo3678(AbstractC0027 abstractC0027, View view) throws IllegalAccessException, InvocationTargetException {
         View viewM753 = ((C0943) abstractC0027).m753();
         String[] strArr = AbstractC1574.f5469;
-        "null cannot be cast to non-null type android.view.ViewGroup";
         ViewGroup viewGroup = (ViewGroup) viewM753;
         StringBuilder sb = new StringBuilder();
         sb.append("免费模块仅供学习\n");
         sb.append("勿在国内平台传播\n");
-        C0511.f2180.getClass();
+        
         StringBuilder sb2 = new StringBuilder();
         sb2.append("wxid:");
-        C0774.f2874.getClass();
-        sb2.append(C0774.m2264());
+        
+        sb2.append(C0774.getSelfWxId());
         sb2.append('\n');
         sb.append(sb2.toString());
         ModuleRecyclerView moduleRecyclerView = null;
-        Object objInvoke = AbstractC1574.m3315(C0773.f2873).invoke(null, null);
-        "null cannot be cast to non-null type kotlin.collections.Map<*, *>";
+        Object objInvoke = AbstractC1574.dexToMethod(C0773.f2873).invoke(null, null);
         Object obj = ((Map) objInvoke).get("last_login_alias");
         String str = obj instanceof String ? (String) obj : null;
         if (str != null) {
@@ -124,7 +121,6 @@ public final class C2674 extends AbstractC1889 {
                 Context context = editText2.getContext();
                 String[] strArr2 = AbstractC1574.f5469;
                 Object systemService = context.getSystemService("input_method");
-                "null cannot be cast to non-null type android.view.inputmethod.InputMethodManager";
                 ((InputMethodManager) systemService).hideSoftInputFromWindow(editText2.getWindowToken(), 0);
                 return true;
             }

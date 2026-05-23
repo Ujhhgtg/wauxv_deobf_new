@@ -48,7 +48,7 @@ public final class C1981 extends AbstractC1460 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static void m3818(C1981 c1981, String str) {
-        c1981.getClass();
+        
         C0705 c0705 = new C0705(4);
         c0705.f2683 = new C2837(str, 5, false);
         c1981.f6559 = c0705;
@@ -56,7 +56,7 @@ public final class C1981 extends AbstractC1460 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᲈᤞ, reason: contains not printable characters */
     public static void m3819(C1981 c1981) {
-        c1981.getClass();
+        
         c1981.f6558 = new C0075(4);
     }
 
@@ -182,7 +182,7 @@ public final class C1981 extends AbstractC1460 {
             this.f6561 = new C2328(4);
         }
         C2328 c2328 = this.f6561;
-        c2328.getClass();
+        
         c2328.f7470 = new C1663(i);
     }
 
@@ -192,7 +192,7 @@ public final class C1981 extends AbstractC1460 {
             this.f6561 = new C2328(4);
         }
         C2328 c2328 = this.f6561;
-        c2328.getClass();
+        
         C1663 c1663 = new C1663(4);
         c1663.f5619 = c1664.f5612;
         c1663.f5620 = c1664.f5613;
@@ -200,7 +200,7 @@ public final class C1981 extends AbstractC1460 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲁᲈ, reason: contains not printable characters */
-    public final void m3823(Class... clsArr) {
+    public final void paramTypes(Class... clsArr) {
         C2325 c2325;
         C2328 c2328 = new C2328(4);
         c2328.f7469 = new ArrayList(C1189.f4329);
@@ -250,7 +250,7 @@ public final class C1981 extends AbstractC1460 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲈᲁᤞ, reason: contains not printable characters */
-    public final void m3828(Number... numberArr) {
+    public final void usingNumbers(Number... numberArr) {
         ArrayList arrayList = new ArrayList(numberArr.length);
         for (Number number : numberArr) {
             C2242 c2242 = new C2242();

@@ -22,19 +22,19 @@ import okhttp3.internal.http2.Http2Connection;
 public final class C2334 implements InterfaceC2337, InterfaceC2335 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
-    public static final int[] f7475 = {1, 270534656, 270534656, 67108864, 0, 67108864, Http2.INITIAL_MAX_FRAME_SIZE, 0, 33570816, 0, 0, 0, 0, 0, 1082429440, 0, 0, 0, 0, 0, 0, 0, 1216647168, 1216647168, 0, 0, 1350864896, 268435456, 0, 0, 1082429440, 1082429440, 1082429440, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1216647168, 0, 1216647168, 1233424384, 0, 1233424384, 134217728, 0, 1216647168, 1216647168, 1216647168, 1216647168, 0, 0, 0, 0, 0, 0, 0, 0, 134217728, 134217728, 1216647168, 0, 0, 1082429440, 0, 0, 0, 1220841472, -2146426880, 0, 0, 0, 0, 65536, 65536, 0, Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE, 1487181824, 1216647168, 1216647168, 268435456, Integer.MIN_VALUE, 1216647168, 0, 0, 0, 131072, 536870912, 268435456, 0, 0, 0, 0};
+    public static final int[] f7475 = {1, 270534656, 270534656, 67108864, 0, 67108864, 16384, 0, 33570816, 0, 0, 0, 0, 0, 1082429440, 0, 0, 0, 0, 0, 0, 0, 1216647168, 1216647168, 0, 0, 1350864896, 268435456, 0, 0, 1082429440, 1082429440, 1082429440, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1216647168, 0, 1216647168, 1233424384, 0, 1233424384, 134217728, 0, 1216647168, 1216647168, 1216647168, 1216647168, 0, 0, 0, 0, 0, 0, 0, 0, 134217728, 134217728, 1216647168, 0, 0, 1082429440, 0, 0, 0, 1220841472, -2146426880, 0, 0, 0, 0, 65536, 65536, 0, 16777216, 1487181824, 1216647168, 1216647168, 268435456, -2147483648, 1216647168, 0, 0, 0, 131072, 536870912, 268435456, 0, 0, 0, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
-    public static final int[] f7476 = {0, 551142400, 551142400, 0, 4, 0, bc.e, 4, bc.e, 0, 524288, 0, 0, 0, 268698240, 33554432, 524288, 524288, 0, 8, 0, 0, 1409555072, 1409555072, 0, 0, 262784, 0, 0, 0, 262784, 268698240, 262784, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 112, 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1409555072, 0, 1410079360, 1409555072, 0, 1409555072, 1409292288, 0, 1409555072, 1409555072, 1409555072, 1409555072, 0, 0, 0, 2048, 0, 0, 0, 0, 335548416, 67108864, 1409555072, 0, 0, 262784, 2048, 0, 0, -735831422, 155320320, 524288, r.a.x, 0, 0, 0, 0, 0, 0, 1960697472, 1409555072, 1409555072, 0, 0, 1409555072, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    public static final int[] f7476 = {0, 551142400, 551142400, 0, 4, 0, 256, 4, 256, 0, 524288, 0, 0, 0, 268698240, 33554432, 524288, 524288, 0, 8, 0, 0, 1409555072, 1409555072, 0, 0, 262784, 0, 0, 0, 262784, 268698240, 262784, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 112, 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1409555072, 0, 1410079360, 1409555072, 0, 1409555072, 1409292288, 0, 1409555072, 1409555072, 1409555072, 1409555072, 0, 0, 0, 2048, 0, 0, 0, 0, 335548416, 67108864, 1409555072, 0, 0, 262784, 2048, 0, 0, -735831422, 155320320, 524288, 8200, 0, 0, 0, 0, 0, 0, 1960697472, 1409555072, 1409555072, 0, 0, 1409555072, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
-    public static final int[] f7477 = {0, 0, 0, 0, 0, 0, 0, 0, 0, Http2.INITIAL_MAX_FRAME_SIZE, 65536, 2048, 2097152, 1048576, 2048, 0, 65536, 0, 4194304, 0, 262144, 8388608, 805654305, 805654305, 2097152, 2097152, 2048, 0, 0, 2048, 2048, 2048, 0, 2097152, 8388608, 8388608, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1073741824, 1073741824, 0, 0, 0, -1895825408, -1895825408, 0, 0, 0, 0, 0, 0, 0, 0, 805306368, 0, 0, 0, 805306368, 347937, 18432, 805654305, 805654305, 2097152, 805654305, 345889, 2048, 805654305, 805654305, 805654305, 805654305, 0, 0, 0, 2048, Http2.INITIAL_MAX_FRAME_SIZE, Http2.INITIAL_MAX_FRAME_SIZE, 262144, 65536, 1825, 0, 805654305, 2097152, 344064, 329728, 327680, 262144, 327680, 806702881, 0, 0, 0, 1048576, 1048576, 0, 0, 1048576, 0, 805654305, 805654305, 805654305, 0, 0, 805654305, 2097152, 2097152, Http2.INITIAL_MAX_FRAME_SIZE, 0, 0, 0, 0, 2048, 1048576, 2048};
+    public static final int[] f7477 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 16384, 65536, 2048, 2097152, 1048576, 2048, 0, 65536, 0, 4194304, 0, 262144, 8388608, 805654305, 805654305, 2097152, 2097152, 2048, 0, 0, 2048, 2048, 2048, 0, 2097152, 8388608, 8388608, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1073741824, 1073741824, 0, 0, 0, -1895825408, -1895825408, 0, 0, 0, 0, 0, 0, 0, 0, 805306368, 0, 0, 0, 805306368, 347937, 18432, 805654305, 805654305, 2097152, 805654305, 345889, 2048, 805654305, 805654305, 805654305, 805654305, 0, 0, 0, 2048, 16384, 16384, 262144, 65536, 1825, 0, 805654305, 2097152, 344064, 329728, 327680, 262144, 327680, 806702881, 0, 0, 0, 1048576, 1048576, 0, 0, 1048576, 0, 805654305, 805654305, 805654305, 0, 0, 805654305, 2097152, 2097152, 16384, 0, 0, 0, 0, 2048, 1048576, 2048};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲁᲈ, reason: contains not printable characters */
-    public static final int[] f7478 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3840, 3840, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1073741824, -1073741824, 0, 0, 0, 48, 48, Opcodes.CHECKCAST, Opcodes.CHECKCAST, 196608, 196608, 786432, 786432, 49152, 49152, 8, 8, 0, 0, 0, 7, 7, 1056964608, 1056964608, 3072, 3072, 3158016, 3158016, 12582912, 12582912, 3072, 768, 768, 768, 3840, 0, 0, 3840, 3840, 0, 3840, 0, 0, 3840, 3840, 3840, 3840, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3840, 0, 0, 0, 0, 0, 0, 3840, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3840, 3840, 3840, 0, 0, 3840, 0, 0, 0, 0, 0, 0, 65536, 0, 0, 0};
+    public static final int[] f7478 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3840, 3840, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1073741824, -1073741824, 0, 0, 0, 48, 48, 192, 192, 196608, 196608, 786432, 786432, 49152, 49152, 8, 8, 0, 0, 0, 7, 7, 1056964608, 1056964608, 3072, 3072, 3158016, 3158016, 12582912, 12582912, 3072, 768, 768, 768, 3840, 0, 0, 3840, 3840, 0, 3840, 0, 0, 3840, 3840, 3840, 3840, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3840, 0, 0, 0, 0, 0, 0, 3840, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3840, 3840, 3840, 0, 0, 3840, 0, 0, 0, 0, 0, 0, 65536, 0, 0, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
-    public static final int[] f7479 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67108864, 0, 0, 0, 0, 0, 1310719, 1310719, 8388608, 6815744, 6815744, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE, 50331648, 50331648, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268435456, 268435456, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    public static final int[] f7479 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67108864, 0, 0, 0, 0, 0, 1310719, 1310719, 8388608, 6815744, 6815744, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16777216, 50331648, 50331648, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 268435456, 268435456, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public final C1687 f7480;
@@ -105,7 +105,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         c1687.f5745 = 0;
         this.f7480 = c1687;
         this.f7488 = false;
-        this.f7490 = new int[Opcodes.IUSHR];
+        this.f7490 = new int[124];
         this.f7491 = new C0978[38];
         this.f7492 = false;
         this.f7493 = 0;
@@ -194,7 +194,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -229,14 +229,14 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     iM4293 = m4292();
                 }
                 switch (iM4293) {
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                     case 15:
-                    case Opcodes.LDC /* 18 */:
-                    case Opcodes.FLOAD /* 23 */:
+                    case 18 /* 18 */:
+                    case 23 /* 23 */:
                     case 30:
                     case 39:
                     case 41:
-                    case Opcodes.AALOAD /* 50 */:
+                    case 50 /* 50 */:
                         m4213();
                         m4183();
                         break;
@@ -308,7 +308,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 }
                 throw ((RuntimeException) th2);
             } catch (Throwable th3) {
-                if (1 != 0) {
+                if (true) {
                     c1687.m3423(c0001);
                     if (c1687.f5746) {
                         m4295(c0001);
@@ -355,7 +355,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             }
             c0326.f1577 = sb.toString();
         } catch (Throwable th2) {
-            if (1 != 0) {
+            if (true) {
                 c1687.m3423(c0326);
                 if (c1687.f5746) {
                     m4295(c0326);
@@ -385,13 +385,13 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 iM4293 = m4292();
             }
             if (iM4293 == 110) {
-                c3408M4291 = m4291(UMErrorCode.E_UM_BE_JSON_FAILED);
+                c3408M4291 = m4291(110);
             } else {
                 if (iM4293 != 111) {
                     iArr[48] = this.f7489;
                     throw AbstractC1194.m2776(this, -1);
                 }
-                c3408M4291 = m4291(UMErrorCode.E_UM_BE_CREATE_FAILED);
+                c3408M4291 = m4291(111);
             }
             m4195();
             C0332 c0332 = new C0332(17);
@@ -408,7 +408,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -477,16 +477,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 }
                                 break;
                         }
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                     case 15:
-                    case Opcodes.LDC /* 18 */:
-                    case Opcodes.FLOAD /* 23 */:
+                    case 18 /* 18 */:
+                    case 23 /* 23 */:
                     case 27:
                     case 30:
                     case 39:
                     case 41:
-                    case Opcodes.AALOAD /* 50 */:
-                    case Opcodes.ASTORE /* 58 */:
+                    case 50 /* 50 */:
+                    case 58 /* 58 */:
                     case 60:
                     case 62:
                     case 64:
@@ -544,7 +544,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th);
                 } catch (Throwable th2) {
                     th = th2;
-                    if (z) {
+                    if (false) {
                         c1687.m3423(c0327);
                         if (c1687.f5746) {
                             m4295(c0327);
@@ -625,11 +625,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         th = th2;
                         z5 = false;
                         try {
-                            if (z5) {
+                            if (false) {
                                 c1687.m3422();
                             } else {
                                 c1687.m3426();
-                                z4 = z5;
+                                z4 = false;
                             }
                             try {
                                 z5 = th instanceof C2332;
@@ -641,9 +641,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 }
                                 throw ((RuntimeException) th);
                             } catch (Throwable th3) {
-                                z5 = z4;
+                                z5 = false;
                                 th = th3;
-                                if (z5) {
+                                if (false) {
                                     c1687.m3423(c0328);
                                     if (c1687.f5746) {
                                         m4295(c0328);
@@ -656,7 +656,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         }
                     }
                 }
-                if (z4) {
+                if (false) {
                     c1687.m3423(c0328);
                     if (c1687.f5746) {
                         m4295(c0328);
@@ -706,7 +706,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 c0328.f1580++;
             }
             z4 = true;
-            if (z4) {
+            if (true) {
                 c1687.m3423(c0328);
                 if (c1687.f5746) {
                     m4295(c0328);
@@ -772,16 +772,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 }
                                 break;
                         }
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                     case 15:
-                    case Opcodes.LDC /* 18 */:
-                    case Opcodes.FLOAD /* 23 */:
+                    case 18 /* 18 */:
+                    case 23 /* 23 */:
                     case 27:
                     case 30:
                     case 39:
                     case 41:
-                    case Opcodes.AALOAD /* 50 */:
-                    case Opcodes.ASTORE /* 58 */:
+                    case 50 /* 50 */:
+                    case 58 /* 58 */:
                     case 60:
                     case 62:
                     case 64:
@@ -855,7 +855,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th2);
                 } catch (Throwable th3) {
                     th = th3;
-                    if (z2) {
+                    if (false) {
                         c1687.m3423(c0329);
                         if (c1687.f5746) {
                             m4295(c0329);
@@ -889,29 +889,29 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 case 128:
                     m4291(128);
                     break;
-                case Opcodes.LOR /* 129 */:
-                    m4291(Opcodes.LOR);
+                case 129 /* 129 */:
+                    m4291(129);
                     break;
-                case Opcodes.IXOR /* 130 */:
-                    m4291(Opcodes.IXOR);
+                case 130 /* 130 */:
+                    m4291(130);
                     break;
-                case Opcodes.LXOR /* 131 */:
-                    m4291(Opcodes.LXOR);
+                case 131 /* 131 */:
+                    m4291(131);
                     break;
-                case Opcodes.IINC /* 132 */:
-                    m4291(Opcodes.IINC);
+                case 132 /* 132 */:
+                    m4291(132);
                     break;
-                case Opcodes.I2L /* 133 */:
-                    m4291(Opcodes.I2L);
+                case 133 /* 133 */:
+                    m4291(133);
                     break;
-                case Opcodes.I2F /* 134 */:
-                    m4291(Opcodes.I2F);
+                case 134 /* 134 */:
+                    m4291(134);
                     break;
-                case Opcodes.I2D /* 135 */:
-                    m4291(Opcodes.I2D);
+                case 135 /* 135 */:
+                    m4291(135);
                     break;
-                case Opcodes.L2I /* 136 */:
-                    m4291(Opcodes.L2I);
+                case 136 /* 136 */:
+                    m4291(136);
                     break;
                 case 137:
                     m4291(137);
@@ -919,33 +919,33 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 case 138:
                     m4291(138);
                     break;
-                case Opcodes.F2I /* 139 */:
-                    m4291(Opcodes.F2I);
+                case 139 /* 139 */:
+                    m4291(139);
                     break;
-                case Opcodes.F2L /* 140 */:
-                    m4291(Opcodes.F2L);
+                case 140 /* 140 */:
+                    m4291(140);
                     break;
                 case 141:
                     m4291(141);
                     break;
-                case Opcodes.D2I /* 142 */:
-                    m4291(Opcodes.D2I);
+                case 142 /* 142 */:
+                    m4291(142);
                     break;
-                case Opcodes.D2L /* 143 */:
-                    m4291(Opcodes.D2L);
+                case 143 /* 143 */:
+                    m4291(143);
                     break;
                 case 144:
                     m4291(144);
                     break;
-                case Opcodes.I2B /* 145 */:
-                    m4291(Opcodes.I2B);
+                case 145 /* 145 */:
+                    m4291(145);
                     break;
                 default:
                     this.f7490[35] = this.f7489;
                     throw AbstractC1194.m2776(this, -1);
             }
         } else {
-            m4291(Opcodes.LCMP);
+            m4291(148);
         }
         return m4230(0).f10746;
     }
@@ -1006,7 +1006,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th3);
                 } catch (Throwable th4) {
                     th = th4;
-                    if (!z2) {
+                    if (true) {
                         throw th;
                     }
                     c1687.m3423(c0331);
@@ -1079,11 +1079,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 th = th2;
                 z3 = false;
                 try {
-                    if (z3) {
+                    if (false) {
                         c1687.m3422();
                     } else {
                         c1687.m3426();
-                        z2 = z3;
+                        z2 = false;
                     }
                     try {
                         z3 = th instanceof C2332;
@@ -1095,9 +1095,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         }
                         throw ((RuntimeException) th);
                     } catch (Throwable th3) {
-                        z3 = z2;
+                        z3 = false;
                         th = th3;
-                        if (z3) {
+                        if (false) {
                             c1687.m3423(c0333);
                             if (c1687.f5746) {
                                 m4295(c0333);
@@ -1146,19 +1146,19 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         int iM4293;
         int iM4294;
         int iM4295;
-        this.f7487 = Integer.MAX_VALUE;
+        this.f7487 = 2147483647;
         C3408 c3408 = this.f7483;
         this.f7485 = c3408;
         this.f7486 = c3408;
         boolean z10 = true;
         try {
             z = !m4279();
-            m4293(25, Integer.MAX_VALUE);
+            m4293(25, 2147483647);
         } catch (C2333 unused) {
-            m4293(25, Integer.MAX_VALUE);
+            m4293(25, 2147483647);
             z = true;
         } catch (Throwable th) {
-            m4293(25, Integer.MAX_VALUE);
+            m4293(25, 2147483647);
             throw th;
         }
         int i = 5;
@@ -1206,7 +1206,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             c0336.f1599 = m4208();
                         }
                     } else {
-                        if (iM4292 == 40) {
+                        if (false) {
                             iArr[6] = this.f7489;
                             m4291(-1);
                             throw new C2332();
@@ -1277,7 +1277,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             c0336.f1599 = m4208();
                         }
                     } else {
-                        if (iM4292 == 40) {
+                        if (false) {
                             iArr[6] = this.f7489;
                             m4291(-1);
                             throw new C2332();
@@ -1311,12 +1311,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     th = th2;
                     z10 = false;
                     try {
-                        if (z10) {
+                        if (false) {
                             c1687.m3422();
                             z9 = false;
                         } else {
                             c1687.m3426();
-                            z9 = z10;
+                            z9 = false;
                         }
                         try {
                             z10 = th instanceof C2332;
@@ -1329,8 +1329,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             throw ((RuntimeException) th);
                         } catch (Throwable th3) {
                             th = th3;
-                            z10 = z9;
-                            if (z10) {
+                            z10 = false;
+                            if (false) {
                                 c1687.m3423(c0336);
                                 if (c1687.f5746) {
                                     m4295(c0336);
@@ -1346,7 +1346,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 th = th5;
             }
         } else {
-            this.f7487 = Integer.MAX_VALUE;
+            this.f7487 = 2147483647;
             C3408 c3409 = this.f7483;
             this.f7485 = c3409;
             this.f7486 = c3409;
@@ -1369,49 +1369,49 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     z8 = true;
                 }
                 z2 = !z8;
-                m4293(26, Integer.MAX_VALUE);
+                m4293(26, 2147483647);
             } catch (C2333 unused2) {
-                m4293(26, Integer.MAX_VALUE);
+                m4293(26, 2147483647);
                 z2 = true;
             } catch (Throwable th6) {
-                m4293(26, Integer.MAX_VALUE);
+                m4293(26, 2147483647);
                 throw th6;
             }
             if (z2) {
                 m4204();
                 return;
             }
-            this.f7487 = Integer.MAX_VALUE;
+            this.f7487 = 2147483647;
             C3408 c34011 = this.f7483;
             this.f7485 = c34011;
             this.f7486 = c34011;
             try {
                 z3 = !m4280();
-                m4293(27, Integer.MAX_VALUE);
+                m4293(27, 2147483647);
             } catch (C2333 unused3) {
-                m4293(27, Integer.MAX_VALUE);
+                m4293(27, 2147483647);
                 z3 = true;
             } catch (Throwable th7) {
-                m4293(27, Integer.MAX_VALUE);
+                m4293(27, 2147483647);
                 throw th7;
             }
             if (z3) {
                 m4204();
                 return;
             }
-            this.f7487 = Integer.MAX_VALUE;
+            this.f7487 = 2147483647;
             C3408 c34012 = this.f7483;
             this.f7485 = c34012;
             this.f7486 = c34012;
             try {
                 m4260();
                 z4 = !(m4256() || m4294(75));
-                m4293(28, Integer.MAX_VALUE);
+                m4293(28, 2147483647);
             } catch (C2333 unused4) {
-                m4293(28, Integer.MAX_VALUE);
+                m4293(28, 2147483647);
                 z4 = true;
             } catch (Throwable th8) {
-                m4293(28, Integer.MAX_VALUE);
+                m4293(28, 2147483647);
                 throw th8;
             }
             if (z4) {
@@ -1479,7 +1479,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 iArr[18] = this.f7489;
                             } else {
                                 m4291(86);
-                                m4291(Opcodes.IDIV);
+                                m4291(108);
                                 c0342.f1625 = true;
                             }
                             m4219();
@@ -1494,7 +1494,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 throw new C2332();
                             }
                             m4291(35);
-                            m4291(Opcodes.IDIV);
+                            m4291(108);
                             m4219();
                             c1687.m3423(c0342);
                             try {
@@ -1507,12 +1507,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 th = th10;
                                 z10 = false;
                                 try {
-                                    if (z10) {
+                                    if (false) {
                                         c1687.m3422();
                                         z6 = false;
                                     } else {
                                         c1687.m3426();
-                                        z6 = z10;
+                                        z6 = false;
                                     }
                                     try {
                                         if (th instanceof C2332) {
@@ -1524,8 +1524,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         throw ((RuntimeException) th);
                                     } catch (Throwable th11) {
                                         th = th11;
-                                        z10 = z6;
-                                        if (z10) {
+                                        z10 = false;
+                                        if (false) {
                                             c1687.m3423(c0342);
                                             if (c1687.f5746) {
                                                 m4295(c0342);
@@ -1556,7 +1556,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     iArr[101] = this.f7489;
                     throw AbstractC1194.m2776(this, -1);
                 }
-                AbstractC2707 c0334 = new C0334(i, 1);
+                AbstractC2707 c0334 = new C0334(5, 1);
                 c1687.m3425(c0334);
                 m4296(c0334);
                 try {
@@ -1570,7 +1570,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     try {
                         c1687.m3422();
                         try {
-                            if (th15 instanceof C2332) {
+                            if (false) {
                                 throw ((C2332) th15);
                             }
                             if (!(th15 instanceof RuntimeException)) {
@@ -1580,7 +1580,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         } catch (Throwable th16) {
                             th = th16;
                             z10 = false;
-                            if (z10) {
+                            if (false) {
                                 c1687.m3423(c0334);
                                 if (c1687.f5746) {
                                     m4295(c0334);
@@ -1639,7 +1639,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -1673,15 +1673,15 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     iM4293 = m4292();
                 }
                 if (iM4293 == 147) {
-                    c3408M4291 = m4291(Opcodes.I2S);
+                    c3408M4291 = m4291(147);
                 } else if (iM4293 == 149) {
-                    c3408M4291 = m4291(Opcodes.FCMPL);
+                    c3408M4291 = m4291(149);
                 } else {
                     if (iM4293 != 150) {
                         iArr[38] = this.f7489;
                         throw AbstractC1194.m2776(this, -1);
                     }
-                    c3408M4291 = m4291(Opcodes.FCMPG);
+                    c3408M4291 = m4291(150);
                 }
                 m4191();
                 C0332 c0332 = new C0332(17);
@@ -1696,7 +1696,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         c0332.f1589 = c3408M4291.f10746;
                     } catch (Throwable th2) {
                         th = th2;
-                        if (z) {
+                        if (false) {
                             c1687.m3424(c0332, 2);
                             if (c1687.f5746) {
                                 m4295(c0332);
@@ -1718,9 +1718,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     iArr[36] = this.f7489;
                     return;
                 }
-                m4291(Opcodes.DCMPL);
+                m4291(151);
                 m4197();
-                m4291(Opcodes.DCMPG);
+                m4291(152);
                 AbstractC2707 c0334 = new C0334(16, 4);
                 c1687.m3425(c0334);
                 m4296(c0334);
@@ -1745,7 +1745,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             throw ((RuntimeException) th4);
                         } catch (Throwable th5) {
                             th = th5;
-                            if (!z) {
+                            if (true) {
                                 throw th;
                             }
                             c1687.m3424(c0334, 3);
@@ -1807,7 +1807,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -1854,7 +1854,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     m4291(31);
                     m4291(78);
                     C3408 c3408M4291 = m4291(75);
-                    m4291(Opcodes.DCMPG);
+                    m4291(152);
                     m4197();
                     m4291(79);
                     m4217();
@@ -1889,7 +1889,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 }
                 m4222();
                 C3408 c3408M4292 = m4291(75);
-                m4291(Opcodes.DCMPG);
+                m4291(152);
                 m4197();
                 m4291(79);
                 m4217();
@@ -1902,11 +1902,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 th = th3;
                 z = false;
                 try {
-                    if (z) {
+                    if (false) {
                         c1687.m3422();
                     } else {
                         c1687.m3426();
-                        z3 = z;
+                        z3 = false;
                     }
                     try {
                         z = th instanceof C2332;
@@ -1918,9 +1918,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         }
                         throw ((RuntimeException) th);
                     } catch (Throwable th4) {
-                        z = z3;
+                        z = false;
                         th = th4;
-                        if (z) {
+                        if (false) {
                             c1687.m3423(c0337);
                             if (c1687.f5746) {
                                 m4295(c0337);
@@ -2015,7 +2015,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 }
                 throw ((RuntimeException) th2);
             } catch (Throwable th3) {
-                if (1 != 0) {
+                if (true) {
                     c1687.m3423(c0333);
                     if (c1687.f5746) {
                         m4295(c0333);
@@ -2069,15 +2069,15 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 th = th;
                 z2 = false;
                 try {
-                    if (z2) {
+                    if (false) {
                         c1687.m3422();
                     } else {
                         c1687.m3426();
-                        z = z2;
+                        z = false;
                     }
                     try {
-                        z2 = th instanceof C2332;
-                        if (z2) {
+                        z2 = false;
+                        if (false) {
                             throw ((C2332) th);
                         }
                         if (!(th instanceof RuntimeException)) {
@@ -2086,8 +2086,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         throw ((RuntimeException) th);
                     } catch (Throwable th2) {
                         th = th2;
-                        z2 = z;
-                        if (z2) {
+                        z2 = false;
+                        if (false) {
                             c1687.m3423(c0002);
                             if (c1687.f5746) {
                                 m4295(c0002);
@@ -2147,7 +2147,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -2182,7 +2182,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 iM4293 = m4292();
             }
             if (iM4293 == 114) {
-                c3408M4291 = m4291(UMErrorCode.E_UM_BE_FILE_OVERSIZE);
+                c3408M4291 = m4291(114);
             } else {
                 if (iM4293 != 115) {
                     iArr[46] = this.f7489;
@@ -2205,7 +2205,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -2239,23 +2239,23 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     case 126:
                     case 127:
                     case 128:
-                    case Opcodes.LOR /* 129 */:
-                    case Opcodes.IXOR /* 130 */:
-                    case Opcodes.LXOR /* 131 */:
-                    case Opcodes.IINC /* 132 */:
-                    case Opcodes.I2L /* 133 */:
-                    case Opcodes.I2F /* 134 */:
-                    case Opcodes.I2D /* 135 */:
-                    case Opcodes.L2I /* 136 */:
+                    case 129 /* 129 */:
+                    case 130 /* 130 */:
+                    case 131 /* 131 */:
+                    case 132 /* 132 */:
+                    case 133 /* 133 */:
+                    case 134 /* 134 */:
+                    case 135 /* 135 */:
+                    case 136 /* 136 */:
                     case 137:
                     case 138:
-                    case Opcodes.F2I /* 139 */:
-                    case Opcodes.F2L /* 140 */:
+                    case 139 /* 139 */:
+                    case 140 /* 140 */:
                     case 141:
-                    case Opcodes.D2I /* 142 */:
-                    case Opcodes.D2L /* 143 */:
+                    case 142 /* 142 */:
+                    case 143 /* 143 */:
                     case 144:
-                    case Opcodes.I2B /* 145 */:
+                    case 145 /* 145 */:
                         c0330.f1584 = Integer.valueOf(m4185());
                         m4197();
                         break;
@@ -2285,7 +2285,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th);
                 } catch (Throwable th2) {
                     th = th2;
-                    if (z) {
+                    if (false) {
                         c1687.m3423(c0330);
                         if (c1687.f5746) {
                             m4295(c0330);
@@ -2302,7 +2302,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public final void m4198() throws Throwable {
-        this.f7487 = Integer.MAX_VALUE;
+        this.f7487 = 2147483647;
         C3408 c3408 = this.f7483;
         this.f7485 = c3408;
         this.f7486 = c3408;
@@ -2312,10 +2312,10 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             z = true ^ (m4256() || m4294(75));
         } catch (C2333 unused) {
         } catch (Throwable th) {
-            m4293(33, Integer.MAX_VALUE);
+            m4293(33, 2147483647);
             throw th;
         }
-        m4293(33, Integer.MAX_VALUE);
+        m4293(33, 2147483647);
         if (z) {
             m4223();
             return;
@@ -2326,16 +2326,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         }
         if (iM4292 != 43 && iM4292 != 44 && iM4292 != 92 && iM4292 != 93) {
             switch (iM4292) {
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                 case 15:
-                case Opcodes.LDC /* 18 */:
-                case Opcodes.FLOAD /* 23 */:
+                case 18 /* 18 */:
+                case 23 /* 23 */:
                 case 27:
                 case 30:
                 case 39:
                 case 41:
-                case Opcodes.AALOAD /* 50 */:
-                case Opcodes.ASTORE /* 58 */:
+                case 50 /* 50 */:
+                case 58 /* 58 */:
                 case 60:
                 case 62:
                 case 64:
@@ -2412,7 +2412,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     } else {
                         z2 = false;
                     }
-                    if (!z2) {
+                    if (true) {
                         break;
                     }
                     m4291(82);
@@ -2446,7 +2446,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 if (iM4293 != 154) {
                     iArr[28] = this.f7489;
                 } else {
-                    m4291(Opcodes.IFNE);
+                    m4291(154);
                     c0339.f1615 = true;
                 }
                 c0339.f1612 = m4291(75).f10750;
@@ -2479,7 +2479,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th3);
                 } catch (Throwable th4) {
                     th = th4;
-                    if (!z3) {
+                    if (true) {
                         throw th;
                     }
                     c1687.m3423(c0339);
@@ -2546,7 +2546,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th);
                 } catch (Throwable th2) {
                     th = th2;
-                    if (z) {
+                    if (false) {
                         c1687.m3423(c0340);
                         if (c1687.f5746) {
                             m4295(c0340);
@@ -2604,7 +2604,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -2634,23 +2634,23 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             int[] iArr = this.f7490;
             C1687 c1687 = this.f7480;
             switch (iM4292) {
-                case Opcodes.POP2 /* 88 */:
-                case Opcodes.DUP /* 89 */:
+                case 88 /* 88 */:
+                case 89 /* 89 */:
                 case 90:
                 case 91:
-                case Opcodes.SWAP /* 95 */:
-                case Opcodes.IADD /* 96 */:
-                case Opcodes.LADD /* 97 */:
+                case 95 /* 95 */:
+                case 96 /* 96 */:
+                case 97 /* 97 */:
                 case 98:
                     int iM4293 = this.f7484;
                     if (iM4293 == -1) {
                         iM4293 = m4292();
                     }
                     switch (iM4293) {
-                        case Opcodes.POP2 /* 88 */:
+                        case 88 /* 88 */:
                             c3408M4292 = m4291(88);
                             break;
-                        case Opcodes.DUP /* 89 */:
+                        case 89 /* 89 */:
                             c3408M4292 = m4291(89);
                             break;
                         case 90:
@@ -2659,19 +2659,19 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         case 91:
                             c3408M4292 = m4291(91);
                             break;
-                        case Opcodes.DUP2 /* 92 */:
+                        case 92 /* 92 */:
                         case 93:
                         case 94:
                         default:
                             iArr[55] = this.f7489;
                             throw AbstractC1194.m2776(this, -1);
-                        case Opcodes.SWAP /* 95 */:
+                        case 95 /* 95 */:
                             c3408M4292 = m4291(95);
                             break;
-                        case Opcodes.IADD /* 96 */:
+                        case 96 /* 96 */:
                             c3408M4292 = m4291(96);
                             break;
-                        case Opcodes.LADD /* 97 */:
+                        case 97 /* 97 */:
                             c3408M4292 = m4291(97);
                             break;
                         case 98:
@@ -2691,7 +2691,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             c0332.f1589 = c3408M4292.f10746;
                         } catch (Throwable th) {
                             th = th;
-                            if (z) {
+                            if (false) {
                                 c1687.m3424(c0332, 2);
                                 if (c1687.f5746) {
                                     m4295(c0332);
@@ -2704,7 +2704,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         z = true;
                     }
                     break;
-                case Opcodes.DUP2 /* 92 */:
+                case 92 /* 92 */:
                 case 93:
                 case 94:
                 default:
@@ -2751,7 +2751,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             return;
                                         } catch (Throwable th3) {
                                             th = th3;
-                                            if (z) {
+                                            if (false) {
                                                 c1687.m3424(c0333, 2);
                                                 if (c1687.f5746) {
                                                     m4295(c0333);
@@ -2780,7 +2780,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             return;
                                         } catch (Throwable th5) {
                                             th = th5;
-                                            if (z) {
+                                            if (false) {
                                                 c1687.m3424(c0334, 2);
                                                 if (c1687.f5746) {
                                                     m4295(c0334);
@@ -2857,18 +2857,18 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             if (c2000M4205 != null) {
                 c0345.f1641 = c2000M4205;
             }
-            this.f7487 = Integer.MAX_VALUE;
+            this.f7487 = 2147483647;
             C3408 c3408 = this.f7483;
             this.f7485 = c3408;
             this.f7486 = c3408;
             try {
                 z = !(m4294(75) || m4294(78));
-                m4293(2, Integer.MAX_VALUE);
+                m4293(2, 2147483647);
             } catch (C2333 unused) {
-                m4293(2, Integer.MAX_VALUE);
+                m4293(2, 2147483647);
                 z = true;
             } catch (Throwable th) {
-                m4293(2, Integer.MAX_VALUE);
+                m4293(2, 2147483647);
                 throw th;
             }
             int[] iArr = this.f7490;
@@ -2938,7 +2938,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th2);
                 } catch (Throwable th3) {
                     th = th3;
-                    if (z2) {
+                    if (false) {
                         c1687.m3423(c0345);
                         if (c1687.f5746) {
                             m4295(c0345);
@@ -2965,7 +2965,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             int[] iArr = this.f7490;
             if (iM4292 != 11 && iM4292 != 21 && iM4292 != 28 && iM4292 != 42 && iM4292 != 61 && iM4292 != 51 && iM4292 != 52 && iM4292 != 54 && iM4292 != 55) {
                 switch (iM4292) {
-                    case Opcodes.IALOAD /* 46 */:
+                    case 46 /* 46 */:
                     case 47:
                     case 48:
                         break;
@@ -2996,7 +2996,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 m4291(54);
             } else if (iM4293 != 55) {
                 switch (iM4293) {
-                    case Opcodes.IALOAD /* 46 */:
+                    case 46 /* 46 */:
                         m4291(46);
                         break;
                     case 47:
@@ -3099,11 +3099,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     th = th;
                     z3 = false;
                     try {
-                        if (z3) {
+                        if (false) {
                             c1687.m3422();
                         } else {
                             c1687.m3426();
-                            z2 = z3;
+                            z2 = false;
                         }
                         try {
                             z3 = th instanceof C2332;
@@ -3115,9 +3115,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             }
                             throw ((RuntimeException) th);
                         } catch (Throwable th2) {
-                            z3 = z2;
+                            z3 = false;
                             th = th2;
-                            if (z3) {
+                            if (false) {
                                 c1687.m3423(c0347);
                                 if (c1687.f5746) {
                                     m4295(c0347);
@@ -3158,17 +3158,17 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 iM4293 = m4292();
             }
             if (iM4293 == 108) {
-                c3408M4291 = m4291(Opcodes.IDIV);
+                c3408M4291 = m4291(108);
             } else if (iM4293 == 109) {
-                c3408M4291 = m4291(Opcodes.LDIV);
+                c3408M4291 = m4291(109);
             } else if (iM4293 == 116) {
-                c3408M4291 = m4291(Opcodes.INEG);
+                c3408M4291 = m4291(116);
             } else {
                 if (iM4293 != 117) {
                     iArr[61] = this.f7489;
                     throw AbstractC1194.m2776(this, -1);
                 }
-                c3408M4291 = m4291(Opcodes.LNEG);
+                c3408M4291 = m4291(117);
             }
             m4209();
             C0332 c0332 = new C0332(17);
@@ -3185,7 +3185,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -3239,13 +3239,13 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 iM4293 = m4292();
             }
             if (iM4293 == 118) {
-                c3408M4291 = m4291(Opcodes.FNEG);
+                c3408M4291 = m4291(118);
             } else {
                 if (iM4293 != 119) {
                     iArr[63] = this.f7489;
                     throw AbstractC1194.m2776(this, -1);
                 }
-                c3408M4291 = m4291(Opcodes.DNEG);
+                c3408M4291 = m4291(119);
             }
             m4224();
             C0332 c0332 = new C0332(17);
@@ -3262,7 +3262,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     c0332.f1589 = c3408M4291.f10746;
                 } catch (Throwable th) {
                     th = th;
-                    if (z) {
+                    if (false) {
                         c1687.m3424(c0332, 2);
                         if (c1687.f5746) {
                             m4295(c0332);
@@ -3329,7 +3329,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th3);
                 } catch (Throwable th4) {
                     th = th4;
-                    if (!z2) {
+                    if (true) {
                         throw th;
                     }
                     c1687.m3423(c0348);
@@ -3446,15 +3446,15 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         }
                         if (iM4294 != 23 && iM4294 != 24 && iM4294 != 43 && iM4294 != 44 && iM4294 != 92 && iM4294 != 93) {
                             switch (iM4294) {
-                                case Opcodes.FCONST_1 /* 12 */:
+                                case 12 /* 12 */:
                                 case 15:
-                                case Opcodes.LDC /* 18 */:
+                                case 18 /* 18 */:
                                 case 27:
                                 case 30:
                                 case 39:
                                 case 41:
-                                case Opcodes.AALOAD /* 50 */:
-                                case Opcodes.ASTORE /* 58 */:
+                                case 50 /* 50 */:
+                                case 58 /* 58 */:
                                 case 60:
                                 case 62:
                                 case 64:
@@ -3525,7 +3525,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     if (!(th3 instanceof C2332)) {
                         throw ((C2332) th3);
                     }
-                    if (th3 instanceof RuntimeException) {
+                    if (false) {
                         throw ((Error) th3);
                     }
                     throw ((RuntimeException) th3);
@@ -3546,33 +3546,33 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 break;
                             default:
                                 iArr[75] = this.f7489;
-                                this.f7487 = Integer.MAX_VALUE;
+                                this.f7487 = 2147483647;
                                 C3408 c3408 = this.f7483;
                                 this.f7485 = c3408;
                                 this.f7486 = c3408;
                                 try {
                                     z2 = !m4270();
-                                    m4293(12, Integer.MAX_VALUE);
+                                    m4293(12, 2147483647);
                                 } catch (C2333 unused) {
-                                    m4293(12, Integer.MAX_VALUE);
+                                    m4293(12, 2147483647);
                                     z2 = true;
                                 } catch (Throwable th4) {
-                                    m4293(12, Integer.MAX_VALUE);
+                                    m4293(12, 2147483647);
                                     throw th4;
                                 }
                                 if (!z2) {
-                                    this.f7487 = Integer.MAX_VALUE;
+                                    this.f7487 = 2147483647;
                                     C3408 c3409 = this.f7483;
                                     this.f7485 = c3409;
                                     this.f7486 = c3409;
                                     try {
                                         z3 = !(m4256() || m4294(86) || m4294(14));
-                                        m4293(13, Integer.MAX_VALUE);
+                                        m4293(13, 2147483647);
                                     } catch (C2333 unused2) {
-                                        m4293(13, Integer.MAX_VALUE);
+                                        m4293(13, 2147483647);
                                         z3 = true;
                                     } catch (Throwable th5) {
-                                        m4293(13, Integer.MAX_VALUE);
+                                        m4293(13, 2147483647);
                                         throw th5;
                                     }
                                     if (z3) {
@@ -3617,7 +3617,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         } catch (Throwable th7) {
                                             th = th7;
                                             z4 = false;
-                                            if (z4) {
+                                            if (false) {
                                                 c1687.m3423(c0346);
                                                 if (c1687.f5746) {
                                                     m4295(c0346);
@@ -3655,8 +3655,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         c0343.f1629 = Primitive.NULL;
                         return;
                     }
-                    if (iM4296 != 58) {
-                        if (iM4296 != 60) {
+                    if (true) {
+                        if (true) {
                             m4291(60);
                             c1687.m3423(c0343);
                             if (c1687.f5746) {
@@ -3742,27 +3742,27 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         i3 = 0;
                     }
                 }
-                iM4292 = this.f7484;
-                if (iM4292 == -1) {
+                iM4292 = 27;
+                if (false) {
                     iM4292 = m4292();
                 }
-                if (iM4292 != 27) {
+                if (false) {
                     m4291(27);
                     i5 = 0;
                 } else {
-                    if (iM4292 == 58) {
+                    if (false) {
                         iArr[90] = this.f7489;
                         m4291(-1);
                         throw new C2332();
                     }
                     m4291(58);
-                    i5 = i2;
+                    i5 = 1;
                 }
                 c1687.m3423(c0343);
                 if (c1687.f5746) {
                     m4295(c0343);
                 }
-                if (i5 != 0) {
+                if (true) {
                     primitive = Primitive.TRUE;
                 } else {
                     primitive = Primitive.FALSE;
@@ -3784,8 +3784,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 c0343.f1629 = Primitive.NULL;
                                 return;
                             }
-                            if (iM4296 != 58) {
-                                if (iM4296 != 60) {
+                            if (true) {
+                                if (true) {
                                     m4291(60);
                                     c1687.m3423(c0343);
                                     if (c1687.f5746) {
@@ -3963,13 +3963,13 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             m4291(27);
                             i5 = 0;
                         } else {
-                            if (iM4292 == 58) {
+                            if (false) {
                                 iArr[90] = this.f7489;
                                 m4291(-1);
                                 throw new C2332();
                             }
                             m4291(58);
-                            i5 = i2;
+                            i5 = 1;
                         }
                         c1687.m3423(c0343);
                         if (c1687.f5746) {
@@ -3990,7 +3990,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 }
             } catch (Throwable th16) {
                 th = th16;
-                i3 = i2;
+                i3 = 1;
                 i6 = 0;
             }
         } catch (Throwable th17) {
@@ -4003,7 +4003,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 i4 = i6;
             } else {
                 c1687.m3426();
-                i4 = i3;
+                i4 = 0;
             }
             try {
                 if (th instanceof C2332) {
@@ -4089,7 +4089,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 if (iM4292 != 82) {
                     iArr[87] = this.f7489;
                     if (m4230(1).f10746 == 153 && ((m4230(2).f10746 == 75 || m4230(2).f10746 == 43) && m4230(3).f10746 != 83)) {
-                        m4291(Opcodes.IFEQ);
+                        m4291(153);
                         int iM4293 = this.f7484;
                         if (iM4293 == -1) {
                             iM4293 = m4292();
@@ -4127,7 +4127,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         throw th3;
                     }
                     if (z3) {
-                        m4291(Opcodes.IFLT);
+                        m4291(155);
                         C3408 c3408M4292 = m4291(75);
                         int iM4294 = this.f7484;
                         if (iM4294 == -1) {
@@ -4252,16 +4252,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                     c0349.f1656 = true;
                                     break;
                             }
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case 15:
-                        case Opcodes.LDC /* 18 */:
-                        case Opcodes.FLOAD /* 23 */:
+                        case 18 /* 18 */:
+                        case 23 /* 23 */:
                         case 27:
                         case 30:
                         case 39:
                         case 41:
-                        case Opcodes.AALOAD /* 50 */:
-                        case Opcodes.ASTORE /* 58 */:
+                        case 50 /* 50 */:
+                        case 58 /* 58 */:
                         case 60:
                         case 62:
                         case 64:
@@ -4287,7 +4287,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         iM4299 = m4292();
                     }
                     if (iM4299 == 152) {
-                        m4291(Opcodes.DCMPG);
+                        m4291(152);
                         c0349.f1654 = true;
                         int iM42910 = this.f7484;
                         if (iM42910 == -1) {
@@ -4316,16 +4316,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             c0349.f1657 = true;
                                             break;
                                     }
-                                case Opcodes.FCONST_1 /* 12 */:
+                                case 12 /* 12 */:
                                 case 15:
-                                case Opcodes.LDC /* 18 */:
-                                case Opcodes.FLOAD /* 23 */:
+                                case 18 /* 18 */:
+                                case 23 /* 23 */:
                                 case 27:
                                 case 30:
                                 case 39:
                                 case 41:
-                                case Opcodes.AALOAD /* 50 */:
-                                case Opcodes.ASTORE /* 58 */:
+                                case 50 /* 50 */:
+                                case 58 /* 58 */:
                                 case 60:
                                 case 62:
                                 case 64:
@@ -4346,7 +4346,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             iM42911 = m4292();
                         }
                         if (iM42911 == 152) {
-                            m4291(Opcodes.DCMPG);
+                            m4291(152);
                             c0349.f1655 = true;
                             int iM42912 = this.f7484;
                             if (iM42912 == -1) {
@@ -4374,16 +4374,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                 m4197();
                                                 break;
                                         }
-                                    case Opcodes.FCONST_1 /* 12 */:
+                                    case 12 /* 12 */:
                                     case 15:
-                                    case Opcodes.LDC /* 18 */:
-                                    case Opcodes.FLOAD /* 23 */:
+                                    case 18 /* 18 */:
+                                    case 23 /* 23 */:
                                     case 27:
                                     case 30:
                                     case 39:
                                     case 41:
-                                    case Opcodes.AALOAD /* 50 */:
-                                    case Opcodes.ASTORE /* 58 */:
+                                    case 50 /* 50 */:
+                                    case 58 /* 58 */:
                                     case 60:
                                     case 62:
                                     case 64:
@@ -4406,7 +4406,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             m4291(-1);
                             throw new C2332();
                         }
-                        m4291(Opcodes.IFEQ);
+                        m4291(153);
                         int iM42913 = this.f7484;
                         if (iM42913 == -1) {
                             iM42913 = m4292();
@@ -4433,16 +4433,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             m4197();
                                             break;
                                     }
-                                case Opcodes.FCONST_1 /* 12 */:
+                                case 12 /* 12 */:
                                 case 15:
-                                case Opcodes.LDC /* 18 */:
-                                case Opcodes.FLOAD /* 23 */:
+                                case 18 /* 18 */:
+                                case 23 /* 23 */:
                                 case 27:
                                 case 30:
                                 case 39:
                                 case 41:
-                                case Opcodes.AALOAD /* 50 */:
-                                case Opcodes.ASTORE /* 58 */:
+                                case 50 /* 50 */:
+                                case 58 /* 58 */:
                                 case 60:
                                 case 62:
                                 case 64:
@@ -4475,12 +4475,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             }
         }
         try {
-            if (z6) {
+            if (false) {
                 c1687.m3422();
                 z = false;
             } else {
                 c1687.m3426();
-                z = z6;
+                z = false;
             }
             try {
                 z6 = th instanceof C2332;
@@ -4493,8 +4493,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 throw ((RuntimeException) th);
             } catch (Throwable th7) {
                 th = th7;
-                z6 = z;
-                if (z6) {
+                z6 = false;
+                if (false) {
                     c1687.m3423(c0349);
                     if (c1687.f5746) {
                         m4295(c0349);
@@ -4597,7 +4597,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             } catch (Throwable th) {
                 th = th;
                 z = false;
-                if (z) {
+                if (false) {
                     c1687.m3423(c0350);
                     if (c1687.f5746) {
                         m4295(c0350);
@@ -4637,7 +4637,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             if (i2 <= 0) {
                 break;
             }
-            c2336.f7518[i3] = Integer.MIN_VALUE;
+            c2336.f7518[i3] = -2147483648;
             i2 = i3;
         }
         this.f7483 = new C3408();
@@ -4683,15 +4683,15 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         th = th;
                         z2 = false;
                         try {
-                            if (z2) {
+                            if (false) {
                                 c1687.m3422();
                             } else {
                                 c1687.m3426();
-                                z = z2;
+                                z = false;
                             }
                             try {
-                                z2 = th instanceof C2332;
-                                if (z2) {
+                                z2 = false;
+                                if (false) {
                                     throw ((C2332) th);
                                 }
                                 if (!(th instanceof RuntimeException)) {
@@ -4700,8 +4700,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 throw ((RuntimeException) th);
                             } catch (Throwable th2) {
                                 th = th2;
-                                z2 = z;
-                                if (z2) {
+                                z2 = false;
+                                if (false) {
                                     c1687.m3423(c0352);
                                     if (c1687.f5746) {
                                         m4295(c0352);
@@ -4745,9 +4745,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 case 120:
                 case 121:
                 case 122:
-                case Opcodes.LSHR /* 123 */:
-                case Opcodes.IUSHR /* 124 */:
-                case Opcodes.LUSHR /* 125 */:
+                case 123 /* 123 */:
+                case 124 /* 124 */:
+                case 125 /* 125 */:
                     int iM4293 = this.f7484;
                     if (iM4293 == -1) {
                         iM4293 = m4292();
@@ -4762,14 +4762,14 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         case 122:
                             c3408M4291 = m4291(122);
                             break;
-                        case Opcodes.LSHR /* 123 */:
-                            c3408M4291 = m4291(Opcodes.LSHR);
+                        case 123 /* 123 */:
+                            c3408M4291 = m4291(123);
                             break;
-                        case Opcodes.IUSHR /* 124 */:
-                            c3408M4291 = m4291(Opcodes.IUSHR);
+                        case 124 /* 124 */:
+                            c3408M4291 = m4291(124);
                             break;
-                        case Opcodes.LUSHR /* 125 */:
-                            c3408M4291 = m4291(Opcodes.LUSHR);
+                        case 125 /* 125 */:
+                            c3408M4291 = m4291(125);
                             break;
                         default:
                             iArr[57] = this.f7489;
@@ -4790,7 +4790,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             c0332.f1589 = c3408M4291.f10746;
                         } catch (Throwable th) {
                             th = th;
-                            if (z) {
+                            if (false) {
                                 c1687.m3424(c0332, 2);
                                 if (c1687.f5746) {
                                     m4295(c0332);
@@ -4867,18 +4867,18 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 int i2 = 31;
                 int[] iArr = this.f7490;
                 switch (iM4292) {
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                     case 15:
-                    case Opcodes.LDC /* 18 */:
-                    case Opcodes.FLOAD /* 23 */:
+                    case 18 /* 18 */:
+                    case 23 /* 23 */:
                     case 27:
                     case 30:
                     case 39:
                     case 41:
                     case 43:
                     case 44:
-                    case Opcodes.AALOAD /* 50 */:
-                    case Opcodes.ASTORE /* 58 */:
+                    case 50 /* 50 */:
+                    case 58 /* 58 */:
                     case 60:
                     case 62:
                     case 64:
@@ -4890,7 +4890,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     case 78:
                     case 80:
                     case 82:
-                    case Opcodes.DUP2 /* 92 */:
+                    case 92 /* 92 */:
                     case 93:
                     case 104:
                     case 105:
@@ -4899,7 +4899,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         m4197();
                         m4219();
                         return;
-                    case Opcodes.LLOAD /* 22 */:
+                    case 22 /* 22 */:
                         C0361 c0361 = new C0361(34);
                         c1687.m3425(c0361);
                         m4296(c0361);
@@ -4922,12 +4922,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 th = th3;
                                 z14 = false;
                                 try {
-                                    if (z14) {
+                                    if (false) {
                                         c1687.m3422();
                                         z3 = false;
                                     } else {
                                         c1687.m3426();
-                                        z3 = z14;
+                                        z3 = false;
                                     }
                                     try {
                                         z14 = th instanceof C2332;
@@ -4940,8 +4940,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         throw ((RuntimeException) th);
                                     } catch (Throwable th4) {
                                         th = th4;
-                                        z14 = z3;
-                                        if (z14) {
+                                        z14 = false;
+                                        if (false) {
                                             c1687.m3423(c0361);
                                             if (c1687.f5746) {
                                                 m4295(c0361);
@@ -5025,7 +5025,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 } catch (Throwable th9) {
                                     th = th9;
                                     z14 = false;
-                                    if (z14) {
+                                    if (false) {
                                         c1687.m3423(c0341);
                                         if (c1687.f5746) {
                                             m4295(c0341);
@@ -5038,8 +5038,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             }
                         }
                         break;
-                    case Opcodes.SALOAD /* 53 */:
-                        AbstractC2707 c0334 = new C0334(i2, 3);
+                    case 53 /* 53 */:
+                        AbstractC2707 c0334 = new C0334(31, 3);
                         c1687.m3425(c0334);
                         m4296(c0334);
                         try {
@@ -5098,7 +5098,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 } catch (Throwable th13) {
                                     th = th13;
                                     z14 = false;
-                                    if (z14) {
+                                    if (false) {
                                         c1687.m3423(c0334);
                                         if (c1687.f5746) {
                                             m4295(c0334);
@@ -5141,7 +5141,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 } catch (Throwable th16) {
                                     th = th16;
                                     z14 = false;
-                                    if (z14) {
+                                    if (false) {
                                         c1687.m3423(c0362);
                                         if (c1687.f5746) {
                                             m4295(c0362);
@@ -5154,7 +5154,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             }
                         }
                         break;
-                    case Opcodes.BASTORE /* 84 */:
+                    case 84 /* 84 */:
                         m4291(84);
                         return;
                     default:
@@ -5172,11 +5172,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 }
                                 switch (iM4296) {
                                     case 11:
-                                    case Opcodes.FCONST_1 /* 12 */:
+                                    case 12 /* 12 */:
                                     case 15:
-                                    case Opcodes.LDC /* 18 */:
-                                    case Opcodes.ILOAD /* 21 */:
-                                    case Opcodes.FLOAD /* 23 */:
+                                    case 18 /* 18 */:
+                                    case 21 /* 21 */:
+                                    case 23 /* 23 */:
                                     case 27:
                                     case 28:
                                     case 30:
@@ -5185,15 +5185,15 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                     case 42:
                                     case 43:
                                     case 44:
-                                    case Opcodes.IALOAD /* 46 */:
+                                    case 46 /* 46 */:
                                     case 47:
                                     case 48:
-                                    case Opcodes.AALOAD /* 50 */:
-                                    case Opcodes.BALOAD /* 51 */:
+                                    case 50 /* 50 */:
+                                    case 51 /* 51 */:
                                     case 52:
-                                    case Opcodes.ISTORE /* 54 */:
-                                    case Opcodes.LSTORE /* 55 */:
-                                    case Opcodes.ASTORE /* 58 */:
+                                    case 54 /* 54 */:
+                                    case 55 /* 55 */:
+                                    case 58 /* 58 */:
                                     case 60:
                                     case 61:
                                     case 62:
@@ -5206,7 +5206,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                     case 78:
                                     case 80:
                                     case 82:
-                                    case Opcodes.DUP2 /* 92 */:
+                                    case 92 /* 92 */:
                                     case 93:
                                     case 104:
                                     case 105:
@@ -5247,16 +5247,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                     c0338.f1609 = true;
                                                     break;
                                             }
-                                        case Opcodes.FCONST_1 /* 12 */:
+                                        case 12 /* 12 */:
                                         case 15:
-                                        case Opcodes.LDC /* 18 */:
-                                        case Opcodes.FLOAD /* 23 */:
+                                        case 18 /* 18 */:
+                                        case 23 /* 23 */:
                                         case 27:
                                         case 30:
                                         case 39:
                                         case 41:
-                                        case Opcodes.AALOAD /* 50 */:
-                                        case Opcodes.ASTORE /* 58 */:
+                                        case 50 /* 50 */:
+                                        case 58 /* 58 */:
                                         case 60:
                                         case 62:
                                         case 64:
@@ -5300,16 +5300,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                     c0338.f1610 = true;
                                                     break;
                                             }
-                                        case Opcodes.FCONST_1 /* 12 */:
+                                        case 12 /* 12 */:
                                         case 15:
-                                        case Opcodes.LDC /* 18 */:
-                                        case Opcodes.FLOAD /* 23 */:
+                                        case 18 /* 18 */:
+                                        case 23 /* 23 */:
                                         case 27:
                                         case 30:
                                         case 39:
                                         case 41:
-                                        case Opcodes.AALOAD /* 50 */:
-                                        case Opcodes.ASTORE /* 58 */:
+                                        case 50 /* 50 */:
+                                        case 58 /* 58 */:
                                         case 60:
                                         case 62:
                                         case 64:
@@ -5347,7 +5347,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                     } catch (Throwable th19) {
                                         th = th19;
                                         z14 = false;
-                                        if (z14) {
+                                        if (false) {
                                             c1687.m3423(c0338);
                                             if (c1687.f5746) {
                                                 m4295(c0338);
@@ -5405,11 +5405,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         th = th22;
                                         z16 = false;
                                         try {
-                                            if (z16) {
+                                            if (false) {
                                                 c1688.m3422();
                                             } else {
                                                 c1688.m3426();
-                                                z15 = z16;
+                                                z15 = false;
                                             }
                                             try {
                                                 z16 = th instanceof C2332;
@@ -5422,8 +5422,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                 throw ((RuntimeException) th);
                                             } catch (Throwable th23) {
                                                 th = th23;
-                                                z16 = z15;
-                                                if (z16) {
+                                                z16 = false;
+                                                if (false) {
                                                     c1688.m3423(c0351);
                                                     if (c1688.f5746) {
                                                         m4295(c0351);
@@ -5476,12 +5476,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         th = th27;
                                         z14 = false;
                                         try {
-                                            if (z14) {
+                                            if (false) {
                                                 c1687.m3422();
                                                 z7 = false;
                                             } else {
                                                 c1687.m3426();
-                                                z7 = z14;
+                                                z7 = false;
                                             }
                                             try {
                                                 if (th instanceof C2332) {
@@ -5493,8 +5493,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                 throw ((RuntimeException) th);
                                             } catch (Throwable th28) {
                                                 th = th28;
-                                                z14 = z7;
-                                                if (z14) {
+                                                z14 = false;
+                                                if (false) {
                                                     c1687.m3423(c0352);
                                                     if (c1687.f5746) {
                                                         m4295(c0352);
@@ -5525,16 +5525,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             int i3 = c3408M4230.f10746;
                                             if (i3 != 43 && i3 != 44 && i3 != 92 && i3 != 93) {
                                                 switch (i3) {
-                                                    case Opcodes.FCONST_1 /* 12 */:
+                                                    case 12 /* 12 */:
                                                     case 15:
-                                                    case Opcodes.LDC /* 18 */:
-                                                    case Opcodes.FLOAD /* 23 */:
+                                                    case 18 /* 18 */:
+                                                    case 23 /* 23 */:
                                                     case 27:
                                                     case 30:
                                                     case 39:
                                                     case 41:
-                                                    case Opcodes.AALOAD /* 50 */:
-                                                    case Opcodes.ASTORE /* 58 */:
+                                                    case 50 /* 50 */:
+                                                    case 58 /* 58 */:
                                                     case 60:
                                                     case 64:
                                                     case 69:
@@ -5588,12 +5588,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             th = th31;
                                             z14 = false;
                                             try {
-                                                if (z14) {
+                                                if (false) {
                                                     c1687.m3422();
                                                     z9 = false;
                                                 } else {
                                                     c1687.m3426();
-                                                    z9 = z14;
+                                                    z9 = false;
                                                 }
                                                 try {
                                                     if (th instanceof C2332) {
@@ -5605,8 +5605,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                     throw ((RuntimeException) th);
                                                 } catch (Throwable th32) {
                                                     th = th32;
-                                                    z14 = z9;
-                                                    if (z14) {
+                                                    z14 = false;
+                                                    if (false) {
                                                         c1687.m3423(c0353);
                                                         if (c1687.f5746) {
                                                             m4295(c0353);
@@ -5642,12 +5642,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             th = th35;
                                             z14 = false;
                                             try {
-                                                if (z14) {
+                                                if (false) {
                                                     c1687.m3422();
                                                     z11 = false;
                                                 } else {
                                                     c1687.m3426();
-                                                    z11 = z14;
+                                                    z11 = false;
                                                 }
                                                 try {
                                                     if (th instanceof C2332) {
@@ -5659,8 +5659,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                     throw ((RuntimeException) th);
                                                 } catch (Throwable th36) {
                                                     th = th36;
-                                                    z14 = z11;
-                                                    if (z14) {
+                                                    z14 = false;
+                                                    if (false) {
                                                         c1687.m3423(c0333);
                                                         if (c1687.f5746) {
                                                             m4295(c0333);
@@ -5703,7 +5703,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             } catch (Throwable th40) {
                                                 th = th40;
                                                 z14 = false;
-                                                if (z14) {
+                                                if (false) {
                                                     c1687.m3423(c0335);
                                                     if (c1687.f5746) {
                                                         m4295(c0335);
@@ -5782,7 +5782,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                     z12 = false;
                                                 } else {
                                                     c1687.m3426();
-                                                    z12 = z14;
+                                                    z12 = false;
                                                 }
                                                 try {
                                                     if (th instanceof C2332) {
@@ -5794,8 +5794,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                     throw ((RuntimeException) th);
                                                 } catch (Throwable th43) {
                                                     th = th43;
-                                                    z14 = z12;
-                                                    if (z14) {
+                                                    z14 = false;
+                                                    if (false) {
                                                         c1687.m3423(c0354);
                                                         if (c1687.f5746) {
                                                             m4295(c0354);
@@ -5819,12 +5819,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 m4187();
             }
         } else {
-            C0343 c0343 = new C0343(i, 0);
+            C0343 c0343 = new C0343(30, 0);
             c1687.m3425(c0343);
             m4296(c0343);
             try {
                 C3408 c3408M4293 = m4291(75);
-                m4291(Opcodes.DCMPG);
+                m4291(152);
                 m4217();
                 c1687.m3423(c0343);
                 try {
@@ -5836,12 +5836,12 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     th = th46;
                     z14 = false;
                     try {
-                        if (z14) {
+                        if (false) {
                             c1687.m3422();
                             z13 = false;
                         } else {
                             c1687.m3426();
-                            z13 = z14;
+                            z13 = false;
                         }
                         try {
                             z14 = th instanceof C2332;
@@ -5854,8 +5854,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             throw ((RuntimeException) th);
                         } catch (Throwable th47) {
                             th = th47;
-                            z14 = z13;
-                            if (z14) {
+                            z14 = false;
+                            if (false) {
                                 c1687.m3423(c0343);
                                 if (c1687.f5746) {
                                     m4295(c0343);
@@ -5912,7 +5912,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th);
                 } catch (Throwable th2) {
                     th = th2;
-                    if (z) {
+                    if (false) {
                         c1687.m3423(c0334);
                         if (c1687.f5746) {
                             m4295(c0334);
@@ -5956,7 +5956,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             if (iM4292 == 16) {
                 m4291(16);
                 m4197();
-                m4291(Opcodes.DCMPG);
+                m4291(152);
                 c1687.m3423(c0353);
                 if (c1687.f5746) {
                     m4295(c0353);
@@ -5969,7 +5969,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 m4291(-1);
                 throw new C2332();
             }
-            m4291(Opcodes.IFGE);
+            m4291(156);
             c1687.m3423(c0353);
             try {
                 if (c1687.f5746) {
@@ -5980,15 +5980,15 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 th = th;
                 z2 = false;
                 try {
-                    if (z2) {
+                    if (false) {
                         c1687.m3422();
                     } else {
                         c1687.m3426();
-                        z = z2;
+                        z = false;
                     }
                     try {
-                        z2 = th instanceof C2332;
-                        if (z2) {
+                        z2 = false;
+                        if (false) {
                             throw ((C2332) th);
                         }
                         if (!(th instanceof RuntimeException)) {
@@ -5996,9 +5996,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         }
                         throw ((RuntimeException) th);
                     } catch (Throwable th2) {
-                        z2 = z;
+                        z2 = false;
                         th = th2;
-                        if (z2) {
+                        if (false) {
                             c1687.m3423(c0353);
                             if (c1687.f5746) {
                                 m4295(c0353);
@@ -6056,7 +6056,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     throw ((RuntimeException) th);
                 } catch (Throwable th2) {
                     th = th2;
-                    if (z) {
+                    if (false) {
                         c1687.m3423(c0355);
                         if (c1687.f5746) {
                             m4295(c0355);
@@ -6130,7 +6130,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 }
                 throw ((RuntimeException) th2);
             } catch (Throwable th3) {
-                if (1 != 0) {
+                if (true) {
                     c1687.m3423(c0356);
                     if (c1687.f5746) {
                         m4295(c0356);
@@ -6168,7 +6168,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         c1687.m3422();
                     } else {
                         c1687.m3426();
-                        z = z2;
+                        z = false;
                     }
                     try {
                         z2 = th instanceof C2332;
@@ -6181,8 +6181,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         throw ((RuntimeException) th);
                     } catch (Throwable th) {
                         th = th;
-                        z2 = z;
-                        if (z2) {
+                        z2 = false;
+                        if (false) {
                             c1687.m3423(c0357);
                             if (c1687.f5746) {
                                 m4295(c0357);
@@ -6261,7 +6261,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             return;
                         } catch (Throwable th) {
                             th = th;
-                            if (z3) {
+                            if (false) {
                                 c1687.m3424(c0358, 1);
                                 if (c1687.f5746) {
                                     m4295(c0358);
@@ -6279,18 +6279,18 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     break;
                 default:
                     iArr[68] = this.f7489;
-                    this.f7487 = Integer.MAX_VALUE;
+                    this.f7487 = 2147483647;
                     C3408 c3408 = this.f7483;
                     this.f7485 = c3408;
                     this.f7486 = c3408;
                     try {
                         z = !m4268();
-                        m4293(9, Integer.MAX_VALUE);
+                        m4293(9, 2147483647);
                     } catch (C2333 unused) {
-                        m4293(9, Integer.MAX_VALUE);
+                        m4293(9, 2147483647);
                         z = true;
                     } catch (Throwable th3) {
-                        m4293(9, Integer.MAX_VALUE);
+                        m4293(9, 2147483647);
                         throw th3;
                     }
                     if (z) {
@@ -6314,7 +6314,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 m4200();
                                 c3408M4294 = null;
                             }
-                            m4291(Opcodes.I2C);
+                            m4291(146);
                             int iM4295 = this.f7484;
                             if (iM4295 == -1) {
                                 iM4295 = m4292();
@@ -6325,15 +6325,15 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 if (iM4295 != 51) {
                                     if (iM4295 != 92 && iM4295 != 93) {
                                         switch (iM4295) {
-                                            case Opcodes.FCONST_1 /* 12 */:
+                                            case 12 /* 12 */:
                                             case 15:
-                                            case Opcodes.LDC /* 18 */:
-                                            case Opcodes.FLOAD /* 23 */:
+                                            case 18 /* 18 */:
+                                            case 23 /* 23 */:
                                             case 27:
                                             case 30:
                                             case 39:
                                             case 41:
-                                            case Opcodes.ASTORE /* 58 */:
+                                            case 58 /* 58 */:
                                             case 60:
                                             case 62:
                                             case 64:
@@ -6382,11 +6382,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 th = th4;
                                 z4 = false;
                                 try {
-                                    if (z4) {
+                                    if (false) {
                                         c1687.m3422();
                                     } else {
                                         c1687.m3426();
-                                        z3 = z4;
+                                        z3 = false;
                                     }
                                     try {
                                         if (th instanceof C2332) {
@@ -6398,8 +6398,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         throw ((RuntimeException) th);
                                     } catch (Throwable th5) {
                                         th = th5;
-                                        z4 = z3;
-                                        if (z4) {
+                                        z4 = false;
+                                        if (false) {
                                             c1687.m3423(c0344);
                                             if (c1687.f5746) {
                                                 m4295(c0344);
@@ -6415,18 +6415,18 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             th = th7;
                         }
                     } else {
-                        this.f7487 = Integer.MAX_VALUE;
+                        this.f7487 = 2147483647;
                         C3408 c3409 = this.f7483;
                         this.f7485 = c3409;
                         this.f7486 = c3409;
                         try {
                             z2 = !(m4294(78) || m4256() || m4294(79));
-                            m4293(10, Integer.MAX_VALUE);
+                            m4293(10, 2147483647);
                         } catch (C2333 unused2) {
-                            m4293(10, Integer.MAX_VALUE);
+                            m4293(10, 2147483647);
                             z2 = true;
                         } catch (Throwable th8) {
-                            m4293(10, Integer.MAX_VALUE);
+                            m4293(10, 2147483647);
                             throw th8;
                         }
                         if (z2) {
@@ -6457,7 +6457,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         throw ((RuntimeException) th9);
                                     } catch (Throwable th10) {
                                         th = th10;
-                                        if (z3) {
+                                        if (false) {
                                             c1687.m3423(c0334);
                                             if (c1687.f5746) {
                                                 m4295(c0334);
@@ -6476,18 +6476,18 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 iM4296 = m4292();
                             }
                             switch (iM4296) {
-                                case Opcodes.FCONST_1 /* 12 */:
+                                case 12 /* 12 */:
                                 case 15:
-                                case Opcodes.LDC /* 18 */:
-                                case Opcodes.FLOAD /* 23 */:
+                                case 18 /* 18 */:
+                                case 23 /* 23 */:
                                 case 27:
                                 case 30:
                                 case 39:
                                 case 41:
                                 case 43:
                                 case 44:
-                                case Opcodes.AALOAD /* 50 */:
-                                case Opcodes.ASTORE /* 58 */:
+                                case 50 /* 50 */:
+                                case 58 /* 58 */:
                                 case 60:
                                 case 62:
                                 case 64:
@@ -6535,7 +6535,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                             return;
                                         } catch (Throwable th12) {
                                             th = th12;
-                                            if (z3) {
+                                            if (false) {
                                                 c1687.m3424(c0359, 1);
                                                 if (c1687.f5746) {
                                                     m4295(c0359);
@@ -6629,7 +6629,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         c1687.m3422();
                     } else {
                         c1687.m3426();
-                        z = z2;
+                        z = false;
                     }
                     try {
                         if (th instanceof C2332) {
@@ -6641,8 +6641,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         throw ((RuntimeException) th);
                     } catch (Throwable th) {
                         th = th;
-                        z2 = z;
-                        if (z2) {
+                        z2 = false;
+                        if (false) {
                             c1687.m3423(c0359);
                             if (c1687.f5746) {
                                 m4295(c0359);
@@ -6703,16 +6703,16 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         }
         if (iM4292 != 43 && iM4292 != 44 && iM4292 != 92 && iM4292 != 93) {
             switch (iM4292) {
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                 case 15:
-                case Opcodes.LDC /* 18 */:
-                case Opcodes.FLOAD /* 23 */:
+                case 18 /* 18 */:
+                case 23 /* 23 */:
                 case 27:
                 case 30:
                 case 39:
                 case 41:
-                case Opcodes.AALOAD /* 50 */:
-                case Opcodes.ASTORE /* 58 */:
+                case 50 /* 50 */:
+                case 58 /* 58 */:
                 case 60:
                 case 62:
                 case 64:
@@ -6778,7 +6778,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     }
                     if (iM4292 != 85) {
                         iArr[73] = this.f7489;
-                        m4291(Opcodes.I2C);
+                        m4291(146);
                         m4197();
                         c1687.m3423(c0360);
                         try {
@@ -6790,15 +6790,15 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             th = th;
                             z2 = false;
                             try {
-                                if (z2) {
+                                if (false) {
                                     c1687.m3422();
                                 } else {
                                     c1687.m3426();
-                                    z = z2;
+                                    z = false;
                                 }
                                 try {
-                                    z2 = th instanceof C2332;
-                                    if (z2) {
+                                    z2 = false;
+                                    if (false) {
                                         throw ((C2332) th);
                                     }
                                     if (!(th instanceof RuntimeException)) {
@@ -6807,8 +6807,8 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                     throw ((RuntimeException) th);
                                 } catch (Throwable th2) {
                                     th = th2;
-                                    z2 = z;
-                                    if (z2) {
+                                    z2 = false;
+                                    if (false) {
                                         c1687.m3423(c0360);
                                         if (c1687.f5746) {
                                             m4295(c0360);
@@ -6856,31 +6856,31 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         }
                                         if (iM4292 != 85) {
                                             iArr[73] = this.f7489;
-                                            m4291(Opcodes.I2C);
+                                            m4291(146);
                                             m4197();
                                             c1687.m3423(c0360);
                                             if (c1687.f5746) {
                                                 m4295(c0360);
                                             }
-                                            c0360.f1678 = i;
+                                            c0360.f1678 = 1;
                                         } else {
                                             m4291(85);
                                             m4197();
-                                            i++;
+                                            1++;
                                         }
                                         break;
                                     }
                                     break;
                             }
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case 15:
-                        case Opcodes.LDC /* 18 */:
+                        case 18 /* 18 */:
                         case 27:
                         case 30:
                         case 39:
                         case 41:
-                        case Opcodes.AALOAD /* 50 */:
-                        case Opcodes.ASTORE /* 58 */:
+                        case 50 /* 50 */:
+                        case 58 /* 58 */:
                         case 60:
                         case 62:
                         case 64:
@@ -6897,17 +6897,17 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                 }
                                 if (iM4292 != 85) {
                                     iArr[73] = this.f7489;
-                                    m4291(Opcodes.I2C);
+                                    m4291(146);
                                     m4197();
                                     c1687.m3423(c0360);
                                     if (c1687.f5746) {
                                         m4295(c0360);
                                     }
-                                    c0360.f1678 = i;
+                                    c0360.f1678 = 1;
                                 } else {
                                     m4291(85);
                                     m4197();
-                                    i++;
+                                    1++;
                                 }
                                 break;
                             }
@@ -6923,7 +6923,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     }
                     if (iM4292 != 85) {
                         iArr[73] = this.f7489;
-                        m4291(Opcodes.I2C);
+                        m4291(146);
                         m4197();
                         c1687.m3423(c0360);
                         if (c1687.f5746) {
@@ -6939,11 +6939,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             } else {
                 m4291(24);
                 c0360.f1677 = true;
-                m4291(Opcodes.I2C);
+                m4291(146);
                 m4197();
                 z = true;
             }
-            if (z) {
+            if (true) {
                 c1687.m3423(c0360);
                 if (c1687.f5746) {
                     m4295(c0360);
@@ -6967,7 +6967,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
     public final C2332 m4229() {
         ArrayList arrayList = this.f7495;
         arrayList.clear();
-        boolean[] zArr = new boolean[Opcodes.IFGT];
+        boolean[] zArr = new boolean[157];
         int i = this.f7497;
         if (i >= 0) {
             zArr[i] = true;
@@ -7054,7 +7054,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             case 11:
                                 m4269();
                                 break;
-                            case Opcodes.FCONST_1 /* 12 */:
+                            case 12 /* 12 */:
                                 m4270();
                                 break;
                             case 13:
@@ -7062,7 +7062,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                     m4294(14);
                                 }
                                 break;
-                            case Opcodes.DCONST_0 /* 14 */:
+                            case 14 /* 14 */:
                                 m4271();
                                 break;
                             case 15:
@@ -7071,10 +7071,10 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             case 16:
                                 m4273();
                                 break;
-                            case Opcodes.SIPUSH /* 17 */:
+                            case 17 /* 17 */:
                                 m4274();
                                 break;
-                            case Opcodes.LDC /* 18 */:
+                            case 18 /* 18 */:
                                 m4258();
                                 break;
                             case 19:
@@ -7083,19 +7083,19 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             case 20:
                                 m4276();
                                 break;
-                            case Opcodes.ILOAD /* 21 */:
+                            case 21 /* 21 */:
                                 m4277();
                                 break;
-                            case Opcodes.LLOAD /* 22 */:
+                            case 22 /* 22 */:
                                 m4278();
                                 break;
-                            case Opcodes.FLOAD /* 23 */:
+                            case 23 /* 23 */:
                                 m4258();
                                 break;
-                            case Opcodes.DLOAD /* 24 */:
+                            case 24 /* 24 */:
                                 m4251();
                                 break;
-                            case Opcodes.ALOAD /* 25 */:
+                            case 25 /* 25 */:
                                 m4279();
                                 break;
                             case 26:
@@ -7356,7 +7356,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         }
         do {
             c3408 = this.f7485;
-            if (m4294(UMErrorCode.E_UM_BE_FILE_OVERSIZE)) {
+            if (m4294(114)) {
                 this.f7485 = c3408;
                 if (m4294(115)) {
                     break;
@@ -7376,9 +7376,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         }
         do {
             c3408 = this.f7485;
-            if (m4294(UMErrorCode.E_UM_BE_JSON_FAILED)) {
+            if (m4294(110)) {
                 this.f7485 = c3408;
-                if (m4294(UMErrorCode.E_UM_BE_CREATE_FAILED)) {
+                if (m4294(111)) {
                     break;
                 }
             }
@@ -7477,11 +7477,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     this.f7485 = c3408;
                     if (m4294(122)) {
                         this.f7485 = c3408;
-                        if (m4294(Opcodes.LSHR)) {
+                        if (m4294(123)) {
                             this.f7485 = c3408;
-                            if (m4294(Opcodes.IUSHR)) {
+                            if (m4294(124)) {
                                 this.f7485 = c3408;
-                                if (m4294(Opcodes.LUSHR)) {
+                                if (m4294(125)) {
                                     break;
                                 }
                             }
@@ -7523,13 +7523,13 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         }
         do {
             c3408 = this.f7485;
-            if (m4294(Opcodes.IDIV)) {
+            if (m4294(108)) {
                 this.f7485 = c3408;
-                if (m4294(Opcodes.LDIV)) {
+                if (m4294(109)) {
                     this.f7485 = c3408;
-                    if (m4294(Opcodes.INEG)) {
+                    if (m4294(116)) {
                         this.f7485 = c3408;
-                        if (m4294(Opcodes.LNEG)) {
+                        if (m4294(117)) {
                             break;
                         }
                     }
@@ -7549,9 +7549,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         }
         do {
             c3408 = this.f7485;
-            if (m4294(Opcodes.FNEG)) {
+            if (m4294(118)) {
                 this.f7485 = c3408;
-                if (m4294(Opcodes.DNEG)) {
+                if (m4294(119)) {
                     break;
                 }
             }
@@ -7608,7 +7608,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         if (m4261()) {
             this.f7485 = c3409;
             if (!m4294(75)) {
-                if (!m4294(Opcodes.I2C)) {
+                if (!m4294(146)) {
                     c3408 = this.f7485;
                     if (m4258()) {
                         return false;
@@ -7619,7 +7619,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     }
                 }
             }
-        } else if (!m4294(Opcodes.I2C)) {
+        } else if (!m4294(146)) {
             c3408 = this.f7485;
             if (m4258()) {
                 return false;
@@ -7743,7 +7743,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
     public final boolean m4248() {
         C3408 c3408;
         C3408 c3409 = this.f7485;
-        if (!m4294(24) && !m4294(Opcodes.I2C) && !m4259()) {
+        if (!m4294(24) && !m4294(146) && !m4259()) {
             return false;
         }
         this.f7485 = c3409;
@@ -7757,7 +7757,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             }
         } while (!m4259());
         this.f7485 = c3408;
-        return m4294(Opcodes.I2C) || m4259();
+        return m4294(146) || m4259();
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᲇᲀᤞ, reason: contains not printable characters */
@@ -7886,7 +7886,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 return false;
             }
             this.f7485 = c34012;
-            if (m4294(35) || m4294(Opcodes.IDIV)) {
+            if (m4294(35) || m4294(108)) {
                 this.f7485 = c34012;
                 return !m4294(45) || m4252();
             }
@@ -8104,11 +8104,11 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 this.f7485 = c3408;
                 if (m4294(138)) {
                     this.f7485 = c3408;
-                    if (m4294(Opcodes.F2I)) {
+                    if (m4294(139)) {
                         this.f7485 = c3408;
-                        if (m4294(Opcodes.LOR)) {
+                        if (m4294(129)) {
                             this.f7485 = c3408;
-                            if (m4294(Opcodes.L2I)) {
+                            if (m4294(136)) {
                                 this.f7485 = c3408;
                                 if (m4294(137)) {
                                     this.f7485 = c3408;
@@ -8116,31 +8116,31 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                         this.f7485 = c3408;
                                         if (m4294(127)) {
                                             this.f7485 = c3408;
-                                            if (m4294(Opcodes.IXOR)) {
+                                            if (m4294(130)) {
                                                 this.f7485 = c3408;
-                                                if (m4294(Opcodes.LXOR)) {
+                                                if (m4294(131)) {
                                                     this.f7485 = c3408;
-                                                    if (m4294(Opcodes.I2F)) {
+                                                    if (m4294(134)) {
                                                         this.f7485 = c3408;
-                                                        if (m4294(Opcodes.I2D)) {
+                                                        if (m4294(135)) {
                                                             this.f7485 = c3408;
-                                                            if (m4294(Opcodes.IINC)) {
+                                                            if (m4294(132)) {
                                                                 this.f7485 = c3408;
-                                                                if (m4294(Opcodes.I2L)) {
+                                                                if (m4294(133)) {
                                                                     this.f7485 = c3408;
-                                                                    if (m4294(Opcodes.F2L)) {
+                                                                    if (m4294(140)) {
                                                                         this.f7485 = c3408;
                                                                         if (m4294(141)) {
                                                                             this.f7485 = c3408;
-                                                                            if (m4294(Opcodes.D2I)) {
+                                                                            if (m4294(142)) {
                                                                                 this.f7485 = c3408;
-                                                                                if (m4294(Opcodes.LCMP)) {
+                                                                                if (m4294(148)) {
                                                                                     this.f7485 = c3408;
-                                                                                    if (m4294(Opcodes.D2L)) {
+                                                                                    if (m4294(143)) {
                                                                                         this.f7485 = c3408;
                                                                                         if (m4294(144)) {
                                                                                             this.f7485 = c3408;
-                                                                                            if (!m4294(Opcodes.I2B)) {
+                                                                                            if (!m4294(145)) {
                                                                                                 if (!m4259()) {
                                                                                                     return false;
                                                                                                 }
@@ -13475,9 +13475,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         } else {
                             while (true) {
                                 c34020 = this.f7485;
-                                if (m4294(16) || m4259() || m4294(Opcodes.DCMPG)) {
+                                if (m4294(16) || m4259() || m4294(152)) {
                                     this.f7485 = c34020;
-                                    if (m4294(Opcodes.IFGE)) {
+                                    if (m4294(156)) {
                                         break;
                                     }
                                 }
@@ -16059,7 +16059,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                                                             if (m4294(28)) {
                                                                 this.f7485 = c34016;
                                                             }
-                                                            if (m4256() || m4294(75) || m4294(Opcodes.DCMPG) || m4259() || m4294(79) || m4262()) {
+                                                            if (m4256() || m4294(75) || m4294(152) || m4259() || m4294(79) || m4262()) {
                                                                 this.f7485 = c34022;
                                                                 if (m4294(13)) {
                                                                     this.f7485 = c34022;
@@ -18362,18 +18362,18 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
         }
         do {
             c3408 = this.f7485;
-            if (m4294(Opcodes.FCMPL)) {
+            if (m4294(149)) {
                 this.f7485 = c3408;
-                if (m4294(Opcodes.FCMPG)) {
+                if (m4294(150)) {
                     this.f7485 = c3408;
-                    if (m4294(Opcodes.I2S)) {
+                    if (m4294(147)) {
                         break;
                     }
                 }
             }
         } while (!m4235());
         this.f7485 = c3408;
-        if (!m4294(Opcodes.DCMPL) && !m4259() && !m4294(Opcodes.DCMPG) && !m4264()) {
+        if (!m4294(151) && !m4259() && !m4294(152) && !m4264()) {
             return false;
         }
         this.f7485 = c3408;
@@ -18465,7 +18465,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         z = true;
                     }
                     this.f7488 = false;
-                    if (z) {
+                    if (true) {
                     }
                 }
             }
@@ -18500,7 +18500,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                 return true;
             }
         }
-        return m4294(Opcodes.I2C);
+        return m4294(146);
     }
 
     /* JADX WARN: Code duplicated, block: B:29:0x0067  */
@@ -18526,7 +18526,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     z = true;
                 }
                 this.f7488 = false;
-                if (z || m4294(Opcodes.IFEQ)) {
+                if (z || m4294(153)) {
                     this.f7485 = c3408;
                     if (m4272()) {
                         this.f7485 = c3408;
@@ -18572,9 +18572,9 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                     this.f7485 = c34010;
                 }
                 C3408 c34011 = this.f7485;
-                if (m4294(Opcodes.IFEQ)) {
+                if (m4294(153)) {
                     this.f7485 = c34011;
-                    if (m4294(Opcodes.DCMPG)) {
+                    if (m4294(152)) {
                         this.f7485 = c34011;
                     } else {
                         C3408 c34012 = this.f7485;
@@ -18582,7 +18582,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                             this.f7485 = c34012;
                         }
                         C3408 c34013 = this.f7485;
-                        if (m4294(Opcodes.DCMPG)) {
+                        if (m4294(152)) {
                             this.f7485 = c34013;
                         } else {
                             C3408 c34014 = this.f7485;
@@ -18606,7 +18606,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
                         z = false;
                     }
                     this.f7488 = false;
-                    if (z) {
+                    if (false) {
                         this.f7485 = c3408;
                         if (m4272()) {
                             this.f7485 = c3408;
@@ -18671,7 +18671,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᲈᲁᤞᲀ, reason: contains not printable characters */
     public final boolean m4272() {
-        if (m4294(Opcodes.IFLT) || m4294(75)) {
+        if (m4294(155) || m4294(75)) {
             return true;
         }
         C3408 c3408 = this.f7485;
@@ -18730,7 +18730,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲇᲀᲁ, reason: contains not printable characters */
     public final boolean m4278() {
-        return m4294(75) || m4294(Opcodes.DCMPG) || m4262();
+        return m4294(75) || m4294(152) || m4262();
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᤞᲇᲁᲀ, reason: contains not printable characters */
@@ -18763,7 +18763,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᤞᲇᲁ, reason: contains not printable characters */
     public final boolean m4281() {
-        return m4294(31) || m4294(78) || m4294(75) || m4294(Opcodes.DCMPG) || m4259() || m4294(79) || m4262();
+        return m4294(31) || m4294(78) || m4294(75) || m4294(152) || m4259() || m4294(79) || m4262();
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲈᲀᲁᤞᲇ, reason: contains not printable characters */
@@ -18809,7 +18809,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             return true;
         }
         C3408 c3409 = this.f7485;
-        if (m4294(86) || m4294(Opcodes.IDIV)) {
+        if (m4294(86) || m4294(108)) {
             this.f7485 = c3409;
         }
         m4253();
@@ -18831,7 +18831,7 @@ public final class C2334 implements InterfaceC2337, InterfaceC2335 {
             return true;
         }
         C3408 c3409 = this.f7485;
-        if (m4294(Opcodes.IFNE)) {
+        if (m4294(154)) {
             this.f7485 = c3409;
         }
         return m4294(75);

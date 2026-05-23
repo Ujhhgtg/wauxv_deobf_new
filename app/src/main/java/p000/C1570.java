@@ -47,7 +47,7 @@ public final class C1570 extends AbstractC0054 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo919() {
         ((StringBuilder) this.f5461.f1922).toString();
-        this.f5458.getClass();
+        
         this.f5461 = null;
     }
 

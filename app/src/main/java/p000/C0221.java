@@ -61,7 +61,7 @@ public final class C0221 implements InterfaceC3454 {
             throw new XmlPullParserException("No start tag found");
         }
         String name = xml.getName();
-        name.getClass();
+        
         if (!name.equals("gradient")) {
             if (name.equals("selector")) {
                 ColorStateList colorStateListM2221 = AbstractC0751.m2221(resources, xml, attributeSetAsAttributeSet, theme);
@@ -80,7 +80,7 @@ public final class C0221 implements InterfaceC3454 {
         float f6 = xml.getAttributeValue("http://schemas.android.com/apk/res/android", "endY") != null ? typedArrayM3165.getFloat(11, 0.0f) : 0.0f;
         float f7 = xml.getAttributeValue("http://schemas.android.com/apk/res/android", "centerX") != null ? typedArrayM3165.getFloat(3, 0.0f) : 0.0f;
         float f8 = xml.getAttributeValue("http://schemas.android.com/apk/res/android", "centerY") != null ? typedArrayM3165.getFloat(4, 0.0f) : 0.0f;
-        int i2 = xml.getAttributeValue("http://schemas.android.com/apk/res/android", g.y) != null ? typedArrayM3165.getInt(2, 0) : 0;
+        int i2 = xml.getAttributeValue("http://schemas.android.com/apk/res/android", "type") != null ? typedArrayM3165.getInt(2, 0) : 0;
         int color = xml.getAttributeValue("http://schemas.android.com/apk/res/android", "startColor") != null ? typedArrayM3165.getColor(0, 0) : 0;
         boolean z = xml.getAttributeValue("http://schemas.android.com/apk/res/android", "centerColor") != null;
         int color2 = xml.getAttributeValue("http://schemas.android.com/apk/res/android", "centerColor") != null ? typedArrayM3165.getColor(7, 0) : 0;
@@ -208,7 +208,7 @@ public final class C0221 implements InterfaceC3454 {
         try {
             cArr = (char[]) this.f1352;
             if (cArr == null) {
-                cArr = i2 <= 256 ? new char[bc.e] : new char[2048];
+                cArr = i2 <= 256 ? new char[256] : new char[2048];
                 this.f1352 = cArr;
             } else if (cArr.length < i2) {
                 cArr = new char[2048];
@@ -231,7 +231,7 @@ public final class C0221 implements InterfaceC3454 {
                             throw new IllegalArgumentException("Invalid String");
                         }
                         i4 = i3 + 1;
-                        cArr[i3] = (char) ((b2 & JSONB.Constants.BC_INT32_BYTE_MAX) | ((b & 31) << 6));
+                        cArr[i3] = (char) ((b2 & 63) | ((b & 31) << 6));
                     } else {
                         if (b >= -16) {
                             byte b3 = bArr[i6];
@@ -241,7 +241,7 @@ public final class C0221 implements InterfaceC3454 {
                             byte b5 = bArr[i7];
                             if (b3 <= -65) {
                                 if ((((b3 + 112) + (b << 28)) >> 30) == 0 && b4 <= -65 && b5 <= -65) {
-                                    int i8 = ((b3 & JSONB.Constants.BC_INT32_BYTE_MAX) << 12) | ((b & 7) << 18) | ((b4 & JSONB.Constants.BC_INT32_BYTE_MAX) << 6) | (b5 & JSONB.Constants.BC_INT32_BYTE_MAX);
+                                    int i8 = ((b3 & 63) << 12) | ((b & 7) << 18) | ((b4 & 63) << 6) | (b5 & 63);
                                     int i9 = i3 + 1;
                                     cArr[i3] = (char) ((i8 >>> 10) + 55232);
                                     i3 += 2;
@@ -258,7 +258,7 @@ public final class C0221 implements InterfaceC3454 {
                             throw new IllegalArgumentException("Invalid String");
                         }
                         i4 = i3 + 1;
-                        cArr[i3] = (char) (((b6 & JSONB.Constants.BC_INT32_BYTE_MAX) << 6) | ((b & ek.m) << 12) | (b7 & JSONB.Constants.BC_INT32_BYTE_MAX));
+                        cArr[i3] = (char) (((b6 & 63) << 6) | ((b & 15) << 12) | (b7 & 63));
                     }
                     i3 = i4;
                 }
@@ -488,7 +488,7 @@ public final class C0221 implements InterfaceC3454 {
                 i++;
             } else if (cCharAt < 2048) {
                 int i4 = i + 1;
-                bArr[i] = (byte) ((cCharAt >>> 6) | Opcodes.CHECKCAST);
+                bArr[i] = (byte) ((cCharAt >>> 6) | 192);
                 i += 2;
                 bArr[i4] = (byte) ((cCharAt & '?') | 128);
             } else if (cCharAt < 55296 || cCharAt > 57343) {

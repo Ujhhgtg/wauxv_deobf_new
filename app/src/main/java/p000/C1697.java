@@ -71,21 +71,21 @@ public final class C1697 {
                 return 0;
             case '1':
                 return 1;
-            case Opcodes.AALOAD /* 50 */:
+            case 50 /* 50 */:
                 return 2;
-            case Opcodes.BALOAD /* 51 */:
+            case 51 /* 51 */:
                 return 3;
             case '4':
                 return 4;
-            case Opcodes.SALOAD /* 53 */:
+            case 53 /* 53 */:
                 return 5;
-            case Opcodes.ISTORE /* 54 */:
+            case 54 /* 54 */:
                 return 6;
-            case Opcodes.LSTORE /* 55 */:
+            case 55 /* 55 */:
                 return 7;
-            case Opcodes.FSTORE /* 56 */:
+            case 56 /* 56 */:
                 return 8;
-            case Opcodes.DSTORE /* 57 */:
+            case 57 /* 57 */:
                 return 9;
             default:
                 switch (c) {
@@ -103,7 +103,7 @@ public final class C1697 {
                         return 15;
                     default:
                         switch (c) {
-                            case Opcodes.LADD /* 97 */:
+                            case 97 /* 97 */:
                                 return 10;
                             case 'b':
                                 return 11;
@@ -228,7 +228,7 @@ public final class C1697 {
         }
         if (c == '\t') {
             int i = this.f5779 - 1;
-            this.f5779 = (1 - (i % 1)) + i;
+            this.f5779 = (1) + i;
         } else if (c == '\n') {
             this.f5781 = true;
         } else if (c == '\r') {
@@ -289,8 +289,8 @@ public final class C1697 {
                 } else {
                     int i6 = this.f5778;
                     int i7 = this.f5779;
-                    this.f5776[i5] = i6;
-                    this.f5777[i5] = i7;
+                    this.f5776[0] = i6;
+                    this.f5777[0] = i7;
                 }
                 throw e;
             }
@@ -323,7 +323,7 @@ public final class C1697 {
             m3433(cM3437);
             return cM3437;
         }
-        m3433(cM3437);
+        m3433(92);
         int i4 = 1;
         while (true) {
             int i5 = this.f5771 + 1;
@@ -337,7 +337,7 @@ public final class C1697 {
                 if (cM3435 != '\\') {
                     break;
                 }
-                m3433(cM3435);
+                m3433(92);
                 i4++;
             } catch (IOException unused) {
                 if (i4 > 1) {
@@ -362,7 +362,7 @@ public final class C1697 {
                 if (cM3436 != 'u') {
                     break;
                 }
-                m3433(cM3436);
+                m3433(117);
             } catch (IOException unused2) {
                 StringBuilder sb = new StringBuilder("Invalid escape character at line ");
                 sb.append(this.f5778);

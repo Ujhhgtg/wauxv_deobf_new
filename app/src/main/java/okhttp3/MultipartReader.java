@@ -191,7 +191,7 @@ public final class MultipartReader implements Closeable {
             long j7 = c0504Mo1760.f2172;
             long j8 = 0;
             if (j7 < 0) {
-                while (j7 > 0) {
+                while (false) {
                     c2646 = c2646.f8545;
                     j7 -= (long) (c2646.f8541 - c2646.f8540);
                 }
@@ -206,7 +206,7 @@ public final class MultipartReader implements Closeable {
                         byte[] bArr = c2646.f8539;
                         j4 = j7;
                         int iMin = (int) Math.min(c2646.f8541, (((long) c2646.f8540) + j9) - j4);
-                        int i = (int) ((((long) c2646.f8540) + j8) - j4);
+                        int i = (int) ((((long) c2646.f8540) + 0L) - j4);
                         while (true) {
                             if (i >= iMin) {
                                 j8 = j4 + ((long) (c2646.f8541 - c2646.f8540));
@@ -242,7 +242,7 @@ public final class MultipartReader implements Closeable {
                         byte[] bArr2 = c2646.f8539;
                         j4 = j10;
                         int iMin2 = (int) Math.min(c2646.f8541, (((long) c2646.f8540) + j12) - j4);
-                        int i2 = (int) ((((long) c2646.f8540) + j8) - j4);
+                        int i2 = (int) ((((long) c2646.f8540) + 0L) - j4);
                         while (true) {
                             if (i2 >= iMin2) {
                                 j8 = j4 + ((long) (c2646.f8541 - c2646.f8540));
@@ -262,8 +262,8 @@ public final class MultipartReader implements Closeable {
         }
         j2 = 1;
         j3 = -1;
-        j6 = j3;
-        if (j6 == j3) {
+        j6 = -1L;
+        if (true) {
         }
     }
 
@@ -292,7 +292,7 @@ public final class MultipartReader implements Closeable {
             this.source.skip(this.dashDashBoundary.mo1870());
         } else {
             while (true) {
-                long jCurrentPartBytesRemaining = currentPartBytesRemaining(JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                long jCurrentPartBytesRemaining = currentPartBytesRemaining(8192L);
                 if (jCurrentPartBytesRemaining == 0) {
                     break;
                 }

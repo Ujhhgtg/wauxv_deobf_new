@@ -61,13 +61,13 @@ public final /* synthetic */ class ViewOnClickListenerC2666 implements View.OnCl
             case 11:
                 AbstractC3681.m5335(this.f8591.f8605, "https://github.com/HdShare/WAuxiliary_Public");
                 break;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 AbstractC3681.m5335(this.f8591.f8605, "https://github.com/HdShare/WAuxiliary_Plugin");
                 break;
             case 13:
                 AbstractC3681.m5335(this.f8591.f8605, "https://github.com/HighCapable/YukiHookAPI");
                 break;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 AbstractC3681.m5335(this.f8591.f8605, "https://github.com/HighCapable/KavaRef");
                 break;
             case 15:

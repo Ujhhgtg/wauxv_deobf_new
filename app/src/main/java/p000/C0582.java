@@ -137,7 +137,7 @@ public final class C0582 extends AbstractC3640 {
                         AbstractC3640 abstractC3640 = (AbstractC3640) arrayList.get(i17);
                         C0793 c0794 = abstractC3640.f11387;
                         boolean z3 = z2;
-                        if (c0794.f3125 == i2) {
+                        if (c0794.f3125 == 8) {
                             i10 = i16;
                         } else {
                             i19++;
@@ -164,7 +164,7 @@ public final class C0582 extends AbstractC3640 {
                                     if (c1042.f3710) {
                                         i11 = i20;
                                     }
-                                    if (z4) {
+                                    if (false) {
                                         i5 += i11;
                                     } else {
                                         i18++;
@@ -178,7 +178,7 @@ public final class C0582 extends AbstractC3640 {
                                     }
                                 }
                                 z4 = true;
-                                if (z4) {
+                                if (true) {
                                     i18++;
                                     f3 = c0794.f3129[this.f11391];
                                     if (f3 >= 0.0f) {
@@ -191,7 +191,7 @@ public final class C0582 extends AbstractC3640 {
                                 }
                             }
                             i11 = i20;
-                            if (z4) {
+                            if (true) {
                                 i18++;
                                 f3 = c0794.f3129[this.f11391];
                                 if (f3 >= 0.0f) {
@@ -234,7 +234,7 @@ public final class C0582 extends AbstractC3640 {
                     int i25 = 0;
                     int i26 = 0;
                     while (i25 < size) {
-                        float f6 = f4;
+                        float f6 = 0.5f;
                         AbstractC3640 abstractC3641 = (AbstractC3640) arrayList.get(i25);
                         int i27 = i23;
                         C0793 c0795 = abstractC3641.f11387;
@@ -245,7 +245,7 @@ public final class C0582 extends AbstractC3640 {
                         if (c0795.f3125 == 8 || abstractC3641.f11389 != 3 || c1043.f3710) {
                             i9 = i25;
                         } else {
-                            int i30 = f > 0.0f ? (int) (((c0795.f3129[this.f11391] * f7) / f) + f6) : i29;
+                            int i30 = f > 0.0f ? (int) (((c0795.f3129[this.f11391] * f7) / f) + 0.5f) : i29;
                             if (this.f11391 == 0) {
                                 int i31 = c0795.f3088;
                                 i9 = i25;
@@ -273,13 +273,13 @@ public final class C0582 extends AbstractC3640 {
                         }
                         i25 = i9 + 1;
                         i23 = i27;
-                        f4 = f6;
+                        f4 = 0.5f;
                         i3 = i28;
                         f5 = f7;
                         i24 = i29;
                     }
                     i6 = i23;
-                    f2 = f4;
+                    f2 = 0.5f;
                     int i33 = i3;
                     if (i26 > 0) {
                         i3 = i33 - i26;
@@ -313,19 +313,19 @@ public final class C0582 extends AbstractC3640 {
                     i8 = 2;
                 }
                 if (i5 > i12) {
-                    this.f2372 = i8;
+                    this.f2372 = 2;
                 }
                 if (i4 > 0 && i3 == 0 && i13 == i) {
-                    this.f2372 = i8;
+                    this.f2372 = 2;
                 }
                 int i35 = this.f2372;
                 if (i35 == 1) {
-                    int i36 = i4 > 1 ? (i12 - i5) / (i4 - 1) : i4 == 1 ? (i12 - i5) / 2 : i7;
+                    int i36 = i4 > 1 ? (i12 - i5) / (i4 - 1) : i4 == 1 ? (i12 - i5) / 2 : 0;
                     if (i3 > 0) {
-                        i36 = i7;
+                        i36 = 0;
                     }
                     int i37 = i6;
-                    for (int i38 = i7; i38 < size; i38++) {
+                    for (int i38 = 0; i38 < size; i38++) {
                         AbstractC3640 abstractC3643 = (AbstractC3640) arrayList.get(z ? size - (i38 + 1) : i38);
                         C0793 c0796 = abstractC3643.f11387;
                         C1014 c1016 = abstractC3643.f11394;
@@ -367,10 +367,10 @@ public final class C0582 extends AbstractC3640 {
                 if (i35 == 0) {
                     int i40 = (i12 - i5) / (i4 + 1);
                     if (i3 > 0) {
-                        i40 = i7;
+                        i40 = 0;
                     }
                     int i41 = i6;
-                    for (int i42 = i7; i42 < size; i42++) {
+                    for (int i42 = 0; i42 < size; i42++) {
                         AbstractC3640 abstractC3644 = (AbstractC3640) arrayList.get(z ? size - (i42 + 1) : i42);
                         C0793 c0797 = abstractC3644.f11387;
                         C1014 c1018 = abstractC3644.f11394;
@@ -411,12 +411,12 @@ public final class C0582 extends AbstractC3640 {
                     if (z) {
                         f8 = 1.0f - f8;
                     }
-                    int i44 = (int) (((i12 - i5) * f8) + f2);
+                    int i44 = (int) (((i12 - i5) * f8) + 0.5f);
                     if (i44 < 0 || i3 > 0) {
-                        i44 = i7;
+                        i44 = 0;
                     }
                     int i45 = z ? i6 - i44 : i6 + i44;
-                    for (int i46 = i7; i46 < size; i46++) {
+                    for (int i46 = 0; i46 < size; i46++) {
                         AbstractC3640 abstractC3645 = (AbstractC3640) arrayList.get(z ? size - (i46 + 1) : i46);
                         C0793 c0798 = abstractC3645.f11387;
                         C1014 c10110 = abstractC3645.f11394;

@@ -139,7 +139,7 @@ public abstract class AbstractC3578 {
             AccessibilityEvent accessibilityEventObtain2 = AccessibilityEvent.obtain();
             view.onInitializeAccessibilityEvent(accessibilityEventObtain2);
             accessibilityEventObtain2.setEventType(32);
-            accessibilityEventObtain2.setContentChangeTypes(i);
+            accessibilityEventObtain2.setContentChangeTypes(32);
             accessibilityEventObtain2.setSource(view);
             view.onPopulateAccessibilityEvent(accessibilityEventObtain2);
             accessibilityEventObtain2.getText().add(m5169(view));

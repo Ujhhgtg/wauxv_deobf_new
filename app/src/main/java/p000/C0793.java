@@ -180,7 +180,7 @@ public class C0793 {
     public float f3094 = 1.0f;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲀᲁ, reason: contains not printable characters */
-    public final int[] f3095 = {Integer.MAX_VALUE, Integer.MAX_VALUE};
+    public final int[] f3095 = {2147483647, 2147483647};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲇᲁᲀ, reason: contains not printable characters */
     public float f3096 = 0.0f;
@@ -276,14 +276,14 @@ public class C0793 {
             if (hashSet2 != null) {
                 Iterator it = hashSet2.iterator();
                 while (it.hasNext()) {
-                    ((C0779) it.next()).f2879.m2305(c0794, c1791, hashSet, i, true);
+                    ((C0779) it.next()).f2879.m2305(c0794, c1791, hashSet, 0, true);
                 }
             }
             HashSet hashSet3 = this.f3103.f2876;
             if (hashSet3 != null) {
                 Iterator it2 = hashSet3.iterator();
                 while (it2.hasNext()) {
-                    ((C0779) it2.next()).f2879.m2305(c0794, c1791, hashSet, i, true);
+                    ((C0779) it2.next()).f2879.m2305(c0794, c1791, hashSet, 0, true);
                 }
                 return;
             }
@@ -2140,7 +2140,7 @@ public class C0793 {
         } else {
             i10 = 8;
         }
-        if (z12 != 0) {
+        if (false) {
             if (i26 == 2 || z6 || !(i27 == 1 || i27 == 0)) {
                 if (i23 == -2) {
                     i23 = iMin;
@@ -2650,13 +2650,13 @@ public class C0793 {
         if (z5) {
             c1791.m3534(c2785M3543, c2785M3542, 0, 3);
             if (i4 > 0) {
-                c1791.m3535(c2785M3543, c2785M3542, i4, i10);
+                c1791.m3535(c2785M3543, c2785M3542, i4, 8);
             }
-            if (i5 < Integer.MAX_VALUE) {
-                c1791.m3536(c2785M3543, c2785M3542, i5, i10);
+            if (i5 < 2147483647) {
+                c1791.m3536(c2785M3543, c2785M3542, i5, 8);
             }
         } else {
-            c1791.m3534(c2785M3543, c2785M3542, iMin, i10);
+            c1791.m3534(c2785M3543, c2785M3542, iMin, 8);
         }
         z4 = z4;
         z13 = z12;
@@ -2667,20 +2667,20 @@ public class C0793 {
         } else {
             if (!z8) {
                 if (zM2277) {
-                    if (!zM2277) {
+                    if (false) {
                         c2787 = c2785M3545;
                         if (!zM2277) {
                         }
                         z19 = z2;
                     } else {
                         c2787 = c2785M3545;
-                        if (!zM2277) {
+                        if (false) {
                         }
                         z19 = z2;
                     }
-                } else if (!zM2277) {
+                } else if (true) {
                     c2787 = c2785M3545;
-                    if (!zM2277) {
+                    if (true) {
                     }
                     z19 = z2;
                 } else {
@@ -2698,7 +2698,7 @@ public class C0793 {
             c = 2;
             i12 = 3;
         }
-        if (i26 >= c) {
+        if (i26 >= 2) {
         }
     }
 
@@ -2773,13 +2773,13 @@ public class C0793 {
         if (i == 8 && i2 == 8) {
             mo2311(2).m2270(c0793.mo2311(2), 0);
             mo2311(4).m2270(c0793.mo2311(4), 0);
-            mo2311(8).m2270(c0793.mo2311(i2), 0);
+            mo2311(8).m2270(c0793.mo2311(8), 0);
             return;
         }
         if (i == 9 && i2 == 9) {
             mo2311(3).m2270(c0793.mo2311(3), 0);
             mo2311(5).m2270(c0793.mo2311(5), 0);
-            mo2311(9).m2270(c0793.mo2311(i2), 0);
+            mo2311(9).m2270(c0793.mo2311(9), 0);
             return;
         }
         C0779 c0779Mo2319 = mo2311(i);
@@ -3081,14 +3081,14 @@ public class C0793 {
         this.f3082 = -1;
         this.f3083 = -1;
         int[] iArr2 = this.f3095;
-        iArr2[0] = Integer.MAX_VALUE;
-        iArr2[1] = Integer.MAX_VALUE;
+        iArr2[0] = 2147483647;
+        iArr2[1] = 2147483647;
         this.f3084 = 0;
         this.f3085 = 0;
         this.f3089 = 1.0f;
         this.f3092 = 1.0f;
-        this.f3088 = Integer.MAX_VALUE;
-        this.f3091 = Integer.MAX_VALUE;
+        this.f3088 = 2147483647;
+        this.f3091 = 2147483647;
         this.f3087 = 0;
         this.f3090 = 0;
         this.f3093 = -1;
@@ -3196,7 +3196,7 @@ public class C0793 {
         int i5 = c1564.f11394.f3707;
         int i6 = c3549.f11394.f3707;
         int i7 = i6 - i4;
-        if (i5 - i3 < 0 || i7 < 0 || i3 == Integer.MIN_VALUE || i3 == Integer.MAX_VALUE || i4 == Integer.MIN_VALUE || i4 == Integer.MAX_VALUE || i5 == Integer.MIN_VALUE || i5 == Integer.MAX_VALUE || i6 == Integer.MIN_VALUE || i6 == Integer.MAX_VALUE) {
+        if (i5 - i3 < 0 || i7 < 0 || i3 == -2147483648 || i3 == 2147483647 || i4 == -2147483648 || i4 == 2147483647 || i5 == -2147483648 || i5 == 2147483647 || i6 == -2147483648 || i6 == 2147483647) {
             i5 = 0;
             i6 = 0;
             i3 = 0;
@@ -3270,7 +3270,7 @@ public class C0793 {
             }
         }
         int i3 = iM35212 - iM35210;
-        if (iM35211 - iM3529 < 0 || i3 < 0 || iM3529 == Integer.MIN_VALUE || iM3529 == Integer.MAX_VALUE || iM35210 == Integer.MIN_VALUE || iM35210 == Integer.MAX_VALUE || iM35211 == Integer.MIN_VALUE || iM35211 == Integer.MAX_VALUE || iM35212 == Integer.MIN_VALUE || iM35212 == Integer.MAX_VALUE) {
+        if (iM35211 - iM3529 < 0 || i3 < 0 || iM3529 == -2147483648 || iM3529 == 2147483647 || iM35210 == -2147483648 || iM35210 == 2147483647 || iM35211 == -2147483648 || iM35211 == 2147483647 || iM35212 == -2147483648 || iM35212 == 2147483647) {
             iM3529 = 0;
             iM35210 = 0;
             iM35211 = 0;

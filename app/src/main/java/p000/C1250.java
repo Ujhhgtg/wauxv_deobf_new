@@ -9,7 +9,7 @@ import java.io.InputStream;
 public final class C1250 extends C1246 {
     public C1250(byte[] bArr) {
         super(bArr);
-        this.f4515.mark(Integer.MAX_VALUE);
+        this.f4515.mark(2147483647);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
@@ -27,7 +27,7 @@ public final class C1250 extends C1246 {
     public C1250(InputStream inputStream) {
         super(inputStream);
         if (inputStream.markSupported()) {
-            this.f4515.mark(Integer.MAX_VALUE);
+            this.f4515.mark(2147483647);
             return;
         }
         throw new IllegalArgumentException("Cannot create SeekableByteOrderedDataInputStream with stream that does not support mark/reset");

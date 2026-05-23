@@ -48,7 +48,7 @@ public class o {
             try {
                 if (n.c(e.a)) {
                     m mVarA = m.a();
-                    mVarA.getClass();
+                    
                     if (TextUtils.isEmpty(str)) {
                         return;
                     }

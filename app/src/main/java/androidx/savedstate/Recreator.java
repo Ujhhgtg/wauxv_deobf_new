@@ -54,7 +54,7 @@ public final class Recreator implements InterfaceC1774 {
                         ?? r4 = this.f456;
                         AbstractC1458 abstractC1458Mo3118 = ((InterfaceC3587) r4).mo3118();
                         r4.mo3119();
-                        abstractC1458Mo3118.getClass();
+                        
                         throw null;
                     } catch (Exception e) {
                         throw new RuntimeException(AbstractC2784.m4757("Failed to instantiate ", next), e);

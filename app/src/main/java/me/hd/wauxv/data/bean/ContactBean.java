@@ -1,10 +1,8 @@
 package me.hd.wauxv.data.bean;
 
 import com.alibaba.fastjson2.JSONObject;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import p000.AbstractC0968;
 import p000.AbstractC1574;
-import p000.AbstractC1745;
 import p000.AbstractC2784;
 import p000.C1299;
 import p000.C1315;
@@ -20,18 +18,18 @@ public final class ContactBean {
 
     public ContactBean(Object obj) {
         this.origin = obj;
-        int i = AbstractC1745.f5844;
-        C1299 c1299M3490 = AbstractC0968.m2484(obj).m3490();
+        int i = 0;
+        C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
         String[] strArr = AbstractC1574.f5469;
         c1299M3490.f6370 = "field_username";
         this.username = (String) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
-        C1299 c1299M3491 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3491.f6370 = "field_alias";
         this.alias = (String) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
-        C1299 c1299M3492 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3492.f6370 = "field_conRemark";
         this.conRemark = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
-        C1299 c1299M3493 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3493.f6370 = "field_nickname";
         this.nickname = (String) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024();
     }

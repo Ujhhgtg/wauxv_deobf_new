@@ -23,7 +23,7 @@ public abstract class AbstractC2862 extends AbstractC0843 implements InterfaceC1
         if (this.f1751 != null) {
             return super.toString();
         }
-        AbstractC2519.f8046.getClass();
+        
         return C2520.m4529(this);
     }
 }

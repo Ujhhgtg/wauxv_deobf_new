@@ -13,6 +13,6 @@ public final class C1360 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f4860 = new C1360("FloatActionButtonHook.ValIconDarkColor", "#FFF7F7F7", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f4860 = new C1360("FloatActionButtonHook.ValIconDarkColor", "#FFF7F7F7", null, false, 0, 0.0f, 0L, 124);
     }
 }

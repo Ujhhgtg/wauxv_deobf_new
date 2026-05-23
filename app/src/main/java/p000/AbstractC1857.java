@@ -167,8 +167,8 @@ public abstract class AbstractC1857 {
                 m3628(linkedHashSet);
             } else {
                 f6175 = (C2115) arrayListM3623.get(0);
-                f6175.getClass();
-                f6175.getClass();
+                
+                
                 f6172 = 3;
                 m3627(arrayListM3623);
             }
@@ -210,9 +210,9 @@ public abstract class AbstractC1857 {
             try {
                 ((C2855) c2115.f6968).f9123 = true;
                 C2855 c2855 = (C2855) c2115.f6968;
-                c2855.getClass();
+                
                 for (C2854 c2854 : new ArrayList(c2855.f9124.values())) {
-                    c2854.getClass();
+                    
                     c2854.f9117 = m3624();
                 }
             } catch (Throwable th) {
@@ -227,7 +227,7 @@ public abstract class AbstractC1857 {
             for (C2856 c2856 : arrayList) {
                 if (c2856 != null) {
                     C2854 c2857 = c2856.f9127;
-                    c2857.getClass();
+                    
                     if (c2857.f9117 == null) {
                         throw new IllegalStateException("Delegate logger cannot be null at this state.");
                     }
@@ -282,7 +282,7 @@ public abstract class AbstractC1857 {
         String str2 = "Connected with provider of type [" + ((C2115) arrayList.get(0)).getClass().getName() + "]";
         int i2 = AbstractC2553.f8109;
         if (AbstractC2784.m4759(1) >= AbstractC2784.m4759(AbstractC2553.f8110)) {
-            AbstractC2553.m4566().println("SLF4J(D): " + str2);
+            AbstractC2553.m4566().println("SLF4J(D): Connected with provider of type [p000.C2115]");
         }
     }
 

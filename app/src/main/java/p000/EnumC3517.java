@@ -39,38 +39,38 @@ public final class EnumC3517 {
         String[] strArr = AbstractC1574.f5469;
         String str = "WXID";
         "微信ID";
-        EnumC3517 enumC3517 = new EnumC3517(str, 0, 2);
+        EnumC3517 enumC3517 = new EnumC3517("WXID", 0, 2);
         f11022 = enumC3517;
         String str2 = "NAME";
         "名字";
-        EnumC3517 enumC3518 = new EnumC3517(str2, 1, 4);
+        EnumC3517 enumC3518 = new EnumC3517("NAME", 1, 4);
         f11023 = enumC3518;
         String str3 = "EMAIL";
         "邮箱";
-        EnumC3517 enumC3519 = new EnumC3517(str3, 2, 5);
+        EnumC3517 enumC3519 = new EnumC3517("EMAIL", 2, 5);
         String str4 = "PHONE";
         "手机";
-        EnumC3517 enumC35110 = new EnumC3517(str4, 3, 6);
+        EnumC3517 enumC35110 = new EnumC3517("PHONE", 3, 6);
         String str5 = "QQ";
         "QQ";
-        EnumC3517 enumC35111 = new EnumC3517(str5, 4, 9);
+        EnumC3517 enumC35111 = new EnumC3517("QQ", 4, 9);
         String str6 = "ALIAS";
         "微信号";
-        EnumC3517 enumC35112 = new EnumC3517(str6, 5, 42);
+        EnumC3517 enumC35112 = new EnumC3517("ALIAS", 5, 42);
         f11024 = enumC35112;
         String str7 = "SEX";
         "性别";
-        EnumC3517 enumC35113 = new EnumC3517(str7, 6, 12290);
+        EnumC3517 enumC35113 = new EnumC3517("SEX", 6, 12290);
         String str8 = "SIGN";
         "签名";
-        EnumC3517 enumC35114 = new EnumC3517(str8, 7, 12291);
+        EnumC3517 enumC35114 = new EnumC3517("SIGN", 7, 12291);
         f11025 = enumC35114;
         String str9 = "CITY";
         "城市";
-        EnumC3517 enumC35115 = new EnumC3517(str9, 8, 12292);
+        EnumC3517 enumC35115 = new EnumC3517("CITY", 8, 12292);
         String str10 = "PROVINCE";
         "省份";
-        f11026 = new EnumC3517[]{enumC3517, enumC3518, enumC3519, enumC35110, enumC35111, enumC35112, enumC35113, enumC35114, enumC35115, new EnumC3517(str10, 9, 12293)};
+        f11026 = new EnumC3517[]{enumC3517, enumC3518, enumC3519, enumC35110, enumC35111, enumC35112, enumC35113, enumC35114, enumC35115, new EnumC3517("PROVINCE", 9, 12293)};
     }
 
     public EnumC3517(String str, int i, int i2) {

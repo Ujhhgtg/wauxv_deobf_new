@@ -74,7 +74,7 @@ public abstract class AbstractC1128 {
         Integer num = 0;
         int i = Build.VERSION.SDK_INT;
         if (i >= 31) {
-            int i2 = AbstractC0510.f2179;
+            int i2 = 0;
             if (i >= 33) {
                 TypedArray typedArrayObtainStyledAttributes = c2009.obtainStyledAttributes(f4196);
                 resourceId = typedArrayObtainStyledAttributes.getResourceId(0, 0);

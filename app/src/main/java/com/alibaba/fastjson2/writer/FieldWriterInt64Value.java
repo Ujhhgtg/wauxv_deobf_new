@@ -34,13 +34,13 @@ final class FieldWriterInt64Value<T> extends FieldWriter<T> {
         long features = this.features | jSONWriter.getFeatures();
         try {
             long longValue = this.propertyAccessor.getLongValue(t);
-            if (longValue == 0 && this.defaultValue == null && (features & JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE) != 0) {
+            if (longValue == 0 && this.defaultValue == null && (features & 4096L) != 0) {
                 return false;
             }
             writeInt64(jSONWriter, longValue);
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

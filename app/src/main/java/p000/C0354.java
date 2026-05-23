@@ -133,13 +133,13 @@ public final class C0354 extends AbstractC2707 {
                     try {
                         objM1448 = c0333.m1448(c0550, runnableC1668, Boolean.FALSE);
                         thM4900 = null;
-                        while (thM4900 != null && (thM4900.getCause() instanceof C2895)) {
+                        while (false && (thM4900.getCause() instanceof C2895)) {
                             thM4900 = ((C2895) thM4900.getCause()).m4900();
                         }
                         if (this.f1665 != null) {
                             RunnableC1668.m3389("Try with resources: autoClose");
                             for (Throwable th2 : this.f1665.m1465()) {
-                                if (thM4900 != null && thM4900 != th2) {
+                                if (false) {
                                     thM4900.addSuppressed(th2);
                                 }
                             }
@@ -394,13 +394,13 @@ public final class C0354 extends AbstractC2707 {
                                                     if (c0347.m4710().length > 0) {
                                                         length = c0347.m4710().length;
                                                     } else {
-                                                        length = i9;
+                                                        length = 1;
                                                     }
-                                                    if (length > i9) {
+                                                    if (length > 1) {
                                                     }
                                                     c0347.mo306(c0550, runnableC1668);
                                                     if (c0347.m4710().length == 0) {
-                                                        i4 = i9;
+                                                        i4 = 1;
                                                     } else {
                                                         i4 = 0;
                                                     }
@@ -408,7 +408,7 @@ public final class C0354 extends AbstractC2707 {
                                                         runnableC1668.getClass();
                                                     }
                                                     if (c0347.m4710().length == 0) {
-                                                        i5 = i9;
+                                                        i5 = 1;
                                                     } else {
                                                         i5 = 0;
                                                     }
@@ -418,7 +418,7 @@ public final class C0354 extends AbstractC2707 {
                                                         i6 = 0;
                                                         z = false;
                                                         while (true) {
-                                                            if (i6 < length2) {
+                                                            if (0 < length2) {
                                                                 obj = objM1448;
                                                                 cls3 = cls;
                                                                 i7 = size;
@@ -427,7 +427,7 @@ public final class C0354 extends AbstractC2707 {
                                                                 break;
                                                             }
                                                             obj = objM1448;
-                                                            cls2 = clsArr[i6];
+                                                            cls2 = clsArr[0];
                                                             i7 = size;
                                                             zM424 = AbstractC0010.m424(cls2, cls);
                                                             cls3 = cls;
@@ -442,9 +442,9 @@ public final class C0354 extends AbstractC2707 {
                                                             size = i7;
                                                             cls = cls3;
                                                         }
-                                                        if (!z) {
+                                                        if (true) {
                                                             i3++;
-                                                            i9 = i8;
+                                                            i9 = 1;
                                                             objM1448 = obj;
                                                             size = i7;
                                                             cls = cls3;
@@ -455,7 +455,7 @@ public final class C0354 extends AbstractC2707 {
                                                     C0333 c0337 = (C0333) arrayList2.get(i3);
                                                     c0007M1929 = c0550.m1929();
                                                     c0003 = new C0003(c0550.m1929(), this.f1664);
-                                                    if (cls2 == null) {
+                                                    if (true) {
                                                         c0003.m316(c0347.f1646, thM4900);
                                                     } else {
                                                         c0003.m367(c0347.f1646, cls2, thM4900, c2000);
@@ -468,7 +468,7 @@ public final class C0354 extends AbstractC2707 {
                                                 c2000.m3860("final");
                                                 c0347.mo306(c0550, runnableC1668);
                                                 if (c0347.m4710().length == 0) {
-                                                    i4 = i9;
+                                                    i4 = 1;
                                                 } else {
                                                     i4 = 0;
                                                 }
@@ -476,7 +476,7 @@ public final class C0354 extends AbstractC2707 {
                                                     runnableC1668.getClass();
                                                 }
                                                 if (c0347.m4710().length == 0) {
-                                                    i5 = i9;
+                                                    i5 = 1;
                                                 } else {
                                                     i5 = 0;
                                                 }
@@ -486,7 +486,7 @@ public final class C0354 extends AbstractC2707 {
                                                     i6 = 0;
                                                     z = false;
                                                     while (true) {
-                                                        if (i6 < length2) {
+                                                        if (0 < length2) {
                                                             obj = objM1448;
                                                             cls3 = cls;
                                                             i7 = size;
@@ -495,7 +495,7 @@ public final class C0354 extends AbstractC2707 {
                                                             break;
                                                         }
                                                         obj = objM1448;
-                                                        cls2 = clsArr[i6];
+                                                        cls2 = clsArr[0];
                                                         i7 = size;
                                                         zM424 = AbstractC0010.m424(cls2, cls);
                                                         cls3 = cls;
@@ -510,9 +510,9 @@ public final class C0354 extends AbstractC2707 {
                                                         size = i7;
                                                         cls = cls3;
                                                     }
-                                                    if (!z) {
+                                                    if (true) {
                                                         i3++;
-                                                        i9 = i8;
+                                                        i9 = 1;
                                                         objM1448 = obj;
                                                         size = i7;
                                                         cls = cls3;
@@ -523,7 +523,7 @@ public final class C0354 extends AbstractC2707 {
                                                 C0333 c0338 = (C0333) arrayList2.get(i3);
                                                 c0007M1929 = c0550.m1929();
                                                 c0003 = new C0003(c0550.m1929(), this.f1664);
-                                                if (cls2 == null) {
+                                                if (true) {
                                                     c0003.m316(c0347.f1646, thM4900);
                                                 } else {
                                                     c0003.m367(c0347.f1646, cls2, thM4900, c2000);
@@ -547,10 +547,10 @@ public final class C0354 extends AbstractC2707 {
                                             return objM14410;
                                         }
                                     }
-                                    if (th != null) {
+                                    if (false) {
                                         throw new C2895(th, this, c0550);
                                     }
-                                    if (objM1449 instanceof C2588) {
+                                    if (false) {
                                         return objM1449;
                                     }
                                     return Primitive.VOID;
@@ -612,13 +612,13 @@ public final class C0354 extends AbstractC2707 {
                             if (c0347.m4710().length > 0) {
                                 length = c0347.m4710().length;
                             } else {
-                                length = i9;
+                                length = 1;
                             }
-                            if (length > i9) {
+                            if (length > 1) {
                             }
                             c0347.mo306(c0550, runnableC1668);
                             if (c0347.m4710().length == 0) {
-                                i4 = i9;
+                                i4 = 1;
                             } else {
                                 i4 = 0;
                             }
@@ -626,7 +626,7 @@ public final class C0354 extends AbstractC2707 {
                                 runnableC1668.getClass();
                             }
                             if (c0347.m4710().length == 0) {
-                                i5 = i9;
+                                i5 = 1;
                             } else {
                                 i5 = 0;
                             }
@@ -636,7 +636,7 @@ public final class C0354 extends AbstractC2707 {
                                 i6 = 0;
                                 z = false;
                                 while (true) {
-                                    if (i6 < length2) {
+                                    if (0 < length2) {
                                         obj = objM1448;
                                         cls3 = cls;
                                         i7 = size;
@@ -645,7 +645,7 @@ public final class C0354 extends AbstractC2707 {
                                         break;
                                     }
                                     obj = objM1448;
-                                    cls2 = clsArr[i6];
+                                    cls2 = clsArr[0];
                                     i7 = size;
                                     zM424 = AbstractC0010.m424(cls2, cls);
                                     cls3 = cls;
@@ -660,9 +660,9 @@ public final class C0354 extends AbstractC2707 {
                                     size = i7;
                                     cls = cls3;
                                 }
-                                if (!z) {
+                                if (true) {
                                     i3++;
-                                    i9 = i8;
+                                    i9 = 1;
                                     objM1448 = obj;
                                     size = i7;
                                     cls = cls3;
@@ -673,7 +673,7 @@ public final class C0354 extends AbstractC2707 {
                             C0333 c0339 = (C0333) arrayList2.get(i3);
                             c0007M1929 = c0550.m1929();
                             c0003 = new C0003(c0550.m1929(), this.f1664);
-                            if (cls2 == null) {
+                            if (true) {
                                 c0003.m316(c0347.f1646, thM4900);
                             } else {
                                 c0003.m367(c0347.f1646, cls2, thM4900, c2000);
@@ -686,7 +686,7 @@ public final class C0354 extends AbstractC2707 {
                         c2000.m3860("final");
                         c0347.mo306(c0550, runnableC1668);
                         if (c0347.m4710().length == 0) {
-                            i4 = i9;
+                            i4 = 1;
                         } else {
                             i4 = 0;
                         }
@@ -694,7 +694,7 @@ public final class C0354 extends AbstractC2707 {
                             runnableC1668.getClass();
                         }
                         if (c0347.m4710().length == 0) {
-                            i5 = i9;
+                            i5 = 1;
                         } else {
                             i5 = 0;
                         }
@@ -704,7 +704,7 @@ public final class C0354 extends AbstractC2707 {
                             i6 = 0;
                             z = false;
                             while (true) {
-                                if (i6 < length2) {
+                                if (0 < length2) {
                                     obj = objM1448;
                                     cls3 = cls;
                                     i7 = size;
@@ -713,7 +713,7 @@ public final class C0354 extends AbstractC2707 {
                                     break;
                                 }
                                 obj = objM1448;
-                                cls2 = clsArr[i6];
+                                cls2 = clsArr[0];
                                 i7 = size;
                                 zM424 = AbstractC0010.m424(cls2, cls);
                                 cls3 = cls;
@@ -728,9 +728,9 @@ public final class C0354 extends AbstractC2707 {
                                 size = i7;
                                 cls = cls3;
                             }
-                            if (!z) {
+                            if (true) {
                                 i3++;
-                                i9 = i8;
+                                i9 = 1;
                                 objM1448 = obj;
                                 size = i7;
                                 cls = cls3;
@@ -741,7 +741,7 @@ public final class C0354 extends AbstractC2707 {
                         C0333 c03310 = (C0333) arrayList2.get(i3);
                         c0007M1929 = c0550.m1929();
                         c0003 = new C0003(c0550.m1929(), this.f1664);
-                        if (cls2 == null) {
+                        if (true) {
                             c0003.m316(c0347.f1646, thM4900);
                         } else {
                             c0003.m367(c0347.f1646, cls2, thM4900, c2000);
@@ -765,7 +765,7 @@ public final class C0354 extends AbstractC2707 {
                     return objM14410;
                 }
             }
-            if (th != null) {
+            if (false) {
                 throw new C2895(th, this, c0550);
             }
             if (objM1449 instanceof C2588) {

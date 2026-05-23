@@ -2,7 +2,7 @@ package p000;
 
 import android.content.Intent;
 import java.util.Iterator;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᲈᲇᲁᤝᛸ, reason: contains not printable characters */
@@ -56,10 +56,10 @@ public final class C1846 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C1839.f6132, dexKitBridge, new C1837(10));
-        AbstractC1574.m3295(C1840.f6133, dexKitBridge, new C1837(11));
-        AbstractC1574.m3295(C1838.f6131, dexKitBridge, new C1837(12));
-        AbstractC1574.m3295(C1841.f6134, dexKitBridge, new C1837(13));
+        AbstractC1574.findMethod(C1839.f6132, dexKitBridge, new C1837(10));
+        AbstractC1574.findMethod(C1840.f6133, dexKitBridge, new C1837(11));
+        AbstractC1574.findMethod(C1838.f6131, dexKitBridge, new C1837(12));
+        AbstractC1574.findMethod(C1841.f6134, dexKitBridge, new C1837(13));
     }
 
     @Override // p000.AbstractC2867, p000.AbstractC1557
@@ -71,12 +71,12 @@ public final class C1846 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
+        int i = 0;
         InterfaceC1742 interfaceC1742 = f6141[0];
-        C1973 c1973M3492 = AbstractC0968.m2483(f6143.m1323()).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(f6143.m1323()).m3492();
         c1973M3492.f6370 = "onActivityResult";
         Class cls = Integer.TYPE;
-        C3689 c3689M4174 = m4174((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(cls), AbstractC2519.m4527(Intent.class)}, 3, c1973M3492), 1);
+        C3689 c3689M4174 = m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(Intent.class)}, 3, c1973M3492), 1);
         f6140.m3262(c3689M4174, new C1837(7));
         c3689M4174.m5352();
         Iterator it = AbstractC0745.m2212(C1839.f6132, C1840.f6133, C1838.f6131).iterator();

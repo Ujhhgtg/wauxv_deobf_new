@@ -34,12 +34,12 @@ public final class ViewOnLayoutChangeListenerC0445 implements View.OnLayoutChang
                 ViewOnAttachStateChangeListenerC1346 viewOnAttachStateChangeListenerC1346 = (ViewOnAttachStateChangeListenerC1346) obj;
                 WindowInsets rootWindowInsets = view.getRootView().getRootWindowInsets();
                 if (rootWindowInsets == null) {
-                    ((C1349) viewOnAttachStateChangeListenerC1346.f4819).getClass();
-                    int i10 = DialogXBaseRelativeLayout.f932;
+                    
+                    int i10 = 0;
                     return;
                 } else {
-                    ((C1349) viewOnAttachStateChangeListenerC1346.f4819).getClass();
-                    int i11 = DialogXBaseRelativeLayout.f932;
+                    
+                    int i11 = 0;
                     ((C1349) viewOnAttachStateChangeListenerC1346.f4819).m3057(C3669.m5299(null, rootWindowInsets), new C1348((C1348) viewOnAttachStateChangeListenerC1346.f4818));
                     return;
                 }

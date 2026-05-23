@@ -6,7 +6,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Properties;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤝᤞᛸᲇᲈᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -70,9 +69,9 @@ public final /* synthetic */ class C2354 implements InterfaceC1414 {
                 return AbstractC1194.m2786(sb, "暂无相关描述", '\n');
             default:
                 C2355 c2357 = this.f7548;
-                c2357.getClass();
+                
                 c2357.m4332("openSettings", new Object[0]);
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 }

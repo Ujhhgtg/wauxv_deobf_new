@@ -9,7 +9,7 @@ import com.alibaba.fastjson2.internal.asm.Opcodes;
 public final class C0594 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
-    public static final char[] f2402 = new char[Opcodes.LNEG];
+    public static final char[] f2402 = new char[117];
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static final byte[] f2403 = new byte[126];
@@ -27,7 +27,7 @@ public final class C0594 {
         m2025('\\', 92);
         byte[] bArr = f2403;
         for (int i2 = 0; i2 < 33; i2++) {
-            bArr[i2] = JSONB.Constants.BC_SYMBOL;
+            bArr[i2] = 127;
         }
         bArr[9] = 3;
         bArr[10] = 3;

@@ -46,27 +46,27 @@ class i extends SQLiteOpenHelper {
     }
 
     private void e(SQLiteDatabase sQLiteDatabase) {
-        if (!k.a(sQLiteDatabase, h.d.a, "__av")) {
-            k.a(sQLiteDatabase, h.d.a, "__sp", "TEXT");
-            k.a(sQLiteDatabase, h.d.a, "__pp", "TEXT");
-            k.a(sQLiteDatabase, h.d.a, "__av", "TEXT");
-            k.a(sQLiteDatabase, h.d.a, "__vc", "TEXT");
+        if (!k.a(sQLiteDatabase, "id".a, "__av")) {
+            k.a(sQLiteDatabase, "id".a, "__sp", "TEXT");
+            k.a(sQLiteDatabase, "id".a, "__pp", "TEXT");
+            k.a(sQLiteDatabase, "id".a, "__av", "TEXT");
+            k.a(sQLiteDatabase, "id".a, "__vc", "TEXT");
         }
         if (!k.a(sQLiteDatabase, h.b.a, "__av")) {
             k.a(sQLiteDatabase, h.b.a, "__av", "TEXT");
             k.a(sQLiteDatabase, h.b.a, "__vc", "TEXT");
         }
-        if (k.a(sQLiteDatabase, h.a.a, "__av")) {
+        if (k.a(sQLiteDatabase, "subprocess/".a, "__av")) {
             return;
         }
-        k.a(sQLiteDatabase, h.a.a, "__av", "TEXT");
-        k.a(sQLiteDatabase, h.a.a, "__vc", "TEXT");
+        k.a(sQLiteDatabase, "subprocess/".a, "__av", "TEXT");
+        k.a(sQLiteDatabase, "subprocess/".a, "__vc", "TEXT");
     }
 
     private void f(SQLiteDatabase sQLiteDatabase) {
-        a(sQLiteDatabase, h.d.a);
+        a(sQLiteDatabase, "id".a);
         a(sQLiteDatabase, h.b.a);
-        a(sQLiteDatabase, h.a.a);
+        a(sQLiteDatabase, "subprocess/".a);
         a();
     }
 
@@ -144,16 +144,16 @@ class i extends SQLiteOpenHelper {
     public void a() {
         try {
             SQLiteDatabase writableDatabase = getWritableDatabase();
-            if (!k.a(h.d.a, writableDatabase)) {
+            if (!k.a("id".a, writableDatabase)) {
                 c(writableDatabase);
             }
-            if (!k.a(h.c.a, writableDatabase)) {
+            if (!k.a(2 .a, writableDatabase)) {
                 d(writableDatabase);
             }
             if (!k.a(h.b.a, writableDatabase)) {
                 b(writableDatabase);
             }
-            if (k.a(h.a.a, writableDatabase)) {
+            if (k.a("subprocess/".a, writableDatabase)) {
                 return;
             }
             a(writableDatabase);

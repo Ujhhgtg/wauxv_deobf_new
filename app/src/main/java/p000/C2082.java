@@ -42,8 +42,8 @@ public final class C2082 extends AbstractC2867 implements InterfaceC1577 {
     public final void mo3334(ViewGroup viewGroup) {
         String[] strArr = AbstractC1574.f5469;
         if (mo3264()) {
-            C2081.f6883.getClass();
-            C1565.f5440.getClass();
+            
+            
             View viewFindViewById = viewGroup.findViewById(C1565.m3280() ? C2080.f6882.m2538() : AbstractC0968.m2475(C2081.m3884()));
             ViewParent parent = viewFindViewById.getParent();
             ViewGroup viewGroup2 = parent instanceof ViewGroup ? (ViewGroup) parent : null;
@@ -55,7 +55,7 @@ public final class C2082 extends AbstractC2867 implements InterfaceC1577 {
             c2865.setId(R.id.MsgLeftSwipe_SwipeMenu);
             c2865.addView(viewFindViewById);
             FrameLayout frameLayout = new FrameLayout(c2865.getContext());
-            frameLayout.setLayoutParams(new LinearLayout.LayoutParams((int) AbstractC3681.m5322(Integer.valueOf(Opcodes.GETFIELD), frameLayout.getContext()), -1));
+            frameLayout.setLayoutParams(new LinearLayout.LayoutParams((int) AbstractC3681.m5322(Integer.valueOf(180), frameLayout.getContext()), -1));
             ImageView imageView = new ImageView(frameLayout.getContext());
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -1);
             layoutParams.setMargins((int) AbstractC3681.m5322(Double.valueOf(36.0d), imageView.getContext()), ((ViewGroup.MarginLayoutParams) layoutParams).topMargin, ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin, ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin);

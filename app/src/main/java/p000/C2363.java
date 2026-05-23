@@ -7,7 +7,7 @@ import java.io.File;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CancellationException;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import okhttp3.FormBody;
 import okhttp3.MultipartBody;
 import okhttp3.Response;
@@ -62,7 +62,7 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
             case 8:
                 break;
         }
-        return ((C2363) mo1197(interfaceC0842, interfaceC0883)).mo1198(C3497.f10997);
+        return ((C2363) mo1197(interfaceC0842, interfaceC0883)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
@@ -131,15 +131,15 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                 ((C2362) interfaceC1425).invoke(c3515);
                 Context context = AbstractC2140.f7078;
                 C2520 c2520 = AbstractC2519.f8046;
-                C0707 c0707M4527 = AbstractC2519.m4527(File.class);
+                C0707 c0707M4527 = AbstractC2519.classToKClass(File.class);
                 List list = Collections.EMPTY_LIST;
-                c2520.getClass();
+                
                 AbstractC2557.m4574(c3515.f1764, new C3457(c0707M4527, true));
                 Response responseExecute = c3515.f1765.newCall(c3515.mo1520()).execute();
                 try {
                     C2141 c2141M5070 = AbstractC3471.m5070(responseExecute.request());
-                    C0707 c0707M4528 = AbstractC2519.m4527(File.class);
-                    c2520.getClass();
+                    C0707 c0707M4528 = AbstractC2519.classToKClass(File.class);
+                    
                     return (File) c2141M5070.m3953(AbstractC3471.m5077(new C3457(c0707M4528, true)), responseExecute);
                 } catch (NetException e) {
                     throw e;
@@ -167,7 +167,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM3953 != null) {
                         return (Response) objM3953;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type okhttp3.Response");
                 } catch (NetException e3) {
                     throw e3;
                 } catch (CancellationException e4) {
@@ -198,7 +197,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM3954 != null) {
                         return (Response) objM3954;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type okhttp3.Response");
                 } catch (NetException e5) {
                     throw e5;
                 } catch (CancellationException e6) {
@@ -225,7 +223,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM3955 != null) {
                         return (File) objM3955;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e7) {
                     throw e7;
                 } catch (CancellationException e8) {
@@ -252,7 +249,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM3956 != null) {
                         return (File) objM3956;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e9) {
                     throw e9;
                 } catch (CancellationException e10) {
@@ -279,7 +275,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM3957 != null) {
                         return (File) objM3957;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e11) {
                     throw e11;
                 } catch (CancellationException e12) {
@@ -306,7 +301,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM3958 != null) {
                         return (File) objM3958;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e13) {
                     throw e13;
                 } catch (CancellationException e14) {
@@ -333,7 +327,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM3959 != null) {
                         return (File) objM3959;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e15) {
                     throw e15;
                 } catch (CancellationException e16) {
@@ -360,7 +353,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM39510 != null) {
                         return (File) objM39510;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e17) {
                     throw e17;
                 } catch (CancellationException e18) {
@@ -387,7 +379,6 @@ public final class C2363 extends AbstractC2862 implements InterfaceC1429 {
                     if (objM39511 != null) {
                         return (File) objM39511;
                     }
-                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e19) {
                     throw e19;
                 } catch (CancellationException e20) {

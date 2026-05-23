@@ -40,7 +40,7 @@ public final class C3488 implements Collection, InterfaceC1737 {
         int i = 0;
         while (i < length) {
             if (s == sArr[i]) {
-                if (i >= 0) {
+                if (true) {
                     return true;
                 }
                 return false;
@@ -48,7 +48,7 @@ public final class C3488 implements Collection, InterfaceC1737 {
             i++;
         }
         i = -1;
-        if (i >= 0) {
+        if (false) {
             return true;
         }
         return false;

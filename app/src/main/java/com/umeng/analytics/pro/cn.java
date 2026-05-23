@@ -81,46 +81,46 @@ public class cn implements cm.a {
 
     private void c(Context context) {
         try {
-            if (new File(context.getFilesDir(), j).exists()) {
+            if (new File(context.getFilesDir(), ".um_ncc_init_beacon_987654321").exists()) {
                 f = 0;
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Beacon file exists, work mode set to init dispatch");
+                UMRTLog.i("MobclickRT", "[ncc]: Beacon file exists, work mode set to init dispatch");
             } else {
                 f = 1;
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Beacon file not exists, work mode set to foreground dispatch (default)");
+                UMRTLog.i("MobclickRT", "[ncc]: Beacon file not exists, work mode set to foreground dispatch (default)");
             }
         } catch (Throwable th) {
             f = 1;
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: Error checking beacon file, work mode set to foreground dispatch (default): " + th.getMessage());
+            UMRTLog.e("MobclickRT", "[ncc]: Error checking beacon file, work mode set to foreground dispatch (default): " + th.getMessage());
         }
     }
 
     private void d(Context context) {
         try {
-            File file = new File(context.getFilesDir(), j);
+            File file = new File(context.getFilesDir(), ".um_ncc_init_beacon_987654321");
             if (file.exists()) {
                 return;
             }
             file.createNewFile();
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Beacon file created");
+            UMRTLog.i("MobclickRT", "[ncc]: Beacon file created");
         } catch (Throwable th) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: Error creating beacon file: " + th.getMessage());
+            UMRTLog.e("MobclickRT", "[ncc]: Error creating beacon file: " + th.getMessage());
         }
     }
 
     private void e(Context context) {
         try {
-            File file = new File(context.getFilesDir(), j);
+            File file = new File(context.getFilesDir(), ".um_ncc_init_beacon_987654321");
             if (file.exists()) {
                 file.delete();
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Beacon file deleted");
+                UMRTLog.i("MobclickRT", "[ncc]: Beacon file deleted");
             }
         } catch (Throwable th) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: Error deleting beacon file: " + th.getMessage());
+            UMRTLog.e("MobclickRT", "[ncc]: Error deleting beacon file: " + th.getMessage());
         }
     }
 
     private void f(Context context) {
-        ImprintHandler.getImprintService(context).registImprintCallback(a, new UMImprintChangeCallback() { // from class: com.umeng.analytics.pro.cn.4
+        ImprintHandler.getImprintService(context).registImprintCallback("newver", new UMImprintChangeCallback() { // from class: com.umeng.analytics.pro.cn.4
             @Override // com.umeng.commonsdk.statistics.internal.UMImprintChangeCallback
             public void onImprintValueChanged(String str, String str2) {
                 cm.a(UMGlobalContext.getAppContext(), 107, cn.a(), str2);
@@ -130,11 +130,11 @@ public class cn implements cm.a {
 
     public void b() {
         g = true;
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: App switched to foreground");
+        UMRTLog.i("MobclickRT", "[ncc]: App switched to foreground");
         if (f != 1) {
             if (f == -1) {
                 f = 1;
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Work mode set to foreground dispatch");
+                UMRTLog.i("MobclickRT", "[ncc]: Work mode set to foreground dispatch");
                 return;
             }
             return;
@@ -154,7 +154,7 @@ public class cn implements cm.a {
             }
             synchronized (i) {
                 if (h) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Foreground processing is already in progress, ignore new foreground event");
+                    UMRTLog.i("MobclickRT", "[ncc]: Foreground processing is already in progress, ignore new foreground event");
                 } else {
                     h = true;
                     cm.a(appContext, 203, a(), l);
@@ -169,10 +169,10 @@ public class cn implements cm.a {
             @Override // com.umeng.analytics.pro.cg
             public void a(JSONObject jSONObject) {
                 if (jSONObject == null) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: onConfigReady: empty config!");
+                    UMRTLog.i("MobclickRT", "[ncc]: onConfigReady: empty config!");
                     return;
                 }
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: onConfigReady:" + jSONObject);
+                UMRTLog.i("MobclickRT", "[ncc]: onConfigReady:" + jSONObject);
                 cm.a(context, 201, cn.a(), jSONObject, 3000L);
             }
         });
@@ -192,11 +192,11 @@ public class cn implements cm.a {
     }
 
     private boolean a(JSONObject jSONObject) {
-        if (jSONObject == null || !jSONObject.has(cl.g)) {
+        if (jSONObject == null || !jSONObject.has("code")) {
             return false;
         }
         try {
-            return 200 == jSONObject.optInt(cl.g) && jSONObject.has(cl.i) && jSONObject.has(cl.b);
+            return 200 == jSONObject.optInt("code") && jSONObject.has("status") && jSONObject.has("data");
         } catch (Throwable unused) {
             return false;
         }
@@ -219,27 +219,27 @@ public class cn implements cm.a {
     private synchronized void a(Context context, JSONObject jSONObject, String str) {
         try {
             if (context == null) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: saveConfigFile: context is null!");
+                UMRTLog.e("MobclickRT", "[ncc]: saveConfigFile: context is null!");
                 return;
             }
             if (jSONObject == null) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: saveConfigFile: config is null!");
+                UMRTLog.e("MobclickRT", "[ncc]: saveConfigFile: config is null!");
                 return;
             }
             if (TextUtils.isEmpty(str)) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: saveConfigFile: version is empty!");
+                UMRTLog.e("MobclickRT", "[ncc]: saveConfigFile: version is empty!");
                 return;
             }
             long j2 = Long.parseLong(str);
             byte[] bArrA = ay.a(jSONObject.toString().getBytes(), UMConfigure.sAppkey.getBytes());
             if (bArrA != null && bArrA.length > 1) {
-                FileOutputStream fileOutputStream = new FileOutputStream(new File(context.getFilesDir(), k));
+                FileOutputStream fileOutputStream = new FileOutputStream(new File(context.getFilesDir(), ".um_ncc_local_config"));
                 try {
                     fileOutputStream.write(bArrA);
                     fileOutputStream.flush();
                     at.a(fileOutputStream);
                     a(context, j2);
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: saveConfigFile success.");
+                    UMRTLog.i("MobclickRT", "[ncc]: saveConfigFile success.");
                 } catch (Throwable th) {
                     at.a(fileOutputStream);
                     throw th;
@@ -250,18 +250,18 @@ public class cn implements cm.a {
     }
 
     public void c() {
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: App switched to background");
+        UMRTLog.i("MobclickRT", "[ncc]: App switched to background");
     }
 
     public synchronized JSONObject b(Context context) {
         FileInputStream fileInputStreamOpenFileInput;
         JSONObject jSONObject = null;
         try {
-            if (!new File(context.getFilesDir(), k).exists()) {
+            if (!new File(context.getFilesDir(), ".um_ncc_local_config").exists()) {
                 return null;
             }
             try {
-                fileInputStreamOpenFileInput = context.openFileInput(k);
+                fileInputStreamOpenFileInput = context.openFileInput(".um_ncc_local_config");
                 try {
                     JSONObject jSONObject2 = new JSONObject(new String(ay.a(HelperUtils.readStreamToByteArray(fileInputStreamOpenFileInput), UMConfigure.sAppkey.getBytes())));
                     try {
@@ -317,7 +317,7 @@ public class cn implements cm.a {
             }
             return new co(bVar.h(), arrayList);
         } catch (Throwable th) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: buildAction error: " + th.getMessage());
+            UMRTLog.e("MobclickRT", "[ncc]: buildAction error: " + th.getMessage());
             return null;
         }
     }
@@ -330,7 +330,7 @@ public class cn implements cm.a {
                 try {
                     cx cxVarA = cx.a(l);
                     if (!a(cxVarA)) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: updateActionExecTime: parse ConfigData error. abort update.");
+                        UMRTLog.e("MobclickRT", "[ncc]: updateActionExecTime: parse ConfigData error. abort update.");
                         return;
                     }
                     listE = cxVarA.e().e();
@@ -366,7 +366,7 @@ public class cn implements cm.a {
                     SharedPreferences.Editor editorEdit = sharedPreferencesA.edit();
                     editorEdit.putLong("config_ts", j2);
                     editorEdit.apply();
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: updateVersion : ts = " + j2);
+                    UMRTLog.i("MobclickRT", "[ncc]: updateVersion : ts = " + j2);
                 }
             } catch (Throwable unused) {
             }
@@ -391,7 +391,7 @@ public class cn implements cm.a {
                         i2 = 1;
                     }
                 } catch (Throwable th) {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: processActions error: " + th.getMessage());
+                    UMRTLog.e("MobclickRT", "[ncc]: processActions error: " + th.getMessage());
                     if (f == 1) {
                         synchronized (i) {
                             h = false;
@@ -425,7 +425,7 @@ public class cn implements cm.a {
                 JSONObject jSONObject = new JSONObject();
                 jSONObject.put("batchId", string);
                 jSONObject.put("appsPerBatch", i2);
-                jSONObject.put(cl.l, i3);
+                jSONObject.put("batchInterval", i3);
                 jSONObject.put("processedCount", 0);
                 jSONObject.put("currentBatchIndex", 0);
                 jSONObject.put("totalBatches", iCeil);
@@ -468,11 +468,11 @@ public class cn implements cm.a {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: checkFetchCondition: online version = " + str);
+        UMRTLog.i("MobclickRT", "[ncc]: checkFetchCondition: online version = " + str);
         try {
             long j2 = Long.parseLong(str);
             if (!TextUtils.isEmpty(this.b) && this.b.equalsIgnoreCase(str)) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: local cache version == online version, ignore.");
+                UMRTLog.i("MobclickRT", "[ncc]: local cache version == online version, ignore.");
                 return;
             }
             SharedPreferences sharedPreferencesA = cz.a(UMGlobalContext.getAppContext());
@@ -480,12 +480,12 @@ public class cn implements cm.a {
                 long j3 = sharedPreferencesA.getLong("config_ts", 0L);
                 if (j3 != j2) {
                     this.b = str;
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: local version != online version, send FETCH_NEW_CONFIG msg. local version = " + j3);
+                    UMRTLog.i("MobclickRT", "[ncc]: local version != online version, send FETCH_NEW_CONFIG msg. local version = " + j3);
                     cm.a(UMGlobalContext.getAppContext(), 101, a(), str, 5000L);
                     return;
                 }
                 this.b = str;
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: local version == online version, ignore.");
+                UMRTLog.i("MobclickRT", "[ncc]: local version == online version, ignore.");
             }
         } catch (Throwable unused) {
         }
@@ -498,7 +498,7 @@ public class cn implements cm.a {
             jSONObject.put("id", "$$_umc_ev1");
             jSONObject.put("ts", jCurrentTimeMillis);
             jSONObject.put("tt", str);
-            jSONObject.put(com.umeng.ccg.a.G, i2);
+            jSONObject.put("mock", i2);
             jSONObject.put("result", i3);
             JSONObject jSONObjectA = ap.a(UMGlobalContext.getAppContext(), new JSONArray("[\"uapp\"]"), "uapp");
             jSONObjectA.put("wkMode", f);
@@ -542,36 +542,36 @@ public class cn implements cm.a {
         try {
             final String strOptString = jSONObject.has("actionName") ? jSONObject.optString("actionName") : "";
             if (TextUtils.isEmpty(strOptString)) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>[ncc]: target is empty, ignore umc_cfg process");
+                UMRTLog.i("MobclickRT", "--->>>[ncc]: target is empty, ignore umc_cfg process");
                 return;
             }
-            final int iOptInt = jSONObject.has(com.umeng.ccg.a.G) ? jSONObject.optInt(com.umeng.ccg.a.G) : 0;
+            final int iOptInt = jSONObject.has("mock") ? jSONObject.optInt("mock") : 0;
             if (iOptInt == 0) {
                 JSONObject jSONObjectD = d();
-                if (jSONObjectD == null || (objA = ax.a(jSONObjectD.optString(bv.aF), jSONObjectD.optString(bv.aB), new Class[]{String.class}, context, new Object[]{jSONObjectD.optString(bv.av)})) == null) {
+                if (jSONObjectD == null || (objA = ax.a(jSONObjectD.optString("c"), jSONObjectD.optString("s"), new Class[]{String.class}, context, new Object[]{jSONObjectD.optString("a")})) == null) {
                     return;
                 }
                 Bundle bundle = new Bundle();
                 bundle.putString("ss", Base64.encodeToString(ay.a(DeviceConfig.getPackageName(context).getBytes(), UMUtils.genSin()), 0).trim());
-                ax.a(jSONObjectD.optString("m"), jSONObjectD.optString("x"), new Class[]{String.class, String.class, String[].class, Bundle.class, Activity.class, ax.a(jSONObjectD.optString(bv.aD)), Handler.class}, objA, new Object[]{strOptString, "u20@24m_PS_DK_ANA", null, bundle, null, new AccountManagerCallback<Bundle>() { // from class: com.umeng.analytics.pro.cn.3
+                ax.a(jSONObjectD.optString("m"), jSONObjectD.optString("x"), new Class[]{String.class, String.class, String[].class, Bundle.class, Activity.class, ax.a(jSONObjectD.optString("z")), Handler.class}, objA, new Object[]{strOptString, "u20@24m_PS_DK_ANA", null, bundle, null, new AccountManagerCallback<Bundle>() { // from class: com.umeng.analytics.pro.cn.3
                     @Override // android.accounts.AccountManagerCallback
                     public void run(AccountManagerFuture<Bundle> accountManagerFuture) {
                         int i2 = 1;
                         try {
                             accountManagerFuture.getResult();
                             i2 = 0;
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> [ncc]: umc_cfg p s!");
+                            UMRTLog.i("MobclickRT", "--->>> [ncc]: umc_cfg p s!");
                         } catch (Throwable unused) {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> [ncc]: umc_cfg p f!");
+                            UMRTLog.i("MobclickRT", "--->>> [ncc]: umc_cfg p f!");
                         }
-                        cm.a(UMGlobalContext.getAppContext(), 305, cn.a(), cn.this.new a(strOptString, iOptInt, i2));
+                        cm.a(UMGlobalContext.getAppContext(), 305, cn.a(), cn.this.new a(strOptString, 0, i2));
                     }
                 }, null});
                 return;
             }
             JSONObject jSONObjectA = a(strOptString, iOptInt, 0);
             if (jSONObjectA != null) {
-                aw.a(new ar(ar.b, jSONObjectA), 0L, TimeUnit.SECONDS);
+                aw.a(new ar("https://cnlogs.umeng.com/ext_event", jSONObjectA), 0L, TimeUnit.SECONDS);
             }
         } catch (Throwable unused) {
         }
@@ -580,22 +580,22 @@ public class cn implements cm.a {
     private boolean a(cx cxVar) {
         if (cxVar.a() == 200 && cxVar.e() != null) {
             if (TextUtils.isEmpty(cxVar.c())) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: invalid config version.");
+                UMRTLog.e("MobclickRT", "[ncc]: invalid config version.");
                 return false;
             }
             cx.a aVarE = cxVar.e();
             if (aVarE == null) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: config data is null.");
+                UMRTLog.e("MobclickRT", "[ncc]: config data is null.");
                 return false;
             }
             List<cx.b> listE = aVarE.e();
             if (listE != null && !listE.isEmpty()) {
                 return true;
             }
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: targets is empty");
+            UMRTLog.e("MobclickRT", "[ncc]: targets is empty");
             return false;
         }
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: invalid config file.");
+        UMRTLog.e("MobclickRT", "[ncc]: invalid config file.");
         return false;
     }
 
@@ -623,13 +623,13 @@ public class cn implements cm.a {
                         }
                         JSONObject jSONObjectB2 = ap.b(UMGlobalContext.getAppContext(), (String) obj);
                         if (jSONObjectB2 != null) {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc] send request. body: " + jSONObjectB2);
-                            aw.a(new cy(cy.a, jSONObjectB2), 0L, TimeUnit.SECONDS);
+                            UMRTLog.i("MobclickRT", "[ncc] send request. body: " + jSONObjectB2);
+                            aw.a(new cy("https://ulogs.umeng.com/push_cloud_activation", jSONObjectB2), 0L, TimeUnit.SECONDS);
                             return;
                         }
                         return;
                     case 102:
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv FETCH_RESPONSE msg.");
+                        UMRTLog.i("MobclickRT", "[ncc]: recv FETCH_RESPONSE msg.");
                         if (obj != null && (obj instanceof JSONObject)) {
                             JSONObject jSONObjectOptJSONObject2 = ((JSONObject) obj).optJSONObject("config");
                             if (a(jSONObjectOptJSONObject2)) {
@@ -643,26 +643,26 @@ public class cn implements cm.a {
                         cm.a(UMGlobalContext.getAppContext(), 104, a(), null);
                         return;
                     case 103:
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv FETCH_SUCCESS msg.");
+                        UMRTLog.i("MobclickRT", "[ncc]: recv FETCH_SUCCESS msg.");
                         Context appContext2 = UMGlobalContext.getAppContext();
                         if (obj == null || !(obj instanceof JSONObject)) {
                             return;
                         }
                         JSONObject jSONObject = (JSONObject) obj;
-                        String strOptString = jSONObject.optString(cl.n);
+                        String strOptString = jSONObject.optString("version");
                         if (!TextUtils.isEmpty(strOptString)) {
                             a(appContext2, jSONObject, strOptString);
                             return;
                         } else {
-                            UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: version field missing.");
+                            UMRTLog.e("MobclickRT", "[ncc]: version field missing.");
                             return;
                         }
                     case 104:
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv FETCH_FAILED msg.");
+                        UMRTLog.i("MobclickRT", "[ncc]: recv FETCH_FAILED msg.");
                         return;
                     case 105:
                         Object jSONObject2 = "[ncc]: recv LOAD_CONFIG msg.";
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv LOAD_CONFIG msg.");
+                        UMRTLog.i("MobclickRT", "[ncc]: recv LOAD_CONFIG msg.");
                         try {
                             try {
                                 jSONObjectB = b(UMGlobalContext.getAppContext());
@@ -676,7 +676,7 @@ public class cn implements cm.a {
                                 if (jSONObjectB != null) {
                                     str = "config";
                                     jSONObject2 = jSONObject2;
-                                    jSONObject2.put(str, jSONObjectB);
+                                    jSONObject2.put("config", jSONObjectB);
                                 }
                             } catch (Throwable unused) {
                                 jSONObject2 = new JSONObject();
@@ -707,23 +707,23 @@ public class cn implements cm.a {
                             }
                         }
                         f(UMGlobalContext.getAppContext());
-                        String strImprintProperty = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), a, "");
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: manual check imprint newver value: " + strImprintProperty);
+                        String strImprintProperty = UMEnvelopeBuild.imprintProperty(UMGlobalContext.getAppContext(), "newver", "");
+                        UMRTLog.i("MobclickRT", "[ncc]: manual check imprint newver value: " + strImprintProperty);
                         a(strImprintProperty);
                         return;
                     case 107:
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv IMPRINT_NEWVER_CHANGED msg.");
+                        UMRTLog.i("MobclickRT", "[ncc]: recv IMPRINT_NEWVER_CHANGED msg.");
                         if (obj != null) {
                             try {
                                 if (obj instanceof String) {
                                     String str2 = (String) obj;
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: newver value changed newver : ".concat(str2));
+                                    UMRTLog.i("MobclickRT", "[ncc]: newver value changed newver : ".concat(str2));
                                     a(str2);
                                     return;
                                 }
                                 return;
                             } catch (Throwable th) {
-                                UMRTLog.e(UMRTLog.RTLOG_TAG, "[imprint] process error " + th.getMessage());
+                                UMRTLog.e("MobclickRT", "[imprint] process error " + th.getMessage());
                                 return;
                             }
                         }
@@ -732,46 +732,46 @@ public class cn implements cm.a {
                         switch (i2) {
                             case 201:
                                 try {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv PARSE_CONFIG msg.");
+                                    UMRTLog.i("MobclickRT", "[ncc]: recv PARSE_CONFIG msg.");
                                     if (obj == null || !(obj instanceof JSONObject)) {
                                         return;
                                     }
                                     JSONObject jSONObject4 = (JSONObject) obj;
-                                    if ((jSONObject4.has(cl.i) ? jSONObject4.optInt(cl.i) : 1) == 1) {
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: status is 1, don't dispatch.");
+                                    if ((jSONObject4.has("status") ? jSONObject4.optInt("status") : 1) == 1) {
+                                        UMRTLog.i("MobclickRT", "[ncc]: status is 1, don't dispatch.");
                                         return;
                                     }
-                                    if (jSONObject4.has(cl.b)) {
-                                        JSONObject jSONObjectOptJSONObject3 = jSONObject4.optJSONObject(cl.b);
+                                    if (jSONObject4.has("data")) {
+                                        JSONObject jSONObjectOptJSONObject3 = jSONObject4.optJSONObject("data");
                                         if (jSONObjectOptJSONObject3 != null && jSONObjectOptJSONObject3.length() > 0) {
-                                            if (jSONObjectOptJSONObject3.has(cl.j)) {
+                                            if (jSONObjectOptJSONObject3.has("actWhen")) {
                                                 try {
-                                                    if (Integer.parseInt(jSONObjectOptJSONObject3.optString(cl.j, SdkVersion.MINI_VERSION)) == 0) {
+                                                    if (Integer.parseInt(jSONObjectOptJSONObject3.optString("actWhen", "1")) == 0) {
                                                         Context appContext3 = UMGlobalContext.getAppContext();
                                                         if (appContext3 != null) {
                                                             d(appContext3);
                                                         }
-                                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Init dispatch mode, beacon file will be created");
+                                                        UMRTLog.i("MobclickRT", "[ncc]: Init dispatch mode, beacon file will be created");
                                                     } else {
                                                         Context appContext4 = UMGlobalContext.getAppContext();
                                                         if (appContext4 != null) {
                                                             e(appContext4);
                                                         }
-                                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Foreground dispatch mode, beacon file will be deleted");
+                                                        UMRTLog.i("MobclickRT", "[ncc]: Foreground dispatch mode, beacon file will be deleted");
                                                     }
                                                 } catch (NumberFormatException unused3) {
                                                     Context appContext5 = UMGlobalContext.getAppContext();
                                                     if (appContext5 != null) {
                                                         e(appContext5);
                                                     }
-                                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Foreground dispatch mode (default), beacon file will be deleted");
+                                                    UMRTLog.i("MobclickRT", "[ncc]: Foreground dispatch mode (default), beacon file will be deleted");
                                                 }
                                             } else {
                                                 Context appContext6 = UMGlobalContext.getAppContext();
                                                 if (appContext6 != null) {
                                                     e(appContext6);
                                                 }
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Foreground dispatch mode (default), beacon file will be deleted");
+                                                UMRTLog.i("MobclickRT", "[ncc]: Foreground dispatch mode (default), beacon file will be deleted");
                                             }
                                             synchronized (m) {
                                                 try {
@@ -784,7 +784,7 @@ public class cn implements cm.a {
                                                             try {
                                                                 if (!h && (appContext = UMGlobalContext.getAppContext()) != null) {
                                                                     h = true;
-                                                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Supplement sending PROCESS_WHEN_TO_FRONT msg after PARSE_CONFIG");
+                                                                    UMRTLog.i("MobclickRT", "[ncc]: Supplement sending PROCESS_WHEN_TO_FRONT msg after PARSE_CONFIG");
                                                                     cm.a(appContext, 203, a(), l);
                                                                 }
                                                             } catch (Throwable th2) {
@@ -799,44 +799,44 @@ public class cn implements cm.a {
                                             }
                                             return;
                                         }
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: empty config value, don't dispatch.");
+                                        UMRTLog.i("MobclickRT", "[ncc]: empty config value, don't dispatch.");
                                         return;
                                     }
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: no data field, don't dispatch.");
+                                    UMRTLog.i("MobclickRT", "[ncc]: no data field, don't dispatch.");
                                     return;
                                 } catch (Throwable th4) {
-                                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: PARSE_CONFIG error: " + th4.getMessage());
+                                    UMRTLog.e("MobclickRT", "[ncc]: PARSE_CONFIG error: " + th4.getMessage());
                                     return;
                                 }
                             case 202:
                                 try {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv PROCESS_WHEN_INIT msg.");
-                                    if (!com.umeng.ccg.b.a(com.umeng.ccg.a.i)) {
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Local switch of [umc_cfg] is off, ignore this command.");
+                                    UMRTLog.i("MobclickRT", "[ncc]: recv PROCESS_WHEN_INIT msg.");
+                                    if (!com.umeng.ccg.b.a("umc_cfg")) {
+                                        UMRTLog.i("MobclickRT", "[ncc]: Local switch of [umc_cfg] is off, ignore this command.");
                                         return;
                                     }
                                     if (f != 0) {
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Work mode is not init dispatch, ignore PROCESS_WHEN_INIT");
+                                        UMRTLog.i("MobclickRT", "[ncc]: Work mode is not init dispatch, ignore PROCESS_WHEN_INIT");
                                         return;
                                     }
                                     int iB = ck.b();
                                     if (iB > 0) {
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Ignore act up action because act up flag value is: " + iB);
+                                        UMRTLog.i("MobclickRT", "[ncc]: Ignore act up action because act up flag value is: " + iB);
                                         return;
                                     }
                                     if (obj instanceof JSONObject) {
                                         cx cxVarA = cx.a((JSONObject) obj);
                                         if (!a(cxVarA)) {
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: invalid config data, just stop dispatch.");
+                                            UMRTLog.i("MobclickRT", "[ncc]: invalid config data, just stop dispatch.");
                                             return;
                                         }
                                         if (cxVarA.d() == 1) {
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: config status is 1, not allow dispatch when INIT");
+                                            UMRTLog.i("MobclickRT", "[ncc]: config status is 1, not allow dispatch when INIT");
                                             return;
                                         }
                                         cx.a aVarE = cxVarA.e();
                                         if (aVarE == null) {
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: config data is null when INIT, just stop dispatch.");
+                                            UMRTLog.i("MobclickRT", "[ncc]: config data is null when INIT, just stop dispatch.");
                                             return;
                                         }
                                         ArrayList<co> arrayList = new ArrayList<>();
@@ -855,22 +855,22 @@ public class cn implements cm.a {
                                     }
                                     return;
                                 } catch (Throwable th5) {
-                                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: PROCESS_WHEN_INIT error: " + th5.getMessage());
+                                    UMRTLog.e("MobclickRT", "[ncc]: PROCESS_WHEN_INIT error: " + th5.getMessage());
                                     return;
                                 }
                             case 203:
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv PROCESS_WHEN_TO_FRONT msg.");
-                                if (!com.umeng.ccg.b.a(com.umeng.ccg.a.i)) {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Local switch of [umc_cfg] is off, ignore this command.");
+                                UMRTLog.i("MobclickRT", "[ncc]: recv PROCESS_WHEN_TO_FRONT msg.");
+                                if (!com.umeng.ccg.b.a("umc_cfg")) {
+                                    UMRTLog.i("MobclickRT", "[ncc]: Local switch of [umc_cfg] is off, ignore this command.");
                                     return;
                                 }
                                 int iB2 = ck.b();
                                 if (iB2 > 0) {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Ignore act up action because act up flag value is: " + iB2);
+                                    UMRTLog.i("MobclickRT", "[ncc]: Ignore act up action because act up flag value is: " + iB2);
                                     return;
                                 }
                                 if (f != 1) {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: Work mode is not foreground dispatch, ignore PROCESS_WHEN_TO_FRONT");
+                                    UMRTLog.i("MobclickRT", "[ncc]: Work mode is not foreground dispatch, ignore PROCESS_WHEN_TO_FRONT");
                                     synchronized (i) {
                                         h = false;
                                         break;
@@ -881,16 +881,16 @@ public class cn implements cm.a {
                                     if (obj instanceof JSONObject) {
                                         cx cxVarA2 = cx.a((JSONObject) obj);
                                         if (!a(cxVarA2)) {
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: invalid config data, just stop dispatch.");
+                                            UMRTLog.i("MobclickRT", "[ncc]: invalid config data, just stop dispatch.");
                                             return;
                                         }
                                         if (cxVarA2.d() == 1) {
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: config status is 1, not allow dispatch when foreground");
+                                            UMRTLog.i("MobclickRT", "[ncc]: config status is 1, not allow dispatch when foreground");
                                             return;
                                         }
                                         cx.a aVarE2 = cxVarA2.e();
                                         if (aVarE2 == null) {
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: config data is null when to foreground");
+                                            UMRTLog.i("MobclickRT", "[ncc]: config data is null when to foreground");
                                             return;
                                         }
                                         List<cx.b> listE = aVarE2.e();
@@ -909,28 +909,28 @@ public class cn implements cm.a {
                                             a(aVarE2, arrayList2);
                                             return;
                                         }
-                                        UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: targets is empty when to foreground");
+                                        UMRTLog.i("MobclickRT", "[ncc]: targets is empty when to foreground");
                                         return;
                                     }
                                     return;
                                 } catch (Throwable th6) {
-                                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: PROCESS_WHEN_TO_FRONT error: " + th6.getMessage());
+                                    UMRTLog.e("MobclickRT", "[ncc]: PROCESS_WHEN_TO_FRONT error: " + th6.getMessage());
                                     return;
                                 }
                             case 204:
                                 try {
-                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv PROCESS_ONE_TASK msg.");
+                                    UMRTLog.i("MobclickRT", "[ncc]: recv PROCESS_ONE_TASK msg.");
                                     if (obj instanceof JSONObject) {
                                         JSONObject jSONObject5 = (JSONObject) obj;
                                         int iOptInt = jSONObject5.optInt("currentIndex", 0);
                                         JSONObject jSONObjectOptJSONObject4 = jSONObject5.optJSONObject("batchParams");
                                         if (jSONObjectOptJSONObject4 == null) {
-                                            UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: batchParams is null");
+                                            UMRTLog.e("MobclickRT", "[ncc]: batchParams is null");
                                             return;
                                         }
                                         String strOptString2 = jSONObjectOptJSONObject4.optString("batchId");
                                         int iOptInt2 = jSONObjectOptJSONObject4.optInt("appsPerBatch", 1);
-                                        int iOptInt3 = jSONObjectOptJSONObject4.optInt(cl.l, 20);
+                                        int iOptInt3 = jSONObjectOptJSONObject4.optInt("batchInterval", 20);
                                         int iOptInt4 = jSONObjectOptJSONObject4.optInt("processedCount", 0);
                                         int iOptInt5 = jSONObjectOptJSONObject4.optInt("currentBatchIndex", 0);
                                         int iOptInt6 = jSONObjectOptJSONObject4.optInt("totalBatches", 1);
@@ -938,7 +938,7 @@ public class cn implements cm.a {
                                         if (arrayList3 != null && !arrayList3.isEmpty()) {
                                             if (iOptInt >= arrayList3.size()) {
                                                 i4 = iOptInt4;
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: batch processing completed for batchId: " + strOptString2);
+                                                UMRTLog.i("MobclickRT", "[ncc]: batch processing completed for batchId: " + strOptString2);
                                                 c.remove(strOptString2);
                                                 int i5 = iOptInt5 + 1;
                                                 if (i5 < iOptInt6) {
@@ -953,7 +953,7 @@ public class cn implements cm.a {
                                                         JSONObject jSONObject6 = new JSONObject();
                                                         jSONObject6.put("batchId", string);
                                                         jSONObject6.put("appsPerBatch", iOptInt2);
-                                                        jSONObject6.put(cl.l, iOptInt3);
+                                                        jSONObject6.put("batchInterval", iOptInt3);
                                                         jSONObject6.put("processedCount", 0);
                                                         jSONObject6.put("currentBatchIndex", i5);
                                                         jSONObject6.put("totalBatches", iOptInt6);
@@ -963,7 +963,7 @@ public class cn implements cm.a {
                                                         cm.a(UMGlobalContext.getAppContext(), 204, a(), jSONObject7, ((long) iOptInt3) * 1000);
                                                     }
                                                 } else {
-                                                    UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: all batches processing completed");
+                                                    UMRTLog.i("MobclickRT", "[ncc]: all batches processing completed");
                                                     if (f == 1) {
                                                         synchronized (i) {
                                                             h = false;
@@ -979,11 +979,11 @@ public class cn implements cm.a {
                                             jSONObjectOptJSONObject4.put("processedCount", i4 + 1);
                                             if (jSONObjectB3 != null) {
                                                 String strOptString3 = jSONObjectB3.optString("actionName");
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: processing task: " + strOptString3);
+                                                UMRTLog.i("MobclickRT", "[ncc]: processing task: " + strOptString3);
                                                 a(UMGlobalContext.getAppContext(), strOptString3, jSONObjectB3);
                                                 b(strOptString3);
                                             } else {
-                                                UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: action " + coVar.a() + " not allowed to execute, skip");
+                                                UMRTLog.i("MobclickRT", "[ncc]: action " + coVar.a() + " not allowed to execute, skip");
                                             }
                                             int i7 = iOptInt + 1;
                                             if (i7 < arrayList3.size()) {
@@ -993,7 +993,7 @@ public class cn implements cm.a {
                                                 cm.a(UMGlobalContext.getAppContext(), 204, a(), jSONObject8);
                                                 return;
                                             }
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: batch processing completed for batchId: " + strOptString2);
+                                            UMRTLog.i("MobclickRT", "[ncc]: batch processing completed for batchId: " + strOptString2);
                                             c.remove(strOptString2);
                                             int i8 = iOptInt5 + 1;
                                             if (i8 < iOptInt6) {
@@ -1008,7 +1008,7 @@ public class cn implements cm.a {
                                                     JSONObject jSONObject9 = new JSONObject();
                                                     jSONObject9.put("batchId", string2);
                                                     jSONObject9.put("appsPerBatch", iOptInt2);
-                                                    jSONObject9.put(cl.l, iOptInt3);
+                                                    jSONObject9.put("batchInterval", iOptInt3);
                                                     jSONObject9.put("processedCount", 0);
                                                     jSONObject9.put("currentBatchIndex", i8);
                                                     jSONObject9.put("totalBatches", iOptInt6);
@@ -1020,7 +1020,7 @@ public class cn implements cm.a {
                                                 }
                                                 return;
                                             }
-                                            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: all batches processing completed");
+                                            UMRTLog.i("MobclickRT", "[ncc]: all batches processing completed");
                                             if (f == 1) {
                                                 synchronized (i) {
                                                     h = false;
@@ -1030,12 +1030,12 @@ public class cn implements cm.a {
                                             }
                                             return;
                                         }
-                                        UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: actions is null or empty for batchId: " + strOptString2);
+                                        UMRTLog.e("MobclickRT", "[ncc]: actions is null or empty for batchId: " + strOptString2);
                                         return;
                                     }
                                     return;
                                 } catch (Throwable th7) {
-                                    UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: PROCESS_ONE_TASK error: " + th7.getMessage());
+                                    UMRTLog.e("MobclickRT", "[ncc]: PROCESS_ONE_TASK error: " + th7.getMessage());
                                     if (f == 1) {
                                         synchronized (i) {
                                             h = false;
@@ -1049,11 +1049,11 @@ public class cn implements cm.a {
                         }
                 }
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "[ncc]: recv GET_UMC_PROCESS_RESULT msg.");
+            UMRTLog.i("MobclickRT", "[ncc]: recv GET_UMC_PROCESS_RESULT msg.");
             a aVar = (a) obj;
             JSONObject jSONObjectA = a(aVar.a, aVar.b, aVar.c);
             if (jSONObjectA != null) {
-                aw.a(new ar(ar.b, jSONObjectA), 0L, TimeUnit.SECONDS);
+                aw.a(new ar("https://cnlogs.umeng.com/ext_event", jSONObjectA), 0L, TimeUnit.SECONDS);
             }
         } catch (Throwable unused4) {
         }

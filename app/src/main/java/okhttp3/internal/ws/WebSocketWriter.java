@@ -52,7 +52,7 @@ public final class WebSocketWriter implements Closeable {
             this.random.nextBytes(this.maskKey);
             C0504 c0504 = this.sinkBuffer;
             byte[] bArr = this.maskKey;
-            c0504.getClass();
+            
             c0504.write(bArr, 0, bArr.length);
             if (iMo1870 > 0) {
                 C0504 c0505 = this.sinkBuffer;
@@ -66,7 +66,7 @@ public final class WebSocketWriter implements Closeable {
         } else {
             this.sinkBuffer.m1796(iMo1870);
             C0504 c0506 = this.sinkBuffer;
-            c0506.getClass();
+            
             c0539.mo1878(c0539.mo1870(), c0506);
         }
         this.sink.flush();
@@ -123,14 +123,14 @@ public final class WebSocketWriter implements Closeable {
                 this.messageDeflater = messageDeflater;
             }
             messageDeflater.deflate(this.messageBuffer);
-            i2 = i | Opcodes.CHECKCAST;
+            i2 = i | 192;
         }
         long j = this.messageBuffer.f2172;
         this.sinkBuffer.m1796(i2);
         int i3 = this.isClient ? 128 : 0;
         if (j <= 125) {
             this.sinkBuffer.m1796(i3 | ((int) j));
-        } else if (j <= WebSocketProtocol.PAYLOAD_SHORT_MAX) {
+        } else if (j <= 65535L) {
             this.sinkBuffer.m1796(i3 | 126);
             this.sinkBuffer.m1801((int) j);
         } else {
@@ -141,7 +141,7 @@ public final class WebSocketWriter implements Closeable {
             this.random.nextBytes(this.maskKey);
             C0504 c0504 = this.sinkBuffer;
             byte[] bArr = this.maskKey;
-            c0504.getClass();
+            
             c0504.write(bArr, 0, bArr.length);
             if (j > 0) {
                 this.messageBuffer.m1782(this.maskCursor);

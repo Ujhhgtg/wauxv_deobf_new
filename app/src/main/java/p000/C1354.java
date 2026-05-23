@@ -6,11 +6,10 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Handler;
 import android.os.Looper;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲈᤞᲁᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -28,7 +27,7 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
     public final Object invoke() {
         List list;
         int i = this.f4850;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         switch (i) {
             case 0:
                 C1359 c1359 = C1359.f4859;
@@ -37,11 +36,11 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 C1361.f4861.m2548("#FF1E1E1E");
                 C1358.f4858.m2548("#FF1E1E1E");
                 C1360.f4860.m2548("#FFF7F7F7");
-                return c3497;
+                return unit;
             case 1:
                 C1400.f5056.m2548("E HH:mm");
                 C1399.f5055.m2545(EnumC1398.f5051.f5054);
-                return c3497;
+                return unit;
             case 2:
                 return new Handler(Looper.getMainLooper());
             case 3:
@@ -49,12 +48,12 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 if (file.exists()) {
                     C1706 c1706 = C1706.f5798;
                     String strM3043 = AbstractC1328.m3043(file);
-                    c1706.getClass();
+                    
                     list = (List) c1706.m3468(new C0258(C1484.Companion.serializer()), strM3043);
                 } else {
                     C1706 c1707 = C1706.f5798;
                     List list2 = C1486.f5277;
-                    c1707.getClass();
+                    
                     AbstractC1328.m3044(file, c1707.m3469(new C0258(C1484.Companion.serializer()), list2));
                     list = list2;
                 }
@@ -66,7 +65,7 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 }
                 return AbstractC0744.m2201(arrayList, new C0171(9));
             case 4:
-                C0707 c0707M4527 = AbstractC2519.m4527(String.class);
+                C0707 c0707M4527 = AbstractC2519.classToKClass(String.class);
                 C2839 c2839 = C2839.f9108;
                 return new C2517(c0707M4527);
             case 5:
@@ -90,7 +89,7 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 C1494.f5289.m2548("#FFD8D8D8");
                 C1495.f5290.m2548("#FFE0E0E0");
                 C1496.f5291.m2548("#FF666666");
-                return c3497;
+                return unit;
             case 9:
                 C1497 c1498 = C1497.f5292;
                 String[] strArr3 = AbstractC1574.f5469;
@@ -106,34 +105,34 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 C1494.f5289.m2548("#FF95A0B8");
                 C1495.f5290.m2548("#FFA8B2C9");
                 C1496.f5291.m2548("#FFFFFFFF");
-                return c3497;
+                return unit;
             case 10:
                 C1511 c1511 = C1511.f5332;
                 String[] strArr4 = AbstractC1574.f5469;
                 c1511.m2548("#28C445");
                 C1512.f5333.m2548("退出了此群");
-                return c3497;
+                return unit;
             case 11:
-                int i2 = AbstractC1745.f5844;
-                C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.m4527(Intent.class));
+                int i2 = 0;
+                C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.classToKClass(Intent.class));
                 c1744M2482.m3493(true);
                 C1299 c1299M3490 = c1744M2482.m3490();
                 c1299M3490.f6370 = "mExtras";
-                return (C1315) AbstractC0744.m2192(c1299M3490.m3014());
-            case Opcodes.FCONST_1 /* 12 */:
+                return (C1315) AbstractC0744.m2192(c1299M3490.resolve());
+            case 12 /* 12 */:
                 C1536.f5377.m2547(C1537.f5379);
-                return c3497;
+                return unit;
             case 13:
                 return C1731.f5827;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return C1724.f5819;
             case 15:
                 return C1721.f5817;
             case 16:
                 return C1728.f5825;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return C1710.f5807;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return AbstractC1857.m3624();
             case 19:
                 return Boolean.valueOf(AbstractC0710.m2134(C1747.class.getClassLoader(), "android.os.Build"));
@@ -155,30 +154,30 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                     c2023 = c2024;
                 }
                 c1843.m2544(Float.parseFloat(String.valueOf(c2023.f6776.getText())));
-                return c3497;
-            case Opcodes.ILOAD /* 21 */:
+                return unit;
+            case 21 /* 21 */:
                 C1842.f6135.m2544(31.135633f);
                 C1843.f6136.m2544(121.66625f);
-                return c3497;
-            case Opcodes.LLOAD /* 22 */:
-                return c3497;
-            case Opcodes.FLOAD /* 23 */:
+                return unit;
+            case 22 /* 22 */:
+                return unit;
+            case 23 /* 23 */:
                 Bitmap bitmapCreateBitmap = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
                 bitmapCreateBitmap.eraseColor(0);
                 return bitmapCreateBitmap;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 File file2 = new File(C2041.f6816, "right_bubble.9.png");
                 if (file2.exists()) {
                     return BitmapFactory.decodeFile(file2.getAbsolutePath());
                 }
-                C2041.f6815.getClass();
+                
                 return (Bitmap) C2041.f6817.getValue();
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 File file3 = new File(C2041.f6816, "left_bubble.9.png");
                 if (file3.exists()) {
                     return BitmapFactory.decodeFile(file3.getAbsolutePath());
                 }
-                C2041.f6815.getClass();
+                
                 return (Bitmap) C2041.f6817.getValue();
             case 26:
                 C2038 c2038 = C2038.f6812;
@@ -187,7 +186,7 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 C2040.f6814.m2548("#00000000");
                 C2037.f6811.m2548("#00000000");
                 C2039.f6813.m2548("#00000000");
-                return c3497;
+                return unit;
             case 27:
                 C2045 c2045 = C2045.f6828;
                 String[] strArr7 = AbstractC1574.f5469;
@@ -199,13 +198,13 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 C2044.f6827.m2548("#11000000");
                 C2047.f6830.m2548("#FFD7FAE4");
                 C2048.f6831.m2548("#11000000");
-                return c3497;
+                return unit;
             case 28:
                 C2054 c2054 = C2054.f6841;
                 String[] strArr8 = AbstractC1574.f5469;
                 c2054.m2548("${sendText}喵~");
                 C2055.f6842.m2548("HH:mm:ss");
-                return c3497;
+                return unit;
             default:
                 C2066 c2066 = C2066.f6862;
                 String[] strArr9 = AbstractC1574.f5469;
@@ -220,7 +219,7 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 C2064.f6860.m2545(10);
                 C2069.f6865.m2543(true);
                 C2070.f6866.m2543(true);
-                return c3497;
+                return unit;
         }
     }
 }

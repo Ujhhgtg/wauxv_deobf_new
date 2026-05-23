@@ -81,7 +81,7 @@ final class AllOf extends JSONSchema {
                     jSONSchemaOf = ((Boolean) obj).booleanValue() ? Any.INSTANCE : Any.NOT_ANY;
                 } else {
                     JSONObject jSONObject2 = (JSONObject) obj;
-                    if (!jSONObject2.containsKey("$ref") && !jSONObject2.containsKey(g.y) && type != null) {
+                    if (!jSONObject2.containsKey("$ref") && !jSONObject2.containsKey("type") && type != null) {
                         switch (AnonymousClass1.$SwitchMap$com$alibaba$fastjson2$schema$JSONSchema$Type[type.ordinal()]) {
                             case 1:
                                 jSONSchemaOf = new StringSchema(jSONObject2);

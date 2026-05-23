@@ -279,7 +279,7 @@ public final class Cache implements Closeable, Flushable {
                     DiskLruCache.Snapshot next = this.delegate.next();
                     try {
                         continue;
-                        this.nextUrl = new C2477(next.getSource(0)).mo1773(Long.MAX_VALUE);
+                        this.nextUrl = new C2477(next.getSource(0)).mo1773(9223372036854775807L);
                         AbstractC1458.m3154(next, null);
                         return true;
                     } catch (Throwable th) {
@@ -318,7 +318,7 @@ public final class Cache implements Closeable, Flushable {
     }
 
     public Cache(File file, long j, FileSystem fileSystem) {
-        this.cache = new DiskLruCache(fileSystem, file, VERSION, 2, j, TaskRunner.INSTANCE);
+        this.cache = new DiskLruCache(fileSystem, file, 201105, 2, j, TaskRunner.INSTANCE);
     }
 
     private final void abortQuietly(DiskLruCache.Editor editor) {
@@ -563,7 +563,7 @@ public final class Cache implements Closeable, Flushable {
         public Entry(InterfaceC2786 interfaceC2786) throws IOException {
             try {
                 C2477 c2477 = new C2477(interfaceC2786);
-                String strMo1773 = c2477.mo1773(Long.MAX_VALUE);
+                String strMo1773 = c2477.mo1773(9223372036854775807L);
                 HttpUrl httpUrl = HttpUrl.Companion.parse(strMo1773);
                 if (httpUrl == null) {
                     IOException iOException = new IOException("Cache corruption for ".concat(strMo1773));
@@ -571,21 +571,21 @@ public final class Cache implements Closeable, Flushable {
                     throw iOException;
                 }
                 this.url = httpUrl;
-                this.requestMethod = c2477.mo1773(Long.MAX_VALUE);
+                this.requestMethod = c2477.mo1773(9223372036854775807L);
                 Headers.Builder builder = new Headers.Builder();
                 int int$okhttp = Cache.Companion.readInt$okhttp(c2477);
                 for (int i = 0; i < int$okhttp; i++) {
-                    builder.addLenient$okhttp(c2477.mo1773(Long.MAX_VALUE));
+                    builder.addLenient$okhttp(c2477.mo1773(9223372036854775807L));
                 }
                 this.varyHeaders = builder.build();
-                StatusLine statusLine = StatusLine.Companion.parse(c2477.mo1773(Long.MAX_VALUE));
+                StatusLine statusLine = StatusLine.Companion.parse(c2477.mo1773(9223372036854775807L));
                 this.protocol = statusLine.protocol;
                 this.code = statusLine.code;
                 this.message = statusLine.message;
                 Headers.Builder builder2 = new Headers.Builder();
                 int int$okhttp2 = Cache.Companion.readInt$okhttp(c2477);
                 for (int i2 = 0; i2 < int$okhttp2; i2++) {
-                    builder2.addLenient$okhttp(c2477.mo1773(Long.MAX_VALUE));
+                    builder2.addLenient$okhttp(c2477.mo1773(9223372036854775807L));
                 }
                 String str = SENT_MILLIS;
                 String str2 = builder2.get(str);
@@ -597,11 +597,11 @@ public final class Cache implements Closeable, Flushable {
                 this.receivedResponseMillis = str4 != null ? Long.parseLong(str4) : 0L;
                 this.responseHeaders = builder2.build();
                 if (isHttps()) {
-                    String strMo1774 = c2477.mo1773(Long.MAX_VALUE);
+                    String strMo1774 = c2477.mo1773(9223372036854775807L);
                     if (strMo1774.length() > 0) {
                         throw new IOException("expected \"\" but was \"" + strMo1774 + '\"');
                     }
-                    this.handshake = Handshake.Companion.get(!c2477.mo1766() ? TlsVersion.Companion.forJavaName(c2477.mo1773(Long.MAX_VALUE)) : TlsVersion.SSL_3_0, CipherSuite.Companion.forJavaName(c2477.mo1773(Long.MAX_VALUE)), readCertificateList(c2477), readCertificateList(c2477));
+                    this.handshake = Handshake.Companion.get(!c2477.mo1766() ? TlsVersion.Companion.forJavaName(c2477.mo1773(9223372036854775807L)) : TlsVersion.SSL_3_0, CipherSuite.Companion.forJavaName(c2477.mo1773(9223372036854775807L)), readCertificateList(c2477), readCertificateList(c2477));
                 } else {
                     this.handshake = null;
                 }

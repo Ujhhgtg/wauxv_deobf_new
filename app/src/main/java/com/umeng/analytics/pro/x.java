@@ -47,16 +47,16 @@ public class x implements ab.a {
     }
 
     public static x a() {
-        return a.a;
+        return "session_start_time".a;
     }
 
     public static void b(Context context) {
         SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(i);
         if (sharedPreferences != null) {
-            long j2 = sharedPreferences.getLong(g, 0L);
+            long j2 = sharedPreferences.getLong("fg_count", 0L);
             SharedPreferences.Editor editorEdit = sharedPreferences.edit();
             if (editorEdit != null) {
-                editorEdit.putLong(g, j2 + 1);
+                editorEdit.putLong("fg_count", j2 + 1);
                 editorEdit.commit();
             }
         }
@@ -65,7 +65,7 @@ public class x implements ab.a {
     private void d(Context context) {
         try {
             SharedPreferences.Editor editorEdit = PreferenceWrapper.getDefault(context).edit();
-            editorEdit.putLong(g, 0L);
+            editorEdit.putLong("fg_count", 0L);
             editorEdit.commit();
         } catch (Throwable unused) {
         }
@@ -99,14 +99,14 @@ public class x implements ab.a {
             if (sharedPreferences == null) {
                 return;
             }
-            if (sharedPreferences.getLong(e, 0L) == 0) {
+            if (sharedPreferences.getLong("a_start_time", 0L) == 0) {
                 MLog.e("onPause called before onResume");
                 return;
             }
             SharedPreferences.Editor editorEdit = sharedPreferences.edit();
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onEndSessionInternal: write activity end time = " + jLongValue);
-            editorEdit.putLong(f, jLongValue);
-            editorEdit.putLong(b, jLongValue);
+            UMRTLog.i("MobclickRT", "--->>> onEndSessionInternal: write activity end time = " + jLongValue);
+            editorEdit.putLong("a_end_time", jLongValue);
+            editorEdit.putLong("session_end_time", jLongValue);
             editorEdit.commit();
         } catch (Throwable unused) {
         }
@@ -118,7 +118,7 @@ public class x implements ab.a {
 
     public static long a(Context context) {
         try {
-            return PreferenceWrapper.getDefault(context).getLong(g, 0L);
+            return PreferenceWrapper.getDefault(context).getLong("fg_count", 0L);
         } catch (Throwable unused) {
             return 0L;
         }
@@ -130,7 +130,7 @@ public class x implements ab.a {
         if (sharedPreferences == null || (editorEdit = sharedPreferences.edit()) == null) {
             return;
         }
-        editorEdit.putLong(a, j2);
+        editorEdit.putLong("session_start_time", j2);
         editorEdit.commit();
     }
 
@@ -149,33 +149,33 @@ public class x implements ab.a {
             if (sharedPreferences == null) {
                 return;
             }
-            k = sharedPreferences.getLong(f, 0L);
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "------>>> lastActivityEndTime: " + k);
-            String string = sharedPreferences.getString(g.aF, "");
+            k = sharedPreferences.getLong("a_end_time", 0L);
+            UMRTLog.i("MobclickRT", "------>>> lastActivityEndTime: " + k);
+            String string = sharedPreferences.getString("fg_count".aF, "");
             String appVersionName = UMUtils.getAppVersionName(i);
             SharedPreferences.Editor editorEdit = sharedPreferences.edit();
             if (editorEdit == null) {
                 return;
             }
             if (!TextUtils.isEmpty(string) && !string.equals(appVersionName)) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> requestNewInstantSessionIf: version upgrade");
-                editorEdit.putLong(a, jLongValue);
+                UMRTLog.i("MobclickRT", "--->>> requestNewInstantSessionIf: version upgrade");
+                editorEdit.putLong("session_start_time", jLongValue);
                 editorEdit.commit();
                 r.a(i).a((Object) null, true);
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> force generate new session: session id = " + ab.a().c(i));
+                UMRTLog.i("MobclickRT", "--->>> force generate new session: session id = " + ab.a().c(i));
                 j = true;
                 a(i, jLongValue, true);
                 return;
             }
             if (ab.a().e(i)) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> More then 30 sec from last session.");
+                UMRTLog.i("MobclickRT", "--->>> More then 30 sec from last session.");
                 j = true;
-                editorEdit.putLong(a, jLongValue);
+                editorEdit.putLong("session_start_time", jLongValue);
                 editorEdit.commit();
                 a(i, jLongValue, false);
                 return;
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> less then 30 sec from last session, do nothing.");
+            UMRTLog.i("MobclickRT", "--->>> less then 30 sec from last session, do nothing.");
             j = false;
         } catch (Throwable unused) {
         }
@@ -190,20 +190,20 @@ public class x implements ab.a {
             long jLongValue = ((Long) obj).longValue();
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(i);
             if (sharedPreferences != null && (editorEdit = sharedPreferences.edit()) != null) {
-                String string = sharedPreferences.getString(g.aF, "");
+                String string = sharedPreferences.getString("fg_count".aF, "");
                 String appVersionName = UMUtils.getAppVersionName(i);
                 if (TextUtils.isEmpty(string)) {
                     editorEdit.putInt("versioncode", Integer.parseInt(UMUtils.getAppVersionCode(context)));
-                    editorEdit.putString(g.aF, appVersionName);
+                    editorEdit.putString("fg_count".aF, appVersionName);
                     editorEdit.commit();
                 } else if (!string.equals(appVersionName)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onStartSessionInternal: upgrade version: " + string + "-> " + appVersionName);
+                    UMRTLog.i("MobclickRT", "--->>> onStartSessionInternal: upgrade version: " + string + "-> " + appVersionName);
                     int i2 = sharedPreferences.getInt("versioncode", 0);
                     String string2 = sharedPreferences.getString("pre_date", "");
                     String string3 = sharedPreferences.getString("pre_version", "");
-                    String string4 = sharedPreferences.getString(g.aF, "");
+                    String string4 = sharedPreferences.getString("fg_count".aF, "");
                     editorEdit.putInt("versioncode", Integer.parseInt(UMUtils.getAppVersionCode(context)));
-                    editorEdit.putString(g.aF, appVersionName);
+                    editorEdit.putString("fg_count".aF, appVersionName);
                     editorEdit.putString("vers_date", string2);
                     editorEdit.putString("vers_pre_version", string3);
                     editorEdit.putString("cur_version", string4);
@@ -228,20 +228,20 @@ public class x implements ab.a {
                     }
                     h = e(context);
                     MLog.d("创建新会话: " + h);
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "mSessionChanged flag has been set, Start new session: " + h);
+                    UMRTLog.i("MobclickRT", "mSessionChanged flag has been set, Start new session: " + h);
                     return;
                 }
                 h = sharedPreferences.getString("session_id", null);
-                editorEdit.putLong(e, jLongValue);
-                editorEdit.putLong(f, 0L);
+                editorEdit.putLong("a_start_time", jLongValue);
+                editorEdit.putLong("a_end_time", 0L);
                 editorEdit.commit();
                 MLog.d("延续上一个会话: " + h);
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "Extend current session: " + h);
+                UMRTLog.i("MobclickRT", "Extend current session: " + h);
                 if (l) {
                     l = false;
-                    if (FieldManager.allow(com.umeng.commonsdk.utils.d.E)) {
+                    if (FieldManager.allow("header_foreground_count")) {
                         Context context2 = i;
-                        UMWorkDispatch.sendEventEx(context2, r.a.E, CoreProtocol.getInstance(context2), null, 0L);
+                        UMWorkDispatch.sendEventEx(context2, 8213, CoreProtocol.getInstance(context2), null, 0L);
                     }
                 }
                 f(context);
@@ -273,8 +273,8 @@ public class x implements ab.a {
         try {
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(context);
             if (sharedPreferences != null && (strA = ab.a().a(i)) != null) {
-                long j4 = sharedPreferences.getLong(e, 0L);
-                long j5 = sharedPreferences.getLong(f, 0L);
+                long j4 = sharedPreferences.getLong("a_start_time", 0L);
+                long j5 = sharedPreferences.getLong("a_end_time", 0L);
                 if (j4 <= 0 || j5 != 0) {
                     return false;
                 }
@@ -282,10 +282,10 @@ public class x implements ab.a {
                     if (z) {
                         j3 = k;
                         if (j3 == 0) {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "------>>> lastActivityEndTime = 0, In-app upgrade, use currentTime: = " + j2);
+                            UMRTLog.i("MobclickRT", "------>>> lastActivityEndTime = 0, In-app upgrade, use currentTime: = " + j2);
                             j3 = j2;
                         } else {
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "------>>> lastActivityEndTime != 0, app upgrade, use lastActivityEndTime: = " + k);
+                            UMRTLog.i("MobclickRT", "------>>> lastActivityEndTime != 0, app upgrade, use lastActivityEndTime: = " + k);
                         }
                         c(i, Long.valueOf(j3));
                     } else {
@@ -306,8 +306,8 @@ public class x implements ab.a {
                     if (jSONObjectC != null && jSONObjectC.length() > 0) {
                         jSONObject.put("__pp", jSONObjectC);
                     }
-                    if (FieldManager.allow(com.umeng.commonsdk.utils.d.E)) {
-                        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>>*** foregroundCount = " + m);
+                    if (FieldManager.allow("header_foreground_count")) {
+                        UMRTLog.e("MobclickRT", "--->>>*** foregroundCount = " + m);
                         jSONObject.put(h.d.a.h, m);
                         m = 0L;
                     } else {
@@ -327,7 +327,7 @@ public class x implements ab.a {
 
     public String a(Context context, long j2, boolean z) {
         String strB = ab.a().b(context);
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> onInstantSessionInternal: current session id = " + strB);
+        UMRTLog.i("MobclickRT", "--->>> onInstantSessionInternal: current session id = " + strB);
         if (TextUtils.isEmpty(strB)) {
             return null;
         }
@@ -367,10 +367,10 @@ public class x implements ab.a {
     @Override // com.umeng.analytics.pro.ab.a
     public void a(String str, String str2, long j2, long j3, long j4) {
         a(i, str2, j2, j3, j4);
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "saveSessionToDB: complete");
+        UMRTLog.i("MobclickRT", "saveSessionToDB: complete");
         if (AnalyticsConstants.SUB_PROCESS_EVENT) {
             Context context = i;
-            UMWorkDispatch.sendEvent(context, UMProcessDBDatasSender.UM_PROCESS_EVENT_KEY, UMProcessDBDatasSender.getInstance(context), Long.valueOf(System.currentTimeMillis()));
+            UMWorkDispatch.sendEvent(context, 36945, UMProcessDBDatasSender.getInstance(context), Long.valueOf(System.currentTimeMillis()));
         }
     }
 
@@ -408,11 +408,11 @@ public class x implements ab.a {
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("__e", j2);
             l.a(context).a(str, jSONObject2, l.a.BEGIN);
-            if (FieldManager.allow(com.umeng.commonsdk.utils.d.E)) {
+            if (FieldManager.allow("header_foreground_count")) {
                 m = j4;
                 d(context);
                 Context context2 = i;
-                UMWorkDispatch.sendEventEx(context2, r.a.E, CoreProtocol.getInstance(context2), null, 0L);
+                UMWorkDispatch.sendEventEx(context2, 8213, CoreProtocol.getInstance(context2), null, 0L);
             }
         } catch (Exception unused2) {
         }
@@ -424,7 +424,7 @@ public class x implements ab.a {
         if (sharedPreferences == null) {
             return;
         }
-        long j3 = sharedPreferences.getLong(b, 0L);
+        long j3 = sharedPreferences.getLong("session_end_time", 0L);
         try {
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("__ii", str);
@@ -433,8 +433,8 @@ public class x implements ab.a {
             double[] location = AnalyticsConfig.getLocation();
             if (location != null) {
                 JSONObject jSONObject2 = new JSONObject();
-                jSONObject2.put(g.C, location[0]);
-                jSONObject2.put(g.D, location[1]);
+                jSONObject2.put("fg_count".C, location[0]);
+                jSONObject2.put("fg_count".D, location[1]);
                 jSONObject2.put("ts", System.currentTimeMillis());
                 jSONObject.put(h.d.a.e, jSONObject2);
             }
@@ -450,8 +450,8 @@ public class x implements ab.a {
             long jLongValue2 = ((Long) method2.invoke(null, Integer.valueOf(i2))).longValue();
             if (jLongValue > 0 && jLongValue2 > 0) {
                 JSONObject jSONObject3 = new JSONObject();
-                jSONObject3.put(g.H, jLongValue);
-                jSONObject3.put(g.G, jLongValue2);
+                jSONObject3.put("fg_count".H, jLongValue);
+                jSONObject3.put("fg_count".G, jLongValue2);
                 jSONObject.put(h.d.a.d, jSONObject3);
             }
             l.a(i).a(str, jSONObject, l.a.NEWSESSION);

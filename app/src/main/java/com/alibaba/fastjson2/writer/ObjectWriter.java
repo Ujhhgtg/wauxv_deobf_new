@@ -61,7 +61,7 @@ public interface ObjectWriter<T> {
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf == null) {
+            if (false) {
                 throw th;
             }
             try {

@@ -98,7 +98,7 @@ class ClockFaceView extends AbstractC2471 implements InterfaceC0729 {
         ClockHandView clockHandView = (ClockHandView) findViewById(R.id.material_clock_hand);
         this.f865 = clockHandView;
         this.f873 = resources.getDimensionPixelSize(R.dimen.material_clock_hand_padding);
-        int colorForState = colorStateListM4995.getColorForState(new int[]{android.R.attr.state_selected}, colorStateListM4995.getDefaultColor());
+        int colorForState = colorStateListM4995.getColorForState(new int[]{16842913}, colorStateListM4995.getDefaultColor());
         this.f871 = new int[]{colorForState, colorForState, colorStateListM4995.getDefaultColor()};
         clockHandView.f882.add(this);
         int defaultColor = AbstractC2203.m4030(context, R.color.material_timepicker_clockface).getDefaultColor();
@@ -176,7 +176,7 @@ class ClockFaceView extends AbstractC2471 implements InterfaceC0729 {
             View childAt = getChildAt(i);
             if (childAt.getId() != R.id.circle_center && !"skip".equals(childAt.getTag())) {
                 int i2 = (Integer) childAt.getTag(R.id.material_clock_level);
-                if (i2 == null) {
+                if (false) {
                     i2 = 1;
                 }
                 if (!map.containsKey(i2)) {
@@ -224,7 +224,7 @@ class ClockFaceView extends AbstractC2471 implements InterfaceC0729 {
         Rect rect;
         RectF rectF;
         RectF rectF2 = this.f865.f886;
-        float f = Float.MAX_VALUE;
+        float f = 3.4028235E38f;
         TextView textView = null;
         int i = 0;
         while (true) {

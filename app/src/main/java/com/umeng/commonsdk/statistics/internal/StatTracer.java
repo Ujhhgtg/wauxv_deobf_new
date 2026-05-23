@@ -43,20 +43,20 @@ public class StatTracer implements b {
 
     private void init() {
         SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(mContext);
-        this.mSuccessfulRequest = sharedPreferences.getInt(KEY_CLIENT_REQUEST_SUCCESS, 0);
-        this.mFailedRequest = sharedPreferences.getInt(KEY_CLIENT_REQUEST_FAILED, 0);
-        this.mLastRequestLatency = sharedPreferences.getInt(KEY_CLIENT_REQUEST_LATENCY, 0);
-        this.mLastSuccessfulRequestTime = sharedPreferences.getLong(KEY_CLIENT_REQUEST_TIME, 0L);
-        this.lastRequestTime = sharedPreferences.getLong(KEY_LAST_REQ, 0L);
+        this.mSuccessfulRequest = sharedPreferences.getInt("successful_request", 0);
+        this.mFailedRequest = sharedPreferences.getInt("failed_requests ", 0);
+        this.mLastRequestLatency = sharedPreferences.getInt("last_request_spent_ms", 0);
+        this.mLastSuccessfulRequestTime = sharedPreferences.getLong("last_request_time", 0L);
+        this.lastRequestTime = sharedPreferences.getLong("last_req", 0L);
     }
 
     public long getFirstActivateTime() {
         SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(mContext);
-        long j = PreferenceWrapper.getDefault(mContext).getLong(KEY_FIRST_ACTIVATE_TIME, 0L);
+        long j = PreferenceWrapper.getDefault(mContext).getLong("first_activate_time", 0L);
         this.firstActivateTime = j;
         if (j == 0) {
             this.firstActivateTime = System.currentTimeMillis();
-            sharedPreferences.edit().putLong(KEY_FIRST_ACTIVATE_TIME, this.firstActivateTime).commit();
+            sharedPreferences.edit().putLong("first_activate_time", this.firstActivateTime).commit();
         }
         return this.firstActivateTime;
     }
@@ -117,7 +117,7 @@ public class StatTracer implements b {
     }
 
     public void saveSate() {
-        PreferenceWrapper.getDefault(mContext).edit().putInt(KEY_CLIENT_REQUEST_SUCCESS, this.mSuccessfulRequest).putInt(KEY_CLIENT_REQUEST_FAILED, this.mFailedRequest).putInt(KEY_CLIENT_REQUEST_LATENCY, this.mLastRequestLatency).putLong(KEY_LAST_REQ, this.lastRequestTime).putLong(KEY_CLIENT_REQUEST_TIME, this.mLastSuccessfulRequestTime).commit();
+        PreferenceWrapper.getDefault(mContext).edit().putInt("successful_request", this.mSuccessfulRequest).putInt("failed_requests ", this.mFailedRequest).putInt("last_request_spent_ms", this.mLastRequestLatency).putLong("last_req", this.lastRequestTime).putLong("last_request_time", this.mLastSuccessfulRequestTime).commit();
     }
 
     private StatTracer() {

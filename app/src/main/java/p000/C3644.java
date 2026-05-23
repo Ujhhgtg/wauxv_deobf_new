@@ -63,7 +63,7 @@ public final class C3644 extends WindowInsetsAnimation$Callback {
     public final WindowInsetsAnimation.Bounds onStart(WindowInsetsAnimation windowInsetsAnimation, WindowInsetsAnimation.Bounds bounds) {
         m5239(windowInsetsAnimation);
         C2825 c2825Mo2022 = this.f11407.mo2022(new C2825(bounds));
-        c2825Mo2022.getClass();
+        
         AbstractC0084.m1046();
         return AbstractC0084.m1041(((C1646) c2825Mo2022.f9072).m3377(), ((C1646) c2825Mo2022.f9073).m3377());
     }

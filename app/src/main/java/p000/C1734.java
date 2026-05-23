@@ -41,7 +41,7 @@ public final class C1734 extends AbstractC0843 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final Object mo1198(Object obj) {
         this.f5840 = obj;
-        this.f5842 |= Integer.MIN_VALUE;
+        this.f5842 |= -2147483648;
         return C0408.m1601(this.f5841, null, this);
     }
 }

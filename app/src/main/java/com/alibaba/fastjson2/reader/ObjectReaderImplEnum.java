@@ -265,7 +265,7 @@ public final class ObjectReaderImplEnum implements ObjectReader {
                 }
             } else if (this.intValues == null || !jSONReader.isInt()) {
                 long valueHashCode = jSONReader.readValueHashCode();
-                if (valueHashCode == Fnv.MAGIC_HASH_CODE) {
+                if (valueHashCode == -3750763034362895579L) {
                     return null;
                 }
                 Enum enumByHashCode = getEnumByHashCode(valueHashCode);

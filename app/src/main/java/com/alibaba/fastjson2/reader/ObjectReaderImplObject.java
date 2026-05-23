@@ -104,14 +104,14 @@ public final class ObjectReaderImplObject extends ObjectReaderPrimitive {
                             switch (cCurrent) {
                                 case '0':
                                 case '1':
-                                case Opcodes.AALOAD /* 50 */:
-                                case Opcodes.BALOAD /* 51 */:
+                                case 50 /* 50 */:
+                                case 51 /* 51 */:
                                 case '4':
-                                case Opcodes.SALOAD /* 53 */:
-                                case Opcodes.ISTORE /* 54 */:
-                                case Opcodes.LSTORE /* 55 */:
-                                case Opcodes.FSTORE /* 56 */:
-                                case Opcodes.DSTORE /* 57 */:
+                                case 53 /* 53 */:
+                                case 54 /* 54 */:
+                                case 55 /* 55 */:
+                                case 56 /* 56 */:
+                                case 57 /* 57 */:
                                     break;
                                 default:
                                     throw new JSONException(jSONReader.info());
@@ -212,10 +212,10 @@ public final class ObjectReaderImplObject extends ObjectReaderPrimitive {
                 }
             }
             char cCurrent3 = jSONReader.current();
-            if (cCurrent3 == '\"' || cCurrent3 == c2) {
+            if (cCurrent3 == '\"' || cCurrent3 == 39) {
                 string = jSONReader.readString();
             } else {
-                if (cCurrent3 == c) {
+                if (cCurrent3 == 43) {
                     string = jSONReader.readNumber();
                 } else if (cCurrent3 != 'S') {
                     if (cCurrent3 == '[') {
@@ -231,14 +231,14 @@ public final class ObjectReaderImplObject extends ObjectReaderPrimitive {
                             switch (cCurrent3) {
                                 case '0':
                                 case '1':
-                                case Opcodes.AALOAD /* 50 */:
-                                case Opcodes.BALOAD /* 51 */:
+                                case 50 /* 50 */:
+                                case 51 /* 51 */:
                                 case '4':
-                                case Opcodes.SALOAD /* 53 */:
-                                case Opcodes.ISTORE /* 54 */:
-                                case Opcodes.LSTORE /* 55 */:
-                                case Opcodes.FSTORE /* 56 */:
-                                case Opcodes.DSTORE /* 57 */:
+                                case 53 /* 53 */:
+                                case 54 /* 54 */:
+                                case 55 /* 55 */:
+                                case 56 /* 56 */:
+                                case 57 /* 57 */:
                                     break;
                                 default:
                                     throw new JSONException(jSONReader.info());

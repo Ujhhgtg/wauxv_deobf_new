@@ -126,13 +126,13 @@ public final /* synthetic */ class C1931 implements InterfaceC1429 {
             case 11:
                 zM4087 = AbstractC1937.m3744(this.f6378, (Set) obj, (Executable) obj2);
                 return Boolean.valueOf(zM4087);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 zM4087 = AbstractC1937.m3745(this.f6378, (Set) obj, (Executable) obj2);
                 return Boolean.valueOf(zM4087);
             case 13:
                 zM4087 = AbstractC1937.m3736((Set) obj, AbstractC0270.m1389(((Executable) obj2).getExceptionTypes()), this.f6378);
                 return Boolean.valueOf(zM4087);
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 zM3736 = AbstractC1937.m3736((Set) obj, AbstractC0270.m1389(((Executable) obj2).getExceptionTypes()), this.f6378);
                 break;
             case 15:

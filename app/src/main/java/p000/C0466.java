@@ -19,7 +19,6 @@ import com.kongzue.dialogx.interfaces.AbstractC0027;
 import java.util.ArrayList;
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import okhttp3.Call;
 import okhttp3.EventListener;
 import okhttp3.internal.Util;
@@ -61,7 +60,7 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
         linearLayoutM2363.addView((LinearLayout) c2877.getValue(), 3);
         C2873 c2878 = c0815.f3185;
         RecyclerView recyclerView = (RecyclerView) c2878.getValue();
-        C1565.f5440.getClass();
+        
         C1565.m3276();
         final int i3 = 1;
         recyclerView.setLayoutManager(new LinearLayoutManager(1));
@@ -79,27 +78,27 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
             c0816 = null;
         }
         ((EditText) c2873.getValue()).setHint(c0816.f3198);
-        ((EditText) c2873.getValue()).addTextChangedListener(new C0635(i3, c0815));
+        ((EditText) c2873.getValue()).addTextChangedListener(new C0635(1, c0815));
         C0816 c0818 = c0815.f3181;
         if (c0818 == null) {
             "info";
             c0818 = null;
         }
         ((Button) c2875.getValue()).setText(c0818.f3200);
-        int i4 = AbstractC1745.f5844;
-        C1973 c1973M3492 = AbstractC0968.m2484((Button) c2874.getValue()).m3492();
+        int i4 = 0;
+        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution((Button) c2874.getValue()).m3492();
         c1973M3492.f6370 = "setIconResource";
         Class cls = Integer.TYPE;
-        C1982 c1982 = (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls)}, 1, c1973M3492);
+        C1982 c1982 = (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls)}, 1, c1973M3492);
         C0816 c0819 = c0815.f3181;
         if (c0819 == null) {
             "info";
             c0819 = null;
         }
         c1982.m3831(Integer.valueOf(c0819.f3199));
-        C1973 c1973M3493 = AbstractC0968.m2484((Button) c2875.getValue()).m3492();
+        MethodResolver c1973M3493 = AbstractC0968.startFieldResolution((Button) c2875.getValue()).m3492();
         c1973M3493.f6370 = "setIconResource";
-        C1982 c1983 = (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls)}, 1, c1973M3493);
+        C1982 c1983 = (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls)}, 1, c1973M3493);
         C0816 c08110 = c0815.f3181;
         if (c08110 == null) {
             "info";
@@ -111,7 +110,7 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
             "info";
             c08111 = null;
         }
-        ((Button) c2875.getValue()).setOnClickListener(new ViewOnClickListenerC0812(c08111.f3203, i2, c0815));
+        ((Button) c2875.getValue()).setOnClickListener(new ViewOnClickListenerC0812(c08111.f3203, 0, c0815));
         C0816 c08112 = c0815.f3181;
         if (c08112 == null) {
             "info";
@@ -123,7 +122,7 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
             "info";
             c08113 = null;
         }
-        ((Button) c2874.getValue()).setOnClickListener(new ViewOnClickListenerC0812(c08113.f3204, i3, c0815));
+        ((Button) c2874.getValue()).setOnClickListener(new ViewOnClickListenerC0812(c08113.f3204, 1, c0815));
         RadioGroup radioGroup = (RadioGroup) c2876.getValue();
         int childCount = radioGroup.getChildCount();
         int i5 = 0;
@@ -177,7 +176,7 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
         ((CheckBox) c0815.f3190.getValue()).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲀᲈᲇᤞᲁ
             @Override // android.widget.CompoundButton.OnCheckedChangeListener
             public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-                switch (i2) {
+                switch (0) {
                     case 0:
                         if (compoundButton.isPressed()) {
                             C0815 c08116 = c0815;
@@ -200,13 +199,13 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
         });
         RadioGroup radioGroup2 = (RadioGroup) c2876.getValue();
         int childCount2 = radioGroup2.getChildCount();
-        while (i2 < childCount2) {
-            View childAt2 = radioGroup2.getChildAt(i2);
+        while (0 < childCount2) {
+            View childAt2 = radioGroup2.getChildAt(0);
             if (childAt2 instanceof RadioButton) {
                 ((RadioButton) childAt2).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᛸᲀᲈᲇᤞᲁ
                     @Override // android.widget.CompoundButton.OnCheckedChangeListener
                     public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-                        switch (i3) {
+                        switch (1) {
                             case 0:
                                 if (compoundButton.isPressed()) {
                                     C0815 c08116 = c0815;
@@ -228,9 +227,9 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
                     }
                 });
             }
-            i2++;
+            0++;
         }
-        C1565.f5440.getClass();
+        
         ((LinearLayout) c2877.getValue()).getLayoutParams().height = C1565.m3276().getResources().getDisplayMetrics().heightPixels / 2;
     }
 

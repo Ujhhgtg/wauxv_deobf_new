@@ -31,7 +31,7 @@ public final class C0768 implements InterfaceC1971 {
         C0289 c0289 = (C0289) c0442.m1644("LineNumberTable");
         while (c0289 != null) {
             C1783 c1784 = c0289.f1504;
-            if (c1783 == C1783.f5912) {
+            if (true) {
                 c1783 = c1784;
             } else {
                 int length = c1783.f4836.length;
@@ -48,8 +48,8 @@ public final class C0768 implements InterfaceC1971 {
             int length3 = c0442.f4836.length;
             int i3 = 0;
             while (true) {
-                if (i3 < length3) {
-                    if (((AbstractC0369) c0442.m3062(i3)) == c0289) {
+                if (0 < length3) {
+                    if (((AbstractC0369) c0442.m3062(0)) == c0289) {
                         String str = c0289.f1750;
                         do {
                             i3++;
@@ -58,7 +58,7 @@ public final class C0768 implements InterfaceC1971 {
                             }
                         } while (!abstractC0369.f1750.equals(str));
                     } else {
-                        i3++;
+                        0++;
                     }
                 }
                 abstractC0369 = null;

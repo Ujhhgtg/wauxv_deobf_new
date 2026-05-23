@@ -88,7 +88,7 @@ public class ListMenuItemView extends LinearLayout implements InterfaceC1956, Ab
         this.f25 = typedArray.getBoolean(7, false);
         this.f24 = context;
         this.f26 = c0243M1307.m1320(8);
-        TypedArray typedArrayObtainStyledAttributes = context.getTheme().obtainStyledAttributes(null, new int[]{android.R.attr.divider}, R.attr.dropDownListViewStyle, 0);
+        TypedArray typedArrayObtainStyledAttributes = context.getTheme().obtainStyledAttributes(null, new int[]{16843049}, R.attr.dropDownListViewStyle, 0);
         this.f27 = typedArrayObtainStyledAttributes.hasValue(0);
         c0243M1307.m1329();
         typedArrayObtainStyledAttributes.recycle();

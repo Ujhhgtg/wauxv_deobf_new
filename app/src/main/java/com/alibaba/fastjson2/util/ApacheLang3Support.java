@@ -43,7 +43,7 @@ public interface ApacheLang3Support {
             if (jSONReader.nextIfNull()) {
                 return null;
             }
-            if (jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY)) {
+            if (jSONReader.nextIfMatch(-110)) {
                 long typeHashCode = jSONReader.readTypeHashCode();
                 if (typeHashCode != 4645080105124911238L && typeHashCode != -2802985644706367574L && typeHashCode != 8310287657375596772L) {
                     throw new JSONException("not support inputType : " + jSONReader.getString());

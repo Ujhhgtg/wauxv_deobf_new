@@ -107,21 +107,21 @@ public final class C2041 extends AbstractC2867 implements InterfaceC1578 {
             C2041 c2041 = f6815;
             if (numValueOf != null) {
                 int iIntValue = numValueOf.intValue();
-                c2041.getClass();
+                
                 float[] fArr = new float[3];
                 Color.colorToHSV(iIntValue, fArr);
                 fArr[2] = fArr[2] * 0.8f;
                 iHSVToColor = Color.HSVToColor(fArr);
             } else {
-                c2041.getClass();
+                
                 float[] fArr2 = new float[3];
                 Color.colorToHSV(-1, fArr2);
                 fArr2[2] = fArr2[2] * 0.8f;
                 iHSVToColor = Color.HSVToColor(fArr2);
             }
             drawableMutate.setTint(iHSVToColor);
-            stateListDrawable.addState(new int[]{R.attr.state_pressed}, drawableMutate);
-            stateListDrawable.addState(new int[]{R.attr.state_focused}, drawableMutate);
+            stateListDrawable.addState(new int[]{16842919}, drawableMutate);
+            stateListDrawable.addState(new int[]{16842908}, drawableMutate);
             stateListDrawable.addState(new int[0], ninePatchDrawable);
         }
         view.setBackground(stateListDrawable);
@@ -133,7 +133,7 @@ public final class C2041 extends AbstractC2867 implements InterfaceC1578 {
         if (mo3264()) {
             int type = msgInfoBean.getType();
             if (type == EnumC3673.f11469.f11492 || type == EnumC3673.f11479.f11492 || type == EnumC3673.f11487.f11492 || type == EnumC3673.f11488.f11492) {
-                C2090.f6898.getClass();
+                
                 View viewFindViewById = view.findViewById(C2090.m3885());
                 if (viewFindViewById != null) {
                     m3880(viewFindViewById, msgInfoBean.isSend());
@@ -143,8 +143,8 @@ public final class C2041 extends AbstractC2867 implements InterfaceC1578 {
             }
             if (type != EnumC3673.f11471.f11492) {
                 if (type == EnumC3673.f11477.f11492) {
-                    C2090.f6898.getClass();
-                    C1565.f5440.getClass();
+                    
+                    
                     View viewFindViewById2 = view.findViewById(C1565.m3280() ? C2089.f6897.m2538() : AbstractC0968.m2475(C2090.m3890()));
                     if (viewFindViewById2 != null) {
                         m3880(viewFindViewById2, msgInfoBean.isSend());
@@ -154,19 +154,19 @@ public final class C2041 extends AbstractC2867 implements InterfaceC1578 {
                 }
                 return;
             }
-            C2090.f6898.getClass();
+            
             C1565 c1565 = C1565.f5440;
-            c1565.getClass();
+            
             View viewFindViewById3 = view.findViewById(C1565.m3280() ? C2086.f6894.m2538() : AbstractC0968.m2475(C2090.m3887()));
             if (viewFindViewById3 != null) {
                 m3880(viewFindViewById3, msgInfoBean.isSend());
             }
-            c1565.getClass();
+            
             View viewFindViewById4 = view.findViewById(C1565.m3280() ? C2087.f6895.m2538() : AbstractC0968.m2475(C2090.m3888()));
             if (viewFindViewById4 != null) {
                 m3880(viewFindViewById4, msgInfoBean.isSend());
             }
-            c1565.getClass();
+            
             View viewFindViewById5 = view.findViewById(C1565.m3280() ? C2088.f6896.m2538() : AbstractC0968.m2475(C2090.m3890()));
             if (viewFindViewById5 != null) {
                 m3880(viewFindViewById5, msgInfoBean.isSend());

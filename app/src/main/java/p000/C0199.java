@@ -6,14 +6,12 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
 import com.google.android.material.checkbox.MaterialCheckBox;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -47,7 +45,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
         int i2 = 6;
         int i3 = 3;
         int iIntValue = 0;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         switch (i) {
             case 0:
                 C1563 c1563 = (C1563) obj;
@@ -68,7 +66,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 if (iIntValue == 0 || iIntValue == 1) {
                     c1563.m3272(null);
                 }
-                return c3497;
+                return unit;
             case 1:
                 String[] strArr = AbstractC1574.f5469;
                 View viewM4676 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_anti_sns_delete, null, false);
@@ -86,13 +84,13 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                         c2007.f6680 = linearLayout;
                         c2007.m3870("保存", new C0106(2, c2012));
                         AbstractC2784.m4755(c2007, null, 3);
-                        return c3497;
+                        return unit;
                     }
                 }
                 throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i4)));
             case 2:
-                ((C1020) obj).f3733 = new C0199(i3);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C0199(3);
+                return unit;
             case 3:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr2 = AbstractC1574.f5469;
@@ -100,10 +98,10 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 C1981 c1981 = new C1981(4);
                 c1981.m3827("[get] ", " is not a interface!");
                 c1333.f4794 = c1981;
-                return c3497;
+                return unit;
             case 4:
-                ((C1020) obj).f3733 = new C0199(i2);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C0199(6);
+                return unit;
             case 5:
                 C1563 c1564 = (C1563) obj;
                 c1564.getClass();
@@ -135,20 +133,20 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                     jSONObject.put("data", jSONObject2);
                     new C0408(1, 6, c1564).m1608(jSONObject.toString());
                 }
-                return c3497;
+                return unit;
             case 6:
                 ((C1333) obj).m3052(new C0199(7));
-                return c3497;
+                return unit;
             case 7:
                 String[] strArr4 = AbstractC1574.f5469;
                 ((C1981) obj).m3829("NetSceneJSOperateWxData", "appId [%s], data [%s], grantScope [%s], versionType [%d], opt [%d], extScene [%d]  sessionId [%s]  avatarOpt [%d]");
-                return c3497;
+                return unit;
             case 8:
-                ((C1020) obj).f3733 = new C0199(10);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C0199(10);
+                return unit;
             case 9:
                 ((C1563) obj).m3272(null);
-                return c3497;
+                return unit;
             case 10:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr5 = AbstractC1574.f5469;
@@ -156,7 +154,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 C1981 c1982 = new C1981(4);
                 c1982.m3827("MicroMsg.AppBrand.JsApiAdOperateWXData[AppBrandSplashAd]", "cgi callback, callbackId:%s, service not running or preloaded");
                 c1334.f4794 = c1982;
-                return c3497;
+                return unit;
             case 11:
                 C1563 c1565 = (C1563) obj;
                 c1565.getClass();
@@ -191,40 +189,39 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                     jSONObject3.put("duration", 1);
                     c0408.m1608(jSONObject3.toString());
                 }
-                return c3497;
-            case Opcodes.FCONST_1 /* 12 */:
+                return unit;
+            case 12 /* 12 */:
                 C1020 c1020 = (C1020) obj;
-                c1020.f3732 = new C0199(13);
-                c1020.f3733 = new C0199(14);
-                return c3497;
+                c1020.declaringClassMatcher = new C0199(13);
+                c1020.thisMethodMatcher = new C0199(14);
+                return unit;
             case 13:
                 ((C1332) obj).m3050(new C0199(15));
-                return c3497;
-            case Opcodes.DCONST_0 /* 14 */:
+                return unit;
+            case 14 /* 14 */:
                 C1333 c1335 = (C1333) obj;
                 C1981 c1981M4739 = AbstractC2784.m4739(c1335);
-                Class<String> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(String.class));
-                c1981M4739.m3823(clsM2183 != null ? clsM2183 : String.class);
-                c1981M4739.m3828(0);
+                c1981M4739.paramTypes(String.class);
+                c1981M4739.usingNumbers(0);
                 c1335.f4794 = c1981M4739;
-                return c3497;
+                return unit;
             case 15:
                 String[] strArr7 = AbstractC1574.f5469;
                 ((C0705) obj).m2127("appinfo", "appid", "version", "appname", "isforceupdate", "messageaction", "messageext", "mediatagname");
-                return c3497;
+                return unit;
             case 16:
-                ((C1020) obj).f3732 = new C0199(17);
-                return c3497;
-            case Opcodes.SIPUSH /* 17 */:
+                ((C1020) obj).declaringClassMatcher = new C0199(17);
+                return unit;
+            case 17 /* 17 */:
                 ((C1332) obj).m3050(new C0199(18));
-                return c3497;
-            case Opcodes.LDC /* 18 */:
+                return unit;
+            case 18 /* 18 */:
                 String[] strArr8 = AbstractC1574.f5469;
                 ((C0705) obj).m2127("MicroMsg.AppMessage", "parse msg failed");
-                return c3497;
+                return unit;
             case 19:
-                ((C1020) obj).f3733 = new C0199(20);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C0199(20);
+                return unit;
             case 20:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr9 = AbstractC1574.f5469;
@@ -232,8 +229,8 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 C1981 c1983 = new C1981(4);
                 c1983.m3827("MicroMsg.AppMsgLogic", "summerbig sendAppMsg attachFilePath[%s], content[%s]");
                 c1336.f4794 = c1983;
-                return c3497;
-            case Opcodes.ILOAD /* 21 */:
+                return unit;
+            case 21 /* 21 */:
                 View view = (View) obj;
                 String[] strArr10 = AbstractC1574.f5469;
                 View viewM4677 = AbstractC2668.m4676(view, R.layout.module_dialog_auto_clean, null, false);
@@ -256,19 +253,19 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                             RunnableC0304.f1522.getClass();
                             c2008.f6678 = RunnableC0304.f1524;
                             c2008.f6680 = linearLayout2;
-                            c2008.m3870("保存", new C0299(c2013, iIntValue, c0718));
+                            c2008.m3870("保存", new C0299(c2013, 0, c0718));
                             AbstractC2784.m4755(c2008, null, 3);
-                            return c3497;
+                            return unit;
                         }
                     }
                 }
                 throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i5)));
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return Boolean.valueOf(C0300.f1518.m2541().contains(((C0719) obj).f2728));
-            case Opcodes.FLOAD /* 23 */:
-                ((C1020) obj).f3733 = new C0199(25);
-                return c3497;
-            case Opcodes.DLOAD /* 24 */:
+            case 23 /* 23 */:
+                ((C1020) obj).thisMethodMatcher = new C0199(25);
+                return unit;
+            case 24 /* 24 */:
                 C1563 c1566 = (C1563) obj;
                 c1566.getClass();
                 try {
@@ -293,23 +290,23 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                         c25811 = new C2585(th7);
                     }
                     Object obj2 = c25811 instanceof C2585 ? null : c25811;
-                    int i6 = AbstractC1745.f5844;
-                    C1299 c1299M3490 = AbstractC0968.m2484(obj2).m3490();
+                    int i6 = 0;
+                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
                     c1299M3490.f6370 = "field_UserName";
                     String str6 = (String) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
                     C1394.f5015.getClass();
-                    Method methodM3315 = AbstractC1574.m3315(C1393.f5014);
+                    Method methodM3315 = AbstractC1574.dexToMethod(C1393.f5014);
                     C2663.f8577.getClass();
-                    methodM3315.invoke(C2663.m4656(AbstractC1574.m3315(C1392.f5013).getDeclaringClass()), str6);
+                    methodM3315.invoke(C2663.m4656(AbstractC1574.dexToMethod(C1392.f5013).getDeclaringClass()), str6);
                 }
-                return c3497;
-            case Opcodes.ALOAD /* 25 */:
+                return unit;
+            case 25 /* 25 */:
                 ((C1333) obj).m3052(new C0199(26));
-                return c3497;
+                return unit;
             case 26:
                 String[] strArr11 = AbstractC1574.f5469;
                 ((C1981) obj).m3827("MicroMsg.ForceNotifyStorage", "[onNewXmlReceived] ret:%s isAdd:%s info:%s");
-                return c3497;
+                return unit;
             case 27:
                 String[] strArr12 = AbstractC1574.f5469;
                 View viewM4678 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_auto_login_win, null, false);
@@ -333,7 +330,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                             c2009.f6680 = linearLayout3;
                             c2009.m3870("保存", new C0106(4, c2014));
                             AbstractC2784.m4755(c2009, null, 3);
-                            return c3497;
+                            return unit;
                         }
                     }
                 }
@@ -342,7 +339,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 Object objM3268 = ((C1563) obj).m3268();
                 Activity activity = (Activity) (objM3268 instanceof Activity ? objM3268 : null);
                 if (activity == null) {
-                    Class<Activity> clsM2184 = AbstractC0743.m2183(AbstractC2519.m4527(Activity.class));
+                    Class<Activity> clsM2184 = AbstractC0743.m2183(AbstractC2519.classToKClass(Activity.class));
                     throw new IllegalStateException("HookParam instance cannot cast to ".concat((clsM2184 != null ? clsM2184 : Activity.class).getName()).toString());
                 }
                 boolean zM2536 = C0308.f1533.m2536();
@@ -356,13 +353,13 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                     i8 = (r0 == true ? 1 : 0) | 4;
                 }
                 activity.getIntent().putExtra("intent.key.function.control", i8);
-                return c3497;
+                return unit;
             default:
-                int i9 = AbstractC1745.f5844;
+                int i9 = 0;
                 C1299 c1299M4738 = AbstractC2784.m4738((C1563) obj);
-                c1299M4738.f4725 = AbstractC2519.m4527(Button.class);
-                ((Button) ((C1315) AbstractC0744.m2191(c1299M4738.m3014())).m3024()).callOnClick();
-                return c3497;
+                c1299M4738.fieldType = AbstractC2519.classToKClass(Button.class);
+                ((Button) ((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3024()).callOnClick();
+                return unit;
         }
     }
 }

@@ -48,7 +48,7 @@ public class Gender {
     static {
         int i = 0;
         int i2 = 1;
-        Gender gender = new Gender("Male", i, i2) { // from class: com.umeng.analytics.Gender.1
+        Gender gender = new Gender("Male", 0, 1) { // from class: com.umeng.analytics.Gender.1
             @Override // java.lang.Enum
             public String toString() {
                 Locale locale = Locale.US;
@@ -57,7 +57,7 @@ public class Gender {
         };
         Male = gender;
         int i3 = 2;
-        Gender gender2 = new Gender("Female", i2, i3) { // from class: com.umeng.analytics.Gender.2
+        Gender gender2 = new Gender("Female", 1, 2) { // from class: com.umeng.analytics.Gender.2
             @Override // java.lang.Enum
             public String toString() {
                 Locale locale = Locale.US;
@@ -65,7 +65,7 @@ public class Gender {
             }
         };
         Female = gender2;
-        Gender gender3 = new Gender("Unknown", i3, i) { // from class: com.umeng.analytics.Gender.3
+        Gender gender3 = new Gender("Unknown", 2, 0) { // from class: com.umeng.analytics.Gender.3
             @Override // java.lang.Enum
             public String toString() {
                 Locale locale = Locale.US;

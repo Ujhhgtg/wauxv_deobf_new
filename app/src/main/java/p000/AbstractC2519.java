@@ -24,16 +24,16 @@ public abstract class AbstractC2519 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
-    public static C0707 m4527(Class cls) {
-        f8046.getClass();
+    public static C0707 classToKClass(Class cls) {
+        
         return new C0707(cls);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public static C3457 m4528(Class cls) {
-        C0707 c0707M4527 = m4527(cls);
+        C0707 c0707M4527 = classToKClass(cls);
         List list = Collections.EMPTY_LIST;
-        f8046.getClass();
+        
         return new C3457(c0707M4527, false);
     }
 }

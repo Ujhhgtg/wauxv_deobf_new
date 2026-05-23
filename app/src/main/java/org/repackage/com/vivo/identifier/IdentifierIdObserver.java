@@ -24,7 +24,7 @@ public class IdentifierIdObserver extends ContentObserver {
         if (identifierIdClient != null) {
             identifierIdClient.a(this.c, this.b);
         } else {
-            Log.e(a, "mIdentifierIdClient is null");
+            Log.e("VMS_SDK_Observer", "mIdentifierIdClient is null");
         }
     }
 }

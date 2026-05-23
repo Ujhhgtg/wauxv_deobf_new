@@ -130,13 +130,13 @@ final class JSONWriterJSONB extends JSONWriter {
         if (i3 > bArrGrow.length) {
             bArrGrow = grow(i3);
         }
-        bArrGrow[i2] = JSONB.Constants.BC_TYPED_ANY;
+        bArrGrow[i2] = -110;
         this.off = JSONB.IO.writeInt32(bArrGrow, i2 + 1, -i);
         return false;
     }
 
     private static int writeUTF16(byte[] bArr, int i, byte[] bArr2) {
-        bArr[i] = JDKUtils.BIG_ENDIAN ? JSONB.Constants.BC_STR_UTF16BE : JSONB.Constants.BC_STR_UTF16LE;
+        bArr[i] = JDKUtils.BIG_ENDIAN ? 125 : 124;
         int iWriteInt32 = JSONB.IO.writeInt32(bArr, i + 1, bArr2.length);
         System.arraycopy(bArr2, 0, bArr, iWriteInt32, bArr2.length);
         return (bArr2.length + iWriteInt32) - i;
@@ -150,7 +150,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (iSizeOfInt != iSizeOfInt2) {
             System.arraycopy(bArr, i4, bArr, iSizeOfInt2 + i + 1, iEncodeUTF8);
         }
-        bArr[i] = JSONB.Constants.BC_STR_UTF8;
+        bArr[i] = 122;
         return JSONB.IO.writeInt32(bArr, i + 1, iEncodeUTF8) + iEncodeUTF8;
     }
 
@@ -165,7 +165,7 @@ final class JSONWriterJSONB extends JSONWriter {
     @Override // com.alibaba.fastjson2.JSONWriter
     public void endObject() {
         this.level--;
-        writeRaw(JSONB.Constants.BC_OBJECT_END);
+        writeRaw(-91);
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -239,7 +239,7 @@ final class JSONWriterJSONB extends JSONWriter {
 
     @Override // com.alibaba.fastjson2.JSONWriter
     public void startArray15() {
-        writeRaw(JSONB.Constants.BC_ARRAY_FIX_MAX);
+        writeRaw(-93);
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -289,7 +289,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (i > this.context.maxLevel) {
             overflowLevel();
         }
-        writeRaw(JSONB.Constants.BC_OBJECT);
+        writeRaw(-90);
     }
 
     public String toString() {
@@ -385,7 +385,7 @@ final class JSONWriterJSONB extends JSONWriter {
 
     @Override // com.alibaba.fastjson2.JSONWriter
     public void writeArrayNull() {
-        writeRaw((this.context.features & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : JSONB.Constants.BC_NULL);
+        writeRaw((this.context.features & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : -81);
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -406,7 +406,7 @@ final class JSONWriterJSONB extends JSONWriter {
             if (i2 > bArrGrow.length) {
                 bArrGrow = grow(i2);
             }
-            bArrGrow[i] = JSONB.Constants.BC_BIGINT_LONG;
+            bArrGrow[i] = -70;
             this.off = JSONB.IO.writeInt64(bArrGrow, i + 1, bigInteger.longValue());
             return;
         }
@@ -415,7 +415,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (length > bArrGrow.length) {
             bArrGrow = grow(length);
         }
-        bArrGrow[i] = JSONB.Constants.BC_BIGINT;
+        bArrGrow[i] = -69;
         int iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, i + 1, byteArray.length);
         System.arraycopy(byteArray, 0, bArrGrow, iWriteInt32, byteArray.length);
         this.off = iWriteInt32 + byteArray.length;
@@ -434,7 +434,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (i2 > bArrGrow.length) {
             bArrGrow = grow(i2);
         }
-        bArrGrow[i] = JSONB.Constants.BC_BINARY;
+        bArrGrow[i] = -111;
         int iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, i + 1, length);
         System.arraycopy(bArr, 0, bArrGrow, iWriteInt32, length);
         this.off = iWriteInt32 + length;
@@ -442,7 +442,7 @@ final class JSONWriterJSONB extends JSONWriter {
 
     @Override // com.alibaba.fastjson2.JSONWriter
     public void writeBool(boolean z) {
-        writeRaw(z ? JSONB.Constants.BC_TRUE : JSONB.Constants.BC_FALSE);
+        writeRaw(z ? -79 : -80);
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -453,7 +453,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (i2 > bArrGrow.length) {
             bArrGrow = grow(i2);
         }
-        bArrGrow[i] = JSONB.Constants.BC_CHAR;
+        bArrGrow[i] = -112;
         this.off = JSONB.IO.writeInt32(bArrGrow, i + 1, c);
     }
 
@@ -475,7 +475,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (i8 > bArrGrow.length) {
             bArrGrow = grow(i8);
         }
-        IOUtils.putIntBE(bArrGrow, i7, ((i & Settings.DEFAULT_INITIAL_WINDOW_SIZE) << 8) | (-1476395008) | i2);
+        IOUtils.putIntBE(bArrGrow, i7, ((i & 65535) << 8) | (-1476395008) | i2);
         IOUtils.putIntBE(bArrGrow, i7 + 4, (i3 << 24) | (i4 << 16) | (i5 << 8) | i6);
         bArrGrow[i7 + 8] = 0;
         this.off = i8;
@@ -504,7 +504,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (i5 > bArrGrow.length) {
             bArrGrow = grow(i5);
         }
-        bArrGrow[i4] = JSONB.Constants.BC_LOCAL_DATE;
+        bArrGrow[i4] = -87;
         IOUtils.putIntBE(bArrGrow, i4 + 1, (i << 16) | (i2 << 8) | i3);
         this.off = i5;
     }
@@ -529,11 +529,11 @@ final class JSONWriterJSONB extends JSONWriter {
             if (j2 != -1) {
                 long j3 = JDKUtils.UNSAFE.getLong(bigDecimal, j2);
                 if (iScale == 0) {
-                    bArrGrow[i] = JSONB.Constants.BC_DECIMAL_LONG;
+                    bArrGrow[i] = -72;
                     this.off = JSONB.IO.writeInt64(bArrGrow, i + 1, j3);
                     return;
                 } else {
-                    bArrGrow[i] = JSONB.Constants.BC_DECIMAL;
+                    bArrGrow[i] = -71;
                     int iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, i + 1, iScale);
                     this.off = (j3 < -2147483648L || j3 > 2147483647L) ? JSONB.IO.writeInt64(bArrGrow, iWriteInt32, j3) : JSONB.IO.writeInt32(bArrGrow, iWriteInt32, (int) j3);
                     return;
@@ -542,11 +542,11 @@ final class JSONWriterJSONB extends JSONWriter {
         }
         BigInteger bigIntegerUnscaledValue = bigDecimal.unscaledValue();
         if (iScale == 0 && TypeUtils.isInt64(bigIntegerUnscaledValue)) {
-            bArrGrow[i] = JSONB.Constants.BC_DECIMAL_LONG;
+            bArrGrow[i] = -72;
             this.off = JSONB.IO.writeInt64(bArrGrow, i + 1, bigIntegerUnscaledValue.longValue());
             return;
         }
-        bArrGrow[i] = JSONB.Constants.BC_DECIMAL;
+        bArrGrow[i] = -71;
         int iWriteInt33 = JSONB.IO.writeInt32(bArrGrow, i + 1, iScale);
         if (TypeUtils.isInt32(bigIntegerUnscaledValue)) {
             iWriteInt64 = JSONB.IO.writeInt32(bArrGrow, iWriteInt33, bigIntegerUnscaledValue.intValue());
@@ -651,7 +651,7 @@ final class JSONWriterJSONB extends JSONWriter {
             iWriteInt32 = i + 1;
             bArrGrow[i] = (byte) (length - 108);
         } else {
-            bArrGrow[i] = JSONB.Constants.BC_ARRAY;
+            bArrGrow[i] = -92;
             iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, i + 1, length);
         }
         for (int i2 : iArr) {
@@ -688,7 +688,7 @@ final class JSONWriterJSONB extends JSONWriter {
             iWriteInt32 = i + 1;
             bArrGrow[i] = (byte) (length - 108);
         } else {
-            bArrGrow[i] = JSONB.Constants.BC_ARRAY;
+            bArrGrow[i] = -92;
             iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, i + 1, length);
         }
         int length3 = bArr.length;
@@ -724,13 +724,13 @@ final class JSONWriterJSONB extends JSONWriter {
             iWriteInt32 = i + 1;
             bArrGrow[i] = (byte) (size - 108);
         } else {
-            bArrGrow[i] = JSONB.Constants.BC_ARRAY;
+            bArrGrow[i] = -92;
             iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, i + 1, size);
         }
         for (int i2 = 0; i2 < size; i2++) {
             Integer num = list.get(i2);
             if (num == null) {
-                bArrGrow[iWriteInt32] = JSONB.Constants.BC_NULL;
+                bArrGrow[iWriteInt32] = -81;
                 iWriteInt32++;
             } else {
                 iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, iWriteInt32, num.intValue());
@@ -757,13 +757,13 @@ final class JSONWriterJSONB extends JSONWriter {
             iWriteInt32 = i + 1;
             bArrGrow[i] = (byte) (size - 108);
         } else {
-            bArrGrow[i] = JSONB.Constants.BC_ARRAY;
+            bArrGrow[i] = -92;
             iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, i + 1, size);
         }
         for (int i2 = 0; i2 < size; i2++) {
             Long l = list.get(i2);
             if (l == null) {
-                bArrGrow[iWriteInt32] = JSONB.Constants.BC_NULL;
+                bArrGrow[iWriteInt32] = -81;
                 iWriteInt32++;
             } else {
                 iWriteInt32 = JSONB.IO.writeInt64(bArrGrow, iWriteInt32, l.longValue());
@@ -816,7 +816,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (j % 1000 == 0) {
             long j2 = j / 1000;
             if (j2 >= -2147483648L && j2 <= 2147483647L) {
-                bArrGrow[i] = JSONB.Constants.BC_TIMESTAMP_SECONDS;
+                bArrGrow[i] = -84;
                 IOUtils.putIntBE(bArrGrow, i + 1, (int) j2);
                 this.off = i + 5;
                 return;
@@ -824,14 +824,14 @@ final class JSONWriterJSONB extends JSONWriter {
             if (j2 % 60 == 0) {
                 long j3 = j2 / 60;
                 if (j3 >= -2147483648L && j3 <= 2147483647L) {
-                    bArrGrow[i] = JSONB.Constants.BC_TIMESTAMP_MINUTES;
+                    bArrGrow[i] = -83;
                     IOUtils.putIntBE(bArrGrow, i + 1, (int) j3);
                     this.off = i + 5;
                     return;
                 }
             }
         }
-        bArrGrow[i] = JSONB.Constants.BC_TIMESTAMP_MILLIS;
+        bArrGrow[i] = -85;
         IOUtils.putLongBE(bArrGrow, i + 1, j);
         this.off = i2;
     }
@@ -1101,7 +1101,7 @@ final class JSONWriterJSONB extends JSONWriter {
             }
             if (!z) {
                 int i4 = i + 1;
-                bArrGrow[i] = JSONB.Constants.BC_SYMBOL;
+                bArrGrow[i] = 127;
                 System.arraycopy(bArr, 0, bArrGrow, i4, bArr.length);
                 int length2 = i4 + bArr.length;
                 if (iPutIfAbsent < -16 || iPutIfAbsent > 47) {
@@ -1116,7 +1116,7 @@ final class JSONWriterJSONB extends JSONWriter {
             ordinalByHashCode = -iPutIfAbsent;
         }
         int i5 = i + 1;
-        bArrGrow[i] = JSONB.Constants.BC_SYMBOL;
+        bArrGrow[i] = 127;
         int i6 = -ordinalByHashCode;
         if (i6 < -16 || i6 > 47) {
             iWriteInt33 = JSONB.IO.writeInt32(bArrGrow, i5, i6);
@@ -1129,7 +1129,7 @@ final class JSONWriterJSONB extends JSONWriter {
 
     @Override // com.alibaba.fastjson2.JSONWriter
     public void writeNull() {
-        writeRaw(JSONB.Constants.BC_NULL);
+        writeRaw(-81);
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -1164,7 +1164,7 @@ final class JSONWriterJSONB extends JSONWriter {
     @Override // com.alibaba.fastjson2.JSONWriter
     public void writeReference(String str) {
         int i = this.off;
-        grow1(i)[i] = JSONB.Constants.BC_REFERENCE;
+        grow1(i)[i] = -109;
         this.off = i + 1;
         writeString(str == this.lastReference ? "#-1" : str);
         this.lastReference = str;
@@ -1188,7 +1188,7 @@ final class JSONWriterJSONB extends JSONWriter {
 
     @Override // com.alibaba.fastjson2.JSONWriter
     public void writeStringNull() {
-        writeRaw(JSONB.Constants.BC_NULL);
+        writeRaw(-81);
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -1213,7 +1213,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (symbolTable == null || (ordinal = symbolTable.getOrdinal(str)) < 0) {
             writeString(str);
         } else {
-            writeRaw(JSONB.Constants.BC_SYMBOL);
+            writeRaw(127);
             writeInt32(-ordinal);
         }
     }
@@ -1230,7 +1230,7 @@ final class JSONWriterJSONB extends JSONWriter {
         int i = this.off;
         byte[] bArrGrow1 = grow1(i);
         int i2 = i + 1;
-        bArrGrow1[i] = JSONB.Constants.BC_TYPED_ANY;
+        bArrGrow1[i] = -110;
         long jHashCode64 = Fnv.hashCode64(str);
         SymbolTable symbolTable = this.symbolTable;
         if (symbolTable != null) {
@@ -1310,7 +1310,7 @@ final class JSONWriterJSONB extends JSONWriter {
 
     @Override // com.alibaba.fastjson2.JSONWriter
     public void writeArrayNull(long j) {
-        writeRaw((j & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : JSONB.Constants.BC_NULL);
+        writeRaw((j & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : -81);
     }
 
     @Override // com.alibaba.fastjson2.JSONWriter
@@ -1438,7 +1438,7 @@ final class JSONWriterJSONB extends JSONWriter {
             iWriteInt32 = i + 1;
             bArr[i] = (byte) (i3 + 73);
         } else {
-            bArr[i] = JSONB.Constants.BC_STR_ASCII;
+            bArr[i] = 121;
             if (i3 <= 2047) {
                 IOUtils.putShortBE(bArr, i + 1, (short) (i3 + 14336));
                 iWriteInt32 = i + 3;
@@ -1458,7 +1458,7 @@ final class JSONWriterJSONB extends JSONWriter {
     private static int writeUTF8(byte[] bArr, int i, byte[] bArr2, int i2, int i3, int i4) {
         byte b;
         if (i2 * 2 != bArr2.length) {
-            b = JSONB.Constants.BC_STR_UTF8;
+            b = 122;
         } else {
             if (i3 <= 47) {
                 bArr[i] = (byte) (i2 + 73);
@@ -1466,7 +1466,7 @@ final class JSONWriterJSONB extends JSONWriter {
                 System.arraycopy(bArr, i4 + i5, bArr, i5, i2);
                 return i2 + 1;
             }
-            b = JSONB.Constants.BC_STR_ASCII;
+            b = 121;
         }
         int iSizeOfInt = sizeOfInt(i2);
         if (i4 != iSizeOfInt) {
@@ -1500,7 +1500,7 @@ final class JSONWriterJSONB extends JSONWriter {
             bArrGrow = grow(i3);
         }
         int i4 = i2 + 1;
-        bArrGrow[i2] = JSONB.Constants.BC_SYMBOL;
+        bArrGrow[i2] = 127;
         if (i >= -16 && i <= 47) {
             iWriteInt32 = i2 + 2;
             bArrGrow[i4] = (byte) i;
@@ -1543,7 +1543,7 @@ final class JSONWriterJSONB extends JSONWriter {
             iWriteInt32 = i + 1;
             bArrGrow[i] = (byte) (length - 108);
         } else {
-            bArrGrow[i] = JSONB.Constants.BC_ARRAY;
+            bArrGrow[i] = -92;
             iWriteInt32 = JSONB.IO.writeInt32(bArrGrow, i + 1, length);
         }
         for (long j : jArr) {
@@ -1650,10 +1650,10 @@ final class JSONWriterJSONB extends JSONWriter {
                 if (length > bArrGrow.length) {
                     bArrGrow = grow(length);
                 }
-                bArrGrow[i2] = JSONB.Constants.BC_TYPED_ANY;
+                bArrGrow[i2] = -110;
                 System.arraycopy(bArr, 0, bArrGrow, i2 + 1, bArr.length);
                 length2 = bArr.length + 1 + i2;
-                if (iPutIfAbsent < -16 && iPutIfAbsent <= 47) {
+                if (iPutIfAbsent < -16 && true) {
                     iWriteInt32 = length2 + 1;
                     bArrGrow[length2] = (byte) iPutIfAbsent;
                 } else {
@@ -1672,7 +1672,7 @@ final class JSONWriterJSONB extends JSONWriter {
             }
             iPutIfAbsent = i3;
             z = false;
-            if (z) {
+            if (false) {
                 writeTypeNameSymbol(-iPutIfAbsent);
                 return false;
             }
@@ -1682,7 +1682,7 @@ final class JSONWriterJSONB extends JSONWriter {
             if (length > bArrGrow.length) {
                 bArrGrow = grow(length);
             }
-            bArrGrow[i4] = JSONB.Constants.BC_TYPED_ANY;
+            bArrGrow[i4] = -110;
             System.arraycopy(bArr, 0, bArrGrow, i4 + 1, bArr.length);
             length2 = bArr.length + 1 + i4;
             if (iPutIfAbsent < -16) {
@@ -1695,8 +1695,8 @@ final class JSONWriterJSONB extends JSONWriter {
         }
         iPutIfAbsent = 0;
         z = true;
-        if (z) {
-            writeTypeNameSymbol(-iPutIfAbsent);
+        if (true) {
+            writeTypeNameSymbol(0);
             return false;
         }
         bArrGrow = this.bytes;
@@ -1705,7 +1705,7 @@ final class JSONWriterJSONB extends JSONWriter {
         if (length > bArrGrow.length) {
             bArrGrow = grow(length);
         }
-        bArrGrow[i5] = JSONB.Constants.BC_TYPED_ANY;
+        bArrGrow[i5] = -110;
         System.arraycopy(bArr, 0, bArrGrow, i5 + 1, bArr.length);
         length2 = bArr.length + 1 + i5;
         if (iPutIfAbsent < -16) {
@@ -1796,7 +1796,7 @@ final class JSONWriterJSONB extends JSONWriter {
             iWriteInt32 = i5 + 1;
             bArr[i5] = (byte) (i2 + 73);
         } else {
-            bArr[i5] = JSONB.Constants.BC_STR_ASCII;
+            bArr[i5] = 121;
             iWriteInt32 = JSONB.IO.writeInt32(bArr, i5 + 1, i2);
         }
         while (i3 < i2) {
@@ -1860,7 +1860,7 @@ final class JSONWriterJSONB extends JSONWriter {
                         if (iWriteStringLatin1 == bArrGrow.length) {
                             bArrGrow = grow(iWriteStringLatin1 + 1);
                         }
-                        bArrGrow[iWriteStringLatin1] = JSONB.Constants.BC_NULL;
+                        bArrGrow[iWriteStringLatin1] = -81;
                         iWriteStringLatin1++;
                     } else {
                         if (JDKUtils.STRING_CODER.applyAsInt(str) != 0) {

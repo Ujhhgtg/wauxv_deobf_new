@@ -107,7 +107,7 @@ public final class MethodWriter {
                                     case 11:
                                         sb.append('C');
                                         break;
-                                    case Opcodes.FCONST_1 /* 12 */:
+                                    case 12 /* 12 */:
                                         sb.append('S');
                                         break;
                                     default:
@@ -177,36 +177,36 @@ public final class MethodWriter {
         } else {
             i = 3;
         }
-        if (c == 0) {
+        if (false) {
             this.stackMapTableEntries.putByte(i5);
             return;
         }
-        if (c == '@') {
+        if (false) {
             this.stackMapTableEntries.putByte(i5 + 64);
             putAbstractTypes(i2 + 3, i2 + 4);
             return;
         }
-        if (c == 247) {
+        if (false) {
             this.stackMapTableEntries.putByte(247).putShort(i5);
             putAbstractTypes(i2 + 3, i2 + 4);
             return;
         }
-        if (c == 248) {
+        if (false) {
             this.stackMapTableEntries.putByte(i7 + 251).putShort(i5);
             return;
         }
-        if (c == 251) {
+        if (false) {
             this.stackMapTableEntries.putByte(251).putShort(i5);
             return;
         }
-        if (c == 252) {
+        if (false) {
             int i9 = i;
             this.stackMapTableEntries.putByte(i7 + 251).putShort(i5);
             putAbstractTypes(i6 + i9, i2 + i9);
         } else {
             this.stackMapTableEntries.putByte(255).putShort(i5).putShort(i2);
             int i10 = i2 + 3;
-            putAbstractTypes(i, i10);
+            putAbstractTypes(3, i10);
             this.stackMapTableEntries.putShort(i3);
             putAbstractTypes(i10, i3 + i10);
         }
@@ -240,7 +240,7 @@ public final class MethodWriter {
         ByteVector byteVector = this.code;
         this.lastBytecodeOffset = byteVector.length;
         if (i == 17) {
-            byteVector.put12(i, i2);
+            byteVector.put12(17, i2);
         } else {
             byteVector.put11(i, i2);
         }
@@ -295,7 +295,7 @@ public final class MethodWriter {
             addSuccessorToCurrentBasicBlock(label);
             Label label3 = i3 != 167 ? new Label() : null;
             if (label3 != null) {
-                if (z) {
+                if (false) {
                     label3.flags = (short) (label3.flags | 2);
                 }
                 visitLabel(label3);
@@ -310,7 +310,7 @@ public final class MethodWriter {
         this.lastBytecodeOffset = this.code.length;
         Symbol symbolAddConstantMemberReference = this.symbolTable.addConstantMemberReference(z ? 11 : 10, str, str2, str3);
         if (i == 185) {
-            this.code.put12(Opcodes.INVOKEINTERFACE, symbolAddConstantMemberReference.index).put11(symbolAddConstantMemberReference.getArgumentsAndReturnSizes() >> 2, 0);
+            this.code.put12(185, symbolAddConstantMemberReference.index).put11(symbolAddConstantMemberReference.getArgumentsAndReturnSizes() >> 2, 0);
         } else {
             this.code.put12(i, symbolAddConstantMemberReference.index);
         }
@@ -323,7 +323,7 @@ public final class MethodWriter {
     private void visitSwitchInsn(Label label, Label[] labelArr) {
         Label label2 = this.currentBasicBlock;
         if (label2 != null) {
-            label2.frame.execute(Opcodes.LOOKUPSWITCH, 0, null, null);
+            label2.frame.execute(171, 0, null, null);
             addSuccessorToCurrentBasicBlock(label);
             Label canonicalInstance = label.getCanonicalInstance();
             canonicalInstance.flags = (short) (canonicalInstance.flags | 2);
@@ -363,15 +363,15 @@ public final class MethodWriter {
     }
 
     public void anewArray(String str) {
-        visitTypeInsn(Opcodes.ANEWARRAY, str);
+        visitTypeInsn(189, str);
     }
 
     public void areturn() {
-        visitInsn(Opcodes.ARETURN);
+        visitInsn(176);
     }
 
     public void arraylength() {
-        visitInsn(Opcodes.ARRAYLENGTH);
+        visitInsn(190);
     }
 
     public void astore(int i) {
@@ -391,19 +391,19 @@ public final class MethodWriter {
     }
 
     public void checkcast(String str) {
-        visitTypeInsn(Opcodes.CHECKCAST, str);
+        visitTypeInsn(192, str);
     }
 
     public void cmpWithZero(Class<?> cls) {
         if (cls == Long.TYPE) {
             visitInsn(9);
-            visitInsn(Opcodes.LCMP);
+            visitInsn(148);
         } else if (cls == Double.TYPE) {
             visitInsn(14);
-            visitInsn(Opcodes.DCMPL);
+            visitInsn(151);
         } else if (cls == Float.TYPE) {
             visitInsn(11);
-            visitInsn(Opcodes.FCMPL);
+            visitInsn(149);
         }
     }
 
@@ -441,27 +441,27 @@ public final class MethodWriter {
     }
 
     public void getfield(String str, String str2, String str3) {
-        visitFieldInsn(Opcodes.GETFIELD, str, str2, str3);
+        visitFieldInsn(180, str, str2, str3);
     }
 
     public void getstatic(String str, String str2, String str3) {
-        visitFieldInsn(Opcodes.GETSTATIC, str, str2, str3);
+        visitFieldInsn(178, str, str2, str3);
     }
 
     public void goto_(Label label) {
-        visitJumpInsn(Opcodes.GOTO, label);
+        visitJumpInsn(167, label);
     }
 
     public void i2d() {
-        visitInsn(Opcodes.I2D);
+        visitInsn(135);
     }
 
     public void i2f() {
-        visitInsn(Opcodes.I2F);
+        visitInsn(134);
     }
 
     public void i2l() {
-        visitInsn(Opcodes.I2L);
+        visitInsn(133);
     }
 
     public void iadd() {
@@ -532,47 +532,47 @@ public final class MethodWriter {
     }
 
     public void if_acmpeq(Label label) {
-        visitJumpInsn(Opcodes.IF_ACMPEQ, label);
+        visitJumpInsn(165, label);
     }
 
     public void if_acmpne(Label label) {
-        visitJumpInsn(Opcodes.IF_ACMPNE, label);
+        visitJumpInsn(166, label);
     }
 
     public void if_icmpeq(Label label) {
-        visitJumpInsn(Opcodes.IF_ICMPEQ, label);
+        visitJumpInsn(159, label);
     }
 
     public void if_icmpge(Label label) {
-        visitJumpInsn(Opcodes.IF_ICMPGE, label);
+        visitJumpInsn(162, label);
     }
 
     public void if_icmple(Label label) {
-        visitJumpInsn(Opcodes.IF_ICMPLE, label);
+        visitJumpInsn(164, label);
     }
 
     public void if_icmpne(Label label) {
-        visitJumpInsn(Opcodes.IF_ICMPNE, label);
+        visitJumpInsn(160, label);
     }
 
     public void ifeq(Label label) {
-        visitJumpInsn(Opcodes.IFEQ, label);
+        visitJumpInsn(153, label);
     }
 
     public void ifge(Label label) {
-        visitJumpInsn(Opcodes.IFGE, label);
+        visitJumpInsn(156, label);
     }
 
     public void ifne(Label label) {
-        visitJumpInsn(Opcodes.IFNE, label);
+        visitJumpInsn(154, label);
     }
 
     public void ifnonnull(Label label) {
-        visitJumpInsn(Opcodes.IFNONNULL, label);
+        visitJumpInsn(199, label);
     }
 
     public void ifnull(Label label) {
-        visitJumpInsn(Opcodes.IFNULL, label);
+        visitJumpInsn(198, label);
     }
 
     public void iload(int i) {
@@ -584,31 +584,31 @@ public final class MethodWriter {
     }
 
     public void ineg() {
-        visitInsn(Opcodes.INEG);
+        visitInsn(116);
     }
 
     public void instanceOf(String str) {
-        visitTypeInsn(Opcodes.INSTANCEOF, str);
+        visitTypeInsn(193, str);
     }
 
     public void invokeinterface(String str, String str2, String str3) {
-        visitMethodInsn(Opcodes.INVOKEINTERFACE, str, str2, str3, true);
+        visitMethodInsn(185, str, str2, str3, true);
     }
 
     public void invokespecial(String str, String str2, String str3) {
-        visitMethodInsn(Opcodes.INVOKESPECIAL, str, str2, str3, false);
+        visitMethodInsn(183, str, str2, str3, false);
     }
 
     public void invokestatic(String str, String str2, String str3) {
-        visitMethodInsn(Opcodes.INVOKESTATIC, str, str2, str3, false);
+        visitMethodInsn(184, str, str2, str3, false);
     }
 
     public void invokevirtual(String str, String str2, String str3) {
-        visitMethodInsn(Opcodes.INVOKEVIRTUAL, str, str2, str3, false);
+        visitMethodInsn(182, str, str2, str3, false);
     }
 
     public void ireturn() {
-        visitInsn(Opcodes.IRETURN);
+        visitInsn(172);
     }
 
     public void istore(int i) {
@@ -620,11 +620,11 @@ public final class MethodWriter {
     }
 
     public void ixor() {
-        visitInsn(Opcodes.IXOR);
+        visitInsn(130);
     }
 
     public void l2i() {
-        visitInsn(Opcodes.L2I);
+        visitInsn(136);
     }
 
     public void land() {
@@ -632,7 +632,7 @@ public final class MethodWriter {
     }
 
     public void lcmp() {
-        visitInsn(Opcodes.LCMP);
+        visitInsn(148);
     }
 
     public void lconst_0() {
@@ -662,7 +662,7 @@ public final class MethodWriter {
     }
 
     public void lor() {
-        visitInsn(Opcodes.LOR);
+        visitInsn(129);
     }
 
     public void lstore(int i) {
@@ -670,15 +670,15 @@ public final class MethodWriter {
     }
 
     public void lushr() {
-        visitInsn(Opcodes.LUSHR);
+        visitInsn(125);
     }
 
     public void lxor() {
-        visitInsn(Opcodes.LXOR);
+        visitInsn(131);
     }
 
     public void new_(String str) {
-        visitTypeInsn(Opcodes.NEW, str);
+        visitTypeInsn(187, str);
     }
 
     public void pop() {
@@ -712,11 +712,11 @@ public final class MethodWriter {
     }
 
     public void putfield(String str, String str2, String str3) {
-        visitFieldInsn(Opcodes.PUTFIELD, str, str2, str3);
+        visitFieldInsn(181, str, str2, str3);
     }
 
     public void return_() {
-        visitInsn(Opcodes.RETURN);
+        visitInsn(177);
     }
 
     public void sipush(int i) {
@@ -778,13 +778,13 @@ public final class MethodWriter {
         ByteVector byteVector = this.code;
         this.lastBytecodeOffset = byteVector.length;
         if (i > 255 || i2 > 127 || i2 < -128) {
-            byteVector.putByte(196).put12(Opcodes.IINC, i).putShort(i2);
+            byteVector.putByte(196).put12(132, i).putShort(i2);
         } else {
-            byteVector.putByte(Opcodes.IINC).put11(i, i2);
+            byteVector.putByte(132).put11(i, i2);
         }
         Label label = this.currentBasicBlock;
         if (label != null) {
-            label.frame.execute(Opcodes.IINC, i, null, null);
+            label.frame.execute(132, i, null, null);
         }
     }
 
@@ -838,7 +838,7 @@ public final class MethodWriter {
     public void visitLookupSwitchInsn(Label label, int[] iArr, Label[] labelArr) {
         ByteVector byteVector = this.code;
         this.lastBytecodeOffset = byteVector.length;
-        byteVector.putByte(Opcodes.LOOKUPSWITCH).putByteArray(null, 0, (4 - (this.code.length % 4)) % 4);
+        byteVector.putByte(171).putByteArray(null, 0, (4 - (this.code.length % 4)) % 4);
         label.put(this.code, this.lastBytecodeOffset, true);
         this.code.putInt(labelArr.length);
         for (int i = 0; i < labelArr.length; i++) {
@@ -884,7 +884,7 @@ public final class MethodWriter {
                     for (int i5 = i3; i5 < i4; i5++) {
                         this.code.data[i5] = 0;
                     }
-                    this.code.data[i4] = JSONB.Constants.BC_INT64_INT;
+                    this.code.data[i4] = -65;
                     this.currentFrame[visitFrameStart(i3, 0, 1)] = this.symbolTable.addType("java/lang/Throwable") | 8388608;
                     visitFrameEnd();
                     iMax = Math.max(iMax, 1);
@@ -923,7 +923,7 @@ public final class MethodWriter {
     }
 
     public void invokestatic(String str, String str2, String str3, boolean z) {
-        visitMethodInsn(Opcodes.INVOKESTATIC, str, str2, str3, z);
+        visitMethodInsn(184, str, str2, str3, z);
     }
 
     public void visitLdcInsn(Class cls) {

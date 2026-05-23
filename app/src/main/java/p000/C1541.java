@@ -2,7 +2,7 @@ package p000;
 
 import java.util.Collections;
 import java.util.List;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲁᲀᤝᲇᲈ, reason: contains not printable characters */
@@ -37,22 +37,22 @@ public final class C1541 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C1539.f5385, dexKitBridge, new C1338(26));
-        if (AbstractC3471.m5079(EnumC3677.f11543) || AbstractC3471.m5080(EnumC3674.f11509)) {
-            AbstractC1574.m3295(C1540.f5386, dexKitBridge, new C1338(28));
+        AbstractC1574.findMethod(C1539.f5385, dexKitBridge, new C1338(26));
+        if (AbstractC3471.m5079(WeChatVersions.f11543) || AbstractC3471.m5080(WeChatVersionsPlay.f11509)) {
+            AbstractC1574.findMethod(C1540.f5386, dexKitBridge, new C1338(28));
         }
     }
 
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C1539.f5385));
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C1539.f5385));
         C1541 c1541 = f5387;
         C3689 c3689M4172 = C2309.m4172(c1541, listSingletonList);
         c1541.m3262(c3689M4172, new C1538(1));
         c3689M4172.m5352();
-        if (AbstractC3471.m5079(EnumC3677.f11543) || AbstractC3471.m5080(EnumC3674.f11509)) {
-            C3689 c3689M4173 = C2309.m4172(c1541, Collections.singletonList(AbstractC1574.m3315(C1540.f5386)));
+        if (AbstractC3471.m5079(WeChatVersions.f11543) || AbstractC3471.m5080(WeChatVersionsPlay.f11509)) {
+            C3689 c3689M4173 = C2309.m4172(c1541, Collections.singletonList(AbstractC1574.dexToMethod(C1540.f5386)));
             c1541.m3262(c3689M4173, new C1538(4));
             c3689M4173.m5352();
         }

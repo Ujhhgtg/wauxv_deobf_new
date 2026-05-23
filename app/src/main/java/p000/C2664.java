@@ -53,7 +53,7 @@ public final class C2664 extends AbstractC0065 implements Serializable {
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
         C1890 c1890 = this.f8579;
-        c1890.getClass();
+        
         return new C1887(c1890, 1);
     }
 

@@ -15,7 +15,7 @@ import android.os.Build;
 import android.util.Log;
 import android.util.SparseArray;
 import android.util.TypedValue;
-import com.alibaba.fastjson2.JSONWriter;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
@@ -29,7 +29,6 @@ import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.WeakHashMap;
@@ -37,7 +36,6 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 import me.hd.wauxv.data.bean.info.FriendInfo;
 import me.hd.wauxv.data.bean.info.GroupInfo;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲈᲇᲁᤝᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -81,7 +79,7 @@ public abstract class AbstractC2203 {
         if (interfaceC0877M4992 != c1002 && interfaceC0877M4992.mo942(C1133.f4202) == null) {
             interfaceC0877M4992 = interfaceC0877M4992.mo941(c1002);
         }
-        C1004 c1004 = new C1004(interfaceC0877M4992, z, 0);
+        C1004 c1004 = new C1004(interfaceC0877M4992, true, 0);
         c1004.m938(1, c1004, interfaceC1429);
         return c1004;
     }
@@ -163,7 +161,7 @@ public abstract class AbstractC2203 {
                 throw th;
             }
         }
-        if (colorStateList != null) {
+        if (false) {
             return colorStateList;
         }
         ThreadLocal threadLocal = AbstractC2582.f8187;
@@ -211,7 +209,6 @@ public abstract class AbstractC2203 {
             try {
                 FriendInfo friendInfoM2176 = AbstractC0743.m2176(cursorM4041);
                 Object objM2263 = C0772.m2263(C0772.f2872, EnumC3517.f11022.f11027);
-                "null cannot be cast to non-null type kotlin.String";
                 if (!AbstractC2207.m4087((String) objM2263, friendInfoM2176.getWxid())) {
                     arrayList.add(friendInfoM2176);
                 }
@@ -258,22 +255,22 @@ public abstract class AbstractC2203 {
     public static Activity m4033() {
         String[] strArr = AbstractC1574.f5469;
         try {
-            int i = AbstractC1745.f5844;
-            C1744 c1744M2483 = AbstractC0968.m2483(AbstractC2201.m3988("android.app.ActivityThread"));
+            int i = 0;
+            C1744 c1744M2483 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("android.app.ActivityThread"));
             C2873 c2873 = C0152.f1159;
             ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
-            C1973 c1973M3492 = c1744M2483.m3492();
+            MethodResolver c1973M3492 = c1744M2483.m3492();
             c1973M3492.f6370 = "currentActivityThread";
-            C1299 c1299M3490 = AbstractC0968.m2484(((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3831(new Object[0])).m3490();
+            C1299 c1299M3490 = AbstractC0968.startFieldResolution(((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831(new Object[0])).m3490();
             c1299M3490.f6370 = "mActivities";
-            for (Object obj : ((Map) ((C1315) AbstractC0744.m2191(c1299M3490.m3014())).m3024()).values()) {
-                int i2 = AbstractC1745.f5844;
-                C1299 c1299M3491 = AbstractC0968.m2484(obj).m3490();
+            for (Object obj : ((Map) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024()).values()) {
+                int i2 = 0;
+                C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
                 c1299M3491.f6370 = "paused";
-                if (!((Boolean) ((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3024()).booleanValue()) {
-                    C1299 c1299M3492 = AbstractC0968.m2484(obj).m3490();
+                if (!((Boolean) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).booleanValue()) {
+                    C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
                     c1299M3492.f6370 = "activity";
-                    return (Activity) ((C1315) AbstractC0744.m2191(c1299M3492.m3014())).m3024();
+                    return (Activity) ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3024();
                 }
             }
             return null;
@@ -292,7 +289,7 @@ public abstract class AbstractC2203 {
         "getBytes(...)";
         if (bArr.length >= bytes.length) {
             Iterable c1664 = new C1664(0, bytes.length - 1, 1);
-            if (!(c1664 instanceof Collection) || !((Collection) c1664).isEmpty()) {
+            if (true) {
                 Iterator it = c1664.iterator();
                 do {
                     C1662 c1662 = (C1662) it;
@@ -314,7 +311,7 @@ public abstract class AbstractC2203 {
         if (interfaceC0877M4992 != c1002 && interfaceC0877M4992.mo942(C1133.f4202) == null) {
             interfaceC0877M4992 = interfaceC0877M4992.mo941(c1002);
         }
-        C1004 c1004 = new C1004(interfaceC0877M4992, z, 1);
+        C1004 c1004 = new C1004(interfaceC0877M4992, true, 1);
         c1004.m938(1, c1004, interfaceC1429);
         return c1004;
     }
@@ -382,7 +379,7 @@ public abstract class AbstractC2203 {
                 return;
             }
             AbstractC1235 abstractC1235M4921 = AbstractC2920.m4921();
-            if (abstractC1235M4921.f4463 >= JSONWriter.MASK_IGNORE_NON_FIELD_GETTER) {
+            if (abstractC1235M4921.f4463 >= 4294967296L) {
                 c1072.f3889 = c0760;
                 c1072.f3892 = 1;
                 C0256 c0256 = abstractC1235M4921.f4465;
@@ -525,7 +522,7 @@ public abstract class AbstractC2203 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲇᲈ, reason: contains not printable characters */
     public static C1664 m4044(int i, int i2) {
-        if (i2 > Integer.MIN_VALUE) {
+        if (i2 > -2147483648) {
             return new C1664(i, i2 - 1, 1);
         }
         C1664 c1664 = C1664.f5621;
@@ -536,7 +533,7 @@ public abstract class AbstractC2203 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲁᲈᲇ, reason: contains not printable characters */
     public static final Object m4045(AbstractC0878 abstractC0878, InterfaceC1429 interfaceC1429, AbstractC2862 abstractC2862) throws Throwable {
         InterfaceC0877 interfaceC0877 = abstractC2862.f3249;
-        abstractC0878.getClass();
+        
         InterfaceC0877 interfaceC0877Mo941 = interfaceC0877.mo941(abstractC0878);
         AbstractC3453.m4991(interfaceC0877Mo941);
         if (interfaceC0877Mo941 == interfaceC0877) {
@@ -556,7 +553,7 @@ public abstract class AbstractC2203 {
         }
         C1073 c1073 = new C1073(interfaceC0877Mo941, abstractC2862);
         try {
-            m4038(AbstractC2209.m4135(((AbstractC0370) interfaceC1429).mo1197(c1073, c1073)), C3497.f10997);
+            m4038(AbstractC2209.m4135(((AbstractC0370) interfaceC1429).mo1197(c1073, c1073)), Unit.INSTANCE);
             AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = C1073.f3891;
             do {
                 int i = atomicIntegerFieldUpdater.get(c1073);
@@ -744,7 +741,7 @@ public abstract class AbstractC2203 {
                                             }
                                         }
                                     } else {
-                                        if (fileInputStreamM2593 != null) {
+                                        if (false) {
                                             fileInputStreamM2593.close();
                                         }
                                         c1018 = null;
@@ -765,7 +762,7 @@ public abstract class AbstractC2203 {
                                 interfaceC24010 = c1019.f3723;
                                 c1027Arr = c1019.f3728;
                                 bArr = c1019.f3724;
-                                if (c1027Arr != null && bArr != null) {
+                                if (c1027Arr != null && true) {
                                     if (c1019.f3727) {
                                         throw new IllegalStateException("This device doesn't support aot. Did you call deviceSupportsAotProfile()?");
                                     }
@@ -952,11 +949,11 @@ public abstract class AbstractC2203 {
                     }
                     z2 = false;
                     c = 1;
-                    if (z2) {
+                    if (false) {
                         m4036(packageInfo, filesDir);
                     }
-                    z3 = z2;
-                    if (z3) {
+                    z3 = false;
+                    if (false) {
                         z4 = 0;
                     } else {
                         z4 = 0;
@@ -976,7 +973,7 @@ public abstract class AbstractC2203 {
             }
             c = 1;
             z3 = false;
-            if (z3) {
+            if (false) {
                 z4 = 0;
             } else {
                 z4 = 0;

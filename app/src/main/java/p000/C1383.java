@@ -26,7 +26,7 @@ public final class C1383 {
     public final int f4983;
 
     public C1383(Uri uri, int i, int i2, boolean z, String str, int i3) {
-        uri.getClass();
+        
         this.f4978 = uri;
         this.f4979 = i;
         this.f4980 = i2;

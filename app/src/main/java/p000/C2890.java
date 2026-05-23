@@ -165,7 +165,7 @@ public final class C2890 extends LinearLayout {
         C2891 c2891 = this.f9264;
         int tabMaxWidth = c2891.getTabMaxWidth();
         if (tabMaxWidth > 0 && (mode == 0 || size > tabMaxWidth)) {
-            i = View.MeasureSpec.makeMeasureSpec(c2891.f9286, Integer.MIN_VALUE);
+            i = View.MeasureSpec.makeMeasureSpec(c2891.f9286, -2147483648);
         }
         super.onMeasure(i, i2);
         if (this.f9255 != null) {
@@ -439,12 +439,12 @@ public final class C2890 extends LinearLayout {
                 imageView.setVisibility(8);
                 this.f9256.setImageDrawable(null);
             }
-            TextView textView2 = (TextView) view.findViewById(android.R.id.text1);
+            TextView textView2 = (TextView) view.findViewById(16908308);
             this.f9260 = textView2;
             if (textView2 != null) {
                 this.f9263 = textView2.getMaxLines();
             }
-            this.f9261 = (ImageView) view.findViewById(android.R.id.icon);
+            this.f9261 = (ImageView) view.findViewById(16908294);
         } else {
             View view3 = this.f9259;
             if (view3 != null) {
@@ -531,7 +531,7 @@ public final class C2890 extends LinearLayout {
             if (zIsEmpty) {
                 z2 = false;
             } else {
-                this.f9254.getClass();
+                
                 z2 = true;
             }
             textView.setText(!zIsEmpty ? charSequence : null);

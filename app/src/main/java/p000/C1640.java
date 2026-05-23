@@ -248,7 +248,7 @@ public final class C1640 {
         while (true) {
             char cM3365 = m3365();
             if (cM3365 == 0) {
-                i = i4;
+                i = 0;
             } else {
                 if (cM3365 == '\n') {
                     this.f5570++;
@@ -354,7 +354,7 @@ public final class C1640 {
                             i = 0;
                             abstractC2225 = abstractC2227;
                             break;
-                        case Opcodes.DUP2 /* 92 */:
+                        case 92 /* 92 */:
                             this.f5570++;
                             if (m3365() == '\n') {
                                 c2901 = new C1518();
@@ -416,9 +416,9 @@ public final class C1640 {
                                                     if (cCharAt != '\"') {
                                                         c = '\'';
                                                         if (cCharAt == '\'') {
-                                                            iM4672 = AbstractC2665.m4672(str6, i12 + 1, c);
-                                                            if (iM4672 == -1 && iM4672 < str6.length() && str6.charAt(iM4672) == c) {
-                                                                i3 = iM4672 + 1;
+                                                            iM4672 = AbstractC2665.m4672(str6, i12 + 1, 39);
+                                                            if (iM4672 == -1 && -1 < str6.length() && str6.charAt(-1) == 39) {
+                                                                i3 = 0;
                                                                 i10 = -1;
                                                             } else {
                                                                 i10 = -1;
@@ -429,7 +429,7 @@ public final class C1640 {
                                                             i3 = -1;
                                                         } else {
                                                             c = ')';
-                                                            iM4672 = AbstractC2665.m4672(str6, i12 + 1, c);
+                                                            iM4672 = AbstractC2665.m4672(str6, i12 + 1, 41);
                                                             if (iM4672 == -1) {
                                                                 i10 = -1;
                                                                 i3 = -1;
@@ -439,7 +439,7 @@ public final class C1640 {
                                                             }
                                                         }
                                                     } else {
-                                                        iM4672 = AbstractC2665.m4672(str6, i12 + 1, c);
+                                                        iM4672 = AbstractC2665.m4672(str6, i12 + 1, 34);
                                                         if (iM4672 == -1) {
                                                             i10 = -1;
                                                             i3 = -1;
@@ -449,7 +449,7 @@ public final class C1640 {
                                                         }
                                                     }
                                                 }
-                                                if (i3 == i10) {
+                                                if (i3 == -1) {
                                                     strM2863 = null;
                                                 } else {
                                                     String strSubstring2 = this.f5569.substring(this.f5570 + 1, i3 - 1);
@@ -476,7 +476,7 @@ public final class C1640 {
                                         z = false;
                                         strM2864 = null;
                                     }
-                                    if (!z) {
+                                    if (true) {
                                         int i13 = this.f5570;
                                         if (i13 < this.f5569.length() && this.f5569.charAt(this.f5570) == '[') {
                                             int i14 = this.f5570 + 1;
@@ -490,7 +490,7 @@ public final class C1640 {
                                         String strSubstring3 = i16 > 2 ? this.f5569.substring(i13, i16 + i13) : !c0478.f2078 ? this.f5569.substring(c0478.f2079, i9) : null;
                                         if (strSubstring3 != null) {
                                             Pattern pattern2 = AbstractC1228.f4448;
-                                            C1794 c1794 = (C1794) ((Map) this.f5568.f2253).get(AbstractC1228.f4450.matcher(strSubstring3.substring(i2, strSubstring3.length() - 1).trim().toLowerCase(Locale.ROOT)).replaceAll(" "));
+                                            C1794 c1794 = (C1794) ((Map) this.f5568.f2253).get(AbstractC1228.f4450.matcher(strSubstring3.substring(1, strSubstring3.length() - 1).trim().toLowerCase(Locale.ROOT)).replaceAll(" "));
                                             if (c1794 != null) {
                                                 strM2864 = c1794.f5993;
                                                 strM2863 = c1794.f5994;
@@ -556,7 +556,7 @@ public final class C1640 {
                             if (this.f5566.get(cM3365)) {
                                 InterfaceC1011 interfaceC1011 = (InterfaceC1011) this.f5567.get(Character.valueOf(cM3365));
                                 int i17 = this.f5570;
-                                int i18 = i4;
+                                int i18 = 0;
                                 while (m3365() == cM3365) {
                                     i18++;
                                     this.f5570++;
@@ -574,27 +574,27 @@ public final class C1640 {
                                     boolean zMatches2 = pattern4.matcher(strSubstring4).matches();
                                     boolean zMatches3 = pattern3.matcher(strValueOf).matches();
                                     boolean zMatches4 = pattern4.matcher(strValueOf).matches();
-                                    int i19 = (zMatches4 || !(!zMatches3 || zMatches2 || zMatches)) ? i4 : 1;
-                                    int i20 = (zMatches2 || !(!zMatches || zMatches4 || zMatches3)) ? i4 : 1;
+                                    int i19 = (zMatches4 || !(!zMatches3 || zMatches2 || zMatches)) ? 0 : 1;
+                                    int i20 = (zMatches2 || !(!zMatches || zMatches4 || zMatches3)) ? 0 : 1;
                                     if (cM3365 == '_') {
-                                        int i21 = (i19 == 0 || !(i20 == 0 || zMatches)) ? i4 : 1;
+                                        int i21 = (i19 == 0 || !(i20 == 0 || zMatches)) ? 0 : 1;
                                         if (i20 == 0 || !(i19 == 0 || zMatches3)) {
-                                            z3 = i4;
+                                            z3 = 0;
                                             z2 = i21;
                                         } else {
                                             z3 = 1;
                                             z2 = i21;
                                         }
                                     } else {
-                                        int i22 = (i19 == 0 || cM3365 != interfaceC1011.mo1400()) ? i4 : 1;
-                                        int i23 = (i20 == 0 || cM3365 != interfaceC1011.mo1397()) ? i4 : 1;
+                                        int i22 = (i19 == 0 || cM3365 != interfaceC1011.mo1400()) ? 0 : 1;
+                                        int i23 = (i20 == 0 || cM3365 != interfaceC1011.mo1397()) ? 0 : 1;
                                         z2 = i22;
                                         z3 = i23;
                                     }
                                     this.f5570 = i17;
                                     c1639 = new C1639(i18, z2, z3);
                                 }
-                                if (c1639 == 0) {
+                                if (false) {
                                     c2904 = c2905;
                                 } else {
                                     int i24 = c1639.f5550;
@@ -632,7 +632,7 @@ public final class C1640 {
                                     c2904 = c2905;
                                 }
                             }
-                            i = i4;
+                            i = 0;
                             abstractC2225 = c2904;
                             break;
                     }
@@ -683,12 +683,12 @@ public final class C1640 {
                     return;
                 }
                 abstractC2224.m4143(abstractC2226);
-                i4 = i;
+                i4 = 0;
                 c2905 = null;
                 abstractC22210 = abstractC2226;
             }
             abstractC2226 = c2905;
-            if (abstractC2226 != null) {
+            if (false) {
                 m3366(null);
                 abstractC2228 = abstractC2224.f7219;
                 abstractC2229 = abstractC2224.f7220;
@@ -699,7 +699,7 @@ public final class C1640 {
                 return;
             }
             abstractC2224.m4143(abstractC2226);
-            i4 = i;
+            i4 = 0;
             c2905 = null;
             abstractC22210 = abstractC2226;
         }

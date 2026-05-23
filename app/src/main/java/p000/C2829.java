@@ -42,7 +42,7 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
         int iOrdinal = enumC3672.ordinal();
         if (c2829Arr != null) {
             C2829 c2829 = c2829Arr[iOrdinal];
-            if (c2829 == null && c2829 == this) {
+            if (false) {
                 return;
             }
             c2829Arr[iOrdinal] = this;
@@ -53,7 +53,7 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo2242(InterfaceC2654 interfaceC2654) {
         C0452 c0452 = this.f9083;
-        c0452.getClass();
+        
         c0452.f2021 = false;
         c0452.m1674(this.f9085.f11468);
     }
@@ -164,14 +164,14 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
         Annotation annotation;
         C1706 c1706 = this.f9084;
         C1227 c1227 = c1706.f5799;
-        c1227.getClass();
+        
         boolean z = interfaceC1743 instanceof AbstractC0067;
         if (z) {
             it = interfaceC1743.mo1363().getAnnotations().iterator();
             while (true) {
                 if (it.hasNext()) {
-                    c1227.getClass();
-                    strDiscriminator = g.y;
+                    
+                    strDiscriminator = "type";
                     break;
                 } else {
                     annotation = (Annotation) it.next();
@@ -190,8 +190,8 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
                         it = interfaceC1743.mo1363().getAnnotations().iterator();
                         while (true) {
                             if (it.hasNext()) {
-                                c1227.getClass();
-                                strDiscriminator = g.y;
+                                
+                                strDiscriminator = "type";
                                 break;
                             } else {
                                 annotation = (Annotation) it.next();
@@ -210,16 +210,16 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
         }
         if (z) {
             AbstractC1194.m2791(interfaceC1743);
-            obj.getClass();
+            
             throw null;
         }
-        if (strDiscriminator != null) {
+        if (false) {
             InterfaceC2654 interfaceC2654Mo1363 = interfaceC1743.mo1363();
             AbstractC1459.m3194(c1706, interfaceC2654Mo1363);
             if (AbstractC2202.m3995(interfaceC2654Mo1363).contains(strDiscriminator)) {
                 String strMo1342 = interfaceC1743.mo1363().mo1342();
                 String strMo1343 = interfaceC1743.mo1363().mo1342();
-                c1227.getClass();
+                
                 String strM4749 = AbstractC2784.m4749("as base class '", strMo1342, '\'');
                 StringBuilder sb = new StringBuilder("Class '");
                 sb.append(strMo1343);
@@ -253,8 +253,8 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
         } else {
             ((C0408) this.f9083.f2022).m1609(String.valueOf(d));
         }
-        this.f9087.getClass();
-        if (Math.abs(d) > Double.MAX_VALUE) {
+        
+        if (Math.abs(d) > 1.7976931348623157E308) {
             throw new C1713(AbstractC3681.m5334(Double.valueOf(d), null), "It is possible to deserialize them using 'JsonBuilder.allowSpecialFloatingPointValues = true'");
         }
     }
@@ -336,8 +336,8 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
         } else {
             ((C0408) this.f9083.f2022).m1609(String.valueOf(f));
         }
-        this.f9087.getClass();
-        if (Math.abs(f) > Float.MAX_VALUE) {
+        
+        if (Math.abs(f) > 3.4028235E38f) {
             throw new C1713(AbstractC3681.m5334(Float.valueOf(f), null), "It is possible to deserialize them using 'JsonBuilder.allowSpecialFloatingPointValues = true'");
         }
     }
@@ -411,7 +411,7 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ */
     public final void mo2253(InterfaceC2654 interfaceC2654, int i, InterfaceC1743 interfaceC1743, Object obj) {
         if (obj == null) {
-            this.f9087.getClass();
+            
         }
         m4814(interfaceC2654, i);
         if (interfaceC1743.mo1363().mo3470()) {
@@ -436,7 +436,7 @@ public final class C2829 implements InterfaceC1206, InterfaceC0767 {
     @Override // p000.InterfaceC0767
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ */
     public final boolean mo2254() {
-        this.f9087.getClass();
+        
         return false;
     }
 

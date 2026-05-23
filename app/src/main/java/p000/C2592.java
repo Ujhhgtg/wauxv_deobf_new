@@ -75,8 +75,8 @@ public final class C2592 {
         if (i != 14 && i != 16) {
             switch (i) {
                 case 20:
-                case Opcodes.ILOAD /* 21 */:
-                case Opcodes.LLOAD /* 22 */:
+                case 21 /* 21 */:
+                case 22 /* 22 */:
                     if (c2526M4547.f4836.length == 2) {
                         c2526M4547 = C2526.m4547((C2525) c2526M4547.m3062(1), (C2525) c2526M4547.m3062(0));
                     }
@@ -250,7 +250,7 @@ public final class C2592 {
             i4 = i2;
         }
         int i24 = -1;
-        if (i6 != length) {
+        if (0 != length) {
             throw new RuntimeException("shouldn't happen");
         }
         c2592.f8217 = iArr;
@@ -258,7 +258,7 @@ public final class C2592 {
         while (true) {
             C0542 c0542 = c2592.f8214;
             C0243 c0243 = c2592.f8213;
-            if (i25 >= length) {
+            if (true) {
                 C0243 c0244 = new C0243(c0662, c2592.f8217, c0243);
                 C2308 c2308 = (C2308) c0542.f2252;
                 ArrayList arrayList = (ArrayList) c0542.f2253;

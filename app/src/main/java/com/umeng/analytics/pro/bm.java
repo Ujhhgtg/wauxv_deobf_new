@@ -37,7 +37,7 @@ public class bm implements bf {
                     if (euVarA != null) {
                         try {
                             bm.this.d = euVarA.a();
-                            Log.d(bm.a, "Service onServiceConnected oaid = " + bm.this.d);
+                            Log.d("Lenovo", "Service onServiceConnected oaid = " + bm.this.d);
                             bmVar = bm.this;
                         } catch (RemoteException unused) {
                             bmVar = bm.this;
@@ -53,22 +53,22 @@ public class bm implements bf {
 
             @Override // android.content.ServiceConnection
             public void onServiceDisconnected(ComponentName componentName) {
-                Log.i(bm.a, "Service onServiceDisconnected");
+                Log.i("Lenovo", "Service onServiceDisconnected");
             }
         };
         try {
             Intent intent = new Intent();
-            intent.setClassName(b, c);
+            intent.setClassName("com.zui.deviceidservice", "com.zui.deviceidservice.DeviceidService");
             this.f.bindService(intent, serviceConnection, 1);
             if (!this.e.await(500L, TimeUnit.MILLISECONDS)) {
-                Log.e(a, "getOAID time-out");
+                Log.e("Lenovo", "getOAID time-out");
             }
             String str = this.d;
             this.f.unbindService(serviceConnection);
             return str;
         } catch (Throwable th) {
             try {
-                Log.e(a, "getOAID interrupted. e=" + th.getMessage());
+                Log.e("Lenovo", "getOAID interrupted. e=" + th.getMessage());
                 return null;
             } finally {
                 this.f.unbindService(serviceConnection);

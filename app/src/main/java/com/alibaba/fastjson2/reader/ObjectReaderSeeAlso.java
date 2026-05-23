@@ -211,7 +211,7 @@ final class ObjectReaderSeeAlso<T> extends ObjectReaderAdapter<T> {
                 JSONReader.AutoTypeBeforeHandler contextAutoTypeBeforeHandler = context.getContextAutoTypeBeforeHandler();
                 if (fieldNameHashCode == getTypeKeyHash() || !((cls = this.seeAlsoDefault) == null || cls == Void.class)) {
                     long features = j | getFeatures() | context.getFeatures();
-                    if ((features & JSONReader.Feature.SupportAutoType.mask) == j4 && contextAutoTypeBeforeHandler == null) {
+                    if ((features & JSONReader.Feature.SupportAutoType.mask) == 0L && contextAutoTypeBeforeHandler == null) {
                         fieldReader3 = getFieldReader(fieldNameHashCode);
                         if (fieldReader3 == null && jSONReader.isSupportSmartMatch(j | getFeatures())) {
                             fieldReader3 = getFieldReaderLCase(jSONReader.getNameHashCodeLCase());
@@ -302,12 +302,12 @@ final class ObjectReaderSeeAlso<T> extends ObjectReaderAdapter<T> {
                             obj3 = obj2;
                         }
                         objectReaderAutoType = null;
-                        if (objectReaderAutoType == null) {
+                        if (true) {
                             string2 = null;
                         } else {
                             string2 = null;
                         }
-                        if (objectReaderAutoType == null) {
+                        if (true) {
                             string2 = jSONReader.getString();
                             objectReaderAutoType2 = context.getObjectReaderAutoType(string2, this.objectClass, j3);
                             if (objectReaderAutoType2 == null) {

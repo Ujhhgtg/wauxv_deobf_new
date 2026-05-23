@@ -1,7 +1,7 @@
 package p000;
 
 import java.util.Collections;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲁᤝᤞᲈᛸᲇ, reason: contains not printable characters */
@@ -40,10 +40,10 @@ public final class C2603 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C2601.f8465, dexKitBridge, new C2544(15));
-        AbstractC1574.m3295(C2599.f8463, dexKitBridge, new C2544(16));
-        if (AbstractC3471.m5079(EnumC3677.f11538) || AbstractC3471.m5080(EnumC3674.f11500)) {
-            AbstractC1574.m3295(C2600.f8464, dexKitBridge, new C2544(17));
+        AbstractC1574.findMethod(C2601.f8465, dexKitBridge, new C2544(15));
+        AbstractC1574.findMethod(C2599.f8463, dexKitBridge, new C2544(16));
+        if (AbstractC3471.m5079(WeChatVersions.f11538) || AbstractC3471.m5080(WeChatVersionsPlay.f11500)) {
+            AbstractC1574.findMethod(C2600.f8464, dexKitBridge, new C2544(17));
         }
     }
 
@@ -51,13 +51,13 @@ public final class C2603 extends AbstractC2867 implements InterfaceC1582 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
         AbstractC1574.m3316(C2601.f8465, new C2544(18));
-        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.m3314(C2599.f8463)));
+        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.dexToCtor(C2599.f8463)));
         C2544 c2544 = new C2544(19);
         C2603 c2603 = f8467;
         c2603.m3263(c3689M4172, c2544);
         c3689M4172.m5352();
-        if (AbstractC3471.m5079(EnumC3677.f11538) || AbstractC3471.m5080(EnumC3674.f11500)) {
-            C3689 c3689M4173 = C2309.m4172(this, Collections.singletonList(AbstractC1574.m3315(C2600.f8464)));
+        if (AbstractC3471.m5079(WeChatVersions.f11538) || AbstractC3471.m5080(WeChatVersionsPlay.f11500)) {
+            C3689 c3689M4173 = C2309.m4172(this, Collections.singletonList(AbstractC1574.dexToMethod(C2600.f8464)));
             c2603.m3263(c3689M4173, new C2544(20));
             c3689M4173.m5352();
         }

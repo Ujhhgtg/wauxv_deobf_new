@@ -187,9 +187,9 @@ public final class Response implements Closeable {
         }
         switch (i) {
             case 300:
-            case c.p /* 301 */:
-            case c.q /* 302 */:
-            case c.r /* 303 */:
+            case 301 /* 301 */:
+            case 302 /* 302 */:
+            case 303 /* 303 */:
                 return true;
             default:
                 return false;

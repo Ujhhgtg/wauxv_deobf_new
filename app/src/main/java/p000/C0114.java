@@ -13,6 +13,6 @@ public final class C0114 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f1063 = new C0114("AccountInfoCenterHook.ValBgLightColor", "#FFFFFFFF", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f1063 = new C0114("AccountInfoCenterHook.ValBgLightColor", "#FFFFFFFF", null, false, 0, 0.0f, 0L, 124);
     }
 }

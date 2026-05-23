@@ -54,6 +54,6 @@ public final class C1067 {
     public C1067(C1069 c1069, C1068 c1068) {
         this.f3858 = c1069;
         this.f3856 = c1068;
-        this.f3857 = c1068.f3863 ? null : new boolean[c1069.f3872];
+        this.f3857 = c1068.f3863 ? null : new boolean[1];
     }
 }

@@ -35,7 +35,7 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
 
     @Override // p000.InterfaceC2568
     public final Object get() {
-        switch (this.f1980) {
+        switch (1) {
             case 0:
                 return (Bitmap) this.f1981;
             default:
@@ -46,7 +46,7 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
     @Override // p000.InterfaceC1635
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void mo1629() {
-        switch (this.f1980) {
+        switch (1) {
             case 0:
                 ((Bitmap) this.f1981).prepareToDraw();
                 break;
@@ -62,7 +62,7 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
     @Override // p000.InterfaceC2568
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1206() {
-        switch (this.f1980) {
+        switch (1) {
             case 0:
                 ((InterfaceC0424) this.f1982).mo1504((Bitmap) this.f1981);
                 break;
@@ -75,7 +75,7 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
     @Override // p000.InterfaceC2568
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final int mo1207() {
-        switch (this.f1980) {
+        switch (1) {
             case 0:
                 return AbstractC3522.m5106((Bitmap) this.f1981);
             default:
@@ -86,7 +86,7 @@ public final class C0425 implements InterfaceC2568, InterfaceC1635 {
     @Override // p000.InterfaceC2568
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public final Class mo1208() {
-        switch (this.f1980) {
+        switch (1) {
             case 0:
                 return Bitmap.class;
             default:

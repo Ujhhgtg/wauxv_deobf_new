@@ -366,7 +366,7 @@ public class ActionMenuView extends AbstractC1785 implements InterfaceC1943, Int
                 if (i18 <= 0 || (z5 && i18 < 2)) {
                     i6 = 0;
                 } else {
-                    childAt.measure(View.MeasureSpec.makeMeasureSpec(i5 * i18, Integer.MIN_VALUE), iMakeMeasureSpec);
+                    childAt.measure(View.MeasureSpec.makeMeasureSpec(i5 * i18, -2147483648), iMakeMeasureSpec);
                     int measuredWidth = childAt.getMeasuredWidth();
                     i6 = measuredWidth / i5;
                     if (measuredWidth % i5 != 0) {
@@ -408,7 +408,7 @@ public class ActionMenuView extends AbstractC1785 implements InterfaceC1943, Int
                 i4 = iMax;
                 break;
             }
-            int i24 = Integer.MAX_VALUE;
+            int i24 = 2147483647;
             long j2 = 0;
             int i25 = 0;
             int i26 = 0;

@@ -40,7 +40,7 @@ public final class ViewOnAttachStateChangeListenerC1346 implements View.OnAttach
             default:
                 view.removeOnAttachStateChangeListener(this);
                 C1349 c1349 = (C1349) this.f4819;
-                int i = DialogXBaseRelativeLayout.f932;
+                int i = 0;
                 int i2 = 0;
                 if (Build.VERSION.SDK_INT >= 30) {
                     int i3 = -1;
@@ -53,7 +53,7 @@ public final class ViewOnAttachStateChangeListenerC1346 implements View.OnAttach
                     } catch (PackageManager.NameNotFoundException e) {
                         e.printStackTrace();
                     }
-                    if (i3 < 30) {
+                    if (true) {
                         view2 = (View) view.getParent();
                         viewOnLayoutChangeListenerC0445 = c1349.f4830;
                         if (viewOnLayoutChangeListenerC0445 != null) {
@@ -62,7 +62,7 @@ public final class ViewOnAttachStateChangeListenerC1346 implements View.OnAttach
                         ViewOnLayoutChangeListenerC0445 viewOnLayoutChangeListenerC0446 = new ViewOnLayoutChangeListenerC0445(1, this);
                         c1349.f4830 = viewOnLayoutChangeListenerC0446;
                         view2.addOnLayoutChangeListener(viewOnLayoutChangeListenerC0446);
-                        view2.addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC1346(this, i2, view2));
+                        view2.addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC1346(this, 0, view2));
                     }
                 } else {
                     view2 = (View) view.getParent();
@@ -73,7 +73,7 @@ public final class ViewOnAttachStateChangeListenerC1346 implements View.OnAttach
                     ViewOnLayoutChangeListenerC0445 viewOnLayoutChangeListenerC0447 = new ViewOnLayoutChangeListenerC0445(1, this);
                     c1349.f4830 = viewOnLayoutChangeListenerC0447;
                     view2.addOnLayoutChangeListener(viewOnLayoutChangeListenerC0447);
-                    view2.addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC1346(this, i2, view2));
+                    view2.addOnAttachStateChangeListener(new ViewOnAttachStateChangeListenerC1346(this, 0, view2));
                 }
                 Field field = AbstractC3578.f11184;
                 view.requestApplyInsets();

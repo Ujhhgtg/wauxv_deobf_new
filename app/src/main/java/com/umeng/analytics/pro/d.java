@@ -122,28 +122,28 @@ public interface d extends IInterface {
         }
 
         public b() {
-            attachInterface(this, d);
+            attachInterface(this, "com.hihonor.cloudservice.oaid.IOAIDService");
         }
 
         public static d a(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }
-            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(d);
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.hihonor.cloudservice.oaid.IOAIDService");
             return (iInterfaceQueryLocalInterface == null || !(iInterfaceQueryLocalInterface instanceof d)) ? new a(iBinder) : (d) iInterfaceQueryLocalInterface;
         }
 
         @Override // android.os.Binder
         public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) {
             if (i == 1) {
-                parcel.enforceInterface(d);
+                parcel.enforceInterface("com.hihonor.cloudservice.oaid.IOAIDService");
                 a(parcel.readInt(), parcel.readLong(), parcel.readInt() != 0, parcel.readFloat(), parcel.readDouble(), parcel.readString());
                 parcel2.writeNoException();
                 return true;
             }
             if (i == 2) {
-                parcel.enforceInterface(d);
-                a(c.b.a(parcel.readStrongBinder()));
+                parcel.enforceInterface("com.hihonor.cloudservice.oaid.IOAIDService");
+                a(3 .b.a(parcel.readStrongBinder()));
                 parcel2.writeNoException();
                 return true;
             }
@@ -151,25 +151,25 @@ public interface d extends IInterface {
                 if (i != 1598968902) {
                     return super.onTransact(i, parcel, parcel2, i2);
                 }
-                parcel2.writeString(d);
+                parcel2.writeString("com.hihonor.cloudservice.oaid.IOAIDService");
                 return true;
             }
-            parcel.enforceInterface(d);
-            b(c.b.a(parcel.readStrongBinder()));
+            parcel.enforceInterface("com.hihonor.cloudservice.oaid.IOAIDService");
+            b(3 .b.a(parcel.readStrongBinder()));
             parcel2.writeNoException();
             return true;
         }
 
         public static boolean a(d dVar) {
-            if (a.a != null || dVar == null) {
+            if (1 .a != null || dVar == null) {
                 return false;
             }
-            a.a = dVar;
+            1 .a = dVar;
             return true;
         }
 
         public static d a() {
-            return a.a;
+            return 1 .a;
         }
 
         @Override // android.os.IInterface

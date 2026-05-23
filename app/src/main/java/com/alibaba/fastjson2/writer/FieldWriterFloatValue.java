@@ -34,13 +34,13 @@ final class FieldWriterFloatValue<T> extends FieldWriterFloat<T> {
         long features = this.features | jSONWriter.getFeatures();
         try {
             float floatValue = this.propertyAccessor.getFloatValue(t);
-            if (floatValue == 0.0f && this.defaultValue == null && (JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE & features) != 0) {
+            if (floatValue == 0.0f && this.defaultValue == null && (4096L & features) != 0) {
                 return false;
             }
             writeFloatValue(jSONWriter, floatValue, features);
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

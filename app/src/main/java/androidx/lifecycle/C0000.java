@@ -136,7 +136,7 @@ public final class C0000 {
                 arrayList.add(enumC1772);
                 C1767 c1767 = EnumC1769.Companion;
                 EnumC1770 enumC1773 = c1778.f5898;
-                c1767.getClass();
+                
                 int iOrdinal = enumC1773.ordinal();
                 if (iOrdinal == 1) {
                     enumC1769 = EnumC1769.ON_CREATE;
@@ -176,7 +176,7 @@ public final class C0000 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void m99(String str) {
         if (this.f298) {
-            ((C0252) C0252.m1341().f1421).getClass();
+            
             if (Looper.getMainLooper().getThread() != Thread.currentThread()) {
                 throw new IllegalStateException(AbstractC1194.m2785("Method ", str, " must be called on the main thread").toString());
             }
@@ -248,7 +248,7 @@ public final class C0000 {
                     while (c1778.f5898.compareTo(this.f300) > 0 && !this.f304 && this.f299.f4650.containsKey(interfaceC1776)) {
                         C1767 c1767 = EnumC1769.Companion;
                         EnumC1770 enumC1772 = c1778.f5898;
-                        c1767.getClass();
+                        
                         int iOrdinal = enumC1772.ordinal();
                         if (iOrdinal == 2) {
                             enumC17610 = EnumC1769.ON_DESTROY;
@@ -269,7 +269,7 @@ public final class C0000 {
             C2617 c2617 = this.f299.f8504;
             if (!this.f304 && c2617 != null && this.f300.compareTo(((C1778) c2617.f8497).f5898) > 0) {
                 C1272 c1274 = this.f299;
-                c1274.getClass();
+                
                 C2618 c2618 = new C2618(c1274);
                 c1274.f8505.put(c2618, Boolean.FALSE);
                 while (c2618.hasNext() && !this.f304) {
@@ -280,7 +280,7 @@ public final class C0000 {
                         arrayList.add(c1779.f5898);
                         C1767 c1768 = EnumC1769.Companion;
                         EnumC1770 enumC1773 = c1779.f5898;
-                        c1768.getClass();
+                        
                         int iOrdinal2 = enumC1773.ordinal();
                         if (iOrdinal2 == 1) {
                             enumC1769 = EnumC1769.ON_CREATE;

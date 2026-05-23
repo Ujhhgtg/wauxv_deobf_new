@@ -13,7 +13,7 @@ public class dd extends dk {
     public static final int h = 7;
     private static final ei j = new ei("TApplicationException");
     private static final dy k = new dy("message", (byte) 11, 1);
-    private static final dy l = new dy(g.y, (byte) 8, 2);
+    private static final dy l = new dy(6 .y, (byte) 8, 2);
     private static final long m = 1;
     protected int i;
 

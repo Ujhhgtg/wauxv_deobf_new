@@ -35,7 +35,7 @@ public class an implements ad {
             while (it.hasNext()) {
                 str = str + it.next() + ",";
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "WeekOn skipped. day of week: " + i + "; config: " + str);
+            UMRTLog.i("MobclickRT", "WeekOn skipped. day of week: " + i + "; config: " + str);
             return false;
         } catch (Throwable unused) {
             return false;

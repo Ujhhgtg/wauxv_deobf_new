@@ -81,7 +81,7 @@ public final class C1573 implements InterfaceC0955 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1856(EnumC2401 enumC2401, InterfaceC0954 interfaceC0954) {
         C1468 c1468 = this.f5464;
-        int i = AbstractC1853.f6168;
+        int i = 0;
         long jElapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
         try {
             interfaceC0954.mo1883(m3286(c1468.m3236(), 0, null, c1468.f5232.mo3255()));
@@ -154,7 +154,7 @@ public final class C1573 implements InterfaceC0955 {
                 }
                 if (i3 != 3) {
                     if (iM3285 == -1) {
-                        throw new C1327("Http request failed", iM3285, (IOException) null);
+                        throw new C1327("Http request failed", -1, (IOException) null);
                     }
                     try {
                         throw new C1327(this.f5466.getResponseMessage(), iM3285, (IOException) null);

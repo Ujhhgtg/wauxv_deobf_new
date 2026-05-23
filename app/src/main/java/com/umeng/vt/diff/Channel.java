@@ -52,7 +52,7 @@ public class Channel {
     }
 
     public void loadConfig(Context context) {
-        String strImprintProperty = UMEnvelopeBuild.imprintProperty(context, UM_VISUAL_IMPRINT, null);
+        String strImprintProperty = UMEnvelopeBuild.imprintProperty(context, "utm-visual", null);
         if (TextUtils.isEmpty(strImprintProperty)) {
             return;
         }
@@ -63,10 +63,10 @@ public class Channel {
     }
 
     public void registerListener(final Context context) {
-        ImprintHandler.getImprintService(context).registImprintCallback(UM_VISUAL_IMPRINT, new UMImprintChangeCallback() { // from class: com.umeng.vt.diff.Channel.1
+        ImprintHandler.getImprintService(context).registImprintCallback("utm-visual", new UMImprintChangeCallback() { // from class: com.umeng.vt.diff.Channel.1
             @Override // com.umeng.commonsdk.statistics.internal.UMImprintChangeCallback
             public void onImprintValueChanged(String str, String str2) {
-                if (Channel.UM_VISUAL_IMPRINT.equals(str)) {
+                if ("utm-visual".equals(str)) {
                     Channel.this.loadConfig(context);
                 }
             }

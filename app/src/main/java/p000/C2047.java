@@ -13,6 +13,6 @@ public final class C2047 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f6830 = new C2047("MsgBgColorHook.ValRightDarkBgColor", "#FFD7FAE4", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f6830 = new C2047("MsgBgColorHook.ValRightDarkBgColor", "#FFD7FAE4", null, false, 0, 0.0f, 0L, 124);
     }
 }

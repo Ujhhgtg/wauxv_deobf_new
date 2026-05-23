@@ -18,13 +18,13 @@ final class FieldWriterInt32Value<T> extends FieldWriterInt32<T> {
         long features = this.features | jSONWriter.getFeatures();
         try {
             int intValue = this.propertyAccessor.getIntValue(t);
-            if (intValue == 0 && this.defaultValue == null && (features & JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE) != 0) {
+            if (intValue == 0 && this.defaultValue == null && (features & 4096L) != 0) {
                 return false;
             }
             writeInt32(jSONWriter, intValue);
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

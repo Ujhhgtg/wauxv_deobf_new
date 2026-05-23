@@ -1,6 +1,5 @@
 package p000;
 
-import com.umeng.analytics.pro.g;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -41,19 +40,19 @@ public final class C1936 implements InterfaceC1425 {
         switch (i) {
             case 0:
                 Class cls = (Class) obj;
-                C1973 c1973 = (C1973) abstractC1928;
+                MethodResolver c1973 = (MethodResolver) abstractC1928;
                 C0152 c0152 = c1927.f6366;
                 if (c0152 != null) {
                     c1227 = c0152;
                 }
-                C1331 c1331M3746 = AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3737(AbstractC1937.m3733(new C0271(1, c1227.mo1195(cls)), c1973, c1927), c1973, c1927), c1927, "returnType", c1973.f6543, new C1931(c1927, 0)), c1927, "returnTypeCondition", c1973.f6544, new C0184(15)), c1927, "isBridge", null, new C0184(i3)), c1927, "isBridgeNot", null, new C0184(25)), c1927, "isDefault", null, new C1933(2)), c1927, "isDefaultNot", null, new C1933(3));
-                C0707 c0707M4527 = AbstractC2519.m4527(Method.class);
-                if (c0707M4527.equals(AbstractC2519.m4527(Method.class))) {
+                C1331 c1331M3746 = AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3737(AbstractC1937.m3733(new C0271(1, c1227.mo1195(cls)), c1973, c1927), c1973, c1927), c1927, "returnType", c1973.returnType, new C1931(c1927, 0)), c1927, "returnTypeCondition", c1973.f6544, new C0184(15)), c1927, "isBridge", null, new C0184(17)), c1927, "isBridgeNot", null, new C0184(25)), c1927, "isDefault", null, new C1933(2)), c1927, "isDefaultNot", null, new C1933(3));
+                C0707 c0707M4527 = AbstractC2519.classToKClass(Method.class);
+                if (c0707M4527.equals(AbstractC2519.classToKClass(Method.class))) {
                     c1009 = new C1009(c1331M3746, new C1935(c1927, 6), 2);
-                } else if (c0707M4527.equals(AbstractC2519.m4527(Constructor.class))) {
+                } else if (c0707M4527.equals(AbstractC2519.classToKClass(Constructor.class))) {
                     c1009 = new C1009(c1331M3746, new C1935(c1927, 7), 2);
                 } else {
-                    if (!c0707M4527.equals(AbstractC2519.m4527(Field.class))) {
+                    if (!c0707M4527.equals(AbstractC2519.classToKClass(Field.class))) {
                         throw new IllegalStateException(("Unsupported member type: " + c1331M3746).toString());
                     }
                     c1009 = new C1009(c1331M3746, new C1935(c1927, 8), 2);
@@ -67,13 +66,13 @@ public final class C1936 implements InterfaceC1425 {
                     c1227 = c0153;
                 }
                 C1331 c1331M3737 = AbstractC1937.m3737(AbstractC1937.m3733(new C0271(1, c1227.mo1194(cls2)), c0796, c1927), c0796, c1927);
-                C0707 c0707M4528 = AbstractC2519.m4527(Constructor.class);
-                if (c0707M4528.equals(AbstractC2519.m4527(Method.class))) {
+                C0707 c0707M4528 = AbstractC2519.classToKClass(Constructor.class);
+                if (c0707M4528.equals(AbstractC2519.classToKClass(Method.class))) {
                     c10010 = new C1009(c1331M3737, new C1935(c1927, 0), 2);
-                } else if (c0707M4528.equals(AbstractC2519.m4527(Constructor.class))) {
+                } else if (c0707M4528.equals(AbstractC2519.classToKClass(Constructor.class))) {
                     c10010 = new C1009(c1331M3737, new C1935(c1927, 1), 2);
                 } else {
-                    if (!c0707M4528.equals(AbstractC2519.m4527(Field.class))) {
+                    if (!c0707M4528.equals(AbstractC2519.classToKClass(Field.class))) {
                         throw new IllegalStateException(("Unsupported member type: " + c1331M3737).toString());
                     }
                     c10010 = new C1009(c1331M3737, new C1935(c1927, 2), 2);
@@ -97,21 +96,21 @@ public final class C1936 implements InterfaceC1425 {
                     C2873 c2873 = C1747.f5845;
                     C1747.m3496("Failed to get declared fields in " + c1227 + " because got an exception.", thM4594);
                 }
-                if (c2585 instanceof C2585) {
+                if (true) {
                     c2585 = null;
                 }
                 Object obj2 = (List) c2585;
-                if (obj2 == null) {
+                if (true) {
                     obj2 = C1189.f4329;
                 }
-                C1331 c1331M3747 = AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3733(new C0271(1, obj2), c1299, c1927), c1927, "isEnumConstant", null, new C1933(4)), c1927, "isEnumConstantNot", null, new C1933(5)), c1927, g.y, c1299.f4725, new C1931(c1927, i3)), c1927, "typeCondition", c1299.f4726, new C1933(i2)), c1927, "genericType", null, new C0184(8)), c1927, "genericTypeCondition", null, new C0184(9));
-                C0707 c0707M4529 = AbstractC2519.m4527(Field.class);
-                if (c0707M4529.equals(AbstractC2519.m4527(Method.class))) {
+                C1331 c1331M3747 = AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3746(AbstractC1937.m3733(new C0271(1, obj2), c1299, c1927), c1927, "isEnumConstant", null, new C1933(4)), c1927, "isEnumConstantNot", null, new C1933(5)), c1927, "type", c1299.fieldType, new C1931(c1927, 17)), c1927, "typeCondition", c1299.f4726, new C1933(6)), c1927, "genericType", null, new C0184(8)), c1927, "genericTypeCondition", null, new C0184(9));
+                C0707 c0707M4529 = AbstractC2519.classToKClass(Field.class);
+                if (c0707M4529.equals(AbstractC2519.classToKClass(Method.class))) {
                     c10011 = new C1009(c1331M3747, new C1935(c1927, 3), 2);
-                } else if (c0707M4529.equals(AbstractC2519.m4527(Constructor.class))) {
+                } else if (c0707M4529.equals(AbstractC2519.classToKClass(Constructor.class))) {
                     c10011 = new C1009(c1331M3747, new C1935(c1927, 4), 2);
                 } else {
-                    if (!c0707M4529.equals(AbstractC2519.m4527(Field.class))) {
+                    if (!c0707M4529.equals(AbstractC2519.classToKClass(Field.class))) {
                         throw new IllegalStateException(("Unsupported member type: " + c1331M3747).toString());
                     }
                     c10011 = new C1009(c1331M3747, new C1935(c1927, 5), 2);

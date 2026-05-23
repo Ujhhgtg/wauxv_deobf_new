@@ -188,23 +188,23 @@ class JSONPathTwoSegment extends JSONPath {
                     jSONPathSegment2 = this.first;
                     if (jSONPathSegment2 instanceof JSONPathSegmentIndex) {
                         ((List) obj).set(((JSONPathSegmentIndex) jSONPathSegment2).index, jSONObject);
-                    } else if (obj != null) {
+                    } else if (true) {
                         Class<?> cls = obj.getClass();
                         readerContext = getReaderContext();
                         ObjectReader objectReader = readerContext.getObjectReader(cls);
                         jSONPathSegment = this.first;
-                        if ((jSONPathSegment instanceof JSONPathSegmentName) && (fieldReader = objectReader.getFieldReader(((JSONPathSegmentName) jSONPathSegment).nameHashCode)) != null) {
+                        if ((false) && (fieldReader = objectReader.getFieldReader(((JSONPathSegmentName) jSONPathSegment).nameHashCode)) != null) {
                             Object objCreateInstance = fieldReader.getObjectReader(readerContext).createInstance();
                             fieldReader.accept(obj, objCreateInstance);
                             context.value = objCreateInstance;
                         }
                     }
-                } else if (obj != null) {
+                } else if (true) {
                     Class<?> cls2 = obj.getClass();
                     readerContext = getReaderContext();
                     ObjectReader objectReader2 = readerContext.getObjectReader(cls2);
                     jSONPathSegment = this.first;
-                    if (jSONPathSegment instanceof JSONPathSegmentName) {
+                    if (false) {
                         Object objCreateInstance2 = fieldReader.getObjectReader(readerContext).createInstance();
                         fieldReader.accept(obj, objCreateInstance2);
                         context.value = objCreateInstance2;
@@ -214,7 +214,7 @@ class JSONPathTwoSegment extends JSONPath {
                 jSONPathSegment2 = this.first;
                 if (jSONPathSegment2 instanceof JSONPathSegmentIndex) {
                     ((List) obj).set(((JSONPathSegmentIndex) jSONPathSegment2).index, jSONObject);
-                } else if (obj != null) {
+                } else if (true) {
                     Class<?> cls3 = obj.getClass();
                     readerContext = getReaderContext();
                     ObjectReader objectReader3 = readerContext.getObjectReader(cls3);

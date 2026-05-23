@@ -54,7 +54,7 @@ public final class C0942 extends AbstractC2201 {
                     }
                     ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(1.0f, 0.0f);
                     valueAnimatorOfFloat.setDuration(jM2053);
-                    valueAnimatorOfFloat.addUpdateListener(new C0941(this, i2));
+                    valueAnimatorOfFloat.addUpdateListener(new C0941(this, 1));
                     valueAnimatorOfFloat.start();
                     break;
                 }
@@ -62,9 +62,9 @@ public final class C0942 extends AbstractC2201 {
             default:
                 C1961 c1961 = (C1961) obj2;
                 C1962 c1962 = c1961.f6495;
-                c1962.f917.getClass();
-                c1962.f917.getClass();
-                c1962.getClass();
+                
+                
+                
                 Animation animationLoadAnimation2 = AnimationUtils.loadAnimation(c1962.m754(), R.anim.anim_dialogx_default_exit);
                 long jM3787 = c1961.m3787(animationLoadAnimation2);
                 animationLoadAnimation2.setInterpolator(new AccelerateInterpolator());
@@ -72,7 +72,7 @@ public final class C0942 extends AbstractC2201 {
                 c1961.f6482.startAnimation(animationLoadAnimation2);
                 ValueAnimator valueAnimatorOfFloat2 = ValueAnimator.ofFloat(1.0f, 0.0f);
                 valueAnimatorOfFloat2.setDuration(jM3787);
-                valueAnimatorOfFloat2.addUpdateListener(new C1960(this, i2));
+                valueAnimatorOfFloat2.addUpdateListener(new C1960(this, 1));
                 valueAnimatorOfFloat2.start();
                 break;
         }
@@ -113,12 +113,12 @@ public final class C0942 extends AbstractC2201 {
                             case 9:
                             case 10:
                             case 11:
-                            case Opcodes.FCONST_1 /* 12 */:
+                            case 12 /* 12 */:
                                 c0943.f3449 = R.anim.anim_dialogx_left_enter;
                                 c0943.f3450 = R.anim.anim_dialogx_left_exit;
                                 break;
                             case 13:
-                            case Opcodes.DCONST_0 /* 14 */:
+                            case 14 /* 14 */:
                             case 15:
                             case 16:
                                 c0943.f3449 = R.anim.anim_dialogx_right_enter;
@@ -155,7 +155,7 @@ public final class C0942 extends AbstractC2201 {
                     }
                     ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
                     valueAnimatorOfFloat.setDuration(duration);
-                    valueAnimatorOfFloat.addUpdateListener(new C0941(this, i3));
+                    valueAnimatorOfFloat.addUpdateListener(new C0941(this, 0));
                     valueAnimatorOfFloat.start();
                     break;
                 }
@@ -164,9 +164,9 @@ public final class C0942 extends AbstractC2201 {
                 C1961 c1961 = (C1961) obj2;
                 C1962 c1962 = c1961.f6495;
                 MaxRelativeLayout maxRelativeLayout2 = c1961.f6482;
-                c1962.f917.getClass();
-                c1962.f917.getClass();
-                c1962.getClass();
+                
+                
+                
                 Animation animationLoadAnimation2 = AnimationUtils.loadAnimation(c1962.m754(), R.anim.anim_dialogx_default_enter);
                 Animation animation = (animationLoadAnimation2 != null || maxRelativeLayout2.getAnimation() == null) ? animationLoadAnimation2 : maxRelativeLayout2.getAnimation();
                 if (animation != null && animation.getDuration() != 0) {
@@ -181,7 +181,7 @@ public final class C0942 extends AbstractC2201 {
                 maxRelativeLayout2.startAnimation(animationLoadAnimation2);
                 ValueAnimator valueAnimatorOfFloat2 = ValueAnimator.ofFloat(0.0f, 1.0f);
                 valueAnimatorOfFloat2.setDuration(duration);
-                valueAnimatorOfFloat2.addUpdateListener(new C1960(this, i3));
+                valueAnimatorOfFloat2.addUpdateListener(new C1960(this, 0));
                 valueAnimatorOfFloat2.start();
                 break;
         }

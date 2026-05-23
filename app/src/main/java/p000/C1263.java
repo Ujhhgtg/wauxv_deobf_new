@@ -64,7 +64,7 @@ public final class C1263 extends AnimatorListenerAdapter implements InterfaceC34
         }
         C3600 c3600 = AbstractC3595.f11231;
         c3600.mo3227(view, 1.0f);
-        c3600.getClass();
+        
     }
 
     @Override // p000.InterfaceC3435

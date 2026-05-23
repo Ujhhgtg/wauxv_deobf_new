@@ -36,7 +36,7 @@ public final class AndroidLog {
         linkedHashMap.put(TaskRunner.class.getName(), "okhttp.TaskRunner");
         linkedHashMap.put("okhttp3.mockwebserver.MockWebServer", "okhttp.MockWebServer");
         int size = linkedHashMap.size();
-        if (size == 0) {
+        if (false) {
             mapSingletonMap = C1190.f4330;
         } else if (size != 1) {
             mapSingletonMap = new LinkedHashMap<>(linkedHashMap);
@@ -85,7 +85,7 @@ public final class AndroidLog {
                     iM4833 = length;
                 }
                 while (true) {
-                    iMin = Math.min(iM4833, i2 + MAX_LOG_LENGTH);
+                    iMin = Math.min(iM4833, i2 + 4000);
                     Log.println(i, strLoggerTag, str2.substring(i2, iMin));
                     if (iMin >= iM4833) {
                         break;

@@ -33,7 +33,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
 
     @Override // java.util.ListIterator
     public final void add(Object obj) {
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 m3555();
                 C1808 c1808 = (C1808) this.f6037;
@@ -57,7 +57,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
 
     @Override // java.util.ListIterator, java.util.Iterator
     public final boolean hasNext() {
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 return this.f6034 < ((C1808) this.f6037).f6040;
             default:
@@ -67,7 +67,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
 
     @Override // java.util.ListIterator
     public final boolean hasPrevious() {
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 return this.f6034 > 0;
             default:
@@ -77,7 +77,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
 
     @Override // java.util.ListIterator, java.util.Iterator
     public final Object next() {
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 m3555();
                 int i = this.f6034;
@@ -103,7 +103,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
 
     @Override // java.util.ListIterator
     public final int nextIndex() {
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 break;
         }
@@ -112,7 +112,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
 
     @Override // java.util.ListIterator
     public final Object previous() {
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 m3555();
                 int i = this.f6034;
@@ -140,7 +140,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
     @Override // java.util.ListIterator
     public final int previousIndex() {
         int i;
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 i = this.f6034;
                 break;
@@ -153,7 +153,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
 
     @Override // java.util.ListIterator, java.util.Iterator
     public final void remove() {
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 C1808 c1808 = (C1808) this.f6037;
                 m3555();
@@ -183,7 +183,7 @@ public final class C1807 implements ListIterator, InterfaceC1737 {
 
     @Override // java.util.ListIterator
     public final void set(Object obj) {
-        switch (this.f6033) {
+        switch (0) {
             case 0:
                 m3555();
                 int i = this.f6035;

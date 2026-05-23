@@ -303,13 +303,13 @@ public final class C0788 {
                     case 11:
                         this.f3022 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3022);
                         break;
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                         this.f3023 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3023);
                         break;
                     case 13:
                         this.f3019 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3019);
                         break;
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                         this.f3021 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3021);
                         break;
                     case 15:
@@ -318,10 +318,10 @@ public final class C0788 {
                     case 16:
                         this.f3020 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3020);
                         break;
-                    case Opcodes.SIPUSH /* 17 */:
+                    case 17 /* 17 */:
                         this.f2988 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.f2988);
                         break;
-                    case Opcodes.LDC /* 18 */:
+                    case 18 /* 18 */:
                         this.f2989 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.f2989);
                         break;
                     case 19:
@@ -330,19 +330,19 @@ public final class C0788 {
                     case 20:
                         this.f3004 = typedArrayObtainStyledAttributes.getFloat(index, this.f3004);
                         break;
-                    case Opcodes.ILOAD /* 21 */:
+                    case 21 /* 21 */:
                         this.f2987 = typedArrayObtainStyledAttributes.getLayoutDimension(index, this.f2987);
                         break;
-                    case Opcodes.LLOAD /* 22 */:
+                    case 22 /* 22 */:
                         this.f2986 = typedArrayObtainStyledAttributes.getLayoutDimension(index, this.f2986);
                         break;
-                    case Opcodes.FLOAD /* 23 */:
+                    case 23 /* 23 */:
                         this.f3013 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3013);
                         break;
-                    case Opcodes.DLOAD /* 24 */:
+                    case 24 /* 24 */:
                         this.f2991 = C0792.m2301(typedArrayObtainStyledAttributes, index, this.f2991);
                         break;
-                    case Opcodes.ALOAD /* 25 */:
+                    case 25 /* 25 */:
                         this.f2992 = C0792.m2301(typedArrayObtainStyledAttributes, index, this.f2992);
                         break;
                     case 26:
@@ -392,19 +392,19 @@ public final class C0788 {
                         break;
                     default:
                         switch (i2) {
-                            case Opcodes.ISTORE /* 54 */:
+                            case 54 /* 54 */:
                                 this.f3029 = typedArrayObtainStyledAttributes.getInt(index, this.f3029);
                                 break;
-                            case Opcodes.LSTORE /* 55 */:
+                            case 55 /* 55 */:
                                 this.f3030 = typedArrayObtainStyledAttributes.getInt(index, this.f3030);
                                 break;
-                            case Opcodes.FSTORE /* 56 */:
+                            case 56 /* 56 */:
                                 this.f3031 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3031);
                                 break;
-                            case Opcodes.DSTORE /* 57 */:
+                            case 57 /* 57 */:
                                 this.f3032 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3032);
                                 break;
-                            case Opcodes.ASTORE /* 58 */:
+                            case 58 /* 58 */:
                                 this.f3033 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.f3033);
                                 break;
                             case 59:

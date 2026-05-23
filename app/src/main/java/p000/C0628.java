@@ -13,6 +13,6 @@ public final class C0628 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f2463 = new C0628("ChatInputHintHook.ValHintTip", "今日已发${totalMsg}条", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f2463 = new C0628("ChatInputHintHook.ValHintTip", "今日已发${totalMsg}条", null, false, 0, 0.0f, 0L, 124);
     }
 }

@@ -3982,7 +3982,7 @@ public class DateUtils {
         int year = zonedDateTime.getYear();
         int monthValue = zonedDateTime.getMonthValue();
         int dayOfMonth = zonedDateTime.getDayOfMonth();
-        str.getClass();
+        
         switch (str) {
             case "yyyy-MM-dd":
                 return format(year, monthValue, dayOfMonth, DateTimeFormatPattern.DATE_FORMAT_10_DASH);
@@ -4286,7 +4286,7 @@ public class DateUtils {
         int year = localDateTime.getYear();
         int monthValue = localDateTime.getMonthValue();
         int dayOfMonth = localDateTime.getDayOfMonth();
-        str.getClass();
+        
         switch (str) {
             case "yyyy-MM-dd":
                 return formatYMD10(year, monthValue, dayOfMonth);
@@ -4864,7 +4864,7 @@ public class DateUtils {
         int year = localDate.getYear();
         int monthValue = localDate.getMonthValue();
         int dayOfMonth = localDate.getDayOfMonth();
-        str.getClass();
+        
         switch (str) {
             case "yyyy-MM-dd":
                 return format(year, monthValue, dayOfMonth, DateTimeFormatPattern.DATE_FORMAT_10_DASH);
@@ -5980,7 +5980,7 @@ public class DateUtils {
         int i;
         char c19;
         int totalSeconds;
-        str.getClass();
+        
         if (JDKUtils.JVM_VERSION == 8) {
             char[] charArray = JDKUtils.getCharArray(str);
             if (charArray.length == 19) {
@@ -57563,7 +57563,7 @@ public class DateUtils {
         char c5;
         int i2;
         int totalSeconds;
-        bArr.getClass();
+        
         char c6 = (char) bArr[i];
         char c7 = (char) bArr[i + 1];
         char c8 = (char) bArr[i + 2];
@@ -57882,7 +57882,7 @@ public class DateUtils {
         char c5;
         int i2;
         int totalSeconds;
-        cArr.getClass();
+        
         char c6 = cArr[i];
         char c7 = cArr[i + 1];
         char c8 = cArr[i + 2];

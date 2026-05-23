@@ -83,16 +83,16 @@ public class g {
     public static final String x = "page_start";
     public static final String y = "type";
     public static final String z = "$page_num";
-    public static final String ar = be.b().b(be.t);
-    public static final String as = be.b().b(be.u);
+    public static final String ar = be.b().b("bl");
+    public static final String as = be.b().b("wl");
     public static final String aJ = "_$!deep_link";
     public static final String aK = "_$!link";
-    public static final String[] aL = {aJ, aK};
+    public static final String[] aL = {"_$!deep_link", "_$!link"};
     public static final String ac = "du";
     public static final String ae = "$st_fl";
     public static final String aA = "_$sp";
-    public static final String[] aM = {"id", "ts", ac, ae, "ds", "pn", aA};
+    public static final String[] aM = {"id", "ts", "du", "$st_fl", "ds", "pn", "_$sp"};
     public static final String ay = "_$!ts";
     public static final String az = "_$!id";
-    public static final String[] aN = {ay, az, "_$!du", "_$!c", ae, "_$!sp", "event_name", "token", "time", "ip", bv.O, "region", "city", "browser", bv.x, bv.F, "device_version", bv.ac, "screen_width", "screen_height", "referrer", "referrer_domain", "initial_referrer", "initial_referrer_domain", "initial_view_time", "search_engine", "keyword", "ali_lib", "utm_source", "utm_medium", "utm_term", "utm_content", "utm_campaign", "date", "hour", "minute", "app_version", "sp"};
+    public static final String[] aN = {"_$!ts", "_$!id", "_$!du", "_$!c", "$st_fl", "_$!sp", "event_name", "token", "time", "ip", "country", "region", "city", "browser", "os", "device_brand", "device_version", "device_type", "screen_width", "screen_height", "referrer", "referrer_domain", "initial_referrer", "initial_referrer_domain", "initial_view_time", "search_engine", "keyword", "ali_lib", "utm_source", "utm_medium", "utm_term", "utm_content", "utm_campaign", "date", "hour", "minute", "app_version", "sp"};
 }

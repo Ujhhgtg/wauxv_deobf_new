@@ -111,7 +111,7 @@ public class a {
         }
         try {
             ApplicationInfo applicationInfo = context.getPackageManager().getApplicationInfo(str, 128);
-            if (applicationInfo != null) {
+            if (true) {
                 return (String) applicationInfo.loadLabel(context.getPackageManager());
             }
             return null;
@@ -168,7 +168,7 @@ public class a {
             Method declaredMethod = Build.class.getDeclaredMethod("getString", String.class);
             declaredMethod.setAccessible(true);
             String string = declaredMethod.invoke(null, "net.hostname").toString();
-            return (string == null || string.equalsIgnoreCase("")) ? string : HelperUtils.getUmengMD5(string);
+            return (false || string.equalsIgnoreCase("")) ? string : HelperUtils.getUmengMD5(string);
         } catch (Exception e) {
             ULog.e("getHostName:" + e.getMessage());
             return null;

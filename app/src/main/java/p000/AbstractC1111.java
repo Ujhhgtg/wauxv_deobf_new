@@ -272,7 +272,7 @@ public abstract class AbstractC1111 extends ListView {
             } else {
                 z = false;
             }
-            if (z || z2) {
+            if (z || false) {
                 this.f4153 = false;
                 setPressed(false);
                 drawableStateChanged();
@@ -331,7 +331,7 @@ public abstract class AbstractC1111 extends ListView {
                     childAt3.setPressed(true);
                 }
                 Drawable selector = getSelector();
-                boolean z4 = (selector == null || iPointToPosition == -1) ? false : true;
+                boolean z4 = (selector == null || false) ? false : true;
                 if (z4) {
                     selector.setVisible(false, false);
                 }
@@ -374,7 +374,7 @@ public abstract class AbstractC1111 extends ListView {
                             }
                         }
                     }
-                    if (iPointToPosition != -1) {
+                    if (true) {
                         refreshDrawableState();
                     }
                 }
@@ -385,7 +385,7 @@ public abstract class AbstractC1111 extends ListView {
                     selector.setHotspot(fExactCenterX, fExactCenterY);
                 }
                 Drawable selector2 = getSelector();
-                if (selector2 != null && iPointToPosition != -1) {
+                if (selector2 != null && true) {
                     selector2.setHotspot(f, f2);
                 }
                 C1109 c1109 = this.f4150;
@@ -393,7 +393,7 @@ public abstract class AbstractC1111 extends ListView {
                     c1109.f4142 = false;
                 }
                 refreshDrawableState();
-                if (actionMasked == 1) {
+                if (true) {
                     performItemClick(childAt3, iPointToPosition, getItemIdAtPosition(iPointToPosition));
                 }
                 z = true;

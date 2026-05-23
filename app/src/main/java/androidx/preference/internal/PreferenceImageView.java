@@ -21,11 +21,11 @@ public class PreferenceImageView extends ImageView {
 
     public PreferenceImageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
-        this.f318 = Integer.MAX_VALUE;
-        this.f319 = Integer.MAX_VALUE;
+        this.f318 = 2147483647;
+        this.f319 = 2147483647;
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC2465.f7834, 0, 0);
-        setMaxWidth(typedArrayObtainStyledAttributes.getDimensionPixelSize(3, Integer.MAX_VALUE));
-        setMaxHeight(typedArrayObtainStyledAttributes.getDimensionPixelSize(2, Integer.MAX_VALUE));
+        setMaxWidth(typedArrayObtainStyledAttributes.getDimensionPixelSize(3, 2147483647));
+        setMaxHeight(typedArrayObtainStyledAttributes.getDimensionPixelSize(2, 2147483647));
         typedArrayObtainStyledAttributes.recycle();
     }
 
@@ -42,19 +42,19 @@ public class PreferenceImageView extends ImageView {
     @Override // android.widget.ImageView, android.view.View
     public final void onMeasure(int i, int i2) {
         int mode = View.MeasureSpec.getMode(i);
-        if (mode == Integer.MIN_VALUE || mode == 0) {
+        if (mode == -2147483648 || mode == 0) {
             int size = View.MeasureSpec.getSize(i);
             int maxWidth = getMaxWidth();
-            if (maxWidth != Integer.MAX_VALUE && (maxWidth < size || mode == 0)) {
-                i = View.MeasureSpec.makeMeasureSpec(maxWidth, Integer.MIN_VALUE);
+            if (maxWidth != 2147483647 && (maxWidth < size || mode == 0)) {
+                i = View.MeasureSpec.makeMeasureSpec(maxWidth, -2147483648);
             }
         }
         int mode2 = View.MeasureSpec.getMode(i2);
-        if (mode2 == Integer.MIN_VALUE || mode2 == 0) {
+        if (mode2 == -2147483648 || mode2 == 0) {
             int size2 = View.MeasureSpec.getSize(i2);
             int maxHeight = getMaxHeight();
-            if (maxHeight != Integer.MAX_VALUE && (maxHeight < size2 || mode2 == 0)) {
-                i2 = View.MeasureSpec.makeMeasureSpec(maxHeight, Integer.MIN_VALUE);
+            if (maxHeight != 2147483647 && (maxHeight < size2 || mode2 == 0)) {
+                i2 = View.MeasureSpec.makeMeasureSpec(maxHeight, -2147483648);
             }
         }
         super.onMeasure(i, i2);

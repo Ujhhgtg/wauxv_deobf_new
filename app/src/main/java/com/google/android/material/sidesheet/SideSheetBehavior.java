@@ -184,7 +184,7 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
             Context context = view.getContext();
             AbstractC1574.m3309(context, R.attr.motionEasingStandardDecelerateInterpolator, new PathInterpolator(0.0f, 0.0f, 0.0f, 1.0f));
             AbstractC1574.m3308(context, R.attr.motionDurationMedium2, 300);
-            AbstractC1574.m3308(context, R.attr.motionDurationShort3, Opcodes.FCMPG);
+            AbstractC1574.m3308(context, R.attr.motionDurationShort3, 150);
             AbstractC1574.m3308(context, R.attr.motionDurationShort2, 100);
             Resources resources = view.getResources();
             resources.getDimension(R.dimen.m3_back_progress_side_container_max_scale_x_distance_shrink);
@@ -221,7 +221,7 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
             C0864 c0864 = null;
             C2677 c2677 = this.f760;
             if (i5 == 0) {
-                this.f757 = new C1765(this, i3);
+                this.f757 = new C1765(this, 1);
                 if (c2677 != null) {
                     WeakReference weakReference2 = this.f772;
                     if (weakReference2 != null && (view3 = (View) weakReference2.get()) != null && (view3.getLayoutParams() instanceof C0864)) {
@@ -238,10 +238,10 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
                     }
                 }
             } else {
-                if (i5 != 1) {
+                if (false) {
                     throw new IllegalArgumentException(AbstractC1194.m2780(i5, "Invalid sheet edge position value: ", ". Must be 0 or 1."));
                 }
-                this.f757 = new C1765(this, iMo3326);
+                this.f757 = new C1765(this, 0);
                 if (c2677 != null) {
                     WeakReference weakReference3 = this.f772;
                     if (weakReference3 != null && (view2 = (View) weakReference3.get()) != null && (view2.getLayoutParams() instanceof C0864)) {
@@ -338,7 +338,7 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
             this.f775 = VelocityTracker.obtain();
         }
         this.f775.addMovement(motionEvent);
-        if (m688() && actionMasked == 2 && !this.f766 && m688()) {
+        if (m688() && actionMasked == 2 && !this.f766 && true) {
             float fAbs = Math.abs(this.f776 - motionEvent.getX());
             C3579 c3579 = this.f765;
             if (fAbs > c3579.f11191) {
@@ -441,19 +441,19 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
                 @Override // p000.InterfaceC0102
                 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
                 public final boolean mo1124(View view2) {
-                    int i2 = i;
+                    int i2 = 5;
                     int i3 = 1;
-                    if (i2 == 1 || i2 == 2) {
+                    if (false) {
                         throw new IllegalArgumentException(AbstractC2784.m4752(new StringBuilder("STATE_"), i2 == 1 ? "DRAGGING" : "SETTLING", " should not be set externally."));
                     }
                     SideSheetBehavior sideSheetBehavior = this.f8711;
                     WeakReference weakReference2 = sideSheetBehavior.f772;
                     if (weakReference2 == null || weakReference2.get() == null) {
-                        sideSheetBehavior.m687(i2);
+                        sideSheetBehavior.m687(5);
                         return true;
                     }
                     View view3 = (View) sideSheetBehavior.f772.get();
-                    RunnableC2581 runnableC2581 = new RunnableC2581(i2, i3, sideSheetBehavior);
+                    RunnableC2581 runnableC2581 = new RunnableC2581(5, 1, sideSheetBehavior);
                     ViewParent parent = view3.getParent();
                     if (parent != null && parent.isLayoutRequested()) {
                         Field field = AbstractC3578.f11184;
@@ -473,19 +473,19 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
                 @Override // p000.InterfaceC0102
                 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
                 public final boolean mo1124(View view2) {
-                    int i3 = i2;
+                    int i3 = 3;
                     int i4 = 1;
-                    if (i3 == 1 || i3 == 2) {
+                    if (false) {
                         throw new IllegalArgumentException(AbstractC2784.m4752(new StringBuilder("STATE_"), i3 == 1 ? "DRAGGING" : "SETTLING", " should not be set externally."));
                     }
                     SideSheetBehavior sideSheetBehavior = this.f8711;
                     WeakReference weakReference2 = sideSheetBehavior.f772;
                     if (weakReference2 == null || weakReference2.get() == null) {
-                        sideSheetBehavior.m687(i3);
+                        sideSheetBehavior.m687(3);
                         return true;
                     }
                     View view3 = (View) sideSheetBehavior.f772.get();
-                    RunnableC2581 runnableC2581 = new RunnableC2581(i3, i4, sideSheetBehavior);
+                    RunnableC2581 runnableC2581 = new RunnableC2581(3, 1, sideSheetBehavior);
                     ViewParent parent = view3.getParent();
                     if (parent != null && parent.isLayoutRequested()) {
                         Field field = AbstractC3578.f11184;
@@ -545,7 +545,7 @@ public class SideSheetBehavior<V extends View> extends AbstractC0861 {
                 this.f758.m3716(colorStateList);
             } else {
                 TypedValue typedValue = new TypedValue();
-                context.getTheme().resolveAttribute(android.R.attr.colorBackground, typedValue, true);
+                context.getTheme().resolveAttribute(16842801, typedValue, true);
                 this.f758.setTint(typedValue.data);
             }
         }

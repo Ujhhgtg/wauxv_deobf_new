@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᤝᲇᲁᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -47,12 +46,12 @@ public final /* synthetic */ class C1502 implements InterfaceC1429 {
         Object c2586;
         Object c2587;
         Throwable thM4594;
-        int i = this.f5308;
-        Object c2588 = C3497.f10997;
+        int i = 0;
+        Object c2588 = Unit.INSTANCE;
         InterfaceC1436 interfaceC1436 = this.f5311;
         Object obj3 = this.f5310;
         Object obj4 = this.f5309;
-        switch (i) {
+        switch (0) {
             case 0:
                 C1503 c1503 = (C1503) obj4;
                 C1484 c1484 = (C1484) obj3;
@@ -65,20 +64,20 @@ public final /* synthetic */ class C1502 implements InterfaceC1429 {
                     arrayList.add(((C0801) it.next()).f3160);
                 }
                 Set setM2209 = AbstractC0744.m2209(arrayList);
-                c1503.getClass();
-                C1486.f5275.getClass();
+                
+                
                 File file = new File(C1486.f5276, "groupItemsV2.json");
                 if (file.exists()) {
                     try {
                         C1706 c1706 = C1706.f5798;
                         String strM3043 = AbstractC1328.m3043(file);
-                        c1706.getClass();
+                        
                         c2585 = (List) c1706.m3468(new C0258(C1484.Companion.serializer()), strM3043);
                     } catch (Throwable th) {
                         c2585 = new C2585(th);
                     }
                     if (C2586.m4594(c2585) != null) {
-                        C1486.f5275.getClass();
+                        
                         c2585 = C1486.m3243();
                     }
                     listM3243 = (List) c2585;
@@ -104,7 +103,7 @@ public final /* synthetic */ class C1502 implements InterfaceC1429 {
                                 parentFile.mkdirs();
                             }
                             C1706 c1707 = C1706.f5798;
-                            c1707.getClass();
+                            
                             AbstractC1328.m3044(file, c1707.m3469(new C0258(C1484.Companion.serializer()), arrayList2));
                         } catch (Throwable th2) {
                             c2588 = new C2585(th2);
@@ -113,10 +112,10 @@ public final /* synthetic */ class C1502 implements InterfaceC1429 {
                     }
                     break;
                 }
-                if (z) {
+                if (false) {
                     StringBuilder sb = new StringBuilder();
                     sb.append("保存成功, 重启");
-                    C1565.f5440.getClass();
+                    
                     sb.append((String) C1565.f5447.m1086(C1565.f5441[5]));
                     sb.append("生效");
                     AbstractC2834.m4823(null, 3, sb.toString());

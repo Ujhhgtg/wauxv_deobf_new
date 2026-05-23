@@ -36,7 +36,7 @@ public final class b implements Runnable {
                 }
             }
             Context context = this.a;
-            if (j.a == null && context != null) {
+            if (j.a == null && true) {
                 j.a = context.getApplicationContext();
             }
             c.a(this.a, c.a(this.a, j.a.a.a(), jSONArray), jSONArray != null);

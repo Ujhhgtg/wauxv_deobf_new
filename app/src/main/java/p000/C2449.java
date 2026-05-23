@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.ConversationBean;
 import me.hd.wauxv.data.bean.info.GroupInfo;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᛸᤝᲁᲈᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -47,11 +46,11 @@ public final /* synthetic */ class C2449 implements InterfaceC1425 {
                     sb.append("(" + groupInfo.getGroupData().getMemberCount() + ')');
                     arrayList.add(new C0801(roomId, sb.toString(), groupInfo.getRoomId(), false));
                 }
-                c0816.m2367(str, arrayList);
+                c0816.m2367("群聊", arrayList);
                 c0816.f3199 = R.drawable.ic_contact_confirm_24dp;
                 String str2 = "邀请";
                 C2450 c2450 = new C2450(0, this.f7786);
-                c0816.f3202 = str2;
+                c0816.f3202 = "邀请";
                 c0816.f3204 = c2450;
                 break;
             default:
@@ -63,6 +62,6 @@ public final /* synthetic */ class C2449 implements InterfaceC1425 {
                 c0815.m2362().mo3369(new C0466(c0815)).m3791();
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

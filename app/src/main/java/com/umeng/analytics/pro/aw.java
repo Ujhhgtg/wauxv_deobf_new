@@ -41,7 +41,7 @@ public class aw {
         try {
             a().schedule(runnable, j, timeUnit);
         } catch (Throwable th) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "schedule error:" + th.getMessage());
+            UMRTLog.e("MobclickRT", "schedule error:" + th.getMessage());
         }
     }
 }

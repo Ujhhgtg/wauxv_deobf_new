@@ -57,10 +57,10 @@ public class Label {
             }
         }
         if (z) {
-            addForwardReference(i, FORWARD_REFERENCE_TYPE_WIDE, byteVector.length);
+            addForwardReference(i, 536870912, byteVector.length);
             byteVector.putInt(-1);
         } else {
-            addForwardReference(i, FORWARD_REFERENCE_TYPE_SHORT, byteVector.length);
+            addForwardReference(i, 268435456, byteVector.length);
             byteVector.putShort(-1);
         }
     }
@@ -78,8 +78,8 @@ public class Label {
             int i3 = iArr2[i2 - 1];
             int i4 = iArr2[i2];
             int i5 = i - i3;
-            int i6 = FORWARD_REFERENCE_HANDLE_MASK & i4;
-            if ((i4 & FORWARD_REFERENCE_TYPE_MASK) != FORWARD_REFERENCE_TYPE_SHORT) {
+            int i6 = 268435455 & i4;
+            if ((i4 & -268435456) != 268435456) {
                 int i7 = i6 + 1;
                 bArr[i6] = (byte) (i5 >>> 24);
                 i6 += 2;

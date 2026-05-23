@@ -52,7 +52,7 @@ public final /* synthetic */ class C3144 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C3146.f10005;
-        interfaceC0766Mo2512.getClass();
+        
         Integer num = null;
         Integer num2 = null;
         Integer num3 = null;
@@ -143,7 +143,7 @@ public final /* synthetic */ class C3144 implements InterfaceC1443 {
                     break;
                 case 8:
                     num = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C1665.f5622, num);
-                    i |= bc.e;
+                    i |= 256;
                     c3094 = c3095;
                     num6 = num6;
                     break;
@@ -165,7 +165,7 @@ public final /* synthetic */ class C3144 implements InterfaceC1443 {
                     c3094 = c3095;
                     num6 = num6;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     num3 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C1665.f5622, num3);
                     i |= 4096;
                     c3094 = c3095;
@@ -177,9 +177,9 @@ public final /* synthetic */ class C3144 implements InterfaceC1443 {
                     c3094 = c3095;
                     num6 = num6;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     num5 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C1665.f5622, num5);
-                    i |= Http2.INITIAL_MAX_FRAME_SIZE;
+                    i |= 16384;
                     c3094 = c3095;
                     num6 = num6;
                     break;

@@ -40,7 +40,7 @@ public final class StringSchema extends JSONSchema {
     public StringSchema(JSONObject jSONObject) {
         Set<String> linkedHashSet;
         super(jSONObject);
-        this.typed = "string".equalsIgnoreCase(jSONObject.getString(g.y));
+        this.typed = "string".equalsIgnoreCase(jSONObject.getString("type"));
         this.minLength = jSONObject.getIntValue("minLength", -1);
         this.maxLength = jSONObject.getIntValue("maxLength", -1);
         String string = jSONObject.getString("pattern");
@@ -161,7 +161,7 @@ public final class StringSchema extends JSONSchema {
     @Override // com.alibaba.fastjson2.schema.JSONSchema
     public JSONObject toJSONObject() {
         JSONObject jSONObject = new JSONObject();
-        jSONObject.put(g.y, "string");
+        jSONObject.put("type", "string");
         int i = this.minLength;
         if (i != -1) {
             jSONObject.put("minLength", Integer.valueOf(i));

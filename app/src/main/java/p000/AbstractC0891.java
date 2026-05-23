@@ -46,13 +46,13 @@ public abstract class AbstractC0891 extends AbstractC0911 {
         C0914 c0914 = this.f3369;
         if (zEquals) {
             String str = c0914.f3374.f3378;
-            str.getClass();
+            
             if (str.equals("invoke") || str.equals("invokeExact")) {
                 return true;
             }
         } else if (c0919.equals(C0918.f3400)) {
             String str2 = c0914.f3374.f3378;
-            str2.getClass();
+            
             byte b = -1;
             switch (str2.hashCode()) {
                 case -1946504908:
@@ -122,17 +122,17 @@ public abstract class AbstractC0891 extends AbstractC0911 {
                     break;
                 case -37641530:
                     if (str2.equals("getAndSetRelease")) {
-                        b = ek.k;
+                        b = 13;
                     }
                     break;
                 case 102230:
                     if (str2.equals("get")) {
-                        b = ek.l;
+                        b = 14;
                     }
                     break;
                 case 113762:
                     if (str2.equals("set")) {
-                        b = ek.m;
+                        b = 15;
                     }
                     break;
                 case 93645315:
@@ -224,20 +224,20 @@ public abstract class AbstractC0891 extends AbstractC0911 {
                 case 9:
                 case 10:
                 case 11:
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                 case 13:
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                 case 15:
                 case 16:
-                case Opcodes.SIPUSH /* 17 */:
-                case Opcodes.LDC /* 18 */:
+                case 17 /* 17 */:
+                case 18 /* 18 */:
                 case 19:
                 case 20:
-                case Opcodes.ILOAD /* 21 */:
-                case Opcodes.LLOAD /* 22 */:
-                case Opcodes.FLOAD /* 23 */:
-                case Opcodes.DLOAD /* 24 */:
-                case Opcodes.ALOAD /* 25 */:
+                case 21 /* 21 */:
+                case 22 /* 22 */:
+                case 23 /* 23 */:
+                case 24 /* 24 */:
+                case 25 /* 25 */:
                 case 26:
                 case 27:
                 case 28:

@@ -93,7 +93,7 @@ public class dw extends ed {
     public eb h() throws ee {
         int iW = w();
         if (iW < 0) {
-            if ((a & iW) == b) {
+            if ((-65536 & iW) == -2147418112) {
                 return new eb(z(), (byte) (iW & 255), w());
             }
             throw new ee(4, "Bad version in readMessageBegin");
@@ -262,7 +262,7 @@ public class dw extends ed {
     @Override // com.umeng.analytics.pro.ed
     public void a(eb ebVar) throws dk {
         if (this.d) {
-            a(b | ebVar.b);
+            a(-2147418112 | ebVar.b);
             a(ebVar.a);
             a(ebVar.c);
         } else {

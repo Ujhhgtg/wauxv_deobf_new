@@ -89,7 +89,7 @@ public final class C3686 {
                     C3678.m5308(4, "Received action \"" + action + "\" failed", thM4594);
                 }
             }
-            return C3497.f10997;
+            return Unit.INSTANCE;
         }
     };
 
@@ -203,7 +203,7 @@ public final class C3686 {
 
                     @Override // p000.InterfaceC1425
                     public final Object invoke(Object obj) {
-                        switch (i) {
+                        switch (0) {
                             case 0:
                                 this.f11570.m5346(application, (String) obj).m3919(C2103.m3905(new C0588(C3686.f11577, "module_generated_version_result"), C1133.m2705(), -1, -1));
                                 break;
@@ -211,7 +211,7 @@ public final class C3686 {
                                 this.f11570.m5346(application, (String) obj).m3919(C2103.m3905(new C0588(C3678.f11549, C3686.f11578.f2389), C1133.m2705(), -1, -1));
                                 break;
                         }
-                        return C3497.f10997;
+                        return Unit.INSTANCE;
                     }
                 });
                 final int i2 = 1;
@@ -226,7 +226,7 @@ public final class C3686 {
 
                     @Override // p000.InterfaceC1425
                     public final Object invoke(Object obj) {
-                        switch (i2) {
+                        switch (1) {
                             case 0:
                                 this.f11570.m5346(application, (String) obj).m3919(C2103.m3905(new C0588(C3686.f11577, "module_generated_version_result"), C1133.m2705(), -1, -1));
                                 break;
@@ -234,7 +234,7 @@ public final class C3686 {
                                 this.f11570.m5346(application, (String) obj).m3919(C2103.m3905(new C0588(C3678.f11549, C3686.f11578.f2389), C1133.m2705(), -1, -1));
                                 break;
                         }
-                        return C3497.f10997;
+                        return Unit.INSTANCE;
                     }
                 });
             }

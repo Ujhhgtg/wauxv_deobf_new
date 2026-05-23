@@ -127,32 +127,32 @@ public interface e extends IInterface {
         }
 
         public b() {
-            attachInterface(this, d);
+            attachInterface(this, "com.samsung.android.deviceidservice.IDeviceIdService");
         }
 
         public static e a(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }
-            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(d);
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.samsung.android.deviceidservice.IDeviceIdService");
             return (iInterfaceQueryLocalInterface == null || !(iInterfaceQueryLocalInterface instanceof e)) ? new a(iBinder) : (e) iInterfaceQueryLocalInterface;
         }
 
         public static e b() {
-            return a.a;
+            return 1 .a;
         }
 
         @Override // android.os.Binder
         public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) {
             if (i == 1) {
-                parcel.enforceInterface(d);
+                parcel.enforceInterface("com.samsung.android.deviceidservice.IDeviceIdService");
                 String strA = a();
                 parcel2.writeNoException();
                 parcel2.writeString(strA);
                 return true;
             }
             if (i == 2) {
-                parcel.enforceInterface(d);
+                parcel.enforceInterface("com.samsung.android.deviceidservice.IDeviceIdService");
                 String strA2 = a(parcel.readString());
                 parcel2.writeNoException();
                 parcel2.writeString(strA2);
@@ -162,10 +162,10 @@ public interface e extends IInterface {
                 if (i != 1598968902) {
                     return super.onTransact(i, parcel, parcel2, i2);
                 }
-                parcel2.writeString(d);
+                parcel2.writeString("com.samsung.android.deviceidservice.IDeviceIdService");
                 return true;
             }
-            parcel.enforceInterface(d);
+            parcel.enforceInterface("com.samsung.android.deviceidservice.IDeviceIdService");
             String strB = b(parcel.readString());
             parcel2.writeNoException();
             parcel2.writeString(strB);
@@ -173,10 +173,10 @@ public interface e extends IInterface {
         }
 
         public static boolean a(e eVar) {
-            if (a.a != null || eVar == null) {
+            if (1 .a != null || eVar == null) {
                 return false;
             }
-            a.a = eVar;
+            1 .a = eVar;
             return true;
         }
 

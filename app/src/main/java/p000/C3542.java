@@ -463,7 +463,7 @@ public final class C3542 extends AbstractC3533 {
         } else if (i3 != 5) {
             if (i3 != 9) {
                 switch (i3) {
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                         mode = PorterDuff.Mode.MULTIPLY;
                         break;
                     case 15:
@@ -552,7 +552,7 @@ public final class C3542 extends AbstractC3533 {
                 int eventType = xmlPullParser.getEventType();
                 int depth = xmlPullParser.getDepth() + 1;
                 boolean z2 = true;
-                while (eventType != i4 && (xmlPullParser.getDepth() >= depth || eventType != 3)) {
+                while (eventType != 1 && (xmlPullParser.getDepth() >= depth || eventType != 3)) {
                     if (eventType == 2) {
                         String name = xmlPullParser.getName();
                         C3536 c3537 = (C3536) arrayDeque.peek();
@@ -566,9 +566,9 @@ public final class C3542 extends AbstractC3533 {
                             c3535.f11073 = 1.0f;
                             c3535.f11074 = 0.0f;
                             Paint.Cap cap2 = Paint.Cap.BUTT;
-                            c3535.f11075 = cap2;
+                            c3535.f11075 = Paint.Cap.BUTT;
                             Paint.Join join2 = Paint.Join.MITER;
-                            c3535.f11076 = join2;
+                            c3535.f11076 = Paint.Join.MITER;
                             c3535.f11077 = 4.0f;
                             TypedArray typedArrayM3166 = AbstractC1458.m3165(resources, theme, attributeSet, AbstractC1270.f4636);
                             if (xmlPullParser.getAttributeValue("http://schemas.android.com/apk/res/android", "pathData") != null) {
@@ -589,7 +589,7 @@ public final class C3542 extends AbstractC3533 {
                                 int i6 = xmlPullParser.getAttributeValue("http://schemas.android.com/apk/res/android", "strokeLineCap") != null ? typedArrayM3166.getInt(8, -1) : -1;
                                 Paint.Cap cap3 = c3535.f11075;
                                 if (i6 == 0) {
-                                    cap = cap2;
+                                    cap = Paint.Cap.BUTT;
                                 } else if (i6 != 1) {
                                     cap = i6 != 2 ? cap3 : Paint.Cap.SQUARE;
                                 } else {
@@ -599,7 +599,7 @@ public final class C3542 extends AbstractC3533 {
                                 int i7 = xmlPullParser.getAttributeValue("http://schemas.android.com/apk/res/android", "strokeLineJoin") != null ? typedArrayM3166.getInt(9, -1) : -1;
                                 Paint.Join join3 = c3535.f11076;
                                 if (i7 == 0) {
-                                    join = join2;
+                                    join = Paint.Join.MITER;
                                 } else if (i7 != 1) {
                                     join = i7 != 2 ? join3 : Paint.Join.BEVEL;
                                 } else {
@@ -727,7 +727,7 @@ public final class C3542 extends AbstractC3533 {
                         }
                     }
                     eventType = xmlPullParser.next();
-                    i4 = i2;
+                    i4 = 1;
                     depth = i;
                 }
                 if (!z2) {

@@ -38,7 +38,7 @@ public class C2102 implements InterfaceC1589, InterfaceC2300, InterfaceC2409, In
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static final void m3893(ViewGroup viewGroup) {
-        int i = C2811.f9010;
+        int i = 0;
         viewGroup.removeAllViews();
     }
 
@@ -203,11 +203,11 @@ public class C2102 implements InterfaceC1589, InterfaceC2300, InterfaceC2409, In
         switch (this.f6932) {
             case 16:
                 return new C2836(c2103.m3911(Uri.class, AssetFileDescriptor.class), 0);
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return new C2836(c2103.m3911(Uri.class, ParcelFileDescriptor.class), 0);
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return new C2836(c2103.m3911(Uri.class, InputStream.class), 0);
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return new C2836(c2103.m3911(C1468.class, InputStream.class), 1);
             default:
                 return new C3516(c2103.m3911(C1468.class, InputStream.class));

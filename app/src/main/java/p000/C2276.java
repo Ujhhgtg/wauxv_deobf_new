@@ -7,6 +7,6 @@ public final /* synthetic */ class C2276 extends AbstractC1438 implements Interf
     @Override // p000.InterfaceC1414
     public final Object invoke() {
         ((AbstractC2277) this.f2268).m4156();
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

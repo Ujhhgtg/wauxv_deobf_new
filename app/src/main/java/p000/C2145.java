@@ -27,7 +27,7 @@ public final class C2145 extends AbstractC0843 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ */
     public final Object mo1198(Object obj) {
         this.f7094 = obj;
-        this.f7096 |= Integer.MIN_VALUE;
+        this.f7096 |= -2147483648;
         return this.f7095.m3954(this);
     }
 }

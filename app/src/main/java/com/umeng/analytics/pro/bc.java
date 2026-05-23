@@ -69,23 +69,23 @@ public class bc {
             String str2 = this.i;
             String strSubstring = "";
             if (str2 == null) {
-                jSONArray.put(az.a);
+                jSONArray.put("100001");
             } else if (TextUtils.isEmpty(str2.trim())) {
-                jSONArray.put(az.b);
+                jSONArray.put("100002");
             } else {
                 boolean z = this.i.trim().getBytes().length > 128;
                 if (Arrays.asList(a).contains(this.i)) {
-                    jSONArray.put(az.c);
+                    jSONArray.put("100003");
                     str = this.i;
                 } else {
                     str = null;
                 }
-                if (!Pattern.matches(c, this.i)) {
-                    jSONArray.put(az.e);
+                if (!Pattern.matches("^(?!\\d)[a-zA-Z0-9_\\-\\+\\.]{1,}$", this.i)) {
+                    jSONArray.put("100005");
                     str = this.i;
                 }
                 if (z) {
-                    jSONArray.put(az.d);
+                    jSONArray.put("100004");
                     strSubstring = this.i.length() > 128 ? this.i.substring(0, 128) : this.i;
                 } else {
                     strSubstring = str;
@@ -94,7 +94,7 @@ public class bc {
             if (strSubstring != null) {
                 this.g.put("eID", strSubstring);
                 if (jSONArray.length() > 0) {
-                    this.g.put(cl.g, jSONArray);
+                    this.g.put("code", jSONArray);
                 }
             }
         } catch (Throwable unused) {
@@ -178,35 +178,35 @@ public class bc {
             h();
             JSONObject jSONObject = this.g;
             if (jSONObject == null || jSONObject.length() <= 0) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "未检查到错误。 ");
+                UMRTLog.i("MobclickRT", "未检查到错误。 ");
             } else {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "result: " + this.g);
+                UMRTLog.i("MobclickRT", "result: " + this.g);
             }
         } else if (i == 2) {
             i();
             JSONObject jSONObject2 = this.g;
             if (jSONObject2 == null || jSONObject2.length() <= 0) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "未检查到错误。 ");
+                UMRTLog.i("MobclickRT", "未检查到错误。 ");
             } else {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "result: " + this.g);
+                UMRTLog.i("MobclickRT", "result: " + this.g);
             }
         } else if (i == 3) {
             j();
             JSONObject jSONObject3 = this.g;
             if (jSONObject3 == null || jSONObject3.length() <= 0) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "未检查到错误。 ");
+                UMRTLog.i("MobclickRT", "未检查到错误。 ");
             } else {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "result: " + this.g);
+                UMRTLog.i("MobclickRT", "result: " + this.g);
             }
         } else if (i != 4) {
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "unknown CkItem type!");
+            UMRTLog.i("MobclickRT", "unknown CkItem type!");
         } else {
             k();
             JSONObject jSONObject4 = this.g;
             if (jSONObject4 == null || jSONObject4.length() <= 0) {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "未检查到错误。 ");
+                UMRTLog.i("MobclickRT", "未检查到错误。 ");
             } else {
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "result: " + this.g);
+                UMRTLog.i("MobclickRT", "result: " + this.g);
             }
         }
         return this.g;
@@ -222,10 +222,10 @@ public class bc {
                 return jSONObject;
             }
             JSONArray jSONArray = new JSONArray();
-            jSONArray.put(az.q);
-            jSONObject.put(cl.g, jSONArray);
+            jSONArray.put("100026");
+            jSONObject.put("code", jSONArray);
             jSONObject.put("pid", obj.getClass().getName());
-            jSONObject.put(cl.h, str);
+            jSONObject.put("msg", str);
             return jSONObject;
         } catch (Throwable unused) {
         }
@@ -288,7 +288,7 @@ public class bc {
                 this.g.put("pps", jSONObject);
             }
         }
-        if (!this.g.has("epps") || this.g.has(cl.g)) {
+        if (!this.g.has("epps") || this.g.has("code")) {
             return;
         }
         this.g.put("eID", this.i);
@@ -299,23 +299,23 @@ public class bc {
         JSONArray jSONArray = new JSONArray();
         try {
             if (str == null) {
-                jSONArray.put(az.o);
+                jSONArray.put("100024");
                 jSONObject.put("pid", "");
             } else if (TextUtils.isEmpty(str.trim())) {
-                jSONArray.put(az.l);
+                jSONArray.put("100016");
                 jSONObject.put("pid", "");
             } else {
                 boolean z = str.trim().getBytes().length > 128;
                 if (Arrays.asList(b).contains(str)) {
-                    jSONArray.put(az.g);
+                    jSONArray.put("100007");
                     jSONObject.put("pid", str);
                 }
-                if (!Pattern.matches(c, str)) {
-                    jSONArray.put(az.p);
+                if (!Pattern.matches("^(?!\\d)[a-zA-Z0-9_\\-\\+\\.]{1,}$", str)) {
+                    jSONArray.put("100025");
                     jSONObject.put("pid", str);
                 }
                 if (z) {
-                    jSONArray.put(az.h);
+                    jSONArray.put("100009");
                     if (str.length() > 128) {
                         str = str.substring(0, 128);
                     }
@@ -323,8 +323,8 @@ public class bc {
                 }
             }
             if (jSONArray.length() > 0) {
-                jSONObject.put(cl.g, jSONArray);
-                jSONObject.put(cl.h, obj);
+                jSONObject.put("code", jSONArray);
+                jSONObject.put("msg", obj);
             }
         } catch (Throwable unused) {
         }
@@ -336,14 +336,14 @@ public class bc {
             JSONObject jSONObject2 = new JSONObject();
             JSONArray jSONArray2 = new JSONArray();
             if (map == null) {
-                jSONArray2.put(az.n);
+                jSONArray2.put("100023");
             } else if (map.isEmpty()) {
-                jSONArray2.put(az.k);
+                jSONArray2.put("100015");
             } else if (map.size() > 100) {
-                jSONArray2.put(az.f);
+                jSONArray2.put("100006");
             }
             if (jSONArray2.length() > 0) {
-                jSONObject2.put(cl.g, jSONArray2);
+                jSONObject2.put("code", jSONArray2);
                 jSONArray.put(jSONObject2);
             } else {
                 b(map, jSONObject, jSONArray);
@@ -384,24 +384,24 @@ public class bc {
         try {
             JSONArray jSONArray = new JSONArray();
             if (str2 == null) {
-                jSONArray.put(az.i);
-                jSONObject.put(cl.g, jSONArray);
+                jSONArray.put("100011");
+                jSONObject.put("code", jSONArray);
                 jSONObject.put("pid", "");
-                jSONObject.put(cl.h, str);
+                jSONObject.put("msg", str);
                 return jSONObject;
             }
             if (str2.getBytes().length > 256) {
                 if (z) {
-                    jSONArray.put(az.m);
+                    jSONArray.put("100022");
                 } else {
-                    jSONArray.put(az.j);
+                    jSONArray.put("100012");
                 }
-                jSONObject.put(cl.g, jSONArray);
+                jSONObject.put("code", jSONArray);
                 if (str2.length() > 256) {
-                    str2 = str2.substring(0, e);
+                    str2 = str2.substring(0, 256);
                 }
                 jSONObject.put("pid", str2);
-                jSONObject.put(cl.h, str);
+                jSONObject.put("msg", str);
             }
             return jSONObject;
         } catch (Throwable unused) {

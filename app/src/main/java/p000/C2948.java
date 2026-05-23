@@ -57,7 +57,7 @@ public final /* synthetic */ class C2948 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C2950.f9431;
-        interfaceC0766Mo2512.getClass();
+        
         C2959 c2959 = null;
         C3242 c3242 = null;
         C2989 c2989 = null;
@@ -156,7 +156,7 @@ public final /* synthetic */ class C2948 implements InterfaceC1443 {
                     c3242 = c3242;
                     c3022 = c3022;
                     c2959 = (C2959) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2957.f9458, c29510);
-                    i2 |= bc.e;
+                    i2 |= 256;
                     c3022 = c3022;
                     c3242 = c3242;
                     break;
@@ -181,7 +181,7 @@ public final /* synthetic */ class C2948 implements InterfaceC1443 {
                     c2959 = c29510;
                     c3022 = c3022;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     c3022 = c3022;
                     c2989 = (C2989) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C2987.f9582, c2989);
                     i2 |= 4096;
@@ -195,52 +195,52 @@ public final /* synthetic */ class C2948 implements InterfaceC1443 {
                     c2959 = c29510;
                     c3022 = c3022;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     c3022 = c3022;
                     num = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C1665.f5622, num);
-                    i2 |= Http2.INITIAL_MAX_FRAME_SIZE;
+                    i2 |= 16384;
                     c2959 = c29510;
                     c3022 = c3022;
                     break;
                 case 15:
                     c3023 = (C3022) interfaceC0766Mo2512.mo2239(interfaceC2654, 15, C3020.f9709, c3023);
                     i = 32768;
-                    i2 |= i;
+                    i2 |= 32768;
                     c2959 = c29510;
                     c3022 = c3022;
                     break;
                 case 16:
                     c3362 = (C3362) interfaceC0766Mo2512.mo2239(interfaceC2654, 16, C3360.f10595, c3362);
                     i = 65536;
-                    i2 |= i;
+                    i2 |= 65536;
                     c2959 = c29510;
                     c3022 = c3022;
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     c3007 = (C3007) interfaceC0766Mo2512.mo2239(interfaceC2654, 17, C3005.f9675, c3007);
                     i = 131072;
-                    i2 |= i;
+                    i2 |= 131072;
                     c2959 = c29510;
                     c3022 = c3022;
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     c3179 = (C3179) interfaceC0766Mo2512.mo2239(interfaceC2654, 18, C3177.f10178, c3179);
                     i = 262144;
-                    i2 |= i;
+                    i2 |= 262144;
                     c2959 = c29510;
                     c3022 = c3022;
                     break;
                 case 19:
                     c3024 = (C3022) interfaceC0766Mo2512.mo2239(interfaceC2654, 19, C3020.f9709, c3024);
                     i = 524288;
-                    i2 |= i;
+                    i2 |= 524288;
                     c2959 = c29510;
                     c3022 = c3022;
                     break;
                 case 20:
                     c3164 = (C3164) interfaceC0766Mo2512.mo2239(interfaceC2654, 20, C3162.f10143, c3164);
                     i = 1048576;
-                    i2 |= i;
+                    i2 |= 1048576;
                     c2959 = c29510;
                     c3022 = c3022;
                     break;

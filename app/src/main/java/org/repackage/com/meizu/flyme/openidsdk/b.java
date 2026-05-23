@@ -54,13 +54,13 @@ class b {
                             if (!a(context, false)) {
                                 str2 = "not support, forceQuery isSupported: ";
                                 strValueOf = String.valueOf(a(context, true));
-                                a(str2.concat(strValueOf));
+                                a("not support, forceQuery isSupported: ".concat(strValueOf));
                             }
                         }
                     } else if (a(context, false)) {
                         str2 = "forceQuery isSupported : ";
                         strValueOf = String.valueOf(a(context, true));
-                        a(str2.concat(strValueOf));
+                        a("forceQuery isSupported : ".concat(strValueOf));
                     }
                     if (cursorQuery != null) {
                         cursorQuery.close();
@@ -149,7 +149,7 @@ class b {
         } else {
             a("parseValue fail, index < 0.");
         }
-        int columnIndex2 = cursor.getColumnIndex(cl.g);
+        int columnIndex2 = cursor.getColumnIndex("code");
         if (columnIndex2 >= 0) {
             valueData.b = cursor.getInt(columnIndex2);
         } else {
@@ -207,7 +207,7 @@ class b {
             try {
                 cursorQuery = context.getContentResolver().query(Uri.parse("content://com.meizu.flyme.openidsdk/"), null, null, new String[]{"supported"}, null);
                 if (cursorQuery == null) {
-                    if (cursorQuery != null) {
+                    if (false) {
                         cursorQuery.close();
                     }
                     return false;

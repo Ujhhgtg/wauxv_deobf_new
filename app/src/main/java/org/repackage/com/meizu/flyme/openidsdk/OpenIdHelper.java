@@ -44,7 +44,7 @@ public class OpenIdHelper {
             }
             context = (Context) b.invoke(null, null);
         } catch (Exception e) {
-            Log.e(a, "ActivityThread:currentApplication --> " + e.toString());
+            Log.e("OpenIdHelper", "ActivityThread:currentApplication --> " + e.toString());
         }
         if (context == null) {
             return false;

@@ -6,6 +6,6 @@ package com.google.android.material.timepicker;
 public final /* synthetic */ class C0024 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public final void m724() {
-        int i = TimePickerView.f893;
+        int i = 0;
     }
 }

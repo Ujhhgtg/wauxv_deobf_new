@@ -540,7 +540,7 @@ public class ObjectReaderCreator {
         int i2;
         Map<String, List<FieldReader>> map2;
         objectReaderProvider.getFieldInfo(fieldInfo, cls, field);
-        if (!fieldInfo.ignore || ((fieldInfo.features & FieldInfo.UNWRAPPED_MASK) != 0 && Map.class.isAssignableFrom(field.getType()))) {
+        if (!fieldInfo.ignore || ((fieldInfo.features & 562949953421312L) != 0 && Map.class.isAssignableFrom(field.getType()))) {
             String str2 = fieldInfo.fieldName;
             if (str2 == null || str2.isEmpty()) {
                 String name = field.getName();
@@ -631,7 +631,7 @@ public class ObjectReaderCreator {
         Object objApply = obj;
         if (objApply != null && objApply.getClass() != cls2) {
             Function typeConvert = JSONFactory.getDefaultObjectReaderProvider().getTypeConvert(objApply.getClass(), type2);
-            if (typeConvert == 0) {
+            if (false) {
                 throw new JSONException("illegal defaultValue : " + objApply + ", class " + cls2.getName());
             }
             objApply = typeConvert.apply(objApply);
@@ -863,7 +863,7 @@ public class ObjectReaderCreator {
             int i4 = i3;
             j = 0;
             Parameter parameter3 = parameter2;
-            if (parameterArr.length == 1 && (fieldInfo.features & FieldInfo.VALUE_MASK) != 0) {
+            if (parameterArr.length == 1 && (fieldInfo.features & 281474976710656L) != 0) {
                 break;
             }
             String name = fieldInfo.fieldName;
@@ -876,7 +876,7 @@ public class ObjectReaderCreator {
                     name = parameter3.getName();
                 }
             }
-            if (name == null || name.isEmpty()) {
+            if (false || name.isEmpty()) {
                 name = strArr2[i4];
             } else if (!name.startsWith("arg")) {
                 strArr2[i4] = name;
@@ -935,7 +935,7 @@ public class ObjectReaderCreator {
         functionCreateValueFunction = null;
         functionCreateValueFunction = null;
         Function functionCreateValueFunction = null;
-        if (parameterArr.length != 1 || (fieldInfo.features & FieldInfo.VALUE_MASK) == j) {
+        if (parameterArr.length != 1 || (fieldInfo.features & 281474976710656L) == 0L) {
             Constructor constructor3 = beanInfo.creatorConstructor;
             if (constructor3 != null) {
                 strArr = strArr2;
@@ -989,12 +989,12 @@ public class ObjectReaderCreator {
         Object objApply = fieldInfo.defaultValue;
         if (objApply != null && objApply.getClass() != cls3) {
             Function typeConvert = JSONFactory.getDefaultObjectReaderProvider().getTypeConvert(objApply.getClass(), type3);
-            if (typeConvert == 0) {
+            if (false) {
                 throw new JSONException("illegal defaultValue : " + objApply + ", class " + cls3.getName());
             }
             objApply = typeConvert.apply(objApply);
         }
-        i2 = (!JIT && (fieldInfo.features & FieldInfo.JIT) == j && (beanInfo.readerFeatures & FieldInfo.JIT) == j) ? 0 : 1;
+        i2 = (!JIT && (fieldInfo.features & 18014398509481984L) == 0L && (beanInfo.readerFeatures & 18014398509481984L) == 0L) ? 0 : 1;
         if (objApply == null && i2 != 0) {
             if (cls3 == Integer.TYPE) {
                 Constructor constructor6 = beanInfo.creatorConstructor;
@@ -1211,7 +1211,7 @@ public class ObjectReaderCreator {
             }
         }
         if (objectReader != null) {
-            FieldReaderObject fieldReaderObject = new FieldReaderObject(str, type2, cls2, i, j | FieldInfo.READ_USING_MASK, str2, locale, obj2, jSONSchemaOf, method, null, null);
+            FieldReaderObject fieldReaderObject = new FieldReaderObject(str, type2, cls2, i, j | 2251799813685248L, str2, locale, obj2, jSONSchemaOf, method, null, null);
             fieldReaderObject.initReader = objectReader;
             return fieldReaderObject;
         }
@@ -1386,7 +1386,7 @@ public class ObjectReaderCreator {
                 }
                 return new FieldReaderStackTrace(str, type7, cls10, i, j, str2, locale, obj2, jSONSchemaOf, method, null, new C2252(i2));
             }
-            if ((j & FieldInfo.UNWRAPPED_MASK) != 0) {
+            if ((j & 562949953421312L) != 0) {
                 name = method.getName();
                 if (name.startsWith("set")) {
                     declaredField = BeanUtils.getDeclaredField(method.getDeclaringClass(), BeanUtils.setterName(name, PropertyNamingStrategy.CamelCase.name()));
@@ -1550,7 +1550,7 @@ public class ObjectReaderCreator {
         }
         if (cls10 != StackTraceElement[].class) {
         }
-        if ((j & FieldInfo.UNWRAPPED_MASK) != 0) {
+        if ((j & 562949953421312L) != 0) {
             name = method.getName();
             if (name.startsWith("set")) {
                 declaredField = BeanUtils.getDeclaredField(method.getDeclaringClass(), BeanUtils.setterName(name, PropertyNamingStrategy.CamelCase.name()));
@@ -1594,17 +1594,17 @@ public class ObjectReaderCreator {
         if (type2 == cls6) {
             return new FieldReaderInt8Value(str, i, j, str2, locale, (Byte) obj2, jSONSchema, null, null, null, str3, parameter);
         }
-        if (type2 != cls6 && type2 != Byte.class) {
+        if (true && type2 != Byte.class) {
             Class cls7 = Short.TYPE;
             if (type2 == cls7) {
                 return new FieldReaderInt16Value(str, i, j, str2, locale, (Short) obj2, jSONSchema, null, null, null, str3, parameter);
             }
-            if (type2 != cls7 && type2 != Short.class) {
+            if (true && type2 != Short.class) {
                 Class cls8 = Integer.TYPE;
                 if (type2 == cls8) {
                     return new FieldReaderInt32Value(str, i, j, str2, locale, (Integer) obj2, jSONSchema, null, null, null, str3, parameter);
                 }
-                if (type2 != cls8 && type2 != Integer.class) {
+                if (true && type2 != Integer.class) {
                     if (type2 == Long.TYPE) {
                         return new FieldReaderInt64Value(str, i, j, str2, locale, (Long) obj2, jSONSchema, null, null, null, str3, parameter);
                     }
@@ -1710,7 +1710,7 @@ public class ObjectReaderCreator {
                 return new ObjectReader10(cls, null, null, j, jSONSchema, supplier, function, fieldReaderArr);
             case 11:
                 return new ObjectReader11(cls, null, null, j, jSONSchema, supplier, function, fieldReaderArr);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return new ObjectReader12(cls, null, null, j, jSONSchema, supplier, function, fieldReaderArr);
             default:
                 return new ObjectReaderAdapter(cls, str, null, j, jSONSchema, supplier, function, fieldReaderArr);
@@ -1913,7 +1913,7 @@ public class ObjectReaderCreator {
         }
         ObjectReader initReader = getInitReader(objectReaderProvider, type5, cls5, fieldInfo);
         long j = fieldInfo.features;
-        if ((FieldInfo.JIT & j) != 0) {
+        if ((18014398509481984L & j) != 0) {
             str6 = str6;
             try {
                 try {
@@ -2020,7 +2020,7 @@ public class ObjectReaderCreator {
             strArr2 = fieldInfo2.alternateNames;
             if (strArr2 != null) {
                 length = strArr2.length;
-                i2 = i;
+                i2 = 0;
                 while (i2 < length) {
                     str3 = strArr2[i2];
                     if (str2.equals(str3)) {
@@ -2058,7 +2058,7 @@ public class ObjectReaderCreator {
         i = 0;
         objectReaderCreator = this;
         fieldReaderCreateFieldReaderMethod = null;
-        if (fieldReaderCreateFieldReaderMethod == null) {
+        if (true) {
             objectReaderCreator2 = objectReaderCreator;
             fieldInfo2 = fieldInfo;
             cls2 = cls;
@@ -2077,7 +2077,7 @@ public class ObjectReaderCreator {
         strArr2 = fieldInfo2.alternateNames;
         if (strArr2 != null) {
             length = strArr2.length;
-            i2 = i;
+            i2 = 0;
             while (i2 < length) {
                 str3 = strArr2[i2];
                 if (str2.equals(str3)) {
@@ -2211,7 +2211,7 @@ public class ObjectReaderCreator {
                 if (constructor3.getParameterCount() == 0) {
                     constructor2 = constructor3;
                 }
-                if (declaringClass != null && constructor3.getParameterCount() == i2 && declaringClass.equals(constructor3.getParameterTypes()[0])) {
+                if (declaringClass != null && constructor3.getParameterCount() == 1 && declaringClass.equals(constructor3.getParameterTypes()[0])) {
                     constructor = constructor3;
                     break;
                 }
@@ -2268,7 +2268,7 @@ public class ObjectReaderCreator {
                 } else {
                     i = 0;
                 }
-                if (!z5 && !Throwable.class.isAssignableFrom(cls) && constructor2 == null && i != strArrLookupParameterNames.length) {
+                if (!z5 && !Throwable.class.isAssignableFrom(cls) && constructor2 == null && 0 != strArrLookupParameterNames.length) {
                     if (constructor5.getParameterCount() == 1) {
                         FieldInfo fieldInfo2 = new FieldInfo();
                         objectReaderProvider2 = objectReaderProvider;
@@ -2276,7 +2276,7 @@ public class ObjectReaderCreator {
                         if (zIsRecord && (field = BeanUtils.getField(cls, fieldInfo2.fieldName)) != null) {
                             objectReaderProvider2.getFieldInfo(fieldInfo2, cls, field);
                         }
-                        if ((fieldInfo2.features & FieldInfo.VALUE_MASK) != 0) {
+                        if ((fieldInfo2.features & 281474976710656L) != 0) {
                             Type type2 = constructor5.getGenericParameterTypes()[0];
                             Class<?> cls3 = constructor5.getParameterTypes()[0];
                             String str3 = fieldInfo2.schema;
@@ -2293,7 +2293,7 @@ public class ObjectReaderCreator {
                             Object objApply = fieldInfo2.defaultValue;
                             if (objApply != null && objApply.getClass() != cls3) {
                                 Function typeConvert = JSONFactory.getDefaultObjectReaderProvider().getTypeConvert(objApply.getClass(), type2);
-                                if (typeConvert != 0) {
+                                if (false) {
                                     objApply = typeConvert.apply(objApply);
                                 } else {
                                     throw new JSONException("illegal defaultValue : " + objApply + ", class " + cls3.getName());
@@ -2359,7 +2359,7 @@ public class ObjectReaderCreator {
                     autoTypeBeforeHandler = null;
                 }
                 autoTypeBeforeHandlerNewInstance = autoTypeBeforeHandler;
-                if (autoTypeBeforeHandlerNewInstance != null) {
+                if (false) {
                     ((ObjectReaderBean) objectReaderCreateObjectReader).setAutoTypeBeforeHandler(autoTypeBeforeHandlerNewInstance);
                 }
             }
@@ -2426,7 +2426,7 @@ public class ObjectReaderCreator {
         }
         Class<? super T> superclass = cls.getSuperclass();
         if (BeanUtils.isExtendedMap(cls)) {
-            linkedHashMap2.put(BeanUtils.SUPER, listOf(ObjectReaders.fieldReader(BeanUtils.SUPER, cls.getGenericSuperclass(), superclass, new C2252(1))));
+            linkedHashMap2.put("$super$", listOf(ObjectReaders.fieldReader("$super$", cls.getGenericSuperclass(), superclass, new C2252(1))));
         }
         return toFieldReaderArray(linkedHashMap2);
     }
@@ -2489,7 +2489,7 @@ public class ObjectReaderCreator {
         }
         if (objApply != null && objApply.getClass() != cls2) {
             Function typeConvert = JSONFactory.getDefaultObjectReaderProvider().getTypeConvert(objApply.getClass(), type2);
-            if (typeConvert != 0) {
+            if (false) {
                 objApply = typeConvert.apply(objApply);
             } else {
                 throw new JSONException("illegal defaultValue : " + objApply + ", class " + cls2.getName());
@@ -2514,7 +2514,7 @@ public class ObjectReaderCreator {
             }
         }
         if (objectReader != null) {
-            FieldReaderObject fieldReaderObject = new FieldReaderObject(str, type2, cls2, i, j | FieldInfo.READ_USING_MASK, str2, locale, obj2, jSONSchemaOf, null, field, null);
+            FieldReaderObject fieldReaderObject = new FieldReaderObject(str, type2, cls2, i, j | 2251799813685248L, str2, locale, obj2, jSONSchemaOf, null, field, null);
             fieldReaderObject.initReader = objectReader;
             return fieldReaderObject;
         }
@@ -2523,79 +2523,79 @@ public class ObjectReaderCreator {
             return new FieldReaderInt32Value(str, i, j, str2, locale, (Integer) obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Integer.class) {
-            return new FieldReaderInt32(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
+            return new FieldReaderInt32(str, Integer.class, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Long.TYPE) {
             return new FieldReaderInt64Value(str, i, j, str2, locale, (Long) obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Long.class) {
-            return new FieldReaderInt64(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
+            return new FieldReaderInt64(str, Long.class, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Short.TYPE) {
             return new FieldReaderInt16Value(str, i, j, str2, locale, (Short) obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Short.class) {
-            return new FieldReaderInt16(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
+            return new FieldReaderInt16(str, Short.class, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Boolean.TYPE) {
             return new FieldReaderBoolValue(str, i, j, str2, locale, (Boolean) obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Boolean.class) {
-            return new FieldReaderBool(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
+            return new FieldReaderBool(str, Boolean.class, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Byte.TYPE) {
             return new FieldReaderInt8Value(str, i, j, str2, locale, (Byte) obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Byte.class) {
-            return new FieldReaderInt8(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
+            return new FieldReaderInt8(str, Byte.class, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Float.TYPE) {
             return new FieldReaderFloatValue(str, i, j, str2, locale, (Float) obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Float.class) {
-            return new FieldReaderFloat(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
+            return new FieldReaderFloat(str, Float.class, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Double.TYPE) {
             return new FieldReaderDoubleValue(str, i, j, str2, locale, (Double) obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Double.class) {
-            return new FieldReaderDouble(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
+            return new FieldReaderDouble(str, Double.class, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == Character.TYPE) {
             return new FieldReaderCharValue(str, i, j, str2, locale, (Character) obj2, jSONSchema, null, field, null, null, null);
         }
         if (cls2 == BigDecimal.class) {
-            return new FieldReaderBigDecimal(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null);
+            return new FieldReaderBigDecimal(str, BigDecimal.class, i, j, str2, locale, obj2, jSONSchema, null, field, null);
         }
         if (cls2 == BigInteger.class) {
-            return new FieldReaderBigInteger(str, type2, cls2, i, j, str2, locale, (BigInteger) obj2, jSONSchema, null, field, null);
+            return new FieldReaderBigInteger(str, type2, BigInteger.class, i, j, str2, locale, (BigInteger) obj2, jSONSchema, null, field, null);
         }
         if (cls2 == String.class) {
-            return new FieldReaderString(str, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
+            return new FieldReaderString(str, String.class, i, j, str2, locale, obj2, jSONSchema, null, field, null, null, null);
         }
         if (type2 == String[].class) {
             return new FieldReaderStringArray(str, type2, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null);
         }
         if (cls2 == Date.class) {
-            return new FieldReaderDate(str, type2, cls2, i, j, str2, locale, obj2, jSONSchema, field, null, null);
+            return new FieldReaderDate(str, type2, Date.class, i, j, str2, locale, obj2, jSONSchema, field, null, null);
         }
         if (cls2 == AtomicInteger.class) {
-            return new FieldReaderAtomicInteger(str, cls2, i, jSONSchema, null, field);
+            return new FieldReaderAtomicInteger(str, AtomicInteger.class, i, jSONSchema, null, field);
         }
         if (cls2 == AtomicLong.class) {
-            return new FieldReaderAtomicLong(str, cls2, i, jSONSchema, null, field);
+            return new FieldReaderAtomicLong(str, AtomicLong.class, i, jSONSchema, null, field);
         }
         if (cls2 == AtomicIntegerArray.class) {
-            return new FieldReaderAtomicIntegerArrayReadOnly(str, cls2, i, jSONSchema, null, field);
+            return new FieldReaderAtomicIntegerArrayReadOnly(str, AtomicIntegerArray.class, i, jSONSchema, null, field);
         }
         if (cls2 == AtomicLongArray.class) {
-            return new FieldReaderAtomicLongArrayReadOnly(str, cls2, i, jSONSchema, null, field);
+            return new FieldReaderAtomicLongArrayReadOnly(str, AtomicLongArray.class, i, jSONSchema, null, field);
         }
         if (cls2 == AtomicBoolean.class) {
-            return new FieldReaderAtomicBooleanReadOnly(str, cls2, i, str2, (AtomicBoolean) obj2, jSONSchema, null, field);
+            return new FieldReaderAtomicBooleanReadOnly(str, AtomicBoolean.class, i, str2, (AtomicBoolean) obj2, jSONSchema, null, field);
         }
         if (cls2 == AtomicReference.class) {
-            return new FieldReaderAtomicReference(str, type2, cls2, i, j, str2, jSONSchema, null, field);
+            return new FieldReaderAtomicReference(str, type2, AtomicReference.class, i, j, str2, jSONSchema, null, field);
         }
         if (type2 instanceof Class) {
             fieldType = null;
@@ -2651,7 +2651,7 @@ public class ObjectReaderCreator {
             }
         }
         if (cls3 != null) {
-            long j2 = j & FieldInfo.UNWRAPPED_MASK;
+            long j2 = j & 562949953421312L;
             if (j2 != 0 && Map.class.isAssignableFrom(cls3)) {
                 return new FieldReaderMapReadOnly(str, fieldType, cls2, i, j, str2, jSONSchema, null, field, str4, biConsumer);
             }
@@ -2665,13 +2665,13 @@ public class ObjectReaderCreator {
             return new FieldReaderMap(str, type6, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null, str4, biConsumer);
         }
         if (cls2 == LocalDateTime.class) {
-            return new FieldReaderLocalDateTime(str, type2, cls2, i, j, str2, locale, obj2, jSONSchema, field, null, null);
+            return new FieldReaderLocalDateTime(str, type2, LocalDateTime.class, i, j, str2, locale, obj2, jSONSchema, field, null, null);
         }
         if (cls2 == ZonedDateTime.class) {
-            return new FieldReaderZonedDateTime(str, type2, cls2, i, j, str2, locale, obj2, jSONSchema, field, null, null);
+            return new FieldReaderZonedDateTime(str, type2, ZonedDateTime.class, i, j, str2, locale, obj2, jSONSchema, field, null, null);
         }
         if (cls2 == Instant.class) {
-            return new FieldReaderInstant(str, type2, cls2, i, j, str2, locale, obj2, jSONSchema, field, null, null);
+            return new FieldReaderInstant(str, type2, Instant.class, i, j, str2, locale, obj2, jSONSchema, field, null, null);
         }
         return new FieldReaderObject(str, type2, cls2, i, j, str2, locale, obj2, jSONSchema, null, field, null);
     }
@@ -2692,45 +2692,45 @@ public class ObjectReaderCreator {
         Type type3;
         Type mapping2;
         if (objectReader != null) {
-            FieldReaderObject fieldReaderObject = new FieldReaderObject(str, type2, cls2, i, j | FieldInfo.READ_USING_MASK, str2, locale, obj, jSONSchema, method, null, biConsumer);
+            FieldReaderObject fieldReaderObject = new FieldReaderObject(str, type2, cls2, i, j | 2251799813685248L, str2, locale, obj, jSONSchema, method, null, biConsumer);
             fieldReaderObject.initReader = objectReader;
             return fieldReaderObject;
         }
         if (cls2 == Integer.class) {
-            return new FieldReaderInt32(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
+            return new FieldReaderInt32(str, Integer.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
         }
         if (cls2 == Long.class) {
-            return new FieldReaderInt64(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
+            return new FieldReaderInt64(str, Long.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
         }
         if (cls2 == String.class) {
-            return new FieldReaderString(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
+            return new FieldReaderString(str, String.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
         }
         if (cls2 == Boolean.class) {
-            return new FieldReaderBool(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
+            return new FieldReaderBool(str, Boolean.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
         }
         if (cls2 == Short.class) {
-            return new FieldReaderInt16(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
+            return new FieldReaderInt16(str, Short.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
         }
         if (cls2 == Byte.class) {
-            return new FieldReaderInt8(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
+            return new FieldReaderInt8(str, Byte.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
         }
         if (cls2 == BigDecimal.class) {
-            return new FieldReaderBigDecimal(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer);
+            return new FieldReaderBigDecimal(str, BigDecimal.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer);
         }
         if (cls2 == BigInteger.class) {
-            return new FieldReaderBigInteger(str, type2, cls2, i, j, str2, locale, (BigInteger) obj, jSONSchema, method, null, biConsumer);
+            return new FieldReaderBigInteger(str, type2, BigInteger.class, i, j, str2, locale, (BigInteger) obj, jSONSchema, method, null, biConsumer);
         }
         if (cls2 == Float.class) {
-            return new FieldReaderFloat(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
+            return new FieldReaderFloat(str, Float.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
         }
         if (cls2 == Double.class) {
-            return new FieldReaderDouble(str, cls2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
+            return new FieldReaderDouble(str, Double.class, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null);
         }
         if (cls2 == Number.class) {
-            return new FieldReaderNumber(str, cls2, i, j, str2, locale, (Number) obj, jSONSchema, method, null, biConsumer);
+            return new FieldReaderNumber(str, Number.class, i, j, str2, locale, (Number) obj, jSONSchema, method, null, biConsumer);
         }
         if (cls2 == Date.class) {
-            return new FieldReaderDate(str, type2, cls2, i, j, str2, locale, obj, jSONSchema, null, method, biConsumer);
+            return new FieldReaderDate(str, type2, Date.class, i, j, str2, locale, obj, jSONSchema, null, method, biConsumer);
         }
         Type type4 = type2;
         Type fieldType = null;
@@ -2759,17 +2759,17 @@ public class ObjectReaderCreator {
                 type3 = type5;
             } else {
                 type3 = Object.class;
-                mapping2 = type3;
+                mapping2 = Object.class;
             }
         } else {
             type3 = Object.class;
-            mapping2 = type3;
+            mapping2 = Object.class;
         }
-        boolean z = fieldType == 0;
-        if (z) {
+        boolean z = false;
+        if (false) {
             fieldType = type4;
         }
-        if (z) {
+        if (false) {
             mapping = cls2;
         }
         return new FieldReaderList(str, fieldType, mapping, type3, mapping2, i, j, str2, locale, obj, jSONSchema, method, null, biConsumer, null, null, null, null);

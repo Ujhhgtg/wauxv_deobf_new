@@ -55,7 +55,7 @@ public final /* synthetic */ class C1688 implements InterfaceC1443 {
     public final Object mo924(InterfaceC0974 interfaceC0974) {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         Integer num = null;
         String str = null;
         String str2 = null;
@@ -111,7 +111,7 @@ public final /* synthetic */ class C1688 implements InterfaceC1443 {
                     break;
                 case 8:
                     str8 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 8, C2839.f9108, str8);
-                    i |= bc.e;
+                    i |= 256;
                     break;
                 case 9:
                     num = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 9, C1665.f5622, num);

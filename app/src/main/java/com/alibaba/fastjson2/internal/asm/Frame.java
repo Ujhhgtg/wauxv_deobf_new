@@ -99,7 +99,7 @@ class Frame {
         int iAddType;
         char cCharAt = str.charAt(i);
         if (cCharAt == 'F') {
-            return FLOAT;
+            return 4194306;
         }
         byte b = 0;
         String strM4744 = "com/alibaba/fastjson2/reader/FieldReader";
@@ -110,7 +110,7 @@ class Frame {
                 }
                 if (cCharAt != 'I') {
                     if (cCharAt == 'J') {
-                        return LONG;
+                        return 4194308;
                     }
                     if (cCharAt != 'Z') {
                         if (cCharAt == '[') {
@@ -120,7 +120,7 @@ class Frame {
                             }
                             char cCharAt2 = str.charAt(i2);
                             if (cCharAt2 == 'F') {
-                                iAddType = FLOAT;
+                                iAddType = 4194306;
                             } else if (cCharAt2 == 'L') {
                                 if (i != 0) {
                                     strM4744 = null;
@@ -134,45 +134,45 @@ class Frame {
                                 if (strM4744 == null) {
                                     strM4744 = AbstractC2784.m4744(1, i2 + 1, str);
                                 }
-                                iAddType = symbolTable.addType(strM4744) | REFERENCE_KIND;
+                                iAddType = symbolTable.addType(strM4744) | 8388608;
                             } else if (cCharAt2 == 'S') {
-                                iAddType = SHORT;
+                                iAddType = 4194316;
                             } else if (cCharAt2 == 'Z') {
-                                iAddType = BOOLEAN;
+                                iAddType = 4194313;
                             } else if (cCharAt2 == 'I') {
-                                iAddType = INTEGER;
+                                iAddType = 4194305;
                             } else if (cCharAt2 != 'J') {
                                 switch (cCharAt2) {
                                     case 'B':
-                                        iAddType = BYTE;
+                                        iAddType = 4194314;
                                         break;
                                     case 'C':
-                                        iAddType = CHAR;
+                                        iAddType = 4194315;
                                         break;
                                     case 'D':
-                                        iAddType = DOUBLE;
+                                        iAddType = 4194307;
                                         break;
                                     default:
                                         throw new IllegalArgumentException();
                                 }
                             } else {
-                                iAddType = LONG;
+                                iAddType = 4194308;
                             }
-                            return ((i2 - i) << DIM_SHIFT) | iAddType;
+                            return ((i2 - i) << 26) | iAddType;
                         }
                         switch (cCharAt) {
                             case 'B':
                             case 'C':
                                 break;
                             case 'D':
-                                return DOUBLE;
+                                return 4194307;
                             default:
                                 throw new IllegalArgumentException();
                         }
                     }
                 }
             }
-            return INTEGER;
+            return 4194305;
         }
         String strM4745 = "java/lang/String";
         if (i == 0) {
@@ -195,7 +195,7 @@ class Frame {
                     b = !str.equals("Ljava/util/List;") ? (byte) -1 : (byte) 4;
                     break;
                 case 296832740:
-                    b = !str.equals(ASMUtils.DESC_SUPPLIER) ? (byte) -1 : (byte) 5;
+                    b = !str.equals("Ljava/util/function/Supplier;") ? (byte) -1 : (byte) 5;
                     break;
                 case 495983538:
                     b = !str.equals("Lcom/alibaba/fastjson2/JSONWriter;") ? (byte) -1 : (byte) 6;
@@ -250,7 +250,7 @@ class Frame {
                     strM4744 = "java/lang/Class";
                     break;
                 case 10:
-                    strM4744 = ASMUtils.TYPE_OBJECT;
+                    strM4744 = "java/lang/Object";
                     break;
                 case 11:
                     strM4744 = "java/lang/reflect/Type";
@@ -282,7 +282,7 @@ class Frame {
                     case 0:
                         break;
                     case 1:
-                        strM4744 = ASMUtils.TYPE_OBJECT;
+                        strM4744 = "java/lang/Object";
                         break;
                     case 2:
                         strM4744 = "java/lang/Integer";
@@ -318,7 +318,7 @@ class Frame {
                             if (i != 79) {
                                 strM4745 = null;
                             } else {
-                                strM4745 = ASMUtils.TYPE_OBJECT;
+                                strM4745 = "java/lang/Object";
                             }
                             break;
                         case 1:
@@ -347,12 +347,12 @@ class Frame {
                 } else if (str.equals("(Lcom/alibaba/fastjson2/JSONReader;Ljava/lang/Class;J)Lcom/alibaba/fastjson2/reader/ObjectReader;")) {
                     strM4745 = "com/alibaba/fastjson2/reader/ObjectReader";
                 } else if (str.equals("(Lcom/alibaba/fastjson2/JSONReader;Ljava/lang/Class;J)Ljava/lang/Object;")) {
-                    strM4745 = ASMUtils.TYPE_OBJECT;
+                    strM4745 = "java/lang/Object";
                 } else {
                     strM4745 = null;
                 }
             } else if (str.equals("(Lcom/alibaba/fastjson2/JSONReader;)Ljava/lang/Object;")) {
-                strM4745 = ASMUtils.TYPE_OBJECT;
+                strM4745 = "java/lang/Object";
             } else if (str.equals("(Lcom/alibaba/fastjson2/JSONReader;)Lcom/alibaba/fastjson2/reader/ObjectReader;")) {
                 strM4745 = "com/alibaba/fastjson2/reader/ObjectReader";
             } else {
@@ -366,24 +366,24 @@ class Frame {
         if (strM4745 == null) {
             strM4745 = AbstractC2784.m4744(1, i + 1, str);
         }
-        return symbolTable.addType(strM4745) | REFERENCE_KIND;
+        return symbolTable.addType(strM4745) | 8388608;
     }
 
     private int getConcreteOutputType(int i, int i2) {
         int i3 = (-67108864) & i;
-        int i4 = KIND_MASK & i;
+        int i4 = 62914560 & i;
         if (i4 == 16777216) {
-            int i5 = i3 + this.inputLocals[i & VALUE_MASK];
-            if ((i & TOP_IF_LONG_OR_DOUBLE_FLAG) == 0 || !(i5 == LONG || i5 == DOUBLE)) {
+            int i5 = i3 + this.inputLocals[i & 1048575];
+            if ((i & 1048576) == 0 || !(i5 == 4194308 || i5 == 4194307)) {
                 return i5;
             }
             return 4194304;
         }
-        if (i4 != STACK_KIND) {
+        if (i4 != 20971520) {
             return i;
         }
-        int i6 = i3 + this.inputStack[i2 - (i & VALUE_MASK)];
-        if ((i & TOP_IF_LONG_OR_DOUBLE_FLAG) == 0 || !(i6 == LONG || i6 == DOUBLE)) {
+        int i6 = i3 + this.inputStack[i2 - (i & 1048575)];
+        if ((i & 1048576) == 0 || !(i6 == 4194308 || i6 == 4194307)) {
             return i6;
         }
         return 4194304;
@@ -396,36 +396,36 @@ class Frame {
     private int getInitializedType(SymbolTable symbolTable, int i) {
         int i2;
         int iAddType;
-        if (i == UNINITIALIZED_THIS || ((-4194304) & i) == UNINITIALIZED_KIND) {
+        if (i == 4194310 || ((-4194304) & i) == 12582912) {
             for (int i3 = 0; i3 < this.initializationCount; i3++) {
                 int i4 = this.initializations[i3];
                 int i5 = (-67108864) & i4;
-                int i6 = KIND_MASK & i4;
-                int i7 = i4 & VALUE_MASK;
+                int i6 = 62914560 & i4;
+                int i7 = i4 & 1048575;
                 if (i6 == 16777216) {
                     i2 = this.inputLocals[i7];
                 } else {
-                    if (i6 == STACK_KIND) {
+                    if (i6 == 20971520) {
                         int[] iArr = this.inputStack;
                         i2 = iArr[iArr.length - i7];
                     }
                     if (i == i4) {
-                        if (i == UNINITIALIZED_THIS) {
+                        if (i == 4194310) {
                             iAddType = symbolTable.addType(symbolTable.className);
                         } else {
-                            iAddType = symbolTable.addType(symbolTable.typeTable[i & VALUE_MASK].value);
+                            iAddType = symbolTable.addType(symbolTable.typeTable[i & 1048575].value);
                         }
-                        return iAddType | REFERENCE_KIND;
+                        return iAddType | 8388608;
                     }
                 }
                 i4 = i2 + i5;
                 if (i == i4) {
-                    if (i == UNINITIALIZED_THIS) {
+                    if (i == 4194310) {
                         iAddType = symbolTable.addType(symbolTable.className);
                     } else {
-                        iAddType = symbolTable.addType(symbolTable.typeTable[i & VALUE_MASK].value);
+                        iAddType = symbolTable.addType(symbolTable.typeTable[i & 1048575].value);
                     }
-                    return iAddType | REFERENCE_KIND;
+                    return iAddType | 8388608;
                 }
             }
         }
@@ -451,7 +451,7 @@ class Frame {
         if (s <= 0) {
             short s2 = (short) (this.outputStackStart - 1);
             this.outputStackStart = s2;
-            return (-s2) | STACK_KIND;
+            return (-s2) | 20971520;
         }
         int[] iArr = this.outputStack;
         short s3 = (short) (s - 1);
@@ -507,7 +507,7 @@ class Frame {
                 break;
             }
             int i6 = iArr[i2];
-            if (i6 != LONG && i6 != DOUBLE) {
+            if (i6 != 4194308 && i6 != 4194307) {
                 i5 = 1;
             }
             i2 += i5;
@@ -523,7 +523,7 @@ class Frame {
         int i8 = 0;
         while (i7 < iArr2.length) {
             int i9 = iArr2[i7];
-            i7 += (i9 == LONG || i9 == DOUBLE) ? 2 : 1;
+            i7 += (i9 == 4194308 || i9 == 4194307) ? 2 : 1;
             i8++;
         }
         int iVisitFrameStart = methodWriter.visitFrameStart(this.owner.bytecodeOffset, i3, i8);
@@ -534,7 +534,7 @@ class Frame {
                 break;
             }
             int i12 = iArr[i10];
-            i10 += (i12 == LONG || i12 == DOUBLE) ? 2 : 1;
+            i10 += (i12 == 4194308 || i12 == 4194307) ? 2 : 1;
             methodWriter.visitAbstractType(iVisitFrameStart, i12);
             i3 = i11;
             iVisitFrameStart++;
@@ -546,7 +546,7 @@ class Frame {
                 return;
             }
             int i14 = iArr2[i];
-            i += (i14 == LONG || i14 == DOUBLE) ? 2 : 1;
+            i += (i14 == 4194308 || i14 == 4194307) ? 2 : 1;
             methodWriter.visitAbstractType(iVisitFrameStart, i14);
             iVisitFrameStart++;
             i8 = i13;
@@ -556,18 +556,18 @@ class Frame {
     public void execute(int i, int i2, Symbol symbol, SymbolTable symbolTable) {
         switch (i) {
             case 0:
-            case Opcodes.INEG /* 116 */:
-            case Opcodes.LNEG /* 117 */:
-            case Opcodes.FNEG /* 118 */:
-            case Opcodes.DNEG /* 119 */:
-            case Opcodes.I2B /* 145 */:
-            case Opcodes.I2C /* 146 */:
-            case Opcodes.I2S /* 147 */:
-            case Opcodes.GOTO /* 167 */:
-            case Opcodes.RETURN /* 177 */:
+            case 116 /* 116 */:
+            case 117 /* 117 */:
+            case 118 /* 118 */:
+            case 119 /* 119 */:
+            case 145 /* 145 */:
+            case 146 /* 146 */:
+            case 147 /* 147 */:
+            case 167 /* 167 */:
+            case 177 /* 177 */:
                 return;
             case 1:
-                push(NULL);
+                push(4194309);
                 return;
             case 2:
             case 3:
@@ -577,60 +577,60 @@ class Frame {
             case 7:
             case 8:
             case 16:
-            case Opcodes.SIPUSH /* 17 */:
-            case Opcodes.ILOAD /* 21 */:
-                push(INTEGER);
+            case 17 /* 17 */:
+            case 21 /* 21 */:
+                push(4194305);
                 return;
             case 9:
             case 10:
             case 22:
-                push(LONG);
+                push(4194308);
                 push(4194304);
                 return;
             case 11:
             case 12:
             case 13:
-            case Opcodes.FLOAD /* 23 */:
-                push(FLOAT);
+            case 23 /* 23 */:
+                push(4194306);
                 return;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
             case 15:
-            case Opcodes.DLOAD /* 24 */:
-                push(DOUBLE);
+            case 24 /* 24 */:
+                push(4194307);
                 push(4194304);
                 return;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 int i3 = symbol.tag;
                 switch (i3) {
                     case 3:
-                        push(INTEGER);
+                        push(4194305);
                         return;
                     case 4:
-                        push(FLOAT);
+                        push(4194306);
                         return;
                     case 5:
-                        push(LONG);
+                        push(4194308);
                         push(4194304);
                         return;
                     case 6:
-                        push(DOUBLE);
+                        push(4194307);
                         push(4194304);
                         return;
                     case 7:
-                        push(symbolTable.addType("java/lang/Class") | REFERENCE_KIND);
+                        push(symbolTable.addType("java/lang/Class") | 8388608);
                         return;
                     case 8:
-                        push(symbolTable.addType("java/lang/String") | REFERENCE_KIND);
+                        push(symbolTable.addType("java/lang/String") | 8388608);
                         return;
                     default:
                         switch (i3) {
                             case 15:
-                                push(symbolTable.addType("java/lang/invoke/MethodHandle") | REFERENCE_KIND);
+                                push(symbolTable.addType("java/lang/invoke/MethodHandle") | 8388608);
                                 return;
                             case 16:
-                                push(symbolTable.addType("java/lang/invoke/MethodType") | REFERENCE_KIND);
+                                push(symbolTable.addType("java/lang/invoke/MethodType") | 8388608);
                                 return;
-                            case Opcodes.SIPUSH /* 17 */:
+                            case 17 /* 17 */:
                                 push(symbolTable, symbol.value);
                                 return;
                             default:
@@ -639,7 +639,7 @@ class Frame {
                 }
             case 19:
             case 20:
-            case DIM_SHIFT /* 26 */:
+            case 26 /* 26 */:
             case 27:
             case 28:
             case 29:
@@ -695,144 +695,144 @@ class Frame {
             case 103:
             case 106:
             case 107:
-            case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-            case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
-            case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+            case 110 /* 110 */:
+            case 111 /* 111 */:
+            case 114 /* 114 */:
             case 115:
             case 137:
             case 138:
             case 141:
             case 144:
-            case Opcodes.JSR /* 168 */:
-            case Opcodes.RET /* 169 */:
+            case 168 /* 168 */:
+            case 169 /* 169 */:
             case 186:
-            case Opcodes.NEWARRAY /* 188 */:
+            case 188 /* 188 */:
             case 196:
             case 197:
             default:
                 throw new IllegalArgumentException();
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 push(getLocal(i2));
                 return;
-            case Opcodes.IALOAD /* 46 */:
-            case Opcodes.BALOAD /* 51 */:
+            case 46 /* 46 */:
+            case 51 /* 51 */:
             case 52:
-            case Opcodes.SALOAD /* 53 */:
-            case Opcodes.IADD /* 96 */:
+            case 53 /* 53 */:
+            case 96 /* 96 */:
             case 100:
             case 104:
-            case Opcodes.IDIV /* 108 */:
+            case 108 /* 108 */:
             case 112:
             case 120:
             case 122:
-            case Opcodes.IUSHR /* 124 */:
+            case 124 /* 124 */:
             case 126:
             case 128:
-            case Opcodes.IXOR /* 130 */:
-            case Opcodes.L2I /* 136 */:
-            case Opcodes.D2I /* 142 */:
-            case Opcodes.FCMPL /* 149 */:
-            case Opcodes.FCMPG /* 150 */:
+            case 130 /* 130 */:
+            case 136 /* 136 */:
+            case 142 /* 142 */:
+            case 149 /* 149 */:
+            case 150 /* 150 */:
                 pop(2);
-                push(INTEGER);
+                push(4194305);
                 return;
             case 47:
-            case Opcodes.D2L /* 143 */:
+            case 143 /* 143 */:
                 pop(2);
-                push(LONG);
+                push(4194308);
                 push(4194304);
                 return;
-            case Opcodes.AALOAD /* 50 */:
+            case 50 /* 50 */:
                 pop(1);
                 int iPop = pop();
-                if (iPop != NULL) {
+                if (iPop != 4194309) {
                     iPop -= 67108864;
                 }
                 push(iPop);
                 return;
-            case Opcodes.ISTORE /* 54 */:
-            case Opcodes.FSTORE /* 56 */:
-            case Opcodes.ASTORE /* 58 */:
+            case 54 /* 54 */:
+            case 56 /* 56 */:
+            case 58 /* 58 */:
                 setLocal(i2, pop());
                 if (i2 > 0) {
                     int i4 = i2 - 1;
                     int local = getLocal(i4);
-                    if (local == LONG || local == DOUBLE) {
+                    if (local == 4194308 || local == 4194307) {
                         setLocal(i4, 4194304);
                         return;
                     }
-                    int i5 = local & KIND_MASK;
-                    if (i5 == 16777216 || i5 == STACK_KIND) {
-                        setLocal(i4, local | TOP_IF_LONG_OR_DOUBLE_FLAG);
+                    int i5 = local & 62914560;
+                    if (i5 == 16777216 || i5 == 20971520) {
+                        setLocal(i4, local | 1048576);
                         return;
                     }
                     return;
                 }
                 return;
-            case Opcodes.LSTORE /* 55 */:
-            case Opcodes.DSTORE /* 57 */:
+            case 55 /* 55 */:
+            case 57 /* 57 */:
                 pop(1);
                 setLocal(i2, pop());
                 setLocal(i2 + 1, 4194304);
                 if (i2 > 0) {
                     int i6 = i2 - 1;
                     int local2 = getLocal(i6);
-                    if (local2 == LONG || local2 == DOUBLE) {
+                    if (local2 == 4194308 || local2 == 4194307) {
                         setLocal(i6, 4194304);
                         return;
                     }
-                    int i7 = local2 & KIND_MASK;
-                    if (i7 == 16777216 || i7 == STACK_KIND) {
-                        setLocal(i6, local2 | TOP_IF_LONG_OR_DOUBLE_FLAG);
+                    int i7 = local2 & 62914560;
+                    if (i7 == 16777216 || i7 == 20971520) {
+                        setLocal(i6, local2 | 1048576);
                         return;
                     }
                     return;
                 }
                 return;
-            case Opcodes.IASTORE /* 79 */:
-            case Opcodes.AASTORE /* 83 */:
-            case Opcodes.BASTORE /* 84 */:
-            case Opcodes.CASTORE /* 85 */:
+            case 79 /* 79 */:
+            case 83 /* 83 */:
+            case 84 /* 84 */:
+            case 85 /* 85 */:
                 pop(3);
                 return;
-            case Opcodes.POP /* 87 */:
-            case Opcodes.IFEQ /* 153 */:
-            case Opcodes.IFNE /* 154 */:
-            case Opcodes.IFLT /* 155 */:
-            case Opcodes.IFGE /* 156 */:
-            case Opcodes.IFGT /* 157 */:
-            case Opcodes.IFLE /* 158 */:
-            case Opcodes.TABLESWITCH /* 170 */:
-            case Opcodes.LOOKUPSWITCH /* 171 */:
-            case Opcodes.IRETURN /* 172 */:
-            case Opcodes.FRETURN /* 174 */:
-            case Opcodes.ARETURN /* 176 */:
-            case Opcodes.ATHROW /* 191 */:
-            case Opcodes.MONITORENTER /* 194 */:
-            case Opcodes.MONITOREXIT /* 195 */:
-            case Opcodes.IFNULL /* 198 */:
-            case Opcodes.IFNONNULL /* 199 */:
+            case 87 /* 87 */:
+            case 153 /* 153 */:
+            case 154 /* 154 */:
+            case 155 /* 155 */:
+            case 156 /* 156 */:
+            case 157 /* 157 */:
+            case 158 /* 158 */:
+            case 170 /* 170 */:
+            case 171 /* 171 */:
+            case 172 /* 172 */:
+            case 174 /* 174 */:
+            case 176 /* 176 */:
+            case 191 /* 191 */:
+            case 194 /* 194 */:
+            case 195 /* 195 */:
+            case 198 /* 198 */:
+            case 199 /* 199 */:
                 pop(1);
                 return;
-            case Opcodes.POP2 /* 88 */:
-            case Opcodes.IF_ICMPEQ /* 159 */:
-            case Opcodes.IF_ICMPNE /* 160 */:
-            case Opcodes.IF_ICMPLT /* 161 */:
-            case Opcodes.IF_ICMPGE /* 162 */:
-            case Opcodes.IF_ICMPGT /* 163 */:
-            case Opcodes.IF_ICMPLE /* 164 */:
-            case Opcodes.IF_ACMPEQ /* 165 */:
-            case Opcodes.IF_ACMPNE /* 166 */:
-            case Opcodes.LRETURN /* 173 */:
-            case Opcodes.DRETURN /* 175 */:
+            case 88 /* 88 */:
+            case 159 /* 159 */:
+            case 160 /* 160 */:
+            case 161 /* 161 */:
+            case 162 /* 162 */:
+            case 163 /* 163 */:
+            case 164 /* 164 */:
+            case 165 /* 165 */:
+            case 166 /* 166 */:
+            case 173 /* 173 */:
+            case 175 /* 175 */:
                 pop(2);
                 return;
-            case Opcodes.DUP /* 89 */:
+            case 89 /* 89 */:
                 int iPop2 = pop();
                 push(iPop2);
                 push(iPop2);
                 return;
-            case Opcodes.DUP2 /* 92 */:
+            case 92 /* 92 */:
                 int iPop3 = pop();
                 int iPop4 = pop();
                 push(iPop4);
@@ -840,79 +840,79 @@ class Frame {
                 push(iPop4);
                 push(iPop3);
                 return;
-            case Opcodes.SWAP /* 95 */:
+            case 95 /* 95 */:
                 int iPop5 = pop();
                 int iPop6 = pop();
                 push(iPop5);
                 push(iPop6);
                 return;
-            case Opcodes.LADD /* 97 */:
+            case 97 /* 97 */:
             case 101:
             case 105:
-            case Opcodes.LDIV /* 109 */:
+            case 109 /* 109 */:
             case 113:
             case 127:
-            case Opcodes.LOR /* 129 */:
-            case Opcodes.LXOR /* 131 */:
+            case 129 /* 129 */:
+            case 131 /* 131 */:
                 pop(4);
-                push(LONG);
+                push(4194308);
                 push(4194304);
                 return;
             case 121:
-            case Opcodes.LSHR /* 123 */:
-            case Opcodes.LUSHR /* 125 */:
+            case 123 /* 123 */:
+            case 125 /* 125 */:
                 pop(3);
-                push(LONG);
+                push(4194308);
                 push(4194304);
                 return;
-            case Opcodes.IINC /* 132 */:
-                setLocal(i2, INTEGER);
+            case 132 /* 132 */:
+                setLocal(i2, 4194305);
                 return;
-            case Opcodes.I2L /* 133 */:
-            case Opcodes.F2L /* 140 */:
+            case 133 /* 133 */:
+            case 140 /* 140 */:
                 pop(1);
-                push(LONG);
+                push(4194308);
                 push(4194304);
                 return;
-            case Opcodes.I2F /* 134 */:
+            case 134 /* 134 */:
                 pop(1);
-                push(FLOAT);
+                push(4194306);
                 return;
-            case Opcodes.I2D /* 135 */:
+            case 135 /* 135 */:
                 pop(1);
-                push(DOUBLE);
+                push(4194307);
                 push(4194304);
                 return;
-            case Opcodes.F2I /* 139 */:
-            case Opcodes.ARRAYLENGTH /* 190 */:
-            case Opcodes.INSTANCEOF /* 193 */:
+            case 139 /* 139 */:
+            case 190 /* 190 */:
+            case 193 /* 193 */:
                 pop(1);
-                push(INTEGER);
+                push(4194305);
                 return;
-            case Opcodes.LCMP /* 148 */:
-            case Opcodes.DCMPL /* 151 */:
-            case Opcodes.DCMPG /* 152 */:
+            case 148 /* 148 */:
+            case 151 /* 151 */:
+            case 152 /* 152 */:
                 pop(4);
-                push(INTEGER);
+                push(4194305);
                 return;
-            case Opcodes.GETSTATIC /* 178 */:
+            case 178 /* 178 */:
                 push(symbolTable, symbol.value);
                 return;
-            case Opcodes.PUTSTATIC /* 179 */:
+            case 179 /* 179 */:
                 pop(symbol.value);
                 return;
-            case Opcodes.GETFIELD /* 180 */:
+            case 180 /* 180 */:
                 pop(1);
                 push(symbolTable, symbol.value);
                 return;
-            case Opcodes.PUTFIELD /* 181 */:
+            case 181 /* 181 */:
                 pop(symbol.value);
                 pop();
                 return;
-            case Opcodes.INVOKEVIRTUAL /* 182 */:
-            case Opcodes.INVOKESPECIAL /* 183 */:
-            case Opcodes.INVOKESTATIC /* 184 */:
-            case Opcodes.INVOKEINTERFACE /* 185 */:
+            case 182 /* 182 */:
+            case 183 /* 183 */:
+            case 184 /* 184 */:
+            case 185 /* 185 */:
                 pop(symbol.value);
                 if (i != 184) {
                     int iPop7 = pop();
@@ -922,10 +922,10 @@ class Frame {
                 }
                 push(symbolTable, symbol.value);
                 return;
-            case Opcodes.NEW /* 187 */:
-                push(symbolTable.addUninitializedType(symbol.value, i2) | UNINITIALIZED_KIND);
+            case 187 /* 187 */:
+                push(symbolTable.addUninitializedType(symbol.value, i2) | 12582912);
                 return;
-            case Opcodes.ANEWARRAY /* 189 */:
+            case 189 /* 189 */:
                 String str = symbol.value;
                 pop();
                 if (str.charAt(0) == '[') {
@@ -935,14 +935,14 @@ class Frame {
                     push(symbolTable.addType(str) | 75497472);
                     return;
                 }
-            case Opcodes.CHECKCAST /* 192 */:
+            case 192 /* 192 */:
                 String str2 = symbol.value;
                 pop();
                 if (str2.charAt(0) == '[') {
                     push(symbolTable, str2);
                     return;
                 } else {
-                    push(symbolTable.addType(str2) | REFERENCE_KIND);
+                    push(symbolTable.addType(str2) | 8388608);
                     return;
                 }
         }
@@ -998,9 +998,9 @@ class Frame {
         if ((i & 8) == 0) {
             i3 = 1;
             if ((i & 262144) == 0) {
-                iArr[0] = symbolTable.addType(symbolTable.className) | REFERENCE_KIND;
+                iArr[0] = symbolTable.addType(symbolTable.className) | 8388608;
             } else {
-                iArr[0] = UNINITIALIZED_THIS;
+                iArr[0] = 4194310;
             }
         } else {
             i3 = 0;
@@ -1010,7 +1010,7 @@ class Frame {
             int[] iArr2 = this.inputLocals;
             int i4 = i3 + 1;
             iArr2[i3] = abstractTypeFromDescriptor;
-            if (abstractTypeFromDescriptor == LONG || abstractTypeFromDescriptor == DOUBLE) {
+            if (abstractTypeFromDescriptor == 4194308 || abstractTypeFromDescriptor == 4194307) {
                 i3 += 2;
                 iArr2[i4] = 4194304;
             } else {
@@ -1046,7 +1046,7 @@ class Frame {
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
     private void push(SymbolTable symbolTable, String str) {
-        str.getClass();
+        
         int i = 20;
         byte b = -1;
         switch (str.hashCode()) {
@@ -1117,17 +1117,17 @@ class Frame {
                 break;
             case 149404307:
                 if (str.equals("(Lcom/alibaba/fastjson2/writer/FieldWriter;Ljava/lang/Object;)Ljava/lang/String;")) {
-                    b = ek.k;
+                    b = 13;
                 }
                 break;
             case 162211716:
                 if (str.equals("(Ljava/lang/Object;Ljava/lang/reflect/Type;)Z")) {
-                    b = ek.l;
+                    b = 14;
                 }
                 break;
             case 204540071:
                 if (str.equals("(Lcom/alibaba/fastjson2/JSONWriter;)V")) {
-                    b = ek.m;
+                    b = 15;
                 }
                 break;
             case 204540075:
@@ -1187,7 +1187,7 @@ class Frame {
                 break;
             case 1:
             case 20:
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 break;
             case 2:
                 i = 97;
@@ -1215,22 +1215,22 @@ class Frame {
             case 13:
                 i = 62;
                 break;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 i = 44;
                 break;
             case 15:
             case 16:
                 i = 36;
                 break;
-            case Opcodes.SIPUSH /* 17 */:
-            case Opcodes.FLOAD /* 23 */:
+            case 17 /* 17 */:
+            case 23 /* 23 */:
                 i = 53;
                 break;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 i = 52;
                 break;
-            case Opcodes.DLOAD /* 24 */:
-            case Opcodes.ALOAD /* 25 */:
+            case 24 /* 24 */:
+            case 25 /* 25 */:
                 i = 37;
                 break;
             default:
@@ -1252,7 +1252,7 @@ class Frame {
         int abstractTypeFromDescriptor = getAbstractTypeFromDescriptor(symbolTable, str, i);
         if (abstractTypeFromDescriptor != 0) {
             push(abstractTypeFromDescriptor);
-            if (abstractTypeFromDescriptor == LONG || abstractTypeFromDescriptor == DOUBLE) {
+            if (abstractTypeFromDescriptor == 4194308 || abstractTypeFromDescriptor == 4194307) {
                 push(4194304);
             }
         }
@@ -1265,11 +1265,11 @@ class Frame {
         if (i3 == i) {
             return false;
         }
-        if ((67108863 & i) == NULL) {
-            if (i3 == NULL) {
+        if ((67108863 & i) == 4194309) {
+            if (i3 == 4194309) {
                 return false;
             }
-            i = NULL;
+            i = 4194309;
         }
         if (i3 == 0) {
             iArr[i2] = i;
@@ -1277,33 +1277,33 @@ class Frame {
         }
         int i4 = i3 & (-67108864);
         int iAddMergedType = 4194304;
-        if (i4 == 0 && (i3 & KIND_MASK) != REFERENCE_KIND) {
-            if (i3 != NULL || ((i & (-67108864)) == 0 && (i & KIND_MASK) != REFERENCE_KIND)) {
+        if (i4 == 0 && (i3 & 62914560) != 8388608) {
+            if (i3 != 4194309 || ((i & (-67108864)) == 0 && (i & 62914560) != 8388608)) {
                 i = 4194304;
             }
             iAddMergedType = i;
         } else {
-            if (i == NULL) {
+            if (i == 4194309) {
                 return false;
             }
             if ((i & (-4194304)) != ((-4194304) & i3)) {
                 int i5 = i & (-67108864);
-                if (i5 != 0 || (i & KIND_MASK) == REFERENCE_KIND) {
-                    if (i5 != 0 && (i & KIND_MASK) != REFERENCE_KIND) {
+                if (i5 != 0 || (i & 62914560) == 8388608) {
+                    if (i5 != 0 && (i & 62914560) != 8388608) {
                         i5 -= 67108864;
                     }
-                    if (i4 != 0 && (i3 & KIND_MASK) != REFERENCE_KIND) {
+                    if (i4 != 0 && (i3 & 62914560) != 8388608) {
                         i4 -= 67108864;
                     }
-                    iMin = Math.min(i5, i4) | REFERENCE_KIND;
-                    iAddType = symbolTable.addType(ASMUtils.TYPE_OBJECT);
+                    iMin = Math.min(i5, i4) | 8388608;
+                    iAddType = symbolTable.addType("java/lang/Object");
                     iAddMergedType = iMin | iAddType;
                 }
-            } else if ((i3 & KIND_MASK) == REFERENCE_KIND) {
-                iAddMergedType = (i & (-67108864)) | REFERENCE_KIND | symbolTable.addMergedType(i & VALUE_MASK, VALUE_MASK & i3);
+            } else if ((i3 & 62914560) == 8388608) {
+                iAddMergedType = (i & (-67108864)) | 8388608 | symbolTable.addMergedType(i & 1048575, 1048575 & i3);
             } else {
-                iMin = ((i & (-67108864)) - 67108864) | REFERENCE_KIND;
-                iAddType = symbolTable.addType(ASMUtils.TYPE_OBJECT);
+                iMin = ((i & (-67108864)) - 67108864) | 8388608;
+                iAddType = symbolTable.addType("java/lang/Object");
                 iAddMergedType = iMin | iAddType;
             }
         }

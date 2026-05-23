@@ -62,8 +62,8 @@ public final class C3146 {
     public final String f10021;
 
     public /* synthetic */ C3146(int i, Long l, String str, List list, C3094 c3094, Integer num, Integer num2, C3173 c3173, String str2, Integer num3, Integer num4, String str3, Long l2, Integer num5, Integer num6, Integer num7, String str4) {
-        if (65535 != (i & Settings.DEFAULT_INITIAL_WINDOW_SIZE)) {
-            AbstractC1270.m2997(i, Settings.DEFAULT_INITIAL_WINDOW_SIZE, C3144.f10004.mo1363());
+        if (65535 != (i & 65535)) {
+            AbstractC1270.m2997(i, 65535, C3144.f10004.mo1363());
             throw null;
         }
         this.f10006 = l;

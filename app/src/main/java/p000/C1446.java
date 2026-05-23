@@ -62,7 +62,7 @@ public final class C1446 extends Drawable implements InterfaceC1451, Animatable 
             if (this.f5123 == null) {
                 this.f5123 = new Rect();
             }
-            Gravity.apply(Opcodes.DNEG, intrinsicWidth, intrinsicHeight, bounds, this.f5123);
+            Gravity.apply(119, intrinsicWidth, intrinsicHeight, bounds, this.f5123);
             this.f5121 = false;
         }
         C1453 c1453 = (C1453) this.f5114.f1179;

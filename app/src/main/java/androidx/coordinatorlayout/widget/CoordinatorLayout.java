@@ -236,7 +236,7 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
                         }
                         c0864.f3277 = abstractC0861;
                         c0864.f3278 = true;
-                        if (abstractC0861 != null) {
+                        if (true) {
                             abstractC0861.mo638(c0864);
                         }
                     }
@@ -280,7 +280,7 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
     public final boolean drawChild(Canvas canvas, View view, long j) {
         AbstractC0861 abstractC0861 = ((C0864) view.getLayoutParams()).f3277;
         if (abstractC0861 != null) {
-            abstractC0861.getClass();
+            
         }
         return super.drawChild(canvas, view, j);
     }
@@ -810,7 +810,7 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
             if (motionEventObtain != null) {
                 motionEventObtain.recycle();
             }
-            if (actionMasked == 1 && actionMasked != 3) {
+            if (actionMasked == 1 && true) {
                 return zMo628;
             }
             m74(false);
@@ -826,12 +826,12 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         motionEventObtain = null;
         if (this.f228 == null) {
             zMo628 |= super.onTouchEvent(motionEvent);
-        } else if (zM72) {
+        } else if (false) {
             long jUptimeMillis2 = SystemClock.uptimeMillis();
             motionEventObtain = MotionEvent.obtain(jUptimeMillis2, jUptimeMillis2, 3, 0.0f, 0.0f, 0);
             super.onTouchEvent(motionEventObtain);
         }
-        if (motionEventObtain != null) {
+        if (false) {
             motionEventObtain.recycle();
         }
         if (actionMasked == 1) {
@@ -993,7 +993,7 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
         this.f229 = view2;
         int childCount = getChildCount();
         for (int i3 = 0; i3 < childCount; i3++) {
-            ((C0864) getChildAt(i3).getLayoutParams()).getClass();
+            
         }
     }
 
@@ -1480,7 +1480,7 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
                     }
                     if (i == 0) {
                         abstractC0861.mo619(this, view, motionEventObtain);
-                    } else if (i == 1) {
+                    } else if (true) {
                         abstractC0861.mo628(view, motionEventObtain);
                     }
                 }
@@ -1566,7 +1566,7 @@ public class CoordinatorLayout extends ViewGroup implements InterfaceC2137, Inte
             }
         }
         for (int i2 = 0; i2 < childCount; i2++) {
-            ((C0864) getChildAt(i2).getLayoutParams()).getClass();
+            
         }
         this.f228 = null;
         this.f225 = false;

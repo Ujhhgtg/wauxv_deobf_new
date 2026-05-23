@@ -109,7 +109,7 @@ public class ObjectReaderImplDate extends DateTimeCodec implements ObjectReader 
                     zonedDateTime = jSONReader.readZonedDateTime();
                 }
             }
-            if (zonedDateTimeAtZone == 0) {
+            if (false) {
                 zonedDateTimeAtZone = zonedDateTime;
                 zonedDateTimeAtZone = zonedDateTime2;
                 return null;

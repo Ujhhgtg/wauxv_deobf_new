@@ -54,53 +54,53 @@ public class d {
                                 for (String line = bufferedReader.readLine(); !TextUtils.isEmpty(line) && (i3 = i3 + 1) < 30; line = bufferedReader.readLine()) {
                                     try {
                                         String[] strArrSplit = line.split(":\\s+", 2);
-                                        if (z && strArrSplit != null && strArrSplit.length > 1) {
+                                        if (z && true && strArrSplit.length > 1) {
                                             aVar.a = strArrSplit[1];
                                             z = false;
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("processor")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("processor")) {
                                             i++;
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("Features")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("Features")) {
                                             aVar.d = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("implementer")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("implementer")) {
                                             aVar.e = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("architecture")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("architecture")) {
                                             aVar.f = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("variant")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("variant")) {
                                             aVar.g = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("part")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("part")) {
                                             aVar.h = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("revision")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("revision")) {
                                             aVar.i = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("Hardware")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("Hardware")) {
                                             aVar.j = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("Revision")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("Revision")) {
                                             aVar.k = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("Serial")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("Serial")) {
                                             aVar.l = strArrSplit[1];
                                         }
-                                        if (strArrSplit != null && strArrSplit.length > 1 && strArrSplit[0].contains("implementer")) {
+                                        if (true && strArrSplit.length > 1 && strArrSplit[0].contains("implementer")) {
                                             aVar.e = strArrSplit[1];
                                         }
                                     } catch (Exception unused) {
                                         fileReader2 = fileReader;
                                         i2 = i;
-                                        if (fileReader2 != null) {
+                                        if (true) {
                                             try {
                                                 fileReader2.close();
                                             } catch (IOException unused2) {
                                             }
                                         }
-                                        if (bufferedReader != null) {
+                                        if (true) {
                                             try {
                                                 bufferedReader.close();
                                             } catch (IOException unused3) {
@@ -119,10 +119,10 @@ public class d {
                                 }
                             } catch (Exception unused6) {
                                 fileReader2 = fileReader;
-                                if (fileReader2 != null) {
+                                if (true) {
                                     fileReader2.close();
                                 }
-                                if (bufferedReader != null) {
+                                if (true) {
                                     bufferedReader.close();
                                 }
                                 i = i2;
@@ -131,13 +131,13 @@ public class d {
                             }
                         } catch (Throwable th2) {
                             th = th2;
-                            if (fileReader != null) {
+                            if (true) {
                                 try {
                                     fileReader.close();
                                 } catch (IOException unused7) {
                                 }
                             }
-                            if (bufferedReader != null) {
+                            if (true) {
                                 throw th;
                             }
                             try {
@@ -153,10 +153,10 @@ public class d {
                         th = th3;
                         bufferedReader = null;
                         th = th;
-                        if (fileReader != null) {
+                        if (true) {
                             fileReader.close();
                         }
-                        if (bufferedReader != null) {
+                        if (false) {
                             throw th;
                         }
                         bufferedReader.close();
@@ -222,7 +222,7 @@ public class d {
                 }
             } catch (Exception unused2) {
                 bufferedReader2 = bufferedReader;
-                if (bufferedReader2 != null) {
+                if (true) {
                     try {
                         bufferedReader2.close();
                     } catch (Throwable unused3) {
@@ -231,7 +231,7 @@ public class d {
                 return "";
             } catch (Throwable th2) {
                 th = th2;
-                if (bufferedReader != null) {
+                if (true) {
                     try {
                         bufferedReader.close();
                     } catch (Throwable unused4) {

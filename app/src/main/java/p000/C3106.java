@@ -62,8 +62,8 @@ public final class C3106 {
     public final C3025 f9925;
 
     public /* synthetic */ C3106(int i, C2956 c2956, Integer num, Integer num2, Integer num3, Integer num4, C3197 c3197, String str, Integer num5, String str2, Boolean bool, List list, Integer num6, Long l, Boolean bool2, Long l2, C3025 c3025) {
-        if (65535 != (i & Settings.DEFAULT_INITIAL_WINDOW_SIZE)) {
-            AbstractC1270.m2997(i, Settings.DEFAULT_INITIAL_WINDOW_SIZE, C3104.f9908.mo1363());
+        if (65535 != (i & 65535)) {
+            AbstractC1270.m2997(i, 65535, C3104.f9908.mo1363());
             throw null;
         }
         this.f9910 = c2956;

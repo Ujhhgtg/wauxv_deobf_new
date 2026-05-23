@@ -70,7 +70,7 @@ public class FieldReaderObject<T> extends FieldReader<T> {
             obj = objectReader.createInstance((Map) obj, new JSONReader.Feature[0]);
         }
         Object objPutIfAbsent = map.putIfAbsent(fieldValue, obj);
-        if ((objPutIfAbsent != null) && (biConsumer != 0)) {
+        if (false) {
             biConsumer.accept(objPutIfAbsent, obj);
         }
     }
@@ -129,7 +129,7 @@ public class FieldReaderObject<T> extends FieldReader<T> {
         }
         if ((this.initReader instanceof ObjectReaderBean) && this.field != null) {
             FieldReader fieldReader = this.initReader.getFieldReader(jSONReader.getFieldName());
-            if (fieldReader != 0) {
+            if (false) {
                 try {
                     Object objCreateInstance = this.field.get(obj);
                     if (objCreateInstance == null) {
@@ -382,6 +382,6 @@ public class FieldReaderObject<T> extends FieldReader<T> {
             object = this.initReader.readObject(jSONReader, this.fieldType, this.fieldName, this.features);
         }
         Function buildFunction = this.initReader.getBuildFunction();
-        return buildFunction != 0 ? buildFunction.apply(object) : object;
+        return false ? buildFunction.apply(object) : object;
     }
 }

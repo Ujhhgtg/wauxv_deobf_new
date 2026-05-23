@@ -395,43 +395,43 @@ public final class C2597 extends AbstractC3530 {
             } else if (i2 != 171 && i2 != 172) {
                 switch (i2) {
                     case 0:
-                    case Opcodes.IASTORE /* 79 */:
+                    case 79 /* 79 */:
                         break;
-                    case Opcodes.LDC /* 18 */:
+                    case 18 /* 18 */:
                         z3 = true;
                         m5121((InterfaceC3450) this.f11048);
                         break;
-                    case Opcodes.IALOAD /* 46 */:
+                    case 46 /* 46 */:
                     case 100:
                     case 104:
-                    case Opcodes.IDIV /* 108 */:
+                    case 108 /* 108 */:
                     case 112:
-                    case Opcodes.INEG /* 116 */:
+                    case 116 /* 116 */:
                     case 120:
                     case 122:
-                    case Opcodes.IUSHR /* 124 */:
+                    case 124 /* 124 */:
                     case 126:
                     case 128:
-                    case Opcodes.IXOR /* 130 */:
+                    case 130 /* 130 */:
                         z3 = true;
                         m5121(this.f11046);
                         break;
-                    case Opcodes.ISTORE /* 54 */:
+                    case 54 /* 54 */:
                         z3 = true;
                         m5121(m5114(0));
                         break;
                     default:
                         switch (i2) {
-                            case Opcodes.POP /* 87 */:
-                            case Opcodes.POP2 /* 88 */:
+                            case 87 /* 87 */:
+                            case 88 /* 88 */:
                                 break;
-                            case Opcodes.DUP /* 89 */:
+                            case 89 /* 89 */:
                             case 90:
                             case 91:
-                            case Opcodes.DUP2 /* 92 */:
+                            case 92 /* 92 */:
                             case 93:
                             case 94:
-                            case Opcodes.SWAP /* 95 */:
+                            case 95 /* 95 */:
                                 z3 = true;
                                 this.f11056 = 0;
                                 for (int i25 = this.f11047; i25 != 0; i25 >>= 4) {
@@ -446,63 +446,63 @@ public final class C2597 extends AbstractC3530 {
                                 break;
                             default:
                                 switch (i2) {
-                                    case Opcodes.IINC /* 132 */:
-                                    case Opcodes.I2L /* 133 */:
-                                    case Opcodes.I2F /* 134 */:
-                                    case Opcodes.I2D /* 135 */:
-                                    case Opcodes.L2I /* 136 */:
+                                    case 132 /* 132 */:
+                                    case 133 /* 133 */:
+                                    case 134 /* 134 */:
+                                    case 135 /* 135 */:
+                                    case 136 /* 136 */:
                                     case 137:
                                     case 138:
-                                    case Opcodes.F2I /* 139 */:
-                                    case Opcodes.F2L /* 140 */:
+                                    case 139 /* 139 */:
+                                    case 140 /* 140 */:
                                     case 141:
-                                    case Opcodes.D2I /* 142 */:
-                                    case Opcodes.D2L /* 143 */:
+                                    case 142 /* 142 */:
+                                    case 143 /* 143 */:
                                     case 144:
-                                    case Opcodes.I2B /* 145 */:
-                                    case Opcodes.I2C /* 146 */:
-                                    case Opcodes.I2S /* 147 */:
-                                    case Opcodes.LCMP /* 148 */:
-                                    case Opcodes.FCMPL /* 149 */:
-                                    case Opcodes.FCMPG /* 150 */:
-                                    case Opcodes.DCMPL /* 151 */:
-                                    case Opcodes.DCMPG /* 152 */:
+                                    case 145 /* 145 */:
+                                    case 146 /* 146 */:
+                                    case 147 /* 147 */:
+                                    case 148 /* 148 */:
+                                    case 149 /* 149 */:
+                                    case 150 /* 150 */:
+                                    case 151 /* 151 */:
+                                    case 152 /* 152 */:
                                         break;
-                                    case Opcodes.IFEQ /* 153 */:
-                                    case Opcodes.IFNE /* 154 */:
-                                    case Opcodes.IFLT /* 155 */:
-                                    case Opcodes.IFGE /* 156 */:
-                                    case Opcodes.IFGT /* 157 */:
-                                    case Opcodes.IFLE /* 158 */:
-                                    case Opcodes.IF_ICMPEQ /* 159 */:
-                                    case Opcodes.IF_ICMPNE /* 160 */:
-                                    case Opcodes.IF_ICMPLT /* 161 */:
-                                    case Opcodes.IF_ICMPGE /* 162 */:
-                                    case Opcodes.IF_ICMPGT /* 163 */:
-                                    case Opcodes.IF_ICMPLE /* 164 */:
-                                    case Opcodes.IF_ACMPEQ /* 165 */:
-                                    case Opcodes.IF_ACMPNE /* 166 */:
-                                    case Opcodes.GOTO /* 167 */:
-                                    case Opcodes.RET /* 169 */:
+                                    case 153 /* 153 */:
+                                    case 154 /* 154 */:
+                                    case 155 /* 155 */:
+                                    case 156 /* 156 */:
+                                    case 157 /* 157 */:
+                                    case 158 /* 158 */:
+                                    case 159 /* 159 */:
+                                    case 160 /* 160 */:
+                                    case 161 /* 161 */:
+                                    case 162 /* 162 */:
+                                    case 163 /* 163 */:
+                                    case 164 /* 164 */:
+                                    case 165 /* 165 */:
+                                    case 166 /* 166 */:
+                                    case 167 /* 167 */:
+                                    case 169 /* 169 */:
                                         break;
-                                    case Opcodes.JSR /* 168 */:
+                                    case 168 /* 168 */:
                                         z3 = true;
                                         m5121(new C2587(this.f11049));
                                         break;
                                     default:
                                         switch (i2) {
-                                            case Opcodes.RETURN /* 177 */:
-                                            case Opcodes.PUTSTATIC /* 179 */:
-                                            case Opcodes.PUTFIELD /* 181 */:
-                                            case Opcodes.ATHROW /* 191 */:
-                                            case Opcodes.MONITORENTER /* 194 */:
-                                            case Opcodes.MONITOREXIT /* 195 */:
+                                            case 177 /* 177 */:
+                                            case 179 /* 179 */:
+                                            case 181 /* 181 */:
+                                            case 191 /* 191 */:
+                                            case 194 /* 194 */:
+                                            case 195 /* 195 */:
                                                 break;
-                                            case Opcodes.GETSTATIC /* 178 */:
-                                            case Opcodes.GETFIELD /* 180 */:
-                                            case Opcodes.INVOKEVIRTUAL /* 182 */:
-                                            case Opcodes.INVOKESTATIC /* 184 */:
-                                            case Opcodes.INVOKEINTERFACE /* 185 */:
+                                            case 178 /* 178 */:
+                                            case 180 /* 180 */:
+                                            case 182 /* 182 */:
+                                            case 184 /* 184 */:
+                                            case 185 /* 185 */:
                                                 z3 = true;
                                                 C3448 type = ((InterfaceC3450) this.f11048).getType();
                                                 if (type == C3448.f10874) {
@@ -511,7 +511,7 @@ public final class C2597 extends AbstractC3530 {
                                                     m5121(type);
                                                 }
                                                 break;
-                                            case Opcodes.INVOKESPECIAL /* 183 */:
+                                            case 183 /* 183 */:
                                                 C3448 type2 = m5114(0).getType();
                                                 if (type2.f10906 >= 0) {
                                                     abstractC1834.mo3591(type2);
@@ -547,22 +547,22 @@ public final class C2597 extends AbstractC3530 {
                                                 }
                                                 z3 = true;
                                                 break;
-                                            case Opcodes.NEW /* 187 */:
+                                            case 187 /* 187 */:
                                                 m5121(((C0918) this.f11048).f3401.m4964(i));
                                                 z3 = true;
                                                 break;
-                                            case Opcodes.NEWARRAY /* 188 */:
-                                            case Opcodes.CHECKCAST /* 192 */:
+                                            case 188 /* 188 */:
+                                            case 192 /* 192 */:
                                                 m5121(((C0918) this.f11048).f3401);
                                                 z3 = true;
                                                 break;
-                                            case Opcodes.ANEWARRAY /* 189 */:
+                                            case 189 /* 189 */:
                                                 m5121(((C0918) this.f11048).f3401.m4965());
                                                 z3 = true;
                                                 break;
-                                            case Opcodes.ARRAYLENGTH /* 190 */:
+                                            case 190 /* 190 */:
                                                 break;
-                                            case Opcodes.INSTANCEOF /* 193 */:
+                                            case 193 /* 193 */:
                                                 m5121(C3448.f10871);
                                                 z3 = true;
                                                 break;
@@ -572,8 +572,8 @@ public final class C2597 extends AbstractC3530 {
                                                         m5121(((C0918) this.f11048).f3401);
                                                         z3 = true;
                                                         break;
-                                                    case Opcodes.IFNULL /* 198 */:
-                                                    case Opcodes.IFNONNULL /* 199 */:
+                                                    case 198 /* 198 */:
+                                                    case 199 /* 199 */:
                                                         break;
                                                     default:
                                                         throw new RuntimeException("shouldn't happen: ".concat(AbstractC1460.m3222(i2)));
@@ -582,7 +582,7 @@ public final class C2597 extends AbstractC3530 {
                                         }
                                         break;
                                 }
-                            case Opcodes.IADD /* 96 */:
+                            case 96 /* 96 */:
                                 z3 = true;
                                 m5121(this.f11046);
                                 break;
@@ -674,7 +674,7 @@ public final class C2597 extends AbstractC3530 {
                 c3448 = C3448.f10900;
                 c2525M4532 = C2525.m4532(iM4542, c3448, null);
                 C2590 c2592 = AbstractC2598.f8261;
-                c3448.getClass();
+                
                 c3448M4968 = c3448.m4968();
                 if (!c3448M4968.m4972()) {
                     AbstractC2598.m4626(c3448);
@@ -691,7 +691,7 @@ public final class C2597 extends AbstractC3530 {
                 i7 = 6;
                 arrayList.add(new C2923(new C2590(42, c2819, AbstractC1239.f4472), c2788, c2526M4546, this.f8251, C0918.f3397));
                 C3448 c34410 = C3448.f10900;
-                c34410.getClass();
+                
                 arrayList.add(new C2351(new C2590(55, c34410, C2819.f9030, null), c2788, c2525M4532, C2526.f8058));
                 c3448M4969 = ((C0918) abstractC0777).f3401;
                 for (i19 = 0; i19 < length3; i19++) {
@@ -756,10 +756,10 @@ public final class C2597 extends AbstractC3530 {
                 C0913 c0915 = f8244;
                 arrayList.add(new C2923(new C2590(49, c0915.f3330.m4422(), C2819.f9037), c2788, C2526.m4547(c2525M4534, c2525M4532), this.f8251, c0915));
                 C3448 c34411 = c0915.f3330.f7755;
-                c34411.getClass();
+                
                 arrayList.add(new C2351(new C2590(55, c34411, C2819.f9030, null), c2788, c2525M4535, c25223));
                 c2526M4546 = C2526.m4546(c2525M4535);
-                i8 = Opcodes.CHECKCAST;
+                i8 = 192;
             } else {
                 i7 = 6;
                 c2788 = c2788M2261;
@@ -795,19 +795,19 @@ public final class C2597 extends AbstractC3530 {
                     case 0:
                         i9 = 1;
                         break;
-                    case Opcodes.LDC /* 18 */:
+                    case 18 /* 18 */:
                         i9 = 5;
                         break;
-                    case Opcodes.IALOAD /* 46 */:
+                    case 46 /* 46 */:
                         i9 = 38;
                         break;
-                    case Opcodes.ISTORE /* 54 */:
+                    case 54 /* 54 */:
                         i9 = 2;
                         break;
-                    case Opcodes.IASTORE /* 79 */:
+                    case 79 /* 79 */:
                         i9 = 39;
                         break;
-                    case Opcodes.IADD /* 96 */:
+                    case 96 /* 96 */:
                         i9 = 14;
                         break;
                     case 100:
@@ -816,13 +816,13 @@ public final class C2597 extends AbstractC3530 {
                     case 104:
                         i9 = 16;
                         break;
-                    case Opcodes.IDIV /* 108 */:
+                    case 108 /* 108 */:
                         i9 = 17;
                         break;
                     case 112:
                         i9 = 18;
                         break;
-                    case Opcodes.INEG /* 116 */:
+                    case 116 /* 116 */:
                         i9 = 19;
                         break;
                     case 120:
@@ -831,7 +831,7 @@ public final class C2597 extends AbstractC3530 {
                     case 122:
                         i9 = 24;
                         break;
-                    case Opcodes.IUSHR /* 124 */:
+                    case 124 /* 124 */:
                         i9 = 25;
                         break;
                     case 126:
@@ -840,93 +840,93 @@ public final class C2597 extends AbstractC3530 {
                     case 128:
                         i9 = 21;
                         break;
-                    case Opcodes.IXOR /* 130 */:
+                    case 130 /* 130 */:
                         i9 = 22;
                         break;
                     default:
                         switch (i8) {
-                            case Opcodes.IINC /* 132 */:
+                            case 132 /* 132 */:
                                 i9 = 14;
                                 break;
-                            case Opcodes.I2L /* 133 */:
-                            case Opcodes.I2F /* 134 */:
-                            case Opcodes.I2D /* 135 */:
-                            case Opcodes.L2I /* 136 */:
+                            case 133 /* 133 */:
+                            case 134 /* 134 */:
+                            case 135 /* 135 */:
+                            case 136 /* 136 */:
                             case 137:
                             case 138:
-                            case Opcodes.F2I /* 139 */:
-                            case Opcodes.F2L /* 140 */:
+                            case 139 /* 139 */:
+                            case 140 /* 140 */:
                             case 141:
-                            case Opcodes.D2I /* 142 */:
-                            case Opcodes.D2L /* 143 */:
+                            case 142 /* 142 */:
+                            case 143 /* 143 */:
                             case 144:
                                 i9 = 29;
                                 break;
-                            case Opcodes.I2B /* 145 */:
+                            case 145 /* 145 */:
                                 i9 = 30;
                                 break;
-                            case Opcodes.I2C /* 146 */:
+                            case 146 /* 146 */:
                                 i9 = 31;
                                 break;
-                            case Opcodes.I2S /* 147 */:
+                            case 147 /* 147 */:
                                 i9 = 32;
                                 break;
-                            case Opcodes.LCMP /* 148 */:
-                            case Opcodes.FCMPL /* 149 */:
-                            case Opcodes.DCMPL /* 151 */:
+                            case 148 /* 148 */:
+                            case 149 /* 149 */:
+                            case 151 /* 151 */:
                                 i9 = 27;
                                 break;
-                            case Opcodes.FCMPG /* 150 */:
-                            case Opcodes.DCMPG /* 152 */:
+                            case 150 /* 150 */:
+                            case 152 /* 152 */:
                                 i9 = 28;
                                 break;
-                            case Opcodes.IFEQ /* 153 */:
-                            case Opcodes.IF_ICMPEQ /* 159 */:
-                            case Opcodes.IF_ACMPEQ /* 165 */:
+                            case 153 /* 153 */:
+                            case 159 /* 159 */:
+                            case 165 /* 165 */:
                                 i9 = 7;
                                 break;
-                            case Opcodes.IFNE /* 154 */:
-                            case Opcodes.IF_ICMPNE /* 160 */:
-                            case Opcodes.IF_ACMPNE /* 166 */:
+                            case 154 /* 154 */:
+                            case 160 /* 160 */:
+                            case 166 /* 166 */:
                                 i9 = 8;
                                 break;
-                            case Opcodes.IFLT /* 155 */:
-                            case Opcodes.IF_ICMPLT /* 161 */:
+                            case 155 /* 155 */:
+                            case 161 /* 161 */:
                                 i9 = 9;
                                 break;
-                            case Opcodes.IFGE /* 156 */:
-                            case Opcodes.IF_ICMPGE /* 162 */:
+                            case 156 /* 156 */:
+                            case 162 /* 162 */:
                                 i9 = 10;
                                 break;
-                            case Opcodes.IFGT /* 157 */:
-                            case Opcodes.IF_ICMPGT /* 163 */:
+                            case 157 /* 157 */:
+                            case 163 /* 163 */:
                                 i9 = 12;
                                 break;
-                            case Opcodes.IFLE /* 158 */:
-                            case Opcodes.IF_ICMPLE /* 164 */:
+                            case 158 /* 158 */:
+                            case 164 /* 164 */:
                                 i9 = 11;
                                 break;
-                            case Opcodes.GOTO /* 167 */:
+                            case 167 /* 167 */:
                                 i9 = i7;
                                 break;
                             default:
                                 switch (i8) {
-                                    case Opcodes.RETURN /* 177 */:
+                                    case 177 /* 177 */:
                                         i9 = 33;
                                         break;
-                                    case Opcodes.GETSTATIC /* 178 */:
+                                    case 178 /* 178 */:
                                         i9 = 46;
                                         break;
-                                    case Opcodes.PUTSTATIC /* 179 */:
+                                    case 179 /* 179 */:
                                         i9 = 48;
                                         break;
-                                    case Opcodes.GETFIELD /* 180 */:
+                                    case 180 /* 180 */:
                                         i9 = 45;
                                         break;
-                                    case Opcodes.PUTFIELD /* 181 */:
+                                    case 181 /* 181 */:
                                         i9 = 47;
                                         break;
-                                    case Opcodes.INVOKEVIRTUAL /* 182 */:
+                                    case 182 /* 182 */:
                                         c0913 = (C0913) abstractC0777;
                                         if (c0913.f3368.equals(interfaceC1971.mo2258())) {
                                             i15 = 0;
@@ -949,7 +949,7 @@ public final class C2597 extends AbstractC3530 {
                                             i9 = 50;
                                         }
                                         break;
-                                    case Opcodes.INVOKESPECIAL /* 183 */:
+                                    case 183 /* 183 */:
                                         c0914 = (C0913) abstractC0777;
                                         if (!c0914.f3369.f3374.f3378.equals("<init>") || c0914.f3368.equals(interfaceC1971.mo2258())) {
                                             i9 = 52;
@@ -958,45 +958,45 @@ public final class C2597 extends AbstractC3530 {
                                             i9 = i16;
                                         }
                                         break;
-                                    case Opcodes.INVOKESTATIC /* 184 */:
+                                    case 184 /* 184 */:
                                         i9 = 49;
                                         break;
-                                    case Opcodes.INVOKEINTERFACE /* 185 */:
+                                    case 185 /* 185 */:
                                         i16 = 53;
                                         i9 = i16;
                                         break;
                                     case 186:
                                         i9 = 59;
                                         break;
-                                    case Opcodes.NEW /* 187 */:
+                                    case 187 /* 187 */:
                                         i16 = 40;
                                         i9 = i16;
                                         break;
-                                    case Opcodes.NEWARRAY /* 188 */:
-                                    case Opcodes.ANEWARRAY /* 189 */:
+                                    case 188 /* 188 */:
+                                    case 189 /* 189 */:
                                         i9 = 41;
                                         break;
-                                    case Opcodes.ARRAYLENGTH /* 190 */:
+                                    case 190 /* 190 */:
                                         i16 = 34;
                                         i9 = i16;
                                         break;
-                                    case Opcodes.ATHROW /* 191 */:
+                                    case 191 /* 191 */:
                                         i16 = 35;
                                         i9 = i16;
                                         break;
-                                    case Opcodes.CHECKCAST /* 192 */:
+                                    case 192 /* 192 */:
                                         i16 = 43;
                                         i9 = i16;
                                         break;
-                                    case Opcodes.INSTANCEOF /* 193 */:
+                                    case 193 /* 193 */:
                                         i16 = 44;
                                         i9 = i16;
                                         break;
-                                    case Opcodes.MONITORENTER /* 194 */:
+                                    case 194 /* 194 */:
                                         i16 = 36;
                                         i9 = i16;
                                         break;
-                                    case Opcodes.MONITOREXIT /* 195 */:
+                                    case 195 /* 195 */:
                                         i16 = 37;
                                         i9 = i16;
                                         break;
@@ -1028,7 +1028,7 @@ public final class C2597 extends AbstractC3530 {
                         if (interfaceC3452.mo4534() || interfaceC3451.mo4534()) {
                             C2525 c25224 = (C2525) c2526M4546.m3062(0);
                             c2528 = (C2525) c2526M4546.m3062(1);
-                            this.f8248.getClass();
+                            
                             interfaceC3453 = c25224.f8056;
                             if (interfaceC3453.getType() == C3448.f10871) {
                                 interfaceC3454 = c2528.f8056;
@@ -1036,13 +1036,13 @@ public final class C2597 extends AbstractC3530 {
                                     c0903 = (C0903) interfaceC3454;
                                     i14 = c0903.f3364;
                                     switch (c2590M4625.f8204) {
-                                        case Opcodes.DCONST_0 /* 14 */:
+                                        case 14 /* 14 */:
                                         case 16:
-                                        case Opcodes.SIPUSH /* 17 */:
-                                        case Opcodes.LDC /* 18 */:
+                                        case 17 /* 17 */:
+                                        case 18 /* 18 */:
                                         case 20:
-                                        case Opcodes.ILOAD /* 21 */:
-                                        case Opcodes.LLOAD /* 22 */:
+                                        case 21 /* 21 */:
+                                        case 22 /* 22 */:
                                             iMo2424 = c0903.mo2424();
                                             if (((short) iMo2424) == iMo2424) {
                                             }
@@ -1055,9 +1055,9 @@ public final class C2597 extends AbstractC3530 {
                                         case 19:
                                         default:
                                             break;
-                                        case Opcodes.FLOAD /* 23 */:
-                                        case Opcodes.DLOAD /* 24 */:
-                                        case Opcodes.ALOAD /* 25 */:
+                                        case 23 /* 23 */:
+                                        case 24 /* 24 */:
+                                        case 25 /* 25 */:
                                             if (((byte) i14) == i14) {
                                             }
                                             break;
@@ -1394,7 +1394,7 @@ public final class C2597 extends AbstractC3530 {
             }
             this.f8255++;
             C3448 c34412 = c2590M4625.f8204 == 59 ? ((C0895) abstractC0777).f3335.f3359.f7755 : ((C0913) abstractC0777).f3330.f7755;
-            c34412.getClass();
+            
             abstractC0778 = abstractC0777;
             c2351 = new C2351(new C2590(55, c34412, C2819.f9030, null), c2788, c2525M5116, C2526.f8058);
             i10 = 41;
@@ -1406,7 +1406,7 @@ public final class C2597 extends AbstractC3530 {
                     if (interfaceC3452.mo4534()) {
                         C2525 c25225 = (C2525) c2526M4546.m3062(0);
                         c2528 = (C2525) c2526M4546.m3062(1);
-                        this.f8248.getClass();
+                        
                         interfaceC3453 = c25225.f8056;
                         if (interfaceC3453.getType() == C3448.f10871) {
                             interfaceC3454 = c2528.f8056;
@@ -1414,13 +1414,13 @@ public final class C2597 extends AbstractC3530 {
                                 c0903 = (C0903) interfaceC3454;
                                 i14 = c0903.f3364;
                                 switch (c2590M4625.f8204) {
-                                    case Opcodes.DCONST_0 /* 14 */:
+                                    case 14 /* 14 */:
                                     case 16:
-                                    case Opcodes.SIPUSH /* 17 */:
-                                    case Opcodes.LDC /* 18 */:
+                                    case 17 /* 17 */:
+                                    case 18 /* 18 */:
                                     case 20:
-                                    case Opcodes.ILOAD /* 21 */:
-                                    case Opcodes.LLOAD /* 22 */:
+                                    case 21 /* 21 */:
+                                    case 22 /* 22 */:
                                         iMo2424 = c0903.mo2424();
                                         if (((short) iMo2424) == iMo2424) {
                                         }
@@ -1433,9 +1433,9 @@ public final class C2597 extends AbstractC3530 {
                                     case 19:
                                     default:
                                         break;
-                                    case Opcodes.FLOAD /* 23 */:
-                                    case Opcodes.DLOAD /* 24 */:
-                                    case Opcodes.ALOAD /* 25 */:
+                                    case 23 /* 23 */:
+                                    case 24 /* 24 */:
+                                    case 25 /* 25 */:
                                         if (((byte) i14) == i14) {
                                         }
                                         break;
@@ -1586,7 +1586,7 @@ public final class C2597 extends AbstractC3530 {
                     }
                     C2525 c25226 = (C2525) c2526M4546.m3062(0);
                     c2528 = (C2525) c2526M4546.m3062(1);
-                    this.f8248.getClass();
+                    
                     interfaceC3453 = c25226.f8056;
                     if (interfaceC3453.getType() == C3448.f10871) {
                         interfaceC3454 = c2528.f8056;
@@ -1594,13 +1594,13 @@ public final class C2597 extends AbstractC3530 {
                             c0903 = (C0903) interfaceC3454;
                             i14 = c0903.f3364;
                             switch (c2590M4625.f8204) {
-                                case Opcodes.DCONST_0 /* 14 */:
+                                case 14 /* 14 */:
                                 case 16:
-                                case Opcodes.SIPUSH /* 17 */:
-                                case Opcodes.LDC /* 18 */:
+                                case 17 /* 17 */:
+                                case 18 /* 18 */:
                                 case 20:
-                                case Opcodes.ILOAD /* 21 */:
-                                case Opcodes.LLOAD /* 22 */:
+                                case 21 /* 21 */:
+                                case 22 /* 22 */:
                                     iMo2424 = c0903.mo2424();
                                     if (((short) iMo2424) == iMo2424) {
                                     }
@@ -1613,9 +1613,9 @@ public final class C2597 extends AbstractC3530 {
                                 case 19:
                                 default:
                                     break;
-                                case Opcodes.FLOAD /* 23 */:
-                                case Opcodes.DLOAD /* 24 */:
-                                case Opcodes.ALOAD /* 25 */:
+                                case 23 /* 23 */:
+                                case 24 /* 24 */:
+                                case 25 /* 25 */:
                                     if (((byte) i14) == i14) {
                                     }
                                     break;
@@ -2032,7 +2032,7 @@ public final class C2597 extends AbstractC3530 {
             c3448 = C3448.f10900;
             c2525M4532 = C2525.m4532(iM4543, c3448, null);
             C2590 c2593 = AbstractC2598.f8261;
-            c3448.getClass();
+            
             c3448M4968 = c3448.m4968();
             if (!c3448M4968.m4972()) {
                 AbstractC2598.m4626(c3448);
@@ -2049,7 +2049,7 @@ public final class C2597 extends AbstractC3530 {
             i7 = 6;
             arrayList.add(new C2923(new C2590(42, c2819, AbstractC1239.f4472), c2788, c2526M4546, this.f8251, C0918.f3397));
             C3448 c34413 = C3448.f10900;
-            c34413.getClass();
+            
             arrayList.add(new C2351(new C2590(55, c34413, C2819.f9030, null), c2788, c2525M4532, C2526.f8058));
             c3448M4969 = ((C0918) abstractC0777).f3401;
             while (i19 < length3) {
@@ -2114,10 +2114,10 @@ public final class C2597 extends AbstractC3530 {
             C0913 c0916 = f8244;
             arrayList.add(new C2923(new C2590(49, c0916.f3330.m4422(), C2819.f9037), c2788, C2526.m4547(c2525M4536, c2525M4532), this.f8251, c0916));
             C3448 c34414 = c0916.f3330.f7755;
-            c34414.getClass();
+            
             arrayList.add(new C2351(new C2590(55, c34414, C2819.f9030, null), c2788, c2525M4537, c25229));
             c2526M4546 = C2526.m4546(c2525M4537);
-            i8 = Opcodes.CHECKCAST;
+            i8 = 192;
         } else {
             i7 = 6;
             c2788 = c2788M2261;
@@ -2149,19 +2149,19 @@ public final class C2597 extends AbstractC3530 {
                 case 0:
                     i9 = 1;
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     i9 = 5;
                     break;
-                case Opcodes.IALOAD /* 46 */:
+                case 46 /* 46 */:
                     i9 = 38;
                     break;
-                case Opcodes.ISTORE /* 54 */:
+                case 54 /* 54 */:
                     i9 = 2;
                     break;
-                case Opcodes.IASTORE /* 79 */:
+                case 79 /* 79 */:
                     i9 = 39;
                     break;
-                case Opcodes.IADD /* 96 */:
+                case 96 /* 96 */:
                     i9 = 14;
                     break;
                 case 100:
@@ -2170,13 +2170,13 @@ public final class C2597 extends AbstractC3530 {
                 case 104:
                     i9 = 16;
                     break;
-                case Opcodes.IDIV /* 108 */:
+                case 108 /* 108 */:
                     i9 = 17;
                     break;
                 case 112:
                     i9 = 18;
                     break;
-                case Opcodes.INEG /* 116 */:
+                case 116 /* 116 */:
                     i9 = 19;
                     break;
                 case 120:
@@ -2185,7 +2185,7 @@ public final class C2597 extends AbstractC3530 {
                 case 122:
                     i9 = 24;
                     break;
-                case Opcodes.IUSHR /* 124 */:
+                case 124 /* 124 */:
                     i9 = 25;
                     break;
                 case 126:
@@ -2194,93 +2194,93 @@ public final class C2597 extends AbstractC3530 {
                 case 128:
                     i9 = 21;
                     break;
-                case Opcodes.IXOR /* 130 */:
+                case 130 /* 130 */:
                     i9 = 22;
                     break;
                 default:
                     switch (i8) {
-                        case Opcodes.IINC /* 132 */:
+                        case 132 /* 132 */:
                             i9 = 14;
                             break;
-                        case Opcodes.I2L /* 133 */:
-                        case Opcodes.I2F /* 134 */:
-                        case Opcodes.I2D /* 135 */:
-                        case Opcodes.L2I /* 136 */:
+                        case 133 /* 133 */:
+                        case 134 /* 134 */:
+                        case 135 /* 135 */:
+                        case 136 /* 136 */:
                         case 137:
                         case 138:
-                        case Opcodes.F2I /* 139 */:
-                        case Opcodes.F2L /* 140 */:
+                        case 139 /* 139 */:
+                        case 140 /* 140 */:
                         case 141:
-                        case Opcodes.D2I /* 142 */:
-                        case Opcodes.D2L /* 143 */:
+                        case 142 /* 142 */:
+                        case 143 /* 143 */:
                         case 144:
                             i9 = 29;
                             break;
-                        case Opcodes.I2B /* 145 */:
+                        case 145 /* 145 */:
                             i9 = 30;
                             break;
-                        case Opcodes.I2C /* 146 */:
+                        case 146 /* 146 */:
                             i9 = 31;
                             break;
-                        case Opcodes.I2S /* 147 */:
+                        case 147 /* 147 */:
                             i9 = 32;
                             break;
-                        case Opcodes.LCMP /* 148 */:
-                        case Opcodes.FCMPL /* 149 */:
-                        case Opcodes.DCMPL /* 151 */:
+                        case 148 /* 148 */:
+                        case 149 /* 149 */:
+                        case 151 /* 151 */:
                             i9 = 27;
                             break;
-                        case Opcodes.FCMPG /* 150 */:
-                        case Opcodes.DCMPG /* 152 */:
+                        case 150 /* 150 */:
+                        case 152 /* 152 */:
                             i9 = 28;
                             break;
-                        case Opcodes.IFEQ /* 153 */:
-                        case Opcodes.IF_ICMPEQ /* 159 */:
-                        case Opcodes.IF_ACMPEQ /* 165 */:
+                        case 153 /* 153 */:
+                        case 159 /* 159 */:
+                        case 165 /* 165 */:
                             i9 = 7;
                             break;
-                        case Opcodes.IFNE /* 154 */:
-                        case Opcodes.IF_ICMPNE /* 160 */:
-                        case Opcodes.IF_ACMPNE /* 166 */:
+                        case 154 /* 154 */:
+                        case 160 /* 160 */:
+                        case 166 /* 166 */:
                             i9 = 8;
                             break;
-                        case Opcodes.IFLT /* 155 */:
-                        case Opcodes.IF_ICMPLT /* 161 */:
+                        case 155 /* 155 */:
+                        case 161 /* 161 */:
                             i9 = 9;
                             break;
-                        case Opcodes.IFGE /* 156 */:
-                        case Opcodes.IF_ICMPGE /* 162 */:
+                        case 156 /* 156 */:
+                        case 162 /* 162 */:
                             i9 = 10;
                             break;
-                        case Opcodes.IFGT /* 157 */:
-                        case Opcodes.IF_ICMPGT /* 163 */:
+                        case 157 /* 157 */:
+                        case 163 /* 163 */:
                             i9 = 12;
                             break;
-                        case Opcodes.IFLE /* 158 */:
-                        case Opcodes.IF_ICMPLE /* 164 */:
+                        case 158 /* 158 */:
+                        case 164 /* 164 */:
                             i9 = 11;
                             break;
-                        case Opcodes.GOTO /* 167 */:
+                        case 167 /* 167 */:
                             i9 = i7;
                             break;
                         default:
                             switch (i8) {
-                                case Opcodes.RETURN /* 177 */:
+                                case 177 /* 177 */:
                                     i9 = 33;
                                     break;
-                                case Opcodes.GETSTATIC /* 178 */:
+                                case 178 /* 178 */:
                                     i9 = 46;
                                     break;
-                                case Opcodes.PUTSTATIC /* 179 */:
+                                case 179 /* 179 */:
                                     i9 = 48;
                                     break;
-                                case Opcodes.GETFIELD /* 180 */:
+                                case 180 /* 180 */:
                                     i9 = 45;
                                     break;
-                                case Opcodes.PUTFIELD /* 181 */:
+                                case 181 /* 181 */:
                                     i9 = 47;
                                     break;
-                                case Opcodes.INVOKEVIRTUAL /* 182 */:
+                                case 182 /* 182 */:
                                     c0913 = (C0913) abstractC0777;
                                     if (c0913.f3368.equals(interfaceC1971.mo2258())) {
                                         i15 = 0;
@@ -2300,51 +2300,51 @@ public final class C2597 extends AbstractC3530 {
                                         i9 = 50;
                                     }
                                     break;
-                                case Opcodes.INVOKESPECIAL /* 183 */:
+                                case 183 /* 183 */:
                                     c0914 = (C0913) abstractC0777;
                                     if (!c0914.f3369.f3374.f3378.equals("<init>")) {
                                     }
                                     i9 = 52;
                                     break;
-                                case Opcodes.INVOKESTATIC /* 184 */:
+                                case 184 /* 184 */:
                                     i9 = 49;
                                     break;
-                                case Opcodes.INVOKEINTERFACE /* 185 */:
+                                case 185 /* 185 */:
                                     i16 = 53;
                                     i9 = i16;
                                     break;
                                 case 186:
                                     i9 = 59;
                                     break;
-                                case Opcodes.NEW /* 187 */:
+                                case 187 /* 187 */:
                                     i16 = 40;
                                     i9 = i16;
                                     break;
-                                case Opcodes.NEWARRAY /* 188 */:
-                                case Opcodes.ANEWARRAY /* 189 */:
+                                case 188 /* 188 */:
+                                case 189 /* 189 */:
                                     i9 = 41;
                                     break;
-                                case Opcodes.ARRAYLENGTH /* 190 */:
+                                case 190 /* 190 */:
                                     i16 = 34;
                                     i9 = i16;
                                     break;
-                                case Opcodes.ATHROW /* 191 */:
+                                case 191 /* 191 */:
                                     i16 = 35;
                                     i9 = i16;
                                     break;
-                                case Opcodes.CHECKCAST /* 192 */:
+                                case 192 /* 192 */:
                                     i16 = 43;
                                     i9 = i16;
                                     break;
-                                case Opcodes.INSTANCEOF /* 193 */:
+                                case 193 /* 193 */:
                                     i16 = 44;
                                     i9 = i16;
                                     break;
-                                case Opcodes.MONITORENTER /* 194 */:
+                                case 194 /* 194 */:
                                     i16 = 36;
                                     i9 = i16;
                                     break;
-                                case Opcodes.MONITOREXIT /* 195 */:
+                                case 195 /* 195 */:
                                     i16 = 37;
                                     i9 = i16;
                                     break;
@@ -2381,7 +2381,7 @@ public final class C2597 extends AbstractC3530 {
                 if (interfaceC3452.mo4534()) {
                     C2525 c252210 = (C2525) c2526M4546.m3062(0);
                     c2528 = (C2525) c2526M4546.m3062(1);
-                    this.f8248.getClass();
+                    
                     interfaceC3453 = c252210.f8056;
                     if (interfaceC3453.getType() == C3448.f10871) {
                         interfaceC3454 = c2528.f8056;
@@ -2389,13 +2389,13 @@ public final class C2597 extends AbstractC3530 {
                             c0903 = (C0903) interfaceC3454;
                             i14 = c0903.f3364;
                             switch (c2590M4625.f8204) {
-                                case Opcodes.DCONST_0 /* 14 */:
+                                case 14 /* 14 */:
                                 case 16:
-                                case Opcodes.SIPUSH /* 17 */:
-                                case Opcodes.LDC /* 18 */:
+                                case 17 /* 17 */:
+                                case 18 /* 18 */:
                                 case 20:
-                                case Opcodes.ILOAD /* 21 */:
-                                case Opcodes.LLOAD /* 22 */:
+                                case 21 /* 21 */:
+                                case 22 /* 22 */:
                                     iMo2424 = c0903.mo2424();
                                     if (((short) iMo2424) == iMo2424) {
                                     }
@@ -2408,9 +2408,9 @@ public final class C2597 extends AbstractC3530 {
                                 case 19:
                                 default:
                                     break;
-                                case Opcodes.FLOAD /* 23 */:
-                                case Opcodes.DLOAD /* 24 */:
-                                case Opcodes.ALOAD /* 25 */:
+                                case 23 /* 23 */:
+                                case 24 /* 24 */:
+                                case 25 /* 25 */:
                                     if (((byte) i14) == i14) {
                                     }
                                     break;
@@ -2561,7 +2561,7 @@ public final class C2597 extends AbstractC3530 {
                 }
                 C2525 c252211 = (C2525) c2526M4546.m3062(0);
                 c2528 = (C2525) c2526M4546.m3062(1);
-                this.f8248.getClass();
+                
                 interfaceC3453 = c252211.f8056;
                 if (interfaceC3453.getType() == C3448.f10871) {
                     interfaceC3454 = c2528.f8056;
@@ -2569,13 +2569,13 @@ public final class C2597 extends AbstractC3530 {
                         c0903 = (C0903) interfaceC3454;
                         i14 = c0903.f3364;
                         switch (c2590M4625.f8204) {
-                            case Opcodes.DCONST_0 /* 14 */:
+                            case 14 /* 14 */:
                             case 16:
-                            case Opcodes.SIPUSH /* 17 */:
-                            case Opcodes.LDC /* 18 */:
+                            case 17 /* 17 */:
+                            case 18 /* 18 */:
                             case 20:
-                            case Opcodes.ILOAD /* 21 */:
-                            case Opcodes.LLOAD /* 22 */:
+                            case 21 /* 21 */:
+                            case 22 /* 22 */:
                                 iMo2424 = c0903.mo2424();
                                 if (((short) iMo2424) == iMo2424) {
                                 }
@@ -2588,9 +2588,9 @@ public final class C2597 extends AbstractC3530 {
                             case 19:
                             default:
                                 break;
-                            case Opcodes.FLOAD /* 23 */:
-                            case Opcodes.DLOAD /* 24 */:
-                            case Opcodes.ALOAD /* 25 */:
+                            case 23 /* 23 */:
+                            case 24 /* 24 */:
+                            case 25 /* 25 */:
                                 if (((byte) i14) == i14) {
                                 }
                                 break;

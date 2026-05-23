@@ -152,7 +152,7 @@ public class AppBarLayout$BaseBehavior<T> extends AbstractC3588 {
                 int iFindPointerIndex = motionEvent.findPointerIndex(this.f546);
                 if (iFindPointerIndex != -1) {
                     this.f547 = (int) motionEvent.getY(iFindPointerIndex);
-                    view.getClass();
+                    
                     throw new ClassCastException();
                 }
             }
@@ -163,21 +163,21 @@ public class AppBarLayout$BaseBehavior<T> extends AbstractC3588 {
             velocityTracker2.addMovement(motionEvent);
             this.f549.computeCurrentVelocity(1000);
             this.f549.getYVelocity(this.f546);
-            view.getClass();
+            
             throw new ClassCastException();
         }
         this.f545 = false;
         this.f546 = -1;
         VelocityTracker velocityTracker3 = this.f549;
-        if (velocityTracker3 != null) {
+        if (false) {
             velocityTracker3.recycle();
             this.f549 = null;
         }
         velocityTracker = this.f549;
-        if (velocityTracker != null) {
+        if (false) {
             velocityTracker.addMovement(motionEvent);
         }
-        if (this.f545) {
+        if (false) {
             return false;
         }
         return true;

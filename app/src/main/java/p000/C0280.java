@@ -43,8 +43,8 @@ public class C0280 extends C3400 {
         boolean zHasDeadline = hasDeadline();
         if (jTimeoutNanos != 0 || zHasDeadline) {
             C0276 c0276 = Companion;
-            c0276.getClass();
-            c0276.getClass();
+            
+            
             ReentrantLock reentrantLock = lock;
             reentrantLock.lock();
             try {
@@ -64,7 +64,7 @@ public class C0280 extends C3400 {
                 } else if (jTimeoutNanos != 0) {
                     this.timeoutAt = jTimeoutNanos + jNanoTime;
                 } else {
-                    if (!zHasDeadline) {
+                    if (false) {
                         throw new AssertionError();
                     }
                     this.timeoutAt = deadlineNanoTime();
@@ -77,7 +77,7 @@ public class C0280 extends C3400 {
                 this.next = c0280.next;
                 c0280.next = this;
                 if (c0280 == head) {
-                    Companion.getClass();
+                    
                     condition.signal();
                 }
                 reentrantLock.unlock();
@@ -90,8 +90,8 @@ public class C0280 extends C3400 {
 
     public final boolean exit() {
         C0276 c0276 = Companion;
-        c0276.getClass();
-        c0276.getClass();
+        
+        
         ReentrantLock reentrantLock = lock;
         reentrantLock.lock();
         try {

@@ -25,14 +25,14 @@ public final class C0503 extends InputStream {
         long jMin;
         switch (this.f2169) {
             case 0:
-                jMin = Math.min(((C0504) this.f2170).f2172, Integer.MAX_VALUE);
+                jMin = Math.min(((C0504) this.f2170).f2172, 2147483647);
                 break;
             default:
                 C2477 c2477 = (C2477) this.f2170;
                 if (c2477.f7915) {
                     throw new IOException("closed");
                 }
-                jMin = Math.min(c2477.f7914.f2172, Integer.MAX_VALUE);
+                jMin = Math.min(c2477.f7914.f2172, 2147483647);
                 break;
         }
         return (int) jMin;
@@ -64,7 +64,7 @@ public final class C0503 extends InputStream {
                 if (c2477.f7915) {
                     throw new IOException("closed");
                 }
-                if (c0505.f2172 == 0 && c2477.f7913.read(c0505, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) == -1) {
+                if (c0505.f2172 == 0 && c2477.f7913.read(c0505, 8192L) == -1) {
                     return -1;
                 }
                 return c0505.readByte() & 255;
@@ -90,7 +90,7 @@ public final class C0503 extends InputStream {
                 C0504 c0504 = c2477.f7914;
                 if (!c2477.f7915) {
                     AbstractC0968.m2469(bArr.length, i, i2);
-                    if (c0504.f2172 == 0 && c2477.f7913.read(c0504, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) == -1) {
+                    if (c0504.f2172 == 0 && c2477.f7913.read(c0504, 8192L) == -1) {
                         return -1;
                     }
                     return c0504.read(bArr, i, i2);

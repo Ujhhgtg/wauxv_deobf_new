@@ -418,19 +418,19 @@ final class JSONPathFunction extends JSONPathSegment implements JSONPathSegment.
         }
         if (obj instanceof Integer) {
             int iIntValue = ((Integer) obj).intValue();
-            return iIntValue == Integer.MIN_VALUE ? Long.valueOf(-iIntValue) : Integer.valueOf(-iIntValue);
+            return iIntValue == -2147483648 ? Long.valueOf(-2147483648) : Integer.valueOf(-iIntValue);
         }
         if (obj instanceof Long) {
             long jLongValue = ((Long) obj).longValue();
-            return jLongValue == Long.MIN_VALUE ? BigInteger.valueOf(jLongValue).negate() : Long.valueOf(-jLongValue);
+            return jLongValue == -9223372036854775808L ? BigInteger.valueOf(-9223372036854775808L).negate() : Long.valueOf(-jLongValue);
         }
         if (obj instanceof Byte) {
             byte bByteValue = ((Byte) obj).byteValue();
-            return bByteValue == -128 ? Integer.valueOf(-bByteValue) : Byte.valueOf((byte) (-bByteValue));
+            return bByteValue == -128 ? Integer.valueOf(128) : Byte.valueOf((byte) (-bByteValue));
         }
         if (obj instanceof Short) {
             short sShortValue = ((Short) obj).shortValue();
-            return sShortValue == Short.MIN_VALUE ? Integer.valueOf(-sShortValue) : Short.valueOf((short) (-sShortValue));
+            return sShortValue == -32768 ? Integer.valueOf(32768) : Short.valueOf((short) (-sShortValue));
         }
         if (obj instanceof Double) {
             return Double.valueOf(-((Double) obj).doubleValue());

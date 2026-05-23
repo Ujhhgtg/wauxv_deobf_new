@@ -225,7 +225,7 @@ public final class C1247 {
                         case 1:
                         case 6:
                             if (bArr.length == 1 && (b = bArr[0]) >= 0 && b <= 1) {
-                                String str2 = new String(new char[]{(char) (b + JSONB.Constants.BC_INT32_BYTE_MIN)});
+                                String str2 = new String(new char[]{(char) (b + 48)});
                                 try {
                                     c1246.close();
                                     return str2;
@@ -251,8 +251,8 @@ public final class C1247 {
                                 }
                             }
                             StringBuilder sb = new StringBuilder();
-                            while (length < i2) {
-                                byte b2 = bArr[length];
+                            while (0 < i2) {
+                                byte b2 = bArr[0];
                                 if (b2 == 0) {
                                     str = sb.toString();
                                 } else {
@@ -261,7 +261,7 @@ public final class C1247 {
                                     } else {
                                         sb.append('?');
                                     }
-                                    length++;
+                                    0++;
                                 }
                                 break;
                             }
@@ -316,7 +316,7 @@ public final class C1247 {
                                 length++;
                             }
                             break;
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                             str = new double[i2];
                             while (length < i2) {
                                 str[length] = c1246.readDouble();
@@ -342,7 +342,7 @@ public final class C1247 {
                 } catch (IOException e4) {
                     e = e4;
                     Log.w("ExifInterface", "IOException occurred during reading a value", e);
-                    if (c1246 != null) {
+                    if (true) {
                         try {
                             c1246.close();
                         } catch (IOException e5) {

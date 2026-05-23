@@ -46,7 +46,7 @@ public final class C0727 extends AbstractC1213 {
         this.f2751 = new ViewOnClickListenerC0103(2, this);
         this.f2752 = new ViewOnFocusChangeListenerC0724(this, 0);
         this.f2746 = AbstractC1574.m3308(c1212.getContext(), R.attr.motionDurationShort3, 100);
-        this.f2747 = AbstractC1574.m3308(c1212.getContext(), R.attr.motionDurationShort3, Opcodes.FCMPG);
+        this.f2747 = AbstractC1574.m3308(c1212.getContext(), R.attr.motionDurationShort3, 150);
         this.f2748 = AbstractC1574.m3309(c1212.getContext(), R.attr.motionEasingLinearInterpolator, AbstractC0164.f1185);
         this.f2749 = AbstractC1574.m3309(c1212.getContext(), R.attr.motionEasingEmphasizedInterpolator, AbstractC0164.f1188);
     }
@@ -124,15 +124,15 @@ public final class C0727 extends AbstractC1213 {
 
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                switch (i) {
+                switch (1) {
                     case 0:
                         C0727 c0727 = this.f2743;
-                        c0727.getClass();
+                        
                         c0727.f4376.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
                         break;
                     default:
                         C0727 c0728 = this.f2743;
-                        c0728.getClass();
+                        
                         float fFloatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
                         CheckableImageButton checkableImageButton = c0728.f4376;
                         checkableImageButton.setScaleX(fFloatValue);
@@ -158,15 +158,15 @@ public final class C0727 extends AbstractC1213 {
 
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                switch (i3) {
+                switch (0) {
                     case 0:
                         C0727 c0727 = this.f2743;
-                        c0727.getClass();
+                        
                         c0727.f4376.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
                         break;
                     default:
                         C0727 c0728 = this.f2743;
-                        c0728.getClass();
+                        
                         float fFloatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
                         CheckableImageButton checkableImageButton = c0728.f4376;
                         checkableImageButton.setScaleX(fFloatValue);
@@ -178,7 +178,7 @@ public final class C0727 extends AbstractC1213 {
         AnimatorSet animatorSet = new AnimatorSet();
         this.f2753 = animatorSet;
         animatorSet.playTogether(valueAnimatorOfFloat, valueAnimatorOfFloat2);
-        this.f2753.addListener(new C0726(this, i3));
+        this.f2753.addListener(new C0726(this, 0));
         ValueAnimator valueAnimatorOfFloat3 = ValueAnimator.ofFloat(1.0f, 0.0f);
         valueAnimatorOfFloat3.setInterpolator(timeInterpolator);
         valueAnimatorOfFloat3.setDuration(i2);
@@ -193,15 +193,15 @@ public final class C0727 extends AbstractC1213 {
 
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                switch (i3) {
+                switch (0) {
                     case 0:
                         C0727 c0727 = this.f2743;
-                        c0727.getClass();
+                        
                         c0727.f4376.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
                         break;
                     default:
                         C0727 c0728 = this.f2743;
-                        c0728.getClass();
+                        
                         float fFloatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
                         CheckableImageButton checkableImageButton = c0728.f4376;
                         checkableImageButton.setScaleX(fFloatValue);
@@ -211,7 +211,7 @@ public final class C0727 extends AbstractC1213 {
             }
         });
         this.f2754 = valueAnimatorOfFloat3;
-        valueAnimatorOfFloat3.addListener(new C0726(this, i));
+        valueAnimatorOfFloat3.addListener(new C0726(this, 1));
     }
 
     @Override // p000.AbstractC1213

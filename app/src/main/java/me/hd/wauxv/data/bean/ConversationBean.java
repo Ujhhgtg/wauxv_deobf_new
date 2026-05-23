@@ -1,9 +1,7 @@
 package me.hd.wauxv.data.bean;
 
-import me.hd.wauxv.hook.factory.MagicFactory;
 import p000.AbstractC0968;
 import p000.AbstractC1574;
-import p000.AbstractC1745;
 import p000.AbstractC2784;
 import p000.C1299;
 import p000.C1315;
@@ -26,39 +24,39 @@ public final class ConversationBean {
 
     public ConversationBean(Object obj) {
         this.origin = obj;
-        int i = AbstractC1745.f5844;
-        C1299 c1299M3490 = AbstractC0968.m2484(obj).m3490();
+        int i = 0;
+        C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
         String[] strArr = AbstractC1574.f5469;
         c1299M3490.f6370 = "field_msgCount";
         this.msgCount = ((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).intValue();
-        C1299 c1299M3491 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3491.f6370 = "field_username";
         this.username = (String) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
-        C1299 c1299M3492 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3492.f6370 = "field_unReadCount";
         this.unReadCount = ((Number) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024()).intValue();
-        C1299 c1299M3493 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3493.f6370 = "field_isSend";
         this.isSendInt = ((Number) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024()).intValue();
-        C1299 c1299M3494 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3494 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3494.f6370 = "field_conversationTime";
         this.conversationTime = ((Number) ((C1315) AbstractC2784.m4741(c1299M3494)).m3024()).longValue();
-        C1299 c1299M3495 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3495 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3495.f6370 = "field_content";
         this.content = (String) ((C1315) AbstractC2784.m4741(c1299M3495)).m3024();
-        C1299 c1299M3496 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3496 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3496.f6370 = "field_msgType";
         this.msgType = (String) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024();
-        C1299 c1299M3497 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3497 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3497.f6370 = "field_flag";
         this.flag = ((Number) ((C1315) AbstractC2784.m4741(c1299M3497)).m3024()).longValue();
-        C1299 c1299M3498 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3498 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3498.f6370 = "field_digest";
         this.digest = (String) ((C1315) AbstractC2784.m4741(c1299M3498)).m3024();
-        C1299 c1299M3499 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3499 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3499.f6370 = "field_digestUser";
         this.digestUser = (String) ((C1315) AbstractC2784.m4741(c1299M3499)).m3024();
-        C1299 c1299M34910 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M34910 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M34910.f6370 = "field_parentRef";
         this.parentRef = (String) ((C1315) AbstractC2784.m4741(c1299M34910)).m3024();
     }

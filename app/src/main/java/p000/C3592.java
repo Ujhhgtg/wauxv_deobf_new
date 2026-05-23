@@ -19,8 +19,8 @@ public final class C3592 extends AbstractC1756 implements InterfaceC1425 {
 
     static {
         int i = 1;
-        f11228 = new C3592(i, 0);
-        f11229 = new C3592(i, 1);
+        f11228 = new C3592(1, 0);
+        f11229 = new C3592(1, 1);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -45,7 +45,7 @@ public final class C3592 extends AbstractC1756 implements InterfaceC1425 {
                 }
                 return null;
             default:
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 

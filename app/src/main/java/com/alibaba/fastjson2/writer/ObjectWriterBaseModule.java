@@ -156,7 +156,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
     }
 
     public ObjectWriter getExternalObjectWriter(String str, Class cls) {
-        str.getClass();
+        
         switch (str) {
             case "org.joda.time.LocalDate":
                 return JodaSupport.createLocalDateWriter(cls, null);
@@ -295,7 +295,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
             if (Map.class.isAssignableFrom(mapping)) {
                 return ObjectWriterImplMap.of(type2, mapping);
             }
-            if (mapping == Optional.class && actualTypeArguments.length == 1) {
+            if (false) {
                 return new ObjectWriterImplOptional(actualTypeArguments[0], null, null);
             }
         }
@@ -536,7 +536,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
         private void applyFeatures(FieldInfo fieldInfo, Enum[] enumArr) {
             for (Enum r0 : enumArr) {
                 String strName = r0.name();
-                strName.getClass();
+                
                 byte b = -1;
                 switch (strName.hashCode()) {
                     case -2118604473:
@@ -606,13 +606,13 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                         break;
                     case 2049970061:
                         if (strName.equals("WriteMapNullValue")) {
-                            b = ek.k;
+                            b = 13;
                         }
                         break;
                 }
                 switch (b) {
                     case 0:
-                        fieldInfo.features |= FieldInfo.DISABLE_REFERENCE_DETECT;
+                        fieldInfo.features |= 144115188075855872L;
                         break;
                     case 1:
                         fieldInfo.features |= JSONWriter.Feature.WriteNullNumberAsZero.mask;
@@ -647,7 +647,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                     case 11:
                         fieldInfo.features |= JSONWriter.Feature.WriteNullBooleanAsFalse.mask;
                         break;
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                         fieldInfo.features |= JSONWriter.Feature.WriteClassName.mask;
                         break;
                     case 13:
@@ -686,7 +686,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                         break;
                     case -987658292:
                         if (name.equals("unwrapped") && ((Boolean) objInvoke).booleanValue()) {
-                            fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                            fieldInfo.features |= 562949953421312L;
                             break;
                         }
                         break;
@@ -719,7 +719,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                         break;
                     case 12396273:
                         if (name.equals("jsonDirect") && ((Boolean) objInvoke).booleanValue()) {
-                            fieldInfo.features |= FieldInfo.RAW_VALUE_MASK;
+                            fieldInfo.features |= 1125899906842624L;
                             break;
                         }
                         break;
@@ -761,14 +761,14 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                 Object objInvoke = method.invoke(annotation, null);
                 int iHashCode = name.hashCode();
                 if (iHashCode == -1423461020) {
-                    if (name.equals(bv.Q)) {
+                    if (name.equals("access")) {
                         fieldInfo.ignore = "WRITE_ONLY".equals(((Enum) objInvoke).name());
                         return;
                     }
                     return;
                 }
                 if (iHashCode == 100346066) {
-                    if (!name.equals(a.H) || (iIntValue = ((Integer) objInvoke).intValue()) == -1) {
+                    if (!name.equals("index") || (iIntValue = ((Integer) objInvoke).intValue()) == -1) {
                         return;
                     }
                     fieldInfo.ordinal = iIntValue;
@@ -940,7 +940,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                 }
             }
             if (jSONField.unwrapped()) {
-                fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                fieldInfo.features |= 562949953421312L;
             }
             for (JSONWriter.Feature feature : jSONField.serializeFeatures()) {
                 fieldInfo.features |= feature.mask;
@@ -953,10 +953,10 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                 fieldInfo.ordinal = iOrdinal;
             }
             if (jSONField.value()) {
-                fieldInfo.features |= FieldInfo.VALUE_MASK;
+                fieldInfo.features |= 281474976710656L;
             }
             if (jSONField.jsonDirect()) {
-                fieldInfo.features |= FieldInfo.RAW_VALUE_MASK;
+                fieldInfo.features |= 1125899906842624L;
             }
             Class<?> clsSerializeUsing = jSONField.serializeUsing();
             if (ObjectWriter.class.isAssignableFrom(clsSerializeUsing)) {
@@ -990,7 +990,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                     loadFieldInfo(fieldInfo, jSONField);
                 } else {
                     if (clsAnnotationType == JSONCompiler.class && ((JSONCompiler) annotation).value() == JSONCompiler.CompilerOption.LAMBDA) {
-                        fieldInfo.features |= FieldInfo.JIT;
+                        fieldInfo.features |= 18014398509481984L;
                     }
                     boolean zIsUseJacksonAnnotation = JSONFactory.isUseJacksonAnnotation();
                     String name = clsAnnotationType.getName();
@@ -1012,11 +1012,11 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                         }
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonValue")) {
                         if (zIsUseJacksonAnnotation) {
-                            fieldInfo.features |= FieldInfo.VALUE_MASK;
+                            fieldInfo.features |= 281474976710656L;
                         }
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonAnyGetter")) {
                         if (zIsUseJacksonAnnotation) {
-                            fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                            fieldInfo.features |= 562949953421312L;
                         }
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonProperty")) {
                         if (zIsUseJacksonAnnotation) {
@@ -1031,7 +1031,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                         processJSONField1x(fieldInfo, annotation);
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonRawValue")) {
                         if (zIsUseJacksonAnnotation) {
-                            fieldInfo.features |= FieldInfo.RAW_VALUE_MASK;
+                            fieldInfo.features |= 1125899906842624L;
                         }
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonUnwrapped") && zIsUseJacksonAnnotation) {
                         BeanUtils.processJacksonJsonUnwrapped(fieldInfo, annotation);
@@ -1126,7 +1126,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                 }
                 if (jSONType != annotation2) {
                     if (clsAnnotationType == JSONCompiler.class && ((JSONCompiler) annotation2).value() == JSONCompiler.CompilerOption.LAMBDA) {
-                        beanInfo.writerFeatures |= FieldInfo.JIT;
+                        beanInfo.writerFeatures |= 18014398509481984L;
                     }
                     boolean zIsUseJacksonAnnotation = JSONFactory.isUseJacksonAnnotation();
                     String name = clsAnnotationType.getName();
@@ -1344,11 +1344,11 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                         }
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonValue")) {
                         if (zIsUseJacksonAnnotation) {
-                            fieldInfo.features |= FieldInfo.VALUE_MASK;
+                            fieldInfo.features |= 281474976710656L;
                         }
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonAnyGetter")) {
                         if (zIsUseJacksonAnnotation) {
-                            fieldInfo.features |= FieldInfo.UNWRAPPED_MASK;
+                            fieldInfo.features |= 562949953421312L;
                         }
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonProperty")) {
                         if (zIsUseJacksonAnnotation) {
@@ -1358,10 +1358,10 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                         processJSONField1x(fieldInfo, annotation2);
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonBackReference")) {
                         if (zIsUseJacksonAnnotation) {
-                            fieldInfo.features |= FieldInfo.BACKR_REFERENCE;
+                            fieldInfo.features |= 2305843009213693952L;
                         }
                     } else if (name.equals("com.fasterxml.jackson.annotation.JsonRawValue") && zIsUseJacksonAnnotation) {
-                        fieldInfo.features = FieldInfo.RAW_VALUE_MASK | fieldInfo.features;
+                        fieldInfo.features = 1125899906842624L | fieldInfo.features;
                     }
                 }
             }
@@ -1378,7 +1378,7 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
                 fieldInfo.writeUsing = clsSerializeUsing;
             }
             if (jSONField.jsonDirect()) {
-                fieldInfo.features |= FieldInfo.RAW_VALUE_MASK;
+                fieldInfo.features |= 1125899906842624L;
             }
             if ((fieldInfo.features & JSONWriter.Feature.WriteNonStringValueAsString.mask) == 0 || String.class.equals(field.getType()) || fieldInfo.writeUsing != null) {
                 return;
@@ -1444,14 +1444,14 @@ public class ObjectWriterBaseModule implements ObjectWriterModule {
             fieldInfo.isPrivate = false;
             processAnnotations(fieldInfo, BeanUtils.getAnnotations(method));
             if (!cls.getName().startsWith("java.lang") && !BeanUtils.isRecord(cls) && (field = BeanUtils.getField(cls, method)) != null) {
-                fieldInfo.features |= FieldInfo.FIELD_MASK;
+                fieldInfo.features |= 4503599627370496L;
                 getFieldInfo(beanInfo, fieldInfo, cls, field);
             }
             boolean z2 = beanInfo.kotlin;
             if (!z2 || beanInfo.creatorConstructor == null || beanInfo.createParameterNames == null) {
                 return;
             }
-            String str = BeanUtils.getterName(method, z2, null);
+            String str = BeanUtils.getterName(method, true, null);
             while (true) {
                 String[] strArr = beanInfo.createParameterNames;
                 if (i >= strArr.length) {

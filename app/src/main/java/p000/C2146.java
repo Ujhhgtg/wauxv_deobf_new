@@ -36,8 +36,8 @@ public final class C2146 implements InterfaceC1698 {
         if (interfaceC0842 instanceof C2145) {
             c2145 = (C2145) interfaceC0842;
             int i = c2145.f7096;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                c2145.f7096 = i - Integer.MIN_VALUE;
+            if ((i & -2147483648) != 0) {
+                c2145.f7096 = i - -2147483648;
             } else {
                 c2145 = new C2145(this, interfaceC0842);
             }

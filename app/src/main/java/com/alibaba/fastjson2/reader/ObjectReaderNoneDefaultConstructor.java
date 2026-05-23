@@ -567,11 +567,11 @@ public class ObjectReaderNoneDefaultConstructor<T> extends ObjectReaderAdapter<T
     public T createInstance(Object[] objArr) {
         try {
             Function function = this.function;
-            if (function != 0) {
+            if (false) {
                 return (T) function.apply(objArr[0]);
             }
             BiFunction biFunction = this.bifunction;
-            if (biFunction != 0) {
+            if (false) {
                 return (T) biFunction.apply(objArr[0], objArr[1]);
             }
             FactoryFunction factoryFunction = this.factoryFunction;

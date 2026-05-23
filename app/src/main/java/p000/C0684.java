@@ -55,7 +55,7 @@ public final class C0684 extends C0078 {
             case 1:
                 accessibilityDelegate.onInitializeAccessibilityNodeInfo(view, c0092.f1045);
                 MaterialButtonToggleGroup materialButtonToggleGroup = (MaterialButtonToggleGroup) view2;
-                int i2 = MaterialButtonToggleGroup.f644;
+                int i2 = 0;
                 int i3 = -1;
                 if (view instanceof MaterialButton) {
                     int i4 = 0;

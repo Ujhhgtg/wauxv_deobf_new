@@ -10,9 +10,9 @@ public final class Fnv {
         if (strArr.length == 1) {
             return hashCode64(strArr[0]);
         }
-        long jHashCode64 = MAGIC_HASH_CODE;
+        long jHashCode64 = -3750763034362895579L;
         for (String str : strArr) {
-            jHashCode64 = (jHashCode64 ^ hashCode64(str)) * MAGIC_PRIME;
+            jHashCode64 = (jHashCode64 ^ hashCode64(str)) * 1099511628211L;
         }
         return jHashCode64;
     }
@@ -49,14 +49,14 @@ public final class Fnv {
             }
             i++;
         }
-        long j2 = MAGIC_HASH_CODE;
+        long j2 = -3750763034362895579L;
         for (int i3 = 0; i3 < str.length(); i3++) {
             char cCharAt3 = str.charAt(i3);
             if (cCharAt3 != '-' && cCharAt3 != '_' && cCharAt3 != ' ') {
                 if (cCharAt3 >= 'A' && cCharAt3 <= 'Z') {
                     cCharAt3 = (char) (cCharAt3 + ' ');
                 }
-                j2 = (j2 ^ ((long) cCharAt3)) * MAGIC_PRIME;
+                j2 = (j2 ^ ((long) cCharAt3)) * 1099511628211L;
             }
         }
         return j2;
@@ -77,9 +77,9 @@ public final class Fnv {
                 return longLE;
             }
         }
-        long j = MAGIC_HASH_CODE;
+        long j = -3750763034362895579L;
         for (int i3 = 0; i3 < i2; i3++) {
-            j = (j ^ ((long) bArr[i + i3])) * MAGIC_PRIME;
+            j = (j ^ ((long) bArr[i + i3])) * 1099511628211L;
         }
         return j;
     }
@@ -105,9 +105,9 @@ public final class Fnv {
                 i3++;
             }
         }
-        long j2 = MAGIC_HASH_CODE;
+        long j2 = -3750763034362895579L;
         for (int i5 = 0; i5 < i2; i5++) {
-            j2 = (j2 ^ ((long) cArr[i + i5])) * MAGIC_PRIME;
+            j2 = (j2 ^ ((long) cArr[i + i5])) * 1099511628211L;
         }
         return j2;
     }
@@ -134,9 +134,9 @@ public final class Fnv {
                 }
             }
         }
-        long jCharAt2 = MAGIC_HASH_CODE;
+        long jCharAt2 = -3750763034362895579L;
         for (int i2 = 0; i2 < str.length(); i2++) {
-            jCharAt2 = (jCharAt2 ^ ((long) str.charAt(i2))) * MAGIC_PRIME;
+            jCharAt2 = (jCharAt2 ^ ((long) str.charAt(i2))) * 1099511628211L;
         }
         return jCharAt2;
     }

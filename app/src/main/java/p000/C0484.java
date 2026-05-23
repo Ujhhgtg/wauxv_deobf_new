@@ -43,7 +43,7 @@ public final /* synthetic */ class C0484 implements IntFunction {
                 return new C3532[i];
             case 11:
                 return new String[i];
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return new String[i];
             default:
                 return new String[i];

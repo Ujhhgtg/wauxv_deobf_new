@@ -31,7 +31,7 @@ public final class C0130 extends C1949 {
     @Override // p000.C1949
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final void mo1135() {
-        switch (this.f1096) {
+        switch (1) {
             case 0:
                 C0136 c0136 = this.f1097;
                 c0136.f1123 = null;

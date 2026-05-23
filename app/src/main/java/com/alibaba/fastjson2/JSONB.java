@@ -163,7 +163,7 @@ public interface JSONB {
         }
 
         static int putStringSizeSmall(byte[] bArr, int i, int i2) {
-            bArr[i] = Constants.BC_STR_ASCII;
+            bArr[i] = 121;
             IOUtils.putShortBE(bArr, i + 1, (short) (i2 + 14336));
             return i + 3;
         }
@@ -181,7 +181,7 @@ public interface JSONB {
         static int startArray(byte[] bArr, int i, int i2) {
             boolean z = i2 <= 15;
             int i3 = i + 1;
-            bArr[i] = z ? (byte) (i2 - 108) : Constants.BC_ARRAY;
+            bArr[i] = z ? (byte) (i2 - 108) : -92;
             return !z ? writeInt32(bArr, i3, i2) : i3;
         }
 
@@ -200,9 +200,9 @@ public interface JSONB {
         static int writeBoolean(byte[] bArr, int i, Boolean bool) {
             byte b;
             if (bool == null) {
-                b = Constants.BC_NULL;
+                b = -81;
             } else {
-                b = bool.booleanValue() ? Constants.BC_TRUE : Constants.BC_FALSE;
+                b = bool.booleanValue() ? -79 : -80;
             }
             bArr[i] = b;
             return i + 1;
@@ -213,7 +213,7 @@ public interface JSONB {
                 return writeDouble(bArr, i, d.doubleValue());
             }
             long j2 = j & 16777280;
-            byte b = Constants.BC_DOUBLE_NUM_0;
+            byte b = -78;
             bArr[i] = j2 == 0 ? (byte) -81 : (byte) -78;
             if (j2 == 0) {
                 b = -81;
@@ -235,7 +235,7 @@ public interface JSONB {
                 fFloatValue = f.floatValue();
             } else {
                 if ((j & 16777280) == 0) {
-                    bArr[i] = Constants.BC_NULL;
+                    bArr[i] = -81;
                     return i + 1;
                 }
                 fFloatValue = 0.0f;
@@ -245,19 +245,19 @@ public interface JSONB {
 
         static int writeInstant(byte[] bArr, int i, Instant instant) {
             if (instant == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
-            bArr[i] = Constants.BC_TIMESTAMP;
+            bArr[i] = -82;
             return writeInt32(bArr, writeInt64(bArr, i + 1, instant.getEpochSecond()), instant.getNano());
         }
 
         static int writeInt16(byte[] bArr, int i, Short sh, long j) {
             if (sh == null) {
-                bArr[i] = (j & 16777280) == 0 ? Constants.BC_NULL : (byte) 0;
+                bArr[i] = (j & 16777280) == 0 ? -81 : (byte) 0;
                 return i + 1;
             }
-            bArr[i] = Constants.BC_INT16;
+            bArr[i] = -68;
             IOUtils.putShortBE(bArr, i + 1, sh.shortValue());
             return i + 3;
         }
@@ -266,13 +266,13 @@ public interface JSONB {
             if (num != null) {
                 return writeInt32(bArr, i, num.intValue());
             }
-            bArr[i] = (j & 16777280) == 0 ? Constants.BC_NULL : (byte) 0;
+            bArr[i] = (j & 16777280) == 0 ? -81 : (byte) 0;
             return i + 1;
         }
 
         static int writeInt64(byte[] bArr, int i, Collection<Long> collection, long j) {
             if (collection == null) {
-                bArr[i] = (j & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : Constants.BC_NULL;
+                bArr[i] = (j & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : -81;
                 return i + 1;
             }
             int iStartArray = startArray(bArr, i, collection.size());
@@ -285,26 +285,26 @@ public interface JSONB {
 
         static int writeInt8(byte[] bArr, int i, Byte b, long j) {
             if (b == null) {
-                bArr[i] = (j & 16777280) == 0 ? Constants.BC_NULL : (byte) 0;
+                bArr[i] = (j & 16777280) == 0 ? -81 : (byte) 0;
                 return i + 1;
             }
-            IOUtils.putShortLE(bArr, i, (short) ((b.byteValue() << 8) | Opcodes.ANEWARRAY));
+            IOUtils.putShortLE(bArr, i, (short) ((b.byteValue() << 8) | 189));
             return i + 2;
         }
 
         static int writeLocalDate(byte[] bArr, int i, LocalDate localDate) {
             if (localDate == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
-            bArr[i] = Constants.BC_LOCAL_DATE;
+            bArr[i] = -87;
             IOUtils.putIntBE(bArr, i + 1, localDate.getDayOfMonth() | (localDate.getYear() << 16) | (localDate.getMonthValue() << 8));
             return i + 5;
         }
 
         static int writeLocalDateTime(byte[] bArr, int i, LocalDateTime localDateTime) {
             if (localDateTime == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
             IOUtils.putIntBE(bArr, i, (localDateTime.getYear() << 8) | (-1476395008) | localDateTime.getMonthValue());
@@ -314,7 +314,7 @@ public interface JSONB {
 
         static int writeLocalTime(byte[] bArr, int i, LocalTime localTime) {
             if (localTime == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
             IOUtils.putIntBE(bArr, i, (localTime.getHour() << 16) | (-1493172224) | (localTime.getMinute() << 8) | localTime.getSecond());
@@ -352,7 +352,7 @@ public interface JSONB {
                 }
                 if (!z) {
                     int i4 = i + 1;
-                    bArr[i] = Constants.BC_SYMBOL;
+                    bArr[i] = 127;
                     System.arraycopy(bArr2, 0, bArr, i4, bArr2.length);
                     int length = i4 + bArr2.length;
                     if (iPutIfAbsent < -16 || iPutIfAbsent > 47) {
@@ -365,7 +365,7 @@ public interface JSONB {
                 ordinalByHashCode = -iPutIfAbsent;
             }
             int i6 = i + 1;
-            bArr[i] = Constants.BC_SYMBOL;
+            bArr[i] = 127;
             int i7 = -ordinalByHashCode;
             if (i7 < -16 || i7 > 47) {
                 return writeInt32(bArr, i6, i7);
@@ -377,7 +377,7 @@ public interface JSONB {
 
         static int writeOffsetDateTime(byte[] bArr, int i, OffsetDateTime offsetDateTime) {
             if (offsetDateTime == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
             } else {
                 IOUtils.putIntBE(bArr, i, (offsetDateTime.getYear() << 8) | (-1442840576) | offsetDateTime.getMonthValue());
                 IOUtils.putIntBE(bArr, i + 4, (offsetDateTime.getDayOfMonth() << 24) | (offsetDateTime.getHour() << 16) | (offsetDateTime.getMinute() << 8) | offsetDateTime.getSecond());
@@ -393,10 +393,10 @@ public interface JSONB {
 
         static int writeOffsetTime(byte[] bArr, int i, OffsetTime offsetTime) {
             if (offsetTime == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
             } else {
                 IOUtils.putIntBE(bArr, i, -1442336255);
-                IOUtils.putIntBE(bArr, i + 4, (offsetTime.getHour() << 16) | Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE | (offsetTime.getMinute() << 8) | offsetTime.getSecond());
+                IOUtils.putIntBE(bArr, i + 4, (offsetTime.getHour() << 16) | 16777216 | (offsetTime.getMinute() << 8) | offsetTime.getSecond());
                 int iWriteInt32 = writeInt32(bArr, i + 8, offsetTime.getNano());
                 String id = offsetTime.getOffset().getId();
                 int length = id.length();
@@ -413,13 +413,13 @@ public interface JSONB {
             } else {
                 jSONWriter.lastReference = str;
             }
-            bArr[i] = Constants.BC_REFERENCE;
+            bArr[i] = -109;
             return writeString(bArr, i + 1, str);
         }
 
         static int writeString(byte[] bArr, int i, Collection<String> collection, long j) {
             if (collection == null) {
-                bArr[i] = (j & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : Constants.BC_NULL;
+                bArr[i] = (j & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : -81;
                 return i + 1;
             }
             int iStartArray = startArray(bArr, i, collection.size());
@@ -445,7 +445,7 @@ public interface JSONB {
 
         static int writeStringUTF16(byte[] bArr, int i, byte[] bArr2) {
             int length = bArr2.length;
-            bArr[i] = JDKUtils.BIG_ENDIAN ? Constants.BC_STR_UTF16BE : Constants.BC_STR_UTF16LE;
+            bArr[i] = JDKUtils.BIG_ENDIAN ? 125 : 124;
             int iWriteInt32 = writeInt32(bArr, i + 1, length);
             System.arraycopy(bArr2, 0, bArr, iWriteInt32, length);
             return iWriteInt32 + length;
@@ -453,14 +453,14 @@ public interface JSONB {
 
         static int writeSymbol(byte[] bArr, int i, String str, SymbolTable symbolTable) {
             if (str == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
             int ordinal = symbolTable.getOrdinal(str);
             if (ordinal < 0) {
                 return writeString(bArr, i, str);
             }
-            bArr[i] = Constants.BC_STR_ASCII;
+            bArr[i] = 121;
             return writeInt32(bArr, i + 1, -ordinal);
         }
 
@@ -470,7 +470,7 @@ public interface JSONB {
             JSONWriterJSONB jSONWriterJSONB = (JSONWriterJSONB) jSONWriter;
             SymbolTable symbolTable = jSONWriter.symbolTable;
             int i2 = i + 1;
-            bArr[i] = Constants.BC_TYPED_ANY;
+            bArr[i] = -110;
             long jHashCode64 = Fnv.hashCode64(str);
             if (symbolTable != null) {
                 ordinalByHashCode = symbolTable.getOrdinalByHashCode(jHashCode64);
@@ -502,13 +502,13 @@ public interface JSONB {
             if (iSizeOfInt != iSizeOfInt2) {
                 System.arraycopy(bArr, i4, bArr, iSizeOfInt2 + i + 1, iEncodeUTF8);
             }
-            bArr[i] = Constants.BC_STR_UTF8;
+            bArr[i] = 122;
             return writeInt32(bArr, i + 1, iEncodeUTF8) + iEncodeUTF8;
         }
 
         static int writeUUID(byte[] bArr, int i, UUID uuid) {
             if (uuid == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
             IOUtils.putShortLE(bArr, i, (short) 4241);
@@ -518,18 +518,18 @@ public interface JSONB {
         }
 
         static int writeBoolean(byte[] bArr, int i, boolean z) {
-            bArr[i] = z ? Constants.BC_TRUE : Constants.BC_FALSE;
+            bArr[i] = z ? -79 : -80;
             return i + 1;
         }
 
         static int writeBoolean(byte[] bArr, int i, boolean[] zArr) {
             if (zArr == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
             int iStartArray = startArray(bArr, i, zArr.length);
             for (int i2 = 0; i2 < zArr.length; i2++) {
-                bArr[iStartArray + i2] = zArr[i2] ? Constants.BC_TRUE : Constants.BC_FALSE;
+                bArr[iStartArray + i2] = zArr[i2] ? -79 : -80;
             }
             return iStartArray + zArr.length;
         }
@@ -549,13 +549,13 @@ public interface JSONB {
                 IOUtils.putShortBE(bArr, i + 1, (short) i2);
                 return i + 3;
             }
-            bArr[i] = Constants.BC_INT32;
+            bArr[i] = 72;
             IOUtils.putIntBE(bArr, i + 1, i2);
             return i + 5;
         }
 
         static int writeInt8(byte[] bArr, int i, byte b) {
-            IOUtils.putShortLE(bArr, i, (short) ((b << 8) | Opcodes.ANEWARRAY));
+            IOUtils.putShortLE(bArr, i, (short) ((b << 8) | 189));
             return i + 2;
         }
 
@@ -572,24 +572,24 @@ public interface JSONB {
 
         static int writeDouble(byte[] bArr, int i, double d) {
             if (d != 0.0d && d != 1.0d) {
-                if (d >= -2.147483648E9d && d <= 2.147483647E9d) {
+                if (d >= -2.147483648E9 && d <= 2.147483647E9d) {
                     long j = (long) d;
                     if (j == d) {
-                        bArr[i] = Constants.BC_DOUBLE_LONG;
+                        bArr[i] = -76;
                         return writeInt64(bArr, i + 1, j);
                     }
                 }
-                bArr[i] = Constants.BC_DOUBLE;
+                bArr[i] = -75;
                 IOUtils.putLongBE(bArr, i + 1, Double.doubleToLongBits(d));
                 return i + 9;
             }
-            bArr[i] = d == 0.0d ? Constants.BC_DOUBLE_NUM_0 : Constants.BC_DOUBLE_NUM_1;
+            bArr[i] = d == 0.0d ? -78 : -77;
             return i + 1;
         }
 
         static int writeFloat(byte[] bArr, int i, float[] fArr) {
             if (fArr == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
             int iStartArray = startArray(bArr, i, fArr.length);
@@ -600,7 +600,7 @@ public interface JSONB {
         }
 
         static int writeInt16(byte[] bArr, int i, short s) {
-            bArr[i] = Constants.BC_INT16;
+            bArr[i] = -68;
             IOUtils.putShortBE(bArr, i + 1, s);
             return i + 3;
         }
@@ -616,7 +616,7 @@ public interface JSONB {
 
         static int writeInt64(byte[] bArr, int i, Long l, long j) {
             if (l == null) {
-                bArr[i] = (j & 16777280) == 0 ? Constants.BC_NULL : (byte) -32;
+                bArr[i] = (j & 16777280) == 0 ? -81 : (byte) -32;
                 return i + 1;
             }
             return writeInt64(bArr, i, l.longValue());
@@ -624,7 +624,7 @@ public interface JSONB {
 
         static int writeString(byte[] bArr, int i, String[] strArr, long j) {
             if (strArr == null) {
-                bArr[i] = (j & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : Constants.BC_NULL;
+                bArr[i] = (j & JSONWriter.WRITE_ARRAY_NULL_MASK) != 0 ? (byte) -108 : -81;
                 return i + 1;
             }
             int iStartArray = startArray(bArr, i, strArr.length);
@@ -640,7 +640,7 @@ public interface JSONB {
                 iWriteInt32 = i + 1;
                 bArr[i] = (byte) (i3 + 73);
             } else {
-                bArr[i] = Constants.BC_STR_ASCII;
+                bArr[i] = 121;
                 if (i3 <= 2047) {
                     IOUtils.putShortBE(bArr, i + 1, (short) (i3 + 14336));
                     iWriteInt32 = i + 3;
@@ -659,7 +659,7 @@ public interface JSONB {
 
         static int writeSymbol(byte[] bArr, int i, int i2) {
             int i3 = i + 1;
-            bArr[i] = Constants.BC_SYMBOL;
+            bArr[i] = 127;
             if (i2 >= -16 && i2 <= 47) {
                 int i4 = i + 2;
                 bArr[i3] = (byte) i2;
@@ -675,10 +675,10 @@ public interface JSONB {
         static int writeFloat(byte[] bArr, int i, float f) {
             int i2 = (int) f;
             if (i2 == f && ((262144 + i2) & (-524288)) == 0) {
-                bArr[i] = Constants.BC_FLOAT_INT;
+                bArr[i] = -74;
                 return writeInt32(bArr, i + 1, i2);
             }
-            bArr[i] = Constants.BC_FLOAT;
+            bArr[i] = -73;
             IOUtils.putIntBE(bArr, i + 1, Float.floatToIntBits(f));
             return i + 5;
         }
@@ -689,7 +689,7 @@ public interface JSONB {
                 bArr[i] = (byte) (j - 32);
                 return i2;
             }
-            if (((JSONWriter.MASK_NOT_WRITE_HASHMAP_ARRAY_LIST_CLASS_NAME + j) & (-4096)) == 0) {
+            if (((2048L + j) & (-4096)) == 0) {
                 IOUtils.putShortBE(bArr, i, (short) (j - 12288));
                 return i + 2;
             }
@@ -699,18 +699,18 @@ public interface JSONB {
                 return i + 3;
             }
             if (((2147483648L + j) & (-4294967296L)) == 0) {
-                bArr[i] = Constants.BC_INT64_INT;
+                bArr[i] = -65;
                 IOUtils.putIntBE(bArr, i + 1, (int) j);
                 return i + 5;
             }
-            bArr[i] = Constants.BC_INT64;
+            bArr[i] = -66;
             IOUtils.putLongBE(bArr, i + 1, j);
             return i + 9;
         }
 
         static int writeDouble(byte[] bArr, int i, double[] dArr) {
             if (dArr == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
             int iStartArray = startArray(bArr, i, dArr.length);
@@ -723,7 +723,7 @@ public interface JSONB {
         static int writeString(byte[] bArr, int i, String str) {
             Function<String, byte[]> function;
             if (str == null) {
-                bArr[i] = Constants.BC_NULL;
+                bArr[i] = -81;
                 return i + 1;
             }
             ToIntFunction<String> toIntFunction = JDKUtils.STRING_CODER;
@@ -891,7 +891,7 @@ public interface JSONB {
     }
 
     static byte[] toBytes(boolean z) {
-        return new byte[]{z ? Constants.BC_TRUE : Constants.BC_FALSE};
+        return new byte[]{z ? -79 : -80};
     }
 
     static String toJSONString(byte[] bArr) {
@@ -900,46 +900,46 @@ public interface JSONB {
 
     static String typeName(byte b) {
         if (b == 72) {
-            return AbstractC1194.m2781(b, new StringBuilder("INT32 "));
+            return AbstractC1194.m2781(72, new StringBuilder("INT32 "));
         }
         if (b == 127) {
-            return AbstractC1194.m2781(b, new StringBuilder("SYMBOL "));
+            return AbstractC1194.m2781(127, new StringBuilder("SYMBOL "));
         }
         switch (b) {
             case -111:
-                return AbstractC1194.m2781(b, new StringBuilder("BINARY "));
+                return AbstractC1194.m2781(-111, new StringBuilder("BINARY "));
             case -110:
-                return AbstractC1194.m2781(b, new StringBuilder("TYPED_ANY "));
+                return AbstractC1194.m2781(-110, new StringBuilder("TYPED_ANY "));
             case -109:
-                return AbstractC1194.m2781(b, new StringBuilder("REFERENCE "));
+                return AbstractC1194.m2781(-109, new StringBuilder("REFERENCE "));
             default:
                 switch (b) {
                     case -91:
-                        return AbstractC1194.m2781(b, new StringBuilder("OBJECT_END "));
+                        return AbstractC1194.m2781(-91, new StringBuilder("OBJECT_END "));
                     case -90:
-                        return AbstractC1194.m2781(b, new StringBuilder("OBJECT "));
+                        return AbstractC1194.m2781(-90, new StringBuilder("OBJECT "));
                     case -89:
-                        return AbstractC1194.m2781(b, new StringBuilder("LOCAL_TIME "));
+                        return AbstractC1194.m2781(-89, new StringBuilder("LOCAL_TIME "));
                     case -88:
-                        return AbstractC1194.m2781(b, new StringBuilder("LOCAL_DATETIME "));
+                        return AbstractC1194.m2781(-88, new StringBuilder("LOCAL_DATETIME "));
                     case -87:
-                        return AbstractC1194.m2781(b, new StringBuilder("LOCAL_DATE "));
+                        return AbstractC1194.m2781(-87, new StringBuilder("LOCAL_DATE "));
                     case -86:
-                        return AbstractC1194.m2781(b, new StringBuilder("TIMESTAMP_WITH_TIMEZONE "));
+                        return AbstractC1194.m2781(-86, new StringBuilder("TIMESTAMP_WITH_TIMEZONE "));
                     case -85:
-                        return AbstractC1194.m2781(b, new StringBuilder("TIMESTAMP_MILLIS "));
+                        return AbstractC1194.m2781(-85, new StringBuilder("TIMESTAMP_MILLIS "));
                     case -84:
-                        return AbstractC1194.m2781(b, new StringBuilder("TIMESTAMP_SECONDS "));
+                        return AbstractC1194.m2781(-84, new StringBuilder("TIMESTAMP_SECONDS "));
                     case -83:
-                        return AbstractC1194.m2781(b, new StringBuilder("TIMESTAMP_MINUTES "));
+                        return AbstractC1194.m2781(-83, new StringBuilder("TIMESTAMP_MINUTES "));
                     case -82:
-                        return AbstractC1194.m2781(b, new StringBuilder("TIMESTAMP "));
+                        return AbstractC1194.m2781(-82, new StringBuilder("TIMESTAMP "));
                     case -81:
-                        return AbstractC1194.m2781(b, new StringBuilder("NULL "));
+                        return AbstractC1194.m2781(-81, new StringBuilder("NULL "));
                     case -80:
-                        return AbstractC1194.m2781(b, new StringBuilder("FALSE "));
+                        return AbstractC1194.m2781(-80, new StringBuilder("FALSE "));
                     case -79:
-                        return AbstractC1194.m2781(b, new StringBuilder("TRUE "));
+                        return AbstractC1194.m2781(-79, new StringBuilder("TRUE "));
                     case -78:
                     case -77:
                     case -76:
@@ -955,22 +955,22 @@ public interface JSONB {
                     case -69:
                         return AbstractC1194.m2781(b, new StringBuilder("BIGINT "));
                     case -68:
-                        return AbstractC1194.m2781(b, new StringBuilder("INT16 "));
+                        return AbstractC1194.m2781(-68, new StringBuilder("INT16 "));
                     case -67:
-                        return AbstractC1194.m2781(b, new StringBuilder("INT8 "));
+                        return AbstractC1194.m2781(-67, new StringBuilder("INT8 "));
                     case -66:
                     case -65:
                         return AbstractC1194.m2781(b, new StringBuilder("INT64 "));
                     default:
                         switch (b) {
                             case 122:
-                                return AbstractC1194.m2781(b, new StringBuilder("STR_UTF8 "));
-                            case Opcodes.LSHR /* 123 */:
-                                return AbstractC1194.m2781(b, new StringBuilder("STR_UTF16 "));
-                            case Opcodes.IUSHR /* 124 */:
-                                return AbstractC1194.m2781(b, new StringBuilder("STR_UTF16LE "));
-                            case Opcodes.LUSHR /* 125 */:
-                                return AbstractC1194.m2781(b, new StringBuilder("STR_UTF16BE "));
+                                return AbstractC1194.m2781(122, new StringBuilder("STR_UTF8 "));
+                            case 123 /* 123 */:
+                                return AbstractC1194.m2781(123, new StringBuilder("STR_UTF16 "));
+                            case 124 /* 124 */:
+                                return AbstractC1194.m2781(124, new StringBuilder("STR_UTF16LE "));
+                            case 125 /* 125 */:
+                                return AbstractC1194.m2781(125, new StringBuilder("STR_UTF16BE "));
                             default:
                                 if (b >= -108 && b <= -92) {
                                     return AbstractC1194.m2781(b, new StringBuilder("ARRAY "));
@@ -1039,7 +1039,7 @@ public interface JSONB {
             jSONWriterOfJSONB.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfJSONB != null) {
+            if (true) {
                 try {
                     jSONWriterOfJSONB.close();
                 } catch (Throwable th2) {
@@ -1131,7 +1131,7 @@ public interface JSONB {
             jSONWriterOfJSONB.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfJSONB != null) {
+            if (true) {
                 try {
                     jSONWriterOfJSONB.close();
                 } catch (Throwable th2) {
@@ -1150,7 +1150,7 @@ public interface JSONB {
             jSONWriterOfJSONB.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfJSONB != null) {
+            if (true) {
                 try {
                     jSONWriterOfJSONB.close();
                 } catch (Throwable th2) {
@@ -1233,7 +1233,7 @@ public interface JSONB {
             jSONWriterOfJSONB.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfJSONB != null) {
+            if (true) {
                 try {
                     jSONWriterOfJSONB.close();
                 } catch (Throwable th2) {
@@ -1317,7 +1317,7 @@ public interface JSONB {
         int length;
         int i = 0;
         if (str == null) {
-            return new byte[]{Constants.BC_NULL};
+            return new byte[]{-81};
         }
         if (JDKUtils.JVM_VERSION == 8) {
             char[] charArray = JDKUtils.getCharArray(str);
@@ -1462,23 +1462,23 @@ public interface JSONB {
     static byte[] toBytes(String str, Charset charset) {
         byte b;
         if (str == null) {
-            return new byte[]{Constants.BC_NULL};
+            return new byte[]{-81};
         }
         if (charset == StandardCharsets.UTF_16) {
-            b = Constants.BC_STR_UTF16;
+            b = 123;
         } else if (charset == StandardCharsets.UTF_16BE) {
-            b = Constants.BC_STR_UTF16BE;
+            b = 125;
         } else if (charset == StandardCharsets.UTF_16LE) {
-            b = Constants.BC_STR_UTF16LE;
+            b = 124;
         } else if (charset == StandardCharsets.UTF_8) {
-            b = Constants.BC_STR_UTF8;
+            b = 122;
         } else if (charset == StandardCharsets.US_ASCII || charset == StandardCharsets.ISO_8859_1) {
-            b = Constants.BC_STR_ASCII;
+            b = 121;
         } else {
             if (charset == null || !"GB18030".equals(charset.name())) {
                 return toBytes(str);
             }
-            b = Constants.BC_STR_GB18030;
+            b = 126;
         }
         byte[] bytes = str.getBytes(charset);
         int length = bytes.length;

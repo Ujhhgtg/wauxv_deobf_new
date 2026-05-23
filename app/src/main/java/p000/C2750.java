@@ -11,7 +11,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Set;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤞᲁᛸᲈᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -43,25 +42,24 @@ public final /* synthetic */ class C2750 implements InterfaceC1425 {
                 C2752 c2752 = new C2752();
                 c2752.f8837 = "";
                 "";
-                c2752.f8837 = str;
-                c2752.f8838 = str2;
+                c2752.f8837 = "default";
+                c2752.f8838 = "默认";
                 c1809.add(c2752);
-                C0811.f3173.getClass();
-                Method methodM3315 = AbstractC1574.m3315(C0808.f3170);
-                C0806.f3168.getClass();
+                
+                Method methodM3315 = AbstractC1574.dexToMethod(C0808.f3170);
+                
                 Object objInvoke = methodM3315.invoke(C0806.m2359(), null);
-                "null cannot be cast to non-null type kotlin.collections.List<kotlin.Any>";
                 List list = (List) objInvoke;
                 ArrayList arrayList = new ArrayList(AbstractC0746.m2214(list, 10));
                 for (Object obj2 : list) {
                     C2752 c2753 = new C2752();
                     c2753.f8837 = "";
                     c2753.f8838 = "";
-                    int i3 = AbstractC1745.f5844;
-                    C1299 c1299M3490 = AbstractC0968.m2484(obj2).m3490();
+                    int i3 = 0;
+                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
                     c1299M3490.f6370 = "field_labelID";
                     c2753.f8837 = String.valueOf(((C1315) AbstractC2784.m4741(c1299M3490)).m3024());
-                    C1299 c1299M3491 = AbstractC0968.m2484(obj2).m3490();
+                    C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj2).m3490();
                     c1299M3491.f6370 = "field_labelName";
                     c2753.f8838 = (String) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
                     arrayList.add(c2753);
@@ -69,8 +67,8 @@ public final /* synthetic */ class C2750 implements InterfaceC1425 {
                 c1809.addAll(arrayList);
                 final C1809 c1809M3173 = AbstractC1459.m3173(c1809);
                 C2755 c2755 = C2755.f8841;
-                final C2750 c2750 = new C2750(activity, i2);
-                c2755.getClass();
+                final C2750 c2750 = new C2750(activity, 1);
+                
                 ArrayList arrayList2 = new ArrayList(AbstractC0746.m2214(c1809M3173, 10));
                 ListIterator listIterator = c1809M3173.listIterator(0);
                 while (true) {
@@ -84,7 +82,7 @@ public final /* synthetic */ class C2750 implements InterfaceC1425 {
                             sbM4753.append(" [");
                             C0811 c0811 = C0811.f3173;
                             String str4 = c2754.f8837;
-                            c0811.getClass();
+                            
                             sbM4753.append(C0811.m2360(str4).size());
                             sbM4753.append(']');
                             string = sbM4753.toString();
@@ -148,26 +146,26 @@ public final /* synthetic */ class C2750 implements InterfaceC1425 {
                 }
                 break;
             default:
-                C2761.f8850.getClass();
-                C1565.f5440.getClass();
+                
+                
                 ViewGroup viewGroup = (ViewGroup) activity.findViewById(C1565.m3280() ? C2760.f8849.m2538() : AbstractC0968.m2475(C2761.m4733()));
-                int i4 = AbstractC1745.f5844;
-                C1973 c1973M3492 = AbstractC0968.m2484(viewGroup).m3492();
+                int i4 = 0;
+                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(viewGroup).m3492();
                 Class cls = Integer.TYPE;
-                ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(cls), AbstractC2519.m4527(cls), AbstractC2519.m4527(cls)}, 3, c1973M3492)).m3831(0, 0, 0);
-                C1973 c1973M3493 = AbstractC0968.m2484(viewGroup).m3492();
+                ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls)}, 3, c1973M3492)).m3831(0, 0, 0);
+                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(viewGroup).m3492();
                 String[] strArr3 = AbstractC1574.f5469;
                 c1973M3493.f6370 = "getAdapter";
-                C1299 c1299M3492 = AbstractC0968.m2484(((C1982) AbstractC2784.m4742(c1973M3493)).m3831(new Object[0])).m3490();
-                c1299M3492.f4725 = "com.tencent.mm.plugin.mvvmlist.MvvmList";
+                C1299 c1299M3492 = AbstractC0968.startFieldResolution(((C1982) AbstractC2784.m4742(c1973M3493)).m3831(new Object[0])).m3490();
+                c1299M3492.fieldType = "com.tencent.mm.plugin.mvvmlist.MvvmList";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3492)).m3023();
-                Method methodM3316 = AbstractC1574.m3315(C2753.f8839);
+                Method methodM3316 = AbstractC1574.dexToMethod(C2753.f8839);
                 if (methodM3316.getParameterCount() == 4) {
                     methodM3316.invoke(null, objM3023, null, 1, null);
                 } else {
                     methodM3316.invoke(objM3023, null);
                 }
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 }

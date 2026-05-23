@@ -110,7 +110,7 @@ public final class ObjectSchema extends JSONSchema {
     @JSONField(true)
     public JSONObject toJSONObject() {
         JSONObject jSONObject = new JSONObject();
-        jSONObject.put(g.y, "object");
+        jSONObject.put("type", "object");
         String str = this.title;
         if (str != null) {
             jSONObject.put("title", str);
@@ -137,7 +137,7 @@ public final class ObjectSchema extends JSONSchema {
             if (jSONSchema != null) {
                 jSONObject.put("additionalProperties", jSONSchema);
             } else {
-                jSONObject.put("additionalProperties", Boolean.valueOf(z));
+                jSONObject.put("additionalProperties", Boolean.valueOf(false));
             }
         }
         PatternProperty[] patternPropertyArr = this.patternProperties;
@@ -488,7 +488,7 @@ public final class ObjectSchema extends JSONSchema {
     public ObjectSchema(JSONObject jSONObject, JSONSchema jSONSchema) {
         JSONSchema jSONSchemaOf;
         super(jSONObject);
-        this.typed = "object".equalsIgnoreCase(jSONObject.getString(g.y));
+        this.typed = "object".equalsIgnoreCase(jSONObject.getString("type"));
         this.properties = new LinkedHashMap();
         this.definitions = new LinkedHashMap();
         this.defs = new LinkedHashMap();

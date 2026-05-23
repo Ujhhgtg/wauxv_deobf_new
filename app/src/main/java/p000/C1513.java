@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲀᤝᲇᲁᲈ, reason: contains not printable characters */
@@ -43,7 +43,7 @@ public final class C1513 extends AbstractC2867 implements InterfaceC1582, Interf
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static String m3249(String str, String str2, String str3) throws IllegalAccessException, InvocationTargetException {
-        C0669.f2550.getClass();
+        
         String strM2063 = C0669.m2063(str2, str);
         String[] strArr = AbstractC1574.f5469;
         String strM2064 = C0669.m2063(str2, "");
@@ -69,7 +69,7 @@ public final class C1513 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C1510.f5331, dexKitBridge, new C1338(17));
+        AbstractC1574.findMethod(C1510.f5331, dexKitBridge, new C1338(17));
     }
 
     @Override // p000.InterfaceC1601
@@ -84,11 +84,11 @@ public final class C1513 extends AbstractC2867 implements InterfaceC1582, Interf
                 return;
             }
             Set setM2209 = AbstractC0744.m2209(AbstractC2841.m4843(asString2, new String[]{";"}));
-            int i2 = AbstractC1745.f5844;
-            C2800.f8930.getClass();
-            C1973 c1973M3492 = AbstractC0968.m2484(C2800.m4779()).m3492();
+            int i2 = 0;
+            
+            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2800.m4779()).m3492();
             c1973M3492.f6370 = "rawQuery";
-            Cursor cursor = (Cursor) ((C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(String.class), AbstractC2519.m4527(Object[].class)}, 2, c1973M3492)).m3832("SELECT memberlist, memberCount FROM chatroom WHERE chatroomname = ?", new Object[]{asString});
+            Cursor cursor = (Cursor) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(Object[].class)}, 2, c1973M3492)).invoke("SELECT memberlist, memberCount FROM chatroom WHERE chatroomname = ?", new Object[]{asString});
             if (cursor != null) {
                 try {
                     if (cursor.moveToFirst()) {
@@ -104,7 +104,7 @@ public final class C1513 extends AbstractC2867 implements InterfaceC1582, Interf
                                 for (String str3 : AbstractC2665.m4669(setM22010, setM2209)) {
                                     C1513 c1513 = f5334;
                                     String strM2542 = C1512.f5333.m2542();
-                                    c1513.getClass();
+                                    
                                     AbstractC2201.m3976(EnumC3673.f11478.f11492, asString, m3249(asString, str3, strM2542), System.currentTimeMillis());
                                 }
                             }
@@ -128,7 +128,7 @@ public final class C1513 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C1510.f5331));
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C1510.f5331));
         C1513 c1513 = f5334;
         C3689 c3689M4172 = C2309.m4172(c1513, listSingletonList);
         c1513.m3263(c3689M4172, new C1338(18));

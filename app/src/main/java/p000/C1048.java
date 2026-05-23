@@ -1,7 +1,6 @@
 package p000;
 
 import android.view.WindowManager;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲀᤞᲇᲈᲁᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -31,11 +30,11 @@ public final class C1048 extends AbstractC2867 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        int i = AbstractC1745.f5844;
+        int i = 0;
         String[] strArr = AbstractC1574.f5469;
-        C1973 c1973M3492 = AbstractC0968.m2483(AbstractC2201.m3988("com.android.internal.policy.PhoneWindow")).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.android.internal.policy.PhoneWindow")).m3492();
         c1973M3492.f6370 = "setAttributes";
-        C1982 c1982 = (C1982) AbstractC2784.m4743(new Object[]{AbstractC2519.m4527(WindowManager.LayoutParams.class)}, 1, c1973M3492);
+        C1982 c1982 = (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(WindowManager.LayoutParams.class)}, 1, c1973M3492);
         C1048 c1048 = f3817;
         C3689 c3689M4174 = c1048.m4174(c1982, 1);
         c1048.m3263(c3689M4174, new C1047(0));

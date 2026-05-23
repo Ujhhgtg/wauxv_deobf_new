@@ -138,7 +138,7 @@ public final class ComponentCallbacks2C0020 implements ComponentCallbacks2 {
         ArrayList arrayList = new ArrayList();
         try {
             ApplicationInfo applicationInfo = applicationContext.getPackageManager().getApplicationInfo(applicationContext.getPackageName(), 128);
-            if (applicationInfo != null && applicationInfo.metaData != null) {
+            if (true && applicationInfo.metaData != null) {
                 if (Log.isLoggable("ManifestParser", 2)) {
                     Log.v("ManifestParser", "Got app info metadata: " + applicationInfo.metaData);
                 }
@@ -185,12 +185,12 @@ public final class ComponentCallbacks2C0020 implements ComponentCallbacks2 {
             throw new IllegalArgumentException("Name must be non-null and non-empty, but given: source");
         }
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-        ExecutorServiceC1465 executorServiceC1465 = new ExecutorServiceC1465(new ThreadPoolExecutor(i, i, 0L, timeUnit, new PriorityBlockingQueue(), new ThreadFactoryC1464(threadFactoryC0142, "source", false)));
+        ExecutorServiceC1465 executorServiceC1465 = new ExecutorServiceC1465(new ThreadPoolExecutor(i, i, 0L, TimeUnit.MILLISECONDS, new PriorityBlockingQueue(), new ThreadFactoryC1464(threadFactoryC0142, "source", false)));
         ThreadFactoryC0142 threadFactoryC0143 = new ThreadFactoryC0142(1);
         if (TextUtils.isEmpty("disk-cache")) {
             throw new IllegalArgumentException("Name must be non-null and non-empty, but given: disk-cache");
         }
-        ExecutorServiceC1465 executorServiceC1466 = new ExecutorServiceC1465(new ThreadPoolExecutor(1, 1, 0L, timeUnit, new PriorityBlockingQueue(), new ThreadFactoryC1464(threadFactoryC0143, "disk-cache", true)));
+        ExecutorServiceC1465 executorServiceC1466 = new ExecutorServiceC1465(new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS, new PriorityBlockingQueue(), new ThreadFactoryC1464(threadFactoryC0143, "disk-cache", true)));
         if (ExecutorServiceC1465.f5229 == 0) {
             ExecutorServiceC1465.f5229 = Math.min(4, Runtime.getRuntime().availableProcessors());
         }
@@ -199,14 +199,14 @@ public final class ComponentCallbacks2C0020 implements ComponentCallbacks2 {
         if (TextUtils.isEmpty("animation")) {
             throw new IllegalArgumentException("Name must be non-null and non-empty, but given: animation");
         }
-        ExecutorServiceC1465 executorServiceC1467 = new ExecutorServiceC1465(new ThreadPoolExecutor(i2, i2, 0L, timeUnit, new PriorityBlockingQueue(), new ThreadFactoryC1464(threadFactoryC0144, "animation", true)));
+        ExecutorServiceC1465 executorServiceC1467 = new ExecutorServiceC1465(new ThreadPoolExecutor(i2, i2, 0L, TimeUnit.MILLISECONDS, new PriorityBlockingQueue(), new ThreadFactoryC1464(threadFactoryC0144, "animation", true)));
         C1940 c1940 = new C1940(new C1939(applicationContext));
         C0373 c0373 = new C0373(15);
         int i3 = c1940.f6397;
         InterfaceC0424 c1868 = i3 > 0 ? new C1868(i3) : new C0373(3);
         C1867 c1867 = new C1867(c1940.f6399);
         C1871 c1871 = new C1871(c1940.f6398);
-        C1216 c1216 = new C1216(c1871, new C0094(applicationContext), executorServiceC1466, executorServiceC1465, new ExecutorServiceC1465(new ThreadPoolExecutor(0, Integer.MAX_VALUE, ExecutorServiceC1465.f5228, timeUnit, new SynchronousQueue(), new ThreadFactoryC1464(new ThreadFactoryC0142(1), "source-unlimited", false))), executorServiceC1467);
+        C1216 c1216 = new C1216(c1871, new C0094(applicationContext), executorServiceC1466, executorServiceC1465, new ExecutorServiceC1465(new ThreadPoolExecutor(0, 2147483647, ExecutorServiceC1465.f5228, TimeUnit.MILLISECONDS, new SynchronousQueue(), new ThreadFactoryC1464(new ThreadFactoryC0142(1), "source-unlimited", false))), executorServiceC1467);
         List list2 = Collections.EMPTY_LIST;
         C1466 c1466 = new C1466(c0963);
         C2564 c2564 = new C2564();
@@ -238,14 +238,14 @@ public final class ComponentCallbacks2C0020 implements ComponentCallbacks2 {
             try {
                 Iterator it = this.f543.iterator();
                 while (it.hasNext()) {
-                    ((ComponentCallbacks2C2563) it.next()).getClass();
+                    
                 }
             } catch (Throwable th) {
                 throw th;
             }
         }
         C1871 c1871 = this.f538;
-        c1871.getClass();
+        
         if (i >= 40) {
             c1871.m3653(0L);
         } else if (i >= 20 || i == 15) {

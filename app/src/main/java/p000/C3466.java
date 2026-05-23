@@ -72,7 +72,7 @@ public final class C3466 extends ReplacementSpan {
             textPaint3.setStyle(style);
             textPaint3.setColor(color);
         }
-        C1142.m2753().getClass();
+        
         float f2 = i4;
         Paint paint2 = textPaint3;
         if (textPaint3 == null) {

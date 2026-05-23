@@ -102,7 +102,7 @@ public final class RetryAndFollowUpInterceptor implements Interceptor {
             }
             if (iCode == 503) {
                 Response responsePriorResponse = response.priorResponse();
-                if ((responsePriorResponse == null || responsePriorResponse.code() != 503) && retryAfter(response, Integer.MAX_VALUE) == 0) {
+                if ((responsePriorResponse == null || responsePriorResponse.code() != 503) && retryAfter(response, 2147483647) == 0) {
                     return response.request();
                 }
                 return null;
@@ -129,9 +129,9 @@ public final class RetryAndFollowUpInterceptor implements Interceptor {
             }
             switch (iCode) {
                 case 300:
-                case c.p /* 301 */:
-                case c.q /* 302 */:
-                case c.r /* 303 */:
+                case 301 /* 301 */:
+                case 302 /* 302 */:
+                case 303 /* 303 */:
                     break;
                 default:
                     return null;
@@ -170,7 +170,7 @@ public final class RetryAndFollowUpInterceptor implements Interceptor {
         if (Pattern.compile("\\d+").matcher(strHeader$default).matches()) {
             return Integer.valueOf(strHeader$default).intValue();
         }
-        return Integer.MAX_VALUE;
+        return 2147483647;
     }
 
     @Override // okhttp3.Interceptor
@@ -246,7 +246,7 @@ public final class RetryAndFollowUpInterceptor implements Interceptor {
                 Util.closeQuietly(responseBodyBody);
             }
             i++;
-            if (i > MAX_FOLLOW_UPS) {
+            if (i > 20) {
                 throw new ProtocolException("Too many follow-up requests: " + i);
             }
             call$okhttp.exitNetworkInterceptorExchange$okhttp(true);

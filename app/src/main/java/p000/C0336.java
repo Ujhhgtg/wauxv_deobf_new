@@ -61,13 +61,13 @@ public final class C0336 extends AbstractC2707 {
             try {
                 Iterator it = RunnableC1668.f5631.f6229.iterator();
                 while (it.hasNext()) {
-                    ((InterfaceC2645) it.next()).getClass();
+                    
                 }
                 if (AbstractC0009.m401(clsM1432)) {
                     if (AbstractC0009.m382(clsM1432).m3864("final")) {
                         throw new C1230("Cannot inherit from final class ".concat(clsM1432.getName()), null, null);
                     }
-                    arrayList.addAll((Collection) Stream.of((Object[]) AbstractC0009.m384(clsM1432)).filter(new C0335(i2)).collect(Collectors.toList()));
+                    arrayList.addAll((Collection) Stream.of((Object[]) AbstractC0009.m384(clsM1432)).filter(new C0335(0)).collect(Collectors.toList()));
                 }
                 cls = clsM1432;
                 i = 1;
@@ -94,7 +94,7 @@ public final class C0336 extends AbstractC2707 {
                 Iterator it2 = c1883.f6229.iterator();
                 while (it2.hasNext()) {
                     if (!((InterfaceC2645) it2.next()).mo3657(cls2)) {
-                        int i5 = C2644.f8538;
+                        int i5 = 0;
                         throw new C2644("Can't implement this interface: ".concat(cls2.getName()));
                     }
                 }
@@ -123,7 +123,7 @@ public final class C0336 extends AbstractC2707 {
         String str = this.f1597;
         C2000 c2001 = this.f1598;
         EnumC0703 enumC0703 = this.f1601;
-        c0004.getClass();
+        
         Class clsM317 = C0004.m317(str, c2001, clsArr, cls, c0333, enumC0703, c0550, runnableC1668);
         for (C0501 c0501 : arrayList) {
             String strM1748 = c0501.m1748();

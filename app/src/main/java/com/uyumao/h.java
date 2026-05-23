@@ -102,7 +102,7 @@ public class h extends BroadcastReceiver {
                 try {
                     jSONObject = new JSONObject();
                     try {
-                        jSONObject.put(com.umeng.analytics.pro.g.y, i);
+                        jSONObject.put("type", i);
                         if (!TextUtils.isEmpty(str2) && !TextUtils.isEmpty(str)) {
                             jSONObject.put("wifi_ssid", str2);
                             jSONObject.put("wifi_bssid", str);

@@ -40,7 +40,7 @@ public final class C1237 extends InputStream {
 
     @Override // java.io.InputStream
     public final boolean markSupported() {
-        this.f4469.getClass();
+        
         return true;
     }
 

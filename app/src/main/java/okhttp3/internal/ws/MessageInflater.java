@@ -38,10 +38,10 @@ public final class MessageInflater implements Closeable {
             this.inflater.reset();
         }
         this.deflatedBytes.mo1769(c0504);
-        this.deflatedBytes.m1799(Settings.DEFAULT_INITIAL_WINDOW_SIZE);
+        this.deflatedBytes.m1799(65535);
         long bytesRead = this.inflater.getBytesRead() + this.deflatedBytes.f2172;
         do {
-            this.inflaterSource.m3357(c0504, Long.MAX_VALUE);
+            this.inflaterSource.m3357(c0504, 9223372036854775807L);
         } while (this.inflater.getBytesRead() < bytesRead);
     }
 }

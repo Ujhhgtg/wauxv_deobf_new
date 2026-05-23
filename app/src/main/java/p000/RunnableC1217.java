@@ -32,7 +32,7 @@ public final class RunnableC1217 implements Runnable {
                             if (this.f4396.f4401.f4399.contains(new C1218(this.f4395, AbstractC3453.f10925))) {
                                 C1220 c1220 = this.f4396;
                                 C2708 c2709 = this.f4395;
-                                c1220.getClass();
+                                
                                 try {
                                     c2709.m4714(c1220.f4417, 5);
                                 } catch (Throwable th) {
@@ -57,7 +57,7 @@ public final class RunnableC1217 implements Runnable {
                                 this.f4396.f4419.m2846();
                                 C1220 c1221 = this.f4396;
                                 C2708 c27011 = this.f4395;
-                                c1221.getClass();
+                                
                                 try {
                                     c27011.m4715(c1221.f4419, c1221.f4415, c1221.f4422);
                                     this.f4396.m2845(this.f4395);

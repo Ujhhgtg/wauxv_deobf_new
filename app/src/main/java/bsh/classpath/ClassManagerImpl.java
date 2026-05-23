@@ -317,7 +317,7 @@ public class ClassManagerImpl extends C0482 {
         }
         if (this.f463 == null) {
             C0492 c0492 = this.f458;
-            c0492.getClass();
+            
             ArrayList arrayList = new ArrayList();
             c0492.f2117.forEach(new C0486(arrayList, 0));
             arrayList.addAll(c0492.f2116);

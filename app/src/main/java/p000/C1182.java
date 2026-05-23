@@ -29,7 +29,7 @@ public final class C1182 implements TransformationMethod {
             return charSequence;
         }
         C1142 c1142M2753 = C1142.m2753();
-        c1142M2753.getClass();
+        
         return c1142M2753.m2757(charSequence, 0, charSequence.length());
     }
 

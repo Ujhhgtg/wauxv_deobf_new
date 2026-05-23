@@ -28,7 +28,7 @@ public final /* synthetic */ class ViewOnClickListenerC1836 implements View.OnCl
             case 0:
                 Activity activityM4033 = AbstractC2203.m4033();
                 Context context = this.f6129.getContext();
-                C1846.f6140.getClass();
+                
                 C0243 c0243 = C1846.f6143;
                 InterfaceC1742 interfaceC1742 = C1846.f6141[0];
                 Intent intent = new Intent(context, (Class<?>) c0243.m1323());

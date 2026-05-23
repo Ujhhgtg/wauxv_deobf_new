@@ -28,7 +28,7 @@ public class C2132 extends C2438 {
     @Override // p000.C2438
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᲈᲀᤞ, reason: contains not printable characters */
     public void mo3942(InterfaceC2654 interfaceC2654) {
-        switch (this.f7066) {
+        switch (1) {
             case 0:
                 int i = (int) (this.f7067 & 2147483647L);
                 C1744 c1744 = this.f7068;
@@ -52,7 +52,7 @@ public class C2132 extends C2438 {
     @Override // p000.C2438
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲈᤞᲀᲇ */
     public long mo3691(InterfaceC2654 interfaceC2654, int i) {
-        switch (this.f7066) {
+        switch (1) {
             case 0:
                 return 1;
             default:

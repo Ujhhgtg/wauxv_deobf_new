@@ -182,7 +182,7 @@ public class ActionBarContextView extends ViewGroup {
         int paddingBottom = getPaddingBottom() + getPaddingTop();
         int paddingLeft = (size - getPaddingLeft()) - getPaddingRight();
         int iMin = size2 - paddingBottom;
-        int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(iMin, Integer.MIN_VALUE);
+        int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(iMin, -2147483648);
         LinearLayout linearLayout = this.f45;
         if (linearLayout != null && this.f44 == null) {
             if (this.f50) {
@@ -194,7 +194,7 @@ public class ActionBarContextView extends ViewGroup {
                 }
                 this.f45.setVisibility(z ? 0 : 8);
             } else {
-                linearLayout.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, Integer.MIN_VALUE), iMakeMeasureSpec);
+                linearLayout.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, -2147483648), iMakeMeasureSpec);
                 paddingLeft = Math.max(0, paddingLeft - linearLayout.getMeasuredWidth());
             }
         }
@@ -202,12 +202,12 @@ public class ActionBarContextView extends ViewGroup {
         if (view != null) {
             ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
             int i3 = layoutParams.width;
-            int i4 = i3 != -2 ? 1073741824 : Integer.MIN_VALUE;
+            int i4 = i3 != -2 ? 1073741824 : -2147483648;
             if (i3 >= 0) {
                 paddingLeft = Math.min(i3, paddingLeft);
             }
             int i5 = layoutParams.height;
-            int i6 = i5 == -2 ? Integer.MIN_VALUE : 1073741824;
+            int i6 = i5 == -2 ? -2147483648 : 1073741824;
             if (i5 >= 0) {
                 iMin = Math.min(i5, iMin);
             }

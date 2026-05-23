@@ -154,8 +154,8 @@ public class ActionBarContainer extends FrameLayout {
     @Override // android.widget.FrameLayout, android.view.View
     public final void onMeasure(int i, int i2) {
         int i3;
-        if (this.f31 == null && View.MeasureSpec.getMode(i2) == Integer.MIN_VALUE && (i3 = this.f38) >= 0) {
-            i2 = View.MeasureSpec.makeMeasureSpec(Math.min(i3, View.MeasureSpec.getSize(i2)), Integer.MIN_VALUE);
+        if (this.f31 == null && View.MeasureSpec.getMode(i2) == -2147483648 && (i3 = this.f38) >= 0) {
+            i2 = View.MeasureSpec.makeMeasureSpec(Math.min(i3, View.MeasureSpec.getSize(i2)), -2147483648);
         }
         super.onMeasure(i, i2);
         if (this.f31 == null) {

@@ -13,6 +13,6 @@ public final class C0615 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f2444 = new C0615("ChatGroupTabHook.ValNormalLightColor", "#FF161D1C", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f2444 = new C0615("ChatGroupTabHook.ValNormalLightColor", "#FF161D1C", null, false, 0, 0.0f, 0L, 124);
     }
 }

@@ -48,7 +48,7 @@ class JSONWriterUTF16 extends JSONWriter {
     protected char[] chars;
 
     static {
-        int[] iArr = new int[bc.e];
+        int[] iArr = new int[256];
         int i = 0;
         while (i < 16) {
             short s = (short) (i < 10 ? i + 48 : i + 87);
@@ -494,13 +494,13 @@ class JSONWriterUTF16 extends JSONWriter {
                 case '\b':
                 case '\t':
                 case '\n':
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                 case '\r':
                     StringUtils.writeEscapedChar(cArrGrow, i4, c);
                     i = i2 + 3;
                     break;
                 case 11:
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                 case 15:
                     cArrGrow[i4] = '\\';
                     cArrGrow[i2 + 2] = 'u';
@@ -511,15 +511,15 @@ class JSONWriterUTF16 extends JSONWriter {
                     i = i2 + 7;
                     break;
                 case 16:
-                case Opcodes.SIPUSH /* 17 */:
-                case Opcodes.LDC /* 18 */:
+                case 17 /* 17 */:
+                case 18 /* 18 */:
                 case 19:
                 case 20:
-                case Opcodes.ILOAD /* 21 */:
-                case Opcodes.LLOAD /* 22 */:
-                case Opcodes.FLOAD /* 23 */:
-                case Opcodes.DLOAD /* 24 */:
-                case Opcodes.ALOAD /* 25 */:
+                case 21 /* 21 */:
+                case 22 /* 22 */:
+                case 23 /* 23 */:
+                case 24 /* 24 */:
+                case 25 /* 25 */:
                     cArrGrow[i4] = '\\';
                     cArrGrow[i2 + 2] = 'u';
                     cArrGrow[i2 + 3] = '0';
@@ -548,7 +548,7 @@ class JSONWriterUTF16 extends JSONWriter {
                     break;
             }
         } else {
-            StringUtils.writeEscapedChar(cArrGrow, i4, c);
+            StringUtils.writeEscapedChar(cArrGrow, i4, 92);
             i = i2 + 3;
         }
         cArrGrow[i] = this.quote;
@@ -762,7 +762,7 @@ class JSONWriterUTF16 extends JSONWriter {
             long j3 = JDKUtils.FIELD_DECIMAL_INT_COMPACT_OFFSET;
             if (j3 != -1) {
                 long j4 = JDKUtils.UNSAFE.getLong(bigDecimal, j3);
-                if (j4 == Long.MIN_VALUE || z) {
+                if (j4 == -9223372036854775808L || z) {
                     if (z) {
                         string = bigDecimal.toPlainString();
                     } else {
@@ -923,7 +923,7 @@ class JSONWriterUTF16 extends JSONWriter {
         int i3 = i + 2;
         for (byte b : bArr) {
             int i4 = (b & 255) >> 4;
-            int i5 = b & ek.m;
+            int i5 = b & 15;
             int i6 = 55;
             cArrGrow[i3] = (char) (i4 + (i4 < 10 ? 48 : 55));
             int i7 = i3 + 1;
@@ -1772,12 +1772,12 @@ class JSONWriterUTF16 extends JSONWriter {
         for (int i4 = 0; i4 < length; i4++) {
             char cCharAt = str.charAt(i4);
             if (cCharAt == '\"') {
-                if (cCharAt == c) {
+                if (34 == c) {
                     cArr[i3] = '\\';
                     i3++;
                 }
                 i = i3 + 1;
-                cArr[i3] = cCharAt;
+                cArr[i3] = 34;
                 i3 = i;
             } else if (cCharAt != '<' && cCharAt != '>') {
                 if (cCharAt != '\\') {
@@ -1791,18 +1791,18 @@ class JSONWriterUTF16 extends JSONWriter {
                         case 6:
                         case 7:
                         case 11:
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
-                        case Opcodes.LDC /* 18 */:
+                        case 17 /* 17 */:
+                        case 18 /* 18 */:
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.LLOAD /* 22 */:
-                        case Opcodes.FLOAD /* 23 */:
-                        case Opcodes.DLOAD /* 24 */:
-                        case Opcodes.ALOAD /* 25 */:
+                        case 21 /* 21 */:
+                        case 22 /* 22 */:
+                        case 23 /* 23 */:
+                        case 24 /* 24 */:
+                        case 25 /* 25 */:
                         case 26:
                         case 27:
                         case 28:
@@ -1815,18 +1815,18 @@ class JSONWriterUTF16 extends JSONWriter {
                         case '\b':
                         case '\t':
                         case '\n':
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case '\r':
                             break;
                         default:
                             switch (cCharAt) {
                                 case '\'':
-                                    if (cCharAt == c) {
+                                    if (39 == c) {
                                         cArr[i3] = '\\';
                                         i3++;
                                     }
                                     i = i3 + 1;
-                                    cArr[i3] = cCharAt;
+                                    cArr[i3] = 39;
                                     i3 = i;
                                     break;
                                 case '(':
@@ -1890,12 +1890,12 @@ class JSONWriterUTF16 extends JSONWriter {
         for (int i4 = 0; i4 < length; i4 += 2) {
             char c2 = JDKUtils.UNSAFE.getChar(bArr, ((long) Unsafe.ARRAY_BYTE_BASE_OFFSET) + ((long) i4));
             if (c2 == '\"') {
-                if (c2 == c) {
+                if (34 == c) {
                     cArr[i3] = '\\';
                     i3++;
                 }
                 i = i3 + 1;
-                cArr[i3] = c2;
+                cArr[i3] = 34;
                 i3 = i;
             } else if (c2 != '<' && c2 != '>') {
                 if (c2 != '\\') {
@@ -1909,18 +1909,18 @@ class JSONWriterUTF16 extends JSONWriter {
                         case 6:
                         case 7:
                         case 11:
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
-                        case Opcodes.LDC /* 18 */:
+                        case 17 /* 17 */:
+                        case 18 /* 18 */:
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.LLOAD /* 22 */:
-                        case Opcodes.FLOAD /* 23 */:
-                        case Opcodes.DLOAD /* 24 */:
-                        case Opcodes.ALOAD /* 25 */:
+                        case 21 /* 21 */:
+                        case 22 /* 22 */:
+                        case 23 /* 23 */:
+                        case 24 /* 24 */:
+                        case 25 /* 25 */:
                         case 26:
                         case 27:
                         case 28:
@@ -1933,18 +1933,18 @@ class JSONWriterUTF16 extends JSONWriter {
                         case '\b':
                         case '\t':
                         case '\n':
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case '\r':
                             break;
                         default:
                             switch (c2) {
                                 case '\'':
-                                    if (c2 == c) {
+                                    if (39 == c) {
                                         cArr[i3] = '\\';
                                         i3++;
                                     }
                                     i = i3 + 1;
-                                    cArr[i3] = c2;
+                                    cArr[i3] = 39;
                                     i3 = i;
                                     break;
                                 case '(':
@@ -1989,7 +1989,7 @@ class JSONWriterUTF16 extends JSONWriter {
 
     @Override // com.alibaba.fastjson2.JSONWriter
     public void writeStringLatin1(byte[] bArr) {
-        if ((this.context.features & JSONWriter.MASK_BROWSER_SECURE) != 0) {
+        if ((this.context.features & 34359738368L) != 0) {
             writeStringLatin1BrowserSecure(bArr);
             return;
         }
@@ -2100,7 +2100,7 @@ class JSONWriterUTF16 extends JSONWriter {
             }
             long longLE = IOUtils.getLongLE(bArr, i3 << 1);
             long longLE2 = IOUtils.getLongLE(bArr, (i3 + 4) << 1);
-            if (((longLE | longLE2) & (-71777214294589696L)) == j && StringUtils.noneEscaped((longLE << 8) | longLE2, j2)) {
+            if (((longLE | longLE2) & (-71777214294589696L)) == 0L && StringUtils.noneEscaped((longLE << 8) | longLE2, j2)) {
                 IOUtils.putLongLE(cArr, i2, longLE);
                 IOUtils.putLongLE(cArr, i2 + 4, longLE2);
                 i2 += 8;
@@ -2108,11 +2108,11 @@ class JSONWriterUTF16 extends JSONWriter {
             } else {
                 int i6 = i3 + 1;
                 c = IOUtils.getChar(bArr, i3);
-                if (c != '\\' || c == this.quote || c < ' ') {
+                if (c != '\\' || 92 == this.quote || false) {
                     writeStringEscapeUTF16(bArr);
                     return;
                 } else {
-                    cArr[i2] = c;
+                    cArr[i2] = 92;
                     i2++;
                     i3 = i6;
                 }
@@ -2593,7 +2593,7 @@ class JSONWriterUTF16 extends JSONWriter {
             i = iWriteInt64 + 1;
             cArrGrow[iWriteInt64] = this.quote;
         } else {
-            if ((512 & j2) != 0 && (j2 & JSONWriter.MASK_NOT_WRITE_NUMBER_CLASS_NAME) == 0 && j >= -2147483648L && j <= 2147483647L) {
+            if ((512 & j2) != 0 && (j2 & 1099511627776L) == 0 && j >= -2147483648L && j <= 2147483647L) {
                 i = iWriteInt64 + 1;
                 cArrGrow[iWriteInt64] = 'L';
             }
@@ -2636,12 +2636,12 @@ class JSONWriterUTF16 extends JSONWriter {
         cArr2[i2] = c;
         for (char c2 : cArr) {
             if (c2 == '\"') {
-                if (c2 == c) {
+                if (34 == c) {
                     cArr2[i3] = '\\';
                     i3++;
                 }
                 i = i3 + 1;
-                cArr2[i3] = c2;
+                cArr2[i3] = 34;
                 i3 = i;
             } else if (c2 != '<' && c2 != '>') {
                 if (c2 != '\\') {
@@ -2655,18 +2655,18 @@ class JSONWriterUTF16 extends JSONWriter {
                         case 6:
                         case 7:
                         case 11:
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
-                        case Opcodes.LDC /* 18 */:
+                        case 17 /* 17 */:
+                        case 18 /* 18 */:
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.LLOAD /* 22 */:
-                        case Opcodes.FLOAD /* 23 */:
-                        case Opcodes.DLOAD /* 24 */:
-                        case Opcodes.ALOAD /* 25 */:
+                        case 21 /* 21 */:
+                        case 22 /* 22 */:
+                        case 23 /* 23 */:
+                        case 24 /* 24 */:
+                        case 25 /* 25 */:
                         case 26:
                         case 27:
                         case 28:
@@ -2679,18 +2679,18 @@ class JSONWriterUTF16 extends JSONWriter {
                         case '\b':
                         case '\t':
                         case '\n':
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case '\r':
                             break;
                         default:
                             switch (c2) {
                                 case '\'':
-                                    if (c2 == c) {
+                                    if (39 == c) {
                                         cArr2[i3] = '\\';
                                         i3++;
                                     }
                                     i = i3 + 1;
-                                    cArr2[i3] = c2;
+                                    cArr2[i3] = 39;
                                     i3 = i;
                                     break;
                                 case '(':
@@ -2799,18 +2799,18 @@ class JSONWriterUTF16 extends JSONWriter {
                         case 6:
                         case 7:
                         case 11:
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                         case 15:
                         case 16:
-                        case Opcodes.SIPUSH /* 17 */:
-                        case Opcodes.LDC /* 18 */:
+                        case 17 /* 17 */:
+                        case 18 /* 18 */:
                         case 19:
                         case 20:
-                        case Opcodes.ILOAD /* 21 */:
-                        case Opcodes.LLOAD /* 22 */:
-                        case Opcodes.FLOAD /* 23 */:
-                        case Opcodes.DLOAD /* 24 */:
-                        case Opcodes.ALOAD /* 25 */:
+                        case 21 /* 21 */:
+                        case 22 /* 22 */:
+                        case 23 /* 23 */:
+                        case 24 /* 24 */:
+                        case 25 /* 25 */:
                         case 26:
                         case 27:
                         case 28:
@@ -2823,7 +2823,7 @@ class JSONWriterUTF16 extends JSONWriter {
                         case '\b':
                         case '\t':
                         case '\n':
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case '\r':
                             StringUtils.writeEscapedChar(cArrGrow, i4, c2);
                             i4 += 2;
@@ -2839,7 +2839,7 @@ class JSONWriterUTF16 extends JSONWriter {
                             break;
                     }
                 } else {
-                    StringUtils.writeEscapedChar(cArrGrow, i4, c2);
+                    StringUtils.writeEscapedChar(cArrGrow, i4, 92);
                     i4 += 2;
                 }
                 i++;
@@ -3063,7 +3063,7 @@ class JSONWriterUTF16 extends JSONWriter {
             if (i4 < length2) {
                 long longLE = IOUtils.getLongLE(cArr, i3);
                 long longLE2 = IOUtils.getLongLE(cArr, i3 + 4);
-                if (((longLE | longLE2) & (-71777214294589696L)) == j && StringUtils.noneEscaped((longLE << 8) | longLE2, j2)) {
+                if (((longLE | longLE2) & (-71777214294589696L)) == 0L && StringUtils.noneEscaped((longLE << 8) | longLE2, j2)) {
                     IOUtils.putLongLE(cArr2, i2, longLE);
                     IOUtils.putLongLE(cArr2, i2 + 4, longLE2);
                     i2 += 8;
@@ -3071,8 +3071,8 @@ class JSONWriterUTF16 extends JSONWriter {
                 } else {
                     int i5 = i3 + 1;
                     c = IOUtils.getChar(cArr, i3);
-                    if (c == '\\' && c != this.quote && c >= ' ') {
-                        cArr2[i2] = c;
+                    if (c == '\\' && 92 != this.quote && true) {
+                        cArr2[i2] = 92;
                         i2++;
                         i3 = i5;
                     } else {

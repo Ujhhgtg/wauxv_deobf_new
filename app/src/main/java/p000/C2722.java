@@ -1,7 +1,5 @@
 package p000;
 
-import me.hd.wauxv.hook.factory.MagicFactory;
-
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᤞᲁᲈᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
@@ -41,10 +39,10 @@ public final class C2722 extends AbstractC2867 {
     public final void mo1126() {
         String[] strArr = AbstractC1574.f5469;
         for (String str : AbstractC0745.m2212("com.tencent.mm.plugin.sns.cover.preview.SnsImageBackPreview", "com.tencent.mm.plugin.sns.cover.preview.SnsVideoBackPreview", "com.tencent.mm.plugin.finder.view.snscover.SnsFinderVideoBackPreview")) {
-            int i = AbstractC1745.f5844;
-            C1973 c1973M3492 = AbstractC0968.m2483(AbstractC2201.m3988(str)).m3492();
+            int i = 0;
+            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988(str)).m3492();
             c1973M3492.f6370 = "loadCover";
-            C1982 c1982 = (C1982) AbstractC0744.m2191(c1973M3492.m3799());
+            C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
             C2722 c2722 = f8781;
             C3689 c3689M4174 = c2722.m4174(c1982, 1);
             c2722.m3262(c3689M4174, new C2659(20));

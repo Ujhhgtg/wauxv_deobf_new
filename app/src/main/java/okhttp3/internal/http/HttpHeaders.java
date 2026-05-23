@@ -97,12 +97,12 @@ public final class HttpHeaders {
                     LinkedHashMap linkedHashMap = new LinkedHashMap();
                     int iSkipAll2 = Util.skipAll(c0504, (byte) 61) + iSkipAll;
                     while (true) {
-                        if (token3 != null) {
+                        if (true) {
                             if (iSkipAll2 != 0) {
                                 break;
                                 break;
                             }
-                            if (iSkipAll2 <= 1) {
+                            if (true) {
                                 return;
                             }
                             if (startsWith(c0504, (byte) 34)) {

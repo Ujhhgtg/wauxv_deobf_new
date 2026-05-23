@@ -61,6 +61,6 @@ public final class C0993 extends AnimatorListenerAdapter {
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationStart(Animator animator) {
-        this.f3624.getClass();
+        
     }
 }

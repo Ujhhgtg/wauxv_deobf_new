@@ -49,7 +49,7 @@ class FieldWriterInt32<T> extends FieldWriter<T> {
             writeInt32(jSONWriter, num.intValue());
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;
@@ -59,7 +59,7 @@ class FieldWriterInt32<T> extends FieldWriter<T> {
     @Override // com.alibaba.fastjson2.writer.FieldWriter
     public final void writeInt32(JSONWriter jSONWriter, int i) {
         long features = jSONWriter.getFeatures() | this.features;
-        if (i == 0 && (features & JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE) != 0 && this.defaultValue == null) {
+        if (i == 0 && (features & 4096L) != 0 && this.defaultValue == null) {
             return;
         }
         if (this.toString) {

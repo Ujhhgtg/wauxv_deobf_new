@@ -160,12 +160,12 @@ public final class C1412 {
                     return true;
                 }
                 i3 = i13 & (-268435456);
-                i4 = Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                i4 = 16777216;
                 if (i3 == 0 || (i13 & 251658240) == 33554432) {
                     if (i12 != 16777221) {
                         i5 = i12 & (-16777216);
                         i6 = (-16777216) & i13;
-                        strReplace = ASMUtils.TYPE_OBJECT;
+                        strReplace = "java/lang/Object";
                         if (i5 != i6) {
                             i7 = i12 & (-268435456);
                             if (i7 == 0 || (i12 & 251658240) == 33554432) {
@@ -176,7 +176,7 @@ public final class C1412 {
                                     i3 -= 268435456;
                                 }
                                 iMin = Math.min(i7, i3) | 33554432;
-                                iM4874 = c2870.m4874(ASMUtils.TYPE_OBJECT);
+                                iM4874 = c2870.m4874("java/lang/Object");
                                 i4 = iMin | iM4874;
                             }
                         } else if ((i13 & 251658240) == 33554432) {
@@ -184,7 +184,7 @@ public final class C1412 {
                             i8 = i12 & 1048575;
                             i9 = 1048575 & i13;
                             j = ((long) i8) | (((long) i9) << 32);
-                            i10 = (i8 + i9 + Opcodes.IXOR) & Integer.MAX_VALUE;
+                            i10 = (i8 + i9 + 130) & 2147483647;
                             c2869M4875 = c2870.m4875(i10);
                             while (true) {
                                 if (c2869M4875 == null) {
@@ -207,7 +207,7 @@ public final class C1412 {
                                                 strReplace = cls.getName().replace('.', '/');
                                             }
                                             int iM4875 = c2870.m4874(strReplace);
-                                            C2869 c2869 = new C2869(c2870.f9206, Opcodes.IXOR, j, i10);
+                                            C2869 c2869 = new C2869(c2870.f9206, 130, j, i10);
                                             c2870.m4876(c2869);
                                             c2869.f9197 = iM4875;
                                             i11 = iM4875;
@@ -228,7 +228,7 @@ public final class C1412 {
                             i4 = i14 | i11;
                         } else {
                             iMin = ((i12 & (-268435456)) - 268435456) | 33554432;
-                            iM4874 = c2870.m4874(ASMUtils.TYPE_OBJECT);
+                            iM4874 = c2870.m4874("java/lang/Object");
                             i4 = iMin | iM4874;
                         }
                     }
@@ -245,16 +245,16 @@ public final class C1412 {
             } else if (i13 != 16777221) {
                 i12 = 16777221;
                 if (i13 == 0) {
-                    iArr[i2] = i12;
+                    iArr[i2] = 16777221;
                     return true;
                 }
                 i3 = i13 & (-268435456);
-                i4 = Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                i4 = 16777216;
                 if (i3 == 0) {
-                    if (i12 != 16777221) {
+                    if (false) {
                         i5 = i12 & (-16777216);
                         i6 = (-16777216) & i13;
-                        strReplace = ASMUtils.TYPE_OBJECT;
+                        strReplace = "java/lang/Object";
                         if (i5 != i6) {
                             i7 = i12 & (-268435456);
                             if (i7 == 0) {
@@ -266,14 +266,14 @@ public final class C1412 {
                                 i3 -= 268435456;
                             }
                             iMin = Math.min(i7, i3) | 33554432;
-                            iM4874 = c2870.m4874(ASMUtils.TYPE_OBJECT);
+                            iM4874 = c2870.m4874("java/lang/Object");
                             i4 = iMin | iM4874;
                         } else if ((i13 & 251658240) == 33554432) {
                             int i15 = (i12 & (-268435456)) | 33554432;
                             i8 = i12 & 1048575;
                             i9 = 1048575 & i13;
                             j = ((long) i8) | (((long) i9) << 32);
-                            i10 = (i8 + i9 + Opcodes.IXOR) & Integer.MAX_VALUE;
+                            i10 = (i8 + i9 + 130) & 2147483647;
                             c2869M4875 = c2870.m4875(i10);
                             while (true) {
                                 if (c2869M4875 == null) {
@@ -294,7 +294,7 @@ public final class C1412 {
                                         strReplace = cls.getName().replace('.', '/');
                                     }
                                     int iM4876 = c2870.m4874(strReplace);
-                                    C2869 c28610 = new C2869(c2870.f9206, Opcodes.IXOR, j, i10);
+                                    C2869 c28610 = new C2869(c2870.f9206, 130, j, i10);
                                     c2870.m4876(c28610);
                                     c28610.f9197 = iM4876;
                                     i11 = iM4876;
@@ -307,7 +307,7 @@ public final class C1412 {
                             i4 = i15 | i11;
                         } else {
                             iMin = ((i12 & (-268435456)) - 268435456) | 33554432;
-                            iM4874 = c2870.m4874(ASMUtils.TYPE_OBJECT);
+                            iM4874 = c2870.m4874("java/lang/Object");
                             i4 = iMin | iM4874;
                         }
                         if (i4 != i13) {
@@ -315,10 +315,10 @@ public final class C1412 {
                             return true;
                         }
                     }
-                } else if (i12 != 16777221) {
+                } else if (false) {
                     i5 = i12 & (-16777216);
                     i6 = (-16777216) & i13;
-                    strReplace = ASMUtils.TYPE_OBJECT;
+                    strReplace = "java/lang/Object";
                     if (i5 != i6) {
                         i7 = i12 & (-268435456);
                         if (i7 == 0) {
@@ -330,14 +330,14 @@ public final class C1412 {
                             i3 -= 268435456;
                         }
                         iMin = Math.min(i7, i3) | 33554432;
-                        iM4874 = c2870.m4874(ASMUtils.TYPE_OBJECT);
+                        iM4874 = c2870.m4874("java/lang/Object");
                         i4 = iMin | iM4874;
                     } else if ((i13 & 251658240) == 33554432) {
                         int i16 = (i12 & (-268435456)) | 33554432;
                         i8 = i12 & 1048575;
                         i9 = 1048575 & i13;
                         j = ((long) i8) | (((long) i9) << 32);
-                        i10 = (i8 + i9 + Opcodes.IXOR) & Integer.MAX_VALUE;
+                        i10 = (i8 + i9 + 130) & 2147483647;
                         c2869M4875 = c2870.m4875(i10);
                         while (true) {
                             if (c2869M4875 == null) {
@@ -358,7 +358,7 @@ public final class C1412 {
                                     strReplace = cls.getName().replace('.', '/');
                                 }
                                 int iM4877 = c2870.m4874(strReplace);
-                                C2869 c28611 = new C2869(c2870.f9206, Opcodes.IXOR, j, i10);
+                                C2869 c28611 = new C2869(c2870.f9206, 130, j, i10);
                                 c2870.m4876(c28611);
                                 c28611.f9197 = iM4877;
                                 i11 = iM4877;
@@ -371,7 +371,7 @@ public final class C1412 {
                         i4 = i16 | i11;
                     } else {
                         iMin = ((i12 & (-268435456)) - 268435456) | 33554432;
-                        iM4874 = c2870.m4874(ASMUtils.TYPE_OBJECT);
+                        iM4874 = c2870.m4874("java/lang/Object");
                         i4 = iMin | iM4874;
                     }
                     if (i4 != i13) {
@@ -469,25 +469,25 @@ public final class C1412 {
             case 7:
             case 8:
             case 16:
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 m3130(16777217);
                 return;
             case 9:
             case 10:
                 m3130(16777220);
-                m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                m3130(16777216);
                 return;
             case 11:
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
             case 13:
                 m3130(16777218);
                 return;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
             case 15:
                 m3130(16777219);
-                m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                m3130(16777216);
                 return;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 int i3 = c2869.f9192;
                 switch (i3) {
                     case 3:
@@ -498,11 +498,11 @@ public final class C1412 {
                         return;
                     case 5:
                         m3130(16777220);
-                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                        m3130(16777216);
                         return;
                     case 6:
                         m3130(16777219);
-                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                        m3130(16777216);
                         return;
                     case 7:
                         m3130(c2870.m4874("java/lang/Class") | 33554432);
@@ -518,7 +518,7 @@ public final class C1412 {
                             case 16:
                                 m3130(c2870.m4874("java/lang/invoke/MethodType") | 33554432);
                                 return;
-                            case Opcodes.SIPUSH /* 17 */:
+                            case 17 /* 17 */:
                                 m3131(c2870, c2869.f9195);
                                 return;
                             default:
@@ -527,36 +527,36 @@ public final class C1412 {
                 }
             default:
                 switch (i) {
-                    case Opcodes.ILOAD /* 21 */:
+                    case 21 /* 21 */:
                         m3130(16777217);
                         return;
-                    case Opcodes.LLOAD /* 22 */:
+                    case 22 /* 22 */:
                         m3130(16777220);
-                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                        m3130(16777216);
                         return;
-                    case Opcodes.FLOAD /* 23 */:
+                    case 23 /* 23 */:
                         m3130(16777218);
                         return;
-                    case Opcodes.DLOAD /* 24 */:
+                    case 24 /* 24 */:
                         m3130(16777219);
-                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                        m3130(16777216);
                         return;
-                    case Opcodes.ALOAD /* 25 */:
+                    case 25 /* 25 */:
                         m3130(m3126(i2));
                         return;
                     default:
                         switch (i) {
-                            case Opcodes.IALOAD /* 46 */:
-                            case Opcodes.BALOAD /* 51 */:
+                            case 46 /* 46 */:
+                            case 51 /* 51 */:
                             case 52:
-                            case Opcodes.SALOAD /* 53 */:
+                            case 53 /* 53 */:
                                 m3128(2);
                                 m3130(16777217);
                                 return;
                             case 47:
                                 m3128(2);
                                 m3130(16777220);
-                                m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                m3130(16777216);
                                 return;
                             case 48:
                                 m3128(2);
@@ -565,9 +565,9 @@ public final class C1412 {
                             case 49:
                                 m3128(2);
                                 m3130(16777219);
-                                m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                m3130(16777216);
                                 return;
-                            case Opcodes.AALOAD /* 50 */:
+                            case 50 /* 50 */:
                                 m3128(1);
                                 int iM3127 = m3127();
                                 if (iM3127 != 16777221) {
@@ -575,15 +575,15 @@ public final class C1412 {
                                 }
                                 m3130(iM3127);
                                 return;
-                            case Opcodes.ISTORE /* 54 */:
-                            case Opcodes.FSTORE /* 56 */:
-                            case Opcodes.ASTORE /* 58 */:
+                            case 54 /* 54 */:
+                            case 56 /* 56 */:
+                            case 58 /* 58 */:
                                 m3132(i2, m3127());
                                 if (i2 > 0) {
                                     int i4 = i2 - 1;
                                     int iM3126 = m3126(i4);
                                     if (iM3126 == 16777220 || iM3126 == 16777219) {
-                                        m3132(i4, Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3132(i4, 16777216);
                                         return;
                                     }
                                     int i5 = iM3126 & 251658240;
@@ -594,16 +594,16 @@ public final class C1412 {
                                     return;
                                 }
                                 return;
-                            case Opcodes.LSTORE /* 55 */:
-                            case Opcodes.DSTORE /* 57 */:
+                            case 55 /* 55 */:
+                            case 57 /* 57 */:
                                 m3128(1);
                                 m3132(i2, m3127());
-                                m3132(i2 + 1, Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                m3132(i2 + 1, 16777216);
                                 if (i2 > 0) {
                                     int i6 = i2 - 1;
                                     int iM3128 = m3126(i6);
                                     if (iM3128 == 16777220 || iM3128 == 16777219) {
-                                        m3132(i6, Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3132(i6, 16777216);
                                         return;
                                     }
                                     int i7 = iM3128 & 251658240;
@@ -616,11 +616,11 @@ public final class C1412 {
                                 return;
                             default:
                                 switch (i) {
-                                    case Opcodes.IASTORE /* 79 */:
+                                    case 79 /* 79 */:
                                     case 81:
-                                    case Opcodes.AASTORE /* 83 */:
-                                    case Opcodes.BASTORE /* 84 */:
-                                    case Opcodes.CASTORE /* 85 */:
+                                    case 83 /* 83 */:
+                                    case 84 /* 84 */:
+                                    case 85 /* 85 */:
                                     case 86:
                                         m3128(3);
                                         return;
@@ -628,36 +628,36 @@ public final class C1412 {
                                     case 82:
                                         m3128(4);
                                         return;
-                                    case Opcodes.POP /* 87 */:
-                                    case Opcodes.IFEQ /* 153 */:
-                                    case Opcodes.IFNE /* 154 */:
-                                    case Opcodes.IFLT /* 155 */:
-                                    case Opcodes.IFGE /* 156 */:
-                                    case Opcodes.IFGT /* 157 */:
-                                    case Opcodes.IFLE /* 158 */:
-                                    case Opcodes.TABLESWITCH /* 170 */:
-                                    case Opcodes.LOOKUPSWITCH /* 171 */:
-                                    case Opcodes.IRETURN /* 172 */:
-                                    case Opcodes.FRETURN /* 174 */:
-                                    case Opcodes.ARETURN /* 176 */:
-                                    case Opcodes.ATHROW /* 191 */:
-                                    case Opcodes.MONITORENTER /* 194 */:
-                                    case Opcodes.MONITOREXIT /* 195 */:
+                                    case 87 /* 87 */:
+                                    case 153 /* 153 */:
+                                    case 154 /* 154 */:
+                                    case 155 /* 155 */:
+                                    case 156 /* 156 */:
+                                    case 157 /* 157 */:
+                                    case 158 /* 158 */:
+                                    case 170 /* 170 */:
+                                    case 171 /* 171 */:
+                                    case 172 /* 172 */:
+                                    case 174 /* 174 */:
+                                    case 176 /* 176 */:
+                                    case 191 /* 191 */:
+                                    case 194 /* 194 */:
+                                    case 195 /* 195 */:
                                         break;
-                                    case Opcodes.POP2 /* 88 */:
-                                    case Opcodes.IF_ICMPEQ /* 159 */:
-                                    case Opcodes.IF_ICMPNE /* 160 */:
-                                    case Opcodes.IF_ICMPLT /* 161 */:
-                                    case Opcodes.IF_ICMPGE /* 162 */:
-                                    case Opcodes.IF_ICMPGT /* 163 */:
-                                    case Opcodes.IF_ICMPLE /* 164 */:
-                                    case Opcodes.IF_ACMPEQ /* 165 */:
-                                    case Opcodes.IF_ACMPNE /* 166 */:
-                                    case Opcodes.LRETURN /* 173 */:
-                                    case Opcodes.DRETURN /* 175 */:
+                                    case 88 /* 88 */:
+                                    case 159 /* 159 */:
+                                    case 160 /* 160 */:
+                                    case 161 /* 161 */:
+                                    case 162 /* 162 */:
+                                    case 163 /* 163 */:
+                                    case 164 /* 164 */:
+                                    case 165 /* 165 */:
+                                    case 166 /* 166 */:
+                                    case 173 /* 173 */:
+                                    case 175 /* 175 */:
                                         m3128(2);
                                         return;
-                                    case Opcodes.DUP /* 89 */:
+                                    case 89 /* 89 */:
                                         int iM3129 = m3127();
                                         m3130(iM3129);
                                         m3130(iM3129);
@@ -678,7 +678,7 @@ public final class C1412 {
                                         m3130(iM31213);
                                         m3130(iM31212);
                                         return;
-                                    case Opcodes.DUP2 /* 92 */:
+                                    case 92 /* 92 */:
                                         int iM31215 = m3127();
                                         int iM31216 = m3127();
                                         m3130(iM31216);
@@ -708,47 +708,47 @@ public final class C1412 {
                                         m3130(iM31221);
                                         m3130(iM31220);
                                         return;
-                                    case Opcodes.SWAP /* 95 */:
+                                    case 95 /* 95 */:
                                         int iM31224 = m3127();
                                         int iM31225 = m3127();
                                         m3130(iM31224);
                                         m3130(iM31225);
                                         return;
-                                    case Opcodes.IADD /* 96 */:
+                                    case 96 /* 96 */:
                                     case 100:
                                     case 104:
-                                    case Opcodes.IDIV /* 108 */:
+                                    case 108 /* 108 */:
                                     case 112:
                                     case 120:
                                     case 122:
-                                    case Opcodes.IUSHR /* 124 */:
+                                    case 124 /* 124 */:
                                     case 126:
                                     case 128:
-                                    case Opcodes.IXOR /* 130 */:
-                                    case Opcodes.L2I /* 136 */:
-                                    case Opcodes.D2I /* 142 */:
-                                    case Opcodes.FCMPL /* 149 */:
-                                    case Opcodes.FCMPG /* 150 */:
+                                    case 130 /* 130 */:
+                                    case 136 /* 136 */:
+                                    case 142 /* 142 */:
+                                    case 149 /* 149 */:
+                                    case 150 /* 150 */:
                                         m3128(2);
                                         m3130(16777217);
                                         return;
-                                    case Opcodes.LADD /* 97 */:
+                                    case 97 /* 97 */:
                                     case 101:
                                     case 105:
-                                    case Opcodes.LDIV /* 109 */:
+                                    case 109 /* 109 */:
                                     case 113:
                                     case 127:
-                                    case Opcodes.LOR /* 129 */:
-                                    case Opcodes.LXOR /* 131 */:
+                                    case 129 /* 129 */:
+                                    case 131 /* 131 */:
                                         m3128(4);
                                         m3130(16777220);
-                                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3130(16777216);
                                         return;
                                     case 98:
                                     case 102:
                                     case 106:
-                                    case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-                                    case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+                                    case 110 /* 110 */:
+                                    case 114 /* 114 */:
                                     case 137:
                                     case 144:
                                         m3128(2);
@@ -757,91 +757,91 @@ public final class C1412 {
                                     case 99:
                                     case 103:
                                     case 107:
-                                    case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
+                                    case 111 /* 111 */:
                                     case 115:
                                         m3128(4);
                                         m3130(16777219);
-                                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3130(16777216);
                                         return;
-                                    case Opcodes.INEG /* 116 */:
-                                    case Opcodes.LNEG /* 117 */:
-                                    case Opcodes.FNEG /* 118 */:
-                                    case Opcodes.DNEG /* 119 */:
-                                    case Opcodes.I2B /* 145 */:
-                                    case Opcodes.I2C /* 146 */:
-                                    case Opcodes.I2S /* 147 */:
-                                    case Opcodes.GOTO /* 167 */:
-                                    case Opcodes.RETURN /* 177 */:
+                                    case 116 /* 116 */:
+                                    case 117 /* 117 */:
+                                    case 118 /* 118 */:
+                                    case 119 /* 119 */:
+                                    case 145 /* 145 */:
+                                    case 146 /* 146 */:
+                                    case 147 /* 147 */:
+                                    case 167 /* 167 */:
+                                    case 177 /* 177 */:
                                         return;
                                     case 121:
-                                    case Opcodes.LSHR /* 123 */:
-                                    case Opcodes.LUSHR /* 125 */:
+                                    case 123 /* 123 */:
+                                    case 125 /* 125 */:
                                         m3128(3);
                                         m3130(16777220);
-                                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3130(16777216);
                                         return;
-                                    case Opcodes.IINC /* 132 */:
+                                    case 132 /* 132 */:
                                         m3132(i2, 16777217);
                                         return;
-                                    case Opcodes.I2L /* 133 */:
-                                    case Opcodes.F2L /* 140 */:
+                                    case 133 /* 133 */:
+                                    case 140 /* 140 */:
                                         m3128(1);
                                         m3130(16777220);
-                                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3130(16777216);
                                         return;
-                                    case Opcodes.I2F /* 134 */:
+                                    case 134 /* 134 */:
                                         m3128(1);
                                         m3130(16777218);
                                         return;
-                                    case Opcodes.I2D /* 135 */:
+                                    case 135 /* 135 */:
                                     case 141:
                                         m3128(1);
                                         m3130(16777219);
-                                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3130(16777216);
                                         return;
                                     case 138:
                                         m3128(2);
                                         m3130(16777219);
-                                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3130(16777216);
                                         return;
-                                    case Opcodes.F2I /* 139 */:
-                                    case Opcodes.ARRAYLENGTH /* 190 */:
-                                    case Opcodes.INSTANCEOF /* 193 */:
+                                    case 139 /* 139 */:
+                                    case 190 /* 190 */:
+                                    case 193 /* 193 */:
                                         m3128(1);
                                         m3130(16777217);
                                         return;
-                                    case Opcodes.D2L /* 143 */:
+                                    case 143 /* 143 */:
                                         m3128(2);
                                         m3130(16777220);
-                                        m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                                        m3130(16777216);
                                         return;
-                                    case Opcodes.LCMP /* 148 */:
-                                    case Opcodes.DCMPL /* 151 */:
-                                    case Opcodes.DCMPG /* 152 */:
+                                    case 148 /* 148 */:
+                                    case 151 /* 151 */:
+                                    case 152 /* 152 */:
                                         m3128(4);
                                         m3130(16777217);
                                         return;
-                                    case Opcodes.JSR /* 168 */:
-                                    case Opcodes.RET /* 169 */:
+                                    case 168 /* 168 */:
+                                    case 169 /* 169 */:
                                         throw new IllegalArgumentException("JSR/RET are not supported with computeFrames option");
-                                    case Opcodes.GETSTATIC /* 178 */:
+                                    case 178 /* 178 */:
                                         m3131(c2870, c2869.f9195);
                                         return;
-                                    case Opcodes.PUTSTATIC /* 179 */:
+                                    case 179 /* 179 */:
                                         m3129(c2869.f9195);
                                         return;
-                                    case Opcodes.GETFIELD /* 180 */:
+                                    case 180 /* 180 */:
                                         m3128(1);
                                         m3131(c2870, c2869.f9195);
                                         return;
-                                    case Opcodes.PUTFIELD /* 181 */:
+                                    case 181 /* 181 */:
                                         m3129(c2869.f9195);
                                         m3127();
                                         return;
-                                    case Opcodes.INVOKEVIRTUAL /* 182 */:
-                                    case Opcodes.INVOKESPECIAL /* 183 */:
-                                    case Opcodes.INVOKESTATIC /* 184 */:
-                                    case Opcodes.INVOKEINTERFACE /* 185 */:
+                                    case 182 /* 182 */:
+                                    case 183 /* 183 */:
+                                    case 184 /* 184 */:
+                                    case 185 /* 185 */:
                                         m3129(c2869.f9195);
                                         if (i != 184) {
                                             int iM31226 = m3127();
@@ -868,10 +868,10 @@ public final class C1412 {
                                         m3129(c2869.f9195);
                                         m3131(c2870, c2869.f9195);
                                         return;
-                                    case Opcodes.NEW /* 187 */:
+                                    case 187 /* 187 */:
                                         String str = c2869.f9195;
-                                        c2870.getClass();
-                                        int iHashCode = (str.hashCode() + Opcodes.LOR + i2) & Integer.MAX_VALUE;
+                                        
+                                        int iHashCode = (str.hashCode() + 129 + i2) & 2147483647;
                                         for (C2869 c2869M4875 = c2870.m4875(iHashCode); c2869M4875 != null; c2869M4875 = c2869M4875.f9199) {
                                             if (c2869M4875.f9192 == 129 && c2869M4875.f9198 == iHashCode && c2869M4875.f9196 == i2 && c2869M4875.f9195.equals(str)) {
                                                 iM4873 = c2869M4875.f9191;
@@ -882,7 +882,7 @@ public final class C1412 {
                                         iM4873 = c2870.m4873(new C2869(c2870.f9206, iHashCode, i2, str));
                                         m3130(iM4873 | 50331648);
                                         return;
-                                    case Opcodes.NEWARRAY /* 188 */:
+                                    case 188 /* 188 */:
                                         m3127();
                                         switch (i2) {
                                             case 4:
@@ -912,7 +912,7 @@ public final class C1412 {
                                             default:
                                                 throw new IllegalArgumentException();
                                         }
-                                    case Opcodes.ANEWARRAY /* 189 */:
+                                    case 189 /* 189 */:
                                         String str2 = c2869.f9195;
                                         m3127();
                                         if (str2.charAt(0) == '[') {
@@ -922,7 +922,7 @@ public final class C1412 {
                                             m3130(c2870.m4874(str2) | 301989888);
                                             return;
                                         }
-                                    case Opcodes.CHECKCAST /* 192 */:
+                                    case 192 /* 192 */:
                                         String str3 = c2869.f9195;
                                         m3127();
                                         if (str3.charAt(0) == '[') {
@@ -938,8 +938,8 @@ public final class C1412 {
                                                 m3128(i2);
                                                 m3131(c2870, c2869.f9195);
                                                 return;
-                                            case Opcodes.IFNULL /* 198 */:
-                                            case Opcodes.IFNONNULL /* 199 */:
+                                            case 198 /* 198 */:
+                                            case 199 /* 199 */:
                                                 break;
                                             default:
                                                 throw new IllegalArgumentException();
@@ -1079,7 +1079,7 @@ public final class C1412 {
         if (iM3121 != 0) {
             m3130(iM3121);
             if (iM3121 == 16777220 || iM3121 == 16777219) {
-                m3130(Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE);
+                m3130(16777216);
             }
         }
     }

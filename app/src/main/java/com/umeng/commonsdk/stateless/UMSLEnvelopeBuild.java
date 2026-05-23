@@ -30,13 +30,13 @@ public class UMSLEnvelopeBuild {
             public void run() {
                 try {
                     Looper.prepare();
-                    Toast.makeText(context.getApplicationContext(), UMLogCommon.SC_10015, 1).show();
+                    Toast.makeText(context.getApplicationContext(), "基础组件库9.3.x版本仅支持6.2.0及更高版本推送SDK、7.1.0及更高版本分享SDK。", 1).show();
                     Looper.loop();
                 } catch (Throwable unused) {
                 }
             }
         }.start();
-        Log.e("UMLog", UMLogCommon.SC_10015);
+        Log.e("UMLog", "基础组件库9.3.x版本仅支持6.2.0及更高版本推送SDK、7.1.0及更高版本分享SDK。");
         return null;
     }
 

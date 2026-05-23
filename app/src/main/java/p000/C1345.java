@@ -25,7 +25,7 @@ public final class C1345 extends AbstractC0592 {
     @Override // p000.AbstractC0592
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲀᤞᲇᲈ */
     public final void mo2019() {
-        int i = DialogXBaseRelativeLayout.f932;
+        int i = 0;
         this.f4816.f4826 = false;
     }
 
@@ -40,9 +40,9 @@ public final class C1345 extends AbstractC0592 {
     public final C3669 mo2021(C3669 c3669, List list) {
         Objects.toString(c3669);
         C1349 c1349 = this.f4816;
-        c1349.getClass();
-        int i = DialogXBaseRelativeLayout.f932;
-        c1349.getClass();
+        
+        int i = 0;
+        
         c1349.m3057(c3669, new C1348(this.f4815));
         return c3669;
     }

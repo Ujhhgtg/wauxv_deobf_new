@@ -82,7 +82,7 @@ public class ImLatent implements d {
     public void onImprintChanged(ImprintHandler.a aVar) {
         int iIntValue = Integer.valueOf(aVar.a("latent_hours", String.valueOf(360))).intValue();
         this.latentHour = ((long) (iIntValue > 36 ? iIntValue : 360)) * 3600000;
-        int iIntValue2 = Integer.valueOf(aVar.a(bv.aS, "0")).intValue();
+        int iIntValue2 = Integer.valueOf(aVar.a("latent", "0")).intValue();
         if (iIntValue2 < 1 || iIntValue2 > 1800) {
             iIntValue2 = 0;
         }

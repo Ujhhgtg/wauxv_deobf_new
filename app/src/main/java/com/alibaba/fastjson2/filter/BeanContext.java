@@ -75,6 +75,6 @@ public class BeanContext {
     }
 
     public boolean isJsonDirect() {
-        return (this.features & FieldInfo.RAW_VALUE_MASK) != 0;
+        return (this.features & 1125899906842624L) != 0;
     }
 }

@@ -15,8 +15,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
-import com.alibaba.fastjson2.JSONWriter;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
@@ -32,7 +31,6 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import me.hd.wauxv.R;
 import me.hd.wauxv.hook.core.p001native.AudioNative;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲈᲁᲇᤞᛸᲀ, reason: contains not printable characters */
@@ -89,7 +87,7 @@ public abstract class AbstractC1459 implements InterfaceC0974, InterfaceC0766 {
             ArrayList arrayList = c2377.f7632;
             int iM2211 = AbstractC0745.m2211(arrayList);
             if (-1 < iM2211) {
-                arrayList.get(iM2211).getClass();
+                
                 throw new ClassCastException();
             }
         }
@@ -204,7 +202,7 @@ public abstract class AbstractC1459 implements InterfaceC0974, InterfaceC0766 {
         if (!z) {
             i2 = iNumber;
         }
-        return ((long) i2) | (z ? JSONWriter.MASK_WRITE_ENUM_USING_ORDINAL : 0L) | (z2 ? JSONWriter.MASK_IGNORE_NON_FIELD_GETTER : 0L) | enumC2429Type.f7726;
+        return ((long) i2) | (z ? 68719476736L : 0L) | (z2 ? 4294967296L : 0L) | enumC2429Type.f7726;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
@@ -290,7 +288,7 @@ public abstract class AbstractC1459 implements InterfaceC0974, InterfaceC0766 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static ViewGroup m3185(View view) {
         View rootView = view.getRootView();
-        ViewGroup viewGroup = (ViewGroup) rootView.findViewById(android.R.id.content);
+        ViewGroup viewGroup = (ViewGroup) rootView.findViewById(16908290);
         if (viewGroup != null) {
             return viewGroup;
         }
@@ -364,7 +362,7 @@ public abstract class AbstractC1459 implements InterfaceC0974, InterfaceC0766 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ, reason: contains not printable characters */
     public static final boolean m3190(C1706 c1706, InterfaceC2654 interfaceC2654) {
-        c1706.f5799.getClass();
+        
         List annotations = interfaceC2654.getAnnotations();
         if (annotations != null && annotations.isEmpty()) {
             return false;
@@ -386,7 +384,7 @@ public abstract class AbstractC1459 implements InterfaceC0974, InterfaceC0766 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲇᲀᲈ, reason: contains not printable characters */
     public static final boolean m3192(long j) {
-        return (j & JSONWriter.MASK_WRITE_ENUM_USING_ORDINAL) != 0;
+        return (j & 68719476736L) != 0;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲀᲇ, reason: contains not printable characters */
@@ -397,7 +395,7 @@ public abstract class AbstractC1459 implements InterfaceC0974, InterfaceC0766 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᤞᲈᲇᲀ, reason: contains not printable characters */
     public static final void m3194(C1706 c1706, InterfaceC2654 interfaceC2654) {
         if (AbstractC2207.m4087(interfaceC2654.mo3472(), C2851.f9111)) {
-            c1706.f5799.getClass();
+            
         }
     }
 
@@ -413,7 +411,7 @@ public abstract class AbstractC1459 implements InterfaceC0974, InterfaceC0766 {
             return PorterDuff.Mode.SRC_ATOP;
         }
         switch (i) {
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return PorterDuff.Mode.MULTIPLY;
             case 15:
                 return PorterDuff.Mode.SCREEN;
@@ -598,7 +596,7 @@ public abstract class AbstractC1459 implements InterfaceC0974, InterfaceC0766 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public void m3204() {
-        throw new C1653(AbstractC2519.m4527(getClass()) + " can't retrieve untyped values");
+        throw new C1653(AbstractC2519.classToKClass(getClass()) + " can't retrieve untyped values");
     }
 
     @Override // p000.InterfaceC0766

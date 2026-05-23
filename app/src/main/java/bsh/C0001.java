@@ -83,7 +83,7 @@ public final class C0001 extends AbstractC2707 {
                 if (C0004.f472 == null) {
                     C0004.f472 = new C0004();
                 }
-                C0004.f472.getClass();
+                
                 try {
                     return AbstractC0009.m377(C0004.m317(str, c2000, null, cls, c0333, EnumC0703.f2678, c0550, runnableC1668), null, objArrM1434);
                 } catch (Exception e) {
@@ -105,7 +105,7 @@ public final class C0001 extends AbstractC2707 {
                         if (C0006.m328(nameSpace) != null && !AbstractC0009.m382(objM377.getClass()).m3864("static")) {
                             C0007 c0007M395 = AbstractC0009.m395(objM377);
                             c0007M395.f494 = nameSpace;
-                            if (nameSpace == null) {
+                            if (false) {
                                 c0007M395.m363();
                             }
                             return objM377;
@@ -145,7 +145,7 @@ public final class C0001 extends AbstractC2707 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public final Object m307(C0328 c0328, Class cls, C0550 c0550, RunnableC1668 runnableC1668) throws C1230, C2895 {
-        c0328.getClass();
+        
         RunnableC1668.m3389("array base type = ", cls);
         c0328.f1578 = cls;
         Object objMo306 = c0328.mo306(c0550, runnableC1668);

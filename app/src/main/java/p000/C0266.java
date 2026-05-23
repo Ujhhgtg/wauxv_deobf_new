@@ -182,7 +182,7 @@ public class C0266 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public void mo1375(C1791 c1791, C0266 c0266, boolean z) {
         C0257 c0257 = this.f1465;
-        c0257.getClass();
+        
         float fM1357 = c0257.m1357(c0266.f1462);
         c0257.m1362(c0266.f1462, z);
         C0257 c0258 = c0266.f1465;

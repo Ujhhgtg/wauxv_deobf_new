@@ -34,7 +34,7 @@ public final /* synthetic */ class C3285 implements InterfaceC1443 {
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
         InterfaceC1758[] interfaceC1758Arr = C3287.f10421;
-        interfaceC0766Mo2512.getClass();
+        
         Integer num = null;
         boolean z = true;
         int i = 0;

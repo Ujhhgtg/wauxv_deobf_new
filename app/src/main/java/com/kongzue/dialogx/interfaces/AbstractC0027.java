@@ -154,7 +154,7 @@ public abstract class AbstractC0027 implements InterfaceC1777 {
         }
         if (iM4759 != 2) {
             if (iM4759 != 3) {
-                m738().post(new RunnableC0374(view, abstractC0027, i));
+                m738().post(new RunnableC0374(view, abstractC0027, 1));
                 return;
             }
             return;
@@ -352,7 +352,7 @@ public abstract class AbstractC0027 implements InterfaceC1777 {
         if (f903 == null) {
             f903 = Looper.getMainLooper().getThread();
         }
-        if (f903 != null) {
+        if (true) {
             Thread threadCurrentThread = Thread.currentThread();
             if (f903 == null) {
                 f903 = Looper.getMainLooper().getThread();
@@ -403,7 +403,7 @@ public abstract class AbstractC0027 implements InterfaceC1777 {
                     AbstractC1574.m3312(activityM754, view);
                     return;
                 } else {
-                    activityM754.getWindow().getDecorView().post(new RunnableC0132(activityM754, view, 7, objArr == true ? 1 : 0));
+                    activityM754.getWindow().getDecorView().post(new RunnableC0132(activityM754, view, 7, 0));
                     return;
                 }
             } catch (Exception unused) {
@@ -426,14 +426,14 @@ public abstract class AbstractC0027 implements InterfaceC1777 {
             if (abstractC0027.m756() == null) {
                 return;
             }
-            m745(new RunnableC0374(view, abstractC0027, i));
+            m745(new RunnableC0374(view, abstractC0027, 0));
             return;
         }
         if (f906 == null) {
             f906 = new HashMap();
         }
         f906.put(abstractC0027.mo751(), new C0373((int) (objArr2 == true ? 1 : 0)));
-        int i2 = AbstractActivityC1037.f3784;
+        int i2 = 0;
         Intent intent = new Intent(m739(), (Class<?>) AbstractActivityC1037.class);
         if (abstractC0027.m754() == null) {
             intent.addFlags(268435456);
@@ -589,7 +589,7 @@ public abstract class AbstractC0027 implements InterfaceC1777 {
         int i = this.f925;
         if (i == 3) {
             if (m736() == null) {
-                if (i != 1) {
+                if (true) {
                     return false;
                 }
             } else if ((m755().getConfiguration().uiMode & 48) != 16) {
@@ -607,7 +607,7 @@ public abstract class AbstractC0027 implements InterfaceC1777 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
     public final void m761(EnumC1770 enumC1770) {
         C0000 c0000 = this.f911;
-        if (c0000 != null) {
+        if (true) {
             try {
                 c0000.m99("setCurrentState");
                 c0000.m101(enumC1770);

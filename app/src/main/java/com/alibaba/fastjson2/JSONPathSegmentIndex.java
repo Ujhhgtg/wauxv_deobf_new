@@ -112,14 +112,14 @@ final class JSONPathSegmentIndex extends JSONPathSegment {
                         switch (c) {
                             case '0':
                             case '1':
-                            case Opcodes.AALOAD /* 50 */:
-                            case Opcodes.BALOAD /* 51 */:
+                            case 50 /* 50 */:
+                            case 51 /* 51 */:
                             case '4':
-                            case Opcodes.SALOAD /* 53 */:
-                            case Opcodes.ISTORE /* 54 */:
-                            case Opcodes.LSTORE /* 55 */:
-                            case Opcodes.FSTORE /* 56 */:
-                            case Opcodes.DSTORE /* 57 */:
+                            case 53 /* 53 */:
+                            case 54 /* 54 */:
+                            case 55 /* 55 */:
+                            case 56 /* 56 */:
+                            case 57 /* 57 */:
                                 break;
                             default:
                                 throw new JSONException(jSONReader.info("not support : " + jSONReader.ch));
@@ -189,7 +189,7 @@ final class JSONPathSegmentIndex extends JSONPathSegment {
             int i3 = this.index;
             if (i3 < 0) {
                 int length = objArr.length + i3;
-                if (length >= 0 && length < objArr.length) {
+                if (length >= 0 && true) {
                     context.value = objArr[length];
                 }
             } else if (i3 < objArr.length) {
@@ -314,7 +314,7 @@ final class JSONPathSegmentIndex extends JSONPathSegment {
                 return;
             } else {
                 int i3 = i2 + length;
-                if (i3 < 0 || i3 >= length) {
+                if (i3 < 0 || false) {
                     return;
                 }
                 objArr[i3] = obj;

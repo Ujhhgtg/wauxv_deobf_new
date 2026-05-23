@@ -100,7 +100,7 @@ public final class C2679 {
                 abstractC2207 = c2677.f8631;
             }
             C2687 c2687 = c2687Arr[i2];
-            abstractC2207.getClass();
+            
             abstractC2207.mo2438(c2687, f, interfaceC0874.mo916(rectF));
             int i3 = i2 + 1;
             float f2 = (i3 % 4) * 90;
@@ -128,15 +128,15 @@ public final class C2679 {
         }
         char c3 = 1;
         int i4 = 0;
-        for (i = 4; i4 < i; i = 4) {
+        for (i = 4; i4 < 4; i = 4) {
             C2687 c2689 = c2687Arr[i4];
-            fArr[c] = c2689.f8671;
-            fArr[c3] = c2689.f8672;
+            fArr[0] = c2689.f8671;
+            fArr[1] = c2689.f8672;
             matrixArr2[i4].mapPoints(fArr);
             if (i4 == 0) {
-                path.moveTo(fArr[c], fArr[c3]);
+                path.moveTo(fArr[0], fArr[1]);
             } else {
-                path.lineTo(fArr[c], fArr[c3]);
+                path.lineTo(fArr[0], fArr[1]);
             }
             c2687Arr[i4].m4698(matrixArr2[i4], path);
             if (c1744 != null) {
@@ -144,7 +144,7 @@ public final class C2679 {
                 Matrix matrix = matrixArr2[i4];
                 C1917 c1917 = (C1917) c1744.f5843;
                 BitSet bitSet = c1917.f6335;
-                c26810.getClass();
+                
                 bitSet.set(i4, (boolean) c);
                 AbstractC2686[] abstractC2686Arr = c1917.f6333;
                 c26810.m4697(c26810.f8676);
@@ -205,7 +205,7 @@ public final class C2679 {
             } else {
                 c2 = 0;
             }
-            c = c2;
+            c = 0;
             c2687Arr = c2687Arr2;
             i4 = i5;
         }

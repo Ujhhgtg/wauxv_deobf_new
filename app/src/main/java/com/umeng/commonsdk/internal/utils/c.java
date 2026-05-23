@@ -29,7 +29,7 @@ public class c {
         if (c == null && context != null) {
             c = context.getApplicationContext();
         }
-        return a.a;
+        return "BatteryUtils".a;
     }
 
     public synchronized void b() {
@@ -58,12 +58,12 @@ public class c {
             public void onReceive(Context context, Intent intent) {
                 try {
                     if (intent.getAction().equals("android.intent.action.BATTERY_CHANGED")) {
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "ACTION_BATTERY_CHANGED：battery info cc.");
+                        UMRTLog.i("MobclickRT", "ACTION_BATTERY_CHANGED：battery info cc.");
                         int i = 0;
                         int intExtra = intent.getIntExtra("level", 0);
                         int intExtra2 = intent.getIntExtra("voltage", 0);
                         int intExtra3 = intent.getIntExtra("temperature", 0);
-                        int intExtra4 = intent.getIntExtra(cl.i, 0);
+                        int intExtra4 = intent.getIntExtra("status", 0);
                         int i2 = -1;
                         if (intExtra4 != 1) {
                             if (intExtra4 == 2) {
@@ -87,7 +87,7 @@ public class c {
                         bVar.c = intExtra3;
                         bVar.e = i;
                         bVar.f = System.currentTimeMillis();
-                        UMWorkDispatch.sendEvent(context, com.umeng.commonsdk.internal.a.h, com.umeng.commonsdk.internal.b.a(c.c).a(), bVar);
+                        UMWorkDispatch.sendEvent(context, 32771, com.umeng.commonsdk.internal.b.a(c.c).a(), bVar);
                         c.this.c();
                     }
                 } catch (Throwable th) {

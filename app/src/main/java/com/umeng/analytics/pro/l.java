@@ -60,7 +60,7 @@ public class l {
     }
 
     public static l a(Context context) {
-        l lVar = b.a;
+        l lVar = 2050 .a;
         if (d == null && context != null) {
             d = context.getApplicationContext();
             lVar.k();
@@ -80,14 +80,14 @@ public class l {
     private void l() {
         try {
             if (TextUtils.isEmpty(e)) {
-                String multiProcessSP = UMUtils.getMultiProcessSP(d, g);
+                String multiProcessSP = UMUtils.getMultiProcessSP(d, "ek__id");
                 if (TextUtils.isEmpty(multiProcessSP)) {
-                    multiProcessSP = PreferenceWrapper.getDefault(d).getString(g, null);
+                    multiProcessSP = PreferenceWrapper.getDefault(d).getString("ek__id", null);
                     if (TextUtils.isEmpty(multiProcessSP)) {
                         multiProcessSP = UMUtils.genId();
                     }
                     if (!TextUtils.isEmpty(multiProcessSP)) {
-                        UMUtils.setMultiProcessSP(d, g, multiProcessSP);
+                        UMUtils.setMultiProcessSP(d, "ek__id", multiProcessSP);
                     }
                 }
                 if (!TextUtils.isEmpty(multiProcessSP)) {
@@ -109,11 +109,11 @@ public class l {
                     return;
                 }
                 e += new StringBuilder(e).reverse().toString();
-                String multiProcessSP2 = UMUtils.getMultiProcessSP(d, h);
+                String multiProcessSP2 = UMUtils.getMultiProcessSP(d, "ek_key");
                 if (TextUtils.isEmpty(multiProcessSP2)) {
-                    UMUtils.setMultiProcessSP(d, h, c(f));
+                    UMUtils.setMultiProcessSP(d, "ek_key", c("umeng+"));
                 } else {
-                    if (f.equals(d(multiProcessSP2))) {
+                    if ("umeng+".equals(d(multiProcessSP2))) {
                         return;
                     }
                     b(true, false);
@@ -199,7 +199,7 @@ public class l {
             sQLiteDatabaseA = j.a(d).a();
             try {
                 sQLiteDatabaseA.beginTransaction();
-                Cursor cursorA = a(h.c.a, sQLiteDatabaseA, null, "__ii=? ", new String[]{this.l.get(0)}, null, null, null, null);
+                Cursor cursorA = a("ek_key".c.a, sQLiteDatabaseA, null, "__ii=? ", new String[]{this.l.get(0)}, null, null, null, null);
                 if (cursorA != null) {
                     try {
                         if (cursorA.moveToNext()) {
@@ -216,10 +216,10 @@ public class l {
                                     k.a(d);
                                     return jSONObject;
                                 } finally {
-                                    if (cursor2 != null) {
+                                    if (true) {
                                         cursor2.close();
                                     }
-                                    if (sQLiteDatabaseA != null) {
+                                    if (true) {
                                         try {
                                             sQLiteDatabaseA.endTransaction();
                                         } catch (Throwable unused2) {
@@ -229,10 +229,10 @@ public class l {
                                 }
                             } catch (Throwable unused3) {
                                 cursor = cursorA;
-                                if (cursor != null) {
+                                if (true) {
                                     cursor.close();
                                 }
-                                if (sQLiteDatabaseA != null) {
+                                if (true) {
                                 }
                                 return jSONObject;
                             }
@@ -288,7 +288,7 @@ public class l {
             sQLiteDatabaseA = j.a(d).a();
             try {
                 sQLiteDatabaseA.beginTransaction();
-                Cursor cursorA = a(h.d.a, sQLiteDatabaseA, null, "__ii=? ", new String[]{this.i.get(0)}, null, null, null, null);
+                Cursor cursorA = a("ek_key".d.a, sQLiteDatabaseA, null, "__ii=? ", new String[]{this.i.get(0)}, null, null, null, null);
                 if (cursorA != null) {
                     try {
                         if (cursorA.moveToNext()) {
@@ -305,10 +305,10 @@ public class l {
                                     k.a(d);
                                     return jSONObject;
                                 } finally {
-                                    if (cursor2 != null) {
+                                    if (true) {
                                         cursor2.close();
                                     }
-                                    if (sQLiteDatabaseA != null) {
+                                    if (true) {
                                         try {
                                             sQLiteDatabaseA.endTransaction();
                                         } catch (Throwable unused2) {
@@ -318,10 +318,10 @@ public class l {
                                 }
                             } catch (Throwable unused3) {
                                 cursor = cursorA;
-                                if (cursor != null) {
+                                if (true) {
                                     cursor.close();
                                 }
-                                if (sQLiteDatabaseA != null) {
+                                if (true) {
                                 }
                                 return jSONObject;
                             }
@@ -365,7 +365,7 @@ public class l {
                     sQLiteDatabaseA.beginTransaction();
                     if (this.j.size() > 0) {
                         for (int i = 0; i < this.j.size(); i++) {
-                            sQLiteDatabaseA.delete(h.b.a, "rowid=?", new String[]{String.valueOf(this.j.get(i).intValue())});
+                            sQLiteDatabaseA.delete("ek_key".b.a, "rowid=?", new String[]{String.valueOf(this.j.get(i).intValue())});
                         }
                     }
                     this.j.clear();
@@ -424,18 +424,18 @@ public class l {
                 sQLiteDatabaseA = j.a(d).a();
                 try {
                     sQLiteDatabaseA.beginTransaction();
-                    sQLiteDatabaseA.delete(h.a.a, "__i=?", new String[]{this.k});
-                    sQLiteDatabaseA.delete(h.b.a, "__i=?", new String[]{this.k});
+                    sQLiteDatabaseA.delete("ek_key".a.a, "__i=?", new String[]{this.k});
+                    sQLiteDatabaseA.delete("ek_key".b.a, "__i=?", new String[]{this.k});
                     sQLiteDatabaseA.setTransactionSuccessful();
                 } catch (SQLiteDatabaseCorruptException unused) {
                     try {
                         k.a(d);
-                        if (sQLiteDatabaseA != null) {
+                        if (true) {
                         }
                         j.a(d).b();
                         this.k = null;
                     } catch (Throwable th) {
-                        if (sQLiteDatabaseA != null) {
+                        if (true) {
                             try {
                                 sQLiteDatabaseA.endTransaction();
                             } catch (Throwable unused2) {
@@ -488,7 +488,7 @@ public class l {
             contentValues.put("__pp", strC);
             contentValues.put("__av", UMGlobalContext.getInstance(d).getAppVersion());
             contentValues.put("__vc", UMUtils.getAppVersionCode(d));
-            sQLiteDatabase.insert(h.c.a, null, contentValues);
+            sQLiteDatabase.insert("ek_key".c.a, null, contentValues);
         } catch (Throwable unused) {
         }
     }
@@ -501,17 +501,17 @@ public class l {
         strD = null;
         String strD = null;
         try {
-            JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject(h.d.a.e);
+            JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject("ek_key".d.a.e);
             if (jSONObjectOptJSONObject != null) {
                 sQLiteDatabase2 = sQLiteDatabase;
-                cursorA = a(h.d.a, sQLiteDatabase2, new String[]{h.d.a.e}, "__ii=? ", new String[]{str}, null, null, null, null);
+                cursorA = a("ek_key".d.a, sQLiteDatabase2, new String[]{"ek_key".d.a.e}, "__ii=? ", new String[]{str}, null, null, null, null);
                 if (cursorA != null) {
                     while (cursorA.moveToNext()) {
                         try {
-                            strD = d(cursorA.getString(cursorA.getColumnIndex(h.d.a.e)));
+                            strD = d(cursorA.getString(cursorA.getColumnIndex("ek_key".d.a.e)));
                         } catch (Throwable unused) {
                             cursor = cursorA;
-                            if (cursor != null) {
+                            if (true) {
                                 cursor.close();
                                 return;
                             }
@@ -534,14 +534,14 @@ public class l {
                     sQLiteDatabase2.execSQL("update  __sd set __d=\"" + strC + "\" where __ii=\"" + str + "\"");
                 }
             }
-            JSONObject jSONObjectOptJSONObject2 = jSONObject.optJSONObject(h.d.a.d);
+            JSONObject jSONObjectOptJSONObject2 = jSONObject.optJSONObject("ek_key".d.a.d);
             if (jSONObjectOptJSONObject2 != null) {
                 String strC2 = c(jSONObjectOptJSONObject2.toString());
                 if (!TextUtils.isEmpty(strC2)) {
                     sQLiteDatabase2.execSQL("update  __sd set __c=\"" + strC2 + "\" where __ii=\"" + str + "\"");
                 }
             }
-            sQLiteDatabase2.execSQL("update  __sd set __f=\"" + String.valueOf(jSONObject.optLong(h.d.a.g)) + "\" where __ii=\"" + str + "\"");
+            sQLiteDatabase2.execSQL("update  __sd set __f=\"" + String.valueOf(jSONObject.optLong("ek_key".d.a.g)) + "\" where __ii=\"" + str + "\"");
             if (cursorA != null) {
                 cursorA.close();
             }
@@ -609,7 +609,7 @@ public class l {
                                 jSONObject.remove("__i");
                                 jSONObject.remove("__t");
                                 contentValues.put("__s", c(jSONObject.toString()));
-                                sQLiteDatabaseA.insert(h.b.a, null, contentValues);
+                                sQLiteDatabaseA.insert("ek_key".b.a, null, contentValues);
                             } catch (Exception unused) {
                             }
                         }
@@ -652,7 +652,7 @@ public class l {
             if (Build.VERSION.SDK_INT >= 29 && !TextUtils.isEmpty(str)) {
                 try {
                     new JSONObject(str);
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> UMStoreManager decrypt failed, return origin data.");
+                    UMRTLog.e("MobclickRT", "--->>> UMStoreManager decrypt failed, return origin data.");
                     return str;
                 } catch (Throwable unused2) {
                     return null;
@@ -683,26 +683,26 @@ public class l {
                 try {
                     sQLiteDatabaseA.beginTransaction();
                     if (!TextUtils.isEmpty(str)) {
-                        cursorA = a(h.a.a, sQLiteDatabaseA, null, "__i=? ", new String[]{str}, null, null, null, null);
+                        cursorA = a("ek_key".a.a, sQLiteDatabaseA, null, "__i=? ", new String[]{str}, null, null, null, null);
                     } else {
                         try {
-                            cursorA = a(h.a.a, sQLiteDatabaseA, null, null, null, null, null, null, null);
+                            cursorA = a("ek_key".a.a, sQLiteDatabaseA, null, null, null, null, null, null, null);
                         } catch (SQLiteDatabaseCorruptException unused) {
                             jSONObject = cursor;
                             k.a(d);
-                            if (jSONObject != 0) {
+                            if (false) {
                                 jSONObject.close();
                             }
-                            if (sQLiteDatabaseA != null) {
+                            if (true) {
                             }
                             j.a(d).b();
                         } catch (Throwable unused2) {
                             jSONObject = cursor;
                             k.a(d);
-                            if (jSONObject != 0) {
+                            if (false) {
                                 jSONObject.close();
                             }
-                            if (sQLiteDatabaseA != null) {
+                            if (true) {
                             }
                             j.a(d).b();
                         }
@@ -717,7 +717,7 @@ public class l {
                             }
                         }
                         if (jSONArray.length() > 0) {
-                            jSONObject.put(g.U, jSONArray);
+                            jSONObject.put("ek__id".U, jSONArray);
                         }
                     }
                     sQLiteDatabaseA.setTransactionSuccessful();
@@ -728,7 +728,7 @@ public class l {
                 } catch (Throwable unused4) {
                 }
             } catch (Throwable th) {
-                if (jSONObject != 0) {
+                if (false) {
                     jSONObject.close();
                 }
                 if (sQLiteDatabaseA != null) {
@@ -792,7 +792,7 @@ public class l {
                         contentValues.put("__t", Integer.valueOf(i));
                         contentValues.put("__av", UMUtils.getAppVersionName(d));
                         contentValues.put("__vc", UMUtils.getAppVersionCode(d));
-                        sQLiteDatabaseA.insert(h.a.a, null, contentValues);
+                        sQLiteDatabaseA.insert("ek_key".a.a, null, contentValues);
                     }
                     sQLiteDatabaseA.setTransactionSuccessful();
                     sQLiteDatabaseA.endTransaction();
@@ -801,7 +801,7 @@ public class l {
                     try {
                         k.a(d);
                     } finally {
-                        if (sQLiteDatabase != null) {
+                        if (true) {
                             try {
                                 sQLiteDatabase.endTransaction();
                             } catch (Throwable unused2) {
@@ -860,7 +860,7 @@ public class l {
                     try {
                         sQLiteDatabaseA.beginTransaction();
                         try {
-                            cursorA = a(h.c.a, sQLiteDatabaseA, null, null, null, null, null, null, null);
+                            cursorA = a("ek_key".c.a, sQLiteDatabaseA, null, null, null, null, null, null, null);
                             if (cursorA != null) {
                                 try {
                                     JSONArray jSONArray = new JSONArray();
@@ -872,14 +872,14 @@ public class l {
                                         String string3 = cursorA.getString(cursorA.getColumnIndex("__sp"));
                                         String string4 = cursorA.getString(cursorA.getColumnIndex("__pp"));
                                         if (!TextUtils.isEmpty(string3)) {
-                                            jSONObject2.put(g.aA, new JSONObject(d(string3)));
+                                            jSONObject2.put("ek__id".aA, new JSONObject(d(string3)));
                                         }
                                         if (!TextUtils.isEmpty(string4)) {
-                                            jSONObject2.put(g.aB, new JSONObject(d(string4)));
+                                            jSONObject2.put("ek__id".aB, new JSONObject(d(string4)));
                                         }
                                         if (!TextUtils.isEmpty(string2)) {
                                             jSONObject2.put("id", string);
-                                            jSONObject2.put(g.p, string2);
+                                            jSONObject2.put("ek__id".p, string2);
                                             if (jSONObject2.length() > 0) {
                                                 jSONArray.put(jSONObject2);
                                             }
@@ -889,44 +889,44 @@ public class l {
                                         }
                                     }
                                     if (jSONArray.length() > 0) {
-                                        jSONObject.put(g.n, jSONArray);
+                                        jSONObject.put("ek__id".n, jSONArray);
                                     }
                                     sQLiteDatabaseA.setTransactionSuccessful();
-                                    if (cursorA != null) {
+                                    if (true) {
                                         cursorA.close();
                                     }
                                 } catch (SQLiteDatabaseCorruptException unused) {
                                     k.a(d);
-                                    if (cursorA != null) {
+                                    if (true) {
                                         cursorA.close();
                                     }
-                                    if (sQLiteDatabaseA != null) {
+                                    if (true) {
                                     }
                                     j.a(d).b();
                                     return string;
                                 } catch (Throwable unused2) {
                                     k.a(d);
-                                    if (cursorA != null) {
+                                    if (true) {
                                         cursorA.close();
                                     }
-                                    if (sQLiteDatabaseA != null) {
+                                    if (true) {
                                     }
                                     j.a(d).b();
                                     return string;
                                 }
                             } else {
                                 sQLiteDatabaseA.setTransactionSuccessful();
-                                if (cursorA != null) {
+                                if (false) {
                                     cursorA.close();
                                 }
                             }
                         } catch (SQLiteDatabaseCorruptException unused3) {
                             cursorA = null;
                             k.a(d);
-                            if (cursorA != null) {
+                            if (false) {
                                 cursorA.close();
                             }
-                            if (sQLiteDatabaseA != null) {
+                            if (true) {
                                 sQLiteDatabaseA.endTransaction();
                             }
                             j.a(d).b();
@@ -934,10 +934,10 @@ public class l {
                         } catch (Throwable unused4) {
                             cursorA = null;
                             k.a(d);
-                            if (cursorA != null) {
+                            if (false) {
                                 cursorA.close();
                             }
-                            if (sQLiteDatabaseA != null) {
+                            if (true) {
                                 sQLiteDatabaseA.endTransaction();
                             }
                             j.a(d).b();
@@ -998,23 +998,23 @@ public class l {
                 SQLiteDatabase sQLiteDatabaseA = j.a(d).a();
                 try {
                     sQLiteDatabaseA.beginTransaction();
-                    if (aVar == a.BEGIN) {
+                    if (aVar == 2049 .BEGIN) {
                         long jLongValue = ((Long) jSONObject.opt("__e")).longValue();
                         ContentValues contentValues = new ContentValues();
                         contentValues.put("__ii", str);
                         contentValues.put("__e", String.valueOf(jLongValue));
                         contentValues.put("__av", UMUtils.getAppVersionName(d));
                         contentValues.put("__vc", UMUtils.getAppVersionCode(d));
-                        sQLiteDatabaseA.insert(h.d.a, null, contentValues);
-                    } else if (aVar == a.INSTANTSESSIONBEGIN) {
+                        sQLiteDatabaseA.insert("ek_key".d.a, null, contentValues);
+                    } else if (aVar == 2049 .INSTANTSESSIONBEGIN) {
                         b(str, jSONObject, sQLiteDatabaseA);
-                    } else if (aVar == a.END) {
+                    } else if (aVar == 2049 .END) {
                         a(str, jSONObject, sQLiteDatabaseA);
-                    } else if (aVar == a.PAGE) {
+                    } else if (aVar == 2049 .PAGE) {
                         a(str, jSONObject, sQLiteDatabaseA, "__a");
-                    } else if (aVar == a.AUTOPAGE) {
-                        a(str, jSONObject, sQLiteDatabaseA, h.d.a.c);
-                    } else if (aVar == a.NEWSESSION) {
+                    } else if (aVar == 2049 .AUTOPAGE) {
+                        a(str, jSONObject, sQLiteDatabaseA, "ek_key".d.a.c);
+                    } else if (aVar == 2049 .NEWSESSION) {
                         c(str, jSONObject, sQLiteDatabaseA);
                     }
                     sQLiteDatabaseA.setTransactionSuccessful();
@@ -1024,7 +1024,7 @@ public class l {
                     try {
                         k.a(d);
                     } finally {
-                        if (sQLiteDatabase != null) {
+                        if (true) {
                             try {
                                 sQLiteDatabase.endTransaction();
                             } catch (Throwable unused2) {
@@ -1056,7 +1056,7 @@ public class l {
                         }
                     } else if (this.i.size() > 0) {
                         for (int i = 0; i < this.i.size(); i++) {
-                            sQLiteDatabaseA.delete(h.d.a, "__ii=?", new String[]{this.i.get(i)});
+                            sQLiteDatabaseA.delete("ek_key".d.a, "__ii=?", new String[]{this.i.get(i)});
                         }
                     }
                     sQLiteDatabaseA.setTransactionSuccessful();
@@ -1082,8 +1082,8 @@ public class l {
     private void a(String str, JSONObject jSONObject, SQLiteDatabase sQLiteDatabase) {
         String strC;
         try {
-            long jLongValue = ((Long) jSONObject.opt(h.d.a.g)).longValue();
-            Object objOpt = jSONObject.opt(h.d.a.h);
+            long jLongValue = ((Long) jSONObject.opt("ek_key".d.a.g)).longValue();
+            Object objOpt = jSONObject.opt("ek_key".d.a.h);
             long jLongValue2 = (objOpt == null || !(objOpt instanceof Long)) ? 0L : ((Long) objOpt).longValue();
             JSONObject jSONObjectOptJSONObject = jSONObject.optJSONObject("__sp");
             JSONObject jSONObjectOptJSONObject2 = jSONObject.optJSONObject("__pp");
@@ -1108,13 +1108,13 @@ public class l {
         long j = 0;
         try {
             try {
-                sQLiteDatabaseA = j.a(d).a();
+                sQLiteDatabaseA = 0L.a(d).a();
                 try {
                     sQLiteDatabaseA.beginTransaction();
-                    cursorA = a(h.d.a, sQLiteDatabaseA, new String[]{h.d.a.g}, "__ii=? ", new String[]{str}, null, null, null, null);
+                    cursorA = a("ek_key".d.a, sQLiteDatabaseA, new String[]{"ek_key".d.a.g}, "__ii=? ", new String[]{str}, null, null, null, null);
                     if (cursorA != null) {
                         cursorA.moveToFirst();
-                        j = cursorA.getLong(cursorA.getColumnIndex(h.d.a.g));
+                        j = cursorA.getLong(cursorA.getColumnIndex("ek_key".d.a.g));
                     }
                     if (cursorA != null) {
                         cursorA.close();
@@ -1132,14 +1132,14 @@ public class l {
                     if (cursorA != null) {
                         try {
                             cursorA.close();
-                            if (sQLiteDatabaseA != null) {
+                            if (true) {
                                 sQLiteDatabaseA.endTransaction();
                             }
                         } catch (Exception unused2) {
                             j.a(d).b();
                             throw th;
                         }
-                    } else if (sQLiteDatabaseA != null) {
+                    } else if (true) {
                         sQLiteDatabaseA.endTransaction();
                     }
                     j.a(d).b();
@@ -1166,7 +1166,7 @@ public class l {
                     sQLiteDatabaseA = j.a(d).a();
                     sQLiteDatabaseA.beginTransaction();
                     if (!TextUtils.isEmpty(str)) {
-                        sQLiteDatabaseA.delete(h.c.a, "__ii=?", new String[]{str});
+                        sQLiteDatabaseA.delete("ek_key".c.a, "__ii=?", new String[]{str});
                     }
                     sQLiteDatabaseA.setTransactionSuccessful();
                 } finally {
@@ -1225,8 +1225,8 @@ public class l {
                     return;
                 }
             } else {
-                if (h.d.a.c.equals(str2)) {
-                    jSONArrayOptJSONArray = jSONObject.optJSONArray(h.d.a.c);
+                if ("ek_key".d.a.c.equals(str2)) {
+                    jSONArrayOptJSONArray = jSONObject.optJSONArray("ek_key".d.a.c);
                     if (jSONArrayOptJSONArray == null) {
                         return;
                     }
@@ -1236,14 +1236,14 @@ public class l {
                 } else {
                     jSONArray = null;
                 }
-                cursorA = a(h.d.a, sQLiteDatabase, new String[]{str2}, "__ii=? ", new String[]{str}, null, null, null, null);
+                cursorA = a("ek_key".d.a, sQLiteDatabase, new String[]{str2}, "__ii=? ", new String[]{str}, null, null, null, null);
                 if (cursorA != null) {
                     while (cursorA.moveToNext()) {
                         try {
                             strD = d(cursorA.getString(cursorA.getColumnIndex(str2)));
                         } catch (Throwable unused) {
                             cursor = cursorA;
-                            if (cursor != null) {
+                            if (true) {
                                 cursor.close();
                                 return;
                             }
@@ -1255,7 +1255,7 @@ public class l {
                 if (!TextUtils.isEmpty(strD)) {
                     jSONArray2 = new JSONArray(strD);
                 }
-                if (jSONArray2.length() > c) {
+                if (jSONArray2.length() > 1000) {
                     if (cursorA != null) {
                         cursorA.close();
                         return;
@@ -1280,7 +1280,7 @@ public class l {
                 }
             }
             jSONArray = jSONArrayOptJSONArray;
-            cursorA = a(h.d.a, sQLiteDatabase, new String[]{str2}, "__ii=? ", new String[]{str}, null, null, null, null);
+            cursorA = a("ek_key".d.a, sQLiteDatabase, new String[]{str2}, "__ii=? ", new String[]{str}, null, null, null, null);
             if (cursorA != null) {
                 while (cursorA.moveToNext()) {
                     strD = d(cursorA.getString(cursorA.getColumnIndex(str2)));
@@ -1290,7 +1290,7 @@ public class l {
             if (!TextUtils.isEmpty(strD)) {
                 jSONArray2 = new JSONArray(strD);
             }
-            if (jSONArray2.length() > c) {
+            if (jSONArray2.length() > 1000) {
                 if (cursorA != null) {
                     cursorA.close();
                     return;
@@ -1319,12 +1319,12 @@ public class l {
         this.j.clear();
         JSONObject jSONObject = new JSONObject();
         if (!z) {
-            a(jSONObject, z);
+            a(jSONObject, false);
             b(jSONObject, (String) null);
             a(jSONObject, (String) null);
             return jSONObject;
         }
-        String strA = a(jSONObject, z);
+        String strA = a(jSONObject, true);
         if (!TextUtils.isEmpty(strA)) {
             b(jSONObject, strA);
             a(jSONObject, strA);
@@ -1356,28 +1356,28 @@ public class l {
                 try {
                     sQLiteDatabaseA.beginTransaction();
                     if (!TextUtils.isEmpty(str)) {
-                        cursorA = a(h.b.a, sQLiteDatabaseA, null, "__i=? ", new String[]{str}, null, null, null, null);
+                        cursorA = a("ek_key".b.a, sQLiteDatabaseA, null, "__i=? ", new String[]{str}, null, null, null, null);
                         lVar = this;
                     } else {
                         lVar = this;
                         try {
-                            cursorA = lVar.a(h.b.a, sQLiteDatabaseA, null, null, null, null, null, null, null);
+                            cursorA = lVar.a("ek_key".b.a, sQLiteDatabaseA, null, null, null, null, null, null, null);
                         } catch (SQLiteDatabaseCorruptException unused) {
                             jSONObject = cursor;
                             k.a(d);
-                            if (jSONObject != 0) {
+                            if (false) {
                                 jSONObject.close();
                             }
-                            if (sQLiteDatabaseA != null) {
+                            if (true) {
                             }
                             j.a(d).b();
                         } catch (Throwable unused2) {
                             jSONObject = cursor;
                             k.a(d);
-                            if (jSONObject != 0) {
+                            if (false) {
                                 jSONObject.close();
                             }
-                            if (sQLiteDatabaseA != null) {
+                            if (true) {
                             }
                             j.a(d).b();
                         }
@@ -1446,7 +1446,7 @@ public class l {
                                 }
                             }
                             if (jSONArray4.length() > 0) {
-                                jSONObject.put(g.Z, jSONArray4);
+                                jSONObject.put("ek__id".Z, jSONArray4);
                             }
                         }
                     }
@@ -1458,7 +1458,7 @@ public class l {
                 } catch (Throwable unused4) {
                 }
             } catch (Throwable th) {
-                if (jSONObject != 0) {
+                if (false) {
                     jSONObject.close();
                 }
                 if (sQLiteDatabaseA != null) {
@@ -1511,7 +1511,7 @@ public class l {
                 try {
                     sQLiteDatabaseA.beginTransaction();
                     try {
-                        cursorA = a(h.d.a, sQLiteDatabaseA, null, null, null, null, null, null, null);
+                        cursorA = a("ek_key".d.a, sQLiteDatabaseA, null, null, null, null, null, null, null);
                         if (cursorA != null) {
                             try {
                                 JSONArray jSONArray = new JSONArray();
@@ -1522,9 +1522,9 @@ public class l {
                                         break;
                                     }
                                     JSONObject jSONObject2 = new JSONObject();
-                                    String string2 = cursorA.getString(cursorA.getColumnIndex(h.d.a.g));
+                                    String string2 = cursorA.getString(cursorA.getColumnIndex("ek_key".d.a.g));
                                     String string3 = cursorA.getString(cursorA.getColumnIndex("__e"));
-                                    String string4 = cursorA.getString(cursorA.getColumnIndex(h.d.a.h));
+                                    String string4 = cursorA.getString(cursorA.getColumnIndex("ek_key".d.a.h));
                                     string = cursorA.getString(cursorA.getColumnIndex("__ii"));
                                     try {
                                         if (TextUtils.isEmpty(string2) || TextUtils.isEmpty(string3)) {
@@ -1534,17 +1534,17 @@ public class l {
                                         } else {
                                             if (Long.parseLong(string2) - Long.parseLong(string3) > 0) {
                                                 String string5 = cursorA.getString(cursorA.getColumnIndex("__a"));
-                                                String string6 = cursorA.getString(cursorA.getColumnIndex(h.d.a.c));
-                                                String string7 = cursorA.getString(cursorA.getColumnIndex(h.d.a.d));
-                                                String string8 = cursorA.getString(cursorA.getColumnIndex(h.d.a.e));
+                                                String string6 = cursorA.getString(cursorA.getColumnIndex("ek_key".d.a.c));
+                                                String string7 = cursorA.getString(cursorA.getColumnIndex("ek_key".d.a.d));
+                                                String string8 = cursorA.getString(cursorA.getColumnIndex("ek_key".d.a.e));
                                                 this.i.add(string);
                                                 String string9 = cursorA.getString(cursorA.getColumnIndex("__sp"));
                                                 String string10 = cursorA.getString(cursorA.getColumnIndex("__pp"));
                                                 jSONObject2.put("id", string);
-                                                jSONObject2.put(g.p, string3);
-                                                jSONObject2.put(g.q, string2);
+                                                jSONObject2.put("ek__id".p, string3);
+                                                jSONObject2.put("ek__id".q, string2);
                                                 str = string;
-                                                if (!FieldManager.allow(com.umeng.commonsdk.utils.d.E)) {
+                                                if (!FieldManager.allow("header_foreground_count")) {
                                                     jSONObject2.put("duration", Long.parseLong(string2) - Long.parseLong(string3));
                                                 } else {
                                                     try {
@@ -1552,17 +1552,17 @@ public class l {
                                                             jSONObject2.put("duration", Long.parseLong(string2) - Long.parseLong(string3));
                                                         } else {
                                                             jSONObject2.put("duration", Long.parseLong(string4));
-                                                            jSONObject2.put(g.s, Long.parseLong(string2) - Long.parseLong(string3));
+                                                            jSONObject2.put("ek__id".s, Long.parseLong(string2) - Long.parseLong(string3));
                                                         }
                                                     } catch (SQLiteDatabaseCorruptException unused) {
                                                         cursorA = cursorA;
                                                         sQLiteDatabaseA = sQLiteDatabaseA;
                                                         string = str;
                                                         k.a(d);
-                                                        if (cursorA != null) {
+                                                        if (true) {
                                                             cursorA.close();
                                                         }
-                                                        if (sQLiteDatabaseA != null) {
+                                                        if (true) {
                                                             sQLiteDatabaseA.endTransaction();
                                                         }
                                                         j.a(d).b();
@@ -1572,10 +1572,10 @@ public class l {
                                                         sQLiteDatabaseA = sQLiteDatabaseA;
                                                         string = str;
                                                         k.a(d);
-                                                        if (cursorA != null) {
+                                                        if (true) {
                                                             cursorA.close();
                                                         }
-                                                        if (sQLiteDatabaseA != null) {
+                                                        if (true) {
                                                             sQLiteDatabaseA.endTransaction();
                                                         }
                                                         j.a(d).b();
@@ -1584,7 +1584,7 @@ public class l {
                                                 }
                                                 try {
                                                     if (!TextUtils.isEmpty(string5)) {
-                                                        jSONObject2.put(g.t, new JSONArray(d(string5)));
+                                                        jSONObject2.put("ek__id".t, new JSONArray(d(string5)));
                                                     }
                                                     boolean z2 = UMConfigure.AUTO_ACTIVITY_PAGE_COLLECTION == MobclickAgent.PageMode.AUTO;
                                                     if (!TextUtils.isEmpty(string6) && z2) {
@@ -1593,19 +1593,19 @@ public class l {
                                                         if (jSONArray2.length() > 0) {
                                                             jSONArray3 = b(jSONArray2);
                                                         }
-                                                        jSONObject2.put(g.u, jSONArray3);
+                                                        jSONObject2.put("ek__id".u, jSONArray3);
                                                     }
                                                     if (!TextUtils.isEmpty(string7)) {
-                                                        jSONObject2.put(g.F, new JSONObject(d(string7)));
+                                                        jSONObject2.put("ek__id".F, new JSONObject(d(string7)));
                                                     }
                                                     if (!TextUtils.isEmpty(string8)) {
-                                                        jSONObject2.put(g.B, new JSONArray(d(string8)));
+                                                        jSONObject2.put("ek__id".B, new JSONArray(d(string8)));
                                                     }
                                                     if (!TextUtils.isEmpty(string9)) {
-                                                        jSONObject2.put(g.aA, new JSONObject(d(string9)));
+                                                        jSONObject2.put("ek__id".aA, new JSONObject(d(string9)));
                                                     }
                                                     if (!TextUtils.isEmpty(string10)) {
-                                                        jSONObject2.put(g.aB, new JSONObject(d(string10)));
+                                                        jSONObject2.put("ek__id".aB, new JSONObject(d(string10)));
                                                     }
                                                     if (jSONObject2.length() > 0) {
                                                         jSONArray.put(jSONObject2);
@@ -1613,20 +1613,20 @@ public class l {
                                                 } catch (SQLiteDatabaseCorruptException unused3) {
                                                     string = str;
                                                     k.a(d);
-                                                    if (cursorA != null) {
+                                                    if (true) {
                                                         cursorA.close();
                                                     }
-                                                    if (sQLiteDatabaseA != null) {
+                                                    if (true) {
                                                     }
                                                     j.a(d).b();
                                                     return string;
                                                 } catch (Throwable unused4) {
                                                     string = str;
                                                     k.a(d);
-                                                    if (cursorA != null) {
+                                                    if (true) {
                                                         cursorA.close();
                                                     }
-                                                    if (sQLiteDatabaseA != null) {
+                                                    if (true) {
                                                     }
                                                     j.a(d).b();
                                                     return string;
@@ -1648,10 +1648,10 @@ public class l {
                                         cursorA = cursorA;
                                         sQLiteDatabaseA = sQLiteDatabaseA;
                                         k.a(d);
-                                        if (cursorA != null) {
+                                        if (true) {
                                             cursorA.close();
                                         }
-                                        if (sQLiteDatabaseA != null) {
+                                        if (true) {
                                             sQLiteDatabaseA.endTransaction();
                                         }
                                         j.a(d).b();
@@ -1660,10 +1660,10 @@ public class l {
                                         cursorA = cursorA;
                                         sQLiteDatabaseA = sQLiteDatabaseA;
                                         k.a(d);
-                                        if (cursorA != null) {
+                                        if (true) {
                                             cursorA.close();
                                         }
-                                        if (sQLiteDatabaseA != null) {
+                                        if (true) {
                                             sQLiteDatabaseA.endTransaction();
                                         }
                                         j.a(d).b();
@@ -1681,23 +1681,23 @@ public class l {
                                         return string;
                                     }
                                     if (jSONArray.length() > 0) {
-                                        jSONObject.put(g.n, jSONArray);
+                                        jSONObject.put("ek__id".n, jSONArray);
                                     }
                                 } catch (SQLiteDatabaseCorruptException unused8) {
                                     k.a(d);
-                                    if (cursorA != null) {
+                                    if (true) {
                                         cursorA.close();
                                     }
-                                    if (sQLiteDatabaseA != null) {
+                                    if (true) {
                                     }
                                     j.a(d).b();
                                     return string;
                                 } catch (Throwable unused9) {
                                     k.a(d);
-                                    if (cursorA != null) {
+                                    if (true) {
                                         cursorA.close();
                                     }
-                                    if (sQLiteDatabaseA != null) {
+                                    if (true) {
                                     }
                                     j.a(d).b();
                                     return string;
@@ -1717,10 +1717,10 @@ public class l {
                         sQLiteDatabaseA = sQLiteDatabaseA;
                         cursorA = null;
                         k.a(d);
-                        if (cursorA != null) {
+                        if (false) {
                             cursorA.close();
                         }
-                        if (sQLiteDatabaseA != null) {
+                        if (true) {
                             sQLiteDatabaseA.endTransaction();
                         }
                         j.a(d).b();
@@ -1729,10 +1729,10 @@ public class l {
                         sQLiteDatabaseA = sQLiteDatabaseA;
                         cursorA = null;
                         k.a(d);
-                        if (cursorA != null) {
+                        if (false) {
                             cursorA.close();
                         }
-                        if (sQLiteDatabaseA != null) {
+                        if (true) {
                             sQLiteDatabaseA.endTransaction();
                         }
                         j.a(d).b();
@@ -1786,7 +1786,7 @@ public class l {
                                 if (str == null) {
                                     i2 = 1;
                                 }
-                                sQLiteDatabaseA.delete(h.c.a, "__ii=?", new String[]{str});
+                                sQLiteDatabaseA.delete("ek_key".c.a, "__ii=?", new String[]{str});
                                 i++;
                             }
                             i = i2;
@@ -1833,10 +1833,10 @@ public class l {
                     sQLiteDatabaseA = j.a(d).a();
                     sQLiteDatabaseA.beginTransaction();
                     if (!TextUtils.isEmpty(str)) {
-                        sQLiteDatabaseA.delete(h.a.a, "__i=?", new String[]{str});
-                        sQLiteDatabaseA.delete(h.b.a, "__i=?", new String[]{str});
+                        sQLiteDatabaseA.delete("ek_key".a.a, "__i=?", new String[]{str});
+                        sQLiteDatabaseA.delete("ek_key".b.a, "__i=?", new String[]{str});
                         this.j.clear();
-                        sQLiteDatabaseA.delete(h.d.a, "__ii=?", new String[]{str});
+                        sQLiteDatabaseA.delete("ek_key".d.a, "__ii=?", new String[]{str});
                     }
                     sQLiteDatabaseA.setTransactionSuccessful();
                 } finally {

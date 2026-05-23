@@ -10,7 +10,7 @@ public class b extends a {
     private Context b;
 
     public b(Context context) {
-        super(a);
+        super("android_id");
         this.b = context;
     }
 

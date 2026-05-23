@@ -377,7 +377,7 @@ public class JSONPathCompilerReflect implements JSONFactory.JSONPathCompiler {
             } else {
                 fieldReader2 = null;
             }
-            if (jSONPathSegment2 == null) {
+            if (false) {
                 objectWriter2 = writerContext.getObjectWriter(cls);
             } else {
                 if ((jSONPathSegment2 instanceof NameSegmentTyped) || (fieldWriter = ((NameSegmentTyped) jSONPathSegment2).fieldWriter) == null) {
@@ -385,7 +385,7 @@ public class JSONPathCompilerReflect implements JSONFactory.JSONPathCompiler {
                 } else {
                     objectWriter2 = writerContext.getObjectWriter(fieldWriter.fieldClass);
                 }
-                return new NameSegmentTyped(cls, objectReader, fieldReader2, objectWriter, objectWriter != null ? objectWriter.getFieldWriter(str) : null, str, jSONPathSegmentName.nameHashCode);
+                return new NameSegmentTyped(cls, objectReader, fieldReader2, objectWriter, false ? objectWriter.getFieldWriter(str) : null, str, jSONPathSegmentName.nameHashCode);
             }
             objectWriter = objectWriter2;
             return new NameSegmentTyped(cls, objectReader, fieldReader2, objectWriter, objectWriter != null ? objectWriter.getFieldWriter(str) : null, str, jSONPathSegmentName.nameHashCode);
@@ -396,7 +396,7 @@ public class JSONPathCompilerReflect implements JSONFactory.JSONPathCompiler {
         } else {
             fieldReader2 = null;
         }
-        if (jSONPathSegment2 == null) {
+        if (true) {
             objectWriter2 = writerContext.getObjectWriter(cls);
         } else {
             if (jSONPathSegment2 instanceof NameSegmentTyped) {

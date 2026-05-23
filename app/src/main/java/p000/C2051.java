@@ -47,7 +47,6 @@ public final class C2051 extends AbstractC2867 implements InterfaceC1578 {
         int color2;
         view.setPadding(32, 20, 32, 20);
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-        "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams";
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
         marginLayoutParams.leftMargin = 16;
         marginLayoutParams.rightMargin = 16;
@@ -77,7 +76,7 @@ public final class C2051 extends AbstractC2867 implements InterfaceC1578 {
         if (mo3264()) {
             int type = msgInfoBean.getType();
             if (type == EnumC3673.f11469.f11492 || type == EnumC3673.f11479.f11492 || type == EnumC3673.f11487.f11492 || type == EnumC3673.f11488.f11492) {
-                C2090.f6898.getClass();
+                
                 View viewFindViewById = view.findViewById(C2090.m3885());
                 if (viewFindViewById != null) {
                     m3881(viewFindViewById, msgInfoBean.isSend());
@@ -87,8 +86,8 @@ public final class C2051 extends AbstractC2867 implements InterfaceC1578 {
             }
             if (type != EnumC3673.f11471.f11492) {
                 if (type == EnumC3673.f11477.f11492) {
-                    C2090.f6898.getClass();
-                    C1565.f5440.getClass();
+                    
+                    
                     View viewFindViewById2 = view.findViewById(C1565.m3280() ? C2089.f6897.m2538() : AbstractC0968.m2475(C2090.m3890()));
                     if (viewFindViewById2 != null) {
                         m3881(viewFindViewById2, msgInfoBean.isSend());
@@ -98,19 +97,19 @@ public final class C2051 extends AbstractC2867 implements InterfaceC1578 {
                 }
                 return;
             }
-            C2090.f6898.getClass();
+            
             C1565 c1565 = C1565.f5440;
-            c1565.getClass();
+            
             View viewFindViewById3 = view.findViewById(C1565.m3280() ? C2086.f6894.m2538() : AbstractC0968.m2475(C2090.m3887()));
             if (viewFindViewById3 != null) {
                 m3881(viewFindViewById3, msgInfoBean.isSend());
             }
-            c1565.getClass();
+            
             View viewFindViewById4 = view.findViewById(C1565.m3280() ? C2087.f6895.m2538() : AbstractC0968.m2475(C2090.m3888()));
             if (viewFindViewById4 != null) {
                 m3881(viewFindViewById4, msgInfoBean.isSend());
             }
-            c1565.getClass();
+            
             View viewFindViewById5 = view.findViewById(C1565.m3280() ? C2088.f6896.m2538() : AbstractC0968.m2475(C2090.m3890()));
             if (viewFindViewById5 != null) {
                 m3881(viewFindViewById5, msgInfoBean.isSend());

@@ -39,7 +39,7 @@ public class TagHelper {
             try {
                 try {
                     if (moduleTags.size() >= 30) {
-                        Log.e("UMLog", UMLogCommon.SC_10023);
+                        Log.e("UMLog", "传入key-value键值对个数已达30个，setModuleTag调用无效。");
                     } else {
                         if (!moduleTags.containsKey(str)) {
                             moduleTags.put(str, str2);

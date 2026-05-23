@@ -28,7 +28,7 @@ public final class C2336 implements InterfaceC2335 {
     public static final long[] f7505 = {0, -1, -1, -1};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲀᲁ, reason: contains not printable characters */
-    public static final long[] f7506 = {-1, -1, WebSocketProtocol.PAYLOAD_SHORT_MAX, 0};
+    public static final long[] f7506 = {-1, -1, 65535L, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲈᲁᲀ, reason: contains not printable characters */
     public static final long[] f7507 = {-1, -1, 0, 0};
@@ -67,7 +67,7 @@ public final class C2336 implements InterfaceC2335 {
     public final int[] f7518 = new int[75];
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
-    public final int[] f7519 = new int[Opcodes.FCMPG];
+    public final int[] f7519 = new int[150];
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int f7520;
@@ -132,7 +132,7 @@ public final class C2336 implements InterfaceC2335 {
                     cM3436 = c1697.m3436();
                 }
                 this.f7520 = cM3436;
-                this.f7516 = Integer.MAX_VALUE;
+                this.f7516 = 2147483647;
                 this.f7515 = 0;
                 if (cM3436 == '\t') {
                     iM4324 = m4324(0, 2, 0);
@@ -146,17 +146,17 @@ public final class C2336 implements InterfaceC2335 {
                     iM4324 = m4324(0, 1, 0);
                 } else if (cM3436 == '!') {
                     this.f7516 = 92;
-                    iM4324 = m4315(0L, JSONWriter.MASK_BROWSER_SECURE, 0L);
+                    iM4324 = m4315(0L, 34359738368L, 0L);
                 } else if (cM3436 == '%') {
-                    this.f7516 = Opcodes.INEG;
+                    this.f7516 = 116;
                     iM4324 = m4315(0L, 0L, 256L);
                 } else if (cM3436 == '&') {
-                    this.f7516 = UMErrorCode.E_UM_BE_JSON_FAILED;
-                    iM4324 = m4315(0L, JSONWriter.MASK_UNQUOTE_FIELD_NAME, 4L);
+                    this.f7516 = 110;
+                    iM4324 = m4315(0L, 274877906944L, 4L);
                 } else if (cM3436 == ']') {
                     iM4324 = m4326(0, 83);
                 } else if (cM3436 == '^') {
-                    this.f7516 = UMErrorCode.E_UM_BE_FILE_OVERSIZE;
+                    this.f7516 = 114;
                     iM4324 = m4315(0L, 0L, 64L);
                 } else if (cM3436 == 'v') {
                     iM4324 = m4315(3458764513820540928L, 0L, 0L);
@@ -179,8 +179,8 @@ public final class C2336 implements InterfaceC2335 {
                             iM4324 = m4326(0, 79);
                             break;
                         case '*':
-                            this.f7516 = Opcodes.IDIV;
-                            iM4324 = m4315(0L, FieldInfo.JIT, 1025L);
+                            this.f7516 = 108;
+                            iM4324 = m4315(0L, 18014398509481984L, 1025L);
                             break;
                         case '+':
                             this.f7516 = 106;
@@ -193,24 +193,24 @@ public final class C2336 implements InterfaceC2335 {
                             this.f7516 = 107;
                             iM4324 = m4315(0L, -9223369837831520256L, 262144L);
                             break;
-                        case Opcodes.IALOAD /* 46 */:
+                        case 46 /* 46 */:
                             this.f7516 = 86;
-                            iM4324 = m4315(0L, 0L, JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY);
+                            iM4324 = m4315(0L, 0L, 67108864L);
                             break;
                         case '/':
-                            this.f7516 = Opcodes.LDIV;
+                            this.f7516 = 109;
                             iM4324 = m4315(0L, 0L, 2L);
                             break;
                         default:
                             switch (cM3436) {
-                                case Opcodes.LSHR /* 123 */:
+                                case 123 /* 123 */:
                                     iM4324 = m4326(0, 80);
                                     break;
-                                case Opcodes.IUSHR /* 124 */:
+                                case 124 /* 124 */:
                                     this.f7516 = 112;
-                                    iM4324 = m4315(0L, JSONWriter.MASK_WRITE_ENUM_USING_ORDINAL, 16L);
+                                    iM4324 = m4315(0L, 68719476736L, 16L);
                                     break;
-                                case Opcodes.LUSHR /* 125 */:
+                                case 125 /* 125 */:
                                     iM4324 = m4326(0, 81);
                                     break;
                                 case '~':
@@ -218,9 +218,9 @@ public final class C2336 implements InterfaceC2335 {
                                     break;
                                 default:
                                     switch (cM3436) {
-                                        case Opcodes.ASTORE /* 58 */:
-                                            this.f7516 = Opcodes.DCMPG;
-                                            iM4324 = m4315(0L, 0L, JSONWriter.MASK_WRITE_NULL_BOOLEAN_AS_FALSE);
+                                        case 58 /* 58 */:
+                                            this.f7516 = 152;
+                                            iM4324 = m4315(0L, 0L, 33554432L);
                                             break;
                                         case ';':
                                             iM4324 = m4326(0, 84);
@@ -231,14 +231,14 @@ public final class C2336 implements InterfaceC2335 {
                                             break;
                                         case '=':
                                             this.f7516 = 87;
-                                            iM4324 = m4315(0L, JSONWriter.MASK_ESCAPE_NONE_ASCII, 0L);
+                                            iM4324 = m4315(0L, 1073741824L, 0L);
                                             break;
                                         case '>':
                                             this.f7516 = 88;
                                             iM4324 = m4315(0L, 1441151889348493312L, 81920L);
                                             break;
                                         case '?':
-                                            this.f7516 = Opcodes.DCMPL;
+                                            this.f7516 = 151;
                                             iM4324 = m4315(0L, 0L, 141557760L);
                                             break;
                                         case '@':
@@ -246,7 +246,7 @@ public final class C2336 implements InterfaceC2335 {
                                             break;
                                         default:
                                             switch (cM3436) {
-                                                case Opcodes.LADD /* 97 */:
+                                                case 97 /* 97 */:
                                                     iM4324 = m4315(274877908992L, 0L, 0L);
                                                     break;
                                                 case 'b':
@@ -256,7 +256,7 @@ public final class C2336 implements InterfaceC2335 {
                                                     iM4324 = m4315(2048000L, 0L, 0L);
                                                     break;
                                                 case 'd':
-                                                    iM4324 = m4315(14680064L, 0L, JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN);
+                                                    iM4324 = m4315(14680064L, 0L, 268435456L);
                                                     break;
                                                 case 'e':
                                                     iM4324 = m4315(117440512L, 0L, 0L);
@@ -265,17 +265,17 @@ public final class C2336 implements InterfaceC2335 {
                                                     iM4324 = m4315(4160749568L, 0L, 0L);
                                                     break;
                                                 case 'g':
-                                                    iM4324 = m4315(JSONWriter.MASK_IGNORE_NON_FIELD_GETTER, 0L, 0L);
+                                                    iM4324 = m4315(4294967296L, 0L, 0L);
                                                     break;
                                                 default:
                                                     switch (cM3436) {
-                                                        case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
-                                                            iM4324 = m4315(FieldInfo.UNWRAPPED_MASK, 0L, 0L);
+                                                        case 114 /* 114 */:
+                                                            iM4324 = m4315(562949953421312L, 0L, 0L);
                                                             break;
                                                         case 's':
                                                             iM4324 = m4315(34902897112121344L, 0L, 0L);
                                                             break;
-                                                        case Opcodes.INEG /* 116 */:
+                                                        case 116 /* 116 */:
                                                             iM4324 = m4315(1116892707587883008L, 0L, 0L);
                                                             break;
                                                         default:
@@ -293,7 +293,7 @@ public final class C2336 implements InterfaceC2335 {
                 } else {
                     iM4324 = m4315(527765581332480L, 0L, 0L);
                 }
-                if (this.f7516 == Integer.MAX_VALUE) {
+                if (this.f7516 == 2147483647) {
                     C1697 c1698 = this.f7517;
                     int[] iArr = c1698.f5776;
                     int i5 = c1698.f5771;
@@ -488,21 +488,21 @@ public final class C2336 implements InterfaceC2335 {
         int[] iArr = this.f7519;
         iArr[0] = i;
         int i7 = 1;
-        int i8 = Integer.MAX_VALUE;
+        int i8 = 2147483647;
         int i9 = i2;
         int i10 = 0;
         int i11 = 1;
-        int i12 = Integer.MAX_VALUE;
+        int i12 = 2147483647;
         while (true) {
-            int i13 = this.f7514 + i7;
+            int i13 = this.f7514 + 1;
             this.f7514 = i13;
-            if (i13 == i8) {
+            if (i13 == 2147483647) {
                 this.f7514 = -2147483647;
                 int i14 = 75;
                 while (true) {
                     int i15 = i14 - 1;
                     if (i14 > 0) {
-                        this.f7518[i15] = Integer.MIN_VALUE;
+                        this.f7518[i15] = -2147483648;
                         i14 = i15;
                     }
                 }
@@ -514,12 +514,12 @@ public final class C2336 implements InterfaceC2335 {
                 if (i16 < 128) {
                     long j = 1 << (i16 & 63);
                     do {
-                        i11--;
-                        switch (iArr[i11]) {
+                        1--;
+                        switch (iArr[0]) {
                             case 1:
                             case 42:
                                 if ((j & 576460745995190270L) != 0) {
-                                    if (i12 > 75) {
+                                    if (true) {
                                         i12 = 75;
                                     }
                                     m4301(42);
@@ -536,7 +536,7 @@ public final class C2336 implements InterfaceC2335 {
                                 break;
                             case 15:
                                 if (this.f7520 == 95) {
-                                    if (i12 > 64) {
+                                    if (true) {
                                         i12 = 64;
                                     }
                                     m4303(15, 16);
@@ -545,8 +545,8 @@ public final class C2336 implements InterfaceC2335 {
                             case 16:
                                 if ((j & 38441125539254784L) != 0) {
                                     i5 = 64;
-                                    if (i12 > 64) {
-                                        i12 = i5;
+                                    if (true) {
+                                        i12 = 64;
                                     }
                                 }
                                 break;
@@ -555,24 +555,24 @@ public final class C2336 implements InterfaceC2335 {
                                     m4300(43, 44);
                                 }
                                 break;
-                            case Opcodes.LLOAD /* 22 */:
+                            case 22 /* 22 */:
                                 if ((j & 36029140624736336L) != 0) {
                                     i5 = 69;
-                                    if (i12 > 69) {
-                                        i12 = i5;
+                                    if (true) {
+                                        i12 = 69;
                                     }
                                 }
                                 break;
-                            case Opcodes.DLOAD /* 24 */:
+                            case 24 /* 24 */:
                                 if ((j & (-268435457)) != 0) {
                                     m4302(15, 17);
                                 }
                                 break;
-                            case Opcodes.ALOAD /* 25 */:
+                            case 25 /* 25 */:
                                 if (this.f7520 == 92) {
-                                    int i19 = this.f7513;
-                                    this.f7513 = i19 + 1;
-                                    iArr[i19] = 26;
+                                    int i19 = 75;
+                                    this.f7513 = 76;
+                                    iArr[75] = 26;
                                 }
                                 break;
                             case 26:
@@ -585,9 +585,9 @@ public final class C2336 implements InterfaceC2335 {
                                 break;
                             case 30:
                                 if (this.f7520 == 92) {
-                                    int i20 = this.f7513;
-                                    this.f7513 = i20 + 1;
-                                    iArr[i20] = 31;
+                                    int i20 = 75;
+                                    this.f7513 = 76;
+                                    iArr[75] = 31;
                                 }
                                 break;
                             case 31:
@@ -601,46 +601,46 @@ public final class C2336 implements InterfaceC2335 {
                                     m4300(45, 46);
                                 }
                                 break;
-                            case Opcodes.BALOAD /* 51 */:
+                            case 51 /* 51 */:
                                 if ((j & 137438953504L) != 0) {
                                     m4300(47, 48);
                                 }
                                 break;
-                            case Opcodes.LSTORE /* 55 */:
-                                if ((j & 343597383760L) != 0 && i12 > 69) {
+                            case 55 /* 55 */:
+                                if ((j & 343597383760L) != 0 && true) {
                                     i12 = 69;
                                 }
                                 break;
-                            case Opcodes.DSTORE /* 57 */:
+                            case 57 /* 57 */:
                                 if ((j & 72057594054705152L) != 0) {
                                     m4301(58);
                                 }
                                 break;
-                            case Opcodes.ASTORE /* 58 */:
+                            case 58 /* 58 */:
                                 if ((j & 543313363070L) != 0) {
-                                    int i21 = i12 > 64 ? 64 : i12;
+                                    int i21 = 64;
                                     m4303(58, 16);
-                                    i12 = i21;
+                                    i12 = 64;
                                 }
                                 break;
                             case 59:
                                 if ((j & 17179869188L) != 0) {
-                                    i6 = i12 > 64 ? 64 : i12;
+                                    i6 = 64;
                                     m4302(37, 39);
-                                    i12 = i6;
+                                    i12 = 64;
                                 }
                                 break;
                             case 60:
                                 if (this.f7520 == 95) {
-                                    i6 = i12 > 64 ? 64 : i12;
+                                    i6 = 64;
                                     m4302(37, 39);
-                                    i12 = i6;
+                                    i12 = 64;
                                 }
                                 break;
                             case 65:
-                                i5 = i12 > 8 ? 8 : i12;
+                                i5 = 8;
                                 m4300(4, 6);
-                                i12 = i5;
+                                i12 = 8;
                                 break;
                             case 70:
                                 m4303(70, 71);
@@ -652,7 +652,7 @@ public final class C2336 implements InterfaceC2335 {
                             default:
                                 break;
                         }
-                    } while (i11 != i10);
+                    } while (false);
                 } else {
                     int i22 = i16 >> 8;
                     int i23 = i16 >> 14;
@@ -681,19 +681,19 @@ public final class C2336 implements InterfaceC2335 {
                                                     if (i25 != 75) {
                                                         if (i25 == 41 || i25 == 42) {
                                                             if (m4298(i22, i23, i24, j2, j3)) {
-                                                                int i26 = i12 > 75 ? 75 : i12;
+                                                                int i26 = 75;
                                                                 m4301(42);
-                                                                i12 = i26;
+                                                                i12 = 75;
                                                             }
-                                                        } else if ((i25 == 72 || i25 == i17) && m4297(i22, i23, i24, j2, j3)) {
-                                                            m4303(i17, 71);
+                                                        } else if ((i25 == 72 || i25 == 73) && m4297(i22, i23, i24, j2, j3)) {
+                                                            m4303(73, 71);
                                                         }
                                                     }
                                                 } else if (m4297(i22, i23, i24, j2, j3)) {
                                                     m4303(70, 71);
                                                 }
                                             } else if (m4297(i22, i23, i24, j2, j3)) {
-                                                if (i12 > 8) {
+                                                if (true) {
                                                     i12 = 8;
                                                 }
                                                 m4300(4, 6);
@@ -710,7 +710,7 @@ public final class C2336 implements InterfaceC2335 {
                                 }
                             } else {
                                 if (i22 == 0 && (f7501[i24] & j3) != 0) {
-                                    if (i12 > 6) {
+                                    if (true) {
                                         i12 = 6;
                                     }
                                     m4301(0);
@@ -732,14 +732,14 @@ public final class C2336 implements InterfaceC2335 {
                             i3 = 1;
                             c = 'K';
                             if (i22 == 0 && (f7501[i24] & j3) != 0) {
-                                if (i12 > 6) {
+                                if (true) {
                                     i12 = 6;
                                 }
                                 m4301(0);
                             }
                         }
-                        if (i11 == i10) {
-                            i4 = Integer.MAX_VALUE;
+                        if (true) {
+                            i4 = 2147483647;
                         } else {
                             i17 = 73;
                         }
@@ -752,9 +752,9 @@ public final class C2336 implements InterfaceC2335 {
                 }
                 i9++;
                 i11 = this.f7513;
-                this.f7513 = i10;
-                i10 = 75 - i10;
-                if (i11 == i10) {
+                this.f7513 = 0;
+                i10 = 75;
+                if (i11 == 75) {
                     try {
                         this.f7520 = this.f7517.m3436();
                         i7 = i3;
@@ -771,7 +771,7 @@ public final class C2336 implements InterfaceC2335 {
                 switch (iArr[i11]) {
                     case 0:
                         if ((j4 & 8589934591L) != 0) {
-                            if (i12 > 6) {
+                            if (true) {
                                 i12 = 6;
                             }
                             m4301(0);
@@ -779,7 +779,7 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 1:
                         if ((j4 & 8589934591L) != 0) {
-                            if (i12 > 6) {
+                            if (true) {
                                 i12 = 6;
                             }
                             m4301(0);
@@ -790,22 +790,22 @@ public final class C2336 implements InterfaceC2335 {
                             if (i29 == 47) {
                                 m4300(13, 14);
                             } else if (i29 == 36) {
-                                if (i12 > 75) {
+                                if (true) {
                                     i12 = 75;
                                 }
                                 m4301(42);
                             } else if (i29 == 34) {
-                                int i30 = this.f7513;
-                                this.f7513 = i30 + 1;
-                                iArr[i30] = 39;
+                                int i30 = 75;
+                                this.f7513 = 76;
+                                iArr[75] = 39;
                             } else if (i29 == 39) {
                                 m4302(15, 17);
                             } else if (i29 == 46) {
                                 m4301(18);
                             } else if (i29 == 35) {
-                                int i31 = this.f7513;
-                                this.f7513 = i31 + 1;
-                                iArr[i31] = 8;
+                                int i31 = 75;
+                                this.f7513 = 76;
+                                iArr[75] = 8;
                             } else if (i29 == 60) {
                                 m4302(0, 3);
                             }
@@ -821,7 +821,7 @@ public final class C2336 implements InterfaceC2335 {
                                 m4302(22, 24);
                             }
                         } else {
-                            int i33 = i12 > 64 ? 64 : i12;
+                            int i33 = i12 > 64 ? 64 : 6;
                             m4303(15, 16);
                             i12 = i33;
                         }
@@ -838,9 +838,9 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 4:
                         if (this.f7520 == 38) {
-                            int i34 = this.f7513;
-                            this.f7513 = i34 + 1;
-                            iArr[i34] = 3;
+                            int i34 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 3;
                         }
                         break;
                     case 5:
@@ -850,14 +850,14 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 6:
                         if (this.f7520 == 62) {
-                            int i35 = this.f7513;
-                            this.f7513 = i35 + 1;
-                            iArr[i35] = 5;
+                            int i35 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 5;
                         }
                         break;
                     case 7:
                         if (this.f7520 == 62) {
-                            if (i12 > 7) {
+                            if (true) {
                                 i12 = 7;
                             }
                             m4301(7);
@@ -874,35 +874,35 @@ public final class C2336 implements InterfaceC2335 {
                         }
                         break;
                     case 10:
-                        if ((j4 & 9216) != 0 && i12 > 9) {
+                        if ((j4 & 9216) != 0 && true) {
                             i12 = 9;
                         }
                         break;
                     case 11:
                         if (this.f7520 == 10) {
                             i28 = 9;
-                            if (i12 > 9) {
-                                i12 = i28;
+                            if (true) {
+                                i12 = 9;
                             }
                         }
                         break;
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                         if (this.f7520 == 13) {
-                            int i36 = this.f7513;
-                            this.f7513 = i36 + 1;
-                            iArr[i36] = 11;
+                            int i36 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 11;
                         }
                         break;
                     case 13:
                         if (this.f7520 == 35) {
-                            int i37 = this.f7513;
-                            this.f7513 = i37 + 1;
-                            iArr[i37] = 8;
+                            int i37 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 8;
                         }
                         break;
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                         if ((j4 & 287667426198290432L) != 0) {
-                            if (i12 > 64) {
+                            if (true) {
                                 i12 = 64;
                             }
                             m4303(15, 16);
@@ -910,20 +910,20 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 15:
                         if ((j4 & 287948901175001088L) != 0) {
-                            if (i12 > 64) {
+                            if (true) {
                                 i12 = 64;
                             }
                             m4303(15, 16);
                         }
                         break;
-                    case Opcodes.SIPUSH /* 17 */:
+                    case 17 /* 17 */:
                         if (this.f7520 == 46) {
                             m4301(18);
                         }
                         break;
-                    case Opcodes.LDC /* 18 */:
+                    case 18 /* 18 */:
                         if ((j4 & 287948901175001088L) != 0) {
-                            if (i12 > 69) {
+                            if (true) {
                                 i12 = 69;
                             }
                             m4302(28, 30);
@@ -934,20 +934,20 @@ public final class C2336 implements InterfaceC2335 {
                             m4301(21);
                         }
                         break;
-                    case Opcodes.ILOAD /* 21 */:
+                    case 21 /* 21 */:
                         if ((j4 & 287948901175001088L) != 0) {
-                            if (i12 > 69) {
+                            if (true) {
                                 i12 = 69;
                             }
                             m4303(21, 22);
                         }
                         break;
-                    case Opcodes.FLOAD /* 23 */:
+                    case 23 /* 23 */:
                         if (this.f7520 == 39) {
                             m4302(15, 17);
                         }
                         break;
-                    case Opcodes.DLOAD /* 24 */:
+                    case 24 /* 24 */:
                         if ((j4 & (-549755823105L)) != 0) {
                             m4302(15, 17);
                         }
@@ -956,9 +956,9 @@ public final class C2336 implements InterfaceC2335 {
                         m4302(15, 17);
                         break;
                     case 27:
-                        if (this.f7520 == 39 && i12 > 72) {
+                        if (this.f7520 == 39 && true) {
                             i28 = 72;
-                            i12 = i28;
+                            i12 = 72;
                         }
                         break;
                     case 28:
@@ -975,7 +975,7 @@ public final class C2336 implements InterfaceC2335 {
                         m4302(22, 24);
                         break;
                     case 32:
-                        if (this.f7520 == 34 && i12 > 73) {
+                        if (this.f7520 == 34 && true) {
                             i12 = 73;
                         }
                         break;
@@ -987,46 +987,46 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 34:
                         if ((j4 & (-17179869185L)) != 0) {
-                            m4302(31, i18);
+                            m4302(31, 33);
                         }
                         break;
                     case 36:
-                        if (this.f7520 == 34 && i12 > 74) {
+                        if (this.f7520 == 34 && true) {
                             i28 = 74;
-                            i12 = i28;
+                            i12 = 74;
                         }
                         break;
                     case 37:
                         if (this.f7520 == 34) {
-                            int i38 = this.f7513;
-                            this.f7513 = i38 + 1;
-                            iArr[i38] = 36;
+                            int i38 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 36;
                         }
                         break;
                     case 38:
                         if (this.f7520 == 34) {
-                            int i39 = this.f7513;
-                            this.f7513 = i39 + 1;
-                            iArr[i39] = 37;
+                            int i39 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 37;
                         }
                         break;
                     case 39:
                         if (this.f7520 == 34) {
-                            int i40 = this.f7513;
-                            this.f7513 = i40 + 1;
-                            iArr[i40] = i18;
+                            int i40 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 33;
                         }
                         break;
                     case 40:
                         if (this.f7520 == 34) {
-                            int i41 = this.f7513;
-                            this.f7513 = i41 + 1;
-                            iArr[i41] = 39;
+                            int i41 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 39;
                         }
                         break;
                     case 41:
                         if (this.f7520 == 36) {
-                            if (i12 > 75) {
+                            if (true) {
                                 i12 = 75;
                             }
                             m4301(42);
@@ -1034,9 +1034,9 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 42:
                         if ((j4 & 287948969894477824L) != 0) {
-                            int i42 = i12 > 75 ? 75 : i12;
+                            int i42 = 75;
                             m4301(42);
-                            i12 = i42;
+                            i12 = 75;
                         }
                         break;
                     case 43:
@@ -1051,17 +1051,17 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 45:
                         if (this.f7520 == 46) {
-                            if (i12 > 69) {
+                            if (true) {
                                 i12 = 69;
                             }
                             m4302(34, 36);
                         }
                         break;
-                    case Opcodes.IALOAD /* 46 */:
+                    case 46 /* 46 */:
                         if ((j4 & 287948901175001088L) != 0) {
-                            int i43 = i12 > 69 ? 69 : i12;
+                            int i43 = 69;
                             m4302(34, 36);
-                            i12 = i43;
+                            i12 = 69;
                         }
                         break;
                     case 48:
@@ -1071,13 +1071,13 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 49:
                         if ((j4 & 287948901175001088L) != 0) {
-                            if (i12 > 69) {
+                            if (true) {
                                 i12 = 69;
                             }
                             m4303(49, 22);
                         }
                         break;
-                    case Opcodes.AALOAD /* 50 */:
+                    case 50 /* 50 */:
                         if ((j4 & 287948901175001088L) != 0) {
                             m4303(50, 51);
                         }
@@ -1087,30 +1087,30 @@ public final class C2336 implements InterfaceC2335 {
                             m4301(53);
                         }
                         break;
-                    case Opcodes.SALOAD /* 53 */:
+                    case 53 /* 53 */:
                         if ((j4 & 287948901175001088L) != 0) {
-                            if (i12 > 69) {
+                            if (true) {
                                 i12 = 69;
                             }
                             m4303(53, 22);
                         }
                         break;
-                    case Opcodes.ISTORE /* 54 */:
+                    case 54 /* 54 */:
                         if ((j4 & 287948901175001088L) != 0) {
                             m4303(54, 55);
                         }
                         break;
-                    case Opcodes.FSTORE /* 56 */:
+                    case 56 /* 56 */:
                         if (this.f7520 == 48) {
-                            if (i12 > 64) {
+                            if (true) {
                                 i12 = 64;
                             }
                             m4302(18, 21);
                         }
                         break;
-                    case Opcodes.ASTORE /* 58 */:
+                    case 58 /* 58 */:
                         if ((j4 & 287948901175001088L) != 0) {
-                            if (i12 > 64) {
+                            if (true) {
                                 i12 = 64;
                             }
                             m4303(58, 16);
@@ -1118,7 +1118,7 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 60:
                         if ((j4 & 844424930131968L) != 0) {
-                            if (i12 > 64) {
+                            if (true) {
                                 i12 = 64;
                             }
                             m4302(37, 39);
@@ -1126,7 +1126,7 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 61:
                         if ((j4 & 844424930131968L) != 0) {
-                            if (i12 > 64) {
+                            if (true) {
                                 i12 = 64;
                             }
                             m4301(16);
@@ -1134,7 +1134,7 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 62:
                         if ((j4 & 71776119061217280L) != 0) {
-                            if (i12 > 64) {
+                            if (true) {
                                 i12 = 64;
                             }
                             m4303(62, 16);
@@ -1150,7 +1150,7 @@ public final class C2336 implements InterfaceC2335 {
                         if (i44 == 42) {
                             m4303(70, 71);
                         } else if (i44 == 47) {
-                            if (i12 > 8) {
+                            if (true) {
                                 i12 = 8;
                             }
                             m4302(4, 6);
@@ -1158,7 +1158,7 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 65:
                         if ((j4 & (-9217)) != 0) {
-                            if (i12 > 8) {
+                            if (true) {
                                 i12 = 8;
                             }
                             m4302(4, 6);
@@ -1166,23 +1166,23 @@ public final class C2336 implements InterfaceC2335 {
                         break;
                     case 66:
                         i28 = 8;
-                        if ((j4 & 9216) != 0 && i12 > 8) {
-                            i12 = i28;
+                        if ((j4 & 9216) != 0 && true) {
+                            i12 = 8;
                         }
                         break;
                     case 67:
                         if (this.f7520 == 10) {
                             i28 = 8;
-                            if (i12 > 8) {
-                                i12 = i28;
+                            if (true) {
+                                i12 = 8;
                             }
                         }
                         break;
                     case 68:
                         if (this.f7520 == 13) {
-                            int i45 = this.f7513;
-                            this.f7513 = i45 + 1;
-                            iArr[i45] = 67;
+                            int i45 = 75;
+                            this.f7513 = 76;
+                            iArr[75] = 67;
                         }
                         break;
                     case 69:
@@ -1211,8 +1211,8 @@ public final class C2336 implements InterfaceC2335 {
                         }
                         break;
                     case 74:
-                        if (this.f7520 == 47 && i12 > 10) {
-                            i12 = i28;
+                        if (this.f7520 == 47 && true) {
+                            i12 = 10;
                         }
                         break;
                     case 75:
@@ -1221,14 +1221,14 @@ public final class C2336 implements InterfaceC2335 {
                         } else {
                             int i46 = this.f7520;
                             if (i46 == 62) {
-                                if (i12 > 7) {
+                                if (true) {
                                     i12 = 7;
                                 }
                                 m4301(7);
                             } else if (i46 == 38) {
-                                int i47 = this.f7513;
-                                this.f7513 = i47 + 1;
-                                iArr[i47] = 3;
+                                int i47 = 75;
+                                this.f7513 = 76;
+                                iArr[75] = 3;
                             }
                         }
                         if (this.f7520 == 62) {
@@ -1238,11 +1238,11 @@ public final class C2336 implements InterfaceC2335 {
                         }
                         break;
                 }
-                if (i11 != i10) {
+                if (false) {
                     i18 = 33;
                 }
             }
-            i4 = Integer.MAX_VALUE;
+            i4 = 2147483647;
             i3 = 1;
             c = 'K';
             if (i12 != i4) {
@@ -1275,38 +1275,38 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             if (cM3436 == 'e') {
-                return m4307(j7, FieldInfo.JIT, j8, 0L, j9, 0L);
+                return m4307(j7, 18014398509481984L, j8, 0L, j9, 0L);
             }
             if (cM3436 == 'f') {
-                return m4307(j7, 0L, j8, FieldInfo.DISABLE_AUTO_TYPE, j9, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+                return m4307(j7, 0L, j8, 576460752303423488L, j9, 32768L);
             }
             if (cM3436 == 'i') {
-                return m4307(j7, 0L, j8, FieldInfo.BACKR_REFERENCE, j9, JSONWriter.MASK_REFERENCE_DETECTION);
+                return m4307(j7, 0L, j8, 2305843009213693952L, j9, 131072L);
             }
             if (cM3436 != 'r') {
                 if (cM3436 == 't') {
-                    if ((FieldInfo.DISABLE_REFERENCE_DETECT & j8) != 0) {
+                    if ((144115188075855872L & j8) != 0) {
                         this.f7516 = 121;
                         this.f7515 = 10;
                     }
-                    return m4307(j7, 0L, j8, 0L, j9, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                    return m4307(j7, 0L, j8, 0L, j9, 8192L);
                 }
                 if (cM3436 == 'n') {
                     if ((8 & j9) != 0) {
-                        return m4326(10, Opcodes.LXOR);
+                        return m4326(10, 131);
                     }
                     if ((128 & j9) != 0) {
-                        return m4326(10, Opcodes.I2D);
+                        return m4326(10, 135);
                     }
                     if ((512 & j9) != 0) {
                         return m4326(10, 137);
                     }
-                    return (JSONWriter.MASK_NOT_WRITE_HASHMAP_ARRAY_LIST_CLASS_NAME & j9) != 0 ? m4326(10, Opcodes.F2I) : m4307(j7, 0L, j8, 140737488355328L, j9, 0L);
+                    return (2048L & j9) != 0 ? m4326(10, 139) : m4307(j7, 0L, j8, 140737488355328L, j9, 0L);
                 }
                 if (cM3436 == 'o') {
-                    return m4307(j7, 0L, j8, FieldInfo.READ_USING_MASK, j9, 0L);
+                    return m4307(j7, 0L, j8, 2251799813685248L, j9, 0L);
                 }
-            } else if ((FieldInfo.UNWRAPPED_MASK & j8) != 0) {
+            } else if ((562949953421312L & j8) != 0) {
                 return m4326(10, 113);
             }
             return m4325(j7, j8, j9, 9);
@@ -1328,29 +1328,29 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             if (cM3436 == '_') {
-                return m4308(j7, j8, 0L, j9, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                return m4308(j7, j8, 0L, j9, 8192L);
             }
             if (cM3436 != 'd') {
                 if (cM3436 == 'g') {
-                    return m4308(j7, j8, FieldInfo.BACKR_REFERENCE, j9, JSONWriter.MASK_REFERENCE_DETECTION);
+                    return m4308(j7, j8, 2305843009213693952L, j9, 131072L);
                 }
                 if (cM3436 != 'r') {
                     if (cM3436 == 't') {
-                        if ((FieldInfo.DISABLE_AUTO_TYPE & j8) != 0) {
-                            this.f7516 = Opcodes.LSHR;
+                        if ((576460752303423488L & j8) != 0) {
+                            this.f7516 = 123;
                             this.f7515 = 11;
                         }
-                        return m4308(j7, j8, 0L, j9, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+                        return m4308(j7, j8, 0L, j9, 32768L);
                     }
-                } else if ((FieldInfo.READ_USING_MASK & j8) != 0) {
+                } else if ((2251799813685248L & j8) != 0) {
                     return m4326(11, 115);
                 }
             } else {
-                if ((FieldInfo.JIT & j7) != 0) {
+                if ((18014398509481984L & j7) != 0) {
                     return m4324(11, 54, 42);
                 }
                 if ((140737488355328L & j8) != 0) {
-                    return m4326(11, UMErrorCode.E_UM_BE_CREATE_FAILED);
+                    return m4326(11, 111);
                 }
             }
             return m4325(j7, j8, j9, 10);
@@ -1371,12 +1371,12 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             if (cM3436 == '_') {
-                return m4309(j6, 0L, j7, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+                return m4309(j6, 0L, j7, 32768L);
             }
             if (cM3436 != 'a') {
-                return cM3436 != 'n' ? m4325(0L, j6, j7, 11) : m4309(j6, FieldInfo.BACKR_REFERENCE, j7, JSONWriter.MASK_REFERENCE_DETECTION);
+                return cM3436 != 'n' ? m4325(0L, j6, j7, 11) : m4309(j6, 2305843009213693952L, j7, 131072L);
             }
-            return m4309(j6, 0L, j7, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+            return m4309(j6, 0L, j7, 8192L);
         } catch (IOException unused) {
             m4327(0L, j6, j7, 11);
             return 12;
@@ -1394,12 +1394,12 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             if (cM3436 == 'a') {
-                return m4310(j5, 0L, j6, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+                return m4310(j5, 0L, j6, 32768L);
             }
             if (cM3436 != 'e') {
-                return cM3436 != 's' ? m4325(0L, j5, j6, 12) : m4310(j5, 0L, j6, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                return cM3436 != 's' ? m4325(0L, j5, j6, 12) : m4310(j5, 0L, j6, 8192L);
             }
-            return m4310(j5, FieldInfo.BACKR_REFERENCE, j6, JSONWriter.MASK_REFERENCE_DETECTION);
+            return m4310(j5, 2305843009213693952L, j6, 131072L);
         } catch (IOException unused) {
             m4327(0L, j5, j6, 12);
             return 13;
@@ -1419,7 +1419,7 @@ public final class C2336 implements InterfaceC2335 {
             if (cM3436 != 'd') {
                 return cM3436 != 's' ? m4325(0L, j5, j6, 13) : m4311(j5, 0L, j6, 40960L);
             }
-            return m4311(j5, FieldInfo.BACKR_REFERENCE, j6, JSONWriter.MASK_REFERENCE_DETECTION);
+            return m4311(j5, 2305843009213693952L, j6, 131072L);
         } catch (IOException unused) {
             m4327(0L, j5, j6, 13);
             return 14;
@@ -1437,12 +1437,12 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             if (cM3436 == '_') {
-                return m4312(j5, FieldInfo.BACKR_REFERENCE, j6, JSONWriter.MASK_REFERENCE_DETECTION);
+                return m4312(j5, 2305843009213693952L, j6, 131072L);
             }
             if (cM3436 != 'i') {
-                return cM3436 != 's' ? m4325(0L, j5, j6, 14) : m4312(j5, 0L, j6, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+                return cM3436 != 's' ? m4325(0L, j5, j6, 14) : m4312(j5, 0L, j6, 32768L);
             }
-            return m4312(j5, 0L, j6, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+            return m4312(j5, 0L, j6, 8192L);
         } catch (IOException unused) {
             m4327(0L, j5, j6, 14);
             return 15;
@@ -1460,12 +1460,12 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             if (cM3436 == 'g') {
-                return m4313(j5, 0L, j6, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                return m4313(j5, 0L, j6, 8192L);
             }
             if (cM3436 != 'i') {
-                return cM3436 != 's' ? m4325(0L, j5, j6, 15) : m4313(j5, FieldInfo.BACKR_REFERENCE, j6, JSONWriter.MASK_REFERENCE_DETECTION);
+                return cM3436 != 's' ? m4325(0L, j5, j6, 15) : m4313(j5, 2305843009213693952L, j6, 131072L);
             }
-            return m4313(j5, 0L, j6, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+            return m4313(j5, 0L, j6, 32768L);
         } catch (IOException unused) {
             m4327(0L, j5, j6, 15);
             return 16;
@@ -1483,12 +1483,12 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             if (cM3436 == 'g') {
-                return m4314(j5, 0L, j6, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+                return m4314(j5, 0L, j6, 32768L);
             }
             if (cM3436 != 'h') {
-                return (cM3436 == 'n' && (JSONWriter.MASK_WRITE_ENUMS_USING_NAME & j6) != 0) ? m4326(17, 141) : m4325(0L, j5, j6, 16);
+                return (cM3436 == 'n' && (8192L & j6) != 0) ? m4326(17, 141) : m4325(0L, j5, j6, 16);
             }
-            return m4314(j5, FieldInfo.BACKR_REFERENCE, j6, JSONWriter.MASK_REFERENCE_DETECTION);
+            return m4314(j5, 2305843009213693952L, j6, 131072L);
         } catch (IOException unused) {
             m4327(0L, j5, j6, 16);
             return 17;
@@ -1507,10 +1507,10 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             if (cM3436 != 'i') {
-                return (cM3436 == 'n' && (JSONWriter.MASK_IGNORE_ERROR_GETTER & j6) != 0) ? m4326(18, Opcodes.D2L) : m4325(0L, j5, j6, 17);
+                return (cM3436 == 'n' && (32768L & j6) != 0) ? m4326(18, 143) : m4325(0L, j5, j6, 17);
             }
-            long j7 = FieldInfo.BACKR_REFERENCE & j5;
-            long j8 = JSONWriter.MASK_REFERENCE_DETECTION & j6;
+            long j7 = 2305843009213693952L & j5;
+            long j8 = 131072L & j6;
             if ((j7 | j8) == 0) {
                 return m4325(0L, j5, j6, 17);
             }
@@ -1520,8 +1520,8 @@ public final class C2336 implements InterfaceC2335 {
                 if (cM3437 != 'f') {
                     return m4325(0L, j7, j8, 18);
                 }
-                long j9 = j5 & FieldInfo.BACKR_REFERENCE;
-                long j10 = j6 & JSONWriter.MASK_REFERENCE_DETECTION;
+                long j9 = j5 & 2305843009213693952L;
+                long j10 = j6 & 131072L;
                 if ((j9 | j10) == 0) {
                     return m4325(0L, j7, j8, 18);
                 }
@@ -1532,97 +1532,97 @@ public final class C2336 implements InterfaceC2335 {
                         return m4325(0L, j9, j10, 19);
                     }
                     if (j9 != 0) {
-                        this.f7516 = Opcodes.LUSHR;
+                        this.f7516 = 125;
                         this.f7515 = 20;
                     }
                     if (j10 == 0) {
-                        return m4325(0L, j9, j10, 19);
+                        return m4325(0L, j9, 0L, 19);
                     }
                     try {
                         char cM3439 = this.f7517.m3436();
                         this.f7520 = cM3439;
                         if (cM3439 != '_') {
-                            return m4325(0L, 0L, j10, 20);
+                            return m4325(0L, 0L, 131072L, 20);
                         }
-                        if (j10 == 0) {
+                        if (false) {
                             return m4325(0L, 0L, j10, 20);
                         }
                         try {
                             char cM34310 = this.f7517.m3436();
                             this.f7520 = cM34310;
                             if (cM34310 != 'a') {
-                                return m4325(0L, 0L, j10, 21);
+                                return m4325(0L, 0L, 131072L, 21);
                             }
-                            if (j10 == 0) {
+                            if (false) {
                                 return m4325(0L, 0L, j10, 21);
                             }
                             try {
                                 char cM34311 = this.f7517.m3436();
                                 this.f7520 = cM34311;
                                 if (cM34311 != 's') {
-                                    return m4325(0L, 0L, j10, 22);
+                                    return m4325(0L, 0L, 131072L, 22);
                                 }
-                                if (j10 == 0) {
+                                if (false) {
                                     return m4325(0L, 0L, j10, 22);
                                 }
                                 try {
                                     char cM34312 = this.f7517.m3436();
                                     this.f7520 = cM34312;
                                     if (cM34312 != 's') {
-                                        return m4325(0L, 0L, j10, 23);
+                                        return m4325(0L, 0L, 131072L, 23);
                                     }
-                                    if (j10 == 0) {
+                                    if (false) {
                                         return m4325(0L, 0L, j10, 23);
                                     }
                                     try {
                                         char cM34313 = this.f7517.m3436();
                                         this.f7520 = cM34313;
                                         if (cM34313 != 'i') {
-                                            return m4325(0L, 0L, j10, 24);
+                                            return m4325(0L, 0L, 131072L, 24);
                                         }
-                                        if (j10 == 0) {
+                                        if (false) {
                                             return m4325(0L, 0L, j10, 24);
                                         }
                                         try {
                                             char cM34314 = this.f7517.m3436();
                                             this.f7520 = cM34314;
                                             if (cM34314 != 'g') {
-                                                return m4325(0L, 0L, j10, 25);
+                                                return m4325(0L, 0L, 131072L, 25);
                                             }
-                                            if (j10 == 0) {
+                                            if (false) {
                                                 return m4325(0L, 0L, j10, 25);
                                             }
                                             i = 27;
                                             try {
                                                 char cM34315 = this.f7517.m3436();
                                                 this.f7520 = cM34315;
-                                                return (cM34315 == 'n' && j10 != 0) ? m4326(27, Opcodes.I2B) : m4325(0L, 0L, j10, 26);
+                                                return (cM34315 == 'n' && true) ? m4326(27, 145) : m4325(0L, 0L, 131072L, 26);
                                             } catch (IOException unused) {
-                                                m4327(0L, 0L, j10, 26);
-                                                return i;
+                                                m4327(0L, 0L, 131072L, 26);
+                                                return 27;
                                             }
                                         } catch (IOException unused2) {
-                                            m4327(0L, 0L, j10, 25);
+                                            m4327(0L, 0L, 131072L, 25);
                                             i = 26;
                                         }
                                     } catch (IOException unused3) {
-                                        m4327(0L, 0L, j10, 24);
+                                        m4327(0L, 0L, 131072L, 24);
                                         i = 25;
                                     }
                                 } catch (IOException unused4) {
-                                    m4327(0L, 0L, j10, 23);
+                                    m4327(0L, 0L, 131072L, 23);
                                     i = 24;
                                 }
                             } catch (IOException unused5) {
-                                m4327(0L, 0L, j10, 22);
+                                m4327(0L, 0L, 131072L, 22);
                                 i = 23;
                             }
                         } catch (IOException unused6) {
-                            m4327(0L, 0L, j10, 21);
+                            m4327(0L, 0L, 131072L, 21);
                             i = 22;
                         }
                     } catch (IOException unused7) {
-                        m4327(0L, 0L, j10, 20);
+                        m4327(0L, 0L, 131072L, 20);
                         return 21;
                     }
                 } catch (IOException unused8) {
@@ -1648,8 +1648,8 @@ public final class C2336 implements InterfaceC2335 {
                 if (cM3436 != ':') {
                     if (cM3436 != '|') {
                         if (cM3436 == '*') {
-                            if ((j2 & FieldInfo.JIT) != 0) {
-                                this.f7516 = Opcodes.FNEG;
+                            if ((j2 & 18014398509481984L) != 0) {
+                                this.f7516 = 118;
                                 this.f7515 = 1;
                             }
                             return m4316(j, 0L, j2, 0L, j3, 1024L);
@@ -1657,23 +1657,23 @@ public final class C2336 implements InterfaceC2335 {
                         if (cM3436 != '+') {
                             if (cM3436 != '-') {
                                 if (cM3436 == '.') {
-                                    return (j3 & JSONWriter.MASK_WRITE_NON_STRING_KEY_AS_STRING) != 0 ? m4326(1, Opcodes.IFLT) : m4316(j, 0L, j2, 0L, j3, JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY);
+                                    return (j3 & 134217728L) != 0 ? m4326(1, 155) : m4316(j, 0L, j2, 0L, j3, 67108864L);
                                 }
                                 if (cM3436 == 'a') {
                                     return m4316(j, 39582553014272L, j2, 549755813888L, j3, 8L);
                                 }
                                 if (cM3436 == 'b') {
-                                    return m4316(j, JSONWriter.MASK_NOT_WRITE_HASHMAP_ARRAY_LIST_CLASS_NAME, j2, 2955487255461888L, j3, 0L);
+                                    return m4316(j, 2048L, j2, 2955487255461888L, j3, 0L);
                                 }
                                 switch (cM3436) {
                                     case '<':
-                                        if ((j2 & FieldInfo.READ_ONLY) != 0) {
+                                        if ((j2 & 72057594037927936L) != 0) {
                                             this.f7516 = 120;
                                             this.f7515 = 1;
                                         }
-                                        return m4316(j, 0L, j2, 0L, j3, JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE);
+                                        return m4316(j, 0L, j2, 0L, j3, 4096L);
                                     case '=':
-                                        if ((j2 & JSONWriter.MASK_ESCAPE_NONE_ASCII) != 0) {
+                                        if ((j2 & 1073741824L) != 0) {
                                             return m4326(1, 94);
                                         }
                                         if ((j2 & 2147483648L) != 0) {
@@ -1683,53 +1683,53 @@ public final class C2336 implements InterfaceC2335 {
                                             if ((j2 & 8589934592L) != 0) {
                                                 return m4326(1, 97);
                                             }
-                                            if ((j2 & JSONWriter.MASK_BROWSER_SECURE) != 0) {
+                                            if ((j2 & 34359738368L) != 0) {
                                                 return m4326(1, 99);
                                             }
-                                            if ((j2 & FieldInfo.RECORD) != 0) {
+                                            if ((j2 & 4611686018427387904L) != 0) {
                                                 return m4326(1, 126);
                                             }
-                                            if ((j2 & Long.MIN_VALUE) != 0) {
+                                            if ((j2 & -9223372036854775808L) != 0) {
                                                 return m4326(1, 127);
                                             }
                                             if ((j3 & 1) != 0) {
                                                 return m4326(1, 128);
                                             }
                                             if ((j3 & 2) != 0) {
-                                                return m4326(1, Opcodes.LOR);
+                                                return m4326(1, 129);
                                             }
                                             if ((j3 & 4) != 0) {
-                                                return m4326(1, Opcodes.IXOR);
+                                                return m4326(1, 130);
                                             }
                                             if ((j3 & 16) != 0) {
-                                                return m4326(1, Opcodes.IINC);
+                                                return m4326(1, 132);
                                             }
                                             if ((j3 & 64) != 0) {
-                                                return m4326(1, Opcodes.I2F);
+                                                return m4326(1, 134);
                                             }
                                             if ((j3 & 256) != 0) {
-                                                return m4326(1, Opcodes.L2I);
+                                                return m4326(1, 136);
                                             }
                                         }
-                                        return m4316(j, 0L, j2, 0L, j3, JSONWriter.MASK_WRITE_BIG_DECIMAL_AS_PLAIN);
+                                        return m4316(j, 0L, j2, 0L, j3, 524288L);
                                     case '>':
-                                        if ((j2 & FieldInfo.DISABLE_ARRAY_MAPPING) != 0) {
+                                        if ((j2 & 288230376151711744L) != 0) {
                                             this.f7516 = 122;
                                             this.f7515 = 1;
                                         } else if ((j3 & 262144) != 0) {
-                                            return m4326(1, Opcodes.I2C);
+                                            return m4326(1, 146);
                                         }
-                                        return m4316(j, 0L, j2, FieldInfo.DISABLE_JSONB, j3, 81920L);
+                                        return m4316(j, 0L, j2, 1152921504606846976L, j3, 81920L);
                                     case '?':
                                         if ((j3 & 2097152) != 0) {
-                                            this.f7516 = Opcodes.FCMPL;
+                                            this.f7516 = 149;
                                             this.f7515 = 1;
                                         }
-                                        return m4316(j, 0L, j2, 0L, j3, JSONWriter.MASK_USE_SINGLE_QUOTES);
+                                        return m4316(j, 0L, j2, 0L, j3, 1048576L);
                                     default:
                                         switch (cM3436) {
                                             case 'e':
-                                                return m4316(j, 571746048540672L, j2, 0L, j3, JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN);
+                                                return m4316(j, 571746048540672L, j2, 0L, j3, 268435456L);
                                             case 'f':
                                                 if ((j & 8589934592L) != 0) {
                                                     return m4324(1, 33, 42);
@@ -1743,42 +1743,42 @@ public final class C2336 implements InterfaceC2335 {
                                                 return m4316(j, 805306368L, j2, 0L, j3, 0L);
                                             default:
                                                 switch (cM3436) {
-                                                    case Opcodes.IDIV /* 108 */:
-                                                        return m4316(j, 1090535424L, j2, 144115192505040896L, j3, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
-                                                    case Opcodes.LDIV /* 109 */:
-                                                        return m4316(j, 51539607552L, j2, FieldInfo.DISABLE_SMART_MATCH, j3, 512L);
-                                                    case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
+                                                    case 108 /* 108 */:
+                                                        return m4316(j, 1090535424L, j2, 144115192505040896L, j3, 8192L);
+                                                    case 109 /* 109 */:
+                                                        return m4316(j, 51539607552L, j2, 9007199254740992L, j3, 512L);
+                                                    case 110 /* 110 */:
                                                         return m4316(j, 1718020472832L, j2, 0L, j3, 0L);
-                                                    case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
-                                                        if ((j & JSONWriter.MASK_WRITE_NULL_LIST_AS_EMPTY) != 0) {
+                                                    case 111 /* 111 */:
+                                                        if ((j & 4194304L) != 0) {
                                                             this.f7516 = 22;
                                                             this.f7515 = 1;
                                                         }
                                                         return m4316(j, 3458766719296212992L, j2, 137438953472L, j3, 32L);
                                                     case 'p':
-                                                        return m4316(j, 0L, j2, FieldInfo.DISABLE_UNSAFE, j3, JSONWriter.MASK_NOT_WRITE_HASHMAP_ARRAY_LIST_CLASS_NAME);
+                                                        return m4316(j, 0L, j2, 36028797018963968L, j3, 2048L);
                                                     default:
                                                         switch (cM3436) {
-                                                            case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+                                                            case 114 /* 114 */:
                                                                 return m4316(j, 900931031706640384L, j2, 2882303761517117440L, j3, 163840L);
                                                             case 's':
                                                                 if ((137438953472L & j) != 0) {
                                                                     return m4324(1, 37, 42);
                                                                 }
-                                                                if ((j & JSONWriter.MASK_UNQUOTE_FIELD_NAME) != 0) {
+                                                                if ((j & 274877906944L) != 0) {
                                                                     return m4324(1, 38, 42);
                                                                 }
                                                                 break;
-                                                            case Opcodes.INEG /* 116 */:
+                                                            case 116 /* 116 */:
                                                                 return m4316(j, 6755399441055744L, j2, 0L, j3, 0L);
-                                                            case Opcodes.LNEG /* 117 */:
+                                                            case 117 /* 117 */:
                                                                 return m4316(j, 299067162755072L, j2, 0L, j3, 0L);
                                                             default:
                                                                 switch (cM3436) {
-                                                                    case Opcodes.DNEG /* 119 */:
-                                                                        return m4316(j, FieldInfo.DISABLE_SMART_MATCH, j2, 0L, j3, 0L);
+                                                                    case 119 /* 119 */:
+                                                                        return m4316(j, 9007199254740992L, j2, 0L, j3, 0L);
                                                                     case 'x':
-                                                                        return m4316(j, JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY, j2, 0L, j3, 128L);
+                                                                        return m4316(j, 67108864L, j2, 0L, j3, 128L);
                                                                     case 'y':
                                                                         return m4316(j, 18014398509514752L, j2, 0L, j3, 0L);
                                                                 }
@@ -1792,21 +1792,21 @@ public final class C2336 implements InterfaceC2335 {
                             } else if ((j2 & 2199023255552L) != 0) {
                                 return m4326(1, 105);
                             }
-                        } else if ((j2 & JSONWriter.MASK_NOT_WRITE_NUMBER_CLASS_NAME) != 0) {
+                        } else if ((j2 & 1099511627776L) != 0) {
                             return m4326(1, 104);
                         }
-                    } else if ((j2 & JSONWriter.MASK_WRITE_ENUM_USING_ORDINAL) != 0) {
+                    } else if ((j2 & 68719476736L) != 0) {
                         return m4326(1, 100);
                     }
                 } else {
-                    if ((j3 & JSONWriter.MASK_WRITE_NULL_LIST_AS_EMPTY) != 0) {
-                        return m4326(1, Opcodes.FCMPG);
+                    if ((j3 & 4194304L) != 0) {
+                        return m4326(1, 150);
                     }
-                    if ((j3 & JSONWriter.MASK_WRITE_NULL_BOOLEAN_AS_FALSE) != 0) {
-                        return m4326(1, Opcodes.IFEQ);
+                    if ((j3 & 33554432L) != 0) {
+                        return m4326(1, 153);
                     }
                 }
-            } else if ((j2 & JSONWriter.MASK_UNQUOTE_FIELD_NAME) != 0) {
+            } else if ((j2 & 274877906944L) != 0) {
                 return m4326(1, 102);
             }
             return m4325(j, j2, j3, 0);
@@ -1838,38 +1838,38 @@ public final class C2336 implements InterfaceC2335 {
                     if (cM3436 != 'y') {
                         if (cM3436 != '=') {
                             if (cM3436 == '>') {
-                                if ((FieldInfo.DISABLE_JSONB & j8) != 0) {
-                                    this.f7516 = Opcodes.IUSHR;
+                                if ((1152921504606846976L & j8) != 0) {
+                                    this.f7516 = 124;
                                     this.f7515 = 2;
-                                } else if ((JSONWriter.MASK_WRITE_BIG_DECIMAL_AS_PLAIN & j9) != 0) {
-                                    return m4326(2, Opcodes.I2S);
+                                } else if ((524288L & j9) != 0) {
+                                    return m4326(2, 147);
                                 }
-                                return m4317(j7, 0L, j8, 0L, j9, JSONWriter.MASK_PRETTY_FORMAT);
+                                return m4317(j7, 0L, j8, 0L, j9, 65536L);
                             }
                             if (cM3436 == 'e') {
-                                return m4317(j7, 4611686018427396096L, j8, FieldInfo.DISABLE_REFERENCE_DETECT, j9, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                                return m4317(j7, 4611686018427396096L, j8, 144115188075855872L, j9, 8192L);
                             }
                             if (cM3436 == 'f') {
-                                return m4317(j7, 2097152L, j8, 0L, j9, JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN);
+                                return m4317(j7, 2097152L, j8, 0L, j9, 268435456L);
                             }
                             switch (cM3436) {
-                                case Opcodes.LADD /* 97 */:
+                                case 97 /* 97 */:
                                     return m4317(j7, 38280596832927744L, j8, 0L, j9, 0L);
                                 case 'b':
-                                    return m4317(j7, FieldInfo.VALUE_MASK, j8, 0L, j9, 0L);
+                                    return m4317(j7, 281474976710656L, j8, 0L, j9, 0L);
                                 case 'c':
-                                    return m4317(j7, JSONWriter.MASK_WRITE_FLOAT_SPECIAL_AS_STRING, j8, 0L, j9, 0L);
+                                    return m4317(j7, 35184372088832L, j8, 0L, j9, 0L);
                                 default:
                                     switch (cM3436) {
-                                        case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
+                                        case 110 /* 110 */:
                                             return m4317(j7, 18016598339616768L, j8, 549755813888L, j9, 8L);
-                                        case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
+                                        case 111 /* 111 */:
                                             return m4317(j7, 1266638468943872L, j8, 45035996273704960L, j9, 2688L);
                                         case 'p':
                                             return m4317(j7, 51539607552L, j8, 0L, j9, 0L);
                                         default:
                                             switch (cM3436) {
-                                                case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+                                                case 114 /* 114 */:
                                                     if ((2147483648L & j7) != 0) {
                                                         return m4324(2, 31, 42);
                                                     }
@@ -1880,19 +1880,19 @@ public final class C2336 implements InterfaceC2335 {
                                                     return m4317(j7, 220676381741154304L, j8, 0L, j9, 32L);
                                                 case 's':
                                                     return m4317(j7, 68736321536L, j8, 0L, j9, 0L);
-                                                case Opcodes.INEG /* 116 */:
+                                                case 116 /* 116 */:
                                                     if ((549755813888L & j7) != 0) {
                                                         this.f7516 = 39;
                                                         this.f7515 = 2;
-                                                    } else if ((JSONWriter.MASK_WRITE_NULL_BOOLEAN_AS_FALSE & j8) != 0) {
+                                                    } else if ((33554432L & j8) != 0) {
                                                         this.f7516 = 89;
                                                         this.f7515 = 2;
-                                                    } else if ((JSONWriter.MASK_WRITE_NON_STRING_KEY_AS_STRING & j8) != 0) {
+                                                    } else if ((134217728L & j8) != 0) {
                                                         this.f7516 = 91;
                                                         this.f7515 = 2;
                                                     }
                                                     return m4317(j7, 568451873800192L, j8, 21474836480L, j9, 0L);
-                                                case Opcodes.LNEG /* 117 */:
+                                                case 117 /* 117 */:
                                                     return m4317(j7, 288230376193654784L, j8, 0L, j9, 0L);
                                             }
                                     }
@@ -1901,23 +1901,23 @@ public final class C2336 implements InterfaceC2335 {
                         if ((1024 & j9) != 0) {
                             return m4326(2, 138);
                         }
-                        if ((JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE & j9) != 0) {
-                            return m4326(2, Opcodes.F2L);
+                        if ((4096L & j9) != 0) {
+                            return m4326(2, 140);
                         }
                         if ((16384 & j9) != 0) {
-                            return m4326(2, Opcodes.D2I);
+                            return m4326(2, 142);
                         }
-                        if ((JSONWriter.MASK_USE_SINGLE_QUOTES & j9) != 0) {
-                            return m4326(2, Opcodes.LCMP);
+                        if ((1048576L & j9) != 0) {
+                            return m4326(2, 148);
                         }
-                    } else if ((FieldInfo.DISABLE_AUTO_TYPE & j7) != 0) {
+                    } else if ((576460752303423488L & j7) != 0) {
                         return m4324(2, 59, 42);
                     }
                 } else if ((8796093022208L & j7) != 0) {
                     return m4324(2, 43, 42);
                 }
-            } else if ((JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY & j9) != 0) {
-                return m4326(2, Opcodes.IFNE);
+            } else if ((67108864L & j9) != 0) {
+                return m4326(2, 154);
             }
             return m4325(j7, j8, j9, 1);
         } catch (IOException unused) {
@@ -1945,77 +1945,77 @@ public final class C2336 implements InterfaceC2335 {
                     return m4318(j7, 4507997673881600L, j8, 0L, j9, 0L);
                 }
                 switch (cM3436) {
-                    case Opcodes.LADD /* 97 */:
-                        return m4318(j7, 2305843011094847488L, j8, 0L, j9, JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN);
+                    case 97 /* 97 */:
+                        return m4318(j7, 2305843011094847488L, j8, 0L, j9, 268435456L);
                     case 'b':
-                        return m4318(j7, JSONWriter.MASK_WRITE_NULL_STRING_AS_EMPTY, j8, 0L, j9, 0L);
+                        return m4318(j7, 8388608L, j8, 0L, j9, 0L);
                     case 'c':
                         return m4318(j7, 18014398509613056L, j8, 0L, j9, 0L);
                     case 'd':
-                        if ((FieldInfo.DISABLE_JSONB & j7) != 0) {
+                        if ((1152921504606846976L & j7) != 0) {
                             return m4324(3, 60, 42);
                         }
                         if ((549755813888L & j8) != 0) {
                             this.f7516 = 103;
                             this.f7515 = 3;
-                        } else if ((FieldInfo.DISABLE_SMART_MATCH & j8) != 0) {
-                            this.f7516 = Opcodes.LNEG;
+                        } else if ((9007199254740992L & j8) != 0) {
+                            this.f7516 = 117;
                             this.f7515 = 3;
                         }
                         return m4318(j7, 0L, j8, 0L, j9, 520L);
                     case 'e':
-                        if ((JSONWriter.MASK_IGNORE_ERROR_GETTER & j7) != 0) {
+                        if ((32768L & j7) != 0) {
                             return m4324(3, 15, 42);
                         }
-                        if ((JSONWriter.MASK_PRETTY_FORMAT & j7) != 0) {
+                        if ((65536L & j7) != 0) {
                             return m4324(3, 16, 42);
                         }
-                        if ((JSONWriter.MASK_WRITE_NULL_NUMBER_AS_ZERO & j7) != 0) {
+                        if ((16777216L & j7) != 0) {
                             return m4324(3, 24, 42);
                         }
-                        return (FieldInfo.DISABLE_ARRAY_MAPPING & j7) != 0 ? m4324(3, 58, 42) : m4318(j7, 1099578736640L, j8, 21474836480L, j9, 0L);
+                        return (288230376151711744L & j7) != 0 ? m4324(3, 58, 42) : m4318(j7, 1099578736640L, j8, 21474836480L, j9, 0L);
                     case 'f':
-                        return m4318(j7, 0L, j8, FieldInfo.DISABLE_REFERENCE_DETECT, j9, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                        return m4318(j7, 0L, j8, 144115188075855872L, j9, 8192L);
                     case 'g':
                         return (2199023255552L & j7) != 0 ? m4324(3, 41, 42) : m4318(j7, 0L, j8, 2882303761517117440L, j9, 163840L);
                     default:
                         switch (cM3436) {
                             case 'k':
-                                return m4318(j7, JSONWriter.MASK_WRITE_FLOAT_SPECIAL_AS_STRING, j8, 0L, j9, 0L);
-                            case Opcodes.IDIV /* 108 */:
+                                return m4318(j7, 35184372088832L, j8, 0L, j9, 0L);
+                            case 108 /* 108 */:
                                 return (17592186044416L & j7) != 0 ? m4324(3, 44, 42) : m4318(j7, -9223090544698191872L, j8, 0L, j9, 0L);
-                            case Opcodes.LDIV /* 109 */:
-                                if ((JSONWriter.MASK_WRITE_NULL_BOOLEAN_AS_FALSE & j7) != 0) {
+                            case 109 /* 109 */:
+                                if ((33554432L & j7) != 0) {
                                     return m4324(3, 25, 42);
                                 }
                                 break;
-                            case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-                                return (FieldInfo.RECORD & j7) != 0 ? m4324(3, 62, 42) : m4318(j7, FieldInfo.DISABLE_UNSAFE, j8, 0L, j9, 0L);
-                            case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
-                                return (JSONWriter.MASK_IGNORE_NON_FIELD_GETTER & j7) != 0 ? m4324(3, 32, 42) : m4318(j7, 216172816473522176L, j8, 0L, j9, 0L);
+                            case 110 /* 110 */:
+                                return (4611686018427387904L & j7) != 0 ? m4324(3, 62, 42) : m4318(j7, 36028797018963968L, j8, 0L, j9, 0L);
+                            case 111 /* 111 */:
+                                return (4294967296L & j7) != 0 ? m4324(3, 32, 42) : m4318(j7, 216172816473522176L, j8, 0L, j9, 0L);
                             default:
                                 switch (cM3436) {
-                                    case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
-                                        return (262144 & j7) != 0 ? m4324(3, 18, 42) : m4318(j7, FieldInfo.RAW_VALUE_MASK, j8, 0L, j9, 128L);
+                                    case 114 /* 114 */:
+                                        return (262144 & j7) != 0 ? m4324(3, 18, 42) : m4318(j7, 1125899906842624L, j8, 0L, j9, 128L);
                                     case 's':
                                         return m4318(j7, 134758400L, j8, 0L, j9, 0L);
-                                    case Opcodes.INEG /* 116 */:
+                                    case 116 /* 116 */:
                                         return m4318(j7, 11399805277308928L, j8, 2955487255461888L, j9, 0L);
-                                    case Opcodes.LNEG /* 117 */:
-                                        return m4318(j7, FieldInfo.UNWRAPPED_MASK, j8, 0L, j9, 0L);
-                                    case Opcodes.FNEG /* 118 */:
+                                    case 117 /* 117 */:
+                                        return m4318(j7, 562949953421312L, j8, 0L, j9, 0L);
+                                    case 118 /* 118 */:
                                         return m4318(j7, 70368744177664L, j8, 0L, j9, 0L);
-                                    case Opcodes.DNEG /* 119 */:
-                                        if ((FieldInfo.DISABLE_UNSAFE & j8) != 0) {
-                                            this.f7516 = Opcodes.DNEG;
+                                    case 119 /* 119 */:
+                                        if ((36028797018963968L & j8) != 0) {
+                                            this.f7516 = 119;
                                             this.f7515 = 3;
                                         }
-                                        return m4318(j7, 0L, j8, 0L, j9, JSONWriter.MASK_NOT_WRITE_HASHMAP_ARRAY_LIST_CLASS_NAME);
+                                        return m4318(j7, 0L, j8, 0L, j9, 2048L);
                                 }
                         }
                         break;
                 }
-            } else if ((j9 & JSONWriter.MASK_PRETTY_FORMAT) != 0) {
+            } else if ((j9 & 65536L) != 0) {
                 return m4326(3, 144);
             }
             return m4325(j7, j8, j9, 2);
@@ -2037,64 +2037,64 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             switch (cM3436) {
-                case Opcodes.SWAP /* 95 */:
+                case 95 /* 95 */:
                     return m4319(j7, 0L, j8, 0L, j9, 2696L);
-                case Opcodes.LADD /* 97 */:
+                case 97 /* 97 */:
                     return m4319(j7, 105621835743232L, j8, 0L, j9, 32L);
                 case 'c':
                     return m4319(j7, 13510798882111488L, j8, 0L, j9, 0L);
                 case 'e':
-                    if ((JSONWriter.MASK_WRITE_NON_STRING_KEY_AS_STRING & j7) != 0) {
+                    if ((134217728L & j7) != 0) {
                         return m4324(4, 27, 42);
                     }
-                    return (Long.MIN_VALUE & j7) != 0 ? m4324(4, 63, 42) : m4319(j7, 140754668228608L, j8, 0L, j9, 0L);
+                    return (-9223372036854775808L & j7) != 0 ? m4324(4, 63, 42) : m4319(j7, 140754668228608L, j8, 0L, j9, 0L);
                 case 'h':
-                    return (JSONWriter.MASK_REFERENCE_DETECTION & j7) != 0 ? m4324(4, 17, 42) : m4319(j7, FieldInfo.JIT, j8, 2882303761517117440L, j9, 163840L);
+                    return (131072L & j7) != 0 ? m4324(4, 17, 42) : m4319(j7, 18014398509481984L, j8, 2882303761517117440L, j9, 163840L);
                 case 'i':
                     return m4319(j7, 2533274791444480L, j8, 0L, j9, 0L);
                 case 'k':
-                    if ((JSONWriter.MASK_WRITE_ENUMS_USING_NAME & j7) != 0) {
+                    if ((8192L & j7) != 0) {
                         return m4324(4, 13, 42);
                     }
                     break;
-                case Opcodes.IDIV /* 108 */:
-                    if ((JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN & j7) != 0) {
+                case 108 /* 108 */:
+                    if ((268435456L & j7) != 0) {
                         this.f7516 = 28;
                         this.f7515 = 4;
                     }
                     return m4319(j7, 545259520L, j8, 0L, j9, 0L);
-                case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-                    return m4319(j7, JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY, j8, 0L, j9, 0L);
+                case 110 /* 110 */:
+                    return m4319(j7, 67108864L, j8, 0L, j9, 0L);
                 case 'q':
-                    if ((JSONWriter.MASK_IGNORE_NON_FIELD_GETTER & j8) != 0) {
+                    if ((4294967296L & j8) != 0) {
                         return m4326(4, 96);
                     }
-                    if ((JSONWriter.MASK_WRITE_LONG_AS_STRING & j8) != 0) {
+                    if ((17179869184L & j8) != 0) {
                         return m4326(4, 98);
                     }
                     break;
-                case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+                case 114 /* 114 */:
                     return m4319(j7, 564083824789504L, j8, 0L, j9, 0L);
                 case 's':
-                    return (16384 & j7) != 0 ? m4324(4, 14, 42) : m4319(j7, FieldInfo.DISABLE_UNSAFE, j8, 0L, j9, 0L);
-                case Opcodes.INEG /* 116 */:
-                    if ((JSONWriter.MASK_WRITE_BIG_DECIMAL_AS_PLAIN & j7) != 0) {
+                    return (16384 & j7) != 0 ? m4324(4, 14, 42) : m4319(j7, 36028797018963968L, j8, 0L, j9, 0L);
+                case 116 /* 116 */:
+                    if ((524288L & j7) != 0) {
                         return m4324(4, 19, 42);
                     }
-                    if ((JSONWriter.MASK_ESCAPE_NONE_ASCII & j7) != 0) {
+                    if ((1073741824L & j7) != 0) {
                         return m4324(4, 30, 42);
                     }
-                    return (FieldInfo.RAW_VALUE_MASK & j7) != 0 ? m4324(4, 50, 42) : m4319(j7, FieldInfo.BACKR_REFERENCE, j8, FieldInfo.DISABLE_REFERENCE_DETECT, j9, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
-                case Opcodes.LNEG /* 117 */:
-                    return m4319(j7, 2097152L, j8, 0L, j9, JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN);
-                case Opcodes.FNEG /* 118 */:
+                    return (1125899906842624L & j7) != 0 ? m4324(4, 50, 42) : m4319(j7, 2305843009213693952L, j8, 144115188075855872L, j9, 8192L);
+                case 117 /* 117 */:
+                    return m4319(j7, 2097152L, j8, 0L, j9, 268435456L);
+                case 118 /* 118 */:
                     return m4319(j7, 4398046511104L, j8, 0L, j9, 0L);
-                case Opcodes.DNEG /* 119 */:
-                    if ((FieldInfo.READ_ONLY & j7) != 0) {
+                case 119 /* 119 */:
+                    if ((72057594037927936L & j7) != 0) {
                         this.f7516 = 56;
                         this.f7515 = 4;
                     }
-                    return m4319(j7, FieldInfo.DISABLE_REFERENCE_DETECT, j8, 2955487255461888L, j9, 0L);
+                    return m4319(j7, 144115188075855872L, j8, 2955487255461888L, j9, 0L);
             }
             return m4325(j7, j8, j9, 3);
         } catch (IOException unused) {
@@ -2115,19 +2115,19 @@ public final class C2336 implements InterfaceC2335 {
             char cM3436 = this.f7517.m3436();
             this.f7520 = cM3436;
             switch (cM3436) {
-                case Opcodes.SWAP /* 95 */:
-                    return m4320(j7, 0L, j8, FieldInfo.DISABLE_REFERENCE_DETECT, j9, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
-                case Opcodes.LADD /* 97 */:
+                case 95 /* 95 */:
+                    return m4320(j7, 0L, j8, 144115188075855872L, j9, 8192L);
+                case 97 /* 97 */:
                     return m4320(j7, 6144L, j8, 0L, j9, 2696L);
                 case 'c':
-                    if ((FieldInfo.VALUE_MASK & j7) != 0) {
+                    if ((281474976710656L & j7) != 0) {
                         return m4324(5, 48, 42);
                     }
-                    return (FieldInfo.READ_USING_MASK & j7) != 0 ? m4324(5, 51, 42) : m4320(j7, 140737488355328L, j8, 0L, j9, 0L);
+                    return (2251799813685248L & j7) != 0 ? m4324(5, 51, 42) : m4320(j7, 140737488355328L, j8, 0L, j9, 0L);
                 case 'd':
-                    return m4320(j7, JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY, j8, 0L, j9, 0L);
+                    return m4320(j7, 67108864L, j8, 0L, j9, 0L);
                 case 'e':
-                    if ((JSONWriter.MASK_WRITE_NULL_STRING_AS_EMPTY & j7) != 0) {
+                    if ((8388608L & j7) != 0) {
                         return m4324(5, 23, 42);
                     }
                     if ((4398046511104L & j7) != 0) {
@@ -2135,28 +2135,28 @@ public final class C2336 implements InterfaceC2335 {
                     }
                     break;
                 case 'f':
-                    return m4320(j7, JSONWriter.MASK_NOT_WRITE_NUMBER_CLASS_NAME, j8, 0L, j9, 0L);
+                    return m4320(j7, 1099511627776L, j8, 0L, j9, 0L);
                 case 'g':
-                    return m4320(j7, JSONWriter.MASK_WRITE_FLOAT_SPECIAL_AS_STRING, j8, 0L, j9, 0L);
+                    return m4320(j7, 35184372088832L, j8, 0L, j9, 0L);
                 case 'h':
-                    if ((FieldInfo.DISABLE_SMART_MATCH & j7) != 0) {
+                    if ((9007199254740992L & j7) != 0) {
                         return m4324(5, 53, 42);
                     }
                     break;
                 case 'i':
                     return m4320(j7, 2341871806232657920L, j8, 2955487255461888L, j9, 0L);
-                case Opcodes.IDIV /* 108 */:
-                    return m4320(j7, 538968064L, j8, 0L, j9, JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN);
-                case Opcodes.LDIV /* 109 */:
-                    return m4320(j7, JSONWriter.MASK_WRITE_LONG_AS_STRING, j8, 0L, j9, 0L);
-                case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-                    return (FieldInfo.UNWRAPPED_MASK & j7) != 0 ? m4324(5, 49, 42) : m4320(j7, 68720525312L, j8, 0L, j9, 0L);
-                case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
-                    return m4320(j7, FieldInfo.JIT, j8, 0L, j9, 0L);
+                case 108 /* 108 */:
+                    return m4320(j7, 538968064L, j8, 0L, j9, 268435456L);
+                case 109 /* 109 */:
+                    return m4320(j7, 17179869184L, j8, 0L, j9, 0L);
+                case 110 /* 110 */:
+                    return (562949953421312L & j7) != 0 ? m4324(5, 49, 42) : m4320(j7, 68720525312L, j8, 0L, j9, 0L);
+                case 114 /* 114 */:
+                    return m4320(j7, 18014398509481984L, j8, 0L, j9, 0L);
                 case 's':
-                    return (FieldInfo.DISABLE_REFERENCE_DETECT & j7) != 0 ? m4324(5, 57, 42) : m4320(j7, 0L, j8, 0L, j9, 32L);
-                case Opcodes.INEG /* 116 */:
-                    return (JSONWriter.MASK_BROWSER_SECURE & j7) != 0 ? m4324(5, 35, 42) : m4320(j7, 4573968371548160L, j8, 2882303761517117440L, j9, 163840L);
+                    return (144115188075855872L & j7) != 0 ? m4324(5, 57, 42) : m4320(j7, 0L, j8, 0L, j9, 32L);
+                case 116 /* 116 */:
+                    return (34359738368L & j7) != 0 ? m4324(5, 35, 42) : m4320(j7, 4573968371548160L, j8, 2882303761517117440L, j9, 163840L);
             }
             return m4325(j7, j8, j9, 4);
         } catch (IOException unused) {
@@ -2180,42 +2180,42 @@ public final class C2336 implements InterfaceC2335 {
                 return m4321(j7, 0L, j8, 2882303761517117440L, j9, 163840L);
             }
             if (cM3436 == 'a') {
-                return m4321(j7, JSONWriter.MASK_NOT_WRITE_NUMBER_CLASS_NAME, j8, 0L, j9, 0L);
+                return m4321(j7, 1099511627776L, j8, 0L, j9, 0L);
             }
             if (cM3436 == 'c') {
                 return m4321(j7, 68719478784L, j8, 0L, j9, 0L);
             }
             if (cM3436 == 'l') {
-                return m4321(j7, FieldInfo.BACKR_REFERENCE, j8, 0L, j9, 0L);
+                return m4321(j7, 2305843009213693952L, j8, 0L, j9, 0L);
             }
             if (cM3436 != 'y') {
                 if (cM3436 == 'e') {
-                    if ((JSONWriter.MASK_WRITE_FLOAT_SPECIAL_AS_STRING & j7) != 0) {
+                    if ((35184372088832L & j7) != 0) {
                         return m4324(6, 45, 42);
                     }
                     return (70368744177664L & j7) != 0 ? m4324(6, 46, 42) : m4321(j7, 36028814198833152L, j8, 0L, j9, 0L);
                 }
                 if (cM3436 == 'f') {
-                    return m4321(j7, FieldInfo.FIELD_MASK, j8, 0L, j9, 0L);
+                    return m4321(j7, 4503599627370496L, j8, 0L, j9, 0L);
                 }
                 if (cM3436 != 'n') {
                     if (cM3436 == 'o') {
-                        return m4321(j7, FieldInfo.JIT, j8, 0L, j9, 0L);
+                        return m4321(j7, 18014398509481984L, j8, 0L, j9, 0L);
                     }
                     switch (cM3436) {
                         case 's':
-                            return (JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY & j7) != 0 ? m4324(6, 26, 42) : m4321(j7, 0L, j8, 147070675331317760L, j9, 10920L);
-                        case Opcodes.INEG /* 116 */:
+                            return (67108864L & j7) != 0 ? m4324(6, 26, 42) : m4321(j7, 0L, j8, 147070675331317760L, j9, 10920L);
+                        case 116 /* 116 */:
                             if ((2097152 & j7) != 0) {
                                 this.f7516 = 21;
                                 this.f7515 = 6;
                             }
-                            return m4321(j7, 140737488355328L, j8, 0L, j9, JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN);
-                        case Opcodes.LNEG /* 117 */:
-                            return m4321(j7, JSONWriter.MASK_USE_SINGLE_QUOTES, j8, 0L, j9, 0L);
+                            return m4321(j7, 140737488355328L, j8, 0L, j9, 268435456L);
+                        case 117 /* 117 */:
+                            return m4321(j7, 1048576L, j8, 0L, j9, 0L);
                     }
                 }
-                if ((JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE & j7) != 0) {
+                if ((4096L & j7) != 0) {
                     return m4324(6, 12, 42);
                 }
             } else if ((536870912 & j7) != 0) {
@@ -2241,40 +2241,40 @@ public final class C2336 implements InterfaceC2335 {
             this.f7520 = cM3436;
             if (cM3436 != ':') {
                 if (cM3436 == 'c') {
-                    return m4322(j7, JSONWriter.MASK_NOT_WRITE_NUMBER_CLASS_NAME, j8, 0L, j9, 0L);
+                    return m4322(j7, 1099511627776L, j8, 0L, j9, 0L);
                 }
                 if (cM3436 == 'e') {
-                    if ((JSONWriter.MASK_USE_SINGLE_QUOTES & j7) != 0) {
+                    if ((1048576L & j7) != 0) {
                         return m4324(7, 20, 42);
                     }
-                    return (FieldInfo.BACKR_REFERENCE & j7) != 0 ? m4324(7, 61, 42) : m4322(j7, 140806207832064L, j8, 2955487255461888L, j9, 0L);
+                    return (2305843009213693952L & j7) != 0 ? m4324(7, 61, 42) : m4322(j7, 140806207832064L, j8, 2955487255461888L, j9, 0L);
                 }
                 if (cM3436 == 'n') {
                     return m4322(j7, 54043212708315136L, j8, 0L, j9, 0L);
                 }
                 if (cM3436 != 'p') {
                     if (cM3436 == 'h') {
-                        return m4322(j7, 0L, j8, FieldInfo.DISABLE_REFERENCE_DETECT, j9, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                        return m4322(j7, 0L, j8, 144115188075855872L, j9, 8192L);
                     }
                     if (cM3436 == 'i') {
                         return m4322(j7, 0L, j8, 0L, j9, 32L);
                     }
                     switch (cM3436) {
                         case 's':
-                            return m4322(j7, 0L, j8, FieldInfo.DISABLE_AUTO_TYPE, j9, 35464L);
-                        case Opcodes.INEG /* 116 */:
-                            if ((JSONWriter.MASK_NOT_WRITE_HASHMAP_ARRAY_LIST_CLASS_NAME & j7) != 0) {
+                            return m4322(j7, 0L, j8, 576460752303423488L, j9, 35464L);
+                        case 116 /* 116 */:
+                            if ((2048L & j7) != 0) {
                                 return m4324(7, 11, 42);
                             }
                             break;
-                        case Opcodes.LNEG /* 117 */:
-                            return m4322(j7, 0L, j8, FieldInfo.BACKR_REFERENCE, j9, JSONWriter.MASK_REFERENCE_DETECTION);
+                        case 117 /* 117 */:
+                            return m4322(j7, 0L, j8, 2305843009213693952L, j9, 131072L);
                     }
-                } else if ((FieldInfo.FIELD_MASK & j7) != 0) {
+                } else if ((4503599627370496L & j7) != 0) {
                     return m4324(7, 52, 42);
                 }
-            } else if ((JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN & j9) != 0) {
-                return m4326(7, Opcodes.IFGE);
+            } else if ((268435456L & j9) != 0) {
+                return m4326(7, 156);
             }
             return m4325(j7, j8, j9, 6);
         } catch (IOException unused) {
@@ -2298,26 +2298,26 @@ public final class C2336 implements InterfaceC2335 {
                 return m4323(j7, 0L, j8, 2955487255461888L, j9, 0L);
             }
             if (cM3436 == 't') {
-                return (FieldInfo.DISABLE_UNSAFE & j7) != 0 ? m4324(8, 55, 42) : m4323(j7, JSONWriter.MASK_WRITE_LONG_AS_STRING, j8, 0L, j9, 0L);
+                return (36028797018963968L & j7) != 0 ? m4324(8, 55, 42) : m4323(j7, 17179869184L, j8, 0L, j9, 0L);
             }
             if (cM3436 != 'd') {
                 if (cM3436 != 'e') {
                     if (cM3436 == 'n') {
-                        return m4323(j7, 0L, j8, FieldInfo.BACKR_REFERENCE, j9, JSONWriter.MASK_REFERENCE_DETECTION);
+                        return m4323(j7, 0L, j8, 2305843009213693952L, j9, 131072L);
                     }
                     if (cM3436 == 'o') {
-                        return m4323(j7, JSONWriter.MASK_WRITE_ENUM_USING_ORDINAL, j8, 0L, j9, 0L);
+                        return m4323(j7, 68719476736L, j8, 0L, j9, 0L);
                     }
                     switch (cM3436) {
                         case 'g':
                             return m4323(j7, 0L, j8, 0L, j9, 32L);
                         case 'h':
-                            return m4323(j7, 0L, j8, FieldInfo.DISABLE_AUTO_TYPE, j9, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+                            return m4323(j7, 0L, j8, 576460752303423488L, j9, 32768L);
                         case 'i':
-                            return m4323(j7, FieldInfo.JIT, j8, FieldInfo.DISABLE_REFERENCE_DETECT, j9, 10888L);
+                            return m4323(j7, 18014398509481984L, j8, 144115188075855872L, j9, 10888L);
                     }
                 }
-                if ((JSONWriter.MASK_NOT_WRITE_NUMBER_CLASS_NAME & j7) != 0) {
+                if ((1099511627776L & j7) != 0) {
                     return m4324(8, 40, 42);
                 }
             } else if ((140737488355328L & j7) != 0) {
@@ -2345,29 +2345,29 @@ public final class C2336 implements InterfaceC2335 {
                 return m4306(j7, 0L, j8, 140737488355328L, j9, 0L);
             }
             if (cM3436 == 'i') {
-                return m4306(j7, 0L, j8, FieldInfo.DISABLE_AUTO_TYPE, j9, JSONWriter.MASK_IGNORE_ERROR_GETTER);
+                return m4306(j7, 0L, j8, 576460752303423488L, j9, 32768L);
             }
             if (cM3436 == 's') {
-                return (JSONWriter.MASK_WRITE_LONG_AS_STRING & j7) != 0 ? m4324(9, 34, 42) : m4306(j7, 0L, j8, FieldInfo.BACKR_REFERENCE, j9, JSONWriter.MASK_REFERENCE_DETECTION);
+                return (17179869184L & j7) != 0 ? m4324(9, 34, 42) : m4306(j7, 0L, j8, 2305843009213693952L, j9, 131072L);
             }
             if (cM3436 == 'x') {
-                return m4306(j7, 0L, j8, FieldInfo.READ_USING_MASK, j9, 0L);
+                return m4306(j7, 0L, j8, 2251799813685248L, j9, 0L);
             }
             if (cM3436 == 'z') {
-                return m4306(j7, FieldInfo.JIT, j8, 0L, j9, 0L);
+                return m4306(j7, 18014398509481984L, j8, 0L, j9, 0L);
             }
             if (cM3436 == 'f') {
-                return (JSONWriter.MASK_WRITE_ENUM_USING_ORDINAL & j7) != 0 ? m4324(9, 36, 42) : m4306(j7, 0L, j8, FieldInfo.DISABLE_REFERENCE_DETECT, j9, JSONWriter.MASK_WRITE_ENUMS_USING_NAME);
+                return (68719476736L & j7) != 0 ? m4324(9, 36, 42) : m4306(j7, 0L, j8, 144115188075855872L, j9, 8192L);
             }
             if (cM3436 == 'g') {
                 return m4306(j7, 0L, j8, 0L, j9, 2696L);
             }
             if (cM3436 != 'n') {
                 if (cM3436 == 'o') {
-                    return m4306(j7, 0L, j8, FieldInfo.UNWRAPPED_MASK, j9, 0L);
+                    return m4306(j7, 0L, j8, 562949953421312L, j9, 0L);
                 }
             } else if ((32 & j9) != 0) {
-                return m4326(9, Opcodes.I2L);
+                return m4326(9, 133);
             }
             return m4325(j7, j8, j9, 8);
         } catch (IOException unused) {
@@ -2405,13 +2405,13 @@ public final class C2336 implements InterfaceC2335 {
         switch (i) {
             case 0:
                 if ((72057596252520448L & j2) == 0 && (528384 & j3) == 0) {
-                    if ((JSONWriter.MASK_WRITE_NULL_LIST_AS_EMPTY & j2) != 0 || (JSONWriter.MASK_NOT_WRITE_EMPTY_ARRAY & j3) != 0) {
+                    if ((4194304L & j2) != 0 || (67108864L & j3) != 0) {
                         return 18;
                     }
-                    if ((j2 & JSONWriter.MASK_WRITE_FLOAT_SPECIAL_AS_STRING) != 0 || (2 & j3) != 0) {
+                    if ((j2 & 35184372088832L) != 0 || (2 & j3) != 0) {
                         return 64;
                     }
-                    if (((-2048) & j) == 0 && (j3 & JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN) == 0) {
+                    if (((-2048) & j) == 0 && (j3 & 268435456L) == 0) {
                         return (j & 62) != 0 ? 0 : -1;
                     }
                     this.f7516 = 75;
@@ -2419,9 +2419,9 @@ public final class C2336 implements InterfaceC2335 {
                 }
                 return 75;
             case 1:
-                if ((j2 & FieldInfo.READ_ONLY) == 0 && (JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE & j3) == 0) {
+                if ((j2 & 72057594037927936L) == 0 && (4096L & j3) == 0) {
                     if ((420919377920L & j) == 0) {
-                        if ((j & (-420919379968L)) == 0 && (j3 & JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN) == 0) {
+                        if ((j & (-420919379968L)) == 0 && (j3 & 268435456L) == 0) {
                             return -1;
                         }
                         if (this.f7515 != 1) {
@@ -2432,7 +2432,7 @@ public final class C2336 implements InterfaceC2335 {
                 }
                 return 75;
             case 2:
-                if (((-576471620722362368L) & j) == 0 && (j3 & JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN) == 0) {
+                if (((-576471620722362368L) & j) == 0 && (j3 & 268435456L) == 0) {
                     if ((j & 576471199811371008L) == 0) {
                         return -1;
                     }
@@ -2443,7 +2443,7 @@ public final class C2336 implements InterfaceC2335 {
                 }
             case 3:
                 if ((6052857694740905984L & j) == 0) {
-                    if ((j & (-6629328215951640576L)) == 0 && (j3 & JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN) == 0) {
+                    if ((j & (-6629328215951640576L)) == 0 && (j3 & 268435456L) == 0) {
                         return -1;
                     }
                     if (this.f7515 != 3) {
@@ -2454,7 +2454,7 @@ public final class C2336 implements InterfaceC2335 {
                 }
             case 4:
                 if (((-9006073352820203520L) & j) == 0) {
-                    if ((j & 2376745136868562944L) == 0 && (j3 & JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN) == 0) {
+                    if ((j & 2376745136868562944L) == 0 && (j3 & 268435456L) == 0) {
                         return -1;
                     }
                     if (this.f7515 != 4) {
@@ -2465,7 +2465,7 @@ public final class C2336 implements InterfaceC2335 {
                 }
             case 5:
                 if ((156223044489052160L & j) == 0) {
-                    if ((j & 2364637280992237568L) == 0 && (j3 & JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN) == 0) {
+                    if ((j & 2364637280992237568L) == 0 && (j3 & 268435456L) == 0) {
                         return -1;
                     }
                     this.f7516 = 75;
@@ -2479,7 +2479,7 @@ public final class C2336 implements InterfaceC2335 {
                         this.f7515 = 6;
                         return 42;
                     }
-                } else if ((j & 105553722347520L) == 0 && (j3 & JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN) == 0) {
+                } else if ((j & 105553722347520L) == 0 && (j3 & 268435456L) == 0) {
                     return -1;
                 }
             case 7:
@@ -2502,7 +2502,7 @@ public final class C2336 implements InterfaceC2335 {
                 }
             case 9:
                 if ((85899345920L & j) == 0) {
-                    if ((j & FieldInfo.JIT) == 0) {
+                    if ((j & 18014398509481984L) == 0) {
                         return -1;
                     }
                     this.f7516 = 75;
@@ -2510,7 +2510,7 @@ public final class C2336 implements InterfaceC2335 {
                     return 42;
                 }
             case 10:
-                if ((j & FieldInfo.JIT) == 0) {
+                if ((j & 18014398509481984L) == 0) {
                     return -1;
                 }
                 if (this.f7515 != 10) {
@@ -2519,7 +2519,7 @@ public final class C2336 implements InterfaceC2335 {
                     return 42;
                 }
             case 11:
-                return (j & FieldInfo.JIT) != 0 ? 42 : -1;
+                return (j & 18014398509481984L) != 0 ? 42 : -1;
             default:
                 return -1;
         }

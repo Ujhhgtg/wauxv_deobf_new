@@ -6,7 +6,7 @@ import p000.AbstractC2784;
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
 interface a {
-    public static final String a = be.b().b(be.v);
+    public static final String a = be.b().b("subp");
     public static final String b = "id";
     public static final String c;
     public static final String d = ".db";
@@ -29,7 +29,7 @@ interface a {
     }
 
     static {
-        String strB = be.b().b(be.w);
+        String strB = be.b().b("subua");
         c = strB;
         e = AbstractC2784.m4748(strB, "%s.db");
     }

@@ -47,7 +47,7 @@ public class C1849 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public final int m3613() {
         C1851 c1851 = (C1851) f6153.get(this);
-        c1851.getClass();
+        
         long j = C1851.f6156.get(c1851);
         return (((int) ((j & 1152921503533105152L) >> 30)) - ((int) (1073741823 & j))) & 1073741823;
     }

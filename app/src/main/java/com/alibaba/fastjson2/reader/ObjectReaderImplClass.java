@@ -19,7 +19,7 @@ final class ObjectReaderImplClass extends ObjectReaderPrimitive {
 
     @Override // com.alibaba.fastjson2.reader.ObjectReaderPrimitive, com.alibaba.fastjson2.reader.ObjectReader
     public Object readJSONBObject(JSONReader jSONReader, Type type, Object obj, long j) {
-        if (!jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY) || jSONReader.readTypeHashCode() == TYPE_HASH) {
+        if (!jSONReader.nextIfMatch(-110) || jSONReader.readTypeHashCode() == TYPE_HASH) {
             return readObject(jSONReader, type, obj, j);
         }
         throw new JSONException(jSONReader.info("not support autoType : " + jSONReader.getString()));

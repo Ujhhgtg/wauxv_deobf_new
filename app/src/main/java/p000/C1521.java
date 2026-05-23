@@ -32,7 +32,7 @@ public final class C1521 extends AbstractC1628 {
         if (c0519.m1833()) {
             c0519.m1831(8, "magic: " + new C0917("dex\n035\u0000").m2430());
             c0519.m1831(4, "checksum");
-            c0519.m1831(20, a.A);
+            c0519.m1831(20, "signature");
             int i2 = c1023.f3753;
             if (i2 < 0) {
                 throw new RuntimeException("file size not yet known");

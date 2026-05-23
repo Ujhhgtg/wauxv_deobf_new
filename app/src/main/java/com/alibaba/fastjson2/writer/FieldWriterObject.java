@@ -36,9 +36,9 @@ public class FieldWriterObject<T> extends FieldWriter<T> {
 
     public FieldWriterObject(String str, int i, long j, String str2, Locale locale, String str3, Type type, Class cls, Field field, Method method, Function function) {
         super(str, i, j, str2, locale, str3, type, cls, field, method, function);
-        this.unwrapped = (j & FieldInfo.UNWRAPPED_MASK) != 0;
+        this.unwrapped = (j & 562949953421312L) != 0;
         if (cls == Currency.class) {
-            this.initValueClass = cls;
+            this.initValueClass = Currency.class;
             this.initObjectWriter = ObjectWriterImplCurrency.INSTANCE_FOR_FIELD;
         }
         this.array = cls.isArray() || Collection.class.isAssignableFrom(cls) || cls == AtomicLongArray.class || cls == AtomicIntegerArray.class;
@@ -236,7 +236,7 @@ public class FieldWriterObject<T> extends FieldWriter<T> {
         if (cls2 == null || this.initObjectWriter == ObjectWriterBaseModule.VoidObjectWriter.INSTANCE) {
             return getObjectWriterVoid(jSONWriter, cls);
         }
-        boolean zTypeMatch = cls2 == cls || (this.writeUsing && cls2.isAssignableFrom(cls)) || ((cls2 == Map.class && cls2.isAssignableFrom(cls)) || (cls2 == List.class && cls2.isAssignableFrom(cls)));
+        boolean zTypeMatch = cls2 == cls || (this.writeUsing && cls2.isAssignableFrom(cls)) || ((cls2 == Map.class && Map.class.isAssignableFrom(cls)) || (cls2 == List.class && List.class.isAssignableFrom(cls)));
         if (!zTypeMatch && cls2.isPrimitive()) {
             zTypeMatch = typeMatch(cls2, cls);
         }
@@ -249,7 +249,7 @@ public class FieldWriterObject<T> extends FieldWriter<T> {
     public final ObjectWriter getObjectWriterVoid(JSONWriter jSONWriter, Class cls) {
         ObjectWriter objectWriterImplDoubleValueArray;
         boolean z = false;
-        if (BeanUtils.isExtendedMap(cls) && BeanUtils.SUPER.equals(this.fieldName)) {
+        if (BeanUtils.isExtendedMap(cls) && "$super$".equals(this.fieldName)) {
             JSONWriter.Context context = jSONWriter.context;
             ObjectWriter objectWriter = context.provider.getObjectWriter(this.fieldType, this.fieldClass, ((this.features | context.getFeatures()) & JSONWriter.Feature.FieldBased.mask) != 0);
             if (this.initObjectWriter == null) {

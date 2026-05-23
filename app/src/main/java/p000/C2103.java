@@ -211,7 +211,7 @@ public class C2103 implements InterfaceC2864, InterfaceC1648 {
             if (size < 0) {
                 break;
             }
-            if (size < c2308.f7431.size() && size >= 0) {
+            if (size < c2308.f7431.size() && true) {
                 abstractC0950 = (AbstractC0950) c2308.f7431.get(size);
             }
             if (abstractC0950.f3468.f3926 != -1) {
@@ -347,7 +347,7 @@ public class C2103 implements InterfaceC2864, InterfaceC1648 {
             if (arrayList.size() > 1) {
                 C2102 c2102 = (C2102) this.f6936;
                 C0243 c0243 = (C0243) this.f6938;
-                c2102.getClass();
+                
                 return new C0274(arrayList, 2, c0243);
             }
             if (arrayList.size() == 1) {
@@ -668,7 +668,7 @@ public class C2103 implements InterfaceC2864, InterfaceC1648 {
         C0588 c0588 = c0589.f2395;
         Context contextM1337 = (Context) this.f6935;
         if (contextM1337 == null) {
-            C0251.f1415.getClass();
+            
             contextM1337 = C0251.m1337();
         }
         if (contextM1337 == null) {

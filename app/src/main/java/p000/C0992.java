@@ -34,7 +34,7 @@ public final class C0992 extends AnimatorListenerAdapter {
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public void onAnimationCancel(Animator animator) {
-        switch (this.f3614) {
+        switch (1) {
             case 1:
                 this.f3616.setAlpha(1.0f);
                 break;
@@ -46,7 +46,7 @@ public final class C0992 extends AnimatorListenerAdapter {
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationEnd(Animator animator) {
-        switch (this.f3614) {
+        switch (1) {
             case 0:
                 this.f3617.setListener(null);
                 this.f3616.setAlpha(1.0f);
@@ -69,12 +69,12 @@ public final class C0992 extends AnimatorListenerAdapter {
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationStart(Animator animator) {
-        switch (this.f3614) {
+        switch (1) {
             case 0:
-                this.f3618.getClass();
+                
                 break;
             default:
-                this.f3618.getClass();
+                
                 break;
         }
     }

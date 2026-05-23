@@ -31,7 +31,7 @@ public final class C1883 {
         Iterator it = this.f6229.iterator();
         while (it.hasNext()) {
             if (!((InterfaceC2645) it.next()).mo3659(cls)) {
-                int i = C2644.f8538;
+                int i = 0;
                 throw new C2644("Can't call this construct: new " + cls.getName() + "(" + C2644.m4640(objArrUnwrap) + ")");
             }
         }
@@ -41,7 +41,7 @@ public final class C1883 {
     public final void m3664() {
         Iterator it = this.f6229.iterator();
         while (it.hasNext()) {
-            ((InterfaceC2645) it.next()).getClass();
+            
         }
     }
 
@@ -50,7 +50,7 @@ public final class C1883 {
         Iterator it = this.f6229.iterator();
         while (it.hasNext()) {
             if (!((InterfaceC2645) it.next()).mo3658(cls, str)) {
-                int i = C2644.f8538;
+                int i = 0;
                 throw new C2644("Can't get this static field: " + cls.getTypeName() + "." + str);
             }
         }
@@ -66,7 +66,7 @@ public final class C1883 {
         Iterator it = this.f6229.iterator();
         while (it.hasNext()) {
             if (!((InterfaceC2645) it.next()).mo3662(obj)) {
-                int i = C2644.f8538;
+                int i = 0;
                 String typeName = obj.getClass().getTypeName();
                 String strM4640 = C2644.m4640(objArrUnwrap);
                 StringBuilder sb = new StringBuilder("Can't invoke this method: ");
@@ -87,7 +87,7 @@ public final class C1883 {
                 try {
                     m3669(obj2, declaringClass, name);
                 } catch (C2644 unused) {
-                    int i2 = C2644.f8538;
+                    int i2 = 0;
                     String typeName2 = declaringClass.getTypeName();
                     String strM4641 = C2644.m4640(new Object[]{obj2});
                     StringBuilder sb2 = new StringBuilder("Can't set this static field using reflection: ");
@@ -102,7 +102,7 @@ public final class C1883 {
                 try {
                     m3668(obj3, name, obj2);
                 } catch (C2644 unused2) {
-                    int i3 = C2644.f8538;
+                    int i3 = 0;
                     String typeName3 = obj3.getClass().getTypeName();
                     String strM4642 = C2644.m4640(new Object[]{obj2});
                     StringBuilder sb3 = new StringBuilder("Can't set this field using reflection: ");
@@ -123,7 +123,7 @@ public final class C1883 {
                 try {
                     m3665(declaringClass2, name2);
                 } catch (C2644 unused3) {
-                    int i4 = C2644.f8538;
+                    int i4 = 0;
                     throw new C2644("Can't get this static field using reflection: " + declaringClass2.getTypeName() + "." + name2);
                 }
             } else {
@@ -169,7 +169,7 @@ public final class C1883 {
                 if (obj6 instanceof Object[]) {
                     objArrCopyOfRange = (Object[]) obj6;
                 } else {
-                    objArrCopyOfRange = Arrays.copyOfRange(objArrUnwrap, 1, objArrUnwrap.length);
+                    objArrCopyOfRange = Arrays.copyOfRange(objArrUnwrap, 1, 2);
                 }
             } else {
                 objArrCopyOfRange = Arrays.copyOfRange(objArrUnwrap, 1, objArrUnwrap.length);
@@ -181,7 +181,7 @@ public final class C1883 {
                     m3667(declaringClass4, name3, objArrCopyOfRange);
                     return;
                 } catch (C2644 unused7) {
-                    int i5 = C2644.f8538;
+                    int i5 = 0;
                     String typeName4 = declaringClass4.getTypeName();
                     String strM4643 = C2644.m4640(objArrCopyOfRange);
                     StringBuilder sb4 = new StringBuilder("Can't invoke this static method using reflection: ");
@@ -196,7 +196,7 @@ public final class C1883 {
             try {
                 m3666(obj7, name3, objArrCopyOfRange);
             } catch (C2644 unused8) {
-                int i6 = C2644.f8538;
+                int i6 = 0;
                 String typeName5 = obj7.getClass().getTypeName();
                 String strM4644 = C2644.m4640(objArrCopyOfRange);
                 StringBuilder sb5 = new StringBuilder("Can't invoke this method using reflection: ");
@@ -214,7 +214,7 @@ public final class C1883 {
         Object[] objArrUnwrap = Primitive.unwrap(objArr);
         Iterator it = this.f6229.iterator();
         while (it.hasNext()) {
-            ((InterfaceC2645) it.next()).getClass();
+            
         }
         if (str.equals("getLength") && objArrUnwrap.length == 1 && cls.isAssignableFrom(Array.class)) {
             Object obj = objArrUnwrap[0];
@@ -232,7 +232,7 @@ public final class C1883 {
         Iterator it = this.f6229.iterator();
         while (it.hasNext()) {
             if (!((InterfaceC2645) it.next()).mo3660(obj)) {
-                int i = C2644.f8538;
+                int i = 0;
                 String typeName = obj.getClass().getTypeName();
                 String strM4640 = C2644.m4640(new Object[]{objUnwrap});
                 StringBuilder sb = new StringBuilder("Can't set this field: ");
@@ -251,7 +251,7 @@ public final class C1883 {
         Iterator it = this.f6229.iterator();
         while (it.hasNext()) {
             if (!((InterfaceC2645) it.next()).mo3661(cls, str)) {
-                int i = C2644.f8538;
+                int i = 0;
                 String typeName = cls.getTypeName();
                 String strM4640 = C2644.m4640(new Object[]{objUnwrap});
                 StringBuilder sb = new StringBuilder("Can't set this static field: ");

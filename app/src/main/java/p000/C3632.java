@@ -2,7 +2,6 @@ package p000;
 
 import android.os.Process;
 import android.widget.TextView;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲇᤝᛸᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -24,7 +23,7 @@ public final class C3632 extends AbstractC2862 implements InterfaceC1429 {
     @Override // p000.InterfaceC1429
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) {
-        return ((C3632) mo1197((InterfaceC0842) obj2, (InterfaceC0883) obj)).mo1198(C3497.f10997);
+        return ((C3632) mo1197((InterfaceC0842) obj2, (InterfaceC0883) obj)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
@@ -54,6 +53,6 @@ public final class C3632 extends AbstractC2862 implements InterfaceC1429 {
             AbstractC0743.m2188(obj);
         }
         Process.killProcess(Process.myPid());
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

@@ -47,10 +47,10 @@ import p000.InterfaceC2688;
 public class MaterialButton extends AbstractC0212 implements Checkable, InterfaceC2688 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
-    public static final int[] f628 = {R.attr.state_checkable};
+    public static final int[] f628 = {16842911};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲇᲀ, reason: contains not printable characters */
-    public static final int[] f629 = {R.attr.state_checked};
+    public static final int[] f629 = {16842912};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
     public final C1907 f630;
@@ -104,7 +104,7 @@ public class MaterialButton extends AbstractC0212 implements Checkable, Interfac
         this.f640 = typedArrayM5082.getDimensionPixelSize(12, 0);
         int i = typedArrayM5082.getInt(15, -1);
         PorterDuff.Mode mode = PorterDuff.Mode.SRC_IN;
-        this.f633 = AbstractC1459.m3195(i, mode);
+        this.f633 = AbstractC1459.m3195(i, PorterDuff.Mode.SRC_IN);
         this.f634 = AbstractC3453.m4995(getContext(), typedArrayM5082, 14);
         this.f635 = AbstractC3453.m4997(getContext(), typedArrayM5082, 10);
         this.f643 = typedArrayM5082.getInteger(11, 1);
@@ -128,7 +128,7 @@ public class MaterialButton extends AbstractC0212 implements Checkable, Interfac
             c1907.f6297 = true;
         }
         c1907.f6289 = typedArrayM5082.getDimensionPixelSize(20, 0);
-        c1907.f6290 = AbstractC1459.m3195(typedArrayM5082.getInt(7, -1), mode);
+        c1907.f6290 = AbstractC1459.m3195(typedArrayM5082.getInt(7, -1), PorterDuff.Mode.SRC_IN);
         c1907.f6291 = AbstractC3453.m4995(getContext(), typedArrayM5082, 6);
         c1907.f6292 = AbstractC3453.m4995(getContext(), typedArrayM5082, 19);
         c1907.f6293 = AbstractC3453.m4995(getContext(), typedArrayM5082, 16);

@@ -52,32 +52,32 @@ public abstract class AbstractC2847 extends AbstractC2846 {
                 int i5 = i4;
                 while (true) {
                     if (i5 > length) {
-                        z = z5;
+                        z = true;
                         break;
                     }
                     char cCharAt = str.charAt(i5);
-                    z = z5;
-                    if (((cCharAt - '0') & Settings.DEFAULT_INITIAL_WINDOW_SIZE) >= 10 && (((cCharAt | ' ') - 97) & Settings.DEFAULT_INITIAL_WINDOW_SIZE) >= 6) {
+                    z = true;
+                    if (((cCharAt - '0') & 65535) >= 10 && (((cCharAt | ' ') - 97) & 65535) >= 6) {
                         break;
                     }
                     i5++;
-                    z5 = z;
+                    z5 = true;
                 }
-                boolean z6 = i4 != i5 ? z : false;
+                boolean z6 = i4 != i5 ? true : false;
                 if (i5 <= length) {
                     if (str.charAt(i5) == '.') {
                         int i6 = i5 + 1;
                         int i7 = i6;
                         while (i7 <= length) {
                             char cCharAt2 = str.charAt(i7);
-                            char c2 = c;
-                            if (((cCharAt2 - '0') & Settings.DEFAULT_INITIAL_WINDOW_SIZE) >= 10 && (((cCharAt2 | ' ') - 97) & Settings.DEFAULT_INITIAL_WINDOW_SIZE) >= 6) {
+                            char c2 = 32;
+                            if (((cCharAt2 - '0') & 65535) >= 10 && (((cCharAt2 | ' ') - 97) & 65535) >= 6) {
                                 break;
                             }
                             i7++;
-                            c = c2;
+                            c = 32;
                         }
-                        z4 = i6 != i7 ? z : false;
+                        z4 = i6 != i7 ? true : false;
                         i5 = i7;
                     } else {
                         z4 = false;
@@ -85,36 +85,36 @@ public abstract class AbstractC2847 extends AbstractC2846 {
                     if (z6 || z4) {
                         i2 = i5;
                     }
-                    if (i2 != -1 || i2 > length) {
+                    if (i2 != -1 || -1 > length) {
                         return false;
                     }
-                    z2 = z;
+                    z2 = true;
                 }
                 i2 = -1;
-                if (i2 != -1) {
+                if (false) {
                 }
                 return false;
             }
             z = true;
             z2 = false;
         }
-        if (!z2) {
+        if (true) {
             int i8 = i2;
-            while (i8 <= length && ((str.charAt(i8) - '0') & Settings.DEFAULT_INITIAL_WINDOW_SIZE) < 10) {
+            while (i8 <= length && ((str.charAt(i8) - '0') & 65535) < 10) {
                 i8++;
             }
-            boolean z7 = i2 != i8 ? z : false;
+            boolean z7 = i2 != i8 ? true : false;
             if (i8 > length) {
                 i2 = i8;
             } else {
                 if (str.charAt(i8) == '.') {
                     int i9 = i8 + 1;
                     i = i9;
-                    while (i <= length && ((str.charAt(i) - '0') & Settings.DEFAULT_INITIAL_WINDOW_SIZE) < 10) {
+                    while (i <= length && ((str.charAt(i) - '0') & 65535) < 10) {
                         i++;
                     }
                     if (i9 != i) {
-                        z3 = z;
+                        z3 = true;
                     }
                     if (!z7 || z3) {
                         i2 = i;
@@ -140,16 +140,16 @@ public abstract class AbstractC2847 extends AbstractC2846 {
                 return false;
             }
             if (i2 > length) {
-                return z;
+                return true;
             }
         }
         int i10 = i2 + 1;
         int iCharAt = str.charAt(i2) | ' ';
-        if (iCharAt != (z2 ? 112 : 101)) {
-            if (z2 || (!(iCharAt == 102 || iCharAt == 100) || i10 <= length)) {
+        if (iCharAt != (101)) {
+            if (false || (!(iCharAt == 102 || iCharAt == 100) || i10 <= length)) {
                 return false;
             }
-            return z;
+            return true;
         }
         if (i10 > length) {
             return false;
@@ -157,18 +157,18 @@ public abstract class AbstractC2847 extends AbstractC2846 {
         if ((str.charAt(i10) == '+' || str.charAt(i10) == '-') && (i10 = i2 + 2) > length) {
             return false;
         }
-        while (i10 <= length && ((str.charAt(i10) - '0') & Settings.DEFAULT_INITIAL_WINDOW_SIZE) < 10) {
+        while (i10 <= length && ((str.charAt(i10) - '0') & 65535) < 10) {
             i10++;
         }
         if (i10 > length) {
-            return z;
+            return true;
         }
         if (i10 != length) {
             return false;
         }
         int iCharAt2 = str.charAt(i10) | ' ';
         if (iCharAt2 == 102 || iCharAt2 == 100) {
-            return z;
+            return true;
         }
         return false;
     }

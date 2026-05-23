@@ -9,7 +9,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.RadioGroup;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
 import com.google.android.material.checkbox.MaterialCheckBox;
 import com.google.android.material.radiobutton.MaterialRadioButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -17,7 +16,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import me.hd.wauxv.ui.setting.view.ModuleTabLayout;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲁᛸᲀᲈᤝ, reason: contains not printable characters */
@@ -73,12 +71,12 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                 C2044.f6827.m2548(String.valueOf(c2015.f6723.getText()));
                 C2047.f6830.m2548(String.valueOf(c2015.f6726.getText()));
                 C2048.f6831.m2548(String.valueOf(c2015.f6727.getText()));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 1:
                 C2022 c2022 = (C2022) this.f6825;
                 C2054.f6841.m2548(String.valueOf(c2022.f6775.getText()));
                 C2055.f6842.m2548(String.valueOf(c2022.f6776.getText()));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 2:
                 C2021 c2021 = (C2021) this.f6825;
                 C2066.f6862.m2548(String.valueOf(((TextInputEditText) c2021.f6766).getText()));
@@ -98,14 +96,14 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                 c2064.m2545(numM4855 != null ? numM4855.intValue() : 10);
                 C2069.f6865.m2543(((MaterialCheckBox) c2021.f6772).isChecked());
                 C2070.f6866.m2543(((MaterialCheckBox) c2021.f6773).isChecked());
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 3:
                 C2020 c2020 = (C2020) this.f6825;
                 C2093.f6904.m2548(String.valueOf(c2020.f6759.getText()));
                 C2095.f6906.m2548(String.valueOf(c2020.f6761.getText()));
                 C2092.f6903.m2548(String.valueOf(c2020.f6758.getText()));
                 C2094.f6905.m2548(String.valueOf(c2020.f6760.getText()));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 4:
                 C1654 c1654 = (C1654) ((C0542) this.f6825).f2252;
                 String str = c1654.f5599;
@@ -131,7 +129,7 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                 }
                 String str3 = AbstractC2841.m4836("") ? null : "";
                 if (str3 != null) {
-                    c2234.f7235 = str3;
+                    c2234.f7235 = "";
                 }
                 return c2234;
             case 5:
@@ -158,18 +156,18 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                 }
                 CharSequence charSequenceM4063 = str6 != null ? AbstractC2205.m4062(str6) : null;
                 CharSequence charSequence2 = !AbstractC2841.m4836("") ? "" : null;
-                CharSequence charSequenceM4064 = charSequence2 != null ? AbstractC2205.m4062(charSequence2) : null;
+                CharSequence charSequenceM4064 = charSequence2 != null ? AbstractC2205.m4062("") : null;
                 CharSequence charSequence3 = !AbstractC2841.m4836("") ? "" : null;
-                CharSequence charSequenceM4065 = charSequence3 != null ? AbstractC2205.m4062(charSequence3) : null;
+                CharSequence charSequenceM4065 = charSequence3 != null ? AbstractC2205.m4062("") : null;
                 CharSequence charSequence4 = !AbstractC2841.m4836("") ? "" : null;
-                CharSequence charSequenceM4066 = charSequence4 != null ? AbstractC2205.m4062(charSequence4) : null;
+                CharSequence charSequenceM4066 = charSequence4 != null ? AbstractC2205.m4062("") : null;
                 String str7 = !AbstractC2841.m4836("") ? "" : null;
-                String str8 = str7 != null ? str7 : null;
+                String str8 = str7 != null ? "" : null;
                 String str9 = !AbstractC2841.m4836("") ? "" : null;
-                String str10 = str9 != null ? str9 : null;
+                String str10 = str9 != null ? "" : null;
                 CharSequence charSequence5 = !AbstractC2841.m4836("") ? "" : null;
                 if (charSequence5 != null) {
-                    notification.tickerText = AbstractC2205.m4062(charSequence5);
+                    notification.tickerText = AbstractC2205.m4062("");
                 }
                 String str11 = !AbstractC2841.m4836("") ? "" : null;
                 if (str11 == null) {
@@ -307,27 +305,27 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                     intent2.putExtra("Contact_User", strValueOf);
                     activityM4034.startActivity(intent2);
                 }
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 8:
                 C2013 c2013 = (C2013) this.f6825;
                 C2348.f7540.m2543(c2013.f6712.isChecked());
                 C2347.f7539.m2543(c2013.f6711.isChecked());
                 C2346.f7538.m2543(c2013.f6710.isChecked());
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 9:
                 C2018 c2018 = (C2018) this.f6825;
                 C2458.f7803.m2548(String.valueOf(c2018.f6746.getText()));
                 C2457.f7802.m2548(String.valueOf(c2018.f6745.getText()));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 10:
                 C2602.f8466.m2544(((C2023) this.f6825).f6777.getValue());
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 11:
                 C2022 c2023 = (C2022) this.f6825;
                 C2630.f8519.m2548(String.valueOf(c2023.f6775.getText()));
                 C2631.f8520.m2548(String.valueOf(c2023.f6776.getText()));
-                return C3497.f10997;
-            case Opcodes.FCONST_1 /* 12 */:
+                return Unit.INSTANCE;
+            case 12 /* 12 */:
                 C2656 c2656 = (C2656) this.f6825;
                 return Integer.valueOf(AbstractC1458.m3161(c2656, c2656.f8569));
             case 13:
@@ -369,8 +367,8 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                         arrayList = new ArrayList(AbstractC0746.m2214(listM4684, 10));
                         i2 = 0;
                         for (Object obj : listM4684) {
-                            i3 = i2 + 1;
-                            if (i2 >= 0) {
+                            i3 = 1;
+                            if (true) {
                                 AbstractC0745.m2213();
                                 throw null;
                             }
@@ -401,8 +399,8 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                     arrayList = new ArrayList(AbstractC0746.m2214(listM4685, 10));
                     i2 = 0;
                     while (r9.hasNext()) {
-                        i3 = i2 + 1;
-                        if (i2 >= 0) {
+                        i3 = 1;
+                        if (true) {
                             AbstractC0745.m2213();
                             throw null;
                         }
@@ -418,17 +416,17 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                     AbstractC0750.m2217(arrayList8, arrayList2);
                 }
                 break;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 C2103 c2104 = (C2103) this.f6825;
                 C2739.f8812.m2548(String.valueOf(((TextInputEditText) c2104.f6937).getText()));
                 C2740.f8813.m2548(String.valueOf(((TextInputEditText) c2104.f6938).getText()));
                 C2738.f8811.m2543(((MaterialCheckBox) c2104.f6936).isChecked());
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 15:
                 C2022 c2024 = (C2022) this.f6825;
                 C2766.f8855.m2548(String.valueOf(c2024.f6775.getText()));
                 C2767.f8856.m2548(String.valueOf(c2024.f6776.getText()));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 16:
                 C0243 c0243 = (C0243) this.f6825;
                 int checkedRadioButtonId = ((RadioGroup) c0243.f1406).getCheckedRadioButtonId();
@@ -437,19 +435,19 @@ public final /* synthetic */ class C2042 implements InterfaceC1414 {
                 } else if (checkedRadioButtonId == ((MaterialRadioButton) c0243.f1405).getId()) {
                     C2771.f8868.m2545(EnumC2770.f8865.f8867);
                 }
-                return C3497.f10997;
-            case Opcodes.SIPUSH /* 17 */:
+                return Unit.INSTANCE;
+            case 17 /* 17 */:
                 C2012 c2012 = (C2012) this.f6825;
                 C2796 c2796 = C2796.f8922;
                 Long lM4854 = AbstractC2848.m4854(String.valueOf(c2012.f6709.getText()));
                 c2796.m2546(lM4854 != null ? lM4854.longValue() : 88888L);
-                return C3497.f10997;
-            case Opcodes.LDC /* 18 */:
+                return Unit.INSTANCE;
+            case 18 /* 18 */:
                 ((C3560) this.f6825).invoke();
-                return C3497.f10997;
+                return Unit.INSTANCE;
             default:
                 C3620.f11318.m2545((int) ((C2023) this.f6825).f6777.getValue());
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 }

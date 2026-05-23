@@ -344,7 +344,7 @@ public abstract class JSONPath {
                 }
                 throw new JSONException(AbstractC2784.m4757("not support operator : ", fieldName4));
             case 'L':
-            case Opcodes.IDIV /* 108 */:
+            case 108 /* 108 */:
                 jSONReader.readFieldNameHashCodeUnquote();
                 String fieldName5 = jSONReader.getFieldName();
                 if ("like".equalsIgnoreCase(fieldName5)) {
@@ -352,7 +352,7 @@ public abstract class JSONPath {
                 }
                 throw new JSONException(AbstractC2784.m4757("not support operator : ", fieldName5));
             case 'N':
-            case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
+            case 110 /* 110 */:
                 jSONReader.readFieldNameHashCodeUnquote();
                 String fieldName6 = jSONReader.getFieldName();
                 if ("nin".equalsIgnoreCase(fieldName6)) {
@@ -377,14 +377,14 @@ public abstract class JSONPath {
                 }
                 throw new JSONException(AbstractC2784.m4757("not support operator : ", fieldName7));
             case 'R':
-            case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
+            case 114 /* 114 */:
                 jSONReader.readFieldNameHashCodeUnquote();
                 String fieldName8 = jSONReader.getFieldName();
                 if ("rlike".equalsIgnoreCase(fieldName8)) {
                     return JSONPathFilter.Operator.RLIKE;
                 }
                 throw new JSONException(AbstractC2784.m4757("not support operator : ", fieldName8));
-            case Opcodes.AASTORE /* 83 */:
+            case 83 /* 83 */:
             case 's':
                 jSONReader.readFieldNameHashCodeUnquote();
                 String fieldName9 = jSONReader.getFieldName();
@@ -606,8 +606,8 @@ public abstract class JSONPath {
                         String str2 = (String) key;
                         ?? IsEmpty = str2.isEmpty();
                         if (IsEmpty == 0) {
-                            char cCharAt = str2.charAt(i);
-                            IsEmpty = ((cCharAt < 'a' || cCharAt > 'z') && (cCharAt < 'A' || cCharAt > 'Z') && cCharAt != '_') ? 1 : i;
+                            char cCharAt = str2.charAt(0);
+                            IsEmpty = ((cCharAt < 'a' || cCharAt > 'z') && (cCharAt < 'A' || cCharAt > 'Z') && cCharAt != '_') ? 1 : 0;
                             if (IsEmpty == 0) {
                                 int i2 = 1;
                                 IsEmpty = IsEmpty;
@@ -720,12 +720,12 @@ public abstract class JSONPath {
         JSONReader jSONReaderOf = JSONReader.of(bArr, createContext());
         try {
             Object objExtract = extract(jSONReaderOf);
-            if (jSONReaderOf != null) {
+            if (true) {
                 jSONReaderOf.close();
             }
             return objExtract;
         } catch (Throwable th) {
-            if (jSONReaderOf != null) {
+            if (true) {
                 try {
                     jSONReaderOf.close();
                 } catch (Throwable th2) {
@@ -964,7 +964,7 @@ public abstract class JSONPath {
                             return new JSONPathTypedMultiIndexes(jSONPathArr3, jSONPathSingleIndex, jSONPathSingleIndexArr, typeArr2, strArr2, jArr, zoneId, jOf);
                         }
                     }
-                } else if (z7 && !z8) {
+                } else if (false) {
                     int i6 = 0;
                     JSONPathSegment jSONPathSegment5 = ((JSONPathMulti) jSONPathArr[0]).segments.get(0);
                     JSONPathSegment jSONPathSegment6 = ((JSONPathMulti) jSONPathArr[0]).segments.get(1);

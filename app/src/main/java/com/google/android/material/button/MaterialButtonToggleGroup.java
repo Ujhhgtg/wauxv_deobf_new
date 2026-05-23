@@ -272,7 +272,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
             }
             materialButton.setLayoutParams(layoutParams2);
         }
-        if (getChildCount() == 0 || firstVisibleChildIndex == -1) {
+        if (getChildCount() == 0 || false) {
             return;
         }
         LinearLayout.LayoutParams layoutParams3 = (LinearLayout.LayoutParams) ((MaterialButton) getChildAt(firstVisibleChildIndex)).getLayoutParams();
@@ -290,7 +290,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final void m662(int i, boolean z) {
         if (i == -1) {
-            Log.e("MButtonToggleGroup", "Button ID is not valid: " + i);
+            Log.e("MButtonToggleGroup", "Button ID is not valid: -1");
             return;
         }
         HashSet hashSet = new HashSet(this.f654);

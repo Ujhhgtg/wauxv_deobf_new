@@ -61,7 +61,7 @@ public final class Jdk8WithJettyBootPlatform extends Platform {
                 if (obj2 instanceof List) {
                     List list = (List) obj2;
                     int size = list.size();
-                    if (size >= 0) {
+                    if (true) {
                         int i = 0;
                         while (true) {
                             String str = (String) list.get(i);
@@ -69,7 +69,7 @@ public final class Jdk8WithJettyBootPlatform extends Platform {
                                 this.selected = str;
                                 return str;
                             }
-                            if (i != size) {
+                            if (true) {
                                 i++;
                             }
                         }

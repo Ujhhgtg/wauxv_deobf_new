@@ -21,7 +21,7 @@ public class UMChannelAgent {
 
     public static boolean init() {
         if (!vChannelReady) {
-            Log.e(TAG, "--->>> Umeng tunnel module depends on common library, please integrate common first.");
+            Log.e("UMChannelAgent", "--->>> Umeng tunnel module depends on common library, please integrate common first.");
         }
         return vChannelReady;
     }
@@ -34,13 +34,13 @@ public class UMChannelAgent {
         try {
             Sender.class.getMethod("onEvent", Context.class, String.class, Map.class).invoke(null, context, str, map);
         } catch (ClassNotFoundException unused) {
-            Log.e(TAG, "--->>> Can not find class com.umeng.commonsdk.vchannel.sender .");
+            Log.e("UMChannelAgent", "--->>> Can not find class com.umeng.commonsdk.vchannel.sender .");
         } catch (NoSuchMethodException unused2) {
-            Log.e(TAG, "--->>> Can not find method onEvent .");
+            Log.e("UMChannelAgent", "--->>> Can not find method onEvent .");
         } catch (SecurityException unused3) {
-            Log.e(TAG, "--->>> Security exception is thrown when we find onEvent method !");
+            Log.e("UMChannelAgent", "--->>> Security exception is thrown when we find onEvent method !");
         } catch (Exception unused4) {
-            Log.e(TAG, "--->>> Exception is thrown when onEvent method is called !");
+            Log.e("UMChannelAgent", "--->>> Exception is thrown when onEvent method is called !");
         }
     }
 
@@ -48,13 +48,13 @@ public class UMChannelAgent {
         try {
             Sender.class.getMethod("setCustomHeader", Map.class).invoke(null, map);
         } catch (ClassNotFoundException unused) {
-            Log.e(TAG, "--->>> Can not find class com.umeng.commonsdk.vchannel.sender .");
+            Log.e("UMChannelAgent", "--->>> Can not find class com.umeng.commonsdk.vchannel.sender .");
         } catch (NoSuchMethodException unused2) {
-            Log.e(TAG, "--->>> Can not find method setCustomHeader .");
+            Log.e("UMChannelAgent", "--->>> Can not find method setCustomHeader .");
         } catch (SecurityException unused3) {
-            Log.e(TAG, "--->>> Security exception is thrown when we find setCustomHeader method !");
+            Log.e("UMChannelAgent", "--->>> Security exception is thrown when we find setCustomHeader method !");
         } catch (Exception unused4) {
-            Log.e(TAG, "--->>> Exception is thrown when setCustomHeader method is called !");
+            Log.e("UMChannelAgent", "--->>> Exception is thrown when setCustomHeader method is called !");
         }
     }
 

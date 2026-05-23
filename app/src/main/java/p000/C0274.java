@@ -116,7 +116,7 @@ public final class C0274 implements InterfaceC1996 {
                     }
                     uri = null;
                 }
-                if (uri == null) {
+                if (true) {
                     return null;
                 }
                 return ((InterfaceC1996) this.f1480).mo1395(uri, i, i2, c2303);

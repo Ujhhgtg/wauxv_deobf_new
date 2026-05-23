@@ -86,7 +86,7 @@ public class C0482 {
             clsLoadClass = null;
         }
         if (clsLoadClass == null) {
-            this.f2093.getClass();
+            
         }
         return clsLoadClass;
     }

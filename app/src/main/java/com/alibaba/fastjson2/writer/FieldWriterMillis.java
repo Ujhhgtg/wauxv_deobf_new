@@ -21,7 +21,7 @@ final class FieldWriterMillis<T> extends FieldWriterDate<T> {
     @Override // com.alibaba.fastjson2.writer.FieldWriterDate, com.alibaba.fastjson2.writer.FieldWriter
     public boolean write(JSONWriter jSONWriter, T t) {
         long longValue = this.propertyAccessor.getLongValue(t);
-        if (longValue == 0 && (this.features & JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE) != 0) {
+        if (longValue == 0 && (this.features & 4096L) != 0) {
             return false;
         }
         writeDate(jSONWriter, longValue);

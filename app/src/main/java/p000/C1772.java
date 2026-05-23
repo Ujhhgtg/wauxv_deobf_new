@@ -12,9 +12,9 @@ import p000.FragmentC2551;
 public final class C1772 extends AbstractC1186 {
     @Override // p000.AbstractC1186, android.app.Application.ActivityLifecycleCallbacks
     public void onActivityCreated(Activity activity, Bundle bundle) {
-        int i = FragmentC2551.f8107;
+        int i = 0;
         if (Build.VERSION.SDK_INT >= 29) {
-            FragmentC2551.C2552.Companion.getClass();
+            
             activity.registerActivityLifecycleCallbacks(new FragmentC2551.C2552());
         }
         FragmentManager fragmentManager = activity.getFragmentManager();

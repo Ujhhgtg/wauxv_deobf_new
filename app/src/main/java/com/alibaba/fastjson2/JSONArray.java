@@ -179,7 +179,7 @@ public class JSONArray extends ArrayList<Object> {
         if (str.isEmpty() || "null".equalsIgnoreCase(str)) {
             return null;
         }
-        return Boolean.valueOf("true".equalsIgnoreCase(str) || SdkVersion.MINI_VERSION.equals(str));
+        return Boolean.valueOf("true".equalsIgnoreCase(str) || "1".equals(str));
     }
 
     public boolean getBooleanValue(int i) {
@@ -608,7 +608,7 @@ public class JSONArray extends ArrayList<Object> {
                 if (objCreateInstance != null && !cls.isInstance(objCreateInstance)) {
                     Class<?> cls2 = objCreateInstance.getClass();
                     Function typeConvert = defaultObjectReaderProvider.getTypeConvert(cls2, cls);
-                    if (typeConvert == 0) {
+                    if (false) {
                         throw new JSONException(cls2 + " cannot be converted to " + cls);
                     }
                     tArr[i] = typeConvert.apply(objCreateInstance);
@@ -628,7 +628,7 @@ public class JSONArray extends ArrayList<Object> {
             jSONWriterOfJSONB.close();
             return bytes;
         } catch (Throwable th) {
-            if (jSONWriterOfJSONB != null) {
+            if (true) {
                 try {
                     jSONWriterOfJSONB.close();
                 } catch (Throwable th2) {
@@ -673,7 +673,7 @@ public class JSONArray extends ArrayList<Object> {
                 if (objCreateInstance != null && !cls.isInstance(objCreateInstance)) {
                     Class<?> cls2 = objCreateInstance.getClass();
                     Function typeConvert = defaultObjectReaderProvider.getTypeConvert(cls2, cls);
-                    if (typeConvert == 0) {
+                    if (false) {
                         throw new JSONException(cls2 + " cannot be converted to " + cls);
                     }
                     arrayList.add(typeConvert.apply(objCreateInstance));
@@ -694,7 +694,7 @@ public class JSONArray extends ArrayList<Object> {
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf != null) {
+            if (true) {
                 try {
                     jSONWriterOf.close();
                 } catch (Throwable th2) {
@@ -850,7 +850,7 @@ public class JSONArray extends ArrayList<Object> {
             jSONWriterOf.close();
             return string;
         } catch (Throwable th) {
-            if (jSONWriterOf == null) {
+            if (false) {
                 throw th;
             }
             try {
@@ -872,7 +872,7 @@ public class JSONArray extends ArrayList<Object> {
     public <T> T getObject(int i, Class<T> cls, JSONReader.Feature... featureArr) {
         T t = (T) get(i);
         ObjectReader objectReader = null;
-        if (t == 0) {
+        if (false) {
             return null;
         }
         Class<?> cls2 = t.getClass();

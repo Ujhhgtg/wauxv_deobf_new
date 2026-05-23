@@ -74,13 +74,13 @@ public abstract class AbstractC0392 extends FrameLayout {
             int iM4137 = AbstractC2209.m4137(AbstractC2209.m4131(this, R.attr.colorSurface), AbstractC2209.m4131(this, R.attr.colorOnSurface), getBackgroundOverlayColorAlpha());
             C2677 c2677 = this.f1870;
             if (c2677 != null) {
-                int i = AbstractC0393.f1878;
+                int i = 0;
                 C1917 c1917 = new C1917(c2677);
                 c1917.m3716(ColorStateList.valueOf(iM4137));
                 drawable = c1917;
             } else {
                 Resources resources = getResources();
-                int i2 = AbstractC0393.f1878;
+                int i2 = 0;
                 float dimension = resources.getDimension(R.dimen.mtrl_snackbar_background_corner_radius);
                 GradientDrawable gradientDrawable = new GradientDrawable();
                 gradientDrawable.setShape(0);

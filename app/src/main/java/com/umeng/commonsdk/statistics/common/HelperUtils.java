@@ -80,7 +80,7 @@ public class HelperUtils {
             }
             return stringBuffer.toString();
         } catch (NoSuchAlgorithmException e) {
-            MLog.i(TAG, "getMD5 error", e);
+            MLog.i("helper", "getMD5 error", e);
             return "";
         }
     }
@@ -96,7 +96,7 @@ public class HelperUtils {
             }
             return stringBuffer.toString();
         } catch (Throwable th) {
-            MLog.i(TAG, "getMD5 error", th);
+            MLog.i("helper", "getMD5 error", th);
             return "";
         }
     }

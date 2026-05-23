@@ -18,7 +18,7 @@ public abstract class AbstractC1138 {
     public final Object f4234;
 
     public AbstractC1138(AbstractC2491 abstractC2491) {
-        this.f4232 = Integer.MIN_VALUE;
+        this.f4232 = -2147483648;
         this.f4234 = new Rect();
         this.f4233 = abstractC2491;
     }

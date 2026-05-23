@@ -29,7 +29,7 @@ public final class C2234 {
     public final AudioAttributes f7237;
 
     public C2234(String str, int i) {
-        str.getClass();
+        
         this.f7232 = str;
         this.f7234 = i;
         this.f7237 = Notification.AUDIO_ATTRIBUTES_DEFAULT;

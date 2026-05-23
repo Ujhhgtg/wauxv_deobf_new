@@ -71,7 +71,7 @@ public class ck {
                             if (applicationContext instanceof Application) {
                                 ((Application) applicationContext).registerActivityLifecycleCallbacks(g);
                             } else {
-                                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: Failed to register ActivityLifecycleCallbacks, context is not Application");
+                                UMRTLog.e("MobclickRT", "[ncc]: Failed to register ActivityLifecycleCallbacks, context is not Application");
                             }
                         }
                     }
@@ -150,7 +150,7 @@ public class ck {
     }
 
     public static void a(String str, String str2, Bundle bundle) {
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: umc_cfg: call b a.");
+        UMRTLog.e("MobclickRT", "[ncc]: umc_cfg: call b a.");
         if (!TextUtils.isEmpty(str) && !TextUtils.isEmpty(str2)) {
             String string = "";
             if (bundle != null) {
@@ -171,13 +171,13 @@ public class ck {
             boolean z2 = z;
             JSONObject jSONObjectA = cn.a().a(str, str2, str3, f, z2);
             if (jSONObjectA != null) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: umc_cfg: upload b a. cd_flag is " + z2);
-                aw.a(new ar(ar.b, jSONObjectA), 0L, TimeUnit.SECONDS);
+                UMRTLog.e("MobclickRT", "[ncc]: umc_cfg: upload b a. cd_flag is " + z2);
+                aw.a(new ar("https://cnlogs.umeng.com/ext_event", jSONObjectA), 0L, TimeUnit.SECONDS);
                 Thread.sleep(2000L);
                 return;
             }
             return;
         }
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "[ncc]: onActUpEvent: type or token agument is empty string, pls check!");
+        UMRTLog.e("MobclickRT", "[ncc]: onActUpEvent: type or token agument is empty string, pls check!");
     }
 }

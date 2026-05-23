@@ -40,7 +40,7 @@ public final class C0786 {
         for (int i = 0; i < indexCount; i++) {
             int index = typedArrayObtainStyledAttributes.getIndex(i);
             if (index == 0) {
-                int resourceId = typedArrayObtainStyledAttributes.getResourceId(index, this.f2977);
+                int resourceId = typedArrayObtainStyledAttributes.getResourceId(0, this.f2977);
                 this.f2977 = resourceId;
                 String resourceTypeName = context.getResources().getResourceTypeName(resourceId);
                 context.getResources().getResourceName(resourceId);
@@ -48,13 +48,13 @@ public final class C0786 {
                     new C0792().m2303((ConstraintLayout) LayoutInflater.from(context).inflate(resourceId, (ViewGroup) null));
                 }
             } else if (index == 1) {
-                this.f2976 = typedArrayObtainStyledAttributes.getDimension(index, this.f2976);
+                this.f2976 = typedArrayObtainStyledAttributes.getDimension(1, this.f2976);
             } else if (index == 2) {
-                this.f2974 = typedArrayObtainStyledAttributes.getDimension(index, this.f2974);
+                this.f2974 = typedArrayObtainStyledAttributes.getDimension(2, this.f2974);
             } else if (index == 3) {
-                this.f2975 = typedArrayObtainStyledAttributes.getDimension(index, this.f2975);
+                this.f2975 = typedArrayObtainStyledAttributes.getDimension(3, this.f2975);
             } else if (index == 4) {
-                this.f2973 = typedArrayObtainStyledAttributes.getDimension(index, this.f2973);
+                this.f2973 = typedArrayObtainStyledAttributes.getDimension(4, this.f2973);
             } else {
                 Log.v("ConstraintLayoutStates", "Unknown tag");
             }

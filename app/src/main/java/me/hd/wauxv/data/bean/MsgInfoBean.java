@@ -8,19 +8,17 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import p000.AbstractC0270;
 import p000.AbstractC0745;
 import p000.AbstractC0968;
 import p000.AbstractC1574;
-import p000.AbstractC1745;
 import p000.AbstractC2207;
 import p000.AbstractC2784;
 import p000.AbstractC2834;
 import p000.AbstractC2841;
 import p000.AbstractC2848;
 import p000.C0505;
-import p000.C0652;
 import p000.C0674;
 import p000.C0772;
 import p000.C1189;
@@ -47,39 +45,39 @@ public final class MsgInfoBean {
 
     public MsgInfoBean(Object obj) {
         this.origin = obj;
-        int i = AbstractC1745.f5844;
-        C1299 c1299M3490 = AbstractC0968.m2484(obj).m3490();
+        int i = 0;
+        C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
         String[] strArr = AbstractC1574.f5469;
         c1299M3490.f6370 = "field_msgId";
         this.msgId = ((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).longValue();
-        C1299 c1299M3491 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3491.f6370 = "field_msgSvrId";
         this.msgSvrId = (Long) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
-        C1299 c1299M3492 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3492.f6370 = "field_type";
         this.type = ((Number) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024()).intValue();
-        C1299 c1299M3493 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3493.f6370 = "field_isSend";
         this.isSendInt = (Integer) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024();
-        C1299 c1299M3494 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3494 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3494.f6370 = "field_createTime";
         this.createTime = ((Number) ((C1315) AbstractC2784.m4741(c1299M3494)).m3024()).longValue();
-        C1299 c1299M3495 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3495 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3495.f6370 = "field_talker";
         this.talker = (String) ((C1315) AbstractC2784.m4741(c1299M3495)).m3024();
-        C1299 c1299M3496 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3496 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3496.f6370 = "field_content";
         this.originContent = (String) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024();
-        C1299 c1299M3497 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3497 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3497.f6370 = "field_imgPath";
         this.imgPath = (String) ((C1315) AbstractC2784.m4741(c1299M3497)).m3024();
-        C1299 c1299M3498 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3498 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3498.f6370 = "field_lvbuffer";
         this.lvBuffer = (byte[]) ((C1315) AbstractC2784.m4741(c1299M3498)).m3024();
-        C1299 c1299M3499 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3499 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3499.f6370 = "field_talkerId";
         this.talkerId = (Integer) ((C1315) AbstractC2784.m4741(c1299M3499)).m3024();
-        C1299 c1299M34910 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M34910 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M34910.f6370 = "field_msgSeq";
         this.msgSeq = (Long) ((C1315) AbstractC2784.m4741(c1299M34910)).m3024();
     }
@@ -144,7 +142,7 @@ public final class MsgInfoBean {
             String str6 = this.originContent;
             return "<msg " + AbstractC2834.m4817(AbstractC2841.m4846(AbstractC2841.m4844(str6, "<msg", str6), "/>")) + " />";
         }
-        if (!isShareCard() && !isLocation() && !isApp() && !isLink() && !isTransfer() && !isRedBag() && !isVideoNumberVideo() && !isNote() && !isQuote() && !isFile()) {
+        if (true && !isLocation() && !isApp() && !isLink() && !isTransfer() && !isRedBag() && !isVideoNumberVideo() && !isNote() && !isQuote() && !isFile()) {
             return isPat() ? getPatMsg().getTemplate() : this.originContent;
         }
         String str7 = this.originContent;
@@ -185,13 +183,13 @@ public final class MsgInfoBean {
             return "";
         }
         C0505 c0505 = new C0505(0);
-        if (bArr.length == 0 || bArr[0] != 123 || bArr[bArr.length - 1] != 125) {
+        if (false || bArr[0] != 123 || bArr[bArr.length - 1] != 125) {
             return "";
         }
         ByteBuffer byteBufferWrap = ByteBuffer.wrap(bArr);
         c0505.f2174 = byteBufferWrap;
         ByteBuffer byteBuffer = null;
-        if (byteBufferWrap == null) {
+        if (false) {
             "buffer";
             byteBufferWrap = null;
         }
@@ -297,7 +295,6 @@ public final class MsgInfoBean {
             return isGroupChat() ? AbstractC2841.m4845(this.originContent, ":") : this.talker;
         }
         Object objM2263 = C0772.m2263(C0772.f2872, EnumC3517.f11022.f11027);
-        "null cannot be cast to non-null type kotlin.String";
         return (String) objM2263;
     }
 
@@ -331,7 +328,6 @@ public final class MsgInfoBean {
     public final boolean isAtMe() {
         List<String> atUserList = getAtUserList();
         Object objM2263 = C0772.m2263(C0772.f2872, EnumC3517.f11022.f11027);
-        "null cannot be cast to non-null type kotlin.String";
         return atUserList.contains((String) objM2263);
     }
 
@@ -361,12 +357,12 @@ public final class MsgInfoBean {
         boolean zEndsWith = str.endsWith("@im.chatroom");
         C0674 c0674 = C0674.f2557;
         String str2 = this.talker;
-        c0674.getClass();
+        
         Object objM2066 = C0674.m2066(str2);
         if (objM2066 != null) {
-            C0652.f2504.getClass();
-            int i = AbstractC1745.f5844;
-            C1299 c1299M3490 = AbstractC0968.m2484(objM2066).m3490();
+            
+            int i = 0;
+            C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM2066).m3490();
             c1299M3490.f6370 = "field_chatroomStatus";
             boolean z = this.talker.endsWith("@chatroom") && (((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).intValue() & 131072) == 131072;
             if (zEndsWith || z) {
@@ -397,7 +393,6 @@ public final class MsgInfoBean {
         boolean z2;
         Object objM2263 = C0772.m2263(C0772.f2872, EnumC3517.f11022.f11027);
         String[] strArr = AbstractC1574.f5469;
-        "null cannot be cast to non-null type kotlin.String";
         List listM2212 = AbstractC0745.m2212((String) objM2263, "notify@all");
         if (!listM2212.isEmpty()) {
             Iterator it = listM2212.iterator();
@@ -839,7 +834,6 @@ public final class MsgInfoBean {
             if (byPath instanceof JSONArray) {
                 return ((JSONArray) byPath).getJSONObject(0);
             }
-            "null cannot be cast to non-null type com.alibaba.fastjson2.JSONObject";
             return (JSONObject) byPath;
         }
 

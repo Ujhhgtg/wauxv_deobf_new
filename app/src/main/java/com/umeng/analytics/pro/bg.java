@@ -15,10 +15,10 @@ public class bg {
 
     public static synchronized String a(Context context) {
         if (!UMConfigure.shouldCollectOaid()) {
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>*** OpenDeviceId.getOAID(): oaid开关已关闭。");
+            UMRTLog.i("MobclickRT", "--->>>*** OpenDeviceId.getOAID(): oaid开关已关闭。");
             return null;
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>*** real call OpenDeviceId.getOaid()");
+        UMRTLog.i("MobclickRT", "--->>>*** real call OpenDeviceId.getOaid()");
         if (context == null) {
             return null;
         }
@@ -36,7 +36,7 @@ public class bg {
                     b = strA;
                 }
                 c = true;
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "OpenDeviceId:getOAID() result: " + b);
+                UMRTLog.i("MobclickRT", "OpenDeviceId:getOAID() result: " + b);
                 return b;
             } catch (Throwable unused) {
             }
@@ -48,7 +48,7 @@ public class bg {
         if (UMConfigure.shouldCollectOaid()) {
             return c ? b : a(context);
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>*** OpenDeviceId.getOAIDFromCache(): oaid开关已关闭。");
+        UMRTLog.i("MobclickRT", "--->>>*** OpenDeviceId.getOAIDFromCache(): oaid开关已关闭。");
         return null;
     }
 
@@ -57,7 +57,7 @@ public class bg {
         if (UMConfigure.shouldCollectOaid()) {
             return null;
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>*** OpenDeviceId.getHonorCompatibleOaid(): oaid开关已关闭。");
+        UMRTLog.i("MobclickRT", "--->>>*** OpenDeviceId.getHonorCompatibleOaid(): oaid开关已关闭。");
         return null;
     }
 
@@ -66,7 +66,7 @@ public class bg {
         if (UMConfigure.shouldCollectOaid()) {
             return null;
         }
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>>*** OpenDeviceId.getHonorCompatibleOaidFromCache(): oaid开关已关闭。");
+        UMRTLog.i("MobclickRT", "--->>>*** OpenDeviceId.getHonorCompatibleOaidFromCache(): oaid开关已关闭。");
         return null;
     }
 }

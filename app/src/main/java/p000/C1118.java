@@ -67,7 +67,7 @@ public final class C1118 extends AbstractC1213 {
         this.f4169 = new ViewOnClickListenerC0103(4, this);
         this.f4170 = new ViewOnFocusChangeListenerC0724(this, 1);
         this.f4171 = new C0466(this);
-        this.f4175 = Long.MAX_VALUE;
+        this.f4175 = 9223372036854775807L;
         this.f4166 = AbstractC1574.m3308(c1212.getContext(), R.attr.motionDurationShort3, 67);
         this.f4165 = AbstractC1574.m3308(c1212.getContext(), R.attr.motionDurationShort3, 50);
         this.f4167 = AbstractC1574.m3309(c1212.getContext(), R.attr.motionEasingLinearInterpolator, AbstractC0164.f1185);
@@ -201,12 +201,12 @@ public final class C1118 extends AbstractC1213 {
         valueAnimatorOfFloat.setInterpolator(timeInterpolator);
         valueAnimatorOfFloat.setDuration(this.f4166);
         int i = 0;
-        valueAnimatorOfFloat.addUpdateListener(new C1115(i, this));
+        valueAnimatorOfFloat.addUpdateListener(new C1115(0, this));
         this.f4178 = valueAnimatorOfFloat;
         ValueAnimator valueAnimatorOfFloat2 = ValueAnimator.ofFloat(1.0f, 0.0f);
         valueAnimatorOfFloat2.setInterpolator(timeInterpolator);
         valueAnimatorOfFloat2.setDuration(this.f4165);
-        valueAnimatorOfFloat2.addUpdateListener(new C1115(i, this));
+        valueAnimatorOfFloat2.addUpdateListener(new C1115(0, this));
         this.f4177 = valueAnimatorOfFloat2;
         valueAnimatorOfFloat2.addListener(new C0123(3, this));
         this.f4176 = (AccessibilityManager) this.f4375.getSystemService("accessibility");

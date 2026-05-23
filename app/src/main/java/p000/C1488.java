@@ -13,6 +13,6 @@ public final class C1488 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f5283 = new C1488("GroupOwnerTitleHook.ValAdminBgColor1", "#FFA3F0E6", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f5283 = new C1488("GroupOwnerTitleHook.ValAdminBgColor1", "#FFA3F0E6", null, false, 0, 0.0f, 0L, 124);
     }
 }

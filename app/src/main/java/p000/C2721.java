@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C2721 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C2721 f8780 = new C2721("EmojiSaveHook.ValSavePath", C2722.f8782, null, false, 0, 0.0f, 0, Opcodes.IUSHR);
+    public static final C2721 f8780 = new C2721("EmojiSaveHook.ValSavePath", C2722.f8782, null, false, 0, 0.0f, 0, 124);
 }

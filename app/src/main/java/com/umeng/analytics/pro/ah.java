@@ -29,7 +29,7 @@ public class ah implements ad {
             while (it.hasNext()) {
                 str = str + it.next() + ",";
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "HourOn skipped. hour of day: " + i + "; config: " + str);
+            UMRTLog.i("MobclickRT", "HourOn skipped. hour of day: " + i + "; config: " + str);
             return false;
         } catch (Throwable unused) {
             return false;

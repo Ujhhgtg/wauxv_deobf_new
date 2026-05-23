@@ -36,7 +36,7 @@ public final class C1040 {
     public int f3792 = -1;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public final int[] f3793 = {Integer.MAX_VALUE, 0};
+    public final int[] f3793 = {2147483647, 0};
 
     public C1040(Context context, InterfaceC1041 interfaceC1041) {
         this.f3786 = context;
@@ -79,14 +79,14 @@ public final class C1040 {
             } else {
                 InputDevice device = InputDevice.getDevice(deviceId2);
                 if (device == null || device.getMotionRange(i, source2) == null) {
-                    scaledMinimumFlingVelocity = Integer.MAX_VALUE;
+                    scaledMinimumFlingVelocity = 2147483647;
                 } else {
                     Resources resources = context.getResources();
                     int identifier = (source2 == 4194304 && i == 26) ? resources.getIdentifier("config_viewMinRotaryEncoderFlingVelocity", "dimen", "android") : -1;
                     if (identifier == -1) {
                         scaledMinimumFlingVelocity = viewConfiguration.getScaledMinimumFlingVelocity();
                     } else if (identifier == 0 || (scaledMinimumFlingVelocity = resources.getDimensionPixelSize(identifier)) < 0) {
-                        scaledMinimumFlingVelocity = Integer.MAX_VALUE;
+                        scaledMinimumFlingVelocity = 2147483647;
                     }
                 }
             }
@@ -98,14 +98,14 @@ public final class C1040 {
             } else {
                 InputDevice device2 = InputDevice.getDevice(deviceId3);
                 if (device2 == null || device2.getMotionRange(i, source3) == null) {
-                    scaledMaximumFlingVelocity = Integer.MIN_VALUE;
+                    scaledMaximumFlingVelocity = -2147483648;
                 } else {
                     Resources resources2 = context.getResources();
                     int identifier2 = (source3 == 4194304 && i == 26) ? resources2.getIdentifier("config_viewMaxRotaryEncoderFlingVelocity", "dimen", "android") : -1;
                     if (identifier2 == -1) {
                         scaledMaximumFlingVelocity = viewConfiguration.getScaledMaximumFlingVelocity();
                     } else if (identifier2 == 0 || (scaledMaximumFlingVelocity = resources2.getDimensionPixelSize(identifier2)) < 0) {
-                        scaledMaximumFlingVelocity = Integer.MIN_VALUE;
+                        scaledMaximumFlingVelocity = -2147483648;
                     }
                 }
             }
@@ -115,7 +115,7 @@ public final class C1040 {
             this.f3790 = i;
             z = true;
         }
-        if (iArr[i3] == Integer.MAX_VALUE) {
+        if (iArr[0] == 2147483647) {
             VelocityTracker velocityTracker = this.f3788;
             if (velocityTracker != null) {
                 velocityTracker.recycle();
@@ -141,7 +141,7 @@ public final class C1040 {
             long[] jArr = c3545.f11133;
             long eventTime = motionEvent.getEventTime();
             if (c3545.f11135 != 0 && eventTime - jArr[c3545.f11136] > 40) {
-                c3545.f11135 = i3;
+                c3545.f11135 = 0;
                 c3545.f11134 = 0.0f;
             }
             int i7 = (c3545.f11136 + 1) % 20;
@@ -153,7 +153,7 @@ public final class C1040 {
             c3545.f11132[i7] = motionEvent.getAxisValue(26);
             jArr[c3545.f11136] = eventTime;
         }
-        velocityTracker2.computeCurrentVelocity(1000, Float.MAX_VALUE);
+        velocityTracker2.computeCurrentVelocity(1000, 3.4028235E38f);
         C3545 c3546 = (C3545) AbstractC3544.f11131.get(velocityTracker2);
         if (c3546 != null) {
             float[] fArr = c3546.f11132;
@@ -198,32 +198,32 @@ public final class C1040 {
                         }
                         int i16 = i14 + i11;
                         long j4 = jArr2[i16 % 20];
-                        int i17 = (i16 + 1) % i6;
+                        int i17 = (i16 + 1) % 20;
                         if (jArr2[i17] == j4) {
-                            f2 = f3;
+                            f2 = 0.0f;
                         } else {
                             i15++;
-                            f2 = f3;
-                            float fSqrt2 = (fAbs < f3 ? -1.0f : 1.0f) * ((float) Math.sqrt(Math.abs(fAbs) * 2.0f));
+                            f2 = 0.0f;
+                            float fSqrt2 = (fAbs < 0.0f ? -1.0f : 1.0f) * ((float) Math.sqrt(Math.abs(fAbs) * 2.0f));
                             float f4 = fArr[i17] / (jArr2[i17] - j4);
                             fAbs += Math.abs(f4) * (f4 - fSqrt2);
-                            if (i15 == i2) {
+                            if (i15 == 1) {
                                 fAbs *= 0.5f;
                             }
                         }
                         i14++;
-                        f3 = f2;
+                        f3 = 0.0f;
                         i6 = 20;
                         i2 = 1;
                     }
-                    f = f3;
-                    fSqrt = (fAbs < f ? -1.0f : 1.0f) * ((float) Math.sqrt(Math.abs(fAbs) * 2.0f));
+                    f = 0.0f;
+                    fSqrt = (fAbs < 0.0f ? -1.0f : 1.0f) * ((float) Math.sqrt(Math.abs(fAbs) * 2.0f));
                 }
             }
             float f5 = fSqrt * 1000;
             c3546.f11134 = f5;
             if (f5 < (-Math.abs((float) r4))) {
-                c3546.f11134 = -Math.abs(Float.MAX_VALUE);
+                c3546.f11134 = -Math.abs(3.4028235E38f);
             } else if (c3546.f11134 > Math.abs((float) r4)) {
                 c3546.f11134 = Math.abs((float) r4);
             }
@@ -238,12 +238,12 @@ public final class C1040 {
             yVelocity = velocityTracker2.getYVelocity();
         } else {
             C3545 c3547 = (C3545) AbstractC3544.f11131.get(velocityTracker2);
-            yVelocity = (c3547 == null || i != 26) ? f : c3547.f11134;
+            yVelocity = (c3547 == null || i != 26) ? 0.0f : c3547.f11134;
         }
         InterfaceC1041 interfaceC1041 = this.f3787;
         float fMo2608 = interfaceC1041.mo2608() * yVelocity;
         float fSignum = Math.signum(fMo2608);
-        if (z || (fSignum != Math.signum(this.f3789) && fSignum != f)) {
+        if (z || (fSignum != Math.signum(this.f3789) && fSignum != 0.0f)) {
             interfaceC1041.mo2609();
         }
         if (Math.abs(fMo2608) < iArr[0]) {
@@ -251,6 +251,6 @@ public final class C1040 {
         }
         int i18 = iArr[1];
         float fMax = Math.max(-i18, Math.min(fMo2608, i18));
-        this.f3789 = interfaceC1041.mo2607(fMax) ? fMax : f;
+        this.f3789 = interfaceC1041.mo2607(fMax) ? fMax : 0.0f;
     }
 }

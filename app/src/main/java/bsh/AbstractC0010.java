@@ -259,7 +259,7 @@ public abstract class AbstractC0010 {
                             }
                             sb.append(m416(Object.class));
                             sb.append(m416(typeArr[0]));
-                            c0712.m2137(1, strReplace, sb.toString(), ASMUtils.TYPE_OBJECT, strArr);
+                            c0712.m2137(1, strReplace, sb.toString(), "java/lang/Object", strArr);
                             c0712.m2138(2, "bshLambda", C3449.m4977(AbstractC0496.class), null);
                             C3449[] c3449Arr = {C3449.m4980(new Class[]{AbstractC0496.class}[0])};
                             C3449 c3449M4980 = C3449.m4980(cls13);
@@ -270,11 +270,11 @@ public abstract class AbstractC0010 {
                             c3449M4980.m4981(sb2);
                             C1983 c1983M2139 = c0712.m2139(1, "<init>", sb2.toString(), null, null);
                             c1983M2139.m3847(25, 0);
-                            c1983M2139.m3845(Opcodes.INVOKESPECIAL, ASMUtils.TYPE_OBJECT, "<init>", "()V");
+                            c1983M2139.m3845(183, "java/lang/Object", "<init>", "()V");
                             c1983M2139.m3847(25, 0);
                             c1983M2139.m3847(25, 1);
-                            c1983M2139.m3836(Opcodes.PUTFIELD, strReplace, "bshLambda", C3449.m4977(AbstractC0496.class));
-                            c1983M2139.m3839(Opcodes.RETURN);
+                            c1983M2139.m3836(181, strReplace, "bshLambda", C3449.m4977(AbstractC0496.class));
+                            c1983M2139.m3839(177);
                             c1983M2139.m3844();
                             Method methodM1742 = AbstractC0496.m1742(cls);
                             String strM4978 = C3449.m4978(AbstractC0496.class);
@@ -332,9 +332,9 @@ public abstract class AbstractC0010 {
                             C1983 c1983M21310 = c0712.m2139(1, name, string, string2, strArr2);
                             C0711 c0713 = c0712;
                             c1983M21310.m3847(25, 0);
-                            c1983M21310.m3836(Opcodes.GETFIELD, strReplace, "bshLambda", C3449.m4977(AbstractC0496.class));
+                            c1983M21310.m3836(180, strReplace, "bshLambda", C3449.m4977(AbstractC0496.class));
                             c1983M21310.m3843(Integer.valueOf(parameters.length));
-                            c1983M21310.m3846(Opcodes.ANEWARRAY, ASMUtils.TYPE_OBJECT);
+                            c1983M21310.m3846(189, "java/lang/Object");
                             int i8 = 0;
                             int i9 = 1;
                             while (true) {
@@ -360,42 +360,42 @@ public abstract class AbstractC0010 {
                                 c1983M21310.m3843(Integer.valueOf(i10));
                                 if (type5 == cls8) {
                                     c1983M21310.m3847(21, i9);
-                                    c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Character", "valueOf", "(C)Ljava/lang/Character;");
+                                    c1983M21310.m3845(184, "java/lang/Character", "valueOf", "(C)Ljava/lang/Character;");
                                 } else if (type5 == cls12) {
                                     c1983M21310.m3847(21, i9);
-                                    c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;");
+                                    c1983M21310.m3845(184, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;");
                                 } else if (type5 == cls7) {
                                     c1983M21310.m3847(21, i9);
-                                    c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Byte", "valueOf", "(B)Ljava/lang/Byte;");
+                                    c1983M21310.m3845(184, "java/lang/Byte", "valueOf", "(B)Ljava/lang/Byte;");
                                 } else if (type5 == cls6) {
                                     c1983M21310.m3847(21, i9);
-                                    c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Short", "valueOf", "(S)Ljava/lang/Short;");
+                                    c1983M21310.m3845(184, "java/lang/Short", "valueOf", "(S)Ljava/lang/Short;");
                                 } else if (type5 == cls5) {
                                     c1983M21310.m3847(21, i9);
-                                    c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;");
+                                    c1983M21310.m3845(184, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;");
                                 } else if (type5 == cls10) {
                                     c1983M21310.m3847(22, i9);
-                                    c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Long", "valueOf", "(J)Ljava/lang/Long;");
+                                    c1983M21310.m3845(184, "java/lang/Long", "valueOf", "(J)Ljava/lang/Long;");
                                 } else {
                                     if (type5 == cls4) {
                                         c1983M21310.m3847(23, i9);
-                                        c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Float", "valueOf", "(F)Ljava/lang/Float;");
+                                        c1983M21310.m3845(184, "java/lang/Float", "valueOf", "(F)Ljava/lang/Float;");
                                     } else {
                                         cls11 = cls9;
                                         if (type5 == cls11) {
                                             c1983M21310.m3847(24, i9);
-                                            c1983M21310.m3845(Opcodes.INVOKESTATIC, "java/lang/Double", "valueOf", "(D)Ljava/lang/Double;");
+                                            c1983M21310.m3845(184, "java/lang/Double", "valueOf", "(D)Ljava/lang/Double;");
                                         } else {
                                             c1983M21310.m3847(25, i9);
                                         }
                                     }
                                     c1983M21310.m3839(83);
-                                    if (type5 != cls10 || type5 == cls11) {
+                                    if (true) {
                                         i2 = 2;
                                     } else {
                                         i2 = 1;
                                     }
-                                    i9 += i2;
+                                    i9 += 2;
                                     i8 = i10 + 1;
                                     parameters = parameterArr;
                                     c0713 = c0711;
@@ -410,7 +410,7 @@ public abstract class AbstractC0010 {
                                 } else {
                                     i2 = 2;
                                 }
-                                i9 += i2;
+                                i9 += 2;
                                 i8 = i10 + 1;
                                 parameters = parameterArr;
                                 c0713 = c0711;
@@ -419,7 +419,7 @@ public abstract class AbstractC0010 {
                                 exceptionTypes = clsArr;
                             }
                             c1983M21310.m3843(Integer.valueOf(clsArr.length));
-                            c1983M21310.m3846(Opcodes.ANEWARRAY, "java/lang/Class");
+                            c1983M21310.m3846(189, "java/lang/Class");
                             int i11 = 0;
                             while (i11 < clsArr.length) {
                                 Class<?> cls15 = clsArr[i11];
@@ -433,45 +433,45 @@ public abstract class AbstractC0010 {
                             Class<?> returnType = methodM1742.getReturnType();
                             Class<?> clsBoxType = returnType.isPrimitive() ? Primitive.boxType(returnType) : returnType;
                             if (returnType.isPrimitive()) {
-                                c1983M21310.m3836(Opcodes.GETSTATIC, C3449.m4978(clsBoxType), "TYPE", "Ljava/lang/Class;");
+                                c1983M21310.m3836(178, C3449.m4978(clsBoxType), "TYPE", "Ljava/lang/Class;");
                             } else {
                                 c1983M21310.m3843(C3449.m4980(returnType));
                             }
-                            c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, str, "invoke", "([Ljava/lang/Object;[Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/Object;");
-                            c1983M21310.m3846(Opcodes.CHECKCAST, C3449.m4978(clsBoxType));
+                            c1983M21310.m3845(182, str, "invoke", "([Ljava/lang/Object;[Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/Object;");
+                            c1983M21310.m3846(192, C3449.m4978(clsBoxType));
                             if (returnType == cls3) {
                                 c1983M21310.m3839(87);
-                                c1983M21310.m3839(Opcodes.RETURN);
+                                c1983M21310.m3839(177);
                             } else if (returnType == cls12) {
-                                c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z");
-                                c1983M21310.m3839(Opcodes.IRETURN);
+                                c1983M21310.m3845(182, "java/lang/Boolean", "booleanValue", "()Z");
+                                c1983M21310.m3839(172);
                             } else if (returnType == cls8) {
-                                c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, "java/lang/Character", "charValue", "()C");
-                                c1983M21310.m3839(Opcodes.IRETURN);
+                                c1983M21310.m3845(182, "java/lang/Character", "charValue", "()C");
+                                c1983M21310.m3839(172);
                             } else if (returnType == cls7) {
-                                c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, "java/lang/Byte", "byteValue", "()B");
-                                c1983M21310.m3839(Opcodes.IRETURN);
+                                c1983M21310.m3845(182, "java/lang/Byte", "byteValue", "()B");
+                                c1983M21310.m3839(172);
                             } else if (returnType == cls6) {
-                                c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, "java/lang/Short", "shortValue", "()S");
-                                c1983M21310.m3839(Opcodes.IRETURN);
+                                c1983M21310.m3845(182, "java/lang/Short", "shortValue", "()S");
+                                c1983M21310.m3839(172);
                             } else if (returnType == cls5) {
-                                c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, "java/lang/Integer", "intValue", "()I");
-                                c1983M21310.m3839(Opcodes.IRETURN);
+                                c1983M21310.m3845(182, "java/lang/Integer", "intValue", "()I");
+                                c1983M21310.m3839(172);
                             } else if (returnType == cls10) {
-                                c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, "java/lang/Long", "longValue", "()J");
-                                c1983M21310.m3839(Opcodes.LRETURN);
+                                c1983M21310.m3845(182, "java/lang/Long", "longValue", "()J");
+                                c1983M21310.m3839(173);
                             } else if (returnType == cls4) {
-                                c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, "java/lang/Float", "floatValue", "()F");
-                                c1983M21310.m3839(Opcodes.FRETURN);
+                                c1983M21310.m3845(182, "java/lang/Float", "floatValue", "()F");
+                                c1983M21310.m3839(174);
                             } else if (returnType == cls9) {
-                                c1983M21310.m3845(Opcodes.INVOKEVIRTUAL, "java/lang/Double", "doubleValue", "()D");
-                                c1983M21310.m3839(Opcodes.DRETURN);
+                                c1983M21310.m3845(182, "java/lang/Double", "doubleValue", "()D");
+                                c1983M21310.m3839(175);
                             } else {
-                                c1983M21310.m3839(Opcodes.ARETURN);
+                                c1983M21310.m3839(176);
                             }
                             c1983M21310.m3844();
                             byte[] bArrM2136 = c0711.m2136();
-                            AbstractC0496.f2133.getClass();
+                            
                             clsM1744 = AbstractC0499.m1744(str2, bArrM2136);
                             map.put(cls, clsM1744);
                         }
@@ -561,7 +561,7 @@ public abstract class AbstractC0010 {
                             break;
                         }
                     }
-                    if (clsM418 != null && clsM418 != clsM412) {
+                    if (clsM418 != null && clsM418 != Object.class) {
                         clsM412 = clsM418;
                     }
                 }
@@ -585,7 +585,7 @@ public abstract class AbstractC0010 {
                 if (i14 == 2) {
                     return new C3468(Array.get(objWrap, 0), Array.get(objWrap, 1));
                 }
-                Map.Entry[] entryArr3 = new Map.Entry[(int) Math.ceil((((double) i14) + 0.0d) / d)];
+                Map.Entry[] entryArr3 = new Map.Entry[(int) Math.ceil((((double) i14) + 0.0d) / 2.0)];
                 int i16 = 0;
                 while (i3 < i14) {
                     int i17 = i16 + 1;
@@ -908,6 +908,6 @@ public abstract class AbstractC0010 {
         if (!cls.isArray()) {
             return cls.getName();
         }
-        return m435(cls.getComponentType()) + HttpUrl.PATH_SEGMENT_ENCODE_SET_URI;
+        return m435(cls.getComponentType()) + "[]";
     }
 }

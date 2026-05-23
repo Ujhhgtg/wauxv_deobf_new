@@ -269,7 +269,7 @@ public class f {
                 b.a(new d(context));
                 b.a(new h(context));
                 b.a(new j());
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.G)) {
+                if (FieldManager.allow("header_device_oaid")) {
                     b.a(new i(context));
                     if (DeviceConfig.isHonorDevice()) {
                         b.a(new c(context));
@@ -322,22 +322,22 @@ public class f {
         if (cVar == null || (map = cVar.a) == null) {
             return;
         }
-        if (map.containsKey("mac") && !FieldManager.allow(com.umeng.commonsdk.utils.d.h)) {
+        if (map.containsKey("mac") && !FieldManager.allow("header_device_id_mac")) {
             cVar.a.remove("mac");
         }
-        if (cVar.a.containsKey("imei") && !FieldManager.allow(com.umeng.commonsdk.utils.d.g)) {
+        if (cVar.a.containsKey("imei") && !FieldManager.allow("header_device_id_imei")) {
             cVar.a.remove("imei");
         }
-        if (cVar.a.containsKey("android_id") && !FieldManager.allow(com.umeng.commonsdk.utils.d.i)) {
+        if (cVar.a.containsKey("android_id") && !FieldManager.allow("header_device_id_android_id")) {
             cVar.a.remove("android_id");
         }
-        if (cVar.a.containsKey("serial") && !FieldManager.allow(com.umeng.commonsdk.utils.d.j)) {
+        if (cVar.a.containsKey("serial") && !FieldManager.allow("header_device_id_serialNo")) {
             cVar.a.remove("serial");
         }
-        if (cVar.a.containsKey("idfa") && !FieldManager.allow(com.umeng.commonsdk.utils.d.w)) {
+        if (cVar.a.containsKey("idfa") && !FieldManager.allow("header_tracking_idfa")) {
             cVar.a.remove("idfa");
         }
-        if (!cVar.a.containsKey("oaid") || FieldManager.allow(com.umeng.commonsdk.utils.d.G)) {
+        if (!cVar.a.containsKey("oaid") || FieldManager.allow("header_device_oaid")) {
             return;
         }
         cVar.a.remove("oaid");

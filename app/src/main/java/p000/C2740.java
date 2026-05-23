@@ -13,6 +13,6 @@ public final class C2740 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f8813 = new C2740("SnsInfoHook.ValTimeFormat", "HH:mm:ss", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f8813 = new C2740("SnsInfoHook.ValTimeFormat", "HH:mm:ss", null, false, 0, 0.0f, 0L, 124);
     }
 }

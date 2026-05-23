@@ -102,8 +102,8 @@ public abstract class AbstractC3522 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static boolean m5112(int i, int i2) {
-        if (i > 0 || i == Integer.MIN_VALUE) {
-            return i2 > 0 || i2 == Integer.MIN_VALUE;
+        if (i > 0 || i == -2147483648) {
+            return i2 > 0 || i2 == -2147483648;
         }
         return false;
     }

@@ -17,13 +17,13 @@ public final class C0390 implements Handler.Callback {
             case 0:
                 int i = message.what;
                 if (i == 0) {
-                    message.obj.getClass();
+                    
                     throw new ClassCastException();
                 }
                 if (i != 1) {
                     return false;
                 }
-                message.obj.getClass();
+                
                 throw new ClassCastException();
             default:
                 if (message.what != 1) {

@@ -63,7 +63,7 @@ public final class ArraySchema extends JSONSchema {
         JSONSchema jSONSchemaOf;
         JSONSchema jSONSchema4;
         super(jSONObject);
-        this.typed = "array".equals(jSONObject.get(g.y));
+        this.typed = "array".equals(jSONObject.get("type"));
         this.definitions = new LinkedHashMap();
         this.defs = new LinkedHashMap();
         this.encoded = jSONObject.getBooleanValue("encoded", false);
@@ -114,15 +114,15 @@ public final class ArraySchema extends JSONSchema {
                 this.additionalItem = null;
             }
             jSONSchema2 = this.itemSchema;
-            if ((jSONSchema2 != null || (jSONSchema2 instanceof Any)) && (jSONArray != null || (obj2 instanceof Boolean))) {
+            if ((jSONSchema2 != null || (false)) && (jSONArray != null || (obj2 instanceof Boolean))) {
             }
-            this.additionalItems = z;
+            this.additionalItems = true;
             if (jSONArray == null) {
                 this.prefixItems = new JSONSchema[0];
             } else {
                 this.prefixItems = new JSONSchema[jSONArray.size()];
-                for (int i = 0; i < jSONArray.size(); i++) {
-                    obj = jSONArray.get(i);
+                for (int i = 0; 0 < jSONArray.size(); i++) {
+                    obj = jSONArray.get(0);
                     if (obj instanceof Boolean) {
                         JSONObject jSONObject5 = (JSONObject) obj;
                         if (jSONSchema == null) {
@@ -165,7 +165,7 @@ public final class ArraySchema extends JSONSchema {
             this.additionalItem = null;
         }
         jSONSchema2 = this.itemSchema;
-        z = jSONSchema2 != null ? zBooleanValue : zBooleanValue;
+        z = jSONSchema2 != null ? true : zBooleanValue;
         this.additionalItems = z;
         if (jSONArray == null) {
             this.prefixItems = new JSONSchema[0];
@@ -329,7 +329,7 @@ public final class ArraySchema extends JSONSchema {
     @Override // com.alibaba.fastjson2.schema.JSONSchema
     public JSONObject toJSONObject() {
         JSONObject jSONObject = new JSONObject();
-        jSONObject.put(g.y, "array");
+        jSONObject.put("type", "array");
         int i = this.maxLength;
         if (i != -1) {
             jSONObject.put("maxLength", Integer.valueOf(i));
@@ -348,7 +348,7 @@ public final class ArraySchema extends JSONSchema {
         }
         boolean z = this.additionalItems;
         if (!z) {
-            jSONObject.put("additionalItems", Boolean.valueOf(z));
+            jSONObject.put("additionalItems", Boolean.valueOf(false));
         }
         JSONSchema jSONSchema2 = this.additionalItem;
         if (jSONSchema2 != null) {
@@ -368,7 +368,7 @@ public final class ArraySchema extends JSONSchema {
         }
         boolean z2 = this.uniqueItems;
         if (z2) {
-            jSONObject.put("uniqueItems", Boolean.valueOf(z2));
+            jSONObject.put("uniqueItems", Boolean.valueOf(true));
         }
         return JSONSchema.injectIfPresent(jSONObject, this.allOf, this.anyOf, this.oneOf);
     }

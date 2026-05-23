@@ -39,7 +39,7 @@ public final class RunnableC1441 implements Runnable {
             }
         }
         C2498 c2498 = recyclerView.f358;
-        if (j == Long.MAX_VALUE) {
+        if (j == 9223372036854775807L) {
             try {
                 if (AbstractC3422.m4939()) {
                     Trace.beginSection("RV Prefetch forced - needed next frame");
@@ -130,7 +130,7 @@ public final class RunnableC1441 implements Runnable {
             if (recyclerView4.getWindowVisibility() == 0) {
                 C1439 c14310 = recyclerView4.f410;
                 int iAbs = Math.abs(c14310.f5096) + Math.abs(c14310.f5095);
-                for (int i6 = i; i6 < c14310.f5098 * 2; i6 += 2) {
+                for (int i6 = 0; i6 < c14310.f5098 * 2; i6 += 2) {
                     if (i5 >= arrayList2.size()) {
                         c1441 = new C1440();
                         arrayList2.add(c1441);
@@ -152,7 +152,7 @@ public final class RunnableC1441 implements Runnable {
         }
         Collections.sort(arrayList2, f5105);
         for (int i8 = 0; i8 < arrayList2.size() && (recyclerView = (c1440 = (C1440) arrayList2.get(i8)).f5102) != null; i8++) {
-            AbstractC2508 abstractC2508M3136 = m3136(recyclerView, c1440.f5103, c1440.f5099 ? Long.MAX_VALUE : j);
+            AbstractC2508 abstractC2508M3136 = m3136(recyclerView, c1440.f5103, c1440.f5099 ? 9223372036854775807L : j);
             if (abstractC2508M3136 != null && abstractC2508M3136.f8007 != null && abstractC2508M3136.m4515() && !abstractC2508M3136.m4516() && (recyclerView2 = (RecyclerView) abstractC2508M3136.f8007.get()) != null) {
                 if (recyclerView2.f385 && recyclerView2.f361.m1997() != 0) {
                     C2498 c2498 = recyclerView2.f358;
@@ -172,7 +172,7 @@ public final class RunnableC1441 implements Runnable {
                 c14311.m3135(recyclerView2, true);
                 if (c14311.f5098 != 0) {
                     try {
-                        Trace.beginSection(j == Long.MAX_VALUE ? "RV Nested Prefetch" : "RV Nested Prefetch forced - needed next frame");
+                        Trace.beginSection(j == 9223372036854775807L ? "RV Nested Prefetch" : "RV Nested Prefetch forced - needed next frame");
                         C2504 c2504 = recyclerView2.f411;
                         AbstractC2482 abstractC2482 = recyclerView2.f368;
                         c2504.f7987 = 1;

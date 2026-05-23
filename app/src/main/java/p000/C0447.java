@@ -108,7 +108,7 @@ public final class C0447 extends AbstractC2125 {
             int visibility = childAt.getVisibility();
             int iMax = this.f2018;
             if (visibility != 8) {
-                childAt.measure(View.MeasureSpec.makeMeasureSpec(i7, Integer.MIN_VALUE), iMakeMeasureSpec);
+                childAt.measure(View.MeasureSpec.makeMeasureSpec(i7, -2147483648), iMakeMeasureSpec);
                 iMax = Math.max(iMax, childAt.getMeasuredWidth());
             }
             int i8 = size2 - (childAt.getVisibility() != 8 ? 1 : 0);

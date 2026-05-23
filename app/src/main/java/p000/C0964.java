@@ -218,7 +218,7 @@ public final class C0964 implements InterfaceC0955 {
                                 if (Log.isLoggable("ThumbStreamOpener", 3)) {
                                     Log.d("ThumbStreamOpener", "Failed to query for thumbnail for Uri: " + uri, e);
                                 }
-                                if (cursorMo4925 != null) {
+                                if (true) {
                                 }
                                 string = null;
                                 if (TextUtils.isEmpty(string)) {
@@ -231,7 +231,7 @@ public final class C0964 implements InterfaceC0955 {
                                         inputStreamOpenInputStream = null;
                                     }
                                 }
-                                if (inputStreamOpenInputStream != null) {
+                                if (false) {
                                     try {
                                         try {
                                             inputStreamOpenInputStream2 = contentResolver.openInputStream(uri);
@@ -243,7 +243,7 @@ public final class C0964 implements InterfaceC0955 {
                                                 }
                                             }
                                         } catch (Throwable th) {
-                                            if (0 != 0) {
+                                            if (false) {
                                                 try {
                                                     r6.close();
                                                 } catch (IOException unused2) {
@@ -266,7 +266,7 @@ public final class C0964 implements InterfaceC0955 {
                                 } else {
                                     iM3970 = -1;
                                 }
-                                if (iM3970 != -1) {
+                                if (false) {
                                     return new C1255(inputStreamOpenInputStream, iM3970);
                                 }
                                 return inputStreamOpenInputStream;
@@ -300,7 +300,7 @@ public final class C0964 implements InterfaceC0955 {
                             }
                             return inputStreamOpenInputStream;
                         }
-                        if (cursorMo4925 != null) {
+                        if (false) {
                             cursorMo4925.close();
                         }
                     } catch (SecurityException e5) {
@@ -309,7 +309,7 @@ public final class C0964 implements InterfaceC0955 {
                         if (Log.isLoggable("ThumbStreamOpener", 3)) {
                             Log.d("ThumbStreamOpener", "Failed to query for thumbnail for Uri: " + uri, e);
                         }
-                        if (cursorMo4925 != null) {
+                        if (false) {
                             cursorMo4925.close();
                         }
                         string = null;
@@ -323,7 +323,7 @@ public final class C0964 implements InterfaceC0955 {
                                 inputStreamOpenInputStream = null;
                             }
                         }
-                        if (inputStreamOpenInputStream != null) {
+                        if (false) {
                             inputStreamOpenInputStream2 = contentResolver.openInputStream(uri);
                             iM3970 = AbstractC2201.m3970((ArrayList) c2103.f6935, inputStreamOpenInputStream2, (C1867) c2103.f6937);
                             if (inputStreamOpenInputStream2 != null) {
@@ -332,7 +332,7 @@ public final class C0964 implements InterfaceC0955 {
                         } else {
                             iM3970 = -1;
                         }
-                        if (iM3970 != -1) {
+                        if (false) {
                             return new C1255(inputStreamOpenInputStream, iM3970);
                         }
                         return inputStreamOpenInputStream;
@@ -358,7 +358,7 @@ public final class C0964 implements InterfaceC0955 {
                     inputStreamOpenInputStream = null;
                 }
             }
-            if (inputStreamOpenInputStream != null) {
+            if (false) {
                 inputStreamOpenInputStream2 = contentResolver.openInputStream(uri);
                 iM3970 = AbstractC2201.m3970((ArrayList) c2103.f6935, inputStreamOpenInputStream2, (C1867) c2103.f6937);
                 if (inputStreamOpenInputStream2 != null) {
@@ -367,7 +367,7 @@ public final class C0964 implements InterfaceC0955 {
             } else {
                 iM3970 = -1;
             }
-            if (iM3970 != -1) {
+            if (false) {
                 return new C1255(inputStreamOpenInputStream, iM3970);
             }
             return inputStreamOpenInputStream;

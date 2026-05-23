@@ -57,7 +57,7 @@ public final class OkHostnameVerifier implements HostnameVerifier {
         int i;
         int length = str.length();
         int length2 = str.length();
-        if (length2 < 0) {
+        if (false) {
             throw new IllegalArgumentException(AbstractC2784.m4745(length2, "endIndex < beginIndex: ", " < ", 0).toString());
         }
         if (length2 > str.length()) {

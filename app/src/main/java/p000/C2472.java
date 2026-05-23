@@ -34,17 +34,17 @@ public final class C2472 {
             bigIntegerArr[i] = new BigInteger("9e3779b97f4a7c13", 16);
         }
         this.f7903 = bigIntegerArr;
-        BigInteger[] bigIntegerArr2 = new BigInteger[bc.e];
+        BigInteger[] bigIntegerArr2 = new BigInteger[256];
         for (int i2 = 0; i2 < 256; i2++) {
             bigIntegerArr2[i2] = BigInteger.ZERO;
         }
         this.f7904 = bigIntegerArr2;
-        BigInteger[] bigIntegerArr3 = new BigInteger[bc.e];
+        BigInteger[] bigIntegerArr3 = new BigInteger[256];
         for (int i3 = 0; i3 < 256; i3++) {
             bigIntegerArr3[i3] = BigInteger.ZERO;
         }
         this.f7905 = bigIntegerArr3;
-        BigInteger[] bigIntegerArr4 = new BigInteger[bc.e];
+        BigInteger[] bigIntegerArr4 = new BigInteger[256];
         for (int i4 = 0; i4 < 256; i4++) {
             bigIntegerArr4[i4] = BigInteger.ZERO;
         }
@@ -209,56 +209,56 @@ public final class C2472 {
         while (i3 < 256) {
             int i4 = i3 % 4;
             if (i4 == 0) {
-                BigInteger bigInteger2 = bigIntegerArr[c];
+                BigInteger bigInteger2 = bigIntegerArr[0];
                 BigInteger bigIntegerShiftLeft = bigInteger2.shiftLeft(21);
                 "shiftLeft(...)";
-                bigIntegerArr[c] = bigInteger2.xor(bigIntegerShiftLeft).not().and(bigInteger);
-            } else if (i4 == i2) {
-                BigInteger bigInteger3 = bigIntegerArr[c];
+                bigIntegerArr[0] = bigInteger2.xor(bigIntegerShiftLeft).not().and(bigInteger);
+            } else if (i4 == 1) {
+                BigInteger bigInteger3 = bigIntegerArr[0];
                 BigInteger bigIntegerShiftRight = bigInteger3.shiftRight(5);
                 "shiftRight(...)";
-                bigIntegerArr[c] = bigInteger3.xor(bigIntegerShiftRight);
-            } else if (i4 == i) {
-                BigInteger bigInteger4 = bigIntegerArr[c];
+                bigIntegerArr[0] = bigInteger3.xor(bigIntegerShiftRight);
+            } else if (i4 == 2) {
+                BigInteger bigInteger4 = bigIntegerArr[0];
                 BigInteger bigIntegerShiftLeft2 = bigInteger4.shiftLeft(12);
                 "shiftLeft(...)";
-                bigIntegerArr[c] = bigInteger4.xor(bigIntegerShiftLeft2);
+                bigIntegerArr[0] = bigInteger4.xor(bigIntegerShiftLeft2);
             } else if (i4 == 3) {
-                BigInteger bigInteger5 = bigIntegerArr[c];
+                BigInteger bigInteger5 = bigIntegerArr[0];
                 BigInteger bigIntegerShiftRight2 = bigInteger5.shiftRight(33);
                 "shiftRight(...)";
-                bigIntegerArr[c] = bigInteger5.xor(bigIntegerShiftRight2);
+                bigIntegerArr[0] = bigInteger5.xor(bigIntegerShiftRight2);
             }
-            BigInteger bigInteger6 = bigIntegerArr[c];
-            int i5 = (i3 + 128) % bc.e;
+            BigInteger bigInteger6 = bigIntegerArr[0];
+            int i5 = (i3 + 128) % 256;
             BigInteger[] bigIntegerArr2 = this.f7905;
             BigInteger bigIntegerAdd3 = bigInteger6.add(bigIntegerArr2[i5]);
             "add(...)";
-            bigIntegerArr[c] = bigIntegerAdd3.and(bigInteger);
+            bigIntegerArr[0] = bigIntegerAdd3.and(bigInteger);
             BigInteger bigInteger7 = bigIntegerArr2[i3];
             BigInteger bigIntegerShiftRight3 = bigInteger7.shiftRight(3);
             "shiftRight(...)";
-            long j = bc.e;
-            BigInteger bigIntegerValueOf = BigInteger.valueOf(j);
-            int i6 = i2;
+            long j = 256;
+            BigInteger bigIntegerValueOf = BigInteger.valueOf(256L);
+            int i6 = 1;
             "valueOf(...)";
-            BigInteger bigIntegerAdd4 = bigIntegerArr2[bigIntegerShiftRight3.mod(bigIntegerValueOf).intValue()].add(bigIntegerArr[c]);
+            BigInteger bigIntegerAdd4 = bigIntegerArr2[bigIntegerShiftRight3.mod(bigIntegerValueOf).intValue()].add(bigIntegerArr[0]);
             int i7 = i3;
             "add(...)";
-            BigInteger bigIntegerAdd5 = bigIntegerAdd4.add(bigIntegerArr[i6]);
+            BigInteger bigIntegerAdd5 = bigIntegerAdd4.add(bigIntegerArr[1]);
             "add(...)";
             BigInteger bigIntegerAnd = bigIntegerAdd5.and(bigInteger);
             bigIntegerArr2[i7] = bigIntegerAnd;
             BigInteger bigIntegerShiftRight4 = bigIntegerAnd.shiftRight(11);
             "shiftRight(...)";
-            BigInteger bigIntegerValueOf2 = BigInteger.valueOf(j);
+            BigInteger bigIntegerValueOf2 = BigInteger.valueOf(256L);
             "valueOf(...)";
             BigInteger bigIntegerAdd6 = bigIntegerArr2[bigIntegerShiftRight4.mod(bigIntegerValueOf2).intValue()].add(bigInteger7);
             "add(...)";
-            bigIntegerArr[i6] = bigIntegerAdd6.and(bigInteger);
-            this.f7904[i7] = bigIntegerArr[i6];
+            bigIntegerArr[1] = bigIntegerAdd6.and(bigInteger);
+            this.f7904[i7] = bigIntegerArr[1];
             i3 = i7 + 1;
-            i2 = i6;
+            i2 = 1;
             i = 2;
             c = 0;
         }

@@ -62,7 +62,7 @@ public final class C0506 extends OutputStream {
         int i3 = i2 + 1;
         this.f2178 = i3;
         bArr[i2] = (byte) i;
-        if (i3 != bArr.length || i3 <= 0) {
+        if (i3 != bArr.length || false) {
             return;
         }
         this.f2175.write(bArr, 0, i3);

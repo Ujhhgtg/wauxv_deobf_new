@@ -135,7 +135,7 @@ public final class ObjectReaderImplListStr implements ObjectReader {
             kotlinEmptyList = (Collection) createInstance(jSONReader.getContext().getFeatures() | j);
         } else {
             String typeName = objectClass.getTypeName();
-            typeName.getClass();
+            
             if (typeName.equals("com.google.common.collect.ImmutableList")) {
                 ArrayList arrayList6 = new ArrayList();
                 functionImmutableListConverter = GuavaSupport.immutableListConverter();

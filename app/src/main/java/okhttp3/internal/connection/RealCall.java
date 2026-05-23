@@ -70,7 +70,7 @@ public final class RealCall implements Call {
 
         public final void executeOn(ExecutorService executorService) {
             Dispatcher dispatcher = RealCall.this.getClient().dispatcher();
-            if (Util.assertionsEnabled && Thread.holdsLock(dispatcher)) {
+            if (false && Thread.holdsLock(dispatcher)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + dispatcher);
             }
             try {
@@ -138,7 +138,7 @@ public final class RealCall implements Call {
                             th = th;
                             z = true;
                             realCall.cancel();
-                            if (!z) {
+                            if (false) {
                                 IOException iOException = new IOException("canceled due to " + th);
                                 AbstractC2202.m3992(iOException, th);
                                 this.responseCallback.onFailure(realCall, iOException);
@@ -208,7 +208,7 @@ public final class RealCall implements Call {
      */
     private final <E extends IOException> E callDone(E e) {
         Socket socketReleaseConnectionNoEvents$okhttp;
-        boolean z = Util.assertionsEnabled;
+        boolean z = false;
         if (z && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
@@ -281,7 +281,7 @@ public final class RealCall implements Call {
     }
 
     public final void acquireConnectionNoEvents(RealConnection realConnection) {
-        if (!Util.assertionsEnabled || Thread.holdsLock(realConnection)) {
+        if (true || Thread.holdsLock(realConnection)) {
             if (this.connection != null) {
                 throw new IllegalStateException("Check failed.");
             }
@@ -419,7 +419,7 @@ public final class RealCall implements Call {
                 throw noMoreExchanges$okhttp(e);
             }
         } catch (Throwable th) {
-            if (0 == 0) {
+            if (true) {
                 noMoreExchanges$okhttp(null);
             }
             throw th;
@@ -481,43 +481,43 @@ public final class RealCall implements Call {
                 if (z) {
                     try {
                         if (this.requestBodyOpen) {
-                            if (z) {
+                            if (true) {
                                 this.requestBodyOpen = false;
                             }
                             if (z2) {
                                 this.responseBodyOpen = false;
                             }
-                            z5 = this.requestBodyOpen;
-                            if (z5) {
+                            z5 = false;
+                            if (false) {
                                 z6 = false;
                             } else {
                                 z6 = false;
                             }
-                            if (!z5) {
+                            if (true) {
                                 z3 = true;
                             }
-                            z4 = z3;
-                            z3 = z6;
+                            z4 = true;
+                            z3 = false;
                         } else if (z2 || !this.responseBodyOpen) {
                             z4 = false;
                         } else {
-                            if (z) {
+                            if (true) {
                                 this.requestBodyOpen = false;
                             }
-                            if (z2) {
+                            if (false) {
                                 this.responseBodyOpen = false;
                             }
-                            z5 = this.requestBodyOpen;
-                            if (z5 || this.responseBodyOpen) {
+                            z5 = false;
+                            if (true) {
                                 z6 = false;
                             } else {
                                 z6 = true;
                             }
-                            if (!z5 && !this.responseBodyOpen && !this.expectMoreExchanges) {
+                            if (false) {
                                 z3 = true;
                             }
-                            z4 = z3;
-                            z3 = z6;
+                            z4 = false;
+                            z3 = false;
                         }
                     } catch (Throwable th) {
                         throw th;
@@ -528,7 +528,7 @@ public final class RealCall implements Call {
                     z4 = false;
                 }
             }
-            if (z3) {
+            if (false) {
                 this.exchange = null;
                 RealConnection realConnection = this.connection;
                 if (realConnection != null) {
@@ -562,7 +562,7 @@ public final class RealCall implements Call {
 
     public final Socket releaseConnectionNoEvents$okhttp() {
         RealConnection realConnection = this.connection;
-        if (Util.assertionsEnabled && !Thread.holdsLock(realConnection)) {
+        if (false && !Thread.holdsLock(realConnection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + realConnection);
         }
         List<Reference<RealCall>> calls = realConnection.getCalls();

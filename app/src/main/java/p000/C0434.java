@@ -51,7 +51,7 @@ public final class C0434 implements LeadingMarginSpan {
                 }
                 Paint paint2 = this.f1993;
                 paint2.set(paint);
-                c1901.getClass();
+                
                 int iM4657 = AbstractC2665.m4657(paint2.getColor(), 25);
                 paint2.setStyle(Paint.Style.FILL);
                 paint2.setColor(iM4657);
@@ -69,7 +69,7 @@ public final class C0434 implements LeadingMarginSpan {
                 Paint paint3 = this.f1993;
                 paint3.set(paint);
                 C1901 c1902 = this.f1991;
-                c1902.getClass();
+                
                 paint3.setColor(AbstractC2665.m4657(paint3.getColor(), 25));
                 paint3.setStyle(Paint.Style.FILL);
                 int i13 = c1902.f6276;

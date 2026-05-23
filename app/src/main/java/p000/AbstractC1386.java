@@ -22,7 +22,7 @@ public abstract class AbstractC1386 {
     public static int m3098(C2477 c2477) throws IOException {
         try {
             long jMo1771 = c2477.mo1771();
-            String strMo1773 = c2477.mo1773(Long.MAX_VALUE);
+            String strMo1773 = c2477.mo1773(9223372036854775807L);
             if (jMo1771 >= 0 && jMo1771 <= 2147483647L && strMo1773.length() <= 0) {
                 return (int) jMo1771;
             }

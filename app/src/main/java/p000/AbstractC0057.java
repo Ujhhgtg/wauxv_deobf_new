@@ -64,10 +64,10 @@ public abstract class AbstractC0057 extends C1705 implements InterfaceC0842, Int
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᤞᲁᲇ, reason: contains not printable characters */
     public final void m938(int i, AbstractC0057 abstractC0057, InterfaceC1429 interfaceC1429) {
         int iM4759 = AbstractC2784.m4759(i);
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         if (iM4759 == 0) {
             try {
-                AbstractC2203.m4038(AbstractC2209.m4135(((AbstractC0370) interfaceC1429).mo1197(this, abstractC0057)), c3497);
+                AbstractC2203.m4038(AbstractC2209.m4135(((AbstractC0370) interfaceC1429).mo1197(this, abstractC0057)), unit);
                 return;
             } catch (Throwable th) {
                 AbstractC2209.m4127(this, th);
@@ -76,7 +76,7 @@ public abstract class AbstractC0057 extends C1705 implements InterfaceC0842, Int
         }
         if (iM4759 != 1) {
             if (iM4759 == 2) {
-                AbstractC2209.m4135(((AbstractC0370) interfaceC1429).mo1197(this, abstractC0057)).mo933(c3497);
+                AbstractC2209.m4135(((AbstractC0370) interfaceC1429).mo1197(this, abstractC0057)).mo933(unit);
                 return;
             }
             if (iM4759 != 3) {

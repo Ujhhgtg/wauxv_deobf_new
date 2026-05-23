@@ -17,7 +17,7 @@ public class UMConfigureImpl {
     private static final int e = 1000;
     private static ScheduledExecutorService f;
     private static Context g;
-    private static String a = be.b().b(be.o);
+    private static String a = be.b().b("dtfn");
     private static CopyOnWriteArrayList<onMessageSendListener> b = new CopyOnWriteArrayList<>();
     private static int c = 0;
     private static boolean d = false;

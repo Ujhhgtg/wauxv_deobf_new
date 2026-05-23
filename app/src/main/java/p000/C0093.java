@@ -19,7 +19,7 @@ public final class C0093 extends AccessibilityNodeProvider {
 
     @Override // android.view.accessibility.AccessibilityNodeProvider
     public final void addExtraDataToAccessibilityNodeInfo(int i, AccessibilityNodeInfo accessibilityNodeInfo, String str, Bundle bundle) {
-        this.f1047.getClass();
+        
     }
 
     @Override // android.view.accessibility.AccessibilityNodeProvider
@@ -33,7 +33,7 @@ public final class C0093 extends AccessibilityNodeProvider {
 
     @Override // android.view.accessibility.AccessibilityNodeProvider
     public final List findAccessibilityNodeInfosByText(String str, int i) {
-        this.f1047.getClass();
+        
         return null;
     }
 

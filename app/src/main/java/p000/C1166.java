@@ -40,7 +40,7 @@ public final class C1166 extends AbstractC1140 {
                     if (text == null) {
                         length = 0;
                     } else {
-                        c1142M2753.getClass();
+                        
                         length = text.length();
                     }
                     CharSequence charSequenceM2757 = c1142M2753.m2757(text, 0, length);

@@ -75,7 +75,7 @@ public final class ComponentCallbacks2C2563 implements ComponentCallbacks2, Inte
         this.f8134 = context;
         Context applicationContext = context.getApplicationContext();
         C2562 c2562 = new C2562(this, c2712);
-        c0374.getClass();
+        
         if (Build.VERSION.SDK_INT >= 33 || !TextUtils.equals("android.permission.POST_NOTIFICATIONS", "android.permission.ACCESS_NETWORK_STATE")) {
             iCheckPermission = applicationContext.checkPermission("android.permission.ACCESS_NETWORK_STATE", Process.myPid(), Process.myUid());
         } else {
@@ -105,7 +105,7 @@ public final class ComponentCallbacks2C2563 implements ComponentCallbacks2, Inte
         synchronized (c1461) {
             try {
                 if (c1461.f5214 == null) {
-                    c1461.f5208.getClass();
+                    
                     C2565 c2566 = new C2565();
                     c2566.f1777 = true;
                     c1461.f5214 = c2566;

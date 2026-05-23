@@ -23,10 +23,10 @@ public class bd {
                 jSONObject3.put("channel", UMUtils.getChannel(context));
                 jSONObject3.put("brand", Build.BRAND);
                 jSONObject3.put("osVersion", Build.VERSION.RELEASE);
-                jSONObject3.put(bv.g, UMUtils.getUMId(context));
-                jSONObject3.put(bv.af, UMUtils.getZid(context));
+                jSONObject3.put("umid", UMUtils.getUMId(context));
+                jSONObject3.put("zid", UMUtils.getZid(context));
                 jSONObject3.put("deviceModel", Build.MODEL);
-                jSONObject3.put("platform", AnalyticsConstants.SDK_TYPE);
+                jSONObject3.put("platform", "Android");
                 jSONObject3.put("appVersion", DeviceConfig.getAppVersionName(context));
                 jSONObject3.put("sdkVersion", "9.9.1");
                 a = jSONObject3.toString();

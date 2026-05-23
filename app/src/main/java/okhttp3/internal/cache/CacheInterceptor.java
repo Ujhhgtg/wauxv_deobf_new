@@ -46,7 +46,7 @@ public final class CacheInterceptor implements Interceptor {
             for (int i = 0; i < size; i++) {
                 String strName = headers.name(i);
                 String strValue = headers.value(i);
-                if ((!"Warning".equalsIgnoreCase(strName) || !strValue.startsWith(SdkVersion.MINI_VERSION)) && (isContentSpecificHeader(strName) || !isEndToEnd(strName) || headers2.get(strName) == null)) {
+                if ((!"Warning".equalsIgnoreCase(strName) || !strValue.startsWith("1")) && (isContentSpecificHeader(strName) || !isEndToEnd(strName) || headers2.get(strName) == null)) {
                     builder.addLenient$okhttp(strName, strValue);
                 }
             }

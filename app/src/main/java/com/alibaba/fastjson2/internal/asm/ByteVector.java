@@ -52,7 +52,7 @@ public class ByteVector {
             } else if (cCharAt2 <= 2047) {
                 byte[] bArr2 = this.data;
                 int i8 = i7 + 1;
-                bArr2[i7] = (byte) (((cCharAt2 >> 6) & 31) | Opcodes.CHECKCAST);
+                bArr2[i7] = (byte) (((cCharAt2 >> 6) & 31) | 192);
                 i7 += 2;
                 bArr2[i8] = (byte) ((cCharAt2 & '?') | 128);
             } else {

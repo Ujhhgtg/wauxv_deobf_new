@@ -30,7 +30,7 @@ public final /* synthetic */ class RunnableC2410 implements Runnable {
     public final void run() {
         switch (this.f7692) {
             case 0:
-                (Build.VERSION.SDK_INT >= 28 ? AbstractC2412.m4377(Looper.getMainLooper()) : new Handler(Looper.getMainLooper())).postDelayed(new RunnableC2410(this.f7693, 1), new Random().nextInt(Math.max(1000, 1)) + 5000);
+                (Build.VERSION.SDK_INT >= 28 ? AbstractC2412.m4377(Looper.getMainLooper()) : new Handler(Looper.getMainLooper())).postDelayed(new RunnableC2410(this.f7693, 1), new Random().nextInt(1000) + 5000);
                 break;
             case 1:
                 new ThreadPoolExecutor(0, 1, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue()).execute(new RunnableC2410(this.f7693, 2));

@@ -14,7 +14,7 @@ public abstract class AbstractC2838 {
     static {
         String[] strArr = new String[93];
         for (int i = 0; i < 32; i++) {
-            strArr[i] = "\\u" + m4825(i >> 12) + m4825(i >> 8) + m4825(i >> 4) + m4825(i);
+            strArr[i] = "\\u" + m4825(0) + m4825(0) + m4825(i >> 4) + m4825(i);
         }
         strArr[34] = "\\\"";
         strArr[92] = "\\\\";

@@ -206,8 +206,8 @@ public final class C0358 extends AbstractC2707 implements InterfaceC2335 {
                 return m1470(this.f1673, interfaceC2225.mo306(c0550, runnableC1668));
             }
             C0348 c0348 = (C0348) interfaceC2225;
-            c0348.getClass();
-            runnableC1668.getClass();
+            
+            
             C1751 c1751 = (C1751) c0348.m1459(c0550, runnableC1668, !c0348.f1651);
             RunnableC1668.m3389("lhsUnaryOperation");
             Object objM3498 = c1751.m3498();

@@ -95,7 +95,7 @@ public class IconCompatParcelizer {
     }
 
     public static void write(IconCompat iconCompat, AbstractC3546 abstractC3546) {
-        abstractC3546.getClass();
+        
         iconCompat.f253 = iconCompat.f252.name();
         switch (iconCompat.f245) {
             case -1:

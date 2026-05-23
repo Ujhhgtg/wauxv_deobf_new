@@ -396,10 +396,10 @@ public class OkHttpClient implements Cloneable, Call.Factory, WebSocket.Factory 
         public final Builder protocols(List<? extends Protocol> list) {
             ArrayList arrayList = new ArrayList(list);
             Protocol protocol = Protocol.H2_PRIOR_KNOWLEDGE;
-            if (!arrayList.contains(protocol) && !arrayList.contains(Protocol.HTTP_1_1)) {
+            if (!arrayList.contains(Protocol.H2_PRIOR_KNOWLEDGE) && !arrayList.contains(Protocol.HTTP_1_1)) {
                 throw new IllegalArgumentException(("protocols must contain h2_prior_knowledge or http/1.1: " + arrayList).toString());
             }
-            if (arrayList.contains(protocol) && arrayList.size() > 1) {
+            if (arrayList.contains(Protocol.H2_PRIOR_KNOWLEDGE) && arrayList.size() > 1) {
                 throw new IllegalArgumentException(("protocols containing h2_prior_knowledge cannot use other protocols: " + arrayList).toString());
             }
             if (arrayList.contains(Protocol.HTTP_1_0)) {

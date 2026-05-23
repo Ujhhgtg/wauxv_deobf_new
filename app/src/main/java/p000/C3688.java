@@ -26,7 +26,7 @@ public final class C3688 extends AbstractC0567 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public final void mo1332(C1676 c1676) {
         Object c2585;
-        int i = C1563.f5437;
+        int i = 0;
         C3689 c3689 = this.f11586;
         C1563 c1563 = new C1563();
         c1563.f5438 = c1676;
@@ -43,7 +43,7 @@ public final class C3688 extends AbstractC0567 {
                 sb.append("] done");
                 C3678.m5307();
             }
-            c2585 = C3497.f10997;
+            c2585 = Unit.INSTANCE;
         } catch (Throwable th) {
             c2585 = new C2585(th);
         }
@@ -57,7 +57,7 @@ public final class C3688 extends AbstractC0567 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
     public final void mo1333(C1676 c1676) {
         Object c2585;
-        int i = C1563.f5437;
+        int i = 0;
         C3689 c3689 = this.f11586;
         C1563 c1563 = new C1563();
         c1563.f5438 = c1676;
@@ -79,7 +79,7 @@ public final class C3688 extends AbstractC0567 {
                 sb.append("] done");
                 C3678.m5307();
             }
-            c2585 = C3497.f10997;
+            c2585 = Unit.INSTANCE;
         } catch (Throwable th) {
             c2585 = new C2585(th);
         }

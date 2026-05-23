@@ -123,8 +123,8 @@ public final class C3539 {
                     matrix4.postScale(f2, f3);
                     float[] fArr = {0.0f, 1.0f, 1.0f, 0.0f};
                     matrix3.mapVectors(fArr);
-                    float fHypot = (float) Math.hypot(fArr[c], fArr[1]);
-                    boolean z = c;
+                    float fHypot = (float) Math.hypot(fArr[0], fArr[1]);
+                    boolean z = 0;
                     i3 = i5;
                     float fHypot2 = (float) Math.hypot(fArr[2], fArr[3]);
                     float f4 = (fArr[z ? 1 : 0] * fArr[3]) - (fArr[1] * fArr[2]);
@@ -166,7 +166,7 @@ public final class C3539 {
                                     f = 0.0f;
                                     this.f11098.getSegment(f9, f10, path, true);
                                 }
-                                path.rLineTo(f, f);
+                                path.rLineTo(0.0f, 0.0f);
                             }
                             path2.addPath(path, matrix4);
                             C0221 c0221 = c3535.f11069;
@@ -195,7 +195,7 @@ public final class C3539 {
                                     int i6 = c0221.f1351;
                                     float f12 = c3535.f11071;
                                     PorterDuff.Mode mode = C3542.f11121;
-                                    paint2.setColor((i6 & i4) | (((int) (Color.alpha(i6) * f12)) << 24));
+                                    paint2.setColor((i6 & 16777215) | (((int) (Color.alpha(i6) * f12)) << 24));
                                 }
                                 paint2.setColorFilter(null);
                                 path2.setFillType(c3535.f11091 == 0 ? Path.FillType.WINDING : Path.FillType.EVEN_ODD);
@@ -222,14 +222,14 @@ public final class C3539 {
                                 if (shader2 != null) {
                                     shader2.setLocalMatrix(matrix4);
                                     paint4.setShader(shader2);
-                                    paint4.setAlpha(Math.round(c3535.f11070 * f11));
+                                    paint4.setAlpha(Math.round(c3535.f11070 * 255.0f));
                                 } else {
                                     paint4.setShader(null);
                                     paint4.setAlpha(255);
                                     int i7 = c0222.f1351;
                                     float f13 = c3535.f11070;
                                     PorterDuff.Mode mode2 = C3542.f11121;
-                                    paint4.setColor((i7 & i4) | (((int) (Color.alpha(i7) * f13)) << 24));
+                                    paint4.setColor((i7 & 16777215) | (((int) (Color.alpha(i7) * f13)) << 24));
                                 }
                                 paint4.setColorFilter(null);
                                 paint4.setStrokeWidth(c3535.f11068 * fMin * fAbs);

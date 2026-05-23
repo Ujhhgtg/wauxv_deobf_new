@@ -35,8 +35,8 @@ public final class EnumC3675 {
     static {
         String[] strArr = AbstractC1574.f5469;
         String str = "MAIN_PROCESS";
-        C1565.f5440.getClass();
-        EnumC3675 enumC3675 = new EnumC3675(str, 0, C1565.m3277());
+        
+        EnumC3675 enumC3675 = new EnumC3675("MAIN_PROCESS", 0, C1565.m3277());
         f11514 = enumC3675;
         EnumC3675 enumC3676 = new EnumC3675("APP_BRAND_0", 1, C1565.m3277() + ":appbrand0");
         f11515 = enumC3676;

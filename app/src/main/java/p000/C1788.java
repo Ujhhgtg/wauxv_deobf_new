@@ -49,7 +49,7 @@ public final class C1788 {
         int iM4512;
         int size = this.f5947.size();
         View view2 = null;
-        int i = Integer.MAX_VALUE;
+        int i = 2147483647;
         for (int i2 = 0; i2 < size; i2++) {
             View view3 = ((AbstractC2508) this.f5947.get(i2)).f8006;
             C2492 c2492 = (C2492) view3.getLayoutParams();
@@ -73,7 +73,7 @@ public final class C1788 {
     public final View m3524(C2498 c2498) {
         List list = this.f5947;
         if (list == null) {
-            View view = c2498.m4500(this.f5940, Long.MAX_VALUE).f8006;
+            View view = c2498.m4500(this.f5940, 9223372036854775807L).f8006;
             this.f5940 += this.f5941;
             return view;
         }

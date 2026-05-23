@@ -21,7 +21,7 @@ public class k {
     public static final String b = "_dsk_s";
     public static final String c = "_thm_z";
     public static final String d = "_gdf_r";
-    public static final String a = be.b().b(be.s);
+    public static final String a = be.b().b("probe");
     private static Object e = new Object();
 
     public static void b(final Context context) {
@@ -48,7 +48,7 @@ public class k {
 
     public static boolean c(Context context) {
         SharedPreferences sharedPreferences;
-        return (context == null || (sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0)) == null || TextUtils.isEmpty(sharedPreferences.getString(b, ""))) ? false : true;
+        return (context == null || (sharedPreferences = context.getApplicationContext().getSharedPreferences(a, 0)) == null || TextUtils.isEmpty(sharedPreferences.getString("_dsk_s", ""))) ? false : true;
     }
 
     public static String a(Context context) {
@@ -59,9 +59,9 @@ public class k {
             }
             JSONObject jSONObject = new JSONObject();
             synchronized (e) {
-                jSONObject.put(b, sharedPreferences.getString(b, ""));
-                jSONObject.put(c, sharedPreferences.getString(c, ""));
-                jSONObject.put(d, sharedPreferences.getString(d, ""));
+                jSONObject.put("_dsk_s", sharedPreferences.getString("_dsk_s", ""));
+                jSONObject.put("_thm_z", sharedPreferences.getString("_thm_z", ""));
+                jSONObject.put("_gdf_r", sharedPreferences.getString("_gdf_r", ""));
             }
             return jSONObject.toString();
         } catch (Exception e2) {
@@ -77,7 +77,7 @@ public class k {
             return;
         }
         synchronized (e) {
-            sharedPreferences.edit().putString(b, strArr[0]).putString(c, strArr[1]).putString(d, strArr[2]).commit();
+            sharedPreferences.edit().putString("_dsk_s", strArr[0]).putString("_thm_z", strArr[1]).putString("_gdf_r", strArr[2]).commit();
         }
     }
 

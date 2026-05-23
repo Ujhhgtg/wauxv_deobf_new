@@ -78,7 +78,7 @@ public final class C0171 implements Comparator {
                 return ((AbstractC2270) obj).mo1222().compareTo(((AbstractC2270) obj2).mo1222());
             case 11:
                 return ((C2785) obj).f8886 - ((C2785) obj2).f8886;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return AbstractC1574.m3291(((C2355) obj).f7554, ((C2355) obj2).f7554);
             default:
                 return ((View) obj).getTop() - ((View) obj2).getTop();

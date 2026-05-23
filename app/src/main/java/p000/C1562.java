@@ -6,7 +6,6 @@ import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 import java.util.LinkedHashMap;
 import me.hd.wauxv.hook.HookEntry;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲇᤝᲁᲈᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -40,13 +39,13 @@ public final class C1562 {
         boolean z = (i & 1) == 0;
         C2310 c2310M5355 = null;
         XC_LoadPackage.LoadPackageParam loadPackageParam2 = (i & 2) != 0 ? null : loadPackageParam;
-        c1562.getClass();
+        
         String[] strArr = AbstractC1574.f5469;
         boolean z2 = f5435;
-        Object c2587 = C3497.f10997;
+        Object c2587 = Unit.INSTANCE;
         if (!z2) {
             try {
-                f5436.getClass();
+                
                 AbstractC1270.f4644 = "WAuxiliary";
                 AbstractC2205.f7173 = false;
                 if (!C3692.f11602 && C3692.f11607 != null) {
@@ -97,7 +96,7 @@ public final class C1562 {
                     throw new C0761();
                 }
                 if (!C3692.m5356(3, str2)) {
-                    C0251.f1415.getClass();
+                    
                     if (AbstractC2207.m4087(str2, C0251.m1338())) {
                         c2310M5355 = C3692.m5355(3, str2, null, null, null, null, 28);
                     }
@@ -113,7 +112,7 @@ public final class C1562 {
         if (c2310M5355 != null) {
             try {
                 int i4 = c2310M5355.f7438;
-                if ((i4 == i2 || (i4 != i2 && (c2310M5355.f7441 instanceof PathClassLoader))) && (c1538 = C3692.f11607) != null) {
+                if ((i4 == 1 || (true && (c2310M5355.f7441 instanceof PathClassLoader))) && (c1538 = C3692.f11607) != null) {
                     LinkedHashMap linkedHashMap = C3692.f11604;
                     String str4 = "android-zygote";
                     C2309 c2309 = (C2309) linkedHashMap.get(i4 == 1 ? "android-zygote" : c2310M5355.f7439);
@@ -127,11 +126,11 @@ public final class C1562 {
                     c2309.f7437 = c2310M5355;
                     c1538.invoke(c2309);
                 }
-                if (c2310M5355.f7438 != i2 && c2310M5355.f7439.equals(C3692.f11608)) {
+                if (c2310M5355.f7438 != 1 && c2310M5355.f7439.equals(C3692.f11608)) {
                     C0251 c0251 = C0251.f1415;
                     ClassLoader classLoader4 = c2310M5355.f7441;
                     int i5 = c2310M5355.f7438;
-                    c0251.getClass();
+                    
                     C0251.m1339(classLoader4, i5);
                 }
                 if (c2310M5355.f7438 == 2) {

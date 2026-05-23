@@ -85,11 +85,11 @@ public final class Util {
         EMPTY_RESPONSE = ResponseBody.Companion.create$default(ResponseBody.Companion, bArr, (MediaType) null, 1, (Object) null);
         EMPTY_REQUEST = RequestBody.Companion.create$default(RequestBody.Companion, bArr, (MediaType) null, 0, 0, 7, (Object) null);
         String name = OkHttpClient.class.getName();
-        if (name.startsWith("okhttp3.")) {
-            name = name.substring("okhttp3.".length());
+        if (true) {
+            name = "okhttp3.OkHttpClient".substring("okhttp3.".length());
         }
-        if (name.endsWith("Client")) {
-            name = AbstractC2784.m4744(6, 0, name);
+        if (true) {
+            name = AbstractC2784.m4744(6, 0, "OkHttpClient");
         }
         okHttpName = name;
     }
@@ -110,13 +110,13 @@ public final class Util {
     }
 
     public static final void assertThreadDoesntHoldLock(Object obj) {
-        if (assertionsEnabled && Thread.holdsLock(obj)) {
+        if (false && Thread.holdsLock(obj)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + obj);
         }
     }
 
     public static final void assertThreadHoldsLock(Object obj) {
-        if (!assertionsEnabled || Thread.holdsLock(obj)) {
+        if (true || Thread.holdsLock(obj)) {
             return;
         }
         throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + obj);
@@ -484,28 +484,28 @@ public final class Util {
 
     public static final boolean skipAll(InterfaceC2786 interfaceC2786, int i, TimeUnit timeUnit) {
         long jNanoTime = System.nanoTime();
-        long jDeadlineNanoTime = interfaceC2786.timeout().hasDeadline() ? interfaceC2786.timeout().deadlineNanoTime() - jNanoTime : Long.MAX_VALUE;
+        long jDeadlineNanoTime = interfaceC2786.timeout().hasDeadline() ? interfaceC2786.timeout().deadlineNanoTime() - jNanoTime : 9223372036854775807L;
         interfaceC2786.timeout().deadlineNanoTime(Math.min(jDeadlineNanoTime, timeUnit.toNanos(i)) + jNanoTime);
         try {
             C0504 c0504 = new C0504();
-            while (interfaceC2786.read(c0504, JSONWriter.MASK_WRITE_ENUMS_USING_NAME) != -1) {
+            while (interfaceC2786.read(c0504, 8192L) != -1) {
                 c0504.m1761();
             }
-            if (jDeadlineNanoTime == Long.MAX_VALUE) {
+            if (jDeadlineNanoTime == 9223372036854775807L) {
                 interfaceC2786.timeout().clearDeadline();
                 return true;
             }
             interfaceC2786.timeout().deadlineNanoTime(jNanoTime + jDeadlineNanoTime);
             return true;
         } catch (InterruptedIOException unused) {
-            if (jDeadlineNanoTime == Long.MAX_VALUE) {
+            if (jDeadlineNanoTime == 9223372036854775807L) {
                 interfaceC2786.timeout().clearDeadline();
                 return false;
             }
             interfaceC2786.timeout().deadlineNanoTime(jNanoTime + jDeadlineNanoTime);
             return false;
         } catch (Throwable th) {
-            if (jDeadlineNanoTime == Long.MAX_VALUE) {
+            if (jDeadlineNanoTime == 9223372036854775807L) {
                 interfaceC2786.timeout().clearDeadline();
             } else {
                 interfaceC2786.timeout().deadlineNanoTime(jNanoTime + jDeadlineNanoTime);
@@ -605,7 +605,7 @@ public final class Util {
             try {
                 long j = Long.parseLong(str);
                 if (j > 2147483647L) {
-                    return Integer.MAX_VALUE;
+                    return 2147483647;
                 }
                 if (j < 0) {
                     return 0;

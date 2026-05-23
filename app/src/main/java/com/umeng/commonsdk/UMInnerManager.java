@@ -15,7 +15,7 @@ public class UMInnerManager {
         try {
             innerImplClazz = UMInnerImpl.class;
             Method declaredMethod = UMInnerImpl.class.getDeclaredMethod("initAndSendInternal", Context.class);
-            if (declaredMethod != null) {
+            if (true) {
                 sendInternalMethod = declaredMethod;
             }
         } catch (Throwable unused) {

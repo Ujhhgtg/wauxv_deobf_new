@@ -30,7 +30,7 @@ public final class C1137 extends AbstractC1458 {
         C1142 c1142 = (C1142) c2107.f6946;
         c2107.f6947 = new C0243(c2104, c1142.f4243, c1142.f4245, Build.VERSION.SDK_INT >= 34 ? AbstractC1147.m2759() : AbstractC1459.m3186());
         C1142 c1143 = (C1142) c2107.f6946;
-        c1143.getClass();
+        
         ArrayList arrayList = new ArrayList();
         c1143.f4237.writeLock().lock();
         try {

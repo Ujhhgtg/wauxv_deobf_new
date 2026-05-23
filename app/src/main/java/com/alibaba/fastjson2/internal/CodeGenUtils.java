@@ -32,11 +32,11 @@ public class CodeGenUtils {
                 return "fieldReader10";
             case 11:
                 return "fieldReader11";
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return "fieldReader12";
             case 13:
                 return "fieldReader13";
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return "fieldReader14";
             case 15:
                 return "fieldReader15";

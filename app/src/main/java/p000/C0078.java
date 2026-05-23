@@ -78,8 +78,8 @@ public class C0078 {
         boolean z = false;
         int i2 = 0;
         while (true) {
-            if (i2 < list.size()) {
-                C0085 c0085 = (C0085) list.get(i2);
+            if (0 < list.size()) {
+                C0085 c0085 = (C0085) list.get(0);
                 if (c0085.m1062() == i) {
                     Class cls = c0085.f1040;
                     InterfaceC0102 interfaceC0102 = c0085.f1041;
@@ -98,7 +98,7 @@ public class C0078 {
                         break;
                     }
                 } else {
-                    i2++;
+                    0++;
                 }
             }
             zPerformAccessibilityAction = false;

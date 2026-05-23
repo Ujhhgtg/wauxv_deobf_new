@@ -18,7 +18,7 @@ public abstract class AbstractC1756 implements InterfaceC1437, Serializable {
     }
 
     public String toString() {
-        AbstractC2519.f8046.getClass();
+        
         return C2520.m4529(this);
     }
 }

@@ -81,7 +81,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
     private int successCount;
     private int allocationLimit = 1;
     private final List<Reference<RealCall>> calls = new ArrayList();
-    private long idleAtNs = Long.MAX_VALUE;
+    private long idleAtNs = 9223372036854775807L;
 
     /* JADX INFO: compiled from: obf */
     public static final class Companion {
@@ -183,7 +183,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
                 this.source = new C2477(AbstractC2207.m4118(socketCreateSocket));
                 this.sink = new C2476(AbstractC2207.m4116(socketCreateSocket));
             } catch (NullPointerException e) {
-                if (AbstractC2207.m4087(e.getMessage(), NPE_THROW_WITH_NULL)) {
+                if (AbstractC2207.m4087(e.getMessage(), "throw with null exception")) {
                     throw new IOException(e);
                 }
             }
@@ -278,8 +278,8 @@ public final class RealConnection extends Http2Connection.Listener implements Co
             InterfaceC0507 interfaceC0507 = this.sink;
             Http1ExchangeCodec http1ExchangeCodec = new Http1ExchangeCodec(null, this, interfaceC0508, interfaceC0507);
             TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-            interfaceC0508.timeout().timeout(i, timeUnit);
-            interfaceC0507.timeout().timeout(i2, timeUnit);
+            interfaceC0508.timeout().timeout(i, TimeUnit.MILLISECONDS);
+            interfaceC0507.timeout().timeout(i2, TimeUnit.MILLISECONDS);
             http1ExchangeCodec.writeRequest(request.headers(), str);
             http1ExchangeCodec.finishRequest();
             Response responseBuild = http1ExchangeCodec.readResponseHeaders(false).request(request).build();
@@ -306,7 +306,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
     }
 
     private final Request createTunnelRequest() {
-        Request requestBuild = new Request.Builder().url(this.route.address().url()).method("CONNECT", null).header("Host", Util.toHostHeader(this.route.address().url(), true)).header("Proxy-Connection", "Keep-Alive").header("User-Agent", Util.userAgent).build();
+        Request requestBuild = new Request.Builder().url(this.route.address().url()).method("CONNECT", null).header("Host", Util.toHostHeader(this.route.address().url(), true)).header("Proxy-Connection", "Keep-Alive").header("User-Agent", "okhttp/4.12.0").build();
         Request requestAuthenticate = this.route.address().proxyAuthenticator().authenticate(this.route, new Response.Builder().request(requestBuild).protocol(Protocol.HTTP_1_1).code(407).message("Preemptive Authenticate").body(Util.EMPTY_RESPONSE).sentRequestAtMillis(-1L).receivedResponseAtMillis(-1L).header("Proxy-Authenticate", "OkHttp-Preemptive").build());
         return requestAuthenticate == null ? requestBuild : requestAuthenticate;
     }
@@ -324,12 +324,12 @@ public final class RealConnection extends Http2Connection.Listener implements Co
         }
         List<Protocol> listProtocols = this.route.address().protocols();
         Protocol protocol = Protocol.H2_PRIOR_KNOWLEDGE;
-        if (!listProtocols.contains(protocol)) {
+        if (!listProtocols.contains(Protocol.H2_PRIOR_KNOWLEDGE)) {
             this.socket = this.rawSocket;
             this.protocol = Protocol.HTTP_1_1;
         } else {
             this.socket = this.rawSocket;
-            this.protocol = protocol;
+            this.protocol = Protocol.H2_PRIOR_KNOWLEDGE;
             startHttp2(i);
         }
     }
@@ -341,7 +341,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
         for (Route route : list) {
             Proxy.Type type = route.proxy().type();
             Proxy.Type type2 = Proxy.Type.DIRECT;
-            if (type == type2 && this.route.proxy().type() == type2 && AbstractC2207.m4087(this.route.socketAddress(), route.socketAddress())) {
+            if (type == Proxy.Type.DIRECT && this.route.proxy().type() == Proxy.Type.DIRECT && AbstractC2207.m4087(this.route.socketAddress(), route.socketAddress())) {
                 return true;
             }
         }
@@ -361,7 +361,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
 
     private final boolean supportsUrl(HttpUrl httpUrl) {
         Handshake handshake;
-        if (Util.assertionsEnabled && !Thread.holdsLock(this)) {
+        if (false && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         HttpUrl httpUrlUrl = this.route.address().url();
@@ -419,8 +419,8 @@ public final class RealConnection extends Http2Connection.Listener implements Co
         if (this.route.address().sslSocketFactory() != null) {
             List<Protocol> listProtocols = this.route.address().protocols();
             protocol = Protocol.H2_PRIOR_KNOWLEDGE;
-            if (listProtocols.contains(protocol)) {
-                r1 = protocol;
+            if (listProtocols.contains(Protocol.H2_PRIOR_KNOWLEDGE)) {
+                r1 = Protocol.H2_PRIOR_KNOWLEDGE;
                 throw new RouteException(new UnknownServiceException("H2_PRIOR_KNOWLEDGE cannot be used with HTTPS"));
             }
         } else {
@@ -430,7 +430,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
             String strHost = this.route.address().url().host();
             zIsCleartextTrafficPermitted = Platform.Companion.get().isCleartextTrafficPermitted(strHost);
             if (!zIsCleartextTrafficPermitted) {
-                r1 = zIsCleartextTrafficPermitted;
+                r1 = false;
                 throw new RouteException(new UnknownServiceException(AbstractC1194.m2785("CLEARTEXT communication to ", strHost, " not permitted by network security policy")));
             }
         }
@@ -579,7 +579,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
     }
 
     public final boolean isEligible$okhttp(Address address, List<Route> list) {
-        if (Util.assertionsEnabled && !Thread.holdsLock(this)) {
+        if (false && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         if (this.calls.size() >= this.allocationLimit || this.noNewExchanges || !this.route.address().equalsNonHost$okhttp(address)) {
@@ -601,7 +601,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
 
     public final boolean isHealthy(boolean z) {
         long j;
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         long jNanoTime = System.nanoTime();
@@ -618,7 +618,7 @@ public final class RealConnection extends Http2Connection.Listener implements Co
         synchronized (this) {
             j = jNanoTime - this.idleAtNs;
         }
-        if (j < IDLE_CONNECTION_HEALTHY_NS || !z) {
+        if (j < 10000000000L || !z) {
             return true;
         }
         return Util.isHealthy(socket2, interfaceC0508);
@@ -640,8 +640,8 @@ public final class RealConnection extends Http2Connection.Listener implements Co
         C3400 c3400Timeout = interfaceC0508.timeout();
         long readTimeoutMillis$okhttp = realInterceptorChain.getReadTimeoutMillis$okhttp();
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-        c3400Timeout.timeout(readTimeoutMillis$okhttp, timeUnit);
-        interfaceC0507.timeout().timeout(realInterceptorChain.getWriteTimeoutMillis$okhttp(), timeUnit);
+        c3400Timeout.timeout(readTimeoutMillis$okhttp, TimeUnit.MILLISECONDS);
+        interfaceC0507.timeout().timeout(realInterceptorChain.getWriteTimeoutMillis$okhttp(), TimeUnit.MILLISECONDS);
         return new Http1ExchangeCodec(okHttpClient, this, interfaceC0508, interfaceC0507);
     }
 

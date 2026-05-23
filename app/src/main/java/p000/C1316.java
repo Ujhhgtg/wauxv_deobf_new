@@ -70,9 +70,9 @@ public class C1316 {
         c2804.f8943 = this;
         ArrayList arrayList = (ArrayList) this.f4761;
         arrayList.add(view);
-        this.f4758 = Integer.MIN_VALUE;
+        this.f4758 = -2147483648;
         if (arrayList.size() == 1) {
-            this.f4757 = Integer.MIN_VALUE;
+            this.f4757 = -2147483648;
         }
         if (c2804.f7956.m4518() || c2804.f7956.m4521()) {
             this.f4759 = ((StaggeredGridLayoutManager) this.f4762).f434.mo2738(view) + this.f4759;
@@ -113,8 +113,8 @@ public class C1316 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public void m3029() {
         ((ArrayList) this.f4761).clear();
-        this.f4757 = Integer.MIN_VALUE;
-        this.f4758 = Integer.MIN_VALUE;
+        this.f4757 = -2147483648;
+        this.f4758 = -2147483648;
         this.f4759 = 0;
     }
 
@@ -166,7 +166,7 @@ public class C1316 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public int m3034(int i) {
         int i2 = this.f4758;
-        if (i2 != Integer.MIN_VALUE) {
+        if (i2 != -2147483648) {
             return i2;
         }
         if (((ArrayList) this.f4761).size() == 0) {
@@ -209,7 +209,7 @@ public class C1316 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public int m3036(int i) {
         int i2 = this.f4757;
-        if (i2 != Integer.MIN_VALUE) {
+        if (i2 != -2147483648) {
             return i2;
         }
         if (((ArrayList) this.f4761).size() == 0) {
@@ -230,9 +230,9 @@ public class C1316 {
             this.f4759 -= ((StaggeredGridLayoutManager) this.f4762).f434.mo2738(view);
         }
         if (size == 1) {
-            this.f4757 = Integer.MIN_VALUE;
+            this.f4757 = -2147483648;
         }
-        this.f4758 = Integer.MIN_VALUE;
+        this.f4758 = -2147483648;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
@@ -242,12 +242,12 @@ public class C1316 {
         C2804 c2804 = (C2804) view.getLayoutParams();
         c2804.f8943 = null;
         if (arrayList.size() == 0) {
-            this.f4758 = Integer.MIN_VALUE;
+            this.f4758 = -2147483648;
         }
         if (c2804.f7956.m4518() || c2804.f7956.m4521()) {
             this.f4759 -= ((StaggeredGridLayoutManager) this.f4762).f434.mo2738(view);
         }
-        this.f4757 = Integer.MIN_VALUE;
+        this.f4757 = -2147483648;
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
@@ -256,9 +256,9 @@ public class C1316 {
         c2804.f8943 = this;
         ArrayList arrayList = (ArrayList) this.f4761;
         arrayList.add(0, view);
-        this.f4757 = Integer.MIN_VALUE;
+        this.f4757 = -2147483648;
         if (arrayList.size() == 1) {
-            this.f4758 = Integer.MIN_VALUE;
+            this.f4758 = -2147483648;
         }
         if (c2804.f7956.m4518() || c2804.f7956.m4521()) {
             this.f4759 = ((StaggeredGridLayoutManager) this.f4762).f434.mo2738(view) + this.f4759;
@@ -330,8 +330,8 @@ public class C1316 {
         this.f4756 = 2;
         this.f4762 = staggeredGridLayoutManager;
         this.f4761 = new ArrayList();
-        this.f4757 = Integer.MIN_VALUE;
-        this.f4758 = Integer.MIN_VALUE;
+        this.f4757 = -2147483648;
+        this.f4758 = -2147483648;
         this.f4759 = 0;
         this.f4760 = i;
     }

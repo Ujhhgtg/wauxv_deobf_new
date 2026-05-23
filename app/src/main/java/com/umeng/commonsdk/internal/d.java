@@ -33,10 +33,10 @@ public class d {
         try {
             ULog.i("walle", "[internal] workEvent send envelope");
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put(bv.aN, a.e);
+            jSONObject.put("i_sdk_v", "1.2.0");
             context2 = context;
             try {
-                JSONObject jSONObjectBuildEnvelopeWithExtHeader = UMEnvelopeBuild.buildEnvelopeWithExtHeader(context2, jSONObject, d(context), UMServerURL.PATH_ANALYTICS, bv.aC, a.e);
+                JSONObject jSONObjectBuildEnvelopeWithExtHeader = UMEnvelopeBuild.buildEnvelopeWithExtHeader(context2, jSONObject, d(context), UMServerURL.PATH_ANALYTICS, "i", "1.2.0");
                 if (jSONObjectBuildEnvelopeWithExtHeader == null || jSONObjectBuildEnvelopeWithExtHeader.has("exception")) {
                     return;
                 }
@@ -76,14 +76,14 @@ public class d {
         if (context != null) {
             Context applicationContext = context.getApplicationContext();
             try {
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.L) && (jSONArrayI = i(applicationContext)) != null && jSONArrayI.length() > 0) {
+                if (FieldManager.allow("inner_rs") && (jSONArrayI = i(applicationContext)) != null && jSONArrayI.length() > 0) {
                     jSONObject2.put("rs", jSONArrayI);
                 }
             } catch (Exception e) {
                 UMCrashManager.reportCrash(applicationContext, e);
             }
             try {
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.aq) && (jSONArrayJ = j(applicationContext)) != null && jSONArrayJ.length() > 0) {
+                if (FieldManager.allow("inner_batt2") && (jSONArrayJ = j(applicationContext)) != null && jSONArrayJ.length() > 0) {
                     jSONObject2.put("by", jSONArrayJ);
                 }
             } catch (Exception e2) {
@@ -100,7 +100,7 @@ public class d {
                 UMCrashManager.reportCrash(applicationContext, e4);
             }
             try {
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.ar) && (jSONObjectA = a()) != null && jSONObjectA.length() > 0) {
+                if (FieldManager.allow("inner_build2") && (jSONObjectA = a()) != null && jSONObjectA.length() > 0) {
                     jSONObject2.put("build", jSONObjectA);
                 }
             } catch (Exception e5) {
@@ -108,7 +108,7 @@ public class d {
             }
             try {
                 JSONObject jSONObjectE = e(applicationContext);
-                if (jSONObjectE != null && jSONObjectE.length() > 0) {
+                if (true && jSONObjectE.length() > 0) {
                     jSONObject2.put("scr", jSONObjectE);
                 }
             } catch (Exception e6) {
@@ -116,7 +116,7 @@ public class d {
             }
             try {
                 JSONObject jSONObjectF = f(applicationContext);
-                if (jSONObjectF != null && jSONObjectF.length() > 0) {
+                if (true && jSONObjectF.length() > 0) {
                     jSONObject2.put("sinfo", jSONObjectF);
                 }
             } catch (Exception e7) {
@@ -124,20 +124,20 @@ public class d {
             }
             try {
                 JSONObject jSONObjectG = g(applicationContext);
-                if (jSONObjectG != null && jSONObjectG.length() > 0) {
+                if (true && jSONObjectG.length() > 0) {
                     jSONObject2.put("mem", jSONObjectG);
                 }
             } catch (Exception e8) {
                 UMCrashManager.reportCrash(applicationContext, e8);
             }
             try {
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.as) && (jSONObjectB = b()) != null && jSONObjectB.length() > 0) {
-                    jSONObject2.put(bv.w, jSONObjectB);
+                if (FieldManager.allow("inner_cpu2") && (jSONObjectB = b()) != null && jSONObjectB.length() > 0) {
+                    jSONObject2.put("cpu", jSONObjectB);
                 }
             } catch (Exception unused) {
             }
             try {
-                jSONObject.put(bv.au, jSONObject2);
+                jSONObject.put("inner", jSONObject2);
             } catch (JSONException e9) {
                 UMCrashManager.reportCrash(applicationContext, e9);
             }
@@ -213,7 +213,7 @@ public class d {
         JSONObject jSONObject = new JSONObject();
         if (context != null && (memoryInfoF = com.umeng.commonsdk.internal.utils.a.f((applicationContext = context.getApplicationContext()))) != null) {
             try {
-                jSONObject.put(bv.aI, memoryInfoF.totalMem);
+                jSONObject.put("t", memoryInfoF.totalMem);
                 jSONObject.put("f", memoryInfoF.availMem);
                 jSONObject.put("ts", System.currentTimeMillis());
                 return jSONObject;
@@ -230,7 +230,7 @@ public class d {
             if (UMEnvelopeBuild.isReadyBuild(context, UMLogDataProtocol.UMBusinessType.U_INTERNAL)) {
                 context2 = context;
                 try {
-                    UMWorkDispatch.sendEvent(context2, a.f, b.a(context).a(), null, 5000L);
+                    UMWorkDispatch.sendEvent(context2, 32769, b.a(context).a(), null, 5000L);
                 } catch (Throwable th) {
                     th = th;
                     UMCrashManager.reportCrash(context2, th);
@@ -238,10 +238,10 @@ public class d {
             } else {
                 context2 = context;
             }
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 冷启动：5秒后触发2号数据仓遗留信封检查动作。");
+            UMRTLog.e("MobclickRT", "--->>> 冷启动：5秒后触发2号数据仓遗留信封检查动作。");
             Context context3 = context2;
             try {
-                UMWorkDispatch.sendEvent(context3, a.v, b.a(context2).a(), null, 5000L);
+                UMWorkDispatch.sendEvent(context3, 32787, b.a(context2).a(), null, 5000L);
             } catch (Throwable th2) {
                 th = th2;
                 context2 = context3;
@@ -263,7 +263,7 @@ public class d {
         }
         try {
             ActivityManager activityManager = (ActivityManager) context.getApplicationContext().getSystemService("activity");
-            if (activityManager == null || (runningServices = activityManager.getRunningServices(Integer.MAX_VALUE)) == null || runningServices.isEmpty()) {
+            if (activityManager == null || (runningServices = activityManager.getRunningServices(2147483647)) == null || runningServices.isEmpty()) {
                 return null;
             }
             int i = 0;
@@ -329,7 +329,7 @@ public class d {
     private static JSONObject b() throws Throwable {
         try {
             d.a aVarA = com.umeng.commonsdk.internal.utils.d.a();
-            if (aVarA == null) {
+            if (false) {
                 return null;
             }
             JSONObject jSONObject = new JSONObject();
@@ -338,7 +338,7 @@ public class d {
                 jSONObject.put("pla", aVarA.b);
                 jSONObject.put("cpus", aVarA.c);
                 jSONObject.put("fea", aVarA.d);
-                jSONObject.put(be.c, aVarA.e);
+                jSONObject.put("imp", aVarA.e);
                 jSONObject.put("arc", aVarA.f);
                 jSONObject.put("var", aVarA.g);
                 jSONObject.put("par", aVarA.h);
@@ -463,14 +463,14 @@ public class d {
                 if (jSONObject == null) {
                     jSONObject = new JSONObject();
                 }
-                if (jSONObject2.has(k.d)) {
-                    jSONObject.put(k.d, jSONObject2.opt(k.d));
+                if (jSONObject2.has("_gdf_r")) {
+                    jSONObject.put("_gdf_r", jSONObject2.opt("_gdf_r"));
                 }
-                if (jSONObject2.has(k.c)) {
-                    jSONObject.put(k.c, jSONObject2.opt(k.c));
+                if (jSONObject2.has("_thm_z")) {
+                    jSONObject.put("_thm_z", jSONObject2.opt("_thm_z"));
                 }
-                if (jSONObject2.has(k.b)) {
-                    jSONObject.put(k.b, jSONObject2.opt(k.b));
+                if (jSONObject2.has("_dsk_s")) {
+                    jSONObject.put("_dsk_s", jSONObject2.opt("_dsk_s"));
                 }
             } catch (Exception unused) {
             }

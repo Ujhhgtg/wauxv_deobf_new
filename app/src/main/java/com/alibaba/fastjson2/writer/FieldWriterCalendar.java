@@ -47,7 +47,7 @@ final class FieldWriterCalendar<T> extends FieldWriterDate<T> {
             jSONWriter.writeNull();
             return true;
         } catch (RuntimeException e) {
-            if ((features & JSONWriter.MASK_IGNORE_ERROR_GETTER) != 0) {
+            if ((features & 32768L) != 0) {
                 return false;
             }
             throw e;

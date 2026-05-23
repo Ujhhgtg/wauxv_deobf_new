@@ -42,10 +42,10 @@ public abstract class AbstractC0496 {
         sb.append(i);
         String string = sb.toString();
         C0711 c0711 = new C0711();
-        c0711.m2137(1537, string.replace(".", "/"), null, ASMUtils.TYPE_OBJECT, null);
+        c0711.m2137(1537, string.replace(".", "/"), null, "java/lang/Object", null);
         C0495 c0495 = f2133;
         byte[] bArrM2136 = c0711.m2136();
-        c0495.getClass();
+        
         Class clsM1744 = AbstractC0499.m1744(string, bArrM2136);
         this.f2138 = clsM1744;
         f2134.put(this, clsM1744);

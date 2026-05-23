@@ -76,13 +76,13 @@ public class c {
         if (e) {
             return;
         }
-        ImprintHandler.getImprintService(this.a).registImprintCallback(AnalyticsConstants.CFG_FIELD_KEY, new UMImprintChangeCallback() { // from class: com.umeng.commonsdk.statistics.internal.c.1
+        ImprintHandler.getImprintService(this.a).registImprintCallback("cfgfd", new UMImprintChangeCallback() { // from class: com.umeng.commonsdk.statistics.internal.c.1
             @Override // com.umeng.commonsdk.statistics.internal.UMImprintChangeCallback
             public void onImprintValueChanged(String str, String str2) {
                 if (FieldManager.b()) {
                     FieldManager.a().a(c.this.a, str2);
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> apply imprint change and exit: key=" + str + "; value= " + str2);
-                    UMWorkDispatch.sendEvent(c.this.a, com.umeng.commonsdk.internal.a.w, com.umeng.commonsdk.internal.b.a(c.this.a).a(), null);
+                    UMRTLog.e("MobclickRT", "--->>> apply imprint change and exit: key=" + str + "; value= " + str2);
+                    UMWorkDispatch.sendEvent(c.this.a, 32788, com.umeng.commonsdk.internal.b.a(c.this.a).a(), null);
                 }
             }
         });
@@ -93,34 +93,34 @@ public class c {
         if (d) {
             return;
         }
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> 注册零号报文 imprint 应答处理回调。");
-        ImprintHandler.getImprintService(this.a).registPreProcessCallback(AnalyticsConstants.ZERO_RESPONSE_FLAG, new UMImprintPreProcessCallback() { // from class: com.umeng.commonsdk.statistics.internal.c.2
+        UMRTLog.e("MobclickRT", "--->>> 注册零号报文 imprint 应答处理回调。");
+        ImprintHandler.getImprintService(this.a).registPreProcessCallback("iscfg", new UMImprintPreProcessCallback() { // from class: com.umeng.commonsdk.statistics.internal.c.2
             @Override // com.umeng.commonsdk.statistics.internal.UMImprintPreProcessCallback
             public boolean onPreProcessImprintKey(String str, String str2) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> onImprintValueChanged: key=" + str + "; value= " + str2);
+                UMRTLog.e("MobclickRT", "--->>> onImprintValueChanged: key=" + str + "; value= " + str2);
                 FieldManager.a().a(c.this.a);
-                UMWorkDispatch.sendEvent(c.this.a, com.umeng.commonsdk.internal.a.s, com.umeng.commonsdk.internal.b.a(c.this.a).a(), null);
-                ImprintHandler.getImprintService(c.this.a).a(AnalyticsConstants.ZERO_RESPONSE_FLAG);
+                UMWorkDispatch.sendEvent(c.this.a, 32784, com.umeng.commonsdk.internal.b.a(c.this.a).a(), null);
+                ImprintHandler.getImprintService(c.this.a).a("iscfg");
                 return true;
             }
         });
-        ImprintHandler.getImprintService(this.a).registImprintCallback(AnalyticsConstants.CFG_FIELD_KEY, new UMImprintChangeCallback() { // from class: com.umeng.commonsdk.statistics.internal.c.3
+        ImprintHandler.getImprintService(this.a).registImprintCallback("cfgfd", new UMImprintChangeCallback() { // from class: com.umeng.commonsdk.statistics.internal.c.3
             @Override // com.umeng.commonsdk.statistics.internal.UMImprintChangeCallback
             public void onImprintValueChanged(String str, String str2) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> first onImprintValueChanged: key=" + str + "; value= " + str2);
+                UMRTLog.e("MobclickRT", "--->>> first onImprintValueChanged: key=" + str + "; value= " + str2);
                 FieldManager.a().a(c.this.a, str2);
-                UMWorkDispatch.sendEvent(c.this.a, com.umeng.commonsdk.internal.a.s, com.umeng.commonsdk.internal.b.a(c.this.a).a(), null);
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.E)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> recv zcfg response: foregound count timer enabled.");
+                UMWorkDispatch.sendEvent(c.this.a, 32784, com.umeng.commonsdk.internal.b.a(c.this.a).a(), null);
+                if (FieldManager.allow("header_foreground_count")) {
+                    UMRTLog.i("MobclickRT", "--->>> recv zcfg response: foregound count timer enabled.");
                     if (!UMWorkDispatch.eventHasExist()) {
-                        UMWorkDispatch.sendEventEx(c.this.a, r.a.E, CoreProtocol.getInstance(c.this.a), null, 0L);
+                        UMWorkDispatch.sendEventEx(c.this.a, 8213, CoreProtocol.getInstance(c.this.a), null, 0L);
                     }
                 }
-                if (FieldManager.allow(com.umeng.commonsdk.utils.d.F)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> recv zcfg response: FirstResumeTrigger enabled.");
+                if (FieldManager.allow("header_first_resume")) {
+                    UMRTLog.i("MobclickRT", "--->>> recv zcfg response: FirstResumeTrigger enabled.");
                     o.a(c.this.a).b(c.this.a);
                 }
-                ImprintHandler.getImprintService(c.this.a).unregistImprintCallback(AnalyticsConstants.CFG_FIELD_KEY, this);
+                ImprintHandler.getImprintService(c.this.a).unregistImprintCallback("cfgfd", this);
             }
         });
         d = true;
@@ -221,7 +221,7 @@ public class c {
         HttpsURLConnection httpsURLConnection;
         OutputStream outputStream;
         OutputStream outputStream2;
-        UMRTLog.i(UMRTLog.RTLOG_TAG, "[有状态] 上报url: " + str);
+        UMRTLog.i("MobclickRT", "[有状态] 上报url: " + str);
         try {
             try {
                 b bVar = this.b;
@@ -243,7 +243,7 @@ public class c {
                     httpsURLConnection.setRequestProperty("Content-Type", a.a(this.a).a());
                     httpsURLConnection.setRequestProperty("Msg-Type", "envelope/json");
                     httpsURLConnection.setRequestProperty("X-Umeng-Pro-Ver", "1.0.0");
-                    httpsURLConnection.setRequestProperty("SM-IMP", SdkVersion.MINI_VERSION);
+                    httpsURLConnection.setRequestProperty("SM-IMP", "1");
                     httpsURLConnection.setRequestProperty("User-Agent", DeviceConfig.getCustomAgt());
                     httpsURLConnection.setConnectTimeout(30000);
                     httpsURLConnection.setReadTimeout(30000);
@@ -265,7 +265,7 @@ public class c {
                         if (TextUtils.isEmpty(headerField) || !headerField.equalsIgnoreCase("application/thrift")) {
                             z = false;
                         }
-                        String str2 = AnalyticsConstants.OS;
+                        String str2 = "Android";
                         if (responseCode == 200 && z) {
                             InputStream inputStream = httpsURLConnection.getInputStream();
                             try {
@@ -300,14 +300,14 @@ public class c {
                         return null;
                     } catch (UnknownHostException unused3) {
                         UMLog.aq("A_10200", 2, "\\|");
-                        if (outputStream != null) {
+                        if (true) {
                             try {
                                 outputStream.close();
                             } catch (Exception e4) {
                                 UMCrashManager.reportCrash(this.a, e4);
                             }
                         }
-                        if (httpsURLConnection != null) {
+                        if (true) {
                             try {
                                 httpsURLConnection.getInputStream().close();
                             } catch (IOException unused4) {
@@ -317,14 +317,14 @@ public class c {
                         return null;
                     } catch (SSLHandshakeException unused5) {
                         UMLog.aq("A_10201", 2, "\\|");
-                        if (outputStream != null) {
+                        if (true) {
                             try {
                                 outputStream.close();
                             } catch (Exception e5) {
                                 UMCrashManager.reportCrash(this.a, e5);
                             }
                         }
-                        if (httpsURLConnection != null) {
+                        if (true) {
                             try {
                                 httpsURLConnection.getInputStream().close();
                             } catch (IOException unused6) {
@@ -340,7 +340,7 @@ public class c {
                                 UMCrashManager.reportCrash(this.a, e6);
                             }
                         }
-                        if (httpsURLConnection != null) {
+                        if (true) {
                             try {
                                 httpsURLConnection.getInputStream().close();
                             } catch (IOException unused8) {
@@ -364,7 +364,7 @@ public class c {
                         UMCrashManager.reportCrash(this.a, e7);
                     }
                 }
-                if (str != 0) {
+                if (false) {
                     try {
                         str.getInputStream().close();
                     } catch (IOException unused12) {

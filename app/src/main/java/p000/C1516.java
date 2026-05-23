@@ -22,7 +22,7 @@ public final class C1516 {
 
     static {
         C2425 c2425 = new C2425(C1516.class, "ActivityThreadClass", "getActivityThreadClass()Ljava/lang/Class;");
-        AbstractC2519.f8046.getClass();
+        
         f5346 = new InterfaceC1742[]{c2425, new C2425(C1516.class, "ClientTransactionClass", "getClientTransactionClass()Ljava/lang/Class;")};
         f5345 = new C1516();
         f5347 = AbstractC0710.m2135("android.app.ActivityThread", null, 6);

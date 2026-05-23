@@ -27,7 +27,7 @@ public final class C1368 implements Comparator {
 
     @Override // java.util.Comparator
     public final int compare(Object obj, Object obj2) {
-        this.f4932.getClass();
+        
         Rect rect = this.f4929;
         ((C0092) obj).m1092(rect);
         Rect rect2 = this.f4930;

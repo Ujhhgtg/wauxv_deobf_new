@@ -25,7 +25,7 @@ public final class C0869 implements InterfaceC1902 {
             return;
         }
         c2103.m3918();
-        str.getClass();
+        
         Iterator it = arrayList.iterator();
         if (it.hasNext()) {
             throw AbstractC1194.m2777(it);

@@ -7,12 +7,11 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.BaseAdapter;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
+
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.json.JSONObject;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᤞᲁᲀᛸᲈ, reason: contains not printable characters */
@@ -44,19 +43,19 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
         int i3 = R.id.MenuItem_Fav_Forward;
         int i4 = 12;
         int i5 = 4;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         switch (i) {
             case 0:
-                ((C1020) obj).f3733 = new C1285(5);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C1285(5);
+                return unit;
             case 1:
-                ((C1020) obj).f3733 = new C1285(i5);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C1285(4);
+                return unit;
             case 2:
                 C1563 c1563 = (C1563) obj;
                 String[] strArr = AbstractC1574.f5469;
                 LinkedHashSet<Object> linkedHashSet = C1290.f4704;
-                c1563.getClass();
+                
                 try {
                     c2585 = c1563.m3267()[0];
                     if (c2585 == null) {
@@ -66,11 +65,11 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     c2585 = new C2585(th);
                 }
                 ContextMenu contextMenu = (ContextMenu) (c2585 instanceof C2585 ? null : c2585);
-                if (AbstractC3471.m5079(EnumC3677.f11528) || AbstractC3471.m5080(EnumC3674.f11495)) {
-                    int i6 = AbstractC1745.f5844;
-                    C1299 c1299M3490 = AbstractC0968.m2484(contextMenu).m3490();
-                    c1299M3490.f4725 = AbstractC2519.m4527(Context.class);
-                    AbstractC2207.m4098((Context) ((C1315) AbstractC0744.m2191(c1299M3490.m3014())).m3024());
+                if (AbstractC3471.m5079(WeChatVersions.f11528) || AbstractC3471.m5080(WeChatVersionsPlay.f11495)) {
+                    int i6 = 0;
+                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(contextMenu).m3490();
+                    c1299M3490.fieldType = AbstractC2519.classToKClass(Context.class);
+                    AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024());
                     C2873 c2873 = new C2873(new C1286(contextMenu, 0));
                     for (Object obj2 : linkedHashSet) {
                         try {
@@ -79,7 +78,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                                 c1982M3830.m3378(contextMenu);
                                 try {
                                     Integer numValueOf = Integer.valueOf(R.id.MenuItem_Group);
-                                    c1287.getClass();
+                                    
                                     c1982M3830.m3831(numValueOf, Integer.valueOf(i3), 0, c1287.f4699, Integer.valueOf(R.drawable.ic_menu_forward_24dp));
                                     i3 = R.id.MenuItem_Fav_Forward;
                                 } catch (Exception e) {
@@ -87,7 +86,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                                     ArrayList arrayList = C3678.f11549;
                                     StringBuilder sb = new StringBuilder();
                                     sb.append("onCreateMenuItems ");
-                                    sb.append(obj2 instanceof AbstractC2867 ? ((AbstractC2867) obj2).mo1128() : "LoadHook");
+                                    sb.append(true ? ((AbstractC2867) obj2).mo1128() : "LoadHook");
                                     AbstractC1194.m2792(sb, " Failed", e, 12);
                                     i3 = R.id.MenuItem_Fav_Forward;
                                 }
@@ -101,7 +100,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     for (Object obj3 : linkedHashSet) {
                         try {
                             for (C1287 c1288 : ((C2113) obj3).m3928()) {
-                                c1288.getClass();
+                                
                                 contextMenu.add(R.id.MenuItem_Group, R.id.MenuItem_Fav_Forward, 0, c1288.f4699);
                             }
                         } catch (Exception e3) {
@@ -113,11 +112,11 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                         }
                     }
                 }
-                return c3497;
+                return unit;
             case 3:
                 C1563 c1564 = (C1563) obj;
                 String[] strArr2 = AbstractC1574.f5469;
-                c1564.getClass();
+                
                 try {
                     c2586 = c1564.m3267()[0];
                     if (c2586 == null) {
@@ -127,20 +126,20 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     c2586 = new C2585(th2);
                 }
                 MenuItem menuItem = (MenuItem) (c2586 instanceof C2585 ? null : c2586);
-                int i7 = AbstractC1745.f5844;
+                int i7 = 0;
                 C1299 c1299M4738 = AbstractC2784.m4738(c1564);
-                c1299M4738.f4725 = AbstractC2519.m4527(cls);
-                int iIntValue = ((Number) ((C1315) AbstractC0744.m2191(c1299M4738.m3014())).m3024()).intValue();
+                c1299M4738.fieldType = AbstractC2519.classToKClass(cls);
+                int iIntValue = ((Number) ((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3024()).intValue();
                 C1299 c1299M4739 = AbstractC2784.m4738(c1564);
-                c1299M4739.f4725 = "com.tencent.mm.plugin.fav.ui.FavoriteIndexUI";
-                C1299 c1299M3491 = AbstractC0968.m2484((Activity) ((C1315) AbstractC0744.m2191(c1299M4739.m3014())).m3024()).m3490();
+                c1299M4739.fieldType = "com.tencent.mm.plugin.fav.ui.FavoriteIndexUI";
+                C1299 c1299M3491 = AbstractC0968.startFieldResolution((Activity) ((C1315) AbstractC0744.firstInList(c1299M4739.resolve())).m3024()).m3490();
                 c1299M3491.f4726 = new C1285(6);
-                Object item = ((BaseAdapter) ((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3024()).getItem(iIntValue);
+                Object item = ((BaseAdapter) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).getItem(iIntValue);
                 for (Object obj4 : C1290.f4704) {
                     try {
                         for (C1287 c1289 : ((C2113) obj4).m3928()) {
                             int itemId = menuItem.getItemId();
-                            c1289.getClass();
+                            
                             if (itemId == R.id.MenuItem_Fav_Forward) {
                                 c1289.f4700.invoke(item);
                             }
@@ -153,7 +152,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                         AbstractC1194.m2792(sb3, " Failed", e4, 12);
                     }
                 }
-                return c3497;
+                return unit;
             case 4:
                 C1333 c1333 = (C1333) obj;
                 String[] strArr3 = AbstractC1574.f5469;
@@ -161,24 +160,24 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 C1981 c1981 = new C1981(4);
                 c1981.m3827("MicroMsg.FavoriteIndexUI", "onMMMenuItemSelected");
                 c1333.f4794 = c1981;
-                return c3497;
+                return unit;
             case 5:
                 C1333 c1334 = (C1333) obj;
                 String[] strArr4 = AbstractC1574.f5469;
                 c1334.m3053("com.tencent.mm.plugin.fav.ui");
                 C1981 c1982 = new C1981(4);
-                c1982.m3827("MicroMsg.FavoriteIndexUI", (AbstractC3471.m5079(EnumC3677.f11528) || AbstractC3471.m5080(EnumC3674.f11495)) ? "[OnCreateContextMMMenu] pos = " : "onCreateContextMenu() pos:%s id:%s fav_id:%s");
+                c1982.m3827("MicroMsg.FavoriteIndexUI", (AbstractC3471.m5079(WeChatVersions.f11528) || AbstractC3471.m5080(WeChatVersionsPlay.f11495)) ? "[OnCreateContextMMMenu] pos = " : "onCreateContextMenu() pos:%s id:%s fav_id:%s");
                 c1334.f4794 = c1982;
-                return c3497;
+                return unit;
             case 6:
                 zStartsWith = ((Class) obj).getName().startsWith("com.tencent.mm.plugin.fav.ui.adapter.");
                 break;
             case 7:
-                ((C1020) obj).f3733 = new C1285(i4);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C1285(12);
+                return unit;
             case 8:
-                ((C1020) obj).f3733 = new C1285(9);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C1285(9);
+                return unit;
             case 9:
                 C1333 c1335 = (C1333) obj;
                 String[] strArr5 = AbstractC1574.f5469;
@@ -186,10 +185,10 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 C1981 c1983 = new C1981(4);
                 c1983.m3827("MicroMsg.FavSearchManager", "onMMMenuItemSelected");
                 c1335.f4794 = c1983;
-                return c3497;
+                return unit;
             case 10:
                 C1563 c1565 = (C1563) obj;
-                c1565.getClass();
+                
                 try {
                     c2587 = c1565.m3267()[0];
                     if (c2587 == null) {
@@ -199,10 +198,10 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     c2587 = new C2585(th3);
                 }
                 ContextMenu contextMenu2 = (ContextMenu) (c2587 instanceof C2585 ? null : c2587);
-                int i8 = AbstractC1745.f5844;
-                C1299 c1299M3492 = AbstractC0968.m2484(contextMenu2).m3490();
-                c1299M3492.f4725 = AbstractC2519.m4527(Context.class);
-                AbstractC2207.m4098((Context) ((C1315) AbstractC0744.m2191(c1299M3492.m3014())).m3024());
+                int i8 = 0;
+                C1299 c1299M3492 = AbstractC0968.startFieldResolution(contextMenu2).m3490();
+                c1299M3492.fieldType = AbstractC2519.classToKClass(Context.class);
+                AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3024());
                 C2873 c2874 = new C2873(new C1286(contextMenu2, 1));
                 for (Object obj5 : C1294.f4710) {
                     try {
@@ -210,7 +209,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                             C1982 c1982M3831 = ((C1982) c2874.getValue()).m3830();
                             c1982M3831.m3378(contextMenu2);
                             Integer numValueOf2 = Integer.valueOf(i2);
-                            c1291.getClass();
+                            
                             try {
                                 c1982M3831.m3831(numValueOf2, Integer.valueOf(R.id.MenuItem_Fav_Forward), 0, c1291.f4705, Integer.valueOf(R.drawable.ic_menu_forward_24dp));
                                 i2 = R.id.MenuItem_Group;
@@ -220,7 +219,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                                 StringBuilder sb4 = new StringBuilder();
                                 String[] strArr6 = AbstractC1574.f5469;
                                 sb4.append("onCreateMenuItems ");
-                                sb4.append(obj5 instanceof AbstractC2867 ? ((AbstractC2867) obj5).mo1128() : "LoadHook");
+                                sb4.append(true ? ((AbstractC2867) obj5).mo1128() : "LoadHook");
                                 AbstractC1194.m2792(sb4, " Failed", e, 12);
                                 i2 = R.id.MenuItem_Group;
                             }
@@ -230,11 +229,11 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     }
                     i2 = R.id.MenuItem_Group;
                 }
-                return c3497;
+                return unit;
             case 11:
                 C1563 c1566 = (C1563) obj;
                 String[] strArr7 = AbstractC1574.f5469;
-                c1566.getClass();
+                
                 try {
                     c2588 = c1566.m3267()[0];
                     if (c2588 == null) {
@@ -244,20 +243,20 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     c2588 = new C2585(th4);
                 }
                 MenuItem menuItem2 = (MenuItem) (c2588 instanceof C2585 ? null : c2588);
-                int i9 = AbstractC1745.f5844;
+                int i9 = 0;
                 C1299 c1299M47310 = AbstractC2784.m4738(c1566);
-                c1299M47310.f4725 = AbstractC2519.m4527(cls);
-                int iIntValue2 = ((Number) ((C1315) AbstractC0744.m2191(c1299M47310.m3014())).m3024()).intValue();
+                c1299M47310.fieldType = AbstractC2519.classToKClass(cls);
+                int iIntValue2 = ((Number) ((C1315) AbstractC0744.firstInList(c1299M47310.resolve())).m3024()).intValue();
                 C1299 c1299M47311 = AbstractC2784.m4738(c1566);
                 c1299M47311.f6370 = "d";
-                C1299 c1299M3493 = AbstractC0968.m2484(((C1315) AbstractC0744.m2191(c1299M47311.m3014())).m3023()).m3490();
+                C1299 c1299M3493 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M47311.resolve())).m3023()).m3490();
                 c1299M3493.f4726 = new C1285(13);
-                Object item2 = ((BaseAdapter) ((C1315) AbstractC0744.m2191(c1299M3493.m3014())).m3024()).getItem(iIntValue2);
+                Object item2 = ((BaseAdapter) ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).m3024()).getItem(iIntValue2);
                 for (Object obj6 : C1294.f4710) {
                     try {
                         for (C1291 c1292 : ((C2112) obj6).m3927()) {
                             int itemId2 = menuItem2.getItemId();
-                            c1292.getClass();
+                            
                             if (itemId2 == R.id.MenuItem_Fav_Forward) {
                                 c1292.f4706.invoke(item2);
                             }
@@ -270,27 +269,27 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                         AbstractC1194.m2792(sb5, " Failed", e7, 12);
                     }
                 }
-                return c3497;
-            case Opcodes.FCONST_1 /* 12 */:
+                return unit;
+            case 12 /* 12 */:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr8 = AbstractC1574.f5469;
                 c1336.m3053("com.tencent.mm.plugin.fav.ui");
                 C1981 c1984 = new C1981(4);
                 c1984.m3827("MicroMsg.FavSearchManager", "itemInfo exist detail but no note or record, error!");
                 c1336.f4794 = c1984;
-                return c3497;
+                return unit;
             case 13:
                 zStartsWith = ((Class) obj).getName().startsWith("com.tencent.mm.plugin.fav.ui.adapter.");
                 break;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 String[] strArr9 = AbstractC1574.f5469;
                 ((C0705) obj).m2127("VFS.VFSStrategy", "Found wrong moving file: ");
-                return c3497;
+                return unit;
             case 15:
                 C2011 c2011M3872 = C2011.m3872(LayoutInflater.from(((View) obj).getContext()));
                 c2011M3872.f6708.setText(C1322.f4771.m2542());
                 C2007 c2007 = new C2007();
-                C1323.f4772.getClass();
+                
                 c2007.f6678 = C1323.f4775;
                 c2007.f6680 = c2011M3872.f6707;
                 String[] strArr10 = AbstractC1574.f5469;
@@ -298,32 +297,32 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 c2007.m3869("重置", new C0104(28));
                 C2007.m3866(c2007, null, 3);
                 c2007.m3868().m3791();
-                return c3497;
+                return unit;
             case 16:
                 C1020 c1020 = (C1020) obj;
-                c1020.f3732 = new C1285(17);
-                c1020.f3733 = new C1285(18);
-                return c3497;
-            case Opcodes.SIPUSH /* 17 */:
+                c1020.declaringClassMatcher = new C1285(17);
+                c1020.thisMethodMatcher = new C1285(18);
+                return unit;
+            case 17 /* 17 */:
                 ((C1332) obj).m3050(new C1285(14));
-                return c3497;
-            case Opcodes.LDC /* 18 */:
+                return unit;
+            case 18 /* 18 */:
                 C1333 c1337 = (C1333) obj;
-                c1337.getClass();
+                
                 C1981 c1985 = new C1981(4);
                 C1981.m3819(c1985);
                 Class<String> cls2 = String.class;
-                Class<String> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(cls2));
+                Class<String> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(String.class));
                 if (clsM2183 == null) {
-                    clsM2183 = cls2;
+                    clsM2183 = String.class;
                 }
-                Class<String> clsM4740 = AbstractC2784.m4740(c1985, clsM2183, cls2);
-                c1985.m3823(clsM4740 != null ? clsM4740 : String.class);
+                Class<String> clsM4740 = AbstractC2784.m4740(c1985, clsM2183, String.class);
+                c1985.paramTypes(clsM4740 != null ? clsM4740 : String.class);
                 c1337.f4794 = c1985;
-                return c3497;
+                return unit;
             case 19:
                 C1563 c1567 = (C1563) obj;
-                c1567.getClass();
+                
                 try {
                     c2589 = c1567.m3267()[0];
                     if (c2589 == null) {
@@ -339,27 +338,27 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 if (str.equals("attachment")) {
                     c1567.m3272(C1322.f4771.m2542());
                 }
-                return c3497;
+                return unit;
             case 20:
-                ((C1020) obj).f3733 = new C1285(22);
-                return c3497;
-            case Opcodes.ILOAD /* 21 */:
+                ((C1020) obj).thisMethodMatcher = new C1285(22);
+                return unit;
+            case 21 /* 21 */:
                 C1020 c1021 = (C1020) obj;
-                c1021.f3732 = new C1285(24);
-                c1021.f3733 = new C1285(25);
-                return c3497;
-            case Opcodes.LLOAD /* 22 */:
+                c1021.declaringClassMatcher = new C1285(24);
+                c1021.thisMethodMatcher = new C1285(25);
+                return unit;
+            case 22 /* 22 */:
                 C1333 c1338 = (C1333) obj;
                 String[] strArr11 = AbstractC1574.f5469;
                 c1338.m3053("com.tencent.mm.plugin.finder.feed");
                 C1981 c1986 = new C1981(4);
                 c1986.m3827("feed", "menu", "sheet", "holder", "KEY_FINDER_SELF_FLAG");
                 c1338.f4794 = c1986;
-                return c3497;
-            case Opcodes.FLOAD /* 23 */:
+                return unit;
+            case 23 /* 23 */:
                 C1563 c1568 = (C1563) obj;
                 String[] strArr12 = AbstractC1574.f5469;
-                c1568.getClass();
+                
                 try {
                     c25810 = c1568.m3267()[0];
                     if (c25810 == null) {
@@ -378,22 +377,22 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     c25811 = new C2585(th7);
                 }
                 MenuItem menuItem3 = (MenuItem) (c25811 instanceof C2585 ? null : c25811);
-                int i10 = AbstractC1745.f5844;
-                C1299 c1299M3494 = AbstractC0968.m2484(obj7).m3490();
-                c1299M3494.f4725 = "com.tencent.mm.plugin.finder.storage.FinderItem";
+                int i10 = 0;
+                C1299 c1299M3494 = AbstractC0968.startFieldResolution(obj7).m3490();
+                c1299M3494.fieldType = "com.tencent.mm.plugin.finder.storage.FinderItem";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3494)).m3023();
-                C1973 c1973M3492 = AbstractC0968.m2484(objM3023).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objM3023).m3492();
                 c1973M3492.f6370 = "getMediaType";
-                int iIntValue3 = ((Number) ((C1982) AbstractC0744.m2191(c1973M3492.m3799())).m3832(new Object[0])).intValue();
-                C1973 c1973M3493 = AbstractC0968.m2484(objM3023).m3492();
+                int iIntValue3 = ((Number) ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0])).intValue();
+                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(objM3023).m3492();
                 c1973M3493.f6370 = "getMediaList";
-                List list = (List) ((C1982) AbstractC0744.m2191(c1973M3493.m3799())).m3832(new Object[0]);
+                List list = (List) ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).invoke(new Object[0]);
                 ArrayList arrayList6 = new ArrayList(AbstractC0746.m2214(list, 10));
                 for (Object obj8 : list) {
-                    int i11 = AbstractC1745.f5844;
-                    C1973 c1973M3494 = AbstractC0968.m2484(obj8).m3492();
+                    int i11 = 0;
+                    MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(obj8).m3492();
                     c1973M3494.f6370 = "toJSON";
-                    arrayList6.add((JSONObject) ((C1982) AbstractC2784.m4742(c1973M3494)).m3832(new Object[0]));
+                    arrayList6.add((JSONObject) ((C1982) AbstractC2784.m4742(c1973M3494)).invoke(new Object[0]));
                 }
                 for (Object obj9 : C1337.f4802) {
                     try {
@@ -410,21 +409,21 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                         AbstractC1194.m2792(sb6, " Failed", e8, 12);
                     }
                 }
-                return c3497;
-            case Opcodes.DLOAD /* 24 */:
+                return unit;
+            case 24 /* 24 */:
                 C1332 c1332 = (C1332) obj;
                 String[] strArr13 = AbstractC1574.f5469;
                 c1332.m3051("com.tencent.mm.plugin.finder.feed");
                 C0705 c0705 = new C0705(4);
                 c0705.m2127("Finder.FinderLoaderFeedUIContract.Presenter", "getMoreMenuItemSelectedListener feed ");
                 c1332.f4791 = c0705;
-                return c3497;
-            case Opcodes.ALOAD /* 25 */:
+                return unit;
+            case 25 /* 25 */:
                 ((C1333) obj).m3052(new C1285(27));
-                return c3497;
+                return unit;
             case 26:
                 C1563 c1569 = (C1563) obj;
-                c1569.getClass();
+                
                 try {
                     c25812 = c1569.m3267()[1];
                     if (c25812 == null) {
@@ -434,10 +433,10 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     c25812 = new C2585(th8);
                 }
                 ContextMenu contextMenu3 = (ContextMenu) (c25812 instanceof C2585 ? null : c25812);
-                int i12 = AbstractC1745.f5844;
-                C1299 c1299M3495 = AbstractC0968.m2484(contextMenu3).m3490();
-                c1299M3495.f4725 = AbstractC2519.m4527(Context.class);
-                AbstractC2207.m4098((Context) ((C1315) AbstractC0744.m2191(c1299M3495.m3014())).m3024());
+                int i12 = 0;
+                C1299 c1299M3495 = AbstractC0968.startFieldResolution(contextMenu3).m3490();
+                c1299M3495.fieldType = AbstractC2519.classToKClass(Context.class);
+                AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3495.resolve())).m3024());
                 C2873 c2875 = new C2873(new C1286(contextMenu3, 2));
                 for (Object obj10 : C1337.f4802) {
                     try {
@@ -455,16 +454,16 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                         AbstractC1194.m2792(sb7, " Failed", e9, 12);
                     }
                 }
-                return c3497;
+                return unit;
             case 27:
                 ((C1981) obj).m3827("getMoreMenuItemSelectedListener feed ");
-                return c3497;
+                return unit;
             case 28:
-                ((C1020) obj).f3733 = new C1338(1);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C1338(1);
+                return unit;
             default:
-                ((C1020) obj).f3733 = new C1338(0);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C1338(0);
+                return unit;
         }
         return Boolean.valueOf(zStartsWith);
     }

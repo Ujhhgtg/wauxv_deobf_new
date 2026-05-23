@@ -25,23 +25,23 @@ public class Event {
             if (view != null) {
                 String strTextPropertyFromView = textPropertyFromView(view);
                 if (!TextUtils.isEmpty(strTextPropertyFromView)) {
-                    map.put(V.VISUAL_TRACK_TEXT, strTextPropertyFromView);
+                    map.put("_$!text", strTextPropertyFromView);
                 }
-                map.put(V.VISUAL_TRACK_PG, view.getContext().getClass().getName());
+                map.put("_$!pg", view.getContext().getClass().getName());
             } else {
-                map.put(V.VISUAL_TRACK_PG, context.getClass().getName());
+                map.put("_$!pg", context.getClass().getName());
             }
-            map.put(V.VISUAL_TRACK_STYLE, 1);
-            map.put(V.VISUAL_TRACK_UAPP_PG, getPageName());
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "release:事件名: " + str);
-            if (map.containsKey(V.VISUAL_TRACK_TEXT)) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "release:事件名: " + str + "; 参数：" + ((String) map.get(V.VISUAL_TRACK_TEXT)));
+            map.put("_$!style", 1);
+            map.put("_$!uapp_pg", getPageName());
+            UMRTLog.e("MobclickRT", "release:事件名: " + str);
+            if (map.containsKey("_$!text")) {
+                UMRTLog.e("MobclickRT", "release:事件名: " + str + "; 参数：" + ((String) map.get("_$!text")));
             }
-            if (map.containsKey(V.VISUAL_TRACK_PG)) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "release:事件名: " + str + "; 页面：" + ((String) map.get(V.VISUAL_TRACK_PG)));
+            if (map.containsKey("_$!pg")) {
+                UMRTLog.e("MobclickRT", "release:事件名: " + str + "; 页面：" + ((String) map.get("_$!pg")));
             }
-            if (map.containsKey(V.VISUAL_TRACK_UAPP_PG)) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "release:事件名: " + str + "; UApp页面路径：" + ((String) map.get(V.VISUAL_TRACK_UAPP_PG)));
+            if (map.containsKey("_$!uapp_pg")) {
+                UMRTLog.e("MobclickRT", "release:事件名: " + str + "; UApp页面路径：" + ((String) map.get("_$!uapp_pg")));
             }
             MobclickAgent.onEventObject(context, str, map);
             return;
@@ -50,23 +50,23 @@ public class Event {
             if (view != null) {
                 String strTextPropertyFromView2 = textPropertyFromView(view);
                 if (!TextUtils.isEmpty(strTextPropertyFromView2)) {
-                    map.put(V.VISUAL_TRACK_TEXT, strTextPropertyFromView2);
+                    map.put("_$!text", strTextPropertyFromView2);
                 }
-                map.put(V.VISUAL_TRACK_PG, view.getContext().getClass().getName());
+                map.put("_$!pg", view.getContext().getClass().getName());
             } else {
-                map.put(V.VISUAL_TRACK_PG, context.getClass().getName());
+                map.put("_$!pg", context.getClass().getName());
             }
-            map.put(V.VISUAL_TRACK_STYLE, 1);
-            map.put(V.VISUAL_TRACK_UAPP_PG, getPageName());
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "config:事件名: " + str);
-            if (map.containsKey(V.VISUAL_TRACK_TEXT)) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "config:事件名: " + str + "; 参数：" + ((String) map.get(V.VISUAL_TRACK_TEXT)));
+            map.put("_$!style", 1);
+            map.put("_$!uapp_pg", getPageName());
+            UMRTLog.e("MobclickRT", "config:事件名: " + str);
+            if (map.containsKey("_$!text")) {
+                UMRTLog.e("MobclickRT", "config:事件名: " + str + "; 参数：" + ((String) map.get("_$!text")));
             }
-            if (map.containsKey(V.VISUAL_TRACK_PG)) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "config:事件名: " + str + "; 页面：" + ((String) map.get(V.VISUAL_TRACK_PG)));
+            if (map.containsKey("_$!pg")) {
+                UMRTLog.e("MobclickRT", "config:事件名: " + str + "; 页面：" + ((String) map.get("_$!pg")));
             }
-            if (map.containsKey(V.VISUAL_TRACK_UAPP_PG)) {
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "config:事件名: " + str + "; UApp页面路径：" + ((String) map.get(V.VISUAL_TRACK_UAPP_PG)));
+            if (map.containsKey("_$!uapp_pg")) {
+                UMRTLog.e("MobclickRT", "config:事件名: " + str + "; UApp页面路径：" + ((String) map.get("_$!uapp_pg")));
             }
             UMChannelAgent.onDebugEvent(context, str, map);
         }

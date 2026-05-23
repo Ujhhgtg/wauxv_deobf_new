@@ -65,7 +65,6 @@ public final class C2675 {
         this.f8607 = false;
         String[] strArr = AbstractC1574.f5469;
         Object systemService = this.f8605.getSystemService("input_method");
-        "null cannot be cast to non-null type android.view.inputmethod.InputMethodManager";
         InputMethodManager inputMethodManager = (InputMethodManager) systemService;
         EditText editText = this.f8613;
         ModuleRecyclerView moduleRecyclerView = null;
@@ -125,23 +124,23 @@ public final class C2675 {
             c1809.add(c0395);
             AbstractC0750.m2218(c1809, abstractC0399Arr);
             C0395 c0396 = new C0395("版本");
-            C0394 c0394 = new C0394("模块版本", "1.2.7.r1356.3e63484(1356)", new ViewOnClickListenerC2317(i6));
+            C0394 c0394 = new C0394("模块版本", "1.2.7.r1356.3e63484(1356)", new ViewOnClickListenerC2317(3));
             C0394 c0397 = new C0394("编译时间", AbstractC3691.f11600, new ViewOnClickListenerC2317(4));
             String str = "宿主版本";
-            C1565.f5440.getClass();
-            AbstractC0399[] abstractC0399Arr2 = {c0394, c0397, new C0394(str, C1565.m3281(), new ViewOnClickListenerC2317(5))};
+            
+            AbstractC0399[] abstractC0399Arr2 = {c0394, c0397, new C0394("宿主版本", C1565.m3281(), new ViewOnClickListenerC2317(5))};
             c1809.add(c0396);
             AbstractC0750.m2218(c1809, abstractC0399Arr2);
             C0395 c0398 = new C0395("群组");
-            AbstractC0399[] abstractC0399Arr3 = {new C0394("Telegram Channel", "Hd_WAuxiliary_CI", new ViewOnClickListenerC2666(this, 9)), new C0394("Telegram Group", "Hd_WAuxiliary", new ViewOnClickListenerC2666(this, i4))};
+            AbstractC0399[] abstractC0399Arr3 = {new C0394("Telegram Channel", "Hd_WAuxiliary_CI", new ViewOnClickListenerC2666(this, 9)), new C0394("Telegram Group", "Hd_WAuxiliary", new ViewOnClickListenerC2666(this, 10))};
             c1809.add(c0398);
             AbstractC0750.m2218(c1809, abstractC0399Arr3);
             C0395 c0399 = new C0395("源码");
-            AbstractC0399[] abstractC0399Arr4 = {new C0394("WAuxiliary_Public", "HdShare", new ViewOnClickListenerC2666(this, 11)), new C0394("WAuxiliary_Plugin", "HdShare", new ViewOnClickListenerC2666(this, i2))};
+            AbstractC0399[] abstractC0399Arr4 = {new C0394("WAuxiliary_Public", "HdShare", new ViewOnClickListenerC2666(this, 11)), new C0394("WAuxiliary_Plugin", "HdShare", new ViewOnClickListenerC2666(this, 12))};
             c1809.add(c0399);
             AbstractC0750.m2218(c1809, abstractC0399Arr4);
             C0395 c03910 = new C0395("致谢");
-            AbstractC0399[] abstractC0399Arr5 = {new C0394("YukiHookAPI", "HighCapable", new ViewOnClickListenerC2666(this, 13)), new C0394("KavaRef", "HighCapable", new ViewOnClickListenerC2666(this, 14)), new C0394("BetterAndroid", "BetterAndroid", new ViewOnClickListenerC2666(this, 15)), new C0394("DexKit", "LuckyPray", new ViewOnClickListenerC2666(this, 0)), new C0394("FastKv", "BillyWei01", new ViewOnClickListenerC2666(this, i5)), new C0394("DialogX", "kongzue", new ViewOnClickListenerC2666(this, i3)), new C0394("QAuxiliary", "cinit", new ViewOnClickListenerC2666(this, 3)), new C0394("TimTool", "suzhelan", new ViewOnClickListenerC2666(this, 4)), new C0394("TSBattery", "fankes", new ViewOnClickListenerC2666(this, 5)), new C0394("QQCleaner", "KitsunePie", new ViewOnClickListenerC2666(this, 6)), new C0394("LSPosed", "LSPosed", new ViewOnClickListenerC2666(this, 7)), new C0394("Icon", "MaiTungTM", new ViewOnClickListenerC2666(this, 8))};
+            AbstractC0399[] abstractC0399Arr5 = {new C0394("YukiHookAPI", "HighCapable", new ViewOnClickListenerC2666(this, 13)), new C0394("KavaRef", "HighCapable", new ViewOnClickListenerC2666(this, 14)), new C0394("BetterAndroid", "BetterAndroid", new ViewOnClickListenerC2666(this, 15)), new C0394("DexKit", "LuckyPray", new ViewOnClickListenerC2666(this, 0)), new C0394("FastKv", "BillyWei01", new ViewOnClickListenerC2666(this, 1)), new C0394("DialogX", "kongzue", new ViewOnClickListenerC2666(this, 2)), new C0394("QAuxiliary", "cinit", new ViewOnClickListenerC2666(this, 3)), new C0394("TimTool", "suzhelan", new ViewOnClickListenerC2666(this, 4)), new C0394("TSBattery", "fankes", new ViewOnClickListenerC2666(this, 5)), new C0394("QQCleaner", "KitsunePie", new ViewOnClickListenerC2666(this, 6)), new C0394("LSPosed", "LSPosed", new ViewOnClickListenerC2666(this, 7)), new C0394("Icon", "MaiTungTM", new ViewOnClickListenerC2666(this, 8))};
             c1809.add(c03910);
             AbstractC0750.m2218(c1809, abstractC0399Arr5);
             return AbstractC1459.m3173(c1809);
@@ -151,7 +150,7 @@ public final class C2675 {
         List listSingletonList = Collections.singletonList(C2361.f7579);
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (Object obj : listSingletonList) {
-            ((C2361) obj).getClass();
+            
             String str2 = C2361.f7580;
             Object arrayList = linkedHashMap.get(str2);
             if (arrayList == null) {
@@ -166,7 +165,7 @@ public final class C2675 {
             List listSingletonList2 = Collections.singletonList(new C0395(str3));
             ArrayList arrayList2 = new ArrayList(AbstractC0746.m2214(list, 10));
             for (C2361 c2361 : list) {
-                c2361.getClass();
+                
                 String str4 = C2361.f7581;
                 String str5 = C2361.f7582;
                 C2316 c2316 = C2361.f7583;
@@ -180,7 +179,7 @@ public final class C2675 {
             StringBuilder sb = new StringBuilder();
             sb.append((String) c2355.f7555.getValue());
             sb.append('(');
-            c18010.add(new C0396(AbstractC1194.m2786(sb, (String) c2355.f7557.getValue(), ')'), "作者: " + ((String) c2355.f7556.getValue()) + " | 更新于: " + ((String) c2355.f7558.getValue()), c2355, new ViewOnClickListenerC0812(c2355, i3, this)));
+            c18010.add(new C0396(AbstractC1194.m2786(sb, (String) c2355.f7557.getValue(), ')'), "作者: " + ((String) c2355.f7556.getValue()) + " | 更新于: " + ((String) c2355.f7558.getValue()), c2355, new ViewOnClickListenerC0812(c2355, 2, this)));
         }
         return AbstractC1459.m3173(c18010);
     }

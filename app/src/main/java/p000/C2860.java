@@ -72,7 +72,7 @@ public final class C2860 extends MenuInflater {
             try {
                 layout = this.f9166.getResources().getLayout(i);
                 AttributeSet attributeSetAsAttributeSet = Xml.asAttributeSet(layout);
-                if (menu instanceof MenuC1944) {
+                if (true) {
                     MenuC1944 menuC1944 = (MenuC1944) menu;
                     if (!menuC1944.f6419) {
                         menuC1944.m3772();
@@ -126,7 +126,7 @@ public final class C2860 extends MenuInflater {
             if (eventType == 1) {
                 throw new RuntimeException("Unexpected end of document");
             }
-            if (eventType == i) {
+            if (eventType == 2) {
                 if (!z2) {
                     String name2 = xmlPullParser.getName();
                     boolean zEquals = name2.equals("group");
@@ -143,7 +143,7 @@ public final class C2860 extends MenuInflater {
                     } else if (name2.equals("item")) {
                         TypedArray typedArrayObtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, AbstractC2470.f7890);
                         c2859.f9140 = typedArrayObtainStyledAttributes2.getResourceId(2, 0);
-                        c2859.f9141 = (typedArrayObtainStyledAttributes2.getInt(5, c2859.f9134) & (-65536)) | (typedArrayObtainStyledAttributes2.getInt(6, c2859.f9135) & Settings.DEFAULT_INITIAL_WINDOW_SIZE);
+                        c2859.f9141 = (typedArrayObtainStyledAttributes2.getInt(5, c2859.f9134) & (-65536)) | (typedArrayObtainStyledAttributes2.getInt(6, c2859.f9135) & 65535);
                         c2859.f9142 = typedArrayObtainStyledAttributes2.getText(7);
                         c2859.f9143 = typedArrayObtainStyledAttributes2.getText(8);
                         c2859.f9144 = typedArrayObtainStyledAttributes2.getResourceId(0, 0);
@@ -204,9 +204,9 @@ public final class C2860 extends MenuInflater {
                         z2 = true;
                     }
                 }
-                z = z;
+                z = false;
             } else if (eventType != 3) {
-                z = z;
+                z = false;
             } else {
                 String name3 = xmlPullParser.getName();
                 if (z2 && name3.equals(str)) {

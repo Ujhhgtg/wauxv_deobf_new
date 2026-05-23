@@ -44,7 +44,7 @@ public final class C1892 extends AbstractCollection implements Collection, Inter
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
     public final Iterator iterator() {
         C1890 c1890 = this.f6258;
-        c1890.getClass();
+        
         return new C1887(c1890, 2);
     }
 

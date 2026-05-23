@@ -2,7 +2,7 @@ package p000;
 
 import java.util.Collections;
 import java.util.Locale;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤞᛸᲈᤝᲁ, reason: contains not printable characters */
@@ -42,18 +42,18 @@ public final class C2741 extends AbstractC2867 implements InterfaceC1582 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static String m4730(Object obj) {
-        int i = AbstractC1745.f5844;
-        C1299 c1299M3490 = AbstractC0968.m2484(obj).m3490();
+        int i = 0;
+        C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
         String[] strArr = AbstractC1574.f5469;
         c1299M3490.f6370 = "field_snsId";
         long jLongValue = ((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).longValue();
-        C1299 c1299M3491 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3491.f6370 = "field_userName";
         String str = (String) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
-        C1299 c1299M3492 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3492.f6370 = "field_createTime";
         int iIntValue = ((Number) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024()).intValue();
-        C1299 c1299M3493 = AbstractC0968.m2484(obj).m3490();
+        C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
         c1299M3493.f6370 = "field_type";
         int iIntValue2 = ((Number) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024()).intValue();
         String strM4857 = AbstractC2849.m4857(C2739.f8812.m2542(), "${time}", AbstractC3681.m5339(((long) iIntValue) * 1000, C2740.f8813.m2542(), null, 2));
@@ -66,31 +66,31 @@ public final class C2741 extends AbstractC2867 implements InterfaceC1582 {
         String upperCase = string.toUpperCase(Locale.ROOT);
         "toUpperCase(...)";
         sb.append(upperCase);
-        return AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(strM4857, str2, sb.toString()), "${snsId}", String.valueOf(jLongValue)), "${userName}", str);
+        return AbstractC2849.m4857(AbstractC2849.m4857(AbstractC2849.m4857(strM4857, "${type}", sb.toString()), "${snsId}", String.valueOf(jLongValue)), "${userName}", str);
     }
 
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        if (!AbstractC3471.m5079(EnumC3677.f11530) && !AbstractC3471.m5080(EnumC3674.f11496)) {
-            AbstractC1574.m3295(C2737.f8810, dexKitBridge, new C2734(5));
+        if (!AbstractC3471.m5079(WeChatVersions.f11530) && !AbstractC3471.m5080(WeChatVersionsPlay.f11496)) {
+            AbstractC1574.findMethod(C2737.f8810, dexKitBridge, new C2734(5));
         } else {
-            AbstractC1574.m3295(C2736.f8809, dexKitBridge, new C2734(3));
-            AbstractC1574.m3295(C2735.f8808, dexKitBridge, new C2734(4));
+            AbstractC1574.findMethod(C2736.f8809, dexKitBridge, new C2734(3));
+            AbstractC1574.findMethod(C2735.f8808, dexKitBridge, new C2734(4));
         }
     }
 
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        boolean zM5079 = AbstractC3471.m5079(EnumC3677.f11530);
+        boolean zM5079 = AbstractC3471.m5079(WeChatVersions.f11530);
         C2741 c2741 = f8814;
-        if (zM5079 || AbstractC3471.m5080(EnumC3674.f11496)) {
-            C3689 c3689M4172 = C2309.m4172(c2741, Collections.singletonList(AbstractC1574.m3315(C2736.f8809)));
+        if (zM5079 || AbstractC3471.m5080(WeChatVersionsPlay.f11496)) {
+            C3689 c3689M4172 = C2309.m4172(c2741, Collections.singletonList(AbstractC1574.dexToMethod(C2736.f8809)));
             c2741.m3262(c3689M4172, new C2734(6));
             c3689M4172.m5352();
         } else {
-            C3689 c3689M4173 = C2309.m4172(c2741, Collections.singletonList(AbstractC1574.m3315(C2737.f8810)));
+            C3689 c3689M4173 = C2309.m4172(c2741, Collections.singletonList(AbstractC1574.dexToMethod(C2737.f8810)));
             c2741.m3262(c3689M4173, new C2659(28));
             c3689M4173.m5352();
         }

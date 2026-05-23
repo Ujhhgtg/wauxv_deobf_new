@@ -26,9 +26,9 @@ public class DBFileTraversalUtil {
                 public void run() {
                     try {
                         for (File file2 : file.listFiles()) {
-                            if (file2.getName().endsWith(com.umeng.analytics.process.a.d)) {
+                            if (file2.getName().endsWith(".db")) {
                                 DBFileTraversalUtil.b.doFileOperateion(file2, fileLockCallback);
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> file: " + file2.getName());
+                                UMRTLog.i("MobclickRT", "--->>> file: " + file2.getName());
                             }
                         }
                         a aVar2 = aVar;
@@ -37,7 +37,7 @@ public class DBFileTraversalUtil {
                         }
                     } catch (Throwable unused) {
                     }
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> end *** ");
+                    UMRTLog.i("MobclickRT", "--->>> end *** ");
                 }
             });
         }

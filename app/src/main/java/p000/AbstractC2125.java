@@ -19,7 +19,7 @@ import java.util.HashSet;
 public abstract class AbstractC2125 extends ViewGroup implements InterfaceC1957 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᤞᲇ, reason: contains not printable characters */
-    public static final int[] f7022 = {R.attr.state_checked};
+    public static final int[] f7022 = {16842912};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲈᲇᤞ, reason: contains not printable characters */
     public static final int[] f7023 = {-16842910};
@@ -580,7 +580,7 @@ public abstract class AbstractC2125 extends ViewGroup implements InterfaceC1957 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
     public final ColorStateList m3940() {
         TypedValue typedValue = new TypedValue();
-        if (!getContext().getTheme().resolveAttribute(R.attr.textColorSecondary, typedValue, true)) {
+        if (!getContext().getTheme().resolveAttribute(16842808, typedValue, true)) {
             return null;
         }
         ColorStateList colorStateListM4030 = AbstractC2203.m4030(getContext(), typedValue.resourceId);

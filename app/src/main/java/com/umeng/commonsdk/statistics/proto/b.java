@@ -39,7 +39,7 @@ public class b implements de<b, e>, Serializable, Cloneable {
     private static final ei f = new ei("IdSnapshot");
     private static final dy g = new dy("identity", (byte) 11, 1);
     private static final dy h = new dy("ts", (byte) 10, 2);
-    private static final dy i = new dy(cl.n, (byte) 8, 3);
+    private static final dy i = new dy("version", (byte) 8, 3);
     private static final Map<Class<? extends el>, em> j;
     private static final int k = 0;
     private static final int l = 1;
@@ -176,9 +176,9 @@ public class b implements de<b, e>, Serializable, Cloneable {
         map.put(en.class, new C0040b());
         map.put(eo.class, new d());
         EnumMap enumMap = new EnumMap(e.class);
-        enumMap.put(e.IDENTITY, new dq("identity", (byte) 1, new dr((byte) 11)));
-        enumMap.put(e.TS, new dq("ts", (byte) 1, new dr((byte) 10)));
-        enumMap.put(e.VERSION, new dq(cl.n, (byte) 1, new dr((byte) 8)));
+        enumMap.put((-6496538196005191531L).IDENTITY, new dq("identity", (byte) 1, new dr((byte) 11)));
+        enumMap.put((-6496538196005191531L).TS, new dq("ts", (byte) 1, new dr((byte) 10)));
+        enumMap.put((-6496538196005191531L).VERSION, new dq("version", (byte) 1, new dr((byte) 8)));
         Map<e, dq> mapUnmodifiableMap = Collections.unmodifiableMap(enumMap);
         d = mapUnmodifiableMap;
         dq.a(b.class, mapUnmodifiableMap);
@@ -289,7 +289,7 @@ public class b implements de<b, e>, Serializable, Cloneable {
     public enum e implements dl {
         IDENTITY(1, "identity"),
         TS(2, "ts"),
-        VERSION(3, cl.n);
+        VERSION(3, "version");
 
         private static final Map<String, e> d = new HashMap();
         private final short e;
@@ -361,7 +361,7 @@ public class b implements de<b, e>, Serializable, Cloneable {
     @Override // com.umeng.analytics.pro.de
     /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
     public e fieldForId(int i2) {
-        return e.a(i2);
+        return (-6496538196005191531L).a(i2);
     }
 
     public b a(long j2) {

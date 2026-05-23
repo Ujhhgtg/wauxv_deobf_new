@@ -20,11 +20,11 @@ public class t {
                 if (jSONObject4.has("ekv")) {
                     jSONObject4.remove("ekv");
                 }
-                if (jSONObject4.has(g.Z)) {
-                    jSONObject4.remove(g.Z);
+                if (jSONObject4.has("gkv")) {
+                    jSONObject4.remove("gkv");
                 }
-                if (jSONObject4.has(g.U)) {
-                    jSONObject4.remove(g.U);
+                if (jSONObject4.has("error")) {
+                    jSONObject4.remove("error");
                 }
                 jSONObject3.put("analytics", jSONObject4);
             }
@@ -40,7 +40,7 @@ public class t {
             l.a(context).h();
             l.a(context).b(true, false);
             l.a(context).a();
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> u-app packet overload !!! ");
+            UMRTLog.i("MobclickRT", "--->>> u-app packet overload !!! ");
             return null;
         } catch (Throwable unused) {
             return jSONObject2;

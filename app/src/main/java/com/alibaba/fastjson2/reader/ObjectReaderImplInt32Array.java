@@ -33,7 +33,7 @@ public final class ObjectReaderImplInt32Array extends ObjectReaderPrimitive {
 
     @Override // com.alibaba.fastjson2.reader.ObjectReaderPrimitive, com.alibaba.fastjson2.reader.ObjectReader
     public Object readJSONBObject(JSONReader jSONReader, Type type, Object obj, long j) {
-        if (jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY)) {
+        if (jSONReader.nextIfMatch(-110)) {
             long typeHashCode = jSONReader.readTypeHashCode();
             if (typeHashCode != HASH_TYPE && typeHashCode != ObjectReaderImplInt32ValueArray.HASH_TYPE) {
                 throw new JSONException(jSONReader.info("not support type " + jSONReader.getString()));

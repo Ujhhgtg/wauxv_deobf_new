@@ -52,7 +52,7 @@ public class aq {
                         if (!TextUtils.isEmpty(headerField)) {
                             bArrA = ay.a(streamToByteArray, headerField.getBytes());
                         } else {
-                            UMRTLog.e(UMRTLog.RTLOG_TAG, "ccg 应答不包含ak!");
+                            UMRTLog.e("MobclickRT", "ccg 应答不包含ak!");
                         }
                         HelperUtils.safeClose(inputStream);
                         return bArrA;
@@ -88,12 +88,12 @@ public class aq {
             httpsURLConnectionA = a(str, str2, bArrA);
             if (httpsURLConnectionA != null && (responseCode = httpsURLConnectionA.getResponseCode()) != 200) {
                 String str3 = "SC";
-                if (ar.b.equals(str)) {
+                if ("https://cnlogs.umeng.com/ext_event".equals(str)) {
                     str3 = "UMC";
-                } else if (ar.c.equals(str)) {
+                } else if ("https://cnlogs.umeng.com/uapp_ekverr_logs".equals(str)) {
                     str3 = "EkvError";
                 }
-                UMRTLog.e(UMRTLog.RTLOG_TAG, str3 + " event report error, http error code: " + responseCode);
+                UMRTLog.e("MobclickRT", str3 + " event report error, http error code: " + responseCode);
             }
             if (httpsURLConnectionA == null) {
             }
@@ -121,10 +121,10 @@ public class aq {
                 httpsURLConnection2.setSSLSocketFactory(sSLContext.getSocketFactory());
                 httpsURLConnection2.setHostnameVerifier(a());
                 httpsURLConnection2.setRequestMethod("POST");
-                httpsURLConnection2.setConnectTimeout(ca.b);
+                httpsURLConnection2.setConnectTimeout(15000);
                 httpsURLConnection2.setDoOutput(true);
                 httpsURLConnection2.setDoInput(true);
-                httpsURLConnection2.setReadTimeout(ca.b);
+                httpsURLConnection2.setReadTimeout(15000);
                 httpsURLConnection2.addRequestProperty("Content-Type", "application/octet-stream");
                 httpsURLConnection2.addRequestProperty(str2, UMConfigure.sAppkey);
                 httpsURLConnection2.setRequestProperty("User-Agent", DeviceConfig.getCustomAgt());

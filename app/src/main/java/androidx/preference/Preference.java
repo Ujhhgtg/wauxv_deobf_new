@@ -35,7 +35,7 @@ public class Preference implements Comparable<Preference> {
     public InterfaceC2390 f315;
 
     public Preference(Context context, AttributeSet attributeSet, int i) {
-        this.f310 = Integer.MAX_VALUE;
+        this.f310 = 2147483647;
         this.f309 = context;
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC2465.f7832, i, 0);
         typedArrayObtainStyledAttributes.getResourceId(23, typedArrayObtainStyledAttributes.getResourceId(0, 0));
@@ -45,7 +45,7 @@ public class Preference implements Comparable<Preference> {
         this.f311 = text == null ? typedArrayObtainStyledAttributes.getText(4) : text;
         CharSequence text2 = typedArrayObtainStyledAttributes.getText(33);
         this.f312 = text2 == null ? typedArrayObtainStyledAttributes.getText(7) : text2;
-        this.f310 = typedArrayObtainStyledAttributes.getInt(28, typedArrayObtainStyledAttributes.getInt(8, Integer.MAX_VALUE));
+        this.f310 = typedArrayObtainStyledAttributes.getInt(28, typedArrayObtainStyledAttributes.getInt(8, 2147483647));
         if (typedArrayObtainStyledAttributes.getString(22) == null) {
             typedArrayObtainStyledAttributes.getString(13);
         }
@@ -130,6 +130,6 @@ public class Preference implements Comparable<Preference> {
     }
 
     public Preference(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, AbstractC1458.m3156(context, R.attr.preferenceStyle, android.R.attr.preferenceStyle));
+        this(context, attributeSet, AbstractC1458.m3156(context, R.attr.preferenceStyle, 16842894));
     }
 }

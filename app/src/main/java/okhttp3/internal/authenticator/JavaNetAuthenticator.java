@@ -7,7 +7,6 @@ import java.net.PasswordAuthentication;
 import java.net.Proxy;
 import java.util.List;
 import okhttp3.Address;
-import okhttp3.Authenticator;
 import okhttp3.Challenge;
 import okhttp3.Credentials;
 import okhttp3.Dns;
@@ -44,7 +43,7 @@ public final class JavaNetAuthenticator implements Authenticator {
 
     private final InetAddress connectToInetAddress(Proxy proxy, HttpUrl httpUrl, Dns dns) {
         Proxy.Type type = proxy.type();
-        return (type == null ? -1 : WhenMappings.$EnumSwitchMapping$0[type.ordinal()]) == 1 ? (InetAddress) AbstractC0744.m2191(dns.lookup(httpUrl.host())) : ((InetSocketAddress) proxy.address()).getAddress();
+        return (type == null ? -1 : WhenMappings.$EnumSwitchMapping$0[type.ordinal()]) == 1 ? (InetAddress) AbstractC0744.firstInList(dns.lookup(httpUrl.host())) : ((InetSocketAddress) proxy.address()).getAddress();
     }
 
     @Override // okhttp3.Authenticator

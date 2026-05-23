@@ -28,15 +28,15 @@ public final class C0790 {
         for (int i = 0; i < indexCount; i++) {
             int index = typedArrayObtainStyledAttributes.getIndex(i);
             if (index == 1) {
-                this.f3053 = typedArrayObtainStyledAttributes.getFloat(index, this.f3053);
+                this.f3053 = typedArrayObtainStyledAttributes.getFloat(1, this.f3053);
             } else if (index == 0) {
-                int i2 = typedArrayObtainStyledAttributes.getInt(index, this.f3051);
+                int i2 = typedArrayObtainStyledAttributes.getInt(0, this.f3051);
                 this.f3051 = i2;
                 this.f3051 = C0792.f3068[i2];
             } else if (index == 4) {
-                this.f3052 = typedArrayObtainStyledAttributes.getInt(index, this.f3052);
+                this.f3052 = typedArrayObtainStyledAttributes.getInt(4, this.f3052);
             } else if (index == 3) {
-                this.f3054 = typedArrayObtainStyledAttributes.getFloat(index, this.f3054);
+                this.f3054 = typedArrayObtainStyledAttributes.getFloat(3, this.f3054);
             }
         }
         typedArrayObtainStyledAttributes.recycle();

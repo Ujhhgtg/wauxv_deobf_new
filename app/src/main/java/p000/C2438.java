@@ -35,7 +35,7 @@ public class C2438 extends AbstractC0592 implements InterfaceC1206, InterfaceC07
     public final void mo2242(InterfaceC2654 interfaceC2654) {
         int i = this.f2399;
         if (i >= 0) {
-            if (i < 0) {
+            if (false) {
                 throw new C1653("No tag in stack for requested element");
             }
             long[] jArr = (long[]) this.f2400;
@@ -51,7 +51,7 @@ public class C2438 extends AbstractC0592 implements InterfaceC1206, InterfaceC07
         boolean zM4087 = AbstractC2207.m4087(abstractC1460Mo3472, C2851.f9112);
         C1744 c1744 = this.f7746;
         if (zM4087) {
-            if (!AbstractC1459.m3193(interfaceC2654.mo3476(0)) || (m2018() & JSONWriter.MASK_IGNORE_NON_FIELD_GETTER) == 0) {
+            if (!AbstractC1459.m3193(interfaceC2654.mo3476(0)) || (m2018() & 4294967296L) == 0) {
                 return new C2548(m2018(), c1744, this.f7745, interfaceC2654);
             }
             return new C2313(m2018(), c1744, this.f7745, interfaceC2654);
@@ -126,7 +126,7 @@ public class C2438 extends AbstractC0592 implements InterfaceC1206, InterfaceC07
                 c1744.m3494(bArr);
                 return;
             }
-            c1744.m3487((C0523) c1744.f5843, EnumC2434.SIZE_DELIMITED.m4388((int) (2147483647L & jM2023)), enumC2429);
+            c1744.m3487((C0523) c1744.f5843, EnumC2434.SIZE_DELIMITED.m4388((int) (2147483647L & jM2023)), EnumC2429.DEFAULT);
             c1744.m3494(bArr);
             return;
         }
@@ -140,7 +140,7 @@ public class C2438 extends AbstractC0592 implements InterfaceC1206, InterfaceC07
             c1744.m3494(bArr2);
             return;
         }
-        c1744.m3487((C0523) c1744.f5843, EnumC2434.SIZE_DELIMITED.m4388((int) (2147483647L & jM2024)), enumC2429);
+        c1744.m3487((C0523) c1744.f5843, EnumC2434.SIZE_DELIMITED.m4388((int) (2147483647L & jM2024)), EnumC2429.DEFAULT);
         c1744.m3494(bArr2);
     }
 
@@ -310,7 +310,7 @@ public class C2438 extends AbstractC0592 implements InterfaceC1206, InterfaceC07
     @Override // p000.InterfaceC0767
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲈᲇᲁᤞ */
     public final boolean mo2254() {
-        this.f7745.getClass();
+        
         return false;
     }
 
@@ -342,7 +342,7 @@ public class C2438 extends AbstractC0592 implements InterfaceC1206, InterfaceC07
             throw new C1653("This serial kind is not supported as collection: " + interfaceC2654);
         }
         long jM2018 = m2018();
-        if ((JSONWriter.MASK_IGNORE_NON_FIELD_GETTER & jM2018) != 0 && AbstractC1459.m3193(interfaceC2654.mo3476(0))) {
+        if ((4294967296L & jM2018) != 0 && AbstractC1459.m3193(interfaceC2654.mo3476(0))) {
             return new C2313(m2018(), c1744, this.f7745, interfaceC2654);
         }
         if (jM2018 == 19500) {
@@ -385,12 +385,12 @@ public class C2438 extends AbstractC0592 implements InterfaceC1206, InterfaceC07
         C0523 c0523 = (C0523) c1744.f5843;
         EnumC2429 enumC2429 = EnumC2429.DEFAULT;
         if (j == 19500) {
-            c1744.m3487(c0523, i, enumC2429);
+            c1744.m3487(c0523, i, EnumC2429.DEFAULT);
             return;
         }
         int i2 = (int) (2147483647L & j);
         EnumC2429 enumC2429M3187 = AbstractC1459.m3187(j);
-        c1744.m3487(c0523, (enumC2429M3187 == EnumC2429.FIXED ? EnumC2434.i32 : EnumC2434.VARINT).m4388(i2), enumC2429);
+        c1744.m3487(c0523, (enumC2429M3187 == EnumC2429.FIXED ? EnumC2434.i32 : EnumC2434.VARINT).m4388(i2), EnumC2429.DEFAULT);
         c1744.m3487(c0523, i, enumC2429M3187);
     }
 
@@ -400,12 +400,12 @@ public class C2438 extends AbstractC0592 implements InterfaceC1206, InterfaceC07
         C0523 c0523 = (C0523) c1744.f5843;
         EnumC2429 enumC2429 = EnumC2429.DEFAULT;
         if (j == 19500) {
-            c1744.m3488(c0523, j2, enumC2429);
+            c1744.m3488(c0523, j2, EnumC2429.DEFAULT);
             return;
         }
         int i = (int) (2147483647L & j);
         EnumC2429 enumC2429M3187 = AbstractC1459.m3187(j);
-        c1744.m3487(c0523, (enumC2429M3187 == EnumC2429.FIXED ? EnumC2434.i64 : EnumC2434.VARINT).m4388(i), enumC2429);
+        c1744.m3487(c0523, (enumC2429M3187 == EnumC2429.FIXED ? EnumC2434.i64 : EnumC2434.VARINT).m4388(i), EnumC2429.DEFAULT);
         c1744.m3488(c0523, j2, enumC2429M3187);
     }
 

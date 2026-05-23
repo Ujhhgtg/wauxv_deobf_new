@@ -39,12 +39,12 @@ public class SearchView$SearchAutoComplete extends AbstractC0211 {
         int i = configuration.screenWidthDp;
         int i2 = configuration.screenHeightDp;
         if (i >= 960 && i2 >= 720 && configuration.orientation == 2) {
-            return bc.e;
+            return 256;
         }
         if (i < 600) {
-            return (i < 640 || i2 < 480) ? Opcodes.IF_ICMPNE : Opcodes.CHECKCAST;
+            return 160;
         }
-        return Opcodes.CHECKCAST;
+        return 192;
     }
 
     @Override // android.widget.AutoCompleteTextView

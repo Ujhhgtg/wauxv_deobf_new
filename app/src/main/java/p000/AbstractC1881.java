@@ -30,9 +30,9 @@ public abstract class AbstractC1881 {
             if (it.hasNext()) {
                 next = it.next();
                 if (it.hasNext()) {
-                    ((C0150) next).getClass();
+                    
                     do {
-                        ((C0150) it.next()).getClass();
+                        
                     } while (it.hasNext());
                 }
             }

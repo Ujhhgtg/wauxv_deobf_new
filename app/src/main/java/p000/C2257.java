@@ -55,33 +55,33 @@ public final /* synthetic */ class C2257 implements Function {
                 return Collections.unmodifiableSortedMap((SortedMap) obj);
             case 11:
                 return Collections.unmodifiableNavigableMap((NavigableMap) obj);
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return ObjectReaderImplMap.lambda$of$0((Map) obj);
             case 13:
                 return ObjectReaderImplMap.lambda$static$0(obj);
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return ObjectWriterBaseModule.lambda$getObjectWriter$0(obj);
             case 15:
                 return ((Method) obj).getParameterTypes();
             case 16:
                 return ((Field) obj).getDeclaringClass();
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return ((Field) obj).getName();
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return ((ParameterizedType) obj).getActualTypeArguments();
             case 19:
                 return ((ParameterizedType) obj).getOwnerType();
             case 20:
                 return ((ParameterizedType) obj).getRawType();
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return ((StackTraceElement) obj).getFileName();
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return ((StackTraceElement) obj).getClassName();
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return ((StackTraceElement) obj).getMethodName();
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return ((Method) obj).getDeclaringClass();
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 return ((Method) obj).getName();
             case 26:
                 return obj.toString();

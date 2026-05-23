@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C0109 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C0109 f1058 = new C0109("AccountInfoCenterHook.ValAliasTopMargin", null, null, false, 4, 0.0f, 0, UMErrorCode.E_UM_BE_JSON_FAILED);
+    public static final C0109 f1058 = new C0109("AccountInfoCenterHook.ValAliasTopMargin", null, null, false, 4, 0.0f, 0, 110);
 }

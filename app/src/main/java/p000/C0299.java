@@ -11,7 +11,6 @@ import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤝᲇᤞᲁᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -44,21 +43,21 @@ public final /* synthetic */ class C0299 implements InterfaceC1414 {
                 Long lM4854 = AbstractC2848.m4854(String.valueOf(c2012.f6709.getText()));
                 c0301.m2546(lM4854 != null ? lM4854.longValue() : 86400L);
                 C0300.f1518.m2547(AbstractC0744.m2209((Set) c0718.f2727));
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 1:
                 BaseAdapter baseAdapter = (BaseAdapter) this.f1516;
                 ListView listView = (ListView) this.f1517;
-                C0920.f3404.getClass();
-                AbstractC1574.m3315(C0919.f3403).invoke(baseAdapter, Boolean.TRUE);
-                C0855.f3270.getClass();
-                AbstractC1574.m3315(C0854.f3269).invoke(listView, null);
+                
+                AbstractC1574.dexToMethod(C0919.f3403).invoke(baseAdapter, Boolean.TRUE);
+                
+                AbstractC1574.dexToMethod(C0854.f3269).invoke(listView, null);
                 baseAdapter.notifyDataSetChanged();
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 2:
                 InterfaceC2654 interfaceC2654 = (InterfaceC2654) this.f1516;
                 C1706 c1706 = (C1706) this.f1517;
                 LinkedHashMap linkedHashMap = new LinkedHashMap();
-                c1706.f5799.getClass();
+                
                 AbstractC1459.m3194(c1706, interfaceC2654);
                 int iMo3473 = interfaceC2654.mo3473();
                 for (int i = 0; i < iMo3473; i++) {
@@ -84,10 +83,10 @@ public final /* synthetic */ class C0299 implements InterfaceC1414 {
             case 3:
                 C1268 c1268 = new C1268((String) ((C2873) ((C0542) this.f1516).f2252).getValue(), (String) this.f1517);
                 String str3 = "WAuxiliary";
-                if (str3.length() == 0) {
+                if ("WAuxiliary".length() == 0) {
                     throw new NoSuchElementException("Char sequence is empty.");
                 }
-                c1268.f4604 = new C0403(str3.charAt(0));
+                c1268.f4604 = new C0403(87);
                 String str4 = c1268.f4602 + c1268.f4603;
                 ConcurrentHashMap concurrentHashMap = C1268.f4601;
                 SharedPreferencesC1269 sharedPreferencesC1269 = (SharedPreferencesC1269) concurrentHashMap.get(str4);
@@ -115,13 +114,13 @@ public final /* synthetic */ class C0299 implements InterfaceC1414 {
                 LinkedList linkedList = new LinkedList();
                 String str6 = "";
                 String str7 = "";
-                c2169.getClass();
-                Object objNewInstance = AbstractC1574.m3314(C2168.f7129).newInstance(str5, linkedList, 1, str6, str7, 0, 1089, null);
+                
+                Object objNewInstance = AbstractC1574.dexToCtor(C2168.f7129).newInstance(str5, linkedList, 1, "", "", 0, 1089, null);
                 C2180 c2180 = C2180.f7141;
                 C2165 c2165 = new C2165(c2372, 1);
-                c2180.getClass();
+                
                 C2180.m3961(objNewInstance, c2165);
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 5:
                 C2523 c2523 = (C2523) this.f1516;
                 CharSequence charSequence = (CharSequence) this.f1517;
@@ -136,7 +135,7 @@ public final /* synthetic */ class C0299 implements InterfaceC1414 {
                     C2880.f9228.m2545(EnumC2876.f9221.f9223);
                     C2879.f9227.m2547(AbstractC0744.m2209(arrayList2));
                 }
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 }

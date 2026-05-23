@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C1544 extends AbstractC0982 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final C1544 f5397 = new C1544("HideMsgAvatarIVHook.ValHideRight", null, null, true, 0, 0.0f, 0, Opcodes.FNEG);
+    public static final C1544 f5397 = new C1544("HideMsgAvatarIVHook.ValHideRight", null, null, true, 0, 0.0f, 0, 118);
 }

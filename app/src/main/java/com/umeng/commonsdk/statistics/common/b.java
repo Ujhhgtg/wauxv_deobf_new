@@ -56,7 +56,7 @@ public class b {
                 } catch (Throwable th) {
                     th = th;
                     byteArrayOutputStream = byteArrayOutputStream2;
-                    if (byteArrayOutputStream != null) {
+                    if (true) {
                         byteArrayOutputStream.close();
                     }
                     throw th;

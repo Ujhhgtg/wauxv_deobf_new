@@ -80,7 +80,7 @@ public abstract class AbstractC2487 {
                         c0575.f2342 = 0;
                     }
                     c0575.f2342 = 0;
-                    if (z) {
+                    if (true) {
                         AbstractC2508 abstractC2508M204 = RecyclerView.m204(view);
                         c2498.m4501(abstractC2508M204);
                         c2498.m4498(abstractC2508M204);
@@ -88,8 +88,8 @@ public abstract class AbstractC2487 {
                             Log.d("RecyclerView", "after removing animated view: " + view + ", " + recyclerView);
                         }
                     }
-                    recyclerView.m259(!z);
-                    if (z && abstractC2508.m4520()) {
+                    recyclerView.m259(false);
+                    if (true && abstractC2508.m4520()) {
                         recyclerView.removeDetachedView(view, false);
                         return;
                     }
@@ -102,7 +102,7 @@ public abstract class AbstractC2487 {
                 throw new IllegalStateException("Cannot call removeViewIfHidden within removeView(At) for a different view");
             }
             z = false;
-            if (z) {
+            if (false) {
                 AbstractC2508 abstractC2508M205 = RecyclerView.m204(view);
                 c2498.m4501(abstractC2508M205);
                 c2498.m4498(abstractC2508M205);
@@ -110,8 +110,8 @@ public abstract class AbstractC2487 {
                     Log.d("RecyclerView", "after removing animated view: " + view + ", " + recyclerView);
                 }
             }
-            recyclerView.m259(!z);
-            if (z) {
+            recyclerView.m259(true);
+            if (false) {
             }
         }
     }

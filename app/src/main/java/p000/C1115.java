@@ -27,13 +27,12 @@ public final /* synthetic */ class C1115 implements ValueAnimator.AnimatorUpdate
         switch (this.f4161) {
             case 0:
                 C1118 c1118 = (C1118) this.f4162;
-                c1118.getClass();
+                
                 c1118.f4376.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
                 break;
             case 1:
                 View view = ((C1803) this.f4162).f6025;
                 Object animatedValue = valueAnimator.getAnimatedValue();
-                "null cannot be cast to non-null type kotlin.Float";
                 view.setTranslationX(((Float) animatedValue).floatValue());
                 break;
             case 2:
@@ -63,7 +62,6 @@ public final /* synthetic */ class C1115 implements ValueAnimator.AnimatorUpdate
             default:
                 C2865 c2865 = (C2865) this.f4162;
                 Object animatedValue2 = valueAnimator.getAnimatedValue();
-                "null cannot be cast to non-null type kotlin.Int";
                 c2865.scrollTo(((Integer) animatedValue2).intValue(), 0);
                 break;
         }

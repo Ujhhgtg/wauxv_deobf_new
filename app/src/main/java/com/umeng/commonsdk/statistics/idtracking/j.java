@@ -9,7 +9,7 @@ public class j extends a {
     private static final String a = "serial";
 
     public j() {
-        super(a);
+        super("serial");
     }
 
     @Override // com.umeng.commonsdk.statistics.idtracking.a

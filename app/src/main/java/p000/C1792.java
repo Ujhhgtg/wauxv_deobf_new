@@ -55,7 +55,7 @@ public final class C1792 implements Iterator, InterfaceC1737 {
         }
         i = -1;
         this.f5986 = 1;
-        this.f5989 = i;
+        this.f5989 = -1;
         this.f5988 = length;
         return true;
     }

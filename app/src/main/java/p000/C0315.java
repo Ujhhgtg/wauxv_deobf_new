@@ -139,7 +139,7 @@ public final class C0315 extends AbstractC3436 {
     public final void mo1416() {
         this.f10842 = 0L;
         int i = 0;
-        C3441 c3441 = new C3441(this, i);
+        C3441 c3441 = new C3441(this, 0);
         while (i < this.f1559.size()) {
             AbstractC3436 abstractC3436 = (AbstractC3436) this.f1559.get(i);
             abstractC3436.m4947(c3441);
@@ -244,14 +244,14 @@ public final class C0315 extends AbstractC3436 {
                     if (i < this.f1559.size()) {
                         AbstractC3436 abstractC3436 = (AbstractC3436) this.f1559.get(i);
                         long j6 = abstractC3436.f10843;
-                        j3 = j5;
+                        j3 = 0L;
                         long j7 = j - j6;
-                        if (j7 < j3) {
+                        if (j7 < 0L) {
                             break;
                         }
                         abstractC3436.mo1420(j7, j2 - j6);
                         i++;
-                        j5 = j3;
+                        j5 = 0L;
                     }
                 }
             } else {
@@ -269,7 +269,7 @@ public final class C0315 extends AbstractC3436 {
                 }
             }
             if (this.f10828 != null) {
-                if ((j > j4 || j2 > j4) && (j >= 0 || j2 < j3)) {
+                if ((j > j4 || j2 > j4) && (j >= 0 || j2 < 0L)) {
                     return;
                 }
                 if (j > j4) {
@@ -281,7 +281,7 @@ public final class C0315 extends AbstractC3436 {
         for (int i2 = 0; i2 < this.f1559.size(); i2++) {
             ((AbstractC3436) this.f1559.get(i2)).mo1420(j, j2);
         }
-        j3 = j5;
+        j3 = 0L;
         if (this.f10828 != null) {
             if (j > j4) {
                 return;

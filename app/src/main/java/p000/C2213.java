@@ -2,7 +2,6 @@ package p000;
 
 import android.content.ComponentName;
 import android.content.Intent;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᛸᤝᲁᤞᲇᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -32,12 +31,12 @@ public final class C2213 extends AbstractC2867 implements InterfaceC1602 {
         f7189 = "订阅号";
         f7190 = "订阅消息列表";
         f7191 = "订阅号消息从瀑布流模式改为列表模式";
-        EnumC3677 enumC3677 = EnumC3677.f11542;
+        WeChatVersions enumC3677 = WeChatVersions.f11542;
         C1565 c1565 = C1565.f5440;
-        c1565.getClass();
+        
         if (C1565.m3278() > enumC3677.f11548 || C1565.m3280()) {
-            EnumC3674 enumC3674 = EnumC3674.f11508;
-            c1565.getClass();
+            WeChatVersionsPlay enumC3674 = WeChatVersionsPlay.f11508;
+            
             if (C1565.m3278() > enumC3674.f11513 || !C1565.m3280()) {
                 z = false;
             } else {
@@ -65,7 +64,7 @@ public final class C2213 extends AbstractC2867 implements InterfaceC1602 {
                 } else if (!className.equals("com.tencent.mm.plugin.brandservice.ui.timeline.BizTimeLineUI")) {
                     return;
                 }
-                C1565.f5440.getClass();
+                
                 intent.setComponent(new ComponentName(C1565.m3277(), "com.tencent.mm.ui.conversation.NewBizConversationUI"));
             }
         }

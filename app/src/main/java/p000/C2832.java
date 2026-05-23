@@ -104,9 +104,9 @@ public final class C2832 implements Closeable {
                     for (int i7 = 0; i7 != this.f9097; i7++) {
                         byte[] bArr5 = this.f9095;
                         if (bArr5[i7] == 10) {
-                            int i8 = this.f9096;
-                            if (i7 != i8) {
-                                c2831.write(bArr5, i8, i7 - i8);
+                            int i8 = 0;
+                            if (i7 != 0) {
+                                c2831.write(bArr5, 0, i7 - 0);
                             }
                             this.f9096 = i7 + 1;
                             return c2831.toString();

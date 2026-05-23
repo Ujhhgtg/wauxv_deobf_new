@@ -14,7 +14,6 @@ import okhttp3.internal.Util;
 import okhttp3.internal.concurrent.Task;
 import okhttp3.internal.concurrent.TaskQueue;
 import okhttp3.internal.concurrent.TaskRunner;
-import okhttp3.internal.http2.Http2Reader;
 import okhttp3.internal.platform.Platform;
 import p000.AbstractC0981;
 import p000.AbstractC2207;
@@ -24,7 +23,7 @@ import p000.C0539;
 import p000.C2476;
 import p000.C2477;
 import p000.C2516;
-import p000.C3497;
+import p000.Unit;
 import p000.InterfaceC0507;
 import p000.InterfaceC0508;
 import p000.InterfaceC1414;
@@ -275,7 +274,7 @@ public final class Http2Connection implements Closeable {
                         TaskQueue taskQueue = http2Connection.settingsListenerQueue;
                         final String str = http2Connection.getConnectionName$okhttp() + " onSettings";
                         final boolean z2 = true;
-                        taskQueue.schedule(new Task(str, z2) { // from class: okhttp3.internal.http2.Http2Connection$ReaderRunnable$applyAndAckSettings$lambda$7$lambda$6$$inlined$execute$default$1
+                        taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$ReaderRunnable$applyAndAckSettings$lambda$7$lambda$6$$inlined$execute$default$1
                             @Override // okhttp3.internal.concurrent.Task
                             public long runOnce() {
                                 http2Connection.getListener$okhttp().onSettings(http2Connection, (Settings) c2516.f8043);
@@ -371,7 +370,7 @@ public final class Http2Connection implements Closeable {
                 TaskQueue taskQueueNewQueue = http2Connection.taskRunner.newQueue();
                 final String str = http2Connection.getConnectionName$okhttp() + '[' + i + "] onStream";
                 final boolean z2 = true;
-                taskQueueNewQueue.schedule(new Task(str, z2) { // from class: okhttp3.internal.http2.Http2Connection$ReaderRunnable$headers$lambda$2$$inlined$execute$default$1
+                taskQueueNewQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$ReaderRunnable$headers$lambda$2$$inlined$execute$default$1
                     @Override // okhttp3.internal.concurrent.Task
                     public long runOnce() {
                         try {
@@ -394,7 +393,7 @@ public final class Http2Connection implements Closeable {
         @Override // p000.InterfaceC1414
         public /* bridge */ /* synthetic */ Object invoke() throws Throwable {
             m902invoke();
-            return C3497.f10997;
+            return Unit.INSTANCE;
         }
 
         @Override // okhttp3.internal.http2.Http2Reader.Handler
@@ -404,7 +403,7 @@ public final class Http2Connection implements Closeable {
                 final String str = Http2Connection.this.getConnectionName$okhttp() + " ping";
                 final Http2Connection http2Connection = Http2Connection.this;
                 final boolean z2 = true;
-                taskQueue.schedule(new Task(str, z2) { // from class: okhttp3.internal.http2.Http2Connection$ReaderRunnable$ping$$inlined$execute$default$1
+                taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$ReaderRunnable$ping$$inlined$execute$default$1
                     @Override // okhttp3.internal.concurrent.Task
                     public long runOnce() {
                         http2Connection.writePing(true, i, i2);
@@ -452,7 +451,7 @@ public final class Http2Connection implements Closeable {
             TaskQueue taskQueue = Http2Connection.this.writerQueue;
             final String str = Http2Connection.this.getConnectionName$okhttp() + " applyAndAckSettings";
             final boolean z2 = true;
-            taskQueue.schedule(new Task(str, z2) { // from class: okhttp3.internal.http2.Http2Connection$ReaderRunnable$settings$$inlined$execute$default$1
+            taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$ReaderRunnable$settings$$inlined$execute$default$1
                 @Override // okhttp3.internal.concurrent.Task
                 public long runOnce() {
                     this.applyAndAckSettings(z, settings);
@@ -505,8 +504,8 @@ public final class Http2Connection implements Closeable {
                     }
                     ErrorCode errorCode3 = ErrorCode.NO_ERROR;
                     try {
-                        Http2Connection.this.close$okhttp(errorCode3, ErrorCode.CANCEL, null);
-                        errorCode = errorCode3;
+                        Http2Connection.this.close$okhttp(ErrorCode.NO_ERROR, ErrorCode.CANCEL, null);
+                        errorCode = ErrorCode.NO_ERROR;
                     } catch (IOException e2) {
                         e = e2;
                         ErrorCode errorCode4 = ErrorCode.PROTOCOL_ERROR;
@@ -516,7 +515,7 @@ public final class Http2Connection implements Closeable {
                     }
                 } catch (Throwable th) {
                     th = th;
-                    Http2Connection.this.close$okhttp(errorCode, errorCode2, e);
+                    Http2Connection.this.close$okhttp(errorCode, ErrorCode.INTERNAL_ERROR, e);
                     Util.closeQuietly(this.reader);
                     throw th;
                 }
@@ -524,8 +523,8 @@ public final class Http2Connection implements Closeable {
                 e = e3;
             } catch (Throwable th2) {
                 th = th2;
-                errorCode = errorCode2;
-                Http2Connection.this.close$okhttp(errorCode, errorCode2, e);
+                errorCode = ErrorCode.INTERNAL_ERROR;
+                Http2Connection.this.close$okhttp(ErrorCode.INTERNAL_ERROR, ErrorCode.INTERNAL_ERROR, e);
                 Util.closeQuietly(this.reader);
                 throw th;
             }
@@ -548,8 +547,8 @@ public final class Http2Connection implements Closeable {
 
     static {
         Settings settings = new Settings();
-        settings.set(7, Settings.DEFAULT_INITIAL_WINDOW_SIZE);
-        settings.set(5, Http2.INITIAL_MAX_FRAME_SIZE);
+        settings.set(7, 65535);
+        settings.set(5, 16384);
         DEFAULT_SETTINGS = settings;
     }
 
@@ -570,7 +569,7 @@ public final class Http2Connection implements Closeable {
         this.pushObserver = builder.getPushObserver$okhttp();
         Settings settings = new Settings();
         if (builder.getClient$okhttp()) {
-            settings.set(7, OKHTTP_CLIENT_WINDOW_SIZE);
+            settings.set(7, 16777216);
         }
         this.okHttpSettings = settings;
         Settings settings2 = DEFAULT_SETTINGS;
@@ -609,7 +608,7 @@ public final class Http2Connection implements Closeable {
     /* JADX INFO: Access modifiers changed from: private */
     public final void failConnection(IOException iOException) {
         ErrorCode errorCode = ErrorCode.PROTOCOL_ERROR;
-        close$okhttp(errorCode, errorCode, iOException);
+        close$okhttp(ErrorCode.PROTOCOL_ERROR, ErrorCode.PROTOCOL_ERROR, iOException);
     }
 
     public static /* synthetic */ void start$default(Http2Connection http2Connection, boolean z, TaskRunner taskRunner, int i, Object obj) {
@@ -636,7 +635,7 @@ public final class Http2Connection implements Closeable {
     public final void close$okhttp(ErrorCode errorCode, ErrorCode errorCode2, IOException iOException) {
         int i;
         Object[] array;
-        if (Util.assertionsEnabled && Thread.holdsLock(this)) {
+        if (false && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         try {
@@ -764,7 +763,7 @@ public final class Http2Connection implements Closeable {
         TaskQueue taskQueue = this.pushQueue;
         final String str = this.connectionName + '[' + i + "] onData";
         final boolean z2 = true;
-        taskQueue.schedule(new Task(str, z2) { // from class: okhttp3.internal.http2.Http2Connection$pushDataLater$$inlined$execute$default$1
+        taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$pushDataLater$$inlined$execute$default$1
             @Override // okhttp3.internal.concurrent.Task
             public long runOnce() {
                 try {
@@ -790,7 +789,7 @@ public final class Http2Connection implements Closeable {
         TaskQueue taskQueue = this.pushQueue;
         final String str = this.connectionName + '[' + i + "] onHeaders";
         final boolean z2 = true;
-        taskQueue.schedule(new Task(str, z2) { // from class: okhttp3.internal.http2.Http2Connection$pushHeadersLater$$inlined$execute$default$1
+        taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$pushHeadersLater$$inlined$execute$default$1
             @Override // okhttp3.internal.concurrent.Task
             public long runOnce() {
                 boolean zOnHeaders = this.pushObserver.onHeaders(i, list, z);
@@ -821,7 +820,7 @@ public final class Http2Connection implements Closeable {
                     TaskQueue taskQueue = this.pushQueue;
                     final String str = this.connectionName + '[' + i + "] onRequest";
                     final boolean z = true;
-                    taskQueue.schedule(new Task(str, z) { // from class: okhttp3.internal.http2.Http2Connection$pushRequestLater$$inlined$execute$default$1
+                    taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$pushRequestLater$$inlined$execute$default$1
                         @Override // okhttp3.internal.concurrent.Task
                         public long runOnce() {
                             if (!this.pushObserver.onRequest(i, list)) {
@@ -857,7 +856,7 @@ public final class Http2Connection implements Closeable {
         TaskQueue taskQueue = this.pushQueue;
         final String str = this.connectionName + '[' + i + "] onReset";
         final boolean z = true;
-        taskQueue.schedule(new Task(str, z) { // from class: okhttp3.internal.http2.Http2Connection$pushResetLater$$inlined$execute$default$1
+        taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$pushResetLater$$inlined$execute$default$1
             @Override // okhttp3.internal.concurrent.Task
             public long runOnce() {
                 this.pushObserver.onReset(i, errorCode);
@@ -899,7 +898,7 @@ public final class Http2Connection implements Closeable {
             TaskQueue taskQueue = this.writerQueue;
             final String strM4752 = AbstractC2784.m4752(new StringBuilder(), this.connectionName, " ping");
             final boolean z = true;
-            taskQueue.schedule(new Task(strM4752, z) { // from class: okhttp3.internal.http2.Http2Connection$sendDegradedPingLater$$inlined$execute$default$1
+            taskQueue.schedule(new Task(strM4752, true) { // from class: okhttp3.internal.http2.Http2Connection$sendDegradedPingLater$$inlined$execute$default$1
                 @Override // okhttp3.internal.concurrent.Task
                 public long runOnce() {
                     this.writePing(false, 2, 0);
@@ -1023,7 +1022,7 @@ public final class Http2Connection implements Closeable {
         TaskQueue taskQueue = this.writerQueue;
         final String str = this.connectionName + '[' + i + "] writeSynReset";
         final boolean z = true;
-        taskQueue.schedule(new Task(str, z) { // from class: okhttp3.internal.http2.Http2Connection$writeSynResetLater$$inlined$execute$default$1
+        taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$writeSynResetLater$$inlined$execute$default$1
             @Override // okhttp3.internal.concurrent.Task
             public long runOnce() {
                 try {
@@ -1041,7 +1040,7 @@ public final class Http2Connection implements Closeable {
         TaskQueue taskQueue = this.writerQueue;
         final String str = this.connectionName + '[' + i + "] windowUpdate";
         final boolean z = true;
-        taskQueue.schedule(new Task(str, z) { // from class: okhttp3.internal.http2.Http2Connection$writeWindowUpdateLater$$inlined$execute$default$1
+        taskQueue.schedule(new Task(str, true) { // from class: okhttp3.internal.http2.Http2Connection$writeWindowUpdateLater$$inlined$execute$default$1
             @Override // okhttp3.internal.concurrent.Task
             public long runOnce() {
                 try {
@@ -1123,7 +1122,7 @@ public final class Http2Connection implements Closeable {
             this.writer.settings(this.okHttpSettings);
             int initialWindowSize = this.okHttpSettings.getInitialWindowSize();
             if (initialWindowSize != 65535) {
-                this.writer.windowUpdate(0, initialWindowSize - Settings.DEFAULT_INITIAL_WINDOW_SIZE);
+                this.writer.windowUpdate(0, initialWindowSize - 65535);
             }
         }
         taskRunner.newQueue().schedule(new TaskQueue.AnonymousClass1(this.connectionName, true, this.readerRunnable), 0L);

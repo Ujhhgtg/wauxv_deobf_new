@@ -78,7 +78,7 @@ public class C0094 implements InterfaceC1954, InterfaceC1942, InterfaceC0233, In
         switch (this.f1048) {
             case 9:
                 return "ContentInfoCompat{" + ((ContentInfo) this.f1049) + "}";
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return "[class] placeholder_hook_class [throwable] " + ((Throwable) this.f1049) + " [instance] null";
             default:
                 return super.toString();
@@ -119,7 +119,7 @@ public class C0094 implements InterfaceC1954, InterfaceC1942, InterfaceC0233, In
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public Object mo1100() {
         switch (this.f1048) {
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 C0221 c0221 = (C0221) this.f1049;
                 return new RunnableC0972((C1215) c0221.f1352, (C0243) c0221.f1353);
             default:
@@ -139,7 +139,7 @@ public class C0094 implements InterfaceC1954, InterfaceC1942, InterfaceC0233, In
         if (!it.hasNext()) {
             return false;
         }
-        ((AbstractC1409) it.next()).getClass();
+        
         throw null;
     }
 
@@ -278,7 +278,7 @@ public class C0094 implements InterfaceC1954, InterfaceC1942, InterfaceC0233, In
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
     public InterfaceC1996 mo1115(C2103 c2103) {
         switch (this.f1048) {
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return new C0522(1, (C0373) this.f1049);
             default:
                 return new C1572((C1744) this.f1049);
@@ -353,7 +353,7 @@ public class C0094 implements InterfaceC1954, InterfaceC1942, InterfaceC0233, In
             abstractC1628M3018 = c1301.m3018(((C0898) abstractC0777).m2412());
         } else if (abstractC0777 instanceof C0915) {
             C1977 c19710 = c1023.f3743;
-            c19710.getClass();
+            
             c19710.m4637();
             abstractC1628M3018 = (AbstractC1628) ((TreeMap) c19710.f6550).get(((C0915) abstractC0777).f3376);
             if (abstractC1628M3018 == null) {
@@ -434,13 +434,13 @@ public class C0094 implements InterfaceC1954, InterfaceC1942, InterfaceC0233, In
             case 4:
                 this.f1049 = new HashSet();
                 break;
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 this.f1049 = new C0373(14);
                 break;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 this.f1049 = new ConcurrentHashMap(16);
                 break;
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 PrintStream printStream = System.out;
                 PrintStream printStream2 = System.err;
                 this.f1049 = new C2299(0);
@@ -448,9 +448,9 @@ public class C0094 implements InterfaceC1954, InterfaceC1942, InterfaceC0233, In
                 new PrintStream(printStream);
                 new PrintStream(printStream2);
                 break;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 break;
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 this.f1049 = new C1744(7);
                 break;
             default:
@@ -461,7 +461,7 @@ public class C0094 implements InterfaceC1954, InterfaceC1942, InterfaceC0233, In
 
     public C0094(ContentInfo contentInfo) {
         this.f1048 = 9;
-        contentInfo.getClass();
+        
         this.f1049 = AbstractC0451.m1661(contentInfo);
     }
 

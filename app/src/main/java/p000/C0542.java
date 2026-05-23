@@ -74,7 +74,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
 
     public String toString() {
         switch (this.f2251) {
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 StringBuilder sb = new StringBuilder("GroupedLinkedMap( ");
                 C1504 c1504 = (C1504) this.f2252;
                 C1504 c1505 = c1504.f5315;
@@ -108,7 +108,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         if (((C3504) this.f2252) == null) {
             this.f2252 = new C3504(charSequence instanceof Spannable ? (Spannable) charSequence : new SpannableString(charSequence));
         }
-        ((C0373) this.f2253).getClass();
+        
         ((C3504) this.f2252).setSpan(new C3466(c3465), i, i2, 33);
         return true;
     }
@@ -330,14 +330,14 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         if (keyListener instanceof NumberKeyListener) {
             return keyListener;
         }
-        ((C0542) ((C0094) this.f2253).f1049).getClass();
+        
         if (keyListener instanceof C1168) {
             return keyListener;
         }
         if (keyListener == null) {
             return null;
         }
-        return keyListener instanceof NumberKeyListener ? keyListener : new C1168(keyListener);
+        return false ? keyListener : new C1168(keyListener);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
@@ -399,7 +399,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                         int i2 = i * 2;
                         char[] cArr2 = AbstractC3522.f11032;
                         cArr[i2] = cArr2[(b & 255) >>> 4];
-                        cArr[i2 + 1] = cArr2[b & ek.m];
+                        cArr[i2 + 1] = cArr2[b & 15];
                     }
                     str = new String(cArr);
                 }
@@ -530,11 +530,11 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     public C1165 m1899(InputConnection inputConnection, EditorInfo editorInfo) {
         C0094 c0094 = (C0094) this.f2253;
         if (inputConnection == null) {
-            c0094.getClass();
+            
             inputConnection = null;
         } else {
             C0542 c0542 = (C0542) c0094.f1049;
-            c0542.getClass();
+            
             if (!(inputConnection instanceof C1165)) {
                 inputConnection = new C1165((EditText) c0542.f2252, inputConnection, editorInfo);
             }
@@ -724,7 +724,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
             try {
                 switch (iM1815) {
                     case 0:
-                        interfaceC0541.mo1591(iM1815, i2, C3448.f10874);
+                        interfaceC0541.mo1591(0, i2, C3448.f10874);
                         return 1;
                     case 1:
                         interfaceC0541.mo1580(18, i, 1, C0906.f3363, 0);
@@ -759,13 +759,13 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                     case 11:
                         interfaceC0541.mo1580(18, i, 1, C0900.f3341, 0);
                         return 1;
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                         interfaceC0541.mo1580(18, i, 1, C0900.f3342, 0);
                         return 1;
                     case 13:
                         interfaceC0541.mo1580(18, i, 1, C0900.f3343, 0);
                         return 1;
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                         interfaceC0541.mo1580(18, i, 1, C0897.f3338, 0);
                         return 1;
                     case 15:
@@ -777,11 +777,11 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                         byte b = bArr[i4];
                         interfaceC0541.mo1580(18, i, 2, C0903.m2420(b), b);
                         return 2;
-                    case Opcodes.SIPUSH /* 17 */:
+                    case 17 /* 17 */:
                         int iM1814 = c0516.m1814(i + 1);
                         interfaceC0541.mo1580(18, i, 3, C0903.m2420(iM1814), iM1814);
                         return 3;
-                    case Opcodes.LDC /* 18 */:
+                    case 18 /* 18 */:
                         AbstractC0777 abstractC0777M4793 = c2815.m4793(c0516.m1815(i + 1));
                         interfaceC0541.mo1580(18, i, 2, abstractC0777M4793, abstractC0777M4793 instanceof C0903 ? ((C0903) abstractC0777M4793).m2421() : 0);
                         return 2;
@@ -792,19 +792,19 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                     case 20:
                         interfaceC0541.mo1580(20, i, 3, c2815.m4793(c0516.m1817(i + 1)), 0);
                         return 3;
-                    case Opcodes.ILOAD /* 21 */:
+                    case 21 /* 21 */:
                         interfaceC0541.mo1578(21, i, 2, c0516.m1815(i + 1), C3448.f10871, 0);
                         return 2;
-                    case Opcodes.LLOAD /* 22 */:
+                    case 22 /* 22 */:
                         interfaceC0541.mo1578(21, i, 2, c0516.m1815(i + 1), C3448.f10872, 0);
                         return 2;
-                    case Opcodes.FLOAD /* 23 */:
+                    case 23 /* 23 */:
                         interfaceC0541.mo1578(21, i, 2, c0516.m1815(i + 1), C3448.f10870, 0);
                         return 2;
-                    case Opcodes.DLOAD /* 24 */:
+                    case 24 /* 24 */:
                         interfaceC0541.mo1578(21, i, 2, c0516.m1815(i + 1), C3448.f10869, 0);
                         return 2;
-                    case Opcodes.ALOAD /* 25 */:
+                    case 25 /* 25 */:
                         interfaceC0541.mo1578(21, i, 2, c0516.m1815(i + 1), C3448.f10882, 0);
                         return 2;
                     case 26:
@@ -837,7 +837,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                     case 45:
                         interfaceC0541.mo1578(21, i2, 1, iM1815 - 42, C3448.f10882, 0);
                         return 1;
-                    case Opcodes.IALOAD /* 46 */:
+                    case 46 /* 46 */:
                         interfaceC0541.mo1591(46, i2, C3448.f10871);
                         return 1;
                     case 47:
@@ -849,31 +849,31 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                     case 49:
                         interfaceC0541.mo1591(46, i2, C3448.f10869);
                         return 1;
-                    case Opcodes.AALOAD /* 50 */:
+                    case 50 /* 50 */:
                         interfaceC0541.mo1591(46, i2, C3448.f10882);
                         return 1;
-                    case Opcodes.BALOAD /* 51 */:
+                    case 51 /* 51 */:
                         interfaceC0541.mo1591(46, i2, C3448.f10867);
                         return 1;
                     case 52:
                         interfaceC0541.mo1591(46, i2, C3448.f10868);
                         return 1;
-                    case Opcodes.SALOAD /* 53 */:
+                    case 53 /* 53 */:
                         interfaceC0541.mo1591(46, i2, C3448.f10873);
                         return 1;
-                    case Opcodes.ISTORE /* 54 */:
+                    case 54 /* 54 */:
                         interfaceC0541.mo1578(54, i, 2, c0516.m1815(i + 1), C3448.f10871, 0);
                         return 2;
-                    case Opcodes.LSTORE /* 55 */:
+                    case 55 /* 55 */:
                         interfaceC0541.mo1578(54, i, 2, c0516.m1815(i + 1), C3448.f10872, 0);
                         return 2;
-                    case Opcodes.FSTORE /* 56 */:
+                    case 56 /* 56 */:
                         interfaceC0541.mo1578(54, i, 2, c0516.m1815(i + 1), C3448.f10870, 0);
                         return 2;
-                    case Opcodes.DSTORE /* 57 */:
+                    case 57 /* 57 */:
                         interfaceC0541.mo1578(54, i, 2, c0516.m1815(i + 1), C3448.f10869, 0);
                         return 2;
-                    case Opcodes.ASTORE /* 58 */:
+                    case 58 /* 58 */:
                         interfaceC0541.mo1578(54, i, 2, c0516.m1815(i + 1), C3448.f10882, 0);
                         return 2;
                     case 59:
@@ -906,7 +906,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                     case 78:
                         interfaceC0541.mo1578(54, i2, 1, iM1815 - 75, C3448.f10882, 0);
                         return 1;
-                    case Opcodes.IASTORE /* 79 */:
+                    case 79 /* 79 */:
                         interfaceC0541.mo1591(79, i2, C3448.f10871);
                         return 1;
                     case 80:
@@ -918,185 +918,185 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                     case 82:
                         interfaceC0541.mo1591(79, i2, C3448.f10869);
                         return 1;
-                    case Opcodes.AASTORE /* 83 */:
+                    case 83 /* 83 */:
                         interfaceC0541.mo1591(79, i2, C3448.f10882);
                         return 1;
-                    case Opcodes.BASTORE /* 84 */:
+                    case 84 /* 84 */:
                         interfaceC0541.mo1591(79, i2, C3448.f10867);
                         return 1;
-                    case Opcodes.CASTORE /* 85 */:
+                    case 85 /* 85 */:
                         interfaceC0541.mo1591(79, i2, C3448.f10868);
                         return 1;
                     case 86:
                         interfaceC0541.mo1591(79, i2, C3448.f10873);
                         return 1;
-                    case Opcodes.POP /* 87 */:
-                    case Opcodes.POP2 /* 88 */:
-                    case Opcodes.DUP /* 89 */:
+                    case 87 /* 87 */:
+                    case 88 /* 88 */:
+                    case 89 /* 89 */:
                     case 90:
                     case 91:
-                    case Opcodes.DUP2 /* 92 */:
+                    case 92 /* 92 */:
                     case 93:
                     case 94:
-                    case Opcodes.SWAP /* 95 */:
+                    case 95 /* 95 */:
                         interfaceC0541.mo1591(iM1815, i2, C3448.f10874);
                         return 1;
-                    case Opcodes.IADD /* 96 */:
+                    case 96 /* 96 */:
                     case 100:
                     case 104:
-                    case Opcodes.IDIV /* 108 */:
+                    case 108 /* 108 */:
                     case 112:
-                    case Opcodes.INEG /* 116 */:
+                    case 116 /* 116 */:
                     case 120:
                     case 122:
-                    case Opcodes.IUSHR /* 124 */:
+                    case 124 /* 124 */:
                     case 126:
                     case 128:
-                    case Opcodes.IXOR /* 130 */:
+                    case 130 /* 130 */:
                         interfaceC0541.mo1591(iM1815, i2, C3448.f10871);
                         return 1;
-                    case Opcodes.LADD /* 97 */:
+                    case 97 /* 97 */:
                     case 101:
                     case 105:
-                    case Opcodes.LDIV /* 109 */:
+                    case 109 /* 109 */:
                     case 113:
-                    case Opcodes.LNEG /* 117 */:
+                    case 117 /* 117 */:
                     case 121:
-                    case Opcodes.LSHR /* 123 */:
-                    case Opcodes.LUSHR /* 125 */:
+                    case 123 /* 123 */:
+                    case 125 /* 125 */:
                     case 127:
-                    case Opcodes.LOR /* 129 */:
-                    case Opcodes.LXOR /* 131 */:
+                    case 129 /* 129 */:
+                    case 131 /* 131 */:
                         interfaceC0541.mo1591(iM1815 - 1, i2, C3448.f10872);
                         return 1;
                     case 98:
                     case 102:
                     case 106:
-                    case UMErrorCode.E_UM_BE_JSON_FAILED /* 110 */:
-                    case UMErrorCode.E_UM_BE_FILE_OVERSIZE /* 114 */:
-                    case Opcodes.FNEG /* 118 */:
+                    case 110 /* 110 */:
+                    case 114 /* 114 */:
+                    case 118 /* 118 */:
                         interfaceC0541.mo1591(iM1815 - 2, i2, C3448.f10870);
                         return 1;
                     case 99:
                     case 103:
                     case 107:
-                    case UMErrorCode.E_UM_BE_CREATE_FAILED /* 111 */:
+                    case 111 /* 111 */:
                     case 115:
-                    case Opcodes.DNEG /* 119 */:
+                    case 119 /* 119 */:
                         interfaceC0541.mo1591(iM1815 - 3, i2, C3448.f10869);
                         return 1;
-                    case Opcodes.IINC /* 132 */:
+                    case 132 /* 132 */:
                         int iM1816 = c0516.m1815(i2 + 1);
                         int i5 = i2 + 2;
                         c0516.m1810(i5, i2 + 3);
-                        interfaceC0541.mo1578(iM1815, i2, 3, iM1816, C3448.f10871, bArr[i5]);
+                        interfaceC0541.mo1578(132, i2, 3, iM1816, C3448.f10871, bArr[i5]);
                         return 3;
-                    case Opcodes.I2L /* 133 */:
-                    case Opcodes.F2L /* 140 */:
-                    case Opcodes.D2L /* 143 */:
+                    case 133 /* 133 */:
+                    case 140 /* 140 */:
+                    case 143 /* 143 */:
                         interfaceC0541.mo1591(iM1815, i2, C3448.f10872);
                         return 1;
-                    case Opcodes.I2F /* 134 */:
+                    case 134 /* 134 */:
                     case 137:
                     case 144:
                         interfaceC0541.mo1591(iM1815, i2, C3448.f10870);
                         return 1;
-                    case Opcodes.I2D /* 135 */:
+                    case 135 /* 135 */:
                     case 138:
                     case 141:
                         interfaceC0541.mo1591(iM1815, i2, C3448.f10869);
                         return 1;
-                    case Opcodes.L2I /* 136 */:
-                    case Opcodes.F2I /* 139 */:
-                    case Opcodes.D2I /* 142 */:
-                    case Opcodes.I2B /* 145 */:
-                    case Opcodes.I2C /* 146 */:
-                    case Opcodes.I2S /* 147 */:
-                    case Opcodes.LCMP /* 148 */:
-                    case Opcodes.FCMPL /* 149 */:
-                    case Opcodes.FCMPG /* 150 */:
-                    case Opcodes.DCMPL /* 151 */:
-                    case Opcodes.DCMPG /* 152 */:
-                    case Opcodes.ARRAYLENGTH /* 190 */:
+                    case 136 /* 136 */:
+                    case 139 /* 139 */:
+                    case 142 /* 142 */:
+                    case 145 /* 145 */:
+                    case 146 /* 146 */:
+                    case 147 /* 147 */:
+                    case 148 /* 148 */:
+                    case 149 /* 149 */:
+                    case 150 /* 150 */:
+                    case 151 /* 151 */:
+                    case 152 /* 152 */:
+                    case 190 /* 190 */:
                         interfaceC0541.mo1591(iM1815, i2, C3448.f10871);
                         return 1;
-                    case Opcodes.IFEQ /* 153 */:
-                    case Opcodes.IFNE /* 154 */:
-                    case Opcodes.IFLT /* 155 */:
-                    case Opcodes.IFGE /* 156 */:
-                    case Opcodes.IFGT /* 157 */:
-                    case Opcodes.IFLE /* 158 */:
-                    case Opcodes.IF_ICMPEQ /* 159 */:
-                    case Opcodes.IF_ICMPNE /* 160 */:
-                    case Opcodes.IF_ICMPLT /* 161 */:
-                    case Opcodes.IF_ICMPGE /* 162 */:
-                    case Opcodes.IF_ICMPGT /* 163 */:
-                    case Opcodes.IF_ICMPLE /* 164 */:
-                    case Opcodes.IF_ACMPEQ /* 165 */:
-                    case Opcodes.IF_ACMPNE /* 166 */:
-                    case Opcodes.GOTO /* 167 */:
-                    case Opcodes.JSR /* 168 */:
-                    case Opcodes.IFNULL /* 198 */:
-                    case Opcodes.IFNONNULL /* 199 */:
+                    case 153 /* 153 */:
+                    case 154 /* 154 */:
+                    case 155 /* 155 */:
+                    case 156 /* 156 */:
+                    case 157 /* 157 */:
+                    case 158 /* 158 */:
+                    case 159 /* 159 */:
+                    case 160 /* 160 */:
+                    case 161 /* 161 */:
+                    case 162 /* 162 */:
+                    case 163 /* 163 */:
+                    case 164 /* 164 */:
+                    case 165 /* 165 */:
+                    case 166 /* 166 */:
+                    case 167 /* 167 */:
+                    case 168 /* 168 */:
+                    case 198 /* 198 */:
+                    case 199 /* 199 */:
                         interfaceC0541.mo1590(iM1815, i2, 3, c0516.m1814(i2 + 1) + i2);
                         return 3;
-                    case Opcodes.RET /* 169 */:
-                        interfaceC0541.mo1578(iM1815, i2, 2, c0516.m1815(i2 + 1), C3448.f10876, 0);
+                    case 169 /* 169 */:
+                        interfaceC0541.mo1578(169, i2, 2, c0516.m1815(i2 + 1), C3448.f10876, 0);
                         return 2;
-                    case Opcodes.TABLESWITCH /* 170 */:
+                    case 170 /* 170 */:
                         return m1909(i, interfaceC0541);
-                    case Opcodes.LOOKUPSWITCH /* 171 */:
+                    case 171 /* 171 */:
                         return m1906(i, interfaceC0541);
-                    case Opcodes.IRETURN /* 172 */:
-                        interfaceC0541.mo1591(Opcodes.IRETURN, i2, C3448.f10871);
+                    case 172 /* 172 */:
+                        interfaceC0541.mo1591(172, i2, C3448.f10871);
                         return 1;
-                    case Opcodes.LRETURN /* 173 */:
-                        interfaceC0541.mo1591(Opcodes.IRETURN, i2, C3448.f10872);
+                    case 173 /* 173 */:
+                        interfaceC0541.mo1591(172, i2, C3448.f10872);
                         return 1;
-                    case Opcodes.FRETURN /* 174 */:
-                        interfaceC0541.mo1591(Opcodes.IRETURN, i2, C3448.f10870);
+                    case 174 /* 174 */:
+                        interfaceC0541.mo1591(172, i2, C3448.f10870);
                         return 1;
-                    case Opcodes.DRETURN /* 175 */:
-                        interfaceC0541.mo1591(Opcodes.IRETURN, i2, C3448.f10869);
+                    case 175 /* 175 */:
+                        interfaceC0541.mo1591(172, i2, C3448.f10869);
                         return 1;
-                    case Opcodes.ARETURN /* 176 */:
-                        interfaceC0541.mo1591(Opcodes.IRETURN, i2, C3448.f10882);
+                    case 176 /* 176 */:
+                        interfaceC0541.mo1591(172, i2, C3448.f10882);
                         return 1;
-                    case Opcodes.RETURN /* 177 */:
-                    case Opcodes.ATHROW /* 191 */:
-                    case Opcodes.MONITORENTER /* 194 */:
-                    case Opcodes.MONITOREXIT /* 195 */:
+                    case 177 /* 177 */:
+                    case 191 /* 191 */:
+                    case 194 /* 194 */:
+                    case 195 /* 195 */:
                         interfaceC0541.mo1591(iM1815, i2, C3448.f10874);
                         return 1;
-                    case Opcodes.GETSTATIC /* 178 */:
-                    case Opcodes.PUTSTATIC /* 179 */:
-                    case Opcodes.GETFIELD /* 180 */:
-                    case Opcodes.PUTFIELD /* 181 */:
-                    case Opcodes.INVOKEVIRTUAL /* 182 */:
-                    case Opcodes.INVOKESPECIAL /* 183 */:
-                    case Opcodes.INVOKESTATIC /* 184 */:
-                    case Opcodes.NEW /* 187 */:
-                    case Opcodes.ANEWARRAY /* 189 */:
-                    case Opcodes.CHECKCAST /* 192 */:
-                    case Opcodes.INSTANCEOF /* 193 */:
+                    case 178 /* 178 */:
+                    case 179 /* 179 */:
+                    case 180 /* 180 */:
+                    case 181 /* 181 */:
+                    case 182 /* 182 */:
+                    case 183 /* 183 */:
+                    case 184 /* 184 */:
+                    case 187 /* 187 */:
+                    case 189 /* 189 */:
+                    case 192 /* 192 */:
+                    case 193 /* 193 */:
                         interfaceC0541.mo1580(iM1815, i, 3, c2815.m4793(c0516.m1817(i + 1)), 0);
                         return 3;
-                    case Opcodes.INVOKEINTERFACE /* 185 */:
-                        interfaceC0541.mo1580(iM1815, i, 5, c2815.m4793(c0516.m1817(i + 1)), c0516.m1815(i + 3) | (c0516.m1815(i + 4) << 8));
+                    case 185 /* 185 */:
+                        interfaceC0541.mo1580(185, i, 5, c2815.m4793(c0516.m1817(i + 1)), c0516.m1815(i + 3) | (c0516.m1815(i + 4) << 8));
                         return 5;
                     case 186:
-                        interfaceC0541.mo1580(iM1815, i, 5, (C0905) c2815.m4793(c0516.m1817(i + 1)), 0);
+                        interfaceC0541.mo1580(186, i, 5, (C0905) c2815.m4793(c0516.m1817(i + 1)), 0);
                         return 5;
-                    case Opcodes.NEWARRAY /* 188 */:
+                    case 188 /* 188 */:
                         return m1907(i, interfaceC0541);
                     case 196:
                         return m1911(i, interfaceC0541);
                     case 197:
-                        interfaceC0541.mo1580(iM1815, i2, 4, c2815.m4793(c0516.m1817(i2 + 1)), c0516.m1815(i2 + 3));
+                        interfaceC0541.mo1580(197, i2, 4, c2815.m4793(c0516.m1817(i2 + 1)), c0516.m1815(i2 + 3));
                         return 4;
                     case 200:
                     case 201:
-                        interfaceC0541.mo1590(iM1815 == 200 ? Opcodes.GOTO : Opcodes.JSR, i2, 5, c0516.m1812(i2 + 1) + i2);
+                        interfaceC0541.mo1590(iM1815 == 200 ? 167 : 168, i2, 5, c0516.m1812(i2 + 1) + i2);
                         return 5;
                     default:
                         interfaceC0541.mo1585(iM1815, i2);
@@ -1270,7 +1270,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                 }
             }
         }
-        if (i3 < 2 || i3 != i2) {
+        if (true) {
             interfaceC0541.mo1577(i, 2, c0918, null);
             return 2;
         }
@@ -1426,44 +1426,44 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
         int iM1815 = c0516.m1815(i + 1);
         int iM1817 = c0516.m1817(i + 2);
         if (iM1815 == 132) {
-            interfaceC0541.mo1578(iM1815, i, 6, iM1817, C3448.f10871, c0516.m1814(i + 4));
+            interfaceC0541.mo1578(132, i, 6, iM1817, C3448.f10871, c0516.m1814(i + 4));
             return 6;
         }
         if (iM1815 == 169) {
-            interfaceC0541.mo1578(iM1815, i, 4, iM1817, C3448.f10876, 0);
+            interfaceC0541.mo1578(169, i, 4, iM1817, C3448.f10876, 0);
             return 4;
         }
         switch (iM1815) {
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 interfaceC0541.mo1578(21, i, 4, iM1817, C3448.f10871, 0);
                 return 4;
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 interfaceC0541.mo1578(21, i, 4, iM1817, C3448.f10872, 0);
                 return 4;
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 interfaceC0541.mo1578(21, i, 4, iM1817, C3448.f10870, 0);
                 return 4;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 interfaceC0541.mo1578(21, i, 4, iM1817, C3448.f10869, 0);
                 return 4;
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 interfaceC0541.mo1578(21, i, 4, iM1817, C3448.f10882, 0);
                 return 4;
             default:
                 switch (iM1815) {
-                    case Opcodes.ISTORE /* 54 */:
+                    case 54 /* 54 */:
                         interfaceC0541.mo1578(54, i, 4, iM1817, C3448.f10871, 0);
                         return 4;
-                    case Opcodes.LSTORE /* 55 */:
+                    case 55 /* 55 */:
                         interfaceC0541.mo1578(54, i, 4, iM1817, C3448.f10872, 0);
                         return 4;
-                    case Opcodes.FSTORE /* 56 */:
+                    case 56 /* 56 */:
                         interfaceC0541.mo1578(54, i, 4, iM1817, C3448.f10870, 0);
                         return 4;
-                    case Opcodes.DSTORE /* 57 */:
+                    case 57 /* 57 */:
                         interfaceC0541.mo1578(54, i, 4, iM1817, C3448.f10869, 0);
                         return 4;
-                    case Opcodes.ASTORE /* 58 */:
+                    case 58 /* 58 */:
                         interfaceC0541.mo1578(54, i, 4, iM1817, C3448.f10882, 0);
                         return 4;
                     default:
@@ -1570,7 +1570,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
             if (c1181.f4322 != null) {
                 C1142 c1142M2753 = C1142.m2753();
                 C1180 c1180 = c1181.f4322;
-                c1142M2753.getClass();
+                
                 AbstractC2665.m4661(c1180, "initCallback cannot be null");
                 ReentrantReadWriteLock reentrantReadWriteLock = c1142M2753.f4237;
                 reentrantReadWriteLock.writeLock().lock();
@@ -1604,7 +1604,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
     public C0542(int i) {
         this.f2251 = i;
         switch (i) {
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 this.f2252 = new C1504(null);
                 this.f2253 = new HashMap();
                 break;
@@ -1612,7 +1612,7 @@ public final class C0542 implements InterfaceC2574, InterfaceC1171, InterfaceC19
                 this.f2252 = new AtomicReference();
                 this.f2253 = new C0264(0);
                 break;
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 this.f2252 = new ArrayList();
                 this.f2253 = new HashMap();
                 break;

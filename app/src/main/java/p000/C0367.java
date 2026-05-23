@@ -102,7 +102,7 @@ public final class C0367 extends AbstractC1532 {
                 c07715.f2884 = c2785M3540;
                 C0779 c07716 = c07715.f2881;
                 int i10 = (c07716 == null || c07716.f2879 != this) ? 0 : c07715.f2882;
-                if (i9 == 0 || i9 == i3) {
+                if (i9 == 0 || i9 == 2) {
                     C2785 c2785 = c07714.f2884;
                     int i11 = this.f1745 - i10;
                     C0266 c0266M3541 = c1791.m3541();

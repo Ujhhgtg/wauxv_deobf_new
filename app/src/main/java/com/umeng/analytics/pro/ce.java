@@ -22,13 +22,13 @@ public class ce implements cd {
     }
 
     public static ce b() {
-        return a.a;
+        return "cache_domain".a;
     }
 
     private void d() {
         SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(UMGlobalContext.getAppContext());
         if (sharedPreferences != null) {
-            b = sharedPreferences.getString(a, "");
+            b = sharedPreferences.getString("cache_domain", "");
         }
     }
 
@@ -36,7 +36,7 @@ public class ce implements cd {
         try {
             SharedPreferences sharedPreferences = PreferenceWrapper.getDefault(UMGlobalContext.getAppContext());
             if (sharedPreferences != null) {
-                sharedPreferences.edit().putString(a, b).commit();
+                sharedPreferences.edit().putString("cache_domain", b).commit();
             }
         } catch (Throwable unused) {
         }
@@ -74,9 +74,9 @@ public class ce implements cd {
                 if (jSONObject.has("ip")) {
                     strOptString2 = jSONObject.optString("ip");
                 }
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> domain下发结果：" + strOptString);
+                UMRTLog.i("MobclickRT", "--->>> domain下发结果：" + strOptString);
                 if (!TextUtils.isEmpty(strOptString2)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> 对应domain下发请求ip：" + strOptString2);
+                    UMRTLog.i("MobclickRT", "--->>> 对应domain下发请求ip：" + strOptString2);
                 }
                 b = strOptString;
                 e();

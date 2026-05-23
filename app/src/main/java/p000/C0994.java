@@ -70,11 +70,11 @@ public final class C0994 extends AnimatorListenerAdapter {
         switch (this.f3625) {
             case 0:
                 AbstractC2508 abstractC2508 = this.f3626.f3630;
-                this.f3629.getClass();
+                
                 break;
             default:
                 AbstractC2508 abstractC2509 = this.f3626.f3631;
-                this.f3629.getClass();
+                
                 break;
         }
     }

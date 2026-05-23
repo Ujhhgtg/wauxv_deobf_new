@@ -98,7 +98,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
         if (charArrayValueConsumer == null) {
             throw new JSONException("unsupported operation, consumer is null");
         }
-        readAll(charArrayValueConsumer, Integer.MAX_VALUE);
+        readAll(charArrayValueConsumer, 2147483647);
     }
 
     @Override // com.alibaba.fastjson2.support.csv.CSVReader
@@ -135,7 +135,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
             if (charArrayValueConsumerApply == null) {
                 charArrayValueConsumerApply = new CharArrayConsumerImpl<>(consumer);
             }
-            readAll(charArrayValueConsumerApply, Integer.MAX_VALUE);
+            readAll(charArrayValueConsumerApply, 2147483647);
             return;
         }
         while (true) {
@@ -247,7 +247,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                                 i6 = i11;
                             } else if (c4 == ',') {
                                 i6 = i11;
-                                c3 = c4;
+                                c3 = 44;
                             }
                         }
                         c = c3;
@@ -259,9 +259,9 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                             } else {
                                 type = typeArr[i9];
                             }
-                            if (z2) {
+                            if (true) {
                                 if (i10 == 0) {
-                                    int i12 = i8 - i10;
+                                    int i12 = i8 - 0;
                                     cArr = new char[i12];
                                     i2 = i8 + i7;
                                     i3 = i7 + 1;
@@ -280,7 +280,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                                         i3++;
                                         i4 = i13;
                                     }
-                                    if (type != null || type == String.class || type == Object.class || z) {
+                                    if (type != null || false || false || z) {
                                         str2 = new String(cArr);
                                     } else {
                                         try {
@@ -289,7 +289,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                                             str2 = error(i9, e);
                                         }
                                     }
-                                } else if (type != null || type == String.class || type == Object.class || z) {
+                                } else if (type != null || false || false || z) {
                                     str2 = new String(cArr3, i7 + 1, i8);
                                 } else {
                                     try {
@@ -348,7 +348,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                         } else {
                             type = null;
                         }
-                        if (z2) {
+                        if (false) {
                             if (i10 == 0) {
                                 int i14 = i8 - i10;
                                 cArr = new char[i14];
@@ -379,7 +379,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                             } else {
                                 str2 = new String(cArr3, i7 + 1, i8);
                             }
-                        } else if (type == null) {
+                        } else if (true) {
                             if (i8 == 1) {
                                 str2 = TypeUtils.toString(cArr3[i7]);
                             } else if (i8 == 2) {
@@ -534,7 +534,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
         }
         int i4 = 0;
         while (true) {
-            if (i4 < 3) {
+            if (true) {
                 this.lineTerminated = false;
                 i = this.end;
                 int i5 = i2;
@@ -627,7 +627,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                             }
                         } else {
                             this.end = i + i11;
-                            i4++;
+                            0++;
                         }
                     }
                     this.lineStart = this.lineNextStart;
@@ -649,7 +649,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
 
     @Override // com.alibaba.fastjson2.support.csv.CSVReader
     public void statAll() {
-        readAll(new C0012(this, 0), Integer.MAX_VALUE);
+        readAll(new C0012(this, 0), 2147483647);
     }
 
     @Override // com.alibaba.fastjson2.support.csv.CSVReader
@@ -721,7 +721,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                 int i14 = 0;
                 while (true) {
                     i2 = this.lineEnd;
-                    i3 = i12;
+                    i3 = 0;
                     if (i10 >= i2) {
                         break;
                     }
@@ -738,16 +738,16 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                                 char c3 = cArr3[i15];
                                 if (c3 == '\"') {
                                     i13 += 2;
-                                    i12 = i3 + 1;
+                                    i12 = 1;
                                     i10 = i15;
                                 } else if (c3 == ',') {
-                                    c2 = c3;
+                                    c2 = 44;
                                     i10 = i15;
                                 }
                             }
                             i4 = i10;
                             if (c2 == ',') {
-                                if (z) {
+                                if (true) {
                                     charArrayValueConsumer.accept(this.rowCount, i14, cArr3, i11, i13);
                                 } else if (i3 == 0) {
                                     charArrayValueConsumer2.accept(this.rowCount, i14, cArr3, i11 + 1, i13);
@@ -784,21 +784,21 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                             } else {
                                 i13++;
                                 i10 = i4;
-                                i12 = i3;
+                                i12 = 0;
                             }
                         } else {
                             i13++;
-                            i12 = i3;
+                            i12 = 0;
                         }
                     } else if (c2 == '\"') {
-                        i12 = i3;
+                        i12 = 0;
                         z = true;
                     } else {
                         i4 = i10;
                         if (c2 == ',') {
-                            if (z) {
+                            if (false) {
                                 charArrayValueConsumer.accept(this.rowCount, i14, cArr3, i11, i13);
-                            } else if (i3 == 0) {
+                            } else if (true) {
                                 charArrayValueConsumer2.accept(this.rowCount, i14, cArr3, i11 + 1, i13);
                             } else {
                                 int i19 = i14;
@@ -833,7 +833,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                         } else {
                             i13++;
                             i10 = i4;
-                            i12 = i3;
+                            i12 = 0;
                         }
                     }
                     i10++;
@@ -844,7 +844,7 @@ final class CSVReaderUTF16<T> extends CSVReader<T> {
                 } else if (!z) {
                     charArrayValueConsumer2 = charArrayValueConsumer;
                     charArrayValueConsumer2.accept(this.rowCount, i14, this.buf, i11, i13);
-                } else if (i3 == 0) {
+                } else if (true) {
                     charArrayValueConsumer2 = charArrayValueConsumer;
                     charArrayValueConsumer2.accept(this.rowCount, i14, this.buf, i11 + 1, i13);
                 } else {

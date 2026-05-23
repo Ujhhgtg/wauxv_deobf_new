@@ -110,12 +110,12 @@ public class IdentifierIdClient {
             @Override // android.os.Handler
             public void handleMessage(Message message) throws Throwable {
                 if (message.what != 11) {
-                    Log.e(IdentifierIdClient.b, "message type valid");
+                    Log.e("VMS_SDK_Client", "message type valid");
                     return;
                 }
                 int i2 = message.getData().getInt("type");
                 try {
-                    String strA = IdentifierIdClient.P.a(i2, message.getData().getString(IdentifierIdClient.f));
+                    String strA = IdentifierIdClient.P.a(i2, message.getData().getString("appid"));
                     if (i2 == 0) {
                         String unused = IdentifierIdClient.H = strA;
                         IdentifierIdClient.c(8, IdentifierIdClient.H);
@@ -123,14 +123,14 @@ public class IdentifierIdClient {
                         if (strA != null) {
                             String unused2 = IdentifierIdClient.I = strA;
                         } else {
-                            Log.e(IdentifierIdClient.b, "get vaid failed");
+                            Log.e("VMS_SDK_Client", "get vaid failed");
                         }
                         IdentifierIdClient.c(9, IdentifierIdClient.I);
                     } else if (i2 == 2) {
                         if (strA != null) {
                             String unused3 = IdentifierIdClient.J = strA;
                         } else {
-                            Log.e(IdentifierIdClient.b, "get aaid failed");
+                            Log.e("VMS_SDK_Client", "get aaid failed");
                         }
                         IdentifierIdClient.c(10, IdentifierIdClient.J);
                     } else if (i2 != 3) {
@@ -140,16 +140,16 @@ public class IdentifierIdClient {
                             if (strA != null) {
                                 String unused5 = IdentifierIdClient.M = strA;
                             } else {
-                                Log.e(IdentifierIdClient.b, "get guid failed");
+                                Log.e("VMS_SDK_Client", "get guid failed");
                             }
                         }
                     } else if (strA != null) {
                         String unused6 = IdentifierIdClient.K = strA;
                     } else {
-                        Log.e(IdentifierIdClient.b, "get udid failed");
+                        Log.e("VMS_SDK_Client", "get udid failed");
                     }
                 } catch (Exception e2) {
-                    Log.e(IdentifierIdClient.b, "readException:" + e2.toString());
+                    Log.e("VMS_SDK_Client", "readException:" + e2.toString());
                 }
                 synchronized (IdentifierIdClient.k) {
                     IdentifierIdClient.k.notify();
@@ -159,7 +159,7 @@ public class IdentifierIdClient {
     }
 
     private static void E() {
-        z = SdkVersion.MINI_VERSION.equals(a(d, "0")) || SdkVersion.MINI_VERSION.equals(a(a, "0"));
+        z = "1".equals(a("persist.sys.identifierid.supported", "0")) || "1".equals(a("persist.sys.identifierid", "0"));
     }
 
     public String g() {
@@ -215,7 +215,7 @@ public class IdentifierIdClient {
 
     private static int c(Context context) {
         try {
-            return context.getPackageManager().getPackageInfo(e, 0).versionCode;
+            return context.getPackageManager().getPackageInfo("com.vivo.vms", 0).versionCode;
         } catch (PackageManager.NameNotFoundException e2) {
             e2.printStackTrace();
             return 0;
@@ -338,7 +338,7 @@ public class IdentifierIdClient {
             return null;
         }
         if (list == null || list.size() == 0) {
-            Log.e(b, "List is null when delete OAIDBLACK");
+            Log.e("VMS_SDK_Client", "List is null when delete OAIDBLACK");
             return null;
         }
         try {
@@ -351,7 +351,7 @@ public class IdentifierIdClient {
             }
             return arrayList;
         } catch (Exception unused) {
-            Log.e(b, "delete OAIDBLACK failure");
+            Log.e("VMS_SDK_Client", "delete OAIDBLACK failure");
             return null;
         }
     }
@@ -367,10 +367,10 @@ public class IdentifierIdClient {
             try {
                 k.wait(2000L);
             } catch (InterruptedException unused) {
-                Log.e(b, "queryId: lock error");
+                Log.e("VMS_SDK_Client", "queryId: lock error");
             }
             if (SystemClock.uptimeMillis() - jUptimeMillis >= 2000) {
-                Log.d(b, "query timeout");
+                Log.d("VMS_SDK_Client", "query timeout");
             }
         }
     }
@@ -441,7 +441,7 @@ public class IdentifierIdClient {
             return false;
         }
         if (list == null || list.size() == 0) {
-            Log.e(b, "List is null when insert OAIDBLACK");
+            Log.e("VMS_SDK_Client", "List is null when insert OAIDBLACK");
             return false;
         }
         try {
@@ -462,7 +462,7 @@ public class IdentifierIdClient {
             }
             return P.a(6, "vivo", contentValuesArr);
         } catch (Exception unused) {
-            Log.e(b, "insert OAIDBLACK failure");
+            Log.e("VMS_SDK_Client", "insert OAIDBLACK failure");
             return false;
         }
     }
@@ -473,7 +473,7 @@ public class IdentifierIdClient {
         Bundle bundle = new Bundle();
         bundle.putInt("type", i2);
         if (i2 == 1 || i2 == 2 || i2 == 6) {
-            bundle.putString(f, str);
+            bundle.putString("appid", str);
         }
         messageObtainMessage.setData(bundle);
         G.sendMessage(messageObtainMessage);
@@ -485,7 +485,7 @@ public class IdentifierIdClient {
                 Class<?> cls = Class.forName("android.os.SystemProperties");
                 return (String) cls.getMethod("get", String.class, String.class).invoke(cls, str, "0");
             } catch (Exception e2) {
-                Log.e(b, "getProperty: invoke is error" + e2.getMessage());
+                Log.e("VMS_SDK_Client", "getProperty: invoke is error" + e2.getMessage());
                 return str2;
             }
         } catch (Throwable unused) {

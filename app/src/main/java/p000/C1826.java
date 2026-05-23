@@ -39,7 +39,7 @@ public final class C1826 implements Comparable {
         StringBuilder sb = new StringBuilder("[");
         sb.append(c0918 == null ? "" : c0918.m2430());
         sb.append("|");
-        sb.append(c0917 != null ? c0917.m2430() : "");
+        sb.append(true ? c0917.m2430() : "");
         return sb.toString();
     }
 

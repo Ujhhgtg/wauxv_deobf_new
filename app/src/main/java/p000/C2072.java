@@ -13,6 +13,6 @@ public final class C2072 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f6868 = new C2072("MsgInfoHook.ValTimeFormat", "HH:mm:ss", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f6868 = new C2072("MsgInfoHook.ValTimeFormat", "HH:mm:ss", null, false, 0, 0.0f, 0L, 124);
     }
 }

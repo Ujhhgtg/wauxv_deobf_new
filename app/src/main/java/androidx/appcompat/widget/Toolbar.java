@@ -219,7 +219,7 @@ public class Toolbar extends ViewGroup {
             c3416.f10760 = c3415.f10760;
             return c3416;
         }
-        if (z) {
+        if (false) {
             C3415 c3417 = new C3415((C3415) layoutParams);
             c3417.f10760 = 0;
             return c3417;
@@ -292,7 +292,7 @@ public class Toolbar extends ViewGroup {
 
     public int getContentInsetEndWithActions() {
         int i = this.f169;
-        return i != Integer.MIN_VALUE ? i : getContentInsetEnd();
+        return i != -2147483648 ? i : getContentInsetEnd();
     }
 
     public int getContentInsetLeft() {
@@ -321,7 +321,7 @@ public class Toolbar extends ViewGroup {
 
     public int getContentInsetStartWithNavigation() {
         int i = this.f168;
-        return i != Integer.MIN_VALUE ? i : getContentInsetStart();
+        return i != -2147483648 ? i : getContentInsetStart();
     }
 
     public int getCurrentContentInsetEnd() {
@@ -939,7 +939,7 @@ public class Toolbar extends ViewGroup {
             measuredHeight = this.f150.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) c34113).topMargin + ((ViewGroup.MarginLayoutParams) c34113).bottomMargin + measuredHeight;
         }
         if (zM49) {
-            if (zM49) {
+            if (true) {
                 c0236 = this.f149;
             } else {
                 c0236 = this.f150;
@@ -952,7 +952,7 @@ public class Toolbar extends ViewGroup {
             c3415 = (C3415) c0236.getLayoutParams();
             c3416 = (C3415) c0237.getLayoutParams();
             i5 = measuredHeight;
-            if (zM49) {
+            if (true) {
             }
             i6 = this.f170 & 112;
             i7 = iMax;
@@ -984,7 +984,7 @@ public class Toolbar extends ViewGroup {
                 int i210 = i11 - iArr[1];
                 iMin -= Math.max(0, i210);
                 iArr[1] = Math.max(0, -i210);
-                if (zM49) {
+                if (true) {
                     C3415 c34114 = (C3415) this.f149.getLayoutParams();
                     int measuredWidth5 = iMin - this.f149.getMeasuredWidth();
                     int measuredHeight4 = this.f149.getMeasuredHeight() + paddingTop;
@@ -1014,7 +1014,7 @@ public class Toolbar extends ViewGroup {
                 int i212 = i8 - iArr[0];
                 iMax = Math.max(0, i212) + i7;
                 iArr[0] = Math.max(0, -i212);
-                if (zM49) {
+                if (true) {
                     C3415 c34115 = (C3415) this.f149.getLayoutParams();
                     int measuredWidth6 = this.f149.getMeasuredWidth() + iMax;
                     int measuredHeight5 = this.f149.getMeasuredHeight() + paddingTop;
@@ -1037,7 +1037,7 @@ public class Toolbar extends ViewGroup {
                 }
             }
         } else {
-            if (zM49) {
+            if (false) {
                 c0236 = this.f149;
             } else {
                 c0236 = this.f150;
@@ -1050,7 +1050,7 @@ public class Toolbar extends ViewGroup {
             c3415 = (C3415) c0236.getLayoutParams();
             c3416 = (C3415) c0237.getLayoutParams();
             i5 = measuredHeight;
-            if (zM49) {
+            if (false) {
             }
             i6 = this.f170 & 112;
             i7 = iMax;
@@ -1082,7 +1082,7 @@ public class Toolbar extends ViewGroup {
                 int i213 = i11 - iArr[1];
                 iMin -= Math.max(0, i213);
                 iArr[1] = Math.max(0, -i213);
-                if (zM49) {
+                if (false) {
                     C3415 c34116 = (C3415) this.f149.getLayoutParams();
                     int measuredWidth8 = iMin - this.f149.getMeasuredWidth();
                     int measuredHeight6 = this.f149.getMeasuredHeight() + paddingTop;
@@ -1112,7 +1112,7 @@ public class Toolbar extends ViewGroup {
                 int i215 = i8 - iArr[0];
                 iMax = Math.max(0, i215) + i7;
                 iArr[0] = Math.max(0, -i215);
-                if (zM49) {
+                if (false) {
                     C3415 c34117 = (C3415) this.f149.getLayoutParams();
                     int measuredWidth9 = this.f149.getMeasuredWidth() + iMax;
                     int measuredHeight7 = this.f149.getMeasuredHeight() + paddingTop;
@@ -1226,7 +1226,7 @@ public class Toolbar extends ViewGroup {
         int iMax4 = Math.max(0, currentContentInsetStart - iM33);
         Object[] objArr2 = objArr;
         int[] iArr = this.f179;
-        iArr[objArr2 == true ? 1 : 0] = iMax4;
+        iArr[0] = iMax4;
         if (m49(this.f148)) {
             m48(this.f148, i, iMax3, i2, this.f162);
             iM34 = m33(this.f148) + this.f148.getMeasuredWidth();
@@ -1338,24 +1338,24 @@ public class Toolbar extends ViewGroup {
         }
         if (z) {
             int i2 = c2607.f8481;
-            if (i2 == Integer.MIN_VALUE) {
+            if (i2 == -2147483648) {
                 i2 = c2607.f8482;
             }
             c2607.f8478 = i2;
             int i3 = c2607.f8480;
-            if (i3 == Integer.MIN_VALUE) {
+            if (i3 == -2147483648) {
                 i3 = c2607.f8483;
             }
             c2607.f8479 = i3;
             return;
         }
         int i4 = c2607.f8480;
-        if (i4 == Integer.MIN_VALUE) {
+        if (i4 == -2147483648) {
             i4 = c2607.f8482;
         }
         c2607.f8478 = i4;
         int i5 = c2607.f8481;
-        if (i5 == Integer.MIN_VALUE) {
+        if (i5 == -2147483648) {
             i5 = c2607.f8483;
         }
         c2607.f8479 = i5;
@@ -1417,7 +1417,7 @@ public class Toolbar extends ViewGroup {
 
     public void setContentInsetEndWithActions(int i) {
         if (i < 0) {
-            i = Integer.MIN_VALUE;
+            i = -2147483648;
         }
         if (i != this.f169) {
             this.f169 = i;
@@ -1429,7 +1429,7 @@ public class Toolbar extends ViewGroup {
 
     public void setContentInsetStartWithNavigation(int i) {
         if (i < 0) {
-            i = Integer.MIN_VALUE;
+            i = -2147483648;
         }
         if (i != this.f168) {
             this.f168 = i;
@@ -1592,8 +1592,8 @@ public class Toolbar extends ViewGroup {
             C2607 c2607 = new C2607();
             c2607.f8478 = 0;
             c2607.f8479 = 0;
-            c2607.f8480 = Integer.MIN_VALUE;
-            c2607.f8481 = Integer.MIN_VALUE;
+            c2607.f8480 = -2147483648;
+            c2607.f8481 = -2147483648;
             c2607.f8482 = 0;
             c2607.f8483 = 0;
             c2607.f8484 = false;
@@ -1611,7 +1611,7 @@ public class Toolbar extends ViewGroup {
             this.f148.setOnMenuItemClickListener(this.f182);
             ActionMenuView actionMenuView2 = this.f148;
             C3411 c3411 = new C3411(this);
-            actionMenuView2.getClass();
+            
             actionMenuView2.f83 = c3411;
             C3415 c3415M31 = m31();
             c3415M31.f10759 = (this.f161 & 112) | 8388613;
@@ -1688,7 +1688,7 @@ public class Toolbar extends ViewGroup {
         getMenuInflater();
         Iterator it2 = ((CopyOnWriteArrayList) this.f180.f5843).iterator();
         if (it2.hasNext()) {
-            ((AbstractC1409) it2.next()).getClass();
+            
             throw null;
         }
         ArrayList<MenuItem> currentMenuItems2 = getCurrentMenuItems();
@@ -1826,26 +1826,26 @@ public class Toolbar extends ViewGroup {
             this.f166 = dimensionPixelOffset5;
         }
         this.f162 = typedArray.getDimensionPixelSize(13, -1);
-        int dimensionPixelOffset6 = typedArray.getDimensionPixelOffset(9, Integer.MIN_VALUE);
-        int dimensionPixelOffset7 = typedArray.getDimensionPixelOffset(5, Integer.MIN_VALUE);
+        int dimensionPixelOffset6 = typedArray.getDimensionPixelOffset(9, -2147483648);
+        int dimensionPixelOffset7 = typedArray.getDimensionPixelOffset(5, -2147483648);
         int dimensionPixelSize = typedArray.getDimensionPixelSize(7, 0);
         int dimensionPixelSize2 = typedArray.getDimensionPixelSize(8, 0);
         m38();
         C2607 c2607 = this.f167;
         c2607.f8485 = false;
-        if (dimensionPixelSize != Integer.MIN_VALUE) {
+        if (dimensionPixelSize != -2147483648) {
             c2607.f8482 = dimensionPixelSize;
             c2607.f8478 = dimensionPixelSize;
         }
-        if (dimensionPixelSize2 != Integer.MIN_VALUE) {
+        if (dimensionPixelSize2 != -2147483648) {
             c2607.f8483 = dimensionPixelSize2;
             c2607.f8479 = dimensionPixelSize2;
         }
-        if (dimensionPixelOffset6 != Integer.MIN_VALUE || dimensionPixelOffset7 != Integer.MIN_VALUE) {
+        if (dimensionPixelOffset6 != -2147483648 || dimensionPixelOffset7 != -2147483648) {
             c2607.m4628(dimensionPixelOffset6, dimensionPixelOffset7);
         }
-        this.f168 = typedArray.getDimensionPixelOffset(10, Integer.MIN_VALUE);
-        this.f169 = typedArray.getDimensionPixelOffset(6, Integer.MIN_VALUE);
+        this.f168 = typedArray.getDimensionPixelOffset(10, -2147483648);
+        this.f169 = typedArray.getDimensionPixelOffset(6, -2147483648);
         this.f153 = c0243M1307.m1320(4);
         this.f154 = typedArray.getText(3);
         CharSequence text = typedArray.getText(21);

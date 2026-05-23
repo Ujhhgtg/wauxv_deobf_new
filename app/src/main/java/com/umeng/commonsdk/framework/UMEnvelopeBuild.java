@@ -25,25 +25,25 @@ public class UMEnvelopeBuild {
 
     private static JSONObject add2CacheTable(Context context, JSONObject jSONObject, JSONObject jSONObject2, String str, String str2, String str3) {
         if (jSONObject == null || jSONObject2 == null) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]构建信封传入 header 或 body 字段为空，直接返回");
+            UMRTLog.e("MobclickRT", "--->>> [有状态]构建信封传入 header 或 body 字段为空，直接返回");
             return null;
         }
         l lVarA = l.a(context);
         long jCurrentTimeMillis = System.currentTimeMillis();
         UUID uuidRandomUUID = UUID.randomUUID();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(bz.e, str2);
-        contentValues.put(bz.f, lVarA.c(jSONObject.toString()));
-        contentValues.put(bz.g, lVarA.c(jSONObject2.toString()));
-        contentValues.put(bz.h, String.valueOf(jCurrentTimeMillis));
-        contentValues.put(bz.i, uuidRandomUUID.toString());
-        contentValues.put(bz.j, str);
-        contentValues.put(bz.k, str3);
-        bx.a(context).a(bz.c, contentValues);
-        if (bv.aC.equalsIgnoreCase(str2)) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]inner业务，返回空 JSONObject。");
-        } else if (bv.aB.equalsIgnoreCase(str2)) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]分享业务 返回body。");
+        contentValues.put("_tp", str2);
+        contentValues.put("_hd", lVarA.c(jSONObject.toString()));
+        contentValues.put("_bd", lVarA.c(jSONObject2.toString()));
+        contentValues.put("_ts", String.valueOf(jCurrentTimeMillis));
+        contentValues.put("_uuid", uuidRandomUUID.toString());
+        contentValues.put("_re1", str);
+        contentValues.put("_re2", str3);
+        bx.a(context).a("stf", contentValues);
+        if ("i".equalsIgnoreCase(str2)) {
+            UMRTLog.e("MobclickRT", "--->>> [有状态]inner业务，返回空 JSONObject。");
+        } else if ("s".equalsIgnoreCase(str2)) {
+            UMRTLog.e("MobclickRT", "--->>> [有状态]分享业务 返回body。");
             JSONObject jSONObject3 = new JSONObject();
             try {
                 jSONObject3.put("header", new JSONObject());
@@ -51,16 +51,16 @@ public class UMEnvelopeBuild {
                 return jSONObject3;
             } catch (JSONException unused) {
             }
-        } else if (!bv.ax.equalsIgnoreCase(str2)) {
+        } else if (!"p".equalsIgnoreCase(str2)) {
             try {
-                if (bv.aI.equalsIgnoreCase(str2)) {
-                    UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]统计业务 半开报文，返回body。");
+                if ("t".equalsIgnoreCase(str2)) {
+                    UMRTLog.e("MobclickRT", "--->>> [有状态]统计业务 半开报文，返回body。");
                     JSONObject jSONObject4 = new JSONObject();
                     jSONObject4.put(b.a("header"), new JSONObject());
                     jSONObject4.put(b.a("analytics"), jSONObject2.getJSONObject("analytics"));
                     return jSONObject4;
                 }
-                UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]统计业务 闭合报文，返回body。");
+                UMRTLog.e("MobclickRT", "--->>> [有状态]统计业务 闭合报文，返回body。");
                 JSONObject jSONObject5 = new JSONObject();
                 jSONObject5.put(b.a("header"), new JSONObject());
                 jSONObject5.put(b.a("analytics"), jSONObject2.getJSONObject("analytics"));
@@ -75,9 +75,9 @@ public class UMEnvelopeBuild {
     public static JSONObject buildEnvelopeWithExtHeader(Context context, JSONObject jSONObject, JSONObject jSONObject2) {
         String str;
         if (jSONObject.has("st")) {
-            str = bv.aI;
+            str = "t";
         } else {
-            str = jSONObject2.has(bv.au) ? bv.aC : bv.av;
+            str = jSONObject2.has("inner") ? "i" : "a";
         }
         return buildEnvelopeWithExtHeader(context, jSONObject, jSONObject2, UMServerURL.PATH_ANALYTICS, str, "9.9.1");
     }
@@ -172,7 +172,7 @@ public class UMEnvelopeBuild {
                         z = true;
                     }
                     z = false;
-                } else if (UMFrUtils.hasEnvelopeFile(applicationContext, uMBusinessType)) {
+                } else if (UMFrUtils.hasEnvelopeFile(applicationContext, UMLogDataProtocol.UMBusinessType.U_INTERNAL)) {
                     z = false;
                 } else {
                     z = true;
@@ -205,7 +205,7 @@ public class UMEnvelopeBuild {
     }
 
     public static JSONObject buildEnvelopeWithExtHeader(Context context, JSONObject jSONObject, JSONObject jSONObject2, String str, String str2, String str3) {
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]业务发起构建普通有状态信封请求。");
+        UMRTLog.e("MobclickRT", "--->>> [有状态]业务发起构建普通有状态信封请求。");
         if (TextUtils.isEmpty(str)) {
             try {
                 JSONObject jSONObject3 = new JSONObject();
@@ -233,18 +233,18 @@ public class UMEnvelopeBuild {
             }
         }
         if (UMConfigure.needSendZcfgEnv(context)) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]零号报文应答数据 未获取到，写入二级缓存");
+            UMRTLog.e("MobclickRT", "--->>> [有状态]零号报文应答数据 未获取到，写入二级缓存");
             return add2CacheTable(context, jSONObject, jSONObject2, str, str2, str3);
         }
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]零号报文应答数据 已获取到，判断二级缓存是否为空");
+        UMRTLog.e("MobclickRT", "--->>> [有状态]零号报文应答数据 已获取到，判断二级缓存是否为空");
         if (bx.a(context).c()) {
-            UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]二级缓存为空，直接打信封");
+            UMRTLog.e("MobclickRT", "--->>> [有状态]二级缓存为空，直接打信封");
             return new b().a(context.getApplicationContext(), jSONObject, jSONObject2, str, str2, str3);
         }
-        UMRTLog.e(UMRTLog.RTLOG_TAG, "--->>> [有状态]二级缓存不为空，写入二级缓存");
+        UMRTLog.e("MobclickRT", "--->>> [有状态]二级缓存不为空，写入二级缓存");
         JSONObject jSONObjectAdd2CacheTable = add2CacheTable(context, jSONObject, jSONObject2, str, str2, str3);
-        if (!UMWorkDispatch.eventHasExist(com.umeng.commonsdk.internal.a.t)) {
-            UMWorkDispatch.sendEvent(context, com.umeng.commonsdk.internal.a.t, com.umeng.commonsdk.internal.b.a(context).a(), null);
+        if (!UMWorkDispatch.eventHasExist(32785)) {
+            UMWorkDispatch.sendEvent(context, 32785, com.umeng.commonsdk.internal.b.a(context).a(), null);
         }
         return jSONObjectAdd2CacheTable;
     }

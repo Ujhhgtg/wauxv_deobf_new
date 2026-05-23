@@ -76,7 +76,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
         int i2;
         InterfaceC2654 interfaceC2654 = descriptor;
         InterfaceC0766 interfaceC0766Mo2512 = interfaceC0974.mo2512(interfaceC2654);
-        interfaceC0766Mo2512.getClass();
+        
         String str = null;
         String str2 = null;
         Integer num3 = null;
@@ -623,7 +623,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str5 = str5;
                     str = str;
                     num14 = num14;
-                    i4 |= bc.e;
+                    i4 |= 256;
                     num19 = num19;
                     num4 = num22;
                     str2 = str2;
@@ -816,7 +816,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.FCONST_1 /* 12 */:
+                case 12 /* 12 */:
                     str9 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 12, C2839.f9108, str9);
                     str11 = str11;
                     c1478 = c1478;
@@ -877,7 +877,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.DCONST_0 /* 14 */:
+                case 14 /* 14 */:
                     Integer num128 = num3;
                     String str56 = str11;
                     str6 = str6;
@@ -896,7 +896,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     num16 = num16;
                     str11 = str56;
                     c1083 = (C1083) interfaceC0766Mo2512.mo2239(interfaceC2654, 14, C1081.f3899, c1083);
-                    i4 |= Http2.INITIAL_MAX_FRAME_SIZE;
+                    i4 |= 16384;
                     c2615 = c2615;
                     str4 = str4;
                     num3 = num128;
@@ -1003,7 +1003,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     Integer num131 = num3;
                     String str59 = str11;
                     str6 = str6;
@@ -1037,7 +1037,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     Integer num132 = num3;
                     String str60 = str11;
                     str6 = str6;
@@ -1115,7 +1115,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.ILOAD /* 21 */:
+                case 21 /* 21 */:
                     Integer num135 = num3;
                     String str63 = str11;
                     str6 = str6;
@@ -1134,7 +1134,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.LLOAD /* 22 */:
+                case 22 /* 22 */:
                     str11 = str11;
                     num21 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 22, C1665.f5622, num21);
                     i4 |= 4194304;
@@ -1148,7 +1148,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.FLOAD /* 23 */:
+                case 23 /* 23 */:
                     c1478 = c1478;
                     str11 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 23, C2839.f9108, str11);
                     i4 |= 8388608;
@@ -1162,10 +1162,10 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.DLOAD /* 24 */:
+                case 24 /* 24 */:
                     num4 = (Integer) interfaceC0766Mo2512.mo2239(interfaceC2654, 24, C1665.f5622, num22);
                     c1478 = c1478;
-                    i4 |= Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+                    i4 |= 16777216;
                     str2 = str2;
                     str = str;
                     str6 = str6;
@@ -1173,7 +1173,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     str6 = str6;
                     str11 = str11;
                     break;
-                case Opcodes.ALOAD /* 25 */:
+                case 25 /* 25 */:
                     c1478 = (C1478) interfaceC0766Mo2512.mo2239(interfaceC2654, 25, C1476.f5250, c1478);
                     i4 |= 33554432;
                     num4 = num22;
@@ -1250,7 +1250,7 @@ public final /* synthetic */ class C1990 implements InterfaceC1443 {
                     break;
                 case 31:
                     str5 = (String) interfaceC0766Mo2512.mo2239(interfaceC2654, 31, C2839.f9108, str5);
-                    i = Integer.MIN_VALUE;
+                    i = -2147483648;
                     i4 |= i;
                     c2615 = c2615;
                     str11 = str11;

@@ -25,7 +25,7 @@ public final class C3431 extends AnimatorListenerAdapter {
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationEnd(Animator animator) {
-        switch (this.f10806) {
+        switch (0) {
             case 0:
                 ((C0264) this.f10807).remove(animator);
                 ((AbstractC3436) this.f10808).f10833.remove(animator);
@@ -40,7 +40,7 @@ public final class C3431 extends AnimatorListenerAdapter {
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public void onAnimationStart(Animator animator) {
-        switch (this.f10806) {
+        switch (0) {
             case 0:
                 ((AbstractC3436) this.f10808).f10833.add(animator);
                 break;

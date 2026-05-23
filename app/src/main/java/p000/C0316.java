@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
 import com.google.android.material.checkbox.MaterialCheckBox;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -23,7 +22,6 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤞᤝᲈᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -53,31 +51,31 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
         boolean zBooleanValue = true;
         char c = 1;
         final int i6 = 0;
-        C3497 c3497 = C3497.f10997;
+        Unit unit = Unit.INSTANCE;
         switch (i2) {
             case 0:
-                ((C1020) obj).f3733 = new C0316(i3);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C0316(2);
+                return unit;
             case 1:
-                ((C1020) obj).f3733 = new C0316(4);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C0316(4);
+                return unit;
             case 2:
                 C1333 c1333 = (C1333) obj;
                 C1981 c1981M4739 = AbstractC2784.m4739(c1333);
                 String[] strArr = AbstractC1574.f5469;
                 c1981M4739.m3825("com.tencent.mm.ui.chatting.gallery.ImageGalleryUI");
-                if (AbstractC3471.m5079(EnumC3677.f11536) || AbstractC3471.m5080(EnumC3674.f11499)) {
+                if (AbstractC3471.m5079(WeChatVersions.f11536) || AbstractC3471.m5080(WeChatVersionsPlay.f11499)) {
                     c1981M4739.m3827("setHdImageActionDownloadable");
                 } else {
                     c1981M4739.m3827("setImageHdImgBtnVisibility");
                 }
                 c1333.f4794 = c1981M4739;
-                return c3497;
+                return unit;
             case 3:
-                int i7 = AbstractC1745.f5844;
+                int i7 = 0;
                 C1299 c1299M4738 = AbstractC2784.m4738((C1563) obj);
-                c1299M4738.f4725 = AbstractC2519.m4527(Button.class);
-                Iterator it = c1299M4738.m3014().iterator();
+                c1299M4738.fieldType = AbstractC2519.classToKClass(Button.class);
+                Iterator it = c1299M4738.resolve().iterator();
                 while (it.hasNext()) {
                     Button button = (Button) ((C1315) it.next()).m3024();
                     if (button != null && button.getVisibility() == 0) {
@@ -94,7 +92,7 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                         }
                     }
                 }
-                return c3497;
+                return unit;
             case 4:
                 C1333 c1334 = (C1333) obj;
                 C1981 c1981M47310 = AbstractC2784.m4739(c1334);
@@ -102,36 +100,36 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                 c1981M47310.m3825("com.tencent.mm.ui.chatting.gallery.ImageGalleryUI");
                 c1981M47310.m3827("checkNeedShowOriginVideoBtn");
                 c1334.f4794 = c1981M47310;
-                return c3497;
+                return unit;
             case 5:
-                ((C1020) obj).f3733 = new C0316(i4);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C0316(6);
+                return unit;
             case 6:
                 ((C1333) obj).m3052(new C0316(7));
-                return c3497;
+                return unit;
             case 7:
                 C1981 c1981 = (C1981) obj;
-                Class<ImageView> clsM2183 = AbstractC0743.m2183(AbstractC2519.m4527(ImageView.class));
+                Class<ImageView> clsM2183 = AbstractC0743.m2183(AbstractC2519.classToKClass(ImageView.class));
                 Class cls2 = clsM2183 != null ? clsM2183 : ImageView.class;
-                Class<String> clsM2184 = AbstractC0743.m2183(AbstractC2519.m4527(String.class));
+                Class<String> clsM2184 = AbstractC0743.m2183(AbstractC2519.classToKClass(String.class));
                 Class cls3 = clsM2184 != null ? clsM2184 : String.class;
-                Class<Float> clsM2185 = AbstractC0743.m2183(AbstractC2519.m4527(Float.class));
+                Class<Float> clsM2185 = AbstractC0743.m2183(AbstractC2519.classToKClass(Float.class));
                 Class cls4 = clsM2185 != null ? clsM2185 : Float.class;
-                Class<Boolean> clsM2186 = AbstractC0743.m2183(AbstractC2519.m4527(cls));
-                c1981.m3823(cls2, cls3, cls4, clsM2186 != null ? clsM2186 : Boolean.class);
+                Class<Boolean> clsM2186 = AbstractC0743.m2183(AbstractC2519.classToKClass(Boolean.class));
+                c1981.paramTypes(cls2, cls3, cls4, clsM2186 != null ? clsM2186 : Boolean.class);
                 c1981.m3827("MicroMsg.AvatarDrawable");
-                return c3497;
+                return unit;
             case 8:
-                ((C1020) obj).f3732 = new C0316(9);
-                return c3497;
+                ((C1020) obj).declaringClassMatcher = new C0316(9);
+                return unit;
             case 9:
                 C1332 c1332 = (C1332) obj;
                 c1332.m3051("com.tencent.mm.modelavatar");
                 c1332.m3050(new C0316(10));
-                return c3497;
+                return unit;
             case 10:
                 C0705 c0705 = (C0705) obj;
-                c0705.getClass();
+                
                 C1981 c1982 = new C1981(4);
                 String[] strArr4 = AbstractC1574.f5469;
                 c1982.m3826("onAccountInitialized");
@@ -145,27 +143,27 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                 }
                 c0705.f2687 = c1984;
                 c1984.m3848(c1982);
-                C1981 c1983 = new C1981(i);
+                C1981 c1983 = new C1981(4);
                 c1983.m3826("onAccountReleased");
                 c1983.m3827("//avatar");
                 C1984 c1985 = c0705.f2687;
                 if (c1985 == null) {
-                    c1985 = new C1984(i);
+                    c1985 = new C1984(4);
                 }
                 c0705.f2687 = c1985;
                 c1985.m3848(c1983);
-                return c3497;
+                return unit;
             case 11:
-                ((C1020) obj).f3732 = new C0316(12);
-                return c3497;
-            case Opcodes.FCONST_1 /* 12 */:
+                ((C1020) obj).declaringClassMatcher = new C0316(12);
+                return unit;
+            case 12 /* 12 */:
                 C1332 c1335 = (C1332) obj;
                 String[] strArr5 = AbstractC1574.f5469;
                 c1335.m3051("com.tencent.mm.modelavatar");
                 C0705 c0706 = new C0705(4);
                 c0706.m2127("MicroMsg.AvatarStorage", "Failed to save avatar: %s");
                 c1335.f4791 = c0706;
-                return c3497;
+                return unit;
             case 13:
                 String[] strArr6 = AbstractC1574.f5469;
                 View viewM4676 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_bottom_tab_custom, null, false);
@@ -212,14 +210,14 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                                                                 materialCheckBox2.setChecked(C0459.f2034.m2536());
                                                                 materialCheckBox.setChecked(C0458.f2033.m2536());
                                                                 C2007 c2007 = new C2007();
-                                                                C0463.f2038.getClass();
+                                                                
                                                                 c2007.f6678 = C0463.f2046;
                                                                 c2007.f6680 = linearLayout;
                                                                 c2007.m3870("保存", new C0106(5, c2014));
                                                                 c2007.m3869("重置", new C0104(11));
                                                                 C2007.m3866(c2007, null, 3);
                                                                 c2007.m3868().m3791();
-                                                                return c3497;
+                                                                return unit;
                                                             }
                                                         }
                                                     }
@@ -233,45 +231,44 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                     }
                 }
                 throw new NullPointerException("Missing required view with ID: ".concat(viewM4676.getResources().getResourceName(i8)));
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 String[] strArr7 = AbstractC1574.f5469;
                 C0463 c0463 = C0463.f2038;
                 Object objM3268 = ((C1563) obj).m3268();
                 RelativeLayout relativeLayout = (RelativeLayout) (objM3268 instanceof RelativeLayout ? objM3268 : null);
                 if (relativeLayout == null) {
-                    Class<RelativeLayout> clsM2187 = AbstractC0743.m2183(AbstractC2519.m4527(RelativeLayout.class));
+                    Class<RelativeLayout> clsM2187 = AbstractC0743.m2183(AbstractC2519.classToKClass(RelativeLayout.class));
                     throw new IllegalStateException("HookParam instance cannot cast to ".concat((clsM2187 != null ? clsM2187 : RelativeLayout.class).getName()).toString());
                 }
                 if (C0458.f2033.m2536()) {
                     int childCount = relativeLayout.getChildCount();
-                    while (i6 < childCount) {
-                        relativeLayout.getChildAt(i6).setVisibility(8);
-                        i6++;
+                    while (0 < childCount) {
+                        relativeLayout.getChildAt(0).setVisibility(8);
+                        0++;
                     }
                 } else {
                     int i9 = 0;
-                    for (int i10 = 4; i9 < i10; i10 = 4) {
+                    for (int i10 = 4; i9 < 4; i10 = 4) {
                         if (C0461.f2036.m2536() && (imageView = (ImageView) AbstractC3580.m5198(relativeLayout, new int[]{0, i9, 0, 0, 0})) != null) {
-                            imageView.setVisibility(i10);
+                            imageView.setVisibility(4);
                             ViewParent parent = imageView.getParent();
-                            "null cannot be cast to non-null type android.widget.RelativeLayout";
                             RelativeLayout relativeLayout2 = (RelativeLayout) parent;
                             ImageView imageView2 = new ImageView(relativeLayout2.getContext());
                             imageView2.setLayoutParams(imageView.getLayoutParams());
                             if (i9 == 0) {
-                                c0463.getClass();
+                                
                                 bitmap = (Bitmap) C0463.f2041.getValue();
                             } else if (i9 == 1) {
-                                c0463.getClass();
+                                
                                 bitmap = (Bitmap) C0463.f2042.getValue();
                             } else if (i9 == 2) {
-                                c0463.getClass();
+                                
                                 bitmap = (Bitmap) C0463.f2043.getValue();
                             } else if (i9 != 3) {
-                                c0463.getClass();
+                                
                                 bitmap = (Bitmap) C0463.f2040.getValue();
                             } else {
-                                c0463.getClass();
+                                
                                 bitmap = (Bitmap) C0463.f2044.getValue();
                             }
                             imageView2.setImageBitmap(bitmap);
@@ -295,10 +292,10 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                             }
                         }
                         i9++;
-                        c3497 = c3497;
+                        unit = unit;
                     }
                 }
-                return c3497;
+                return unit;
             case 15:
                 String[] strArr8 = AbstractC1574.f5469;
                 View viewM4677 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_bottom_tab_material, null, false);
@@ -346,14 +343,14 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                                                                 textInputEditText9.setText(C0471.f2062.m2542());
                                                                 textInputEditText7.setText(C0469.f2060.m2542());
                                                                 C2007 c2008 = new C2007();
-                                                                C0473.f2064.getClass();
+                                                                
                                                                 c2008.f6678 = C0473.f2072;
                                                                 c2008.f6680 = (LinearLayout) viewM4677;
                                                                 c2008.m3870("保存", new C0106(6, c0215));
                                                                 c2008.m3869("重置", new C0104(17));
                                                                 C2007.m3866(c2008, null, 3);
                                                                 c2008.m3868().m3791();
-                                                                return c3497;
+                                                                return unit;
                                                             }
                                                         }
                                                     }
@@ -368,56 +365,56 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                 }
                 throw new NullPointerException("Missing required view with ID: ".concat(viewM4677.getResources().getResourceName(i11)));
             case 16:
-                ((C1020) obj).f3733 = new C0316(22);
-                return c3497;
-            case Opcodes.SIPUSH /* 17 */:
+                ((C1020) obj).thisMethodMatcher = new C0316(22);
+                return unit;
+            case 17 /* 17 */:
                 String[] strArr9 = AbstractC1574.f5469;
                 ((C1981) obj).m3827("MicroMsg.FavSendFilter", "[FAV_ITEM_TYPE_VOICE] canFilterVoice = true, back");
-                return c3497;
-            case Opcodes.LDC /* 18 */:
-                ((C1020) obj).f3733 = new C0316(23);
-                return c3497;
+                return unit;
+            case 18 /* 18 */:
+                ((C1020) obj).thisMethodMatcher = new C0316(23);
+                return unit;
             case 19:
                 Object objM3269 = ((C1563) obj).m3268();
                 Activity activity = (Activity) (objM3269 instanceof Activity ? objM3269 : null);
                 if (activity == null) {
-                    Class<Activity> clsM2188 = AbstractC0743.m2183(AbstractC2519.m4527(Activity.class));
+                    Class<Activity> clsM2188 = AbstractC0743.m2183(AbstractC2519.classToKClass(Activity.class));
                     throw new IllegalStateException("HookParam instance cannot cast to ".concat((clsM2188 != null ? clsM2188 : Activity.class).getName()).toString());
                 }
                 Intent intent = activity.getIntent();
                 String[] strArr10 = AbstractC1574.f5469;
                 intent.putExtra("key_fav_item_id", "");
-                return c3497;
+                return unit;
             case 20:
                 C0603 c0603 = C0603.f2421;
                 C3689 c3689M4172 = C2309.m4172(c0603, Collections.singletonList((Method) obj));
                 c0603.m3263(c3689M4172, new C0316(24));
                 c3689M4172.m5352();
-                return c3497;
-            case Opcodes.ILOAD /* 21 */:
+                return unit;
+            case 21 /* 21 */:
                 C0603 c0604 = C0603.f2421;
                 C3689 c3689M4173 = C2309.m4172(c0604, Collections.singletonList((Method) obj));
                 c0604.m3263(c3689M4173, new C0316(25));
                 c3689M4173.m5352();
-                return c3497;
-            case Opcodes.LLOAD /* 22 */:
-                ((C1333) obj).m3052(new C0316(i5));
-                return c3497;
-            case Opcodes.FLOAD /* 23 */:
+                return unit;
+            case 22 /* 22 */:
+                ((C1333) obj).m3052(new C0316(17));
+                return unit;
+            case 23 /* 23 */:
                 C1333 c1336 = (C1333) obj;
                 String[] strArr11 = AbstractC1574.f5469;
                 c1336.m3053("com.tencent.mm.plugin.fav.ui");
                 C1981 c1986 = new C1981(4);
                 c1986.m3826("onItemClick");
-                c1986.m3827("onItemClick", (AbstractC3471.m5079(EnumC3677.f11527) || AbstractC3471.m5080(EnumC3674.f11495)) ? "com/tencent/mm/plugin/fav/ui/FavTopSearchUIC$initOnItemClickListener$1" : "com/tencent/mm/plugin/fav/ui/FavSearchUI$10");
+                c1986.m3827("onItemClick", (AbstractC3471.m5079(WeChatVersions.f11527) || AbstractC3471.m5080(WeChatVersionsPlay.f11495)) ? "com/tencent/mm/plugin/fav/ui/FavTopSearchUIC$initOnItemClickListener$1" : "com/tencent/mm/plugin/fav/ui/FavSearchUI$10");
                 c1336.f4794 = c1986;
-                return c3497;
-            case Opcodes.DLOAD /* 24 */:
+                return unit;
+            case 24 /* 24 */:
                 ((C1563) obj).m3270();
-                return c3497;
-            case Opcodes.ALOAD /* 25 */:
+                return unit;
+            case 25 /* 25 */:
                 C1563 c1563 = (C1563) obj;
-                c1563.getClass();
+                
                 try {
                     c2585 = c1563.m3267()[1];
                     if (c2585 == null) {
@@ -431,36 +428,36 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                 }
                 View view = (View) c2585;
                 Object tag = view.getTag();
-                int i12 = AbstractC1745.f5844;
-                C1299 c1299M3490 = AbstractC0968.m2484(tag).m3490();
+                int i12 = 0;
+                C1299 c1299M3490 = AbstractC0968.startFieldResolution(tag).m3490();
                 String[] strArr12 = AbstractC1574.f5469;
                 c1299M3490.f6370 = "a";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3490)).m3023();
                 C1299 c1299M4739 = AbstractC2784.m4738(c1563);
                 c1299M4739.f6370 = "d";
-                Object objM3024 = ((C1315) AbstractC0744.m2191(c1299M4739.m3014())).m3023();
-                if (AbstractC3471.m5079(EnumC3677.f11527) || AbstractC3471.m5080(EnumC3674.f11495)) {
-                    C1299 c1299M3491 = AbstractC0968.m2484(objM3024).m3490();
+                Object objM3024 = ((C1315) AbstractC0744.firstInList(c1299M4739.resolve())).m3023();
+                if (AbstractC3471.m5079(WeChatVersions.f11527) || AbstractC3471.m5080(WeChatVersionsPlay.f11495)) {
+                    C1299 c1299M3491 = AbstractC0968.startFieldResolution(objM3024).m3490();
                     c1299M3491.f6370 = "w";
-                    zBooleanValue = ((Boolean) ((C1315) AbstractC0744.m2191(c1299M3491.m3014())).m3024()).booleanValue();
+                    zBooleanValue = ((Boolean) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).booleanValue();
                 } else {
-                    C1299 c1299M3492 = AbstractC0968.m2484(objM3024).m3490();
+                    C1299 c1299M3492 = AbstractC0968.startFieldResolution(objM3024).m3490();
                     c1299M3492.f6370 = "d";
-                    if (((Number) ((C1315) AbstractC0744.m2191(c1299M3492.m3014())).m3024()).intValue() != 1) {
+                    if (((Number) ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3024()).intValue() != 1) {
                         zBooleanValue = false;
                     }
                 }
                 if (zBooleanValue) {
-                    C1299 c1299M3493 = AbstractC0968.m2484(objM3023).m3490();
+                    C1299 c1299M3493 = AbstractC0968.startFieldResolution(objM3023).m3490();
                     c1299M3493.f6370 = "field_type";
                     if (((Number) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024()).intValue() == 3) {
-                        C1299 c1299M3494 = AbstractC0968.m2484(objM3023).m3490();
+                        C1299 c1299M3494 = AbstractC0968.startFieldResolution(objM3023).m3490();
                         c1299M3494.f6370 = "field_favProto";
-                        C1973 c1973M3492 = AbstractC0968.m2484(((C1315) AbstractC2784.m4741(c1299M3494)).m3023()).m3492();
+                        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(((C1315) AbstractC2784.m4741(c1299M3494)).m3023()).m3492();
                         c1973M3492.f6370 = "getData";
-                        byte[] bArr = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3492)).m3832(new Object[0]);
+                        byte[] bArr = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                         C2427 c2427 = C2427.f7718;
-                        c2427.getClass();
+                        
                         final C1283 c1283 = ((C1284) c2427.m4387(C1284.Companion.serializer(), bArr)).f4695;
                         final String string = c1283.f4693;
                         String str = c1283.f4692;
@@ -483,14 +480,14 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                             builder.setPositiveButton("发送", new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲁᤝᤞᲈᲀ
                                 @Override // android.content.DialogInterface.OnClickListener
                                 public final void onClick(DialogInterface dialogInterface, int i13) throws IllegalAccessException, InvocationTargetException {
-                                    switch (i6) {
+                                    switch (0) {
                                         case 0:
-                                            C2893.f9310.getClass();
+                                            
                                             C1133.m2721(c1283.f4688, C2893.f9311, string);
                                             AbstractC2834.m4823(null, 3, "已发送");
                                             break;
                                         default:
-                                            C2893.f9310.getClass();
+                                            
                                             C1133.m2721(c1283.f4688, C2893.f9311, string);
                                             AbstractC2834.m4823(null, 3, "已发送");
                                             break;
@@ -505,10 +502,10 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                         c1563.m3272(null);
                     }
                 }
-                return c3497;
+                return unit;
             case 26:
                 C1563 c1564 = (C1563) obj;
-                c1564.getClass();
+                
                 try {
                     c2586 = c1564.m3267()[1];
                     if (c2586 == null) {
@@ -522,21 +519,21 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                 }
                 View view2 = (View) c2586;
                 Object tag2 = view2.getTag();
-                int i13 = AbstractC1745.f5844;
-                C1299 c1299M3495 = AbstractC0968.m2484(tag2).m3490();
+                int i13 = 0;
+                C1299 c1299M3495 = AbstractC0968.startFieldResolution(tag2).m3490();
                 String[] strArr13 = AbstractC1574.f5469;
                 c1299M3495.f6370 = "a";
                 Object objM3025 = ((C1315) AbstractC2784.m4741(c1299M3495)).m3023();
-                C1299 c1299M3496 = AbstractC0968.m2484(objM3025).m3490();
+                C1299 c1299M3496 = AbstractC0968.startFieldResolution(objM3025).m3490();
                 c1299M3496.f6370 = "field_type";
                 if (((Number) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024()).intValue() == 3) {
-                    C1299 c1299M3497 = AbstractC0968.m2484(objM3025).m3490();
+                    C1299 c1299M3497 = AbstractC0968.startFieldResolution(objM3025).m3490();
                     c1299M3497.f6370 = "field_favProto";
-                    C1973 c1973M3493 = AbstractC0968.m2484(((C1315) AbstractC2784.m4741(c1299M3497)).m3023()).m3492();
+                    MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(((C1315) AbstractC2784.m4741(c1299M3497)).m3023()).m3492();
                     c1973M3493.f6370 = "getData";
-                    byte[] bArr2 = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3493)).m3832(new Object[0]);
+                    byte[] bArr2 = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3493)).invoke(new Object[0]);
                     C2427 c2428 = C2427.f7718;
-                    c2428.getClass();
+                    
                     final C1283 c1284 = ((C1284) c2428.m4387(C1284.Companion.serializer(), bArr2)).f4695;
                     final String string2 = c1284.f4693;
                     String str2 = c1284.f4692;
@@ -557,18 +554,18 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                         builder2.setTitle("提示");
                         builder2.setMessage("是否发送收藏语音");
                         String str3 = "发送";
-                        final char c2 = c == true ? 1 : 0;
-                        builder2.setPositiveButton(str3, new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲁᤝᤞᲈᲀ
+                        final char c2 = 0;
+                        builder2.setPositiveButton("发送", new DialogInterface.OnClickListener() { // from class: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲁᤝᤞᲈᲀ
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i14) throws IllegalAccessException, InvocationTargetException {
-                                switch (c2) {
+                                switch (0) {
                                     case 0:
-                                        C2893.f9310.getClass();
+                                        
                                         C1133.m2721(c1284.f4688, C2893.f9311, string2);
                                         AbstractC2834.m4823(null, 3, "已发送");
                                         break;
                                     default:
-                                        C2893.f9310.getClass();
+                                        
                                         C1133.m2721(c1284.f4688, C2893.f9311, string2);
                                         AbstractC2834.m4823(null, 3, "已发送");
                                         break;
@@ -582,29 +579,29 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                     }
                     c1564.m3272(null);
                 }
-                return c3497;
+                return unit;
             case 27:
-                ((C1020) obj).f3733 = new C0316(28);
-                return c3497;
+                ((C1020) obj).thisMethodMatcher = new C0316(28);
+                return unit;
             case 28:
                 ((C1333) obj).m3052(new C0316(29));
-                return c3497;
+                return unit;
             default:
                 C1981 c1987 = (C1981) obj;
                 c1987.m3820(C0607.f2431.m2028());
-                Class<Boolean> clsM4740 = AbstractC2784.m4740(c1987, Void.TYPE, cls);
+                Class<Boolean> clsM4740 = AbstractC2784.m4740(c1987, Void.TYPE, Boolean.class);
                 if (clsM4740 == null) {
-                    clsM4740 = cls;
+                    clsM4740 = Boolean.class;
                 }
-                Class<Boolean> clsM2189 = AbstractC0743.m2183(AbstractC2519.m4527(cls));
-                c1987.m3823(clsM4740, clsM2189 != null ? clsM2189 : Boolean.class);
+                Class<Boolean> clsM2189 = AbstractC0743.m2183(AbstractC2519.classToKClass(Boolean.class));
+                c1987.paramTypes(clsM4740, clsM2189 != null ? clsM2189 : Boolean.class);
                 C1984 c1988 = new C1984(4);
                 C1981 c1989 = new C1981(4);
                 String[] strArr14 = AbstractC1574.f5469;
                 c1989.m3827("MicroMsg.ChatFooter", "this is a quote msg");
                 c1988.m3848(c1989);
                 c1987.f6565 = c1988;
-                return c3497;
+                return unit;
         }
     }
 }

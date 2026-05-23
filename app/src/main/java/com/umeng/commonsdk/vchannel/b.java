@@ -15,7 +15,7 @@ public class b {
     private String a = "_$unknown";
     private long c = 0;
     private long d = 0;
-    private String e = a.j;
+    private String e = "_$unknown".j;
     private Map<String, Object> f = null;
 
     public b(Context context) {

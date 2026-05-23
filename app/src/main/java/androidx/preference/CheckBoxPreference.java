@@ -12,7 +12,7 @@ import p000.AbstractC2465;
 public class CheckBoxPreference extends TwoStatePreference {
     /* JADX WARN: Illegal instructions before constructor call */
     public CheckBoxPreference(Context context, AttributeSet attributeSet) {
-        int iM3156 = AbstractC1458.m3156(context, R.attr.checkBoxPreferenceStyle, android.R.attr.checkBoxPreferenceStyle);
+        int iM3156 = AbstractC1458.m3156(context, R.attr.checkBoxPreferenceStyle, 16842895);
         super(context, attributeSet, iM3156);
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC2465.f7827, iM3156, 0);
         if (typedArrayObtainStyledAttributes.getString(5) == null) {

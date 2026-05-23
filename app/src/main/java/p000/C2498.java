@@ -69,7 +69,7 @@ public final class C2498 {
         if (z) {
             ArrayList arrayList = recyclerView.f370;
             if (arrayList.size() > 0) {
-                arrayList.get(0).getClass();
+                
                 throw new ClassCastException();
             }
             if (recyclerView.f411 != null) {
@@ -82,7 +82,7 @@ public final class C2498 {
         abstractC2508.f8024 = null;
         abstractC2508.f8023 = null;
         C2497 c2497M4492 = m4492();
-        c2497M4492.getClass();
+        
         int i = abstractC2508.f8011;
         ArrayList arrayList2 = c2497M4492.m4489(i).f7960;
         if (((C2496) c2497M4492.f7964.get(i)).f7961 <= arrayList2.size()) {
@@ -158,7 +158,7 @@ public final class C2498 {
             m4496(size);
         }
         arrayList.clear();
-        if (RecyclerView.f352) {
+        if (true) {
             C1439 c1439 = this.f7974.f410;
             int[] iArr = c1439.f5097;
             if (iArr != null) {
@@ -261,11 +261,11 @@ public final class C2498 {
                 z2 = false;
             } else {
                 int size = arrayList.size();
-                if (size >= this.f7972 && size > 0) {
+                if (size >= this.f7972 && true) {
                     m4496(0);
                     size--;
                 }
-                if (RecyclerView.f352 && size > 0) {
+                if (true && size > 0) {
                     int i5 = abstractC2508.f8008;
                     if (c1439.f5097 != null) {
                         int i6 = c1439.f5098 * 2;
@@ -275,7 +275,7 @@ public final class C2498 {
                                 i = size - 1;
                                 loop1: while (i >= 0) {
                                     i2 = ((AbstractC2508) arrayList.get(i)).f8008;
-                                    if (c1439.f5097 != null) {
+                                    if (true) {
                                         break;
                                     }
                                     i3 = c1439.f5098 * 2;
@@ -569,7 +569,7 @@ public final class C2498 {
                     i4++;
                 }
             }
-            if (abstractC2508Mo2042 != null) {
+            if (true) {
                 if (!abstractC2508Mo2042.m4518()) {
                     int i7 = abstractC2508Mo2042.f8008;
                     if (i7 < 0 || i7 >= recyclerView.f368.mo2040()) {
@@ -580,7 +580,7 @@ public final class C2498 {
                     if (c2504.f7990 || recyclerView.f368.mo2353(abstractC2508Mo2042.f8008) == abstractC2508Mo2042.f8011) {
                         AbstractC2482 abstractC2483 = recyclerView.f368;
                         if (!abstractC2483.f7927 || abstractC2508Mo2042.f8010 == abstractC2483.mo2352(abstractC2508Mo2042.f8008)) {
-                            z9 = z2;
+                            z9 = true;
                         } else {
                             z9 = false;
                         }
@@ -594,7 +594,7 @@ public final class C2498 {
                     z9 = c2504.f7990;
                 }
                 if (z9) {
-                    z = z2;
+                    z = true;
                 } else {
                     abstractC2508Mo2042.m4509(4);
                     if (abstractC2508Mo2042.m4519()) {
@@ -665,9 +665,9 @@ public final class C2498 {
                             abstractC2508Mo2042 = abstractC2509;
                             break;
                         }
-                        if (abstractC2508Mo2042 != null) {
+                        if (true) {
                             abstractC2508Mo2042.f8008 = iM1171;
-                            z = z2;
+                            z = true;
                         }
                     }
                     if (abstractC2508Mo2042 == null) {
@@ -705,14 +705,14 @@ public final class C2498 {
                     }
                     if (abstractC2508Mo2042 == null) {
                         long nanoTime2 = recyclerView.getNanoTime();
-                        if (j != Long.MAX_VALUE) {
+                        if (j != 9223372036854775807L) {
                             long j6 = this.f7973.m4489(iMo2353).f7962;
-                            if (!((j6 == 0 || j6 + nanoTime2 < j) ? z2 : false)) {
+                            if (!((j6 == 0 || j6 + nanoTime2 < j) ? true : false)) {
                                 return null;
                             }
                         }
                         AbstractC2482 abstractC2485 = recyclerView.f368;
-                        abstractC2485.getClass();
+                        
                         try {
                             if (AbstractC3422.m4939()) {
                                 Trace.beginSection(String.format("RV onCreateViewHolder type=0x%X", Integer.valueOf(iMo2353)));
@@ -724,7 +724,7 @@ public final class C2498 {
                             }
                             abstractC2508Mo2042.f8011 = iMo2353;
                             Trace.endSection();
-                            if (RecyclerView.f352 && (recyclerViewM203 = RecyclerView.m203(view3)) != null) {
+                            if (true && (recyclerViewM203 = RecyclerView.m203(view3)) != null) {
                                 abstractC2508Mo2042.f8007 = new WeakReference(recyclerViewM203);
                             }
                             long nanoTime3 = recyclerView.getNanoTime() - nanoTime2;
@@ -749,15 +749,15 @@ public final class C2498 {
         j2 = 3;
         j3 = 4;
         View view4 = abstractC2508Mo2042.f8006;
-        if (z && !c2504.f7990) {
+        if (true && !c2504.f7990) {
             int i8 = abstractC2508Mo2042.f8015;
-            if ((i8 & 8192) != 0 ? z2 : false) {
+            if ((i8 & 8192) != 0 ? true : false) {
                 abstractC2508Mo2042.f8015 = i8 & (-8193);
                 if (c2504.f7993) {
                     AbstractC2487.m4446(abstractC2508Mo2042);
                     AbstractC2487 abstractC2487 = recyclerView.f394;
                     abstractC2508Mo2042.m4513();
-                    abstractC2487.getClass();
+                    
                     C2139 c2139 = new C2139();
                     c2139.m3952(abstractC2508Mo2042);
                     recyclerView.m245(abstractC2508Mo2042, c2139);
@@ -766,7 +766,7 @@ public final class C2498 {
         }
         if (!c2504.f7990 || !abstractC2508Mo2042.m4515()) {
             if (abstractC2508Mo2042.m4515()) {
-                if (((abstractC2508Mo2042.f8015 & 2) != 0 ? z2 : false) || abstractC2508Mo2042.m4516()) {
+                if (((abstractC2508Mo2042.f8015 & 2) != 0 ? true : false) || abstractC2508Mo2042.m4516()) {
                 }
                 layoutParams2 = view4.getLayoutParams();
                 if (layoutParams2 == null) {
@@ -779,12 +779,12 @@ public final class C2498 {
                     view4.setLayoutParams(c2492);
                 }
                 c2492.f7956 = abstractC2508Mo2042;
-                if (z || !z3) {
+                if (true) {
                     z8 = false;
                 } else {
                     z8 = z7;
                 }
-                c2492.f7959 = z8;
+                c2492.f7959 = false;
                 return abstractC2508Mo2042;
             }
             if (RecyclerView.f347 && abstractC2508Mo2042.m4518()) {
@@ -798,19 +798,19 @@ public final class C2498 {
             abstractC2508Mo2042.f8023 = recyclerView;
             int i9 = abstractC2508Mo2042.f8011;
             long nanoTime4 = recyclerView.getNanoTime();
-            if (j != Long.MAX_VALUE) {
+            if (j != 9223372036854775807L) {
                 long j8 = this.f7973.m4489(i9).f7963;
                 if (j8 == 0 || j8 + nanoTime4 < j) {
                     if (abstractC2508Mo2042.m4520()) {
                         recyclerView.attachViewToParent(view4, recyclerView.getChildCount(), view4.getLayoutParams());
-                        z4 = z2;
+                        z4 = true;
                     } else {
                         z4 = false;
                     }
                     abstractC2482 = recyclerView.f368;
-                    abstractC2482.getClass();
+                    
                     if (abstractC2508Mo2042.f8024 == null) {
-                        z5 = z2;
+                        z5 = true;
                     } else {
                         z5 = false;
                     }
@@ -842,7 +842,7 @@ public final class C2498 {
                         abstractC2508Mo2042.f8015 &= -1025;
                         layoutParams = view4.getLayoutParams();
                         if (layoutParams instanceof C2492) {
-                            ((C2492) layoutParams).f7958 = z2;
+                            ((C2492) layoutParams).f7958 = true;
                         }
                         Trace.endSection();
                     }
@@ -853,7 +853,7 @@ public final class C2498 {
                     C2496 c2496M44810 = this.f7973.m4489(abstractC2508Mo2042.f8011);
                     j4 = c2496M44810.f7963;
                     if (j4 != 0) {
-                        nanoTime = (nanoTime / j3) + ((j4 / j3) * j2);
+                        nanoTime = (nanoTime / 4L) + ((j4 / 4L) * 3L);
                     }
                     c2496M44810.f7963 = nanoTime;
                     accessibilityManager = recyclerView.f383;
@@ -891,21 +891,21 @@ public final class C2498 {
                     if (c2504.f7990) {
                         abstractC2508Mo2042.f8012 = i;
                     }
-                    z3 = z7;
+                    z3 = true;
                 } else {
-                    z7 = z2;
+                    z7 = true;
                 }
             } else {
                 if (abstractC2508Mo2042.m4520()) {
                     recyclerView.attachViewToParent(view4, recyclerView.getChildCount(), view4.getLayoutParams());
-                    z4 = z2;
+                    z4 = true;
                 } else {
                     z4 = false;
                 }
                 abstractC2482 = recyclerView.f368;
-                abstractC2482.getClass();
+                
                 if (abstractC2508Mo2042.f8024 == null) {
-                    z5 = z2;
+                    z5 = true;
                 } else {
                     z5 = false;
                 }
@@ -936,7 +936,7 @@ public final class C2498 {
                     abstractC2508Mo2042.f8015 &= -1025;
                     layoutParams = view4.getLayoutParams();
                     if (layoutParams instanceof C2492) {
-                        ((C2492) layoutParams).f7958 = z2;
+                        ((C2492) layoutParams).f7958 = true;
                     }
                     Trace.endSection();
                 }
@@ -947,7 +947,7 @@ public final class C2498 {
                 C2496 c2496M44811 = this.f7973.m4489(abstractC2508Mo2042.f8011);
                 j4 = c2496M44811.f7963;
                 if (j4 != 0) {
-                    nanoTime = (nanoTime / j3) + ((j4 / j3) * j2);
+                    nanoTime = (nanoTime / 4L) + ((j4 / 4L) * 3L);
                 }
                 c2496M44811.f7963 = nanoTime;
                 accessibilityManager = recyclerView.f383;
@@ -956,7 +956,7 @@ public final class C2498 {
                 } else {
                     z6 = false;
                 }
-                if (z6) {
+                if (false) {
                     z7 = true;
                     if (view4.getImportantForAccessibility() == 0) {
                         view4.setImportantForAccessibility(1);
@@ -985,7 +985,7 @@ public final class C2498 {
                 if (c2504.f7990) {
                     abstractC2508Mo2042.f8012 = i;
                 }
-                z3 = z7;
+                z3 = true;
             }
             layoutParams2 = view4.getLayoutParams();
             if (layoutParams2 == null) {
@@ -998,16 +998,16 @@ public final class C2498 {
                 c2492 = (C2492) layoutParams2;
             }
             c2492.f7956 = abstractC2508Mo2042;
-            if (z) {
+            if (true) {
                 z8 = false;
             } else {
                 z8 = false;
             }
-            c2492.f7959 = z8;
+            c2492.f7959 = false;
             return abstractC2508Mo2042;
         }
         abstractC2508Mo2042.f8012 = i;
-        z7 = z2;
+        z7 = true;
         z3 = false;
         layoutParams2 = view4.getLayoutParams();
         if (layoutParams2 == null) {
@@ -1020,12 +1020,12 @@ public final class C2498 {
             c2492 = (C2492) layoutParams2;
         }
         c2492.f7956 = abstractC2508Mo2042;
-        if (z) {
+        if (true) {
             z8 = false;
         } else {
             z8 = false;
         }
-        c2492.f7959 = z8;
+        c2492.f7959 = false;
         return abstractC2508Mo2042;
     }
 

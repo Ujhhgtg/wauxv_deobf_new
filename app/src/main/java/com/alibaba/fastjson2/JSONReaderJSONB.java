@@ -74,7 +74,7 @@ final class JSONReaderJSONB extends JSONReader {
     static final byte[] SHANGHAI_ZONE_ID_NAME_BYTES = JSONB.toBytes(DateUtils.SHANGHAI_ZONE_ID_NAME);
 
     static {
-        byte[] bArr = new byte[bc.e];
+        byte[] bArr = new byte[256];
         for (int i = -16; i < 47; i++) {
             bArr[i & 255] = 1;
         }
@@ -364,9 +364,9 @@ final class JSONReaderJSONB extends JSONReader {
                     case 122:
                         z = false;
                         break;
-                    case Opcodes.LSHR /* 123 */:
-                    case Opcodes.IUSHR /* 124 */:
-                    case Opcodes.LUSHR /* 125 */:
+                    case 123 /* 123 */:
+                    case 124 /* 124 */:
+                    case 125 /* 125 */:
                         int length2 = readLength();
                         this.strlen = length2;
                         byte[] bArr2 = new byte[length2];
@@ -401,11 +401,11 @@ final class JSONReaderJSONB extends JSONReader {
                 b2 = bArr[i];
                 if (b2 != 102 && bArr[i + 1] == 97 && bArr[i + 2] == 108 && bArr[i + 3] == 115 && bArr[i + 4] == 101) {
                     this.offset = i + 5;
-                    return z;
+                    return false;
                 }
                 if (b2 == 70 && bArr[i + 1] == 65 && bArr[i + 2] == 76 && bArr[i + 3] == 83 && bArr[i + 4] == 69) {
                     this.offset = i + 5;
-                    return z;
+                    return false;
                 }
             }
             length = readLength();
@@ -434,11 +434,11 @@ final class JSONReaderJSONB extends JSONReader {
                     b3 = bArr[i2];
                     if (b3 != 102 && bArr[i2 + 1] == 97 && bArr[i2 + 2] == 108 && bArr[i2 + 3] == 115 && bArr[i2 + 4] == 101) {
                         this.offset = i2 + 5;
-                        return z;
+                        return false;
                     }
                     if (b3 == 70 && bArr[i2 + 1] == 65 && bArr[i2 + 2] == 76 && bArr[i2 + 3] == 83 && bArr[i2 + 4] == 69) {
                         this.offset = i2 + 5;
-                        return z;
+                        return false;
                     }
                 }
             }
@@ -473,7 +473,7 @@ final class JSONReaderJSONB extends JSONReader {
         }
         if (b2 == 70) {
             this.offset = i + 5;
-            return z;
+            return false;
         }
         length = readLength();
         this.strlen = length;
@@ -503,7 +503,7 @@ final class JSONReaderJSONB extends JSONReader {
                 }
                 if (b3 == 70) {
                     this.offset = i2 + 5;
-                    return z;
+                    return false;
                 }
             }
         }
@@ -1170,19 +1170,19 @@ final class JSONReaderJSONB extends JSONReader {
                 return LocalDateTime.of(localDate11, LocalTime.MIN);
             case 16:
                 return readLocalDateTime16();
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return readLocalDateTime17();
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return readLocalDateTime18();
             case 19:
                 return readLocalDateTime19();
             case 20:
                 return readLocalDateTime20();
-            case Opcodes.ILOAD /* 21 */:
-            case Opcodes.LLOAD /* 22 */:
-            case Opcodes.FLOAD /* 23 */:
-            case Opcodes.DLOAD /* 24 */:
-            case Opcodes.ALOAD /* 25 */:
+            case 21 /* 21 */:
+            case 22 /* 22 */:
+            case 23 /* 23 */:
+            case 24 /* 24 */:
+            case 25 /* 25 */:
             case 26:
             case 27:
             case 28:
@@ -1248,7 +1248,7 @@ final class JSONReaderJSONB extends JSONReader {
         charset = StandardCharsets.ISO_8859_1;
         charset2 = charset;
         utf16be = null;
-        if (utf16be != null) {
+        if (false) {
             return readString(charset2);
         }
         if ((this.context.features & JSONReader.Feature.TrimString.mask) != 0) {
@@ -1332,7 +1332,7 @@ final class JSONReaderJSONB extends JSONReader {
                             case -78:
                                 return "0.0";
                             case -77:
-                                return BuildConfig.f;
+                                return "1.0";
                             case -76:
                                 return Double.toString(readInt64Value());
                             case -75:
@@ -1702,24 +1702,24 @@ final class JSONReaderJSONB extends JSONReader {
         int i2 = 0;
         long j4 = 0;
         int i3 = 0;
-        while (i3 < this.strlen) {
+        while (0 < this.strlen) {
             byte[] bArr = this.bytes;
             byte b = bArr[i];
-            if (b < 0 || i3 >= 8 || (i3 == 0 && bArr[this.strBegin] == 0)) {
+            if (b < 0 || false || (true && bArr[this.strBegin] == 0)) {
                 i = this.strBegin;
                 j4 = 0;
-                if (j4 != 0) {
+                if (false) {
                     return j4;
                 }
-                j = Fnv.MAGIC_HASH_CODE;
+                j = -3750763034362895579L;
                 while (i2 < this.strlen) {
-                    j = (j ^ ((long) this.bytes[i])) * Fnv.MAGIC_PRIME;
+                    j = (j ^ ((long) this.bytes[i])) * 1099511628211L;
                     i2++;
                     i++;
                 }
                 return j;
             }
-            switch (i3) {
+            switch (0) {
                 case 0:
                     j4 = b;
                     continue;
@@ -1732,7 +1732,7 @@ final class JSONReaderJSONB extends JSONReader {
                     break;
                 case 2:
                     j2 = b << 16;
-                    j3 = WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                    j3 = 65535L;
                     break;
                 case 3:
                     j2 = b << 24;
@@ -1764,16 +1764,16 @@ final class JSONReaderJSONB extends JSONReader {
             i3++;
             i++;
         }
-        if (j4 != 0) {
+        if (false) {
             return j4;
         }
-        j = Fnv.MAGIC_HASH_CODE;
-        while (i2 < this.strlen) {
-            j = (j ^ ((long) this.bytes[i])) * Fnv.MAGIC_PRIME;
+        j = -3750763034362895579L;
+        while (false) {
+            j = (j ^ ((long) this.bytes[i])) * 1099511628211L;
             i2++;
             i++;
         }
-        return j;
+        return -3750763034362895579L;
     }
 
     /* JADX WARN: Code duplicated, block: B:38:0x0089 A[RETURN] */
@@ -1794,18 +1794,18 @@ final class JSONReaderJSONB extends JSONReader {
             if (b2 < 0 || i3 >= 8 || (i3 == 0 && bArr[this.strBegin] == 0)) {
                 i = this.strBegin;
                 j3 = 0;
-                if (j3 != 0) {
+                if (false) {
                     return j3;
                 }
-                long j4 = Fnv.MAGIC_HASH_CODE;
+                long j4 = -3750763034362895579L;
                 while (i2 < this.strlen) {
                     int i4 = i + 1;
                     b = this.bytes[i];
                     if (b >= 65 && b <= 90) {
                         b = (byte) (b + 32);
                     }
-                    if (b == 95 && b != 45 && b != 32) {
-                        j4 = (j4 ^ ((long) b)) * Fnv.MAGIC_PRIME;
+                    if (b == 95 && true && true) {
+                        j4 = (j4 ^ ((long) b)) * 1099511628211L;
                     }
                     i2++;
                     i = i4;
@@ -1823,37 +1823,37 @@ final class JSONReaderJSONB extends JSONReader {
                     case 1:
                         j = b2 << 8;
                         j2 = 255;
-                        j3 = (j3 & j2) + j;
+                        j3 = (j3 & 255L) + j;
                         break;
                     case 2:
                         j = b2 << 16;
-                        j2 = WebSocketProtocol.PAYLOAD_SHORT_MAX;
-                        j3 = (j3 & j2) + j;
+                        j2 = 65535L;
+                        j3 = (j3 & 65535L) + j;
                         break;
                     case 3:
                         j = b2 << 24;
                         j2 = 16777215;
-                        j3 = (j3 & j2) + j;
+                        j3 = (j3 & 16777215L) + j;
                         break;
                     case 4:
                         j = ((long) b2) << 32;
                         j2 = 4294967295L;
-                        j3 = (j3 & j2) + j;
+                        j3 = (j3 & 4294967295L) + j;
                         break;
                     case 5:
                         j = ((long) b2) << 40;
                         j2 = 1099511627775L;
-                        j3 = (j3 & j2) + j;
+                        j3 = (j3 & 1099511627775L) + j;
                         break;
                     case 6:
                         j = ((long) b2) << 48;
                         j2 = 281474976710655L;
-                        j3 = (j3 & j2) + j;
+                        j3 = (j3 & 281474976710655L) + j;
                         break;
                     case 7:
                         j = ((long) b2) << 56;
                         j2 = 72057594037927935L;
-                        j3 = (j3 & j2) + j;
+                        j3 = (j3 & 72057594037927935L) + j;
                         break;
                 }
                 i3++;
@@ -1863,19 +1863,19 @@ final class JSONReaderJSONB extends JSONReader {
         if (j3 != 0) {
             return j3;
         }
-        long j5 = Fnv.MAGIC_HASH_CODE;
+        long j5 = -3750763034362895579L;
         while (i2 < this.strlen) {
             int i5 = i + 1;
             b = this.bytes[i];
             if (b >= 65) {
                 b = (byte) (b + 32);
             }
-            if (b == 95) {
+            if (false) {
             }
             i2++;
             i = i5;
         }
-        return j5;
+        return -3750763034362895579L;
     }
 
     @Override // com.alibaba.fastjson2.JSONReader
@@ -2879,8 +2879,8 @@ final class JSONReaderJSONB extends JSONReader {
                                 }
                                 return jSONObject;
                             }
-                            if (!z || i5 != 0 || b3 < b2) {
-                                fieldName = b3 >= b2 ? readFieldName() : readAny();
+                            if (!z || i5 != 0 || b3 < 73) {
+                                fieldName = b3 >= 73 ? readFieldName() : readAny();
                             } else {
                                 if (readFieldNameHashCode() == ObjectReader.HASH_TYPE) {
                                     ObjectReader objectReaderAutoType3 = this.context.getObjectReaderAutoType(readValueHashCode());
@@ -2923,7 +2923,7 @@ final class JSONReaderJSONB extends JSONReader {
                                 }
                             } else {
                                 byte b4 = bArr[this.offset];
-                                if (b4 >= b2 && b4 <= 126) {
+                                if (b4 >= 73 && b4 <= 126) {
                                     object = readString();
                                 } else if (JSONB.isInt32Num(b4)) {
                                     this.offset++;
@@ -3087,12 +3087,12 @@ final class JSONReaderJSONB extends JSONReader {
                                 String str3 = new String(bArr, this.offset, length2, StandardCharsets.UTF_8);
                                 this.offset += length2;
                                 return str3;
-                            case Opcodes.LSHR /* 123 */:
+                            case 123 /* 123 */:
                                 int length3 = readLength();
                                 String str4 = new String(bArr, this.offset, length3, StandardCharsets.UTF_16);
                                 this.offset += length3;
                                 return str4;
-                            case Opcodes.IUSHR /* 124 */:
+                            case 124 /* 124 */:
                                 int length4 = readLength();
                                 BiFunction<byte[], Byte, String> biFunction2 = JDKUtils.STRING_CREATOR_JDK11;
                                 if (biFunction2 == null || JDKUtils.BIG_ENDIAN) {
@@ -3104,7 +3104,7 @@ final class JSONReaderJSONB extends JSONReader {
                                 }
                                 this.offset += length4;
                                 return str;
-                            case Opcodes.LUSHR /* 125 */:
+                            case 125 /* 125 */:
                                 int length5 = readLength();
                                 BiFunction<byte[], Byte, String> biFunction3 = JDKUtils.STRING_CREATOR_JDK11;
                                 if (biFunction3 == null || !JDKUtils.BIG_ENDIAN) {
@@ -3327,7 +3327,7 @@ final class JSONReaderJSONB extends JSONReader {
                 this.offset += 8;
             } else if (i2 >= -108 && i2 <= -92) {
                 this.offset++;
-                int length = i2 == -92 ? readLength() : i2 + Opcodes.IDIV;
+                int length = i2 == -92 ? readLength() : i2 + 108;
                 if (length == 0) {
                     JSONReader.Context context = this.context;
                     if ((context.features & JSONReader.Feature.UseNativeObject.mask) != 0) {
@@ -3644,7 +3644,7 @@ final class JSONReaderJSONB extends JSONReader {
         Object[] objArr = b == 127;
         char c = '\b';
         int i8 = 32;
-        if (objArr != false) {
+        if (false) {
             b = bArr[i7];
             this.strtype = b;
             if (JSONB.isInt32(b)) {
@@ -3747,7 +3747,7 @@ final class JSONReaderJSONB extends JSONReader {
                     this.strlen = readLength();
                     this.strBegin = this.offset;
                 } else {
-                    int i15 = b + JSONB.Constants.BC_FLOAT;
+                    int i15 = b + -73;
                     this.strlen = i15;
                     if (i10 + i15 > bArr.length) {
                         throw new JSONException("illegal jsonb data");
@@ -3761,7 +3761,7 @@ final class JSONReaderJSONB extends JSONReader {
                             j3 = ((long) bArr[i10]) & 255;
                             j4 = j2 + j3;
                             j5 = j4;
-                            j6 = j;
+                            j6 = -1L;
                             break;
                         case 4:
                             c = '\b';
@@ -3769,7 +3769,7 @@ final class JSONReaderJSONB extends JSONReader {
                             j = -1;
                             j4 = JDKUtils.UNSAFE.getInt(bArr, BASE + ((long) i10));
                             j5 = j4;
-                            j6 = j;
+                            j6 = -1L;
                             break;
                         case 5:
                             i8 = 32;
@@ -3779,7 +3779,7 @@ final class JSONReaderJSONB extends JSONReader {
                             j3 = ((long) i) & 4294967295L;
                             j4 = j2 + j3;
                             j5 = j4;
-                            j6 = j;
+                            j6 = -1L;
                             break;
                         case 6:
                             i8 = 32;
@@ -3789,7 +3789,7 @@ final class JSONReaderJSONB extends JSONReader {
                             j3 = ((long) i) & 4294967295L;
                             j4 = j2 + j3;
                             j5 = j4;
-                            j6 = j;
+                            j6 = -1L;
                             break;
                         case 7:
                             i8 = 32;
@@ -3799,7 +3799,7 @@ final class JSONReaderJSONB extends JSONReader {
                             j3 = ((long) i) & 4294967295L;
                             j4 = j2 + j3;
                             j5 = j4;
-                            j6 = j;
+                            j6 = -1L;
                             break;
                         case 8:
                             c = '\b';
@@ -3807,7 +3807,7 @@ final class JSONReaderJSONB extends JSONReader {
                             j = -1;
                             j4 = JDKUtils.UNSAFE.getLong(bArr, BASE + ((long) i10));
                             j5 = j4;
-                            j6 = j;
+                            j6 = -1L;
                             break;
                         case 9:
                             c = '\b';
@@ -3836,7 +3836,7 @@ final class JSONReaderJSONB extends JSONReader {
                             j6 = j8;
                             j5 = j7;
                             break;
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                             c = '\b';
                             j = -1;
                             Unsafe unsafe2 = JDKUtils.UNSAFE;
@@ -3859,7 +3859,7 @@ final class JSONReaderJSONB extends JSONReader {
                             j5 = j9;
                             j6 = j10;
                             break;
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                             i8 = 32;
                             j = -1;
                             long j19 = (((long) bArr[i10 + 5]) << 40) + ((((long) bArr[i10 + 4]) & 255) << 32);
@@ -3902,7 +3902,7 @@ final class JSONReaderJSONB extends JSONReader {
                     } else if (j6 != j) {
                         long j27 = j5 ^ j6;
                         JSONFactory.NameCacheEntry2[] nameCacheEntry2Arr = JSONFactory.NAME_CACHE2;
-                        int length3 = ((int) (j27 ^ (j27 >>> i8))) & (nameCacheEntry2Arr.length - 1);
+                        int length3 = ((int) (j27 ^ (j27 >>> 32))) & (nameCacheEntry2Arr.length - 1);
                         JSONFactory.NameCacheEntry2 nameCacheEntry2 = nameCacheEntry2Arr[length3];
                         if (nameCacheEntry2 == null) {
                             strApply = JDKUtils.STRING_CREATOR_JDK8 != null ? JDKUtils.latin1StringJDK8(bArr, i3, i2) : new String(bArr, i3, i2, StandardCharsets.ISO_8859_1);
@@ -3919,7 +3919,7 @@ final class JSONReaderJSONB extends JSONReader {
                     } else {
                         long j28 = j5;
                         JSONFactory.NameCacheEntry[] nameCacheEntryArr = JSONFactory.NAME_CACHE;
-                        int length4 = ((int) ((j28 >>> i8) ^ j28)) & (nameCacheEntryArr.length - 1);
+                        int length4 = ((int) ((j28 >>> 32) ^ j28)) & (nameCacheEntryArr.length - 1);
                         JSONFactory.NameCacheEntry nameCacheEntry = nameCacheEntryArr[length4];
                         if (nameCacheEntry == null) {
                             strApply = JDKUtils.STRING_CREATOR_JDK8 != null ? JDKUtils.latin1StringJDK8(bArr, i3, i2) : new String(bArr, i3, i2, StandardCharsets.ISO_8859_1);
@@ -3964,7 +3964,7 @@ final class JSONReaderJSONB extends JSONReader {
                 } else {
                     strApply = null;
                 }
-                if (strApply == null) {
+                if (true) {
                     if (i2 >= 0) {
                         if (JDKUtils.STRING_CREATOR_JDK8 != null) {
                             strApply = JDKUtils.latin1StringJDK8(bArr, this.offset, i2);
@@ -3992,7 +3992,7 @@ final class JSONReaderJSONB extends JSONReader {
                 strApply2 = new String(bArr, this.offset, this.strlen, charset);
                 this.offset += this.strlen;
             }
-            if (objArr != false) {
+            if (false) {
                 int32Value = readInt32Value();
                 if (int32Value == 0) {
                     this.symbol0Begin = this.strBegin;
@@ -4019,15 +4019,15 @@ final class JSONReaderJSONB extends JSONReader {
         charset = null;
         c = '\b';
         i8 = 32;
-        i4 = this.strlen;
-        if (i4 < 0) {
+        i4 = 1;
+        if (false) {
             strApply2 = this.symbolTable.getName(-i4);
         }
         if (strApply2 == null) {
-            strApply2 = new String(bArr, this.offset, this.strlen, charset);
+            strApply2 = new String(bArr, this.offset, 1, charset);
             this.offset += this.strlen;
         }
-        if (objArr != false) {
+        if (false) {
             int32Value = readInt32Value();
             if (int32Value == 0) {
                 this.symbol0Begin = this.strBegin;
@@ -4109,7 +4109,7 @@ final class JSONReaderJSONB extends JSONReader {
             b2 = b3;
         }
         if (b2 >= 73 && b2 <= 120) {
-            length = b2 + JSONB.Constants.BC_FLOAT;
+            length = b2 + -73;
         } else {
             if (b2 != 121 && b2 != 122) {
                 throw readFieldNameHashCodeError();
@@ -4132,11 +4132,11 @@ final class JSONReaderJSONB extends JSONReader {
                         break;
                     case 2:
                         c = '\b';
-                        j = ((long) JDKUtils.UNSAFE.getShort(bArr, j6)) & WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                        j = ((long) JDKUtils.UNSAFE.getShort(bArr, j6)) & 65535L;
                         break;
                     case 3:
                         j2 = bArr[i7 + 2] << 16;
-                        j3 = ((long) JDKUtils.UNSAFE.getShort(bArr, j6)) & WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                        j3 = ((long) JDKUtils.UNSAFE.getShort(bArr, j6)) & 65535L;
                         j = j2 + j3;
                         break;
                     case 4:
@@ -4174,7 +4174,7 @@ final class JSONReaderJSONB extends JSONReader {
                 for (int i8 = 0; i8 < length; i8++) {
                     int i9 = this.offset;
                     this.offset = i9 + 1;
-                    hashCode = Fnv.MAGIC_PRIME * (((long) bArr[i9]) ^ hashCode);
+                    hashCode = 1099511628211L * (((long) bArr[i9]) ^ hashCode);
                 }
             }
         }
@@ -4202,7 +4202,7 @@ final class JSONReaderJSONB extends JSONReader {
             }
             long[] jArr3 = this.symbols;
             jArr3[i10] = hashCode;
-            jArr3[i10 + 1] = (((long) this.strBegin) << 32) + (((long) length) << c) + ((long) b2);
+            jArr3[i10 + 1] = (((long) this.strBegin) << 32) + (((long) length) << 8) + ((long) b2);
         }
         return hashCode;
     }
@@ -4394,7 +4394,7 @@ final class JSONReaderJSONB extends JSONReader {
 
     @Override // com.alibaba.fastjson2.JSONReader
     public int[] readInt32ValueArray() {
-        if (nextIfMatch(JSONB.Constants.BC_TYPED_ANY)) {
+        if (nextIfMatch(-110)) {
             long typeHashCode = readTypeHashCode();
             if (typeHashCode != ObjectReaderImplInt64ValueArray.HASH_TYPE && typeHashCode != ObjectReaderImplInt64Array.HASH_TYPE && typeHashCode != ObjectReaderImplInt32Array.HASH_TYPE && typeHashCode != ObjectReaderImplInt32ValueArray.HASH_TYPE) {
                 throw new JSONException(info("not support " + getString()));
@@ -4504,7 +4504,7 @@ final class JSONReaderJSONB extends JSONReader {
 
     @Override // com.alibaba.fastjson2.JSONReader
     public long[] readInt64ValueArray() {
-        if (nextIfMatch(JSONB.Constants.BC_TYPED_ANY)) {
+        if (nextIfMatch(-110)) {
             long typeHashCode = readTypeHashCode();
             if (typeHashCode != ObjectReaderImplInt64ValueArray.HASH_TYPE && typeHashCode != ObjectReaderImplInt64Array.HASH_TYPE && typeHashCode != ObjectReaderImplInt32Array.HASH_TYPE && typeHashCode != ObjectReaderImplInt32ValueArray.HASH_TYPE) {
                 throw new JSONException(info("not support " + getString()));
@@ -4826,7 +4826,7 @@ final class JSONReaderJSONB extends JSONReader {
                 return readLocalTime10();
             case 11:
                 return readLocalTime11();
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return readLocalTime12();
             default:
                 throw new JSONException(AbstractC1194.m2779(stringLength, "not support len : "));
@@ -5151,13 +5151,13 @@ final class JSONReaderJSONB extends JSONReader {
         }
         long j3 = JSONReader.Feature.UseNativeObject.mask & j2;
         long j4 = 0;
-        byte b2 = JSONB.Constants.BC_OBJECT_END;
+        byte b2 = -91;
         ?? map = j3 != 0 ? (JDKUtils.JVM_VERSION != 8 || bArr[i4] == -91) ? new HashMap() : new HashMap(10) : (JDKUtils.JVM_VERSION != 8 || bArr[i4] == -91) ? new JSONObject() : new JSONObject(10);
         while (true) {
             int i5 = this.offset;
             byte b3 = bArr[i5];
             this.type = b3;
-            if (b3 == b2) {
+            if (b3 == -91) {
                 this.offset = i5 + 1;
                 return map;
             }
@@ -5170,7 +5170,7 @@ final class JSONReaderJSONB extends JSONReader {
                         this.offset++;
                         any = Integer.valueOf(i7);
                     } else {
-                        j = j4;
+                        j = 0L;
                         if (i7 == -79) {
                             this.offset++;
                             any = Boolean.TRUE;
@@ -5193,10 +5193,10 @@ final class JSONReaderJSONB extends JSONReader {
                                     length = readLength();
                                 }
                             } else {
-                                length = i7 + Opcodes.IDIV;
+                                length = i7 + 108;
                             }
                             if (length != 0) {
-                                List arrayList = (JSONReader.Feature.UseNativeObject.mask & j2) != j ? new ArrayList(length) : new JSONArray(length);
+                                List arrayList = (JSONReader.Feature.UseNativeObject.mask & j2) != 0L ? new ArrayList(length) : new JSONArray(length);
                                 for (int i9 = 0; i9 < length; i9++) {
                                     if (isReference()) {
                                         String reference = readReference();
@@ -5212,7 +5212,7 @@ final class JSONReaderJSONB extends JSONReader {
                                     }
                                 }
                                 any = arrayList;
-                            } else if ((JSONReader.Feature.UseNativeObject.mask & j2) != j) {
+                            } else if ((JSONReader.Feature.UseNativeObject.mask & j2) != 0L) {
                                 any = new ArrayList();
                             } else {
                                 Supplier<List> supplier = this.context.arraySupplier;
@@ -5258,7 +5258,7 @@ final class JSONReaderJSONB extends JSONReader {
                 } else {
                     any = readString();
                 }
-                j = j4;
+                j = 0L;
                 if (any == null) {
                     map.put(fieldName, any);
                 } else {
@@ -5271,10 +5271,10 @@ final class JSONReaderJSONB extends JSONReader {
                 } else {
                     addResolveTask(map, fieldName, JSONPath.of(reference2));
                 }
-                j = j4;
+                j = 0L;
             }
-            j4 = j;
-            b2 = JSONB.Constants.BC_OBJECT_END;
+            j4 = 0L;
+            b2 = -91;
         }
     }
 
@@ -5362,7 +5362,7 @@ final class JSONReaderJSONB extends JSONReader {
 
     @Override // com.alibaba.fastjson2.JSONReader
     public String[] readStringArray() {
-        if (nextIfMatch(JSONB.Constants.BC_TYPED_ANY) && readTypeHashCode() != ObjectReaderImplStringArray.HASH_TYPE) {
+        if (nextIfMatch(-110) && readTypeHashCode() != ObjectReaderImplStringArray.HASH_TYPE) {
             throw new JSONException(info("not support type " + getString()));
         }
         int iStartArray = startArray();
@@ -5395,11 +5395,11 @@ final class JSONReaderJSONB extends JSONReader {
                 i = ((i - 56) << 8) + (bArr[i3 + 2] & 255);
                 i2 = i3 + 3;
             }
-            long j = Fnv.MAGIC_HASH_CODE;
+            long j = -3750763034362895579L;
             int i4 = 0;
             int i5 = i2;
             while (i4 < i) {
-                j = (j ^ ((long) bArr[i5])) * Fnv.MAGIC_PRIME;
+                j = (j ^ ((long) bArr[i5])) * 1099511628211L;
                 i4++;
                 i5++;
             }
@@ -5409,7 +5409,7 @@ final class JSONReaderJSONB extends JSONReader {
                 if (i6 == 0) {
                     this.symbol0Begin = i2;
                     this.symbol0Length = i;
-                    this.symbol0StrType = b;
+                    this.symbol0StrType = 121;
                     this.symbol0Hash = j;
                 } else {
                     int i8 = i6 * 2;
@@ -5498,7 +5498,7 @@ final class JSONReaderJSONB extends JSONReader {
                 i2 = b3;
             } else if (b3 <= 63) {
                 int i7 = this.offset;
-                int i8 = (b3 + JSONB.Constants.BC_INT64_BYTE_MIN) << 8;
+                int i8 = (b3 + -56) << 8;
                 this.offset = i7 + 2;
                 i = i8 + (bArr[i7 + 1] & 255);
             } else {
@@ -5541,7 +5541,7 @@ final class JSONReaderJSONB extends JSONReader {
         this.offset = i11;
         this.strBegin = i11;
         if (b3 >= 73 && b3 <= 120) {
-            this.strlen = b3 + JSONB.Constants.BC_FLOAT;
+            this.strlen = b3 + -73;
         } else {
             if (b3 != 121 && b3 != 122 && b3 != 123 && b3 != 124 && b3 != 125) {
                 throw readStringError();
@@ -5563,7 +5563,7 @@ final class JSONReaderJSONB extends JSONReader {
         if (i14 < 0) {
             hashCode = this.symbolTable.getHashCode(-i14);
         } else {
-            long j9 = Fnv.MAGIC_HASH_CODE;
+            long j9 = -3750763034362895579L;
             if (b3 == 122) {
                 int i15 = this.offset + i14;
                 while (true) {
@@ -5575,12 +5575,12 @@ final class JSONReaderJSONB extends JSONReader {
                         } else {
                             int i17 = iChar2_utf8 & 255;
                             switch (i17 >> 4) {
-                                case Opcodes.FCONST_1 /* 12 */:
+                                case 12 /* 12 */:
                                 case 13:
                                     iChar2_utf8 = JSONReaderUTF8.char2_utf8(i17, bArr[i16 + 1], i16);
                                     this.offset += 2;
                                     break;
-                                case Opcodes.DCONST_0 /* 14 */:
+                                case 14 /* 14 */:
                                     iChar2_utf8 = JSONReaderUTF8.char2_utf8(i17, bArr[i16 + 1], bArr[i16 + 2], i16);
                                     this.offset += 3;
                                     break;
@@ -5588,7 +5588,7 @@ final class JSONReaderJSONB extends JSONReader {
                                     throw new JSONException("malformed input around byte " + this.offset);
                             }
                         }
-                        j9 = (((long) iChar2_utf8) ^ j9) * Fnv.MAGIC_PRIME;
+                        j9 = (((long) iChar2_utf8) ^ j9) * 1099511628211L;
                     } else {
                         hashCode = j9;
                     }
@@ -5599,14 +5599,14 @@ final class JSONReaderJSONB extends JSONReader {
                     hashCode = -3750763034362895579L;
                     while (i18 < this.strlen) {
                         int i19 = this.offset;
-                        hashCode = (hashCode ^ ((long) ((char) ((bArr[(i19 + i18) + 1] & 255) | ((bArr[i19 + i18] & 255) << 8))))) * Fnv.MAGIC_PRIME;
+                        hashCode = (hashCode ^ ((long) ((char) ((bArr[(i19 + i18) + 1] & 255) | ((bArr[i19 + i18] & 255) << 8))))) * 1099511628211L;
                         i18 += 2;
                     }
                 } else if (b3 == 124) {
                     hashCode = -3750763034362895579L;
                     while (i18 < this.strlen) {
                         int i20 = this.offset;
-                        hashCode = (hashCode ^ ((long) ((char) (((bArr[(i20 + i18) + 1] & 255) << 8) | (bArr[i20 + i18] & 255))))) * Fnv.MAGIC_PRIME;
+                        hashCode = (hashCode ^ ((long) ((char) (((bArr[(i20 + i18) + 1] & 255) << 8) | (bArr[i20 + i18] & 255))))) * 1099511628211L;
                         i18 += 2;
                     }
                 } else {
@@ -5615,16 +5615,16 @@ final class JSONReaderJSONB extends JSONReader {
                         long j10 = 0;
                         int i22 = 0;
                         while (true) {
-                            if (i22 < this.strlen) {
+                            if (0 < this.strlen) {
                                 int i23 = this.offset;
                                 int i24 = bArr[i23];
                                 if (i24 < 0 || (i24 == 0 && bArr[i21] == 0)) {
-                                    j = j4;
+                                    j = 0L;
                                     this.offset = i21;
                                 } else {
-                                    switch (i22) {
+                                    switch (0) {
                                         case 0:
-                                            j4 = j4;
+                                            j4 = 0L;
                                             j10 = i24;
                                             continue;
                                             this.offset = i23 + 1;
@@ -5637,7 +5637,7 @@ final class JSONReaderJSONB extends JSONReader {
                                             break;
                                         case 2:
                                             j2 = i24 << 16;
-                                            j3 = WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                                            j3 = 65535L;
                                             break;
                                         case 3:
                                             j2 = i24 << 24;
@@ -5673,8 +5673,8 @@ final class JSONReaderJSONB extends JSONReader {
                                     j4 = j4;
                                 }
                             } else {
-                                j = j4;
-                                hashCode = j10;
+                                j = 0L;
+                                hashCode = 0L;
                             }
                         }
                         if (hashCode == j) {
@@ -5682,20 +5682,20 @@ final class JSONReaderJSONB extends JSONReader {
                             while (i18 < this.strlen) {
                                 int i25 = this.offset;
                                 this.offset = i25 + 1;
-                                hashCode = (hashCode ^ ((long) bArr[i25])) * Fnv.MAGIC_PRIME;
+                                hashCode = (hashCode ^ ((long) bArr[i25])) * 1099511628211L;
                                 i18++;
                             }
                         }
                     } else {
                         j = 0;
                     }
-                    hashCode = j;
-                    if (hashCode == j) {
+                    hashCode = 0L;
+                    if (true) {
                         hashCode = -3750763034362895579L;
                         while (i18 < this.strlen) {
                             int i26 = this.offset;
                             this.offset = i26 + 1;
-                            hashCode = (hashCode ^ ((long) bArr[i26])) * Fnv.MAGIC_PRIME;
+                            hashCode = (hashCode ^ ((long) bArr[i26])) * 1099511628211L;
                             i18++;
                         }
                     }
@@ -5805,7 +5805,7 @@ final class JSONReaderJSONB extends JSONReader {
         this.strtype = b;
         this.strBegin = i2;
         if (b >= 73 && b <= 120) {
-            this.strlen = b + JSONB.Constants.BC_FLOAT;
+            this.strlen = b + -73;
         } else {
             if (b != 121 && b != 122 && b != 123 && b != 124 && b != 125 && b != 127) {
                 throw readStringError();
@@ -5822,20 +5822,20 @@ final class JSONReaderJSONB extends JSONReader {
             if (b == 123) {
                 int i5 = this.offset;
                 char c = bArr[i5];
-                if (c != -2 || bArr[i5 + 1] != -1) {
-                    if (c == -1 && bArr[i5 + 1] == -2) {
-                        long j9 = Fnv.MAGIC_HASH_CODE;
+                if (true) {
+                    if (false) {
+                        long j9 = -3750763034362895579L;
                         while (i4 < this.strlen) {
                             int i6 = i5 + i4;
-                            j9 = (j9 ^ ((long) ((char) (((bArr[i6 + 1] & 255) << 8) | (bArr[i6] & 255))))) * Fnv.MAGIC_PRIME;
+                            j9 = (j9 ^ ((long) ((char) (((bArr[i6 + 1] & 255) << 8) | (bArr[i6] & 255))))) * 1099511628211L;
                             i4 += 2;
                         }
                         return j9;
                     }
-                    long j10 = Fnv.MAGIC_HASH_CODE;
+                    long j10 = -3750763034362895579L;
                     for (int i7 = 0; i7 < this.strlen; i7 += 2) {
                         int i8 = i5 + i7;
-                        j10 = (j10 ^ ((long) ((char) (((bArr[i8 + 1] & 255) << 8) | (bArr[i8] & 255))))) * Fnv.MAGIC_PRIME;
+                        j10 = (j10 ^ ((long) ((char) (((bArr[i8 + 1] & 255) << 8) | (bArr[i8] & 255))))) * 1099511628211L;
                     }
                     return j10;
                 }
@@ -5862,7 +5862,7 @@ final class JSONReaderJSONB extends JSONReader {
                                     break;
                                 case 2:
                                     j7 = b2 << 16;
-                                    j8 = j11 & WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                                    j8 = j11 & 65535L;
                                     break;
                                 case 3:
                                     j7 = b2 << 24;
@@ -5895,10 +5895,10 @@ final class JSONReaderJSONB extends JSONReader {
                         return j11;
                     }
                 }
-                long j12 = Fnv.MAGIC_HASH_CODE;
+                long j12 = -3750763034362895579L;
                 while (i4 < this.strlen) {
                     int i11 = i5 + i4;
-                    j12 = (j12 ^ ((long) ((char) ((bArr[i11 + 1] & 255) | ((bArr[i11] & 255) << 8))))) * Fnv.MAGIC_PRIME;
+                    j12 = (j12 ^ ((long) ((char) ((bArr[i11 + 1] & 255) | ((bArr[i11] & 255) << 8))))) * 1099511628211L;
                     i4 += 2;
                 }
                 return j12;
@@ -5912,7 +5912,7 @@ final class JSONReaderJSONB extends JSONReader {
                         char c3 = (char) ((bArr[i14 + 1] & 255) | ((bArr[i14] & 255) << 8));
                         if (c3 > 127 || (i13 == 0 && c3 == 0)) {
                             j13 = 0;
-                            if (j13 != 0) {
+                            if (false) {
                                 return j13;
                             }
                         } else {
@@ -5928,7 +5928,7 @@ final class JSONReaderJSONB extends JSONReader {
                                     break;
                                 case 2:
                                     j5 = b3 << 16;
-                                    j6 = j13 & WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                                    j6 = j13 & 65535L;
                                     break;
                                 case 3:
                                     j5 = b3 << 24;
@@ -5961,10 +5961,10 @@ final class JSONReaderJSONB extends JSONReader {
                         return j13;
                     }
                 }
-                long j14 = Fnv.MAGIC_HASH_CODE;
+                long j14 = -3750763034362895579L;
                 for (int i15 = 0; i15 < this.strlen; i15 += 2) {
                     int i16 = i12 + i15;
-                    j14 = (j14 ^ ((long) ((char) ((bArr[i16 + 1] & 255) | ((bArr[i16] & 255) << 8))))) * Fnv.MAGIC_PRIME;
+                    j14 = (j14 ^ ((long) ((char) ((bArr[i16 + 1] & 255) | ((bArr[i16] & 255) << 8))))) * 1099511628211L;
                 }
                 return j14;
             }
@@ -5977,7 +5977,7 @@ final class JSONReaderJSONB extends JSONReader {
                         char c4 = (char) (((bArr[i19 + 1] & 255) << 8) | (bArr[i19] & 255));
                         if (c4 > 127 || (i18 == 0 && c4 == 0)) {
                             j15 = 0;
-                            if (j15 != 0) {
+                            if (false) {
                                 return j15;
                             }
                         } else {
@@ -5993,7 +5993,7 @@ final class JSONReaderJSONB extends JSONReader {
                                     break;
                                 case 2:
                                     j3 = b4 << 16;
-                                    j4 = j15 & WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                                    j4 = j15 & 65535L;
                                     break;
                                 case 3:
                                     j3 = b4 << 24;
@@ -6026,10 +6026,10 @@ final class JSONReaderJSONB extends JSONReader {
                         return j15;
                     }
                 }
-                long j16 = Fnv.MAGIC_HASH_CODE;
+                long j16 = -3750763034362895579L;
                 for (int i20 = 0; i20 < this.strlen; i20 += 2) {
                     int i21 = i17 + i20;
-                    j16 = (j16 ^ ((long) ((char) (((bArr[i21 + 1] & 255) << 8) | (bArr[i21] & 255))))) * Fnv.MAGIC_PRIME;
+                    j16 = (j16 ^ ((long) ((char) (((bArr[i21 + 1] & 255) << 8) | (bArr[i21] & 255))))) * 1099511628211L;
                 }
                 return j16;
             }
@@ -6042,7 +6042,7 @@ final class JSONReaderJSONB extends JSONReader {
                     if (i25 < 0 || (i25 == 0 && bArr[i22] == 0)) {
                         this.offset = i22;
                         j17 = 0;
-                        if (j17 != 0) {
+                        if (false) {
                             return j17;
                         }
                     } else {
@@ -6058,7 +6058,7 @@ final class JSONReaderJSONB extends JSONReader {
                                 break;
                             case 2:
                                 j = i25 << 16;
-                                j2 = j17 & WebSocketProtocol.PAYLOAD_SHORT_MAX;
+                                j2 = j17 & 65535L;
                                 break;
                             case 3:
                                 j = i25 << 24;
@@ -6093,16 +6093,16 @@ final class JSONReaderJSONB extends JSONReader {
                     return j17;
                 }
             }
-            long j18 = Fnv.MAGIC_HASH_CODE;
+            long j18 = -3750763034362895579L;
             for (int i26 = 0; i26 < this.strlen; i26++) {
                 int i27 = this.offset;
                 this.offset = i27 + 1;
-                j18 = (((long) bArr[i27]) ^ j18) * Fnv.MAGIC_PRIME;
+                j18 = (((long) bArr[i27]) ^ j18) * 1099511628211L;
             }
             return j18;
         }
         int i28 = this.offset + i3;
-        long j19 = Fnv.MAGIC_HASH_CODE;
+        long j19 = -3750763034362895579L;
         while (true) {
             int i29 = this.offset;
             if (i29 >= i28) {
@@ -6114,12 +6114,12 @@ final class JSONReaderJSONB extends JSONReader {
             } else {
                 int i30 = iChar2_utf8 & 255;
                 switch (i30 >> 4) {
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                     case 13:
                         iChar2_utf8 = JSONReaderUTF8.char2_utf8(i30, bArr[i29 + 1], i29);
                         this.offset += 2;
                         break;
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                         iChar2_utf8 = JSONReaderUTF8.char2_utf8(i30, bArr[i29 + 1], bArr[i29 + 2], i29);
                         this.offset += 3;
                         break;
@@ -6127,7 +6127,7 @@ final class JSONReaderJSONB extends JSONReader {
                         throw new JSONException("malformed input around byte " + this.offset);
                 }
             }
-            j19 = (((long) iChar2_utf8) ^ j19) * Fnv.MAGIC_PRIME;
+            j19 = (((long) iChar2_utf8) ^ j19) * 1099511628211L;
         }
     }
 
@@ -6239,7 +6239,7 @@ final class JSONReaderJSONB extends JSONReader {
                         return;
                     case -109:
                         if (!isString()) {
-                            throw notSupportType(b);
+                            throw notSupportType(-109);
                         }
                         skipName();
                         return;
@@ -6340,9 +6340,9 @@ final class JSONReaderJSONB extends JSONReader {
                                                 switch (b) {
                                                     case 121:
                                                     case 122:
-                                                    case Opcodes.LSHR /* 123 */:
-                                                    case Opcodes.IUSHR /* 124 */:
-                                                    case Opcodes.LUSHR /* 125 */:
+                                                    case 123 /* 123 */:
+                                                    case 124 /* 124 */:
+                                                    case 125 /* 125 */:
                                                         this.offset += readInt32Value();
                                                         return;
                                                     default:

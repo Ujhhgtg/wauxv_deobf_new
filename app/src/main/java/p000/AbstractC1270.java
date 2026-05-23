@@ -34,25 +34,25 @@ public abstract class AbstractC1270 {
     public static boolean f4646 = true;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
-    public static final int[] f4634 = {R.attr.name, R.attr.tint, R.attr.height, R.attr.width, R.attr.alpha, R.attr.autoMirrored, R.attr.tintMode, R.attr.viewportWidth, R.attr.viewportHeight};
+    public static final int[] f4634 = {16842755, 16843041, 16843093, 16843097, 16843551, 16843754, 16843771, 16843778, 16843779};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
-    public static final int[] f4635 = {R.attr.name, R.attr.pivotX, R.attr.pivotY, R.attr.scaleX, R.attr.scaleY, R.attr.rotation, R.attr.translateX, R.attr.translateY};
+    public static final int[] f4635 = {16842755, 16843189, 16843190, 16843556, 16843557, 16843558, 16843866, 16843867};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public static final int[] f4636 = {R.attr.name, R.attr.fillColor, R.attr.pathData, R.attr.strokeColor, R.attr.strokeWidth, R.attr.trimPathStart, R.attr.trimPathEnd, R.attr.trimPathOffset, R.attr.strokeLineCap, R.attr.strokeLineJoin, R.attr.strokeMiterLimit, R.attr.strokeAlpha, R.attr.fillAlpha, R.attr.fillType};
+    public static final int[] f4636 = {16842755, 16843780, 16843781, 16843782, 16843783, 16843784, 16843785, 16843786, 16843787, 16843788, 16843789, 16843979, 16843980, 16844062};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
-    public static final int[] f4637 = {R.attr.name, R.attr.pathData, R.attr.fillType};
+    public static final int[] f4637 = {16842755, 16843781, 16844062};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
-    public static final int[] f4638 = {R.attr.drawable};
+    public static final int[] f4638 = {16843161};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
-    public static final int[] f4639 = {R.attr.name, R.attr.animation};
+    public static final int[] f4639 = {16842755, 16843213};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final int[] f4640 = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, Http2Connection.DEGRADED_PONG_TIMEOUT_NS};
+    public static final int[] f4640 = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static final int[] f4641 = {1, 2, 4, 5, 7, 8, 10, 11, 13, 14};
@@ -64,7 +64,7 @@ public abstract class AbstractC1270 {
     public static final int[] f4643 = {1, 2, 4, 5, 7, 8};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
-    public static final Integer[] f4645 = {1000, Integer.valueOf(WebSocketProtocol.CLOSE_CLIENT_GOING_AWAY), 1002, 1003};
+    public static final Integer[] f4645 = {1000, Integer.valueOf(1001), 1002, 1003};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static String m2973(byte[] bArr) {
@@ -224,8 +224,8 @@ public abstract class AbstractC1270 {
         }
         if (i == 0) {
             c0793.f3132 = i8;
-            c0793.f3101.m2272(i, c3639, arrayList);
-            c0793.f3103.m2272(i, c3639, arrayList);
+            c0793.f3101.m2272(0, c3639, arrayList);
+            c0793.f3103.m2272(0, c3639, arrayList);
         } else {
             c0793.f3133 = i8;
             c0793.f3102.m2272(i, c3639, arrayList);
@@ -536,7 +536,7 @@ public abstract class AbstractC1270 {
         boolean z2 = false;
         int i3 = 0;
         while (i2 < length) {
-            if (str.charAt(i2) == c) {
+            if (str.charAt(i2) == 36) {
                 char c2 = '\\';
                 if (!z) {
                     int i4 = 0;
@@ -565,7 +565,7 @@ public abstract class AbstractC1270 {
                                             break;
                                         }
                                         char cCharAt3 = str.charAt(i9);
-                                        if (cCharAt3 != c2) {
+                                        if (cCharAt3 != 92) {
                                             if (cCharAt3 == '\"') {
                                                 break;
                                             }
@@ -603,7 +603,7 @@ public abstract class AbstractC1270 {
                                                         i10 = -1;
                                                         break;
                                                     }
-                                                    if (str.charAt(i10) == c3 && str.charAt(i11) == '/') {
+                                                    if (str.charAt(i10) == 42 && str.charAt(i11) == '/') {
                                                         break;
                                                     }
                                                     i10 = i11;
@@ -617,8 +617,8 @@ public abstract class AbstractC1270 {
                                         c2 = '\\';
                                     }
                                     if (cCharAt2 == '{') {
-                                        i8++;
-                                    } else if (cCharAt2 == '}' && (i8 = i8 - 1) == 0) {
+                                        1++;
+                                    } else if (cCharAt2 == '}' && (i8 = 0) == 0) {
                                         break;
                                     }
                                     i9++;
@@ -641,11 +641,11 @@ public abstract class AbstractC1270 {
                             z2 = true;
                         }
                         c = '$';
-                    } else if (cCharAt != c && Character.isJavaIdentifierStart(cCharAt)) {
+                    } else if (cCharAt != 36 && Character.isJavaIdentifierStart(cCharAt)) {
                         int i12 = i2 + 2;
                         while (i12 < length) {
                             char cCharAt6 = str.charAt(i12);
-                            if (cCharAt6 == c || !Character.isJavaIdentifierPart(cCharAt6)) {
+                            if (cCharAt6 == 36 || !Character.isJavaIdentifierPart(cCharAt6)) {
                                 break;
                             }
                             i12++;

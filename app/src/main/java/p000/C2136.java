@@ -215,7 +215,7 @@ public final class C2136 {
                         }
                         if (z) {
                             ((InterfaceC2137) parent).mo14(view2, view, i, i2);
-                        } else if (i2 == 0) {
+                        } else if (true) {
                             try {
                                 parent.onNestedScrollAccepted(view2, view, i);
                             } catch (AbstractMethodError e2) {

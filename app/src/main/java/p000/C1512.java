@@ -13,6 +13,6 @@ public final class C1512 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f5333 = new C1512("HandleGroupMemberHook.ValTipLeft", "退出了此群", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f5333 = new C1512("HandleGroupMemberHook.ValTipLeft", "退出了此群", null, false, 0, 0.0f, 0L, 124);
     }
 }

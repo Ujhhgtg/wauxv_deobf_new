@@ -33,7 +33,7 @@ public final class C1070 implements InterfaceC1062 {
     public final synchronized C1069 m2634() {
         try {
             if (this.f3884 == null) {
-                this.f3884 = C1069.m2624(this.f3881, this.f3882);
+                this.f3884 = C1069.m2624(this.f3881, 262144000L);
             }
         } catch (Throwable th) {
             throw th;

@@ -13,6 +13,6 @@ public final class C2038 extends AbstractC0982 {
 
     static {
         String[] strArr = AbstractC1574.f5469;
-        f6812 = new C2038("MsgBgBubbleHook.ValLeftLightBubbleColor", "#00000000", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f6812 = new C2038("MsgBgBubbleHook.ValLeftLightBubbleColor", "#00000000", null, false, 0, 0.0f, 0L, 124);
     }
 }

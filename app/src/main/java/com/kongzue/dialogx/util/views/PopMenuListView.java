@@ -37,7 +37,7 @@ public class PopMenuListView extends ListView {
         float size = View.MeasureSpec.getSize(i2);
         float f = this.f966;
         if (f <= size && f > -1.0f) {
-            i2 = View.MeasureSpec.makeMeasureSpec(Float.valueOf(f).intValue(), Integer.MIN_VALUE);
+            i2 = View.MeasureSpec.makeMeasureSpec(Float.valueOf(f).intValue(), -2147483648);
         }
         super.onMeasure(i, i2);
     }

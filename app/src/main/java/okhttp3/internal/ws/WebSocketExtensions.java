@@ -39,7 +39,7 @@ public final class WebSocketExtensions {
             boolean z3 = false;
             boolean z4 = false;
             for (int i = 0; i < size; i++) {
-                if (AbstractC2849.m4855(headers.name(i), WebSocketExtensions.HEADER_WEB_SOCKET_EXTENSION)) {
+                if (AbstractC2849.m4855(headers.name(i), "Sec-WebSocket-Extensions")) {
                     String strValue = headers.value(i);
                     int i2 = 0;
                     while (i2 < strValue.length()) {
@@ -54,7 +54,7 @@ public final class WebSocketExtensions {
                             }
                             i2 = i3;
                             while (i2 < iDelimiterOffset$default) {
-                                int iDelimiterOffset2 = Util.delimiterOffset(strValue, c, i2, iDelimiterOffset$default);
+                                int iDelimiterOffset2 = Util.delimiterOffset(strValue, 59, i2, iDelimiterOffset$default);
                                 int iDelimiterOffset3 = Util.delimiterOffset(strValue, '=', i2, iDelimiterOffset2);
                                 String strTrimSubstring3 = Util.trimSubstring(strValue, i2, iDelimiterOffset3);
                                 if (iDelimiterOffset3 < iDelimiterOffset2) {
@@ -226,7 +226,7 @@ public final class WebSocketExtensions {
         }
         int i3 = (iHashCode2 + r3) * 31;
         boolean z4 = this.unknownValues;
-        return i3 + (z4 ? 1 : z4);
+        return i3 + (z4 ? 1 : false);
     }
 
     public final boolean noContextTakeover(boolean z) {

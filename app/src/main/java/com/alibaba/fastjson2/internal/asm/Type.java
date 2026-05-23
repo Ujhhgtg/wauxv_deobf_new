@@ -64,7 +64,7 @@ public final class Type {
         TYPE_JSON_READER = type7;
         Type type8 = new Type(10, "Lcom/alibaba/fastjson2/JSONWriter;", 1, 33);
         TYPE_JSON_WRITER = type8;
-        Type type9 = new Type(10, ASMUtils.DESC_SUPPLIER, 1, 28);
+        Type type9 = new Type(10, "Ljava/util/function/Supplier;", 1, 28);
         TYPE_SUPPLIER = type9;
         TYPES_0 = new Type[]{type2, type5, type5, type, type6};
         TYPES_1 = new Type[]{type8, type4, type4, type3, type};
@@ -81,7 +81,7 @@ public final class Type {
     }
 
     public static Type[] getArgumentTypes(String str) {
-        str.getClass();
+        
         int i = 0;
         switch (str) {
             case "(Lcom/alibaba/fastjson2/JSONReader;Ljava/lang/reflect/Type;Ljava/lang/Object;J)Ljava/lang/Object;":
@@ -129,7 +129,7 @@ public final class Type {
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public static int getArgumentsAndReturnSizes(String str) {
-        str.getClass();
+        
         byte b = -1;
         switch (str.hashCode()) {
             case -2043530993:
@@ -204,12 +204,12 @@ public final class Type {
                 break;
             case -39224379:
                 if (str.equals("(Lcom/alibaba/fastjson2/JSONReader;Ljava/util/List;ILjava/lang/String;)V")) {
-                    b = ek.l;
+                    b = 14;
                 }
                 break;
             case 39784:
                 if (str.equals("()I")) {
-                    b = ek.m;
+                    b = 15;
                 }
                 break;
             case 39785:
@@ -347,7 +347,7 @@ public final class Type {
             case 0:
             case 4:
             case 20:
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
             case 35:
                 return 8;
             case 1:
@@ -361,7 +361,7 @@ public final class Type {
             case 37:
                 return 9;
             case 3:
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return 20;
             case 5:
             case 27:
@@ -377,27 +377,27 @@ public final class Type {
             case 41:
                 return 16;
             case 10:
-            case Opcodes.LLOAD /* 22 */:
-            case Opcodes.FLOAD /* 23 */:
-            case Opcodes.DLOAD /* 24 */:
+            case 22 /* 22 */:
+            case 23 /* 23 */:
+            case 24 /* 24 */:
             case 29:
             case 31:
             case 38:
                 return 13;
             case 11:
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
             case 32:
             case 34:
             case 40:
                 return 12;
             case 13:
             case 15:
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
             case 39:
                 return 5;
             case 16:
                 return 6;
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return 4;
             default:
                 char cCharAt = str.charAt(1);
@@ -469,46 +469,46 @@ public final class Type {
         int i3 = i2 - i;
         if (i3 == 24) {
             Type type = TYPE_TYPE;
-            if (str.regionMatches(i, type.valueBuffer, 0, i3)) {
+            if (str.regionMatches(i, type.valueBuffer, 0, 24)) {
                 return type;
             }
         } else if (i3 == 29) {
             Type type2 = TYPE_SUPPLIER;
-            if (str.regionMatches(i, type2.valueBuffer, 0, i3)) {
+            if (str.regionMatches(i, type2.valueBuffer, 0, 29)) {
                 return type2;
             }
         } else if (i3 != 34) {
             switch (i3) {
                 case 16:
                     Type type3 = TYPE_LIST;
-                    if (str.regionMatches(i, type3.valueBuffer, 0, i3)) {
+                    if (str.regionMatches(i, type3.valueBuffer, 0, 16)) {
                         return type3;
                     }
                     break;
-                case Opcodes.SIPUSH /* 17 */:
+                case 17 /* 17 */:
                     Type type4 = TYPE_CLASS;
-                    if (str.regionMatches(i, type4.valueBuffer, 0, i3)) {
+                    if (str.regionMatches(i, type4.valueBuffer, 0, 17)) {
                         return type4;
                     }
                     break;
-                case Opcodes.LDC /* 18 */:
+                case 18 /* 18 */:
                     Type type5 = TYPE_STRING;
-                    if (str.regionMatches(i, type5.valueBuffer, 0, i3)) {
+                    if (str.regionMatches(i, type5.valueBuffer, 0, 18)) {
                         return type5;
                     }
                     Type type6 = TYPE_OBJECT;
-                    if (str.regionMatches(i, type6.valueBuffer, 0, i3)) {
+                    if (str.regionMatches(i, type6.valueBuffer, 0, 18)) {
                         return type6;
                     }
                     break;
             }
         } else {
             Type type7 = TYPE_JSON_WRITER;
-            if (str.regionMatches(i, type7.valueBuffer, 0, i3)) {
+            if (str.regionMatches(i, type7.valueBuffer, 0, 34)) {
                 return type7;
             }
             Type type8 = TYPE_JSON_READER;
-            if (str.regionMatches(i, type8.valueBuffer, 0, i3)) {
+            if (str.regionMatches(i, type8.valueBuffer, 0, 34)) {
                 return type8;
             }
         }
@@ -538,7 +538,7 @@ public final class Type {
             case 9:
                 StringBuilder sb = new StringBuilder(getTypeInternal(this.valueBuffer, getDimensions() + this.valueBegin, this.valueEnd).getClassName());
                 for (int dimensions = getDimensions(); dimensions > 0; dimensions--) {
-                    sb.append(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI);
+                    sb.append("[]");
                 }
                 return sb.toString();
             case 10:
@@ -557,7 +557,7 @@ public final class Type {
                 return "L" + this.valueBuffer.substring(this.valueBegin, this.valueEnd) + ';';
             }
             String str = this.valueBuffer;
-            str.getClass();
+            
             if (str.equals("VZCBSIFJD")) {
                 if (this.valueBegin == 7 && this.valueEnd == 8) {
                     return "J";
@@ -568,7 +568,7 @@ public final class Type {
             return this.valueBuffer.substring(this.valueBegin, this.valueEnd);
         }
         String str2 = this.valueBuffer;
-        str2.getClass();
+        
         switch (str2) {
             case "(Lcom/alibaba/fastjson2/JSONReader;Ljava/lang/reflect/Type;Ljava/lang/Object;J)Ljava/lang/Object;":
                 int i2 = this.valueBegin;
@@ -618,7 +618,7 @@ public final class Type {
                     return "Ljava/lang/Class;";
                 }
                 if (i5 == 19 && this.valueEnd == 46) {
-                    return ASMUtils.DESC_SUPPLIER;
+                    return "Ljava/util/function/Supplier;";
                 }
                 break;
         }

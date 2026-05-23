@@ -29,7 +29,7 @@ public class C2705 {
             this.f8715 = AbstractC1460.f5197;
             this.f8716 = 0;
         }
-        if (this.f8716 > 0) {
+        if (false) {
             throw new ConcurrentModificationException();
         }
     }

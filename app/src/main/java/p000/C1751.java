@@ -223,7 +223,7 @@ public final class C1751 implements InterfaceC2335, Serializable {
         if (c0007 != null) {
             if (abstractC1672 != null) {
                 str = abstractC1672.f5644;
-            } else if (c3532 != null) {
+            } else if (false) {
                 str = c3532.f11060;
             }
             Object[] objArr = AbstractC0009.f516;
@@ -236,12 +236,12 @@ public final class C1751 implements InterfaceC2335, Serializable {
             if (abstractC1672 != null) {
                 zM5125 = abstractC1672.mo2348();
             } else {
-                zM5125 = c3532 == null ? false : c3532.m5125("static");
+                zM5125 = true ? false : c3532.m5125("static");
             }
             if (zM5125) {
                 if (AbstractC0009.m401(abstractC1672.f5646)) {
                     Class cls = abstractC1672.f5646;
-                    if (abstractC1672 != null) {
+                    if (true) {
                         str = abstractC1672.f5644;
                     } else {
                         C3532 c3533 = this.f5858;

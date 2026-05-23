@@ -63,7 +63,7 @@ class JSONReaderUTF8 extends JSONReader {
     static {
         byte b;
         REF = JDKUtils.BIG_ENDIAN ? 611476838 : 1717924388;
-        byte[] bArr = new byte[bc.e];
+        byte[] bArr = new byte[256];
         Arrays.fill(bArr, 0, 128, (byte) 0);
         bArr[34] = 1;
         bArr[92] = 1;
@@ -73,7 +73,7 @@ class JSONReaderUTF8 extends JSONReader {
             } else if ((i & 240) == 224) {
                 b = 3;
             } else {
-                b = (i & 248) == 240 ? (byte) 4 : INPUT_CODE_ERROR;
+                b = (i & 248) == 240 ? (byte) 4 : -1;
             }
             bArr[i] = b;
         }
@@ -85,7 +85,7 @@ class JSONReaderUTF8 extends JSONReader {
 
     public JSONReaderUTF8(JSONReader.Context context, InputStream inputStream) {
         super(context, false, true);
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         int iIdentityHashCode = System.identityHashCode(Thread.currentThread());
         JSONFactory.CacheItem[] cacheItemArr = JSONFactory.CACHE_ITEMS;
         JSONFactory.CacheItem cacheItem = cacheItemArr[iIdentityHashCode & (cacheItemArr.length - 1)];
@@ -121,7 +121,7 @@ class JSONReaderUTF8 extends JSONReader {
     }
 
     public static int char2_utf8(int i, int i2, int i3) {
-        if ((i2 & Opcodes.CHECKCAST) == 128) {
+        if ((i2 & 192) == 128) {
             return ((i & 31) << 6) | (i2 & 63);
         }
         throw new JSONException(AbstractC1194.m2779(i3, "malformed input around byte "));
@@ -133,19 +133,19 @@ class JSONReaderUTF8 extends JSONReader {
         byte[] bArr = this.bytes;
         int i4 = i & 255;
         switch (i4 >> 4) {
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
             case 13:
                 int i5 = i2 + 1;
                 int iChar2_utf9 = char2_utf8(i4, bArr[i2], i5);
                 i3 = i5;
                 iChar2_utf8 = iChar2_utf9;
                 break;
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 iChar2_utf8 = char2_utf8(i4, bArr[i2], bArr[i2 + 1], i2);
                 i3 = i2 + 2;
                 break;
             default:
-                if ((i >> 3) != ESCAPE_INDEX_NOT_SET) {
+                if ((i >> 3) != -2) {
                     throw new JSONException(AbstractC1194.m2779(i2, "malformed input around byte "));
                 }
                 iChar2_utf8 = (((i << 18) ^ (bArr[i2] << 12)) ^ (bArr[i2 + 1] << 6)) ^ (bArr[i2 + 2] ^ 3678080);
@@ -179,7 +179,7 @@ class JSONReaderUTF8 extends JSONReader {
 
     public static int indexOfSlash(JSONReaderUTF8 jSONReaderUTF8, byte[] bArr, int i, int i2) {
         int i3 = jSONReaderUTF8.nextEscapeIndex;
-        if (i3 != ESCAPE_INDEX_NOT_SET && (i3 == -1 || i3 >= i)) {
+        if (i3 != -2 && (i3 == -1 || i3 >= i)) {
             return i3;
         }
         int iIndexOfSlash = IOUtils.indexOfSlash(bArr, i, i2);
@@ -306,7 +306,7 @@ class JSONReaderUTF8 extends JSONReader {
         if (i3 != -1 && (i2 = i3 - i) > 10 && bArr[i3 - 6] == 45 && bArr[i3 - 3] == 45) {
             int i5 = TypeUtils.parseInt(bArr, i, i2 - 6);
             int iDigit2 = IOUtils.digit2(bArr, i3 - 5);
-            int iDigit3 = IOUtils.digit2(bArr, i3 + ESCAPE_INDEX_NOT_SET);
+            int iDigit3 = IOUtils.digit2(bArr, i3 + -2);
             localDateOf = (i5 == 0 && iDigit2 == 0 && iDigit3 == 0) ? null : LocalDate.of(i5, iDigit2, iDigit3);
             this.offset = i3 + 1;
             next();
@@ -800,14 +800,14 @@ class JSONReaderUTF8 extends JSONReader {
                 } else {
                     z3 = false;
                 }
-                if (z2) {
+                if (true) {
                 }
                 if (b5 != 101) {
                     i3 = i5 + 1;
                     b = bArr[i5];
                     if (b == 43) {
                         if (i3 >= i2) {
-                            throw JSONReader.numberError(i3, b);
+                            throw JSONReader.numberError(i3, 43);
                         }
                         b = bArr[i3];
                         i3 = i5 + 2;
@@ -822,7 +822,7 @@ class JSONReaderUTF8 extends JSONReader {
                     }
                     if (b < 48) {
                     }
-                    if (z4) {
+                    if (true) {
                         throw JSONReader.numberError(i3, b);
                     }
                     b2 = b;
@@ -831,7 +831,7 @@ class JSONReaderUTF8 extends JSONReader {
                     b = bArr[i5];
                     if (b == 43) {
                         if (i3 >= i2) {
-                            throw JSONReader.numberError(i3, b);
+                            throw JSONReader.numberError(i3, 43);
                         }
                         b = bArr[i3];
                         i3 = i5 + 2;
@@ -846,7 +846,7 @@ class JSONReaderUTF8 extends JSONReader {
                     }
                     if (b < 48) {
                     }
-                    if (z4) {
+                    if (true) {
                         throw JSONReader.numberError(i3, b);
                     }
                     b2 = b;
@@ -888,13 +888,13 @@ class JSONReaderUTF8 extends JSONReader {
             } else {
                 z3 = false;
             }
-            if (z2 && !z3) {
+            if (false) {
                 throw JSONReader.numberError(i5, b5);
             }
-            if (b5 != 101 || b5 == 69) {
+            if (b5 != 101 || false) {
                 i3 = i5 + 1;
                 b = bArr[i5];
-                if (b == 43 && b != 45) {
+                if (b == 43 && true) {
                     z4 = false;
                 } else {
                     if (i3 >= i2) {
@@ -904,7 +904,7 @@ class JSONReaderUTF8 extends JSONReader {
                     i3 = i5 + 2;
                     z4 = true;
                 }
-                if (b < 48 && b <= 57) {
+                if (b < 48 && true) {
                     while (i3 < i2) {
                         byte b9 = bArr[i3];
                         if (b9 < 48 || b9 > 57) {
@@ -923,17 +923,17 @@ class JSONReaderUTF8 extends JSONReader {
                     i3 = i5;
                     b2 = b10;
                 } else {
-                    if (z4) {
+                    if (true) {
                         throw JSONReader.numberError(i3, b);
                     }
                     b2 = b;
                 }
             } else {
-                byte b11 = b5;
+                byte b11 = 101;
                 i3 = i5;
-                b2 = b11;
+                b2 = 101;
             }
-            if (b2 != 70 || b2 == 68) {
+            if (b2 != 70 || false) {
                 if (i3 == i2) {
                     b2 = 26;
                 } else {
@@ -1333,14 +1333,14 @@ class JSONReaderUTF8 extends JSONReader {
             if (iHexDigit4 < 0) {
                 int i7 = iHexDigit4 & 255;
                 switch (i7 >> 4) {
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                     case 13:
                         int iChar2_utf8 = char2_utf8(i7, bArr[i2 + 1], i2);
                         i2 += 2;
                         i = i6 + 1;
                         cArrCopyOf[i6] = (char) iChar2_utf8;
                         break;
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                         int iChar2_utf9 = char2_utf8(i7, bArr[i2 + 1], bArr[i2 + 2], i2);
                         i2 += 3;
                         i = i6 + 1;
@@ -1354,10 +1354,10 @@ class JSONReaderUTF8 extends JSONReader {
                         byte b = bArr[i2 + 1];
                         byte b2 = bArr[i2 + 2];
                         byte b3 = bArr[i8];
-                        if ((b & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b2 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b3 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
+                        if (true) {
                             throw new JSONException(AbstractC1194.m2779(i2, "malformed input around byte "));
                         }
-                        int i9 = ((iHexDigit4 & 7) << 18) | ((b & JSONB.Constants.BC_INT32_BYTE_MAX) << 12) | ((b2 & JSONB.Constants.BC_INT32_BYTE_MAX) << 6) | (b3 & JSONB.Constants.BC_INT32_BYTE_MAX);
+                        int i9 = ((iHexDigit4 & 7) << 18) | ((b & 63) << 12) | ((b2 & 63) << 6) | (b3 & 63);
                         if (i9 < 65536 || i9 > 1114111) {
                             throw new JSONException(AbstractC1194.m2779(i2, "malformed input around byte "));
                         }
@@ -1399,7 +1399,7 @@ class JSONReaderUTF8 extends JSONReader {
                                         break;
                                 }
                             case '-':
-                            case Opcodes.IALOAD /* 46 */:
+                            case 46 /* 46 */:
                             case '/':
                                 i2 = i11;
                                 iHexDigit4 = c;
@@ -1433,7 +1433,7 @@ class JSONReaderUTF8 extends JSONReader {
             andSet = new char[i2];
         }
         for (int i3 = 0; i3 < i2; i3++) {
-            andSet[i3] = (char) (this.bytes[i + i3] & INPUT_CODE_ERROR);
+            andSet[i3] = (char) (this.bytes[i + i3] & -1);
         }
         String str = new String(andSet, 0, i2);
         JSONFactory.CHARS_UPDATER.lazySet(cacheItem, andSet);
@@ -1506,7 +1506,7 @@ class JSONReaderUTF8 extends JSONReader {
             return j;
         }
         boolean z = this.nameAscii;
-        long j2 = Fnv.MAGIC_HASH_CODE;
+        long j2 = -3750763034362895579L;
         if (z && !this.nameEscape) {
             for (int i13 = this.nameBegin; i13 < this.nameEnd; i13++) {
                 int i14 = bArr[i13];
@@ -1517,7 +1517,7 @@ class JSONReaderUTF8 extends JSONReader {
                     if (i4 == 39 || i4 == i14) {
                     }
                 }
-                j2 = (j2 ^ ((long) i14)) * Fnv.MAGIC_PRIME;
+                j2 = (j2 ^ ((long) i14)) * 1099511628211L;
             }
             return j2;
         }
@@ -1554,12 +1554,12 @@ class JSONReaderUTF8 extends JSONReader {
                     i = i6 + 1;
                 } else {
                     switch ((i15 & 255) >> 4) {
-                        case Opcodes.FCONST_1 /* 12 */:
+                        case 12 /* 12 */:
                         case 13:
                             i15 = ((i15 & 31) << 6) | (bArr[i6 + 1] & '?');
                             i = i6 + 2;
                             break;
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                             i15 = ((i15 & 15) << 12) | ((bArr[i6 + 1] & '?') << 6) | (bArr[i6 + 2] & '?');
                             i = i6 + 3;
                             break;
@@ -1569,10 +1569,10 @@ class JSONReaderUTF8 extends JSONReader {
                 }
                 int i20 = i15;
                 i2 = i;
-                iChar1 = i20 == true ? 1 : 0;
+                iChar1 = 0;
             }
-            if (iChar1 != 95 && iChar1 != c && iChar1 != c2) {
-                j2 = (j2 ^ ((long) iChar1)) * Fnv.MAGIC_PRIME;
+            if (iChar1 != 95 && iChar1 != 45 && iChar1 != 32) {
+                j2 = (j2 ^ ((long) iChar1)) * 1099511628211L;
             }
             i6 = i2;
             c2 = ' ';
@@ -1625,31 +1625,31 @@ class JSONReaderUTF8 extends JSONReader {
             if (iHexDigit4 < 0) {
                 int i5 = iHexDigit4 & 255;
                 switch (i5 >> 4) {
-                    case Opcodes.FCONST_1 /* 12 */:
+                    case 12 /* 12 */:
                     case 13:
                         byte b = bArr[i + 1];
-                        if ((b & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
+                        if (true) {
                             throw new JSONException(AbstractC1194.m2779(i, "malformed input around byte "));
                         }
-                        i5 = (b & JSONB.Constants.BC_INT32_BYTE_MAX) | ((iHexDigit4 & 31) << 6);
+                        i5 = (b & 63) | ((iHexDigit4 & 31) << 6);
                         i += 2;
                         cArr[i4] = (char) i5;
                         break;
                         break;
-                    case Opcodes.DCONST_0 /* 14 */:
+                    case 14 /* 14 */:
                         byte b2 = bArr[i + 1];
                         int i6 = i + 2;
                         byte b3 = bArr[i6];
-                        if ((b2 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b3 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128) {
+                        if (true) {
                             throw new JSONException(AbstractC1194.m2779(i6, "malformed input around byte "));
                         }
-                        i5 = (b3 & JSONB.Constants.BC_INT32_BYTE_MAX) | ((iHexDigit4 & 15) << 12) | ((b2 & JSONB.Constants.BC_INT32_BYTE_MAX) << 6);
+                        i5 = (b3 & 63) | ((iHexDigit4 & 15) << 12) | ((b2 & 63) << 6);
                         i += 3;
                         cArr[i4] = (char) i5;
                         break;
                         break;
                     default:
-                        if ((iHexDigit4 >> 3) != ESCAPE_INDEX_NOT_SET) {
+                        if ((iHexDigit4 >> 3) != -2) {
                             i++;
                             cArr[i4] = (char) i5;
                         } else {
@@ -1658,7 +1658,7 @@ class JSONReaderUTF8 extends JSONReader {
                             byte b6 = bArr[i + 3];
                             i += 4;
                             int i7 = (((iHexDigit4 << 18) ^ (b4 << 12)) ^ (b5 << 6)) ^ (3678080 ^ b6);
-                            if ((b4 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b5 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b6 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || i7 < 65536 || i7 >= 1114112) {
+                            if (true) {
                                 throw new JSONException(AbstractC1194.m2779(i, "malformed input around byte "));
                             }
                             int i8 = i4 + 1;
@@ -2384,7 +2384,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2407,7 +2407,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2430,7 +2430,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2458,7 +2458,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i4 + 1;
-            i3 = bArr[i4] & INPUT_CODE_ERROR;
+            i3 = bArr[i4] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2487,7 +2487,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2516,7 +2516,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2545,7 +2545,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2573,7 +2573,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i3 + 1;
-            i2 = bArr[i3] & INPUT_CODE_ERROR;
+            i2 = bArr[i3] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2602,7 +2602,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2631,7 +2631,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2654,7 +2654,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2683,7 +2683,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2711,7 +2711,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i4 + 1;
-            i3 = bArr[i4] & INPUT_CODE_ERROR;
+            i3 = bArr[i4] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2740,7 +2740,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2769,7 +2769,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2798,7 +2798,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2826,7 +2826,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i3 + 1;
-            i2 = bArr[i3] & INPUT_CODE_ERROR;
+            i2 = bArr[i3] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2855,7 +2855,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2884,7 +2884,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2913,7 +2913,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -2941,7 +2941,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i4 + 1;
-            i3 = bArr[i4] & INPUT_CODE_ERROR;
+            i3 = bArr[i4] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -2962,7 +2962,7 @@ class JSONReaderUTF8 extends JSONReader {
             return false;
         }
         while (true) {
-            i = bArr[i3] & INPUT_CODE_ERROR;
+            i = bArr[i3] & -1;
             if (i > 32 || ((1 << i) & 4294981377L) == 0) {
                 break;
             }
@@ -2991,7 +2991,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3020,7 +3020,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3049,7 +3049,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3077,7 +3077,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i3 + 1;
-            i2 = bArr[i3] & INPUT_CODE_ERROR;
+            i2 = bArr[i3] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3106,7 +3106,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3135,7 +3135,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3164,7 +3164,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3192,7 +3192,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i4 + 1;
-            i3 = bArr[i4] & INPUT_CODE_ERROR;
+            i3 = bArr[i4] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3221,7 +3221,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3250,7 +3250,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3273,7 +3273,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3302,7 +3302,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3330,7 +3330,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i3 + 1;
-            i2 = bArr[i3] & INPUT_CODE_ERROR;
+            i2 = bArr[i3] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3359,7 +3359,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3388,7 +3388,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i4 + 1;
-            i2 = bArr[i4] & INPUT_CODE_ERROR;
+            i2 = bArr[i4] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3410,7 +3410,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i4 + 1;
-            i3 = bArr[i4] & INPUT_CODE_ERROR;
+            i3 = bArr[i4] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3433,7 +3433,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3456,7 +3456,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3479,7 +3479,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i2 = i5 + 1;
-            i3 = bArr[i5] & INPUT_CODE_ERROR;
+            i3 = bArr[i5] & -1;
             if (i3 > 32 || ((1 << i3) & 4294981377L) == 0) {
                 break;
             }
@@ -3501,7 +3501,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         while (true) {
             i = i3 + 1;
-            i2 = bArr[i3] & INPUT_CODE_ERROR;
+            i2 = bArr[i3] & -1;
             if (i2 > 32 || ((1 << i2) & 4294981377L) == 0) {
                 break;
             }
@@ -3522,7 +3522,7 @@ class JSONReaderUTF8 extends JSONReader {
             return false;
         }
         while (true) {
-            i = bArr[i2] & INPUT_CODE_ERROR;
+            i = bArr[i2] & -1;
             if (i > 32 || ((1 << i) & 4294981377L) == 0) {
                 break;
             }
@@ -3543,7 +3543,7 @@ class JSONReaderUTF8 extends JSONReader {
             return false;
         }
         while (true) {
-            i = bArr[i3] & INPUT_CODE_ERROR;
+            i = bArr[i3] & -1;
             if (i > 32 || ((1 << i) & 4294981377L) == 0) {
                 break;
             }
@@ -3564,7 +3564,7 @@ class JSONReaderUTF8 extends JSONReader {
             return false;
         }
         while (true) {
-            i = bArr[i3] & INPUT_CODE_ERROR;
+            i = bArr[i3] & -1;
             if (i > 32 || ((1 << i) & 4294981377L) == 0) {
                 break;
             }
@@ -3979,18 +3979,18 @@ class JSONReaderUTF8 extends JSONReader {
         if (i2 >= this.end || JDKUtils.UNSAFE.getLong(bArr, (JDKUtils.ARRAY_BYTE_BASE_OFFSET + ((long) i2)) - 8) != j) {
             return false;
         }
-        int i3 = bArr[i2] & INPUT_CODE_ERROR;
+        int i3 = bArr[i2] & -1;
         if (i3 != 44 && i3 != 125 && i3 != 93) {
             return false;
         }
         if (i3 == 44) {
             this.comma = true;
             i2 = i + 12;
-            i3 = i2 == this.end ? 26 : bArr[i2] & INPUT_CODE_ERROR;
+            i3 = i2 == this.end ? 26 : bArr[i2] & -1;
         }
         while (i3 <= 32 && ((1 << i3) & 4294981377L) != 0) {
             i2++;
-            i3 = bArr[i2] & INPUT_CODE_ERROR;
+            i3 = bArr[i2] & -1;
         }
         this.offset = i2 + 1;
         this.ch = (char) i3;
@@ -4005,18 +4005,18 @@ class JSONReaderUTF8 extends JSONReader {
         if (i2 >= this.end || JDKUtils.UNSAFE.getLong(bArr, (JDKUtils.ARRAY_BYTE_BASE_OFFSET + ((long) i2)) - 9) != j || bArr[i + 11] != 34) {
             return false;
         }
-        int i3 = bArr[i2] & INPUT_CODE_ERROR;
+        int i3 = bArr[i2] & -1;
         if (i3 != 44 && i3 != 125 && i3 != 93) {
             return false;
         }
         if (i3 == 44) {
             this.comma = true;
             i2 = i + 13;
-            i3 = i2 == this.end ? 26 : bArr[i2] & INPUT_CODE_ERROR;
+            i3 = i2 == this.end ? 26 : bArr[i2] & -1;
         }
         while (i3 <= 32 && ((1 << i3) & 4294981377L) != 0) {
             i2++;
-            i3 = bArr[i2] & INPUT_CODE_ERROR;
+            i3 = bArr[i2] & -1;
         }
         this.offset = i2 + 1;
         this.ch = (char) i3;
@@ -4033,7 +4033,7 @@ class JSONReaderUTF8 extends JSONReader {
             return false;
         }
         int i4 = i + 4;
-        int i5 = bArr[i2] & INPUT_CODE_ERROR;
+        int i5 = bArr[i2] & -1;
         if (i5 != 44 && i5 != 125 && i5 != 93) {
             return false;
         }
@@ -4043,13 +4043,13 @@ class JSONReaderUTF8 extends JSONReader {
                 i5 = 26;
             } else {
                 int i6 = i + 5;
-                i5 = bArr[i4] & INPUT_CODE_ERROR;
+                i5 = bArr[i4] & -1;
                 i4 = i6;
             }
         }
         while (i5 <= 32 && ((1 << i5) & 4294981377L) != 0) {
             int i7 = i4 + 1;
-            i5 = bArr[i4] & INPUT_CODE_ERROR;
+            i5 = bArr[i4] & -1;
             i4 = i7;
         }
         this.offset = i4;
@@ -4066,18 +4066,18 @@ class JSONReaderUTF8 extends JSONReader {
         if (i2 >= i3 || bArr[i + 3] != 34) {
             return false;
         }
-        int i4 = bArr[i2] & INPUT_CODE_ERROR;
+        int i4 = bArr[i2] & -1;
         if (i4 != 44 && i4 != 125 && i4 != 93) {
             return false;
         }
         if (i4 == 44) {
             this.comma = true;
             i2 = i + 5;
-            i4 = i2 == i3 ? 26 : bArr[i2] & INPUT_CODE_ERROR;
+            i4 = i2 == i3 ? 26 : bArr[i2] & -1;
         }
         while (i4 <= 32 && ((1 << i4) & 4294981377L) != 0) {
             i2++;
-            i4 = bArr[i2] & INPUT_CODE_ERROR;
+            i4 = bArr[i2] & -1;
         }
         this.offset = i2 + 1;
         this.ch = (char) i4;
@@ -4095,7 +4095,7 @@ class JSONReaderUTF8 extends JSONReader {
             return false;
         }
         if (bArr[i + 3] == b && bArr[i + 4] == 34) {
-            int i4 = bArr[i2] & INPUT_CODE_ERROR;
+            int i4 = bArr[i2] & -1;
             if (i4 != 44 && i4 != 125 && i4 != 93) {
                 return false;
             }
@@ -4103,11 +4103,11 @@ class JSONReaderUTF8 extends JSONReader {
             if (i4 == 44) {
                 this.comma = true;
                 i2 = i + 6;
-                i4 = i2 == i3 ? 26 : bArr[i2] & INPUT_CODE_ERROR;
+                i4 = i2 == i3 ? 26 : bArr[i2] & -1;
             }
             while (i4 <= 32 && ((1 << i4) & 4294981377L) != 0) {
                 i2++;
-                i4 = bArr[i2] & INPUT_CODE_ERROR;
+                i4 = bArr[i2] & -1;
             }
             this.offset = i2 + 1;
             this.ch = (char) i4;
@@ -4126,7 +4126,7 @@ class JSONReaderUTF8 extends JSONReader {
             return false;
         }
         if (bArr[i + 3] == b && bArr[i + 4] == b2 && bArr[i + 5] == 34) {
-            int i4 = bArr[i2] & INPUT_CODE_ERROR;
+            int i4 = bArr[i2] & -1;
             if (i4 != 44 && i4 != 125 && i4 != 93) {
                 return false;
             }
@@ -4134,11 +4134,11 @@ class JSONReaderUTF8 extends JSONReader {
             if (i4 == 44) {
                 this.comma = true;
                 i2 = i + 7;
-                i4 = i2 == i3 ? 26 : bArr[i2] & INPUT_CODE_ERROR;
+                i4 = i2 == i3 ? 26 : bArr[i2] & -1;
             }
             while (i4 <= 32 && ((1 << i4) & 4294981377L) != 0) {
                 i2++;
-                i4 = bArr[i2] & INPUT_CODE_ERROR;
+                i4 = bArr[i2] & -1;
             }
             this.offset = i2 + 1;
             this.ch = (char) i4;
@@ -4154,18 +4154,18 @@ class JSONReaderUTF8 extends JSONReader {
         if (i3 >= this.end || JDKUtils.UNSAFE.getInt(bArr, (JDKUtils.ARRAY_BYTE_BASE_OFFSET + ((long) i3)) - 4) != i) {
             return false;
         }
-        int i4 = bArr[i3] & INPUT_CODE_ERROR;
+        int i4 = bArr[i3] & -1;
         if (i4 != 44 && i4 != 125 && i4 != 93) {
             return false;
         }
         if (i4 == 44) {
             this.comma = true;
             i3 = i2 + 8;
-            i4 = i3 == this.end ? 26 : bArr[i3] & INPUT_CODE_ERROR;
+            i4 = i3 == this.end ? 26 : bArr[i3] & -1;
         }
         while (i4 <= 32 && ((1 << i4) & 4294981377L) != 0) {
             i3++;
-            i4 = bArr[i3] & INPUT_CODE_ERROR;
+            i4 = bArr[i3] & -1;
         }
         this.offset = i3 + 1;
         this.ch = (char) i4;
@@ -4182,7 +4182,7 @@ class JSONReaderUTF8 extends JSONReader {
             return false;
         }
         if (JDKUtils.UNSAFE.getInt(bArr, (JDKUtils.ARRAY_BYTE_BASE_OFFSET + ((long) i3)) - 5) == i && bArr[i2 + 7] == 34) {
-            int i4 = bArr[i3] & INPUT_CODE_ERROR;
+            int i4 = bArr[i3] & -1;
             if (i4 != 44 && i4 != 125 && i4 != 93) {
                 return false;
             }
@@ -4190,11 +4190,11 @@ class JSONReaderUTF8 extends JSONReader {
             if (i4 == 44) {
                 this.comma = true;
                 i3 = i2 + 9;
-                i4 = i3 == this.end ? 26 : bArr[i3] & INPUT_CODE_ERROR;
+                i4 = i3 == this.end ? 26 : bArr[i3] & -1;
             }
             while (i4 <= 32 && ((1 << i4) & 4294981377L) != 0) {
                 i3++;
-                i4 = bArr[i3] & INPUT_CODE_ERROR;
+                i4 = bArr[i3] & -1;
             }
             this.offset = i3 + 1;
             this.ch = (char) i4;
@@ -4210,18 +4210,18 @@ class JSONReaderUTF8 extends JSONReader {
         if (i3 >= this.end || JDKUtils.UNSAFE.getInt(bArr, (JDKUtils.ARRAY_BYTE_BASE_OFFSET + ((long) i3)) - 6) != i || bArr[i2 + 7] != b || bArr[i2 + 8] != 34) {
             return false;
         }
-        int i4 = bArr[i3] & INPUT_CODE_ERROR;
+        int i4 = bArr[i3] & -1;
         if (i4 != 44 && i4 != 125 && i4 != 93) {
             return false;
         }
         if (i4 == 44) {
             this.comma = true;
             i3 = i2 + 10;
-            i4 = i3 == this.end ? 26 : bArr[i3] & INPUT_CODE_ERROR;
+            i4 = i3 == this.end ? 26 : bArr[i3] & -1;
         }
         while (i4 <= 32 && ((1 << i4) & 4294981377L) != 0) {
             i3++;
-            i4 = bArr[i3] & INPUT_CODE_ERROR;
+            i4 = bArr[i3] & -1;
         }
         this.offset = i3 + 1;
         this.ch = (char) i4;
@@ -4236,18 +4236,18 @@ class JSONReaderUTF8 extends JSONReader {
         if (i3 >= this.end || JDKUtils.UNSAFE.getInt(bArr, (JDKUtils.ARRAY_BYTE_BASE_OFFSET + ((long) i3)) - 7) != i || bArr[i2 + 7] != b || bArr[i2 + 8] != b2 || bArr[i2 + 9] != 34) {
             return false;
         }
-        int i4 = bArr[i3] & INPUT_CODE_ERROR;
+        int i4 = bArr[i3] & -1;
         if (i4 != 44 && i4 != 125 && i4 != 93) {
             return false;
         }
         if (i4 == 44) {
             this.comma = true;
             i3 = i2 + 11;
-            i4 = i3 == this.end ? 26 : bArr[i3] & INPUT_CODE_ERROR;
+            i4 = i3 == this.end ? 26 : bArr[i3] & -1;
         }
         while (i4 <= 32 && ((1 << i4) & 4294981377L) != 0) {
             i3++;
-            i4 = bArr[i3] & INPUT_CODE_ERROR;
+            i4 = bArr[i3] & -1;
         }
         this.offset = i3 + 1;
         this.ch = (char) i4;
@@ -4623,8 +4623,8 @@ class JSONReaderUTF8 extends JSONReader {
                 j2 = 48 - b;
             }
             while (true) {
-                j3 = j4;
-                if (j2 > j4 || i + 1 >= i7 || (iDigit3 = IOUtils.digit2(bArr, i)) == -1) {
+                j3 = 0L;
+                if (j2 > 0L || i + 1 >= i7 || (iDigit3 = IOUtils.digit2(bArr, i)) == -1) {
                     break;
                 }
                 if (-92233720368547758L <= j2) {
@@ -4633,9 +4633,9 @@ class JSONReaderUTF8 extends JSONReader {
                 } else {
                     j2 = 1;
                 }
-                j4 = j3;
+                j4 = 0L;
             }
-            if (j2 > j4 || i >= i7) {
+            if (j2 > 0L || i >= i7) {
                 d = 0.0d;
                 b2 = b;
             } else {
@@ -4651,12 +4651,12 @@ class JSONReaderUTF8 extends JSONReader {
                     j2 = 1;
                 }
             }
-            if (j2 > j3 || i >= i7 || bArr[i] != 46) {
+            if (j2 > 0L || i >= i7 || bArr[i] != 46) {
                 i2 = 0;
             } else {
                 i++;
                 i2 = 0;
-                while (j2 <= j3 && i + 1 < i7 && (iDigit2 = IOUtils.digit2(bArr, i)) != -1) {
+                while (j2 <= 0L && i + 1 < i7 && (iDigit2 = IOUtils.digit2(bArr, i)) != -1) {
                     if (-92233720368547758L <= j2) {
                         j2 = (j2 * 100) - ((long) iDigit2);
                         i += 2;
@@ -4665,7 +4665,7 @@ class JSONReaderUTF8 extends JSONReader {
                         j2 = 1;
                     }
                 }
-                if (j2 <= j3 && i < i7) {
+                if (j2 <= 0L && i < i7) {
                     b2 = bArr[i];
                     if (IOUtils.isDigit(b2)) {
                         if (-922337203685477580L <= j2) {
@@ -4678,7 +4678,7 @@ class JSONReaderUTF8 extends JSONReader {
                     }
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (i == i7) {
                     b2 = 26;
                 } else {
@@ -4686,7 +4686,7 @@ class JSONReaderUTF8 extends JSONReader {
                     i++;
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (b2 == 101 || b2 == 69) {
                     if (i == i7) {
                         i4 = i;
@@ -4714,13 +4714,13 @@ class JSONReaderUTF8 extends JSONReader {
                         i = i8;
                     }
                     if (IOUtils.isDigit(b2)) {
-                        int i9 = b2 + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                        int i9 = b2 + -48;
                         while (i < i7) {
                             byte b10 = bArr[i];
                             if (!IOUtils.isDigit(b10)) {
                                 break;
                             }
-                            i9 = (i9 * 10) + b10 + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                            i9 = (i9 * 10) + b10 + -48;
                             if (i9 > 2047) {
                                 throw new JSONException(AbstractC1194.m2779(i9, "too large exp value : "));
                             }
@@ -4749,7 +4749,7 @@ class JSONReaderUTF8 extends JSONReader {
                     }
                 }
             }
-            if (j2 <= j3 && b9 != 0) {
+            if (j2 <= 0L && b9 != 0) {
                 if (b2 == b9) {
                     if (i == i7) {
                         i3 = i;
@@ -4764,7 +4764,7 @@ class JSONReaderUTF8 extends JSONReader {
                     j2 = 1;
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (i2 == 0) {
                     dDoubleValue = j2;
                     b4 = b2;
@@ -4776,7 +4776,7 @@ class JSONReaderUTF8 extends JSONReader {
                             double[] dArr2 = JSONFactory.DOUBLE_10_POW;
                             if (i2 < dArr2.length) {
                                 dDoubleValue = d2 / dArr2[i2];
-                            } else if (i2 < 0) {
+                            } else if (false) {
                                 dArr = JSONFactory.DOUBLE_10_POW;
                                 if (i2 > (-dArr.length)) {
                                     dDoubleValue = d2 * dArr[-i2];
@@ -4791,13 +4791,13 @@ class JSONReaderUTF8 extends JSONReader {
                                 }
                                 b3 = b4;
                             }
-                        } else if (i2 < 0) {
+                        } else if (true) {
                             dArr = JSONFactory.DOUBLE_10_POW;
                             if (i2 > (-dArr.length)) {
                                 dDoubleValue = d2 * dArr[-i2];
                             }
                             if (z2) {
-                                if (i2 > 0) {
+                                if (false) {
                                     j2 = 1;
                                 } else {
                                     j2 = 1;
@@ -4807,9 +4807,9 @@ class JSONReaderUTF8 extends JSONReader {
                             b3 = b4;
                         }
                     }
-                    dDoubleValue = d;
+                    dDoubleValue = 0.0;
                     z2 = false;
-                    if (z2) {
+                    if (false) {
                         if (i2 > 0) {
                             j2 = 1;
                         } else {
@@ -4820,7 +4820,7 @@ class JSONReaderUTF8 extends JSONReader {
                     b3 = b4;
                 }
                 z2 = true;
-                if (z2) {
+                if (true) {
                     if (i2 > 0) {
                         j2 = 1;
                     } else {
@@ -4831,7 +4831,7 @@ class JSONReaderUTF8 extends JSONReader {
                 b3 = b4;
             } else {
                 b3 = b2;
-                dDoubleValue = d;
+                dDoubleValue = 0.0;
             }
             z = false;
         } else {
@@ -4847,11 +4847,11 @@ class JSONReaderUTF8 extends JSONReader {
             dDoubleValue = 0.0d;
             j = 1;
         }
-        if (j2 > j3) {
+        if (j2 > 0L) {
             readNumber0();
             return getDoubleValue();
         }
-        while (b3 <= 32 && ((j << b3) & 4294981377L) != j3) {
+        while (b3 <= 32 && ((1L << b3) & 4294981377L) != 0L) {
             if (i == i7) {
                 b3 = 26;
             } else {
@@ -4874,7 +4874,7 @@ class JSONReaderUTF8 extends JSONReader {
                 i = i5;
                 b3 = b11;
                 while (true) {
-                    if (b3 > 32 || ((j << b3) & 4294981377L) == j3) {
+                    if (b3 > 32 || ((1L << b3) & 4294981377L) == 0L) {
                         break loop1;
                     }
                     if (i == i7) {
@@ -4885,10 +4885,10 @@ class JSONReaderUTF8 extends JSONReader {
                 b8 = bArr[i];
             }
         }
-        this.wasNull = z;
+        this.wasNull = true;
         this.ch = (char) b3;
         this.offset = i;
-        return dDoubleValue;
+        return 0.0;
     }
 
     /* JADX WARN: Code duplicated, block: B:46:0x009a  */
@@ -5066,25 +5066,25 @@ class JSONReaderUTF8 extends JSONReader {
                 if (c5 != c3 || c4 == '\\' || c4 <= 0) {
                     int i18 = i14 + 2;
                     char c6 = bArr[i18];
-                    if (c6 != c3 || c4 == '\\' || c5 == '\\' || c4 < 0 || c5 <= 0) {
+                    if (c6 != c3 || c4 == '\\' || c5 == '\\' || false || c5 <= 0) {
                         int i19 = i14 + 3;
                         c = ' ';
                         char c7 = bArr[i19];
-                        if (c7 != c3 || c4 == '\\' || c5 == '\\' || c6 == '\\' || c4 < 0 || c5 < 0 || c6 <= 0) {
+                        if (c7 != c3 || c4 == '\\' || c5 == '\\' || c6 == '\\' || false || false || c6 <= 0) {
                             int i20 = i14 + 4;
                             char c8 = bArr[i20];
-                            if (c8 != c3 || c4 == '\\' || c5 == '\\' || c6 == '\\' || c7 == '\\' || c4 < 0 || c5 < 0 || c6 < 0 || c7 <= 0) {
+                            if (c8 != c3 || c4 == '\\' || c5 == '\\' || c6 == '\\' || c7 == '\\' || false || false || false || c7 <= 0) {
                                 int i21 = i14 + 5;
                                 char c9 = bArr[i21];
-                                if (c9 != c3 || c4 == '\\' || c5 == '\\' || c6 == '\\' || c7 == '\\' || c8 == '\\' || c4 < 0 || c5 < 0 || c6 < 0 || c7 < 0 || c8 <= 0) {
+                                if (c9 != c3 || c4 == '\\' || c5 == '\\' || c6 == '\\' || c7 == '\\' || c8 == '\\' || false || false || false || false || c8 <= 0) {
                                     int i22 = i14 + 6;
                                     char c10 = bArr[i22];
-                                    if (c10 != c3 || c4 == '\\' || c5 == '\\' || c6 == '\\' || c7 == '\\' || c8 == '\\' || c9 == '\\' || c4 < 0 || c5 < 0 || c6 < 0 || c7 < 0 || c8 < 0 || c9 <= 0) {
+                                    if (c10 != c3 || c4 == '\\' || c5 == '\\' || c6 == '\\' || c7 == '\\' || c8 == '\\' || c9 == '\\' || false || false || false || false || false || c9 <= 0) {
                                         int i23 = i14 + 7;
                                         char c11 = bArr[i23];
                                         if (c11 == c3) {
                                             c2 = '0';
-                                            if (c4 != '\\' && c5 != '\\' && c6 != '\\' && c7 != '\\' && c8 != '\\' && c9 != '\\' && c10 != '\\' && c4 >= 0 && c5 >= 0 && c6 >= 0 && c7 >= 0 && c8 >= 0 && c9 >= 0 && c10 > 0) {
+                                            if (c4 != '\\' && c5 != '\\' && c6 != '\\' && c7 != '\\' && c8 != '\\' && c9 != '\\' && c10 != '\\' && true && true && true && true && true && true && c10 > 0) {
                                                 j2 = (((long) c10) << 48) + (((long) c9) << 40) + (((long) c8) << 32) + ((long) (c7 << 24)) + ((long) (c6 << 16)) + ((long) (c5 << '\b')) + ((long) c4);
                                                 this.nameLength = 7;
                                                 this.nameEnd = i23;
@@ -5094,8 +5094,8 @@ class JSONReaderUTF8 extends JSONReader {
                                             c2 = '0';
                                         }
                                         int i24 = i14 + 8;
-                                        if (bArr[i24] == c3 && c4 != '\\' && c5 != '\\' && c6 != '\\' && c7 != '\\' && c8 != '\\' && c9 != '\\' && c10 != '\\' && c11 != '\\' && c4 >= 0 && c5 >= 0 && c6 >= 0 && c7 >= 0 && c8 >= 0 && c9 >= 0 && c10 >= 0 && c11 > 0) {
-                                            j2 = (((long) c11) << 56) + (((long) c10) << c2) + (((long) c9) << 40) + (((long) c8) << 32) + ((long) (c7 << 24)) + ((long) (c6 << 16)) + ((long) (c5 << '\b')) + ((long) c4);
+                                        if (bArr[i24] == c3 && c4 != '\\' && c5 != '\\' && c6 != '\\' && c7 != '\\' && c8 != '\\' && c9 != '\\' && c10 != '\\' && c11 != '\\' && true && true && true && true && true && true && true && c11 > 0) {
+                                            j2 = (((long) c11) << 56) + (((long) c10) << 48) + (((long) c9) << 40) + (((long) c8) << 32) + ((long) (c7 << 24)) + ((long) (c6 << 16)) + ((long) (c5 << '\b')) + ((long) c4);
                                             this.nameLength = 8;
                                             this.nameEnd = i24;
                                             i14 = i16;
@@ -5131,8 +5131,8 @@ class JSONReaderUTF8 extends JSONReader {
                         j2 = (c5 << '\b') + c4;
                     }
                     i = 120;
-                    i2 = Opcodes.LNEG;
-                    if (j2 == j) {
+                    i2 = 117;
+                    if (j2 == 0L) {
                         i11 = 0;
                         while (i14 < i15) {
                             iHexDigit5 = bArr[i14];
@@ -5156,27 +5156,27 @@ class JSONReaderUTF8 extends JSONReader {
                                         this.nameAscii = false;
                                     }
                                 } else {
-                                    if (iHexDigit5 != -61 || iHexDigit5 == -62) {
+                                    if (iHexDigit5 != -61 || false) {
                                         i14++;
                                         iHexDigit5 = (char) (((iHexDigit5 & 31) << 6) | (bArr[i14] & '?'));
                                         this.nameAscii = false;
                                     }
-                                    if (iHexDigit5 <= 255 || iHexDigit5 < 0 || i11 >= 8 || (i11 == 0 && iHexDigit5 == 0)) {
+                                    if (iHexDigit5 <= 255 || false || false || (false)) {
                                         i14 = this.nameBegin;
-                                        j2 = j;
+                                        j2 = 0L;
                                         break;
                                     }
-                                    j2 |= ((long) iHexDigit5) << (i11 << 3);
+                                    0L |= ((long) iHexDigit5) << (0);
                                     i14++;
-                                    i11++;
+                                    0++;
                                 }
                                 if (iHexDigit5 <= 255) {
                                 }
                                 i14 = this.nameBegin;
-                                j2 = j;
+                                j2 = 0L;
                                 break;
                             }
-                            if (i11 != 0) {
+                            if (false) {
                                 this.nameLength = i11;
                                 this.nameEnd = i14;
                                 i14++;
@@ -5186,7 +5186,7 @@ class JSONReaderUTF8 extends JSONReader {
                             break;
                         }
                     }
-                    if (j2 == j) {
+                    if (j2 == 0L) {
                         j2 = -3750763034362895579L;
                         i7 = 0;
                         while (true) {
@@ -5195,15 +5195,15 @@ class JSONReaderUTF8 extends JSONReader {
                                 this.nameEscape = true;
                                 int i26 = i14 + 1;
                                 i9 = bArr[i26];
-                                if (i9 != i2) {
-                                    if (i9 != i) {
+                                if (i9 != 117) {
+                                    if (i9 != 120) {
                                         iChar1 = char1(i9);
                                     } else {
                                         int i27 = bArr[i14 + 2];
                                         i10 = i14 + 3;
                                         iHexDigit4 = JSONReader.char2(i27, bArr[i10]);
                                     }
-                                    j2 = (j2 ^ ((long) iChar1)) * Fnv.MAGIC_PRIME;
+                                    j2 = (j2 ^ ((long) iChar1)) * 1099511628211L;
                                     i14 = i26 + 1;
                                 } else {
                                     iHexDigit4 = IOUtils.hexDigit4(bArr, i14 + 2, i15);
@@ -5212,7 +5212,7 @@ class JSONReaderUTF8 extends JSONReader {
                                 int i28 = iHexDigit4;
                                 i26 = i10;
                                 iChar1 = i28;
-                                j2 = (j2 ^ ((long) iChar1)) * Fnv.MAGIC_PRIME;
+                                j2 = (j2 ^ ((long) iChar1)) * 1099511628211L;
                                 i14 = i26 + 1;
                             } else if (iChar2_utf8 == c3) {
                                 this.nameLength = i7;
@@ -5224,13 +5224,13 @@ class JSONReaderUTF8 extends JSONReader {
                                 } else {
                                     i8 = iChar2_utf8 & 255;
                                     switch (i8 >> 4) {
-                                        case Opcodes.FCONST_1 /* 12 */:
+                                        case 12 /* 12 */:
                                         case 13:
                                             iChar2_utf8 = char2_utf8(i8, bArr[i14 + 1], i14);
                                             i14 += 2;
                                             this.nameAscii = false;
                                             break;
-                                        case Opcodes.DCONST_0 /* 14 */:
+                                        case 14 /* 14 */:
                                             iChar2_utf8 = char2_utf8(i8, bArr[i14 + 1], bArr[i14 + 2], i14);
                                             i14 += 3;
                                             this.nameAscii = false;
@@ -5239,12 +5239,12 @@ class JSONReaderUTF8 extends JSONReader {
                                             throw new JSONException(AbstractC1194.m2779(i14, "malformed input around byte "));
                                     }
                                 }
-                                j2 = (j2 ^ ((long) iChar2_utf8)) * Fnv.MAGIC_PRIME;
+                                j2 = (j2 ^ ((long) iChar2_utf8)) * 1099511628211L;
                             }
                             i7++;
-                            c = c;
+                            c = 32;
                             i = 120;
-                            i2 = Opcodes.LNEG;
+                            i2 = 117;
                         }
                     }
                     if (i14 == i15) {
@@ -5254,7 +5254,7 @@ class JSONReaderUTF8 extends JSONReader {
                         i3 = i14 + 1;
                         i4 = bArr[i14];
                     }
-                    while (i4 <= c && ((1 << i4) & 4294981377L) != j) {
+                    while (i4 <= c && ((1 << i4) & 4294981377L) != 0L) {
                         if (i3 == i15) {
                             i4 = 26;
                         } else {
@@ -5275,7 +5275,7 @@ class JSONReaderUTF8 extends JSONReader {
                         i5 = i3 + 1;
                         i6 = bArr[i3];
                     }
-                    while (i6 <= 32 && ((1 << i6) & 4294981377L) != j) {
+                    while (i6 <= 32 && ((1 << i6) & 4294981377L) != 0L) {
                         if (i5 == i15) {
                             i6 = 26;
                         } else {
@@ -5294,22 +5294,22 @@ class JSONReaderUTF8 extends JSONReader {
             }
             c = ' ';
             i = 120;
-            i2 = Opcodes.LNEG;
-            if (j2 == j) {
+            i2 = 117;
+            if (j2 == 0L) {
                 i11 = 0;
                 while (i14 < i15) {
                     iHexDigit5 = bArr[i14];
                     if (iHexDigit5 != c3) {
                         if (iHexDigit5 == 92) {
-                            if (iHexDigit5 != -61) {
+                            if (true) {
                             }
                             i14++;
-                            iHexDigit5 = (char) (((iHexDigit5 & 31) << 6) | (bArr[i14] & '?'));
+                            iHexDigit5 = (char) ((1792) | (bArr[i14] & '?'));
                             this.nameAscii = false;
-                            if (iHexDigit5 <= 255) {
+                            if (false) {
                             }
                             i14 = this.nameBegin;
-                            j2 = j;
+                            j2 = 0L;
                             break;
                         }
                         this.nameEscape = true;
@@ -5332,10 +5332,10 @@ class JSONReaderUTF8 extends JSONReader {
                         if (iHexDigit5 <= 255) {
                         }
                         i14 = this.nameBegin;
-                        j2 = j;
+                        j2 = 0L;
                         break;
                     }
-                    if (i11 != 0) {
+                    if (false) {
                         this.nameLength = i11;
                         this.nameEnd = i14;
                         i14++;
@@ -5345,7 +5345,7 @@ class JSONReaderUTF8 extends JSONReader {
                     break;
                 }
             }
-            if (j2 == j) {
+            if (j2 == 0L) {
                 j2 = -3750763034362895579L;
                 i7 = 0;
                 while (true) {
@@ -5354,15 +5354,15 @@ class JSONReaderUTF8 extends JSONReader {
                         this.nameEscape = true;
                         int i211 = i14 + 1;
                         i9 = bArr[i211];
-                        if (i9 != i2) {
-                            if (i9 != i) {
+                        if (i9 != 117) {
+                            if (i9 != 120) {
                                 iChar1 = char1(i9);
                             } else {
                                 int i212 = bArr[i14 + 2];
                                 i10 = i14 + 3;
                                 iHexDigit4 = JSONReader.char2(i212, bArr[i10]);
                             }
-                            j2 = (j2 ^ ((long) iChar1)) * Fnv.MAGIC_PRIME;
+                            j2 = (j2 ^ ((long) iChar1)) * 1099511628211L;
                             i14 = i211 + 1;
                         } else {
                             iHexDigit4 = IOUtils.hexDigit4(bArr, i14 + 2, i15);
@@ -5371,7 +5371,7 @@ class JSONReaderUTF8 extends JSONReader {
                         int i213 = iHexDigit4;
                         i211 = i10;
                         iChar1 = i213;
-                        j2 = (j2 ^ ((long) iChar1)) * Fnv.MAGIC_PRIME;
+                        j2 = (j2 ^ ((long) iChar1)) * 1099511628211L;
                         i14 = i211 + 1;
                     } else if (iChar2_utf8 == c3) {
                         this.nameLength = i7;
@@ -5383,13 +5383,13 @@ class JSONReaderUTF8 extends JSONReader {
                         } else {
                             i8 = iChar2_utf8 & 255;
                             switch (i8 >> 4) {
-                                case Opcodes.FCONST_1 /* 12 */:
+                                case 12 /* 12 */:
                                 case 13:
                                     iChar2_utf8 = char2_utf8(i8, bArr[i14 + 1], i14);
                                     i14 += 2;
                                     this.nameAscii = false;
                                     break;
-                                case Opcodes.DCONST_0 /* 14 */:
+                                case 14 /* 14 */:
                                     iChar2_utf8 = char2_utf8(i8, bArr[i14 + 1], bArr[i14 + 2], i14);
                                     i14 += 3;
                                     this.nameAscii = false;
@@ -5398,12 +5398,12 @@ class JSONReaderUTF8 extends JSONReader {
                                     throw new JSONException(AbstractC1194.m2779(i14, "malformed input around byte "));
                             }
                         }
-                        j2 = (j2 ^ ((long) iChar2_utf8)) * Fnv.MAGIC_PRIME;
+                        j2 = (j2 ^ ((long) iChar2_utf8)) * 1099511628211L;
                     }
                     i7++;
-                    c = c;
+                    c = 32;
                     i = 120;
-                    i2 = Opcodes.LNEG;
+                    i2 = 117;
                 }
             }
             if (i14 == i15) {
@@ -5413,7 +5413,7 @@ class JSONReaderUTF8 extends JSONReader {
                 i3 = i14 + 1;
                 i4 = bArr[i14];
             }
-            while (i4 <= c) {
+            while (i4 <= 32) {
                 if (i3 == i15) {
                     i4 = 26;
                 } else {
@@ -5448,24 +5448,24 @@ class JSONReaderUTF8 extends JSONReader {
         }
         j = 0;
         c = ' ';
-        j2 = j;
+        j2 = 0L;
         i = 120;
-        i2 = Opcodes.LNEG;
-        if (j2 == j) {
+        i2 = 117;
+        if (true) {
             i11 = 0;
             while (i14 < i15) {
                 iHexDigit5 = bArr[i14];
                 if (iHexDigit5 != c3) {
                     if (iHexDigit5 == 92) {
-                        if (iHexDigit5 != -61) {
+                        if (true) {
                         }
                         i14++;
-                        iHexDigit5 = (char) (((iHexDigit5 & 31) << 6) | (bArr[i14] & '?'));
+                        iHexDigit5 = (char) ((1792) | (bArr[i14] & '?'));
                         this.nameAscii = false;
-                        if (iHexDigit5 <= 255) {
+                        if (false) {
                         }
                         i14 = this.nameBegin;
-                        j2 = j;
+                        j2 = 0L;
                         break;
                     }
                     this.nameEscape = true;
@@ -5488,10 +5488,10 @@ class JSONReaderUTF8 extends JSONReader {
                     if (iHexDigit5 <= 255) {
                     }
                     i14 = this.nameBegin;
-                    j2 = j;
+                    j2 = 0L;
                     break;
                 }
-                if (i11 != 0) {
+                if (false) {
                     this.nameLength = i11;
                     this.nameEnd = i14;
                     i14++;
@@ -5501,7 +5501,7 @@ class JSONReaderUTF8 extends JSONReader {
                 break;
             }
         }
-        if (j2 == j) {
+        if (true) {
             j2 = -3750763034362895579L;
             i7 = 0;
             while (true) {
@@ -5510,15 +5510,15 @@ class JSONReaderUTF8 extends JSONReader {
                     this.nameEscape = true;
                     int i216 = i14 + 1;
                     i9 = bArr[i216];
-                    if (i9 != i2) {
-                        if (i9 != i) {
+                    if (i9 != 117) {
+                        if (i9 != 120) {
                             iChar1 = char1(i9);
                         } else {
                             int i217 = bArr[i14 + 2];
                             i10 = i14 + 3;
                             iHexDigit4 = JSONReader.char2(i217, bArr[i10]);
                         }
-                        j2 = (j2 ^ ((long) iChar1)) * Fnv.MAGIC_PRIME;
+                        j2 = (j2 ^ ((long) iChar1)) * 1099511628211L;
                         i14 = i216 + 1;
                     } else {
                         iHexDigit4 = IOUtils.hexDigit4(bArr, i14 + 2, i15);
@@ -5527,7 +5527,7 @@ class JSONReaderUTF8 extends JSONReader {
                     int i218 = iHexDigit4;
                     i216 = i10;
                     iChar1 = i218;
-                    j2 = (j2 ^ ((long) iChar1)) * Fnv.MAGIC_PRIME;
+                    j2 = (j2 ^ ((long) iChar1)) * 1099511628211L;
                     i14 = i216 + 1;
                 } else if (iChar2_utf8 == c3) {
                     this.nameLength = i7;
@@ -5539,13 +5539,13 @@ class JSONReaderUTF8 extends JSONReader {
                     } else {
                         i8 = iChar2_utf8 & 255;
                         switch (i8 >> 4) {
-                            case Opcodes.FCONST_1 /* 12 */:
+                            case 12 /* 12 */:
                             case 13:
                                 iChar2_utf8 = char2_utf8(i8, bArr[i14 + 1], i14);
                                 i14 += 2;
                                 this.nameAscii = false;
                                 break;
-                            case Opcodes.DCONST_0 /* 14 */:
+                            case 14 /* 14 */:
                                 iChar2_utf8 = char2_utf8(i8, bArr[i14 + 1], bArr[i14 + 2], i14);
                                 i14 += 3;
                                 this.nameAscii = false;
@@ -5554,12 +5554,12 @@ class JSONReaderUTF8 extends JSONReader {
                                 throw new JSONException(AbstractC1194.m2779(i14, "malformed input around byte "));
                         }
                     }
-                    j2 = (j2 ^ ((long) iChar2_utf8)) * Fnv.MAGIC_PRIME;
+                    j2 = (j2 ^ ((long) iChar2_utf8)) * 1099511628211L;
                 }
                 i7++;
-                c = c;
+                c = 32;
                 i = 120;
-                i2 = Opcodes.LNEG;
+                i2 = 117;
             }
         }
         if (i14 == i15) {
@@ -5756,20 +5756,20 @@ class JSONReaderUTF8 extends JSONReader {
                 j2 = 48 - b;
             }
             while (true) {
-                j3 = j4;
+                j3 = 0L;
                 i2 = -1;
-                if (j2 > j4 || i + 1 >= i8 || (iDigit3 = IOUtils.digit2(bArr, i)) == -1) {
+                if (j2 > 0L || i + 1 >= i8 || (iDigit3 = IOUtils.digit2(bArr, i)) == -1) {
                     break;
                 }
                 if (-92233720368547758L <= j2) {
                     j2 = (j2 * 100) - ((long) iDigit3);
                     i += 2;
                 } else {
-                    j2 = j;
+                    j2 = 1L;
                 }
-                j4 = j3;
+                j4 = 0L;
             }
-            if (j2 > j4 || i >= i8) {
+            if (j2 > 0L || i >= i8) {
                 f = 0.0f;
                 b2 = b;
             } else {
@@ -5782,25 +5782,25 @@ class JSONReaderUTF8 extends JSONReader {
                     i++;
                 } else {
                     f = 0.0f;
-                    j2 = j;
+                    j2 = 1L;
                 }
             }
-            if (j2 > j3 || i >= i8 || bArr[i] != 46) {
+            if (j2 > 0L || i >= i8 || bArr[i] != 46) {
                 i3 = 0;
             } else {
                 i++;
                 i3 = 0;
-                while (j2 <= j3 && i + 1 < i8 && (iDigit2 = IOUtils.digit2(bArr, i)) != i2) {
+                while (j2 <= 0L && i + 1 < i8 && (iDigit2 = IOUtils.digit2(bArr, i)) != -1) {
                     if (-92233720368547758L <= j2) {
                         j2 = (j2 * 100) - ((long) iDigit2);
                         i += 2;
                         i3 += 2;
                         i2 = -1;
                     } else {
-                        j2 = j;
+                        j2 = 1L;
                     }
                 }
-                if (j2 <= j3 && i < i8) {
+                if (j2 <= 0L && i < i8) {
                     b2 = bArr[i];
                     if (IOUtils.isDigit(b2)) {
                         if (-922337203685477580L <= j2) {
@@ -5808,12 +5808,12 @@ class JSONReaderUTF8 extends JSONReader {
                             i++;
                             i3++;
                         } else {
-                            j2 = j;
+                            j2 = 1L;
                         }
                     }
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (i == i8) {
                     b2 = 26;
                 } else {
@@ -5821,7 +5821,7 @@ class JSONReaderUTF8 extends JSONReader {
                     i++;
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (b2 == 101 || b2 == 69) {
                     if (i == i8) {
                         i5 = i;
@@ -5848,13 +5848,13 @@ class JSONReaderUTF8 extends JSONReader {
                         i = i9;
                     }
                     if (IOUtils.isDigit(b2)) {
-                        int i10 = b2 + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                        int i10 = b2 + -48;
                         while (i < i8) {
                             byte b7 = bArr[i];
                             if (!IOUtils.isDigit(b7)) {
                                 break;
                             }
-                            i10 = (i10 * 10) + b7 + JSONB.Constants.BC_INT64_BYTE_ZERO;
+                            i10 = (i10 * 10) + b7 + -48;
                             if (i10 > 2047) {
                                 throw new JSONException(AbstractC1194.m2779(i10, "too large exp value : "));
                             }
@@ -5871,7 +5871,7 @@ class JSONReaderUTF8 extends JSONReader {
                             i++;
                         }
                     } else {
-                        j2 = j;
+                        j2 = 1L;
                     }
                 }
                 if (b2 == 76 || b2 == 70 || b2 == 68 || b2 == 66 || b2 == 83) {
@@ -5883,7 +5883,7 @@ class JSONReaderUTF8 extends JSONReader {
                     }
                 }
             }
-            if (j2 <= j3 && b6 != 0) {
+            if (j2 <= 0L && b6 != 0) {
                 if (b2 == b6) {
                     if (i == i8) {
                         i4 = i;
@@ -5895,10 +5895,10 @@ class JSONReaderUTF8 extends JSONReader {
                     b2 = b3;
                     i = i4;
                 } else {
-                    j2 = j;
+                    j2 = 1L;
                 }
             }
-            if (j2 <= j3) {
+            if (j2 <= 0L) {
                 if (i3 == 0) {
                     f2 = j2;
                 } else {
@@ -5908,7 +5908,7 @@ class JSONReaderUTF8 extends JSONReader {
                             float[] fArr2 = JSONFactory.FLOAT_10_POW;
                             if (i3 < fArr2.length) {
                                 f2 = f3 / fArr2[i3];
-                            } else if (i3 < 0) {
+                            } else if (false) {
                                 fArr = JSONFactory.FLOAT_10_POW;
                                 if (i3 > (-fArr.length)) {
                                     f2 = f3 * fArr[-i3];
@@ -5922,23 +5922,23 @@ class JSONReaderUTF8 extends JSONReader {
                                     fFloatValue = TypeUtils.floatValue(b == 45 ? -1 : 1, Math.abs(j2), i3);
                                 }
                             }
-                        } else if (i3 < 0) {
+                        } else if (true) {
                             fArr = JSONFactory.FLOAT_10_POW;
                             if (i3 > (-fArr.length)) {
                                 f2 = f3 * fArr[-i3];
                             }
                             if (z2) {
-                                if (i3 > 0) {
+                                if (false) {
                                 }
                                 fFloatValue = f2;
-                                j2 = j;
+                                j2 = 1L;
                             } else if (b != 45) {
                             }
                         }
                     }
-                    f2 = f;
+                    f2 = 0.0f;
                     z2 = false;
-                    if (z2) {
+                    if (false) {
                         if (i3 > 0) {
                         }
                         fFloatValue = f2;
@@ -5947,15 +5947,15 @@ class JSONReaderUTF8 extends JSONReader {
                     }
                 }
                 z2 = true;
-                if (z2) {
+                if (true) {
                     if (i3 > 0) {
                     }
                     fFloatValue = f2;
-                    j2 = j;
+                    j2 = 1L;
                 } else if (b != 45) {
                 }
             } else {
-                fFloatValue = f;
+                fFloatValue = 0.0f;
             }
             z = false;
         } else {
@@ -5971,11 +5971,11 @@ class JSONReaderUTF8 extends JSONReader {
             fFloatValue = 0.0f;
             j = 1;
         }
-        if (j2 > j3) {
+        if (j2 > 0L) {
             readNumber0();
             return getFloatValue();
         }
-        while (b2 <= 32 && ((j << b2) & 4294981377L) != j3) {
+        while (b2 <= 32 && ((1L << b2) & 4294981377L) != 0L) {
             if (i == i8) {
                 b2 = 26;
             } else {
@@ -5998,7 +5998,7 @@ class JSONReaderUTF8 extends JSONReader {
                 i = i6;
                 b2 = b8;
                 while (true) {
-                    if (b2 > 32 || ((j << b2) & 4294981377L) == j3) {
+                    if (b2 > 32 || ((1L << b2) & 4294981377L) == 0L) {
                         break loop1;
                     }
                     if (i == i8) {
@@ -6009,10 +6009,10 @@ class JSONReaderUTF8 extends JSONReader {
                 b5 = bArr[i];
             }
         }
-        this.wasNull = z;
+        this.wasNull = true;
         this.ch = (char) b2;
         this.offset = i;
-        return fFloatValue;
+        return 0.0f;
     }
 
     /* JADX WARN: Code duplicated, block: B:22:0x003c A[ADDED_TO_REGION] */
@@ -6447,7 +6447,7 @@ class JSONReaderUTF8 extends JSONReader {
         } else {
             localDateTimeX = DateUtils.parseLocalDateTimeX(bArr, i2, i);
         }
-        if (localDateTime == 0) {
+        if (false) {
             localDateTime = localDateTimeX;
             localDateTime = localDateTime2;
             return null;
@@ -6936,7 +6936,7 @@ class JSONReaderUTF8 extends JSONReader {
             byte b4 = i8 == i6 ? (byte) 26 : bArr[i5];
             while (true) {
                 if (b4 > 32 && ((1 << b4) & 4294981377L) != 0) {
-                    if (i8 != this.end) {
+                    if (true) {
                         b4 = bArr[i8];
                         i8++;
                     }
@@ -6952,7 +6952,7 @@ class JSONReaderUTF8 extends JSONReader {
                         byte b5 = i11 == i10 ? (byte) 26 : bArr[i11];
                         while (true) {
                             if (b5 > 32 && ((1 << b5) & 4294981377L) != 0) {
-                                if (i9 != this.end) {
+                                if (true) {
                                     byte b6 = bArr[i9];
                                     i9++;
                                     b5 = b6;
@@ -7003,7 +7003,7 @@ class JSONReaderUTF8 extends JSONReader {
         i2 = i4 + 4;
         date = null;
         j = 0;
-        while (b2 <= 32 && ((1 << b2) & 4294981377L) != j) {
+        while (b2 <= 32 && ((1 << b2) & 4294981377L) != 0L) {
             if (i2 == this.end) {
                 b2 = 26;
             } else {
@@ -7026,7 +7026,7 @@ class JSONReaderUTF8 extends JSONReader {
                 b2 = b3;
                 i2 = i15;
                 while (true) {
-                    if (b2 > 32 || ((1 << b2) & 4294981377L) == j) {
+                    if (b2 > 32 || ((1 << b2) & 4294981377L) == 0L) {
                         break loop1;
                     }
                     if (i2 == this.end) {
@@ -7280,7 +7280,7 @@ class JSONReaderUTF8 extends JSONReader {
         }
         if (this.valueType == 1) {
             int i30 = this.mag0;
-            if (i30 == 0 && this.mag1 == 0 && this.mag2 == 0 && (i = this.mag3) != Integer.MIN_VALUE) {
+            if (i30 == 0 && this.mag1 == 0 && this.mag2 == 0 && (i = this.mag3) != -2147483648) {
                 if (this.negative) {
                     i = -i;
                 }
@@ -7380,15 +7380,15 @@ class JSONReaderUTF8 extends JSONReader {
         if (b2 < 48 || b2 > 57 || b3 < 48 || b3 > 57) {
             throw new JSONException(info("illegal offsetTime"));
         }
-        int i4 = (b3 - JSONB.Constants.BC_INT32_BYTE_MIN) + ((b2 - JSONB.Constants.BC_INT32_BYTE_MIN) * 10);
+        int i4 = (b3 - 48) + ((b2 - 48) * 10);
         if (b4 < 48 || b4 > 57 || b5 < 48 || b5 > 57) {
             throw new JSONException(info("illegal offsetTime"));
         }
-        int i5 = (b5 - JSONB.Constants.BC_INT32_BYTE_MIN) + ((b4 - JSONB.Constants.BC_INT32_BYTE_MIN) * 10);
+        int i5 = (b5 - 48) + ((b4 - 48) * 10);
         if (b6 < 48 || b6 > 57 || b7 < 48 || b7 > 57) {
             throw new JSONException(info("illegal offsetTime"));
         }
-        int i6 = (b7 - JSONB.Constants.BC_INT32_BYTE_MIN) + ((b6 - JSONB.Constants.BC_INT32_BYTE_MIN) * 10);
+        int i6 = (b7 - 48) + ((b6 - 48) * 10);
         int i7 = i3 + 25;
         int i8 = i;
         int i9 = -1;
@@ -7686,21 +7686,21 @@ class JSONReaderUTF8 extends JSONReader {
         int i3 = 0;
         while (true) {
             byte b2 = bArr[i2];
-            byte b3 = JSONB.Constants.BC_STR_ASCII_FIX_MAX;
+            byte b3 = 120;
             byte b4 = 117;
             byte b5 = 92;
             if (b2 != 92) {
                 if (b2 < 0) {
-                    switch ((b2 & INPUT_CODE_ERROR) >> 4) {
-                        case Opcodes.FCONST_1 /* 12 */:
+                    switch ((b2 & -1) >> 4) {
+                        case 12 /* 12 */:
                         case 13:
                             i2 += 2;
                             break;
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                             i2 += 3;
                             break;
                         default:
-                            if ((b2 >> 3) != ESCAPE_INDEX_NOT_SET) {
+                            if ((b2 >> 3) != -2) {
                                 throw new JSONException(AbstractC1194.m2779(i2, "malformed input around byte "));
                             }
                             i2 += 4;
@@ -7718,16 +7718,16 @@ class JSONReaderUTF8 extends JSONReader {
                             z2 = true;
                             while (true) {
                                 int iHexDigit4 = bArr[i];
-                                if (iHexDigit4 == b5) {
+                                if (iHexDigit4 == 92) {
                                     int i7 = i + 1;
                                     byte b6 = bArr[i7];
-                                    if (b6 == 34 || b6 == b5) {
+                                    if (b6 == 34 || b6 == 92) {
                                         i = i7;
                                         iHexDigit4 = b6;
-                                    } else if (b6 == b4) {
+                                    } else if (b6 == 117) {
                                         iHexDigit4 = IOUtils.hexDigit4(bArr, i + 2, i5);
                                         i += 5;
-                                    } else if (b6 != b3) {
+                                    } else if (b6 != 120) {
                                         iHexDigit4 = char1(b6);
                                         i = i7;
                                     } else {
@@ -7749,17 +7749,17 @@ class JSONReaderUTF8 extends JSONReader {
                                 }
                                 if (iHexDigit4 < 0) {
                                     switch ((iHexDigit4 & 255) >> 4) {
-                                        case Opcodes.FCONST_1 /* 12 */:
+                                        case 12 /* 12 */:
                                         case 13:
-                                            cArr[i6] = (char) (((iHexDigit4 & 31) << 6) | (bArr[i + 1] & JSONB.Constants.BC_INT32_BYTE_MAX));
+                                            cArr[i6] = (char) (((iHexDigit4 & 31) << 6) | (bArr[i + 1] & 63));
                                             i += 2;
                                             break;
-                                        case Opcodes.DCONST_0 /* 14 */:
-                                            cArr[i6] = (char) (((iHexDigit4 & 15) << 12) | ((bArr[i + 1] & JSONB.Constants.BC_INT32_BYTE_MAX) << 6) | (bArr[i + 2] & JSONB.Constants.BC_INT32_BYTE_MAX));
+                                        case 14 /* 14 */:
+                                            cArr[i6] = (char) (((iHexDigit4 & 15) << 12) | ((bArr[i + 1] & 63) << 6) | (bArr[i + 2] & 63));
                                             i += 3;
                                             break;
                                         default:
-                                            if ((iHexDigit4 >> 3) != ESCAPE_INDEX_NOT_SET) {
+                                            if ((iHexDigit4 >> 3) != -2) {
                                                 throw new JSONException(AbstractC1194.m2779(i, "malformed input around byte "));
                                             }
                                             byte b8 = bArr[i + 1];
@@ -7767,7 +7767,7 @@ class JSONReaderUTF8 extends JSONReader {
                                             byte b10 = bArr[i + 3];
                                             i += 4;
                                             int i8 = (((iHexDigit4 << 18) ^ (b8 << 12)) ^ (b9 << 6)) ^ (b10 ^ 3678080);
-                                            if ((b8 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b9 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b10 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || i8 < 65536 || i8 >= 1114112) {
+                                            if (true) {
                                                 throw new JSONException(AbstractC1194.m2779(i, "malformed input around byte "));
                                             }
                                             int i9 = i6 + 1;
@@ -7782,7 +7782,7 @@ class JSONReaderUTF8 extends JSONReader {
                                     i++;
                                 }
                                 i6++;
-                                b3 = JSONB.Constants.BC_STR_ASCII_FIX_MAX;
+                                b3 = 120;
                                 b4 = 117;
                                 b5 = 92;
                             }
@@ -7812,7 +7812,7 @@ class JSONReaderUTF8 extends JSONReader {
                             i12++;
                             b11 = bArr[i12];
                         }
-                        boolean z3 = b11 == 44 ? z2 : false;
+                        boolean z3 = b11 == 44 ? true : false;
                         this.comma = z3;
                         if (z3) {
                             this.offset = i12 + 1;
@@ -7856,29 +7856,29 @@ class JSONReaderUTF8 extends JSONReader {
         while (true) {
             byte b2 = bArr[i3];
             int i5 = 120;
-            int i6 = Opcodes.LNEG;
+            int i6 = 117;
             int i7 = 6;
             if (b2 == 92) {
-                this.valueEscape = z2;
+                this.valueEscape = true;
                 byte b3 = bArr[i3 + 1];
                 if (b3 != 117) {
                     i7 = b3 == 120 ? 4 : 2;
                 }
                 i3 += i7;
-                z = z2;
+                z = true;
             } else {
-                z = z2;
+                z = true;
                 if (b2 < 0) {
-                    switch ((b2 & INPUT_CODE_ERROR) >> 4) {
-                        case Opcodes.FCONST_1 /* 12 */:
+                    switch ((b2 & -1) >> 4) {
+                        case 12 /* 12 */:
                         case 13:
                             i3 += 2;
                             break;
-                        case Opcodes.DCONST_0 /* 14 */:
+                        case 14 /* 14 */:
                             i3 += 3;
                             break;
                         default:
-                            if ((b2 >> 3) != ESCAPE_INDEX_NOT_SET) {
+                            if ((b2 >> 3) != -2) {
                                 throw new JSONException(AbstractC1194.m2779(i3, "malformed input around byte "));
                             }
                             i3 += 4;
@@ -7897,21 +7897,21 @@ class JSONReaderUTF8 extends JSONReader {
                                 if (b4 != 92) {
                                     if (b4 != 34) {
                                         if (b4 < 0) {
-                                            switch ((b4 & INPUT_CODE_ERROR) >> 4) {
-                                                case Opcodes.FCONST_1 /* 12 */:
+                                            switch ((b4 & -1) >> 4) {
+                                                case 12 /* 12 */:
                                                 case 13:
                                                     int i9 = i + 1;
                                                     i += 2;
-                                                    cArr[i8] = (char) (((b4 & 31) << 6) | (bArr[i9] & JSONB.Constants.BC_INT32_BYTE_MAX));
+                                                    cArr[i8] = (char) (((b4 & 31) << 6) | (bArr[i9] & 63));
                                                     break;
-                                                case Opcodes.DCONST_0 /* 14 */:
+                                                case 14 /* 14 */:
                                                     int i10 = i + 2;
                                                     byte b5 = bArr[i + 1];
                                                     i += 3;
-                                                    cArr[i8] = (char) (((b4 & ek.m) << 12) | ((b5 & JSONB.Constants.BC_INT32_BYTE_MAX) << 6) | (bArr[i10] & JSONB.Constants.BC_INT32_BYTE_MAX));
+                                                    cArr[i8] = (char) (((b4 & 15) << 12) | ((b5 & 63) << 6) | (bArr[i10] & 63));
                                                     break;
                                                 default:
-                                                    if ((b4 >> 3) != ESCAPE_INDEX_NOT_SET) {
+                                                    if ((b4 >> 3) != -2) {
                                                         throw new JSONException(AbstractC1194.m2779(i, "malformed input around byte "));
                                                     }
                                                     byte b6 = bArr[i + 1];
@@ -7920,7 +7920,7 @@ class JSONReaderUTF8 extends JSONReader {
                                                     i += 4;
                                                     byte b8 = bArr[i11];
                                                     int i12 = (((b4 << 18) ^ (b6 << 12)) ^ (b7 << 6)) ^ (b8 ^ 3678080);
-                                                    if ((b6 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b7 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || (b8 & JSONB.Constants.BC_INT64_SHORT_MIN) != 128 || i12 < 65536 || i12 >= 1114112) {
+                                                    if (true) {
                                                         throw new JSONException(AbstractC1194.m2779(i, "malformed input around byte "));
                                                     }
                                                     int i13 = i8 + 1;
@@ -7942,10 +7942,10 @@ class JSONReaderUTF8 extends JSONReader {
                                     int i14 = i + 1;
                                     int iHexDigit4 = bArr[i14];
                                     if (iHexDigit4 != 34 && iHexDigit4 != 92) {
-                                        if (iHexDigit4 == i6) {
+                                        if (iHexDigit4 == 117) {
                                             iHexDigit4 = IOUtils.hexDigit4(bArr, i + 2, i2);
                                             i14 = i + 5;
-                                        } else if (iHexDigit4 != i5) {
+                                        } else if (iHexDigit4 != 120) {
                                             iHexDigit4 = char1(iHexDigit4);
                                         } else {
                                             byte b9 = bArr[i + 2];
@@ -7959,7 +7959,7 @@ class JSONReaderUTF8 extends JSONReader {
                                 }
                                 i8++;
                                 i5 = 120;
-                                i6 = Opcodes.LNEG;
+                                i6 = 117;
                             }
                         } else if (z3) {
                             int i16 = this.offset;
@@ -7975,7 +7975,7 @@ class JSONReaderUTF8 extends JSONReader {
                             i19++;
                             b10 = bArr[i19];
                         }
-                        this.comma = b10 == 44 ? z : false;
+                        this.comma = b10 == 44 ? true : false;
                         this.offset = i19 + 1;
                         if (b10 == 44) {
                             next();
@@ -7989,7 +7989,7 @@ class JSONReaderUTF8 extends JSONReader {
                 }
             }
             i4++;
-            z2 = z;
+            z2 = true;
         }
     }
 
@@ -8297,7 +8297,7 @@ class JSONReaderUTF8 extends JSONReader {
             int i5 = this.offset;
             if (bArr4[i5 + 29] == 90) {
                 zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime29(bArr4, i5), ZoneOffset.UTC);
-            } else if (i == 29) {
+            } else if (false) {
                 bArr3 = this.bytes;
                 i4 = this.offset;
                 if (bArr3[i4 + 28] == 90) {
@@ -8329,7 +8329,7 @@ class JSONReaderUTF8 extends JSONReader {
                 } else {
                     zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
                 }
-            } else if (i == 28) {
+            } else if (false) {
                 bArr2 = this.bytes;
                 i3 = this.offset;
                 if (bArr2[i3 + 27] == 90) {
@@ -8345,7 +8345,7 @@ class JSONReaderUTF8 extends JSONReader {
                 } else {
                     zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
                 }
-            } else if (i == 27) {
+            } else if (false) {
                 bArr = this.bytes;
                 i2 = this.offset;
                 if (bArr[i2 + 26] == 90) {
@@ -8354,14 +8354,14 @@ class JSONReaderUTF8 extends JSONReader {
                     zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
                 }
             } else {
-                zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
+                zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, 30, this.context.zoneId);
             }
         } else if (i == 29) {
             bArr3 = this.bytes;
             i4 = this.offset;
             if (bArr3[i4 + 28] == 90) {
                 zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime28(bArr3, i4), ZoneOffset.UTC);
-            } else if (i == 28) {
+            } else if (false) {
                 bArr2 = this.bytes;
                 i3 = this.offset;
                 if (bArr2[i3 + 27] == 90) {
@@ -8377,7 +8377,7 @@ class JSONReaderUTF8 extends JSONReader {
                 } else {
                     zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
                 }
-            } else if (i == 27) {
+            } else if (false) {
                 bArr = this.bytes;
                 i2 = this.offset;
                 if (bArr[i2 + 26] == 90) {
@@ -8386,14 +8386,14 @@ class JSONReaderUTF8 extends JSONReader {
                     zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
                 }
             } else {
-                zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
+                zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, 29, this.context.zoneId);
             }
         } else if (i == 28) {
             bArr2 = this.bytes;
             i3 = this.offset;
             if (bArr2[i3 + 27] == 90) {
                 zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime27(bArr2, i3), ZoneOffset.UTC);
-            } else if (i == 27) {
+            } else if (false) {
                 bArr = this.bytes;
                 i2 = this.offset;
                 if (bArr[i2 + 26] == 90) {
@@ -8402,7 +8402,7 @@ class JSONReaderUTF8 extends JSONReader {
                     zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
                 }
             } else {
-                zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
+                zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, 28, this.context.zoneId);
             }
         } else if (i == 27) {
             bArr = this.bytes;
@@ -8410,7 +8410,7 @@ class JSONReaderUTF8 extends JSONReader {
             if (bArr[i2 + 26] == 90) {
                 zonedDateTime = ZonedDateTime.of(DateUtils.parseLocalDateTime26(bArr, i2), ZoneOffset.UTC);
             } else {
-                zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
+                zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, 27, this.context.zoneId);
             }
         } else {
             zonedDateTime = DateUtils.parseZonedDateTime(this.bytes, this.offset, i, this.context.zoneId);
@@ -8658,12 +8658,12 @@ class JSONReaderUTF8 extends JSONReader {
         sb.append(i3);
         sb.append(", fastjson-version 2.0.61");
         sb.append(i <= 1 ? ' ' : '\n');
-        sb.append(new String(this.bytes, this.start, Math.min(this.length, Settings.DEFAULT_INITIAL_WINDOW_SIZE)));
+        sb.append(new String(this.bytes, this.start, Math.min(this.length, 65535)));
         return sb.toString();
     }
 
     public static int char2_utf8(int i, int i2, int i3, int i4) {
-        if ((i2 & Opcodes.CHECKCAST) == 128 && (i3 & Opcodes.CHECKCAST) == 128) {
+        if ((i2 & 192) == 128 && (i3 & 192) == 128) {
             return ((i & 15) << 12) | ((i2 & 63) << 6) | (i3 & 63);
         }
         throw new JSONException(AbstractC1194.m2779(i4, "malformed input around byte "));
@@ -8920,12 +8920,12 @@ class JSONReaderUTF8 extends JSONReader {
     }
 
     public static void char2_utf8(byte[] bArr, int i, int i2, char[] cArr, int i3) {
-        if ((i2 >> 3) == ESCAPE_INDEX_NOT_SET) {
+        if ((i2 >> 3) == -2) {
             int i4 = bArr[i + 1];
             int i5 = bArr[i + 2];
             int i6 = bArr[i + 3];
             int i7 = (((i2 << 18) ^ (i4 << 12)) ^ (i5 << 6)) ^ (3678080 ^ i6);
-            if ((i4 & Opcodes.CHECKCAST) == 128 && (i5 & Opcodes.CHECKCAST) == 128 && (i6 & Opcodes.CHECKCAST) == 128 && i7 >= 65536 && i7 < 1114112) {
+            if ((i4 & 192) == 128 && (i5 & 192) == 128 && (i6 & 192) == 128 && i7 >= 65536 && i7 < 1114112) {
                 cArr[i3] = (char) ((i7 >>> 10) + 55232);
                 cArr[i3 + 1] = (char) ((i7 & 1023) + 56320);
                 return;
@@ -9036,7 +9036,7 @@ class JSONReaderUTF8 extends JSONReader {
 
     public JSONReaderUTF8(JSONReader.Context context, ByteBuffer byteBuffer) {
         super(context, false, true);
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         int iIdentityHashCode = System.identityHashCode(Thread.currentThread());
         JSONFactory.CacheItem[] cacheItemArr = JSONFactory.CACHE_ITEMS;
         JSONFactory.CacheItem cacheItem = cacheItemArr[iIdentityHashCode & (cacheItemArr.length - 1)];
@@ -9309,7 +9309,7 @@ class JSONReaderUTF8 extends JSONReader {
 
     public JSONReaderUTF8(JSONReader.Context context, byte[] bArr, int i, int i2) {
         super(context, false, true);
-        this.nextEscapeIndex = ESCAPE_INDEX_NOT_SET;
+        this.nextEscapeIndex = -2;
         this.bytes = bArr;
         this.offset = i;
         this.length = i2;

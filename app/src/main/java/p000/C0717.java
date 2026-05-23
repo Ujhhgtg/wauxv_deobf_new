@@ -1,12 +1,11 @@
 package p000;
 
 import android.app.AlertDialog;
-import com.alibaba.fastjson2.JSONWriter;
+
 import java.io.File;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Locale;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲀᲇᲁᤝᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -33,12 +32,12 @@ public final class C0717 extends AbstractC2862 implements InterfaceC1429 {
         InterfaceC0842 interfaceC0842 = (InterfaceC0842) obj2;
         switch (this.f2723) {
             case 0:
-                return ((C0717) mo1197(interfaceC0842, interfaceC0883)).mo1198(C3497.f10997);
+                return ((C0717) mo1197(interfaceC0842, interfaceC0883)).mo1198(Unit.INSTANCE);
             default:
                 C0717 c0717 = (C0717) mo1197(interfaceC0842, interfaceC0883);
-                C3497 c3497 = C3497.f10997;
-                c0717.mo1198(c3497);
-                return c3497;
+                Unit unit = Unit.INSTANCE;
+                c0717.mo1198(unit);
+                return unit;
         }
     }
 
@@ -89,12 +88,12 @@ public final class C0717 extends AbstractC2862 implements InterfaceC1429 {
                     "format(...)";
                     return str;
                 }
-                if (j < JSONWriter.MASK_USE_SINGLE_QUOTES) {
+                if (j < 1048576L) {
                     String str2 = String.format(Locale.CHINA, "%.2f KB", Arrays.copyOf(new Object[]{Double.valueOf(j / 1024.0d)}, 1));
                     "format(...)";
                     return str2;
                 }
-                if (j < JSONWriter.MASK_ESCAPE_NONE_ASCII) {
+                if (j < 1073741824L) {
                     String str3 = String.format(Locale.CHINA, "%.2f MB", Arrays.copyOf(new Object[]{Double.valueOf((j / 1024.0d) / 1024.0d)}, 1));
                     "format(...)";
                     return str3;
@@ -105,7 +104,7 @@ public final class C0717 extends AbstractC2862 implements InterfaceC1429 {
             default:
                 AbstractC0743.m2188(obj);
                 ((AlertDialog) this.f2724).dismiss();
-                return C3497.f10997;
+                return Unit.INSTANCE;
         }
     }
 }

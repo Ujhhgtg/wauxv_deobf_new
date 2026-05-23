@@ -151,7 +151,7 @@ public final class WebSocketReader implements Closeable {
             long j = iAnd2 & 127;
             this.frameLength = j;
             if (j == 126) {
-                this.frameLength = Util.and(this.source.readShort(), Settings.DEFAULT_INITIAL_WINDOW_SIZE);
+                this.frameLength = Util.and(this.source.readShort(), 65535);
             } else if (j == 127) {
                 long j2 = this.source.readLong();
                 this.frameLength = j2;

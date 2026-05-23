@@ -166,13 +166,13 @@ public final class C1765 extends AbstractC1574 {
                 float left = view.getLeft();
                 SideSheetBehavior sideSheetBehavior = this.f5889;
                 float fAbs = Math.abs((f * sideSheetBehavior.f767) + left);
-                sideSheetBehavior.getClass();
+                
                 return fAbs > 0.5f;
             default:
                 float right = view.getRight();
                 SideSheetBehavior sideSheetBehavior2 = this.f5889;
                 float fAbs2 = Math.abs((f * sideSheetBehavior2.f767) + right);
-                sideSheetBehavior2.getClass();
+                
                 return fAbs2 > 0.5f;
         }
     }

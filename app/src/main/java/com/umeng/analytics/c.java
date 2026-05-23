@@ -51,8 +51,8 @@ public class c {
     }
 
     public static Map<String, Object> c(Context context) throws JSONException {
-        SharedPreferences sharedPreferences = context.getSharedPreferences(b, 0);
-        String string = sharedPreferences.getString(e, "");
+        SharedPreferences sharedPreferences = context.getSharedPreferences("umeng_pcp", 0);
+        String string = sharedPreferences.getString("cp", "");
         if (TextUtils.isEmpty(string)) {
             return null;
         }
@@ -68,7 +68,7 @@ public class c {
                     JSONObject jSONObject = jSONArray.getJSONObject(i2);
                     map.put(jSONObject.getString("pk"), jSONObject.get("pv"));
                 }
-                sharedPreferences.edit().putString(e, "").apply();
+                sharedPreferences.edit().putString("cp", "").apply();
                 return map;
             } catch (Throwable unused) {
                 return map;
@@ -97,14 +97,14 @@ public class c {
         Context appContext = UMGlobalContext.getAppContext();
         if (appContext != null) {
             try {
-                SharedPreferences sharedPreferences = appContext.getSharedPreferences(b, 0);
+                SharedPreferences sharedPreferences = appContext.getSharedPreferences("umeng_pcp", 0);
                 byte[] bArrA = ay.a(str.getBytes(), UMConfigure.sAppkey.getBytes());
                 if (bArrA.length == 0) {
-                    strEncodeToString = g.Q;
+                    strEncodeToString = "pv".Q;
                 } else {
                     strEncodeToString = Base64.encodeToString(bArrA, 0);
                 }
-                sharedPreferences.edit().putString(d, strEncodeToString).apply();
+                sharedPreferences.edit().putString("em", strEncodeToString).apply();
             } catch (Throwable unused) {
             }
         }
@@ -115,14 +115,14 @@ public class c {
         Context appContext = UMGlobalContext.getAppContext();
         if (appContext != null) {
             try {
-                SharedPreferences sharedPreferences = appContext.getSharedPreferences(b, 0);
+                SharedPreferences sharedPreferences = appContext.getSharedPreferences("umeng_pcp", 0);
                 byte[] bArrA = ay.a(str.getBytes(), UMConfigure.sAppkey.getBytes());
                 if (bArrA.length == 0) {
-                    strEncodeToString = g.Q;
+                    strEncodeToString = "pv".Q;
                 } else {
                     strEncodeToString = Base64.encodeToString(bArrA, 0);
                 }
-                sharedPreferences.edit().putString(c, strEncodeToString).apply();
+                sharedPreferences.edit().putString("mob", strEncodeToString).apply();
             } catch (Throwable unused) {
             }
         }
@@ -132,16 +132,16 @@ public class c {
         Context appContext = UMGlobalContext.getAppContext();
         if (appContext != null) {
             try {
-                SharedPreferences sharedPreferences = appContext.getSharedPreferences(b, 0);
-                String string = sharedPreferences.getString(d, "");
-                if (g.Q.equals(string)) {
-                    sharedPreferences.edit().putString(d, "").apply();
+                SharedPreferences sharedPreferences = appContext.getSharedPreferences("umeng_pcp", 0);
+                String string = sharedPreferences.getString("em", "");
+                if ("pv".Q.equals(string)) {
+                    sharedPreferences.edit().putString("em", "").apply();
                     return "";
                 }
                 if (TextUtils.isEmpty(string)) {
                     return null;
                 }
-                sharedPreferences.edit().putString(d, "").apply();
+                sharedPreferences.edit().putString("em", "").apply();
                 return new String(ay.a(Base64.decode(string, 0), UMConfigure.sAppkey.getBytes()));
             } catch (Throwable unused) {
             }
@@ -153,16 +153,16 @@ public class c {
         Context appContext = UMGlobalContext.getAppContext();
         if (appContext != null) {
             try {
-                SharedPreferences sharedPreferences = appContext.getSharedPreferences(b, 0);
-                String string = sharedPreferences.getString(c, "");
-                if (g.Q.equals(string)) {
-                    sharedPreferences.edit().putString(c, "").apply();
+                SharedPreferences sharedPreferences = appContext.getSharedPreferences("umeng_pcp", 0);
+                String string = sharedPreferences.getString("mob", "");
+                if ("pv".Q.equals(string)) {
+                    sharedPreferences.edit().putString("mob", "").apply();
                     return "";
                 }
                 if (TextUtils.isEmpty(string)) {
                     return null;
                 }
-                sharedPreferences.edit().putString(c, "").apply();
+                sharedPreferences.edit().putString("mob", "").apply();
                 return new String(ay.a(Base64.decode(string, 0), UMConfigure.sAppkey.getBytes()));
             } catch (Throwable unused) {
             }
@@ -190,8 +190,8 @@ public class c {
                         throw th;
                     }
                 }
-                SharedPreferences sharedPreferences = context.getSharedPreferences(b, 0);
-                sharedPreferences.edit().putString(e, Base64.encodeToString(ay.a(jSONStringer.toString().getBytes(), UMConfigure.sAppkey.getBytes()), 0)).apply();
+                SharedPreferences sharedPreferences = context.getSharedPreferences("umeng_pcp", 0);
+                sharedPreferences.edit().putString("cp", Base64.encodeToString(ay.a(jSONStringer.toString().getBytes(), UMConfigure.sAppkey.getBytes()), 0)).apply();
             } catch (Throwable unused) {
             }
         }
@@ -201,15 +201,15 @@ public class c {
         synchronized (i) {
             try {
                 if (j.containsKey(str)) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "更新账号自定义KV: key=" + str + "; val=" + obj);
+                    UMRTLog.i("MobclickRT", "更新账号自定义KV: key=" + str + "; val=" + obj);
                     j.put(str, obj);
                     a(UMGlobalContext.getAppContext(), j);
-                } else if (j.size() < a) {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "设置账号自定义KV: key=" + str + "; val=" + obj);
+                } else if (j.size() < 20) {
+                    UMRTLog.i("MobclickRT", "设置账号自定义KV: key=" + str + "; val=" + obj);
                     j.put(str, obj);
                     a(UMGlobalContext.getAppContext(), j);
                 } else {
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "设置账号自定义KV: 已经设置20个KV键值对，忽略设置请求。");
+                    UMRTLog.i("MobclickRT", "设置账号自定义KV: 已经设置20个KV键值对，忽略设置请求。");
                     MLog.e("userProfile: Only 20 user-defined key-value pairs can be configured, please check!");
                 }
             } catch (Throwable th) {

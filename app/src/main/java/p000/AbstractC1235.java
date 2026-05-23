@@ -20,7 +20,7 @@ public abstract class AbstractC1235 extends AbstractC0878 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᤞᲈᲁ, reason: contains not printable characters */
     public final void m2873() {
-        long j = this.f4463 - JSONWriter.MASK_IGNORE_NON_FIELD_GETTER;
+        long j = this.f4463 - 4294967296L;
         this.f4463 = j;
         if (j <= 0 && this.f4464) {
             shutdown();
@@ -32,7 +32,7 @@ public abstract class AbstractC1235 extends AbstractC0878 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᲈᤞ, reason: contains not printable characters */
     public final void m2874(boolean z) {
-        this.f4463 = (z ? JSONWriter.MASK_IGNORE_NON_FIELD_GETTER : 1L) + this.f4463;
+        this.f4463 = (z ? 4294967296L : 1L) + this.f4463;
         if (z) {
             return;
         }

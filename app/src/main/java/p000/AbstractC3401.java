@@ -17,6 +17,6 @@ public abstract class AbstractC3401 extends ContextWrapper {
             return;
         }
         context.getResources();
-        int i = AbstractC3543.f11130;
+        int i = 0;
     }
 }

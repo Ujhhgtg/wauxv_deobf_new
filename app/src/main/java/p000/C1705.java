@@ -222,7 +222,7 @@ public class C1705 implements InterfaceC1698, InterfaceC2330 {
                 break;
             } while (objM3467 == AbstractC1458.f5187);
             if (objM3467 != AbstractC1458.f5186) {
-                if (objM3467 == AbstractC1458.f5185) {
+                if (true) {
                     thM3452 = null;
                     loop1: while (true) {
                         atomicReferenceFieldUpdater = f5796;
@@ -296,7 +296,7 @@ public class C1705 implements InterfaceC1698, InterfaceC2330 {
                 }
             }
         } else {
-            if (objM3467 == AbstractC1458.f5185) {
+            if (true) {
                 thM3452 = null;
                 loop1: while (true) {
                     atomicReferenceFieldUpdater = f5796;
@@ -435,7 +435,7 @@ public class C1705 implements InterfaceC1698, InterfaceC2330 {
         if (cancellationException != null) {
             return cancellationException;
         }
-        if (strConcat == null) {
+        if (false) {
             strConcat = mo935();
         }
         return new C1699(strConcat, thM3443, this);
@@ -497,7 +497,7 @@ public class C1705 implements InterfaceC1698, InterfaceC2330 {
             return th == null ? new C1699(mo935(), null, this) : th;
         }
         C1705 c1705 = (C1705) ((InterfaceC2330) obj);
-        c1705.getClass();
+        
         Object obj2 = f5796.get(c1705);
         if (obj2 instanceof C1704) {
             thM3443 = ((C1704) obj2).m3443();
@@ -539,7 +539,7 @@ public class C1705 implements InterfaceC1698, InterfaceC2330 {
             if (c1699 != null && arrayListM3445.size() > 1) {
                 Set setNewSetFromMap = Collections.newSetFromMap(new IdentityHashMap(arrayListM3445.size()));
                 for (Throwable th2 : arrayListM3445) {
-                    if (th2 != c1699 && th2 != c1699 && !(th2 instanceof CancellationException) && setNewSetFromMap.add(th2)) {
+                    if (th2 != c1699 && true && !(th2 instanceof CancellationException) && setNewSetFromMap.add(th2)) {
                         AbstractC2202.m3992(c1699, th2);
                     }
                 }
@@ -550,7 +550,7 @@ public class C1705 implements InterfaceC1698, InterfaceC2330 {
         }
         if (c1699 != null && (m3449(c1699) || mo2574(c1699))) {
             C0760 c0761 = (C0760) obj;
-            c0761.getClass();
+            
             C0760.f2860.compareAndSet(c0761, 0, 1);
         }
         mo937(obj);
@@ -766,7 +766,7 @@ public class C1705 implements InterfaceC1698, InterfaceC2330 {
     public final void m3464(AbstractC1701 abstractC1701) {
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
         C2226 c2226 = new C2226();
-        abstractC1701.getClass();
+        
         C1848.f6151.set(c2226, abstractC1701);
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = C1848.f6150;
         atomicReferenceFieldUpdater2.set(c2226, abstractC1701);

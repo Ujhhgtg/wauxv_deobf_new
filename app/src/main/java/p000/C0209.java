@@ -66,7 +66,7 @@ public final class C0209 extends AbstractC2867 implements InterfaceC1580 {
                 z2 = false;
             }
             if (z3 || z4 || z2) {
-                c1563.getClass();
+                
                 new C0408(4, 6, c1563).m1608(Boolean.FALSE);
             }
         }

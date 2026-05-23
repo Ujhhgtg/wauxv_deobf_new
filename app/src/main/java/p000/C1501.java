@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Set;
 import me.hd.wauxv.data.bean.info.FriendInfo;
 import me.hd.wauxv.data.bean.info.GroupInfo;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᤝᲇᲁᲀᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -45,7 +44,7 @@ public final /* synthetic */ class C1501 implements InterfaceC1425 {
                 String[] strArr = AbstractC1574.f5469;
                 c0816.f3198 = "搜索好友/群聊/公众号";
                 Set setM1390 = AbstractC0270.m1390(c1484.f5263);
-                c1504.getClass();
+                
                 ArrayList arrayList = new ArrayList();
                 ArrayList arrayList2 = new ArrayList();
                 ArrayList arrayList3 = new ArrayList();
@@ -137,7 +136,7 @@ public final /* synthetic */ class C1501 implements InterfaceC1425 {
                 c0816.m2367("公众号", arrayList4);
                 String str = "保存";
                 C1502 c1502 = new C1502(c1503, c1484, c0106);
-                c0816.f3202 = str;
+                c0816.f3202 = "保存";
                 c0816.f3204 = c1502;
                 break;
             case 1:
@@ -164,6 +163,6 @@ public final /* synthetic */ class C1501 implements InterfaceC1425 {
                 activity2.startActivity(intent2);
                 break;
         }
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }

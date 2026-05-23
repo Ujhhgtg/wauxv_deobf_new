@@ -136,7 +136,7 @@ public final class C2866 extends AbstractC1351 {
         }
         int iM3384 = length == 0 ? 0 : c1660.m3384(0);
         int iM3385 = ((length == 0 ? 0 : c1660.m3384(length - 1)) - iM3384) + 1;
-        c0519.m1840(bc.e);
+        c0519.m1840(256);
         c0519.m1840(iM3385);
         c0519.m1839(iM3384);
         int i3 = 0;

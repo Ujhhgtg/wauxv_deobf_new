@@ -66,7 +66,7 @@ public final class C0689 {
             return;
         }
         long j = this.f2573;
-        boolean z2 = (Long.MIN_VALUE & j) != 0;
+        boolean z2 = (-9223372036854775808L & j) != 0;
         long j2 = (1 << i) - 1;
         this.f2573 = ((j & (~j2)) << 1) | (j & j2);
         if (z) {

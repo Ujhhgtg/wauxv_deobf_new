@@ -20,7 +20,7 @@ public class C1661 implements Iterable, InterfaceC1737 {
         if (i3 == 0) {
             throw new IllegalArgumentException("Step must be non-zero.");
         }
-        if (i3 == Integer.MIN_VALUE) {
+        if (i3 == -2147483648) {
             throw new IllegalArgumentException("Step must be greater than Int.MIN_VALUE to avoid overflow on negation.");
         }
         this.f5612 = i;

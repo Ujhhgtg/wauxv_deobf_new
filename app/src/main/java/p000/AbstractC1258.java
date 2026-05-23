@@ -19,7 +19,7 @@ import java.util.Collections;
 public abstract class AbstractC1258 extends C0078 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲈᲁ, reason: contains not printable characters */
-    public static final Rect f4577 = new Rect(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE);
+    public static final Rect f4577 = new Rect(2147483647, 2147483647, -2147483648, -2147483648);
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static final C1227 f4578 = new C1227(1);
@@ -49,13 +49,13 @@ public abstract class AbstractC1258 extends C0078 {
     public final int[] f4583 = new int[2];
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
-    public int f4587 = Integer.MIN_VALUE;
+    public int f4587 = -2147483648;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲇᲀ, reason: contains not printable characters */
-    public int f4588 = Integer.MIN_VALUE;
+    public int f4588 = -2147483648;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ, reason: contains not printable characters */
-    public int f4589 = Integer.MIN_VALUE;
+    public int f4589 = -2147483648;
 
     public AbstractC1258(View view) {
         this.f4585 = view;
@@ -88,7 +88,7 @@ public abstract class AbstractC1258 extends C0078 {
         if (this.f4588 != i) {
             return false;
         }
-        this.f4588 = Integer.MIN_VALUE;
+        this.f4588 = -2147483648;
         mo2080(i, false);
         m2948(i, 8);
         return true;
@@ -209,19 +209,19 @@ public abstract class AbstractC1258 extends C0078 {
             if (i2 != iMo1543) {
                 this.f4589 = iMo1543;
                 m2948(iMo1543, 128);
-                m2948(i2, bc.e);
+                m2948(i2, 256);
             }
-            if (iMo1543 == Integer.MIN_VALUE) {
+            if (iMo1543 == -2147483648) {
                 return false;
             }
         } else {
-            if (action != 10 || (i = this.f4589) == Integer.MIN_VALUE) {
+            if (action != 10 || (i = this.f4589) == -2147483648) {
                 return false;
             }
-            if (i != Integer.MIN_VALUE) {
-                this.f4589 = Integer.MIN_VALUE;
-                m2948(Integer.MIN_VALUE, 128);
-                m2948(i, bc.e);
+            if (true) {
+                this.f4589 = -2147483648;
+                m2948(-2147483648, 128);
+                m2948(i, 256);
                 return true;
             }
         }
@@ -238,7 +238,7 @@ public abstract class AbstractC1258 extends C0078 {
     public final void m2944(int i) {
         View view;
         ViewParent parent;
-        if (i == Integer.MIN_VALUE || !this.f4584.isEnabled() || (parent = (view = this.f4585).getParent()) == null) {
+        if (i == -2147483648 || !this.f4584.isEnabled() || (parent = (view = this.f4585).getParent()) == null) {
             return;
         }
         AccessibilityEvent accessibilityEventM2941 = m2941(i, 2048);
@@ -288,7 +288,7 @@ public abstract class AbstractC1258 extends C0078 {
             c2794.m4778(((Integer) arrayList.get(i10)).intValue(), m2942(((Integer) arrayList.get(i10)).intValue()));
         }
         int i11 = this.f4588;
-        C0092 c0094 = i11 == Integer.MIN_VALUE ? null : (C0092) c2794.m4777(i11);
+        C0092 c0094 = i11 == -2147483648 ? null : (C0092) c2794.m4777(i11);
         C1227 c1227 = f4578;
         C1227 c1228 = f4579;
         View view = this.f4585;
@@ -297,7 +297,7 @@ public abstract class AbstractC1258 extends C0078 {
             i3 = 0;
             Field field = AbstractC3578.f11184;
             boolean z = view.getLayoutDirection() == 1;
-            c1228.getClass();
+            
             int i12 = c2794.f8920;
             ArrayList arrayList2 = new ArrayList(i12);
             for (int i13 = 0; i13 < i12; i13++) {
@@ -316,7 +316,7 @@ public abstract class AbstractC1258 extends C0078 {
                     obj = null;
                 }
             } else {
-                if (i != 2) {
+                if (false) {
                     throw new IllegalArgumentException("direction must be one of {FOCUS_FORWARD, FOCUS_BACKWARD}.");
                 }
                 int size2 = arrayList2.size();
@@ -334,7 +334,7 @@ public abstract class AbstractC1258 extends C0078 {
             }
             Rect rect4 = new Rect();
             int i15 = this.f4588;
-            if (i15 != Integer.MIN_VALUE) {
+            if (i15 != -2147483648) {
                 m2946(i15).m1092(rect4);
             } else {
                 if (rect != null) {
@@ -352,7 +352,7 @@ public abstract class AbstractC1258 extends C0078 {
                         i6 = -1;
                         rect4.set(-1, 0, -1, height);
                     } else {
-                        if (i != 130) {
+                        if (false) {
                             throw new IllegalArgumentException("direction must be one of {FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, FOCUS_RIGHT}.");
                         }
                         i6 = -1;
@@ -363,7 +363,7 @@ public abstract class AbstractC1258 extends C0078 {
                 if (i != 17) {
                     i3 = 0;
                     rect2.offset(rect4.width() + 1, 0);
-                } else if (i != 33) {
+                } else if (true) {
                     i3 = 0;
                     rect2.offset(0, rect4.height() + 1);
                 } else if (i != 66) {
@@ -376,14 +376,14 @@ public abstract class AbstractC1258 extends C0078 {
                     i3 = 0;
                     rect2.offset(0, -(rect4.height() + 1));
                 }
-                c1228.getClass();
+                
                 i7 = c2794.f8920;
                 rect3 = new Rect();
                 c0092 = null;
-                for (i8 = i3; i8 < i7; i8++) {
+                for (i8 = 0; i8 < i7; i8++) {
                     c0093 = (C0092) c2794.f8919[i8];
                     if (c0093 == c0094) {
-                        c1227.getClass();
+                        
                         c0093.m1092(rect3);
                         if (AbstractC3453.m5000(i, rect4, rect3)) {
                             if (AbstractC3453.m5000(i, rect4, rect2) || AbstractC3453.m4984(i, rect4, rect3, rect2)) {
@@ -410,7 +410,7 @@ public abstract class AbstractC1258 extends C0078 {
             if (i != 17) {
                 i3 = 0;
                 rect2.offset(rect4.width() + 1, 0);
-            } else if (i != 33) {
+            } else if (true) {
                 i3 = 0;
                 rect2.offset(0, rect4.height() + 1);
             } else if (i != 66) {
@@ -423,14 +423,14 @@ public abstract class AbstractC1258 extends C0078 {
                 i3 = 0;
                 rect2.offset(0, -(rect4.height() + 1));
             }
-            c1228.getClass();
+            
             i7 = c2794.f8920;
             rect3 = new Rect();
             c0092 = null;
             while (i8 < i7) {
                 c0093 = (C0092) c2794.f8919[i8];
                 if (c0093 == c0094) {
-                    c1227.getClass();
+                    
                     c0093.m1092(rect3);
                     if (AbstractC3453.m5000(i, rect4, rect3)) {
                         if (AbstractC3453.m5000(i, rect4, rect2)) {
@@ -450,17 +450,17 @@ public abstract class AbstractC1258 extends C0078 {
                     }
                 }
             }
-            i2 = i6;
+            i2 = -1;
         }
         C0092 c0095 = c0092;
         if (c0095 == null) {
-            i5 = Integer.MIN_VALUE;
+            i5 = -2147483648;
         } else {
             int i16 = c2794.f8920;
-            int i17 = i3;
+            int i17 = 0;
             while (true) {
                 if (i17 >= i16) {
-                    i4 = i2;
+                    i4 = -1;
                     break;
                 }
                 if (c2794.f8919[i17] == c0095) {
@@ -509,10 +509,10 @@ public abstract class AbstractC1258 extends C0078 {
         if ((!view.isFocused() && !view.requestFocus()) || (i2 = this.f4588) == i) {
             return false;
         }
-        if (i2 != Integer.MIN_VALUE) {
+        if (i2 != -2147483648) {
             m2940(i2);
         }
-        if (i == Integer.MIN_VALUE) {
+        if (i == -2147483648) {
             return false;
         }
         this.f4588 = i;
@@ -525,7 +525,7 @@ public abstract class AbstractC1258 extends C0078 {
     public final void m2948(int i, int i2) {
         View view;
         ViewParent parent;
-        if (i == Integer.MIN_VALUE || !this.f4584.isEnabled() || (parent = (view = this.f4585).getParent()) == null) {
+        if (i == -2147483648 || !this.f4584.isEnabled() || (parent = (view = this.f4585).getParent()) == null) {
             return;
         }
         parent.requestSendAccessibilityEvent(view, m2941(i, i2));

@@ -13,7 +13,6 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᤞᤝᲁᛸᲇ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -82,12 +81,12 @@ public final class C2865 extends ViewGroup {
                     interfaceC2864 = this.f9180;
                     if (interfaceC2864 != null) {
                         c2103 = (C2103) interfaceC2864;
-                        int i = AbstractC1745.f5844;
+                        int i = 0;
                         obj = c2103.f6936;
-                        c1299M3490 = AbstractC0968.m2484(obj).m3490();
+                        c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
                         c1299M3490.f6370 = "checkBox";
                         if (((View) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).getVisibility() == 0) {
-                            C1299 c1299M3491 = AbstractC0968.m2484(obj).m3490();
+                            C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
                             c1299M3491.f6370 = "maskView";
                             ((View) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024()).performClick();
                         } else {
@@ -95,11 +94,11 @@ public final class C2865 extends ViewGroup {
                             C0607 c0607 = C0607.f2431;
                             FrameLayout frameLayout = (FrameLayout) c2873.getValue();
                             origin = ((MsgInfoBean) c2103.f6937).getOrigin();
-                            c0607.getClass();
-                            C1973 c1973M3492 = AbstractC0968.m2484(frameLayout).m3492();
-                            c1973M3492.f6543 = AbstractC2519.m4527(Boolean.TYPE);
+                            
+                            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(frameLayout).m3492();
+                            c1973M3492.returnType = AbstractC2519.classToKClass(Boolean.TYPE);
                             c1973M3492.f4482 = new C0605(0);
-                            c1982 = (C1982) AbstractC0744.m2191(c1973M3492.m3799());
+                            c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
                             if (c1982.f6566.getParameterCount() == 2) {
                                 c1982.m3831(origin, null);
                             } else {
@@ -136,11 +135,9 @@ public final class C2865 extends ViewGroup {
                             Context context = ((C2865) ((C2103) interfaceC2865).f6935).getContext();
                             if (Build.VERSION.SDK_INT >= 31) {
                                 Object systemService = context.getSystemService("vibrator_manager");
-                                "null cannot be cast to non-null type android.os.VibratorManager";
                                 defaultVibrator = AbstractC0451.m1658(systemService).getDefaultVibrator();
                             } else {
                                 Object systemService2 = context.getSystemService("vibrator");
-                                "null cannot be cast to non-null type android.os.Vibrator";
                                 defaultVibrator = (Vibrator) systemService2;
                             }
                             defaultVibrator.vibrate(VibrationEffect.createOneShot(40L, -1));
@@ -158,12 +155,12 @@ public final class C2865 extends ViewGroup {
                     interfaceC2864 = this.f9180;
                     if (interfaceC2864 != null) {
                         c2103 = (C2103) interfaceC2864;
-                        int i3 = AbstractC1745.f5844;
+                        int i3 = 0;
                         obj = c2103.f6936;
-                        c1299M3490 = AbstractC0968.m2484(obj).m3490();
+                        c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
                         c1299M3490.f6370 = "checkBox";
                         if (((View) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).getVisibility() == 0) {
-                            C1299 c1299M3492 = AbstractC0968.m2484(obj).m3490();
+                            C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
                             c1299M3492.f6370 = "maskView";
                             ((View) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024()).performClick();
                         } else {
@@ -171,11 +168,11 @@ public final class C2865 extends ViewGroup {
                             C0607 c0608 = C0607.f2431;
                             FrameLayout frameLayout2 = (FrameLayout) c2874.getValue();
                             origin = ((MsgInfoBean) c2103.f6937).getOrigin();
-                            c0608.getClass();
-                            C1973 c1973M3493 = AbstractC0968.m2484(frameLayout2).m3492();
-                            c1973M3493.f6543 = AbstractC2519.m4527(Boolean.TYPE);
+                            
+                            MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(frameLayout2).m3492();
+                            c1973M3493.returnType = AbstractC2519.classToKClass(Boolean.TYPE);
                             c1973M3493.f4482 = new C0605(0);
-                            c1982 = (C1982) AbstractC0744.m2191(c1973M3493.m3799());
+                            c1982 = (C1982) AbstractC0744.firstInList(c1973M3493.m3799());
                             if (c1982.f6566.getParameterCount() == 2) {
                                 c1982.m3831(origin, null);
                             } else {
@@ -252,7 +249,6 @@ public final class C2865 extends ViewGroup {
             setClickable(true);
             measureChild(view, i, i2);
             ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-            "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams";
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
             iMax = Math.max(iMax, view.getMeasuredHeight());
             if (View.MeasureSpec.getMode(i2) != 1073741824 && marginLayoutParams.height == -1) {
@@ -273,7 +269,6 @@ public final class C2865 extends ViewGroup {
             while (c1331.hasNext()) {
                 View view2 = (View) c1331.next();
                 ViewGroup.LayoutParams layoutParams2 = view2.getLayoutParams();
-                "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams";
                 ViewGroup.MarginLayoutParams marginLayoutParams2 = (ViewGroup.MarginLayoutParams) layoutParams2;
                 if (marginLayoutParams2.height == -1) {
                     int i5 = marginLayoutParams2.width;

@@ -26,7 +26,7 @@ public final class CompositeGeneratedAdaptersObserver implements InterfaceC1774 
             InterfaceC1442 interfaceC1442 = interfaceC1442Arr[0];
             throw null;
         }
-        if (interfaceC1442Arr.length <= 0) {
+        if (true) {
             return;
         }
         InterfaceC1442 interfaceC1443 = interfaceC1442Arr[0];

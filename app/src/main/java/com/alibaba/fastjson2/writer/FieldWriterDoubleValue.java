@@ -34,13 +34,13 @@ final class FieldWriterDoubleValue<T> extends FieldWriterDouble<T> {
         long features = this.features | jSONWriter.getFeatures();
         try {
             double doubleValue = this.propertyAccessor.getDoubleValue(t);
-            if (doubleValue == 0.0d && this.defaultValue == null && (JSONWriter.MASK_NOT_WRITE_DEFAULT_VALUE & features) != 0) {
+            if (doubleValue == 0.0d && this.defaultValue == null && (4096L & features) != 0) {
                 return false;
             }
             writeDoubleValue(jSONWriter, doubleValue, features);
             return true;
         } catch (RuntimeException e) {
-            if ((JSONWriter.MASK_IGNORE_ERROR_GETTER & features) != 0) {
+            if ((32768L & features) != 0) {
                 return false;
             }
             throw e;

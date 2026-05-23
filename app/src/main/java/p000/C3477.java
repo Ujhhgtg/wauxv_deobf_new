@@ -14,7 +14,7 @@ public final class C3477 implements Comparable {
 
     @Override // java.lang.Comparable
     public final int compareTo(Object obj) {
-        return AbstractC2207.m4089(this.f10972 ^ Integer.MIN_VALUE, ((C3477) obj).f10972 ^ Integer.MIN_VALUE);
+        return AbstractC2207.m4089(this.f10972 ^ -2147483648, ((C3477) obj).f10972 ^ -2147483648);
     }
 
     public final boolean equals(Object obj) {

@@ -52,31 +52,31 @@ public final class C2896 extends AbstractC1351 {
         C1089 c1089;
         C1089 c10810 = this.f3468;
         switch (c10810.f3926) {
-            case Opcodes.AALOAD /* 50 */:
+            case 50 /* 50 */:
                 c1089 = AbstractC1090.f3974;
                 break;
-            case Opcodes.BALOAD /* 51 */:
+            case 51 /* 51 */:
                 c1089 = AbstractC1090.f3973;
                 break;
             case 52:
                 c1089 = AbstractC1090.f3976;
                 break;
-            case Opcodes.SALOAD /* 53 */:
+            case 53 /* 53 */:
                 c1089 = AbstractC1090.f3975;
                 break;
-            case Opcodes.ISTORE /* 54 */:
+            case 54 /* 54 */:
                 c1089 = AbstractC1090.f3978;
                 break;
-            case Opcodes.LSTORE /* 55 */:
+            case 55 /* 55 */:
                 c1089 = AbstractC1090.f3977;
                 break;
-            case Opcodes.FSTORE /* 56 */:
+            case 56 /* 56 */:
                 c1089 = AbstractC1090.f3980;
                 break;
-            case Opcodes.DSTORE /* 57 */:
+            case 57 /* 57 */:
                 c1089 = AbstractC1090.f3979;
                 break;
-            case Opcodes.ASTORE /* 58 */:
+            case 58 /* 58 */:
                 c1089 = AbstractC1090.f3982;
                 break;
             case 59:

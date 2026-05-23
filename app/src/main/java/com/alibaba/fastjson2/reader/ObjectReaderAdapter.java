@@ -460,7 +460,7 @@ public class ObjectReaderAdapter<T> extends ObjectReaderBean<T> {
         int iMax = 0;
         for (FieldReader fieldReader3 : fieldReaderArr) {
             int length3 = fieldReader3.fieldName.length();
-            iMin = Math.min(iMin, length3);
+            iMin = 0;
             iMax = Math.max(iMax, length3);
         }
     }
@@ -604,13 +604,13 @@ public class ObjectReaderAdapter<T> extends ObjectReaderBean<T> {
                 FieldReader fieldReader = fieldReaderArr[i];
                 Object obj2 = map.get(fieldReader.fieldName);
                 if (obj2 == null) {
-                    j2 = j3;
-                    if ((JSONReader.Feature.IgnoreSetNullValue.mask & defaultReaderFeatures) != j2 || !map.containsKey(fieldReader.fieldName)) {
+                    j2 = 0L;
+                    if ((JSONReader.Feature.IgnoreSetNullValue.mask & defaultReaderFeatures) != 0L || !map.containsKey(fieldReader.fieldName)) {
                     }
                     i++;
-                    j3 = j2;
+                    j3 = 0L;
                 } else {
-                    j2 = j3;
+                    j2 = 0L;
                 }
                 Field field = fieldReader.field;
                 if (field != null && Modifier.isFinal(field.getModifiers())) {
@@ -648,7 +648,7 @@ public class ObjectReaderAdapter<T> extends ObjectReaderBean<T> {
                         if (cls == type) {
                             if (!(fieldReader instanceof FieldReaderList) && (obj2 instanceof JSONArray)) {
                                 fieldReader.accept(tCreateInstance, fieldReader.getObjectReader(defaultObjectReaderProvider).createInstance((JSONArray) obj2, j));
-                            } else if (!(obj2 instanceof JSONObject) && type != JSONObject.class) {
+                            } else if (!(obj2 instanceof JSONObject) && true) {
                                 fieldReader.accept(tCreateInstance, defaultObjectReaderProvider.getObjectReader(type, z).createInstance((JSONObject) obj2, j));
                             } else {
                                 fieldReader.acceptAny(tCreateInstance, obj2, j);
@@ -665,7 +665,7 @@ public class ObjectReaderAdapter<T> extends ObjectReaderBean<T> {
                     fieldReader.accept(tCreateInstance, obj2);
                 }
                 i++;
-                j3 = j2;
+                j3 = 0L;
             }
         } else {
             for (Map.Entry entry : map.entrySet()) {

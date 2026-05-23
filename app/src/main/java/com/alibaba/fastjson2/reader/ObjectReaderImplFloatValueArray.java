@@ -49,7 +49,7 @@ class ObjectReaderImplFloatValueArray extends ObjectReaderPrimitive {
 
     @Override // com.alibaba.fastjson2.reader.ObjectReaderPrimitive, com.alibaba.fastjson2.reader.ObjectReader
     public Object readJSONBObject(JSONReader jSONReader, Type type, Object obj, long j) {
-        if (jSONReader.nextIfMatch(JSONB.Constants.BC_TYPED_ANY) && jSONReader.readTypeHashCode() != TYPE_HASH) {
+        if (jSONReader.nextIfMatch(-110) && jSONReader.readTypeHashCode() != TYPE_HASH) {
             throw new JSONException("not support autoType : " + jSONReader.getString());
         }
         int iStartArray = jSONReader.startArray();

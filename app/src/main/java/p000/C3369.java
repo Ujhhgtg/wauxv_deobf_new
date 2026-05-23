@@ -1,7 +1,5 @@
 package p000;
 
-import me.hd.wauxv.hook.factory.MagicFactory;
-
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲀᲇᤝᤞᛸᲈ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
@@ -27,16 +25,16 @@ public final /* synthetic */ class C3369 implements InterfaceC1414 {
                 return new C0258(C3141.f9999);
             case 4:
                 C3607.f11267.m2548(C3611.f11292);
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 5:
                 C3612.f11297.m2548(C3613.f11299);
-                return C3497.f10997;
+                return Unit.INSTANCE;
             case 6:
                 C3625.f11327.m2548(C3626.f11329);
-                return C3497.f10997;
+                return Unit.INSTANCE;
             default:
                 StringBuilder sb = new StringBuilder();
-                C1565.f5440.getClass();
+                
                 sb.append(C1565.m3281());
                 sb.append("|1356|");
                 sb.append(AbstractC3691.f11599);

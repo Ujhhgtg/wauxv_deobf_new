@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public abstract class AbstractC2488 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
     public void mo3410(Rect rect, View view) {
-        ((C2492) view.getLayoutParams()).f7956.getClass();
+        
         rect.set(0, 0, 0, 0);
     }
 

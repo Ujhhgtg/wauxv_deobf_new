@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 import org.luckypray.dexkit.DexKitBridge;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲇᲈᲀᤝᲁᤞ, reason: contains not printable characters */
@@ -50,14 +49,14 @@ public final class C0636 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C0623.f2458, dexKitBridge, new C0605(7));
+        AbstractC1574.findMethod(C0623.f2458, dexKitBridge, new C0605(7));
     }
 
     @Override // p000.InterfaceC1593
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public final void mo2039(MsgInfoBean msgInfoBean) {
         if (mo3264() && C0627.f2462.m2536() && msgInfoBean.isSend()) {
-            int i = AbstractC2927.f9392;
+            int i = 0;
             int dayOfMonth = LocalDate.now().getDayOfMonth();
             C0624 c0624 = C0624.f2459;
             if (c0624.m2538() != dayOfMonth) {
@@ -100,7 +99,7 @@ public final class C0636 extends AbstractC2867 implements InterfaceC1582, Interf
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.m3315(C0623.f2458));
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C0623.f2458));
         C0636 c0636 = f2474;
         C3689 c3689M4172 = C2309.m4172(c0636, listSingletonList);
         c0636.m3262(c3689M4172, new C0605(9));

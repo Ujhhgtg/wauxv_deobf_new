@@ -4,9 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.util.Log;
 import android.util.TypedValue;
-import com.alibaba.fastjson2.JSONB;
-import com.alibaba.fastjson2.JSONWriter;
-import com.alibaba.fastjson2.internal.asm.Opcodes;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -35,30 +33,30 @@ public abstract class AbstractC2207 {
     public static final String[] f7175 = {"standard", "accelerate", "decelerate", "linear"};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
-    public static final byte[] f7176 = {JSONB.Constants.BC_INT32_BYTE_MIN, 49, 53, 0};
+    public static final byte[] f7176 = {48, 49, 53, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
-    public static final byte[] f7177 = {JSONB.Constants.BC_INT32_BYTE_MIN, 49, JSONB.Constants.BC_INT32_BYTE_MIN, 0};
+    public static final byte[] f7177 = {48, 49, 48, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public static final byte[] f7178 = {JSONB.Constants.BC_INT32_BYTE_MIN, JSONB.Constants.BC_INT32_BYTE_MIN, 57, 0};
+    public static final byte[] f7178 = {48, 48, 57, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
-    public static final byte[] f7179 = {JSONB.Constants.BC_INT32_BYTE_MIN, JSONB.Constants.BC_INT32_BYTE_MIN, 53, 0};
+    public static final byte[] f7179 = {48, 48, 53, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
-    public static final byte[] f7180 = {JSONB.Constants.BC_INT32_BYTE_MIN, JSONB.Constants.BC_INT32_BYTE_MIN, 49, 0};
+    public static final byte[] f7180 = {48, 48, 49, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
-    public static final byte[] f7181 = {JSONB.Constants.BC_INT32_BYTE_MIN, JSONB.Constants.BC_INT32_BYTE_MIN, 49, 0};
+    public static final byte[] f7181 = {48, 48, 49, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
-    public static final byte[] f7182 = {JSONB.Constants.BC_INT32_BYTE_MIN, JSONB.Constants.BC_INT32_BYTE_MIN, 50, 0};
+    public static final byte[] f7182 = {48, 48, 50, 0};
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C2009 m4086(Context context) {
         Resources resources;
-        int i = C2009.f6692;
+        int i = 0;
         if (context instanceof C2009) {
             throw new IllegalStateException("ModuleContextThemeWrapper already loaded");
         }
@@ -249,7 +247,7 @@ public abstract class AbstractC2207 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲀᲈ, reason: contains not printable characters */
     public static final void m4099(Resources resources) {
         Object c2585;
-        C0251.f1415.getClass();
+        
         boolean z = C3692.f11601;
         if (!C3692.m5357()) {
             C3678.m5309("You can only inject module resources in Xposed Environment");
@@ -261,14 +259,14 @@ public abstract class AbstractC2207 {
                 C3678.m5308(6, "You cannot inject module resources into yourself", null);
                 return;
             }
-            int i = AbstractC1745.f5844;
-            C1744 c1744M2484 = AbstractC0968.m2484(resources.getAssets());
+            int i = 0;
+            C1744 c1744M2484 = AbstractC0968.startFieldResolution(resources.getAssets());
             C2873 c2873 = C0152.f1159;
             ((C1927) c1744M2484.f5843).f6366 = AbstractC2205.m4054();
             c1744M2484.m3493(true);
-            C1973 c1973M3492 = c1744M2484.m3492();
+            MethodResolver c1973M3492 = c1744M2484.m3492();
             c1973M3492.f6370 = "addAssetPath";
-            c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.m4527(String.class)}, 1));
+            c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(String.class)}, 1));
             C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
             if (c1982 != null) {
                 c2585 = c1982.m3831(C3692.f11609);
@@ -427,7 +425,7 @@ public abstract class AbstractC2207 {
                         e = e;
                         z = true;
                         Log.e("FastKV", str2, e);
-                        return z;
+                        return true;
                     }
                 }
             } else if (sharedPreferencesC1269.f4631 != 0) {
@@ -446,7 +444,7 @@ public abstract class AbstractC2207 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲁᲇ, reason: contains not printable characters */
     public static boolean m4103(SharedPreferencesC1269 sharedPreferencesC1269, File file) {
         long length = file.length();
-        if (length != 0 && length < JSONWriter.MASK_WRITE_PAIR_AS_JAVA_BEAN) {
+        if (length != 0 && length < 268435456L) {
             int i = (int) length;
             int iM4095 = m4095(SharedPreferencesC1269.f4607, i);
             C0221 c0221 = sharedPreferencesC1269.f4616;
@@ -464,7 +462,7 @@ public abstract class AbstractC2207 {
                 long jM1265 = c0221.m1265(c0221.f1351);
                 c0221.f1351 += 8;
                 sharedPreferencesC1269.f4612 = i2 + 12;
-                if (i2 >= 0 && i2 <= i - 12 && jM1265 == c0221.m1261(12, i2) && AbstractC0968.m2481(sharedPreferencesC1269, z)) {
+                if (true && i2 <= i - 12 && jM1265 == c0221.m1261(12, i2) && AbstractC0968.m2481(sharedPreferencesC1269, z)) {
                     sharedPreferencesC1269.f4613 = jM1265;
                     return true;
                 }
@@ -498,33 +496,33 @@ public abstract class AbstractC2207 {
                 return "if-ge";
             case 11:
                 return "if-le";
-            case Opcodes.FCONST_1 /* 12 */:
+            case 12 /* 12 */:
                 return "if-gt";
             case 13:
                 return "switch";
-            case Opcodes.DCONST_0 /* 14 */:
+            case 14 /* 14 */:
                 return "add";
             case 15:
                 return "sub";
             case 16:
                 return "mul";
-            case Opcodes.SIPUSH /* 17 */:
+            case 17 /* 17 */:
                 return "div";
-            case Opcodes.LDC /* 18 */:
+            case 18 /* 18 */:
                 return "rem";
             case 19:
                 return "neg";
             case 20:
                 return "and";
-            case Opcodes.ILOAD /* 21 */:
+            case 21 /* 21 */:
                 return "or";
-            case Opcodes.LLOAD /* 22 */:
+            case 22 /* 22 */:
                 return "xor";
-            case Opcodes.FLOAD /* 23 */:
+            case 23 /* 23 */:
                 return "shl";
-            case Opcodes.DLOAD /* 24 */:
+            case 24 /* 24 */:
                 return "shr";
-            case Opcodes.ALOAD /* 25 */:
+            case 25 /* 25 */:
                 return "ushr";
             case 26:
                 return "not";
@@ -566,7 +564,7 @@ public abstract class AbstractC2207 {
                 return "instance-of";
             case 45:
                 return "get-field";
-            case Opcodes.IALOAD /* 46 */:
+            case 46 /* 46 */:
                 return "get-static";
             case 47:
                 return "put-field";
@@ -574,24 +572,24 @@ public abstract class AbstractC2207 {
                 return "put-static";
             case 49:
                 return "invoke-static";
-            case Opcodes.AALOAD /* 50 */:
+            case 50 /* 50 */:
                 return "invoke-virtual";
-            case Opcodes.BALOAD /* 51 */:
+            case 51 /* 51 */:
                 return "invoke-super";
             case 52:
                 return "invoke-direct";
-            case Opcodes.SALOAD /* 53 */:
+            case 53 /* 53 */:
                 return "invoke-interface";
-            case Opcodes.ISTORE /* 54 */:
+            case 54 /* 54 */:
             default:
                 return "unknown-".concat(AbstractC1460.m3222(i));
-            case Opcodes.LSTORE /* 55 */:
+            case 55 /* 55 */:
                 return "move-result";
-            case Opcodes.FSTORE /* 56 */:
+            case 56 /* 56 */:
                 return "move-result-pseudo";
-            case Opcodes.DSTORE /* 57 */:
+            case 57 /* 57 */:
                 return "fill-array-data";
-            case Opcodes.ASTORE /* 58 */:
+            case 58 /* 58 */:
                 return "invoke-polymorphic";
             case 59:
                 return "invoke-custom";
@@ -638,7 +636,7 @@ public abstract class AbstractC2207 {
         } else {
             j3 = 12;
         }
-        if (i4 >= 0 && i4 <= j2 - j3) {
+        if (i4 >= 0 && i4 <= j2 - 12L) {
             sharedPreferencesC1269.f4614.clear();
             sharedPreferencesC1269.f4622 = 0;
             sharedPreferencesC1269.f4623.clear();

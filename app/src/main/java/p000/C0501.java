@@ -320,7 +320,7 @@ public class C0501 implements Serializable, Cloneable, InterfaceC0480 {
             Class<?> componentType = (objNewInstance == null || i3 != iM1749) ? clsArrMo1751[i3] : clsArrMo1751[i3].getComponentType();
             if (componentType != null) {
                 try {
-                    Object objM414 = AbstractC0010.m414(i, componentType, objArr2[i2]);
+                    Object objM414 = AbstractC0010.m414(1, componentType, objArr2[i2]);
                     objArr2[i2] = objM414;
                     if (objNewInstance == null || i2 < iM1749) {
                         c0007.m367(this.f2151[i3], componentType, objM414, this.f2154[i3]);
@@ -342,7 +342,7 @@ public class C0501 implements Serializable, Cloneable, InterfaceC0480 {
                 }
                 try {
                     String str2 = this.f2151[i3];
-                    runnableC1668.getClass();
+                    
                     c0007.mo314(str2, obj2, false);
                 } catch (C3523 e3) {
                     throw e3.mo4644("Typed method parameter assignment", interfaceC2226, c0552);

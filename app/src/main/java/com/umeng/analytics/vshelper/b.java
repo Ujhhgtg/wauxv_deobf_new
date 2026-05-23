@@ -65,8 +65,8 @@ public class b implements cf {
                 if (data != null) {
                     String scheme = data.getScheme();
                     if (scheme != null && scheme.startsWith("um.")) {
-                        String queryParameter = data.getQueryParameter(AnalyticsConfig.DEBUG_KEY);
-                        String queryParameter2 = data.getQueryParameter(AnalyticsConfig.DEBUG_MODE_PERIOD);
+                        String queryParameter = data.getQueryParameter("debugkey");
+                        String queryParameter2 = data.getQueryParameter("sendaging");
                         if (TextUtils.isEmpty(queryParameter)) {
                             return;
                         }
@@ -80,51 +80,51 @@ public class b implements cf {
                             }
                         }
                         HashMap map = new HashMap();
-                        map.put(AnalyticsConfig.DEBUG_KEY, queryParameter);
+                        map.put("debugkey", queryParameter);
                         if (jLongValue < 0) {
                             if (AnalyticsConfig.isRealTimeDebugMode()) {
-                                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> call turnOffRealTimeDebug because sendaging < 0");
+                                UMRTLog.i("MobclickRT", "--->>> call turnOffRealTimeDebug because sendaging < 0");
                                 AnalyticsConfig.turnOffRealTimeDebug();
                                 Context applicationContext = activity.getApplicationContext();
-                                UMWorkDispatch.sendEvent(applicationContext, r.a.G, CoreProtocol.getInstance(applicationContext), null);
+                                UMWorkDispatch.sendEvent(applicationContext, 8215, CoreProtocol.getInstance(applicationContext), null);
                                 return;
                             }
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> Not currently in RealTimeDebug mode and doing nothing.");
+                            UMRTLog.i("MobclickRT", "--->>> Not currently in RealTimeDebug mode and doing nothing.");
                             return;
                         }
                         if (jLongValue > 0) {
                             AnalyticsConfig.turnOnRealTimeDebug(map);
                             JSONObject jSONObject = new JSONObject();
                             try {
-                                jSONObject.put(AnalyticsConfig.RTD_START_TIME, System.currentTimeMillis());
+                                jSONObject.put("startTime", System.currentTimeMillis());
                                 if (jLongValue < 60) {
                                     jLongValue = 60;
                                 }
                                 if (jLongValue > 240) {
                                     jLongValue = 240;
                                 }
-                                jSONObject.put(AnalyticsConfig.RTD_PERIOD, jLongValue);
-                                jSONObject.put(AnalyticsConfig.DEBUG_KEY, queryParameter);
+                                jSONObject.put("period", jLongValue);
+                                jSONObject.put("debugkey", queryParameter);
                             } catch (Throwable unused2) {
                             }
                             Context applicationContext2 = activity.getApplicationContext();
-                            UMWorkDispatch.sendEvent(applicationContext2, r.a.F, CoreProtocol.getInstance(applicationContext2), jSONObject);
-                            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> turnOnRealTimeDebug[persistent] dk: " + queryParameter + "; period: " + jLongValue);
+                            UMWorkDispatch.sendEvent(applicationContext2, 8214, CoreProtocol.getInstance(applicationContext2), jSONObject);
+                            UMRTLog.i("MobclickRT", "--->>> turnOnRealTimeDebug[persistent] dk: " + queryParameter + "; period: " + jLongValue);
                             return;
                         }
                         AnalyticsConfig.turnOnRealTimeDebug(map);
                         Context applicationContext3 = activity.getApplicationContext();
-                        UMWorkDispatch.sendEvent(applicationContext3, r.a.G, CoreProtocol.getInstance(applicationContext3), null);
-                        UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> turnOnRealTimeDebug[non-persistent] dk: " + queryParameter);
+                        UMWorkDispatch.sendEvent(applicationContext3, 8215, CoreProtocol.getInstance(applicationContext3), null);
+                        UMRTLog.i("MobclickRT", "--->>> turnOnRealTimeDebug[non-persistent] dk: " + queryParameter);
                         return;
                     }
-                    UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> scheme: " + scheme);
+                    UMRTLog.i("MobclickRT", "--->>> scheme: " + scheme);
                     return;
                 }
-                UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> uri: " + data);
+                UMRTLog.i("MobclickRT", "--->>> uri: null");
                 return;
             }
-            UMRTLog.i(UMRTLog.RTLOG_TAG, "--->>> intent: " + intent);
+            UMRTLog.i("MobclickRT", "--->>> intent: null");
         }
     }
 

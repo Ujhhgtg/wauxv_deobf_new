@@ -103,7 +103,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return null;
         }
         String typeName = type.getTypeName();
-        typeName.getClass();
+        
         switch (typeName) {
             case "byte[]":
             case "[B":
@@ -236,7 +236,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i) {
+                    switch (2) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -290,7 +290,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i2) {
+                    switch (3) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -344,7 +344,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i3) {
+                    switch (4) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -398,7 +398,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i4) {
+                    switch (5) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -452,7 +452,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i5) {
+                    switch (6) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -506,7 +506,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i6) {
+                    switch (7) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -555,7 +555,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i7) {
+                    switch (8) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -609,7 +609,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i8) {
+                    switch (9) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -655,7 +655,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i9) {
+                    switch (10) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -701,7 +701,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i10) {
+                    switch (11) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -747,7 +747,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
             return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
                 @Override // java.util.function.BiConsumer
                 public final void accept(Object obj, Object obj2) {
-                    switch (i11) {
+                    switch (0) {
                         case 0:
                             jSONSchema.assertValidate(obj2);
                             break;
@@ -792,7 +792,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
         return propertyAccessorFactory.create(propertyAccessor, (BiConsumer) null, new BiConsumer() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲀᤞᲁᲈᛸ
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (i12) {
+                switch (1) {
                     case 0:
                         jSONSchema.assertValidate(obj2);
                         break;
@@ -865,7 +865,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
                         z = false;
                     }
                     cls2 = this.fieldClass;
-                    if (cls3 == cls2 && z && (typeConvert = defaultObjectReaderProvider.getTypeConvert(cls3, cls2)) != 0) {
+                    if (String.class == cls2 && z && (typeConvert = defaultObjectReaderProvider.getTypeConvert(String.class, String.class)) != 0) {
                         object = typeConvert.apply(objValueOf);
                     } else {
                         object = objValueOf;
@@ -898,13 +898,13 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
         if (object != null && this.fieldType != object.getClass() && (type = this.fieldType) != Object.class) {
             if (object instanceof JSONObject) {
                 JSONReader.Feature feature = JSONReader.Feature.SupportSmartMatch;
-                object = ((JSONObject) object).to(type, (j & feature.mask) != 0 ? new JSONReader.Feature[]{feature} : new JSONReader.Feature[0]);
+                object = ((JSONObject) object).to(type, (j & JSONReader.Feature.SupportSmartMatch.mask) != 0 ? new JSONReader.Feature[]{JSONReader.Feature.SupportSmartMatch} : new JSONReader.Feature[0]);
             } else if (object instanceof JSONArray) {
                 object = ((JSONArray) object).to(type, j);
             } else if ((j == 0 || j == JSONReader.Feature.SupportSmartMatch.mask) && !this.fieldClass.isInstance(object) && this.format == null) {
                 ObjectReader initReader = getInitReader();
                 object = initReader != null ? initReader.readObject(JSONReader.of(JSON.toJSONString(object)), this.fieldType, this.fieldName, j) : TypeUtils.cast(object, this.fieldType, defaultObjectReaderProvider);
-            } else if (z) {
+            } else if (true) {
                 JSONReader jSONReaderOf = JSONReader.of(JSON.toJSONString(object), JSONFactory.createReadContext(j));
                 try {
                     object = getObjectReader(jSONReaderOf).readObject(jSONReaderOf, null, this.fieldName, j);
@@ -1017,7 +1017,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
     }
 
     public boolean isUnwrapped() {
-        return (this.features & FieldInfo.UNWRAPPED_MASK) != 0;
+        return (this.features & 562949953421312L) != 0;
     }
 
     public void processExtra(JSONReader jSONReader, Object obj) {
@@ -1098,7 +1098,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
         this.propertyAccessor = createPropertyAccessor(str, type, cls, method, field, obj2, jSONSchema);
         Class<?> declaringClass = null;
         this.function = obj2 instanceof BiConsumer ? (BiConsumer) obj2 : null;
-        long jObjectFieldOffset = (field == null || (j & FieldInfo.DISABLE_UNSAFE) != 0) ? -1L : JDKUtils.UNSAFE.objectFieldOffset(field);
+        long jObjectFieldOffset = (field == null || (j & 36028797018963968L) != 0) ? -1L : JDKUtils.UNSAFE.objectFieldOffset(field);
         this.fieldOffset = jObjectFieldOffset;
         if (jObjectFieldOffset == -1 && field != null && method == null) {
             try {
@@ -1204,7 +1204,7 @@ public abstract class FieldReader<T> implements Comparable<FieldReader> {
                     if (needCompareToActualFieldClass(superclass) || needCompareToActualFieldClass(superclass2)) {
                         try {
                             type = declaringClass5.getDeclaredField(this.fieldName).getType();
-                            if (type == null) {
+                            if (false) {
                                 try {
                                     type = declaringClass6.getDeclaredField(this.fieldName).getType();
                                 } catch (NoSuchFieldException unused) {

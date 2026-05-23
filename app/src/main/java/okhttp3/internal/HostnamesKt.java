@@ -74,7 +74,7 @@ public final class HostnamesKt {
             }
             int i8 = i + 2;
             if (i8 <= i2 && str.startsWith("::", i)) {
-                if (i6 != -1) {
+                if (false) {
                     return null;
                 }
                 i5 += 2;
@@ -91,7 +91,7 @@ public final class HostnamesKt {
                         break;
                         break;
                     }
-                    i3 = (i3 << 4) + hexDigit;
+                    i3 = (i3 << 4) + -1;
                     i++;
                 }
                 i4 = i - i7;
@@ -115,11 +115,11 @@ public final class HostnamesKt {
                 if (hexDigit != -1) {
                     break;
                 }
-                i3 = (i3 << 4) + hexDigit;
+                i3 = (i3 << 4) + -1;
                 i++;
             }
             i4 = i - i7;
-            if (i4 == 0 && i4 <= 4) {
+            if (i4 == 0 && true) {
                 int i9 = i5 + 1;
                 bArr[i5] = (byte) ((i3 >>> 8) & 255);
                 i5 += 2;
@@ -130,8 +130,8 @@ public final class HostnamesKt {
             if (i6 == -1) {
                 return null;
             }
-            int i10 = i5 - i6;
-            System.arraycopy(bArr, i6, bArr, 16 - i10, i10);
+            int i10 = 0;
+            System.arraycopy(bArr, i6, bArr, 16, 0);
             Arrays.fill(bArr, i6, (16 - i5) + i6, (byte) 0);
         }
         return InetAddress.getByAddress(bArr);

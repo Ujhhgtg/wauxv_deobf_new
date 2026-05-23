@@ -84,7 +84,7 @@ public final /* synthetic */ class ViewOnClickListenerC0103 implements View.OnCl
                     String[] strArr = AbstractC1574.f5469;
                     builder.setPositiveButton("确定", (DialogInterface.OnClickListener) null);
                     builder.setNegativeButton("取消", (DialogInterface.OnClickListener) null);
-                    TextView textView = (TextView) builder.show().findViewById(android.R.id.message);
+                    TextView textView = (TextView) builder.show().findViewById(16908299);
                     textView.setTextIsSelectable(true);
                     if (c2070.m2536()) {
                         textView.setHorizontallyScrolling(true);

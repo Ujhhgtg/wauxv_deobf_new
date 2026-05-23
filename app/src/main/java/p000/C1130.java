@@ -18,13 +18,13 @@ public final class C1130 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.m3295(C1129.f4199, dexKitBridge, new C1047(25));
+        AbstractC1574.findMethod(C1129.f4199, dexKitBridge, new C1047(25));
     }
 
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        C3689 c3689M4172 = C2309.m4172(f4200, Collections.singletonList(AbstractC1574.m3315(C1129.f4199)));
+        C3689 c3689M4172 = C2309.m4172(f4200, Collections.singletonList(AbstractC1574.dexToMethod(C1129.f4199)));
         c3689M4172.m5351(new C1047(28));
         c3689M4172.m5352();
     }

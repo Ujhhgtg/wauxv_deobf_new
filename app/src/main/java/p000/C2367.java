@@ -2,7 +2,7 @@ package p000;
 
 import java.util.Map;
 import java.util.function.Consumer;
-import me.hd.wauxv.hook.factory.MagicFactory;
+
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
@@ -45,7 +45,7 @@ public final class C2367 extends AbstractC2862 implements InterfaceC1429 {
     @Override // p000.InterfaceC1429
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ */
     public final Object mo1196(Object obj, Object obj2) {
-        return ((C2367) mo1197((InterfaceC0842) obj2, (InterfaceC0883) obj)).mo1198(C3497.f10997);
+        return ((C2367) mo1197((InterfaceC0842) obj2, (InterfaceC0883) obj)).mo1198(Unit.INSTANCE);
     }
 
     @Override // p000.AbstractC0370
@@ -81,6 +81,6 @@ public final class C2367 extends AbstractC2862 implements InterfaceC1429 {
         }
         ResponseBody responseBodyBody = ((Response) obj).body();
         this.f7615.accept(responseBodyBody != null ? responseBodyBody.string() : null);
-        return C3497.f10997;
+        return Unit.INSTANCE;
     }
 }
