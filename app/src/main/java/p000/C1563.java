@@ -84,16 +84,16 @@ public final class C1563 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public final void m3270() {
-        m3272(Boolean.FALSE);
+        setReturn(Boolean.FALSE);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
-    public final void m3271() {
-        m3272(Boolean.TRUE);
+    public final void setReturnTrue() {
+        setReturn(Boolean.TRUE);
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */
-    public final void m3272(Object obj) {
+    public final void setReturn(Object obj) {
         ((C1560) this.f5438.f5659).mo1196(obj, Boolean.TRUE);
     }
 }

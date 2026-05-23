@@ -54,8 +54,8 @@ public final class C0465 extends AbstractC2867 implements InterfaceC1590 {
             layoutParams.gravity = 80;
             layoutParams.bottomMargin = (int) AbstractC3681.m5322(10, c1803.getContext());
             c1803.setLayoutParams(layoutParams);
-            List listM2212 = AbstractC0745.m2212(Integer.valueOf(R.drawable.ic_tab_liquid_chats_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_contacts_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_discover_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_me_24dp));
-            List listM2213 = AbstractC0745.m2212("微信", "通讯", "发现", "我的");
+            List listM2212 = AbstractC0745.listOf(Integer.valueOf(R.drawable.ic_tab_liquid_chats_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_contacts_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_discover_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_me_24dp));
+            List listM2213 = AbstractC0745.listOf("微信", "通讯", "发现", "我的");
             c1803.f6020 = 4;
             ArrayList arrayList = c1803.f6021;
             arrayList.clear();
@@ -116,11 +116,11 @@ public final class C0465 extends AbstractC2867 implements InterfaceC1590 {
             View childAt = ((ViewGroup) parent).getChildAt(1);
             ((ViewGroup) childAt).addView(c1803);
             int i11 = 0;
-            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
-            c1973M3492.f6370 = "onPageSelected";
-            C3689 c3689M4174 = m4174((C1982) AbstractC0744.firstInList(c1973M3492.m3799()), 1);
+            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(obj).m3492();
+            c1973M3492.name = "onPageSelected";
+            C3689 c3689M4174 = m4174((C1982) AbstractC0744.firstInList(c1973M3492.resolve()), 1);
             f2052.m3262(c3689M4174, new C0055(1, c1803));
-            c3689M4174.m5352();
+            c3689M4174.applyHook();
         }
     }
 

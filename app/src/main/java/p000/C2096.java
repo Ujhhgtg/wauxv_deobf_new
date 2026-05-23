@@ -46,8 +46,8 @@ public final class C2096 extends AbstractC2867 implements InterfaceC1578 {
                 View viewFindViewById = view.findViewById(C2090.m3885());
                 if (viewFindViewById != null) {
                     int i = 0;
-                    MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(viewFindViewById).m3492();
-                    c1973M3492.f6370 = "setTextColor";
+                    MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(viewFindViewById).m3492();
+                    c1973M3492.name = "setTextColor";
                     C1982 c1982 = (C1982) AbstractC2784.m4742(c1973M3492);
                     if (AbstractC3681.m5331(viewFindViewById.getContext())) {
                         color = Color.parseColor((!msgInfoBean.isSend() ? C2092.f6903 : C2094.f6905).m2542());

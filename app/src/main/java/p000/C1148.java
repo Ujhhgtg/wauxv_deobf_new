@@ -117,15 +117,15 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 C1315 c1315 = (C1315) AbstractC0744.firstInList(c1299M3490.resolve());
                 c1315.m3378(c2585);
                 if (((Number) c1315.m3024()).intValue() == 0) {
-                    C1299 c1299M3491 = AbstractC0968.startFieldResolution(c2585).m3490();
+                    C1299 c1299M3491 = AbstractC0968.startMethodResolution_(c2585).m3490();
                     String[] strArr4 = AbstractC1574.f5469;
                     c1299M3491.fieldType = "com.tencent.mm.api.IEmojiInfo";
-                    MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3023()).m3492();
-                    c1973M3492.f6370 = "getMd5";
-                    String str = (String) ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0]);
+                    MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3023()).m3492();
+                    c1973M3492.name = "getMd5";
+                    String str = (String) ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).invoke(new Object[0]);
                     if (AbstractC2207.m4087(str, "9bd1281af3a31710a45b84d736363691")) {
                         c1160.getClass();
-                        c1563.m3272(null);
+                        c1563.setReturn(null);
                         AlertDialog.Builder builder = new AlertDialog.Builder(AbstractC2203.m4033());
                         builder.setTitle("选择猜拳");
                         RadioGroup radioGroup = new RadioGroup(builder.getContext());
@@ -190,7 +190,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                         builder.show();
                     } else if (AbstractC2207.m4087(str, "08f223fa83f1ca34e143d1e580252c7c")) {
                         c1160.getClass();
-                        c1563.m3272(null);
+                        c1563.setReturn(null);
                         AlertDialog.Builder builder2 = new AlertDialog.Builder(AbstractC2203.m4033());
                         builder2.setTitle("选择骰子");
                         RadioGroup radioGroup2 = new RadioGroup(builder2.getContext());
@@ -279,7 +279,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 } else if (false) {
                     numValueOf = Integer.valueOf(C1158.f4281.m2538());
                 }
-                c1564.m3272(numValueOf);
+                c1564.setReturn(numValueOf);
                 return unit;
             case 10:
                 C1333 c1333 = (C1333) obj;
@@ -475,7 +475,7 @@ public final /* synthetic */ class C1148 implements InterfaceC1425 {
                 for (Object obj5 : C1260.f4592) {
                     try {
                         if (((C0622) obj5).mo3264() && AbstractC2207.m4087(str2, "clicfg_conv_mvvm_list")) {
-                            c1565.m3272("0");
+                            c1565.setReturn("0");
                         }
                     } catch (Exception e) {
                         ArrayList arrayList = C3678.f11549;

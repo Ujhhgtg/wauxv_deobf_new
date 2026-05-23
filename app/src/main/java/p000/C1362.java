@@ -12,7 +12,6 @@ import android.widget.FrameLayout;
 import java.util.ArrayList;
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤝᲇᲈᲁᛸᲀᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -52,7 +51,7 @@ public final class C1362 extends AbstractC2867 implements InterfaceC1590 {
         f4862 = new C1362("FloatActionButtonHook");
         C2873 c2873 = AbstractC2342.f7529;
         f4863 = AbstractC2342.m4330("Resource", "Fab");
-        f4864 = AbstractC0745.m2212(new C1357(0, "设置", "ic_setting.png", "wauxv", "openSetting"), new C1357(1, "扫一扫", "ic_scan.png", "activity", "com.tencent.mm.plugin.scanner.ui.BaseScanUI"), new C1357(2, "朋友圈", "ic_timeline.png", "activity", "com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI"), new C1357(3, "视频号", "ic_finder.png", "activity", "com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI"), new C1357(4, "收藏", "ic_favorite.png", "activity", "com.tencent.mm.plugin.fav.ui.FavoriteIndexUI"), new C1357(5, "钱包", "ic_wallet.png", "activity", "com.tencent.mm.plugin.mall.ui.MallIndexUIv2"), new C1357(6, "清空未读", "ic_clear.png", "wauxv", "clearUnreadCount"));
+        f4864 = AbstractC0745.listOf(new C1357(0, "设置", "ic_setting.png", "wauxv", "openSetting"), new C1357(1, "扫一扫", "ic_scan.png", "activity", "com.tencent.mm.plugin.scanner.ui.BaseScanUI"), new C1357(2, "朋友圈", "ic_timeline.png", "activity", "com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI"), new C1357(3, "视频号", "ic_finder.png", "activity", "com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI"), new C1357(4, "收藏", "ic_favorite.png", "activity", "com.tencent.mm.plugin.fav.ui.FavoriteIndexUI"), new C1357(5, "钱包", "ic_wallet.png", "activity", "com.tencent.mm.plugin.mall.ui.MallIndexUIv2"), new C1357(6, "清空未读", "ic_clear.png", "wauxv", "clearUnreadCount"));
         f4865 = new C2873(new C0104(29));
         f4866 = "界面";
         f4867 = "悬浮动作按钮";

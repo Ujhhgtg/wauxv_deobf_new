@@ -45,7 +45,7 @@ public final class C0314 extends AbstractC2867 implements InterfaceC1578 {
                 return;
             }
             int i = 0;
-            C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
+            C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj2).m3490();
             
             C0203 c0203 = C0203.f1287;
             c1299M3490.fieldType = AbstractC1574.dexToMethod(c0203).getDeclaringClass();
@@ -53,12 +53,12 @@ public final class C0314 extends AbstractC2867 implements InterfaceC1578 {
             
             Object objInvoke = AbstractC1574.dexToMethod(c0203).invoke(objM3023, (Class) AbstractC0270.m1385(AbstractC1574.dexToClass(C3425.f10799).getInterfaces()));
             long msgId = msgInfoBean.getMsgId();
-            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objInvoke).m3492();
+            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(objInvoke).m3492();
             c1973M3492.f6544 = new C2798(29);
             if (AbstractC2207.m4087(((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Long.TYPE)}, 1, c1973M3492)).invoke(Long.valueOf(msgId)).toString(), "NoTransform")) {
                 c0313.put(Long.valueOf(msgInfoBean.getMsgId()), bool);
                 Object origin = msgInfoBean.getOrigin();
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(objInvoke).m3492();
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(objInvoke).m3492();
                 c1973M3493.returnType = Void.TYPE;
                 
                 Class clsM3313 = AbstractC1574.dexToClass(C2059.f6854);

@@ -33,7 +33,7 @@ public final class C0636 extends AbstractC2867 implements InterfaceC1582, Interf
         AbstractC1574.m3300(-483231065438900L);
         String[] strArr = AbstractC1574.f5469;
         f2474 = new C0636("ChatInputHintHook");
-        f2475 = AbstractC0745.m2212("${totalMsg}", "${textMsg}", "${textWord}", "${emojiMsg}", "${transferMsg}", "${redBagMsg}", "${fileMsg}");
+        f2475 = AbstractC0745.listOf("${totalMsg}", "${textMsg}", "${textWord}", "${emojiMsg}", "${transferMsg}", "${redBagMsg}", "${fileMsg}");
         f2476 = "美化";
         f2477 = "输入框提示";
         f2478 = "自定义聊天输入框默认提示的文本内容";
@@ -101,9 +101,9 @@ public final class C0636 extends AbstractC2867 implements InterfaceC1582, Interf
     public final void mo1126() {
         List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C0623.f2458));
         C0636 c0636 = f2474;
-        C3689 c3689M4172 = C2309.m4172(c0636, listSingletonList);
+        C3689 c3689M4172 = C2309.createHook(c0636, listSingletonList);
         c0636.m3262(c3689M4172, new C0605(9));
-        c3689M4172.m5352();
+        c3689M4172.applyHook();
     }
 
     @Override // p000.AbstractC2867

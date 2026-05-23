@@ -15,10 +15,10 @@ public final class C2800 extends AbstractC1823 implements InterfaceC1582 {
         int i = 0;
         
         
-        C1299 c1299M3490 = AbstractC0968.startFieldResolution(C1878.m3655()).m3490();
+        C1299 c1299M3490 = AbstractC0968.startMethodResolution_(C1878.m3655()).m3490();
         
         c1299M3490.fieldType = AbstractC1574.dexToClass(C2799.f8929);
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3023()).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3023()).m3492();
         c1973M3492.returnType = "com.tencent.wcdb.database.SQLiteDatabase";
         return ((C1982) AbstractC1194.m2778(c1973M3492)).m3831(new Object[0]);
     }

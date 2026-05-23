@@ -113,8 +113,8 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                     throw new IllegalStateException("HookParam instance cannot cast to ".concat((clsM2185 != null ? clsM2185 : Activity.class).getName()).toString());
                 }
                 int i4 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(activity).m3492();
-                c1973M3492.f6370 = "getPreferenceScreen";
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(activity).m3492();
+                c1973M3492.name = "getPreferenceScreen";
                 BaseAdapter baseAdapter = (BaseAdapter) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                 for (InterfaceC1579 interfaceC1579 : C0821.f3213) {
                     try {
@@ -151,9 +151,9 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                 }
                 Object obj2 = c2585 instanceof C2585 ? null : c2585;
                 int i5 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj2).m3490();
                 c1299M3490.fieldType = AbstractC2519.classToKClass(String.class);
-                c1299M3490.m3732();
+                c1299M3490.superclass();
                 Iterator it = c1299M3490.resolve().iterator();
                 while (it.hasNext()) {
                     String str = (String) ((C1315) it.next()).m3024();
@@ -163,7 +163,7 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                                 for (C0820 c0821 : interfaceC15710.mo3336(activity2)) {
                                     if (str.equals(c0821.f3208)) {
                                         c0821.f3211.invoke(activity2);
-                                        c1563.m3271();
+                                        c1563.setReturnTrue();
                                     }
                                 }
                             } catch (Exception e2) {
@@ -323,7 +323,7 @@ public final /* synthetic */ class C0807 implements InterfaceC1425 {
                 int i6 = 0;
                 C1299 c1299M4738 = AbstractC2784.m4738(c1565);
                 c1299M4738.fieldType = AbstractC1574.dexToMethod(C0850.f3264).getDeclaringClass();
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3023()).m3490();
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3023()).m3490();
                 
                 c1299M3491.fieldType = AbstractC1574.dexToMethod(C0846.f3253).getDeclaringClass();
                 ConversationBean conversationBean = new ConversationBean(((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3023());

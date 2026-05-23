@@ -92,7 +92,7 @@ public abstract class AbstractC1240 extends AbstractC1928 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public final void m2888(Object... objArr) {
+    public final void paramTypes(Object... objArr) {
         AbstractC0750.m2218(this.f4480, objArr);
     }
 }

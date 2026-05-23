@@ -114,7 +114,7 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                     }
                     if (view instanceof TextView) {
                         String[] strArr2 = AbstractC1574.f5469;
-                        List listM2212 = AbstractC0745.m2212("微信号", "微信 ID", "Weixin ID", "WeChat ID");
+                        List listM2212 = AbstractC0745.listOf("微信号", "微信 ID", "Weixin ID", "WeChat ID");
                         if (!listM2212.isEmpty()) {
                             Iterator it = listM2212.iterator();
                             while (it.hasNext()) {
@@ -211,17 +211,17 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                     objM3268 = c1565.m3268();
                 }
                 int i10 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM3268).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(objM3268).m3490();
                 c1299M3490.fieldType = AbstractC2519.classToKClass(Context.class);
                 AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024());
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objM3268).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(objM3268).m3492();
                 c1973M3492.returnType = AbstractC2519.classToKClass(BaseAdapter.class);
-                BaseAdapter baseAdapter = (BaseAdapter) ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0]);
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(objM3268).m3490();
+                BaseAdapter baseAdapter = (BaseAdapter) ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).invoke(new Object[0]);
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(objM3268).m3490();
                 c1299M3491.fieldType = AbstractC2519.classToKClass(SparseArray.class);
                 SparseArray sparseArray = (SparseArray) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024();
                 Object obj2 = sparseArray.get(sparseArray.size() - 1);
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj2).m3490();
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(obj2).m3490();
                 c1299M3492.f4726 = new C1538(22);
                 Object objM3023 = ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3023();
                 for (InterfaceC1588 interfaceC1588 : C1554.f5421) {
@@ -290,9 +290,9 @@ public final /* synthetic */ class C1538 implements InterfaceC1425 {
                 int i11 = 0;
                 C1299 c1299M47310 = AbstractC2784.m4738(c1566);
                 c1299M47310.fieldType = AbstractC2519.classToKClass(SparseArray.class);
-                C1299 c1299M3493 = AbstractC0968.startFieldResolution(((SparseArray) ((C1315) AbstractC0744.firstInList(c1299M47310.resolve())).m3024()).get(iIntValue)).m3490();
+                C1299 c1299M3493 = AbstractC0968.startMethodResolution_(((SparseArray) ((C1315) AbstractC0744.firstInList(c1299M47310.resolve())).m3024()).get(iIntValue)).m3490();
                 c1299M3493.f4726 = new C1538(21);
-                C1299 c1299M3494 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).m3023()).m3490();
+                C1299 c1299M3494 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).m3023()).m3490();
                 c1299M3494.fieldType = AbstractC2519.classToKClass(Integer.TYPE);
                 Iterator it3 = c1299M3494.resolve().iterator();
                 while (it3.hasNext()) {

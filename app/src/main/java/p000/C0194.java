@@ -57,8 +57,8 @@ public final class C0194 extends AbstractC2867 implements InterfaceC1601, Interf
                 Long asLong = contentValues.getAsLong("msgId");
                 int i2 = 0;
                 
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2800.m4779()).m3492();
-                c1973M3492.f6370 = "rawQuery";
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C2800.m4779()).m3492();
+                c1973M3492.name = "rawQuery";
                 Cursor cursor = (Cursor) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(Object[].class)}, 2, c1973M3492)).invoke("SELECT createTime, talker FROM message WHERE msgId = ?", new Object[]{asLong});
                 if (cursor != null) {
                     try {
@@ -67,7 +67,7 @@ public final class C0194 extends AbstractC2867 implements InterfaceC1601, Interf
                             String string = cursor.getString(cursor.getColumnIndex("talker"));
                             C1904 c1904M4123 = AbstractC2209.m4123(Pattern.compile("([\"「])(.*?)([」\"])").matcher(asString), 0, asString);
                             AbstractC2201.m3976(EnumC3673.f11478.f11492, string, "\"" + ((c1904M4123 == null || (listM3699 = c1904M4123.m3699()) == null) ? null : (String) ((C1903) listM3699).get(2)) + "\" " + C0193.f1258.m2542(), j + 1);
-                            c1563.m3272(1);
+                            c1563.setReturn(1);
                         }
                         cursor.close();
                     } catch (Throwable th) {
@@ -86,18 +86,18 @@ public final class C0194 extends AbstractC2867 implements InterfaceC1601, Interf
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() throws NoSuchMethodException {
-        Iterator it = AbstractC0745.m2212(C0190.f1255, C0192.f1257, C0191.f1256).iterator();
+        Iterator it = AbstractC0745.listOf(C0190.f1255, C0192.f1257, C0191.f1256).iterator();
         while (it.hasNext()) {
             Class clsM3313 = AbstractC1574.dexToClass((AbstractC1021) it.next());
             int i = 0;
-            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(clsM3313).m3492();
+            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(clsM3313).m3492();
             c1973M3492.returnType = Void.TYPE;
             c1973M3492.f4485 = 1;
-            C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
+            C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.resolve());
             C0194 c0194 = f1259;
             C3689 c3689M4174 = c0194.m4174(c1982, 1);
-            c0194.m3263(c3689M4174, new C0105(24));
-            c3689M4174.m5352();
+            c0194.hookBefore(c3689M4174, new C0105(24));
+            c3689M4174.applyHook();
         }
     }
 

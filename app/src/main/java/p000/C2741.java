@@ -43,18 +43,18 @@ public final class C2741 extends AbstractC2867 implements InterfaceC1582 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲇᲁᤞᲈ, reason: contains not printable characters */
     public static String m4730(Object obj) {
         int i = 0;
-        C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
+        C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj).m3490();
         String[] strArr = AbstractC1574.f5469;
-        c1299M3490.f6370 = "field_snsId";
+        c1299M3490.name = "field_snsId";
         long jLongValue = ((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).longValue();
-        C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3491.f6370 = "field_userName";
+        C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3491.name = "field_userName";
         String str = (String) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
-        C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3492.f6370 = "field_createTime";
+        C1299 c1299M3492 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3492.name = "field_createTime";
         int iIntValue = ((Number) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024()).intValue();
-        C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3493.f6370 = "field_type";
+        C1299 c1299M3493 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3493.name = "field_type";
         int iIntValue2 = ((Number) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024()).intValue();
         String strM4857 = AbstractC2849.m4857(C2739.f8812.m2542(), "${time}", AbstractC3681.m5339(((long) iIntValue) * 1000, C2740.f8813.m2542(), null, 2));
         String str2 = "${type}";
@@ -86,13 +86,13 @@ public final class C2741 extends AbstractC2867 implements InterfaceC1582 {
         boolean zM5079 = AbstractC3471.m5079(WeChatVersions.f11530);
         C2741 c2741 = f8814;
         if (zM5079 || AbstractC3471.m5080(WeChatVersionsPlay.f11496)) {
-            C3689 c3689M4172 = C2309.m4172(c2741, Collections.singletonList(AbstractC1574.dexToMethod(C2736.f8809)));
+            C3689 c3689M4172 = C2309.createHook(c2741, Collections.singletonList(AbstractC1574.dexToMethod(C2736.f8809)));
             c2741.m3262(c3689M4172, new C2734(6));
-            c3689M4172.m5352();
+            c3689M4172.applyHook();
         } else {
-            C3689 c3689M4173 = C2309.m4172(c2741, Collections.singletonList(AbstractC1574.dexToMethod(C2737.f8810)));
+            C3689 c3689M4173 = C2309.createHook(c2741, Collections.singletonList(AbstractC1574.dexToMethod(C2737.f8810)));
             c2741.m3262(c3689M4173, new C2659(28));
-            c3689M4173.m5352();
+            c3689M4173.applyHook();
         }
     }
 

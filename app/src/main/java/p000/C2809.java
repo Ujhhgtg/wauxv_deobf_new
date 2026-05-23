@@ -21,11 +21,11 @@ public final class C2809 extends AbstractC1823 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        for (InterfaceC1736 interfaceC1736 : AbstractC0745.m2212(AbstractC2519.classToKClass(ContextWrapper.class), AbstractC2519.classToKClass(Activity.class))) {
+        for (InterfaceC1736 interfaceC1736 : AbstractC0745.listOf(AbstractC2519.classToKClass(ContextWrapper.class), AbstractC2519.classToKClass(Activity.class))) {
             int i = 0;
             MethodResolver c1973M3492 = AbstractC0968.m2482(interfaceC1736).m3492();
             c1973M3492.f6371 = new C2798(8);
-            List<AbstractC1938> listM3799 = c1973M3492.m3799();
+            List<AbstractC1938> listM3799 = c1973M3492.resolve();
             C2809 c2809 = f8998;
             
             for (AbstractC1938 abstractC1938 : listM3799) {
@@ -48,7 +48,7 @@ public final class C2809 extends AbstractC1823 {
                 linkedHashSet.addAll(arrayList);
             }
             c3689.m5351(new C2798(9));
-            c3689.m5352();
+            c3689.applyHook();
         }
     }
 }

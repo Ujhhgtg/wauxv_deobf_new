@@ -51,15 +51,15 @@ public final class C2603 extends AbstractC2867 implements InterfaceC1582 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
         AbstractC1574.m3316(C2601.f8465, new C2544(18));
-        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.dexToCtor(C2599.f8463)));
+        C3689 c3689M4172 = C2309.createHook(this, Collections.singletonList(AbstractC1574.dexToCtor(C2599.f8463)));
         C2544 c2544 = new C2544(19);
         C2603 c2603 = f8467;
-        c2603.m3263(c3689M4172, c2544);
-        c3689M4172.m5352();
+        c2603.hookBefore(c3689M4172, c2544);
+        c3689M4172.applyHook();
         if (AbstractC3471.m5079(WeChatVersions.f11538) || AbstractC3471.m5080(WeChatVersionsPlay.f11500)) {
-            C3689 c3689M4173 = C2309.m4172(this, Collections.singletonList(AbstractC1574.dexToMethod(C2600.f8464)));
-            c2603.m3263(c3689M4173, new C2544(20));
-            c3689M4173.m5352();
+            C3689 c3689M4173 = C2309.createHook(this, Collections.singletonList(AbstractC1574.dexToMethod(C2600.f8464)));
+            c2603.hookBefore(c3689M4173, new C2544(20));
+            c3689M4173.applyHook();
         }
     }
 

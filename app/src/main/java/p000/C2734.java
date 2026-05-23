@@ -116,19 +116,19 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 return unit;
             case 6:
                 int i7 = 0;
-                C1744 c1744M2484 = AbstractC0968.startFieldResolution(((C1563) obj).m3268());
+                C1744 c1744M2484 = AbstractC0968.startMethodResolution_(((C1563) obj).m3268());
                 C1299 c1299M3490 = c1744M2484.m3490();
                 C2735 c2735 = C2735.f8808;
                 c1299M3490.fieldType = AbstractC1574.dexToMethod(c2735).getDeclaringClass();
                 Object objInvoke = AbstractC1574.dexToMethod(c2735).invoke(((C1315) AbstractC2784.m4741(c1299M3490)).m3023(), null);
                 MethodResolver c1973M3492 = c1744M2484.m3492();
                 String[] strArr5 = AbstractC1574.f5469;
-                c1973M3492.f6370 = "getPublishTimeText";
+                c1973M3492.name = "getPublishTimeText";
                 TextView textView = (TextView) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                 
                 textView.setText(AbstractC2849.m4857(C2741.m4730(objInvoke), "${originalText}", textView.getText().toString()));
                 MethodResolver c1973M3493 = c1744M2484.m3492();
-                c1973M3493.f6370 = "getGroupImageStub";
+                c1973M3493.name = "getGroupImageStub";
                 View view = (View) ((C1982) AbstractC2784.m4742(c1973M3493)).invoke(new Object[0]);
                 if (view != null && (view instanceof ImageView)) {
                     ((ImageView) view).setVisibility(C2738.f8811.m2536() ? 8 : 0);
@@ -212,16 +212,16 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 for (InterfaceC1600 interfaceC1601 : C2747.f8828) {
                     try {
                         int i9 = 0;
-                        C1299 c1299M3491 = AbstractC0968.startFieldResolution(c1564.m3268()).m3490();
+                        C1299 c1299M3491 = AbstractC0968.startMethodResolution_(c1564.m3268()).m3490();
                         c1299M3491.fieldType = AbstractC2519.classToKClass(Activity.class);
                         Activity activity = (Activity) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024();
-                        C1299 c1299M3492 = AbstractC0968.startFieldResolution(c1564.m3268()).m3490();
+                        C1299 c1299M3492 = AbstractC0968.startMethodResolution_(c1564.m3268()).m3490();
                         AbstractC0750.m2218(c1299M3492.f6373, (EnumC1999[]) Arrays.copyOf(new EnumC1999[]{EnumC1999.FINAL}, 1));
                         c1299M3492.fieldType = AbstractC2519.classToKClass(String.class);
                         String str2 = (String) ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3024();
                         
                         Object objM4731 = C2743.m4731(str2);
-                        C1299 c1299M3493 = AbstractC0968.startFieldResolution(c1564.m3268()).m3490();
+                        C1299 c1299M3493 = AbstractC0968.startMethodResolution_(c1564.m3268()).m3490();
                         c1299M3493.fieldType = "com.tencent.mm.protocal.protobuf.TimeLineObject";
                         Object objM3023 = ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).m3023();
                         for (C2744 c2745 : interfaceC1601.mo3340()) {
@@ -257,11 +257,11 @@ public final /* synthetic */ class C2734 implements InterfaceC1425 {
                 C2750 c2750 = new C2750(activity2, 0);
                 
                 int i10 = 0;
-                MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(activity2).m3492();
-                c1973M3494.f6370 = "addTextOptionMenu";
-                c1973M3494.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(MenuItem.OnMenuItemClickListener.class)}, 3));
-                c1973M3494.m3732();
-                ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).m3831(Integer.valueOf(R.id.MenuItem_Sns_LabelFilter), "过滤", new MenuItemOnMenuItemClickListenerC2751(0, c2750));
+                MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(activity2).m3492();
+                c1973M3494.name = "addTextOptionMenu";
+                c1973M3494.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(MenuItem.OnMenuItemClickListener.class)}, 3));
+                c1973M3494.superclass();
+                ((C1982) AbstractC0744.firstInList(c1973M3494.resolve())).m3831(Integer.valueOf(R.id.MenuItem_Sns_LabelFilter), "过滤", new MenuItemOnMenuItemClickListenerC2751(0, c2750));
                 return unit;
             case 18 /* 18 */:
                 C1333 c1336 = (C1333) obj;

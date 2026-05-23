@@ -163,7 +163,7 @@ public final /* synthetic */ class C1608 implements InterfaceC1425 {
                 c1335.f4794 = c1984;
                 return Unit.INSTANCE;
             default:
-                ((C1563) obj).m3272(Double.valueOf(C1842.f6135.m2537()));
+                ((C1563) obj).setReturn(Double.valueOf(C1842.f6135.m2537()));
                 return Unit.INSTANCE;
         }
     }

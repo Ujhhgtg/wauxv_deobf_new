@@ -40,12 +40,12 @@ public final class C0603 extends AbstractC2867 implements InterfaceC1582 {
         int i = 0;
         String[] strArr = AbstractC1574.f5469;
         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.fav.ui.FavSelectUI")).m3492();
-        c1973M3492.f6370 = "onCreate";
-        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
+        c1973M3492.name = "onCreate";
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.resolve());
         C0603 c0603 = f2421;
         C3689 c3689M4174 = c0603.m4174(c1982, 1);
-        c0603.m3263(c3689M4174, new C0316(19));
-        c3689M4174.m5352();
+        c0603.hookBefore(c3689M4174, new C0316(19));
+        c3689M4174.applyHook();
         AbstractC1574.m3316(C0602.f2420, new C0316(20));
         AbstractC1574.m3316(C0601.f2419, new C0316(21));
     }

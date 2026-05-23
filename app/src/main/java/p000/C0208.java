@@ -41,7 +41,7 @@ public final class C0208 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.InterfaceC1582
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
     public final void mo1232(DexKitBridge dexKitBridge) {
-        AbstractC1574.findMethod(C0207.f1295, dexKitBridge, new C0199(8));
+        AbstractC1574.findMethod(AppBrandAntiSplashAdHook$MethodAdDataCallback.f1295, dexKitBridge, new C0199(8));
     }
 
     @Override // p000.AbstractC2867, p000.AbstractC1557
@@ -53,11 +53,10 @@ public final class C0208 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C0207.f1295));
-        C0208 c0208 = f1296;
-        C3689 c3689M4172 = C2309.m4172(c0208, listSingletonList);
-        c0208.m3263(c3689M4172, new C0199(9));
-        c3689M4172.m5352();
+        List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(AppBrandAntiSplashAdHook$MethodAdDataCallback.f1295));
+        C3689 c3689M4172 = C2309.createHook(f1296, listSingletonList);
+        f1296.hookBefore(c3689M4172, new C0199(9));
+        c3689M4172.applyHook();
     }
 
     @Override // p000.AbstractC2867

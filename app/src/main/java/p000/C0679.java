@@ -117,14 +117,14 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
                 Integer num = (Integer) c2585;
                 if ((num != null ? num.intValue() : 0) == 0 && C0722.f2733.m2536()) {
                     int i7 = 0;
-                    MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(c1563.m3268()).m3492();
-                    c1973M3492.f6370 = "getContext";
+                    MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(c1563.m3268()).m3492();
+                    c1973M3492.name = "getContext";
                     ?? r0 = (Activity) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                     Object objM3269 = c1563.m3269();
                     if (objM3269 == null) {
                         objM3269 = null;
                     }
-                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM3269).m3490();
+                    C1299 c1299M3490 = AbstractC0968.startMethodResolution_(objM3269).m3490();
                     c1299M3490.fieldType = AbstractC2519.classToKClass(TextView.class);
                     Object obj2 = null;
                     for (Object obj3 : c1299M3490.resolve()) {
@@ -262,7 +262,7 @@ public final /* synthetic */ class C0679 implements InterfaceC1425 {
                 c1335.f4794 = c1981;
                 return unit;
             case 10:
-                ((C1563) obj).m3271();
+                ((C1563) obj).setReturnTrue();
                 return unit;
             case 11:
                 ((C1020) obj).declaringClassMatcher = new C0679(12);

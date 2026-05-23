@@ -64,7 +64,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 Integer num = (Integer) c2585;
                 iIntValue = num != null ? num.intValue() : 0;
                 if (iIntValue == 0 || iIntValue == 1) {
-                    c1563.m3272(null);
+                    c1563.setReturn(null);
                 }
                 return unit;
             case 1:
@@ -145,7 +145,7 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                 ((C1020) obj).thisMethodMatcher = new C0199(10);
                 return unit;
             case 9:
-                ((C1563) obj).m3272(null);
+                ((C1563) obj).setReturn(null);
                 return unit;
             case 10:
                 C1333 c1334 = (C1333) obj;
@@ -291,8 +291,8 @@ public final /* synthetic */ class C0199 implements InterfaceC1425 {
                     }
                     Object obj2 = c25811 instanceof C2585 ? null : c25811;
                     int i6 = 0;
-                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
-                    c1299M3490.f6370 = "field_UserName";
+                    C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj2).m3490();
+                    c1299M3490.name = "field_UserName";
                     String str6 = (String) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
                     C1394.f5015.getClass();
                     Method methodM3315 = AbstractC1574.dexToMethod(C1393.f5014);

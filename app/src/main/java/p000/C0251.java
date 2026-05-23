@@ -71,8 +71,8 @@ public final class C0251 {
         ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
         c1744M2483.m3493(true);
         MethodResolver c1973M3492 = c1744M2483.m3492();
-        c1973M3492.f6370 = "currentApplication";
-        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+        c1973M3492.name = "currentApplication";
+        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
         if (c1982 != null) {
             return (Application) c1982.invoke(new Object[0]);
         }
@@ -106,19 +106,19 @@ public final class C0251 {
             ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
             c1744M2483.m3493(true);
             MethodResolver c1973M3492 = c1744M2483.m3492();
-            c1973M3492.f6370 = "currentActivityThread";
+            c1973M3492.name = "currentActivityThread";
             c1973M3492.m2887();
-            C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+            C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
             Object objM3831 = c1982 != null ? c1982.m3831(new Object[0]) : null;
             if (objM3831 != null) {
-                c1744M2484 = AbstractC0968.startFieldResolution(objM3831);
+                c1744M2484 = AbstractC0968.startMethodResolution_(objM3831);
                 c1744M2484.m3493(true);
             } else {
                 c1744M2484 = null;
             }
             if (c1744M2484 != null) {
                 C1299 c1299M3490 = c1744M2484.m3490();
-                c1299M3490.f6370 = "mBoundApplication";
+                c1299M3490.name = "mBoundApplication";
                 C1315 c1315 = (C1315) AbstractC0744.m2192(c1299M3490.resolve());
                 if (c1315 != null) {
                     objM3023 = c1315.m3023();
@@ -129,14 +129,14 @@ public final class C0251 {
                 objM3023 = null;
             }
             if (objM3023 != null) {
-                c1744M2485 = AbstractC0968.startFieldResolution(objM3023);
+                c1744M2485 = AbstractC0968.startMethodResolution_(objM3023);
                 c1744M2485.m3493(true);
             } else {
                 c1744M2485 = null;
             }
             if (c1744M2485 != null) {
                 C1299 c1299M3491 = c1744M2485.m3490();
-                c1299M3491.f6370 = "appInfo";
+                c1299M3491.name = "appInfo";
                 C1315 c1316 = (C1315) AbstractC0744.m2192(c1299M3491.resolve());
                 if (c1316 != null) {
                     applicationInfo = (ApplicationInfo) c1316.m3024();
@@ -161,8 +161,8 @@ public final class C0251 {
             c1744M2483.m3493(true);
             if (i == 3) {
                 MethodResolver c1973M3492 = c1744M2483.m3492();
-                c1973M3492.f6370 = "_--_";
-                C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+                c1973M3492.name = "_--_";
+                C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
                 C0248 c0248 = new C0248(1, 1);
                 if (c1982 == null || (method = c1982.f6566) == null) {
                     return;
@@ -171,20 +171,20 @@ public final class C0251 {
                 return;
             }
             MethodResolver c1973M3493 = c1744M2483.m3492();
-            c1973M3493.f6370 = "__--";
-            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3493.m3799()), new C0248(1, 2));
+            c1973M3493.name = "__--";
+            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3493.resolve()), new C0248(1, 2));
             MethodResolver c1973M3494 = c1744M2483.m3492();
-            c1973M3494.f6370 = "_-_-";
-            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3494.m3799()), new C0248(1, 3));
+            c1973M3494.name = "_-_-";
+            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3494.resolve()), new C0248(1, 3));
             MethodResolver c1973M3495 = c1744M2483.m3492();
-            c1973M3495.f6370 = "-__-";
-            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3495.m3799()), new C0248(1, 4));
+            c1973M3495.name = "-__-";
+            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3495.resolve()), new C0248(1, 4));
             MethodResolver c1973M3496 = c1744M2483.m3492();
-            c1973M3496.f6370 = "-_-_";
-            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3496.m3799()), new C0248(1, 5));
+            c1973M3496.name = "-_-_";
+            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3496.resolve()), new C0248(1, 5));
             MethodResolver c1973M3497 = c1744M2483.m3492();
-            c1973M3497.f6370 = "___-";
-            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3497.m3799()), new C0248(1, 0));
+            c1973M3497.name = "___-";
+            AbstractC2209.m4133((C1982) AbstractC0744.m2192(c1973M3497.resolve()), new C0248(1, 0));
         }
     }
 
@@ -199,30 +199,30 @@ public final class C0251 {
                 C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.classToKClass(Application.class));
                 c1744M2482.m3493(true);
                 MethodResolver c1973M3492 = c1744M2482.m3492();
-                c1973M3492.f6370 = "attach";
-                c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Context.class)}, 1));
-                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3492.m3799()), new C0249(1, 1));
+                c1973M3492.name = "attach";
+                c1973M3492.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Context.class)}, 1));
+                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3492.resolve()), new C0249(1, 1));
                 MethodResolver c1973M3493 = c1744M2482.m3492();
-                c1973M3493.f6370 = "onTerminate";
-                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3493.m3799()), new C0249(1, 2));
+                c1973M3493.name = "onTerminate";
+                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3493.resolve()), new C0249(1, 2));
                 MethodResolver c1973M3494 = c1744M2482.m3492();
-                c1973M3494.f6370 = "onLowMemory";
-                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3494.m3799()), new C0249(1, 3));
+                c1973M3494.name = "onLowMemory";
+                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3494.resolve()), new C0249(1, 3));
                 MethodResolver c1973M3495 = c1744M2482.m3492();
-                c1973M3495.f6370 = "onTrimMemory";
-                c1973M3495.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE)}, 1));
-                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3495.m3799()), new C0249(1, 4));
+                c1973M3495.name = "onTrimMemory";
+                c1973M3495.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE)}, 1));
+                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3495.resolve()), new C0249(1, 4));
                 MethodResolver c1973M3496 = c1744M2482.m3492();
-                c1973M3496.f6370 = "onConfigurationChanged";
-                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3496.m3799()), new C0249(1, 0));
+                c1973M3496.name = "onConfigurationChanged";
+                AbstractC2209.m4133((C1982) AbstractC0744.firstInList(c1973M3496.resolve()), new C0249(1, 0));
             }
             if (AbstractC2205.f7173 || !linkedHashMap.isEmpty()) {
                 int i3 = 0;
                 C1744 c1744M2483 = AbstractC0968.m2482(AbstractC2519.classToKClass(Instrumentation.class));
                 c1744M2483.m3493(true);
                 MethodResolver c1973M3497 = c1744M2483.m3492();
-                c1973M3497.f6370 = "callApplicationOnCreate";
-                C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3497.m3799());
+                c1973M3497.name = "callApplicationOnCreate";
+                C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3497.resolve());
                 C0250 c0250 = new C0250(this, str);
                 if (c1982 == null || (method = c1982.f6566) == null) {
                     return;

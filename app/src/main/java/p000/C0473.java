@@ -117,11 +117,11 @@ public final class C0473 extends AbstractC2867 implements InterfaceC1590 {
             View childAt = ((ViewGroup) parent).getChildAt(1);
             ((ViewGroup) childAt).addView(c0450);
             int i2 = 0;
-            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
-            c1973M3492.f6370 = "onPageSelected";
-            C3689 c3689M4174 = m4174((C1982) AbstractC0744.firstInList(c1973M3492.m3799()), 1);
+            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(obj).m3492();
+            c1973M3492.name = "onPageSelected";
+            C3689 c3689M4174 = m4174((C1982) AbstractC0744.firstInList(c1973M3492.resolve()), 1);
             c0473.m3262(c3689M4174, new C0055(2, c0450));
-            c3689M4174.m5352();
+            c3689M4174.applyHook();
         }
     }
 

@@ -14,7 +14,7 @@ public final class C0707 implements InterfaceC1736, InterfaceC0696 {
     public final Class f2689;
 
     static {
-        List listM2212 = AbstractC0745.m2212(InterfaceC1414.class, InterfaceC1425.class, InterfaceC1429.class, InterfaceC1430.class, C2165.class, InterfaceC1431.class, InterfaceC1432.class, InterfaceC1433.class, InterfaceC1434.class, InterfaceC1435.class, InterfaceC1415.class, InterfaceC1416.class, InterfaceC1417.class, InterfaceC1418.class, InterfaceC1419.class, InterfaceC1420.class, InterfaceC1421.class, InterfaceC1422.class, InterfaceC1423.class, InterfaceC1424.class, InterfaceC1426.class, InterfaceC1427.class, InterfaceC1428.class);
+        List listM2212 = AbstractC0745.listOf(InterfaceC1414.class, InterfaceC1425.class, InterfaceC1429.class, InterfaceC1430.class, C2165.class, InterfaceC1431.class, InterfaceC1432.class, InterfaceC1433.class, InterfaceC1434.class, InterfaceC1435.class, InterfaceC1415.class, InterfaceC1416.class, InterfaceC1417.class, InterfaceC1418.class, InterfaceC1419.class, InterfaceC1420.class, InterfaceC1421.class, InterfaceC1422.class, InterfaceC1423.class, InterfaceC1424.class, InterfaceC1426.class, InterfaceC1427.class, InterfaceC1428.class);
         ArrayList arrayList = new ArrayList(AbstractC0746.m2214(listM2212, 10));
         int i = 0;
         for (Object obj : listM2212) {

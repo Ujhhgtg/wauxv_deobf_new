@@ -504,32 +504,24 @@ public abstract class AbstractC2201 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
-    public static long m3976(int i, String str, String str2, long j) throws IllegalAccessException, InvocationTargetException {
-        C2060 c2060 = C2060.f6855;
+    public static long m3976(int type, String talker, String content, long msgSvrId) throws IllegalAccessException, InvocationTargetException {
         ContentValues contentValues = new ContentValues();
-        String[] strArr = AbstractC1574.f5469;
-        contentValues.put("msgid", (Integer) 0);
-        contentValues.put("msgSvrId", Long.valueOf(((long) AbstractC2474.f7908.mo948()) + j));
-        contentValues.put("type", Integer.valueOf(i));
+        contentValues.put("msgid", 0);
+        contentValues.put("msgSvrId", Long.valueOf(((long) AbstractC2474.f7908.mo948()) + msgSvrId));
+        contentValues.put("type", Integer.valueOf(type));
         contentValues.put("status", (Integer) 3);
-        contentValues.put("createTime", Long.valueOf(j));
-        contentValues.put("talker", str);
-        contentValues.put("content", str2);
+        contentValues.put("createTime", Long.valueOf(msgSvrId));
+        contentValues.put("talker", talker);
+        contentValues.put("content", content);
         
         Object objM2131 = AbstractC0710.m2131(AbstractC1574.dexToClass(C2059.f6854), new Object[0]);
-        int i2 = 0;
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objM2131).m3492();
-        c1973M3492.f6370 = "convertFrom";
-        c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(ContentValues.class), AbstractC2519.classToKClass(Boolean.TYPE)}, 2));
-        c1973M3492.m3732();
-        ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831(contentValues, Boolean.TRUE);
-        
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(objM2131).m3492();
+        c1973M3492.name = "convertFrom";
+        c1973M3492.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(ContentValues.class), AbstractC2519.classToKClass(Boolean.TYPE)}, 2));
+        c1973M3492.superclass();
+        ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).m3831(contentValues, Boolean.TRUE);
         Method methodM3315 = AbstractC1574.dexToMethod(C2077.f6879);
-        C2824 c2824 = C2824.f9070;
-        
-        
-        
-        MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(C2663.m4656(AbstractC1574.dexToClass(C2823.f9069))).m3492();
+        MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(C2663.m4656(AbstractC1574.dexToClass(C2823.f9069))).m3492();
         c1973M3493.returnType = AbstractC1574.dexToClass(C2076.f6878);
         Object objInvoke = methodM3315.invoke(((C1982) AbstractC1194.m2778(c1973M3493)).m3831(new Object[0]), objM2131);
         return ((Long) objInvoke).longValue();

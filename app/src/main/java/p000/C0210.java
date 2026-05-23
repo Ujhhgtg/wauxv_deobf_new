@@ -45,12 +45,12 @@ public final class C0210 extends AbstractC2867 {
         int i = 0;
         String[] strArr = AbstractC1574.f5469;
         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.appbrand.commonjni.AppBrandJsBridgeBinding")).m3492();
-        c1973M3492.f6370 = "subscribeHandler";
-        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
+        c1973M3492.name = "subscribeHandler";
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.resolve());
         C0210 c0210 = f1307;
         C3689 c3689M4174 = c0210.m4174(c1982, 1);
-        c0210.m3263(c3689M4174, new C0199(11));
-        c3689M4174.m5352();
+        c0210.hookBefore(c3689M4174, new C0199(11));
+        c3689M4174.applyHook();
     }
 
     @Override // p000.AbstractC2867

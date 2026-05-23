@@ -33,8 +33,8 @@ public final /* synthetic */ class C2729 implements InterfaceC1430 {
         switch (i) {
             case 0:
                 int i2 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
-                c1299M3490.f6370 = "field_snsId";
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj2).m3490();
+                c1299M3490.name = "field_snsId";
                 final long jLongValue = ((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).longValue();
                 AbstractC1458.m3166(C2732.f8799, new InterfaceC1425() { // from class: ᛱᛲᛳᛴᛵᛶᛷᲀᲇᤝᲁᲈᤞᛸ
                     @Override // p000.InterfaceC1425
@@ -53,22 +53,22 @@ public final /* synthetic */ class C2729 implements InterfaceC1430 {
                 Activity activity = (Activity) obj;
                 C2733 c2733 = C2733.f8803;
                 int i3 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj2).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(obj2).m3492();
                 String[] strArr = AbstractC1574.f5469;
-                c1973M3492.f6370 = "getLocalid";
+                c1973M3492.name = "getLocalid";
                 String str = (String) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(obj2).m3492();
-                c1973M3493.f6370 = "getTypeFlag";
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(obj2).m3492();
+                c1973M3493.name = "getTypeFlag";
                 int iIntValue = ((Number) ((C1982) AbstractC2784.m4742(c1973M3493)).invoke(new Object[0])).intValue();
-                MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(obj3).m3492();
-                c1973M3494.f6370 = "toByteArray";
+                MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(obj3).m3492();
+                c1973M3494.name = "toByteArray";
                 byte[] bArr = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3494)).invoke(new Object[0]);
                 C2427 c2427 = C2427.f7718;
                 
                 C3397 c3397 = (C3397) c2427.m4387(C3397.Companion.serializer(), bArr);
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj3).m3490();
-                c1299M3491.f6370 = "ContentObj";
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(((C1315) AbstractC2784.m4741(c1299M3491)).m3023()).m3490();
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj3).m3490();
+                c1299M3491.name = "ContentObj";
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(((C1315) AbstractC2784.m4741(c1299M3491)).m3023()).m3490();
                 c1299M3492.fieldType = AbstractC2519.classToKClass(LinkedList.class);
                 Object obj4 = null;
                 boolean z = false;
@@ -108,7 +108,7 @@ public final /* synthetic */ class C2729 implements InterfaceC1430 {
                             
                             int i5 = 0;
                             C0796 c0796M3486 = AbstractC0968.startMethodResolution(AbstractC1574.dexToClass(C2762.f8851)).m3486();
-                            c0796M3486.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(String.class)}, 1));
+                            c0796M3486.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(String.class)}, 1));
                             C0798 c0798 = (C0798) AbstractC0744.firstInList(c0796M3486.m2344());
                             ArrayList arrayList2 = arrayList;
                             Object[] objArr = {"timeline"};

@@ -34,7 +34,7 @@ public final class C2056 extends AbstractC2867 implements InterfaceC1582 {
         AbstractC1574.m3300(-513386030824116L);
         String[] strArr = AbstractC1574.f5469;
         f6843 = new C2056("MsgFormatHook");
-        f6844 = AbstractC0745.m2212("${sendText}", "${line}", "${sendTime}");
+        f6844 = AbstractC0745.listOf("${sendText}", "${line}", "${sendTime}");
         f6845 = "聊天";
         f6846 = "发送文本格式";
         f6847 = "将聊天发送的文本进行自定义格式处理";
@@ -53,9 +53,9 @@ public final class C2056 extends AbstractC2867 implements InterfaceC1582 {
         Constructor constructorM3314 = AbstractC1574.dexToCtor(C2053.f6840);
         List listSingletonList = Collections.singletonList(constructorM3314);
         C2056 c2056 = f6843;
-        C3689 c3689M4172 = C2309.m4172(c2056, listSingletonList);
-        c2056.m3263(c3689M4172, new C0055(6, constructorM3314));
-        c3689M4172.m5352();
+        C3689 c3689M4172 = C2309.createHook(c2056, listSingletonList);
+        c2056.hookBefore(c3689M4172, new C0055(6, constructorM3314));
+        c3689M4172.applyHook();
     }
 
     @Override // p000.AbstractC2867

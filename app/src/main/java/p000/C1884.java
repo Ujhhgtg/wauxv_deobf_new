@@ -64,10 +64,10 @@ public final /* synthetic */ class C1884 implements InterfaceC1425 {
                 c1299M4738.fieldType = "com.tencent.mm.ui.MMFragmentActivity";
                 Activity activity = (Activity) ((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3024();
                 C1299 c1299M4739 = AbstractC2784.m4738(c1563);
-                c1299M4739.f6370 = "mViewPager";
+                c1299M4739.name = "mViewPager";
                 ViewGroup viewGroup = (ViewGroup) ((C1315) AbstractC0744.firstInList(c1299M4739.resolve())).m3024();
                 C1299 c1299M47310 = AbstractC2784.m4738(c1563);
-                c1299M47310.f6370 = "mTabsAdapter";
+                c1299M47310.name = "mTabsAdapter";
                 Object objM3023 = ((C1315) AbstractC0744.firstInList(c1299M47310.resolve())).m3023();
                 for (InterfaceC1590 interfaceC1590 : C1886.f6233) {
                     try {
@@ -184,9 +184,9 @@ public final /* synthetic */ class C1884 implements InterfaceC1425 {
                 int i12 = 0;
                 C1299 c1299M47311 = AbstractC2784.m4738(c1565);
                 c1299M47311.f4726 = new C1884(8);
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution((View.OnClickListener) ((C1315) AbstractC0744.firstInList(c1299M47311.resolve())).m3024()).m3490();
-                c1299M3490.f6370 = "d";
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3023()).m3492();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_((View.OnClickListener) ((C1315) AbstractC0744.firstInList(c1299M47311.resolve())).m3024()).m3490();
+                c1299M3490.name = "d";
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3023()).m3492();
                 c1973M3492.returnType = AbstractC2519.classToKClass(List.class);
                 List list = (List) ((C1982) AbstractC1194.m2778(c1973M3492)).invoke(new Object[0]);
                 ArrayList arrayList2 = new ArrayList(AbstractC0746.m2214(list, 10));
@@ -333,9 +333,9 @@ public final /* synthetic */ class C1884 implements InterfaceC1425 {
                 View view = (View) ((C1315) AbstractC0744.firstInList(c1299M47312.resolve())).m3024();
                 C1299 c1299M47313 = AbstractC2784.m4738(c1566);
                 c1299M47313.f4726 = new C1884(9);
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution((View.OnClickListener) ((C1315) AbstractC0744.firstInList(c1299M47313.resolve())).m3024()).m3490();
-                c1299M3491.f6370 = "d";
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3023()).m3492();
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_((View.OnClickListener) ((C1315) AbstractC0744.firstInList(c1299M47313.resolve())).m3024()).m3490();
+                c1299M3491.name = "d";
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3023()).m3492();
                 c1973M3493.returnType = AbstractC2519.classToKClass(List.class);
                 List list2 = (List) ((C1982) AbstractC1194.m2778(c1973M3493)).invoke(new Object[0]);
                 ArrayList arrayList6 = new ArrayList(AbstractC0746.m2214(list2, 10));

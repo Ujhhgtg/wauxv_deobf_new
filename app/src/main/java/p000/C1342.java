@@ -28,11 +28,11 @@ public final class C1342 extends AbstractC1823 implements InterfaceC1582 {
     public final void mo1126() {
         List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C1340.f4808));
         C1342 c1342 = f4810;
-        C3689 c3689M4172 = C2309.m4172(c1342, listSingletonList);
+        C3689 c3689M4172 = C2309.createHook(c1342, listSingletonList);
         c3689M4172.m5351(new C1338(2));
-        c3689M4172.m5352();
-        C3689 c3689M4173 = C2309.m4172(c1342, Collections.singletonList(AbstractC1574.dexToMethod(C1341.f4809)));
+        c3689M4172.applyHook();
+        C3689 c3689M4173 = C2309.createHook(c1342, Collections.singletonList(AbstractC1574.dexToMethod(C1341.f4809)));
         c3689M4173.m5351(new C1338(3));
-        c3689M4173.m5352();
+        c3689M4173.applyHook();
     }
 }

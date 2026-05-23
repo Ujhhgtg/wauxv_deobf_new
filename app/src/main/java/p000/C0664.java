@@ -35,19 +35,19 @@ public final class C0664 extends AbstractC2867 implements InterfaceC1592 {
         List listM3699;
         if (mo3264()) {
             int i = 0;
-            C1744 c1744M2484 = AbstractC0968.startFieldResolution(obj);
+            C1744 c1744M2484 = AbstractC0968.startMethodResolution_(obj);
             C1299 c1299M3490 = c1744M2484.m3490();
             String[] strArr = AbstractC1574.f5469;
-            c1299M3490.f6370 = "field_isSend";
+            c1299M3490.name = "field_isSend";
             Integer num = (Integer) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
             if (num != null && num.intValue() == 1) {
                 return;
             }
             C1299 c1299M3491 = c1744M2484.m3490();
-            c1299M3491.f6370 = "field_type";
+            c1299M3491.name = "field_type";
             if (((Number) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024()).intValue() == EnumC3673.f11469.f11492) {
                 C1299 c1299M3492 = c1744M2484.m3490();
-                c1299M3492.f6370 = "field_content";
+                c1299M3492.name = "field_content";
                 String str2 = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                 String strM4845 = AbstractC2841.m4845(str2, ":");
                 
@@ -65,7 +65,7 @@ public final class C0664 extends AbstractC2867 implements InterfaceC1592 {
                     sb.append("<a href=\"" + strGroup + "\">" + str + "</a>");
                     String string = sb.toString();
                     C1299 c1299M3493 = c1744M2484.m3490();
-                    c1299M3493.f6370 = "field_content";
+                    c1299M3493.name = "field_content";
                     C1315 c1315 = (C1315) AbstractC2784.m4741(c1299M3493);
                     StringBuilder sbM4753 = AbstractC2784.m4753(strM4845);
                     sbM4753.append(":\n");

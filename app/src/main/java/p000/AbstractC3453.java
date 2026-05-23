@@ -361,8 +361,8 @@ public abstract class AbstractC3453 {
             C1744 c1744M2483 = AbstractC0968.startMethodResolution(clsM2133);
             c1744M2483.m3493(true);
             MethodResolver c1973M3492 = c1744M2483.m3492();
-            c1973M3492.f6370 = str;
-            c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+            c1973M3492.name = str;
+            c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
         }
         if (c1982 == null) {
             C3678.m5309("Failed to initialize YukiXposedModuleStatus");

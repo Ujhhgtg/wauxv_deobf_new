@@ -191,9 +191,9 @@ public final /* synthetic */ class C2316 implements InterfaceC1425 {
                 Integer num = (Integer) c2585;
                 int iIntValue = num != null ? num.intValue() : 0;
                 int i9 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(c1563.m3268()).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(c1563.m3268()).m3492();
                 String[] strArr4 = AbstractC1574.f5469;
-                c1973M3492.f6370 = "getItem";
+                c1973M3492.name = "getItem";
                 ConversationBean conversationBean6 = new ConversationBean(((C1982) AbstractC2784.m4742(c1973M3492)).m3831(Integer.valueOf(iIntValue)));
                 Object objM3269 = c1563.m3269();
                 View childAt = ((ViewGroup) (objM3269 instanceof ViewGroup ? objM3269 : null)).getChildAt(0);
@@ -293,16 +293,16 @@ public final /* synthetic */ class C2316 implements InterfaceC1425 {
                     int i11 = 0;
                     C1299 c1299M4738 = AbstractC2784.m4738(c1564);
                     c1299M4738.f4726 = new C2444(2);
-                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3023()).m3490();
+                    C1299 c1299M3490 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3023()).m3490();
                     c1299M3490.fieldType = C0607.f2431.m2028();
                     FrameLayout frameLayout = (FrameLayout) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024();
-                    MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(frameLayout).m3492();
+                    MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(frameLayout).m3492();
                     String[] strArr6 = AbstractC1574.f5469;
-                    c1973M3493.f6370 = "getLastText";
-                    String str = (String) ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).invoke(new Object[0]);
-                    MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(frameLayout).m3492();
-                    c1973M3494.f6370 = "getLastQuoteMsgId";
-                    long jLongValue = ((Number) ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).invoke(new Object[0])).longValue();
+                    c1973M3493.name = "getLastText";
+                    String str = (String) ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).invoke(new Object[0]);
+                    MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(frameLayout).m3492();
+                    c1973M3494.name = "getLastQuoteMsgId";
+                    long jLongValue = ((Number) ((C1982) AbstractC0744.firstInList(c1973M3494.resolve())).invoke(new Object[0])).longValue();
                     if (str.length() == 0 && jLongValue != 0) {
                         AbstractC1574.dexToMethod(C0606.f2430).invoke(frameLayout, Boolean.FALSE, Boolean.TRUE);
                     }

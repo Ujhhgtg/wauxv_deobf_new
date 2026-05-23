@@ -116,7 +116,7 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
                 ((C1333) obj).m3052(new C1047(9));
                 return unit;
             case 8:
-                ((C1563) obj).m3272(null);
+                ((C1563) obj).setReturn(null);
                 return unit;
             case 9:
                 ((C1981) obj).m3827(".msgsource.sec_msg_node.clip-len");
@@ -193,7 +193,7 @@ public final /* synthetic */ class C1047 implements InterfaceC1425 {
                 ((C1020) obj).thisMethodMatcher = new C1047(21);
                 return unit;
             case 20:
-                ((C1563) obj).m3272(null);
+                ((C1563) obj).setReturn(null);
                 return unit;
             case 21 /* 21 */:
                 C1333 c1335 = (C1333) obj;

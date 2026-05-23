@@ -1,7 +1,5 @@
 package p000;
 
-import me.hd.wauxv.hook.factory.MagicFactory;
-
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᤞᲇᛸᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
@@ -27,7 +25,7 @@ public final class C3617 extends AbstractC2867 implements InterfaceC1599 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲀᲁᲈ */
     public final void mo3237(C1563 c1563, String str) {
         if (mo3264() && AbstractC2207.m4087(str, "RepairerConfig_VoiceInput_Int")) {
-            c1563.m3272(0);
+            c1563.setReturn(0);
         }
     }
 

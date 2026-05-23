@@ -21,9 +21,9 @@ public final class C0608 extends AbstractC1823 {
     public final void mo1126() {
         int i = 0;
         C0796 c0796M3486 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.pluginsdk.ui.chat.ChatFooter")).m3486();
-        c0796M3486.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Context.class), AbstractC2519.classToKClass(AttributeSet.class), AbstractC2519.classToKClass(Integer.TYPE)}, 3));
+        c0796M3486.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Context.class), AbstractC2519.classToKClass(AttributeSet.class), AbstractC2519.classToKClass(Integer.TYPE)}, 3));
         C3689 c3689M4174 = m4174((C0798) AbstractC0744.firstInList(c0796M3486.m2344()), 1);
         c3689M4174.m5350(new C0605(1));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
     }
 }

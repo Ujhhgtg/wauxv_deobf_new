@@ -94,7 +94,7 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 c1333.f4794 = c1982;
                 return unit;
             case 9:
-                ((C1563) obj).m3271();
+                ((C1563) obj).setReturnTrue();
                 return unit;
             case 10:
                 Object objM3268 = ((C1563) obj).m3268();
@@ -104,9 +104,9 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                     throw new IllegalStateException("HookParam instance cannot cast to ".concat((clsM2183 != null ? clsM2183 : Activity.class).getName()).toString());
                 }
                 int i9 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(activity).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(activity).m3492();
                 String[] strArr4 = AbstractC1574.f5469;
-                c1973M3492.f6370 = "getPreferenceScreen";
+                c1973M3492.name = "getPreferenceScreen";
                 BaseAdapter baseAdapter = (BaseAdapter) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                 String stringExtra = activity.getIntent().getStringExtra("Chat_User");
                 if (stringExtra == null) {
@@ -135,9 +135,9 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 }
                 obj2 = c2585 instanceof C2585 ? null : c2585;
                 int i10 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj2).m3490();
                 c1299M3490.fieldType = AbstractC2519.classToKClass(String.class);
-                c1299M3490.m3732();
+                c1299M3490.superclass();
                 Iterator it = c1299M3490.resolve().iterator();
                 while (it.hasNext()) {
                     String str = (String) ((C1315) it.next()).m3024();
@@ -150,7 +150,7 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                             }
                             AbstractC2834.m4818(activity2, stringExtra2);
                             AbstractC2834.m4823(activity2, 2, "复制成功");
-                            c1563.m3271();
+                            c1563.setReturnTrue();
                         }
                     }
                 }
@@ -243,9 +243,9 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 }
                 obj2 = c2589 instanceof C2585 ? null : c2589;
                 int i12 = 0;
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj2).m3490();
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj2).m3490();
                 String[] strArr7 = AbstractC1574.f5469;
-                c1299M3491.f6370 = "d";
+                c1299M3491.name = "d";
                 C1315 c1315 = (C1315) AbstractC0744.firstInList(c1299M3491.resolve());
                 if (iIntValue == 4 && iIntValue2 == -2005 && ((String) c1315.m3024()).startsWith("https://weixin110.qq.com/")) {
                     new C0408(3, 6, c1564).m1608(0);
@@ -301,21 +301,21 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                             c25811 = null;
                         }
                         int i13 = 0;
-                        C1299 c1299M3492 = AbstractC0968.startFieldResolution(c25811).m3490();
+                        C1299 c1299M3492 = AbstractC0968.startMethodResolution_(c25811).m3490();
                         String[] strArr10 = AbstractC1574.f5469;
-                        c1299M3492.f6370 = "field_userName";
+                        c1299M3492.name = "field_userName";
                         String str3 = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
-                        C1299 c1299M3493 = AbstractC0968.startFieldResolution(c25811).m3490();
-                        c1299M3493.f6370 = "field_type";
+                        C1299 c1299M3493 = AbstractC0968.startMethodResolution_(c25811).m3490();
+                        c1299M3493.name = "field_type";
                         int iIntValue3 = ((Number) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024()).intValue();
-                        C1299 c1299M3494 = AbstractC0968.startFieldResolution(c25811).m3490();
-                        c1299M3494.f6370 = "field_thumbUrl";
+                        C1299 c1299M3494 = AbstractC0968.startMethodResolution_(c25811).m3490();
+                        c1299M3494.name = "field_thumbUrl";
                         String str4 = (String) ((C1315) AbstractC2784.m4741(c1299M3494)).m3024();
-                        C1299 c1299M3495 = AbstractC0968.startFieldResolution(c25811).m3490();
-                        c1299M3495.f6370 = "field_imageBgUrl";
+                        C1299 c1299M3495 = AbstractC0968.startMethodResolution_(c25811).m3490();
+                        c1299M3495.name = "field_imageBgUrl";
                         String str5 = (String) ((C1315) AbstractC2784.m4741(c1299M3495)).m3024();
-                        C1299 c1299M3496 = AbstractC0968.startFieldResolution(c25811).m3490();
-                        c1299M3496.f6370 = "field_videoBgUrl";
+                        C1299 c1299M3496 = AbstractC0968.startMethodResolution_(c25811).m3490();
+                        c1299M3496.name = "field_videoBgUrl";
                         String str6 = (String) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024();
                         if (iIntValue3 == 1 || iIntValue3 == 2 || iIntValue3 == 3) {
                             if (str4 != null) {
@@ -386,7 +386,7 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
             case 28:
                 C1563 c1566 = (C1563) obj;
                 int i13 = 0;
-                C1744 c1744M2484 = AbstractC0968.startFieldResolution(c1566.m3268());
+                C1744 c1744M2484 = AbstractC0968.startMethodResolution_(c1566.m3268());
                 try {
                     c25810 = c1566.m3267()[0];
                     if (c25810 == null) {
@@ -395,17 +395,17 @@ public final /* synthetic */ class C2659 implements InterfaceC1425 {
                 } catch (Throwable th6) {
                     c25810 = new C2585(th6);
                 }
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(c25810 instanceof C2585 ? null : c25810).m3490();
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(c25810 instanceof C2585 ? null : c25810).m3490();
                 String[] strArr13 = AbstractC1574.f5469;
                 c1299M3492.fieldType = "com.tencent.mm.plugin.sns.storage.SnsInfo";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3492)).m3023();
                 MethodResolver c1973M3493 = c1744M2484.m3492();
-                c1973M3493.f6370 = "getPublishTimeText";
+                c1973M3493.name = "getPublishTimeText";
                 TextView textView = (TextView) ((C1982) AbstractC2784.m4742(c1973M3493)).invoke(new Object[0]);
                 
                 textView.setText(AbstractC2849.m4857(C2741.m4730(objM3023), "${originalText}", textView.getText().toString()));
                 MethodResolver c1973M3494 = c1744M2484.m3492();
-                c1973M3494.f6370 = "getGroupImageStub";
+                c1973M3494.name = "getGroupImageStub";
                 View view = (View) ((C1982) AbstractC2784.m4742(c1973M3494)).invoke(new Object[0]);
                 if (view != null && (view instanceof ImageView)) {
                     ((ImageView) view).setVisibility(C2738.f8811.m2536() ? 8 : 0);

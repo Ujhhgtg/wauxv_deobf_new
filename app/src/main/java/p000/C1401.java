@@ -39,8 +39,8 @@ public final class C1401 extends AbstractC2867 implements InterfaceC1578 {
     public final void mo1408(View view, Object obj, Object obj2, MsgInfoBean msgInfoBean) {
         if (mo3264()) {
             int i = 0;
-            C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
-            c1299M3490.f6370 = "timeTV";
+            C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj).m3490();
+            c1299M3490.name = "timeTV";
             TextView textView = (TextView) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
             int iM2538 = C1399.f5055.m2538();
             if (iM2538 == EnumC1398.f5050.f5054) {

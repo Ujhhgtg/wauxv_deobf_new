@@ -47,13 +47,13 @@ public final class C1016 extends AbstractC2867 {
             throw new NoClassDefFoundError("VariousClass matches failed of " + listM1389 + ".");
         }
         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(clsM2130).m3492();
-        c1973M3492.f6370 = "logMonitor";
+        c1973M3492.name = "logMonitor";
         Class cls = Long.TYPE;
         C0707 c0707M4527 = AbstractC2519.classToKClass(cls);
         Class cls2 = Integer.TYPE;
         C3689 c3689M4174 = m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{c0707M4527, AbstractC2519.classToKClass(cls2), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(cls2), AbstractC2519.classToKClass(cls2), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(String.class)}, 10, c1973M3492), 1);
-        f3715.m3263(c3689M4174, new C0853(26));
-        c3689M4174.m5352();
+        f3715.hookBefore(c3689M4174, new C0853(26));
+        c3689M4174.applyHook();
     }
 
     @Override // p000.AbstractC2867

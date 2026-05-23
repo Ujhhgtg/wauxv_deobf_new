@@ -83,11 +83,11 @@ public final class C2865 extends ViewGroup {
                         c2103 = (C2103) interfaceC2864;
                         int i = 0;
                         obj = c2103.f6936;
-                        c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
-                        c1299M3490.f6370 = "checkBox";
+                        c1299M3490 = AbstractC0968.startMethodResolution_(obj).m3490();
+                        c1299M3490.name = "checkBox";
                         if (((View) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).getVisibility() == 0) {
-                            C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
-                            c1299M3491.f6370 = "maskView";
+                            C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj).m3490();
+                            c1299M3491.name = "maskView";
                             ((View) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024()).performClick();
                         } else {
                             C2873 c2873 = new C2873(new C0637(1, c2103.f6938));
@@ -95,10 +95,10 @@ public final class C2865 extends ViewGroup {
                             FrameLayout frameLayout = (FrameLayout) c2873.getValue();
                             origin = ((MsgInfoBean) c2103.f6937).getOrigin();
                             
-                            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(frameLayout).m3492();
+                            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(frameLayout).m3492();
                             c1973M3492.returnType = AbstractC2519.classToKClass(Boolean.TYPE);
                             c1973M3492.f4482 = new C0605(0);
-                            c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
+                            c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.resolve());
                             if (c1982.f6566.getParameterCount() == 2) {
                                 c1982.m3831(origin, null);
                             } else {
@@ -157,11 +157,11 @@ public final class C2865 extends ViewGroup {
                         c2103 = (C2103) interfaceC2864;
                         int i3 = 0;
                         obj = c2103.f6936;
-                        c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
-                        c1299M3490.f6370 = "checkBox";
+                        c1299M3490 = AbstractC0968.startMethodResolution_(obj).m3490();
+                        c1299M3490.name = "checkBox";
                         if (((View) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).getVisibility() == 0) {
-                            C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
-                            c1299M3492.f6370 = "maskView";
+                            C1299 c1299M3492 = AbstractC0968.startMethodResolution_(obj).m3490();
+                            c1299M3492.name = "maskView";
                             ((View) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024()).performClick();
                         } else {
                             C2873 c2874 = new C2873(new C0637(1, c2103.f6938));
@@ -169,10 +169,10 @@ public final class C2865 extends ViewGroup {
                             FrameLayout frameLayout2 = (FrameLayout) c2874.getValue();
                             origin = ((MsgInfoBean) c2103.f6937).getOrigin();
                             
-                            MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(frameLayout2).m3492();
+                            MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(frameLayout2).m3492();
                             c1973M3493.returnType = AbstractC2519.classToKClass(Boolean.TYPE);
                             c1973M3493.f4482 = new C0605(0);
-                            c1982 = (C1982) AbstractC0744.firstInList(c1973M3493.m3799());
+                            c1982 = (C1982) AbstractC0744.firstInList(c1973M3493.resolve());
                             if (c1982.f6566.getParameterCount() == 2) {
                                 c1982.m3831(origin, null);
                             } else {

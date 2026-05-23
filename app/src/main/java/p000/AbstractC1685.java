@@ -6,7 +6,7 @@ package p000;
 public abstract class AbstractC1685 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
-    public static final Integer f5740;
+    public static final Integer ANDROID_SDK;
 
     static {
         Integer num;
@@ -19,6 +19,6 @@ public abstract class AbstractC1685 {
         if (num != null && num.intValue() > 0) {
             num2 = num;
         }
-        f5740 = num2;
+        ANDROID_SDK = num2;
     }
 }

@@ -168,9 +168,9 @@ public final /* synthetic */ class C2544 implements InterfaceC1425 {
                 return unit;
             case 18 /* 18 */:
                 C2603 c2603 = C2603.f8467;
-                C3689 c3689M4172 = C2309.m4172(c2603, Collections.singletonList((Method) obj));
-                c2603.m3263(c3689M4172, new C2544(6));
-                c3689M4172.m5352();
+                C3689 c3689M4172 = C2309.createHook(c2603, Collections.singletonList((Method) obj));
+                c2603.hookBefore(c3689M4172, new C2544(6));
+                c3689M4172.applyHook();
                 return unit;
             case 19:
                 C1563 c1565 = (C1563) obj;

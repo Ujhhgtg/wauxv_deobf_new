@@ -88,9 +88,9 @@ public final class C2349 extends AbstractC2867 implements InterfaceC1581, Interf
     public final void mo1126() {
         List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C2345.f7537));
         C2349 c2349 = f7541;
-        C3689 c3689M4172 = C2309.m4172(c2349, listSingletonList);
+        C3689 c3689M4172 = C2309.createHook(c2349, listSingletonList);
         c2349.m3262(c3689M4172, new C2316(18));
-        c3689M4172.m5352();
+        c3689M4172.applyHook();
     }
 
     @Override // p000.AbstractC2867

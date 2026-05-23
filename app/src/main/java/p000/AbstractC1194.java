@@ -57,7 +57,7 @@ public abstract /* synthetic */ class AbstractC1194 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
     public static Object m2778(MethodResolver c1973) {
         c1973.m2887();
-        return AbstractC0744.firstInList(c1973.m3799());
+        return AbstractC0744.firstInList(c1973.resolve());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲇᲈ, reason: contains not printable characters */

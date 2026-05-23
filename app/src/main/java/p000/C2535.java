@@ -35,7 +35,7 @@ public final class C2535 extends AbstractC2867 {
         C2535 c2535 = f8082;
         C3689 c3689M4174 = c2535.m4174(c0798, 1);
         c2535.m3262(c3689M4174, new C2444(26));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
     }
 
     @Override // p000.AbstractC2867

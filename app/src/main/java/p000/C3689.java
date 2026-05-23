@@ -129,7 +129,7 @@ public final class C3689 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
-    public final void m5352() {
+    public final void applyHook() {
         this.f11590 = new C1744(this);
         m5354(true);
     }

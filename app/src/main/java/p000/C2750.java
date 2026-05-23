@@ -56,11 +56,11 @@ public final /* synthetic */ class C2750 implements InterfaceC1425 {
                     c2753.f8837 = "";
                     c2753.f8838 = "";
                     int i3 = 0;
-                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
-                    c1299M3490.f6370 = "field_labelID";
+                    C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj2).m3490();
+                    c1299M3490.name = "field_labelID";
                     c2753.f8837 = String.valueOf(((C1315) AbstractC2784.m4741(c1299M3490)).m3024());
-                    C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj2).m3490();
-                    c1299M3491.f6370 = "field_labelName";
+                    C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj2).m3490();
+                    c1299M3491.name = "field_labelName";
                     c2753.f8838 = (String) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
                     arrayList.add(c2753);
                 }
@@ -150,13 +150,13 @@ public final /* synthetic */ class C2750 implements InterfaceC1425 {
                 
                 ViewGroup viewGroup = (ViewGroup) activity.findViewById(C1565.m3280() ? C2760.f8849.m2538() : AbstractC0968.m2475(C2761.m4733()));
                 int i4 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(viewGroup).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(viewGroup).m3492();
                 Class cls = Integer.TYPE;
                 ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls)}, 3, c1973M3492)).m3831(0, 0, 0);
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(viewGroup).m3492();
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(viewGroup).m3492();
                 String[] strArr3 = AbstractC1574.f5469;
-                c1973M3493.f6370 = "getAdapter";
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(((C1982) AbstractC2784.m4742(c1973M3493)).m3831(new Object[0])).m3490();
+                c1973M3493.name = "getAdapter";
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(((C1982) AbstractC2784.m4742(c1973M3493)).m3831(new Object[0])).m3490();
                 c1299M3492.fieldType = "com.tencent.mm.plugin.mvvmlist.MvvmList";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3492)).m3023();
                 Method methodM3316 = AbstractC1574.dexToMethod(C2753.f8839);

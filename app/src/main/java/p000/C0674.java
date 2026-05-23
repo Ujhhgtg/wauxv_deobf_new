@@ -14,7 +14,7 @@ public final class C0674 extends AbstractC1823 implements InterfaceC1582 {
     public static Object m2066(String str) {
         int i = 0;
         
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C0672.m2065()).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C0672.m2065()).m3492();
         
         c1973M3492.returnType = AbstractC1574.dexToClass(C0650.f2502);
         return ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class)}, 1, c1973M3492)).m3831(str);

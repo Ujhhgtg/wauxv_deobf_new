@@ -40,8 +40,8 @@ public final class C1545 extends AbstractC2867 implements InterfaceC1578 {
     public final void mo1408(View view, Object obj, Object obj2, MsgInfoBean msgInfoBean) {
         if (mo3264()) {
             int i = 0;
-            C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
-            c1299M3490.f6370 = "avatarIV";
+            C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj).m3490();
+            c1299M3490.name = "avatarIV";
             ImageView imageView = (ImageView) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
             if (imageView != null) {
                 boolean zIsSend = msgInfoBean.isSend();

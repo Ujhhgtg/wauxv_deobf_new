@@ -185,18 +185,18 @@ public class C1133 implements InterfaceC0876, InterfaceC1997, InterfaceC2578, In
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */
     public static Object m2708(String str, String str2, byte[] bArr, Object obj) throws IllegalAccessException {
         Object objM2131 = AbstractC0710.m2131(AbstractC2201.m3988("com.tencent.mm.opensdk.modelmsg.WXMediaMessage"), new Object[0]);
-        C1744 c1744M2484 = AbstractC0968.startFieldResolution(objM2131);
+        C1744 c1744M2484 = AbstractC0968.startMethodResolution_(objM2131);
         C1299 c1299M3490 = c1744M2484.m3490();
-        c1299M3490.f6370 = "title";
+        c1299M3490.name = "title";
         ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).set(str);
         C1299 c1299M3491 = c1744M2484.m3490();
-        c1299M3491.f6370 = "description";
+        c1299M3491.name = "description";
         ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).set(str2);
         C1299 c1299M3492 = c1744M2484.m3490();
-        c1299M3492.f6370 = "thumbData";
+        c1299M3492.name = "thumbData";
         ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).set(bArr);
         C1299 c1299M3493 = c1744M2484.m3490();
-        c1299M3493.f6370 = "mediaObject";
+        c1299M3493.name = "mediaObject";
         ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).set(obj);
         return objM2131;
     }
@@ -280,8 +280,8 @@ public class C1133 implements InterfaceC0876, InterfaceC1997, InterfaceC2578, In
         LinkedList linkedList = new LinkedList();
         C0803.f3165.getClass();
         Object objM2131 = AbstractC0710.m2131(AbstractC1574.dexToClass(C0802.f3164), new Object[0]);
-        C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM2131).m3490();
-        c1299M3490.f6370 = "d";
+        C1299 c1299M3490 = AbstractC0968.startMethodResolution_(objM2131).m3490();
+        c1299M3490.name = "d";
         ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).set(str);
         ArrayList arrayList = new ArrayList(AbstractC0746.m2214(list, 10));
         Iterator it = list.iterator();
@@ -295,8 +295,8 @@ public class C1133 implements InterfaceC0876, InterfaceC1997, InterfaceC2578, In
             arrayList.add((String) objInvoke);
         }
         String strM2196 = !arrayList.isEmpty() ? AbstractC0744.m2196(arrayList, ",", null, " ", null, 58) : "";
-        C1299 c1299M3491 = AbstractC0968.startFieldResolution(objM2131).m3490();
-        c1299M3491.f6370 = "e";
+        C1299 c1299M3491 = AbstractC0968.startMethodResolution_(objM2131).m3490();
+        c1299M3491.name = "e";
         ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).set(strM2196);
         linkedList.push(objM2131);
         c2171.getClass();
@@ -342,8 +342,8 @@ public class C1133 implements InterfaceC0876, InterfaceC1997, InterfaceC2578, In
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲀᲇᲁ, reason: contains not printable characters */
     public static Cursor m2715(String str) {
         C2800.f8930.getClass();
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2800.m4779()).m3492();
-        c1973M3492.f6370 = "rawQuery";
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C2800.m4779()).m3492();
+        c1973M3492.name = "rawQuery";
         return (Cursor) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(Object[].class)}, 2, c1973M3492)).invoke(str, null);
     }
 
@@ -384,7 +384,7 @@ public class C1133 implements InterfaceC0876, InterfaceC1997, InterfaceC2578, In
                 AppInfo$MethodSetAppId methodSetAppId = AppInfo$MethodSetAppId.f1399;
                 Object objM2132 = AbstractC0710.m2131(AbstractC1574.dexToMethod(methodSetAppId).getDeclaringClass(), new Object[0]);
                 AbstractC1574.dexToMethod(methodSetAppId).invoke(objM2132, appId);
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(crossParams).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(crossParams).m3490();
                 c1299M3490.fieldType = AbstractC1574.dexToMethod(methodSetAppId).getDeclaringClass();
                 ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).set(objM2132);
             }
@@ -403,7 +403,7 @@ public class C1133 implements InterfaceC0876, InterfaceC1997, InterfaceC2578, In
             jSONObject.put("msg", jSONObject2);
             HashSet hashSet = new HashSet();
             HashSet hashSet2 = new HashSet();
-            C1732 c1732 = new C1732();
+            JsonToXmlConverter c1732 = new JsonToXmlConverter();
             c1732.f5829 = jSONObject;
             c1732.f5830 = hashSet;
             c1732.f5831 = hashSet2;
@@ -435,7 +435,7 @@ public class C1133 implements InterfaceC0876, InterfaceC1997, InterfaceC2578, In
         hashSet.add("/msg/location/x");
         hashSet.add("/msg/location/y");
         hashSet.add("/msg/location/scale");
-        C1732 c1732 = new C1732();
+        JsonToXmlConverter c1732 = new JsonToXmlConverter();
         c1732.f5829 = jSONObject;
         c1732.f5830 = hashSet;
         c1732.f5831 = hashSet2;
@@ -479,7 +479,7 @@ public class C1133 implements InterfaceC0876, InterfaceC1997, InterfaceC2578, In
         MethodResolver c1973M3493 = AbstractC0968.startMethodResolution(AbstractC1574.dexToClass(c3622)).m3492();
         c1973M3493.returnType = AbstractC2519.classToKClass(Boolean.TYPE);
         c1973M3493.f4482 = new C3618(10);
-        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3493.m3799());
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3493.resolve());
         if (c1982.f6566.getParameterCount() == 4) {
             c1982.m3831(str4, Integer.valueOf(i), 0, null);
         } else {

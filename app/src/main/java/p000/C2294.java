@@ -24,8 +24,8 @@ public final class C2294 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        C3689 c3689M4172 = C2309.m4172(f7389, Collections.singletonList(AbstractC1574.dexToMethod(C2293.f7388)));
+        C3689 c3689M4172 = C2309.createHook(f7389, Collections.singletonList(AbstractC1574.dexToMethod(C2293.f7388)));
         c3689M4172.m5350(new C2193(21));
-        c3689M4172.m5352();
+        c3689M4172.applyHook();
     }
 }

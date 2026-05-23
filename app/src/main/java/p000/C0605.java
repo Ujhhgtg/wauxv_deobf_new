@@ -58,8 +58,8 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
             c2585 = null;
         }
         int i = 0;
-        C1299 c1299M3490 = AbstractC0968.startFieldResolution(c2585).m3490();
-        c1299M3490.f6370 = "convertView";
+        C1299 c1299M3490 = AbstractC0968.startMethodResolution_(c2585).m3490();
+        c1299M3490.name = "convertView";
         ViewGroup viewGroup = (ViewGroup) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
         try {
             c2586 = c1563.m3267()[1];
@@ -478,9 +478,9 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                 Boolean bool = (Boolean) (c2585 instanceof C2585 ? null : c2585);
                 if (!(bool != null ? bool.booleanValue() : false)) {
                     int i16 = 0;
-                    MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(c1564.m3268()).m3492();
-                    c1973M3492.f6370 = "setHint";
-                    C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
+                    MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(c1564.m3268()).m3492();
+                    c1973M3492.name = "setHint";
+                    C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.resolve());
                     C0636 c0637 = C0636.f2474;
                     String strM2543 = C0628.f2463.m2542();
                     c0637.getClass();
@@ -506,7 +506,7 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                 }
                 Object obj8 = c2586 instanceof C2585 ? null : c2586;
                 int i17 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj8).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj8).m3490();
                 c1299M3490.fieldType = AbstractC2519.classToKClass(Context.class);
                 AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024());
                 C2873 c2873 = new C2873(new C0637(0, obj8));
@@ -519,19 +519,19 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                     c2587 = new C2585(th3);
                 }
                 Object tag = ((View) (c2587 instanceof C2585 ? null : c2587)).getTag();
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(tag).m3492();
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(tag).m3492();
                 c1973M3493.returnType = AbstractC2519.classToKClass(Integer.TYPE);
                 c1973M3493.m2887();
-                c1973M3493.m3732();
-                Integer num = (Integer) ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).invoke(new Object[0]);
+                c1973M3493.superclass();
+                Integer num = (Integer) ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).invoke(new Object[0]);
                 if (AbstractC3471.m5079(WeChatVersions.f11545) || AbstractC3471.m5080(WeChatVersionsPlay.f11511)) {
-                    MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(tag).m3492();
+                    MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(tag).m3492();
                     C2060.f6855.getClass();
                     c1973M3494.returnType = AbstractC1574.dexToClass(C2059.f6854);
                     c1973M3494.f4485 = 0;
                     objM3831 = ((C1982) AbstractC2784.m4742(c1973M3494)).m3831(new Object[0]);
                 } else {
-                    C1299 c1299M3491 = AbstractC0968.startFieldResolution(tag).m3490();
+                    C1299 c1299M3491 = AbstractC0968.startMethodResolution_(tag).m3490();
                     C2060.f6855.getClass();
                     c1299M3491.fieldType = AbstractC1574.dexToClass(C2059.f6854);
                     objM3831 = ((C1315) AbstractC2784.m4741(c1299M3491)).m3023();
@@ -560,20 +560,20 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                 int i18 = 0;
                 C1299 c1299M47310 = AbstractC2784.m4738(c1566);
                 c1299M47310.f4726 = new C0605(16);
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution((View.OnLongClickListener) ((C1315) AbstractC0744.firstInList(c1299M47310.resolve())).m3024()).m3490();
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_((View.OnLongClickListener) ((C1315) AbstractC0744.firstInList(c1299M47310.resolve())).m3024()).m3490();
                 C0676.f2559.getClass();
                 C0675 c0675 = C0675.f2558;
                 c1299M3492.fieldType = AbstractC1574.dexToClass(c0675);
                 Object objM3024 = ((C1315) AbstractC2784.m4741(c1299M3492)).m3023();
-                C1299 c1299M3493 = AbstractC0968.startFieldResolution(objM3024).m3490();
+                C1299 c1299M3493 = AbstractC0968.startMethodResolution_(objM3024).m3490();
                 C0204.f1288.getClass();
                 C0203 c0203 = C0203.f1287;
                 c1299M3493.fieldType = AbstractC1574.dexToMethod(c0203).getDeclaringClass();
                 Object objM3025 = ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).m3023();
                 C0683.f2566.getClass();
-                C1299 c1299M3494 = AbstractC0968.startFieldResolution(AbstractC1574.dexToMethod(c0203).invoke(objM3025, (Class) AbstractC0270.m1385(AbstractC1574.dexToClass(C0682.f2565).getInterfaces()))).m3490();
+                C1299 c1299M3494 = AbstractC0968.startMethodResolution_(AbstractC1574.dexToMethod(c0203).invoke(objM3025, (Class) AbstractC0270.m1385(AbstractC1574.dexToClass(C0682.f2565).getInterfaces()))).m3490();
                 c1299M3494.fieldType = AbstractC1574.dexToClass(c0675);
-                C1299 c1299M3495 = AbstractC0968.startFieldResolution(((C1315) AbstractC2784.m4741(c1299M3494)).m3023()).m3490();
+                C1299 c1299M3495 = AbstractC0968.startMethodResolution_(((C1315) AbstractC2784.m4741(c1299M3494)).m3023()).m3490();
                 c1299M3495.fieldType = AbstractC1574.dexToMethod(c0203).getDeclaringClass();
                 Object objM3026 = ((C1315) AbstractC0744.firstInList(c1299M3495.resolve())).m3023();
                 C0678.f2561.getClass();
@@ -587,9 +587,9 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                     c2588 = new C2585(th4);
                 }
                 MenuItem menuItem = (MenuItem) (c2588 instanceof C2585 ? null : c2588);
-                MethodResolver c1973M3495 = AbstractC0968.startFieldResolution(objInvoke).m3492();
-                c1973M3495.f6370 = "getItem";
-                MsgInfoBean msgInfoBean2 = new MsgInfoBean(((C1982) AbstractC0744.firstInList(c1973M3495.m3799())).m3831(Integer.valueOf(menuItem.getGroupId())));
+                MethodResolver c1973M3495 = AbstractC0968.startMethodResolution_(objInvoke).m3492();
+                c1973M3495.name = "getItem";
+                MsgInfoBean msgInfoBean2 = new MsgInfoBean(((C1982) AbstractC0744.firstInList(c1973M3495.resolve())).m3831(Integer.valueOf(menuItem.getGroupId())));
                 for (?? r6 : C0641.f2489) {
                     try {
                         for (C0638 c0639 : r6.mo2764(msgInfoBean2)) {
@@ -750,7 +750,7 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                     Integer num2 = (Integer) (c25811 instanceof C2585 ? null : c25811);
                     int iIntValue = num2 != null ? num2.intValue() : 0;
                     int i19 = 0;
-                    C1299 c1299M3496 = AbstractC0968.startFieldResolution(obj9).m3490();
+                    C1299 c1299M3496 = AbstractC0968.startMethodResolution_(obj9).m3490();
                     c1299M3496.fieldType = AbstractC2519.classToKClass(View.class);
                     View view = (View) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024();
                     Object tag2 = view.getTag();
@@ -761,9 +761,9 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                     C1299 c1299M47312 = AbstractC2784.m4738(c1568);
                     C0678.f2561.getClass();
                     c1299M47312.fieldType = AbstractC1574.dexToClass(C0677.f2560);
-                    MethodResolver c1973M3496 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M47312.resolve())).m3023()).m3492();
-                    c1973M3496.f6370 = "getItem";
-                    MsgInfoBean msgInfoBean3 = new MsgInfoBean(((C1982) AbstractC0744.firstInList(c1973M3496.m3799())).m3831(Integer.valueOf(iIntValue)));
+                    MethodResolver c1973M3496 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M47312.resolve())).m3023()).m3492();
+                    c1973M3496.name = "getItem";
+                    MsgInfoBean msgInfoBean3 = new MsgInfoBean(((C1982) AbstractC0744.firstInList(c1973M3496.resolve())).m3831(Integer.valueOf(iIntValue)));
                     for (?? r9 : linkedHashSet) {
                         try {
                             r9.mo1408(view, tag2, objM3027, msgInfoBean3);
@@ -797,7 +797,7 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                     Integer num3 = (Integer) (c25813 instanceof C2585 ? null : c25813);
                     int iIntValue2 = num3 != null ? num3.intValue() : 0;
                     int i20 = 0;
-                    C1299 c1299M3497 = AbstractC0968.startFieldResolution(obj10).m3490();
+                    C1299 c1299M3497 = AbstractC0968.startMethodResolution_(obj10).m3490();
                     c1299M3497.fieldType = AbstractC2519.classToKClass(View.class);
                     View view2 = (View) ((C1315) AbstractC2784.m4741(c1299M3497)).m3024();
                     Object tag3 = view2.getTag();
@@ -805,9 +805,9 @@ public final /* synthetic */ class C0605 implements InterfaceC1425 {
                     C0676.f2559.getClass();
                     c1299M47313.fieldType = AbstractC1574.dexToClass(C0675.f2558);
                     Object objM3028 = ((C1315) AbstractC0744.firstInList(c1299M47313.resolve())).m3023();
-                    MethodResolver c1973M3497 = AbstractC0968.startFieldResolution(c1568.m3268()).m3492();
-                    c1973M3497.f6370 = "getItem";
-                    MsgInfoBean msgInfoBean4 = new MsgInfoBean(((C1982) AbstractC0744.firstInList(c1973M3497.m3799())).m3831(Integer.valueOf(iIntValue2)));
+                    MethodResolver c1973M3497 = AbstractC0968.startMethodResolution_(c1568.m3268()).m3492();
+                    c1973M3497.name = "getItem";
+                    MsgInfoBean msgInfoBean4 = new MsgInfoBean(((C1982) AbstractC0744.firstInList(c1973M3497.resolve())).m3831(Integer.valueOf(iIntValue2)));
                     for (?? r10 : linkedHashSet) {
                         try {
                             r10.mo1408(view2, tag3, objM3028, msgInfoBean4);

@@ -88,12 +88,12 @@ public final class C2755 extends AbstractC2867 implements InterfaceC1582, Interf
         int i = 0;
         String[] strArr = AbstractC1574.f5469;
         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI")).m3492();
-        c1973M3492.f6370 = "onCreate";
-        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
+        c1973M3492.name = "onCreate";
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.resolve());
         C2755 c2755 = f8841;
         C3689 c3689M4174 = c2755.m4174(c1982, 1);
         c2755.m3262(c3689M4174, new C2734(17));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
     }
 
     @Override // p000.AbstractC2867

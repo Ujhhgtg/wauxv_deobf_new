@@ -121,19 +121,19 @@ public final /* synthetic */ class C0055 implements InterfaceC1425 {
                 Object obj3 = c2587 instanceof C2585 ? null : c2587;
                 if (obj3 != null) {
                     int i4 = 0;
-                    C1744 c1744M2484 = AbstractC0968.startFieldResolution(obj3);
+                    C1744 c1744M2484 = AbstractC0968.startMethodResolution_(obj3);
                     C1846 c1846 = C1846.f6140;
                     MethodResolver c1973M3492 = c1744M2484.m3492();
                     String[] strArr2 = AbstractC1574.f5469;
-                    c1973M3492.f6370 = "getLatitude";
-                    C3689 c3689M4174 = c1846.m4174((C1982) AbstractC0744.firstInList(c1973M3492.m3799()), 1);
-                    c1846.m3263(c3689M4174, new C1608(29));
-                    c3689M4174.m5352();
+                    c1973M3492.name = "getLatitude";
+                    C3689 c3689M4174 = c1846.m4174((C1982) AbstractC0744.firstInList(c1973M3492.resolve()), 1);
+                    c1846.hookBefore(c3689M4174, new C1608(29));
+                    c3689M4174.applyHook();
                     MethodResolver c1973M3493 = c1744M2484.m3492();
-                    c1973M3493.f6370 = "getLongitude";
-                    C3689 c3689M4175 = c1846.m4174((C1982) AbstractC0744.firstInList(c1973M3493.m3799()), 1);
-                    c1846.m3263(c3689M4175, new C1837(5));
-                    c3689M4175.m5352();
+                    c1973M3493.name = "getLongitude";
+                    C3689 c3689M4175 = c1846.m4174((C1982) AbstractC0744.firstInList(c1973M3493.resolve()), 1);
+                    c1846.hookBefore(c3689M4175, new C1837(5));
+                    c3689M4175.applyHook();
                 }
                 C3689.m5349(c3689);
                 return unit;

@@ -96,7 +96,7 @@ public final /* synthetic */ class C2083 implements InterfaceC1414 {
             case 12 /* 12 */:
                 int i2 = 0;
                 C0796 c0796M3486 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.storage.emotion.SmileyPanelConfigInfo")).m3486();
-                c0796M3486.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE), AbstractC2519.classToKClass(String.class)}, 2));
+                c0796M3486.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE), AbstractC2519.classToKClass(String.class)}, 2));
                 return (C0798) AbstractC0744.firstInList(c0796M3486.m2344());
             case 13:
                 C2721.f8780.m2548(C2722.f8782);

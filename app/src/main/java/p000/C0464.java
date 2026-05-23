@@ -26,9 +26,9 @@ public final /* synthetic */ class C0464 implements InterfaceC1425 {
             case 0:
                 num.getClass();
                 int i2 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(r1).m3492();
-                c1973M3492.f6370 = "onTabClick";
-                ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831(num);
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(r1).m3492();
+                c1973M3492.name = "onTabClick";
+                ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).m3831(num);
                 return Unit.INSTANCE;
             default:
                 int iIntValue = num.intValue();

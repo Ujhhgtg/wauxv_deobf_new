@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Locale;
 import me.hd.wauxv.R;
 import me.hd.wauxv.data.bean.MsgInfoBean;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲈᤝᲁᛸᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -48,7 +47,7 @@ public final class C2073 extends AbstractC2867 implements InterfaceC1577 {
         AbstractC1574.m3300(-516542831786676L);
         String[] strArr = AbstractC1574.f5469;
         f6869 = new C2073("MsgInfoHook");
-        f6870 = AbstractC0745.m2212("${time}", "${relativeTime}", "${type}", "${msgId}", "${msgSvrId}", "${atUserList}");
+        f6870 = AbstractC0745.listOf("${time}", "${relativeTime}", "${type}", "${msgId}", "${msgSvrId}", "${atUserList}");
         f6871 = "聊天";
         f6872 = "消息底部详情";
         f6873 = "为聊天列表项目的底部添加自定义文本";

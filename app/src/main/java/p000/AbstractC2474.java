@@ -9,7 +9,7 @@ public abstract class AbstractC2474 {
     public static final AbstractC0066 f7908;
 
     static {
-        Integer num = AbstractC1685.f5740;
+        Integer num = AbstractC1685.ANDROID_SDK;
         f7908 = (num == null || num.intValue() >= 34) ? new C2353() : new C1266();
     }
 

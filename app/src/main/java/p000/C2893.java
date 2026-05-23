@@ -17,9 +17,9 @@ public final class C2893 extends AbstractC1823 {
         int i = 0;
         String[] strArr = AbstractC1574.f5469;
         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.pluginsdk.ui.chat.ChatFooter")).m3492();
-        c1973M3492.f6370 = "setUserName";
-        C3689 c3689M4174 = m4174((C1982) AbstractC0744.firstInList(c1973M3492.m3799()), 1);
+        c1973M3492.name = "setUserName";
+        C3689 c3689M4174 = m4174((C1982) AbstractC0744.firstInList(c1973M3492.resolve()), 1);
         c3689M4174.m5351(new C2798(27));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
     }
 }

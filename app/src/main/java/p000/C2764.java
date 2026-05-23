@@ -137,7 +137,7 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                     Object objInvoke = AbstractC1574.dexToMethod(C2758.f8847).invoke(null, str2, strConcat);
                     Boolean bool = (Boolean) objInvoke;
                     
-                    c1564.m3272(bool);
+                    c1564.setReturn(bool);
                 }
                 return Unit.INSTANCE;
             case 6:
@@ -342,7 +342,7 @@ public final /* synthetic */ class C2764 implements InterfaceC1425 {
                 c1338.f4794 = c19812;
                 return Unit.INSTANCE;
             default:
-                ((C1563) obj).m3272(Long.valueOf(Math.min(C2796.f8922.m2539(), 98800L)));
+                ((C1563) obj).setReturn(Long.valueOf(Math.min(C2796.f8922.m2539(), 98800L)));
                 return Unit.INSTANCE;
         }
         AbstractC2784.m4755(c2007, c3561, 3);

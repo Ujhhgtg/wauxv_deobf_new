@@ -205,7 +205,7 @@ public abstract class AbstractC2665 {
             C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.classToKClass(XposedBridge.class));
             c1744M2482.m3493(true);
             C1299 c1299M3490 = c1744M2482.m3490();
-            c1299M3490.f6370 = "TAG";
+            c1299M3490.name = "TAG";
             AbstractC0750.m2218(c1299M3490.f6372, (EnumC1999[]) Arrays.copyOf(new EnumC1999[]{EnumC1999.STATIC}, 1));
             C1315 c1315 = (C1315) AbstractC0744.m2192(c1299M3490.resolve());
             if (c1315 != null && (str = (String) c1315.m3024()) != null) {

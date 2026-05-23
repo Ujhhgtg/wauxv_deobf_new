@@ -106,40 +106,40 @@ public final class C2732 extends AbstractC2867 implements InterfaceC1600, Interf
             Object obj2 = contentValues.get("attrBuf");
             Object objM2131 = AbstractC0710.m2131(clsM3988, new Object[0]);
             int i = 0;
-            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objM2131).m3492();
-            c1973M3492.f6370 = "parseFrom";
-            c1973M3492.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(byte[].class)}, 1));
-            c1973M3492.m3732();
-            ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831((byte[]) obj2);
-            C1744 c1744M2484 = AbstractC0968.startFieldResolution(objM2131);
+            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(objM2131).m3492();
+            c1973M3492.name = "parseFrom";
+            c1973M3492.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(byte[].class)}, 1));
+            c1973M3492.superclass();
+            ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).m3831((byte[]) obj2);
+            C1744 c1744M2484 = AbstractC0968.startMethodResolution_(objM2131);
             LinkedList linkedList = new LinkedList();
             for (String str2 : setM4728) {
                 
                 Object objM2132 = AbstractC0710.m2131(AbstractC1574.dexToClass(C2773.f8874), new Object[0]);
                 int i2 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM2132).m3490();
-                c1299M3490.f6370 = "d";
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(objM2132).m3490();
+                c1299M3490.name = "d";
                 ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).set(str2);
                 linkedList.push(objM2132);
             }
             int size = linkedList.size();
             int i3 = !linkedList.isEmpty() ? 1 : 0;
             C1299 c1299M3491 = c1744M2484.m3490();
-            c1299M3491.f6370 = "LikeUserList";
+            c1299M3491.name = "LikeUserList";
             ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).set(linkedList);
             C1299 c1299M3492 = c1744M2484.m3490();
-            c1299M3492.f6370 = "LikeUserListCount";
+            c1299M3492.name = "LikeUserListCount";
             ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).set(Integer.valueOf(size));
             C1299 c1299M3493 = c1744M2484.m3490();
-            c1299M3493.f6370 = "LikeCount";
+            c1299M3493.name = "LikeCount";
             ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).set(Integer.valueOf(size));
             C1299 c1299M3494 = c1744M2484.m3490();
-            c1299M3494.f6370 = "LikeFlag";
+            c1299M3494.name = "LikeFlag";
             ((C1315) AbstractC0744.firstInList(c1299M3494.resolve())).set(Integer.valueOf(i3));
             int i4 = 0;
-            MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(objM2131).m3492();
+            MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(objM2131).m3492();
             c1973M3493.returnType = AbstractC2519.classToKClass(byte[].class);
-            c1973M3493.f6370 = "toByteArray";
+            c1973M3493.name = "toByteArray";
             contentValues.put("attrBuf", (byte[]) ((C1982) AbstractC2784.m4742(c1973M3493)).invoke(new Object[0]));
         }
     }

@@ -74,12 +74,12 @@ public final class C1846 extends AbstractC2867 implements InterfaceC1582 {
         int i = 0;
         InterfaceC1742 interfaceC1742 = f6141[0];
         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(f6143.m1323()).m3492();
-        c1973M3492.f6370 = "onActivityResult";
+        c1973M3492.name = "onActivityResult";
         Class cls = Integer.TYPE;
         C3689 c3689M4174 = m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(Intent.class)}, 3, c1973M3492), 1);
         f6140.m3262(c3689M4174, new C1837(7));
-        c3689M4174.m5352();
-        Iterator it = AbstractC0745.m2212(C1839.f6132, C1840.f6133, C1838.f6131).iterator();
+        c3689M4174.applyHook();
+        Iterator it = AbstractC0745.listOf(C1839.f6132, C1840.f6133, C1838.f6131).iterator();
         while (it.hasNext()) {
             AbstractC1574.m3316((AbstractC1021) it.next(), new C1837(8));
         }

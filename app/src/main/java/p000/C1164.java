@@ -18,10 +18,10 @@ public final class C1164 extends AbstractC1823 implements InterfaceC1582 {
         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC1574.dexToClass(c1176)).m3492();
         c1973M3492.m3800(EnumC1999.STATIC);
         c1973M3492.returnType = AbstractC1574.dexToClass(c1176);
-        MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(((C1982) AbstractC1194.m2778(c1973M3492)).m3831(new Object[0])).m3492();
+        MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(((C1982) AbstractC1194.m2778(c1973M3492)).m3831(new Object[0])).m3492();
         
         c1973M3493.returnType = AbstractC1574.dexToClass(C1163.f4290);
-        MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(((C1982) AbstractC1194.m2778(c1973M3493)).m3831(new Object[0])).m3492();
+        MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(((C1982) AbstractC1194.m2778(c1973M3493)).m3831(new Object[0])).m3492();
         
         c1973M3494.returnType = AbstractC1574.dexToMethod(C1161.f4288).getDeclaringClass();
         return ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class)}, 1, c1973M3494)).m3831(str);

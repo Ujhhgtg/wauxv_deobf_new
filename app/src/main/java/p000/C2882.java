@@ -12,7 +12,6 @@ import android.text.TextUtils;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᲈᲁᛸᤝᲇᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -135,7 +134,7 @@ public final class C2882 extends AbstractC2867 implements InterfaceC1602 {
             Context contextM3276 = C1565.m3276();
             intent2.setData(Uri.parse(stringExtra));
             contextM3276.startActivity(intent2, bundle2);
-            c1563.m3272(null);
+            c1563.setReturn(null);
         }
     }
 

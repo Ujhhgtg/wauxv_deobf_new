@@ -2,7 +2,6 @@ package p000;
 
 import android.content.ContentValues;
 import java.nio.charset.Charset;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤞᲀᲁᲈᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -93,7 +92,7 @@ public final class C0202 extends AbstractC2867 implements InterfaceC1601 {
             int i = -1;
             byte[] bArrM1388 = null;
             if (str.equals("SnsInfo")) {
-                if (AbstractC0745.m2212(Integer.valueOf(EnumC3676.f11519.f11526), Integer.valueOf(EnumC3676.f11520.f11526), Integer.valueOf(EnumC3676.f11521.f11526), Integer.valueOf(EnumC3676.f11522.f11526), Integer.valueOf(EnumC3676.f11524.f11526)).contains(contentValues.get("type")) && AbstractC2207.m4087(contentValues.get("sourceType"), 0)) {
+                if (AbstractC0745.listOf(Integer.valueOf(EnumC3676.f11519.f11526), Integer.valueOf(EnumC3676.f11520.f11526), Integer.valueOf(EnumC3676.f11521.f11526), Integer.valueOf(EnumC3676.f11522.f11526), Integer.valueOf(EnumC3676.f11524.f11526)).contains(contentValues.get("type")) && AbstractC2207.m4087(contentValues.get("sourceType"), 0)) {
                     byte[] bArr = (byte[]) contentValues.get("content");
                     contentValues.remove("sourceType");
                     String str2 = "content";

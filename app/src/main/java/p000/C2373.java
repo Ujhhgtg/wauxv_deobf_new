@@ -47,11 +47,10 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
     @Override // p000.InterfaceC0500
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public Object mo1745(Object[] objArr) throws IllegalAccessException, JSONException, InvocationTargetException {
-        int i = this.f7629;
         int i2 = 4;
         List list = null;
         Unit unit = Unit.INSTANCE;
-        switch (i) {
+        switch (this.f7629) {
             case 0:
                 Object obj = objArr[0];
                 String[] strArr = AbstractC1574.f5469;
@@ -94,7 +93,7 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
                 jSONObject2.put("msg", jSONObject3);
                 HashSet hashSet = new HashSet();
                 HashSet hashSet2 = new HashSet();
-                C1732 c1732 = new C1732();
+                JsonToXmlConverter c1732 = new JsonToXmlConverter();
                 c1732.f5829 = jSONObject2;
                 c1732.f5830 = hashSet;
                 c1732.f5831 = hashSet2;
@@ -125,7 +124,7 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
                 jSONObject5.put("msg", jSONObject6);
                 HashSet hashSet3 = new HashSet();
                 HashSet hashSet4 = new HashSet();
-                C1732 c1733 = new C1732();
+                JsonToXmlConverter c1733 = new JsonToXmlConverter();
                 c1733.f5829 = jSONObject5;
                 c1733.f5830 = hashSet3;
                 c1733.f5831 = hashSet4;
@@ -151,7 +150,7 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
                 HashSet hashSet5 = new HashSet();
                 HashSet hashSet6 = new HashSet();
                 hashSet5.add("/msg/appmsg/appid");
-                C1732 c1734 = new C1732();
+                JsonToXmlConverter c1734 = new JsonToXmlConverter();
                 c1734.f5829 = jSONObject10;
                 c1734.f5830 = hashSet5;
                 c1734.f5831 = hashSet6;
@@ -206,7 +205,7 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
                 jSONObject14.put("msg", jSONObject15);
                 HashSet hashSet7 = new HashSet();
                 HashSet hashSet8 = new HashSet();
-                C1732 c1735 = new C1732();
+                JsonToXmlConverter c1735 = new JsonToXmlConverter();
                 c1735.f5829 = jSONObject14;
                 c1735.f5830 = hashSet7;
                 c1735.f5831 = hashSet8;
@@ -355,7 +354,6 @@ public final /* synthetic */ class C2373 implements InterfaceC0500, InterfaceC29
                 return unit;
             case 18 /* 18 */:
                 Object obj44 = objArr[0];
-                String[] strArr17 = AbstractC1574.f5469;
                 String str30 = (String) obj44;
                 Object obj45 = objArr[1];
                 String str31 = (String) obj45;

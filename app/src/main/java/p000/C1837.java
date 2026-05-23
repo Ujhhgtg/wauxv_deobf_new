@@ -112,7 +112,7 @@ public final /* synthetic */ class C1837 implements InterfaceC1425 {
                 c1336.f4794 = c1981M47311;
                 return unit;
             case 5:
-                ((C1563) obj).m3272(Double.valueOf(C1843.f6136.m2537()));
+                ((C1563) obj).setReturn(Double.valueOf(C1843.f6136.m2537()));
                 return unit;
             case 6:
                 View view = (View) obj;
@@ -207,9 +207,9 @@ public final /* synthetic */ class C1837 implements InterfaceC1425 {
                     String[] strArr7 = AbstractC1574.f5469;
                     Parcelable parcelableExtra = ((Intent) c2588).getParcelableExtra("KLocationIntent");
                     int i10 = 0;
-                    MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(parcelableExtra).m3492();
+                    MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(parcelableExtra).m3492();
                     c1973M3492.returnType = AbstractC2519.classToKClass(String.class);
-                    String str = (String) ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0]);
+                    String str = (String) ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).invoke(new Object[0]);
                     C1904 c1904M4123 = AbstractC2209.m4123(Pattern.compile("lat ([-+]?[0-9]*\\.?[0-9]+);lng ([-+]?[0-9]*\\.?[0-9]+);").matcher(str), 0, str);
                     if (c1904M4123 == null || ((AbstractC0063) c1904M4123.m3699()).mo943() != 3) {
                         C2022 c2026 = C1846.f6142;
@@ -248,15 +248,15 @@ public final /* synthetic */ class C1837 implements InterfaceC1425 {
                 return unit;
             case 8:
                 C1846 c1846 = C1846.f6140;
-                C3689 c3689M4172 = C2309.m4172(c1846, Collections.singletonList((Method) obj));
-                c1846.m3263(c3689M4172, new C0055(5, c3689M4172));
-                c3689M4172.m5352();
+                C3689 c3689M4172 = C2309.createHook(c1846, Collections.singletonList((Method) obj));
+                c1846.hookBefore(c3689M4172, new C0055(5, c3689M4172));
+                c3689M4172.applyHook();
                 return unit;
             case 9:
                 C1846 c1847 = C1846.f6140;
-                C3689 c3689M4173 = C2309.m4172(c1847, Collections.singletonList((Method) obj));
-                c1847.m3263(c3689M4173, new C1837(2));
-                c3689M4173.m5352();
+                C3689 c3689M4173 = C2309.createHook(c1847, Collections.singletonList((Method) obj));
+                c1847.hookBefore(c3689M4173, new C1837(2));
+                c3689M4173.applyHook();
                 return unit;
             case 10:
                 ((C1020) obj).thisMethodMatcher = new C1837(1);

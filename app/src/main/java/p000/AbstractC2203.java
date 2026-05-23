@@ -260,16 +260,16 @@ public abstract class AbstractC2203 {
             C2873 c2873 = C0152.f1159;
             ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
             MethodResolver c1973M3492 = c1744M2483.m3492();
-            c1973M3492.f6370 = "currentActivityThread";
-            C1299 c1299M3490 = AbstractC0968.startFieldResolution(((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831(new Object[0])).m3490();
-            c1299M3490.f6370 = "mActivities";
+            c1973M3492.name = "currentActivityThread";
+            C1299 c1299M3490 = AbstractC0968.startMethodResolution_(((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).m3831(new Object[0])).m3490();
+            c1299M3490.name = "mActivities";
             for (Object obj : ((Map) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024()).values()) {
                 int i2 = 0;
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
-                c1299M3491.f6370 = "paused";
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj).m3490();
+                c1299M3491.name = "paused";
                 if (!((Boolean) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).booleanValue()) {
-                    C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
-                    c1299M3492.f6370 = "activity";
+                    C1299 c1299M3492 = AbstractC0968.startMethodResolution_(obj).m3490();
+                    c1299M3492.name = "activity";
                     return (Activity) ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3024();
                 }
             }

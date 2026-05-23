@@ -12,7 +12,7 @@ public abstract class AbstractC1928 {
     public C1927 f6369;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
-    public String f6370;
+    public String name;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
     public C2798 f6371;
@@ -31,11 +31,11 @@ public abstract class AbstractC1928 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
     public Map mo2886() {
-        return AbstractC1898.m3694(new C2315("name", this.f6370), new C2315("nameCondition", this.f6371), new C2315("modifiers", this.f6372), new C2315("modifiersNot", this.f6373), new C2315("modifiersCondition", null), new C2315("isSynthetic", null), new C2315("isSyntheticNot", null), new C2315("annotations", this.f6374), new C2315("annotationsNot", this.f6375), new C2315("genericString", null));
+        return AbstractC1898.m3694(new C2315("name", this.name), new C2315("nameCondition", this.f6371), new C2315("modifiers", this.f6372), new C2315("modifiersNot", this.f6373), new C2315("modifiersCondition", null), new C2315("isSynthetic", null), new C2315("isSyntheticNot", null), new C2315("annotations", this.f6374), new C2315("annotationsNot", this.f6375), new C2315("genericString", null));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
-    public final void m3732() {
+    public final void superclass() {
         C1927 c1927 = this.f6369;
         if (c1927 != null) {
             c1927.f6367 = true;

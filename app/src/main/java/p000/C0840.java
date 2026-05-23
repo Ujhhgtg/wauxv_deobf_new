@@ -33,8 +33,8 @@ public final class C0840 extends AbstractC1823 implements InterfaceC1582 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        C3689 c3689M4172 = C2309.m4172(f3240, Collections.singletonList(AbstractC1574.dexToMethod(C0839.f3239)));
+        C3689 c3689M4172 = C2309.createHook(f3240, Collections.singletonList(AbstractC1574.dexToMethod(C0839.f3239)));
         c3689M4172.m5351(new C0807(16));
-        c3689M4172.m5352();
+        c3689M4172.applyHook();
     }
 }

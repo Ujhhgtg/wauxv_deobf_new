@@ -80,7 +80,7 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                     Button button = (Button) ((C1315) it.next()).m3024();
                     if (button != null && button.getVisibility() == 0) {
                         String[] strArr2 = AbstractC1574.f5469;
-                        List listM2212 = AbstractC0745.m2212("查看原图", "Full Image", "查看原视频", "Original quality");
+                        List listM2212 = AbstractC0745.listOf("查看原图", "Full Image", "查看原视频", "Original quality");
                         if (!listM2212.isEmpty()) {
                             Iterator it2 = listM2212.iterator();
                             while (it2.hasNext()) {
@@ -387,15 +387,15 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                 return unit;
             case 20:
                 C0603 c0603 = C0603.f2421;
-                C3689 c3689M4172 = C2309.m4172(c0603, Collections.singletonList((Method) obj));
-                c0603.m3263(c3689M4172, new C0316(24));
-                c3689M4172.m5352();
+                C3689 c3689M4172 = C2309.createHook(c0603, Collections.singletonList((Method) obj));
+                c0603.hookBefore(c3689M4172, new C0316(24));
+                c3689M4172.applyHook();
                 return unit;
             case 21 /* 21 */:
                 C0603 c0604 = C0603.f2421;
-                C3689 c3689M4173 = C2309.m4172(c0604, Collections.singletonList((Method) obj));
-                c0604.m3263(c3689M4173, new C0316(25));
-                c3689M4173.m5352();
+                C3689 c3689M4173 = C2309.createHook(c0604, Collections.singletonList((Method) obj));
+                c0604.hookBefore(c3689M4173, new C0316(25));
+                c3689M4173.applyHook();
                 return unit;
             case 22 /* 22 */:
                 ((C1333) obj).m3052(new C0316(17));
@@ -429,32 +429,32 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                 View view = (View) c2585;
                 Object tag = view.getTag();
                 int i12 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(tag).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(tag).m3490();
                 String[] strArr12 = AbstractC1574.f5469;
-                c1299M3490.f6370 = "a";
+                c1299M3490.name = "a";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3490)).m3023();
                 C1299 c1299M4739 = AbstractC2784.m4738(c1563);
-                c1299M4739.f6370 = "d";
+                c1299M4739.name = "d";
                 Object objM3024 = ((C1315) AbstractC0744.firstInList(c1299M4739.resolve())).m3023();
                 if (AbstractC3471.m5079(WeChatVersions.f11527) || AbstractC3471.m5080(WeChatVersionsPlay.f11495)) {
-                    C1299 c1299M3491 = AbstractC0968.startFieldResolution(objM3024).m3490();
-                    c1299M3491.f6370 = "w";
+                    C1299 c1299M3491 = AbstractC0968.startMethodResolution_(objM3024).m3490();
+                    c1299M3491.name = "w";
                     zBooleanValue = ((Boolean) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).booleanValue();
                 } else {
-                    C1299 c1299M3492 = AbstractC0968.startFieldResolution(objM3024).m3490();
-                    c1299M3492.f6370 = "d";
+                    C1299 c1299M3492 = AbstractC0968.startMethodResolution_(objM3024).m3490();
+                    c1299M3492.name = "d";
                     if (((Number) ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3024()).intValue() != 1) {
                         zBooleanValue = false;
                     }
                 }
                 if (zBooleanValue) {
-                    C1299 c1299M3493 = AbstractC0968.startFieldResolution(objM3023).m3490();
-                    c1299M3493.f6370 = "field_type";
+                    C1299 c1299M3493 = AbstractC0968.startMethodResolution_(objM3023).m3490();
+                    c1299M3493.name = "field_type";
                     if (((Number) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024()).intValue() == 3) {
-                        C1299 c1299M3494 = AbstractC0968.startFieldResolution(objM3023).m3490();
-                        c1299M3494.f6370 = "field_favProto";
-                        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(((C1315) AbstractC2784.m4741(c1299M3494)).m3023()).m3492();
-                        c1973M3492.f6370 = "getData";
+                        C1299 c1299M3494 = AbstractC0968.startMethodResolution_(objM3023).m3490();
+                        c1299M3494.name = "field_favProto";
+                        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(((C1315) AbstractC2784.m4741(c1299M3494)).m3023()).m3492();
+                        c1973M3492.name = "getData";
                         byte[] bArr = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                         C2427 c2427 = C2427.f7718;
                         
@@ -499,7 +499,7 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                         } else {
                             AbstractC2834.m4823(null, 3, "获取语音路径失败, 请尝试播放后重发");
                         }
-                        c1563.m3272(null);
+                        c1563.setReturn(null);
                     }
                 }
                 return unit;
@@ -520,17 +520,17 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                 View view2 = (View) c2586;
                 Object tag2 = view2.getTag();
                 int i13 = 0;
-                C1299 c1299M3495 = AbstractC0968.startFieldResolution(tag2).m3490();
+                C1299 c1299M3495 = AbstractC0968.startMethodResolution_(tag2).m3490();
                 String[] strArr13 = AbstractC1574.f5469;
-                c1299M3495.f6370 = "a";
+                c1299M3495.name = "a";
                 Object objM3025 = ((C1315) AbstractC2784.m4741(c1299M3495)).m3023();
-                C1299 c1299M3496 = AbstractC0968.startFieldResolution(objM3025).m3490();
-                c1299M3496.f6370 = "field_type";
+                C1299 c1299M3496 = AbstractC0968.startMethodResolution_(objM3025).m3490();
+                c1299M3496.name = "field_type";
                 if (((Number) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024()).intValue() == 3) {
-                    C1299 c1299M3497 = AbstractC0968.startFieldResolution(objM3025).m3490();
-                    c1299M3497.f6370 = "field_favProto";
-                    MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(((C1315) AbstractC2784.m4741(c1299M3497)).m3023()).m3492();
-                    c1973M3493.f6370 = "getData";
+                    C1299 c1299M3497 = AbstractC0968.startMethodResolution_(objM3025).m3490();
+                    c1299M3497.name = "field_favProto";
+                    MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(((C1315) AbstractC2784.m4741(c1299M3497)).m3023()).m3492();
+                    c1973M3493.name = "getData";
                     byte[] bArr2 = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3493)).invoke(new Object[0]);
                     C2427 c2428 = C2427.f7718;
                     
@@ -577,7 +577,7 @@ public final /* synthetic */ class C0316 implements InterfaceC1425 {
                     } else {
                         AbstractC2834.m4823(null, 3, "获取语音路径失败, 请尝试播放后重发");
                     }
-                    c1564.m3272(null);
+                    c1564.setReturn(null);
                 }
                 return unit;
             case 27:

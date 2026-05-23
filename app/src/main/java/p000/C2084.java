@@ -2,7 +2,6 @@ package p000;
 
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲇᲈᲁᤝᲀᛸ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -36,7 +35,7 @@ public final class C2084 extends AbstractC2867 implements InterfaceC1588 {
             return C1189.f4329;
         }
         String[] strArr = AbstractC1574.f5469;
-        return AbstractC0745.m2212(new C1551(R.id.MenuItem_Home_MsgListHide, "列表隐藏", R.drawable.ic_menu_hide_24dp, new C2083(0)), new C1551(R.id.MenuItem_Home_MsgListShow, "列表显示", R.drawable.ic_menu_show_24dp, new C2083(1)));
+        return AbstractC0745.listOf(new C1551(R.id.MenuItem_Home_MsgListHide, "列表隐藏", R.drawable.ic_menu_hide_24dp, new C2083(0)), new C1551(R.id.MenuItem_Home_MsgListShow, "列表显示", R.drawable.ic_menu_show_24dp, new C2083(1)));
     }
 
     @Override // p000.AbstractC2867

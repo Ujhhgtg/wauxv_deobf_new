@@ -1,7 +1,6 @@
 package p000;
 
 import java.util.ArrayList;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᛸᲁᲈᲇᤝᲀ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -36,7 +35,7 @@ public abstract class AbstractC1557 extends AbstractC3680 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲇᲈᲁ, reason: contains not printable characters */
-    public final void m3263(C3689 c3689, InterfaceC1425 interfaceC1425) {
+    public final void hookBefore(C3689 c3689, InterfaceC1425 interfaceC1425) {
         c3689.m5351(new C1556(interfaceC1425, this, 1));
     }
 

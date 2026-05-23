@@ -117,7 +117,7 @@ public final /* synthetic */ class C1354 implements InterfaceC1414 {
                 C1744 c1744M2482 = AbstractC0968.m2482(AbstractC2519.classToKClass(Intent.class));
                 c1744M2482.m3493(true);
                 C1299 c1299M3490 = c1744M2482.m3490();
-                c1299M3490.f6370 = "mExtras";
+                c1299M3490.name = "mExtras";
                 return (C1315) AbstractC0744.m2192(c1299M3490.resolve());
             case 12 /* 12 */:
                 C1536.f5377.m2547(C1537.f5379);

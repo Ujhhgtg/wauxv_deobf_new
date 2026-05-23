@@ -15,7 +15,7 @@ public final class C2824 extends AbstractC1823 implements InterfaceC1582 {
         int i = 0;
         
         
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2663.m4656(AbstractC1574.dexToClass(C2823.f9069))).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C2663.m4656(AbstractC1574.dexToClass(C2823.f9069))).m3492();
         
         c1973M3492.returnType = AbstractC1574.dexToClass(C0856.f3271);
         return ((C1982) AbstractC1194.m2778(c1973M3492)).m3831(new Object[0]);

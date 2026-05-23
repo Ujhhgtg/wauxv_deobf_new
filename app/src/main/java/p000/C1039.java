@@ -164,8 +164,8 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
                     Object objInvoke2 = AbstractC1574.dexToMethod(C0651.f2503).invoke(objM2066, str3);
                     if (objInvoke2 != null) {
                         int i2 = 0;
-                        C1299 c1299M3490 = AbstractC0968.startFieldResolution(objInvoke2).m3490();
-                        c1299M3490.f6370 = "e";
+                        C1299 c1299M3490 = AbstractC0968.startMethodResolution_(objInvoke2).m3490();
+                        c1299M3490.name = "e";
                         String str4 = (String) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024();
                         return str4 == null ? "" : str4;
                     }
@@ -196,7 +196,7 @@ public final /* synthetic */ class C1039 implements InterfaceC1467, InterfaceC05
                 
                 int i3 = 0;
                 
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C0672.m2065()).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C0672.m2065()).m3492();
                 c1973M3492.returnType = AbstractC2519.classToKClass(List.class);
                 List list = (List) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class)}, 1, c1973M3492)).invoke((String) obj34);
                 return list == null ? C1189.f4329 : list;

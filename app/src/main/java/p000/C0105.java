@@ -54,19 +54,12 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
         Object c2588;
         List listM3699;
         int i = this.f1053;
-        int i2 = 8;
-        int i3 = 14;
-        int i4 = 6;
-        int i5 = 4;
-        final int i6 = 1;
         str = null;
         String str = null;
         C2325 c2325 = null;
-        final int i7 = 0;
         Unit unit = Unit.INSTANCE;
         switch (i) {
             case 0:
-                String[] strArr = AbstractC1574.f5469;
                 View viewM4676 = AbstractC2668.m4676((View) obj, R.layout.module_dialog_account_info_center, null, false);
                 int i8 = R.id.moduleDialogCbAccountInfoCenterAliasShow;
                 MaterialCheckBox materialCheckBox = (MaterialCheckBox) AbstractC3681.m5325(viewM4676, R.id.moduleDialogCbAccountInfoCenterAliasShow);
@@ -233,8 +226,7 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 ImageView imageView = new ImageView(context);
                 int iM5322 = (int) AbstractC3681.m5322(Integer.valueOf(C0111.f1060.m2538()), context);
                 imageView.setLayoutParams(new FrameLayout.LayoutParams(iM5322, iM5322));
-                C1873 c1873 = C1873.f6220;
-                
+
                 String strM2264 = C0774.getSelfWxId();
                 
                 String strM3654 = C1873.m3654(strM2264, true);
@@ -270,7 +262,6 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 } else {
                     abstractC0379M1531 = c2556Mo1526;
                 }
-                C1461 c1461 = c2556Mo1526.f8116;
                 Class cls = c2556Mo1526.f8115;
                 
                 if (Bitmap.class.equals(cls)) {
@@ -298,24 +289,13 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 relativeLayout.addView(relativeLayout2);
                 return unit;
             case 2:
-                int i9 = EnumC3673.f11482.f11492;
-                String[] strArr2 = AbstractC1574.f5469;
-                String str2 = "weixin";
-                Object obj2 = "微信安全提醒";
-                String str3 = "该微信号因使用外挂、模拟器等非官方客户端程序或其他违规技术（请卸载停用违规内容，若继续使用将升级至永久限制），当前无法使用所有社交场景。该限制为临时限制。\n\n你可以点击“详情”查看更多信息，进行安全验证以继续使用该功能。";
-                String str4 = "https://www.bilibili.com/video/BV1UT42167xb/";
                 JSONObject jSONObject = new JSONObject();
-                String str5 = "msg";
                 JSONObject jSONObject2 = new JSONObject();
-                String str6 = "appmsg";
                 JSONObject jSONObject3 = new JSONObject();
                 jSONObject3.put("type", 5);
                 jSONObject3.put("title", "微信安全提醒");
-                String str7 = "mmreader";
                 JSONObject jSONObject4 = new JSONObject();
-                String str8 = "category";
                 JSONObject jSONObject5 = new JSONObject();
-                String str9 = "item";
                 JSONObject jSONObject6 = new JSONObject();
                 jSONObject6.put("title", "微信安全提醒");
                 jSONObject6.put("digest", "该微信号因使用外挂、模拟器等非官方客户端程序或其他违规技术（请卸载停用违规内容，若继续使用将升级至永久限制），当前无法使用所有社交场景。该限制为临时限制。\n\n你可以点击“详情”查看更多信息，进行安全验证以继续使用该功能。");
@@ -327,23 +307,17 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 jSONObject.put("msg", jSONObject2);
                 HashSet hashSet = new HashSet();
                 HashSet hashSet2 = new HashSet();
-                C1732 c1732 = new C1732();
+                JsonToXmlConverter c1732 = new JsonToXmlConverter();
                 c1732.f5829 = jSONObject;
                 c1732.f5830 = hashSet;
                 c1732.f5831 = hashSet2;
-                AbstractC2201.m3976(i9, "weixin", c1732.toString(), System.currentTimeMillis());
+                AbstractC2201.m3976(318767153, "weixin", c1732.toString(), System.currentTimeMillis());
                 Activity activityM4033 = AbstractC2203.m4033();
-                C1875 c1875 = C1875.f6222;
-                String str10 = "";
-                List listM2212 = AbstractC0745.m2212("该微信号因使用了微信外挂、非官方客户端或模拟器，被限制登录，请尽快卸载对应的非法软件。若后续仍继续使用将永久限制登录。如需继续使用，请轻触 “确定” 申请解除限制。", "该账号违反了《微信个人账号使用规范》，请轻触 “确定” 了解详情后，继续登录微信。", "你的账号可能有安全风险，为了你的账号安全，暂时无法在新设备登录，你可以在常用手机登录微信，或者轻触「了解详情」查看更多信息。", "账号状态异常，本次登录已失效。请尝试重新登录，并根据弹窗提示操作。");
-                AbstractC0066 abstractC0066 = AbstractC2474.f7908;
-                String str11 = (String) AbstractC0744.m2199(listM2212);
-                String str12 = "确定";
-                String str13 = "取消";
+                List listM2212 = AbstractC0745.listOf("该微信号因使用了微信外挂、非官方客户端或模拟器，被限制登录，请尽快卸载对应的非法软件。若后续仍继续使用将永久限制登录。如需继续使用，请轻触 “确定” 申请解除限制。", "该账号违反了《微信个人账号使用规范》，请轻触 “确定” 了解详情后，继续登录微信。", "你的账号可能有安全风险，为了你的账号安全，暂时无法在新设备登录，你可以在常用手机登录微信，或者轻触「了解详情」查看更多信息。", "账号状态异常，本次登录已失效。请尝试重新登录，并根据弹窗提示操作。");
+                String str11 = (String) AbstractC0744.randomFromList(listM2212);
                 DialogInterfaceOnClickListenerC1131 dialogInterfaceOnClickListenerC1131 = new DialogInterfaceOnClickListenerC1131();
                 DialogInterfaceOnClickListenerC1131 dialogInterfaceOnClickListenerC1132 = new DialogInterfaceOnClickListenerC1131();
-                
-                int i10 = 0;
+
                 ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Context.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(DialogInterface.OnClickListener.class), AbstractC2519.classToKClass(DialogInterface.OnClickListener.class)}, 7, AbstractC0968.startMethodResolution(AbstractC1574.dexToClass(C1874.f6221)).m3492())).m3831(activityM4033, str11, "", "确定", "取消", dialogInterfaceOnClickListenerC1131, dialogInterfaceOnClickListenerC1132);
                 return unit;
             case 3:
@@ -364,17 +338,15 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                     c2586 = new C2585(th2);
                 }
                 Object obj3 = c2586 instanceof C2585 ? null : c2586;
-                int i11 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj3).m3490();
-                String[] strArr3 = AbstractC1574.f5469;
-                c1299M3490.f6370 = "f";
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj3).m3490();
+                c1299M3490.name = "f";
                 Object objM3023 = ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3023();
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(objM3023).m3490();
-                c1299M3491.f6370 = "f";
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(objM3023).m3490();
+                c1299M3491.name = "f";
                 try {
                     if (new JSONObject((String) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).optJSONArray("ad_slot_data") != null) {
-                        C1299 c1299M3492 = AbstractC0968.startFieldResolution(objM3023).m3490();
-                        c1299M3492.f6370 = "f";
+                        C1299 c1299M3492 = AbstractC0968.startMethodResolution_(objM3023).m3490();
+                        c1299M3492.name = "f";
                         ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).set("{}");
                     }
                     break;
@@ -383,13 +355,10 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 return unit;
             case 6:
                 C1981 c1981 = (C1981) obj;
-                String[] strArr4 = AbstractC1574.f5469;
-                String[] strArr5 = {"com.tencent.mm.plugin.brandservice.api.TransferResultInfo"};
-                
+
                 C2328 c2328 = new C2328(4);
                 ArrayList arrayList2 = new ArrayList(C1189.f4329);
                 c2328.f7469 = arrayList2;
-                String str14 = "com.tencent.mm.plugin.brandservice.api.TransferResultInfo";
                 if (true) {
                     c2325 = new C2325(4);
                     C0705 c0705 = new C0705(4);
@@ -414,9 +383,7 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 return unit;
             case 9:
                 C0816 c0817 = (C0816) obj;
-                String[] strArr6 = AbstractC1574.f5469;
                 c0817.f3198 = "搜索群聊";
-                String str15 = "群聊";
                 ArrayList<GroupInfo> arrayListM4032 = AbstractC2203.m4032();
                 ArrayList arrayList3 = new ArrayList(AbstractC0746.m2214(arrayListM4032, 10));
                 for (GroupInfo groupInfo : arrayListM4032) {
@@ -435,7 +402,6 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 }
                 c0817.m2367("群聊", arrayList3);
                 c0817.f3199 = R.drawable.ic_contact_confirm_24dp;
-                String str16 = "屏蔽";
                 C0184 c0184 = new C0184(0);
                 c0817.f3202 = "屏蔽";
                 c0817.f3204 = c0184;
@@ -447,7 +413,7 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 ((C1333) obj).m3052(new C0105(13));
                 return unit;
             case 12 /* 12 */:
-                ((C1563) obj).m3272(null);
+                ((C1563) obj).setReturn(null);
                 return unit;
             case 13:
                 ((C1981) obj).m3827("doRevokeMsg xmlSrvMsgId=%d talker=%s isGet=%s");
@@ -503,7 +469,7 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 ((C1332) obj).m3050(new C0105(14));
                 return unit;
             case 24 /* 24 */:
-                ((C1563) obj).m3272(null);
+                ((C1563) obj).setReturn(null);
                 return unit;
             case 25 /* 25 */:
                 final C2011 c2011M3872 = C2011.m3871(LayoutInflater.from(((View) obj).getContext()));
@@ -533,7 +499,6 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 return unit;
             case 27:
                 C1333 c1333 = (C1333) obj;
-                String[] strArr7 = AbstractC1574.f5469;
                 c1333.m3053("com.tencent.mm.sdk.platformtools");
                 C1981 c1982 = new C1981(4);
                 c1982.m3827("MicroMsg.SDK.XmlParser", "[ %s ]");
@@ -541,8 +506,7 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                 return unit;
             case 28:
                 C1563 c1565 = (C1563) obj;
-                String[] strArr8 = AbstractC1574.f5469;
-                
+
                 try {
                     c2587 = c1565.m3267()[0];
                     if (c2587 == null) {
@@ -575,18 +539,16 @@ public final /* synthetic */ class C0105 implements InterfaceC1425 {
                     }
                     Map map = (Map) objM3269;
                     if (map != null) {
-                        String str20 = ".sysmsg.$type";
                         if (map.containsKey(".sysmsg.$type") && AbstractC2207.m4087(map.get(".sysmsg.$type"), "revokemsg")) {
                             String str21 = (String) map.get(".sysmsg.revokemsg.session");
                             String str22 = (String) map.get(".sysmsg.revokemsg.replacemsg");
                             String str23 = (String) map.get(".sysmsg.revokemsg.newmsgid");
                             if (str22.startsWith("\"") || str22.startsWith("「")) {
                                 map.put(".sysmsg.$type", null);
-                                c1565.m3272(map);
-                                int i12 = 0;
-                                
-                                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2800.m4779()).m3492();
-                                c1973M3492.f6370 = "rawQuery";
+                                c1565.setReturn(map);
+
+                                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C2800.m4779()).m3492();
+                                c1973M3492.name = "rawQuery";
                                 Cursor cursor = (Cursor) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(Object[].class)}, 2, c1973M3492)).invoke("SELECT createTime FROM message WHERE msgSvrId = ?", new Object[]{str23});
                                 if (cursor != null) {
                                     try {

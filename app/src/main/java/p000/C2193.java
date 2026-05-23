@@ -158,7 +158,7 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 for (Object obj3 : C2233.f7231) {
                     try {
                         if (((C0186) obj3).mo3264() && msgInfoBean.isNotifyAll() && C0185.f1242.m2541().contains(msgInfoBean.getTalker())) {
-                            c1563.m3272(null);
+                            c1563.setReturn(null);
                         }
                     } catch (Exception e) {
                         ArrayList arrayList = C3678.f11549;
@@ -187,7 +187,7 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 int i8 = 0;
                 C1299 c1299M4738 = AbstractC2784.m4738(c1564);
                 c1299M4738.fieldType = C0607.f2431.m2028();
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution((FrameLayout) ((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3024()).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_((FrameLayout) ((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3024()).m3490();
                 c1299M3490.f4726 = new C2193(19);
                 Object obj4 = null;
                 boolean z = false;
@@ -206,9 +206,9 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 }
                 FrameLayout frameLayout = (FrameLayout) ((C1315) obj4).m3024();
                 int i9 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(frameLayout).m3492();
-                c1973M3492.f6370 = "getText";
-                String string = ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0]).toString();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(frameLayout).m3492();
+                c1973M3492.name = "getText";
+                String string = ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).invoke(new Object[0]).toString();
                 if (string.length() > 0) {
                     ArrayList<C2355> arrayList2 = AbstractC2371.f7619;
                     ArrayList arrayList3 = new ArrayList(AbstractC0746.m2214(arrayList2, 10));
@@ -221,10 +221,10 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                         while (it.hasNext()) {
                             if (((Boolean) it.next()).booleanValue()) {
                                 int i10 = 0;
-                                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(frameLayout).m3492();
-                                c1973M3493.f6370 = "setText";
-                                ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).m3831("");
-                                c1564.m3272(null);
+                                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(frameLayout).m3492();
+                                c1973M3493.name = "setText";
+                                ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).m3831("");
+                                c1564.setReturn(null);
                             }
                         }
                     }
@@ -239,7 +239,7 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
             case 21 /* 21 */:
                 C1563 c1565 = (C1563) obj;
                 int i11 = 0;
-                MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(c1565.m3268()).m3492();
+                MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(c1565.m3268()).m3492();
                 c1973M3494.returnType = AbstractC2519.classToKClass(Integer.TYPE);
                 int iIntValue = ((Number) ((C1982) AbstractC2784.m4742(c1973M3494)).invoke(new Object[0])).intValue();
                 Object objM3269 = c1565.m3269();
@@ -310,11 +310,11 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 contentValues.put("sync", (Integer) 2);
                 Object objM2131 = AbstractC0710.m2131(AbstractC2201.m3988("com.tencent.mm.storage.emotion.EmojiGroupInfo"), new Object[0]);
                 int i13 = 0;
-                MethodResolver c1973M3495 = AbstractC0968.startFieldResolution(objM2131).m3492();
-                c1973M3495.f6370 = "convertFrom";
-                c1973M3495.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(ContentValues.class), AbstractC2519.classToKClass(Boolean.TYPE)}, 2));
-                c1973M3495.m3732();
-                ((C1982) AbstractC0744.firstInList(c1973M3495.m3799())).m3831(contentValues, Boolean.TRUE);
+                MethodResolver c1973M3495 = AbstractC0968.startMethodResolution_(objM2131).m3492();
+                c1973M3495.name = "convertFrom";
+                c1973M3495.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(ContentValues.class), AbstractC2519.classToKClass(Boolean.TYPE)}, 2));
+                c1973M3495.superclass();
+                ((C1982) AbstractC0744.firstInList(c1973M3495.resolve())).m3831(contentValues, Boolean.TRUE);
                 ((List) obj2).add(0, objM2131);
                 return unit;
             case 27:
@@ -331,14 +331,14 @@ public final /* synthetic */ class C2193 implements InterfaceC1425 {
                 }
                 obj2 = c2586 instanceof C2585 ? null : c2586;
                 int i14 = 0;
-                C1744 c1744M2484 = AbstractC0968.startFieldResolution(obj2);
+                C1744 c1744M2484 = AbstractC0968.startMethodResolution_(obj2);
                 MethodResolver c1973M3496 = c1744M2484.m3492();
                 c1973M3496.m3800(EnumC1999.FINAL);
                 c1973M3496.f6544 = new C2193(24);
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(((C1982) AbstractC2784.m4742(c1973M3496)).m3831(new Object[0])).m3490();
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(((C1982) AbstractC2784.m4742(c1973M3496)).m3831(new Object[0])).m3490();
                 c1299M3491.fieldType = AbstractC2201.m3988("com.tencent.mm.storage.emotion.EmojiGroupInfo");
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3023()).m3490();
-                c1299M3492.f6370 = "field_packName";
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3023()).m3490();
+                c1299M3492.name = "field_packName";
                 String str = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                 MethodResolver c1973M3497 = c1744M2484.m3492();
                 c1973M3497.returnType = AbstractC2519.classToKClass(List.class);

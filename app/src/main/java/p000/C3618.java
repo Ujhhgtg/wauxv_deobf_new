@@ -91,8 +91,8 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                     if (c2585 instanceof C2585) {
                     }
                     int i4 = 0;
-                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj2).m3490();
-                    c1299M3490.f6370 = "l";
+                    C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj2).m3490();
+                    c1299M3490.name = "l";
                     c1299M3490.fieldType = AbstractC2519.classToKClass(cls);
                     ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).set(Integer.valueOf(C3620.f11318.m2538() * 1000));
                 } else if (length == 2 && (c1563.m3267()[0] instanceof String)) {
@@ -107,8 +107,8 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                     }
                     obj2 = c2585 instanceof C2585 ? null : c2585;
                     int i5 = 0;
-                    C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj2).m3490();
-                    c1299M3491.f6370 = "l";
+                    C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj2).m3490();
+                    c1299M3491.name = "l";
                     c1299M3491.fieldType = AbstractC2519.classToKClass(cls);
                     ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).set(Integer.valueOf(C3620.f11318.m2538() * 1000));
                 }
@@ -228,25 +228,25 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                 String[] strArr5 = AbstractC1574.f5469;
                 C1744 c1744M2483 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.boot.BuildConfig"));
                 C1299 c1299M3492 = c1744M2483.m3490();
-                c1299M3492.f6370 = "VERSION_NAME";
+                c1299M3492.name = "VERSION_NAME";
                 String str3 = (String) ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3024();
                 C0091 c0097 = C1565.f5448;
                 InterfaceC1742 interfaceC1748 = interfaceC1742Arr[6];
                 c0097.f1044 = str3;
                 C1299 c1299M3493 = c1744M2483.m3490();
-                c1299M3493.f6370 = "VERSION_CODE";
+                c1299M3493.name = "VERSION_CODE";
                 int iIntValue = ((Number) ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).m3024()).intValue();
                 C0091 c0098 = C1565.f5449;
                 InterfaceC1742 interfaceC1749 = interfaceC1742Arr[7];
                 c0098.f1044 = Integer.valueOf(iIntValue);
                 C1299 c1299M3494 = c1744M2483.m3490();
-                c1299M3494.f6370 = "CLIENT_VERSION_ARM64";
+                c1299M3494.name = "CLIENT_VERSION_ARM64";
                 String str4 = (String) ((C1315) AbstractC0744.firstInList(c1299M3494.resolve())).m3024();
                 C0091 c0099 = C1565.f5450;
                 InterfaceC1742 interfaceC17410 = interfaceC1742Arr[8];
                 c0099.f1044 = str4;
                 C1299 c1299M3495 = c1744M2483.m3490();
-                c1299M3495.f6370 = "BUILD_TAG";
+                c1299M3495.name = "BUILD_TAG";
                 boolean zM4828 = AbstractC2841.m4828((CharSequence) ((C1315) AbstractC0744.firstInList(c1299M3495.resolve())).m3024(), "_GP_", false);
                 C0091 c00910 = C1565.f5451;
                 InterfaceC1742 interfaceC17411 = interfaceC1742Arr[9];
@@ -336,10 +336,10 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                         }
                         C3634 c3634 = new C3634(string, null);
                         MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.ui.conversation.MainUI")).m3492();
-                        c1973M3492.f6370 = "onCreate";
-                        C3689 c3689M4174 = c3635.m4174((C1982) AbstractC0744.firstInList(c1973M3492.m3799()), 1);
+                        c1973M3492.name = "onCreate";
+                        C3689 c3689M4174 = c3635.m4174((C1982) AbstractC0744.firstInList(c1973M3492.resolve()), 1);
                         c3689M4174.m5350(new C1514(c3689M4174, 4, c3634));
-                        c3689M4174.m5352();
+                        c3689M4174.applyHook();
                     }
                 }
                 if (C3635.m5221()) {
@@ -363,11 +363,11 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                     MenuItemOnMenuItemClickListenerC2751 menuItemOnMenuItemClickListenerC2751 = new MenuItemOnMenuItemClickListenerC2751(1, activity);
                     
                     int i7 = 0;
-                    MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(activity).m3492();
-                    c1973M3493.f6370 = "addTextOptionMenu";
-                    c1973M3493.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(MenuItem.OnMenuItemClickListener.class)}, 3));
-                    c1973M3493.m3732();
-                    ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).m3831(Integer.valueOf(R.id.Wauxv_Entry_Item), "WA", menuItemOnMenuItemClickListenerC2751);
+                    MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(activity).m3492();
+                    c1973M3493.name = "addTextOptionMenu";
+                    c1973M3493.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(cls), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(MenuItem.OnMenuItemClickListener.class)}, 3));
+                    c1973M3493.superclass();
+                    ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).m3831(Integer.valueOf(R.id.Wauxv_Entry_Item), "WA", menuItemOnMenuItemClickListenerC2751);
                 }
                 return unit;
             case 17 /* 17 */:
@@ -381,8 +381,8 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                     throw new IllegalStateException("HookParam instance cannot cast to ".concat((clsM2187 != null ? clsM2187 : Context.class).getName()).toString());
                 }
                 int i8 = 0;
-                C1299 c1299M3496 = AbstractC0968.startFieldResolution(context).m3490();
-                c1299M3496.f6370 = "adapter";
+                C1299 c1299M3496 = AbstractC0968.startMethodResolution_(context).m3490();
+                c1299M3496.name = "adapter";
                 BaseAdapter baseAdapter = (BaseAdapter) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024();
                 for (C3637 c3637 : C3638.f11379) {
                     AbstractC1574.m3288(baseAdapter, AbstractC1574.m3299(context, c3637.f11375, c3637.f11376), 0);
@@ -409,9 +409,9 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                 }
                 obj2 = c2587 instanceof C2585 ? null : c2587;
                 int i9 = 0;
-                C1299 c1299M3497 = AbstractC0968.startFieldResolution(obj2).m3490();
+                C1299 c1299M3497 = AbstractC0968.startMethodResolution_(obj2).m3490();
                 c1299M3497.fieldType = AbstractC2519.classToKClass(String.class);
-                c1299M3497.m3732();
+                c1299M3497.superclass();
                 Iterator it = c1299M3497.resolve().iterator();
                 while (it.hasNext()) {
                     String str9 = (String) ((C1315) it.next()).m3024();
@@ -419,7 +419,7 @@ public final /* synthetic */ class C3618 implements InterfaceC1425 {
                         for (C3637 c3638 : C3638.f11379) {
                             if (str9.equals(c3638.f11375)) {
                                 c3638.f11377.invoke(context2);
-                                c1567.m3271();
+                                c1567.setReturnTrue();
                             }
                         }
                     }

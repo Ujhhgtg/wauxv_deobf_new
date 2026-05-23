@@ -35,7 +35,7 @@ public final class C1542 extends AbstractC2867 {
         C1542 c1542 = f5392;
         C3689 c3689M4174 = c1542.m4174(c1982, 1);
         c1542.m3262(c3689M4174, new C1538(7));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
     }
 
     @Override // p000.AbstractC2867

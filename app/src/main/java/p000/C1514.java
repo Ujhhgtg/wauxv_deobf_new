@@ -90,9 +90,9 @@ public final /* synthetic */ class C1514 implements InterfaceC1425 {
             default:
                 C3689.m5349((C3689) obj3);
                 int i4 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(((C1563) obj).m3268()).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(((C1563) obj).m3268()).m3492();
                 String[] strArr2 = AbstractC1574.f5469;
-                c1973M3492.f6370 = "getContext";
+                c1973M3492.name = "getContext";
                 Context context2 = (Context) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                 TextView textView = new TextView(context2);
                 textView.setTextSize(16.0f);

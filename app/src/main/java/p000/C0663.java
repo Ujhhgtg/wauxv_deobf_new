@@ -64,12 +64,12 @@ public final class C0663 extends AbstractC2867 implements InterfaceC1575, Interf
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.dexToMethod(C0656.f2518)));
+        C3689 c3689M4172 = C2309.createHook(this, Collections.singletonList(AbstractC1574.dexToMethod(C0656.f2518)));
         C0645 c0645 = new C0645(11);
         C0663 c0663 = f2533;
-        c0663.m3263(c3689M4172, c0645);
+        c0663.hookBefore(c3689M4172, c0645);
         c0663.m3262(c3689M4172, new C0645(12));
-        c3689M4172.m5352();
+        c3689M4172.applyHook();
     }
 
     @Override // p000.AbstractC2867

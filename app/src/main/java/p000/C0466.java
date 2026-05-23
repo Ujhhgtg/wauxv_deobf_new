@@ -86,8 +86,8 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
         }
         ((Button) c2875.getValue()).setText(c0818.f3200);
         int i4 = 0;
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution((Button) c2874.getValue()).m3492();
-        c1973M3492.f6370 = "setIconResource";
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_((Button) c2874.getValue()).m3492();
+        c1973M3492.name = "setIconResource";
         Class cls = Integer.TYPE;
         C1982 c1982 = (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls)}, 1, c1973M3492);
         C0816 c0819 = c0815.f3181;
@@ -96,8 +96,8 @@ public final /* synthetic */ class C0466 implements InterfaceC2129, InterfaceC17
             c0819 = null;
         }
         c1982.m3831(Integer.valueOf(c0819.f3199));
-        MethodResolver c1973M3493 = AbstractC0968.startFieldResolution((Button) c2875.getValue()).m3492();
-        c1973M3493.f6370 = "setIconResource";
+        MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_((Button) c2875.getValue()).m3492();
+        c1973M3493.name = "setIconResource";
         C1982 c1983 = (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(cls)}, 1, c1973M3493);
         C0816 c08110 = c0815.f3181;
         if (c08110 == null) {

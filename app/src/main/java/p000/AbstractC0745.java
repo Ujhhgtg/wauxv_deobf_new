@@ -13,7 +13,7 @@ public abstract class AbstractC0745 extends AbstractC1459 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲁᲇᤞᲀᲈ, reason: contains not printable characters */
-    public static List m2212(Object... objArr) {
+    public static List listOf(Object... objArr) {
         return objArr.length > 0 ? Arrays.asList(objArr) : C1189.f4329;
     }
 

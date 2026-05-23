@@ -43,7 +43,7 @@ public final class C0860 extends AbstractC1823 implements InterfaceC1582 {
         
         int i = 0;
         
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2824.m4798()).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C2824.m4798()).m3492();
         c1973M3492.returnType = AbstractC2519.classToKClass(Integer.TYPE);
         
         Class<?> declaringClass = AbstractC1574.dexToMethod(C0846.f3253).getDeclaringClass();

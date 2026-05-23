@@ -60,12 +60,12 @@ public final class HandlerDelegate_me_hd_wauxv implements Handler.Callback {
         int i = message.what;
         if (i == 100) {
             int i2 = 0;
-            C1744 c1744M2484 = AbstractC0968.startFieldResolution(message.obj);
+            C1744 c1744M2484 = AbstractC0968.startMethodResolution_(message.obj);
             C2873 c2873 = C0152.f1159;
             ((C1927) c1744M2484.f5843).f6366 = AbstractC2205.m4054();
             c1744M2484.m3493(true);
             C1299 c1299M3490 = c1744M2484.m3490();
-            c1299M3490.f6370 = "intent";
+            c1299M3490.name = "intent";
             C1315 c1315 = (C1315) AbstractC0744.m2192(c1299M3490.resolve());
             Intent intent = c1315 != null ? (Intent) c1315.m3024() : null;
             C1315 c1316 = (C1315) C1516.f5349.getValue();
@@ -101,8 +101,8 @@ public final class HandlerDelegate_me_hd_wauxv implements Handler.Callback {
             ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
             c1744M2483.m3493(true);
             MethodResolver c1973M3492 = c1744M2483.m3492();
-            c1973M3492.f6370 = "getCallbacks";
-            C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+            c1973M3492.name = "getCallbacks";
+            C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
             if (c1982 != null) {
                 c1982.m3378(message.obj);
                 try {
@@ -129,10 +129,10 @@ public final class HandlerDelegate_me_hd_wauxv implements Handler.Callback {
                 }
                 for (Object obj2 : arrayList) {
                     int i4 = 0;
-                    C1744 c1744M2485 = AbstractC0968.startFieldResolution(obj2);
+                    C1744 c1744M2485 = AbstractC0968.startMethodResolution_(obj2);
                     c1744M2485.m3493(true);
                     C1299 c1299M3491 = c1744M2485.m3490();
-                    c1299M3491.f6370 = "mIntent";
+                    c1299M3491.name = "mIntent";
                     C1315 c1318 = (C1315) AbstractC0744.m2192(c1299M3491.resolve());
                     Intent intent2 = c1318 != null ? (Intent) c1318.m3024() : null;
                     
@@ -167,15 +167,15 @@ public final class HandlerDelegate_me_hd_wauxv implements Handler.Callback {
                             ((C1927) c1744M2486.f5843).f6366 = AbstractC2205.m4054();
                             c1744M2486.m3493(true);
                             MethodResolver c1973M3493 = c1744M2486.m3492();
-                            c1973M3493.f6370 = "currentActivityThread";
-                            C1982 c1983 = (C1982) AbstractC0744.m2192(c1973M3493.m3799());
+                            c1973M3493.name = "currentActivityThread";
+                            C1982 c1983 = (C1982) AbstractC0744.m2192(c1973M3493.resolve());
                             Object objM3831 = c1983 != null ? c1983.m3831(new Object[0]) : null;
-                            C1744 c1744M2487 = AbstractC0968.startFieldResolution(message.obj);
+                            C1744 c1744M2487 = AbstractC0968.startMethodResolution_(message.obj);
                             ((C1927) c1744M2487.f5843).f6366 = AbstractC2205.m4054();
                             c1744M2487.m3493(true);
                             MethodResolver c1973M3494 = c1744M2487.m3492();
-                            c1973M3494.f6370 = "getActivityToken";
-                            C1982 c1984 = (C1982) AbstractC0744.m2192(c1973M3494.m3799());
+                            c1973M3494.name = "getActivityToken";
+                            C1982 c1984 = (C1982) AbstractC0744.m2192(c1973M3494.resolve());
                             if (c1984 != null) {
                                 try {
                                     c2586 = c1984.m3831(Arrays.copyOf(new Object[0], 0));
@@ -189,13 +189,13 @@ public final class HandlerDelegate_me_hd_wauxv implements Handler.Callback {
                                 c2586 = null;
                             }
                             if (objM3831 != null) {
-                                C1744 c1744M2488 = AbstractC0968.startFieldResolution(objM3831);
+                                C1744 c1744M2488 = AbstractC0968.startMethodResolution_(objM3831);
                                 ((C1927) c1744M2488.f5843).f6366 = AbstractC2205.m4054();
                                 c1744M2488.m3493(true);
                                 MethodResolver c1973M3495 = c1744M2488.m3492();
-                                c1973M3495.f6370 = "getLaunchingActivity";
-                                c1973M3495.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(IBinder.class)}, 1));
-                                C1982 c1985 = (C1982) AbstractC0744.m2192(c1973M3495.m3799());
+                                c1973M3495.name = "getLaunchingActivity";
+                                c1973M3495.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(IBinder.class)}, 1));
+                                C1982 c1985 = (C1982) AbstractC0744.m2192(c1973M3495.resolve());
                                 if (c1985 != null) {
                                     try {
                                         c2587 = c1985.m3831(Arrays.copyOf(new Object[]{c2586}, 1));
@@ -212,11 +212,11 @@ public final class HandlerDelegate_me_hd_wauxv implements Handler.Callback {
                                 c2587 = null;
                             }
                             if (c2587 != null) {
-                                C1744 c1744M2489 = AbstractC0968.startFieldResolution(c2587);
+                                C1744 c1744M2489 = AbstractC0968.startMethodResolution_(c2587);
                                 ((C1927) c1744M2489.f5843).f6366 = AbstractC2205.m4054();
                                 c1744M2489.m3493(true);
                                 C1299 c1299M3492 = c1744M2489.m3490();
-                                c1299M3492.f6370 = "intent";
+                                c1299M3492.name = "intent";
                                 C1315 c13111 = (C1315) AbstractC0744.m2192(c1299M3492.resolve());
                                 if (c13111 != null) {
                                     c13111.set(intent3);

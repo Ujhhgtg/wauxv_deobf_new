@@ -86,8 +86,8 @@ public final class C1513 extends AbstractC2867 implements InterfaceC1582, Interf
             Set setM2209 = AbstractC0744.m2209(AbstractC2841.m4843(asString2, new String[]{";"}));
             int i2 = 0;
             
-            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2800.m4779()).m3492();
-            c1973M3492.f6370 = "rawQuery";
+            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C2800.m4779()).m3492();
+            c1973M3492.name = "rawQuery";
             Cursor cursor = (Cursor) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(Object[].class)}, 2, c1973M3492)).invoke("SELECT memberlist, memberCount FROM chatroom WHERE chatroomname = ?", new Object[]{asString});
             if (cursor != null) {
                 try {
@@ -130,9 +130,9 @@ public final class C1513 extends AbstractC2867 implements InterfaceC1582, Interf
     public final void mo1126() {
         List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C1510.f5331));
         C1513 c1513 = f5334;
-        C3689 c3689M4172 = C2309.m4172(c1513, listSingletonList);
-        c1513.m3263(c3689M4172, new C1338(18));
-        c3689M4172.m5352();
+        C3689 c3689M4172 = C2309.createHook(c1513, listSingletonList);
+        c1513.hookBefore(c3689M4172, new C1338(18));
+        c3689M4172.applyHook();
     }
 
     @Override // p000.AbstractC2867

@@ -81,13 +81,13 @@ public abstract class AbstractC1574 {
     /* JADX INFO: renamed from: &#x16F1;&#x16F2;&#x16F3;&#x16F4;&#x16F5;&#x16F6;&#x16F7;&#x16F8;&#x191D;&#x191E;&#x1C80;&#x1C81;&#x1C88;&#x1C87;, reason: contains not printable characters */
     public static void m3288(BaseAdapter baseAdapter, Object obj, int i) throws IllegalAccessException, InvocationTargetException {
         int i2 = 0;
-        C1744 c1744M2484 = AbstractC0968.startFieldResolution(baseAdapter);
+        C1744 c1744M2484 = AbstractC0968.startMethodResolution_(baseAdapter);
         c1744M2484.m3493(false);
         MethodResolver c1973M3492 = c1744M2484.m3492();
         AbstractC0750.m2218(c1973M3492.f6373, (EnumC1999[]) Arrays.copyOf(new EnumC1999[]{EnumC1999.FINAL}, 1));
-        c1973M3492.m2888(Arrays.copyOf(new Object[]{C2391.f7652.m4369(), AbstractC2519.classToKClass(Integer.TYPE)}, 2));
-        c1973M3492.m3732();
-        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+        c1973M3492.paramTypes(Arrays.copyOf(new Object[]{C2391.f7652.m4369(), AbstractC2519.classToKClass(Integer.TYPE)}, 2));
+        c1973M3492.superclass();
+        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
         if (c1982 != null) {
             c1982.m3831(obj, Integer.valueOf(i));
         } else {

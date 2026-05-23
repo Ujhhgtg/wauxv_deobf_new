@@ -161,7 +161,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     Object obj4 = c25810 instanceof C2585 ? null : c25810;
                     
                     AbstractC1574.dexToMethod(C2454.f7795).invoke(null, obj2, obj3, C2079.m3883(jLongValue), view, Long.valueOf(jLongValue), str, obj4);
-                    c1563.m3272(null);
+                    c1563.setReturn(null);
                 } else if (AbstractC3471.m5079(WeChatVersions.f11535) || AbstractC3471.m5080(WeChatVersionsPlay.f11498)) {
                     
                     try {
@@ -242,7 +242,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     
                     
                     AbstractC1574.dexToMethod(C2454.f7795).invoke(null, obj5, obj6, C2079.m3883(jLongValue2), view2, Long.valueOf(jLongValue2), str2, obj7, bool);
-                    c1563.m3272(null);
+                    c1563.setReturn(null);
                 } else {
                     
                     try {
@@ -311,7 +311,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     
                     
                     AbstractC1574.dexToMethod(C2454.f7795).invoke(null, obj8, obj9, C2079.m3883(jLongValue3), view3, Long.valueOf(jLongValue3), obj10, bool2);
-                    c1563.m3272(null);
+                    c1563.setReturn(null);
                 }
                 return unit;
             case 7:
@@ -398,18 +398,18 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     c25824 = null;
                 }
                 int i8 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(c25824).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(c25824).m3490();
                 String[] strArr6 = AbstractC1574.f5469;
-                c1299M3490.f6370 = "field_unReadCount";
+                c1299M3490.name = "field_unReadCount";
                 int iIntValue3 = ((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).intValue();
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(c25824).m3490();
-                c1299M3491.f6370 = "field_unReadMuteCount";
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(c25824).m3490();
+                c1299M3491.name = "field_unReadMuteCount";
                 int iIntValue4 = ((Number) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024()).intValue();
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(c25824).m3490();
-                c1299M3492.f6370 = "field_msgType";
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(c25824).m3490();
+                c1299M3492.name = "field_msgType";
                 String str3 = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
-                C1299 c1299M3493 = AbstractC0968.startFieldResolution(c25824).m3490();
-                c1299M3493.f6370 = "field_content";
+                C1299 c1299M3493 = AbstractC0968.startMethodResolution_(c25824).m3490();
+                c1299M3493.name = "field_content";
                 String str4 = (String) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024();
                 if ((iIntValue3 > 0 || iIntValue4 > 0) && AbstractC2207.m4087(str3, String.valueOf(EnumC3673.f11488.f11492))) {
                     String sendTalker = new MsgInfoBean.QuoteMsg(str4).getSendTalker();
@@ -428,7 +428,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                         spannableStringBuilder.setSpan(new ForegroundColorSpan(Color.parseColor(C2457.f7802.m2542())), 0, spannableStringBuilder.length(), 33);
                         spannableStringBuilder.append((CharSequence) " ");
                         spannableStringBuilder.append((CharSequence) obj11);
-                        c1564.m3272(spannableStringBuilder);
+                        c1564.setReturn(spannableStringBuilder);
                     }
                 }
                 return unit;
@@ -457,7 +457,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     c25827 = null;
                 }
                 int i9 = 0;
-                C1299 c1299M3494 = AbstractC0968.startFieldResolution(obj12).m3490();
+                C1299 c1299M3494 = AbstractC0968.startMethodResolution_(obj12).m3490();
                 c1299M3494.fieldType = AbstractC2519.classToKClass(View.class);
                 TextView textView = (TextView) AbstractC3580.m5198((ViewGroup) ((C1315) AbstractC2784.m4741(c1299M3494)).m3024(), new int[]{0, 1, 1, 1, 1});
                 Field[] declaredFields = c25827.getClass().getDeclaredFields();
@@ -479,7 +479,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                 }
                 Object obj13 = field.get(c25827);
                 int i11 = 0;
-                C1299 c1299M3495 = AbstractC0968.startFieldResolution(obj13).m3490();
+                C1299 c1299M3495 = AbstractC0968.startMethodResolution_(obj13).m3490();
                 c1299M3495.fieldType = AbstractC2519.classToKClass(String.class);
                 Object obj14 = null;
                 boolean z2 = false;
@@ -527,9 +527,9 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                     
                     String[] strArr8 = AbstractC1574.f5469;
                     if (Math.random() > 0.65d) {
-                        List listM2212 = AbstractC0745.m2212("Hd", "久雾", "豆子", "拖鞋");
+                        List listM2212 = AbstractC0745.listOf("Hd", "久雾", "豆子", "拖鞋");
                         AbstractC0066 abstractC0066 = AbstractC2474.f7908;
-                        jSONObject.put("changeWording", "已存入" + ((String) AbstractC0744.m2199(listM2212)) + "的余额(WA)");
+                        jSONObject.put("changeWording", "已存入" + ((String) AbstractC0744.randomFromList(listM2212)) + "的余额(WA)");
                     }
                     double d = jSONObject.getInt("totalAmount");
                     int i14 = jSONObject.getInt("totalNum");
@@ -588,7 +588,7 @@ public final /* synthetic */ class C2444 implements InterfaceC1425 {
                 int i16 = 0;
                 C1299 c1299M4738 = AbstractC2784.m4738((C1563) obj);
                 c1299M4738.fieldType = AbstractC2519.classToKClass(cls);
-                c1299M4738.m3732();
+                c1299M4738.superclass();
                 for (C1315 c1315 : c1299M4738.resolve()) {
                     Integer num = (Integer) c1315.m3024();
                     if (num != null && num.intValue() == 32) {

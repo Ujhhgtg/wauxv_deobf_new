@@ -15,7 +15,7 @@ public final class C1170 extends AbstractC1823 implements InterfaceC1582 {
     public static String m2762(String str) {
         int i = 0;
         
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C1150.m2760()).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C1150.m2760()).m3492();
         c1973M3492.returnType = AbstractC2519.classToKClass(String.class);
         return (String) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Context.class), AbstractC2519.classToKClass(String.class)}, 2, c1973M3492)).invoke(null, str);
     }
@@ -25,10 +25,10 @@ public final class C1170 extends AbstractC1823 implements InterfaceC1582 {
         
         int i = 0;
         
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C1150.m2760()).m3492();
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C1150.m2760()).m3492();
         c1973M3492.returnType = Void.TYPE;
         c1973M3492.f4482 = new C1148(19);
-        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.resolve());
         int parameterCount = c1982.f6566.getParameterCount();
         if (parameterCount == 4) {
             c1982.m3831(str, obj, null, null);

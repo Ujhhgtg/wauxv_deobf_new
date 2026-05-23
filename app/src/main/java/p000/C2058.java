@@ -429,14 +429,14 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                 return unit;
             case 22 /* 22 */:
                 int i10 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj).m3490();
                 String[] strArr17 = AbstractC1574.f5469;
-                c1299M3490.f6370 = "field_type";
+                c1299M3490.name = "field_type";
                 if (((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).intValue() == 3) {
-                    C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
-                    c1299M3491.f6370 = "field_favProto";
-                    MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(((C1315) AbstractC2784.m4741(c1299M3491)).m3023()).m3492();
-                    c1973M3492.f6370 = "getData";
+                    C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj).m3490();
+                    c1299M3491.name = "field_favProto";
+                    MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(((C1315) AbstractC2784.m4741(c1299M3491)).m3023()).m3492();
+                    c1973M3492.name = "getData";
                     byte[] bArr = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3492)).invoke(new Object[0]);
                     C2427 c2427 = C2427.f7718;
                     
@@ -466,15 +466,15 @@ public final /* synthetic */ class C2058 implements InterfaceC1425 {
                 return unit;
             case 23 /* 23 */:
                 int i11 = 0;
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(obj).m3490();
                 String[] strArr18 = AbstractC1574.f5469;
-                c1299M3492.f6370 = "field_type";
+                c1299M3492.name = "field_type";
                 Integer num = (Integer) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                 if (num != null && num.intValue() == 3) {
-                    C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
-                    c1299M3493.f6370 = "field_favProto";
-                    MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(((C1315) AbstractC2784.m4741(c1299M3493)).m3023()).m3492();
-                    c1973M3493.f6370 = "getData";
+                    C1299 c1299M3493 = AbstractC0968.startMethodResolution_(obj).m3490();
+                    c1299M3493.name = "field_favProto";
+                    MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(((C1315) AbstractC2784.m4741(c1299M3493)).m3023()).m3492();
+                    c1973M3493.name = "getData";
                     byte[] bArr2 = (byte[]) ((C1982) AbstractC2784.m4742(c1973M3493)).invoke(new Object[0]);
                     C2427 c2428 = C2427.f7718;
                     

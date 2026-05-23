@@ -227,9 +227,9 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                 return unit;
             case 12 /* 12 */:
                 int i6 = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(obj).m3492();
                 c1973M3492.returnType = AbstractC2519.classToKClass(Activity.class);
-                Activity activity = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0]);
+                Activity activity = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).invoke(new Object[0]);
                 String content5 = ((MsgInfoBean) obj2).getContent();
                 Intent intent4 = new Intent();
                 String[] strArr5 = AbstractC1574.f5469;
@@ -240,9 +240,9 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                 return unit;
             case 13:
                 int i7 = 0;
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(obj).m3492();
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(obj).m3492();
                 c1973M3493.returnType = AbstractC2519.classToKClass(Activity.class);
-                Activity activity2 = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).invoke(new Object[0]);
+                Activity activity2 = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).invoke(new Object[0]);
                 C1616 c1617 = C1616.f5487;
                 Object origin2 = ((MsgInfoBean) obj2).getOrigin();
                 
@@ -257,9 +257,9 @@ public final /* synthetic */ class C1933 implements InterfaceC1429 {
                 return unit;
             case 14 /* 14 */:
                 int i8 = 0;
-                MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(obj).m3492();
+                MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(obj).m3492();
                 c1973M3494.returnType = AbstractC2519.classToKClass(Activity.class);
-                Activity activity3 = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).invoke(new Object[0]);
+                Activity activity3 = (Activity) ((C1982) AbstractC0744.firstInList(c1973M3494.resolve())).invoke(new Object[0]);
                 String imgPath2 = ((MsgInfoBean) obj2).getImgPath();
                 
                 String strM5146 = C3558.m5145(imgPath2);

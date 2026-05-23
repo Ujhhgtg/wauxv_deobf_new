@@ -19,18 +19,18 @@ public final class ContactBean {
     public ContactBean(Object obj) {
         this.origin = obj;
         int i = 0;
-        C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
+        C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj).m3490();
         String[] strArr = AbstractC1574.f5469;
-        c1299M3490.f6370 = "field_username";
+        c1299M3490.name = "field_username";
         this.username = (String) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024();
-        C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3491.f6370 = "field_alias";
+        C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3491.name = "field_alias";
         this.alias = (String) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
-        C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3492.f6370 = "field_conRemark";
+        C1299 c1299M3492 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3492.name = "field_conRemark";
         this.conRemark = (String) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
-        C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3493.f6370 = "field_nickname";
+        C1299 c1299M3493 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3493.name = "field_nickname";
         this.nickname = (String) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024();
     }
 

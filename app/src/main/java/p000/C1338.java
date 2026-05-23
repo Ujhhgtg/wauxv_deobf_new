@@ -74,7 +74,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                 }
                 ContextMenu contextMenu = (ContextMenu) (c2585 instanceof C2585 ? null : c2585);
                 int i10 = 0;
-                C1299 c1299M3490 = AbstractC0968.startFieldResolution(contextMenu).m3490();
+                C1299 c1299M3490 = AbstractC0968.startMethodResolution_(contextMenu).m3490();
                 c1299M3490.fieldType = AbstractC2519.classToKClass(Context.class);
                 AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024());
                 C2873 c2873 = new C2873(new C1286(contextMenu, 3));
@@ -111,20 +111,20 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                 int i11 = 0;
                 C1299 c1299M4738 = AbstractC2784.m4738(c1564);
                 c1299M4738.fieldType = "com.tencent.mm.plugin.finder.model.BaseFinderFeed";
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3023()).m3490();
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3023()).m3490();
                 c1299M3491.fieldType = "com.tencent.mm.plugin.finder.storage.FinderItem";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3491)).m3023();
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objM3023).m3492();
-                c1973M3492.f6370 = "getMediaType";
-                int iIntValue = ((Number) ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0])).intValue();
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(objM3023).m3492();
-                c1973M3493.f6370 = "getMediaList";
-                List list = (List) ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).invoke(new Object[0]);
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(objM3023).m3492();
+                c1973M3492.name = "getMediaType";
+                int iIntValue = ((Number) ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).invoke(new Object[0])).intValue();
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(objM3023).m3492();
+                c1973M3493.name = "getMediaList";
+                List list = (List) ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).invoke(new Object[0]);
                 ArrayList arrayList2 = new ArrayList(AbstractC0746.m2214(list, 10));
                 for (Object obj4 : list) {
                     int i12 = 0;
-                    MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(obj4).m3492();
-                    c1973M3494.f6370 = "toJSON";
+                    MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(obj4).m3492();
+                    c1973M3494.name = "toJSON";
                     arrayList2.add((JSONObject) ((C1982) AbstractC2784.m4742(c1973M3494)).invoke(new Object[0]));
                 }
                 for (Object obj5 : C1342.f4811) {
@@ -466,7 +466,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                     c2588 = null;
                 }
                 int i18 = 0;
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(c2588).m3490();
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(c2588).m3490();
                 c1299M3492.fieldType = AbstractC2519.classToKClass(String.class);
                 boolean z = false;
                 for (Object obj6 : c1299M3492.resolve()) {
@@ -490,7 +490,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                     intent.setClassName(context, "com.tencent.mm.plugin.profile.ui.ContactInfoUI");
                     intent.putExtra("Contact_User", str4);
                     context.startActivity(intent);
-                    c1565.m3271();
+                    c1565.setReturnTrue();
                 }
                 return unit;
             case 19:
@@ -541,7 +541,7 @@ public final /* synthetic */ class C1338 implements InterfaceC1425 {
                 int i20 = 0;
                 C1299 c1299M4739 = AbstractC2784.m4738((C1563) obj);
                 c1299M4739.f4726 = new C1338(20);
-                C1299 c1299M3493 = AbstractC0968.startFieldResolution((ContextMenu) ((C1315) AbstractC0744.firstInList(c1299M4739.resolve())).m3024()).m3490();
+                C1299 c1299M3493 = AbstractC0968.startMethodResolution_((ContextMenu) ((C1315) AbstractC0744.firstInList(c1299M4739.resolve())).m3024()).m3490();
                 c1299M3493.fieldType = AbstractC2519.classToKClass(List.class);
                 ArrayList arrayList4 = (ArrayList) ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).m3024();
                 ArrayList arrayList5 = new ArrayList();

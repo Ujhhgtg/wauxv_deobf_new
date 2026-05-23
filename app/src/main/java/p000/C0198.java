@@ -36,12 +36,12 @@ public final class C0198 extends AbstractC2867 {
     public final void mo1126() {
         int i = 0;
         C0796 c0796M3486 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.sns.storage.ADInfo")).m3486();
-        c0796M3486.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(String.class)}, 1));
+        c0796M3486.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(String.class)}, 1));
         C0798 c0798 = (C0798) AbstractC0744.firstInList(c0796M3486.m2344());
         C0198 c0198 = f1271;
         C3689 c3689M4174 = c0198.m4174(c0798, 1);
-        c0198.m3263(c3689M4174, new C0105(29));
-        c3689M4174.m5352();
+        c0198.hookBefore(c3689M4174, new C0105(29));
+        c3689M4174.applyHook();
     }
 
     @Override // p000.AbstractC2867

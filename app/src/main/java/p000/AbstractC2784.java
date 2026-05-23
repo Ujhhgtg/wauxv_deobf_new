@@ -79,7 +79,7 @@ public abstract /* synthetic */ class AbstractC2784 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
     public static C1299 m4738(C1563 c1563) {
-        return AbstractC0968.startFieldResolution(c1563.m3268()).m3490();
+        return AbstractC0968.startMethodResolution_(c1563.m3268()).m3490();
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲇᲁ, reason: contains not printable characters */
@@ -96,20 +96,20 @@ public abstract /* synthetic */ class AbstractC2784 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
     public static Object m4741(C1299 c1299) {
-        c1299.m3732();
+        c1299.superclass();
         return AbstractC0744.firstInList(c1299.resolve());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ, reason: contains not printable characters */
     public static Object m4742(MethodResolver c1973) {
-        c1973.m3732();
-        return AbstractC0744.firstInList(c1973.m3799());
+        c1973.superclass();
+        return AbstractC0744.firstInList(c1973.resolve());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲈᲀ, reason: contains not printable characters */
     public static Object setParamsAndResolveFirstMethod(Object[] objArr, int i, MethodResolver c1973) {
-        c1973.m2888(Arrays.copyOf(objArr, i));
-        return AbstractC0744.firstInList(c1973.m3799());
+        c1973.paramTypes(Arrays.copyOf(objArr, i));
+        return AbstractC0744.firstInList(c1973.resolve());
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲈᲀᲇ, reason: contains not printable characters */

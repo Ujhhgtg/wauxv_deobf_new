@@ -380,7 +380,7 @@ public abstract class AbstractC0968 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲇᲁᲈᲀ, reason: contains not printable characters */
-    public static C1744 startFieldResolution(Object obj) {
+    public static C1744 startMethodResolution_(Object obj) {
         if (obj instanceof InterfaceC1736) {
             return new C1744(C1227.m2859(14, ((InterfaceC0696) ((InterfaceC1736) obj)).mo2114(), obj));
         }

@@ -20,8 +20,8 @@ public final class C2079 extends AbstractC1823 implements InterfaceC1582 {
         Object[] objArr = {Long.valueOf(j)};
         int i = 0;
         
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(C2800.m4779()).m3492();
-        c1973M3492.f6370 = "rawQuery";
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(C2800.m4779()).m3492();
+        c1973M3492.name = "rawQuery";
         Cursor cursor = (Cursor) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(Object[].class)}, 2, c1973M3492)).invoke("SELECT * FROM message WHERE msgId = ?", objArr);
         if (cursor != null) {
             try {

@@ -146,7 +146,7 @@ public final class C0303 extends AbstractC2862 implements InterfaceC1429 {
                 if (fileArrListFiles2 != null) {
                     for (File file2 : fileArrListFiles2) {
                         if (file2.isFile()) {
-                            List listM2212 = AbstractC0745.m2212("png", "jpg", "gif");
+                            List listM2212 = AbstractC0745.listOf("png", "jpg", "gif");
                             String name = file2.getName();
                             int iM4838 = AbstractC2841.m4838(name, '.', 0, 6);
                             String lowerCase = (iM4838 == -1 ? "" : name.substring(iM4838 + 1, name.length())).toLowerCase(Locale.ROOT);

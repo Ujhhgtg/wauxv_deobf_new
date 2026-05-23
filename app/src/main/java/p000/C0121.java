@@ -102,7 +102,7 @@ public final class C0121 extends AbstractC2867 {
         C0121 c0121 = f1070;
         C3689 c3689M4174 = c0121.m4174(c1982, 1);
         c0121.m3262(c3689M4174, new C0105(1));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
     }
 
     @Override // p000.AbstractC2867

@@ -19,7 +19,7 @@ public class C2309 {
     public C2310 f7437 = null;
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲈᲁᲀᲇ, reason: contains not printable characters */
-    public static final C3689 m4172(C2309 c2309, List list) {
+    public static final C3689 createHook(C2309 c2309, List list) {
         
         Iterator it = list.iterator();
         while (it.hasNext()) {
@@ -74,8 +74,8 @@ public class C2309 {
         ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
         c1744M2483.m3493(true);
         MethodResolver c1973M3492 = c1744M2483.m3492();
-        c1973M3492.f6370 = "currentPackageName";
-        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+        c1973M3492.name = "currentPackageName";
+        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
         if (c1982 != null && (str = (String) c1982.invoke(new Object[0])) != null && !AbstractC2841.m4836(str)) {
             str2 = str;
         }

@@ -27,7 +27,7 @@ public final class MethodResolver extends AbstractC1240 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲈᲁᲇ, reason: contains not printable characters */
-    public final List m3799() {
+    public final List resolve() {
         C1927 c1927 = this.f6369;
         if (c1927 != null) {
             return AbstractC1937.m3748(this, c1927, c1927.f6364, new C1936(this, c1927, 0));

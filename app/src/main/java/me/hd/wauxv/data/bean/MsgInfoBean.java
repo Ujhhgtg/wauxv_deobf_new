@@ -46,39 +46,39 @@ public final class MsgInfoBean {
     public MsgInfoBean(Object obj) {
         this.origin = obj;
         int i = 0;
-        C1299 c1299M3490 = AbstractC0968.startFieldResolution(obj).m3490();
+        C1299 c1299M3490 = AbstractC0968.startMethodResolution_(obj).m3490();
         String[] strArr = AbstractC1574.f5469;
-        c1299M3490.f6370 = "field_msgId";
+        c1299M3490.name = "field_msgId";
         this.msgId = ((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).longValue();
-        C1299 c1299M3491 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3491.f6370 = "field_msgSvrId";
+        C1299 c1299M3491 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3491.name = "field_msgSvrId";
         this.msgSvrId = (Long) ((C1315) AbstractC2784.m4741(c1299M3491)).m3024();
-        C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3492.f6370 = "field_type";
+        C1299 c1299M3492 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3492.name = "field_type";
         this.type = ((Number) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024()).intValue();
-        C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3493.f6370 = "field_isSend";
+        C1299 c1299M3493 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3493.name = "field_isSend";
         this.isSendInt = (Integer) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024();
-        C1299 c1299M3494 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3494.f6370 = "field_createTime";
+        C1299 c1299M3494 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3494.name = "field_createTime";
         this.createTime = ((Number) ((C1315) AbstractC2784.m4741(c1299M3494)).m3024()).longValue();
-        C1299 c1299M3495 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3495.f6370 = "field_talker";
+        C1299 c1299M3495 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3495.name = "field_talker";
         this.talker = (String) ((C1315) AbstractC2784.m4741(c1299M3495)).m3024();
-        C1299 c1299M3496 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3496.f6370 = "field_content";
+        C1299 c1299M3496 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3496.name = "field_content";
         this.originContent = (String) ((C1315) AbstractC2784.m4741(c1299M3496)).m3024();
-        C1299 c1299M3497 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3497.f6370 = "field_imgPath";
+        C1299 c1299M3497 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3497.name = "field_imgPath";
         this.imgPath = (String) ((C1315) AbstractC2784.m4741(c1299M3497)).m3024();
-        C1299 c1299M3498 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3498.f6370 = "field_lvbuffer";
+        C1299 c1299M3498 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3498.name = "field_lvbuffer";
         this.lvBuffer = (byte[]) ((C1315) AbstractC2784.m4741(c1299M3498)).m3024();
-        C1299 c1299M3499 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M3499.f6370 = "field_talkerId";
+        C1299 c1299M3499 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M3499.name = "field_talkerId";
         this.talkerId = (Integer) ((C1315) AbstractC2784.m4741(c1299M3499)).m3024();
-        C1299 c1299M34910 = AbstractC0968.startFieldResolution(obj).m3490();
-        c1299M34910.f6370 = "field_msgSeq";
+        C1299 c1299M34910 = AbstractC0968.startMethodResolution_(obj).m3490();
+        c1299M34910.name = "field_msgSeq";
         this.msgSeq = (Long) ((C1315) AbstractC2784.m4741(c1299M34910)).m3024();
     }
 
@@ -362,8 +362,8 @@ public final class MsgInfoBean {
         if (objM2066 != null) {
             
             int i = 0;
-            C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM2066).m3490();
-            c1299M3490.f6370 = "field_chatroomStatus";
+            C1299 c1299M3490 = AbstractC0968.startMethodResolution_(objM2066).m3490();
+            c1299M3490.name = "field_chatroomStatus";
             boolean z = this.talker.endsWith("@chatroom") && (((Number) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024()).intValue() & 131072) == 131072;
             if (zEndsWith || z) {
                 return true;
@@ -393,7 +393,7 @@ public final class MsgInfoBean {
         boolean z2;
         Object objM2263 = C0772.m2263(C0772.f2872, EnumC3517.f11022.f11027);
         String[] strArr = AbstractC1574.f5469;
-        List listM2212 = AbstractC0745.m2212((String) objM2263, "notify@all");
+        List listM2212 = AbstractC0745.listOf((String) objM2263, "notify@all");
         if (!listM2212.isEmpty()) {
             Iterator it = listM2212.iterator();
             while (true) {
@@ -410,7 +410,7 @@ public final class MsgInfoBean {
             z = false;
             break;
         }
-        List listM2213 = AbstractC0745.m2212("@所有人", "@ all people");
+        List listM2213 = AbstractC0745.listOf("@所有人", "@ all people");
         if (!listM2213.isEmpty()) {
             Iterator it2 = listM2213.iterator();
             while (true) {
@@ -763,7 +763,6 @@ public final class MsgInfoBean {
 
         public TransferMsg(JSONObject jSONObject) {
             this.json = jSONObject;
-            String[] strArr = AbstractC1574.f5469;
             this.title = String.valueOf(jSONObject.getByPath("msg.appmsg.title"));
             this.des = String.valueOf(jSONObject.getByPath("msg.appmsg.des"));
             this.feeDesc = String.valueOf(jSONObject.getByPath("msg.appmsg.wcpayinfo.feedesc"));

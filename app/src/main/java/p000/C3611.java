@@ -2,7 +2,6 @@ package p000;
 
 import java.util.List;
 import me.hd.wauxv.R;
-import me.hd.wauxv.hook.factory.MagicFactory;
 
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᲀᤝᲇᛸᤞ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
@@ -44,7 +43,7 @@ public final class C3611 extends AbstractC2867 implements InterfaceC1587 {
             return C1189.f4329;
         }
         String[] strArr = AbstractC1574.f5469;
-        return AbstractC0745.m2212(new C1339(R.id.MenuItem_VideoNumber_CopyLink, "复制链接", R.drawable.ic_menu_copy_24dp, new C1933(24)), new C1339(R.id.MenuItem_VideoNumber_Download, "下载视频", R.drawable.ic_menu_save_24dp, new C1933(25)));
+        return AbstractC0745.listOf(new C1339(R.id.MenuItem_VideoNumber_CopyLink, "复制链接", R.drawable.ic_menu_copy_24dp, new C1933(24)), new C1339(R.id.MenuItem_VideoNumber_Download, "下载视频", R.drawable.ic_menu_save_24dp, new C1933(25)));
     }
 
     @Override // p000.AbstractC2867

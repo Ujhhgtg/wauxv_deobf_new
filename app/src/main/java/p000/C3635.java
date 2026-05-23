@@ -176,9 +176,9 @@ public final class C3635 extends AbstractC3680 {
     public final void mo3261() {
         int i = 0;
         MethodResolver c1973M3492 = AbstractC0968.m2482(AbstractC2519.classToKClass(Instrumentation.class)).m3492();
-        c1973M3492.f6370 = "callApplicationOnCreate";
+        c1973M3492.name = "callApplicationOnCreate";
         C3689 c3689M4174 = f11372.m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Application.class)}, 1, c1973M3492), 1);
         c3689M4174.m5350(new C3618(15));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
     }
 }

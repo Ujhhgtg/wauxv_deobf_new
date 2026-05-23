@@ -281,7 +281,7 @@ public final /* synthetic */ class C0853 implements InterfaceC1425 {
                 while (c0060.hasNext()) {
                     EnumC0921 enumC0921 = (EnumC0921) c0060.next();
                     if (enumC0921.f3410 == C0922.f3411.m2538()) {
-                        for (C2315 c2315 : AbstractC0745.m2212(new C2315(new C0731(C0926.f3415.m2537(), C0923.f3412.m2537()), Float.valueOf(C0929.f3418.m2537())), new C2315(new C0731(C0927.f3416.m2537(), C0924.f3413.m2537()), Float.valueOf(C0930.f3419.m2537())), new C2315(new C0731(C0928.f3417.m2537(), C0925.f3414.m2537()), Float.valueOf(C0931.f3420.m2537())))) {
+                        for (C2315 c2315 : AbstractC0745.listOf(new C2315(new C0731(C0926.f3415.m2537(), C0923.f3412.m2537()), Float.valueOf(C0929.f3418.m2537())), new C2315(new C0731(C0927.f3416.m2537(), C0924.f3413.m2537()), Float.valueOf(C0930.f3419.m2537())), new C2315(new C0731(C0928.f3417.m2537(), C0925.f3414.m2537()), Float.valueOf(C0931.f3420.m2537())))) {
                             InterfaceC0732 interfaceC0732 = (InterfaceC0732) c2315.f7445;
                             float fFloatValue = ((Number) c2315.f7446).floatValue();
                             C0731 c0731 = (C0731) interfaceC0732;
@@ -355,9 +355,9 @@ public final /* synthetic */ class C0853 implements InterfaceC1425 {
                 int iM2539 = (((Number) ((C1315) obj2).m3024()).intValue() == 1 ? C0933.f3426 : C0934.f3427).m2538();
                 if (iM2539 != 0) {
                     int i8 = 0;
-                    MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(c1564.m3268()).m3492();
-                    c1973M3492.f6370 = "setFixedContactCount";
-                    ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831(Integer.valueOf(iM2539));
+                    MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(c1564.m3268()).m3492();
+                    c1973M3492.name = "setFixedContactCount";
+                    ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).m3831(Integer.valueOf(iM2539));
                 }
                 return unit;
             case 21 /* 21 */:

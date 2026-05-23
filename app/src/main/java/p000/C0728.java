@@ -1,7 +1,5 @@
 package p000;
 
-import me.hd.wauxv.hook.factory.MagicFactory;
-
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲈᲁᤞᲀᲇᤝ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
@@ -63,7 +61,7 @@ public final class C0728 extends AbstractC2867 implements InterfaceC1598 {
             int i2 = c0523.f2210;
             byte[] bArr2 = new byte[i2];
             AbstractC0270.m1382(c0523.f2209, 0, i2, bArr2, 2);
-            c1563.m3272(bArr2);
+            c1563.setReturn(bArr2);
         }
     }
 

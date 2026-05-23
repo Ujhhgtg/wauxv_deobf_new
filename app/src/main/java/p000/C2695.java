@@ -33,17 +33,17 @@ public final class C2695 extends AbstractC2867 {
         String[] strArr = AbstractC1574.f5469;
         C1744 c1744M2483 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.chatroom.ui.ChatroomInfoUI"));
         MethodResolver c1973M3492 = c1744M2483.m3492();
-        c1973M3492.f6370 = "initView";
-        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.m3799());
+        c1973M3492.name = "initView";
+        C1982 c1982 = (C1982) AbstractC0744.firstInList(c1973M3492.resolve());
         C2695 c2695 = f8691;
         C3689 c3689M4174 = c2695.m4174(c1982, 1);
         c2695.m3262(c3689M4174, new C2659(10));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
         MethodResolver c1973M3493 = c1744M2483.m3492();
-        c1973M3493.f6370 = "onPreferenceTreeClick";
+        c1973M3493.name = "onPreferenceTreeClick";
         C3689 c3689M4175 = c2695.m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{C3529.f11042, C2391.f7652.m4369()}, 2, c1973M3493), 1);
-        c2695.m3263(c3689M4175, new C2659(11));
-        c3689M4175.m5352();
+        c2695.hookBefore(c3689M4175, new C2659(11));
+        c3689M4175.applyHook();
     }
 
     @Override // p000.AbstractC2867

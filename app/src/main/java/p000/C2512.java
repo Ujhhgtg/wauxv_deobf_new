@@ -39,21 +39,21 @@ public final class C2512 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        C3689 c3689M4172 = C2309.m4172(this, Collections.singletonList(AbstractC1574.dexToMethod(C2511.f8029)));
+        C3689 c3689M4172 = C2309.createHook(this, Collections.singletonList(AbstractC1574.dexToMethod(C2511.f8029)));
         C2444 c2444 = new C2444(15);
         C2512 c2512 = f8030;
         c2512.m3262(c3689M4172, c2444);
-        c3689M4172.m5352();
+        c3689M4172.applyHook();
         
         Class declaringClass = AbstractC1574.dexToCtor(C2175.f7136).getDeclaringClass();
         
-        for (Class cls : AbstractC0745.m2212(declaringClass, AbstractC1574.dexToCtor(C2163.f7123).getDeclaringClass())) {
+        for (Class cls : AbstractC0745.listOf(declaringClass, AbstractC1574.dexToCtor(C2163.f7123).getDeclaringClass())) {
             int i = 0;
-            MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(cls).m3492();
-            c1973M3492.f6370 = "onGYNetEnd";
+            MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(cls).m3492();
+            c1973M3492.name = "onGYNetEnd";
             C3689 c3689M4174 = c2512.m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Integer.TYPE), AbstractC2519.classToKClass(String.class), AbstractC2519.classToKClass(JSONObject.class)}, 3, c1973M3492), 1);
-            c2512.m3263(c3689M4174, new C2444(16));
-            c3689M4174.m5352();
+            c2512.hookBefore(c3689M4174, new C2444(16));
+            c3689M4174.applyHook();
         }
     }
 

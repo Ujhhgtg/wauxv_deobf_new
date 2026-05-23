@@ -67,7 +67,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 ContextMenu contextMenu = (ContextMenu) (c2585 instanceof C2585 ? null : c2585);
                 if (AbstractC3471.m5079(WeChatVersions.f11528) || AbstractC3471.m5080(WeChatVersionsPlay.f11495)) {
                     int i6 = 0;
-                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(contextMenu).m3490();
+                    C1299 c1299M3490 = AbstractC0968.startMethodResolution_(contextMenu).m3490();
                     c1299M3490.fieldType = AbstractC2519.classToKClass(Context.class);
                     AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3024());
                     C2873 c2873 = new C2873(new C1286(contextMenu, 0));
@@ -132,7 +132,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 int iIntValue = ((Number) ((C1315) AbstractC0744.firstInList(c1299M4738.resolve())).m3024()).intValue();
                 C1299 c1299M4739 = AbstractC2784.m4738(c1564);
                 c1299M4739.fieldType = "com.tencent.mm.plugin.fav.ui.FavoriteIndexUI";
-                C1299 c1299M3491 = AbstractC0968.startFieldResolution((Activity) ((C1315) AbstractC0744.firstInList(c1299M4739.resolve())).m3024()).m3490();
+                C1299 c1299M3491 = AbstractC0968.startMethodResolution_((Activity) ((C1315) AbstractC0744.firstInList(c1299M4739.resolve())).m3024()).m3490();
                 c1299M3491.f4726 = new C1285(6);
                 Object item = ((BaseAdapter) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).getItem(iIntValue);
                 for (Object obj4 : C1290.f4704) {
@@ -199,7 +199,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 }
                 ContextMenu contextMenu2 = (ContextMenu) (c2587 instanceof C2585 ? null : c2587);
                 int i8 = 0;
-                C1299 c1299M3492 = AbstractC0968.startFieldResolution(contextMenu2).m3490();
+                C1299 c1299M3492 = AbstractC0968.startMethodResolution_(contextMenu2).m3490();
                 c1299M3492.fieldType = AbstractC2519.classToKClass(Context.class);
                 AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3492.resolve())).m3024());
                 C2873 c2874 = new C2873(new C1286(contextMenu2, 1));
@@ -248,8 +248,8 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 c1299M47310.fieldType = AbstractC2519.classToKClass(cls);
                 int iIntValue2 = ((Number) ((C1315) AbstractC0744.firstInList(c1299M47310.resolve())).m3024()).intValue();
                 C1299 c1299M47311 = AbstractC2784.m4738(c1566);
-                c1299M47311.f6370 = "d";
-                C1299 c1299M3493 = AbstractC0968.startFieldResolution(((C1315) AbstractC0744.firstInList(c1299M47311.resolve())).m3023()).m3490();
+                c1299M47311.name = "d";
+                C1299 c1299M3493 = AbstractC0968.startMethodResolution_(((C1315) AbstractC0744.firstInList(c1299M47311.resolve())).m3023()).m3490();
                 c1299M3493.f4726 = new C1285(13);
                 Object item2 = ((BaseAdapter) ((C1315) AbstractC0744.firstInList(c1299M3493.resolve())).m3024()).getItem(iIntValue2);
                 for (Object obj6 : C1294.f4710) {
@@ -336,7 +336,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                     str = "";
                 }
                 if (str.equals("attachment")) {
-                    c1567.m3272(C1322.f4771.m2542());
+                    c1567.setReturn(C1322.f4771.m2542());
                 }
                 return unit;
             case 20:
@@ -378,20 +378,20 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 }
                 MenuItem menuItem3 = (MenuItem) (c25811 instanceof C2585 ? null : c25811);
                 int i10 = 0;
-                C1299 c1299M3494 = AbstractC0968.startFieldResolution(obj7).m3490();
+                C1299 c1299M3494 = AbstractC0968.startMethodResolution_(obj7).m3490();
                 c1299M3494.fieldType = "com.tencent.mm.plugin.finder.storage.FinderItem";
                 Object objM3023 = ((C1315) AbstractC2784.m4741(c1299M3494)).m3023();
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(objM3023).m3492();
-                c1973M3492.f6370 = "getMediaType";
-                int iIntValue3 = ((Number) ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).invoke(new Object[0])).intValue();
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(objM3023).m3492();
-                c1973M3493.f6370 = "getMediaList";
-                List list = (List) ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).invoke(new Object[0]);
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(objM3023).m3492();
+                c1973M3492.name = "getMediaType";
+                int iIntValue3 = ((Number) ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).invoke(new Object[0])).intValue();
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(objM3023).m3492();
+                c1973M3493.name = "getMediaList";
+                List list = (List) ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).invoke(new Object[0]);
                 ArrayList arrayList6 = new ArrayList(AbstractC0746.m2214(list, 10));
                 for (Object obj8 : list) {
                     int i11 = 0;
-                    MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(obj8).m3492();
-                    c1973M3494.f6370 = "toJSON";
+                    MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(obj8).m3492();
+                    c1973M3494.name = "toJSON";
                     arrayList6.add((JSONObject) ((C1982) AbstractC2784.m4742(c1973M3494)).invoke(new Object[0]));
                 }
                 for (Object obj9 : C1337.f4802) {
@@ -434,7 +434,7 @@ public final /* synthetic */ class C1285 implements InterfaceC1425 {
                 }
                 ContextMenu contextMenu3 = (ContextMenu) (c25812 instanceof C2585 ? null : c25812);
                 int i12 = 0;
-                C1299 c1299M3495 = AbstractC0968.startFieldResolution(contextMenu3).m3490();
+                C1299 c1299M3495 = AbstractC0968.startMethodResolution_(contextMenu3).m3490();
                 c1299M3495.fieldType = AbstractC2519.classToKClass(Context.class);
                 AbstractC2207.m4098((Context) ((C1315) AbstractC0744.firstInList(c1299M3495.resolve())).m3024());
                 C2873 c2875 = new C2873(new C1286(contextMenu3, 2));

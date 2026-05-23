@@ -78,15 +78,15 @@ public final class C3679 implements Serializable {
         ((C1927) c1744M2483.f5843).f6366 = AbstractC2205.m4054();
         c1744M2483.m3493(true);
         MethodResolver c1973M3492 = c1744M2483.m3492();
-        c1973M3492.f6370 = "currentActivityThread";
+        c1973M3492.name = "currentActivityThread";
         c1973M3492.m2887();
-        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
         Context context = null;
         Object objM3831 = c1982 != null ? c1982.m3831(new Object[0]) : null;
         MethodResolver c1973M3493 = c1744M2483.m3492();
-        c1973M3493.f6370 = "getSystemContext";
+        c1973M3493.name = "getSystemContext";
         c1973M3493.m2887();
-        C1982 c1983 = (C1982) AbstractC0744.m2192(c1973M3493.m3799());
+        C1982 c1983 = (C1982) AbstractC0744.m2192(c1973M3493.resolve());
         if (c1983 != null) {
             c1983.m3378(objM3831);
             try {
@@ -102,9 +102,9 @@ public final class C3679 implements Serializable {
             ((C1927) c1744M2482.f5843).f6366 = AbstractC2205.m4054();
             c1744M2482.m3493(true);
             MethodResolver c1973M3494 = c1744M2482.m3492();
-            c1973M3494.f6370 = "getUserId";
-            c1973M3494.m2888(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE)}, 1));
-            C1982 c1984 = (C1982) AbstractC0744.m2192(c1973M3494.m3799());
+            c1973M3494.name = "getUserId";
+            c1973M3494.paramTypes(Arrays.copyOf(new Object[]{AbstractC2519.classToKClass(Integer.TYPE)}, 1));
+            C1982 c1984 = (C1982) AbstractC0744.m2192(c1973M3494.resolve());
             if (c1984 != null && (num = (Integer) c1984.invoke(Integer.valueOf(i3))) != null) {
                 iIntValue = num.intValue();
             }

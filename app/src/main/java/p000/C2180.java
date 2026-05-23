@@ -23,11 +23,11 @@ public final class C2180 extends AbstractC1823 implements InterfaceC1582 {
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᲁᲇᤞᲈ, reason: contains not printable characters */
     public static void m3961(Object obj, final C2165 c2165) {
         int i = 0;
-        MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
-        c1973M3492.f6370 = "doScene";
+        MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(obj).m3492();
+        c1973M3492.name = "doScene";
         c1973M3492.f4485 = 2;
-        c1973M3492.m3732();
-        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.m3799());
+        c1973M3492.superclass();
+        C1982 c1982 = (C1982) AbstractC0744.m2192(c1973M3492.resolve());
         if (c1982 == null) {
             return;
         }
@@ -71,25 +71,25 @@ public final class C2180 extends AbstractC1823 implements InterfaceC1582 {
                                     String str = obj5 instanceof String ? (String) obj5 : null;
                                     Object obj6 = objArr[3];
                                     int i2 = 0;
-                                    MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(objArr[3]).m3492();
-                                    c1973M3493.f6370 = "getReqResp";
-                                    c1973M3493.m3732();
-                                    Object objM3831 = ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).m3831(new Object[0]);
+                                    MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(objArr[3]).m3492();
+                                    c1973M3493.name = "getReqResp";
+                                    c1973M3493.superclass();
+                                    Object objM3831 = ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).m3831(new Object[0]);
                                     if (objM3831 != null) {
-                                        MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(objM3831).m3492();
-                                        c1973M3494.f6370 = "getRespObj";
-                                        c1973M3494.m3732();
-                                        Object objM3832 = ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).m3831(new Object[0]);
+                                        MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(objM3831).m3492();
+                                        c1973M3494.name = "getRespObj";
+                                        c1973M3494.superclass();
+                                        Object objM3832 = ((C1982) AbstractC0744.firstInList(c1973M3494.resolve())).m3831(new Object[0]);
                                         if (objM3832 != null) {
-                                            C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM3832).m3490();
-                                            c1299M3490.f6370 = "a";
-                                            c1299M3490.m3732();
+                                            C1299 c1299M3490 = AbstractC0968.startMethodResolution_(objM3832).m3490();
+                                            c1299M3490.name = "a";
+                                            c1299M3490.superclass();
                                             Object objM3023 = ((C1315) AbstractC0744.firstInList(c1299M3490.resolve())).m3023();
                                             if (objM3023 != null) {
-                                                MethodResolver c1973M3495 = AbstractC0968.startFieldResolution(objM3023).m3492();
-                                                c1973M3495.f6370 = "toByteArray";
-                                                c1973M3495.m3732();
-                                                byte[] bArr = (byte[]) ((C1982) AbstractC0744.firstInList(c1973M3495.m3799())).invoke(new Object[0]);
+                                                MethodResolver c1973M3495 = AbstractC0968.startMethodResolution_(objM3023).m3492();
+                                                c1973M3495.name = "toByteArray";
+                                                c1973M3495.superclass();
+                                                byte[] bArr = (byte[]) ((C1982) AbstractC0744.firstInList(c1973M3495.resolve())).invoke(new Object[0]);
                                                 if (bArr != null) {
                                                     c2166.m3957(num, num2, str, bArr);
                                                 }

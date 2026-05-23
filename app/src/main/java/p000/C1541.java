@@ -48,13 +48,13 @@ public final class C1541 extends AbstractC2867 implements InterfaceC1582 {
     public final void mo1126() {
         List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod(C1539.f5385));
         C1541 c1541 = f5387;
-        C3689 c3689M4172 = C2309.m4172(c1541, listSingletonList);
+        C3689 c3689M4172 = C2309.createHook(c1541, listSingletonList);
         c1541.m3262(c3689M4172, new C1538(1));
-        c3689M4172.m5352();
+        c3689M4172.applyHook();
         if (AbstractC3471.m5079(WeChatVersions.f11543) || AbstractC3471.m5080(WeChatVersionsPlay.f11509)) {
-            C3689 c3689M4173 = C2309.m4172(c1541, Collections.singletonList(AbstractC1574.dexToMethod(C1540.f5386)));
+            C3689 c3689M4173 = C2309.createHook(c1541, Collections.singletonList(AbstractC1574.dexToMethod(C1540.f5386)));
             c1541.m3262(c3689M4173, new C1538(4));
-            c3689M4173.m5352();
+            c3689M4173.applyHook();
         }
     }
 

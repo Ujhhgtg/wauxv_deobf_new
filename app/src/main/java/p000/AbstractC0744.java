@@ -118,7 +118,7 @@ public abstract class AbstractC0744 extends AbstractC0750 {
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲇᤞᲈᲁᲀ, reason: contains not printable characters */
-    public static Object m2199(List list) {
+    public static Object randomFromList(List list) {
         AbstractC0066 abstractC0066 = AbstractC2474.f7908;
         if (list.isEmpty()) {
             throw new NoSuchElementException("Collection is empty.");

@@ -113,8 +113,8 @@ public final class C1500 extends AbstractC2867 implements InterfaceC1578 {
                 } else {
                     
                     int i = 0;
-                    C1299 c1299M3490 = AbstractC0968.startFieldResolution(objM2066).m3490();
-                    c1299M3490.f6370 = "field_roomowner";
+                    C1299 c1299M3490 = AbstractC0968.startMethodResolution_(objM2066).m3490();
+                    c1299M3490.name = "field_roomowner";
                     zM4087 = AbstractC2207.m4087((String) ((C1315) AbstractC2784.m4741(c1299M3490)).m3024(), sendTalker);
                     c0314.put(c2317, Boolean.valueOf(zM4087));
                 }
@@ -142,8 +142,8 @@ public final class C1500 extends AbstractC2867 implements InterfaceC1578 {
                         Object objInvoke = AbstractC1574.dexToMethod(C0651.f2503).invoke(objM2067, sendTalker2);
                         if (objInvoke != null) {
                             int i2 = 0;
-                            C1299 c1299M3491 = AbstractC0968.startFieldResolution(objInvoke).m3490();
-                            c1299M3491.f6370 = "f";
+                            C1299 c1299M3491 = AbstractC0968.startMethodResolution_(objInvoke).m3490();
+                            c1299M3491.name = "f";
                             if ((((Number) ((C1315) AbstractC0744.firstInList(c1299M3491.resolve())).m3024()).intValue() & 2048) != 0) {
                                 zBooleanValue = true;
                             } else {
@@ -162,8 +162,8 @@ public final class C1500 extends AbstractC2867 implements InterfaceC1578 {
                     str2 = (String) c2316.f7445;
                     c1487 = (C1487) c2316.f7446;
                     int i3 = 0;
-                    C1299 c1299M3492 = AbstractC0968.startFieldResolution(obj).m3490();
-                    c1299M3492.f6370 = "userTV";
+                    C1299 c1299M3492 = AbstractC0968.startMethodResolution_(obj).m3490();
+                    c1299M3492.name = "userTV";
                     textView = (TextView) ((C1315) AbstractC2784.m4741(c1299M3492)).m3024();
                     if (textView != null) {
                         text = textView.getText();
@@ -190,8 +190,8 @@ public final class C1500 extends AbstractC2867 implements InterfaceC1578 {
             str2 = (String) c2316.f7445;
             c1487 = (C1487) c2316.f7446;
             int i4 = 0;
-            C1299 c1299M3493 = AbstractC0968.startFieldResolution(obj).m3490();
-            c1299M3493.f6370 = "userTV";
+            C1299 c1299M3493 = AbstractC0968.startMethodResolution_(obj).m3490();
+            c1299M3493.name = "userTV";
             textView = (TextView) ((C1315) AbstractC2784.m4741(c1299M3493)).m3024();
             if (textView != null) {
                 text = textView.getText();

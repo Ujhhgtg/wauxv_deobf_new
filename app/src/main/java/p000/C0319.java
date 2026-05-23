@@ -41,13 +41,13 @@ public final class C0319 extends AbstractC2867 implements InterfaceC1582 {
     @Override // p000.AbstractC1557
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᲀᤞᲈᲇᲁ */
     public final void mo1126() {
-        Iterator it = AbstractC0745.m2212(C0318.f1566, C0317.f1565).iterator();
+        Iterator it = AbstractC0745.listOf(C0318.f1566, C0317.f1565).iterator();
         while (it.hasNext()) {
             List listSingletonList = Collections.singletonList(AbstractC1574.dexToMethod((AbstractC1021) it.next()));
             C0319 c0319 = f1567;
-            C3689 c3689M4172 = C2309.m4172(c0319, listSingletonList);
+            C3689 c3689M4172 = C2309.createHook(c0319, listSingletonList);
             c0319.m3262(c3689M4172, new C0316(3));
-            c3689M4172.m5352();
+            c3689M4172.applyHook();
         }
     }
 

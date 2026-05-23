@@ -98,7 +98,7 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                 int i = 0;
                 MethodResolver c1973M3492 = AbstractC0968.startMethodResolution(AbstractC1574.dexToClass(C1151.f4258)).m3492();
                 c1973M3492.m3800(EnumC1999.STATIC);
-                MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(((C1982) AbstractC1194.m2778(c1973M3492)).m3831(new Object[0])).m3492();
+                MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(((C1982) AbstractC1194.m2778(c1973M3492)).m3831(new Object[0])).m3492();
                 c1973M3493.returnType = AbstractC2519.classToKClass(byte[].class);
                 String[] strArr = AbstractC1574.f5469;
                 byte[] bArr = (byte[]) ((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{"com.tencent.mm.api.IEmojiInfo"}, 1, c1973M3493)).invoke(objM2761);
@@ -117,8 +117,8 @@ public final /* synthetic */ class C0184 implements InterfaceC1429 {
                     File file2 = new File(file, string);
                     if (AbstractC2203.m4034(bArr)) {
                         MethodResolver c1973M3494 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.gif.MMWXGFJNI")).m3492();
-                        c1973M3494.f6370 = "nativeWxamToGif";
-                        bArr = (byte[]) ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).invoke(bArr);
+                        c1973M3494.name = "nativeWxamToGif";
+                        bArr = (byte[]) ((C1982) AbstractC0744.firstInList(c1973M3494.resolve())).invoke(bArr);
                     }
                     FileOutputStream fileOutputStream = new FileOutputStream(file2);
                     try {

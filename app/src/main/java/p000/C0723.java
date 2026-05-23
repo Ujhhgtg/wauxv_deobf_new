@@ -50,7 +50,7 @@ public final class C0723 extends AbstractC2867 implements InterfaceC1588 {
         int i = 0;
         C3689 c3689M4174 = m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Integer.TYPE), AbstractC2519.classToKClass(ViewGroup.class)}, 2, AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.ui.LauncherUIBottomTabView")).m3492()), 1);
         f2734.m3262(c3689M4174, new C0679(6));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
     }
 
     @Override // p000.AbstractC2867

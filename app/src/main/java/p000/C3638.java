@@ -27,16 +27,16 @@ public final class C3638 extends AbstractC1823 {
         String[] strArr = AbstractC1574.f5469;
         C1744 c1744M2483 = AbstractC0968.startMethodResolution(AbstractC2201.m3988("com.tencent.mm.plugin.setting.ui.setting.SettingsUI"));
         MethodResolver c1973M3492 = c1744M2483.m3492();
-        c1973M3492.f6370 = "onCreate";
+        c1973M3492.name = "onCreate";
         C1982 c1982 = (C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{AbstractC2519.classToKClass(Bundle.class)}, 1, c1973M3492);
         C3638 c3638 = f11378;
         C3689 c3689M4174 = c3638.m4174(c1982, 3);
         c3689M4174.m5350(new C3618(18));
-        c3689M4174.m5352();
+        c3689M4174.applyHook();
         MethodResolver c1973M3493 = c1744M2483.m3492();
-        c1973M3493.f6370 = "onPreferenceTreeClick";
+        c1973M3493.name = "onPreferenceTreeClick";
         C3689 c3689M4175 = c3638.m4174((C1982) AbstractC2784.setParamsAndResolveFirstMethod(new Object[]{C3529.f11042, C2391.f7652.m4369()}, 2, c1973M3493), 1);
         c3689M4175.m5351(new C3618(19));
-        c3689M4175.m5352();
+        c3689M4175.applyHook();
     }
 }

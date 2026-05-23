@@ -16,7 +16,7 @@ import org.xmlpull.v1.XmlSerializer;
 /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᤞᲀᛸᤝᲈᲇᲁ, reason: contains not printable characters */
 /* JADX INFO: compiled from: obf */
 /* JADX INFO: loaded from: classes.dex */
-public final class C1732 {
+public final class JsonToXmlConverter {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ, reason: contains not printable characters */
     public static final DecimalFormat f5828 = new DecimalFormat("0", DecimalFormatSymbols.getInstance(Locale.ENGLISH));

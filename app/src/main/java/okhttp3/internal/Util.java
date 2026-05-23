@@ -1,6 +1,5 @@
 package okhttp3.internal;
 
-import com.alibaba.fastjson2.JSONWriter;
 import java.io.Closeable;
 import java.io.EOFException;
 import java.io.File;
@@ -35,7 +34,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
-import okhttp3.internal.Util;
 import okhttp3.internal.http2.Header;
 import okhttp3.internal.io.FileSystem;
 import p000.AbstractC0599;
@@ -247,7 +245,7 @@ public final class Util {
     @SafeVarargs
     public static final <T> List<T> immutableListOf(T... tArr) {
         Object[] objArr = (Object[]) tArr.clone();
-        return Collections.unmodifiableList(AbstractC0745.m2212(Arrays.copyOf(objArr, objArr.length)));
+        return Collections.unmodifiableList(AbstractC0745.listOf(Arrays.copyOf(objArr, objArr.length)));
     }
 
     public static final int indexOf(String[] strArr, String str, Comparator<String> comparator) {

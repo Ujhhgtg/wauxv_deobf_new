@@ -123,29 +123,29 @@ public final class C1744 implements InterfaceC1905, InterfaceC1036, InterfaceC19
             int itemId = menuItem.getItemId();
             if (itemId == 0) {
                 int i = 0;
-                MethodResolver c1973M3492 = AbstractC0968.startFieldResolution(obj).m3492();
-                c1973M3492.f6370 = "onTabClick";
-                ((C1982) AbstractC0744.firstInList(c1973M3492.m3799())).m3831(0);
+                MethodResolver c1973M3492 = AbstractC0968.startMethodResolution_(obj).m3492();
+                c1973M3492.name = "onTabClick";
+                ((C1982) AbstractC0744.firstInList(c1973M3492.resolve())).m3831(0);
             } else {
                 if (itemId == 1) {
                     int i2 = 0;
-                    MethodResolver c1973M3493 = AbstractC0968.startFieldResolution(obj).m3492();
-                    c1973M3493.f6370 = "onTabClick";
-                    ((C1982) AbstractC0744.firstInList(c1973M3493.m3799())).m3831(1);
+                    MethodResolver c1973M3493 = AbstractC0968.startMethodResolution_(obj).m3492();
+                    c1973M3493.name = "onTabClick";
+                    ((C1982) AbstractC0744.firstInList(c1973M3493.resolve())).m3831(1);
                     return false;
                 }
                 if (itemId == 2) {
                     int i3 = 0;
-                    MethodResolver c1973M3494 = AbstractC0968.startFieldResolution(obj).m3492();
-                    c1973M3494.f6370 = "onTabClick";
-                    ((C1982) AbstractC0744.firstInList(c1973M3494.m3799())).m3831(2);
+                    MethodResolver c1973M3494 = AbstractC0968.startMethodResolution_(obj).m3492();
+                    c1973M3494.name = "onTabClick";
+                    ((C1982) AbstractC0744.firstInList(c1973M3494.resolve())).m3831(2);
                     return false;
                 }
                 if (itemId == 3) {
                     int i4 = 0;
-                    MethodResolver c1973M3495 = AbstractC0968.startFieldResolution(obj).m3492();
-                    c1973M3495.f6370 = "onTabClick";
-                    ((C1982) AbstractC0744.firstInList(c1973M3495.m3799())).m3831(3);
+                    MethodResolver c1973M3495 = AbstractC0968.startMethodResolution_(obj).m3492();
+                    c1973M3495.name = "onTabClick";
+                    ((C1982) AbstractC0744.firstInList(c1973M3495.resolve())).m3831(3);
                     return false;
                 }
             }

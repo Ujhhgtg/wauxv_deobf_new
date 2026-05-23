@@ -23,7 +23,7 @@ public abstract class AbstractC1937 {
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
     public static C1331 m3733(C0271 c0271, AbstractC1928 abstractC1928, C1927 c1927) {
-        return m3746(m3746(m3746(m3746(m3746(m3746(m3746(m3746(m3746(m3746(c0271, c1927, "name", abstractC1928.f6370, new C0184(23)), c1927, "nameCondition", abstractC1928.f6371, new C0184(24)), c1927, "modifiers", abstractC1928.f6372, new C0184(26)), c1927, "modifiersNot", abstractC1928.f6373, new C0184(27)), c1927, "modifiersCondition", null, new C0184(28)), c1927, "isSynthetic", null, new C0184(29)), c1927, "isSyntheticNot", null, new C1933(0)), c1927, "annotations", abstractC1928.f6374, new C1931(c1927, 15)), c1927, "annotationsNot", abstractC1928.f6375, new C1931(c1927, 16)), c1927, "genericString", null, new C1933(1));
+        return m3746(m3746(m3746(m3746(m3746(m3746(m3746(m3746(m3746(m3746(c0271, c1927, "name", abstractC1928.name, new C0184(23)), c1927, "nameCondition", abstractC1928.f6371, new C0184(24)), c1927, "modifiers", abstractC1928.f6372, new C0184(26)), c1927, "modifiersNot", abstractC1928.f6373, new C0184(27)), c1927, "modifiersCondition", null, new C0184(28)), c1927, "isSynthetic", null, new C0184(29)), c1927, "isSyntheticNot", null, new C1933(0)), c1927, "annotations", abstractC1928.f6374, new C1931(c1927, 15)), c1927, "annotationsNot", abstractC1928.f6375, new C1931(c1927, 16)), c1927, "genericString", null, new C1933(1));
     }
 
     /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ, reason: contains not printable characters */
@@ -302,7 +302,7 @@ public abstract class AbstractC1937 {
                 final int i = iM3736 + iM3738;
                 String str4 = "+-" + AbstractC2849.m4856(iM3734, "-") + "-+-" + AbstractC2849.m4856(i, "-") + "-+";
                 int i2 = iM3734 + i + 3;
-                strConcat = AbstractC0744.m2196(AbstractC0745.m2212("+-" + AbstractC2849.m4856(i2, "-") + "-+", "| " + m3735(i2, strM4858) + " |", str4, AbstractC0744.m2196(arrayList, "\n", null, null, new InterfaceC1425() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲇᲀᤝᲈᛸ
+                strConcat = AbstractC0744.m2196(AbstractC0745.listOf("+-" + AbstractC2849.m4856(i2, "-") + "-+", "| " + m3735(i2, strM4858) + " |", str4, AbstractC0744.m2196(arrayList, "\n", null, null, new InterfaceC1425() { // from class: ᛱᛲᛳᛴᛵᛶᛷᤞᲁᲇᲀᤝᲈᛸ
                     @Override // p000.InterfaceC1425
                     public final Object invoke(Object obj) {
                         C2315 c2316 = (C2315) obj;
