@@ -18,9 +18,9 @@ jadx \
     ./wauxv_deobf_new.apk
 ```
 
-## 使用的字符串解密脚本
+## 使用的反混淆脚本
 
-[here](./app/src/main/decrypt_encrypted_strings.py)
+[here](https://github.com/Ujhhgtg/java_deobf_utils)
 
 (我直接把以前旧版的 Java 混淆过的解密代码丢给 Gemini 花 3 分钟跑出来的)
 
