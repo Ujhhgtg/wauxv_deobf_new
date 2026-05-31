@@ -1,0 +1,112 @@
+package p000;
+
+import me.hd.wauxv.hook.factory.MagicFactory;
+
+/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᛸᲇᲀᲈᤞᤝ, reason: contains not printable characters */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class C3025 implements InterfaceC1451 {
+    private static final InterfaceC2715 descriptor;
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
+    public static final C3025 f9659;
+
+    static {
+        C3025 c3025 = new C3025();
+        f9659 = c3025;
+        String[] strArr = AbstractC1471.f5234;
+        C2405 c2405 = new C2405("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.GameShareCardObjectProto", c3025, 6);
+        AbstractC2647.m4626(c2405, "sharedata", false, 1);
+        AbstractC2647.m4626(c2405, "gameshareid", false, 2);
+        AbstractC2647.m4626(c2405, "isvideo", false, 3);
+        AbstractC2647.m4626(c2405, "duration", false, 4);
+        AbstractC2647.m4626(c2405, "liteappbizdata", false, 5);
+        AbstractC2647.m4626(c2405, "liteapppriority", false, 6);
+        descriptor = c2405;
+    }
+
+    @Override // p000.InterfaceC1767
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ */
+    public final InterfaceC2715 mo1509() {
+        return descriptor;
+    }
+
+    @Override // p000.InterfaceC1767
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲈᲇ */
+    public final Object mo1068(InterfaceC0978 interfaceC0978) {
+        InterfaceC2715 interfaceC2715 = descriptor;
+        InterfaceC0764 interfaceC0764Mo2636 = interfaceC0978.mo2636(interfaceC2715);
+        interfaceC0764Mo2636.getClass();
+        int i = 0;
+        Integer num = null;
+        Integer num2 = null;
+        Integer num3 = null;
+        String str = null;
+        String str2 = null;
+        String str3 = null;
+        boolean z = true;
+        while (z) {
+            int iMo2331 = interfaceC0764Mo2636.mo2331(interfaceC2715);
+            switch (iMo2331) {
+                case -1:
+                    z = false;
+                    break;
+                case 0:
+                    str = (String) interfaceC0764Mo2636.mo2340(interfaceC2715, 0, C2899.f9270, str);
+                    i |= 1;
+                    break;
+                case 1:
+                    str2 = (String) interfaceC0764Mo2636.mo2340(interfaceC2715, 1, C2899.f9270, str2);
+                    i |= 2;
+                    break;
+                case 2:
+                    num = (Integer) interfaceC0764Mo2636.mo2340(interfaceC2715, 2, C1680.f5658, num);
+                    i |= 4;
+                    break;
+                case 3:
+                    num2 = (Integer) interfaceC0764Mo2636.mo2340(interfaceC2715, 3, C1680.f5658, num2);
+                    i |= 8;
+                    break;
+                case 4:
+                    str3 = (String) interfaceC0764Mo2636.mo2340(interfaceC2715, 4, C2899.f9270, str3);
+                    i |= 16;
+                    break;
+                case 5:
+                    num3 = (Integer) interfaceC0764Mo2636.mo2340(interfaceC2715, 5, C1680.f5658, num3);
+                    i |= 32;
+                    break;
+                default:
+                    throw new C3558(iMo2331);
+            }
+        }
+        interfaceC0764Mo2636.mo2329(interfaceC2715);
+        return new C3027(i, num, num2, num3, str, str2, str3);
+    }
+
+    @Override // p000.InterfaceC1451
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ */
+    public final InterfaceC1767[] mo1647() {
+        C2899 c2899 = C2899.f9270;
+        InterfaceC1767 interfaceC1767M3392 = AbstractC1471.m3392(c2899);
+        InterfaceC1767 interfaceC1767M3393 = AbstractC1471.m3392(c2899);
+        C1680 c1680 = C1680.f5658;
+        return new InterfaceC1767[]{interfaceC1767M3392, interfaceC1767M3393, AbstractC1471.m3392(c1680), AbstractC1471.m3392(c1680), AbstractC1471.m3392(c2899), AbstractC1471.m3392(c1680)};
+    }
+
+    @Override // p000.InterfaceC1767
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲈᲁ */
+    public final void mo1648(InterfaceC1207 interfaceC1207, Object obj) {
+        C3027 c3027 = (C3027) obj;
+        InterfaceC2715 interfaceC2715 = descriptor;
+        InterfaceC0765 interfaceC0765Mo2918 = interfaceC1207.mo2918(interfaceC2715);
+        C2899 c2899 = C2899.f9270;
+        interfaceC0765Mo2918.mo2354(interfaceC2715, 0, c2899, c3027.f9660);
+        interfaceC0765Mo2918.mo2354(interfaceC2715, 1, c2899, c3027.f9661);
+        C1680 c1680 = C1680.f5658;
+        interfaceC0765Mo2918.mo2354(interfaceC2715, 2, c1680, c3027.f9662);
+        interfaceC0765Mo2918.mo2354(interfaceC2715, 3, c1680, c3027.f9663);
+        interfaceC0765Mo2918.mo2354(interfaceC2715, 4, c2899, c3027.f9664);
+        interfaceC0765Mo2918.mo2354(interfaceC2715, 5, c1680, c3027.f9665);
+        interfaceC0765Mo2918.mo2343(interfaceC2715);
+    }
+}

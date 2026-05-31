@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="?attr/dialogPreferredPadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?attr/dialogPreferredPadding"
+    android:paddingEnd="?attr/dialogPreferredPadding">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.button.MaterialButton
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnSurface"
+            android:id="@+id/moduleDialogBtnPanelEmojiCopyPath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="复制路径"
+            android:layout_weight="1"
+            style="?attr/materialIconButtonFilledTonalStyle"/>
+        <com.google.android.material.button.MaterialButton
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnSurface"
+            android:id="@+id/moduleDialogBtnPanelEmojiClearGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="清除分组"
+            android:layout_weight="1"
+            style="?attr/materialIconButtonFilledTonalStyle"/>
+    </LinearLayout>
+</LinearLayout>

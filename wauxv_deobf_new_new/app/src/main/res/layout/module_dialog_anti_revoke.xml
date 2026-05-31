@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="?attr/dialogPreferredPadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?attr/dialogPreferredPadding"
+    android:paddingEnd="?attr/dialogPreferredPadding">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/moduleDialogInputAntiRevokeTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:hint="阻止提示">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnSurface"
+            android:id="@+id/moduleDialogEdtAntiRevokeTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="尝试撤回上一条信息[已阻止]"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

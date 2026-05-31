@@ -1,0 +1,971 @@
+package me.hd.wauxv.data.bean;
+
+import com.alibaba.fastjson2.JSONArray;
+import com.alibaba.fastjson2.JSONObject;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import me.hd.wauxv.hook.factory.MagicFactory;
+import p000.AbstractC0280;
+import p000.AbstractC0740;
+import p000.AbstractC1469;
+import p000.AbstractC1471;
+import p000.AbstractC1768;
+import p000.AbstractC2727;
+import p000.AbstractC2844;
+import p000.AbstractC2894;
+import p000.AbstractC2901;
+import p000.AbstractC2908;
+import p000.C0482;
+import p000.C0643;
+import p000.C0665;
+import p000.C0770;
+import p000.C1191;
+import p000.C1300;
+import p000.C1316;
+import p000.EnumC3575;
+import p000.EnumC3733;
+
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final class MsgInfoBean {
+    private final long createTime;
+    private final String imgPath;
+    private final Integer isSendInt;
+    private final byte[] lvBuffer;
+    private final long msgId;
+    private final Long msgSeq;
+    private final Long msgSvrId;
+    private final Object origin;
+    private final String originContent;
+    private final String talker;
+    private final Integer talkerId;
+    private final int type;
+
+    public MsgInfoBean(Object obj) {
+        this.origin = obj;
+        int i = AbstractC1768.f5906;
+        C1300 c1300M3558 = AbstractC2727.m4713(obj).m3558();
+        String[] strArr = AbstractC1471.f5234;
+        c1300M3558.f6475 = "field_msgId";
+        this.msgId = ((Number) ((C1316) AbstractC2844.m4775(c1300M3558)).m3127()).longValue();
+        C1300 c1300M3559 = AbstractC2727.m4713(obj).m3558();
+        c1300M3559.f6475 = "field_msgSvrId";
+        this.msgSvrId = (Long) ((C1316) AbstractC2844.m4775(c1300M3559)).m3127();
+        C1300 c1300M35510 = AbstractC2727.m4713(obj).m3558();
+        c1300M35510.f6475 = "field_type";
+        this.type = ((Number) ((C1316) AbstractC2844.m4775(c1300M35510)).m3127()).intValue();
+        C1300 c1300M35511 = AbstractC2727.m4713(obj).m3558();
+        c1300M35511.f6475 = "field_isSend";
+        this.isSendInt = (Integer) ((C1316) AbstractC2844.m4775(c1300M35511)).m3127();
+        C1300 c1300M35512 = AbstractC2727.m4713(obj).m3558();
+        c1300M35512.f6475 = "field_createTime";
+        this.createTime = ((Number) ((C1316) AbstractC2844.m4775(c1300M35512)).m3127()).longValue();
+        C1300 c1300M35513 = AbstractC2727.m4713(obj).m3558();
+        c1300M35513.f6475 = "field_talker";
+        this.talker = (String) ((C1316) AbstractC2844.m4775(c1300M35513)).m3127();
+        C1300 c1300M35514 = AbstractC2727.m4713(obj).m3558();
+        c1300M35514.f6475 = "field_content";
+        this.originContent = (String) ((C1316) AbstractC2844.m4775(c1300M35514)).m3127();
+        C1300 c1300M35515 = AbstractC2727.m4713(obj).m3558();
+        c1300M35515.f6475 = "field_imgPath";
+        this.imgPath = (String) ((C1316) AbstractC2844.m4775(c1300M35515)).m3127();
+        C1300 c1300M35516 = AbstractC2727.m4713(obj).m3558();
+        c1300M35516.f6475 = "field_lvbuffer";
+        this.lvBuffer = (byte[]) ((C1316) AbstractC2844.m4775(c1300M35516)).m3127();
+        C1300 c1300M35517 = AbstractC2727.m4713(obj).m3558();
+        c1300M35517.f6475 = "field_talkerId";
+        this.talkerId = (Integer) ((C1316) AbstractC2844.m4775(c1300M35517)).m3127();
+        C1300 c1300M35518 = AbstractC2727.m4713(obj).m3558();
+        c1300M35518.f6475 = "field_msgSeq";
+        this.msgSeq = (Long) ((C1316) AbstractC2844.m4775(c1300M35518)).m3127();
+    }
+
+    public final List<String> getAtUserList() {
+        JSONObject jSONObjectM4854 = AbstractC2894.m4854(getMsgSource());
+        String[] strArr = AbstractC1471.f5234;
+        Object byPath = jSONObjectM4854.getByPath("msgsource.atuserlist");
+        String str = byPath instanceof String ? (String) byPath : null;
+        if (str == null || str.length() == 0) {
+            return C1191.f4326;
+        }
+        List listM4876 = AbstractC2901.m4876(str, new String[]{","});
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : listM4876) {
+            if (((String) obj).length() > 0) {
+                arrayList.add(obj);
+            }
+        }
+        return arrayList;
+    }
+
+    public final String getContent() {
+        String[] strArr = AbstractC1471.f5234;
+        if (isText()) {
+            if (!isGroupChat()) {
+                return this.originContent;
+            }
+            if (isSend()) {
+                return this.originContent;
+            }
+            String str = this.originContent;
+            return AbstractC2901.m4877(str, "\n", str);
+        }
+        if (isImage()) {
+            String str2 = this.originContent;
+            if (str2 != null) {
+                if (AbstractC2901.m4861(str2, "<msg>", false) && AbstractC2901.m4861(str2, "</msg>", false)) {
+                    str2 = "<msg>" + AbstractC2894.m4850(AbstractC2901.m4880(AbstractC2901.m4877(str2, "<msg>", str2), "</msg>")) + "</msg>";
+                } else if (str2.length() == 0) {
+                    str2 = this.imgPath;
+                }
+                if (str2 != null) {
+                    return str2;
+                }
+            }
+            String str3 = this.imgPath;
+            return str3 == null ? "" : str3;
+        }
+        if (isEmoji()) {
+            String str4 = this.originContent;
+            if (!AbstractC2901.m4861(str4, "<msg>", false) || !AbstractC2901.m4861(str4, "</msg>", false)) {
+                return str4;
+            }
+            return "<msg>" + AbstractC2894.m4850(AbstractC2901.m4880(AbstractC2901.m4877(str4, "<msg>", str4), "</msg>")) + "</msg>";
+        }
+        if (isVoice() || isVideo()) {
+            String str5 = this.originContent;
+            return (AbstractC2901.m4861(str5, "<msg>", false) && AbstractC2901.m4861(str5, "</msg>", false)) ? AbstractC2901.m4879(AbstractC2901.m4877(str5, "voicelength=\"", str5), "\"") : AbstractC2901.m4879(AbstractC2901.m4877(str5, ":", str5), ":");
+        }
+        if (isShareCard()) {
+            String str6 = this.originContent;
+            return "<msg " + AbstractC2894.m4850(AbstractC2901.m4880(AbstractC2901.m4877(str6, "<msg", str6), "/>")) + " />";
+        }
+        if (!isShareCard() && !isLocation() && !isApp() && !isLink() && !isTransfer() && !isRedBag() && !isVideoNumberVideo() && !isNote() && !isQuote() && !isFile()) {
+            return isPat() ? getPatMsg().getTemplate() : this.originContent;
+        }
+        String str7 = this.originContent;
+        return "<msg>" + AbstractC2894.m4850(AbstractC2901.m4880(AbstractC2901.m4877(str7, "<msg>", str7), "</msg>")) + "</msg>";
+    }
+
+    public final long getCreateTime() {
+        return this.createTime;
+    }
+
+    public final FileMsg getFileMsg() {
+        if (isFile()) {
+            return new FileMsg(this.originContent);
+        }
+        return null;
+    }
+
+    public final ImageMsg getImageMsg() {
+        String str;
+        if (!isImage() || (str = this.originContent) == null || str.length() == 0) {
+            return null;
+        }
+        return new ImageMsg(this.originContent);
+    }
+
+    public final String getImgPath() {
+        return this.imgPath;
+    }
+
+    public final byte[] getLvBuffer() {
+        return this.lvBuffer;
+    }
+
+    public final long getMsgId() {
+        return this.msgId;
+    }
+
+    public final Long getMsgSeq() {
+        return this.msgSeq;
+    }
+
+    public final String getMsgSource() {
+        String[] strArr = AbstractC1471.f5234;
+        byte[] bArr = this.lvBuffer;
+        if (bArr == null || bArr.length == 0) {
+            return "";
+        }
+        C0482 c0482 = new C0482(0);
+        if (bArr.length == 0 || bArr[0] != 123 || bArr[bArr.length - 1] != 125) {
+            return "";
+        }
+        ByteBuffer byteBufferWrap = ByteBuffer.wrap(bArr);
+        c0482.f2130 = byteBufferWrap;
+        ByteBuffer byteBuffer = null;
+        if (byteBufferWrap == null) {
+            "buffer";
+            byteBufferWrap = null;
+        }
+        byteBufferWrap.position(1);
+        if (!c0482.m1901()) {
+            ByteBuffer byteBuffer2 = c0482.f2130;
+            if (byteBuffer2 == null) {
+                "buffer";
+                byteBuffer2 = null;
+            }
+            short s = byteBuffer2.getShort();
+            if (s > 3072) {
+                throw new IllegalArgumentException("Buffer String Length Error".toString());
+            }
+            if (s != 0) {
+                ByteBuffer byteBuffer3 = c0482.f2130;
+                if (byteBuffer3 == null) {
+                    "buffer";
+                    byteBuffer3 = null;
+                }
+                ByteBuffer byteBuffer4 = c0482.f2130;
+                if (byteBuffer4 == null) {
+                    "buffer";
+                    byteBuffer4 = null;
+                }
+                byteBuffer3.position(byteBuffer4.position() + s);
+            }
+        }
+        if (!c0482.m1901()) {
+            ByteBuffer byteBuffer5 = c0482.f2130;
+            if (byteBuffer5 == null) {
+                "buffer";
+                byteBuffer5 = null;
+            }
+            ByteBuffer byteBuffer6 = c0482.f2130;
+            if (byteBuffer6 == null) {
+                "buffer";
+                byteBuffer6 = null;
+            }
+            byteBuffer5.position(byteBuffer6.position() + 4);
+        }
+        if (c0482.m1901()) {
+            return "";
+        }
+        ByteBuffer byteBuffer7 = c0482.f2130;
+        if (byteBuffer7 == null) {
+            "buffer";
+            byteBuffer7 = null;
+        }
+        int i = byteBuffer7.getShort();
+        if (i > 3072) {
+            throw new IllegalArgumentException("Buffer String Length Error".toString());
+        }
+        if (i == 0) {
+            return "";
+        }
+        byte[] bArr2 = new byte[i];
+        ByteBuffer byteBuffer8 = c0482.f2130;
+        if (byteBuffer8 == null) {
+            "buffer";
+        } else {
+            byteBuffer = byteBuffer8;
+        }
+        byteBuffer.get(bArr2);
+        return new String(bArr2, StandardCharsets.UTF_8);
+    }
+
+    public final Long getMsgSvrId() {
+        return this.msgSvrId;
+    }
+
+    public final Object getOrigin() {
+        return this.origin;
+    }
+
+    public final String getOriginContent() {
+        return this.originContent;
+    }
+
+    public final PatMsg getPatMsg() {
+        if (isPat()) {
+            return new PatMsg(this.originContent);
+        }
+        return null;
+    }
+
+    public final QuoteMsg getQuoteMsg() {
+        if (isQuote()) {
+            return new QuoteMsg(this.originContent);
+        }
+        return null;
+    }
+
+    public final String getSendTalker() {
+        String[] strArr = AbstractC1471.f5234;
+        if (isSystem()) {
+            return "system";
+        }
+        if (isRecalled()) {
+            return "recalled";
+        }
+        if (isPat()) {
+            return getPatMsg().getFromUser();
+        }
+        if (!isSend()) {
+            return isGroupChat() ? AbstractC2901.m4879(this.originContent, ":") : this.talker;
+        }
+        Object objM2364 = C0770.m2364(C0770.f2874, EnumC3575.f11175.f11180);
+        "null cannot be cast to non-null type kotlin.String";
+        return (String) objM2364;
+    }
+
+    public final String getTalker() {
+        return this.talker;
+    }
+
+    public final Integer getTalkerId() {
+        return this.talkerId;
+    }
+
+    public final TransferMsg getTransferMsg() {
+        if (isTransfer()) {
+            return new TransferMsg(this.originContent);
+        }
+        return null;
+    }
+
+    public final int getType() {
+        return this.type;
+    }
+
+    public final boolean isAnnounceAll() {
+        return getAtUserList().contains("announcement@all");
+    }
+
+    public final boolean isApp() {
+        return this.type == EnumC3733.f11625.f11641;
+    }
+
+    public final boolean isAtMe() {
+        List<String> atUserList = getAtUserList();
+        Object objM2364 = C0770.m2364(C0770.f2874, EnumC3575.f11175.f11180);
+        "null cannot be cast to non-null type kotlin.String";
+        return atUserList.contains((String) objM2364);
+    }
+
+    public final boolean isChatroom() {
+        return this.talker.endsWith("@chatroom");
+    }
+
+    public final boolean isEmoji() {
+        return this.type == EnumC3733.f11623.f11641;
+    }
+
+    public final boolean isEnumMsg(EnumC3733 enumC3733) {
+        return this.type == enumC3733.f11641;
+    }
+
+    public final boolean isFile() {
+        return this.type == EnumC3733.f11639.f11641;
+    }
+
+    public final boolean isGroupChat() {
+        return isChatroom() || isImChatroom();
+    }
+
+    public final boolean isImChatroom() {
+        String str = this.talker;
+        String[] strArr = AbstractC1471.f5234;
+        boolean zEndsWith = str.endsWith("@im.chatroom");
+        C0665 c0665 = C0665.f2551;
+        String str2 = this.talker;
+        c0665.getClass();
+        Object objM2156 = C0665.m2156(str2);
+        if (objM2156 != null) {
+            C0643.f2506.getClass();
+            int i = AbstractC1768.f5906;
+            C1300 c1300M3558 = AbstractC2727.m4713(objM2156).m3558();
+            c1300M3558.f6475 = "field_chatroomStatus";
+            boolean z = this.talker.endsWith("@chatroom") && (((Number) ((C1316) AbstractC2844.m4775(c1300M3558)).m3127()).intValue() & 131072) == 131072;
+            if (zEndsWith || z) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final boolean isImage() {
+        return this.type == EnumC3733.f11619.f11641;
+    }
+
+    public final boolean isLink() {
+        return this.type == EnumC3733.f11628.f11641;
+    }
+
+    public final boolean isLocation() {
+        return this.type == EnumC3733.f11624.f11641;
+    }
+
+    public final boolean isNote() {
+        return this.type == EnumC3733.f11636.f11641;
+    }
+
+    public final boolean isNotifyAll() {
+        boolean z;
+        boolean z2;
+        Object objM2364 = C0770.m2364(C0770.f2874, EnumC3575.f11175.f11180);
+        String[] strArr = AbstractC1471.f5234;
+        "null cannot be cast to non-null type kotlin.String";
+        List listM2311 = AbstractC0740.m2311((String) objM2364, "notify@all");
+        if (!listM2311.isEmpty()) {
+            Iterator it = listM2311.iterator();
+            while (true) {
+                if (!it.hasNext()) {
+                    z = false;
+                    break;
+                }
+                if (getAtUserList().contains((String) it.next())) {
+                    z = true;
+                    break;
+                }
+            }
+        } else {
+            z = false;
+            break;
+        }
+        List listM2312 = AbstractC0740.m2311("@所有人", "@ all people");
+        if (!listM2312.isEmpty()) {
+            Iterator it2 = listM2312.iterator();
+            while (true) {
+                if (!it2.hasNext()) {
+                    z2 = false;
+                    break;
+                }
+                if (AbstractC2901.m4861(getContent(), (String) it2.next(), false)) {
+                    z2 = true;
+                    break;
+                }
+            }
+        } else {
+            z2 = false;
+            break;
+        }
+        return z && z2;
+    }
+
+    public final boolean isOfficialAccount() {
+        return this.talker.startsWith("gh_");
+    }
+
+    public final boolean isOpenIM() {
+        return this.talker.endsWith("@openim");
+    }
+
+    public final boolean isPat() {
+        return this.type == EnumC3733.f11638.f11641;
+    }
+
+    public final boolean isPrivateChat() {
+        String[] strArr = AbstractC1471.f5234;
+        Set setM1536 = AbstractC0280.m1536(new String[]{"gh_", "@chatroom", "weixin", "filehelper", "qqmail"});
+        if (!this.talker.startsWith("wxid_") && !setM1536.isEmpty()) {
+            Iterator it = setM1536.iterator();
+            while (it.hasNext()) {
+                if (AbstractC2901.m4861(this.talker, (String) it.next(), true)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public final boolean isQuote() {
+        return this.type == EnumC3733.f11637.f11641;
+    }
+
+    public final boolean isRecalled() {
+        int i = this.type;
+        return i == EnumC3733.f11629.f11641 || i == EnumC3733.f11630.f11641;
+    }
+
+    public final boolean isRedBag() {
+        int i = this.type;
+        return i == EnumC3733.f11633.f11641 || i == EnumC3733.f11634.f11641;
+    }
+
+    public final boolean isSend() {
+        Integer num = this.isSendInt;
+        return num != null && num.intValue() == 1;
+    }
+
+    public final Integer isSendInt() {
+        return this.isSendInt;
+    }
+
+    public final boolean isShareCard() {
+        return this.type == EnumC3733.f11621.f11641;
+    }
+
+    public final boolean isSystem() {
+        return this.type == EnumC3733.f11627.f11641;
+    }
+
+    public final boolean isText() {
+        return this.type == EnumC3733.f11618.f11641;
+    }
+
+    public final boolean isTransfer() {
+        return this.type == EnumC3733.f11632.f11641;
+    }
+
+    public final boolean isVideo() {
+        return this.type == EnumC3733.f11622.f11641;
+    }
+
+    public final boolean isVideoNumberVideo() {
+        return this.type == EnumC3733.f11635.f11641;
+    }
+
+    public final boolean isVoice() {
+        return this.type == EnumC3733.f11620.f11641;
+    }
+
+    public final boolean isVoip() {
+        return this.type == EnumC3733.f11626.f11641;
+    }
+
+    public final boolean isVoipVideo() {
+        return AbstractC1469.m3322(getContent(), "voip_content_video");
+    }
+
+    public final boolean isVoipVoice() {
+        return AbstractC1469.m3322(getContent(), "voip_content_voice");
+    }
+
+    public String toString() {
+        JSONObject jSONObject = new JSONObject();
+        String[] strArr = AbstractC1471.f5234;
+        jSONObject.put("msgId", Long.valueOf(this.msgId));
+        jSONObject.put("msgSvrId", this.msgSvrId);
+        jSONObject.put("type", Integer.valueOf(this.type));
+        jSONObject.put("isSend", Boolean.valueOf(isSend()));
+        jSONObject.put("createTime", Long.valueOf(this.createTime));
+        jSONObject.put("talker", this.talker);
+        jSONObject.put("sendTalker", getSendTalker());
+        jSONObject.put("imgPath", this.imgPath);
+        jSONObject.put("msgSource", getMsgSource());
+        jSONObject.put("talkerId", this.talkerId);
+        jSONObject.put("msgSeq", this.msgSeq);
+        return jSONObject.toString();
+    }
+
+    /* JADX INFO: compiled from: obf */
+    public static final class FileMsg {
+        private final String ext;
+        private final JSONObject json;
+        private final String key;
+        private final String md5;
+        private final long size;
+        private final String title;
+        private final String url;
+
+        /* JADX WARN: Illegal instructions before constructor call */
+        public FileMsg(String str) {
+            String[] strArr = AbstractC1471.f5234;
+            this(AbstractC2894.m4854("<msg>" + AbstractC2894.m4850(AbstractC2901.m4880(AbstractC2901.m4877(str, "<msg>", str), "</msg>")) + "</msg>"));
+        }
+
+        public final String getExt() {
+            return this.ext;
+        }
+
+        public final JSONObject getJson() {
+            return this.json;
+        }
+
+        public final String getKey() {
+            return this.key;
+        }
+
+        public final String getMd5() {
+            return this.md5;
+        }
+
+        public final long getSize() {
+            return this.size;
+        }
+
+        public final String getTitle() {
+            return this.title;
+        }
+
+        public final String getUrl() {
+            return this.url;
+        }
+
+        public String toString() {
+            JSONObject jSONObject = new JSONObject();
+            String[] strArr = AbstractC1471.f5234;
+            jSONObject.put("title", this.title);
+            jSONObject.put("size", Integer.valueOf(jSONObject.size()));
+            jSONObject.put("ext", this.ext);
+            jSONObject.put("md5", this.md5);
+            jSONObject.put("url", this.url);
+            jSONObject.put("key", this.key);
+            return jSONObject.toString();
+        }
+
+        public FileMsg(JSONObject jSONObject) {
+            this.json = jSONObject;
+            String[] strArr = AbstractC1471.f5234;
+            this.title = String.valueOf(jSONObject.getByPath("msg.appmsg.title"));
+            this.size = Long.parseLong(String.valueOf(jSONObject.getByPath("msg.appmsg.appattach.totallen")));
+            this.ext = String.valueOf(jSONObject.getByPath("msg.appmsg.appattach.fileext"));
+            this.md5 = String.valueOf(jSONObject.getByPath("msg.appmsg.md5"));
+            this.url = String.valueOf(jSONObject.getByPath("msg.appmsg.appattach.cdnattachurl"));
+            this.key = String.valueOf(jSONObject.getByPath("msg.appmsg.appattach.aeskey"));
+        }
+    }
+
+    /* JADX INFO: compiled from: obf */
+    public static final class ImageMsg {
+        private final String bigImgUrl;
+        private final JSONObject json;
+        private final String key;
+        private final String md5;
+        private final String midImgUrl;
+        private final String thumbUrl;
+
+        /* JADX WARN: Illegal instructions before constructor call */
+        public ImageMsg(String str) {
+            String[] strArr = AbstractC1471.f5234;
+            this(AbstractC2894.m4854("<msg>" + AbstractC2894.m4850(AbstractC2901.m4880(AbstractC2901.m4877(str, "<msg>", str), "</msg>")) + "</msg>"));
+        }
+
+        public final String getBigImgUrl() {
+            return this.bigImgUrl;
+        }
+
+        public final JSONObject getJson() {
+            return this.json;
+        }
+
+        public final String getKey() {
+            return this.key;
+        }
+
+        public final String getMd5() {
+            return this.md5;
+        }
+
+        public final String getMidImgUrl() {
+            return this.midImgUrl;
+        }
+
+        public final String getThumbUrl() {
+            return this.thumbUrl;
+        }
+
+        public String toString() {
+            JSONObject jSONObject = new JSONObject();
+            String[] strArr = AbstractC1471.f5234;
+            jSONObject.put("md5", this.md5);
+            jSONObject.put("bigImgUrl", this.bigImgUrl);
+            jSONObject.put("midImgUrl", this.midImgUrl);
+            jSONObject.put("thumbUrl", this.thumbUrl);
+            jSONObject.put("key", this.key);
+            return jSONObject.toString();
+        }
+
+        public ImageMsg(JSONObject jSONObject) {
+            this.json = jSONObject;
+            String[] strArr = AbstractC1471.f5234;
+            this.md5 = String.valueOf(jSONObject.getByPath("msg.img.md5"));
+            this.bigImgUrl = String.valueOf(jSONObject.getByPath("msg.img.cdnbigimgurl"));
+            this.midImgUrl = String.valueOf(jSONObject.getByPath("msg.img.cdnmidimgurl"));
+            this.thumbUrl = String.valueOf(jSONObject.getByPath("msg.img.cdnthumburl"));
+            this.key = String.valueOf(jSONObject.getByPath("msg.img.aeskey"));
+        }
+    }
+
+    /* JADX INFO: compiled from: obf */
+    public static final class QuoteMsg {
+        private final String displayName;
+        private final JSONObject json;
+        private final String msgSource;
+        private final String originContent;
+        private final String sendTalker;
+        private final long svrId;
+        private final String talker;
+        private final String title;
+        private final int type;
+
+        /* JADX WARN: Illegal instructions before constructor call */
+        public QuoteMsg(String str) {
+            String[] strArr = AbstractC1471.f5234;
+            this(AbstractC2894.m4854("<msg>" + AbstractC2894.m4850(AbstractC2901.m4880(AbstractC2901.m4877(str, "<msg>", str), "</msg>")) + "</msg>"));
+        }
+
+        public final String getContent() {
+            String[] strArr = AbstractC1471.f5234;
+            int i = this.type;
+            if (i == EnumC3733.f11618.f11641) {
+                return this.originContent;
+            }
+            if (i == EnumC3733.f11619.f11641) {
+                return "图片";
+            }
+            if (i == EnumC3733.f11622.f11641) {
+                return "视频";
+            }
+            if (i == EnumC3733.f11623.f11641) {
+                return "表情";
+            }
+            return i == EnumC3733.f11625.f11641 ? String.valueOf(this.json.getByPath("msg.appmsg.refermsg.content.msg.appmsg.title")) : this.originContent;
+        }
+
+        public final String getDisplayName() {
+            return this.displayName;
+        }
+
+        public final JSONObject getJson() {
+            return this.json;
+        }
+
+        public final String getMsgSource() {
+            return this.msgSource;
+        }
+
+        public final String getOriginContent() {
+            return this.originContent;
+        }
+
+        public final String getSendTalker() {
+            return this.sendTalker;
+        }
+
+        public final long getSvrId() {
+            return this.svrId;
+        }
+
+        public final String getTalker() {
+            return this.talker;
+        }
+
+        public final String getTitle() {
+            return this.title;
+        }
+
+        public final int getType() {
+            return this.type;
+        }
+
+        public String toString() {
+            JSONObject jSONObject = new JSONObject();
+            String[] strArr = AbstractC1471.f5234;
+            jSONObject.put("title", this.title);
+            jSONObject.put("msgSource", this.msgSource);
+            jSONObject.put("svrId", Long.valueOf(this.svrId));
+            jSONObject.put("sendTalker", this.sendTalker);
+            jSONObject.put("displayName", this.displayName);
+            jSONObject.put("talker", this.talker);
+            jSONObject.put("type", Integer.valueOf(this.type));
+            jSONObject.put("content", getContent());
+            return jSONObject.toString();
+        }
+
+        public QuoteMsg(JSONObject jSONObject) {
+            this.json = jSONObject;
+            String[] strArr = AbstractC1471.f5234;
+            this.title = String.valueOf(jSONObject.getByPath("msg.appmsg.title"));
+            this.msgSource = String.valueOf(jSONObject.getByPath("msg.appmsg.refermsg.msgsource"));
+            Long lM4915 = AbstractC2908.m4915(String.valueOf(jSONObject.getByPath("msg.appmsg.refermsg.svrid")));
+            this.svrId = lM4915 != null ? lM4915.longValue() : 0L;
+            this.sendTalker = String.valueOf(jSONObject.getByPath("msg.appmsg.refermsg.chatusr"));
+            this.displayName = String.valueOf(jSONObject.getByPath("msg.appmsg.refermsg.displayname"));
+            this.talker = String.valueOf(jSONObject.getByPath("msg.appmsg.refermsg.fromusr"));
+            this.type = Integer.parseInt(String.valueOf(jSONObject.getByPath("msg.appmsg.refermsg.type")));
+            this.originContent = String.valueOf(jSONObject.getByPath("msg.appmsg.refermsg.content"));
+        }
+    }
+
+    /* JADX INFO: compiled from: obf */
+    public static final class TransferMsg {
+        private final long beginTransferTime;
+        private final String des;
+        private final String feeDesc;
+        private final int invalidTime;
+        private final JSONObject json;
+        private final String payerUsername;
+        private final String receiverUsername;
+        private final String title;
+        private final String transactionId;
+        private final String transferId;
+
+        /* JADX WARN: Illegal instructions before constructor call */
+        public TransferMsg(String str) {
+            String[] strArr = AbstractC1471.f5234;
+            this(AbstractC2894.m4854("<msg>" + AbstractC2894.m4850(AbstractC2901.m4880(AbstractC2901.m4877(str, "<msg>", str), "</msg>")) + "</msg>"));
+        }
+
+        public final long getBeginTransferTime() {
+            return this.beginTransferTime;
+        }
+
+        public final String getDes() {
+            return this.des;
+        }
+
+        public final String getFeeDesc() {
+            return this.feeDesc;
+        }
+
+        public final int getInvalidTime() {
+            return this.invalidTime;
+        }
+
+        public final JSONObject getJson() {
+            return this.json;
+        }
+
+        public final String getPayerUsername() {
+            return this.payerUsername;
+        }
+
+        public final String getReceiverUsername() {
+            return this.receiverUsername;
+        }
+
+        public final String getTitle() {
+            return this.title;
+        }
+
+        public final String getTransactionId() {
+            return this.transactionId;
+        }
+
+        public final String getTransferId() {
+            return this.transferId;
+        }
+
+        public String toString() {
+            JSONObject jSONObject = new JSONObject();
+            String[] strArr = AbstractC1471.f5234;
+            jSONObject.put("title", this.title);
+            jSONObject.put("des", this.des);
+            jSONObject.put("feeDesc", this.feeDesc);
+            jSONObject.put("transactionId", this.transactionId);
+            jSONObject.put("transferId", this.transferId);
+            jSONObject.put("invalidTime", Integer.valueOf(this.invalidTime));
+            jSONObject.put("beginTransferTime", Long.valueOf(this.beginTransferTime));
+            jSONObject.put("receiverUsername", this.receiverUsername);
+            jSONObject.put("payerUsername", this.payerUsername);
+            return jSONObject.toString();
+        }
+
+        public TransferMsg(JSONObject jSONObject) {
+            this.json = jSONObject;
+            String[] strArr = AbstractC1471.f5234;
+            this.title = String.valueOf(jSONObject.getByPath("msg.appmsg.title"));
+            this.des = String.valueOf(jSONObject.getByPath("msg.appmsg.des"));
+            this.feeDesc = String.valueOf(jSONObject.getByPath("msg.appmsg.wcpayinfo.feedesc"));
+            this.transactionId = String.valueOf(jSONObject.getByPath("msg.appmsg.wcpayinfo.transcationid"));
+            this.transferId = String.valueOf(jSONObject.getByPath("msg.appmsg.wcpayinfo.transferid"));
+            this.invalidTime = Integer.parseInt(String.valueOf(jSONObject.getByPath("msg.appmsg.wcpayinfo.invalidtime")));
+            this.beginTransferTime = Long.parseLong(String.valueOf(jSONObject.getByPath("msg.appmsg.wcpayinfo.begintransfertime")));
+            this.receiverUsername = String.valueOf(jSONObject.getByPath("msg.appmsg.wcpayinfo.receiver_username"));
+            this.payerUsername = String.valueOf(jSONObject.getByPath("msg.appmsg.wcpayinfo.payer_username"));
+        }
+    }
+
+    /* JADX INFO: compiled from: obf */
+    public static final class PatMsg {
+        private final long createTime;
+        private final String fromUser;
+        private final JSONObject json;
+        private final String pattedUser;
+        private final int readStatus;
+        private final int recordNum;
+        private final int showModifyTip;
+        private final long svrId;
+        private final String talker;
+        private final String template;
+
+        public PatMsg(JSONObject jSONObject) {
+            this.json = jSONObject;
+            String[] strArr = AbstractC1471.f5234;
+            this.talker = String.valueOf(jSONObject.getByPath("msg.appmsg.patMsg.chatUser"));
+            this.recordNum = Integer.parseInt(String.valueOf(jSONObject.getByPath("msg.appmsg.patMsg.records.recordNum")));
+            this.fromUser = String.valueOf(getRecordObj().getByPath("fromUser"));
+            this.pattedUser = String.valueOf(getRecordObj().getByPath("pattedUser"));
+            this.template = String.valueOf(getRecordObj().getByPath("template"));
+            this.createTime = Long.parseLong(String.valueOf(getRecordObj().getByPath("createTime")));
+            this.readStatus = Integer.parseInt(String.valueOf(getRecordObj().getByPath("readStatus")));
+            this.svrId = Long.parseLong(String.valueOf(getRecordObj().getByPath("svrId")));
+            this.showModifyTip = Integer.parseInt(String.valueOf(getRecordObj().getByPath("showModifyTip")));
+        }
+
+        public final long getCreateTime() {
+            return this.createTime;
+        }
+
+        public final String getFromUser() {
+            return this.fromUser;
+        }
+
+        public final JSONObject getJson() {
+            return this.json;
+        }
+
+        public final String getPattedUser() {
+            return this.pattedUser;
+        }
+
+        public final int getReadStatus() {
+            return this.readStatus;
+        }
+
+        public final int getRecordNum() {
+            return this.recordNum;
+        }
+
+        public final JSONObject getRecordObj() {
+            JSONObject jSONObject = this.json;
+            String[] strArr = AbstractC1471.f5234;
+            Object byPath = jSONObject.getByPath("msg.appmsg.patMsg.records.record");
+            if (byPath instanceof JSONArray) {
+                return ((JSONArray) byPath).getJSONObject(0);
+            }
+            "null cannot be cast to non-null type com.alibaba.fastjson2.JSONObject";
+            return (JSONObject) byPath;
+        }
+
+        public final int getShowModifyTip() {
+            return this.showModifyTip;
+        }
+
+        public final long getSvrId() {
+            return this.svrId;
+        }
+
+        public final String getTalker() {
+            return this.talker;
+        }
+
+        public final String getTemplate() {
+            return this.template;
+        }
+
+        public String toString() {
+            JSONObject jSONObject = new JSONObject();
+            String[] strArr = AbstractC1471.f5234;
+            jSONObject.put("talker", this.talker);
+            jSONObject.put("recordNum", Integer.valueOf(this.recordNum));
+            jSONObject.put("fromUser", this.fromUser);
+            jSONObject.put("pattedUser", this.pattedUser);
+            jSONObject.put("template", this.template);
+            jSONObject.put("createTime", Long.valueOf(this.createTime));
+            jSONObject.put("readStatus", Integer.valueOf(this.readStatus));
+            jSONObject.put("svrId", Long.valueOf(this.svrId));
+            jSONObject.put("showModifyTip", Integer.valueOf(this.showModifyTip));
+            return jSONObject.toString();
+        }
+
+        public PatMsg(String str) {
+            this(AbstractC2894.m4854(str));
+        }
+    }
+}

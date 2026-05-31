@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="?attr/dialogPreferredPadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?attr/dialogPreferredPadding"
+    android:paddingEnd="?attr/dialogPreferredPadding">
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:textSize="12sp"
+        android:textColor="?attr/colorOnSurface"
+        android:id="@+id/moduleDialogCbAutoLoginWinAutoSyncMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:checked="true"
+        android:text="同步最近消息"/>
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:textSize="12sp"
+        android:textColor="?attr/colorOnSurface"
+        android:id="@+id/moduleDialogCbAutoLoginWinShowLoginDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:checked="true"
+        android:text="显示登录设备"/>
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:textSize="12sp"
+        android:textColor="?attr/colorOnSurface"
+        android:id="@+id/moduleDialogCbAutoLoginWinAutoLoginDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="自动登录设备"/>
+</LinearLayout>

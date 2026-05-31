@@ -1,0 +1,11 @@
+package p000;
+
+import android.R;
+
+/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲀᤞᲁᲇᤝᲈᛸ, reason: contains not printable characters */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbstractC2518 {
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲁᲇᲈ, reason: contains not printable characters */
+    public static final int[] f7972 = {R.attr.name, R.attr.tag};
+}

@@ -1,0 +1,12 @@
+package p000;
+
+import me.hd.wauxv.hook.factory.MagicFactory;
+
+/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᲁᲈᤝᛸᲇᤞᲀ, reason: contains not printable characters */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final class C3564 extends AbstractC1024 {
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
+    public static final C3564 f11161 = new C3564("UploadPackHelper.ConstructorHelper");
+}

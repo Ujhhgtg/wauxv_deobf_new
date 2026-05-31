@@ -1,0 +1,13 @@
+package p000;
+
+import com.alibaba.fastjson2.internal.asm.Opcodes;
+import me.hd.wauxv.hook.factory.MagicFactory;
+
+/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲁᤝᲈᤞᲇᲀ, reason: contains not printable characters */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final class C0433 extends AbstractC0986 {
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲀᲈᲇ, reason: contains not printable characters */
+    public static final C0433 f2005 = new C0433("BottomTabCustomHook.ValHideTab", null, null, false, 0, 0.0f, 0, Opcodes.FNEG);
+}

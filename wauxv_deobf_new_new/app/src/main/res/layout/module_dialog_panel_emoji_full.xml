@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.textview.MaterialTextView
+        android:textSize="13sp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="可调整本地表情分组启用状态和拖动排序。资源目录下每个子目录会作为一个分组。"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moduleDialogRvPanelEmojiGroups"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

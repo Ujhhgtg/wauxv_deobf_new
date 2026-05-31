@@ -1,0 +1,22 @@
+package androidx.lifecycle;
+
+import p000.EnumC1792;
+import p000.InterfaceC1797;
+import p000.InterfaceC1800;
+
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final class SavedStateHandleController implements InterfaceC1797 {
+
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲀᲇᲁᲈ, reason: contains not printable characters */
+    public boolean f297;
+
+    @Override // p000.InterfaceC1797
+    /* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᤝᤞᲁᲇᲀᲈ */
+    public final void mo0(InterfaceC1800 interfaceC1800, EnumC1792 enumC1792) {
+        if (enumC1792 == EnumC1792.ON_DESTROY) {
+            this.f297 = false;
+            interfaceC1800.mo894().m102(this);
+        }
+    }
+}
