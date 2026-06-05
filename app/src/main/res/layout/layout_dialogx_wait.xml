@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/box_root"
+    android:background="@color/black40"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.kongzue.dialogx.util.views.MaxRelativeLayout
+        android:id="@+id/bkg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="125dp"
+        android:minHeight="125dp"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="1.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <RelativeLayout
+                android:id="@+id/box_progress"
+                android:layout_width="65dp"
+                android:layout_height="65dp"/>
+            <RelativeLayout
+                android:id="@+id/box_customView"
+                android:visibility="gone"
+                android:layout_width="65dp"
+                android:layout_height="65dp"/>
+            <TextView
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:text="Please Wait"
+                android:maxLines="3"/>
+        </LinearLayout>
+    </com.kongzue.dialogx.util.views.MaxRelativeLayout>
+</com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="?attr/dialogPreferredPadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?attr/dialogPreferredPadding"
+    android:paddingEnd="?attr/dialogPreferredPadding">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/moduleDialogInputAutoCleanCycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:hint="清理周期/秒">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnSurface"
+            android:id="@+id/moduleDialogEdtAutoCleanCycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="86400"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moduleDialogRvAutoCleanConfig"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="1"/>
+</LinearLayout>

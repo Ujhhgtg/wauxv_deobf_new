@@ -1,0 +1,120 @@
+package me.hd.wauxv.data.bean.info;
+
+import me.hd.wauxv.hook.factory.MagicFactory;
+import p000.AbstractC0924feyxiexzfUjhhgtg;
+import p000.AbstractC3590Ujhhgtgfeyxiexzf;
+import p000.C3052Ujhhgtgfeyxiexzf;
+
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final class GroupInfo {
+    private GroupData groupData;
+    private String name;
+    private String remark;
+    private String roomId;
+
+    public GroupInfo(String str, String str2, String str3, GroupData groupData) {
+        this.roomId = str;
+        this.remark = str2;
+        this.name = str3;
+        this.groupData = groupData;
+    }
+
+    public static /* synthetic */ GroupInfo copy$default(GroupInfo groupInfo, String str, String str2, String str3, GroupData groupData, int i, Object obj) {
+        if ((i & 1) != 0) {
+            str = groupInfo.roomId;
+        }
+        if ((i & 2) != 0) {
+            str2 = groupInfo.remark;
+        }
+        if ((i & 4) != 0) {
+            str3 = groupInfo.name;
+        }
+        if ((i & 8) != 0) {
+            groupData = groupInfo.groupData;
+        }
+        return groupInfo.copy(str, str2, str3, groupData);
+    }
+
+    public final String component1() {
+        return this.roomId;
+    }
+
+    public final String component2() {
+        return this.remark;
+    }
+
+    public final String component3() {
+        return this.name;
+    }
+
+    public final GroupData component4() {
+        return this.groupData;
+    }
+
+    public final GroupInfo copy(String str, String str2, String str3, GroupData groupData) {
+        return new GroupInfo(str, str2, str3, groupData);
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof GroupInfo)) {
+            return false;
+        }
+        GroupInfo groupInfo = (GroupInfo) obj;
+        return C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(this.roomId, groupInfo.roomId) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(this.remark, groupInfo.remark) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(this.name, groupInfo.name) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(this.groupData, groupInfo.groupData);
+    }
+
+    public final GroupData getGroupData() {
+        return this.groupData;
+    }
+
+    public final String getName() {
+        return this.name;
+    }
+
+    public final String getRemark() {
+        return this.remark;
+    }
+
+    public final String getRoomId() {
+        return this.roomId;
+    }
+
+    public int hashCode() {
+        return this.groupData.hashCode() + AbstractC0924feyxiexzfUjhhgtg.m2415Ujhhgtgfeyxiexzf(AbstractC0924feyxiexzfUjhhgtg.m2415Ujhhgtgfeyxiexzf(this.roomId.hashCode() * 31, 31, this.remark), 31, this.name);
+    }
+
+    public final void setGroupData(GroupData groupData) {
+        this.groupData = groupData;
+    }
+
+    public final void setName(String str) {
+        this.name = str;
+    }
+
+    public final void setRemark(String str) {
+        this.remark = str;
+    }
+
+    public final void setRoomId(String str) {
+        this.roomId = str;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
+        sb.append(MagicFactory.get(4928293879158932874L, strArr));
+        sb.append(this.roomId);
+        sb.append(MagicFactory.get(4928293939288475018L, strArr));
+        sb.append(this.remark);
+        sb.append(MagicFactory.get(4928293896338802058L, strArr));
+        sb.append(this.name);
+        sb.append(MagicFactory.get(4928293999418017162L, strArr));
+        sb.append(this.groupData);
+        sb.append(')');
+        return sb.toString();
+    }
+}

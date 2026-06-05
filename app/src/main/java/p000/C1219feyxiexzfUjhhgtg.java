@@ -1,0 +1,12 @@
+package p000;
+
+import me.hd.wauxv.hook.factory.MagicFactory;
+
+/* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱᛱfeyxiexzfᛱᛴ要点脸ᛱUjhhgtgᛱᛲ能不能ᛳ, reason: invalid class name and case insensitive filesystem */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final class C1219feyxiexzfUjhhgtg extends AbstractC3266feyxiexzfUjhhgtg {
+
+    /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛳᛲᛴ, reason: contains not printable characters */
+    public static final C1219feyxiexzfUjhhgtg f4529Ujhhgtgfeyxiexzf = new C1219feyxiexzfUjhhgtg(MagicFactory.get(4928501983209325962L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+}

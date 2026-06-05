@@ -1,0 +1,12 @@
+package p000;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱᛱUjhhgtgᛱ能不能ᛴᛳ要点脸ᛲᛱfeyxiexzfᛱ, reason: invalid class name and case insensitive filesystem */
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public interface InterfaceC0612Ujhhgtgfeyxiexzf {
+    /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛲᛳ */
+    List mo1538Ujhhgtgfeyxiexzf(ArrayList arrayList);
+}

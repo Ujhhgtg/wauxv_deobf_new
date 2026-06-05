@@ -1,0 +1,19 @@
+package com.drake.net.time;
+
+import p000.AbstractC0713Ujhhgtgfeyxiexzf;
+import p000.InterfaceC0053Ujhhgtgfeyxiexzf;
+import p000.InterfaceC0083Ujhhgtgfeyxiexzf;
+import p000.Ujhhgtgfeyxiexzf;
+
+/* JADX INFO: compiled from: obf */
+/* JADX INFO: loaded from: classes.dex */
+public final class Interval$onlyResumed$1$1$1 implements InterfaceC0053Ujhhgtgfeyxiexzf {
+    @Override // p000.InterfaceC0053Ujhhgtgfeyxiexzf
+    /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛳᛲᛱfeyxiexzfᛱᛴ */
+    public final void mo0Ujhhgtgfeyxiexzf(InterfaceC0083Ujhhgtgfeyxiexzf interfaceC0083Ujhhgtgfeyxiexzf, Ujhhgtgfeyxiexzf ujhhgtgfeyxiexzf) {
+        int i = AbstractC0713Ujhhgtgfeyxiexzf.f2950Ujhhgtgfeyxiexzf[ujhhgtgfeyxiexzf.ordinal()];
+        if (i == 1 || i == 2 || i == 3) {
+            throw null;
+        }
+    }
+}
