@@ -1,9 +1,0 @@
-package p000;
-
-/* JADX INFO: compiled from: obf */
-/* JADX INFO: loaded from: classes.dex */
-public final class C3322 {
-    public final InterfaceC1743 serializer() {
-        return C3321.f10517;
-    }
-}

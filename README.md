@@ -1,6 +1,8 @@
 # wauxv_deobf_new
 
-[新版本](https://github.com/HdShare/WAuxiliary_Public/releases/tag/1356-1.2.7.r1356.3e63484)的反混淆, 微调了一些 jadx 参数, 优化了字符串解密脚本
+~~[新版本](https://github.com/HdShare/WAuxiliary_Public/releases/tag/1356-1.2.7.r1356.3e63484)的反混淆, 微调了一些 jadx 参数, 优化了字符串解密脚本~~
+
+新新版本 (WAuxv-v1.2.7.r1418.e65079c-arm64.apk) 的反混淆, 使用了最新最热反混淆工具, 直接让 WAuxiliary 自己帮我解密
 
 我尚未且不打算 (我懒) 把[旧版](https://github.com/Ujhhgtg/wauxv_deobf)的类名和方法名映射迁移过来, 没什么意义, 混淆代码看多了自然就知道是啥意思, 实在不行两边对照着看也行
 
@@ -15,16 +17,19 @@ jadx \
     --use-source-name-as-class-name-alias "always" \
     --show-bad-code \
     -e \
-    ./wauxv_deobf_new.apk
+    ./wauxv.apk
 ```
 
-## 使用的反混淆脚本
+## 使用的反混淆工具
 
-[here](https://github.com/Ujhhgtg/java_deobf_utils)
+[java_deobf_utils](https://github.com/Ujhhgtg/java_deobf_utils)
+[WASLDH](https://github.com/Ujhhgtg/WASLDH)
 
-(我直接把以前旧版的 Java 混淆过的解密代码丢给 Gemini 花 3 分钟跑出来的)
+~~(我直接把以前旧版的 Java 混淆过的解密代码丢给 Gemini 花 3 分钟跑出来的)~~
 
-## p.s.
+(最新版)
+
+## p.s
 
 我始终不认为开源项目抄闭源项目是不道德的行为, 事实上开源项目逆向闭源项目并重新实现是非常常见的做法, 没有必要急成这样
 当然我对被挂出来这件事是完全不在意的, 如果真有孝子想私信骂我那我只会把你当成乐子

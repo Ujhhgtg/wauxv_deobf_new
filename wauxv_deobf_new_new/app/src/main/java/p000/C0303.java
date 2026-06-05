@@ -1,7 +1,0 @@
-package p000;
-
-/* JADX INFO: renamed from: ᛱᛲᛳᛴᛵᛶᛷᛸᲀᤝᲁᲇᲈᤞ, reason: contains not printable characters */
-/* JADX INFO: compiled from: obf */
-/* JADX INFO: loaded from: classes.dex */
-public final class C0303 extends AbstractC0343 {
-}
