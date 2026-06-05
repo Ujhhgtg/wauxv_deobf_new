@@ -44,9 +44,9 @@ public final class C2151feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928201026260960650L, strArr));
+        sb.append("ef1Proto(live_meet_id=");
         sb.append(this.f6998Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928201064915666314L, strArr));
+        sb.append(", anchor_meet_heat=");
         sb.append(this.f6999Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

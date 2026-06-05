@@ -38,7 +38,7 @@ public final /* synthetic */ class C0460Ujhhgtgfeyxiexzf implements InterfaceC35
                 break;
             case 2:
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928249469197092234L, strArr), MagicFactory.get(4928249580866241930L, strArr));
+                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf("MicroMsg.NetSceneInviteChatRoomMember", "/cgi-bin/micromsg-bin/invitechatroommember");
                 break;
             case 3:
                 ((C3265feyxiexzfUjhhgtg) obj).f10256Ujhhgtgfeyxiexzf = new C0460Ujhhgtgfeyxiexzf(4);
@@ -49,7 +49,7 @@ public final /* synthetic */ class C0460Ujhhgtgfeyxiexzf implements InterfaceC35
             case 5:
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf = (C0394Ujhhgtgfeyxiexzf) obj;
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0394Ujhhgtgfeyxiexzf.m1661feyxiexzfUjhhgtg(MagicFactory.get(4928248820657030538L, strArr2), MagicFactory.get(4928248953801016714L, strArr2));
+                c0394Ujhhgtgfeyxiexzf.m1661feyxiexzfUjhhgtg("MicroMsg.webview.NetSceneJSLogin", "/cgi-bin/mmbiz-bin/js-login");
                 Class clsM5159Ujhhgtgfeyxiexzf5 = AbstractC3593Ujhhgtgfeyxiexzf.m5159Ujhhgtgfeyxiexzf(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class));
                 Class cls4 = clsM5159Ujhhgtgfeyxiexzf5 == null ? String.class : clsM5159Ujhhgtgfeyxiexzf5;
                 Class clsM5159Ujhhgtgfeyxiexzf6 = AbstractC3593Ujhhgtgfeyxiexzf.m5159Ujhhgtgfeyxiexzf(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(LinkedList.class));
@@ -79,7 +79,7 @@ public final /* synthetic */ class C0460Ujhhgtgfeyxiexzf implements InterfaceC35
             case 7:
                 C3452feyxiexzfUjhhgtg c3452feyxiexzfUjhhgtg2 = (C3452feyxiexzfUjhhgtg) obj;
                 C0394Ujhhgtgfeyxiexzf c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2 = AbstractC1225feyxiexzfUjhhgtg.m2694Ujhhgtgfeyxiexzf(c3452feyxiexzfUjhhgtg2);
-                c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2.m1661feyxiexzfUjhhgtg(MagicFactory.get(4928252600228251018L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2.m1661feyxiexzfUjhhgtg("/cgi-bin/micromsg-bin/modifycontactlabellist");
                 Class<LinkedList> clsM5159Ujhhgtgfeyxiexzf12 = AbstractC3593Ujhhgtgfeyxiexzf.m5159Ujhhgtgfeyxiexzf(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(LinkedList.class));
                 c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2.m1657Ujhhgtgfeyxiexzf(clsM5159Ujhhgtgfeyxiexzf12 != null ? clsM5159Ujhhgtgfeyxiexzf12 : LinkedList.class);
                 c3452feyxiexzfUjhhgtg2.f10739Ujhhgtgfeyxiexzf = c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2;
@@ -97,7 +97,7 @@ public final /* synthetic */ class C0460Ujhhgtgfeyxiexzf implements InterfaceC35
                 break;
             case 11:
                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928251986047927690L, strArr3), MagicFactory.get(4928252153551652234L, strArr3), MagicFactory.get(4928252286695638410L, strArr3));
+                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf("MicroMsg.NetSceneSendMsg", "/cgi-bin/micromsg-bin/newsendmsg", "NetSceneSendMsg:MsgSource:%s");
                 break;
             case Opcodes.FCONST_1 /* 12 */:
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf2 = (C0394Ujhhgtgfeyxiexzf) obj;
@@ -126,9 +126,9 @@ public final /* synthetic */ class C0460Ujhhgtgfeyxiexzf implements InterfaceC35
             case Opcodes.DCONST_0 /* 14 */:
                 C3456feyxiexzfUjhhgtg c3456feyxiexzfUjhhgtg = (C3456feyxiexzfUjhhgtg) obj;
                 String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3456feyxiexzfUjhhgtg.m4953Ujhhgtgfeyxiexzf(MagicFactory.get(4928251822839170442L, strArr4));
+                c3456feyxiexzfUjhhgtg.m4953Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.luckymoney.model");
                 C2812Ujhhgtgfeyxiexzf c2812Ujhhgtgfeyxiexzf = new C2812Ujhhgtgfeyxiexzf();
-                c2812Ujhhgtgfeyxiexzf.m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928251530781394314L, strArr4), MagicFactory.get(4928251668220347786L, strArr4));
+                c2812Ujhhgtgfeyxiexzf.m4143Ujhhgtgfeyxiexzf("MicroMsg.NetSceneOpenLuckyMoney", "/cgi-bin/mmpay-bin/openwxhb");
                 c3456feyxiexzfUjhhgtg.f10746Ujhhgtgfeyxiexzf = c2812Ujhhgtgfeyxiexzf;
                 break;
             case 15:
@@ -174,16 +174,16 @@ public final /* synthetic */ class C0460Ujhhgtgfeyxiexzf implements InterfaceC35
                 C0300Ujhhgtgfeyxiexzf c0300Ujhhgtgfeyxiexzf = new C0300Ujhhgtgfeyxiexzf();
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf5 = new C0394Ujhhgtgfeyxiexzf();
                 String[] strArr5 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0394Ujhhgtgfeyxiexzf5.m1661feyxiexzfUjhhgtg(MagicFactory.get(4928254601683010954L, strArr5), MagicFactory.get(4928253631020402058L, strArr5));
+                c0394Ujhhgtgfeyxiexzf5.m1661feyxiexzfUjhhgtg("MicroMsg.BigBallSysCmdMsgConsumer", "summercck emotionkv pcKeyStr len:%d, content[%s] pcId[%s]");
                 c0300Ujhhgtgfeyxiexzf.m1528Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf5);
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf6 = new C0394Ujhhgtgfeyxiexzf();
-                c0394Ujhhgtgfeyxiexzf6.m1661feyxiexzfUjhhgtg(MagicFactory.get(4928253931668112778L, strArr5), MagicFactory.get(4928254094876870026L, strArr5));
+                c0394Ujhhgtgfeyxiexzf6.m1661feyxiexzfUjhhgtg("MicroMsg.CommandProcessor", "summer processed log level[%s], need open debug ret false");
                 c0300Ujhhgtgfeyxiexzf.m1528Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf6);
                 c0394Ujhhgtgfeyxiexzf4.f2141Ujhhgtgfeyxiexzf = c0300Ujhhgtgfeyxiexzf;
                 break;
             case Opcodes.LLOAD /* 22 */:
                 String[] strArr6 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg(MagicFactory.get(4928254365459809674L, strArr6), MagicFactory.get(4928254404114515338L, strArr6), MagicFactory.get(4928254571618239882L, strArr6));
+                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg("MicroMsg.NetSceneQueue", "forbid in waiting: type=", "forbid in running: type=");
                 break;
             case Opcodes.FLOAD /* 23 */:
                 C3265feyxiexzfUjhhgtg c3265feyxiexzfUjhhgtg3 = (C3265feyxiexzfUjhhgtg) obj;
@@ -193,9 +193,9 @@ public final /* synthetic */ class C0460Ujhhgtgfeyxiexzf implements InterfaceC35
             case Opcodes.DLOAD /* 24 */:
                 C3456feyxiexzfUjhhgtg c3456feyxiexzfUjhhgtg2 = (C3456feyxiexzfUjhhgtg) obj;
                 String[] strArr7 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3456feyxiexzfUjhhgtg2.m4953Ujhhgtgfeyxiexzf(MagicFactory.get(4928257049814369674L, strArr7));
+                c3456feyxiexzfUjhhgtg2.m4953Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.luckymoney.model");
                 C2812Ujhhgtgfeyxiexzf c2812Ujhhgtgfeyxiexzf2 = new C2812Ujhhgtgfeyxiexzf();
-                c2812Ujhhgtgfeyxiexzf2.m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928253484991513994L, strArr7), MagicFactory.get(4928256908080448906L, strArr7));
+                c2812Ujhhgtgfeyxiexzf2.m4143Ujhhgtgfeyxiexzf("MicroMsg.NetSceneReceiveLuckyMoney", "/cgi-bin/mmpay-bin/receivewxhb");
                 c3456feyxiexzfUjhhgtg2.f10746Ujhhgtgfeyxiexzf = c2812Ujhhgtgfeyxiexzf2;
                 break;
             case Opcodes.ALOAD /* 25 */:
@@ -232,9 +232,9 @@ public final /* synthetic */ class C0460Ujhhgtgfeyxiexzf implements InterfaceC35
             case 28:
                 C3456feyxiexzfUjhhgtg c3456feyxiexzfUjhhgtg3 = (C3456feyxiexzfUjhhgtg) obj;
                 String[] strArr8 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3456feyxiexzfUjhhgtg3.m4953Ujhhgtgfeyxiexzf(MagicFactory.get(4928255791388951946L, strArr8));
+                c3456feyxiexzfUjhhgtg3.m4953Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.remittance.model");
                 C2812Ujhhgtgfeyxiexzf c2812Ujhhgtgfeyxiexzf3 = new C2812Ujhhgtgfeyxiexzf();
-                c2812Ujhhgtgfeyxiexzf3.m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928256392684373386L, strArr8), MagicFactory.get(4928256646087443850L, strArr8), MagicFactory.get(4928256779231430026L, strArr8));
+                c2812Ujhhgtgfeyxiexzf3.m4143Ujhhgtgfeyxiexzf("Micromsg.NetSceneTenpayRemittanceGen", "/cgi-bin/mmpay-bin/f2fplaceorder", "/cgi-bin/mmpay-bin/transferplaceorder");
                 c3456feyxiexzfUjhhgtg3.f10746Ujhhgtgfeyxiexzf = c2812Ujhhgtgfeyxiexzf3;
                 break;
             default:

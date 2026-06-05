@@ -24,10 +24,10 @@ public final class C0562Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2572Ujhhgtgfeyxiexzf = new C0562Ujhhgtgfeyxiexzf(MagicFactory.get(4928384352645023114L, strArr));
-        f2573Ujhhgtgfeyxiexzf = MagicFactory.get(4928383798594241930L, strArr);
-        f2574Ujhhgtgfeyxiexzf = MagicFactory.get(4928383785709340042L, strArr);
-        f2575Ujhhgtgfeyxiexzf = MagicFactory.get(4928382793571894666L, strArr);
+        f2572Ujhhgtgfeyxiexzf = new C0562Ujhhgtgfeyxiexzf("HideOnLineBannerHook");
+        f2573Ujhhgtgfeyxiexzf = "净化";
+        f2574Ujhhgtgfeyxiexzf = "隐藏在线顶栏";
+        f2575Ujhhgtgfeyxiexzf = "将主页顶部状态栏其他设备已登录隐藏";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

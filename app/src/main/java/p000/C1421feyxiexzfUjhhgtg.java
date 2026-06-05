@@ -16,6 +16,6 @@ public final class C1421feyxiexzfUjhhgtg {
     }
 
     public final String toString() {
-        return MagicFactory.get(4928443872301811082L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf) + this.f4995Ujhhgtgfeyxiexzf.getHookedMethod() + ')';
+        return "HookHandle(delegate=" + this.f4995Ujhhgtgfeyxiexzf.getHookedMethod() + ')';
     }
 }

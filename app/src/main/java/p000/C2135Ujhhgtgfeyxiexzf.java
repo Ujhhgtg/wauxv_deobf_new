@@ -16,18 +16,18 @@ public final /* synthetic */ class C2135Ujhhgtgfeyxiexzf implements InterfaceC35
         C2135Ujhhgtgfeyxiexzf c2135Ujhhgtgfeyxiexzf = new C2135Ujhhgtgfeyxiexzf();
         f6956Ujhhgtgfeyxiexzf = c2135Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928204500889503114L, strArr), c2135Ujhhgtgfeyxiexzf, 11);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928203749270226314L, strArr), false, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928203856644408714L, strArr), false, 2);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928203835169572234L, strArr), false, 3);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928203809399768458L, strArr), false, 4);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928203895299114378L, strArr), false, 5);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928203968313558410L, strArr), false, 6);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928204054212904330L, strArr), false, 7);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928204011263231370L, strArr), false, 8);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928202984766047626L, strArr), false, 9);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928203160859706762L, strArr), false, 11);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928203242464085386L, strArr), false, 12);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.f93Proto", c2135Ujhhgtgfeyxiexzf, 11);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "app_id", false, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "path", false, 2);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "query", false, 3);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "default_url", false, 4);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "height_percent", false, 5);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "half_height", false, 6);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "open_type", false, 7);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "is_transparent", false, 8);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "is_forbid_rightgesture", false, 9);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "mini_version", false, 11);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "position", false, 12);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

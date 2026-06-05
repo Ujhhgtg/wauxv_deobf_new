@@ -15,12 +15,12 @@ public final /* synthetic */ class C1549Ujhhgtgfeyxiexzf implements InterfaceC35
         C1549Ujhhgtgfeyxiexzf c1549Ujhhgtgfeyxiexzf = new C1549Ujhhgtgfeyxiexzf();
         f5351Ujhhgtgfeyxiexzf = c1549Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928117115484898698L, strArr), c1549Ujhhgtgfeyxiexzf, 5);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928120761912133002L, strArr), false, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928120822041675146L, strArr), false, 2);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928120916530955658L, strArr), false, 3);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928120989545399690L, strArr), false, 4);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928120998135334282L, strArr), false, 5);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.or5Proto", c1549Ujhhgtgfeyxiexzf, 5);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "tmpl_version_info", false, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "tmpl_type", false, 2);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "camera_tmpl_id", false, 3);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "permitted_publish_method_flag", false, 4);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "camera_position", false, 5);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

@@ -20,9 +20,9 @@ public final class C3261feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f10238Ujhhgtgfeyxiexzf = new C3261feyxiexzfUjhhgtg(MagicFactory.get(4928812857237177738L, strArr));
-        f10239Ujhhgtgfeyxiexzf = MagicFactory.get(4928812436330382730L, strArr);
-        f10240Ujhhgtgfeyxiexzf = MagicFactory.get(4928812389085742474L, strArr);
+        f10238Ujhhgtgfeyxiexzf = new C3261feyxiexzfUjhhgtg("DevLogHook");
+        f10239Ujhhgtgfeyxiexzf = "测试/仅限开发者使用";
+        f10240Ujhhgtgfeyxiexzf = "调试日志";
     }
 
     @Override // p000.AbstractC0571Ujhhgtgfeyxiexzf
@@ -31,7 +31,7 @@ public final class C3261feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
         Object next;
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        List listM3653feyxiexzfUjhhgtg = AbstractC2391Ujhhgtgfeyxiexzf.m3653feyxiexzfUjhhgtg(new String[]{MagicFactory.get(4928812809992537482L, strArr), MagicFactory.get(4928812960316392842L, strArr)});
+        List listM3653feyxiexzfUjhhgtg = AbstractC2391Ujhhgtgfeyxiexzf.m3653feyxiexzfUjhhgtg(new String[]{"com.tencent.mars.xlog.MMXlog", "com.tencent.mars.xlog.Xlog"});
         C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
         ClassLoader classLoaderM1854Ujhhgtgfeyxiexzf = C0580Ujhhgtgfeyxiexzf.m1854Ujhhgtgfeyxiexzf();
         Iterator it = listM3653feyxiexzfUjhhgtg.iterator();
@@ -48,7 +48,7 @@ public final class C3261feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
             throw new NoClassDefFoundError("VariousClass matches failed of " + listM3653feyxiexzfUjhhgtg + ".");
         }
         C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(clsM4167Ujhhgtgfeyxiexzf).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928813119230182794L, strArr);
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "logMonitor";
         Class cls = Long.TYPE;
         C2839feyxiexzfUjhhgtg c2839feyxiexzfUjhhgtgM2443Ujhhgtgfeyxiexzf = AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls);
         Class cls2 = Integer.TYPE;

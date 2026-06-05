@@ -21,7 +21,7 @@ public abstract class AbstractC2059Ujhhgtgfeyxiexzf extends AbstractC0571Ujhhgtg
 
     public AbstractC2059Ujhhgtgfeyxiexzf(String str) {
         StringBuilder sbM2707Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(str);
-        sbM2707Ujhhgtgfeyxiexzf.append(MagicFactory.get(4928344607017665930L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sbM2707Ujhhgtgfeyxiexzf.append(".enabled");
         this.f6767Ujhhgtgfeyxiexzf = sbM2707Ujhhgtgfeyxiexzf.toString();
         this.f6768Ujhhgtgfeyxiexzf = true;
         this.f6769Ujhhgtgfeyxiexzf = true;
@@ -41,7 +41,7 @@ public abstract class AbstractC2059Ujhhgtgfeyxiexzf extends AbstractC0571Ujhhgtg
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getBoolean(this.f6767Ujhhgtgfeyxiexzf, false);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+        throw new IllegalArgumentException("DefaultConfig must be init".toString());
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛳᛱUjhhgtgᛱᛴ */

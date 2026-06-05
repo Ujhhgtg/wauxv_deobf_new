@@ -30,11 +30,11 @@ public final class C1079feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928908106726901130L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928908175446377866L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4151Ujhhgtgfeyxiexzf = new C1079feyxiexzfUjhhgtg(MagicFactory.get(4928903966378427786L, strArr));
-        f4152Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(MagicFactory.get(4928908128201737610L, strArr), MagicFactory.get(4928908231280952714L, strArr));
-        f4153Ujhhgtgfeyxiexzf = MagicFactory.get(4928908196921214346L, strArr);
-        f4154Ujhhgtgfeyxiexzf = MagicFactory.get(4928908184036312458L, strArr);
-        f4155Ujhhgtgfeyxiexzf = MagicFactory.get(4928908291410494858L, strArr);
+        f4151Ujhhgtgfeyxiexzf = new C1079feyxiexzfUjhhgtg("SayHiAutoRemarkNameHook");
+        f4152Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf("${nick}", "${time}");
+        f4153Ujhhgtgfeyxiexzf = "杂项";
+        f4154Ujhhgtgfeyxiexzf = "添加自动备注";
+        f4155Ujhhgtgfeyxiexzf = "添加好友时将备注进行自定义格式处理";
         f4156Ujhhgtgfeyxiexzf = new C0914feyxiexzfUjhhgtg(17);
     }
 
@@ -43,8 +43,8 @@ public final class C1079feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928904069457642890L, strArr))).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928904370105353610L, strArr);
+        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.profile.ui.SayHiWithSnsPermissionUI")).m2024Ujhhgtgfeyxiexzf();
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "initView";
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC3317feyxiexzfUjhhgtg.m4794Ujhhgtgfeyxiexzf(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf);
         C1079feyxiexzfUjhhgtg c1079feyxiexzfUjhhgtg = f4151Ujhhgtgfeyxiexzf;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c1079feyxiexzfUjhhgtg.m2996Ujhhgtgfeyxiexzf(c0393Ujhhgtgfeyxiexzf, 1);

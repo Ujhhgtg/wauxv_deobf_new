@@ -15,13 +15,13 @@ public final /* synthetic */ class C1520Ujhhgtgfeyxiexzf implements InterfaceC35
         C1520Ujhhgtgfeyxiexzf c1520Ujhhgtgfeyxiexzf = new C1520Ujhhgtgfeyxiexzf();
         f5304Ujhhgtgfeyxiexzf = c1520Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928128445608625546L, strArr), c1520Ujhhgtgfeyxiexzf, 6);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928127693989348746L, strArr), false, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928127767003792778L, strArr), false, 2);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928127913032680842L, strArr), false, 3);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928127981752157578L, strArr), false, 4);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928128140665947530L, strArr), false, 5);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928128183615620490L, strArr), false, 6);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.nk1Proto", c1520Ujhhgtgfeyxiexzf, 6);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "cdn_trans_info", false, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "recommend_video_quality_level", false, 2);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "force_recommend", false, 3);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "replay_transition_video_id", false, 4);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "replay_transition_url", false, 5);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "disable_replay_transition", false, 6);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

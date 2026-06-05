@@ -15,13 +15,13 @@ public final /* synthetic */ class C3478feyxiexzfUjhhgtg implements InterfaceC35
         C3478feyxiexzfUjhhgtg c3478feyxiexzfUjhhgtg = new C3478feyxiexzfUjhhgtg();
         f10807Ujhhgtgfeyxiexzf = c3478feyxiexzfUjhhgtg;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928799263665685898L, strArr), c3478feyxiexzfUjhhgtg, 6);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928798499161507210L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928798477686670730L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928798451916866954L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928798567880983946L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928798546406147466L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928798516341376394L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("wx.demo.hook.ui.FloatActionButtonHook.FabMenuItem", c3478feyxiexzfUjhhgtg, 6);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("desc", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("order", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("icon", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("type", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("action", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("enable", false);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

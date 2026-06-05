@@ -62,15 +62,15 @@ public final class C2094Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928150818093270410L, strArr));
+        sb.append("bf1Proto(mic_contact=");
         sb.append(this.f6865Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928150861042943370L, strArr));
+        sb.append(", mic_type=");
         sb.append(this.f6866Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928150946942289290L, strArr));
+        sb.append(", mic_sdk_user_id=");
         sb.append(this.f6867Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928151002776864138L, strArr));
+        sb.append(", live_mic_id=");
         sb.append(this.f6868Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928151075791308170L, strArr));
+        sb.append(", mic_seq=");
         sb.append(this.f6869Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

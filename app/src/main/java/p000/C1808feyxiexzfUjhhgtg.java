@@ -50,11 +50,11 @@ public final class C1808feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928617492059784586L, strArr));
+        sb.append("y4Proto(d=");
         sb.append(this.f6100Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928617444815144330L, strArr));
+        sb.append(", e=");
         sb.append(this.f6101Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928616461267633546L, strArr));
+        sb.append(", f=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6102Ujhhgtgfeyxiexzf, ')');
     }
 }

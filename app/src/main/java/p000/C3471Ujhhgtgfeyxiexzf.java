@@ -34,13 +34,13 @@ public final /* synthetic */ class C3471Ujhhgtgfeyxiexzf implements InterfaceC35
             case 0:
                 C3482Ujhhgtgfeyxiexzf c3482Ujhhgtgfeyxiexzf = C3482Ujhhgtgfeyxiexzf.f10817Ujhhgtgfeyxiexzf;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3482Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928801110501623178L, strArr));
-                C3484feyxiexzfUjhhgtg.f10819Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928801067551950218L, strArr));
-                C3486feyxiexzfUjhhgtg.f10826Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928786868390069642L, strArr));
-                C3481Ujhhgtgfeyxiexzf.f10816Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928786825440396682L, strArr));
+                c3482Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFF7F7F7");
+                C3484feyxiexzfUjhhgtg.f10819Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF1E1E1E");
+                C3486feyxiexzfUjhhgtg.f10826Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF1E1E1E");
+                C3481Ujhhgtgfeyxiexzf.f10816Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFF7F7F7");
                 return c1943Ujhhgtgfeyxiexzf;
             case 1:
-                C3526Ujhhgtgfeyxiexzf.f11017Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928396829525017994L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                C3526Ujhhgtgfeyxiexzf.f11017Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("E HH:mm");
                 C3523Ujhhgtgfeyxiexzf.f11006Ujhhgtgfeyxiexzf.m4626Ujhhgtgfeyxiexzf(EnumC3524Ujhhgtgfeyxiexzf.f11008Ujhhgtgfeyxiexzf.f11011Ujhhgtgfeyxiexzf);
                 return c1943Ujhhgtgfeyxiexzf;
             case 2:
@@ -60,40 +60,40 @@ public final /* synthetic */ class C3471Ujhhgtgfeyxiexzf implements InterfaceC35
             case 8:
                 C0640Ujhhgtgfeyxiexzf c0640Ujhhgtgfeyxiexzf = C0640Ujhhgtgfeyxiexzf.f2690Ujhhgtgfeyxiexzf;
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0640Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856133327652234L, strArr2));
-                C0641Ujhhgtgfeyxiexzf.f2691Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856090377979274L, strArr2));
-                C0642Ujhhgtgfeyxiexzf.f2692Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856184867259786L, strArr2));
-                C0631Ujhhgtgfeyxiexzf.f2681Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856279356540298L, strArr2));
-                C0632Ujhhgtgfeyxiexzf.f2682Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856236406867338L, strArr2));
-                C0633Ujhhgtgfeyxiexzf.f2683Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856330896147850L, strArr2));
-                C0634Ujhhgtgfeyxiexzf.f2684Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856425385428362L, strArr2));
-                C0635Ujhhgtgfeyxiexzf.f2685Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856382435755402L, strArr2));
-                C0636Ujhhgtgfeyxiexzf.f2686Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856476925035914L, strArr2));
-                C0637Ujhhgtgfeyxiexzf.f2687Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856433975362954L, strArr2));
-                C0638Ujhhgtgfeyxiexzf.f2688Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856528464643466L, strArr2));
-                C0639Ujhhgtgfeyxiexzf.f2689Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856622953923978L, strArr2));
+                c0640Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFF9E8C8");
+                C0641Ujhhgtgfeyxiexzf.f2691Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFFEF3D6");
+                C0642Ujhhgtgfeyxiexzf.f2692Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFE87A20");
+                C0631Ujhhgtgfeyxiexzf.f2681Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFA3F0E6");
+                C0632Ujhhgtgfeyxiexzf.f2682Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFE0F7F4");
+                C0633Ujhhgtgfeyxiexzf.f2683Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF3AAE9D");
+                C0634Ujhhgtgfeyxiexzf.f2684Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFF2D5F8");
+                C0635Ujhhgtgfeyxiexzf.f2685Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFF9EBFC");
+                C0636Ujhhgtgfeyxiexzf.f2686Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFA64BDB");
+                C0637Ujhhgtgfeyxiexzf.f2687Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFD8D8D8");
+                C0638Ujhhgtgfeyxiexzf.f2688Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFE0E0E0");
+                C0639Ujhhgtgfeyxiexzf.f2689Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF666666");
                 return c1943Ujhhgtgfeyxiexzf;
             case 9:
                 C0640Ujhhgtgfeyxiexzf c0640Ujhhgtgfeyxiexzf2 = C0640Ujhhgtgfeyxiexzf.f2690Ujhhgtgfeyxiexzf;
                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0640Ujhhgtgfeyxiexzf2.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856580004251018L, strArr3));
-                C0641Ujhhgtgfeyxiexzf.f2691Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855574981903754L, strArr3));
-                C0642Ujhhgtgfeyxiexzf.f2692Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855669471184266L, strArr3));
-                C0631Ujhhgtgfeyxiexzf.f2681Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855626521511306L, strArr3));
-                C0632Ujhhgtgfeyxiexzf.f2682Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855721010791818L, strArr3));
-                C0633Ujhhgtgfeyxiexzf.f2683Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855678061118858L, strArr3));
-                C0634Ujhhgtgfeyxiexzf.f2684Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855772550399370L, strArr3));
-                C0635Ujhhgtgfeyxiexzf.f2685Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855867039679882L, strArr3));
-                C0636Ujhhgtgfeyxiexzf.f2686Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855824090006922L, strArr3));
-                C0637Ujhhgtgfeyxiexzf.f2687Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855918579287434L, strArr3));
-                C0638Ujhhgtgfeyxiexzf.f2688Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928856013068567946L, strArr3));
-                C0639Ujhhgtgfeyxiexzf.f2689Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928855970118894986L, strArr3));
+                c0640Ujhhgtgfeyxiexzf2.m4629Ujhhgtgfeyxiexzf("#FFFFD56A");
+                C0641Ujhhgtgfeyxiexzf.f2691Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFFFE87A");
+                C0642Ujhhgtgfeyxiexzf.f2692Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFFFFFFF");
+                C0631Ujhhgtgfeyxiexzf.f2681Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF4DD5CC");
+                C0632Ujhhgtgfeyxiexzf.f2682Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF68E8DF");
+                C0633Ujhhgtgfeyxiexzf.f2683Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFFFFFFF");
+                C0634Ujhhgtgfeyxiexzf.f2684Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFD0A3FF");
+                C0635Ujhhgtgfeyxiexzf.f2685Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFEFBFFF");
+                C0636Ujhhgtgfeyxiexzf.f2686Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFFFFFFF");
+                C0637Ujhhgtgfeyxiexzf.f2687Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF95A0B8");
+                C0638Ujhhgtgfeyxiexzf.f2688Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFA8B2C9");
+                C0639Ujhhgtgfeyxiexzf.f2689Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFFFFFFF");
                 return c1943Ujhhgtgfeyxiexzf;
             case 10:
                 C0525Ujhhgtgfeyxiexzf c0525Ujhhgtgfeyxiexzf = C0525Ujhhgtgfeyxiexzf.f2482Ujhhgtgfeyxiexzf;
                 String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0525Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928861072540042634L, strArr4));
-                C0533Ujhhgtgfeyxiexzf.f2501Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928861038180304266L, strArr4));
+                c0525Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#28C445");
+                C0533Ujhhgtgfeyxiexzf.f2501Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("退出了此群");
                 return c1943Ujhhgtgfeyxiexzf;
             case 11:
                 int i3 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
@@ -139,14 +139,14 @@ public final /* synthetic */ class C3471Ujhhgtgfeyxiexzf implements InterfaceC35
                 C0328Ujhhgtgfeyxiexzf c0328Ujhhgtgfeyxiexzf = C0277Ujhhgtgfeyxiexzf.f1691Ujhhgtgfeyxiexzf;
                 C0328Ujhhgtgfeyxiexzf c0328Ujhhgtgfeyxiexzf2 = null;
                 if (c0328Ujhhgtgfeyxiexzf == null) {
-                    MagicFactory.get(4928847972889789834L, strArr5);
+                    "binding";
                     c0328Ujhhgtgfeyxiexzf = null;
                 }
                 c0248Ujhhgtgfeyxiexzf.m4625Ujhhgtgfeyxiexzf(Float.parseFloat(AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(c0328Ujhhgtgfeyxiexzf.f1933Ujhhgtgfeyxiexzf)));
                 C0247Ujhhgtgfeyxiexzf c0247Ujhhgtgfeyxiexzf = C0247Ujhhgtgfeyxiexzf.f1578Ujhhgtgfeyxiexzf;
                 C0328Ujhhgtgfeyxiexzf c0328Ujhhgtgfeyxiexzf3 = C0277Ujhhgtgfeyxiexzf.f1691Ujhhgtgfeyxiexzf;
                 if (c0328Ujhhgtgfeyxiexzf3 == null) {
-                    MagicFactory.get(4928847938530051466L, strArr5);
+                    "binding";
                 } else {
                     c0328Ujhhgtgfeyxiexzf2 = c0328Ujhhgtgfeyxiexzf3;
                 }
@@ -160,7 +160,7 @@ public final /* synthetic */ class C3471Ujhhgtgfeyxiexzf implements InterfaceC35
                 return bitmapCreateBitmap;
             case Opcodes.ALOAD /* 25 */:
                 C0333Ujhhgtgfeyxiexzf c0333Ujhhgtgfeyxiexzf = C0333Ujhhgtgfeyxiexzf.f1951Ujhhgtgfeyxiexzf;
-                File file = new File(C0333Ujhhgtgfeyxiexzf.f1952Ujhhgtgfeyxiexzf, MagicFactory.get(4928357225631581578L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file = new File(C0333Ujhhgtgfeyxiexzf.f1952Ujhhgtgfeyxiexzf, "right_bubble.9.png");
                 if (file.exists() && (bitmapM4203feyxiexzfUjhhgtg = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg;
                 }
@@ -168,7 +168,7 @@ public final /* synthetic */ class C3471Ujhhgtgfeyxiexzf implements InterfaceC35
                 return (Bitmap) C0333Ujhhgtgfeyxiexzf.f1953Ujhhgtgfeyxiexzf.getValue();
             case 26:
                 C0333Ujhhgtgfeyxiexzf c0333Ujhhgtgfeyxiexzf2 = C0333Ujhhgtgfeyxiexzf.f1951Ujhhgtgfeyxiexzf;
-                File file2 = new File(C0333Ujhhgtgfeyxiexzf.f1952Ujhhgtgfeyxiexzf, MagicFactory.get(4928357281466156426L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file2 = new File(C0333Ujhhgtgfeyxiexzf.f1952Ujhhgtgfeyxiexzf, "left_bubble.9.png");
                 if (file2.exists() && (bitmapM4203feyxiexzfUjhhgtg2 = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file2)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg2;
                 }
@@ -177,28 +177,28 @@ public final /* synthetic */ class C3471Ujhhgtgfeyxiexzf implements InterfaceC35
             case 27:
                 C0352Ujhhgtgfeyxiexzf c0352Ujhhgtgfeyxiexzf = C0352Ujhhgtgfeyxiexzf.f1995Ujhhgtgfeyxiexzf;
                 String[] strArr6 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0352Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928357341595698570L, strArr6));
-                C0334Ujhhgtgfeyxiexzf.f1960Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928357436084979082L, strArr6));
-                C0349Ujhhgtgfeyxiexzf.f1991Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928357393135306122L, strArr6));
-                C0351Ujhhgtgfeyxiexzf.f1994Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928356388112958858L, strArr6));
+                c0352Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#00000000");
+                C0334Ujhhgtgfeyxiexzf.f1960Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#00000000");
+                C0349Ujhhgtgfeyxiexzf.f1991Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#00000000");
+                C0351Ujhhgtgfeyxiexzf.f1994Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#00000000");
                 return c1943Ujhhgtgfeyxiexzf;
             case 28:
                 C0331Ujhhgtgfeyxiexzf c0331Ujhhgtgfeyxiexzf = C0331Ujhhgtgfeyxiexzf.f1949Ujhhgtgfeyxiexzf;
                 String[] strArr7 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0331Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928358668740593034L, strArr7));
-                C0332Ujhhgtgfeyxiexzf.f1950Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928358763229873546L, strArr7));
-                C0342Ujhhgtgfeyxiexzf.f1972Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928358720280200586L, strArr7));
-                C0341Ujhhgtgfeyxiexzf.f1971Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928358814769481098L, strArr7));
-                C0336Ujhhgtgfeyxiexzf.f1962Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928358771819808138L, strArr7));
-                C0335Ujhhgtgfeyxiexzf.f1961Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928358866309088650L, strArr7));
-                C0340Ujhhgtgfeyxiexzf.f1970Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928358960798369162L, strArr7));
-                C0339Ujhhgtgfeyxiexzf.f1969Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928358917848696202L, strArr7));
+                c0331Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFE4E9FC");
+                C0332Ujhhgtgfeyxiexzf.f1950Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#11000000");
+                C0342Ujhhgtgfeyxiexzf.f1972Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFD7FAE4");
+                C0341Ujhhgtgfeyxiexzf.f1971Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#11000000");
+                C0336Ujhhgtgfeyxiexzf.f1962Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF3D3D3D");
+                C0335Ujhhgtgfeyxiexzf.f1961Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#11000000");
+                C0340Ujhhgtgfeyxiexzf.f1970Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFD7FAE4");
+                C0339Ujhhgtgfeyxiexzf.f1969Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#11000000");
                 return c1943Ujhhgtgfeyxiexzf;
             default:
                 C0494Ujhhgtgfeyxiexzf c0494Ujhhgtgfeyxiexzf = C0494Ujhhgtgfeyxiexzf.f2413Ujhhgtgfeyxiexzf;
                 String[] strArr8 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0494Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928414554855048586L, strArr8));
-                C0495Ujhhgtgfeyxiexzf.f2414Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928414632164459914L, strArr8));
+                c0494Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("${sendText}喵~");
+                C0495Ujhhgtgfeyxiexzf.f2414Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("HH:mm:ss");
                 return c1943Ujhhgtgfeyxiexzf;
         }
     }

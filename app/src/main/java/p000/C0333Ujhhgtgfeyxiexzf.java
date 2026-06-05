@@ -50,15 +50,15 @@ public final class C0333Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
     static {
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928356456832435594L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f1951Ujhhgtgfeyxiexzf = new C0333Ujhhgtgfeyxiexzf(MagicFactory.get(4928357156912104842L, strArr));
+        f1951Ujhhgtgfeyxiexzf = new C0333Ujhhgtgfeyxiexzf("MsgBgBubbleHook");
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f1952Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928339465941812618L, strArr), MagicFactory.get(4928339564726060426L, strArr));
+        f1952Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Resource", "Bubble");
         f1953Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C3471Ujhhgtgfeyxiexzf(24));
         f1954Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C3471Ujhhgtgfeyxiexzf(25));
         f1955Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C3471Ujhhgtgfeyxiexzf(26));
-        f1956Ujhhgtgfeyxiexzf = MagicFactory.get(4928356551321716106L, strArr);
-        f1957Ujhhgtgfeyxiexzf = MagicFactory.get(4928356538436814218L, strArr);
-        f1958Ujhhgtgfeyxiexzf = MagicFactory.get(4928356508372043146L, strArr);
+        f1956Ujhhgtgfeyxiexzf = "美化";
+        f1957Ujhhgtgfeyxiexzf = "消息背景气泡";
+        f1958Ujhhgtgfeyxiexzf = "仅支持配置部分消息, 与背景颜色冲突";
         f1959Ujhhgtgfeyxiexzf = new C0317Ujhhgtgfeyxiexzf(9);
     }
 

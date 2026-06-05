@@ -15,10 +15,10 @@ public final /* synthetic */ class C2049feyxiexzfUjhhgtg implements InterfaceC35
         C2049feyxiexzfUjhhgtg c2049feyxiexzfUjhhgtg = new C2049feyxiexzfUjhhgtg();
         f6746Ujhhgtgfeyxiexzf = c2049feyxiexzfUjhhgtg;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928103826856084874L, strArr), c2049feyxiexzfUjhhgtg, 3);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928107468988351882L, strArr), false, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928107580657501578L, strArr), false, 2);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928107550592730506L, strArr), false, 3);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.SizeProto", c2049feyxiexzfUjhhgtg, 3);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "width", false, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "height", false, 2);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "totalSize", false, 3);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

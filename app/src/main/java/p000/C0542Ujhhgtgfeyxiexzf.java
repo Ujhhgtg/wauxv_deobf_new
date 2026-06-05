@@ -68,7 +68,7 @@ public final /* synthetic */ class C0542Ujhhgtgfeyxiexzf implements InterfaceC35
                 Set setM4256Ujhhgtgfeyxiexzf = AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(arrayList);
                 c0544Ujhhgtgfeyxiexzf.getClass();
                 C0629Ujhhgtgfeyxiexzf.f2673Ujhhgtgfeyxiexzf.getClass();
-                File file = new File(C0629Ujhhgtgfeyxiexzf.f2674Ujhhgtgfeyxiexzf, MagicFactory.get(4928830002746623370L, strArr));
+                File file = new File(C0629Ujhhgtgfeyxiexzf.f2674Ujhhgtgfeyxiexzf, "groupItemsV2.json");
                 if (file.exists()) {
                     try {
                         C0732Ujhhgtgfeyxiexzf c0732Ujhhgtgfeyxiexzf = AbstractC0728Ujhhgtgfeyxiexzf.f2996Ujhhgtgfeyxiexzf;
@@ -117,7 +117,7 @@ public final /* synthetic */ class C0542Ujhhgtgfeyxiexzf implements InterfaceC35
                 if (z) {
                     interfaceC3545feyxiexzfUjhhgtg.invoke();
                 } else {
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928830062876165514L, strArr));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "保存失败");
                 }
                 return Boolean.FALSE;
             default:

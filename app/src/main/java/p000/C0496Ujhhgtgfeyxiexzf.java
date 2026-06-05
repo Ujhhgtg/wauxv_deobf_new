@@ -33,11 +33,11 @@ public final class C0496Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928414035164005770L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928399818822256010L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2415Ujhhgtgfeyxiexzf = new C0496Ujhhgtgfeyxiexzf(MagicFactory.get(4928414348696618378L, strArr));
-        f2416Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(MagicFactory.get(4928399917606503818L, strArr), MagicFactory.get(4928399866066896266L, strArr), MagicFactory.get(4928399969146111370L, strArr));
-        f2417Ujhhgtgfeyxiexzf = MagicFactory.get(4928400055045457290L, strArr);
-        f2418Ujhhgtgfeyxiexzf = MagicFactory.get(4928400042160555402L, strArr);
-        f2419Ujhhgtgfeyxiexzf = MagicFactory.get(4928400012095784330L, strArr);
+        f2415Ujhhgtgfeyxiexzf = new C0496Ujhhgtgfeyxiexzf("MsgFormatHook");
+        f2416Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf("${sendText}", "${line}", "${sendTime}");
+        f2417Ujhhgtgfeyxiexzf = "聊天";
+        f2418Ujhhgtgfeyxiexzf = "发送文本格式";
+        f2419Ujhhgtgfeyxiexzf = "将聊天发送的文本进行自定义格式处理";
         f2420Ujhhgtgfeyxiexzf = new C0317Ujhhgtgfeyxiexzf(11);
     }
 

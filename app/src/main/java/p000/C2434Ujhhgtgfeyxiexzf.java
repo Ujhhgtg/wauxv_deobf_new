@@ -24,10 +24,10 @@ public final class C2434Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7873Ujhhgtgfeyxiexzf = new C2434Ujhhgtgfeyxiexzf(MagicFactory.get(4928385568120767882L, strArr));
-        f7874Ujhhgtgfeyxiexzf = MagicFactory.get(4928385825818805642L, strArr);
-        f7875Ujhhgtgfeyxiexzf = MagicFactory.get(4928385812933903754L, strArr);
-        f7876Ujhhgtgfeyxiexzf = MagicFactory.get(4928385791459067274L, strArr);
+        f7873Ujhhgtgfeyxiexzf = new C2434Ujhhgtgfeyxiexzf("AntiNotificationHook");
+        f7874Ujhhgtgfeyxiexzf = "实验";
+        f7875Ujhhgtgfeyxiexzf = "静默通知";
+        f7876Ujhhgtgfeyxiexzf = "屏蔽群聊里叼毛艾特所有人的全体通知";
         f7877Ujhhgtgfeyxiexzf = new C2976feyxiexzfUjhhgtg(7);
     }
 

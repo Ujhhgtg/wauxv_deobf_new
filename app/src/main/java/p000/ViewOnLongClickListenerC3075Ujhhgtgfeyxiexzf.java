@@ -46,24 +46,24 @@ public final /* synthetic */ class ViewOnLongClickListenerC3075Ujhhgtgfeyxiexzf 
                 int i2 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(c0919feyxiexzfUjhhgtg).m2021Ujhhgtgfeyxiexzf();
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928897820280227210L, strArr);
+                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "field_userName";
                 String str = (String) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf)).m4939Ujhhgtgfeyxiexzf();
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(c0919feyxiexzfUjhhgtg).m2021Ujhhgtgfeyxiexzf();
-                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928883599643510154L, strArr);
+                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "field_type";
                 int iIntValue = ((Number) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2)).m4939Ujhhgtgfeyxiexzf()).intValue();
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(c0919feyxiexzfUjhhgtg).m2021Ujhhgtgfeyxiexzf();
-                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928883689837823370L, strArr);
+                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = "field_thumbUrl";
                 String str2 = (String) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3)).m4939Ujhhgtgfeyxiexzf();
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(c0919feyxiexzfUjhhgtg).m2021Ujhhgtgfeyxiexzf();
-                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928883762852267402L, strArr);
+                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = "field_imageBgUrl";
                 String str3 = (String) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4)).m4939Ujhhgtgfeyxiexzf();
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf5 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(c0919feyxiexzfUjhhgtg).m2021Ujhhgtgfeyxiexzf();
-                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf5.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928883827276776842L, strArr);
+                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf5.f1479Ujhhgtgfeyxiexzf = "field_videoBgUrl";
                 String str4 = (String) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf5)).m4939Ujhhgtgfeyxiexzf();
                 if (iIntValue == 1 || iIntValue == 2 || iIntValue == 3) {
                     if (str2 != null) {
                         StringBuilder sbM2707Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(str);
-                        sbM2707Ujhhgtgfeyxiexzf.append(MagicFactory.get(4928883891701286282L, strArr));
+                        sbM2707Ujhhgtgfeyxiexzf.append(".thumbUrl.png");
                         String string = sbM2707Ujhhgtgfeyxiexzf.toString();
                         c1066feyxiexzfUjhhgtg.getClass();
                         C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
@@ -71,7 +71,7 @@ public final /* synthetic */ class ViewOnLongClickListenerC3075Ujhhgtgfeyxiexzf 
                     }
                     if (str3 != null) {
                         StringBuilder sbM2707Ujhhgtgfeyxiexzf2 = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(str);
-                        sbM2707Ujhhgtgfeyxiexzf2.append(MagicFactory.get(4928883969010697610L, strArr));
+                        sbM2707Ujhhgtgfeyxiexzf2.append(".imageBgUrl.png");
                         String string2 = sbM2707Ujhhgtgfeyxiexzf2.toString();
                         c1066feyxiexzfUjhhgtg.getClass();
                         C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf2 = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
@@ -79,15 +79,15 @@ public final /* synthetic */ class ViewOnLongClickListenerC3075Ujhhgtgfeyxiexzf 
                     }
                     if (str4 != null) {
                         StringBuilder sbM2707Ujhhgtgfeyxiexzf3 = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(str);
-                        sbM2707Ujhhgtgfeyxiexzf3.append(MagicFactory.get(4928884037730174346L, strArr));
+                        sbM2707Ujhhgtgfeyxiexzf3.append(".videoBgUrl.png");
                         String string3 = sbM2707Ujhhgtgfeyxiexzf3.toString();
                         c1066feyxiexzfUjhhgtg.getClass();
                         C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf3 = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
                         C3052Ujhhgtgfeyxiexzf.m4528Ujhhgtgfeyxiexzf(ExecutorC3114Ujhhgtgfeyxiexzf.f9679Ujhhgtgfeyxiexzf, new C0436Ujhhgtgfeyxiexzf(str4, string3, (InterfaceC3704Ujhhgtgfeyxiexzf) null));
                     }
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928884106449651082L, strArr));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "下载完成");
                 } else {
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928884084974814602L, strArr) + iIntValue);
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "暂不支持的封面类型 " + iIntValue);
                 }
                 break;
         }

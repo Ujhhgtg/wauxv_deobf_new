@@ -23,10 +23,10 @@ public final class C0967feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3840Ujhhgtgfeyxiexzf = new C0967feyxiexzfUjhhgtg(MagicFactory.get(4928853333008975242L, strArr));
-        f3841Ujhhgtgfeyxiexzf = MagicFactory.get(4928852534145058186L, strArr);
-        f3842Ujhhgtgfeyxiexzf = MagicFactory.get(4928852521260156298L, strArr);
-        f3843Ujhhgtgfeyxiexzf = MagicFactory.get(4928852628634338698L, strArr);
+        f3840Ujhhgtgfeyxiexzf = new C0967feyxiexzfUjhhgtg("RemoveMaxSelectCountHook");
+        f3841Ujhhgtgfeyxiexzf = "限制";
+        f3842Ujhhgtgfeyxiexzf = "移除选择限制";
+        f3843Ujhhgtgfeyxiexzf = "移除收藏笔记最多上传九张图片的限制 ";
     }
 
     @Override // p000.InterfaceC0746Ujhhgtgfeyxiexzf
@@ -39,8 +39,8 @@ public final class C0967feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
                 return;
             }
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            if (className.equals(MagicFactory.get(4928852263562118538L, strArr))) {
-                intent.putExtra(MagicFactory.get(4928852469720548746L, strArr), 500);
+            if (className.equals("com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI")) {
+                intent.putExtra("max_select_count", 500);
             }
         }
     }

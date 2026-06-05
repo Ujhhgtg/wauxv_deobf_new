@@ -44,7 +44,7 @@ public final class C2139feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928195739156219274L, strArr));
+        sb.append("fm4Proto(related_event_type〹");
         sb.append(this.f6959Ujhhgtgfeyxiexzf);
         sb.append(MagicFactory.get(4928194789968446858L, strArr));
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6960Ujhhgtgfeyxiexzf, ')');

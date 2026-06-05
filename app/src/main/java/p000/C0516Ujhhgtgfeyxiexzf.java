@@ -29,10 +29,10 @@ public final class C0516Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928361645152929162L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928361602203256202L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2460Ujhhgtgfeyxiexzf = new C0516Ujhhgtgfeyxiexzf(MagicFactory.get(4928362375297369482L, strArr));
-        f2461Ujhhgtgfeyxiexzf = MagicFactory.get(4928361696692536714L, strArr);
-        f2462Ujhhgtgfeyxiexzf = MagicFactory.get(4928361683807634826L, strArr);
-        f2463Ujhhgtgfeyxiexzf = MagicFactory.get(4928361653742863754L, strArr);
+        f2460Ujhhgtgfeyxiexzf = new C0516Ujhhgtgfeyxiexzf("MsgTvColorHook");
+        f2461Ujhhgtgfeyxiexzf = "美化";
+        f2462Ujhhgtgfeyxiexzf = "消息文本颜色";
+        f2463Ujhhgtgfeyxiexzf = "当前仅支持配置微信部分消息文本颜色";
         f2464Ujhhgtgfeyxiexzf = new C0504Ujhhgtgfeyxiexzf(3);
     }
 
@@ -48,7 +48,7 @@ public final class C0516Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                 if (viewFindViewById != null) {
                     int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                     C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(viewFindViewById).m2024Ujhhgtgfeyxiexzf();
-                    c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928361348800185738L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                    c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "setTextColor";
                     C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2697Ujhhgtgfeyxiexzf(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf);
                     if (AbstractC3612feyxiexzfUjhhgtg.m5239Ujhhgtgfeyxiexzf(viewFindViewById.getContext())) {
                         color = Color.parseColor((!msgInfoBean.isSend() ? C0505Ujhhgtgfeyxiexzf.f2435Ujhhgtgfeyxiexzf : C0507Ujhhgtgfeyxiexzf.f2440Ujhhgtgfeyxiexzf).m4623Ujhhgtgfeyxiexzf());

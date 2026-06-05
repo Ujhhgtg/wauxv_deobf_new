@@ -35,9 +35,9 @@ public final class C0621Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928514391369844106L, strArr));
+        sb.append("GmailList(count=");
         sb.append(this.f2649Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928514455794353546L, strArr));
+        sb.append(", list=");
         sb.append(this.f2650Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

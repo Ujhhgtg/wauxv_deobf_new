@@ -140,20 +140,20 @@ public abstract class AbstractC1246feyxiexzfUjhhgtg {
         C0479Ujhhgtgfeyxiexzf c0479Ujhhgtgfeyxiexzf = C0479Ujhhgtgfeyxiexzf.f2392Ujhhgtgfeyxiexzf;
         ContentValues contentValues = new ContentValues();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        contentValues.put(MagicFactory.get(4928272580416112010L, strArr), (Integer) 0);
-        String str3 = MagicFactory.get(4928272554646308234L, strArr);
+        contentValues.put("msgid", (Integer) 0);
+        String str3 = "msgSvrId";
         C0805feyxiexzfUjhhgtg c0805feyxiexzfUjhhgtg = AbstractC0804feyxiexzfUjhhgtg.f3192Ujhhgtgfeyxiexzf;
         contentValues.put(str3, Long.valueOf(((long) AbstractC0804feyxiexzfUjhhgtg.f3193Ujhhgtgfeyxiexzf.mo2927Ujhhgtgfeyxiexzf().nextInt()) + j));
-        contentValues.put(MagicFactory.get(4928272653430556042L, strArr), Integer.valueOf(i));
-        contentValues.put(MagicFactory.get(4928272631955719562L, strArr), (Integer) 3);
-        contentValues.put(MagicFactory.get(4928272601890948490L, strArr), Long.valueOf(j));
-        contentValues.put(MagicFactory.get(4928272692085261706L, strArr), str);
-        contentValues.put(MagicFactory.get(4928272662020490634L, strArr), str2);
+        contentValues.put("type", Integer.valueOf(i));
+        contentValues.put("status", (Integer) 3);
+        contentValues.put("createTime", Long.valueOf(j));
+        contentValues.put("talker", str);
+        contentValues.put("content", str2);
         c0479Ujhhgtgfeyxiexzf.getClass();
         Object objM4168Ujhhgtgfeyxiexzf = AbstractC2842feyxiexzfUjhhgtg.m4168Ujhhgtgfeyxiexzf(AbstractC1791feyxiexzfUjhhgtg.m3152feyxiexzfUjhhgtg(C0498Ujhhgtgfeyxiexzf.f2425Ujhhgtgfeyxiexzf), new Object[0]);
         int i2 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(objM4168Ujhhgtgfeyxiexzf).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928228990793024906L, strArr);
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "convertFrom";
         c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m4863Ujhhgtgfeyxiexzf(Arrays.copyOf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(ContentValues.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Boolean.TYPE)}, 2));
         c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1306Ujhhgtgfeyxiexzf();
         ((C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf())).m1649Ujhhgtgfeyxiexzf(contentValues, Boolean.TRUE);
@@ -166,7 +166,7 @@ public abstract class AbstractC1246feyxiexzfUjhhgtg {
         C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(C1104feyxiexzfUjhhgtg.m2574feyxiexzfUjhhgtg(AbstractC1791feyxiexzfUjhhgtg.m3152feyxiexzfUjhhgtg(C1160feyxiexzfUjhhgtg.f4356Ujhhgtgfeyxiexzf))).m2024Ujhhgtgfeyxiexzf();
         c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2.f2121feyxiexzfUjhhgtg = AbstractC1791feyxiexzfUjhhgtg.m3152feyxiexzfUjhhgtg(C0489Ujhhgtgfeyxiexzf.f2403Ujhhgtgfeyxiexzf);
         Object objInvoke = methodM3154feyxiexzfUjhhgtg.invoke(((C0393Ujhhgtgfeyxiexzf) AbstractC3317feyxiexzfUjhhgtg.m4794Ujhhgtgfeyxiexzf(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2)).m1649Ujhhgtgfeyxiexzf(new Object[0]), objM4168Ujhhgtgfeyxiexzf);
-        MagicFactory.get(4928552917226489226L, strArr);
+        "null cannot be cast to non-null type kotlin.Long";
         return ((Long) objInvoke).longValue();
     }
 

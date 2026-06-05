@@ -15,16 +15,16 @@ public final /* synthetic */ class C0719Ujhhgtgfeyxiexzf implements InterfaceC35
         C0719Ujhhgtgfeyxiexzf c0719Ujhhgtgfeyxiexzf = new C0719Ujhhgtgfeyxiexzf();
         f2984Ujhhgtgfeyxiexzf = c0719Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928520099381380490L, strArr), c0719Ujhhgtgfeyxiexzf, 5);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928519236092953994L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.proto.resp.JSLoginResp.ScopeInfo", c0719Ujhhgtgfeyxiexzf, 5);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("scope", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(1, 6));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928519347762103690L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("desc", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(2, 6));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928519326287267210L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("authState", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(3, 6));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928519420776547722L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("extDesc", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(4, 6));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928519386416809354L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("authDesc", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(5, 6));
         descriptor = c1412feyxiexzfUjhhgtg;
     }

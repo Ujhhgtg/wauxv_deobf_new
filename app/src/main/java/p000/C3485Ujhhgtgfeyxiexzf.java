@@ -74,17 +74,17 @@ public final class C3485Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928798623715558794L, strArr));
+        sb.append("FabMenuItem(desc=");
         sb.append(this.f10820Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928798683845100938L, strArr));
+        sb.append(", order=");
         sb.append(this.f10821Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928798645190395274L, strArr));
+        sb.append(", icon=");
         sb.append(this.f10822Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928798748269610378L, strArr));
+        sb.append(", type=");
         sb.append(this.f10823Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928798713909872010L, strArr));
+        sb.append(", action=");
         sb.append(this.f10824Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928798808399152522L, strArr));
+        sb.append(", enable=");
         sb.append(this.f10825Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

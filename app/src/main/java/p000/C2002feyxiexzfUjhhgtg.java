@@ -15,9 +15,9 @@ public final /* synthetic */ class C2002feyxiexzfUjhhgtg implements InterfaceC35
         C2002feyxiexzfUjhhgtg c2002feyxiexzfUjhhgtg = new C2002feyxiexzfUjhhgtg();
         f6594Ujhhgtgfeyxiexzf = c2002feyxiexzfUjhhgtg;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928157264839181706L, strArr), c2002feyxiexzfUjhhgtg, 2);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928156465975264650L, strArr), false, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928156650658858378L, strArr), false, 2);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.AppActionSceneProto", c2002feyxiexzfUjhhgtg, 2);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "installedActionScene", false, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "uninstalledActionScene", false, 2);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

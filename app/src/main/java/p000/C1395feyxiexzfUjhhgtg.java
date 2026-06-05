@@ -104,29 +104,29 @@ public final class C1395feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928517878883288458L, strArr));
+        sb.append("PayMsgPb(username=");
         sb.append(this.f4899Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928517934717863306L, strArr));
+        sb.append(", transId=");
         sb.append(this.f4900Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928516925400548746L, strArr));
+        sb.append(", fee=");
         sb.append(this.f4901Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928516895335777674L, strArr));
+        sb.append(", feeType=");
         sb.append(this.f4902Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928516985530090890L, strArr));
+        sb.append(", timestamp=");
         sb.append(this.f4903Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928517067134469514L, strArr));
+        sb.append(", scene=");
         sb.append(this.f4904Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928517028479763850L, strArr));
+        sb.append(", status=");
         sb.append(this.f4905Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928517122969044362L, strArr));
+        sb.append(", displayName=");
         sb.append(this.f4906Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928517195983488394L, strArr));
+        sb.append(", outTradeNo=");
         sb.append(this.f4907Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928517273292899722L, strArr));
+        sb.append(", msgType=");
         sb.append(this.f4908Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928517363487212938L, strArr));
+        sb.append(", type=");
         sb.append(this.f4909Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928517329127474570L, strArr));
+        sb.append(", headImgUrl=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f4910Ujhhgtgfeyxiexzf, ')');
     }
 }

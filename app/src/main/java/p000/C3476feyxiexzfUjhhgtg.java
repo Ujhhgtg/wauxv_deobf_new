@@ -41,7 +41,7 @@ public final class C3476feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
         final C3480feyxiexzfUjhhgtg c3480feyxiexzfUjhhgtg = (C3480feyxiexzfUjhhgtg) abstractC0821feyxiexzfUjhhgtg;
         C3485Ujhhgtgfeyxiexzf c3485Ujhhgtgfeyxiexzf = (C3485Ujhhgtgfeyxiexzf) this.f10804Ujhhgtgfeyxiexzf.get(i);
         c3480feyxiexzfUjhhgtg.f10811Ujhhgtgfeyxiexzf.setText(c3485Ujhhgtgfeyxiexzf.f10820Ujhhgtgfeyxiexzf);
-        c3480feyxiexzfUjhhgtg.f10812Ujhhgtgfeyxiexzf.setText(c3485Ujhhgtgfeyxiexzf.f10823Ujhhgtgfeyxiexzf + MagicFactory.get(4928799280845555082L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf) + c3485Ujhhgtgfeyxiexzf.f10824Ujhhgtgfeyxiexzf);
+        c3480feyxiexzfUjhhgtg.f10812Ujhhgtgfeyxiexzf.setText(c3485Ujhhgtgfeyxiexzf.f10823Ujhhgtgfeyxiexzf + " | " + c3485Ujhhgtgfeyxiexzf.f10824Ujhhgtgfeyxiexzf);
         MaterialCheckBox materialCheckBox = c3480feyxiexzfUjhhgtg.f10813Ujhhgtgfeyxiexzf;
         materialCheckBox.setOnCheckedChangeListener(null);
         materialCheckBox.setChecked(c3485Ujhhgtgfeyxiexzf.f10825Ujhhgtgfeyxiexzf);

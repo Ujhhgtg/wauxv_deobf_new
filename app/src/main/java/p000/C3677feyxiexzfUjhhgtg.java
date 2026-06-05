@@ -295,7 +295,7 @@ public final class C3677feyxiexzfUjhhgtg {
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg = this.f11678Ujhhgtgfeyxiexzf;
         C1381feyxiexzfUjhhgtg c1381feyxiexzfUjhhgtg = null;
         if (c3678feyxiexzfUjhhgtg == null) {
-            MagicFactory.get(4928465441627571594L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+            "info";
             c3678feyxiexzfUjhhgtg = null;
         }
         RadioGroup radioGroup = (RadioGroup) c3678feyxiexzfUjhhgtg.f11690Ujhhgtgfeyxiexzf.f11686Ujhhgtgfeyxiexzf.getValue();
@@ -332,14 +332,14 @@ public final class C3677feyxiexzfUjhhgtg {
         TextView textView = (TextView) this.f11688Ujhhgtgfeyxiexzf.getValue();
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928465420152735114L, strArr));
+        sb.append("已选择 ");
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg = this.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg == null) {
-            MagicFactory.get(4928465536116852106L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg = null;
         }
         sb.append(c3678feyxiexzfUjhhgtg.m5369Ujhhgtgfeyxiexzf().size());
-        sb.append(MagicFactory.get(4928465514642015626L, strArr));
+        sb.append(" 项");
         textView.setText(sb.toString());
     }
 }

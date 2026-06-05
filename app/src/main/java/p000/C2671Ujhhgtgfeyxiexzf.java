@@ -13,6 +13,6 @@ public final class C2671Ujhhgtgfeyxiexzf extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8543Ujhhgtgfeyxiexzf = new C2671Ujhhgtgfeyxiexzf(MagicFactory.get(4928378167892116874L, strArr), MagicFactory.get(4928378305331070346L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f8543Ujhhgtgfeyxiexzf = new C2671Ujhhgtgfeyxiexzf("BottomTabCustomHook.ValContacts", "通讯", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

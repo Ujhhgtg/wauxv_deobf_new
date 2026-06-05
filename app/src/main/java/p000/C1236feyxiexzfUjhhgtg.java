@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C1236feyxiexzfUjhhgtg extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛴᛳ, reason: contains not printable characters */
-    public static final C1236feyxiexzfUjhhgtg f4569Ujhhgtgfeyxiexzf = new C1236feyxiexzfUjhhgtg(MagicFactory.get(4928795402490086794L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), null, null, false, EnumC1208feyxiexzfUjhhgtg.f4510Ujhhgtgfeyxiexzf.f4513Ujhhgtgfeyxiexzf, 0.0f, 0, UMErrorCode.E_UM_BE_JSON_FAILED);
+    public static final C1236feyxiexzfUjhhgtg f4569Ujhhgtgfeyxiexzf = new C1236feyxiexzfUjhhgtg("SnsUploadOriginalPhoto.ValMode", null, null, false, EnumC1208feyxiexzfUjhhgtg.f4510Ujhhgtgfeyxiexzf.f4513Ujhhgtgfeyxiexzf, 0.0f, 0, UMErrorCode.E_UM_BE_JSON_FAILED);
 }

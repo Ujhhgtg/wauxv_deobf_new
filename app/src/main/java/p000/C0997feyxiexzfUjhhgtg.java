@@ -21,17 +21,17 @@ public final class C0997feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3909Ujhhgtgfeyxiexzf = new C0997feyxiexzfUjhhgtg(MagicFactory.get(4928854488355177866L, strArr));
-        f3910Ujhhgtgfeyxiexzf = MagicFactory.get(4928854789002888586L, strArr);
-        f3911Ujhhgtgfeyxiexzf = MagicFactory.get(4928854913556940170L, strArr);
-        f3912Ujhhgtgfeyxiexzf = MagicFactory.get(4928854883492169098L, strArr);
+        f3909Ujhhgtgfeyxiexzf = new C0997feyxiexzfUjhhgtg("RemoveStatusInputLimitHook");
+        f3910Ujhhgtgfeyxiexzf = "限制";
+        f3911Ujhhgtgfeyxiexzf = "移除状态限制";
+        f3912Ujhhgtgfeyxiexzf = "移除个人状态词最多输入10长度的限制";
     }
 
     @Override // p000.AbstractC0571Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛱUjhhgtgᛱᛳᛴ */
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-        C3658Ujhhgtgfeyxiexzf c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928854509830014346L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))).m2017Ujhhgtgfeyxiexzf();
+        C3658Ujhhgtgfeyxiexzf c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.textstatus.ui.TextStatusDoWhatActivityV2")).m2017Ujhhgtgfeyxiexzf();
         c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf.m4862Ujhhgtgfeyxiexzf();
         C3660Ujhhgtgfeyxiexzf c3660Ujhhgtgfeyxiexzf = (C3660Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf.m5356Ujhhgtgfeyxiexzf());
         C0997feyxiexzfUjhhgtg c0997feyxiexzfUjhhgtg = f3909Ujhhgtgfeyxiexzf;

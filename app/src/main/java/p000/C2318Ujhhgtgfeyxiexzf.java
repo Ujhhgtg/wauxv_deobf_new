@@ -27,10 +27,10 @@ public final class C2318Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7579Ujhhgtgfeyxiexzf = new C2318Ujhhgtgfeyxiexzf(MagicFactory.get(4928350972159198602L, strArr));
-        f7580Ujhhgtgfeyxiexzf = MagicFactory.get(4928349997201622410L, strArr);
-        f7581Ujhhgtgfeyxiexzf = MagicFactory.get(4928349984316720522L, strArr);
-        f7582Ujhhgtgfeyxiexzf = MagicFactory.get(4928350087395935626L, strArr);
+        f7579Ujhhgtgfeyxiexzf = new C2318Ujhhgtgfeyxiexzf("AntiRevoke3Hook");
+        f7580Ujhhgtgfeyxiexzf = "聊天";
+        f7581Ujhhgtgfeyxiexzf = "阻止消息撤回3";
+        f7582Ujhhgtgfeyxiexzf = "消息有撤回提示，微叉款，三款选一款";
         f7583Ujhhgtgfeyxiexzf = new C2976feyxiexzfUjhhgtg(25);
     }
 

@@ -40,6 +40,6 @@ public final class C1571Ujhhgtgfeyxiexzf {
     }
 
     public final String toString() {
-        return MagicFactory.get(4928176510587635082L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf) + this.f5406Ujhhgtgfeyxiexzf + ')';
+        return "kl1Proto(infos=" + this.f5406Ujhhgtgfeyxiexzf + ')';
     }
 }

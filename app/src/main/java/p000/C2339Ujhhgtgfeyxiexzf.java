@@ -13,6 +13,6 @@ public final class C2339Ujhhgtgfeyxiexzf extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7634Ujhhgtgfeyxiexzf = new C2339Ujhhgtgfeyxiexzf(MagicFactory.get(4928348257739867530L, strArr), MagicFactory.get(4928348433833526666L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f7634Ujhhgtgfeyxiexzf = new C2339Ujhhgtgfeyxiexzf("AntiRevoke2Hook.ValTip", "尝试撤回上一条信息[已阻止]", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

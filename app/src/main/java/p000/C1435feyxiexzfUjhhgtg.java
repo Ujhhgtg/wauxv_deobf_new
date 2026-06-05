@@ -33,9 +33,9 @@ public final class C1435feyxiexzfUjhhgtg {
         this.f5033Ujhhgtgfeyxiexzf = runnableC0026Ujhhgtgfeyxiexzf;
         this.f5034Ujhhgtgfeyxiexzf = str;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        byte[] bytes = MagicFactory.get(4928459750795904394L, strArr).getBytes(AbstractC2689Ujhhgtgfeyxiexzf.f8581Ujhhgtgfeyxiexzf);
-        MagicFactory.get(4928459815220413834L, strArr);
-        this.f5035Ujhhgtgfeyxiexzf = new SecretKeySpec(bytes, MagicFactory.get(4928459892529825162L, strArr));
+        byte[] bytes = "0123456789abcdef".getBytes(AbstractC2689Ujhhgtgfeyxiexzf.f8581Ujhhgtgfeyxiexzf);
+        "getBytes(...)";
+        this.f5035Ujhhgtgfeyxiexzf = new SecretKeySpec(bytes, "AES");
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ, reason: contains not printable characters */
@@ -81,9 +81,9 @@ public final class C1435feyxiexzfUjhhgtg {
                     if (thM2409Ujhhgtgfeyxiexzf != null) {
                         StringBuilder sb = new StringBuilder();
                         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                        sb.append(MagicFactory.get(4928463865374573962L, strArr));
+                        sb.append("callBshMethod ");
                         sb.append(str);
-                        sb.append(MagicFactory.get(4928463938389017994L, strArr));
+                        sb.append(" Failed: ");
                         sb.append(thM2409Ujhhgtgfeyxiexzf.getMessage());
                         c1414feyxiexzfUjhhgtg.m2925Ujhhgtgfeyxiexzf(sb.toString());
                     }

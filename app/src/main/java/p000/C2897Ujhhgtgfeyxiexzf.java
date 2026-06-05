@@ -14,7 +14,7 @@ public final class C2897Ujhhgtgfeyxiexzf extends AbstractC0255Ujhhgtgfeyxiexzf i
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛳᛱUjhhgtgᛱᛴ, reason: contains not printable characters */
     public static String m4277feyxiexzfUjhhgtg(String str, String str2) {
         Object objInvoke = AbstractC1791feyxiexzfUjhhgtg.m3154feyxiexzfUjhhgtg(C2896Ujhhgtgfeyxiexzf.f9173Ujhhgtgfeyxiexzf).invoke(null, str, str2);
-        MagicFactory.get(4928217317071914378L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        "null cannot be cast to non-null type kotlin.String";
         return (String) objInvoke;
     }
 

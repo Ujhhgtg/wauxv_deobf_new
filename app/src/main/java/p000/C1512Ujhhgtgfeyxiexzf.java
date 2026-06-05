@@ -48,9 +48,9 @@ public final class C1512Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928118580068746634L, strArr));
+        sb.append("o5Proto(music=");
         sb.append(this.f5293Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928118653083190666L, strArr));
+        sb.append(", vibratio_meta_info_list=");
         sb.append(this.f5294Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

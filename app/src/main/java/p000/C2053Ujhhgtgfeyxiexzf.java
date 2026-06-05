@@ -15,8 +15,8 @@ public final /* synthetic */ class C2053Ujhhgtgfeyxiexzf implements InterfaceC35
         C2053Ujhhgtgfeyxiexzf c2053Ujhhgtgfeyxiexzf = new C2053Ujhhgtgfeyxiexzf();
         f6760Ujhhgtgfeyxiexzf = c2053Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928191495728530826L, strArr), c2053Ujhhgtgfeyxiexzf, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928191809261143434L, strArr), false, 1);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.FinderMediaProto", c2053Ujhhgtgfeyxiexzf, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "url", false, 1);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

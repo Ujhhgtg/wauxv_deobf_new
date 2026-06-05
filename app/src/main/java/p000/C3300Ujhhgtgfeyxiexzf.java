@@ -8,5 +8,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C3300Ujhhgtgfeyxiexzf extends AbstractC3266feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛳᛲᛴ, reason: contains not printable characters */
-    public static final C3300Ujhhgtgfeyxiexzf f10339Ujhhgtgfeyxiexzf = new C3300Ujhhgtgfeyxiexzf(MagicFactory.get(4928864117671855498L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+    public static final C3300Ujhhgtgfeyxiexzf f10339Ujhhgtgfeyxiexzf = new C3300Ujhhgtgfeyxiexzf("EmojiGameHook.MethodPanelClick");
 }

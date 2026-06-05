@@ -86,23 +86,23 @@ public final class C1536Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928123463446562186L, strArr));
+        sb.append("pk3Proto(adaptive_pattern_wording=");
         sb.append(this.f5331Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928123588000613770L, strArr));
+        sb.append(", seat_pattern_wording=");
         sb.append(this.f5332Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928123622360352138L, strArr));
+        sb.append(", leader_pattern_wording=");
         sb.append(this.f5333Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928123785569109386L, strArr));
+        sb.append(", solo_battle_mode_wording=");
         sb.append(this.f5334Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928109646536770954L, strArr));
+        sb.append(", teamup_battle_mode_wording=");
         sb.append(this.f5335Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928109792565659018L, strArr));
+        sb.append(", battle_indicator_reward_heat_wording=");
         sb.append(this.f5336Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928109895644874122L, strArr));
+        sb.append(", battle_indicator_specific_gift_num_wording=");
         sb.append(this.f5337Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928109010881611146L, strArr));
+        sb.append(", audience_solo_battle_pattern_wording=");
         sb.append(this.f5338Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928109113960826250L, strArr));
+        sb.append(", audience_teamup_battle_pattern_wording=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5339Ujhhgtgfeyxiexzf, ')');
     }
 }

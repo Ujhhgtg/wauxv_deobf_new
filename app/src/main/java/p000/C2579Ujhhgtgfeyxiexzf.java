@@ -80,52 +80,52 @@ public final /* synthetic */ class C2579Ujhhgtgfeyxiexzf implements InterfaceC04
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg2 = null;
         if (c3678feyxiexzfUjhhgtg == null) {
-            MagicFactory.get(4928466184656913802L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg = null;
         }
         ((EditText) c2065feyxiexzfUjhhgtg.getValue()).setHint(c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf);
         ((EditText) c2065feyxiexzfUjhhgtg.getValue()).addTextChangedListener(new C2737Ujhhgtgfeyxiexzf(i3, c3677feyxiexzfUjhhgtg));
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg3 = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg3 == null) {
-            MagicFactory.get(4928466300621030794L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg3 = null;
         }
         ((Button) c2065feyxiexzfUjhhgtg3.getValue()).setText(c3678feyxiexzfUjhhgtg3.f11697Ujhhgtgfeyxiexzf);
         int i4 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg((Button) c2065feyxiexzfUjhhgtg2.getValue()).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928466279146194314L, strArr);
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "setIconResource";
         Class cls = Integer.TYPE;
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls)}, 1, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf);
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg4 = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg4 == null) {
-            MagicFactory.get(4928465248354043274L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg4 = null;
         }
         c0393Ujhhgtgfeyxiexzf.m1649Ujhhgtgfeyxiexzf(Integer.valueOf(c3678feyxiexzfUjhhgtg4.f11696Ujhhgtgfeyxiexzf));
         C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg((Button) c2065feyxiexzfUjhhgtg3.getValue()).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928465226879206794L, strArr);
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "setIconResource";
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf2 = (C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls)}, 1, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2);
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg5 = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg5 == null) {
-            MagicFactory.get(4928465295598683530L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg5 = null;
         }
         c0393Ujhhgtgfeyxiexzf2.m1649Ujhhgtgfeyxiexzf(Integer.valueOf(c3678feyxiexzfUjhhgtg5.f11698Ujhhgtgfeyxiexzf));
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg6 = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg6 == null) {
-            MagicFactory.get(4928465411562800522L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg6 = null;
         }
         ((Button) c2065feyxiexzfUjhhgtg3.getValue()).setOnClickListener(new ViewOnClickListenerC3674feyxiexzfUjhhgtg(c3678feyxiexzfUjhhgtg6.f11700Ujhhgtgfeyxiexzf, i2, c3677feyxiexzfUjhhgtg));
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg7 = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg7 == null) {
-            MagicFactory.get(4928465390087964042L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg7 = null;
         }
         ((Button) c2065feyxiexzfUjhhgtg2.getValue()).setText(c3678feyxiexzfUjhhgtg7.f11699Ujhhgtgfeyxiexzf);
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg8 = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg8 == null) {
-            MagicFactory.get(4928465368613127562L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg8 = null;
         }
         ((Button) c2065feyxiexzfUjhhgtg2.getValue()).setOnClickListener(new ViewOnClickListenerC3674feyxiexzfUjhhgtg(c3678feyxiexzfUjhhgtg8.f11701Ujhhgtgfeyxiexzf, i3, c3677feyxiexzfUjhhgtg));
@@ -145,7 +145,7 @@ public final /* synthetic */ class C2579Ujhhgtgfeyxiexzf implements InterfaceC04
         }
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg9 = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg9 == null) {
-            MagicFactory.get(4928465484577244554L, strArr);
+            "info";
             c3678feyxiexzfUjhhgtg9 = null;
         }
         for (String str : AbstractC2856feyxiexzfUjhhgtg.m4253feyxiexzfUjhhgtg(c3678feyxiexzfUjhhgtg9.f11693Ujhhgtgfeyxiexzf.keySet())) {
@@ -168,7 +168,7 @@ public final /* synthetic */ class C2579Ujhhgtgfeyxiexzf implements InterfaceC04
         C3662feyxiexzfUjhhgtg c3662feyxiexzfUjhhgtg2 = c3677feyxiexzfUjhhgtg.f11689Ujhhgtgfeyxiexzf;
         C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg10 = c3677feyxiexzfUjhhgtg.f11678Ujhhgtgfeyxiexzf;
         if (c3678feyxiexzfUjhhgtg10 == null) {
-            MagicFactory.get(4928465463102408074L, strArr);
+            "info";
         } else {
             c3678feyxiexzfUjhhgtg2 = c3678feyxiexzfUjhhgtg10;
         }
@@ -246,8 +246,8 @@ public final /* synthetic */ class C2579Ujhhgtgfeyxiexzf implements InterfaceC04
         Uri uri = Uri.parse(str);
         Context context = c1019feyxiexzfUjhhgtg.f3986Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        Intent intent = new Intent(MagicFactory.get(4928464247626663306L, strArr), uri);
-        intent.putExtra(MagicFactory.get(4928464269101499786L, strArr), c1019feyxiexzfUjhhgtg.f3986Ujhhgtgfeyxiexzf.getPackageName());
+        Intent intent = new Intent("android.intent.action.VIEW", uri);
+        intent.putExtra("com.android.browser.application_id", c1019feyxiexzfUjhhgtg.f3986Ujhhgtgfeyxiexzf.getPackageName());
         context.startActivity(intent);
     }
 }

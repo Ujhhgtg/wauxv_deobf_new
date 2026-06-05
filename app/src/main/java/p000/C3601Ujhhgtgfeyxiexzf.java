@@ -15,12 +15,12 @@ public final /* synthetic */ class C3601Ujhhgtgfeyxiexzf implements InterfaceC35
         C3601Ujhhgtgfeyxiexzf c3601Ujhhgtgfeyxiexzf = new C3601Ujhhgtgfeyxiexzf();
         f11212Ujhhgtgfeyxiexzf = c3601Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928598886261458314L, strArr), c3601Ujhhgtgfeyxiexzf, 3);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928599169729299850L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.proto.other.GmailInfo", c3601Ujhhgtgfeyxiexzf, 3);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("gmailAcct", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(1, 4));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928599264218580362L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("gmailSwitch", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(2, 4));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928599350117926282L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("gmailErrCode", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(3, 4));
         descriptor = c1412feyxiexzfUjhhgtg;
     }

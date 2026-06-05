@@ -14,16 +14,16 @@ public abstract class AbstractC0587Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ, reason: contains not printable characters */
     public static byte[] m1862Ujhhgtgfeyxiexzf(Class cls) {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MagicFactory.get(4928811126365357450L, strArr);
+        "klass == null";
         String name = cls.getName();
         if (name.isEmpty()) {
-            throw new IllegalArgumentException(MagicFactory.get(4928807686096553354L, strArr));
+            throw new IllegalArgumentException("name == null || name.isEmpty()");
         }
         C0579Ujhhgtgfeyxiexzf c0579Ujhhgtgfeyxiexzf = new C0579Ujhhgtgfeyxiexzf();
         c0579Ujhhgtgfeyxiexzf.f2599Ujhhgtgfeyxiexzf = 1;
         while (c0579Ujhhgtgfeyxiexzf.hasNext()) {
             byte[] bArr = (byte[]) c0579Ujhhgtgfeyxiexzf.next();
-            String str = name.endsWith(MagicFactory.get(4928807737636160906L, strArr)) ? name : MagicFactory.get(4928807729046226314L, strArr) + name.replace('.', '/') + MagicFactory.get(4928807720456291722L, strArr);
+            String str = name.endsWith(";") ? name : "L" + name.replace('.', '/') + ";";
             int iM1891Ujhhgtgfeyxiexzf = AbstractC0615Ujhhgtgfeyxiexzf.m1891Ujhhgtgfeyxiexzf(96, bArr);
             int iM1891Ujhhgtgfeyxiexzf2 = AbstractC0615Ujhhgtgfeyxiexzf.m1891Ujhhgtgfeyxiexzf(100, bArr);
             for (int i = 0; i < iM1891Ujhhgtgfeyxiexzf; i++) {
@@ -39,8 +39,8 @@ public abstract class AbstractC0587Ujhhgtgfeyxiexzf {
     public static String m1863Ujhhgtgfeyxiexzf(int i) {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         if (i <= 1) {
-            return MagicFactory.get(4928807518592828810L, strArr);
+            return "classes.dex";
         }
-        return MagicFactory.get(4928807604492174730L, strArr) + i + MagicFactory.get(4928807707571389834L, strArr);
+        return "classes" + i + ".dex";
     }
 }

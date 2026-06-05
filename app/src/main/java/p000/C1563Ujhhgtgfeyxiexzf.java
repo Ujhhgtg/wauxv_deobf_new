@@ -116,33 +116,33 @@ public final class C1563Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928176927199462794L, strArr));
+        sb.append("kbProto(d=");
         sb.append(this.f5368Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928176879954822538L, strArr));
+        sb.append(", e=");
         sb.append(this.f5369Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928176995918939530L, strArr));
+        sb.append(", f=");
         sb.append(this.f5370Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928176974444103050L, strArr));
+        sb.append(", g=");
         sb.append(this.f5371Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928176952969266570L, strArr));
+        sb.append(", h=");
         sb.append(this.f5372Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928177068933383562L, strArr));
+        sb.append(", i=");
         sb.append(this.f5373Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928177047458547082L, strArr));
+        sb.append(", j=");
         sb.append(this.f5374Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928177025983710602L, strArr));
+        sb.append(", n=");
         sb.append(this.f5375Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928177004508874122L, strArr));
+        sb.append(", o=");
         sb.append(this.f5376Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928177120472991114L, strArr));
+        sb.append(", p=");
         sb.append(this.f5377Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928177098998154634L, strArr));
+        sb.append(", q=");
         sb.append(this.f5378Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928177077523318154L, strArr));
+        sb.append(", r=");
         sb.append(this.f5379Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928176093975807370L, strArr));
+        sb.append(", s=");
         sb.append(this.f5380Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928176072500970890L, strArr));
+        sb.append(", t=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5381Ujhhgtgfeyxiexzf, ')');
     }
 }

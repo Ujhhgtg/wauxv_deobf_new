@@ -62,15 +62,15 @@ public final class C1593Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928087617649509770L, strArr));
+        sb.append("m81Proto(event_id=");
         sb.append(this.f5465Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928087673484084618L, strArr));
+        sb.append(", participant_identity=");
         sb.append(this.f5466Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928087845282776458L, strArr));
+        sb.append(", event_status=");
         sb.append(this.f5467Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928087914002253194L, strArr));
+        sb.append(", stream_status=");
         sb.append(this.f5468Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928087978426762634L, strArr));
+        sb.append(", related_events=");
         sb.append(this.f5469Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

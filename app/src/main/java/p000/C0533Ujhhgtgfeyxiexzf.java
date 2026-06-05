@@ -13,6 +13,6 @@ public final class C0533Ujhhgtgfeyxiexzf extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2501Ujhhgtgfeyxiexzf = new C0533Ujhhgtgfeyxiexzf(MagicFactory.get(4928858607228814730L, strArr), MagicFactory.get(4928858740372800906L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f2501Ujhhgtgfeyxiexzf = new C0533Ujhhgtgfeyxiexzf("HandleGroupMemberHook.ValTipLeft", "退出了此群", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

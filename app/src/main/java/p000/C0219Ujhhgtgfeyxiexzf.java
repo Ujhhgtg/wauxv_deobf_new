@@ -66,11 +66,11 @@ public final /* synthetic */ class C0219Ujhhgtgfeyxiexzf implements InterfaceC35
                 Activity activity = (Activity) obj4;
                 Intent intent = new Intent();
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                intent.setClassName(activity, MagicFactory.get(4928212459463902602L, strArr));
-                intent.putExtra(MagicFactory.get(4928212558248150410L, strArr), 14);
-                intent.putExtra(MagicFactory.get(4928212626967627146L, strArr), str);
-                intent.putExtra(MagicFactory.get(4928212717161940362L, strArr), (String) obj3);
-                intent.putExtra(MagicFactory.get(4928212785881417098L, strArr), (String) obj2);
+                intent.setClassName(activity, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                intent.putExtra("Ksnsupload_type", 14);
+                intent.putExtra("KSightPath", str);
+                intent.putExtra("KSightThumbPath", (String) obj3);
+                intent.putExtra("Kdescription", (String) obj2);
                 activity.startActivity(intent);
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
         }

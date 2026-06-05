@@ -41,7 +41,7 @@ public final class C0319Ujhhgtgfeyxiexzf implements InterfaceC1904feyxiexzfUjhhg
                 return new C0319Ujhhgtgfeyxiexzf((LinearLayout) viewInflate, textInputEditText, 0);
             }
         }
-        throw new NullPointerException(MagicFactory.get(4928816486484542858L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).concat(viewInflate.getResources().getResourceName(i)));
+        throw new NullPointerException("Missing required view with ID: ".concat(viewInflate.getResources().getResourceName(i)));
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛴᛳ, reason: contains not printable characters */
@@ -55,7 +55,7 @@ public final class C0319Ujhhgtgfeyxiexzf implements InterfaceC1904feyxiexzfUjhhg
                 return new C0319Ujhhgtgfeyxiexzf((LinearLayout) viewInflate, textInputEditText, 6);
             }
         }
-        throw new NullPointerException(MagicFactory.get(4928802880028149130L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).concat(viewInflate.getResources().getResourceName(i)));
+        throw new NullPointerException("Missing required view with ID: ".concat(viewInflate.getResources().getResourceName(i)));
     }
 
     @Override // p000.InterfaceC1904feyxiexzfUjhhgtg

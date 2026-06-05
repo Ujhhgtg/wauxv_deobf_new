@@ -149,7 +149,7 @@ public abstract class AbstractC1791feyxiexzfUjhhgtg {
             } else {
                 InterfaceC3549feyxiexzfUjhhgtg interfaceC3549feyxiexzfUjhhgtg5 = c3265feyxiexzfUjhhgtg.f10256Ujhhgtgfeyxiexzf;
                 if (interfaceC3549feyxiexzfUjhhgtg5 == null) {
-                    throw new IllegalArgumentException(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + MagicFactory.get(4928236803338536330L, strArr));
+                    throw new IllegalArgumentException(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + " FindDexClassMethod Config Failed");
                 }
                 dexKitBridge.getClass();
                 C3452feyxiexzfUjhhgtg c3452feyxiexzfUjhhgtg2 = new C3452feyxiexzfUjhhgtg();
@@ -161,13 +161,13 @@ public abstract class AbstractC1791feyxiexzfUjhhgtg {
             String str2 = (String) abstractC3266feyxiexzfUjhhgtg.f10259Ujhhgtgfeyxiexzf.getValue();
             C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1252feyxiexzfUjhhgtg.f4604Ujhhgtgfeyxiexzf;
             if (c2629Ujhhgtgfeyxiexzf == null) {
-                throw new IllegalArgumentException(MagicFactory.get(4928284769533298058L, strArr).toString());
+                throw new IllegalArgumentException("DexDescConfig must be init".toString());
             }
             c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().putString(str2, str);
             c0919feyxiexzfUjhhgtg = C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             if (C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg) != null) {
                 ArrayList arrayList = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
-                String str3 = abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + MagicFactory.get(4928236932187555210L, strArr);
+                String str3 = abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + " FindDexClassMethod Failed";
                 C2625feyxiexzfUjhhgtg.f8453Ujhhgtgfeyxiexzf.getClass();
                 C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(str3, null, 12);
             }
@@ -473,11 +473,11 @@ public abstract class AbstractC1791feyxiexzfUjhhgtg {
         StringBuilder sb = new StringBuilder();
         sb.append(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928235991589717386L, strArr));
+        sb.append(" toDexClass Failed");
         String string = sb.toString();
         C2625feyxiexzfUjhhgtg.f8453Ujhhgtgfeyxiexzf.getClass();
         C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(string, null, 12);
-        throw new NoSuchMethodException(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + MagicFactory.get(4928236047424292234L, strArr));
+        throw new NoSuchMethodException(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + " toDexClass Failed");
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛳᛴᛱUjhhgtgᛱ, reason: contains not printable characters */
@@ -497,11 +497,11 @@ public abstract class AbstractC1791feyxiexzfUjhhgtg {
         StringBuilder sb = new StringBuilder();
         sb.append(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928236343777035658L, strArr));
+        sb.append(" toDexConstructor Failed");
         String string = sb.toString();
         C2625feyxiexzfUjhhgtg.f8453Ujhhgtgfeyxiexzf.getClass();
         C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(string, null, 12);
-        throw new NoSuchMethodException(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + MagicFactory.get(4928236511280760202L, strArr));
+        throw new NoSuchMethodException(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + " toDexConstructor Failed");
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛴᛱUjhhgtgᛱᛳ, reason: contains not printable characters */
@@ -521,11 +521,11 @@ public abstract class AbstractC1791feyxiexzfUjhhgtg {
         StringBuilder sb = new StringBuilder();
         sb.append(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928236103258867082L, strArr));
+        sb.append(" toDexMethod Failed");
         String string = sb.toString();
         C2625feyxiexzfUjhhgtg.f8453Ujhhgtgfeyxiexzf.getClass();
         C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(string, null, 12);
-        throw new NoSuchMethodException(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + MagicFactory.get(4928236292237428106L, strArr));
+        throw new NoSuchMethodException(abstractC3266feyxiexzfUjhhgtg.f10258Ujhhgtgfeyxiexzf + " toDexMethod Failed");
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛴᛳᛱUjhhgtgᛱ, reason: contains not printable characters */

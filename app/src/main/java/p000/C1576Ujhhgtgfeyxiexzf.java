@@ -56,13 +56,13 @@ public final class C1576Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928175157672936842L, strArr));
+        sb.append("j72Proto(contact=");
         sb.append(this.f5425Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928175217802478986L, strArr));
+        sb.append(", video_template=");
         sb.append(this.f5426Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928175415370974602L, strArr));
+        sb.append(", template_creator_h5_url=");
         sb.append(this.f5427Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928175436845811082L, strArr));
+        sb.append(", template_music_id=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5428Ujhhgtgfeyxiexzf, ')');
     }
 }

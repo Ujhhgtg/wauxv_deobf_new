@@ -13,6 +13,6 @@ public final class C2762Ujhhgtgfeyxiexzf extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8747Ujhhgtgfeyxiexzf = new C2762Ujhhgtgfeyxiexzf(MagicFactory.get(4928797884981183882L, strArr), MagicFactory.get(4928798134089287050L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f8747Ujhhgtgfeyxiexzf = new C2762Ujhhgtgfeyxiexzf("ChatToolbarHook.ValMenuGroupOrderList", "", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

@@ -71,7 +71,7 @@ public final class C1423feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
             }
         } else {
             if (i != 1) {
-                throw new IllegalStateException(MagicFactory.get(4928448227398649226L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
         }

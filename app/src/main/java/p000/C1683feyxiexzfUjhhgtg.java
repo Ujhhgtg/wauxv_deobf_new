@@ -96,25 +96,25 @@ public final class C1683feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928112558524597642L, strArr));
+        sb.append("rj3Proto(objectId=");
         sb.append(this.f5651Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928112614359172490L, strArr));
+        sb.append(", username=");
         sb.append(this.f5652Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928112700258518410L, strArr));
+        sb.append(", nickname=");
         sb.append(this.f5653Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928112786157864330L, strArr));
+        sb.append(", avatar=");
         sb.append(this.f5654Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928116179182028170L, strArr));
+        sb.append(", desc=");
         sb.append(this.f5655Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928116144822289802L, strArr));
+        sb.append(", mediaCount=");
         sb.append(this.f5656Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928116222131701130L, strArr));
+        sb.append(", mediaList=");
         sb.append(this.f5657Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928116303736079754L, strArr));
+        sb.append(", objectNonceId=");
         sb.append(this.f5658Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928116368160589194L, strArr));
+        sb.append(", finderId=");
         sb.append(this.f5659Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928116454059935114L, strArr));
+        sb.append(", finderObjectNonceId=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5660Ujhhgtgfeyxiexzf, ')');
     }
 }

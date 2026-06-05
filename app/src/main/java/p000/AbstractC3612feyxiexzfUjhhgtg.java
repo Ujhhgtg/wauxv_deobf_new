@@ -121,7 +121,7 @@ public abstract class AbstractC3612feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛲᛳ, reason: contains not printable characters */
     public static String m5235Ujhhgtgfeyxiexzf(Float f) {
-        return new DecimalFormat(MagicFactory.get(4928342678577350026L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf)).format(f);
+        return new DecimalFormat("0.00").format(f);
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛳᛴ, reason: contains not printable characters */
@@ -152,9 +152,9 @@ public abstract class AbstractC3612feyxiexzfUjhhgtg {
         Integer numValueOf;
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928258772096255370L, strArr));
-        String str = MagicFactory.get(4928259463585990026L, strArr);
-        String str2 = MagicFactory.get(4928259515125597578L, strArr);
+        sb.append("mm");
+        String str = "system_config_prefs";
+        String str2 = "default_uin";
         C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
         SharedPreferences sharedPreferences = C0580Ujhhgtgfeyxiexzf.m1855Ujhhgtgfeyxiexzf().getSharedPreferences(str, 0);
         C2839feyxiexzfUjhhgtg c2839feyxiexzfUjhhgtgM2443Ujhhgtgfeyxiexzf = AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Integer.class);
@@ -162,7 +162,7 @@ public abstract class AbstractC3612feyxiexzfUjhhgtg {
         if (c2839feyxiexzfUjhhgtgM2443Ujhhgtgfeyxiexzf.equals(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class))) {
             Object string2 = sharedPreferences.getString(str2, null);
             if (string2 == null) {
-                throw new NullPointerException(MagicFactory.get(4928259601024943498L, strArr));
+                throw new NullPointerException("null cannot be cast to non-null type kotlin.Int");
             }
             numValueOf = (Integer) string2;
         } else if (c2839feyxiexzfUjhhgtgM2443Ujhhgtgfeyxiexzf.equals(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Integer.TYPE))) {
@@ -173,21 +173,21 @@ public abstract class AbstractC3612feyxiexzfUjhhgtg {
             numValueOf = (Integer) Float.valueOf(sharedPreferences.getFloat(str2, 0.0f));
         } else {
             if (!c2839feyxiexzfUjhhgtgM2443Ujhhgtgfeyxiexzf.equals(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Long.TYPE))) {
-                throw new IllegalArgumentException(MagicFactory.get(4928258707671745930L, strArr));
+                throw new IllegalArgumentException("Unsupported type");
             }
             numValueOf = (Integer) Long.valueOf(sharedPreferences.getLong(str2, 0L));
         }
         sb.append(numValueOf.intValue());
         byte[] bytes = sb.toString().getBytes(AbstractC2689Ujhhgtgfeyxiexzf.f8581Ujhhgtgfeyxiexzf);
-        MagicFactory.get(4928239002361791882L, strArr);
+        "getBytes(...)";
         try {
-            MessageDigest messageDigest = MessageDigest.getInstance(MagicFactory.get(4928339985632855434L, strArr));
+            MessageDigest messageDigest = MessageDigest.getInstance("MD5");
             messageDigest.update(bytes);
             byte[] bArrDigest = messageDigest.digest();
             StringBuffer stringBuffer = new StringBuffer();
             for (byte b : bArrDigest) {
                 String upperCase = Integer.toHexString(b & 255).toUpperCase(Locale.getDefault());
-                MagicFactory.get(4928339921208345994L, strArr);
+                "toUpperCase(...)";
                 if (upperCase.length() < 2) {
                     stringBuffer.append(0);
                 }
@@ -198,11 +198,11 @@ public abstract class AbstractC3612feyxiexzfUjhhgtg {
             e.printStackTrace();
         }
         String lowerCase = string.toLowerCase(Locale.ROOT);
-        MagicFactory.get(4928258759211353482L, strArr);
+        "toLowerCase(...)";
         StringBuilder sb2 = new StringBuilder();
         C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
         sb2.append(C0580Ujhhgtgfeyxiexzf.m1855Ujhhgtgfeyxiexzf().getDataDir().getAbsolutePath());
-        sb2.append(MagicFactory.get(4928258823635862922L, strArr));
+        sb2.append("/MicroMsg/");
         sb2.append(lowerCase);
         sb2.append('/');
         return sb2.toString();
@@ -322,7 +322,7 @@ public abstract class AbstractC3612feyxiexzfUjhhgtg {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛳᛱfeyxiexzfᛱᛲᛴ, reason: contains not printable characters */
     public static final void m5242Ujhhgtgfeyxiexzf(Context context, String str) {
         Intent intent = new Intent();
-        intent.setAction(MagicFactory.get(4928339169589069194L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        intent.setAction("android.intent.action.VIEW");
         intent.setData(Uri.parse(str));
         intent.setFlags(268435456);
         context.startActivity(intent);
@@ -337,7 +337,7 @@ public abstract class AbstractC3612feyxiexzfUjhhgtg {
         Class cls = Integer.TYPE;
         c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f2121feyxiexzfUjhhgtg = AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        ((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{MagicFactory.get(4928260996889314698L, strArr), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class)}, 6, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1649Ujhhgtgfeyxiexzf(obj, str2, MagicFactory.get(4928261207342712202L, strArr), str, 2, null);
+        ((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{"com.tencent.mm.opensdk.modelmsg.WXMediaMessage", AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class)}, 6, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1649Ujhhgtgfeyxiexzf(obj, str2, "", str, 2, null);
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛳᛲᛱfeyxiexzfᛱᛴ, reason: contains not printable characters */
@@ -418,7 +418,7 @@ public abstract class AbstractC3612feyxiexzfUjhhgtg {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛳᛴᛱfeyxiexzfᛱᛲ, reason: contains not printable characters */
     public static String m5246Ujhhgtgfeyxiexzf(long j, String str, ZoneId zoneId, int i) {
         if ((i & 1) != 0) {
-            str = MagicFactory.get(4928339191063905674L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+            str = "yyyy-MM-dd HH:mm:ss";
         }
         if ((i & 2) != 0) {
             zoneId = ZoneId.systemDefault();

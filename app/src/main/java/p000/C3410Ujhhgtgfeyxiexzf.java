@@ -8,5 +8,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C3410Ujhhgtgfeyxiexzf extends AbstractC3266feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛳᛲᛴ, reason: contains not printable characters */
-    public static final C3410Ujhhgtgfeyxiexzf f10627Ujhhgtgfeyxiexzf = new C3410Ujhhgtgfeyxiexzf(MagicFactory.get(4928320954632766858L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+    public static final C3410Ujhhgtgfeyxiexzf f10627Ujhhgtgfeyxiexzf = new C3410Ujhhgtgfeyxiexzf("FavSearchItemMenuApi.MethodCreateMenu");
 }

@@ -15,8 +15,8 @@ public final /* synthetic */ class C3401Ujhhgtgfeyxiexzf implements InterfaceC35
         C3401Ujhhgtgfeyxiexzf c3401Ujhhgtgfeyxiexzf = new C3401Ujhhgtgfeyxiexzf();
         f10611Ujhhgtgfeyxiexzf = c3401Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928248343915660682L, strArr), c3401Ujhhgtgfeyxiexzf, 1);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928247600886318474L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.FavInfoProto.ChatInfoProto", c3401Ujhhgtgfeyxiexzf, 1);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("senderId", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(2, 3));
         descriptor = c1412feyxiexzfUjhhgtg;
     }

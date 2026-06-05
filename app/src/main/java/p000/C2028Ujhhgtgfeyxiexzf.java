@@ -15,9 +15,9 @@ public final /* synthetic */ class C2028Ujhhgtgfeyxiexzf implements InterfaceC35
         C2028Ujhhgtgfeyxiexzf c2028Ujhhgtgfeyxiexzf = new C2028Ujhhgtgfeyxiexzf();
         f6666Ujhhgtgfeyxiexzf = c2028Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928159124560020874L, strArr), c2028Ujhhgtgfeyxiexzf, 2);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928159412322829706L, strArr), false, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928158501789762954L, strArr), false, 2);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.AppJumpWordingKeyProto", c2028Ujhhgtgfeyxiexzf, 2);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "installedWordingKey", false, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "uninstalledWordingKey", false, 2);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

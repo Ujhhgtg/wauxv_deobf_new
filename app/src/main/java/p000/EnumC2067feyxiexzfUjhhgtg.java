@@ -31,9 +31,9 @@ public final class EnumC2067feyxiexzfUjhhgtg {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        EnumC2067feyxiexzfUjhhgtg enumC2067feyxiexzfUjhhgtg = new EnumC2067feyxiexzfUjhhgtg(MagicFactory.get(4928906831121614218L, strArr), 0, 0);
+        EnumC2067feyxiexzfUjhhgtg enumC2067feyxiexzfUjhhgtg = new EnumC2067feyxiexzfUjhhgtg("WHITE", 0, 0);
         f6799Ujhhgtgfeyxiexzf = enumC2067feyxiexzfUjhhgtg;
-        EnumC2067feyxiexzfUjhhgtg enumC2067feyxiexzfUjhhgtg2 = new EnumC2067feyxiexzfUjhhgtg(MagicFactory.get(4928906805351810442L, strArr), 1, 1);
+        EnumC2067feyxiexzfUjhhgtg enumC2067feyxiexzfUjhhgtg2 = new EnumC2067feyxiexzfUjhhgtg("BLACK", 1, 1);
         f6800Ujhhgtgfeyxiexzf = enumC2067feyxiexzfUjhhgtg2;
         f6801Ujhhgtgfeyxiexzf = new EnumC2067feyxiexzfUjhhgtg[]{enumC2067feyxiexzfUjhhgtg, enumC2067feyxiexzfUjhhgtg2};
     }

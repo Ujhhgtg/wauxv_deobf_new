@@ -40,11 +40,11 @@ public final class C3603feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928599294283351434L, strArr));
+        sb.append("GmailInfo(gmailAcct=");
         sb.append(this.f11214Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928598379455317386L, strArr));
+        sb.append(", gmailSwitch=");
         sb.append(this.f11215Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928598452469761418L, strArr));
+        sb.append(", gmailErrCode=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f11216Ujhhgtgfeyxiexzf, ')');
     }
 }

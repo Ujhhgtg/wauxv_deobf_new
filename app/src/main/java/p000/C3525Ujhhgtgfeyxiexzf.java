@@ -28,10 +28,10 @@ public final class C3525Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
     static {
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928396769395475850L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f11012Ujhhgtgfeyxiexzf = new C3525Ujhhgtgfeyxiexzf(MagicFactory.get(4928396662021293450L, strArr));
-        f11013Ujhhgtgfeyxiexzf = MagicFactory.get(4928396872474690954L, strArr);
-        f11014Ujhhgtgfeyxiexzf = MagicFactory.get(4928396859589789066L, strArr);
-        f11015Ujhhgtgfeyxiexzf = MagicFactory.get(4928396966963971466L, strArr);
+        f11012Ujhhgtgfeyxiexzf = new C3525Ujhhgtgfeyxiexzf("FormatMsgTimeHook");
+        f11013Ujhhgtgfeyxiexzf = "净化";
+        f11014Ujhhgtgfeyxiexzf = "格式消息时间";
+        f11015Ujhhgtgfeyxiexzf = "自定义聊天项顶部时间是否显示与格式";
         f11016Ujhhgtgfeyxiexzf = new C3528Ujhhgtgfeyxiexzf(0);
     }
 
@@ -41,7 +41,7 @@ public final class C3525Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         if (mo1424feyxiexzfUjhhgtg()) {
             int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928396722150835594L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "timeTV";
             TextView textView = (TextView) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf)).m4939Ujhhgtgfeyxiexzf();
             int iM4619Ujhhgtgfeyxiexzf = C3523Ujhhgtgfeyxiexzf.f11006Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf();
             if (iM4619Ujhhgtgfeyxiexzf == EnumC3524Ujhhgtgfeyxiexzf.f11007Ujhhgtgfeyxiexzf.f11011Ujhhgtgfeyxiexzf) {

@@ -62,15 +62,15 @@ public final class C2190Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928559853598672266L, strArr));
+        sb.append("VideoTemplateProto(type=");
         sb.append(this.f7120Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928560021102396810L, strArr));
+        sb.append(", templateId=");
         sb.append(this.f7121Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928560098411808138L, strArr));
+        sb.append(", musicId=");
         sb.append(this.f7122Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928560051167167882L, strArr));
+        sb.append(", androidSdkVersionMin=");
         sb.append(this.f7123Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928560222965859722L, strArr));
+        sb.append(", iosSdkVersionMin=");
         sb.append(this.f7124Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

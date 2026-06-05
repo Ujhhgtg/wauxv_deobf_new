@@ -18,15 +18,15 @@ public final class C1475feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f5118Ujhhgtgfeyxiexzf = new C1475feyxiexzfUjhhgtg(MagicFactory.get(4928813239489267082L, strArr));
-        f5119Ujhhgtgfeyxiexzf = MagicFactory.get(4928813681870898570L, strArr);
-        f5120Ujhhgtgfeyxiexzf = MagicFactory.get(4928813647511160202L, strArr);
+        f5118Ujhhgtgfeyxiexzf = new C1475feyxiexzfUjhhgtg("OtherSearchMethodsVisible");
+        f5119Ujhhgtgfeyxiexzf = "测试/配置同步";
+        f5120Ujhhgtgfeyxiexzf = "添加我的方式-其他";
     }
 
     @Override // p000.InterfaceC0747Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛳᛲ */
     public final void mo2086Ujhhgtgfeyxiexzf(C0578Ujhhgtgfeyxiexzf c0578Ujhhgtgfeyxiexzf, String str) {
-        if (mo1424feyxiexzfUjhhgtg() && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, MagicFactory.get(4928813402698024330L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))) {
+        if (mo1424feyxiexzfUjhhgtg() && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, "USERINFO_OTHER_SEARCH_METHODS_VISIBLE_CLIENT_GRAY_BOOLEAN_SYNC")) {
             c0578Ujhhgtgfeyxiexzf.m1853Ujhhgtgfeyxiexzf(Boolean.TRUE);
         }
     }

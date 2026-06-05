@@ -149,10 +149,10 @@ public final class C1905feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                         MaterialTextView materialTextView7 = c0702Ujhhgtgfeyxiexzf2.f2882Ujhhgtgfeyxiexzf;
                         if (z2 && z3) {
                             z = z2;
-                            str = MagicFactory.get(4928462838877390218L, strArr);
+                            str = "单击+长按";
                         } else {
                             z = z2;
-                            str = z3 ? MagicFactory.get(4928462813107586442L, strArr) : z ? MagicFactory.get(4928462937661638026L, strArr) : MagicFactory.get(4928462924776736138L, strArr);
+                            str = z3 ? "长按" : z ? "单击" : "";
                         }
                         materialTextView7.setText(str);
                         materialTextView7.setVisibility((z || z3) ? 0 : 8);
@@ -169,14 +169,14 @@ public final class C1905feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                                     }
                                     C0290Ujhhgtgfeyxiexzf c0290Ujhhgtgfeyxiexzf = new C0290Ujhhgtgfeyxiexzf();
                                     String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                                    c0290Ujhhgtgfeyxiexzf.f1721Ujhhgtgfeyxiexzf = MagicFactory.get(4928462886122030474L, strArr2);
+                                    c0290Ujhhgtgfeyxiexzf.f1721Ujhhgtgfeyxiexzf = "提示";
                                     StringBuilder sb = new StringBuilder();
-                                    sb.append(MagicFactory.get(4928463010676082058L, strArr2));
+                                    sb.append("此功能 (");
                                     sb.append(((C2486feyxiexzfUjhhgtg) abstractC2485feyxiexzfUjhhgtg).f8119Ujhhgtgfeyxiexzf);
-                                    sb.append(MagicFactory.get(4928462984906278282L, strArr2));
+                                    sb.append(") 暂不支持在 ");
                                     C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
                                     sb.append(C0580Ujhhgtgfeyxiexzf.m1858Ujhhgtgfeyxiexzf());
-                                    sb.append(MagicFactory.get(4928462946251572618L, strArr2));
+                                    sb.append(" 上使用, 仍要开启?");
                                     c0290Ujhhgtgfeyxiexzf.f1722Ujhhgtgfeyxiexzf = sb.toString();
                                     C0290Ujhhgtgfeyxiexzf.m1499Ujhhgtgfeyxiexzf(c0290Ujhhgtgfeyxiexzf, new C0350Ujhhgtgfeyxiexzf(19, c1907feyxiexzfUjhhgtg), 1);
                                     C0290Ujhhgtgfeyxiexzf.m1498Ujhhgtgfeyxiexzf(c0290Ujhhgtgfeyxiexzf, new C1903Ujhhgtgfeyxiexzf(compoundButton, 0), 1);
@@ -210,7 +210,7 @@ public final class C1905feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
             if (materialTextView != null) {
                 return new C1906Ujhhgtgfeyxiexzf(new C0693Ujhhgtgfeyxiexzf((LinearLayout) viewInflate, materialTextView, 1));
             }
-            throw new NullPointerException(MagicFactory.get(4928817311118263690L, strArr).concat(viewInflate.getResources().getResourceName(R.id.itemHeaderViewTextViewTitle)));
+            throw new NullPointerException("Missing required view with ID: ".concat(viewInflate.getResources().getResourceName(R.id.itemHeaderViewTextViewTitle)));
         }
         if (i == 1) {
             C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
@@ -228,7 +228,7 @@ public final class C1905feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                     }
                 }
             }
-            throw new NullPointerException(MagicFactory.get(4928817173679310218L, strArr).concat(viewInflate2.getResources().getResourceName(i2)));
+            throw new NullPointerException("Missing required view with ID: ".concat(viewInflate2.getResources().getResourceName(i2)));
         }
         if (i == 2) {
             C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
@@ -250,7 +250,7 @@ public final class C1905feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                     }
                 }
             }
-            throw new NullPointerException(MagicFactory.get(4928817585996170634L, strArr).concat(viewInflate3.getResources().getResourceName(i3)));
+            throw new NullPointerException("Missing required view with ID: ".concat(viewInflate3.getResources().getResourceName(i3)));
         }
         if (i == 3) {
             C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
@@ -272,10 +272,10 @@ public final class C1905feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                     }
                 }
             }
-            throw new NullPointerException(MagicFactory.get(4928817448557217162L, strArr).concat(viewInflate4.getResources().getResourceName(i4)));
+            throw new NullPointerException("Missing required view with ID: ".concat(viewInflate4.getResources().getResourceName(i4)));
         }
         if (i != 4) {
-            throw new IllegalArgumentException(MagicFactory.get(4928461932639290762L, strArr));
+            throw new IllegalArgumentException("onCreateViewHolder Failed");
         }
         C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
         View viewInflate5 = AbstractC0217Ujhhgtgfeyxiexzf.m1328Ujhhgtgfeyxiexzf(C0580Ujhhgtgfeyxiexzf.m1855Ujhhgtgfeyxiexzf()).inflate(R.layout.item_rv_search_result, viewGroup, false);
@@ -296,7 +296,7 @@ public final class C1905feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                 }
             }
         }
-        throw new NullPointerException(MagicFactory.get(4928817998313031050L, strArr).concat(viewInflate5.getResources().getResourceName(i5)));
+        throw new NullPointerException("Missing required view with ID: ".concat(viewInflate5.getResources().getResourceName(i5)));
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛴᛱfeyxiexzfᛱᛳ, reason: contains not printable characters */

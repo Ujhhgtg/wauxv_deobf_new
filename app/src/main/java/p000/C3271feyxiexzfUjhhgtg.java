@@ -23,11 +23,11 @@ public final class C3271feyxiexzfUjhhgtg implements Serializable {
         this.f10283Ujhhgtgfeyxiexzf = method.getName();
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928807926614721930L, strArr));
+        sb.append("(");
         for (Class<?> cls : method.getParameterTypes()) {
             sb.append(m4778Ujhhgtgfeyxiexzf(cls));
         }
-        sb.append(MagicFactory.get(4928807918024787338L, strArr));
+        sb.append(")");
         sb.append(m4778Ujhhgtgfeyxiexzf(method.getReturnType()));
         this.f10284Ujhhgtgfeyxiexzf = sb.toString();
     }
@@ -37,38 +37,38 @@ public final class C3271feyxiexzfUjhhgtg implements Serializable {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         if (!cls.isPrimitive()) {
             if (cls.isArray()) {
-                return MagicFactory.get(4928808218672498058L, strArr) + m4778Ujhhgtgfeyxiexzf(cls.getComponentType());
+                return "[" + m4778Ujhhgtgfeyxiexzf(cls.getComponentType());
             }
-            return MagicFactory.get(4928808210082563466L, strArr) + cls.getName().replace('.', '/') + MagicFactory.get(4928808201492628874L, strArr);
+            return "L" + cls.getName().replace('.', '/') + ";";
         }
         if (Integer.TYPE.equals(cls)) {
-            return MagicFactory.get(4928808021104002442L, strArr);
+            return "I";
         }
         if (Void.TYPE.equals(cls)) {
-            return MagicFactory.get(4928808012514067850L, strArr);
+            return "V";
         }
         if (Boolean.TYPE.equals(cls)) {
-            return MagicFactory.get(4928808003924133258L, strArr);
+            return "Z";
         }
         if (Character.TYPE.equals(cls)) {
-            return MagicFactory.get(4928807995334198666L, strArr);
+            return "C";
         }
         if (Byte.TYPE.equals(cls)) {
-            return MagicFactory.get(4928807986744264074L, strArr);
+            return "B";
         }
         if (Short.TYPE.equals(cls)) {
-            return MagicFactory.get(4928808115593282954L, strArr);
+            return "S";
         }
         if (Float.TYPE.equals(cls)) {
-            return MagicFactory.get(4928808107003348362L, strArr);
+            return "F";
         }
         if (Long.TYPE.equals(cls)) {
-            return MagicFactory.get(4928808098413413770L, strArr);
+            return "J";
         }
         if (Double.TYPE.equals(cls)) {
-            return MagicFactory.get(4928808089823479178L, strArr);
+            return "D";
         }
-        throw new IllegalStateException(MagicFactory.get(4928808081233544586L, strArr) + cls.getName() + MagicFactory.get(4928808188607726986L, strArr));
+        throw new IllegalStateException("Type: " + cls.getName() + " is not a primitive type");
     }
 
     public final boolean equals(Object obj) {
@@ -86,6 +86,6 @@ public final class C3271feyxiexzfUjhhgtg implements Serializable {
     }
 
     public final String toString() {
-        return this.f10282Ujhhgtgfeyxiexzf + MagicFactory.get(4928808192902694282L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf) + this.f10283Ujhhgtgfeyxiexzf + this.f10284Ujhhgtgfeyxiexzf;
+        return this.f10282Ujhhgtgfeyxiexzf + "->" + this.f10283Ujhhgtgfeyxiexzf + this.f10284Ujhhgtgfeyxiexzf;
     }
 }

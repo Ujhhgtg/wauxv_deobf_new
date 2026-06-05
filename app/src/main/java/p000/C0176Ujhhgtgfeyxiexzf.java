@@ -50,9 +50,9 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
             case 1:
                 C3452feyxiexzfUjhhgtg c3452feyxiexzfUjhhgtg = (C3452feyxiexzfUjhhgtg) obj;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3452feyxiexzfUjhhgtg.m4951Ujhhgtgfeyxiexzf(MagicFactory.get(4928543030211773834L, strArr));
+                c3452feyxiexzfUjhhgtg.m4951Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.luckymoney.model");
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf = new C0394Ujhhgtgfeyxiexzf();
-                c0394Ujhhgtgfeyxiexzf.m1661feyxiexzfUjhhgtg(MagicFactory.get(4928542914247656842L, strArr), MagicFactory.get(4928542948607395210L, strArr));
+                c0394Ujhhgtgfeyxiexzf.m1661feyxiexzfUjhhgtg("MicroMsg.LuckyMoneyUtil", "exception:%s");
                 c3452feyxiexzfUjhhgtg.f10739Ujhhgtgfeyxiexzf = c0394Ujhhgtgfeyxiexzf;
                 return c1943Ujhhgtgfeyxiexzf;
             case 2:
@@ -62,7 +62,7 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 ((C3456feyxiexzfUjhhgtg) obj).m4952Ujhhgtgfeyxiexzf(new C0176Ujhhgtgfeyxiexzf(i5));
                 return c1943Ujhhgtgfeyxiexzf;
             case 4:
-                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928222213334631818L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf("MicroMsg.MMAlert");
                 return c1943Ujhhgtgfeyxiexzf;
             case 5:
                 ((C3265feyxiexzfUjhhgtg) obj).f10255Ujhhgtgfeyxiexzf = new C0176Ujhhgtgfeyxiexzf(7);
@@ -84,7 +84,7 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 return c1943Ujhhgtgfeyxiexzf;
             case 9:
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928221362931107210L, strArr2), MagicFactory.get(4928221423060649354L, strArr2));
+                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf("MicroMsg.MMKernel", "Kernel not null, has initialized.");
                 return c1943Ujhhgtgfeyxiexzf;
             case 10:
                 C3265feyxiexzfUjhhgtg c3265feyxiexzfUjhhgtg = (C3265feyxiexzfUjhhgtg) obj;
@@ -104,13 +104,13 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 c0394Ujhhgtgfeyxiexzf2.m1657Ujhhgtgfeyxiexzf(clsM2261feyxiexzfUjhhgtg, clsM5159Ujhhgtgfeyxiexzf2 != null ? clsM5159Ujhhgtgfeyxiexzf2 : Integer.class);
                 C0300Ujhhgtgfeyxiexzf c0300Ujhhgtgfeyxiexzf = new C0300Ujhhgtgfeyxiexzf();
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf3 = new C0394Ujhhgtgfeyxiexzf();
-                c0394Ujhhgtgfeyxiexzf3.m1660feyxiexzfUjhhgtg(MagicFactory.get(4928220967794115978L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                c0394Ujhhgtgfeyxiexzf3.m1660feyxiexzfUjhhgtg("notifyDataSetChanged");
                 c0300Ujhhgtgfeyxiexzf.m1528Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3);
                 c0394Ujhhgtgfeyxiexzf2.f2140Ujhhgtgfeyxiexzf = c0300Ujhhgtgfeyxiexzf;
                 return c1943Ujhhgtgfeyxiexzf;
             case Opcodes.DCONST_0 /* 14 */:
                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928220589836993930L, strArr3), MagicFactory.get(4928220740160849290L, strArr3));
+                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf("MicroMsg.MMPreferenceAdapter", "ignore notifyDataSetChanged(%s %s), had:%s");
                 return c1943Ujhhgtgfeyxiexzf;
             case 15:
                 ((C3265feyxiexzfUjhhgtg) obj).f10256Ujhhgtgfeyxiexzf = new C0176Ujhhgtgfeyxiexzf(17);
@@ -120,13 +120,13 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 int i7 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2693Ujhhgtgfeyxiexzf(c0578Ujhhgtgfeyxiexzf);
                 String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf.f10724Ujhhgtgfeyxiexzf = MagicFactory.get(4928326735658747274L, strArr4);
+                c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf.f10724Ujhhgtgfeyxiexzf = "com.tencent.mm.ui.MMFragmentActivity";
                 Activity activity = (Activity) ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf.m4942Ujhhgtgfeyxiexzf())).m4939Ujhhgtgfeyxiexzf();
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf2 = AbstractC1225feyxiexzfUjhhgtg.m2693Ujhhgtgfeyxiexzf(c0578Ujhhgtgfeyxiexzf);
-                c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928326851622864266L, strArr4);
+                c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "mViewPager";
                 ViewGroup viewGroup = (ViewGroup) ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf2.m4942Ujhhgtgfeyxiexzf())).m4939Ujhhgtgfeyxiexzf();
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf3 = AbstractC1225feyxiexzfUjhhgtg.m2693Ujhhgtgfeyxiexzf(c0578Ujhhgtgfeyxiexzf);
-                c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928326941817177482L, strArr4);
+                c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = "mTabsAdapter";
                 Object objM4938Ujhhgtgfeyxiexzf = ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf3.m4942Ujhhgtgfeyxiexzf())).m4938Ujhhgtgfeyxiexzf();
                 for (InterfaceC0611Ujhhgtgfeyxiexzf interfaceC0611Ujhhgtgfeyxiexzf : C0163Ujhhgtgfeyxiexzf.f1348Ujhhgtgfeyxiexzf) {
                     try {
@@ -134,9 +134,9 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                     } catch (Exception e) {
                         ArrayList arrayList = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
                         StringBuilder sb = new StringBuilder();
-                        sb.append(MagicFactory.get(4928326885982602634L, strArr4));
-                        sb.append(interfaceC0611Ujhhgtgfeyxiexzf instanceof AbstractC2059Ujhhgtgfeyxiexzf ? ((AbstractC2059Ujhhgtgfeyxiexzf) interfaceC0611Ujhhgtgfeyxiexzf).mo1479feyxiexzfUjhhgtg() : MagicFactory.get(4928326971881948554L, strArr4));
-                        AbstractC3317feyxiexzfUjhhgtg.m4809Ujhhgtgfeyxiexzf(sb, MagicFactory.get(4928327070666196362L, strArr4), e, 12);
+                        sb.append("doOnCreate ");
+                        sb.append(interfaceC0611Ujhhgtgfeyxiexzf instanceof AbstractC2059Ujhhgtgfeyxiexzf ? ((AbstractC2059Ujhhgtgfeyxiexzf) interfaceC0611Ujhhgtgfeyxiexzf).mo1479feyxiexzfUjhhgtg() : "LoadHook");
+                        AbstractC3317feyxiexzfUjhhgtg.m4809Ujhhgtgfeyxiexzf(sb, " Failed", e, 12);
                     }
                 }
                 return c1943Ujhhgtgfeyxiexzf;
@@ -144,8 +144,8 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 C3452feyxiexzfUjhhgtg c3452feyxiexzfUjhhgtg3 = (C3452feyxiexzfUjhhgtg) obj;
                 C0394Ujhhgtgfeyxiexzf c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2 = AbstractC1225feyxiexzfUjhhgtg.m2694Ujhhgtgfeyxiexzf(c3452feyxiexzfUjhhgtg3);
                 String[] strArr5 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2.m1659feyxiexzfUjhhgtg(MagicFactory.get(4928327036306457994L, strArr5));
-                c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2.m1661feyxiexzfUjhhgtg(MagicFactory.get(4928327190925280650L, strArr5), MagicFactory.get(4928326237442540938L, strArr5));
+                c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2.m1659feyxiexzfUjhhgtg("com.tencent.mm.ui.MainTabUI");
+                c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2.m1661feyxiexzfUjhhgtg("MicroMsg.LauncherUI.MainTabUI", "doOnCreate");
                 c3452feyxiexzfUjhhgtg3.f10739Ujhhgtgfeyxiexzf = c0394UjhhgtgfeyxiexzfM2694Ujhhgtgfeyxiexzf2;
                 return c1943Ujhhgtgfeyxiexzf;
             case Opcodes.LDC /* 18 */:
@@ -236,7 +236,7 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 return c1943Ujhhgtgfeyxiexzf;
             case Opcodes.LLOAD /* 22 */:
                 String[] strArr6 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg(MagicFactory.get(4928901964923667850L, strArr6), MagicFactory.get(4928902123837457802L, strArr6));
+                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg("MicroMsg.QBarStringHandler", "key_offline_scan_show_tips");
                 return c1943Ujhhgtgfeyxiexzf;
             case Opcodes.FLOAD /* 23 */:
                 C0578Ujhhgtgfeyxiexzf c0578Ujhhgtgfeyxiexzf3 = (C0578Ujhhgtgfeyxiexzf) obj;
@@ -256,7 +256,7 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf4 = AbstractC1225feyxiexzfUjhhgtg.m2693Ujhhgtgfeyxiexzf(c0578Ujhhgtgfeyxiexzf3);
                 c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf4.f10725Ujhhgtgfeyxiexzf = new C0176Ujhhgtgfeyxiexzf(24);
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg((View.OnClickListener) ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2693Ujhhgtgfeyxiexzf4.m4942Ujhhgtgfeyxiexzf())).m4939Ujhhgtgfeyxiexzf()).m2021Ujhhgtgfeyxiexzf();
-                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928326576744957322L, strArr7);
+                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "d";
                 C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.m4942Ujhhgtgfeyxiexzf())).m4938Ujhhgtgfeyxiexzf()).m2024Ujhhgtgfeyxiexzf();
                 c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f2121feyxiexzfUjhhgtg = AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(List.class);
                 List list = (List) ((C0393Ujhhgtgfeyxiexzf) AbstractC3317feyxiexzfUjhhgtg.m4794Ujhhgtgfeyxiexzf(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1650Ujhhgtgfeyxiexzf(new Object[0]);
@@ -275,9 +275,9 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                     } catch (Exception e2) {
                         ArrayList arrayList3 = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
                         StringBuilder sb2 = new StringBuilder();
-                        sb2.append(MagicFactory.get(4928326568155022730L, strArr7));
-                        sb2.append(interfaceC0612Ujhhgtgfeyxiexzf instanceof AbstractC2059Ujhhgtgfeyxiexzf ? ((AbstractC2059Ujhhgtgfeyxiexzf) interfaceC0612Ujhhgtgfeyxiexzf).mo1479feyxiexzfUjhhgtg() : MagicFactory.get(4928326623989597578L, strArr7));
-                        AbstractC3317feyxiexzfUjhhgtg.m4809Ujhhgtgfeyxiexzf(sb2, MagicFactory.get(4928325623262217610L, strArr7), e2, 12);
+                        sb2.append("onCreateMenuItems ");
+                        sb2.append(interfaceC0612Ujhhgtgfeyxiexzf instanceof AbstractC2059Ujhhgtgfeyxiexzf ? ((AbstractC2059Ujhhgtgfeyxiexzf) interfaceC0612Ujhhgtgfeyxiexzf).mo1479feyxiexzfUjhhgtg() : "LoadHook");
+                        AbstractC3317feyxiexzfUjhhgtg.m4809Ujhhgtgfeyxiexzf(sb2, " Failed", e2, 12);
                     }
                 }
                 return c1943Ujhhgtgfeyxiexzf;
@@ -308,7 +308,7 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 C0300Ujhhgtgfeyxiexzf c0300Ujhhgtgfeyxiexzf2 = (C0300Ujhhgtgfeyxiexzf) obj;
                 c0300Ujhhgtgfeyxiexzf2.getClass();
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf4 = new C0394Ujhhgtgfeyxiexzf();
-                c0394Ujhhgtgfeyxiexzf4.m1660feyxiexzfUjhhgtg(MagicFactory.get(4928326100003587466L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                c0394Ujhhgtgfeyxiexzf4.m1660feyxiexzfUjhhgtg("onMMMenuItemSelected");
                 c0300Ujhhgtgfeyxiexzf2.m1528Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf4);
                 return c1943Ujhhgtgfeyxiexzf;
             case 28:
@@ -328,7 +328,7 @@ public final /* synthetic */ class C0176Ujhhgtgfeyxiexzf implements InterfaceC35
                 C0300Ujhhgtgfeyxiexzf c0300Ujhhgtgfeyxiexzf3 = (C0300Ujhhgtgfeyxiexzf) obj;
                 c0300Ujhhgtgfeyxiexzf3.getClass();
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf5 = new C0394Ujhhgtgfeyxiexzf();
-                c0394Ujhhgtgfeyxiexzf5.m1660feyxiexzfUjhhgtg(MagicFactory.get(4928325838010582410L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                c0394Ujhhgtgfeyxiexzf5.m1660feyxiexzfUjhhgtg("onCreateMMMenu");
                 c0300Ujhhgtgfeyxiexzf3.m1528Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf5);
                 return c1943Ujhhgtgfeyxiexzf;
         }

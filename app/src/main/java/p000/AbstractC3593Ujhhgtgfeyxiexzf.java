@@ -477,8 +477,8 @@ public abstract class AbstractC3593Ujhhgtgfeyxiexzf {
     public static boolean m5162feyxiexzfUjhhgtg(byte[] bArr) {
         int iNextInt;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        byte[] bytes = MagicFactory.get(4928258905240241546L, strArr).getBytes(AbstractC2689Ujhhgtgfeyxiexzf.f8581Ujhhgtgfeyxiexzf);
-        MagicFactory.get(4928258883765405066L, strArr);
+        byte[] bytes = "wxgf".getBytes(AbstractC2689Ujhhgtgfeyxiexzf.f8581Ujhhgtgfeyxiexzf);
+        "getBytes(...)";
         if (bArr.length >= bytes.length) {
             Iterable c0682Ujhhgtgfeyxiexzf = new C0682Ujhhgtgfeyxiexzf(0, bytes.length - 1, 1);
             if (!(c0682Ujhhgtgfeyxiexzf instanceof Collection) || !((Collection) c0682Ujhhgtgfeyxiexzf).isEmpty()) {

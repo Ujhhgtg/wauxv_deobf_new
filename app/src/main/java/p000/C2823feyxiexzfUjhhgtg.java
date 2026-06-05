@@ -48,7 +48,7 @@ public final class C2823feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
             case 0:
                 C0693Ujhhgtgfeyxiexzf c0693Ujhhgtgfeyxiexzf = ((C2821feyxiexzfUjhhgtg) abstractC0821feyxiexzfUjhhgtg).f8974Ujhhgtgfeyxiexzf;
                 C2831feyxiexzfUjhhgtg c2831feyxiexzfUjhhgtg = (C2831feyxiexzfUjhhgtg) this.f8979Ujhhgtgfeyxiexzf.get(i);
-                ((MaterialCheckBox) c0693Ujhhgtgfeyxiexzf.f2835Ujhhgtgfeyxiexzf).setText(c2831feyxiexzfUjhhgtg.f8998Ujhhgtgfeyxiexzf + MagicFactory.get(4928303499885675914L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                ((MaterialCheckBox) c0693Ujhhgtgfeyxiexzf.f2835Ujhhgtgfeyxiexzf).setText(c2831feyxiexzfUjhhgtg.f8998Ujhhgtgfeyxiexzf + " (计算中...)");
                 MaterialCheckBox materialCheckBox = (MaterialCheckBox) c0693Ujhhgtgfeyxiexzf.f2835Ujhhgtgfeyxiexzf;
                 materialCheckBox.setOnCheckedChangeListener(null);
                 materialCheckBox.setChecked(((Set) this.f8980Ujhhgtgfeyxiexzf).contains(c2831feyxiexzfUjhhgtg.f8998Ujhhgtgfeyxiexzf));
@@ -96,7 +96,7 @@ public final class C2823feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                 if (materialCheckBox != null) {
                     return new C2821feyxiexzfUjhhgtg(new C0693Ujhhgtgfeyxiexzf((LinearLayout) viewInflate, materialCheckBox, 2));
                 }
-                throw new NullPointerException(MagicFactory.get(4928814287461287306L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).concat(viewInflate.getResources().getResourceName(R.id.itemAutoCleanCheckBox)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewInflate.getResources().getResourceName(R.id.itemAutoCleanCheckBox)));
             case 1:
                 return new C1363feyxiexzfUjhhgtg(AbstractC0615Ujhhgtgfeyxiexzf.m1881Ujhhgtgfeyxiexzf(viewGroup.getContext()).inflate(R.layout.item_panel_emoji_group, viewGroup, false));
             default:
@@ -105,7 +105,7 @@ public final class C2823feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                 if (materialTextView != null) {
                     return new C2069feyxiexzfUjhhgtg(new C0693Ujhhgtgfeyxiexzf((LinearLayout) viewInflate2, materialTextView, 0));
                 }
-                throw new NullPointerException(MagicFactory.get(4928818135751984522L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).concat(viewInflate2.getResources().getResourceName(R.id.itemSystemBrowserTvHost)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewInflate2.getResources().getResourceName(R.id.itemSystemBrowserTvHost)));
         }
     }
 

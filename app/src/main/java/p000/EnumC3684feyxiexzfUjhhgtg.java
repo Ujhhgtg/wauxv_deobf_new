@@ -34,17 +34,17 @@ public final class EnumC3684feyxiexzfUjhhgtg {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        String str = MagicFactory.get(4928284219777484170L, strArr);
-        MagicFactory.get(4928284327151666570L, strArr);
-        EnumC3684feyxiexzfUjhhgtg enumC3684feyxiexzfUjhhgtg = new EnumC3684feyxiexzfUjhhgtg(str, 0, new String[]{MagicFactory.get(4928284305676830090L, strArr)});
+        String str = "GROUPS";
+        "所有群聊";
+        EnumC3684feyxiexzfUjhhgtg enumC3684feyxiexzfUjhhgtg = new EnumC3684feyxiexzfUjhhgtg(str, 0, new String[]{"contact.username LIKE '%@chatroom'"});
         f11711Ujhhgtgfeyxiexzf = enumC3684feyxiexzfUjhhgtg;
-        String str2 = MagicFactory.get(4928287728765765002L, strArr);
-        MagicFactory.get(4928287831844980106L, strArr);
-        EnumC3684feyxiexzfUjhhgtg enumC3684feyxiexzfUjhhgtg2 = new EnumC3684feyxiexzfUjhhgtg(str2, 1, new String[]{MagicFactory.get(4928287810370143626L, strArr), MagicFactory.get(4928287853319816586L, strArr), MagicFactory.get(4928288033708443018L, strArr), MagicFactory.get(4928288080953083274L, strArr), MagicFactory.get(4928287140355245450L, strArr)});
+        String str2 = "FRIENDS";
+        "所有好友";
+        EnumC3684feyxiexzfUjhhgtg enumC3684feyxiexzfUjhhgtg2 = new EnumC3684feyxiexzfUjhhgtg(str2, 1, new String[]{"contact.type & 1 != 0", "contact.type & 32 = 0", "contact.type & 8 = 0", "contact.verifyFlag & 8 = 0", "(contact.usernameFlag IN (0))"});
         f11712Ujhhgtgfeyxiexzf = enumC3684feyxiexzfUjhhgtg2;
-        String str3 = MagicFactory.get(4928287286384133514L, strArr);
-        MagicFactory.get(4928287243434460554L, strArr);
-        EnumC3684feyxiexzfUjhhgtg enumC3684feyxiexzfUjhhgtg3 = new EnumC3684feyxiexzfUjhhgtg(str3, 2, new String[]{MagicFactory.get(4928287355103610250L, strArr)});
+        String str3 = "OFFICIALS";
+        "所有公众号";
+        EnumC3684feyxiexzfUjhhgtg enumC3684feyxiexzfUjhhgtg3 = new EnumC3684feyxiexzfUjhhgtg(str3, 2, new String[]{"contact.verifyFlag & 8 != 0"});
         f11713Ujhhgtgfeyxiexzf = enumC3684feyxiexzfUjhhgtg3;
         f11714Ujhhgtgfeyxiexzf = new EnumC3684feyxiexzfUjhhgtg[]{enumC3684feyxiexzfUjhhgtg, enumC3684feyxiexzfUjhhgtg2, enumC3684feyxiexzfUjhhgtg3};
     }

@@ -54,11 +54,11 @@ public final class C2116feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928139337645688202L, strArr));
+        sb.append("cy1Proto(post_guide_topic_tags=");
         sb.append(this.f6904Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928139475084641674L, strArr));
+        sb.append(", bg_color_top_hex=");
         sb.append(this.f6905Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928139526624249226L, strArr));
+        sb.append(", bg_color_bottom_hex=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6906Ujhhgtgfeyxiexzf, ')');
     }
 }

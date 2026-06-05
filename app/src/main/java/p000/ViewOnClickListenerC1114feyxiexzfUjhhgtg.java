@@ -26,52 +26,52 @@ public final /* synthetic */ class ViewOnClickListenerC1114feyxiexzfUjhhgtg impl
     public final void onClick(View view) {
         switch (this.f4215Ujhhgtgfeyxiexzf) {
             case 0:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928454021309531530L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/LuckyPray/DexKit");
                 break;
             case 1:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928453179495941514L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/BillyWei01/FastKV");
                 break;
             case 2:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928453295460058506L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/kongzue/DialogX");
                 break;
             case 3:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928453420014110090L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/cinit/QAuxiliary");
                 break;
             case 4:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928453540273194378L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/suzhelan/TimTool");
                 break;
             case 5:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928457096506115466L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/fankes/TSBattery");
                 break;
             case 6:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928457216765199754L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/KitsunePie/QQCleaner");
                 break;
             case 7:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928457319844414858L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/LSPosed/LSPosed");
                 break;
             case 8:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928456482325792138L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/Lagrio");
                 break;
             case 9:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928455069281551754L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://t.me/Hd_WAuxiliary_CI");
                 break;
             case 10:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928455215310439818L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://t.me/Hd_WAuxiliary");
                 break;
             case 11:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928454274712601994L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/HdShare/WAuxiliary_Public");
                 break;
             case Opcodes.FCONST_1 /* 12 */:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928454356316980618L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/HdShare/WAuxiliary_Plugin");
                 break;
             case 13:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928454575360312714L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/HighCapable/YukiHookAPI");
                 break;
             case Opcodes.DCONST_0 /* 14 */:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928453703481951626L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/HighCapable/KavaRef");
                 break;
             case 15:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, MagicFactory.get(4928453810856134026L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f4216Ujhhgtgfeyxiexzf.f3986Ujhhgtgfeyxiexzf, "https://github.com/BetterAndroid/BetterAndroid");
                 break;
             case 16:
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -79,20 +79,20 @@ public final /* synthetic */ class ViewOnClickListenerC1114feyxiexzfUjhhgtg impl
                 LinearLayout linearLayout = c1019feyxiexzfUjhhgtg.f3993Ujhhgtgfeyxiexzf;
                 LinearLayout linearLayout2 = null;
                 if (linearLayout == null) {
-                    MagicFactory.get(4928467455967233418L, strArr);
+                    "llSearchRow";
                     linearLayout = null;
                 }
                 linearLayout.setVisibility(0);
                 EditText editText = c1019feyxiexzfUjhhgtg.f3994Ujhhgtgfeyxiexzf;
                 if (editText == null) {
-                    MagicFactory.get(4928467541866579338L, strArr);
+                    "edtSearchInput";
                     editText = null;
                 }
                 editText.requestFocus();
                 editText.post(new RunnableC3468feyxiexzfUjhhgtg(editText, 4, c1019feyxiexzfUjhhgtg));
                 LinearLayout linearLayout3 = c1019feyxiexzfUjhhgtg.f3990Ujhhgtgfeyxiexzf;
                 if (linearLayout3 == null) {
-                    MagicFactory.get(4928467614881023370L, strArr);
+                    "llTabRow";
                 } else {
                     linearLayout2 = linearLayout3;
                 }

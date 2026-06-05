@@ -91,11 +91,11 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                     }
                 }
                 if (!arrayList.isEmpty()) {
-                    String strM4243feyxiexzfUjhhgtg = AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(arrayList, MagicFactory.get(4928901178944652682L, strArr), null, null, null, 62);
+                    String strM4243feyxiexzfUjhhgtg = AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(arrayList, "\n", null, null, null, 62);
                     Intent intent = new Intent();
-                    intent.setClassName(context, MagicFactory.get(4928209513116337546L, strArr));
-                    intent.putExtra(MagicFactory.get(4928213047874422154L, strArr), 9);
-                    intent.putExtra(MagicFactory.get(4928213116593898890L, strArr), strM4243feyxiexzfUjhhgtg);
+                    intent.setClassName(context, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                    intent.putExtra("Ksnsupload_type", 9);
+                    intent.putExtra("Kdescription", strM4243feyxiexzfUjhhgtg);
                     context.startActivity(intent);
                 }
                 return c1943Ujhhgtgfeyxiexzf;
@@ -131,12 +131,12 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                     }
                 }
                 if (!arrayList3.isEmpty()) {
-                    String strM4243feyxiexzfUjhhgtg2 = AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(arrayList2, MagicFactory.get(4928901170354718090L, strArr2), null, null, null, 62);
+                    String strM4243feyxiexzfUjhhgtg2 = AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(arrayList2, "\n", null, null, null, 62);
                     ArrayList<String> arrayList4 = new ArrayList<>(arrayList3);
                     Intent intent2 = new Intent();
-                    intent2.setClassName(context2, MagicFactory.get(4928213198198277514L, strArr2));
-                    intent2.putStringArrayListExtra(MagicFactory.get(4928213296982525322L, strArr2), arrayList4);
-                    intent2.putExtra(MagicFactory.get(4928212382154491274L, strArr2), strM4243feyxiexzfUjhhgtg2);
+                    intent2.setClassName(context2, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                    intent2.putStringArrayListExtra("sns_kemdia_path_list", arrayList4);
+                    intent2.putExtra("Kdescription", strM4243feyxiexzfUjhhgtg2);
                     context2.startActivity(intent2);
                 }
                 return c1943Ujhhgtgfeyxiexzf;
@@ -165,7 +165,7 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                     }
                 }
                 if (!arrayList6.isEmpty()) {
-                    String strM4243feyxiexzfUjhhgtg3 = AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(arrayList5, MagicFactory.get(4928901299203736970L, strArr3), null, null, null, 62);
+                    String strM4243feyxiexzfUjhhgtg3 = AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(arrayList5, "\n", null, null, null, 62);
                     C1873feyxiexzfUjhhgtg c1873feyxiexzfUjhhgtg = C1873feyxiexzfUjhhgtg.f6250Ujhhgtgfeyxiexzf;
                     String str2 = (String) AbstractC2856feyxiexzfUjhhgtg.m4244feyxiexzfUjhhgtg(arrayList6);
                     c1873feyxiexzfUjhhgtg.getClass();
@@ -174,13 +174,13 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                     Method methodM3154feyxiexzfUjhhgtg = AbstractC1791feyxiexzfUjhhgtg.m3154feyxiexzfUjhhgtg(C1876feyxiexzfUjhhgtg.f6259Ujhhgtgfeyxiexzf);
                     C1877feyxiexzfUjhhgtg.f6260Ujhhgtgfeyxiexzf.getClass();
                     Object objInvoke = methodM3154feyxiexzfUjhhgtg.invoke(C1877feyxiexzfUjhhgtg.m3205feyxiexzfUjhhgtg(), str3);
-                    MagicFactory.get(4928539461093950858L, strArr3);
+                    "null cannot be cast to non-null type kotlin.String";
                     Intent intent3 = new Intent();
-                    intent3.setClassName(context3, MagicFactory.get(4928212459463902602L, strArr3));
-                    intent3.putExtra(MagicFactory.get(4928212558248150410L, strArr3), 14);
-                    intent3.putExtra(MagicFactory.get(4928212626967627146L, strArr3), strM3203feyxiexzfUjhhgtg);
-                    intent3.putExtra(MagicFactory.get(4928212717161940362L, strArr3), (String) objInvoke);
-                    intent3.putExtra(MagicFactory.get(4928212785881417098L, strArr3), strM4243feyxiexzfUjhhgtg3);
+                    intent3.setClassName(context3, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                    intent3.putExtra("Ksnsupload_type", 14);
+                    intent3.putExtra("KSightPath", strM3203feyxiexzfUjhhgtg);
+                    intent3.putExtra("KSightThumbPath", (String) objInvoke);
+                    intent3.putExtra("Kdescription", strM4243feyxiexzfUjhhgtg3);
                     context3.startActivity(intent3);
                 }
                 return c1943Ujhhgtgfeyxiexzf;
@@ -199,10 +199,10 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                     long msgId = ((MsgInfoBean) it.next()).getMsgId();
                     C1352feyxiexzfUjhhgtg c1352feyxiexzfUjhhgtg = C1352feyxiexzfUjhhgtg.f4830Ujhhgtgfeyxiexzf;
                     String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                    String str4 = MagicFactory.get(4928256143576270218L, strArr4);
+                    String str4 = "你撤回了一条消息";
                     c1352feyxiexzfUjhhgtg.getClass();
                     C0519Ujhhgtgfeyxiexzf.f2467Ujhhgtgfeyxiexzf.getClass();
-                    C1345feyxiexzfUjhhgtg.m2866feyxiexzfUjhhgtg(C1345feyxiexzfUjhhgtg.f4823Ujhhgtgfeyxiexzf, AbstractC1791feyxiexzfUjhhgtg.m3153feyxiexzfUjhhgtg(C1351feyxiexzfUjhhgtg.f4829Ujhhgtgfeyxiexzf).newInstance(C0519Ujhhgtgfeyxiexzf.m1808feyxiexzfUjhhgtg(msgId), str4, MagicFactory.get(4928256147871237514L, strArr4)));
+                    C1345feyxiexzfUjhhgtg.m2866feyxiexzfUjhhgtg(C1345feyxiexzfUjhhgtg.f4823Ujhhgtgfeyxiexzf, AbstractC1791feyxiexzfUjhhgtg.m3153feyxiexzfUjhhgtg(C1351feyxiexzfUjhhgtg.f4829Ujhhgtgfeyxiexzf).newInstance(C0519Ujhhgtgfeyxiexzf.m1808feyxiexzfUjhhgtg(msgId), str4, ""));
                 }
                 return c1943Ujhhgtgfeyxiexzf;
             case 11:
@@ -239,9 +239,9 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                 String content5 = ((MsgInfoBean) obj2).getContent();
                 Intent intent4 = new Intent();
                 String[] strArr5 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                intent4.setClassName(activity, MagicFactory.get(4928209513116337546L, strArr5));
-                intent4.putExtra(MagicFactory.get(4928213047874422154L, strArr5), 9);
-                intent4.putExtra(MagicFactory.get(4928213116593898890L, strArr5), content5);
+                intent4.setClassName(activity, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                intent4.putExtra("Ksnsupload_type", 9);
+                intent4.putExtra("Kdescription", content5);
                 activity.startActivity(intent4);
                 return c1943Ujhhgtgfeyxiexzf;
             case 13:
@@ -254,11 +254,11 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                 c0759Ujhhgtgfeyxiexzf2.getClass();
                 ArrayList<String> arrayList10 = new ArrayList<>(new C2381Ujhhgtgfeyxiexzf(new String[]{C0759Ujhhgtgfeyxiexzf.m2093feyxiexzfUjhhgtg(origin2)}, true));
                 String[] strArr6 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                String str5 = MagicFactory.get(4928212326319916426L, strArr6);
+                String str5 = "";
                 Intent intent5 = new Intent();
-                intent5.setClassName(activity2, MagicFactory.get(4928213198198277514L, strArr6));
-                intent5.putStringArrayListExtra(MagicFactory.get(4928213296982525322L, strArr6), arrayList10);
-                intent5.putExtra(MagicFactory.get(4928212382154491274L, strArr6), str5);
+                intent5.setClassName(activity2, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                intent5.putStringArrayListExtra("sns_kemdia_path_list", arrayList10);
+                intent5.putExtra("Kdescription", str5);
                 activity2.startActivity(intent5);
                 return c1943Ujhhgtgfeyxiexzf;
             case Opcodes.DCONST_0 /* 14 */:
@@ -273,21 +273,21 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                 C1877feyxiexzfUjhhgtg.f6260Ujhhgtgfeyxiexzf.getClass();
                 Object objInvoke2 = methodM3154feyxiexzfUjhhgtg2.invoke(C1877feyxiexzfUjhhgtg.m3205feyxiexzfUjhhgtg(), imgPath2);
                 String[] strArr7 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                MagicFactory.get(4928539461093950858L, strArr7);
-                String str6 = MagicFactory.get(4928212867485795722L, strArr7);
+                "null cannot be cast to non-null type kotlin.String";
+                String str6 = "";
                 Intent intent6 = new Intent();
-                intent6.setClassName(activity3, MagicFactory.get(4928212459463902602L, strArr7));
-                intent6.putExtra(MagicFactory.get(4928212558248150410L, strArr7), 14);
-                intent6.putExtra(MagicFactory.get(4928212626967627146L, strArr7), strM3203feyxiexzfUjhhgtg2);
-                intent6.putExtra(MagicFactory.get(4928212717161940362L, strArr7), (String) objInvoke2);
-                intent6.putExtra(MagicFactory.get(4928212785881417098L, strArr7), str6);
+                intent6.setClassName(activity3, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                intent6.putExtra("Ksnsupload_type", 14);
+                intent6.putExtra("KSightPath", strM3203feyxiexzfUjhhgtg2);
+                intent6.putExtra("KSightThumbPath", (String) objInvoke2);
+                intent6.putExtra("Kdescription", str6);
                 activity3.startActivity(intent6);
                 return c1943Ujhhgtgfeyxiexzf;
             case 15:
                 MsgInfoBean msgInfoBean9 = (MsgInfoBean) obj2;
                 String talker = msgInfoBean9.getTalker();
                 String content6 = msgInfoBean9.getContent();
-                C0964feyxiexzfUjhhgtg c0964feyxiexzfUjhhgtg = new C0964feyxiexzfUjhhgtg(MagicFactory.get(4928271871746508170L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                C0964feyxiexzfUjhhgtg c0964feyxiexzfUjhhgtg = new C0964feyxiexzfUjhhgtg("\\[AtWx=([^]]+)]");
                 List listM2590feyxiexzfUjhhgtg = AbstractC1119feyxiexzfUjhhgtg.m2590feyxiexzfUjhhgtg(new C3455feyxiexzfUjhhgtg(C0964feyxiexzfUjhhgtg.m2464Ujhhgtgfeyxiexzf(c0964feyxiexzfUjhhgtg, content6), new C0504Ujhhgtgfeyxiexzf(25), 1));
                 String strM2465Ujhhgtgfeyxiexzf = c0964feyxiexzfUjhhgtg.m2465Ujhhgtgfeyxiexzf(content6, new C0504Ujhhgtgfeyxiexzf(26));
                 C1340feyxiexzfUjhhgtg c1340feyxiexzfUjhhgtg = C1340feyxiexzfUjhhgtg.f4818Ujhhgtgfeyxiexzf;
@@ -325,7 +325,7 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                 MsgInfoBean msgInfoBean14 = (MsgInfoBean) obj2;
                 String talker2 = msgInfoBean14.getTalker();
                 String title = msgInfoBean14.getQuoteMsg().getTitle();
-                C0964feyxiexzfUjhhgtg c0964feyxiexzfUjhhgtg2 = new C0964feyxiexzfUjhhgtg(MagicFactory.get(4928271871746508170L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                C0964feyxiexzfUjhhgtg c0964feyxiexzfUjhhgtg2 = new C0964feyxiexzfUjhhgtg("\\[AtWx=([^]]+)]");
                 List listM2590feyxiexzfUjhhgtg2 = AbstractC1119feyxiexzfUjhhgtg.m2590feyxiexzfUjhhgtg(new C3455feyxiexzfUjhhgtg(C0964feyxiexzfUjhhgtg.m2464Ujhhgtgfeyxiexzf(c0964feyxiexzfUjhhgtg2, title), new C0504Ujhhgtgfeyxiexzf(25), 1));
                 String strM2465Ujhhgtgfeyxiexzf2 = c0964feyxiexzfUjhhgtg2.m2465Ujhhgtgfeyxiexzf(title, new C0504Ujhhgtgfeyxiexzf(26));
                 C1340feyxiexzfUjhhgtg c1340feyxiexzfUjhhgtg2 = C1340feyxiexzfUjhhgtg.f4818Ujhhgtgfeyxiexzf;
@@ -369,40 +369,40 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                         JSONObject jSONObject = (JSONObject) obj4;
                         sb.append("第" + i12 + (char) 24352);
                         sb.append('\n');
-                        sb.append(MagicFactory.get(4928820991905236362L, strArr8) + jSONObject.getString(MagicFactory.get(4928820914595825034L, strArr8)) + jSONObject.getString(MagicFactory.get(4928821034854909322L, strArr8)));
+                        sb.append("链接: " + jSONObject.getString("url") + jSONObject.getString("url_token"));
                         sb.append('\n');
                         i5 = i12;
                     }
                     AbstractC1150feyxiexzfUjhhgtg.m2617Ujhhgtgfeyxiexzf(sb.toString());
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928821107869353354L, strArr8));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "复制图片成功");
                 } else if (iIntValue2 == 4) {
                     JSONObject jSONObject2 = (JSONObject) list4.get(0);
-                    int i13 = jSONObject2.getInt(MagicFactory.get(4928821077804582282L, strArr8));
+                    int i13 = jSONObject2.getInt("videoDuration");
                     Locale locale = Locale.CHINA;
-                    String str7 = String.format(locale, MagicFactory.get(4928821155113993610L, strArr8), Arrays.copyOf(new Object[]{Integer.valueOf(i13 / 3600), Integer.valueOf((i13 % 3600) / 60), Integer.valueOf(i13 % 60)}, 3));
-                    MagicFactory.get(4928821228128437642L, strArr8);
-                    String str8 = String.format(locale, MagicFactory.get(4928821275373077898L, strArr8), Arrays.copyOf(new Object[]{Double.valueOf((((double) jSONObject2.getInt(MagicFactory.get(4928821314027783562L, strArr8))) / 1024.0d) / 1024.0d)}, 1));
-                    MagicFactory.get(4928821378452293002L, strArr8);
+                    String str7 = String.format(locale, "%02d:%02d:%02d", Arrays.copyOf(new Object[]{Integer.valueOf(i13 / 3600), Integer.valueOf((i13 % 3600) / 60), Integer.valueOf(i13 % 60)}, 3));
+                    "format(...)";
+                    String str8 = String.format(locale, "%.2f MB", Arrays.copyOf(new Object[]{Double.valueOf((((double) jSONObject2.getInt("fileSize")) / 1024.0d) / 1024.0d)}, 1));
+                    "format(...)";
                     StringBuilder sb2 = new StringBuilder();
-                    sb2.append(MagicFactory.get(4928821326912685450L, strArr8) + str7);
+                    sb2.append("时长: " + str7);
                     sb2.append('\n');
-                    sb2.append(MagicFactory.get(4928821442876802442L, strArr8) + str8);
+                    sb2.append("大小: " + str8);
                     sb2.append('\n');
-                    JSONObject jSONObjectOptJSONObject = jSONObject2.optJSONObject(MagicFactory.get(4928821421401965962L, strArr8));
-                    if (jSONObjectOptJSONObject == null || !jSONObjectOptJSONObject.has(MagicFactory.get(4928820394904782218L, strArr8))) {
-                        String string = jSONObject2.getString(MagicFactory.get(4928820433559487882L, strArr8));
-                        String string2 = jSONObject2.getString(MagicFactory.get(4928820553818572170L, strArr8));
-                        String string3 = jSONObject2.getString(MagicFactory.get(4928820510868899210L, strArr8));
-                        sb2.append(MagicFactory.get(4928820605358179722L, strArr8) + string + string2);
+                    JSONObject jSONObjectOptJSONObject = jSONObject2.optJSONObject("media_cdn_info");
+                    if (jSONObjectOptJSONObject == null || !jSONObjectOptJSONObject.has("pcdn_url")) {
+                        String string = jSONObject2.getString("url");
+                        String string2 = jSONObject2.getString("url_token");
+                        String string3 = jSONObject2.getString("decodeKey");
+                        sb2.append("密链: " + string + string2);
                         sb2.append('\n');
-                        sb2.append(MagicFactory.get(4928820583883343242L, strArr8) + string3);
+                        sb2.append("密钥: " + string3);
                         sb2.append('\n');
                     } else {
-                        sb2.append(MagicFactory.get(4928820356250076554L, strArr8) + jSONObjectOptJSONObject.getString(MagicFactory.get(4928820472214193546L, strArr8)));
+                        sb2.append("直链: " + jSONObjectOptJSONObject.getString("pcdn_url"));
                         sb2.append('\n');
                     }
                     AbstractC1150feyxiexzfUjhhgtg.m2617Ujhhgtgfeyxiexzf(sb2.toString());
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928820562408506762L, strArr8));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "复制视频成功");
                 }
                 return c1943Ujhhgtgfeyxiexzf;
             case Opcodes.ALOAD /* 25 */:
@@ -418,23 +418,23 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                             throw null;
                         }
                         JSONObject jSONObject3 = (JSONObject) obj5;
-                        String string4 = jSONObject3.getString(MagicFactory.get(4928820669782689162L, strArr9));
-                        String string5 = jSONObject3.getString(MagicFactory.get(4928820639717918090L, strArr9));
-                        String string6 = jSONObject3.getString(MagicFactory.get(4928820759977002378L, strArr9));
+                        String string4 = jSONObject3.getString("md5sum");
+                        String string5 = jSONObject3.getString("url");
+                        String string6 = jSONObject3.getString("url_token");
                         C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
                         C3052Ujhhgtgfeyxiexzf.m4528Ujhhgtgfeyxiexzf(ExecutorC3114Ujhhgtgfeyxiexzf.f9679Ujhhgtgfeyxiexzf, new C2222Ujhhgtgfeyxiexzf("第" + i14 + (char) 24352, string4, string5, string6, null, 0));
                         i4 = i14;
                     }
                 } else if (iIntValue3 == 4) {
                     JSONObject jSONObject4 = (JSONObject) list5.get(0);
-                    String string7 = jSONObject4.getString(MagicFactory.get(4928820717027329418L, strArr9));
-                    String str9 = String.format(Locale.CHINA, MagicFactory.get(4928820785746806154L, strArr9), Arrays.copyOf(new Object[]{Double.valueOf((((double) jSONObject4.getInt(MagicFactory.get(4928820824401511818L, strArr9))) / 1024.0d) / 1024.0d)}, 1));
-                    MagicFactory.get(4928820893120988554L, strArr9);
-                    JSONObject jSONObjectOptJSONObject2 = jSONObject4.optJSONObject(MagicFactory.get(4928820841581381002L, strArr9));
-                    if (jSONObjectOptJSONObject2 == null || !jSONObjectOptJSONObject2.has(MagicFactory.get(4928824213130708362L, strArr9))) {
-                        String string8 = jSONObject4.getString(MagicFactory.get(4928824311914956170L, strArr9));
-                        String string9 = jSONObject4.getString(MagicFactory.get(4928824294735086986L, strArr9));
-                        String string10 = jSONObject4.getString(MagicFactory.get(4928824389224367498L, strArr9));
+                    String string7 = jSONObject4.getString("md5sum");
+                    String str9 = String.format(Locale.CHINA, "%.2fMB", Arrays.copyOf(new Object[]{Double.valueOf((((double) jSONObject4.getInt("fileSize")) / 1024.0d) / 1024.0d)}, 1));
+                    "format(...)";
+                    JSONObject jSONObjectOptJSONObject2 = jSONObject4.optJSONObject("media_cdn_info");
+                    if (jSONObjectOptJSONObject2 == null || !jSONObjectOptJSONObject2.has("pcdn_url")) {
+                        String string8 = jSONObject4.getString("url");
+                        String string9 = jSONObject4.getString("url_token");
+                        String string10 = jSONObject4.getString("decodeKey");
                         C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf2 = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
                         C3052Ujhhgtgfeyxiexzf.m4528Ujhhgtgfeyxiexzf(ExecutorC3114Ujhhgtgfeyxiexzf.f9679Ujhhgtgfeyxiexzf, new C2224Ujhhgtgfeyxiexzf(str9, string7, string10, string8, string9, null, 0));
                     } else {
@@ -458,40 +458,40 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                         JSONObject jSONObject5 = (JSONObject) obj6;
                         sb3.append("第" + i15 + (char) 24352);
                         sb3.append('\n');
-                        sb3.append(MagicFactory.get(4928825608995079562L, strArr10) + jSONObject5.getString(MagicFactory.get(4928825531685668234L, strArr10)) + jSONObject5.getString(MagicFactory.get(4928825514505799050L, strArr10)));
+                        sb3.append("链接: " + jSONObject5.getString("url") + jSONObject5.getString("url_token"));
                         sb3.append('\n');
                         i3 = i15;
                     }
                     AbstractC1150feyxiexzfUjhhgtg.m2617Ujhhgtgfeyxiexzf(sb3.toString());
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928825587520243082L, strArr10));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "复制图片成功");
                 } else if (iIntValue4 == 4) {
                     JSONObject jSONObject6 = (JSONObject) list6.get(0);
-                    int i16 = jSONObject6.getInt(MagicFactory.get(4928825694894425482L, strArr10));
+                    int i16 = jSONObject6.getInt("videoDuration");
                     Locale locale2 = Locale.CHINA;
-                    String str10 = String.format(locale2, MagicFactory.get(4928825772203836810L, strArr10), Arrays.copyOf(new Object[]{Integer.valueOf(i16 / 3600), Integer.valueOf((i16 % 3600) / 60), Integer.valueOf(i16 % 60)}, 3));
-                    MagicFactory.get(4928825845218280842L, strArr10);
-                    String str11 = String.format(locale2, MagicFactory.get(4928824792951293322L, strArr10), Arrays.copyOf(new Object[]{Double.valueOf((((double) jSONObject6.getInt(MagicFactory.get(4928825793678673290L, strArr10))) / 1024.0d) / 1024.0d)}, 1));
-                    MagicFactory.get(4928824758591554954L, strArr10);
+                    String str10 = String.format(locale2, "%02d:%02d:%02d", Arrays.copyOf(new Object[]{Integer.valueOf(i16 / 3600), Integer.valueOf((i16 % 3600) / 60), Integer.valueOf(i16 % 60)}, 3));
+                    "format(...)";
+                    String str11 = String.format(locale2, "%.2f MB", Arrays.copyOf(new Object[]{Double.valueOf((((double) jSONObject6.getInt("fileSize")) / 1024.0d) / 1024.0d)}, 1));
+                    "format(...)";
                     StringBuilder sb4 = new StringBuilder();
-                    sb4.append(MagicFactory.get(4928824844490900874L, strArr10) + str10);
+                    sb4.append("时长: " + str10);
                     sb4.append('\n');
-                    sb4.append(MagicFactory.get(4928824823016064394L, strArr10) + str11);
+                    sb4.append("大小: " + str11);
                     sb4.append('\n');
-                    JSONObject jSONObjectOptJSONObject3 = jSONObject6.optJSONObject(MagicFactory.get(4928824938980181386L, strArr10));
-                    if (jSONObjectOptJSONObject3 == null || !jSONObjectOptJSONObject3.has(MagicFactory.get(4928825011994625418L, strArr10))) {
-                        String string11 = jSONObject6.getString(MagicFactory.get(4928825050649331082L, strArr10));
-                        String string12 = jSONObject6.getString(MagicFactory.get(4928825033469461898L, strArr10));
-                        String string13 = jSONObject6.getString(MagicFactory.get(4928825127958742410L, strArr10));
-                        sb4.append(MagicFactory.get(4928825222448022922L, strArr10) + string11 + string12);
+                    JSONObject jSONObjectOptJSONObject3 = jSONObject6.optJSONObject("media_cdn_info");
+                    if (jSONObjectOptJSONObject3 == null || !jSONObjectOptJSONObject3.has("pcdn_url")) {
+                        String string11 = jSONObject6.getString("url");
+                        String string12 = jSONObject6.getString("url_token");
+                        String string13 = jSONObject6.getString("decodeKey");
+                        sb4.append("密链: " + string11 + string12);
                         sb4.append('\n');
-                        sb4.append(MagicFactory.get(4928825200973186442L, strArr10) + string13);
+                        sb4.append("密钥: " + string13);
                         sb4.append('\n');
                     } else {
-                        sb4.append(MagicFactory.get(4928824973339919754L, strArr10) + jSONObjectOptJSONObject3.getString(MagicFactory.get(4928825089304036746L, strArr10)));
+                        sb4.append("直链: " + jSONObjectOptJSONObject3.getString("pcdn_url"));
                         sb4.append('\n');
                     }
                     AbstractC1150feyxiexzfUjhhgtg.m2617Ujhhgtgfeyxiexzf(sb4.toString());
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928825179498349962L, strArr10));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "复制视频成功");
                 }
                 return c1943Ujhhgtgfeyxiexzf;
             case 27:
@@ -507,23 +507,23 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                             throw null;
                         }
                         JSONObject jSONObject7 = (JSONObject) obj7;
-                        String string14 = jSONObject7.getString(MagicFactory.get(4928825286872532362L, strArr11));
-                        String string15 = jSONObject7.getString(MagicFactory.get(4928825256807761290L, strArr11));
-                        String string16 = jSONObject7.getString(MagicFactory.get(4928825239627892106L, strArr11));
+                        String string14 = jSONObject7.getString("md5sum");
+                        String string15 = jSONObject7.getString("url");
+                        String string16 = jSONObject7.getString("url_token");
                         C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf4 = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
                         C3052Ujhhgtgfeyxiexzf.m4528Ujhhgtgfeyxiexzf(ExecutorC3114Ujhhgtgfeyxiexzf.f9679Ujhhgtgfeyxiexzf, new C2222Ujhhgtgfeyxiexzf("第" + i17 + (char) 24352, string14, string15, string16, null, 1));
                         i2 = i17;
                     }
                 } else if (iIntValue5 == 4) {
                     JSONObject jSONObject8 = (JSONObject) list7.get(0);
-                    String string17 = jSONObject8.getString(MagicFactory.get(4928828632652055946L, strArr11));
-                    String str12 = String.format(Locale.CHINA, MagicFactory.get(4928828701371532682L, strArr11), Arrays.copyOf(new Object[]{Double.valueOf((((double) jSONObject8.getInt(MagicFactory.get(4928828602587284874L, strArr11))) / 1024.0d) / 1024.0d)}, 1));
-                    MagicFactory.get(4928828671306761610L, strArr11);
-                    JSONObject jSONObjectOptJSONObject4 = jSONObject8.optJSONObject(MagicFactory.get(4928828757206107530L, strArr11));
-                    if (jSONObjectOptJSONObject4 == null || !jSONObjectOptJSONObject4.has(MagicFactory.get(4928828830220551562L, strArr11))) {
-                        String string18 = jSONObject8.getString(MagicFactory.get(4928828929004799370L, strArr11));
-                        String string19 = jSONObject8.getString(MagicFactory.get(4928828911824930186L, strArr11));
-                        String string20 = jSONObject8.getString(MagicFactory.get(4928829006314210698L, strArr11));
+                    String string17 = jSONObject8.getString("md5sum");
+                    String str12 = String.format(Locale.CHINA, "%.2fMB", Arrays.copyOf(new Object[]{Double.valueOf((((double) jSONObject8.getInt("fileSize")) / 1024.0d) / 1024.0d)}, 1));
+                    "format(...)";
+                    JSONObject jSONObjectOptJSONObject4 = jSONObject8.optJSONObject("media_cdn_info");
+                    if (jSONObjectOptJSONObject4 == null || !jSONObjectOptJSONObject4.has("pcdn_url")) {
+                        String string18 = jSONObject8.getString("url");
+                        String string19 = jSONObject8.getString("url_token");
+                        String string20 = jSONObject8.getString("decodeKey");
                         C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf5 = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
                         C3052Ujhhgtgfeyxiexzf.m4528Ujhhgtgfeyxiexzf(ExecutorC3114Ujhhgtgfeyxiexzf.f9679Ujhhgtgfeyxiexzf, new C2224Ujhhgtgfeyxiexzf(str12, string17, string20, string18, string19, null, 1));
                     } else {
@@ -545,11 +545,11 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                 try {
                     File file = new File(C2219Ujhhgtgfeyxiexzf.f7204Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf());
                     file.mkdirs();
-                    String str13 = msgId2 + '-' + imgPath5 + '-' + System.currentTimeMillis() + MagicFactory.get(4928840993567933834L, strArr12);
+                    String str13 = msgId2 + '-' + imgPath5 + '-' + System.currentTimeMillis() + ".mp3";
                     File file2 = new File(file, str13);
                     SilkCodec silkCodec = AbstractC2549feyxiexzfUjhhgtg.f8274Ujhhgtgfeyxiexzf;
                     AbstractC2549feyxiexzfUjhhgtg.f8274Ujhhgtgfeyxiexzf.silkToMp3(strM3385feyxiexzfUjhhgtg2, file2.getAbsolutePath(), 24000);
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928840972093097354L, strArr12) + file.getAbsolutePath() + '/' + str13);
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "已保存到: " + file.getAbsolutePath() + '/' + str13);
                     c0919feyxiexzfUjhhgtg = c1943Ujhhgtgfeyxiexzf;
                 } catch (Throwable th) {
                     c0919feyxiexzfUjhhgtg = new C0919feyxiexzfUjhhgtg(th);
@@ -557,9 +557,9 @@ public final /* synthetic */ class C0221Ujhhgtgfeyxiexzf implements InterfaceC35
                 Throwable thM2409Ujhhgtgfeyxiexzf = C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg);
                 if (thM2409Ujhhgtgfeyxiexzf != null) {
                     StringBuilder sb5 = new StringBuilder();
-                    sb5.append(MagicFactory.get(4928841079467279754L, strArr12));
+                    sb5.append("保存失败: ");
                     String message = thM2409Ujhhgtgfeyxiexzf.getMessage();
-                    sb5.append(message != null ? AbstractC1152feyxiexzfUjhhgtg.m2643feyxiexzfUjhhgtg(50, message) : MagicFactory.get(4928841049402508682L, strArr12));
+                    sb5.append(message != null ? AbstractC1152feyxiexzfUjhhgtg.m2643feyxiexzfUjhhgtg(50, message) : "未知错误");
                     AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb5.toString());
                 }
                 return c1943Ujhhgtgfeyxiexzf;

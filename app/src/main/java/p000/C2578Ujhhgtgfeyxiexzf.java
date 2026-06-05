@@ -36,10 +36,10 @@ public final class C2578Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8341Ujhhgtgfeyxiexzf = new C2578Ujhhgtgfeyxiexzf(MagicFactory.get(4928376686128399754L, strArr));
-        f8342Ujhhgtgfeyxiexzf = MagicFactory.get(4928380147872040330L, strArr);
-        f8343Ujhhgtgfeyxiexzf = MagicFactory.get(4928380272426091914L, strArr);
-        f8344Ujhhgtgfeyxiexzf = MagicFactory.get(4928380229476418954L, strArr);
+        f8341Ujhhgtgfeyxiexzf = new C2578Ujhhgtgfeyxiexzf("BottomTabLiquidHook");
+        f8342Ujhhgtgfeyxiexzf = "美化";
+        f8343Ujhhgtgfeyxiexzf = "底栏 Liquid";
+        f8344Ujhhgtgfeyxiexzf = "替换主页底部标签栏为 Liquid 样式";
         f8345Ujhhgtgfeyxiexzf = true;
     }
 
@@ -58,7 +58,7 @@ public final class C2578Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             c0113Ujhhgtgfeyxiexzf.setLayoutParams(layoutParams);
             List listM4192Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(Integer.valueOf(R.drawable.ic_tab_liquid_chats_filled_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_contacts_filled_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_discover_filled_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_me_filled_24dp));
             List listM4192Ujhhgtgfeyxiexzf2 = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(Integer.valueOf(R.drawable.ic_tab_liquid_chats_outline_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_contacts_outline_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_discover_outline_24dp), Integer.valueOf(R.drawable.ic_tab_liquid_me_outline_24dp));
-            List listM4192Ujhhgtgfeyxiexzf3 = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(MagicFactory.get(4928380036202890634L, strArr), MagicFactory.get(4928380023317988746L, strArr), MagicFactory.get(4928380010433086858L, strArr), MagicFactory.get(4928380134987138442L, strArr));
+            List listM4192Ujhhgtgfeyxiexzf3 = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf("微信", "通讯", "发现", "我的");
             c0113Ujhhgtgfeyxiexzf.f1248Ujhhgtgfeyxiexzf = 4;
             ArrayList arrayList = c0113Ujhhgtgfeyxiexzf.f1249Ujhhgtgfeyxiexzf;
             arrayList.clear();
@@ -83,7 +83,7 @@ public final class C2578Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                 if (i8 >= i7) {
                     break;
                 }
-                String str = (String) ((i8 < 0 || i8 >= listM4192Ujhhgtgfeyxiexzf3.size()) ? MagicFactory.get(4928346277759944074L, strArr) + (i8 + 1) : listM4192Ujhhgtgfeyxiexzf3.get(i8));
+                String str = (String) ((i8 < 0 || i8 >= listM4192Ujhhgtgfeyxiexzf3.size()) ? "Tab " + (i8 + 1) : listM4192Ujhhgtgfeyxiexzf3.get(i8));
                 int iIntValue = ((Number) ((i8 < 0 || i8 >= listM4192Ujhhgtgfeyxiexzf.size()) ? Integer.valueOf(((Number) AbstractC2856feyxiexzfUjhhgtg.m4244feyxiexzfUjhhgtg(listM4192Ujhhgtgfeyxiexzf)).intValue()) : listM4192Ujhhgtgfeyxiexzf.get(i8))).intValue();
                 int iIntValue2 = ((Number) ((i8 < 0 || i8 >= listM4192Ujhhgtgfeyxiexzf2.size()) ? Integer.valueOf(((Number) AbstractC2856feyxiexzfUjhhgtg.m4244feyxiexzfUjhhgtg(listM4192Ujhhgtgfeyxiexzf2)).intValue()) : listM4192Ujhhgtgfeyxiexzf2.get(i8))).intValue();
                 LinearLayout linearLayout2 = new LinearLayout(c0113Ujhhgtgfeyxiexzf.getContext());
@@ -174,7 +174,7 @@ public final class C2578Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             C3052Ujhhgtgfeyxiexzf.m4522Ujhhgtgfeyxiexzf(viewGroup).addView(c0113Ujhhgtgfeyxiexzf);
             int i11 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2024Ujhhgtgfeyxiexzf();
-            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928380122102236554L, strArr);
+            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "onPageSelected";
             C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = m2996Ujhhgtgfeyxiexzf((C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf()), 1);
             f8341Ujhhgtgfeyxiexzf.m1844feyxiexzfUjhhgtg(c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf, new C2925Ujhhgtgfeyxiexzf(i, c0113Ujhhgtgfeyxiexzf));
             c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf.m3485Ujhhgtgfeyxiexzf();

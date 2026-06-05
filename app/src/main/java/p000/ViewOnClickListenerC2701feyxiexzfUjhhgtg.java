@@ -54,7 +54,7 @@ public final /* synthetic */ class ViewOnClickListenerC2701feyxiexzfUjhhgtg impl
                 while (true) {
                     StringBuilder sb = new StringBuilder();
                     String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                    sb.append(MagicFactory.get(4928775426597193098L, strArr));
+                    sb.append("自定义分组");
                     sb.append(i);
                     String string = sb.toString();
                     if (!setM4256Ujhhgtgfeyxiexzf.contains(string)) {
@@ -64,7 +64,7 @@ public final /* synthetic */ class ViewOnClickListenerC2701feyxiexzfUjhhgtg impl
                             Object obj = c0976feyxiexzfUjhhgtg.f3870Ujhhgtgfeyxiexzf;
                             C2717feyxiexzfUjhhgtg c2717feyxiexzfUjhhgtg2 = null;
                             if (obj == null) {
-                                MagicFactory.get(4928779880478279050L, strArr);
+                                "adapter";
                                 c2717feyxiexzfUjhhgtg = null;
                             } else {
                                 c2717feyxiexzfUjhhgtg = (C2717feyxiexzfUjhhgtg) obj;
@@ -72,7 +72,7 @@ public final /* synthetic */ class ViewOnClickListenerC2701feyxiexzfUjhhgtg impl
                             c2717feyxiexzfUjhhgtg.m4032Ujhhgtgfeyxiexzf(arrayList);
                             Object obj2 = c0976feyxiexzfUjhhgtg.f3870Ujhhgtgfeyxiexzf;
                             if (obj2 == null) {
-                                MagicFactory.get(4928779983557494154L, strArr);
+                                "adapter";
                             } else {
                                 c2717feyxiexzfUjhhgtg2 = (C2717feyxiexzfUjhhgtg) obj2;
                             }
@@ -93,7 +93,7 @@ public final /* synthetic */ class ViewOnClickListenerC2701feyxiexzfUjhhgtg impl
                 Context context = c0310Ujhhgtgfeyxiexzf.f1849Ujhhgtgfeyxiexzf.getContext();
                 Object obj3 = c0976feyxiexzfUjhhgtg2.f3870Ujhhgtgfeyxiexzf;
                 if (obj3 == null) {
-                    MagicFactory.get(4928786962879350154L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                    "adapter";
                     c3476feyxiexzfUjhhgtg = null;
                 } else {
                     c3476feyxiexzfUjhhgtg = (C3476feyxiexzfUjhhgtg) obj3;

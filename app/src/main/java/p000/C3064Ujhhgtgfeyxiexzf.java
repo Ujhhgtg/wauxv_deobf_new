@@ -25,10 +25,10 @@ public final class C3064Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9485Ujhhgtgfeyxiexzf = new C3064Ujhhgtgfeyxiexzf(MagicFactory.get(4928389025569441162L, strArr));
-        f9486Ujhhgtgfeyxiexzf = MagicFactory.get(4928388308309902730L, strArr);
-        f9487Ujhhgtgfeyxiexzf = MagicFactory.get(4928388295425000842L, strArr);
-        f9488Ujhhgtgfeyxiexzf = MagicFactory.get(4928388265360229770L, strArr);
+        f9485Ujhhgtgfeyxiexzf = new C3064Ujhhgtgfeyxiexzf("CustomUnReadCountHook");
+        f9486Ujhhgtgfeyxiexzf = "实验";
+        f9487Ujhhgtgfeyxiexzf = "自定义未读数";
+        f9488Ujhhgtgfeyxiexzf = "可自定义消息菜单 '标记未读' 的未读数";
         f9489Ujhhgtgfeyxiexzf = new C3083Ujhhgtgfeyxiexzf(6);
     }
 
@@ -37,8 +37,8 @@ public final class C3064Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
     public final void mo1830Ujhhgtgfeyxiexzf(C0578Ujhhgtgfeyxiexzf c0578Ujhhgtgfeyxiexzf, String str, ContentValues contentValues, String str2, String[] strArr, int i) {
         if (mo1424feyxiexzfUjhhgtg()) {
             String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            if (str.equals(MagicFactory.get(4928389205958067594L, strArr2)) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get(MagicFactory.get(4928389145828525450L, strArr2)), 1) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get(MagicFactory.get(4928389231727871370L, strArr2)), 0)) {
-                contentValues.put(MagicFactory.get(4928389334807086474L, strArr2), Integer.valueOf(C3061Ujhhgtgfeyxiexzf.f9483Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf()));
+            if (str.equals("rconversation") && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get("unReadCount"), 1) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get("atCount"), 0)) {
+                contentValues.put("unReadCount", Integer.valueOf(C3061Ujhhgtgfeyxiexzf.f9483Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf()));
             }
         }
     }

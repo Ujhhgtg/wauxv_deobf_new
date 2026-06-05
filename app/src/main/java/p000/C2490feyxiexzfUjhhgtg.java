@@ -54,17 +54,17 @@ public final class C2490feyxiexzfUjhhgtg extends AbstractC2485feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928463341388563850L, strArr));
+        sb.append("SearchResult(title=");
         sb.append(this.f8128Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928463392928171402L, strArr));
+        sb.append(", desc=");
         sb.append(this.f8129Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928463358568433034L, strArr));
+        sb.append(", tabPos=");
         sb.append(this.f8130Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928463453057713546L, strArr));
+        sb.append(", tabName=");
         sb.append(this.f8131Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928463543252026762L, strArr));
+        sb.append(", itemIndexInTab=");
         sb.append(this.f8132Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928462503869941130L, strArr));
+        sb.append(", onClick=");
         sb.append(this.f8133Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

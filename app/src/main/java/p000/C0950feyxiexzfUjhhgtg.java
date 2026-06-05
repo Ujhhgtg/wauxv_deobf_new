@@ -18,7 +18,7 @@ public final /* synthetic */ class C0950feyxiexzfUjhhgtg implements InterfaceC08
 
     @Override // java.lang.annotation.Annotation
     public final int hashCode() {
-        return (MagicFactory.get(4928597279943689610L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127) ^ Integer.hashCode(1);
+        return ("number".hashCode() * 127) ^ Integer.hashCode(1);
     }
 
     @Override // p000.InterfaceC0868feyxiexzfUjhhgtg
@@ -28,6 +28,6 @@ public final /* synthetic */ class C0950feyxiexzfUjhhgtg implements InterfaceC08
 
     @Override // java.lang.annotation.Annotation
     public final String toString() {
-        return AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(new StringBuilder(), MagicFactory.get(4928597249878918538L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), "1)");
+        return AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(new StringBuilder(), "@kotlinx.serialization.protobuf.ProtoNumber(number=", "1)");
     }
 }

@@ -49,14 +49,14 @@ public final class C0290Ujhhgtgfeyxiexzf {
 
     public C0290Ujhhgtgfeyxiexzf() {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        this.f1724Ujhhgtgfeyxiexzf = MagicFactory.get(4928464861806986634L, strArr);
-        this.f1727Ujhhgtgfeyxiexzf = MagicFactory.get(4928464848922084746L, strArr);
-        this.f1730Ujhhgtgfeyxiexzf = MagicFactory.get(4928464836037182858L, strArr);
+        this.f1724Ujhhgtgfeyxiexzf = "确定";
+        this.f1727Ujhhgtgfeyxiexzf = "取消";
+        this.f1730Ujhhgtgfeyxiexzf = "中立";
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛴᛳ, reason: contains not printable characters */
     public static void m1498Ujhhgtgfeyxiexzf(C0290Ujhhgtgfeyxiexzf c0290Ujhhgtgfeyxiexzf, C1903Ujhhgtgfeyxiexzf c1903Ujhhgtgfeyxiexzf, int i) {
-        String str = MagicFactory.get(4928464810267379082L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        String str = "取消";
         InterfaceC3545feyxiexzfUjhhgtg c3471Ujhhgtgfeyxiexzf = c1903Ujhhgtgfeyxiexzf;
         if ((i & 2) != 0) {
             c3471Ujhhgtgfeyxiexzf = new C3471Ujhhgtgfeyxiexzf(23);
@@ -68,7 +68,7 @@ public final class C0290Ujhhgtgfeyxiexzf {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛲᛳ, reason: contains not printable characters */
     public static void m1499Ujhhgtgfeyxiexzf(C0290Ujhhgtgfeyxiexzf c0290Ujhhgtgfeyxiexzf, C0350Ujhhgtgfeyxiexzf c0350Ujhhgtgfeyxiexzf, int i) {
-        String str = MagicFactory.get(4928464823152280970L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        String str = "确定";
         InterfaceC3545feyxiexzfUjhhgtg c3471Ujhhgtgfeyxiexzf = c0350Ujhhgtgfeyxiexzf;
         if ((i & 2) != 0) {
             c3471Ujhhgtgfeyxiexzf = new C3471Ujhhgtgfeyxiexzf(23);

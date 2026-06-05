@@ -68,17 +68,17 @@ public final class C1514Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928132955324286346L, strArr));
+        sb.append("o51Proto(badge_type=");
         sb.append(this.f5296Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928133140007880074L, strArr));
+        sb.append(", badge_img_url=");
         sb.append(this.f5297Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928132104920761738L, strArr));
+        sb.append(", badge_level=");
         sb.append(this.f5298Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928132177935205770L, strArr));
+        sb.append(", background_color=");
         sb.append(this.f5299Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928132229474813322L, strArr));
+        sb.append(", badge_name=");
         sb.append(this.f5300Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928132306784224650L, strArr));
+        sb.append(", transparency=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f5301Ujhhgtgfeyxiexzf, ')');
     }
 }

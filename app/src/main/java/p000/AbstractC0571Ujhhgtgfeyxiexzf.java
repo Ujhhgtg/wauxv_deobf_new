@@ -23,9 +23,9 @@ public abstract class AbstractC0571Ujhhgtgfeyxiexzf extends AbstractC2292feyxiex
         } catch (Exception e) {
             ArrayList arrayList = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
             StringBuilder sb = new StringBuilder();
-            sb.append(MagicFactory.get(4928344448103875978L, strArr));
-            sb.append(this instanceof AbstractC2059Ujhhgtgfeyxiexzf ? ((AbstractC2059Ujhhgtgfeyxiexzf) this).mo1479feyxiexzfUjhhgtg() : MagicFactory.get(4928344405154203018L, strArr));
-            AbstractC3317feyxiexzfUjhhgtg.m4809Ujhhgtgfeyxiexzf(sb, MagicFactory.get(4928344503938450826L, strArr), e, 12);
+            sb.append("initOnce ");
+            sb.append(this instanceof AbstractC2059Ujhhgtgfeyxiexzf ? ((AbstractC2059Ujhhgtgfeyxiexzf) this).mo1479feyxiexzfUjhhgtg() : "LoadHook");
+            AbstractC3317feyxiexzfUjhhgtg.m4809Ujhhgtgfeyxiexzf(sb, " Failed", e, 12);
         }
         this.f2585Ujhhgtgfeyxiexzf = true;
     }

@@ -18,7 +18,7 @@ public abstract class AbstractC1389feyxiexzfUjhhgtg {
     public static String m2877Ujhhgtgfeyxiexzf(String... strArr) {
         String str = (String) f4887Ujhhgtgfeyxiexzf.getValue();
         String str2 = File.separator;
-        File file = new File(str, AbstractC2391Ujhhgtgfeyxiexzf.m3651feyxiexzfUjhhgtg(strArr, str2, AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(new StringBuilder(), MagicFactory.get(4928339951273117066L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), str2), null, null, 60));
+        File file = new File(str, AbstractC2391Ujhhgtgfeyxiexzf.m3651feyxiexzfUjhhgtg(strArr, str2, AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(new StringBuilder(), "WAuxiliary", str2), null, null, 60));
         file.mkdirs();
         return file.getPath();
     }

@@ -78,19 +78,19 @@ public final class C2141feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928188158538941834L, strArr));
+        sb.append("ff1Proto(live_mic_id=");
         sb.append(this.f6962Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928188338927568266L, strArr));
+        sb.append(", mic_seq=");
         sb.append(this.f6963Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928188291682928010L, strArr));
+        sb.append(", mic_sdk_user_id=");
         sb.append(this.f6964Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928188347517502858L, strArr));
+        sb.append(", mic_contact=");
         sb.append(this.f6965Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928188420531946890L, strArr));
+        sb.append(", status=");
         sb.append(this.f6966Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928188515021227402L, strArr));
+        sb.append(", mic_audience_list=");
         sb.append(this.f6967Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928188562265867658L, strArr));
+        sb.append(", mic_sdk_live_id=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f6968Ujhhgtgfeyxiexzf, ')');
     }
 }

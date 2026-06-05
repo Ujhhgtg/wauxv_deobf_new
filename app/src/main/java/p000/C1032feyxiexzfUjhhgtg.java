@@ -24,10 +24,10 @@ public final class C1032feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4034Ujhhgtgfeyxiexzf = new C1032feyxiexzfUjhhgtg(MagicFactory.get(4928394261134574986L, strArr));
-        f4035Ujhhgtgfeyxiexzf = MagicFactory.get(4928397293381485962L, strArr);
-        f4036Ujhhgtgfeyxiexzf = MagicFactory.get(4928397280496584074L, strArr);
-        f4037Ujhhgtgfeyxiexzf = MagicFactory.get(4928397250431813002L, strArr);
+        f4034Ujhhgtgfeyxiexzf = new C1032feyxiexzfUjhhgtg("SkipWebSpamUrlHook");
+        f4035Ujhhgtgfeyxiexzf = "聊天";
+        f4036Ujhhgtgfeyxiexzf = "跳过网页风险";
+        f4037Ujhhgtgfeyxiexzf = "无视网页存在的安全风险强制继续访问";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

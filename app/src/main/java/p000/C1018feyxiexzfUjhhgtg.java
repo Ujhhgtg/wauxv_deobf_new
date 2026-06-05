@@ -37,14 +37,14 @@ public final class C1018feyxiexzfUjhhgtg extends AbstractC0171Ujhhgtgfeyxiexzf {
     public final void mo1230Ujhhgtgfeyxiexzf(Ujhhgtgfeyxiexzf ujhhgtgfeyxiexzf, View view) {
         View viewM898Ujhhgtgfeyxiexzf = ((C3082Ujhhgtgfeyxiexzf) ujhhgtgfeyxiexzf).m898Ujhhgtgfeyxiexzf();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MagicFactory.get(4928464569749210506L, strArr);
+        "null cannot be cast to non-null type android.view.ViewGroup";
         ViewGroup viewGroup = (ViewGroup) viewM898Ujhhgtgfeyxiexzf;
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928468160341869962L, strArr));
-        sb.append(MagicFactory.get(4928468117392197002L, strArr));
+        sb.append("免费模块仅供学习\n");
+        sb.append("勿在国内平台传播\n");
         C2625feyxiexzfUjhhgtg.f8453Ujhhgtgfeyxiexzf.getClass();
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(MagicFactory.get(4928468211881477514L, strArr));
+        sb2.append("wxid:");
         C2884feyxiexzfUjhhgtg.f9151Ujhhgtgfeyxiexzf.getClass();
         sb2.append(C2884feyxiexzfUjhhgtg.m4273feyxiexzfUjhhgtg());
         sb2.append('\n');
@@ -56,7 +56,7 @@ public final class C1018feyxiexzfUjhhgtg extends AbstractC0171Ujhhgtgfeyxiexzf {
                 strM4272feyxiexzfUjhhgtg = null;
             }
             if (strM4272feyxiexzfUjhhgtg != null) {
-                sb.append(MagicFactory.get(4928468186111673738L, strArr) + strM4272feyxiexzfUjhhgtg + '\n');
+                sb.append("alias:" + strM4272feyxiexzfUjhhgtg + '\n');
             }
         }
         C2244feyxiexzfUjhhgtg c2244feyxiexzfUjhhgtg = new C2244feyxiexzfUjhhgtg(sb.toString(), AbstractC2857Ujhhgtgfeyxiexzf.m4262Ujhhgtgfeyxiexzf(viewGroup.getContext().getColor(R.color.md_theme_primary), 45));
@@ -75,7 +75,7 @@ public final class C1018feyxiexzfUjhhgtg extends AbstractC0171Ujhhgtgfeyxiexzf {
         c1019feyxiexzfUjhhgtg.f3996Ujhhgtgfeyxiexzf = (ModuleRecyclerView) view.findViewById(R.id.moduleRecyclerView);
         ModuleTabLayout moduleTabLayout = c1019feyxiexzfUjhhgtg.f3991Ujhhgtgfeyxiexzf;
         if (moduleTabLayout == null) {
-            MagicFactory.get(4928468293485856138L, strArr);
+            "tabLayout";
             moduleTabLayout = null;
         }
         C2729Ujhhgtgfeyxiexzf c2729Ujhhgtgfeyxiexzf = new C2729Ujhhgtgfeyxiexzf(1, c1019feyxiexzfUjhhgtg);
@@ -92,13 +92,13 @@ public final class C1018feyxiexzfUjhhgtg extends AbstractC0171Ujhhgtgfeyxiexzf {
         c1905feyxiexzfUjhhgtgM2517Ujhhgtgfeyxiexzf.m3268Ujhhgtgfeyxiexzf(c1019feyxiexzfUjhhgtg.m2516Ujhhgtgfeyxiexzf(numValueOf != null ? numValueOf.intValue() : 0));
         ImageView imageView = c1019feyxiexzfUjhhgtg.f3992Ujhhgtgfeyxiexzf;
         if (imageView == null) {
-            MagicFactory.get(4928468250536183178L, strArr);
+            "ivSearchToggle";
             imageView = null;
         }
         imageView.setOnClickListener(new ViewOnClickListenerC1114feyxiexzfUjhhgtg(c1019feyxiexzfUjhhgtg, 16));
         final EditText editText = c1019feyxiexzfUjhhgtg.f3994Ujhhgtgfeyxiexzf;
         if (editText == null) {
-            MagicFactory.get(4928468323550627210L, strArr);
+            "edtSearchInput";
             editText = null;
         }
         editText.addTextChangedListener(new C2737Ujhhgtgfeyxiexzf(2, c1019feyxiexzfUjhhgtg));
@@ -111,21 +111,21 @@ public final class C1018feyxiexzfUjhhgtg extends AbstractC0171Ujhhgtgfeyxiexzf {
                 EditText editText2 = editText;
                 Context context = editText2.getContext();
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                Object systemService = context.getSystemService(MagicFactory.get(4928451757861766538L, strArr2));
-                MagicFactory.get(4928451839466145162L, strArr2);
+                Object systemService = context.getSystemService("input_method");
+                "null cannot be cast to non-null type android.view.inputmethod.InputMethodManager";
                 ((InputMethodManager) systemService).hideSoftInputFromWindow(editText2.getWindowToken(), 0);
                 return true;
             }
         });
         ImageView imageView2 = c1019feyxiexzfUjhhgtg.f3995Ujhhgtgfeyxiexzf;
         if (imageView2 == null) {
-            MagicFactory.get(4928468396565071242L, strArr);
+            "ivSearchClose";
             imageView2 = null;
         }
         imageView2.setOnClickListener(new ViewOnClickListenerC1114feyxiexzfUjhhgtg(c1019feyxiexzfUjhhgtg, 17));
         ModuleRecyclerView moduleRecyclerView2 = c1019feyxiexzfUjhhgtg.f3996Ujhhgtgfeyxiexzf;
         if (moduleRecyclerView2 == null) {
-            MagicFactory.get(4928468473874482570L, strArr);
+            "recyclerView";
         } else {
             moduleRecyclerView = moduleRecyclerView2;
         }

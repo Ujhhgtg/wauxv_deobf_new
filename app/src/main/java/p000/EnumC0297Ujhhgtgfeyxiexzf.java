@@ -40,11 +40,11 @@ public final class EnumC0297Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        EnumC0297Ujhhgtgfeyxiexzf enumC0297Ujhhgtgfeyxiexzf = new EnumC0297Ujhhgtgfeyxiexzf(0, MagicFactory.get(4928901775945106826L, strArr), 0, 4);
+        EnumC0297Ujhhgtgfeyxiexzf enumC0297Ujhhgtgfeyxiexzf = new EnumC0297Ujhhgtgfeyxiexzf(0, "WECHAT_SCAN", 0, 4);
         f1750Ujhhgtgfeyxiexzf = enumC0297Ujhhgtgfeyxiexzf;
-        EnumC0297Ujhhgtgfeyxiexzf enumC0297Ujhhgtgfeyxiexzf2 = new EnumC0297Ujhhgtgfeyxiexzf(1, MagicFactory.get(4928901724405499274L, strArr), 1, 34);
+        EnumC0297Ujhhgtgfeyxiexzf enumC0297Ujhhgtgfeyxiexzf2 = new EnumC0297Ujhhgtgfeyxiexzf(1, "ALBUM_SCAN", 1, 34);
         f1751Ujhhgtgfeyxiexzf = enumC0297Ujhhgtgfeyxiexzf2;
-        EnumC0297Ujhhgtgfeyxiexzf enumC0297Ujhhgtgfeyxiexzf3 = new EnumC0297Ujhhgtgfeyxiexzf(2, MagicFactory.get(4928901814599812490L, strArr), 4, 37);
+        EnumC0297Ujhhgtgfeyxiexzf enumC0297Ujhhgtgfeyxiexzf3 = new EnumC0297Ujhhgtgfeyxiexzf(2, "LONG_PRESS_SCAN", 4, 37);
         f1752Ujhhgtgfeyxiexzf = enumC0297Ujhhgtgfeyxiexzf3;
         EnumC0297Ujhhgtgfeyxiexzf[] enumC0297UjhhgtgfeyxiexzfArr = {enumC0297Ujhhgtgfeyxiexzf, enumC0297Ujhhgtgfeyxiexzf2, enumC0297Ujhhgtgfeyxiexzf3};
         f1753Ujhhgtgfeyxiexzf = enumC0297UjhhgtgfeyxiexzfArr;

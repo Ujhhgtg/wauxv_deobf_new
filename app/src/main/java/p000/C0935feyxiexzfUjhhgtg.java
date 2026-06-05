@@ -28,7 +28,7 @@ public final class C0935feyxiexzfUjhhgtg {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928596700123104650L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sb.append("SKBuiltinString_t(string=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f3771Ujhhgtgfeyxiexzf, ')');
     }
 }

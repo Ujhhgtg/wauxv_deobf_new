@@ -39,7 +39,7 @@ public final class Entry implements IXposedHookZygoteInit, IXposedHookLoadPackag
             return;
         }
         try {
-            String str = MagicFactory.get(4928226903438919050L, strArr);
+            String str = "me.hd.wauxv";
             String str2 = startupParam.modulePath;
             C2283feyxiexzfUjhhgtg.f7478Ujhhgtgfeyxiexzf = true;
             C2283feyxiexzfUjhhgtg.f7485Ujhhgtgfeyxiexzf = str;
@@ -61,7 +61,7 @@ public final class Entry implements IXposedHookZygoteInit, IXposedHookLoadPackag
         }
         Throwable thM2409Ujhhgtgfeyxiexzf = C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg);
         if (thM2409Ujhhgtgfeyxiexzf != null) {
-            C2290feyxiexzfUjhhgtg.m3497Ujhhgtgfeyxiexzf(4, MagicFactory.get(4928226989338264970L, strArr), thM2409Ujhhgtgfeyxiexzf);
+            C2290feyxiexzfUjhhgtg.m3497Ujhhgtgfeyxiexzf(4, "An exception occurred when YukiHookAPI loading Xposed Module", thM2409Ujhhgtgfeyxiexzf);
         }
     }
 }

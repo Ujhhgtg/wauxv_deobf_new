@@ -28,10 +28,10 @@ public final class C1251feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
     static {
         boolean z;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4597Ujhhgtgfeyxiexzf = new C1251feyxiexzfUjhhgtg(MagicFactory.get(4928868970984899978L, strArr));
-        f4598Ujhhgtgfeyxiexzf = MagicFactory.get(4928872071951287690L, strArr);
-        f4599Ujhhgtgfeyxiexzf = MagicFactory.get(4928872054771418506L, strArr);
-        f4600Ujhhgtgfeyxiexzf = MagicFactory.get(4928872162145600906L, strArr);
+        f4597Ujhhgtgfeyxiexzf = new C1251feyxiexzfUjhhgtg("NewBizListHook");
+        f4598Ujhhgtgfeyxiexzf = "订阅号";
+        f4599Ujhhgtgfeyxiexzf = "订阅消息列表";
+        f4600Ujhhgtgfeyxiexzf = "订阅号消息从瀑布流模式改为列表模式";
         EnumC2264feyxiexzfUjhhgtg enumC2264feyxiexzfUjhhgtg = EnumC2264feyxiexzfUjhhgtg.f7383Ujhhgtgfeyxiexzf;
         C0580Ujhhgtgfeyxiexzf c0580Ujhhgtgfeyxiexzf = C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf;
         c0580Ujhhgtgfeyxiexzf.getClass();
@@ -59,14 +59,14 @@ public final class C1251feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
             if (className != null) {
                 int iHashCode = className.hashCode();
                 if (iHashCode != -1870020680) {
-                    if (iHashCode != 510348960 || !className.equals(MagicFactory.get(4928872630297036170L, strArr))) {
+                    if (iHashCode != 510348960 || !className.equals("com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity")) {
                         return;
                     }
-                } else if (!className.equals(MagicFactory.get(4928869043999344010L, strArr))) {
+                } else if (!className.equals("com.tencent.mm.plugin.brandservice.ui.timeline.BizTimeLineUI")) {
                     return;
                 }
                 C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
-                intent.setComponent(new ComponentName(C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf(), MagicFactory.get(4928872982484354442L, strArr)));
+                intent.setComponent(new ComponentName(C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf(), "com.tencent.mm.ui.conversation.NewBizConversationUI"));
             }
         }
     }

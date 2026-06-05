@@ -24,10 +24,10 @@ public final class C3054Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9444Ujhhgtgfeyxiexzf = new C3054Ujhhgtgfeyxiexzf(MagicFactory.get(4928368319532107146L, strArr));
-        f9445Ujhhgtgfeyxiexzf = MagicFactory.get(4928371416203527562L, strArr);
-        f9446Ujhhgtgfeyxiexzf = MagicFactory.get(4928371540757579146L, strArr);
-        f9447Ujhhgtgfeyxiexzf = MagicFactory.get(4928371514987775370L, strArr);
+        f9444Ujhhgtgfeyxiexzf = new C3054Ujhhgtgfeyxiexzf("CustomContactCountHook");
+        f9445Ujhhgtgfeyxiexzf = "美化";
+        f9446Ujhhgtgfeyxiexzf = "自定义数量";
+        f9447Ujhhgtgfeyxiexzf = "自定义好友和群聊列表底部的显示数量";
         f9448Ujhhgtgfeyxiexzf = new C3711Ujhhgtgfeyxiexzf(27);
     }
 
@@ -36,8 +36,8 @@ public final class C3054Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928367396114138506L, strArr))).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928367623747405194L, strArr);
+        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.ui.contact.ContactCountView")).m2024Ujhhgtgfeyxiexzf();
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "onMeasure";
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf());
         C3054Ujhhgtgfeyxiexzf c3054Ujhhgtgfeyxiexzf = f9444Ujhhgtgfeyxiexzf;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c3054Ujhhgtgfeyxiexzf.m2996Ujhhgtgfeyxiexzf(c0393Ujhhgtgfeyxiexzf, 1);

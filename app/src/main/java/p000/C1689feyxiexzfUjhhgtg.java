@@ -66,15 +66,15 @@ public final class C1689feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928114534209553802L, strArr));
+        sb.append("s40Proto(component_name=");
         sb.append(this.f5670Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928114564274324874L, strArr));
+        sb.append(", component_value_list=");
         sb.append(this.f5671Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928114736073016714L, strArr));
+        sb.append(", select_component_key=");
         sb.append(this.f5672Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928114770432755082L, strArr));
+        sb.append(", seq=");
         sb.append(this.f5673Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928114877806937482L, strArr));
+        sb.append(", component_key=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5674Ujhhgtgfeyxiexzf, ')');
     }
 }

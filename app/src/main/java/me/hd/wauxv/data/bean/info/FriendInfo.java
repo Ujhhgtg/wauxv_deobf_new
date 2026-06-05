@@ -160,19 +160,19 @@ public final class FriendInfo {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928308189989963146L, strArr));
+        sb.append("FriendInfo(wxid=");
         sb.append(this.wxid);
-        sb.append(MagicFactory.get(4928308391853426058L, strArr));
+        sb.append(", alias=");
         sb.append(this.alias);
-        sb.append(MagicFactory.get(4928308353198720394L, strArr));
+        sb.append(", remark=");
         sb.append(this.remark);
-        sb.append(MagicFactory.get(4928308447688000906L, strArr));
+        sb.append(", nickname=");
         sb.append(this.nickname);
-        sb.append(MagicFactory.get(4928308396148393354L, strArr));
+        sb.append(", type=");
         sb.append(this.type);
-        sb.append(MagicFactory.get(4928308499227608458L, strArr));
+        sb.append(", sourceExtInfo=");
         sb.append(this.sourceExtInfo);
-        sb.append(MagicFactory.get(4928294270000956810L, strArr));
+        sb.append(", createTime=");
         sb.append(this.createTime);
         sb.append(')');
         return sb.toString();

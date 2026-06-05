@@ -25,10 +25,10 @@ public final class C0979feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3874Ujhhgtgfeyxiexzf = new C0979feyxiexzfUjhhgtg(MagicFactory.get(4928853504807667082L, strArr));
-        f3875Ujhhgtgfeyxiexzf = MagicFactory.get(4928838111644878218L, strArr);
-        f3876Ujhhgtgfeyxiexzf = MagicFactory.get(4928838098759976330L, strArr);
-        f3877Ujhhgtgfeyxiexzf = MagicFactory.get(4928838206134158730L, strArr);
+        f3874Ujhhgtgfeyxiexzf = new C0979feyxiexzfUjhhgtg("RemoveVoipLimitHook");
+        f3875Ujhhgtgfeyxiexzf = "限制";
+        f3876Ujhhgtgfeyxiexzf = "移除通话限制";
+        f3877Ujhhgtgfeyxiexzf = "将通话中无法使用部分功能的限制移除";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf
@@ -36,10 +36,10 @@ public final class C0979feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
     public final void mo1073Ujhhgtgfeyxiexzf(DexKitBridge dexKitBridge) {
         C0982feyxiexzfUjhhgtg c0982feyxiexzfUjhhgtg = C0982feyxiexzfUjhhgtg.f3881Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        AbstractC1791feyxiexzfUjhhgtg.m3137Ujhhgtgfeyxiexzf(c0982feyxiexzfUjhhgtg, dexKitBridge, new C0999feyxiexzfUjhhgtg(0, MagicFactory.get(4928853556347274634L, strArr), MagicFactory.get(4928853805455377802L, strArr)));
-        AbstractC1791feyxiexzfUjhhgtg.m3137Ujhhgtgfeyxiexzf(C0983feyxiexzfUjhhgtg.f3882Ujhhgtgfeyxiexzf, dexKitBridge, new C0999feyxiexzfUjhhgtg(0, MagicFactory.get(4928839696487810442L, strArr), MagicFactory.get(4928839829631796618L, strArr)));
-        AbstractC1791feyxiexzfUjhhgtg.m3137Ujhhgtgfeyxiexzf(C1001feyxiexzfUjhhgtg.f3919Ujhhgtgfeyxiexzf, dexKitBridge, new C0999feyxiexzfUjhhgtg(0, MagicFactory.get(4928840121689572746L, strArr), MagicFactory.get(4928839172501800330L, strArr)));
-        AbstractC1791feyxiexzfUjhhgtg.m3137Ujhhgtgfeyxiexzf(C1000feyxiexzfUjhhgtg.f3918Ujhhgtgfeyxiexzf, dexKitBridge, new C0999feyxiexzfUjhhgtg(0, (AbstractC1265feyxiexzfUjhhgtg.m2830Ujhhgtgfeyxiexzf(EnumC2264feyxiexzfUjhhgtg.f7376Ujhhgtgfeyxiexzf) || AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7353Ujhhgtgfeyxiexzf)) ? MagicFactory.get(4928839327120622986L, strArr) : MagicFactory.get(4928839477444478346L, strArr), MagicFactory.get(4928838588386248074L, strArr)));
+        AbstractC1791feyxiexzfUjhhgtg.m3137Ujhhgtgfeyxiexzf(c0982feyxiexzfUjhhgtg, dexKitBridge, new C0999feyxiexzfUjhhgtg(0, "com.tencent.mm.plugin.multitalk.model", "Lcom/tencent/mm/autogen/events/MultiTalkActionEvent;"));
+        AbstractC1791feyxiexzfUjhhgtg.m3137Ujhhgtgfeyxiexzf(C0983feyxiexzfUjhhgtg.f3882Ujhhgtgfeyxiexzf, dexKitBridge, new C0999feyxiexzfUjhhgtg(0, "com.tencent.mm.plugin.voip.model", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
+        AbstractC1791feyxiexzfUjhhgtg.m3137Ujhhgtgfeyxiexzf(C1001feyxiexzfUjhhgtg.f3919Ujhhgtgfeyxiexzf, dexKitBridge, new C0999feyxiexzfUjhhgtg(0, "com.tencent.mm.plugin.ipcall", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
+        AbstractC1791feyxiexzfUjhhgtg.m3137Ujhhgtgfeyxiexzf(C1000feyxiexzfUjhhgtg.f3918Ujhhgtgfeyxiexzf, dexKitBridge, new C0999feyxiexzfUjhhgtg(0, (AbstractC1265feyxiexzfUjhhgtg.m2830Ujhhgtgfeyxiexzf(EnumC2264feyxiexzfUjhhgtg.f7376Ujhhgtgfeyxiexzf) || AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7353Ujhhgtgfeyxiexzf)) ? "com.tencent.mm.voipmp.helper" : "com.tencent.mm.plugin_flutter_ilinkvoip.helper", "Lcom/tencent/mm/autogen/events/VoipCheckIsDeviceUsingEvent;"));
     }
 
     @Override // p000.AbstractC0571Ujhhgtgfeyxiexzf

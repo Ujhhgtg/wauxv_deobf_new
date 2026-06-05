@@ -32,11 +32,11 @@ public final /* synthetic */ class ViewOnClickListenerC0241Ujhhgtgfeyxiexzf impl
                 C2366Ujhhgtgfeyxiexzf c2366Ujhhgtgfeyxiexzf = C0277Ujhhgtgfeyxiexzf.f1692Ujhhgtgfeyxiexzf;
                 InterfaceC0150Ujhhgtgfeyxiexzf interfaceC0150Ujhhgtgfeyxiexzf = C0277Ujhhgtgfeyxiexzf.f1690Ujhhgtgfeyxiexzf[0];
                 Intent intent = new Intent(context, (Class<?>) c2366Ujhhgtgfeyxiexzf.m3605Ujhhgtgfeyxiexzf());
-                intent.putExtra(MagicFactory.get(4928848041609266570L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), 8);
+                intent.putExtra("map_view_type", 8);
                 activityM5177Ujhhgtgfeyxiexzf.startActivityForResult(intent, 6);
                 break;
             default:
-                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f1572Ujhhgtgfeyxiexzf.getContext(), MagicFactory.get(4928386152236320138L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC3612feyxiexzfUjhhgtg.m5242Ujhhgtgfeyxiexzf(this.f1572Ujhhgtgfeyxiexzf.getContext(), "https://hdshare.github.io/WAuxiliary_Plugin/");
                 break;
         }
     }

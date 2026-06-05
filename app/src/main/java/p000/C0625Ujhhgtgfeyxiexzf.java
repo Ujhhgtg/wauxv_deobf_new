@@ -15,12 +15,12 @@ public final /* synthetic */ class C0625Ujhhgtgfeyxiexzf implements InterfaceC35
         C0625Ujhhgtgfeyxiexzf c0625Ujhhgtgfeyxiexzf = new C0625Ujhhgtgfeyxiexzf();
         f2655Ujhhgtgfeyxiexzf = c0625Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928782899840288138L, strArr), c0625Ujhhgtgfeyxiexzf, 5);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928781963537417610L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928781942062581130L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928782053731730826L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928782027961927050L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928782135336109450L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("wx.demo.hook.ui.group.factory.GroupConstFactory.GroupItem", c0625Ujhhgtgfeyxiexzf, 5);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("type", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("order", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("title", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("enable", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("idList", false);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

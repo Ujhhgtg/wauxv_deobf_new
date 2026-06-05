@@ -92,22 +92,22 @@ public final class C2824feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                 }
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
                 if (j < 1024) {
-                    String str = String.format(Locale.CHINA, MagicFactory.get(4928301588625229194L, strArr), Arrays.copyOf(new Object[]{Double.valueOf(j)}, 1));
-                    MagicFactory.get(4928301558560458122L, strArr);
+                    String str = String.format(Locale.CHINA, "%.2f B", Arrays.copyOf(new Object[]{Double.valueOf(j)}, 1));
+                    "format(...)";
                     return str;
                 }
                 if (j < JSONWriter.MASK_USE_SINGLE_QUOTES) {
-                    String str2 = String.format(Locale.CHINA, MagicFactory.get(4928301644459804042L, strArr), Arrays.copyOf(new Object[]{Double.valueOf(j / 1024.0d)}, 1));
-                    MagicFactory.get(4928301610100065674L, strArr);
+                    String str2 = String.format(Locale.CHINA, "%.2f KB", Arrays.copyOf(new Object[]{Double.valueOf(j / 1024.0d)}, 1));
+                    "format(...)";
                     return str2;
                 }
                 if (j < JSONWriter.MASK_ESCAPE_NONE_ASCII) {
-                    String str3 = String.format(Locale.CHINA, MagicFactory.get(4928301695999411594L, strArr), Arrays.copyOf(new Object[]{Double.valueOf((j / 1024.0d) / 1024.0d)}, 1));
-                    MagicFactory.get(4928301661639673226L, strArr);
+                    String str3 = String.format(Locale.CHINA, "%.2f MB", Arrays.copyOf(new Object[]{Double.valueOf((j / 1024.0d) / 1024.0d)}, 1));
+                    "format(...)";
                     return str3;
                 }
-                String str4 = String.format(Locale.CHINA, MagicFactory.get(4928301747539019146L, strArr), Arrays.copyOf(new Object[]{Double.valueOf(((j / 1024.0d) / 1024.0d) / 1024.0d)}, 1));
-                MagicFactory.get(4928301850618234250L, strArr);
+                String str4 = String.format(Locale.CHINA, "%.2f GB", Arrays.copyOf(new Object[]{Double.valueOf(((j / 1024.0d) / 1024.0d) / 1024.0d)}, 1));
+                "format(...)";
                 return str4;
             case 1:
                 AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);

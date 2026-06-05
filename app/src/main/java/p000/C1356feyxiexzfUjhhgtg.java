@@ -16,10 +16,10 @@ public final class C1356feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf i
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛳᛱUjhhgtgᛱᛴ, reason: contains not printable characters */
     public static Object m2868feyxiexzfUjhhgtg(C1356feyxiexzfUjhhgtg c1356feyxiexzfUjhhgtg, String str, String str2, String str3, String str4, int i) throws NoSuchMethodException {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        String str5 = MagicFactory.get(4928241815565370762L, strArr);
-        String str6 = MagicFactory.get(4928241811270403466L, strArr);
-        String str7 = MagicFactory.get(4928241806975436170L, strArr);
-        String str8 = MagicFactory.get(4928241940119422346L, strArr);
+        String str5 = "";
+        String str6 = "";
+        String str7 = "";
+        String str8 = "";
         c1356feyxiexzfUjhhgtg.getClass();
         Constructor constructorM3153feyxiexzfUjhhgtg = AbstractC1791feyxiexzfUjhhgtg.m3153feyxiexzfUjhhgtg(C1355feyxiexzfUjhhgtg.f4833Ujhhgtgfeyxiexzf);
         switch (constructorM3153feyxiexzfUjhhgtg.getParameterCount()) {
@@ -27,7 +27,7 @@ public final class C1356feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf i
                 return constructorM3153feyxiexzfUjhhgtg.newInstance(str, str2, 0, str3, str4, Integer.valueOf(i), str5, null, 1, null);
             case 11:
             default:
-                throw new NoSuchMethodException(MagicFactory.get(4928241678126417290L, strArr) + constructorM3153feyxiexzfUjhhgtg.getParameterCount() + MagicFactory.get(4928241789795566986L, strArr));
+                throw new NoSuchMethodException("With " + constructorM3153feyxiexzfUjhhgtg.getParameterCount() + " parameters not supported");
             case Opcodes.FCONST_1 /* 12 */:
                 return constructorM3153feyxiexzfUjhhgtg.newInstance(str, str2, 0, str3, str4, Integer.valueOf(i), str5, null, 1, null, 0L, str7);
             case 13:

@@ -27,10 +27,10 @@ public final class C1134feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4295Ujhhgtgfeyxiexzf = new C1134feyxiexzfUjhhgtg(MagicFactory.get(4928849287149782410L, strArr));
-        f4296Ujhhgtgfeyxiexzf = MagicFactory.get(4928853169800217994L, strArr);
-        f4297Ujhhgtgfeyxiexzf = MagicFactory.get(4928853156915316106L, strArr);
-        f4298Ujhhgtgfeyxiexzf = MagicFactory.get(4928853135440479626L, strArr);
+        f4295Ujhhgtgfeyxiexzf = new C1134feyxiexzfUjhhgtg("SportStepHook");
+        f4296Ujhhgtgfeyxiexzf = "高危";
+        f4297Ujhhgtgfeyxiexzf = "运动步数";
+        f4298Ujhhgtgfeyxiexzf = "启用后需要多次打开微信运动使其变化";
         f4299Ujhhgtgfeyxiexzf = new C1238feyxiexzfUjhhgtg(18);
     }
 

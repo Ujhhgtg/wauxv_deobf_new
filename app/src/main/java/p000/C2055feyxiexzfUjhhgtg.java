@@ -37,7 +37,7 @@ public final class C2055feyxiexzfUjhhgtg {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928191792081274250L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sb.append("FinderMediaProto(url=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6761Ujhhgtgfeyxiexzf, ')');
     }
 }

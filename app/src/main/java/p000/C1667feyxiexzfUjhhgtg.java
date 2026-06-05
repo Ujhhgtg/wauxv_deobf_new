@@ -68,17 +68,17 @@ public final class C1667feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928561575880557962L, strArr));
+        sb.append("w10Proto(key=");
         sb.append(this.f5626Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928561653189969290L, strArr));
+        sb.append(", name=");
         sb.append(this.f5627Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928561756269184394L, strArr));
+        sb.append(", price=");
         sb.append(this.f5628Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928561717614478730L, strArr));
+        sb.append(", custom_text_disabled=");
         sb.append(this.f5629Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928561889413170570L, strArr));
+        sb.append(", thumbnail=");
         sb.append(this.f5630Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928561833578595722L, strArr));
+        sb.append(", use_pag=");
         sb.append(this.f5631Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

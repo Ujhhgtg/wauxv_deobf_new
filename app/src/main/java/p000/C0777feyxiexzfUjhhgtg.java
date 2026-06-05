@@ -24,16 +24,16 @@ public final class C0777feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3073Ujhhgtgfeyxiexzf = new C0777feyxiexzfUjhhgtg(MagicFactory.get(4928844768844187018L, strArr));
-        f3074Ujhhgtgfeyxiexzf = MagicFactory.get(4928844824678761866L, strArr);
-        f3075Ujhhgtgfeyxiexzf = MagicFactory.get(4928844949232813450L, strArr);
-        f3076Ujhhgtgfeyxiexzf = MagicFactory.get(4928844927757976970L, strArr);
+        f3073Ujhhgtgfeyxiexzf = new C0777feyxiexzfUjhhgtg("QuickKillHook");
+        f3074Ujhhgtgfeyxiexzf = "菜单";
+        f3075Ujhhgtgfeyxiexzf = "快捷终止";
+        f3076Ujhhgtgfeyxiexzf = "为主页右上角菜单添加快捷终止快捷项";
     }
 
     @Override // p000.InterfaceC0604Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ */
     public final List mo1792Ujhhgtgfeyxiexzf() {
-        return !mo1424feyxiexzfUjhhgtg() ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : Collections.singletonList(new C0592Ujhhgtgfeyxiexzf(R.id.MenuItem_Home_QuickKill, MagicFactory.get(4928844846153598346L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), R.drawable.ic_menu_kill_24dp, new C0478Ujhhgtgfeyxiexzf(11)));
+        return !mo1424feyxiexzfUjhhgtg() ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : Collections.singletonList(new C0592Ujhhgtgfeyxiexzf(R.id.MenuItem_Home_QuickKill, "快捷终止", R.drawable.ic_menu_kill_24dp, new C0478Ujhhgtgfeyxiexzf(11)));
     }
 
     @Override // p000.AbstractC2059Ujhhgtgfeyxiexzf

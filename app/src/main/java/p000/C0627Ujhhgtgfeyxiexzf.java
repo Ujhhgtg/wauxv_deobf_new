@@ -74,15 +74,15 @@ public final class C0627Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928782320019703178L, strArr));
+        sb.append("GroupItem(type=");
         sb.append(this.f2657Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928782388739179914L, strArr));
+        sb.append(", order=");
         sb.append(this.f2658Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928781388011799946L, strArr));
+        sb.append(", title=");
         sb.append(this.f2659Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928781349357094282L, strArr));
+        sb.append(", enable=");
         sb.append(this.f2660Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928781443846374794L, strArr));
+        sb.append(", idList=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, Arrays.toString(this.f2661Ujhhgtgfeyxiexzf), ')');
     }
 
@@ -94,9 +94,9 @@ public final class C0627Ujhhgtgfeyxiexzf {
         }
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928782105271338378L, strArr));
-        sb.append(AbstractC2391Ujhhgtgfeyxiexzf.m3651feyxiexzfUjhhgtg(this.f2661Ujhhgtgfeyxiexzf, null, MagicFactory.get(4928782152515978634L, strArr), MagicFactory.get(4928782281364997514L, strArr), new C3528Ujhhgtgfeyxiexzf(2), 25));
-        sb.append(MagicFactory.get(4928782272775062922L, strArr));
+        sb.append(" where (username in ");
+        sb.append(AbstractC2391Ujhhgtgfeyxiexzf.m3651feyxiexzfUjhhgtg(this.f2661Ujhhgtgfeyxiexzf, null, "(", ")", new C3528Ujhhgtgfeyxiexzf(2), 25));
+        sb.append(") order by flag desc");
         return sb.toString();
     }
 
@@ -117,7 +117,7 @@ public final class C0627Ujhhgtgfeyxiexzf {
             next = c2930Ujhhgtgfeyxiexzf.next();
             str = ((EnumC0628Ujhhgtgfeyxiexzf) next).f2671Ujhhgtgfeyxiexzf;
             lowerCase = this.f2657Ujhhgtgfeyxiexzf.toLowerCase(Locale.ROOT);
-            MagicFactory.get(4928781400896701834L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+            "toLowerCase(...)";
         } while (!C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, lowerCase));
         EnumC0628Ujhhgtgfeyxiexzf enumC0628Ujhhgtgfeyxiexzf = (EnumC0628Ujhhgtgfeyxiexzf) next;
         return enumC0628Ujhhgtgfeyxiexzf != null ? enumC0628Ujhhgtgfeyxiexzf : EnumC0628Ujhhgtgfeyxiexzf.f2668Ujhhgtgfeyxiexzf;

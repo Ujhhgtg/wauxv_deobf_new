@@ -13,6 +13,6 @@ public final class C0766feyxiexzfUjhhgtg extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3043Ujhhgtgfeyxiexzf = new C0766feyxiexzfUjhhgtg(MagicFactory.get(4928392659111773578L, strArr), MagicFactory.get(4928392818025563530L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f3043Ujhhgtgfeyxiexzf = new C0766feyxiexzfUjhhgtg("QuoteRemindMsgHook.ValText", "[有人回我]", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

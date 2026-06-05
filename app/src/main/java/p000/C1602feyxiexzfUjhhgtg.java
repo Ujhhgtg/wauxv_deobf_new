@@ -68,17 +68,17 @@ public final class C1602feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928580898938422666L, strArr));
+        sb.append("u93Proto(is_concert_live=");
         sb.append(this.f5492Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928581062147179914L, strArr));
+        sb.append(", activity_id=");
         sb.append(this.f5493Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928581135161623946L, strArr));
+        sb.append(", topic_id=");
         sb.append(this.f5494Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928581083622016394L, strArr));
+        sb.append(", topic_type=");
         sb.append(this.f5495Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928581160931427722L, strArr));
+        sb.append(", enable_topic=");
         sb.append(this.f5496Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928566935999743370L, strArr));
+        sb.append(", has_ticket=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f5497Ujhhgtgfeyxiexzf, ')');
     }
 }

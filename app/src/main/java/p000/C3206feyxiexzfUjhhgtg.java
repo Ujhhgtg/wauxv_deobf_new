@@ -15,10 +15,10 @@ public final /* synthetic */ class C3206feyxiexzfUjhhgtg implements InterfaceC35
         C3206feyxiexzfUjhhgtg c3206feyxiexzfUjhhgtg = new C3206feyxiexzfUjhhgtg();
         f9899Ujhhgtgfeyxiexzf = c3206feyxiexzfUjhhgtg;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928600359435240842L, strArr), c3206feyxiexzfUjhhgtg, 2);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928599517621650826L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.proto.other.DisturbTimeSpan", c3206feyxiexzfUjhhgtg, 2);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("beginTime", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(1, 2));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928599612110931338L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("endTime", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(2, 2));
         descriptor = c1412feyxiexzfUjhhgtg;
     }

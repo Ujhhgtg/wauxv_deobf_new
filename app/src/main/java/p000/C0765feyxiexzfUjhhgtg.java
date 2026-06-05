@@ -29,10 +29,10 @@ public final class C0765feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
     static {
         boolean z;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3038Ujhhgtgfeyxiexzf = new C0765feyxiexzfUjhhgtg(MagicFactory.get(4928390004821984650L, strArr));
-        f3039Ujhhgtgfeyxiexzf = MagicFactory.get(4928393380666279306L, strArr);
-        f3040Ujhhgtgfeyxiexzf = MagicFactory.get(4928393367781377418L, strArr);
-        f3041Ujhhgtgfeyxiexzf = MagicFactory.get(4928393337716606346L, strArr);
+        f3038Ujhhgtgfeyxiexzf = new C0765feyxiexzfUjhhgtg("QuoteClickToPosHook");
+        f3039Ujhhgtgfeyxiexzf = "聊天";
+        f3040Ujhhgtgfeyxiexzf = "引用消息直达";
+        f3041Ujhhgtgfeyxiexzf = "点击引用消息内容直接定位到原文位置";
         EnumC2264feyxiexzfUjhhgtg enumC2264feyxiexzfUjhhgtg = EnumC2264feyxiexzfUjhhgtg.f7381Ujhhgtgfeyxiexzf;
         C0580Ujhhgtgfeyxiexzf c0580Ujhhgtgfeyxiexzf = C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf;
         c0580Ujhhgtgfeyxiexzf.getClass();

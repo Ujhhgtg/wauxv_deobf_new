@@ -57,7 +57,7 @@ public final /* synthetic */ class C3472Ujhhgtgfeyxiexzf implements InterfaceC35
                 Context context = c0310Ujhhgtgfeyxiexzf.f1849Ujhhgtgfeyxiexzf.getContext();
                 Object obj2 = c0976feyxiexzfUjhhgtg.f3870Ujhhgtgfeyxiexzf;
                 if (obj2 == null) {
-                    MagicFactory.get(4928786894159873418L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                    "adapter";
                     c3476feyxiexzfUjhhgtg = null;
                 } else {
                     c3476feyxiexzfUjhhgtg = (C3476feyxiexzfUjhhgtg) obj2;
@@ -71,7 +71,7 @@ public final /* synthetic */ class C3472Ujhhgtgfeyxiexzf implements InterfaceC35
                 InterfaceC3545feyxiexzfUjhhgtg interfaceC3545feyxiexzfUjhhgtg2 = (InterfaceC3545feyxiexzfUjhhgtg) this.f10799Ujhhgtgfeyxiexzf;
                 C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg = (C3678feyxiexzfUjhhgtg) obj;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf = MagicFactory.get(4928830178840282506L, strArr);
+                c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf = "搜索好友/群聊/公众号";
                 Set setM3654feyxiexzfUjhhgtg = AbstractC2391Ujhhgtgfeyxiexzf.m3654feyxiexzfUjhhgtg(c0627Ujhhgtgfeyxiexzf2.f2661Ujhhgtgfeyxiexzf);
                 c0544Ujhhgtgfeyxiexzf2.getClass();
                 ArrayList arrayList3 = new ArrayList();
@@ -101,10 +101,10 @@ public final /* synthetic */ class C3472Ujhhgtgfeyxiexzf implements InterfaceC35
                 if (cursorM5194feyxiexzfUjhhgtg != null) {
                     while (cursorM5194feyxiexzfUjhhgtg.moveToNext()) {
                         try {
-                            String string = cursorM5194feyxiexzfUjhhgtg.getString(cursorM5194feyxiexzfUjhhgtg.getColumnIndex(MagicFactory.get(4928829770818389386L, strArr)));
+                            String string = cursorM5194feyxiexzfUjhhgtg.getString(cursorM5194feyxiexzfUjhhgtg.getColumnIndex("username"));
                             C0544Ujhhgtgfeyxiexzf c0544Ujhhgtgfeyxiexzf3 = c0544Ujhhgtgfeyxiexzf2;
-                            boolean z = (cursorM5194feyxiexzfUjhhgtg.getInt(cursorM5194feyxiexzfUjhhgtg.getColumnIndex(MagicFactory.get(4928829869602637194L, strArr))) & 8) != 0;
-                            if (string.endsWith(MagicFactory.get(4928829959796950410L, strArr))) {
+                            boolean z = (cursorM5194feyxiexzfUjhhgtg.getInt(cursorM5194feyxiexzfUjhhgtg.getColumnIndex("verifyFlag")) & 8) != 0;
+                            if (string.endsWith("@chatroom")) {
                                 GroupInfo groupInfoM1316Ujhhgtgfeyxiexzf = AbstractC0217Ujhhgtgfeyxiexzf.m1316Ujhhgtgfeyxiexzf(cursorM5194feyxiexzfUjhhgtg);
                                 String roomId = groupInfoM1316Ujhhgtgfeyxiexzf.getRoomId();
                                 StringBuilder sb = new StringBuilder();
@@ -138,7 +138,7 @@ public final /* synthetic */ class C3472Ujhhgtgfeyxiexzf implements InterfaceC35
                                         nickname = friendInfoM1315Ujhhgtgfeyxiexzf.getWxid();
                                     }
                                     if (nickname.length() > 24) {
-                                        nickname = AbstractC1152feyxiexzfUjhhgtg.m2643feyxiexzfUjhhgtg(24, nickname) + MagicFactory.get(4928829916847277450L, strArr);
+                                        nickname = AbstractC1152feyxiexzfUjhhgtg.m2643feyxiexzfUjhhgtg(24, nickname) + "...";
                                     }
                                     sb3.append(nickname);
                                     if (!AbstractC1152feyxiexzfUjhhgtg.m2631feyxiexzfUjhhgtg(friendInfoM1315Ujhhgtgfeyxiexzf.getRemark())) {
@@ -159,7 +159,7 @@ public final /* synthetic */ class C3472Ujhhgtgfeyxiexzf implements InterfaceC35
                                         nickname2 = friendInfoM1315Ujhhgtgfeyxiexzf2.getWxid();
                                     }
                                     if (nickname2.length() > 24) {
-                                        nickname2 = AbstractC1152feyxiexzfUjhhgtg.m2643feyxiexzfUjhhgtg(24, nickname2) + MagicFactory.get(4928830037106361738L, strArr);
+                                        nickname2 = AbstractC1152feyxiexzfUjhhgtg.m2643feyxiexzfUjhhgtg(24, nickname2) + "...";
                                     }
                                     sb4.append(nickname2);
                                     if (!AbstractC1152feyxiexzfUjhhgtg.m2631feyxiexzfUjhhgtg(friendInfoM1315Ujhhgtgfeyxiexzf2.getRemark())) {
@@ -208,19 +208,19 @@ public final /* synthetic */ class C3472Ujhhgtgfeyxiexzf implements InterfaceC35
                             arrayList11.add(c3663feyxiexzfUjhhgtg4);
                         }
                     }
-                    C0543Ujhhgtgfeyxiexzf c0543Ujhhgtgfeyxiexzf = arrayList11.isEmpty() ? null : new C0543Ujhhgtgfeyxiexzf(AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(new StringBuilder(), MagicFactory.get(4928830019926492554L, strArr), str), arrayList11);
+                    C0543Ujhhgtgfeyxiexzf c0543Ujhhgtgfeyxiexzf = arrayList11.isEmpty() ? null : new C0543Ujhhgtgfeyxiexzf(AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(new StringBuilder(), "标签:", str), arrayList11);
                     if (c0543Ujhhgtgfeyxiexzf != null) {
                         arrayList10.add(c0543Ujhhgtgfeyxiexzf);
                     }
                 }
                 c3678feyxiexzfUjhhgtg.m5371Ujhhgtgfeyxiexzf(arrayList3);
-                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf(MagicFactory.get(4928830127300674954L, strArr), arrayList4);
-                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf(MagicFactory.get(4928830114415773066L, strArr), arrayList5);
-                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf(MagicFactory.get(4928830238969824650L, strArr), arrayList6);
+                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf("好友", arrayList4);
+                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf("群聊", arrayList5);
+                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf("公众号", arrayList6);
                 for (C0543Ujhhgtgfeyxiexzf c0543Ujhhgtgfeyxiexzf2 : arrayList10) {
                     c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf(c0543Ujhhgtgfeyxiexzf2.f2530Ujhhgtgfeyxiexzf, c0543Ujhhgtgfeyxiexzf2.f2531Ujhhgtgfeyxiexzf);
                 }
-                String str2 = MagicFactory.get(4928830221789955466L, strArr);
+                String str2 = "保存";
                 C0542Ujhhgtgfeyxiexzf c0542Ujhhgtgfeyxiexzf = new C0542Ujhhgtgfeyxiexzf(c0544Ujhhgtgfeyxiexzf, c0627Ujhhgtgfeyxiexzf, interfaceC3545feyxiexzfUjhhgtg);
                 c3678feyxiexzfUjhhgtg.f11699Ujhhgtgfeyxiexzf = str2;
                 c3678feyxiexzfUjhhgtg.f11701Ujhhgtgfeyxiexzf = c0542Ujhhgtgfeyxiexzf;
@@ -231,10 +231,10 @@ public final /* synthetic */ class C3472Ujhhgtgfeyxiexzf implements InterfaceC35
                 String str4 = (String) this.f10799Ujhhgtgfeyxiexzf;
                 Intent intent = new Intent();
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                intent.setClassName(activity, MagicFactory.get(4928209921138230666L, strArr2));
-                intent.putExtra(MagicFactory.get(4928209122274313610L, strArr2), MagicFactory.get(4928209096504509834L, strArr2));
-                intent.putExtra(MagicFactory.get(4928209203878692234L, strArr2), str3);
-                intent.putExtra(MagicFactory.get(4928209289778038154L, strArr2), str4);
+                intent.setClassName(activity, "com.tencent.mm.chatroom.ui.SelectedMemberChattingRecordUI");
+                intent.putExtra("title", "历史发言记录");
+                intent.putExtra("RoomInfo_Id", str3);
+                intent.putExtra("room_member", str4);
                 activity.startActivity(intent);
                 break;
             default:
@@ -243,9 +243,9 @@ public final /* synthetic */ class C3472Ujhhgtgfeyxiexzf implements InterfaceC35
                 String str5 = (String) this.f10799Ujhhgtgfeyxiexzf;
                 Intent intent2 = new Intent();
                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                intent2.setClassName(activity2, MagicFactory.get(4928213198198277514L, strArr3));
-                intent2.putStringArrayListExtra(MagicFactory.get(4928213296982525322L, strArr3), arrayList12);
-                intent2.putExtra(MagicFactory.get(4928212382154491274L, strArr3), str5);
+                intent2.setClassName(activity2, "com.tencent.mm.plugin.sns.ui.SnsUploadUI");
+                intent2.putStringArrayListExtra("sns_kemdia_path_list", arrayList12);
+                intent2.putExtra("Kdescription", str5);
                 activity2.startActivity(intent2);
                 break;
         }

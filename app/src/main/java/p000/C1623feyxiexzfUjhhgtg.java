@@ -74,19 +74,19 @@ public final class C1623feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928582354932336010L, strArr));
+        sb.append("u40Proto(key=");
         sb.append(this.f5547Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928582432241747338L, strArr));
+        sb.append(", thumbnail=");
         sb.append(this.f5548Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928582513846125962L, strArr));
+        sb.append(", preview=");
         sb.append(this.f5549Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928582466601485706L, strArr));
+        sb.append(", animation=");
         sb.append(this.f5550Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928582548205864330L, strArr));
+        sb.append(", landscape_animation=");
         sb.append(this.f5551Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928582586860569994L, strArr));
+        sb.append(", sign_preview=");
         sb.append(this.f5552Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928582655580046730L, strArr));
+        sb.append(", sign_thumbnail=");
         sb.append(this.f5553Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

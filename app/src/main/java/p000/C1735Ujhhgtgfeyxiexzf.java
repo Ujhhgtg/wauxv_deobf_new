@@ -78,19 +78,19 @@ public final class C1735Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928593843969852810L, strArr));
+        sb.append("zt1Proto(rich_text_json=");
         sb.append(this.f5839Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928592774522996106L, strArr));
+        sb.append(", rich_text_title=");
         sb.append(this.f5840Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928592830357570954L, strArr));
+        sb.append(", picture_cut_ratio=");
         sb.append(this.f5841Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928593015041164682L, strArr));
+        sb.append(", from_rich_publisher=");
         sb.append(this.f5842Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928593053695870346L, strArr));
+        sb.append(", secretly_push_chatroom_name=");
         sb.append(this.f5843Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928593195429791114L, strArr));
+        sb.append(", comment_egg_info=");
         sb.append(this.f5844Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928593246969398666L, strArr));
+        sb.append(", picture_cut_ratio_for_finder=");
         sb.append(this.f5845Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

@@ -27,10 +27,10 @@ public final class C2325Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7593Ujhhgtgfeyxiexzf = new C2325Ujhhgtgfeyxiexzf(MagicFactory.get(4928455408583968138L, strArr));
-        f7594Ujhhgtgfeyxiexzf = MagicFactory.get(4928459587587147146L, strArr);
-        f7595Ujhhgtgfeyxiexzf = MagicFactory.get(4928459707846231434L, strArr);
-        f7596Ujhhgtgfeyxiexzf = MagicFactory.get(4928459677781460362L, strArr);
+        f7593Ujhhgtgfeyxiexzf = new C2325Ujhhgtgfeyxiexzf("AppBrandAntiGlobalAdHook");
+        f7594Ujhhgtgfeyxiexzf = "小程序";
+        f7595Ujhhgtgfeyxiexzf = "禁止全局广告";
+        f7596Ujhhgtgfeyxiexzf = "可能导致部分需要广告的功能无法运行";
         f7597Ujhhgtgfeyxiexzf = true;
     }
 

@@ -24,10 +24,10 @@ public final class C3185feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9835Ujhhgtgfeyxiexzf = new C3185feyxiexzfUjhhgtg(MagicFactory.get(4928412896997672330L, strArr));
-        f9836Ujhhgtgfeyxiexzf = MagicFactory.get(4928412342946891146L, strArr);
-        f9837Ujhhgtgfeyxiexzf = MagicFactory.get(4928412330061989258L, strArr);
-        f9838Ujhhgtgfeyxiexzf = MagicFactory.get(4928412299997218186L, strArr);
+        f9835Ujhhgtgfeyxiexzf = new C3185feyxiexzfUjhhgtg("DisableSendStatusHook");
+        f9836Ujhhgtgfeyxiexzf = "聊天";
+        f9837Ujhhgtgfeyxiexzf = "禁止发送状态";
+        f9838Ujhhgtgfeyxiexzf = "禁止聊天框文本改变时发送正在输入中";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

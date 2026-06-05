@@ -87,8 +87,8 @@ public final /* synthetic */ class C1419feyxiexzfUjhhgtg implements InterfaceC35
                 boolean z = false;
                 if (map3 != null) {
                     String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                    String str2 = (String) map3.get(MagicFactory.get(4928448141499303306L, strArr));
-                    if (str2 != null && AbstractC1152feyxiexzfUjhhgtg.m2623feyxiexzfUjhhgtg(str2, MagicFactory.get(4928447123592054154L, strArr), true)) {
+                    String str2 = (String) map3.get("Content-Type");
+                    if (str2 != null && AbstractC1152feyxiexzfUjhhgtg.m2623feyxiexzfUjhhgtg(str2, "application/json", true)) {
                         z = true;
                     }
                 }

@@ -24,10 +24,10 @@ public final class C1010feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3940Ujhhgtgfeyxiexzf = new C1010feyxiexzfUjhhgtg(MagicFactory.get(4928907376582460810L, strArr));
-        f3941Ujhhgtgfeyxiexzf = MagicFactory.get(4928906676502791562L, strArr);
-        f3942Ujhhgtgfeyxiexzf = MagicFactory.get(4928906801056843146L, strArr);
-        f3943Ujhhgtgfeyxiexzf = MagicFactory.get(4928906770992072074L, strArr);
+        f3940Ujhhgtgfeyxiexzf = new C1010feyxiexzfUjhhgtg("ShareSignatureHook");
+        f3941Ujhhgtgfeyxiexzf = "杂项";
+        f3942Ujhhgtgfeyxiexzf = "分享签名校验";
+        f3943Ujhhgtgfeyxiexzf = "绕过第三方应用分享到微信的签名校验";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

@@ -22,17 +22,17 @@ public final class C0555Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2549Ujhhgtgfeyxiexzf = new C0555Ujhhgtgfeyxiexzf(MagicFactory.get(4928380856541644170L, strArr));
-        f2550Ujhhgtgfeyxiexzf = MagicFactory.get(4928384631817897354L, strArr);
-        f2551Ujhhgtgfeyxiexzf = MagicFactory.get(4928384618932995466L, strArr);
-        f2552Ujhhgtgfeyxiexzf = MagicFactory.get(4928384730602145162L, strArr);
+        f2549Ujhhgtgfeyxiexzf = new C0555Ujhhgtgfeyxiexzf("HideMeAccountInfoHook");
+        f2550Ujhhgtgfeyxiexzf = "净化";
+        f2551Ujhhgtgfeyxiexzf = "隐藏微信号";
+        f2552Ujhhgtgfeyxiexzf = "隐藏我界面微信号，与资料卡居中冲突";
     }
 
     @Override // p000.AbstractC0571Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛱUjhhgtgᛱᛳᛴ */
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-        C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(View.class)}, 1, AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928380899491317130L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))).m2024Ujhhgtgfeyxiexzf());
+        C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(View.class)}, 1, AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.pluginsdk.ui.preference.AccountInfoPreference")).m2024Ujhhgtgfeyxiexzf());
         C0555Ujhhgtgfeyxiexzf c0555Ujhhgtgfeyxiexzf = f2549Ujhhgtgfeyxiexzf;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c0555Ujhhgtgfeyxiexzf.m2996Ujhhgtgfeyxiexzf(c0393Ujhhgtgfeyxiexzf, 1);
         c0555Ujhhgtgfeyxiexzf.m1844feyxiexzfUjhhgtg(c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf, new C3528Ujhhgtgfeyxiexzf(25));

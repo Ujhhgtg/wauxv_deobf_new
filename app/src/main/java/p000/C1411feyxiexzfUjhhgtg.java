@@ -24,7 +24,7 @@ public final class C1411feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ, reason: contains not printable characters */
     public static File m2920Ujhhgtgfeyxiexzf(C1414feyxiexzfUjhhgtg c1414feyxiexzfUjhhgtg) {
-        return new File(c1414feyxiexzfUjhhgtg.f4963Ujhhgtgfeyxiexzf, MagicFactory.get(4928532022210594186L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        return new File(c1414feyxiexzfUjhhgtg.f4963Ujhhgtgfeyxiexzf, "config.prop");
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛴᛳ, reason: contains not printable characters */

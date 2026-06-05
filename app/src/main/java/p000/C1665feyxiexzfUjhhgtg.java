@@ -50,11 +50,11 @@ public final class C1665feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928561305297618314L, strArr));
+        sb.append("w12Proto(poiClassifyId=");
         sb.append(this.f5623Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928564775631193482L, strArr));
+        sb.append(", longitude=");
         sb.append(this.f5624Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928564719796618634L, strArr));
+        sb.append(", latitude=");
         sb.append(this.f5625Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

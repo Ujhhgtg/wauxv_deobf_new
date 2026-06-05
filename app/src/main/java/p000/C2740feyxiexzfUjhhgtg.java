@@ -33,18 +33,18 @@ public final class C2740feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
     static {
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928366730394207626L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8706Ujhhgtgfeyxiexzf = new C2740feyxiexzfUjhhgtg(MagicFactory.get(4928366923667735946L, strArr));
-        f8707Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(MagicFactory.get(4928366794818717066L, strArr), MagicFactory.get(4928366743279109514L, strArr), MagicFactory.get(4928365733961794954L, strArr), MagicFactory.get(4928365819861140874L, strArr), MagicFactory.get(4928365905760486794L, strArr), MagicFactory.get(4928365978774930826L, strArr), MagicFactory.get(4928365922940355978L, strArr));
-        f8708Ujhhgtgfeyxiexzf = MagicFactory.get(4928366013134669194L, strArr);
-        f8709Ujhhgtgfeyxiexzf = MagicFactory.get(4928366000249767306L, strArr);
-        f8710Ujhhgtgfeyxiexzf = MagicFactory.get(4928366111918917002L, strArr);
+        f8706Ujhhgtgfeyxiexzf = new C2740feyxiexzfUjhhgtg("ChatInputHintHook");
+        f8707Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf("${totalMsg}", "${textMsg}", "${textWord}", "${emojiMsg}", "${transferMsg}", "${redBagMsg}", "${fileMsg}");
+        f8708Ujhhgtgfeyxiexzf = "美化";
+        f8709Ujhhgtgfeyxiexzf = "输入框提示";
+        f8710Ujhhgtgfeyxiexzf = "自定义聊天输入框默认提示的文本内容";
         f8711Ujhhgtgfeyxiexzf = new C2692Ujhhgtgfeyxiexzf(17);
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛳᛴᛱUjhhgtgᛱᛲ, reason: contains not printable characters */
     public static String m4046feyxiexzfUjhhgtg(String str) {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        return AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(str, MagicFactory.get(4928366983797278090L, strArr), String.valueOf(C2741Ujhhgtgfeyxiexzf.f8712Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), MagicFactory.get(4928367069696624010L, strArr), String.valueOf(C2734feyxiexzfUjhhgtg.f8696Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), MagicFactory.get(4928367022451983754L, strArr), String.valueOf(C2733feyxiexzfUjhhgtg.f8695Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), MagicFactory.get(4928367108351329674L, strArr), String.valueOf(C2727Ujhhgtgfeyxiexzf.f8688Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), MagicFactory.get(4928367194250675594L, strArr), String.valueOf(C2742feyxiexzfUjhhgtg.f8713Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), MagicFactory.get(4928367267265119626L, strArr), String.valueOf(C2731feyxiexzfUjhhgtg.f8693Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), MagicFactory.get(4928367348869498250L, strArr), String.valueOf(C2735feyxiexzfUjhhgtg.f8697Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf()));
+        return AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(str, "${totalMsg}", String.valueOf(C2741Ujhhgtgfeyxiexzf.f8712Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), "${textMsg}", String.valueOf(C2734feyxiexzfUjhhgtg.f8696Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), "${textWord}", String.valueOf(C2733feyxiexzfUjhhgtg.f8695Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), "${emojiMsg}", String.valueOf(C2727Ujhhgtgfeyxiexzf.f8688Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), "${transferMsg}", String.valueOf(C2742feyxiexzfUjhhgtg.f8713Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), "${redBagMsg}", String.valueOf(C2731feyxiexzfUjhhgtg.f8693Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf())), "${fileMsg}", String.valueOf(C2735feyxiexzfUjhhgtg.f8697Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf()));
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

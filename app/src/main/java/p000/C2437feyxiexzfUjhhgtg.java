@@ -27,10 +27,10 @@ public final class C2437feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7883Ujhhgtgfeyxiexzf = new C2437feyxiexzfUjhhgtg(MagicFactory.get(4928352750275659146L, strArr));
-        f7884Ujhhgtgfeyxiexzf = MagicFactory.get(4928352874829710730L, strArr);
-        f7885Ujhhgtgfeyxiexzf = MagicFactory.get(4928352861944808842L, strArr);
-        f7886Ujhhgtgfeyxiexzf = MagicFactory.get(4928352969318991242L, strArr);
+        f7883Ujhhgtgfeyxiexzf = new C2437feyxiexzfUjhhgtg("AutoTransformVoiceHook");
+        f7884Ujhhgtgfeyxiexzf = "聊天";
+        f7885Ujhhgtgfeyxiexzf = "自动语音转文";
+        f7886Ujhhgtgfeyxiexzf = "自动将微信聊天列表的语音消息转文字";
         f7887Ujhhgtgfeyxiexzf = new C2438feyxiexzfUjhhgtg(100, 0.75f, true, 0);
     }
 
@@ -56,7 +56,7 @@ public final class C2437feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
             long msgId = msgInfoBean.getMsgId();
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(objInvoke).m2024Ujhhgtgfeyxiexzf();
             c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f2122feyxiexzfUjhhgtg = new C1127feyxiexzfUjhhgtg(21);
-            if (C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Long.TYPE)}, 1, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1650Ujhhgtgfeyxiexzf(Long.valueOf(msgId)).toString(), MagicFactory.get(4928352788930364810L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))) {
+            if (C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Long.TYPE)}, 1, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1650Ujhhgtgfeyxiexzf(Long.valueOf(msgId)).toString(), "NoTransform")) {
                 c2438feyxiexzfUjhhgtg.put(Long.valueOf(msgInfoBean.getMsgId()), bool);
                 Object origin = msgInfoBean.getOrigin();
                 C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(objInvoke).m2024Ujhhgtgfeyxiexzf();

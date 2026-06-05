@@ -15,8 +15,8 @@ public final /* synthetic */ class C2025feyxiexzfUjhhgtg implements InterfaceC35
         C2025feyxiexzfUjhhgtg c2025feyxiexzfUjhhgtg = new C2025feyxiexzfUjhhgtg();
         f6663Ujhhgtgfeyxiexzf = c2025feyxiexzfUjhhgtg;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928193054801659274L, strArr), c2025feyxiexzfUjhhgtg, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928192393376695690L, strArr), false, 1);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.FinderJumpInfoProto", c2025feyxiexzfUjhhgtg, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "jumpinfo_type", false, 1);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

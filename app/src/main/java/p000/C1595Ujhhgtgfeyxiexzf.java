@@ -108,29 +108,29 @@ public final class C1595Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928084877460374922L, strArr));
+        sb.append("m40Proto(start_time=");
         sb.append(this.f5471Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928084924705015178L, strArr));
+        sb.append(", end_time=");
         sb.append(this.f5472Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928085010604361098L, strArr));
+        sb.append(", quest_duration=");
         sb.append(this.f5473Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928085070733903242L, strArr));
+        sb.append(", time_interval_before_quest=");
         sb.append(this.f5474Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928085216762791306L, strArr));
+        sb.append(", progress=");
         sb.append(this.f5475Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928085302662137226L, strArr));
+        sb.append(", reward=");
         sb.append(this.f5476Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928084297639789962L, strArr));
+        sb.append(", delivery_crit_quest=");
         sb.append(this.f5477Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928084336294495626L, strArr));
+        sb.append(", is_crit_quest_accomplished=");
         sb.append(this.f5478Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928084482323383690L, strArr));
+        sb.append(", current_stage=");
         sb.append(this.f5479Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928084546747893130L, strArr));
+        sb.append(", stage_time_left=");
         sb.append(this.f5480Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928084602582467978L, strArr));
+        sb.append(", current_stage_duration=");
         sb.append(this.f5481Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928084765791225226L, strArr));
+        sb.append(", crit_quest_id=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5482Ujhhgtgfeyxiexzf, ')');
     }
 }

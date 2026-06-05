@@ -37,7 +37,7 @@ public final class C1521Ujhhgtgfeyxiexzf {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928128308169672074L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sb.append("ni1Proto(audience_no_privilege=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f5305Ujhhgtgfeyxiexzf, ')');
     }
 }

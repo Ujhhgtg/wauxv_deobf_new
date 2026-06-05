@@ -24,10 +24,10 @@ public final class C2332Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7617Ujhhgtgfeyxiexzf = new C2332Ujhhgtgfeyxiexzf(MagicFactory.get(4928373868629853578L, strArr));
-        f7618Ujhhgtgfeyxiexzf = MagicFactory.get(4928373117010576778L, strArr);
-        f7619Ujhhgtgfeyxiexzf = MagicFactory.get(4928373099830707594L, strArr);
-        f7620Ujhhgtgfeyxiexzf = MagicFactory.get(4928373069765936522L, strArr);
+        f7617Ujhhgtgfeyxiexzf = new C2332Ujhhgtgfeyxiexzf("AppBrandForceShareHook");
+        f7618Ujhhgtgfeyxiexzf = "小程序";
+        f7619Ujhhgtgfeyxiexzf = "程序强制分享";
+        f7620Ujhhgtgfeyxiexzf = "程序强制可转发给朋友或分享到朋友圈";
         f7621Ujhhgtgfeyxiexzf = true;
     }
 
@@ -60,9 +60,9 @@ public final class C2332Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         if (mo1424feyxiexzfUjhhgtg() && z) {
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
             boolean z2 = true;
-            boolean z3 = C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, MagicFactory.get(4928373907284559242L, strArr)) || C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, MagicFactory.get(4928372919442081162L, strArr));
-            boolean z4 = C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, MagicFactory.get(4928372889377310090L, strArr)) || C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, MagicFactory.get(4928372863607506314L, strArr));
-            if (!C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, MagicFactory.get(4928372970981688714L, strArr)) && !C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, MagicFactory.get(4928373052586067338L, strArr))) {
+            boolean z3 = C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, "转发给朋友") || C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, "分享到朋友圈");
+            boolean z4 = C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, "轉發給朋友") || C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, "分享到朋友圈");
+            if (!C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, "Send to Chat") && !C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(charSequence, "Share on Moments")) {
                 z2 = false;
             }
             if (z3 || z4 || z2) {

@@ -15,8 +15,8 @@ public final /* synthetic */ class C2019feyxiexzfUjhhgtg implements InterfaceC35
         C2019feyxiexzfUjhhgtg c2019feyxiexzfUjhhgtg = new C2019feyxiexzfUjhhgtg();
         f6610Ujhhgtgfeyxiexzf = c2019feyxiexzfUjhhgtg;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928188618100442506L, strArr), c2019feyxiexzfUjhhgtg, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928187960970446218L, strArr), false, 1);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.FinderContactProto", c2019feyxiexzfUjhhgtg, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "username", false, 1);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

@@ -26,7 +26,7 @@ public final class C2218Ujhhgtgfeyxiexzf extends AbstractC0255Ujhhgtgfeyxiexzf i
             c1104feyxiexzfUjhhgtg.getClass();
             objInvoke = methodM3154feyxiexzfUjhhgtg.invoke(C1104feyxiexzfUjhhgtg.m2574feyxiexzfUjhhgtg(declaringClass), null, str, true);
         }
-        MagicFactory.get(4928261941782119818L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        "null cannot be cast to non-null type kotlin.String";
         return (String) objInvoke;
     }
 

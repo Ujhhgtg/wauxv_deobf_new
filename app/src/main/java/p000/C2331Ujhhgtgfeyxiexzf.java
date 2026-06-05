@@ -27,10 +27,10 @@ public final class C2331Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7611Ujhhgtgfeyxiexzf = new C2331Ujhhgtgfeyxiexzf(MagicFactory.get(4928373129895478666L, strArr));
-        f7612Ujhhgtgfeyxiexzf = MagicFactory.get(4928372687513847178L, strArr);
-        f7613Ujhhgtgfeyxiexzf = MagicFactory.get(4928372670333977994L, strArr);
-        f7614Ujhhgtgfeyxiexzf = MagicFactory.get(4928372777708160394L, strArr);
+        f7611Ujhhgtgfeyxiexzf = new C2331Ujhhgtgfeyxiexzf("AppBrandVideoRewardHook");
+        f7612Ujhhgtgfeyxiexzf = "小程序";
+        f7613Ujhhgtgfeyxiexzf = "程序视频奖励";
+        f7614Ujhhgtgfeyxiexzf = "跳过小程序视频广告等待时长领取奖励";
         f7615Ujhhgtgfeyxiexzf = new String[]{EnumC2262Ujhhgtgfeyxiexzf.f7344Ujhhgtgfeyxiexzf.f7347Ujhhgtgfeyxiexzf, EnumC2262Ujhhgtgfeyxiexzf.f7345Ujhhgtgfeyxiexzf.f7347Ujhhgtgfeyxiexzf};
         f7616Ujhhgtgfeyxiexzf = true;
     }
@@ -46,8 +46,8 @@ public final class C2331Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928373301694170506L, strArr))).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928372502830253450L, strArr);
+        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.appbrand.commonjni.AppBrandJsBridgeBinding")).m2024Ujhhgtgfeyxiexzf();
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "subscribeHandler";
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf());
         C2331Ujhhgtgfeyxiexzf c2331Ujhhgtgfeyxiexzf = f7611Ujhhgtgfeyxiexzf;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c2331Ujhhgtgfeyxiexzf.m2996Ujhhgtgfeyxiexzf(c0393Ujhhgtgfeyxiexzf, 1);

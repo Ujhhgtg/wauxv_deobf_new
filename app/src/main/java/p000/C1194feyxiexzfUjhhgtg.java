@@ -24,27 +24,27 @@ public final class C1194feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4487Ujhhgtgfeyxiexzf = new C1194feyxiexzfUjhhgtg(MagicFactory.get(4928877045523416458L, strArr));
-        f4488Ujhhgtgfeyxiexzf = MagicFactory.get(4928879218776868234L, strArr);
-        f4489Ujhhgtgfeyxiexzf = MagicFactory.get(4928879201596999050L, strArr);
-        f4490Ujhhgtgfeyxiexzf = MagicFactory.get(4928879304676214154L, strArr);
+        f4487Ujhhgtgfeyxiexzf = new C1194feyxiexzfUjhhgtg("SnsLabelFilterHook");
+        f4488Ujhhgtgfeyxiexzf = "朋友圈";
+        f4489Ujhhgtgfeyxiexzf = "朋友圈标签过滤";
+        f4490Ujhhgtgfeyxiexzf = "可通过顶栏菜单过滤指定标签的朋友圈";
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛳᛴᛱUjhhgtgᛱᛲ, reason: contains not printable characters */
     public static String m2682feyxiexzfUjhhgtg(String str) {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        if (str.equals(MagicFactory.get(4928876491472635274L, strArr))) {
+        if (str.equals("SELECT rowid, * FROM SnsInfo WHERE (SnsInfo.sourceType & 2) <> 0 ORDER BY SnsInfo.createTime DESC LIMIT 10 OFFSET 0")) {
             Set<String> setM4622Ujhhgtgfeyxiexzf = C1195feyxiexzfUjhhgtg.f4491Ujhhgtgfeyxiexzf.m4622Ujhhgtgfeyxiexzf();
             if (setM4622Ujhhgtgfeyxiexzf.isEmpty()) {
                 setM4622Ujhhgtgfeyxiexzf = null;
             }
-            if (setM4622Ujhhgtgfeyxiexzf != null && !setM4622Ujhhgtgfeyxiexzf.contains(MagicFactory.get(4928876955329103242L, strArr))) {
+            if (setM4622Ujhhgtgfeyxiexzf != null && !setM4622Ujhhgtgfeyxiexzf.contains("default")) {
                 ArrayList arrayList = new ArrayList();
                 for (String str2 : setM4622Ujhhgtgfeyxiexzf) {
                     C3673feyxiexzfUjhhgtg.f11670Ujhhgtgfeyxiexzf.getClass();
                     AbstractC2862feyxiexzfUjhhgtg.m4266feyxiexzfUjhhgtg(arrayList, C3673feyxiexzfUjhhgtg.m5362feyxiexzfUjhhgtg(str2));
                 }
-                return MagicFactory.get(4928875941716821386L, strArr) + AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(AbstractC2856feyxiexzfUjhhgtg.m4255Ujhhgtgfeyxiexzf(arrayList), null, MagicFactory.get(4928876920969364874L, strArr), MagicFactory.get(4928876912379430282L, strArr), new C1058feyxiexzfUjhhgtg(7), 25) + MagicFactory.get(4928876229479630218L, strArr);
+                return "SELECT rowid, * FROM SnsInfo WHERE ((SnsInfo.sourceType & 2) <> 0) AND (SnsInfo.userName IN " + AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(AbstractC2856feyxiexzfUjhhgtg.m4255Ujhhgtgfeyxiexzf(arrayList), null, "(", ")", new C1058feyxiexzfUjhhgtg(7), 25) + ") ORDER BY SnsInfo.createTime DESC LIMIT 1000";
             }
         }
         return str;
@@ -87,8 +87,8 @@ public final class C1194feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928877191552304522L, strArr))).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928877492200015242L, strArr);
+        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI")).m2024Ujhhgtgfeyxiexzf();
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "onCreate";
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf());
         C1194feyxiexzfUjhhgtg c1194feyxiexzfUjhhgtg = f4487Ujhhgtgfeyxiexzf;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c1194feyxiexzfUjhhgtg.m2996Ujhhgtgfeyxiexzf(c0393Ujhhgtgfeyxiexzf, 1);

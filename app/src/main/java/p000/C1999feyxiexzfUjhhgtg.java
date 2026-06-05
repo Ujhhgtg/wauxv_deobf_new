@@ -44,9 +44,9 @@ public final class C1999feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928156689313564042L, strArr));
+        sb.append("AppActionSceneProto(installedActionScene=");
         sb.append(this.f6585Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928160219776681354L, strArr));
+        sb.append(", uninstalledActionScene=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f6586Ujhhgtgfeyxiexzf, ')');
     }
 }

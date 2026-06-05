@@ -21,10 +21,10 @@ public final class C2833feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9002Ujhhgtgfeyxiexzf = new C2833feyxiexzfUjhhgtg(MagicFactory.get(4928903111679935882L, strArr));
-        f9003Ujhhgtgfeyxiexzf = MagicFactory.get(4928903296363529610L, strArr);
-        f9004Ujhhgtgfeyxiexzf = MagicFactory.get(4928903283478627722L, strArr);
-        f9005Ujhhgtgfeyxiexzf = MagicFactory.get(4928903253413856650L, strArr);
+        f9002Ujhhgtgfeyxiexzf = new C2833feyxiexzfUjhhgtg("ClearUserInfoHook");
+        f9003Ujhhgtgfeyxiexzf = "杂项";
+        f9004Ujhhgtgfeyxiexzf = "清空用户信息";
+        f9005Ujhhgtgfeyxiexzf = "清空用户的性别及国家省份等相关信息";
     }
 
     @Override // p000.AbstractC2059Ujhhgtgfeyxiexzf
@@ -54,9 +54,9 @@ public final class C2833feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
             C0301Ujhhgtgfeyxiexzf c0301Ujhhgtgfeyxiexzf = (C0301Ujhhgtgfeyxiexzf) c0858feyxiexzfUjhhgtg.m2263Ujhhgtgfeyxiexzf(c0302Ujhhgtgfeyxiexzf.serializer(), bArr);
             c0301Ujhhgtgfeyxiexzf.f1795Ujhhgtgfeyxiexzf = 0;
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            c0301Ujhhgtgfeyxiexzf.f1796Ujhhgtgfeyxiexzf = MagicFactory.get(4928903171809478026L, strArr);
-            c0301Ujhhgtgfeyxiexzf.f1797Ujhhgtgfeyxiexzf = MagicFactory.get(4928903167514510730L, strArr);
-            c0301Ujhhgtgfeyxiexzf.f1823feyxiexzfUjhhgtg = MagicFactory.get(4928903163219543434L, strArr);
+            c0301Ujhhgtgfeyxiexzf.f1796Ujhhgtgfeyxiexzf = "";
+            c0301Ujhhgtgfeyxiexzf.f1797Ujhhgtgfeyxiexzf = "";
+            c0301Ujhhgtgfeyxiexzf.f1823feyxiexzfUjhhgtg = "";
             InterfaceC0146Ujhhgtgfeyxiexzf interfaceC0146UjhhgtgfeyxiexzfSerializer = c0302Ujhhgtgfeyxiexzf.serializer();
             C2612feyxiexzfUjhhgtg c2612feyxiexzfUjhhgtg = new C2612feyxiexzfUjhhgtg();
             new C0875feyxiexzfUjhhgtg(c0858feyxiexzfUjhhgtg, new C0709Ujhhgtgfeyxiexzf(c2612feyxiexzfUjhhgtg), interfaceC0146UjhhgtgfeyxiexzfSerializer.mo1106Ujhhgtgfeyxiexzf()).mo2326Ujhhgtgfeyxiexzf(interfaceC0146UjhhgtgfeyxiexzfSerializer, c0301Ujhhgtgfeyxiexzf);

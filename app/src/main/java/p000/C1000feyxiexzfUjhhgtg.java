@@ -8,5 +8,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C1000feyxiexzfUjhhgtg extends AbstractC3266feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛳᛲᛴ, reason: contains not printable characters */
-    public static final C1000feyxiexzfUjhhgtg f3918Ujhhgtgfeyxiexzf = new C1000feyxiexzfUjhhgtg(MagicFactory.get(4928854939326743946L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+    public static final C1000feyxiexzfUjhhgtg f3918Ujhhgtgfeyxiexzf = new C1000feyxiexzfUjhhgtg("RemoveVoipLimitHook.MethodFlutterLinkVoipCallBack");
 }

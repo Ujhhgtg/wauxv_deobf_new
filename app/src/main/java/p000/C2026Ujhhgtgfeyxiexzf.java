@@ -37,7 +37,7 @@ public final class C2026Ujhhgtgfeyxiexzf {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928188059754694026L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sb.append("FinderContactProto(username=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6664Ujhhgtgfeyxiexzf, ')');
     }
 }

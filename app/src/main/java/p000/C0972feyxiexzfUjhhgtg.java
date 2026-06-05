@@ -24,10 +24,10 @@ public final class C0972feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3860Ujhhgtgfeyxiexzf = new C0972feyxiexzfUjhhgtg(MagicFactory.get(4928892816643327370L, strArr));
-        f3861Ujhhgtgfeyxiexzf = MagicFactory.get(4928894861047760266L, strArr);
-        f3862Ujhhgtgfeyxiexzf = MagicFactory.get(4928894848162858378L, strArr);
-        f3863Ujhhgtgfeyxiexzf = MagicFactory.get(4928894955537040778L, strArr);
+        f3860Ujhhgtgfeyxiexzf = new C0972feyxiexzfUjhhgtg("RedPacketDetailHook");
+        f3861Ujhhgtgfeyxiexzf = "红包";
+        f3862Ujhhgtgfeyxiexzf = "红包页面详情";
+        f3863Ujhhgtgfeyxiexzf = "红包领取页面显示更加详细的领取情况";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf
@@ -50,7 +50,7 @@ public final class C0972feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
         for (Class cls : AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(declaringClass, AbstractC1791feyxiexzfUjhhgtg.m3153feyxiexzfUjhhgtg(C0456Ujhhgtgfeyxiexzf.f2359Ujhhgtgfeyxiexzf).getDeclaringClass())) {
             int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(cls).m2024Ujhhgtgfeyxiexzf();
-            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928891356354446730L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "onGYNetEnd";
             C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c0972feyxiexzfUjhhgtg.m2996Ujhhgtgfeyxiexzf((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Integer.TYPE), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(JSONObject.class)}, 3, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf), 1);
             c0972feyxiexzfUjhhgtg.m1845feyxiexzfUjhhgtg(c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf, new C0780feyxiexzfUjhhgtg(9));
             c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf.m3485Ujhhgtgfeyxiexzf();

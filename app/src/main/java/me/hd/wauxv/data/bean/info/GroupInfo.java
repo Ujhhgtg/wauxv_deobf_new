@@ -106,13 +106,13 @@ public final class GroupInfo {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928293879158932874L, strArr));
+        sb.append("GroupInfo(roomId=");
         sb.append(this.roomId);
-        sb.append(MagicFactory.get(4928293939288475018L, strArr));
+        sb.append(", remark=");
         sb.append(this.remark);
-        sb.append(MagicFactory.get(4928293896338802058L, strArr));
+        sb.append(", name=");
         sb.append(this.name);
-        sb.append(MagicFactory.get(4928293999418017162L, strArr));
+        sb.append(", groupData=");
         sb.append(this.groupData);
         sb.append(')');
         return sb.toString();

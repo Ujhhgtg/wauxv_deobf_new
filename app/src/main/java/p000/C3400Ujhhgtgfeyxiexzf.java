@@ -15,18 +15,18 @@ public final /* synthetic */ class C3400Ujhhgtgfeyxiexzf implements InterfaceC35
         C3400Ujhhgtgfeyxiexzf c3400Ujhhgtgfeyxiexzf = new C3400Ujhhgtgfeyxiexzf();
         f10610Ujhhgtgfeyxiexzf = c3400Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928247734030304650L, strArr), c3400Ujhhgtgfeyxiexzf, 6);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928246986705995146L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.FavInfoProto.VoiceInfoProto", c3400Ujhhgtgfeyxiexzf, 6);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("duration", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(10, 3));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928247085490242954L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("fileCacheType", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(16, 3));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928247162799654282L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("md5Checksum", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(17, 3));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928247111260046730L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("fileSize", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(19, 3));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928247210044294538L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("fileCacheName", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(20, 3));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928247287353705866L, strArr), true);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("filePath", true);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(21, 3));
         descriptor = c1412feyxiexzfUjhhgtg;
     }

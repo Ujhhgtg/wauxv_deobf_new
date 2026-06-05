@@ -27,10 +27,10 @@ public final class C0345Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f1981Ujhhgtgfeyxiexzf = new C0345Ujhhgtgfeyxiexzf(MagicFactory.get(4928901638506153354L, strArr));
-        f1982Ujhhgtgfeyxiexzf = MagicFactory.get(4928901011440928138L, strArr);
-        f1983Ujhhgtgfeyxiexzf = MagicFactory.get(4928900998556026250L, strArr);
-        f1984Ujhhgtgfeyxiexzf = MagicFactory.get(4928900968491255178L, strArr);
+        f1981Ujhhgtgfeyxiexzf = new C0345Ujhhgtgfeyxiexzf("MoreMsgVoiceForwardHook");
+        f1982Ujhhgtgfeyxiexzf = "菜单";
+        f1983Ujhhgtgfeyxiexzf = "多选语音转发";
+        f1984Ujhhgtgfeyxiexzf = "支持多选语音消息后转发到私聊或群聊";
     }
 
     @Override // p000.InterfaceC0612Ujhhgtgfeyxiexzf
@@ -40,7 +40,7 @@ public final class C0345Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             Iterator it = arrayList.iterator();
             while (it.hasNext()) {
                 if (((MsgInfoBean) it.next()).isVoice()) {
-                    return Collections.singletonList(new C0313Ujhhgtgfeyxiexzf(R.id.MenuItem_MoreBtnBar_VoiceForward, MagicFactory.get(4928901672865891722L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), new C0221Ujhhgtgfeyxiexzf(11)));
+                    return Collections.singletonList(new C0313Ujhhgtgfeyxiexzf(R.id.MenuItem_MoreBtnBar_VoiceForward, "语音转发", new C0221Ujhhgtgfeyxiexzf(11)));
                 }
             }
         }

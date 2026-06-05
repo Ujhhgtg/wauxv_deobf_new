@@ -26,10 +26,10 @@ public final class C0969feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3845Ujhhgtgfeyxiexzf = new C0969feyxiexzfUjhhgtg(MagicFactory.get(4928851816885519754L, strArr));
-        f3846Ujhhgtgfeyxiexzf = MagicFactory.get(4928851426043495818L, strArr);
-        f3847Ujhhgtgfeyxiexzf = MagicFactory.get(4928851550597547402L, strArr);
-        f3848Ujhhgtgfeyxiexzf = MagicFactory.get(4928851520532776330L, strArr);
+        f3845Ujhhgtgfeyxiexzf = new C0969feyxiexzfUjhhgtg("RemoveMultiSelectLimitHook");
+        f3846Ujhhgtgfeyxiexzf = "限制";
+        f3847Ujhhgtgfeyxiexzf = "移除多选限制";
+        f3848Ujhhgtgfeyxiexzf = "移除选择好友群聊最多只能九个的限制";
     }
 
     @Override // p000.InterfaceC0746Ujhhgtgfeyxiexzf
@@ -42,13 +42,13 @@ public final class C0969feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
             if (className != null) {
                 int iHashCode = className.hashCode();
                 if (iHashCode != -1442966170) {
-                    if (iHashCode != -604671604 || !className.equals(MagicFactory.get(4928852074583557514L, strArr))) {
+                    if (iHashCode != -604671604 || !className.equals("com.tencent.mm.ui.mvvm.MvvmSelectContactUI")) {
                         return;
                     }
-                } else if (!className.equals(MagicFactory.get(4928851838360356234L, strArr))) {
+                } else if (!className.equals("com.tencent.mm.ui.mvvm.MvvmContactListUI")) {
                     return;
                 }
-                intent.putExtra(MagicFactory.get(4928851202705196426L, strArr), Integer.MAX_VALUE);
+                intent.putExtra("max_limit_num", Integer.MAX_VALUE);
             }
         }
     }

@@ -62,17 +62,17 @@ public final class C2559Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928365145551275402L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928365102601602442L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8290Ujhhgtgfeyxiexzf = new C2559Ujhhgtgfeyxiexzf(MagicFactory.get(4928379430612501898L, strArr));
+        f8290Ujhhgtgfeyxiexzf = new C2559Ujhhgtgfeyxiexzf("BottomTabMaterialHook");
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f8291Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928339410107237770L, strArr), MagicFactory.get(4928339508891485578L, strArr));
+        f8291Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Resource", "BottomTab");
         f8292Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(11));
         f8293Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(12));
         f8294Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(13));
         f8295Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(14));
         f8296Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(15));
-        f8297Ujhhgtgfeyxiexzf = MagicFactory.get(4928364097579255178L, strArr);
-        f8298Ujhhgtgfeyxiexzf = MagicFactory.get(4928364084694353290L, strArr);
-        f8299Ujhhgtgfeyxiexzf = MagicFactory.get(4928364153413830026L, strArr);
+        f8297Ujhhgtgfeyxiexzf = "美化";
+        f8298Ujhhgtgfeyxiexzf = "底栏 Material You";
+        f8299Ujhhgtgfeyxiexzf = "替换主页底部标签栏为 Material You 样式";
         f8300Ujhhgtgfeyxiexzf = new C2556feyxiexzfUjhhgtg(20);
         f8301Ujhhgtgfeyxiexzf = true;
     }
@@ -110,13 +110,13 @@ public final class C2559Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             }
             Menu menu = c2665Ujhhgtgfeyxiexzf.getMenu();
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            MenuItem menuItemAdd = menu.add(0, 0, 0, MagicFactory.get(4928378374050547082L, strArr));
+            MenuItem menuItemAdd = menu.add(0, 0, 0, "");
             C2559Ujhhgtgfeyxiexzf c2559Ujhhgtgfeyxiexzf = f8290Ujhhgtgfeyxiexzf;
             c2559Ujhhgtgfeyxiexzf.getClass();
             menuItemAdd.setIcon(new BitmapDrawable(c2665Ujhhgtgfeyxiexzf.getResources(), (Bitmap) f8293Ujhhgtgfeyxiexzf.getValue()));
-            menu.add(0, 1, 1, MagicFactory.get(4928378369755579786L, strArr)).setIcon(new BitmapDrawable(c2665Ujhhgtgfeyxiexzf.getResources(), (Bitmap) f8294Ujhhgtgfeyxiexzf.getValue()));
-            menu.add(0, 2, 2, MagicFactory.get(4928378365460612490L, strArr)).setIcon(new BitmapDrawable(c2665Ujhhgtgfeyxiexzf.getResources(), (Bitmap) f8295Ujhhgtgfeyxiexzf.getValue()));
-            menu.add(0, 3, 3, MagicFactory.get(4928378361165645194L, strArr)).setIcon(new BitmapDrawable(c2665Ujhhgtgfeyxiexzf.getResources(), (Bitmap) f8296Ujhhgtgfeyxiexzf.getValue()));
+            menu.add(0, 1, 1, "").setIcon(new BitmapDrawable(c2665Ujhhgtgfeyxiexzf.getResources(), (Bitmap) f8294Ujhhgtgfeyxiexzf.getValue()));
+            menu.add(0, 2, 2, "").setIcon(new BitmapDrawable(c2665Ujhhgtgfeyxiexzf.getResources(), (Bitmap) f8295Ujhhgtgfeyxiexzf.getValue()));
+            menu.add(0, 3, 3, "").setIcon(new BitmapDrawable(c2665Ujhhgtgfeyxiexzf.getResources(), (Bitmap) f8296Ujhhgtgfeyxiexzf.getValue()));
             c2665Ujhhgtgfeyxiexzf.setOnItemSelectedListener(new C2579Ujhhgtgfeyxiexzf(obj));
             View childAt = C3052Ujhhgtgfeyxiexzf.m4522Ujhhgtgfeyxiexzf(viewGroup).getChildAt(1);
             if (!(childAt instanceof ViewGroup)) {
@@ -130,7 +130,7 @@ public final class C2559Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             viewGroup2.addView(c2665Ujhhgtgfeyxiexzf);
             int i2 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2024Ujhhgtgfeyxiexzf();
-            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928378356870677898L, strArr);
+            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "onPageSelected";
             C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = m2996Ujhhgtgfeyxiexzf((C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf()), 1);
             c2559Ujhhgtgfeyxiexzf.m1844feyxiexzfUjhhgtg(c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf, new C2925Ujhhgtgfeyxiexzf(i, c2665Ujhhgtgfeyxiexzf));
             c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf.m3485Ujhhgtgfeyxiexzf();

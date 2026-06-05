@@ -24,10 +24,10 @@ public final class C3174feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9814Ujhhgtgfeyxiexzf = new C3174feyxiexzfUjhhgtg(MagicFactory.get(4928407438094239114L, strArr));
-        f9815Ujhhgtgfeyxiexzf = MagicFactory.get(4928410255592785290L, strArr);
-        f9816Ujhhgtgfeyxiexzf = MagicFactory.get(4928410242707883402L, strArr);
-        f9817Ujhhgtgfeyxiexzf = MagicFactory.get(4928410350082065802L, strArr);
+        f9814Ujhhgtgfeyxiexzf = new C3174feyxiexzfUjhhgtg("DisableMsgClipHook");
+        f9815Ujhhgtgfeyxiexzf = "聊天";
+        f9816Ujhhgtgfeyxiexzf = "禁止消息折叠";
+        f9817Ujhhgtgfeyxiexzf = "阻止某些包含链接的消息会被官方折叠";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

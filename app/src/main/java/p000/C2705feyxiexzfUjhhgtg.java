@@ -21,7 +21,7 @@ public final class C2705feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛱUjhhgtgᛱᛳᛴ */
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-        C3658Ujhhgtgfeyxiexzf c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928344568362960266L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))).m2017Ujhhgtgfeyxiexzf();
+        C3658Ujhhgtgfeyxiexzf c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.pluginsdk.ui.chat.ChatFooter")).m2017Ujhhgtgfeyxiexzf();
         c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf.m4863Ujhhgtgfeyxiexzf(Arrays.copyOf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Context.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(AttributeSet.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Integer.TYPE)}, 3));
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = m2996Ujhhgtgfeyxiexzf((C3660Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf.m5356Ujhhgtgfeyxiexzf()), 1);
         c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf.m3483Ujhhgtgfeyxiexzf(new C2692Ujhhgtgfeyxiexzf(10));

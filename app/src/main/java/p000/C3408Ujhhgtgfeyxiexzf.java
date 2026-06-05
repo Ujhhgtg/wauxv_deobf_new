@@ -41,9 +41,9 @@ public final class C3408Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928246552914298250L, strArr));
+        sb.append("FavInfoProto(chatInfo=");
         sb.append(this.f10624Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928246729007957386L, strArr));
+        sb.append(", voiceInfo=");
         sb.append(this.f10625Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

@@ -55,11 +55,11 @@ public final class C2726Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928782693681857930L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928782650732184970L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8680Ujhhgtgfeyxiexzf = new C2726Ujhhgtgfeyxiexzf(MagicFactory.get(4928789973651424650L, strArr));
+        f8680Ujhhgtgfeyxiexzf = new C2726Ujhhgtgfeyxiexzf("ChatGroupTabHook");
         f8681Ujhhgtgfeyxiexzf = new LinkedHashMap();
-        f8682Ujhhgtgfeyxiexzf = MagicFactory.get(4928782745221465482L, strArr);
-        f8683Ujhhgtgfeyxiexzf = MagicFactory.get(4928782732336563594L, strArr);
-        f8684Ujhhgtgfeyxiexzf = MagicFactory.get(4928782702271792522L, strArr);
+        f8682Ujhhgtgfeyxiexzf = "界面";
+        f8683Ujhhgtgfeyxiexzf = "聊天分组标签";
+        f8684Ujhhgtgfeyxiexzf = "添加分组顶部标签栏，顶部栏无法固定";
         f8685Ujhhgtgfeyxiexzf = new C2692Ujhhgtgfeyxiexzf(11);
         f8686Ujhhgtgfeyxiexzf = new C2692Ujhhgtgfeyxiexzf(12);
         f8687Ujhhgtgfeyxiexzf = true;
@@ -91,7 +91,7 @@ public final class C2726Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         Iterator it = list.iterator();
         while (it.hasNext()) {
             String lowerCase = ((C0627Ujhhgtgfeyxiexzf) it.next()).f2657Ujhhgtgfeyxiexzf.toLowerCase(Locale.ROOT);
-            MagicFactory.get(4928776895476008330L, strArr);
+            "toLowerCase(...)";
             arrayList.add(lowerCase);
         }
         Set setM4256Ujhhgtgfeyxiexzf = AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(arrayList);
@@ -106,14 +106,14 @@ public final class C2726Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         ArrayList<C0627Ujhhgtgfeyxiexzf> arrayList3 = new ArrayList();
         for (Object obj2 : arrayList2) {
             String lowerCase2 = ((C0627Ujhhgtgfeyxiexzf) obj2).f2657Ujhhgtgfeyxiexzf.toLowerCase(Locale.ROOT);
-            MagicFactory.get(4928780258435401098L, strArr);
+            "toLowerCase(...)";
             if (!setM4256Ujhhgtgfeyxiexzf.contains(lowerCase2)) {
                 arrayList3.add(obj2);
             }
         }
         if (arrayList3.isEmpty()) {
             Chip chip = new Chip(chipGroup.getContext(), null);
-            chip.setText(MagicFactory.get(4928780322859910538L, strArr));
+            chip.setText("已全部添加");
             chip.setEnabled(false);
             chipGroup.addView(chip);
             return;
@@ -161,7 +161,7 @@ public final class C2726Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         C0629Ujhhgtgfeyxiexzf.f2673Ujhhgtgfeyxiexzf.getClass();
         boolean zM1908Ujhhgtgfeyxiexzf = C0629Ujhhgtgfeyxiexzf.m1908Ujhhgtgfeyxiexzf(arrayList);
         if (!zM1908Ujhhgtgfeyxiexzf) {
-            AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928780546198209930L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+            AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "保存失败");
             return zM1908Ujhhgtgfeyxiexzf;
         }
         list.clear();
@@ -263,8 +263,8 @@ public final class C2726Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
     public final void mo1870Ujhhgtgfeyxiexzf(C0578Ujhhgtgfeyxiexzf c0578Ujhhgtgfeyxiexzf, String str) {
         if (mo1424feyxiexzfUjhhgtg()) {
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            if (C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, MagicFactory.get(4928776723677316490L, strArr))) {
-                c0578Ujhhgtgfeyxiexzf.m1853Ujhhgtgfeyxiexzf(MagicFactory.get(4928776904065942922L, strArr));
+            if (C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, "clicfg_conv_mvvm_list")) {
+                c0578Ujhhgtgfeyxiexzf.m1853Ujhhgtgfeyxiexzf("0");
             }
         }
     }
@@ -275,23 +275,23 @@ public final class C2726Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         if (mo1424feyxiexzfUjhhgtg()) {
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
             int i = 1;
-            if (str.startsWith(MagicFactory.get(4928790038075934090L, strArr))) {
+            if (str.startsWith("select unReadCount, status, isSend, conversationTime, username, content, msgType, flag, digest, digestUser, attrflag, editingMsg, atCount, unReadMuteCount, UnReadInvite, hasTodo, hbMarkRed, remitMarkRed, parentRef from rconversation where ")) {
                 C0629Ujhhgtgfeyxiexzf.f2673Ujhhgtgfeyxiexzf.getClass();
                 C0627Ujhhgtgfeyxiexzf c0627Ujhhgtgfeyxiexzf = (C0627Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4240feyxiexzfUjhhgtg(C2746feyxiexzfUjhhgtg.f8717Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf(), C0629Ujhhgtgfeyxiexzf.m1906Ujhhgtgfeyxiexzf());
                 if ((c0627Ujhhgtgfeyxiexzf == null && (c0627Ujhhgtgfeyxiexzf = (C0627Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4239feyxiexzfUjhhgtg(C0629Ujhhgtgfeyxiexzf.m1906Ujhhgtgfeyxiexzf())) == null) || AbstractC1192feyxiexzfUjhhgtg.m2679feyxiexzfUjhhgtg(c0627Ujhhgtgfeyxiexzf.f2657Ujhhgtgfeyxiexzf, EnumC0628Ujhhgtgfeyxiexzf.f2663Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf)) {
                     return;
                 }
                 c0578Ujhhgtgfeyxiexzf.getClass();
-                new C2501feyxiexzfUjhhgtg(i, 6, c0578Ujhhgtgfeyxiexzf).m3786Ujhhgtgfeyxiexzf(MagicFactory.get(4928793267891340682L, strArr) + c0627Ujhhgtgfeyxiexzf.m1904Ujhhgtgfeyxiexzf());
+                new C2501feyxiexzfUjhhgtg(i, 6, c0578Ujhhgtgfeyxiexzf).m3786Ujhhgtgfeyxiexzf("select unReadCount, status, isSend, conversationTime, username, content, msgType, flag, digest, digestUser, attrflag, editingMsg, atCount, unReadMuteCount, UnReadInvite, hasTodo, hbMarkRed, remitMarkRed, parentRef from rconversation " + c0627Ujhhgtgfeyxiexzf.m1904Ujhhgtgfeyxiexzf());
             }
-            if (str.startsWith(MagicFactory.get(4928791987991086474L, strArr))) {
+            if (str.startsWith("select unReadCount, status, isSend, conversationTime, username, content, msgType,flag, digest, digestUser, attrflag, editingMsg, atCount, unReadMuteCount, UnReadInvite, editingQuoteMsgId, hasTodo, hbMarkRed, remitMarkRed, hasSpecialFollow, parentRef from rconversation where ")) {
                 C0629Ujhhgtgfeyxiexzf.f2673Ujhhgtgfeyxiexzf.getClass();
                 C0627Ujhhgtgfeyxiexzf c0627Ujhhgtgfeyxiexzf2 = (C0627Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4240feyxiexzfUjhhgtg(C2746feyxiexzfUjhhgtg.f8717Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf(), C0629Ujhhgtgfeyxiexzf.m1906Ujhhgtgfeyxiexzf());
                 if ((c0627Ujhhgtgfeyxiexzf2 == null && (c0627Ujhhgtgfeyxiexzf2 = (C0627Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4239feyxiexzfUjhhgtg(C0629Ujhhgtgfeyxiexzf.m1906Ujhhgtgfeyxiexzf())) == null) || AbstractC1192feyxiexzfUjhhgtg.m2679feyxiexzfUjhhgtg(c0627Ujhhgtgfeyxiexzf2.f2657Ujhhgtgfeyxiexzf, EnumC0628Ujhhgtgfeyxiexzf.f2663Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf)) {
                     return;
                 }
                 c0578Ujhhgtgfeyxiexzf.getClass();
-                new C2501feyxiexzfUjhhgtg(i, 6, c0578Ujhhgtgfeyxiexzf).m3786Ujhhgtgfeyxiexzf(MagicFactory.get(4928777883318486410L, strArr) + c0627Ujhhgtgfeyxiexzf2.m1904Ujhhgtgfeyxiexzf());
+                new C2501feyxiexzfUjhhgtg(i, 6, c0578Ujhhgtgfeyxiexzf).m3786Ujhhgtgfeyxiexzf("select unReadCount, status, isSend, conversationTime, username, content, msgType,flag, digest, digestUser, attrflag, editingMsg, atCount, unReadMuteCount, UnReadInvite, editingQuoteMsgId, hasTodo, hbMarkRed, remitMarkRed, hasSpecialFollow, parentRef from rconversation " + c0627Ujhhgtgfeyxiexzf2.m1904Ujhhgtgfeyxiexzf());
             }
         }
     }

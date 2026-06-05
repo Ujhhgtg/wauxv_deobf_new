@@ -25,10 +25,10 @@ public final class C0506Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2436Ujhhgtgfeyxiexzf = new C0506Ujhhgtgfeyxiexzf(MagicFactory.get(4928842273468188042L, strArr));
-        f2437Ujhhgtgfeyxiexzf = MagicFactory.get(4928841311395513738L, strArr);
-        f2438Ujhhgtgfeyxiexzf = MagicFactory.get(4928841298510611850L, strArr);
-        f2439Ujhhgtgfeyxiexzf = MagicFactory.get(4928841277035775370L, strArr);
+        f2436Ujhhgtgfeyxiexzf = new C0506Ujhhgtgfeyxiexzf("MsgRepeatHook");
+        f2437Ujhhgtgfeyxiexzf = "菜单";
+        f2438Ujhhgtgfeyxiexzf = "消息复读";
+        f2439Ujhhgtgfeyxiexzf = "支持直接复读部分的简单消息到上下文";
     }
 
     @Override // p000.InterfaceC0617Ujhhgtgfeyxiexzf
@@ -37,22 +37,22 @@ public final class C0506Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         if (mo1424feyxiexzfUjhhgtg()) {
             if (msgInfoBean.isText()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, MagicFactory.get(4928842213338645898L, strArr), R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(15)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, "复读", R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(15)));
             }
             if (msgInfoBean.isImage()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, MagicFactory.get(4928842337892697482L, strArr), R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(16)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, "复读", R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(16)));
             }
             if (msgInfoBean.isVoice()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, MagicFactory.get(4928842325007795594L, strArr), R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(17)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, "复读", R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(17)));
             }
             if (msgInfoBean.isVideo()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, MagicFactory.get(4928842312122893706L, strArr), R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(18)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, "复读", R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(18)));
             }
             if (msgInfoBean.isEmoji()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, MagicFactory.get(4928842299237991818L, strArr), R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(19)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, "复读", R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(19)));
             }
             if (msgInfoBean.isQuote()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, MagicFactory.get(4928842286353089930L, strArr), R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(20)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_MsgRepeat, "复读", R.drawable.ic_menu_repeat_24dp, new C0221Ujhhgtgfeyxiexzf(20)));
             }
         }
         return C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;

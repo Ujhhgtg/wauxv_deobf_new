@@ -40,19 +40,19 @@ public final /* synthetic */ class C1433feyxiexzfUjhhgtg implements InterfaceC35
             case 1:
                 Properties properties2 = (Properties) c1414feyxiexzfUjhhgtg.f4967Ujhhgtgfeyxiexzf.getValue();
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                return properties2.getProperty(MagicFactory.get(4928475590635292042L, strArr), MagicFactory.get(4928461412948247946L, strArr));
+                return properties2.getProperty("name", "未知");
             case 2:
                 Properties properties3 = (Properties) c1414feyxiexzfUjhhgtg.f4967Ujhhgtgfeyxiexzf.getValue();
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                return properties3.getProperty(MagicFactory.get(4928461400063346058L, strArr2), MagicFactory.get(4928461369998574986L, strArr2));
+                return properties3.getProperty("author", "未知");
             case 3:
                 Properties properties4 = (Properties) c1414feyxiexzfUjhhgtg.f4967Ujhhgtgfeyxiexzf.getValue();
                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                return properties4.getProperty(MagicFactory.get(4928461494552626570L, strArr3), MagicFactory.get(4928461460192888202L, strArr3));
+                return properties4.getProperty("version", "未知");
             case 4:
                 Properties properties5 = (Properties) c1414feyxiexzfUjhhgtg.f4967Ujhhgtgfeyxiexzf.getValue();
                 String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                return properties5.getProperty(MagicFactory.get(4928461447307986314L, strArr4), MagicFactory.get(4928461537502299530L, strArr4));
+                return properties5.getProperty("updateTime", "未知");
             case 5:
                 File file = c1414feyxiexzfUjhhgtg.f4966Ujhhgtgfeyxiexzf;
                 if (file.exists()) {
@@ -61,15 +61,15 @@ public final /* synthetic */ class C1433feyxiexzfUjhhgtg implements InterfaceC35
                 StringBuilder sb = new StringBuilder();
                 StringBuilder sb2 = new StringBuilder();
                 String[] strArr5 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                sb2.append(MagicFactory.get(4928461524617397642L, strArr5));
+                sb2.append("# ");
                 sb2.append((String) c1414feyxiexzfUjhhgtg.f4969Ujhhgtgfeyxiexzf.getValue());
                 sb.append(sb2.toString());
                 sb.append("\n\n");
-                sb.append(MagicFactory.get(4928461511732495754L, strArr5) + ((String) c1414feyxiexzfUjhhgtg.f4970Ujhhgtgfeyxiexzf.getValue()));
+                sb.append("**作者**: " + ((String) c1414feyxiexzfUjhhgtg.f4970Ujhhgtgfeyxiexzf.getValue()));
                 sb.append("\n\n");
-                sb.append(MagicFactory.get(4928461610516743562L, strArr5));
+                sb.append("---");
                 sb.append("\n\n");
-                return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, MagicFactory.get(4928461593336874378L, strArr5), '\n');
+                return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, "暂无相关描述", '\n');
             default:
                 LinkedHashMap linkedHashMap = AbstractC1453feyxiexzfUjhhgtg.f5062Ujhhgtgfeyxiexzf;
                 String[] strArr6 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -77,14 +77,14 @@ public final /* synthetic */ class C1433feyxiexzfUjhhgtg implements InterfaceC35
                 C1943Ujhhgtgfeyxiexzf c1943Ujhhgtgfeyxiexzf = C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
                 if (c1435feyxiexzfUjhhgtgM2963Ujhhgtgfeyxiexzf != null || (c1435feyxiexzfUjhhgtgM2963Ujhhgtgfeyxiexzf = AbstractC1453feyxiexzfUjhhgtg.m2964Ujhhgtgfeyxiexzf(c1414feyxiexzfUjhhgtg)) != null) {
                     try {
-                        c1435feyxiexzfUjhhgtgM2963Ujhhgtgfeyxiexzf.m2928Ujhhgtgfeyxiexzf(MagicFactory.get(4928463689280914826L, strArr6), new Object[0]);
+                        c1435feyxiexzfUjhhgtgM2963Ujhhgtgfeyxiexzf.m2928Ujhhgtgfeyxiexzf("openSettings", new Object[0]);
                         c0919feyxiexzfUjhhgtg = c1943Ujhhgtgfeyxiexzf;
                     } catch (Throwable th) {
                         c0919feyxiexzfUjhhgtg = new C0919feyxiexzfUjhhgtg(th);
                     }
                     Throwable thM2409Ujhhgtgfeyxiexzf = C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg);
                     if (thM2409Ujhhgtgfeyxiexzf != null) {
-                        c1414feyxiexzfUjhhgtg.m2925Ujhhgtgfeyxiexzf(MagicFactory.get(4928461082235766154L, strArr6) + thM2409Ujhhgtgfeyxiexzf.getMessage());
+                        c1414feyxiexzfUjhhgtg.m2925Ujhhgtgfeyxiexzf("openSettings Failed: " + thM2409Ujhhgtgfeyxiexzf.getMessage());
                     }
                 }
                 return c1943Ujhhgtgfeyxiexzf;

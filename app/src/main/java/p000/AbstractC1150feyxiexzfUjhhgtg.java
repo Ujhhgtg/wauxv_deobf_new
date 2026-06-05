@@ -23,16 +23,16 @@ public abstract class AbstractC1150feyxiexzfUjhhgtg {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ, reason: contains not printable characters */
     public static final String m2615Ujhhgtgfeyxiexzf(String str) {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        return AbstractC1152feyxiexzfUjhhgtg.m2644feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(str, MagicFactory.get(4928238864922838410L, strArr), MagicFactory.get(4928238856332903818L, strArr)), MagicFactory.get(4928238852037936522L, strArr), MagicFactory.get(4928238980886955402L, strArr)), MagicFactory.get(4928238976591988106L, strArr), MagicFactory.get(4928238968002053514L, strArr)), MagicFactory.get(4928238963707086218L, strArr), MagicFactory.get(4928239006656759178L, strArr))).toString();
+        return AbstractC1152feyxiexzfUjhhgtg.m2644feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(str, "\r", ""), "\n", ""), "\t", ""), "<?xml version=\"1.0\"?>", "")).toString();
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛴᛳ, reason: contains not printable characters */
     public static final void m2616Ujhhgtgfeyxiexzf(Context context, String str) {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        Object systemService = context.getSystemService(MagicFactory.get(4928239646606886282L, strArr));
-        MagicFactory.get(4928239741096166794L, strArr);
+        Object systemService = context.getSystemService("clipboard");
+        "null cannot be cast to non-null type android.content.ClipboardManager";
         ClipboardManager clipboardManager = (ClipboardManager) systemService;
-        ClipData clipDataNewPlainText = ClipData.newPlainText(MagicFactory.get(4928238890692642186L, strArr), str);
+        ClipData clipDataNewPlainText = ClipData.newPlainText("label", str);
         if (clipDataNewPlainText != null) {
             clipboardManager.setPrimaryClip(clipDataNewPlainText);
         }

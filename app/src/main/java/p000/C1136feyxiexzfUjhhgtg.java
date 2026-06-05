@@ -19,7 +19,7 @@ public final class C1136feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf i
         C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(C0181Ujhhgtgfeyxiexzf.m1250feyxiexzfUjhhgtg()).m2021Ujhhgtgfeyxiexzf();
         c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f10725Ujhhgtgfeyxiexzf = new C3711Ujhhgtgfeyxiexzf(19);
         C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.m4942Ujhhgtgfeyxiexzf())).m4938Ujhhgtgfeyxiexzf()).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f2121feyxiexzfUjhhgtg = MagicFactory.get(4928205424307471754L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f2121feyxiexzfUjhhgtg = "com.tencent.wcdb.database.SQLiteDatabase";
         return ((C0393Ujhhgtgfeyxiexzf) AbstractC3317feyxiexzfUjhhgtg.m4794Ujhhgtgfeyxiexzf(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1649Ujhhgtgfeyxiexzf(new Object[0]);
     }
 

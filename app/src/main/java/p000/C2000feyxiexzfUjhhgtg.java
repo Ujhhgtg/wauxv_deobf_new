@@ -74,19 +74,19 @@ public final class C2000feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928159781690017162L, strArr));
+        sb.append("AppInfoProto(id=");
         sb.append(this.f6587Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928159846114526602L, strArr));
+        sb.append(", version=");
         sb.append(this.f6588Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928159936308839818L, strArr));
+        sb.append(", appName=");
         sb.append(this.f6589Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928160026503153034L, strArr));
+        sb.append(", installUrl=");
         sb.append(this.f6590Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928159966373610890L, strArr));
+        sb.append(", fromUrl=");
         sb.append(this.f6591Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928160056567924106L, strArr));
+        sb.append(", clickable=");
         sb.append(this.f6592Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928159038660674954L, strArr));
+        sb.append(", isHidden=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f6593Ujhhgtgfeyxiexzf, ')');
     }
 }

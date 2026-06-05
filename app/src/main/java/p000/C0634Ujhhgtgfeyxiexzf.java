@@ -13,6 +13,6 @@ public final class C0634Ujhhgtgfeyxiexzf extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2684Ujhhgtgfeyxiexzf = new C0634Ujhhgtgfeyxiexzf(MagicFactory.get(4928871749828740490L, strArr), MagicFactory.get(4928871861497890186L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f2684Ujhhgtgfeyxiexzf = new C0634Ujhhgtgfeyxiexzf("GroupOwnerTitleHook.ValCustomBgColor1", "#FFF2D5F8", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

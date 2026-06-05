@@ -37,9 +37,9 @@ public final class C1385feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928404238343603594L, strArr));
+        sb.append("LoadedEmojiGroup(config=");
         sb.append(this.f4880Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928404268408374666L, strArr));
+        sb.append(", items=");
         sb.append(this.f4881Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

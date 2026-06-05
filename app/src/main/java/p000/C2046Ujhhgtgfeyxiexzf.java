@@ -44,9 +44,9 @@ public final class C2046Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928104952137516426L, strArr));
+        sb.append("ScanCodeInfoProto(codeContent=");
         sb.append(this.f6744Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928105093871437194L, strArr));
+        sb.append(", sourceBizType=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f6745Ujhhgtgfeyxiexzf, ')');
     }
 }

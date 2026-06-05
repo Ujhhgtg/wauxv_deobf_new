@@ -13,6 +13,6 @@ public final class C1211feyxiexzfUjhhgtg extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4516Ujhhgtgfeyxiexzf = new C1211feyxiexzfUjhhgtg(MagicFactory.get(4928879493654775178L, strArr), MagicFactory.get(4928879618208826762L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f4516Ujhhgtgfeyxiexzf = new C1211feyxiexzfUjhhgtg("SnsUploadAppInfoHook.ValPhoneAppId", "wx8dd6ecd81906fd84", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

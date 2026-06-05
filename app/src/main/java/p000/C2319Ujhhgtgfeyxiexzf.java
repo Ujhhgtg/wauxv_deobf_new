@@ -21,10 +21,10 @@ public final class C2319Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7584Ujhhgtgfeyxiexzf = new C2319Ujhhgtgfeyxiexzf(MagicFactory.get(4928894010644235658L, strArr));
-        f7585Ujhhgtgfeyxiexzf = MagicFactory.get(4928893267614893450L, strArr);
-        f7586Ujhhgtgfeyxiexzf = MagicFactory.get(4928893387873977738L, strArr);
-        f7587Ujhhgtgfeyxiexzf = MagicFactory.get(4928893353514239370L, strArr);
+        f7584Ujhhgtgfeyxiexzf = new C2319Ujhhgtgfeyxiexzf("AntiSnsAutoPlayHook");
+        f7585Ujhhgtgfeyxiexzf = "朋友圈";
+        f7586Ujhhgtgfeyxiexzf = "拦截朋友圈播放";
+        f7587Ujhhgtgfeyxiexzf = "拦截朋友圈上下滑动时会自动播放视频";
     }
 
     @Override // p000.AbstractC0571Ujhhgtgfeyxiexzf
@@ -32,8 +32,8 @@ public final class C2319Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928892962672215434L, strArr))).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928893246140056970L, strArr);
+        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.sns.ui.improve.component.ImproveMainUIC")).m2024Ujhhgtgfeyxiexzf();
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "onScrollStateChangedInMain";
         c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f10481Ujhhgtgfeyxiexzf = 3;
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf());
         C2319Ujhhgtgfeyxiexzf c2319Ujhhgtgfeyxiexzf = f7584Ujhhgtgfeyxiexzf;

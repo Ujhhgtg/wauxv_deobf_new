@@ -33,7 +33,7 @@ public final class C3398Ujhhgtgfeyxiexzf {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928247699670566282L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sb.append("ChatInfoProto(senderId=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f10609Ujhhgtgfeyxiexzf, ')');
     }
 }

@@ -34,15 +34,15 @@ public final class EnumC2262Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        String str = MagicFactory.get(4928281385099068810L, strArr);
+        String str = "MAIN_PROCESS";
         C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
         EnumC2262Ujhhgtgfeyxiexzf enumC2262Ujhhgtgfeyxiexzf = new EnumC2262Ujhhgtgfeyxiexzf(str, 0, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf());
         f7343Ujhhgtgfeyxiexzf = enumC2262Ujhhgtgfeyxiexzf;
-        EnumC2262Ujhhgtgfeyxiexzf enumC2262Ujhhgtgfeyxiexzf2 = new EnumC2262Ujhhgtgfeyxiexzf(MagicFactory.get(4928281329264493962L, strArr), 1, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + MagicFactory.get(4928281415163839882L, strArr));
+        EnumC2262Ujhhgtgfeyxiexzf enumC2262Ujhhgtgfeyxiexzf2 = new EnumC2262Ujhhgtgfeyxiexzf("APP_BRAND_0", 1, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + ":appbrand0");
         f7344Ujhhgtgfeyxiexzf = enumC2262Ujhhgtgfeyxiexzf2;
-        EnumC2262Ujhhgtgfeyxiexzf enumC2262Ujhhgtgfeyxiexzf3 = new EnumC2262Ujhhgtgfeyxiexzf(MagicFactory.get(4928281505358153098L, strArr), 2, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + MagicFactory.get(4928281591257499018L, strArr));
+        EnumC2262Ujhhgtgfeyxiexzf enumC2262Ujhhgtgfeyxiexzf3 = new EnumC2262Ujhhgtgfeyxiexzf("APP_BRAND_1", 2, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + ":appbrand1");
         f7345Ujhhgtgfeyxiexzf = enumC2262Ujhhgtgfeyxiexzf3;
-        f7346Ujhhgtgfeyxiexzf = new EnumC2262Ujhhgtgfeyxiexzf[]{enumC2262Ujhhgtgfeyxiexzf, enumC2262Ujhhgtgfeyxiexzf2, enumC2262Ujhhgtgfeyxiexzf3, new EnumC2262Ujhhgtgfeyxiexzf(MagicFactory.get(4928281544012858762L, strArr), 3, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + MagicFactory.get(4928280530400576906L, strArr)), new EnumC2262Ujhhgtgfeyxiexzf(MagicFactory.get(4928280620594890122L, strArr), 4, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + MagicFactory.get(4928280569055282570L, strArr)), new EnumC2262Ujhhgtgfeyxiexzf(MagicFactory.get(4928280659249595786L, strArr), 5, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + MagicFactory.get(4928280745148941706L, strArr))};
+        f7346Ujhhgtgfeyxiexzf = new EnumC2262Ujhhgtgfeyxiexzf[]{enumC2262Ujhhgtgfeyxiexzf, enumC2262Ujhhgtgfeyxiexzf2, enumC2262Ujhhgtgfeyxiexzf3, new EnumC2262Ujhhgtgfeyxiexzf("APP_BRAND_2", 3, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + ":appbrand2"), new EnumC2262Ujhhgtgfeyxiexzf("APP_BRAND_3", 4, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + ":appbrand3"), new EnumC2262Ujhhgtgfeyxiexzf("APP_BRAND_4", 5, C0580Ujhhgtgfeyxiexzf.m1856Ujhhgtgfeyxiexzf() + ":appbrand4")};
     }
 
     public EnumC2262Ujhhgtgfeyxiexzf(String str, int i, String str2) {

@@ -23,10 +23,10 @@ public final class C0503Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2430Ujhhgtgfeyxiexzf = new C0503Ujhhgtgfeyxiexzf(MagicFactory.get(4928845932780324234L, strArr));
-        f2431Ujhhgtgfeyxiexzf = MagicFactory.get(4928845374434575754L, strArr);
-        f2432Ujhhgtgfeyxiexzf = MagicFactory.get(4928845498988627338L, strArr);
-        f2433Ujhhgtgfeyxiexzf = MagicFactory.get(4928845477513790858L, strArr);
+        f2430Ujhhgtgfeyxiexzf = new C0503Ujhhgtgfeyxiexzf("MsgListHideOrShowHook");
+        f2431Ujhhgtgfeyxiexzf = "菜单";
+        f2432Ujhhgtgfeyxiexzf = "消息列表";
+        f2433Ujhhgtgfeyxiexzf = "为主页菜单添加消息列表隐藏或者显示";
     }
 
     @Override // p000.InterfaceC0604Ujhhgtgfeyxiexzf
@@ -36,7 +36,7 @@ public final class C0503Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             return C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;
         }
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        return AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(new C0592Ujhhgtgfeyxiexzf(R.id.MenuItem_Home_MsgListHide, MagicFactory.get(4928846113168950666L, strArr), R.drawable.ic_menu_hide_24dp, new C0478Ujhhgtgfeyxiexzf(1)), new C0592Ujhhgtgfeyxiexzf(R.id.MenuItem_Home_MsgListShow, MagicFactory.get(4928846091694114186L, strArr), R.drawable.ic_menu_show_24dp, new C0478Ujhhgtgfeyxiexzf(2)));
+        return AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(new C0592Ujhhgtgfeyxiexzf(R.id.MenuItem_Home_MsgListHide, "列表隐藏", R.drawable.ic_menu_hide_24dp, new C0478Ujhhgtgfeyxiexzf(1)), new C0592Ujhhgtgfeyxiexzf(R.id.MenuItem_Home_MsgListShow, "列表显示", R.drawable.ic_menu_show_24dp, new C0478Ujhhgtgfeyxiexzf(2)));
     }
 
     @Override // p000.AbstractC2059Ujhhgtgfeyxiexzf

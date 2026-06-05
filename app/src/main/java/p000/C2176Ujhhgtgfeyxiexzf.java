@@ -80,21 +80,21 @@ public final class C2176Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928182596556293514L, strArr));
+        sb.append("gj1Proto(charge_flag=");
         sb.append(this.f7051Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928181539994338698L, strArr));
+        sb.append(", is_purchased=");
         sb.append(this.f7052Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928181608713815434L, strArr));
+        sb.append(", purchase_user_count=");
         sb.append(this.f7053Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928181784807474570L, strArr));
+        sb.append(", purchase_heat=");
         sb.append(this.f7054Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928181849231984010L, strArr));
+        sb.append(", unit_price_in_wecoin=");
         sb.append(this.f7055Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928181883591722378L, strArr));
+        sb.append(", need_get_payment_items=");
         sb.append(this.f7056Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928182046800479626L, strArr));
+        sb.append(", prompt_wording=");
         sb.append(this.f7057Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928181007418393994L, strArr));
+        sb.append(", charge_is_member_free=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f7058Ujhhgtgfeyxiexzf, ')');
     }
 }

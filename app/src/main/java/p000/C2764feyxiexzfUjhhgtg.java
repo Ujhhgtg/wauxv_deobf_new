@@ -35,10 +35,10 @@ public final class C2764feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8752Ujhhgtgfeyxiexzf = new C2764feyxiexzfUjhhgtg(MagicFactory.get(4928798228578567562L, strArr));
-        f8753Ujhhgtgfeyxiexzf = MagicFactory.get(4928800457666594186L, strArr);
-        f8754Ujhhgtgfeyxiexzf = MagicFactory.get(4928800444781692298L, strArr);
-        f8755Ujhhgtgfeyxiexzf = MagicFactory.get(4928800556450841994L, strArr);
+        f8752Ujhhgtgfeyxiexzf = new C2764feyxiexzfUjhhgtg("ChatToolbarHook");
+        f8753Ujhhgtgfeyxiexzf = "界面";
+        f8754Ujhhgtgfeyxiexzf = "聊天工具栏";
+        f8755Ujhhgtgfeyxiexzf = "聊天输入框顶部显示工具栏，可能串台";
         f8756Ujhhgtgfeyxiexzf = new C2771Ujhhgtgfeyxiexzf(16);
         f8757Ujhhgtgfeyxiexzf = true;
     }
@@ -100,7 +100,7 @@ public final class C2764feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
             if (C0580Ujhhgtgfeyxiexzf.m1859Ujhhgtgfeyxiexzf()) {
                 iM2752Ujhhgtgfeyxiexzf = C2893Ujhhgtgfeyxiexzf.f9169Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf();
             } else {
-                iM2752Ujhhgtgfeyxiexzf = AbstractC1245feyxiexzfUjhhgtg.m2752Ujhhgtgfeyxiexzf(AbstractC1265feyxiexzfUjhhgtg.m2830Ujhhgtgfeyxiexzf(EnumC2264feyxiexzfUjhhgtg.f7372Ujhhgtgfeyxiexzf) ? MagicFactory.get(4928799650212742538L, strArr) : MagicFactory.get(4928799633032873354L, strArr));
+                iM2752Ujhhgtgfeyxiexzf = AbstractC1245feyxiexzfUjhhgtg.m2752Ujhhgtgfeyxiexzf(AbstractC1265feyxiexzfUjhhgtg.m2830Ujhhgtgfeyxiexzf(EnumC2264feyxiexzfUjhhgtg.f7372Ujhhgtgfeyxiexzf) ? "bl9" : "b4u");
             }
             LinearLayout linearLayout = (LinearLayout) frameLayout.findViewById(iM2752Ujhhgtgfeyxiexzf);
             if (linearLayout != null) {
@@ -113,14 +113,14 @@ public final class C2764feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
                     Class<LinearLayout> clsM5159Ujhhgtgfeyxiexzf = AbstractC3593Ujhhgtgfeyxiexzf.m5159Ujhhgtgfeyxiexzf(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(LinearLayout.class));
                     throw new IllegalStateException(("This view's parent is not a type of " + (clsM5159Ujhhgtgfeyxiexzf != null ? clsM5159Ujhhgtgfeyxiexzf : LinearLayout.class) + " or is null.").toString());
                 }
-                if (linearLayout2.findViewWithTag(MagicFactory.get(4928797335225369994L, strArr)) == null) {
+                if (linearLayout2.findViewWithTag("ChatToolbar") == null) {
                     AbstractC3590Ujhhgtgfeyxiexzf.m5133Ujhhgtgfeyxiexzf(linearLayout2.getContext());
                     Context context = linearLayout2.getContext();
                     f8752Ujhhgtgfeyxiexzf.getClass();
                     C2765Ujhhgtgfeyxiexzf c2765Ujhhgtgfeyxiexzf = new C2765Ujhhgtgfeyxiexzf();
                     RecyclerView recyclerView = new RecyclerView(context, null);
                     recyclerView.setLayoutParams(new LinearLayout.LayoutParams(-1, -2));
-                    recyclerView.setTag(MagicFactory.get(4928797421124715914L, strArr));
+                    recyclerView.setTag("ChatToolbar");
                     recyclerView.setLayoutManager(new LinearLayoutManager(0));
                     recyclerView.setPadding((int) AbstractC3612feyxiexzfUjhhgtg.m5234Ujhhgtgfeyxiexzf(8, context), (int) AbstractC3612feyxiexzfUjhhgtg.m5234Ujhhgtgfeyxiexzf(8, context), (int) AbstractC3612feyxiexzfUjhhgtg.m5234Ujhhgtgfeyxiexzf(8, context), (int) AbstractC3612feyxiexzfUjhhgtg.m5234Ujhhgtgfeyxiexzf(8, context));
                     recyclerView.setFadingEdgeLength((int) AbstractC3612feyxiexzfUjhhgtg.m5234Ujhhgtgfeyxiexzf(10, context));

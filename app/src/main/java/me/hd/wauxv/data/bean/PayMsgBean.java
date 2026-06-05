@@ -25,7 +25,7 @@ public final class PayMsgBean {
         this.fee = c1395feyxiexzfUjhhgtg.f4901Ujhhgtgfeyxiexzf;
         Integer num = c1395feyxiexzfUjhhgtg.f4905Ujhhgtgfeyxiexzf;
         this.status = num;
-        this.statusDesc = (num != null && num.intValue() == 0) ? MagicFactory.get(4928285349353883018L, strArr) : (num != null && num.intValue() == 1) ? MagicFactory.get(4928285319289111946L, strArr) : (num != null && num.intValue() == 2) ? MagicFactory.get(4928285435253228938L, strArr) : MagicFactory.get(4928285413778392458L, strArr);
+        this.statusDesc = (num != null && num.intValue() == 0) ? "支付中..." : (num != null && num.intValue() == 1) ? "支付成功" : (num != null && num.intValue() == 2) ? "取消支付" : "未知状态";
     }
 
     public final String getDisplayName() {
@@ -59,12 +59,12 @@ public final class PayMsgBean {
     public String toString() {
         JSONObject jSONObject = new JSONObject();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        jSONObject.put(MagicFactory.get(4928285392303555978L, strArr), this.timestamp);
-        jSONObject.put(MagicFactory.get(4928284387281208714L, strArr), this.username);
-        jSONObject.put(MagicFactory.get(4928284348626503050L, strArr), this.displayName);
-        jSONObject.put(MagicFactory.get(4928284434525848970L, strArr), this.fee);
-        jSONObject.put(MagicFactory.get(4928284417345979786L, strArr), this.status);
-        jSONObject.put(MagicFactory.get(4928284524720162186L, strArr), this.statusDesc);
+        jSONObject.put("timestamp", this.timestamp);
+        jSONObject.put("username", this.username);
+        jSONObject.put("displayName", this.displayName);
+        jSONObject.put("fee", this.fee);
+        jSONObject.put("status", this.status);
+        jSONObject.put("statusDesc", this.statusDesc);
         return jSONObject.toString();
     }
 }

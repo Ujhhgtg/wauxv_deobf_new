@@ -80,21 +80,21 @@ public final class C2199feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928152437295941002L, strArr));
+        sb.append("a22Proto(latitudeString=");
         sb.append(this.f7157Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928152604799665546L, strArr));
+        sb.append(", longitudeString=");
         sb.append(this.f7158Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928152660634240394L, strArr));
+        sb.append(", poiName=");
         sb.append(this.f7159Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928152613389600138L, strArr));
+        sb.append(", poiScaleString=");
         sb.append(this.f7160Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928152810958095754L, strArr));
+        sb.append(", address=");
         sb.append(this.f7161Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928152763713455498L, strArr));
+        sb.append(", infoUrl=");
         sb.append(this.f7162Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928152853907768714L, strArr));
+        sb.append(", poiClassifyId=");
         sb.append(this.f7163Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928152918332278154L, strArr));
+        sb.append(", poiCategories=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f7164Ujhhgtgfeyxiexzf, ')');
     }
 }

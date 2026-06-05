@@ -27,10 +27,10 @@ public final class C0973feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3864Ujhhgtgfeyxiexzf = new C0973feyxiexzfUjhhgtg(MagicFactory.get(4928895015666582922L, strArr));
-        f3865Ujhhgtgfeyxiexzf = MagicFactory.get(4928893538197833098L, strArr);
-        f3866Ujhhgtgfeyxiexzf = MagicFactory.get(4928893525312931210L, strArr);
-        f3867Ujhhgtgfeyxiexzf = MagicFactory.get(4928893495248160138L, strArr);
+        f3864Ujhhgtgfeyxiexzf = new C0973feyxiexzfUjhhgtg("RedPacketTotalNumHook");
+        f3865Ujhhgtgfeyxiexzf = "红包";
+        f3866Ujhhgtgfeyxiexzf = "红包个数显示";
+        f3867Ujhhgtgfeyxiexzf = "在普通群聊的红包消息上显示具体个数";
     }
 
     @Override // p000.InterfaceC0599Ujhhgtgfeyxiexzf
@@ -39,14 +39,14 @@ public final class C0973feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
         if (mo1424feyxiexzfUjhhgtg() && msgInfoBean.isGroupChat() && msgInfoBean.isRedBag()) {
             JSONObject jSONObjectM2619Ujhhgtgfeyxiexzf = AbstractC1150feyxiexzfUjhhgtg.m2619Ujhhgtgfeyxiexzf(msgInfoBean.getContent());
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            Object byPath = jSONObjectM2619Ujhhgtgfeyxiexzf.getByPath(MagicFactory.get(4928895058616255882L, strArr));
-            MagicFactory.get(4928894143788221834L, strArr);
-            String queryParameter = Uri.parse(((JSONObject) byPath).getString(MagicFactory.get(4928894392896325002L, strArr))).getQueryParameter(MagicFactory.get(4928894487385605514L, strArr));
+            Object byPath = jSONObjectM2619Ujhhgtgfeyxiexzf.getByPath("msg.appmsg.wcpayinfo");
+            "null cannot be cast to non-null type com.alibaba.fastjson2.JSONObject";
+            String queryParameter = Uri.parse(((JSONObject) byPath).getString("nativeurl")).getQueryParameter("total_num");
             if (queryParameter == null) {
                 return;
             }
             int[] iArr = msgInfoBean.isSend() ? new int[]{4, 0, 0, 1, 2, 0} : new int[]{4, 1, 0, 1, 1, 2, 0};
-            TextView textView = (TextView) AbstractC1896feyxiexzfUjhhgtg.m3231Ujhhgtgfeyxiexzf(view, MagicFactory.get(4928894444435932554L, strArr), Arrays.copyOf(iArr, iArr.length));
+            TextView textView = (TextView) AbstractC1896feyxiexzfUjhhgtg.m3231Ujhhgtgfeyxiexzf(view, "RedPacket.Subtitle", Arrays.copyOf(iArr, iArr.length));
             if (textView == null) {
                 return;
             }

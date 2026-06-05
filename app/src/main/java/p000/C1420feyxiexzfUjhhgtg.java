@@ -31,10 +31,10 @@ public final class C1420feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4989Ujhhgtgfeyxiexzf = new C1420feyxiexzfUjhhgtg(MagicFactory.get(4928386083516843402L, strArr));
-        f4990Ujhhgtgfeyxiexzf = MagicFactory.get(4928386371279652234L, strArr);
-        f4991Ujhhgtgfeyxiexzf = MagicFactory.get(4928386349804815754L, strArr);
-        f4992Ujhhgtgfeyxiexzf = MagicFactory.get(4928386324035011978L, strArr);
+        f4989Ujhhgtgfeyxiexzf = new C1420feyxiexzfUjhhgtg("PluginHook");
+        f4990Ujhhgtgfeyxiexzf = "插件设置";
+        f4991Ujhhgtgfeyxiexzf = "插件总开关";
+        f4992Ujhhgtgfeyxiexzf = "启动时自动加载已启用插件\n相关说明:\n请确认插件安全再进行加载，\n否则造成的后果需自行承担。";
         f4993Ujhhgtgfeyxiexzf = new C1388feyxiexzfUjhhgtg(13);
         f4994Ujhhgtgfeyxiexzf = true;
     }

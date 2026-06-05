@@ -30,10 +30,10 @@ public final class C2334Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7623Ujhhgtgfeyxiexzf = new C2334Ujhhgtgfeyxiexzf(MagicFactory.get(4928458874622576010L, strArr));
-        f7624Ujhhgtgfeyxiexzf = MagicFactory.get(4928458153068070282L, strArr);
-        f7625Ujhhgtgfeyxiexzf = MagicFactory.get(4928458135888201098L, strArr);
-        f7626Ujhhgtgfeyxiexzf = MagicFactory.get(4928458243262383498L, strArr);
+        f7623Ujhhgtgfeyxiexzf = new C2334Ujhhgtgfeyxiexzf("AppBrandAntiSplashAdHook");
+        f7624Ujhhgtgfeyxiexzf = "小程序";
+        f7625Ujhhgtgfeyxiexzf = "禁止开屏广告";
+        f7626Ujhhgtgfeyxiexzf = "阻止小程序启动时加载的五秒全屏广告";
         f7627Ujhhgtgfeyxiexzf = new String[]{EnumC2262Ujhhgtgfeyxiexzf.f7344Ujhhgtgfeyxiexzf.f7347Ujhhgtgfeyxiexzf, EnumC2262Ujhhgtgfeyxiexzf.f7345Ujhhgtgfeyxiexzf.f7347Ujhhgtgfeyxiexzf};
         f7628Ujhhgtgfeyxiexzf = true;
     }

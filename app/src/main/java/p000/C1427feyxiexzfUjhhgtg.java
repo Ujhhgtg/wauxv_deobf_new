@@ -65,8 +65,8 @@ public final /* synthetic */ class C1427feyxiexzfUjhhgtg implements InterfaceC35
                 C1071feyxiexzfUjhhgtg c1071feyxiexzfUjhhgtg = (C1071feyxiexzfUjhhgtg) this.f5021Ujhhgtgfeyxiexzf;
                 C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg = (C3678feyxiexzfUjhhgtg) obj;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf = MagicFactory.get(4928887525243618698L, strArr);
-                String str = MagicFactory.get(4928887503768782218L, strArr);
+                c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf = "搜索好友";
+                String str = "好友";
                 ArrayList arrayListM5175Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5175Ujhhgtgfeyxiexzf();
                 ArrayList arrayList = new ArrayList(AbstractC2851feyxiexzfUjhhgtg.m4190Ujhhgtgfeyxiexzf(arrayListM5175Ujhhgtgfeyxiexzf, 10));
                 Iterator it = arrayListM5175Ujhhgtgfeyxiexzf.iterator();
@@ -76,7 +76,7 @@ public final /* synthetic */ class C1427feyxiexzfUjhhgtg implements InterfaceC35
                     if (!zHasNext) {
                         c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf(str, arrayList);
                         c3678feyxiexzfUjhhgtg.f11696Ujhhgtgfeyxiexzf = R.drawable.ic_contact_confirm_24dp;
-                        String str2 = MagicFactory.get(4928887748581918090L, strArr);
+                        String str2 = "点赞";
                         InterfaceC3553feyxiexzfUjhhgtg interfaceC3553feyxiexzfUjhhgtg = new InterfaceC3553feyxiexzfUjhhgtg() { // from class: 上海高中ᛱ谢子非ᛱᛱfeyxiexzfᛱᛳᛴ要点脸能不能ᛱUjhhgtgᛱᛲ
                             @Override // p000.InterfaceC3553feyxiexzfUjhhgtg
                             /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛳᛲ */
@@ -110,10 +110,10 @@ public final /* synthetic */ class C1427feyxiexzfUjhhgtg implements InterfaceC35
                                 }
                                 Set setM4255Ujhhgtgfeyxiexzf = AbstractC2856feyxiexzfUjhhgtg.m4255Ujhhgtgfeyxiexzf(arrayList3);
                                 if (!setM4256Ujhhgtgfeyxiexzf.isEmpty()) {
-                                    setM4255Ujhhgtgfeyxiexzf.add(j3 + '|' + AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(setM4256Ujhhgtgfeyxiexzf, MagicFactory.get(4928887551013422474L, strArr2), null, null, null, 62));
+                                    setM4255Ujhhgtgfeyxiexzf.add(j3 + '|' + AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(setM4256Ujhhgtgfeyxiexzf, ";", null, null, null, 62));
                                 }
                                 c1068feyxiexzfUjhhgtg.m4628Ujhhgtgfeyxiexzf(setM4255Ujhhgtgfeyxiexzf);
-                                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928887542423487882L, strArr2));
+                                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "已点赞");
                                 return Boolean.FALSE;
                             }
                         };
@@ -124,15 +124,15 @@ public final /* synthetic */ class C1427feyxiexzfUjhhgtg implements InterfaceC35
                         String wxid = friendInfo.getWxid();
                         StringBuilder sb2 = new StringBuilder();
                         String nickname = friendInfo.getNickname();
-                        if ((AbstractC1119feyxiexzfUjhhgtg.m2589feyxiexzfUjhhgtg(C0964feyxiexzfUjhhgtg.m2464Ujhhgtgfeyxiexzf(new C0964feyxiexzfUjhhgtg(MagicFactory.get(4928887628322833802L, strArr)), nickname)) > 3 ? nickname : null) != null) {
-                            sb2.append(MagicFactory.get(4928887598258062730L, strArr));
+                        if ((AbstractC1119feyxiexzfUjhhgtg.m2589feyxiexzfUjhhgtg(C0964feyxiexzfUjhhgtg.m2464Ujhhgtgfeyxiexzf(new C0964feyxiexzfUjhhgtg("\r\n|\r|\n"), nickname)) > 3 ? nickname : null) != null) {
+                            sb2.append("已过滤此昵称...");
                         } else {
                             String str3 = nickname.length() > 8 ? nickname : null;
                             if (str3 != null) {
                                 String strSubstring = str3.substring(0, 8);
-                                MagicFactory.get(4928887692747343242L, strArr);
+                                "substring(...)";
                                 sb2.append(strSubstring);
-                                sb2.append(MagicFactory.get(4928887765761787274L, strArr));
+                                sb2.append("...");
                                 sb = sb2;
                             } else {
                                 sb = null;

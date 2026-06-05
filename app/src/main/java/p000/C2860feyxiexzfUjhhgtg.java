@@ -49,11 +49,11 @@ public final /* synthetic */ class C2860feyxiexzfUjhhgtg implements InterfaceC35
                 }
                 StringBuilder sb = new StringBuilder();
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                sb.append(MagicFactory.get(4928901651391055242L, strArr));
+                sb.append("已转发");
                 sb.append(arrayList.size());
-                sb.append(MagicFactory.get(4928900672138511754L, strArr));
+                sb.append("条语音至");
                 sb.append(list.size());
-                sb.append(MagicFactory.get(4928900650663675274L, strArr));
+                sb.append("个会话");
                 AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb.toString());
                 return Boolean.FALSE;
         }

@@ -36,6 +36,6 @@ public final class C1813Ujhhgtgfeyxiexzf {
     }
 
     public final String toString() {
-        return MagicFactory.get(4928625798526535050L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf) + this.f6104Ujhhgtgfeyxiexzf + ')';
+        return "wq1Proto(audience_is_member=" + this.f6104Ujhhgtgfeyxiexzf + ')';
     }
 }

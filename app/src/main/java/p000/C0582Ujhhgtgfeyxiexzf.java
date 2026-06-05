@@ -47,10 +47,10 @@ public final class C0582Ujhhgtgfeyxiexzf {
         if (!z2) {
             try {
                 f2616Ujhhgtgfeyxiexzf.getClass();
-                AbstractC1937feyxiexzfUjhhgtg.f6409Ujhhgtgfeyxiexzf = MagicFactory.get(4928227363000419722L, strArr);
+                AbstractC1937feyxiexzfUjhhgtg.f6409Ujhhgtgfeyxiexzf = "WAuxiliary";
                 AbstractC3594Ujhhgtgfeyxiexzf.f11192Ujhhgtgfeyxiexzf = false;
                 if (!C2283feyxiexzfUjhhgtg.f7479Ujhhgtgfeyxiexzf && C2283feyxiexzfUjhhgtg.f7484Ujhhgtgfeyxiexzf != null) {
-                    C2290feyxiexzfUjhhgtg.m3497Ujhhgtgfeyxiexzf(4, MagicFactory.get(4928227556273948042L, strArr), null);
+                    C2290feyxiexzfUjhhgtg.m3497Ujhhgtgfeyxiexzf(4, "You cannot load a hooker in \"onInit\" or \"onXposedEvent\" method! Aborted", null);
                     return;
                 }
                 C0561Ujhhgtgfeyxiexzf c0561Ujhhgtgfeyxiexzf2 = new C0561Ujhhgtgfeyxiexzf(11);
@@ -64,7 +64,7 @@ public final class C0582Ujhhgtgfeyxiexzf {
                 c0919feyxiexzfUjhhgtg = c0919feyxiexzfUjhhgtg3;
                 Throwable thM2409Ujhhgtgfeyxiexzf = C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg);
                 if (thM2409Ujhhgtgfeyxiexzf != null) {
-                    C2290feyxiexzfUjhhgtg.m3497Ujhhgtgfeyxiexzf(4, MagicFactory.get(4928226697280488842L, strArr), thM2409Ujhhgtgfeyxiexzf);
+                    C2290feyxiexzfUjhhgtg.m3497Ujhhgtgfeyxiexzf(4, "YukiHookAPI try to load hook entry class failed", thM2409Ujhhgtgfeyxiexzf);
                 }
             } catch (Throwable th) {
                 c0919feyxiexzfUjhhgtg = new C0919feyxiexzfUjhhgtg(th);

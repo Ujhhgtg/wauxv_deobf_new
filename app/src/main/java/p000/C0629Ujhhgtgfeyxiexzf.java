@@ -28,9 +28,9 @@ public final class C0629Ujhhgtgfeyxiexzf {
         f2673Ujhhgtgfeyxiexzf = new C0629Ujhhgtgfeyxiexzf();
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2674Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928339766589523338L, strArr), MagicFactory.get(4928339865373771146L, strArr));
+        f2674Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Resource", "Group");
         f2675Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C3471Ujhhgtgfeyxiexzf(3));
-        f2676Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2663Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 0, MagicFactory.get(4928830419358451082L, strArr), true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2664Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 1, MagicFactory.get(4928830406473549194L, strArr), true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2665Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 2, MagicFactory.get(4928830393588647306L, strArr), true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2666Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 3, MagicFactory.get(4928830518142698890L, strArr), true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2667Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 4, MagicFactory.get(4928830500962829706L, strArr), true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2668Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 5, MagicFactory.get(4928830488077927818L, strArr), true, new String[]{MagicFactory.get(4928830475193025930L, strArr)}));
+        f2676Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2663Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 0, "全部", true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2664Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 1, "群聊", true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2665Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 2, "好友", true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2666Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 3, "公众号", true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2667Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 4, "未读", true, new String[0]), new C0627Ujhhgtgfeyxiexzf(EnumC0628Ujhhgtgfeyxiexzf.f2668Ujhhgtgfeyxiexzf.f2671Ujhhgtgfeyxiexzf, 5, "示例", true, new String[]{"weixin"}));
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ, reason: contains not printable characters */
@@ -48,7 +48,7 @@ public final class C0629Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛴᛳ, reason: contains not printable characters */
     public static List m1907Ujhhgtgfeyxiexzf() {
         Object c0919feyxiexzfUjhhgtg;
-        File file = new File(f2674Ujhhgtgfeyxiexzf, MagicFactory.get(4928775366467650954L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        File file = new File(f2674Ujhhgtgfeyxiexzf, "groupItemsV2.json");
         boolean zExists = file.exists();
         List list = f2676Ujhhgtgfeyxiexzf;
         if (!zExists) {
@@ -85,7 +85,7 @@ public final class C0629Ujhhgtgfeyxiexzf {
             i = i2;
         }
         try {
-            File file = new File(f2674Ujhhgtgfeyxiexzf, MagicFactory.get(4928775366467650954L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+            File file = new File(f2674Ujhhgtgfeyxiexzf, "groupItemsV2.json");
             File parentFile = file.getParentFile();
             if (parentFile != null) {
                 parentFile.mkdirs();

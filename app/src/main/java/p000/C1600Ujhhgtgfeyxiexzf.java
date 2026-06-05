@@ -60,13 +60,13 @@ public final class C1600Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928094511072019850L, strArr));
+        sb.append("lh1Proto(members=");
         sb.append(this.f5487Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928094571201561994L, strArr));
+        sb.append(", reward_wecoin=");
         sb.append(this.f5488Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928094635626071434L, strArr));
+        sb.append(", result=");
         sb.append(this.f5489Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928093630603724170L, strArr));
+        sb.append(", count=");
         sb.append(this.f5490Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

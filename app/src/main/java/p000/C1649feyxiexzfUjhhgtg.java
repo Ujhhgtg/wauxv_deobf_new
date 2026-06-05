@@ -37,7 +37,7 @@ public final class C1649feyxiexzfUjhhgtg {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928558135611753866L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sb.append("vc1Proto(number=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f5605Ujhhgtgfeyxiexzf, ')');
     }
 }

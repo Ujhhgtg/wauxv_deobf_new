@@ -40,11 +40,11 @@ public final class C2755feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928794229964014986L, strArr));
+        sb.append("MenuBean(iconId=");
         sb.append(this.f8728Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928794294388524426L, strArr));
+        sb.append(", title=");
         sb.append(this.f8729Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928794255733818762L, strArr));
+        sb.append(", onClick=");
         sb.append(this.f8730Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

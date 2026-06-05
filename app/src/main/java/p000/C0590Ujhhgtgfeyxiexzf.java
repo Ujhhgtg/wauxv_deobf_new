@@ -24,10 +24,10 @@ public final class C0590Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2627Ujhhgtgfeyxiexzf = new C0590Ujhhgtgfeyxiexzf(MagicFactory.get(4928382969665553802L, strArr));
-        f2628Ujhhgtgfeyxiexzf = MagicFactory.get(4928387028409648522L, strArr);
-        f2629Ujhhgtgfeyxiexzf = MagicFactory.get(4928387015524746634L, strArr);
-        f2630Ujhhgtgfeyxiexzf = MagicFactory.get(4928387122898929034L, strArr);
+        f2627Ujhhgtgfeyxiexzf = new C0590Ujhhgtgfeyxiexzf("HideSelfQRCodeTVHook");
+        f2628Ujhhgtgfeyxiexzf = "净化";
+        f2629Ujhhgtgfeyxiexzf = "隐藏名片文本";
+        f2630Ujhhgtgfeyxiexzf = "将微信中我的二维码名片相关文本隐藏";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

@@ -102,27 +102,27 @@ public final class C1569Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928091697868440970L, strArr));
+        sb.append("ko1Proto(tab_id=");
         sb.append(this.f5394Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928091762292950410L, strArr));
+        sb.append(", tab_name=");
         sb.append(this.f5395Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928091848192296330L, strArr));
+        sb.append(", prefech_this_tab=");
         sb.append(this.f5396Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928091899731903882L, strArr));
+        sb.append(", prefech_next_tab=");
         sb.append(this.f5397Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928090851759883658L, strArr));
+        sb.append(", prefech_pre_tab=");
         sb.append(this.f5398Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928090907594458506L, strArr));
+        sb.append(", play_voice=");
         sb.append(this.f5399Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928090984903869834L, strArr));
+        sb.append(", sub_tab_list=");
         sb.append(this.f5400Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928091053623346570L, strArr));
+        sb.append(", tab_scene=");
         sb.append(this.f5401Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928091135227725194L, strArr));
+        sb.append(", object_id=");
         sb.append(this.f5402Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928091216832103818L, strArr));
+        sb.append(", icon_url=");
         sb.append(this.f5403Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928091302731449738L, strArr));
+        sb.append(", icon_wording=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5404Ujhhgtgfeyxiexzf, ')');
     }
 }

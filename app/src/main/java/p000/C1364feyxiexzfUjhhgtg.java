@@ -69,13 +69,13 @@ public final class C1364feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928403452364588426L, strArr));
+        sb.append("PanelEmojiGroupConfig(dirName=");
         sb.append(this.f4844Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928403594098509194L, strArr));
+        sb.append(", title=");
         sb.append(this.f4845Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928402593371129226L, strArr));
+        sb.append(", order=");
         sb.append(this.f4846Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928402554716423562L, strArr));
+        sb.append(", enable=");
         sb.append(this.f4847Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

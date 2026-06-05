@@ -25,10 +25,10 @@ public final class C0497Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2421Ujhhgtgfeyxiexzf = new C0497Ujhhgtgfeyxiexzf(MagicFactory.get(4928841951345640842L, strArr));
-        f2422Ujhhgtgfeyxiexzf = MagicFactory.get(4928842110259430794L, strArr);
-        f2423Ujhhgtgfeyxiexzf = MagicFactory.get(4928842097374528906L, strArr);
-        f2424Ujhhgtgfeyxiexzf = MagicFactory.get(4928842075899692426L, strArr);
+        f2421Ujhhgtgfeyxiexzf = new C0497Ujhhgtgfeyxiexzf("MsgForwardSnsHook");
+        f2422Ujhhgtgfeyxiexzf = "菜单";
+        f2423Ujhhgtgfeyxiexzf = "消息转圈";
+        f2424Ujhhgtgfeyxiexzf = "支持将部分消息转发到朋友圈编辑发表";
     }
 
     @Override // p000.InterfaceC0617Ujhhgtgfeyxiexzf
@@ -37,13 +37,13 @@ public final class C0497Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         if (mo1424feyxiexzfUjhhgtg()) {
             if (msgInfoBean.isText()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_ForwardSns, MagicFactory.get(4928842011475182986L, strArr), R.drawable.ic_menu_forward_24dp, new C0221Ujhhgtgfeyxiexzf(12)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_ForwardSns, "转圈", R.drawable.ic_menu_forward_24dp, new C0221Ujhhgtgfeyxiexzf(12)));
             }
             if (msgInfoBean.isImage()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_ForwardSns, MagicFactory.get(4928842136029234570L, strArr), R.drawable.ic_menu_forward_24dp, new C0221Ujhhgtgfeyxiexzf(13)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_ForwardSns, "转圈", R.drawable.ic_menu_forward_24dp, new C0221Ujhhgtgfeyxiexzf(13)));
             }
             if (msgInfoBean.isVideo()) {
-                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_ForwardSns, MagicFactory.get(4928842123144332682L, strArr), R.drawable.ic_menu_forward_24dp, new C0221Ujhhgtgfeyxiexzf(14)));
+                return Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_ForwardSns, "转圈", R.drawable.ic_menu_forward_24dp, new C0221Ujhhgtgfeyxiexzf(14)));
             }
         }
         return C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;

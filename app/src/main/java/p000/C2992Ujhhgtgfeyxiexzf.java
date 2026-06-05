@@ -49,15 +49,15 @@ public final class C2992Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928377819999765898L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928377914489046410L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9297Ujhhgtgfeyxiexzf = new C2992Ujhhgtgfeyxiexzf(MagicFactory.get(4928374993911285130L, strArr));
+        f9297Ujhhgtgfeyxiexzf = new C2992Ujhhgtgfeyxiexzf("AccountInfoCenterHook");
         f9298Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(0));
         f9299Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(1));
         f9300Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(2));
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f9301Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928339616265667978L, strArr), MagicFactory.get(4928339715049915786L, strArr));
-        f9302Ujhhgtgfeyxiexzf = MagicFactory.get(4928377871539373450L, strArr);
-        f9303Ujhhgtgfeyxiexzf = MagicFactory.get(4928377996093425034L, strArr);
-        f9304Ujhhgtgfeyxiexzf = MagicFactory.get(4928377970323621258L, strArr);
+        f9301Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Resource", "Font");
+        f9302Ujhhgtgfeyxiexzf = "美化";
+        f9303Ujhhgtgfeyxiexzf = "资料卡居中";
+        f9304Ujhhgtgfeyxiexzf = "居中我界面资料卡，与隐藏微信号冲突";
         f9305Ujhhgtgfeyxiexzf = new C2976feyxiexzfUjhhgtg(0);
         f9306Ujhhgtgfeyxiexzf = true;
     }
@@ -98,7 +98,7 @@ public final class C2992Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛱUjhhgtgᛱᛳᛴ */
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-        C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(View.class)}, 1, AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928374074788283786L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))).m2024Ujhhgtgfeyxiexzf());
+        C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(View.class)}, 1, AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.pluginsdk.ui.preference.AccountInfoPreference")).m2024Ujhhgtgfeyxiexzf());
         C2992Ujhhgtgfeyxiexzf c2992Ujhhgtgfeyxiexzf = f9297Ujhhgtgfeyxiexzf;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c2992Ujhhgtgfeyxiexzf.m2996Ujhhgtgfeyxiexzf(c0393Ujhhgtgfeyxiexzf, 1);
         c2992Ujhhgtgfeyxiexzf.m1844feyxiexzfUjhhgtg(c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf, new C2976feyxiexzfUjhhgtg(1));

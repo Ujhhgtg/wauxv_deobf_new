@@ -23,10 +23,10 @@ public final class C2721feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8669Ujhhgtgfeyxiexzf = new C2721feyxiexzfUjhhgtg(MagicFactory.get(4928865573665768842L, strArr));
-        f8670Ujhhgtgfeyxiexzf = MagicFactory.get(4928868528603268490L, strArr);
-        f8671Ujhhgtgfeyxiexzf = MagicFactory.get(4928868653157320074L, strArr);
-        f8672Ujhhgtgfeyxiexzf = MagicFactory.get(4928868605912679818L, strArr);
+        f8669Ujhhgtgfeyxiexzf = new C2721feyxiexzfUjhhgtg("ChatFavVoiceFilterForwardHook");
+        f8670Ujhhgtgfeyxiexzf = "收藏";
+        f8671Ujhhgtgfeyxiexzf = "聊天收藏语音过滤转发";
+        f8672Ujhhgtgfeyxiexzf = "在我的收藏搜索列表中不过滤语音消息";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf
@@ -41,8 +41,8 @@ public final class C2721feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928865719694656906L, strArr))).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928865955917858186L, strArr);
+        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.fav.ui.FavSelectUI")).m2024Ujhhgtgfeyxiexzf();
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "onCreate";
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf());
         C2721feyxiexzfUjhhgtg c2721feyxiexzfUjhhgtg = f8669Ujhhgtgfeyxiexzf;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c2721feyxiexzfUjhhgtg.m2996Ujhhgtgfeyxiexzf(c0393Ujhhgtgfeyxiexzf, 1);

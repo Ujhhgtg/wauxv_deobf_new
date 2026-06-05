@@ -8,5 +8,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C2433Ujhhgtgfeyxiexzf extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛴᛳ, reason: contains not printable characters */
-    public static final C2433Ujhhgtgfeyxiexzf f7872Ujhhgtgfeyxiexzf = new C2433Ujhhgtgfeyxiexzf(MagicFactory.get(4928386534488409482L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), null, C3310feyxiexzfUjhhgtg.f10347Ujhhgtgfeyxiexzf, false, 0, 0.0f, 0, 122);
+    public static final C2433Ujhhgtgfeyxiexzf f7872Ujhhgtgfeyxiexzf = new C2433Ujhhgtgfeyxiexzf("AntiNotificationHook.ValChatRoom", null, C3310feyxiexzfUjhhgtg.f10347Ujhhgtgfeyxiexzf, false, 0, 0.0f, 0, 122);
 }

@@ -27,12 +27,12 @@ public final class C1066feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4127Ujhhgtgfeyxiexzf = new C1066feyxiexzfUjhhgtg(MagicFactory.get(4928897974899049866L, strArr));
+        f4127Ujhhgtgfeyxiexzf = new C1066feyxiexzfUjhhgtg("SnsBackPreviewSaveHook");
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f4128Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928340346410108298L, strArr), MagicFactory.get(4928340307755402634L, strArr));
-        f4129Ujhhgtgfeyxiexzf = MagicFactory.get(4928883075657500042L, strArr);
-        f4130Ujhhgtgfeyxiexzf = MagicFactory.get(4928883058477630858L, strArr);
-        f4131Ujhhgtgfeyxiexzf = MagicFactory.get(4928883161556845962L, strArr);
+        f4128Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Download", "Sns");
+        f4129Ujhhgtgfeyxiexzf = "朋友圈";
+        f4130Ujhhgtgfeyxiexzf = "朋友圈封面保存";
+        f4131Ujhhgtgfeyxiexzf = "支持长按朋友圈封面保存到本地存储中";
         f4132Ujhhgtgfeyxiexzf = new C1003feyxiexzfUjhhgtg(11);
     }
 
@@ -40,10 +40,10 @@ public final class C1066feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛱUjhhgtgᛱᛳᛴ */
     public final void mo1074feyxiexzfUjhhgtg() {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        for (String str : AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(MagicFactory.get(4928898013553755530L, strArr), MagicFactory.get(4928898305611531658L, strArr), MagicFactory.get(4928897498157680010L, strArr))) {
+        for (String str : AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.sns.cover.preview.SnsImageBackPreview", "com.tencent.mm.plugin.sns.cover.preview.SnsVideoBackPreview", "com.tencent.mm.plugin.finder.view.snscover.SnsFinderVideoBackPreview")) {
             int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(str)).m2024Ujhhgtgfeyxiexzf();
-            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928897751560750474L, strArr);
+            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "loadCover";
             C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf());
             C1066feyxiexzfUjhhgtg c1066feyxiexzfUjhhgtg = f4127Ujhhgtgfeyxiexzf;
             C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c1066feyxiexzfUjhhgtg.m2996Ujhhgtgfeyxiexzf(c0393Ujhhgtgfeyxiexzf, 1);

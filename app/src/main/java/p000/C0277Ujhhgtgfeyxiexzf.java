@@ -43,12 +43,12 @@ public final class C0277Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f1690Ujhhgtgfeyxiexzf = new InterfaceC0150Ujhhgtgfeyxiexzf[]{new C0863feyxiexzfUjhhgtg(C0277Ujhhgtgfeyxiexzf.class, MagicFactory.get(4928851073856177546L, strArr), MagicFactory.get(4928850043064026506L, strArr))};
-        f1689Ujhhgtgfeyxiexzf = new C0277Ujhhgtgfeyxiexzf(MagicFactory.get(4928848926372529546L, strArr));
-        f1692Ujhhgtgfeyxiexzf = AbstractC2842feyxiexzfUjhhgtg.m4172Ujhhgtgfeyxiexzf(MagicFactory.get(4928850292172129674L, strArr), new C2975feyxiexzfUjhhgtg(26), 2);
-        f1693Ujhhgtgfeyxiexzf = MagicFactory.get(4928850511215461770L, strArr);
-        f1694Ujhhgtgfeyxiexzf = MagicFactory.get(4928850498330559882L, strArr);
-        f1695Ujhhgtgfeyxiexzf = MagicFactory.get(4928850476855723402L, strArr);
+        f1690Ujhhgtgfeyxiexzf = new InterfaceC0150Ujhhgtgfeyxiexzf[]{new C0863feyxiexzfUjhhgtg(C0277Ujhhgtgfeyxiexzf.class, "RedirectUIClass", "getRedirectUIClass()Ljava/lang/Class;")};
+        f1689Ujhhgtgfeyxiexzf = new C0277Ujhhgtgfeyxiexzf("LocationHook");
+        f1692Ujhhgtgfeyxiexzf = AbstractC2842feyxiexzfUjhhgtg.m4172Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.location.ui.RedirectUI", new C2975feyxiexzfUjhhgtg(26), 2);
+        f1693Ujhhgtgfeyxiexzf = "辅助";
+        f1694Ujhhgtgfeyxiexzf = "虚拟定位";
+        f1695Ujhhgtgfeyxiexzf = "将腾讯定位SDK结果虚拟为指定经纬度";
         f1696Ujhhgtgfeyxiexzf = new C0760Ujhhgtgfeyxiexzf(24);
         f1697Ujhhgtgfeyxiexzf = new String[]{EnumC2262Ujhhgtgfeyxiexzf.f7343Ujhhgtgfeyxiexzf.f7347Ujhhgtgfeyxiexzf, EnumC2262Ujhhgtgfeyxiexzf.f7344Ujhhgtgfeyxiexzf.f7347Ujhhgtgfeyxiexzf};
         f1698Ujhhgtgfeyxiexzf = true;
@@ -75,7 +75,7 @@ public final class C0277Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         InterfaceC0150Ujhhgtgfeyxiexzf interfaceC0150Ujhhgtgfeyxiexzf = f1690Ujhhgtgfeyxiexzf[0];
         C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(f1692Ujhhgtgfeyxiexzf.m3605Ujhhgtgfeyxiexzf()).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928847908465280394L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "onActivityResult";
         Class cls = Integer.TYPE;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = m2996Ujhhgtgfeyxiexzf((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Intent.class)}, 3, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf), 1);
         C0760Ujhhgtgfeyxiexzf c0760Ujhhgtgfeyxiexzf = new C0760Ujhhgtgfeyxiexzf(25);

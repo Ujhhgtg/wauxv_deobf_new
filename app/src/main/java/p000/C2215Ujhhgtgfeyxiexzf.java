@@ -31,19 +31,19 @@ public final class C2215Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7196Ujhhgtgfeyxiexzf = new C2215Ujhhgtgfeyxiexzf(MagicFactory.get(4928840954913228170L, strArr));
+        f7196Ujhhgtgfeyxiexzf = new C2215Ujhhgtgfeyxiexzf("VoiceSaveHook");
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f7197Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928340290575533450L, strArr), MagicFactory.get(4928340389359781258L, strArr));
-        f7198Ujhhgtgfeyxiexzf = MagicFactory.get(4928841165366625674L, strArr);
-        f7199Ujhhgtgfeyxiexzf = MagicFactory.get(4928841152481723786L, strArr);
-        f7200Ujhhgtgfeyxiexzf = MagicFactory.get(4928841131006887306L, strArr);
+        f7197Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Download", "Voice");
+        f7198Ujhhgtgfeyxiexzf = "菜单";
+        f7199Ujhhgtgfeyxiexzf = "语音保存";
+        f7200Ujhhgtgfeyxiexzf = "支持将语音消息自由保存到本地存储中";
         f7201Ujhhgtgfeyxiexzf = new C2208Ujhhgtgfeyxiexzf(3);
     }
 
     @Override // p000.InterfaceC0617Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛴᛱfeyxiexzfᛱᛳ */
     public final List mo1791Ujhhgtgfeyxiexzf(MsgInfoBean msgInfoBean) {
-        return (mo1424feyxiexzfUjhhgtg() && msgInfoBean.isVoice()) ? Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_VoiceSave, MagicFactory.get(4928841032222639498L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), R.drawable.ic_menu_save_24dp, new C0221Ujhhgtgfeyxiexzf(29))) : C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;
+        return (mo1424feyxiexzfUjhhgtg() && msgInfoBean.isVoice()) ? Collections.singletonList(new C2767Ujhhgtgfeyxiexzf(R.id.MenuItem_Chat_VoiceSave, "保存", R.drawable.ic_menu_save_24dp, new C0221Ujhhgtgfeyxiexzf(29))) : C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;
     }
 
     @Override // p000.AbstractC2059Ujhhgtgfeyxiexzf

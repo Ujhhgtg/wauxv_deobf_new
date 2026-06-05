@@ -15,10 +15,10 @@ public final /* synthetic */ class C0619Ujhhgtgfeyxiexzf implements InterfaceC35
         C0619Ujhhgtgfeyxiexzf c0619Ujhhgtgfeyxiexzf = new C0619Ujhhgtgfeyxiexzf();
         f2648Ujhhgtgfeyxiexzf = c0619Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928598680103028106L, strArr), c0619Ujhhgtgfeyxiexzf, 2);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928514301175530890L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.proto.other.GmailList", c0619Ujhhgtgfeyxiexzf, 2);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("count", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(1, 5));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928514412844680586L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("list", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(2, 5));
         descriptor = c1412feyxiexzfUjhhgtg;
     }

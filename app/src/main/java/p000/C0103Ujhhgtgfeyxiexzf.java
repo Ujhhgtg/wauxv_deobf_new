@@ -51,15 +51,15 @@ public final class C0103Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928346711551640970L, strArr));
+        sb.append("TabHolder(root=");
         sb.append(this.f1213Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928346780271117706L, strArr));
+        sb.append(", icon=");
         sb.append(this.f1214Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928346745911379338L, strArr));
+        sb.append(", label=");
         sb.append(this.f1215Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928346844695627146L, strArr));
+        sb.append(", activeIconRes=");
         sb.append(this.f1216Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928346909120136586L, strArr));
+        sb.append(", inactiveIconRes=");
         return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb, this.f1217Ujhhgtgfeyxiexzf, ')');
     }
 }

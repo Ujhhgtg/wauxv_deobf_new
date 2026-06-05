@@ -24,10 +24,10 @@ public final class C2456feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7979Ujhhgtgfeyxiexzf = new C2456feyxiexzfUjhhgtg(MagicFactory.get(4928353647923824010L, strArr));
-        f7980Ujhhgtgfeyxiexzf = MagicFactory.get(4928354128960161162L, strArr);
-        f7981Ujhhgtgfeyxiexzf = MagicFactory.get(4928354116075259274L, strArr);
-        f7982Ujhhgtgfeyxiexzf = MagicFactory.get(4928353123937813898L, strArr);
+        f7979Ujhhgtgfeyxiexzf = new C2456feyxiexzfUjhhgtg("AutoEnableForceNotifyHook");
+        f7980Ujhhgtgfeyxiexzf = "聊天";
+        f7981Ujhhgtgfeyxiexzf = "自动启用提醒";
+        f7982Ujhhgtgfeyxiexzf = "始终启用好友聊天设置页中的消息提醒";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

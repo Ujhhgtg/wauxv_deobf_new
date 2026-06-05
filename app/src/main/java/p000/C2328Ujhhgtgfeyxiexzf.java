@@ -26,10 +26,10 @@ public final class C2328Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7600Ujhhgtgfeyxiexzf = new C2328Ujhhgtgfeyxiexzf(MagicFactory.get(4928896961286768010L, strArr));
-        f7601Ujhhgtgfeyxiexzf = MagicFactory.get(4928896677818926474L, strArr);
-        f7602Ujhhgtgfeyxiexzf = MagicFactory.get(4928896660639057290L, strArr);
-        f7603Ujhhgtgfeyxiexzf = MagicFactory.get(4928896763718272394L, strArr);
+        f7600Ujhhgtgfeyxiexzf = new C2328Ujhhgtgfeyxiexzf("AntiSnsDeleteHook");
+        f7601Ujhhgtgfeyxiexzf = "朋友圈";
+        f7602Ujhhgtgfeyxiexzf = "拦截朋友圈删除";
+        f7603Ujhhgtgfeyxiexzf = "拦截朋友晚上偷偷删除的美图及其热评";
         f7604Ujhhgtgfeyxiexzf = new C2320Ujhhgtgfeyxiexzf(1);
     }
 
@@ -92,11 +92,11 @@ public final class C2328Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
             int i = -1;
             byte[] bArrM3652feyxiexzfUjhhgtg = null;
-            if (str.equals(MagicFactory.get(4928897021416310154L, strArr))) {
-                if (AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7391Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf), Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7392Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf), Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7393Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf), Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7394Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf), Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7396Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf)).contains(contentValues.get(MagicFactory.get(4928896987056571786L, strArr))) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get(MagicFactory.get(4928897103020688778L, strArr)), 0)) {
-                    byte[] bArr = (byte[]) contentValues.get(MagicFactory.get(4928897055776048522L, strArr));
-                    contentValues.remove(MagicFactory.get(4928897158855263626L, strArr));
-                    String str2 = MagicFactory.get(4928897249049576842L, strArr);
+            if (str.equals("SnsInfo")) {
+                if (AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7391Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf), Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7392Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf), Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7393Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf), Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7394Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf), Integer.valueOf(EnumC2265feyxiexzfUjhhgtg.f7396Ujhhgtgfeyxiexzf.f7398Ujhhgtgfeyxiexzf)).contains(contentValues.get("type")) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get("sourceType"), 0)) {
+                    byte[] bArr = (byte[]) contentValues.get("content");
+                    contentValues.remove("sourceType");
+                    String str2 = "content";
                     String strM4623Ujhhgtgfeyxiexzf = C2327Ujhhgtgfeyxiexzf.f7599Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf();
                     if (strM4623Ujhhgtgfeyxiexzf != null && bArr != null) {
                         int length = bArr.length;
@@ -118,10 +118,10 @@ public final class C2328Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                             bArrM3652feyxiexzfUjhhgtg = bArr;
                         } else {
                             byte[] bytes = strM4623Ujhhgtgfeyxiexzf.concat(" ").getBytes(charset);
-                            MagicFactory.get(4928896381466183050L, strArr);
+                            "getBytes(...)";
                             byte[] bArrM3652feyxiexzfUjhhgtg2 = AbstractC2391Ujhhgtgfeyxiexzf.m3652feyxiexzfUjhhgtg(AbstractC2391Ujhhgtgfeyxiexzf.m3648feyxiexzfUjhhgtg(0, i3, bArr), m3529feyxiexzfUjhhgtg(bytes.length + iIntValue2));
                             byte[] bytes2 = strM4623Ujhhgtgfeyxiexzf.concat(" ").getBytes(charset);
-                            MagicFactory.get(4928896458775594378L, strArr);
+                            "getBytes(...)";
                             bArrM3652feyxiexzfUjhhgtg = AbstractC2391Ujhhgtgfeyxiexzf.m3652feyxiexzfUjhhgtg(AbstractC2391Ujhhgtgfeyxiexzf.m3652feyxiexzfUjhhgtg(bArrM3652feyxiexzfUjhhgtg2, bytes2), AbstractC2391Ujhhgtgfeyxiexzf.m3648feyxiexzfUjhhgtg(i4, bArr.length, bArr));
                         }
                     }
@@ -130,10 +130,10 @@ public final class C2328Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                 }
                 return;
             }
-            if (str.equals(MagicFactory.get(4928897214689838474L, strArr)) && !C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get(MagicFactory.get(4928897304884151690L, strArr)), 1) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get(MagicFactory.get(4928897283409315210L, strArr)), 1)) {
-                byte[] bArr2 = (byte[]) contentValues.get(MagicFactory.get(4928896269797033354L, strArr));
-                contentValues.remove(MagicFactory.get(4928896351401411978L, strArr));
-                String str3 = MagicFactory.get(4928896299861804426L, strArr);
+            if (str.equals("SnsComment") && !C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get("type"), 1) && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(contentValues.get("commentflag"), 1)) {
+                byte[] bArr2 = (byte[]) contentValues.get("curActionBuf");
+                contentValues.remove("commentflag");
+                String str3 = "curActionBuf";
                 String strM4623Ujhhgtgfeyxiexzf2 = C2327Ujhhgtgfeyxiexzf.f7599Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf();
                 if (strM4623Ujhhgtgfeyxiexzf2 != null && bArr2 != null) {
                     int length2 = bArr2.length;
@@ -155,10 +155,10 @@ public final class C2328Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                         bArrM3652feyxiexzfUjhhgtg = bArr2;
                     } else {
                         byte[] bytes3 = strM4623Ujhhgtgfeyxiexzf2.concat(" ").getBytes(charset2);
-                        MagicFactory.get(4928896536085005706L, strArr);
+                        "getBytes(...)";
                         byte[] bArrM3652feyxiexzfUjhhgtg3 = AbstractC2391Ujhhgtgfeyxiexzf.m3652feyxiexzfUjhhgtg(AbstractC2391Ujhhgtgfeyxiexzf.m3648feyxiexzfUjhhgtg(0, i6, bArr2), m3529feyxiexzfUjhhgtg(bytes3.length + iIntValue4));
                         byte[] bytes4 = strM4623Ujhhgtgfeyxiexzf2.concat(" ").getBytes(charset2);
-                        MagicFactory.get(4928896613394417034L, strArr);
+                        "getBytes(...)";
                         bArrM3652feyxiexzfUjhhgtg = AbstractC2391Ujhhgtgfeyxiexzf.m3652feyxiexzfUjhhgtg(AbstractC2391Ujhhgtgfeyxiexzf.m3652feyxiexzfUjhhgtg(bArrM3652feyxiexzfUjhhgtg3, bytes4), AbstractC2391Ujhhgtgfeyxiexzf.m3648feyxiexzfUjhhgtg(i7, bArr2.length, bArr2));
                     }
                 }

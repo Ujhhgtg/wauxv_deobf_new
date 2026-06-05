@@ -80,21 +80,21 @@ public final class C2092Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928145436499248522L, strArr));
+        sb.append("b22Proto(topic=");
         sb.append(this.f6856Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928145505218725258L, strArr));
+        sb.append(", topicType=");
         sb.append(this.f6857Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928145586823103882L, strArr));
+        sb.append(", iconUrl=");
         sb.append(this.f6858Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928145539578463626L, strArr));
+        sb.append(", desc=");
         sb.append(this.f6859Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928145642657678730L, strArr));
+        sb.append(", location=");
         sb.append(this.f6860Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928145728557024650L, strArr));
+        sb.append(", patMusicId=");
         sb.append(this.f6861Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928145668427482506L, strArr));
+        sb.append(", event=");
         sb.append(this.f6862Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928145767211730314L, strArr));
+        sb.append(", feedId=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6863Ujhhgtgfeyxiexzf, ')');
     }
 }

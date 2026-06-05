@@ -31,10 +31,10 @@ public final class C0522Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2470Ujhhgtgfeyxiexzf = new C0522Ujhhgtgfeyxiexzf(MagicFactory.get(4928401322060809610L, strArr));
-        f2471Ujhhgtgfeyxiexzf = MagicFactory.get(4928400475952252298L, strArr);
-        f2472Ujhhgtgfeyxiexzf = MagicFactory.get(4928400463067350410L, strArr);
-        f2473Ujhhgtgfeyxiexzf = MagicFactory.get(4928400433002579338L, strArr);
+        f2470Ujhhgtgfeyxiexzf = new C0522Ujhhgtgfeyxiexzf("MsgLeftSwipeHook");
+        f2471Ujhhgtgfeyxiexzf = "聊天";
+        f2472Ujhhgtgfeyxiexzf = "消息左滑引用";
+        f2473Ujhhgtgfeyxiexzf = "多选消息时可点击空白处以便正常选中";
     }
 
     @Override // p000.InterfaceC0618Ujhhgtgfeyxiexzf

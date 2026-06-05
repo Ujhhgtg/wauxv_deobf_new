@@ -29,10 +29,10 @@ public final class C0946feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3792Ujhhgtgfeyxiexzf = new C0946feyxiexzfUjhhgtg(MagicFactory.get(4928361275785741706L, strArr));
-        f3793Ujhhgtgfeyxiexzf = MagicFactory.get(4928347304257127818L, strArr);
-        f3794Ujhhgtgfeyxiexzf = MagicFactory.get(4928347291372225930L, strArr);
-        f3795Ujhhgtgfeyxiexzf = MagicFactory.get(4928347407336342922L, strArr);
+        f3792Ujhhgtgfeyxiexzf = new C0946feyxiexzfUjhhgtg("RoundAvatarHook");
+        f3793Ujhhgtgfeyxiexzf = "美化";
+        f3794Ujhhgtgfeyxiexzf = "圆形头像";
+        f3795Ujhhgtgfeyxiexzf = "可自定义微信全局头像渲染的圆形弧度";
         f3796Ujhhgtgfeyxiexzf = new C0914feyxiexzfUjhhgtg(7);
         f3797Ujhhgtgfeyxiexzf = true;
     }

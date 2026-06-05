@@ -51,7 +51,7 @@ public final /* synthetic */ class C1457feyxiexzfUjhhgtg implements InterfaceC25
         switch (i) {
             case 0:
                 Object obj2 = objArr[0];
-                MagicFactory.get(4928479026609128842L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type kotlin.String";
                 String str = (String) obj2;
                 final String canonicalPath = (new File(str).isAbsolute() ? new File(str) : new File(c1414feyxiexzfUjhhgtg.f4963Ujhhgtgfeyxiexzf, str)).getCanonicalPath();
                 RunnableC0026Ujhhgtgfeyxiexzf runnableC0026Ujhhgtgfeyxiexzf = c1435feyxiexzfUjhhgtg.f5033Ujhhgtgfeyxiexzf;
@@ -92,7 +92,7 @@ public final /* synthetic */ class C1457feyxiexzfUjhhgtg implements InterfaceC25
                 return c1943Ujhhgtgfeyxiexzf;
             case 1:
                 Object obj3 = objArr[0];
-                MagicFactory.get(4928422972990948746L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type kotlin.String";
                 String str2 = (String) obj3;
                 String canonicalPath2 = (new File(str2).isAbsolute() ? new File(str2) : new File(c1414feyxiexzfUjhhgtg.f4963Ujhhgtgfeyxiexzf, str2)).getCanonicalPath();
                 RunnableC0026Ujhhgtgfeyxiexzf runnableC0026Ujhhgtgfeyxiexzf2 = c1435feyxiexzfUjhhgtg.f5033Ujhhgtgfeyxiexzf;
@@ -109,11 +109,11 @@ public final /* synthetic */ class C1457feyxiexzfUjhhgtg implements InterfaceC25
             case 2:
                 Object obj4 = objArr[0];
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                MagicFactory.get(4928423166264477066L, strArr);
+                "null cannot be cast to non-null type kotlin.String";
                 String str3 = (String) obj4;
                 String canonicalPath3 = (new File(str3).isAbsolute() ? new File(str3) : new File(c1414feyxiexzfUjhhgtg.f4963Ujhhgtgfeyxiexzf, str3)).getCanonicalPath();
                 StringBuilder sbM2707Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(str3);
-                sbM2707Ujhhgtgfeyxiexzf.append(MagicFactory.get(4928424214236497290L, strArr));
+                sbM2707Ujhhgtgfeyxiexzf.append(".bshs");
                 try {
                     c1435feyxiexzfUjhhgtg.f5033Ujhhgtgfeyxiexzf.m335Ujhhgtgfeyxiexzf(canonicalPath3, sbM2707Ujhhgtgfeyxiexzf.toString(), c1435feyxiexzfUjhhgtg.f5035Ujhhgtgfeyxiexzf);
                     c0919feyxiexzfUjhhgtg = c1943Ujhhgtgfeyxiexzf;
@@ -121,13 +121,13 @@ public final /* synthetic */ class C1457feyxiexzfUjhhgtg implements InterfaceC25
                     c0919feyxiexzfUjhhgtg = new C0919feyxiexzfUjhhgtg(th);
                 }
                 if (C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg) != null) {
-                    c1435feyxiexzfUjhhgtg.f5032Ujhhgtgfeyxiexzf.m2925Ujhhgtgfeyxiexzf(MagicFactory.get(4928459875349955978L, strArr));
+                    c1435feyxiexzfUjhhgtg.f5032Ujhhgtgfeyxiexzf.m2925Ujhhgtgfeyxiexzf("compileSnapshot Failed");
                 }
                 return c1943Ujhhgtgfeyxiexzf;
             case 3:
                 Object obj5 = objArr[0];
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                MagicFactory.get(4928422397465331082L, strArr2);
+                "null cannot be cast to non-null type kotlin.String";
                 String str4 = (String) obj5;
                 String canonicalPath4 = (new File(str4).isAbsolute() ? new File(str4) : new File(c1414feyxiexzfUjhhgtg.f4963Ujhhgtgfeyxiexzf, str4)).getCanonicalPath();
                 try {
@@ -139,7 +139,7 @@ public final /* synthetic */ class C1457feyxiexzfUjhhgtg implements InterfaceC25
                         c0919feyxiexzfUjhhgtg2 = runnableC0026Ujhhgtgfeyxiexzf3.m338Ujhhgtgfeyxiexzf(fileInputStream, secretKeySpec, fileM341Ujhhgtgfeyxiexzf2.getName());
                         fileInputStream.close();
                         if (C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg2) != null) {
-                            c1435feyxiexzfUjhhgtg.f5032Ujhhgtgfeyxiexzf.m2925Ujhhgtgfeyxiexzf(MagicFactory.get(4928460051443615114L, strArr2));
+                            c1435feyxiexzfUjhhgtg.f5032Ujhhgtgfeyxiexzf.m2925Ujhhgtgfeyxiexzf("evalSnapshot Failed");
                         }
                         return c1943Ujhhgtgfeyxiexzf;
                     } catch (Throwable th2) {
@@ -152,7 +152,7 @@ public final /* synthetic */ class C1457feyxiexzfUjhhgtg implements InterfaceC25
                 break;
             default:
                 Object obj6 = objArr[0];
-                MagicFactory.get(4928422758242583946L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type kotlin.String";
                 String str5 = (String) obj6;
                 final String canonicalPath5 = (new File(str5).isAbsolute() ? new File(str5) : new File(c1414feyxiexzfUjhhgtg.f4963Ujhhgtgfeyxiexzf, str5)).getCanonicalPath();
                 RunnableC0026Ujhhgtgfeyxiexzf runnableC0026Ujhhgtgfeyxiexzf4 = c1435feyxiexzfUjhhgtg.f5033Ujhhgtgfeyxiexzf;

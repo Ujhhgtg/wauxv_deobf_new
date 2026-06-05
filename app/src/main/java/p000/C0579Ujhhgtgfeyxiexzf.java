@@ -39,7 +39,7 @@ public final class C0579Ujhhgtgfeyxiexzf implements Iterator {
                 throw th;
             }
         } catch (IOException e) {
-            MagicFactory.get(4928810233012159882L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+            "t == null";
             throw e;
         }
     }
@@ -63,7 +63,7 @@ public final class C0579Ujhhgtgfeyxiexzf implements Iterator {
                         ZipEntry entry = zipFile.getEntry(strM1863Ujhhgtgfeyxiexzf);
                         if (entry != null) {
                             InputStream inputStream = zipFile.getInputStream(entry);
-                            MagicFactory.get(4928811147840193930L, strArr);
+                            "is == null";
                             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                             byte[] bArr2 = new byte[4096];
                             while (true) {
@@ -100,7 +100,7 @@ public final class C0579Ujhhgtgfeyxiexzf implements Iterator {
                         throw th4;
                     }
                 } catch (IOException e) {
-                    MagicFactory.get(4928810233012159882L, strArr);
+                    "t == null";
                     throw e;
                 }
             } else {

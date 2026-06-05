@@ -59,6 +59,6 @@ public abstract class AbstractC1896feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛴᛳ, reason: contains not printable characters */
     public static View m3232Ujhhgtgfeyxiexzf(ViewGroup viewGroup, int[] iArr) {
-        return m3231Ujhhgtgfeyxiexzf(viewGroup, MagicFactory.get(4928239079671203210L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), iArr);
+        return m3231Ujhhgtgfeyxiexzf(viewGroup, "", iArr);
     }
 }

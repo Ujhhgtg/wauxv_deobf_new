@@ -54,18 +54,18 @@ public final class C1369feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928404882588697994L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928404994257847690L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4850Ujhhgtgfeyxiexzf = new C1369feyxiexzfUjhhgtg(MagicFactory.get(4928402902608774538L, strArr));
+        f4850Ujhhgtgfeyxiexzf = new C1369feyxiexzfUjhhgtg("PanelEmojiHook");
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f4851Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928339693575079306L, strArr), MagicFactory.get(4928339792359327114L, strArr));
+        f4851Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Resource", "Panel");
         f4852Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C0478Ujhhgtgfeyxiexzf(8));
         f4853Ujhhgtgfeyxiexzf = new ArrayList();
-        f4854Ujhhgtgfeyxiexzf = MagicFactory.get(4928404972783011210L, strArr);
-        f4855Ujhhgtgfeyxiexzf = MagicFactory.get(4928404959898109322L, strArr);
-        f4856Ujhhgtgfeyxiexzf = MagicFactory.get(4928405067272291722L, strArr);
+        f4854Ujhhgtgfeyxiexzf = "聊天";
+        f4855Ujhhgtgfeyxiexzf = "面板本地表情";
+        f4856Ujhhgtgfeyxiexzf = "为聊天面板的表情分组添加本地表情包";
         f4857Ujhhgtgfeyxiexzf = new C1269feyxiexzfUjhhgtg(25);
         f4858Ujhhgtgfeyxiexzf = new C1269feyxiexzfUjhhgtg(26);
         f4859Ujhhgtgfeyxiexzf = true;
-        f4860Ujhhgtgfeyxiexzf = AbstractC2391Ujhhgtgfeyxiexzf.m3654feyxiexzfUjhhgtg(new String[]{MagicFactory.get(4928405127401833866L, strArr), MagicFactory.get(4928405110221964682L, strArr), MagicFactory.get(4928405093042095498L, strArr), MagicFactory.get(4928405209006212490L, strArr), MagicFactory.get(4928405191826343306L, strArr)});
+        f4860Ujhhgtgfeyxiexzf = AbstractC2391Ujhhgtgfeyxiexzf.m3654feyxiexzfUjhhgtg(new String[]{"png", "jpg", "jpeg", "gif", "webp"});
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛳᛴᛱUjhhgtgᛱᛲ, reason: contains not printable characters */
@@ -103,7 +103,7 @@ public final class C1369feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
                             String name = file2.getName();
                             int iM2633feyxiexzfUjhhgtg = AbstractC1152feyxiexzfUjhhgtg.m2633feyxiexzfUjhhgtg(name, '.', 0, 6);
                             String lowerCase = (iM2633feyxiexzfUjhhgtg == -1 ? "" : name.substring(iM2633feyxiexzfUjhhgtg + 1, name.length())).toLowerCase(Locale.ROOT);
-                            MagicFactory.get(4928402975623218570L, strArr);
+                            "toLowerCase(...)";
                             if (f4860Ujhhgtgfeyxiexzf.contains(lowerCase)) {
                                 arrayList.add(file);
                                 break;
@@ -128,7 +128,7 @@ public final class C1369feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
                 throw null;
             }
             File file3 = (File) obj;
-            arrayList2.add(new C1364feyxiexzfUjhhgtg(file3.getName(), C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(file3.getName(), MagicFactory.get(4928403040047728010L, strArr)) ? MagicFactory.get(4928406450251761034L, strArr) : file3.getName(), i, true));
+            arrayList2.add(new C1364feyxiexzfUjhhgtg(file3.getName(), C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(file3.getName(), "emoji") ? "面板表情" : file3.getName(), i, true));
             i = i2;
         }
         if (list2.isEmpty()) {
@@ -221,7 +221,7 @@ public final class C1369feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
                     String name = file.getName();
                     int iM2633feyxiexzfUjhhgtg = AbstractC1152feyxiexzfUjhhgtg.m2633feyxiexzfUjhhgtg(name, '.', 0, 6);
                     String lowerCase = (iM2633feyxiexzfUjhhgtg == -1 ? "" : name.substring(iM2633feyxiexzfUjhhgtg + 1, name.length())).toLowerCase(Locale.ROOT);
-                    MagicFactory.get(4928406428776924554L, strArr);
+                    "toLowerCase(...)";
                     if (f4860Ujhhgtgfeyxiexzf.contains(lowerCase)) {
                         arrayList2.add(file);
                     }
@@ -238,7 +238,7 @@ public final class C1369feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
                     Object objM4785feyxiexzfUjhhgtg = C3287Ujhhgtgfeyxiexzf.m4785feyxiexzfUjhhgtg(strM4786feyxiexzfUjhhgtg);
                     C3280Ujhhgtgfeyxiexzf.f10300Ujhhgtgfeyxiexzf.getClass();
                     AbstractC1791feyxiexzfUjhhgtg.m3154feyxiexzfUjhhgtg(C3277Ujhhgtgfeyxiexzf.f10297Ujhhgtgfeyxiexzf).invoke(objM4785feyxiexzfUjhhgtg, null, Boolean.TRUE);
-                    c0919feyxiexzfUjhhgtg = AbstractC1791feyxiexzfUjhhgtg.m3153feyxiexzfUjhhgtg(C1384feyxiexzfUjhhgtg.f4879Ujhhgtgfeyxiexzf).newInstance(objM4785feyxiexzfUjhhgtg, 2, MagicFactory.get(4928406493201433994L, strArr), 0);
+                    c0919feyxiexzfUjhhgtg = AbstractC1791feyxiexzfUjhhgtg.m3153feyxiexzfUjhhgtg(C1384feyxiexzfUjhhgtg.f4879Ujhhgtgfeyxiexzf).newInstance(objM4785feyxiexzfUjhhgtg, 2, "", 0);
                 } catch (Throwable th) {
                     c0919feyxiexzfUjhhgtg = new C0919feyxiexzfUjhhgtg(th);
                 }

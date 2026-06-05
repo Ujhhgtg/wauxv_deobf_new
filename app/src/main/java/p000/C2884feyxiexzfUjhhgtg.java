@@ -16,8 +16,8 @@ public final class C2884feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf i
     public static String m4272feyxiexzfUjhhgtg() {
         Object objInvoke = AbstractC1791feyxiexzfUjhhgtg.m3154feyxiexzfUjhhgtg(C2881Ujhhgtgfeyxiexzf.f9149Ujhhgtgfeyxiexzf).invoke(null, null);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MagicFactory.get(4928259712694093194L, strArr);
-        Object obj = ((Map) objInvoke).get(MagicFactory.get(4928263651179103626L, strArr));
+        "null cannot be cast to non-null type kotlin.collections.Map<*, *>";
+        Object obj = ((Map) objInvoke).get("last_login_alias");
         if (obj instanceof String) {
             return (String) obj;
         }
@@ -28,9 +28,9 @@ public final class C2884feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf i
     public static String m4273feyxiexzfUjhhgtg() {
         Object objInvoke = AbstractC1791feyxiexzfUjhhgtg.m3154feyxiexzfUjhhgtg(C2881Ujhhgtgfeyxiexzf.f9149Ujhhgtgfeyxiexzf).invoke(null, null);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MagicFactory.get(4928259712694093194L, strArr);
-        Object obj = ((Map) objInvoke).get(MagicFactory.get(4928259978982065546L, strArr));
-        MagicFactory.get(4928260021931738506L, strArr);
+        "null cannot be cast to non-null type kotlin.collections.Map<*, *>";
+        Object obj = ((Map) objInvoke).get("login_weixin_username");
+        "null cannot be cast to non-null type kotlin.String";
         return (String) obj;
     }
 

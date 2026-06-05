@@ -44,9 +44,9 @@ public final class C1819Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928601665105298826L, strArr));
+        sb.append("yq5Proto(start_time_ms=");
         sb.append(this.f6119Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928601699465037194L, strArr));
+        sb.append(", end_time_ms=");
         sb.append(this.f6120Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

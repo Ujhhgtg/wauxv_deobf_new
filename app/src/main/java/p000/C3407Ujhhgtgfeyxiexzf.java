@@ -63,17 +63,17 @@ public final class C3407Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928247248699000202L, strArr));
+        sb.append("VoiceInfoProto(duration=");
         sb.append(this.f10618Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928247416202724746L, strArr));
+        sb.append(", fileCacheType=");
         sb.append(this.f10619Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928247480627234186L, strArr));
+        sb.append(", md5Checksum=");
         sb.append(this.f10620Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928246454130050442L, strArr));
+        sb.append(", fileSize=");
         sb.append(this.f10621Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928246540029396362L, strArr));
+        sb.append(", fileCacheName=");
         sb.append(this.f10622Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928246604453905802L, strArr));
+        sb.append(", filePath=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f10623Ujhhgtgfeyxiexzf, ')');
     }
 }

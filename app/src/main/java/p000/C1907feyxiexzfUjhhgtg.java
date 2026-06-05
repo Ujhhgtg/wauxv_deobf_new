@@ -30,7 +30,7 @@ public final /* synthetic */ class C1907feyxiexzfUjhhgtg implements InterfaceC35
         String str = abstractC2059Ujhhgtgfeyxiexzf.f6767Ujhhgtgfeyxiexzf;
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1246feyxiexzfUjhhgtg.f4593Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf == null) {
-            throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, strArr).toString());
+            throw new IllegalArgumentException("DefaultConfig must be init".toString());
         }
         SharedPreferencesC3515Ujhhgtgfeyxiexzf sharedPreferencesC3515UjhhgtgfeyxiexzfM3941Ujhhgtgfeyxiexzf = c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf();
         boolean z = this.f6369Ujhhgtgfeyxiexzf;
@@ -41,10 +41,10 @@ public final /* synthetic */ class C1907feyxiexzfUjhhgtg implements InterfaceC35
         if (abstractC2059Ujhhgtgfeyxiexzf.mo1482feyxiexzfUjhhgtg()) {
             Context context = ((C0702Ujhhgtgfeyxiexzf) this.f6370Ujhhgtgfeyxiexzf.f6367Ujhhgtgfeyxiexzf).f2880Ujhhgtgfeyxiexzf.getContext();
             StringBuilder sb = new StringBuilder();
-            sb.append(MagicFactory.get(4928462920481768842L, strArr));
+            sb.append("重启 ");
             C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
             sb.append((String) C0580Ujhhgtgfeyxiexzf.f2607Ujhhgtgfeyxiexzf.m4430Ujhhgtgfeyxiexzf(C0580Ujhhgtgfeyxiexzf.f2601Ujhhgtgfeyxiexzf[5]));
-            sb.append(MagicFactory.get(4928462903301899658L, strArr));
+            sb.append(" 生效");
             AbstractC1245feyxiexzfUjhhgtg.m2758Ujhhgtgfeyxiexzf(context, 6, sb.toString());
         }
         return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;

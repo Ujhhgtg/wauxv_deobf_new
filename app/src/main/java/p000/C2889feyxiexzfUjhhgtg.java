@@ -24,10 +24,10 @@ public final class C2889feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9156Ujhhgtgfeyxiexzf = new C2889feyxiexzfUjhhgtg(MagicFactory.get(4928812011128620426L, strArr));
-        f9157Ujhhgtgfeyxiexzf = MagicFactory.get(4928815859419317642L, strArr);
-        f9158Ujhhgtgfeyxiexzf = MagicFactory.get(4928815833649513866L, strArr);
-        f9159Ujhhgtgfeyxiexzf = MagicFactory.get(4928815932433761674L, strArr);
+        f9156Ujhhgtgfeyxiexzf = new C2889feyxiexzfUjhhgtg("CommandProcessorHook");
+        f9157Ujhhgtgfeyxiexzf = "测试/杂项";
+        f9158Ujhhgtgfeyxiexzf = "强开更多命令处理";
+        f9159Ujhhgtgfeyxiexzf = "输入框点击发送时处理隐藏的其他命令";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

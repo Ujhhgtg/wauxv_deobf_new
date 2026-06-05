@@ -71,13 +71,13 @@ public final class C2594feyxiexzfUjhhgtg implements InterfaceC3106Ujhhgtgfeyxiex
         ByteBuffer byteBuffer = this.f8397Ujhhgtgfeyxiexzf;
         ByteBuffer byteBuffer2 = null;
         if (byteBuffer == null) {
-            MagicFactory.get(4928338727207437706L, strArr);
+            "buffer";
             byteBuffer = null;
         }
         int iLimit = byteBuffer.limit();
         ByteBuffer byteBuffer3 = this.f8397Ujhhgtgfeyxiexzf;
         if (byteBuffer3 == null) {
-            MagicFactory.get(4928337735069992330L, strArr);
+            "buffer";
         } else {
             byteBuffer2 = byteBuffer3;
         }

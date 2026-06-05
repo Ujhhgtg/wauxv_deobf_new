@@ -19,7 +19,7 @@ public final class C1321feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf i
         while (it.hasNext()) {
             C1435feyxiexzfUjhhgtg c1435feyxiexzfUjhhgtgM2963Ujhhgtgfeyxiexzf = AbstractC1453feyxiexzfUjhhgtg.m2963Ujhhgtgfeyxiexzf((C1414feyxiexzfUjhhgtg) it.next());
             if (c1435feyxiexzfUjhhgtgM2963Ujhhgtgfeyxiexzf != null) {
-                c1435feyxiexzfUjhhgtgM2963Ujhhgtgfeyxiexzf.m2928Ujhhgtgfeyxiexzf(MagicFactory.get(4928460223242306954L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), msgInfoBean);
+                c1435feyxiexzfUjhhgtgM2963Ujhhgtgfeyxiexzf.m2928Ujhhgtgfeyxiexzf("onHandleMsg", msgInfoBean);
             }
         }
     }

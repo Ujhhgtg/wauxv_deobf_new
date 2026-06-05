@@ -51,9 +51,9 @@ public final class C1414feyxiexzfUjhhgtg {
     public C1414feyxiexzfUjhhgtg(File file) {
         this.f4963Ujhhgtgfeyxiexzf = file;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        this.f4964Ujhhgtgfeyxiexzf = new File(file, MagicFactory.get(4928476110326334858L, strArr));
-        this.f4965Ujhhgtgfeyxiexzf = new File(file, MagicFactory.get(4928476204815615370L, strArr));
-        this.f4966Ujhhgtgfeyxiexzf = new File(file, MagicFactory.get(4928476161865942410L, strArr));
+        this.f4964Ujhhgtgfeyxiexzf = new File(file, "main.java");
+        this.f4965Ujhhgtgfeyxiexzf = new File(file, "info.prop");
+        this.f4966Ujhhgtgfeyxiexzf = new File(file, "readme.md");
         this.f4967Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C1433feyxiexzfUjhhgtg(this, 0));
         String name = file.getName();
         this.f4968Ujhhgtgfeyxiexzf = name;
@@ -63,7 +63,7 @@ public final class C1414feyxiexzfUjhhgtg {
         this.f4972Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C1433feyxiexzfUjhhgtg(this, 4));
         this.f4973Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C1433feyxiexzfUjhhgtg(this, 5));
         StringBuilder sbM2707Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(name);
-        sbM2707Ujhhgtgfeyxiexzf.append(MagicFactory.get(4928475156843595146L, strArr));
+        sbM2707Ujhhgtgfeyxiexzf.append(".enabled");
         this.f4974Ujhhgtgfeyxiexzf = sbM2707Ujhhgtgfeyxiexzf.toString();
         this.f4975Ujhhgtgfeyxiexzf = new C0709Ujhhgtgfeyxiexzf(this);
     }
@@ -79,19 +79,19 @@ public final class C1414feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928475289987581322L, strArr));
+        sb.append("Plugin(pluginDir=");
         sb.append(this.f4963Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928475350117123466L, strArr));
+        sb.append(", id='");
         sb.append(this.f4968Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928475320052352394L, strArr));
+        sb.append("', name='");
         sb.append((String) this.f4969Ujhhgtgfeyxiexzf.getValue());
-        sb.append(MagicFactory.get(4928475414541632906L, strArr));
+        sb.append("', author='");
         sb.append((String) this.f4970Ujhhgtgfeyxiexzf.getValue());
-        sb.append(MagicFactory.get(4928475500440978826L, strArr));
+        sb.append("', version='");
         sb.append((String) this.f4971Ujhhgtgfeyxiexzf.getValue());
-        sb.append(MagicFactory.get(4928475582045357450L, strArr));
+        sb.append("', updateTime='");
         sb.append((String) this.f4972Ujhhgtgfeyxiexzf.getValue());
-        sb.append(MagicFactory.get(4928475650764834186L, strArr));
+        sb.append("', isEnabled=");
         sb.append(m2924Ujhhgtgfeyxiexzf());
         sb.append(')');
         return sb.toString();
@@ -103,7 +103,7 @@ public final class C1414feyxiexzfUjhhgtg {
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getBoolean(this.f4974Ujhhgtgfeyxiexzf, false);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284030798923146L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+        throw new IllegalArgumentException("PluginConfig must be init".toString());
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛴᛳ, reason: contains not printable characters */
@@ -111,20 +111,20 @@ public final class C1414feyxiexzfUjhhgtg {
         ArrayList arrayList = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928475204088235402L, strArr));
+        sb.append("Plugin[");
         sb.append(this.f4968Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928475307167450506L, strArr));
+        sb.append("]: ");
         sb.append((Object) str);
         C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(sb.toString(), null, 14);
         C0709Ujhhgtgfeyxiexzf c0709Ujhhgtgfeyxiexzf = this.f4975Ujhhgtgfeyxiexzf;
-        c0709Ujhhgtgfeyxiexzf.m2022Ujhhgtgfeyxiexzf(new C1425feyxiexzfUjhhgtg(((C1414feyxiexzfUjhhgtg) c0709Ujhhgtgfeyxiexzf.f2944Ujhhgtgfeyxiexzf).f4968Ujhhgtgfeyxiexzf, MagicFactory.get(4928461786610402698L, strArr), String.valueOf(str)));
+        c0709Ujhhgtgfeyxiexzf.m2022Ujhhgtgfeyxiexzf(new C1425feyxiexzfUjhhgtg(((C1414feyxiexzfUjhhgtg) c0709Ujhhgtgfeyxiexzf.f2944Ujhhgtgfeyxiexzf).f4968Ujhhgtgfeyxiexzf, "E", String.valueOf(str)));
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛳᛲᛴ, reason: contains not printable characters */
     public final void m2926Ujhhgtgfeyxiexzf(boolean z) {
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC3085Ujhhgtgfeyxiexzf.f9546Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf == null) {
-            throw new IllegalArgumentException(MagicFactory.get(4928284030798923146L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+            throw new IllegalArgumentException("PluginConfig must be init".toString());
         }
         c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().putBoolean(this.f4974Ujhhgtgfeyxiexzf, z);
     }

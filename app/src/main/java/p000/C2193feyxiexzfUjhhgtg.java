@@ -86,23 +86,23 @@ public final class C2193feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928621915876099466L, strArr));
+        sb.append("WeappInfoProto(appUserName=");
         sb.append(this.f7126Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928622070494922122L, strArr));
+        sb.append(", pagePath=");
         sb.append(this.f7127Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928622156394268042L, strArr));
+        sb.append(", version=");
         sb.append(this.f7128Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928622109149627786L, strArr));
+        sb.append(", debugMode=");
         sb.append(this.f7129Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928622190754006410L, strArr));
+        sb.append(", shareActionId=");
         sb.append(this.f7130Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928622255178515850L, strArr));
+        sb.append(", isGame=");
         sb.append(this.f7131Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928622349667796362L, strArr));
+        sb.append(", messageExtraData=");
         sb.append(this.f7132Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928622401207403914L, strArr));
+        sb.append(", subType=");
         sb.append(this.f7133Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928621391890089354L, strArr));
+        sb.append(", preloadResources=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f7134Ujhhgtgfeyxiexzf, ')');
     }
 }

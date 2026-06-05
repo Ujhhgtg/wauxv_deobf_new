@@ -103,7 +103,7 @@ public final class C3052Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛳᛲ, reason: contains not printable characters */
     public static final String m4517Ujhhgtgfeyxiexzf(File file) throws NoSuchAlgorithmException, IOException {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MessageDigest messageDigest = MessageDigest.getInstance(MagicFactory.get(4928339968452986250L, strArr));
+        MessageDigest messageDigest = MessageDigest.getInstance("MD5");
         FileInputStream fileInputStream = new FileInputStream(file);
         byte[] bArr = new byte[1024];
         while (true) {
@@ -118,7 +118,7 @@ public final class C3052Ujhhgtgfeyxiexzf {
         StringBuffer stringBuffer = new StringBuffer();
         for (byte b : bArrDigest) {
             String upperCase = Integer.toHexString(b & 255).toUpperCase(Locale.getDefault());
-            MagicFactory.get(4928339921208345994L, strArr);
+            "toUpperCase(...)";
             if (upperCase.length() < 2) {
                 stringBuffer.append(0);
             }

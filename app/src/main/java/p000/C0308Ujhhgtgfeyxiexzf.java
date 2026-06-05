@@ -34,14 +34,14 @@ public final class C0308Ujhhgtgfeyxiexzf extends AbstractC0171Ujhhgtgfeyxiexzf {
         C3082Ujhhgtgfeyxiexzf c3082Ujhhgtgfeyxiexzf = (C3082Ujhhgtgfeyxiexzf) ujhhgtgfeyxiexzf;
         View viewM898Ujhhgtgfeyxiexzf = c3082Ujhhgtgfeyxiexzf.m898Ujhhgtgfeyxiexzf();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MagicFactory.get(4928464921936528778L, strArr);
+        "null cannot be cast to non-null type android.view.ViewGroup";
         ViewGroup viewGroup = (ViewGroup) viewM898Ujhhgtgfeyxiexzf;
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928465076555351434L, strArr));
-        sb.append(MagicFactory.get(4928465171044631946L, strArr));
+        sb.append("免费模块仅供学习\n");
+        sb.append("勿在国内平台传播\n");
         C2625feyxiexzfUjhhgtg.f8453Ujhhgtgfeyxiexzf.getClass();
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(MagicFactory.get(4928464166022284682L, strArr));
+        sb2.append("wxid:");
         C2884feyxiexzfUjhhgtg.f9151Ujhhgtgfeyxiexzf.getClass();
         sb2.append(C2884feyxiexzfUjhhgtg.m4273feyxiexzfUjhhgtg());
         sb2.append('\n');
@@ -52,7 +52,7 @@ public final class C0308Ujhhgtgfeyxiexzf extends AbstractC0171Ujhhgtgfeyxiexzf {
                 strM4272feyxiexzfUjhhgtg = null;
             }
             if (strM4272feyxiexzfUjhhgtg != null) {
-                sb.append(MagicFactory.get(4928464140252480906L, strArr) + strM4272feyxiexzfUjhhgtg + '\n');
+                sb.append("alias:" + strM4272feyxiexzfUjhhgtg + '\n');
             }
         }
         C2244feyxiexzfUjhhgtg c2244feyxiexzfUjhhgtg = new C2244feyxiexzfUjhhgtg(sb.toString(), AbstractC2857Ujhhgtgfeyxiexzf.m4262Ujhhgtgfeyxiexzf(viewGroup.getContext().getColor(R.color.md_theme_primary), 45));

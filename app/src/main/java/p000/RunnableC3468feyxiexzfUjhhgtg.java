@@ -55,12 +55,12 @@ public final /* synthetic */ class RunnableC3468feyxiexzfUjhhgtg implements Runn
                 C1019feyxiexzfUjhhgtg c1019feyxiexzfUjhhgtg = (C1019feyxiexzfUjhhgtg) this.f10773Ujhhgtgfeyxiexzf;
                 Context context = editText.getContext();
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                Object systemService = context.getSystemService(MagicFactory.get(4928451079256933770L, strArr));
-                MagicFactory.get(4928451160861312394L, strArr);
+                Object systemService = context.getSystemService("input_method");
+                "null cannot be cast to non-null type android.view.inputmethod.InputMethodManager";
                 InputMethodManager inputMethodManager = (InputMethodManager) systemService;
                 EditText editText2 = c1019feyxiexzfUjhhgtg.f3994Ujhhgtgfeyxiexzf;
                 if (editText2 == null) {
-                    MagicFactory.get(4928454798698612106L, strArr);
+                    "edtSearchInput";
                     editText2 = null;
                 }
                 inputMethodManager.showSoftInput(editText2, 0);

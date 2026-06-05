@@ -102,7 +102,7 @@ public final class C2224Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                 int i2 = this.f7228Ujhhgtgfeyxiexzf;
                 if (i2 == 0) {
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928822477963920778L, strArr));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "开始下载视频");
                     StringBuilder sb = new StringBuilder();
                     C2221Ujhhgtgfeyxiexzf c2221Ujhhgtgfeyxiexzf = C2221Ujhhgtgfeyxiexzf.f7211Ujhhgtgfeyxiexzf;
                     sb.append(c2221Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf());
@@ -112,9 +112,9 @@ public final class C2224Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                     sb.append(str8);
                     sb.append('-');
                     sb.append(str9);
-                    sb.append(MagicFactory.get(4928822447899149706L, strArr));
+                    sb.append(".tmp.mp4");
                     String string = sb.toString();
-                    str = c2221Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf() + '/' + str7 + '-' + str8 + MagicFactory.get(4928822546683397514L, strArr);
+                    str = c2221Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf() + '/' + str7 + '-' + str8 + ".decrypt.mp4";
                     String str10 = str6 + str5;
                     C0998feyxiexzfUjhhgtg c0998feyxiexzfUjhhgtg = new C0998feyxiexzfUjhhgtg(string, 5);
                     C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
@@ -130,7 +130,7 @@ public final class C2224Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                     str2 = string;
                 } else {
                     if (i2 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(4928821498711377290L, strArr));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     String str11 = this.f7227Ujhhgtgfeyxiexzf;
                     str2 = this.f7226Ujhhgtgfeyxiexzf;
@@ -140,7 +140,7 @@ public final class C2224Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                 }
                 C3382feyxiexzfUjhhgtg.m4888Ujhhgtgfeyxiexzf(str2, str, new BigInteger(str9));
                 ((File) objM1757Ujhhgtgfeyxiexzf).delete();
-                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928822490848822666L, strArr));
+                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "下载视频完成");
                 return c1943Ujhhgtgfeyxiexzf;
             default:
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -148,7 +148,7 @@ public final class C2224Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                 int i3 = this.f7228Ujhhgtgfeyxiexzf;
                 if (i3 == 0) {
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928825883872986506L, strArr2));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "开始下载视频");
                     StringBuilder sb2 = new StringBuilder();
                     C2206Ujhhgtgfeyxiexzf c2206Ujhhgtgfeyxiexzf = C2206Ujhhgtgfeyxiexzf.f7178Ujhhgtgfeyxiexzf;
                     sb2.append(c2206Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf());
@@ -158,9 +158,9 @@ public final class C2224Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                     sb2.append(str8);
                     sb2.append('-');
                     sb2.append(str9);
-                    sb2.append(MagicFactory.get(4928825853808215434L, strArr2));
+                    sb2.append(".tmp.mp4");
                     String string2 = sb2.toString();
-                    str3 = c2206Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf() + '/' + str7 + '-' + str8 + MagicFactory.get(4928825952592463242L, strArr2);
+                    str3 = c2206Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf() + '/' + str7 + '-' + str8 + ".decrypt.mp4";
                     String str12 = str6 + str5;
                     C0998feyxiexzfUjhhgtg c0998feyxiexzfUjhhgtg2 = new C0998feyxiexzfUjhhgtg(string2, 8);
                     C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf2 = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
@@ -176,7 +176,7 @@ public final class C2224Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                     str4 = string2;
                 } else {
                     if (i3 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(4928826004132070794L, strArr2));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     String str13 = this.f7227Ujhhgtgfeyxiexzf;
                     str4 = this.f7226Ujhhgtgfeyxiexzf;
@@ -186,7 +186,7 @@ public final class C2224Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                 }
                 C3382feyxiexzfUjhhgtg.m4888Ujhhgtgfeyxiexzf(str4, str3, new BigInteger(str9));
                 ((File) objM1757Ujhhgtgfeyxiexzf2).delete();
-                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928826034196841866L, strArr2));
+                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "下载视频完成");
                 return c1943Ujhhgtgfeyxiexzf;
         }
     }

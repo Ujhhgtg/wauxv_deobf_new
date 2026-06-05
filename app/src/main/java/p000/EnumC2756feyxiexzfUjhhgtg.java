@@ -34,11 +34,11 @@ public final class EnumC2756feyxiexzfUjhhgtg {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        EnumC2756feyxiexzfUjhhgtg enumC2756feyxiexzfUjhhgtg = new EnumC2756feyxiexzfUjhhgtg(MagicFactory.get(4928794036690486666L, strArr), 0, -1);
+        EnumC2756feyxiexzfUjhhgtg enumC2756feyxiexzfUjhhgtg = new EnumC2756feyxiexzfUjhhgtg("ICON", 0, -1);
         f8731Ujhhgtgfeyxiexzf = enumC2756feyxiexzfUjhhgtg;
-        EnumC2756feyxiexzfUjhhgtg enumC2756feyxiexzfUjhhgtg2 = new EnumC2756feyxiexzfUjhhgtg(MagicFactory.get(4928794152654603658L, strArr), 1, 0);
+        EnumC2756feyxiexzfUjhhgtg enumC2756feyxiexzfUjhhgtg2 = new EnumC2756feyxiexzfUjhhgtg("DEFAULT", 1, 0);
         f8732Ujhhgtgfeyxiexzf = enumC2756feyxiexzfUjhhgtg2;
-        EnumC2756feyxiexzfUjhhgtg enumC2756feyxiexzfUjhhgtg3 = new EnumC2756feyxiexzfUjhhgtg(MagicFactory.get(4928794118294865290L, strArr), 2, 1);
+        EnumC2756feyxiexzfUjhhgtg enumC2756feyxiexzfUjhhgtg3 = new EnumC2756feyxiexzfUjhhgtg("TITLE", 2, 1);
         f8733Ujhhgtgfeyxiexzf = enumC2756feyxiexzfUjhhgtg3;
         f8734Ujhhgtgfeyxiexzf = new EnumC2756feyxiexzfUjhhgtg[]{enumC2756feyxiexzfUjhhgtg, enumC2756feyxiexzfUjhhgtg2, enumC2756feyxiexzfUjhhgtg3};
     }

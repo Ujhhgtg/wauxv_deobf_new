@@ -34,10 +34,10 @@ public final class C0337Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928362431131944330L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928362525621224842L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f1963Ujhhgtgfeyxiexzf = new C0337Ujhhgtgfeyxiexzf(MagicFactory.get(4928359347345425802L, strArr));
-        f1964Ujhhgtgfeyxiexzf = MagicFactory.get(4928362482671551882L, strArr);
-        f1965Ujhhgtgfeyxiexzf = MagicFactory.get(4928362607225603466L, strArr);
-        f1966Ujhhgtgfeyxiexzf = MagicFactory.get(4928362577160832394L, strArr);
+        f1963Ujhhgtgfeyxiexzf = new C0337Ujhhgtgfeyxiexzf("MsgBgColorHook");
+        f1964Ujhhgtgfeyxiexzf = "美化";
+        f1965Ujhhgtgfeyxiexzf = "消息背景颜色";
+        f1966Ujhhgtgfeyxiexzf = "仅支持配置部分消息, 与背景气泡冲突";
         f1967Ujhhgtgfeyxiexzf = new C0317Ujhhgtgfeyxiexzf(10);
     }
 
@@ -47,7 +47,7 @@ public final class C0337Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         int color2;
         view.setPadding(32, 20, 32, 20);
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-        MagicFactory.get(4928359420359869834L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams";
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
         marginLayoutParams.leftMargin = 16;
         marginLayoutParams.rightMargin = 16;

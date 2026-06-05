@@ -45,13 +45,13 @@ public final class C3210feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928596528324412810L, strArr));
+        sb.append("DisturbSetting(nightSetting=");
         sb.append(this.f9904Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928596541209314698L, strArr));
+        sb.append(", nightTime=");
         sb.append(this.f9905Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928599921348576650L, strArr));
+        sb.append(", allDaySetting=");
         sb.append(this.f9906Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928599985773086090L, strArr));
+        sb.append(", allDayTime=");
         sb.append(this.f9907Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

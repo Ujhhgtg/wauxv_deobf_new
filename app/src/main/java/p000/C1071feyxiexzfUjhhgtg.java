@@ -29,10 +29,10 @@ public final class C1071feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4140Ujhhgtgfeyxiexzf = new C1071feyxiexzfUjhhgtg(MagicFactory.get(4928885171601540490L, strArr));
-        f4141Ujhhgtgfeyxiexzf = MagicFactory.get(4928887821596362122L, strArr);
-        f4142Ujhhgtgfeyxiexzf = MagicFactory.get(4928887804416492938L, strArr);
-        f4143Ujhhgtgfeyxiexzf = MagicFactory.get(4928887774351721866L, strArr);
+        f4140Ujhhgtgfeyxiexzf = new C1071feyxiexzfUjhhgtg("SnsFakeLikeHook");
+        f4141Ujhhgtgfeyxiexzf = "朋友圈";
+        f4142Ujhhgtgfeyxiexzf = "朋友圈伪点赞";
+        f4143Ujhhgtgfeyxiexzf = "支持朋友圈自定义消息的好友点赞数量";
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛳᛴᛱUjhhgtgᛱᛲ, reason: contains not printable characters */
@@ -55,13 +55,13 @@ public final class C1071feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
             return C3310feyxiexzfUjhhgtg.f10347Ujhhgtgfeyxiexzf;
         }
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        return AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2639Ujhhgtgfeyxiexzf(str, MagicFactory.get(4928884140809389450L, strArr), str), new String[]{MagicFactory.get(4928884132219454858L, strArr)}));
+        return AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2639Ujhhgtgfeyxiexzf(str, "|", str), new String[]{";"}));
     }
 
     @Override // p000.InterfaceC0744Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ */
     public final List mo2080Ujhhgtgfeyxiexzf() {
-        return !mo1424feyxiexzfUjhhgtg() ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : Collections.singletonList(new C1056feyxiexzfUjhhgtg(R.id.MenuItem_Sns_Like, MagicFactory.get(4928884261068473738L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), new C1073feyxiexzfUjhhgtg(0)));
+        return !mo1424feyxiexzfUjhhgtg() ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : Collections.singletonList(new C1056feyxiexzfUjhhgtg(R.id.MenuItem_Sns_Like, "伪点赞[WA]", new C1073feyxiexzfUjhhgtg(0)));
     }
 
     @Override // p000.InterfaceC0745Ujhhgtgfeyxiexzf
@@ -97,20 +97,20 @@ public final class C1071feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛳᛴᛲᛱUjhhgtgᛱ, reason: contains not printable characters */
     public final void m2552feyxiexzfUjhhgtg(String str, ContentValues contentValues) throws IllegalAccessException {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        if (mo1424feyxiexzfUjhhgtg() && str.equals(MagicFactory.get(4928884226708735370L, strArr))) {
-            Object obj = contentValues.get(MagicFactory.get(4928884329787950474L, strArr));
-            MagicFactory.get(4928884304018146698L, strArr);
+        if (mo1424feyxiexzfUjhhgtg() && str.equals("SnsInfo")) {
+            Object obj = contentValues.get("snsId");
+            "null cannot be cast to non-null type kotlin.Long";
             Set<String> setM2551feyxiexzfUjhhgtg = m2551feyxiexzfUjhhgtg(((Long) obj).longValue());
             if (setM2551feyxiexzfUjhhgtg.isEmpty()) {
                 return;
             }
-            Class clsM2792Ujhhgtgfeyxiexzf = AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928884505881609610L, strArr));
-            Object obj2 = contentValues.get(MagicFactory.get(4928888032049759626L, strArr));
-            MagicFactory.get(4928887997690021258L, strArr);
+            Class clsM2792Ujhhgtgfeyxiexzf = AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.protocal.protobuf.SnsObject");
+            Object obj2 = contentValues.get("attrBuf");
+            "null cannot be cast to non-null type kotlin.ByteArray";
             Object objM4168Ujhhgtgfeyxiexzf = AbstractC2842feyxiexzfUjhhgtg.m4168Ujhhgtgfeyxiexzf(clsM2792Ujhhgtgfeyxiexzf, new Object[0]);
             int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(objM4168Ujhhgtgfeyxiexzf).m2024Ujhhgtgfeyxiexzf();
-            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928888315517601162L, strArr);
+            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "parseFrom";
             c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m4863Ujhhgtgfeyxiexzf(Arrays.copyOf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(byte[].class)}, 1));
             c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1306Ujhhgtgfeyxiexzf();
             ((C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf())).m1649Ujhhgtgfeyxiexzf((byte[]) obj2);
@@ -121,29 +121,29 @@ public final class C1071feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
                 Object objM4168Ujhhgtgfeyxiexzf2 = AbstractC2842feyxiexzfUjhhgtg.m4168Ujhhgtgfeyxiexzf(AbstractC1791feyxiexzfUjhhgtg.m3152feyxiexzfUjhhgtg(C1239feyxiexzfUjhhgtg.f4576Ujhhgtgfeyxiexzf), new Object[0]);
                 int i2 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(objM4168Ujhhgtgfeyxiexzf2).m2021Ujhhgtgfeyxiexzf();
-                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928888272567928202L, strArr);
+                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "d";
                 ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.m4942Ujhhgtgfeyxiexzf())).m4940Ujhhgtgfeyxiexzf(str2);
                 linkedList.push(objM4168Ujhhgtgfeyxiexzf2);
             }
             int size = linkedList.size();
             int i3 = !linkedList.isEmpty() ? 1 : 0;
             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2 = c0709UjhhgtgfeyxiexzfM5192feyxiexzfUjhhgtg.m2021Ujhhgtgfeyxiexzf();
-            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928888263977993610L, strArr);
+            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "LikeUserList";
             ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.m4942Ujhhgtgfeyxiexzf())).m4940Ujhhgtgfeyxiexzf(linkedList);
             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3 = c0709UjhhgtgfeyxiexzfM5192feyxiexzfUjhhgtg.m2021Ujhhgtgfeyxiexzf();
-            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928888345582372234L, strArr);
+            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = "LikeUserListCount";
             ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.m4942Ujhhgtgfeyxiexzf())).m4940Ujhhgtgfeyxiexzf(Integer.valueOf(size));
             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4 = c0709UjhhgtgfeyxiexzfM5192feyxiexzfUjhhgtg.m2021Ujhhgtgfeyxiexzf();
-            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928888405711914378L, strArr);
+            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = "LikeCount";
             ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.m4942Ujhhgtgfeyxiexzf())).m4940Ujhhgtgfeyxiexzf(Integer.valueOf(size));
             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf5 = c0709UjhhgtgfeyxiexzfM5192feyxiexzfUjhhgtg.m2021Ujhhgtgfeyxiexzf();
-            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf5.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928888500201194890L, strArr);
+            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf5.f1479Ujhhgtgfeyxiexzf = "LikeFlag";
             ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf5.m4942Ujhhgtgfeyxiexzf())).m4940Ujhhgtgfeyxiexzf(Integer.valueOf(i3));
             int i4 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(objM4168Ujhhgtgfeyxiexzf).m2024Ujhhgtgfeyxiexzf();
             c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2.f2121feyxiexzfUjhhgtg = AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(byte[].class);
-            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928888461546489226L, strArr);
-            contentValues.put(MagicFactory.get(4928887447934207370L, strArr), (byte[]) ((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2697Ujhhgtgfeyxiexzf(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2)).m1650Ujhhgtgfeyxiexzf(new Object[0]));
+            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "toByteArray";
+            contentValues.put("attrBuf", (byte[]) ((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2697Ujhhgtgfeyxiexzf(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2)).m1650Ujhhgtgfeyxiexzf(new Object[0]));
         }
     }
 

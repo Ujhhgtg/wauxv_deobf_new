@@ -27,7 +27,7 @@ public final class ViewOnLayoutChangeListenerC1110feyxiexzfUjhhgtg implements Vi
         C1019feyxiexzfUjhhgtg c1019feyxiexzfUjhhgtg = this.f4205Ujhhgtgfeyxiexzf;
         ModuleRecyclerView moduleRecyclerView = c1019feyxiexzfUjhhgtg.f3996Ujhhgtgfeyxiexzf;
         if (moduleRecyclerView == null) {
-            MagicFactory.get(4928464488144831882L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+            "recyclerView";
             moduleRecyclerView = null;
         }
         int i9 = this.f4206Ujhhgtgfeyxiexzf;

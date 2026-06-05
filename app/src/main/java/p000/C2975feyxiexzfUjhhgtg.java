@@ -45,7 +45,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
         switch (i) {
             case 0:
                 Object objM4271feyxiexzfUjhhgtg = C2882Ujhhgtgfeyxiexzf.m4271feyxiexzfUjhhgtg(C2882Ujhhgtgfeyxiexzf.f9150Ujhhgtgfeyxiexzf, EnumC1857Ujhhgtgfeyxiexzf.f6229Ujhhgtgfeyxiexzf.f6233Ujhhgtgfeyxiexzf);
-                MagicFactory.get(4928273417934734730L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type kotlin.String";
                 return (String) objM4271feyxiexzfUjhhgtg;
             case 1:
                 Object objM4271feyxiexzfUjhhgtg2 = C2882Ujhhgtgfeyxiexzf.m4271feyxiexzfUjhhgtg(C2882Ujhhgtgfeyxiexzf.f9150Ujhhgtgfeyxiexzf, EnumC1857Ujhhgtgfeyxiexzf.f6230Ujhhgtgfeyxiexzf.f6233Ujhhgtgfeyxiexzf);
@@ -54,14 +54,14 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 }
                 if (r3 == 0) {
                     r3 = str;
-                    return MagicFactory.get(4928272820934280586L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                    return "未填写";
                 }
                 r3 = str;
                 return r3;
             case 2:
                 Object objM4271feyxiexzfUjhhgtg3 = C2882Ujhhgtgfeyxiexzf.m4271feyxiexzfUjhhgtg(C2882Ujhhgtgfeyxiexzf.f9150Ujhhgtgfeyxiexzf, EnumC1857Ujhhgtgfeyxiexzf.f6231Ujhhgtgfeyxiexzf.f6233Ujhhgtgfeyxiexzf);
                 String str2 = objM4271feyxiexzfUjhhgtg3 instanceof String ? (String) objM4271feyxiexzfUjhhgtg3 : null;
-                return str2 == null ? MagicFactory.get(4928273100107154826L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf) : str2;
+                return str2 == null ? "未填写" : str2;
             case 3:
                 C2983Ujhhgtgfeyxiexzf.f9288Ujhhgtgfeyxiexzf.m4626Ujhhgtgfeyxiexzf(40);
                 C2982feyxiexzfUjhhgtg.f9287Ujhhgtgfeyxiexzf.m4626Ujhhgtgfeyxiexzf(80);
@@ -79,8 +79,8 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 C2989Ujhhgtgfeyxiexzf.f9294Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf((String) C2992Ujhhgtgfeyxiexzf.f9300Ujhhgtgfeyxiexzf.getValue());
                 C2985feyxiexzfUjhhgtg c2985feyxiexzfUjhhgtg = C2985feyxiexzfUjhhgtg.f9290Ujhhgtgfeyxiexzf;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c2985feyxiexzfUjhhgtg.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928374495695078794L, strArr));
-                C2984Ujhhgtgfeyxiexzf.f9289Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928374452745405834L, strArr));
+                c2985feyxiexzfUjhhgtg.m4629Ujhhgtgfeyxiexzf("#FFFFFFFF");
+                C2984Ujhhgtgfeyxiexzf.f9289Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF191919");
                 return c1943Ujhhgtgfeyxiexzf;
             case 4:
                 return new C3023feyxiexzfUjhhgtg(29);
@@ -90,7 +90,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 return bitmapCreateBitmap;
             case 6:
                 C2576Ujhhgtgfeyxiexzf c2576Ujhhgtgfeyxiexzf = C2576Ujhhgtgfeyxiexzf.f8327Ujhhgtgfeyxiexzf;
-                File file = new File(C2576Ujhhgtgfeyxiexzf.f8328Ujhhgtgfeyxiexzf, MagicFactory.get(4928377205819442570L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file = new File(C2576Ujhhgtgfeyxiexzf.f8328Ujhhgtgfeyxiexzf, "icon_chats.png");
                 if (file.exists() && (bitmapM4203feyxiexzfUjhhgtg = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg;
                 }
@@ -98,7 +98,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 return C2576Ujhhgtgfeyxiexzf.m3830feyxiexzfUjhhgtg();
             case 7:
                 C2576Ujhhgtgfeyxiexzf c2576Ujhhgtgfeyxiexzf2 = C2576Ujhhgtgfeyxiexzf.f8327Ujhhgtgfeyxiexzf;
-                File file2 = new File(C2576Ujhhgtgfeyxiexzf.f8328Ujhhgtgfeyxiexzf, MagicFactory.get(4928376179322258826L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file2 = new File(C2576Ujhhgtgfeyxiexzf.f8328Ujhhgtgfeyxiexzf, "icon_contacts.png");
                 if (file2.exists() && (bitmapM4203feyxiexzfUjhhgtg2 = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file2)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg2;
                 }
@@ -106,7 +106,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 return C2576Ujhhgtgfeyxiexzf.m3830feyxiexzfUjhhgtg();
             case 8:
                 C2576Ujhhgtgfeyxiexzf c2576Ujhhgtgfeyxiexzf3 = C2576Ujhhgtgfeyxiexzf.f8327Ujhhgtgfeyxiexzf;
-                File file3 = new File(C2576Ujhhgtgfeyxiexzf.f8328Ujhhgtgfeyxiexzf, MagicFactory.get(4928376239451800970L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file3 = new File(C2576Ujhhgtgfeyxiexzf.f8328Ujhhgtgfeyxiexzf, "icon_discover.png");
                 if (file3.exists() && (bitmapM4203feyxiexzfUjhhgtg3 = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file3)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg3;
                 }
@@ -114,7 +114,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 return C2576Ujhhgtgfeyxiexzf.m3830feyxiexzfUjhhgtg();
             case 9:
                 C2576Ujhhgtgfeyxiexzf c2576Ujhhgtgfeyxiexzf4 = C2576Ujhhgtgfeyxiexzf.f8327Ujhhgtgfeyxiexzf;
-                File file4 = new File(C2576Ujhhgtgfeyxiexzf.f8328Ujhhgtgfeyxiexzf, MagicFactory.get(4928376299581343114L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file4 = new File(C2576Ujhhgtgfeyxiexzf.f8328Ujhhgtgfeyxiexzf, "icon_me.png");
                 if (file4.exists() && (bitmapM4203feyxiexzfUjhhgtg4 = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file4)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg4;
                 }
@@ -123,10 +123,10 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
             case 10:
                 C2670feyxiexzfUjhhgtg c2670feyxiexzfUjhhgtg = C2670feyxiexzfUjhhgtg.f8542Ujhhgtgfeyxiexzf;
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c2670feyxiexzfUjhhgtg.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928376385480689034L, strArr2));
-                C2671Ujhhgtgfeyxiexzf.f8543Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928376372595787146L, strArr2));
-                C2672Ujhhgtgfeyxiexzf.f8544Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928376359710885258L, strArr2));
-                C2675Ujhhgtgfeyxiexzf.f8547Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928376484264936842L, strArr2));
+                c2670feyxiexzfUjhhgtg.m4629Ujhhgtgfeyxiexzf("微信");
+                C2671Ujhhgtgfeyxiexzf.f8543Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("通讯");
+                C2672Ujhhgtgfeyxiexzf.f8544Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("发现");
+                C2675Ujhhgtgfeyxiexzf.f8547Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("我的");
                 C2676feyxiexzfUjhhgtg.f8548Ujhhgtgfeyxiexzf.m4624Ujhhgtgfeyxiexzf(true);
                 C2575Ujhhgtgfeyxiexzf.f8326Ujhhgtgfeyxiexzf.m4624Ujhhgtgfeyxiexzf(true);
                 C2674feyxiexzfUjhhgtg.f8546Ujhhgtgfeyxiexzf.m4624Ujhhgtgfeyxiexzf(false);
@@ -138,7 +138,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 return bitmapCreateBitmap2;
             case Opcodes.FCONST_1 /* 12 */:
                 C2559Ujhhgtgfeyxiexzf c2559Ujhhgtgfeyxiexzf = C2559Ujhhgtgfeyxiexzf.f8290Ujhhgtgfeyxiexzf;
-                File file5 = new File(C2559Ujhhgtgfeyxiexzf.f8291Ujhhgtgfeyxiexzf, MagicFactory.get(4928378429885121930L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file5 = new File(C2559Ujhhgtgfeyxiexzf.f8291Ujhhgtgfeyxiexzf, "icon_chats.png");
                 if (file5.exists() && (bitmapM4203feyxiexzfUjhhgtg5 = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file5)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg5;
                 }
@@ -146,7 +146,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 return C2559Ujhhgtgfeyxiexzf.m3802feyxiexzfUjhhgtg();
             case 13:
                 C2559Ujhhgtgfeyxiexzf c2559Ujhhgtgfeyxiexzf2 = C2559Ujhhgtgfeyxiexzf.f8290Ujhhgtgfeyxiexzf;
-                File file6 = new File(C2559Ujhhgtgfeyxiexzf.f8291Ujhhgtgfeyxiexzf, MagicFactory.get(4928378502899565962L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file6 = new File(C2559Ujhhgtgfeyxiexzf.f8291Ujhhgtgfeyxiexzf, "icon_contacts.png");
                 if (file6.exists() && (bitmapM4203feyxiexzfUjhhgtg6 = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file6)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg6;
                 }
@@ -154,7 +154,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 return C2559Ujhhgtgfeyxiexzf.m3802feyxiexzfUjhhgtg();
             case Opcodes.DCONST_0 /* 14 */:
                 C2559Ujhhgtgfeyxiexzf c2559Ujhhgtgfeyxiexzf3 = C2559Ujhhgtgfeyxiexzf.f8290Ujhhgtgfeyxiexzf;
-                File file7 = new File(C2559Ujhhgtgfeyxiexzf.f8291Ujhhgtgfeyxiexzf, MagicFactory.get(4928378563029108106L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file7 = new File(C2559Ujhhgtgfeyxiexzf.f8291Ujhhgtgfeyxiexzf, "icon_discover.png");
                 if (file7.exists() && (bitmapM4203feyxiexzfUjhhgtg7 = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file7)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg7;
                 }
@@ -162,7 +162,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                 return C2559Ujhhgtgfeyxiexzf.m3802feyxiexzfUjhhgtg();
             case 15:
                 C2559Ujhhgtgfeyxiexzf c2559Ujhhgtgfeyxiexzf4 = C2559Ujhhgtgfeyxiexzf.f8290Ujhhgtgfeyxiexzf;
-                File file8 = new File(C2559Ujhhgtgfeyxiexzf.f8291Ujhhgtgfeyxiexzf, MagicFactory.get(4928378760597603722L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                File file8 = new File(C2559Ujhhgtgfeyxiexzf.f8291Ujhhgtgfeyxiexzf, "icon_me.png");
                 if (file8.exists() && (bitmapM4203feyxiexzfUjhhgtg8 = AbstractC2855feyxiexzfUjhhgtg.m4203feyxiexzfUjhhgtg(file8)) != null) {
                     return bitmapM4203feyxiexzfUjhhgtg8;
                 }
@@ -171,29 +171,29 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
             case 16:
                 C2561Ujhhgtgfeyxiexzf c2561Ujhhgtgfeyxiexzf = C2561Ujhhgtgfeyxiexzf.f8303Ujhhgtgfeyxiexzf;
                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c2561Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928378709057996170L, strArr3));
-                C2560Ujhhgtgfeyxiexzf.f8302Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928378803547276682L, strArr3));
-                C2558Ujhhgtgfeyxiexzf.f8289Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928378898036557194L, strArr3));
-                C2580Ujhhgtgfeyxiexzf.f8347Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928378855086884234L, strArr3));
-                C2557Ujhhgtgfeyxiexzf.f8288Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928364655925003658L, strArr3));
-                C2562Ujhhgtgfeyxiexzf.f8304Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928364612975330698L, strArr3));
+                c2561Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFF7F7F7");
+                C2560Ujhhgtgfeyxiexzf.f8302Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFCCE8E3");
+                C2558Ujhhgtgfeyxiexzf.f8289Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF1E1E1E");
+                C2580Ujhhgtgfeyxiexzf.f8347Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF1E1E1E");
+                C2557Ujhhgtgfeyxiexzf.f8288Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF324B48");
+                C2562Ujhhgtgfeyxiexzf.f8304Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFF7F7F7");
                 return c1943Ujhhgtgfeyxiexzf;
             case Opcodes.SIPUSH /* 17 */:
                 C2748feyxiexzfUjhhgtg c2748feyxiexzfUjhhgtg = C2748feyxiexzfUjhhgtg.f8719Ujhhgtgfeyxiexzf;
                 String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c2748feyxiexzfUjhhgtg.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928780524723373450L, strArr4));
-                C2716feyxiexzfUjhhgtg.f8659Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928780619212653962L, strArr4));
-                C2743Ujhhgtgfeyxiexzf.f8714Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928780576262981002L, strArr4));
-                C2745feyxiexzfUjhhgtg.f8716Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928780670752261514L, strArr4));
-                C2747Ujhhgtgfeyxiexzf.f8718Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928780765241542026L, strArr4));
-                C2713feyxiexzfUjhhgtg.f8656Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928780722291869066L, strArr4));
-                C2715feyxiexzfUjhhgtg.f8658Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928779717269521802L, strArr4));
-                C2744Ujhhgtgfeyxiexzf.f8715Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928779674319848842L, strArr4));
+                c2748feyxiexzfUjhhgtg.m4629Ujhhgtgfeyxiexzf("#FFEDEDED");
+                C2716feyxiexzfUjhhgtg.f8659Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF006A62");
+                C2743Ujhhgtgfeyxiexzf.f8714Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF161D1C");
+                C2745feyxiexzfUjhhgtg.f8716Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF006A62");
+                C2747Ujhhgtgfeyxiexzf.f8718Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF242424");
+                C2713feyxiexzfUjhhgtg.f8656Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF81D5CB");
+                C2715feyxiexzfUjhhgtg.f8658Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FFDDE4E2");
+                C2744Ujhhgtgfeyxiexzf.f8715Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("#FF81D5CB");
                 C2726Ujhhgtgfeyxiexzf.f8680Ujhhgtgfeyxiexzf.getClass();
                 C2726Ujhhgtgfeyxiexzf.m4037feyxiexzfUjhhgtg();
                 return c1943Ujhhgtgfeyxiexzf;
             case Opcodes.LDC /* 18 */:
-                C2732feyxiexzfUjhhgtg.f8694Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(MagicFactory.get(4928367301624857994L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                C2732feyxiexzfUjhhgtg.f8694Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf("今日已发${totalMsg}条");
                 C2736feyxiexzfUjhhgtg.f8698Ujhhgtgfeyxiexzf.m4624Ujhhgtgfeyxiexzf(true);
                 return c1943Ujhhgtgfeyxiexzf;
             case 19:
@@ -213,7 +213,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
             case Opcodes.LLOAD /* 22 */:
                 C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
                 View viewInflate = View.inflate(AbstractC3377Ujhhgtgfeyxiexzf.m4880Ujhhgtgfeyxiexzf(AbstractC3590Ujhhgtgfeyxiexzf.m5119Ujhhgtgfeyxiexzf(C0580Ujhhgtgfeyxiexzf.m1855Ujhhgtgfeyxiexzf())), R.layout.module_dialog_choose_contacts, null);
-                MagicFactory.get(4928465501757113738L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type android.widget.LinearLayout";
                 return (LinearLayout) viewInflate;
             case Opcodes.FLOAD /* 23 */:
                 C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
@@ -229,7 +229,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
                     return Arrays.asList(objArrCopyOf);
                 } catch (Exception e) {
                     ArrayList arrayList = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
-                    C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(MagicFactory.get(4928338615538288010L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), e, 12);
+                    C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf("getAnnoHookList Failed", e, 12);
                     return C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;
                 }
             case Opcodes.ALOAD /* 25 */:
@@ -244,7 +244,7 @@ public final /* synthetic */ class C2975feyxiexzfUjhhgtg implements InterfaceC35
             case 28:
                 C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
                 String[] strArr5 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                return AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928339534661289354L, strArr5), MagicFactory.get(4928339633445537162L, strArr5));
+                return AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Resource", "Fab");
             default:
                 return AbstractC3612feyxiexzfUjhhgtg.m5231Ujhhgtgfeyxiexzf(new C3464Ujhhgtgfeyxiexzf(21));
         }

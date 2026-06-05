@@ -59,47 +59,47 @@ public final /* synthetic */ class C2468feyxiexzfUjhhgtg implements InterfaceC08
         int iHashCode2;
         switch (this.f7998Ujhhgtgfeyxiexzf) {
             case 0:
-                iHashCode = MagicFactory.get(4928595330028537226L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 1:
-                iHashCode = MagicFactory.get(4928596863331861898L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 2:
-                iHashCode = MagicFactory.get(4928600063082497418L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 3:
-                iHashCode = MagicFactory.get(4928248185001870730L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 4:
-                iHashCode = MagicFactory.get(4928599826859296138L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 5:
-                iHashCode = MagicFactory.get(4928598521189238154L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 6:
-                iHashCode = MagicFactory.get(4928520339899549066L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 7:
-                iHashCode = MagicFactory.get(4928514421434615178L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 8:
-                iHashCode = MagicFactory.get(4928504358326240650L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             case 9:
-                iHashCode = MagicFactory.get(4928517994847405450L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
             default:
-                iHashCode = MagicFactory.get(4928096044375344522L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).hashCode() * 127;
+                iHashCode = "number".hashCode() * 127;
                 iHashCode2 = Integer.hashCode(this.f7999Ujhhgtgfeyxiexzf);
                 break;
         }
@@ -138,47 +138,47 @@ public final /* synthetic */ class C2468feyxiexzfUjhhgtg implements InterfaceC08
         switch (this.f7998Ujhhgtgfeyxiexzf) {
             case 0:
                 StringBuilder sb = new StringBuilder();
-                sb.append(MagicFactory.get(4928595299963766154L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 1:
                 StringBuilder sb2 = new StringBuilder();
-                sb2.append(MagicFactory.get(4928596833267090826L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb2.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb2, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 2:
                 StringBuilder sb3 = new StringBuilder();
-                sb3.append(MagicFactory.get(4928600170456679818L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb3.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb3, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 3:
                 StringBuilder sb4 = new StringBuilder();
-                sb4.append(MagicFactory.get(4928248154937099658L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb4.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb4, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 4:
                 StringBuilder sb5 = new StringBuilder();
-                sb5.append(MagicFactory.get(4928599796794525066L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb5.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb5, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 5:
                 StringBuilder sb6 = new StringBuilder();
-                sb6.append(MagicFactory.get(4928598491124467082L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb6.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb6, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 6:
                 StringBuilder sb7 = new StringBuilder();
-                sb7.append(MagicFactory.get(4928520447273731466L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb7.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb7, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 7:
                 StringBuilder sb8 = new StringBuilder();
-                sb8.append(MagicFactory.get(4928514528808797578L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb8.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb8, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 8:
                 StringBuilder sb9 = new StringBuilder();
-                sb9.append(MagicFactory.get(4928504328261469578L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb9.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb9, this.f7999Ujhhgtgfeyxiexzf, ')');
             case 9:
                 StringBuilder sb10 = new StringBuilder();
-                sb10.append(MagicFactory.get(4928518102221587850L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb10.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb10, this.f7999Ujhhgtgfeyxiexzf, ')');
             default:
                 StringBuilder sb11 = new StringBuilder();
-                sb11.append(MagicFactory.get(4928096014310573450L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb11.append("@kotlinx.serialization.protobuf.ProtoNumber(number=");
                 return AbstractC3317feyxiexzfUjhhgtg.m4802Ujhhgtgfeyxiexzf(sb11, this.f7999Ujhhgtgfeyxiexzf, ')');
         }
     }

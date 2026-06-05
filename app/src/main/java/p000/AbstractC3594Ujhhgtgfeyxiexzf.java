@@ -262,7 +262,7 @@ public abstract class AbstractC3594Ujhhgtgfeyxiexzf {
                 FriendInfo friendInfoM1315Ujhhgtgfeyxiexzf = AbstractC0217Ujhhgtgfeyxiexzf.m1315Ujhhgtgfeyxiexzf(cursorM5194feyxiexzfUjhhgtg);
                 String wxid = friendInfoM1315Ujhhgtgfeyxiexzf.getWxid();
                 Object objM4271feyxiexzfUjhhgtg = C2882Ujhhgtgfeyxiexzf.m4271feyxiexzfUjhhgtg(C2882Ujhhgtgfeyxiexzf.f9150Ujhhgtgfeyxiexzf, EnumC1857Ujhhgtgfeyxiexzf.f6228Ujhhgtgfeyxiexzf.f6233Ujhhgtgfeyxiexzf);
-                MagicFactory.get(4928274324172834186L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type kotlin.String";
                 if (!C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(wxid, (String) objM4271feyxiexzfUjhhgtg)) {
                     arrayList.add(friendInfoM1315Ujhhgtgfeyxiexzf);
                 }
@@ -310,27 +310,27 @@ public abstract class AbstractC3594Ujhhgtgfeyxiexzf {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         try {
             int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-            C0709Ujhhgtgfeyxiexzf c0709UjhhgtgfeyxiexzfM5191feyxiexzfUjhhgtg = m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928225395905398154L, strArr)));
+            C0709Ujhhgtgfeyxiexzf c0709UjhhgtgfeyxiexzfM5191feyxiexzfUjhhgtg = m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("android.app.ActivityThread"));
             C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = C3023feyxiexzfUjhhgtg.f9386Ujhhgtgfeyxiexzf;
             ((C0216Ujhhgtgfeyxiexzf) c0709UjhhgtgfeyxiexzfM5191feyxiexzfUjhhgtg.f2944Ujhhgtgfeyxiexzf).f1487Ujhhgtgfeyxiexzf = AbstractC3590Ujhhgtgfeyxiexzf.m5126Ujhhgtgfeyxiexzf();
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = c0709UjhhgtgfeyxiexzfM5191feyxiexzfUjhhgtg.m2024Ujhhgtgfeyxiexzf();
-            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928224455307560330L, strArr);
+            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "currentActivityThread";
             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = m5192feyxiexzfUjhhgtg(((C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf())).m1649Ujhhgtgfeyxiexzf(new Object[0])).m2021Ujhhgtgfeyxiexzf();
-            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928224498257233290L, strArr);
+            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "mActivities";
             for (Object obj : ((Map) ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.m4942Ujhhgtgfeyxiexzf())).m4939Ujhhgtgfeyxiexzf()).values()) {
                 int i2 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                 C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2 = m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928224584156579210L, strArr);
+                c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "paused";
                 if (!((Boolean) ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.m4942Ujhhgtgfeyxiexzf())).m4939Ujhhgtgfeyxiexzf()).booleanValue()) {
                     C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3 = m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928224691530761610L, strArr);
+                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = "activity";
                     return (Activity) ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.m4942Ujhhgtgfeyxiexzf())).m4939Ujhhgtgfeyxiexzf();
                 }
             }
             return null;
         } catch (Exception e) {
             ArrayList arrayList = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
-            C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(MagicFactory.get(4928224652876055946L, strArr), e, 12);
+            C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf("getCurrentActivity Failed", e, 12);
             return null;
         }
     }
@@ -1077,7 +1077,7 @@ public abstract class AbstractC3594Ujhhgtgfeyxiexzf {
             return null;
         }
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928226237718988170L, strArr));
+        sb.append("SELECT contact.*\nFROM rcontact contact\nLEFT JOIN rconversation conversation ON contact.username = conversation.username\nWHERE ");
         int length = enumC3684feyxiexzfUjhhgtgArr.length;
         int i = 0;
         int i2 = 0;
@@ -1092,21 +1092,21 @@ public abstract class AbstractC3594Ujhhgtgfeyxiexzf {
                 int i6 = i5 + 1;
                 sb.append(strArr2[i4]);
                 if (i5 != enumC3684feyxiexzfUjhhgtg.f11715Ujhhgtgfeyxiexzf.length - 1) {
-                    sb.append(MagicFactory.get(4928225692258141578L, strArr));
+                    sb.append("\nAND ");
                 }
                 i4++;
                 i5 = i6;
             }
             if (i2 != enumC3684feyxiexzfUjhhgtgArr.length - 1) {
-                sb.append(MagicFactory.get(4928225666488337802L, strArr));
+                sb.append("\nOR ");
             }
             if (i2 == enumC3684feyxiexzfUjhhgtgArr.length - 1) {
-                sb.append(MagicFactory.get(4928225782452454794L, strArr));
+                sb.append("\n");
             }
             i++;
             i2 = i3;
         }
-        sb.append(MagicFactory.get(4928225773862520202L, strArr));
+        sb.append("ORDER BY\nCASE WHEN conversation.username IS NOT NULL THEN 0 ELSE 1 END,\nCOALESCE(conversation.conversationTime, 0) DESC,\ncontact.username");
         return C3382feyxiexzfUjhhgtg.m4894Ujhhgtgfeyxiexzf(sb.toString());
     }
 

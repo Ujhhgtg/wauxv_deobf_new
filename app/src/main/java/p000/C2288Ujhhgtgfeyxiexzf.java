@@ -24,10 +24,10 @@ public final class C2288Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7499Ujhhgtgfeyxiexzf = new C2288Ujhhgtgfeyxiexzf(MagicFactory.get(4928815124979910026L, strArr));
-        f7500Ujhhgtgfeyxiexzf = MagicFactory.get(4928814510799586698L, strArr);
-        f7501Ujhhgtgfeyxiexzf = MagicFactory.get(4928814485029782922L, strArr);
-        f7502Ujhhgtgfeyxiexzf = MagicFactory.get(4928814446375077258L, strArr);
+        f7499Ujhhgtgfeyxiexzf = new C2288Ujhhgtgfeyxiexzf("WxgfSizeLimitHook");
+        f7500Ujhhgtgfeyxiexzf = "测试/杂项";
+        f7501Ujhhgtgfeyxiexzf = "WXGF大小限制";
+        f7502Ujhhgtgfeyxiexzf = "拦截某些异常大小表情导致的闪退现象";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

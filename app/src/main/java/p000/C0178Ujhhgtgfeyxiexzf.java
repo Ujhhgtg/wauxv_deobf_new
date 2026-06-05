@@ -17,7 +17,7 @@ public final class C0178Ujhhgtgfeyxiexzf extends AbstractC0255Ujhhgtgfeyxiexzf i
         Object objInvoke = AbstractC1791feyxiexzfUjhhgtg.m3154feyxiexzfUjhhgtg(C0175Ujhhgtgfeyxiexzf.f1378Ujhhgtgfeyxiexzf).invoke(null, str);
         String string = objInvoke instanceof String ? (String) objInvoke : null;
         if (string != null) {
-            String str2 = MagicFactory.get(4928542815463409034L, strArr);
+            String str2 = "/";
             String str3 = MagicFactory.get(z ? 4928542806873474442L : 4928542798283539850L, strArr);
             int iM2632feyxiexzfUjhhgtg = AbstractC1152feyxiexzfUjhhgtg.m2632feyxiexzfUjhhgtg(6, string, str2);
             if (iM2632feyxiexzfUjhhgtg != -1) {
@@ -36,7 +36,7 @@ public final class C0178Ujhhgtgfeyxiexzf extends AbstractC0255Ujhhgtgfeyxiexzf i
                 return string;
             }
         }
-        return MagicFactory.get(4928542918542624138L, strArr);
+        return "";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

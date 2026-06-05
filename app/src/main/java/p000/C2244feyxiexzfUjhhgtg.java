@@ -48,17 +48,17 @@ public final class C2244feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928345032219428234L, strArr));
+        sb.append("WatermarkConfig(text=");
         sb.append(this.f7291Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928345212608054666L, strArr));
+        sb.append(", textColor=");
         sb.append(this.f7292Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928345294212433290L, strArr));
+        sb.append(", textSize=");
         sb.append(this.f7293Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928345242672825738L, strArr));
+        sb.append(", rotationAngle=");
         sb.append(this.f7294Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928345307097335178L, strArr));
+        sb.append(", horizontalSpacing=");
         sb.append(this.f7295Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928344392269301130L, strArr));
+        sb.append(", verticalSpacing=");
         sb.append(this.f7296Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

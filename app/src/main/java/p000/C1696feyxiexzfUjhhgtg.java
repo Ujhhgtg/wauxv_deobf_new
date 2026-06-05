@@ -44,9 +44,9 @@ public final class C1696feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928108061693838730L, strArr));
+        sb.append("q72Proto(contact=");
         sb.append(this.f5681Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928108121823380874L, strArr));
+        sb.append(", friend_follow_num=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f5682Ujhhgtgfeyxiexzf, ')');
     }
 }

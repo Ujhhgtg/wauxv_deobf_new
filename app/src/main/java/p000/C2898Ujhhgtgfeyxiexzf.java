@@ -18,15 +18,15 @@ public final class C2898Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9175Ujhhgtgfeyxiexzf = new C2898Ujhhgtgfeyxiexzf(MagicFactory.get(4928827120823567754L, strArr));
-        f9176Ujhhgtgfeyxiexzf = MagicFactory.get(4928827490190755210L, strArr);
-        f9177Ujhhgtgfeyxiexzf = MagicFactory.get(4928827455831016842L, strArr);
+        f9175Ujhhgtgfeyxiexzf = new C2898Ujhhgtgfeyxiexzf("ChatroomMuteDetail");
+        f9176Ujhhgtgfeyxiexzf = "测试/配置同步";
+        f9177Ujhhgtgfeyxiexzf = "消息免打扰-以下消息仍通知";
     }
 
     @Override // p000.InterfaceC0747Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛳᛲ */
     public final void mo2086Ujhhgtgfeyxiexzf(C0578Ujhhgtgfeyxiexzf c0578Ujhhgtgfeyxiexzf, String str) {
-        if (mo1424feyxiexzfUjhhgtg() && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, MagicFactory.get(4928827176658142602L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))) {
+        if (mo1424feyxiexzfUjhhgtg() && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, "USERINFO_CHATROOM_MUTE_DETAIL_CLIENT_GRAY_BOOLEAN_SYNC")) {
             c0578Ujhhgtgfeyxiexzf.m1853Ujhhgtgfeyxiexzf(Boolean.TRUE);
         }
     }

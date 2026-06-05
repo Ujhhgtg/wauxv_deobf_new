@@ -13,7 +13,7 @@ public final class C0105Ujhhgtgfeyxiexzf extends ViewOutlineProvider {
     @Override // android.view.ViewOutlineProvider
     public final void getOutline(View view, Outline outline) {
         if (view == null) {
-            throw new NullPointerException(MagicFactory.get(4928346964954711434L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+            throw new NullPointerException("null cannot be cast to non-null type android.widget.FrameLayout");
         }
         FrameLayout frameLayout = (FrameLayout) view;
         outline.setRoundRect(0, 0, frameLayout.getWidth(), frameLayout.getHeight(), frameLayout.getHeight() / 2.0f);

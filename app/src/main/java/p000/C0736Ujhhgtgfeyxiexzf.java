@@ -15,10 +15,10 @@ public final /* synthetic */ class C0736Ujhhgtgfeyxiexzf implements InterfaceC35
         C0736Ujhhgtgfeyxiexzf c0736Ujhhgtgfeyxiexzf = new C0736Ujhhgtgfeyxiexzf();
         f3012Ujhhgtgfeyxiexzf = c0736Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928520636252292490L, strArr), c0736Ujhhgtgfeyxiexzf, 2);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928519893222950282L, strArr), false);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.proto.resp.JSLoginResp.JSAPIBaseResp", c0736Ujhhgtgfeyxiexzf, 2);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("errCode", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(1, 6));
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928519858863211914L, strArr), false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("errMsg", false);
         c1412feyxiexzfUjhhgtg.m2923Ujhhgtgfeyxiexzf(new C2468feyxiexzfUjhhgtg(2, 6));
         descriptor = c1412feyxiexzfUjhhgtg;
     }

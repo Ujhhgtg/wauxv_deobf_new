@@ -9,5 +9,5 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C1401feyxiexzfUjhhgtg extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛴᛳ, reason: contains not printable characters */
-    public static final C1401feyxiexzfUjhhgtg f4917Ujhhgtgfeyxiexzf = new C1401feyxiexzfUjhhgtg(MagicFactory.get(4928840473876891018L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), null, null, false, 0, 0.0f, 0, Opcodes.FNEG);
+    public static final C1401feyxiexzfUjhhgtg f4917Ujhhgtgfeyxiexzf = new C1401feyxiexzfUjhhgtg("PlacedSortProHook.ValShowReset", null, null, false, 0, 0.0f, 0, Opcodes.FNEG);
 }

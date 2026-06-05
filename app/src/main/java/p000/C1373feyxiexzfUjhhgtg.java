@@ -18,7 +18,7 @@ public final /* synthetic */ class C1373feyxiexzfUjhhgtg extends AbstractC3569Uj
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4866Ujhhgtgfeyxiexzf = new C1373feyxiexzfUjhhgtg(3, C0311Ujhhgtgfeyxiexzf.class, MagicFactory.get(4928404723674908042L, strArr), MagicFactory.get(4928404689315169674L, strArr), 0);
+        f4866Ujhhgtgfeyxiexzf = new C1373feyxiexzfUjhhgtg(3, C0311Ujhhgtgfeyxiexzf.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lme/hd/wauxv/databinding/ModuleDialogPanelEmojiFullBinding;", 0);
     }
 
     @Override // p000.InterfaceC3556feyxiexzfUjhhgtg
@@ -34,6 +34,6 @@ public final /* synthetic */ class C1373feyxiexzfUjhhgtg extends AbstractC3569Uj
         if (recyclerView != null) {
             return new C0311Ujhhgtgfeyxiexzf((LinearLayout) viewInflate, recyclerView);
         }
-        throw new NullPointerException(MagicFactory.get(4928806178563032458L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).concat(viewInflate.getResources().getResourceName(R.id.moduleDialogRvPanelEmojiGroups)));
+        throw new NullPointerException("Missing required view with ID: ".concat(viewInflate.getResources().getResourceName(R.id.moduleDialogRvPanelEmojiGroups)));
     }
 }

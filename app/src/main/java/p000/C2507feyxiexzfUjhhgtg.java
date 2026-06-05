@@ -45,11 +45,11 @@ public final class C2507feyxiexzfUjhhgtg extends AbstractC2485feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928464032878298506L, strArr));
+        sb.append("Content(title=");
         sb.append(this.f8186Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928464105892742538L, strArr));
+        sb.append(", desc=");
         sb.append(this.f8187Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928464071533004170L, strArr));
+        sb.append(", onClick=");
         sb.append(this.f8188Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

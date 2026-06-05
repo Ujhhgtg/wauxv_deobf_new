@@ -104,29 +104,29 @@ public final class C0715Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928505479312704906L, strArr));
+        sb.append("JSLoginResp(baseResponse=");
         sb.append(this.f2951Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928505505082508682L, strArr));
+        sb.append(", jsapiBaseResp=");
         sb.append(this.f2952Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928505569507018122L, strArr));
+        sb.append(", code=");
         sb.append(this.f2953Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928505672586233226L, strArr));
+        sb.append(", scopeList=");
         sb.append(this.f2954Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928505754190611850L, strArr));
+        sb.append(", appName=");
         sb.append(this.f2955Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928505706945971594L, strArr));
+        sb.append(", appIconUrl=");
         sb.append(this.f2956Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928505784255382922L, strArr));
+        sb.append(", openid=");
         sb.append(this.f2957Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928505878744663434L, strArr));
+        sb.append(", sessionKey=");
         sb.append(this.f2958Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928504856542446986L, strArr));
+        sb.append(", sessionTicket=");
         sb.append(this.f2959Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928504920966956426L, strArr));
+        sb.append(", lifespan=");
         sb.append(this.f2960Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928504869427348874L, strArr));
+        sb.append(", state=");
         sb.append(this.f2961Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928504968211596682L, strArr));
+        sb.append(", signature=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f2962Ujhhgtgfeyxiexzf, ')');
     }
 }

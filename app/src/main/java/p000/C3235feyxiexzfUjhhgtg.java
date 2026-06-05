@@ -63,7 +63,7 @@ public final /* synthetic */ class C3235feyxiexzfUjhhgtg implements ValueAnimato
             default:
                 C1177feyxiexzfUjhhgtg c1177feyxiexzfUjhhgtg = (C1177feyxiexzfUjhhgtg) this.f10151Ujhhgtgfeyxiexzf;
                 Object animatedValue = valueAnimator.getAnimatedValue();
-                MagicFactory.get(4928456104368670090L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type kotlin.Int";
                 c1177feyxiexzfUjhhgtg.scrollTo(((Integer) animatedValue).intValue(), 0);
                 break;
         }

@@ -10,7 +10,7 @@ import me.hd.wauxv.hook.factory.MagicFactory;
 public final class C0808feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛳᛲ, reason: contains not printable characters */
-    public static final BigInteger f3198Ujhhgtgfeyxiexzf = new BigInteger(MagicFactory.get(4928837501759522186L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), 16);
+    public static final BigInteger f3198Ujhhgtgfeyxiexzf = new BigInteger("ffffffffffffffff", 16);
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ, reason: contains not printable characters */
     public final BigInteger[] f3199Ujhhgtgfeyxiexzf;
@@ -31,7 +31,7 @@ public final class C0808feyxiexzfUjhhgtg {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         BigInteger[] bigIntegerArr = new BigInteger[8];
         for (int i = 0; i < 8; i++) {
-            bigIntegerArr[i] = new BigInteger(MagicFactory.get(4928835324211103114L, strArr), 16);
+            bigIntegerArr[i] = new BigInteger("9e3779b97f4a7c13", 16);
         }
         this.f3199Ujhhgtgfeyxiexzf = bigIntegerArr;
         BigInteger[] bigIntegerArr2 = new BigInteger[bc.e];
@@ -66,7 +66,7 @@ public final class C0808feyxiexzfUjhhgtg {
             while (true) {
                 for (int i9 = 0; i9 < 8; i9++) {
                     BigInteger bigIntegerAdd = bigIntegerArr6[i9].add(bigIntegerArr7[i6 + i9]);
-                    MagicFactory.get(4928834478102545802L, strArr);
+                    "add(...)";
                     bigIntegerArr6[i9] = bigIntegerAdd.and(bigInteger2);
                 }
                 m2155Ujhhgtgfeyxiexzf(bigIntegerArr6);
@@ -88,7 +88,7 @@ public final class C0808feyxiexzfUjhhgtg {
             while (true) {
                 for (int i14 = 0; i14 < 8; i14++) {
                     BigInteger bigIntegerAdd2 = bigIntegerArr6[i14].add(bigIntegerArr5[i11 + i14]);
-                    MagicFactory.get(4928834576886793610L, strArr);
+                    "add(...)";
                     bigIntegerArr6[i14] = bigIntegerAdd2.and(bigInteger2);
                 }
                 m2155Ujhhgtgfeyxiexzf(bigIntegerArr6);
@@ -109,85 +109,85 @@ public final class C0808feyxiexzfUjhhgtg {
     public static void m2155Ujhhgtgfeyxiexzf(BigInteger[] bigIntegerArr) {
         BigInteger bigIntegerSubtract = bigIntegerArr[0].subtract(bigIntegerArr[4]);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MagicFactory.get(4928835388635612554L, strArr);
+        "subtract(...)";
         BigInteger bigInteger = f3198Ujhhgtgfeyxiexzf;
         bigIntegerArr[0] = bigIntegerSubtract.and(bigInteger);
         BigInteger bigInteger2 = bigIntegerArr[5];
         BigInteger bigIntegerShiftRight = bigIntegerArr[7].shiftRight(9);
-        MagicFactory.get(4928835465945023882L, strArr);
+        "shiftRight(...)";
         bigIntegerArr[5] = bigInteger2.xor(bigIntegerShiftRight).and(bigInteger);
         BigInteger bigIntegerAdd = bigIntegerArr[7].add(bigIntegerArr[0]);
-        MagicFactory.get(4928835534664500618L, strArr);
+        "add(...)";
         bigIntegerArr[7] = bigIntegerAdd.and(bigInteger);
         BigInteger bigIntegerSubtract2 = bigIntegerArr[1].subtract(bigIntegerArr[5]);
-        MagicFactory.get(4928835496009794954L, strArr);
+        "subtract(...)";
         bigIntegerArr[1] = bigIntegerSubtract2.and(bigInteger);
         BigInteger bigInteger3 = bigIntegerArr[6];
         BigInteger bigIntegerShiftLeft = bigIntegerArr[0].shiftLeft(9);
-        MagicFactory.get(4928835573319206282L, strArr);
+        "shiftLeft(...)";
         bigIntegerArr[6] = bigInteger3.xor(bigIntegerShiftLeft).and(bigInteger);
         BigInteger bigIntegerAdd2 = bigIntegerArr[0].add(bigIntegerArr[1]);
-        MagicFactory.get(4928835646333650314L, strArr);
+        "add(...)";
         bigIntegerArr[0] = bigIntegerAdd2.and(bigInteger);
         BigInteger bigIntegerSubtract3 = bigIntegerArr[2].subtract(bigIntegerArr[6]);
-        MagicFactory.get(4928835745117898122L, strArr);
+        "subtract(...)";
         bigIntegerArr[2] = bigIntegerSubtract3.and(bigInteger);
         BigInteger bigInteger4 = bigIntegerArr[7];
         BigInteger bigIntegerShiftRight2 = bigIntegerArr[1].shiftRight(23);
-        MagicFactory.get(4928835684988355978L, strArr);
+        "shiftRight(...)";
         bigIntegerArr[7] = bigInteger4.xor(bigIntegerShiftRight2).and(bigInteger);
         BigInteger bigIntegerAdd3 = bigIntegerArr[1].add(bigIntegerArr[2]);
-        MagicFactory.get(4928834654196204938L, strArr);
+        "add(...)";
         bigIntegerArr[1] = bigIntegerAdd3.and(bigInteger);
         BigInteger bigIntegerSubtract4 = bigIntegerArr[3].subtract(bigIntegerArr[7]);
-        MagicFactory.get(4928834752980452746L, strArr);
+        "subtract(...)";
         bigIntegerArr[3] = bigIntegerSubtract4.and(bigInteger);
         BigInteger bigInteger5 = bigIntegerArr[0];
         BigInteger bigIntegerShiftLeft2 = bigIntegerArr[2].shiftLeft(15);
-        MagicFactory.get(4928834830289864074L, strArr);
+        "shiftLeft(...)";
         bigIntegerArr[0] = bigInteger5.xor(bigIntegerShiftLeft2).and(bigInteger);
         BigInteger bigIntegerAdd4 = bigIntegerArr[2].add(bigIntegerArr[3]);
-        MagicFactory.get(4928834903304308106L, strArr);
+        "add(...)";
         bigIntegerArr[2] = bigIntegerAdd4.and(bigInteger);
         BigInteger bigIntegerSubtract5 = bigIntegerArr[4].subtract(bigIntegerArr[0]);
-        MagicFactory.get(4928834864649602442L, strArr);
+        "subtract(...)";
         bigIntegerArr[4] = bigIntegerSubtract5.and(bigInteger);
         BigInteger bigInteger6 = bigIntegerArr[1];
         BigInteger bigIntegerShiftRight3 = bigIntegerArr[3].shiftRight(14);
-        MagicFactory.get(4928834941959013770L, strArr);
+        "shiftRight(...)";
         bigIntegerArr[1] = bigInteger6.xor(bigIntegerShiftRight3).and(bigInteger);
         BigInteger bigIntegerAdd5 = bigIntegerArr[3].add(bigIntegerArr[4]);
-        MagicFactory.get(4928835010678490506L, strArr);
+        "add(...)";
         bigIntegerArr[3] = bigIntegerAdd5.and(bigInteger);
         BigInteger bigIntegerSubtract6 = bigIntegerArr[5].subtract(bigIntegerArr[1]);
-        MagicFactory.get(4928835109462738314L, strArr);
+        "subtract(...)";
         bigIntegerArr[5] = bigIntegerSubtract6.and(bigInteger);
         BigInteger bigInteger7 = bigIntegerArr[2];
         BigInteger bigIntegerShiftLeft3 = bigIntegerArr[4].shiftLeft(20);
-        MagicFactory.get(4928835186772149642L, strArr);
+        "shiftLeft(...)";
         bigIntegerArr[2] = bigInteger7.xor(bigIntegerShiftLeft3).and(bigInteger);
         BigInteger bigIntegerAdd6 = bigIntegerArr[4].add(bigIntegerArr[5]);
-        MagicFactory.get(4928834160274965898L, strArr);
+        "add(...)";
         bigIntegerArr[4] = bigIntegerAdd6.and(bigInteger);
         BigInteger bigIntegerSubtract7 = bigIntegerArr[6].subtract(bigIntegerArr[2]);
-        MagicFactory.get(4928834121620260234L, strArr);
+        "subtract(...)";
         bigIntegerArr[6] = bigIntegerSubtract7.and(bigInteger);
         BigInteger bigInteger8 = bigIntegerArr[3];
         BigInteger bigIntegerShiftRight4 = bigIntegerArr[5].shiftRight(17);
-        MagicFactory.get(4928834198929671562L, strArr);
+        "shiftRight(...)";
         bigIntegerArr[3] = bigInteger8.xor(bigIntegerShiftRight4).and(bigInteger);
         BigInteger bigIntegerAdd7 = bigIntegerArr[5].add(bigIntegerArr[6]);
-        MagicFactory.get(4928834267649148298L, strArr);
+        "add(...)";
         bigIntegerArr[5] = bigIntegerAdd7.and(bigInteger);
         BigInteger bigIntegerSubtract8 = bigIntegerArr[7].subtract(bigIntegerArr[3]);
-        MagicFactory.get(4928834366433396106L, strArr);
+        "subtract(...)";
         bigIntegerArr[7] = bigIntegerSubtract8.and(bigInteger);
         BigInteger bigInteger9 = bigIntegerArr[4];
         BigInteger bigIntegerShiftLeft4 = bigIntegerArr[6].shiftLeft(14);
-        MagicFactory.get(4928834306303853962L, strArr);
+        "shiftLeft(...)";
         bigIntegerArr[4] = bigInteger9.xor(bigIntegerShiftLeft4).and(bigInteger);
         BigInteger bigIntegerAdd8 = bigIntegerArr[6].add(bigIntegerArr[7]);
-        MagicFactory.get(4928834379318297994L, strArr);
+        "add(...)";
         bigIntegerArr[6] = bigIntegerAdd8.and(bigInteger);
     }
 
@@ -197,12 +197,12 @@ public final class C0808feyxiexzfUjhhgtg {
         int i = 2;
         BigInteger bigIntegerAdd = bigIntegerArr[2].add(BigInteger.ONE);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MagicFactory.get(4928834538232087946L, strArr);
+        "add(...)";
         BigInteger bigInteger = f3198Ujhhgtgfeyxiexzf;
         bigIntegerArr[2] = bigIntegerAdd.and(bigInteger);
         int i2 = 1;
         BigInteger bigIntegerAdd2 = bigIntegerArr[1].add(bigIntegerArr[2]);
-        MagicFactory.get(4928834637016335754L, strArr);
+        "add(...)";
         bigIntegerArr[1] = bigIntegerAdd2.and(bigInteger);
         char c = 0;
         int i3 = 0;
@@ -211,50 +211,50 @@ public final class C0808feyxiexzfUjhhgtg {
             if (i4 == 0) {
                 BigInteger bigInteger2 = bigIntegerArr[c];
                 BigInteger bigIntegerShiftLeft = bigInteger2.shiftLeft(21);
-                MagicFactory.get(4928834598361630090L, strArr);
+                "shiftLeft(...)";
                 bigIntegerArr[c] = bigInteger2.xor(bigIntegerShiftLeft).not().and(bigInteger);
             } else if (i4 == i2) {
                 BigInteger bigInteger3 = bigIntegerArr[c];
                 BigInteger bigIntegerShiftRight = bigInteger3.shiftRight(5);
-                MagicFactory.get(4928833571864446346L, strArr);
+                "shiftRight(...)";
                 bigIntegerArr[c] = bigInteger3.xor(bigIntegerShiftRight);
             } else if (i4 == i) {
                 BigInteger bigInteger4 = bigIntegerArr[c];
                 BigInteger bigIntegerShiftLeft2 = bigInteger4.shiftLeft(12);
-                MagicFactory.get(4928833640583923082L, strArr);
+                "shiftLeft(...)";
                 bigIntegerArr[c] = bigInteger4.xor(bigIntegerShiftLeft2);
             } else if (i4 == 3) {
                 BigInteger bigInteger5 = bigIntegerArr[c];
                 BigInteger bigIntegerShiftRight2 = bigInteger5.shiftRight(33);
-                MagicFactory.get(4928833713598367114L, strArr);
+                "shiftRight(...)";
                 bigIntegerArr[c] = bigInteger5.xor(bigIntegerShiftRight2);
             }
             BigInteger bigInteger6 = bigIntegerArr[c];
             int i5 = (i3 + 128) % bc.e;
             BigInteger[] bigIntegerArr2 = this.f3201Ujhhgtgfeyxiexzf;
             BigInteger bigIntegerAdd3 = bigInteger6.add(bigIntegerArr2[i5]);
-            MagicFactory.get(4928833782317843850L, strArr);
+            "add(...)";
             bigIntegerArr[c] = bigIntegerAdd3.and(bigInteger);
             BigInteger bigInteger7 = bigIntegerArr2[i3];
             BigInteger bigIntegerShiftRight3 = bigInteger7.shiftRight(3);
-            MagicFactory.get(4928833881102091658L, strArr);
+            "shiftRight(...)";
             long j = bc.e;
             BigInteger bigIntegerValueOf = BigInteger.valueOf(j);
             int i6 = i2;
-            MagicFactory.get(4928833949821568394L, strArr);
+            "valueOf(...)";
             BigInteger bigIntegerAdd4 = bigIntegerArr2[bigIntegerShiftRight3.mod(bigIntegerValueOf).intValue()].add(bigIntegerArr[c]);
             int i7 = i3;
-            MagicFactory.get(4928833893986993546L, strArr);
+            "add(...)";
             BigInteger bigIntegerAdd5 = bigIntegerAdd4.add(bigIntegerArr[i6]);
-            MagicFactory.get(4928833992771241354L, strArr);
+            "add(...)";
             BigInteger bigIntegerAnd = bigIntegerAdd5.and(bigInteger);
             bigIntegerArr2[i7] = bigIntegerAnd;
             BigInteger bigIntegerShiftRight4 = bigIntegerAnd.shiftRight(11);
-            MagicFactory.get(4928834091555489162L, strArr);
+            "shiftRight(...)";
             BigInteger bigIntegerValueOf2 = BigInteger.valueOf(j);
-            MagicFactory.get(4928837458809849226L, strArr);
+            "valueOf(...)";
             BigInteger bigIntegerAdd6 = bigIntegerArr2[bigIntegerShiftRight4.mod(bigIntegerValueOf2).intValue()].add(bigInteger7);
-            MagicFactory.get(4928837402975274378L, strArr);
+            "add(...)";
             bigIntegerArr[i6] = bigIntegerAdd6.and(bigInteger);
             this.f3200Ujhhgtgfeyxiexzf[i7] = bigIntegerArr[i6];
             i3 = i7 + 1;

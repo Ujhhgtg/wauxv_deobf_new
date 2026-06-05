@@ -74,19 +74,19 @@ public final class C2159Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928180822734800266L, strArr));
+        sb.append("gl1Proto(enable_flag=");
         sb.append(this.f7006Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928180865684473226L, strArr));
+        sb.append(", total_target_count=");
         sb.append(this.f7007Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928184344607982986L, strArr));
+        sb.append(", total_cur_count=");
         sb.append(this.f7008Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928184400442557834L, strArr));
+        sb.append(", banner_words=");
         sb.append(this.f7009Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928184469162034570L, strArr));
+        sb.append(", banner_icon_url=");
         sb.append(this.f7010Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928184524996609418L, strArr));
+        sb.append(", wish_list=");
         sb.append(this.f7011Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928184606600988042L, strArr));
+        sb.append(", wish_list_id=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f7012Ujhhgtgfeyxiexzf, ')');
     }
 }

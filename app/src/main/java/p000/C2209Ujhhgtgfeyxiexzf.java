@@ -27,10 +27,10 @@ public final class C2209Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7186Ujhhgtgfeyxiexzf = new C2209Ujhhgtgfeyxiexzf(MagicFactory.get(4928849716646512010L, strArr));
-        f7187Ujhhgtgfeyxiexzf = MagicFactory.get(4928848995092006282L, strArr);
-        f7188Ujhhgtgfeyxiexzf = MagicFactory.get(4928848982207104394L, strArr);
-        f7189Ujhhgtgfeyxiexzf = MagicFactory.get(4928848960732267914L, strArr);
+        f7186Ujhhgtgfeyxiexzf = new C2209Ujhhgtgfeyxiexzf("VoiceLengthHook");
+        f7187Ujhhgtgfeyxiexzf = "辅助";
+        f7188Ujhhgtgfeyxiexzf = "语音时长";
+        f7189Ujhhgtgfeyxiexzf = "可自定义修改发送的语音消息显示时长";
         f7190Ujhhgtgfeyxiexzf = new C1947feyxiexzfUjhhgtg(22);
     }
 

@@ -55,9 +55,9 @@ public final /* synthetic */ class C2817Ujhhgtgfeyxiexzf implements CompoundButt
                             AbstractC1453feyxiexzfUjhhgtg.m2967Ujhhgtgfeyxiexzf(c1414feyxiexzfUjhhgtg);
                             StringBuilder sb = new StringBuilder();
                             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                            sb.append(MagicFactory.get(4928462765862946186L, strArr));
+                            sb.append("加载[");
                             sb.append(c1414feyxiexzfUjhhgtg.f4968Ujhhgtgfeyxiexzf);
-                            sb.append(MagicFactory.get(4928462748683077002L, strArr));
+                            sb.append("]失败, 已自动关闭");
                             AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb.toString());
                         } else {
                             c1414feyxiexzfUjhhgtg.m2926Ujhhgtgfeyxiexzf(true);

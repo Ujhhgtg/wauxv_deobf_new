@@ -56,9 +56,9 @@ public final /* synthetic */ class C0784feyxiexzfUjhhgtg implements InterfaceC35
                 }
                 StringBuilder sb = new StringBuilder();
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                sb.append(MagicFactory.get(4928843093806941578L, strArr));
+                sb.append("已邀请至");
                 sb.append(list.size());
-                sb.append(MagicFactory.get(4928843072332105098L, strArr));
+                sb.append("个群聊");
                 AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb.toString());
                 return Boolean.FALSE;
             case 1:

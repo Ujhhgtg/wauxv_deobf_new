@@ -31,11 +31,11 @@ public final class C0558Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2559Ujhhgtgfeyxiexzf = new C0558Ujhhgtgfeyxiexzf(MagicFactory.get(4928396284064171402L, strArr));
-        f2560Ujhhgtgfeyxiexzf = AbstractC2391Ujhhgtgfeyxiexzf.m3654feyxiexzfUjhhgtg(new String[]{MagicFactory.get(4928382209456342410L, strArr), MagicFactory.get(4928382334010393994L, strArr)});
-        f2561Ujhhgtgfeyxiexzf = MagicFactory.get(4928382316830524810L, strArr);
-        f2562Ujhhgtgfeyxiexzf = MagicFactory.get(4928382303945622922L, strArr);
-        f2563Ujhhgtgfeyxiexzf = MagicFactory.get(4928382273880851850L, strArr);
+        f2559Ujhhgtgfeyxiexzf = new C0558Ujhhgtgfeyxiexzf("HideChatItemMenuHook");
+        f2560Ujhhgtgfeyxiexzf = AbstractC2391Ujhhgtgfeyxiexzf.m3654feyxiexzfUjhhgtg(new String[]{"提醒", "搜一搜"});
+        f2561Ujhhgtgfeyxiexzf = "净化";
+        f2562Ujhhgtgfeyxiexzf = "隐藏聊天菜单";
+        f2563Ujhhgtgfeyxiexzf = "自定义隐藏聊天长按消息中的菜单项目";
         f2564Ujhhgtgfeyxiexzf = new C3528Ujhhgtgfeyxiexzf(10);
     }
 

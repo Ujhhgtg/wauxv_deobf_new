@@ -27,10 +27,10 @@ public final class C3199feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9885Ujhhgtgfeyxiexzf = new C3199feyxiexzfUjhhgtg(MagicFactory.get(4928410027959518602L, strArr));
-        f9886Ujhhgtgfeyxiexzf = MagicFactory.get(4928409319289914762L, strArr);
-        f9887Ujhhgtgfeyxiexzf = MagicFactory.get(4928409306405012874L, strArr);
-        f9888Ujhhgtgfeyxiexzf = MagicFactory.get(4928409276340241802L, strArr);
+        f9885Ujhhgtgfeyxiexzf = new C3199feyxiexzfUjhhgtg("DisableReportStatusRead");
+        f9886Ujhhgtgfeyxiexzf = "聊天";
+        f9887Ujhhgtgfeyxiexzf = "禁止上报已读";
+        f9888Ujhhgtgfeyxiexzf = "禁止在打开资料页状态卡片时上报已读";
         f9889Ujhhgtgfeyxiexzf = AbstractC1265feyxiexzfUjhhgtg.m2830Ujhhgtgfeyxiexzf(EnumC2264feyxiexzfUjhhgtg.f7388Ujhhgtgfeyxiexzf) || AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7367Ujhhgtgfeyxiexzf);
     }
 

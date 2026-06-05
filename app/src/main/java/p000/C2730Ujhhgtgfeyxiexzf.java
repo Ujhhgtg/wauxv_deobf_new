@@ -20,7 +20,7 @@ public final /* synthetic */ class C2730Ujhhgtgfeyxiexzf extends AbstractC3569Uj
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8692Ujhhgtgfeyxiexzf = new C2730Ujhhgtgfeyxiexzf(3, C0330Ujhhgtgfeyxiexzf.class, MagicFactory.get(4928787508340196746L, strArr), MagicFactory.get(4928787611419411850L, strArr), 0);
+        f8692Ujhhgtgfeyxiexzf = new C2730Ujhhgtgfeyxiexzf(3, C0330Ujhhgtgfeyxiexzf.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lme/hd/wauxv/databinding/ModuleDialogChatGroupTabConfBinding;", 0);
     }
 
     @Override // p000.InterfaceC3556feyxiexzfUjhhgtg
@@ -45,6 +45,6 @@ public final /* synthetic */ class C2730Ujhhgtgfeyxiexzf extends AbstractC3569Uj
                 }
             }
         }
-        throw new NullPointerException(MagicFactory.get(4928819647580472714L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).concat(viewInflate.getResources().getResourceName(i)));
+        throw new NullPointerException("Missing required view with ID: ".concat(viewInflate.getResources().getResourceName(i)));
     }
 }

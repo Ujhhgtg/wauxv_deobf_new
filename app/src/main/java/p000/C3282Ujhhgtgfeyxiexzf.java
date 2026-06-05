@@ -26,10 +26,10 @@ public final class C3282Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928863035340096906L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928863168484083082L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f10305Ujhhgtgfeyxiexzf = new C3282Ujhhgtgfeyxiexzf(MagicFactory.get(4928864272290678154L, strArr));
-        f10306Ujhhgtgfeyxiexzf = MagicFactory.get(4928862339555394954L, strArr);
-        f10307Ujhhgtgfeyxiexzf = MagicFactory.get(4928862326670493066L, strArr);
-        f10308Ujhhgtgfeyxiexzf = MagicFactory.get(4928862305195656586L, strArr);
+        f10305Ujhhgtgfeyxiexzf = new C3282Ujhhgtgfeyxiexzf("EmojiGameHook");
+        f10306Ujhhgtgfeyxiexzf = "辅助";
+        f10307Ujhhgtgfeyxiexzf = "表情游戏";
+        f10308Ujhhgtgfeyxiexzf = "预先自定义设置猜拳和骰子的随机结果";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

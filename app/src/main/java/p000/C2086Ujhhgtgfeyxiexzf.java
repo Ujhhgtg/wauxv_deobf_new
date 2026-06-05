@@ -56,13 +56,13 @@ public final class C2086Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928156912651863434L, strArr));
+        sb.append("ah4Proto(pk_extra_times_multi_100=");
         sb.append(this.f6846Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928157037205915018L, strArr));
+        sb.append(", buff_duration=");
         sb.append(this.f6847Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928157101630424458L, strArr));
+        sb.append(", start_time=");
         sb.append(this.f6848Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928157178939835786L, strArr));
+        sb.append(", end_time=");
         sb.append(this.f6849Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

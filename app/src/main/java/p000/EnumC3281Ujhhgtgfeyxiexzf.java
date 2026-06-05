@@ -34,7 +34,7 @@ public final class EnumC3281Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        EnumC3281Ujhhgtgfeyxiexzf[] enumC3281UjhhgtgfeyxiexzfArr = {new EnumC3281Ujhhgtgfeyxiexzf(0, MagicFactory.get(4928864259405776266L, strArr), MagicFactory.get(4928864220751070602L, strArr), 0), new EnumC3281Ujhhgtgfeyxiexzf(1, MagicFactory.get(4928864207866168714L, strArr), MagicFactory.get(4928864319535318410L, strArr), 1), new EnumC3281Ujhhgtgfeyxiexzf(2, MagicFactory.get(4928864306650416522L, strArr), MagicFactory.get(4928864280880612746L, strArr), 2)};
+        EnumC3281Ujhhgtgfeyxiexzf[] enumC3281UjhhgtgfeyxiexzfArr = {new EnumC3281Ujhhgtgfeyxiexzf(0, "SCISSORS", "剪刀", 0), new EnumC3281Ujhhgtgfeyxiexzf(1, "STONE", "石头", 1), new EnumC3281Ujhhgtgfeyxiexzf(2, "PAPER", "布", 2)};
         f10301Ujhhgtgfeyxiexzf = enumC3281UjhhgtgfeyxiexzfArr;
         f10302Ujhhgtgfeyxiexzf = new C3369feyxiexzfUjhhgtg(enumC3281UjhhgtgfeyxiexzfArr);
     }

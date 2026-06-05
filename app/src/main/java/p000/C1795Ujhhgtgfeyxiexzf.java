@@ -44,7 +44,7 @@ public final /* synthetic */ class C1795Ujhhgtgfeyxiexzf implements InterfaceC35
                 StringBuilder sb = new StringBuilder();
                 C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();
                 sb.append(C0580Ujhhgtgfeyxiexzf.m1860Ujhhgtgfeyxiexzf());
-                sb.append(MagicFactory.get(4928236549935465866L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                sb.append("|1418|");
                 sb.append(AbstractC2280feyxiexzfUjhhgtg.f7474Ujhhgtgfeyxiexzf);
                 return sb.toString();
         }

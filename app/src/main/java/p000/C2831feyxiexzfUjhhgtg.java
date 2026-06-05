@@ -37,9 +37,9 @@ public final class C2831feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928303456936002954L, strArr));
+        sb.append("CleanData(name=");
         sb.append(this.f8998Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928303525655479690L, strArr));
+        sb.append(", pathList=");
         sb.append(this.f8999Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

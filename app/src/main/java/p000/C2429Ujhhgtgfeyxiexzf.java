@@ -24,10 +24,10 @@ public final class C2429Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7861Ujhhgtgfeyxiexzf = new C2429Ujhhgtgfeyxiexzf(MagicFactory.get(4928813742000440714L, strArr));
-        f7862Ujhhgtgfeyxiexzf = MagicFactory.get(4928813690460833162L, strArr);
-        f7863Ujhhgtgfeyxiexzf = MagicFactory.get(4928812681143518602L, strArr);
-        f7864Ujhhgtgfeyxiexzf = MagicFactory.get(4928812659668682122L, strArr);
+        f7861Ujhhgtgfeyxiexzf = new C2429Ujhhgtgfeyxiexzf("AntiBanHook");
+        f7862Ujhhgtgfeyxiexzf = "测试/仅限开发者使用";
+        f7863Ujhhgtgfeyxiexzf = "禁止封号";
+        f7864Ujhhgtgfeyxiexzf = "实际没有什么用，给自己图个心理安慰";
         f7865Ujhhgtgfeyxiexzf = new C2976feyxiexzfUjhhgtg(2);
     }
 

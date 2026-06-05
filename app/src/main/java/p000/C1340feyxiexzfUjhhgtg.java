@@ -18,7 +18,7 @@ public final class C1340feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf i
         HashMap map;
         if (z) {
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            C1381feyxiexzfUjhhgtg[] c1381feyxiexzfUjhhgtgArr = {new C1381feyxiexzfUjhhgtg(MagicFactory.get(4928251964573091210L, strArr), MagicFactory.get(4928251917328450954L, strArr) + AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(list, MagicFactory.get(4928252011817731466L, strArr), null, null, null, 62) + MagicFactory.get(4928252003227796874L, strArr))};
+            C1381feyxiexzfUjhhgtg[] c1381feyxiexzfUjhhgtgArr = {new C1381feyxiexzfUjhhgtg("atuserlist", "<![CDATA[" + AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg(list, ",", null, null, null, 62) + "]]>")};
             map = new HashMap(AbstractC0202Ujhhgtgfeyxiexzf.m1280Ujhhgtgfeyxiexzf(1));
             AbstractC0202Ujhhgtgfeyxiexzf.m1282Ujhhgtgfeyxiexzf(map, c1381feyxiexzfUjhhgtgArr);
         } else {

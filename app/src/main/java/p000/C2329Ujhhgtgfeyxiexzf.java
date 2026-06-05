@@ -27,10 +27,10 @@ public final class C2329Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7605Ujhhgtgfeyxiexzf = new C2329Ujhhgtgfeyxiexzf(MagicFactory.get(4928458496665453962L, strArr));
-        f7606Ujhhgtgfeyxiexzf = MagicFactory.get(4928373722600965514L, strArr);
-        f7607Ujhhgtgfeyxiexzf = MagicFactory.get(4928373705421096330L, strArr);
-        f7608Ujhhgtgfeyxiexzf = MagicFactory.get(4928373808500311434L, strArr);
+        f7605Ujhhgtgfeyxiexzf = new C2329Ujhhgtgfeyxiexzf("AppBrandFakeCommLibVerHook");
+        f7606Ujhhgtgfeyxiexzf = "小程序";
+        f7607Ujhhgtgfeyxiexzf = "伪造基础库版本";
+        f7608Ujhhgtgfeyxiexzf = "解决提示版本较低无法使用部分小程序";
         f7609Ujhhgtgfeyxiexzf = true;
     }
 

@@ -80,21 +80,21 @@ public final class C2184feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928590910507189642L, strArr));
+        sb.append("StreamvideoProto(streamvideourl=");
         sb.append(this.f7108Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928591043651175818L, strArr));
+        sb.append(", streamvideototaltime=");
         sb.append(this.f7109Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928590115938239882L, strArr));
+        sb.append(", streamvideowording=");
         sb.append(this.f7110Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928590158887912842L, strArr));
+        sb.append(", streamvideoweburl=");
         sb.append(this.f7111Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928590343571506570L, strArr));
+        sb.append(", streamvideotitle=");
         sb.append(this.f7112Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928590395111114122L, strArr));
+        sb.append(", streamvideothumburl=");
         sb.append(this.f7113Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928590433765819786L, strArr));
+        sb.append(", streamvideoaduxinfo=");
         sb.append(this.f7114Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928589510347851146L, strArr));
+        sb.append(", streamvideopublishid=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f7115Ujhhgtgfeyxiexzf, ')');
     }
 }

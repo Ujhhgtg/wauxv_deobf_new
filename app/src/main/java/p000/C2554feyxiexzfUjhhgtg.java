@@ -118,11 +118,11 @@ public final class C2554feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     ArrayList arrayList = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
                     StringBuilder sb = new StringBuilder();
                     String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                    sb.append(MagicFactory.get(4928901166059750794L, strArr));
+                    sb.append("auto clean: name(");
                     sb.append(c2831feyxiexzfUjhhgtg.f8998Ujhhgtgfeyxiexzf);
-                    sb.append(MagicFactory.get(4928900126677665162L, strArr));
+                    sb.append(") costTime(");
                     sb.append(jCurrentTimeMillis2);
-                    sb.append(MagicFactory.get(4928900075138057610L, strArr));
+                    sb.append("ms)");
                     C2290feyxiexzfUjhhgtg.m3494Ujhhgtgfeyxiexzf(14, sb.toString());
                 }
                 break;
@@ -138,7 +138,7 @@ public final class C2554feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                 break;
             case 3:
                 AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
-                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928465815289726346L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "联系人列表加载失败");
                 break;
             case 4:
                 AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);

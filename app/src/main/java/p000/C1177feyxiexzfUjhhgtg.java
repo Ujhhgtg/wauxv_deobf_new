@@ -85,10 +85,10 @@ public final class C1177feyxiexzfUjhhgtg extends ViewGroup {
                     int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                     obj = ((C0416Ujhhgtgfeyxiexzf) interfaceC1176feyxiexzfUjhhgtg2).f2244Ujhhgtgfeyxiexzf;
                     c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928401261931267466L, strArr);
+                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "checkBox";
                     if (((View) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2)).m4939Ujhhgtgfeyxiexzf()).getVisibility() == 0) {
                         C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-                        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928401360715515274L, strArr);
+                        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = "maskView";
                         ((View) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3)).m4939Ujhhgtgfeyxiexzf()).performClick();
                         this.f4464Ujhhgtgfeyxiexzf = false;
                         this.f4465Ujhhgtgfeyxiexzf = false;
@@ -105,7 +105,7 @@ public final class C1177feyxiexzfUjhhgtg extends ViewGroup {
                         c0416Ujhhgtgfeyxiexzf = (C0416Ujhhgtgfeyxiexzf) interfaceC1176feyxiexzfUjhhgtg;
                         int i2 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                         c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(c0416Ujhhgtgfeyxiexzf.f2244Ujhhgtgfeyxiexzf).m2021Ujhhgtgfeyxiexzf();
-                        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928401300585973130L, strArr);
+                        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "checkBox";
                         if (((View) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf)).m4939Ujhhgtgfeyxiexzf()).getVisibility() != 0) {
                             C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = new C2065feyxiexzfUjhhgtg(new C2739feyxiexzfUjhhgtg(1, c0416Ujhhgtgfeyxiexzf.f2246Ujhhgtgfeyxiexzf));
                             C2724feyxiexzfUjhhgtg c2724feyxiexzfUjhhgtg = C2724feyxiexzfUjhhgtg.f8678Ujhhgtgfeyxiexzf;
@@ -151,12 +151,12 @@ public final class C1177feyxiexzfUjhhgtg extends ViewGroup {
                         if (interfaceC1176feyxiexzfUjhhgtg3 != null) {
                             Context context = ((C1177feyxiexzfUjhhgtg) ((C0416Ujhhgtgfeyxiexzf) interfaceC1176feyxiexzfUjhhgtg3).f2243Ujhhgtgfeyxiexzf).getContext();
                             if (Build.VERSION.SDK_INT >= 31) {
-                                Object systemService = context.getSystemService(MagicFactory.get(4928228492576818570L, strArr));
-                                MagicFactory.get(4928228557001328010L, strArr);
+                                Object systemService = context.getSystemService("vibrator_manager");
+                                "null cannot be cast to non-null type android.os.VibratorManager";
                                 defaultVibrator = AbstractC2666Ujhhgtgfeyxiexzf.m3997Ujhhgtgfeyxiexzf(systemService).getDefaultVibrator();
                             } else {
-                                Object systemService2 = context.getSystemService(MagicFactory.get(4928227732367607178L, strArr));
-                                MagicFactory.get(4928227831151854986L, strArr);
+                                Object systemService2 = context.getSystemService("vibrator");
+                                "null cannot be cast to non-null type android.os.Vibrator";
                                 defaultVibrator = (Vibrator) systemService2;
                             }
                             defaultVibrator.vibrate(VibrationEffect.createOneShot(40L, -1));
@@ -172,10 +172,10 @@ public final class C1177feyxiexzfUjhhgtg extends ViewGroup {
                     int i4 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                     obj = ((C0416Ujhhgtgfeyxiexzf) interfaceC1176feyxiexzfUjhhgtg2).f2244Ujhhgtgfeyxiexzf;
                     c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928401261931267466L, strArr);
+                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "checkBox";
                     if (((View) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2)).m4939Ujhhgtgfeyxiexzf()).getVisibility() == 0) {
                         C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-                        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928401360715515274L, strArr);
+                        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = "maskView";
                         ((View) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4)).m4939Ujhhgtgfeyxiexzf()).performClick();
                         this.f4464Ujhhgtgfeyxiexzf = false;
                         this.f4465Ujhhgtgfeyxiexzf = false;
@@ -192,7 +192,7 @@ public final class C1177feyxiexzfUjhhgtg extends ViewGroup {
                         c0416Ujhhgtgfeyxiexzf = (C0416Ujhhgtgfeyxiexzf) interfaceC1176feyxiexzfUjhhgtg;
                         int i5 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                         c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(c0416Ujhhgtgfeyxiexzf.f2244Ujhhgtgfeyxiexzf).m2021Ujhhgtgfeyxiexzf();
-                        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928401300585973130L, strArr);
+                        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "checkBox";
                         if (((View) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf)).m4939Ujhhgtgfeyxiexzf()).getVisibility() != 0) {
                             C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg2 = new C2065feyxiexzfUjhhgtg(new C2739feyxiexzfUjhhgtg(1, c0416Ujhhgtgfeyxiexzf.f2246Ujhhgtgfeyxiexzf));
                             C2724feyxiexzfUjhhgtg c2724feyxiexzfUjhhgtg2 = C2724feyxiexzfUjhhgtg.f8678Ujhhgtgfeyxiexzf;
@@ -279,7 +279,7 @@ public final class C1177feyxiexzfUjhhgtg extends ViewGroup {
             setClickable(true);
             measureChild(view, i, i2);
             ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-            MagicFactory.get(4928456508095595914L, strArr);
+            "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams";
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
             iMax = Math.max(iMax, view.getMeasuredHeight());
             if (View.MeasureSpec.getMode(i2) != 1073741824 && marginLayoutParams.height == -1) {
@@ -300,7 +300,7 @@ public final class C1177feyxiexzfUjhhgtg extends ViewGroup {
             while (c3447Ujhhgtgfeyxiexzf2.hasNext()) {
                 View view2 = (View) c3447Ujhhgtgfeyxiexzf2.next();
                 ViewGroup.LayoutParams layoutParams2 = view2.getLayoutParams();
-                MagicFactory.get(4928456855987946890L, strArr);
+                "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams";
                 ViewGroup.MarginLayoutParams marginLayoutParams2 = (ViewGroup.MarginLayoutParams) layoutParams2;
                 if (marginLayoutParams2.height == -1) {
                     int i5 = marginLayoutParams2.width;

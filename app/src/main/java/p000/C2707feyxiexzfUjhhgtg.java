@@ -36,9 +36,9 @@ public final class C2707feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928788019441304970L, strArr));
+        sb.append("ActiveTabHost(tabLayout=");
         sb.append(this.f8640Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928788186945029514L, strArr));
+        sb.append(", refreshList=");
         sb.append(this.f8641Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

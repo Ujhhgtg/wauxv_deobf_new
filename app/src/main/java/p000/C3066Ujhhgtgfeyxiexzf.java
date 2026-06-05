@@ -27,10 +27,10 @@ public final class C3066Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9491Ujhhgtgfeyxiexzf = new C3066Ujhhgtgfeyxiexzf(MagicFactory.get(4928385022659921290L, strArr));
-        f9492Ujhhgtgfeyxiexzf = MagicFactory.get(4928385456451618186L, strArr);
-        f9493Ujhhgtgfeyxiexzf = MagicFactory.get(4928385443566716298L, strArr);
-        f9494Ujhhgtgfeyxiexzf = MagicFactory.get(4928388849475782026L, strArr);
+        f9491Ujhhgtgfeyxiexzf = new C3066Ujhhgtgfeyxiexzf("CustomDpiHook");
+        f9492Ujhhgtgfeyxiexzf = "实验";
+        f9493Ujhhgtgfeyxiexzf = "自定义Dpi";
+        f9494Ujhhgtgfeyxiexzf = "自定义软件内部的界面缩放与显示密度";
         f9495Ujhhgtgfeyxiexzf = new C3083Ujhhgtgfeyxiexzf(0);
     }
 
@@ -49,7 +49,7 @@ public final class C3066Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         c3066Ujhhgtgfeyxiexzf.m1844feyxiexzfUjhhgtg(c2285feyxiexzfUjhhgtgM2994Ujhhgtgfeyxiexzf, new C3083Ujhhgtgfeyxiexzf(3));
         c2285feyxiexzfUjhhgtgM2994Ujhhgtgfeyxiexzf.m3485Ujhhgtgfeyxiexzf();
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928385099969332618L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))).m2024Ujhhgtgfeyxiexzf();
+        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.ui.TabIconView")).m2024Ujhhgtgfeyxiexzf();
         Class cls = Integer.TYPE;
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = c3066Ujhhgtgfeyxiexzf.m2996Ujhhgtgfeyxiexzf((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(cls), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Boolean.TYPE)}, 4, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf), 1);
         c3066Ujhhgtgfeyxiexzf.m1845feyxiexzfUjhhgtg(c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf, new C3083Ujhhgtgfeyxiexzf(2));

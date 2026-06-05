@@ -68,17 +68,17 @@ public final class C2038Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928179478410036618L, strArr));
+        sb.append("GameShareCardObjectProto(sharedata=");
         sb.append(this.f6677Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928179736108074378L, strArr));
+        sb.append(", gameshareid=");
         sb.append(this.f6678Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928179809122518410L, strArr));
+        sb.append(", isvideo=");
         sb.append(this.f6679Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928179761877878154L, strArr));
+        sb.append(", duration=");
         sb.append(this.f6680Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928179847777224074L, strArr));
+        sb.append(", liteappbizdata=");
         sb.append(this.f6681Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928178808395138442L, strArr));
+        sb.append(", liteapppriority=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f6682Ujhhgtgfeyxiexzf, ')');
     }
 }

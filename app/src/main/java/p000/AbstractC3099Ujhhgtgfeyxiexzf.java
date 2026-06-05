@@ -31,7 +31,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
     public final C2065feyxiexzfUjhhgtg f9641Ujhhgtgfeyxiexzf;
 
     public AbstractC3099Ujhhgtgfeyxiexzf(String str, String str2, Set set, boolean z, int i, float f, long j, int i2) {
-        str2 = (i2 & 2) != 0 ? MagicFactory.get(4928284795303101834L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf) : str2;
+        str2 = (i2 & 2) != 0 ? "" : str2;
         set = (i2 & 4) != 0 ? new LinkedHashSet() : set;
         z = (i2 & 8) != 0 ? false : z;
         i = (i2 & 16) != 0 ? 0 : i;
@@ -53,7 +53,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getBoolean(strM4621Ujhhgtgfeyxiexzf, this.f9637Ujhhgtgfeyxiexzf);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+        throw new IllegalArgumentException("DefaultConfig must be init".toString());
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛴᛳ, reason: contains not printable characters */
@@ -63,7 +63,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getFloat(strM4621Ujhhgtgfeyxiexzf, this.f9639Ujhhgtgfeyxiexzf);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+        throw new IllegalArgumentException("DefaultConfig must be init".toString());
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛳᛲᛴ, reason: contains not printable characters */
@@ -73,7 +73,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getInt(strM4621Ujhhgtgfeyxiexzf, this.f9638Ujhhgtgfeyxiexzf);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+        throw new IllegalArgumentException("DefaultConfig must be init".toString());
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛳᛴᛲ, reason: contains not printable characters */
@@ -83,7 +83,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getLong(strM4621Ujhhgtgfeyxiexzf, this.f9640Ujhhgtgfeyxiexzf);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+        throw new IllegalArgumentException("DefaultConfig must be init".toString());
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛴᛲᛳ, reason: contains not printable characters */
@@ -98,7 +98,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getStringSet(strM4621Ujhhgtgfeyxiexzf, this.f9636Ujhhgtgfeyxiexzf);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+        throw new IllegalArgumentException("DefaultConfig must be init".toString());
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛳᛴ, reason: contains not printable characters */
@@ -108,7 +108,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getString(strM4621Ujhhgtgfeyxiexzf, this.f9635Ujhhgtgfeyxiexzf);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+        throw new IllegalArgumentException("DefaultConfig must be init".toString());
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛴᛳ, reason: contains not printable characters */
@@ -116,7 +116,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         String strM4621Ujhhgtgfeyxiexzf = m4621Ujhhgtgfeyxiexzf();
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1246feyxiexzfUjhhgtg.f4593Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf == null) {
-            throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+            throw new IllegalArgumentException("DefaultConfig must be init".toString());
         }
         c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().putBoolean(strM4621Ujhhgtgfeyxiexzf, z);
     }
@@ -126,7 +126,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         String strM4621Ujhhgtgfeyxiexzf = m4621Ujhhgtgfeyxiexzf();
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1246feyxiexzfUjhhgtg.f4593Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf == null) {
-            throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+            throw new IllegalArgumentException("DefaultConfig must be init".toString());
         }
         c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().putFloat(strM4621Ujhhgtgfeyxiexzf, f);
     }
@@ -136,7 +136,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         String strM4621Ujhhgtgfeyxiexzf = m4621Ujhhgtgfeyxiexzf();
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1246feyxiexzfUjhhgtg.f4593Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf == null) {
-            throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+            throw new IllegalArgumentException("DefaultConfig must be init".toString());
         }
         c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().putInt(strM4621Ujhhgtgfeyxiexzf, i);
     }
@@ -146,7 +146,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         String strM4621Ujhhgtgfeyxiexzf = m4621Ujhhgtgfeyxiexzf();
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1246feyxiexzfUjhhgtg.f4593Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf == null) {
-            throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+            throw new IllegalArgumentException("DefaultConfig must be init".toString());
         }
         c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().putLong(strM4621Ujhhgtgfeyxiexzf, j);
     }
@@ -156,7 +156,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         String strM4621Ujhhgtgfeyxiexzf = m4621Ujhhgtgfeyxiexzf();
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1246feyxiexzfUjhhgtg.f4593Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf == null) {
-            throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+            throw new IllegalArgumentException("DefaultConfig must be init".toString());
         }
         c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().putStringSet(strM4621Ujhhgtgfeyxiexzf, set);
     }
@@ -166,7 +166,7 @@ public abstract class AbstractC3099Ujhhgtgfeyxiexzf {
         String strM4621Ujhhgtgfeyxiexzf = m4621Ujhhgtgfeyxiexzf();
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1246feyxiexzfUjhhgtg.f4593Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf == null) {
-            throw new IllegalArgumentException(MagicFactory.get(4928284614914475402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+            throw new IllegalArgumentException("DefaultConfig must be init".toString());
         }
         c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().putString(strM4621Ujhhgtgfeyxiexzf, str);
     }

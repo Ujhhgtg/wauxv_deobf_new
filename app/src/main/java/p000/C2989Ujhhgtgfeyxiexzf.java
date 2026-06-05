@@ -12,7 +12,7 @@ public final class C2989Ujhhgtgfeyxiexzf extends AbstractC3099Ujhhgtgfeyxiexzf {
     public static final C2989Ujhhgtgfeyxiexzf f9294Ujhhgtgfeyxiexzf;
 
     static {
-        String str = MagicFactory.get(4928374611659195786L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        String str = "AccountInfoCenterHook.ValSign";
         C2992Ujhhgtgfeyxiexzf.f9297Ujhhgtgfeyxiexzf.getClass();
         f9294Ujhhgtgfeyxiexzf = new C2989Ujhhgtgfeyxiexzf(str, (String) C2992Ujhhgtgfeyxiexzf.f9300Ujhhgtgfeyxiexzf.getValue(), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }

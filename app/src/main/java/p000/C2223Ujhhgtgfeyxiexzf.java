@@ -87,9 +87,9 @@ public final class C2223Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                 int i2 = this.f7220Ujhhgtgfeyxiexzf;
                 if (i2 == 0) {
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928835792362538378L, strArr));
-                    String str = C2221Ujhhgtgfeyxiexzf.f7211Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf() + '/' + ((String) obj4) + '-' + ((String) obj3) + MagicFactory.get(4928835762297767306L, strArr);
-                    String string = ((JSONObject) obj2).getString(MagicFactory.get(4928835878261884298L, strArr));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "开始下载视频");
+                    String str = C2221Ujhhgtgfeyxiexzf.f7211Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf() + '/' + ((String) obj4) + '-' + ((String) obj3) + ".mp4";
+                    String string = ((JSONObject) obj2).getString("pcdn_url");
                     C0998feyxiexzfUjhhgtg c0998feyxiexzfUjhhgtg = new C0998feyxiexzfUjhhgtg(str, 4);
                     C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
                     C0433Ujhhgtgfeyxiexzf c0433Ujhhgtgfeyxiexzf = new C0433Ujhhgtgfeyxiexzf(AbstractC3612feyxiexzfUjhhgtg.m5232Ujhhgtgfeyxiexzf(interfaceC3745Ujhhgtgfeyxiexzf, AbstractC3593Ujhhgtgfeyxiexzf.m5163feyxiexzfUjhhgtg(ExecutorC3114Ujhhgtgfeyxiexzf.f9679Ujhhgtgfeyxiexzf, new C1175feyxiexzfUjhhgtg()), new C1418feyxiexzfUjhhgtg(string, c0998feyxiexzfUjhhgtg, interfaceC3704Ujhhgtgfeyxiexzf, 5)));
@@ -101,11 +101,11 @@ public final class C2223Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                     }
                 } else {
                     if (i2 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(4928835946981361034L, strArr));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
                 }
-                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928835839607178634L, strArr));
+                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "下载视频完成");
                 return c1943Ujhhgtgfeyxiexzf;
             case 1:
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -113,9 +113,9 @@ public final class C2223Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                 int i3 = this.f7220Ujhhgtgfeyxiexzf;
                 if (i3 == 0) {
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928822705597187466L, strArr2));
-                    String str2 = C2206Ujhhgtgfeyxiexzf.f7178Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf() + '/' + ((String) obj4) + '-' + ((String) obj3) + MagicFactory.get(4928822812971369866L, strArr2);
-                    String string2 = ((JSONObject) obj2).getString(MagicFactory.get(4928822791496533386L, strArr2));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "开始下载视频");
+                    String str2 = C2206Ujhhgtgfeyxiexzf.f7178Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf() + '/' + ((String) obj4) + '-' + ((String) obj3) + ".mp4";
+                    String string2 = ((JSONObject) obj2).getString("pcdn_url");
                     C0998feyxiexzfUjhhgtg c0998feyxiexzfUjhhgtg2 = new C0998feyxiexzfUjhhgtg(str2, 7);
                     C3126Ujhhgtgfeyxiexzf c3126Ujhhgtgfeyxiexzf2 = AbstractC3195feyxiexzfUjhhgtg.f9877Ujhhgtgfeyxiexzf;
                     C0433Ujhhgtgfeyxiexzf c0433Ujhhgtgfeyxiexzf2 = new C0433Ujhhgtgfeyxiexzf(AbstractC3612feyxiexzfUjhhgtg.m5232Ujhhgtgfeyxiexzf(interfaceC3745Ujhhgtgfeyxiexzf2, AbstractC3593Ujhhgtgfeyxiexzf.m5163feyxiexzfUjhhgtg(ExecutorC3114Ujhhgtgfeyxiexzf.f9679Ujhhgtgfeyxiexzf, new C1175feyxiexzfUjhhgtg()), new C1418feyxiexzfUjhhgtg(string2, c0998feyxiexzfUjhhgtg2, interfaceC3704Ujhhgtgfeyxiexzf, 8)));
@@ -127,11 +127,11 @@ public final class C2223Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                     }
                 } else {
                     if (i3 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(4928822860216010122L, strArr2));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
                 }
-                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928822890280781194L, strArr2));
+                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "下载视频完成");
                 return c1943Ujhhgtgfeyxiexzf;
             default:
                 int i4 = this.f7220Ujhhgtgfeyxiexzf;
@@ -145,7 +145,7 @@ public final class C2223Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                 }
                 if (i4 != 1) {
                     if (i4 != 2) {
-                        throw new IllegalStateException(MagicFactory.get(4928233934300382602L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
                     return c1943Ujhhgtgfeyxiexzf;

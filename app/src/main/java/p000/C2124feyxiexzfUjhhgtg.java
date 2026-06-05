@@ -44,9 +44,9 @@ public final class C2124feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928150380006606218L, strArr));
+        sb.append("ca2Proto(url=");
         sb.append(this.f6935Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928150457316017546L, strArr));
+        sb.append(", md5=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6936Ujhhgtgfeyxiexzf, ')');
     }
 }

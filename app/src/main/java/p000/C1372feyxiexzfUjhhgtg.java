@@ -13,6 +13,6 @@ public final class C1372feyxiexzfUjhhgtg extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4865Ujhhgtgfeyxiexzf = new C1372feyxiexzfUjhhgtg(MagicFactory.get(4928402778054722954L, strArr), MagicFactory.get(4928402906903741834L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f4865Ujhhgtgfeyxiexzf = new C1372feyxiexzfUjhhgtg("PanelEmojiHook.ValGroupConfigList", "", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

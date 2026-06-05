@@ -21,11 +21,11 @@ public abstract class AbstractC3266feyxiexzfUjhhgtg {
     public final String m4773Ujhhgtgfeyxiexzf() {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         String str = (String) this.f10259Ujhhgtgfeyxiexzf.getValue();
-        String str2 = MagicFactory.get(4928283987849250186L, strArr);
+        String str2 = "";
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1252feyxiexzfUjhhgtg.f4604Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getString(str, str2);
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284769533298058L, strArr).toString());
+        throw new IllegalArgumentException("DexDescConfig must be init".toString());
     }
 }

@@ -34,8 +34,8 @@ public final /* synthetic */ class C0776feyxiexzfUjhhgtg implements InterfaceC35
             case 0:
                 C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg = (C3678feyxiexzfUjhhgtg) obj;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf = MagicFactory.get(4928843055152235914L, strArr);
-                String str2 = MagicFactory.get(4928843033677399434L, strArr);
+                c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf = "搜索群聊";
+                String str2 = "群聊";
                 ArrayList<GroupInfo> arrayListM5176Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5176Ujhhgtgfeyxiexzf();
                 ArrayList arrayList = new ArrayList(AbstractC2851feyxiexzfUjhhgtg.m4190Ujhhgtgfeyxiexzf(arrayListM5176Ujhhgtgfeyxiexzf, 10));
                 for (GroupInfo groupInfo : arrayListM5176Ujhhgtgfeyxiexzf) {
@@ -55,7 +55,7 @@ public final /* synthetic */ class C0776feyxiexzfUjhhgtg implements InterfaceC35
                 }
                 c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf(str2, arrayList);
                 c3678feyxiexzfUjhhgtg.f11696Ujhhgtgfeyxiexzf = R.drawable.ic_contact_confirm_24dp;
-                String str3 = MagicFactory.get(4928843158231451018L, strArr);
+                String str3 = "邀请";
                 C0784feyxiexzfUjhhgtg c0784feyxiexzfUjhhgtg = new C0784feyxiexzfUjhhgtg(i2, conversationBean);
                 c3678feyxiexzfUjhhgtg.f11699Ujhhgtgfeyxiexzf = str3;
                 c3678feyxiexzfUjhhgtg.f11701Ujhhgtgfeyxiexzf = c0784feyxiexzfUjhhgtg;

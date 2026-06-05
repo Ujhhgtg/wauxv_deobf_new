@@ -26,13 +26,13 @@ public final class C2249feyxiexzfUjhhgtg extends AbstractC2292feyxiexzfUjhhgtg {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛱUjhhgtgᛱᛳᛴᛲ, reason: contains not printable characters */
     public static boolean m3417feyxiexzfUjhhgtg() {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        String str = MagicFactory.get(4928234140458812810L, strArr);
-        String str2 = MagicFactory.get(4928283987849250186L, strArr);
+        String str = "initDexObfKey";
+        String str2 = "";
         C2629Ujhhgtgfeyxiexzf c2629Ujhhgtgfeyxiexzf = AbstractC1252feyxiexzfUjhhgtg.f4604Ujhhgtgfeyxiexzf;
         if (c2629Ujhhgtgfeyxiexzf != null) {
             return C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(c2629Ujhhgtgfeyxiexzf.m3941Ujhhgtgfeyxiexzf().getString(str, str2), (String) f7328Ujhhgtgfeyxiexzf.getValue());
         }
-        throw new IllegalArgumentException(MagicFactory.get(4928284769533298058L, strArr).toString());
+        throw new IllegalArgumentException("DexDescConfig must be init".toString());
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -153,7 +153,7 @@ public final class C2249feyxiexzfUjhhgtg extends AbstractC2292feyxiexzfUjhhgtg {
                 String[] strArrMo1423feyxiexzfUjhhgtg = abstractC0571Ujhhgtgfeyxiexzf.mo1423feyxiexzfUjhhgtg();
                 String[] strArr = (String[]) Arrays.copyOf(strArrMo1423feyxiexzfUjhhgtg, strArrMo1423feyxiexzfUjhhgtg.length);
                 if (strArr.length == 0) {
-                    throw new IllegalStateException(MagicFactory.get(4928237370274219402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).toString());
+                    throw new IllegalStateException("withProcess method need a \"name\" param".toString());
                 }
                 for (String str : strArr) {
                     C2249feyxiexzfUjhhgtg c2249feyxiexzfUjhhgtg = f7327Ujhhgtgfeyxiexzf;
@@ -173,7 +173,7 @@ public final class C2249feyxiexzfUjhhgtg extends AbstractC2292feyxiexzfUjhhgtg {
             return new C1785feyxiexzfUjhhgtg((String) listM2637Ujhhgtgfeyxiexzf.get(0), (String) listM2637Ujhhgtgfeyxiexzf.get(1), (String) listM2637Ujhhgtgfeyxiexzf.get(2));
         }
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        return new C1785feyxiexzfUjhhgtg(MagicFactory.get(4928234295077635466L, strArr), MagicFactory.get(4928234290782668170L, strArr), MagicFactory.get(4928234286487700874L, strArr));
+        return new C1785feyxiexzfUjhhgtg("", "", "");
     }
 
     @Override // p000.AbstractC2292feyxiexzfUjhhgtg
@@ -181,7 +181,7 @@ public final class C2249feyxiexzfUjhhgtg extends AbstractC2292feyxiexzfUjhhgtg {
     public final void mo1843feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5190feyxiexzfUjhhgtg(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Instrumentation.class)).m2024Ujhhgtgfeyxiexzf();
-        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928237477648401802L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "callApplicationOnCreate";
         C2285feyxiexzfUjhhgtg c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf = f7327Ujhhgtgfeyxiexzf.m2996Ujhhgtgfeyxiexzf((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Application.class)}, 1, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf), 1);
         c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf.m3483Ujhhgtgfeyxiexzf(new C2208Ujhhgtgfeyxiexzf(7));
         c2285feyxiexzfUjhhgtgM2996Ujhhgtgfeyxiexzf.m3485Ujhhgtgfeyxiexzf();

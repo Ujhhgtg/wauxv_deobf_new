@@ -15,11 +15,11 @@ public final /* synthetic */ class C1362feyxiexzfUjhhgtg implements InterfaceC35
         C1362feyxiexzfUjhhgtg c1362feyxiexzfUjhhgtg = new C1362feyxiexzfUjhhgtg();
         f4840Ujhhgtgfeyxiexzf = c1362feyxiexzfUjhhgtg;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928404161034192266L, strArr), c1362feyxiexzfUjhhgtg, 4);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928403237616223626L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928403340695438730L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928403314925634954L, strArr), false);
-        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf(MagicFactory.get(4928403426594784650L, strArr), true);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("wx.demo.hook.chat.PanelEmojiHook.PanelEmojiGroupConfig", c1362feyxiexzfUjhhgtg, 4);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("dirName", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("title", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("order", false);
+        c1412feyxiexzfUjhhgtg.m2922Ujhhgtgfeyxiexzf("enable", true);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

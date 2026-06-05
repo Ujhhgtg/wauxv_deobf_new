@@ -54,7 +54,7 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
             case 1:
                 C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg = (C3678feyxiexzfUjhhgtg) obj;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf = MagicFactory.get(4928867506401052042L, strArr);
+                c3678feyxiexzfUjhhgtg.f11695Ujhhgtgfeyxiexzf = "搜索好友/群聊";
                 ArrayList arrayList3 = new ArrayList();
                 ArrayList arrayList4 = new ArrayList();
                 ArrayList arrayList5 = new ArrayList();
@@ -62,7 +62,7 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                 if (cursorM5194feyxiexzfUjhhgtg != null) {
                     while (cursorM5194feyxiexzfUjhhgtg.moveToNext()) {
                         try {
-                            if (cursorM5194feyxiexzfUjhhgtg.getString(cursorM5194feyxiexzfUjhhgtg.getColumnIndex(MagicFactory.get(4928867609480267146L, strArr))).endsWith(MagicFactory.get(4928867570825561482L, strArr))) {
+                            if (cursorM5194feyxiexzfUjhhgtg.getString(cursorM5194feyxiexzfUjhhgtg.getColumnIndex("username")).endsWith("@chatroom")) {
                                 GroupInfo groupInfoM1316Ujhhgtgfeyxiexzf = AbstractC0217Ujhhgtgfeyxiexzf.m1316Ujhhgtgfeyxiexzf(cursorM5194feyxiexzfUjhhgtg);
                                 String roomId = groupInfoM1316Ujhhgtgfeyxiexzf.getRoomId();
                                 StringBuilder sb3 = new StringBuilder();
@@ -90,16 +90,16 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                                 StringBuilder sb5 = new StringBuilder();
                                 String nickname = friendInfoM1315Ujhhgtgfeyxiexzf.getNickname();
                                 ArrayList arrayList6 = arrayList5;
-                                if ((AbstractC1119feyxiexzfUjhhgtg.m2589feyxiexzfUjhhgtg(C0964feyxiexzfUjhhgtg.m2464Ujhhgtgfeyxiexzf(new C0964feyxiexzfUjhhgtg(MagicFactory.get(4928866565803214218L, strArr)), nickname)) > 3 ? nickname : null) != null) {
-                                    sb5.append(MagicFactory.get(4928866535738443146L, strArr));
+                                if ((AbstractC1119feyxiexzfUjhhgtg.m2589feyxiexzfUjhhgtg(C0964feyxiexzfUjhhgtg.m2464Ujhhgtgfeyxiexzf(new C0964feyxiexzfUjhhgtg("\r\n|\r|\n"), nickname)) > 3 ? nickname : null) != null) {
+                                    sb5.append("已过滤此昵称...");
                                     arrayList3 = arrayList3;
                                 } else {
                                     String str2 = nickname.length() > 8 ? nickname : null;
                                     if (str2 != null) {
                                         String strSubstring = str2.substring(0, 8);
-                                        MagicFactory.get(4928866630227723658L, strArr);
+                                        "substring(...)";
                                         sb5.append(strSubstring);
-                                        sb5.append(MagicFactory.get(4928866703242167690L, strArr));
+                                        sb5.append("...");
                                         sb = sb5;
                                     } else {
                                         sb = null;
@@ -145,10 +145,10 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                     arrayList = arrayList5;
                 }
                 c3678feyxiexzfUjhhgtg.m5371Ujhhgtgfeyxiexzf(arrayList);
-                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf(MagicFactory.get(4928866686062298506L, strArr), arrayList3);
-                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf(MagicFactory.get(4928866673177396618L, strArr), arrayList4);
+                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf("好友", arrayList3);
+                c3678feyxiexzfUjhhgtg.m5368Ujhhgtgfeyxiexzf("群聊", arrayList4);
                 c3678feyxiexzfUjhhgtg.f11696Ujhhgtgfeyxiexzf = R.drawable.ic_contact_send_24dp;
-                String str3 = MagicFactory.get(4928866797731448202L, strArr);
+                String str3 = "转发";
                 final int i2 = 0;
                 InterfaceC3553feyxiexzfUjhhgtg interfaceC3553feyxiexzfUjhhgtg = new InterfaceC3553feyxiexzfUjhhgtg() { // from class: 上海高中ᛱ谢子非ᛱᛱUjhhgtgᛱᛴᛱfeyxiexzfᛱ要点脸ᛳ能不能ᛲ
                     @Override // p000.InterfaceC3553feyxiexzfUjhhgtg
@@ -163,9 +163,9 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                                 }
                                 StringBuilder sb7 = new StringBuilder();
                                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                                sb7.append(MagicFactory.get(4928867545055757706L, strArr2));
+                                sb7.append("已转发至");
                                 sb7.append(list.size());
-                                sb7.append(MagicFactory.get(4928867523580921226L, strArr2));
+                                sb7.append("个会话");
                                 AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb7.toString());
                                 break;
                             default:
@@ -175,9 +175,9 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                                 }
                                 StringBuilder sb8 = new StringBuilder();
                                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                                sb8.append(MagicFactory.get(4928870607367439754L, strArr3));
+                                sb8.append("已转发至");
                                 sb8.append(list.size());
-                                sb8.append(MagicFactory.get(4928870723331556746L, strArr3));
+                                sb8.append("个会话");
                                 AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb8.toString());
                                 break;
                         }
@@ -195,7 +195,7 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
             default:
                 C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg2 = (C3678feyxiexzfUjhhgtg) obj;
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3678feyxiexzfUjhhgtg2.f11695Ujhhgtgfeyxiexzf = MagicFactory.get(4928870706151687562L, strArr2);
+                c3678feyxiexzfUjhhgtg2.f11695Ujhhgtgfeyxiexzf = "搜索好友/群聊";
                 ArrayList arrayList7 = new ArrayList();
                 ArrayList arrayList8 = new ArrayList();
                 ArrayList arrayList9 = new ArrayList();
@@ -204,7 +204,7 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                     while (cursorM5194feyxiexzfUjhhgtg2.moveToNext()) {
                         try {
                             C1943Ujhhgtgfeyxiexzf c1943Ujhhgtgfeyxiexzf3 = c1943Ujhhgtgfeyxiexzf2;
-                            if (cursorM5194feyxiexzfUjhhgtg2.getString(cursorM5194feyxiexzfUjhhgtg2.getColumnIndex(MagicFactory.get(4928870671791949194L, strArr2))).endsWith(MagicFactory.get(4928870770576197002L, strArr2))) {
+                            if (cursorM5194feyxiexzfUjhhgtg2.getString(cursorM5194feyxiexzfUjhhgtg2.getColumnIndex("username")).endsWith("@chatroom")) {
                                 GroupInfo groupInfoM1316Ujhhgtgfeyxiexzf2 = AbstractC0217Ujhhgtgfeyxiexzf.m1316Ujhhgtgfeyxiexzf(cursorM5194feyxiexzfUjhhgtg2);
                                 String roomId2 = groupInfoM1316Ujhhgtgfeyxiexzf2.getRoomId();
                                 StringBuilder sb7 = new StringBuilder();
@@ -229,16 +229,16 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                                 String wxid2 = friendInfoM1315Ujhhgtgfeyxiexzf2.getWxid();
                                 StringBuilder sb9 = new StringBuilder();
                                 String nickname2 = friendInfoM1315Ujhhgtgfeyxiexzf2.getNickname();
-                                if ((AbstractC1119feyxiexzfUjhhgtg.m2589feyxiexzfUjhhgtg(C0964feyxiexzfUjhhgtg.m2464Ujhhgtgfeyxiexzf(new C0964feyxiexzfUjhhgtg(MagicFactory.get(4928870727626524042L, strArr2)), nickname2)) > 3 ? nickname2 : null) != null) {
-                                    sb9.append(MagicFactory.get(4928870835000706442L, strArr2));
+                                if ((AbstractC1119feyxiexzfUjhhgtg.m2589feyxiexzfUjhhgtg(C0964feyxiexzfUjhhgtg.m2464Ujhhgtgfeyxiexzf(new C0964feyxiexzfUjhhgtg("\r\n|\r|\n"), nickname2)) > 3 ? nickname2 : null) != null) {
+                                    sb9.append("已过滤此昵称...");
                                     wxid2 = wxid2;
                                 } else {
                                     String str4 = nickname2.length() > 8 ? nickname2 : null;
                                     if (str4 != null) {
                                         String strSubstring2 = str4.substring(0, 8);
-                                        MagicFactory.get(4928870929489986954L, strArr2);
+                                        "substring(...)";
                                         sb9.append(strSubstring2);
-                                        sb9.append(MagicFactory.get(4928870865065477514L, strArr2));
+                                        sb9.append("...");
                                         sb2 = sb9;
                                     } else {
                                         sb2 = null;
@@ -275,10 +275,10 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                     c1943Ujhhgtgfeyxiexzf = c1943Ujhhgtgfeyxiexzf2;
                 }
                 c3678feyxiexzfUjhhgtg2.m5371Ujhhgtgfeyxiexzf(arrayList9);
-                c3678feyxiexzfUjhhgtg2.m5368Ujhhgtgfeyxiexzf(MagicFactory.get(4928869885812934026L, strArr2), arrayList7);
-                c3678feyxiexzfUjhhgtg2.m5368Ujhhgtgfeyxiexzf(MagicFactory.get(4928869872928032138L, strArr2), arrayList8);
+                c3678feyxiexzfUjhhgtg2.m5368Ujhhgtgfeyxiexzf("好友", arrayList7);
+                c3678feyxiexzfUjhhgtg2.m5368Ujhhgtgfeyxiexzf("群聊", arrayList8);
                 c3678feyxiexzfUjhhgtg2.f11696Ujhhgtgfeyxiexzf = R.drawable.ic_contact_send_24dp;
-                String str5 = MagicFactory.get(4928869860043130250L, strArr2);
+                String str5 = "转发";
                 final int i3 = 1;
                 InterfaceC3553feyxiexzfUjhhgtg interfaceC3553feyxiexzfUjhhgtg2 = new InterfaceC3553feyxiexzfUjhhgtg() { // from class: 上海高中ᛱ谢子非ᛱᛱUjhhgtgᛱᛴᛱfeyxiexzfᛱ要点脸ᛳ能不能ᛲ
                     @Override // p000.InterfaceC3553feyxiexzfUjhhgtg
@@ -293,9 +293,9 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                                 }
                                 StringBuilder sb10 = new StringBuilder();
                                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                                sb10.append(MagicFactory.get(4928867545055757706L, strArr3));
+                                sb10.append("已转发至");
                                 sb10.append(list.size());
-                                sb10.append(MagicFactory.get(4928867523580921226L, strArr3));
+                                sb10.append("个会话");
                                 AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb10.toString());
                                 break;
                             default:
@@ -305,9 +305,9 @@ public final /* synthetic */ class C0421Ujhhgtgfeyxiexzf implements InterfaceC35
                                 }
                                 StringBuilder sb11 = new StringBuilder();
                                 String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                                sb11.append(MagicFactory.get(4928870607367439754L, strArr4));
+                                sb11.append("已转发至");
                                 sb11.append(list.size());
-                                sb11.append(MagicFactory.get(4928870723331556746L, strArr4));
+                                sb11.append("个会话");
                                 AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb11.toString());
                                 break;
                         }

@@ -868,8 +868,8 @@ public abstract class AbstractC0615Ujhhgtgfeyxiexzf {
         int iM1895Ujhhgtgfeyxiexzf;
         Integer num;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        MagicFactory.get(4928808665349096842L, strArr);
-        MagicFactory.get(4928808613809489290L, strArr);
+        "buf == null";
+        "method == null";
         m1891Ujhhgtgfeyxiexzf(88, bArr);
         int iM1891Ujhhgtgfeyxiexzf = m1891Ujhhgtgfeyxiexzf(92, bArr);
         int iM1891Ujhhgtgfeyxiexzf2 = m1891Ujhhgtgfeyxiexzf(96, bArr);
@@ -948,7 +948,7 @@ public abstract class AbstractC0615Ujhhgtgfeyxiexzf {
             int i11 = bArr[i10] & 255;
             byte b = f2646Ujhhgtgfeyxiexzf[i11];
             if (b == 0) {
-                throw new RuntimeException(String.format(Locale.ROOT, MagicFactory.get(4928808686823933322L, strArr), Integer.valueOf(i11)));
+                throw new RuntimeException(String.format(Locale.ROOT, "Unrecognized opcode = 0x%02x", Integer.valueOf(i11)));
             }
             if (i11 == 20) {
                 numArr[bArr[i10 + 1] & 255] = Integer.valueOf(((m1890Ujhhgtgfeyxiexzf(i10 + 4, bArr) << 16) & (-65536)) | m1890Ujhhgtgfeyxiexzf(i10 + 2, bArr));
@@ -960,7 +960,7 @@ public abstract class AbstractC0615Ujhhgtgfeyxiexzf {
                     String strM1893Ujhhgtgfeyxiexzf3 = m1893Ujhhgtgfeyxiexzf(m1891Ujhhgtgfeyxiexzf(iM1890Ujhhgtgfeyxiexzf3 + 4, bArr), bArr);
                     strM1892Ujhhgtgfeyxiexzf3.getClass();
                     StringBuilder sbM2707Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(strM1894Ujhhgtgfeyxiexzf);
-                    sbM2707Ujhhgtgfeyxiexzf.append(MagicFactory.get(4928807217945118090L, strArr));
+                    sbM2707Ujhhgtgfeyxiexzf.append("->");
                     sbM2707Ujhhgtgfeyxiexzf.append(strM1893Ujhhgtgfeyxiexzf3);
                     sbM2707Ujhhgtgfeyxiexzf.append(strM1892Ujhhgtgfeyxiexzf3);
                     if (sbM2707Ujhhgtgfeyxiexzf.toString().equals(str) && (num = numArr[(m1890Ujhhgtgfeyxiexzf(i10 + 4, bArr) >> 4) & 15]) != null) {
@@ -1137,14 +1137,14 @@ public abstract class AbstractC0615Ujhhgtgfeyxiexzf {
         int iM1891Ujhhgtgfeyxiexzf2 = m1891Ujhhgtgfeyxiexzf(iM1891Ujhhgtgfeyxiexzf + 4, bArr);
         int iM1891Ujhhgtgfeyxiexzf3 = m1891Ujhhgtgfeyxiexzf(iM1891Ujhhgtgfeyxiexzf + 8, bArr);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        StringBuilder sb = new StringBuilder(MagicFactory.get(4928807711866357130L, strArr));
+        StringBuilder sb = new StringBuilder("(");
         if (iM1891Ujhhgtgfeyxiexzf3 != 0) {
             int iM1891Ujhhgtgfeyxiexzf4 = m1891Ujhhgtgfeyxiexzf(iM1891Ujhhgtgfeyxiexzf3, bArr);
             for (int i2 = 0; i2 < iM1891Ujhhgtgfeyxiexzf4; i2++) {
                 sb.append(m1894Ujhhgtgfeyxiexzf(m1890Ujhhgtgfeyxiexzf((i2 * 2) + iM1891Ujhhgtgfeyxiexzf3 + 4, bArr), bArr));
             }
         }
-        sb.append(MagicFactory.get(4928807840715376010L, strArr));
+        sb.append(")");
         sb.append(m1894Ujhhgtgfeyxiexzf(iM1891Ujhhgtgfeyxiexzf2, bArr));
         return sb.toString();
     }

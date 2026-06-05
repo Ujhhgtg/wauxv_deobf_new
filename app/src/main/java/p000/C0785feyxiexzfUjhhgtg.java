@@ -25,10 +25,10 @@ public final class C0785feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3088Ujhhgtgfeyxiexzf = new C0785feyxiexzfUjhhgtg(MagicFactory.get(4928842947778053514L, strArr));
-        f3089Ujhhgtgfeyxiexzf = MagicFactory.get(4928843145346549130L, strArr);
-        f3090Ujhhgtgfeyxiexzf = MagicFactory.get(4928843132461647242L, strArr);
-        f3091Ujhhgtgfeyxiexzf = MagicFactory.get(4928843110986810762L, strArr);
+        f3088Ujhhgtgfeyxiexzf = new C0785feyxiexzfUjhhgtg("QuickPullGroupHook");
+        f3089Ujhhgtgfeyxiexzf = "菜单";
+        f3090Ujhhgtgfeyxiexzf = "快捷拉群";
+        f3091Ujhhgtgfeyxiexzf = "为聊天列表菜单添加快捷邀请好友加群";
     }
 
     @Override // p000.InterfaceC0595Ujhhgtgfeyxiexzf
@@ -37,8 +37,8 @@ public final class C0785feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
         if (mo1424feyxiexzfUjhhgtg()) {
             String username = conversationBean.getUsername();
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            if (!AbstractC1152feyxiexzfUjhhgtg.m2623feyxiexzfUjhhgtg(username, MagicFactory.get(4928843003612628362L, strArr), false) && !conversationBean.getUsername().startsWith(MagicFactory.get(4928842995022693770L, strArr))) {
-                return Collections.singletonList(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_QuickPullGroup, MagicFactory.get(4928842977842824586L, strArr), new C1388feyxiexzfUjhhgtg(26)));
+            if (!AbstractC1152feyxiexzfUjhhgtg.m2623feyxiexzfUjhhgtg(username, "@", false) && !conversationBean.getUsername().startsWith("gh_")) {
+                return Collections.singletonList(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_QuickPullGroup, "快捷拉群", new C1388feyxiexzfUjhhgtg(26)));
             }
         }
         return C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;

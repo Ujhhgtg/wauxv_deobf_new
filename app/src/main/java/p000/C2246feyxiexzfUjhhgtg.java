@@ -40,7 +40,7 @@ public final class C2246feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
         int i = this.f7302Ujhhgtgfeyxiexzf;
         if (i == 0) {
             AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
-            this.f7303Ujhhgtgfeyxiexzf.setText(MagicFactory.get(4928234999452272010L, strArr));
+            this.f7303Ujhhgtgfeyxiexzf.setText("加载完成, 准备重启...");
             this.f7302Ujhhgtgfeyxiexzf = 1;
             Object objM2750Ujhhgtgfeyxiexzf = AbstractC1245feyxiexzfUjhhgtg.m2750Ujhhgtgfeyxiexzf(1000L, this);
             EnumC3746Ujhhgtgfeyxiexzf enumC3746Ujhhgtgfeyxiexzf = EnumC3746Ujhhgtgfeyxiexzf.f11822Ujhhgtgfeyxiexzf;
@@ -49,7 +49,7 @@ public final class C2246feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
             }
         } else {
             if (i != 1) {
-                throw new IllegalStateException(MagicFactory.get(4928234939322729866L, strArr));
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
         }

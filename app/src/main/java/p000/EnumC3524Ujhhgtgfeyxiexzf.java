@@ -34,11 +34,11 @@ public final class EnumC3524Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        EnumC3524Ujhhgtgfeyxiexzf enumC3524Ujhhgtgfeyxiexzf = new EnumC3524Ujhhgtgfeyxiexzf(MagicFactory.get(4928397448000308618L, strArr), 0, -1);
+        EnumC3524Ujhhgtgfeyxiexzf enumC3524Ujhhgtgfeyxiexzf = new EnumC3524Ujhhgtgfeyxiexzf("GONE", 0, -1);
         f11007Ujhhgtgfeyxiexzf = enumC3524Ujhhgtgfeyxiexzf;
-        EnumC3524Ujhhgtgfeyxiexzf enumC3524Ujhhgtgfeyxiexzf2 = new EnumC3524Ujhhgtgfeyxiexzf(MagicFactory.get(4928397426525472138L, strArr), 1, 0);
+        EnumC3524Ujhhgtgfeyxiexzf enumC3524Ujhhgtgfeyxiexzf2 = new EnumC3524Ujhhgtgfeyxiexzf("DEFAULT", 1, 0);
         f11008Ujhhgtgfeyxiexzf = enumC3524Ujhhgtgfeyxiexzf2;
-        EnumC3524Ujhhgtgfeyxiexzf enumC3524Ujhhgtgfeyxiexzf3 = new EnumC3524Ujhhgtgfeyxiexzf(MagicFactory.get(4928397392165733770L, strArr), 2, 1);
+        EnumC3524Ujhhgtgfeyxiexzf enumC3524Ujhhgtgfeyxiexzf3 = new EnumC3524Ujhhgtgfeyxiexzf("VISIBLE", 2, 1);
         f11009Ujhhgtgfeyxiexzf = enumC3524Ujhhgtgfeyxiexzf3;
         f11010Ujhhgtgfeyxiexzf = new EnumC3524Ujhhgtgfeyxiexzf[]{enumC3524Ujhhgtgfeyxiexzf, enumC3524Ujhhgtgfeyxiexzf2, enumC3524Ujhhgtgfeyxiexzf3};
     }

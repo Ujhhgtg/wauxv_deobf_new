@@ -24,10 +24,10 @@ public final class C2436Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7879Ujhhgtgfeyxiexzf = new C2436Ujhhgtgfeyxiexzf(MagicFactory.get(4928349692258944394L, strArr));
-        f7880Ujhhgtgfeyxiexzf = MagicFactory.get(4928348738776204682L, strArr);
-        f7881Ujhhgtgfeyxiexzf = MagicFactory.get(4928348863330256266L, strArr);
-        f7882Ujhhgtgfeyxiexzf = MagicFactory.get(4928348828970517898L, strArr);
+        f7879Ujhhgtgfeyxiexzf = new C2436Ujhhgtgfeyxiexzf("AntiRevoke1Hook");
+        f7880Ujhhgtgfeyxiexzf = "聊天";
+        f7881Ujhhgtgfeyxiexzf = "阻止消息撤回1";
+        f7882Ujhhgtgfeyxiexzf = "消息无撤回提示，流畅款，三款选一款";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

@@ -13,6 +13,6 @@ public final class C2732feyxiexzfUjhhgtg extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8694Ujhhgtgfeyxiexzf = new C2732feyxiexzfUjhhgtg(MagicFactory.get(4928363792636577162L, strArr), MagicFactory.get(4928363942960432522L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f8694Ujhhgtgfeyxiexzf = new C2732feyxiexzfUjhhgtg("ChatInputHintHook.ValHintTip", "今日已发${totalMsg}条", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

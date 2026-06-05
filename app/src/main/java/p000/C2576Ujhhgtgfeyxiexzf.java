@@ -52,17 +52,17 @@ public final class C2576Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928376552984413578L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928376540099511690L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8327Ujhhgtgfeyxiexzf = new C2576Ujhhgtgfeyxiexzf(MagicFactory.get(4928376922351601034L, strArr));
+        f8327Ujhhgtgfeyxiexzf = new C2576Ujhhgtgfeyxiexzf("BottomTabCustomHook");
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f8328Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928339410107237770L, strArr), MagicFactory.get(4928339508891485578L, strArr));
+        f8328Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Resource", "BottomTab");
         f8329Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(5));
         f8330Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(6));
         f8331Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(7));
         f8332Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(8));
         f8333Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(9));
-        f8334Ujhhgtgfeyxiexzf = MagicFactory.get(4928376527214609802L, strArr);
-        f8335Ujhhgtgfeyxiexzf = MagicFactory.get(4928376514329707914L, strArr);
-        f8336Ujhhgtgfeyxiexzf = MagicFactory.get(4928376625998857610L, strArr);
+        f8334Ujhhgtgfeyxiexzf = "美化";
+        f8335Ujhhgtgfeyxiexzf = "底栏自定义";
+        f8336Ujhhgtgfeyxiexzf = "替换主页底部标签栏相关资源为自定义";
         f8337Ujhhgtgfeyxiexzf = new C2556feyxiexzfUjhhgtg(18);
         f8338Ujhhgtgfeyxiexzf = true;
     }
@@ -76,7 +76,7 @@ public final class C2576Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛱUjhhgtgᛱᛳᛴ */
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-        C3658Ujhhgtgfeyxiexzf c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928377111330162058L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))).m2017Ujhhgtgfeyxiexzf();
+        C3658Ujhhgtgfeyxiexzf c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.ui.LauncherUIBottomTabView")).m2017Ujhhgtgfeyxiexzf();
         c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf.m4863Ujhhgtgfeyxiexzf(Arrays.copyOf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Context.class)}, 1));
         C3660Ujhhgtgfeyxiexzf c3660Ujhhgtgfeyxiexzf = (C3660Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf.m5356Ujhhgtgfeyxiexzf());
         C2576Ujhhgtgfeyxiexzf c2576Ujhhgtgfeyxiexzf = f8327Ujhhgtgfeyxiexzf;

@@ -61,7 +61,7 @@ public final /* synthetic */ class C2977Ujhhgtgfeyxiexzf implements InterfaceC35
             case 1:
                 Context context = ((RelativeLayout) this.f9282Ujhhgtgfeyxiexzf).getContext();
                 Intent intent = new Intent();
-                intent.setClassName(context, MagicFactory.get(4928209238238430602L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                intent.setClassName(context, "com.tencent.mm.plugin.setting.ui.setting.SettingsPersonalInfoUI");
                 context.startActivity(intent);
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 2:
@@ -197,7 +197,7 @@ public final /* synthetic */ class C2977Ujhhgtgfeyxiexzf implements InterfaceC35
                 c3061Ujhhgtgfeyxiexzf.m4626Ujhhgtgfeyxiexzf(numM2673feyxiexzfUjhhgtg9 != null ? numM2673feyxiexzfUjhhgtg9.intValue() : 99);
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case Opcodes.LDC /* 18 */:
-                return AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(new StringBuilder(), MagicFactory.get(4928284791008134538L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), (String) this.f9282Ujhhgtgfeyxiexzf);
+                return AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(new StringBuilder(), "val.", (String) this.f9282Ujhhgtgfeyxiexzf);
             case 19:
                 AbstractC3266feyxiexzfUjhhgtg abstractC3266feyxiexzfUjhhgtg = (AbstractC3266feyxiexzfUjhhgtg) this.f9282Ujhhgtgfeyxiexzf;
                 StringBuilder sb = new StringBuilder();
@@ -253,7 +253,7 @@ public final /* synthetic */ class C2977Ujhhgtgfeyxiexzf implements InterfaceC35
                 C0533Ujhhgtgfeyxiexzf.f2501Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(c0328Ujhhgtgfeyxiexzf2.f1934Ujhhgtgfeyxiexzf));
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 26:
-                C0557Ujhhgtgfeyxiexzf.f2558Ujhhgtgfeyxiexzf.m4628Ujhhgtgfeyxiexzf(AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(((C0319Ujhhgtgfeyxiexzf) this.f9282Ujhhgtgfeyxiexzf).f1877Ujhhgtgfeyxiexzf), new String[]{MagicFactory.get(4928396331308811658L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf)})));
+                C0557Ujhhgtgfeyxiexzf.f2558Ujhhgtgfeyxiexzf.m4628Ujhhgtgfeyxiexzf(AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(((C0319Ujhhgtgfeyxiexzf) this.f9282Ujhhgtgfeyxiexzf).f1877Ujhhgtgfeyxiexzf), new String[]{","})));
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 27:
                 C0326Ujhhgtgfeyxiexzf c0326Ujhhgtgfeyxiexzf3 = (C0326Ujhhgtgfeyxiexzf) this.f9282Ujhhgtgfeyxiexzf;
@@ -261,7 +261,7 @@ public final /* synthetic */ class C2977Ujhhgtgfeyxiexzf implements InterfaceC35
                 C0564Ujhhgtgfeyxiexzf.f2577Ujhhgtgfeyxiexzf.m4624Ujhhgtgfeyxiexzf(c0326Ujhhgtgfeyxiexzf3.f1924Ujhhgtgfeyxiexzf.isChecked());
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 28:
-                return ((Context) this.f9282Ujhhgtgfeyxiexzf).getFilesDir().getAbsolutePath() + MagicFactory.get(4928283979259315594L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                return ((Context) this.f9282Ujhhgtgfeyxiexzf).getFilesDir().getAbsolutePath() + "/fastkv/";
             default:
                 return new C3270feyxiexzfUjhhgtg(((C0385Ujhhgtgfeyxiexzf) this.f9282Ujhhgtgfeyxiexzf).f2119Ujhhgtgfeyxiexzf);
         }

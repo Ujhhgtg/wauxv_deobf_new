@@ -138,7 +138,7 @@ public final class C0113Ujhhgtgfeyxiexzf extends FrameLayout {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ, reason: contains not printable characters */
     public static void m1168Ujhhgtgfeyxiexzf(C0113Ujhhgtgfeyxiexzf c0113Ujhhgtgfeyxiexzf, ValueAnimator valueAnimator) {
         Object animatedValue = valueAnimator.getAnimatedValue();
-        MagicFactory.get(4928349228402476426L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        "null cannot be cast to non-null type kotlin.Float";
         c0113Ujhhgtgfeyxiexzf.setPressProgress(((Float) animatedValue).floatValue());
     }
 
@@ -274,7 +274,7 @@ public final class C0113Ujhhgtgfeyxiexzf extends FrameLayout {
                 int iM1172Ujhhgtgfeyxiexzf = m1172Ujhhgtgfeyxiexzf(4.0f);
                 View view = this.f1260Ujhhgtgfeyxiexzf;
                 ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-                MagicFactory.get(4928346372249224586L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type android.widget.FrameLayout.LayoutParams";
                 FrameLayout.LayoutParams layoutParams2 = (FrameLayout.LayoutParams) layoutParams;
                 int i = width - (iM1172Ujhhgtgfeyxiexzf * 2);
                 if (i < 0) {

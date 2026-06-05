@@ -27,7 +27,7 @@ public final class C2508feyxiexzfUjhhgtg extends AbstractC2485feyxiexzfUjhhgtg {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928463062215689610L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sb.append("Header(title=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f8189Ujhhgtgfeyxiexzf, ')');
     }
 }

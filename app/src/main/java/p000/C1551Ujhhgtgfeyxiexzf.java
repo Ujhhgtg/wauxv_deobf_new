@@ -62,15 +62,15 @@ public final class C1551Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928119967343183242L, strArr));
+        sb.append("or5Proto(tmpl_version_info=");
         sb.append(this.f5353Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928120121962005898L, strArr));
+        sb.append(", tmpl_type=");
         sb.append(this.f5354Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928120203566384522L, strArr));
+        sb.append(", camera_tmpl_id=");
         sb.append(this.f5355Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928120263695926666L, strArr));
+        sb.append(", permitted_publish_method_flag=");
         sb.append(this.f5356Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928120396839912842L, strArr));
+        sb.append(", camera_position=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f5357Ujhhgtgfeyxiexzf, ')');
     }
 }

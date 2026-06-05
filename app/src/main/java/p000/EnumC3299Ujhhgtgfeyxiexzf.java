@@ -34,7 +34,7 @@ public final class EnumC3299Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        EnumC3299Ujhhgtgfeyxiexzf[] enumC3299UjhhgtgfeyxiexzfArr = {new EnumC3299Ujhhgtgfeyxiexzf(0, MagicFactory.get(4928863877153686922L, strArr), MagicFactory.get(4928863859973817738L, strArr), 0), new EnumC3299Ujhhgtgfeyxiexzf(1, MagicFactory.get(4928863988822836618L, strArr), MagicFactory.get(4928863971642967434L, strArr), 1), new EnumC3299Ujhhgtgfeyxiexzf(2, MagicFactory.get(4928863963053032842L, strArr), MagicFactory.get(4928863937283229066L, strArr), 2), new EnumC3299Ujhhgtgfeyxiexzf(3, MagicFactory.get(4928863928693294474L, strArr), MagicFactory.get(4928864044657411466L, strArr), 3), new EnumC3299Ujhhgtgfeyxiexzf(4, MagicFactory.get(4928864036067476874L, strArr), MagicFactory.get(4928864014592640394L, strArr), 4), new EnumC3299Ujhhgtgfeyxiexzf(5, MagicFactory.get(4928864006002705802L, strArr), MagicFactory.get(4928864126261790090L, strArr), 5)};
+        EnumC3299Ujhhgtgfeyxiexzf[] enumC3299UjhhgtgfeyxiexzfArr = {new EnumC3299Ujhhgtgfeyxiexzf(0, "ONE", "一", 0), new EnumC3299Ujhhgtgfeyxiexzf(1, "TWO", "二", 1), new EnumC3299Ujhhgtgfeyxiexzf(2, "THREE", "三", 2), new EnumC3299Ujhhgtgfeyxiexzf(3, "FOUR", "四", 3), new EnumC3299Ujhhgtgfeyxiexzf(4, "FIVE", "五", 4), new EnumC3299Ujhhgtgfeyxiexzf(5, "SIX", "六", 5)};
         f10335Ujhhgtgfeyxiexzf = enumC3299UjhhgtgfeyxiexzfArr;
         f10336Ujhhgtgfeyxiexzf = new C3369feyxiexzfUjhhgtg(enumC3299UjhhgtgfeyxiexzfArr);
     }

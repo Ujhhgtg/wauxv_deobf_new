@@ -62,15 +62,15 @@ public final class C1506Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928134127850358154L, strArr));
+        sb.append("o22Proto(contact=");
         sb.append(this.f5272Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928133225907225994L, strArr));
+        sb.append(", enable_click_author=");
         sb.append(this.f5273Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928133264561931658L, strArr));
+        sb.append(", h5_url=");
         sb.append(this.f5274Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928133359051212170L, strArr));
+        sb.append(", friend_data=");
         sb.append(this.f5275Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928133432065656202L, strArr));
+        sb.append(", lite_app_param=");
         sb.append(this.f5276Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

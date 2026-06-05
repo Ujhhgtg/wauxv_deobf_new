@@ -110,31 +110,31 @@ public final class C1508Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928129957437113738L, strArr));
+        sb.append("nr5Proto(d=");
         sb.append(this.f5278Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130043336459658L, strArr));
+        sb.append(", e=");
         sb.append(this.f5279Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130021861623178L, strArr));
+        sb.append(", f=");
         sb.append(this.f5280Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130000386786698L, strArr));
+        sb.append(", g=");
         sb.append(this.f5281Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130116350903690L, strArr));
+        sb.append(", h=");
         sb.append(this.f5282Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130094876067210L, strArr));
+        sb.append(", i=");
         sb.append(this.f5283Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130073401230730L, strArr));
+        sb.append(", j=");
         sb.append(this.f5284Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130189365347722L, strArr));
+        sb.append(", n=");
         sb.append(this.f5285Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130167890511242L, strArr));
+        sb.append(", o=");
         sb.append(this.f5286Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130146415674762L, strArr));
+        sb.append(", p=");
         sb.append(this.f5287Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130262379791754L, strArr));
+        sb.append(", q=");
         sb.append(this.f5288Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130240904955274L, strArr));
+        sb.append(", r=");
         sb.append(this.f5289Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928130219430118794L, strArr));
+        sb.append(", s=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5290Ujhhgtgfeyxiexzf, ')');
     }
 }

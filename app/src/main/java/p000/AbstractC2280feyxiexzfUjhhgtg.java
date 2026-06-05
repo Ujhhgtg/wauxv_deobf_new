@@ -39,6 +39,6 @@ public abstract class AbstractC2280feyxiexzfUjhhgtg {
         Long l = (Long) c0919feyxiexzfUjhhgtg;
         long jLongValue = l != null ? l.longValue() : 0L;
         f7474Ujhhgtgfeyxiexzf = jLongValue;
-        f7475Ujhhgtgfeyxiexzf = AbstractC3612feyxiexzfUjhhgtg.m5246Ujhhgtgfeyxiexzf(jLongValue, null, ZoneId.of(MagicFactory.get(4928339002085344650L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf)), 1);
+        f7475Ujhhgtgfeyxiexzf = AbstractC3612feyxiexzfUjhhgtg.m5246Ujhhgtgfeyxiexzf(jLongValue, null, ZoneId.of("Asia/Shanghai"), 1);
     }
 }

@@ -25,10 +25,10 @@ public final class C2448feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7913Ujhhgtgfeyxiexzf = new C2448feyxiexzfUjhhgtg(MagicFactory.get(4928352380908471690L, strArr));
-        f7914Ujhhgtgfeyxiexzf = MagicFactory.get(4928408486066259338L, strArr);
-        f7915Ujhhgtgfeyxiexzf = MagicFactory.get(4928408473181357450L, strArr);
-        f7916Ujhhgtgfeyxiexzf = MagicFactory.get(4928408580555539850L, strArr);
+        f7913Ujhhgtgfeyxiexzf = new C2448feyxiexzfUjhhgtg("AutoViewOriginalPhotoHook");
+        f7914Ujhhgtgfeyxiexzf = "聊天";
+        f7915Ujhhgtgfeyxiexzf = "自动查看原图";
+        f7916Ujhhgtgfeyxiexzf = "在打开图片和视频时自动点击查看原图";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

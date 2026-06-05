@@ -25,10 +25,10 @@ public final class C2317Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7574Ujhhgtgfeyxiexzf = new C2317Ujhhgtgfeyxiexzf(MagicFactory.get(4928893555377702282L, strArr));
-        f7575Ujhhgtgfeyxiexzf = MagicFactory.get(4928893864615347594L, strArr);
-        f7576Ujhhgtgfeyxiexzf = MagicFactory.get(4928893847435478410L, strArr);
-        f7577Ujhhgtgfeyxiexzf = MagicFactory.get(4928893950514693514L, strArr);
+        f7574Ujhhgtgfeyxiexzf = new C2317Ujhhgtgfeyxiexzf("AntiSnsAdInfo");
+        f7575Ujhhgtgfeyxiexzf = "朋友圈";
+        f7576Ujhhgtgfeyxiexzf = "拦截朋友圈广告";
+        f7577Ujhhgtgfeyxiexzf = "拦截浏览朋友圈出现各种碍眼广告项目";
         f7578Ujhhgtgfeyxiexzf = true;
     }
 
@@ -36,7 +36,7 @@ public final class C2317Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛱUjhhgtgᛱᛳᛴ */
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-        C3658Ujhhgtgfeyxiexzf c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928893632687113610L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))).m2017Ujhhgtgfeyxiexzf();
+        C3658Ujhhgtgfeyxiexzf c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.sns.storage.ADInfo")).m2017Ujhhgtgfeyxiexzf();
         c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf.m4863Ujhhgtgfeyxiexzf(Arrays.copyOf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class)}, 1));
         C3660Ujhhgtgfeyxiexzf c3660Ujhhgtgfeyxiexzf = (C3660Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3658UjhhgtgfeyxiexzfM2017Ujhhgtgfeyxiexzf.m5356Ujhhgtgfeyxiexzf());
         C2317Ujhhgtgfeyxiexzf c2317Ujhhgtgfeyxiexzf = f7574Ujhhgtgfeyxiexzf;

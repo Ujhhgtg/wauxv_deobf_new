@@ -24,10 +24,10 @@ public final class C2431Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7867Ujhhgtgfeyxiexzf = new C2431Ujhhgtgfeyxiexzf(MagicFactory.get(4928869366121891210L, strArr));
-        f7868Ujhhgtgfeyxiexzf = MagicFactory.get(4928868820661044618L, strArr);
-        f7869Ujhhgtgfeyxiexzf = MagicFactory.get(4928868803481175434L, strArr);
-        f7870Ujhhgtgfeyxiexzf = MagicFactory.get(4928868910855357834L, strArr);
+        f7867Ujhhgtgfeyxiexzf = new C2431Ujhhgtgfeyxiexzf("AntiBizPageAdHook");
+        f7868Ujhhgtgfeyxiexzf = "订阅号";
+        f7869Ujhhgtgfeyxiexzf = "屏蔽文章广告";
+        f7870Ujhhgtgfeyxiexzf = "屏蔽公众号文章中的信息流与底部广告";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

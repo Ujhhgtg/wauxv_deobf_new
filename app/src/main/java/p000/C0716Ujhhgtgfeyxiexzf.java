@@ -62,15 +62,15 @@ public final class C0716Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928519485201057162L, strArr));
+        sb.append("ScopeInfo(scope=");
         sb.append(this.f2963Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928519549625566602L, strArr));
+        sb.append(", desc=");
         sb.append(this.f2964Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928519515265828234L, strArr));
+        sb.append(", authState=");
         sb.append(this.f2965Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928519596870206858L, strArr));
+        sb.append(", extDesc=");
         sb.append(this.f2966Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928505393413358986L, strArr));
+        sb.append(", authDesc=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f2967Ujhhgtgfeyxiexzf, ')');
     }
 }

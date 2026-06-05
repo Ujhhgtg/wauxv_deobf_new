@@ -90,7 +90,7 @@ public final /* synthetic */ class C2550feyxiexzfUjhhgtg implements InterfaceC35
                 return linkedHashMap.isEmpty() ? C3308feyxiexzfUjhhgtg.f10345Ujhhgtgfeyxiexzf : linkedHashMap;
             case 4:
                 C3514feyxiexzfUjhhgtg c3514feyxiexzfUjhhgtg = new C3514feyxiexzfUjhhgtg((String) ((C2065feyxiexzfUjhhgtg) ((C2629Ujhhgtgfeyxiexzf) this.f8276Ujhhgtgfeyxiexzf).f8461Ujhhgtgfeyxiexzf).getValue(), (String) this.f8277Ujhhgtgfeyxiexzf);
-                String str3 = MagicFactory.get(4928283940604609930L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                String str3 = "WAuxiliary";
                 if (str3.length() == 0) {
                     throw new NoSuchElementException("Char sequence is empty.");
                 }
@@ -120,8 +120,8 @@ public final /* synthetic */ class C2550feyxiexzfUjhhgtg implements InterfaceC35
                 C0457Ujhhgtgfeyxiexzf c0457Ujhhgtgfeyxiexzf = C0457Ujhhgtgfeyxiexzf.f2360Ujhhgtgfeyxiexzf;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
                 LinkedList linkedList = new LinkedList();
-                String str6 = MagicFactory.get(4928248829246965130L, strArr);
-                String str7 = MagicFactory.get(4928248824951997834L, strArr);
+                String str6 = "";
+                String str7 = "";
                 c0457Ujhhgtgfeyxiexzf.getClass();
                 Object objNewInstance = AbstractC1791feyxiexzfUjhhgtg.m3153feyxiexzfUjhhgtg(C0461Ujhhgtgfeyxiexzf.f2364Ujhhgtgfeyxiexzf).newInstance(str5, linkedList, 1, str6, str7, 0, 1089, null);
                 C1345feyxiexzfUjhhgtg c1345feyxiexzfUjhhgtg = C1345feyxiexzfUjhhgtg.f4823Ujhhgtgfeyxiexzf;

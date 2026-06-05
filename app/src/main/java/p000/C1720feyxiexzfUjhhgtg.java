@@ -56,13 +56,13 @@ public final class C1720feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928103607812752778L, strArr));
+        sb.append("sf0Proto(diff_extra_count=");
         sb.append(this.f5774Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928103629287589258L, strArr));
+        sb.append(", total_extra_count=");
         sb.append(this.f5775Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928103813971182986L, strArr));
+        sb.append(", type=");
         sb.append(this.f5776Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928103779611444618L, strArr));
+        sb.append(", need_display_diff=");
         sb.append(this.f5777Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

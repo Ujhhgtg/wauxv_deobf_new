@@ -50,7 +50,7 @@ public final /* synthetic */ class RunnableC3262feyxiexzfUjhhgtg implements Runn
                         ColorDrawable colorDrawable = new ColorDrawable(c1019feyxiexzfUjhhgtg.f3986Ujhhgtgfeyxiexzf.getColor(R.color.md_theme_primaryContainer));
                         colorDrawable.setBounds(0, 0, view.getWidth(), view.getHeight());
                         view.getOverlay().add(colorDrawable);
-                        ObjectAnimator objectAnimatorOfInt = ObjectAnimator.ofInt(colorDrawable, MagicFactory.get(4928454871713056138L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), 0, Opcodes.FCMPG, 0, Opcodes.FCMPG, 0);
+                        ObjectAnimator objectAnimatorOfInt = ObjectAnimator.ofInt(colorDrawable, "alpha", 0, Opcodes.FCMPG, 0, Opcodes.FCMPG, 0);
                         objectAnimatorOfInt.addListener(new C1113feyxiexzfUjhhgtg(view, colorDrawable));
                         objectAnimatorOfInt.setDuration(900L);
                         objectAnimatorOfInt.start();

@@ -47,18 +47,18 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 5:
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg(MagicFactory.get(4928347209767847306L, strArr), MagicFactory.get(4928347158228239754L, strArr));
+                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg("workerScope", "username");
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 6:
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg(MagicFactory.get(4928347257012487562L, strArr2), MagicFactory.get(4928347342911833482L, strArr2));
+                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg("workerScope", "username");
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 7:
                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
                 View viewM2416Ujhhgtgfeyxiexzf = AbstractC0924feyxiexzfUjhhgtg.m2416Ujhhgtgfeyxiexzf((View) obj, R.layout.module_dialog_round_avatar, null, false);
                 Slider slider = (Slider) AbstractC1246feyxiexzfUjhhgtg.m2765Ujhhgtgfeyxiexzf(viewM2416Ujhhgtgfeyxiexzf, R.id.moduleDialogSliderRoundAvatar);
                 if (slider == null) {
-                    throw new NullPointerException(MagicFactory.get(4928805766246172042L, strArr3).concat(viewM2416Ujhhgtgfeyxiexzf.getResources().getResourceName(R.id.moduleDialogSliderRoundAvatar)));
+                    throw new NullPointerException("Missing required view with ID: ".concat(viewM2416Ujhhgtgfeyxiexzf.getResources().getResourceName(R.id.moduleDialogSliderRoundAvatar)));
                 }
                 LinearLayout linearLayout = (LinearLayout) viewM2416Ujhhgtgfeyxiexzf;
                 C0307Ujhhgtgfeyxiexzf c0307Ujhhgtgfeyxiexzf = new C0307Ujhhgtgfeyxiexzf(linearLayout, slider, 0);
@@ -67,7 +67,7 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                 C0946feyxiexzfUjhhgtg.f3792Ujhhgtgfeyxiexzf.getClass();
                 c0290Ujhhgtgfeyxiexzf.f1721Ujhhgtgfeyxiexzf = C0946feyxiexzfUjhhgtg.f3794Ujhhgtgfeyxiexzf;
                 c0290Ujhhgtgfeyxiexzf.f1723Ujhhgtgfeyxiexzf = linearLayout;
-                c0290Ujhhgtgfeyxiexzf.m1502Ujhhgtgfeyxiexzf(MagicFactory.get(4928347050854057354L, strArr3), new C0350Ujhhgtgfeyxiexzf(11, c0307Ujhhgtgfeyxiexzf));
+                c0290Ujhhgtgfeyxiexzf.m1502Ujhhgtgfeyxiexzf("保存", new C0350Ujhhgtgfeyxiexzf(11, c0307Ujhhgtgfeyxiexzf));
                 AbstractC1225feyxiexzfUjhhgtg.m2709Ujhhgtgfeyxiexzf(c0290Ujhhgtgfeyxiexzf, null, 3);
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 8:
@@ -111,7 +111,7 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                 C0300Ujhhgtgfeyxiexzf c0300Ujhhgtgfeyxiexzf = new C0300Ujhhgtgfeyxiexzf();
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf2 = new C0394Ujhhgtgfeyxiexzf();
                 String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c0394Ujhhgtgfeyxiexzf2.m1661feyxiexzfUjhhgtg(MagicFactory.get(4928206437919753610L, strArr4), MagicFactory.get(4928206562473805194L, strArr4), MagicFactory.get(4928206794402039178L, strArr4));
+                c0394Ujhhgtgfeyxiexzf2.m1661feyxiexzfUjhhgtg("MicroMsg.ChattingUI.VideoComponent", "send video path: %s, toUser:%s, origin:%b", "ChattingUI_importMultiVideo");
                 c0300Ujhhgtgfeyxiexzf.m1528Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf2);
                 c0394Ujhhgtgfeyxiexzf.f2141Ujhhgtgfeyxiexzf = c0300Ujhhgtgfeyxiexzf;
                 Class<Runnable> clsM5159Ujhhgtgfeyxiexzf = AbstractC3593Ujhhgtgfeyxiexzf.m5159Ujhhgtgfeyxiexzf(AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Runnable.class));
@@ -139,7 +139,7 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                                     textInputEditText.setText(C1097feyxiexzfUjhhgtg.f4179Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf());
                                     textInputEditText2.setText(C1078feyxiexzfUjhhgtg.f4150Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf());
                                     materialTextView.setMovementMethod(LinkMovementMethod.getInstance());
-                                    SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(MagicFactory.get(4928907788899321226L, strArr5));
+                                    SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder("点击占位符自动添加以下字段:\n");
                                     for (String str2 : C1079feyxiexzfUjhhgtg.f4152Ujhhgtgfeyxiexzf) {
                                         int length = spannableStringBuilder.length();
                                         spannableStringBuilder.append((CharSequence) (str2 + ' '));
@@ -150,8 +150,8 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                                     C1079feyxiexzfUjhhgtg.f4151Ujhhgtgfeyxiexzf.getClass();
                                     c0290Ujhhgtgfeyxiexzf2.f1721Ujhhgtgfeyxiexzf = C1079feyxiexzfUjhhgtg.f4154Ujhhgtgfeyxiexzf;
                                     c0290Ujhhgtgfeyxiexzf2.f1723Ujhhgtgfeyxiexzf = c0328Ujhhgtgfeyxiexzf.f1932Ujhhgtgfeyxiexzf;
-                                    c0290Ujhhgtgfeyxiexzf2.m1502Ujhhgtgfeyxiexzf(MagicFactory.get(4928907857618797962L, strArr5), new C0350Ujhhgtgfeyxiexzf(12, c0328Ujhhgtgfeyxiexzf));
-                                    c0290Ujhhgtgfeyxiexzf2.m1501Ujhhgtgfeyxiexzf(MagicFactory.get(4928907844733896074L, strArr5), new C0478Ujhhgtgfeyxiexzf(13));
+                                    c0290Ujhhgtgfeyxiexzf2.m1502Ujhhgtgfeyxiexzf("保存", new C0350Ujhhgtgfeyxiexzf(12, c0328Ujhhgtgfeyxiexzf));
+                                    c0290Ujhhgtgfeyxiexzf2.m1501Ujhhgtgfeyxiexzf("重置", new C0478Ujhhgtgfeyxiexzf(13));
                                     C0290Ujhhgtgfeyxiexzf.m1498Ujhhgtgfeyxiexzf(c0290Ujhhgtgfeyxiexzf2, null, 3);
                                     c0290Ujhhgtgfeyxiexzf2.m1500Ujhhgtgfeyxiexzf().m1681feyxiexzfUjhhgtg();
                                     return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
@@ -160,7 +160,7 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                         }
                     }
                 }
-                throw new NullPointerException(MagicFactory.get(4928805903685125514L, strArr5).concat(viewM2416Ujhhgtgfeyxiexzf2.getResources().getResourceName(i)));
+                throw new NullPointerException("Missing required view with ID: ".concat(viewM2416Ujhhgtgfeyxiexzf2.getResources().getResourceName(i)));
             case Opcodes.LDC /* 18 */:
                 Object objM1849Ujhhgtgfeyxiexzf = ((C0578Ujhhgtgfeyxiexzf) obj).m1849Ujhhgtgfeyxiexzf();
                 if (!(objM1849Ujhhgtgfeyxiexzf instanceof Activity)) {
@@ -173,11 +173,11 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                 }
                 Intent intent = activity.getIntent();
                 String[] strArr6 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                String stringExtra = intent.getStringExtra(MagicFactory.get(4928907969287947658L, strArr6));
+                String stringExtra = intent.getStringExtra("Contact_Nick");
                 Intent intent2 = activity.getIntent();
-                String str3 = MagicFactory.get(4928907913453372810L, strArr6);
+                String str3 = "Contact_RemarkName";
                 C1079feyxiexzfUjhhgtg.f4151Ujhhgtgfeyxiexzf.getClass();
-                intent2.putExtra(str3, AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(C1097feyxiexzfUjhhgtg.f4179Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), MagicFactory.get(4928904000738166154L, strArr6), stringExtra), MagicFactory.get(4928904103817381258L, strArr6), AbstractC3612feyxiexzfUjhhgtg.m5246Ujhhgtgfeyxiexzf(System.currentTimeMillis(), C1078feyxiexzfUjhhgtg.f4150Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), null, 2)));
+                intent2.putExtra(str3, AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(C1097feyxiexzfUjhhgtg.f4179Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), "${nick}", stringExtra), "${time}", AbstractC3612feyxiexzfUjhhgtg.m5246Ujhhgtgfeyxiexzf(System.currentTimeMillis(), C1078feyxiexzfUjhhgtg.f4150Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), null, 2)));
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 19:
                 ((C3265feyxiexzfUjhhgtg) obj).f10255Ujhhgtgfeyxiexzf = new C0914feyxiexzfUjhhgtg(20);
@@ -187,7 +187,7 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case Opcodes.ILOAD /* 21 */:
                 String[] strArr7 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928496593025369482L, strArr7), MagicFactory.get(4928496751939159434L, strArr7), MagicFactory.get(4928496687514649994L, strArr7));
+                ((C2812Ujhhgtgfeyxiexzf) obj).m4143Ujhhgtgfeyxiexzf("MicroMsg.SceneVoiceService", "//voicetrymore", "getVoiceService %s");
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case Opcodes.LLOAD /* 22 */:
                 C3265feyxiexzfUjhhgtg c3265feyxiexzfUjhhgtg3 = (C3265feyxiexzfUjhhgtg) obj;
@@ -197,9 +197,9 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
             case Opcodes.FLOAD /* 23 */:
                 C3456feyxiexzfUjhhgtg c3456feyxiexzfUjhhgtg = (C3456feyxiexzfUjhhgtg) obj;
                 String[] strArr8 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                c3456feyxiexzfUjhhgtg.m4953Ujhhgtgfeyxiexzf(MagicFactory.get(4928555103364842890L, strArr8));
+                c3456feyxiexzfUjhhgtg.m4953Ujhhgtgfeyxiexzf("com.tencent.mm.storage");
                 C2812Ujhhgtgfeyxiexzf c2812Ujhhgtgfeyxiexzf = new C2812Ujhhgtgfeyxiexzf();
-                c2812Ujhhgtgfeyxiexzf.m4143Ujhhgtgfeyxiexzf(MagicFactory.get(4928555605876016522L, strArr8), MagicFactory.get(4928555739020002698L, strArr8));
+                c2812Ujhhgtgfeyxiexzf.m4143Ujhhgtgfeyxiexzf("MicroMsg.ServerConfigInfoStorage", "writeConfigToLocalFile, path: %s, info:%s");
                 c3456feyxiexzfUjhhgtg.f10746Ujhhgtgfeyxiexzf = c2812Ujhhgtgfeyxiexzf;
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case Opcodes.DLOAD /* 24 */:
@@ -208,12 +208,12 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
             case Opcodes.ALOAD /* 25 */:
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf3 = (C0394Ujhhgtgfeyxiexzf) obj;
                 String[] strArr9 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, MagicFactory.get(4928554871436608906L, strArr9));
-                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, MagicFactory.get(4928554824191968650L, strArr9));
-                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, MagicFactory.get(4928554905796347274L, strArr9));
-                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, MagicFactory.get(4928555017465496970L, strArr9));
-                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, MagicFactory.get(4928555086184973706L, strArr9));
-                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, MagicFactory.get(4928555137724581258L, strArr9));
+                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, "deviceinfo");
+                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, "MANUFACTURER");
+                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, "MODEL");
+                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, "VERSION_RELEASE");
+                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, "VERSION_INCREMENTAL");
+                C0394Ujhhgtgfeyxiexzf.m1651Ujhhgtgfeyxiexzf(c0394Ujhhgtgfeyxiexzf3, "DISPLAY");
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 26:
                 ((C3265feyxiexzfUjhhgtg) obj).f10256Ujhhgtgfeyxiexzf = new C0914feyxiexzfUjhhgtg(27);
@@ -222,7 +222,7 @@ public final /* synthetic */ class C0914feyxiexzfUjhhgtg implements InterfaceC35
                 ((C3452feyxiexzfUjhhgtg) obj).m4950Ujhhgtgfeyxiexzf(new C0914feyxiexzfUjhhgtg(28));
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             case 28:
-                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg(MagicFactory.get(4928497018227131786L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                ((C0394Ujhhgtgfeyxiexzf) obj).m1661feyxiexzfUjhhgtg("calling getService(...)");
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             default:
                 ((C3265feyxiexzfUjhhgtg) obj).f10256Ujhhgtgfeyxiexzf = new C1003feyxiexzfUjhhgtg(0);

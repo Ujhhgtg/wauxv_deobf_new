@@ -39,19 +39,19 @@ public final /* synthetic */ class C0998feyxiexzfUjhhgtg implements InterfaceC35
             case 1:
                 C2421Ujhhgtgfeyxiexzf c2421Ujhhgtgfeyxiexzf2 = (C2421Ujhhgtgfeyxiexzf) obj;
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                String str = MagicFactory.get(4928837995680761226L, strArr);
+                String str = "dalvik.annotation.Signature";
                 c2421Ujhhgtgfeyxiexzf2.getClass();
                 C2812Ujhhgtgfeyxiexzf c2812Ujhhgtgfeyxiexzf = new C2812Ujhhgtgfeyxiexzf();
                 c2812Ujhhgtgfeyxiexzf.f8946Ujhhgtgfeyxiexzf = new C1155feyxiexzfUjhhgtg(str, 5, false);
                 c2421Ujhhgtgfeyxiexzf2.f7837Ujhhgtgfeyxiexzf = c2812Ujhhgtgfeyxiexzf;
                 C2414Ujhhgtgfeyxiexzf c2414Ujhhgtgfeyxiexzf = new C2414Ujhhgtgfeyxiexzf();
-                c2414Ujhhgtgfeyxiexzf.f7823Ujhhgtgfeyxiexzf = new C1155feyxiexzfUjhhgtg(MagicFactory.get(4928838983523239306L, strArr), 5, false);
+                c2414Ujhhgtgfeyxiexzf.f7823Ujhhgtgfeyxiexzf = new C1155feyxiexzfUjhhgtg("value", 5, false);
                 C2416Ujhhgtgfeyxiexzf c2416Ujhhgtgfeyxiexzf = new C2416Ujhhgtgfeyxiexzf();
                 c2416Ujhhgtgfeyxiexzf.f7828Ujhhgtgfeyxiexzf = 1;
                 c2416Ujhhgtgfeyxiexzf.f7828Ujhhgtgfeyxiexzf = 2;
-                C2416Ujhhgtgfeyxiexzf.m3668Ujhhgtgfeyxiexzf(c2416Ujhhgtgfeyxiexzf, MagicFactory.get(4928838880444024202L, strArr));
+                C2416Ujhhgtgfeyxiexzf.m3668Ujhhgtgfeyxiexzf(c2416Ujhhgtgfeyxiexzf, "Lcom/tencent/mm/sdk/event/IListener<");
                 C2416Ujhhgtgfeyxiexzf.m3668Ujhhgtgfeyxiexzf(c2416Ujhhgtgfeyxiexzf, this.f3914Ujhhgtgfeyxiexzf);
-                C2416Ujhhgtgfeyxiexzf.m3668Ujhhgtgfeyxiexzf(c2416Ujhhgtgfeyxiexzf, MagicFactory.get(4928838996408141194L, strArr));
+                C2416Ujhhgtgfeyxiexzf.m3668Ujhhgtgfeyxiexzf(c2416Ujhhgtgfeyxiexzf, ">;");
                 C2417Ujhhgtgfeyxiexzf c2417Ujhhgtgfeyxiexzf = new C2417Ujhhgtgfeyxiexzf();
                 c2417Ujhhgtgfeyxiexzf.f7829Ujhhgtgfeyxiexzf = c2416Ujhhgtgfeyxiexzf;
                 c2417Ujhhgtgfeyxiexzf.f7830Ujhhgtgfeyxiexzf = 12;

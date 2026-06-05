@@ -50,11 +50,11 @@ public final class C1505Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928069780650329482L, strArr));
+        sb.append("mg5Proto(name=");
         sb.append(this.f5269Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928069853664773514L, strArr));
+        sb.append(", innerTabType=");
         sb.append(this.f5270Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928069922384250250L, strArr));
+        sb.append(", topicId=");
         sb.append(this.f5271Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

@@ -44,9 +44,9 @@ public final class C1652feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928563581630285194L, strArr));
+        sb.append("w90Proto(dynamic_voice_live_img_url=");
         sb.append(this.f5610Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928619772687418762L, strArr));
+        sb.append(", static_voice_img_url=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f5611Ujhhgtgfeyxiexzf, ')');
     }
 }

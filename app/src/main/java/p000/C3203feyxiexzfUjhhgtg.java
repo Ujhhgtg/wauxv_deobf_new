@@ -27,10 +27,10 @@ public final class C3203feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9893Ujhhgtgfeyxiexzf = new C3203feyxiexzfUjhhgtg(MagicFactory.get(4928413240595056010L, strArr));
-        f9894Ujhhgtgfeyxiexzf = MagicFactory.get(4928412506155648394L, strArr);
-        f9895Ujhhgtgfeyxiexzf = MagicFactory.get(4928412630709699978L, strArr);
-        f9896Ujhhgtgfeyxiexzf = MagicFactory.get(4928412600644928906L, strArr);
+        f9893Ujhhgtgfeyxiexzf = new C3203feyxiexzfUjhhgtg("DisablePlayRingtoneHook");
+        f9894Ujhhgtgfeyxiexzf = "聊天";
+        f9895Ujhhgtgfeyxiexzf = "屏蔽通话铃声";
+        f9896Ujhhgtgfeyxiexzf = "屏蔽视频及语音通话时呼出呼入的铃声";
         f9897Ujhhgtgfeyxiexzf = new C3172feyxiexzfUjhhgtg(4);
     }
 

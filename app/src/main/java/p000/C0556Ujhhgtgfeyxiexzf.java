@@ -27,10 +27,10 @@ public final class C0556Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2553Ujhhgtgfeyxiexzf = new C0556Ujhhgtgfeyxiexzf(MagicFactory.get(4928381668290463114L, strArr));
-        f2554Ujhhgtgfeyxiexzf = MagicFactory.get(4928380697627854218L, strArr);
-        f2555Ujhhgtgfeyxiexzf = MagicFactory.get(4928380822181905802L, strArr);
-        f2556Ujhhgtgfeyxiexzf = MagicFactory.get(4928380796412102026L, strArr);
+        f2553Ujhhgtgfeyxiexzf = new C0556Ujhhgtgfeyxiexzf("HideDividerLineHook");
+        f2554Ujhhgtgfeyxiexzf = "净化";
+        f2555Ujhhgtgfeyxiexzf = "隐藏分割线";
+        f2556Ujhhgtgfeyxiexzf = "隐藏主界面聊天消息列表的灰色分割线";
         f2557Ujhhgtgfeyxiexzf = true;
     }
 

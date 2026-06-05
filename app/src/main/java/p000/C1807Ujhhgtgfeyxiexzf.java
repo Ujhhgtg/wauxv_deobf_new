@@ -44,9 +44,9 @@ public final class C1807Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928617955916252554L, strArr));
+        sb.append("xq5Proto(animation_start_time_offset_ms=");
         sb.append(this.f6098Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928616955188872586L, strArr));
+        sb.append(", duration_ms=");
         sb.append(this.f6099Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

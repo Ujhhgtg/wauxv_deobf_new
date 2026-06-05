@@ -32,11 +32,11 @@ public final class C1059feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928873704038860170L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928873824297944458L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4112Ujhhgtgfeyxiexzf = new C1059feyxiexzfUjhhgtg(MagicFactory.get(4928889956195108234L, strArr));
-        f4113Ujhhgtgfeyxiexzf = new String[]{MagicFactory.get(4928873923082192266L, strArr), MagicFactory.get(4928873991801669002L, strArr), MagicFactory.get(4928873957441930634L, strArr), MagicFactory.get(4928874060521145738L, strArr), MagicFactory.get(4928874159305393546L, strArr)};
-        f4114Ujhhgtgfeyxiexzf = MagicFactory.get(4928874107765785994L, strArr);
-        f4115Ujhhgtgfeyxiexzf = MagicFactory.get(4928874228024870282L, strArr);
-        f4116Ujhhgtgfeyxiexzf = MagicFactory.get(4928874193665131914L, strArr);
+        f4112Ujhhgtgfeyxiexzf = new C1059feyxiexzfUjhhgtg("SnsInfoHook");
+        f4113Ujhhgtgfeyxiexzf = new String[]{"${originalText}", "${time}", "${type}", "${snsId}", "${userName}"};
+        f4114Ujhhgtgfeyxiexzf = "朋友圈";
+        f4115Ujhhgtgfeyxiexzf = "朋友圈底部详情";
+        f4116Ujhhgtgfeyxiexzf = "为朋友圈列表项的底部添加自定义文本";
         f4117Ujhhgtgfeyxiexzf = new C1003feyxiexzfUjhhgtg(24);
     }
 
@@ -45,28 +45,28 @@ public final class C1059feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
         C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928889904655500682L, strArr);
+        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "field_snsId";
         long jLongValue = ((Number) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf)).m4939Ujhhgtgfeyxiexzf()).longValue();
         C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928889990554846602L, strArr);
+        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "field_userName";
         String str = (String) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2)).m4939Ujhhgtgfeyxiexzf();
         C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928890063569290634L, strArr);
+        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = "field_createTime";
         int iIntValue = ((Number) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3)).m4939Ujhhgtgfeyxiexzf()).intValue();
         C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928890127993800074L, strArr);
+        c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = "field_type";
         int iIntValue2 = ((Number) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4)).m4939Ujhhgtgfeyxiexzf()).intValue();
-        String strM2681feyxiexzfUjhhgtg = AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(C1050feyxiexzfUjhhgtg.f4101Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), MagicFactory.get(4928889118676485514L, strArr), AbstractC3612feyxiexzfUjhhgtg.m5246Ujhhgtgfeyxiexzf(((long) iIntValue) * 1000, C1051feyxiexzfUjhhgtg.f4102Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), null, 2));
-        String str2 = MagicFactory.get(4928889084316747146L, strArr);
+        String strM2681feyxiexzfUjhhgtg = AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(C1050feyxiexzfUjhhgtg.f4101Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), "${time}", AbstractC3612feyxiexzfUjhhgtg.m5246Ujhhgtgfeyxiexzf(((long) iIntValue) * 1000, C1051feyxiexzfUjhhgtg.f4102Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), null, 2));
+        String str2 = "${type}";
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928889187395962250L, strArr));
+        sb.append("0x");
         AbstractC0217Ujhhgtgfeyxiexzf.m1310Ujhhgtgfeyxiexzf(16);
         String string = Integer.toString(iIntValue2, 16);
-        MagicFactory.get(4928889174511060362L, strArr);
+        "toString(...)";
         String upperCase = string.toUpperCase(Locale.ROOT);
-        MagicFactory.get(4928889251820471690L, strArr);
+        "toUpperCase(...)";
         sb.append(upperCase);
-        return AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(strM2681feyxiexzfUjhhgtg, str2, sb.toString()), MagicFactory.get(4928889316244981130L, strArr), String.valueOf(jLongValue)), MagicFactory.get(4928889415029228938L, strArr), str);
+        return AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(strM2681feyxiexzfUjhhgtg, str2, sb.toString()), "${snsId}", String.valueOf(jLongValue)), "${userName}", str);
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

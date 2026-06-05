@@ -264,7 +264,7 @@ public abstract class AbstractC1245feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛳᛴ, reason: contains not printable characters */
     public static final Integer m2751Ujhhgtgfeyxiexzf(Object obj, String str) {
-        String str2 = MagicFactory.get(4928227191201727882L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+        String str2 = "id";
         if (obj instanceof View) {
             Resources resources = ((View) obj).getResources();
             C0580Ujhhgtgfeyxiexzf.f2600Ujhhgtgfeyxiexzf.getClass();

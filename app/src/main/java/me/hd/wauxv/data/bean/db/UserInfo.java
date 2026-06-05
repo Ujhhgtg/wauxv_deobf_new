@@ -89,11 +89,11 @@ public final class UserInfo {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928308181400028554L, strArr));
+        sb.append("UserInfo(id=");
         sb.append(this.id);
-        sb.append(MagicFactory.get(4928308125565453706L, strArr));
+        sb.append(", type=");
         sb.append(this.type);
-        sb.append(MagicFactory.get(4928308228644668810L, strArr));
+        sb.append(", value=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.value, ')');
     }
 }

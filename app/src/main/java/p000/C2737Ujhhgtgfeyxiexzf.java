@@ -63,7 +63,7 @@ public final class C2737Ujhhgtgfeyxiexzf implements TextWatcher {
                         } else if (abstractC2485feyxiexzfUjhhgtg instanceof C2486feyxiexzfUjhhgtg) {
                             str = ((C2486feyxiexzfUjhhgtg) abstractC2485feyxiexzfUjhhgtg).f8119Ujhhgtgfeyxiexzf;
                         } else {
-                            str = abstractC2485feyxiexzfUjhhgtg instanceof C2489feyxiexzfUjhhgtg ? ((C2489feyxiexzfUjhhgtg) abstractC2485feyxiexzfUjhhgtg).f8124Ujhhgtgfeyxiexzf : MagicFactory.get(4928467172499391882L, strArr);
+                            str = abstractC2485feyxiexzfUjhhgtg instanceof C2489feyxiexzfUjhhgtg ? ((C2489feyxiexzfUjhhgtg) abstractC2485feyxiexzfUjhhgtg).f8124Ujhhgtgfeyxiexzf : "";
                         }
                         String str4 = str;
                         if (z2) {
@@ -98,11 +98,11 @@ public final class C2737Ujhhgtgfeyxiexzf implements TextWatcher {
                         z = true;
                     }
                     if (arrayList.isEmpty()) {
-                        c1019feyxiexzfUjhhgtg.m2517Ujhhgtgfeyxiexzf().m3268Ujhhgtgfeyxiexzf(Collections.singletonList(new C2508feyxiexzfUjhhgtg(MagicFactory.get(4928467142434620810L, strArr))));
+                        c1019feyxiexzfUjhhgtg.m2517Ujhhgtgfeyxiexzf().m3268Ujhhgtgfeyxiexzf(Collections.singletonList(new C2508feyxiexzfUjhhgtg("未找到匹配的功能")));
                     } else {
                         C1905feyxiexzfUjhhgtg c1905feyxiexzfUjhhgtgM2517Ujhhgtgfeyxiexzf = c1019feyxiexzfUjhhgtg.m2517Ujhhgtgfeyxiexzf();
                         C0094Ujhhgtgfeyxiexzf c0094Ujhhgtgfeyxiexzf = new C0094Ujhhgtgfeyxiexzf(10);
-                        c0094Ujhhgtgfeyxiexzf.add(new C2508feyxiexzfUjhhgtg(MagicFactory.get(4928467168204424586L, strArr) + arrayList.size() + ')'));
+                        c0094Ujhhgtgfeyxiexzf.add(new C2508feyxiexzfUjhhgtg("搜索结果(" + arrayList.size() + ')'));
                         c0094Ujhhgtgfeyxiexzf.addAll(arrayList);
                         c1905feyxiexzfUjhhgtgM2517Ujhhgtgfeyxiexzf.m3268Ujhhgtgfeyxiexzf(AbstractC1245feyxiexzfUjhhgtg.m2746Ujhhgtgfeyxiexzf(c0094Ujhhgtgfeyxiexzf));
                     }
@@ -110,7 +110,7 @@ public final class C2737Ujhhgtgfeyxiexzf implements TextWatcher {
                     C1905feyxiexzfUjhhgtg c1905feyxiexzfUjhhgtgM2517Ujhhgtgfeyxiexzf2 = c1019feyxiexzfUjhhgtg.m2517Ujhhgtgfeyxiexzf();
                     ModuleTabLayout moduleTabLayout2 = c1019feyxiexzfUjhhgtg.f3991Ujhhgtgfeyxiexzf;
                     if (moduleTabLayout2 == null) {
-                        MagicFactory.get(4928464393655551370L, strArr);
+                        "tabLayout";
                     } else {
                         moduleTabLayout = moduleTabLayout2;
                     }

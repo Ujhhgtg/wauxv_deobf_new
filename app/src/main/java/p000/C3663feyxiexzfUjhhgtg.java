@@ -44,13 +44,13 @@ public final class C3663feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928462095848048010L, strArr));
+        sb.append("ContactInfo(id=");
         sb.append(this.f11657Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928462164567524746L, strArr));
+        sb.append(", name=");
         sb.append(this.f11658Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928462130207786378L, strArr));
+        sb.append(", desc=");
         sb.append(this.f11659Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928462233287001482L, strArr));
+        sb.append(", isSelected=");
         sb.append(this.f11660Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

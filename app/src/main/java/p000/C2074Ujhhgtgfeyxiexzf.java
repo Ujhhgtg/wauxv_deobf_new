@@ -42,20 +42,20 @@ public final class C2074Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f6812Ujhhgtgfeyxiexzf = new C2074Ujhhgtgfeyxiexzf(MagicFactory.get(4928906126746977674L, strArr));
-        String[] strArr2 = {MagicFactory.get(4928906405919851914L, strArr), MagicFactory.get(4928906496114165130L, strArr), MagicFactory.get(4928906466049394058L, strArr), MagicFactory.get(4928906530473903498L, strArr), MagicFactory.get(4928906612078282122L, strArr), MagicFactory.get(4928892408621434250L, strArr)};
+        f6812Ujhhgtgfeyxiexzf = new C2074Ujhhgtgfeyxiexzf("SystemBrowserHook");
+        String[] strArr2 = {"weixin.com", "qq.com", "weixin.qq.com.cn", "wechatpay.cn", "tenpay.com", "weixinbridge.com"};
         LinkedHashSet linkedHashSet = new LinkedHashSet(AbstractC0202Ujhhgtgfeyxiexzf.m1280Ujhhgtgfeyxiexzf(6));
         for (int i = 0; i < 6; i++) {
             linkedHashSet.add(strArr2[i]);
         }
         f6813Ujhhgtgfeyxiexzf = linkedHashSet;
-        String[] strArr3 = {MagicFactory.get(4928892473045943690L, strArr)};
+        String[] strArr3 = {"test.com"};
         LinkedHashSet linkedHashSet2 = new LinkedHashSet(AbstractC0202Ujhhgtgfeyxiexzf.m1280Ujhhgtgfeyxiexzf(1));
         linkedHashSet2.add(strArr3[0]);
         f6814Ujhhgtgfeyxiexzf = linkedHashSet2;
-        f6815Ujhhgtgfeyxiexzf = MagicFactory.get(4928892571830191498L, strArr);
-        f6816Ujhhgtgfeyxiexzf = MagicFactory.get(4928892558945289610L, strArr);
-        f6817Ujhhgtgfeyxiexzf = MagicFactory.get(4928892533175485834L, strArr);
+        f6815Ujhhgtgfeyxiexzf = "杂项";
+        f6816Ujhhgtgfeyxiexzf = "系统浏览器";
+        f6817Ujhhgtgfeyxiexzf = "致敬经典模块 '去你大爷的内置浏览器' ";
         f6818Ujhhgtgfeyxiexzf = new C1127feyxiexzfUjhhgtg(18);
     }
 
@@ -66,11 +66,11 @@ public final class C2074Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         String shortClassName;
         ActivityOptions activityOptionsMakeBasic;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        if (!mo1424feyxiexzfUjhhgtg() || (stringExtra = intent.getStringExtra(MagicFactory.get(4928906298545669514L, strArr))) == null || AbstractC1152feyxiexzfUjhhgtg.m2631feyxiexzfUjhhgtg(stringExtra)) {
+        if (!mo1424feyxiexzfUjhhgtg() || (stringExtra = intent.getStringExtra("rawUrl")) == null || AbstractC1152feyxiexzfUjhhgtg.m2631feyxiexzfUjhhgtg(stringExtra)) {
             return;
         }
-        if (stringExtra.startsWith(MagicFactory.get(4928906268480898442L, strArr)) || stringExtra.startsWith(MagicFactory.get(4928906371560113546L, strArr))) {
-            String strM2641Ujhhgtgfeyxiexzf = AbstractC1152feyxiexzfUjhhgtg.m2641Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2639Ujhhgtgfeyxiexzf(stringExtra, MagicFactory.get(4928906186876519818L, strArr), stringExtra), MagicFactory.get(4928906307135604106L, strArr));
+        if (stringExtra.startsWith("http://") || stringExtra.startsWith("https://")) {
+            String strM2641Ujhhgtgfeyxiexzf = AbstractC1152feyxiexzfUjhhgtg.m2641Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2639Ujhhgtgfeyxiexzf(stringExtra, "://", stringExtra), "/");
             int iM4619Ujhhgtgfeyxiexzf = C2071Ujhhgtgfeyxiexzf.f6807Ujhhgtgfeyxiexzf.m4619Ujhhgtgfeyxiexzf();
             if (iM4619Ujhhgtgfeyxiexzf == EnumC2067feyxiexzfUjhhgtg.f6799Ujhhgtgfeyxiexzf.f6802Ujhhgtgfeyxiexzf) {
                 Set setM4622Ujhhgtgfeyxiexzf = C2072feyxiexzfUjhhgtg.f6808Ujhhgtgfeyxiexzf.m4622Ujhhgtgfeyxiexzf();
@@ -95,7 +95,7 @@ public final class C2074Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                 return;
             }
             ComponentName component = intent.getComponent();
-            if (component == null || (shortClassName = component.getShortClassName()) == null || !AbstractC1152feyxiexzfUjhhgtg.m2623feyxiexzfUjhhgtg(shortClassName, MagicFactory.get(4928906332905407882L, strArr), false)) {
+            if (component == null || (shortClassName = component.getShortClassName()) == null || !AbstractC1152feyxiexzfUjhhgtg.m2623feyxiexzfUjhhgtg(shortClassName, "MMWebViewUI", false)) {
                 return;
             }
             Intent intent2 = new Intent("android.intent.action.VIEW");

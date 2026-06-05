@@ -146,7 +146,7 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                 } catch (CancellationException e2) {
                     throw e2;
                 } catch (Throwable th) {
-                    throw new ConvertException(responseExecute, MagicFactory.get(4928445899526374794L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), th, null, 8, null);
+                    throw new ConvertException(responseExecute, "An unexpected error occurred in the converter", th, null, 8, null);
                 }
             case 1:
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -167,13 +167,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf != null) {
                         return (Response) objM1747Ujhhgtgfeyxiexzf;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928445289641018762L, strArr));
+                    throw new NullPointerException("null cannot be cast to non-null type okhttp3.Response");
                 } catch (NetException e3) {
                     throw e3;
                 } catch (CancellationException e4) {
                     throw e4;
                 } catch (Throwable th2) {
-                    throw new ConvertException(responseExecute2, MagicFactory.get(4928444507956970890L, strArr), th2, null, 8, null);
+                    throw new ConvertException(responseExecute2, "An unexpected error occurred in the converter", th2, null, 8, null);
                 }
             case 2:
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -198,13 +198,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf2 != null) {
                         return (Response) objM1747Ujhhgtgfeyxiexzf2;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928448433557079434L, strArr2));
+                    throw new NullPointerException("null cannot be cast to non-null type okhttp3.Response");
                 } catch (NetException e5) {
                     throw e5;
                 } catch (CancellationException e6) {
                     throw e6;
                 } catch (Throwable th3) {
-                    throw new ConvertException(responseExecute3, MagicFactory.get(4928448613945705866L, strArr2), th3, null, 8, null);
+                    throw new ConvertException(responseExecute3, "An unexpected error occurred in the converter", th3, null, 8, null);
                 }
             case 3:
                 String[] strArr3 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -225,13 +225,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf3 != null) {
                         return (File) objM1747Ujhhgtgfeyxiexzf3;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928899186079827338L, strArr3));
+                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e7) {
                     throw e7;
                 } catch (CancellationException e8) {
                     throw e8;
                 } catch (Throwable th4) {
-                    throw new ConvertException(responseExecute4, MagicFactory.get(4928899383648322954L, strArr3), th4, null, 8, null);
+                    throw new ConvertException(responseExecute4, "An unexpected error occurred in the converter", th4, null, 8, null);
                 }
             case 4:
                 String[] strArr4 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -252,13 +252,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf4 != null) {
                         return (File) objM1747Ujhhgtgfeyxiexzf4;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928837566184031626L, strArr4));
+                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e9) {
                     throw e9;
                 } catch (CancellationException e10) {
                     throw e10;
                 } catch (Throwable th5) {
-                    throw new ConvertException(responseExecute5, MagicFactory.get(4928837763752527242L, strArr4), th5, null, 8, null);
+                    throw new ConvertException(responseExecute5, "An unexpected error occurred in the converter", th5, null, 8, null);
                 }
             case 5:
                 String[] strArr5 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -279,13 +279,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf5 != null) {
                         return (File) objM1747Ujhhgtgfeyxiexzf5;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928837372910503306L, strArr5));
+                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e11) {
                     throw e11;
                 } catch (CancellationException e12) {
                     throw e12;
                 } catch (Throwable th6) {
-                    throw new ConvertException(responseExecute6, MagicFactory.get(4928836470967371146L, strArr5), th6, null, 8, null);
+                    throw new ConvertException(responseExecute6, "An unexpected error occurred in the converter", th6, null, 8, null);
                 }
             case 6:
                 String[] strArr6 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -306,13 +306,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf6 != null) {
                         return (File) objM1747Ujhhgtgfeyxiexzf6;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928836153139791242L, strArr6));
+                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e13) {
                     throw e13;
                 } catch (CancellationException e14) {
                     throw e14;
                 } catch (Throwable th7) {
-                    throw new ConvertException(responseExecute7, MagicFactory.get(4928822057057125770L, strArr6), th7, null, 8, null);
+                    throw new ConvertException(responseExecute7, "An unexpected error occurred in the converter", th7, null, 8, null);
                 }
             case 7:
                 String[] strArr7 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -333,13 +333,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf7 != null) {
                         return (File) objM1747Ujhhgtgfeyxiexzf7;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928824479418680714L, strArr7));
+                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e15) {
                     throw e15;
                 } catch (CancellationException e16) {
                     throw e16;
                 } catch (Throwable th8) {
-                    throw new ConvertException(responseExecute8, MagicFactory.get(4928823714914502026L, strArr7), th8, null, 8, null);
+                    throw new ConvertException(responseExecute8, "An unexpected error occurred in the converter", th8, null, 8, null);
                 }
             case 8:
                 String[] strArr8 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -360,13 +360,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf8 != null) {
                         return (File) objM1747Ujhhgtgfeyxiexzf8;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928823186633524618L, strArr8));
+                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e17) {
                     throw e17;
                 } catch (CancellationException e18) {
                     throw e18;
                 } catch (Throwable th9) {
-                    throw new ConvertException(responseExecute9, MagicFactory.get(4928823384202020234L, strArr8), th9, null, 8, null);
+                    throw new ConvertException(responseExecute9, "An unexpected error occurred in the converter", th9, null, 8, null);
                 }
             default:
                 String[] strArr9 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
@@ -387,13 +387,13 @@ public final class C1418feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
                     if (objM1747Ujhhgtgfeyxiexzf9 != null) {
                         return (File) objM1747Ujhhgtgfeyxiexzf9;
                     }
-                    throw new NullPointerException(MagicFactory.get(4928823066374440330L, strArr9));
+                    throw new NullPointerException("null cannot be cast to non-null type java.io.File");
                 } catch (NetException e19) {
                     throw e19;
                 } catch (CancellationException e20) {
                     throw e20;
                 } catch (Throwable th10) {
-                    throw new ConvertException(responseExecute10, MagicFactory.get(4928826562477819274L, strArr9), th10, null, 8, null);
+                    throw new ConvertException(responseExecute10, "An unexpected error occurred in the converter", th10, null, 8, null);
                 }
         }
     }

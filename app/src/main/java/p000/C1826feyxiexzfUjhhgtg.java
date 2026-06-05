@@ -60,13 +60,13 @@ public final class C1826feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928606101806515594L, strArr));
+        sb.append("ze1Proto(cdnTransInfo=");
         sb.append(this.f6150Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928606277900174730L, strArr));
+        sb.append(", anchor_video_params=");
         sb.append(this.f6151Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928606316554880394L, strArr));
+        sb.append(", audience_cdn_quality_cfg=");
         sb.append(this.f6152Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928606471173703050L, strArr));
+        sb.append(", audience_cdn_url=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6153Ujhhgtgfeyxiexzf, ')');
     }
 }

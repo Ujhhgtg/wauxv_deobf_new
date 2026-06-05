@@ -27,10 +27,10 @@ public final class C0343Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f1973Ujhhgtgfeyxiexzf = new C0343Ujhhgtgfeyxiexzf(MagicFactory.get(4928901307793671562L, strArr));
-        f1974Ujhhgtgfeyxiexzf = MagicFactory.get(4928901483887330698L, strArr);
-        f1975Ujhhgtgfeyxiexzf = MagicFactory.get(4928901471002428810L, strArr);
-        f1976Ujhhgtgfeyxiexzf = MagicFactory.get(4928901578376611210L, strArr);
+        f1973Ujhhgtgfeyxiexzf = new C0343Ujhhgtgfeyxiexzf("MoreMsgRevokeHook");
+        f1974Ujhhgtgfeyxiexzf = "菜单";
+        f1975Ujhhgtgfeyxiexzf = "多选消息撤回";
+        f1976Ujhhgtgfeyxiexzf = "支持多选聊天消息后进行批量撤回操作";
     }
 
     @Override // p000.InterfaceC0612Ujhhgtgfeyxiexzf
@@ -40,7 +40,7 @@ public final class C0343Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             Iterator it = arrayList.iterator();
             while (it.hasNext()) {
                 if (((MsgInfoBean) it.next()).isSend()) {
-                    return Collections.singletonList(new C0313Ujhhgtgfeyxiexzf(R.id.MenuItem_MoreBtnBar_Revoke, MagicFactory.get(4928901505362167178L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), new C0221Ujhhgtgfeyxiexzf(10)));
+                    return Collections.singletonList(new C0313Ujhhgtgfeyxiexzf(R.id.MenuItem_MoreBtnBar_Revoke, "批量撤回", new C0221Ujhhgtgfeyxiexzf(10)));
                 }
             }
         }

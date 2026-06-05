@@ -13,6 +13,6 @@ public final class C1207feyxiexzfUjhhgtg extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4509Ujhhgtgfeyxiexzf = new C1207feyxiexzfUjhhgtg(MagicFactory.get(4928879674043401610L, strArr), MagicFactory.get(4928878819344909706L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f4509Ujhhgtgfeyxiexzf = new C1207feyxiexzfUjhhgtg("SnsUploadAppInfoHook.ValWindowsAppName", "网抑云音乐", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

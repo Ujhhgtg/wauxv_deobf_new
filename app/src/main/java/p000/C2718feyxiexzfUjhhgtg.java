@@ -56,7 +56,7 @@ public final class C2718feyxiexzfUjhhgtg extends AbstractC0699Ujhhgtgfeyxiexzf {
                 }
                 C0629Ujhhgtgfeyxiexzf.f2673Ujhhgtgfeyxiexzf.getClass();
                 if (!C0629Ujhhgtgfeyxiexzf.m1908Ujhhgtgfeyxiexzf(arrayList3)) {
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928787405260981642L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "保存失败");
                     return;
                 }
                 arrayList.clear();
@@ -138,13 +138,13 @@ public final class C2718feyxiexzfUjhhgtg extends AbstractC0699Ujhhgtgfeyxiexzf {
                 } else {
                     Iterator it = list.iterator();
                     while (it.hasNext()) {
-                        if (C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(((C2755feyxiexzfUjhhgtg) it.next()).f8729Ujhhgtgfeyxiexzf, MagicFactory.get(4928797876391249290L, strArr))) {
+                        if (C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(((C2755feyxiexzfUjhhgtg) it.next()).f8729Ujhhgtgfeyxiexzf, "群工具")) {
                             abstractC3099Ujhhgtgfeyxiexzf = C2762Ujhhgtgfeyxiexzf.f8747Ujhhgtgfeyxiexzf;
                         }
                     }
                     abstractC3099Ujhhgtgfeyxiexzf = C2761Ujhhgtgfeyxiexzf.f8746Ujhhgtgfeyxiexzf;
                 }
-                abstractC3099Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg((List) this.f8664Ujhhgtgfeyxiexzf, MagicFactory.get(4928797859211380106L, strArr), null, null, new C2771Ujhhgtgfeyxiexzf(21), 30));
+                abstractC3099Ujhhgtgfeyxiexzf.m4629Ujhhgtgfeyxiexzf(AbstractC2856feyxiexzfUjhhgtg.m4243feyxiexzfUjhhgtg((List) this.f8664Ujhhgtgfeyxiexzf, ",", null, null, new C2771Ujhhgtgfeyxiexzf(21), 30));
                 return true;
             default:
                 int iM2172Ujhhgtgfeyxiexzf5 = abstractC0821feyxiexzfUjhhgtg.m2172Ujhhgtgfeyxiexzf();
@@ -169,12 +169,12 @@ public final class C2718feyxiexzfUjhhgtg extends AbstractC0699Ujhhgtgfeyxiexzf {
                     Context context = ((RecyclerView) this.f8666Ujhhgtgfeyxiexzf).getContext();
                     String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
                     if (Build.VERSION.SDK_INT >= 31) {
-                        Object systemService = context.getSystemService(MagicFactory.get(4928228492576818570L, strArr));
-                        MagicFactory.get(4928228557001328010L, strArr);
+                        Object systemService = context.getSystemService("vibrator_manager");
+                        "null cannot be cast to non-null type android.os.VibratorManager";
                         defaultVibrator = AbstractC2666Ujhhgtgfeyxiexzf.m3997Ujhhgtgfeyxiexzf(systemService).getDefaultVibrator();
                     } else {
-                        Object systemService2 = context.getSystemService(MagicFactory.get(4928227732367607178L, strArr));
-                        MagicFactory.get(4928227831151854986L, strArr);
+                        Object systemService2 = context.getSystemService("vibrator");
+                        "null cannot be cast to non-null type android.os.Vibrator";
                         defaultVibrator = (Vibrator) systemService2;
                     }
                     defaultVibrator.vibrate(VibrationEffect.createOneShot(40L, -1));

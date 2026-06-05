@@ -64,10 +64,10 @@ public final class C0541Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928859178459465098L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928859135509792138L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2517Ujhhgtgfeyxiexzf = new C0541Ujhhgtgfeyxiexzf(MagicFactory.get(4928857112580195722L, strArr));
-        f2518Ujhhgtgfeyxiexzf = MagicFactory.get(4928859229999072650L, strArr);
-        f2519Ujhhgtgfeyxiexzf = MagicFactory.get(4928859217114170762L, strArr);
-        f2520Ujhhgtgfeyxiexzf = MagicFactory.get(4928859191344366986L, strArr);
+        f2517Ujhhgtgfeyxiexzf = new C0541Ujhhgtgfeyxiexzf("GroupOwnerTitleHook");
+        f2518Ujhhgtgfeyxiexzf = "群组";
+        f2519Ujhhgtgfeyxiexzf = "显示群头衔";
+        f2520Ujhhgtgfeyxiexzf = "在微信群成员聊天列表显示对应的头衔";
         f2521Ujhhgtgfeyxiexzf = new C3528Ujhhgtgfeyxiexzf(3);
         f2522Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C3471Ujhhgtgfeyxiexzf(5));
         f2523Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C3471Ujhhgtgfeyxiexzf(6));
@@ -115,14 +115,14 @@ public final class C0541Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                     C2759feyxiexzfUjhhgtg.f8740Ujhhgtgfeyxiexzf.getClass();
                     int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                     C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(objM4279feyxiexzfUjhhgtg).m2021Ujhhgtgfeyxiexzf();
-                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928214293414937994L, strArr);
+                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "field_roomowner";
                     zM4512Ujhhgtgfeyxiexzf = C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf((String) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf)).m4939Ujhhgtgfeyxiexzf(), sendTalker);
                     c2438feyxiexzfUjhhgtg2.put(c1381feyxiexzfUjhhgtg3, Boolean.valueOf(zM4512Ujhhgtgfeyxiexzf));
                 }
             }
             if (zM4512Ujhhgtgfeyxiexzf) {
                 if (c1381feyxiexzfUjhhgtg2 == null || (str3 = (String) c1381feyxiexzfUjhhgtg2.f4874Ujhhgtgfeyxiexzf) == null) {
-                    str3 = MagicFactory.get(4928857164119803274L, strArr);
+                    str3 = "群主";
                 }
                 c1381feyxiexzfUjhhgtg = new C1381feyxiexzfUjhhgtg(str3, (C0630Ujhhgtgfeyxiexzf) f2522Ujhhgtgfeyxiexzf.getValue());
             } else {
@@ -144,7 +144,7 @@ public final class C0541Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                         if (objInvoke != null) {
                             int i2 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(objInvoke).m2021Ujhhgtgfeyxiexzf();
-                            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928214349249512842L, strArr);
+                            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.f1479Ujhhgtgfeyxiexzf = "f";
                             if ((((Number) ((C3438feyxiexzfUjhhgtg) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf2.m4942Ujhhgtgfeyxiexzf())).m4939Ujhhgtgfeyxiexzf()).intValue() & 2048) != 0) {
                                 zBooleanValue = true;
                             } else {
@@ -158,13 +158,13 @@ public final class C0541Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                 }
                 if (!zBooleanValue) {
                     if (c1381feyxiexzfUjhhgtg2 == null) {
-                        c1381feyxiexzfUjhhgtg = new C1381feyxiexzfUjhhgtg(MagicFactory.get(4928857138349999498L, strArr), (C0630Ujhhgtgfeyxiexzf) f2524Ujhhgtgfeyxiexzf.getValue());
+                        c1381feyxiexzfUjhhgtg = new C1381feyxiexzfUjhhgtg("群员", (C0630Ujhhgtgfeyxiexzf) f2524Ujhhgtgfeyxiexzf.getValue());
                     }
                     str2 = (String) c1381feyxiexzfUjhhgtg2.f4874Ujhhgtgfeyxiexzf;
                     c0630Ujhhgtgfeyxiexzf = (C0630Ujhhgtgfeyxiexzf) c1381feyxiexzfUjhhgtg2.f4875Ujhhgtgfeyxiexzf;
                     int i3 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
                     C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928857125465097610L, strArr);
+                    c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = "userTV";
                     textView = (TextView) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf3)).m4939Ujhhgtgfeyxiexzf();
                     if (textView != null) {
                         text = textView.getText();
@@ -183,7 +183,7 @@ public final class C0541Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                     }
                 }
                 if (c1381feyxiexzfUjhhgtg2 == null || (str = (String) c1381feyxiexzfUjhhgtg2.f4874Ujhhgtgfeyxiexzf) == null) {
-                    str = MagicFactory.get(4928857151234901386L, strArr);
+                    str = "管理";
                 }
                 c1381feyxiexzfUjhhgtg = new C1381feyxiexzfUjhhgtg(str, (C0630Ujhhgtgfeyxiexzf) f2523Ujhhgtgfeyxiexzf.getValue());
             }
@@ -192,7 +192,7 @@ public final class C0541Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             c0630Ujhhgtgfeyxiexzf = (C0630Ujhhgtgfeyxiexzf) c1381feyxiexzfUjhhgtg2.f4875Ujhhgtgfeyxiexzf;
             int i4 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928857125465097610L, strArr);
+            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4.f1479Ujhhgtgfeyxiexzf = "userTV";
             textView = (TextView) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf4)).m4939Ujhhgtgfeyxiexzf();
             if (textView != null) {
                 text = textView.getText();

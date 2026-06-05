@@ -23,10 +23,10 @@ public final class C2442feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7904Ujhhgtgfeyxiexzf = new C2442feyxiexzfUjhhgtg(MagicFactory.get(4928353184067356042L, strArr));
-        f7905Ujhhgtgfeyxiexzf = MagicFactory.get(4928352595656836490L, strArr);
-        f7906Ujhhgtgfeyxiexzf = MagicFactory.get(4928352582771934602L, strArr);
-        f7907Ujhhgtgfeyxiexzf = MagicFactory.get(4928352690146117002L, strArr);
+        f7904Ujhhgtgfeyxiexzf = new C2442feyxiexzfUjhhgtg("AutoSelectOriginalPhotoHook");
+        f7905Ujhhgtgfeyxiexzf = "聊天";
+        f7906Ujhhgtgfeyxiexzf = "自动勾选原图";
+        f7907Ujhhgtgfeyxiexzf = "在发送图片和视频时自动勾选原图选项";
     }
 
     @Override // p000.InterfaceC0746Ujhhgtgfeyxiexzf
@@ -39,13 +39,13 @@ public final class C2442feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
             if (className != null) {
                 int iHashCode = className.hashCode();
                 if (iHashCode != 812972616) {
-                    if (iHashCode != 1600608476 || !className.equals(MagicFactory.get(4928353201247225226L, strArr))) {
+                    if (iHashCode != 1600608476 || !className.equals("com.tencent.mm.plugin.gallery.ui.ImagePreviewUI")) {
                         return;
                     }
-                } else if (!className.equals(MagicFactory.get(4928353407405655434L, strArr))) {
+                } else if (!className.equals("com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI")) {
                     return;
                 }
-                intent.putExtra(MagicFactory.get(4928352514052457866L, strArr), true);
+                intent.putExtra("send_raw_img", true);
             }
         }
     }

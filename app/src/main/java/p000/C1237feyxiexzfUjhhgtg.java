@@ -27,10 +27,10 @@ public final class C1237feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4570Ujhhgtgfeyxiexzf = new C1237feyxiexzfUjhhgtg(MagicFactory.get(4928795544224007562L, strArr));
-        f4571Ujhhgtgfeyxiexzf = MagicFactory.get(4928794028100552074L, strArr);
-        f4572Ujhhgtgfeyxiexzf = MagicFactory.get(4928794010920682890L, strArr);
-        f4573Ujhhgtgfeyxiexzf = MagicFactory.get(4928793976560944522L, strArr);
+        f4570Ujhhgtgfeyxiexzf = new C1237feyxiexzfUjhhgtg("SnsUploadOriginalPhoto");
+        f4571Ujhhgtgfeyxiexzf = "朋友圈";
+        f4572Ujhhgtgfeyxiexzf = "朋友圈上传原图";
+        f4573Ujhhgtgfeyxiexzf = "上传时不压缩图片，过大可能上传失败";
         f4574Ujhhgtgfeyxiexzf = new C1058feyxiexzfUjhhgtg(25);
     }
 

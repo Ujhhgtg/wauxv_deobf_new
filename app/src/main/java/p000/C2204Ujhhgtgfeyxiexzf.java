@@ -18,15 +18,15 @@ public final class C2204Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7171Ujhhgtgfeyxiexzf = new C2204Ujhhgtgfeyxiexzf(MagicFactory.get(4928827932572386698L, strArr));
-        f7172Ujhhgtgfeyxiexzf = MagicFactory.get(4928827069283960202L, strArr);
-        f7173Ujhhgtgfeyxiexzf = MagicFactory.get(4928827034924221834L, strArr);
+        f7171Ujhhgtgfeyxiexzf = new C2204Ujhhgtgfeyxiexzf("VoiceInput");
+        f7172Ujhhgtgfeyxiexzf = "测试/配置修复";
+        f7173Ujhhgtgfeyxiexzf = "禁用聊天输入栏语音图标";
     }
 
     @Override // p000.InterfaceC0743Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛳᛱfeyxiexzfᛱᛴᛲ */
     public final void mo1745Ujhhgtgfeyxiexzf(C0578Ujhhgtgfeyxiexzf c0578Ujhhgtgfeyxiexzf, String str) {
-        if (mo1424feyxiexzfUjhhgtg() && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, MagicFactory.get(4928828022766699914L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))) {
+        if (mo1424feyxiexzfUjhhgtg() && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, "RepairerConfig_VoiceInput_Int")) {
             c0578Ujhhgtgfeyxiexzf.m1853Ujhhgtgfeyxiexzf(0);
         }
     }

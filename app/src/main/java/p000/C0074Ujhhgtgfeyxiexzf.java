@@ -27,7 +27,7 @@ public final /* synthetic */ class C0074Ujhhgtgfeyxiexzf implements ValueAnimato
                 break;
             default:
                 Object animatedValue = valueAnimator.getAnimatedValue();
-                MagicFactory.get(4928345732299097482L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                "null cannot be cast to non-null type kotlin.Float";
                 float fFloatValue = ((Float) animatedValue).floatValue();
                 C0113Ujhhgtgfeyxiexzf c0113Ujhhgtgfeyxiexzf = this.f1131Ujhhgtgfeyxiexzf;
                 c0113Ujhhgtgfeyxiexzf.f1252Ujhhgtgfeyxiexzf = fFloatValue;

@@ -86,23 +86,23 @@ public final class C1799Ujhhgtgfeyxiexzf {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928625081266996618L, strArr));
+        sb.append("x12Proto(mediaType=");
         sb.append(this.f6062Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928625132806604170L, strArr));
+        sb.append(", url=");
         sb.append(this.f6063Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928610946529625482L, strArr));
+        sb.append(", thumbUrl=");
         sb.append(this.f6064Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928611032428971402L, strArr));
+        sb.append(", width=");
         sb.append(this.f6065Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928610993774265738L, strArr));
+        sb.append(", height=");
         sb.append(this.f6066Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928611088263546250L, strArr));
+        sb.append(", videoPlayDuration=");
         sb.append(this.f6067Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928611135508186506L, strArr));
+        sb.append(", fullCoverUrl=");
         sb.append(this.f6068Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928611204227663242L, strArr));
+        sb.append(", fullClipInset=");
         sb.append(this.f6069Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928611268652172682L, strArr));
+        sb.append(", coverUrl=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6070Ujhhgtgfeyxiexzf, ')');
     }
 }

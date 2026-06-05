@@ -24,16 +24,16 @@ public final class C1070feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4136Ujhhgtgfeyxiexzf = new C1070feyxiexzfUjhhgtg(MagicFactory.get(4928887971920217482L, strArr));
-        f4137Ujhhgtgfeyxiexzf = MagicFactory.get(4928886614710551946L, strArr);
-        f4138Ujhhgtgfeyxiexzf = MagicFactory.get(4928886734969636234L, strArr);
-        f4139Ujhhgtgfeyxiexzf = MagicFactory.get(4928886700609897866L, strArr);
+        f4136Ujhhgtgfeyxiexzf = new C1070feyxiexzfUjhhgtg("SnsForwardHook");
+        f4137Ujhhgtgfeyxiexzf = "朋友圈";
+        f4138Ujhhgtgfeyxiexzf = "朋友圈消息转发";
+        f4139Ujhhgtgfeyxiexzf = "支持在朋友圈转发并编辑部分消息发表";
     }
 
     @Override // p000.InterfaceC0744Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ */
     public final List mo2080Ujhhgtgfeyxiexzf() {
-        return !mo1424feyxiexzfUjhhgtg() ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : Collections.singletonList(new C1056feyxiexzfUjhhgtg(R.id.MenuItem_Sns_Forward, MagicFactory.get(4928887907495708042L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), new C1073feyxiexzfUjhhgtg(1)));
+        return !mo1424feyxiexzfUjhhgtg() ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : Collections.singletonList(new C1056feyxiexzfUjhhgtg(R.id.MenuItem_Sns_Forward, "转发[WA]", new C1073feyxiexzfUjhhgtg(1)));
     }
 
     @Override // p000.AbstractC2059Ujhhgtgfeyxiexzf

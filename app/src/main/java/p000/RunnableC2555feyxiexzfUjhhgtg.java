@@ -25,10 +25,10 @@ public final class RunnableC2555feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfey
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f8282Ujhhgtgfeyxiexzf = new RunnableC2555feyxiexzfUjhhgtg(MagicFactory.get(4928899606986622346L, strArr));
-        f8283Ujhhgtgfeyxiexzf = MagicFactory.get(4928899671411131786L, strArr);
-        f8284Ujhhgtgfeyxiexzf = MagicFactory.get(4928899658526229898L, strArr);
-        f8285Ujhhgtgfeyxiexzf = MagicFactory.get(4928899774490346890L, strArr);
+        f8282Ujhhgtgfeyxiexzf = new RunnableC2555feyxiexzfUjhhgtg("AutoCleanHook");
+        f8283Ujhhgtgfeyxiexzf = "杂项";
+        f8284Ujhhgtgfeyxiexzf = "自动瘦身";
+        f8285Ujhhgtgfeyxiexzf = "致敬瘦身模块 'KitsunePie-QQCleaner' ";
         f8286Ujhhgtgfeyxiexzf = new C2320Ujhhgtgfeyxiexzf(26);
     }
 

@@ -33,10 +33,10 @@ public final class C0534Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928860479834555786L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928860445474817418L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2502Ujhhgtgfeyxiexzf = new C0534Ujhhgtgfeyxiexzf(MagicFactory.get(4928858714602997130L, strArr));
-        f2503Ujhhgtgfeyxiexzf = MagicFactory.get(4928860419705013642L, strArr);
-        f2504Ujhhgtgfeyxiexzf = MagicFactory.get(4928863842793948554L, strArr);
-        f2505Ujhhgtgfeyxiexzf = MagicFactory.get(4928863817024144778L, strArr);
+        f2502Ujhhgtgfeyxiexzf = new C0534Ujhhgtgfeyxiexzf("HandleGroupMemberHook");
+        f2503Ujhhgtgfeyxiexzf = "群组";
+        f2504Ujhhgtgfeyxiexzf = "监听群成员";
+        f2505Ujhhgtgfeyxiexzf = "自动监听群成员退群时插入自定义提示";
         f2506Ujhhgtgfeyxiexzf = new C3528Ujhhgtgfeyxiexzf(4);
     }
 
@@ -45,24 +45,24 @@ public final class C0534Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         C2897Ujhhgtgfeyxiexzf.f9174Ujhhgtgfeyxiexzf.getClass();
         String strM4277feyxiexzfUjhhgtg = C2897Ujhhgtgfeyxiexzf.m4277feyxiexzfUjhhgtg(str2, str);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        String strM4277feyxiexzfUjhhgtg2 = C2897Ujhhgtgfeyxiexzf.m4277feyxiexzfUjhhgtg(str2, MagicFactory.get(4928217510345442698L, strArr));
+        String strM4277feyxiexzfUjhhgtg2 = C2897Ujhhgtgfeyxiexzf.m4277feyxiexzfUjhhgtg(str2, "");
         if (!C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(strM4277feyxiexzfUjhhgtg, strM4277feyxiexzfUjhhgtg2)) {
             strM4277feyxiexzfUjhhgtg = strM4277feyxiexzfUjhhgtg + '[' + strM4277feyxiexzfUjhhgtg2 + ']';
         }
         String strM4623Ujhhgtgfeyxiexzf = C0525Ujhhgtgfeyxiexzf.f2482Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf();
-        String strM2641Ujhhgtgfeyxiexzf = AbstractC1152feyxiexzfUjhhgtg.m2641Ujhhgtgfeyxiexzf(str, MagicFactory.get(4928857795479995786L, strArr));
+        String strM2641Ujhhgtgfeyxiexzf = AbstractC1152feyxiexzfUjhhgtg.m2641Ujhhgtgfeyxiexzf(str, "@chatroom");
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928857752530322826L, strArr));
+        sb.append("weixin://weixinhongbao/wauxv/chatroom_userinfo/");
         sb.append(strM2641Ujhhgtgfeyxiexzf);
-        String strM2706Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(sb, MagicFactory.get(4928857958688753034L, strArr), str2);
+        String strM2706Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(sb, "__", str2);
         StringBuilder sbM2707Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(strM4277feyxiexzfUjhhgtg);
-        sbM2707Ujhhgtgfeyxiexzf.append(MagicFactory.get(4928857945803851146L, strArr));
+        sbM2707Ujhhgtgfeyxiexzf.append("(<_wc_custom_link_ color=\"");
         sbM2707Ujhhgtgfeyxiexzf.append(strM4623Ujhhgtgfeyxiexzf);
-        sbM2707Ujhhgtgfeyxiexzf.append(MagicFactory.get(4928858104717641098L, strArr));
+        sbM2707Ujhhgtgfeyxiexzf.append("\" href=\"");
         sbM2707Ujhhgtgfeyxiexzf.append(strM2706Ujhhgtgfeyxiexzf);
-        sbM2707Ujhhgtgfeyxiexzf.append(MagicFactory.get(4928858203501888906L, strArr));
+        sbM2707Ujhhgtgfeyxiexzf.append("\">");
         sbM2707Ujhhgtgfeyxiexzf.append(str2);
-        return AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(sbM2707Ujhhgtgfeyxiexzf, MagicFactory.get(4928858190616987018L, strArr), str3);
+        return AbstractC1225feyxiexzfUjhhgtg.m2706Ujhhgtgfeyxiexzf(sbM2707Ujhhgtgfeyxiexzf, "</_wc_custom_link_>)", str3);
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf
@@ -75,30 +75,30 @@ public final class C0534Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛴᛱfeyxiexzfᛱᛲᛳ, reason: contains not printable characters */
     public final void mo1830Ujhhgtgfeyxiexzf(C0578Ujhhgtgfeyxiexzf c0578Ujhhgtgfeyxiexzf, String str, ContentValues contentValues, String str2, String[] strArr, int i) throws IOException {
         String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        if (mo1424feyxiexzfUjhhgtg() && str.equals(MagicFactory.get(4928858237861627274L, strArr2))) {
-            String asString = contentValues.getAsString(MagicFactory.get(4928861635180758410L, strArr2));
-            Integer asInteger = contentValues.getAsInteger(MagicFactory.get(4928861716785137034L, strArr2));
-            String asString2 = contentValues.getAsString(MagicFactory.get(4928861665245529482L, strArr2));
+        if (mo1424feyxiexzfUjhhgtg() && str.equals("chatroom")) {
+            String asString = contentValues.getAsString("chatroomname");
+            Integer asInteger = contentValues.getAsInteger("memberCount");
+            String asString2 = contentValues.getAsString("memberlist");
             if (asString2 == null || AbstractC1152feyxiexzfUjhhgtg.m2631feyxiexzfUjhhgtg(asString2)) {
                 return;
             }
-            Set setM4256Ujhhgtgfeyxiexzf = AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(asString2, new String[]{MagicFactory.get(4928861755439842698L, strArr2)}));
+            Set setM4256Ujhhgtgfeyxiexzf = AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(asString2, new String[]{";"}));
             int i2 = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C1136feyxiexzfUjhhgtg.f4301Ujhhgtgfeyxiexzf.getClass();
             C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(C1136feyxiexzfUjhhgtg.m2603feyxiexzfUjhhgtg()).m2024Ujhhgtgfeyxiexzf();
-            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928205819444462986L, strArr2);
-            Cursor cursor = (Cursor) ((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Object[].class)}, 2, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1650Ujhhgtgfeyxiexzf(MagicFactory.get(4928861746849908106L, strArr2), new Object[]{asString});
+            c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "rawQuery";
+            Cursor cursor = (Cursor) ((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(String.class), AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(Object[].class)}, 2, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1650Ujhhgtgfeyxiexzf("SELECT memberlist, memberCount FROM chatroom WHERE chatroomname = ?", new Object[]{asString});
             if (cursor != null) {
                 try {
                     if (cursor.moveToFirst()) {
-                        int i3 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928862004547945866L, strArr2)));
+                        int i3 = cursor.getInt(cursor.getColumnIndex("memberCount"));
                         if (i3 == 0) {
                             cursor.close();
                             return;
                         }
-                        String string = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928862090447291786L, strArr2)));
+                        String string = cursor.getString(cursor.getColumnIndex("memberlist"));
                         if (string != null && !AbstractC1152feyxiexzfUjhhgtg.m2631feyxiexzfUjhhgtg(string)) {
-                            Set setM4256Ujhhgtgfeyxiexzf2 = AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(string, new String[]{MagicFactory.get(4928861081129977226L, strArr2)}));
+                            Set setM4256Ujhhgtgfeyxiexzf2 = AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(string, new String[]{";"}));
                             if (asInteger.intValue() < i3) {
                                 for (String str3 : AbstractC1106feyxiexzfUjhhgtg.m2575Ujhhgtgfeyxiexzf(setM4256Ujhhgtgfeyxiexzf2, setM4256Ujhhgtgfeyxiexzf)) {
                                     C0534Ujhhgtgfeyxiexzf c0534Ujhhgtgfeyxiexzf = f2502Ujhhgtgfeyxiexzf;

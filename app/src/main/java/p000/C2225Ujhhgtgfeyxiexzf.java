@@ -29,12 +29,12 @@ public final class C2225Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f7235Ujhhgtgfeyxiexzf = new C2225Ujhhgtgfeyxiexzf(MagicFactory.get(4928821799359088010L, strArr));
+        f7235Ujhhgtgfeyxiexzf = new C2225Ujhhgtgfeyxiexzf("VnHomeShareMenuCopyOrDownHook");
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f7236Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928340363589977482L, strArr), MagicFactory.get(4928339362862597514L, strArr));
-        f7237Ujhhgtgfeyxiexzf = MagicFactory.get(4928824346274694538L, strArr);
-        f7238Ujhhgtgfeyxiexzf = MagicFactory.get(4928824466533778826L, strArr);
-        f7239Ujhhgtgfeyxiexzf = MagicFactory.get(4928824419289138570L, strArr);
+        f7236Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Download", "VideoNumber");
+        f7237Ujhhgtgfeyxiexzf = "视频号";
+        f7238Ujhhgtgfeyxiexzf = "主页分享菜单复制下载";
+        f7239Ujhhgtgfeyxiexzf = "为视频号菜单添加复制链接或下载视频";
         f7240Ujhhgtgfeyxiexzf = new C1947feyxiexzfUjhhgtg(19);
     }
 
@@ -44,7 +44,7 @@ public final class C2225Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             return C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;
         }
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        return AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(new C3462feyxiexzfUjhhgtg(R.id.MenuItem_VideoNumber_CopyLink, MagicFactory.get(4928821945387976074L, strArr), R.drawable.ic_menu_copy_24dp, new C0221Ujhhgtgfeyxiexzf(24)), new C3462feyxiexzfUjhhgtg(R.id.MenuItem_VideoNumber_Download, MagicFactory.get(4928820961840465290L, strArr), R.drawable.ic_menu_save_24dp, new C0221Ujhhgtgfeyxiexzf(25)));
+        return AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(new C3462feyxiexzfUjhhgtg(R.id.MenuItem_VideoNumber_CopyLink, "复制链接", R.drawable.ic_menu_copy_24dp, new C0221Ujhhgtgfeyxiexzf(24)), new C3462feyxiexzfUjhhgtg(R.id.MenuItem_VideoNumber_Download, "下载视频", R.drawable.ic_menu_save_24dp, new C0221Ujhhgtgfeyxiexzf(25)));
     }
 
     @Override // p000.AbstractC2059Ujhhgtgfeyxiexzf

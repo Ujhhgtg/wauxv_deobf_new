@@ -50,11 +50,11 @@ public final class C3678feyxiexzfUjhhgtg {
     public C3678feyxiexzfUjhhgtg(C3677feyxiexzfUjhhgtg c3677feyxiexzfUjhhgtg) {
         this.f11690Ujhhgtgfeyxiexzf = c3677feyxiexzfUjhhgtg;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        this.f11695Ujhhgtgfeyxiexzf = MagicFactory.get(4928464767317706122L, strArr);
+        this.f11695Ujhhgtgfeyxiexzf = "";
         this.f11696Ujhhgtgfeyxiexzf = R.drawable.ic_contact_confirm_24dp;
-        this.f11697Ujhhgtgfeyxiexzf = MagicFactory.get(4928464763022738826L, strArr);
+        this.f11697Ujhhgtgfeyxiexzf = "取消";
         this.f11698Ujhhgtgfeyxiexzf = R.drawable.ic_contact_cancel_24dp;
-        this.f11699Ujhhgtgfeyxiexzf = MagicFactory.get(4928464750137836938L, strArr);
+        this.f11699Ujhhgtgfeyxiexzf = "确定";
         this.f11700Ujhhgtgfeyxiexzf = new C3664feyxiexzfUjhhgtg(13);
         this.f11701Ujhhgtgfeyxiexzf = new C2432Ujhhgtgfeyxiexzf(2);
     }
@@ -88,7 +88,7 @@ public final class C3678feyxiexzfUjhhgtg {
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛳᛲᛴ, reason: contains not printable characters */
     public final List m5370Ujhhgtgfeyxiexzf(String str) {
-        if (!C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, MagicFactory.get(4928464737252935050L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))) {
+        if (!C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, "全部")) {
             List list = (List) this.f11693Ujhhgtgfeyxiexzf.get(str);
             return list == null ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : list;
         }

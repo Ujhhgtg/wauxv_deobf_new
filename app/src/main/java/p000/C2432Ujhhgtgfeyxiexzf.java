@@ -48,7 +48,7 @@ public final /* synthetic */ class C2432Ujhhgtgfeyxiexzf implements InterfaceC35
                     arrayList.add(((C3663feyxiexzfUjhhgtg) it.next()).f11657Ujhhgtgfeyxiexzf);
                 }
                 c2433Ujhhgtgfeyxiexzf.m4628Ujhhgtgfeyxiexzf(AbstractC2856feyxiexzfUjhhgtg.m4256Ujhhgtgfeyxiexzf(arrayList));
-                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928385752804361610L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "已屏蔽");
                 return Boolean.FALSE;
             case 1:
                 String str = (String) obj;
@@ -100,7 +100,7 @@ public final /* synthetic */ class C2432Ujhhgtgfeyxiexzf implements InterfaceC35
                 C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(((C0393Ujhhgtgfeyxiexzf) AbstractC3317feyxiexzfUjhhgtg.m4794Ujhhgtgfeyxiexzf(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf)).m1649Ujhhgtgfeyxiexzf(new Object[0])).m2024Ujhhgtgfeyxiexzf();
                 c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2.f2121feyxiexzfUjhhgtg = AbstractC0959feyxiexzfUjhhgtg.m2443Ujhhgtgfeyxiexzf(byte[].class);
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                byte[] bArr = (byte[]) ((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{MagicFactory.get(4928204960451003786L, strArr)}, 1, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2)).m1650Ujhhgtgfeyxiexzf(objM4785feyxiexzfUjhhgtg);
+                byte[] bArr = (byte[]) ((C0393Ujhhgtgfeyxiexzf) AbstractC1225feyxiexzfUjhhgtg.m2698Ujhhgtgfeyxiexzf(new Object[]{"com.tencent.mm.api.IEmojiInfo"}, 1, c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf2)).m1650Ujhhgtgfeyxiexzf(objM4785feyxiexzfUjhhgtg);
                 try {
                     File file = new File(C3292Ujhhgtgfeyxiexzf.f10329Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf());
                     file.mkdirs();
@@ -111,26 +111,26 @@ public final /* synthetic */ class C2432Ujhhgtgfeyxiexzf implements InterfaceC35
                     sb.append('-');
                     sb.append(System.currentTimeMillis());
                     sb.append('.');
-                    sb.append(AbstractC3593Ujhhgtgfeyxiexzf.m5162feyxiexzfUjhhgtg(bArr) ? MagicFactory.get(4928838468127163786L, strArr) : MagicFactory.get(4928838450947294602L, strArr));
+                    sb.append(AbstractC3593Ujhhgtgfeyxiexzf.m5162feyxiexzfUjhhgtg(bArr) ? "gif" : "png");
                     String string = sb.toString();
                     File file2 = new File(file, string);
                     if (AbstractC3593Ujhhgtgfeyxiexzf.m5162feyxiexzfUjhhgtg(bArr)) {
-                        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf3 = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928258961074816394L, strArr))).m2024Ujhhgtgfeyxiexzf();
-                        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928257981822272906L, strArr);
+                        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf3 = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.gif.MMWXGFJNI")).m2024Ujhhgtgfeyxiexzf();
+                        c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf3.f1479Ujhhgtgfeyxiexzf = "nativeWxamToGif";
                         bArr = (byte[]) ((C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf3.m1635Ujhhgtgfeyxiexzf())).m1650Ujhhgtgfeyxiexzf(bArr);
                     }
                     FileOutputStream fileOutputStream = new FileOutputStream(file2);
                     try {
                         fileOutputStream.write(bArr);
                         fileOutputStream.close();
-                        AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928838433767425418L, strArr) + file.getAbsolutePath() + '/' + string);
+                        AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "已保存到: " + file.getAbsolutePath() + '/' + string);
                         c0919feyxiexzfUjhhgtg = c1943Ujhhgtgfeyxiexzf;
                         Throwable thM2409Ujhhgtgfeyxiexzf = C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg);
                         if (thM2409Ujhhgtgfeyxiexzf != null) {
                             StringBuilder sb2 = new StringBuilder();
-                            sb2.append(MagicFactory.get(4928841839676491146L, strArr));
+                            sb2.append("保存失败: ");
                             String message = thM2409Ujhhgtgfeyxiexzf.getMessage();
-                            sb2.append(message != null ? AbstractC1152feyxiexzfUjhhgtg.m2643feyxiexzfUjhhgtg(50, message) : MagicFactory.get(4928841809611720074L, strArr));
+                            sb2.append(message != null ? AbstractC1152feyxiexzfUjhhgtg.m2643feyxiexzfUjhhgtg(50, message) : "未知错误");
                             AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, sb2.toString());
                         }
                         return c1943Ujhhgtgfeyxiexzf;

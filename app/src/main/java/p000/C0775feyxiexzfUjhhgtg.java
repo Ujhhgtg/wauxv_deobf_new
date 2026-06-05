@@ -24,10 +24,10 @@ public final class C0775feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3067Ujhhgtgfeyxiexzf = new C0775feyxiexzfUjhhgtg(MagicFactory.get(4928391069973874058L, strArr));
-        f3068Ujhhgtgfeyxiexzf = MagicFactory.get(4928390623297275274L, strArr);
-        f3069Ujhhgtgfeyxiexzf = MagicFactory.get(4928390610412373386L, strArr);
-        f3070Ujhhgtgfeyxiexzf = MagicFactory.get(4928390717786555786L, strArr);
+        f3067Ujhhgtgfeyxiexzf = new C0775feyxiexzfUjhhgtg("QuickClearQuoteHook");
+        f3068Ujhhgtgfeyxiexzf = "聊天";
+        f3069Ujhhgtgfeyxiexzf = "快捷清空引用";
+        f3070Ujhhgtgfeyxiexzf = "输入框无内容时监听键盘删除清空引用";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

@@ -24,10 +24,10 @@ public final class C0305Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f1826Ujhhgtgfeyxiexzf = new C0305Ujhhgtgfeyxiexzf(MagicFactory.get(4928901883319289226L, strArr));
-        f1827Ujhhgtgfeyxiexzf = MagicFactory.get(4928902145312294282L, strArr);
-        f1828Ujhhgtgfeyxiexzf = MagicFactory.get(4928902132427392394L, strArr);
-        f1829Ujhhgtgfeyxiexzf = MagicFactory.get(4928902239801574794L, strArr);
+        f1826Ujhhgtgfeyxiexzf = new C0305Ujhhgtgfeyxiexzf("MockScanHook");
+        f1827Ujhhgtgfeyxiexzf = "杂项";
+        f1828Ujhhgtgfeyxiexzf = "模拟相机扫码";
+        f1829Ujhhgtgfeyxiexzf = "将二维码识别方式模拟成微信相机扫码";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

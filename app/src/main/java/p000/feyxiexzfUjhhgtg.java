@@ -29,10 +29,10 @@ public final class feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf implem
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928392452953343370L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928392560327525770L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3032Ujhhgtgfeyxiexzf = new feyxiexzfUjhhgtg(MagicFactory.get(4928392787960792458L, strArr));
-        f3033Ujhhgtgfeyxiexzf = MagicFactory.get(4928392517377852810L, strArr);
-        f3034Ujhhgtgfeyxiexzf = MagicFactory.get(4928392641931904394L, strArr);
-        f3035Ujhhgtgfeyxiexzf = MagicFactory.get(4928392611867133322L, strArr);
+        f3032Ujhhgtgfeyxiexzf = new feyxiexzfUjhhgtg("QuoteRemindMsgHook");
+        f3033Ujhhgtgfeyxiexzf = "聊天";
+        f3034Ujhhgtgfeyxiexzf = "引用消息提醒";
+        f3035Ujhhgtgfeyxiexzf = "主页列表添加有人回我消息的红字提醒";
         f3036Ujhhgtgfeyxiexzf = new C0780feyxiexzfUjhhgtg(3);
     }
 

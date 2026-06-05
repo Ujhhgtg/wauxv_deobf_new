@@ -24,10 +24,10 @@ public final class C3046Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9426Ujhhgtgfeyxiexzf = new C3046Ujhhgtgfeyxiexzf(MagicFactory.get(4928369496353146250L, strArr));
-        f9427Ujhhgtgfeyxiexzf = MagicFactory.get(4928367932985050506L, strArr);
-        f9428Ujhhgtgfeyxiexzf = MagicFactory.get(4928367920100148618L, strArr);
-        f9429Ujhhgtgfeyxiexzf = MagicFactory.get(4928368031769298314L, strArr);
+        f9426Ujhhgtgfeyxiexzf = new C3046Ujhhgtgfeyxiexzf("CustomBalanceHook");
+        f9427Ujhhgtgfeyxiexzf = "美化";
+        f9428Ujhhgtgfeyxiexzf = "自定义余额";
+        f9429Ujhhgtgfeyxiexzf = "可动态替换真实余额为指定的金额数值";
         f9430Ujhhgtgfeyxiexzf = new C3711Ujhhgtgfeyxiexzf(24);
     }
 
@@ -35,7 +35,7 @@ public final class C3046Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛱUjhhgtgᛱᛳᛴ */
     public final void mo1074feyxiexzfUjhhgtg() {
         int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
-        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928368456971060618L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))).m2024Ujhhgtgfeyxiexzf();
+        C0386Ujhhgtgfeyxiexzf c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5191feyxiexzfUjhhgtg(AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.plugin.wallet_core.ui.view.WcPayMoneyLoadingView")).m2024Ujhhgtgfeyxiexzf();
         c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.f10478Ujhhgtgfeyxiexzf = new C3711Ujhhgtgfeyxiexzf(25);
         C0393Ujhhgtgfeyxiexzf c0393Ujhhgtgfeyxiexzf = (C0393Ujhhgtgfeyxiexzf) AbstractC2856feyxiexzfUjhhgtg.m4238feyxiexzfUjhhgtg(c0386UjhhgtgfeyxiexzfM2024Ujhhgtgfeyxiexzf.m1635Ujhhgtgfeyxiexzf());
         C3046Ujhhgtgfeyxiexzf c3046Ujhhgtgfeyxiexzf = f9426Ujhhgtgfeyxiexzf;

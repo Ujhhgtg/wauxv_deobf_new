@@ -24,10 +24,10 @@ public final class C0418Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2248Ujhhgtgfeyxiexzf = new C0418Ujhhgtgfeyxiexzf(MagicFactory.get(4928905748789855626L, strArr));
-        f2249Ujhhgtgfeyxiexzf = MagicFactory.get(4928905147494434186L, strArr);
-        f2250Ujhhgtgfeyxiexzf = MagicFactory.get(4928905134609532298L, strArr);
-        f2251Ujhhgtgfeyxiexzf = MagicFactory.get(4928905104544761226L, strArr);
+        f2248Ujhhgtgfeyxiexzf = new C0418Ujhhgtgfeyxiexzf("MultiWebViewHook");
+        f2249Ujhhgtgfeyxiexzf = "杂项";
+        f2250Ujhhgtgfeyxiexzf = "文章多开窗口";
+        f2251Ujhhgtgfeyxiexzf = "可同时阅读多篇公众号文章在多窗口中";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

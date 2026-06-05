@@ -47,11 +47,11 @@ public final class C0490Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928401824571983242L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928401884701525386L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2404Ujhhgtgfeyxiexzf = new C0490Ujhhgtgfeyxiexzf(MagicFactory.get(4928398358533375370L, strArr));
-        f2405Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(MagicFactory.get(4928401983485773194L, strArr), MagicFactory.get(4928401949126034826L, strArr), MagicFactory.get(4928400918333883786L, strArr), MagicFactory.get(4928401021413098890L, strArr), MagicFactory.get(4928400982758393226L, strArr), MagicFactory.get(4928401068657739146L, strArr));
-        f2406Ujhhgtgfeyxiexzf = MagicFactory.get(4928401145967150474L, strArr);
-        f2407Ujhhgtgfeyxiexzf = MagicFactory.get(4928401133082248586L, strArr);
-        f2408Ujhhgtgfeyxiexzf = MagicFactory.get(4928401103017477514L, strArr);
+        f2404Ujhhgtgfeyxiexzf = new C0490Ujhhgtgfeyxiexzf("MsgInfoHook");
+        f2405Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf("${time}", "${relativeTime}", "${type}", "${msgId}", "${msgSvrId}", "${atUserList}");
+        f2406Ujhhgtgfeyxiexzf = "聊天";
+        f2407Ujhhgtgfeyxiexzf = "消息底部详情";
+        f2408Ujhhgtgfeyxiexzf = "为聊天列表项目的底部添加自定义文本";
         f2409Ujhhgtgfeyxiexzf = new C0317Ujhhgtgfeyxiexzf(21);
     }
 
@@ -117,52 +117,52 @@ public final class C0490Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             f2404Ujhhgtgfeyxiexzf.getClass();
             String strM4623Ujhhgtgfeyxiexzf = C0488Ujhhgtgfeyxiexzf.f2402Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf();
             String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-            String strM2681feyxiexzfUjhhgtg = AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(strM4623Ujhhgtgfeyxiexzf, MagicFactory.get(4928398495972328842L, strArr), AbstractC3612feyxiexzfUjhhgtg.m5246Ujhhgtgfeyxiexzf(msgInfoBean.getCreateTime(), C0487Ujhhgtgfeyxiexzf.f2401Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), null, 2));
-            String str3 = MagicFactory.get(4928398599051543946L, strArr);
+            String strM2681feyxiexzfUjhhgtg = AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(strM4623Ujhhgtgfeyxiexzf, "${time}", AbstractC3612feyxiexzfUjhhgtg.m5246Ujhhgtgfeyxiexzf(msgInfoBean.getCreateTime(), C0487Ujhhgtgfeyxiexzf.f2401Ujhhgtgfeyxiexzf.m4623Ujhhgtgfeyxiexzf(), null, 2));
+            String str3 = "${relativeTime}";
             long createTime = msgInfoBean.getCreateTime();
             ZoneId zoneIdSystemDefault = ZoneId.systemDefault();
             long epochDay = LocalDate.now(zoneIdSystemDefault).toEpochDay() - Instant.ofEpochMilli(createTime).atZone(zoneIdSystemDefault).toLocalDate().toEpochDay();
             if (epochDay > 1) {
-                str = epochDay + MagicFactory.get(4928398444432721290L, strArr);
+                str = epochDay + "天前";
             } else if (epochDay == 1) {
-                str = MagicFactory.get(4928398431547819402L, strArr);
+                str = "昨天";
             } else {
                 long jCurrentTimeMillis = System.currentTimeMillis() - createTime;
                 if (jCurrentTimeMillis <= 0) {
-                    str = MagicFactory.get(4928398418662917514L, strArr);
+                    str = "刚刚";
                 } else {
                     long j = jCurrentTimeMillis / ((long) 60000);
                     long j2 = jCurrentTimeMillis / ((long) 3600000);
                     if (j < 1) {
-                        str = MagicFactory.get(4928398543216969098L, strArr);
+                        str = "刚刚";
                     } else if (j2 < 1) {
-                        str = j + MagicFactory.get(4928398530332067210L, strArr);
+                        str = j + "分钟前";
                     } else {
-                        str = Math.max(j2, 1L) + MagicFactory.get(4928398513152198026L, strArr);
+                        str = Math.max(j2, 1L) + "小时前";
                     }
                 }
             }
             String strM2681feyxiexzfUjhhgtg2 = AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(strM2681feyxiexzfUjhhgtg, str3, str);
-            String str4 = MagicFactory.get(4928398667771020682L, strArr);
+            String str4 = "${type}";
             StringBuilder sb = new StringBuilder();
-            sb.append(MagicFactory.get(4928398633411282314L, strArr));
+            sb.append("0x");
             int type = msgInfoBean.getType();
             AbstractC0217Ujhhgtgfeyxiexzf.m1310Ujhhgtgfeyxiexzf(16);
             String string = Integer.toString(type, 16);
-            MagicFactory.get(4928402056500217226L, strArr);
+            "toString(...)";
             String upperCase = string.toUpperCase(Locale.ROOT);
-            MagicFactory.get(4928401996370675082L, strArr);
+            "toUpperCase(...)";
             sb.append(upperCase);
-            String strM2681feyxiexzfUjhhgtg3 = AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(strM2681feyxiexzfUjhhgtg2, str4, sb.toString()), MagicFactory.get(4928402060795184522L, strArr), String.valueOf(msgInfoBean.getMsgId())), MagicFactory.get(4928402159579432330L, strArr), String.valueOf(msgInfoBean.getMsgSvrId()));
-            String str5 = MagicFactory.get(4928402245478778250L, strArr);
+            String strM2681feyxiexzfUjhhgtg3 = AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(AbstractC1192feyxiexzfUjhhgtg.m2681feyxiexzfUjhhgtg(strM2681feyxiexzfUjhhgtg2, str4, sb.toString()), "${msgId}", String.valueOf(msgInfoBean.getMsgId())), "${msgSvrId}", String.valueOf(msgInfoBean.getMsgSvrId()));
+            String str5 = "${atUserList}";
             if (msgInfoBean.getAtUserList().isEmpty()) {
-                str2 = MagicFactory.get(4928402271248582026L, strArr);
+                str2 = "";
             } else if (msgInfoBean.isAnnounceAll()) {
-                str2 = MagicFactory.get(4928402322788189578L, strArr);
+                str2 = "@群公告";
             } else if (msgInfoBean.isNotifyAll()) {
-                str2 = MagicFactory.get(4928402301313353098L, strArr);
+                str2 = "@全体";
             } else if (msgInfoBean.isAtMe()) {
-                str2 = MagicFactory.get(4928402284133483914L, strArr);
+                str2 = "@我";
             } else {
                 str2 = "@" + msgInfoBean.getAtUserList().size() + (char) 20154;
             }

@@ -113,7 +113,7 @@ public final class C0436Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                     }
                 } else {
                     if (i4 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(4928272765099705738L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
                 }
@@ -125,7 +125,7 @@ public final class C0436Ujhhgtgfeyxiexzf extends AbstractC1181feyxiexzfUjhhgtg i
                 int i5 = this.f2295Ujhhgtgfeyxiexzf;
                 if (i5 != 0) {
                     if (i5 != 1) {
-                        throw new IllegalStateException(MagicFactory.get(4928898705043490186L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     AbstractC1937feyxiexzfUjhhgtg.m3285Ujhhgtgfeyxiexzf(obj);
                     return c1943Ujhhgtgfeyxiexzf;

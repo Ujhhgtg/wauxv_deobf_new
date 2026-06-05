@@ -126,68 +126,68 @@ public abstract class AbstractC0217Ujhhgtgfeyxiexzf {
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛳᛴ, reason: contains not printable characters */
     public static ChatRoomInfo m1313Ujhhgtgfeyxiexzf(Cursor cursor) {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        String string = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928223909846713738L, strArr)));
-        long j = cursor.getLong(cursor.getColumnIndex(MagicFactory.get(4928223991451092362L, strArr)));
-        long j2 = cursor.getLong(cursor.getColumnIndex(MagicFactory.get(4928223957091353994L, strArr)));
-        long j3 = cursor.getLong(cursor.getColumnIndex(MagicFactory.get(4928224047285667210L, strArr)));
-        String string2 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928224210494424458L, strArr)));
-        String string3 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928224163249784202L, strArr)));
-        String string4 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928224249149130122L, strArr)));
-        String string5 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928224330753508746L, strArr)));
-        String string6 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928224287803835786L, strArr)));
-        String string7 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928224356523312522L, strArr)));
-        String string8 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928223330026128778L, strArr)));
-        String string9 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928223390155670922L, strArr)));
-        String string10 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928223574839264650L, strArr)));
-        String string11 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928223609199003018L, strArr)));
-        String string12 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928223677918479754L, strArr)));
-        byte[] blob = cursor.getBlob(cursor.getColumnIndex(MagicFactory.get(4928223738048021898L, strArr)));
-        byte[] blob2 = cursor.getBlob(cursor.getColumnIndex(MagicFactory.get(4928223836832269706L, strArr)));
-        byte[] blob3 = cursor.getBlob(cursor.getColumnIndex(MagicFactory.get(4928222780270314890L, strArr)));
-        int i = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928222943479072138L, strArr)));
-        int i2 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928223042263319946L, strArr)));
-        int i3 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928222995018679690L, strArr)));
-        int i4 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928223106687829386L, strArr)));
-        int i5 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928223171112338826L, strArr)));
-        int i6 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928223239831815562L, strArr)));
-        int i7 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928223299961357706L, strArr)));
-        int i8 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928222273464173962L, strArr)));
-        int i9 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928222221924566410L, strArr)));
-        int i10 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928222393723258250L, strArr)));
-        int i11 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928222449557833098L, strArr)));
-        return new ChatRoomInfo(string, Long.valueOf(j), Long.valueOf(j2), j3, cursor.getLong(cursor.getColumnIndex(MagicFactory.get(4928222539752146314L, strArr))), string2, string3, string4, string5, string6, string7, string8, string9, string10, string11, string12, blob, blob2, blob3, i, i2, i3, i4, i7, i9, i11, i5, i6, cursor.getLong(cursor.getColumnIndex(MagicFactory.get(4928222681486067082L, strArr))), i8, i10, cursor.getLong(cursor.getColumnIndex(MagicFactory.get(4928222728730707338L, strArr))));
+        String string = cursor.getString(cursor.getColumnIndex("chatroomname"));
+        long j = cursor.getLong(cursor.getColumnIndex("addtime"));
+        long j2 = cursor.getLong(cursor.getColumnIndex("modifytime"));
+        long j3 = cursor.getLong(cursor.getColumnIndex("chatroomnoticePublishTime"));
+        String string2 = cursor.getString(cursor.getColumnIndex("memberlist"));
+        String string3 = cursor.getString(cursor.getColumnIndex("displayname"));
+        String string4 = cursor.getString(cursor.getColumnIndex("chatroomnick"));
+        String string5 = cursor.getString(cursor.getColumnIndex("roomowner"));
+        String string6 = cursor.getString(cursor.getColumnIndex("selfDisplayName"));
+        String string7 = cursor.getString(cursor.getColumnIndex("chatroomnotice"));
+        String string8 = cursor.getString(cursor.getColumnIndex("xmlChatroomnotice"));
+        String string9 = cursor.getString(cursor.getColumnIndex("chatroomnoticeEditor"));
+        String string10 = cursor.getString(cursor.getColumnIndex("associateOpenIMRoomName"));
+        String string11 = cursor.getString(cursor.getColumnIndex("saveByteVersion"));
+        String string12 = cursor.getString(cursor.getColumnIndex("handleByteVersion"));
+        byte[] blob = cursor.getBlob(cursor.getColumnIndex("roomdata"));
+        byte[] blob2 = cursor.getBlob(cursor.getColumnIndex("roomInfoDetailResByte"));
+        byte[] blob3 = cursor.getBlob(cursor.getColumnIndex("localChatRoomWatchMembers"));
+        int i = cursor.getInt(cursor.getColumnIndex("roomflag"));
+        int i2 = cursor.getInt(cursor.getColumnIndex("isShowname"));
+        int i3 = cursor.getInt(cursor.getColumnIndex("style"));
+        int i4 = cursor.getInt(cursor.getColumnIndex("chatroomdataflag"));
+        int i5 = cursor.getInt(cursor.getColumnIndex("chatroomVersion"));
+        int i6 = cursor.getInt(cursor.getColumnIndex("chatroomNoticeNew"));
+        int i7 = cursor.getInt(cursor.getColumnIndex("chatroomStatus"));
+        int i8 = cursor.getInt(cursor.getColumnIndex("memberCount"));
+        int i9 = cursor.getInt(cursor.getColumnIndex("openIMRoomMigrateStatus"));
+        int i10 = cursor.getInt(cursor.getColumnIndex("oldChatroomVersion"));
+        int i11 = cursor.getInt(cursor.getColumnIndex("spamStatus"));
+        return new ChatRoomInfo(string, Long.valueOf(j), Long.valueOf(j2), j3, cursor.getLong(cursor.getColumnIndex("chatroomfamilystatusmodifytime")), string2, string3, string4, string5, string6, string7, string8, string9, string10, string11, string12, blob, blob2, blob3, i, i2, i3, i4, i7, i9, i11, i5, i6, cursor.getLong(cursor.getColumnIndex("chatroomLocalVersion")), i8, i10, cursor.getLong(cursor.getColumnIndex("compactFlag")));
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛱfeyxiexzfᛱᛴᛳ, reason: contains not printable characters */
     public static RContactInfo m1314Ujhhgtgfeyxiexzf(Cursor cursor) {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        String string = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928239075376235914L, strArr)));
-        String string2 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928239174160483722L, strArr)));
-        String string3 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928239148390679946L, strArr)));
-        String string4 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928239242879960458L, strArr)));
-        String string5 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928239195635320202L, strArr)));
-        String string6 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928238194907940234L, strArr)));
-        String string7 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928238289397220746L, strArr)));
-        int i = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928238255037482378L, strArr)));
-        int i2 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928238353821730186L, strArr)));
-        long j = cursor.getLong(cursor.getColumnIndex(MagicFactory.get(4928238332346893706L, strArr)));
-        int i3 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928238302282122634L, strArr)));
-        String string8 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928238396771403146L, strArr)));
-        String string9 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928238474080814474L, strArr)));
-        String string10 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928238542800291210L, strArr)));
-        byte[] blob = cursor.getBlob(cursor.getColumnIndex(MagicFactory.get(4928238607224800650L, strArr)));
-        int i4 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928238577160029578L, strArr)));
-        String string11 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928238667354342794L, strArr)));
-        int i5 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928237636562191754L, strArr)));
-        int i6 = cursor.getInt(cursor.getColumnIndex(MagicFactory.get(4928237718166570378L, strArr)));
-        String string12 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928237808360883594L, strArr)));
-        String string13 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928237877080360330L, strArr)));
-        String string14 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928237954389771658L, strArr)));
-        String string15 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928237902850164106L, strArr)));
-        String string16 = cursor.getString(cursor.getColumnIndex(MagicFactory.get(4928237980159575434L, strArr)));
-        long j2 = cursor.getLong(cursor.getColumnIndex(MagicFactory.get(4928238087533757834L, strArr)));
-        byte[] blob2 = cursor.getBlob(cursor.getColumnIndex(MagicFactory.get(4928238031699182986L, strArr)));
-        int columnIndex = cursor.getColumnIndex(MagicFactory.get(4928238113303561610L, strArr));
+        String string = cursor.getString(cursor.getColumnIndex("username"));
+        String string2 = cursor.getString(cursor.getColumnIndex("alias"));
+        String string3 = cursor.getString(cursor.getColumnIndex("conRemark"));
+        String string4 = cursor.getString(cursor.getColumnIndex("domainList"));
+        String string5 = cursor.getString(cursor.getColumnIndex("nickname"));
+        String string6 = cursor.getString(cursor.getColumnIndex("pyInitial"));
+        String string7 = cursor.getString(cursor.getColumnIndex("quanPin"));
+        int i = cursor.getInt(cursor.getColumnIndex("showHead"));
+        int i2 = cursor.getInt(cursor.getColumnIndex("type"));
+        long j = cursor.getLong(cursor.getColumnIndex("uiType"));
+        int i3 = cursor.getInt(cursor.getColumnIndex("weiboFlag"));
+        String string8 = cursor.getString(cursor.getColumnIndex("weiboNickname"));
+        String string9 = cursor.getString(cursor.getColumnIndex("conRemarkPYFull"));
+        String string10 = cursor.getString(cursor.getColumnIndex("conRemarkPYShort"));
+        byte[] blob = cursor.getBlob(cursor.getColumnIndex("lvbuff"));
+        int i4 = cursor.getInt(cursor.getColumnIndex("verifyFlag"));
+        String string11 = cursor.getString(cursor.getColumnIndex("encryptUsername"));
+        int i5 = cursor.getInt(cursor.getColumnIndex("chatroomFlag"));
+        int i6 = cursor.getInt(cursor.getColumnIndex("deleteFlag"));
+        String string12 = cursor.getString(cursor.getColumnIndex("contactLabelIds"));
+        String string13 = cursor.getString(cursor.getColumnIndex("descWordingId"));
+        String string14 = cursor.getString(cursor.getColumnIndex("openImAppid"));
+        String string15 = cursor.getString(cursor.getColumnIndex("sourceExtInfo"));
+        String string16 = cursor.getString(cursor.getColumnIndex("ticket"));
+        long j2 = cursor.getLong(cursor.getColumnIndex("usernameFlag"));
+        byte[] blob2 = cursor.getBlob(cursor.getColumnIndex("contactExtra"));
+        int columnIndex = cursor.getColumnIndex("createTime");
         return new RContactInfo(string, string2, string3, string4, string5, string6, string7, i, i2, j, i3, string8, string9, string10, blob, i4, string11, i5, i6, string12, string13, string14, string15, string16, j2, blob2, columnIndex != -1 ? cursor.getLong(columnIndex) : 0L);
     }
 
@@ -204,7 +204,7 @@ public abstract class AbstractC0217Ujhhgtgfeyxiexzf {
         String username = rContactInfoM1314Ujhhgtgfeyxiexzf.getUsername();
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928225181157033354L, strArr));
+        sb.append("select * from chatroom where chatroomname = '");
         sb.append(username);
         sb.append('\'');
         Cursor cursorM4894Ujhhgtgfeyxiexzf = C3382feyxiexzfUjhhgtg.m4894Ujhhgtgfeyxiexzf(sb.toString());
@@ -214,13 +214,13 @@ public abstract class AbstractC0217Ujhhgtgfeyxiexzf {
             Map linkedHashMap = C3308feyxiexzfUjhhgtg.f10345Ujhhgtgfeyxiexzf;
             List listM4253feyxiexzfUjhhgtg = C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf;
             if (count == 0) {
-                groupData = new GroupData(MagicFactory.get(4928226190474347914L, strArr), listM4253feyxiexzfUjhhgtg, listM4253feyxiexzfUjhhgtg, 0, linkedHashMap, MagicFactory.get(4928226186179380618L, strArr), MagicFactory.get(4928226181884413322L, strArr), MagicFactory.get(4928226177589446026L, strArr), MagicFactory.get(4928226173294478730L, strArr), 0L);
+                groupData = new GroupData("", listM4253feyxiexzfUjhhgtg, listM4253feyxiexzfUjhhgtg, 0, linkedHashMap, "", "", "", "", 0L);
             } else {
                 ChatRoomInfo chatRoomInfoM1313Ujhhgtgfeyxiexzf = m1313Ujhhgtgfeyxiexzf(cursorM4894Ujhhgtgfeyxiexzf);
-                List listM4253feyxiexzfUjhhgtg2 = AbstractC2856feyxiexzfUjhhgtg.m4253feyxiexzfUjhhgtg(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(chatRoomInfoM1313Ujhhgtgfeyxiexzf.getMemberlist(), new String[]{MagicFactory.get(4928226168999511434L, strArr)}));
+                List listM4253feyxiexzfUjhhgtg2 = AbstractC2856feyxiexzfUjhhgtg.m4253feyxiexzfUjhhgtg(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(chatRoomInfoM1313Ujhhgtgfeyxiexzf.getMemberlist(), new String[]{";"}));
                 String displayname = chatRoomInfoM1313Ujhhgtgfeyxiexzf.getDisplayname();
                 if (displayname != null) {
-                    listM4253feyxiexzfUjhhgtg = AbstractC2856feyxiexzfUjhhgtg.m4253feyxiexzfUjhhgtg(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(displayname, new String[]{MagicFactory.get(4928226160409576842L, strArr)}));
+                    listM4253feyxiexzfUjhhgtg = AbstractC2856feyxiexzfUjhhgtg.m4253feyxiexzfUjhhgtg(AbstractC1152feyxiexzfUjhhgtg.m2638Ujhhgtgfeyxiexzf(displayname, new String[]{"、"}));
                 }
                 List list = listM4253feyxiexzfUjhhgtg;
                 if (chatRoomInfoM1313Ujhhgtgfeyxiexzf.getMemberCount() > 0) {
@@ -240,23 +240,23 @@ public abstract class AbstractC0217Ujhhgtgfeyxiexzf {
                 String selfDisplayName = chatRoomInfoM1313Ujhhgtgfeyxiexzf.getSelfDisplayName();
                 if (selfDisplayName == null) {
                     Object objM4271feyxiexzfUjhhgtg = C2882Ujhhgtgfeyxiexzf.m4271feyxiexzfUjhhgtg(C2882Ujhhgtgfeyxiexzf.f9150Ujhhgtgfeyxiexzf, EnumC1857Ujhhgtgfeyxiexzf.f6229Ujhhgtgfeyxiexzf.f6233Ujhhgtgfeyxiexzf);
-                    MagicFactory.get(4928273417934734730L, strArr);
+                    "null cannot be cast to non-null type kotlin.String";
                     selfDisplayName = (String) objM4271feyxiexzfUjhhgtg;
                 }
                 String str = selfDisplayName;
                 String roomowner = chatRoomInfoM1313Ujhhgtgfeyxiexzf.getRoomowner();
                 if (roomowner == null) {
-                    roomowner = MagicFactory.get(4928226151819642250L, strArr);
+                    roomowner = "未知";
                 }
                 String str2 = roomowner;
                 String chatroomnotice = chatRoomInfoM1313Ujhhgtgfeyxiexzf.getChatroomnotice();
                 if (chatroomnotice == null) {
-                    chatroomnotice = MagicFactory.get(4928226138934740362L, strArr);
+                    chatroomnotice = "暂无群公告";
                 }
                 String str3 = chatroomnotice;
                 String chatroomnoticeEditor = chatRoomInfoM1313Ujhhgtgfeyxiexzf.getChatroomnoticeEditor();
                 if (chatroomnoticeEditor == null) {
-                    chatroomnoticeEditor = MagicFactory.get(4928226250603890058L, strArr);
+                    chatroomnoticeEditor = "未知";
                 }
                 groupData = new GroupData(chatroomname, listM4253feyxiexzfUjhhgtg2, list, memberCount, map, str, str2, str3, chatroomnoticeEditor, chatRoomInfoM1313Ujhhgtgfeyxiexzf.getChatroomnoticePublishTime());
             }

@@ -15,8 +15,8 @@ public final /* synthetic */ class C1543Ujhhgtgfeyxiexzf implements InterfaceC35
         C1543Ujhhgtgfeyxiexzf c1543Ujhhgtgfeyxiexzf = new C1543Ujhhgtgfeyxiexzf();
         f5345Ujhhgtgfeyxiexzf = c1543Ujhhgtgfeyxiexzf;
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg(MagicFactory.get(4928118249356264842L, strArr), c1543Ujhhgtgfeyxiexzf, 1);
-        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, MagicFactory.get(4928117497736988042L, strArr), false, 1);
+        C1412feyxiexzfUjhhgtg c1412feyxiexzfUjhhgtg = new C1412feyxiexzfUjhhgtg("me.hd.wauxv.hook.micromsg.core.protobuf.old.proto.TimeLineObjectProto.ok1Proto", c1543Ujhhgtgfeyxiexzf, 1);
+        AbstractC0924feyxiexzfUjhhgtg.m2420Ujhhgtgfeyxiexzf(c1412feyxiexzfUjhhgtg, "preload_infos", false, 1);
         descriptor = c1412feyxiexzfUjhhgtg;
     }
 

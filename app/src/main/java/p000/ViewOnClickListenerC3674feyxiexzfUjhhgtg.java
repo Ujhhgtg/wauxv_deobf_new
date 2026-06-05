@@ -71,7 +71,7 @@ public final /* synthetic */ class ViewOnClickListenerC3674feyxiexzfUjhhgtg impl
                 C3677feyxiexzfUjhhgtg c3677feyxiexzfUjhhgtg2 = (C3677feyxiexzfUjhhgtg) obj;
                 C3678feyxiexzfUjhhgtg c3678feyxiexzfUjhhgtg2 = c3677feyxiexzfUjhhgtg2.f11678Ujhhgtgfeyxiexzf;
                 if (c3678feyxiexzfUjhhgtg2 == null) {
-                    MagicFactory.get(4928464672828425610L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+                    "info";
                     c3678feyxiexzfUjhhgtg = null;
                 } else {
                     c3678feyxiexzfUjhhgtg = c3678feyxiexzfUjhhgtg2;
@@ -88,7 +88,7 @@ public final /* synthetic */ class ViewOnClickListenerC3674feyxiexzfUjhhgtg impl
                 View viewM2416Ujhhgtgfeyxiexzf = AbstractC0924feyxiexzfUjhhgtg.m2416Ujhhgtgfeyxiexzf(view, R.layout.module_dialog_plugin_readme, null, false);
                 MaterialTextView materialTextView2 = (MaterialTextView) AbstractC1246feyxiexzfUjhhgtg.m2765Ujhhgtgfeyxiexzf(viewM2416Ujhhgtgfeyxiexzf, R.id.moduleDialogTvPluginReadme);
                 if (materialTextView2 == null) {
-                    throw new NullPointerException(MagicFactory.get(4928806590879892874L, strArr2).concat(viewM2416Ujhhgtgfeyxiexzf.getResources().getResourceName(R.id.moduleDialogTvPluginReadme)));
+                    throw new NullPointerException("Missing required view with ID: ".concat(viewM2416Ujhhgtgfeyxiexzf.getResources().getResourceName(R.id.moduleDialogTvPluginReadme)));
                 }
                 LinearLayout linearLayout = (LinearLayout) viewM2416Ujhhgtgfeyxiexzf;
                 Context context = materialTextView2.getContext();
@@ -342,14 +342,14 @@ public final /* synthetic */ class ViewOnClickListenerC3674feyxiexzfUjhhgtg impl
                         C1435feyxiexzfUjhhgtg c1435feyxiexzfUjhhgtg = (C1435feyxiexzfUjhhgtg) AbstractC1453feyxiexzfUjhhgtg.f5062Ujhhgtgfeyxiexzf.get(c1414feyxiexzfUjhhgtg2.f4968Ujhhgtgfeyxiexzf);
                         if (c1435feyxiexzfUjhhgtg != null) {
                             strArr = strArr4;
-                            zM2931Ujhhgtgfeyxiexzf = c1435feyxiexzfUjhhgtg.m2931Ujhhgtgfeyxiexzf(MagicFactory.get(4928460919027008906L, strArr));
+                            zM2931Ujhhgtgfeyxiexzf = c1435feyxiexzfUjhhgtg.m2931Ujhhgtgfeyxiexzf("openSettings");
                         } else {
                             strArr = strArr4;
                             C1435feyxiexzfUjhhgtg c1435feyxiexzfUjhhgtgM2964Ujhhgtgfeyxiexzf = AbstractC1453feyxiexzfUjhhgtg.m2964Ujhhgtgfeyxiexzf(c1414feyxiexzfUjhhgtg2);
-                            zM2931Ujhhgtgfeyxiexzf = c1435feyxiexzfUjhhgtgM2964Ujhhgtgfeyxiexzf != null && c1435feyxiexzfUjhhgtgM2964Ujhhgtgfeyxiexzf.m2931Ujhhgtgfeyxiexzf(MagicFactory.get(4928461000631387530L, strArr));
+                            zM2931Ujhhgtgfeyxiexzf = c1435feyxiexzfUjhhgtgM2964Ujhhgtgfeyxiexzf != null && c1435feyxiexzfUjhhgtgM2964Ujhhgtgfeyxiexzf.m2931Ujhhgtgfeyxiexzf("openSettings");
                         }
                         if (zM2931Ujhhgtgfeyxiexzf) {
-                            c0290Ujhhgtgfeyxiexzf.m1501Ujhhgtgfeyxiexzf(MagicFactory.get(4928454845943252362L, strArr), new C1433feyxiexzfUjhhgtg(c1414feyxiexzfUjhhgtg2, 6));
+                            c0290Ujhhgtgfeyxiexzf.m1501Ujhhgtgfeyxiexzf("设置", new C1433feyxiexzfUjhhgtg(c1414feyxiexzfUjhhgtg2, 6));
                         }
                         c0290Ujhhgtgfeyxiexzf.m1500Ujhhgtgfeyxiexzf().m1681feyxiexzfUjhhgtg();
                         return;
@@ -372,7 +372,7 @@ public final /* synthetic */ class ViewOnClickListenerC3674feyxiexzfUjhhgtg impl
                 String[] strArr5 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
                 ModuleTabLayout moduleTabLayout = c1019feyxiexzfUjhhgtg2.f3991Ujhhgtgfeyxiexzf;
                 if (moduleTabLayout == null) {
-                    MagicFactory.get(4928467241218868618L, strArr5);
+                    "tabLayout";
                     moduleTabLayout = null;
                 }
                 if (i6 >= 0) {
@@ -388,7 +388,7 @@ public final /* synthetic */ class ViewOnClickListenerC3674feyxiexzfUjhhgtg impl
                     }
                     moduleRecyclerView = c1019feyxiexzfUjhhgtg2.f3996Ujhhgtgfeyxiexzf;
                     if (moduleRecyclerView == null) {
-                        MagicFactory.get(4928467335708149130L, strArr5);
+                        "recyclerView";
                         moduleRecyclerView = null;
                     }
                     if (moduleRecyclerView.isLaidOut() || moduleRecyclerView.isLayoutRequested()) {
@@ -397,7 +397,7 @@ public final /* synthetic */ class ViewOnClickListenerC3674feyxiexzfUjhhgtg impl
                     }
                     ModuleRecyclerView moduleRecyclerView3 = c1019feyxiexzfUjhhgtg2.f3996Ujhhgtgfeyxiexzf;
                     if (moduleRecyclerView3 == null) {
-                        MagicFactory.get(4928467279873574282L, strArr5);
+                        "recyclerView";
                     } else {
                         moduleRecyclerView2 = moduleRecyclerView3;
                     }
@@ -424,7 +424,7 @@ public final /* synthetic */ class ViewOnClickListenerC3674feyxiexzfUjhhgtg impl
                 }
                 moduleRecyclerView = c1019feyxiexzfUjhhgtg2.f3996Ujhhgtgfeyxiexzf;
                 if (moduleRecyclerView == null) {
-                    MagicFactory.get(4928467335708149130L, strArr5);
+                    "recyclerView";
                     moduleRecyclerView = null;
                 }
                 if (moduleRecyclerView.isLaidOut()) {

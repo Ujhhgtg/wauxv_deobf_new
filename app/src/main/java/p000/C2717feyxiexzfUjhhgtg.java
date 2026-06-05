@@ -47,20 +47,20 @@ public final class C2717feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         int iOrdinal = c0627Ujhhgtgfeyxiexzf.m1905Ujhhgtgfeyxiexzf().ordinal();
         if (iOrdinal == 0) {
-            str = MagicFactory.get(4928788259959473546L, strArr);
+            str = "系统分组：全部会话";
         } else if (iOrdinal == 1) {
-            str = MagicFactory.get(4928788298614179210L, strArr);
+            str = "系统分组：仅显示群聊";
         } else if (iOrdinal == 2) {
-            str = MagicFactory.get(4928788388808492426L, strArr);
+            str = "系统分组：仅显示好友私聊";
         } else if (iOrdinal == 3) {
-            str = MagicFactory.get(4928788332973917578L, strArr);
+            str = "系统分组：仅显示公众号";
         } else if (iOrdinal == 4) {
-            str = MagicFactory.get(4928788217009800586L, strArr);
+            str = "系统分组：仅显示未读会话";
         } else {
             if (iOrdinal != 5) {
                 throw new C2870Ujhhgtgfeyxiexzf();
             }
-            str = MagicFactory.get(4928788418873263498L, strArr) + c0627Ujhhgtgfeyxiexzf.f2661Ujhhgtgfeyxiexzf.length + MagicFactory.get(4928787426735818122L, strArr);
+            str = "自定义分组：" + c0627Ujhhgtgfeyxiexzf.f2661Ujhhgtgfeyxiexzf.length + " 个会话";
         }
         materialTextView.setText(str);
         shapeableImageView.setVisibility(c0627Ujhhgtgfeyxiexzf.m1905Ujhhgtgfeyxiexzf() == EnumC0628Ujhhgtgfeyxiexzf.f2668Ujhhgtgfeyxiexzf ? 0 : 4);
@@ -92,7 +92,7 @@ public final class C2717feyxiexzfUjhhgtg extends AbstractC0795feyxiexzfUjhhgtg {
                 }
             }
         }
-        throw new NullPointerException(MagicFactory.get(4928813875144426890L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf).concat(viewInflate.getResources().getResourceName(i2)));
+        throw new NullPointerException("Missing required view with ID: ".concat(viewInflate.getResources().getResourceName(i2)));
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛲᛴᛱfeyxiexzfᛱᛳ, reason: contains not printable characters */

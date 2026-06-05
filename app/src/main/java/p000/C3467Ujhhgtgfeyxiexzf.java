@@ -30,12 +30,12 @@ public final class C3467Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f10765Ujhhgtgfeyxiexzf = new C3467Ujhhgtgfeyxiexzf(MagicFactory.get(4928388712036828554L, strArr));
+        f10765Ujhhgtgfeyxiexzf = new C3467Ujhhgtgfeyxiexzf("FileDownRedirectHook");
         C2065feyxiexzfUjhhgtg c2065feyxiexzfUjhhgtg = AbstractC1389feyxiexzfUjhhgtg.f4886Ujhhgtgfeyxiexzf;
-        f10766Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf(MagicFactory.get(4928340084417103242L, strArr), MagicFactory.get(4928340183201351050L, strArr));
-        f10767Ujhhgtgfeyxiexzf = MagicFactory.get(4928387956122584458L, strArr);
-        f10768Ujhhgtgfeyxiexzf = MagicFactory.get(4928387943237682570L, strArr);
-        f10769Ujhhgtgfeyxiexzf = MagicFactory.get(4928387908877944202L, strArr);
+        f10766Ujhhgtgfeyxiexzf = AbstractC1389feyxiexzfUjhhgtg.m2877Ujhhgtgfeyxiexzf("Download", "Attachment");
+        f10767Ujhhgtgfeyxiexzf = "实验";
+        f10768Ujhhgtgfeyxiexzf = "文件下载重定向";
+        f10769Ujhhgtgfeyxiexzf = "支持将文件重定向下载到自定义目录中";
         f10770Ujhhgtgfeyxiexzf = new C3464Ujhhgtgfeyxiexzf(0);
     }
 

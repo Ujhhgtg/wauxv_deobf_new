@@ -24,10 +24,10 @@ public final class C3169feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f9806Ujhhgtgfeyxiexzf = new C3169feyxiexzfUjhhgtg(MagicFactory.get(4928410530470692234L, strArr));
-        f9807Ujhhgtgfeyxiexzf = MagicFactory.get(4928410719449253258L, strArr);
-        f9808Ujhhgtgfeyxiexzf = MagicFactory.get(4928409744491677066L, strArr);
-        f9809Ujhhgtgfeyxiexzf = MagicFactory.get(4928409714426905994L, strArr);
+        f9806Ujhhgtgfeyxiexzf = new C3169feyxiexzfUjhhgtg("DisablePatHook");
+        f9807Ujhhgtgfeyxiexzf = "聊天";
+        f9808Ujhhgtgfeyxiexzf = "禁用拍拍头像";
+        f9809Ujhhgtgfeyxiexzf = "禁用聊天时双击头像触发的拍一拍功能";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

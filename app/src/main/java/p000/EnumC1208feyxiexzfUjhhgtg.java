@@ -31,9 +31,9 @@ public final class EnumC1208feyxiexzfUjhhgtg {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        EnumC1208feyxiexzfUjhhgtg enumC1208feyxiexzfUjhhgtg = new EnumC1208feyxiexzfUjhhgtg(MagicFactory.get(4928795320885708170L, strArr), 0, 0);
+        EnumC1208feyxiexzfUjhhgtg enumC1208feyxiexzfUjhhgtg = new EnumC1208feyxiexzfUjhhgtg("CONVERT", 0, 0);
         f4510Ujhhgtgfeyxiexzf = enumC1208feyxiexzfUjhhgtg;
-        EnumC1208feyxiexzfUjhhgtg enumC1208feyxiexzfUjhhgtg2 = new EnumC1208feyxiexzfUjhhgtg(MagicFactory.get(4928795286525969802L, strArr), 1, 1);
+        EnumC1208feyxiexzfUjhhgtg enumC1208feyxiexzfUjhhgtg2 = new EnumC1208feyxiexzfUjhhgtg("COPY", 1, 1);
         f4511Ujhhgtgfeyxiexzf = enumC1208feyxiexzfUjhhgtg2;
         f4512Ujhhgtgfeyxiexzf = new EnumC1208feyxiexzfUjhhgtg[]{enumC1208feyxiexzfUjhhgtg, enumC1208feyxiexzfUjhhgtg2};
     }

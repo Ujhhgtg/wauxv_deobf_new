@@ -24,10 +24,10 @@ public final class C0996feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f3905Ujhhgtgfeyxiexzf = new C0996feyxiexzfUjhhgtg(MagicFactory.get(4928855102535501194L, strArr));
-        f3906Ujhhgtgfeyxiexzf = MagicFactory.get(4928855437542950282L, strArr);
-        f3907Ujhhgtgfeyxiexzf = MagicFactory.get(4928855424658048394L, strArr);
-        f3908Ujhhgtgfeyxiexzf = MagicFactory.get(4928855532032230794L, strArr);
+        f3905Ujhhgtgfeyxiexzf = new C0996feyxiexzfUjhhgtg("RemoveRemarkInputLimitHook");
+        f3906Ujhhgtgfeyxiexzf = "限制";
+        f3907Ujhhgtgfeyxiexzf = "移除备注限制";
+        f3908Ujhhgtgfeyxiexzf = "移除好友备注时最多输入32长度的限制";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

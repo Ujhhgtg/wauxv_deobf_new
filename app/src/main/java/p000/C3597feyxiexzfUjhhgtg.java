@@ -18,15 +18,15 @@ public final class C3597feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f11194Ujhhgtgfeyxiexzf = new C3597feyxiexzfUjhhgtg(MagicFactory.get(4928829096508523914L, strArr));
-        f11195Ujhhgtgfeyxiexzf = MagicFactory.get(4928828310529508746L, strArr);
-        f11196Ujhhgtgfeyxiexzf = MagicFactory.get(4928828276169770378L, strArr);
+        f11194Ujhhgtgfeyxiexzf = new C3597feyxiexzfUjhhgtg("GlobalContactInfo");
+        f11195Ujhhgtgfeyxiexzf = "测试/配置修复";
+        f11196Ujhhgtgfeyxiexzf = "ContactInfo复制";
     }
 
     @Override // p000.InterfaceC0743Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛳᛱfeyxiexzfᛱᛴᛲ */
     public final void mo1745Ujhhgtgfeyxiexzf(C0578Ujhhgtgfeyxiexzf c0578Ujhhgtgfeyxiexzf, String str) {
-        if (mo1424feyxiexzfUjhhgtg() && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, MagicFactory.get(4928828057126438282L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf))) {
+        if (mo1424feyxiexzfUjhhgtg() && C3052Ujhhgtgfeyxiexzf.m4512Ujhhgtgfeyxiexzf(str, "RepairerConfig_GlobalContactInfo_Int")) {
             c0578Ujhhgtgfeyxiexzf.m1853Ujhhgtgfeyxiexzf(1);
         }
     }

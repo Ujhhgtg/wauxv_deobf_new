@@ -44,9 +44,9 @@ public final class C2030feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928158544739435914L, strArr));
+        sb.append("AppJumpWordingKeyProto(installedWordingKey=");
         sb.append(this.f6667Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928158768077735306L, strArr));
+        sb.append(", uninstalledWordingKey=");
         return AbstractC3317feyxiexzfUjhhgtg.m4803Ujhhgtgfeyxiexzf(sb, this.f6668Ujhhgtgfeyxiexzf, ')');
     }
 }

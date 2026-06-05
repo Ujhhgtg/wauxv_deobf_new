@@ -30,10 +30,10 @@ public final class C1428feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f5022Ujhhgtgfeyxiexzf = new C1428feyxiexzfUjhhgtg(MagicFactory.get(4928840628495713674L, strArr));
-        f5023Ujhhgtgfeyxiexzf = MagicFactory.get(4928843884080924042L, strArr);
-        f5024Ujhhgtgfeyxiexzf = MagicFactory.get(4928843871196022154L, strArr);
-        f5025Ujhhgtgfeyxiexzf = MagicFactory.get(4928843987160139146L, strArr);
+        f5022Ujhhgtgfeyxiexzf = new C1428feyxiexzfUjhhgtg("PlacedSortProHook");
+        f5023Ujhhgtgfeyxiexzf = "菜单";
+        f5024Ujhhgtgfeyxiexzf = "列表排序";
+        f5025Ujhhgtgfeyxiexzf = "为聊天列表菜单添加列表排序聊天功能";
         f5026Ujhhgtgfeyxiexzf = new C1388feyxiexzfUjhhgtg(4);
     }
 
@@ -55,29 +55,29 @@ public final class C1428feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
             if (C3382feyxiexzfUjhhgtg.m4891Ujhhgtgfeyxiexzf(conversationBean.getFlag(), C3710Ujhhgtgfeyxiexzf.f11753Ujhhgtgfeyxiexzf) == 0) {
                 long flag = conversationBean.getFlag();
                 if (0 <= flag && flag < 1152921504606846977L) {
-                    arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_SetPlacedTopPro, MagicFactory.get(4928844124599092618L, strArr), new C1388feyxiexzfUjhhgtg(5)));
+                    arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_SetPlacedTopPro, "列表置顶", new C1388feyxiexzfUjhhgtg(5)));
                 }
             } else {
                 long flag2 = conversationBean.getFlag();
                 if (6917529027641081856L <= flag2 && flag2 < 8070450532247928833L) {
-                    arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_UnSetPlacedTopPro, MagicFactory.get(4928844103124256138L, strArr), new C1388feyxiexzfUjhhgtg(6)));
+                    arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_UnSetPlacedTopPro, "取消列表置顶", new C1388feyxiexzfUjhhgtg(6)));
                 }
             }
         }
         if (C1401feyxiexzfUjhhgtg.f4917Ujhhgtgfeyxiexzf.m4617Ujhhgtgfeyxiexzf()) {
-            arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_ResetPlaced, MagicFactory.get(4928844073059485066L, strArr), new C1388feyxiexzfUjhhgtg(7)));
+            arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_ResetPlaced, "还原排序", new C1388feyxiexzfUjhhgtg(7)));
         }
         if (C1398feyxiexzfUjhhgtg.f4914Ujhhgtgfeyxiexzf.m4617Ujhhgtgfeyxiexzf()) {
             if (C3382feyxiexzfUjhhgtg.m4891Ujhhgtgfeyxiexzf(conversationBean.getFlag(), C3710Ujhhgtgfeyxiexzf.f11752Ujhhgtgfeyxiexzf) == 0) {
                 long flag3 = conversationBean.getFlag();
                 if (0 <= flag3 && flag3 < 1152921504606846977L) {
-                    arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_SetPlacedBottomPro, MagicFactory.get(4928844189023602058L, strArr), new C1388feyxiexzfUjhhgtg(8)));
+                    arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_SetPlacedBottomPro, "列表置底", new C1388feyxiexzfUjhhgtg(8)));
                     return arrayList;
                 }
             } else {
                 long flag4 = conversationBean.getFlag();
                 if (-6917529027641081856L <= flag4 && flag4 < -5764607523034234879L) {
-                    arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_UnSetPlacedBottomPro, MagicFactory.get(4928844167548765578L, strArr), new C1388feyxiexzfUjhhgtg(9)));
+                    arrayList.add(new C3712Ujhhgtgfeyxiexzf(R.id.MenuItem_Conversation_UnSetPlacedBottomPro, "取消列表置底", new C1388feyxiexzfUjhhgtg(9)));
                 }
             }
         }

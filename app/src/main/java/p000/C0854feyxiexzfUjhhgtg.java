@@ -21,7 +21,7 @@ public final class C0854feyxiexzfUjhhgtg extends AbstractC0255Ujhhgtgfeyxiexzf i
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛳᛱUjhhgtgᛱᛴ, reason: contains not printable characters */
     public final Class m2261feyxiexzfUjhhgtg() {
-        return AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf(MagicFactory.get(4928220267714446730L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        return AbstractC1252feyxiexzfUjhhgtg.m2792Ujhhgtgfeyxiexzf("com.tencent.mm.ui.base.preference.Preference");
     }
 
     @Override // p000.AbstractC0571Ujhhgtgfeyxiexzf

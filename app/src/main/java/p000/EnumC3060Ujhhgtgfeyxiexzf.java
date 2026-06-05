@@ -37,11 +37,11 @@ public final class EnumC3060Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        EnumC3060Ujhhgtgfeyxiexzf enumC3060Ujhhgtgfeyxiexzf = new EnumC3060Ujhhgtgfeyxiexzf(MagicFactory.get(4928366172048459146L, strArr), 0, -1);
+        EnumC3060Ujhhgtgfeyxiexzf enumC3060Ujhhgtgfeyxiexzf = new EnumC3060Ujhhgtgfeyxiexzf("SUB", 0, -1);
         f9477Ujhhgtgfeyxiexzf = enumC3060Ujhhgtgfeyxiexzf;
-        EnumC3060Ujhhgtgfeyxiexzf enumC3060Ujhhgtgfeyxiexzf2 = new EnumC3060Ujhhgtgfeyxiexzf(MagicFactory.get(4928366154868589962L, strArr), 1, 0);
+        EnumC3060Ujhhgtgfeyxiexzf enumC3060Ujhhgtgfeyxiexzf2 = new EnumC3060Ujhhgtgfeyxiexzf("DEFAULT", 1, 0);
         f9478Ujhhgtgfeyxiexzf = enumC3060Ujhhgtgfeyxiexzf2;
-        EnumC3060Ujhhgtgfeyxiexzf enumC3060Ujhhgtgfeyxiexzf3 = new EnumC3060Ujhhgtgfeyxiexzf(MagicFactory.get(4928366120508851594L, strArr), 2, 1);
+        EnumC3060Ujhhgtgfeyxiexzf enumC3060Ujhhgtgfeyxiexzf3 = new EnumC3060Ujhhgtgfeyxiexzf("ADD", 2, 1);
         f9479Ujhhgtgfeyxiexzf = enumC3060Ujhhgtgfeyxiexzf3;
         EnumC3060Ujhhgtgfeyxiexzf[] enumC3060UjhhgtgfeyxiexzfArr = {enumC3060Ujhhgtgfeyxiexzf, enumC3060Ujhhgtgfeyxiexzf2, enumC3060Ujhhgtgfeyxiexzf3};
         f9480Ujhhgtgfeyxiexzf = enumC3060UjhhgtgfeyxiexzfArr;

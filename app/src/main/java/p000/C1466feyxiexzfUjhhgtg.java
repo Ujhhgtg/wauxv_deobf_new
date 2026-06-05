@@ -27,17 +27,17 @@ public final class C1466feyxiexzfUjhhgtg extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f5096Ujhhgtgfeyxiexzf = new C1466feyxiexzfUjhhgtg(MagicFactory.get(4928845537643333002L, strArr));
-        f5097Ujhhgtgfeyxiexzf = MagicFactory.get(4928844627110266250L, strArr);
-        f5098Ujhhgtgfeyxiexzf = MagicFactory.get(4928844614225364362L, strArr);
-        f5099Ujhhgtgfeyxiexzf = MagicFactory.get(4928844730189481354L, strArr);
+        f5096Ujhhgtgfeyxiexzf = new C1466feyxiexzfUjhhgtg("OpenInfoUiHook");
+        f5097Ujhhgtgfeyxiexzf = "菜单";
+        f5098Ujhhgtgfeyxiexzf = "打开详情";
+        f5099Ujhhgtgfeyxiexzf = "打开 好友ID 或者 群聊ID 的对应详情页";
         f5100Ujhhgtgfeyxiexzf = new C1269feyxiexzfUjhhgtg(9);
     }
 
     @Override // p000.InterfaceC0604Ujhhgtgfeyxiexzf
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲᛳᛴ */
     public final List mo1792Ujhhgtgfeyxiexzf() {
-        return !mo1424feyxiexzfUjhhgtg() ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : Collections.singletonList(new C0592Ujhhgtgfeyxiexzf(R.id.MenuItem_Home_OpenInfo, MagicFactory.get(4928845610657777034L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf), R.drawable.ic_menu_info_24dp, new C0478Ujhhgtgfeyxiexzf(7)));
+        return !mo1424feyxiexzfUjhhgtg() ? C3312feyxiexzfUjhhgtg.f10349Ujhhgtgfeyxiexzf : Collections.singletonList(new C0592Ujhhgtgfeyxiexzf(R.id.MenuItem_Home_OpenInfo, "打开详情", R.drawable.ic_menu_info_24dp, new C0478Ujhhgtgfeyxiexzf(7)));
     }
 
     @Override // p000.AbstractC2059Ujhhgtgfeyxiexzf

@@ -96,9 +96,9 @@ public final class C2419Ujhhgtgfeyxiexzf implements Comparator {
                 Locale locale = Locale.ROOT;
                 String lowerCase = name.toLowerCase(locale);
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                MagicFactory.get(4928402649205704074L, strArr);
+                "toLowerCase(...)";
                 String lowerCase2 = ((File) obj2).getName().toLowerCase(locale);
-                MagicFactory.get(4928402713630213514L, strArr);
+                "toLowerCase(...)";
                 return AbstractC1937feyxiexzfUjhhgtg.m3274Ujhhgtgfeyxiexzf(lowerCase, lowerCase2);
             case Opcodes.LDC /* 18 */:
                 return ((C1224feyxiexzfUjhhgtg) obj).f4535Ujhhgtgfeyxiexzf - ((C1224feyxiexzfUjhhgtg) obj2).f4535Ujhhgtgfeyxiexzf;

@@ -17,60 +17,60 @@ public final class C0521Ujhhgtgfeyxiexzf extends AbstractC0255Ujhhgtgfeyxiexzf i
     public static String m1809feyxiexzfUjhhgtg() {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7366Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411535493039498L, strArr);
+            return "c37";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7365Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411518313170314L, strArr);
+            return "c0g";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7364Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411501133301130L, strArr);
+            return "bzy";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7362Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411483953431946L, strArr);
+            return "byw";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7361Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411604212516234L, strArr);
+            return "bxy";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7360Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411587032647050L, strArr);
+            return "bx_";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7359Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411569852777866L, strArr);
+            return "bw0";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7358Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411552672908682L, strArr);
+            return "bvg";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7357Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411672931992970L, strArr);
+            return "buz";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7356Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411655752123786L, strArr);
+            return "bu9";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7355Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411638572254602L, strArr);
+            return "btr";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7354Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411621392385418L, strArr);
+            return "bvm";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7353Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411741651469706L, strArr);
+            return "bv7";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7352Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411724471600522L, strArr);
+            return "br2";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7351Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411707291731338L, strArr);
+            return "bqh";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7350Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411690111862154L, strArr);
+            return "bm8";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7349Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411810370946442L, strArr);
+            return "bi0";
         }
         if (AbstractC1265feyxiexzfUjhhgtg.m2831Ujhhgtgfeyxiexzf(EnumC2263Ujhhgtgfeyxiexzf.f7348Ujhhgtgfeyxiexzf)) {
-            return MagicFactory.get(4928411793191077258L, strArr);
+            return "bdv";
         }
-        return AbstractC1265feyxiexzfUjhhgtg.m2830Ujhhgtgfeyxiexzf(EnumC2264feyxiexzfUjhhgtg.f7372Ujhhgtgfeyxiexzf) ? MagicFactory.get(4928411776011208074L, strArr) : MagicFactory.get(4928411758831338890L, strArr);
+        return AbstractC1265feyxiexzfUjhhgtg.m2830Ujhhgtgfeyxiexzf(EnumC2264feyxiexzfUjhhgtg.f7372Ujhhgtgfeyxiexzf) ? "bkj" : "b4_";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf
@@ -84,19 +84,19 @@ public final class C0521Ujhhgtgfeyxiexzf extends AbstractC0255Ujhhgtgfeyxiexzf i
             if (C0580Ujhhgtgfeyxiexzf.m1859Ujhhgtgfeyxiexzf()) {
                 dexKitBridge.getClass();
                 C3452feyxiexzfUjhhgtg c3452feyxiexzfUjhhgtg = new C3452feyxiexzfUjhhgtg();
-                c3452feyxiexzfUjhhgtg.m4951Ujhhgtgfeyxiexzf(MagicFactory.get(4928414748128576906L, strArr));
+                c3452feyxiexzfUjhhgtg.m4951Ujhhgtgfeyxiexzf("com.tencent.mm.ui.chatting.adapter");
                 C0394Ujhhgtgfeyxiexzf c0394Ujhhgtgfeyxiexzf = new C0394Ujhhgtgfeyxiexzf();
-                c0394Ujhhgtgfeyxiexzf.m1661feyxiexzfUjhhgtg(MagicFactory.get(4928415650071709066L, strArr), MagicFactory.get(4928414692294002058L, strArr));
+                c0394Ujhhgtgfeyxiexzf.m1661feyxiexzfUjhhgtg("MicroMsg.ChattingDataAdapterV3", "_onBindViewHolder[");
                 c3452feyxiexzfUjhhgtg.f10739Ujhhgtgfeyxiexzf = c0394Ujhhgtgfeyxiexzf;
                 Method methodM1634Ujhhgtgfeyxiexzf = ((C0385Ujhhgtgfeyxiexzf) dexKitBridge.m1049Ujhhgtgfeyxiexzf(c3452feyxiexzfUjhhgtg).m3695Ujhhgtgfeyxiexzf()).m1634Ujhhgtgfeyxiexzf(C0580Ujhhgtgfeyxiexzf.m1854Ujhhgtgfeyxiexzf());
                 Class<?> declaringClass = methodM1634Ujhhgtgfeyxiexzf.getDeclaringClass();
-                ArrayList arrayListM1883Ujhhgtgfeyxiexzf = AbstractC0615Ujhhgtgfeyxiexzf.m1883Ujhhgtgfeyxiexzf(AbstractC0587Ujhhgtgfeyxiexzf.m1862Ujhhgtgfeyxiexzf(declaringClass), new C3271feyxiexzfUjhhgtg(methodM1634Ujhhgtgfeyxiexzf), MagicFactory.get(4928411879090423178L, strArr));
+                ArrayList arrayListM1883Ujhhgtgfeyxiexzf = AbstractC0615Ujhhgtgfeyxiexzf.m1883Ujhhgtgfeyxiexzf(AbstractC0587Ujhhgtgfeyxiexzf.m1862Ujhhgtgfeyxiexzf(declaringClass), new C3271feyxiexzfUjhhgtg(methodM1634Ujhhgtgfeyxiexzf), "Landroid/view/View;->findViewById(I)Landroid/view/View;");
                 C0520Ujhhgtgfeyxiexzf c0520Ujhhgtgfeyxiexzf = C0520Ujhhgtgfeyxiexzf.f2468Ujhhgtgfeyxiexzf;
                 if (arrayListM1883Ujhhgtgfeyxiexzf.size() == 1) {
                     iM2752Ujhhgtgfeyxiexzf = ((Number) arrayListM1883Ujhhgtgfeyxiexzf.get(0)).intValue();
                 } else {
                     ArrayList arrayList = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
-                    C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(MagicFactory.get(4928415349423998346L, strArr), null, 14);
+                    C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf("msgLayout hostId use Default", null, 14);
                     iM2752Ujhhgtgfeyxiexzf = AbstractC1245feyxiexzfUjhhgtg.m2752Ujhhgtgfeyxiexzf(m1809feyxiexzfUjhhgtg());
                 }
                 c0520Ujhhgtgfeyxiexzf.m4626Ujhhgtgfeyxiexzf(iM2752Ujhhgtgfeyxiexzf);
@@ -107,7 +107,7 @@ public final class C0521Ujhhgtgfeyxiexzf extends AbstractC0255Ujhhgtgfeyxiexzf i
         }
         if (C0918feyxiexzfUjhhgtg.m2409Ujhhgtgfeyxiexzf(c0919feyxiexzfUjhhgtg) != null) {
             ArrayList arrayList2 = C2290feyxiexzfUjhhgtg.f7511Ujhhgtgfeyxiexzf;
-            C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf(MagicFactory.get(4928415499747853706L, strArr), null, 14);
+            C2290feyxiexzfUjhhgtg.m3495Ujhhgtgfeyxiexzf("msgLayout hostId find Failed", null, 14);
         }
     }
 

@@ -16,7 +16,7 @@ public final class C3722Ujhhgtgfeyxiexzf extends AbstractC0255Ujhhgtgfeyxiexzf i
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛲᛳᛱUjhhgtgᛱᛴ, reason: contains not printable characters */
     public static void m5383feyxiexzfUjhhgtg() {
-        Cursor cursorM4894Ujhhgtgfeyxiexzf = C3382feyxiexzfUjhhgtg.m4894Ujhhgtgfeyxiexzf(MagicFactory.get(4928551487002379658L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        Cursor cursorM4894Ujhhgtgfeyxiexzf = C3382feyxiexzfUjhhgtg.m4894Ujhhgtgfeyxiexzf("SELECT username FROM rconversation WHERE unReadCount>0 OR unReadMuteCount>0");
         if (cursorM4894Ujhhgtgfeyxiexzf != null) {
             while (cursorM4894Ujhhgtgfeyxiexzf.moveToNext()) {
                 try {

@@ -37,7 +37,7 @@ public final class C1527Ujhhgtgfeyxiexzf {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(MagicFactory.get(4928130532962731402L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        sb.append("nl1Proto(screen_orientation=");
         return AbstractC0924feyxiexzfUjhhgtg.m2417Ujhhgtgfeyxiexzf(sb, this.f5311Ujhhgtgfeyxiexzf, ')');
     }
 }

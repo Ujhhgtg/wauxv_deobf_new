@@ -62,15 +62,15 @@ public final class C2247feyxiexzfUjhhgtg extends AbstractC1181feyxiexzfUjhhgtg i
         StringBuilder sbM2707Ujhhgtgfeyxiexzf = AbstractC1225feyxiexzfUjhhgtg.m2707Ujhhgtgfeyxiexzf(this.f7309Ujhhgtgfeyxiexzf);
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928235145481160074L, strArr));
+        sb.append("载入 ");
         int i = this.f7307Ujhhgtgfeyxiexzf;
         sb.append(i + 1);
         sb.append('/');
         List list = this.f7308Ujhhgtgfeyxiexzf;
         sb.append(list.size());
-        sb.append(MagicFactory.get(4928235265740244362L, strArr));
+        sb.append(", 耗时 ");
         sb.append(jCurrentTimeMillis);
-        sb.append(MagicFactory.get(4928235239970440586L, strArr));
+        sb.append("ms");
         sbM2707Ujhhgtgfeyxiexzf.append(sb.toString());
         sbM2707Ujhhgtgfeyxiexzf.append('\n');
         this.f7305Ujhhgtgfeyxiexzf.setText(sbM2707Ujhhgtgfeyxiexzf.toString());

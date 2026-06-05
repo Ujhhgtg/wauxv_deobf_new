@@ -61,22 +61,22 @@ public final class C3613Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928786786785691018L);
         AbstractC3590Ujhhgtgfeyxiexzf.m5128Ujhhgtgfeyxiexzf(4928785781763343754L);
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f11238Ujhhgtgfeyxiexzf = new C3613Ujhhgtgfeyxiexzf(MagicFactory.get(4928801660257437066L, strArr));
+        f11238Ujhhgtgfeyxiexzf = new C3613Ujhhgtgfeyxiexzf("FloatActionButtonHook");
         f11239Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(28));
         f11240Ujhhgtgfeyxiexzf = new C2065feyxiexzfUjhhgtg(new C2975feyxiexzfUjhhgtg(29));
-        f11241Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(new C3485Ujhhgtgfeyxiexzf(MagicFactory.get(4928785738813670794L, strArr), MagicFactory.get(4928785725928768906L, strArr), true, MagicFactory.get(4928785798943212938L, strArr), 0, MagicFactory.get(4928785910612362634L, strArr)), new C3485Ujhhgtgfeyxiexzf(MagicFactory.get(4928785859072755082L, strArr), MagicFactory.get(4928785979331839370L, strArr), true, MagicFactory.get(4928785927792231818L, strArr), 1, MagicFactory.get(4928786026576479626L, strArr)), new C3485Ujhhgtgfeyxiexzf(MagicFactory.get(4928786249914779018L, strArr), MagicFactory.get(4928786232734909834L, strArr), true, MagicFactory.get(4928785201942758794L, strArr), 2, MagicFactory.get(4928785300727006602L, strArr)), new C3485Ujhhgtgfeyxiexzf(MagicFactory.get(4928785463935763850L, strArr), MagicFactory.get(4928785446755894666L, strArr), true, MagicFactory.get(4928785524065305994L, strArr), 3, MagicFactory.get(4928785622849553802L, strArr)), new C3485Ujhhgtgfeyxiexzf(MagicFactory.get(4928789106068030858L, strArr), MagicFactory.get(4928789093183128970L, strArr), true, MagicFactory.get(4928789161902605706L, strArr), 4, MagicFactory.get(4928789260686853514L, strArr)), new C3485Ujhhgtgfeyxiexzf(MagicFactory.get(4928789479730185610L, strArr), MagicFactory.get(4928789466845283722L, strArr), true, MagicFactory.get(4928789544154695050L, strArr), 5, MagicFactory.get(4928789505499989386L, strArr)), new C3485Ujhhgtgfeyxiexzf(MagicFactory.get(4928788629326661002L, strArr), MagicFactory.get(4928788607851824522L, strArr), true, MagicFactory.get(4928788689456203146L, strArr), 6, MagicFactory.get(4928788801125352842L, strArr)));
-        f11242Ujhhgtgfeyxiexzf = MagicFactory.get(4928788865549862282L, strArr);
-        f11243Ujhhgtgfeyxiexzf = MagicFactory.get(4928788852664960394L, strArr);
-        f11244Ujhhgtgfeyxiexzf = MagicFactory.get(4928788822600189322L, strArr);
+        f11241Ujhhgtgfeyxiexzf = AbstractC2852feyxiexzfUjhhgtg.m4192Ujhhgtgfeyxiexzf(new C3485Ujhhgtgfeyxiexzf("设置", "ic_setting.png", true, "wauxv", 0, "openSetting"), new C3485Ujhhgtgfeyxiexzf("扫一扫", "ic_scan.png", true, "activity", 1, "com.tencent.mm.plugin.scanner.ui.BaseScanUI"), new C3485Ujhhgtgfeyxiexzf("朋友圈", "ic_timeline.png", true, "activity", 2, "com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI"), new C3485Ujhhgtgfeyxiexzf("视频号", "ic_finder.png", true, "activity", 3, "com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI"), new C3485Ujhhgtgfeyxiexzf("收藏", "ic_favorite.png", true, "activity", 4, "com.tencent.mm.plugin.fav.ui.FavoriteIndexUI"), new C3485Ujhhgtgfeyxiexzf("钱包", "ic_wallet.png", true, "activity", 5, "com.tencent.mm.plugin.mall.ui.MallIndexUIv2"), new C3485Ujhhgtgfeyxiexzf("清空未读", "ic_clear.png", true, "wauxv", 6, "clearUnreadCount"));
+        f11242Ujhhgtgfeyxiexzf = "界面";
+        f11243Ujhhgtgfeyxiexzf = "悬浮动作按钮";
+        f11244Ujhhgtgfeyxiexzf = "为主界面右下角添加一个悬浮动作按钮";
         f11245Ujhhgtgfeyxiexzf = new C3464Ujhhgtgfeyxiexzf(22);
         f11246Ujhhgtgfeyxiexzf = new C3464Ujhhgtgfeyxiexzf(23);
-        f11247Ujhhgtgfeyxiexzf = AbstractC2391Ujhhgtgfeyxiexzf.m3654feyxiexzfUjhhgtg(new String[]{MagicFactory.get(4928788882729731466L, strArr), MagicFactory.get(4928788968629077386L, strArr), MagicFactory.get(4928787933541959050L, strArr)});
+        f11247Ujhhgtgfeyxiexzf = AbstractC2391Ujhhgtgfeyxiexzf.m3654feyxiexzfUjhhgtg(new String[]{"openSetting", "clearUnreadCount", "killProcess"});
     }
 
     /* JADX INFO: renamed from: 上海高中ᛱ谢子非ᛱ能不能要点脸ᛱfeyxiexzfᛱᛳᛴᛱUjhhgtgᛱᛲ, reason: contains not printable characters */
     public static List m5251feyxiexzfUjhhgtg() {
         Object c0919feyxiexzfUjhhgtg;
-        File file = new File((String) f11239Ujhhgtgfeyxiexzf.getValue(), MagicFactory.get(4928800603695482250L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+        File file = new File((String) f11239Ujhhgtgfeyxiexzf.getValue(), "menuItemsV2.json");
         boolean zExists = file.exists();
         List list = f11241Ujhhgtgfeyxiexzf;
         if (!zExists) {
@@ -112,7 +112,7 @@ public final class C3613Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             i = i2;
         }
         if (!m5253feyxiexzfUjhhgtg(arrayList)) {
-            AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928800994537506186L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+            AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "保存失败");
             return false;
         }
         list.clear();
@@ -136,7 +136,7 @@ public final class C3613Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
             i = i2;
         }
         try {
-            File file = new File((String) f11239Ujhhgtgfeyxiexzf.getValue(), MagicFactory.get(4928800603695482250L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf));
+            File file = new File((String) f11239Ujhhgtgfeyxiexzf.getValue(), "menuItemsV2.json");
             File parentFile = file.getParentFile();
             if (parentFile != null) {
                 parentFile.mkdirs();
@@ -163,60 +163,60 @@ public final class C3613Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         final MaterialCheckBox materialCheckBox = (MaterialCheckBox) viewInflate.findViewById(R.id.moduleDialogCbFabMenuEnable);
         String str2 = c3485Ujhhgtgfeyxiexzf != null ? c3485Ujhhgtgfeyxiexzf.f10820Ujhhgtgfeyxiexzf : null;
         if (str2 == null) {
-            str2 = MagicFactory.get(4928800904343192970L, strArr);
+            str2 = "";
         }
         editText.setText(str2);
         String str3 = c3485Ujhhgtgfeyxiexzf != null ? c3485Ujhhgtgfeyxiexzf.f10822Ujhhgtgfeyxiexzf : null;
         if (str3 == null) {
-            str3 = MagicFactory.get(4928800900048225674L, strArr);
+            str3 = "";
         }
         editText2.setText(str3);
         if (c3485Ujhhgtgfeyxiexzf == null || (str = c3485Ujhhgtgfeyxiexzf.f10823Ujhhgtgfeyxiexzf) == null) {
-            str = MagicFactory.get(4928800895753258378L, strArr);
+            str = "activity";
         }
         editText3.setText(str);
         String str4 = c3485Ujhhgtgfeyxiexzf != null ? c3485Ujhhgtgfeyxiexzf.f10824Ujhhgtgfeyxiexzf : null;
         if (str4 == null) {
-            str4 = MagicFactory.get(4928800857098552714L, strArr);
+            str4 = "";
         }
         editText4.setText(str4);
         materialCheckBox.setChecked(c3485Ujhhgtgfeyxiexzf != null ? c3485Ujhhgtgfeyxiexzf.f10825Ujhhgtgfeyxiexzf : true);
         C0290Ujhhgtgfeyxiexzf c0290Ujhhgtgfeyxiexzf = new C0290Ujhhgtgfeyxiexzf();
         c0290Ujhhgtgfeyxiexzf.f1721Ujhhgtgfeyxiexzf = MagicFactory.get(c3485Ujhhgtgfeyxiexzf == null ? 4928800852803585418L : 4928800968767702410L, strArr);
         c0290Ujhhgtgfeyxiexzf.f1723Ujhhgtgfeyxiexzf = viewInflate;
-        c0290Ujhhgtgfeyxiexzf.m1502Ujhhgtgfeyxiexzf(MagicFactory.get(4928800947292865930L, strArr), new InterfaceC3545feyxiexzfUjhhgtg() { // from class: 上海高中ᛱ谢子非ᛱ要点脸ᛳᛴᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲ能不能
+        c0290Ujhhgtgfeyxiexzf.m1502Ujhhgtgfeyxiexzf("保存", new InterfaceC3545feyxiexzfUjhhgtg() { // from class: 上海高中ᛱ谢子非ᛱ要点脸ᛳᛴᛱUjhhgtgᛱᛱfeyxiexzfᛱᛲ能不能
             @Override // p000.InterfaceC3545feyxiexzfUjhhgtg
             public final Object invoke() {
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
                 String string = AbstractC1152feyxiexzfUjhhgtg.m2644feyxiexzfUjhhgtg(AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(editText)).toString();
                 if (string == null) {
-                    string = MagicFactory.get(4928787207692486026L, strArr2);
+                    string = "";
                 }
                 String str5 = string;
                 String string2 = AbstractC1152feyxiexzfUjhhgtg.m2644feyxiexzfUjhhgtg(AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(editText2)).toString();
                 if (string2 == null) {
-                    string2 = MagicFactory.get(4928787203397518730L, strArr2);
+                    string2 = "";
                 }
                 String str6 = string2;
                 String string3 = AbstractC1152feyxiexzfUjhhgtg.m2644feyxiexzfUjhhgtg(AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(editText3)).toString();
                 if (string3 == null) {
-                    string3 = MagicFactory.get(4928787199102551434L, strArr2);
+                    string3 = "";
                 }
                 String lowerCase = string3.toLowerCase(Locale.ROOT);
-                MagicFactory.get(4928787194807584138L, strArr2);
+                "toLowerCase(...)";
                 String string4 = AbstractC1152feyxiexzfUjhhgtg.m2644feyxiexzfUjhhgtg(AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(editText4)).toString();
                 if (string4 == null) {
-                    string4 = MagicFactory.get(4928787259232093578L, strArr2);
+                    string4 = "";
                 }
                 String str7 = string4;
                 boolean zIsChecked = materialCheckBox.isChecked();
                 if (str5.length() == 0) {
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928787254937126282L, strArr2));
-                } else if (!lowerCase.equals(MagicFactory.get(4928787353721374090L, strArr2)) && !lowerCase.equals(MagicFactory.get(4928787315066668426L, strArr2))) {
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928786327224190346L, strArr2));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "菜单名称不能为空");
+                } else if (!lowerCase.equals("activity") && !lowerCase.equals("wauxv")) {
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "类型仅支持 activity 或 wauxv");
                 } else if (str7.length() == 0) {
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928786365878896010L, strArr2));
-                } else if (!lowerCase.equals(MagicFactory.get(4928786468958111114L, strArr2)) || C3613Ujhhgtgfeyxiexzf.f11247Ujhhgtgfeyxiexzf.contains(str7)) {
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "动作值不能为空");
+                } else if (!lowerCase.equals("wauxv") || C3613Ujhhgtgfeyxiexzf.f11247Ujhhgtgfeyxiexzf.contains(str7)) {
                     C3485Ujhhgtgfeyxiexzf c3485Ujhhgtgfeyxiexzf2 = c3485Ujhhgtgfeyxiexzf;
                     ArrayList arrayList2 = arrayList;
                     C3485Ujhhgtgfeyxiexzf c3485Ujhhgtgfeyxiexzf3 = new C3485Ujhhgtgfeyxiexzf(str5, str6, zIsChecked, lowerCase, c3485Ujhhgtgfeyxiexzf2 != null ? c3485Ujhhgtgfeyxiexzf2.f10821Ujhhgtgfeyxiexzf : arrayList2.size(), str7);
@@ -236,7 +236,7 @@ public final class C3613Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                             i++;
                         }
                         if (i < 0) {
-                            AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928786627871901066L, strArr2));
+                            AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "菜单项不存在");
                         } else {
                             arrayList2.set(i, c3485Ujhhgtgfeyxiexzf3);
                         }
@@ -244,7 +244,7 @@ public final class C3613Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
                     C3613Ujhhgtgfeyxiexzf.f11238Ujhhgtgfeyxiexzf.getClass();
                     C3613Ujhhgtgfeyxiexzf.m5252feyxiexzfUjhhgtg(arrayList2, c3476feyxiexzfUjhhgtg);
                 } else {
-                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, MagicFactory.get(4928786443188307338L, strArr2));
+                    AbstractC1150feyxiexzfUjhhgtg.m2621Ujhhgtgfeyxiexzf(null, 3, "wauxv 动作仅支持 openSetting、clearUnreadCount、killProcess");
                 }
                 return C1943Ujhhgtgfeyxiexzf.f6418Ujhhgtgfeyxiexzf;
             }

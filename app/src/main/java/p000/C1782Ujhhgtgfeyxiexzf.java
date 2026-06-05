@@ -24,10 +24,10 @@ public final class C1782Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f5973Ujhhgtgfeyxiexzf = new C1782Ujhhgtgfeyxiexzf(MagicFactory.get(4928388183755851146L, strArr));
-        f5974Ujhhgtgfeyxiexzf = MagicFactory.get(4928866239385699722L, strArr);
-        f5975Ujhhgtgfeyxiexzf = MagicFactory.get(4928866226500797834L, strArr);
-        f5976Ujhhgtgfeyxiexzf = MagicFactory.get(4928866196436026762L, strArr);
+        f5973Ujhhgtgfeyxiexzf = new C1782Ujhhgtgfeyxiexzf("TransparentAvatarHook");
+        f5974Ujhhgtgfeyxiexzf = "实验";
+        f5975Ujhhgtgfeyxiexzf = "上传透明头像";
+        f5976Ujhhgtgfeyxiexzf = "选择透明头像时需要先缩放一下再上传";
     }
 
     @Override // p000.InterfaceC0598Ujhhgtgfeyxiexzf

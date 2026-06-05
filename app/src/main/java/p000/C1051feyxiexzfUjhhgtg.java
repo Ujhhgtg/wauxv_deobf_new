@@ -13,6 +13,6 @@ public final class C1051feyxiexzfUjhhgtg extends AbstractC3099Ujhhgtgfeyxiexzf {
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f4102Ujhhgtgfeyxiexzf = new C1051feyxiexzfUjhhgtg(MagicFactory.get(4928889694202103178L, strArr), MagicFactory.get(4928889857410860426L, strArr), null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
+        f4102Ujhhgtgfeyxiexzf = new C1051feyxiexzfUjhhgtg("SnsInfoHook.ValTimeFormat", "HH:mm:ss", null, false, 0, 0.0f, 0L, Opcodes.IUSHR);
     }
 }

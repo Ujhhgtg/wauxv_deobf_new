@@ -29,10 +29,10 @@ public final class C0560Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
 
     static {
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        f2566Ujhhgtgfeyxiexzf = new C0560Ujhhgtgfeyxiexzf(MagicFactory.get(4928383961802999178L, strArr));
-        f2567Ujhhgtgfeyxiexzf = MagicFactory.get(4928384099241952650L, strArr);
-        f2568Ujhhgtgfeyxiexzf = MagicFactory.get(4928384086357050762L, strArr);
-        f2569Ujhhgtgfeyxiexzf = MagicFactory.get(4928384056292279690L, strArr);
+        f2566Ujhhgtgfeyxiexzf = new C0560Ujhhgtgfeyxiexzf("HideMsgAvatarIVHook");
+        f2567Ujhhgtgfeyxiexzf = "净化";
+        f2568Ujhhgtgfeyxiexzf = "隐藏消息头像";
+        f2569Ujhhgtgfeyxiexzf = "自定义隐藏微信聊天列表中的头像布局";
         f2570Ujhhgtgfeyxiexzf = new C3528Ujhhgtgfeyxiexzf(26);
     }
 
@@ -42,7 +42,7 @@ public final class C0560Ujhhgtgfeyxiexzf extends AbstractC2059Ujhhgtgfeyxiexzf i
         if (mo1424feyxiexzfUjhhgtg()) {
             int i = AbstractC0145Ujhhgtgfeyxiexzf.f1303Ujhhgtgfeyxiexzf;
             C3442feyxiexzfUjhhgtg c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5192feyxiexzfUjhhgtg(obj).m2021Ujhhgtgfeyxiexzf();
-            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = MagicFactory.get(4928384013342606730L, AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf);
+            c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf.f1479Ujhhgtgfeyxiexzf = "avatarIV";
             ImageView imageView = (ImageView) ((C3438feyxiexzfUjhhgtg) AbstractC1225feyxiexzfUjhhgtg.m2696Ujhhgtgfeyxiexzf(c3442feyxiexzfUjhhgtgM2021Ujhhgtgfeyxiexzf)).m4939Ujhhgtgfeyxiexzf();
             if (imageView != null) {
                 boolean zIsSend = msgInfoBean.isSend();

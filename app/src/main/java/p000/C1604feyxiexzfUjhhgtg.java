@@ -48,9 +48,9 @@ public final class C1604feyxiexzfUjhhgtg {
     public final String toString() {
         StringBuilder sb = new StringBuilder();
         String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-        sb.append(MagicFactory.get(4928582196018546058L, strArr));
+        sb.append("u51Proto(current_extra_times_multi_100=");
         sb.append(this.f5500Ujhhgtgfeyxiexzf);
-        sb.append(MagicFactory.get(4928581337025086858L, strArr));
+        sb.append(", extra_items=");
         sb.append(this.f5501Ujhhgtgfeyxiexzf);
         sb.append(')');
         return sb.toString();

@@ -331,17 +331,17 @@ public final /* synthetic */ class C0350Ujhhgtgfeyxiexzf implements InterfaceC35
             case 8:
                 String strM2774Ujhhgtgfeyxiexzf = AbstractC1246feyxiexzfUjhhgtg.m2774Ujhhgtgfeyxiexzf(((C0319Ujhhgtgfeyxiexzf) obj).f1877Ujhhgtgfeyxiexzf);
                 String[] strArr = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
-                if (strM2774Ujhhgtgfeyxiexzf.endsWith(MagicFactory.get(4928845589182940554L, strArr))) {
+                if (strM2774Ujhhgtgfeyxiexzf.endsWith("@chatroom")) {
                     Activity activityM5177Ujhhgtgfeyxiexzf = AbstractC3594Ujhhgtgfeyxiexzf.m5177Ujhhgtgfeyxiexzf();
                     Intent intent = new Intent();
-                    intent.setClassName(activityM5177Ujhhgtgfeyxiexzf, MagicFactory.get(4928209740749604234L, strArr));
-                    intent.putExtra(MagicFactory.get(4928209972677838218L, strArr), strM2774Ujhhgtgfeyxiexzf);
+                    intent.setClassName(activityM5177Ujhhgtgfeyxiexzf, "com.tencent.mm.chatroom.ui.ChatroomInfoUI");
+                    intent.putExtra("RoomInfo_Id", strM2774Ujhhgtgfeyxiexzf);
                     activityM5177Ujhhgtgfeyxiexzf.startActivity(intent);
                 } else {
                     Activity activityM5177Ujhhgtgfeyxiexzf2 = AbstractC3594Ujhhgtgfeyxiexzf.m5177Ujhhgtgfeyxiexzf();
                     Intent intent2 = new Intent();
-                    intent2.setClassName(activityM5177Ujhhgtgfeyxiexzf2, MagicFactory.get(4928210548203455882L, strArr));
-                    intent2.putExtra(MagicFactory.get(4928209659145225610L, strArr), strM2774Ujhhgtgfeyxiexzf);
+                    intent2.setClassName(activityM5177Ujhhgtgfeyxiexzf2, "com.tencent.mm.plugin.profile.ui.ContactInfoUI");
+                    intent2.putExtra("Contact_User", strM2774Ujhhgtgfeyxiexzf);
                     activityM5177Ujhhgtgfeyxiexzf2.startActivity(intent2);
                 }
                 return c1943Ujhhgtgfeyxiexzf;
@@ -372,7 +372,7 @@ public final /* synthetic */ class C0350Ujhhgtgfeyxiexzf implements InterfaceC35
                 String[] strArr2 = AbstractC3590Ujhhgtgfeyxiexzf.f11170Ujhhgtgfeyxiexzf;
                 ModuleTabLayout moduleTabLayout = c1019feyxiexzfUjhhgtg.f3991Ujhhgtgfeyxiexzf;
                 if (moduleTabLayout == null) {
-                    MagicFactory.get(4928451710617126282L, strArr2);
+                    "tabLayout";
                     moduleTabLayout = null;
                 }
                 C0682Ujhhgtgfeyxiexzf c0682UjhhgtgfeyxiexzfM2813feyxiexzfUjhhgtg = AbstractC1264feyxiexzfUjhhgtg.m2813feyxiexzfUjhhgtg(0, moduleTabLayout.getTabCount());
@@ -386,7 +386,7 @@ public final /* synthetic */ class C0350Ujhhgtgfeyxiexzf implements InterfaceC35
                     int iNextInt = c0679Ujhhgtgfeyxiexzf.nextInt();
                     ModuleTabLayout moduleTabLayout2 = c1019feyxiexzfUjhhgtg.f3991Ujhhgtgfeyxiexzf;
                     if (moduleTabLayout2 == null) {
-                        MagicFactory.get(4928451805106406794L, strArr2);
+                        "tabLayout";
                         moduleTabLayout2 = null;
                     }
                     if (iNextInt >= 0) {
@@ -400,7 +400,7 @@ public final /* synthetic */ class C0350Ujhhgtgfeyxiexzf implements InterfaceC35
                             string = null;
                         }
                         if (string == null) {
-                            string = MagicFactory.get(4928451762156733834L, strArr2);
+                            string = "";
                         }
                         List listM2516Ujhhgtgfeyxiexzf = c1019feyxiexzfUjhhgtg.m2516Ujhhgtgfeyxiexzf(iNextInt);
                         arrayList = new ArrayList(AbstractC2851feyxiexzfUjhhgtg.m4190Ujhhgtgfeyxiexzf(listM2516Ujhhgtgfeyxiexzf, 10));
@@ -432,7 +432,7 @@ public final /* synthetic */ class C0350Ujhhgtgfeyxiexzf implements InterfaceC35
                         string = null;
                     }
                     if (string == null) {
-                        string = MagicFactory.get(4928451762156733834L, strArr2);
+                        string = "";
                     }
                     List listM2516Ujhhgtgfeyxiexzf2 = c1019feyxiexzfUjhhgtg.m2516Ujhhgtgfeyxiexzf(iNextInt);
                     arrayList = new ArrayList(AbstractC2851feyxiexzfUjhhgtg.m4190Ujhhgtgfeyxiexzf(listM2516Ujhhgtgfeyxiexzf2, 10));
